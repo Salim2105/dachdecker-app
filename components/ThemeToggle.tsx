@@ -1,18 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
-import { getTheme, setTheme, type Theme } from "@/lib/theme";
+import { useSyncExternalStore } from "react";
+import { setTheme, subscribeTheme, themeSnapshot, themeServerSnapshot } from "@/lib/theme";
 
 export function ThemeToggle() {
-  const [t, setT] = useState<Theme>("dark");
-  useEffect(() => {
-    const applied = (document.documentElement.dataset.theme as Theme) || getTheme();
-    setT(applied);
-  }, []);
-  const flip = () => {
-    const n: Theme = t === "dark" ? "light" : "dark";
-    setTheme(n);
-    setT(n);
-  };
+  const t = useSyncExternalStore(subscribeTheme, themeSnapshot, themeServerSnapshot);
+  const flip = () => setTheme(t === "dark" ? "light" : "dark");
   return (
     <button
       onClick={flip}

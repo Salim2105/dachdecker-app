@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
+import { letztesLfStore } from "@/lib/appStores";
 
 export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: string }) {
   const { bewerte } = useProgress();
@@ -13,9 +14,7 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
   const [fertig, setFertig] = useState(false);
 
   useEffect(() => {
-    try {
-      localStorage.setItem("letztesLf", lfId);
-    } catch {}
+    letztesLfStore.set(lfId);
   }, [lfId]);
 
   const aktuell = aufgaben[index];

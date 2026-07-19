@@ -1,30 +1,21 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
+import { datumStore, letztesLfStore } from "@/lib/appStores";
 
 const TAG = 86_400_000;
 
 export default function Home() {
   const { fortschritt } = useProgress();
-  const [datum, setDatum] = useState("");
-  const [letztesLf, setLetztesLf] = useState("lf01");
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    setDatum(localStorage.getItem("pruefungsdatum") ?? "");
-    setLetztesLf(localStorage.getItem("letztesLf") ?? "lf01");
-  }, []);
-
-  const speichereDatum = (wert: string) => {
-    setDatum(wert);
-    try {
-      if (wert) localStorage.setItem("pruefungsdatum", wert);
-      else localStorage.removeItem("pruefungsdatum");
-    } catch {}
-  };
+  const datum = useSyncExternalStore(datumStore.subscribe, datumStore.getSnapshot, datumStore.getServerSnapshot);
+  const letztesLf =
+    useSyncExternalStore(
+      letztesLfStore.subscribe,
+      letztesLfStore.getSnapshot,
+      letztesLfStore.getServerSnapshot,
+    ) || "lf01";
 
   // Gesamtfortschritt über alle Lernfelder
   let total = 0;
@@ -36,11 +27,10 @@ export default function Home() {
   }
   const prozent = total > 0 ? Math.round((done / total) * 100) : 0;
 
-  const tageBis = (() => {
-    if (!datum) return null;
-    const diff = Math.ceil((new Date(datum + "T00:00:00").getTime() - Date.now()) / TAG);
-    return diff;
-  })();
+  const [now] = useState(() => Date.now());
+  const tageBis = datum
+    ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / TAG)
+    : null;
 
   return (
     <div>
@@ -54,7 +44,7 @@ export default function Home() {
         className="mt-5 rounded-xl border p-4"
         style={{ background: "var(--surface)", borderColor: "var(--border)" }}
       >
-        {mounted && tageBis !== null ? (
+        {tageBis !== null ? (
           <div className="flex items-baseline justify-between">
             <div>
               <div className="text-3xl font-medium" style={{ color: "var(--accent)" }}>
@@ -65,7 +55,7 @@ export default function Home() {
               </div>
             </div>
             <button
-              onClick={() => speichereDatum("")}
+              onClick={() => datumStore.set("")}
               className="text-xs underline"
               style={{ color: "var(--text-muted)" }}
             >
@@ -78,7 +68,7 @@ export default function Home() {
             <input
               type="date"
               value={datum}
-              onChange={(e) => speichereDatum(e.target.value)}
+              onChange={(e) => datumStore.set(e.target.value)}
               className="mt-2 w-full rounded-lg border px-3 py-2"
               style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
             />
@@ -90,15 +80,12 @@ export default function Home() {
       <div className="mt-4">
         <div className="mb-1 flex justify-between text-sm">
           <span style={{ color: "var(--text-muted)" }}>Gesamtfortschritt</span>
-          <span style={{ color: "var(--text)" }} suppressHydrationWarning>
-            {mounted ? `${done} / ${total}` : `0 / ${total}`}
+          <span style={{ color: "var(--text)" }}>
+            {done} / {total}
           </span>
         </div>
         <div className="h-2 w-full overflow-hidden rounded-full" style={{ background: "var(--surface-2)" }}>
-          <div
-            className="h-full rounded-full"
-            style={{ width: `${mounted ? prozent : 0}%`, background: "var(--accent)" }}
-          />
+          <div className="h-full rounded-full" style={{ width: `${prozent}%`, background: "var(--accent)" }} />
         </div>
       </div>
 
