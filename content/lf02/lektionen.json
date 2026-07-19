@@ -1,0 +1,55 @@
+[
+  {
+    "id": "lf02-l01",
+    "lernfeld": "lf02",
+    "thema": "Dachformen und Dachteile",
+    "titel": "Dachformen und Dachteile erkennen",
+    "inhalt": [
+      "Die wichtigsten Dachformen sind das Satteldach (zwei geneigte Flächen mit First), das Walmdach (auch die Giebelseiten sind geneigt), das Zeltdach (vier gleiche Dreiecksflächen zu einer Spitze), das Pultdach (eine geneigte Fläche) und das Flachdach.",
+      "Die Kanten am Dach haben feste Namen: Der First ist die oberste waagerechte Kante. Die Traufe ist die unterste Kante, an der die Dachrinne sitzt. Der Ortgang ist die seitliche Kante an der Giebelseite. Der Grat ist eine nach außen fallende Kante (am Walm), die Kehle eine einspringende Kante, in der zwei Flächen zusammenlaufen.",
+      "Wer die Dachteile sicher benennt, versteht auch die Anschlüsse und den Wasserlauf — Wasser fließt von First zur Traufe, in der Kehle sammelt es sich."
+    ],
+    "svg": "<svg viewBox='0 0 320 180' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Satteldach mit First, Traufe und Ortgang'><rect x='80' y='110' width='160' height='55' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M64 112 L160 52 L256 112' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='150' y1='52' x2='170' y2='52' stroke='#c07d4a' stroke-width='3'/><text x='176' y='50' fill='currentColor' font-size='10'>First</text><text x='196' y='118' fill='currentColor' font-size='10'>Traufe</text><line x1='232' y1='112' x2='250' y2='112' stroke='#c07d4a' stroke-width='3'/><text x='30' y='92' fill='currentColor' font-size='10'>Ortgang</text><line x1='96' y1='88' x2='112' y2='80' stroke='#c07d4a' stroke-width='3'/></svg>",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l02",
+    "lernfeld": "lf02",
+    "thema": "Dachziegel- und Dachsteinarten",
+    "titel": "Ziegel und Steine unterscheiden",
+    "inhalt": [
+      "Dachziegel werden aus Ton gebrannt, Dachsteine aus Zement und Sand gepresst. Beide decken geneigte Dächer regensicher ein.",
+      "Wichtige Ziegelarten: Biberschwanz (klein, glatt, viele Stück je m², wird meist als Doppel- oder Kronendeckung verlegt), Falz-/Hohlfalzziegel (mit seitlichen und oberen Falzen für dichte Überdeckung), Reformziegel und Flachdachziegel (glatte, moderne Optik) sowie Mönch und Nonne als historische Form.",
+      "Die Falze machen Falzziegel besonders regensicher, weil das Wasser zwangsgeführt wird. Biberschwanzziegel haben keine Falze — ihre Dichtheit entsteht durch die doppelte Überdeckung."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2; ZVDH-Fachregel Dachziegel und Dachsteine",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l03",
+    "thema": "Regeldachneigung",
+    "lernfeld": "lf02",
+    "titel": "Regeldachneigung und Zusatzmaßnahmen (ZVDH 2024)",
+    "inhalt": [
+      "Die Regeldachneigung (RDN) ist die Neigung, bis zu der eine bestimmte Deckung ohne Zusatzmaßnahmen als regensicher gilt. Die ZVDH-Fachregel für Dachziegel und Dachsteine gilt ab einer Mindestdachneigung von 10°.",
+      "Wird die RDN unterschritten oder liegt eine erhöhte Anforderung vor, muss eine Zusatzmaßnahme unter der Deckung eingebaut werden. Seit der Neufassung 2024 gibt es dafür fünf Klassen: Klasse 1 = wasserdichtes Unterdach, Klasse 2 = regensicheres Unterdach, Klasse 3 = nahtgesicherte Unterdeckung, Klasse 4 = nahtgesicherte Unterspannung, Klasse 5 = überlappte Unterspannung.",
+      "Bei einer erhöhten Anforderung wählt man einfach die nächsthöhere Klasse. Erhöhte Anforderungen sind zum Beispiel: Sparrenlänge über 10 m, besondere Dachformen wie eine Fledermausgaube, Nutzung des Dachgeschosses zu Wohnzwecken, schneereiche oder windexponierte Lagen."
+    ],
+    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine, Neufassung 2024 (Erläuterungen)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l04",
+    "thema": "Windsogsicherung",
+    "lernfeld": "lf02",
+    "titel": "Windsog sicher verklammern",
+    "inhalt": [
+      "Wind erzeugt an der Dachfläche einen Sog, der die Ziegel abheben kann. Deutschland ist in vier Windlastzonen eingeteilt: Zone 4 (Küste und Inseln) hat die höchste Last, das Binnenland wie NRW und die Region Unna liegt in Zone 1 oder 2.",
+      "Die stärksten Sogkräfte, die Sogspitzen, treten an den Rand- und Eckbereichen auf: am Ortgang, First, an der Kehle und am Pultdachabschluss. Dort wird dichter verklammert als in der Fläche.",
+      "Wie viele Sturmklammern je Quadratmeter nötig sind, hängt von Windzone, Gebäudehöhe, Dachform und Lage ab. Als Faustregel gilt: Ab 65° Dachneigung muss jeder Ziegel mechanisch befestigt werden."
+    ],
+    "quelle": "ZVDH-Regelwerk / DIN EN 1991-1-4 Windlast (Erläuterungen); Windsog-Herstellerunterlagen",
+    "konfidenz": "hoch"
+  }
+]
