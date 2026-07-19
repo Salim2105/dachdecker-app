@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf09-l01",
+    "lernfeld": "lf09",
+    "thema": "Schiefer",
+    "titel": "Schiefer: ein metamorphes Gestein",
+    "inhalt": [
+      "Schiefer ist ein metamorphes Gestein. Er entstand vor hunderten Millionen Jahren aus feinem Tonschlick, der unter hohem tektonischem Druck umgewandelt wurde. Dabei richteten sich die Mineralien parallel aus — daher lässt sich Schiefer in dünne, ebene Platten spalten.",
+      "Die Qualität hängt stark vom Vorkommen ab. Einschlüsse von Kalk, Schwefel oder oxidierbaren Erzen verringern die Lebensdauer, weil sie verwittern und den Stein zerstören.",
+      "Verarbeitet wird Schiefer mit Schieferhammer und Haubrücke: Die Steine werden von Hand zugehauen, damit sie exakt ins Deckbild passen."
+    ],
+    "quelle": "Rathscheck Schieferbibel; KMK-Rahmenlehrplan Dachdecker 2016, LF 9",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l02",
+    "lernfeld": "lf09",
+    "thema": "Deckbilder",
+    "titel": "Deckarten und ihre Regeldachneigungen",
+    "inhalt": [
+      "Jede Schiefer-Deckart hat ihre eigene Regeldachneigung, weil das Deckbild unterschiedlich viel Wasser ableiten kann.",
+      "Nach den Vorgaben von Rathscheck gilt: Die klassische Altdeutsche Doppeldeckung braucht mindestens 22° (40 %). Die Spitzwinkel-Deckung ist erst ab 30° (58 %) zulässig. Die Rechteck-Doppeldeckung funktioniert regensicher erst ab 40° (84 %).",
+      "Neben Schiefer werden auch Faserzement-Dachplatten und Holzschindeln in vergleichbaren Deckbildern verlegt. Bei alten Faserzementplatten ist Vorsicht geboten: Sie können Asbest enthalten und gelten grundsätzlich als nicht durchsturzsicher."
+    ],
+    "quelle": "Rathscheck Schieferbibel (Deckarten und Regeldachneigungen); BG BAU (Durchsturzsicherheit)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l03",
+    "lernfeld": "lf09",
+    "thema": "Schalung und Lattung",
+    "titel": "Unterkonstruktion und Befestigung",
+    "inhalt": [
+      "Schiefer wird meist auf einer Vollschalung gedeckt. Diese muss aus Holz der Sortierklasse S10 bestehen und mindestens 24 mm dick sein, damit die Nägel ausreichend Halt finden.",
+      "Befestigt wird mit korrosionsbeständigen, mindestens feuerverzinkten Schiefernägeln oder -stiften. Auf Holzwerkstoffplatten (OSB, Bau-Furniersperrholz) oder Faserzementuntergründen sind stattdessen Edelstahlschrauben vorgeschrieben.",
+      "Wichtige Maße für die Nägel: mindestens 32 mm Länge und mindestens 9 mm Kopfdurchmesser. Ein zu kleiner Kopf würde durch den Stein rutschen."
+    ],
+    "quelle": "Rathscheck Schieferbibel (Unterkonstruktion, Befestigungsmittel)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l04",
+    "lernfeld": "lf09",
+    "thema": "Deckbilder",
+    "titel": "Lochung und Gebindesteigung — die zwei Klassiker",
+    "inhalt": [
+      "Die Lochung erfolgt zwingend von der Rückseite zur Sichtseite, also von unten nach oben. Durch den Schlag bricht das Material auf der Sichtseite trichterförmig aus. In dieser kleinen Mulde versinkt der Nagelkopf oberflächenbündig.",
+      "Würde man umgekehrt lochen, stünde der Nagelkopf vor. Das darüberliegende Gebinde würde aufreiten und spätestens unter der ersten Schneelast brechen — ein klassischer Prüfungs- und Praxisfehler.",
+      "Die Gebindesteigung verhält sich reziprok zur Dachneigung: Je flacher das Dach, desto steiler muss das Gebinde angeordnet werden, damit das Wasser sicher abläuft. Bei steilen Dächern reicht eine flachere Steigung."
+    ],
+    "quelle": "Rathscheck Schieferbibel (Lochung, Gebindesteigung)",
+    "konfidenz": "hoch"
+  }
+]
