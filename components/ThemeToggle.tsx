@@ -4,7 +4,10 @@ import { getTheme, setTheme, type Theme } from "@/lib/theme";
 
 export function ThemeToggle() {
   const [t, setT] = useState<Theme>("dark");
-  useEffect(() => setT(getTheme()), []);
+  useEffect(() => {
+    const applied = (document.documentElement.dataset.theme as Theme) || getTheme();
+    setT(applied);
+  }, []);
   const flip = () => {
     const n: Theme = t === "dark" ? "light" : "dark";
     setTheme(n);
