@@ -1,0 +1,234 @@
+[
+  {
+    "id": "lf08-001",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "frage": "Auf welcher Seite der Wärmedämmung liegt die Dampfbremse?",
+    "optionen": [
+      "Auf der Außenseite, unter der Deckung",
+      "Auf der Raumseite (innen)",
+      "Mitten in der Dämmung",
+      "Das ist beliebig"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Dampfbremse liegt immer raumseitig, also auf der warmen Seite der Dämmung. Nur dort hält sie die feuchte Raumluft von der Konstruktion fern. Außen liegt dagegen die diffusionsoffene Unterdeckbahn."
+  },
+  {
+    "id": "lf08-002",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (Feuchteschutz)",
+    "konfidenz": "hoch",
+    "frage": "Welcher Weg bringt deutlich mehr Feuchtigkeit in die Dachkonstruktion?",
+    "optionen": [
+      "Diffusion durch die Bauteilschichten",
+      "Konvektion durch Fugen und Undichtigkeiten",
+      "Beide gleich viel",
+      "Weder noch"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Konvektion — das Einströmen feuchtwarmer Luft durch Undichtigkeiten — transportiert ein Vielfaches der Feuchtemenge, die durch Diffusion wandert. Deshalb ist die luftdichte Verklebung der Dampfbremse so entscheidend."
+  },
+  {
+    "id": "lf08-003",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (U-Wert)",
+    "konfidenz": "hoch",
+    "frage": "Was bedeutet ein kleiner U-Wert?",
+    "optionen": [
+      "Das Bauteil ist schlecht gedämmt",
+      "Das Bauteil ist gut gedämmt",
+      "Das Bauteil ist besonders schwer",
+      "Der U-Wert sagt nichts über die Dämmung aus"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Der U-Wert (Wärmedurchgangskoeffizient) gibt an, wie viel Wärme durch das Bauteil verloren geht. Je kleiner er ist, desto besser ist gedämmt. Der Wärmedurchlasswiderstand R verhält sich genau umgekehrt: je größer, desto besser."
+  },
+  {
+    "id": "lf08-004",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Unterdach Unterdeckung Unterspannung",
+    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (2024)",
+    "konfidenz": "hoch",
+    "frage": "Was kennzeichnet eine Unterspannung?",
+    "optionen": [
+      "Sie liegt vollflächig auf einer Schalung",
+      "Sie ist frei über die Sparren gespannt, ohne feste Unterlage",
+      "Sie ist immer wasserdicht verschweißt",
+      "Sie ersetzt die Dampfbremse"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Unterspannung wird frei über die Sparren gespannt. Unterdeckung und Unterdach liegen dagegen auf einer festen, druckstabilen Unterlage — das Unterdach ist zusätzlich regensicher oder wasserdicht gefügt."
+  },
+  {
+    "id": "lf08-005",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat die Konterlattung?",
+    "optionen": [
+      "Sie trägt allein die Dachziegel",
+      "Sie schafft die Belüftungsebene zwischen Unterdeckbahn und Deckung",
+      "Sie ersetzt die Wärmedämmung",
+      "Sie dichtet das Dach ab"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Konterlattung läuft in Sparrenrichtung und hebt die Traglattung an. Dadurch entsteht der Luftraum, in dem Wasser ablaufen und Feuchtigkeit abtrocknen kann. Die Ziegel selbst trägt die Traglattung."
+  },
+  {
+    "id": "lf08-006",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (Tauwasser)",
+    "konfidenz": "hoch",
+    "frage": "Wann fällt in einer Konstruktion Tauwasser aus?",
+    "optionen": [
+      "Wenn warme feuchte Luft abkühlt und den Taupunkt erreicht",
+      "Wenn die Luft im Bauteil erwärmt wird",
+      "Nur bei Regen von außen",
+      "Nur im Sommer"
+    ],
+    "korrekt": [0],
+    "erklaerung": "Warme Luft kann mehr Feuchtigkeit tragen als kalte. Kühlt sie in der Konstruktion ab und erreicht den Taupunkt, fällt die überschüssige Feuchte als Tauwasser aus — mit Schäden an Dämmung und Holz."
+  },
+  {
+    "id": "lf08-007",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (R = d/λ)",
+    "konfidenz": "hoch",
+    "text": "Der Wärmedurchlasswiderstand einer Schicht ergibt sich aus der Schichtdicke geteilt durch die {{Wärmeleitfähigkeit}}. Je {{größer}} dieser Widerstand ist, desto besser dämmt die Schicht.",
+    "akzeptiert": {
+      "Wärmeleitfähigkeit": ["Waermeleitfaehigkeit", "Lambda", "λ"],
+      "größer": ["groesser", "hoeher", "höher"]
+    },
+    "erklaerung": "R = d / λ. Dicke Dämmung mit kleinem λ ergibt einen großen R-Wert — und damit einen kleinen U-Wert für das gesamte Bauteil."
+  },
+  {
+    "id": "lf08-008",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "text": "Die {{Dampfbremse}} liegt raumseitig der Dämmung und muss vor allem {{luftdicht}} angeschlossen sein.",
+    "akzeptiert": { "Dampfbremse": ["Dampfsperre"], "luftdicht": ["luftdichte", "dicht"] },
+    "erklaerung": "Nicht die Diffusion, sondern die einströmende Luft (Konvektion) bringt die meiste Feuchte ein. Deshalb entscheidet die saubere, luftdichte Verklebung über die Schadensfreiheit."
+  },
+  {
+    "id": "lf08-009",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (R = d/λ)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Wärmedämmschicht ist {d} m dick und hat eine Wärmeleitfähigkeit λ von {lambda} W/(m·K). Wie groß ist ihr Wärmedurchlasswiderstand R?",
+    "parameter": [
+      { "name": "d", "label": "Schichtdicke", "einheit": "m", "min": 0.14, "max": 0.3, "schritt": 0.02 },
+      { "name": "lambda", "label": "Wärmeleitfähigkeit", "einheit": "W/(m·K)", "min": 0.032, "max": 0.045, "schritt": 0.001 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "R = Schichtdicke / Wärmeleitfähigkeit = {d} / {lambda}",
+        "formel": "d / lambda",
+        "ergebnisName": "r",
+        "einheit": "m²K/W"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "R = d / λ. Ein größerer R-Wert bedeutet bessere Dämmwirkung. Für das ganze Bauteil werden alle R-Werte plus die Wärmeübergangswiderstände addiert; der U-Wert ist dann der Kehrwert der Summe."
+  },
+  {
+    "id": "lf08-010",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Dachflaechen einteilen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (wahre Dachfläche)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Dach hat eine Grundfläche (im Grundriss) von {grund} m² und eine Neigung von {alpha}°. Wie groß ist die wahre Dachfläche?",
+    "parameter": [
+      { "name": "grund", "label": "Grundfläche", "einheit": "m²", "min": 40, "max": 150, "schritt": 5 },
+      { "name": "alpha", "label": "Dachneigung", "einheit": "°", "min": 20, "max": 50, "schritt": 5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Wahre Dachfläche = Grundfläche / cos(Neigungswinkel) = {grund} / cos({alpha}°)",
+        "formel": "grund / cos(alpha * pi / 180)",
+        "ergebnisName": "wahr",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die geneigte Dachfläche ist immer größer als ihre Grundfläche im Grundriss. Je steiler das Dach, desto größer der Unterschied — wichtig für den Materialbedarf."
+  },
+  {
+    "id": "lf08-011",
+    "typ": "diagram",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "frage": "Benenne die markierten Funktionsschichten des gedämmten Steildachs (innen unten, außen oben).",
+    "svg": "<svg viewBox='0 0 320 230' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Schichtenaufbau Steildach'><text x='12' y='180' fill='currentColor' font-size='9'>innen</text><text x='12' y='58' fill='currentColor' font-size='9'>außen</text><rect x='60' y='166' width='180' height='14' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='60' y='150' width='180' height='10' fill='none' stroke='#c07d4a' stroke-width='2'/><rect x='60' y='106' width='180' height='40' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='70' y1='146' x2='96' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='106' y1='146' x2='132' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='142' y1='146' x2='168' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='178' y1='146' x2='204' y2='106' stroke='currentColor' stroke-width='0.7'/><rect x='60' y='92' width='180' height='10' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='76' y='72' width='14' height='16' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='196' y='72' width='14' height='16' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='60' y='56' width='180' height='12' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='240' y1='155' x2='262' y2='155' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='155' r='12' fill='#c07d4a'/><text x='276' y='160' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='240' y1='126' x2='262' y2='126' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='126' r='12' fill='#c07d4a'/><text x='276' y='131' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='97' x2='262' y2='97' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='97' r='12' fill='#c07d4a'/><text x='276' y='102' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='210' y1='80' x2='250' y2='66' stroke='#c07d4a' stroke-width='1.2'/><circle cx='264' cy='60' r='12' fill='#c07d4a'/><text x='264' y='65' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "dampfbremse": "Dampfbremse",
+      "waermedaemmung": "Wärmedämmung",
+      "unterdeckbahn": "Unterdeckbahn",
+      "konterlatte": "Konterlatte"
+    },
+    "erklaerung": "Von innen nach außen: Innenbekleidung, Dampfbremse (1), Wärmedämmung (2), Unterdeckbahn (3), Konterlatte (4) mit Belüftungsebene, darauf Traglattung und Deckung."
+  },
+  {
+    "id": "lf08-012",
+    "typ": "draw",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Schichtenaufbau eines gedämmten Steildachs von innen nach außen und beschrifte die Schichten. Kennzeichne besonders, wo die Dampfbremse und wo die Belüftungsebene liegt.",
+    "loesungSvg": "<svg viewBox='0 0 320 230' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Schichtenaufbau'><text x='10' y='180' fill='currentColor' font-size='9'>innen</text><text x='10' y='52' fill='currentColor' font-size='9'>außen</text><rect x='46' y='166' width='150' height='14' fill='none' stroke='currentColor' stroke-width='1.3'/><text x='202' y='177' fill='currentColor' font-size='9'>Innenbekleidung</text><rect x='46' y='150' width='150' height='10' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='202' y='159' fill='#c07d4a' font-size='9'>Dampfbremse (luftdicht)</text><rect x='46' y='106' width='150' height='40' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='56' y1='146' x2='82' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='92' y1='146' x2='118' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='128' y1='146' x2='154' y2='106' stroke='currentColor' stroke-width='0.7'/><text x='202' y='130' fill='currentColor' font-size='9'>Wärmedämmung</text><rect x='46' y='92' width='150' height='10' fill='none' stroke='currentColor' stroke-width='1.3'/><text x='202' y='101' fill='currentColor' font-size='9'>Unterdeckbahn</text><rect x='60' y='72' width='14' height='16' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='160' y='72' width='14' height='16' fill='none' stroke='currentColor' stroke-width='1.3'/><path d='M84 80 L150 80 M144 76 L150 80 L144 84' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='202' y='84' fill='#c07d4a' font-size='9'>Konterlatte + Belüftung</text><rect x='46' y='56' width='150' height='12' fill='none' stroke='currentColor' stroke-width='1.3'/><text x='202' y='66' fill='currentColor' font-size='9'>Traglatte + Deckung</text></svg>",
+    "schritte": [
+      "Ganz innen die Innenbekleidung zeichnen.",
+      "Direkt darüber die Dampfbremse — sie liegt immer raumseitig der Dämmung und muss luftdicht verklebt sein.",
+      "Darüber die Wärmedämmung zwischen bzw. auf den Sparren.",
+      "Außen die Unterdeckbahn, darüber die Konterlatte: Sie erzeugt die Belüftungsebene.",
+      "Ganz außen Traglattung und Deckung."
+    ],
+    "erklaerung": "Merksatz für die Reihenfolge: innen dicht, mitte warm, außen regensicher und belüftet. Die Belüftungsebene über der Unterdeckbahn sorgt dafür, dass Feuchtigkeit abtrocknen kann."
+  },
+  {
+    "id": "lf08-013",
+    "typ": "fachbegriff",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "konfidenz": "hoch",
+    "begriff": "Dampfbremse",
+    "definition": "Die raumseitige Schicht, die den Wasserdampf aus der Raumluft bremst und die Konstruktion luftdicht abschließt. Entscheidend ist die saubere, luftdichte Verklebung — sonst strömt feuchte Luft ein (Konvektion).",
+    "bestandteile": ["Dampf", "bremse"],
+    "erklaerung": "Merke: Dampf-bremse — sie bremst den Dampf, sperrt ihn aber nicht vollständig."
+  },
+  {
+    "id": "lf08-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "quelle": "Bauphysik-Grundlagen (U-Wert)",
+    "konfidenz": "hoch",
+    "begriff": "Wärmedurchgangskoeffizient",
+    "definition": "Der U-Wert: Er gibt an, wie viel Wärme durch ein Bauteil verloren geht (in W/(m²·K)). Je kleiner der U-Wert, desto besser ist das Bauteil gedämmt. Anforderungen stellt das Gebäudeenergiegesetz.",
+    "bestandteile": ["Wärme", "durchgangs", "koeffizient"],
+    "erklaerung": "Merke: Wärme-durchgangs-koeffizient — wie gut Wärme durch das Bauteil hindurchgeht."
+  }
+]

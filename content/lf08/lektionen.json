@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf08-l01",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "titel": "Die Funktionsschichten des gedämmten Steildachs",
+    "inhalt": [
+      "Ein gedämmtes Steildach ist ein Schichtenpaket, in dem jede Lage eine eigene Aufgabe hat. Von innen nach außen: Innenbekleidung, Dampfbremse mit Luftdichtung, Wärmedämmung, Unterdeckung oder Unterspannung, Konterlattung, Traglattung und ganz außen die Deckung.",
+      "Die Konterlattung ist mehr als eine Befestigung: Sie schafft die Belüftungsebene zwischen Unterdeckbahn und Deckung. Darin kann Wasser ablaufen und Feuchtigkeit abtrocknen.",
+      "Merke die Reihenfolge über die Funktion: innen dicht (Dampfbremse), in der Mitte warm (Dämmung), außen regensicher und belüftet (Unterdeckung, Konterlattung, Deckung)."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8; ZVDH-Regelwerk (Unterdeckungen)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l02",
+    "lernfeld": "lf08",
+    "thema": "Unterdach Unterdeckung Unterspannung",
+    "titel": "Unterdach, Unterdeckung, Unterspannung",
+    "inhalt": [
+      "Diese drei Begriffe werden oft verwechselt, meinen aber unterschiedliche Sicherheitsniveaus unter der Deckung.",
+      "Ein Unterdach ist die höchste Stufe: Die Bahnen liegen auf einer druckstabilen Unterlage (Schalung oder Dämmung) und sind wasserdicht bzw. regensicher gefügt. Eine Unterdeckung liegt ebenfalls auf einer festen Unterlage, ist aber nur nahtgesichert. Eine Unterspannung ist frei über die Sparren gespannt — ohne feste Unterlage.",
+      "Diese Abstufung entspricht den Klassen der Zusatzmaßnahmen aus der ZVDH-Fachregel: Klasse 1 und 2 sind Unterdächer, Klasse 3 ist eine nahtgesicherte Unterdeckung, Klasse 4 und 5 sind Unterspannungen."
+    ],
+    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (Neufassung 2024)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l03",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "titel": "Wärmeschutz: U-Wert und Wärmedurchlasswiderstand",
+    "inhalt": [
+      "Der Wärmedurchlasswiderstand R einer Schicht berechnet sich aus Schichtdicke geteilt durch Wärmeleitfähigkeit: R = d / λ. Je dicker die Dämmung und je kleiner ihr λ-Wert, desto größer ist R — also desto besser die Dämmwirkung.",
+      "Die einzelnen Widerstände aller Schichten werden addiert, dazu kommen die Wärmeübergangswiderstände innen und außen. Aus dem Gesamtwiderstand ergibt sich der Wärmedurchgangskoeffizient U — er ist der Kehrwert und gibt an, wie viel Wärme durch das Bauteil verloren geht.",
+      "Für den U-Wert gilt: je kleiner, desto besser gedämmt. Anforderungen an den U-Wert stellt das Gebäudeenergiegesetz (GEG)."
+    ],
+    "quelle": "Bauphysik-Grundlagen (U-Wert, R = d/λ); Gebäudeenergiegesetz (GEG)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l04",
+    "lernfeld": "lf08",
+    "thema": "Waerme- Feuchte- Brand- Schallschutz",
+    "titel": "Feuchteschutz: Taupunkt, Diffusion, Konvektion",
+    "inhalt": [
+      "Warme Raumluft kann mehr Feuchtigkeit aufnehmen als kalte. Kühlt feuchtwarme Luft in der Konstruktion ab, erreicht sie irgendwann den Taupunkt: Das Wasser fällt als Tauwasser aus. Genau das zerstört Dämmung und Holz.",
+      "Feuchtigkeit gelangt auf zwei Wegen in die Konstruktion. Diffusion ist die langsame Wanderung von Wasserdampf durch die Bauteilschichten. Konvektion ist das Einströmen feuchtwarmer Luft durch Fugen und Undichtigkeiten — und transportiert um ein Vielfaches mehr Feuchte als Diffusion.",
+      "Deshalb ist die luftdichte Ebene raumseitig so wichtig: Die Dampfbremse muss nicht nur die Diffusion begrenzen, sondern vor allem sauber verklebt und luftdicht angeschlossen sein. Feuchtevariable Dampfbremsen bremsen im Winter stark und lassen im Sommer eine Rücktrocknung nach innen zu."
+    ],
+    "quelle": "Bauphysik-Grundlagen (Tauwasser, Diffusion/Konvektion); Herstellerunterlagen Dampfbremsen",
+    "konfidenz": "hoch"
+  }
+]
