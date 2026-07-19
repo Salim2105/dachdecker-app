@@ -1,0 +1,55 @@
+[
+  {
+    "id": "lf10-l01",
+    "lernfeld": "lf10",
+    "thema": "Abdichtungsstoffe",
+    "titel": "Bitumenbahnen: APP, SBS und Trägereinlagen",
+    "inhalt": [
+      "Bitumen ist ein zähelastisches Nebenprodukt der Erdöldestillation. Rein eingesetzt wäre es bei Kälte zu spröde und bei Hitze zu weich — deshalb wird es mit Polymeren modifiziert.",
+      "Zwei Modifikationen sind zu unterscheiden: Mit APP (ataktischem Polypropylen) entsteht Plastomerbitumen, mit SBS (Styrol-Butadien-Styrol) entsteht Elastomerbitumen. Elastomerbitumen bleibt bei Kälte elastischer.",
+      "Die Trägereinlage gibt der Bahn ihre Festigkeit: Polyestervlies (PV) ist hoch reißfest und dehnbar, Glasgewebe und Glasvlies sind formstabil, aber weniger dehnbar. Im Kurzzeichen einer Bahn wie PYE PV 200 S5 steht PYE für Polymerbitumen-Elastomer, PV für die Polyestervlies-Einlage."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 10; vdd „abc der Abdichtungsbahnen“; Fragenkatalog Abdichtungen (dachtechnik.bayern)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l02",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "titel": "Kunststoffbahnen und ihre Schweißparameter",
+    "inhalt": [
+      "Hochpolymere Kunststoffbahnen wie PVC, FPO, EPDM und PIB werden nicht geflämmt, sondern durch Heißluft- oder Quellschweißen gefügt.",
+      "Für PVC-Bahnen gelten beim Handschweißgerät Temperaturen von etwa 430 bis 500 °C, beim Schweißautomaten etwa 480 bis 580 °C. Die Naht muss durchgehend mindestens 2 cm breit sein.",
+      "Wichtig für die Baustelle: Kunststoffbahnen und kaltselbstklebende Bitumenbahnen dürfen erst ab einer Bauteil- und Umgebungstemperatur von mindestens +5 °C verarbeitet werden. Darunter binden Kleber nicht ab und das Material wird zu steif."
+    ],
+    "quelle": "Fragenkatalog Abdichtungen (dachtechnik.bayern); Bauder Verlegeanleitungen PVC/FPO",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l03",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "titel": "Warmdach, Gefälledämmung und Anschlüsse",
+    "inhalt": [
+      "Beim Warmdach liegen die Schichten von unten nach oben: Tragschale, Dampfsperre, Wärmedämmung, Abdichtung und darüber der Oberflächenschutz (z. B. Kies oder Begrünung). Als Dämmstoff ist Polyisocyanurat (PIR) verbreitet, weil es sehr gut dämmt und druckfest ist.",
+      "Damit kein Wasser stehen bleibt, wird Gefälle eingebaut — häufig über eine Gefälledämmung, deren Platten keilförmig zulaufen. Faustregel: 1 % Gefälle bedeutet 1 cm Höhenunterschied je Meter.",
+      "An aufgehenden Bauteilen wird die Abdichtung hochgeführt. Bei Dachneigungen bis 5° muss sie mindestens 15 cm über die wasserführende Ebene reichen und mechanisch, zum Beispiel mit einer Klemmschiene, gegen Abrutschen gesichert werden.",
+      "Am T-Stoß, wo drei Bahnenlagen aufeinandertreffen, wird die mittlere Bahn abgeschrägt (Eckschnitt). Sonst entsteht ein Hohlraum, in dem Wasser kapillar hochgezogen wird — eine typische Leckagestelle."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 10; Bauder Detailkonstruktionen; Fragenkatalog Abdichtungen",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l04",
+    "lernfeld": "lf10",
+    "thema": "Dachbegruenung",
+    "titel": "Dachbegrünung: extensiv oder intensiv",
+    "inhalt": [
+      "Eine Extensivbegrünung ist pflegeleicht und leicht: Moos, Sedum und Kräuter auf dünnem Substrat. Sie wiegt im wassergesättigten Zustand üblicherweise etwa 80 bis 170 kg je Quadratmeter, als besonders leichte Ausführung auch nur rund 50 kg/m².",
+      "Eine Intensivbegrünung ist ein richtiger Dachgarten mit Stauden, Sträuchern und Rasen. Sie braucht dickeres Substrat, Bewässerung und Pflege — und wiegt ab etwa 300 kg je Quadratmeter aufwärts.",
+      "Entscheidend ist deshalb immer die Statik: Die Traglast muss vorher geprüft werden. Zusätzlich braucht ein Gründach eine durchwurzelungsfeste Abdichtung, damit Wurzeln die Dichtungsebene nicht zerstören."
+    ],
+    "quelle": "BuGG-Fachinformationen Dachbegrünung (Lastannahmen); KMK-Rahmenlehrplan LF 10",
+    "konfidenz": "hoch"
+  }
+]

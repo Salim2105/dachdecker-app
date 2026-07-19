@@ -1,0 +1,252 @@
+[
+  {
+    "id": "lf10-001",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Abdichtungsstoffe",
+    "quelle": "vdd „abc der Abdichtungsbahnen“; Fragenkatalog Abdichtungen (dachtechnik.bayern)",
+    "konfidenz": "hoch",
+    "frage": "Woraus wird Bitumen gewonnen?",
+    "optionen": [
+      "Aus Braunkohle",
+      "Aus der Erdöldestillation",
+      "Aus Kalkstein",
+      "Aus Erdgas"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Bitumen ist ein zähelastisches Nebenprodukt der Erdöldestillation. Für die Verwendung am Dach wird es mit Polymeren modifiziert, damit es bei Kälte nicht spröde und bei Hitze nicht zu weich wird."
+  },
+  {
+    "id": "lf10-002",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Abdichtungsstoffe",
+    "quelle": "vdd „abc der Abdichtungsbahnen“",
+    "konfidenz": "hoch",
+    "frage": "Welche Bahn entsteht, wenn Bitumen mit SBS modifiziert wird?",
+    "optionen": ["Plastomerbitumen", "Elastomerbitumen", "Oxidationsbitumen", "Naturbitumen"],
+    "korrekt": [1],
+    "erklaerung": "SBS (Styrol-Butadien-Styrol) ergibt Elastomerbitumen — es bleibt bei Kälte elastischer. APP (ataktisches Polypropylen) ergibt dagegen Plastomerbitumen."
+  },
+  {
+    "id": "lf10-003",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fragenkatalog Abdichtungen (dachtechnik.bayern); Bauder Verlegeanleitung PVC",
+    "konfidenz": "hoch",
+    "frage": "Mit welcher Temperatur wird eine PVC-Bahn von Hand verschweißt?",
+    "optionen": ["etwa 180–230 °C", "etwa 280–330 °C", "etwa 430–500 °C", "etwa 600–650 °C"],
+    "korrekt": [2],
+    "erklaerung": "Beim Handschweißgerät liegen die Temperaturen für PVC bei rund 430 bis 500 °C, beim Schweißautomaten höher (etwa 480 bis 580 °C), weil dort schneller gefahren wird."
+  },
+  {
+    "id": "lf10-004",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fragenkatalog Abdichtungen (dachtechnik.bayern)",
+    "konfidenz": "hoch",
+    "frage": "Wie breit muss die Schweißnaht bei Kunststoffbahnen mindestens sein?",
+    "optionen": ["1 cm", "2 cm", "5 cm", "10 cm"],
+    "korrekt": [1],
+    "erklaerung": "Die Naht muss durchgehend mindestens 2 cm breit sein. Nur so ist eine dauerhaft dichte, mechanisch belastbare Verbindung sichergestellt."
+  },
+  {
+    "id": "lf10-005",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Bauder Verlegeanleitungen; Fragenkatalog Abdichtungen",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Bauteil- und Umgebungstemperatur dürfen Kunststoffbahnen und kaltselbstklebende Bitumenbahnen verarbeitet werden?",
+    "optionen": ["ab 0 °C", "ab +5 °C", "ab +15 °C", "ab −5 °C"],
+    "korrekt": [1],
+    "erklaerung": "Mindestens +5 °C. Darunter binden die Kleber nicht ab und das Material wird zu steif — die Naht wird undicht."
+  },
+  {
+    "id": "lf10-006",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fragenkatalog Abdichtungen (dachtechnik.bayern); Bauder Detailkonstruktionen",
+    "konfidenz": "hoch",
+    "frage": "Warum wird die mittlere Bahn am T-Stoß abgeschrägt (Eckschnitt)?",
+    "optionen": [
+      "Damit Material gespart wird",
+      "Damit kein Hohlraum entsteht, in dem Wasser kapillar hochgezogen wird",
+      "Damit die Naht schneller abkühlt",
+      "Aus rein optischen Gründen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Am T-Stoß treffen drei Lagen aufeinander. Ohne Eckschnitt bleibt ein Hohlraum, in dem Wasser kapillar hochgezogen wird — eine typische Leckagestelle."
+  },
+  {
+    "id": "lf10-007",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Bauder Detailkonstruktionen; KMK-Rahmenlehrplan LF 10",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch muss die Abdichtung bei Dachneigungen bis 5° an aufgehenden Bauteilen hochgeführt werden?",
+    "optionen": ["mindestens 5 cm", "mindestens 10 cm", "mindestens 15 cm", "mindestens 30 cm"],
+    "korrekt": [2],
+    "erklaerung": "Mindestens 15 cm über der wasserführenden Ebene, zusätzlich mechanisch gesichert (z. B. mit einer Klemmschiene). So läuft auch bei Rückstau kein Wasser hinter die Abdichtung."
+  },
+  {
+    "id": "lf10-008",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Dachbegruenung",
+    "quelle": "BuGG-Fachinformationen Dachbegrünung (Lastannahmen)",
+    "konfidenz": "hoch",
+    "frage": "Welche Flächenlast hat eine Extensivbegrünung üblicherweise (wassergesättigt)?",
+    "optionen": [
+      "etwa 20–40 kg/m²",
+      "etwa 80–170 kg/m²",
+      "etwa 300–500 kg/m²",
+      "über 800 kg/m²"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Extensivbegrünungen wiegen wassergesättigt etwa 80 bis 170 kg/m², als Leichtbauweise auch nur rund 50 kg/m². Intensivbegrünungen beginnen dagegen erst bei etwa 300 kg/m²."
+  },
+  {
+    "id": "lf10-009",
+    "typ": "cloze",
+    "lernfeld": "lf10",
+    "thema": "Abdichtungsstoffe",
+    "quelle": "vdd „abc der Abdichtungsbahnen“",
+    "konfidenz": "hoch",
+    "text": "Mit {{APP}} modifiziertes Bitumen heißt Plastomerbitumen, mit {{SBS}} modifiziertes Bitumen heißt Elastomerbitumen.",
+    "akzeptiert": {
+      "APP": ["ataktischem Polypropylen", "Polypropylen"],
+      "SBS": ["Styrol-Butadien-Styrol", "Styrol Butadien Styrol"]
+    },
+    "erklaerung": "Eselsbrücke: SBS klingt nach „Stretch“ — Elastomerbitumen bleibt elastisch, auch bei Kälte."
+  },
+  {
+    "id": "lf10-010",
+    "typ": "cloze",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Bauder Detailkonstruktionen; KMK-Rahmenlehrplan LF 10",
+    "konfidenz": "hoch",
+    "text": "Beim Warmdach liegt die {{Dampfsperre}} unter der Wärmedämmung. Ganz oben schützt der {{Oberflächenschutz}} die Abdichtung vor UV-Strahlung.",
+    "akzeptiert": {
+      "Dampfsperre": ["Dampfbremse"],
+      "Oberflächenschutz": ["Oberflaechenschutz", "Kies", "Kiesschicht"]
+    },
+    "erklaerung": "Reihenfolge von unten nach oben: Tragschale, Dampfsperre, Wärmedämmung, Abdichtung, Oberflächenschutz (Kies oder Begrünung)."
+  },
+  {
+    "id": "lf10-011",
+    "typ": "calc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Gefälle)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Flachdachfläche ist {laenge} m lang und soll mit {gefaelle} % Gefälle zum Gully ausgebildet werden. Wie groß ist der Höhenunterschied?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 5, "max": 25, "schritt": 1 },
+      { "name": "gefaelle", "label": "Gefälle", "einheit": "%", "min": 1, "max": 5, "schritt": 0.5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "1 % Gefälle bedeutet 1 cm je Meter: Höhenunterschied = Länge · Gefälle = {laenge} · {gefaelle}",
+        "formel": "laenge * gefaelle",
+        "ergebnisName": "hoehe",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Merke: 1 % = 1 cm je Meter. Über die Länge summiert sich das schnell — daraus ergibt sich die nötige Dicke der Gefälledämmung am hohen Punkt."
+  },
+  {
+    "id": "lf10-012",
+    "typ": "calc",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Materialbedarf Bahnen)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Abdichtungsbahn ist {rollenlaenge} m lang. Nach Abzug der Überdeckung bleiben {nutzbar} m nutzbare Breite. Wie viele Rollen werden für {flaeche} m² benötigt (aufgerundet)?",
+    "parameter": [
+      { "name": "rollenlaenge", "label": "Rollenlänge", "einheit": "m", "min": 5, "max": 10, "schritt": 1 },
+      { "name": "nutzbar", "label": "nutzbare Breite", "einheit": "m", "min": 0.8, "max": 1, "schritt": 0.05 },
+      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 60, "max": 300, "schritt": 10 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Nutzfläche je Rolle = Rollenlänge · nutzbare Breite = {rollenlaenge} · {nutzbar}",
+        "formel": "rollenlaenge * nutzbar",
+        "ergebnisName": "projerolle",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Rollen = Dachfläche / Nutzfläche je Rolle, aufgerundet",
+        "formel": "ceil(flaeche / projerolle)",
+        "ergebnisName": "rollen",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Wichtig ist die nutzbare Breite, nicht die Rollenbreite: Die Überdeckung an den Nähten geht verloren. Aufgerundet wird immer — eine angefangene Rolle zählt voll."
+  },
+  {
+    "id": "lf10-013",
+    "typ": "diagram",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 10; Bauder Detailkonstruktionen",
+    "konfidenz": "hoch",
+    "frage": "Benenne die markierten Schichten des Warmdachs (unten Tragschale, oben außen).",
+    "svg": "<svg viewBox='0 0 320 230' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Warmdach Schichtenfolge'><text x='10' y='186' fill='currentColor' font-size='9'>innen</text><text x='10' y='58' fill='currentColor' font-size='9'>außen</text><rect x='60' y='172' width='180' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='60' y='156' width='180' height='10' fill='none' stroke='#c07d4a' stroke-width='2'/><rect x='60' y='112' width='180' height='40' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='70' y1='152' x2='96' y2='112' stroke='currentColor' stroke-width='0.7'/><line x1='106' y1='152' x2='132' y2='112' stroke='currentColor' stroke-width='0.7'/><line x1='142' y1='152' x2='168' y2='112' stroke='currentColor' stroke-width='0.7'/><line x1='178' y1='152' x2='204' y2='112' stroke='currentColor' stroke-width='0.7'/><rect x='60' y='96' width='180' height='12' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='76' width='180' height='16' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='78' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><circle cx='104' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><circle cx='130' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><circle cx='156' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><circle cx='182' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><circle cx='208' cy='84' r='3' fill='none' stroke='currentColor' stroke-width='0.9'/><line x1='240' y1='161' x2='262' y2='161' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='161' r='12' fill='#c07d4a'/><text x='276' y='166' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='240' y1='132' x2='262' y2='132' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='132' r='12' fill='#c07d4a'/><text x='276' y='137' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='102' x2='262' y2='102' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='102' r='12' fill='#c07d4a'/><text x='276' y='107' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='240' y1='84' x2='258' y2='72' stroke='#c07d4a' stroke-width='1.2'/><circle cx='272' cy='66' r='12' fill='#c07d4a'/><text x='272' y='71' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "dampfsperre": "Dampfsperre",
+      "waermedaemmung": "Wärmedämmung",
+      "abdichtung": "Abdichtung",
+      "oberflaechenschutz": "Oberflächenschutz"
+    },
+    "erklaerung": "Von unten nach oben: Tragschale, Dampfsperre (1), Wärmedämmung (2), Abdichtung (3) und Oberflächenschutz (4, z. B. Kies). Diese Reihenfolge kennzeichnet das Warmdach."
+  },
+  {
+    "id": "lf10-014",
+    "typ": "draw",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Bauder Detailkonstruktionen; KMK-Rahmenlehrplan LF 10",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Anschluss der Abdichtung an ein aufgehendes Bauteil (Wand). Führe die Abdichtung korrekt hoch, trage die Mindesthöhe ein und ergänze die mechanische Sicherung.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dachflaeche mit aufgehender Wand'><line x1='40' y1='140' x2='200' y2='140' stroke='currentColor' stroke-width='1.6'/><rect x='200' y='40' width='40' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Wandanschluss'><line x1='40' y1='140' x2='200' y2='140' stroke='currentColor' stroke-width='1.6'/><rect x='200' y='40' width='40' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M40 134 L194 134 L194 88' fill='none' stroke='#c07d4a' stroke-width='2.4'/><rect x='188' y='82' width='14' height='7' fill='none' stroke='#c07d4a' stroke-width='1.6'/><line x1='168' y1='134' x2='168' y2='88' stroke='currentColor' stroke-width='0.9'/><path d='M168 134 L165 128 M168 134 L171 128 M168 88 L165 94 M168 88 L171 94' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='108' y='114' fill='currentColor' font-size='10'>≥ 15 cm</text><text x='206' y='78' fill='#c07d4a' font-size='9'>Klemmschiene</text><text x='48' y='128' fill='#c07d4a' font-size='9'>Abdichtung</text><text x='210' y='120' fill='currentColor' font-size='9'>Wand</text></svg>",
+    "schritte": [
+      "Die Abdichtung auf der Dachfläche bis an die Wand führen.",
+      "Sie an der Wand hochführen — bei Dachneigungen bis 5° mindestens 15 cm über der wasserführenden Ebene.",
+      "Die Höhe als Maß eintragen (≥ 15 cm).",
+      "Den oberen Rand mechanisch sichern, zum Beispiel mit einer Klemmschiene, damit die Abdichtung nicht abrutscht."
+    ],
+    "erklaerung": "Die 15 cm sind der Sicherheitsabstand gegen Rückstau und Schneeanhäufung. Ohne mechanische Sicherung am oberen Rand rutscht die Bahn mit der Zeit ab und der Anschluss wird undicht."
+  },
+  {
+    "id": "lf10-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 10",
+    "konfidenz": "hoch",
+    "begriff": "Gefälledämmung",
+    "definition": "Wärmedämmplatten, die keilförmig zulaufen und dadurch gleichzeitig das nötige Gefälle auf dem Flachdach erzeugen. So läuft das Wasser sicher zum Gully, ohne dass die Tragschale geneigt werden muss.",
+    "bestandteile": ["Gefälle", "dämmung"],
+    "erklaerung": "Merke: Gefälle-dämmung — sie dämmt und schafft gleichzeitig das Gefälle."
+  },
+  {
+    "id": "lf10-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "Fragenkatalog Abdichtungen (dachtechnik.bayern)",
+    "konfidenz": "hoch",
+    "begriff": "T-Stoß",
+    "definition": "Die Stelle, an der drei Bahnenlagen aufeinandertreffen. Die mittlere Bahn wird abgeschrägt (Eckschnitt), damit kein Hohlraum bleibt, in dem Wasser kapillar hochgezogen wird.",
+    "erklaerung": "Klassische Fehlerquelle und beliebte Prüfungsfrage bei Abdichtungen."
+  }
+]
