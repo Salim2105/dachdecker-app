@@ -62,4 +62,51 @@ export interface DiagramAufgabe extends AufgabeBasis {
   zuordnung: Record<string, string>; // data-id -> korrekte Bezeichnung
 }
 
-export type Aufgabe = McAufgabe | ClozeAufgabe | CalcAufgabe | DiagramAufgabe;
+export interface DrawAufgabe extends AufgabeBasis {
+  typ: "draw";
+  aufgabentext: string;
+  vorgabeSvg?: string; // optionale Vorgabe-Skizze, Pfad relativ zu content/
+  loesungSvg: string; // eigene Muster-SVG, Pfad relativ zu content/
+  schritte: string[]; // Schritt-für-Schritt-Erklärung der Lösung
+}
+
+export interface FachbegriffAufgabe extends AufgabeBasis {
+  typ: "fachbegriff";
+  begriff: string;
+  definition: string; // Rückseite der Karteikarte
+  bildSvg?: string;
+  bestandteile?: string[]; // Komposita-Zerlegung, z. B. ["Dampf", "brems", "folie"]
+}
+
+export type Aufgabe =
+  | McAufgabe
+  | ClozeAufgabe
+  | CalcAufgabe
+  | DiagramAufgabe
+  | DrawAufgabe
+  | FachbegriffAufgabe;
+
+export interface Lektion {
+  id: string; // "lf01-l01"
+  lernfeld: string;
+  thema: string;
+  titel: string;
+  inhalt: string[]; // Absätze (Eigenformulierung)
+  svg?: string; // eigene Illustration, Pfad relativ zu content/
+  quelle: string;
+  konfidenz: Konfidenz;
+}
+
+export type Bewertung = "richtig" | "teilweise" | "falsch";
+
+export interface AufgabenFortschritt {
+  aufgabeId: string;
+  bewertung: Bewertung;
+  gesehenAm: number; // epoch ms
+  faelligAm: number; // epoch ms, nächster Spaced-Repetition-Termin
+  intervallTage: number;
+}
+
+export function istSichtbar(x: { konfidenz: Konfidenz }): boolean {
+  return x.konfidenz !== "pruefen";
+}
