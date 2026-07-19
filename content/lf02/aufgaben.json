@@ -112,7 +112,8 @@
         "einheit": "%"
       }
     ],
-    "toleranzProzent": 1
+    "toleranzProzent": 1,
+    "erklaerung": "Die Dachneigung in Prozent ist das Verhältnis von Höhe zu waagerechter Ausladung, mal 100. 100 % entsprechen dabei 45°, nicht 90°."
   },
   {
     "id": "lf02-009",
@@ -134,7 +135,8 @@
         "einheit": "Stück"
       }
     ],
-    "toleranzProzent": 1
+    "toleranzProzent": 1,
+    "erklaerung": "Der Ziegelbedarf ist Dachfläche mal Stückzahl je m². In der Praxis kommt darauf noch ein Verschnittzuschlag von etwa 3 bis 10 %."
   },
   {
     "id": "lf02-010",

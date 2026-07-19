@@ -42,7 +42,8 @@
         "einheit": "m²"
       }
     ],
-    "toleranzProzent": 1
+    "toleranzProzent": 1,
+    "erklaerung": "Die Fläche eines Rechtecks ist Länge mal Breite. Achte auf die Einheit: Meter mal Meter ergibt Quadratmeter (m²)."
   },
   {
     "id": "lf01-004",

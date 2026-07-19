@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf03-l01",
+    "lernfeld": "lf03",
+    "thema": "Mauersteine",
+    "titel": "Mauersteine unterscheiden",
+    "inhalt": [
+      "Mauersteine unterscheidet man nach Werkstoff und Lochung. Der Vollziegel ist massiv und schwer, der Hochlochziegel hat senkrechte Löcher — die eingeschlossene Luft verbessert die Wärmedämmung und macht den Stein leichter.",
+      "Kalksandstein (KS) besteht aus Kalk und Sand und wird unter Dampfdruck gehärtet. Er ist sehr druckfest und schalldämmend. Porenbeton (z. B. Ytong) ist stark porig, sehr leicht und gut dämmend, aber weniger druckfest. Leichtbetonsteine liegen dazwischen.",
+      "Als Dachdecker mauerst du vor allem kleinere Bauteile: Schornsteinköpfe, Aufkantungen und Attiken. Dabei zählt saubere Verbandsregel und ein maßhaltiger Aufbau."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3; Kalksandstein-Maurerfibel Kap. 1",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l02",
+    "lernfeld": "lf03",
+    "thema": "Massordnung im Hochbau",
+    "titel": "Maßordnung: das oktametrische System",
+    "inhalt": [
+      "Damit Steine, Öffnungen und Bauteile zusammenpassen, gilt im Hochbau die Maßordnung nach DIN 4172. Grundlage ist das oktametrische System: Alle Maße lassen sich als Vielfaches von 12,5 cm darstellen.",
+      "12,5 cm sind ein Achtelmeter (1 am = 1/8 m). Aus diesem Raster ergeben sich die üblichen Wanddicken und Steinformate — deshalb passen genormte Steine ohne ständiges Zuschneiden zusammen.",
+      "Man unterscheidet Richtmaß (Rastermaß mit Fuge), Nennmaß (Bauteilmaß) und Öffnungsmaß (z. B. für Türen und Fenster)."
+    ],
+    "quelle": "DIN 4172 Maßordnung im Hochbau; Kalksandstein-Maurerfibel Kap. 1.4",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l03",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbaende",
+    "titel": "Mauerverbände: warum Fugen versetzt werden",
+    "inhalt": [
+      "Ein Mauerwerk ist nur dann standsicher, wenn die senkrechten Stoßfugen von Schicht zu Schicht versetzt sind. Nur so verteilt sich die Last über mehrere Steine — durchgehende Stoßfugen wären eine Sollbruchstelle.",
+      "Steine, die mit der Längsseite in der Wandfläche liegen, heißen Läufer; Steine, die quer liegen, heißen Binder. Daraus ergeben sich die Verbände: Läuferverband (nur Läufer, jede Schicht um eine halbe Steinlänge versetzt), Binderverband, Blockverband (Läufer- und Binderschichten im Wechsel) und Kreuzverband.",
+      "Merksatz: Kein Stein darf genau über der Stoßfuge des darunterliegenden Steins sitzen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3; DGfM Mauerwerksbau-Lehre",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l04",
+    "lernfeld": "lf03",
+    "thema": "Mauermoertel",
+    "titel": "Mörtel und Fugen",
+    "inhalt": [
+      "Mauermörtel verbindet die Steine und gleicht Maßtoleranzen aus. Normalmörtel ist der Standard. Leichtmörtel enthält leichte Zuschläge und dämmt besser — sinnvoll bei wärmedämmendem Mauerwerk. Dünnbettmörtel wird nur bei maßgenauen Plansteinen (z. B. Porenbeton-Plansteinen) eingesetzt und millimeterdünn aufgezogen.",
+      "Die waagerechte Fuge zwischen zwei Schichten heißt Lagerfuge, die senkrechte Fuge zwischen zwei Steinen heißt Stoßfuge.",
+      "Bei Normalmörtel liegt die Regelfugendicke üblicherweise bei etwa 12 mm für die Lagerfuge und rund 10 mm für die Stoßfuge; bei Dünnbettmörtel sind es nur wenige Millimeter."
+    ],
+    "quelle": "DIN 1053 / DIN EN 1996 (Regelfugendicke); Kalksandstein-Maurerfibel",
+    "konfidenz": "mittel"
+  }
+]

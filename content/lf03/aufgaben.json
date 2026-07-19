@@ -1,0 +1,199 @@
+[
+  {
+    "id": "lf03-001",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Massordnung im Hochbau",
+    "quelle": "DIN 4172 Maßordnung im Hochbau; Kalksandstein-Maurerfibel Kap. 1.4",
+    "konfidenz": "hoch",
+    "frage": "Auf welchem Grundmaß beruht das oktametrische System der Maßordnung im Hochbau?",
+    "optionen": ["10 cm", "12,5 cm", "15 cm", "25 cm"],
+    "korrekt": [1],
+    "erklaerung": "Das oktametrische System beruht auf 12,5 cm — einem Achtelmeter (1/8 m). Alle Richtmaße sind Vielfache davon, deshalb passen genormte Steine und Bauteile zusammen."
+  },
+  {
+    "id": "lf03-002",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbaende",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3; DGfM Mauerwerksbau-Lehre",
+    "konfidenz": "hoch",
+    "frage": "Warum müssen die Stoßfugen von Schicht zu Schicht versetzt werden?",
+    "optionen": [
+      "Damit weniger Mörtel gebraucht wird",
+      "Damit die Wand besser aussieht",
+      "Damit sich die Last auf mehrere Steine verteilt und keine durchgehende Fuge entsteht",
+      "Damit die Wand schneller trocknet"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Versetzte Stoßfugen verteilen die Last über mehrere Steine. Eine durchgehende senkrechte Fuge wäre eine Sollbruchstelle und würde die Standsicherheit gefährden."
+  },
+  {
+    "id": "lf03-003",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauermoertel",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "frage": "Welcher Mörtel wird bei maßgenauen Plansteinen eingesetzt?",
+    "optionen": ["Normalmörtel", "Leichtmörtel", "Dünnbettmörtel", "Zementestrich"],
+    "korrekt": [2],
+    "erklaerung": "Plansteine sind millimetergenau geschliffen. Sie werden mit Dünnbettmörtel in nur wenige Millimeter dünner Fuge vermauert. Normal- und Leichtmörtel brauchen dagegen die dicke Regelfuge."
+  },
+  {
+    "id": "lf03-004",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbaende",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "frage": "Wie nennt man einen Stein, der mit seiner Längsseite in der Wandfläche liegt?",
+    "optionen": ["Binder", "Läufer", "Riemchen", "Kämpfer"],
+    "korrekt": [1],
+    "erklaerung": "Der Läufer liegt mit der Längsseite in der Wandfläche, der Binder liegt quer zur Wand. Aus ihrer Anordnung ergeben sich Läufer-, Binder-, Block- und Kreuzverband."
+  },
+  {
+    "id": "lf03-005",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauersteine",
+    "quelle": "Kalksandstein-Maurerfibel; DGfM Mauerwerksbau-Lehre",
+    "konfidenz": "hoch",
+    "frage": "Welchen Vorteil hat ein Hochlochziegel gegenüber einem Vollziegel?",
+    "optionen": [
+      "Er ist druckfester",
+      "Er ist leichter und dämmt besser",
+      "Er nimmt kein Wasser auf",
+      "Er braucht keinen Mörtel"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die senkrechten Löcher schließen Luft ein: Das macht den Stein leichter und verbessert die Wärmedämmung. Druckfester ist dagegen der massive Vollziegel."
+  },
+  {
+    "id": "lf03-006",
+    "typ": "cloze",
+    "lernfeld": "lf03",
+    "thema": "Mauermoertel",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "text": "Die waagerechte Fuge zwischen zwei Schichten heißt {{Lagerfuge}}, die senkrechte Fuge zwischen zwei Steinen heißt {{Stoßfuge}}.",
+    "akzeptiert": { "Lagerfuge": ["Lager-Fuge"], "Stoßfuge": ["Stossfuge", "Stoss-Fuge"] },
+    "erklaerung": "Merkhilfe: Der Stein liegt auf der Lagerfuge (er lagert darauf), und er stößt seitlich an der Stoßfuge an den Nachbarstein."
+  },
+  {
+    "id": "lf03-007",
+    "typ": "cloze",
+    "lernfeld": "lf03",
+    "thema": "Massordnung im Hochbau",
+    "quelle": "DIN 4172 Maßordnung im Hochbau",
+    "konfidenz": "hoch",
+    "text": "Ein Achtelmeter (1 am) entspricht {{12,5}} cm. Alle Richtmaße im Hochbau sind ein {{Vielfaches}} davon.",
+    "akzeptiert": { "12,5": ["12.5", "12,50"], "Vielfaches": ["Vielfache"] },
+    "erklaerung": "1/8 m = 12,5 cm. Aus diesem Raster leiten sich Wanddicken, Steinformate und Öffnungsmaße ab."
+  },
+  {
+    "id": "lf03-008",
+    "typ": "calc",
+    "lernfeld": "lf03",
+    "thema": "Volumen- und Steinbedarf",
+    "quelle": "Fachrechnen Bautechnik; Kontext KMK LF 3",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Wandfläche von {flaeche} m² werden {proqm} Steine je m² benötigt. Wie viele Steine sind das (ohne Verschnitt)?",
+    "parameter": [
+      { "name": "flaeche", "label": "Wandfläche", "einheit": "m²", "min": 6, "max": 40, "schritt": 1 },
+      { "name": "proqm", "label": "Steine je m²", "einheit": "Stück", "min": 8, "max": 60, "schritt": 1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Steinbedarf = Wandfläche · Steine je m² = {flaeche} · {proqm}",
+        "formel": "flaeche * proqm",
+        "ergebnisName": "bedarf",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Steinbedarf = Wandfläche mal Steine je m². Die Stückzahl je m² hängt vom Steinformat ab — kleine Formate brauchen mehr Steine."
+  },
+  {
+    "id": "lf03-009",
+    "typ": "calc",
+    "lernfeld": "lf03",
+    "thema": "Volumen- und Steinbedarf",
+    "quelle": "Fachrechnen Bautechnik; Kontext KMK LF 3",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Wand ist {laenge} m lang, {hoehe} m hoch und {dicke} m dick. Wie groß ist das Mauerwerksvolumen?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 2, "max": 10, "schritt": 0.5 },
+      { "name": "hoehe", "label": "Höhe", "einheit": "m", "min": 1, "max": 3, "schritt": 0.25 },
+      { "name": "dicke", "label": "Dicke", "einheit": "m", "min": 0.1, "max": 0.4, "schritt": 0.05 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Volumen = Länge · Höhe · Dicke = {laenge} · {hoehe} · {dicke}",
+        "formel": "laenge * hoehe * dicke",
+        "ergebnisName": "volumen",
+        "einheit": "m³"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Das Volumen eines Quaders ist Länge mal Höhe mal Dicke. Drei Meter-Maße multipliziert ergeben Kubikmeter (m³) — daraus lässt sich der Mörtel- und Steinbedarf ableiten."
+  },
+  {
+    "id": "lf03-010",
+    "typ": "diagram",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbaende",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "frage": "Benenne die markierten Teile am Mauerwerk im Läuferverband.",
+    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Mauerwerk im Laeuferverband'><rect x='30' y='60' width='220' height='120' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='30' y1='90' x2='250' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='30' y1='120' x2='250' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='30' y1='150' x2='250' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='74' y1='60' x2='74' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='118' y1='60' x2='118' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='162' y1='60' x2='162' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='206' y1='60' x2='206' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='52' y1='90' x2='52' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='96' y1='90' x2='96' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='140' y1='90' x2='140' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='184' y1='90' x2='184' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='228' y1='90' x2='228' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='74' y1='120' x2='74' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='118' y1='120' x2='118' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='162' y1='120' x2='162' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='206' y1='120' x2='206' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='52' y1='150' x2='52' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='96' y1='150' x2='96' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='140' y1='150' x2='140' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='184' y1='150' x2='184' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='228' y1='150' x2='228' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='140' y1='60' x2='140' y2='48' stroke='#c07d4a' stroke-width='1.2'/><circle cx='140' cy='36' r='12' fill='#c07d4a'/><text x='140' y='41' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='250' y1='120' x2='270' y2='120' stroke='#c07d4a' stroke-width='1.2'/><circle cx='284' cy='120' r='12' fill='#c07d4a'/><text x='284' y='125' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='140' y1='180' x2='140' y2='192' stroke='#c07d4a' stroke-width='1.2'/><circle cx='140' cy='204' r='12' fill='#c07d4a'/><text x='140' y='209' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "zuordnung": {
+      "laeufer": "Läufer",
+      "lagerfuge": "Lagerfuge",
+      "stossfuge": "Stoßfuge"
+    },
+    "erklaerung": "1 ist ein Läufer (Stein mit Längsseite in der Wandfläche), 2 die waagerechte Lagerfuge zwischen zwei Schichten und 3 eine senkrechte Stoßfuge. Die Stoßfugen sind von Schicht zu Schicht um eine halbe Steinlänge versetzt."
+  },
+  {
+    "id": "lf03-011",
+    "typ": "draw",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbaende",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne in die gegebene Wandfläche vier Schichten im Läuferverband. Achte darauf, dass die Stoßfugen jeder Schicht um eine halbe Steinlänge versetzt sind.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Leere Wandflaeche'><rect x='30' y='60' width='220' height='120' fill='none' stroke='currentColor' stroke-width='1.6'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Laeuferverband'><rect x='30' y='60' width='220' height='120' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='30' y1='90' x2='250' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='30' y1='120' x2='250' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='30' y1='150' x2='250' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='74' y1='60' x2='74' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='118' y1='60' x2='118' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='162' y1='60' x2='162' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='206' y1='60' x2='206' y2='90' stroke='currentColor' stroke-width='1.1'/><line x1='52' y1='90' x2='52' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='96' y1='90' x2='96' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='140' y1='90' x2='140' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='184' y1='90' x2='184' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='228' y1='90' x2='228' y2='120' stroke='currentColor' stroke-width='1.1'/><line x1='74' y1='120' x2='74' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='118' y1='120' x2='118' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='162' y1='120' x2='162' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='206' y1='120' x2='206' y2='150' stroke='currentColor' stroke-width='1.1'/><line x1='52' y1='150' x2='52' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='96' y1='150' x2='96' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='140' y1='150' x2='140' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='184' y1='150' x2='184' y2='180' stroke='currentColor' stroke-width='1.1'/><line x1='228' y1='150' x2='228' y2='180' stroke='currentColor' stroke-width='1.1'/><path d='M140 90 L140 60' stroke='#c07d4a' stroke-width='2.4'/><path d='M118 120 L118 90' stroke='#c07d4a' stroke-width='2.4'/><text x='150' y='46' fill='#c07d4a' font-size='10'>Stoßfugen versetzt</text><text x='258' y='108' fill='currentColor' font-size='10'>Lagerfuge</text></svg>",
+    "schritte": [
+      "Die Wandfläche in gleich hohe Schichten einteilen (jede Schicht = eine Steinhöhe plus Lagerfuge).",
+      "In der ersten Schicht die Stoßfugen im gleichmäßigen Abstand einer Steinlänge einzeichnen.",
+      "Die nächste Schicht um eine halbe Steinlänge versetzt beginnen — an den Wandenden entstehen dadurch halbe Steine.",
+      "Schicht für Schicht abwechseln, sodass nie zwei Stoßfugen übereinanderliegen."
+    ],
+    "erklaerung": "Im Läuferverband ist jede Schicht um eine halbe Steinlänge versetzt. Die kupferfarbenen Markierungen zeigen: Über einer Stoßfuge sitzt immer ein Stein, nie eine zweite Fuge. Nur so ist das Mauerwerk standsicher."
+  },
+  {
+    "id": "lf03-012",
+    "typ": "fachbegriff",
+    "lernfeld": "lf03",
+    "thema": "Massordnung im Hochbau",
+    "quelle": "DIN 4172 Maßordnung im Hochbau",
+    "konfidenz": "hoch",
+    "begriff": "Maßordnung",
+    "definition": "Das genormte Maßraster im Hochbau (DIN 4172). Grundlage ist das oktametrische System mit 12,5 cm (= 1 Achtelmeter), damit Steine, Wände und Öffnungen zusammenpassen.",
+    "bestandteile": ["Maß", "ordnung"],
+    "erklaerung": "Merke: Maß-ordnung — sie ordnet alle Maße in ein gemeinsames Raster."
+  },
+  {
+    "id": "lf03-013",
+    "typ": "fachbegriff",
+    "lernfeld": "lf03",
+    "thema": "Mauermoertel",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3",
+    "konfidenz": "hoch",
+    "begriff": "Dünnbettmörtel",
+    "definition": "Mörtel für maßgenaue Plansteine, der nur wenige Millimeter dünn aufgetragen wird. Er ersetzt die dicke Regelfuge des Normalmörtels und ergibt sehr maßhaltiges Mauerwerk.",
+    "bestandteile": ["Dünn", "bett", "mörtel"],
+    "erklaerung": "Merke die drei Wortteile: Dünn-bett-mörtel — das Mörtelbett ist dünn."
+  }
+]
