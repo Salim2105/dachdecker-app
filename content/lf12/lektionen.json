@@ -1,0 +1,56 @@
+[
+  {
+    "id": "lf12-l01",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "titel": "Doppelstehfalz und Leistendeckung",
+    "inhalt": [
+      "Bei der Stehfalzdeckung werden die Blechbahnen (Scharen) an ihren hochgestellten Rändern miteinander verfalzt. Beim Doppelstehfalz wird der Falz zweimal umgelegt — das ergibt eine sehr sichere, wasserdichte Verbindung ohne Durchdringung der Fläche.",
+      "Das Doppelstehfalzsystem wird bei geneigten Dächern ab etwa 3° Dachneigung (rund 5,2 %) eingesetzt. Bei der Leistendeckung laufen die Scharen dagegen an Holzleisten hoch, die mit einer Kappe abgedeckt werden.",
+      "Verlegt wird auf einer tragfähigen Unterkonstruktion, meist einer Holzschalung. Der große Vorteil: Die Befestigung erfolgt indirekt über Hafte, die im Falz verschwinden — es gibt keine Löcher in der Deckfläche."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 12; Rheinzink Doppelstehfalz (Planungsunterlagen)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l02",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "titel": "Fest- und Schiebehafte",
+    "inhalt": [
+      "Metall dehnt sich bei Wärme aus und zieht sich bei Kälte zusammen. Damit die Schar das kann, ohne sich aufzuwölben oder abzureißen, gibt es zwei Haftarten.",
+      "Festhafte verankern die Schar starr auf der Unterkonstruktion. Sie sichern sie gegen das Abrutschen auf der geneigten Fläche und bilden den Fixpunkt. Schiebehafte haben ein bewegliches Mittelteil: Sie halten die Schar, lassen aber die Längenbewegung zu.",
+      "Die maximal zulässige Scharlänge liegt unter normalen Bedingungen bei 10 Metern. Mit speziellen Schwerlasthaften sind bis zu 16 Meter möglich — dann ist die Dachneigung allerdings auf höchstens 30° begrenzt.",
+      "Zusätzlich muss die Haftanzahl den Windsog aufnehmen: In Rand- und Eckbereichen wird dichter gesetzt als in der Fläche."
+    ],
+    "quelle": "Rheinzink Konstruktionsempfehlungen / Checkliste Falztechnik; KMK-Rahmenlehrplan LF 12",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l03",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "titel": "Trennlage und Weißrost",
+    "inhalt": [
+      "Unter der Metalldeckung wird häufig eine strukturierte Trennlage eingebaut — ein dreidimensionales Polyamid-Gewirk. Sie erfüllt gleich mehrere Aufgaben.",
+      "Erstens schafft sie einen kapillarbrechenden Luftraum: Kondensat, das sich an der Blechrückseite bildet, kann ablaufen und abtrocknen, statt dort stehen zu bleiben. Zweitens dämpft sie den Schall von Regen und Hagel spürbar.",
+      "Bleibt Feuchtigkeit dauerhaft an der Rückseite stehen, bildet sich Weißrost — basisches Zinkcarbonat. Er zerstört die Zinkschicht von hinten, oft unbemerkt, bis der Schaden groß ist. Die Trennlage ist also kein Zubehör, sondern Schadensvorbeugung."
+    ],
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Trennlagen, Weißrost)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l04",
+    "lernfeld": "lf12",
+    "thema": "Boerdeln Schweifen Kanten Falzen",
+    "titel": "Die vier Grundtechniken am Blech",
+    "inhalt": [
+      "Kanten heißt, das Blech entlang einer geraden Linie abzuwinkeln — die Grundlage für Falze, Aufkantungen und Abschlüsse.",
+      "Falzen ist das Umlegen und Ineinanderhaken zweier Blechränder. Beim Doppelfalz wird zweimal umgelegt, das erhöht die Dichtheit erheblich.",
+      "Bördeln bedeutet, den Blechrand zu einem Wulst umzulegen. Das versteift die Kante und nimmt ihr die Schärfe. Schweifen ist das Verformen des Blechs in eine Rundung, ohne es zu falten — dabei wird das Material gestaucht oder gestreckt, etwa beim Rinnenkessel.",
+      "Für die Fertigung wird zuerst die Abwicklung ermittelt: die abgewickelte Zuschnittbreite aus Deckbreite plus allen Zugaben für Falze und Kantungen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 12; Fachregeln Bauspenglerarbeiten; Europa-Lehrmittel Fachkunde Klempner/Spengler",
+    "konfidenz": "hoch"
+  }
+]

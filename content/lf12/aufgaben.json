@@ -1,0 +1,238 @@
+[
+  {
+    "id": "lf12-001",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Doppelstehfalz (Planungsunterlagen)",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Dachneigung wird das Doppelstehfalzsystem eingesetzt?",
+    "optionen": ["ab 1°", "ab 3°", "ab 10°", "ab 22°"],
+    "korrekt": [1],
+    "erklaerung": "Das Doppelstehfalzsystem ist ab etwa 3° Dachneigung (rund 5,2 %) einsetzbar. Der doppelt umgelegte Falz macht die Verbindung auch bei geringer Neigung sicher."
+  },
+  {
+    "id": "lf12-002",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Hafte)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat ein Schiebehaft?",
+    "optionen": [
+      "Er verankert die Schar starr gegen Abrutschen",
+      "Er hält die Schar und lässt gleichzeitig die thermische Längenbewegung zu",
+      "Er dichtet den Falz ab",
+      "Er ersetzt die Trennlage"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Der Schiebehaft hat ein bewegliches Mittelteil: Er hält die Schar fest, lässt aber zu, dass sich das Blech bei Temperaturwechsel längt und wieder zusammenzieht. Starr verankert wird nur mit Festhaften."
+  },
+  {
+    "id": "lf12-003",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Hafte)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dienen Festhafte?",
+    "optionen": [
+      "Sie lassen die Längenbewegung zu",
+      "Sie sichern die Schar gegen Abrutschen und bilden den Fixpunkt",
+      "Sie leiten Kondensat ab",
+      "Sie verbinden zwei Scharen miteinander"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Festhafte verankern die Schar starr auf der Unterkonstruktion. Sie sind der Fixpunkt, von dem aus sich das Blech nach beiden Seiten ausdehnen kann — die Schiebehafte lassen diese Bewegung dann zu."
+  },
+  {
+    "id": "lf12-004",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Scharlängen)",
+    "konfidenz": "hoch",
+    "frage": "Wie lang darf eine Schar unter normalen Bedingungen höchstens sein?",
+    "optionen": ["5 m", "10 m", "16 m", "20 m"],
+    "korrekt": [1],
+    "erklaerung": "Unter normalen Bedingungen liegt die maximal zulässige Scharlänge bei 10 Metern. Mit speziellen Schwerlasthaften sind bis zu 16 Meter möglich — dann jedoch nur bis höchstens 30° Dachneigung."
+  },
+  {
+    "id": "lf12-005",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Weißrost)",
+    "konfidenz": "hoch",
+    "frage": "Was ist Weißrost?",
+    "optionen": [
+      "Eine Schutzschicht, die erwünscht ist",
+      "Basisches Zinkcarbonat, das die Zinkschicht von hinten zerstört",
+      "Ein Rost auf Stahlblechen",
+      "Eine Verfärbung durch UV-Strahlung"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Weißrost ist basisches Zinkcarbonat. Er entsteht, wenn Feuchtigkeit dauerhaft an der Blechrückseite steht, und zerstört die Zinkschicht — oft unbemerkt von unten."
+  },
+  {
+    "id": "lf12-006",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Trennlagen)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat die strukturierte Trennlage unter der Metalldeckung?",
+    "optionen": [
+      "Sie ersetzt die Wärmedämmung",
+      "Sie schafft einen Luftraum, leitet Kondensat ab und dämpft den Schall",
+      "Sie dient nur als Gleitschicht beim Verlegen",
+      "Sie verstärkt das Blech statisch"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das dreidimensionale Gewirk schafft einen kapillarbrechenden Luftraum: Kondensat kann ablaufen und abtrocknen (Schutz vor Weißrost). Zusätzlich dämpft die Lage den Schall von Regen und Hagel spürbar."
+  },
+  {
+    "id": "lf12-007",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Boerdeln Schweifen Kanten Falzen",
+    "quelle": "Fachregeln Bauspenglerarbeiten; Europa-Lehrmittel Fachkunde Klempner/Spengler",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man unter Bördeln?",
+    "optionen": [
+      "Das Abwinkeln entlang einer geraden Linie",
+      "Das Umlegen des Blechrandes zu einem Wulst",
+      "Das Ineinanderhaken zweier Blechränder",
+      "Das Verformen in eine Rundung"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Bördeln ist das Umlegen des Randes zu einem Wulst — das versteift die Kante und nimmt ihr die Schärfe. Kanten ist das Abwinkeln, Falzen das Ineinanderhaken, Schweifen das Verformen in eine Rundung."
+  },
+  {
+    "id": "lf12-008",
+    "typ": "cloze",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Hafte)",
+    "konfidenz": "hoch",
+    "text": "{{Festhafte}} verankern die Schar starr und bilden den Fixpunkt. {{Schiebehafte}} lassen dagegen die thermische Längenbewegung zu.",
+    "akzeptiert": { "Festhafte": ["Festhaft", "Feste Hafte"], "Schiebehafte": ["Schiebehaft"] },
+    "erklaerung": "Ohne Schiebehafte würde sich das Blech aufwölben oder die Befestigung ausreißen — die Längenänderung muss irgendwo hin."
+  },
+  {
+    "id": "lf12-009",
+    "typ": "cloze",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Konstruktionsempfehlungen (Trennlagen, Weißrost)",
+    "konfidenz": "hoch",
+    "text": "Steht Feuchtigkeit dauerhaft an der Blechrückseite, bildet sich {{Weißrost}}. Dagegen hilft eine strukturierte {{Trennlage}}, die einen Luftraum schafft.",
+    "akzeptiert": { "Weißrost": ["Weissrost", "Zinkcarbonat"], "Trennlage": ["Trennschicht" ] },
+    "erklaerung": "Weißrost ist basisches Zinkcarbonat. Der kapillarbrechende Luftraum unter dem Blech lässt Kondensat ablaufen und abtrocknen."
+  },
+  {
+    "id": "lf12-010",
+    "typ": "calc",
+    "lernfeld": "lf12",
+    "thema": "Verlegeplaene",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Scharaufteilung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Dachfläche ist {breite} m breit. Die Scharen haben eine Deckbreite von {deckbreite} m. Wie viele Scharen werden benötigt (aufgerundet)?",
+    "parameter": [
+      { "name": "breite", "label": "Dachbreite", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 },
+      { "name": "deckbreite", "label": "Deckbreite", "einheit": "m", "min": 0.4, "max": 0.6, "schritt": 0.05 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anzahl Scharen = Dachbreite / Deckbreite, aufgerundet = {breite} / {deckbreite}",
+        "formel": "ceil(breite / deckbreite)",
+        "ergebnisName": "scharen",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Gerechnet wird immer mit der Deckbreite (was sichtbar bleibt), nicht mit der Zuschnittbreite. Die Aufteilung wird im Verlegeplan festgelegt — sinnvollerweise symmetrisch zur Dachmitte."
+  },
+  {
+    "id": "lf12-011",
+    "typ": "calc",
+    "lernfeld": "lf12",
+    "thema": "Boerdeln Schweifen Kanten Falzen",
+    "quelle": "Fachrechnen Klempnertechnik (Abwicklung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Schar soll eine Deckbreite von {deck} mm haben. Für jeden der beiden Falze wird eine Zugabe von {falz} mm benötigt. Wie breit muss der Zuschnitt (die Abwicklung) sein?",
+    "parameter": [
+      { "name": "deck", "label": "Deckbreite", "einheit": "mm", "min": 400, "max": 600, "schritt": 10 },
+      { "name": "falz", "label": "Falzzugabe je Seite", "einheit": "mm", "min": 30, "max": 50, "schritt": 5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Zuschnitt = Deckbreite + 2 · Falzzugabe = {deck} + 2 · {falz}",
+        "formel": "deck + 2 * falz",
+        "ergebnisName": "zuschnitt",
+        "einheit": "mm"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Abwicklung ist immer breiter als das, was man später sieht: Für jeden Falz geht Material verloren. Wer die Zugabe vergisst, schneidet die ganze Lieferung zu schmal zu."
+  },
+  {
+    "id": "lf12-012",
+    "typ": "diagram",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Doppelstehfalz (Aufbau); KMK-Rahmenlehrplan LF 12",
+    "konfidenz": "hoch",
+    "frage": "Ein Doppelstehfalz im Querschnitt: Benenne die markierten Bauteile.",
+    "svg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Doppelstehfalz im Querschnitt'><rect x='40' y='152' width='240' height='20' fill='none' stroke='currentColor' stroke-width='1.5'/><line x1='40' y1='147' x2='280' y2='147' stroke='currentColor' stroke-width='1.6' stroke-dasharray='3 2'/><line x1='40' y1='142' x2='148' y2='142' stroke='currentColor' stroke-width='1.8'/><line x1='170' y1='142' x2='280' y2='142' stroke='currentColor' stroke-width='1.8'/><path d='M148 142 L148 112 L170 112 L170 142' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M152 118 L166 118' stroke='currentColor' stroke-width='1.2'/><path d='M138 146 L152 146 L152 126' fill='none' stroke='#c07d4a' stroke-width='2.2'/><line x1='159' y1='110' x2='159' y2='84' stroke='#c07d4a' stroke-width='1.2'/><circle cx='159' cy='72' r='12' fill='#c07d4a'/><text x='159' y='77' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='138' y1='146' x2='96' y2='120' stroke='#c07d4a' stroke-width='1.2'/><circle cx='82' cy='112' r='12' fill='#c07d4a'/><text x='82' y='117' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='250' y1='147' x2='286' y2='128' stroke='#c07d4a' stroke-width='1.2'/><circle cx='298' cy='120' r='12' fill='#c07d4a'/><text x='298' y='125' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='250' y1='162' x2='286' y2='180' stroke='#c07d4a' stroke-width='1.2'/><circle cx='298' cy='188' r='12' fill='#c07d4a'/><text x='298' y='193' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "doppelstehfalz": "Doppelstehfalz",
+      "haft": "Haft",
+      "trennlage": "Trennlage",
+      "schalung": "Schalung"
+    },
+    "erklaerung": "1 ist der Doppelstehfalz, in dem die beiden Scharen verbunden sind. 2 ist der Haft, der im Falz verschwindet und die Schar hält. 3 ist die strukturierte Trennlage, 4 die Holzschalung als Unterkonstruktion."
+  },
+  {
+    "id": "lf12-013",
+    "typ": "draw",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "Rheinzink Doppelstehfalz (Aufbau)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Querschnitt durch einen Doppelstehfalz zwischen zwei Scharen. Ergänze den eingelegten Haft und beschrifte Falz, Haft und Unterkonstruktion.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Schalung als Vorgabe'><rect x='40' y='152' width='240' height='20' fill='none' stroke='currentColor' stroke-width='1.5'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Doppelstehfalz'><rect x='40' y='152' width='240' height='20' fill='none' stroke='currentColor' stroke-width='1.5'/><line x1='40' y1='147' x2='280' y2='147' stroke='currentColor' stroke-width='1.6' stroke-dasharray='3 2'/><line x1='40' y1='142' x2='148' y2='142' stroke='currentColor' stroke-width='1.8'/><line x1='170' y1='142' x2='280' y2='142' stroke='currentColor' stroke-width='1.8'/><path d='M148 142 L148 112 L170 112 L170 142' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M152 118 L166 118' stroke='currentColor' stroke-width='1.2'/><path d='M138 146 L152 146 L152 126' fill='none' stroke='#c07d4a' stroke-width='2.2'/><text x='178' y='106' fill='currentColor' font-size='10'>Doppelstehfalz</text><text x='60' y='128' fill='#c07d4a' font-size='10'>Haft</text><text x='196' y='166' fill='currentColor' font-size='9'>Schalung</text><text x='196' y='140' fill='currentColor' font-size='9'>Trennlage</text></svg>",
+    "schritte": [
+      "Die Schalung als Unterkonstruktion zeichnen, darüber die Trennlage andeuten.",
+      "Von links und rechts je eine Schar bis zur Falzstelle führen.",
+      "Beide Blechränder hochstellen und zweimal umlegen — das ergibt den Doppelstehfalz.",
+      "Den Haft von der Schalung aus in den Falz einlegen: Er wird mit eingefalzt und ist von außen unsichtbar.",
+      "Falz, Haft, Trennlage und Schalung beschriften."
+    ],
+    "erklaerung": "Der entscheidende Vorteil: Die Befestigung sitzt im Falz, also oberhalb der wasserführenden Ebene. Die Deckfläche bleibt komplett ohne Durchdringung — deshalb ist die Stehfalzdeckung so dicht."
+  },
+  {
+    "id": "lf12-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf12",
+    "thema": "Windlasten",
+    "quelle": "Rheinzink Konstruktionsempfehlungen",
+    "konfidenz": "hoch",
+    "begriff": "Schiebehaft",
+    "definition": "Ein Haft mit beweglichem Mittelteil: Er hält die Blechschar auf der Unterkonstruktion, lässt aber die thermische Längenbewegung zu. Ohne ihn würde sich das Blech aufwölben oder die Befestigung ausreißen.",
+    "bestandteile": ["Schiebe", "haft"],
+    "erklaerung": "Merke: Schiebe-haft — er hält und lässt gleichzeitig schieben."
+  },
+  {
+    "id": "lf12-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf12",
+    "thema": "Boerdeln Schweifen Kanten Falzen",
+    "quelle": "Fachregeln Bauspenglerarbeiten; Fachkunde Klempner/Spengler",
+    "konfidenz": "hoch",
+    "begriff": "Abwicklung",
+    "definition": "Die abgewickelte Zuschnittbreite eines Blechteils: Deckbreite plus alle Zugaben für Falze, Kantungen und Bördel. Sie wird vor dem Zuschnitt berechnet.",
+    "erklaerung": "Wer die Zugaben vergisst, schneidet die ganze Lieferung zu schmal — klassischer und teurer Fehler."
+  }
+]
