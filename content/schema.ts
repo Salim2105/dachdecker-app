@@ -58,15 +58,15 @@ export interface CalcAufgabe extends AufgabeBasis {
 export interface DiagramAufgabe extends AufgabeBasis {
   typ: "diagram";
   frage: string;
-  svg: string; // Pfad relativ zu content/, Ziel-Elemente tragen data-id
+  svg: string; // inline SVG-Markup (eigene Zeichnung), Ziel-Elemente tragen data-id
   zuordnung: Record<string, string>; // data-id -> korrekte Bezeichnung
 }
 
 export interface DrawAufgabe extends AufgabeBasis {
   typ: "draw";
   aufgabentext: string;
-  vorgabeSvg?: string; // optionale Vorgabe-Skizze, Pfad relativ zu content/
-  loesungSvg: string; // eigene Muster-SVG, Pfad relativ zu content/
+  vorgabeSvg?: string; // optionale Vorgabe-Skizze, inline SVG-Markup
+  loesungSvg: string; // eigene Muster-SVG, inline SVG-Markup
   schritte: string[]; // Schritt-für-Schritt-Erklärung der Lösung
 }
 
@@ -74,7 +74,7 @@ export interface FachbegriffAufgabe extends AufgabeBasis {
   typ: "fachbegriff";
   begriff: string;
   definition: string; // Rückseite der Karteikarte
-  bildSvg?: string;
+  bildSvg?: string; // optionales inline SVG-Markup
   bestandteile?: string[]; // Komposita-Zerlegung, z. B. ["Dampf", "brems", "folie"]
 }
 
@@ -92,7 +92,7 @@ export interface Lektion {
   thema: string;
   titel: string;
   inhalt: string[]; // Absätze (Eigenformulierung)
-  svg?: string; // eigene Illustration, Pfad relativ zu content/
+  svg?: string; // eigene Illustration, inline SVG-Markup
   quelle: string;
   konfidenz: Konfidenz;
 }
