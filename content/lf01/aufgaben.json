@@ -1,0 +1,47 @@
+[
+  {
+    "id": "lf01-001",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Gewerke am Bau",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "frage": "Wer überwacht auf einer Baustelle die Einhaltung der baurechtlichen Vorschriften?",
+    "optionen": ["Der Bauherr", "Die Bauaufsicht", "Das Planungsbüro", "Die Baufirma"],
+    "korrekt": [1],
+    "erklaerung": "Die Bauaufsicht (Bauaufsichtsbehörde) kontrolliert die Einhaltung der öffentlich-rechtlichen Vorschriften. Der Bauherr ist Auftraggeber, das Planungsbüro plant, die Baufirma führt aus."
+  },
+  {
+    "id": "lf01-002",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtungsplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "text": "Ein Baustelleneinrichtungsplan wird mit genormten {{Sinnbildern}} gezeichnet und in einem festgelegten {{Maßstab}} dargestellt.",
+    "akzeptiert": { "Sinnbildern": ["Symbolen", "Sinnbilder"], "Maßstab": ["Massstab"] },
+    "erklaerung": "Sinnbilder stehen für Lagerflächen, Kran, Container usw.; der Maßstab (z. B. 1:100) macht den Plan maßhaltig lesbar."
+  },
+  {
+    "id": "lf01-003",
+    "typ": "calc",
+    "lernfeld": "lf01",
+    "thema": "Flächenberechnung Baustelleneinrichtung",
+    "quelle": "Grundrechnung Flächen; Kontext KMK-Rahmenlehrplan LF 1",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Baustelle wird eine rechteckige Lagerfläche von {laenge} m Länge und {breite} m Breite abgesperrt. Wie groß ist die abgesperrte Fläche?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 },
+      { "name": "breite", "label": "Breite", "einheit": "m", "min": 3, "max": 10, "schritt": 0.5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Fläche eines Rechtecks: Länge mal Breite ({laenge} m · {breite} m)",
+        "formel": "laenge * breite",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 1
+  }
+]
