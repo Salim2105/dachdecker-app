@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf05-l01",
+    "lernfeld": "lf05",
+    "thema": "Laub- und Nadelholz",
+    "titel": "Nadelholz und Laubholz",
+    "inhalt": [
+      "Nadelhölzer wie Fichte, Tanne, Kiefer, Lärche und Douglasie wachsen gerade, sind vergleichsweise leicht und gut zu bearbeiten. Deshalb ist Bauholz im Dachstuhl fast immer Nadelholz — meist Fichte.",
+      "Laubhölzer wie Eiche und Buche sind schwerer, härter und fester. Eiche ist zudem sehr dauerhaft und wurde früher für Fachwerk und historische Dachstühle verwendet.",
+      "Am Bau wird Holz nach Sortier- bzw. Festigkeitsklassen eingeteilt. Für tragende Teile darf nur sortiertes Bauholz mit ausreichender Tragfähigkeit eingesetzt werden."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzfachkunde",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l02",
+    "lernfeld": "lf05",
+    "thema": "Holzfeuchte",
+    "titel": "Holzfeuchte: Schwinden und Quellen",
+    "inhalt": [
+      "Holz arbeitet: Es nimmt Feuchtigkeit auf und gibt sie wieder ab. Nimmt die Holzfeuchte ab, schwindet das Holz; nimmt sie zu, quillt es. Diese Bewegung findet vor allem unterhalb des Fasersättigungspunkts statt (rund 30 % Holzfeuchte).",
+      "Frisch geschlagenes Holz ist sehr feucht. Bauholz wird deshalb getrocknet, damit es nach dem Einbau nicht mehr stark schwindet und sich verzieht oder reißt.",
+      "Die Holzfeuchte ist auch die entscheidende Größe für den Holzschutz: Dauerhaft trockenes Holz wird von Pilzen nicht befallen. Kritisch wird es, wenn Holz längere Zeit über etwa 20 % Feuchte liegt."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzfachkunde (Holzfeuchte, Fasersättigung)",
+    "konfidenz": "mittel"
+  },
+  {
+    "id": "lf05-l03",
+    "lernfeld": "lf05",
+    "thema": "Holzschutz",
+    "titel": "Konstruktiver Holzschutz vor chemischem",
+    "inhalt": [
+      "Beim Holzschutz gilt eine klare Rangfolge: Zuerst konstruktiv, erst danach chemisch. Konstruktiver Holzschutz heißt, das Holz baulich trocken zu halten — durch Dachüberstände, Abtropfkanten, ausreichenden Abstand zum Erdreich und gute Hinterlüftung.",
+      "Chemischer Holzschutz mit Holzschutzmitteln kommt erst dann in Frage, wenn konstruktive Maßnahmen allein nicht ausreichen. Er ersetzt niemals eine fehlerhafte Konstruktion.",
+      "Holzschädlinge sind Pilze (z. B. Braunfäule, Echter Hausschwamm) und Insekten (z. B. Hausbock, Nagekäfer). Pilze brauchen Feuchtigkeit — wer das Holz trocken hält, hat den wichtigsten Schutz schon erledigt."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzschutz-Grundlagen",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l04",
+    "lernfeld": "lf05",
+    "thema": "Holzverbindungen",
+    "titel": "Dachstuhlarten und Holzverbindungen",
+    "inhalt": [
+      "Beim Sparrendach bilden je zwei Sparren mit dem Deckenbalken ein starres Dreieck. Der Deckenbalken wirkt als Zugband und nimmt den Horizontalschub auf. Vorteil: keine Stützen im Dachraum. Beim Kehlbalkendach kommt ein waagerechter Kehlbalken dazu, dadurch sind größere Spannweiten möglich.",
+      "Beim Pfettendach liegen die Sparren auf waagerechten Pfetten: unten auf der Fußpfette, in der Mitte auf der Mittelpfette und oben auf der Firstpfette. Die Pfetten werden von Stuhlsäulen getragen, die im Dachraum stehen.",
+      "Typische Holzverbindungen: die Kerve — ein Einschnitt, mit dem der Sparren auf der Pfette aufliegt — sowie der Versatz (Stirnversatz, Rückversatz, doppelter Versatz) am Sparrenfußpunkt. Dazu kommen Zapfen, Blattungen sowie Nägel, Schrauben und Balkenschuhe."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Bubiza-Wiki Dachkonstruktion",
+    "konfidenz": "hoch"
+  }
+]

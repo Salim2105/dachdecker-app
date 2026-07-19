@@ -15,6 +15,11 @@ const aufgaben = JSON.parse(readFileSync(`./content/${lf}/aufgaben.json`, "utf8"
 const lektionen = JSON.parse(readFileSync(`./content/${lf}/lektionen.json`, "utf8"));
 
 const PFLICHT = ["id", "typ", "lernfeld", "thema", "quelle", "konfidenz", "erklaerung"];
+// In Formeln erlaubte mathjs-Funktionen/Konstanten (keine Parameternamen)
+const MATHFN = new Set([
+  "sqrt", "ceil", "floor", "round", "abs", "min", "max", "pow", "log", "log10",
+  "exp", "sin", "cos", "tan", "asin", "acos", "atan", "pi", "e", "deg", "rad",
+]);
 let fehler = 0;
 const ids = new Set();
 
@@ -71,7 +76,10 @@ for (const a of aufgaben) {
     }
     for (const s of a.schritte) {
       for (const token of s.formel.match(/[a-zA-Z_]\w*/g) ?? []) {
-        const bekannt = namen.includes(token) || a.schritte.some((x) => x.ergebnisName === token);
+        const bekannt =
+          MATHFN.has(token) ||
+          namen.includes(token) ||
+          a.schritte.some((x) => x.ergebnisName === token);
         if (!bekannt) {
           console.error(`CALC UNBEKANNTE VARIABLE: ${a.id} -> ${token}`);
           fehler++;
