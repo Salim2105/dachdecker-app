@@ -43,5 +43,92 @@
       }
     ],
     "toleranzProzent": 1
+  },
+  {
+    "id": "lf01-004",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhuetung",
+    "quelle": "BG BAU / DGUV — STOP-Prinzip",
+    "konfidenz": "hoch",
+    "frage": "Welche Maßnahme hat nach dem STOP-Prinzip den höchsten Rang?",
+    "optionen": [
+      "Persönliche Schutzausrüstung (PSA)",
+      "Organisatorische Maßnahmen",
+      "Technische Schutzmaßnahmen",
+      "Substitution der Gefahr"
+    ],
+    "korrekt": [3],
+    "erklaerung": "Das STOP-Prinzip ordnet Schutzmaßnahmen nach Wirksamkeit: Substitution (Gefahr vermeiden) vor Technischen, dann Organisatorischen, zuletzt Persönlichen Schutzmaßnahmen. PSA ist die letzte Stufe."
+  },
+  {
+    "id": "lf01-005",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhuetung",
+    "quelle": "BG BAU / DGUV — STOP-Prinzip",
+    "konfidenz": "hoch",
+    "text": "Nach dem STOP-Prinzip steht die persönliche Schutzausrüstung an {{letzter}} Stelle — sie wird erst eingesetzt, wenn {{technische}} und organisatorische Maßnahmen nicht ausreichen.",
+    "akzeptiert": { "letzter": ["vierter", "4."], "technische": ["technischen"] },
+    "erklaerung": "PSA (z. B. Auffanggurt gegen Absturz) ist die schwächste, weil vom Menschen abhängige Schutzmaßnahme — deshalb steht sie im STOP-Prinzip zuletzt."
+  },
+  {
+    "id": "lf01-006",
+    "typ": "diagram",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtungsplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "frage": "Ordne die Elemente des Baustelleneinrichtungsplans den markierten Stellen zu.",
+    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Baustelleneinrichtungsplan von oben'><rect x='10' y='12' width='300' height='196' rx='4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='7 5'/><rect x='128' y='86' width='92' height='64' fill='none' stroke='currentColor' stroke-width='1.5'/><text x='174' y='122' fill='currentColor' font-size='9' text-anchor='middle' opacity='0.55'>Rohbau</text><line x1='78' y1='120' x2='150' y2='80' stroke='currentColor' stroke-width='1'/><rect x='72' y='116' width='12' height='9' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='60' cy='152' r='12' fill='#c07d4a'/><text x='60' y='157' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><rect x='236' y='40' width='52' height='13' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='236' y='58' width='52' height='13' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='262' cy='92' r='12' fill='#c07d4a'/><text x='262' y='97' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><rect x='40' y='40' width='48' height='22' rx='3' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='64' cy='80' r='12' fill='#c07d4a'/><text x='64' y='85' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><path d='M160 206 l0 -22 m-6 9 l6 -9 l6 9' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='188' cy='190' r='12' fill='#c07d4a'/><text x='188' y='195' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "kran": "Kran",
+      "lager": "Materiallager",
+      "bauwagen": "Bauwagen",
+      "zufahrt": "Zufahrt"
+    },
+    "erklaerung": "Der Kran (1) steht so, dass sein Schwenkbereich Rohbau und Lager erreicht. Das Materiallager (2) liegt im Kranbereich für kurze Wege. Der Bauwagen (3) steht am Rand, die Zufahrt (4) führt von der Straße auf die Baustelle."
+  },
+  {
+    "id": "lf01-007",
+    "typ": "draw",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtungsplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "aufgabentext": "Skizziere einen einfachen Baustelleneinrichtungsplan für den abgebildeten Rohbau. Zeichne Kran, Materiallager, Bauwagen und die Zufahrt sinnvoll ein.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Rohbau mit Bauzaun'><rect x='10' y='12' width='300' height='196' rx='4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='7 5'/><rect x='128' y='86' width='92' height='64' fill='none' stroke='currentColor' stroke-width='1.5'/><text x='174' y='122' fill='currentColor' font-size='9' text-anchor='middle' opacity='0.55'>Rohbau</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Muster-Baustelleneinrichtungsplan'><rect x='10' y='12' width='300' height='196' rx='4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='7 5'/><rect x='128' y='86' width='92' height='64' fill='none' stroke='currentColor' stroke-width='1.5'/><text x='174' y='122' fill='currentColor' font-size='9' text-anchor='middle' opacity='0.55'>Rohbau</text><circle cx='95' cy='120' r='58' fill='none' stroke='#c07d4a' stroke-width='1' stroke-dasharray='3 4'/><rect x='89' y='114' width='12' height='12' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='95' y1='120' x2='150' y2='95' stroke='currentColor' stroke-width='1'/><text x='95' y='144' fill='currentColor' font-size='9' text-anchor='middle'>Kran</text><rect x='40' y='150' width='54' height='24' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='67' y='165' fill='currentColor' font-size='9' text-anchor='middle'>Lager</text><rect x='250' y='40' width='50' height='22' rx='3' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='275' y='54' fill='currentColor' font-size='9' text-anchor='middle'>Bauwagen</text><path d='M180 206 l0 -24 m-6 9 l6 -9 l6 9' fill='none' stroke='#c07d4a' stroke-width='1.5'/><text x='210' y='198' fill='currentColor' font-size='9' text-anchor='middle'>Zufahrt</text></svg>",
+    "schritte": [
+      "Kran zentral platzieren, damit sein Schwenkbereich (gestrichelter Kreis) Rohbau und Lager erreicht.",
+      "Materiallager in den Schwenkbereich des Krans legen — so muss Material nicht umgesetzt werden (kurze Wege).",
+      "Zufahrt von der Straße einzeichnen, befahrbar für Lieferfahrzeuge, ohne den Kranbereich zu blockieren.",
+      "Bauwagen (Baubude) an den Rand stellen, möglichst mit Blick auf die Zufahrt."
+    ],
+    "erklaerung": "Entscheidend ist, dass der Kran mit seinem Schwenkbereich Rohbau und Lager erreicht und die Zufahrt frei bleibt. Das ergibt kurze Wege, spart Zeit und erhöht die Sicherheit. Es gibt nicht die eine richtige Lösung — wichtig sind die Prinzipien."
+  },
+  {
+    "id": "lf01-008",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtungsplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "begriff": "Baustelleneinrichtungsplan",
+    "definition": "Ein maßstäblicher Plan, der vor Baubeginn festlegt, wo Kran, Materiallager, Bauwagen, Zufahrten sowie Strom- und Wasseranschluss stehen. Er sorgt für kurze Wege und einen sicheren, rationellen Ablauf.",
+    "bestandteile": ["Baustellen", "einrichtungs", "plan"],
+    "erklaerung": "Merke die drei Wortteile: Baustellen-einrichtungs-plan."
+  },
+  {
+    "id": "lf01-009",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhuetung",
+    "quelle": "BG BAU — Unfallverhütungsvorschriften (DGUV Vorschrift 38 Bauarbeiten)",
+    "konfidenz": "hoch",
+    "begriff": "Unfallverhütungsvorschrift",
+    "definition": "Verbindliche Regeln der Berufsgenossenschaft (BG BAU) zur Verhütung von Arbeitsunfällen — z. B. zu Absturzsicherung, Gerüsten und persönlicher Schutzausrüstung. Kurz: UVV.",
+    "bestandteile": ["Unfall", "verhütungs", "vorschrift"],
+    "erklaerung": "Merke die drei Wortteile: Unfall-verhütungs-vorschrift (UVV)."
   }
 ]

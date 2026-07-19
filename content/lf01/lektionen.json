@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "id": "lf01-l01",
+    "lernfeld": "lf01",
+    "thema": "Gewerke am Bau",
+    "titel": "Wer ist am Bau beteiligt?",
+    "inhalt": [
+      "An einem Bauvorhaben arbeiten viele Gewerke zusammen: Rohbauer, Zimmerer, Dachdecker, Klempner, Elektro- und Sanitärbetriebe. Damit alles ineinandergreift, muss die Reihenfolge der Arbeiten geplant und koordiniert werden.",
+      "Der Bauherr ist der Auftraggeber. Das Planungsbüro (Architekt/Ingenieur) plant und zeichnet. Die Baufirmen führen aus. Die Bauaufsicht (Bauaufsichtsbehörde) überwacht, dass die öffentlich-rechtlichen Vorschriften eingehalten werden.",
+      "Als Dachdecker kommst du meist erst, wenn der Rohbau und der Dachstuhl stehen — deine Arbeit muss also mit den vorherigen Gewerken abgestimmt sein."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l02",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtungsplan",
+    "titel": "Die Baustelle planen",
+    "inhalt": [
+      "Bevor die Arbeit beginnt, wird die Baustelle eingerichtet. Im Baustelleneinrichtungsplan wird festgelegt, wo Kran, Materiallager, Bauwagen (Baubude), Zufahrten sowie die Strom- und Wasserversorgung stehen.",
+      "Der Plan wird mit genormten Sinnbildern und in einem festgelegten Maßstab (z. B. 1:100) gezeichnet. Ziel ist ein sicherer und rationeller Ablauf mit kurzen Wegen: Das Material soll möglichst im Schwenkbereich des Krans liegen, damit es nicht umgesetzt werden muss.",
+      "Eine gute Planung spart Zeit, Geld und verhindert Unfälle durch Gerümpel und lange Transportwege."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l03",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhuetung",
+    "titel": "Arbeitssicherheit: das STOP-Prinzip",
+    "inhalt": [
+      "Schutzmaßnahmen werden nach ihrer Wirksamkeit in einer Rangfolge ausgewählt — dem STOP-Prinzip:",
+      "S — Substitution: die Gefahr ganz vermeiden oder durch etwas Ungefährlicheres ersetzen. T — Technische Schutzmaßnahmen: z. B. ein Seitenschutz/Geländer gegen Absturz. O — Organisatorische Maßnahmen: z. B. Unterweisung, Absperrung, Arbeitszeiten. P — Persönliche Schutzausrüstung (PSA): z. B. Auffanggurt gegen Absturz.",
+      "Die höhere Stufe hat immer Vorrang. PSA steht an letzter Stelle: Sie wird erst eingesetzt, wenn technische und organisatorische Maßnahmen nicht ausreichen. Gerade auf dem Dach ist die Absturzsicherung lebenswichtig."
+    ],
+    "quelle": "BG BAU / DGUV — Arbeitsschutz am Bau (STOP-Prinzip)",
+    "konfidenz": "hoch"
+  }
+]
