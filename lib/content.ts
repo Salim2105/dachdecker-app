@@ -9,6 +9,8 @@ import lf04Aufgaben from "@/content/lf04/aufgaben.json";
 import lf04Lektionen from "@/content/lf04/lektionen.json";
 import lf05Aufgaben from "@/content/lf05/aufgaben.json";
 import lf05Lektionen from "@/content/lf05/lektionen.json";
+import lf06Aufgaben from "@/content/lf06/aufgaben.json";
+import lf06Lektionen from "@/content/lf06/lektionen.json";
 import lf07Aufgaben from "@/content/lf07/aufgaben.json";
 import lf07Lektionen from "@/content/lf07/lektionen.json";
 import lf08Aufgaben from "@/content/lf08/aufgaben.json";
@@ -28,6 +30,7 @@ const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
   lf03: { aufgaben: lf03Aufgaben, lektionen: lf03Lektionen },
   lf04: { aufgaben: lf04Aufgaben, lektionen: lf04Lektionen },
   lf05: { aufgaben: lf05Aufgaben, lektionen: lf05Lektionen },
+  lf06: { aufgaben: lf06Aufgaben, lektionen: lf06Lektionen },
   lf07: { aufgaben: lf07Aufgaben, lektionen: lf07Lektionen },
   lf08: { aufgaben: lf08Aufgaben, lektionen: lf08Lektionen },
   lf09: { aufgaben: lf09Aufgaben, lektionen: lf09Lektionen },

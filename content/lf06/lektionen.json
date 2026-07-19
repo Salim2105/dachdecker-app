@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf06-l01",
+    "lernfeld": "lf06",
+    "thema": "Daemmstoffe",
+    "titel": "Dämmstoffgruppen und die Wärmeleitfähigkeit",
+    "inhalt": [
+      "Dämmstoffe lassen sich in drei Gruppen einteilen: mineralische (Glas- und Steinwolle), synthetische (EPS, XPS, PUR/PIR) und nachwachsende (Holzfaser, Zellulose, Hanf).",
+      "Die wichtigste Kennzahl ist die Wärmeleitfähigkeit λ (Lambda) in W/(m·K). Sie sagt, wie gut ein Stoff Wärme leitet. Für Dämmstoffe gilt: je kleiner λ, desto besser die Dämmwirkung.",
+      "Alle Dämmstoffe wirken nach demselben Prinzip: Sie schließen viel ruhende Luft in kleinen Poren oder Fasern ein. Ruhende Luft leitet Wärme schlecht — deshalb sind gute Dämmstoffe leicht und porig."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; Dämmstoff-Grundlagen (IVPU-Planungshilfen)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l02",
+    "lernfeld": "lf06",
+    "thema": "Daemmstoffe",
+    "titel": "Brandverhalten und Einsatzbereiche",
+    "inhalt": [
+      "Mineralwolle (Glas- und Steinwolle) ist nicht brennbar und wird deshalb überall dort eingesetzt, wo der Brandschutz zählt. Sie ist außerdem gut schalldämmend, aber druckweich und feuchteempfindlich.",
+      "EPS (Styropor) ist leicht und günstig, aber brennbar und nicht sehr druckfest. XPS ist druckfest und nimmt praktisch kein Wasser auf — deshalb wird es dort verwendet, wo Feuchte und Last zusammenkommen, etwa beim Umkehrdach oder im erdberührten Bereich.",
+      "PUR/PIR-Hartschaum kombiniert eine sehr niedrige Wärmeleitfähigkeit mit hoher Druckfestigkeit. Deshalb ist er auf dem Flachdach und als Aufsparrendämmung verbreitet, wo begangen oder mit Anlagen belastet wird."
+    ],
+    "quelle": "Dämmstoff-Grundlagen; IVPU-Planungshilfen (PU-Dämmung); KMK-Rahmenlehrplan LF 6",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l03",
+    "lernfeld": "lf06",
+    "thema": "Baumetalle",
+    "titel": "Baumetalle am Dach",
+    "inhalt": [
+      "Am Dach werden vor allem Titanzink, Kupfer, Aluminium, Edelstahl, verzinkter Stahl und (heute selten) Blei verarbeitet.",
+      "Titanzink bildet an der Luft eine schützende blaugraue Patina, Kupfer eine charakteristische grüne Patina. Beide Schichten schützen das Metall darunter und sind erwünscht — im Gegensatz zu Weißrost, der durch stehende Feuchte an der Rückseite entsteht.",
+      "Aluminium ist sehr leicht und korrosionsbeständig, Edelstahl besonders widerstandsfähig. Wichtig bleibt immer die elektrochemische Spannungsreihe: Kupfer darf nie oberhalb von Titanzink oder verzinktem Stahl eingebaut werden, weil abfließendes Wasser Kupferionen nach unten trägt."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; Fachregeln Bauspenglerarbeiten; Rheinzink Konstruktionsempfehlungen",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l04",
+    "lernfeld": "lf06",
+    "thema": "Bauphysik Grundlagen",
+    "titel": "Kennwerte: λ, µ und der sd-Wert",
+    "inhalt": [
+      "Drei Kennwerte begegnen dir ständig. Die Wärmeleitfähigkeit λ beschreibt den Wärmetransport — klein ist gut. Die Wasserdampf-Diffusionswiderstandszahl µ beschreibt, wie stark ein Stoff Wasserdampf bremst, verglichen mit ruhender Luft (µ = 1).",
+      "Der sd-Wert verbindet beides mit der Dicke: sd = µ · d. Er gibt an, wie dick eine Luftschicht sein müsste, um genauso stark zu bremsen — angegeben in Metern.",
+      "Daraus folgt die Faustregel für Bahnen: Eine Dampfbremse hat einen großen sd-Wert (bremst stark), eine diffusionsoffene Unterdeckbahn einen kleinen (lässt Feuchte nach außen). Feuchtevariable Dampfbremsen ändern ihren sd-Wert je nach Umgebungsfeuchte: im Winter bremsend, im Sommer offener für die Rücktrocknung."
+    ],
+    "quelle": "Bauphysik-Grundlagen (λ, µ, sd-Wert); Herstellerunterlagen Dampfbremsen",
+    "konfidenz": "hoch"
+  }
+]
