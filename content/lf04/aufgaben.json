@@ -1,0 +1,226 @@
+[
+  {
+    "id": "lf04-001",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Aus welchen drei Grundstoffen besteht Beton?",
+    "optionen": [
+      "Kalk, Sand und Wasser",
+      "Zement, Gesteinskörnung und Wasser",
+      "Zement, Kalk und Gips",
+      "Bitumen, Kies und Sand"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Beton besteht aus Zement (Bindemittel), Gesteinskörnung (Sand und Kies) und Wasser. Zusatzmittel und Zusatzstoffe kommen bei Bedarf dazu."
+  },
+  {
+    "id": "lf04-002",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Zug und Druck",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Welche Kräfte nimmt der Bewehrungsstahl im Stahlbeton auf?",
+    "optionen": ["Druckkräfte", "Zugkräfte", "Windkräfte", "Auftriebskräfte"],
+    "korrekt": [1],
+    "erklaerung": "Beton ist stark auf Druck, aber schwach auf Zug. Deshalb übernimmt der Bewehrungsstahl die Zugkräfte — zusammen ergeben sie den Verbundbaustoff Stahlbeton."
+  },
+  {
+    "id": "lf04-003",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Betontechnologie-Grundlagen (w/z-Wert)",
+    "konfidenz": "hoch",
+    "frage": "Was passiert, wenn der Wasserzementwert (w/z-Wert) kleiner wird?",
+    "optionen": [
+      "Der Beton wird fester und dichter, lässt sich aber schlechter verarbeiten",
+      "Der Beton wird weicher und poröser",
+      "Der Beton bindet gar nicht mehr ab",
+      "Der Beton wird schneller kalt"
+    ],
+    "korrekt": [0],
+    "erklaerung": "Ein niedriger w/z-Wert bedeutet wenig Wasser je Zement: Der Beton wird fester und dichter, aber steifer und schwerer einzubauen. Zu viel Wasser macht ihn dagegen porös und wenig dauerhaft."
+  },
+  {
+    "id": "lf04-004",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Wo liegt die Bewehrung bei einer Deckenplatte, die auf zwei Auflagern liegt?",
+    "optionen": [
+      "Oben, in der Druckzone",
+      "Unten, in der Zugzone",
+      "Genau in der Mitte",
+      "Die Lage ist egal"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Platte biegt sich unter Last nach unten durch: Oben entsteht Druck, unten Zug. Die Bewehrung gehört immer in die Zugzone — hier also nach unten. Beim auskragenden Balkon ist es umgekehrt (oben)."
+  },
+  {
+    "id": "lf04-005",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient die Betondeckung über der Bewehrung?",
+    "optionen": [
+      "Sie macht den Beton leichter",
+      "Sie spart Bewehrungsstahl",
+      "Sie schützt den Stahl vor Korrosion und im Brandfall vor Hitze",
+      "Sie beschleunigt das Abbinden"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Die Betondeckung ist der Abstand von der Bewehrung zur Bauteiloberfläche. Sie schützt den Stahl vor Rost und vor Hitze im Brandfall. Abstandhalter sichern dieses Maß beim Betonieren."
+  },
+  {
+    "id": "lf04-006",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Schalung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Warum muss frischer Beton nachbehandelt (z. B. feucht gehalten) werden?",
+    "optionen": [
+      "Damit er schneller trocknet",
+      "Damit die Hydratation ungestört ablaufen kann",
+      "Damit die Schalung leichter abgeht",
+      "Damit er heller wird"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Zement bindet nicht durch Trocknen ab, sondern durch die chemische Reaktion mit Wasser (Hydratation). Trocknet der Beton zu früh aus, erreicht er seine Festigkeit nicht."
+  },
+  {
+    "id": "lf04-007",
+    "typ": "cloze",
+    "lernfeld": "lf04",
+    "thema": "Zug und Druck",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "text": "Beton nimmt vor allem {{Druck}} auf, der Bewehrungsstahl übernimmt den {{Zug}}. Zusammen ergeben sie den Verbundbaustoff Stahlbeton.",
+    "akzeptiert": { "Druck": ["Druckkräfte", "Druckkraefte"], "Zug": ["Zugkräfte", "Zugkraefte"] },
+    "erklaerung": "Merksatz: Beton drückt, Stahl zieht. Deshalb liegt die Bewehrung immer dort, wo das Bauteil gezogen wird."
+  },
+  {
+    "id": "lf04-008",
+    "typ": "cloze",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Betontechnologie-Grundlagen (w/z-Wert)",
+    "konfidenz": "hoch",
+    "text": "Der Wasserzementwert ist das Verhältnis von {{Wasser}} zu {{Zement}}. Ein niedriger Wert ergibt festeren Beton.",
+    "akzeptiert": { "Wasser": ["Wassermasse"], "Zement": ["Zementmasse"] },
+    "erklaerung": "w/z = Wassermasse geteilt durch Zementmasse. Beispiel: 160 kg Wasser auf 320 kg Zement ergibt einen w/z-Wert von 0,5."
+  },
+  {
+    "id": "lf04-009",
+    "typ": "calc",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Betontechnologie-Grundlagen; Fachrechnen Bautechnik",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Betonmischung werden {wasser} kg Wasser und {zement} kg Zement verwendet. Wie groß ist der Wasserzementwert (w/z-Wert)?",
+    "parameter": [
+      { "name": "wasser", "label": "Wasser", "einheit": "kg", "min": 140, "max": 200, "schritt": 5 },
+      { "name": "zement", "label": "Zement", "einheit": "kg", "min": 280, "max": 420, "schritt": 10 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "w/z-Wert = Wassermasse / Zementmasse = {wasser} / {zement}",
+        "formel": "wasser / zement",
+        "ergebnisName": "wz",
+        "einheit": ""
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Der w/z-Wert ist ein Verhältnis und hat deshalb keine Einheit. Übliche Werte im Hochbau liegen etwa zwischen 0,4 und 0,6 — je kleiner, desto fester und dichter der Beton."
+  },
+  {
+    "id": "lf04-010",
+    "typ": "calc",
+    "lernfeld": "lf04",
+    "thema": "Schalung",
+    "quelle": "Fachrechnen Bautechnik; Kontext KMK LF 4",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Streifenfundament ist {laenge} m lang, {breite} m breit und {hoehe} m hoch. Wie viel Beton wird benötigt?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 3, "max": 15, "schritt": 0.5 },
+      { "name": "breite", "label": "Breite", "einheit": "m", "min": 0.3, "max": 0.8, "schritt": 0.05 },
+      { "name": "hoehe", "label": "Höhe", "einheit": "m", "min": 0.4, "max": 1, "schritt": 0.1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Volumen = Länge · Breite · Höhe = {laenge} · {breite} · {hoehe}",
+        "formel": "laenge * breite * hoehe",
+        "ergebnisName": "volumen",
+        "einheit": "m³"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Beton wird immer in Kubikmetern bestellt. Rechne großzügig: Für Verluste und Unebenheiten im Baugrund plant man einen kleinen Zuschlag ein."
+  },
+  {
+    "id": "lf04-011",
+    "typ": "diagram",
+    "lernfeld": "lf04",
+    "thema": "Zug und Druck",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "frage": "Ein Stahlbetonträger liegt auf zwei Auflagern und wird belastet. Benenne die markierten Bereiche.",
+    "svg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Stahlbetontraeger auf zwei Auflagern'><path d='M170 40 L170 70 M164 62 L170 70 L176 62' fill='none' stroke='currentColor' stroke-width='1.5'/><rect x='50' y='78' width='220' height='46' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='50' y1='101' x2='270' y2='101' stroke='currentColor' stroke-width='0.9' stroke-dasharray='4 4'/><line x1='58' y1='116' x2='262' y2='116' stroke='#c07d4a' stroke-width='3'/><path d='M64 124 L54 142 L74 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M256 124 L246 142 L266 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='44' y1='142' x2='84' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='236' y1='142' x2='276' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='92' y1='86' x2='92' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='92' cy='50' r='12' fill='#c07d4a'/><text x='92' y='55' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='270' y1='113' x2='282' y2='113' stroke='#c07d4a' stroke-width='1.2'/><circle cx='294' cy='113' r='12' fill='#c07d4a'/><text x='294' y='118' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='150' y1='116' x2='150' y2='164' stroke='#c07d4a' stroke-width='1.2'/><circle cx='150' cy='176' r='12' fill='#c07d4a'/><text x='150' y='181' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "zuordnung": {
+      "druckzone": "Druckzone",
+      "zugzone": "Zugzone",
+      "bewehrung": "Bewehrung"
+    },
+    "erklaerung": "Unter Last biegt sich der Träger nach unten durch: Oben wird er gestaucht (1 Druckzone), unten gedehnt (2 Zugzone). Deshalb liegt die Bewehrung (3) unten in der Zugzone."
+  },
+  {
+    "id": "lf04-012",
+    "typ": "draw",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "aufgabentext": "Der Träger liegt auf zwei Auflagern und wird von oben belastet. Zeichne die Durchbiegung an, kennzeichne Druck- und Zugzone und trage die Lage der Bewehrung ein.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Traeger auf zwei Auflagern ohne Beschriftung'><rect x='50' y='78' width='220' height='46' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M64 124 L54 142 L74 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M256 124 L246 142 L266 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='44' y1='142' x2='84' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='236' y1='142' x2='276' y2='142' stroke='currentColor' stroke-width='1.2'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Traeger mit Zug- und Druckzone'><path d='M170 34 L170 66 M164 58 L170 66 L176 58' fill='none' stroke='currentColor' stroke-width='1.5'/><rect x='50' y='78' width='220' height='46' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='50' y1='101' x2='270' y2='101' stroke='currentColor' stroke-width='0.9' stroke-dasharray='4 4'/><line x1='58' y1='116' x2='262' y2='116' stroke='#c07d4a' stroke-width='3'/><path d='M64 124 L54 142 L74 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M256 124 L246 142 L266 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='44' y1='142' x2='84' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='236' y1='142' x2='276' y2='142' stroke='currentColor' stroke-width='1.2'/><path d='M56 130 Q160 152 264 130' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='60' y='94' fill='currentColor' font-size='10'>Druckzone</text><text x='60' y='114' fill='currentColor' font-size='10'>Zugzone</text><text x='196' y='170' fill='#c07d4a' font-size='10'>Bewehrung unten</text><line x1='192' y1='166' x2='150' y2='120' stroke='#c07d4a' stroke-width='1'/></svg>",
+    "schritte": [
+      "Die Last von oben einzeichnen — der Träger biegt sich zwischen den Auflagern nach unten durch (gestrichelte Linie).",
+      "Die obere Hälfte wird zusammengedrückt: Das ist die Druckzone.",
+      "Die untere Hälfte wird auseinandergezogen: Das ist die Zugzone.",
+      "Die Bewehrung in die Zugzone legen, also unten — mit Betondeckung zum Rand hin."
+    ],
+    "erklaerung": "Merke: Die Bewehrung folgt immer dem Zug. Bei einem Träger auf zwei Auflagern liegt sie unten, bei einem auskragenden Balkon oben. Eine falsch eingelegte Bewehrung ist ein schwerer statischer Fehler."
+  },
+  {
+    "id": "lf04-013",
+    "typ": "fachbegriff",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Betontechnologie-Grundlagen",
+    "konfidenz": "hoch",
+    "begriff": "Wasserzementwert",
+    "definition": "Das Verhältnis von Wassermasse zu Zementmasse in einer Betonmischung (w/z-Wert). Je kleiner er ist, desto fester und dichter wird der Beton — aber desto schwerer lässt er sich verarbeiten.",
+    "bestandteile": ["Wasser", "zement", "wert"],
+    "erklaerung": "Merke die drei Wortteile: Wasser-zement-wert."
+  },
+  {
+    "id": "lf04-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch",
+    "begriff": "Betondeckung",
+    "definition": "Der Abstand zwischen der Bewehrung und der Bauteiloberfläche. Sie schützt den Stahl vor Korrosion und vor Hitze im Brandfall und wird beim Betonieren mit Abstandhaltern gesichert.",
+    "bestandteile": ["Beton", "deckung"],
+    "erklaerung": "Merke: Beton-deckung — der Beton deckt den Stahl ab."
+  }
+]

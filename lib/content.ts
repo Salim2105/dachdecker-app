@@ -5,17 +5,16 @@ import lf02Aufgaben from "@/content/lf02/aufgaben.json";
 import lf02Lektionen from "@/content/lf02/lektionen.json";
 import lf03Aufgaben from "@/content/lf03/aufgaben.json";
 import lf03Lektionen from "@/content/lf03/lektionen.json";
+import lf04Aufgaben from "@/content/lf04/aufgaben.json";
+import lf04Lektionen from "@/content/lf04/lektionen.json";
 import { istSichtbar, type Aufgabe, type Lektion, type Lernfeld } from "@/content/schema";
 
-const AUFGABEN: Record<string, unknown[]> = {
-  lf01: lf01Aufgaben,
-  lf02: lf02Aufgaben,
-  lf03: lf03Aufgaben,
-};
-const LEKTIONEN: Record<string, unknown[]> = {
-  lf01: lf01Lektionen,
-  lf02: lf02Lektionen,
-  lf03: lf03Lektionen,
+// Neues Lernfeld ergänzen: oben importieren und hier eintragen.
+const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
+  lf01: { aufgaben: lf01Aufgaben, lektionen: lf01Lektionen },
+  lf02: { aufgaben: lf02Aufgaben, lektionen: lf02Lektionen },
+  lf03: { aufgaben: lf03Aufgaben, lektionen: lf03Lektionen },
+  lf04: { aufgaben: lf04Aufgaben, lektionen: lf04Lektionen },
 };
 
 export function filterSichtbar<T extends { konfidenz: Lektion["konfidenz"] }>(xs: T[]): T[] {
@@ -31,9 +30,9 @@ export function getLernfeld(id: string): Lernfeld | undefined {
 }
 
 export function getAufgaben(lfId: string): Aufgabe[] {
-  return filterSichtbar((AUFGABEN[lfId] as Aufgabe[]) ?? []);
+  return filterSichtbar((INHALTE[lfId]?.aufgaben as Aufgabe[]) ?? []);
 }
 
 export function getLektionen(lfId: string): Lektion[] {
-  return filterSichtbar((LEKTIONEN[lfId] as Lektion[]) ?? []);
+  return filterSichtbar((INHALTE[lfId]?.lektionen as Lektion[]) ?? []);
 }

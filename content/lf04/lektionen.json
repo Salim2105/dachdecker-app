@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf04-l01",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "titel": "Woraus Beton besteht",
+    "inhalt": [
+      "Beton besteht aus drei Grundstoffen: Zement als Bindemittel, Gesteinskörnung (Sand und Kies) als Gerüst und Wasser. Dazu können Zusatzmittel (z. B. Verflüssiger) und Zusatzstoffe kommen.",
+      "Der Zement bindet nicht durch Trocknen ab, sondern durch Hydratation — eine chemische Reaktion mit Wasser. Deshalb muss frischer Beton feucht gehalten werden (Nachbehandlung), sonst wird er nicht fest genug.",
+      "Der Wasserzementwert (w/z-Wert) ist das Verhältnis von Wassermasse zu Zementmasse. Je kleiner der w/z-Wert, desto fester und dichter wird der Beton — aber desto schlechter lässt er sich verarbeiten. Zu viel Wasser macht den Beton porös und wenig dauerhaft."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4; Betontechnologie-Grundlagen (UniBw-Skript Frischbeton, Holcim Betontechnische Daten)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l02",
+    "lernfeld": "lf04",
+    "thema": "Zug und Druck",
+    "titel": "Warum Stahlbeton funktioniert",
+    "inhalt": [
+      "Beton kann Druckkräfte sehr gut aufnehmen, Zugkräfte dagegen kaum — er reißt schon bei geringer Zugbeanspruchung. Stahl ist genau umgekehrt stark auf Zug.",
+      "Im Stahlbeton werden beide zu einem Verbundbaustoff kombiniert: Der Beton übernimmt den Druck, der eingelegte Bewehrungsstahl den Zug.",
+      "Der Verbund funktioniert aus zwei Gründen: Stahl und Beton dehnen sich bei Wärme fast gleich stark aus, und der alkalische Beton schützt den Stahl vor Rost."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l03",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "titel": "Bewehrung an die richtige Stelle",
+    "inhalt": [
+      "Die Bewehrung muss immer dort liegen, wo Zug entsteht — in der Zugzone. Bei einem Träger oder einer Decke, die auf zwei Auflagern liegt, biegt sich das Bauteil unter Last nach unten durch: Oben entsteht Druck, unten Zug. Die Bewehrung gehört also nach unten.",
+      "Bei einem auskragenden Bauteil (Kragarm, z. B. einem Balkon) ist es umgekehrt: Dort wird die Oberseite gezogen, die Bewehrung muss oben liegen. Eine falsch eingelegte Bewehrung ist ein schwerer, oft einsturzgefährlicher Fehler.",
+      "Die Betondeckung ist der Abstand zwischen Bewehrung und Bauteiloberfläche. Sie schützt den Stahl vor Korrosion und im Brandfall vor Hitze. Abstandhalter sichern dieses Maß beim Betonieren."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l04",
+    "lernfeld": "lf04",
+    "thema": "Schalung",
+    "titel": "Schalung, Verdichten, Nachbehandeln",
+    "inhalt": [
+      "Die Schalung gibt dem Beton seine Form. Sie muss maßhaltig, dicht und tragfähig sein, denn frischer Beton drückt mit erheblichem Schalungsdruck gegen die Wände. Undichte Stellen führen zu Kiesnestern, weil der Zementleim ausläuft.",
+      "Nach dem Einbringen wird der Beton verdichtet, meist mit einem Innenrüttler. Dadurch entweichen Luftporen und der Beton umschließt die Bewehrung vollständig. Zu langes Rütteln entmischt den Beton.",
+      "Danach folgt die Nachbehandlung: Der Beton wird feucht gehalten und vor Sonne, Wind und Frost geschützt, damit die Hydratation ungestört ablaufen kann. Ausgeschalt wird erst, wenn der Beton ausreichend fest ist."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4; Betontechnologie-Grundlagen",
+    "konfidenz": "hoch"
+  }
+]
