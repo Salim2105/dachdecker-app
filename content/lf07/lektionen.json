@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf07-l01",
+    "lernfeld": "lf07",
+    "thema": "Dachrinnenarten",
+    "titel": "Rinnen, Halter und Fallrohre",
+    "inhalt": [
+      "Man unterscheidet vorgehängte (hängende) Rinnen, die außen an der Traufe sitzen, und innenliegende Rinnen, die in die Dachfläche eingebaut sind. Die häufigste Bauform ist die halbrunde vorgehängte Rinne; daneben gibt es kastenförmige Rinnen.",
+      "Die Rinne wird von Rinnenhaltern (Rinneneisen) getragen, die an Sparren oder Traufbohle befestigt werden. Über Rinnenstutzen und Wasserfangkasten geht es ins Fallrohr.",
+      "Wichtig: Die Rinne wird mit gleichmäßigem Gefälle zum Fallrohr verlegt, damit kein Wasser stehen bleibt. Üblich ist ein leichtes Gefälle in der Größenordnung von etwa 3 mm je Meter. Bei innenliegender Entwässerung ohne freien Überlauf ist zusätzlich eine Notentwässerung erforderlich."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 7; Basiswissen Dachentwässerung (Friedrich-Datentechnik)",
+    "konfidenz": "mittel"
+  },
+  {
+    "id": "lf07-l02",
+    "lernfeld": "lf07",
+    "thema": "Regenspende und Abflussbeiwert",
+    "titel": "Wie viel Wasser kommt an? Die Bemessung",
+    "inhalt": [
+      "Wie groß Rinne und Fallrohr sein müssen, hängt davon ab, wie viel Wasser anfällt. Dafür rechnet man mit der Regenspende r — der örtlichen Regenmenge, angegeben in Liter je Sekunde und Hektar.",
+      "Für die normale Bemessung wird ein häufiger Berechnungsregen angesetzt, für die Notentwässerung ein sehr seltener Starkregen (Jahrhundertregen). Die örtlichen Werte kommen aus den amtlichen Regendaten des Deutschen Wetterdienstes.",
+      "Der Abflussbeiwert C berücksichtigt, wie viel Wasser die Fläche tatsächlich abgibt: Eine undurchlässige Dachfläche hat C = 1,0, ein Kies- oder Gründach speichert Wasser und hat einen kleineren Wert. Nach DIN EN 12056-3 gilt: Regenwasserabfluss Q = Regenspende r · wirksame Fläche A · Abflussbeiwert C (mit r in l/(s·ha) und A in m² geteilt durch 10 000)."
+    ],
+    "quelle": "DIN EN 12056-3 (Erläuterungen: Baunormenlexikon, BauNetz Wissen); Basiswissen Dachentwässerung",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l03",
+    "lernfeld": "lf07",
+    "thema": "Thermische Laengenausdehnung",
+    "titel": "Metall arbeitet: Dehnung einplanen",
+    "inhalt": [
+      "Metalle dehnen sich bei Erwärmung aus und ziehen sich bei Kälte zusammen. Eine Rinne, die im Winter bei Frost und im Sommer in der prallen Sonne liegt, macht erhebliche Längenänderungen mit.",
+      "Die Längenänderung berechnet man mit: Δl = Ausdehnungskoeffizient · Länge · Temperaturdifferenz. Titanzink dehnt sich dabei deutlich stärker als Stahl.",
+      "Deshalb werden in lange Rinnenstränge Dehnungsausgleicher eingebaut. Fehlen sie, wirft sich das Blech, die Nähte reißen auf oder die Halter werden herausgerissen — ein klassischer Bauschaden."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 7; Fachregeln Bauspenglerarbeiten",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l04",
+    "lernfeld": "lf07",
+    "thema": "Korrosionsschutz",
+    "titel": "Kontaktkorrosion: die Fließrichtung zählt",
+    "inhalt": [
+      "Treffen unterschiedliche Metalle aufeinander, kann Kontaktkorrosion entstehen. Entscheidend ist die elektrochemische Spannungsreihe: Das edlere Metall bleibt heil, das unedlere wird zerstört.",
+      "Die wichtigste Regel am Dach: Kupfer darf niemals oberhalb von Titanzink oder verzinktem Stahl eingebaut werden. Das Regenwasser schwemmt Kupferionen aus und trägt sie nach unten — dort zerstören sie das unedlere Metall in kurzer Zeit.",
+      "Umgekehrt ist es unkritisch: Zink oberhalb von Kupfer ist zulässig. Merke also: Die Fließrichtung des Wassers entscheidet."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 7; Fachregeln Bauspenglerarbeiten; Rheinzink Konstruktionsempfehlungen",
+    "konfidenz": "hoch"
+  }
+]
