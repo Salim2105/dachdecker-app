@@ -1,0 +1,243 @@
+[
+  {
+    "id": "lf11-001",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Vorgehaengte hinterlueftete Fassade",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11",
+    "konfidenz": "hoch",
+    "frage": "Wofür steht die Abkürzung VHF?",
+    "optionen": [
+      "Verputzte Holzfassade",
+      "Vorgehängte hinterlüftete Fassade",
+      "Vollflächig haftende Fassade",
+      "Verklebte Hartschaumfassade"
+    ],
+    "korrekt": [1],
+    "erklaerung": "VHF steht für vorgehängte hinterlüftete Fassade. Die Bekleidung hängt vor der Wand, dazwischen liegt eine belüftete Luftschicht."
+  },
+  {
+    "id": "lf11-002",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "quelle": "Fachregeln Außenwandbekleidung; KMK-Rahmenlehrplan LF 11",
+    "konfidenz": "hoch",
+    "frage": "Welche Hauptaufgabe hat die Hinterlüftung bei der VHF?",
+    "optionen": [
+      "Sie verbessert die Wärmedämmung",
+      "Sie führt Feuchtigkeit ab und lässt eingedrungenes Wasser abtrocknen",
+      "Sie trägt die Bekleidung",
+      "Sie ersetzt die Dampfbremse"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Luftschicht transportiert Feuchtigkeit ab. Selbst wenn durch Fugen etwas Wasser hinter die Bekleidung gelangt, läuft es ab und trocknet aus, ohne die Dämmung zu erreichen."
+  },
+  {
+    "id": "lf11-003",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "quelle": "Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch",
+    "frage": "Wo müssen bei einer hinterlüfteten Fassade die Lüftungsöffnungen sitzen?",
+    "optionen": [
+      "Nur oben",
+      "Nur unten",
+      "Unten (Zuluft) und oben (Abluft)",
+      "In der Mitte der Fassade"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Die Luftschicht wirkt wie ein Kamin: Unten strömt kühle Luft ein, erwärmt sich und tritt oben wieder aus. Fehlt eine der beiden Öffnungen, steht die Luft und die Fassade wird zur Feuchtefalle."
+  },
+  {
+    "id": "lf11-004",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "quelle": "Fachregeln Außenwandbekleidung / DIN 18516-1 (Erläuterungen)",
+    "konfidenz": "mittel",
+    "frage": "Wie dick sollte die Luftschicht einer hinterlüfteten Fassade üblicherweise mindestens sein?",
+    "optionen": ["etwa 5 mm", "etwa 20 mm", "etwa 60 mm", "etwa 100 mm"],
+    "korrekt": [1],
+    "erklaerung": "Als Richtwert gilt eine Luftschicht von mindestens rund 20 mm, damit die Luft überhaupt strömen kann. Die genauen Mindestmaße und Lüftungsquerschnitte regeln die Fachregeln für Außenwandbekleidungen."
+  },
+  {
+    "id": "lf11-005",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Ueberdeckungen und Fugen",
+    "quelle": "Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch",
+    "frage": "Warum darf die Bekleidung einer VHF offene Fugen haben?",
+    "optionen": [
+      "Weil Wasser dort nicht eindringen kann",
+      "Weil die Hinterlüftung eingedrungenes Wasser ableitet und abtrocknen lässt",
+      "Weil die Dämmung wasserdicht ist",
+      "Offene Fugen sind nicht zulässig"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Bekleidung ist Wetterschutz, nicht Abdichtung. Was durch die Fuge kommt, läuft in der Luftschicht ab und trocknet aus — genau dafür ist die Hinterlüftung da."
+  },
+  {
+    "id": "lf11-006",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Sprungmasse und Schnuerabstaende",
+    "quelle": "Rathscheck (Wandbekleidung, Deckbilder)",
+    "konfidenz": "hoch",
+    "frage": "Was gibt das Sprungmaß an?",
+    "optionen": [
+      "Den Abstand der Konsolen zur Wand",
+      "Den seitlichen Versatz eines Gebindes gegenüber dem darunterliegenden",
+      "Die Dicke der Luftschicht",
+      "Den Abstand zwischen zwei Fenstern"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das Sprungmaß bestimmt, um wie viel jedes Gebinde seitlich versetzt wird. Zusammen mit den angerissenen Schnurabständen ergibt es das gleichmäßige Deckbild der Fassade."
+  },
+  {
+    "id": "lf11-007",
+    "typ": "cloze",
+    "lernfeld": "lf11",
+    "thema": "Vorgehaengte hinterlueftete Fassade",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11",
+    "konfidenz": "hoch",
+    "text": "Der Aufbau einer VHF von innen nach außen lautet: Außenwand, {{Wärmedämmung}}, Hinterlüftung, Unterkonstruktion und außen die {{Bekleidung}}.",
+    "akzeptiert": {
+      "Wärmedämmung": ["Waermedaemmung", "Dämmung", "Daemmung"],
+      "Bekleidung": ["Fassadenbekleidung", "Verkleidung"]
+    },
+    "erklaerung": "Jede Schicht hat eine Aufgabe: Die Dämmung hält die Wärme, die Luftschicht führt Feuchte ab, die Bekleidung schützt vor Wetter."
+  },
+  {
+    "id": "lf11-008",
+    "typ": "cloze",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "quelle": "Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch",
+    "text": "Unten strömt die {{Zuluft}} in die Luftschicht ein, oben tritt die {{Abluft}} wieder aus. Dieser Kamineffekt trocknet die Konstruktion.",
+    "akzeptiert": { "Zuluft": ["Zuluftöffnung", "kühle Luft"], "Abluft": ["Abluftöffnung", "warme Luft"] },
+    "erklaerung": "Die Luft erwärmt sich an der Rückseite der Bekleidung, steigt auf und nimmt dabei Feuchtigkeit mit. Beide Öffnungen müssen dauerhaft frei bleiben."
+  },
+  {
+    "id": "lf11-009",
+    "typ": "calc",
+    "lernfeld": "lf11",
+    "thema": "Unterkonstruktion",
+    "quelle": "Fachrechnen Bautechnik; Kontext KMK LF 11",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Fassade ist {breite} m breit. Die Traglatten der Unterkonstruktion werden im Abstand von {abstand} m gesetzt. Wie viele Latten werden benötigt (erste und letzte mitgezählt)?",
+    "parameter": [
+      { "name": "breite", "label": "Fassadenbreite", "einheit": "m", "min": 4, "max": 18, "schritt": 0.5 },
+      { "name": "abstand", "label": "Lattenabstand", "einheit": "m", "min": 0.4, "max": 0.8, "schritt": 0.05 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anzahl Felder = Breite / Abstand, aufgerundet — plus eine Latte am Ende: {breite} / {abstand}",
+        "formel": "ceil(breite / abstand) + 1",
+        "ergebnisName": "latten",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Wie bei den Sparren gilt die Zaunpfahl-Regel: Es gibt immer eine Latte mehr als Felder. In Rand- und Eckbereichen wird zusätzlich dichter gesetzt, weil dort der Windsog größer ist."
+  },
+  {
+    "id": "lf11-010",
+    "typ": "calc",
+    "lernfeld": "lf11",
+    "thema": "Ueberdeckungen und Fugen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Flächenermittlung mit Öffnungen)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Fassade ist {breite} m breit und {hoehe} m hoch. Darin liegen {fenster} Fenster mit je {fensterflaeche} m². Wie groß ist die zu bekleidende Fläche?",
+    "parameter": [
+      { "name": "breite", "label": "Breite", "einheit": "m", "min": 6, "max": 16, "schritt": 0.5 },
+      { "name": "hoehe", "label": "Höhe", "einheit": "m", "min": 3, "max": 9, "schritt": 0.5 },
+      { "name": "fenster", "label": "Anzahl Fenster", "einheit": "Stück", "min": 2, "max": 6, "schritt": 1 },
+      { "name": "fensterflaeche", "label": "Fläche je Fenster", "einheit": "m²", "min": 1, "max": 3, "schritt": 0.25 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Bruttofläche = Breite · Höhe = {breite} · {hoehe}",
+        "formel": "breite * hoehe",
+        "ergebnisName": "brutto",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Abzug Fenster = Anzahl · Fläche je Fenster = {fenster} · {fensterflaeche}",
+        "formel": "fenster * fensterflaeche",
+        "ergebnisName": "abzug",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Zu bekleidende Fläche = Bruttofläche − Abzug",
+        "formel": "brutto - abzug",
+        "ergebnisName": "netto",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Erst die Bruttofläche, dann die Öffnungen abziehen. Achtung in der Praxis: An den Fensterlaibungen kommt Material für Anschlüsse wieder dazu — das wird gesondert erfasst."
+  },
+  {
+    "id": "lf11-011",
+    "typ": "diagram",
+    "lernfeld": "lf11",
+    "thema": "Vorgehaengte hinterlueftete Fassade",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11; Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch",
+    "frage": "Eine VHF im Waagerechtschnitt (links innen, rechts außen): Benenne die markierten Schichten.",
+    "svg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='VHF im Waagerechtschnitt'><text x='14' y='38' fill='currentColor' font-size='9'>innen</text><text x='262' y='38' fill='currentColor' font-size='9'>außen</text><rect x='30' y='50' width='40' height='120' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='70' y='50' width='46' height='120' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='78' y1='170' x2='104' y2='50' stroke='currentColor' stroke-width='0.7'/><line x1='96' y1='170' x2='116' y2='78' stroke='currentColor' stroke-width='0.7'/><path d='M138 168 L138 58 M134 66 L138 58 L142 66' fill='none' stroke='#c07d4a' stroke-width='1.3'/><rect x='156' y='50' width='16' height='120' fill='none' stroke='currentColor' stroke-width='1.3'/><rect x='176' y='50' width='12' height='120' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='48' y='114' fill='currentColor' font-size='8' text-anchor='middle'>Wand</text><line x1='93' y1='48' x2='93' y2='34' stroke='#c07d4a' stroke-width='1.2'/><circle cx='93' cy='22' r='12' fill='#c07d4a'/><text x='93' y='27' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='138' y1='176' x2='138' y2='188' stroke='#c07d4a' stroke-width='1.2'/><circle cx='138' cy='196' r='12' fill='#c07d4a'/><text x='138' y='201' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='164' y1='176' x2='186' y2='190' stroke='#c07d4a' stroke-width='1.2'/><circle cx='200' cy='196' r='12' fill='#c07d4a'/><text x='200' y='201' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='188' y1='60' x2='214' y2='44' stroke='#c07d4a' stroke-width='1.2'/><circle cx='228' cy='36' r='12' fill='#c07d4a'/><text x='228' y='41' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "daemmung": "Wärmedämmung",
+      "hinterlueftung": "Hinterlüftung",
+      "unterkonstruktion": "Unterkonstruktion",
+      "bekleidung": "Bekleidung"
+    },
+    "erklaerung": "Von innen nach außen: tragende Wand, Wärmedämmung (1), Hinterlüftungsebene (2, Pfeil zeigt den Luftstrom nach oben), Unterkonstruktion (3) und außen die Bekleidung (4)."
+  },
+  {
+    "id": "lf11-012",
+    "typ": "draw",
+    "lernfeld": "lf11",
+    "thema": "Vorgehaengte hinterlueftete Fassade",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Aufbau einer vorgehängten hinterlüfteten Fassade im Schnitt von innen nach außen. Beschrifte die Schichten und trage mit Pfeilen ein, wo Zuluft und Abluft strömen.",
+    "loesungSvg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung VHF Schnitt'><rect x='40' y='40' width='30' height='140' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='70' y='40' width='34' height='140' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='76' y1='180' x2='100' y2='40' stroke='currentColor' stroke-width='0.7'/><line x1='92' y1='180' x2='104' y2='110' stroke='currentColor' stroke-width='0.7'/><rect x='130' y='40' width='12' height='140' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M118 176 L118 46 M114 54 L118 46 L122 54' fill='none' stroke='#c07d4a' stroke-width='1.4'/><path d='M100 188 L114 180 M110 178 L114 180 L113 185' fill='none' stroke='#c07d4a' stroke-width='1.3'/><path d='M118 36 L132 28 M128 26 L132 28 L131 33' fill='none' stroke='#c07d4a' stroke-width='1.3'/><text x='55' y='114' fill='currentColor' font-size='8' text-anchor='middle'>Wand</text><text x='150' y='60' fill='currentColor' font-size='9'>Bekleidung</text><text x='150' y='84' fill='currentColor' font-size='9'>Unterkonstruktion</text><text x='150' y='108' fill='#c07d4a' font-size='9'>Hinterlüftung</text><text x='150' y='132' fill='currentColor' font-size='9'>Wärmedämmung</text><text x='60' y='200' fill='#c07d4a' font-size='9'>Zuluft unten</text><text x='140' y='22' fill='#c07d4a' font-size='9'>Abluft oben</text></svg>",
+    "schritte": [
+      "Ganz innen die tragende Außenwand zeichnen.",
+      "Direkt darauf die Wärmedämmung legen.",
+      "Davor die Hinterlüftungsebene als Luftschicht freilassen (Richtwert rund 20 mm).",
+      "In die Luftschicht die Unterkonstruktion stellen, daran außen die Bekleidung befestigen.",
+      "Zuluftpfeil unten und Abluftpfeil oben einzeichnen — die Luft steigt in der Schicht nach oben."
+    ],
+    "erklaerung": "Der Kamineffekt ist das Herz der VHF: Unten kommt kühle Luft rein, erwärmt sich an der Bekleidungsrückseite, steigt auf und nimmt Feuchtigkeit mit. Werden die Öffnungen zugebaut, kippt das System."
+  },
+  {
+    "id": "lf11-013",
+    "typ": "fachbegriff",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "quelle": "Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch",
+    "begriff": "Hinterlüftung",
+    "definition": "Die belüftete Luftschicht zwischen Dämmung und Bekleidung. Unten strömt Zuluft ein, oben tritt Abluft aus — dadurch wird Feuchtigkeit abgeführt und eingedrungenes Wasser trocknet ab.",
+    "bestandteile": ["Hinter", "lüftung"],
+    "erklaerung": "Merke: Hinter-lüftung — belüftet wird hinter der Bekleidung."
+  },
+  {
+    "id": "lf11-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf11",
+    "thema": "Sprungmasse und Schnuerabstaende",
+    "quelle": "Rathscheck (Wandbekleidung, Deckbilder)",
+    "konfidenz": "hoch",
+    "begriff": "Sprungmaß",
+    "definition": "Das Maß, um das ein Gebinde gegenüber dem darunterliegenden seitlich versetzt wird. Zusammen mit den angerissenen Schnurabständen ergibt es ein gleichmäßiges Deckbild über die ganze Fassade.",
+    "bestandteile": ["Sprung", "maß"],
+    "erklaerung": "Merke: Sprung-maß — um wie viel das Gebinde seitlich „springt“."
+  }
+]

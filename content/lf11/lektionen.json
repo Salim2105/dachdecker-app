@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf11-l01",
+    "lernfeld": "lf11",
+    "thema": "Vorgehaengte hinterlueftete Fassade",
+    "titel": "Aufbau der vorgehängten hinterlüfteten Fassade",
+    "inhalt": [
+      "Die vorgehängte hinterlüftete Fassade (VHF) trennt die Aufgaben sauber voneinander: Eine Schicht dämmt, eine andere hält den Regen ab — und dazwischen liegt eine belüftete Luftschicht.",
+      "Der Aufbau von innen nach außen: tragende Außenwand, Wärmedämmung, Hinterlüftungsebene (Luftschicht), Unterkonstruktion und außen die Bekleidung, zum Beispiel aus Schiefer, Faserzementplatten oder Metall.",
+      "Genau diese Trennung macht die VHF so dauerhaft: Selbst wenn durch Fugen etwas Wasser hinter die Bekleidung gelangt, läuft es in der Luftschicht ab und trocknet wieder aus, ohne die Dämmung zu erreichen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11; Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l02",
+    "lernfeld": "lf11",
+    "thema": "Hinterlueftung",
+    "titel": "Warum die Hinterlüftung funktioniert",
+    "inhalt": [
+      "Die Luftschicht wirkt wie ein Kamin: Unten strömt kühle Luft ein, sie erwärmt sich an der Bekleidung und steigt nach oben, wo sie wieder austritt. Dieser ständige Luftstrom transportiert Feuchtigkeit ab.",
+      "Deshalb braucht jede VHF Zuluftöffnungen unten und Abluftöffnungen oben. Werden sie zugebaut oder verstopft, steht die Luft — und aus der hinterlüfteten Fassade wird eine Feuchtefalle.",
+      "Die Luftschicht sollte üblicherweise mindestens rund 20 mm dick sein, damit die Luft überhaupt strömen kann. Die genauen Mindestquerschnitte für Zu- und Abluft regeln die einschlägigen Normen und Fachregeln für Außenwandbekleidungen."
+    ],
+    "quelle": "Fachregeln Außenwandbekleidung / DIN 18516-1 (Erläuterungen); KMK-Rahmenlehrplan LF 11",
+    "konfidenz": "mittel"
+  },
+  {
+    "id": "lf11-l03",
+    "lernfeld": "lf11",
+    "thema": "Unterkonstruktion",
+    "titel": "Unterkonstruktion und Befestigung",
+    "inhalt": [
+      "Die Unterkonstruktion trägt die Bekleidung und hält sie im Abstand zur Wand. Sie besteht meist aus einer Holzlattung oder aus Metallprofilen, die über Konsolen an der Wand verankert werden.",
+      "Bei Holz gibt es oft zwei Ebenen: eine senkrechte Konterlattung, die den Luftraum schafft, und darauf die waagerechte Traglattung, an der die Bekleidung befestigt wird — je nach Deckart auch umgekehrt.",
+      "Wichtig sind zwei Punkte: Die Verankerung muss die Windlasten aufnehmen (in Rand- und Eckbereichen dichter setzen), und die Befestigungsmittel müssen korrosionsbeständig zum Werkstoff der Bekleidung passen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11; Fachregeln Außenwandbekleidung",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l04",
+    "lernfeld": "lf11",
+    "thema": "Sprungmasse und Schnuerabstaende",
+    "titel": "Deckbilder an der Wand: Sprungmaß und Schnurabstände",
+    "inhalt": [
+      "An der Fassade werden Schiefer und Faserzementplatten in eigenen Deckbildern verlegt, etwa als Rechteck-Doppeldeckung, waagerechte Deckung oder Universaldeckung.",
+      "Damit die Fläche gleichmäßig wird, reißt man die Fassade vorher an: Schnurabstände legen fest, wo die Gebinde verlaufen. Das Sprungmaß gibt an, um wie viel jedes Gebinde gegenüber dem darunterliegenden seitlich versetzt wird.",
+      "Sauber angerissene Schnüre sind kein Luxus: Nur so laufen die Fugen über die ganze Fassade in einer Flucht — und nur so stimmen am Ende Ecken, Anschlüsse und Öffnungen zusammen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11; Rathscheck (Wandbekleidung, Deckbilder)",
+    "konfidenz": "hoch"
+  }
+]
