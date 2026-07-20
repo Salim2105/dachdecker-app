@@ -10,7 +10,8 @@
       "Deshalb ist die Kehle die am stärksten beanspruchte Stelle des geneigten Daches. Sie muss besonders sorgfältig ausgeführt werden — Fehler dort führen fast immer zu Undichtigkeiten."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 190' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Grat und Kehle: Wasser laeuft auseinander oder zusammen'><path d='M20 130 L80 62 L140 130' fill='none' stroke='currentColor' stroke-width='2'/><line x1='80' y1='62' x2='80' y2='130' stroke='#c07d4a' stroke-width='2.6'/><path d='M74 84 L54 104 M86 84 L106 104' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M54 104 L60 103 M54 104 L57 98 M106 104 L100 103 M106 104 L103 98' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='20' y='152' fill='#c07d4a' font-size='10'>Grat</text><text x='20' y='167' fill='currentColor' font-size='8'>Kante fällt nach außen ab,</text><text x='20' y='178' fill='currentColor' font-size='8'>Wasser läuft auseinander</text><path d='M190 62 L250 130 L310 62' fill='none' stroke='currentColor' stroke-width='2'/><line x1='250' y1='130' x2='250' y2='62' stroke='#c07d4a' stroke-width='2.6'/><path d='M214 90 L240 118 M286 90 L260 118' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M240 118 L234 116 M240 118 L238 112 M260 118 L266 116 M260 118 L262 112' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='190' y='152' fill='#c07d4a' font-size='10'>Kehle</text><text x='190' y='167' fill='currentColor' font-size='8'>Kante springt nach innen,</text><text x='190' y='178' fill='#c25f4f' font-size='8'>Wasser von zwei Flächen</text><text x='20' y='36' fill='currentColor' font-size='9'>Die Kehle ist die am stärksten beanspruchte Stelle des geneigten Daches.</text></svg>"
   },
   {
     "id": "lf13a-l02",
@@ -23,7 +24,8 @@
       "Treffen zwei Dachflächen mit unterschiedlicher Neigung aufeinander, verläuft die Kehle nicht mehr mittig — sie wird „verzogen“. Das muss in der Ausführungszeichnung vorher konstruiert werden."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregeln (Kehlausbildung)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 190' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Offene und verdeckte Kehle, Kehlneigung flacher als die Dachflaechen'><path d='M24 100 L74 60 M74 60 L124 100' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M62 100 L86 100' fill='none' stroke='#c07d4a' stroke-width='3'/><path d='M62 100 L74 76 L86 100' fill='none' stroke='#c07d4a' stroke-width='2.4'/><text x='24' y='124' fill='currentColor' font-size='10'>offene Kehle</text><text x='24' y='138' fill='#c07d4a' font-size='8'>Metallrinne bleibt sichtbar</text><path d='M190 100 L240 60 M240 60 L290 100' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M228 100 L240 76 L252 100' fill='none' stroke='currentColor' stroke-width='1.4' stroke-dasharray='3 3'/><text x='190' y='124' fill='currentColor' font-size='10'>verdeckte Kehle</text><text x='190' y='138' fill='currentColor' font-size='8'>Deckwerkstoff schließt darüber</text><line x1='24' y1='170' x2='104' y2='150' stroke='currentColor' stroke-width='1.8'/><line x1='24' y1='170' x2='104' y2='162' stroke='#c07d4a' stroke-width='2.4'/><text x='114' y='156' fill='currentColor' font-size='8'>Dachfläche</text><text x='114' y='170' fill='#c07d4a' font-size='8'>Kehle — immer flacher geneigt</text><text x='24' y='34' fill='currentColor' font-size='9'>Flacher geneigt heißt: langsamer Ablauf bei mehr Wasser.</text></svg>"
   },
   {
     "id": "lf13a-l03",
@@ -36,7 +38,8 @@
       "Seitlich werden Anschlussbleche als Verwahrung eingebaut, oben und unten die entsprechenden Anschlüsse. Wichtig ist außerdem, dass auch die darunterliegende Unterdeckung um die Durchdringung herum wasserführend bleibt — nicht nur die sichtbare Deckung."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregeln (Anschlüsse)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 190' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Schornsteinanschluss mit Rueckenrinne in der Draufsicht'><rect x='120' y='70' width='70' height='50' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='134' y='100' fill='currentColor' font-size='9'>Schornstein</text><path d='M112 70 L112 120' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M198 70 L198 120' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M112 64 L155 44 L198 64' fill='none' stroke='#c07d4a' stroke-width='2.6'/><path d='M112 126 L198 126' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M155 24 L155 40' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M155 40 L151 33 M155 40 L159 33' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M138 30 L118 58 M172 30 L192 58' fill='none' stroke='currentColor' stroke-width='1.2'/><path d='M118 58 L124 57 M118 58 L121 52 M192 58 L186 57 M192 58 L189 52' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='206' y='48' fill='#c07d4a' font-size='9'>Rückenrinne</text><text x='206' y='60' fill='currentColor' font-size='8'>führt das Wasser</text><text x='206' y='71' fill='currentColor' font-size='8'>bergseitig herum</text><text x='30' y='96' fill='currentColor' font-size='8'>seitliche</text><text x='30' y='107' fill='currentColor' font-size='8'>Verwahrung</text><line x1='76' y1='98' x2='110' y2='95' stroke='currentColor' stroke-width='0.8'/><text x='30' y='150' fill='currentColor' font-size='9'>Blick von oben — der First liegt oben im Bild.</text><text x='30' y='170' fill='currentColor' font-size='9'>Auch die Unterdeckbahn muss um die Durchdringung herumgeführt werden.</text></svg>"
   },
   {
     "id": "lf13a-l04",
@@ -49,6 +52,7 @@
       "Zu den Einbauteilen gehören Dachflächenfenster, Lüfterziegel, Schneefangsysteme und Sicherheitsdachhaken. Letztere sind Anschlagpunkte für die persönliche Schutzausrüstung gegen Absturz — sie müssen statisch geeignet und tragfähig verankert sein."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregel (erhöhte Anforderungen); BG BAU (Anschlagpunkte)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 175' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Gaubenformen: Schleppgaube, Satteldachgaube, Fledermausgaube'><path d='M24 96 L24 68 L96 52 L96 96' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='24' y='118' fill='currentColor' font-size='9'>Schleppgaube</text><text x='24' y='131' fill='currentColor' font-size='8'>flaches Pultdach</text><path d='M126 96 L126 70 L162 46 L198 70 L198 96' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='126' y='118' fill='currentColor' font-size='9'>Satteldachgaube</text><text x='126' y='131' fill='currentColor' font-size='8'>zwei Flächen, First</text><path d='M228 96 Q244 96 258 72 Q272 48 286 48 Q300 48 314 72 Q328 96 336 96' fill='none' stroke='#c07d4a' stroke-width='2.2'/><text x='228' y='118' fill='#c07d4a' font-size='9'>Fledermausgaube</text><text x='228' y='131' fill='#c07d4a' font-size='8'>keine gerade Kante</text><text x='24' y='34' fill='currentColor' font-size='9'>Die Fledermausgaube ist handwerklich am anspruchsvollsten —</text><text x='24' y='154' fill='#c07d4a' font-size='9'>nach ZVDH-Fachregel gilt für sie eine erhöhte Anforderung.</text></svg>"
   }
 ]
