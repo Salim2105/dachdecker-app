@@ -23,6 +23,8 @@ import lf11Aufgaben from "@/content/lf11/aufgaben.json";
 import lf11Lektionen from "@/content/lf11/lektionen.json";
 import lf12Aufgaben from "@/content/lf12/aufgaben.json";
 import lf12Lektionen from "@/content/lf12/lektionen.json";
+import lf13aAufgaben from "@/content/lf13a/aufgaben.json";
+import lf13aLektionen from "@/content/lf13a/lektionen.json";
 import { istSichtbar, type Aufgabe, type Lektion, type Lernfeld } from "@/content/schema";
 
 // Neues Lernfeld ergänzen: oben importieren und hier eintragen.
@@ -39,6 +41,7 @@ const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
   lf10: { aufgaben: lf10Aufgaben, lektionen: lf10Lektionen },
   lf11: { aufgaben: lf11Aufgaben, lektionen: lf11Lektionen },
   lf12: { aufgaben: lf12Aufgaben, lektionen: lf12Lektionen },
+  lf13a: { aufgaben: lf13aAufgaben, lektionen: lf13aLektionen },
 };
 
 export function filterSichtbar<T extends { konfidenz: Lektion["konfidenz"] }>(xs: T[]): T[] {

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "lf13a-001",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "frage": "Was ist eine Kehle?",
+    "optionen": [
+      "Eine nach außen fallende Kante zwischen zwei Dachflächen",
+      "Eine einspringende Kante, in der zwei Dachflächen zusammenlaufen",
+      "Die oberste waagerechte Dachkante",
+      "Die seitliche Giebelkante"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Kehle ist die einspringende Kante — dort laufen zwei Dachflächen zusammen. Fällt die Kante nach außen ab, ist es dagegen ein Grat."
+  },
+  {
+    "id": "lf13a-002",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "frage": "Warum ist die Kehle die am stärksten beanspruchte Stelle des geneigten Daches?",
+    "optionen": [
+      "Weil dort der Wind am stärksten angreift",
+      "Weil das Wasser von zwei Dachflächen dort zusammenläuft",
+      "Weil dort die meisten Ziegel liegen",
+      "Weil sie am steilsten ist"
+    ],
+    "korrekt": [1],
+    "erklaerung": "In der Kehle sammelt sich das Wasser beider angrenzenden Flächen. Gleichzeitig ist sie flacher geneigt — es kommt also mehr Wasser an und läuft langsamer ab."
+  },
+  {
+    "id": "lf13a-003",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregeln",
+    "konfidenz": "hoch",
+    "frage": "Wie ist die Kehlneigung im Vergleich zu den angrenzenden Dachflächen?",
+    "optionen": [
+      "Immer steiler",
+      "Immer flacher",
+      "Genau gleich",
+      "Das hängt vom Deckwerkstoff ab"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Kehle ist immer flacher geneigt als die beiden Dachflächen, die sie bilden. Deshalb muss die Kehlrinne bei flacher Kehlneigung breiter ausgeführt werden."
+  },
+  {
+    "id": "lf13a-004",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Gauben",
+    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (erhöhte Anforderungen)",
+    "konfidenz": "hoch",
+    "frage": "Welche Gaubenform löst nach der ZVDH-Fachregel eine erhöhte Anforderung aus?",
+    "optionen": ["Schleppgaube", "Satteldachgaube", "Fledermausgaube", "Walmgaube"],
+    "korrekt": [2],
+    "erklaerung": "Die Fledermausgaube zählt als besondere Dachform zu den erhöhten Anforderungen. Dann ist die nächsthöhere Klasse der Zusatzmaßnahme zu wählen."
+  },
+  {
+    "id": "lf13a-005",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Durchdringungen",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "frage": "Wie wird das Wasser oberhalb eines Schornsteins abgeführt?",
+    "optionen": [
+      "Es läuft einfach seitlich am Schornstein vorbei",
+      "Über eine Rückenrinne (Kehlblech) auf der bergseitigen Seite",
+      "Durch ein Loch im Schornstein",
+      "Über die Traufe direkt nach unten"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Auf der bergseitigen (oberen) Seite wird eine Rückenrinne eingebaut. Sie fängt das ankommende Wasser auf und leitet es nach links und rechts um den Schornstein herum."
+  },
+  {
+    "id": "lf13a-006",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Einbauteile",
+    "quelle": "BG BAU (Anschlagpunkte, PSA gegen Absturz)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dienen Sicherheitsdachhaken?",
+    "optionen": [
+      "Zum Aufhängen der Dachrinne",
+      "Als Anschlagpunkt für die persönliche Schutzausrüstung gegen Absturz",
+      "Zum Befestigen der Ziegel",
+      "Als Schneefang"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Sicherheitsdachhaken sind statisch geeignete Anschlagpunkte für PSA gegen Absturz. Sie müssen tragfähig in der Konstruktion verankert sein — sonst nützen sie im Ernstfall nichts."
+  },
+  {
+    "id": "lf13a-007",
+    "typ": "cloze",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "text": "Am {{Grat}} läuft das Wasser auseinander, in der {{Kehle}} läuft es von zwei Flächen zusammen.",
+    "akzeptiert": { "Grat": ["Gratlinie"], "Kehle": ["Kehllinie"] },
+    "erklaerung": "Merkhilfe: Der Grat ist die „Bergkante“ (Wasser teilt sich), die Kehle das „Tal“ (Wasser sammelt sich)."
+  },
+  {
+    "id": "lf13a-008",
+    "typ": "cloze",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "ZVDH-Fachregeln (Kehlausbildung)",
+    "konfidenz": "hoch",
+    "text": "Bei der {{offenen}} Kehle bleibt die eingelegte Metallrinne sichtbar. Je flacher die Kehlneigung, desto {{breiter}} muss die Kehlrinne sein.",
+    "akzeptiert": { "offenen": ["offene"], "breiter": ["groesser", "größer"] },
+    "erklaerung": "Bei der verdeckten Kehle werden die Deckwerkstoffe passgenau verschnitten. Die offene Kehle mit sichtbarer Rinne ist bei flacher Neigung die sicherere Lösung."
+  },
+  {
+    "id": "lf13a-009",
+    "typ": "calc",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (räumliche Diagonale am Dach)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Gratsparren überspannt waagerecht {a} m in Längsrichtung und {b} m in Querrichtung bei einer Höhe von {h} m. Wie lang ist der Gratsparren?",
+    "parameter": [
+      { "name": "a", "label": "Längsrichtung", "einheit": "m", "min": 2, "max": 6, "schritt": 0.5 },
+      { "name": "b", "label": "Querrichtung", "einheit": "m", "min": 2, "max": 6, "schritt": 0.5 },
+      { "name": "h", "label": "Höhe", "einheit": "m", "min": 1.5, "max": 5, "schritt": 0.5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Räumliche Diagonale: Grat = Wurzel aus (a² + b² + h²) = √({a}² + {b}² + {h}²)",
+        "formel": "sqrt(a^2 + b^2 + h^2)",
+        "ergebnisName": "grat",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Der Grat ist die Raumdiagonale: Man wendet den Satz des Pythagoras zweimal an — erst in der Grundfläche, dann mit der Höhe. Für die Kehle gilt dieselbe Rechnung."
+  },
+  {
+    "id": "lf13a-010",
+    "typ": "calc",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Materialbedarf)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Grat ist {laenge} m lang. Die Gratziegel haben eine Decklänge von {decklaenge} m. Wie viele Gratziegel werden benötigt (aufgerundet)?",
+    "parameter": [
+      { "name": "laenge", "label": "Gratlänge", "einheit": "m", "min": 3, "max": 12, "schritt": 0.5 },
+      { "name": "decklaenge", "label": "Decklänge je Ziegel", "einheit": "m", "min": 0.2, "max": 0.35, "schritt": 0.01 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anzahl = Gratlänge / Decklänge, aufgerundet = {laenge} / {decklaenge}",
+        "formel": "ceil(laenge / decklaenge)",
+        "ergebnisName": "anzahl",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Gerechnet wird mit der Decklänge, nicht der Gesamtlänge des Ziegels — die Überdeckung geht ja verloren. Aufgerundet wird immer."
+  },
+  {
+    "id": "lf13a-011",
+    "typ": "diagram",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a (Dachausmittlung)",
+    "konfidenz": "hoch",
+    "frage": "Draufsicht auf ein L-förmiges Dach: Benenne die markierten Dachlinien.",
+    "svg": "<svg viewBox='0 0 340 240' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dachausmittlung L-foermiges Dach'><path d='M50 70 L110 70 L110 130 L270 130 L270 190 L50 190 Z' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='80' y1='70' x2='80' y2='160' stroke='currentColor' stroke-width='1.5'/><line x1='80' y1='160' x2='270' y2='160' stroke='currentColor' stroke-width='1.5'/><line x1='110' y1='130' x2='80' y2='160' stroke='currentColor' stroke-width='1.5'/><line x1='50' y1='190' x2='80' y2='160' stroke='currentColor' stroke-width='1.5'/><line x1='210' y1='160' x2='262' y2='182' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='188' r='12' fill='#c07d4a'/><text x='276' y='193' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='97' y1='143' x2='150' y2='104' stroke='#c07d4a' stroke-width='1.2'/><circle cx='164' cy='96' r='12' fill='#c07d4a'/><text x='164' y='101' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='63' y1='177' x2='34' y2='158' stroke='#c07d4a' stroke-width='1.2'/><circle cx='22' cy='150' r='12' fill='#c07d4a'/><text x='22' y='155' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='180' y1='190' x2='180' y2='212' stroke='#c07d4a' stroke-width='1.2'/><circle cx='180' cy='224' r='12' fill='#c07d4a'/><text x='180' y='229' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "first": "First",
+      "kehle": "Kehle",
+      "grat": "Grat",
+      "traufe": "Traufe"
+    },
+    "erklaerung": "1 ist der First (oberste waagerechte Linie), 2 die Kehle an der einspringenden Ecke, 3 der Grat an der ausspringenden Ecke und 4 die Traufe (untere Dachkante). Grat und Kehle verlaufen bei gleicher Dachneigung als Winkelhalbierende, also unter 45° im Grundriss."
+  },
+  {
+    "id": "lf13a-012",
+    "typ": "draw",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a (Dachausmittlung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Konstruiere die Dachausmittlung für den gegebenen L-förmigen Grundriss. Beide Gebäudeteile sind gleich breit und haben die gleiche Dachneigung. Zeichne First, Grat und Kehle ein und beschrifte sie.",
+    "vorgabeSvg": "<svg viewBox='0 0 340 240' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='L-foermiger Grundriss'><path d='M50 70 L110 70 L110 130 L270 130 L270 190 L50 190 Z' fill='none' stroke='currentColor' stroke-width='1.8'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 340 240' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Dachausmittlung'><path d='M50 70 L110 70 L110 130 L270 130 L270 190 L50 190 Z' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='80' y1='70' x2='80' y2='160' stroke='#c07d4a' stroke-width='2'/><line x1='80' y1='160' x2='270' y2='160' stroke='#c07d4a' stroke-width='2'/><line x1='110' y1='130' x2='80' y2='160' stroke='currentColor' stroke-width='1.8' stroke-dasharray='5 3'/><line x1='50' y1='190' x2='80' y2='160' stroke='currentColor' stroke-width='1.8'/><text x='188' y='154' fill='#c07d4a' font-size='10'>First</text><text x='118' y='150' fill='currentColor' font-size='10'>Kehle</text><text x='16' y='204' fill='currentColor' font-size='10'>Grat</text><text x='222' y='204' fill='currentColor' font-size='10'>Traufe</text></svg>",
+    "schritte": [
+      "In jedem Gebäudeflügel den First mittig einzeichnen — beide Flügel sind gleich breit, also liegen beide Firste gleich hoch und treffen sich in einem Punkt.",
+      "Von der einspringenden Ecke aus die Kehle unter 45° zum Firstschnittpunkt ziehen (Winkelhalbierende der beiden Trauflinien).",
+      "Von der ausspringenden Ecke aus den Grat ebenfalls unter 45° zum Firstschnittpunkt ziehen.",
+      "Prüfen: Alle Linien müssen sich in einem Punkt treffen — sonst stimmt die Konstruktion nicht.",
+      "First, Grat, Kehle und Traufe beschriften."
+    ],
+    "erklaerung": "Bei gleicher Dachneigung sind Grat und Kehle immer die Winkelhalbierenden der angrenzenden Trauflinien — im rechten Winkel also 45°. Der Punkt, in dem sich die Firste treffen, ist der Schlüssel der ganzen Konstruktion."
+  },
+  {
+    "id": "lf13a-013",
+    "typ": "fachbegriff",
+    "lernfeld": "lf13a",
+    "thema": "Durchdringungen",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "begriff": "Rückenrinne",
+    "definition": "Das Kehlblech auf der bergseitigen Seite einer Durchdringung (z. B. hinter dem Schornstein). Es fängt das von oben ankommende Wasser auf und leitet es nach beiden Seiten um die Durchdringung herum.",
+    "bestandteile": ["Rücken", "rinne"],
+    "erklaerung": "Merke: Rücken-rinne — die Rinne im „Rücken“ des Schornsteins, also oberhalb."
+  },
+  {
+    "id": "lf13a-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch",
+    "begriff": "Kehlneigung",
+    "definition": "Der Neigungswinkel der Kehllinie. Sie ist immer flacher als die beiden angrenzenden Dachflächen — deshalb läuft dort mehr Wasser langsamer ab und die Kehlrinne muss entsprechend dimensioniert werden.",
+    "bestandteile": ["Kehl", "neigung"],
+    "erklaerung": "Merke: Die Kehle ist immer der flachste Teil des Daches."
+  }
+]

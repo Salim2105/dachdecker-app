@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lf13a-l01",
+    "lernfeld": "lf13a",
+    "thema": "Grate",
+    "titel": "Grat und Kehle: die beiden schrägen Kanten",
+    "inhalt": [
+      "Treffen zwei Dachflächen aufeinander, entsteht eine schräge Kante. Fällt sie nach außen ab, ist es ein Grat — etwa an der Ecke eines Walmdachs. Springt sie nach innen ein, ist es eine Kehle.",
+      "Der Unterschied ist nicht nur geometrisch, sondern entscheidend für die Belastung: Am Grat läuft das Wasser auseinander, es teilt sich auf zwei Flächen. In der Kehle läuft das Wasser von zwei Flächen zusammen.",
+      "Deshalb ist die Kehle die am stärksten beanspruchte Stelle des geneigten Daches. Sie muss besonders sorgfältig ausgeführt werden — Fehler dort führen fast immer zu Undichtigkeiten."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l02",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "titel": "Kehlarten und die Kehlneigung",
+    "inhalt": [
+      "Man unterscheidet die offene Kehle mit eingelegter Metall-Kehlrinne, bei der die Rinne sichtbar bleibt, und die verdeckte oder geschlossene Kehle, bei der die Deckwerkstoffe passgenau verschnitten werden und die Kehle optisch verschwindet.",
+      "Der wichtigste Punkt: Die Kehle ist immer flacher geneigt als die beiden angrenzenden Dachflächen. Das Wasser läuft dort also langsamer ab, gleichzeitig kommt mehr Wasser an. Bei sehr flacher Kehlneigung muss die Kehlrinne entsprechend breiter ausgeführt werden.",
+      "Treffen zwei Dachflächen mit unterschiedlicher Neigung aufeinander, verläuft die Kehle nicht mehr mittig — sie wird „verzogen“. Das muss in der Ausführungszeichnung vorher konstruiert werden."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregeln (Kehlausbildung)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l03",
+    "lernfeld": "lf13a",
+    "thema": "Durchdringungen",
+    "titel": "Durchdringungen sicher anschließen",
+    "inhalt": [
+      "Jede Durchdringung — Schornstein, Lüftungsrohr, Dachfenster — unterbricht die Deckung und muss wasserführend angeschlossen werden.",
+      "Die Grundregel lautet: Das Wasser, das oberhalb der Durchdringung ankommt, muss sicher um sie herumgeführt werden. Beim Schornstein geschieht das über eine Rückenrinne (Kehlblech) auf der bergseitigen Seite, die das Wasser nach links und rechts ableitet.",
+      "Seitlich werden Anschlussbleche als Verwahrung eingebaut, oben und unten die entsprechenden Anschlüsse. Wichtig ist außerdem, dass auch die darunterliegende Unterdeckung um die Durchdringung herum wasserführend bleibt — nicht nur die sichtbare Deckung."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregeln (Anschlüsse)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l04",
+    "lernfeld": "lf13a",
+    "thema": "Gauben",
+    "titel": "Gaubenformen und Einbauteile",
+    "inhalt": [
+      "Die häufigsten Gaubenformen sind die Schleppgaube (ein flach geneigtes Pultdach), die Satteldach- oder Giebelgaube, die Walmgaube, die Dreiecksgaube und die Fledermausgaube mit ihrem geschwungenen Verlauf.",
+      "Die Fledermausgaube ist handwerklich am anspruchsvollsten: Sie hat keine geraden Kanten, die Deckung muss sich der Rundung anpassen. Nach der ZVDH-Fachregel zählt sie zu den besonderen Dachformen und löst damit eine erhöhte Anforderung aus — es ist die nächsthöhere Klasse der Zusatzmaßnahme zu wählen.",
+      "Zu den Einbauteilen gehören Dachflächenfenster, Lüfterziegel, Schneefangsysteme und Sicherheitsdachhaken. Letztere sind Anschlagpunkte für die persönliche Schutzausrüstung gegen Absturz — sie müssen statisch geeignet und tragfähig verankert sein."
+    ],
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregel (erhöhte Anforderungen); BG BAU (Anschlagpunkte)",
+    "konfidenz": "hoch"
+  }
+]
