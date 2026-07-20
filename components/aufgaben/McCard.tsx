@@ -1,15 +1,18 @@
 "use client";
 import { useState } from "react";
-import type { McAufgabe, Bewertung } from "@/content/schema";
+import type { McAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 
 export function McCard({
   aufgabe,
   onErgebnis,
+  modus = "uebung",
 }: {
   aufgabe: McAufgabe;
   onErgebnis: (b: Bewertung) => void;
+  modus?: AufgabeModus;
 }) {
+  const aufloesen = modus === "uebung";
   const mehrfach = aufgabe.korrekt.length > 1;
   const [gewaehlt, setGewaehlt] = useState<Set<number>>(new Set());
   const [geprueft, setGeprueft] = useState(false);
@@ -33,7 +36,7 @@ export function McCard({
   };
 
   const stilFuer = (i: number) => {
-    if (!geprueft) {
+    if (!geprueft || !aufloesen) {
       return gewaehlt.has(i)
         ? { borderColor: "var(--accent)", background: "var(--surface-2)" }
         : { borderColor: "var(--border)", background: "var(--surface)" };
@@ -72,10 +75,10 @@ export function McCard({
           className="mt-4 w-full rounded-xl py-3 font-medium disabled:opacity-40"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
-          Prüfen
+          {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+        aufloesen && <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
       )}
     </div>
   );

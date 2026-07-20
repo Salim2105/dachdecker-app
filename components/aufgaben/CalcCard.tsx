@@ -1,16 +1,19 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { CalcAufgabe, Bewertung } from "@/content/schema";
+import type { CalcAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter } from "@/lib/calc";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 
 export function CalcCard({
   aufgabe,
   onErgebnis,
+  modus = "uebung",
 }: {
   aufgabe: CalcAufgabe;
   onErgebnis: (b: Bewertung) => void;
+  modus?: AufgabeModus;
 }) {
+  const aufloesen = modus === "uebung";
   const [werte, setWerte] = useState<Record<string, number>>(() =>
     wuerfleParameter(aufgabe.parameter),
   );
@@ -50,7 +53,8 @@ export function CalcCard({
           aria-label="Ergebnis"
           className="w-40 rounded-lg border px-3 py-2 text-lg"
           style={{
-            borderColor: geprueft ? (richtig ? "var(--ok)" : "var(--bad)") : "var(--border)",
+            borderColor:
+              geprueft && aufloesen ? (richtig ? "var(--ok)" : "var(--bad)") : "var(--border)",
             background: "var(--surface)",
             color: "var(--text)",
           }}
@@ -66,17 +70,19 @@ export function CalcCard({
             className="flex-1 rounded-xl py-3 font-medium disabled:opacity-40"
             style={{ background: "var(--accent)", color: "var(--accent-text)" }}
           >
-            Prüfen
+            {aufloesen ? "Prüfen" : "Antwort abgeben"}
           </button>
-          <button
-            onClick={neu}
-            className="rounded-xl border px-4 py-3 text-sm"
-            style={{ borderColor: "var(--border)", color: "var(--text)" }}
-          >
-            Neue Zahlen
-          </button>
+          {aufloesen && (
+            <button
+              onClick={neu}
+              className="rounded-xl border px-4 py-3 text-sm"
+              style={{ borderColor: "var(--border)", color: "var(--text)" }}
+            >
+              Neue Zahlen
+            </button>
+          )}
         </div>
-      ) : (
+      ) : aufloesen ? (
         <div className="mt-4">
           <p className="text-sm font-medium" style={{ color: richtig ? "var(--ok)" : "var(--bad)" }}>
             {richtig ? "Richtig!" : `Richtige Lösung: ${loesung.wert} ${loesung.einheit}`}
@@ -102,7 +108,7 @@ export function CalcCard({
           </div>
           <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
         </div>
-      )}
+      ) : null}
     </div>
   );
 }

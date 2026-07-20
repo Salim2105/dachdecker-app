@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import type { DiagramAufgabe, Bewertung } from "@/content/schema";
+import type { DiagramAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 
@@ -16,10 +16,13 @@ function shuffle<T>(arr: T[]): T[] {
 export function DiagramCard({
   aufgabe,
   onErgebnis,
+  modus = "uebung",
 }: {
   aufgabe: DiagramAufgabe;
   onErgebnis: (b: Bewertung) => void;
+  modus?: AufgabeModus;
 }) {
+  const aufloesen = modus === "uebung";
   const keys = Object.keys(aufgabe.zuordnung);
   const [pool] = useState<string[]>(() => shuffle([...new Set(Object.values(aufgabe.zuordnung))]));
   const [auswahl, setAuswahl] = useState<Record<string, string>>({});
@@ -42,8 +45,8 @@ export function DiagramCard({
       />
       <div className="flex flex-col gap-2">
         {keys.map((k, i) => {
-          const ok = geprueft && auswahl[k] === aufgabe.zuordnung[k];
-          const falsch = geprueft && auswahl[k] !== aufgabe.zuordnung[k];
+          const ok = geprueft && aufloesen && auswahl[k] === aufgabe.zuordnung[k];
+          const falsch = geprueft && aufloesen && auswahl[k] !== aufgabe.zuordnung[k];
           return (
             <div key={k} className="flex items-center gap-2">
               <span
@@ -87,10 +90,10 @@ export function DiagramCard({
           className="mt-4 w-full rounded-xl py-3 font-medium disabled:opacity-40"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
-          Prüfen
+          {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+        aufloesen && <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
       )}
     </div>
   );

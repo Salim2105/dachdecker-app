@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 const ITEMS = [
   { href: "/", label: "Start", icon: "M3 11l9-8 9 8M5 10v10h14V10" },
   { href: "/lernen", label: "Lernen", icon: "M4 5h16v14H4zM4 9h16M9 5v14" },
+  { href: "/pruefung", label: "Prüfung", icon: "M12 7v5l3 2M12 21a9 9 0 100-18 9 9 0 000 18" },
   { href: "/rechner", label: "Rechner", icon: "M6 3h12v18H6zM9 7h6M8 11h1m3 0h1m3 0h1M8 15h1m3 0h1m3 0h1" },
   { href: "/fortschritt", label: "Fortschritt", icon: "M4 20V10M10 20V4M16 20v-8M22 20H2" },
 ];

@@ -99,6 +99,13 @@ export interface Lektion {
 
 export type Bewertung = "richtig" | "teilweise" | "falsch";
 
+/**
+ * "uebung": Karte deckt Lösung und Erklärung sofort nach dem Prüfen auf.
+ * "pruefung": Karte nimmt die Antwort nur entgegen — keine Rückmeldung,
+ * keine Lösung, keine Erklärung. Auswertung erst am Ende der Prüfung.
+ */
+export type AufgabeModus = "uebung" | "pruefung";
+
 export interface AufgabenFortschritt {
   aufgabeId: string;
   bewertung: Bewertung;

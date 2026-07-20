@@ -1,16 +1,19 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { ClozeAufgabe, Bewertung } from "@/content/schema";
+import type { ClozeAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { parseCloze, pruefeLuecke } from "@/lib/cloze";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 
 export function ClozeCard({
   aufgabe,
   onErgebnis,
+  modus = "uebung",
 }: {
   aufgabe: ClozeAufgabe;
   onErgebnis: (b: Bewertung) => void;
+  modus?: AufgabeModus;
 }) {
+  const aufloesen = modus === "uebung";
   const teile = useMemo(() => parseCloze(aufgabe.text), [aufgabe.text]);
   const [eingaben, setEingaben] = useState<Record<number, string>>({});
   const [geprueft, setGeprueft] = useState(false);
@@ -32,7 +35,7 @@ export function ClozeCard({
   };
 
   const randfarbe = (g: { antwort: string; index: number }) => {
-    if (!geprueft) return "var(--border)";
+    if (!geprueft || !aufloesen) return "var(--border)";
     return istGapKorrekt(g.antwort, eingaben[g.index] ?? "") ? "var(--ok)" : "var(--bad)";
   };
 
@@ -57,7 +60,7 @@ export function ClozeCard({
           ),
         )}
       </p>
-      {geprueft && (
+      {geprueft && aufloesen && (
         <p className="mt-3 text-sm" style={{ color: "var(--text-muted)" }}>
           Lösung:{" "}
           {gaps.map((g, i) => (
@@ -74,10 +77,10 @@ export function ClozeCard({
           className="mt-4 w-full rounded-xl py-3 font-medium"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
-          Prüfen
+          {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+        aufloesen && <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
       )}
     </div>
   );
