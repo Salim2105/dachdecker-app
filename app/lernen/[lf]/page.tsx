@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLernfeld, getLektionen, getAufgaben } from "@/lib/content";
+import { getLernfeld, getLektionen, getAufgaben, getLernfelder } from "@/lib/content";
 import { LektionCard } from "@/components/LektionCard";
 
 export default async function LernfeldDetailPage({
@@ -90,4 +90,10 @@ export default async function LernfeldDetailPage({
       </div>
     </div>
   );
+}
+
+// Alle Lernfelder beim Build vorab erzeugen — die App braucht dann zur
+// Laufzeit keinen Server mehr, der Seiten rendert.
+export function generateStaticParams() {
+  return getLernfelder().map((lf) => ({ lf: lf.id }));
 }

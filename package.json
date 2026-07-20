@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3200 -H 0.0.0.0",
     "lint": "eslint",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "app": "npm run build && npm start",
+    "postbuild": "node scripts/gen-sw.mjs"
   },
   "dependencies": {
     "mathjs": "^15.2.0",

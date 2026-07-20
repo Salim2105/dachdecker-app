@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getLernfeld, getAufgaben } from "@/lib/content";
+import { getLernfeld, getAufgaben, getLernfelder } from "@/lib/content";
 import { SessionRunner } from "@/components/session/SessionRunner";
 
 export default async function UebenPage({ params }: { params: Promise<{ lf: string }> }) {
@@ -31,4 +31,10 @@ export default async function UebenPage({ params }: { params: Promise<{ lf: stri
       </div>
     </div>
   );
+}
+
+// Alle Lernfelder beim Build vorab erzeugen — die App braucht dann zur
+// Laufzeit keinen Server mehr, der Seiten rendert.
+export function generateStaticParams() {
+  return getLernfelder().map((lf) => ({ lf: lf.id }));
 }
