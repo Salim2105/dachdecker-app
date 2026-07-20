@@ -10,7 +10,8 @@
       "Alle Dämmstoffe wirken nach demselben Prinzip: Sie schließen viel ruhende Luft in kleinen Poren oder Fasern ein. Ruhende Luft leitet Wärme schlecht — deshalb sind gute Dämmstoffe leicht und porig."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; Dämmstoff-Grundlagen (IVPU-Planungshilfen)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Daemmstoffe schliessen ruhende Luft ein'><rect x='24' y='44' width='140' height='70' fill='none' stroke='currentColor' stroke-width='1.6'/><circle cx='46' cy='62' r='7' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='70' cy='74' r='9' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='96' cy='60' r='8' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='124' cy='72' r='7' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='50' cy='94' r='8' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='80' cy='98' r='6' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='110' cy='96' r='8' fill='none' stroke='#c07d4a' stroke-width='1'/><circle cx='142' cy='88' r='7' fill='none' stroke='#c07d4a' stroke-width='1'/><text x='172' y='60' fill='#c07d4a' font-size='9'>ruhende Luft in Poren</text><text x='172' y='73' fill='currentColor' font-size='8'>Luft leitet Wärme schlecht —</text><text x='172' y='84' fill='currentColor' font-size='8'>solange sie steht</text><text x='24' y='136' fill='currentColor' font-size='9'>mineralisch · synthetisch · nachwachsend</text><text x='24' y='158' fill='#c07d4a' font-size='10'>λ in W/(m·K) — je kleiner, desto besser dämmt der Stoff</text><text x='24' y='34' fill='currentColor' font-size='9'>Alle Dämmstoffe wirken nach demselben Prinzip.</text></svg>"
   },
   {
     "id": "lf06-l02",
@@ -23,7 +24,8 @@
       "PUR/PIR-Hartschaum kombiniert eine sehr niedrige Wärmeleitfähigkeit mit hoher Druckfestigkeit. Deshalb ist er auf dem Flachdach und als Aufsparrendämmung verbreitet, wo begangen oder mit Anlagen belastet wird."
     ],
     "quelle": "Dämmstoff-Grundlagen; IVPU-Planungshilfen (PU-Dämmung); KMK-Rahmenlehrplan LF 6",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Daemmstoffe nach Brandverhalten und Einsatzbereich'><rect x='24' y='44' width='90' height='54' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='69' y='66' fill='currentColor' font-size='9' text-anchor='middle'>Mineralwolle</text><text x='69' y='80' fill='#4f9d78' font-size='9' text-anchor='middle'>nicht brennbar</text><text x='69' y='92' fill='currentColor' font-size='8' text-anchor='middle'>gut schalldämmend</text><rect x='124' y='44' width='90' height='54' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='169' y='62' fill='currentColor' font-size='9' text-anchor='middle'>EPS / XPS</text><text x='169' y='76' fill='#c25f4f' font-size='9' text-anchor='middle'>brennbar</text><text x='169' y='88' fill='currentColor' font-size='8' text-anchor='middle'>XPS: druckfest,</text><text x='169' y='97' fill='currentColor' font-size='8' text-anchor='middle'>nimmt kaum Wasser auf</text><rect x='224' y='44' width='92' height='54' fill='none' stroke='#c07d4a' stroke-width='1.8'/><text x='270' y='62' fill='#c07d4a' font-size='9' text-anchor='middle'>PUR / PIR</text><text x='270' y='78' fill='currentColor' font-size='8' text-anchor='middle'>sehr niedriges λ,</text><text x='270' y='89' fill='currentColor' font-size='8' text-anchor='middle'>hohe Druckfestigkeit</text><text x='24' y='126' fill='currentColor' font-size='9'>XPS ins Umkehrdach und ins Erdreich — dort steht Wasser an.</text><text x='24' y='146' fill='#c07d4a' font-size='9'>PUR/PIR aufs Flachdach und als Aufsparrendämmung.</text><text x='24' y='34' fill='currentColor' font-size='9'>Wo Brandschutz zählt, führt kaum ein Weg an Mineralwolle vorbei.</text></svg>"
   },
   {
     "id": "lf06-l03",
@@ -36,7 +38,8 @@
       "Aluminium ist sehr leicht und korrosionsbeständig, Edelstahl besonders widerstandsfähig. Wichtig bleibt immer die elektrochemische Spannungsreihe: Kupfer darf nie oberhalb von Titanzink oder verzinktem Stahl eingebaut werden, weil abfließendes Wasser Kupferionen nach unten trägt."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; Fachregeln Bauspenglerarbeiten; Rheinzink Konstruktionsempfehlungen",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 170' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Patina bei Titanzink und Kupfer'><rect x='40' y='46' width='90' height='40' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='40' y='46' width='90' height='8' fill='currentColor' stroke='none' opacity='0.45'/><text x='40' y='104' fill='currentColor' font-size='9'>Titanzink</text><text x='40' y='118' fill='currentColor' font-size='8'>blaugraue Patina</text><rect x='196' y='46' width='90' height='40' fill='none' stroke='#c07d4a' stroke-width='1.8'/><rect x='196' y='46' width='90' height='8' fill='#4f9d78' stroke='none' opacity='0.6'/><text x='196' y='104' fill='#c07d4a' font-size='9'>Kupfer</text><text x='196' y='118' fill='currentColor' font-size='8'>grüne Patina</text><text x='40' y='34' fill='currentColor' font-size='9'>Die Patina ist kein Schaden — sie schützt das Metall darunter.</text><text x='40' y='146' fill='#c25f4f' font-size='9'>Regel bleibt: Kupfer niemals oberhalb von Zink einbauen.</text></svg>"
   },
   {
     "id": "lf06-l04",
@@ -49,6 +52,7 @@
       "Daraus folgt die Faustregel für Bahnen: Eine Dampfbremse hat einen großen sd-Wert (bremst stark), eine diffusionsoffene Unterdeckbahn einen kleinen (lässt Feuchte nach außen). Feuchtevariable Dampfbremsen ändern ihren sd-Wert je nach Umgebungsfeuchte: im Winter bremsend, im Sommer offener für die Rücktrocknung."
     ],
     "quelle": "Bauphysik-Grundlagen (λ, µ, sd-Wert); Herstellerunterlagen Dampfbremsen",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 175' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='sd-Wert als gleichwertige Luftschichtdicke'><rect x='30' y='50' width='16' height='44' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='24' y='108' fill='#c07d4a' font-size='8'>Bahn</text><text x='24' y='119' fill='currentColor' font-size='8'>Dicke d</text><text x='60' y='68' fill='currentColor' font-size='11'>≙</text><rect x='84' y='50' width='150' height='44' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='90' y='76' fill='currentColor' font-size='9'>gleichwertige Luftschicht</text><line x1='84' y1='106' x2='234' y2='106' stroke='currentColor' stroke-width='1'/><path d='M84 106 L90 103 M84 106 L90 109 M234 106 L228 103 M234 106 L228 109' fill='none' stroke='currentColor' stroke-width='1'/><text x='128' y='120' fill='currentColor' font-size='9'>sd in Metern</text><text x='30' y='36' fill='#c07d4a' font-size='11'>sd = µ · d</text><text x='30' y='146' fill='currentColor' font-size='9'>Dampfbremse: großer sd-Wert, bremst stark.</text><text x='30' y='162' fill='currentColor' font-size='9'>Diffusionsoffene Unterdeckbahn: kleiner sd-Wert, lässt Feuchte durch.</text></svg>"
   }
 ]
