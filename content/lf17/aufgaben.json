@@ -1,0 +1,259 @@
+[
+  {
+    "id": "lf17-001",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Checklisten",
+    "quelle": "Instandhaltungsbegriffe nach DIN 31051 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Welche vier Maßnahmen gehören zur Instandhaltung?",
+    "optionen": [
+      "Wartung, Inspektion, Instandsetzung, Verbesserung",
+      "Reinigen, Streichen, Dichten, Dämmen",
+      "Planung, Ausführung, Abnahme, Rechnung",
+      "Aufmaß, Angebot, Montage, Wartung"
+    ],
+    "korrekt": [0],
+    "erklaerung": "Wartung verzögert den Abbau des Abnutzungsvorrats, Inspektion stellt den Ist-Zustand fest, Instandsetzung stellt den Soll-Zustand wieder her, Verbesserung erhöht die Funktionssicherheit ohne die geforderte Funktion zu ändern."
+  },
+  {
+    "id": "lf17-002",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Checklisten",
+    "quelle": "Instandhaltungsbegriffe nach DIN 31051 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Was unterscheidet die Inspektion von der Instandsetzung?",
+    "optionen": [
+      "Die Inspektion repariert nur kleine Schäden",
+      "Die Inspektion stellt den Ist-Zustand fest, ohne selbst zu reparieren",
+      "Die Inspektion findet nur nach einem Sturm statt",
+      "Es ist dasselbe"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Inspektion ist reines Feststellen und Beurteilen des Ist-Zustands. Erst die Instandsetzung stellt den Soll-Zustand wieder her."
+  },
+  {
+    "id": "lf17-003",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "Fachregeln des Dachdeckerhandwerks (Schadensbilder, Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Wodurch entsteht Blasenbildung in einer Flachdachabdichtung?",
+    "optionen": [
+      "Durch zu dicke Abdichtungsbahnen",
+      "Durch eingeschlossene Feuchtigkeit oder Luft, die sich bei Erwärmung ausdehnt",
+      "Durch zu hohe Anschlüsse",
+      "Durch zu viel Gefälle"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Unter der Bahn eingeschlossene Feuchtigkeit oder Luft dehnt sich bei Sonneneinstrahlung aus und hebt die Abdichtung an. Häufige Ursache ist das Verkleben auf feuchtem oder nicht sauberem Untergrund."
+  },
+  {
+    "id": "lf17-004",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "Fachregeln des Dachdeckerhandwerks (Leckortung, Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Warum liegt die Eintrittsstelle des Wassers meist nicht direkt über dem Feuchtefleck im Innenraum?",
+    "optionen": [
+      "Weil Wasser nach oben steigt",
+      "Weil das Wasser auf Dampfsperre oder Sparren seitlich weiterläuft, bevor es durchtritt",
+      "Weil der Fleck immer vom Kondensat kommt",
+      "Weil Feuchteflecken nichts mit Undichtigkeiten zu tun haben"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das Wasser wandert auf der Dampfsperre oder an Sparren entlang und tritt erst an der nächsten Fehlstelle aus. Deshalb wird die Suche immer oberhalb und im Umkreis des Flecks angesetzt."
+  },
+  {
+    "id": "lf17-005",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Sofortmassnahmen",
+    "quelle": "Gefahrstoffverordnung / TRGS 519 (Asbest)",
+    "konfidenz": "hoch",
+    "frage": "Warum darf eine alte Faserzement-Wellplatte niemals mit dem Hochdruckreiniger gereinigt werden?",
+    "optionen": [
+      "Weil die Platte sonst ihre Farbe verliert",
+      "Weil dabei Asbestfasern freigesetzt und verteilt werden können",
+      "Weil das Wasser die Dachlatten durchweicht",
+      "Weil der Reiniger die Beschichtung angreift"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Faserzementplatten älterer Baujahre können Asbest enthalten. Hochdruckreinigen, Schleifen, Bohren und Abbürsten setzen Fasern frei und sind nach TRGS 519 unzulässig. Im Zweifel: nicht bearbeiten, sondern untersuchen lassen."
+  },
+  {
+    "id": "lf17-006",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Sofortmassnahmen",
+    "quelle": "KMK-Rahmenlehrplan LF 17 (Sofortmaßnahmen nach Sturmschaden)",
+    "konfidenz": "hoch",
+    "frage": "Was steht nach einem Sturmschaden an erster Stelle?",
+    "optionen": [
+      "Das Angebot für die Reparatur schreiben",
+      "Den Gefahrenbereich absperren und lose Bauteile sichern",
+      "Sofort die neue Deckung bestellen",
+      "Die Rinne reinigen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Zuerst die Sicherheit: absperren, lose Teile sichern oder abnehmen. Danach folgen die Notabdichtung und die fotografische Dokumentation für Versicherung und Auftraggeber."
+  },
+  {
+    "id": "lf17-007",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Reparatur Teilsanierung Komplettsanierung",
+    "quelle": "KMK-Rahmenlehrplan LF 17 (Instandhaltungskonzepte)",
+    "konfidenz": "hoch",
+    "frage": "Wann ist eine Reparatur statt einer Sanierung sinnvoll?",
+    "optionen": [
+      "Immer, weil sie billiger ist",
+      "Wenn der Schaden örtlich begrenzt ist und die übrige Fläche in Ordnung ist",
+      "Nur bei Flachdächern",
+      "Wenn die Fläche am Ende ihrer Lebensdauer ist"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Ist die Fläche insgesamt am Ende ihrer Lebensdauer, übersteigt die Summe vieler Reparaturen die Kosten einer Sanierung. Das offen zu sagen, gehört zur ehrlichen Beratung."
+  },
+  {
+    "id": "lf17-008",
+    "typ": "cloze",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Checklisten",
+    "quelle": "Instandhaltungsbegriffe nach DIN 31051 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "text": "Die {{Wartung}} verzögert den Abbau des Abnutzungsvorrats, die {{Instandsetzung}} stellt den Soll-Zustand wieder her.",
+    "akzeptiert": {
+      "Wartung": ["wartung", "Pflege"],
+      "Instandsetzung": ["instandsetzung", "Reparatur"]
+    },
+    "erklaerung": "Dazwischen liegt die Inspektion: Sie stellt fest und beurteilt, repariert aber nicht. Die vierte Maßnahme ist die Verbesserung."
+  },
+  {
+    "id": "lf17-009",
+    "typ": "cloze",
+    "lernfeld": "lf17",
+    "thema": "Sofortmassnahmen",
+    "quelle": "Gefahrstoffverordnung / TRGS 519 (Asbest)",
+    "konfidenz": "hoch",
+    "text": "Für Arbeiten an asbesthaltigen Materialien gilt die Technische Regel {{TRGS 519}}. In Deutschland besteht seit {{1993}} ein Herstellungs- und Verwendungsverbot für Asbest.",
+    "akzeptiert": { "TRGS 519": ["TRGS519", "TRGS-519"], "1993": ["im Jahr 1993"] },
+    "erklaerung": "Verbaut sind asbesthaltige Faserzementplatten trotzdem noch auf vielen Bestandsdächern — deshalb ist bei jedem Altdach zuerst zu klären, woraus die Deckung besteht."
+  },
+  {
+    "id": "lf17-010",
+    "typ": "calc",
+    "lernfeld": "lf17",
+    "thema": "Aufmass",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Aufmaß und Verschnittzuschlag)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Teilsanierung wird eine Dachfläche von {laenge} m × {breite} m erneuert. Für Verschnitt und Überdeckungen werden {zuschlag} % aufgeschlagen. Wie viel Material ist zu bestellen?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 6, "max": 25, "schritt": 0.5 },
+      { "name": "breite", "label": "Breite", "einheit": "m", "min": 4, "max": 12, "schritt": 0.5 },
+      { "name": "zuschlag", "label": "Zuschlag", "einheit": "%", "min": 5, "max": 20, "schritt": 1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Fläche = {laenge} · {breite}",
+        "formel": "laenge * breite",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Materialbedarf = Fläche · (1 + {zuschlag} / 100)",
+        "formel": "flaeche * (1 + zuschlag / 100)",
+        "ergebnisName": "bedarf",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Der Zuschlag deckt Überdeckungen, Zuschnitt und Bruch ab. Bei einer Sanierung liegt er oft höher als beim Neubau, weil an Anschlüsse und Bestand angearbeitet werden muss."
+  },
+  {
+    "id": "lf17-011",
+    "typ": "calc",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Stückzahlermittlung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Auf einer Dachfläche liegen {ziegel} Ziegel. Bei der Inspektion sind {anteil} % davon gebrochen oder verschoben. Wie viele Ziegel müssen ausgetauscht werden (aufgerundet)?",
+    "parameter": [
+      { "name": "ziegel", "label": "Anzahl Ziegel", "einheit": "Stück", "min": 400, "max": 3000, "schritt": 50 },
+      { "name": "anteil", "label": "schadhafter Anteil", "einheit": "%", "min": 1, "max": 12, "schritt": 1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anzahl = {ziegel} · {anteil} / 100, aufgerundet",
+        "formel": "ceil(ziegel * anteil / 100)",
+        "ergebnisName": "austausch",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Aufgerundet wird immer — und in der Praxis kommt eine Reserve dazu, weil beim Austausch regelmäßig weitere Ziegel brechen. Bei älteren Deckungen ist zusätzlich zu klären, ob das Modell überhaupt noch lieferbar ist."
+  },
+  {
+    "id": "lf17-012",
+    "typ": "diagram",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "Fachregeln des Dachdeckerhandwerks (Schadensbilder Flachdach, Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Flachdach im Schnitt mit vier typischen Schadensstellen: Benenne die markierten Schadensbilder.",
+    "svg": "<svg viewBox='0 0 340 220' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Flachdach im Schnitt mit vier Schadensstellen'><line x1='30' y1='140' x2='262' y2='140' stroke='currentColor' stroke-width='1.6'/><rect x='262' y='44' width='40' height='96' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M50 134 L54 158 L70 158 L74 134' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M56 142 L68 142 M58 149 L66 149' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M30 134 L50 134 L54 150' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M74 134 L100 134' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M100 134 q 16 -22 32 0' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M132 134 L186 134 L182 122' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M194 122 L198 134 L256 134 L256 114' fill='none' stroke='#c07d4a' stroke-width='2.4'/><line x1='116' y1='122' x2='112' y2='60' stroke='#c07d4a' stroke-width='1.2'/><circle cx='110' cy='48' r='12' fill='#c07d4a'/><text x='110' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='190' y1='124' x2='172' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='168' cy='48' r='12' fill='#c07d4a'/><text x='168' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='254' y1='118' x2='234' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='230' cy='48' r='12' fill='#c07d4a'/><text x='230' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='60' y1='160' x2='48' y2='180' stroke='#c07d4a' stroke-width='1.2'/><circle cx='42' cy='192' r='12' fill='#c07d4a'/><text x='42' y='197' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "blase": "Blasenbildung",
+      "naht": "Offene Naht",
+      "anschluss": "Zu niedriger Anschluss",
+      "gully": "Verstopfter Gully"
+    },
+    "erklaerung": "1 ist eine Blase durch eingeschlossene Feuchtigkeit oder Luft, 2 eine offene Naht, 3 ein zu niedriger Wandanschluss und 4 ein verstopfter Gully. Alle vier sind klassische Inspektionsbefunde — und alle vier haben eine Ursache, die man mitbehandeln muss."
+  },
+  {
+    "id": "lf17-013",
+    "typ": "draw",
+    "lernfeld": "lf17",
+    "thema": "Reparatur Teilsanierung Komplettsanierung",
+    "quelle": "Fachregeln des Dachdeckerhandwerks (Reparatur von Abdichtungen, Erläuterungen)",
+    "konfidenz": "mittel",
+    "aufgabentext": "In einer Bitumenabdichtung ist ein Riss entstanden (Draufsicht vorgegeben). Zeichne den Reparaturflicken ein, bemaße den Überstand über den Riss hinaus und zeige, wie die Ecken des Flickens ausgebildet werden.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Riss in der Abdichtung, Draufsicht'><rect x='20' y='20' width='280' height='160' fill='none' stroke='currentColor' stroke-width='1.2'/><path d='M120 124 L138 106 L128 92 L150 72 L142 60 L160 46' fill='none' stroke='#c07d4a' stroke-width='2.4'/><text x='166' y='44' fill='#c07d4a' font-size='9'>Riss</text><text x='26' y='172' fill='currentColor' font-size='9'>Draufsicht Abdichtung</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Reparaturflicken'><rect x='20' y='20' width='280' height='160' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='86' y='30' width='108' height='126' rx='16' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M120 124 L138 106 L128 92 L150 72 L142 60 L160 46' fill='none' stroke='currentColor' stroke-width='2'/><line x1='86' y1='140' x2='120' y2='140' stroke='currentColor' stroke-width='0.9'/><path d='M86 140 L92 137 M86 140 L92 143 M120 140 L114 137 M120 140 L114 143' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='30' y='138' fill='currentColor' font-size='9'>Überstand</text><line x1='160' y1='46' x2='194' y2='46' stroke='currentColor' stroke-width='0.9'/><path d='M160 46 L166 43 M160 46 L166 49 M194 46 L188 43 M194 46 L188 49' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='200' y='50' fill='currentColor' font-size='9'>Überstand</text><text x='202' y='104' fill='#c07d4a' font-size='9'>Ecken abgerundet</text><line x1='200' y1='100' x2='190' y2='44' stroke='#c07d4a' stroke-width='1'/><text x='26' y='172' fill='currentColor' font-size='9'>Draufsicht Abdichtung</text></svg>",
+    "schritte": [
+      "Den Untergrund im Reparaturbereich reinigen und trocknen — auf feuchtem oder schmutzigem Untergrund hält kein Flicken.",
+      "Den Flicken so zuschneiden, dass er den Riss nach allen Seiten deutlich überragt; üblich ist ein Überstand in der Größenordnung von 10 cm.",
+      "Die Ecken des Flickens abrunden, damit sie sich später nicht abheben.",
+      "Den Flicken vollflächig und hohlraumfrei mit der vorhandenen Abdichtung verbinden, an den Rändern sauber anarbeiten.",
+      "Überstand und Ecken in der Zeichnung bemaßen und beschriften."
+    ],
+    "erklaerung": "Die abgerundeten Ecken sind kein Schönheitsdetail: Scharfe Ecken lösen sich als Erstes vom Untergrund und werden zur neuen Schwachstelle. Der genaue Überstand hängt vom System und den Herstellerangaben ab — deshalb hier nur als Größenordnung angegeben. Und: Ein Flicken behebt das Schadensbild, nicht die Ursache. Reißt die Abdichtung wegen Bewegung im Untergrund, kommt der Riss wieder."
+  },
+  {
+    "id": "lf17-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf17",
+    "thema": "Wartungsvertraege",
+    "quelle": "KMK-Rahmenlehrplan LF 17 (Wartungsvertrag)",
+    "konfidenz": "hoch",
+    "begriff": "Wartungsvertrag",
+    "definition": "Eine Vereinbarung zwischen Betrieb und Gebäudeeigentümer über wiederkehrende Inspektions- und Wartungsleistungen am Dach — mit festgelegtem Umfang, festgelegten Intervallen und schriftlicher Dokumentation jedes Termins.",
+    "bestandteile": ["Leistungsumfang", "Intervalle", "Dokumentation der Befunde", "Regelung für Sofortmaßnahmen"],
+    "erklaerung": "Für den Eigentümer sichert der Vertrag den Werterhalt und ist bei Versicherungsfragen ein Nachweis der Sorgfalt. Für den Betrieb bedeutet er planbare Auslastung und frühzeitig erkannte Schäden — kleine Befunde statt großer Sanierungen."
+  },
+  {
+    "id": "lf17-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "Fachregeln des Dachdeckerhandwerks (Schadensanalyse, Erläuterungen)",
+    "konfidenz": "hoch",
+    "begriff": "Schadensursache",
+    "definition": "Der Grund, aus dem ein Schaden entstanden ist — im Unterschied zum Schadensbild, also dem sichtbaren Erscheinungsbild. Erst die Behebung der Ursache verhindert, dass derselbe Schaden erneut auftritt.",
+    "bestandteile": ["Schadensbild (was man sieht)", "Schadensursache (warum es passiert ist)", "Instandsetzung beseitigt beides"],
+    "erklaerung": "Beispiel: Das Bild ist ein Riss in der Abdichtung, die Ursache ist eine Bewegung im Untergrund. Wer nur flickt, hat den Riss nach dem nächsten Winter wieder — nur ein Stück weiter."
+  }
+]

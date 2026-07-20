@@ -1,0 +1,294 @@
+[
+  {
+    "id": "lf16-001",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Gefahren des elektrischen Stroms",
+    "quelle": "DGUV-Regelwerk Elektrotechnik; Fachregeln für Solartechnik auf Dächern",
+    "konfidenz": "hoch",
+    "frage": "Wann steht ein Photovoltaikmodul unter Spannung?",
+    "optionen": [
+      "Nur wenn der Wechselrichter eingeschaltet ist",
+      "Nur bei direkter Sonneneinstrahlung",
+      "Sobald Licht auf das Modul fällt — auch bei Bewölkung",
+      "Nur wenn es an das Netz angeschlossen ist"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Das ist die zentrale Gefahr bei PV-Anlagen: Der Generator lässt sich nicht abschalten. Sobald Licht auf das Modul fällt, liegt Spannung an — bei in Reihe geschalteten Modulen addieren sich die Spannungen zu gefährlichen Werten."
+  },
+  {
+    "id": "lf16-002",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Gefahren des elektrischen Stroms",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Zuständigkeiten)",
+    "konfidenz": "hoch",
+    "frage": "Welche Arbeiten an einer PV-Anlage darf der Dachdecker ohne Elektrofachkraft ausführen?",
+    "optionen": [
+      "Den Wechselrichter anschließen",
+      "Die Unterkonstruktion montieren und die Module mechanisch befestigen",
+      "Die Strings zusammenstecken und einspeisen",
+      "Die Anlage in Betrieb nehmen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Unterkonstruktion, regensichere Durchdringungen und mechanische Befestigung sind Dachdeckerarbeiten. Der elektrische Anschluss — Verkabelung, Wechselrichter, Einspeisung — gehört zur Elektrofachkraft."
+  },
+  {
+    "id": "lf16-003",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "quelle": "KMK-Rahmenlehrplan LF 16 (Energiesammler)",
+    "konfidenz": "hoch",
+    "frage": "Was ist der Unterschied zwischen Photovoltaik und Solarthermie?",
+    "optionen": [
+      "Photovoltaik erzeugt Wärme, Solarthermie Strom",
+      "Photovoltaik erzeugt Strom, Solarthermie Wärme",
+      "Beide erzeugen Strom, nur mit anderer Technik",
+      "Solarthermie funktioniert nur im Winter"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Photovoltaik wandelt Licht direkt in elektrischen Strom um (Leistung in kWp). Solarthermie erhitzt ein Wärmeträgermedium im Kollektor und gibt die Wärme an einen Speicher ab."
+  },
+  {
+    "id": "lf16-004",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Aufgestaenderte und integrierte Anlagen",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Montagearten)",
+    "konfidenz": "hoch",
+    "frage": "Was gilt bei einer dachintegrierten (Indach-)PV-Anlage besonders?",
+    "optionen": [
+      "Sie braucht keine Befestigung",
+      "Die Module bilden selbst die wasserführende Ebene",
+      "Sie darf nur auf Flachdächern eingebaut werden",
+      "Sie erzeugt keinen Strom, sondern nur Wärme"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Bei der Indachmontage ersetzen die Module die Deckung. Damit sind sie selbst für die Regensicherheit verantwortlich — die Anforderungen an Anschlüsse und Dichtheit steigen deutlich gegenüber der Aufdachmontage."
+  },
+  {
+    "id": "lf16-005",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Aeusserer Blitzschutz",
+    "quelle": "Blitzschutznormenreihe DIN EN 62305 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Aus welchen drei Teilen besteht der äußere Blitzschutz?",
+    "optionen": [
+      "Fangeinrichtung, Ableitung, Erdungsanlage",
+      "Wechselrichter, Kabel, Sicherung",
+      "Fangstange, Dachhaken, Schneefang",
+      "Überspannungsschutz, Potentialausgleich, Trennfunkenstrecke"
+    ],
+    "korrekt": [0],
+    "erklaerung": "Die drei Teile bilden zusammen den Weg für den Blitzstrom: Die Fangeinrichtung fängt ihn auf dem Dach ab, die Ableitungen führen ihn an der Fassade herunter, die Erdungsanlage leitet ihn ins Erdreich."
+  },
+  {
+    "id": "lf16-006",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Aeusserer Blitzschutz",
+    "quelle": "Blitzschutznormenreihe DIN EN 62305 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird eine PV-Anlage im Schutzbereich einer Fangstange angeordnet?",
+    "optionen": [
+      "Damit sie mehr Sonne bekommt",
+      "Damit sie nicht direkt vom Blitz getroffen wird",
+      "Damit sie besser befestigt ist",
+      "Um die Windlast zu verringern"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Metallische Aufbauten sollen nicht als Einschlagpunkt dienen. Die Fangstange übernimmt das — dabei ist ein berechneter Trennungsabstand einzuhalten, damit der Blitzstrom nicht auf die Anlage überspringt."
+  },
+  {
+    "id": "lf16-007",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Wind- und Schneelasten",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Lastabtrag Schneefang)",
+    "konfidenz": "hoch",
+    "frage": "Woran muss ein Schneefang befestigt werden, damit er im Ernstfall hält?",
+    "optionen": [
+      "Nur an der obersten Dachlatte",
+      "So, dass die Last in die Tragkonstruktion eingeleitet wird",
+      "An der Dachrinne",
+      "An der Unterspannbahn"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Bei hoher Schneelast wirken erhebliche Kräfte. Ein Schneefang, der nur an der Lattung hängt, reißt aus. Die Last muss über geeignete Halter in Sparren oder Tragkonstruktion abgeleitet werden."
+  },
+  {
+    "id": "lf16-008",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Wind- und Schneelasten",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Windlasten Flachdach)",
+    "konfidenz": "hoch",
+    "frage": "Wie wirkt sich eine steilere Aufständerung einer PV-Anlage auf dem Flachdach aus?",
+    "optionen": [
+      "Die Windlast wird kleiner",
+      "Die Windlast wird größer",
+      "Die Windlast bleibt gleich",
+      "Die Windlast spielt keine Rolle"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Je steiler die Module stehen, desto größer ist die Angriffsfläche für den Wind. Deshalb muss die Anlage entsprechend mechanisch befestigt oder ausreichend ballastiert werden."
+  },
+  {
+    "id": "lf16-009",
+    "typ": "cloze",
+    "lernfeld": "lf16",
+    "thema": "Gefahren des elektrischen Stroms",
+    "quelle": "DGUV-Regelwerk Elektrotechnik (fünf Sicherheitsregeln)",
+    "konfidenz": "hoch",
+    "text": "Die erste der fünf Sicherheitsregeln der Elektrotechnik lautet {{freischalten}}, die zweite {{gegen Wiedereinschalten sichern}}.",
+    "akzeptiert": {
+      "freischalten": ["Freischalten", "abschalten"],
+      "gegen Wiedereinschalten sichern": [
+        "Gegen Wiedereinschalten sichern",
+        "gegen wiedereinschalten sichern",
+        "vor Wiedereinschalten sichern"
+      ]
+    },
+    "erklaerung": "Die fünf Regeln lauten: freischalten — gegen Wiedereinschalten sichern — Spannungsfreiheit feststellen — erden und kurzschließen — benachbarte unter Spannung stehende Teile abdecken oder abschranken. Bei der DC-Seite einer PV-Anlage ist die erste Regel nur eingeschränkt umsetzbar, weil der Generator bei Licht aktiv bleibt."
+  },
+  {
+    "id": "lf16-010",
+    "typ": "cloze",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "quelle": "KMK-Rahmenlehrplan LF 16 (Energiesammler)",
+    "konfidenz": "hoch",
+    "text": "Die Leistung einer PV-Anlage wird in {{kWp}} angegeben. Der {{Wechselrichter}} wandelt den Gleichstrom der Module in Wechselstrom um.",
+    "akzeptiert": {
+      "kWp": ["Kilowatt-Peak", "Kilowattpeak", "kWpeak"],
+      "Wechselrichter": ["Inverter"]
+    },
+    "erklaerung": "kWp ist die Leistung unter genormten Prüfbedingungen und damit eine Vergleichsgröße — nicht die tatsächliche Leistung an einem beliebigen Tag."
+  },
+  {
+    "id": "lf16-011",
+    "typ": "calc",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Belegung Dachfläche)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Dachfläche von {flaeche} m² soll mit PV-Modulen belegt werden. Ein Modul misst {mb} m × {mh} m. Davon sind nur {nutzbar} % der Fläche belegbar (Abstände, Randzonen, Einbauteile). Wie viele Module passen darauf (abgerundet)?",
+    "parameter": [
+      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 60, "max": 300, "schritt": 10 },
+      { "name": "mb", "label": "Modulbreite", "einheit": "m", "min": 1, "max": 1.2, "schritt": 0.05 },
+      { "name": "mh", "label": "Modulhöhe", "einheit": "m", "min": 1.6, "max": 2.1, "schritt": 0.05 },
+      { "name": "nutzbar", "label": "nutzbarer Anteil", "einheit": "%", "min": 60, "max": 90, "schritt": 5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Belegbare Fläche = {flaeche} · {nutzbar} / 100",
+        "formel": "flaeche * nutzbar / 100",
+        "ergebnisName": "belegbar",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Modulfläche = {mb} · {mh}",
+        "formel": "mb * mh",
+        "ergebnisName": "modulflaeche",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Anzahl Module = belegbare Fläche / Modulfläche, abgerundet",
+        "formel": "floor(belegbar / modulflaeche)",
+        "ergebnisName": "module",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Abgerundet wird, weil ein halbes Modul nicht existiert. Der nutzbare Anteil ist immer kleiner als die Bruttofläche: Randabstände, Verschattung durch Schornsteine und Wartungswege gehen ab."
+  },
+  {
+    "id": "lf16-012",
+    "typ": "calc",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Anlagenleistung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Anlage besteht aus {anzahl} Modulen mit je {leistung} Wp Nennleistung. Wie groß ist die Anlagenleistung in kWp?",
+    "parameter": [
+      { "name": "anzahl", "label": "Anzahl Module", "einheit": "Stück", "min": 10, "max": 60, "schritt": 1 },
+      { "name": "leistung", "label": "Leistung je Modul", "einheit": "Wp", "min": 350, "max": 450, "schritt": 10 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Gesamtleistung = {anzahl} · {leistung}",
+        "formel": "anzahl * leistung",
+        "ergebnisName": "gesamtWp",
+        "einheit": "Wp"
+      },
+      {
+        "beschreibung": "Umrechnung in kWp: durch 1000 teilen",
+        "formel": "gesamtWp / 1000",
+        "ergebnisName": "kwp",
+        "einheit": "kWp"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "1 kWp = 1000 Wp. Die Angabe gilt unter genormten Prüfbedingungen und ist eine Vergleichsgröße — der tatsächliche Ertrag hängt von Ausrichtung, Neigung, Verschattung und Standort ab."
+  },
+  {
+    "id": "lf16-013",
+    "typ": "diagram",
+    "lernfeld": "lf16",
+    "thema": "Aufgestaenderte und integrierte Anlagen",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Aufdachmontage); DIN EN 62305 (Fangstange)",
+    "konfidenz": "hoch",
+    "frage": "Aufdach-PV-Anlage auf einem geneigten Dach im Schnitt: Benenne die markierten Bauteile.",
+    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Aufdach-PV-Anlage im Schnitt mit Fangstange'><line x1='40' y1='190' x2='252' y2='63' stroke='currentColor' stroke-width='1.8'/><line x1='90' y1='160' x2='90' y2='141' stroke='currentColor' stroke-width='2.4'/><line x1='196' y1='97' x2='196' y2='76' stroke='currentColor' stroke-width='2.4'/><line x1='62' y1='157' x2='216' y2='64' stroke='currentColor' stroke-width='1.6'/><line x1='86' y1='129' x2='210' y2='54' stroke='#c07d4a' stroke-width='5' stroke-linecap='round'/><line x1='250' y1='64' x2='250' y2='18' stroke='currentColor' stroke-width='2.4'/><circle cx='250' cy='15' r='3' fill='#c07d4a'/><line x1='214' y1='56' x2='246' y2='46' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='226' y='40' fill='currentColor' font-size='11' font-style='italic'>s</text><line x1='90' y1='152' x2='54' y2='176' stroke='#c07d4a' stroke-width='1.2'/><circle cx='34' cy='182' r='12' fill='#c07d4a'/><text x='34' y='187' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='68' y1='154' x2='44' y2='148' stroke='#c07d4a' stroke-width='1.2'/><circle cx='28' cy='144' r='12' fill='#c07d4a'/><text x='28' y='149' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='150' y1='90' x2='120' y2='52' stroke='#c07d4a' stroke-width='1.2'/><circle cx='108' cy='42' r='12' fill='#c07d4a'/><text x='108' y='47' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='252' y1='30' x2='280' y2='24' stroke='#c07d4a' stroke-width='1.2'/><circle cx='294' cy='22' r='12' fill='#c07d4a'/><text x='294' y='27' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "dachhaken": "Dachhaken",
+      "trageschiene": "Trageschiene",
+      "modul": "PV-Modul",
+      "fangstange": "Fangstange"
+    },
+    "erklaerung": "1 ist der Dachhaken, der die Last in den Sparren einleitet und dessen Durchdringung regensicher ausgeführt sein muss. 2 ist die Trageschiene, 3 das PV-Modul, 4 die Fangstange des äußeren Blitzschutzes — mit berechnetem Trennungsabstand s zur Anlage."
+  },
+  {
+    "id": "lf16-014",
+    "typ": "draw",
+    "lernfeld": "lf16",
+    "thema": "Aufgestaenderte und integrierte Anlagen",
+    "quelle": "Fachregeln für Solartechnik auf Dächern (Befestigung Dachhaken)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Der Dachaufbau (Sparren, Konterlatte, Dachlatten, Ziegel) ist vorgegeben. Zeichne ein, wie ein PV-Dachhaken befestigt wird: Wo wird er verschraubt, und was muss am darüberliegenden Ziegel geschehen?",
+    "vorgabeSvg": "<svg viewBox='0 0 340 200' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dachaufbau als Vorgabe'><rect x='40' y='140' width='260' height='26' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='40' y='124' width='260' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='60' y='108' width='30' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='130' y='108' width='30' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='40' y='90' width='135' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='165' y='90' width='120' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='46' y='158' fill='currentColor' font-size='9'>Sparren</text><text x='46' y='136' fill='currentColor' font-size='9'>Konterlatte</text><text x='64' y='120' fill='currentColor' font-size='9'>Latte</text><text x='46' y='100' fill='currentColor' font-size='9'>Ziegel</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 340 200' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Dachhakenbefestigung'><rect x='40' y='140' width='260' height='26' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='40' y='124' width='260' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='60' y='108' width='30' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='130' y='108' width='30' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='40' y='90' width='135' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='165' y='90' width='27' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='208' y='90' width='77' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M200 158 L200 74 L258 74' fill='none' stroke='#c07d4a' stroke-width='2.6'/><circle cx='194' cy='148' r='3' fill='#c07d4a'/><circle cx='194' cy='160' r='3' fill='#c07d4a'/><text x='262' y='70' fill='#c07d4a' font-size='9'>Trageschiene</text><text x='104' y='66' fill='#c07d4a' font-size='9'>Dachhaken</text><line x1='158' y1='70' x2='196' y2='80' stroke='#c07d4a' stroke-width='1'/><text x='120' y='188' fill='#c07d4a' font-size='9' text-anchor='middle'>am Sparren verschraubt</text><line x1='180' y1='183' x2='198' y2='167' stroke='#c07d4a' stroke-width='1'/><text x='215' y='120' fill='#c07d4a' font-size='9'>Ziegel ausgeklinkt</text><line x1='213' y1='116' x2='204' y2='105' stroke='#c07d4a' stroke-width='1'/></svg>",
+    "schritte": [
+      "Den Dachhaken so setzen, dass er am Sparren verschraubt wird — nicht an der Lattung, denn die Last muss in die Tragkonstruktion.",
+      "Den Haken durch die Deckungsebene nach außen führen und oben die Trageschiene aufnehmen.",
+      "Den darüberliegenden Ziegel im Bereich des Hakens ausklinken, damit er nicht auf dem Haken aufliegt.",
+      "Die Durchdringung regensicher ausbilden — der Ziegel muss trotz Ausklinkung sauber schließen.",
+      "Bauteile beschriften: Sparren, Konterlatte, Latte, Ziegel, Dachhaken, Trageschiene."
+    ],
+    "erklaerung": "Zwei Fehler entscheiden hier über Erfolg oder Schaden: Wird der Haken nur an der Latte befestigt, reißt er unter Wind- und Schneelast aus. Wird der Ziegel nicht ausgeklinkt, liegt er auf dem Haken auf, wackelt und bricht — und dann ist die Stelle undicht."
+  },
+  {
+    "id": "lf16-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf16",
+    "thema": "Aeusserer Blitzschutz",
+    "quelle": "Blitzschutznormenreihe DIN EN 62305 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "begriff": "Trennungsabstand",
+    "definition": "Der erforderliche Mindestabstand zwischen der Blitzschutzanlage und leitfähigen Bauteilen wie einem PV-Gestell, damit der Blitzstrom nicht überspringt. Er wird abhängig von Blitzschutzklasse, Anzahl der Ableitungen und Länge berechnet — nicht geschätzt.",
+    "erklaerung": "Kann der Trennungsabstand nicht eingehalten werden, ist statt der Trennung ein Potentialausgleich vorzusehen. Die Planung gehört in jedem Fall in die Hand einer Blitzschutzfachkraft."
+  },
+  {
+    "id": "lf16-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "quelle": "KMK-Rahmenlehrplan LF 16 (Energiesammler)",
+    "konfidenz": "hoch",
+    "begriff": "kWp (Kilowatt-Peak)",
+    "definition": "Die Nennleistung einer Photovoltaikanlage unter genormten Prüfbedingungen. Sie dient dem Vergleich von Anlagen und Modulen und entspricht nicht der tatsächlich erzeugten Leistung an einem beliebigen Tag.",
+    "erklaerung": "1 kWp = 1000 Wp. Der reale Ertrag hängt von Ausrichtung, Dachneigung, Verschattung, Temperatur und Standort ab."
+  }
+]

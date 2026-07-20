@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lf15-l01",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "titel": "Untere, seitliche und obere Abschlüsse",
+    "inhalt": [
+      "Eine Wandbekleidung ist nie eine reine Fläche. Erst die Abschlüsse entscheiden darüber, ob sie dauerhaft funktioniert — dort dringt Wasser ein, dort wird die Hinterlüftung geführt, dort wirken die Windkräfte am stärksten.",
+      "Der untere Abschluss (Sockel) hat zwei Aufgaben: Er hält die Bekleidung aus dem Spritzwasserbereich heraus und lässt gleichzeitig die Zuluft in die Hinterlüftungsebene. Deshalb sitzt dort ein Lüftungsprofil oder ein Lochblech — es hält Vögel und Insekten fern, ohne den Luftquerschnitt zu verschließen. Ein dichter Sockelabschluss würde die Hinterlüftung abwürgen.",
+      "Der obere Abschluss ist das Gegenstück: Hier verlässt die erwärmte Luft die Konstruktion. Zusätzlich muss der obere Rand vor eindringendem Niederschlag geschützt werden, meist durch ein Abdeckblech mit Wasserfalz oder Tropfkante.",
+      "Seitliche Abschlüsse — an Gebäudekanten, an Fugen, an angrenzende Bauteile — werden mit Profilen ausgebildet, die eine Bewegung der Bekleidung zulassen. Starr eingespannte Bekleidungen reißen oder beulen bei Temperaturwechsel."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 15; Fachregeln für Außenwandbekleidungen (Abschlüsse und Hinterlüftung)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l02",
+    "lernfeld": "lf15",
+    "thema": "Innen- und Aussenecken",
+    "titel": "Innen- und Außenecken",
+    "inhalt": [
+      "An der Außenecke stoßen zwei Bekleidungsflächen so aufeinander, dass die Kante nach außen zeigt. Sie ist mechanisch stark beansprucht und optisch das Erste, was auffällt — eine unsaubere Ecke sieht man über die ganze Fassadenhöhe.",
+      "Es gibt zwei Grundlösungen: Man führt die Bekleidung mit einem vorgefertigten Eckwinkel oder Eckprofil um die Kante, oder man arbeitet die Ecke aus dem Deckmaterial selbst aus — bei Schiefer zum Beispiel als Eckdeckung mit besonderem Zuschnitt.",
+      "Die Innenecke ist wassertechnisch heikler: Dort läuft Wasser von zwei Flächen zusammen, ähnlich wie in einer Dachkehle. Der Anschluss muss die Bewegung beider Flächen aufnehmen und darf keine Wassersackbildung erzeugen.",
+      "In beiden Fällen gilt: Die Hinterlüftungsebene muss um die Ecke herum durchgehen. Wird sie an der Ecke zugebaut, entsteht ein toter Bereich, in dem Feuchtigkeit stehen bleibt."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 15; Fachregeln für Außenwandbekleidungen (Eckausbildung)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l03",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen Fenster Tueren",
+    "titel": "Anschlüsse an Fenster und Türen",
+    "inhalt": [
+      "Fenster und Türen unterbrechen die Bekleidungsfläche. Jede dieser Öffnungen bringt vier Anschlüsse mit sich: zwei Laibungen, einen oberen Sturzanschluss und unten die Fensterbank.",
+      "Die Fensterbank muss ein Gefälle nach außen haben, damit das Wasser abläuft und nicht an der Fassade zurück nach innen zieht. Seitlich braucht sie Aufkantungen oder Bordprofile, sonst läuft das Wasser über die Kante in die Laibung. Vorn sorgt eine Tropfkante dafür, dass das Wasser abtropft und nicht an der Unterseite entlangkriecht.",
+      "Der obere Anschluss über der Öffnung ist die klassische Schwachstelle: Hier muss das Wasser aus der Hinterlüftungsebene nach außen geführt werden, sonst sammelt es sich über dem Sturz. Deshalb wird dort ein Blech mit Tropfkante eingebaut.",
+      "Wichtig ist außerdem, dass die Hinterlüftung um die Öffnung herumgeführt wird — sonst entsteht über dem Fenster ein Luftstau."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 15; Fachregeln für Außenwandbekleidungen (Öffnungsanschlüsse)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l04",
+    "lernfeld": "lf15",
+    "thema": "Detailskizzen",
+    "titel": "Detailskizzen lesen und zeichnen",
+    "inhalt": [
+      "Ein Detail ist ein vergrößerter Ausschnitt aus einem Bauteil — meist im Maßstab 1:5 oder 1:10 —, der genau die Stelle zeigt, an der etwas Besonderes passiert: eine Ecke, ein Abschluss, eine Durchdringung.",
+      "Eine brauchbare Detailskizze enthält immer dieselben Bestandteile: die Schichtenfolge von innen nach außen, die Bezeichnung der Bauteile, die maßgebenden Maße (Anschlusshöhen, Überdeckungen, Abstände) und die Kennzeichnung der wasserführenden Ebene.",
+      "In der Prüfung wird eine Skizze nicht nach Schönheit bewertet, sondern danach, ob sie funktioniert: Ist die Schichtenfolge richtig? Läuft das Wasser nach außen ab? Ist die Hinterlüftung durchgehend? Sind die geforderten Maße eingetragen?",
+      "Nützlich ist die Gewohnheit, jede Skizze am Ende einmal mit dem Finger als Wassertropfen abzufahren. Wo der Tropfen hängen bleibt oder nach innen läuft, ist ein Fehler im Detail."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 15 (Ausführungs- und Detailzeichnungen)",
+    "konfidenz": "hoch"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lf16-l01",
+    "lernfeld": "lf16",
+    "thema": "Photovoltaik und Solarthermie",
+    "titel": "Photovoltaik und Solarthermie unterscheiden",
+    "inhalt": [
+      "Beide Anlagen sitzen auf dem Dach und sehen aus der Ferne ähnlich aus — sie machen aber völlig Unterschiedliches.",
+      "Photovoltaik wandelt Sonnenlicht direkt in elektrischen Strom um. Die Leistung wird in Kilowatt-Peak (kWp) angegeben, also der Leistung unter genormten Prüfbedingungen. An die Module schließt sich die DC-Verkabelung an, dann der Wechselrichter, der Gleichstrom in Wechselstrom umwandelt.",
+      "Solarthermie erzeugt keinen Strom, sondern Wärme: Ein Wärmeträgermedium wird im Kollektor erhitzt und gibt die Wärme an einen Speicher ab. Man unterscheidet Flachkollektoren und Röhrenkollektoren.",
+      "Für die Montage gibt es zwei Grundprinzipien: die Aufdachmontage, bei der die Anlage über der bestehenden Deckung aufgeständert wird, und die dachintegrierte Montage (Indach), bei der die Module selbst die Deckung ersetzen und damit die wasserführende Ebene bilden. Bei der Indachmontage steigen die Anforderungen an die Dichtheit deutlich."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 16; Fachregeln für Solartechnik auf Dächern (Montagearten)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf16-l02",
+    "lernfeld": "lf16",
+    "thema": "Gefahren des elektrischen Stroms",
+    "titel": "Elektrische Gefahren bei PV-Anlagen",
+    "inhalt": [
+      "Das Wichtigste zuerst: Ein Photovoltaikmodul erzeugt Spannung, sobald Licht darauf fällt. Es lässt sich nicht abschalten. Auch bei bewölktem Himmel oder in der Dämmerung steht die DC-Seite unter Spannung, und in einem in Reihe geschalteten String addieren sich die Modulspannungen zu Werten, die für den Menschen gefährlich sind.",
+      "Daraus folgt die klare Aufgabenteilung: Die Dachdeckerin oder der Dachdecker montiert die Unterkonstruktion, stellt die Regensicherheit der Durchdringungen her und befestigt die Module mechanisch. Der elektrische Anschluss — Verkabelung, Wechselrichter, Einspeisung — ist Sache einer Elektrofachkraft.",
+      "Beim Arbeiten an der Anlage gelten die fünf Sicherheitsregeln der Elektrotechnik: freischalten, gegen Wiedereinschalten sichern, Spannungsfreiheit feststellen, erden und kurzschließen, benachbarte unter Spannung stehende Teile abdecken oder abschranken. Bei der DC-Seite einer PV-Anlage ist genau die erste Regel nur eingeschränkt umsetzbar — der Generator selbst bleibt aktiv.",
+      "Praktische Konsequenz: beschädigte Kabel oder Stecker nicht anfassen, Module nicht mit blanken Leitungsenden hantieren, im Brandfall die Feuerwehr auf die PV-Anlage hinweisen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 16; DGUV-Regelwerk Elektrotechnik (fünf Sicherheitsregeln)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf16-l03",
+    "lernfeld": "lf16",
+    "thema": "Aeusserer Blitzschutz",
+    "titel": "Äußerer Blitzschutz",
+    "inhalt": [
+      "Der äußere Blitzschutz besteht aus drei Teilen, die zusammen einen Weg für den Blitzstrom bilden: der Fangeinrichtung auf dem Dach, den Ableitungen an der Fassade und der Erdungsanlage im Boden.",
+      "Die Fangeinrichtung fängt den Blitz kontrolliert ab, damit er nicht in ein empfindliches Bauteil einschlägt. Zur Festlegung ihrer Anordnung gibt es anerkannte Verfahren, unter anderem das Blitzkugelverfahren und das Maschenverfahren.",
+      "Wichtig für alles, was zusätzlich aufs Dach kommt: Metallische Bauteile wie PV-Gestelle sollen nicht direkt vom Blitz getroffen werden. Deshalb werden sie im Schutzbereich einer Fangeinrichtung — häufig einer Fangstange — angeordnet.",
+      "Dabei ist ein Trennungsabstand einzuhalten, damit der Blitzstrom nicht auf die PV-Anlage überspringt. Wie groß dieser Abstand sein muss, hängt von der Blitzschutzklasse, der Anzahl der Ableitungen und der Länge ab und wird berechnet — nicht geschätzt. Die Planung der Blitzschutzanlage gehört in die Hand einer Blitzschutzfachkraft."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 16; Blitzschutznormenreihe DIN EN 62305 (Erläuterungen zu Fangeinrichtung, Ableitung, Erdung)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf16-l04",
+    "lernfeld": "lf16",
+    "thema": "Wind- und Schneelasten",
+    "titel": "Wind- und Schneelasten, Schneefang und Einbauteile",
+    "inhalt": [
+      "Alles, was auf das Dach montiert wird, verändert die Lastsituation. Eine aufgeständerte PV-Anlage bietet dem Wind eine zusätzliche Angriffsfläche — je steiler die Aufständerung auf einem Flachdach, desto größer die Windlast. Deshalb wird die Anlage entweder mechanisch befestigt oder mit Ballast gesichert.",
+      "Bei mechanischer Befestigung im geneigten Dach entstehen Durchdringungen: Dachhaken werden am Sparren oder an der Konterlattung befestigt. Jede dieser Durchdringungen muss regensicher ausgeführt werden, und der darüberliegende Ziegel wird passend ausgeklinkt, damit er nicht auf dem Haken aufliegt und bricht.",
+      "Schneelasten richten sich nach der Schneelastzone und der Geländehöhe des Standorts. Ein Schneefang hält die Schneemassen auf der Dachfläche zurück, damit sie nicht als Dachlawine abgehen. Entscheidend ist, dass die Last in die Tragkonstruktion eingeleitet wird — ein Schneefang, der nur an der Lattung hängt, reißt bei hoher Schneelast aus.",
+      "Weitere typische Einbauteile sind Dachfenster, Lüfterziegel, Sicherheitsdachhaken als Anschlagpunkte für die persönliche Schutzausrüstung sowie Laufroste und Trittstufen für die spätere Wartung."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 16; Fachregeln für Solartechnik auf Dächern (Befestigung und Lastabtrag)",
+    "konfidenz": "hoch"
+  }
+]

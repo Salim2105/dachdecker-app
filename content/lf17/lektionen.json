@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lf17-l01",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Checklisten",
+    "titel": "Instandhaltung: die vier Grundmaßnahmen",
+    "inhalt": [
+      "Instandhaltung ist der Oberbegriff für alles, was ein Bauteil funktionsfähig hält. Sie gliedert sich in vier Maßnahmen: Wartung, Inspektion, Instandsetzung und Verbesserung.",
+      "Die Wartung soll den Abbau des Abnutzungsvorrats verzögern — Rinnen und Abläufe reinigen, Bewuchs entfernen, Verschraubungen nachziehen. Die Inspektion stellt den Ist-Zustand fest und beurteilt ihn, ohne selbst etwas zu reparieren.",
+      "Die Instandsetzung stellt den Soll-Zustand wieder her: Sie repariert das, was bereits schadhaft ist. Die Verbesserung geht darüber hinaus und erhöht die Funktionssicherheit, ohne die geforderte Funktion selbst zu ändern — etwa eine zusätzliche Notentwässerung.",
+      "In der Praxis läuft die Inspektion mit einer Checkliste ab, die alle Bereiche der Reihe nach abfragt: Deckung oder Abdichtung, An- und Abschlüsse, Durchdringungen, Entwässerung, Einbauteile, Sicherheitseinrichtungen. Jeder Befund wird mit Ort, Beschreibung und Foto dokumentiert — das ist später die Grundlage für Angebot und Beweissicherung."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 17; Instandhaltungsbegriffe nach DIN 31051 (Wartung, Inspektion, Instandsetzung, Verbesserung)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l02",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "titel": "Typische Schadensbilder erkennen",
+    "inhalt": [
+      "Eine gute Schadensanalyse trennt zwei Dinge: das Schadensbild — das, was man sieht — und die Schadensursache. Wer nur das Bild behebt, hat den Schaden in zwei Jahren wieder.",
+      "Am Flachdach sind die häufigen Bilder: Blasenbildung in der Abdichtung (eingeschlossene Feuchtigkeit oder Luft, die sich bei Sonne ausdehnt), offene oder aufklaffende Nähte, Risse durch Bewegung im Untergrund, zu niedrige oder abgerutschte Anschlüsse und stehendes Wasser durch verstopfte oder falsch angeordnete Abläufe.",
+      "Am geneigten Dach: gebrochene oder verschobene Ziegel, fehlende Windsogsicherung, undichte Anschlüsse an Schornstein und Wandanschluss, verstopfte Rinnen, Korrosion an Blechteilen und Bewuchs durch Moos.",
+      "Ein Feuchtefleck im Innenraum liegt fast nie senkrecht unter der Eintrittsstelle. Wasser läuft auf der Dampfsperre oder an Sparren entlang, bevor es durchtritt — deshalb sucht man immer oberhalb und im Umkreis, nicht nur direkt über dem Fleck."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 17; Fachregeln des Dachdeckerhandwerks (Schadensbilder, Erläuterungen)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l03",
+    "lernfeld": "lf17",
+    "thema": "Reparatur Teilsanierung Komplettsanierung",
+    "titel": "Reparatur, Teilsanierung oder Komplettsanierung",
+    "inhalt": [
+      "Nach der Analyse steht die Entscheidung an, wie weit eingegriffen wird. Sie hängt vom Umfang des Schadens, vom Alter und Zustand der Gesamtfläche und davon ab, ob die Konstruktion noch dem heutigen Stand entspricht.",
+      "Eine Reparatur behebt einen örtlich begrenzten Schaden — ein Flicken, ein Ziegelwechsel, ein neu angearbeiteter Anschluss. Sie ist sinnvoll, wenn die übrige Fläche in Ordnung ist.",
+      "Bei der Teilsanierung wird ein ganzer Abschnitt erneuert, etwa eine Dachfläche oder alle Anschlüsse. Bei der Komplettsanierung wird bis auf die Tragkonstruktion zurückgebaut und neu aufgebaut.",
+      "Ein häufiger Fehler ist es, immer wieder zu flicken, obwohl die Fläche am Ende ihrer Lebensdauer angelangt ist. Die Summe vieler Reparaturen überschreitet dann die Kosten der Sanierung. Zur ehrlichen Beratung gehört, das offen zu sagen — auch wenn der einzelne Reparaturauftrag zunächst der bequemere ist."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 17 (Instandhaltungskonzepte)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l04",
+    "lernfeld": "lf17",
+    "thema": "Sofortmassnahmen",
+    "titel": "Sofortmaßnahmen und Gefahrstoffe bei Altdächern",
+    "inhalt": [
+      "Nach einem Sturm- oder Wasserschaden zählt zuerst die Sicherheit: Gefahrenbereich absperren, lose Bauteile sichern oder abnehmen, erst danach die Notabdichtung mit Plane oder Notreparatur ausführen. Der Zustand wird vor dem Eingriff fotografisch dokumentiert — für Versicherung und Auftraggeber.",
+      "Bei Altdächern kommt ein zweites Thema dazu: Gefahrstoffe. Faserzement-Wellplatten und -Dachplatten aus älteren Baujahren können Asbest enthalten. In Deutschland gilt seit 1993 ein Herstellungs- und Verwendungsverbot; verbaut sind die Platten aber weiterhin auf vielen Bestandsdächern.",
+      "Für Arbeiten an asbesthaltigen Materialien gilt die Gefahrstoffverordnung mit der Technischen Regel TRGS 519. Sie verlangt unter anderem Sachkunde, Anzeige der Arbeiten und festgelegte Schutzmaßnahmen.",
+      "Strikt verboten sind alle Verfahren, die Fasern freisetzen: Abschleifen, Bohren mit hoher Drehzahl, Druckluft, Abbürsten und vor allem das Reinigen mit dem Hochdruckreiniger. Wer eine alte Faserzementplatte abstrahlt, verteilt Asbestfasern über das ganze Grundstück. Im Zweifel gilt: nicht bearbeiten, sondern das Material zuerst untersuchen lassen."
+    ],
+    "quelle": "KMK-Rahmenlehrplan LF 17; Gefahrstoffverordnung / TRGS 519 (Asbest — Abbruch-, Sanierungs- und Instandhaltungsarbeiten)",
+    "konfidenz": "hoch"
+  }
+]

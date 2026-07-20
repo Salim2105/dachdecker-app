@@ -1,0 +1,270 @@
+[
+  {
+    "id": "lf15-001",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Sockelabschluss)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird der untere Abschluss einer hinterlüfteten Bekleidung nicht dicht ausgeführt?",
+    "optionen": [
+      "Damit Regenwasser eindringen kann",
+      "Weil dort die Zuluft für die Hinterlüftung eintreten muss",
+      "Um Material zu sparen",
+      "Damit die Bekleidung leichter wird"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Hinterlüftung braucht unten eine Zuluft- und oben eine Abluftöffnung. Ein dichter Sockel würde den Luftstrom abwürgen. Ein Lüftungsprofil oder Lochblech hält dabei Vögel und Insekten fern."
+  },
+  {
+    "id": "lf15-002",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Sockelabschluss)",
+    "konfidenz": "hoch",
+    "frage": "Welche zweite Aufgabe hat der untere Abschluss neben der Zuluftführung?",
+    "optionen": [
+      "Er trägt die gesamte Fassadenlast ab",
+      "Er hält die Bekleidung aus dem Spritzwasserbereich heraus",
+      "Er ersetzt die Wärmedämmung",
+      "Er dient als Blitzschutz"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Direkt über dem Gelände spritzt Regenwasser vom Boden zurück an die Fassade. Deshalb endet die Bekleidung mit Abstand über dem Gelände — sonst saugt sich das Material dauerhaft voll."
+  },
+  {
+    "id": "lf15-003",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Innen- und Aussenecken",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Eckausbildung)",
+    "konfidenz": "hoch",
+    "frage": "Warum ist eine Innenecke wassertechnisch anspruchsvoller als eine Außenecke?",
+    "optionen": [
+      "Weil dort Wasser von zwei Flächen zusammenläuft",
+      "Weil dort keine Befestigung möglich ist",
+      "Weil dort kein Wind angreift",
+      "Weil dort die Dämmung fehlt"
+    ],
+    "korrekt": [0],
+    "erklaerung": "Die Innenecke wirkt wie eine stehende Kehle: Zwei Flächen entwässern in dieselbe Linie. An der Außenecke läuft das Wasser dagegen auseinander — sie ist eher mechanisch und optisch kritisch."
+  },
+  {
+    "id": "lf15-004",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Innen- und Aussenecken",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Hinterlüftung an Ecken)",
+    "konfidenz": "hoch",
+    "frage": "Was muss an einer Gebäudeecke mit der Hinterlüftungsebene geschehen?",
+    "optionen": [
+      "Sie wird an der Ecke geschlossen",
+      "Sie muss um die Ecke herum durchgehen",
+      "Sie wird an der Ecke verdoppelt",
+      "Sie wird mit Dämmstoff ausgefüllt"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Wird die Luftschicht an der Ecke zugebaut, entsteht ein toter Bereich ohne Luftwechsel. Dort bleibt Feuchtigkeit stehen — genau da beginnen später die Schäden."
+  },
+  {
+    "id": "lf15-005",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen Fenster Tueren",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient die Tropfkante an der Vorderkante einer Fensterbank?",
+    "optionen": [
+      "Sie versteift das Blech gegen Wind",
+      "Sie lässt das Wasser abtropfen, statt an der Unterseite zurückzulaufen",
+      "Sie dient der Befestigung",
+      "Sie verhindert Kondenswasser im Fenster"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Ohne Tropfkante kriecht das Wasser an der Blechunterseite zurück zur Fassade und läuft daran herunter — daher die typischen Schmutzfahnen unter Fensterbänken. Eine Versteifung ist ein willkommener Nebeneffekt, aber nicht der Zweck."
+  },
+  {
+    "id": "lf15-006",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen Fenster Tueren",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Öffnungsanschlüsse)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat das Blech über einer Fensteröffnung in einer hinterlüfteten Fassade?",
+    "optionen": [
+      "Es trägt das Fenster",
+      "Es führt Wasser aus der Hinterlüftungsebene nach außen ab",
+      "Es dichtet die Luftschicht luftdicht ab",
+      "Es dient nur der Optik"
+    ],
+    "korrekt": [1],
+    "erklaerung": "In der Luftschicht kann Wasser stehen — Schlagregen, Kondensat. Über der Öffnung muss es nach außen geführt werden, sonst sammelt es sich auf dem Sturz. Deshalb sitzt dort ein Blech mit Tropfkante."
+  },
+  {
+    "id": "lf15-007",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Bewegungsaufnahme)",
+    "konfidenz": "hoch",
+    "frage": "Warum werden seitliche Abschlussprofile so ausgebildet, dass sich die Bekleidung bewegen kann?",
+    "optionen": [
+      "Damit man sie leichter demontieren kann",
+      "Weil sich das Material bei Temperaturwechsel ausdehnt und zusammenzieht",
+      "Damit der Wind hindurchpfeifen kann",
+      "Weil die Wand sich setzt"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Fassadenbekleidungen erreichen im Sommer hohe Oberflächentemperaturen. Starr eingespannte Flächen beulen oder reißen. Die Abschlüsse müssen die Längenänderung aufnehmen können."
+  },
+  {
+    "id": "lf15-008",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Hinterlüftung)",
+    "konfidenz": "hoch",
+    "text": "Bei der hinterlüfteten Fassade tritt die Luft am {{unteren}} Abschluss ein und verlässt die Konstruktion am {{oberen}} Abschluss.",
+    "akzeptiert": {
+      "unteren": ["unten", "Sockel", "unterer"],
+      "oberen": ["oben", "oberer"]
+    },
+    "erklaerung": "Die erwärmte Luft steigt in der Luftschicht nach oben (Kamineffekt). Fehlt eine der beiden Öffnungen, kommt die Strömung zum Erliegen und die Feuchtigkeit bleibt in der Konstruktion."
+  },
+  {
+    "id": "lf15-009",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen Fenster Tueren",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "konfidenz": "hoch",
+    "text": "Eine Fensterbank braucht ein {{Gefälle}} nach außen und seitlich {{Aufkantungen}}, damit das Wasser nicht in die Laibung läuft.",
+    "akzeptiert": {
+      "Gefälle": ["Gefaelle", "Neigung"],
+      "Aufkantungen": ["Aufkantung", "Bordprofile", "Bordprofil", "Aufbordungen"]
+    },
+    "erklaerung": "Ohne Aufkantung läuft das Wasser seitlich über die Kante direkt in den Laibungsanschluss — eine der häufigsten Schadensursachen an Fensteranschlüssen."
+  },
+  {
+    "id": "lf15-010",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Detailskizzen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Flächenermittlung mit Öffnungen)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Wandfläche ist {laenge} m lang und {hoehe} m hoch. Darin liegen {anzahl} gleich große Fensteröffnungen von je {fb} m Breite und {fh} m Höhe. Wie groß ist die zu bekleidende Nettofläche?",
+    "parameter": [
+      { "name": "laenge", "label": "Wandlänge", "einheit": "m", "min": 8, "max": 20, "schritt": 0.5 },
+      { "name": "hoehe", "label": "Wandhöhe", "einheit": "m", "min": 3, "max": 8, "schritt": 0.5 },
+      { "name": "anzahl", "label": "Anzahl Fenster", "einheit": "Stück", "min": 2, "max": 6, "schritt": 1 },
+      { "name": "fb", "label": "Fensterbreite", "einheit": "m", "min": 0.8, "max": 2, "schritt": 0.1 },
+      { "name": "fh", "label": "Fensterhöhe", "einheit": "m", "min": 1, "max": 2, "schritt": 0.1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Bruttofläche der Wand = {laenge} · {hoehe}",
+        "formel": "laenge * hoehe",
+        "ergebnisName": "brutto",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Fläche aller Öffnungen = {anzahl} · {fb} · {fh}",
+        "formel": "anzahl * fb * fh",
+        "ergebnisName": "oeffnungen",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Nettofläche = Bruttofläche − Öffnungen",
+        "formel": "brutto - oeffnungen",
+        "ergebnisName": "netto",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Für den Materialbedarf zählt die Nettofläche, für den Arbeitsaufwand aber nicht: Jede Öffnung bringt vier zusätzliche Anschlüsse mit sich und kostet mehr Zeit als die eingesparte Fläche."
+  },
+  {
+    "id": "lf15-011",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Längenermittlung Abschlüsse)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein rechteckiges Gebäude ist {a} m lang und {b} m breit und wird ringsum mit einer hinterlüfteten Fassade bekleidet. Wie viele Meter Sockel-Lüftungsprofil werden benötigt?",
+    "parameter": [
+      { "name": "a", "label": "Gebäudelänge", "einheit": "m", "min": 8, "max": 30, "schritt": 0.5 },
+      { "name": "b", "label": "Gebäudebreite", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Umfang = 2 · ({a} + {b})",
+        "formel": "2 * (a + b)",
+        "ergebnisName": "umfang",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Der Sockelabschluss läuft einmal um das gesamte Gebäude. In der Praxis kommt noch ein Zuschnittzuschlag dazu, weil an jeder Ecke ein Stück verschnitten wird."
+  },
+  {
+    "id": "lf15-012",
+    "typ": "diagram",
+    "lernfeld": "lf15",
+    "thema": "Untere seitliche obere Abschluesse",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Sockeldetail)",
+    "konfidenz": "hoch",
+    "frage": "Sockelabschluss einer hinterlüfteten Außenwandbekleidung im Schnitt: Benenne die markierten Schichten.",
+    "svg": "<svg viewBox='0 0 320 230' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Sockelabschluss einer hinterluefteten Fassade im Schnitt'><rect x='60' y='20' width='30' height='160' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='90' y='20' width='20' height='160' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><rect x='126' y='20' width='10' height='140' fill='none' stroke='#c07d4a' stroke-width='2'/><rect x='126' y='160' width='10' height='8' fill='none' stroke='#c07d4a' stroke-width='1.4'/><path d='M118 196 L118 172' fill='none' stroke='#c07d4a' stroke-width='1.2'/><path d='M118 172 L115 179 M118 172 L121 179' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='60' y='192' fill='currentColor' font-size='9'>Zuluft</text><line x1='40' y1='200' x2='300' y2='200' stroke='currentColor' stroke-width='1.6'/><text x='250' y='214' fill='currentColor' font-size='9'>Gelände</text><line x1='152' y1='168' x2='152' y2='200' stroke='currentColor' stroke-width='0.9'/><path d='M152 168 L149 174 M152 168 L155 174 M152 200 L149 194 M152 200 L155 194' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='158' y='188' fill='currentColor' font-size='9'>Abstand</text><line x1='75' y1='60' x2='196' y2='44' stroke='#c07d4a' stroke-width='1.2'/><circle cx='210' cy='40' r='12' fill='#c07d4a'/><text x='210' y='45' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='100' y1='90' x2='216' y2='80' stroke='#c07d4a' stroke-width='1.2'/><circle cx='230' cy='76' r='12' fill='#c07d4a'/><text x='230' y='81' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='118' y1='120' x2='236' y2='116' stroke='#c07d4a' stroke-width='1.2'/><circle cx='250' cy='112' r='12' fill='#c07d4a'/><text x='250' y='117' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='134' y1='150' x2='258' y2='150' stroke='#c07d4a' stroke-width='1.2'/><circle cx='272' cy='150' r='12' fill='#c07d4a'/><text x='272' y='155' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "mauerwerk": "Tragende Wand",
+      "daemmung": "Wärmedämmung",
+      "luftschicht": "Hinterlüftungsebene",
+      "bekleidung": "Außenwandbekleidung"
+    },
+    "erklaerung": "Von innen nach außen: 1 tragende Wand, 2 Wärmedämmung, 3 Hinterlüftungsebene (Luftschicht), 4 Bekleidung. Unten bleibt die Luftschicht offen — dort tritt die Zuluft ein, gesichert durch ein Lüftungsprofil."
+  },
+  {
+    "id": "lf15-013",
+    "typ": "draw",
+    "lernfeld": "lf15",
+    "thema": "Innen- und Aussenecken",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Eckausbildung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne die Außenecke einer hinterlüfteten Fassade im waagerechten Schnitt (Grundriss). Die tragende Wand ist vorgegeben. Ergänze Wärmedämmung, Hinterlüftungsebene und Bekleidung und beschrifte die Schichten. Zeige, dass die Luftschicht um die Ecke durchgeht.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Grundriss Wandecke als Vorgabe'><path d='M120 210 L120 60 L170 60' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M148 210 L148 88 L170 88' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='178' y='78' fill='currentColor' font-size='9'>tragende Wand</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Aussenecke im Grundriss'><path d='M120 210 L120 60 L170 60' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M148 210 L148 88 L170 88' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M104 210 L104 44 L170 44' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><path d='M86 210 L86 26 L170 26' fill='none' stroke='#c07d4a' stroke-width='2.2'/><path d='M78 210 L78 18 L170 18' fill='none' stroke='#c07d4a' stroke-width='2.2'/><path d='M95 190 L95 35 L162 35' fill='none' stroke='#c07d4a' stroke-width='1.1' stroke-dasharray='5 4'/><path d='M162 35 L156 32 M162 35 L156 38' fill='none' stroke='#c07d4a' stroke-width='1.1'/><text x='178' y='22' fill='#c07d4a' font-size='9'>Bekleidung, Ecke auf Gehrung</text><text x='178' y='39' fill='#c07d4a' font-size='9'>Hinterlüftung</text><text x='178' y='56' fill='currentColor' font-size='9'>Wärmedämmung</text><text x='178' y='78' fill='currentColor' font-size='9'>tragende Wand</text></svg>",
+    "schritte": [
+      "Die tragende Wand als Ecke im Grundriss übernehmen.",
+      "Die Wärmedämmung als gleichmäßig dicke Schicht außen um die Ecke herumführen.",
+      "Die Hinterlüftungsebene als durchgehenden Luftraum davor zeichnen — sie darf an der Ecke nicht zugebaut werden.",
+      "Die Bekleidung als äußerste Schicht ergänzen und die Ecke mit einem Eckwinkel oder auf Gehrung ausbilden.",
+      "Alle Schichten beschriften und mit Pfeilen zeigen, dass die Luft um die Ecke strömen kann."
+    ],
+    "erklaerung": "Der entscheidende Punkt ist der durchgehende Luftraum. Viele Ausführungen setzen an der Ecke ein durchgehendes Kantholz — damit ist die Hinterlüftung an dieser Stelle unterbrochen und es entsteht ein toter Bereich, in dem Feuchtigkeit stehen bleibt."
+  },
+  {
+    "id": "lf15-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen Fenster Tueren",
+    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "konfidenz": "hoch",
+    "begriff": "Tropfkante",
+    "definition": "Die nach unten abgekantete Vorderkante eines Blechs — zum Beispiel an einer Fensterbank oder an einem Abdeckblech. Sie zwingt das ablaufende Wasser zum Abtropfen, damit es nicht an der Blechunterseite zurück zur Fassade läuft.",
+    "bestandteile": ["Abgekantete Blechkante", "Abstand zur Fassade", "Wasser tropft frei ab"],
+    "erklaerung": "Fehlt die Tropfkante, zieht das Wasser durch Kapillarwirkung und Adhäsion an der Unterseite entlang zurück an die Wand. Das Ergebnis sind die typischen dunklen Schmutzfahnen unter Fensterbänken."
+  },
+  {
+    "id": "lf15-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf15",
+    "thema": "Detailskizzen",
+    "quelle": "KMK-Rahmenlehrplan LF 15 (Detailzeichnungen)",
+    "konfidenz": "hoch",
+    "begriff": "Detailzeichnung",
+    "definition": "Ein vergrößerter Ausschnitt aus einem Bauteil, meist im Maßstab 1:5 oder 1:10, der eine konstruktiv besondere Stelle zeigt — Ecke, Abschluss oder Durchdringung — mit Schichtenfolge, Bauteilbezeichnungen und den maßgebenden Maßen.",
+    "bestandteile": ["Schichtenfolge von innen nach außen", "Bauteilbezeichnungen", "Maßgebende Maße", "Wasserführende Ebene"],
+    "erklaerung": "Bewertet wird nicht die Schönheit, sondern die Funktion: richtige Schichtenfolge, Wasser läuft nach außen ab, Hinterlüftung durchgehend, Maße eingetragen."
+  }
+]
