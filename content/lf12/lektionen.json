@@ -10,7 +10,8 @@
       "Verlegt wird auf einer tragfähigen Unterkonstruktion, meist einer Holzschalung. Der große Vorteil: Die Befestigung erfolgt indirekt über Hafte, die im Falz verschwinden — es gibt keine Löcher in der Deckfläche."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 12; Rheinzink Doppelstehfalz (Planungsunterlagen)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Doppelstehfalz und Leistendeckung im Querschnitt'><path d='M24 100 L60 100 L60 66 L72 66 L72 76 L64 76 L64 100 L110 100' fill='none' stroke='currentColor' stroke-width='2'/><path d='M24 100 L24 108 M110 100 L110 108' fill='none' stroke='currentColor' stroke-width='1'/><text x='24' y='134' fill='currentColor' font-size='10'>Doppelstehfalz</text><text x='24' y='148' fill='currentColor' font-size='8'>Falz zweimal umgelegt,</text><text x='24' y='159' fill='#c07d4a' font-size='8'>ab etwa 3° Dachneigung</text><path d='M196 100 L236 100 L236 68 L268 68 L268 100 L308 100' fill='none' stroke='currentColor' stroke-width='2'/><rect x='240' y='60' width='24' height='14' fill='none' stroke='#c07d4a' stroke-width='1.6'/><text x='272' y='58' fill='#c07d4a' font-size='8'>Holzleiste</text><line x1='268' y1='62' x2='274' y2='58' stroke='#c07d4a' stroke-width='0.8'/><text x='196' y='134' fill='currentColor' font-size='10'>Leistendeckung</text><text x='196' y='148' fill='currentColor' font-size='8'>Scharen laufen an einer</text><text x='196' y='159' fill='currentColor' font-size='8'>Leiste hoch</text><text x='24' y='36' fill='currentColor' font-size='9'>Befestigt wird indirekt über Hafte — sie liegen im Falz und sind unsichtbar.</text></svg>"
   },
   {
     "id": "lf12-l02",
@@ -24,7 +25,8 @@
       "Zusätzlich muss die Haftanzahl den Windsog aufnehmen: In Rand- und Eckbereichen wird dichter gesetzt als in der Fläche."
     ],
     "quelle": "Rheinzink Konstruktionsempfehlungen / Checkliste Falztechnik; KMK-Rahmenlehrplan LF 12",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 185' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Festhafte und Schiebehafte auf der Schar'><line x1='30' y1='60' x2='310' y2='60' stroke='currentColor' stroke-width='2.6'/><rect x='30' y='84' width='280' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='36' y='96' fill='currentColor' font-size='8'>Unterkonstruktion</text><path d='M164 84 L164 60 L176 60' fill='none' stroke='#c07d4a' stroke-width='2.6'/><text x='140' y='120' fill='#c07d4a' font-size='9'>Festhaft</text><text x='118' y='132' fill='currentColor' font-size='8'>starr — der Fixpunkt</text><line x1='160' y1='116' x2='164' y2='104' stroke='#c07d4a' stroke-width='1'/><path d='M70 84 L70 60 L82 60' fill='none' stroke='currentColor' stroke-width='2.2'/><path d='M258 84 L258 60 L270 60' fill='none' stroke='currentColor' stroke-width='2.2'/><path d='M60 44 L46 44 M280 44 L294 44' fill='none' stroke='currentColor' stroke-width='1.2'/><path d='M46 44 L52 41 M46 44 L52 47 M294 44 L288 41 M294 44 L288 47' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='40' y='34' fill='currentColor' font-size='8'>Schiebehafte lassen die Schar wandern</text><text x='40' y='152' fill='currentColor' font-size='9'>Scharlänge normal bis 10 m, mit Schwerlasthaften bis 16 m</text><text x='40' y='168' fill='currentColor' font-size='9'>(dann höchstens 30° Dachneigung). In Rand- und Eckzonen dichter setzen.</text></svg>"
   },
   {
     "id": "lf12-l03",
@@ -37,7 +39,8 @@
       "Bleibt Feuchtigkeit dauerhaft an der Rückseite stehen, bildet sich Weißrost — basisches Zinkcarbonat. Er zerstört die Zinkschicht von hinten, oft unbemerkt, bis der Schaden groß ist. Die Trennlage ist also kein Zubehör, sondern Schadensvorbeugung."
     ],
     "quelle": "Rheinzink Konstruktionsempfehlungen (Trennlagen, Weißrost)",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 175' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Strukturierte Trennlage schafft Luftraum gegen Weissrost'><line x1='30' y1='50' x2='310' y2='50' stroke='currentColor' stroke-width='2.6'/><text x='30' y='42' fill='currentColor' font-size='8'>Metalldeckung</text><path d='M34 62 Q42 52 50 62 Q58 52 66 62 Q74 52 82 62 Q90 52 98 62 Q106 52 114 62 Q122 52 130 62 Q138 52 146 62 Q154 52 162 62 Q170 52 178 62 Q186 52 194 62 Q202 52 210 62 Q218 52 226 62 Q234 52 242 62 Q250 52 258 62 Q266 52 274 62 Q282 52 290 62 Q298 52 306 62' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='30' y='66' width='280' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='36' y='78' fill='currentColor' font-size='8'>Schalung</text><text x='30' y='104' fill='#c07d4a' font-size='9'>strukturierte Trennlage — kapillarbrechender Luftraum</text><circle cx='120' cy='56' r='2.5' fill='none' stroke='currentColor' stroke-width='1'/><circle cx='200' cy='56' r='2.5' fill='none' stroke='currentColor' stroke-width='1'/><text x='30' y='128' fill='currentColor' font-size='9'>Kondensat an der Blechrückseite kann ablaufen und abtrocknen.</text><text x='30' y='150' fill='#c25f4f' font-size='9'>Bleibt es stehen, entsteht Weißrost und zerstört die Zinkschicht</text><text x='30' y='164' fill='#c25f4f' font-size='9'>von hinten — oft lange unbemerkt.</text></svg>"
   },
   {
     "id": "lf12-l04",
@@ -51,6 +54,7 @@
       "Für die Fertigung wird zuerst die Abwicklung ermittelt: die abgewickelte Zuschnittbreite aus Deckbreite plus allen Zugaben für Falze und Kantungen."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 12; Fachregeln Bauspenglerarbeiten; Europa-Lehrmittel Fachkunde Klempner/Spengler",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Kanten, Falzen, Boerdeln und Schweifen'><path d='M24 60 L64 60 L64 40' fill='none' stroke='currentColor' stroke-width='2.2'/><text x='24' y='84' fill='currentColor' font-size='9'>Kanten</text><text x='24' y='96' fill='currentColor' font-size='8'>abwinkeln</text><path d='M104 60 L136 60 L136 48 L128 48 L128 56 L144 56' fill='none' stroke='currentColor' stroke-width='2.2'/><text x='104' y='84' fill='currentColor' font-size='9'>Falzen</text><text x='104' y='96' fill='currentColor' font-size='8'>umlegen und einhaken</text><path d='M24 140 L56 140 A6 6 0 1 0 56 128' fill='none' stroke='currentColor' stroke-width='2.2'/><text x='24' y='164' fill='currentColor' font-size='9'>Bördeln</text><text x='24' y='176' fill='currentColor' font-size='8'>Rand zum Wulst</text><path d='M196 140 Q216 126 236 140 Q256 154 276 140' fill='none' stroke='currentColor' stroke-width='2.2'/><text x='196' y='164' fill='currentColor' font-size='9'>Schweifen</text><text x='196' y='176' fill='currentColor' font-size='8'>in die Rundung verformen</text><text x='196' y='60' fill='#c07d4a' font-size='9'>Abwicklung =</text><text x='196' y='74' fill='#c07d4a' font-size='9'>Deckbreite + alle Zugaben</text><text x='196' y='90' fill='currentColor' font-size='8'>für Falze und Kantungen</text><text x='24' y='28' fill='currentColor' font-size='9'>Die vier Grundtechniken am Blech</text></svg>"
   }
 ]

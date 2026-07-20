@@ -10,7 +10,8 @@
       "Als Dachdecker mauerst du vor allem kleinere Bauteile: Schornsteinköpfe, Aufkantungen und Attiken. Dabei zählt saubere Verbandsregel und ein maßhaltiger Aufbau."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3; Kalksandstein-Maurerfibel Kap. 1",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 160' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Vollziegel, Hochlochziegel und Kalksandstein im Vergleich'><rect x='24' y='46' width='76' height='48' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='24' y='112' fill='currentColor' font-size='9'>Vollziegel</text><text x='24' y='126' fill='currentColor' font-size='8'>massiv, schwer,</text><text x='24' y='137' fill='currentColor' font-size='8'>tragfähig</text><rect x='130' y='46' width='76' height='48' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M140 52 L140 88 M152 52 L152 88 M164 52 L164 88 M176 52 L176 88 M188 52 L188 88 M198 52 L198 88' fill='none' stroke='#c07d4a' stroke-width='2.4'/><text x='130' y='112' fill='currentColor' font-size='9'>Hochlochziegel</text><text x='130' y='126' fill='#c07d4a' font-size='8'>senkrechte Löcher</text><text x='130' y='137' fill='currentColor' font-size='8'>dämmen besser</text><rect x='236' y='46' width='76' height='48' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M244 60 L304 60 M244 74 L304 74 M244 88 L304 88' fill='none' stroke='currentColor' stroke-width='0.6'/><text x='236' y='112' fill='currentColor' font-size='9'>Kalksandstein</text><text x='236' y='126' fill='currentColor' font-size='8'>druckfest,</text><text x='236' y='137' fill='currentColor' font-size='8'>schalldämmend</text><text x='24' y='30' fill='currentColor' font-size='9'>Unterschieden wird nach Werkstoff und Lochung.</text></svg>"
   },
   {
     "id": "lf03-l02",
@@ -23,7 +24,8 @@
       "Man unterscheidet Richtmaß (Rastermaß mit Fuge), Nennmaß (Bauteilmaß) und Öffnungsmaß (z. B. für Türen und Fenster)."
     ],
     "quelle": "DIN 4172 Maßordnung im Hochbau; Kalksandstein-Maurerfibel Kap. 1.4",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 170' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Oktametrisches System: Raster aus 12,5 cm'><path d='M30 40 L30 110 M55 40 L55 110 M80 40 L80 110 M105 40 L105 110 M130 40 L130 110 M155 40 L155 110 M180 40 L180 110 M205 40 L205 110 M230 40 L230 110' fill='none' stroke='currentColor' stroke-width='0.6'/><path d='M30 40 L230 40 M30 65 L230 65 M30 90 L230 90 M30 110 L230 110' fill='none' stroke='currentColor' stroke-width='0.6'/><rect x='30' y='65' width='50' height='25' fill='none' stroke='#c07d4a' stroke-width='2'/><line x1='30' y1='126' x2='55' y2='126' stroke='#c07d4a' stroke-width='1.2'/><path d='M30 126 L34 123 M30 126 L34 129 M55 126 L51 123 M55 126 L51 129' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='60' y='130' fill='#c07d4a' font-size='9'>12,5 cm = 1 Achtelmeter</text><text x='240' y='58' fill='currentColor' font-size='8'>Alle Maße sind</text><text x='240' y='69' fill='currentColor' font-size='8'>Vielfache davon —</text><text x='240' y='80' fill='currentColor' font-size='8'>deshalb passen</text><text x='240' y='91' fill='currentColor' font-size='8'>Steine und Öffnungen</text><text x='240' y='102' fill='currentColor' font-size='8'>zusammen.</text><text x='30' y='154' fill='currentColor' font-size='9'>Richtmaß = mit Fuge · Nennmaß = Bauteil · Öffnungsmaß = Tür und Fenster</text></svg>"
   },
   {
     "id": "lf03-l03",
@@ -36,7 +38,8 @@
       "Merksatz: Kein Stein darf genau über der Stoßfuge des darunterliegenden Steins sitzen."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 3; DGfM Mauerwerksbau-Lehre",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Laeuferverband: Stossfugen versetzt, falsches Beispiel daneben'><rect x='20' y='50' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='80' y='50' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='20' y='70' width='30' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='50' y='70' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='110' y='70' width='30' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='20' y='90' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='80' y='90' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='20' y='128' fill='#4f9d78' font-size='10'>✓ Fugen versetzt</text><text x='20' y='144' fill='currentColor' font-size='8'>Last verteilt sich über</text><text x='20' y='155' fill='currentColor' font-size='8'>mehrere Steine</text><rect x='196' y='50' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='256' y='50' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='196' y='70' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='256' y='70' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='196' y='90' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='256' y='90' width='60' height='18' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='256' y1='48' x2='256' y2='110' stroke='#c25f4f' stroke-width='2.4'/><text x='196' y='128' fill='#c25f4f' font-size='10'>✗ Fugen übereinander</text><text x='196' y='144' fill='currentColor' font-size='8'>durchgehende Fuge —</text><text x='196' y='155' fill='currentColor' font-size='8'>hier reißt die Wand</text><text x='20' y='34' fill='currentColor' font-size='9'>Kein Stein darf genau über der Stoßfuge des darunterliegenden sitzen.</text></svg>"
   },
   {
     "id": "lf03-l04",
@@ -49,6 +52,7 @@
       "Bei Normalmörtel liegt die Regelfugendicke üblicherweise bei etwa 12 mm für die Lagerfuge und rund 10 mm für die Stoßfuge; bei Dünnbettmörtel sind es nur wenige Millimeter."
     ],
     "quelle": "DIN 1053 / DIN EN 1996 (Regelfugendicke); Kalksandstein-Maurerfibel",
-    "konfidenz": "mittel"
+    "konfidenz": "mittel",
+    "svg": "<svg viewBox='0 0 340 170' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Lagerfuge und Stossfuge im Mauerwerk'><rect x='40' y='44' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='138' y='44' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='40' y='78' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='138' y='78' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='40' y='70' width='188' height='8' fill='#c07d4a' stroke='none' opacity='0.55'/><rect x='130' y='44' width='8' height='26' fill='#c07d4a' stroke='none' opacity='0.55'/><line x1='236' y1='74' x2='262' y2='74' stroke='#c07d4a' stroke-width='1'/><text x='266' y='77' fill='#c07d4a' font-size='9'>Lagerfuge</text><text x='266' y='89' fill='currentColor' font-size='8'>waagerecht, ca. 12 mm</text><line x1='134' y1='40' x2='134' y2='26' stroke='#c07d4a' stroke-width='1'/><text x='140' y='24' fill='#c07d4a' font-size='9'>Stoßfuge</text><text x='140' y='36' fill='currentColor' font-size='8'>senkrecht, ca. 10 mm</text><text x='40' y='134' fill='currentColor' font-size='9'>Bei Dünnbettmörtel sind die Fugen deutlich dünner.</text><text x='40' y='152' fill='currentColor' font-size='9'>Der Mörtel verbindet die Steine und gleicht Maßtoleranzen aus.</text></svg>"
   }
 ]

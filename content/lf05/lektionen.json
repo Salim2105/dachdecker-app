@@ -10,7 +10,8 @@
       "Am Bau wird Holz nach Sortier- bzw. Festigkeitsklassen eingeteilt. Für tragende Teile darf nur sortiertes Bauholz mit ausreichender Tragfähigkeit eingesetzt werden."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzfachkunde",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 165' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Nadelholz und Laubholz im Vergleich'><path d='M70 108 L70 84 M58 84 L82 84 L70 66 Z M60 68 L80 68 L70 52 Z M62 54 L78 54 L70 40 Z' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='30' y='128' fill='currentColor' font-size='10'>Nadelholz</text><text x='30' y='142' fill='currentColor' font-size='8'>Fichte, Tanne, Kiefer, Lärche</text><text x='30' y='153' fill='#c07d4a' font-size='8'>leicht, gerade, gut zu bearbeiten</text><path d='M240 108 L240 82' fill='none' stroke='currentColor' stroke-width='1.6'/><circle cx='240' cy='62' r='24' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='128' fill='currentColor' font-size='10'>Laubholz</text><text x='200' y='142' fill='currentColor' font-size='8'>Eiche, Buche</text><text x='200' y='153' fill='#c07d4a' font-size='8'>schwerer, härter, dauerhafter</text><text x='30' y='28' fill='currentColor' font-size='9'>Für tragende Teile nur sortiertes Bauholz mit Festigkeitsklasse.</text></svg>"
   },
   {
     "id": "lf05-l02",
@@ -23,7 +24,8 @@
       "Die Holzfeuchte ist auch die entscheidende Größe für den Holzschutz: Dauerhaft trockenes Holz wird von Pilzen nicht befallen. Kritisch wird es, wenn Holz längere Zeit über etwa 20 % Feuchte liegt."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzfachkunde (Holzfeuchte, Fasersättigung)",
-    "konfidenz": "mittel"
+    "konfidenz": "mittel",
+    "svg": "<svg viewBox='0 0 340 170' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Holz schwindet beim Trocknen und quillt bei Feuchte'><rect x='40' y='44' width='80' height='58' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='40' y='120' fill='currentColor' font-size='9'>feucht</text><rect x='190' y='50' width='68' height='48' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='190' y='44' width='80' height='58' fill='none' stroke='currentColor' stroke-width='0.8' stroke-dasharray='4 3'/><text x='190' y='120' fill='currentColor' font-size='9'>getrocknet — geschwunden</text><path d='M136 72 L172 72' fill='none' stroke='#c07d4a' stroke-width='2'/><path d='M172 72 L164 68 M172 72 L164 76' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='132' y='62' fill='#c07d4a' font-size='9'>trocknet</text><text x='40' y='146' fill='currentColor' font-size='9'>Deshalb wird Bauholz vor dem Einbau getrocknet — sonst reißt</text><text x='40' y='160' fill='currentColor' font-size='9'>und verzieht es sich erst in der fertigen Konstruktion.</text></svg>"
   },
   {
     "id": "lf05-l03",
@@ -36,7 +38,8 @@
       "Holzschädlinge sind Pilze (z. B. Braunfäule, Echter Hausschwamm) und Insekten (z. B. Hausbock, Nagekäfer). Pilze brauchen Feuchtigkeit — wer das Holz trocken hält, hat den wichtigsten Schutz schon erledigt."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzschutz-Grundlagen",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 180' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Konstruktiver Holzschutz geht dem chemischen vor'><rect x='30' y='60' width='110' height='20' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M30 60 L140 60 L150 44 L40 44 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M60 96 L60 116 M90 96 L90 116 M120 96 L120 116' fill='none' stroke='#c07d4a' stroke-width='1.4'/><path d='M60 116 L57 110 M60 116 L63 110 M90 116 L87 110 M90 116 L93 110 M120 116 L117 110 M120 116 L123 110' fill='none' stroke='#c07d4a' stroke-width='1.4'/><text x='30' y='136' fill='#c07d4a' font-size='9'>Wasser läuft ab, Luft kommt ran</text><text x='30' y='36' fill='currentColor' font-size='10'>1. konstruktiv: trocken halten</text><rect x='210' y='52' width='60' height='38' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M228 44 L228 34 L252 34 L252 44' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='210' y='114' fill='currentColor' font-size='9'>2. chemisch — nur, wenn</text><text x='210' y='126' fill='currentColor' font-size='9'>konstruktiv nicht reicht</text><text x='210' y='36' fill='currentColor' font-size='10'>Holzschutzmittel</text><text x='30' y='162' fill='currentColor' font-size='9'>Chemie ersetzt niemals eine fehlerhafte Konstruktion.</text></svg>"
   },
   {
     "id": "lf05-l04",
@@ -49,6 +52,7 @@
       "Typische Holzverbindungen: die Kerve — ein Einschnitt, mit dem der Sparren auf der Pfette aufliegt — sowie der Versatz (Stirnversatz, Rückversatz, doppelter Versatz) am Sparrenfußpunkt. Dazu kommen Zapfen, Blattungen sowie Nägel, Schrauben und Balkenschuhe."
     ],
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Bubiza-Wiki Dachkonstruktion",
-    "konfidenz": "hoch"
+    "konfidenz": "hoch",
+    "svg": "<svg viewBox='0 0 340 190' width='320' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Sparrendach und Pfettendach im Vergleich'><path d='M24 108 L84 48 L144 108' fill='none' stroke='currentColor' stroke-width='2'/><line x1='24' y1='108' x2='144' y2='108' stroke='#c07d4a' stroke-width='2.6'/><path d='M40 122 L28 122 M128 122 L140 122' fill='none' stroke='#c07d4a' stroke-width='1.2'/><path d='M28 122 L34 119 M28 122 L34 125 M140 122 L134 119 M140 122 L134 125' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='46' y='136' fill='#c07d4a' font-size='8'>Zugband</text><text x='24' y='156' fill='currentColor' font-size='10'>Sparrendach</text><text x='24' y='170' fill='currentColor' font-size='8'>starres Dreieck, der Deckenbalken</text><text x='24' y='181' fill='currentColor' font-size='8'>nimmt den Horizontalschub auf</text><path d='M186 108 L246 48 L306 108' fill='none' stroke='currentColor' stroke-width='2'/><rect x='240' y='42' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='208' y='74' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='272' y='74' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='182' y='104' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='298' y='104' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.6'/><text x='186' y='156' fill='currentColor' font-size='10'>Pfettendach</text><text x='186' y='170' fill='#c07d4a' font-size='8'>Sparren liegen auf Fuß-, Mittel-</text><text x='186' y='181' fill='#c07d4a' font-size='8'>und Firstpfette</text></svg>"
   }
 ]
