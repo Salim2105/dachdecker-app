@@ -1,0 +1,87 @@
+[
+  {
+    "id": "wiso-l01",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "titel": "Der Berufsausbildungsvertrag",
+    "inhalt": [
+      "Grundlage deiner Ausbildung ist der Berufsausbildungsvertrag nach dem Berufsbildungsgesetz (BBiG). Er wird vor Beginn der Ausbildung abgeschlossen und muss unter anderem enthalten: Art, sachliche und zeitliche Gliederung sowie Ziel der Ausbildung, Beginn und Dauer, Ausbildungsstätte, tägliche Arbeitszeit, Dauer der Probezeit, Höhe der Vergütung, Urlaubsanspruch und die Voraussetzungen für eine Kündigung.",
+      "Der Vertrag wird bei der zuständigen Stelle — für dich die Handwerkskammer — in das Verzeichnis der Berufsausbildungsverhältnisse eingetragen. Ohne diese Eintragung wirst du nicht zur Prüfung zugelassen.",
+      "Die Probezeit beträgt mindestens einen Monat und höchstens vier Monate. Während der Probezeit können beide Seiten jederzeit ohne Einhaltung einer Frist und ohne Angabe von Gründen kündigen.",
+      "Nach der Probezeit ändert sich das grundlegend: Der Ausbildungsbetrieb kann nur noch aus einem wichtigen Grund fristlos kündigen. Du selbst kannst zusätzlich mit einer Frist von vier Wochen kündigen, wenn du die Ausbildung aufgeben oder in einem anderen Beruf ausgebildet werden willst.",
+      "Die Ausbildung im Dachdeckerhandwerk dauert drei Jahre. Bei guten Leistungen ist eine Verkürzung möglich."
+    ],
+    "quelle": "Berufsbildungsgesetz (BBiG) §§ 10–22 (Vertragsinhalt, Probezeit, Kündigung); Dachdecker-Ausbildungsverordnung",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "wiso-l02",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "titel": "Rechte und Pflichten in der Ausbildung",
+    "inhalt": [
+      "Der Vertrag verpflichtet beide Seiten. Deine Pflichten als Auszubildender: Du musst dich bemühen, die Fertigkeiten und Kenntnisse zu erwerben (Lernpflicht), den Weisungen der Ausbilder folgen, am Berufsschulunterricht und an den Prüfungen teilnehmen, die Ausbildungsnachweise führen, Werkzeug und Material sorgsam behandeln und Betriebs- und Geschäftsgeheimnisse wahren.",
+      "Die Pflichten des Ausbildungsbetriebs: Er muss dir die Fertigkeiten und Kenntnisse vermitteln, die zum Ausbildungsziel führen, dir die Ausbildungsmittel kostenlos zur Verfügung stellen, dich für Berufsschule und Prüfungen freistellen, die Vergütung zahlen und dir am Ende ein Zeugnis ausstellen. Übertragen werden dürfen nur Aufgaben, die dem Ausbildungszweck dienen und deinen Kräften angemessen sind.",
+      "Solange du unter 18 bist, gilt zusätzlich das Jugendarbeitsschutzgesetz: höchstens acht Stunden täglich und 40 Stunden wöchentlich, festgelegte Ruhepausen, gestaffelter Mindesturlaub nach Alter und die ärztliche Erstuntersuchung vor Beschäftigungsbeginn.",
+      "Der Ausbildungsnachweis — das Berichtsheft — ist kein lästiges Beiwerk: Er ist Zulassungsvoraussetzung zur Gesellenprüfung."
+    ],
+    "quelle": "Berufsbildungsgesetz (BBiG) §§ 13–16; Jugendarbeitsschutzgesetz (JArbSchG)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "wiso-l03",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "titel": "Arbeits- und Tarifrecht, SOKA-DACH",
+    "inhalt": [
+      "Tarifverträge werden zwischen Gewerkschaften und Arbeitgeberverbänden ausgehandelt — das nennt man Tarifautonomie, der Staat mischt sich nicht ein. Man unterscheidet den Lohn- oder Gehaltstarifvertrag, der die Entgelte regelt und meist kurz läuft, und den Mantel- oder Rahmentarifvertrag, der die allgemeinen Arbeitsbedingungen wie Arbeitszeit, Urlaub und Kündigungsfristen festlegt.",
+      "Es gilt das Günstigkeitsprinzip: Eine einzelvertragliche Regelung darf vom Tarifvertrag abweichen, wenn sie für den Arbeitnehmer günstiger ist. Schlechter darf sie nicht sein.",
+      "Ein Betriebsrat kann in Betrieben mit in der Regel mindestens fünf ständigen wahlberechtigten Arbeitnehmern gewählt werden. Gibt es einen Betriebsrat und mindestens fünf jugendliche Beschäftigte oder Auszubildende, kann zusätzlich eine Jugend- und Auszubildendenvertretung (JAV) gewählt werden.",
+      "Eine Besonderheit deiner Branche ist die Sozialkasse des Dachdeckerhandwerks (SOKA-DACH). Sie existiert, weil das Dachdeckerhandwerk stark saisonabhängig ist und Beschäftigte häufiger den Betrieb wechseln. Über das Urlaubskassenverfahren bleiben erworbene Urlaubsansprüche beim Wechsel des Betriebs erhalten. Dazu kommen die Förderung der Berufsausbildung und eine zusätzliche Altersversorgung. Finanziert wird das über Beiträge der Betriebe."
+    ],
+    "quelle": "Tarifvertragsgesetz; Betriebsverfassungsgesetz (BetrVG); SOKA-DACH — Aufgaben der Sozialkasse des Dachdeckerhandwerks",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "wiso-l04",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "titel": "Die fünf Zweige der Sozialversicherung",
+    "inhalt": [
+      "Die deutsche Sozialversicherung ist eine Pflichtversicherung und besteht aus fünf Zweigen: Krankenversicherung, Pflegeversicherung, Rentenversicherung, Arbeitslosenversicherung und Unfallversicherung.",
+      "Die ersten vier werden grundsätzlich je zur Hälfte von Arbeitnehmer und Arbeitgeber getragen und direkt vom Bruttolohn einbehalten. Die genauen Beitragssätze ändern sich immer wieder — prüfe für die Prüfung den aktuellen Stand, gefragt ist meist ohnehin die Systematik.",
+      "Die Ausnahme ist die gesetzliche Unfallversicherung: Ihre Beiträge trägt der Arbeitgeber allein. Zuständig ist im Bauhauptgewerbe die Berufsgenossenschaft der Bauwirtschaft (BG BAU). Sie zahlt bei Arbeitsunfällen, Wegeunfällen und Berufskrankheiten und ist außerdem für Prävention und Unfallverhütungsvorschriften zuständig — deshalb begegnet sie dir auch auf der Baustelle.",
+      "Wichtig für den Ernstfall: Ein Arbeitsunfall muss dem Betrieb sofort gemeldet werden. Der Durchgangsarzt ist aufzusuchen, damit der Unfall dokumentiert ist — sonst gibt es später Probleme mit der Anerkennung."
+    ],
+    "quelle": "Sozialgesetzbuch (SGB) — Zweige der Sozialversicherung; BG BAU (Zuständigkeit und Beitragsträgerschaft)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "wiso-l05",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "titel": "Betrieb, Verträge und Gewährleistung",
+    "inhalt": [
+      "Das Dachdeckerhandwerk ist ein zulassungspflichtiges Handwerk der Anlage A der Handwerksordnung. Wer einen Betrieb selbstständig führen will, braucht grundsätzlich den Meisterbrief und muss in die Handwerksrolle bei der Handwerkskammer eingetragen sein.",
+      "Bei den Rechtsformen unterscheidet man vor allem danach, wer wie haftet: Beim Einzelunternehmen und bei der GbR haften die Inhaber unbeschränkt mit ihrem Privatvermögen. Bei der GmbH ist die Haftung grundsätzlich auf das Gesellschaftsvermögen beschränkt, dafür sind Stammkapital und Formvorschriften zu beachten.",
+      "Wenn du ein Dach deckst, liegt kein Kaufvertrag vor, sondern ein Werkvertrag: Geschuldet ist nicht die Lieferung einer Sache, sondern die Herstellung eines mangelfreien Werks — also der Erfolg. Die Abnahme ist dabei der entscheidende Zeitpunkt: Mit ihr beginnt die Verjährungsfrist für Mängelansprüche, und die Beweislast kehrt sich um.",
+      "Für Mängelansprüche bei Bauwerken gilt nach dem BGB eine Verjährungsfrist von fünf Jahren ab Abnahme. Wird stattdessen die VOB/B vereinbart — im Bau häufig —, sind es für Bauwerke vier Jahre. Ein Klassiker in der Prüfung: Der Unterschied zwischen BGB und VOB/B ist keine Kleinigkeit, sondern ein ganzes Jahr Haftung."
+    ],
+    "quelle": "Handwerksordnung (HwO Anlage A); BGB §§ 631 ff. (Werkvertrag), § 634a (Verjährung bei Bauwerken); VOB/B § 13",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "wiso-l06",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "titel": "Wege nach der Gesellenprüfung",
+    "inhalt": [
+      "Mit der bestandenen Gesellenprüfung ist der Weg nicht zu Ende, sondern offen. Die klassische Aufstiegsfortbildung führt über den Vorarbeiter und den Werkpolier zum Dachdeckermeister.",
+      "Die Meisterprüfung besteht aus vier Teilen: Teil I Fachpraxis, Teil II Fachtheorie, Teil III der wirtschaftliche und rechtliche Teil und Teil IV die Berufs- und Arbeitspädagogik. Teil IV ist zugleich die Ausbildereignung — erst damit darfst du selbst ausbilden.",
+      "Daneben gibt es Spezialisierungen, die im Dachdeckerhandwerk gefragt sind: Solartechnik, Gründach, Abdichtungstechnik, energetische Sanierung, Arbeitssicherheit. Auch der Weg über den staatlich geprüften Techniker oder ein Studium im Bauwesen steht offen — mit Meisterbrief ist der Hochschulzugang auch ohne Abitur möglich.",
+      "Zwei Begriffe, die gern verwechselt werden: Fortbildung baut auf dem erlernten Beruf auf und vertieft oder erweitert ihn. Umschulung führt in einen anderen Beruf."
+    ],
+    "quelle": "Handwerksordnung (Meisterprüfung, vier Teile); Berufsbildungsgesetz (Fortbildung und Umschulung)",
+    "konfidenz": "hoch"
+  }
+]

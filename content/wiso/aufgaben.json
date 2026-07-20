@@ -1,0 +1,389 @@
+[
+  {
+    "id": "wiso-001",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 20 (Probezeit)",
+    "konfidenz": "hoch",
+    "frage": "Wie lang darf die Probezeit im Berufsausbildungsverhältnis sein?",
+    "optionen": [
+      "Mindestens eine Woche, höchstens einen Monat",
+      "Mindestens einen Monat, höchstens vier Monate",
+      "Immer genau sechs Monate",
+      "Sie ist frei vereinbar"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das BBiG gibt einen Rahmen vor: mindestens ein Monat, höchstens vier Monate. Innerhalb dieses Rahmens wird die Dauer im Vertrag festgelegt."
+  },
+  {
+    "id": "wiso-002",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 22 (Kündigung)",
+    "konfidenz": "hoch",
+    "frage": "Wie kann während der Probezeit gekündigt werden?",
+    "optionen": [
+      "Nur mit vier Wochen Frist",
+      "Von beiden Seiten jederzeit ohne Frist und ohne Angabe von Gründen",
+      "Nur vom Ausbildungsbetrieb",
+      "Gar nicht"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Genau dafür ist die Probezeit da: Beide Seiten prüfen, ob es passt. Nach der Probezeit kann der Betrieb nur noch aus wichtigem Grund fristlos kündigen."
+  },
+  {
+    "id": "wiso-003",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 22 (Kündigung nach der Probezeit)",
+    "konfidenz": "hoch",
+    "frage": "Du willst nach der Probezeit die Ausbildung aufgeben und etwas anderes lernen. Was gilt?",
+    "optionen": [
+      "Du kannst gar nicht kündigen",
+      "Du kannst mit einer Frist von vier Wochen kündigen",
+      "Du kannst nur fristlos kündigen",
+      "Nur der Betrieb darf kündigen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Wer die Berufsausbildung aufgeben oder sich in einem anderen Beruf ausbilden lassen will, kann mit vierwöchiger Frist kündigen. Der Betrieb hat dieses Recht nicht — er braucht einen wichtigen Grund."
+  },
+  {
+    "id": "wiso-004",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 13 (Pflichten der Auszubildenden)",
+    "konfidenz": "hoch",
+    "frage": "Warum ist der Ausbildungsnachweis (das Berichtsheft) wichtig?",
+    "optionen": [
+      "Er ersetzt die Berufsschulnoten",
+      "Er ist Zulassungsvoraussetzung zur Gesellenprüfung",
+      "Er ist freiwillig",
+      "Er ersetzt den Ausbildungsvertrag"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das Führen des Ausbildungsnachweises ist eine Pflicht nach BBiG — und ohne ordnungsgemäß geführten Nachweis wirst du nicht zur Gesellenprüfung zugelassen."
+  },
+  {
+    "id": "wiso-005",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG)",
+    "konfidenz": "hoch",
+    "frage": "Wie viele Stunden darf ein Auszubildender unter 18 Jahren höchstens täglich beschäftigt werden?",
+    "optionen": ["6 Stunden", "8 Stunden", "10 Stunden", "12 Stunden"],
+    "korrekt": [1],
+    "erklaerung": "Das Jugendarbeitsschutzgesetz erlaubt höchstens acht Stunden täglich und 40 Stunden wöchentlich. Dazu kommen feste Ruhepausen, ein nach Alter gestaffelter Mindesturlaub und die ärztliche Erstuntersuchung vor Beschäftigungsbeginn."
+  },
+  {
+    "id": "wiso-006",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB); BG BAU",
+    "konfidenz": "hoch",
+    "frage": "Wer trägt die Beiträge zur gesetzlichen Unfallversicherung?",
+    "optionen": [
+      "Arbeitnehmer und Arbeitgeber je zur Hälfte",
+      "Der Arbeitgeber allein",
+      "Der Arbeitnehmer allein",
+      "Der Staat"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Die Unfallversicherung ist die Ausnahme unter den fünf Zweigen: Sie wird allein vom Arbeitgeber getragen. Zuständig ist im Bauhauptgewerbe die BG BAU."
+  },
+  {
+    "id": "wiso-007",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB) — Zweige der Sozialversicherung",
+    "konfidenz": "hoch",
+    "frage": "Welcher Zweig gehört NICHT zur gesetzlichen Sozialversicherung?",
+    "optionen": [
+      "Pflegeversicherung",
+      "Arbeitslosenversicherung",
+      "Hausratversicherung",
+      "Rentenversicherung"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Die fünf Zweige sind Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Die Hausratversicherung ist eine private Sachversicherung."
+  },
+  {
+    "id": "wiso-008",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB § 634a; VOB/B § 13",
+    "konfidenz": "hoch",
+    "frage": "Wie lange verjähren Mängelansprüche bei Bauwerken nach BGB und nach VOB/B?",
+    "optionen": [
+      "BGB 2 Jahre, VOB/B 1 Jahr",
+      "BGB 5 Jahre, VOB/B 4 Jahre",
+      "BGB 4 Jahre, VOB/B 5 Jahre",
+      "Beide 3 Jahre"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Nach BGB fünf Jahre ab Abnahme, nach der VOB/B bei Bauwerken vier Jahre. Welche Regelung gilt, hängt davon ab, was im Vertrag vereinbart wurde — der Unterschied ist ein ganzes Jahr Haftung."
+  },
+  {
+    "id": "wiso-009",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 631 ff. (Werkvertrag)",
+    "konfidenz": "hoch",
+    "frage": "Welche Vertragsart liegt vor, wenn ein Betrieb ein Dach eindeckt?",
+    "optionen": ["Kaufvertrag", "Werkvertrag", "Mietvertrag", "Dienstvertrag"],
+    "korrekt": [1],
+    "erklaerung": "Beim Werkvertrag wird ein Erfolg geschuldet — das mangelfreie Werk. Beim Kaufvertrag wird nur eine Sache geliefert, beim Dienstvertrag nur die Tätigkeit, nicht das Ergebnis."
+  },
+  {
+    "id": "wiso-010",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Tarifvertragsgesetz (Günstigkeitsprinzip)",
+    "konfidenz": "hoch",
+    "frage": "Was besagt das Günstigkeitsprinzip?",
+    "optionen": [
+      "Der Arbeitgeber darf immer die für ihn günstigere Regelung wählen",
+      "Eine einzelvertragliche Regelung gilt, wenn sie für den Arbeitnehmer günstiger ist als der Tarifvertrag",
+      "Der Tarifvertrag gilt immer, egal was im Arbeitsvertrag steht",
+      "Es gilt immer die ältere Regelung"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Der Tarifvertrag ist die Untergrenze. Besser darf der Arbeitsvertrag sein, schlechter nicht."
+  },
+  {
+    "id": "wiso-011",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "SOKA-DACH — Aufgaben der Sozialkasse des Dachdeckerhandwerks",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient das Urlaubskassenverfahren der SOKA-DACH?",
+    "optionen": [
+      "Es zahlt das Arbeitslosengeld",
+      "Erworbene Urlaubsansprüche bleiben beim Wechsel des Betriebs erhalten",
+      "Es ersetzt die Rentenversicherung",
+      "Es finanziert die Berufsschule"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das Dachdeckerhandwerk ist stark saisonabhängig, Beschäftigte wechseln häufiger den Betrieb. Über die Sozialkasse gehen die Urlaubsansprüche dabei nicht verloren. Dazu kommen Ausbildungsförderung und zusätzliche Altersversorgung."
+  },
+  {
+    "id": "wiso-012",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Handwerksordnung (Meisterprüfung)",
+    "konfidenz": "hoch",
+    "frage": "Welcher Teil der Meisterprüfung ist zugleich die Ausbildereignung?",
+    "optionen": [
+      "Teil I — Fachpraxis",
+      "Teil II — Fachtheorie",
+      "Teil III — wirtschaftlich und rechtlich",
+      "Teil IV — Berufs- und Arbeitspädagogik"
+    ],
+    "korrekt": [3],
+    "erklaerung": "Teil IV vermittelt die berufs- und arbeitspädagogischen Kenntnisse. Erst damit darfst du selbst ausbilden."
+  },
+  {
+    "id": "wiso-013",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Handwerksordnung (HwO Anlage A)",
+    "konfidenz": "hoch",
+    "text": "Das Dachdeckerhandwerk ist ein {{zulassungspflichtiges}} Handwerk der Anlage A. Für die selbstständige Führung eines Betriebs ist grundsätzlich der {{Meisterbrief}} erforderlich.",
+    "akzeptiert": {
+      "zulassungspflichtiges": ["zulassungspflichtig", "meisterpflichtiges"],
+      "Meisterbrief": ["Meistertitel", "Meisterprüfung", "Meister"]
+    },
+    "erklaerung": "Der Betrieb wird bei der Handwerkskammer in die Handwerksrolle eingetragen. Die Anlage A umfasst die Handwerke, bei denen Gefahr für Gesundheit oder Leben besteht oder die besonders ausbildungsintensiv sind."
+  },
+  {
+    "id": "wiso-014",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Tarifvertragsgesetz; Betriebsverfassungsgesetz (BetrVG)",
+    "konfidenz": "hoch",
+    "text": "Der {{Manteltarifvertrag}} regelt die allgemeinen Arbeitsbedingungen wie Arbeitszeit und Urlaub. Ein Betriebsrat kann in Betrieben mit mindestens {{5}} ständigen wahlberechtigten Arbeitnehmern gewählt werden.",
+    "akzeptiert": {
+      "Manteltarifvertrag": ["Rahmentarifvertrag", "Mantel-Tarifvertrag", "MTV"],
+      "5": ["fünf", "5 "]
+    },
+    "erklaerung": "Der Lohn- oder Gehaltstarifvertrag regelt dagegen die Entgelte und läuft meist deutlich kürzer. Gibt es einen Betriebsrat und mindestens fünf jugendliche Beschäftigte oder Auszubildende, kann zusätzlich eine JAV gewählt werden."
+  },
+  {
+    "id": "wiso-015",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 631 ff., § 634a (Werkvertrag und Abnahme)",
+    "konfidenz": "hoch",
+    "text": "Mit der {{Abnahme}} des Werks beginnt die Verjährungsfrist für Mängelansprüche. Bei Bauwerken beträgt sie nach BGB {{5}} Jahre.",
+    "akzeptiert": { "Abnahme": ["abnahme", "Bauabnahme"], "5": ["fünf"] },
+    "erklaerung": "Die Abnahme ist der zentrale Zeitpunkt im Werkvertrag: Vergütung wird fällig, Gefahr geht über, Verjährung beginnt und die Beweislast kehrt sich um."
+  },
+  {
+    "id": "wiso-016",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Fachrechnen Wirtschaft (Angebotskalkulation)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für einen Auftrag fallen {material} € Materialkosten und {lohn} € Lohnkosten an. Darauf werden {gemein} % Gemeinkosten und anschließend {gewinn} % Gewinn aufgeschlagen. Zuletzt kommen 19 % Umsatzsteuer dazu. Wie hoch ist der Endpreis für den Kunden?",
+    "parameter": [
+      { "name": "material", "label": "Materialkosten", "einheit": "€", "min": 800, "max": 6000, "schritt": 100 },
+      { "name": "lohn", "label": "Lohnkosten", "einheit": "€", "min": 600, "max": 5000, "schritt": 100 },
+      { "name": "gemein", "label": "Gemeinkostenzuschlag", "einheit": "%", "min": 10, "max": 40, "schritt": 5 },
+      { "name": "gewinn", "label": "Gewinnzuschlag", "einheit": "%", "min": 3, "max": 15, "schritt": 1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Selbstkosten vor Zuschlägen = {material} + {lohn}",
+        "formel": "material + lohn",
+        "ergebnisName": "einzelkosten",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Selbstkosten mit Gemeinkosten = Einzelkosten · (1 + {gemein} / 100)",
+        "formel": "einzelkosten * (1 + gemein / 100)",
+        "ergebnisName": "selbstkosten",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Nettopreis = Selbstkosten · (1 + {gewinn} / 100)",
+        "formel": "selbstkosten * (1 + gewinn / 100)",
+        "ergebnisName": "netto",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Endpreis = Nettopreis · 1,19 (19 % Umsatzsteuer)",
+        "formel": "netto * 1.19",
+        "ergebnisName": "brutto",
+        "einheit": "€"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die Reihenfolge ist entscheidend: erst Gemeinkosten, dann Gewinn, ganz zuletzt die Umsatzsteuer. Die Umsatzsteuer ist kein Ertrag des Betriebs — sie wird nur eingezogen und ans Finanzamt abgeführt."
+  },
+  {
+    "id": "wiso-017",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Fachrechnen Wirtschaft (Rabatt und Skonto)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Materialrechnung lautet über {listenpreis} € netto. Der Lieferant gewährt {rabatt} % Rabatt und bei Zahlung innerhalb von 10 Tagen zusätzlich {skonto} % Skonto. Wie viel ist netto zu zahlen?",
+    "parameter": [
+      { "name": "listenpreis", "label": "Listenpreis netto", "einheit": "€", "min": 500, "max": 8000, "schritt": 100 },
+      { "name": "rabatt", "label": "Rabatt", "einheit": "%", "min": 3, "max": 20, "schritt": 1 },
+      { "name": "skonto", "label": "Skonto", "einheit": "%", "min": 1, "max": 3, "schritt": 0.5 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Zielpreis nach Rabatt = {listenpreis} · (1 − {rabatt} / 100)",
+        "formel": "listenpreis * (1 - rabatt / 100)",
+        "ergebnisName": "zielpreis",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Barpreis nach Skonto = Zielpreis · (1 − {skonto} / 100)",
+        "formel": "zielpreis * (1 - skonto / 100)",
+        "ergebnisName": "barpreis",
+        "einheit": "€"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Rabatt und Skonto werden nacheinander gerechnet, nicht addiert: Das Skonto bezieht sich auf den bereits rabattierten Zielpreis. Skonto ist ein Preisnachlass für schnelle Zahlung — Skonto zu ziehen ist für den Betrieb fast immer lohnend."
+  },
+  {
+    "id": "wiso-018",
+    "typ": "diagram",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Handwerksordnung; Berufsbildungsgesetz (Aufstiegsfortbildung)",
+    "konfidenz": "hoch",
+    "frage": "Die Stufen der beruflichen Aufstiegsfortbildung im Dachdeckerhandwerk: Benenne die markierten Stufen.",
+    "svg": "<svg viewBox='0 0 340 220' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Stufen der beruflichen Fortbildung'><line x1='14' y1='200' x2='330' y2='200' stroke='currentColor' stroke-width='1.6'/><rect x='20' y='170' width='70' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='90' y='140' width='70' height='60' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='160' y='105' width='70' height='95' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='230' y='60' width='80' height='140' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M8 196 L8 40' fill='none' stroke='currentColor' stroke-width='1'/><path d='M8 40 L5 47 M8 40 L11 47' fill='none' stroke='currentColor' stroke-width='1'/><text x='14' y='36' fill='currentColor' font-size='9'>Qualifikation</text><circle cx='55' cy='154' r='13' fill='#c07d4a'/><text x='55' y='159' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='125' cy='122' r='13' fill='#c07d4a'/><text x='125' y='127' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='195' cy='86' r='13' fill='#c07d4a'/><text x='195' y='91' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='270' cy='40' r='13' fill='#c07d4a'/><text x='270' y='45' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "geselle": "Geselle",
+      "vorarbeiter": "Vorarbeiter",
+      "werkpolier": "Werkpolier",
+      "meister": "Meister"
+    },
+    "erklaerung": "Nach der Gesellenprüfung führt der klassische Weg über Vorarbeiter und Werkpolier zum Dachdeckermeister. Der Meisterbrief berechtigt zur selbstständigen Betriebsführung, zum Ausbilden (über Teil IV) und öffnet auch ohne Abitur den Hochschulzugang."
+  },
+  {
+    "id": "wiso-019",
+    "typ": "draw",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB) — Zweige der Sozialversicherung; BG BAU",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne eine Übersicht der gesetzlichen Sozialversicherung: Trage alle Zweige ein und schreibe dazu, wer die Beiträge jeweils trägt.",
+    "vorgabeSvg": "<svg viewBox='0 0 340 190' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Vorgabe Sozialversicherung'><rect x='90' y='16' width='160' height='26' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='170' y='33' fill='currentColor' font-size='11' text-anchor='middle'>Sozialversicherung</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 340 190' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Zweige der Sozialversicherung'><rect x='90' y='16' width='160' height='26' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='170' y='33' fill='currentColor' font-size='11' text-anchor='middle'>Sozialversicherung</text><path d='M170 42 L170 56 M36 56 L304 56 M36 56 L36 72 M103 56 L103 72 M170 56 L170 72 M237 56 L237 72 M304 56 L304 72' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='5' y='72' width='62' height='40' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='72' y='72' width='62' height='40' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='139' y='72' width='62' height='40' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='206' y='72' width='62' height='40' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='273' y='72' width='62' height='40' fill='none' stroke='#c07d4a' stroke-width='1.8'/><text x='36' y='90' fill='currentColor' font-size='8' text-anchor='middle'>Kranken-</text><text x='36' y='101' fill='currentColor' font-size='8' text-anchor='middle'>versicherung</text><text x='103' y='90' fill='currentColor' font-size='8' text-anchor='middle'>Pflege-</text><text x='103' y='101' fill='currentColor' font-size='8' text-anchor='middle'>versicherung</text><text x='170' y='90' fill='currentColor' font-size='8' text-anchor='middle'>Renten-</text><text x='170' y='101' fill='currentColor' font-size='8' text-anchor='middle'>versicherung</text><text x='237' y='90' fill='currentColor' font-size='8' text-anchor='middle'>Arbeitslosen-</text><text x='237' y='101' fill='currentColor' font-size='8' text-anchor='middle'>versicherung</text><text x='304' y='90' fill='#c07d4a' font-size='8' text-anchor='middle'>Unfall-</text><text x='304' y='101' fill='#c07d4a' font-size='8' text-anchor='middle'>versicherung</text><text x='8' y='140' fill='currentColor' font-size='9'>Beiträge grundsätzlich je zur Hälfte</text><text x='8' y='152' fill='currentColor' font-size='9'>von Arbeitnehmer und Arbeitgeber</text><text x='8' y='172' fill='#c07d4a' font-size='9'>Ausnahme: Unfallversicherung trägt der Arbeitgeber allein (BG BAU)</text></svg>",
+    "schritte": [
+      "Oben einen Kasten „Sozialversicherung\" als Oberbegriff zeichnen.",
+      "Darunter die fünf Zweige als eigene Kästen anlegen: Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung.",
+      "Die Kästen mit Linien an den Oberbegriff anbinden.",
+      "Bei den ersten vier notieren: Beiträge grundsätzlich je zur Hälfte von Arbeitnehmer und Arbeitgeber.",
+      "Die Unfallversicherung hervorheben und dazuschreiben: Beiträge trägt der Arbeitgeber allein, zuständig ist die BG BAU."
+    ],
+    "erklaerung": "Genau diese Ausnahme wird in der Prüfung gern abgefragt. Merkhilfe: Der Arbeitsunfall passiert im Betrieb — also zahlt der Betrieb die Versicherung dagegen allein."
+  },
+  {
+    "id": "wiso-020",
+    "typ": "fachbegriff",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 631 ff. (Werkvertrag), § 640 (Abnahme)",
+    "konfidenz": "hoch",
+    "begriff": "Abnahme",
+    "definition": "Die Erklärung des Auftraggebers, dass er das hergestellte Werk als im Wesentlichen vertragsgemäß annimmt. Sie ist der zentrale Zeitpunkt im Werkvertrag.",
+    "bestandteile": [
+      "Vergütung wird fällig",
+      "Gefahr geht auf den Auftraggeber über",
+      "Verjährungsfrist für Mängelansprüche beginnt",
+      "Beweislast kehrt sich um"
+    ],
+    "erklaerung": "Vor der Abnahme muss der Betrieb beweisen, dass das Werk mangelfrei ist. Danach muss der Auftraggeber beweisen, dass ein Mangel vorliegt — deshalb ist die Abnahme mit Protokoll so wichtig."
+  },
+  {
+    "id": "wiso-021",
+    "typ": "fachbegriff",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Berufsbildungsgesetz (Fortbildung und Umschulung)",
+    "konfidenz": "hoch",
+    "begriff": "Fortbildung",
+    "definition": "Eine Qualifizierung, die auf dem bereits erlernten Beruf aufbaut und die beruflichen Kenntnisse und Fertigkeiten erhält, erweitert oder an neue Entwicklungen anpasst — oder zu einem beruflichen Aufstieg führt.",
+    "bestandteile": ["Anpassungsfortbildung", "Aufstiegsfortbildung (Vorarbeiter, Werkpolier, Meister)"],
+    "erklaerung": "Abzugrenzen von der Umschulung: Die führt in einen anderen Beruf, während die Fortbildung auf dem vorhandenen aufbaut."
+  },
+  {
+    "id": "wiso-022",
+    "typ": "fachbegriff",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "SOKA-DACH — Aufgaben der Sozialkasse des Dachdeckerhandwerks",
+    "konfidenz": "hoch",
+    "begriff": "SOKA-DACH",
+    "definition": "Die Sozialkasse des Dachdeckerhandwerks. Sie führt auf tarifvertraglicher Grundlage Verfahren durch, die die Saisonabhängigkeit und die häufigen Betriebswechsel in der Branche ausgleichen sollen. Finanziert wird sie über Beiträge der Betriebe.",
+    "bestandteile": [
+      "Urlaubskassenverfahren (Urlaubsansprüche bleiben beim Betriebswechsel erhalten)",
+      "Förderung der Berufsausbildung",
+      "Zusätzliche Altersversorgung"
+    ],
+    "erklaerung": "Ohne Sozialkasse würdest du bei jedem Betriebswechsel wieder bei null Urlaubsanspruch anfangen — in einer Branche mit Winterpause wäre das ein echtes Problem."
+  }
+]

@@ -33,6 +33,8 @@ import lf16Aufgaben from "@/content/lf16/aufgaben.json";
 import lf16Lektionen from "@/content/lf16/lektionen.json";
 import lf17Aufgaben from "@/content/lf17/aufgaben.json";
 import lf17Lektionen from "@/content/lf17/lektionen.json";
+import wisoAufgaben from "@/content/wiso/aufgaben.json";
+import wisoLektionen from "@/content/wiso/lektionen.json";
 import { istSichtbar, type Aufgabe, type Lektion, type Lernfeld } from "@/content/schema";
 
 // Neues Lernfeld ergänzen: oben importieren und hier eintragen.
@@ -54,6 +56,7 @@ const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
   lf15: { aufgaben: lf15Aufgaben, lektionen: lf15Lektionen },
   lf16: { aufgaben: lf16Aufgaben, lektionen: lf16Lektionen },
   lf17: { aufgaben: lf17Aufgaben, lektionen: lf17Lektionen },
+  wiso: { aufgaben: wisoAufgaben, lektionen: wisoLektionen },
 };
 
 export function filterSichtbar<T extends { konfidenz: Lektion["konfidenz"] }>(xs: T[]): T[] {
