@@ -78,7 +78,7 @@ export function McCard({
           {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        aufloesen && <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+        aufloesen && <Erklaerung text={aufgabe.erklaerung} />
       )}
     </div>
   );

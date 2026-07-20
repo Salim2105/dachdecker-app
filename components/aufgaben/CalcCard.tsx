@@ -106,7 +106,7 @@ export function CalcCard({
               ))}
             </ol>
           </div>
-          <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+          <Erklaerung text={aufgabe.erklaerung} />
         </div>
       ) : null}
     </div>

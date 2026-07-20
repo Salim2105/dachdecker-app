@@ -14,9 +14,7 @@ export function LektionCard({ lektion }: { lektion: Lektion }) {
           <p key={i}>{absatz}</p>
         ))}
       </div>
-      <p className="mt-3 text-xs" style={{ color: "var(--text-muted)" }}>
-        Quelle: {lektion.quelle}
-      </p>
+      {/* lektion.quelle bleibt in den Daten als Nachweis, wird aber nicht angezeigt. */}
     </article>
   );
 }
