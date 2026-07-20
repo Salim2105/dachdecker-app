@@ -1,0 +1,55 @@
+[
+  {
+    "id": "lf14-l01",
+    "lernfeld": "lf14",
+    "thema": "An- und Abschluesse an aufgehenden Bauteilen",
+    "titel": "Anschlüsse an aufgehende Bauteile",
+    "inhalt": [
+      "Überall dort, wo die Abdichtungsfläche auf ein aufgehendes Bauteil trifft — Attika, Wand, Lichtkuppelaufsatz — muss die Abdichtung hochgeführt und oben sicher befestigt werden.",
+      "Bei Dachneigungen bis 5° gilt eine Mindestanschlusshöhe von 15 cm über der wasserführenden Ebene. Bei steileren Dächern darf die Höhe geringer ausfallen; üblich ist dann ein Mindestmaß in der Größenordnung von 10 cm.",
+      "Wichtig ist immer: Gemessen wird ab der wasserführenden Ebene — also ab Oberkante Kies, Plattenbelag oder Begrünung, nicht ab der Abdichtung selbst. Der obere Rand wird mechanisch gesichert, zum Beispiel mit einer Klemmschiene, damit die Bahn nicht abrutscht."
+    ],
+    "quelle": "Flachdachrichtlinie / Fachregeln Abdichtungen (Anschlusshöhen); Bauder Detailkonstruktionen",
+    "konfidenz": "mittel"
+  },
+  {
+    "id": "lf14-l02",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "titel": "Durchdringungen: Gullys, Rohre, Lichtkuppeln",
+    "inhalt": [
+      "Ein Gully wird über einen Flansch an die Abdichtung angeschlossen: Beim Klemmflansch wird die Bahn zwischen Los- und Festflansch mechanisch eingeklemmt, beim Klebeflansch flächig verklebt oder verschweißt. Jede Hauptentwässerung braucht zusätzlich eine Notentwässerung.",
+      "Runde Durchdringungen wie Rohre werden mit vorgefertigten Manschetten angeschlossen. Sie sitzen dicht am Rohr und werden flächig mit der Abdichtung verbunden.",
+      "Für geometrisch schwierige Stellen — verwinkelte Attiken, Geländerstützen, dicht beieinanderstehende Rohre — eignet sich Flüssigkunststoff auf Basis von PU oder PMMA. Dabei wird ein Polyestervlies eingelegt, die Vlieszuschnitte überlappen an den Nähten mindestens 5 cm, und gearbeitet wird nass in nass in zwei Schichten ohne Lufteinschlüsse."
+    ],
+    "quelle": "Bauder Detailkonstruktionen / BauderLIQUITEC (Flüssigkunststoff); KMK-Rahmenlehrplan LF 14",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l03",
+    "lernfeld": "lf14",
+    "thema": "Drueckendes und nicht drueckendes Wasser",
+    "titel": "Drückendes und nicht drückendes Wasser",
+    "inhalt": [
+      "Bei der Bauwerksabdichtung entscheidet die Wasserbeanspruchung darüber, wie aufwendig abgedichtet werden muss.",
+      "Nicht drückendes Wasser ist Wasser, das ablaufen oder versickern kann — Bodenfeuchte und Sickerwasser in durchlässigem Boden. Es übt keinen nennenswerten Druck auf die Abdichtung aus.",
+      "Drückendes Wasser steht dagegen an: Grundwasser oder aufstauendes Sickerwasser in bindigem Boden. Es erzeugt hydrostatischen Druck, der mit der Einbindetiefe zunimmt und die Abdichtung regelrecht ins Bauwerk drückt. Hier sind deutlich höhere Anforderungen zu erfüllen.",
+      "Die falsche Einschätzung des Lastfalls ist ein klassischer, teurer Planungsfehler — ausschlaggebend sind Bodenart und Grundwasserstand."
+    ],
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen); KMK-Rahmenlehrplan LF 14",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l04",
+    "lernfeld": "lf14",
+    "thema": "Bauwerksabdichtung",
+    "titel": "Schwarze und weiße Wanne",
+    "inhalt": [
+      "Für erdberührte Bauteile gibt es zwei Grundprinzipien. Die schwarze Wanne dichtet das Bauwerk von außen mit Abdichtungsbahnen oder -massen ab — der Name kommt vom Bitumen.",
+      "Die weiße Wanne kommt ohne zusätzliche Abdichtungshaut aus: Der Beton selbst ist wasserundurchlässig (WU-Beton), die Dichtheit entsteht durch Betonrezeptur, Bauteildicke und sorgfältig ausgeführte Fugenabdichtungen.",
+      "In beiden Fällen gilt: Die Abdichtung muss vor Beschädigung geschützt werden — durch Schutzschichten und Schutzlagen vor dem Verfüllen der Baugrube. Eine beschädigte Abdichtung ist im eingebauten Zustand praktisch nicht mehr reparierbar."
+    ],
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen); KMK-Rahmenlehrplan LF 14",
+    "konfidenz": "hoch"
+  }
+]

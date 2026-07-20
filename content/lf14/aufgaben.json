@@ -1,0 +1,245 @@
+[
+  {
+    "id": "lf14-001",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Drueckendes und nicht drueckendes Wasser",
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man unter drückendem Wasser?",
+    "optionen": [
+      "Regenwasser, das auf das Dach fällt",
+      "Wasser, das ablaufen oder versickern kann",
+      "Anstehendes Grundwasser oder aufstauendes Sickerwasser mit hydrostatischem Druck",
+      "Kondenswasser im Bauteil"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Drückendes Wasser steht am Bauwerk an und erzeugt hydrostatischen Druck, der mit der Einbindetiefe zunimmt. Nicht drückendes Wasser (Bodenfeuchte, versickerndes Sickerwasser) kann dagegen ablaufen."
+  },
+  {
+    "id": "lf14-002",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Anschlusshoehen",
+    "quelle": "Flachdachrichtlinie / Fachregeln Abdichtungen",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Ebene wird die Anschlusshöhe an einem aufgehenden Bauteil gemessen?",
+    "optionen": [
+      "Ab Oberkante der Abdichtung",
+      "Ab der wasserführenden Ebene (z. B. Oberkante Kies oder Belag)",
+      "Ab Oberkante Tragschale",
+      "Ab Unterkante Dämmung"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Gemessen wird immer ab der wasserführenden Ebene — also ab Oberkante Kies, Plattenbelag oder Begrünung. Wer ab der Abdichtung misst, baut den Anschluss zu niedrig."
+  },
+  {
+    "id": "lf14-003",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "quelle": "Bauder Detailkonstruktionen (Gullyanschluss)",
+    "konfidenz": "hoch",
+    "frage": "Wie wird ein Gully an die Abdichtung angeschlossen?",
+    "optionen": [
+      "Nur mit Silikon abgedichtet",
+      "Über einen Klemm- oder Klebeflansch",
+      "Er wird lose eingelegt",
+      "Mit Mörtel eingesetzt"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Beim Klemmflansch wird die Bahn zwischen Los- und Festflansch mechanisch eingeklemmt, beim Klebeflansch flächig verklebt oder verschweißt. Zusätzlich ist immer eine Notentwässerung erforderlich."
+  },
+  {
+    "id": "lf14-004",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "quelle": "BauderLIQUITEC (Flüssigkunststoff)",
+    "konfidenz": "hoch",
+    "frage": "Wofür eignet sich Flüssigkunststoff besonders?",
+    "optionen": [
+      "Für große, ebene Dachflächen",
+      "Für geometrisch schwierige Durchdringungen und verwinkelte Details",
+      "Als Ersatz für die Wärmedämmung",
+      "Zum Verkleben von Dachziegeln"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Flüssigkunststoff (PU oder PMMA) lässt sich um jede Geometrie führen — Geländerstützen, verwinkelte Attiken, eng stehende Rohre. Für große Flächen sind Bahnen wirtschaftlicher."
+  },
+  {
+    "id": "lf14-005",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "quelle": "BauderLIQUITEC (Verarbeitung Flüssigkunststoff)",
+    "konfidenz": "hoch",
+    "frage": "Wie stark müssen die Vlieszuschnitte beim Flüssigkunststoff an den Nähten überlappen?",
+    "optionen": ["mindestens 2 cm", "mindestens 5 cm", "mindestens 10 cm", "gar nicht"],
+    "korrekt": [1],
+    "erklaerung": "Die Überlappung beträgt mindestens 5 cm. Gearbeitet wird nass in nass in zwei Schichten, ohne Lufteinschlüsse — nur so entsteht eine durchgehend rissüberbrückende Schicht."
+  },
+  {
+    "id": "lf14-006",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Bauwerksabdichtung",
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "frage": "Was kennzeichnet eine weiße Wanne?",
+    "optionen": [
+      "Eine Abdichtung aus Bitumenbahnen von außen",
+      "Wasserundurchlässiger Beton ohne zusätzliche Abdichtungshaut",
+      "Ein weißer Schutzanstrich",
+      "Eine Dränschicht vor der Wand"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Bei der weißen Wanne ist der Beton selbst wasserundurchlässig (WU-Beton). Die Dichtheit entsteht über Rezeptur, Bauteildicke und sorgfältige Fugenabdichtung. Die schwarze Wanne dichtet dagegen von außen mit Bahnen ab."
+  },
+  {
+    "id": "lf14-007",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Bauwerksabdichtung",
+    "quelle": "Bauwerksabdichtung (Schutzschichten)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird die Bauwerksabdichtung vor dem Verfüllen der Baugrube geschützt?",
+    "optionen": [
+      "Damit sie schneller trocknet",
+      "Weil sie im eingebauten Zustand praktisch nicht mehr reparierbar ist",
+      "Damit sie besser aussieht",
+      "Um Material zu sparen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Beim Verfüllen können Steine und Geräte die Abdichtung beschädigen. Ist sie einmal verfüllt, kommt man nicht mehr heran — deshalb sind Schutzschichten und Schutzlagen Pflicht."
+  },
+  {
+    "id": "lf14-008",
+    "typ": "cloze",
+    "lernfeld": "lf14",
+    "thema": "Drueckendes und nicht drueckendes Wasser",
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "text": "Bodenfeuchte und versickerndes Wasser zählen zum {{nicht drückenden}} Wasser. Grundwasser erzeugt dagegen {{hydrostatischen}} Druck.",
+    "akzeptiert": {
+      "nicht drückenden": ["nicht drueckenden", "nichtdrückenden"],
+      "hydrostatischen": ["hydrostatischer", "Wasserdruck"]
+    },
+    "erklaerung": "Entscheidend sind Bodenart und Grundwasserstand. In bindigem Boden kann sich Sickerwasser aufstauen — dann liegt trotz fehlendem Grundwasser drückendes Wasser vor."
+  },
+  {
+    "id": "lf14-009",
+    "typ": "cloze",
+    "lernfeld": "lf14",
+    "thema": "An- und Abschluesse an aufgehenden Bauteilen",
+    "quelle": "Flachdachrichtlinie / Fachregeln Abdichtungen",
+    "konfidenz": "hoch",
+    "text": "Bei Dachneigungen bis 5° beträgt die Mindestanschlusshöhe {{15}} cm. Der obere Rand wird mechanisch gesichert, zum Beispiel mit einer {{Klemmschiene}}.",
+    "akzeptiert": { "15": ["15cm"], "Klemmschiene": ["Klemmleiste", "Schiene"] },
+    "erklaerung": "Ohne mechanische Sicherung rutscht die hochgeführte Bahn mit der Zeit ab. Gemessen wird ab der wasserführenden Ebene."
+  },
+  {
+    "id": "lf14-010",
+    "typ": "calc",
+    "lernfeld": "lf14",
+    "thema": "An- und Abschluesse an aufgehenden Bauteilen",
+    "quelle": "Fachrechnen Dachdeckerhandwerk (Materialbedarf Anschlüsse)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Attika hat einen Umfang von {umfang} m. Die Abdichtung wird {hoehe} m hochgeführt. Wie groß ist die zusätzliche Abdichtungsfläche für den Anschluss?",
+    "parameter": [
+      { "name": "umfang", "label": "Attika-Umfang", "einheit": "m", "min": 20, "max": 80, "schritt": 2 },
+      { "name": "hoehe", "label": "Anschlusshöhe", "einheit": "m", "min": 0.15, "max": 0.5, "schritt": 0.05 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anschlussfläche = Umfang · Anschlusshöhe = {umfang} · {hoehe}",
+        "formel": "umfang * hoehe",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die Anschlussfläche wird bei der Materialermittlung gern vergessen. Bei langen Attiken kommen so schnell zweistellige Quadratmeterzahlen zusammen — plus Zuschlag für Überdeckungen."
+  },
+  {
+    "id": "lf14-011",
+    "typ": "calc",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "quelle": "Fachrechnen Dachentwässerung (Gullyanzahl)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Dachfläche fällt ein Regenwasserabfluss von {q} l/s an. Ein Gully hat eine Ablaufleistung von {leistung} l/s. Wie viele Gullys werden mindestens benötigt (aufgerundet)?",
+    "parameter": [
+      { "name": "q", "label": "Regenwasserabfluss", "einheit": "l/s", "min": 4, "max": 20, "schritt": 1 },
+      { "name": "leistung", "label": "Leistung je Gully", "einheit": "l/s", "min": 3, "max": 8, "schritt": 1 }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anzahl = Abfluss / Leistung je Gully, aufgerundet = {q} / {leistung}",
+        "formel": "ceil(q / leistung)",
+        "ergebnisName": "gullys",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Aufgerundet wird immer. Zusätzlich gilt: Jede Hauptentwässerung braucht eine Notentwässerung — die wird getrennt bemessen und zählt hier nicht mit."
+  },
+  {
+    "id": "lf14-012",
+    "typ": "diagram",
+    "lernfeld": "lf14",
+    "thema": "An- und Abschluesse an aufgehenden Bauteilen",
+    "quelle": "Bauder Detailkonstruktionen (Attikaanschluss)",
+    "konfidenz": "hoch",
+    "frage": "Attikaanschluss im Schnitt: Benenne die markierten Bauteile.",
+    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Attikaanschluss im Schnitt'><line x1='30' y1='150' x2='210' y2='150' stroke='currentColor' stroke-width='1.6'/><rect x='210' y='50' width='40' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M30 144 L204 144 L204 84' fill='none' stroke='#c07d4a' stroke-width='2.4'/><rect x='198' y='76' width='14' height='8' fill='none' stroke='#c07d4a' stroke-width='1.6'/><path d='M202 50 L258 50 L258 60' fill='none' stroke='currentColor' stroke-width='2'/><line x1='170' y1='144' x2='170' y2='84' stroke='currentColor' stroke-width='0.9'/><path d='M170 144 L167 138 M170 144 L173 138 M170 84 L167 90 M170 84 L173 90' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='118' y='112' fill='currentColor' font-size='10'>≥ 15 cm</text><line x1='90' y1='142' x2='90' y2='118' stroke='#c07d4a' stroke-width='1.2'/><circle cx='90' cy='106' r='12' fill='#c07d4a'/><text x='90' y='111' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='212' y1='78' x2='250' y2='96' stroke='#c07d4a' stroke-width='1.2'/><circle cx='264' cy='102' r='12' fill='#c07d4a'/><text x='264' y='107' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='46' x2='268' y2='30' stroke='#c07d4a' stroke-width='1.2'/><circle cx='282' cy='24' r='12' fill='#c07d4a'/><text x='282' y='29' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='230' y1='152' x2='262' y2='170' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='176' r='12' fill='#c07d4a'/><text x='276' y='181' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "abdichtung": "Abdichtung",
+      "klemmschiene": "Klemmschiene",
+      "attikaabdeckung": "Attikaabdeckung",
+      "attika": "Attika"
+    },
+    "erklaerung": "1 ist die Abdichtung, die mindestens 15 cm hochgeführt wird. 2 ist die Klemmschiene als mechanische Sicherung, 3 die Attikaabdeckung (Blech mit Gefälle nach innen) und 4 die Attika selbst."
+  },
+  {
+    "id": "lf14-013",
+    "typ": "draw",
+    "lernfeld": "lf14",
+    "thema": "Durchdringungen",
+    "quelle": "Bauder Detailkonstruktionen (Rohrdurchdringung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Anschluss einer runden Rohrdurchdringung an die Flachdachabdichtung im Schnitt. Ergänze die Manschette und trage die Höhe ein, bis zu der sie am Rohr hochgeführt wird.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dachflaeche mit Rohr'><line x1='30' y1='150' x2='290' y2='150' stroke='currentColor' stroke-width='1.6'/><rect x='146' y='50' width='28' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Musterloesung Rohrdurchdringung'><line x1='30' y1='150' x2='290' y2='150' stroke='currentColor' stroke-width='1.6'/><rect x='146' y='50' width='28' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M30 144 L120 144 L142 100 L142 84' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M290 144 L200 144 L178 100 L178 84' fill='none' stroke='#c07d4a' stroke-width='2.4'/><rect x='138' y='78' width='44' height='7' fill='none' stroke='#c07d4a' stroke-width='1.6'/><line x1='108' y1='144' x2='108' y2='84' stroke='currentColor' stroke-width='0.9'/><path d='M108 144 L105 138 M108 144 L111 138 M108 84 L105 90 M108 84 L111 90' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='56' y='112' fill='currentColor' font-size='10'>≥ 15 cm</text><text x='196' y='72' fill='#c07d4a' font-size='9'>Schelle / Klemmung</text><text x='196' y='128' fill='#c07d4a' font-size='9'>Manschette</text><text x='150' y='176' fill='currentColor' font-size='9' text-anchor='middle'>Rohr</text></svg>",
+    "schritte": [
+      "Die Abdichtung der Dachfläche bis an das Rohr heranführen.",
+      "Die Manschette flächig mit der Dachabdichtung verbinden — sie muss rundum dicht anschließen.",
+      "Die Manschette am Rohr hochführen: Auch hier gilt die Mindestanschlusshöhe über der wasserführenden Ebene.",
+      "Den oberen Rand mit einer Schelle klemmen, damit die Manschette dicht am Rohr anliegt.",
+      "Höhe bemaßen und die Bauteile beschriften."
+    ],
+    "erklaerung": "Runde Durchdringungen sind Schwachstellen, weil die Bahn dort nicht flach liegen kann. Vorgefertigte Manschetten lösen das sauber. Bei mehreren eng stehenden Rohren ist Flüssigkunststoff oft die bessere Wahl."
+  },
+  {
+    "id": "lf14-014",
+    "typ": "fachbegriff",
+    "lernfeld": "lf14",
+    "thema": "Drueckendes und nicht drueckendes Wasser",
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "begriff": "Drückendes Wasser",
+    "definition": "Anstehendes Grundwasser oder aufstauendes Sickerwasser, das hydrostatischen Druck auf die Abdichtung ausübt. Der Druck nimmt mit der Einbindetiefe zu und erfordert deutlich höhere Anforderungen an die Abdichtung.",
+    "erklaerung": "Gegenteil: nicht drückendes Wasser (Bodenfeuchte, versickerndes Sickerwasser) — es kann ablaufen und drückt nicht."
+  },
+  {
+    "id": "lf14-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf14",
+    "thema": "Bauwerksabdichtung",
+    "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen)",
+    "konfidenz": "hoch",
+    "begriff": "Weiße Wanne",
+    "definition": "Ein erdberührtes Bauwerk aus wasserundurchlässigem Beton (WU-Beton) ohne zusätzliche Abdichtungshaut. Die Dichtheit entsteht durch Betonrezeptur, Bauteildicke und sorgfältig ausgeführte Fugenabdichtungen.",
+    "erklaerung": "Gegenstück ist die schwarze Wanne — sie dichtet von außen mit Bahnen oder Massen ab (der Name kommt vom Bitumen)."
+  }
+]
