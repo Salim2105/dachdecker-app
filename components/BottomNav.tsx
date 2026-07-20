@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 const ITEMS = [
   { href: "/", label: "Start", icon: "M3 11l9-8 9 8M5 10v10h14V10" },
   { href: "/lernen", label: "Lernen", icon: "M4 5h16v14H4zM4 9h16M9 5v14" },
+  { href: "/zeichnen", label: "Zeichnen", icon: "M3 21l4-1 11-11a2 2 0 00-3-3L4 17l-1 4zM14 5l3 3" },
   { href: "/pruefung", label: "Prüfung", icon: "M12 7v5l3 2M12 21a9 9 0 100-18 9 9 0 000 18" },
   { href: "/rechner", label: "Rechner", icon: "M6 3h12v18H6zM9 7h6M8 11h1m3 0h1m3 0h1M8 15h1m3 0h1m3 0h1" },
   { href: "/fortschritt", label: "Fortschritt", icon: "M4 20V10M10 20V4M16 20v-8M22 20H2" },
@@ -31,12 +32,12 @@ export function BottomNav() {
             key={item.href}
             href={item.href}
             aria-current={active ? "page" : undefined}
-            className="flex min-h-[56px] flex-1 flex-col items-center justify-center gap-1 pt-2 text-xs"
+            className="flex min-h-[56px] flex-1 flex-col items-center justify-center gap-1 px-0.5 pt-2 text-[10px] leading-tight"
             style={{ color: active ? "var(--accent)" : "var(--text-muted)" }}
           >
             <svg
-              width="22"
-              height="22"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"

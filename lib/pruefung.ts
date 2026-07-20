@@ -60,11 +60,11 @@ export function poolFuer(teil: Pruefungsteil): Aufgabe[] {
   return teil.lernfelder.flatMap((id) => getAufgaben(id)).filter(istAutoBewertbar);
 }
 
-export function zieheAufgaben(
-  pool: Aufgabe[],
+export function zieheAufgaben<T>(
+  pool: T[],
   anzahl: number,
   zufall: () => number = Math.random,
-): Aufgabe[] {
+): T[] {
   const a = [...pool];
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(zufall() * (i + 1));
