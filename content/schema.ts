@@ -86,6 +86,16 @@ export type Aufgabe =
   | DrawAufgabe
   | FachbegriffAufgabe;
 
+/**
+ * Eigenes Foto aus der Praxis. Liegt unter public/fotos/ und ist damit
+ * automatisch im Offline-Cache. Nur selbst aufgenommene Bilder verwenden.
+ */
+export interface Foto {
+  datei: string; // Dateiname in public/fotos, z. B. "lf09-kehle.jpg"
+  alt: string; // was zu sehen ist — auch für Screenreader
+  bildunterschrift?: string; // worauf man achten soll
+}
+
 export interface Lektion {
   id: string; // "lf01-l01"
   lernfeld: string;
@@ -93,6 +103,7 @@ export interface Lektion {
   titel: string;
   inhalt: string[]; // Absätze (Eigenformulierung)
   svg?: string; // eigene Illustration, inline SVG-Markup
+  fotos?: Foto[]; // eigene Praxisfotos
   quelle: string;
   konfidenz: Konfidenz;
 }

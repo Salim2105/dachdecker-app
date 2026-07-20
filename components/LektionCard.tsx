@@ -1,5 +1,6 @@
 import type { Lektion } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
+import { FotoStrecke } from "@/components/FotoStrecke";
 
 export function LektionCard({ lektion }: { lektion: Lektion }) {
   return (
@@ -9,6 +10,7 @@ export function LektionCard({ lektion }: { lektion: Lektion }) {
     >
       <h3 className="font-medium">{lektion.titel}</h3>
       {lektion.svg && <SafeSvg markup={lektion.svg} className="my-3 flex justify-center" />}
+      {lektion.fotos && <FotoStrecke fotos={lektion.fotos} />}
       <div className="mt-2 flex flex-col gap-2 text-sm leading-relaxed" style={{ color: "var(--text)" }}>
         {lektion.inhalt.map((absatz, i) => (
           <p key={i}>{absatz}</p>

@@ -2,7 +2,8 @@
 // die enthaltenen SVGs als PNG zur Sichtprüfung (dunkles Theme simuliert).
 // Aufruf: node scripts/verify-lf.mjs lf03 [ausgabeordner]
 import sharp from "sharp";
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
+import { join } from "node:path";
 
 const lf = process.argv[2];
 const OUT = process.argv[3] ?? ".";
@@ -102,6 +103,16 @@ const typen = [...new Set(aufgaben.map((a) => a.typ))];
 console.log(`${lf}: ${aufgaben.length} Aufgaben, ${lektionen.length} Lektionen`);
 console.log(`Typen: ${typen.join(", ")}`);
 console.log(`Konfidenz: ${[...new Set([...aufgaben, ...lektionen].map((x) => x.konfidenz))].join(", ")}`);
+
+// Fotos: referenzierte Dateien müssen wirklich existieren
+for (const l of lektionen) {
+  for (const foto of l.fotos ?? []) {
+    if (!existsSync(join("public/fotos", foto.datei))) {
+      fehler.push(`${l.id}: Foto "${foto.datei}" fehlt in public/fotos`);
+    }
+    if (!foto.alt) fehler.push(`${l.id}: Foto "${foto.datei}" ohne alt-Text`);
+  }
+}
 
 // SVGs rendern
 const svgs = [];
