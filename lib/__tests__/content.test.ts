@@ -20,3 +20,19 @@ describe("content loading", () => {
     expect(getAufgaben("lf01").every((a) => a.konfidenz !== "pruefen")).toBe(true);
   });
 });
+
+describe("Lückentext-Antworten", () => {
+  it("jede Antwort mit Umlaut hat eine Alternative ohne Umlaut", () => {
+    // Sonst kommt niemand weiter, der auf dem Tablet ohne Umlaute tippt.
+    for (const lf of getLernfelder()) {
+      for (const a of getAufgaben(lf.id)) {
+        if (a.typ !== "cloze") continue;
+        for (const [antwort, alternativen] of Object.entries(a.akzeptiert ?? {})) {
+          if (!/[äöüß]/.test(antwort)) continue;
+          const hatAscii = alternativen.some((alt) => /ae|oe|ue|ss/i.test(alt));
+          expect(hatAscii, `${a.id}: "${antwort}" ohne ASCII-Alternative`).toBe(true);
+        }
+      }
+    }
+  });
+});

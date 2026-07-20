@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
+import { Wiederholung } from "@/components/session/Wiederholung";
 import { useProgress } from "@/components/useProgress";
 import { getLernfeld } from "@/lib/content";
 import {
@@ -62,13 +62,7 @@ export function PruefungRunner() {
 
   // ---------- Nachbereitung: falsche Aufgaben mit voller Auflösung ----------
   if (nachbereitung) {
-    return (
-      <Wiederholung
-        aufgaben={nachbereitung}
-        onFertig={zurueck}
-        onBewerte={bewerte}
-      />
-    );
+    return <Wiederholung aufgaben={nachbereitung} titel="Nachbereitung" onFertig={zurueck} />;
   }
 
   // ---------- Auswahl ----------
@@ -287,66 +281,6 @@ export function PruefungRunner() {
       >
         Vorzeitig abgeben
       </button>
-    </div>
-  );
-}
-
-function Wiederholung({
-  aufgaben,
-  onFertig,
-  onBewerte,
-}: {
-  aufgaben: Aufgabe[];
-  onFertig: () => void;
-  onBewerte: (id: string, b: Bewertung) => void;
-}) {
-  const [index, setIndex] = useState(0);
-  const [beantwortet, setBeantwortet] = useState(false);
-  const aktuell = aufgaben[index];
-
-  return (
-    <div>
-      <div className="mb-4 flex items-center justify-between">
-        <span className="text-sm font-medium">Nachbereitung</span>
-        <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-          {index + 1} / {aufgaben.length}
-        </span>
-      </div>
-
-      <AufgabeSwitch
-        key={aktuell.id}
-        aufgabe={aktuell}
-        onErgebnis={(b) => {
-          setBeantwortet(true);
-          onBewerte(aktuell.id, b);
-        }}
-      />
-
-      {beantwortet && (
-        <button
-          onClick={() => {
-            if (index < aufgaben.length - 1) {
-              setIndex((i) => i + 1);
-              setBeantwortet(false);
-            } else {
-              onFertig();
-            }
-          }}
-          className="mt-6 w-full rounded-xl py-3 font-medium"
-          style={{ background: "var(--accent)", color: "var(--accent-text)" }}
-        >
-          {index < aufgaben.length - 1 ? "Weiter" : "Fertig"}
-        </button>
-      )}
-
-      <Link
-        href="/pruefung"
-        onClick={onFertig}
-        className="mt-3 block w-full rounded-xl py-2 text-center text-sm"
-        style={{ color: "var(--text-muted)" }}
-      >
-        Abbrechen
-      </Link>
     </div>
   );
 }

@@ -30,6 +30,16 @@ export function speichereBewertung(aufgabeId: string, bewertung: Bewertung) {
   localStorage.setItem(KEY, JSON.stringify(all));
 }
 
+export function loescheFortschritt() {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(KEY);
+}
+
+/** Fällig sind nur Aufgaben, die schon einmal bearbeitet wurden. */
+export function istFaellig(f: AufgabenFortschritt | undefined, jetzt: number): boolean {
+  return f !== undefined && f.faelligAm <= jetzt;
+}
+
 export function lernfeldFortschritt(_lfId: string, aufgabeIds: string[]): number {
   if (aufgabeIds.length === 0) return 0;
   const all = ladeFortschritt();
