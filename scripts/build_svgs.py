@@ -1670,6 +1670,343 @@ def _():
     return f.render()
 
 
+# ======================================================================
+# ZEICHEN-AUFGABEN (vorgabeSvg = Gerüst, loesungSvg = Musterlösung)
+# ======================================================================
+DRAW = {}
+
+
+def draw(did):
+    def deco(fn):
+        DRAW[did] = fn
+        return fn
+    return deco
+
+
+def _fig(aria):
+    return Fig(aria, width=380)
+
+
+@draw("lf01-007")
+def _():
+    def base(f):
+        f.rect(18, 16, 344, 150, sw=1, dash="5 4")
+        f.rect(150, 60, 96, 54, sw=1.6)
+        f.label(160, 90, "Rohbau", size=11)
+    v = _fig("Rohbau auf dem Grundstück (Vorgabe)"); base(v); v.set_art_height(176)
+    l = _fig("Musterlösung Baustelleneinrichtungsplan"); base(l)
+    l.circle(300, 56, 10, color=ACCENT); l.line(300, 46, 300, 66, w=1.4, color=ACCENT); l.line(290, 56, 310, 56, w=1.4, color=ACCENT)
+    l.label(286, 90, "Kran", size=11, color=ACCENT)
+    l.rect(44, 40, 56, 24); l.label(50, 56, "Lager", size=10)
+    l.rect(44, 100, 56, 24); l.label(50, 116, "Bauwagen", size=10)
+    l.path("M300 118 L340 118 L340 152", w=1.4, color=ACCENT); l.label(300, 140, "Zufahrt", size=10, color=ACCENT)
+    l.set_art_height(176)
+    l.caption("Kurze Wege: Lager im Schwenkbereich des Krans.", color=ACCENT)
+    return v.render(), l.render()
+
+
+@draw("lf02-011")
+def _():
+    def wall(f):
+        f.rect(90, 110, 200, 40, sw=1.8); f.label(150, 134, "Hauswand", size=11)
+    v = _fig("Hauswand (Vorgabe)"); wall(v); v.set_art_height(160)
+    l = _fig("Musterlösung Satteldach in der Giebelansicht"); wall(l)
+    l.poly([(90, 110), (190, 50), (290, 110)], w=2)
+    l.path("M114 110 A24 24 0 0 0 110 96", w=1.2, color=ACCENT); l.label(120, 106, "α", size=12, color=ACCENT)
+    l.label(190, 42, "First", size=12, anchor="middle")
+    l.label(40, 96, "Ortgang", size=11); l.line(88, 92, 108, 82, w=0.8)
+    l.label(296, 118, "Traufe", size=11)
+    l.set_art_height(160)
+    return v.render(), l.render()
+
+
+@draw("lf03-011")
+def _():
+    def wall(f):
+        f.rect(60, 44, 240, 84, sw=1.4, dash="5 4")
+    v = _fig("Leere Wandfläche (Vorgabe)"); wall(v); v.set_art_height(140)
+    l = _fig("Musterlösung Läuferverband, vier Schichten")
+    rows = [0, 30, 0, 30]
+    y = 44
+    for off in rows:
+        x = 60
+        if off:
+            l.rect(60, y, 30, 20, sw=1.4)
+            x = 90
+            while x < 300:
+                l.rect(x, y, min(60, 300 - x), 20, sw=1.4); x += 60
+        else:
+            x = 60
+            while x < 300:
+                l.rect(x, y, 60, 20, sw=1.4); x += 60
+        y += 21
+    l.set_art_height(140)
+    l.caption("Kein Stein sitzt über der Stoßfuge des darunterliegenden.", color=ACCENT)
+    return v.render(), l.render()
+
+
+@draw("lf04-012")
+def _():
+    def base(f):
+        f.rect(60, 50, 260, 40, sw=1.8)
+        f.poly([(60, 98), (72, 110), (48, 110)], w=1.4); f.poly([(320, 98), (332, 110), (308, 110)], w=1.4)
+        for ax in (140, 190, 240):
+            f.arrow(ax, 30, ax, 48, w=1.3)
+    v = _fig("Träger auf zwei Auflagern, belastet (Vorgabe)"); base(v); v.set_art_height(124)
+    l = _fig("Musterlösung: Druckzone, Zugzone, Bewehrung"); base(l)
+    l.path("M66 90 Q190 104 314 90", w=1, dash="4 3")
+    l.line(72, 78, 308, 78, w=2.6, color=ACCENT)
+    l.label(150, 66, "Druckzone oben", size=11)
+    l.label(150, 86, "Zugzone unten", size=11, color=ACCENT)
+    l.set_art_height(124)
+    l.caption("Die Bewehrung liegt unten, wo der Träger gedehnt wird.")
+    return v.render(), l.render()
+
+
+@draw("lf05-012")
+def _():
+    def base(f):
+        f.line(30, 140, 200, 140, w=1)
+    v = _fig("Grundlinie (Vorgabe)"); base(v); v.set_art_height(150)
+    l = _fig("Musterlösung Sparrendach im Schnitt"); base(l)
+    l.poly([(40, 130), (115, 60), (190, 130)], w=2)
+    l.line(40, 130, 190, 130, w=2.6, color=ACCENT)
+    l.arrow(56, 142, 34, 142, w=1.2, color=ACCENT); l.arrow(174, 142, 196, 142, w=1.2, color=ACCENT)
+    l.label(70, 122, "Deckenbalken = Zugband", size=11, color=ACCENT)
+    l.set_art_height(150)
+    return v.render(), l.render()
+
+
+@draw("lf06-012")
+def _():
+    def spar(f):
+        f.rect(150, 40, 30, 120, sw=1.8); f.label(150, 30, "Sparren", size=11)
+    v = _fig("Sparren im Querschnitt (Vorgabe)"); spar(v); v.set_art_height(170)
+    l = _fig("Musterlösung: drei Dämmlagen"); spar(l)
+    l.fillrect(150, 24, 90, 16, color=ACCENT, opacity="0.2"); l.rect(150, 24, 90, 16, sw=1.2, dash="4 3")
+    l.fillrect(180, 40, 60, 120, color=ACCENT, opacity="0.2"); l.rect(180, 40, 60, 120, sw=1.2, dash="4 3")
+    l.fillrect(150, 160, 90, 14, color=ACCENT, opacity="0.2"); l.rect(150, 160, 90, 14, sw=1.2, dash="4 3")
+    l.label(246, 34, "Aufsparren", size=11)
+    l.label(246, 104, "Zwischensparren", size=11, color=ACCENT)
+    l.label(246, 170, "Untersparren", size=11)
+    l.set_art_height(184)
+    return v.render(), l.render()
+
+
+@draw("lf07-011")
+def _():
+    def base(f):
+        f.line(40, 44, 210, 116, w=2); f.label(46, 40, "Sparren/Dachfläche", size=11)
+    v = _fig("Dachfläche am Traufbereich (Vorgabe)"); base(v); v.set_art_height(150)
+    l = _fig("Musterlösung Traufe mit Rinne"); base(l)
+    l.path("M190 126 A22 22 0 0 0 234 126", w=2.2); l.line(190, 126, 190, 116, w=2.2); l.line(234, 126, 234, 120, w=2.2)
+    l.arrow(210, 118, 214, 132, w=1.4, color=ACCENT)
+    l.path("M150 144 Q170 144 178 128 L198 114", w=1.6, color=ACCENT)
+    l.label(120, 158, "Rinnenhalter", size=11, color=ACCENT); l.line(150, 150, 168, 138, w=0.8, color=ACCENT)
+    l.label(244, 128, "Rinne", size=11)
+    l.set_art_height(172)
+    return v.render(), l.render()
+
+
+@draw("lf08-012")
+def _():
+    l = _fig("Musterlösung: Schichtenaufbau des gedämmten Steildachs")
+    names = ["Deckung", "Traglattung", "Konterlattung", "Unterdeckbahn", "Sparren + Dämmung", "Dampfbremse", "Innenbekleidung"]
+    y = 40
+    for i, t in enumerate(names):
+        acc = i in (2, 3, 5)
+        l.rect(40, y, 150, 18, sw=1.6)
+        if acc:
+            l.fillrect(40, y, 150, 18, color=ACCENT, opacity="0.18")
+        l.label(200, y + 13, t, size=11, color=(ACCENT if acc else None))
+        y += 22
+    l.label(40, 32, "außen", size=11); l.label(40, y + 4, "innen", size=11)
+    l.set_art_height(y + 12)
+    l.caption("Innen dicht (Dampfbremse), außen belüftet (Konterlattung).", color=ACCENT)
+    return None, l.render()
+
+
+@draw("lf09-013")
+def _():
+    def plate(f):
+        f.rect(90, 60, 200, 40, sw=1.8)
+        f.label(90, 52, "Rückseite", size=11); f.label(90, 118, "Sichtseite", size=11)
+    v = _fig("Schieferplatte im Schnitt (Vorgabe)"); plate(v); v.set_art_height(132)
+    l = _fig("Musterlösung: Lochung und Nagelkopf"); plate(l)
+    l.path("M170 60 L210 60 L198 100 L182 100 Z", w=1.6, color=ACCENT)
+    l.arrow(190, 116, 190, 102, w=1.6, color=ACCENT)
+    l.line(180, 78, 200, 78, w=3, color=ACCENT)
+    l.label(220, 82, "Nagelkopf in der Mulde", size=11, color=ACCENT)
+    l.set_art_height(132)
+    l.caption("Von der Rückseite gelocht – der Trichter bricht zur Sichtseite aus.")
+    return v.render(), l.render()
+
+
+@draw("lf10-014")
+def _():
+    def base(f):
+        f.line(24, 130, 210, 130, w=1.6); f.label(24, 122, "wasserführende Ebene", size=11)
+        f.rect(210, 40, 34, 90, sw=1.6); f.label(250, 90, "Wand", size=11)
+    v = _fig("Flachdach an aufgehendem Bauteil (Vorgabe)"); base(v); v.set_art_height(150)
+    l = _fig("Musterlösung: Abdichtung hochgeführt"); base(l)
+    l.path("M24 124 L204 124 L204 66", w=2.4, color=ACCENT)
+    l.rect(198, 58, 12, 8, sw=1.4, color=ACCENT)
+    l.dim(180, 124, 180, 66, "≥ 15 cm")
+    l.label(250, 66, "Klemmschiene", size=11, color=ACCENT)
+    l.set_art_height(150)
+    return v.render(), l.render()
+
+
+@draw("lf11-012")
+def _():
+    l = _fig("Musterlösung: Aufbau der VHF im Schnitt")
+    parts = [("tragende Wand", False), ("Wärmedämmung", True), ("Hinterlüftung", True),
+             ("Unterkonstruktion", True), ("Bekleidung", True)]
+    y = 40
+    for t, acc in parts:
+        l.rect(40, y, 150, 20, sw=1.6)
+        if acc:
+            l.fillrect(40, y, 150, 20, color=ACCENT, opacity="0.16")
+        l.label(200, y + 14, t, size=11, color=(ACCENT if acc else None))
+        y += 24
+    l.label(40, 32, "innen", size=11); l.label(40, y + 4, "außen", size=11)
+    l.set_art_height(y + 12)
+    return None, l.render()
+
+
+@draw("lf12-013")
+def _():
+    def base(f):
+        f.line(40, 96, 150, 96, w=2); f.line(230, 96, 340, 96, w=2)
+        f.label(60, 116, "zwei Scharen, Ränder hochgestellt", size=11)
+    v = _fig("Zwei Scharenränder (Vorgabe)"); base(v); v.set_art_height(130)
+    l = _fig("Musterlösung Doppelstehfalz mit Haft")
+    l.line(40, 96, 150, 96, w=2); l.line(230, 96, 340, 96, w=2)
+    l.path("M150 96 L150 56 L162 56 L162 70 L154 70 L154 96", w=2.4)
+    l.path("M162 96 L162 66", w=2.2)
+    l.line(150, 96, 150, 56, w=2.6, color=ACCENT)
+    l.path("M186 96 L186 74 L158 74", w=2, color=ACCENT)
+    l.label(190, 70, "Haft, im Falz eingelegt", size=11, color=ACCENT)
+    l.set_art_height(120)
+    return v.render(), l.render()
+
+
+@draw("lf13a-012")
+def _():
+    def outline(f):
+        f.poly([(40, 40), (210, 40), (210, 110), (330, 110), (330, 180), (40, 180)], w=1.8, closed=True)
+    v = _fig("L-förmiger Grundriss (Vorgabe)"); outline(v); v.set_art_height(200)
+    l = _fig("Musterlösung Dachausmittlung"); outline(l)
+    # Firste
+    l.line(75, 75, 175, 75, w=2, color=ACCENT)          # First linker Teil
+    l.line(295, 110, 295, 145, w=2, color=ACCENT)       # First rechter Teil (senkrecht)
+    # 45°-Winkelhalbierende: Grat an Außenecken, Kehle an Innenecke
+    l.line(40, 40, 75, 75, w=1.8)                       # Grat obere Außenecke
+    l.line(40, 180, 75, 145, w=1.8)                     # Grat untere Außenecke links
+    l.line(210, 40, 175, 75, w=1.8)                     # Grat obere Außenecke rechts
+    l.line(210, 110, 245, 145, w=1.8, color=ACCENT)     # Kehle Innenecke
+    l.line(75, 145, 245, 145, w=2, color=ACCENT)        # First unten links -> Treffpunkt
+    l.label(120, 68, "First", size=10, color=ACCENT)
+    l.label(48, 60, "Grat", size=10); l.label(214, 128, "Kehle", size=10, color=ACCENT)
+    l.set_art_height(200)
+    l.caption("Grat und Kehle laufen als 45°-Winkelhalbierende, die Firste treffen sich.", color=ACCENT)
+    return v.render(), l.render()
+
+
+@draw("lf14-013")
+def _():
+    def base(f):
+        f.line(30, 120, 290, 120, w=1.6)
+        f.rect(146, 50, 28, 70, sw=1.6); f.label(150, 138, "Rohr", size=11)
+    v = _fig("Flachdach mit Rohr (Vorgabe)"); base(v); v.set_art_height(150)
+    l = _fig("Musterlösung Rohrdurchdringung mit Manschette"); base(l)
+    l.path("M30 114 L120 114 L142 82 L142 66", w=2.4, color=ACCENT)
+    l.path("M290 114 L200 114 L178 82 L178 66", w=2.4, color=ACCENT)
+    l.rect(138, 58, 44, 8, sw=1.6, color=ACCENT)
+    l.dim(108, 114, 108, 66, "≥ 15 cm")
+    l.label(196, 60, "Schelle", size=11, color=ACCENT)
+    l.set_art_height(150)
+    l.caption("Manschette flächig anschließen und am Rohr hochführen.")
+    return v.render(), l.render()
+
+
+@draw("lf15-013")
+def _():
+    def corner(f):
+        f.path("M40 160 L40 60 L130 60", w=1.8); f.label(70, 90, "tragende Wand", size=11)
+    v = _fig("Wandecke im Grundriss (Vorgabe)"); corner(v); v.set_art_height(170)
+    l = _fig("Musterlösung Außenecke der VHF"); corner(l)
+    l.path("M28 160 L28 48 L130 48", w=1.2, dash="4 3")            # Dämmung
+    l.path("M18 160 L18 38 L130 38", w=2.2, color=ACCENT)          # Bekleidung
+    l.path("M33 150 L33 53 L120 53", w=1, dash="4 3", color=ACCENT)  # Luftschicht
+    l.label(140, 44, "Bekleidung mit Eckwinkel", size=11, color=ACCENT)
+    l.label(140, 60, "Hinterlüftung läuft um die Ecke", size=11)
+    l.set_art_height(170)
+    return v.render(), l.render()
+
+
+@draw("lf16-014")
+def _():
+    def base(f):
+        f.rect(40, 140, 260, 26, sw=1.6); f.label(46, 157, "Sparren", size=10)
+        f.rect(40, 124, 260, 16, sw=1.4); f.label(46, 136, "Konterlatte", size=10)
+        f.rect(60, 108, 30, 16, sw=1.4); f.rect(130, 108, 30, 16, sw=1.4)
+        f.rect(40, 90, 135, 14, sw=1.4); f.label(46, 101, "Ziegel", size=10)
+        f.rect(165, 90, 120, 14, sw=1.4)
+    v = _fig("Dachaufbau (Vorgabe)"); base(v); v.set_art_height(176)
+    l = _fig("Musterlösung Dachhaken-Befestigung"); base(l)
+    l.path("M196 158 L196 74 L256 74", w=2.6, color=ACCENT)
+    l.circle(190, 150, 3, fill=ACCENT, color=ACCENT); l.circle(190, 160, 3, fill=ACCENT, color=ACCENT)
+    l.label(120, 190, "am Sparren verschraubt", size=11, color=ACCENT)
+    l.line(180, 184, 194, 166, w=0.8, color=ACCENT)
+    l.label(214, 118, "Ziegel ausgeklinkt", size=11, color=ACCENT)
+    l.set_art_height(200)
+    return v.render(), l.render()
+
+
+@draw("lf17-013")
+def _():
+    def base(f):
+        f.rect(20, 30, 300, 130, sw=1.2)
+        f.path("M120 118 L138 100 L128 86 L150 66 L142 54 L160 40", w=2.4, color=ACCENT)
+        f.label(166, 44, "Riss", size=11, color=ACCENT)
+        f.label(26, 152, "Draufsicht Abdichtung", size=10)
+    v = _fig("Riss in der Abdichtung (Vorgabe)"); base(v); v.set_art_height(170)
+    l = _fig("Musterlösung Reparaturflicken")
+    l.rect(20, 30, 300, 130, sw=1.2)
+    l.rect(86, 34, 108, 122, sw=2.4, color=ACCENT, rx=16)
+    l.path("M120 118 L138 100 L128 86 L150 66 L142 54 L160 40", w=2)
+    l.dim(86, 138, 120, 138, "Überstand")
+    l.label(200, 96, "Ecken abgerundet", size=11, color=ACCENT)
+    l.label(26, 152, "Draufsicht Abdichtung", size=10)
+    l.set_art_height(170)
+    l.caption("Der Flicken überragt den Riss ringsum; abgerundete Ecken heben nicht ab.")
+    return v.render(), l.render()
+
+
+@draw("wiso-019")
+def _():
+    def top(f):
+        f.boxlabel(120, 24, 140, 28, "Sozialversicherung", size=12, accent=True)
+    v = _fig("Oberbegriff (Vorgabe)"); top(v); v.set_art_height(70)
+    l = _fig("Musterlösung: die fünf Zweige"); top(l)
+    l.line(190, 52, 190, 64, w=1.2)
+    names = ["Kranken", "Pflege", "Renten", "Arbeitsl.", "Unfall"]
+    n = len(names)
+    x0, w = 12, 68
+    gap = (380 - 24 - n * w) / (n - 1)
+    xs = [x0 + i * (w + gap) for i in range(n)]
+    l.line(xs[0] + w / 2, 64, xs[-1] + w / 2, 64, w=1.2)
+    for i, t in enumerate(names):
+        x = xs[i]
+        l.line(x + w / 2, 64, x + w / 2, 76, w=1.2)
+        acc = i == 4
+        l.boxlabel(x, 76, w, 40, [t, "vers."], size=10, accent=acc)
+    l.set_art_height(126)
+    l.caption("Vier Zweige je zur Hälfte; die Unfallversicherung trägt der Arbeitgeber allein (BG BAU).", color=ACCENT)
+    return None, l.render()
+
+
 def build(only=None):
     changed = 0
     by_lf = {}
@@ -1700,7 +2037,25 @@ def build(only=None):
                 auf["svg"] = DIAG[auf["id"]]()
                 dg += 1
         p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-    print(f"{changed} Lektions- und {dg} Diagramm-Zeichnungen gebaut.")
+    # Zeichen-Aufgaben
+    dw = 0
+    by_lf3 = {}
+    for did in DRAW:
+        by_lf3.setdefault(did.rsplit("-", 1)[0], []).append(did)
+    for lf, ids in by_lf3.items():
+        if only and lf not in only:
+            continue
+        p = pathlib.Path(f"content/{lf}/aufgaben.json")
+        data = json.loads(p.read_text())
+        for auf in data:
+            if auf["id"] in DRAW:
+                vorgabe, loesung = DRAW[auf["id"]]()
+                if vorgabe is not None:
+                    auf["vorgabeSvg"] = vorgabe
+                auf["loesungSvg"] = loesung
+                dw += 1
+        p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    print(f"{changed} Lektions-, {dg} Diagramm- und {dw} Zeichen-Zeichnungen gebaut.")
 
 
 if __name__ == "__main__":
