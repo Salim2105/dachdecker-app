@@ -1,7 +1,15 @@
 # Zeichnungen prüfen
 
-Zwei Prüfungen, die sich ergänzen. Beide sind nötig — die eine findet nicht,
-was die andere findet.
+Alle Zeichnungen werden mit der Layout-Engine erzeugt:
+
+    python3 scripts/build_svgs.py            # baut alle
+    python3 scripts/build_svgs.py lf07 lf08  # nur einzelne Lernfelder
+
+Die Engine (`scripts/svglib.py`) verhindert Überlappungen und Überläufe schon
+beim Bauen: kurze Labels am Bau, Erklärungen in einer strukturierten Legende
+unter dem Bild, Build-Guards für Textbreite und Callout-Abstand. Trotzdem
+danach beide Prüfungen laufen lassen — die eine findet nicht, was die andere
+findet.
 
 ## 1. Inhaltlich: PNG rendern und ansehen
 
@@ -16,9 +24,30 @@ Textbreiten stimmen dort also nicht mit der Realität überein. Deshalb:
 
 ## 2. Typografisch: im Browser messen
 
-Dev-Server starten, im Browser eine Lernfeld-Seite öffnen und im Konsolenfenster
-ausführen. Findet überlappende und abgeschnittene Beschriftungen in allen
-Zeichnungen auf einmal.
+Am gründlichsten ALLE 125 SVGs auf einmal: ein Prüfdokument mit jedem SVG
+erzeugen (Lektionen + Diagramm- + Zeichen-Aufgaben aus dem JSON), im Browser
+laden und per `getBBox` messen.
+
+```python
+# erzeugt public/_svgcheck.html mit allen SVGs (danach wieder löschen!)
+import json, glob, pathlib, html
+svgs = []
+for p in sorted(glob.glob('content/*/lektionen.json')):
+    for l in json.load(open(p)):
+        if l.get('svg'): svgs.append((l['id'], l['svg']))
+for p in sorted(glob.glob('content/*/aufgaben.json')):
+    for a in json.load(open(p)):
+        for k in ('svg','vorgabeSvg','loesungSvg'):
+            if a.get(k): svgs.append((a['id']+'/'+k, a[k]))
+body = "".join(f'<div data-name="{html.escape(n)}">{s}</div>' for n,s in svgs)
+pathlib.Path('public/_svgcheck.html').write_text('<!doctype html><meta charset=utf-8><body style="width:343px">'+body)
+```
+
+Danach `/_svgcheck.html` öffnen und im Konsolenfenster über `div[data-name]`
+messen (Überlappung Text/Text sowie Text außerhalb der viewBox). `public/_svgcheck.html`
+danach löschen, damit es nicht ausgeliefert wird.
+
+Die zweite Variante prüft nur die Lektions-Zeichnungen über die echten Seiten:
 
 ```js
 (async () => {
