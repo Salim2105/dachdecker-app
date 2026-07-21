@@ -1,5 +1,5 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1784568872761";
+const CACHE = "dachdecker-1784571515630";
 const SHELL = [
   "/",
   "/lernen",
@@ -55,9 +55,9 @@ const SHELL = [
   "/next.svg",
   "/vercel.svg",
   "/window.svg",
-  "/_next/static/AYe027HsOx8OwbXIyrc2s/_buildManifest.js",
-  "/_next/static/AYe027HsOx8OwbXIyrc2s/_clientMiddlewareManifest.js",
-  "/_next/static/AYe027HsOx8OwbXIyrc2s/_ssgManifest.js",
+  "/_next/static/bmeW3pYx9YaJsIheJFdVc/_buildManifest.js",
+  "/_next/static/bmeW3pYx9YaJsIheJFdVc/_clientMiddlewareManifest.js",
+  "/_next/static/bmeW3pYx9YaJsIheJFdVc/_ssgManifest.js",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
   "/_next/static/chunks/05ztmz3vvrbhd.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
@@ -73,7 +73,7 @@ const SHELL = [
   "/_next/static/chunks/315owoz9ub2zd.js",
   "/_next/static/chunks/38bjz7wb0f-az.js",
   "/_next/static/chunks/3db0q5qkvowoc.js",
-  "/_next/static/chunks/3ih9p-jwmmbaw.js",
+  "/_next/static/chunks/3g0ffq2f0r-n8.js",
   "/_next/static/chunks/3n7gf7-hbylyo.js",
   "/_next/static/chunks/3rxl-jt3pdxgx.js",
   "/_next/static/chunks/turbopack-1p7pqniqer0jp.js",
