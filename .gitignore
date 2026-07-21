@@ -17,8 +17,9 @@
 /.next/
 /out/
 
-# production
-/build
+# production (Create-React-App-Altlast); Icon fürs Desktop-Bundle behalten
+/build/*
+!/build/icon.icns
 
 # misc
 .DS_Store
@@ -39,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Desktop-Build-Ausgabe (out/ ist oben schon ignoriert)
+dist-desktop/

@@ -2,6 +2,7 @@
   "name": "dachdecker-app",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +11,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "app": "npm run build && npm start",
-    "postbuild": "node scripts/gen-sw.mjs"
+    "postbuild": "node scripts/gen-sw.mjs",
+    "desktop:export": "EXPORT=1 next build",
+    "desktop:dev": "npm run desktop:export && electron .",
+    "desktop:build": "npm run desktop:export && electron-builder --mac"
   },
   "dependencies": {
     "mathjs": "^15.2.0",
@@ -26,6 +30,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.3",
+    "electron": "^43.1.1",
+    "electron-builder": "^26.15.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
     "jsdom": "^29.1.1",

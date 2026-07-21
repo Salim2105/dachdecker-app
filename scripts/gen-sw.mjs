@@ -9,6 +9,13 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
+// Der Service Worker ist nur fürs Web (Server/PWA). Der statische Export für
+// die Desktop-App läuft schon lokal und braucht ihn nicht.
+if (process.env.EXPORT === "1") {
+  console.log("EXPORT=1 → Service Worker wird übersprungen.");
+  process.exit(0);
+}
+
 const { lernfelder } = JSON.parse(readFileSync("content/lernfelder.json", "utf8"));
 
 const seiten = [

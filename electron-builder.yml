@@ -1,0 +1,27 @@
+appId: com.dachdecker.lernapp
+productName: Dachdecker
+copyright: Privat — nur zur eigenen Prüfungsvorbereitung
+
+directories:
+  output: dist-desktop
+  buildResources: build
+
+# Nur der Hauptprozess kommt in die App. Er nutzt ausschließlich Node-Bordmittel,
+# darum wird node_modules bewusst ausgeschlossen (hält die App klein).
+files:
+  - electron/**/*
+  - package.json
+  - "!node_modules/**/*"
+
+# Der statische Export wird als echte Dateien mitgeliefert (nicht in die asar
+# gepackt), damit der lokale Server sie streamen kann.
+extraResources:
+  - from: out
+    to: out
+
+mac:
+  category: public.app-category.education
+  icon: build/icon.icns
+  identity: null # keine Signierung — private Nutzung
+  target:
+    - dir
