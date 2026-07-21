@@ -1907,7 +1907,7 @@ def _():
     l.line(210, 110, 245, 145, w=1.8, color=ACCENT)     # Kehle Innenecke
     l.line(75, 145, 245, 145, w=2, color=ACCENT)        # First unten links -> Treffpunkt
     l.label(120, 68, "First", size=10, color=ACCENT)
-    l.label(48, 60, "Grat", size=10); l.label(214, 128, "Kehle", size=10, color=ACCENT)
+    l.label(58, 108, "Grat", size=10); l.label(214, 132, "Kehle", size=10, color=ACCENT)
     l.set_art_height(200)
     l.caption("Grat und Kehle laufen als 45°-Winkelhalbierende, die Firste treffen sich.", color=ACCENT)
     return v.render(), l.render()
