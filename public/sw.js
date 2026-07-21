@@ -1,5 +1,5 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1784658102609";
+const CACHE = "dachdecker-1784659154174";
 const SHELL = [
   "/",
   "/lernen",
@@ -55,6 +55,9 @@ const SHELL = [
   "/next.svg",
   "/vercel.svg",
   "/window.svg",
+  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_buildManifest.js",
+  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_clientMiddlewareManifest.js",
+  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_ssgManifest.js",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
   "/_next/static/chunks/0rh6l6y2yfzk1.js",
@@ -74,9 +77,6 @@ const SHELL = [
   "/_next/static/chunks/3n7gf7-hbylyo.js",
   "/_next/static/chunks/3rxl-jt3pdxgx.js",
   "/_next/static/chunks/turbopack-1p7pqniqer0jp.js",
-  "/_next/static/iQOn-taZcJuSrm1Z2diQE/_buildManifest.js",
-  "/_next/static/iQOn-taZcJuSrm1Z2diQE/_clientMiddlewareManifest.js",
-  "/_next/static/iQOn-taZcJuSrm1Z2diQE/_ssgManifest.js",
   "/_next/static/media/4fa387ec64143e14-s.2tuy5pz7dlieh.woff2",
   "/_next/static/media/53b9e256198e5412-s.390ncx5urfkfu.woff2",
   "/_next/static/media/5ce348bf30bf5439-s.31988l_ccedte.woff2",

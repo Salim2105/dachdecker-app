@@ -13,10 +13,11 @@ export const metadata: Metadata = {
   description: "Lernapp zur Vorbereitung auf die Dachdecker-Gesellenprüfung",
   manifest: "/manifest.webmanifest",
   appleWebApp: { capable: true, title: "Dachdecker", statusBarStyle: "black-translucent" },
+  icons: { apple: "/icons/icon-192.png" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#23262b",
+  themeColor: "#191b1f",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",

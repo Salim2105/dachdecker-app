@@ -12,10 +12,11 @@
     "test:watch": "vitest",
     "app": "npm run build && npm start",
     "postbuild": "node scripts/gen-sw.mjs",
-    "desktop:export": "EXPORT=1 next build",
-    "desktop:dev": "npm run desktop:export && electron .",
-    "desktop:build": "npm run desktop:export && electron-builder --mac",
-    "ios": "npm run build && node scripts/serve-ios.mjs"
+    "export": "EXPORT=1 next build && EXPORT=1 node scripts/gen-sw.mjs",
+    "desktop:dev": "npm run export && electron .",
+    "desktop:build": "npm run export && electron-builder --mac",
+    "ios": "npm run build && node scripts/serve-ios.mjs",
+    "deploy": "npm run export && wrangler pages deploy out --project-name=dachdecker --commit-dirty=true"
   },
   "dependencies": {
     "mathjs": "^15.2.0",
@@ -38,6 +39,7 @@
     "jsdom": "^29.1.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.10",
+    "wrangler": "^4.113.0"
   }
 }
