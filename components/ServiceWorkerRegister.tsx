@@ -1,56 +1,51 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 /**
- * Registriert den Service Worker und meldet, wenn eine neue Version bereit
- * liegt. Weil der alte Cache zuerst bedient wird, sieht man Änderungen sonst
- * erst beim übernächsten Öffnen — mit dem Hinweis genügt ein Tippen.
+ * Registriert den Service Worker und hält die App automatisch aktuell.
+ *
+ * Ablauf ohne Zutun: Beim Start (und jedes Mal, wenn die App wieder in den
+ * Vordergrund kommt) wird nach einer neuen Version gesehen. Liegt eine bereit,
+ * übernimmt der neue Service Worker sofort (skipWaiting + clients.claim im
+ * sw.js) und die App lädt sich genau einmal neu — dann sind Inhalte frisch.
+ * Kein Knopf, keine App-Store-Updates: einmal Safari/App öffnen genügt.
  */
 export function ServiceWorkerRegister() {
-  const [neueVersion, setNeueVersion] = useState(false);
-
   useEffect(() => {
     if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
 
-    let abgebrochen = false;
+    // Gab es beim Laden schon einen Controller? Dann ist ein späterer Wechsel
+    // ein echtes Update (neu laden). Beim allerersten Install nicht neu laden.
+    const hatteController = !!navigator.serviceWorker.controller;
+    let neugeladen = false;
 
+    const beiWechsel = () => {
+      if (neugeladen || !hatteController) return;
+      neugeladen = true;
+      window.location.reload();
+    };
+    navigator.serviceWorker.addEventListener("controllerchange", beiWechsel);
+
+    let reg: ServiceWorkerRegistration | undefined;
     navigator.serviceWorker
       .register("/sw.js")
-      .then((reg) => {
-        // Beim Start einmal nachsehen, ob es etwas Neues gibt.
-        reg.update().catch(() => {});
-
-        const beobachte = (worker: ServiceWorker | null) => {
-          if (!worker) return;
-          worker.addEventListener("statechange", () => {
-            // "installed" bei vorhandenem Controller heißt: Update wartet.
-            if (worker.state === "installed" && navigator.serviceWorker.controller && !abgebrochen) {
-              setNeueVersion(true);
-            }
-          });
-        };
-
-        beobachte(reg.installing);
-        reg.addEventListener("updatefound", () => beobachte(reg.installing));
+      .then((r) => {
+        reg = r;
+        r.update().catch(() => {});
       })
       .catch(() => {});
 
+    // Kommt die App aus dem Hintergrund zurück, erneut nach Updates sehen.
+    const beiSichtbar = () => {
+      if (!document.hidden) reg?.update().catch(() => {});
+    };
+    document.addEventListener("visibilitychange", beiSichtbar);
+
     return () => {
-      abgebrochen = true;
+      navigator.serviceWorker.removeEventListener("controllerchange", beiWechsel);
+      document.removeEventListener("visibilitychange", beiSichtbar);
     };
   }, []);
 
-  if (!neueVersion) return null;
-
-  return (
-    <div className="fixed inset-x-0 bottom-20 z-50 flex justify-center px-4">
-      <button
-        onClick={() => window.location.reload()}
-        className="rounded-full px-5 py-3 text-sm font-medium shadow-lg"
-        style={{ background: "var(--accent)", color: "var(--accent-text)" }}
-      >
-        Neue Version verfügbar — tippen zum Laden
-      </button>
-    </div>
-  );
+  return null;
 }
