@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Desktop-Build-Ausgabe (out/ ist oben schon ignoriert)
 dist-desktop/
+
+# Lokale HTTPS-Zertifikate (private Schluessel!) — nie committen
+certs/

@@ -14,7 +14,8 @@
     "postbuild": "node scripts/gen-sw.mjs",
     "desktop:export": "EXPORT=1 next build",
     "desktop:dev": "npm run desktop:export && electron .",
-    "desktop:build": "npm run desktop:export && electron-builder --mac"
+    "desktop:build": "npm run desktop:export && electron-builder --mac",
+    "ios": "npm run build && node scripts/serve-ios.mjs"
   },
   "dependencies": {
     "mathjs": "^15.2.0",
