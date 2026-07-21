@@ -104,13 +104,20 @@ console.log(`${lf}: ${aufgaben.length} Aufgaben, ${lektionen.length} Lektionen`)
 console.log(`Typen: ${typen.join(", ")}`);
 console.log(`Konfidenz: ${[...new Set([...aufgaben, ...lektionen].map((x) => x.konfidenz))].join(", ")}`);
 
-// Fotos: referenzierte Dateien müssen wirklich existieren
+// Fotos: jeder Platz braucht id + alt und entweder ein echtes Bild (das dann
+// existieren muss) oder eine Muster-Skizze als Platzhalter.
 for (const l of lektionen) {
   for (const foto of l.fotos ?? []) {
-    if (!existsSync(join("public/fotos", foto.datei))) {
-      fehler.push(`${l.id}: Foto "${foto.datei}" fehlt in public/fotos`);
+    const bez = foto.id ?? foto.datei ?? "?";
+    if (!foto.id) fehler.push(`${l.id}: Foto "${bez}" ohne id`);
+    if (!foto.alt) fehler.push(`${l.id}: Foto "${bez}" ohne alt-Text`);
+    if (foto.datei) {
+      if (!existsSync(join("public/fotos", foto.datei))) {
+        fehler.push(`${l.id}: Foto "${foto.datei}" fehlt in public/fotos`);
+      }
+    } else if (!foto.musterSvg) {
+      fehler.push(`${l.id}: Foto "${bez}" ohne Bilddatei und ohne Muster-Skizze`);
     }
-    if (!foto.alt) fehler.push(`${l.id}: Foto "${foto.datei}" ohne alt-Text`);
   }
 }
 

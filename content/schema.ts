@@ -87,13 +87,18 @@ export type Aufgabe =
   | FachbegriffAufgabe;
 
 /**
- * Eigenes Foto aus der Praxis. Liegt unter public/fotos/ und ist damit
- * automatisch im Offline-Cache. Nur selbst aufgenommene Bilder verwenden.
+ * Ein Foto-Platz in einer Lektion. Solange kein echtes Foto da ist, zeigt die
+ * App die Ausschnitt-Skizze `musterSvg` ("so soll dein Foto aussehen"). Kommt
+ * das echte Foto (nach public/fotos/, damit offline verfügbar), wird `datei`
+ * gesetzt und ersetzt die Skizze. Nur selbst aufgenommene Bilder verwenden.
  */
 export interface Foto {
-  datei: string; // Dateiname in public/fotos, z. B. "lf09-kehle.jpg"
+  id: string; // stabiler Schlüssel, z. B. "lf09-schiefer-flaeche"
   alt: string; // was zu sehen ist — auch für Screenreader
   bildunterschrift?: string; // worauf man achten soll
+  winkel?: string; // kurzer Aufnahme-Hinweis, z. B. "schräg von unten"
+  datei?: string; // echtes Foto in public/fotos, sobald vorhanden
+  musterSvg?: string; // Ausschnitt-Skizze als Platzhalter (inline SVG-Markup)
 }
 
 export interface Lektion {
