@@ -13,7 +13,9 @@
       "Edelstahl oberhalb von Kupfer",
       "Titanzink neben Titanzink"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Kupfer darf nie oberhalb von Titanzink oder verzinktem Stahl liegen: Das Regenwasser schwemmt Kupferionen nach unten und zerstört dort das unedlere Metall. Umgekehrt (Zink über Kupfer) ist es unkritisch."
   },
   {
@@ -24,8 +26,15 @@
     "quelle": "DIN EN 12056-3 (Erläuterungen)",
     "konfidenz": "hoch",
     "frage": "Welchen Abflussbeiwert C setzt man für eine undurchlässige Dachfläche an?",
-    "optionen": ["0,3", "0,5", "0,8", "1,0"],
-    "korrekt": [3],
+    "optionen": [
+      "0,3",
+      "0,5",
+      "0,8",
+      "1,0"
+    ],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Eine undurchlässige Dachfläche gibt das Wasser vollständig ab: C = 1,0. Kies- und Gründächer speichern Wasser zwischen und haben deshalb kleinere Abflussbeiwerte."
   },
   {
@@ -42,7 +51,9 @@
       "Mit dem durchschnittlichen Jahresniederschlag",
       "Gar nicht — sie wird nach Gefühl dimensioniert"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Notentwässerung ist die Sicherheit gegen Überlastung. Sie wird deshalb auf ein sehr seltenes Starkregenereignis ausgelegt, die normale Entwässerung dagegen auf einen häufigeren Berechnungsregen."
   },
   {
@@ -59,7 +70,9 @@
       "Damit die Rinne besser aussieht",
       "Damit weniger Halter nötig sind"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Metall dehnt sich bei Wärme aus und zieht sich bei Kälte zusammen. Ohne Dehnungsausgleicher wirft sich das Blech, Nähte reißen auf oder Halter werden herausgerissen."
   },
   {
@@ -70,8 +83,15 @@
     "quelle": "Basiswissen Dachentwässerung (Friedrich-Datentechnik)",
     "konfidenz": "mittel",
     "frage": "Mit welchem Gefälle wird eine Dachrinne üblicherweise zum Fallrohr verlegt?",
-    "optionen": ["ohne Gefälle", "etwa 3 mm je Meter", "etwa 3 cm je Meter", "etwa 10 cm je Meter"],
-    "korrekt": [1],
+    "optionen": [
+      "ohne Gefälle",
+      "etwa 3 mm je Meter",
+      "etwa 3 cm je Meter",
+      "etwa 10 cm je Meter"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Ein leichtes, gleichmäßiges Gefälle in der Größenordnung von etwa 3 mm je Meter reicht aus, damit kein Wasser stehen bleibt. Ein zu starkes Gefälle wäre optisch auffällig und würde die Rinne am Ende zu tief setzen."
   },
   {
@@ -82,7 +102,15 @@
     "quelle": "DIN EN 12056-3 (Erläuterungen)",
     "konfidenz": "hoch",
     "text": "Der Regenwasserabfluss berechnet sich aus {{Regenspende}} mal wirksamer Fläche mal {{Abflussbeiwert}}.",
-    "akzeptiert": { "Regenspende": ["r"], "Abflussbeiwert": ["C", "Abflusszahl"] },
+    "akzeptiert": {
+      "Regenspende": [
+        "r"
+      ],
+      "Abflussbeiwert": [
+        "C",
+        "Abflusszahl"
+      ]
+    },
     "erklaerung": "Q = r · A · C. Die Regenspende r kommt aus den örtlichen Regendaten, C berücksichtigt die Beschaffenheit der Fläche (undurchlässiges Dach: C = 1,0)."
   },
   {
@@ -93,7 +121,15 @@
     "quelle": "Fachregeln Bauspenglerarbeiten",
     "konfidenz": "hoch",
     "text": "Bei Kontaktkorrosion wird immer das {{unedlere}} Metall zerstört. Deshalb darf {{Kupfer}} nie oberhalb von Titanzink eingebaut werden.",
-    "akzeptiert": { "unedlere": ["unedle", "unedlere Metall"], "Kupfer": ["Cu"] },
+    "akzeptiert": {
+      "unedlere": [
+        "unedle",
+        "unedlere Metall"
+      ],
+      "Kupfer": [
+        "Cu"
+      ]
+    },
     "erklaerung": "Das edlere Metall bleibt heil, das unedlere korrodiert. Da Regenwasser Kupferionen nach unten trägt, entscheidet die Fließrichtung über die zulässige Anordnung."
   },
   {
@@ -105,9 +141,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine undurchlässige Dachfläche von {flaeche} m² wird entwässert. Die Berechnungsregenspende beträgt {r} l/(s·ha), der Abflussbeiwert C = {c}. Wie groß ist der Regenwasserabfluss Q?",
     "parameter": [
-      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 50, "max": 400, "schritt": 10 },
-      { "name": "r", "label": "Regenspende", "einheit": "l/(s·ha)", "min": 200, "max": 400, "schritt": 10 },
-      { "name": "c", "label": "Abflussbeiwert", "einheit": "", "min": 1, "max": 1, "schritt": 1 }
+      {
+        "name": "flaeche",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 50,
+        "max": 400,
+        "schritt": 10
+      },
+      {
+        "name": "r",
+        "label": "Regenspende",
+        "einheit": "l/(s·ha)",
+        "min": 200,
+        "max": 400,
+        "schritt": 10
+      },
+      {
+        "name": "c",
+        "label": "Abflussbeiwert",
+        "einheit": "",
+        "min": 1,
+        "max": 1,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -129,9 +186,30 @@
     "konfidenz": "mittel",
     "aufgabentext": "Eine {laenge} m lange Titanzinkrinne erwärmt sich um {dt} K. Gerechnet wird mit einem Längenausdehnungskoeffizienten von {alpha} mm je Meter und Kelvin. Um wie viel dehnt sie sich aus?",
     "parameter": [
-      { "name": "laenge", "label": "Rinnenlänge", "einheit": "m", "min": 6, "max": 20, "schritt": 1 },
-      { "name": "dt", "label": "Temperaturdifferenz", "einheit": "K", "min": 20, "max": 60, "schritt": 5 },
-      { "name": "alpha", "label": "Ausdehnungskoeffizient", "einheit": "mm/(m·K)", "min": 0.022, "max": 0.022, "schritt": 0.001 }
+      {
+        "name": "laenge",
+        "label": "Rinnenlänge",
+        "einheit": "m",
+        "min": 6,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "dt",
+        "label": "Temperaturdifferenz",
+        "einheit": "K",
+        "min": 20,
+        "max": 60,
+        "schritt": 5
+      },
+      {
+        "name": "alpha",
+        "label": "Ausdehnungskoeffizient",
+        "einheit": "mm/(m·K)",
+        "min": 0.022,
+        "max": 0.022,
+        "schritt": 0.001
+      }
     ],
     "schritte": [
       {
@@ -152,7 +230,7 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 7",
     "konfidenz": "hoch",
     "frage": "Benenne die markierten Bauteile der Dachentwässerung (Ansicht von vorn).",
-    "svg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Dachentwaesserung in der Ansicht'><line x1='36' y1='70' x2='284' y2='70' stroke='currentColor' stroke-width='1.8'/><path d='M42 88 L268 100' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M42 102 L268 114' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='42' y1='88' x2='42' y2='102' stroke='currentColor' stroke-width='1.4'/><line x1='80' y1='70' x2='80' y2='90' stroke='currentColor' stroke-width='1.3'/><line x1='130' y1='70' x2='130' y2='93' stroke='currentColor' stroke-width='1.3'/><line x1='180' y1='70' x2='180' y2='95' stroke='currentColor' stroke-width='1.3'/><line x1='230' y1='70' x2='230' y2='98' stroke='currentColor' stroke-width='1.3'/><rect x='250' y='112' width='18' height='78' fill='none' stroke='currentColor' stroke-width='1.5'/><line x1='150' y1='106' x2='150' y2='132' stroke='#c07d4a' stroke-width='1.2'/><circle cx='150' cy='144' r='12' fill='#c07d4a'/><text x='150' y='149' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='130' y1='68' x2='130' y2='48' stroke='#c07d4a' stroke-width='1.2'/><circle cx='130' cy='36' r='12' fill='#c07d4a'/><text x='130' y='41' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='268' y1='156' x2='286' y2='156' stroke='#c07d4a' stroke-width='1.2'/><circle cx='298' cy='156' r='12' fill='#c07d4a'/><text x='298' y='161' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "svg": "<svg viewBox='0 0 380 210' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Dachentwässerung: benenne Rinne, Halter und Fallrohr'><line x1='60' y1='44' x2='210' y2='108' stroke='currentColor' stroke-width='2'/><path d='M188 118 A22 22 0 0 0 232 118' fill='none' stroke='currentColor' stroke-width='2.2'/><line x1='188' y1='118' x2='188' y2='108' stroke='currentColor' stroke-width='2.2'/><line x1='232' y1='118' x2='232' y2='112' stroke='currentColor' stroke-width='2.2'/><path d='M150 136 Q170 136 178 120 L196 106' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='224' y='118' width='12' height='60' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='210' y1='138' x2='210' y2='122' stroke='#c07d4a' stroke-width='1'/><circle cx='210' cy='138' r='11' fill='#c07d4a'/><text x='210' y='142.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='150' y1='152' x2='160' y2='132' stroke='#c07d4a' stroke-width='1'/><circle cx='150' cy='152' r='11' fill='#c07d4a'/><text x='150' y='156.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='258' y1='150' x2='236' y2='150' stroke='#c07d4a' stroke-width='1'/><circle cx='258' cy='150' r='11' fill='#c07d4a'/><text x='258' y='154.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
     "zuordnung": {
       "dachrinne": "Dachrinne",
       "rinnenhalter": "Rinnenhalter",
@@ -187,7 +265,10 @@
     "konfidenz": "hoch",
     "begriff": "Regenspende",
     "definition": "Die örtliche Regenmenge, mit der die Entwässerung bemessen wird — angegeben in Liter je Sekunde und Hektar. Die Werte stammen aus den amtlichen Regendaten des Deutschen Wetterdienstes.",
-    "bestandteile": ["Regen", "spende"],
+    "bestandteile": [
+      "Regen",
+      "spende"
+    ],
     "erklaerung": "Merke: Regen-spende — wie viel Regen der Himmel je Fläche und Sekunde spendet."
   },
   {
@@ -199,7 +280,10 @@
     "konfidenz": "hoch",
     "begriff": "Abflussbeiwert",
     "definition": "Der Faktor C, der angibt, welcher Anteil des Niederschlags von einer Fläche tatsächlich abfließt. Undurchlässige Dachflächen haben C = 1,0; Kies- und Gründächer speichern Wasser und haben kleinere Werte.",
-    "bestandteile": ["Abfluss", "beiwert"],
+    "bestandteile": [
+      "Abfluss",
+      "beiwert"
+    ],
     "erklaerung": "Merke: Abfluss-beiwert — der Beiwert für den Abfluss."
   }
 ]

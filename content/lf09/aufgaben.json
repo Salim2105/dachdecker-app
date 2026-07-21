@@ -7,8 +7,15 @@
     "quelle": "Rathscheck Schieferbibel (Deckarten und Regeldachneigungen)",
     "konfidenz": "hoch",
     "frage": "Welche Regeldachneigung gilt für die Altdeutsche Doppeldeckung?",
-    "optionen": ["16°", "22°", "30°", "40°"],
-    "korrekt": [1],
+    "optionen": [
+      "16°",
+      "22°",
+      "30°",
+      "40°"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Altdeutsche Doppeldeckung ist ab 22° (40 %) zulässig. Die Spitzwinkel-Deckung braucht mindestens 30°, die Rechteck-Doppeldeckung mindestens 40°."
   },
   {
@@ -25,7 +32,9 @@
       "Von der Seite her",
       "Die Richtung ist egal"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Gelocht wird immer von der Rückseite zur Sichtseite. Dadurch bricht das Material auf der Sichtseite trichterförmig aus — in dieser Mulde kann der Nagelkopf bündig versinken."
   },
   {
@@ -42,7 +51,9 @@
       "Das darüberliegende Gebinde reitet auf und bricht unter Schneelast",
       "Der Nagel rostet schneller"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Ein vorstehender Nagelkopf lässt das darüberliegende Gebinde aufreiten. Der Stein liegt dann nicht mehr satt auf und bricht spätestens unter der ersten Schneelast — ein klassischer Ausführungsfehler."
   },
   {
@@ -53,8 +64,15 @@
     "quelle": "Rathscheck Schieferbibel (Unterkonstruktion)",
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke muss eine Vollschalung für eine Schieferdeckung haben?",
-    "optionen": ["18 mm", "22 mm", "24 mm", "30 mm"],
-    "korrekt": [2],
+    "optionen": [
+      "18 mm",
+      "22 mm",
+      "24 mm",
+      "30 mm"
+    ],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Die Vollschalung muss aus Holz der Sortierklasse S10 bestehen und mindestens 24 mm dick sein. Nur dann finden die Schiefernägel ausreichend Halt."
   },
   {
@@ -71,7 +89,9 @@
       "Mit Klebstoff",
       "Mit Kupferstiften"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Auf Vollschalung aus Holz genügen feuerverzinkte Schiefernägel. Auf Holzwerkstoffplatten oder Faserzementuntergründen sind dagegen Edelstahlschrauben vorgeschrieben."
   },
   {
@@ -88,7 +108,9 @@
       "Die Gebindesteigung ist immer gleich",
       "Sie hängt nur vom Steinformat ab"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Die Gebindesteigung verhält sich reziprok zur Dachneigung: Bei flachem Dach muss das Gebinde steiler angeordnet werden, damit das Wasser sicher abläuft. Bei steilen Dächern reicht eine flachere Steigung."
   },
   {
@@ -105,7 +127,9 @@
       "Sie dürfen nur im Sommer verlegt werden",
       "Sie sind wartungsfrei"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Alte Faserzementplatten können Asbestfasern enthalten — Rückbau nur mit den vorgeschriebenen Schutzmaßnahmen. Außerdem gelten sie grundsätzlich als nicht durchsturzsicher: Sie dürfen nie direkt betreten werden, sondern nur über tragfähige Laufstege."
   },
   {
@@ -116,7 +140,14 @@
     "quelle": "Rathscheck Schieferbibel (Befestigungsmittel)",
     "konfidenz": "hoch",
     "text": "Schiefernägel müssen mindestens {{32}} mm lang sein und einen Kopfdurchmesser von mindestens {{9}} mm haben.",
-    "akzeptiert": { "32": ["32mm"], "9": ["9mm"] },
+    "akzeptiert": {
+      "32": [
+        "32mm"
+      ],
+      "9": [
+        "9mm"
+      ]
+    },
     "erklaerung": "Die Länge sichert den Halt in der mindestens 24 mm dicken Schalung, der Kopfdurchmesser verhindert, dass der Nagel durch den Stein rutscht."
   },
   {
@@ -127,7 +158,15 @@
     "quelle": "Rathscheck Schieferbibel; Geologie-Grundlagen",
     "konfidenz": "hoch",
     "text": "Schiefer ist ein {{metamorphes}} Gestein, das aus Tonschlick unter hohem {{Druck}} entstanden ist. Deshalb lässt er sich in dünne Platten spalten.",
-    "akzeptiert": { "metamorphes": ["metamorph", "umgewandeltes"], "Druck": ["tektonischem Druck"] },
+    "akzeptiert": {
+      "metamorphes": [
+        "metamorph",
+        "umgewandeltes"
+      ],
+      "Druck": [
+        "tektonischem Druck"
+      ]
+    },
     "erklaerung": "Durch den Druck richteten sich die Mineralien parallel aus — diese Schieferung macht das Gestein spaltbar und damit als Deckwerkstoff nutzbar."
   },
   {
@@ -139,9 +178,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für eine Dachfläche von {flaeche} m² werden {proqm} Schiefersteine je m² benötigt. Es sind {verschnitt} % Verschnitt einzurechnen. Wie viele Steine sind zu bestellen?",
     "parameter": [
-      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 30, "max": 120, "schritt": 5 },
-      { "name": "proqm", "label": "Steine je m²", "einheit": "Stück", "min": 20, "max": 40, "schritt": 1 },
-      { "name": "verschnitt", "label": "Verschnitt", "einheit": "%", "min": 5, "max": 15, "schritt": 5 }
+      {
+        "name": "flaeche",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 30,
+        "max": 120,
+        "schritt": 5
+      },
+      {
+        "name": "proqm",
+        "label": "Steine je m²",
+        "einheit": "Stück",
+        "min": 20,
+        "max": 40,
+        "schritt": 1
+      },
+      {
+        "name": "verschnitt",
+        "label": "Verschnitt",
+        "einheit": "%",
+        "min": 5,
+        "max": 15,
+        "schritt": 5
+      }
     ],
     "schritte": [
       {
@@ -163,8 +223,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Die Sparrenlänge beträgt {sparren} m, die Gebindesteigung {steigung} cm. Wie viele Gebinde ergeben sich (aufgerundet)?",
     "parameter": [
-      { "name": "sparren", "label": "Sparrenlänge", "einheit": "m", "min": 4, "max": 10, "schritt": 0.5 },
-      { "name": "steigung", "label": "Gebindesteigung", "einheit": "cm", "min": 20, "max": 35, "schritt": 1 }
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "m",
+        "min": 4,
+        "max": 10,
+        "schritt": 0.5
+      },
+      {
+        "name": "steigung",
+        "label": "Gebindesteigung",
+        "einheit": "cm",
+        "min": 20,
+        "max": 35,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -185,7 +259,7 @@
     "quelle": "Rathscheck Schieferbibel (Lochung)",
     "konfidenz": "hoch",
     "frage": "Eine gelochte Schieferplatte im Schnitt: Benenne die markierten Stellen.",
-    "svg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Schieferplatte im Schnitt mit Lochung'><rect x='50' y='104' width='220' height='26' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='146' y1='104' x2='157' y2='130' stroke='currentColor' stroke-width='1.3'/><line x1='186' y1='104' x2='175' y2='130' stroke='currentColor' stroke-width='1.3'/><ellipse cx='166' cy='104' rx='20' ry='4' fill='none' stroke='#c07d4a' stroke-width='2'/><line x1='166' y1='106' x2='166' y2='152' stroke='#c07d4a' stroke-width='2'/><line x1='90' y1='104' x2='90' y2='82' stroke='#c07d4a' stroke-width='1.2'/><circle cx='90' cy='70' r='12' fill='#c07d4a'/><text x='90' y='75' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='90' y1='130' x2='90' y2='152' stroke='#c07d4a' stroke-width='1.2'/><circle cx='90' cy='164' r='12' fill='#c07d4a'/><text x='90' y='169' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='186' y1='101' x2='228' y2='84' stroke='#c07d4a' stroke-width='1.2'/><circle cx='242' cy='78' r='12' fill='#c07d4a'/><text x='242' y='83' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "svg": "<svg viewBox='0 0 380 142' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Gelochte Schieferplatte im Schnitt'><rect x='90' y='60' width='200' height='40' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M170 60 L210 60 L198 100 L182 100 Z' fill='none' stroke='#c07d4a' stroke-width='1.6'/><line x1='180' y1='78' x2='200' y2='78' stroke='#c07d4a' stroke-width='3'/><line x1='130' y1='108' x2='130' y2='100' stroke='#c07d4a' stroke-width='1'/><circle cx='130' cy='108' r='11' fill='#c07d4a'/><text x='130' y='112.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='130' y1='52' x2='130' y2='60' stroke='#c07d4a' stroke-width='1'/><circle cx='130' cy='52' r='11' fill='#c07d4a'/><text x='130' y='56.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='78' x2='202' y2='78' stroke='#c07d4a' stroke-width='1'/><circle cx='240' cy='78' r='11' fill='#c07d4a'/><text x='240' y='82.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
     "zuordnung": {
       "sichtseite": "Sichtseite",
       "rueckseite": "Rückseite",
@@ -220,7 +294,10 @@
     "konfidenz": "hoch",
     "begriff": "Gebindesteigung",
     "definition": "Der Anstieg der Schiefergebinde über die Dachfläche. Sie verhält sich reziprok zur Dachneigung: Je flacher das Dach, desto steiler muss das Gebinde angeordnet werden, damit das Wasser sicher abläuft.",
-    "bestandteile": ["Gebinde", "steigung"],
+    "bestandteile": [
+      "Gebinde",
+      "steigung"
+    ],
     "erklaerung": "Merke: Gebinde-steigung — flaches Dach, steiles Gebinde."
   },
   {

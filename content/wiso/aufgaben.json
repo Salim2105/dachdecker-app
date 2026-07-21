@@ -13,7 +13,9 @@
       "Immer genau sechs Monate",
       "Sie ist frei vereinbar"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das BBiG gibt einen Rahmen vor: mindestens ein Monat, höchstens vier Monate. Innerhalb dieses Rahmens wird die Dauer im Vertrag festgelegt."
   },
   {
@@ -30,7 +32,9 @@
       "Nur vom Ausbildungsbetrieb",
       "Gar nicht"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Genau dafür ist die Probezeit da: Beide Seiten prüfen, ob es passt. Nach der Probezeit kann der Betrieb nur noch aus wichtigem Grund fristlos kündigen."
   },
   {
@@ -47,7 +51,9 @@
       "Du kannst nur fristlos kündigen",
       "Nur der Betrieb darf kündigen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Wer die Berufsausbildung aufgeben oder sich in einem anderen Beruf ausbilden lassen will, kann mit vierwöchiger Frist kündigen. Der Betrieb hat dieses Recht nicht — er braucht einen wichtigen Grund."
   },
   {
@@ -64,7 +70,9 @@
       "Er ist freiwillig",
       "Er ersetzt den Ausbildungsvertrag"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Führen des Ausbildungsnachweises ist eine Pflicht nach BBiG — und ohne ordnungsgemäß geführten Nachweis wirst du nicht zur Gesellenprüfung zugelassen."
   },
   {
@@ -75,8 +83,15 @@
     "quelle": "Jugendarbeitsschutzgesetz (JArbSchG)",
     "konfidenz": "hoch",
     "frage": "Wie viele Stunden darf ein Auszubildender unter 18 Jahren höchstens täglich beschäftigt werden?",
-    "optionen": ["6 Stunden", "8 Stunden", "10 Stunden", "12 Stunden"],
-    "korrekt": [1],
+    "optionen": [
+      "6 Stunden",
+      "8 Stunden",
+      "10 Stunden",
+      "12 Stunden"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Jugendarbeitsschutzgesetz erlaubt höchstens acht Stunden täglich und 40 Stunden wöchentlich. Dazu kommen feste Ruhepausen, ein nach Alter gestaffelter Mindesturlaub und die ärztliche Erstuntersuchung vor Beschäftigungsbeginn."
   },
   {
@@ -93,7 +108,9 @@
       "Der Arbeitnehmer allein",
       "Der Staat"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Unfallversicherung ist die Ausnahme unter den fünf Zweigen: Sie wird allein vom Arbeitgeber getragen. Zuständig ist im Bauhauptgewerbe die BG BAU."
   },
   {
@@ -110,7 +127,9 @@
       "Hausratversicherung",
       "Rentenversicherung"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Die fünf Zweige sind Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Die Hausratversicherung ist eine private Sachversicherung."
   },
   {
@@ -127,7 +146,9 @@
       "BGB 4 Jahre, VOB/B 5 Jahre",
       "Beide 3 Jahre"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Nach BGB fünf Jahre ab Abnahme, nach der VOB/B bei Bauwerken vier Jahre. Welche Regelung gilt, hängt davon ab, was im Vertrag vereinbart wurde — der Unterschied ist ein ganzes Jahr Haftung."
   },
   {
@@ -138,8 +159,15 @@
     "quelle": "BGB §§ 631 ff. (Werkvertrag)",
     "konfidenz": "hoch",
     "frage": "Welche Vertragsart liegt vor, wenn ein Betrieb ein Dach eindeckt?",
-    "optionen": ["Kaufvertrag", "Werkvertrag", "Mietvertrag", "Dienstvertrag"],
-    "korrekt": [1],
+    "optionen": [
+      "Kaufvertrag",
+      "Werkvertrag",
+      "Mietvertrag",
+      "Dienstvertrag"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beim Werkvertrag wird ein Erfolg geschuldet — das mangelfreie Werk. Beim Kaufvertrag wird nur eine Sache geliefert, beim Dienstvertrag nur die Tätigkeit, nicht das Ergebnis."
   },
   {
@@ -156,7 +184,9 @@
       "Der Tarifvertrag gilt immer, egal was im Arbeitsvertrag steht",
       "Es gilt immer die ältere Regelung"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Der Tarifvertrag ist die Untergrenze. Besser darf der Arbeitsvertrag sein, schlechter nicht."
   },
   {
@@ -173,7 +203,9 @@
       "Es ersetzt die Rentenversicherung",
       "Es finanziert die Berufsschule"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Dachdeckerhandwerk ist stark saisonabhängig, Beschäftigte wechseln häufiger den Betrieb. Über die Sozialkasse gehen die Urlaubsansprüche dabei nicht verloren. Dazu kommen Ausbildungsförderung und zusätzliche Altersversorgung."
   },
   {
@@ -190,7 +222,9 @@
       "Teil III — wirtschaftlich und rechtlich",
       "Teil IV — Berufs- und Arbeitspädagogik"
     ],
-    "korrekt": [3],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Teil IV vermittelt die berufs- und arbeitspädagogischen Kenntnisse. Erst damit darfst du selbst ausbilden."
   },
   {
@@ -202,8 +236,15 @@
     "konfidenz": "hoch",
     "text": "Das Dachdeckerhandwerk ist ein {{zulassungspflichtiges}} Handwerk der Anlage A. Für die selbstständige Führung eines Betriebs ist grundsätzlich der {{Meisterbrief}} erforderlich.",
     "akzeptiert": {
-      "zulassungspflichtiges": ["zulassungspflichtig", "meisterpflichtiges"],
-      "Meisterbrief": ["Meistertitel", "Meisterprüfung", "Meister"]
+      "zulassungspflichtiges": [
+        "zulassungspflichtig",
+        "meisterpflichtiges"
+      ],
+      "Meisterbrief": [
+        "Meistertitel",
+        "Meisterprüfung",
+        "Meister"
+      ]
     },
     "erklaerung": "Der Betrieb wird bei der Handwerkskammer in die Handwerksrolle eingetragen. Die Anlage A umfasst die Handwerke, bei denen Gefahr für Gesundheit oder Leben besteht oder die besonders ausbildungsintensiv sind."
   },
@@ -216,8 +257,15 @@
     "konfidenz": "hoch",
     "text": "Der {{Manteltarifvertrag}} regelt die allgemeinen Arbeitsbedingungen wie Arbeitszeit und Urlaub. Ein Betriebsrat kann in Betrieben mit mindestens {{5}} ständigen wahlberechtigten Arbeitnehmern gewählt werden.",
     "akzeptiert": {
-      "Manteltarifvertrag": ["Rahmentarifvertrag", "Mantel-Tarifvertrag", "MTV"],
-      "5": ["fünf", "5 "]
+      "Manteltarifvertrag": [
+        "Rahmentarifvertrag",
+        "Mantel-Tarifvertrag",
+        "MTV"
+      ],
+      "5": [
+        "fünf",
+        "5 "
+      ]
     },
     "erklaerung": "Der Lohn- oder Gehaltstarifvertrag regelt dagegen die Entgelte und läuft meist deutlich kürzer. Gibt es einen Betriebsrat und mindestens fünf jugendliche Beschäftigte oder Auszubildende, kann zusätzlich eine JAV gewählt werden."
   },
@@ -229,7 +277,15 @@
     "quelle": "BGB §§ 631 ff., § 634a (Werkvertrag und Abnahme)",
     "konfidenz": "hoch",
     "text": "Mit der {{Abnahme}} des Werks beginnt die Verjährungsfrist für Mängelansprüche. Bei Bauwerken beträgt sie nach BGB {{5}} Jahre.",
-    "akzeptiert": { "Abnahme": ["abnahme", "Bauabnahme"], "5": ["fünf"] },
+    "akzeptiert": {
+      "Abnahme": [
+        "abnahme",
+        "Bauabnahme"
+      ],
+      "5": [
+        "fünf"
+      ]
+    },
     "erklaerung": "Die Abnahme ist der zentrale Zeitpunkt im Werkvertrag: Vergütung wird fällig, Gefahr geht über, Verjährung beginnt und die Beweislast kehrt sich um."
   },
   {
@@ -241,10 +297,38 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für einen Auftrag fallen {material} € Materialkosten und {lohn} € Lohnkosten an. Darauf werden {gemein} % Gemeinkosten und anschließend {gewinn} % Gewinn aufgeschlagen. Zuletzt kommen 19 % Umsatzsteuer dazu. Wie hoch ist der Endpreis für den Kunden?",
     "parameter": [
-      { "name": "material", "label": "Materialkosten", "einheit": "€", "min": 800, "max": 6000, "schritt": 100 },
-      { "name": "lohn", "label": "Lohnkosten", "einheit": "€", "min": 600, "max": 5000, "schritt": 100 },
-      { "name": "gemein", "label": "Gemeinkostenzuschlag", "einheit": "%", "min": 10, "max": 40, "schritt": 5 },
-      { "name": "gewinn", "label": "Gewinnzuschlag", "einheit": "%", "min": 3, "max": 15, "schritt": 1 }
+      {
+        "name": "material",
+        "label": "Materialkosten",
+        "einheit": "€",
+        "min": 800,
+        "max": 6000,
+        "schritt": 100
+      },
+      {
+        "name": "lohn",
+        "label": "Lohnkosten",
+        "einheit": "€",
+        "min": 600,
+        "max": 5000,
+        "schritt": 100
+      },
+      {
+        "name": "gemein",
+        "label": "Gemeinkostenzuschlag",
+        "einheit": "%",
+        "min": 10,
+        "max": 40,
+        "schritt": 5
+      },
+      {
+        "name": "gewinn",
+        "label": "Gewinnzuschlag",
+        "einheit": "%",
+        "min": 3,
+        "max": 15,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -284,9 +368,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Materialrechnung lautet über {listenpreis} € netto. Der Lieferant gewährt {rabatt} % Rabatt und bei Zahlung innerhalb von 10 Tagen zusätzlich {skonto} % Skonto. Wie viel ist netto zu zahlen?",
     "parameter": [
-      { "name": "listenpreis", "label": "Listenpreis netto", "einheit": "€", "min": 500, "max": 8000, "schritt": 100 },
-      { "name": "rabatt", "label": "Rabatt", "einheit": "%", "min": 3, "max": 20, "schritt": 1 },
-      { "name": "skonto", "label": "Skonto", "einheit": "%", "min": 1, "max": 3, "schritt": 0.5 }
+      {
+        "name": "listenpreis",
+        "label": "Listenpreis netto",
+        "einheit": "€",
+        "min": 500,
+        "max": 8000,
+        "schritt": 100
+      },
+      {
+        "name": "rabatt",
+        "label": "Rabatt",
+        "einheit": "%",
+        "min": 3,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "skonto",
+        "label": "Skonto",
+        "einheit": "%",
+        "min": 1,
+        "max": 3,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
       {
@@ -313,7 +418,7 @@
     "quelle": "Handwerksordnung; Berufsbildungsgesetz (Aufstiegsfortbildung)",
     "konfidenz": "hoch",
     "frage": "Die Stufen der beruflichen Aufstiegsfortbildung im Dachdeckerhandwerk: Benenne die markierten Stufen.",
-    "svg": "<svg viewBox='0 0 340 220' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Stufen der beruflichen Fortbildung'><line x1='14' y1='200' x2='330' y2='200' stroke='currentColor' stroke-width='1.6'/><rect x='20' y='170' width='70' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='90' y='140' width='70' height='60' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='160' y='105' width='70' height='95' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='230' y='60' width='80' height='140' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M8 196 L8 40' fill='none' stroke='currentColor' stroke-width='1'/><path d='M8 40 L5 47 M8 40 L11 47' fill='none' stroke='currentColor' stroke-width='1'/><text x='14' y='36' fill='currentColor' font-size='9'>Qualifikation</text><circle cx='55' cy='154' r='13' fill='#c07d4a'/><text x='55' y='159' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='125' cy='122' r='13' fill='#c07d4a'/><text x='125' y='127' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='195' cy='86' r='13' fill='#c07d4a'/><text x='195' y='91' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='270' cy='40' r='13' fill='#c07d4a'/><text x='270' y='45' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 202' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Stufen der beruflichen Aufstiegsfortbildung'><rect x='20' y='120' width='70' height='40' fill='none' stroke='currentColor' stroke-width='1.8'/><circle cx='55' cy='104' r='11' fill='#c07d4a'/><text x='55' y='108.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><rect x='110' y='98' width='70' height='62' fill='none' stroke='currentColor' stroke-width='1.8'/><circle cx='145' cy='82' r='11' fill='#c07d4a'/><text x='145' y='86.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><rect x='200' y='72' width='70' height='88' fill='none' stroke='currentColor' stroke-width='1.8'/><circle cx='235' cy='56' r='11' fill='#c07d4a'/><text x='235' y='60.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><rect x='290' y='40' width='70' height='120' fill='none' stroke='#c07d4a' stroke-width='1.8'/><circle cx='325' cy='24' r='11' fill='#c07d4a'/><text x='325' y='28.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text><line x1='14' y1='160' x2='366' y2='160' stroke='currentColor' stroke-width='1.6'/></svg>",
     "zuordnung": {
       "geselle": "Geselle",
       "vorarbeiter": "Vorarbeiter",
@@ -367,7 +472,10 @@
     "konfidenz": "hoch",
     "begriff": "Fortbildung",
     "definition": "Eine Qualifizierung, die auf dem bereits erlernten Beruf aufbaut und die beruflichen Kenntnisse und Fertigkeiten erhält, erweitert oder an neue Entwicklungen anpasst — oder zu einem beruflichen Aufstieg führt.",
-    "bestandteile": ["Anpassungsfortbildung", "Aufstiegsfortbildung (Vorarbeiter, Werkpolier, Meister)"],
+    "bestandteile": [
+      "Anpassungsfortbildung",
+      "Aufstiegsfortbildung (Vorarbeiter, Werkpolier, Meister)"
+    ],
     "erklaerung": "Abzugrenzen von der Umschulung: Die führt in einen anderen Beruf, während die Fortbildung auf dem vorhandenen aufbaut."
   },
   {

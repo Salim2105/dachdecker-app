@@ -13,7 +13,9 @@
       "Zement, Kalk und Gips",
       "Bitumen, Kies und Sand"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beton besteht aus Zement (Bindemittel), Gesteinskörnung (Sand und Kies) und Wasser. Zusatzmittel und Zusatzstoffe kommen bei Bedarf dazu."
   },
   {
@@ -24,8 +26,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
     "konfidenz": "hoch",
     "frage": "Welche Kräfte nimmt der Bewehrungsstahl im Stahlbeton auf?",
-    "optionen": ["Druckkräfte", "Zugkräfte", "Windkräfte", "Auftriebskräfte"],
-    "korrekt": [1],
+    "optionen": [
+      "Druckkräfte",
+      "Zugkräfte",
+      "Windkräfte",
+      "Auftriebskräfte"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beton ist stark auf Druck, aber schwach auf Zug. Deshalb übernimmt der Bewehrungsstahl die Zugkräfte — zusammen ergeben sie den Verbundbaustoff Stahlbeton."
   },
   {
@@ -42,7 +51,9 @@
       "Der Beton bindet gar nicht mehr ab",
       "Der Beton wird schneller kalt"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Ein niedriger w/z-Wert bedeutet wenig Wasser je Zement: Der Beton wird fester und dichter, aber steifer und schwerer einzubauen. Zu viel Wasser macht ihn dagegen porös und wenig dauerhaft."
   },
   {
@@ -59,7 +70,9 @@
       "Genau in der Mitte",
       "Die Lage ist egal"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Platte biegt sich unter Last nach unten durch: Oben entsteht Druck, unten Zug. Die Bewehrung gehört immer in die Zugzone — hier also nach unten. Beim auskragenden Balkon ist es umgekehrt (oben)."
   },
   {
@@ -76,7 +89,9 @@
       "Sie schützt den Stahl vor Korrosion und im Brandfall vor Hitze",
       "Sie beschleunigt das Abbinden"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Die Betondeckung ist der Abstand von der Bewehrung zur Bauteiloberfläche. Sie schützt den Stahl vor Rost und vor Hitze im Brandfall. Abstandhalter sichern dieses Maß beim Betonieren."
   },
   {
@@ -93,7 +108,9 @@
       "Damit die Schalung leichter abgeht",
       "Damit er heller wird"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Zement bindet nicht durch Trocknen ab, sondern durch die chemische Reaktion mit Wasser (Hydratation). Trocknet der Beton zu früh aus, erreicht er seine Festigkeit nicht."
   },
   {
@@ -104,7 +121,16 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
     "konfidenz": "hoch",
     "text": "Beton nimmt vor allem {{Druck}} auf, der Bewehrungsstahl übernimmt den {{Zug}}. Zusammen ergeben sie den Verbundbaustoff Stahlbeton.",
-    "akzeptiert": { "Druck": ["Druckkräfte", "Druckkraefte"], "Zug": ["Zugkräfte", "Zugkraefte"] },
+    "akzeptiert": {
+      "Druck": [
+        "Druckkräfte",
+        "Druckkraefte"
+      ],
+      "Zug": [
+        "Zugkräfte",
+        "Zugkraefte"
+      ]
+    },
     "erklaerung": "Merksatz: Beton drückt, Stahl zieht. Deshalb liegt die Bewehrung immer dort, wo das Bauteil gezogen wird."
   },
   {
@@ -115,7 +141,14 @@
     "quelle": "Betontechnologie-Grundlagen (w/z-Wert)",
     "konfidenz": "hoch",
     "text": "Der Wasserzementwert ist das Verhältnis von {{Wasser}} zu {{Zement}}. Ein niedriger Wert ergibt festeren Beton.",
-    "akzeptiert": { "Wasser": ["Wassermasse"], "Zement": ["Zementmasse"] },
+    "akzeptiert": {
+      "Wasser": [
+        "Wassermasse"
+      ],
+      "Zement": [
+        "Zementmasse"
+      ]
+    },
     "erklaerung": "w/z = Wassermasse geteilt durch Zementmasse. Beispiel: 160 kg Wasser auf 320 kg Zement ergibt einen w/z-Wert von 0,5."
   },
   {
@@ -127,8 +160,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für eine Betonmischung werden {wasser} kg Wasser und {zement} kg Zement verwendet. Wie groß ist der Wasserzementwert (w/z-Wert)?",
     "parameter": [
-      { "name": "wasser", "label": "Wasser", "einheit": "kg", "min": 140, "max": 200, "schritt": 5 },
-      { "name": "zement", "label": "Zement", "einheit": "kg", "min": 280, "max": 420, "schritt": 10 }
+      {
+        "name": "wasser",
+        "label": "Wasser",
+        "einheit": "kg",
+        "min": 140,
+        "max": 200,
+        "schritt": 5
+      },
+      {
+        "name": "zement",
+        "label": "Zement",
+        "einheit": "kg",
+        "min": 280,
+        "max": 420,
+        "schritt": 10
+      }
     ],
     "schritte": [
       {
@@ -150,9 +197,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Streifenfundament ist {laenge} m lang, {breite} m breit und {hoehe} m hoch. Wie viel Beton wird benötigt?",
     "parameter": [
-      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 3, "max": 15, "schritt": 0.5 },
-      { "name": "breite", "label": "Breite", "einheit": "m", "min": 0.3, "max": 0.8, "schritt": 0.05 },
-      { "name": "hoehe", "label": "Höhe", "einheit": "m", "min": 0.4, "max": 1, "schritt": 0.1 }
+      {
+        "name": "laenge",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 3,
+        "max": 15,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Breite",
+        "einheit": "m",
+        "min": 0.3,
+        "max": 0.8,
+        "schritt": 0.05
+      },
+      {
+        "name": "hoehe",
+        "label": "Höhe",
+        "einheit": "m",
+        "min": 0.4,
+        "max": 1,
+        "schritt": 0.1
+      }
     ],
     "schritte": [
       {
@@ -173,7 +241,7 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4",
     "konfidenz": "hoch",
     "frage": "Ein Stahlbetonträger liegt auf zwei Auflagern und wird belastet. Benenne die markierten Bereiche.",
-    "svg": "<svg viewBox='0 0 320 200' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Stahlbetontraeger auf zwei Auflagern'><path d='M170 40 L170 70 M164 62 L170 70 L176 62' fill='none' stroke='currentColor' stroke-width='1.5'/><rect x='50' y='78' width='220' height='46' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='50' y1='101' x2='270' y2='101' stroke='currentColor' stroke-width='0.9' stroke-dasharray='4 4'/><line x1='58' y1='116' x2='262' y2='116' stroke='#c07d4a' stroke-width='3'/><path d='M64 124 L54 142 L74 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M256 124 L246 142 L266 142 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='44' y1='142' x2='84' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='236' y1='142' x2='276' y2='142' stroke='currentColor' stroke-width='1.2'/><line x1='92' y1='86' x2='92' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='92' cy='50' r='12' fill='#c07d4a'/><text x='92' y='55' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='270' y1='113' x2='282' y2='113' stroke='#c07d4a' stroke-width='1.2'/><circle cx='294' cy='113' r='12' fill='#c07d4a'/><text x='294' y='118' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='150' y1='116' x2='150' y2='164' stroke='#c07d4a' stroke-width='1.2'/><circle cx='150' cy='176' r='12' fill='#c07d4a'/><text x='150' y='181' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "svg": "<svg viewBox='0 0 380 154' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Stahlbetonträger unter Last: benenne Druck-, Zugzone und Bewehrung'><rect x='60' y='50' width='260' height='54' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M60 112 L72 124 L48 124' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M320 112 L332 124 L308 124' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='72' y1='96' x2='308' y2='96' stroke='#c07d4a' stroke-width='2.6'/><line x1='140' y1='32' x2='140' y2='48' stroke='currentColor' stroke-width='1.3'/><line x1='140' y1='48' x2='138.4' y2='41.7' stroke='currentColor' stroke-width='1.3'/><line x1='140' y1='48' x2='141.6' y2='41.7' stroke='currentColor' stroke-width='1.3'/><line x1='190' y1='32' x2='190' y2='48' stroke='currentColor' stroke-width='1.3'/><line x1='190' y1='48' x2='188.4' y2='41.7' stroke='currentColor' stroke-width='1.3'/><line x1='190' y1='48' x2='191.6' y2='41.7' stroke='currentColor' stroke-width='1.3'/><line x1='240' y1='32' x2='240' y2='48' stroke='currentColor' stroke-width='1.3'/><line x1='240' y1='48' x2='238.4' y2='41.7' stroke='currentColor' stroke-width='1.3'/><line x1='240' y1='48' x2='241.6' y2='41.7' stroke='currentColor' stroke-width='1.3'/><circle cx='190' cy='62' r='11' fill='#c07d4a'/><text x='190' y='66.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='250' cy='90' r='11' fill='#c07d4a'/><text x='250' y='94.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='110' y1='96' x2='90' y2='96' stroke='#c07d4a' stroke-width='1'/><circle cx='110' cy='96' r='11' fill='#c07d4a'/><text x='110' y='100.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
     "zuordnung": {
       "druckzone": "Druckzone",
       "zugzone": "Zugzone",
@@ -208,7 +276,11 @@
     "konfidenz": "hoch",
     "begriff": "Wasserzementwert",
     "definition": "Das Verhältnis von Wassermasse zu Zementmasse in einer Betonmischung (w/z-Wert). Je kleiner er ist, desto fester und dichter wird der Beton — aber desto schwerer lässt er sich verarbeiten.",
-    "bestandteile": ["Wasser", "zement", "wert"],
+    "bestandteile": [
+      "Wasser",
+      "zement",
+      "wert"
+    ],
     "erklaerung": "Merke die drei Wortteile: Wasser-zement-wert."
   },
   {
@@ -220,7 +292,10 @@
     "konfidenz": "hoch",
     "begriff": "Betondeckung",
     "definition": "Der Abstand zwischen der Bewehrung und der Bauteiloberfläche. Sie schützt den Stahl vor Korrosion und vor Hitze im Brandfall und wird beim Betonieren mit Abstandhaltern gesichert.",
-    "bestandteile": ["Beton", "deckung"],
+    "bestandteile": [
+      "Beton",
+      "deckung"
+    ],
     "erklaerung": "Merke: Beton-deckung — der Beton deckt den Stahl ab."
   }
 ]

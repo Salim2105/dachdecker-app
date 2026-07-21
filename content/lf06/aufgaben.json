@@ -13,7 +13,9 @@
       "Er ist besonders schwer",
       "Er ist besonders druckfest"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "λ beschreibt, wie gut ein Stoff Wärme leitet. Bei Dämmstoffen gilt: je kleiner λ, desto weniger Wärme geht durch — also desto besser die Dämmwirkung."
   },
   {
@@ -24,8 +26,15 @@
     "quelle": "Dämmstoff-Grundlagen (Brandverhalten)",
     "konfidenz": "hoch",
     "frage": "Welcher Dämmstoff ist nicht brennbar?",
-    "optionen": ["EPS (Styropor)", "XPS", "Mineralwolle", "PUR-Hartschaum"],
-    "korrekt": [2],
+    "optionen": [
+      "EPS (Styropor)",
+      "XPS",
+      "Mineralwolle",
+      "PUR-Hartschaum"
+    ],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Mineralwolle (Glas- und Steinwolle) ist nicht brennbar und wird deshalb dort eingesetzt, wo der Brandschutz entscheidend ist. EPS, XPS und PUR sind dagegen brennbar."
   },
   {
@@ -36,8 +45,15 @@
     "quelle": "Dämmstoff-Grundlagen (Einsatzbereiche)",
     "konfidenz": "hoch",
     "frage": "Welcher Dämmstoff eignet sich für druckbelastete und feuchte Bereiche, etwa das Umkehrdach?",
-    "optionen": ["Mineralwolle", "XPS", "Zellulose", "Hanf"],
-    "korrekt": [1],
+    "optionen": [
+      "Mineralwolle",
+      "XPS",
+      "Zellulose",
+      "Hanf"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "XPS ist druckfest und nimmt praktisch kein Wasser auf. Deshalb wird es dort verwendet, wo Last und Feuchtigkeit zusammenkommen — Umkehrdach, Perimeterdämmung, unter Terrassen."
   },
   {
@@ -48,8 +64,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6",
     "konfidenz": "hoch",
     "frage": "Welche Patina bildet Kupfer im Laufe der Zeit?",
-    "optionen": ["Eine blaugraue Patina", "Eine grüne Patina", "Eine rostbraune Schicht", "Gar keine"],
-    "korrekt": [1],
+    "optionen": [
+      "Eine blaugraue Patina",
+      "Eine grüne Patina",
+      "Eine rostbraune Schicht",
+      "Gar keine"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Kupfer bildet die charakteristische grüne Patina, Titanzink eine blaugraue. Beide Schichten schützen das Metall darunter und sind erwünscht — anders als Weißrost an der Blechrückseite."
   },
   {
@@ -66,7 +89,9 @@
       "Wie schwer sie ist",
       "Wie hoch ihre Reißfestigkeit ist"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Der sd-Wert ist die wasserdampfdiffusionsäquivalente Luftschichtdicke in Metern: sd = µ · d. Eine Dampfbremse hat einen großen sd-Wert, eine diffusionsoffene Unterdeckbahn einen kleinen."
   },
   {
@@ -77,8 +102,15 @@
     "quelle": "Fachregeln Bauspenglerarbeiten (elektrochemische Spannungsreihe)",
     "konfidenz": "hoch",
     "frage": "Welches Metall darf nicht oberhalb von Titanzink eingebaut werden?",
-    "optionen": ["Aluminium", "Edelstahl", "Kupfer", "Verzinkter Stahl"],
-    "korrekt": [2],
+    "optionen": [
+      "Aluminium",
+      "Edelstahl",
+      "Kupfer",
+      "Verzinkter Stahl"
+    ],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Abfließendes Regenwasser schwemmt Kupferionen nach unten und zerstört dort das unedlere Titanzink. Umgekehrt — Zink über Kupfer — ist es unkritisch."
   },
   {
@@ -89,7 +121,15 @@
     "quelle": "Bauphysik-Grundlagen (Dämmwirkung)",
     "konfidenz": "hoch",
     "text": "Dämmstoffe wirken, weil sie viel ruhende {{Luft}} einschließen. Je {{kleiner}} die Wärmeleitfähigkeit λ ist, desto besser dämmen sie.",
-    "akzeptiert": { "Luft": ["Luft in Poren"], "kleiner": ["geringer", "niedriger"] },
+    "akzeptiert": {
+      "Luft": [
+        "Luft in Poren"
+      ],
+      "kleiner": [
+        "geringer",
+        "niedriger"
+      ]
+    },
     "erklaerung": "Ruhende Luft leitet Wärme schlecht. Deshalb sind gute Dämmstoffe leicht und porig — und deshalb verlieren sie ihre Wirkung, wenn sie durchfeuchtet oder zusammengedrückt werden."
   },
   {
@@ -100,7 +140,16 @@
     "quelle": "Bauphysik-Grundlagen (sd-Wert)",
     "konfidenz": "hoch",
     "text": "Der sd-Wert berechnet sich aus der Diffusionswiderstandszahl µ mal der {{Dicke}}. Eine Dampfbremse hat einen {{großen}} sd-Wert.",
-    "akzeptiert": { "Dicke": ["Schichtdicke", "d"], "großen": ["grossen", "hohen"] },
+    "akzeptiert": {
+      "Dicke": [
+        "Schichtdicke",
+        "d"
+      ],
+      "großen": [
+        "grossen",
+        "hohen"
+      ]
+    },
     "erklaerung": "sd = µ · d, angegeben in Metern. Große sd-Werte bremsen den Wasserdampf stark (Dampfbremse), kleine lassen ihn passieren (diffusionsoffene Unterdeckbahn)."
   },
   {
@@ -112,8 +161,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Dampfbremse ist {d} mm dick und hat eine Diffusionswiderstandszahl µ von {mu}. Wie groß ist ihr sd-Wert?",
     "parameter": [
-      { "name": "d", "label": "Dicke", "einheit": "mm", "min": 0.2, "max": 1, "schritt": 0.1 },
-      { "name": "mu", "label": "µ-Wert", "einheit": "", "min": 10000, "max": 100000, "schritt": 10000 }
+      {
+        "name": "d",
+        "label": "Dicke",
+        "einheit": "mm",
+        "min": 0.2,
+        "max": 1,
+        "schritt": 0.1
+      },
+      {
+        "name": "mu",
+        "label": "µ-Wert",
+        "einheit": "",
+        "min": 10000,
+        "max": 100000,
+        "schritt": 10000
+      }
     ],
     "schritte": [
       {
@@ -135,8 +198,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Wärmedurchlasswiderstand von R = {r} m²K/W soll erreicht werden. Der Dämmstoff hat eine Wärmeleitfähigkeit λ von {lambda} W/(m·K). Wie dick muss die Dämmschicht sein?",
     "parameter": [
-      { "name": "r", "label": "geforderter R-Wert", "einheit": "m²K/W", "min": 3, "max": 8, "schritt": 0.5 },
-      { "name": "lambda", "label": "Wärmeleitfähigkeit", "einheit": "W/(m·K)", "min": 0.032, "max": 0.045, "schritt": 0.001 }
+      {
+        "name": "r",
+        "label": "geforderter R-Wert",
+        "einheit": "m²K/W",
+        "min": 3,
+        "max": 8,
+        "schritt": 0.5
+      },
+      {
+        "name": "lambda",
+        "label": "Wärmeleitfähigkeit",
+        "einheit": "W/(m·K)",
+        "min": 0.032,
+        "max": 0.045,
+        "schritt": 0.001
+      }
     ],
     "schritte": [
       {
@@ -157,7 +234,7 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; IVPU-Planungshilfen",
     "konfidenz": "hoch",
     "frage": "Ein Sparren im Querschnitt mit drei möglichen Dämmlagen: Benenne die markierten Lagen.",
-    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Daemmlagen am Sparren'><line x1='50' y1='52' x2='270' y2='52' stroke='currentColor' stroke-width='1.6'/><rect x='70' y='60' width='180' height='24' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='78' y1='84' x2='96' y2='60' stroke='currentColor' stroke-width='0.7'/><line x1='112' y1='84' x2='130' y2='60' stroke='currentColor' stroke-width='0.7'/><line x1='146' y1='84' x2='164' y2='60' stroke='currentColor' stroke-width='0.7'/><line x1='180' y1='84' x2='198' y2='60' stroke='currentColor' stroke-width='0.7'/><rect x='146' y='88' width='28' height='68' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='70' y='88' width='72' height='68' fill='none' stroke='currentColor' stroke-width='1.2'/><line x1='78' y1='156' x2='104' y2='88' stroke='currentColor' stroke-width='0.7'/><line x1='112' y1='156' x2='138' y2='88' stroke='currentColor' stroke-width='0.7'/><rect x='178' y='88' width='72' height='68' fill='none' stroke='currentColor' stroke-width='1.2'/><line x1='186' y1='156' x2='212' y2='88' stroke='currentColor' stroke-width='0.7'/><line x1='220' y1='156' x2='246' y2='88' stroke='currentColor' stroke-width='0.7'/><rect x='70' y='160' width='180' height='18' fill='none' stroke='currentColor' stroke-width='1.3'/><line x1='78' y1='178' x2='92' y2='160' stroke='currentColor' stroke-width='0.7'/><line x1='112' y1='178' x2='126' y2='160' stroke='currentColor' stroke-width='0.7'/><line x1='146' y1='178' x2='160' y2='160' stroke='currentColor' stroke-width='0.7'/><line x1='180' y1='178' x2='194' y2='160' stroke='currentColor' stroke-width='0.7'/><text x='153' y='126' fill='currentColor' font-size='8' text-anchor='middle'>Sparren</text><line x1='250' y1='72' x2='268' y2='60' stroke='#c07d4a' stroke-width='1.2'/><circle cx='282' cy='52' r='12' fill='#c07d4a'/><text x='282' y='57' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='250' y1='122' x2='270' y2='122' stroke='#c07d4a' stroke-width='1.2'/><circle cx='284' cy='122' r='12' fill='#c07d4a'/><text x='284' y='127' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='250' y1='169' x2='268' y2='182' stroke='#c07d4a' stroke-width='1.2'/><circle cx='282' cy='192' r='12' fill='#c07d4a'/><text x='282' y='197' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "svg": "<svg viewBox='0 0 380 204' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sparren mit drei möglichen Dämmlagen'><rect x='150' y='40' width='30' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='150' y='24' width='80' height='16' fill='#c07d4a' stroke='none' opacity='0.2'/><rect x='150' y='24' width='80' height='16' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><rect x='180' y='40' width='50' height='120' fill='#c07d4a' stroke='none' opacity='0.2'/><rect x='180' y='40' width='50' height='120' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><rect x='150' y='160' width='80' height='14' fill='#c07d4a' stroke='none' opacity='0.2'/><rect x='150' y='160' width='80' height='14' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><circle cx='250' cy='32' r='11' fill='#c07d4a'/><text x='250' y='36.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='250' cy='100' r='11' fill='#c07d4a'/><text x='250' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='250' cy='167' r='11' fill='#c07d4a'/><text x='250' y='171.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
     "zuordnung": {
       "aufsparren": "Aufsparrendämmung",
       "zwischensparren": "Zwischensparrendämmung",
@@ -193,7 +270,11 @@
     "konfidenz": "hoch",
     "begriff": "Wärmeleitfähigkeit",
     "definition": "Der λ-Wert in W/(m·K): Er gibt an, wie gut ein Stoff Wärme leitet. Bei Dämmstoffen gilt — je kleiner λ, desto besser die Dämmwirkung.",
-    "bestandteile": ["Wärme", "leit", "fähigkeit"],
+    "bestandteile": [
+      "Wärme",
+      "leit",
+      "fähigkeit"
+    ],
     "erklaerung": "Merke die drei Wortteile: Wärme-leit-fähigkeit — wie fähig der Stoff ist, Wärme zu leiten."
   },
   {
@@ -205,7 +286,10 @@
     "konfidenz": "hoch",
     "begriff": "Wärmebrücke",
     "definition": "Eine Stelle im Bauteil, an der deutlich mehr Wärme nach außen fließt als in der Fläche — zum Beispiel der Sparren zwischen der Dämmung. Dort wird es innen kälter, was Tauwasser und Schimmel begünstigt.",
-    "bestandteile": ["Wärme", "brücke"],
+    "bestandteile": [
+      "Wärme",
+      "brücke"
+    ],
     "erklaerung": "Merke: Wärme-brücke — die Wärme nimmt dort die Abkürzung nach draußen."
   }
 ]

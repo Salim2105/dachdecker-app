@@ -13,7 +13,9 @@
       "Sobald Licht auf das Modul fällt — auch bei Bewölkung",
       "Nur wenn es an das Netz angeschlossen ist"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Das ist die zentrale Gefahr bei PV-Anlagen: Der Generator lässt sich nicht abschalten. Sobald Licht auf das Modul fällt, liegt Spannung an — bei in Reihe geschalteten Modulen addieren sich die Spannungen zu gefährlichen Werten."
   },
   {
@@ -30,7 +32,9 @@
       "Die Strings zusammenstecken und einspeisen",
       "Die Anlage in Betrieb nehmen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Unterkonstruktion, regensichere Durchdringungen und mechanische Befestigung sind Dachdeckerarbeiten. Der elektrische Anschluss — Verkabelung, Wechselrichter, Einspeisung — gehört zur Elektrofachkraft."
   },
   {
@@ -47,7 +51,9 @@
       "Beide erzeugen Strom, nur mit anderer Technik",
       "Solarthermie funktioniert nur im Winter"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Photovoltaik wandelt Licht direkt in elektrischen Strom um (Leistung in kWp). Solarthermie erhitzt ein Wärmeträgermedium im Kollektor und gibt die Wärme an einen Speicher ab."
   },
   {
@@ -64,7 +70,9 @@
       "Sie darf nur auf Flachdächern eingebaut werden",
       "Sie erzeugt keinen Strom, sondern nur Wärme"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Bei der Indachmontage ersetzen die Module die Deckung. Damit sind sie selbst für die Regensicherheit verantwortlich — die Anforderungen an Anschlüsse und Dichtheit steigen deutlich gegenüber der Aufdachmontage."
   },
   {
@@ -81,7 +89,9 @@
       "Fangstange, Dachhaken, Schneefang",
       "Überspannungsschutz, Potentialausgleich, Trennfunkenstrecke"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Die drei Teile bilden zusammen den Weg für den Blitzstrom: Die Fangeinrichtung fängt ihn auf dem Dach ab, die Ableitungen führen ihn an der Fassade herunter, die Erdungsanlage leitet ihn ins Erdreich."
   },
   {
@@ -98,7 +108,9 @@
       "Damit sie besser befestigt ist",
       "Um die Windlast zu verringern"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Metallische Aufbauten sollen nicht als Einschlagpunkt dienen. Die Fangstange übernimmt das — dabei ist ein berechneter Trennungsabstand einzuhalten, damit der Blitzstrom nicht auf die Anlage überspringt."
   },
   {
@@ -115,7 +127,9 @@
       "An der Dachrinne",
       "An der Unterspannbahn"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Bei hoher Schneelast wirken erhebliche Kräfte. Ein Schneefang, der nur an der Lattung hängt, reißt aus. Die Last muss über geeignete Halter in Sparren oder Tragkonstruktion abgeleitet werden."
   },
   {
@@ -132,7 +146,9 @@
       "Die Windlast bleibt gleich",
       "Die Windlast spielt keine Rolle"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Je steiler die Module stehen, desto größer ist die Angriffsfläche für den Wind. Deshalb muss die Anlage entsprechend mechanisch befestigt oder ausreichend ballastiert werden."
   },
   {
@@ -144,7 +160,10 @@
     "konfidenz": "hoch",
     "text": "Die erste der fünf Sicherheitsregeln der Elektrotechnik lautet {{freischalten}}, die zweite {{gegen Wiedereinschalten sichern}}.",
     "akzeptiert": {
-      "freischalten": ["Freischalten", "abschalten"],
+      "freischalten": [
+        "Freischalten",
+        "abschalten"
+      ],
       "gegen Wiedereinschalten sichern": [
         "Gegen Wiedereinschalten sichern",
         "gegen wiedereinschalten sichern",
@@ -162,8 +181,14 @@
     "konfidenz": "hoch",
     "text": "Die Leistung einer PV-Anlage wird in {{kWp}} angegeben. Der {{Wechselrichter}} wandelt den Gleichstrom der Module in Wechselstrom um.",
     "akzeptiert": {
-      "kWp": ["Kilowatt-Peak", "Kilowattpeak", "kWpeak"],
-      "Wechselrichter": ["Inverter"]
+      "kWp": [
+        "Kilowatt-Peak",
+        "Kilowattpeak",
+        "kWpeak"
+      ],
+      "Wechselrichter": [
+        "Inverter"
+      ]
     },
     "erklaerung": "kWp ist die Leistung unter genormten Prüfbedingungen und damit eine Vergleichsgröße — nicht die tatsächliche Leistung an einem beliebigen Tag."
   },
@@ -176,10 +201,38 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Dachfläche von {flaeche} m² soll mit PV-Modulen belegt werden. Ein Modul misst {mb} m × {mh} m. Davon sind nur {nutzbar} % der Fläche belegbar (Abstände, Randzonen, Einbauteile). Wie viele Module passen darauf (abgerundet)?",
     "parameter": [
-      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 60, "max": 300, "schritt": 10 },
-      { "name": "mb", "label": "Modulbreite", "einheit": "m", "min": 1, "max": 1.2, "schritt": 0.05 },
-      { "name": "mh", "label": "Modulhöhe", "einheit": "m", "min": 1.6, "max": 2.1, "schritt": 0.05 },
-      { "name": "nutzbar", "label": "nutzbarer Anteil", "einheit": "%", "min": 60, "max": 90, "schritt": 5 }
+      {
+        "name": "flaeche",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 60,
+        "max": 300,
+        "schritt": 10
+      },
+      {
+        "name": "mb",
+        "label": "Modulbreite",
+        "einheit": "m",
+        "min": 1,
+        "max": 1.2,
+        "schritt": 0.05
+      },
+      {
+        "name": "mh",
+        "label": "Modulhöhe",
+        "einheit": "m",
+        "min": 1.6,
+        "max": 2.1,
+        "schritt": 0.05
+      },
+      {
+        "name": "nutzbar",
+        "label": "nutzbarer Anteil",
+        "einheit": "%",
+        "min": 60,
+        "max": 90,
+        "schritt": 5
+      }
     ],
     "schritte": [
       {
@@ -213,8 +266,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Anlage besteht aus {anzahl} Modulen mit je {leistung} Wp Nennleistung. Wie groß ist die Anlagenleistung in kWp?",
     "parameter": [
-      { "name": "anzahl", "label": "Anzahl Module", "einheit": "Stück", "min": 10, "max": 60, "schritt": 1 },
-      { "name": "leistung", "label": "Leistung je Modul", "einheit": "Wp", "min": 350, "max": 450, "schritt": 10 }
+      {
+        "name": "anzahl",
+        "label": "Anzahl Module",
+        "einheit": "Stück",
+        "min": 10,
+        "max": 60,
+        "schritt": 1
+      },
+      {
+        "name": "leistung",
+        "label": "Leistung je Modul",
+        "einheit": "Wp",
+        "min": 350,
+        "max": 450,
+        "schritt": 10
+      }
     ],
     "schritte": [
       {
@@ -241,7 +308,7 @@
     "quelle": "Fachregeln für Solartechnik auf Dächern (Aufdachmontage); DIN EN 62305 (Fangstange)",
     "konfidenz": "hoch",
     "frage": "Aufdach-PV-Anlage auf einem geneigten Dach im Schnitt: Benenne die markierten Bauteile.",
-    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Aufdach-PV-Anlage im Schnitt mit Fangstange'><line x1='40' y1='190' x2='252' y2='63' stroke='currentColor' stroke-width='1.8'/><line x1='90' y1='160' x2='90' y2='141' stroke='currentColor' stroke-width='2.4'/><line x1='196' y1='97' x2='196' y2='76' stroke='currentColor' stroke-width='2.4'/><line x1='62' y1='157' x2='216' y2='64' stroke='currentColor' stroke-width='1.6'/><line x1='86' y1='129' x2='210' y2='54' stroke='#c07d4a' stroke-width='5' stroke-linecap='round'/><line x1='250' y1='64' x2='250' y2='18' stroke='currentColor' stroke-width='2.4'/><circle cx='250' cy='15' r='3' fill='#c07d4a'/><line x1='214' y1='56' x2='246' y2='46' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='226' y='40' fill='currentColor' font-size='11' font-style='italic'>s</text><line x1='90' y1='152' x2='54' y2='176' stroke='#c07d4a' stroke-width='1.2'/><circle cx='34' cy='182' r='12' fill='#c07d4a'/><text x='34' y='187' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='68' y1='154' x2='44' y2='148' stroke='#c07d4a' stroke-width='1.2'/><circle cx='28' cy='144' r='12' fill='#c07d4a'/><text x='28' y='149' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='150' y1='90' x2='120' y2='52' stroke='#c07d4a' stroke-width='1.2'/><circle cx='108' cy='42' r='12' fill='#c07d4a'/><text x='108' y='47' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='252' y1='30' x2='280' y2='24' stroke='#c07d4a' stroke-width='1.2'/><circle cx='294' cy='22' r='12' fill='#c07d4a'/><text x='294' y='27' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 204' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Aufdach-PV auf geneigtem Dach im Schnitt'><line x1='40' y1='170' x2='300' y2='60' stroke='currentColor' stroke-width='2'/><line x1='96' y1='148' x2='96' y2='128' stroke='currentColor' stroke-width='2.4'/><line x1='220' y1='80' x2='220' y2='60' stroke='currentColor' stroke-width='2.4'/><line x1='82' y1='124' x2='246' y2='55' stroke='#c07d4a' stroke-width='5'/><line x1='300' y1='60' x2='300' y2='20' stroke='currentColor' stroke-width='2.4'/><circle cx='300' cy='17' r='3' fill='#c07d4a' stroke='#c07d4a' stroke-width='1.8'/><line x1='96' y1='158' x2='96' y2='148' stroke='#c07d4a' stroke-width='1'/><circle cx='96' cy='158' r='11' fill='#c07d4a'/><text x='96' y='162.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='150' y1='108' x2='150' y2='92' stroke='#c07d4a' stroke-width='1'/><circle cx='150' cy='108' r='11' fill='#c07d4a'/><text x='150' y='112.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='200' y1='74' x2='180' y2='82' stroke='#c07d4a' stroke-width='1'/><circle cx='200' cy='74' r='11' fill='#c07d4a'/><text x='200' y='78.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='300' cy='40' r='11' fill='#c07d4a'/><text x='300' y='44.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "dachhaken": "Dachhaken",
       "trageschiene": "Trageschiene",

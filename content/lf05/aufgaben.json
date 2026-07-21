@@ -7,8 +7,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Holzfachkunde",
     "konfidenz": "hoch",
     "frage": "Welche Holzart wird für Dachstühle überwiegend verwendet?",
-    "optionen": ["Eiche", "Buche", "Fichte", "Ahorn"],
-    "korrekt": [2],
+    "optionen": [
+      "Eiche",
+      "Buche",
+      "Fichte",
+      "Ahorn"
+    ],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Bauholz im Dachstuhl ist fast immer Nadelholz, meist Fichte: gerade gewachsen, vergleichsweise leicht und gut zu bearbeiten. Eiche (Laubholz) ist schwerer und wurde vor allem im historischen Fachwerk verwendet."
   },
   {
@@ -25,7 +32,9 @@
       "Beide sind gleichwertig",
       "Ein Anstrich mit Lack"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Zuerst wird konstruktiv geschützt: Holz baulich trocken halten durch Dachüberstand, Abtropfkanten, Abstand zum Erdreich und Hinterlüftung. Chemischer Holzschutz kommt erst danach — er ersetzt nie eine fehlerhafte Konstruktion."
   },
   {
@@ -36,8 +45,15 @@
     "quelle": "Holzfachkunde (Schwinden und Quellen)",
     "konfidenz": "hoch",
     "frage": "Was passiert mit Holz, wenn seine Holzfeuchte abnimmt?",
-    "optionen": ["Es quillt", "Es schwindet", "Es bleibt unverändert", "Es wird schwerer"],
-    "korrekt": [1],
+    "optionen": [
+      "Es quillt",
+      "Es schwindet",
+      "Es bleibt unverändert",
+      "Es wird schwerer"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Trocknendes Holz schwindet (es wird kleiner), feuchter werdendes Holz quillt. Deshalb wird Bauholz vor dem Einbau getrocknet — sonst reißt oder verzieht es sich nachträglich."
   },
   {
@@ -48,8 +64,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Bubiza-Wiki Dachkonstruktion",
     "konfidenz": "hoch",
     "frage": "Bei welcher Dachkonstruktion bilden zwei Sparren mit dem Deckenbalken ein starres Dreieck, sodass keine Stützen im Dachraum stehen?",
-    "optionen": ["Pfettendach", "Sparrendach", "Sheddach", "Mansarddach"],
-    "korrekt": [1],
+    "optionen": [
+      "Pfettendach",
+      "Sparrendach",
+      "Sheddach",
+      "Mansarddach"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beim Sparrendach wirkt der Deckenbalken als Zugband und nimmt den Horizontalschub auf — der Dachraum bleibt stützenfrei. Beim Pfettendach tragen dagegen Stuhlsäulen die Pfetten."
   },
   {
@@ -60,8 +83,15 @@
     "quelle": "Bubiza-Wiki Dachkonstruktion; Holzfachkunde",
     "konfidenz": "hoch",
     "frage": "Wie heißt der Einschnitt im Sparren, mit dem er auf der Pfette aufliegt?",
-    "optionen": ["Zapfen", "Kerve", "Blattung", "Versatz"],
-    "korrekt": [1],
+    "optionen": [
+      "Zapfen",
+      "Kerve",
+      "Blattung",
+      "Versatz"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Kerve ist die Ausklinkung im Sparren, mit der er satt auf der Pfette aufliegt. Der Versatz sitzt dagegen am Sparrenfußpunkt, ein Zapfen verbindet Säule und Schwelle."
   },
   {
@@ -72,8 +102,15 @@
     "quelle": "Holzschutz-Grundlagen (Pilzbefall und Holzfeuchte)",
     "konfidenz": "mittel",
     "frage": "Ab welcher Holzfeuchte wird ein Pilzbefall kritisch?",
-    "optionen": ["Ab etwa 5 %", "Ab etwa 10 %", "Ab etwa 20 %", "Ab etwa 50 %"],
-    "korrekt": [2],
+    "optionen": [
+      "Ab etwa 5 %",
+      "Ab etwa 10 %",
+      "Ab etwa 20 %",
+      "Ab etwa 50 %"
+    ],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Holzzerstörende Pilze brauchen Feuchtigkeit. Kritisch wird es, wenn Holz längere Zeit über rund 20 % Holzfeuchte liegt. Dauerhaft trockenes Holz wird nicht befallen — deshalb ist konstruktiver Holzschutz so wirksam."
   },
   {
@@ -85,9 +122,16 @@
     "konfidenz": "hoch",
     "text": "Beim Pfettendach liegen die Sparren unten auf der {{Fußpfette}}, in der Mitte auf der {{Mittelpfette}} und oben auf der {{Firstpfette}}.",
     "akzeptiert": {
-      "Fußpfette": ["Fusspfette", "Fuß-Pfette"],
-      "Mittelpfette": ["Mittel-Pfette"],
-      "Firstpfette": ["First-Pfette"]
+      "Fußpfette": [
+        "Fusspfette",
+        "Fuß-Pfette"
+      ],
+      "Mittelpfette": [
+        "Mittel-Pfette"
+      ],
+      "Firstpfette": [
+        "First-Pfette"
+      ]
     },
     "erklaerung": "Von unten nach oben: Fußpfette (auf der Außenwand), Mittelpfette (auf Stuhlsäulen) und Firstpfette (am First). Sie tragen die Sparren und verkürzen deren Spannweite."
   },
@@ -99,7 +143,16 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5",
     "konfidenz": "hoch",
     "text": "Holzschädlinge sind zum einen {{Pilze}}, die Feuchtigkeit brauchen, zum anderen {{Insekten}} wie der Hausbock.",
-    "akzeptiert": { "Pilze": ["Pilz"], "Insekten": ["Käfer", "Kaefer", "Insekt"] },
+    "akzeptiert": {
+      "Pilze": [
+        "Pilz"
+      ],
+      "Insekten": [
+        "Käfer",
+        "Kaefer",
+        "Insekt"
+      ]
+    },
     "erklaerung": "Pilze (z. B. Braunfäule, Echter Hausschwamm) befallen feuchtes Holz. Insekten wie Hausbock und Nagekäfer können auch trockenes Holz schädigen."
   },
   {
@@ -111,8 +164,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Sparrendach hat eine Höhe von {h} m und eine waagerechte Ausladung von {b} m. Wie lang ist ein Sparren (ohne Dachüberstand)?",
     "parameter": [
-      { "name": "h", "label": "Höhe", "einheit": "m", "min": 2, "max": 6, "schritt": 0.25 },
-      { "name": "b", "label": "Ausladung", "einheit": "m", "min": 3, "max": 8, "schritt": 0.25 }
+      {
+        "name": "h",
+        "label": "Höhe",
+        "einheit": "m",
+        "min": 2,
+        "max": 6,
+        "schritt": 0.25
+      },
+      {
+        "name": "b",
+        "label": "Ausladung",
+        "einheit": "m",
+        "min": 3,
+        "max": 8,
+        "schritt": 0.25
+      }
     ],
     "schritte": [
       {
@@ -134,8 +201,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Dachfläche ist {laenge} m lang. Die Sparren werden im Abstand von {abstand} m verlegt. Wie viele Sparren werden benötigt (erster und letzter mitgezählt)?",
     "parameter": [
-      { "name": "laenge", "label": "Dachlänge", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 },
-      { "name": "abstand", "label": "Sparrenabstand", "einheit": "m", "min": 0.6, "max": 1, "schritt": 0.05 }
+      {
+        "name": "laenge",
+        "label": "Dachlänge",
+        "einheit": "m",
+        "min": 6,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "abstand",
+        "label": "Sparrenabstand",
+        "einheit": "m",
+        "min": 0.6,
+        "max": 1,
+        "schritt": 0.05
+      }
     ],
     "schritte": [
       {
@@ -156,7 +237,7 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Bubiza-Wiki Dachkonstruktion",
     "konfidenz": "hoch",
     "frage": "Benenne die markierten Pfetten am Pfettendach.",
-    "svg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Pfettendach im Schnitt'><line x1='62' y1='150' x2='160' y2='60' stroke='currentColor' stroke-width='1.8'/><line x1='258' y1='150' x2='160' y2='60' stroke='currentColor' stroke-width='1.8'/><line x1='50' y1='168' x2='270' y2='168' stroke='currentColor' stroke-width='1.5'/><line x1='110' y1='111' x2='110' y2='168' stroke='currentColor' stroke-width='1.3'/><line x1='210' y1='111' x2='210' y2='168' stroke='currentColor' stroke-width='1.3'/><rect x='154' y='54' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='204' y='99' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='104' y='99' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='252' y='144' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='56' y='144' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><line x1='160' y1='52' x2='160' y2='40' stroke='#c07d4a' stroke-width='1.2'/><circle cx='160' cy='28' r='12' fill='#c07d4a'/><text x='160' y='33' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='218' y1='103' x2='248' y2='94' stroke='#c07d4a' stroke-width='1.2'/><circle cx='262' cy='90' r='12' fill='#c07d4a'/><text x='262' y='95' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='266' y1='150' x2='284' y2='158' stroke='#c07d4a' stroke-width='1.2'/><circle cx='296' cy='164' r='12' fill='#c07d4a'/><text x='296' y='169' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
+    "svg": "<svg viewBox='0 0 380 186' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Pfettendach: benenne First-, Mittel- und Fußpfette'><path d='M60 150 L190 50 L320 150' fill='none' stroke='currentColor' stroke-width='2'/><rect x='184' y='44' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='120' y='96' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='248' y='96' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='58' y='144' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><rect x='310' y='144' width='12' height='12' fill='none' stroke='#c07d4a' stroke-width='1.6'/><circle cx='190' cy='32' r='11' fill='#c07d4a'/><text x='190' y='36.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='126' cy='82' r='11' fill='#c07d4a'/><text x='126' y='86.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='64' cy='130' r='11' fill='#c07d4a'/><text x='64' y='134.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
     "zuordnung": {
       "firstpfette": "Firstpfette",
       "mittelpfette": "Mittelpfette",
@@ -202,7 +283,10 @@
     "konfidenz": "hoch",
     "begriff": "Konstruktiver Holzschutz",
     "definition": "Bauliche Maßnahmen, die Holz dauerhaft trocken halten: Dachüberstand, Abtropfkanten, Abstand zum Erdreich, Hinterlüftung. Er hat immer Vorrang vor chemischem Holzschutz.",
-    "bestandteile": ["Holz", "schutz"],
+    "bestandteile": [
+      "Holz",
+      "schutz"
+    ],
     "erklaerung": "Merke: Erst konstruktiv (trocken bauen), dann chemisch."
   }
 ]

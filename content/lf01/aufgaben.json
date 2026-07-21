@@ -7,8 +7,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
     "konfidenz": "hoch",
     "frage": "Wer überwacht auf einer Baustelle die Einhaltung der baurechtlichen Vorschriften?",
-    "optionen": ["Der Bauherr", "Die Bauaufsicht", "Das Planungsbüro", "Die Baufirma"],
-    "korrekt": [1],
+    "optionen": [
+      "Der Bauherr",
+      "Die Bauaufsicht",
+      "Das Planungsbüro",
+      "Die Baufirma"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Bauaufsicht (Bauaufsichtsbehörde) kontrolliert die Einhaltung der öffentlich-rechtlichen Vorschriften. Der Bauherr ist Auftraggeber, das Planungsbüro plant, die Baufirma führt aus."
   },
   {
@@ -19,7 +26,15 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
     "konfidenz": "hoch",
     "text": "Ein Baustelleneinrichtungsplan wird mit genormten {{Sinnbildern}} gezeichnet und in einem festgelegten {{Maßstab}} dargestellt.",
-    "akzeptiert": { "Sinnbildern": ["Symbolen", "Sinnbilder"], "Maßstab": ["Massstab"] },
+    "akzeptiert": {
+      "Sinnbildern": [
+        "Symbolen",
+        "Sinnbilder"
+      ],
+      "Maßstab": [
+        "Massstab"
+      ]
+    },
     "erklaerung": "Sinnbilder stehen für Lagerflächen, Kran, Container usw.; der Maßstab (z. B. 1:100) macht den Plan maßhaltig lesbar."
   },
   {
@@ -31,8 +46,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für eine Baustelle wird eine rechteckige Lagerfläche von {laenge} m Länge und {breite} m Breite abgesperrt. Wie groß ist die abgesperrte Fläche?",
     "parameter": [
-      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 },
-      { "name": "breite", "label": "Breite", "einheit": "m", "min": 3, "max": 10, "schritt": 0.5 }
+      {
+        "name": "laenge",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 6,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Breite",
+        "einheit": "m",
+        "min": 3,
+        "max": 10,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
       {
@@ -59,7 +88,9 @@
       "Technische Schutzmaßnahmen",
       "Substitution der Gefahr"
     ],
-    "korrekt": [3],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Das STOP-Prinzip ordnet Schutzmaßnahmen nach Wirksamkeit: Substitution (Gefahr vermeiden) vor Technischen, dann Organisatorischen, zuletzt Persönlichen Schutzmaßnahmen. PSA ist die letzte Stufe."
   },
   {
@@ -70,7 +101,15 @@
     "quelle": "BG BAU / DGUV — STOP-Prinzip",
     "konfidenz": "hoch",
     "text": "Nach dem STOP-Prinzip steht die persönliche Schutzausrüstung an {{letzter}} Stelle — sie wird erst eingesetzt, wenn {{technische}} und organisatorische Maßnahmen nicht ausreichen.",
-    "akzeptiert": { "letzter": ["vierter", "4."], "technische": ["technischen"] },
+    "akzeptiert": {
+      "letzter": [
+        "vierter",
+        "4."
+      ],
+      "technische": [
+        "technischen"
+      ]
+    },
     "erklaerung": "PSA (z. B. Auffanggurt gegen Absturz) ist die schwächste, weil vom Menschen abhängige Schutzmaßnahme — deshalb steht sie im STOP-Prinzip zuletzt."
   },
   {
@@ -81,7 +120,7 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
     "konfidenz": "hoch",
     "frage": "Ordne die Elemente des Baustelleneinrichtungsplans den markierten Stellen zu.",
-    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Baustelleneinrichtungsplan von oben'><rect x='10' y='12' width='300' height='196' rx='4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='7 5'/><rect x='128' y='86' width='92' height='64' fill='none' stroke='currentColor' stroke-width='1.5'/><text x='174' y='122' fill='currentColor' font-size='9' text-anchor='middle' opacity='0.55'>Rohbau</text><line x1='78' y1='120' x2='150' y2='80' stroke='currentColor' stroke-width='1'/><rect x='72' y='116' width='12' height='9' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='60' cy='152' r='12' fill='#c07d4a'/><text x='60' y='157' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><rect x='236' y='40' width='52' height='13' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='236' y='58' width='52' height='13' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='262' cy='92' r='12' fill='#c07d4a'/><text x='262' y='97' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><rect x='40' y='40' width='48' height='22' rx='3' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='64' cy='80' r='12' fill='#c07d4a'/><text x='64' y='85' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><path d='M160 206 l0 -22 m-6 9 l6 -9 l6 9' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='188' cy='190' r='12' fill='#c07d4a'/><text x='188' y='195' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 194' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Baustelleneinrichtungsplan mit Kran, Lager, Bauwagen, Zufahrt'><rect x='18' y='16' width='344' height='150' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='5 4'/><rect x='150' y='52' width='96' height='62' fill='none' stroke='currentColor' stroke-width='1.8'/><circle cx='300' cy='60' r='10' fill='none' stroke='#c07d4a' stroke-width='1.8'/><line x1='300' y1='50' x2='300' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='290' y1='60' x2='310' y2='60' stroke='#c07d4a' stroke-width='1.4'/><rect x='44' y='40' width='60' height='26' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='44' y='96' width='60' height='34' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='50' y1='106' x2='98' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='50' y1='114' x2='98' y2='114' stroke='currentColor' stroke-width='0.7'/><line x1='50' y1='122' x2='98' y2='122' stroke='currentColor' stroke-width='0.7'/><path d='M300 118 L340 118 L340 152' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='300' cy='92' r='11' fill='#c07d4a'/><text x='300' y='96.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='74' cy='113' r='11' fill='#c07d4a'/><text x='74' y='117.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='74' cy='53' r='11' fill='#c07d4a'/><text x='74' y='57.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='340' cy='100' r='11' fill='#c07d4a'/><text x='340' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "kran": "Kran",
       "lager": "Materiallager",
@@ -117,7 +156,11 @@
     "konfidenz": "hoch",
     "begriff": "Baustelleneinrichtungsplan",
     "definition": "Ein maßstäblicher Plan, der vor Baubeginn festlegt, wo Kran, Materiallager, Bauwagen, Zufahrten sowie Strom- und Wasseranschluss stehen. Er sorgt für kurze Wege und einen sicheren, rationellen Ablauf.",
-    "bestandteile": ["Baustellen", "einrichtungs", "plan"],
+    "bestandteile": [
+      "Baustellen",
+      "einrichtungs",
+      "plan"
+    ],
     "erklaerung": "Merke die drei Wortteile: Baustellen-einrichtungs-plan."
   },
   {
@@ -129,7 +172,11 @@
     "konfidenz": "hoch",
     "begriff": "Unfallverhütungsvorschrift",
     "definition": "Verbindliche Regeln der Berufsgenossenschaft (BG BAU) zur Verhütung von Arbeitsunfällen — z. B. zu Absturzsicherung, Gerüsten und persönlicher Schutzausrüstung. Kurz: UVV.",
-    "bestandteile": ["Unfall", "verhütungs", "vorschrift"],
+    "bestandteile": [
+      "Unfall",
+      "verhütungs",
+      "vorschrift"
+    ],
     "erklaerung": "Merke die drei Wortteile: Unfall-verhütungs-vorschrift (UVV)."
   }
 ]

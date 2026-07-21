@@ -784,13 +784,17 @@ def _():
 @fig("lf11-l01")
 def _():
     f = Fig("Aufbau der vorgehängten hinterlüfteten Fassade", width=380)
-    f.rect(40, 40, 34, 120, sw=1.8); f.callout(1, 57, 100)
-    f.fillrect(74, 40, 24, 120, color=ACCENT, opacity="0.14"); f.rect(74, 40, 24, 120, sw=1, dash="4 3")
-    f.callout(2, 86, 100)
-    f.rect(118, 40, 10, 120, sw=1.6); f.callout(3, 123, 100)   # Luftschicht (Spalt)
-    f.rect(140, 40, 12, 120, sw=1.6, color=ACCENT); f.callout(4, 146, 100)
-    f.rect(160, 40, 10, 120, sw=2, color=ACCENT); f.callout(5, 165, 100)
-    f.set_art_height(172)
+    f.rect(40, 40, 34, 130, sw=1.8)
+    f.fillrect(74, 40, 24, 130, color=ACCENT, opacity="0.14"); f.rect(74, 40, 24, 130, sw=1, dash="4 3")
+    f.rect(118, 40, 10, 130, sw=1.6)                 # Luftschicht (Spalt)
+    f.rect(140, 40, 12, 130, sw=1.6, color=ACCENT)   # Unterkonstruktion
+    f.rect(160, 40, 10, 130, sw=2, color=ACCENT)     # Bekleidung
+    f.leader(1, 57, 52, 250, 48)
+    f.leader(2, 86, 66, 250, 76)
+    f.leader(3, 123, 96, 250, 104)
+    f.leader(4, 146, 120, 250, 132)
+    f.leader(5, 165, 150, 250, 160)
+    f.set_art_height(180)
     f.legend([
         (1, "tragende Wand"), (2, "Wärmedämmung"),
         (3, "Hinterlüftung"), (4, "Unterkonstruktion"),
@@ -1064,7 +1068,7 @@ def _():
     f.rect(194, 178, 16, 7, sw=1.4)                   # Lüftungsprofil
     f.arrow(202, 44, 202, 60, w=1.4, color=ACCENT)    # Abluft
     f.arrow(202, 172, 202, 156, w=1.4, color=ACCENT)  # Zuluft
-    f.callout(1, 240, 38); f.leader(1, 208, 32, 240, 38) if False else None
+    f.leader(1, 208, 32, 240, 38) if False else None
     f.callout(2, 240, 100)
     f.callout(3, 240, 176)
     f.set_art_height(196)
@@ -1369,6 +1373,303 @@ def _():
     return f.render()
 
 
+# ======================================================================
+# DIAGRAMM-AUFGABEN (Callouts ohne Legende – das Zuordnen ist die Aufgabe)
+# ======================================================================
+DIAG = {}
+
+
+def diag(did):
+    def deco(fn):
+        DIAG[did] = fn
+        return fn
+    return deco
+
+
+@diag("lf01-006")
+def _():
+    f = Fig("Baustelleneinrichtungsplan mit Kran, Lager, Bauwagen, Zufahrt", width=380)
+    f.rect(18, 16, 344, 150, sw=1, dash="5 4")
+    f.rect(150, 52, 96, 62)
+    f.circle(300, 60, 10, color=ACCENT); f.line(300, 50, 300, 70, w=1.4, color=ACCENT); f.line(290, 60, 310, 60, w=1.4, color=ACCENT)
+    f.rect(44, 40, 60, 26)
+    f.rect(44, 96, 60, 34)
+    for gy in (106, 114, 122):
+        f.line(50, gy, 98, gy, w=0.7)
+    f.path("M300 118 L340 118 L340 152", w=1.4)
+    f.callout(1, 300, 92)     # Kran
+    f.callout(2, 74, 113)     # Materiallager
+    f.callout(3, 74, 53)      # Bauwagen
+    f.callout(4, 340, 100)    # Zufahrt
+    f.set_art_height(176)
+    return f.render()
+
+
+@diag("lf02-010")
+def _():
+    f = Fig("Satteldach: benenne First, Ortgang und Traufe", width=380)
+    f.poly([(66, 120), (190, 54), (314, 120)], w=2); f.line(66, 120, 314, 120, w=2)
+    f.rect(66, 120, 248, 34, sw=1.4)
+    f.callout(1, 190, 44)               # First
+    f.callout(2, 118, 92)               # Ortgang (linke Schräge)
+    f.callout(3, 250, 132)              # Traufe
+    f.set_art_height(166)
+    return f.render()
+
+
+@diag("lf03-010")
+def _():
+    f = Fig("Mauerwerk im Läuferverband: benenne Läufer, Lager- und Stoßfuge", width=380)
+    f.rect(70, 44, 90, 26); f.rect(160, 44, 90, 26)
+    f.rect(70, 78, 90, 26); f.rect(160, 78, 90, 26)
+    f.callout(1, 205, 57)               # Läufer
+    f.leader(2, 250, 74, 300, 74)
+    f.leader(3, 160, 78, 160, 116)
+    f.set_art_height(132)
+    return f.render()
+
+
+@diag("lf04-011")
+def _():
+    f = Fig("Stahlbetonträger unter Last: benenne Druck-, Zugzone und Bewehrung", width=380)
+    f.rect(60, 50, 260, 54, sw=1.8)
+    f.poly([(60, 112), (72, 124), (48, 124)], w=1.4); f.poly([(320, 112), (332, 124), (308, 124)], w=1.4)
+    f.line(72, 96, 308, 96, w=2.6, color=ACCENT)
+    for ax in (140, 190, 240):
+        f.arrow(ax, 32, ax, 48, w=1.3)
+    f.callout(1, 190, 62)               # Druckzone oben
+    f.callout(2, 250, 90)               # Zugzone unten
+    f.leader(3, 90, 96, 110, 96)
+    f.set_art_height(136)
+    return f.render()
+
+
+@diag("lf05-011")
+def _():
+    f = Fig("Pfettendach: benenne First-, Mittel- und Fußpfette", width=380)
+    f.poly([(60, 150), (190, 50), (320, 150)], w=2)
+    f.rect(184, 44, 12, 12, sw=1.6, color=ACCENT)     # Firstpfette
+    f.rect(120, 96, 12, 12, sw=1.6, color=ACCENT); f.rect(248, 96, 12, 12, sw=1.6, color=ACCENT)
+    f.rect(58, 144, 12, 12, sw=1.6, color=ACCENT); f.rect(310, 144, 12, 12, sw=1.6, color=ACCENT)
+    f.callout(1, 190, 32)               # Firstpfette
+    f.callout(2, 126, 82)               # Mittelpfette
+    f.callout(3, 64, 130)               # Fußpfette
+    f.set_art_height(168)
+    return f.render()
+
+
+@diag("lf06-011")
+def _():
+    f = Fig("Sparren mit drei möglichen Dämmlagen", width=380)
+    f.rect(150, 40, 30, 120, sw=1.8)                  # Sparren
+    f.fillrect(150, 24, 80, 16, color=ACCENT, opacity="0.2"); f.rect(150, 24, 80, 16, sw=1.2, dash="4 3")
+    f.fillrect(180, 40, 50, 120, color=ACCENT, opacity="0.2"); f.rect(180, 40, 50, 120, sw=1.2, dash="4 3")
+    f.fillrect(150, 160, 80, 14, color=ACCENT, opacity="0.2"); f.rect(150, 160, 80, 14, sw=1.2, dash="4 3")
+    f.callout(1, 250, 32)               # Aufsparren (oben)
+    f.callout(2, 250, 100)              # Zwischensparren
+    f.callout(3, 250, 167)              # Untersparren
+    f.set_art_height(186)
+    return f.render()
+
+
+@diag("lf07-010")
+def _():
+    f = Fig("Dachentwässerung: benenne Rinne, Halter und Fallrohr", width=380)
+    f.line(60, 44, 210, 108, w=2)
+    f.path("M188 118 A22 22 0 0 0 232 118", w=2.2); f.line(188, 118, 188, 108, w=2.2); f.line(232, 118, 232, 112, w=2.2)
+    f.path("M150 136 Q170 136 178 120 L196 106", w=1.6)   # Halter
+    f.rect(224, 118, 12, 60, sw=1.8)                       # Fallrohr
+    f.leader(1, 210, 122, 210, 138)
+    f.leader(2, 160, 132, 150, 152)
+    f.leader(3, 236, 150, 258, 150)
+    f.set_art_height(192)
+    return f.render()
+
+
+@diag("lf08-011")
+def _():
+    f = Fig("Funktionsschichten: benenne die vier markierten Lagen", width=380)
+    layers = ["Deckung", "Traglattung", "Konterlattung", "Unterdeckbahn", "Sparren + Dämmung", "Dampfbremse", "Innenbekleidung"]
+    y = 40
+    ys = {}
+    for i, _t in enumerate(layers):
+        acc = i in (2, 3, 5)
+        f.rect(60, y, 150, 18, sw=1.6)
+        if acc:
+            f.fillrect(60, y, 150, 18, color=ACCENT, opacity="0.18")
+        ys[i] = y + 9
+        y += 22
+    # Marker: 1 Dampfbremse(5), 2 Wärmedämmung(4), 3 Unterdeckbahn(3), 4 Konterlatte(2)
+    f.leader(1, 210, ys[5], 240, ys[5])
+    f.leader(2, 210, ys[4], 300, ys[4])
+    f.leader(3, 210, ys[3], 240, ys[3])
+    f.leader(4, 210, ys[2], 300, ys[2])
+    f.set_art_height(y + 6)
+    return f.render()
+
+
+@diag("lf09-012")
+def _():
+    f = Fig("Gelochte Schieferplatte im Schnitt", width=380)
+    f.rect(90, 60, 200, 40, sw=1.8)
+    f.path("M170 60 L210 60 L198 100 L182 100 Z", w=1.6, color=ACCENT)   # Trichter
+    f.line(180, 78, 200, 78, w=3, color=ACCENT)                          # Nagelkopf in Mulde
+    f.leader(1, 130, 100, 130, 108)              # Sichtseite (unten)
+    f.leader(2, 130, 60, 130, 52)                 # Rückseite (oben)
+    f.leader(3, 202, 78, 240, 78)                 # Nagelkopf
+    f.set_art_height(124)
+    return f.render()
+
+
+@diag("lf10-013")
+def _():
+    f = Fig("Warmdach: benenne die vier markierten Schichten", width=380)
+    names = ["Oberflächenschutz", "Abdichtung", "Wärmedämmung", "Dampfsperre", "Tragschale"]
+    y = 40
+    ys = {}
+    for i, _t in enumerate(names):
+        h = 20 if i != 4 else 22
+        acc = i in (0, 1, 2, 3)
+        f.rect(70, y, 170, h, sw=1.6)
+        if i == 0:
+            for gx in range(80, 236, 12):
+                f.circle(gx, y + 10, 2.4, sw=1, color=CUR)
+        ys[i] = y + h / 2
+        y += h + 2
+    f.leader(1, 240, ys[3], 300, ys[3])   # Dampfsperre
+    f.leader(2, 240, ys[2], 300, ys[2])   # Wärmedämmung
+    f.leader(3, 240, ys[1], 300, ys[1])   # Abdichtung
+    f.leader(4, 240, ys[0], 300, ys[0])   # Oberflächenschutz
+    f.set_art_height(int(y + 6))
+    return f.render()
+
+
+@diag("lf11-011")
+def _():
+    f = Fig("VHF im Waagerechtschnitt: benenne die vier Schichten", width=380)
+    f.rect(40, 40, 40, 120, sw=1.8)                 # Wand
+    f.fillrect(80, 40, 34, 120, color=ACCENT, opacity="0.16"); f.rect(80, 40, 34, 120, sw=1.2, dash="4 3")
+    f.rect(126, 40, 16, 120, sw=1.6)                # Luftschicht
+    f.rect(150, 40, 14, 120, sw=1.6, color=ACCENT)  # Unterkonstruktion
+    f.rect(172, 40, 12, 120, sw=2, color=ACCENT)    # Bekleidung
+    f.callout(1, 97, 100)               # Wärmedämmung
+    f.callout(2, 134, 100)              # Hinterlüftung
+    f.leader(3, 164, 100, 220, 80)   # Unterkonstruktion
+    f.leader(4, 184, 120, 250, 120) # Bekleidung
+    f.set_art_height(172)
+    return f.render()
+
+
+@diag("lf12-012")
+def _():
+    f = Fig("Doppelstehfalz im Querschnitt", width=380)
+    f.line(40, 96, 340, 96, w=2)
+    f.path("M150 96 L150 60 L162 60 L162 72 L154 72 L154 96", w=2.2)   # Doppelstehfalz
+    f.path("M150 96 L150 60", w=2.6, color=ACCENT)
+    f.rect(40, 108, 300, 16, sw=1.4)                                   # Schalung
+    f.path(f"M40 100 " + "".join(f"Q{i+3} 92 {i+6} 100 " for i in range(40, 340, 6)), w=1.2, color=ACCENT)  # Trennlage
+    f.leader(1, 156, 60, 156, 46)   # Doppelstehfalz
+    f.leader(2, 150, 78, 120, 70)   # Haft
+    f.leader(3, 280, 96, 300, 88)   # Trennlage
+    f.leader(4, 80, 124, 80, 138)   # Schalung
+    f.set_art_height(150)
+    return f.render()
+
+
+@diag("lf13a-011")
+def _():
+    f = Fig("L-förmiges Dach in der Draufsicht", width=380)
+    # L-Grundriss
+    pts = [(40, 40), (220, 40), (220, 110), (330, 110), (330, 180), (40, 180)]
+    f.poly(pts, w=1.8, closed=True)
+    # Firste
+    f.line(60, 70, 200, 70, w=2, color=ACCENT); f.line(300, 130, 300, 160, w=2, color=ACCENT)
+    # Grat (ausspringende Ecke) und Kehle (einspringende Ecke)
+    f.line(220, 110, 260, 150, w=1.6)      # in Richtung Innenecke
+    f.line(40, 40, 90, 90, w=1.6)          # Grat an Außenecke
+    f.callout(1, 130, 70)                  # First
+    f.callout(2, 244, 130)                 # Kehle (einspringende Ecke)
+    f.callout(3, 66, 66)                   # Grat (ausspringende Ecke)
+    f.leader(4, 180, 180, 180, 190)   # Traufe
+    f.set_art_height(204)
+    return f.render()
+
+
+@diag("lf14-012")
+def _():
+    f = Fig("Attikaanschluss im Schnitt", width=380)
+    f.line(30, 150, 210, 150, w=1.6)
+    f.path("M30 144 L200 144 L200 70", w=2.4, color=ACCENT)     # Abdichtung
+    f.rect(200, 40, 40, 110, sw=1.6)                            # Attika
+    f.rect(194, 62, 12, 8, sw=1.4, color=ACCENT)                # Klemmschiene
+    f.path("M196 40 L250 40 L250 52", w=2)                      # Attikaabdeckung
+    f.leader(1, 130, 144, 130, 130)    # Abdichtung
+    f.leader(2, 194, 66, 170, 66)       # Klemmschiene
+    f.leader(3, 250, 44, 270, 44)       # Attikaabdeckung
+    f.callout(4, 220, 120)                                      # Attika
+    f.set_art_height(164)
+    return f.render()
+
+
+@diag("lf15-012")
+def _():
+    f = Fig("Sockelabschluss einer hinterlüfteten Fassade", width=380)
+    f.rect(40, 40, 40, 130, sw=1.8)                 # Wand
+    f.fillrect(80, 40, 30, 130, color=ACCENT, opacity="0.16"); f.rect(80, 40, 30, 130, sw=1.2, dash="4 3")
+    f.rect(122, 40, 14, 130, sw=1.6)                # Luftschicht
+    f.rect(146, 40, 12, 130, sw=2, color=ACCENT)    # Bekleidung
+    f.callout(1, 60, 100)               # tragende Wand
+    f.callout(2, 95, 100)               # Wärmedämmung
+    f.callout(3, 129, 100)              # Hinterlüftung
+    f.leader(4, 158, 100, 220, 90)   # Bekleidung
+    f.set_art_height(182)
+    return f.render()
+
+
+@diag("lf16-013")
+def _():
+    f = Fig("Aufdach-PV auf geneigtem Dach im Schnitt", width=380)
+    f.line(40, 170, 300, 60, w=2)                   # Dachfläche
+    f.line(96, 148, 96, 128, w=2.4)                 # Dachhaken senkrecht
+    f.line(220, 80, 220, 60, w=2.4)
+    f.line(82, 124, 246, 55, w=5, color=ACCENT)     # PV-Modul auf Schiene
+    f.line(300, 60, 300, 20, w=2.4); f.circle(300, 17, 3, fill=ACCENT, color=ACCENT)   # Fangstange
+    f.leader(1, 96, 148, 96, 158)   # Dachhaken
+    f.leader(2, 150, 92, 150, 108) # Trageschiene
+    f.leader(3, 180, 82, 200, 74)   # PV-Modul
+    f.callout(4, 300, 40)                                   # Fangstange
+    f.set_art_height(186)
+    return f.render()
+
+
+@diag("lf17-012")
+def _():
+    f = Fig("Flachdach mit vier typischen Schadensstellen", width=380)
+    f.line(30, 120, 300, 120, w=1.8); f.rect(300, 50, 40, 70, sw=1.6)
+    f.path("M60 120 q 16 -22 32 0", w=2.4, color=ACCENT)          # Blase
+    f.path("M140 120 L136 108 M150 120 L154 108", w=2.4, color=ACCENT)  # offene Naht
+    f.path("M296 120 L296 100", w=2.4, color=ACCENT)             # zu niedriger Anschluss
+    f.path("M210 120 L216 134 L232 134 L238 120", w=1.8)          # Gully
+    f.leader(1, 76, 106, 76, 92)          # Blase
+    f.leader(2, 145, 106, 145, 90)      # offene Naht
+    f.leader(3, 296, 100, 280, 84)      # Anschluss
+    f.leader(4, 224, 134, 224, 150)    # Gully
+    f.set_art_height(164)
+    return f.render()
+
+
+@diag("wiso-018")
+def _():
+    f = Fig("Stufen der beruflichen Aufstiegsfortbildung", width=380)
+    heights = [(20, 40), (110, 62), (200, 88), (290, 120)]
+    for i, (x, h) in enumerate(heights):
+        f.rect(x, 160 - h, 70, h, sw=1.8, color=(ACCENT if i == 3 else None))
+        f.callout(i + 1, x + 35, 160 - h - 16)
+    f.line(14, 160, 366, 160, w=1.6)
+    f.set_art_height(184)
+    return f.render()
+
+
 def build(only=None):
     changed = 0
     by_lf = {}
@@ -1384,7 +1685,22 @@ def build(only=None):
                 lekt["svg"] = FIGS[lekt["id"]]()
                 changed += 1
         p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-    print(f"{changed} Zeichnungen gebaut.")
+    # Diagramm-Aufgaben
+    dg = 0
+    by_lf2 = {}
+    for did in DIAG:
+        by_lf2.setdefault(did.rsplit("-", 1)[0], []).append(did)
+    for lf, ids in by_lf2.items():
+        if only and lf not in only:
+            continue
+        p = pathlib.Path(f"content/{lf}/aufgaben.json")
+        data = json.loads(p.read_text())
+        for auf in data:
+            if auf["id"] in DIAG:
+                auf["svg"] = DIAG[auf["id"]]()
+                dg += 1
+        p.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+    print(f"{changed} Lektions- und {dg} Diagramm-Zeichnungen gebaut.")
 
 
 if __name__ == "__main__":

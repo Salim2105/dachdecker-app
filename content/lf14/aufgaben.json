@@ -13,7 +13,9 @@
       "Anstehendes Grundwasser oder aufstauendes Sickerwasser mit hydrostatischem Druck",
       "Kondenswasser im Bauteil"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Drückendes Wasser steht am Bauwerk an und erzeugt hydrostatischen Druck, der mit der Einbindetiefe zunimmt. Nicht drückendes Wasser (Bodenfeuchte, versickerndes Sickerwasser) kann dagegen ablaufen."
   },
   {
@@ -30,7 +32,9 @@
       "Ab Oberkante Tragschale",
       "Ab Unterkante Dämmung"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Gemessen wird immer ab der wasserführenden Ebene — also ab Oberkante Kies, Plattenbelag oder Begrünung. Wer ab der Abdichtung misst, baut den Anschluss zu niedrig."
   },
   {
@@ -47,7 +51,9 @@
       "Er wird lose eingelegt",
       "Mit Mörtel eingesetzt"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beim Klemmflansch wird die Bahn zwischen Los- und Festflansch mechanisch eingeklemmt, beim Klebeflansch flächig verklebt oder verschweißt. Zusätzlich ist immer eine Notentwässerung erforderlich."
   },
   {
@@ -64,7 +70,9 @@
       "Als Ersatz für die Wärmedämmung",
       "Zum Verkleben von Dachziegeln"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Flüssigkunststoff (PU oder PMMA) lässt sich um jede Geometrie führen — Geländerstützen, verwinkelte Attiken, eng stehende Rohre. Für große Flächen sind Bahnen wirtschaftlicher."
   },
   {
@@ -75,8 +83,15 @@
     "quelle": "BauderLIQUITEC (Verarbeitung Flüssigkunststoff)",
     "konfidenz": "hoch",
     "frage": "Wie stark müssen die Vlieszuschnitte beim Flüssigkunststoff an den Nähten überlappen?",
-    "optionen": ["mindestens 2 cm", "mindestens 5 cm", "mindestens 10 cm", "gar nicht"],
-    "korrekt": [1],
+    "optionen": [
+      "mindestens 2 cm",
+      "mindestens 5 cm",
+      "mindestens 10 cm",
+      "gar nicht"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Überlappung beträgt mindestens 5 cm. Gearbeitet wird nass in nass in zwei Schichten, ohne Lufteinschlüsse — nur so entsteht eine durchgehend rissüberbrückende Schicht."
   },
   {
@@ -93,7 +108,9 @@
       "Ein weißer Schutzanstrich",
       "Eine Dränschicht vor der Wand"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Bei der weißen Wanne ist der Beton selbst wasserundurchlässig (WU-Beton). Die Dichtheit entsteht über Rezeptur, Bauteildicke und sorgfältige Fugenabdichtung. Die schwarze Wanne dichtet dagegen von außen mit Bahnen ab."
   },
   {
@@ -110,7 +127,9 @@
       "Damit sie besser aussieht",
       "Um Material zu sparen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beim Verfüllen können Steine und Geräte die Abdichtung beschädigen. Ist sie einmal verfüllt, kommt man nicht mehr heran — deshalb sind Schutzschichten und Schutzlagen Pflicht."
   },
   {
@@ -122,8 +141,14 @@
     "konfidenz": "hoch",
     "text": "Bodenfeuchte und versickerndes Wasser zählen zum {{nicht drückenden}} Wasser. Grundwasser erzeugt dagegen {{hydrostatischen}} Druck.",
     "akzeptiert": {
-      "nicht drückenden": ["nicht drueckenden", "nichtdrückenden"],
-      "hydrostatischen": ["hydrostatischer", "Wasserdruck"]
+      "nicht drückenden": [
+        "nicht drueckenden",
+        "nichtdrückenden"
+      ],
+      "hydrostatischen": [
+        "hydrostatischer",
+        "Wasserdruck"
+      ]
     },
     "erklaerung": "Entscheidend sind Bodenart und Grundwasserstand. In bindigem Boden kann sich Sickerwasser aufstauen — dann liegt trotz fehlendem Grundwasser drückendes Wasser vor."
   },
@@ -135,7 +160,15 @@
     "quelle": "Flachdachrichtlinie / Fachregeln Abdichtungen",
     "konfidenz": "hoch",
     "text": "Bei Dachneigungen bis 5° beträgt die Mindestanschlusshöhe {{15}} cm. Der obere Rand wird mechanisch gesichert, zum Beispiel mit einer {{Klemmschiene}}.",
-    "akzeptiert": { "15": ["15cm"], "Klemmschiene": ["Klemmleiste", "Schiene"] },
+    "akzeptiert": {
+      "15": [
+        "15cm"
+      ],
+      "Klemmschiene": [
+        "Klemmleiste",
+        "Schiene"
+      ]
+    },
     "erklaerung": "Ohne mechanische Sicherung rutscht die hochgeführte Bahn mit der Zeit ab. Gemessen wird ab der wasserführenden Ebene."
   },
   {
@@ -147,8 +180,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Attika hat einen Umfang von {umfang} m. Die Abdichtung wird {hoehe} m hochgeführt. Wie groß ist die zusätzliche Abdichtungsfläche für den Anschluss?",
     "parameter": [
-      { "name": "umfang", "label": "Attika-Umfang", "einheit": "m", "min": 20, "max": 80, "schritt": 2 },
-      { "name": "hoehe", "label": "Anschlusshöhe", "einheit": "m", "min": 0.15, "max": 0.5, "schritt": 0.05 }
+      {
+        "name": "umfang",
+        "label": "Attika-Umfang",
+        "einheit": "m",
+        "min": 20,
+        "max": 80,
+        "schritt": 2
+      },
+      {
+        "name": "hoehe",
+        "label": "Anschlusshöhe",
+        "einheit": "m",
+        "min": 0.15,
+        "max": 0.5,
+        "schritt": 0.05
+      }
     ],
     "schritte": [
       {
@@ -170,8 +217,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für eine Dachfläche fällt ein Regenwasserabfluss von {q} l/s an. Ein Gully hat eine Ablaufleistung von {leistung} l/s. Wie viele Gullys werden mindestens benötigt (aufgerundet)?",
     "parameter": [
-      { "name": "q", "label": "Regenwasserabfluss", "einheit": "l/s", "min": 4, "max": 20, "schritt": 1 },
-      { "name": "leistung", "label": "Leistung je Gully", "einheit": "l/s", "min": 3, "max": 8, "schritt": 1 }
+      {
+        "name": "q",
+        "label": "Regenwasserabfluss",
+        "einheit": "l/s",
+        "min": 4,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "leistung",
+        "label": "Leistung je Gully",
+        "einheit": "l/s",
+        "min": 3,
+        "max": 8,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -192,7 +253,7 @@
     "quelle": "Bauder Detailkonstruktionen (Attikaanschluss)",
     "konfidenz": "hoch",
     "frage": "Attikaanschluss im Schnitt: Benenne die markierten Bauteile.",
-    "svg": "<svg viewBox='0 0 320 220' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Attikaanschluss im Schnitt'><line x1='30' y1='150' x2='210' y2='150' stroke='currentColor' stroke-width='1.6'/><rect x='210' y='50' width='40' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M30 144 L204 144 L204 84' fill='none' stroke='#c07d4a' stroke-width='2.4'/><rect x='198' y='76' width='14' height='8' fill='none' stroke='#c07d4a' stroke-width='1.6'/><path d='M202 50 L258 50 L258 60' fill='none' stroke='currentColor' stroke-width='2'/><line x1='170' y1='144' x2='170' y2='84' stroke='currentColor' stroke-width='0.9'/><path d='M170 144 L167 138 M170 144 L173 138 M170 84 L167 90 M170 84 L173 90' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='118' y='112' fill='currentColor' font-size='10'>≥ 15 cm</text><line x1='90' y1='142' x2='90' y2='118' stroke='#c07d4a' stroke-width='1.2'/><circle cx='90' cy='106' r='12' fill='#c07d4a'/><text x='90' y='111' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='212' y1='78' x2='250' y2='96' stroke='#c07d4a' stroke-width='1.2'/><circle cx='264' cy='102' r='12' fill='#c07d4a'/><text x='264' y='107' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='46' x2='268' y2='30' stroke='#c07d4a' stroke-width='1.2'/><circle cx='282' cy='24' r='12' fill='#c07d4a'/><text x='282' y='29' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='230' y1='152' x2='262' y2='170' stroke='#c07d4a' stroke-width='1.2'/><circle cx='276' cy='176' r='12' fill='#c07d4a'/><text x='276' y='181' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 182' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Attikaanschluss im Schnitt'><line x1='30' y1='150' x2='210' y2='150' stroke='currentColor' stroke-width='1.6'/><path d='M30 144 L200 144 L200 70' fill='none' stroke='#c07d4a' stroke-width='2.4'/><rect x='200' y='40' width='40' height='110' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='194' y='62' width='12' height='8' fill='none' stroke='#c07d4a' stroke-width='1.4'/><path d='M196 40 L250 40 L250 52' fill='none' stroke='currentColor' stroke-width='2'/><line x1='130' y1='130' x2='130' y2='144' stroke='#c07d4a' stroke-width='1'/><circle cx='130' cy='130' r='11' fill='#c07d4a'/><text x='130' y='134.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='170' y1='66' x2='194' y2='66' stroke='#c07d4a' stroke-width='1'/><circle cx='170' cy='66' r='11' fill='#c07d4a'/><text x='170' y='70.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='270' y1='44' x2='250' y2='44' stroke='#c07d4a' stroke-width='1'/><circle cx='270' cy='44' r='11' fill='#c07d4a'/><text x='270' y='48.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='220' cy='120' r='11' fill='#c07d4a'/><text x='220' y='124.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "abdichtung": "Abdichtung",
       "klemmschiene": "Klemmschiene",

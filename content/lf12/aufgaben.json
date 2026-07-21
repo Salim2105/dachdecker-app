@@ -7,8 +7,15 @@
     "quelle": "Rheinzink Doppelstehfalz (Planungsunterlagen)",
     "konfidenz": "hoch",
     "frage": "Ab welcher Dachneigung wird das Doppelstehfalzsystem eingesetzt?",
-    "optionen": ["ab 1°", "ab 3°", "ab 10°", "ab 22°"],
-    "korrekt": [1],
+    "optionen": [
+      "ab 1°",
+      "ab 3°",
+      "ab 10°",
+      "ab 22°"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Doppelstehfalzsystem ist ab etwa 3° Dachneigung (rund 5,2 %) einsetzbar. Der doppelt umgelegte Falz macht die Verbindung auch bei geringer Neigung sicher."
   },
   {
@@ -25,7 +32,9 @@
       "Er dichtet den Falz ab",
       "Er ersetzt die Trennlage"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Der Schiebehaft hat ein bewegliches Mittelteil: Er hält die Schar fest, lässt aber zu, dass sich das Blech bei Temperaturwechsel längt und wieder zusammenzieht. Starr verankert wird nur mit Festhaften."
   },
   {
@@ -42,7 +51,9 @@
       "Sie leiten Kondensat ab",
       "Sie verbinden zwei Scharen miteinander"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Festhafte verankern die Schar starr auf der Unterkonstruktion. Sie sind der Fixpunkt, von dem aus sich das Blech nach beiden Seiten ausdehnen kann — die Schiebehafte lassen diese Bewegung dann zu."
   },
   {
@@ -53,8 +64,15 @@
     "quelle": "Rheinzink Konstruktionsempfehlungen (Scharlängen)",
     "konfidenz": "hoch",
     "frage": "Wie lang darf eine Schar unter normalen Bedingungen höchstens sein?",
-    "optionen": ["5 m", "10 m", "16 m", "20 m"],
-    "korrekt": [1],
+    "optionen": [
+      "5 m",
+      "10 m",
+      "16 m",
+      "20 m"
+    ],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Unter normalen Bedingungen liegt die maximal zulässige Scharlänge bei 10 Metern. Mit speziellen Schwerlasthaften sind bis zu 16 Meter möglich — dann jedoch nur bis höchstens 30° Dachneigung."
   },
   {
@@ -71,7 +89,9 @@
       "Ein Rost auf Stahlblechen",
       "Eine Verfärbung durch UV-Strahlung"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Weißrost ist basisches Zinkcarbonat. Er entsteht, wenn Feuchtigkeit dauerhaft an der Blechrückseite steht, und zerstört die Zinkschicht — oft unbemerkt von unten."
   },
   {
@@ -88,7 +108,9 @@
       "Sie dient nur als Gleitschicht beim Verlegen",
       "Sie verstärkt das Blech statisch"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das dreidimensionale Gewirk schafft einen kapillarbrechenden Luftraum: Kondensat kann ablaufen und abtrocknen (Schutz vor Weißrost). Zusätzlich dämpft die Lage den Schall von Regen und Hagel spürbar."
   },
   {
@@ -105,7 +127,9 @@
       "Das Ineinanderhaken zweier Blechränder",
       "Das Verformen in eine Rundung"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Bördeln ist das Umlegen des Randes zu einem Wulst — das versteift die Kante und nimmt ihr die Schärfe. Kanten ist das Abwinkeln, Falzen das Ineinanderhaken, Schweifen das Verformen in eine Rundung."
   },
   {
@@ -116,7 +140,15 @@
     "quelle": "Rheinzink Konstruktionsempfehlungen (Hafte)",
     "konfidenz": "hoch",
     "text": "{{Festhafte}} verankern die Schar starr und bilden den Fixpunkt. {{Schiebehafte}} lassen dagegen die thermische Längenbewegung zu.",
-    "akzeptiert": { "Festhafte": ["Festhaft", "Feste Hafte"], "Schiebehafte": ["Schiebehaft"] },
+    "akzeptiert": {
+      "Festhafte": [
+        "Festhaft",
+        "Feste Hafte"
+      ],
+      "Schiebehafte": [
+        "Schiebehaft"
+      ]
+    },
     "erklaerung": "Ohne Schiebehafte würde sich das Blech aufwölben oder die Befestigung ausreißen — die Längenänderung muss irgendwo hin."
   },
   {
@@ -127,7 +159,15 @@
     "quelle": "Rheinzink Konstruktionsempfehlungen (Trennlagen, Weißrost)",
     "konfidenz": "hoch",
     "text": "Steht Feuchtigkeit dauerhaft an der Blechrückseite, bildet sich {{Weißrost}}. Dagegen hilft eine strukturierte {{Trennlage}}, die einen Luftraum schafft.",
-    "akzeptiert": { "Weißrost": ["Weissrost", "Zinkcarbonat"], "Trennlage": ["Trennschicht" ] },
+    "akzeptiert": {
+      "Weißrost": [
+        "Weissrost",
+        "Zinkcarbonat"
+      ],
+      "Trennlage": [
+        "Trennschicht"
+      ]
+    },
     "erklaerung": "Weißrost ist basisches Zinkcarbonat. Der kapillarbrechende Luftraum unter dem Blech lässt Kondensat ablaufen und abtrocknen."
   },
   {
@@ -139,8 +179,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Dachfläche ist {breite} m breit. Die Scharen haben eine Deckbreite von {deckbreite} m. Wie viele Scharen werden benötigt (aufgerundet)?",
     "parameter": [
-      { "name": "breite", "label": "Dachbreite", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 },
-      { "name": "deckbreite", "label": "Deckbreite", "einheit": "m", "min": 0.4, "max": 0.6, "schritt": 0.05 }
+      {
+        "name": "breite",
+        "label": "Dachbreite",
+        "einheit": "m",
+        "min": 6,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "deckbreite",
+        "label": "Deckbreite",
+        "einheit": "m",
+        "min": 0.4,
+        "max": 0.6,
+        "schritt": 0.05
+      }
     ],
     "schritte": [
       {
@@ -162,8 +216,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Schar soll eine Deckbreite von {deck} mm haben. Für jeden der beiden Falze wird eine Zugabe von {falz} mm benötigt. Wie breit muss der Zuschnitt (die Abwicklung) sein?",
     "parameter": [
-      { "name": "deck", "label": "Deckbreite", "einheit": "mm", "min": 400, "max": 600, "schritt": 10 },
-      { "name": "falz", "label": "Falzzugabe je Seite", "einheit": "mm", "min": 30, "max": 50, "schritt": 5 }
+      {
+        "name": "deck",
+        "label": "Deckbreite",
+        "einheit": "mm",
+        "min": 400,
+        "max": 600,
+        "schritt": 10
+      },
+      {
+        "name": "falz",
+        "label": "Falzzugabe je Seite",
+        "einheit": "mm",
+        "min": 30,
+        "max": 50,
+        "schritt": 5
+      }
     ],
     "schritte": [
       {
@@ -184,7 +252,7 @@
     "quelle": "Rheinzink Doppelstehfalz (Aufbau); KMK-Rahmenlehrplan LF 12",
     "konfidenz": "hoch",
     "frage": "Ein Doppelstehfalz im Querschnitt: Benenne die markierten Bauteile.",
-    "svg": "<svg viewBox='0 0 320 210' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Doppelstehfalz im Querschnitt'><rect x='40' y='152' width='240' height='20' fill='none' stroke='currentColor' stroke-width='1.5'/><line x1='40' y1='147' x2='280' y2='147' stroke='currentColor' stroke-width='1.6' stroke-dasharray='3 2'/><line x1='40' y1='142' x2='148' y2='142' stroke='currentColor' stroke-width='1.8'/><line x1='170' y1='142' x2='280' y2='142' stroke='currentColor' stroke-width='1.8'/><path d='M148 142 L148 112 L170 112 L170 142' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M152 118 L166 118' stroke='currentColor' stroke-width='1.2'/><path d='M138 146 L152 146 L152 126' fill='none' stroke='#c07d4a' stroke-width='2.2'/><line x1='159' y1='110' x2='159' y2='84' stroke='#c07d4a' stroke-width='1.2'/><circle cx='159' cy='72' r='12' fill='#c07d4a'/><text x='159' y='77' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='138' y1='146' x2='96' y2='120' stroke='#c07d4a' stroke-width='1.2'/><circle cx='82' cy='112' r='12' fill='#c07d4a'/><text x='82' y='117' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='250' y1='147' x2='286' y2='128' stroke='#c07d4a' stroke-width='1.2'/><circle cx='298' cy='120' r='12' fill='#c07d4a'/><text x='298' y='125' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='250' y1='162' x2='286' y2='180' stroke='#c07d4a' stroke-width='1.2'/><circle cx='298' cy='188' r='12' fill='#c07d4a'/><text x='298' y='193' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 168' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Doppelstehfalz im Querschnitt'><line x1='40' y1='96' x2='340' y2='96' stroke='currentColor' stroke-width='2'/><path d='M150 96 L150 60 L162 60 L162 72 L154 72 L154 96' fill='none' stroke='currentColor' stroke-width='2.2'/><path d='M150 96 L150 60' fill='none' stroke='#c07d4a' stroke-width='2.6'/><rect x='40' y='108' width='300' height='16' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M40 100 Q43 92 46 100 Q49 92 52 100 Q55 92 58 100 Q61 92 64 100 Q67 92 70 100 Q73 92 76 100 Q79 92 82 100 Q85 92 88 100 Q91 92 94 100 Q97 92 100 100 Q103 92 106 100 Q109 92 112 100 Q115 92 118 100 Q121 92 124 100 Q127 92 130 100 Q133 92 136 100 Q139 92 142 100 Q145 92 148 100 Q151 92 154 100 Q157 92 160 100 Q163 92 166 100 Q169 92 172 100 Q175 92 178 100 Q181 92 184 100 Q187 92 190 100 Q193 92 196 100 Q199 92 202 100 Q205 92 208 100 Q211 92 214 100 Q217 92 220 100 Q223 92 226 100 Q229 92 232 100 Q235 92 238 100 Q241 92 244 100 Q247 92 250 100 Q253 92 256 100 Q259 92 262 100 Q265 92 268 100 Q271 92 274 100 Q277 92 280 100 Q283 92 286 100 Q289 92 292 100 Q295 92 298 100 Q301 92 304 100 Q307 92 310 100 Q313 92 316 100 Q319 92 322 100 Q325 92 328 100 Q331 92 334 100 Q337 92 340 100 ' fill='none' stroke='#c07d4a' stroke-width='1.2'/><line x1='156' y1='46' x2='156' y2='60' stroke='#c07d4a' stroke-width='1'/><circle cx='156' cy='46' r='11' fill='#c07d4a'/><text x='156' y='50.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='120' y1='70' x2='150' y2='78' stroke='#c07d4a' stroke-width='1'/><circle cx='120' cy='70' r='11' fill='#c07d4a'/><text x='120' y='74.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='300' y1='88' x2='280' y2='96' stroke='#c07d4a' stroke-width='1'/><circle cx='300' cy='88' r='11' fill='#c07d4a'/><text x='300' y='92.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='80' y1='138' x2='80' y2='124' stroke='#c07d4a' stroke-width='1'/><circle cx='80' cy='138' r='11' fill='#c07d4a'/><text x='80' y='142.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "doppelstehfalz": "Doppelstehfalz",
       "haft": "Haft",
@@ -221,7 +289,10 @@
     "konfidenz": "hoch",
     "begriff": "Schiebehaft",
     "definition": "Ein Haft mit beweglichem Mittelteil: Er hält die Blechschar auf der Unterkonstruktion, lässt aber die thermische Längenbewegung zu. Ohne ihn würde sich das Blech aufwölben oder die Befestigung ausreißen.",
-    "bestandteile": ["Schiebe", "haft"],
+    "bestandteile": [
+      "Schiebe",
+      "haft"
+    ],
     "erklaerung": "Merke: Schiebe-haft — er hält und lässt gleichzeitig schieben."
   },
   {

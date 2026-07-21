@@ -13,7 +13,9 @@
       "Planung, Ausführung, Abnahme, Rechnung",
       "Aufmaß, Angebot, Montage, Wartung"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Wartung verzögert den Abbau des Abnutzungsvorrats, Inspektion stellt den Ist-Zustand fest, Instandsetzung stellt den Soll-Zustand wieder her, Verbesserung erhöht die Funktionssicherheit ohne die geforderte Funktion zu ändern."
   },
   {
@@ -30,7 +32,9 @@
       "Die Inspektion findet nur nach einem Sturm statt",
       "Es ist dasselbe"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Inspektion ist reines Feststellen und Beurteilen des Ist-Zustands. Erst die Instandsetzung stellt den Soll-Zustand wieder her."
   },
   {
@@ -47,7 +51,9 @@
       "Durch zu hohe Anschlüsse",
       "Durch zu viel Gefälle"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Unter der Bahn eingeschlossene Feuchtigkeit oder Luft dehnt sich bei Sonneneinstrahlung aus und hebt die Abdichtung an. Häufige Ursache ist das Verkleben auf feuchtem oder nicht sauberem Untergrund."
   },
   {
@@ -64,7 +70,9 @@
       "Weil der Fleck immer vom Kondensat kommt",
       "Weil Feuchteflecken nichts mit Undichtigkeiten zu tun haben"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Wasser wandert auf der Dampfsperre oder an Sparren entlang und tritt erst an der nächsten Fehlstelle aus. Deshalb wird die Suche immer oberhalb und im Umkreis des Flecks angesetzt."
   },
   {
@@ -81,7 +89,9 @@
       "Weil das Wasser die Dachlatten durchweicht",
       "Weil der Reiniger die Beschichtung angreift"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Faserzementplatten älterer Baujahre können Asbest enthalten. Hochdruckreinigen, Schleifen, Bohren und Abbürsten setzen Fasern frei und sind nach TRGS 519 unzulässig. Im Zweifel: nicht bearbeiten, sondern untersuchen lassen."
   },
   {
@@ -98,7 +108,9 @@
       "Sofort die neue Deckung bestellen",
       "Die Rinne reinigen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Zuerst die Sicherheit: absperren, lose Teile sichern oder abnehmen. Danach folgen die Notabdichtung und die fotografische Dokumentation für Versicherung und Auftraggeber."
   },
   {
@@ -115,7 +127,9 @@
       "Nur bei Flachdächern",
       "Wenn die Fläche am Ende ihrer Lebensdauer ist"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Ist die Fläche insgesamt am Ende ihrer Lebensdauer, übersteigt die Summe vieler Reparaturen die Kosten einer Sanierung. Das offen zu sagen, gehört zur ehrlichen Beratung."
   },
   {
@@ -127,8 +141,14 @@
     "konfidenz": "hoch",
     "text": "Die {{Wartung}} verzögert den Abbau des Abnutzungsvorrats, die {{Instandsetzung}} stellt den Soll-Zustand wieder her.",
     "akzeptiert": {
-      "Wartung": ["wartung", "Pflege"],
-      "Instandsetzung": ["instandsetzung", "Reparatur"]
+      "Wartung": [
+        "wartung",
+        "Pflege"
+      ],
+      "Instandsetzung": [
+        "instandsetzung",
+        "Reparatur"
+      ]
     },
     "erklaerung": "Dazwischen liegt die Inspektion: Sie stellt fest und beurteilt, repariert aber nicht. Die vierte Maßnahme ist die Verbesserung."
   },
@@ -140,7 +160,15 @@
     "quelle": "Gefahrstoffverordnung / TRGS 519 (Asbest)",
     "konfidenz": "hoch",
     "text": "Für Arbeiten an asbesthaltigen Materialien gilt die Technische Regel {{TRGS 519}}. In Deutschland besteht seit {{1993}} ein Herstellungs- und Verwendungsverbot für Asbest.",
-    "akzeptiert": { "TRGS 519": ["TRGS519", "TRGS-519"], "1993": ["im Jahr 1993"] },
+    "akzeptiert": {
+      "TRGS 519": [
+        "TRGS519",
+        "TRGS-519"
+      ],
+      "1993": [
+        "im Jahr 1993"
+      ]
+    },
     "erklaerung": "Verbaut sind asbesthaltige Faserzementplatten trotzdem noch auf vielen Bestandsdächern — deshalb ist bei jedem Altdach zuerst zu klären, woraus die Deckung besteht."
   },
   {
@@ -152,9 +180,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für eine Teilsanierung wird eine Dachfläche von {laenge} m × {breite} m erneuert. Für Verschnitt und Überdeckungen werden {zuschlag} % aufgeschlagen. Wie viel Material ist zu bestellen?",
     "parameter": [
-      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 6, "max": 25, "schritt": 0.5 },
-      { "name": "breite", "label": "Breite", "einheit": "m", "min": 4, "max": 12, "schritt": 0.5 },
-      { "name": "zuschlag", "label": "Zuschlag", "einheit": "%", "min": 5, "max": 20, "schritt": 1 }
+      {
+        "name": "laenge",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 6,
+        "max": 25,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Breite",
+        "einheit": "m",
+        "min": 4,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "zuschlag",
+        "label": "Zuschlag",
+        "einheit": "%",
+        "min": 5,
+        "max": 20,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -182,8 +231,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Auf einer Dachfläche liegen {ziegel} Ziegel. Bei der Inspektion sind {anteil} % davon gebrochen oder verschoben. Wie viele Ziegel müssen ausgetauscht werden (aufgerundet)?",
     "parameter": [
-      { "name": "ziegel", "label": "Anzahl Ziegel", "einheit": "Stück", "min": 400, "max": 3000, "schritt": 50 },
-      { "name": "anteil", "label": "schadhafter Anteil", "einheit": "%", "min": 1, "max": 12, "schritt": 1 }
+      {
+        "name": "ziegel",
+        "label": "Anzahl Ziegel",
+        "einheit": "Stück",
+        "min": 400,
+        "max": 3000,
+        "schritt": 50
+      },
+      {
+        "name": "anteil",
+        "label": "schadhafter Anteil",
+        "einheit": "%",
+        "min": 1,
+        "max": 12,
+        "schritt": 1
+      }
     ],
     "schritte": [
       {
@@ -204,7 +267,7 @@
     "quelle": "Fachregeln des Dachdeckerhandwerks (Schadensbilder Flachdach, Erläuterungen)",
     "konfidenz": "hoch",
     "frage": "Flachdach im Schnitt mit vier typischen Schadensstellen: Benenne die markierten Schadensbilder.",
-    "svg": "<svg viewBox='0 0 340 220' width='310' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Flachdach im Schnitt mit vier Schadensstellen'><line x1='30' y1='140' x2='262' y2='140' stroke='currentColor' stroke-width='1.6'/><rect x='262' y='44' width='40' height='96' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M50 134 L54 158 L70 158 L74 134' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M56 142 L68 142 M58 149 L66 149' fill='none' stroke='currentColor' stroke-width='1.4'/><path d='M30 134 L50 134 L54 150' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M74 134 L100 134' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M100 134 q 16 -22 32 0' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M132 134 L186 134 L182 122' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M194 122 L198 134 L256 134 L256 114' fill='none' stroke='#c07d4a' stroke-width='2.4'/><line x1='116' y1='122' x2='112' y2='60' stroke='#c07d4a' stroke-width='1.2'/><circle cx='110' cy='48' r='12' fill='#c07d4a'/><text x='110' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='190' y1='124' x2='172' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='168' cy='48' r='12' fill='#c07d4a'/><text x='168' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='254' y1='118' x2='234' y2='62' stroke='#c07d4a' stroke-width='1.2'/><circle cx='230' cy='48' r='12' fill='#c07d4a'/><text x='230' y='53' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='60' y1='160' x2='48' y2='180' stroke='#c07d4a' stroke-width='1.2'/><circle cx='42' cy='192' r='12' fill='#c07d4a'/><text x='42' y='197' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 182' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Flachdach mit vier typischen Schadensstellen'><line x1='30' y1='120' x2='300' y2='120' stroke='currentColor' stroke-width='1.8'/><rect x='300' y='50' width='40' height='70' fill='none' stroke='currentColor' stroke-width='1.6'/><path d='M60 120 q 16 -22 32 0' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M140 120 L136 108 M150 120 L154 108' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M296 120 L296 100' fill='none' stroke='#c07d4a' stroke-width='2.4'/><path d='M210 120 L216 134 L232 134 L238 120' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='76' y1='92' x2='76' y2='106' stroke='#c07d4a' stroke-width='1'/><circle cx='76' cy='92' r='11' fill='#c07d4a'/><text x='76' y='96.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='145' y1='90' x2='145' y2='106' stroke='#c07d4a' stroke-width='1'/><circle cx='145' cy='90' r='11' fill='#c07d4a'/><text x='145' y='94.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='280' y1='84' x2='296' y2='100' stroke='#c07d4a' stroke-width='1'/><circle cx='280' cy='84' r='11' fill='#c07d4a'/><text x='280' y='88.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='224' y1='150' x2='224' y2='134' stroke='#c07d4a' stroke-width='1'/><circle cx='224' cy='150' r='11' fill='#c07d4a'/><text x='224' y='154.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "blase": "Blasenbildung",
       "naht": "Offene Naht",
@@ -241,7 +304,12 @@
     "konfidenz": "hoch",
     "begriff": "Wartungsvertrag",
     "definition": "Eine Vereinbarung zwischen Betrieb und Gebäudeeigentümer über wiederkehrende Inspektions- und Wartungsleistungen am Dach — mit festgelegtem Umfang, festgelegten Intervallen und schriftlicher Dokumentation jedes Termins.",
-    "bestandteile": ["Leistungsumfang", "Intervalle", "Dokumentation der Befunde", "Regelung für Sofortmaßnahmen"],
+    "bestandteile": [
+      "Leistungsumfang",
+      "Intervalle",
+      "Dokumentation der Befunde",
+      "Regelung für Sofortmaßnahmen"
+    ],
     "erklaerung": "Für den Eigentümer sichert der Vertrag den Werterhalt und ist bei Versicherungsfragen ein Nachweis der Sorgfalt. Für den Betrieb bedeutet er planbare Auslastung und frühzeitig erkannte Schäden — kleine Befunde statt großer Sanierungen."
   },
   {
@@ -253,7 +321,11 @@
     "konfidenz": "hoch",
     "begriff": "Schadensursache",
     "definition": "Der Grund, aus dem ein Schaden entstanden ist — im Unterschied zum Schadensbild, also dem sichtbaren Erscheinungsbild. Erst die Behebung der Ursache verhindert, dass derselbe Schaden erneut auftritt.",
-    "bestandteile": ["Schadensbild (was man sieht)", "Schadensursache (warum es passiert ist)", "Instandsetzung beseitigt beides"],
+    "bestandteile": [
+      "Schadensbild (was man sieht)",
+      "Schadensursache (warum es passiert ist)",
+      "Instandsetzung beseitigt beides"
+    ],
     "erklaerung": "Beispiel: Das Bild ist ein Riss in der Abdichtung, die Ursache ist eine Bewegung im Untergrund. Wer nur flickt, hat den Riss nach dem nächsten Winter wieder — nur ein Stück weiter."
   }
 ]

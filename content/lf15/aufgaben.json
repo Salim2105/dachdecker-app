@@ -13,7 +13,9 @@
       "Um Material zu sparen",
       "Damit die Bekleidung leichter wird"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Die Hinterlüftung braucht unten eine Zuluft- und oben eine Abluftöffnung. Ein dichter Sockel würde den Luftstrom abwürgen. Ein Lüftungsprofil oder Lochblech hält dabei Vögel und Insekten fern."
   },
   {
@@ -30,7 +32,9 @@
       "Er ersetzt die Wärmedämmung",
       "Er dient als Blitzschutz"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Direkt über dem Gelände spritzt Regenwasser vom Boden zurück an die Fassade. Deshalb endet die Bekleidung mit Abstand über dem Gelände — sonst saugt sich das Material dauerhaft voll."
   },
   {
@@ -47,7 +51,9 @@
       "Weil dort kein Wind angreift",
       "Weil dort die Dämmung fehlt"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Die Innenecke wirkt wie eine stehende Kehle: Zwei Flächen entwässern in dieselbe Linie. An der Außenecke läuft das Wasser dagegen auseinander — sie ist eher mechanisch und optisch kritisch."
   },
   {
@@ -64,7 +70,9 @@
       "Sie wird an der Ecke verdoppelt",
       "Sie wird mit Dämmstoff ausgefüllt"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Wird die Luftschicht an der Ecke zugebaut, entsteht ein toter Bereich ohne Luftwechsel. Dort bleibt Feuchtigkeit stehen — genau da beginnen später die Schäden."
   },
   {
@@ -81,7 +89,9 @@
       "Sie dient der Befestigung",
       "Sie verhindert Kondenswasser im Fenster"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Ohne Tropfkante kriecht das Wasser an der Blechunterseite zurück zur Fassade und läuft daran herunter — daher die typischen Schmutzfahnen unter Fensterbänken. Eine Versteifung ist ein willkommener Nebeneffekt, aber nicht der Zweck."
   },
   {
@@ -98,7 +108,9 @@
       "Es dichtet die Luftschicht luftdicht ab",
       "Es dient nur der Optik"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "In der Luftschicht kann Wasser stehen — Schlagregen, Kondensat. Über der Öffnung muss es nach außen geführt werden, sonst sammelt es sich auf dem Sturz. Deshalb sitzt dort ein Blech mit Tropfkante."
   },
   {
@@ -115,7 +127,9 @@
       "Damit der Wind hindurchpfeifen kann",
       "Weil die Wand sich setzt"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Fassadenbekleidungen erreichen im Sommer hohe Oberflächentemperaturen. Starr eingespannte Flächen beulen oder reißen. Die Abschlüsse müssen die Längenänderung aufnehmen können."
   },
   {
@@ -127,8 +141,15 @@
     "konfidenz": "hoch",
     "text": "Bei der hinterlüfteten Fassade tritt die Luft am {{unteren}} Abschluss ein und verlässt die Konstruktion am {{oberen}} Abschluss.",
     "akzeptiert": {
-      "unteren": ["unten", "Sockel", "unterer"],
-      "oberen": ["oben", "oberer"]
+      "unteren": [
+        "unten",
+        "Sockel",
+        "unterer"
+      ],
+      "oberen": [
+        "oben",
+        "oberer"
+      ]
     },
     "erklaerung": "Die erwärmte Luft steigt in der Luftschicht nach oben (Kamineffekt). Fehlt eine der beiden Öffnungen, kommt die Strömung zum Erliegen und die Feuchtigkeit bleibt in der Konstruktion."
   },
@@ -141,8 +162,16 @@
     "konfidenz": "hoch",
     "text": "Eine Fensterbank braucht ein {{Gefälle}} nach außen und seitlich {{Aufkantungen}}, damit das Wasser nicht in die Laibung läuft.",
     "akzeptiert": {
-      "Gefälle": ["Gefaelle", "Neigung"],
-      "Aufkantungen": ["Aufkantung", "Bordprofile", "Bordprofil", "Aufbordungen"]
+      "Gefälle": [
+        "Gefaelle",
+        "Neigung"
+      ],
+      "Aufkantungen": [
+        "Aufkantung",
+        "Bordprofile",
+        "Bordprofil",
+        "Aufbordungen"
+      ]
     },
     "erklaerung": "Ohne Aufkantung läuft das Wasser seitlich über die Kante direkt in den Laibungsanschluss — eine der häufigsten Schadensursachen an Fensteranschlüssen."
   },
@@ -155,11 +184,46 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Wandfläche ist {laenge} m lang und {hoehe} m hoch. Darin liegen {anzahl} gleich große Fensteröffnungen von je {fb} m Breite und {fh} m Höhe. Wie groß ist die zu bekleidende Nettofläche?",
     "parameter": [
-      { "name": "laenge", "label": "Wandlänge", "einheit": "m", "min": 8, "max": 20, "schritt": 0.5 },
-      { "name": "hoehe", "label": "Wandhöhe", "einheit": "m", "min": 3, "max": 8, "schritt": 0.5 },
-      { "name": "anzahl", "label": "Anzahl Fenster", "einheit": "Stück", "min": 2, "max": 6, "schritt": 1 },
-      { "name": "fb", "label": "Fensterbreite", "einheit": "m", "min": 0.8, "max": 2, "schritt": 0.1 },
-      { "name": "fh", "label": "Fensterhöhe", "einheit": "m", "min": 1, "max": 2, "schritt": 0.1 }
+      {
+        "name": "laenge",
+        "label": "Wandlänge",
+        "einheit": "m",
+        "min": 8,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "hoehe",
+        "label": "Wandhöhe",
+        "einheit": "m",
+        "min": 3,
+        "max": 8,
+        "schritt": 0.5
+      },
+      {
+        "name": "anzahl",
+        "label": "Anzahl Fenster",
+        "einheit": "Stück",
+        "min": 2,
+        "max": 6,
+        "schritt": 1
+      },
+      {
+        "name": "fb",
+        "label": "Fensterbreite",
+        "einheit": "m",
+        "min": 0.8,
+        "max": 2,
+        "schritt": 0.1
+      },
+      {
+        "name": "fh",
+        "label": "Fensterhöhe",
+        "einheit": "m",
+        "min": 1,
+        "max": 2,
+        "schritt": 0.1
+      }
     ],
     "schritte": [
       {
@@ -193,8 +257,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein rechteckiges Gebäude ist {a} m lang und {b} m breit und wird ringsum mit einer hinterlüfteten Fassade bekleidet. Wie viele Meter Sockel-Lüftungsprofil werden benötigt?",
     "parameter": [
-      { "name": "a", "label": "Gebäudelänge", "einheit": "m", "min": 8, "max": 30, "schritt": 0.5 },
-      { "name": "b", "label": "Gebäudebreite", "einheit": "m", "min": 6, "max": 20, "schritt": 0.5 }
+      {
+        "name": "a",
+        "label": "Gebäudelänge",
+        "einheit": "m",
+        "min": 8,
+        "max": 30,
+        "schritt": 0.5
+      },
+      {
+        "name": "b",
+        "label": "Gebäudebreite",
+        "einheit": "m",
+        "min": 6,
+        "max": 20,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
       {
@@ -215,7 +293,7 @@
     "quelle": "Fachregeln für Außenwandbekleidungen (Sockeldetail)",
     "konfidenz": "hoch",
     "frage": "Sockelabschluss einer hinterlüfteten Außenwandbekleidung im Schnitt: Benenne die markierten Schichten.",
-    "svg": "<svg viewBox='0 0 320 230' width='300' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Sockelabschluss einer hinterluefteten Fassade im Schnitt'><rect x='60' y='20' width='30' height='160' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='90' y='20' width='20' height='160' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><rect x='126' y='20' width='10' height='140' fill='none' stroke='#c07d4a' stroke-width='2'/><rect x='126' y='160' width='10' height='8' fill='none' stroke='#c07d4a' stroke-width='1.4'/><path d='M118 196 L118 172' fill='none' stroke='#c07d4a' stroke-width='1.2'/><path d='M118 172 L115 179 M118 172 L121 179' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='60' y='192' fill='currentColor' font-size='9'>Zuluft</text><line x1='40' y1='200' x2='300' y2='200' stroke='currentColor' stroke-width='1.6'/><text x='250' y='214' fill='currentColor' font-size='9'>Gelände</text><line x1='152' y1='168' x2='152' y2='200' stroke='currentColor' stroke-width='0.9'/><path d='M152 168 L149 174 M152 168 L155 174 M152 200 L149 194 M152 200 L155 194' fill='none' stroke='currentColor' stroke-width='0.9'/><text x='158' y='188' fill='currentColor' font-size='9'>Abstand</text><line x1='75' y1='60' x2='196' y2='44' stroke='#c07d4a' stroke-width='1.2'/><circle cx='210' cy='40' r='12' fill='#c07d4a'/><text x='210' y='45' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='100' y1='90' x2='216' y2='80' stroke='#c07d4a' stroke-width='1.2'/><circle cx='230' cy='76' r='12' fill='#c07d4a'/><text x='230' y='81' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='118' y1='120' x2='236' y2='116' stroke='#c07d4a' stroke-width='1.2'/><circle cx='250' cy='112' r='12' fill='#c07d4a'/><text x='250' y='117' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='134' y1='150' x2='258' y2='150' stroke='#c07d4a' stroke-width='1.2'/><circle cx='272' cy='150' r='12' fill='#c07d4a'/><text x='272' y='155' fill='#23262b' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "svg": "<svg viewBox='0 0 380 200' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sockelabschluss einer hinterlüfteten Fassade'><rect x='40' y='40' width='40' height='130' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='80' y='40' width='30' height='130' fill='#c07d4a' stroke='none' opacity='0.16'/><rect x='80' y='40' width='30' height='130' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><rect x='122' y='40' width='14' height='130' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='146' y='40' width='12' height='130' fill='none' stroke='#c07d4a' stroke-width='2'/><circle cx='60' cy='100' r='11' fill='#c07d4a'/><text x='60' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='95' cy='100' r='11' fill='#c07d4a'/><text x='95' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='129' cy='100' r='11' fill='#c07d4a'/><text x='129' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='220' y1='90' x2='158' y2='100' stroke='#c07d4a' stroke-width='1'/><circle cx='220' cy='90' r='11' fill='#c07d4a'/><text x='220' y='94.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
     "zuordnung": {
       "mauerwerk": "Tragende Wand",
       "daemmung": "Wärmedämmung",
@@ -252,7 +330,11 @@
     "konfidenz": "hoch",
     "begriff": "Tropfkante",
     "definition": "Die nach unten abgekantete Vorderkante eines Blechs — zum Beispiel an einer Fensterbank oder an einem Abdeckblech. Sie zwingt das ablaufende Wasser zum Abtropfen, damit es nicht an der Blechunterseite zurück zur Fassade läuft.",
-    "bestandteile": ["Abgekantete Blechkante", "Abstand zur Fassade", "Wasser tropft frei ab"],
+    "bestandteile": [
+      "Abgekantete Blechkante",
+      "Abstand zur Fassade",
+      "Wasser tropft frei ab"
+    ],
     "erklaerung": "Fehlt die Tropfkante, zieht das Wasser durch Kapillarwirkung und Adhäsion an der Unterseite entlang zurück an die Wand. Das Ergebnis sind die typischen dunklen Schmutzfahnen unter Fensterbänken."
   },
   {
@@ -264,7 +346,12 @@
     "konfidenz": "hoch",
     "begriff": "Detailzeichnung",
     "definition": "Ein vergrößerter Ausschnitt aus einem Bauteil, meist im Maßstab 1:5 oder 1:10, der eine konstruktiv besondere Stelle zeigt — Ecke, Abschluss oder Durchdringung — mit Schichtenfolge, Bauteilbezeichnungen und den maßgebenden Maßen.",
-    "bestandteile": ["Schichtenfolge von innen nach außen", "Bauteilbezeichnungen", "Maßgebende Maße", "Wasserführende Ebene"],
+    "bestandteile": [
+      "Schichtenfolge von innen nach außen",
+      "Bauteilbezeichnungen",
+      "Maßgebende Maße",
+      "Wasserführende Ebene"
+    ],
     "erklaerung": "Bewertet wird nicht die Schönheit, sondern die Funktion: richtige Schichtenfolge, Wasser läuft nach außen ab, Hinterlüftung durchgehend, Maße eingetragen."
   }
 ]

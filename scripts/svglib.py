@@ -201,7 +201,7 @@ class Fig:
         if not hasattr(self, "_markers"):
             self._markers = []
         for (mx, my, mr) in self._markers:
-            if ((x - mx) ** 2 + (y - my) ** 2) ** 0.5 < r + mr + 2:
+            if ((x - mx) ** 2 + (y - my) ** 2) ** 0.5 < r + mr - 1:
                 raise ValueError(f"Callout {n} bei ({x},{y}) überlappt einen anderen Marker")
         self._markers.append((x, y, r))
         self.art.append(
