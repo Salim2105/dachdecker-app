@@ -37,31 +37,53 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className="min-h-screen">
         <header
-          className="sticky top-0 z-30 flex items-center justify-between border-b px-4 py-3"
-          style={{ background: "var(--surface)", borderColor: "var(--border)" }}
+          className="sticky top-0 z-30 border-b"
+          style={{
+            background: "color-mix(in srgb, var(--surface) 82%, transparent)",
+            borderColor: "var(--border-soft)",
+            backdropFilter: "saturate(1.4) blur(14px)",
+            WebkitBackdropFilter: "saturate(1.4) blur(14px)",
+          }}
         >
-          <span className="flex items-center gap-2 text-sm font-medium tracking-wide">
-            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M2 12L12 4l10 8"
-                fill="none"
-                stroke="var(--accent)"
-                strokeWidth="2"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M5 11v8h14v-8"
-                fill="none"
-                stroke="var(--text-muted)"
-                strokeWidth="1.6"
-                strokeLinejoin="round"
-              />
-            </svg>
-            Dachdecker
-          </span>
-          <ThemeToggle />
+          <div className="mx-auto flex w-full max-w-2xl items-center justify-between px-4 py-3">
+            <span className="flex items-center gap-2.5">
+              <span
+                className="flex h-8 w-8 items-center justify-center rounded-[10px]"
+                style={{ background: "var(--accent-soft)" }}
+              >
+                <svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M2 12L12 4l10 8"
+                    fill="none"
+                    stroke="var(--accent)"
+                    strokeWidth="2.1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M5 11v8h14v-8"
+                    fill="none"
+                    stroke="var(--accent)"
+                    strokeWidth="1.5"
+                    strokeLinejoin="round"
+                    opacity="0.5"
+                  />
+                </svg>
+              </span>
+              <span className="flex flex-col leading-none">
+                <span className="text-[15px] font-semibold tracking-tight">Dachdecker</span>
+                <span
+                  className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.16em]"
+                  style={{ color: "var(--text-faint)" }}
+                >
+                  Gesellenprüfung
+                </span>
+              </span>
+            </span>
+            <ThemeToggle />
+          </div>
         </header>
-        <main className="mx-auto w-full max-w-2xl px-4 pb-28 pt-5">{children}</main>
+        <main className="mx-auto w-full max-w-2xl px-4 pb-28 pt-6">{children}</main>
         <BottomNav />
         <ServiceWorkerRegister />
       </body>

@@ -18,40 +18,51 @@ export function BottomNav() {
 
   return (
     <nav
-      className="fixed bottom-0 left-0 right-0 z-40 flex justify-around border-t"
+      className="fixed bottom-0 left-0 right-0 z-40 border-t"
       style={{
-        background: "var(--surface)",
-        borderColor: "var(--border)",
+        background: "color-mix(in srgb, var(--surface) 88%, transparent)",
+        borderColor: "var(--border-soft)",
+        backdropFilter: "saturate(1.4) blur(14px)",
+        WebkitBackdropFilter: "saturate(1.4) blur(14px)",
         paddingBottom: "env(safe-area-inset-bottom)",
       }}
     >
-      {ITEMS.map((item) => {
-        const active = isActive(item.href);
-        return (
-          <Link
-            key={item.href}
-            href={item.href}
-            aria-current={active ? "page" : undefined}
-            className="flex min-h-[56px] flex-1 flex-col items-center justify-center gap-1 px-0.5 pt-2 text-[10px] leading-tight"
-            style={{ color: active ? "var(--accent)" : "var(--text-muted)" }}
-          >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
+      <div className="mx-auto flex w-full max-w-2xl justify-around">
+        {ITEMS.map((item) => {
+          const active = isActive(item.href);
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              className="group flex min-h-[58px] flex-1 flex-col items-center justify-center gap-1 px-0.5 pt-2 text-[10px] font-medium leading-tight transition-colors"
+              style={{ color: active ? "var(--accent)" : "var(--text-muted)" }}
             >
-              <path d={item.icon} />
-            </svg>
-            {item.label}
-          </Link>
-        );
-      })}
+              <span
+                className="flex h-8 w-12 items-center justify-center rounded-full transition-all duration-200"
+                style={{
+                  background: active ? "var(--accent-soft)" : "transparent",
+                }}
+              >
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={active ? 2 : 1.7}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d={item.icon} />
+                </svg>
+              </span>
+              {item.label}
+            </Link>
+          );
+        })}
+      </div>
     </nav>
   );
 }

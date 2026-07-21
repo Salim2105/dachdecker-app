@@ -1,44 +1,104 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Design System — "Schiefer & Kupfer", Premium
+   Farben verfeinert, saubere Elevation (Karten heben sich vom Grund ab),
+   Radius-/Schatten-/Typo-Skala für einen ruhigen, seriösen Look.
+--------------------------------------------------------------------------- */
 :root,
 :root[data-theme="dark"] {
-  --bg: #23262b;
-  --surface: #1a1c20;
-  --surface-2: #2b2e33;
+  /* Grund & Flächen — Elevation steigt mit der Helligkeit */
+  --bg: #191b1f;
+  --surface: #212429;
+  --surface-2: #2a2e34;
+  --surface-3: #34383f;
+
+  /* Text */
   --text: #ece7df;
-  --text-muted: #a8a294;
-  --border: #34383e;
-  --accent: #c07d4a;
-  --accent-text: #23262b;
+  --text-muted: #9b958a;
+  --text-faint: #6d6a63;
+
+  /* Linien */
+  --border: #32363d;
+  --border-soft: #292d33;
+
+  /* Kupfer-Akzent */
+  --accent: #cd8551;
+  --accent-strong: #dc9463;
+  --accent-text: #191b1f;
+  --accent-soft: rgba(205, 133, 81, 0.14);
+
+  /* Status */
   --ok: #5dcaa5;
+  --ok-soft: rgba(93, 202, 165, 0.14);
   --bad: #e2726f;
+  --bad-soft: rgba(226, 114, 111, 0.14);
+
+  /* Tiefe */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px -8px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 18px 48px -18px rgba(0, 0, 0, 0.7);
+  --ring: rgba(205, 133, 81, 0.4);
 }
 
 :root[data-theme="light"] {
-  --bg: #faf7f2;
+  --bg: #f6f3ec;
   --surface: #ffffff;
-  --surface-2: #f3efe8;
-  --text: #2b2723;
+  --surface-2: #f1ece2;
+  --surface-3: #e8e1d4;
+
+  --text: #26221d;
   --text-muted: #6a635a;
-  --border: #e6e0d6;
+  --text-faint: #9a9285;
+
+  --border: #e5ddd0;
+  --border-soft: #eee7db;
+
   --accent: #b8442c;
+  --accent-strong: #a13a24;
   --accent-text: #ffffff;
+  --accent-soft: rgba(184, 68, 44, 0.1);
+
   --ok: #1d9e75;
+  --ok-soft: rgba(29, 158, 117, 0.12);
   --bad: #c0392b;
+  --bad-soft: rgba(192, 57, 43, 0.1);
+
+  --shadow-sm: 0 1px 2px rgba(60, 50, 38, 0.06);
+  --shadow-md: 0 8px 24px -12px rgba(60, 50, 38, 0.18);
+  --shadow-lg: 0 20px 50px -20px rgba(60, 50, 38, 0.22);
+  --ring: rgba(184, 68, 44, 0.35);
+}
+
+/* Radius-Skala — bewusst großzügig, aber ruhig */
+:root {
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 26px;
 }
 
 @theme inline {
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
   --color-text: var(--text);
   --color-text-muted: var(--text-muted);
+  --color-text-faint: var(--text-faint);
   --color-border: var(--border);
+  --color-border-soft: var(--border-soft);
   --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
   --color-ok: var(--ok);
   --color-bad: var(--bad);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-xl: var(--r-xl);
 }
 
 html {
@@ -49,7 +109,23 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv01";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   transition:
-    background 0.2s ease,
-    color 0.2s ease;
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Zahlen laufen tabellarisch — wichtig für Countdown, Fortschritt, Rechner */
+.tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Sichtbarer, ruhiger Fokusring für Tastatur-Navigation */
+:where(a, button, input, [tabindex]):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ring);
+  border-radius: var(--r-sm);
 }
