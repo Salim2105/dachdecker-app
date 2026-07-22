@@ -1,5 +1,5 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1784659154174";
+const CACHE = "dachdecker-1784744620247";
 const SHELL = [
   "/",
   "/lernen",
@@ -55,21 +55,21 @@ const SHELL = [
   "/next.svg",
   "/vercel.svg",
   "/window.svg",
-  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_buildManifest.js",
-  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_clientMiddlewareManifest.js",
-  "/_next/static/4qcQ-HTZuOT4ubgYtOoqU/_ssgManifest.js",
+  "/_next/static/RPYnHdL7pJ77Q6Jult6ce/_buildManifest.js",
+  "/_next/static/RPYnHdL7pJ77Q6Jult6ce/_clientMiddlewareManifest.js",
+  "/_next/static/RPYnHdL7pJ77Q6Jult6ce/_ssgManifest.js",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
   "/_next/static/chunks/0rh6l6y2yfzk1.js",
-  "/_next/static/chunks/0rmls7y7l7nuh.js",
   "/_next/static/chunks/10qk6v6416kh8.js",
   "/_next/static/chunks/14mrh2-p_w84d.js",
+  "/_next/static/chunks/1cw6o3wa8pw5p.js",
   "/_next/static/chunks/1e6rp_h0buicz.js",
   "/_next/static/chunks/1m1f2g9dnwhgz.js",
   "/_next/static/chunks/27jktro2p5rq9.js",
   "/_next/static/chunks/2_-bxmry1_az8.css",
+  "/_next/static/chunks/2bgjho9p8w70-.js",
   "/_next/static/chunks/2f4tleh5de5w3.js",
-  "/_next/static/chunks/2oiigiqnvpo6y.js",
   "/_next/static/chunks/315owoz9ub2zd.js",
   "/_next/static/chunks/35u-bidvta8u1.js",
   "/_next/static/chunks/38bjz7wb0f-az.js",

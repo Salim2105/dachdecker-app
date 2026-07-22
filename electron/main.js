@@ -15,6 +15,9 @@ const OUT_DIR = app.isPackaged
   ? path.join(process.resourcesPath, "out")
   : path.join(__dirname, "..", "out");
 
+// Fester, unüblicher Port → stabile Adresse → Fortschritt bleibt erhalten.
+const FEST_PORT = 39217;
+
 const MIME = {
   ".html": "text/html; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
@@ -63,8 +66,11 @@ function starteServer() {
       res.writeHead(200, { "Content-Type": MIME[path.extname(datei)] || "application/octet-stream" });
       fs.createReadStream(datei).pipe(res);
     });
-    // Port 0 = freien Port vom System geben lassen.
-    server.listen(0, "127.0.0.1", () => resolve(server.address().port));
+    // FESTER Port: sonst ändert sich bei jedem Start die Adresse
+    // (http://127.0.0.1:PORT), und weil der Fortschritt pro Adresse im
+    // localStorage liegt, wäre er nach jedem Neustart weg.
+    server.once("error", () => resolve(FEST_PORT)); // schon belegt → gleiche Adresse weiternutzen
+    server.listen(FEST_PORT, "127.0.0.1", () => resolve(FEST_PORT));
   });
 }
 
