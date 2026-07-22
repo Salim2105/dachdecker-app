@@ -47,6 +47,18 @@ export function pruefeAntwort(eingabe: number, loesung: number, toleranzProzent:
   return Math.abs(eingabe - loesung) <= toleranz + 1e-9;
 }
 
+// Kleiner Taschenrechner für die Nebenrechnung: wertet einen Ausdruck aus,
+// gibt null bei leer/ungültig. Nutzt mathjs (schon als Abhängigkeit da).
+export function rechne(ausdruck: string): number | null {
+  if (!ausdruck.trim()) return null;
+  try {
+    const r = Number(evaluate(ausdruck));
+    return Number.isFinite(r) ? r : null;
+  } catch {
+    return null;
+  }
+}
+
 export function ersetzePlatzhalter(text: string, werte: Record<string, number>): string {
   return text.replace(/\{(\w+)\}/g, (voll, name) =>
     name in werte ? String(Number(werte[name].toFixed(2))) : voll,
