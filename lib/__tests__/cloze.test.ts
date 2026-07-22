@@ -25,4 +25,16 @@ describe("pruefeLuecke", () => {
   it("rejects wrong answers", () => {
     expect(pruefeLuecke("Stein", "Ziegel")).toBe(false);
   });
+  it("verzeiht Tippfehler", () => {
+    expect(pruefeLuecke("Zieglel", "Ziegel")).toBe(true); // ein Dreher
+    expect(pruefeLuecke("Regeldachneigng", "Regeldachneigung")).toBe(true); // fehlender Buchstabe
+  });
+  it("ignoriert Umlaut-Schreibweise und Bindestriche", () => {
+    expect(pruefeLuecke("gefaelle", "Gefälle")).toBe(true);
+    expect(pruefeLuecke("doppel stehfalz", "Doppel-Stehfalz")).toBe(true);
+  });
+  it("bleibt bei ganz anderen Wörtern falsch", () => {
+    expect(pruefeLuecke("Mörtel", "Ziegel")).toBe(false);
+    expect(pruefeLuecke("", "Ziegel")).toBe(false);
+  });
 });

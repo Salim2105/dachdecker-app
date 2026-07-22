@@ -8,14 +8,39 @@ import { letztesLfStore } from "@/lib/appStores";
 
 export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: string }) {
   const { bewerte } = useProgress();
+  const KEY = `dd-session-${lfId}`;
   const [index, setIndex] = useState(0);
   const [beantwortet, setBeantwortet] = useState(false);
   const [ergebnisse, setErgebnisse] = useState<Bewertung[]>([]);
   const [fertig, setFertig] = useState(false);
+  const [geladen, setGeladen] = useState(false);
 
   useEffect(() => {
     letztesLfStore.set(lfId);
   }, [lfId]);
+
+  // Laufende Übung wiederherstellen (z. B. nach Abstecher zum Rechner).
+  useEffect(() => {
+    try {
+      const s = JSON.parse(localStorage.getItem(KEY) || "null");
+      if (s && typeof s.index === "number" && s.index < aufgaben.length) {
+        setIndex(s.index);
+        setErgebnisse(Array.isArray(s.ergebnisse) ? s.ergebnisse : []);
+        setBeantwortet(!!s.beantwortet);
+      }
+    } catch {}
+    setGeladen(true);
+  }, [KEY, aufgaben.length]);
+
+  // Stand sichern; bei Abschluss aufräumen.
+  useEffect(() => {
+    if (!geladen) return;
+    if (fertig) {
+      localStorage.removeItem(KEY);
+      return;
+    }
+    localStorage.setItem(KEY, JSON.stringify({ index, ergebnisse, beantwortet }));
+  }, [geladen, KEY, index, ergebnisse, beantwortet, fertig]);
 
   const aktuell = aufgaben[index];
 

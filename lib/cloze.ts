@@ -22,10 +22,48 @@ export function parseCloze(text: string): ClozeTeil[] {
 }
 
 function normalisiere(s: string): string {
-  return s.trim().toLowerCase();
+  return s
+    .trim()
+    .toLowerCase()
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, " ") // Satzzeichen/Bindestriche egal
+    .trim();
 }
 
+// Levenshtein-Abstand für Tippfehler-Toleranz.
+function abstand(a: string, b: string): number {
+  const zeile = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i++) {
+    let vorher = zeile[0];
+    zeile[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      const temp = zeile[j];
+      zeile[j] = Math.min(
+        zeile[j] + 1,
+        zeile[j - 1] + 1,
+        vorher + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+      vorher = temp;
+    }
+  }
+  return zeile[b.length];
+}
+
+/**
+ * Richtig, wenn die Eingabe einem der Zielwörter entspricht — Groß/Klein,
+ * Umlaut-Schreibweise und Satzzeichen egal, plus Toleranz für kleine Tippfehler.
+ * Inhaltlich andere, aber korrekte Wörter kommen über `alternativen` (Feld
+ * `akzeptiert` in den Aufgaben) dazu — die kann kein Abgleich erraten.
+ */
 export function pruefeLuecke(eingabe: string, antwort: string, alternativen: string[] = []): boolean {
-  const ziel = [antwort, ...alternativen].map(normalisiere);
-  return ziel.includes(normalisiere(eingabe));
+  const e = normalisiere(eingabe);
+  if (!e) return false;
+  return [antwort, ...alternativen].some((z) => {
+    const ziel = normalisiere(z);
+    const erlaubt = ziel.length <= 4 ? 1 : 2; // längere Wörter: mehr Spielraum
+    return e === ziel || abstand(e, ziel) <= erlaubt;
+  });
 }
