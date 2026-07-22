@@ -11,6 +11,8 @@ const eslintConfig = defineConfig([
     ".next/**",
     "out/**",
     "build/**",
+    "dist-desktop/**",
+    "electron/**", // eigener Node/CJS-Prozess, nicht die Next-App
     "next-env.d.ts",
   ]),
 ]);

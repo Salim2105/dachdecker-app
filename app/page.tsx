@@ -3,6 +3,7 @@ import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
+import { Fortsetzen } from "@/components/Fortsetzen";
 import { datumStore, letztesLfStore } from "@/lib/appStores";
 
 const TAG = 86_400_000;
@@ -166,10 +167,11 @@ export default function Home() {
 
       {/* Aktionen */}
       <div className="flex flex-col gap-3">
+        <Fortsetzen />
         <Link
           href={`/lernen/${letztesLf}`}
-          className="flex items-center justify-between rounded-[var(--r-lg)] px-5 py-4 text-[15px] font-semibold transition-transform active:scale-[0.99]"
-          style={{ background: "var(--accent)", color: "var(--accent-text)", boxShadow: "var(--shadow-md)" }}
+          className="flex items-center justify-between rounded-[var(--r-lg)] border px-5 py-4 text-[15px] font-semibold transition-transform active:scale-[0.99]"
+          style={{ borderColor: "var(--border)", color: "var(--text)" }}
         >
           <span>Weiterlernen</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

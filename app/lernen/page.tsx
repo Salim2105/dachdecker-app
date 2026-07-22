@@ -2,6 +2,7 @@
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
 import { LernfeldCard } from "@/components/LernfeldCard";
+import { Fortsetzen } from "@/components/Fortsetzen";
 import type { AufgabenFortschritt } from "@/content/schema";
 
 const GRUPPEN = [
@@ -36,6 +37,9 @@ export default function LernenPage() {
   return (
     <div>
       <h1 className="text-xl font-medium">Lernfelder</h1>
+      <div className="mt-3">
+        <Fortsetzen />
+      </div>
       <p
         className="mt-3 rounded-lg border-l-2 px-3 py-2 text-sm"
         style={{ background: "var(--surface)", borderColor: "var(--accent)", color: "var(--text-muted)" }}

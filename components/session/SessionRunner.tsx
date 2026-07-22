@@ -6,58 +6,63 @@ import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
 import { letztesLfStore } from "@/lib/appStores";
 
+// Gespeicherten Übungsstand laden (z. B. nach Abstecher zum Rechner).
+function ladeStand(key: string, total: number): { index: number; ergebnisse: Bewertung[]; beantwortet: boolean } {
+  if (typeof window !== "undefined") {
+    try {
+      const s = JSON.parse(localStorage.getItem(key) || "null");
+      if (s && typeof s.index === "number" && s.index < total) {
+        return {
+          index: s.index,
+          ergebnisse: Array.isArray(s.ergebnisse) ? s.ergebnisse : [],
+          beantwortet: !!s.beantwortet,
+        };
+      }
+    } catch {}
+  }
+  return { index: 0, ergebnisse: [], beantwortet: false };
+}
+
 export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: string }) {
   const { bewerte } = useProgress();
   const KEY = `dd-session-${lfId}`;
-  const [index, setIndex] = useState(0);
-  const [beantwortet, setBeantwortet] = useState(false);
-  const [ergebnisse, setErgebnisse] = useState<Bewertung[]>([]);
+  const [index, setIndex] = useState(() => ladeStand(KEY, aufgaben.length).index);
+  const [beantwortet, setBeantwortet] = useState(() => ladeStand(KEY, aufgaben.length).beantwortet);
+  const [ergebnisse, setErgebnisse] = useState<Bewertung[]>(() => ladeStand(KEY, aufgaben.length).ergebnisse);
   const [fertig, setFertig] = useState(false);
-  const [geladen, setGeladen] = useState(false);
 
   useEffect(() => {
     letztesLfStore.set(lfId);
   }, [lfId]);
 
-  // Laufende Übung wiederherstellen (z. B. nach Abstecher zum Rechner).
-  useEffect(() => {
-    try {
-      const s = JSON.parse(localStorage.getItem(KEY) || "null");
-      if (s && typeof s.index === "number" && s.index < aufgaben.length) {
-        setIndex(s.index);
-        setErgebnisse(Array.isArray(s.ergebnisse) ? s.ergebnisse : []);
-        setBeantwortet(!!s.beantwortet);
-      }
-    } catch {}
-    setGeladen(true);
-  }, [KEY, aufgaben.length]);
-
   // Stand sichern; bei Abschluss aufräumen.
   useEffect(() => {
-    if (!geladen) return;
-    if (fertig) {
-      localStorage.removeItem(KEY);
-      return;
-    }
-    localStorage.setItem(KEY, JSON.stringify({ index, ergebnisse, beantwortet }));
-  }, [geladen, KEY, index, ergebnisse, beantwortet, fertig]);
+    try {
+      if (fertig) localStorage.removeItem(KEY);
+      else localStorage.setItem(KEY, JSON.stringify({ index, ergebnisse, beantwortet }));
+    } catch {}
+  }, [KEY, index, ergebnisse, beantwortet, fertig]);
 
   const aktuell = aufgaben[index];
+  // Bei diesen Typen IST das Antippen der Bewertung schon die Antwort — danach
+  // direkt weiter, sonst wirkt es, als würde nichts passieren.
+  const selbstbewertet = aktuell.typ === "draw" || aktuell.typ === "fachbegriff";
 
-  const handleErgebnis = (b: Bewertung) => {
-    if (beantwortet) return;
-    setBeantwortet(true);
-    bewerte(aktuell.id, b);
-    setErgebnisse((prev) => [...prev, b]);
-  };
-
-  const weiter = () => {
+  const zumNaechsten = () => {
     if (index < aufgaben.length - 1) {
       setIndex((i) => i + 1);
       setBeantwortet(false);
     } else {
       setFertig(true);
     }
+  };
+
+  const handleErgebnis = (b: Bewertung) => {
+    if (beantwortet) return;
+    bewerte(aktuell.id, b);
+    setErgebnisse((prev) => [...prev, b]);
+    if (selbstbewertet) zumNaechsten();
+    else setBeantwortet(true);
   };
 
   if (fertig) {
@@ -113,7 +118,7 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
 
       {beantwortet && (
         <button
-          onClick={weiter}
+          onClick={zumNaechsten}
           className="mt-6 w-full rounded-xl py-3 font-medium"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
