@@ -278,5 +278,220 @@
       "mörtel"
     ],
     "erklaerung": "Merke die drei Wortteile: Dünn-bett-mörtel — das Mörtelbett ist dünn."
+  },
+  {
+    "id": "lf03-014",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauersteine",
+    "quelle": "Kalksandstein-Maurerfibel / DGfM Mauerwerksbau-Lehre (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welcher Mauerstein wird aus Kalk und Sand unter Dampfdruck gehärtet?",
+    "optionen": [
+      "Mauerziegel",
+      "Kalksandstein",
+      "Porenbeton",
+      "Leichtbeton"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Kalksandstein (KS) entsteht aus Kalk und Sand, die unter Dampfdruck (autoklaviert) aushärten — nicht gebrannt. Der Mauerziegel wird aus Ton gebrannt, Porenbeton wird mit einem Treibmittel aufgeschäumt."
+  },
+  {
+    "id": "lf03-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf03",
+    "thema": "Mauersteine",
+    "quelle": "Kalksandstein-Maurerfibel / DGfM Mauerwerksbau-Lehre (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Porenbeton",
+    "definition": "Ein leichter Mauerstein aus Kalk/Zement, Sand und Wasser mit einem Treibmittel (Aluminiumpulver), das feine Luftporen bildet. Dadurch ist er leicht und gut wärmedämmend; er wird dampfgehärtet (auch Gasbeton genannt).",
+    "bestandteile": [
+      "Poren",
+      "beton"
+    ],
+    "erklaerung": "Die Poren (Luftbläschen) machen den Stein leicht und dämmend — daher der Name."
+  },
+  {
+    "id": "lf03-016",
+    "typ": "cloze",
+    "lernfeld": "lf03",
+    "thema": "Mauersteine",
+    "quelle": "Kalksandstein-Maurerfibel / DGfM Mauerwerksbau-Lehre (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Ein {{Mauerziegel}} wird aus Ton gebrannt, ein {{Kalksandstein}} aus Kalk und Sand unter Dampf gehärtet.",
+    "akzeptiert": {
+      "Mauerziegel": [
+        "mauerziegel",
+        "Ziegel",
+        "Tonziegel"
+      ],
+      "Kalksandstein": [
+        "kalksandstein",
+        "KS",
+        "ks"
+      ]
+    },
+    "erklaerung": "Gebrannt aus Ton = Ziegel, dampfgehärtet aus Kalk und Sand = Kalksandstein. Der Härtungsprozess unterscheidet die beiden."
+  },
+  {
+    "id": "lf03-017",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Maßordnung im Hochbau",
+    "quelle": "DIN 4172 Maßordnung im Hochbau; DIN EN 1996 (Überbindemaß)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist ein Modul (1 M) im oktametrischen Maßsystem?",
+    "optionen": [
+      "10,0 cm",
+      "11,5 cm",
+      "12,5 cm",
+      "25,0 cm"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Oktametrisch heißt „ein Achtel Meter“: 1 M = 1/8 m = 12,5 cm. Steinformate und Wandmaße bauen auf diesem Raster auf (z. B. 2 M = 25 cm)."
+  },
+  {
+    "id": "lf03-018",
+    "typ": "calc",
+    "lernfeld": "lf03",
+    "thema": "Volumen- und Steinbedarf",
+    "quelle": "DIN 4172 Maßordnung im Hochbau; DIN EN 1996 (Überbindemaß)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Wand wird im Achtelmeterraster gemauert. Sie umfasst {steine} Steinlängen zu je 12,5 cm Richtmaß (Stein plus Fuge). Wie lang ist die Wand?",
+    "parameter": [
+      {
+        "name": "steine",
+        "label": "Steinlängen",
+        "einheit": "Stk",
+        "min": 4,
+        "max": 16,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Länge = Anzahl · Richtmaß ({steine} · 0,125 m)",
+        "formel": "steine * 0.125",
+        "ergebnisName": "laenge",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Jede Steinlänge im Raster misst 12,5 cm = 0,125 m (Stein + Fuge). Anzahl mal Richtmaß ergibt die Wandlänge. So passt alles ins Raster, ohne Steine zu schneiden."
+  },
+  {
+    "id": "lf03-019",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbände",
+    "quelle": "DIN 4172 Maßordnung im Hochbau; DIN EN 1996 (Überbindemaß)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß muss das Überbindemaß (Fugenversatz) im Mauerwerk mindestens sein?",
+    "optionen": [
+      "Mindestens die halbe Steinlänge, immer 12,5 cm",
+      "Mindestens 0,4 × Steinhöhe, aber nicht weniger als 45 mm",
+      "Genau 1 cm (Fugenbreite)",
+      "Es gibt keine Vorgabe"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Damit die Last verteilt wird und keine durchgehenden Stoßfugen entstehen, gilt: Überbindemaß ü ≥ 0,4 × Steinhöhe und mindestens 45 mm. Deshalb werden die Stoßfugen von Schicht zu Schicht versetzt."
+  },
+  {
+    "id": "lf03-020",
+    "typ": "cloze",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbände",
+    "quelle": "DIN 4172 Maßordnung im Hochbau; DIN EN 1996 (Überbindemaß)",
+    "konfidenz": "hoch",
+    "text": "Im Mauerverband dürfen {{Stoßfugen}} nicht übereinanderliegen; sie werden um das {{Überbindemaß}} versetzt.",
+    "akzeptiert": {
+      "Stoßfugen": [
+        "stossfugen",
+        "Stossfugen",
+        "Stoßfuge",
+        "Stossfuge"
+      ],
+      "Überbindemaß": [
+        "ueberbindemass",
+        "Ueberbindemass",
+        "Ueberbindemaß"
+      ]
+    },
+    "erklaerung": "Versetzte Stoßfugen verteilen die Lasten und geben dem Mauerwerk seinen Verband — durchgehende Fugen wären Schwachstellen."
+  },
+  {
+    "id": "lf03-021",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Mauermörtel",
+    "quelle": "Kalksandstein-Maurerfibel / DGfM Mauerwerksbau-Lehre (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welcher Mörtel wird für Plansteine mit sehr dünnen Fugen (etwa 1–3 mm) verwendet?",
+    "optionen": [
+      "Normalmauermörtel",
+      "Leichtmauermörtel",
+      "Dünnbettmörtel",
+      "Luftkalkmörtel"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Plansteine sind maßgenau geschliffen und werden mit Dünnbettmörtel in 1–3 mm dünnen Fugen vermauert. Normal- und Leichtmörtel bilden dickere Lagerfugen (rund 12 mm)."
+  },
+  {
+    "id": "lf03-022",
+    "typ": "fachbegriff",
+    "lernfeld": "lf03",
+    "thema": "Mauermörtel",
+    "quelle": "Kalksandstein-Maurerfibel / DGfM Mauerwerksbau-Lehre (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Dünnbettmörtel",
+    "definition": "Ein maßgenauer Klebemörtel für geschliffene Plansteine. Er wird nur 1–3 mm dünn aufgetragen, meist mit einem Mörtelschlitten oder einer Zahnkelle, und verklebt die Steine nahezu fugenlos.",
+    "bestandteile": [
+      "Dünn",
+      "bett",
+      "mörtel"
+    ],
+    "erklaerung": "Dünnes „Bett“ (Lagerfuge) statt dicker Mörtelschicht — daher Dünnbettmörtel."
+  },
+  {
+    "id": "lf03-023",
+    "typ": "mc",
+    "lernfeld": "lf03",
+    "thema": "Isometrie",
+    "quelle": "Technisches Zeichnen (Grundstufe Bautechnik); LF 3",
+    "konfidenz": "hoch",
+    "frage": "Was kennzeichnet eine isometrische Darstellung eines Baukörpers?",
+    "optionen": [
+      "Nur die Vorderseite wird maßstäblich gezeichnet, der Rest verkleinert",
+      "Die drei Raumkanten sind gleich verkürzt und die Achsen unter gleichem Winkel geneigt",
+      "Ferne Kanten laufen in einem Fluchtpunkt zusammen",
+      "Es wird nur der Grundriss von oben gezeigt"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "„Iso-metrie“ heißt „gleiches Maß“: Länge, Breite und Höhe werden im gleichen Maßstab und mit gleich geneigten Achsen dargestellt. Anders als bei der Perspektive gibt es keinen Fluchtpunkt — parallele Kanten bleiben parallel."
+  },
+  {
+    "id": "lf03-024",
+    "typ": "fachbegriff",
+    "lernfeld": "lf03",
+    "thema": "Isometrie",
+    "quelle": "Technisches Zeichnen (Grundstufe Bautechnik); LF 3",
+    "konfidenz": "hoch",
+    "begriff": "Isometrie",
+    "definition": "Eine anschauliche, axonometrische Darstellung eines Körpers: die drei Raumachsen sind gleich geneigt und werden im gleichen Maßstab abgetragen. Parallele Kanten bleiben parallel, es gibt keinen Fluchtpunkt.",
+    "bestandteile": [
+      "Iso",
+      "metrie"
+    ],
+    "erklaerung": "iso = gleich, metrie = Maß: In allen drei Achsen wird gleich gemessen."
   }
 ]
