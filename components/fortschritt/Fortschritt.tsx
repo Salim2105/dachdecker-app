@@ -8,6 +8,7 @@ import { progressStore } from "@/lib/progressStore";
 import { useProgress } from "@/components/useProgress";
 import { Wiederholung } from "@/components/session/Wiederholung";
 import { zieheAufgaben } from "@/lib/pruefung";
+import { Datensicherung } from "@/components/fortschritt/Datensicherung";
 
 export function Fortschritt() {
   const { fortschritt } = useProgress();
@@ -149,6 +150,9 @@ export function Fortschritt() {
           );
         })}
       </div>
+
+      {/* Datensicherung */}
+      <Datensicherung />
 
       {/* Zurücksetzen */}
       <div className="mt-10 border-t pt-4" style={{ borderColor: "var(--border)" }}>

@@ -13,8 +13,14 @@ describe("filterSichtbar", () => {
 });
 
 describe("content loading", () => {
-  it("loads all lernfelder (17 LF + 13b split + WiSo = 19 entries)", () => {
-    expect(getLernfelder().length).toBe(19);
+  // LF 13b (Reet) entfernt — eigene Fachrichtung, kein Inhalt vorhanden.
+  it("loads all lernfelder (17 LF inkl. 13a + WiSo = 18 entries)", () => {
+    expect(getLernfelder().length).toBe(18);
+  });
+  it("führt kein Lernfeld ohne Aufgaben in der Liste (keine leeren Karten)", () => {
+    for (const lf of getLernfelder()) {
+      expect(getAufgaben(lf.id).length, `${lf.id} hat keine Aufgaben`).toBeGreaterThan(0);
+    }
   });
   it("returns only visible aufgaben for lf01", () => {
     expect(getAufgaben("lf01").every((a) => a.konfidenz !== "pruefen")).toBe(true);

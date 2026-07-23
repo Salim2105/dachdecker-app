@@ -1,6 +1,6 @@
 {
   "quelle": "KMK-Rahmenlehrplan Dachdecker und Dachdeckerin, Beschluss vom 29.01.2016, https://www.kmk.org/fileadmin/pdf/Bildung/BeruflicheBildung/rlp/Dachdecker_16-01-29-E.pdf",
-  "hinweis": "LF 7 vor LF 8-10 lernen. LF 1-9 sind relevant fuer die Zwischenpruefung. LF 13b ersetzt optional 40 h aus LF 13a.",
+  "hinweis": "LF 7 vor LF 8-10 lernen. LF 1-9 sind relevant fuer die Zwischenpruefung.",
   "lernfelder": [
     { "id": "lf01", "nr": "1", "titel": "Baustelle einrichten", "lehrjahr": 1, "stunden": 20, "themen": ["Gewerke am Bau", "Bauzeitenplan", "Baustelleneinrichtungsplan", "Verkehrssicherung", "Unfallverhütung"] },
     { "id": "lf02", "nr": "2", "titel": "Dachflächen mit Dachziegeln und Dachsteinen decken", "lehrjahr": 1, "stunden": 60, "themen": ["Dachformen", "Dachgeometrie und Dachteile", "Dachziegel- und Dachsteinarten", "Deckungsarten", "Regeldachneigung", "Traglattung", "Materialbedarf", "Absturzsicherung"] },
@@ -15,7 +15,6 @@
     { "id": "lf11", "nr": "11", "titel": "Außenwandflächen bekleiden", "lehrjahr": 2, "stunden": 40, "themen": ["Vorgehängte hinterlüftete Fassade", "Unterkonstruktion", "Hinterlüftung", "Überdeckungen und Fugen", "Sprungmaße und Schnurabstände"] },
     { "id": "lf12", "nr": "12", "titel": "Geneigte Dächer mit Metallen decken", "lehrjahr": 3, "stunden": 40, "themen": ["Stehfalzdeckung", "Leistendeckung", "Bördeln, Schweifen, Kanten, Falzen", "Windlasten", "Verlegepläne"] },
     { "id": "lf13a", "nr": "13a", "titel": "Details an geneigten Dächern herstellen", "lehrjahr": 3, "stunden": 80, "themen": ["Grate", "Kehlen und Kehlneigung", "Durchdringungen", "Gauben", "An- und Abschlüsse", "Einbauteile", "Ausführungszeichnungen"] },
-    { "id": "lf13b", "nr": "13b", "titel": "Geneigte Dächer mit Reet decken", "lehrjahr": 3, "stunden": 40, "themen": ["Reet als Deckmaterial", "Unterkonstruktion", "Binden, Schrauben, Nähen", "Brandschutz", "Traufe First Ortgang"] },
     { "id": "lf14", "nr": "14", "titel": "Details an Dächern mit Abdichtungen herstellen und Bauwerke abdichten", "lehrjahr": 3, "stunden": 40, "themen": ["An- und Abschlüsse an aufgehenden Bauteilen", "Durchdringungen", "Bauwerksabdichtung", "Drückendes und nicht drückendes Wasser", "Anschlusshöhen"] },
     { "id": "lf15", "nr": "15", "titel": "An- und Abschlüsse an Wänden herstellen", "lehrjahr": 3, "stunden": 40, "themen": ["Innen- und Außenecken", "Untere, seitliche und obere Abschlüsse", "Durchdringungen: Fenster und Türen", "Detailskizzen"] },
     { "id": "lf16", "nr": "16", "titel": "Energiesammler, Blitzschutzanlagen und Einbauteile montieren", "lehrjahr": 3, "stunden": 40, "themen": ["Photovoltaik und Solarthermie", "Äußerer Blitzschutz", "Aufgeständerte und integrierte Anlagen", "Wind- und Schneelasten", "Gefahren des elektrischen Stroms", "Schneefang und Absturzsicherung"] },
