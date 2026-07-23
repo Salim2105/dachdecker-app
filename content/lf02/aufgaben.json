@@ -272,5 +272,237 @@
       "sicherung"
     ],
     "erklaerung": "Merke die drei Wortteile: Wind-sog-sicherung."
+  },
+  {
+    "id": "lf02-014",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachziegel- und Dachsteinarten",
+    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Worin unterscheiden sich Tondachziegel und Betondachstein im Werkstoff?",
+    "optionen": [
+      "Beide werden aus Ton gebrannt",
+      "Der Ziegel wird aus Ton gebrannt, der Dachstein aus Zement und Sand gepresst",
+      "Beide werden aus Beton gegossen",
+      "Der Ziegel besteht aus Kunststoff, der Dachstein aus Ton"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Tondachziegel entsteht durch Brennen von Ton, der Betondachstein durch Pressen von Zement, Sand und Wasser (ungebrannt). Deshalb heißt das eine Ziegel, das andere Stein."
+  },
+  {
+    "id": "lf02-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf02",
+    "thema": "Dachziegel- und Dachsteinarten",
+    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Biberschwanzziegel",
+    "definition": "Ein kleiner, flacher Tondachziegel ohne Falz mit gerundetem, geradem oder spitzem unterem Rand. Wegen der kleinen Fläche braucht man viele Stück je m²; er wird in Doppel- oder Kronendeckung verlegt.",
+    "bestandteile": [
+      "Biber",
+      "schwanz",
+      "ziegel"
+    ],
+    "erklaerung": "Die Form des unteren Randes erinnert an einen Biberschwanz — daher der Name."
+  },
+  {
+    "id": "lf02-016",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Dachziegel- und Dachsteinarten",
+    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Ein {{Tondachziegel}} wird aus Ton gebrannt, ein {{Betondachstein}} aus Zement und Sand gepresst.",
+    "akzeptiert": {
+      "Tondachziegel": [
+        "tondachziegel",
+        "Dachziegel",
+        "Ziegel"
+      ],
+      "Betondachstein": [
+        "betondachstein",
+        "Dachstein",
+        "Betonstein"
+      ]
+    },
+    "erklaerung": "Gebrannt = Ziegel, gepresst/ungebrannt = Stein. Das ist der grundlegende Werkstoffunterschied."
+  },
+  {
+    "id": "lf02-017",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckungsarten",
+    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "In welcher Deckart wird der Biberschwanzziegel typischerweise verlegt?",
+    "optionen": [
+      "Einfachdeckung",
+      "Doppeldeckung",
+      "Stülpdeckung",
+      "Klöppeldeckung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Weil der Biber keinen Falz hat, überdecken sich in der Doppeldeckung drei Ziegellagen — so wird die Deckung regensicher. Falzziegel dagegen greifen über ihre Falze ineinander und kommen in Einfachdeckung aus."
+  },
+  {
+    "id": "lf02-018",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Deckungsarten",
+    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Der Biberschwanzziegel wird meist in {{Doppeldeckung}} verlegt, ein Falzziegel dagegen in {{Einfachdeckung}}.",
+    "akzeptiert": {
+      "Doppeldeckung": [
+        "doppeldeckung",
+        "Kronendeckung"
+      ],
+      "Einfachdeckung": [
+        "einfachdeckung"
+      ]
+    },
+    "erklaerung": "Ohne Falz braucht der Biber die Überdeckung durch eine zusätzliche Lage (Doppeldeckung); der Falz des Falzziegels dichtet die Fuge schon selbst ab."
+  },
+  {
+    "id": "lf02-019",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Traglattung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient die Konterlattung unter der Traglattung?",
+    "optionen": [
+      "Sie trägt direkt die Dachziegel",
+      "Sie schafft eine Hinterlüftung und lässt Wasser auf der Unterdeckbahn ablaufen",
+      "Sie ersetzt die Dampfsperre",
+      "Sie dient nur der Optik"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Konterlattung liegt in Sparrenrichtung auf der Unterdeckbahn. Sie hebt die Traglattung ab, damit Wasser auf der Bahn zur Traufe abläuft, und schafft die belüftete Luftschicht. Die Ziegel trägt erst die quer darauf genagelte Traglattung."
+  },
+  {
+    "id": "lf02-020",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Traglattung",
+    "quelle": "LF 2-Quellen: Anzahl Lattenreihen = Sparrenlänge / Lattweite (aufgerundet)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Sparren ist {sparren} m lang. Die Lattweite (Reihenabstand) beträgt {lattweite} cm. Wie viele Traglattenreihen werden benötigt (aufgerundet)?",
+    "parameter": [
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "m",
+        "min": 4,
+        "max": 8,
+        "schritt": 0.1
+      },
+      {
+        "name": "lattweite",
+        "label": "Lattweite",
+        "einheit": "cm",
+        "min": 32,
+        "max": 38,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Reihen = Sparrenlänge / Lattweite, auf ganze Reihen aufgerundet ({sparren} m / {lattweite} cm)",
+        "formel": "ceil(sparren / (lattweite / 100))",
+        "ergebnisName": "reihen",
+        "einheit": "Reihen"
+      }
+    ],
+    "toleranzProzent": 0,
+    "erklaerung": "Erst gleiche Einheit: Lattweite in Meter (cm/100). Dann Sparrenlänge durch Lattweite teilen und aufrunden, weil eine angefangene Reihe eine ganze Latte braucht."
+  },
+  {
+    "id": "lf02-021",
+    "typ": "fachbegriff",
+    "lernfeld": "lf02",
+    "thema": "Traglattung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch",
+    "begriff": "Konterlattung",
+    "definition": "Latten, die in Sparrenrichtung auf die Unterdeckbahn genagelt werden. Sie schaffen die Hinterlüftung, lassen Wasser zur Traufe ablaufen und tragen die quer verlegte Traglattung.",
+    "bestandteile": [
+      "Konter",
+      "lattung"
+    ],
+    "erklaerung": "Konter = quer/gegen: Die Konterlatte liegt quer zur späteren Traglatte, in Richtung des Sparrens."
+  },
+  {
+    "id": "lf02-022",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Traglattung",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch",
+    "text": "Die {{Konterlattung}} liegt in Sparrenrichtung und schafft die {{Hinterlüftung}}; quer darauf trägt die {{Traglattung}} die Ziegel.",
+    "akzeptiert": {
+      "Konterlattung": [
+        "konterlattung",
+        "Konterlatte",
+        "Konterlatten"
+      ],
+      "Hinterlüftung": [
+        "hinterlueftung",
+        "Hinterlueftung",
+        "Belüftung",
+        "Belueftung"
+      ],
+      "Traglattung": [
+        "traglattung",
+        "Dachlattung",
+        "Traglatte"
+      ]
+    },
+    "erklaerung": "Erst Konterlatte (längs, Sparrenrichtung) für Luft und Wasserablauf, dann Traglatte (quer) als Auflager für die Ziegel."
+  },
+  {
+    "id": "lf02-023",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachformen",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch",
+    "frage": "Welche Dachform hat an einer Giebelseite eine kleine, abgeschrägte Walmfläche über dem senkrechten Giebel?",
+    "optionen": [
+      "Satteldach",
+      "Krüppelwalmdach",
+      "Pultdach",
+      "Zeltdach"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Beim Krüppelwalm (Schopfwalm) ist nur der obere Teil der Giebelseite abgewalmt, unten bleibt der senkrechte Giebel. Beim Vollwalm reicht die Walmfläche bis zur Traufe."
+  },
+  {
+    "id": "lf02-024",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachgeometrie und Dachteile",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "konfidenz": "hoch",
+    "frage": "Was ist der Unterschied zwischen einem Grat und einer Kehle?",
+    "optionen": [
+      "Grat und Kehle sind dasselbe",
+      "Der Grat ist eine nach außen fallende Kante, die Kehle eine einspringende (nach innen)",
+      "Der Grat ist die unterste Kante, die Kehle die oberste",
+      "Die Kehle liegt am Ortgang, der Grat an der Traufe"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Am Walm treffen zwei Dachflächen als nach außen zeigende Kante zusammen — das ist der Grat. Springt die Verschneidung nach innen (z. B. an einer Gaube oder im L-Grundriss), heißt sie Kehle; dort läuft das Wasser zusammen."
   }
 ]
