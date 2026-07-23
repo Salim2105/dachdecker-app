@@ -291,5 +291,115 @@
       "brücke"
     ],
     "erklaerung": "Merke: Wärme-brücke — die Wärme nimmt dort die Abkürzung nach draußen."
+  },
+  {
+    "id": "lf06-015",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Abdichtungsstoffe",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welches Material gehört zu den Kunststoff-Dachbahnen?",
+    "optionen": [
+      "Bitumenschweißbahn",
+      "PVC-Bahn",
+      "Tondachziegel",
+      "Kalksandstein"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Zu den Kunststoff-Dachbahnen zählen PVC, FPO/TPO und EPDM. Bitumenbahnen sind eine eigene Gruppe (aus Bitumen mit Trägereinlage). Ziegel und Stein sind keine Abdichtungsbahnen."
+  },
+  {
+    "id": "lf06-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Abdichtungsstoffe",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Bitumen",
+    "definition": "Ein zähflüssiges bis festes Bindemittel aus der Erdöl-Destillation. Auf eine Trägereinlage (z. B. Polyestervlies) aufgebracht ergibt es die Bitumen-Dachbahn, die verschweißt oder verklebt wird.",
+    "bestandteile": [
+      "Bi",
+      "tumen"
+    ],
+    "erklaerung": "Bitumen ist wasserabweisend und klebrig - ideal zum Abdichten. Modifiziert mit Kunststoff (APP oder SBS) wird es elastischer und alterungsbeständiger."
+  },
+  {
+    "id": "lf06-017",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Dämmstoffe",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Die {{Wärmeleitfähigkeit}} eines Dämmstoffs wird mit dem Formelzeichen Lambda angegeben; je {{kleiner}} sie ist, desto besser dämmt der Stoff.",
+    "akzeptiert": {
+      "Wärmeleitfähigkeit": [
+        "waermeleitfaehigkeit",
+        "Waermeleitfaehigkeit",
+        "Lambda",
+        "lambda"
+      ],
+      "kleiner": [
+        "kleiner",
+        "geringer",
+        "niedriger"
+      ]
+    },
+    "erklaerung": "Lambda sagt, wie gut ein Stoff Wärme leitet. Ein kleiner Wert bedeutet wenig Wärmeverlust - also gute Dämmung."
+  },
+  {
+    "id": "lf06-018",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Verlegepläne",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient ein Verlegeplan?",
+    "optionen": [
+      "Er zeigt die Kosten",
+      "Er legt fest, wie und in welcher Reihenfolge Platten oder Bahnen angeordnet werden",
+      "Er ersetzt die Statik",
+      "Er ist nur Dekoration"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Verlegeplan gibt die Anordnung, Reihenfolge und Maße der Deckung oder Bekleidung vor. So passt alles zusammen, Verschnitt wird minimiert und der Ablauf ist klar."
+  },
+  {
+    "id": "lf06-019",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Bauphysik Grundlagen",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "sd-Wert",
+    "definition": "Die wasserdampf-diffusionsäquivalente Luftschichtdicke. Sie sagt, wie stark eine Schicht den Durchgang von Wasserdampf bremst - ein hoher sd-Wert bremst stark (Dampfsperre), ein niedriger lässt Dampf durch (diffusionsoffen).",
+    "bestandteile": [
+      "sd",
+      "Wert"
+    ],
+    "erklaerung": "Der sd-Wert entscheidet, ob eine Bahn als Dampfbremse (innen) oder als diffusionsoffene Unterdeckbahn (außen) taugt."
+  },
+  {
+    "id": "lf06-020",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Baumetalle",
+    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Was bildet sich auf Kupfer und Zink an der Luft und schützt das Metall?",
+    "optionen": [
+      "Rost, der es zerstört",
+      "Eine schützende Patina (Deckschicht)",
+      "Nichts",
+      "Eine Farbschicht aus Lack"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Kupfer und Zink bilden an der Luft eine festhaftende Patina (bei Kupfer grünlich, bei Zink grau). Diese Deckschicht schützt das Metall vor weiterer Korrosion - anders als Rost bei ungeschütztem Stahl."
   }
 ]

@@ -327,5 +327,80 @@
       "Instandsetzung beseitigt beides"
     ],
     "erklaerung": "Beispiel: Das Bild ist ein Riss in der Abdichtung, die Ursache ist eine Bewegung im Untergrund. Wer nur flickt, hat den Riss nach dem nächsten Winter wieder — nur ein Stück weiter."
+  },
+  {
+    "id": "lf17-016",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Wartungsverträge",
+    "quelle": "DIN 31051 Instandhaltung; TRGS 519 Asbest; VOB Aufmaß, LF 17 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welchen Nutzen hat ein Wartungsvertrag für ein Dach?",
+    "optionen": [
+      "Keinen, er kostet nur",
+      "Regelmäßige Inspektion und Pflege erhalten die Funktion und verlängern die Lebensdauer",
+      "Er ersetzt die Dachdeckung",
+      "Er ist gesetzlich verboten"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Mit einem Wartungsvertrag wird das Dach regelmäßig kontrolliert und gepflegt (Rinnen reinigen, Anschlüsse prüfen). Kleine Schäden werden früh erkannt, bevor größere entstehen - das verlängert die Lebensdauer."
+  },
+  {
+    "id": "lf17-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Checklisten",
+    "quelle": "DIN 31051 Instandhaltung; TRGS 519 Asbest; VOB Aufmaß, LF 17 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Instandhaltung",
+    "definition": "Der Oberbegriff für alle Maßnahmen, die die Funktion eines Bauteils erhalten. Nach DIN 31051 gehören dazu Wartung, Inspektion, Instandsetzung und Verbesserung.",
+    "bestandteile": [
+      "Instand",
+      "haltung"
+    ],
+    "erklaerung": "Merke die vier Grundmaßnahmen: Wartung (pflegen), Inspektion (prüfen), Instandsetzung (reparieren), Verbesserung (aufwerten)."
+  },
+  {
+    "id": "lf17-018",
+    "typ": "cloze",
+    "lernfeld": "lf17",
+    "thema": "Aufmaß",
+    "quelle": "DIN 31051 Instandhaltung; TRGS 519 Asbest; VOB Aufmaß, LF 17 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Beim {{Aufmaß}} werden die tatsächlich ausgeführten {{Mengen}} - Flächen und Längen - ermittelt und danach die Leistung abgerechnet.",
+    "akzeptiert": {
+      "Aufmaß": [
+        "aufmass",
+        "Aufmass"
+      ],
+      "Mengen": [
+        "mengen",
+        "Massen",
+        "Maße",
+        "Masse"
+      ]
+    },
+    "erklaerung": "Das Aufmaß ist die Grundlage der Abrechnung, meist nach den Regeln der VOB. Sauber gemessen bekommt jeder das, was wirklich geleistet wurde."
+  },
+  {
+    "id": "lf17-019",
+    "typ": "mc",
+    "lernfeld": "lf17",
+    "thema": "Schadensanalyse",
+    "quelle": "DIN 31051 Instandhaltung; TRGS 519 Asbest; VOB Aufmaß, LF 17 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Warum darf altes Asbestzement-Material nicht mit dem Hochdruckreiniger bearbeitet oder abgeschliffen werden?",
+    "optionen": [
+      "Weil es die Farbe beschädigt",
+      "Weil dabei gefährliche Asbestfasern freigesetzt werden",
+      "Weil es zu laut ist",
+      "Das ist erlaubt"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Hochdruckreinigen, Schleifen oder Bohren setzt lungengängige Asbestfasern frei - streng verboten nach TRGS 519. Asbesthaltiges Material wird nur staubarm und mit Schutzausrüstung durch Fachkundige zurückgebaut."
   }
 ]

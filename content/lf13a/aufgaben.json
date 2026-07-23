@@ -297,5 +297,101 @@
       "neigung"
     ],
     "erklaerung": "Merke: Die Kehle ist immer der flachste Teil des Daches."
+  },
+  {
+    "id": "lf13a-015",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Gauben",
+    "quelle": "ZVDH-Fachregeln Details, LF 13a (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welche Gaubenform hat ein flach geneigtes Pultdach, das von der Dachfläche herabgezogen ist?",
+    "optionen": [
+      "Giebelgaube",
+      "Schleppgaube",
+      "Fledermausgaube",
+      "Tonnengaube"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Schleppgaube hat ein flaches Pultdach, das aus der Dachfläche heruntergeschleppt wird. Die Giebelgaube hat ein kleines Satteldach, die Fledermausgaube eine geschwungene Form."
+  },
+  {
+    "id": "lf13a-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf13a",
+    "thema": "Ausführungszeichnungen",
+    "quelle": "ZVDH-Fachregeln Details, LF 13a (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Ausführungszeichnung",
+    "definition": "Eine maßstäbliche Detailzeichnung, nach der ein Bauteil oder Anschluss auf der Baustelle genau hergestellt wird. Sie enthält Maße, Schichten, Materialien und Befestigungen.",
+    "bestandteile": [
+      "Ausführungs",
+      "zeichnung"
+    ],
+    "erklaerung": "Die Ausführungszeichnung ist die verbindliche Vorlage fürs Handwerk - genauer als eine Übersichtsskizze."
+  },
+  {
+    "id": "lf13a-017",
+    "typ": "cloze",
+    "lernfeld": "lf13a",
+    "thema": "An- und Abschlüsse",
+    "quelle": "ZVDH-Fachregeln Details, LF 13a (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Ein Wandanschluss wird mindestens etwa {{15}} Zentimeter über die {{Deckung}} hochgeführt, damit kein Wasser hinterläuft.",
+    "akzeptiert": {
+      "15": [
+        "fuenfzehn",
+        "fünfzehn"
+      ],
+      "Deckung": [
+        "deckung",
+        "Dachdeckung",
+        "Eindeckung",
+        "Dachflaeche",
+        "Dachfläche"
+      ]
+    },
+    "erklaerung": "Rund 15 cm Anschlusshöhe verhindern, dass Spritz- oder Stauwasser hinter den Anschluss läuft. An Türen kann die Höhe geringer sein, dann sind Zusatzmaßnahmen nötig."
+  },
+  {
+    "id": "lf13a-018",
+    "typ": "mc",
+    "lernfeld": "lf13a",
+    "thema": "Durchdringungen",
+    "quelle": "ZVDH-Fachregeln Details, LF 13a (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie wird ein rundes Rohr, das das Dach durchdringt, wasserdicht angeschlossen?",
+    "optionen": [
+      "Mit etwas Klebeband",
+      "Mit einer passenden Manschette oder einem Anschlusskragen",
+      "Gar nicht",
+      "Nur mit Mörtel"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Rohre werden mit einer elastischen Manschette oder einem Kragen dicht umschlossen und in die Deckung bzw. Abdichtung eingebunden. So bleibt die Durchdringung dauerhaft dicht."
+  },
+  {
+    "id": "lf13a-019",
+    "typ": "cloze",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen und Kehlneigung",
+    "quelle": "ZVDH-Fachregeln Details, LF 13a (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Die {{Kehle}} ist die einspringende Kante zwischen zwei Dachflächen; ihre Neigung ist immer {{flacher}} als die der angrenzenden Flächen.",
+    "akzeptiert": {
+      "Kehle": [
+        "kehle"
+      ],
+      "flacher": [
+        "flacher",
+        "geringer",
+        "kleiner"
+      ]
+    },
+    "erklaerung": "Weil in der Kehle das Wasser zweier Flächen zusammenläuft und die Kehllinie länger ist, ist ihre Neigung flacher. Das muss bei der Deckung berücksichtigt werden."
   }
 ]

@@ -285,5 +285,124 @@
       "beiwert"
     ],
     "erklaerung": "Merke: Abfluss-beiwert — der Beiwert für den Abfluss."
+  },
+  {
+    "id": "lf07-014",
+    "typ": "cloze",
+    "lernfeld": "lf07",
+    "thema": "Gefälle",
+    "quelle": "LF 7-Quellen: Rinnen, Gefälle, Abwicklung (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Eine Dachrinne wird mit einem Gefälle von etwa {{3}} Millimeter je Meter verlegt, damit das Wasser sicher zum {{Ablauf}} fließt.",
+    "akzeptiert": {
+      "3": [
+        "drei"
+      ],
+      "Ablauf": [
+        "ablauf",
+        "Fallrohr",
+        "Gully",
+        "Rinnenablauf"
+      ]
+    },
+    "erklaerung": "Ohne Gefälle steht Wasser in der Rinne und es bilden sich Ablagerungen. Rund 3 mm je Meter reichen, damit das Wasser läuft, ohne dass die Rinne sichtbar hängt."
+  },
+  {
+    "id": "lf07-015",
+    "typ": "fachbegriff",
+    "lernfeld": "lf07",
+    "thema": "Abwicklungen",
+    "quelle": "LF 7-Quellen: Rinnen, Gefälle, Abwicklung (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Abwicklung",
+    "definition": "Die gestreckte (ausgebreitete) Länge eines Blechzuschnitts. Man addiert alle Teilstrecken des Profils, um zu wissen, wie breit das Blech vor dem Kanten sein muss.",
+    "bestandteile": [
+      "Ab",
+      "wicklung"
+    ],
+    "erklaerung": "Aus der Abwicklung ergibt sich der Zuschnitt: Erst das fertige Profil in gerade Teilstücke zerlegen, dann deren Längen addieren."
+  },
+  {
+    "id": "lf07-016",
+    "typ": "calc",
+    "lernfeld": "lf07",
+    "thema": "Abwicklungen",
+    "quelle": "LF 7-Quellen: Rinnen, Gefälle, Abwicklung (verifiziert)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Rinnenprofil besteht aus drei geraden Teilstücken: {a} cm, {b} cm und {c} cm. Wie groß ist die Abwicklung (Zuschnittbreite)?",
+    "parameter": [
+      {
+        "name": "a",
+        "label": "Teilstück 1",
+        "einheit": "cm",
+        "min": 8,
+        "max": 15,
+        "schritt": 1
+      },
+      {
+        "name": "b",
+        "label": "Teilstück 2",
+        "einheit": "cm",
+        "min": 10,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "c",
+        "label": "Teilstück 3",
+        "einheit": "cm",
+        "min": 5,
+        "max": 12,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Abwicklung = Summe der Teilstrecken ({a} + {b} + {c})",
+        "formel": "a + b + c",
+        "ergebnisName": "abw",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Abwicklung ist die Summe aller geraden Teilstücke des Profils. So breit muss das flache Blech zugeschnitten werden, bevor man es zur Rinne kantet. Für die Falze kommt in der Praxis noch Zugabe dazu."
+  },
+  {
+    "id": "lf07-017",
+    "typ": "mc",
+    "lernfeld": "lf07",
+    "thema": "Rinnendimensionierung",
+    "quelle": "LF 7-Quellen: Rinnen, Gefälle, Abwicklung (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wovon hängt ab, wie groß eine Dachrinne gewählt werden muss?",
+    "optionen": [
+      "Von der Farbe des Dachs",
+      "Von der Größe der zu entwässernden Dachfläche und der Regenmenge",
+      "Nur von der Länge des Hauses",
+      "Von der Dachziegelmarke"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Je größer die Dachfläche und je stärker der Regen, desto mehr Wasser muss die Rinne fassen. Danach wählt man die Nenngröße (z. B. 250, 280, 333). Zu klein bemessen läuft die Rinne über."
+  },
+  {
+    "id": "lf07-018",
+    "typ": "mc",
+    "lernfeld": "lf07",
+    "thema": "Dachrinnenarten",
+    "quelle": "LF 7-Quellen: Rinnen, Gefälle, Abwicklung (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Was ist eine hängende Dachrinne?",
+    "optionen": [
+      "Eine Rinne, die in die Dachfläche eingelassen ist",
+      "Eine Rinne, die mit Rinneisen vorn an der Traufe befestigt ist",
+      "Ein Fallrohr",
+      "Eine Rinne im Kehlbereich"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die hängende Rinne wird mit Rinneisen (Rinnenhaltern) außen an der Traufe aufgehängt - die häufigste Form am Steildach. Die liegende Rinne sitzt dagegen auf dem Gesims oder in der Dachfläche."
   }
 ]

@@ -320,5 +320,79 @@
       "maß"
     ],
     "erklaerung": "Merke: Sprung-maß — um wie viel das Gebinde seitlich „springt“."
+  },
+  {
+    "id": "lf11-015",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Unterkonstruktion",
+    "quelle": "KMK-Rahmenlehrplan LF 11; VHF-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Aus welchem Material besteht die Unterkonstruktion einer vorgehängten hinterlüfteten Fassade meist?",
+    "optionen": [
+      "Nur aus Pappe",
+      "Aus Aluminium oder Holz(latten)",
+      "Aus Glas",
+      "Aus Ziegeln"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Unterkonstruktion (Träger für die Bekleidung) wird meist aus Aluminiumprofilen oder Holzlatten gebaut. Sie hält die Bekleidung im Abstand zur Wand und schafft so den Hinterlüftungsraum."
+  },
+  {
+    "id": "lf11-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf11",
+    "thema": "Hinterlüftung",
+    "quelle": "KMK-Rahmenlehrplan LF 11; VHF-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Hinterlüftung",
+    "definition": "Der belüftete Luftraum zwischen Bekleidung und Dämmung. Kühle Luft strömt unten ein und warm oben aus (Kamineffekt) und führt Feuchte ab, sodass die Konstruktion trocken bleibt.",
+    "bestandteile": [
+      "Hinter",
+      "lüftung"
+    ],
+    "erklaerung": "Die Hinterlüftung ist das Herz der VHF: Sie trocknet die Konstruktion und schützt die Dämmung. Zu- und Abluftöffnungen müssen frei bleiben."
+  },
+  {
+    "id": "lf11-017",
+    "typ": "cloze",
+    "lernfeld": "lf11",
+    "thema": "Hinterlüftung",
+    "quelle": "KMK-Rahmenlehrplan LF 11; VHF-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Der Hinterlüftungsspalt einer vorgehängten Fassade soll mindestens etwa {{20}} Millimeter betragen, damit die Luft frei {{strömen}} kann.",
+    "akzeptiert": {
+      "20": [
+        "zwanzig"
+      ],
+      "strömen": [
+        "stroemen",
+        "zirkulieren",
+        "fliessen",
+        "fließen"
+      ]
+    },
+    "erklaerung": "Rund 2 cm Luftspalt sorgen für ausreichende Luftbewegung. Ist der Spalt zu eng oder verstopft, staut sich Feuchte und die Wirkung geht verloren."
+  },
+  {
+    "id": "lf11-018",
+    "typ": "mc",
+    "lernfeld": "lf11",
+    "thema": "Vorgehängte hinterlüftete Fassade",
+    "quelle": "KMK-Rahmenlehrplan LF 11; VHF-Grundlagen (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Was ist ein Vorteil der vorgehängten hinterlüfteten Fassade (VHF)?",
+    "optionen": [
+      "Sie braucht keine Dämmung",
+      "Dämmung und Wetterschutz sind getrennt, Feuchte wird sicher abgeführt",
+      "Sie ist immer am billigsten",
+      "Sie ist luftdicht ohne Fugen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei der VHF sind Funktionen getrennt: Die Dämmung sitzt an der Wand, die Bekleidung schützt vor Wetter, die Luftschicht dazwischen führt Feuchte ab. Das hält die Wand trocken und ist bauphysikalisch sehr sicher."
   }
 ]

@@ -297,5 +297,152 @@
       "deckung"
     ],
     "erklaerung": "Merke: Beton-deckung — der Beton deckt den Stahl ab."
+  },
+  {
+    "id": "lf04-015",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Schalung",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat die Schalung beim Betonieren?",
+    "optionen": [
+      "Sie nimmt die Zugkräfte im Bauteil auf",
+      "Sie gibt dem Frischbeton seine Form und hält ihn, bis er erhärtet",
+      "Sie ersetzt die Bewehrung",
+      "Sie dämmt das Bauteil"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Schalung formt den noch flüssigen Beton und trägt ihn, bis er ausgehärtet ist. Sie muss dicht und tragfähig sein und wird nach dem Erhärten wieder ausgeschalt. Zug nimmt der Bewehrungsstahl auf."
+  },
+  {
+    "id": "lf04-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf04",
+    "thema": "Bewehrung",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "begriff": "Betondeckung",
+    "definition": "Die Mindestdicke der Betonschicht über dem Bewehrungsstahl. Sie schützt den Stahl vor Korrosion (Rost) und im Brandfall vor Hitze und sichert den Verbund zwischen Stahl und Beton.",
+    "bestandteile": [
+      "Beton",
+      "deckung"
+    ],
+    "erklaerung": "Ohne ausreichende Betondeckung rostet der Stahl und das Bauteil versagt. Abstandhalter sichern das Maß beim Betonieren."
+  },
+  {
+    "id": "lf04-017",
+    "typ": "cloze",
+    "lernfeld": "lf04",
+    "thema": "Zug und Druck",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "text": "Im Stahlbeton nimmt der {{Beton}} die Druckkräfte auf, der {{Stahl}} die Zugkräfte.",
+    "akzeptiert": {
+      "Beton": [
+        "beton"
+      ],
+      "Stahl": [
+        "stahl",
+        "Bewehrung",
+        "Bewehrungsstahl"
+      ]
+    },
+    "erklaerung": "Beton ist druckfest, aber zugschwach. Deshalb legt man Stahl in die Zugzone, wo das Bauteil auseinandergezogen wird."
+  },
+  {
+    "id": "lf04-018",
+    "typ": "mc",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "frage": "Warum muss frischer Beton nachbehandelt (z. B. feucht gehalten) werden?",
+    "optionen": [
+      "Damit er schneller trocknet",
+      "Damit er nicht zu früh austrocknet und richtig erhärten kann",
+      "Damit er heller wird",
+      "Nachbehandlung ist unnötig"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Beton erhärtet nicht durch Trocknen, sondern durch die chemische Reaktion des Zements mit Wasser. Trocknet er zu früh aus, fehlt Wasser und der Beton bleibt schwach und rissig. Darum feucht halten und vor Sonne/Wind schützen."
+  },
+  {
+    "id": "lf04-019",
+    "typ": "calc",
+    "lernfeld": "lf04",
+    "thema": "Ausgangsstoffe Beton",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Betonmischung werden {wasser} kg Wasser und {zement} kg Zement verwendet. Wie groß ist der Wasserzementwert (w/z)?",
+    "parameter": [
+      {
+        "name": "wasser",
+        "label": "Wasser",
+        "einheit": "kg",
+        "min": 60,
+        "max": 110,
+        "schritt": 1
+      },
+      {
+        "name": "zement",
+        "label": "Zement",
+        "einheit": "kg",
+        "min": 150,
+        "max": 250,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "w/z-Wert = Wassermasse geteilt durch Zementmasse ({wasser} kg / {zement} kg)",
+        "formel": "wasser / zement",
+        "ergebnisName": "wz",
+        "einheit": ""
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Der Wasserzementwert ist Wasser geteilt durch Zement. Je kleiner der Wert (z. B. 0,45), desto fester und dichter der Beton. Zu viel Wasser macht den Beton porös und schwach."
+  },
+  {
+    "id": "lf04-020",
+    "typ": "fachbegriff",
+    "lernfeld": "lf04",
+    "thema": "Schalungs- und Bewehrungszeichnung",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "begriff": "Bewehrungszeichnung",
+    "definition": "Eine Zeichnung, die Lage, Anzahl, Durchmesser und Form der Bewehrungsstähle in einem Stahlbetonbauteil angibt. Jede Stahlsorte hat eine Positionsnummer, damit die Eisen richtig eingebaut werden.",
+    "bestandteile": [
+      "Bewehrungs",
+      "zeichnung"
+    ],
+    "erklaerung": "Ohne Bewehrungszeichnung wüsste man nicht, wo welcher Stahl liegt. Sie ist die Bauanleitung für den Eisenflechter."
+  },
+  {
+    "id": "lf04-021",
+    "typ": "cloze",
+    "lernfeld": "lf04",
+    "thema": "Schalung",
+    "quelle": "Grundstufe Bautechnik / Betontechnik (verifiziert), LF 4",
+    "konfidenz": "hoch",
+    "text": "Beim Betonieren wird der Frischbeton {{verdichtet}}, damit {{Luftporen}} entweichen und der Beton dicht wird.",
+    "akzeptiert": {
+      "verdichtet": [
+        "verdichtet",
+        "geruettelt",
+        "gerüttelt"
+      ],
+      "Luftporen": [
+        "luftporen",
+        "Luft",
+        "Poren"
+      ]
+    },
+    "erklaerung": "Durch Rütteln (Verdichten) entweicht eingeschlossene Luft. Verdichteter Beton ist dichter, fester und schützt die Bewehrung besser."
   }
 ]

@@ -302,5 +302,78 @@
     "begriff": "Weiße Wanne",
     "definition": "Ein erdberührtes Bauwerk aus wasserundurchlässigem Beton (WU-Beton) ohne zusätzliche Abdichtungshaut. Die Dichtheit entsteht durch Betonrezeptur, Bauteildicke und sorgfältig ausgeführte Fugenabdichtungen.",
     "erklaerung": "Gegenstück ist die schwarze Wanne — sie dichtet von außen mit Bahnen oder Massen ab (der Name kommt vom Bitumen)."
+  },
+  {
+    "id": "lf14-016",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "Anschlusshöhen",
+    "quelle": "ZVDH / Abdichtung, Bauwerksabdichtung DIN 18533, LF 14 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch wird eine Abdichtung an einem aufgehenden Bauteil (Wand) bei geringem Gefälle mindestens hochgeführt?",
+    "optionen": [
+      "Etwa 5 cm über der Deckung",
+      "Etwa 15 cm über der wasserführenden Ebene",
+      "Es reicht bodengleich",
+      "Etwa 50 cm"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Rund 15 cm über der wasserführenden Ebene verhindern, dass Stau- oder Spritzwasser hinter die Abdichtung läuft. An Türschwellen darf die Höhe geringer sein, dann sind Zusatzmaßnahmen wie eine Rinne nötig."
+  },
+  {
+    "id": "lf14-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf14",
+    "thema": "Drückendes und nicht drückendes Wasser",
+    "quelle": "ZVDH / Abdichtung, Bauwerksabdichtung DIN 18533, LF 14 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Drückendes Wasser",
+    "definition": "Wasser, das mit hydrostatischem Druck auf die Abdichtung wirkt - etwa Grundwasser oder aufstauendes Sickerwasser. Es verlangt eine besonders widerstandsfähige, druckwasserdichte Abdichtung.",
+    "bestandteile": [
+      "Drückendes",
+      "Wasser"
+    ],
+    "erklaerung": "Nicht drückendes Wasser (z. B. ablaufender Regen) belastet die Abdichtung kaum. Drückendes Wasser presst dagegen dauerhaft - dafür braucht es die stärkste Abdichtungsart."
+  },
+  {
+    "id": "lf14-018",
+    "typ": "cloze",
+    "lernfeld": "lf14",
+    "thema": "Bauwerksabdichtung",
+    "quelle": "ZVDH / Abdichtung, Bauwerksabdichtung DIN 18533, LF 14 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Bei der {{weißen}} Wanne dichtet der wasserundurchlässige Beton selbst ab; bei der {{schwarzen}} Wanne wird außen mit Bitumen- oder Kunststoffbahnen abgedichtet.",
+    "akzeptiert": {
+      "weißen": [
+        "weissen",
+        "weisse",
+        "weiße"
+      ],
+      "schwarzen": [
+        "schwarze"
+      ]
+    },
+    "erklaerung": "Weiße Wanne = WU-Beton ohne zusätzliche Hautabdichtung. Schwarze Wanne = Abdichtungsbahnen auf der Außenseite (schwarz vom Bitumen). Beide halten drückendes Wasser vom Keller fern."
+  },
+  {
+    "id": "lf14-019",
+    "typ": "mc",
+    "lernfeld": "lf14",
+    "thema": "An- und Abschlüsse an aufgehenden Bauteilen",
+    "quelle": "ZVDH / Abdichtung, Bauwerksabdichtung DIN 18533, LF 14 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird der obere Rand eines Wandanschlusses zusätzlich mechanisch befestigt und abgedeckt?",
+    "optionen": [
+      "Nur zur Zierde",
+      "Damit Wind die Bahn nicht abhebt und kein Wasser dahinterläuft",
+      "Damit man ihn sieht",
+      "Das ist nicht nötig"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der obere Abschluss wird geklemmt oder mit einer Abdeckung (z. B. Blech) gesichert. So kann Wind die Bahn nicht lösen und Wasser nicht von oben hinter den Anschluss laufen."
   }
 ]

@@ -310,5 +310,115 @@
     "begriff": "Altdeutsche Doppeldeckung",
     "definition": "Die klassische Schieferdeckart mit Steinen unterschiedlicher Größe, bogenförmig zugehauen und in doppelter Überdeckung verlegt. Regeldachneigung: mindestens 22° (40 %).",
     "erklaerung": "Die anspruchsvollste und traditionsreichste Deckart — Prüfungsklassiker beim Schiefer."
+  },
+  {
+    "id": "lf09-016",
+    "typ": "mc",
+    "lernfeld": "lf09",
+    "thema": "Schindeln",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Aus welchem Holz werden Holzschindeln bevorzugt hergestellt?",
+    "optionen": [
+      "Fichte und Pappel",
+      "Lärche, Rotzeder und Eiche",
+      "Buche und Ahorn",
+      "Birke"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Für Schindeln nimmt man dauerhafte, harzreiche oder gerbstoffreiche Hölzer wie Lärche, Rotzeder (Western Red Cedar) und Eiche. Sie widerstehen Feuchte und Fäulnis besonders gut."
+  },
+  {
+    "id": "lf09-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf09",
+    "thema": "Deckbilder",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Gebinde",
+    "definition": "Eine waagerechte Deckreihe bei Schiefer- oder Schindeldeckungen. Die Gebindehöhe ist die sichtbare Höhe einer solchen Reihe und bestimmt zusammen mit der Überdeckung das Deckbild.",
+    "bestandteile": [
+      "Ge",
+      "binde"
+    ],
+    "erklaerung": "Von Gebinde zu Gebinde wird nach oben überdeckt. Gleichmäßige Gebindehöhen ergeben ein sauberes Deckbild."
+  },
+  {
+    "id": "lf09-018",
+    "typ": "cloze",
+    "lernfeld": "lf09",
+    "thema": "Schiefer",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Bei der {{Altdeutschen}} Deckung nehmen die Schiefersteine von der {{Traufe}} zum First hin an Größe ab.",
+    "akzeptiert": {
+      "Altdeutschen": [
+        "altdeutschen",
+        "altdeutsche",
+        "Altdeutsche"
+      ],
+      "Traufe": [
+        "traufe"
+      ]
+    },
+    "erklaerung": "Die Altdeutsche Deckung ist die anspruchsvollste Schieferdeckung: große Steine unten, kleine oben, mit gebogenen Schnitten. Sie verlangt viel Können."
+  },
+  {
+    "id": "lf09-019",
+    "typ": "mc",
+    "lernfeld": "lf09",
+    "thema": "Faserzement",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Woraus bestehen moderne Faserzement-Dachplatten?",
+    "optionen": [
+      "Aus Zement mit Asbestfasern",
+      "Aus Zement mit asbestfreien Fasern (Kunststoff- oder Zellulosefasern)",
+      "Aus reinem Kunststoff",
+      "Aus gebranntem Ton"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Früher enthielt Faserzement Asbest. Seit den 1990er Jahren sind die Fasern asbestfrei (Kunststoff- oder Zellulosefasern). Nur bei Altbestand ist beim Rückbau der Asbestschutz nach TRGS 519 nötig."
+  },
+  {
+    "id": "lf09-020",
+    "typ": "cloze",
+    "lernfeld": "lf09",
+    "thema": "Schalung und Lattung",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Schiefernägel sind mindestens {{32}} Millimeter lang und haben einen Kopfdurchmesser von etwa {{9}} Millimeter.",
+    "akzeptiert": {
+      "32": [
+        "zweiunddreissig"
+      ],
+      "9": [
+        "neun"
+      ]
+    },
+    "erklaerung": "Der breite Kopf hält den Stein sicher, die Mindestlänge sorgt für festen Halt in der Schalung. Genagelt wird so, dass der Nagel unter dem folgenden Stein verdeckt liegt."
+  },
+  {
+    "id": "lf09-021",
+    "typ": "mc",
+    "lernfeld": "lf09",
+    "thema": "Detailzeichnungen",
+    "quelle": "ZVDH-Fachregeln Schiefer/Faserzement, LF 9 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient eine Detailzeichnung am Dach (z. B. für den Ortgang)?",
+    "optionen": [
+      "Sie zeigt die Farbe",
+      "Sie stellt maßstäblich dar, wie ein Anschluss oder eine Kante genau ausgeführt wird",
+      "Sie ersetzt die Rechnung",
+      "Sie ist nur für den Architekten"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Detailzeichnungen zeigen schwierige Stellen (Ortgang, Traufe, Anschluss) im Schnitt und mit Maßen. So wird klar, wie Schichten, Bleche und Befestigungen zusammenkommen."
   }
 ]

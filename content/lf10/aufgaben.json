@@ -339,5 +339,174 @@
     "begriff": "T-Stoß",
     "definition": "Die Stelle, an der drei Bahnenlagen aufeinandertreffen. Die mittlere Bahn wird abgeschrägt (Eckschnitt), damit kein Hohlraum bleibt, in dem Wasser kapillar hochgezogen wird.",
     "erklaerung": "Klassische Fehlerquelle und beliebte Prüfungsfrage bei Abdichtungen."
+  },
+  {
+    "id": "lf10-017",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Dampfsperre",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wo liegt die Dampfsperre im Flachdachaufbau?",
+    "optionen": [
+      "Ganz oben, über der Abdichtung",
+      "Auf der warmen Raumseite, unter der Wärmedämmung",
+      "In der Mitte der Dämmung",
+      "Sie wird nicht eingebaut"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Dampfsperre liegt auf der warmen Seite, also unter der Dämmung. Sie hält die feuchte Raumluft zurück, damit in der Dämmung kein Tauwasser ausfällt."
+  },
+  {
+    "id": "lf10-018",
+    "typ": "fachbegriff",
+    "lernfeld": "lf10",
+    "thema": "Gefälledämmung",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Gefälledämmung",
+    "definition": "Keilförmig geschnittene Dämmplatten, die auf dem Flachdach ein Gefälle erzeugen. So läuft Regenwasser sicher zu den Abläufen, ohne dass die tragende Decke selbst geneigt werden muss.",
+    "bestandteile": [
+      "Gefälle",
+      "dämmung"
+    ],
+    "erklaerung": "Zwei Aufgaben in einem: dämmen und Gefälle bilden. Ohne Gefälle steht Wasser (Pfützen) und belastet die Abdichtung."
+  },
+  {
+    "id": "lf10-019",
+    "typ": "cloze",
+    "lernfeld": "lf10",
+    "thema": "Gefälledämmung",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Ein Flachdach soll ein Gefälle von mindestens {{2}} Prozent haben, damit sich keine {{Pfützen}} bilden.",
+    "akzeptiert": {
+      "2": [
+        "zwei"
+      ],
+      "Pfützen": [
+        "pfuetzen",
+        "Pfuetzen",
+        "Wasser",
+        "Staunässe",
+        "Staunaesse"
+      ]
+    },
+    "erklaerung": "Rund 2 Prozent Gefälle (etwa 2 cm je Meter) sorgen dafür, dass Wasser abläuft. Stehendes Wasser belastet die Abdichtung und friert im Winter."
+  },
+  {
+    "id": "lf10-020",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Oberflächenschutz",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welchen Zweck hat eine Kiesschüttung (Bekiesung) auf einer Flachdachabdichtung?",
+    "optionen": [
+      "Nur Optik",
+      "Schutz vor UV-Strahlung und Auflast gegen Windsog",
+      "Sie ersetzt die Dämmung",
+      "Sie dichtet ab"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Kies schützt die Abdichtung vor UV-Strahlung (Alterung) und wirkt als Auflast, die das Dach gegen Windsog niederhält. Alternativ gibt es Reflexionsanstriche oder Plattenbeläge."
+  },
+  {
+    "id": "lf10-021",
+    "typ": "calc",
+    "lernfeld": "lf10",
+    "thema": "Wärmedämmung dimensionieren",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Dämmschicht ist {d} m dick und hat eine Wärmeleitfähigkeit Lambda von {lam} W/(m*K). Wie groß ist ihr Wärmedurchlasswiderstand R?",
+    "parameter": [
+      {
+        "name": "d",
+        "label": "Dämmdicke",
+        "einheit": "m",
+        "min": 0.12,
+        "max": 0.3,
+        "schritt": 0.01
+      },
+      {
+        "name": "lam",
+        "label": "Lambda",
+        "einheit": "W/(m*K)",
+        "min": 0.03,
+        "max": 0.045,
+        "schritt": 0.005
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "R = Dicke geteilt durch Lambda ({d} m / {lam})",
+        "formel": "d / lam",
+        "ergebnisName": "R",
+        "einheit": "m2*K/W"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Der Wärmedurchlasswiderstand R ist Dicke geteilt durch Wärmeleitfähigkeit. Je dicker die Dämmung und je kleiner Lambda, desto größer R und desto besser die Dämmwirkung."
+  },
+  {
+    "id": "lf10-022",
+    "typ": "mc",
+    "lernfeld": "lf10",
+    "thema": "Windsogsicherung",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie kann eine Flachdachabdichtung gegen Windsog gesichert werden?",
+    "optionen": [
+      "Nur durch Farbe",
+      "Mechanisch befestigt, verklebt oder mit Auflast (Kies/Platten)",
+      "Gar nicht",
+      "Durch mehr Gefälle"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Drei Wege der Lagesicherung: mechanische Befestigung (Schrauben mit Tellern), vollflächige Verklebung oder Auflast (Kies, Platten, Gründach). Welcher passt, hängt von Windzone, Höhe und Dachbereich ab."
+  },
+  {
+    "id": "lf10-023",
+    "typ": "fachbegriff",
+    "lernfeld": "lf10",
+    "thema": "Schichtenfolgen",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Warmdach",
+    "definition": "Ein nicht belüftetes Flachdach, bei dem die Wärmedämmung direkt unter der Abdichtung liegt - ohne Luftschicht. Der häufigste Flachdachaufbau. Gegenstück ist das belüftete Kaltdach mit Luftschicht.",
+    "bestandteile": [
+      "Warm",
+      "dach"
+    ],
+    "erklaerung": "Beim Warmdach liegen die Schichten dicht aufeinander: Dampfsperre, Dämmung, Abdichtung. Wichtig ist die Dampfsperre, damit die Dämmung trocken bleibt."
+  },
+  {
+    "id": "lf10-024",
+    "typ": "cloze",
+    "lernfeld": "lf10",
+    "thema": "Dampfsperre",
+    "quelle": "ZVDH-Flachdachrichtlinie / Bauphysik, LF 10 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Ohne Dampfsperre gelangt feuchte Raumluft in die Dämmung und schlägt sich dort als {{Tauwasser}} nieder - die Dämmung wird {{nass}} und verliert ihre Wirkung.",
+    "akzeptiert": {
+      "Tauwasser": [
+        "tauwasser",
+        "Kondensat",
+        "Kondenswasser"
+      ],
+      "nass": [
+        "nass",
+        "feucht",
+        "durchnaesst",
+        "durchnässt"
+      ]
+    },
+    "erklaerung": "Feuchte Luft kühlt in der Dämmung ab und der Wasserdampf kondensiert. Nasse Dämmung dämmt kaum noch und kann schimmeln - darum die Dampfsperre innen."
   }
 ]

@@ -353,5 +353,82 @@
       "Wasserführende Ebene"
     ],
     "erklaerung": "Bewertet wird nicht die Schönheit, sondern die Funktion: richtige Schichtenfolge, Wasser läuft nach außen ab, Hinterlüftung durchgehend, Maße eingetragen."
+  },
+  {
+    "id": "lf15-016",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Durchdringungen: Fenster und Türen",
+    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird eine Fensterbank mit Gefälle nach außen eingebaut?",
+    "optionen": [
+      "Aus optischen Gründen",
+      "Damit Regenwasser nach außen abläuft und nicht in die Wand zieht",
+      "Damit sie stabiler ist",
+      "Das Gefälle ist egal"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Das Gefälle führt Wasser sicher von der Wand weg. Zusammen mit seitlichen Aufkantungen und einer Tropfkante vorn bleibt die Fassade darunter trocken."
+  },
+  {
+    "id": "lf15-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf15",
+    "thema": "Untere, seitliche und obere Abschlüsse",
+    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Tropfkante",
+    "definition": "Eine abgekantete Kante (Wassernase) an der Vorderseite von Blechen und Fensterbänken. Das Wasser tropft dort ab, statt an die Wand zurückzulaufen.",
+    "bestandteile": [
+      "Tropf",
+      "kante"
+    ],
+    "erklaerung": "Ohne Tropfkante läuft Wasser unter das Blech zurück an die Fassade und hinterlässt Schmutzfahnen oder dringt ein. Die kleine Abkantung verhindert das."
+  },
+  {
+    "id": "lf15-018",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Innen- und Außenecken",
+    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "An Innen- und Außenecken einer hinterlüfteten Bekleidung muss die {{Luftschicht}} durchgehend bleiben, damit die {{Hinterlüftung}} nicht unterbrochen wird.",
+    "akzeptiert": {
+      "Luftschicht": [
+        "luftschicht",
+        "Luftspalt",
+        "Belueftung",
+        "Belüftung"
+      ],
+      "Hinterlüftung": [
+        "hinterlueftung",
+        "Hinterlueftung",
+        "Belueftung",
+        "Belüftung"
+      ]
+    },
+    "erklaerung": "Wird die Luftschicht an der Ecke zugebaut, staut sich Feuchte. Die Eckausbildung muss die Luft um die Ecke weiterführen."
+  },
+  {
+    "id": "lf15-019",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Untere, seitliche und obere Abschlüsse",
+    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat der Sockelabschluss unten an einer hinterlüfteten Fassade?",
+    "optionen": [
+      "Er verschließt die Luftschicht komplett",
+      "Er lässt Zuluft eintreten und hält zugleich Kleintiere und Spritzwasser ab",
+      "Er trägt die ganze Fassade",
+      "Er dämmt"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Sockelabschluss ist die Zuluftöffnung der Hinterlüftung. Ein Lüftungsgitter lässt Luft ein, hält aber Insekten, Laub und Spritzwasser fern."
   }
 ]

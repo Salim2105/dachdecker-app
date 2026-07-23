@@ -305,5 +305,77 @@
     "begriff": "Abwicklung",
     "definition": "Die abgewickelte Zuschnittbreite eines Blechteils: Deckbreite plus alle Zugaben für Falze, Kantungen und Bördel. Sie wird vor dem Zuschnitt berechnet.",
     "erklaerung": "Wer die Zugaben vergisst, schneidet die ganze Lieferung zu schmal — klassischer und teurer Fehler."
+  },
+  {
+    "id": "lf12-016",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Leistendeckung",
+    "quelle": "ZVDH-Fachregeln Metall, LF 12 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Was kennzeichnet die Leistendeckung bei Metalldächern?",
+    "optionen": [
+      "Die Bahnen werden verschweißt",
+      "Zwischen den Blechscharen liegen Holzleisten, die mit einer Kappleiste abgedeckt werden",
+      "Die Bleche werden nur geklebt",
+      "Es gibt keine Nähte"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei der Leistendeckung stehen an den Nahtstellen Holzleisten, über die die hochgeführten Blechränder mit einer Kappleiste abgedeckt werden. Das ergibt das typische Bild mit kräftigen senkrechten Leisten."
+  },
+  {
+    "id": "lf12-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf12",
+    "thema": "Leistendeckung",
+    "quelle": "ZVDH-Fachregeln Metall, LF 12 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Kappleiste",
+    "definition": "Das Abdeckblech, das bei der Leistendeckung über die Holzleiste und die hochgebogenen Ränder der beiden Nachbarscharen gefalzt wird und die Naht wasserdicht schließt.",
+    "bestandteile": [
+      "Kapp",
+      "leiste"
+    ],
+    "erklaerung": "Die Kappleiste schließt die Leistennaht ab wie eine Haube. Ohne sie wäre die Naht offen."
+  },
+  {
+    "id": "lf12-018",
+    "typ": "cloze",
+    "lernfeld": "lf12",
+    "thema": "Stehfalzdeckung",
+    "quelle": "ZVDH-Fachregeln Metall, LF 12 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Die {{Doppelstehfalz}}-Deckung ist besonders dicht und darf ab etwa {{3}} Grad Dachneigung eingesetzt werden.",
+    "akzeptiert": {
+      "Doppelstehfalz": [
+        "doppelstehfalz",
+        "Doppelfalz"
+      ],
+      "3": [
+        "drei"
+      ]
+    },
+    "erklaerung": "Der doppelt umgelegte Stehfalz ist sehr regensicher und eignet sich schon für sehr flache Dächer ab rund 3 Grad. Der einfache Stehfalz braucht mehr Neigung."
+  },
+  {
+    "id": "lf12-019",
+    "typ": "mc",
+    "lernfeld": "lf12",
+    "thema": "Verlegepläne",
+    "quelle": "ZVDH-Fachregeln Metall, LF 12 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Warum werden Metallscharen mit Fest- und Schiebehaften befestigt?",
+    "optionen": [
+      "Nur zur Zierde",
+      "Damit sich die Scharen bei Temperaturwechsel längen können, ohne sich zu verwerfen",
+      "Damit sie sich nicht bewegen dürfen",
+      "Um Gewicht zu sparen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Metall dehnt sich bei Wärme aus. Festhafte halten die Schar an einem Punkt fest, Schiebehafte lassen die Längenänderung zu. So bleibt die Deckung eben und reißt nicht."
   }
 ]

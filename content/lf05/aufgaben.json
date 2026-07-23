@@ -288,5 +288,135 @@
       "schutz"
     ],
     "erklaerung": "Merke: Erst konstruktiv (trocken bauen), dann chemisch."
+  },
+  {
+    "id": "lf05-015",
+    "typ": "mc",
+    "lernfeld": "lf05",
+    "thema": "Laub- und Nadelholz",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "frage": "Welche Holzart wird typischerweise als tragendes Bauholz (z. B. Sparren) verwendet?",
+    "optionen": [
+      "Eiche (Laubholz)",
+      "Buche (Laubholz)",
+      "Fichte (Nadelholz)",
+      "Ahorn (Laubholz)"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Nadelhölzer wie Fichte, Kiefer, Tanne und Lärche sind leicht, gut zu bearbeiten und tragfähig - ideal als Bauholz. Laubhölzer wie Eiche oder Buche sind härter und schwerer und kommen eher für Möbel oder besondere Zwecke."
+  },
+  {
+    "id": "lf05-016",
+    "typ": "cloze",
+    "lernfeld": "lf05",
+    "thema": "Holzfeuchte",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "text": "Tragendes Bauholz soll beim Einbau eine Holzfeuchte von höchstens {{20}} Prozent haben; frisch geschlagenes Holz liegt deutlich {{darüber}}.",
+    "akzeptiert": {
+      "20": [
+        "zwanzig"
+      ],
+      "darüber": [
+        "darueber",
+        "hoeher",
+        "höher",
+        "drueber"
+      ]
+    },
+    "erklaerung": "Zu feuchtes Holz schwindet und reißt nach dem Einbau und ist anfällig für Pilze. Darum wird Bauholz auf etwa 20 Prozent oder weniger getrocknet."
+  },
+  {
+    "id": "lf05-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf05",
+    "thema": "Holzfeuchte",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "begriff": "Schwinden und Quellen",
+    "definition": "Holz arbeitet mit der Feuchte: Bei Feuchteaufnahme quillt es (wird größer), beim Trocknen schwindet es (wird kleiner). Das muss man bei Verbindungen und Fugen einplanen.",
+    "bestandteile": [
+      "Schwinden",
+      "Quellen"
+    ],
+    "erklaerung": "Holz ist ein lebendiger Baustoff. Wer das Arbeiten ignoriert, bekommt Risse, klemmende Bauteile oder offene Fugen."
+  },
+  {
+    "id": "lf05-018",
+    "typ": "mc",
+    "lernfeld": "lf05",
+    "thema": "Holzschutz",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "frage": "Was ist der beste, weil dauerhafteste Holzschutz am Bau?",
+    "optionen": [
+      "Viel chemisches Holzschutzmittel",
+      "Konstruktiver Holzschutz - Wasser vom Holz fernhalten",
+      "Holz dunkel streichen",
+      "Holz dicht in Folie einpacken"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Konstruktiver Holzschutz geht vor chemischem: Überstände, Gefälle, Hinterlüftung und Abstand vom Boden halten das Holz trocken. Trockenes Holz wird von Pilzen und Insekten nicht befallen."
+  },
+  {
+    "id": "lf05-019",
+    "typ": "calc",
+    "lernfeld": "lf05",
+    "thema": "Holzliste und Verschnitt",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für eine Lattung werden {netto} m Dachlatte benötigt. Mit {verschnitt} Prozent Verschnittzuschlag - wie viel Latte muss bestellt werden?",
+    "parameter": [
+      {
+        "name": "netto",
+        "label": "Nettobedarf",
+        "einheit": "m",
+        "min": 50,
+        "max": 200,
+        "schritt": 5
+      },
+      {
+        "name": "verschnitt",
+        "label": "Verschnitt",
+        "einheit": "%",
+        "min": 5,
+        "max": 12,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Bruttobedarf = Nettobedarf mal (1 + Verschnitt/100) ({netto} m + {verschnitt} %)",
+        "formel": "netto * (1 + verschnitt/100)",
+        "ergebnisName": "brutto",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Beim Ablängen entsteht Verschnitt (Abfall). Man rechnet einen Zuschlag auf den Nettobedarf, damit genug Material da ist. Bruttobedarf = Netto mal (1 + Prozent/100)."
+  },
+  {
+    "id": "lf05-020",
+    "typ": "cloze",
+    "lernfeld": "lf05",
+    "thema": "Holzverbindungen",
+    "quelle": "Grundstufe Bautechnik / Holztechnik (verifiziert), LF 5",
+    "konfidenz": "hoch",
+    "text": "Bei einer Zapfenverbindung greift der {{Zapfen}} des einen Holzes in das {{Zapfenloch}} des anderen.",
+    "akzeptiert": {
+      "Zapfen": [
+        "zapfen"
+      ],
+      "Zapfenloch": [
+        "zapfenloch",
+        "Zapfenlochung"
+      ]
+    },
+    "erklaerung": "Zapfen und Zapfenloch sind eine klassische zimmermannsmäßige Verbindung. Sie überträgt Kräfte formschlüssig, ganz ohne Metall."
   }
 ]

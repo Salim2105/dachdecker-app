@@ -293,5 +293,119 @@
       "koeffizient"
     ],
     "erklaerung": "Merke: Wärme-durchgangs-koeffizient — wie gut Wärme durch das Bauteil hindurchgeht."
+  },
+  {
+    "id": "lf08-015",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Wahre Dachflächen und -linien",
+    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Satteldach hat je Seite eine Grundfläche (Projektion) von {grund} m2 bei {neigung} Grad Dachneigung. Wie groß ist die wahre Dachfläche?",
+    "parameter": [
+      {
+        "name": "grund",
+        "label": "Grundfläche",
+        "einheit": "m2",
+        "min": 30,
+        "max": 80,
+        "schritt": 1
+      },
+      {
+        "name": "neigung",
+        "label": "Dachneigung",
+        "einheit": "Grad",
+        "min": 20,
+        "max": 45,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Wahre Fläche = Grundfläche geteilt durch cos(Neigung) ({grund} m2 / cos {neigung} Grad)",
+        "formel": "grund / cos(neigung / 180 * pi)",
+        "ergebnisName": "wahr",
+        "einheit": "m2"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Das geneigte Dach ist größer als seine Draufsicht (Grundfläche). Man teilt durch den Kosinus des Neigungswinkels. Je steiler das Dach, desto größer die wahre Fläche - wichtig für den Materialbedarf."
+  },
+  {
+    "id": "lf08-016",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wo greifen die größten Windsogkräfte am Dach an?",
+    "optionen": [
+      "In der Dachmitte",
+      "An den Rand- und Eckbereichen (First, Ortgang, Traufe)",
+      "Nur am First",
+      "Windsog gibt es nicht"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "An Rändern und Ecken entstehen die stärksten Sogspitzen. Dort müssen mehr Ziegel mechanisch verklammert werden als in der Fläche. Ab etwa 65 Grad Dachneigung wird jeder Ziegel befestigt."
+  },
+  {
+    "id": "lf08-017",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Unterdach, Unterdeckung, Unterspannung",
+    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Eine {{diffusionsoffene}} Unterdeckbahn hält Regen und Flugschnee ab, lässt aber Wasserdampf von innen nach {{außen}} entweichen.",
+    "akzeptiert": {
+      "diffusionsoffene": [
+        "diffusionsoffen",
+        "offene",
+        "dampfdurchlaessige",
+        "dampfdurchlässige"
+      ],
+      "außen": [
+        "aussen",
+        "draussen",
+        "draußen"
+      ]
+    },
+    "erklaerung": "Diffusionsoffen heißt: dicht gegen Wasser von außen, aber durchlässig für Dampf von innen. So bleibt die Konstruktion trocken."
+  },
+  {
+    "id": "lf08-018",
+    "typ": "fachbegriff",
+    "lernfeld": "lf08",
+    "thema": "Funktionsschichten",
+    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Unterspannbahn",
+    "definition": "Eine Bahn, die unterhalb der Konterlattung locker über die Sparren gespannt wird. Sie leitet eingedrungenes Wasser und Flugschnee zur Traufe ab und dient als zweite wasserführende Ebene.",
+    "bestandteile": [
+      "Unter",
+      "spann",
+      "bahn"
+    ],
+    "erklaerung": "Die Unterspannbahn ist die einfachste der drei Zusatzmaßnahmen (Unterdach, Unterdeckung, Unterspannung) und schützt zusätzlich unter der Eindeckung."
+  },
+  {
+    "id": "lf08-019",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
+    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Warum wird eine Dampfbremse auf der Rauminnenseite der Dämmung eingebaut?",
+    "optionen": [
+      "Damit von außen kein Regen eindringt",
+      "Damit warme, feuchte Raumluft nicht in die Dämmung gelangt und dort zu Tauwasser wird",
+      "Zur besseren Optik",
+      "Um Wärme zu erzeugen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Warme Raumluft enthält viel Feuchte. Gelangt sie in die kalte Dämmung, fällt Tauwasser aus und durchnässt sie. Die Dampfbremse innen hält die Feuchte zurück - außen bleibt die Bahn diffusionsoffen."
   }
 ]

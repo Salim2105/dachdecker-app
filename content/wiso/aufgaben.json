@@ -493,5 +493,119 @@
       "Zusätzliche Altersversorgung"
     ],
     "erklaerung": "Ohne Sozialkasse würdest du bei jedem Betriebswechsel wieder bei null Urlaubsanspruch anfangen — in einer Branche mit Winterpause wäre das ein echtes Problem."
+  },
+  {
+    "id": "wiso-023",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie lange darf die Probezeit in der Berufsausbildung höchstens dauern?",
+    "optionen": [
+      "Zwei Wochen",
+      "Einen bis vier Monate",
+      "Sechs Monate",
+      "Ein Jahr"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Nach dem Berufsbildungsgesetz beträgt die Probezeit mindestens einen und höchstens vier Monate. In dieser Zeit können beide Seiten ohne Frist und ohne Grund kündigen."
+  },
+  {
+    "id": "wiso-024",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Der ordnungsgemäß geführte {{Ausbildungsnachweis}} (das Berichtsheft) ist eine {{Zulassungsvoraussetzung}} zur Gesellenprüfung.",
+    "akzeptiert": {
+      "Ausbildungsnachweis": [
+        "ausbildungsnachweis",
+        "Berichtsheft"
+      ],
+      "Zulassungsvoraussetzung": [
+        "zulassungsvoraussetzung",
+        "Voraussetzung",
+        "Bedingung"
+      ]
+    },
+    "erklaerung": "Ohne vollständig geführtes und vom Ausbilder abgezeichnetes Berichtsheft wird man nicht zur Prüfung zugelassen. Es dokumentiert den Ausbildungsverlauf."
+  },
+  {
+    "id": "wiso-025",
+    "typ": "fachbegriff",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Günstigkeitsprinzip",
+    "definition": "Regel im Arbeitsrecht: Weichen mehrere Regelungen voneinander ab, gilt die für den Arbeitnehmer günstigere. Eine einzelvertragliche Abmachung darf den Tarifvertrag also nur zugunsten des Beschäftigten ändern.",
+    "bestandteile": [
+      "Günstigkeits",
+      "prinzip"
+    ],
+    "erklaerung": "Der Tarifvertrag ist die Untergrenze. Besseres im Einzelvertrag ist erlaubt, Schlechteres nicht - deshalb Günstigkeitsprinzip."
+  },
+  {
+    "id": "wiso-026",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie lange gilt bei Bauwerken in der Regel die Gewährleistung nach BGB?",
+    "optionen": [
+      "Sechs Monate",
+      "Zwei Jahre",
+      "Fünf Jahre",
+      "Zehn Jahre"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Für Arbeiten an einem Bauwerk beträgt die Verjährungsfrist für Mängelansprüche nach BGB fünf Jahre. Nach VOB/B sind es vier Jahre - was gilt, hängt davon ab, was vereinbart wurde."
+  },
+  {
+    "id": "wiso-027",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wer trägt die Beiträge zur gesetzlichen Unfallversicherung (Berufsgenossenschaft)?",
+    "optionen": [
+      "Der Arbeitnehmer allein",
+      "Der Arbeitgeber allein",
+      "Arbeitgeber und Arbeitnehmer je zur Hälfte",
+      "Der Staat"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Beiträge zur gesetzlichen Unfallversicherung zahlt der Arbeitgeber allein (für das Bauhauptgewerbe die BG BAU). Die anderen vier Sozialversicherungszweige teilen sich Arbeitgeber und Arbeitnehmer meist hälftig."
+  },
+  {
+    "id": "wiso-028",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "BBiG / JArbSchG / BGB / RTV Dachdecker / SOKA-DACH, WiSo (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Im Dachdeckerhandwerk wickelt die {{SOKA}}-DACH das {{Urlaubskassenverfahren}} ab, damit Beschäftigte trotz wechselnder Betriebe zusammenhängenden Urlaub erhalten.",
+    "akzeptiert": {
+      "SOKA": [
+        "soka",
+        "Sozialkasse"
+      ],
+      "Urlaubskassenverfahren": [
+        "urlaubskassenverfahren",
+        "Urlaubsverfahren",
+        "Urlaubskasse"
+      ]
+    },
+    "erklaerung": "Weil am Bau die Betriebe oft wechseln, sammelt die Sozialkasse (SOKA-DACH) die Urlaubsansprüche zentral. So geht Urlaub bei einem Betriebswechsel nicht verloren."
   }
 ]

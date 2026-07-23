@@ -357,5 +357,99 @@
     "begriff": "kWp (Kilowatt-Peak)",
     "definition": "Die Nennleistung einer Photovoltaikanlage unter genormten Prüfbedingungen. Sie dient dem Vergleich von Anlagen und Modulen und entspricht nicht der tatsächlich erzeugten Leistung an einem beliebigen Tag.",
     "erklaerung": "1 kWp = 1000 Wp. Der reale Ertrag hängt von Ausrichtung, Dachneigung, Verschattung, Temperatur und Standort ab."
+  },
+  {
+    "id": "lf16-017",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Schneefang und Absturzsicherung",
+    "quelle": "DGUV / DEHN Blitzschutz / PV-Sicherheit, LF 16 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient ein Schneefang an der Traufe?",
+    "optionen": [
+      "Zur Zierde",
+      "Er verhindert Dachlawinen - abrutschenden Schnee, der Personen gefährdet",
+      "Er dämmt das Dach",
+      "Er leitet Wasser ab"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Schneefang hält Schneemassen auf dem Dach zurück, damit sie nicht als Dachlawine herabstürzen und Personen oder Gegenstände darunter treffen. Er sitzt nahe der Traufe."
+  },
+  {
+    "id": "lf16-018",
+    "typ": "fachbegriff",
+    "lernfeld": "lf16",
+    "thema": "Äußerer Blitzschutz",
+    "quelle": "DGUV / DEHN Blitzschutz / PV-Sicherheit, LF 16 (verifiziert)",
+    "konfidenz": "hoch",
+    "begriff": "Fangeinrichtung",
+    "definition": "Der Teil der Blitzschutzanlage auf dem Dach (Fangstangen, Fangleitungen), der den Blitz gezielt einfängt. Über die Ableitungen wird der Strom zur Erdungsanlage in den Boden geführt.",
+    "bestandteile": [
+      "Fang",
+      "einrichtung"
+    ],
+    "erklaerung": "Drei Teile bilden den äußeren Blitzschutz: Fangeinrichtung (fängt), Ableitung (leitet), Erdung (verteilt in den Boden). Zu Metallteilen ist der Trennungsabstand einzuhalten."
+  },
+  {
+    "id": "lf16-019",
+    "typ": "cloze",
+    "lernfeld": "lf16",
+    "thema": "Gefahren des elektrischen Stroms",
+    "quelle": "DGUV / DEHN Blitzschutz / PV-Sicherheit, LF 16 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Photovoltaik-Module stehen bei Lichteinfall immer unter {{Spannung}}; Arbeiten an der Elektrik darf nur eine {{Elektrofachkraft}} ausführen.",
+    "akzeptiert": {
+      "Spannung": [
+        "spannung"
+      ],
+      "Elektrofachkraft": [
+        "elektrofachkraft",
+        "Fachkraft",
+        "Elektriker"
+      ]
+    },
+    "erklaerung": "Man kann PV-Module nicht einfach abschalten - sobald Licht fällt, liegt Gleichspannung an. Der Dachdecker montiert die Unterkonstruktion, die elektrische Verschaltung macht die Elektrofachkraft."
+  },
+  {
+    "id": "lf16-020",
+    "typ": "mc",
+    "lernfeld": "lf16",
+    "thema": "Schneefang und Absturzsicherung",
+    "quelle": "DGUV / DEHN Blitzschutz / PV-Sicherheit, LF 16 (verifiziert)",
+    "konfidenz": "hoch",
+    "frage": "Wie sichert sich ein Dachdecker bei der Montage einer PV-Anlage gegen Absturz?",
+    "optionen": [
+      "Gar nicht, wenn es schnell geht",
+      "Durch Seitenschutz, Gerüst oder PSA gegen Absturz",
+      "Nur mit rutschfesten Schuhen",
+      "Durch Zurufe vom Boden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Auch bei der Anlagenmontage gilt die Rangfolge des Absturzschutzes: erst Seitenschutz oder Gerüst (kollektiv), sonst PSA gegen Absturz mit Auffanggurt und tragfähigem Anschlagpunkt."
+  },
+  {
+    "id": "lf16-021",
+    "typ": "cloze",
+    "lernfeld": "lf16",
+    "thema": "Wind- und Schneelasten",
+    "quelle": "DGUV / DEHN Blitzschutz / PV-Sicherheit, LF 16 (verifiziert)",
+    "konfidenz": "hoch",
+    "text": "Die {{Schneelast}} auf ein Dach hängt von der {{Schneelastzone}} und der Geländehöhe ab; im Bergland ist sie höher als im Flachland.",
+    "akzeptiert": {
+      "Schneelast": [
+        "schneelast",
+        "Schneemenge"
+      ],
+      "Schneelastzone": [
+        "schneelastzone",
+        "Lastzone",
+        "Zone"
+      ]
+    },
+    "erklaerung": "Deutschland ist in Schneelastzonen eingeteilt. Aus Zone und Höhe über dem Meer ergibt sich die anzusetzende Last - wichtig für die Befestigung von Anlagen und die Tragfähigkeit."
   }
 ]
