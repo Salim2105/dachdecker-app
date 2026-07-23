@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { Wiederholung } from "@/components/session/Wiederholung";
@@ -24,17 +24,58 @@ interface Lauf {
   endeAm: number;
 }
 
+interface Stand {
+  lauf: Lauf;
+  index: number;
+  ergebnisse: Bewertung[];
+  beantwortet: boolean;
+  abgegeben: boolean;
+}
+
+// Laufende Prüfung überlebt Verlassen/Neustart. endeAm ist eine absolute Zeit,
+// darum stimmt der Timer nach dem Wiederkommen automatisch (lief die Zeit ab,
+// zeigt sich beim Zurückkehren direkt das Ergebnis).
+const KEY = "dd-pruefung";
+
+function ladeStand(): Stand | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (
+      s &&
+      s.lauf &&
+      Array.isArray(s.lauf.aufgaben) &&
+      s.lauf.aufgaben.length > 0 &&
+      typeof s.lauf.endeAm === "number" &&
+      typeof s.index === "number" &&
+      Array.isArray(s.ergebnisse)
+    ) {
+      return s as Stand;
+    }
+  } catch {}
+  return null;
+}
+
 export function PruefungRunner() {
   const { bewerte } = useProgress();
   const teile = getPruefungsteile();
 
-  const [lauf, setLauf] = useState<Lauf | null>(null);
-  const [index, setIndex] = useState(0);
-  const [ergebnisse, setErgebnisse] = useState<Bewertung[]>([]);
-  const [beantwortet, setBeantwortet] = useState(false);
-  const [abgegeben, setAbgegeben] = useState(false);
-  const [jetzt, setJetzt] = useState(0);
+  const gespeichert = useMemo(() => ladeStand(), []);
+  const [lauf, setLauf] = useState<Lauf | null>(gespeichert?.lauf ?? null);
+  const [index, setIndex] = useState(gespeichert?.index ?? 0);
+  const [ergebnisse, setErgebnisse] = useState<Bewertung[]>(gespeichert?.ergebnisse ?? []);
+  const [beantwortet, setBeantwortet] = useState(gespeichert?.beantwortet ?? false);
+  const [abgegeben, setAbgegeben] = useState(gespeichert?.abgegeben ?? false);
+  const [jetzt, setJetzt] = useState(() => (gespeichert ? Date.now() : 0));
   const [nachbereitung, setNachbereitung] = useState<Aufgabe[] | null>(null);
+
+  // Stand sichern, solange eine Prüfung läuft; bei Rückkehr zur Auswahl aufräumen.
+  useEffect(() => {
+    try {
+      if (lauf) localStorage.setItem(KEY, JSON.stringify({ lauf, index, ergebnisse, beantwortet, abgegeben }));
+      else localStorage.removeItem(KEY);
+    } catch {}
+  }, [lauf, index, ergebnisse, beantwortet, abgegeben]);
 
   // Tickt nur, solange eine Prüfung läuft. setState passiert im Intervall-
   // Callback, nicht im Effekt-Körper.
