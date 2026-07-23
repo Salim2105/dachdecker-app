@@ -2,20 +2,37 @@
 import { useEffect } from "react";
 
 /**
- * Registriert den Service Worker und hält die App automatisch aktuell.
+ * Hält die Web-/iOS-PWA automatisch aktuell (Service Worker fürs Offline-Cachen).
  *
- * Ablauf ohne Zutun: Beim Start (und jedes Mal, wenn die App wieder in den
- * Vordergrund kommt) wird nach einer neuen Version gesehen. Liegt eine bereit,
- * übernimmt der neue Service Worker sofort (skipWaiting + clients.claim im
- * sw.js) und die App lädt sich genau einmal neu — dann sind Inhalte frisch.
- * Kein Knopf, keine App-Store-Updates: einmal Safari/App öffnen genügt.
+ * WICHTIG: In der Desktop-App (Electron) wird KEIN Service Worker registriert.
+ * Dort lädt die App ohnehin lokal vom eingebauten Server — ein SW bringt keinen
+ * Nutzen, sondern führt nur dazu, dass nach einem Update die alte, gecachte
+ * Version angezeigt wird. Deshalb: in Electron einen evtl. vorhandenen alten SW
+ * abmelden und seine Caches leeren, sonst nichts.
  */
 export function ServiceWorkerRegister() {
   useEffect(() => {
-    if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
+    if (!("serviceWorker" in navigator)) return;
 
-    // Gab es beim Laden schon einen Controller? Dann ist ein späterer Wechsel
-    // ein echtes Update (neu laden). Beim allerersten Install nicht neu laden.
+    const istElectron = /electron/i.test(navigator.userAgent);
+
+    if (istElectron || process.env.NODE_ENV !== "production") {
+      // Aufräumen: alten Service Worker abmelden und Caches leeren (heilt einen
+      // festhängenden Stand). localStorage (Fortschritt) bleibt unberührt.
+      navigator.serviceWorker
+        .getRegistrations()
+        .then((rs) => rs.forEach((r) => r.unregister()))
+        .catch(() => {});
+      if (istElectron && "caches" in window) {
+        caches
+          .keys()
+          .then((ks) => ks.forEach((k) => caches.delete(k)))
+          .catch(() => {});
+      }
+      return;
+    }
+
+    // --- Web / iOS-PWA: registrieren und automatisch aktualisieren ---
     const hatteController = !!navigator.serviceWorker.controller;
     let neugeladen = false;
 
@@ -28,14 +45,15 @@ export function ServiceWorkerRegister() {
 
     let reg: ServiceWorkerRegistration | undefined;
     navigator.serviceWorker
-      .register("/sw.js")
+      // updateViaCache: "none" → sw.js wird nie aus dem HTTP-Cache genommen,
+      // sonst wird ein Update evtl. nicht erkannt.
+      .register("/sw.js", { updateViaCache: "none" })
       .then((r) => {
         reg = r;
         r.update().catch(() => {});
       })
       .catch(() => {});
 
-    // Kommt die App aus dem Hintergrund zurück, erneut nach Updates sehen.
     const beiSichtbar = () => {
       if (!document.hidden) reg?.update().catch(() => {});
     };
