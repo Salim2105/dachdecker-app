@@ -178,5 +178,261 @@
       "vorschrift"
     ],
     "erklaerung": "Merke die drei Wortteile: Unfall-verhütungs-vorschrift (UVV)."
+  },
+  {
+    "id": "lf01-010",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeitenplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "frage": "Was stellt ein Bauzeitenplan (Balkenplan) dar?",
+    "optionen": [
+      "Die Kosten aller Gewerke",
+      "Die zeitliche Reihenfolge und Dauer der Gewerke",
+      "Die Anordnung von Kran und Lager",
+      "Die statische Berechnung des Bauwerks"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Balkenplan (Gantt) zeigt für jedes Gewerk einen Balken über der Zeitachse: wann es beginnt, wie lange es dauert und wo sich Gewerke überschneiden. Kosten stehen in der Kalkulation, die Anordnung im Baustelleneinrichtungsplan."
+  },
+  {
+    "id": "lf01-011",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Bauzeitenplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "begriff": "Bauzeitenplan",
+    "definition": "Ein Terminplan, der alle Gewerke mit Beginn, Dauer und Reihenfolge über einer Zeitachse darstellt (meist als Balkenplan). Er koordiniert die Gewerke, deckt Abhängigkeiten auf und hält den Bauablauf termingerecht.",
+    "bestandteile": [
+      "Bau",
+      "zeiten",
+      "plan"
+    ],
+    "erklaerung": "Merke die drei Wortteile: Bau-zeiten-plan."
+  },
+  {
+    "id": "lf01-012",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Bauzeitenplan",
+    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "konfidenz": "hoch",
+    "text": "Im Bauzeitenplan wird jedes Gewerk als {{Balken}} über einer {{Zeitachse}} dargestellt; die Länge des Balkens zeigt die {{Dauer}}.",
+    "akzeptiert": {
+      "Balken": [
+        "balken"
+      ],
+      "Zeitachse": [
+        "zeitachse",
+        "zeit achse"
+      ],
+      "Dauer": [
+        "dauer"
+      ]
+    },
+    "erklaerung": "Je länger der Balken, desto länger dauert das Gewerk. Überschneiden sich Balken, laufen Arbeiten parallel."
+  },
+  {
+    "id": "lf01-013",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Absturzsicherung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Absturzhöhe ist bei Dacharbeiten grundsätzlich eine Absturzsicherung erforderlich?",
+    "optionen": [
+      "Ab 1,00 m",
+      "Ab 2,00 m",
+      "Ab 3,00 m",
+      "Erst ab 5,00 m"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Nach den Regeln der BG BAU ist bei Absturzhöhen ab 2,00 m grundsätzlich gegen Absturz zu sichern. An Verkehrswegen und über Wasser/Stoffen gilt schon ab 1,00 m; an Öffnungen unabhängig von der Höhe."
+  },
+  {
+    "id": "lf01-014",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Absturzsicherung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "frage": "Welche Maßnahme gegen Absturz ist vorrangig zu wählen?",
+    "optionen": [
+      "Persönliche Schutzausrüstung gegen Absturz (PSAgA)",
+      "Auffangnetz",
+      "Seitenschutz bzw. Geländer (Absturzsicherung)",
+      "Ein Warnschild am Boden"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Rangfolge: 1. Absturzsicherung (kollektiver Seitenschutz), 2. Auffangeinrichtung (Netz/Fanggerüst), 3. PSAgA (individuell). Kollektiver Schutz wirkt für alle ohne Zutun des Einzelnen und geht deshalb vor."
+  },
+  {
+    "id": "lf01-015",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Absturzsicherung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "text": "Ein vollständiger Seitenschutz besteht aus {{Geländerholm}}, {{Zwischenholm}} und {{Bordbrett}}.",
+    "akzeptiert": {
+      "Geländerholm": [
+        "gelaenderholm",
+        "Handlauf",
+        "handlauf"
+      ],
+      "Zwischenholm": [
+        "zwischenholm",
+        "Knieleiste",
+        "knieleiste"
+      ],
+      "Bordbrett": [
+        "bordbrett",
+        "Fußleiste",
+        "Fussleiste",
+        "fussleiste"
+      ]
+    },
+    "erklaerung": "Der obere Geländerholm (Handlauf, mind. 1,00 m hoch), der Zwischenholm (Knieleiste) und das Bordbrett (Fußleiste, hält Material vom Herabfallen ab) bilden zusammen den kompletten Seitenschutz."
+  },
+  {
+    "id": "lf01-016",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Absturzsicherung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "begriff": "PSA gegen Absturz (PSAgA)",
+    "definition": "Persönliche Schutzausrüstung gegen Absturz: Auffanggurt, Verbindungsmittel mit Falldämpfer und ein ausreichend tragfähiger Anschlagpunkt. Sie wird eingesetzt, wenn kollektiver Seitenschutz nicht möglich ist.",
+    "bestandteile": [
+      "Auffanggurt",
+      "Verbindungsmittel",
+      "Anschlagpunkt"
+    ],
+    "erklaerung": "PSAgA ist individueller Schutz und steht in der Rangfolge nach Absturzsicherung und Auffangeinrichtung."
+  },
+  {
+    "id": "lf01-017",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Gefährdungsbeurteilung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "begriff": "Gefährdungsbeurteilung",
+    "definition": "Die systematische Ermittlung und Bewertung der Gefährdungen an einem Arbeitsplatz vor Arbeitsbeginn, aus der die nötigen Schutzmaßnahmen abgeleitet werden. Sie ist Pflicht des Arbeitgebers.",
+    "bestandteile": [
+      "Gefährdungs",
+      "beurteilung"
+    ],
+    "erklaerung": "Erst beurteilen, welche Gefahren bestehen (z. B. Absturz), dann Maßnahmen nach dem STOP-Prinzip festlegen."
+  },
+  {
+    "id": "lf01-018",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Verkehrssicherung",
+    "quelle": "BG BAU Bausteine 404; DGUV",
+    "konfidenz": "hoch",
+    "frage": "Warum wird der Bereich unter einer Dachbaustelle abgesperrt?",
+    "optionen": [
+      "Damit keine Unbefugten den Kran bedienen",
+      "Zum Schutz vor herabfallenden Gegenständen",
+      "Um Material trocken zu lagern",
+      "Damit die Zufahrt breiter wird"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Dacharbeiten können Werkzeug und Material herabfallen. Der Gefahrenbereich wird abgesperrt (ggf. mit Schutzdach), damit niemand getroffen wird. Im öffentlichen Verkehrsraum ist zusätzlich eine Verkehrssicherung mit Beschilderung nötig."
+  },
+  {
+    "id": "lf01-019",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhütung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "frage": "Welche persönliche Schutzausrüstung schützt vor herabfallenden Gegenständen und Anstoßen am Kopf?",
+    "optionen": [
+      "Gehörschutz",
+      "Schutzhelm",
+      "Kniepolster",
+      "Warnweste"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Schutzhelm schützt vor herabfallenden Gegenständen und Anstoßen. Gehörschutz mindert Lärm, Kniepolster schützen die Knie, die Warnweste macht sichtbar — jede PSA hat ihren eigenen Zweck."
+  },
+  {
+    "id": "lf01-020",
+    "typ": "calc",
+    "lernfeld": "lf01",
+    "thema": "Verkehrssicherung",
+    "quelle": "Grundrechnung Umfang; Kontext KMK-Rahmenlehrplan LF 1",
+    "konfidenz": "hoch",
+    "aufgabentext": "Der Gefahrenbereich unter dem Dach ist {laenge} m lang und {breite} m breit und soll rundum mit Absperrband gesichert werden. Wie viel Band wird mindestens benötigt?",
+    "parameter": [
+      {
+        "name": "laenge",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 8,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Breite",
+        "einheit": "m",
+        "min": 4,
+        "max": 12,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Umfang des Rechtecks: zwei Mal Länge plus Breite (2 · ({laenge} m + {breite} m))",
+        "formel": "2 * (laenge + breite)",
+        "ergebnisName": "umfang",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Absperrband läuft rundherum, also entlang des Umfangs. Umfang eines Rechtecks = 2 · (Länge + Breite). In der Praxis rechnet man etwas Zugabe für Überlappung dazu."
+  },
+  {
+    "id": "lf01-021",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Unfallverhütung",
+    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "konfidenz": "hoch",
+    "text": "Ein Gerüst darf erst {{betreten}} werden, wenn es geprüft und {{freigegeben}} ist; die Freigabe erkennt man am {{Kennzeichnungsschild}}.",
+    "akzeptiert": {
+      "betreten": [
+        "benutzt",
+        "genutzt"
+      ],
+      "freigegeben": [
+        "frei gegeben"
+      ],
+      "Kennzeichnungsschild": [
+        "kennzeichnungsschild",
+        "Schild",
+        "schild",
+        "Gerüstschild",
+        "Geruestschild",
+        "geruestschild"
+      ]
+    },
+    "erklaerung": "Vor der ersten Nutzung prüft eine befähigte Person das Gerüst und gibt es frei. Das Kennzeichnungsschild zeigt Gerüstklasse und Freigabe — ohne Schild gilt das Gerüst als nicht freigegeben."
   }
 ]
