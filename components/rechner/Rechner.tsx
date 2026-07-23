@@ -32,8 +32,8 @@ export function Rechner() {
 
   return (
     <div>
-      <h1 className="text-xl font-medium">Rechner</h1>
-      <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
+      <h1 className="text-[26px] font-semibold tracking-tight">Fachrechner</h1>
+      <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
         Die Formeln aus den Lernfeldern — zum Nachrechnen und Kontrollieren.
       </p>
 

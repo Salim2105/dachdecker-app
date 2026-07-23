@@ -64,9 +64,26 @@ export function Ergebnis({
 
 export function Hinweis({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mt-3 text-xs leading-relaxed" style={{ color: "var(--text-muted)" }}>
-      {children}
-    </p>
+    <div
+      className="mt-3 flex gap-2.5 rounded-[var(--r-md)] p-3 text-xs leading-relaxed"
+      style={{ background: "var(--surface-2)", color: "var(--text-muted)" }}
+    >
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="var(--accent)"
+        strokeWidth="1.9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+        className="mt-0.5 flex-shrink-0"
+      >
+        <path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0012 2z" />
+      </svg>
+      <div>{children}</div>
+    </div>
   );
 }
 

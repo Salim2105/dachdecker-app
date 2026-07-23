@@ -36,8 +36,11 @@ export default function LernenPage() {
 
   return (
     <div>
-      <h1 className="text-xl font-medium">Lernfelder</h1>
-      <div className="mt-3">
+      <h1 className="text-[26px] font-semibold tracking-tight">Lernfelder</h1>
+      <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
+        1. Lehrjahr &amp; darüber hinaus
+      </p>
+      <div className="mt-4">
         <Fortsetzen />
       </div>
       <p

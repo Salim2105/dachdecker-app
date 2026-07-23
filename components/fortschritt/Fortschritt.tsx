@@ -51,11 +51,11 @@ export function Fortschritt() {
 
   return (
     <div>
-      <h1 className="text-xl font-medium">Fortschritt</h1>
+      <h1 className="text-[26px] font-semibold tracking-tight">Dein Fortschritt</h1>
 
       <div className="mt-4 grid grid-cols-3 gap-2">
         <Kachel label="Bearbeitet" wert={`${bearbeitet.length}`} zusatz={`von ${alle.length}`} />
-        <Kachel label="Richtig-Quote" wert={`${quote.toFixed(0)} %`} zusatz={`${richtig.length} richtig`} />
+        <Kachel label="Quote Richtig" wert={`${quote.toFixed(0)} %`} zusatz={`${richtig.length} richtig`} farbe="var(--ok)" />
         <Kachel label="Noch neu" wert={`${neu}`} zusatz="nie bearbeitet" />
       </div>
 
@@ -94,21 +94,24 @@ export function Fortschritt() {
       {/* Schwächste Themen */}
       {schwach.length > 0 && (
         <>
-          <h2 className="mt-6 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-            Daran hakt es
+          <h2 className="mt-6 text-sm font-semibold" style={{ color: "var(--text)" }}>
+            Schwachstellen <span style={{ color: "var(--text-muted)" }}>(Übe-Empfehlung)</span>
           </h2>
           <div className="mt-2 flex flex-col gap-2">
             {schwach.map(([thema, e]) => (
               <Link
                 key={thema}
                 href={`/lernen/${e.lernfeld}`}
-                className="flex items-center justify-between rounded-lg border px-3 py-2"
+                className="flex items-center gap-2.5 rounded-lg border px-3 py-2.5"
                 style={{ borderColor: "var(--border)", background: "var(--surface)" }}
               >
-                <span className="text-sm" style={{ color: "var(--text)" }}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="flex-shrink-0">
+                  <path d="M7 17L17 7M9 7h8v8" />
+                </svg>
+                <span className="flex-1 text-sm" style={{ color: "var(--text)" }}>
                   {thema}
                 </span>
-                <span className="text-xs" style={{ color: "var(--bad)" }}>
+                <span className="text-xs tnum" style={{ color: "var(--bad)" }}>
                   {e.falsch} / {e.gesamt} offen
                 </span>
               </Link>
@@ -118,10 +121,10 @@ export function Fortschritt() {
       )}
 
       {/* Nach Lernfeld */}
-      <h2 className="mt-6 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-        Nach Lernfeld
+      <h2 className="mt-6 text-sm font-semibold" style={{ color: "var(--text)" }}>
+        Fortschritt nach Lernfeld
       </h2>
-      <div className="mt-2 flex flex-col gap-2">
+      <div className="mt-3 flex flex-col gap-3.5">
         {lernfelder.map((lf) => {
           const ids = getAufgaben(lf.id).map((a) => a.id);
           if (ids.length === 0) return null;
@@ -130,12 +133,17 @@ export function Fortschritt() {
           ).length;
           const anteil = fertig / ids.length;
           return (
-            <Link key={lf.id} href={`/lernen/${lf.id}`} className="flex items-center gap-3">
-              <span className="w-14 flex-shrink-0 text-xs" style={{ color: "var(--text-muted)" }}>
-                {/^\d/.test(lf.nr) ? `LF ${lf.nr}` : lf.nr}
-              </span>
+            <Link key={lf.id} href={`/lernen/${lf.id}`} className="block">
+              <div className="flex items-center justify-between gap-3">
+                <span className="min-w-0 truncate text-sm" style={{ color: "var(--text)" }}>
+                  {/^\d/.test(lf.nr) ? `LF ${lf.nr}` : lf.nr}: {lf.titel}
+                </span>
+                <span className="flex-shrink-0 text-sm font-semibold tnum" style={{ color: "var(--text-muted)" }}>
+                  {Math.round(anteil * 100)} %
+                </span>
+              </div>
               <div
-                className="h-1.5 flex-1 overflow-hidden rounded-full"
+                className="mt-1.5 h-1.5 overflow-hidden rounded-full"
                 style={{ background: "var(--surface-2)" }}
               >
                 <div
@@ -143,9 +151,6 @@ export function Fortschritt() {
                   style={{ width: `${anteil * 100}%`, background: "var(--accent)" }}
                 />
               </div>
-              <span className="w-14 text-right text-xs tabular-nums" style={{ color: "var(--text-muted)" }}>
-                {fertig} / {ids.length}
-              </span>
             </Link>
           );
         })}
@@ -195,13 +200,13 @@ export function Fortschritt() {
   );
 }
 
-function Kachel({ label, wert, zusatz }: { label: string; wert: string; zusatz: string }) {
+function Kachel({ label, wert, zusatz, farbe = "var(--accent)" }: { label: string; wert: string; zusatz: string; farbe?: string }) {
   return (
     <div
       className="rounded-xl border p-3 text-center"
       style={{ borderColor: "var(--border)", background: "var(--surface)" }}
     >
-      <div className="text-xl font-medium tabular-nums" style={{ color: "var(--accent)" }}>
+      <div className="text-xl font-medium tabular-nums" style={{ color: farbe }}>
         {wert}
       </div>
       <div className="mt-0.5 text-xs" style={{ color: "var(--text)" }}>

@@ -117,34 +117,53 @@ export function PruefungRunner() {
   if (!lauf) {
     return (
       <div>
-        <h1 className="text-xl font-medium">Prüfungssimulation</h1>
+        <h1 className="text-[26px] font-semibold tracking-tight">Prüfungssimulation</h1>
         <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
           Auf Zeit, ohne Zwischenlösungen — die Auswertung kommt am Ende. Gezogen
           werden nur automatisch bewertbare Aufgaben; Zeichnen und Fachbegriffe
           übst du im Lernbereich.
         </p>
-        <div className="mt-6 flex flex-col gap-3">
+        <div className="mt-6 flex flex-col gap-4">
           {teile.map((t) => {
             const verfuegbar = poolFuer(t).length;
             const anzahl = Math.min(t.anzahl, verfuegbar);
+            const badge = t.id === "teil1" ? "Wichtig" : t.id === "wiso" ? "Optional" : "Standard";
             return (
-              <button
+              <div
                 key={t.id}
-                onClick={() => starte(t, Date.now())}
-                disabled={verfuegbar === 0}
-                className="rounded-xl border p-4 text-left disabled:opacity-40"
-                style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+                className="rounded-[var(--r-lg)] border p-5"
+                style={{ borderColor: "var(--border)", background: "var(--surface)", boxShadow: "var(--shadow-sm)" }}
               >
-                <div className="font-medium" style={{ color: "var(--text)" }}>
-                  {t.titel}
+                <div className="flex items-start justify-between gap-3">
+                  <h2 className="text-[17px] font-semibold" style={{ color: "var(--text)" }}>
+                    {t.titel}
+                  </h2>
+                  <span
+                    className="flex-shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider"
+                    style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+                  >
+                    {badge}
+                  </span>
                 </div>
-                <div className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
+                <div className="mt-2 flex items-center gap-1.5 text-sm font-medium" style={{ color: "var(--accent)" }}>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 7v5l3 2" />
+                  </svg>
+                  <span className="tnum">{anzahl} Aufgaben · {t.minuten} Minuten</span>
+                </div>
+                <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
                   {t.beschreibung}
-                </div>
-                <div className="mt-2 text-xs" style={{ color: "var(--accent)" }}>
-                  {anzahl} Aufgaben · {t.minuten} Minuten
-                </div>
-              </button>
+                </p>
+                <button
+                  onClick={() => starte(t, Date.now())}
+                  disabled={verfuegbar === 0}
+                  className="mt-4 w-full rounded-[var(--r-md)] py-3 text-sm font-semibold uppercase tracking-wide transition-transform active:scale-[0.99] disabled:opacity-40"
+                  style={{ background: "var(--accent)", color: "var(--accent-text)" }}
+                >
+                  Simulation starten
+                </button>
+              </div>
             );
           })}
         </div>

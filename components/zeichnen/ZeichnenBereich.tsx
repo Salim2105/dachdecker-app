@@ -72,10 +72,9 @@ export function ZeichnenBereich() {
 
   return (
     <div>
-      <h1 className="text-xl font-medium">Zeichnen</h1>
-      <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>
-        Aufgabe lesen, auf Papier oder iPad zeichnen, Musterlösung aufdecken, selbst bewerten.
-        Alle {alle.length} Zeichenaufgaben an einem Ort.
+      <h1 className="text-[26px] font-semibold tracking-tight">Zeichnen</h1>
+      <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
+        Freihandzeichnungen und geometrische Konstruktionen für Dach &amp; Wand üben.
       </p>
 
       <div className="mt-4 flex flex-col gap-2">
@@ -97,42 +96,49 @@ export function ZeichnenBereich() {
         )}
       </div>
 
-      <h2 className="mt-8 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
+      <h2
+        className="mt-8 text-[11px] font-semibold uppercase tracking-[0.14em]"
+        style={{ color: "var(--text-faint)" }}
+      >
         Einzeln auswählen
       </h2>
-      <div className="mt-2 flex flex-col gap-2">
+      <div className="mt-3 flex flex-col gap-2.5">
         {gruppen.map((g) => {
           const lf = getLernfeld(g.lernfeld);
           return g.aufgaben.map((a) => {
             const status = fortschritt[a.id]?.bewertung;
+            const pille =
+              status === "richtig"
+                ? { text: "sitzt", farbe: "var(--ok)" }
+                : status === "teilweise"
+                  ? { text: "fast", farbe: "var(--accent)" }
+                  : status === "falsch"
+                    ? { text: "nochmal", farbe: "var(--bad)" }
+                    : null;
             return (
               <button
                 key={a.id}
                 onClick={() => starte([a])}
-                className="rounded-xl border p-3 text-left"
-                style={{ borderColor: "var(--border)", background: "var(--surface)" }}
+                className="rounded-[var(--r-lg)] border p-4 text-left transition-transform active:scale-[0.99]"
+                style={{ borderColor: "var(--border)", background: "var(--surface)", boxShadow: "var(--shadow-sm)" }}
               >
                 <div className="flex items-center justify-between gap-3">
-                  <span className="text-xs" style={{ color: "var(--text-muted)" }}>
+                  <span
+                    className="text-[11px] font-semibold uppercase tracking-[0.1em]"
+                    style={{ color: "var(--text-faint)" }}
+                  >
                     {lf ? (/^\d/.test(lf.nr) ? `LF ${lf.nr}` : lf.nr) : g.lernfeld} · {a.thema}
                   </span>
-                  {status && (
+                  {pille && (
                     <span
-                      className="flex-shrink-0 text-xs"
-                      style={{
-                        color:
-                          status === "richtig"
-                            ? "var(--ok)"
-                            : status === "teilweise"
-                              ? "var(--accent)"
-                              : "var(--bad)",
-                      }}
+                      className="flex-shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold"
+                      style={{ background: `color-mix(in srgb, ${pille.farbe} 18%, transparent)`, color: pille.farbe }}
                     >
-                      {status === "richtig" ? "sitzt" : status === "teilweise" ? "fast" : "nochmal"}
+                      {pille.text}
                     </span>
                   )}
                 </div>
-                <div className="mt-1 text-sm" style={{ color: "var(--text)" }}>
+                <div className="mt-1.5 text-sm font-semibold" style={{ color: "var(--text)" }}>
                   {a.aufgabentext.split(/(?<=\.)\s/)[0]}
                 </div>
               </button>

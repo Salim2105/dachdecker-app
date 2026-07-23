@@ -73,7 +73,7 @@ export default function Home() {
       {/* Titel */}
       <div>
         <h1 className="text-[26px] font-semibold leading-tight tracking-tight">
-          Bereit für die Gesellenprüfung
+          Bereit für die Gesellenprüfung?
         </h1>
         <p className="mt-1.5 text-[15px]" style={{ color: "var(--text-muted)" }}>
           Übe alle Lernfelder — vom Material bis zum Bau.
@@ -94,32 +94,47 @@ export default function Home() {
           style={{ background: "var(--accent-soft)", filter: "blur(8px)" }}
         />
         {tageBis !== null ? (
-          <div className="relative flex items-end justify-between">
-            <div>
+          <div className="relative flex items-center gap-3.5">
+            <span
+              className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-[var(--r-md)]"
+              style={{ background: "var(--accent-soft)" }}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="4.5" width="18" height="16" rx="2.5" />
+                <path d="M3 9h18M8 2.5v4M16 2.5v4" />
+                <circle cx="16" cy="14.5" r="2.4" />
+              </svg>
+            </span>
+            <div className="min-w-0 flex-1">
               <div
-                className="text-[11px] font-medium uppercase tracking-[0.14em]"
-                style={{ color: "var(--text-muted)" }}
+                className="text-[11px] font-semibold uppercase tracking-[0.14em]"
+                style={{ color: "var(--text-faint)" }}
               >
-                {tageBis >= 0 ? "bis zur Gesellenprüfung" : "Prüfungstermin"}
+                Gesellenprüfung Termin
               </div>
-              <div className="mt-1 flex items-baseline gap-2">
-                <span
-                  className="tnum text-[46px] font-semibold leading-none tracking-tight"
-                  style={{ color: "var(--accent)" }}
-                >
-                  {tageBis >= 0 ? tageBis : "—"}
-                </span>
-                <span className="text-lg font-medium" style={{ color: "var(--text)" }}>
-                  {tageBis >= 0 ? (tageBis === 1 ? "Tag" : "Tage") : "vorbei"}
-                </span>
+              <div className="mt-0.5 text-[17px] font-semibold leading-snug" style={{ color: "var(--text)" }}>
+                {new Date(datum + "T00:00:00").toLocaleDateString("de-DE", {
+                  weekday: "long",
+                  day: "numeric",
+                  month: "long",
+                  year: "numeric",
+                })}
               </div>
+              {tageBis >= 0 && (
+                <div className="mt-0.5 text-xs" style={{ color: "var(--accent)" }}>
+                  <span className="tnum font-semibold">noch {tageBis}</span> {tageBis === 1 ? "Tag" : "Tage"}
+                </div>
+              )}
             </div>
             <button
               onClick={() => datumStore.set("")}
-              className="rounded-full border px-3 py-1.5 text-xs font-medium transition-colors"
+              aria-label="Termin ändern"
+              className="flex h-8 w-8 flex-shrink-0 items-center justify-center self-start rounded-full border transition-colors"
               style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
             >
-              ändern
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z" />
+              </svg>
             </button>
           </div>
         ) : (
@@ -179,6 +194,12 @@ export default function Home() {
           </svg>
         </Link>
 
+        <div
+          className="mt-2 text-[11px] font-semibold uppercase tracking-[0.14em]"
+          style={{ color: "var(--text-faint)" }}
+        >
+          Schnellzugriff
+        </div>
         <div className="grid grid-cols-3 gap-3">
           {[
             { href: "/lernen", label: "Lernfelder", icon: "M4 5h16v14H4zM4 9h16M9 5v14" },
