@@ -5,6 +5,7 @@ import type { Aufgabe, Bewertung } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
 import { letztesLfStore } from "@/lib/appStores";
+import { leereCalcCache } from "@/lib/calc";
 
 // Gespeicherten Übungsstand laden (z. B. nach Abstecher zum Rechner).
 function ladeStand(key: string, total: number): { index: number; ergebnisse: Bewertung[]; beantwortet: boolean } {
@@ -35,11 +36,18 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
     letztesLfStore.set(lfId);
   }, [lfId]);
 
-  // Stand sichern; bei Abschluss aufräumen.
+  // Neue Frage → oben anfangen, sonst landet man mitten in der nächsten Aufgabe.
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [index]);
+
+  // Stand sichern; bei Abschluss aufräumen (inkl. gemerkter Rechen-Zufallszahlen).
   useEffect(() => {
     try {
-      if (fertig) localStorage.removeItem(KEY);
-      else localStorage.setItem(KEY, JSON.stringify({ index, ergebnisse, beantwortet }));
+      if (fertig) {
+        localStorage.removeItem(KEY);
+        leereCalcCache();
+      } else localStorage.setItem(KEY, JSON.stringify({ index, ergebnisse, beantwortet }));
     } catch {}
   }, [KEY, index, ergebnisse, beantwortet, fertig]);
 
@@ -78,6 +86,7 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
         <div className="mt-8 flex flex-col gap-2">
           <button
             onClick={() => {
+              leereCalcCache();
               setIndex(0);
               setBeantwortet(false);
               setErgebnisse([]);

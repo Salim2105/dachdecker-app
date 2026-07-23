@@ -5,6 +5,7 @@ import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { Wiederholung } from "@/components/session/Wiederholung";
 import { useProgress } from "@/components/useProgress";
 import { getLernfeld } from "@/lib/content";
+import { leereCalcCache } from "@/lib/calc";
 import {
   getPruefungsteile,
   poolFuer,
@@ -43,8 +44,14 @@ export function PruefungRunner() {
     return () => clearInterval(id);
   }, [lauf, abgegeben]);
 
+  // Neue Frage → nach oben scrollen.
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [index, lauf]);
+
   // jetztMs kommt aus dem Event-Handler, damit im Render keine Zeit gelesen wird.
   const starte = (teil: Pruefungsteil, jetztMs: number) => {
+    leereCalcCache(); // frische Zahlen für jede Prüfung
     const gezogen = zieheAufgaben(poolFuer(teil), teil.anzahl);
     setLauf({ teil, aufgaben: gezogen, endeAm: jetztMs + teil.minuten * 60_000 });
     setIndex(0);

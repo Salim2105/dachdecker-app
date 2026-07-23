@@ -47,6 +47,16 @@ export function pruefeAntwort(eingabe: number, loesung: number, toleranzProzent:
   return Math.abs(eingabe - loesung) <= toleranz + 1e-9;
 }
 
+// Gemerkte Zufallszahlen aller Rechenaufgaben verwerfen, damit ein neuer
+// Durchgang (Nochmal üben / neue Prüfung) frische Zahlen zieht.
+export function leereCalcCache(): void {
+  if (typeof window === "undefined") return;
+  try {
+    for (const k of Object.keys(sessionStorage))
+      if (k.startsWith("dd-calc-")) sessionStorage.removeItem(k);
+  } catch {}
+}
+
 // Kleiner Taschenrechner für die Nebenrechnung: wertet einen Ausdruck aus,
 // gibt null bei leer/ungültig. Nutzt mathjs (schon als Abhängigkeit da).
 export function rechne(ausdruck: string): number | null {

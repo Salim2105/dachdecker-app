@@ -52,6 +52,9 @@ export function ClozeCard({
               onChange={(e) =>
                 setEingaben((prev) => ({ ...prev, [t.index]: e.target.value }))
               }
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !geprueft) pruefen();
+              }}
               disabled={geprueft}
               aria-label={`Lücke ${t.index + 1}`}
               className="mx-1 w-32 rounded-md border px-2 py-1 text-sm"

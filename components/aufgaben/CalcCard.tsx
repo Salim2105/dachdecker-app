@@ -62,6 +62,9 @@ export function CalcCard({
           inputMode="decimal"
           value={eingabe}
           onChange={(e) => setEingabe(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !geprueft && eingabe.trim() !== "") pruefen();
+          }}
           disabled={geprueft}
           placeholder="Ergebnis"
           aria-label="Ergebnis"
