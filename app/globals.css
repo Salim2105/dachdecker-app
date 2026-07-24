@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Design System — "Anthrazit & Orange" (Farben nach den Design-Vorlagen)
+   Design System — "Anthrazit & Gold"
    Dunkel: fast schwarzer, neutraler Grund; Karten heben sich sanft ab.
-   Hell: warmes Creme mit weißen Karten. Akzent in BEIDEN Modi orange.
+   Hell: warmes Creme mit weißen Karten. Akzent in BEIDEN Modi Gold
+   (dunkel: helles Champagner-Gold, hell: tiefes Gold für Kontrast auf Weiß).
 --------------------------------------------------------------------------- */
 :root,
 :root[data-theme="dark"] {
@@ -22,11 +23,11 @@
   --border: #2b2d31;
   --border-soft: #212326;
 
-  /* Orange-Akzent */
-  --accent: #d9955e;
-  --accent-strong: #e8a76f;
+  /* Gold-Akzent */
+  --accent: #d9b061;
+  --accent-strong: #e9c47c;
   --accent-text: #14150f;
-  --accent-soft: rgba(217, 149, 94, 0.15);
+  --accent-soft: rgba(217, 176, 97, 0.15);
 
   /* Status */
   --ok: #5dcaa5;
@@ -38,7 +39,7 @@
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-md: 0 6px 20px -8px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 18px 48px -18px rgba(0, 0, 0, 0.75);
-  --ring: rgba(217, 149, 94, 0.4);
+  --ring: rgba(217, 176, 97, 0.4);
 }
 
 :root[data-theme="light"] {
@@ -54,10 +55,10 @@
   --border: #e6e1d8;
   --border-soft: #efeae1;
 
-  --accent: #c4721f;
-  --accent-strong: #ab6116;
+  --accent: #a87d18;
+  --accent-strong: #8d6813;
   --accent-text: #ffffff;
-  --accent-soft: rgba(196, 114, 31, 0.12);
+  --accent-soft: rgba(168, 125, 24, 0.12);
 
   --ok: #1d9e75;
   --ok-soft: rgba(29, 158, 117, 0.12);
@@ -67,7 +68,7 @@
   --shadow-sm: 0 1px 2px rgba(60, 50, 38, 0.06);
   --shadow-md: 0 8px 24px -12px rgba(60, 50, 38, 0.18);
   --shadow-lg: 0 20px 50px -20px rgba(60, 50, 38, 0.22);
-  --ring: rgba(196, 114, 31, 0.35);
+  --ring: rgba(168, 125, 24, 0.35);
 }
 
 /* Radius-Skala — bewusst großzügig, aber ruhig */
