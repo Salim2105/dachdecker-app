@@ -1,32 +1,32 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Design System — "Schiefer & Kupfer", Premium
-   Farben verfeinert, saubere Elevation (Karten heben sich vom Grund ab),
-   Radius-/Schatten-/Typo-Skala für einen ruhigen, seriösen Look.
+   Design System — "Anthrazit & Orange" (Farben nach den Design-Vorlagen)
+   Dunkel: fast schwarzer, neutraler Grund; Karten heben sich sanft ab.
+   Hell: warmes Creme mit weißen Karten. Akzent in BEIDEN Modi orange.
 --------------------------------------------------------------------------- */
 :root,
 :root[data-theme="dark"] {
   /* Grund & Flächen — Elevation steigt mit der Helligkeit */
-  --bg: #191b1f;
-  --surface: #212429;
-  --surface-2: #2a2e34;
-  --surface-3: #34383f;
+  --bg: #0f1011;
+  --surface: #1a1b1e;
+  --surface-2: #232427;
+  --surface-3: #2d2f33;
 
   /* Text */
-  --text: #ece7df;
-  --text-muted: #9b958a;
-  --text-faint: #6d6a63;
+  --text: #f0ede9;
+  --text-muted: #9a9691;
+  --text-faint: #6b6864;
 
   /* Linien */
-  --border: #32363d;
-  --border-soft: #292d33;
+  --border: #2b2d31;
+  --border-soft: #212326;
 
-  /* Kupfer-Akzent */
-  --accent: #cd8551;
-  --accent-strong: #dc9463;
-  --accent-text: #191b1f;
-  --accent-soft: rgba(205, 133, 81, 0.14);
+  /* Orange-Akzent */
+  --accent: #d9955e;
+  --accent-strong: #e8a76f;
+  --accent-text: #14150f;
+  --accent-soft: rgba(217, 149, 94, 0.15);
 
   /* Status */
   --ok: #5dcaa5;
@@ -35,29 +35,29 @@
   --bad-soft: rgba(226, 114, 111, 0.14);
 
   /* Tiefe */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 6px 20px -8px rgba(0, 0, 0, 0.55);
-  --shadow-lg: 0 18px 48px -18px rgba(0, 0, 0, 0.7);
-  --ring: rgba(205, 133, 81, 0.4);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 20px -8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 18px 48px -18px rgba(0, 0, 0, 0.75);
+  --ring: rgba(217, 149, 94, 0.4);
 }
 
 :root[data-theme="light"] {
-  --bg: #f6f3ec;
+  --bg: #f8f6f3;
   --surface: #ffffff;
-  --surface-2: #f1ece2;
-  --surface-3: #e8e1d4;
+  --surface-2: #f2efe9;
+  --surface-3: #e9e5dd;
 
-  --text: #26221d;
+  --text: #23201c;
   --text-muted: #6a635a;
   --text-faint: #9a9285;
 
-  --border: #e5ddd0;
-  --border-soft: #eee7db;
+  --border: #e6e1d8;
+  --border-soft: #efeae1;
 
-  --accent: #b8442c;
-  --accent-strong: #a13a24;
+  --accent: #c4721f;
+  --accent-strong: #ab6116;
   --accent-text: #ffffff;
-  --accent-soft: rgba(184, 68, 44, 0.1);
+  --accent-soft: rgba(196, 114, 31, 0.12);
 
   --ok: #1d9e75;
   --ok-soft: rgba(29, 158, 117, 0.12);
@@ -67,7 +67,7 @@
   --shadow-sm: 0 1px 2px rgba(60, 50, 38, 0.06);
   --shadow-md: 0 8px 24px -12px rgba(60, 50, 38, 0.18);
   --shadow-lg: 0 20px 50px -20px rgba(60, 50, 38, 0.22);
-  --ring: rgba(184, 68, 44, 0.35);
+  --ring: rgba(196, 114, 31, 0.35);
 }
 
 /* Radius-Skala — bewusst großzügig, aber ruhig */
