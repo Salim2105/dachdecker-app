@@ -44,7 +44,8 @@ function dateiFuer(pfad) {
     ? [path.join(basis, "index.html")]
     : [basis, basis + ".html", path.join(basis, "index.html")];
   for (const k of kandidaten) {
-    if (k.startsWith(OUT_DIR) && fs.existsSync(k) && fs.statSync(k).isFile()) return k;
+    // OUT_DIR + Trenner: sonst würde ein Nachbarordner "out…" durchrutschen.
+    if (k.startsWith(OUT_DIR + path.sep) && fs.existsSync(k) && fs.statSync(k).isFile()) return k;
   }
   return null;
 }
@@ -82,14 +83,24 @@ async function erstelleFenster() {
     minWidth: 360,
     minHeight: 560,
     title: "Dachdecker",
-    backgroundColor: "#191b1f",
+    backgroundColor: "#0f1011",
     webPreferences: { contextIsolation: true, nodeIntegration: false },
   });
-  // Links auf externe Seiten (Referenzen) im normalen Browser öffnen.
+
+  const EIGEN = `http://127.0.0.1:${port}/`;
+
+  // Links auf externe Seiten (Referenzen) im normalen Browser öffnen — aber nur
+  // http/https. Andere Schemata (file:, smb:, custom) gehen NICHT an das
+  // Betriebssystem weiter.
   fenster.webContents.setWindowOpenHandler(({ url }) => {
-    if (url.startsWith("http://127.0.0.1")) return { action: "allow" };
-    shell.openExternal(url);
+    if (url.startsWith(EIGEN)) return { action: "allow" };
+    if (/^https:\/\//i.test(url)) shell.openExternal(url);
     return { action: "deny" };
+  });
+
+  // Das Fenster selbst bleibt immer auf der lokalen App — kein Wegnavigieren.
+  fenster.webContents.on("will-navigate", (e, url) => {
+    if (!url.startsWith(EIGEN)) e.preventDefault();
   });
   fenster.loadURL(`http://127.0.0.1:${port}/`);
 }
