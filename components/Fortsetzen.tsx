@@ -35,8 +35,8 @@ export function Fortsetzen() {
     >
       <span className="min-w-0">
         <span className="block truncate">Übung fortsetzen</span>
-        <span className="block truncate text-xs font-medium opacity-80">
-          {feld.titel} · Frage {index + 1} von {total}
+        <span className="block text-xs font-medium leading-snug opacity-80">
+          Frage {index + 1} von {total} · {feld.titel}
         </span>
       </span>
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="shrink-0">

@@ -34,9 +34,9 @@ function Ring({ prozent }: { prozent: number }) {
         textAnchor="middle"
         dominantBaseline="central"
         className="tnum"
-        style={{ fontSize: "17px", fontWeight: 600, fill: "var(--text)" }}
+        style={{ fontSize: prozent >= 100 ? "14px" : "16px", fontWeight: 600, fill: "var(--text)" }}
       >
-        {prozent}
+        {prozent}%
       </text>
     </svg>
   );
