@@ -3,436 +3,749 @@
     "id": "lf01-001",
     "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Gewerke am Bau",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Beruf & Organisation",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 8",
     "konfidenz": "hoch",
-    "frage": "Wer überwacht auf einer Baustelle die Einhaltung der baurechtlichen Vorschriften?",
+    "frage": "Wie lange dauert die Ausbildung zur Dachdeckerin/zum Dachdecker und wie ist sie aufgebaut?",
     "optionen": [
-      "Der Bauherr",
-      "Die Bauaufsicht",
-      "Das Planungsbüro",
-      "Die Baufirma"
+      "2 Jahre, rein schulisch",
+      "3 Jahre, dual (Betrieb und Berufsschule)",
+      "3,5 Jahre, rein betrieblich",
+      "4 Jahre, dual"
     ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Die Bauaufsicht (Bauaufsichtsbehörde) kontrolliert die Einhaltung der öffentlich-rechtlichen Vorschriften. Der Bauherr ist Auftraggeber, das Planungsbüro plant, die Baufirma führt aus."
+    "korrekt": [1],
+    "erklaerung": "Die Ausbildung dauert drei Jahre und erfolgt dual: theoretische Kenntnisse in der Berufsschule, praktische Fertigkeiten im Betrieb, ergänzt durch überbetriebliche Ausbildungsstätten."
   },
   {
     "id": "lf01-002",
-    "typ": "cloze",
+    "erklaerung": "Die VOB (Vergabe- und Vertragsordnung für Bauleistungen) regelt, wie Bauleistungen vergeben, vertraglich vereinbart und abgerechnet werden.",
+    "typ": "fachbegriff",
     "lernfeld": "lf01",
-    "thema": "Baustelleneinrichtungsplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Bauplanung & Vergabe",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 12",
     "konfidenz": "hoch",
-    "text": "Ein Baustelleneinrichtungsplan wird mit genormten {{Sinnbildern}} gezeichnet und in einem festgelegten {{Maßstab}} dargestellt.",
-    "akzeptiert": {
-      "Sinnbildern": [
-        "Symbolen",
-        "Sinnbilder"
-      ],
-      "Maßstab": [
-        "Massstab"
-      ]
-    },
-    "erklaerung": "Sinnbilder stehen für Lagerflächen, Kran, Container usw.; der Maßstab (z. B. 1:100) macht den Plan maßhaltig lesbar."
+    "begriff": "VOB",
+    "definition": "Vergabe- und Vertragsordnung für Bauleistungen. Sie regelt die Abrechnung: Der Unternehmer muss Art und Umfang seiner Leistung prüfbar nachweisen (Massenberechnungen, Zeichnungen).",
+    "bestandteile": ["Vergabe", "und", "Vertrags", "ordnung"]
   },
   {
     "id": "lf01-003",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Flächenberechnung Baustelleneinrichtung",
-    "quelle": "Grundrechnung Flächen; Kontext KMK-Rahmenlehrplan LF 1",
+    "thema": "Baustelleneinrichtung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 13",
     "konfidenz": "hoch",
-    "aufgabentext": "Für eine Baustelle wird eine rechteckige Lagerfläche von {laenge} m Länge und {breite} m Breite abgesperrt. Wie groß ist die abgesperrte Fläche?",
-    "parameter": [
-      {
-        "name": "laenge",
-        "label": "Länge",
-        "einheit": "m",
-        "min": 6,
-        "max": 20,
-        "schritt": 0.5
-      },
-      {
-        "name": "breite",
-        "label": "Breite",
-        "einheit": "m",
-        "min": 3,
-        "max": 10,
-        "schritt": 0.5
-      }
+    "frage": "Was muss beim Kranbetrieb im Schwenkbereich des Krans liegen?",
+    "optionen": [
+      "Die Unterkünfte der Arbeiter",
+      "Das Bauwerk und das Lager schwerer Baustoffe",
+      "Der Oberboden",
+      "Der Zimmerplatz"
     ],
-    "schritte": [
-      {
-        "beschreibung": "Fläche eines Rechtecks: Länge mal Breite ({laenge} m · {breite} m)",
-        "formel": "laenge * breite",
-        "ergebnisName": "flaeche",
-        "einheit": "m²"
-      }
-    ],
-    "toleranzProzent": 1,
-    "erklaerung": "Die Fläche eines Rechtecks ist Länge mal Breite. Achte auf die Einheit: Meter mal Meter ergibt Quadratmeter (m²)."
+    "korrekt": [1],
+    "erklaerung": "Im Schwenkbereich müssen das Bauwerk, das Lager für schwere Baustoffe (Stahl, Steine, Fertigteile) und ein Teil der Zufahrt als Ladezone liegen. Unterkünfte, Zimmerplatz und Oberboden gehören außerhalb des Schwenkbereichs."
   },
   {
     "id": "lf01-004",
-    "typ": "mc",
+    "typ": "calc",
     "lernfeld": "lf01",
-    "thema": "Unfallverhütung",
-    "quelle": "BG BAU / DGUV — STOP-Prinzip",
+    "thema": "Vermessung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 18",
     "konfidenz": "hoch",
-    "frage": "Welche Maßnahme hat nach dem STOP-Prinzip den höchsten Rang?",
-    "optionen": [
-      "Persönliche Schutzausrüstung (PSA)",
-      "Organisatorische Maßnahmen",
-      "Technische Schutzmaßnahmen",
-      "Substitution der Gefahr"
+    "aufgabentext": "Ein Bauwinkel wird im Verhältnis 3 : 4 : 5 abgesteckt, um einen rechten Winkel zu erhalten. Die kurze Seite ist {faktor}·3 m, die zweite Seite {faktor}·4 m lang. Wie lang muss die Hypotenuse (dritte Seite) sein?",
+    "parameter": [
+      { "name": "faktor", "label": "Faktor", "einheit": "", "min": 1, "max": 3, "schritt": 0.5 }
     ],
-    "korrekt": [
-      3
+    "schritte": [
+      { "beschreibung": "Satz des Pythagoras: aus den Katheten 3·{faktor} m und 4·{faktor} m folgt die Hypotenuse", "formel": "sqrt((3*faktor)^2 + (4*faktor)^2)", "ergebnisName": "hypotenuse", "einheit": "m" }
     ],
-    "erklaerung": "Das STOP-Prinzip ordnet Schutzmaßnahmen nach Wirksamkeit: Substitution (Gefahr vermeiden) vor Technischen, dann Organisatorischen, zuletzt Persönlichen Schutzmaßnahmen. PSA ist die letzte Stufe."
+    "toleranzProzent": 1,
+    "erklaerung": "Das Verhältnis 3 : 4 : 5 ergibt immer einen rechten Winkel, weil 3² + 4² = 5² (9 + 16 = 25). Die Hypotenuse ist stets das 5-fache des Faktors."
   },
   {
     "id": "lf01-005",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Unfallverhütung",
-    "quelle": "BG BAU / DGUV — STOP-Prinzip",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 20",
     "konfidenz": "hoch",
-    "text": "Nach dem STOP-Prinzip steht die persönliche Schutzausrüstung an {{letzter}} Stelle — sie wird erst eingesetzt, wenn {{technische}} und organisatorische Maßnahmen nicht ausreichen.",
-    "akzeptiert": {
-      "letzter": [
-        "vierter",
-        "4."
-      ],
-      "technische": [
-        "technischen"
-      ]
-    },
-    "erklaerung": "PSA (z. B. Auffanggurt gegen Absturz) ist die schwächste, weil vom Menschen abhängige Schutzmaßnahme — deshalb steht sie im STOP-Prinzip zuletzt."
+    "frage": "Mit welcher Linienart werden verdeckte Kanten und Umrisse von Bauteilen gezeichnet?",
+    "optionen": [
+      "Schmale Volllinie",
+      "Breite Strichlinie",
+      "Schmale Strichpunktlinie",
+      "Schmale Punktlinie"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Verdeckte Kanten und Umrisse werden nach DIN ISO 128-23 mit einer breiten Strichlinie gezeichnet. Die schmale Strichpunktlinie ist für Mittel- und Symmetrielinien reserviert."
   },
   {
     "id": "lf01-006",
-    "typ": "diagram",
+    "typ": "calc",
     "lernfeld": "lf01",
-    "thema": "Baustelleneinrichtungsplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 29",
     "konfidenz": "hoch",
-    "frage": "Ordne die Elemente des Baustelleneinrichtungsplans den markierten Stellen zu.",
-    "svg": "<svg viewBox='0 0 380 194' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Baustelleneinrichtungsplan mit Kran, Lager, Bauwagen, Zufahrt'><rect x='18' y='16' width='344' height='150' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='5 4'/><rect x='150' y='52' width='96' height='62' fill='none' stroke='currentColor' stroke-width='1.8'/><circle cx='300' cy='60' r='10' fill='none' stroke='#c07d4a' stroke-width='1.8'/><line x1='300' y1='50' x2='300' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='290' y1='60' x2='310' y2='60' stroke='#c07d4a' stroke-width='1.4'/><rect x='44' y='40' width='60' height='26' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='44' y='96' width='60' height='34' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='50' y1='106' x2='98' y2='106' stroke='currentColor' stroke-width='0.7'/><line x1='50' y1='114' x2='98' y2='114' stroke='currentColor' stroke-width='0.7'/><line x1='50' y1='122' x2='98' y2='122' stroke='currentColor' stroke-width='0.7'/><path d='M300 118 L340 118 L340 152' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='300' cy='92' r='11' fill='#c07d4a'/><text x='300' y='96.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='74' cy='113' r='11' fill='#c07d4a'/><text x='74' y='117.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='74' cy='53' r='11' fill='#c07d4a'/><text x='74' y='57.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><circle cx='340' cy='100' r='11' fill='#c07d4a'/><text x='340' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
-    "zuordnung": {
-      "kran": "Kran",
-      "lager": "Materiallager",
-      "bauwagen": "Bauwagen",
-      "zufahrt": "Zufahrt"
-    },
-    "erklaerung": "Der Kran (1) steht so, dass sein Schwenkbereich Rohbau und Lager erreicht. Das Materiallager (2) liegt im Kranbereich für kurze Wege. Der Bauwagen (3) steht am Rand, die Zufahrt (4) führt von der Straße auf die Baustelle."
+    "aufgabentext": "In einem Dreieck sind zwei Innenwinkel bekannt: α = {alpha}° und β = {beta}°. Wie groß ist der dritte Winkel γ?",
+    "parameter": [
+      { "name": "alpha", "label": "Winkel α", "einheit": "°", "min": 30, "max": 80, "schritt": 5 },
+      { "name": "beta", "label": "Winkel β", "einheit": "°", "min": 30, "max": 80, "schritt": 5 }
+    ],
+    "schritte": [
+      { "beschreibung": "Die Summe der Innenwinkel im Dreieck beträgt 180°: γ = 180° − α − β", "formel": "180 - alpha - beta", "ergebnisName": "gamma", "einheit": "°" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Innenwinkelsumme im Dreieck ist immer 180°. Also gilt γ = 180° − α − β."
   },
   {
     "id": "lf01-007",
-    "typ": "draw",
+    "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Baustelleneinrichtungsplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Bauplanung & Vergabe",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 11",
     "konfidenz": "hoch",
-    "aufgabentext": "Skizziere einen einfachen Baustelleneinrichtungsplan für den abgebildeten Rohbau. Zeichne Kran, Materiallager, Bauwagen und die Zufahrt sinnvoll ein.",
-    "vorgabeSvg": "<svg viewBox='0 0 380 194' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Rohbau auf dem Grundstück (Vorgabe)'><rect x='18' y='16' width='344' height='150' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='5 4'/><rect x='150' y='60' width='96' height='54' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='160' y='90' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Rohbau</text></svg>",
-    "loesungSvg": "<svg viewBox='0 0 380 223' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Musterlösung Baustelleneinrichtungsplan'><rect x='18' y='16' width='344' height='150' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='5 4'/><rect x='150' y='60' width='96' height='54' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='160' y='90' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Rohbau</text><circle cx='300' cy='56' r='10' fill='none' stroke='#c07d4a' stroke-width='1.8'/><line x1='300' y1='46' x2='300' y2='66' stroke='#c07d4a' stroke-width='1.4'/><line x1='290' y1='56' x2='310' y2='56' stroke='#c07d4a' stroke-width='1.4'/><text x='286' y='90' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Kran</text><rect x='44' y='40' width='56' height='24' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='50' y='56' fill='currentColor' font-size='10' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Lager</text><rect x='44' y='100' width='56' height='24' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='48' y='115' fill='currentColor' font-size='9' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Bauwagen</text><path d='M300 118 L340 118 L340 152' fill='none' stroke='#c07d4a' stroke-width='1.4'/><text x='296' y='140' fill='#c07d4a' font-size='9' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Zufahrt</text><text x='18' y='195' fill='#c07d4a' font-size='12'>Kurze Wege: Lager im Schwenkbereich des Krans.</text></svg>",
-    "schritte": [
-      "Kran zentral platzieren, damit sein Schwenkbereich (gestrichelter Kreis) Rohbau und Lager erreicht.",
-      "Materiallager in den Schwenkbereich des Krans legen — so muss Material nicht umgesetzt werden (kurze Wege).",
-      "Zufahrt von der Straße einzeichnen, befahrbar für Lieferfahrzeuge, ohne den Kranbereich zu blockieren.",
-      "Bauwagen (Baubude) an den Rand stellen, möglichst mit Blick auf die Zufahrt."
+    "frage": "Welches Dokument gehört NICHT zum Bauantrag?",
+    "optionen": [
+      "Lageplan (1:500 oder 1:1000)",
+      "Entwurfszeichnungen (1:100)",
+      "Baubeschreibung",
+      "Angebot des billigsten Bauunternehmers"
     ],
-    "erklaerung": "Entscheidend ist, dass der Kran mit seinem Schwenkbereich Rohbau und Lager erreicht und die Zufahrt frei bleibt. Das ergibt kurze Wege, spart Zeit und erhöht die Sicherheit. Es gibt nicht die eine richtige Lösung — wichtig sind die Prinzipien."
+    "korrekt": [3],
+    "erklaerung": "Der Bauantrag besteht aus Lageplan, Entwurfszeichnungen, Baubeschreibung, Berechnungen (GRZ, GFZ), technischen Nachweisen und dem Entwässerungsgesuch. Angebote der Unternehmer gehören zur Vergabe, nicht zum Bauantrag."
   },
   {
     "id": "lf01-008",
+    "erklaerung": "Der ZVDH ist die bundesweite Dachverbands-Organisation des Dachdeckerhandwerks über den 16 Landesinnungsverbänden.",
     "typ": "fachbegriff",
     "lernfeld": "lf01",
-    "thema": "Baustelleneinrichtungsplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Beruf & Organisation",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 9",
     "konfidenz": "hoch",
-    "begriff": "Baustelleneinrichtungsplan",
-    "definition": "Ein maßstäblicher Plan, der vor Baubeginn festlegt, wo Kran, Materiallager, Bauwagen, Zufahrten sowie Strom- und Wasseranschluss stehen. Er sorgt für kurze Wege und einen sicheren, rationellen Ablauf.",
-    "bestandteile": [
-      "Baustellen",
-      "einrichtungs",
-      "plan"
-    ],
-    "erklaerung": "Merke die drei Wortteile: Baustellen-einrichtungs-plan."
+    "begriff": "ZVDH",
+    "definition": "Zentralverband des Deutschen Dachdeckerhandwerks. Er umfasst 16 Landesinnungsverbände mit über 200 Dachdeckerinnungen und rund 7000 Mitgliedsbetrieben.",
+    "bestandteile": ["Zentral", "verband", "Deutsches", "Dachdecker", "Handwerk"]
   },
   {
     "id": "lf01-009",
-    "typ": "fachbegriff",
+    "erklaerung": "Der Turmdrehkran mit Katzausleger besteht aus Turm, Ausleger, Laufkatze, Lasthaken und dem ausgleichenden Ballast.",
+    "typ": "diagram",
     "lernfeld": "lf01",
-    "thema": "Unfallverhütung",
-    "quelle": "BG BAU — Unfallverhütungsvorschriften (DGUV Vorschrift 38 Bauarbeiten)",
+    "thema": "Baugeräte",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 14",
     "konfidenz": "hoch",
-    "begriff": "Unfallverhütungsvorschrift",
-    "definition": "Verbindliche Regeln der Berufsgenossenschaft (BG BAU) zur Verhütung von Arbeitsunfällen — z. B. zu Absturzsicherung, Gerüsten und persönlicher Schutzausrüstung. Kurz: UVV.",
-    "bestandteile": [
-      "Unfall",
-      "verhütungs",
-      "vorschrift"
-    ],
-    "erklaerung": "Merke die drei Wortteile: Unfall-verhütungs-vorschrift (UVV)."
+    "frage": "Benenne die markierten Bauteile des Turmdrehkrans mit Katzausleger.",
+    "svg": "<svg viewBox='0 0 360 300' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Turmdrehkran mit Katzausleger'><line x1='150' y1='90' x2='150' y2='260' stroke='currentColor' stroke-width='2'/><line x1='166' y1='90' x2='166' y2='260' stroke='currentColor' stroke-width='2'/><path d='M150 120 L166 140 M166 120 L150 140 M150 170 L166 190 M166 170 L150 190 M150 220 L166 240 M166 220 L150 240' stroke='currentColor' stroke-width='1' fill='none'/><path d='M140 260 L158 245 L176 260 Z' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='158' y1='84' x2='330' y2='84' stroke='currentColor' stroke-width='2'/><line x1='158' y1='84' x2='60' y2='84' stroke='currentColor' stroke-width='2'/><line x1='158' y1='70' x2='250' y2='84' stroke='currentColor' stroke-width='1'/><line x1='158' y1='70' x2='95' y2='84' stroke='currentColor' stroke-width='1'/><rect x='60' y='84' width='30' height='16' fill='none' stroke='currentColor' stroke-width='1.6' data-id='ballast'/><rect x='250' y='78' width='16' height='10' fill='none' stroke='currentColor' stroke-width='1.6' data-id='laufkatze'/><line x1='258' y1='88' x2='258' y2='150' stroke='currentColor' stroke-width='1.4'/><path d='M254 150 a4 4 0 1 0 8 0' fill='none' stroke='currentColor' stroke-width='1.6' data-id='haken'/><circle cx='158' cy='180' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='turm'/><circle cx='300' cy='84' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='ausleger'/></svg>",
+    "zuordnung": {
+      "turm": "Turm",
+      "ausleger": "Ausleger (Katzausleger)",
+      "laufkatze": "Laufkatze",
+      "haken": "Lasthaken",
+      "ballast": "Ballast (Gegengewicht)"
+    }
   },
   {
     "id": "lf01-010",
-    "typ": "mc",
+    "erklaerung": "Die gesetzliche Einheit der Länge ist der Meter: 1 m = 100 cm = 1000 mm.",
+    "typ": "cloze",
     "lernfeld": "lf01",
-    "thema": "Bauzeitenplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Vermessung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 17",
     "konfidenz": "hoch",
-    "frage": "Was stellt ein Bauzeitenplan (Balkenplan) dar?",
-    "optionen": [
-      "Die Kosten aller Gewerke",
-      "Die zeitliche Reihenfolge und Dauer der Gewerke",
-      "Die Anordnung von Kran und Lager",
-      "Die statische Berechnung des Bauwerks"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Der Balkenplan (Gantt) zeigt für jedes Gewerk einen Balken über der Zeitachse: wann es beginnt, wie lange es dauert und wo sich Gewerke überschneiden. Kosten stehen in der Kalkulation, die Anordnung im Baustelleneinrichtungsplan."
+    "text": "Die gesetzliche Einheit der Länge ist der {{Meter}}. Es gilt: 1 m = 100 {{cm}} = 1000 {{mm}}.",
+    "akzeptiert": {
+      "Meter": ["meter", "m"],
+      "cm": ["Zentimeter", "zentimeter"],
+      "mm": ["Millimeter", "millimeter"]
+    }
   },
   {
     "id": "lf01-011",
-    "typ": "fachbegriff",
+    "typ": "calc",
     "lernfeld": "lf01",
-    "thema": "Bauzeitenplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 21",
     "konfidenz": "hoch",
-    "begriff": "Bauzeitenplan",
-    "definition": "Ein Terminplan, der alle Gewerke mit Beginn, Dauer und Reihenfolge über einer Zeitachse darstellt (meist als Balkenplan). Er koordiniert die Gewerke, deckt Abhängigkeiten auf und hält den Bauablauf termingerecht.",
-    "bestandteile": [
-      "Bau",
-      "zeiten",
-      "plan"
+    "aufgabentext": "Eine Wand ist in Wirklichkeit {wand} m lang. Wie lang wird sie im Maßstab 1:50 in der Zeichnung dargestellt (in cm)?",
+    "parameter": [
+      { "name": "wand", "label": "wirkliche Länge", "einheit": "m", "min": 2, "max": 12, "schritt": 0.25 }
     ],
-    "erklaerung": "Merke die drei Wortteile: Bau-zeiten-plan."
+    "schritte": [
+      { "beschreibung": "Wirkliche Länge in cm umrechnen: {wand} m · 100", "formel": "wand * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
+      { "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 50", "formel": "wirklich_cm / 50", "ergebnisName": "zeichnung_cm", "einheit": "cm" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Maßstab 1:50 bedeutet: 1 cm in der Zeichnung entspricht 50 cm in Wirklichkeit. Es gilt Zeichnungslänge = wirkliche Länge / n."
   },
   {
     "id": "lf01-012",
-    "typ": "cloze",
+    "erklaerung": "Die Mittelsenkrechte steht senkrecht auf der Strecke und halbiert sie; jeder ihrer Punkte hat zu beiden Endpunkten den gleichen Abstand.",
+    "typ": "fachbegriff",
     "lernfeld": "lf01",
-    "thema": "Bauzeitenplan",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 1",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 26",
     "konfidenz": "hoch",
-    "text": "Im Bauzeitenplan wird jedes Gewerk als {{Balken}} über einer {{Zeitachse}} dargestellt; die Länge des Balkens zeigt die {{Dauer}}.",
-    "akzeptiert": {
-      "Balken": [
-        "balken"
-      ],
-      "Zeitachse": [
-        "zeitachse",
-        "zeit achse"
-      ],
-      "Dauer": [
-        "dauer"
-      ]
-    },
-    "erklaerung": "Je länger der Balken, desto länger dauert das Gewerk. Überschneiden sich Balken, laufen Arbeiten parallel."
+    "begriff": "Mittelsenkrechte",
+    "definition": "Die Gerade, die eine Strecke im rechten Winkel genau in der Mitte teilt. Man konstruiert sie mit zwei gleichen Kreisbögen um die Streckenendpunkte (Radius größer als die halbe Strecke)."
   },
   {
     "id": "lf01-013",
     "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Absturzsicherung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Baustelleneinrichtung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 16",
     "konfidenz": "hoch",
-    "frage": "Ab welcher Absturzhöhe ist bei Dacharbeiten grundsätzlich eine Absturzsicherung erforderlich?",
+    "frage": "Wie viele Warnleuchten sind beim Sperren der gesamten Fahrbahn mindestens anzubringen?",
     "optionen": [
-      "Ab 1,00 m",
-      "Ab 2,00 m",
-      "Ab 3,00 m",
-      "Erst ab 5,00 m"
+      "Mindestens 3 gelbe Warnleuchten",
+      "Mindestens 5 rote Warnleuchten",
+      "Mindestens 2 rote Warnleuchten",
+      "Mindestens 5 gelbe Warnleuchten"
     ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Nach den Regeln der BG BAU ist bei Absturzhöhen ab 2,00 m grundsätzlich gegen Absturz zu sichern. An Verkehrswegen und über Wasser/Stoffen gilt schon ab 1,00 m; an Öffnungen unabhängig von der Höhe."
+    "korrekt": [1],
+    "erklaerung": "Beim Sperren der gesamten Fahrbahn sind mindestens 5 rote Warnleuchten anzubringen. Werden nur einzelne Fahrstreifen gesperrt, genügen mindestens 3 gelbe Warnleuchten."
   },
   {
     "id": "lf01-014",
     "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Absturzsicherung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Baugeräte",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 14",
     "konfidenz": "hoch",
-    "frage": "Welche Maßnahme gegen Absturz ist vorrangig zu wählen?",
+    "frage": "Wie verändert sich die Nutzlast eines Krans mit zunehmender Ausladung?",
     "optionen": [
-      "Persönliche Schutzausrüstung gegen Absturz (PSAgA)",
-      "Auffangnetz",
-      "Seitenschutz bzw. Geländer (Absturzsicherung)",
-      "Ein Warnschild am Boden"
+      "Je größer die Ausladung, desto größer die Nutzlast",
+      "Je größer die Ausladung, desto geringer die Nutzlast",
+      "Die Nutzlast bleibt immer gleich",
+      "Die Ausladung hat keinen Einfluss auf die Nutzlast"
     ],
-    "korrekt": [
-      2
-    ],
-    "erklaerung": "Rangfolge: 1. Absturzsicherung (kollektiver Seitenschutz), 2. Auffangeinrichtung (Netz/Fanggerüst), 3. PSAgA (individuell). Kollektiver Schutz wirkt für alle ohne Zutun des Einzelnen und geht deshalb vor."
+    "korrekt": [1],
+    "erklaerung": "Je größer die Ausladung, desto geringer die Nutzlast. Zum Ausgleich der aufgenommenen Last dient der Ballast, meist aus Betonfertigteilen."
   },
   {
     "id": "lf01-015",
-    "typ": "cloze",
+    "typ": "calc",
     "lernfeld": "lf01",
-    "thema": "Absturzsicherung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Projekt",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 32",
     "konfidenz": "hoch",
-    "text": "Ein vollständiger Seitenschutz besteht aus {{Geländerholm}}, {{Zwischenholm}} und {{Bordbrett}}.",
-    "akzeptiert": {
-      "Geländerholm": [
-        "gelaenderholm",
-        "Handlauf",
-        "handlauf"
-      ],
-      "Zwischenholm": [
-        "zwischenholm",
-        "Knieleiste",
-        "knieleiste"
-      ],
-      "Bordbrett": [
-        "bordbrett",
-        "Fußleiste",
-        "Fussleiste",
-        "fussleiste"
-      ]
-    },
-    "erklaerung": "Der obere Geländerholm (Handlauf, mind. 1,00 m hoch), der Zwischenholm (Knieleiste) und das Bordbrett (Fußleiste, hält Material vom Herabfallen ab) bilden zusammen den kompletten Seitenschutz."
+    "aufgabentext": "Das geplante Einfamilienhaus hat eine Länge von {laenge} m und eine Breite von {breite} m. Wie groß ist die überbaute Grundfläche?",
+    "parameter": [
+      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 10, "max": 15, "schritt": 0.25 },
+      { "name": "breite", "label": "Breite", "einheit": "m", "min": 6, "max": 9, "schritt": 0.25 }
+    ],
+    "schritte": [
+      { "beschreibung": "Grundfläche des Rechtecks = Länge · Breite ({laenge} m · {breite} m)", "formel": "laenge * breite", "ergebnisName": "flaeche", "einheit": "m²" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Grundfläche eines rechteckigen Gebäudes ist Länge mal Breite. Im Buchbeispiel: 12,50 m · 7,25 m = 90,625 m²."
   },
   {
     "id": "lf01-016",
+    "erklaerung": "Mit der Kreuzscheibe steckt man auf der Baustelle rechte Winkel ab; die Sehschlitze zeigen den 90°-Winkel an.",
     "typ": "fachbegriff",
     "lernfeld": "lf01",
-    "thema": "Absturzsicherung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Vermessung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 18",
     "konfidenz": "hoch",
-    "begriff": "PSA gegen Absturz (PSAgA)",
-    "definition": "Persönliche Schutzausrüstung gegen Absturz: Auffanggurt, Verbindungsmittel mit Falldämpfer und ein ausreichend tragfähiger Anschlagpunkt. Sie wird eingesetzt, wenn kollektiver Seitenschutz nicht möglich ist.",
-    "bestandteile": [
-      "Auffanggurt",
-      "Verbindungsmittel",
-      "Anschlagpunkt"
-    ],
-    "erklaerung": "PSAgA ist individueller Schutz und steht in der Rangfolge nach Absturzsicherung und Auffangeinrichtung."
+    "begriff": "Kreuzscheibe",
+    "definition": "Ein Gerät zum Abstecken rechter Winkel. Der kegelstumpfförmige Kopf sitzt auf einem etwa 1,40 m langen Stab und hat paarweise gegenüberliegende senkrechte Sehschlitze, deren Zielebenen einen rechten Winkel bilden."
   },
   {
     "id": "lf01-017",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Gefährdungsbeurteilung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 27",
     "konfidenz": "hoch",
-    "begriff": "Gefährdungsbeurteilung",
-    "definition": "Die systematische Ermittlung und Bewertung der Gefährdungen an einem Arbeitsplatz vor Arbeitsbeginn, aus der die nötigen Schutzmaßnahmen abgeleitet werden. Sie ist Pflicht des Arbeitgebers.",
-    "bestandteile": [
-      "Gefährdungs",
-      "beurteilung"
+    "frage": "Wie nennt man einen Winkel zwischen 90° und 180°?",
+    "optionen": [
+      "Spitzer Winkel",
+      "Rechter Winkel",
+      "Stumpfer Winkel",
+      "Gestreckter Winkel"
     ],
-    "erklaerung": "Erst beurteilen, welche Gefahren bestehen (z. B. Absturz), dann Maßnahmen nach dem STOP-Prinzip festlegen."
+    "korrekt": [2],
+    "erklaerung": "Winkel zwischen 0° und 90° heißen spitz, genau 90° rechter Winkel, zwischen 90° und 180° stumpf, genau 180° gestreckter Winkel und über 180° überstumpf."
   },
   {
     "id": "lf01-018",
-    "typ": "mc",
+    "erklaerung": "Erst nach Erteilung der Baugenehmigung darf gebaut werden; die Ausführungszeichnungen reichen von 1:50 bis 1:5.",
+    "typ": "cloze",
     "lernfeld": "lf01",
-    "thema": "Verkehrssicherung",
-    "quelle": "BG BAU Bausteine 404; DGUV",
+    "thema": "Bauplanung & Vergabe",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 11",
     "konfidenz": "hoch",
-    "frage": "Warum wird der Bereich unter einer Dachbaustelle abgesperrt?",
-    "optionen": [
-      "Damit keine Unbefugten den Kran bedienen",
-      "Zum Schutz vor herabfallenden Gegenständen",
-      "Um Material trocken zu lagern",
-      "Damit die Zufahrt breiter wird"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Bei Dacharbeiten können Werkzeug und Material herabfallen. Der Gefahrenbereich wird abgesperrt (ggf. mit Schutzdach), damit niemand getroffen wird. Im öffentlichen Verkehrsraum ist zusätzlich eine Verkehrssicherung mit Beschilderung nötig."
+    "text": "Mit der Bauausführung darf erst nach der {{Baugenehmigung}} begonnen werden. Die Ausführungszeichnungen werden in den Maßstäben 1:50 bis 1:{{5}} gezeichnet.",
+    "akzeptiert": {
+      "Baugenehmigung": ["baugenehmigung", "Genehmigung"],
+      "5": ["fünf"]
+    }
   },
   {
     "id": "lf01-019",
     "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Unfallverhütung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Beruf & Organisation",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 10",
     "konfidenz": "hoch",
-    "frage": "Welche persönliche Schutzausrüstung schützt vor herabfallenden Gegenständen und Anstoßen am Kopf?",
+    "frage": "Was unterscheidet die Bauindustrie vom Bauhandwerk?",
     "optionen": [
-      "Gehörschutz",
-      "Schutzhelm",
-      "Kniepolster",
-      "Warnweste"
+      "Die Bauindustrie umfasst überwiegend kleine Betriebe",
+      "Die Bauindustrie umfasst größere Betriebe mit Schwerpunkt Hoch-, Tief- und Ingenieurbau",
+      "Bauindustrie und Bauhandwerk sind dasselbe",
+      "Das Bauhandwerk baut nur Industriehallen"
     ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Der Schutzhelm schützt vor herabfallenden Gegenständen und Anstoßen. Gehörschutz mindert Lärm, Kniepolster schützen die Knie, die Warnweste macht sichtbar — jede PSA hat ihren eigenen Zweck."
+    "korrekt": [1],
+    "erklaerung": "Das Bauhandwerk besteht überwiegend aus kleinen und mittleren Betrieben (in Innungen organisiert), die Bauindustrie aus größeren Betrieben mit Schwerpunkten im Hoch-, Tief- und Ingenieurbau."
   },
   {
     "id": "lf01-020",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf01",
-    "thema": "Verkehrssicherung",
-    "quelle": "Grundrechnung Umfang; Kontext KMK-Rahmenlehrplan LF 1",
+    "thema": "Baustelleneinrichtung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 15",
     "konfidenz": "hoch",
-    "aufgabentext": "Der Gefahrenbereich unter dem Dach ist {laenge} m lang und {breite} m breit und soll rundum mit Absperrband gesichert werden. Wie viel Band wird mindestens benötigt?",
-    "parameter": [
-      {
-        "name": "laenge",
-        "label": "Länge",
-        "einheit": "m",
-        "min": 8,
-        "max": 20,
-        "schritt": 0.5
-      },
-      {
-        "name": "breite",
-        "label": "Breite",
-        "einheit": "m",
-        "min": 4,
-        "max": 12,
-        "schritt": 0.5
-      }
+    "frage": "Auf welcher Höhe liegt die Oberkante einer Absperrschranke an einer Baustelle?",
+    "optionen": [
+      "0,15 m",
+      "0,50 m",
+      "1,00 m",
+      "1,50 m"
     ],
-    "schritte": [
-      {
-        "beschreibung": "Umfang des Rechtecks: zwei Mal Länge plus Breite (2 · ({laenge} m + {breite} m))",
-        "formel": "2 * (laenge + breite)",
-        "ergebnisName": "umfang",
-        "einheit": "m"
-      }
-    ],
-    "toleranzProzent": 1,
-    "erklaerung": "Absperrband läuft rundherum, also entlang des Umfangs. Umfang eines Rechtecks = 2 · (Länge + Breite). In der Praxis rechnet man etwas Zugabe für Überlappung dazu."
+    "korrekt": [2],
+    "erklaerung": "Bei einer Absperrschranke liegt die Oberkante auf 1,00 m und die Unterkante auf 0,15 m."
   },
   {
     "id": "lf01-021",
+    "typ": "calc",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 27",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Winkel beträgt α = {alpha}°. Wie groß ist sein Nebenwinkel?",
+    "parameter": [
+      { "name": "alpha", "label": "Winkel α", "einheit": "°", "min": 20, "max": 160, "schritt": 5 }
+    ],
+    "schritte": [
+      { "beschreibung": "Nebenwinkel ergänzen sich zu 180°: Nebenwinkel = 180° − α", "formel": "180 - alpha", "ergebnisName": "nebenwinkel", "einheit": "°" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Nebenwinkel haben einen gemeinsamen Schenkel und ergänzen sich immer zu 180°."
+  },
+  {
+    "id": "lf01-022",
+    "erklaerung": "Der Maßstab 1:n gibt an, um welchen Faktor die Zeichnung kleiner ist als die Wirklichkeit.",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 21",
+    "konfidenz": "hoch",
+    "begriff": "Maßstab",
+    "definition": "Das Größenverhältnis einer Strecke in der Zeichnung zu ihrer wirklichen Länge, abgekürzt 1:n. Bei 1:50 entspricht 1 cm in der Zeichnung 50 cm in Wirklichkeit. Es gilt: wirkliche Länge = Zeichnungslänge · n."
+  },
+  {
+    "id": "lf01-023",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Vermessung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 17",
+    "konfidenz": "hoch",
+    "frage": "In welchen Längen werden Stahl-Messbänder üblicherweise hergestellt?",
+    "optionen": [
+      "5, 10 und 15 m",
+      "20, 30 und 50 m",
+      "25, 40 und 60 m",
+      "10, 25 und 100 m"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Messbänder bestehen meist aus Stahl und werden in Längen von 20, 30 und 50 m hergestellt; sie haben eine Zentimeterteilung."
+  },
+  {
+    "id": "lf01-024",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Baugeräte",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 14",
+    "konfidenz": "hoch",
+    "frage": "Dürfen Personen mit Lastaufnahmemitteln (z. B. Steinkorb) befördert werden?",
+    "optionen": [
+      "Ja, jederzeit",
+      "Grundsätzlich nicht; Ausnahme nur im gesicherten, angeseilten Betonierkübel",
+      "Ja, wenn ein Helm getragen wird",
+      "Nur bei Autokranen"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Personen dürfen mit Lastaufnahmemitteln grundsätzlich nicht befördert werden. Ausnahme sind Betonierkübel, wenn der Arbeitsplatz entsprechend gesichert ist und die Personen angeseilt sind."
+  },
+  {
+    "id": "lf01-025",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 29",
+    "konfidenz": "hoch",
+    "frage": "Welches Dreieck hat zwei gleich lange Seiten?",
+    "optionen": [
+      "Gleichseitiges Dreieck",
+      "Ungleichseitiges Dreieck",
+      "Gleichschenkliges Dreieck",
+      "Rechtwinkliges Dreieck"
+    ],
+    "korrekt": [2],
+    "erklaerung": "Nach den Seiten unterscheidet man: gleichseitig (alle Seiten gleich), gleichschenklig (zwei Seiten gleich) und ungleichseitig (alle Seiten verschieden)."
+  },
+  {
+    "id": "lf01-026",
+    "erklaerung": "Bei Terminüberschreitung droht die Konventionalstrafe; der Bauzeitenplan stellt den zeitlichen Ablauf der Arbeiten dar.",
     "typ": "cloze",
     "lernfeld": "lf01",
-    "thema": "Unfallverhütung",
-    "quelle": "BG BAU / DGUV Information 201-054 Dacharbeiten; STOP-/Rangfolge-Prinzip",
+    "thema": "Bauplanung & Vergabe",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 12",
     "konfidenz": "hoch",
-    "text": "Ein Gerüst darf erst {{betreten}} werden, wenn es geprüft und {{freigegeben}} ist; die Freigabe erkennt man am {{Kennzeichnungsschild}}.",
+    "text": "Wird ein vereinbarter Termin überschritten, kann eine Vertragsstrafe fällig werden. Man nennt sie auch {{Konventionalstrafe}}. Der zeitliche Ablauf der Arbeiten wird im {{Bauzeitenplan}} dargestellt.",
     "akzeptiert": {
-      "betreten": [
-        "benutzt",
-        "genutzt"
-      ],
-      "freigegeben": [
-        "frei gegeben"
-      ],
-      "Kennzeichnungsschild": [
-        "kennzeichnungsschild",
-        "Schild",
-        "schild",
-        "Gerüstschild",
-        "Geruestschild",
-        "geruestschild"
-      ]
-    },
-    "erklaerung": "Vor der ersten Nutzung prüft eine befähigte Person das Gerüst und gibt es frei. Das Kennzeichnungsschild zeigt Gerüstklasse und Freigabe — ohne Schild gilt das Gerüst als nicht freigegeben."
+      "Konventionalstrafe": ["konventionalstrafe"],
+      "Bauzeitenplan": ["bauzeitenplan"]
+    }
+  },
+  {
+    "id": "lf01-027",
+    "erklaerung": "Bei der Just-in-time-Baustelle wird Material erst bei Bedarf angeliefert, weil kein Lagerplatz vorhanden ist.",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 13",
+    "konfidenz": "hoch",
+    "begriff": "Just-in-time-Baustelle",
+    "definition": "Baustelle mit wenig Lagerplatz (oft innerörtlich): Baustoffe und Bauteile werden genau zu dem Zeitpunkt angeliefert, an dem sie gebraucht werden, und vom Lkw direkt zur Einbaustelle gebracht."
+  },
+  {
+    "id": "lf01-028",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 30",
+    "konfidenz": "hoch",
+    "frage": "In welchem Verhältnis steht die Seite eines regelmäßigen Sechsecks zum Radius seines Umkreises?",
+    "optionen": [
+      "Die Sechseckseite ist halb so groß wie der Radius",
+      "Die Sechseckseite entspricht dem Radius (Halbmesser) des Umkreises",
+      "Die Sechseckseite ist doppelt so groß wie der Radius",
+      "Es gibt keinen festen Zusammenhang"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Eine Sechseckseite entspricht genau dem Halbmesser (Radius) des Umkreises. Deshalb lässt sich das Sechseck einfach mit dem Zirkel konstruieren."
+  },
+  {
+    "id": "lf01-029",
+    "typ": "calc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 21",
+    "konfidenz": "hoch",
+    "aufgabentext": "Auf einem Plan im Maßstab 1:100 ist eine Strecke {zeichnung} cm lang. Wie lang ist die Strecke in Wirklichkeit (in m)?",
+    "parameter": [
+      { "name": "zeichnung", "label": "Zeichnungslänge", "einheit": "cm", "min": 2, "max": 15, "schritt": 0.5 }
+    ],
+    "schritte": [
+      { "beschreibung": "Wirkliche Länge = Zeichnungslänge · n, hier n = 100 (Ergebnis in cm)", "formel": "zeichnung * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
+      { "beschreibung": "Von cm in m umrechnen: {wirklich_cm} / 100", "formel": "wirklich_cm / 100", "ergebnisName": "wirklich_m", "einheit": "m" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Wirkliche Länge = Zeichnungslänge · n. Bei 1:100 ist 1 cm in der Zeichnung = 100 cm = 1 m in Wirklichkeit."
+  },
+  {
+    "id": "lf01-030",
+    "erklaerung": "Fluchtstäbe werden senkrecht aufgestellt, um beim Vermessen Geraden abzustecken (Einfluchten).",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Vermessung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 17",
+    "konfidenz": "hoch",
+    "begriff": "Fluchtstab",
+    "definition": "Etwa 2 m langer Stab aus Holz mit rot-weißen Farbfeldern von 50 cm und einer Stahlspitze am unteren Ende. Er wird senkrecht über Messungspunkten aufgestellt, um Geraden abzustecken (Einfluchten)."
+  },
+  {
+    "id": "lf01-031",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Beruf & Organisation",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 8",
+    "konfidenz": "hoch",
+    "frage": "Wo werden in der dualen Ausbildung die theoretischen Kenntnisse vermittelt?",
+    "optionen": [
+      "Ausschließlich im Betrieb",
+      "In der Berufsschule",
+      "Nur in der Meisterschule",
+      "Auf der Baustelle durch den Polier"
+    ],
+    "korrekt": [1],
+    "erklaerung": "In der dualen Ausbildung werden die theoretischen Kenntnisse in der Berufsschule vermittelt und die praktischen Fertigkeiten im Betrieb, ergänzt durch überbetriebliche Ausbildungsstätten."
+  },
+  {
+    "id": "lf01-032",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 29",
+    "konfidenz": "hoch",
+    "frage": "Warum wird das Dreieck in Dach- und Fachwerkkonstruktionen so häufig verwendet?",
+    "optionen": [
+      "Weil es besonders leicht ist",
+      "Weil es eine statisch stabile, nicht verschiebliche Figur ist",
+      "Weil es am wenigsten Material braucht",
+      "Weil es sich leicht verschieben lässt"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Das Dreieck ist statisch betrachtet eine stabile Figur, es ist nicht verschieblich. Deshalb kommt es in Dachkonstruktionen, Fachwerkwänden und Verstrebungen häufig vor."
+  },
+  {
+    "id": "lf01-033",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauplanung & Vergabe",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 12",
+    "konfidenz": "hoch",
+    "frage": "Ein Bauzeitenplan nennt: Baustelleneinrichtung 2 AT, Erdarbeiten 3 AT, Entwässerung 2 AT, Fundament 2 AT, Betonarbeiten 8 AT, Mauerarbeiten 10 AT, Zimmerarbeiten 6 AT. Wie viele Arbeitstage sind das insgesamt?",
+    "optionen": [
+      "29 AT",
+      "31 AT",
+      "33 AT",
+      "35 AT"
+    ],
+    "korrekt": [2],
+    "erklaerung": "2 + 3 + 2 + 2 + 8 + 10 + 6 = 33 Arbeitstage (AT). Der Bauzeitenplan regelt den zeitlichen Ablauf der Arbeiten."
+  },
+  {
+    "id": "lf01-034",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 23",
+    "konfidenz": "hoch",
+    "frage": "Wofür steht ein offenes (weißes) Höhendreieck in einer Bauzeichnung nach DIN 1356?",
+    "optionen": [
+      "Für eine Rohbauhöhe (z. B. Oberkante Rohdecke)",
+      "Für eine fertige Höhenlage (z. B. Oberkante fertiger Fußboden)",
+      "Für die Geschossanzahl",
+      "Für den Dachüberstand"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Offene (weiße) Dreiecke kennzeichnen fertige Höhenlagen (z. B. OK fertiger Fußboden, FFB), angelegte (schwarze) Dreiecke die Rohbauhöhen (z. B. OK Rohdecke, RFB)."
+  },
+  {
+    "id": "lf01-035",
+    "erklaerung": "Stufenwinkel liegen an geschnittenen Parallelen gleichläufig und sind gleich groß.",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 27",
+    "konfidenz": "hoch",
+    "begriff": "Stufenwinkel",
+    "definition": "Winkel, die entstehen, wenn zwei parallele Geraden von einer dritten Geraden geschnitten werden und auf derselben Seite gleichläufig liegen. Stufenwinkel sind gleich groß."
+  },
+  {
+    "id": "lf01-036",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 13",
+    "konfidenz": "hoch",
+    "frage": "Wie lang sollte der Weg von der Unterkunft zur eigentlichen Arbeitsstelle höchstens sein?",
+    "optionen": [
+      "höchstens 50 m",
+      "höchstens 150 m",
+      "höchstens 300 m",
+      "die Länge spielt keine Rolle"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Der Weg von der Unterkunft zur Arbeitsstelle sollte höchstens 150 m betragen. Sonst müssten Transportmittel für die Arbeitskräfte eingesetzt werden."
+  },
+  {
+    "id": "lf01-037",
+    "erklaerung": "Die Mittelsenkrechte entsteht aus zwei gleichen Kreisbögen um A und B; die Verbindung ihrer Schnittpunkte halbiert AB im rechten Winkel.",
+    "typ": "draw",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 26",
+    "konfidenz": "hoch",
+    "aufgabentext": "Konstruiere zur gegebenen Strecke AB die Mittelsenkrechte mit Zirkel und Lineal.",
+    "vorgabeSvg": "<svg viewBox='0 0 360 200' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Strecke AB'><line x1='60' y1='100' x2='300' y2='100' stroke='currentColor' stroke-width='2'/><circle cx='60' cy='100' r='3' fill='currentColor'/><circle cx='300' cy='100' r='3' fill='currentColor'/><text x='52' y='118' font-size='14' fill='currentColor'>A</text><text x='296' y='118' font-size='14' fill='currentColor'>B</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 360 200' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Mittelsenkrechte der Strecke AB'><line x1='60' y1='100' x2='300' y2='100' stroke='currentColor' stroke-width='2'/><circle cx='60' cy='100' r='3' fill='currentColor'/><circle cx='300' cy='100' r='3' fill='currentColor'/><path d='M60 100 m150 0 a150 150 0 0 1 -150 -100' fill='none' stroke='currentColor' stroke-width='1' opacity='0.6'/><path d='M300 100 m-150 0 a150 150 0 0 0 150 -100' fill='none' stroke='currentColor' stroke-width='1' opacity='0.6'/><path d='M60 100 m150 0 a150 150 0 0 0 -150 100' fill='none' stroke='currentColor' stroke-width='1' opacity='0.6'/><path d='M300 100 m-150 0 a150 150 0 0 1 150 100' fill='none' stroke='currentColor' stroke-width='1' opacity='0.6'/><line x1='180' y1='20' x2='180' y2='180' stroke='currentColor' stroke-width='2'/><circle cx='180' cy='100' r='3' fill='currentColor'/><text x='186' y='96' font-size='13' fill='currentColor'>M</text><text x='52' y='118' font-size='14' fill='currentColor'>A</text><text x='296' y='118' font-size='14' fill='currentColor'>B</text></svg>",
+    "schritte": [
+      "Zirkel auf eine Weite größer als die halbe Strecke AB einstellen (r > AB/2).",
+      "Mit dieser Weite je einen Kreisbogen um A und um B schlagen; sie schneiden sich oberhalb und unterhalb der Strecke in zwei Punkten.",
+      "Die beiden Schnittpunkte mit dem Lineal verbinden. Diese Gerade ist die Mittelsenkrechte; sie schneidet AB im Mittelpunkt M im rechten Winkel."
+    ]
+  },
+  {
+    "id": "lf01-038",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Projekt",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 32",
+    "konfidenz": "hoch",
+    "frage": "Für das geplante Einfamilienhaus gilt: Die Gesamthöhe von OK gewachsener Boden bis OK Traufe darf einen bestimmten Wert nicht überschreiten. Welchen?",
+    "optionen": [
+      "4,50 m",
+      "5,50 m",
+      "6,50 m",
+      "7,25 m"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Laut Baubeschreibung darf die Gesamthöhe von Oberkante gewachsener Boden bis Oberkante Traufe 5,50 m nicht überschreiten."
+  },
+  {
+    "id": "lf01-039",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 22",
+    "konfidenz": "hoch",
+    "frage": "Womit wird in einer Bauzeichnung der Durchmesser eines runden Querschnitts gekennzeichnet?",
+    "optionen": [
+      "Mit dem Buchstaben R vor der Maßzahl",
+      "Mit dem Zeichen Ø vor der Maßzahl",
+      "Mit dem Quadratzeichen □",
+      "Mit einer Bruchangabe Breite/Höhe"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Runde Querschnitte erhalten das Durchmesserzeichen Ø vor der Maßzahl (z. B. Ø 30). R kennzeichnet Radien, das Quadratzeichen □ quadratische Querschnitte, die Bruchform Breite/Höhe rechteckige (z. B. 12/16)."
+  },
+  {
+    "id": "lf01-040",
+    "typ": "calc",
+    "lernfeld": "lf01",
+    "thema": "Projekt",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 32",
+    "konfidenz": "hoch",
+    "aufgabentext": "Das Einfamilienhaus soll im Maßstab 1:125 gezeichnet werden. Eine Hauswand ist in Wirklichkeit {wand} m lang. Wie lang wird sie in der Zeichnung (in cm)?",
+    "parameter": [
+      { "name": "wand", "label": "wirkliche Länge", "einheit": "m", "min": 5, "max": 12.5, "schritt": 0.25 }
+    ],
+    "schritte": [
+      { "beschreibung": "Wirkliche Länge in cm: {wand} m · 100", "formel": "wand * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
+      { "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 125", "formel": "wirklich_cm / 125", "ergebnisName": "zeichnung_cm", "einheit": "cm" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Zeichnungslänge = wirkliche Länge / n. Bei 1:125 wird die wirkliche Länge (in cm) durch 125 geteilt."
+  },
+  {
+    "id": "lf01-041",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 22",
+    "konfidenz": "hoch",
+    "frage": "In welcher Einheit werden Maße unter einem Meter in Bauzeichnungen üblicherweise angegeben?",
+    "optionen": [
+      "In Millimetern (mm)",
+      "In Zentimetern (cm)",
+      "In Metern (m)",
+      "In Dezimetern (dm)"
+    ],
+    "korrekt": [1],
+    "erklaerung": "In Bauzeichnungen werden Maße üblicherweise in cm und m angegeben: alle Maße unter einem Meter in cm (z. B. 99), Maße ab einem Meter in m (z. B. 1,24). Millimetermaße werden durch hochgesetzte Ziffern gekennzeichnet."
+  },
+  {
+    "id": "lf01-042",
+    "erklaerung": "Der Schwerpunkt ist der Schnittpunkt der drei Seitenhalbierenden eines Dreiecks.",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 30",
+    "konfidenz": "hoch",
+    "begriff": "Schwerpunkt (Dreieck)",
+    "definition": "Der Punkt S, in dem sich die drei Seitenhalbierenden eines Dreiecks schneiden. Die Seitenhalbierenden sind die Geraden von den Eckpunkten zu den gegenüberliegenden Seitenmitten."
+  },
+  {
+    "id": "lf01-043",
+    "erklaerung": "Zu den Innungsaufgaben zählen die Überwachung der betrieblichen Ausbildung und die Abnahme der Zwischen- und Gesellenprüfungen.",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Beruf & Organisation",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 9",
+    "konfidenz": "hoch",
+    "text": "Zu den Aufgaben der Dachdeckerinnungen gehört u. a. die Überwachung der betrieblichen {{Ausbildung}} sowie die Abnahme von Zwischen- und {{Gesellenprüfungen}}.",
+    "akzeptiert": {
+      "Ausbildung": ["ausbildung"],
+      "Gesellenprüfungen": ["Gesellenprüfung", "gesellenprüfungen", "Gesellenpruefungen"]
+    }
+  },
+  {
+    "id": "lf01-044",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 30",
+    "konfidenz": "hoch",
+    "frage": "Was kennzeichnet ein regelmäßiges Vieleck?",
+    "optionen": [
+      "Es hat höchstens vier Ecken",
+      "Alle Seiten und alle Winkel sind gleich groß",
+      "Nur die Seiten sind gleich, die Winkel verschieden",
+      "Es hat keinen Umkreis"
+    ],
+    "korrekt": [1],
+    "erklaerung": "Vielecke sind Flächen mit mehr als vier Ecken. Bei regelmäßigen Vielecken sind alle Seiten und alle Winkel gleich groß; sie besitzen einen Um- und einen Inkreis."
+  },
+  {
+    "id": "lf01-045",
+    "erklaerung": "Winkel unter 90° sind spitz, genau 90° rechtwinklig und über 90° stumpf.",
+    "typ": "diagram",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 27",
+    "konfidenz": "hoch",
+    "frage": "Ordne den drei dargestellten Winkeln die richtige Bezeichnung zu.",
+    "svg": "<svg viewBox='0 0 360 160' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Drei Winkelarten'><g><line x1='30' y1='130' x2='110' y2='130' stroke='currentColor' stroke-width='2'/><line x1='30' y1='130' x2='95' y2='80' stroke='currentColor' stroke-width='2'/><path d='M55 130 A25 25 0 0 0 47 112' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='58' cy='118' r='5' fill='none' stroke='currentColor' stroke-width='2' data-id='spitz'/></g><g><line x1='140' y1='130' x2='220' y2='130' stroke='currentColor' stroke-width='2'/><line x1='140' y1='130' x2='140' y2='70' stroke='currentColor' stroke-width='2'/><path d='M155 130 L155 115 L140 115' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='162' cy='108' r='5' fill='none' stroke='currentColor' stroke-width='2' data-id='recht'/></g><g><line x1='250' y1='130' x2='340' y2='130' stroke='currentColor' stroke-width='2'/><line x1='250' y1='130' x2='300' y2='90' stroke='currentColor' stroke-width='2'/><path d='M280 130 A30 30 0 0 0 273 108' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='288' cy='116' r='5' fill='none' stroke='currentColor' stroke-width='2' data-id='stumpf'/></g></svg>",
+    "zuordnung": {
+      "spitz": "Spitzer Winkel (unter 90°)",
+      "recht": "Rechter Winkel (90°)",
+      "stumpf": "Stumpfer Winkel (über 90°)"
+    }
+  },
+  {
+    "id": "lf01-046",
+    "erklaerung": "Der Schnellaufbaukran ist in wenigen Stunden aufgebaut und für kurze Einsätze gedacht.",
+    "typ": "fachbegriff",
+    "lernfeld": "lf01",
+    "thema": "Baugeräte",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 14",
+    "konfidenz": "hoch",
+    "begriff": "Schnellaufbaukran",
+    "definition": "Ein Turmdrehkran, dessen Aufstellzeit nur wenige Stunden beträgt. Er wird bei kurzen Kraneinsätzen verwendet und häufig als Fahrzeugkran (auf Lkw-Fahrgestell) ausgebildet."
+  },
+  {
+    "id": "lf01-047",
+    "typ": "mc",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 21",
+    "konfidenz": "hoch",
+    "frage": "In welchem Maßstab wird ein Lageplan üblicherweise gezeichnet?",
+    "optionen": [
+      "1:5 oder 1:10",
+      "1:50",
+      "1:100",
+      "1:500 oder 1:1000"
+    ],
+    "korrekt": [3],
+    "erklaerung": "Lagepläne werden im Maßstab 1:500 oder 1:1000 gezeichnet. Entwurfs- und Eingabepläne 1:100, Ausführungszeichnungen 1:50, Teilzeichnungen 1:1 bis 1:25."
+  },
+  {
+    "id": "lf01-048",
+    "erklaerung": "Bauzeichnungen müssen sachlich, eindeutig und verständlich sein, damit alle Beteiligten sie gleich lesen.",
+    "typ": "cloze",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 1, S. 19",
+    "konfidenz": "hoch",
+    "text": "Bauzeichnungen sind technische Zeichnungen nach einheitlichen Regeln. Sie müssen sachlich, {{eindeutig}} und {{verständlich}} sein.",
+    "akzeptiert": {
+      "eindeutig": ["eindeutig"],
+      "verständlich": ["verstaendlich", "verständlich"]
+    }
   }
 ]
