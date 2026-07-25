@@ -43,12 +43,27 @@ export default function LernenPage() {
       <div className="mt-4">
         <Fortsetzen />
       </div>
-      <p
-        className="mt-3 rounded-lg border-l-2 px-3 py-2 text-sm"
-        style={{ background: "var(--surface)", borderColor: "var(--accent)", color: "var(--text-muted)" }}
+      <div
+        className="mt-3 flex gap-2.5 rounded-[var(--r-md)] px-3 py-2.5 text-sm leading-relaxed"
+        style={{ background: "var(--surface-2)", color: "var(--text-muted)" }}
       >
-        Empfohlen: Lernfeld 7 vor 8–10 lernen. Gesperrt ist nichts — lerne in deinem Tempo.
-      </p>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="var(--accent)"
+          strokeWidth="1.9"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className="mt-0.5 flex-shrink-0"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 11v5M12 7.5h.01" />
+        </svg>
+        <p>Empfohlen: Lernfeld 7 vor 8–10 lernen. Gesperrt ist nichts — lerne in deinem Tempo.</p>
+      </div>
 
       {GRUPPEN.map((g) => {
         const items = lernfelder.filter((lf) => lf.lehrjahr === g.key);
