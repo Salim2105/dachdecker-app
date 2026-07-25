@@ -1,0 +1,416 @@
+{
+  "lf": "lf02",
+  "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite = Buchseite - 32. Teil 2: PDF-Seite = Buchseite - 59 (eigenes pdf-Feld je Figur).",
+  "figuren": [
+    {
+      "seite": 2,
+      "box": [
+        0.17,
+        0.4,
+        0.53,
+        0.63
+      ],
+      "name": "dachteile",
+      "alt": "Schrägbild eines Daches mit benannten Dachteilen",
+      "unterschrift": "Dachteile (Buch S. 34)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.53,
+        0.25,
+        0.95,
+        0.88
+      ],
+      "name": "dachformen",
+      "alt": "Übersicht über die verschiedenen Dachformen",
+      "unterschrift": "Übersicht der Dachformen (Buch S. 34)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.52,
+        0.33,
+        0.95,
+        0.53
+      ],
+      "name": "schutzaufgaben",
+      "alt": "Schutzaufgaben des Daches gegen Wind, Schnee, Regen und Sonne",
+      "unterschrift": "Schutzaufgaben des Daches (Buch S. 35)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.12,
+        0.12,
+        0.52,
+        0.32
+      ],
+      "name": "baustoffklassen",
+      "alt": "Tabelle der Baustoffklassen A1, A2, B1, B2",
+      "unterschrift": "Baustoffklassen nach Brennbarkeit (Buch S. 36)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.1,
+        0.95,
+        0.38
+      ],
+      "name": "rdn-nomogramm",
+      "alt": "Nomogramm der Regeldachneigungen für verschiedene Deckungen",
+      "unterschrift": "Regeldachneigungen im Überblick (Buch S. 36)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.51,
+        0.4,
+        0.95,
+        0.92
+      ],
+      "name": "rdn-tabelle",
+      "alt": "Tabelle der Regeldachneigungen für Dachsteine, Schiefer und Faserzement",
+      "unterschrift": "Regeldachneigungen nach Deckungsart (Buch S. 36)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.12,
+        0.45,
+        0.5,
+        0.66
+      ],
+      "name": "dachlatten-querschnitte",
+      "alt": "Tabelle der Regelquerschnitte für tragende Dachlatten",
+      "unterschrift": "Regelquerschnitte für Dachlatten (Buch S. 40)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.5,
+        0.95,
+        0.72
+      ],
+      "name": "lattenbefestigung",
+      "alt": "Befestigung von Dach- und Konterlatten mit Fehlkante und Nagel",
+      "unterschrift": "Befestigung von Dach- und Konterlatten (Buch S. 40)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.07,
+        0.36,
+        0.52,
+        0.51
+      ],
+      "name": "schalung-mindestdicken",
+      "alt": "Tabelle der Mindestdicken für Holzschalungen",
+      "unterschrift": "Mindestdicken für Holzschalungen (Buch S. 41)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.1,
+        0.55,
+        0.95,
+        0.92
+      ],
+      "name": "ziegelherstellung",
+      "alt": "Ablaufschema der Dachziegelherstellung vom Rohstoffabbau bis zur Verpackung",
+      "unterschrift": "Herstellung von Dachziegeln (Buch S. 45)"
+    },
+    {
+      "seite": 14,
+      "box": [
+        0.17,
+        0.18,
+        0.52,
+        0.38
+      ],
+      "name": "ziegelarten-uebersicht",
+      "alt": "Übersicht Strangdachziegel und Pressdachziegel",
+      "unterschrift": "Strang- und Pressdachziegel (Buch S. 46)"
+    },
+    {
+      "seite": 15,
+      "box": [
+        0.5,
+        0.12,
+        0.95,
+        0.42
+      ],
+      "name": "biber-fussformen",
+      "alt": "Die acht Fußausbildungen von Biberschwanzziegeln",
+      "unterschrift": "Fußausbildungen beim Biberschwanzziegel (Buch S. 47)"
+    },
+    {
+      "seite": 15,
+      "box": [
+        0.5,
+        0.62,
+        0.95,
+        0.88
+      ],
+      "name": "moench-nonne",
+      "alt": "Mönch- und Nonnenziegel mit Maßangaben",
+      "unterschrift": "Mönch- und Nonnenziegel (Buch S. 47)"
+    },
+    {
+      "seite": 16,
+      "box": [
+        0.12,
+        0.42,
+        0.5,
+        0.7
+      ],
+      "name": "verfalzungen",
+      "alt": "Falzausbildung und Deckfuge am Dachziegel",
+      "unterschrift": "Falzausbildung und Deckfuge (Buch S. 48)"
+    },
+    {
+      "seite": 18,
+      "box": [
+        0.18,
+        0.19,
+        0.95,
+        0.88
+      ],
+      "name": "rdn-zvdh-tabelle",
+      "alt": "ZVDH-Tabelle der Regeldachneigungen je Dachziegelart und Deckungsart",
+      "unterschrift": "Regeldachneigung je Ziegelart nach ZVDH (Buch S. 50)"
+    },
+    {
+      "seite": 19,
+      "box": [
+        0.1,
+        0.3,
+        0.5,
+        0.5
+      ],
+      "name": "formziegel",
+      "alt": "Übersicht der Formziegel am Dach mit Kurzzeichen",
+      "unterschrift": "Übersicht der Formziegel (Buch S. 51)"
+    },
+    {
+      "seite": 20,
+      "box": [
+        0.5,
+        0.5,
+        0.95,
+        0.8
+      ],
+      "name": "ziegel-anforderungen",
+      "alt": "Physikalische Anforderungen an Dachziegel mit Mindesttragfähigkeiten",
+      "unterschrift": "Physikalische Eigenschaften von Dachziegeln (Buch S. 52)"
+    },
+    {
+      "seite": 22,
+      "box": [
+        0.12,
+        0.35,
+        0.52,
+        0.58
+      ],
+      "name": "ziegel-uebersicht-verfalzung",
+      "alt": "Übersichtstabelle der Dachziegel nach Verfalzung",
+      "unterschrift": "Übersicht der Dachziegel nach Verfalzung (Buch S. 54)"
+    },
+    {
+      "seite": 25,
+      "box": [
+        0.45,
+        0.11,
+        0.98,
+        0.63
+      ],
+      "name": "dachsteinarten",
+      "alt": "Die verschiedenen Dachsteinarten mit Maßen",
+      "unterschrift": "Dachsteinarten (Buch S. 57)"
+    },
+    {
+      "seite": 27,
+      "box": [
+        0.47,
+        0.35,
+        0.98,
+        0.93
+      ],
+      "name": "dachstein-anforderungen",
+      "alt": "Anforderungen an Dachsteine mit Zahlenwerten",
+      "unterschrift": "Anforderungen an Dachsteine (Buch S. 59)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 3,
+      "box": [
+        0.12,
+        0.3,
+        0.52,
+        0.58
+      ],
+      "name": "pythagoras",
+      "alt": "Der Lehrsatz des Pythagoras mit Quadraten über den Dreiecksseiten",
+      "unterschrift": "Lehrsatz des Pythagoras (Buch S. 62)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 5,
+      "box": [
+        0.49,
+        0.43,
+        0.97,
+        0.97
+      ],
+      "name": "neigung-gefaelle",
+      "alt": "Formeln für Neigung und Gefälle als Verhältnis und Prozentsatz",
+      "unterschrift": "Neigung und Gefälle: Formeln (Buch S. 64)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 6,
+      "box": [
+        0.07,
+        0.43,
+        0.53,
+        0.71
+      ],
+      "name": "winkelfunktionen",
+      "alt": "Winkelfunktionen Sinus, Cosinus und Tangens am rechtwinkligen Dreieck",
+      "unterschrift": "Winkelfunktionen am rechtwinkligen Dreieck (Buch S. 65)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 8,
+      "box": [
+        0.45,
+        0.22,
+        0.97,
+        0.43
+      ],
+      "name": "flaecheneinheiten",
+      "alt": "Tabelle der Flächeneinheiten von Quadratkilometer bis Quadratmillimeter",
+      "unterschrift": "Flächeneinheiten (Buch S. 67)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 9,
+      "box": [
+        0.5,
+        0.5,
+        0.95,
+        0.7
+      ],
+      "name": "trapez-formeln",
+      "alt": "Formeln für die Trapezfläche mit Mittellinie",
+      "unterschrift": "Trapez: Flächenformeln (Buch S. 68)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 11,
+      "box": [
+        0.07,
+        0.27,
+        0.53,
+        0.44
+      ],
+      "name": "pultdach-formeln",
+      "alt": "Formeln für das Pultdach ohne Dachüberstand",
+      "unterschrift": "Pultdach: Formeln (Buch S. 70)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 12,
+      "box": [
+        0.49,
+        0.145,
+        0.97,
+        0.37
+      ],
+      "name": "satteldach-formeln",
+      "alt": "Formeln für das gleich geneigte Satteldach",
+      "unterschrift": "Satteldach: Formeln (Buch S. 71)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 13,
+      "box": [
+        0.5,
+        0.11,
+        0.95,
+        0.35
+      ],
+      "name": "walmdach-formeln",
+      "alt": "Formeln für das gleichgeneigte Walmdach mit Gratsparrenlänge",
+      "unterschrift": "Walmdach: Formeln (Buch S. 72)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 34,
+      "box": [
+        0.5,
+        0.75,
+        0.95,
+        0.96
+      ],
+      "name": "freileitungen-abstaende",
+      "alt": "Sicherheitsabstände zu elektrischen Freileitungen nach Spannung",
+      "unterschrift": "Sicherheitsabstände zu Freileitungen (Buch S. 93)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 36,
+      "box": [
+        0.09,
+        0.14,
+        0.95,
+        0.38
+      ],
+      "name": "arbeitsplaetze-dachflaechen",
+      "alt": "Tabelle der Arbeitsmittel je Tätigkeit und Dachneigung",
+      "unterschrift": "Arbeitsmittel nach Tätigkeit und Dachneigung (Buch S. 95)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 37,
+      "box": [
+        0.5,
+        0.38,
+        0.95,
+        0.66
+      ],
+      "name": "dachdeckerstuhl",
+      "alt": "Dachdeckerstuhl mit Belag und Tragmittel auf geschlossener Dachfläche",
+      "unterschrift": "Dachdeckerstuhl (Buch S. 98)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 39,
+      "box": [
+        0.5,
+        0.38,
+        0.95,
+        0.62
+      ],
+      "name": "auflegeleiter",
+      "alt": "Dachdecker-Auflegeleiter auf der Dachfläche",
+      "unterschrift": "Dachdecker-Auflegeleiter (Buch S. 100)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF2 TEIL2.pdf",
+      "seite": 39,
+      "box": [
+        0.5,
+        0.6,
+        0.95,
+        0.8
+      ],
+      "name": "sicherungshaken-schema",
+      "alt": "Schema für die Anordnung der Sicherheitsdachhaken auf dem Dach",
+      "unterschrift": "Anordnung der Sicherungshaken (Buch S. 100)"
+    }
+  ]
+}

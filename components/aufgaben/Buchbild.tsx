@@ -10,6 +10,10 @@ export function Buchbild({ datei, unterschrift }: { datei: string; unterschrift?
       className="mt-4 overflow-hidden rounded-[var(--r-md)] border"
       style={{ borderColor: "var(--border)", background: "#faf8f3" }}
     >
+      {/* Bewusst <img> statt next/image: feste lokale WebP-Dateien, die im
+          statischen Export (Electron) und offline identisch funktionieren
+          müssen. next/image brächte hier nur JS-Overhead ohne Nutzen. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={datei}
         alt={unterschrift || "Abbildung aus dem Fachbuch"}

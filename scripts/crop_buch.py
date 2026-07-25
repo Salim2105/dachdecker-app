@@ -36,9 +36,18 @@ def main() -> int:
     out_dir = repo / "public" / "buch" / manifest["lf"]
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    doc = fitz.open(manifest["pdf"])
+    # Ein Lernfeld kann über mehrere PDF-Dateien verteilt sein (z. B. LF2 Teil 1/2).
+    # Jede Figur darf deshalb ein eigenes "pdf" angeben; sonst gilt das oberste.
+    docs: dict[str, fitz.Document] = {}
+
+    def hole(pfad: str) -> fitz.Document:
+        if pfad not in docs:
+            docs[pfad] = fitz.open(pfad)
+        return docs[pfad]
+
     ergebnis = []
     for fig in manifest["figuren"]:
+        doc = hole(fig.get("pdf", manifest.get("pdf")))
         page = doc[fig["seite"] - 1]
         r = page.rect
         x0, y0, x1, y1 = fig["box"]

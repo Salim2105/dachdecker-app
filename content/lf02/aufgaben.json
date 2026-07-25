@@ -3,506 +3,2321 @@
     "id": "lf02-001",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachformen",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
     "konfidenz": "hoch",
-    "frage": "Welche Dachform hat zwei geneigte Flächen, die sich an einem waagerechten First treffen?",
+    "frage": "Wie nennt man die obere waagerechte Kante, an der sich zwei Dachflächen treffen?",
     "optionen": [
-      "Pultdach",
-      "Satteldach",
-      "Walmdach",
-      "Zeltdach"
+      "Traufe",
+      "First",
+      "Grat",
+      "Ortgang"
     ],
     "korrekt": [
       1
     ],
-    "erklaerung": "Das Satteldach besteht aus zwei geneigten Flächen mit gemeinsamem First. Das Pultdach hat nur eine Fläche, das Zeltdach vier Dreiecke zu einer Spitze, beim Walmdach sind zusätzlich die Giebelseiten abgeschrägt."
+    "erklaerung": "Der First ist die obere waagerechte Schnittlinie zweier Dachflächen. Die Traufe ist die untere waagerechte Kante, der Grat eine ansteigende Außenkante und der Ortgang die seitliche Giebelkante.",
+    "bildDatei": "/buch/lf02/dachteile.webp",
+    "bildunterschrift": "Dachteile am Schrägbild (Buch S. 34)"
   },
   {
     "id": "lf02-002",
-    "typ": "mc",
+    "typ": "fachbegriff",
     "lernfeld": "lf02",
-    "thema": "Regeldachneigung",
-    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
     "konfidenz": "hoch",
-    "frage": "Was beschreibt die Regeldachneigung (RDN)?",
-    "optionen": [
-      "Die steilste erlaubte Dachneigung",
-      "Die Neigung, bis zu der eine Deckung ohne Zusatzmaßnahmen regensicher ist",
-      "Die Neigung, ab der ein Gerüst nötig ist",
-      "Den Neigungswinkel der Dachrinne"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Die RDN ist die untere Grenze, bis zu der eine Deckung ohne Zusatzmaßnahmen als regensicher gilt. Wird sie unterschritten, muss eine Zusatzmaßnahme eingebaut werden."
+    "erklaerung": "Die Kehle ist die einspringende Schnittlinie zweier Dachflächen und führt besonders viel Wasser.",
+    "begriff": "Kehle",
+    "definition": "Die einspringende (nach innen weisende) Schnittlinie zweier geneigter Dachflächen. Weil hier das Wasser von beiden Flächen zusammenläuft, brauchen Kehlen immer eine größere Neigung als die Regeldachneigung."
   },
   {
     "id": "lf02-003",
-    "typ": "mc",
+    "typ": "fachbegriff",
     "lernfeld": "lf02",
-    "thema": "Regeldachneigung",
-    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (2024)",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
     "konfidenz": "hoch",
-    "frage": "Ab welcher Mindestdachneigung gilt die ZVDH-Fachregel für Dachziegel und Dachsteine?",
-    "optionen": [
-      "5°",
-      "10°",
-      "22°",
-      "30°"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Die Fachregel gilt ab 10° Dachneigung. Darunter sind Dächer nach den Flachdach-/Abdichtungsregeln auszuführen."
+    "erklaerung": "Der Ortgang ist die seitliche Begrenzung der Dachfläche am Giebel.",
+    "begriff": "Ortgang",
+    "definition": "Die seitliche Kante einer Dachfläche am Giebel, auch Giebelkante genannt. Man unterscheidet den rechten und den linken Ortgang."
   },
   {
     "id": "lf02-004",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Windsogsicherung",
-    "quelle": "DIN EN 1991-1-4 Windlast (Erläuterungen); ZVDH-Regelwerk",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
     "konfidenz": "hoch",
-    "frage": "In welcher Windlastzone liegt das Binnenland wie die Region Unna überwiegend?",
+    "frage": "Aus welchen geometrischen Bestandteilen setzt sich ein Dach zusammen?",
     "optionen": [
-      "Zone 1 oder 2",
-      "Zone 3",
-      "Zone 4",
-      "Zone 5"
+      "Nur aus Dachflächen",
+      "Aus Dachflächen, Dachlinien und Dachpunkten",
+      "Aus Sparren und Latten",
+      "Aus Trauf- und Firstlinie"
     ],
     "korrekt": [
-      0
+      1
     ],
-    "erklaerung": "Deutschland hat vier Windlastzonen. Zone 4 (Küste und Inseln) hat die höchste Last; das Binnenland wie NRW/Unna liegt in Zone 1 oder 2. Eine Zone 5 gibt es nicht."
+    "erklaerung": "Geometrisch setzt sich ein Dach aus Dachflächen, Dachlinien und Dachpunkten zusammen. Die Dachflächen werden von Dachlinien begrenzt, die in Dachpunkten beginnen oder enden."
   },
   {
     "id": "lf02-005",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Windsogsicherung",
-    "quelle": "ZVDH-Regelwerk / Windsog-Herstellerunterlagen",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34, 37",
     "konfidenz": "hoch",
-    "frage": "Ab welcher Dachneigung muss nach der Faustregel jeder Ziegel mechanisch befestigt werden?",
+    "frage": "Welche Dachform kommt am häufigsten vor?",
     "optionen": [
-      "45°",
-      "55°",
-      "65°",
-      "75°"
+      "Das Pultdach",
+      "Das Walmdach",
+      "Das Satteldach",
+      "Das Mansarddach"
     ],
     "korrekt": [
       2
     ],
-    "erklaerung": "Als Faustregel gilt: Ab 65° Dachneigung ist jeder einzelne Ziegel mechanisch zu befestigen (z. B. mit Sturmklammern), weil der Sog und die Hangabtriebskraft zu groß werden."
+    "erklaerung": "Die am häufigsten vorkommende Dachform ist das Satteldach. Es besteht aus zwei rechteckigen Dachflächen und zwei dreieckigen Giebeln.",
+    "bildDatei": "/buch/lf02/dachformen.webp",
+    "bildunterschrift": "Übersicht der Dachformen (Buch S. 34)"
   },
   {
     "id": "lf02-006",
     "typ": "cloze",
     "lernfeld": "lf02",
-    "thema": "Regeldachneigung",
-    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (2024)",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
     "konfidenz": "hoch",
-    "text": "Wird die Regeldachneigung unterschritten, muss eine {{Zusatzmaßnahme}} unter der Deckung eingebaut werden. Seit 2024 gibt es dafür fünf {{Klassen}}.",
+    "erklaerung": "Grat und Kehle sind die beiden schrägen Schnittlinien: der Grat springt vor, die Kehle springt ein.",
+    "text": "Die ansteigende, vorspringende Schnittlinie zweier Dachflächen heißt {{Grat}}. Die einspringende Schnittlinie heißt {{Kehle}}.",
     "akzeptiert": {
-      "Zusatzmaßnahme": [
-        "Zusatzmassnahme",
-        "Zusatzmaßnahmen"
+      "Grat": [
+        "grat"
       ],
-      "Klassen": [
-        "Sicherheitsklassen",
-        "Klasse"
+      "Kehle": [
+        "kehle"
       ]
     },
-    "erklaerung": "Die Zusatzmaßnahme (z. B. Unterdach, Unterdeckung oder Unterspannung) erhöht die Regensicherheit. Seit der Neufassung 2024 sind es die Klassen 1 bis 5 statt früher 1 bis 6."
+    "bildDatei": "/buch/lf02/dachteile.webp",
+    "bildunterschrift": "Dachteile am Schrägbild (Buch S. 34)"
   },
   {
     "id": "lf02-007",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Windsogsicherung",
-    "quelle": "ZVDH-Regelwerk / DIN EN 1991-1-4 (Erläuterungen)",
+    "thema": "Dachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
     "konfidenz": "hoch",
-    "text": "Die stärksten Windsogkräfte treten an den {{Rand}}- und Eckbereichen auf, zum Beispiel am {{Ortgang}}. Dort wird dichter verklammert als in der Fläche.",
-    "akzeptiert": {
-      "Rand": [
-        "Rand-"
-      ],
-      "Ortgang": [
-        "First",
-        "Kehle"
-      ]
-    },
-    "erklaerung": "An Ortgang, First, Kehle und Pultabschluss entstehen Sogspitzen. Deshalb schreibt das Klammerschema dort eine höhere Befestigungsdichte vor (z. B. 1/2 im Rand statt 1/3 in der Fläche)."
+    "frage": "In welchem Bereich liegt die Dachneigung (DN) eines Flachdaches?",
+    "optionen": [
+      "0° ≤ DN ≤ 5°",
+      "5° < DN ≤ 22°",
+      "DN > 22°",
+      "0° ≤ DN ≤ 10°"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Flachdächer haben eine Dachneigung von 0° bis 5°. Flach geneigte Dächer liegen zwischen 5° und 22°, Steildächer über 22°.",
+    "bildDatei": "/buch/lf02/schutzaufgaben.webp",
+    "bildunterschrift": "Schutzaufgaben des Daches (Buch S. 35)"
   },
   {
     "id": "lf02-008",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachgeometrie",
-    "quelle": "Fachrechnen Dachdeckerhandwerk; Kontext KMK LF 2",
+    "thema": "Dachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Satteldach hat eine Höhe von {h} m über der Traufe und eine waagerechte Sparrenausladung von {b} m. Wie groß ist die Dachneigung in Prozent?",
-    "parameter": [
-      {
-        "name": "h",
-        "label": "Höhe",
-        "einheit": "m",
-        "min": 2,
-        "max": 6,
-        "schritt": 0.5
-      },
-      {
-        "name": "b",
-        "label": "Ausladung",
-        "einheit": "m",
-        "min": 3,
-        "max": 8,
-        "schritt": 0.5
-      }
+    "frage": "Ab welcher Dachneigung spricht man von einem Steildach?",
+    "optionen": [
+      "ab mehr als 5°",
+      "ab mehr als 15°",
+      "ab mehr als 22°",
+      "ab mehr als 30°"
     ],
-    "schritte": [
-      {
-        "beschreibung": "Dachneigung in % = Höhe · 100 / Ausladung = {h} · 100 / {b}",
-        "formel": "h / b * 100",
-        "ergebnisName": "neigung",
-        "einheit": "%"
-      }
+    "korrekt": [
+      2
     ],
-    "toleranzProzent": 1,
-    "erklaerung": "Die Dachneigung in Prozent ist das Verhältnis von Höhe zu waagerechter Ausladung, mal 100. 100 % entsprechen dabei 45°, nicht 90°."
+    "erklaerung": "Steildächer haben eine Dachneigung von mehr als 22°. Zwischen 5° und 22° spricht man von flach geneigten Dächern."
   },
   {
     "id": "lf02-009",
-    "typ": "calc",
-    "lernfeld": "lf02",
-    "thema": "Materialbedarf",
-    "quelle": "Fachrechnen Dachdeckerhandwerk; Kontext KMK LF 2",
-    "konfidenz": "hoch",
-    "aufgabentext": "Für eine Dachfläche von {flaeche} m² werden {proqm} Ziegel je m² benötigt. Wie viele Ziegel sind das (ohne Verschnitt)?",
-    "parameter": [
-      {
-        "name": "flaeche",
-        "label": "Dachfläche",
-        "einheit": "m²",
-        "min": 20,
-        "max": 80,
-        "schritt": 1
-      },
-      {
-        "name": "proqm",
-        "label": "Ziegel je m²",
-        "einheit": "Stück",
-        "min": 12,
-        "max": 36,
-        "schritt": 1
-      }
-    ],
-    "schritte": [
-      {
-        "beschreibung": "Ziegelbedarf = Dachfläche · Ziegel je m² = {flaeche} · {proqm}",
-        "formel": "flaeche * proqm",
-        "ergebnisName": "bedarf",
-        "einheit": "Stück"
-      }
-    ],
-    "toleranzProzent": 1,
-    "erklaerung": "Der Ziegelbedarf ist Dachfläche mal Stückzahl je m². In der Praxis kommt darauf noch ein Verschnittzuschlag von etwa 3 bis 10 %."
-  },
-  {
-    "id": "lf02-010",
-    "typ": "diagram",
-    "lernfeld": "lf02",
-    "thema": "Dachteile",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
-    "konfidenz": "hoch",
-    "frage": "Benenne die markierten Dachteile am Satteldach.",
-    "svg": "<svg viewBox='0 0 380 184' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Satteldach: benenne First, Ortgang und Traufe'><path d='M66 120 L190 54 L314 120' fill='none' stroke='currentColor' stroke-width='2'/><line x1='66' y1='120' x2='314' y2='120' stroke='currentColor' stroke-width='2'/><rect x='66' y='120' width='248' height='34' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='190' cy='44' r='11' fill='#c07d4a'/><text x='190' y='48.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='118' cy='92' r='11' fill='#c07d4a'/><text x='118' y='96.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='250' cy='132' r='11' fill='#c07d4a'/><text x='250' y='136.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
-    "zuordnung": {
-      "first": "First",
-      "ortgang": "Ortgang",
-      "traufe": "Traufe"
-    },
-    "erklaerung": "1 ist der First (oberste Kante), 2 der Ortgang (seitliche Giebelkante) und 3 die Traufe (untere Kante mit Dachrinne)."
-  },
-  {
-    "id": "lf02-011",
-    "typ": "draw",
-    "lernfeld": "lf02",
-    "thema": "Dachgeometrie",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
-    "konfidenz": "hoch",
-    "aufgabentext": "Zeichne über der gegebenen Hauswand ein Satteldach in der Giebelansicht. Beschrifte First, Traufe und Ortgang und trage den Neigungswinkel α an der Traufe ein.",
-    "vorgabeSvg": "<svg viewBox='0 0 380 178' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Hauswand (Vorgabe)'><rect x='90' y='110' width='200' height='40' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='150' y='134' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Hauswand</text></svg>",
-    "loesungSvg": "<svg viewBox='0 0 380 178' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Musterlösung Satteldach in der Giebelansicht'><rect x='90' y='110' width='200' height='40' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='150' y='134' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Hauswand</text><path d='M90 110 L190 50 L290 110' fill='none' stroke='currentColor' stroke-width='2'/><path d='M114 110 A24 24 0 0 0 110 96' fill='none' stroke='#c07d4a' stroke-width='1.2'/><text x='117' y='126' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>α</text><text x='190' y='42' fill='currentColor' font-size='12' text-anchor='middle' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>First</text><text x='40' y='96' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Ortgang</text><line x1='88' y1='92' x2='108' y2='82' stroke='currentColor' stroke-width='0.8'/><text x='296' y='118' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Traufe</text></svg>",
-    "schritte": [
-      "Über der Hauswand die beiden geneigten Dachflächen zeichnen, die sich oben im First treffen.",
-      "Den First (oberste waagerechte Kante) und die Traufe (untere Kante über der Wand) beschriften.",
-      "Die seitliche schräge Kante als Ortgang benennen.",
-      "Den Neigungswinkel α zwischen der waagerechten Traufe und der Dachfläche einzeichnen."
-    ],
-    "erklaerung": "In der Giebelansicht sieht man das Dach als Dreieck: Die Spitze ist der First, die untere Kante die Traufe, die schrägen Seiten sind die Ortgänge. Der Neigungswinkel α wird immer zur Waagerechten gemessen."
-  },
-  {
-    "id": "lf02-012",
-    "typ": "fachbegriff",
-    "lernfeld": "lf02",
-    "thema": "Regeldachneigung",
-    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine",
-    "konfidenz": "hoch",
-    "begriff": "Regeldachneigung",
-    "definition": "Die Neigung, bis zu der eine bestimmte Deckung ohne Zusatzmaßnahmen als regensicher gilt. Wird sie unterschritten, ist eine Zusatzmaßnahme (Klasse 1–5) nötig.",
-    "bestandteile": [
-      "Regel",
-      "dach",
-      "neigung"
-    ],
-    "erklaerung": "Merke die drei Wortteile: Regel-dach-neigung."
-  },
-  {
-    "id": "lf02-013",
-    "typ": "fachbegriff",
-    "lernfeld": "lf02",
-    "thema": "Windsogsicherung",
-    "quelle": "ZVDH-Regelwerk / Windsog-Herstellerunterlagen",
-    "konfidenz": "hoch",
-    "begriff": "Windsogsicherung",
-    "definition": "Die mechanische Befestigung der Ziegel gegen den Sog des Windes, meist mit Sturmklammern. In Rand- und Eckbereichen wird dichter geklammert als in der Fläche; ab 65° jeder Ziegel.",
-    "bestandteile": [
-      "Wind",
-      "sog",
-      "sicherung"
-    ],
-    "erklaerung": "Merke die drei Wortteile: Wind-sog-sicherung."
-  },
-  {
-    "id": "lf02-014",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachziegel- und Dachsteinarten",
-    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "thema": "Deckungsarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
     "konfidenz": "hoch",
-    "frage": "Worin unterscheiden sich Tondachziegel und Betondachstein im Werkstoff?",
+    "frage": "Was kennzeichnet eine ableitende Deckung?",
     "optionen": [
-      "Beide werden aus Ton gebrannt",
-      "Der Ziegel wird aus Ton gebrannt, der Dachstein aus Zement und Sand gepresst",
-      "Beide werden aus Beton gegossen",
-      "Der Ziegel besteht aus Kunststoff, der Dachstein aus Ton"
+      "Eine geschlossene, wasser- und luftdichte Dachhaut",
+      "Schuppenförmig überdeckte Einzelelemente mit vorgeschriebener Mindestneigung",
+      "Verklebte und verschweißte Bahnen",
+      "Eine Deckung ohne jede Neigung"
     ],
     "korrekt": [
       1
     ],
-    "erklaerung": "Der Tondachziegel entsteht durch Brennen von Ton, der Betondachstein durch Pressen von Zement, Sand und Wasser (ungebrannt). Deshalb heißt das eine Ziegel, das andere Stein."
+    "erklaerung": "Ableitende Deckungen bestehen aus einzelnen Elementen (z. B. Ziegel, Dachsteine, Schiefer), die sich schuppenförmig überdecken und eine Mindestneigung haben müssen. Ihre Fugen sind nicht wasser- und luftdicht.",
+    "bildDatei": "/buch/lf02/schutzaufgaben.webp",
+    "bildunterschrift": "Schutzaufgaben des Daches (Buch S. 35)"
+  },
+  {
+    "id": "lf02-010",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckungsarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
+    "konfidenz": "hoch",
+    "frage": "Wodurch entsteht bei einer abdichtenden Deckung die Dachhaut?",
+    "optionen": [
+      "Durch schuppenförmig überdeckte Ziegel",
+      "Durch untereinander verklebte oder verschweißte Bahnen und Anstriche",
+      "Durch lose aufgelegte Platten",
+      "Durch vermörtelte Fugen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Abdichtende Deckungen bestehen aus untereinander verklebten oder verschweißten Bahnen und Anstrichen. Sie bilden eine geschlossene, wasser- und luftdichte Dachhaut (z. B. Bitumen- oder Kunststoffbahnen beim Flachdach)."
+  },
+  {
+    "id": "lf02-011",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Deckungsarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
+    "konfidenz": "hoch",
+    "erklaerung": "Für beide Deckungsarten gilt: Wasser muss so schnell wie möglich abgeführt werden.",
+    "text": "Für beide Deckungsarten gilt der Grundsatz, anfallendes Wasser so schnell wie möglich der {{Rinne}} bzw. dem Abflussrohr zuzuleiten.",
+    "akzeptiert": {
+      "Rinne": [
+        "rinne",
+        "Dachrinne",
+        "dachrinne"
+      ]
+    }
+  },
+  {
+    "id": "lf02-012",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Brandschutz",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35, 36",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man unter einer harten Bedachung?",
+    "optionen": [
+      "Eine Bedachung aus besonders schweren Materialien",
+      "Eine Bedachung, die widerstandsfähig gegen Flugfeuer und strahlende Wärme ist",
+      "Eine Bedachung mit hoher Druckfestigkeit",
+      "Eine Bedachung ohne Wärmedämmung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Harte Bedachungen sind widerstandsfähig gegen Flugfeuer und strahlende Wärme. Weiche Bedachungen sind Dächer ohne diesen Nachweis nach DIN 4102-7."
+  },
+  {
+    "id": "lf02-013",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Brandschutz",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36",
+    "konfidenz": "hoch",
+    "frage": "Welcher Baustoffklasse sind nichtbrennbare Baustoffe ohne brennbare Bestandteile zugeordnet?",
+    "optionen": [
+      "A1",
+      "A2",
+      "B1",
+      "B2"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "A1 sind nichtbrennbare Baustoffe ohne brennbare Bestandteile, A2 nichtbrennbare mit brennbaren Bestandteilen (Prüfzeichen erforderlich). B1 ist schwer entflammbar, B2 normal entflammbar.",
+    "bildDatei": "/buch/lf02/baustoffklassen.webp",
+    "bildunterschrift": "Baustoffklassen nach Brennbarkeit (Buch S. 36)"
+  },
+  {
+    "id": "lf02-014",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Brandschutz",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36, 37",
+    "konfidenz": "hoch",
+    "erklaerung": "Die deutsche Klassifizierung geht von der Brennbarkeit aus, die europäische vom Brandverhalten.",
+    "text": "Die deutsche Klassifizierung teilt Baustoffe nach ihrer {{Brennbarkeit}} ein, die europäische Klassifizierung nach ihrem {{Brandverhalten}}.",
+    "akzeptiert": {
+      "Brennbarkeit": [
+        "brennbarkeit"
+      ],
+      "Brandverhalten": [
+        "brandverhalten"
+      ]
+    },
+    "bildDatei": "/buch/lf02/baustoffklassen.webp",
+    "bildunterschrift": "Baustoffklassen nach Brennbarkeit (Buch S. 36)"
   },
   {
     "id": "lf02-015",
     "typ": "fachbegriff",
     "lernfeld": "lf02",
-    "thema": "Dachziegel- und Dachsteinarten",
-    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36",
     "konfidenz": "hoch",
-    "begriff": "Biberschwanzziegel",
-    "definition": "Ein kleiner, flacher Tondachziegel ohne Falz mit gerundetem, geradem oder spitzem unterem Rand. Wegen der kleinen Fläche braucht man viele Stück je m²; er wird in Doppel- oder Kronendeckung verlegt.",
+    "erklaerung": "Die Regeldachneigung ist die Grenze, bis zu der eine Deckung ohne Zusatzmaßnahmen regensicher ist.",
+    "begriff": "Regeldachneigung (RDN)",
+    "definition": "Die unterste Dachneigungsgrenze, bei der sich eine ableitende Deckung in der Praxis ohne weitere Zusatzmaßnahmen als regensicher erwiesen hat. Sie wird in den Fachregeln des ZVDH festgelegt.",
     "bestandteile": [
-      "Biber",
-      "schwanz",
-      "ziegel"
+      "Regel",
+      "dach",
+      "neigung"
     ],
-    "erklaerung": "Die Form des unteren Randes erinnert an einen Biberschwanz — daher der Name."
+    "bildDatei": "/buch/lf02/rdn-nomogramm.webp",
+    "bildunterschrift": "Regeldachneigungen im Überblick (Buch S. 36)"
   },
   {
     "id": "lf02-016",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachziegel- und Dachsteinarten",
-    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36",
     "konfidenz": "hoch",
-    "text": "Ein {{Tondachziegel}} wird aus Ton gebrannt, ein {{Betondachstein}} aus Zement und Sand gepresst.",
-    "akzeptiert": {
-      "Tondachziegel": [
-        "tondachziegel",
-        "Dachziegel",
-        "Ziegel"
-      ],
-      "Betondachstein": [
-        "betondachstein",
-        "Dachstein",
-        "Betonstein"
-      ]
-    },
-    "erklaerung": "Gebrannt = Ziegel, gepresst/ungebrannt = Stein. Das ist der grundlegende Werkstoffunterschied."
+    "frage": "Was muss geschehen, wenn die Regeldachneigung unterschritten wird?",
+    "optionen": [
+      "Nichts, die Deckung bleibt regensicher",
+      "Es sind Zusatzmaßnahmen wie Unterdach, Unterdeckung oder Unterspannung vorzusehen",
+      "Die Deckung muss vermörtelt werden",
+      "Die Dachlatten müssen verdoppelt werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Unterschreitung der Regeldachneigung sind immer zusätzliche Maßnahmen vorzusehen: Unterdach, Unterdeckung oder Unterspannung. Zu beachten ist das Merkblatt für Unterdächer, Unterdeckungen und Unterspannungen."
   },
   {
     "id": "lf02-017",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Deckungsarten",
-    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36",
     "konfidenz": "hoch",
-    "frage": "In welcher Deckart wird der Biberschwanzziegel typischerweise verlegt?",
+    "frage": "Warum brauchen Kehlen immer eine größere Neigung als die Regeldachneigung?",
     "optionen": [
-      "Einfachdeckung",
-      "Doppeldeckung",
-      "Stülpdeckung",
-      "Klöppeldeckung"
+      "Weil dort mehr Schnee liegt",
+      "Wegen des erhöhten Wasseranfalls",
+      "Weil dort die Latten dünner sind",
+      "Wegen der besseren Optik"
     ],
     "korrekt": [
       1
     ],
-    "erklaerung": "Weil der Biber keinen Falz hat, überdecken sich in der Doppeldeckung drei Ziegellagen — so wird die Deckung regensicher. Falzziegel dagegen greifen über ihre Falze ineinander und kommen in Einfachdeckung aus."
+    "erklaerung": "In der Kehle läuft das Wasser von zwei Dachflächen zusammen. Wegen dieses erhöhten Wasseranfalls müssen Kehlen immer größere Neigungen haben als die Regeldachneigung."
   },
   {
     "id": "lf02-018",
-    "typ": "cloze",
+    "typ": "fachbegriff",
     "lernfeld": "lf02",
-    "thema": "Deckungsarten",
-    "quelle": "ZVDH-Fachregel Dachziegel/Dachsteine; LF 2-Quellen (verifiziert)",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 36",
     "konfidenz": "hoch",
-    "text": "Der Biberschwanzziegel wird meist in {{Doppeldeckung}} verlegt, ein Falzziegel dagegen in {{Einfachdeckung}}.",
-    "akzeptiert": {
-      "Doppeldeckung": [
-        "doppeldeckung",
-        "Kronendeckung"
-      ],
-      "Einfachdeckung": [
-        "einfachdeckung"
-      ]
-    },
-    "erklaerung": "Ohne Falz braucht der Biber die Überdeckung durch eine zusätzliche Lage (Doppeldeckung); der Falz des Falzziegels dichtet die Fuge schon selbst ab."
+    "erklaerung": "Die Mindestdachneigung ist die absolute Untergrenze und darf auch mit Zusatzmaßnahmen nicht unterschritten werden.",
+    "begriff": "Mindestdachneigung",
+    "definition": "Die unterste Dachneigungsgrenze einer Deckung, die auch mit Zusatzmaßnahmen nicht unterschritten werden darf. Sie liegt unterhalb der Regeldachneigung."
   },
   {
     "id": "lf02-019",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Traglattung",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 50",
     "konfidenz": "hoch",
-    "frage": "Wozu dient die Konterlattung unter der Traglattung?",
+    "frage": "Welche Regeldachneigung hat eine Biberschwanz-Doppeldeckung?",
     "optionen": [
-      "Sie trägt direkt die Dachziegel",
-      "Sie schafft eine Hinterlüftung und lässt Wasser auf der Unterdeckbahn ablaufen",
-      "Sie ersetzt die Dampfsperre",
-      "Sie dient nur der Optik"
+      "22°",
+      "25°",
+      "30°",
+      "40°"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Ebene Dachziegel (Biberschwanzziegel) haben in der Doppel- und Kronendeckung eine Regeldachneigung von 30°. Bei Einfachdeckung mit Spließen sind es 40°.",
+    "bildDatei": "/buch/lf02/rdn-zvdh-tabelle.webp",
+    "bildunterschrift": "Regeldachneigung je Ziegelart nach ZVDH (Buch S. 50)"
+  },
+  {
+    "id": "lf02-020",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Regeldachneigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 37",
+    "konfidenz": "hoch",
+    "frage": "Welche Regeldachneigung hat eine Reetdeckung?",
+    "optionen": [
+      "22°",
+      "30°",
+      "40°",
+      "45°"
+    ],
+    "korrekt": [
+      3
+    ],
+    "erklaerung": "Reet und Stroh haben mit 45° die höchste Regeldachneigung. Holzschindeln (dreilagig, DIN 68119) liegen bei 22°, Bitumenschindeln je nach Form zwischen 15° und 30°.",
+    "bildDatei": "/buch/lf02/rdn-tabelle.webp",
+    "bildunterschrift": "Regeldachneigungen nach Deckungsart (Buch S. 36)"
+  },
+  {
+    "id": "lf02-021",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachaufbauten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 38",
+    "konfidenz": "hoch",
+    "frage": "Welche lichte Höhe (Kopfhöhe) muss bei einer Schleppdachgaube mindestens vorhanden sein?",
+    "optionen": [
+      "1,50 m",
+      "1,85 m",
+      "2,00 m",
+      "2,25 m"
     ],
     "korrekt": [
       1
     ],
-    "erklaerung": "Die Konterlattung liegt in Sparrenrichtung auf der Unterdeckbahn. Sie hebt die Traglattung ab, damit Wasser auf der Bahn zur Traufe abläuft, und schafft die belüftete Luftschicht. Die Ziegel trägt erst die quer darauf genagelte Traglattung."
-  },
-  {
-    "id": "lf02-020",
-    "typ": "calc",
-    "lernfeld": "lf02",
-    "thema": "Traglattung",
-    "quelle": "LF 2-Quellen: Anzahl Lattenreihen = Sparrenlänge / Lattweite (aufgerundet)",
-    "konfidenz": "hoch",
-    "aufgabentext": "Ein Sparren ist {sparren} m lang. Die Lattweite (Reihenabstand) beträgt {lattweite} cm. Wie viele Traglattenreihen werden benötigt (aufgerundet)?",
-    "parameter": [
-      {
-        "name": "sparren",
-        "label": "Sparrenlänge",
-        "einheit": "m",
-        "min": 4,
-        "max": 8,
-        "schritt": 0.1
-      },
-      {
-        "name": "lattweite",
-        "label": "Lattweite",
-        "einheit": "cm",
-        "min": 32,
-        "max": 38,
-        "schritt": 1
-      }
-    ],
-    "schritte": [
-      {
-        "beschreibung": "Reihen = Sparrenlänge / Lattweite, auf ganze Reihen aufgerundet ({sparren} m / {lattweite} cm)",
-        "formel": "ceil(sparren / (lattweite / 100))",
-        "ergebnisName": "reihen",
-        "einheit": "Reihen"
-      }
-    ],
-    "toleranzProzent": 0,
-    "erklaerung": "Erst gleiche Einheit: Lattweite in Meter (cm/100). Dann Sparrenlänge durch Lattweite teilen und aufrunden, weil eine angefangene Reihe eine ganze Latte braucht."
-  },
-  {
-    "id": "lf02-021",
-    "typ": "fachbegriff",
-    "lernfeld": "lf02",
-    "thema": "Traglattung",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
-    "konfidenz": "hoch",
-    "begriff": "Konterlattung",
-    "definition": "Latten, die in Sparrenrichtung auf die Unterdeckbahn genagelt werden. Sie schaffen die Hinterlüftung, lassen Wasser zur Traufe ablaufen und tragen die quer verlegte Traglattung.",
-    "bestandteile": [
-      "Konter",
-      "lattung"
-    ],
-    "erklaerung": "Konter = quer/gegen: Die Konterlatte liegt quer zur späteren Traglatte, in Richtung des Sparrens."
+    "erklaerung": "Zwischen Unterkante der Gaubendecke und Oberkante des Fußbodens muss eine Kopfhöhe von mindestens 1,85 m vorhanden sein."
   },
   {
     "id": "lf02-022",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Traglattung",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "thema": "Dachaufbauten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 38",
     "konfidenz": "hoch",
-    "text": "Die {{Konterlattung}} liegt in Sparrenrichtung und schafft die {{Hinterlüftung}}; quer darauf trägt die {{Traglattung}} die Ziegel.",
-    "akzeptiert": {
-      "Konterlattung": [
-        "konterlattung",
-        "Konterlatte",
-        "Konterlatten"
-      ],
-      "Hinterlüftung": [
-        "hinterlueftung",
-        "Hinterlueftung",
-        "Belüftung",
-        "Belueftung"
-      ],
-      "Traglattung": [
-        "traglattung",
-        "Dachlattung",
-        "Traglatte"
-      ]
-    },
-    "erklaerung": "Erst Konterlatte (längs, Sparrenrichtung) für Luft und Wasserablauf, dann Traglatte (quer) als Auflager für die Ziegel."
+    "frage": "Welche drei Grundformen von Dachgauben sind am bekanntesten?",
+    "optionen": [
+      "Schleppdach-, Satteldach- und Fledermausgaube",
+      "Pultdach-, Walmdach- und Zeltgaube",
+      "Rund-, Eck- und Spitzgaube",
+      "Kreuz-, Rhomben- und Faltgaube"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die drei bekanntesten Grundformen sind die Schleppdachgaube, die Satteldach- bzw. abgewalmte Satteldachgaube und die Fledermausgaube."
   },
   {
     "id": "lf02-023",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachformen",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "thema": "Dachaufbauten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 39",
     "konfidenz": "hoch",
-    "frage": "Welche Dachform hat an einer Giebelseite eine kleine, abgeschrägte Walmfläche über dem senkrechten Giebel?",
+    "frage": "Wie breit sollte ein Dachflächenfenster höchstens sein?",
     "optionen": [
-      "Satteldach",
-      "Krüppelwalmdach",
-      "Pultdach",
-      "Zeltdach"
+      "etwa 0,80 m",
+      "etwa 1,10 m",
+      "etwa 1,40 m",
+      "etwa 2,00 m"
     ],
     "korrekt": [
-      1
+      2
     ],
-    "erklaerung": "Beim Krüppelwalm (Schopfwalm) ist nur der obere Teil der Giebelseite abgewalmt, unten bleibt der senkrechte Giebel. Beim Vollwalm reicht die Walmfläche bis zur Traufe."
+    "erklaerung": "Da Dachflächenfenster durch Schlagregen und Hagel stark beansprucht werden, sollten sie nie breiter als etwa 1,40 m sein. Sie erstrecken sich über ein bis höchstens zwei Sparrenfelder."
   },
   {
     "id": "lf02-024",
+    "typ": "fachbegriff",
+    "lernfeld": "lf02",
+    "thema": "Dachaufbauten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 39",
+    "konfidenz": "hoch",
+    "erklaerung": "Ein Wechsel überträgt die Last des unterbrochenen Sparrens auf die Nachbarsparren.",
+    "begriff": "Wechsel",
+    "definition": "Ein quer eingebautes Holz, mit dem ein unterbrochener Sparren oberhalb und unterhalb einer Öffnung (z. B. für ein breites Dachflächenfenster) abgefangen wird. Die Last wird auf die benachbarten Sparren übertragen, die deshalb stärker ausgebildet werden."
+  },
+  {
+    "id": "lf02-025",
     "typ": "mc",
     "lernfeld": "lf02",
-    "thema": "Dachgeometrie und Dachteile",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 2",
+    "thema": "Dachaufbauten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 39",
     "konfidenz": "hoch",
-    "frage": "Was ist der Unterschied zwischen einem Grat und einer Kehle?",
+    "frage": "Bei welcher Dachkonstruktion sind Dacheinschnitte über mehr als zwei Sparrenfelder möglich?",
     "optionen": [
-      "Grat und Kehle sind dasselbe",
-      "Der Grat ist eine nach außen fallende Kante, die Kehle eine einspringende (nach innen)",
-      "Der Grat ist die unterste Kante, die Kehle die oberste",
-      "Die Kehle liegt am Ortgang, der Grat an der Traufe"
+      "Beim Sparrendach",
+      "Beim Kehlbalkendach",
+      "Beim Pfettendachstuhl",
+      "Bei jeder Dachkonstruktion"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der Einbau über zwei Sparrenfelder hinaus ist nur bei Pfettendachstühlen möglich, weil dort ein neues Auflager für die Sparren geschaffen werden kann."
+  },
+  {
+    "id": "lf02-026",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 40",
+    "konfidenz": "hoch",
+    "frage": "Welche maximale Stützweite darf eine Dachlatte mit dem Querschnitt 30/50 mm ohne rechnerischen Nachweis haben?",
+    "optionen": [
+      "60 cm",
+      "80 cm",
+      "100 cm",
+      "120 cm"
     ],
     "korrekt": [
       1
     ],
-    "erklaerung": "Am Walm treffen zwei Dachflächen als nach außen zeigende Kante zusammen — das ist der Grat. Springt die Verschneidung nach innen (z. B. an einer Gaube oder im L-Grundriss), heißt sie Kehle; dort läuft das Wasser zusammen."
+    "erklaerung": "Nach den Regelquerschnitten darf eine Dachlatte 30/50 mm ohne weiteren rechnerischen Nachweis maximal 80 cm überspannen. Bei 40/60 mm sind es 100 cm.",
+    "bildDatei": "/buch/lf02/dachlatten-querschnitte.webp",
+    "bildunterschrift": "Regelquerschnitte für Dachlatten (Buch S. 40)"
+  },
+  {
+    "id": "lf02-027",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 40",
+    "konfidenz": "hoch",
+    "frage": "Wie groß darf die Fehlkante einer Dachlatte höchstens sein?",
+    "optionen": [
+      "höchstens ein Viertel der Querschnittsseite",
+      "höchstens ein Drittel der Querschnittsseite",
+      "höchstens die Hälfte der Querschnittsseite",
+      "Fehlkanten sind grundsätzlich unzulässig"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Fehlkante darf höchstens ein Drittel der zugehörigen Querschnittsseite betragen. Die Kante, die zur Traufe zeigt, muss fehlkantenfrei sein.",
+    "bildDatei": "/buch/lf02/lattenbefestigung.webp",
+    "bildunterschrift": "Befestigung von Dach- und Konterlatten (Buch S. 40)"
+  },
+  {
+    "id": "lf02-028",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 40",
+    "konfidenz": "hoch",
+    "erklaerung": "Konterlatten schaffen den Belüftungsquerschnitt zwischen Deckung und Zusatzmaßnahme.",
+    "text": "Konterlatten dienen der Schaffung von {{Belüftungsquerschnitten}} zwischen der Deckung und den auf den Sparren angebrachten Zusatzmaßnahmen. Ihre Mindeststärke beträgt {{24}} mm.",
+    "akzeptiert": {
+      "Belüftungsquerschnitten": [
+        "Belüftungsquerschnitt",
+        "Belueftungsquerschnitten",
+        "Lüftungsquerschnitten"
+      ],
+      "24": [
+        "24 mm"
+      ]
+    },
+    "bildDatei": "/buch/lf02/lattenbefestigung.webp",
+    "bildunterschrift": "Befestigung von Dach- und Konterlatten (Buch S. 40)"
+  },
+  {
+    "id": "lf02-029",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 40",
+    "konfidenz": "hoch",
+    "frage": "Welche Mindesteindringtiefe gilt für glattschaftige Nägel und Klammern?",
+    "optionen": [
+      "6 d",
+      "8 d",
+      "12 d",
+      "16 d"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Die Mindesteindringtiefen betragen vereinfacht: glattschaftige Nägel und Klammern 12 d, profilierte Nägel (Rillennägel) 8 d und Schrauben 6 d (d = Durchmesser des Verbindungsmittels)."
+  },
+  {
+    "id": "lf02-030",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 40",
+    "konfidenz": "hoch",
+    "frage": "Welche maximale Holzfeuchte dürfen Traglatten haben?",
+    "optionen": [
+      "10 %",
+      "15 %",
+      "20 %",
+      "25 %"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Traglatten müssen maschinell sortiert sein und dürfen höchstens 20 % Holzfeuchte aufweisen. Sie sollen gesund, trocken und möglichst astfrei sein."
+  },
+  {
+    "id": "lf02-031",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 41",
+    "konfidenz": "hoch",
+    "frage": "Wie dick muss eine Holzschalung bei einem Achsabstand der Unterkonstruktion von 0,80 m mindestens sein?",
+    "optionen": [
+      "20 mm",
+      "24 mm",
+      "28 mm",
+      "30 mm"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Ohne Einzelnachweis gilt: ≥ 24 mm bei Achsabstand ≤ 0,80 m, ≥ 28 mm bei ≤ 0,90 m und ≥ 30 mm bei ≤ 1,0 m.",
+    "bildDatei": "/buch/lf02/schalung-mindestdicken.webp",
+    "bildunterschrift": "Mindestdicken für Holzschalungen (Buch S. 41)"
+  },
+  {
+    "id": "lf02-032",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 41",
+    "konfidenz": "hoch",
+    "frage": "Warum sollen Schalbretter nicht breiter als 20 cm sein?",
+    "optionen": [
+      "Weil sie sonst zu schwer werden",
+      "Weil sonst die Gefahr der Verwerfung zu groß wäre",
+      "Weil sie sonst nicht auf die Sparren passen",
+      "Weil breitere Bretter nicht hergestellt werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Breite der Bretter sollte nicht größer als 20 cm sein, weil sonst die Gefahr der Verwerfung zu groß wäre."
+  },
+  {
+    "id": "lf02-033",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 41",
+    "konfidenz": "hoch",
+    "erklaerung": "Die rechte Seite nach oben und die Baumkanten nach innen — so verwirft sich die Schalung am wenigsten.",
+    "text": "Beim Verlegen der Schalbretter muss die {{rechte}} Seite nach oben zeigen. Die Baumkanten müssen immer nach {{innen}} auf den Sparren liegen.",
+    "akzeptiert": {
+      "rechte": [
+        "rechte"
+      ],
+      "innen": [
+        "innen"
+      ]
+    }
+  },
+  {
+    "id": "lf02-034",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 42",
+    "konfidenz": "hoch",
+    "frage": "Wie groß muss die Überdeckung der Vordeckung aus Bitumendachbahnen mindestens sein?",
+    "optionen": [
+      "5 cm",
+      "8 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Bahnen der Vordeckung werden parallel zur Traufe verlegt, die Überdeckung muss mindestens 8 cm betragen. Befestigt wird mit Pappstiften."
+  },
+  {
+    "id": "lf02-035",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 42",
+    "konfidenz": "hoch",
+    "frage": "Worin besteht der Hauptunterschied zwischen Unterdeckbahnen (UDB) und Unterspannbahnen (USB)?",
+    "optionen": [
+      "UDB sind diffusionsoffen, USB sind diffusionsbehindernd",
+      "UDB sind diffusionsbehindernd, USB sind diffusionsoffen",
+      "Beide sind diffusionsdicht",
+      "UDB werden nur im Flachdach verwendet"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Unterdeckbahnen sind diffusionsoffen und behindern die Diffusion des Wasserdampfes nicht, deshalb ist kein Belüftungsquerschnitt nötig. Unterspannbahnen sind diffusionsbehindernd und brauchen einen ausreichenden Belüftungsquerschnitt."
+  },
+  {
+    "id": "lf02-036",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 43",
+    "konfidenz": "hoch",
+    "frage": "Mit welcher Überdeckung werden Unterspannbahnen von der Traufe zum First verlegt?",
+    "optionen": [
+      "5 cm",
+      "8 cm",
+      "10 cm",
+      "15 cm"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Alle weiteren Bahnen sind mit 10 cm Überdeckung von der Traufe zum First zu verlegen. Diffusionshemmende Bahnen enden 5 cm unter dem Firstscheitelpunkt."
+  },
+  {
+    "id": "lf02-037",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 43",
+    "konfidenz": "hoch",
+    "frage": "Welche Aussage über Docken, Vermörtelung und Innenverstrich ist richtig?",
+    "optionen": [
+      "Sie erhöhen die Regensicherheit und gelten als Zusatzmaßnahme",
+      "Sie gelten nicht als Zusatzmaßnahme zur Erhöhung der Regensicherheit",
+      "Sie ersetzen eine Unterspannung",
+      "Sie gelten als Windsogsicherung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Docken, Vermörtelungen und Innenverstrich gelten nicht als Zusatzmaßnahmen zur Erhöhung der Regensicherheit. Vermörtelung und Innenverstrich zählen außerdem nicht als Windsogsicherung."
+  },
+  {
+    "id": "lf02-038",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 43",
+    "konfidenz": "hoch",
+    "erklaerung": "Verklammerung befestigt Deckelemente zusätzlich, Docken schließt Fugen.",
+    "text": "Die zusätzliche Befestigung von einzelnen Deckelementen nennt man {{Verklammerung}}. Zusätzliche Sicherheit durch das Schließen von Fugen heißt {{Docken}}.",
+    "akzeptiert": {
+      "Verklammerung": [
+        "verklammerung"
+      ],
+      "Docken": [
+        "docken"
+      ]
+    }
+  },
+  {
+    "id": "lf02-039",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 44",
+    "konfidenz": "hoch",
+    "frage": "Was unterscheidet ein wasserdichtes von einem regensicheren Unterdach?",
+    "optionen": [
+      "Beim wasserdichten Unterdach werden die Konterlatten wasserdicht eingebunden",
+      "Beim regensicheren Unterdach sind die Nähte nicht verschweißt",
+      "Es gibt keinen Unterschied",
+      "Das regensichere Unterdach hat keine Bahnen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim wasserdichten Unterdach müssen Durchdringungen, Einbauteile und Einfassungen wasserdicht ausgeführt und in die Konterlatten wasserdicht eingebunden werden. Beim regensicheren Unterdach sind sie nur regensicher, und die Konterlatten werden auf der Abdichtung angebracht."
+  },
+  {
+    "id": "lf02-040",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 44",
+    "konfidenz": "hoch",
+    "frage": "Welches Material ist für die Anschlüsse von Wärmedämmsystemen ausdrücklich nicht geeignet?",
+    "optionen": [
+      "Klebebänder",
+      "Dichtungsbänder",
+      "Montageschäume",
+      "Breite Klebebänder über 10 cm"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Für die Anschlüsse werden Klebe- bzw. Dichtungsbänder (b > 10 cm) verwendet. Montageschäume sind hierfür nicht geeignet."
+  },
+  {
+    "id": "lf02-041",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 45",
+    "konfidenz": "hoch",
+    "frage": "Womit wird Ton für die Dachziegelherstellung gemagert?",
+    "optionen": [
+      "Mit Zement und Kalk",
+      "Mit feinem Quarzsand und Ziegelmehl",
+      "Mit Gips und Wasser",
+      "Mit Kunstharz"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Reiner Ton schwindet beim Brennen sehr stark und muss deshalb gemagert werden. Das geschieht durch Zugabe von feinem Quarzsand und Ziegelmehl; das Schwindmaß liegt dann zwischen 8 und 12 %.",
+    "bildDatei": "/buch/lf02/ziegelherstellung.webp",
+    "bildunterschrift": "Herstellung von Dachziegeln (Buch S. 45)"
+  },
+  {
+    "id": "lf02-042",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 46",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Dachziegel-Rohling wird wegen des Schwindens beim Trocknen und Brennen {schwund} % größer geformt als das Endmaß. Der Rohling ist {roh} mm lang. Wie lang ist der fertige Ziegel?",
+    "parameter": [
+      {
+        "name": "roh",
+        "label": "Länge Rohling",
+        "einheit": "mm",
+        "min": 400,
+        "max": 470,
+        "schritt": 5
+      },
+      {
+        "name": "schwund",
+        "label": "Schwindmaß",
+        "einheit": "%",
+        "min": 8,
+        "max": 12,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Der Rohling entspricht 100 % + {schwund} % des Endmaßes. Endmaß = Rohling / (1 + {schwund}/100)",
+        "formel": "roh / (1 + schwund/100)",
+        "ergebnisName": "endmass",
+        "einheit": "mm"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Abmessungen der Rohlinge sind wegen des beim Trocknen und Brennen auftretenden Schwindens bis zu 12 % größer als die Endmaße. Zum Zurückrechnen teilt man den Rohling durch (1 + Schwindmaß/100)."
+  },
+  {
+    "id": "lf02-043",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 46",
+    "konfidenz": "hoch",
+    "frage": "Bei welcher Temperatur werden Dachziegel im Tunnelofen gebrannt?",
+    "optionen": [
+      "etwa 400–600 °C",
+      "etwa 700–800 °C",
+      "etwa 900–1200 °C",
+      "etwa 1400–1600 °C"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Beim Brennen werden die getrockneten Rohlinge auf Stahlwagen durch Tunnelöfen bewegt und bei Temperaturen von etwa 900 °C bis 1200 °C gebrannt. Dabei findet eine chemische Umbildung statt, die eine Umformung durch Wasser nicht mehr erlaubt.",
+    "bildDatei": "/buch/lf02/ziegelherstellung.webp",
+    "bildunterschrift": "Herstellung von Dachziegeln (Buch S. 45)"
+  },
+  {
+    "id": "lf02-044",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 46",
+    "konfidenz": "hoch",
+    "frage": "Was bewirkt das Dämpfen bei der Farbgebung von Dachziegeln?",
+    "optionen": [
+      "Eine wasserdichte Glasur",
+      "Eine graue bis dunkelblaue Farbe",
+      "Eine naturrote Farbe",
+      "Eine durchgehende Färbung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Beim Dämpfen wird durch Zugabe reduzierender Stoffe in den Brand das im Rohton enthaltene Eisenoxid reduziert. Der Dachziegel bekommt dadurch eine graue bis dunkelblaue Farbe."
+  },
+  {
+    "id": "lf02-045",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 46",
+    "konfidenz": "hoch",
+    "frage": "Worin unterscheiden sich Engobe und Glasur?",
+    "optionen": [
+      "Engoben beeinflussen die Eigenschaften des Ziegels nicht, Glasuren bilden eine wasserdichte, glasähnliche Schicht",
+      "Engoben sind wasserdicht, Glasuren nicht",
+      "Beide sind identisch",
+      "Glasuren werden nach dem Brand aufgetragen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Engoben sind dünnflüssige Schlämme aus Ton, Metalloxiden und Wasser; sie geben Farbe, beeinflussen aber die Eigenschaften des Dachziegels nicht. Glasuren aus Metallsilicaten bilden beim Brand eine wasserdichte, glasähnliche, glänzende Schicht."
+  },
+  {
+    "id": "lf02-046",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 46",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Strangdachziegel geformt?",
+    "optionen": [
+      "In Revolverpressen aus Tonbatzen",
+      "Durch Mundstücke der Strangpresse und anschließendes Ablängen",
+      "Durch Gießen in Formen",
+      "Durch Pressen zwischen zwei Walzen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Strangdachziegel werden durch entsprechend ausgebildete Mundstücke der Strangpresse geformt und durch dahinter angeordnete Abschneider abgelängt. Pressdachziegel entstehen dagegen in Revolverpressen.",
+    "bildDatei": "/buch/lf02/ziegelarten-uebersicht.webp",
+    "bildunterschrift": "Strang- und Pressdachziegel (Buch S. 46)"
+  },
+  {
+    "id": "lf02-047",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 47",
+    "konfidenz": "hoch",
+    "frage": "Welche Maße hat der Biberschwanzziegel im Berliner Modell?",
+    "optionen": [
+      "155 × 380 mm",
+      "180 × 380 mm",
+      "168 × 420 mm",
+      "205 × 400 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Biber werden überwiegend im Berliner Modell (155 × 380 mm) und im Süddeutschen Modell (180 × 380 mm) hergestellt.",
+    "bildDatei": "/buch/lf02/biber-fussformen.webp",
+    "bildunterschrift": "Fußausbildungen beim Biberschwanzziegel (Buch S. 47)"
+  },
+  {
+    "id": "lf02-048",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 47",
+    "konfidenz": "hoch",
+    "frage": "Welche beiden Fußausbildungen sind bei Bibern am häufigsten?",
+    "optionen": [
+      "Sechseck- und Wappenbiber",
+      "Segment- und Rundschnittbiber",
+      "Gotischer und Spitzrautenbiber",
+      "Gradschnitt- und Korbbogenbiber"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Segment- und Rundschnittbiber sind die am häufigsten gebrauchten Biber. Daneben gibt es unter anderem Sechseck-, Spitzrauten-, Gotische, Wappen- und Gradschnittbiber.",
+    "bildDatei": "/buch/lf02/biber-fussformen.webp",
+    "bildunterschrift": "Fußausbildungen beim Biberschwanzziegel (Buch S. 47)"
+  },
+  {
+    "id": "lf02-049",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 47",
+    "konfidenz": "hoch",
+    "frage": "Welcher Dachziegel wird als einziger von links nach rechts eingedeckt?",
+    "optionen": [
+      "Der Biberschwanzziegel",
+      "Die Hohlpfanne",
+      "Der Krempziegel",
+      "Der Mönchziegel"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der Krempziegel besteht aus einer ebenen Platte mit konischem Wulst und senkrechtem Steg. Er wird als einziger nicht ebener Dachziegel von links nach rechts eingedeckt."
+  },
+  {
+    "id": "lf02-050",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 47",
+    "konfidenz": "hoch",
+    "erklaerung": "Bei Mönch und Nonne liegen die Nonnen unten auf der Latte, die Mönche überdecken die Stoßfugen.",
+    "text": "Bei der Mönch-Nonnen-Deckung liegen die nach unten schmäler werdenden Schalen, die {{Nonnen}}, auf der Dachlatte. Die nach unten breiter werdenden Schalen, die {{Mönche}}, überdecken die Stoßfugen.",
+    "akzeptiert": {
+      "Nonnen": [
+        "nonnen",
+        "Nonne"
+      ],
+      "Mönche": [
+        "moenche",
+        "mönche",
+        "Mönch"
+      ]
+    },
+    "bildDatei": "/buch/lf02/moench-nonne.webp",
+    "bildunterschrift": "Mönch- und Nonnenziegel (Buch S. 47)"
+  },
+  {
+    "id": "lf02-051",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 47",
+    "konfidenz": "hoch",
+    "frage": "Welcher Eckschnitt der Hohlpfanne gehört zur Vorschnittdeckung?",
+    "optionen": [
+      "Der Kurzschnitt",
+      "Der Langschnitt",
+      "Der Geradschnitt",
+      "Der Segmentschnitt"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Man unterscheidet zwei Arten des Eckschnittes: den Kurzschnitt für die Aufschnittdeckung und den Langschnitt für die Vorschnittdeckung."
+  },
+  {
+    "id": "lf02-052",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 48",
+    "konfidenz": "hoch",
+    "frage": "Wozu dienen die Verfalzungen bei Dachziegeln?",
+    "optionen": [
+      "Zur besseren Optik",
+      "Zur Gewichtsersparnis",
+      "Zur Erhöhung der Regensicherheit",
+      "Zur einfacheren Herstellung"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Um die Regensicherheit der Dachziegeldeckungen zu erhöhen, werden die Ränder mit Kopf-, Fuß-, Seiten- und Deckfalzen versehen, die ineinandergreifen.",
+    "bildDatei": "/buch/lf02/verfalzungen.webp",
+    "bildunterschrift": "Falzausbildung und Deckfuge (Buch S. 48)"
+  },
+  {
+    "id": "lf02-053",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 48",
+    "konfidenz": "hoch",
+    "frage": "Nach welcher Norm sind Falzziegel an allen vier Seiten verfalzt?",
+    "optionen": [
+      "DIN EN 490",
+      "DIN EN 1304",
+      "DIN EN 538",
+      "DIN 4102-7"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Nach DIN EN 1304 gehören diese Ziegel zur Gruppe der Falzziegel. Sie sind an allen vier Seiten verfalzt. DIN EN 490 gilt dagegen für Dachsteine aus Beton."
+  },
+  {
+    "id": "lf02-054",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 49",
+    "konfidenz": "hoch",
+    "frage": "Welche Regeldachneigung haben Flachdachziegel (FDZ)?",
+    "optionen": [
+      "22°",
+      "25°",
+      "30°",
+      "35°"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zu den Flachdachziegeln gehören alle verfalzten Pressdachziegel, die eine mehrfache Ringverfalzung haben und deren Regeldachneigung 22° beträgt.",
+    "bildDatei": "/buch/lf02/rdn-zvdh-tabelle.webp",
+    "bildunterschrift": "Regeldachneigung je Ziegelart nach ZVDH (Buch S. 50)"
+  },
+  {
+    "id": "lf02-055",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Formziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 51",
+    "konfidenz": "hoch",
+    "frage": "Wozu dienen Formziegel?",
+    "optionen": [
+      "Zur Verzierung der Dachfläche",
+      "Zum technisch richtigen Decken von Rändern, Kanten, Anschlüssen und Durchbrüchen ohne fremde Materialien",
+      "Als Ersatz für beschädigte Ziegel",
+      "Zur Verbesserung der Wärmedämmung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Formziegel sind Spezialziegel, die es erlauben, ein Ziegeldach an den Rändern, Kanten, Anschlüssen und Durchdringungen technisch richtig zu decken, ohne andere Materialien verwenden zu müssen. Sie sind nicht genormt.",
+    "bildDatei": "/buch/lf02/formziegel.webp",
+    "bildunterschrift": "Übersicht der Formziegel (Buch S. 51)"
+  },
+  {
+    "id": "lf02-056",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 52",
+    "konfidenz": "hoch",
+    "frage": "Welche Mindesttragfähigkeit muss ein Biberschwanzziegel bei der Biegetragfähigkeitsprüfung erreichen?",
+    "optionen": [
+      "≥ 0,6 kN",
+      "≥ 0,9 kN",
+      "≥ 1,0 kN",
+      "≥ 1,2 kN"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Mindesttragfähigkeiten betragen: Biberschwanz ≥ 0,6 kN, ebene Falzziegel ≥ 0,9 kN, Mönch- und Nonnenziegel ≥ 1,0 kN und alle übrigen Ziegel ≥ 1,2 kN.",
+    "bildDatei": "/buch/lf02/ziegel-anforderungen.webp",
+    "bildunterschrift": "Physikalische Eigenschaften von Dachziegeln (Buch S. 52)"
+  },
+  {
+    "id": "lf02-057",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 52",
+    "konfidenz": "hoch",
+    "frage": "Wie viele Dachziegel einer Lieferung müssen mindestens dauerhaft gekennzeichnet sein?",
+    "optionen": [
+      "Alle",
+      "Mindestens die Hälfte",
+      "Mindestens ein Viertel",
+      "Nur eine Probe je Palette"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Mindestens die Hälfte aller Dachziegel müssen mit einer dauerhaften Kennzeichnung (Klartext oder verschlüsselt) versehen sein: Hersteller, Produkttyp, Herkunftsland und wahlweise Fabrikationsdatum."
+  },
+  {
+    "id": "lf02-058",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 53",
+    "konfidenz": "hoch",
+    "frage": "Wodurch entstehen Aussprengungen an der Ziegeloberfläche („Kalkmännchen“)?",
+    "optionen": [
+      "Durch Frost im Kapillarporensystem",
+      "Durch Branntkalkteilchen, die beim Ablöschen ihr Volumen bis zu 100 % vergrößern",
+      "Durch zu hohen Wasserdruck",
+      "Durch Salzkristalle unter der Oberfläche"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Im Rohmaterial vorhandene Kalksteinstückchen werden beim Brennen zu Branntkalk. Wird der Ziegel feucht, löschen diese Teilchen zu Löschkalk ab. Die damit verbundene Volumenvergrößerung von bis zu 100 % führt durch den Innendruck zu Aussprengungen."
+  },
+  {
+    "id": "lf02-059",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 53",
+    "konfidenz": "hoch",
+    "frage": "Was zeigt die Klangprobe bei einem Dachziegel an?",
+    "optionen": [
+      "Die Frostbeständigkeit",
+      "Eventuell vorliegende Risse — ein rissefreier Ziegel klingt hell",
+      "Die Wasseraufnahme",
+      "Das Gewicht"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Klangprobe durch Anschlagen mit einem metallischen Gegenstand weist auf eventuell vorliegende Risse hin. Ein rissefreier Dachziegel muss hell klingen."
+  },
+  {
+    "id": "lf02-060",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 53",
+    "konfidenz": "hoch",
+    "erklaerung": "Sicht-, Klang- und Hauprobe sind die drei Prüfungen, die der Dachdecker ohne Labor durchführen kann.",
+    "text": "Ohne Laboruntersuchung kann der Dachdecker die Qualität eines Dachziegels mit drei Prüfungen beurteilen: der {{Sichtprobe}}, der {{Klangprobe}} und der {{Hauprobe}}.",
+    "akzeptiert": {
+      "Sichtprobe": [
+        "sichtprobe"
+      ],
+      "Klangprobe": [
+        "klangprobe"
+      ],
+      "Hauprobe": [
+        "hauprobe"
+      ]
+    },
+    "bildDatei": "/buch/lf02/ziegel-uebersicht-verfalzung.webp",
+    "bildunterschrift": "Übersicht der Dachziegel nach Verfalzung (Buch S. 54)"
+  },
+  {
+    "id": "lf02-061",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 53",
+    "konfidenz": "hoch",
+    "frage": "Um wie viel Prozent nimmt Wasser beim Gefrieren an Volumen zu?",
+    "optionen": [
+      "etwa 5 %",
+      "etwa 11 %",
+      "etwa 20 %",
+      "etwa 30 %"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Frost kann sich das Eis, das um etwa 11 % an Volumen zunimmt, in den Porenhohlraum hinein ausdehnen. Deshalb ist das Kapillarporensystem für die Frostbeständigkeit so wichtig."
+  },
+  {
+    "id": "lf02-062",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 55",
+    "konfidenz": "hoch",
+    "frage": "Nach welcher Norm werden Dachsteine aus Beton hergestellt?",
+    "optionen": [
+      "DIN EN 1304",
+      "DIN EN 490",
+      "DIN EN 538",
+      "DIN 4074-1"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Dachsteine aus Beton nach DIN EN 490 sind flächige Deckelemente aus Feinbeton. Für sie darf der Begriff „Ziegel“ nicht verwendet werden, da dieser nur Tonprodukten vorbehalten ist."
+  },
+  {
+    "id": "lf02-063",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 55",
+    "konfidenz": "hoch",
+    "frage": "Aus welchen Rohstoffen bestehen Dachsteine?",
+    "optionen": [
+      "Ton, Quarzsand und Wasser",
+      "Etwa 70 % Sand, Portlandzement, Farbpigmente und Wasser",
+      "Kalk, Gips und Wasser",
+      "Kunstharz, Sand und Farbpigmente"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Ausgangsmaterial für Dachsteine sind etwa 70 Masseprozent Sand, hochwertiger Portlandzement, zement- und lichtechte Farbpigmente sowie Wasser."
+  },
+  {
+    "id": "lf02-064",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 57",
+    "konfidenz": "hoch",
+    "frage": "Warum sind die Lattenabstände bei Dachsteindeckungen variabler als bei Dachziegeln?",
+    "optionen": [
+      "Weil Dachsteine leichter sind",
+      "Weil Dachsteine keine Kopf- und Fußverfalzungen haben",
+      "Weil Dachsteine kleiner sind",
+      "Weil Dachsteine immer vermörtelt werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Allen Dachsteinarten ist gemeinsam, dass sie keine Kopf- und Fußverfalzungen haben. Dadurch sind sie in der Höhenüberdeckung und damit in den Lattabständen variabel.",
+    "bildDatei": "/buch/lf02/dachsteinarten.webp",
+    "bildunterschrift": "Dachsteinarten (Buch S. 57)"
+  },
+  {
+    "id": "lf02-065",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 57",
+    "konfidenz": "hoch",
+    "frage": "Was soll die Fußverrippung bei profilierten Dachsteinen bewirken?",
+    "optionen": [
+      "Eine bessere Belüftung",
+      "Zusätzliche Sicherheit gegen das Einwehen von Staub und Flugschnee",
+      "Eine höhere Tragfähigkeit",
+      "Eine bessere Optik"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Profilierte Dachsteine haben statt der Fußverfalzungen Fußverrippungen, durch die eine zusätzliche Sicherheit gegen das Einwehen von Staub und Flugschnee gegeben ist."
+  },
+  {
+    "id": "lf02-066",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 59",
+    "konfidenz": "hoch",
+    "frage": "Wie viele Frost-Tau-Wechsel-Zyklen muss ein Dachstein unbeschadet überstehen?",
+    "optionen": [
+      "10 Zyklen",
+      "20 Zyklen",
+      "25 Zyklen",
+      "50 Zyklen"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Man geht von einer Frostbeständigkeit aus, wenn 25 Frost-Tau-Wechsel-Zyklen unbeschadet überstanden werden.",
+    "bildDatei": "/buch/lf02/dachstein-anforderungen.webp",
+    "bildunterschrift": "Anforderungen an Dachsteine (Buch S. 59)"
+  },
+  {
+    "id": "lf02-067",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 59",
+    "konfidenz": "hoch",
+    "frage": "Welche Maßtoleranz gilt für die Hängelänge eines Dachsteins?",
+    "optionen": [
+      "± 2 mm",
+      "± 4 mm",
+      "± 5 mm",
+      "± 8 mm"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei der Maßhaltigkeit gilt für die Hängelänge ± 4 mm und für die Deckbreite ± 5 mm.",
+    "bildDatei": "/buch/lf02/dachstein-anforderungen.webp",
+    "bildunterschrift": "Anforderungen an Dachsteine (Buch S. 59)"
+  },
+  {
+    "id": "lf02-068",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Einbauteile",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 60",
+    "konfidenz": "hoch",
+    "frage": "In welche drei Gruppen werden Einbauteile unterschieden?",
+    "optionen": [
+      "Sicherheit, Verbindung innen/außen, Belichtung",
+      "Metall, Kunststoff, Ton",
+      "Trauf-, First- und Ortgangteile",
+      "Genormt, ungenormt, Sonderanfertigung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Einbauteile dienen (a) der Sicherheit, (b) einer Verbindung zwischen innen und außen oder (c) der Belichtung der unter dem Dach liegenden Räume."
+  },
+  {
+    "id": "lf02-069",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Einbauteile",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 60",
+    "konfidenz": "hoch",
+    "frage": "Nach welcher Norm werden Sicherheitsdachhaken hergestellt?",
+    "optionen": [
+      "DIN EN 490",
+      "DIN EN 517",
+      "DIN EN 1304",
+      "DIN 4074-1"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Sicherheitsdachhaken werden nach DIN EN 517 hergestellt. Typ B ist in Richtung Traufe und/oder Ortgang und über First belastbar."
+  },
+  {
+    "id": "lf02-070",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Längen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 61",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein versprungenes Flachdach passt genau in ein umschließendes Rechteck von {laenge} m Länge und {breite} m Breite. Wie lang ist der Dachrand (Umfang)?",
+    "parameter": [
+      {
+        "name": "laenge",
+        "label": "Länge des umschließenden Rechtecks",
+        "einheit": "m",
+        "min": 20,
+        "max": 60,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Breite des umschließenden Rechtecks",
+        "einheit": "m",
+        "min": 10,
+        "max": 40,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Bei rechtwinklig versprungenen Grundrissen ist der Umfang gleich dem Umfang des umschließenden Rechtecks: U = 2 · {laenge} m + 2 · {breite} m",
+        "formel": "2 * laenge + 2 * breite",
+        "ergebnisName": "umfang",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Bei einem rechtwinklig versprungenen Grundriss heben sich die Vor- und Rücksprünge gegenseitig auf. Der Umfang ist deshalb genauso groß wie der Umfang des umschließenden Rechtecks: U = 2 · l + 2 · b."
+  },
+  {
+    "id": "lf02-071",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Pythagoras",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 62",
+    "konfidenz": "hoch",
+    "aufgabentext": "Bei einem Pultdach betragen die Firsthöhe h = {h} m und das Grundmaß g = {g} m. Wie lang ist die Dachschräge (Sparrenlänge) s?",
+    "parameter": [
+      {
+        "name": "h",
+        "label": "Firsthöhe h",
+        "einheit": "m",
+        "min": 2,
+        "max": 6,
+        "schritt": 0.1
+      },
+      {
+        "name": "g",
+        "label": "Grundmaß g",
+        "einheit": "m",
+        "min": 4,
+        "max": 9,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Satz des Pythagoras: s = √(h² + g²) = √(({h} m)² + ({g} m)²)",
+        "formel": "sqrt(h^2 + g^2)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Firsthöhe, Grundmaß und Dachschräge bilden ein rechtwinkliges Dreieck. Die Dachschräge ist die Hypotenuse: s = √(h² + g²). Buchbeispiel: h = 4,10 m, g = 6,40 m ergibt s ≈ 7,60 m.",
+    "bildDatei": "/buch/lf02/pythagoras.webp",
+    "bildunterschrift": "Lehrsatz des Pythagoras (Buch S. 62)"
+  },
+  {
+    "id": "lf02-072",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Pythagoras",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 69",
+    "konfidenz": "hoch",
+    "aufgabentext": "Bei einem symmetrischen Satteldach beträgt die Gebäudebreite b = {b} m und die Firsthöhe h = {h} m. Wie lang sind die Sparren?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 8,
+        "max": 16,
+        "schritt": 0.1
+      },
+      {
+        "name": "h",
+        "label": "Firsthöhe h",
+        "einheit": "m",
+        "min": 3,
+        "max": 8,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Beim symmetrischen Satteldach ist das Grundmaß die halbe Gebäudebreite: g = {b} m / 2",
+        "formel": "b / 2",
+        "ergebnisName": "g",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Satz des Pythagoras: s = √(g² + h²)",
+        "formel": "sqrt(g^2 + h^2)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Beim symmetrischen Satteldach ist das Grundmaß immer die halbe Gebäudebreite. Danach gilt der Satz des Pythagoras: s = √((b/2)² + h²). Buchbeispiel: b = 13,80 m, h = 6,40 m ergibt s = 9,41 m.",
+    "bildDatei": "/buch/lf02/pythagoras.webp",
+    "bildunterschrift": "Lehrsatz des Pythagoras (Buch S. 62)"
+  },
+  {
+    "id": "lf02-073",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Neigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 64",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Flachdach hat ein Gefälle von {p} %. Wie groß ist der Höhenunterschied auf einer Länge von {l} m?",
+    "parameter": [
+      {
+        "name": "p",
+        "label": "Gefälle",
+        "einheit": "%",
+        "min": 1.5,
+        "max": 5,
+        "schritt": 0.1
+      },
+      {
+        "name": "l",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 5,
+        "max": 20,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Höhe = (Prozentsatz · Länge) / 100 % = ({p} % · {l} m) / 100 %",
+        "formel": "(p * l) / 100",
+        "ergebnisName": "hoehe",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Der Prozentsatz gibt an, um wie viel die Strecke auf 100 m fällt. Es gilt: Höhe (h) = Prozentsatz (p) · Länge (l) / 100 %.",
+    "bildDatei": "/buch/lf02/neigung-gefaelle.webp",
+    "bildunterschrift": "Neigung und Gefälle: Formeln (Buch S. 64)"
+  },
+  {
+    "id": "lf02-074",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Neigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 64",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Dach hat auf einer Länge von {l} m einen Höhenunterschied von {h} m. Wie groß ist die Neigung in Prozent?",
+    "parameter": [
+      {
+        "name": "l",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 4,
+        "max": 15,
+        "schritt": 0.5
+      },
+      {
+        "name": "h",
+        "label": "Höhenunterschied",
+        "einheit": "m",
+        "min": 0.2,
+        "max": 6,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Prozentsatz = (Höhe · 100 %) / Länge = ({h} m · 100) / {l} m",
+        "formel": "(h * 100) / l",
+        "ergebnisName": "prozent",
+        "einheit": "%"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Es gilt: Prozentsatz (p) = Höhe (h) · 100 % / Länge (l). Zur Kontrolle: 45° entsprechen dem Verhältnis 1:1 und dem Prozentsatz 100 %.",
+    "bildDatei": "/buch/lf02/winkelfunktionen.webp",
+    "bildunterschrift": "Winkelfunktionen am rechtwinkligen Dreieck (Buch S. 65)"
+  },
+  {
+    "id": "lf02-075",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Neigung",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 64",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Dach hat die Neigung 1 : {n}. Rechne diese Neigung in einen Prozentsatz um.",
+    "parameter": [
+      {
+        "name": "n",
+        "label": "Verhältniszahl n",
+        "einheit": "",
+        "min": 1,
+        "max": 15,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Umrechnung Verhältnis in Prozent: p = (1 / n) · 100 % = (1 / {n}) · 100 %",
+        "formel": "(1 / n) * 100",
+        "ergebnisName": "prozent",
+        "einheit": "%"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Verhältnisse und Prozentsätze lassen sich wechselseitig umrechnen: 1/n = p/100 %, also p = (1/n) · 100 %. Ein Verhältnis von 1:1 entspricht 100 % und einem Winkel von 45°.",
+    "bildDatei": "/buch/lf02/neigung-gefaelle.webp",
+    "bildunterschrift": "Neigung und Gefälle: Formeln (Buch S. 64)"
+  },
+  {
+    "id": "lf02-076",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Winkelfunktionen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 70",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Pultdach (ohne Dachüberstand) hat eine Gebäudebreite von b = {b} m und eine Dachneigung von {dn}°. Wie lang ist die Sparrenlänge s?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 5,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 15,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Beim Pultdach gilt: s = b : cos DN = {b} m : cos {dn}°",
+        "formel": "b / cos(dn * pi / 180)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Beim Pultdach ist die Gebäudebreite die Ankathete und die Sparrenlänge die Hypotenuse: s = b / cos DN. Buchbeispiel: b = 8,00 m bei 40° ergibt s = 10,44 m.",
+    "bildDatei": "/buch/lf02/pultdach-formeln.webp",
+    "bildunterschrift": "Pultdach: Formeln (Buch S. 70)"
+  },
+  {
+    "id": "lf02-077",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Winkelfunktionen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 70",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Pultdach hat eine Gebäudebreite von b = {b} m und eine Dachneigung von {dn}°. Wie groß ist die Firsthöhe f_H?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 5,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 15,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Beim Pultdach gilt: f_H = b · tan DN = {b} m · tan {dn}°",
+        "formel": "b * tan(dn * pi / 180)",
+        "ergebnisName": "fh",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Firsthöhe ist die Gegenkathete zum Neigungswinkel: f_H = b · tan DN. Buchbeispiel: b = 8,00 m bei 40° ergibt f_H = 6,71 m.",
+    "bildDatei": "/buch/lf02/pultdach-formeln.webp",
+    "bildunterschrift": "Pultdach: Formeln (Buch S. 70)"
+  },
+  {
+    "id": "lf02-078",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Dachflächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 71",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein gleich geneigtes Satteldach (ohne Dachüberstand) ist b = {b} m breit und t = {t} m lang. Die Dachneigung beträgt {dn}°. Wie groß ist die gesamte Dachfläche?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 8,
+        "max": 14,
+        "schritt": 0.5
+      },
+      {
+        "name": "t",
+        "label": "Trauflänge t",
+        "einheit": "m",
+        "min": 10,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 25,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge: s = (b/2) : cos DN = ({b} m / 2) : cos {dn}°",
+        "formel": "(b / 2) / cos(dn * pi / 180)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Eine Dachfläche: A₁ = t · s",
+        "formel": "t * s",
+        "ergebnisName": "a1",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Das Satteldach hat zwei gleiche Flächen: A_ges = 2 · A₁",
+        "formel": "2 * a1",
+        "ergebnisName": "ages",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Beim gleich geneigten Satteldach gilt s = (b/2)/cos DN und A₁ = t · s; beide Flächen sind gleich groß. Kontrolle: A_K = Grundfläche / cos DN muss dasselbe Ergebnis liefern. Buchbeispiel: 10,00 × 15,00 m bei 50° ergibt 233,40 m².",
+    "bildDatei": "/buch/lf02/satteldach-formeln.webp",
+    "bildunterschrift": "Satteldach: Formeln (Buch S. 71)"
+  },
+  {
+    "id": "lf02-079",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Dachflächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 71",
+    "konfidenz": "hoch",
+    "aufgabentext": "Kontrolliere die Dachfläche über die Kontrollfläche: Ein Gebäude ist {b} m breit und {t} m lang, die Dachneigung beträgt {dn}°. Wie groß ist A_K?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 8,
+        "max": 14,
+        "schritt": 0.5
+      },
+      {
+        "name": "t",
+        "label": "Gebäudelänge t",
+        "einheit": "m",
+        "min": 10,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 25,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Grundfläche des Gebäudes: {b} m · {t} m",
+        "formel": "b * t",
+        "ergebnisName": "grund",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Kontrollfläche: A_K = Grundfläche / cos DN",
+        "formel": "grund / cos(dn * pi / 180)",
+        "ergebnisName": "ak",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Kontrollfläche A_K = Grundfläche des Gebäudes / cos DN ist die schnelle Probe für jede Dachflächenberechnung ohne Dachüberstand. Sie muss (fast) genau mit der Summe der Einzelflächen übereinstimmen.",
+    "bildDatei": "/buch/lf02/satteldach-formeln.webp",
+    "bildunterschrift": "Satteldach: Formeln (Buch S. 71)"
+  },
+  {
+    "id": "lf02-080",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Dachflächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 72",
+    "konfidenz": "hoch",
+    "aufgabentext": "Bei einem gleichgeneigten Walmdach beträgt die Gebäudebreite b = {b} m und die Dachneigung {dn}°. Wie lang ist ein Gratsparren g?",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gebäudebreite b",
+        "einheit": "m",
+        "min": 8,
+        "max": 14,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 30,
+        "max": 55,
+        "schritt": 2
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge: s = (b/2) : cos DN",
+        "formel": "(b / 2) / cos(dn * pi / 180)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gratsparrenlänge: g = √((b/2)² + s²)",
+        "formel": "sqrt((b/2)^2 + s^2)",
+        "ergebnisName": "g",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Der Gratsparren ist die Hypotenuse aus halber Gebäudebreite und Sparrenlänge: g = √((b/2)² + s²). Buchbeispiel: b = 12,00 m bei 48° ergibt s = 8,97 m und g = 10,79 m.",
+    "bildDatei": "/buch/lf02/walmdach-formeln.webp",
+    "bildunterschrift": "Walmdach: Formeln (Buch S. 72)"
+  },
+  {
+    "id": "lf02-081",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Flächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 68",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine trapezförmige Walmdachfläche hat die Trauflänge l₁ = {l1} m, die Firstlänge l₂ = {l2} m und die Höhe (Sparrenlänge) h = {h} m. Wie groß ist die Fläche?",
+    "parameter": [
+      {
+        "name": "l1",
+        "label": "Trauflänge l₁",
+        "einheit": "m",
+        "min": 12,
+        "max": 22,
+        "schritt": 0.5
+      },
+      {
+        "name": "l2",
+        "label": "Firstlänge l₂",
+        "einheit": "m",
+        "min": 4,
+        "max": 10,
+        "schritt": 0.5
+      },
+      {
+        "name": "h",
+        "label": "Höhe h (Sparrenlänge)",
+        "einheit": "m",
+        "min": 5,
+        "max": 11,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Mittellinie: l_m = (l₁ + l₂)/2 = ({l1} m + {l2} m)/2",
+        "formel": "(l1 + l2) / 2",
+        "ergebnisName": "lm",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Trapezfläche: A = l_m · h",
+        "formel": "lm * h",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Trapezfläche berechnet man über die Mittellinie: A = ((l₁ + l₂)/2) · h. Buchbeispiel Walmdach: ((18,00 + 6,00)/2) · 8,97 = 107,64 m².",
+    "bildDatei": "/buch/lf02/trapez-formeln.webp",
+    "bildunterschrift": "Trapez: Flächenformeln (Buch S. 68)"
+  },
+  {
+    "id": "lf02-082",
+    "typ": "calc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Flächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 69",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Giebeldreieck hat die Grundlänge g = {g} m und die Höhe h = {h} m. Wie groß ist der Flächeninhalt?",
+    "parameter": [
+      {
+        "name": "g",
+        "label": "Grundlänge g",
+        "einheit": "m",
+        "min": 6,
+        "max": 14,
+        "schritt": 0.1
+      },
+      {
+        "name": "h",
+        "label": "Höhe h",
+        "einheit": "m",
+        "min": 3,
+        "max": 8,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Dreiecksfläche: A = (g · h)/2 = ({g} m · {h} m)/2",
+        "formel": "(g * h) / 2",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Die Dreiecksfläche ist A = (g · h)/2. Buchbeispiel: Giebel mit h = 6,20 m und g = 10,20 m ergibt A = 31,62 m²."
+  },
+  {
+    "id": "lf02-083",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Flächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 67",
+    "konfidenz": "hoch",
+    "frage": "Mit welcher Zahl rechnet man Flächeneinheiten um?",
+    "optionen": [
+      "mit 10",
+      "mit 100",
+      "mit 1000",
+      "mit 60"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Für die Umrechnung von Flächeneinheiten gilt die Umrechnungszahl 100 (bei Längen dagegen die Zahl 10). Es gilt: 1 ha = 100 a = 10 000 m².",
+    "bildDatei": "/buch/lf02/flaecheneinheiten.webp",
+    "bildunterschrift": "Flächeneinheiten (Buch S. 67)"
+  },
+  {
+    "id": "lf02-084",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Flächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 67",
+    "konfidenz": "hoch",
+    "erklaerung": "Ar und Hektar sind die Flächeneinheiten für Grundstücke: 1 ha = 100 a = 10 000 m².",
+    "text": "Ein Hektar (ha) entspricht {{100}} Ar. Ein Ar entspricht {{100}} Quadratmetern.",
+    "akzeptiert": {
+      "100": [
+        "hundert"
+      ]
+    },
+    "bildDatei": "/buch/lf02/flaecheneinheiten.webp",
+    "bildunterschrift": "Flächeneinheiten (Buch S. 67)"
+  },
+  {
+    "id": "lf02-085",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 93",
+    "konfidenz": "hoch",
+    "frage": "Welcher Sicherheitsabstand ist zu einer elektrischen Freileitung mit unbekannter Spannungsgröße einzuhalten?",
+    "optionen": [
+      "1 m",
+      "3 m",
+      "4 m",
+      "5 m"
+    ],
+    "korrekt": [
+      3
+    ],
+    "erklaerung": "Bei unbekannter Spannungsgröße gilt immer der größte Sicherheitsabstand von 5 m. Die Abstände betragen: 1 m bis 1 kV, 3 m bei 1–110 kV, 4 m bei 110–220 kV und 5 m bei 220–380 kV.",
+    "bildDatei": "/buch/lf02/freileitungen-abstaende.webp",
+    "bildunterschrift": "Sicherheitsabstände zu Freileitungen (Buch S. 93)"
+  },
+  {
+    "id": "lf02-086",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 93",
+    "konfidenz": "hoch",
+    "frage": "Welcher Sicherheitsabstand gilt bei einer Freileitung mit einer Spannung von 1 kV bis 110 kV?",
+    "optionen": [
+      "1 m",
+      "3 m",
+      "4 m",
+      "5 m"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei 1 kV bis 110 kV beträgt der Sicherheitsabstand 3 m. Diese Abstände gelten auch dann, wenn die Leitung spannungsfrei geschaltet ist, und dürfen nicht unterschritten werden.",
+    "bildDatei": "/buch/lf02/freileitungen-abstaende.webp",
+    "bildunterschrift": "Sicherheitsabstände zu Freileitungen (Buch S. 93)"
+  },
+  {
+    "id": "lf02-087",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 93",
+    "konfidenz": "hoch",
+    "frage": "Warum sind nasse Dachlatten in der Nähe von Freileitungen besonders gefährlich?",
+    "optionen": [
+      "Weil sie schwerer sind",
+      "Weil auch schlecht leitende Materialien nass den Strom leiten und zum Stromüberschlag führen können",
+      "Weil sie leichter brechen",
+      "Weil sie rutschig sind"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Selbst weniger gut leitende Materialien können, wenn sie nass sind, den elektrischen Strom leiten und damit zu einem Stromüberschlag führen. Das kann passieren, wenn nasse Dachlatten im Bereich von Freileitungen unvorsichtig geschwenkt werden.",
+    "bildDatei": "/buch/lf02/freileitungen-abstaende.webp",
+    "bildunterschrift": "Sicherheitsabstände zu Freileitungen (Buch S. 93)"
+  },
+  {
+    "id": "lf02-088",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 84",
+    "konfidenz": "hoch",
+    "frage": "Wer ist Träger der gesetzlichen Unfallversicherung und erlässt die Unfallverhütungsvorschriften?",
+    "optionen": [
+      "Das Gewerbeaufsichtsamt",
+      "Die Berufsgenossenschaft",
+      "Die Handwerkskammer",
+      "Der ZVDH"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Berufsgenossenschaften sind Träger der gesetzlichen Unfallversicherung und erlassen die Unfallverhütungsvorschriften (UVV). Zusammen mit den staatlichen Gewerbeaufsichtsämtern überwachen sie deren Einhaltung."
+  },
+  {
+    "id": "lf02-089",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 100",
+    "konfidenz": "hoch",
+    "frage": "Wie weit muss eine Anlegeleiter über ihren Austritt hinausragen?",
+    "optionen": [
+      "mindestens 0,50 m",
+      "mindestens 1,00 m",
+      "mindestens 1,50 m",
+      "mindestens 2,00 m"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Anlegeleitern müssen mindestens 1,00 m über ihren Austritt hinausragen. Der Anstellwinkel beträgt bei Sprossenleitern 65° bis 75°, bei Stufenleitern 60° bis 70°.",
+    "bildDatei": "/buch/lf02/auflegeleiter.webp",
+    "bildunterschrift": "Dachdecker-Auflegeleiter (Buch S. 100)"
+  },
+  {
+    "id": "lf02-090",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 100",
+    "konfidenz": "hoch",
+    "frage": "Welcher Anstellwinkel ist bei Sprossenleitern richtig?",
+    "optionen": [
+      "45° bis 55°",
+      "60° bis 70°",
+      "65° bis 75°",
+      "75° bis 85°"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der Anstellwinkel beträgt bei Sprossenleitern zwischen 65° und 75°, bei Stufenleitern zwischen 60° und 70°."
+  },
+  {
+    "id": "lf02-091",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 100",
+    "konfidenz": "hoch",
+    "frage": "Mit welcher Last darf eine Dachdecker-Auflegeleiter höchstens belastet werden?",
+    "optionen": [
+      "0,5 kN",
+      "1,0 kN",
+      "1,5 kN",
+      "2,5 kN"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Dachdecker-Auflegeleitern dürfen mit höchstens 1,5 kN belastet werden. Vor jeder Benutzung sind sie auf etwaige Mängel zu überprüfen.",
+    "bildDatei": "/buch/lf02/auflegeleiter.webp",
+    "bildunterschrift": "Dachdecker-Auflegeleiter (Buch S. 100)"
+  },
+  {
+    "id": "lf02-092",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 100",
+    "konfidenz": "hoch",
+    "frage": "Welche Aussage zur Dachdecker-Auflegeleiter ist richtig?",
+    "optionen": [
+      "Sie darf in die Dachrinne gestellt werden",
+      "Sie darf mit der obersten Sprosse in den Dachhaken eingehängt werden",
+      "Sie darf weder mit der obersten Sprosse eingehängt noch in Dachrinnen gestellt werden",
+      "Sie darf durch Zusammenbinden verlängert werden"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Aus Sicherheitsgründen dürfen Dachdecker-Auflegeleitern weder mit der obersten Sprosse in den Dachhaken eingehängt noch in Dachrinnen gestellt werden. Das Zusammenbinden von Leitern ist grundsätzlich unzulässig.",
+    "bildDatei": "/buch/lf02/auflegeleiter.webp",
+    "bildunterschrift": "Dachdecker-Auflegeleiter (Buch S. 100)"
+  },
+  {
+    "id": "lf02-093",
+    "typ": "cloze",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 100",
+    "konfidenz": "hoch",
+    "erklaerung": "Die Auflegeleiter wird in Sicherheitsdachhaken nach DIN EN 517 eingehängt und ist bis 75° Dachneigung zugelassen.",
+    "text": "Die Dachdecker-Auflegeleiter wird auf Dachflächen mit einer Dachneigung bis {{75}}° aufgelegt. Sie wird in fachgerecht befestigte {{Sicherheitsdachhaken}} eingehängt.",
+    "akzeptiert": {
+      "75": [
+        "75°"
+      ],
+      "Sicherheitsdachhaken": [
+        "sicherheitsdachhaken",
+        "Dachhaken"
+      ]
+    },
+    "bildDatei": "/buch/lf02/sicherungshaken-schema.webp",
+    "bildunterschrift": "Anordnung der Sicherungshaken (Buch S. 100)"
+  },
+  {
+    "id": "lf02-094",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Welchen Höchstabstand dürfen Dachdeckerstühle untereinander haben?",
+    "optionen": [
+      "1,50 m",
+      "2,00 m",
+      "2,50 m",
+      "3,00 m"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der Höchstabstand der Dachdeckerstühle untereinander beträgt 2,50 m. Als Belag ist je Feld eine Bohle S 10 nach DIN 4074-1 mit einem Mindestquerschnitt von 4,5 × 24 cm vorgeschrieben.",
+    "bildDatei": "/buch/lf02/dachdeckerstuhl.webp",
+    "bildunterschrift": "Dachdeckerstuhl (Buch S. 98)"
+  },
+  {
+    "id": "lf02-095",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Mit wie viel Kilogramm darf der Belag eines Dachdeckerstuhls höchstens belastet werden?",
+    "optionen": [
+      "100 kg",
+      "150 kg",
+      "200 kg",
+      "250 kg"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Belag darf höchstens mit 150 kg belastet werden. Dachdeckerstühle sind vor jeder Benutzung auf einwandfreien Zustand zu prüfen, insbesondere die Tragmittel.",
+    "bildDatei": "/buch/lf02/dachdeckerstuhl.webp",
+    "bildunterschrift": "Dachdeckerstuhl (Buch S. 98)"
+  },
+  {
+    "id": "lf02-096",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Warum dürfen an Dachdeckerstühlen niemals Geländerpfosten für einen Seitenschutz angebracht werden?",
+    "optionen": [
+      "Weil sie die Sicht behindern",
+      "Weil dadurch eine Kippgefahr entstehen würde",
+      "Weil sie zu schwer sind",
+      "Weil das Dach beschädigt würde"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "An Dachdeckerstühlen dürfen nie Geländerpfosten für einen eventuellen Seitenschutz angebracht werden. Es würde dadurch eine Kippgefahr entstehen.",
+    "bildDatei": "/buch/lf02/dachdeckerstuhl.webp",
+    "bildunterschrift": "Dachdeckerstuhl (Buch S. 98)"
+  },
+  {
+    "id": "lf02-097",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch muss eine Schutzwand mindestens sein?",
+    "optionen": [
+      "0,80 m",
+      "1,00 m",
+      "1,20 m",
+      "1,50 m"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Schutzwände müssen eine Bauhöhe von mindestens 1,00 m haben und die zu sichernden Arbeitsplätze seitlich um mindestens 2 m überragen. Bei Geflechten oder Netzen darf die Maschenweite nicht größer als 10 cm sein."
+  },
+  {
+    "id": "lf02-098",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 95",
+    "konfidenz": "hoch",
+    "frage": "Welchen Höhenunterschied darf ein Fanggerüst bei mindestens 0,90 m Fanglage höchstens haben?",
+    "optionen": [
+      "1,00 m",
+      "1,50 m",
+      "2,00 m",
+      "3,00 m"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Beim Aufbau von Fanggerüsten ist darauf zu achten, dass der Höhenunterschied zwischen Absturzkante und Gerüstbelag bei mindestens 0,90 m Fanglage maximal 2,00 m betragen darf.",
+    "bildDatei": "/buch/lf02/arbeitsplaetze-dachflaechen.webp",
+    "bildunterschrift": "Arbeitsmittel nach Tätigkeit und Dachneigung (Buch S. 95)"
+  },
+  {
+    "id": "lf02-099",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Dachneigung sind besondere Arbeitsplätze einzurichten?",
+    "optionen": [
+      "zwischen 22,5° und 45°",
+      "zwischen 45° und 60°",
+      "erst über 60°",
+      "erst über 75°"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Dachneigungen zwischen 45° und 60° sind besondere Arbeitsplätze einzurichten. Bei Höhenunterschieden von mehr als 5,00 m müssen zusätzlich Schutzwände angeordnet werden.",
+    "bildDatei": "/buch/lf02/arbeitsplaetze-dachflaechen.webp",
+    "bildunterschrift": "Arbeitsmittel nach Tätigkeit und Dachneigung (Buch S. 95)"
+  },
+  {
+    "id": "lf02-100",
+    "typ": "mc",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 98",
+    "konfidenz": "hoch",
+    "frage": "Wovon hängen die Schutzmaßnahmen gegen Absturz ins Gebäudeinnere ab?",
+    "optionen": [
+      "Von der Dachneigung",
+      "Sie sind unabhängig von der Dachneigung erforderlich",
+      "Nur von der Gebäudehöhe",
+      "Nur von der Jahreszeit"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Dacharbeiten müssen auch Schutzmaßnahmen gegen Absturz ins Gebäudeinnere vorgenommen werden. Diese Maßnahmen sind unabhängig von der Dachneigung erforderlich. Geeignet sind Fanggerüste oder Fangnetze unter der Arbeitsstelle."
+  },
+  {
+    "id": "lf02-101",
+    "typ": "diagram",
+    "lernfeld": "lf02",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
+    "konfidenz": "hoch",
+    "erklaerung": "Am Satteldach liegt der First oben, die Traufe unten und der Ortgang seitlich am Giebel.",
+    "frage": "Benenne die markierten Dachteile am Satteldach.",
+    "svg": "<svg viewBox='0 0 400 240' width='100%' style='max-width:400px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Satteldach im Schrägbild mit markierten Dachteilen'><path d='M125 150 L335 150 L308 95 L98 95 Z' fill='none' stroke='currentColor' stroke-width='1.4' opacity='0.5'/><path d='M70 190 L280 190 L308 95 L98 95 Z' fill='none' stroke='currentColor' stroke-width='2'/><path d='M70 190 L125 150 L98 95 Z' fill='none' stroke='currentColor' stroke-width='2'/><line x1='280' y1='190' x2='335' y2='150' stroke='currentColor' stroke-width='2'/><line x1='70' y1='190' x2='70' y2='218' stroke='currentColor' stroke-width='1.4'/><line x1='280' y1='190' x2='280' y2='218' stroke='currentColor' stroke-width='1.4'/><line x1='335' y1='150' x2='335' y2='180' stroke='currentColor' stroke-width='1.4' opacity='0.5'/><circle cx='203' cy='95' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='first'/><circle cx='175' cy='190' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='traufe'/><circle cx='84' cy='142' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='ortgang'/></svg>",
+    "zuordnung": {
+      "first": "First",
+      "traufe": "Traufe",
+      "ortgang": "Ortgang (Giebelkante)"
+    }
+  },
+  {
+    "id": "lf02-102",
+    "typ": "diagram",
+    "lernfeld": "lf02",
+    "thema": "Dachteile & Dachformen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 34",
+    "konfidenz": "hoch",
+    "erklaerung": "Beim Walmdach ist die Giebelseite durch eine geneigte Walmdachfläche ersetzt; die schrägen Außenkanten heißen Grate.",
+    "frage": "Benenne die markierten Teile in der Dachausmittlung (Draufsicht) des Walmdaches.",
+    "svg": "<svg viewBox='0 0 400 250' width='100%' style='max-width:400px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Walmdach in der Draufsicht mit First, Grat, Traufe und Walmflaeche'><rect x='60' y='55' width='280' height='140' fill='none' stroke='currentColor' stroke-width='2'/><line x1='130' y1='125' x2='270' y2='125' stroke='currentColor' stroke-width='2'/><line x1='60' y1='55' x2='130' y2='125' stroke='currentColor' stroke-width='1.6'/><line x1='60' y1='195' x2='130' y2='125' stroke='currentColor' stroke-width='1.6'/><line x1='340' y1='55' x2='270' y2='125' stroke='currentColor' stroke-width='1.6'/><line x1='340' y1='195' x2='270' y2='125' stroke='currentColor' stroke-width='1.6'/><circle cx='200' cy='125' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='first'/><circle cx='95' cy='90' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='grat'/><circle cx='200' cy='55' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='traufe'/><circle cx='83' cy='125' r='6' fill='none' stroke='currentColor' stroke-width='2' data-id='walmflaeche'/></svg>",
+    "zuordnung": {
+      "first": "First",
+      "grat": "Grat",
+      "traufe": "Traufe",
+      "walmflaeche": "Walmdachfläche"
+    }
+  },
+  {
+    "id": "lf02-103",
+    "typ": "draw",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Dachflächen",
+    "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 62, 71",
+    "konfidenz": "hoch",
+    "erklaerung": "Firsthöhe, halbe Gebäudebreite und Sparren bilden ein rechtwinkliges Dreieck — daraus folgen alle Satteldach-Formeln.",
+    "aufgabentext": "Zeichne über der gegebenen Hauswand ein symmetrisches Satteldach. Trage die Firsthöhe h, das Grundmaß g (halbe Gebäudebreite) und die Sparrenlänge s ein und markiere den rechten Winkel sowie den Neigungswinkel DN.",
+    "vorgabeSvg": "<svg viewBox='0 0 360 220' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Hauswand als Vorgabe'><rect x='70' y='140' width='220' height='60' fill='none' stroke='currentColor' stroke-width='2'/><line x1='70' y1='210' x2='290' y2='210' stroke='currentColor' stroke-width='1' opacity='0.6'/><text x='165' y='226' font-size='12' fill='currentColor' opacity='0.7'>b</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 360 220' width='100%' style='max-width:360px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Symmetrisches Satteldach mit h, g, s und Neigungswinkel'><rect x='70' y='140' width='220' height='60' fill='none' stroke='currentColor' stroke-width='2'/><path d='M70 140 L180 60 L290 140' fill='none' stroke='currentColor' stroke-width='2'/><line x1='180' y1='60' x2='180' y2='140' stroke='currentColor' stroke-width='1.4' stroke-dasharray='5 4'/><path d='M180 130 L190 130 L190 140' fill='none' stroke='currentColor' stroke-width='1.2'/><path d='M95 140 A28 28 0 0 0 88 123' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='98' y='134' font-size='12' fill='currentColor'>DN</text><text x='186' y='104' font-size='13' fill='currentColor'>h</text><text x='126' y='154' font-size='13' fill='currentColor'>g</text><text x='118' y='94' font-size='13' fill='currentColor'>s</text><circle cx='180' cy='60' r='3' fill='currentColor'/><text x='188' y='58' font-size='11' fill='currentColor' opacity='0.75'>First</text><text x='60' y='134' font-size='11' fill='currentColor' opacity='0.75' text-anchor='end'>Traufe</text></svg>",
+    "schritte": [
+      "Über der Hauswand die beiden gleich geneigten Dachflächen zeichnen, die sich in der Mitte im First treffen.",
+      "Vom First eine senkrechte Hilfslinie bis zur Traufhöhe ziehen: Das ist die Firsthöhe h. Den rechten Winkel markieren.",
+      "Die halbe Gebäudebreite als Grundmaß g eintragen (g = b/2) und den Sparren als s beschriften.",
+      "Den Neigungswinkel DN an der Traufe zwischen Sparren und Waagerechter eintragen. Es gilt s = √(g² + h²) bzw. s = g / cos DN."
+    ]
   }
 ]
