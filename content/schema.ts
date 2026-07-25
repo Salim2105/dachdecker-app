@@ -16,6 +16,8 @@ interface AufgabeBasis {
   quelle: string;
   konfidenz: Konfidenz;
   erklaerung: string; // wird nach der Antwort angezeigt
+  bildDatei?: string; // optionales Buch-Bild (WebP in public/buch/…), z. B. "/buch/lf01/turmdrehkran.webp"
+  bildunterschrift?: string; // kurze Bildunterschrift
 }
 
 export interface McAufgabe extends AufgabeBasis {

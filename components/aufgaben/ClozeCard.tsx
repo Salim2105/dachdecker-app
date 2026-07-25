@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import type { ClozeAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { parseCloze, pruefeLuecke } from "@/lib/cloze";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
+import { Buchbild } from "@/components/aufgaben/Buchbild";
 
 export function ClozeCard({
   aufgabe,
@@ -83,7 +84,14 @@ export function ClozeCard({
           {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        aufloesen && <Erklaerung text={aufgabe.erklaerung} />
+        aufloesen && (
+          <>
+            <Erklaerung text={aufgabe.erklaerung} />
+            {aufgabe.bildDatei && (
+              <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
+            )}
+          </>
+        )
       )}
     </div>
   );

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import type { McAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
+import { Buchbild } from "@/components/aufgaben/Buchbild";
 
 export function McCard({
   aufgabe,
@@ -78,7 +79,14 @@ export function McCard({
           {aufloesen ? "Prüfen" : "Antwort abgeben"}
         </button>
       ) : (
-        aufloesen && <Erklaerung text={aufgabe.erklaerung} />
+        aufloesen && (
+          <>
+            <Erklaerung text={aufgabe.erklaerung} />
+            {aufgabe.bildDatei && (
+              <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
+            )}
+          </>
+        )
       )}
     </div>
   );

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import type { FachbegriffAufgabe, Bewertung } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
+import { Buchbild } from "@/components/aufgaben/Buchbild";
 
 export function FachbegriffCard({
   aufgabe,
@@ -46,6 +47,11 @@ export function FachbegriffCard({
             <p className="text-sm" style={{ color: "var(--text)" }}>
               {aufgabe.definition}
             </p>
+            {aufgabe.bildDatei && (
+              <div className="text-left">
+                <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
+              </div>
+            )}
           </div>
         )}
       </div>

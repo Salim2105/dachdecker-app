@@ -1,0 +1,30 @@
+{
+  "pdf": "/Users/salimsakkali/Downloads/LF1.pdf",
+  "lf": "lf01",
+  "figuren": [
+    { "seite": 7, "box": [0.52, 0.10, 1.0, 0.42], "name": "turmdrehkran",
+      "alt": "Turmdrehkran mit Katzausleger, Bauteile beschriftet",
+      "unterschrift": "Turmdrehkran mit Katzausleger (oben drehend)" },
+    { "seite": 6, "box": [0.50, 0.12, 1.0, 0.47], "name": "baustelleneinrichtungsplan",
+      "alt": "Plan einer Baustelleneinrichtung mit Kran-Schwenkbereich",
+      "unterschrift": "Plan für die Baustelleneinrichtung" },
+    { "seite": 8, "box": [0.50, 0.37, 1.0, 0.70], "name": "verkehrsschilder",
+      "alt": "An Baustellen gebräuchliche Verkehrsschilder",
+      "unterschrift": "Verkehrsschilder an Baustellen" },
+    { "seite": 13, "box": [0.50, 0.21, 1.0, 0.40], "name": "linienbreiten",
+      "alt": "Tabelle der Linienbreiten nach DIN ISO 128-23",
+      "unterschrift": "Linienbreiten nach DIN ISO 128-23" },
+    { "seite": 14, "box": [0.50, 0.12, 1.0, 0.30], "name": "massstab-tabelle",
+      "alt": "Tabelle der Maßstäbe im Bauwesen",
+      "unterschrift": "Maßstäbe im Bauwesen" },
+    { "seite": 20, "box": [0.50, 0.42, 1.0, 0.60], "name": "winkelarten",
+      "alt": "Übersicht der Winkelarten von spitz bis überstumpf",
+      "unterschrift": "Winkelarten" },
+    { "seite": 22, "box": [0.50, 0.30, 1.0, 0.58], "name": "dreiecksarten",
+      "alt": "Arten von Dreiecken nach Seiten und Winkeln",
+      "unterschrift": "Arten von Dreiecken" },
+    { "seite": 4, "box": [0.50, 0.54, 1.0, 0.93], "name": "lageplan",
+      "alt": "Auszug aus dem Lageplan eines Bauantrags für ein Reihenhaus",
+      "unterschrift": "Auszug aus einem Lageplan (Bauantrag)" }
+  ]
+}

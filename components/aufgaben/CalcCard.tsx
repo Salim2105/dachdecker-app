@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { CalcAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter, rechne } from "@/lib/calc";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
+import { Buchbild } from "@/components/aufgaben/Buchbild";
 
 export function CalcCard({
   aufgabe,
@@ -124,6 +125,9 @@ export function CalcCard({
             </ol>
           </div>
           <Erklaerung text={aufgabe.erklaerung} />
+          {aufgabe.bildDatei && (
+            <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
+          )}
         </div>
       ) : null}
 

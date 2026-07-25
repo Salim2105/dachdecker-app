@@ -30,6 +30,8 @@
   },
   {
     "id": "lf01-003",
+    "bildDatei": "/buch/lf01/baustelleneinrichtungsplan.webp",
+    "bildunterschrift": "Plan für die Baustelleneinrichtung (Buch S. 13)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Baustelleneinrichtung",
@@ -64,6 +66,8 @@
   },
   {
     "id": "lf01-005",
+    "bildDatei": "/buch/lf01/linienbreiten.webp",
+    "bildunterschrift": "Linienbreiten nach DIN ISO 128-23 (Buch S. 20)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Bauzeichnung",
@@ -99,6 +103,8 @@
   },
   {
     "id": "lf01-007",
+    "bildDatei": "/buch/lf01/lageplan.webp",
+    "bildunterschrift": "Auszug aus einem Lageplan des Bauantrags (Buch S. 11)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Bauplanung & Vergabe",
@@ -190,6 +196,8 @@
   },
   {
     "id": "lf01-013",
+    "bildDatei": "/buch/lf01/verkehrsschilder.webp",
+    "bildunterschrift": "An Baustellen gebräuchliche Verkehrsschilder (Buch S. 15)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Baustelleneinrichtung",
@@ -207,6 +215,8 @@
   },
   {
     "id": "lf01-014",
+    "bildDatei": "/buch/lf01/turmdrehkran.webp",
+    "bildunterschrift": "Turmdrehkran mit Katzausleger — max. Ausladung = kleinste Nutzlast (Buch S. 14)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Baugeräte",
@@ -318,6 +328,8 @@
   },
   {
     "id": "lf01-021",
+    "bildDatei": "/buch/lf01/winkelarten.webp",
+    "bildunterschrift": "Scheitel-, Neben- und Gegenwinkel — Nebenwinkel ergänzen sich zu 180° (Buch S. 27)",
     "typ": "calc",
     "lernfeld": "lf01",
     "thema": "Geometrie",
@@ -380,6 +392,8 @@
   },
   {
     "id": "lf01-025",
+    "bildDatei": "/buch/lf01/dreiecksarten.webp",
+    "bildunterschrift": "Arten von Dreiecken nach Seiten und Winkeln (Buch S. 29)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Geometrie",
@@ -719,6 +733,8 @@
   },
   {
     "id": "lf01-047",
+    "bildDatei": "/buch/lf01/massstab-tabelle.webp",
+    "bildunterschrift": "Maßstäbe im Bauwesen (Buch S. 21)",
     "typ": "mc",
     "lernfeld": "lf01",
     "thema": "Bauzeichnung",
