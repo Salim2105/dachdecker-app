@@ -1,0 +1,568 @@
+{
+  "lf": "lf08",
+  "pdf": "/Users/salimsakkali/Downloads/LF8 TEIL 1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite i = Buchseite 291+i (t1_01 = S.292). Teil 2: PDF-Seite i = Buchseite 316+i (t2_01 = S.317, eigenes pdf-Feld).",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [0.50, 0.20, 0.98, 0.42],
+      "name": "projekt-schraegbild",
+      "alt": "Schrägbild des Einfamilienhauses der Projektaufgabe",
+      "unterschrift": "Projektaufgabe: Einfamilienhaus (Buch S. 292)"
+    },
+    {
+      "seite": 1,
+      "box": [0.05, 0.62, 0.98, 0.94],
+      "name": "projekt-schnitt",
+      "alt": "Schnitt A-A durch das Projektdach mit Sparren, Dämmung und Maßen",
+      "unterschrift": "Projektaufgabe: Schnitt A-A (Buch S. 292)"
+    },
+    {
+      "seite": 2,
+      "box": [0.05, 0.52, 0.98, 0.94],
+      "name": "biberschwanz-ansichten",
+      "alt": "Biberschwanzdeckungen in den Schnittformen Segment, Gotisch, Rund, Rautenspitz",
+      "unterschrift": "Biberschwanzdeckungen – Ansichten (Buch S. 293)"
+    },
+    {
+      "seite": 3,
+      "box": [0.10, 0.36, 0.98, 0.56],
+      "name": "tab-einfachdeckung",
+      "alt": "Werkstoffbedarf Einfachdeckung mit Mindestüberdeckung, Lattweite und Ziegelbedarf",
+      "unterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
+    },
+    {
+      "seite": 3,
+      "box": [0.05, 0.57, 0.98, 0.94],
+      "name": "einfachdeckung-spliess",
+      "alt": "Einfachdeckung mit Spließen: Sparren, Latte, Spließ, Stoßfuge, Deckbreite",
+      "unterschrift": "Einfachdeckung mit Spließen (Buch S. 294)"
+    },
+    {
+      "seite": 4,
+      "box": [0.06, 0.38, 0.55, 0.58],
+      "name": "tab-kronendeckung",
+      "alt": "Werkstoffbedarf Kronendeckung mit Mindestüberdeckung, Lattweite und Ziegelbedarf",
+      "unterschrift": "Werkstoffbedarf Kronendeckung (Buch S. 295)"
+    },
+    {
+      "seite": 4,
+      "box": [0.05, 0.58, 0.98, 0.94],
+      "name": "kronendeckung-schema",
+      "alt": "Kronendeckung mit Lagerschicht, Deckschicht, Stoßfuge und Lattenabstand",
+      "unterschrift": "Kronendeckung (Buch S. 295)"
+    },
+    {
+      "seite": 5,
+      "box": [0.06, 0.36, 0.60, 0.56],
+      "name": "tab-doppeldeckung",
+      "alt": "Werkstoffbedarf Doppeldeckung mit Mindestüberdeckung, Lattweite und Ziegelbedarf",
+      "unterschrift": "Werkstoffbedarf Doppeldeckung (Buch S. 296)"
+    },
+    {
+      "seite": 5,
+      "box": [0.05, 0.57, 0.98, 0.94],
+      "name": "doppeldeckung-schema",
+      "alt": "Doppeldeckung mit Deckschicht, Seitenüberdeckung, Stoßfuge und Deckbreite",
+      "unterschrift": "Doppeldeckung (Buch S. 296)"
+    },
+    {
+      "seite": 6,
+      "box": [0.05, 0.55, 0.98, 0.94],
+      "name": "vorschnittdeckung",
+      "alt": "Vorschnittdeckung mit Langschnittpfannen: Arbeitsablauf, Vierziegeleck und Deckung",
+      "unterschrift": "Vorschnittdeckung mit Langschnittpfannen (Buch S. 297)"
+    },
+    {
+      "seite": 7,
+      "box": [0.05, 0.55, 0.98, 0.94],
+      "name": "aufschnittdeckung",
+      "alt": "Aufschnittdeckung mit Kurzschnittpfannen: Arbeitsablauf, Vierziegeleck und Deckung",
+      "unterschrift": "Aufschnittdeckung mit Kurzschnittpfannen (Buch S. 298)"
+    },
+    {
+      "seite": 7,
+      "box": [0.50, 0.32, 0.98, 0.56],
+      "name": "tab-aufschnitt-ueberdeckung",
+      "alt": "Mindestüberdeckung bei der Aufschnittdeckung nach Dachneigung",
+      "unterschrift": "Mindestüberdeckung Aufschnittdeckung (Buch S. 298)"
+    },
+    {
+      "seite": 8,
+      "box": [0.05, 0.60, 0.98, 0.94],
+      "name": "moench-nonne",
+      "alt": "Mönch- und Nonnendeckung mit Deckbreite, Nonnenziegel und Mönchziegel",
+      "unterschrift": "Mönch- und Nonnendeckung (Buch S. 299)"
+    },
+    {
+      "seite": 9,
+      "box": [0.05, 0.58, 0.98, 0.94],
+      "name": "krempziegeldeckung",
+      "alt": "Krempziegeldeckung als Rechtsdeckung mit Krempe und Aufkantung",
+      "unterschrift": "Krempziegeldeckung – Rechtsdeckung (Buch S. 300)"
+    },
+    {
+      "seite": 10,
+      "box": [0.47, 0.10, 0.98, 0.94],
+      "name": "falzziegel-arten",
+      "alt": "Verfalzte Ziegelarten: Strangfalzziegel, Herzziegel, Doppelmuldenfalzziegel, Reformziegel, Flachdachziegel",
+      "unterschrift": "Verfalzte Dachziegel – Arten (Buch S. 301)"
+    },
+    {
+      "seite": 11,
+      "box": [0.06, 0.10, 0.72, 0.44],
+      "name": "decklaenge-ermittlung",
+      "alt": "Ermittlung der Decklänge und Deckbreite nach DIN EN 1304 mit gezogenen und gestoßenen Prüfziegeln",
+      "unterschrift": "Ermittlung von Decklänge und Deckbreite (Buch S. 302)"
+    },
+    {
+      "seite": 11,
+      "box": [0.68, 0.44, 0.98, 0.92],
+      "name": "tab-verfalzte-ziegel",
+      "alt": "Werkstoffbedarf verfalzter Ziegel mit Lattenabstand und Bedarf je Stück/m²",
+      "unterschrift": "Werkstoffbedarf verfalzte Ziegel (Buch S. 302)"
+    },
+    {
+      "seite": 12,
+      "box": [0.06, 0.16, 0.98, 0.50],
+      "name": "tab-dachsteine-biberform",
+      "alt": "Doppeldeckung und Kronendeckung mit Dachsteinen in Biberform: Höhenüberdeckung, Lattenabstand, Bedarf",
+      "unterschrift": "Dachsteine in Biberform – Werkstoffbedarf (Buch S. 303)"
+    },
+    {
+      "seite": 12,
+      "box": [0.06, 0.50, 0.98, 0.94],
+      "name": "deckschema-dachsteine",
+      "alt": "Deckschema Doppeldeckung und Kronendeckung mit Legende der Biberformen",
+      "unterschrift": "Deckschema Doppel- und Kronendeckung (Buch S. 303)"
+    },
+    {
+      "seite": 13,
+      "box": [0.50, 0.68, 0.98, 0.95],
+      "name": "tab-dachsteine-seitenfalz",
+      "alt": "Dachneigung und Mindestüberdeckung für Dachsteine mit hoch und tief liegendem Seitenfalz",
+      "unterschrift": "Dachsteine: Dachneigung und Mindestüberdeckung (Buch S. 304)"
+    },
+    {
+      "seite": 13,
+      "box": [0.50, 0.40, 0.98, 0.70],
+      "name": "tab-dachsteine-werkstoff",
+      "alt": "Werkstoffbedarf Dachsteine mit Lattenabstand, Bedarf, Deckbreite und Masse",
+      "unterschrift": "Werkstoffbedarf Dachsteine (Buch S. 304)"
+    },
+    {
+      "seite": 14,
+      "box": [0.05, 0.10, 0.72, 0.36],
+      "name": "deckbreite-ermittlung",
+      "alt": "Ermittlung der erforderlichen Deckbreite mit Ortgangüberstand und Konstruktionsbreite",
+      "unterschrift": "Ermittlung der erforderlichen Deckbreite (Buch S. 305)"
+    },
+    {
+      "seite": 15,
+      "box": [0.48, 0.10, 0.98, 0.92],
+      "name": "traufausbildungen",
+      "alt": "Traufausbildungen mit hoch hängender und tief hängender Rinne, Traufblech",
+      "unterschrift": "Traufausbildungen (Buch S. 306)"
+    },
+    {
+      "seite": 16,
+      "box": [0.48, 0.12, 0.98, 0.42],
+      "name": "firstausbildung",
+      "alt": "Firstausbildung mit Lüfterziegel, Firstziegel und vollgedämmten Sparren",
+      "unterschrift": "Firstausbildung mit Lüftung (Buch S. 307)"
+    },
+    {
+      "seite": 16,
+      "box": [0.48, 0.40, 0.98, 0.60],
+      "name": "firstziegel-masse",
+      "alt": "Beispiele für Firstziegelabmessungen Nr. 1 und Nr. 2",
+      "unterschrift": "Firstziegelabmessungen (Buch S. 307)"
+    },
+    {
+      "seite": 17,
+      "box": [0.48, 0.36, 0.98, 0.95],
+      "name": "ortgang-details",
+      "alt": "Ortgangausbildungen mit Ortgangziegel, Ortgangblech und Doppelwulstziegel",
+      "unterschrift": "Ortgang – Detailausbildungen (Buch S. 308)"
+    },
+    {
+      "seite": 18,
+      "box": [0.48, 0.10, 0.98, 0.60],
+      "name": "einbauteile-schneefang",
+      "alt": "Einbauteile: Ortgangziegel mit Aufkantung, Biberschwanzortgang mit Zahnleiste, Pultdachabschluss",
+      "unterschrift": "Einbauteile und Pultdachabschluss (Buch S. 309)"
+    },
+    {
+      "seite": 19,
+      "box": [0.50, 0.10, 0.98, 0.62],
+      "name": "tab-zusatzmassnahmen",
+      "alt": "Zuordnung von Zusatzmaßnahmen nach Regeldachneigung und Nutzungsanforderung",
+      "unterschrift": "Zuordnung von Zusatzmaßnahmen (Buch S. 310)"
+    },
+    {
+      "seite": 19,
+      "box": [0.50, 0.62, 0.98, 0.92],
+      "name": "tab-massnahmen-fachregel",
+      "alt": "Zuordnung der Maßnahmen nach Ziffern der Fachregel zu Klassen",
+      "unterschrift": "Maßnahmen nach Fachregel (Buch S. 310)"
+    },
+    {
+      "seite": 20,
+      "box": [0.48, 0.12, 0.98, 0.36],
+      "name": "tab-naehte-stoesse",
+      "alt": "Ausführung von Nähten und Stößen sowie Konterlatteneinbindung nach Klassen",
+      "unterschrift": "Nähte, Stöße und Konterlatteneinbindung (Buch S. 311)"
+    },
+    {
+      "seite": 20,
+      "box": [0.48, 0.68, 0.98, 0.94],
+      "name": "vermoertelungsarten",
+      "alt": "Vermörtelungsarten: Innenverstrich, Querschlag und Längsfuge",
+      "unterschrift": "Vermörtelungsarten (Buch S. 311)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.12, 0.98, 0.90],
+      "name": "unterspannung-unterdeckung",
+      "alt": "Unterspannung, überlappte Unterdeckung, verschweißte Unterdeckung, regensicheres und wasserdichtes Unterdach",
+      "unterschrift": "Unterspannung, Unterdeckung und Unterdach (Buch S. 312)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.12, 0.98, 0.94],
+      "name": "windsog-klammern",
+      "alt": "Kräfte bei Windsog und Klammerarten: Seitenfalzklammern, Biberschwanzklammern, Kopfklammern",
+      "unterschrift": "Windsogkräfte und Klammerarten (Buch S. 313)"
+    },
+    {
+      "seite": 22,
+      "box": [0.05, 0.68, 0.48, 0.94],
+      "name": "dachflaechen-bereiche",
+      "alt": "Einteilung der Dachfläche am Beispiel Satteldach in Innen- und Randbereiche",
+      "unterschrift": "Einteilung der Dachfläche (Buch S. 313)"
+    },
+    {
+      "seite": 23,
+      "box": [0.50, 0.10, 0.98, 0.48],
+      "name": "windzonen-karte",
+      "alt": "Karte der vier Windzonen in Deutschland nach DIN 1055-4",
+      "unterschrift": "Windzonen in Deutschland (Buch S. 314)"
+    },
+    {
+      "seite": 23,
+      "box": [0.50, 0.50, 0.98, 0.92],
+      "name": "bereichseinteilung-satteldach",
+      "alt": "Bereichseinteilung bei Satteldächern mit Ortgang-, Innen-, Trauf- und Firstbereich",
+      "unterschrift": "Bereichseinteilung Satteldach (Buch S. 314)"
+    },
+    {
+      "seite": 24,
+      "box": [0.50, 0.10, 0.98, 0.52],
+      "name": "bereichseinteilung-walmdach",
+      "alt": "Bereichseinteilung bei Walmdächern mit Walm-, Grat-, Trauf- und Firstbereich",
+      "unterschrift": "Bereichseinteilung Walmdach (Buch S. 315)"
+    },
+    {
+      "seite": 24,
+      "box": [0.50, 0.52, 0.98, 0.94],
+      "name": "bereichseinteilung-pultdach",
+      "alt": "Bereichseinteilung bei Pultdächern mit Ortgang-, Innen-, Trauf- und Pultabschlussbereich",
+      "unterschrift": "Bereichseinteilung Pultdach (Buch S. 315)"
+    },
+    {
+      "seite": 25,
+      "box": [0.05, 0.42, 0.98, 0.86],
+      "name": "verklammerungstabelle",
+      "alt": "Verklammerungstabelle Sattel- und Walmdächer Windzone 2 Binnenland Gruppe K-II",
+      "unterschrift": "Verklammerungstabelle (Buch S. 316)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 1,
+      "box": [0.05, 0.12, 0.50, 0.34],
+      "name": "tab-lueftungsquerschnitte",
+      "alt": "Lüftungsquerschnitte für Traufe/Pult, First/Grat und Dachfläche",
+      "unterschrift": "Lüftungsquerschnitte (Buch S. 317)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 1,
+      "box": [0.05, 0.36, 0.72, 0.54],
+      "name": "dachflaeche-je-meter",
+      "alt": "Zugehörige Dachfläche je Meter Traufe, First und Grat",
+      "unterschrift": "Zugehörige Dachfläche je Meter (Buch S. 317)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 1,
+      "box": [0.48, 0.72, 0.98, 0.94],
+      "name": "tab-regelquerschnitte-dachlatten",
+      "alt": "Regelquerschnitte für tragende Dachlatten mit Stützweite und Sortierklasse",
+      "unterschrift": "Regelquerschnitte tragender Dachlatten (Buch S. 317)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 2,
+      "box": [0.05, 0.40, 0.50, 0.58],
+      "name": "tab-mindesteindringtiefen",
+      "alt": "Mindesteindringtiefen für Konterlatten auf Sparren und auf Holzschalung",
+      "unterschrift": "Mindesteindringtiefen (Buch S. 318)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 2,
+      "box": [0.05, 0.58, 0.50, 0.94],
+      "name": "mindesteindringtiefe-schema",
+      "alt": "Schema der Mindesteindringtiefe von Verbindungsmitteln bei Konterlatte, Schalung und Sparren",
+      "unterschrift": "Mindesteindringtiefe von Verbindungsmitteln (Buch S. 318)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 2,
+      "box": [0.50, 0.62, 0.98, 0.94],
+      "name": "nagelabstaende-traglatten",
+      "alt": "Empfohlene Nagelabstände für Traglatten mit belastetem Rand und Kraftrichtung",
+      "unterschrift": "Nagelabstände für Traglatten (Buch S. 318)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 3,
+      "box": [0.05, 0.12, 0.50, 0.32],
+      "name": "tab-nenndicke-schalung",
+      "alt": "Nenndicke und zulässige Achsabstände der Unterkonstruktion bei Holzschalungen",
+      "unterschrift": "Nenndicke und Achsabstände Schalung (Buch S. 319)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 3,
+      "box": [0.48, 0.10, 0.98, 0.94],
+      "name": "aufsparrendaemmung-schrauben",
+      "alt": "Schubhölzer und Verschraubungsvarianten bei Aufsparrendämmung",
+      "unterschrift": "Verschraubung bei Aufsparrendämmung (Buch S. 319)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 4,
+      "box": [0.05, 0.10, 0.98, 0.92],
+      "name": "tab-traglatten-befestigung",
+      "alt": "Befestigung von Traglatten unter Dachziegel- und Dachsteineindeckungen nach Windzone",
+      "unterschrift": "Befestigung von Traglatten (Buch S. 320)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 5,
+      "box": [0.05, 0.10, 0.98, 0.34],
+      "name": "mindestabstaende-naegel",
+      "alt": "Mindestabstände von Nägeln nach DIN EN 1995-1-1 bei beanspruchten Hirnholzenden",
+      "unterschrift": "Mindestabstände von Nägeln (Buch S. 321)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 6,
+      "box": [0.05, 0.28, 0.98, 0.92],
+      "name": "tab-konterlatten-befestigung",
+      "alt": "Befestigung von Konterlatten unter Traglatten und Schalungen nach Gebäudehöhe und Windzone",
+      "unterschrift": "Befestigung von Konterlatten (Buch S. 322)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 7,
+      "box": [0.05, 0.10, 0.98, 0.30],
+      "name": "tab-schalung-befestigung",
+      "alt": "Befestigung von Schalungsbrettern nach Achsabstand, Nenndicke und Windzone",
+      "unterschrift": "Befestigung von Schalungsbrettern (Buch S. 323)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 7,
+      "box": [0.48, 0.30, 0.98, 0.55],
+      "name": "dachflaeche-einteilung",
+      "alt": "Einteilung der Deckfläche mit Trauflattmaß, Firstlattmaß, Lattweite und Deckbreite",
+      "unterschrift": "Einteilung der Deckfläche (Buch S. 323)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 7,
+      "box": [0.48, 0.56, 0.98, 0.92],
+      "name": "werkzeuge-dachdecker",
+      "alt": "Werkzeuge für Dachziegel- und Dachsteinarbeiten: Lattenstichmaß, Ziegelkneifzange, Dachkelle, Schieferhammer",
+      "unterschrift": "Werkzeuge für Dachziegelarbeiten (Buch S. 323)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 8,
+      "box": [0.48, 0.22, 0.98, 0.45],
+      "name": "dachfanggeruest",
+      "alt": "Dachfanggerüst am Steildach mit Absturzhöhe und Traufhöhe",
+      "unterschrift": "Dachfanggerüst am Steildach (Buch S. 324)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 9,
+      "box": [0.48, 0.24, 0.98, 0.44],
+      "name": "sparreneinteilung-schema",
+      "alt": "Sparreneinteilung mit DLT Trauflattmaß und LAF Firstlattmaß",
+      "unterschrift": "Sparreneinteilung (Buch S. 325)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 9,
+      "box": [0.48, 0.44, 0.98, 0.94],
+      "name": "formeln-decklaenge",
+      "alt": "Formeln für Decklänge, Sparreneinteilung, Lattreihen und tatsächliche Decklänge",
+      "unterschrift": "Formeln zur Decklängeneinteilung (Buch S. 325)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 10,
+      "box": [0.05, 0.10, 0.50, 0.32],
+      "name": "beispiel-lattweite",
+      "alt": "Rechenbeispiel Lattweitenberechnung beim Flachdachziegel",
+      "unterschrift": "Beispiel Lattweitenberechnung (Buch S. 326)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 10,
+      "box": [0.48, 0.10, 0.98, 0.55],
+      "name": "beispiel-biberdoppeldeckung",
+      "alt": "Rechenbeispiel Lattweitenberechnung bei der Biberdoppeldeckung",
+      "unterschrift": "Beispiel Biberdoppeldeckung (Buch S. 326)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 10,
+      "box": [0.05, 0.56, 0.98, 0.94],
+      "name": "lattweite-biberdoppel-schema",
+      "alt": "Schema der Lattweite bei Biberdoppeldeckung mit Kronengebinde und Sparrenlänge",
+      "unterschrift": "Lattweite bei Biberdoppeldeckung (Buch S. 326)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 11,
+      "box": [0.48, 0.10, 0.98, 0.55],
+      "name": "formeln-deckbreite",
+      "alt": "Formeln zur Berechnung der Ziegelreihen und der tatsächlichen Deckbreite",
+      "unterschrift": "Formeln zur Deckbreiteneinteilung (Buch S. 327)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 11,
+      "box": [0.48, 0.55, 0.98, 0.94],
+      "name": "beispiel-deckbreite",
+      "alt": "Rechenbeispiel Deckbreitenberechnung beim Flachdachziegel",
+      "unterschrift": "Beispiel Deckbreitenberechnung (Buch S. 327)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 11,
+      "box": [0.05, 0.72, 0.48, 0.88],
+      "name": "breiteneinteilung-schema",
+      "alt": "Breiteneinteilung der Dachfläche mit Deckbreite, Ortgangabstand und Überstand",
+      "unterschrift": "Breiteneinteilung der Dachfläche (Buch S. 327)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 12,
+      "box": [0.05, 0.20, 0.50, 0.52],
+      "name": "formeln-rollenbedarf",
+      "alt": "Formeln für Bahnenfläche, Deckfläche und Rollenanzahl bei Unterspannbahnen",
+      "unterschrift": "Formeln Rollenbedarf (Buch S. 328)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 12,
+      "box": [0.48, 0.20, 0.98, 0.52],
+      "name": "formeln-konterlatten",
+      "alt": "Formeln für den Bedarf an Konterlatten aus Sparrenanzahl und Sparrenlänge",
+      "unterschrift": "Formeln Konterlattenbedarf (Buch S. 328)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 12,
+      "box": [0.05, 0.52, 0.98, 0.94],
+      "name": "beispiel-werkstoffbedarf",
+      "alt": "Rechenbeispiele zum Rollen- und Konterlattenbedarf am Satteldach",
+      "unterschrift": "Beispiele Werkstoffbedarf (Buch S. 328)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 13,
+      "box": [0.05, 0.12, 0.50, 0.94],
+      "name": "formeln-ziegelbedarf",
+      "alt": "Formeln für Traglattenbedarf, Nagelbedarf und Anzahl der Ziegelreihen",
+      "unterschrift": "Formeln Traglatten-, Nagel- und Ziegelbedarf (Buch S. 329)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 13,
+      "box": [0.48, 0.20, 0.98, 0.94],
+      "name": "beispiel-materialbedarf",
+      "alt": "Vollständiges Rechenbeispiel zum Materialbedarf eines Satteldachs mit Flachdachziegeln",
+      "unterschrift": "Beispiel Materialbedarf Satteldach (Buch S. 329)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 16,
+      "box": [0.05, 0.10, 0.98, 0.42],
+      "name": "walmdach-formeln",
+      "alt": "Formeln für Walmdach gleicher Dachneigung: Firsthöhe, Sparrenlänge, Gratsparrenlänge, Dachflächen",
+      "unterschrift": "Walmdach-Formeln (Buch S. 332)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 16,
+      "box": [0.05, 0.42, 0.98, 0.94],
+      "name": "walmdach-skizzen",
+      "alt": "Skizzen des zusammengesetzten Walmdachs mit Grundriss, Ansichten und Schrägbild",
+      "unterschrift": "Walmdach über Winkelbau (Buch S. 332)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 17,
+      "box": [0.05, 0.12, 0.98, 0.94],
+      "name": "walmdach-beispiel",
+      "alt": "Vollständiges Rechenbeispiel Walmdach mit allen Längen, Flächen und Kontrollfläche",
+      "unterschrift": "Rechenbeispiel Walmdach (Buch S. 333)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 23,
+      "box": [0.05, 0.14, 0.98, 0.60],
+      "name": "dachausmittlung-walmdach",
+      "alt": "Dachausmittlung bei Dächern mit gleicher Dachneigung, Winkelhalbierende der Grate",
+      "unterschrift": "Dachausmittlung bei gleicher Dachneigung (Buch S. 339)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 24,
+      "box": [0.20, 0.20, 0.98, 0.52],
+      "name": "klappverfahren",
+      "alt": "Klappverfahren zur Ermittlung wahrer Längen und Flächen bei rechteckigen Grundrissen",
+      "unterschrift": "Klappverfahren (Buch S. 340)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 24,
+      "box": [0.20, 0.54, 0.98, 0.90],
+      "name": "drehverfahren",
+      "alt": "Drehverfahren zur Ermittlung wahrer Längen bei schiefwinkligen Grundrissen",
+      "unterschrift": "Drehverfahren (Buch S. 340)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 14,
+      "box": [0.05, 0.10, 0.98, 0.94],
+      "name": "aufgabenblock-1",
+      "alt": "Aufgabensammlung zum Werkstoffbedarf mit Dachskizzen",
+      "unterschrift": "Aufgabensammlung Werkstoffbedarf (Buch S. 330)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF 8 TEIL 2.pdf",
+      "seite": 15,
+      "box": [0.05, 0.10, 0.98, 0.94],
+      "name": "aufgabenblock-2",
+      "alt": "Aufgabensammlung zur rechnerischen Dacheinteilung und zum Materialbedarf",
+      "unterschrift": "Aufgabensammlung Dacheinteilung (Buch S. 331)"
+    }
+  ]
+}

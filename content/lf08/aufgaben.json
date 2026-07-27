@@ -3,409 +3,2757 @@
     "id": "lf08-001",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "thema": "Biberschwanzdeckungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 293",
     "konfidenz": "hoch",
-    "frage": "Auf welcher Seite der Wärmedämmung liegt die Dampfbremse?",
+    "frage": "Welche drei Deckarten gibt es bei Biberschwanzziegeln?",
     "optionen": [
-      "Auf der Außenseite, unter der Deckung",
-      "Auf der Raumseite (innen)",
-      "Mitten in der Dämmung",
-      "Das ist beliebig"
+      "Einfachdeckung mit Spließen, Kronendeckung und Doppeldeckung",
+      "Vorschnitt-, Aufschnitt- und Kurzschnittdeckung",
+      "Rechts-, Links- und Mitteldeckung",
+      "Nur die Doppeldeckung"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Die Dampfbremse liegt immer raumseitig, also auf der warmen Seite der Dämmung. Nur dort hält sie die feuchte Raumluft von der Konstruktion fern. Außen liegt dagegen die diffusionsoffene Unterdeckbahn."
+    "erklaerung": "Biberschwanzdeckungen werden als Einfachdeckung mit Spließen, als Kronendeckung oder als Doppeldeckung ausgeführt. Die Wasserableitung erfolgt in der Fläche und in der Längsfuge.",
+    "bildDatei": "buch/lf08/biberschwanz-ansichten.webp",
+    "bildunterschrift": "Biberschwanzdeckungen – Ansichten (Buch S. 293)"
   },
   {
     "id": "lf08-002",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (Feuchteschutz)",
+    "thema": "Biberschwanzdeckungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 293",
     "konfidenz": "hoch",
-    "frage": "Welcher Weg bringt deutlich mehr Feuchtigkeit in die Dachkonstruktion?",
+    "frage": "Welche Schnittformen gibt es beim Biberschwanzziegel?",
     "optionen": [
-      "Diffusion durch die Bauteilschichten",
-      "Konvektion durch Fugen und Undichtigkeiten",
-      "Beide gleich viel",
-      "Weder noch"
+      "Segmentschnitt, Gotischer Schnitt, Rundschnitt, Rautenspitz und Geradschnitt",
+      "Nur Rundschnitt und Geradschnitt",
+      "Kurzschnitt und Langschnitt",
+      "Vorschnitt und Aufschnitt"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Konvektion — das Einströmen feuchtwarmer Luft durch Undichtigkeiten — transportiert ein Vielfaches der Feuchtemenge, die durch Diffusion wandert. Deshalb ist die luftdichte Verklebung der Dampfbremse so entscheidend."
+    "erklaerung": "Biberschwanzziegel gibt es in mehreren Fußformen: Segmentschnitt, Gotischer Schnitt, Rundschnitt, Rautenspitz sowie Rund- und Geradschnitt strukturiert. Die Form prägt das Erscheinungsbild der Dachfläche.",
+    "bildDatei": "buch/lf08/biberschwanz-ansichten.webp",
+    "bildunterschrift": "Biberschwanzdeckungen – Ansichten (Buch S. 293)"
   },
   {
     "id": "lf08-003",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (U-Wert)",
+    "thema": "Biberschwanzdeckungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 293",
     "konfidenz": "hoch",
-    "frage": "Was bedeutet ein kleiner U-Wert?",
-    "optionen": [
-      "Das Bauteil ist schlecht gedämmt",
-      "Das Bauteil ist gut gedämmt",
-      "Das Bauteil ist besonders schwer",
-      "Der U-Wert sagt nichts über die Dämmung aus"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Der U-Wert (Wärmedurchgangskoeffizient) gibt an, wie viel Wärme durch das Bauteil verloren geht. Je kleiner er ist, desto besser ist gedämmt. Der Wärmedurchlasswiderstand R verhält sich genau umgekehrt: je größer, desto besser."
+    "text": "Beim Vermoerteln von Biberschwanzdeckungen wird mindestens {{Kalkzementmoertel}} im Mischungsverhaeltnis 2 : 1 : 8 verwendet. Der Moertelverstrich gilt nicht als Zusatzmassnahme.",
+    "akzeptiert": {
+      "Kalkzementmoertel": [
+        "Kalkzementmoertel",
+        "Kalkzementmörtel",
+        "Kalkzement"
+      ]
+    },
+    "erklaerung": "Die Verlegung erfolgt mit geringem Seitenabstand, um bei Bewegungen der Dachkonstruktion Pressungen der Ziegel zu vermeiden. Der Mörtelverstrich (mindestens Kalkzementmörtel 2 : 1 : 8) gilt nicht als zusätzliche Maßnahme im Sinne der Fachregel beim Unterschreiten der Regeldachneigung.",
+    "bildDatei": "buch/lf08/biberschwanz-ansichten.webp",
+    "bildunterschrift": "Biberschwanzdeckungen – Ansichten (Buch S. 293)"
   },
   {
     "id": "lf08-004",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Unterdach, Unterdeckung, Unterspannung",
-    "quelle": "ZVDH-Fachregel für Dachziegel und Dachsteine (2024)",
+    "thema": "Einfachdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294",
     "konfidenz": "hoch",
-    "frage": "Was kennzeichnet eine Unterspannung?",
+    "frage": "Wozu dienen die Spließe bei der Biberschwanz-Einfachdeckung?",
     "optionen": [
-      "Sie liegt vollflächig auf einer Schalung",
-      "Sie ist frei über die Sparren gespannt, ohne feste Unterlage",
-      "Sie ist immer wasserdicht verschweißt",
-      "Sie ersetzt die Dampfbremse"
+      "Sie unterlegen die offenen Längsfugen, damit kein Wasser eindringt",
+      "Sie befestigen die Ziegel an der Latte",
+      "Sie dienen der Wärmedämmung",
+      "Sie sind reine Zierelemente"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Die Unterspannung wird frei über die Sparren gespannt. Unterdeckung und Unterdach liegen dagegen auf einer festen, druckstabilen Unterlage — das Unterdach ist zusätzlich regensicher oder wasserdicht gefügt."
+    "erklaerung": "Bei der Einfachdeckung liegt auf jeder Latte eine Ziegelreihe. Da keine Seitenüberdeckung vorhanden ist, ergeben sich von der Traufe zum First offene Längsfugen. Die Spließe (etwa 28 cm lang, 5 cm breit) unterlegen diese Fugen, damit kein Wasser eindringt.",
+    "bildDatei": "buch/lf08/einfachdeckung-spliess.webp",
+    "bildunterschrift": "Einfachdeckung mit Spließen (Buch S. 294)"
   },
   {
     "id": "lf08-005",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "thema": "Einfachdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294",
     "konfidenz": "hoch",
-    "frage": "Welche Aufgabe hat die Konterlattung?",
+    "frage": "Wie groß ist die Regeldachneigung der Biberschwanz-Einfachdeckung mit Spließen?",
     "optionen": [
-      "Sie trägt allein die Dachziegel",
-      "Sie schafft die Belüftungsebene zwischen Unterdeckbahn und Deckung",
-      "Sie ersetzt die Wärmedämmung",
-      "Sie dichtet das Dach ab"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Die Konterlattung läuft in Sparrenrichtung und hebt die Traglattung an. Dadurch entsteht der Luftraum, in dem Wasser ablaufen und Feuchtigkeit abtrocknen kann. Die Ziegel selbst trägt die Traglattung."
-  },
-  {
-    "id": "lf08-006",
-    "typ": "mc",
-    "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (Tauwasser)",
-    "konfidenz": "hoch",
-    "frage": "Wann fällt in einer Konstruktion Tauwasser aus?",
-    "optionen": [
-      "Wenn warme feuchte Luft abkühlt und den Taupunkt erreicht",
-      "Wenn die Luft im Bauteil erwärmt wird",
-      "Nur bei Regen von außen",
-      "Nur im Sommer"
+      "40°",
+      "30°",
+      "22°",
+      "35°"
     ],
     "korrekt": [
       0
     ],
-    "erklaerung": "Warme Luft kann mehr Feuchtigkeit tragen als kalte. Kühlt sie in der Konstruktion ab und erreicht den Taupunkt, fällt die überschüssige Feuchte als Tauwasser aus — mit Schäden an Dämmung und Holz."
+    "erklaerung": "Die Regeldachneigung der Einfachdeckung mit Spließen beträgt 40° (83,9 %). Kronen- und Doppeldeckung haben dagegen eine Regeldachneigung von 30°.",
+    "bildDatei": "buch/lf08/tab-einfachdeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
+  },
+  {
+    "id": "lf08-006",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Einfachdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294",
+    "konfidenz": "hoch",
+    "text": "Bei der Einfachdeckung gilt: maximaler Traglattenabstand = {{Ziegellaenge}} minus {{Mindestueberdeckung}}.",
+    "akzeptiert": {
+      "Ziegellaenge": [
+        "Ziegellaenge",
+        "Ziegellänge"
+      ],
+      "Mindestueberdeckung": [
+        "Mindestueberdeckung",
+        "Mindestüberdeckung"
+      ]
+    },
+    "erklaerung": "Formel für Einfach- und Kronendeckung: max. Traglattenabstand = Ziegellänge − Mindestüberdeckung. Beispiel bei DN 45° und Biber 15,5 × 38 cm: 380 mm − 160 mm = 220 mm.",
+    "bildDatei": "buch/lf08/tab-einfachdeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
   },
   {
     "id": "lf08-007",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (R = d/λ)",
+    "thema": "Einfachdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294",
     "konfidenz": "hoch",
-    "text": "Der Wärmedurchlasswiderstand einer Schicht ergibt sich aus der Schichtdicke geteilt durch die {{Wärmeleitfähigkeit}}. Je {{größer}} dieser Widerstand ist, desto besser dämmt die Schicht.",
-    "akzeptiert": {
-      "Wärmeleitfähigkeit": [
-        "Waermeleitfaehigkeit",
-        "Lambda",
-        "λ"
-      ],
-      "größer": [
-        "groesser",
-        "hoeher",
-        "höher"
-      ]
-    },
-    "erklaerung": "R = d / λ. Dicke Dämmung mit kleinem λ ergibt einen großen R-Wert — und damit einen kleinen U-Wert für das gesamte Bauteil."
+    "frage": "Welche Mindestüberdeckung ist bei der Einfachdeckung mit Spließen bei einer Dachneigung von 42° erforderlich?",
+    "optionen": [
+      "160 mm",
+      "170 mm",
+      "150 mm",
+      "130 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach der Tabelle Werkstoffbedarf Einfachdeckung: < 40° → 170 mm; ≥ 40°...45° → 160 mm; > 45°...50° → 150 mm; > 50°...55° → 140 mm; > 55° → 130 mm. Bei 42° gilt also 160 mm.",
+    "bildDatei": "buch/lf08/tab-einfachdeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
   },
   {
     "id": "lf08-008",
-    "typ": "cloze",
+    "typ": "calc",
     "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "thema": "Einfachdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294",
     "konfidenz": "hoch",
-    "text": "Die {{Dampfbremse}} liegt raumseitig der Dämmung und muss vor allem {{luftdicht}} angeschlossen sein.",
-    "akzeptiert": {
-      "Dampfbremse": [
-        "Dampfsperre"
-      ],
-      "luftdicht": [
-        "luftdichte",
-        "dicht"
-      ]
-    },
-    "erklaerung": "Nicht die Diffusion, sondern die einströmende Luft (Konvektion) bringt die meiste Feuchte ein. Deshalb entscheidet die saubere, luftdichte Verklebung über die Schadensfreiheit."
+    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang. Bei der Einfachdeckung ist eine Mindestüberdeckung von {ueber} mm gefordert. Berechne den maximalen Traglattenabstand.",
+    "parameter": [
+      {
+        "name": "laenge",
+        "label": "Ziegellänge",
+        "einheit": "mm",
+        "min": 380,
+        "max": 420,
+        "schritt": 10
+      },
+      {
+        "name": "ueber",
+        "label": "Mindestüberdeckung",
+        "einheit": "mm",
+        "min": 130,
+        "max": 170,
+        "schritt": 10
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "max. Traglattenabstand = Ziegellänge − Mindestüberdeckung = {laenge} − {ueber}",
+        "formel": "laenge - ueber",
+        "ergebnisName": "abstand",
+        "einheit": "mm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Formel für Einfach- und Kronendeckung: max. Traglattenabstand = Ziegellänge − Mindestüberdeckung. Buchbeispiel: 380 mm − 160 mm = 220 mm.",
+    "bildDatei": "buch/lf08/tab-einfachdeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
   },
   {
     "id": "lf08-009",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (R = d/λ)",
+    "thema": "Kronendeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 295 (Aufgaben S. 305)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Wärmedämmschicht ist {d} m dick und hat eine Wärmeleitfähigkeit λ von {lambda} W/(m·K). Wie groß ist ihr Wärmedurchlasswiderstand R?",
-    "parameter": [
-      {
-        "name": "d",
-        "label": "Schichtdicke",
-        "einheit": "m",
-        "min": 0.14,
-        "max": 0.3,
-        "schritt": 0.02
-      },
-      {
-        "name": "lambda",
-        "label": "Wärmeleitfähigkeit",
-        "einheit": "W/(m·K)",
-        "min": 0.032,
-        "max": 0.045,
-        "schritt": 0.001
-      }
+    "frage": "Was ist das Kennzeichen der Kronendeckung?",
+    "optionen": [
+      "Auf jeder Latte liegen zwei Reihen Biberschwanzziegel übereinander (Lager- und Deckschicht)",
+      "Auf jeder Latte liegt nur eine Ziegelreihe",
+      "Die Ziegel werden ohne Latten verlegt",
+      "Die Ziegel liegen quer zur Traufe"
     ],
-    "schritte": [
-      {
-        "beschreibung": "R = Schichtdicke / Wärmeleitfähigkeit = {d} / {lambda}",
-        "formel": "d / lambda",
-        "ergebnisName": "r",
-        "einheit": "m²K/W"
-      }
+    "korrekt": [
+      0
     ],
-    "toleranzProzent": 2,
-    "erklaerung": "R = d / λ. Ein größerer R-Wert bedeutet bessere Dämmwirkung. Für das ganze Bauteil werden alle R-Werte plus die Wärmeübergangswiderstände addiert; der U-Wert ist dann der Kehrwert der Summe."
+    "erklaerung": "Bei der Kronendeckung liegen auf jeder Latte zwei Reihen Biberschwanzziegel im Biberformat übereinander, die in Deckgebinde bilden. Die untere Reihe ist die Lagerschicht, die obere die Deckschicht — sie wird direkt auf eine halbe Ziegelbreite versetzt im Halbverband angeordnet.",
+    "bildDatei": "buch/lf08/kronendeckung-schema.webp",
+    "bildunterschrift": "Kronendeckung (Buch S. 295)"
   },
   {
     "id": "lf08-010",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Dachflächen einteilen",
-    "quelle": "Fachrechnen Dachdeckerhandwerk (wahre Dachfläche)",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296 (Aufgaben S. 305)",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Dach hat eine Grundfläche (im Grundriss) von {grund} m² und eine Neigung von {alpha}°. Wie groß ist die wahre Dachfläche?",
-    "parameter": [
-      {
-        "name": "grund",
-        "label": "Grundfläche",
-        "einheit": "m²",
-        "min": 40,
-        "max": 150,
-        "schritt": 5
-      },
-      {
-        "name": "alpha",
-        "label": "Dachneigung",
-        "einheit": "°",
-        "min": 20,
-        "max": 50,
-        "schritt": 5
-      }
+    "frage": "Wodurch unterscheidet sich die Doppeldeckung von der Kronendeckung?",
+    "optionen": [
+      "Bei der Doppeldeckung liegt auf jeder Latte nur eine Ziegelreihe, jedes Gebinde wird vom übernächsten überdeckt",
+      "Bei der Doppeldeckung liegen drei Reihen übereinander",
+      "Die Doppeldeckung braucht keine Latten",
+      "Es gibt keinen Unterschied"
     ],
-    "schritte": [
-      {
-        "beschreibung": "Wahre Dachfläche = Grundfläche / cos(Neigungswinkel) = {grund} / cos({alpha}°)",
-        "formel": "grund / cos(alpha * pi / 180)",
-        "ergebnisName": "wahr",
-        "einheit": "m²"
-      }
+    "korrekt": [
+      0
     ],
-    "toleranzProzent": 2,
-    "erklaerung": "Die geneigte Dachfläche ist immer größer als ihre Grundfläche im Grundriss. Je steiler das Dach, desto größer der Unterschied — wichtig für den Materialbedarf."
+    "erklaerung": "Im Gegensatz zur Kronendeckung liegt bei der Doppeldeckung auf jeder Latte eine Ziegelreihe, ein Gebinde. Die nachfolgenden Gebinde sind immer um eine halbe Ziegelbreite versetzt im Verband angeordnet. Ein Gebinde wird immer vom übernächsten noch überdeckt — dadurch ist jede Stelle mindestens doppelt gedeckt.",
+    "bildDatei": "buch/lf08/doppeldeckung-schema.webp",
+    "bildunterschrift": "Doppeldeckung (Buch S. 296)"
   },
   {
     "id": "lf08-011",
-    "typ": "diagram",
+    "typ": "cloze",
     "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296",
     "konfidenz": "hoch",
-    "frage": "Benenne die markierten Funktionsschichten des gedämmten Steildachs (innen unten, außen oben).",
-    "svg": "<svg viewBox='0 0 380 218' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Funktionsschichten: benenne die vier markierten Lagen'><defs><pattern id='fg81-brett' width='12' height='5' patternUnits='userSpaceOnUse'><path d='M0 2.5 H12' stroke='currentColor' stroke-width='0.6' opacity='0.4'/></pattern><pattern id='fg81-daemmung' width='14' height='10' patternUnits='userSpaceOnUse'><path d='M0 5 Q3.5 0 7 5 Q10.5 10 14 5' fill='none' stroke='currentColor' stroke-width='0.9' opacity='0.55'/></pattern></defs><rect x='60' y='40' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='62' width='150' height='18' fill='url(#fg81-brett)' stroke='none'/><rect x='60' y='62' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='84' width='150' height='18' fill='url(#fg81-brett)' stroke='none'/><rect x='60' y='84' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='106' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='106' width='150' height='18' fill='#c07d4a' stroke='none' opacity='0.18'/><rect x='60' y='128' width='150' height='18' fill='url(#fg81-daemmung)' stroke='none'/><rect x='60' y='128' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='150' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='60' y='150' width='150' height='18' fill='#c07d4a' stroke='none' opacity='0.18'/><rect x='60' y='172' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='240' y1='159' x2='210' y2='159' stroke='#c07d4a' stroke-width='1'/><circle cx='240' cy='159' r='11' fill='#c07d4a'/><text x='240' y='163.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='300' y1='137' x2='210' y2='137' stroke='#c07d4a' stroke-width='1'/><circle cx='300' cy='137' r='11' fill='#c07d4a'/><text x='300' y='141.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='240' y1='115' x2='210' y2='115' stroke='#c07d4a' stroke-width='1'/><circle cx='240' cy='115' r='11' fill='#c07d4a'/><text x='240' y='119.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='300' y1='93' x2='210' y2='93' stroke='#c07d4a' stroke-width='1'/><circle cx='300' cy='93' r='11' fill='#c07d4a'/><text x='300' y='97.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
-    "zuordnung": {
-      "dampfbremse": "Dampfbremse",
-      "waermedaemmung": "Wärmedämmung",
-      "unterdeckbahn": "Unterdeckbahn",
-      "konterlatte": "Konterlatte"
+    "text": "Bei der Doppeldeckung gilt: maximaler Traglattenabstand = (Ziegellaenge minus Mindestueberdeckung) geteilt durch {{2}}.",
+    "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ]
     },
-    "erklaerung": "Von innen nach außen: Innenbekleidung, Dampfbremse (1), Wärmedämmung (2), Unterdeckbahn (3), Konterlatte (4) mit Belüftungsebene, darauf Traglattung und Deckung."
+    "erklaerung": "Der maximale Traglattenabstand bestimmt sich bei der Doppeldeckung durch die Ziegellänge abzüglich der Mindesthöhenüberdeckung, geteilt durch zwei. Beispiel DN 40°, Biber 18 × 38 cm: (380 mm − 80 mm)/2 = 150 mm.",
+    "bildDatei": "buch/lf08/tab-doppeldeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Doppeldeckung (Buch S. 296)"
   },
   {
     "id": "lf08-012",
-    "typ": "draw",
-    "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
-    "konfidenz": "hoch",
-    "aufgabentext": "Zeichne den Schichtenaufbau eines gedämmten Steildachs von innen nach außen und beschrifte die Schichten. Kennzeichne besonders, wo die Dampfbremse und wo die Belüftungsebene liegt.",
-    "loesungSvg": "<svg viewBox='0 0 380 259' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Musterlösung: Schichtenaufbau des gedämmten Steildachs'><defs><pattern id='fg106-brett' width='12' height='5' patternUnits='userSpaceOnUse'><path d='M0 2.5 H12' stroke='currentColor' stroke-width='0.6' opacity='0.4'/></pattern><pattern id='fg106-daemmung' width='14' height='10' patternUnits='userSpaceOnUse'><path d='M0 5 Q3.5 0 7 5 Q10.5 10 14 5' fill='none' stroke='currentColor' stroke-width='0.9' opacity='0.55'/></pattern></defs><rect x='40' y='40' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='53' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Deckung</text><rect x='40' y='62' width='150' height='18' fill='url(#fg106-brett)' stroke='none'/><rect x='40' y='62' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='75' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Traglattung</text><rect x='40' y='84' width='150' height='18' fill='url(#fg106-brett)' stroke='none'/><rect x='40' y='84' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='97' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Konterlattung</text><rect x='40' y='106' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='40' y='106' width='150' height='18' fill='#c07d4a' stroke='none' opacity='0.18'/><text x='200' y='119' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Unterdeckbahn</text><rect x='40' y='128' width='150' height='18' fill='url(#fg106-daemmung)' stroke='none'/><rect x='40' y='128' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='141' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Sparren + Dämmung</text><rect x='40' y='150' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='40' y='150' width='150' height='18' fill='#c07d4a' stroke='none' opacity='0.18'/><text x='200' y='163' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Dampfbremse</text><rect x='40' y='172' width='150' height='18' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='200' y='185' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Innenbekleidung</text><text x='40' y='32' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>außen</text><text x='40' y='204' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>innen</text><text x='18' y='231' fill='#c07d4a' font-size='12'>Innen dicht (Dampfbremse), außen belüftet (Konterlattung).</text></svg>",
-    "schritte": [
-      "Ganz innen die Innenbekleidung zeichnen.",
-      "Direkt darüber die Dampfbremse — sie liegt immer raumseitig der Dämmung und muss luftdicht verklebt sein.",
-      "Darüber die Wärmedämmung zwischen bzw. auf den Sparren.",
-      "Außen die Unterdeckbahn, darüber die Konterlatte: Sie erzeugt die Belüftungsebene.",
-      "Ganz außen Traglattung und Deckung."
-    ],
-    "erklaerung": "Merksatz für die Reihenfolge: innen dicht, mitte warm, außen regensicher und belüftet. Die Belüftungsebene über der Unterdeckbahn sorgt dafür, dass Feuchtigkeit abtrocknen kann."
-  },
-  {
-    "id": "lf08-013",
-    "typ": "fachbegriff",
-    "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 8",
-    "konfidenz": "hoch",
-    "begriff": "Dampfbremse",
-    "definition": "Die raumseitige Schicht, die den Wasserdampf aus der Raumluft bremst und die Konstruktion luftdicht abschließt. Entscheidend ist die saubere, luftdichte Verklebung — sonst strömt feuchte Luft ein (Konvektion).",
-    "bestandteile": [
-      "Dampf",
-      "bremse"
-    ],
-    "erklaerung": "Merke: Dampf-bremse — sie bremst den Dampf, sperrt ihn aber nicht vollständig."
-  },
-  {
-    "id": "lf08-014",
-    "typ": "fachbegriff",
-    "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "Bauphysik-Grundlagen (U-Wert)",
-    "konfidenz": "hoch",
-    "begriff": "Wärmedurchgangskoeffizient",
-    "definition": "Der U-Wert: Er gibt an, wie viel Wärme durch ein Bauteil verloren geht (in W/(m²·K)). Je kleiner der U-Wert, desto besser ist das Bauteil gedämmt. Anforderungen stellt das Gebäudeenergiegesetz.",
-    "bestandteile": [
-      "Wärme",
-      "durchgangs",
-      "koeffizient"
-    ],
-    "erklaerung": "Merke: Wärme-durchgangs-koeffizient — wie gut Wärme durch das Bauteil hindurchgeht."
-  },
-  {
-    "id": "lf08-015",
     "typ": "calc",
     "lernfeld": "lf08",
-    "thema": "Wahre Dachflächen und -linien",
-    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Satteldach hat je Seite eine Grundfläche (Projektion) von {grund} m2 bei {neigung} Grad Dachneigung. Wie groß ist die wahre Dachfläche?",
+    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang, die Mindestüberdeckung beträgt {ueber} mm. Berechne den maximalen Traglattenabstand bei Doppeldeckung.",
     "parameter": [
       {
-        "name": "grund",
-        "label": "Grundfläche",
-        "einheit": "m2",
-        "min": 30,
-        "max": 80,
-        "schritt": 1
+        "name": "laenge",
+        "label": "Ziegellänge",
+        "einheit": "mm",
+        "min": 380,
+        "max": 420,
+        "schritt": 10
       },
       {
-        "name": "neigung",
-        "label": "Dachneigung",
-        "einheit": "Grad",
-        "min": 20,
-        "max": 45,
-        "schritt": 1
+        "name": "ueber",
+        "label": "Mindestüberdeckung",
+        "einheit": "mm",
+        "min": 50,
+        "max": 90,
+        "schritt": 10
       }
     ],
     "schritte": [
       {
-        "beschreibung": "Wahre Fläche = Grundfläche geteilt durch cos(Neigung) ({grund} m2 / cos {neigung} Grad)",
-        "formel": "grund / cos(neigung / 180 * pi)",
-        "ergebnisName": "wahr",
-        "einheit": "m2"
+        "beschreibung": "max. Traglattenabstand = (Ziegellänge − Mindestüberdeckung) / 2 = ({laenge} − {ueber}) / 2",
+        "formel": "(laenge - ueber) / 2",
+        "ergebnisName": "abstand",
+        "einheit": "mm"
       }
     ],
     "toleranzProzent": 2,
-    "erklaerung": "Das geneigte Dach ist größer als seine Draufsicht (Grundfläche). Man teilt durch den Kosinus des Neigungswinkels. Je steiler das Dach, desto größer die wahre Fläche - wichtig für den Materialbedarf."
+    "erklaerung": "Bei der Doppeldeckung wird durch 2 geteilt, weil jede Latte nur eine Ziegelreihe trägt und ein Gebinde vom übernächsten überdeckt wird. Buchbeispiel DN 40°: (380 − 80)/2 = 150 mm.",
+    "bildDatei": "buch/lf08/tab-doppeldeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Doppeldeckung (Buch S. 296)"
+  },
+  {
+    "id": "lf08-013",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist die Lattweite bei der Biber-Doppeldeckung (18 × 38 cm) bei einer Dachneigung von 38°?",
+    "optionen": [
+      "15,0 cm",
+      "14,5 cm",
+      "15,5 cm",
+      "16,0 cm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach der Tabelle Werkstoffbedarf Doppeldeckung: ≥ 30°...35° → 14,5 cm; > 35°...40° → 15,0 cm; > 40°...45° → 15,5 cm; > 45°...60° → 16,0 cm; > 60° → 16,5 cm. Bei 38° gilt also 15,0 cm.",
+    "bildDatei": "buch/lf08/tab-doppeldeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Doppeldeckung (Buch S. 296)"
+  },
+  {
+    "id": "lf08-014",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch ist der Ziegelbedarf bei der Biber-Doppeldeckung (18 × 38 cm) bei einer Dachneigung von 32°?",
+    "optionen": [
+      "38,3 Stück/m²",
+      "35,8 Stück/m²",
+      "33,6 Stück/m²",
+      "25 Stück/m²"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach der Tabelle Werkstoffbedarf Doppeldeckung (Format 18 × 38 cm): ≥ 30°...35° → 38,3 Stück/m²; > 35°...40° → 37,0; > 40°...45° → 35,8; > 45°...60° → 34,7; > 60° → 33,6 Stück/m². Je steiler das Dach, desto weniger Ziegel.",
+    "bildDatei": "buch/lf08/tab-doppeldeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Doppeldeckung (Buch S. 296)"
+  },
+  {
+    "id": "lf08-015",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Biberschwanzdeckungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 294-296 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "text": "Die Regeldachneigung betraegt bei der Einfachdeckung mit Spliessen {{40}} Grad, bei Kronen- und Doppeldeckung dagegen {{30}} Grad.",
+    "akzeptiert": {
+      "40": [
+        "40"
+      ],
+      "30": [
+        "30"
+      ]
+    },
+    "erklaerung": "Einfachdeckung mit Spließen: RDN 40° (83,9 %). Kronendeckung: RDN 30°. Doppeldeckung: RDN 30°. Die Doppel- und Kronendeckung sind sicherer, weil sie mehrfach überdeckt sind.",
+    "bildDatei": "buch/lf08/tab-einfachdeckung.webp",
+    "bildunterschrift": "Werkstoffbedarf Einfachdeckung (Buch S. 294)"
   },
   {
     "id": "lf08-016",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Windsogsicherung",
-    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "thema": "Hohlpfannen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 297",
     "konfidenz": "hoch",
-    "frage": "Wo greifen die größten Windsogkräfte am Dach an?",
+    "frage": "Welche Querschnittsform haben Hohlpfannen?",
     "optionen": [
-      "In der Dachmitte",
-      "An den Rand- und Eckbereichen (First, Ortgang, Traufe)",
-      "Nur am First",
-      "Windsog gibt es nicht"
+      "Eine s-förmige Wölbung, das Wasser wird in der Pfannenmitte abgeleitet",
+      "Eine völlig ebene Form",
+      "Eine V-förmige Rinne",
+      "Eine halbrunde Röhre"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "An Rändern und Ecken entstehen die stärksten Sogspitzen. Dort müssen mehr Ziegel mechanisch verklammert werden als in der Fläche. Ab etwa 65 Grad Dachneigung wird jeder Ziegel befestigt."
+    "erklaerung": "Hohlpfannendeckungen dominieren im norddeutschen Raum. Durch die Wölbung der Pfannen, die im Querschnitt s-förmig sind, wird das Wasser in der Pfannenmitte abgeleitet.",
+    "bildDatei": "buch/lf08/vorschnittdeckung.webp",
+    "bildunterschrift": "Vorschnittdeckung mit Langschnittpfannen (Buch S. 297)"
   },
   {
     "id": "lf08-017",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Unterdach, Unterdeckung, Unterspannung",
-    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "thema": "Vorschnittdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 297 (Aufgaben S. 305)",
     "konfidenz": "hoch",
-    "text": "Eine {{diffusionsoffene}} Unterdeckbahn hält Regen und Flugschnee ab, lässt aber Wasserdampf von innen nach {{außen}} entweichen.",
-    "akzeptiert": {
-      "diffusionsoffene": [
-        "diffusionsoffen",
-        "offene",
-        "dampfdurchlaessige",
-        "dampfdurchlässige"
-      ],
-      "außen": [
-        "aussen",
-        "draussen",
-        "draußen"
-      ]
-    },
-    "erklaerung": "Diffusionsoffen heißt: dicht gegen Wasser von außen, aber durchlässig für Dampf von innen. So bleibt die Konstruktion trocken."
+    "frage": "Wie viele Ziegel liegen bei der Vorschnittdeckung im Vierziegeleck übereinander?",
+    "optionen": [
+      "Drei Ziegel",
+      "Zwei Ziegel",
+      "Vier Ziegel",
+      "Fünf Ziegel"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei der Vorschnittdeckung liegen die rechten oberen Eckenschnitte des unteren Ziegels vor dem linken unteren Eckenschnitt des rechts darüberliegenden Ziegels. Hier liegen drei Ziegel übereinander. Bei der Aufschnittdeckung sind es dagegen vier.",
+    "bildDatei": "buch/lf08/vorschnittdeckung.webp",
+    "bildunterschrift": "Vorschnittdeckung mit Langschnittpfannen (Buch S. 297)"
   },
   {
     "id": "lf08-018",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Funktionsschichten",
-    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "thema": "Aufschnittdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 298 (Aufgaben S. 305)",
     "konfidenz": "hoch",
-    "begriff": "Unterspannbahn",
-    "definition": "Eine Bahn, die unterhalb der Konterlattung locker über die Sparren gespannt wird. Sie leitet eingedrungenes Wasser und Flugschnee zur Traufe ab und dient als zweite wasserführende Ebene.",
-    "bestandteile": [
-      "Unter",
-      "spann",
-      "bahn"
+    "frage": "Wie unterscheidet sich die Aufschnittdeckung von der Vorschnittdeckung im Vierziegeleck?",
+    "optionen": [
+      "Bei der Aufschnittdeckung liegen vier Ziegel aufeinander — das erhöht die Regensicherheit, macht die Oberfläche aber unebener",
+      "Bei der Aufschnittdeckung liegen nur zwei Ziegel übereinander",
+      "Es gibt keinen Unterschied im Vierziegeleck",
+      "Die Aufschnittdeckung braucht keine Latten"
     ],
-    "erklaerung": "Die Unterspannbahn ist die einfachste der drei Zusatzmaßnahmen (Unterdach, Unterdeckung, Unterspannung) und schützt zusätzlich unter der Eindeckung."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zur Aufschnittdeckung dienen Hohlpfannen mit Kurzschnitt (Kurzschnittpfannen). Da die Höhenüberdeckung größer ist als die Eckenschnitte der Kurzschnittpfanne, liegen am Vierziegeleck vier Ziegel aufeinander. Hierdurch erhöht sich einerseits die Regensicherheit, andererseits gestaltet sich die Dachoberfläche etwas unebener.",
+    "bildDatei": "buch/lf08/aufschnittdeckung.webp",
+    "bildunterschrift": "Aufschnittdeckung mit Kurzschnittpfannen (Buch S. 298)"
   },
   {
     "id": "lf08-019",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Hohlpfannen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 297-298",
+    "konfidenz": "hoch",
+    "text": "Die Regeldachneigung betraegt bei der Vorschnittdeckung mit Langschnittpfannen {{40}} Grad und bei der Aufschnittdeckung mit Kurzschnittpfannen {{35}} Grad.",
+    "akzeptiert": {
+      "40": [
+        "40"
+      ],
+      "35": [
+        "35"
+      ]
+    },
+    "erklaerung": "Vorschnittdeckung (Langschnittpfannen): RDN 40°. Aufschnittdeckung (Kurzschnittpfannen): RDN 35°. Die Aufschnittdeckung ist regensicherer, weil vier Ziegel im Vierziegeleck aufeinanderliegen.",
+    "bildDatei": "buch/lf08/aufschnittdeckung.webp",
+    "bildunterschrift": "Aufschnittdeckung mit Kurzschnittpfannen (Buch S. 298)"
+  },
+  {
+    "id": "lf08-020",
     "typ": "mc",
     "lernfeld": "lf08",
-    "thema": "Wärme-, Feuchte-, Brand- und Schallschutz",
-    "quelle": "ZVDH-Fachregeln / Bauphysik, LF 8 (verifiziert)",
+    "thema": "Aufschnittdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 298",
     "konfidenz": "hoch",
-    "frage": "Warum wird eine Dampfbremse auf der Rauminnenseite der Dämmung eingebaut?",
+    "frage": "Welche Mindestüberdeckung gilt bei der Aufschnittdeckung mit Hohlpfannen bei einer Dachneigung von 42°?",
     "optionen": [
-      "Damit von außen kein Regen eindringt",
-      "Damit warme, feuchte Raumluft nicht in die Dämmung gelangt und dort zu Tauwasser wird",
-      "Zur besseren Optik",
-      "Um Wärme zu erzeugen"
+      "90 mm",
+      "100 mm",
+      "80 mm",
+      "70 mm"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Warme Raumluft enthält viel Feuchte. Gelangt sie in die kalte Dämmung, fällt Tauwasser aus und durchnässt sie. Die Dampfbremse innen hält die Feuchte zurück - außen bleibt die Bahn diffusionsoffen."
+    "erklaerung": "Nach der Tabelle Aufschnittdeckung: ≤ 40° → 100 mm; > 40°...45° → 90 mm; > 45° → 80 mm. Bei 42° gilt also 90 mm. Buchbeispiel DN 45°, Hohlpfanne 23,5 × 40 cm: 400 mm − 90 mm = 310 mm maximaler Traglattenabstand.",
+    "bildDatei": "buch/lf08/tab-aufschnitt-ueberdeckung.webp",
+    "bildunterschrift": "Mindestüberdeckung Aufschnittdeckung (Buch S. 298)"
+  },
+  {
+    "id": "lf08-021",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Mönch und Nonne",
+    "quelle": "Grundstufe Bautechnik, Buch S. 299",
+    "konfidenz": "hoch",
+    "frage": "Wie sind Mönch und Nonne bei dieser Deckung angeordnet?",
+    "optionen": [
+      "Die Nonne (konkav) liegt unten mit der Nase auf der Latte, der Mönch (konvex) liegt darüber",
+      "Der Mönch liegt unten, die Nonne darüber",
+      "Beide liegen nebeneinander in einer Ebene",
+      "Sie werden abwechselnd quer verlegt"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Mönch- und Nonnendeckung besteht aus zwei schalenförmig ausgebildeten Ziegelformen. Die konkav verlegten unteren Schalen (Nonnen) hängen mit der Nase auf der Latte. Die konvex verlegten oberen Schalen werden als Mönche bezeichnet und überdecken die Längsfugen.",
+    "bildDatei": "buch/lf08/moench-nonne.webp",
+    "bildunterschrift": "Mönch- und Nonnendeckung (Buch S. 299)"
+  },
+  {
+    "id": "lf08-022",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Mönch und Nonne",
+    "quelle": "Grundstufe Bautechnik, Buch S. 299 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist die Mindestüberdeckung des Nonnenziegels?",
+    "optionen": [
+      "80 mm",
+      "100 mm",
+      "60 mm",
+      "120 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Höhenüberdeckung wird durch die Überdeckung der Nonnenziegel erreicht und muss mindestens 80 mm betragen. Buchbeispiel: Nonnenziegel 21 × 40 cm ergibt einen maximalen Traglattenabstand von 400 mm − 80 mm = 320 mm.",
+    "bildDatei": "buch/lf08/moench-nonne.webp",
+    "bildunterschrift": "Mönch- und Nonnendeckung (Buch S. 299)"
+  },
+  {
+    "id": "lf08-023",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Mönch und Nonne",
+    "quelle": "Grundstufe Bautechnik, Buch S. 299",
+    "konfidenz": "hoch",
+    "frage": "Mit welchem Mörtel werden die Mönch- und Nonnenziegel bei nasser Verlegung versehen?",
+    "optionen": [
+      "Kalkzementmörtel im Mischungsverhältnis 2 : 1 : 8",
+      "Reiner Zementmörtel ohne Kalk",
+      "Gipsmörtel",
+      "Lehmmörtel"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Nonnenziegel werden mit Querschlag am Kopf des darunterliegenden Nonnenziegels versehen. Die Mönchziegel werden am Kopf und an den Seiten mit Mörtel (Längsschläge) versehen und aufgesetzt — mindestens Kalkzementmörtel 2 : 1 : 8. Die Regeldachneigung beträgt 40°.",
+    "bildDatei": "buch/lf08/moench-nonne.webp",
+    "bildunterschrift": "Mönch- und Nonnendeckung (Buch S. 299)"
+  },
+  {
+    "id": "lf08-024",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Krempziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 300 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Wie verlaufen die Leisten (Krempen) beim Krempziegel in der Dachfläche?",
+    "optionen": [
+      "Vertikal zur First-Trauflinie, also rechtwinklig zur Lattung",
+      "Waagerecht parallel zur Traufe",
+      "Diagonal über die Dachfläche",
+      "Es gibt keine Leisten"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "In der historisch überlieferten Verlegetechnik verläuft der Krempenansatz des Dachziegels in der Deckung vertikal zur First-Trauflinie bzw. rechtwinklig zur Lattung der Dachfläche. Dadurch ergibt sich eine leichte Neigung der Ziegel nach rechts (Rechtsdeckung).",
+    "bildDatei": "buch/lf08/krempziegeldeckung.webp",
+    "bildunterschrift": "Krempziegeldeckung – Rechtsdeckung (Buch S. 300)"
+  },
+  {
+    "id": "lf08-025",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Krempziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 300 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist die Mindestüberdeckung bei der Krempziegeldeckung?",
+    "optionen": [
+      "80 mm",
+      "100 mm",
+      "120 mm",
+      "60 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Krempziegeldeckung wird überwiegend als Rechtsdeckung mit einer Mindestüberdeckung von 80 mm ausgeführt. Die Regeldachneigung beträgt 35°. Buchbeispiel: Krempziegel 26 × 34 cm ergibt 340 mm − 80 mm = 260 mm maximalen Traglattenabstand.",
+    "bildDatei": "buch/lf08/krempziegeldeckung.webp",
+    "bildunterschrift": "Krempziegeldeckung – Rechtsdeckung (Buch S. 300)"
+  },
+  {
+    "id": "lf08-026",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Strangfalzziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 301 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist die Mindestüberdeckung bei ebenen Strangfalzziegeln?",
+    "optionen": [
+      "120 mm",
+      "100 mm",
+      "80 mm",
+      "150 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Strangfalzziegel mit geradem Längsfalz sind in der Höhenüberdeckung variabel. Die Mindestüberdeckung beträgt bei ebenen Strangfalzziegeln 120 mm, bei gewölbten 100 mm. Die Regeldachneigung beträgt 30°.",
+    "bildDatei": "buch/lf08/falzziegel-arten.webp",
+    "bildunterschrift": "Verfalzte Dachziegel – Arten (Buch S. 301)"
+  },
+  {
+    "id": "lf08-027",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Falzziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 301",
+    "konfidenz": "hoch",
+    "frage": "Wodurch wird die Deckbreite bei Deckungen mit Falzziegeln festgelegt?",
+    "optionen": [
+      "Durch die Längsfalze — sie sind nicht variabel",
+      "Durch den Lattenabstand",
+      "Durch die Dachneigung",
+      "Sie ist frei wählbar"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei der Deckung mit verfalzten Ziegeln hängt auf jeder Latte eine Deckschicht, die nebeneinander angeordneten Ziegel liegen mit den Längsfalzen ineinander, die übereinander angeordneten mit den Querfalzen. Die Deckbreite ist durch die Längsfalze festgelegt.",
+    "bildDatei": "buch/lf08/falzziegel-arten.webp",
+    "bildunterschrift": "Verfalzte Dachziegel – Arten (Buch S. 301)"
+  },
+  {
+    "id": "lf08-028",
+    "typ": "fachbegriff",
+    "lernfeld": "lf08",
+    "thema": "Falzziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 301",
+    "konfidenz": "hoch",
+    "begriff": "Verschiebeziegel",
+    "definition": "Ein Falzziegel, der überwiegend bei Umdeckungen ohne Umlattung verwendet wird. Die Ausbildung seiner Querfalze lässt in bestimmten Grenzen eine variable Höhenüberdeckung zu — je nach Modell bis zu 100 mm.",
+    "bestandteile": [
+      "Verschiebe",
+      "ziegel"
+    ],
+    "erklaerung": "Der Verschiebeziegel lässt sich in der Höhe ‚verschieben'. Damit kann man auf einer vorhandenen Lattung decken, ohne sie neu einteilen zu müssen — ideal bei Sanierungen.",
+    "bildDatei": "buch/lf08/falzziegel-arten.webp",
+    "bildunterschrift": "Verfalzte Dachziegel – Arten (Buch S. 301)"
+  },
+  {
+    "id": "lf08-029",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Falzziegel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 301",
+    "konfidenz": "hoch",
+    "frage": "Welcher Ziegel gilt als ältester verfalzter Pressdachziegel (Mitte 19. Jahrhundert)?",
+    "optionen": [
+      "Der Herzziegel",
+      "Der Reformziegel",
+      "Der Flachdachziegel",
+      "Der Doppelmuldenfalzziegel"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Herzziegel gelten als älteste verfalzte Pressdachziegel (Mitte 19. Jahrhundert). Doppelmuldenfalzziegel sind eine Weiterentwicklung des Herzziegels, ebenso wie Glattziegel, die sich wegen der symmetrischen Anordnung von Wulst und Mulde auch im Verband verlegen lassen.",
+    "bildDatei": "buch/lf08/falzziegel-arten.webp",
+    "bildunterschrift": "Verfalzte Dachziegel – Arten (Buch S. 301)"
+  },
+  {
+    "id": "lf08-030",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Decklänge und Deckbreite",
+    "quelle": "Grundstufe Bautechnik, Buch S. 302 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Wie wird die mittlere Decklänge nach DIN EN 1304 ermittelt?",
+    "optionen": [
+      "Zwölf Ziegel auslegen, höchste und niedrigste Länge messen, jeweils durch 10 teilen und mitteln",
+      "Einen einzigen Ziegel messen",
+      "Die Ziegellänge aus dem Katalog nehmen",
+      "Die Dachlänge durch die Ziegelanzahl teilen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zur Ermittlung werden zwei Dachziegelreihen mit je 12 Ziegeln ausgelegt. Man misst die Länge zwischen dem 1. und 11. Ziegel — dieses Maß, dividiert durch 10, bildet den höchsten Traglattenabstand. Dann schiebt man die Ziegel möglichst ineinander und misst wieder: geteilt durch 10 ergibt sich der niedrigste Traglattenabstand. Mittlere Decklänge = (l₁ + l₂)/20.",
+    "bildDatei": "buch/lf08/decklaenge-ermittlung.webp",
+    "bildunterschrift": "Ermittlung von Decklänge und Deckbreite (Buch S. 302)"
+  },
+  {
+    "id": "lf08-031",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Decklänge und Deckbreite",
+    "quelle": "Grundstufe Bautechnik, Buch S. 302",
+    "konfidenz": "hoch",
+    "text": "Die hoechste Decklaenge ergibt sich aus der gemessenen Laenge geteilt durch {{10}}. Die mittlere Decklaenge ist die Summe beider Laengen geteilt durch {{20}}.",
+    "akzeptiert": {
+      "10": [
+        "10",
+        "zehn"
+      ],
+      "20": [
+        "20",
+        "zwanzig"
+      ]
+    },
+    "erklaerung": "Höchste Decklänge = l₁/10, niedrigste Decklänge = l₂/10, mittlere Decklänge = (l₁ + l₂)/20. Genauso wird die Deckbreite mit drei Latten und je 12 Ziegeln ermittelt: b₁/10, b₂/10 und (b₁ + b₂)/20.",
+    "bildDatei": "buch/lf08/decklaenge-ermittlung.webp",
+    "bildunterschrift": "Ermittlung von Decklänge und Deckbreite (Buch S. 302)"
+  },
+  {
+    "id": "lf08-032",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Decklänge und Deckbreite",
+    "quelle": "Grundstufe Bautechnik, Buch S. 302",
+    "konfidenz": "hoch",
+    "frage": "Warum werden bei der Dachziegelherstellung Toleranzen in Decklänge und Deckbreite zugelassen?",
+    "optionen": [
+      "Damit thermische Längenänderungen und Bewegungen durch äußere Einflüsse aufgefangen werden",
+      "Weil die Herstellung sonst zu teuer wäre",
+      "Weil die Ziegel sonst zu schwer würden",
+      "Es gibt keine Toleranzen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die mögliche Decklänge und Deckbreite liegen zwischen den ermittelten höchsten und niedrigsten Werten. Dadurch können Toleranzen in der Dachziegelherstellung, thermische Längenänderungen und Bewegungen durch äußere Einflüsse aufgefangen werden.",
+    "bildDatei": "buch/lf08/decklaenge-ermittlung.webp",
+    "bildunterschrift": "Ermittlung von Decklänge und Deckbreite (Buch S. 302)"
+  },
+  {
+    "id": "lf08-033",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 303",
+    "konfidenz": "hoch",
+    "frage": "In welchem Format werden Dachsteine in Biberform hergestellt?",
+    "optionen": [
+      "16,8 × 42 cm",
+      "18 × 38 cm",
+      "23,5 × 40 cm",
+      "26 × 34 cm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Deckungen mit Betondachsteinen im Biberformat (16,8 × 42 cm) sind nach den Fachregeln in den Deckarten Doppeldeckung, Kronendeckung oder Einfachdeckung mit Spließen möglich. Dachsteine in Biberform werden derzeit in Deutschland nicht hergestellt.",
+    "bildDatei": "buch/lf08/tab-dachsteine-biberform.webp",
+    "bildunterschrift": "Dachsteine in Biberform – Werkstoffbedarf (Buch S. 303)"
+  },
+  {
+    "id": "lf08-034",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 303",
+    "konfidenz": "hoch",
+    "frage": "Welcher maximale Lattenabstand gilt bei der Dachstein-Doppeldeckung im Biberformat bei einer Dachneigung von 33°?",
+    "optionen": [
+      "16,5 cm",
+      "17,0 cm",
+      "17,5 cm",
+      "18,5 cm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach der Tabelle Doppeldeckung (Dachsteine im Biberformat): ≤ 35° → 16,5 cm; > 35° → 17,0; > 40° → 17,5; > 45° → 18,0; > 60° → 18,5 cm. Die Mindesthöhenüberdeckung beträgt dabei 9,0 cm bei ≤ 35°.",
+    "bildDatei": "buch/lf08/tab-dachsteine-biberform.webp",
+    "bildunterschrift": "Dachsteine in Biberform – Werkstoffbedarf (Buch S. 303)"
+  },
+  {
+    "id": "lf08-035",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 303",
+    "konfidenz": "hoch",
+    "frage": "Welcher maximale Lattenabstand gilt bei der Dachstein-Kronendeckung im Biberformat bei einer Dachneigung von 33°?",
+    "optionen": [
+      "33,0 cm",
+      "16,5 cm",
+      "34,0 cm",
+      "37,0 cm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei der Kronendeckung wird nicht durch 2 geteilt: max. Lattenabstand = Decksteinlänge − Mindesthöhenüberdeckung. Bei ≤ 35° → 33,0 cm; > 35° → 34,0; > 40° → 35,0; > 45° → 36,0; > 60° → 37,0 cm. Das ist genau das Doppelte der Doppeldeckung.",
+    "bildDatei": "buch/lf08/tab-dachsteine-biberform.webp",
+    "bildunterschrift": "Dachsteine in Biberform – Werkstoffbedarf (Buch S. 303)"
+  },
+  {
+    "id": "lf08-036",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 304 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Welche Regeldachneigung gilt für Dachsteine mit tief liegendem Seitenfalz?",
+    "optionen": [
+      "25°",
+      "22°",
+      "30°",
+      "35°"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dachsteine mit hoch liegendem Seitenfalz haben die Regeldachneigung 22°, Dachsteine mit tief liegendem Seitenfalz die Regeldachneigung 25°. Bei tief liegendem Seitenfalz liegt die Seitenfalzkante höher über der Wasser führenden Ebene, deshalb ist die RDN etwas größer.",
+    "bildDatei": "buch/lf08/tab-dachsteine-seitenfalz.webp",
+    "bildunterschrift": "Dachsteine: Dachneigung und Mindestüberdeckung (Buch S. 304)"
+  },
+  {
+    "id": "lf08-037",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 304 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Welche Mindestüberdeckung gilt für Dachsteine mit tief liegendem Längsfalz bei einer Dachneigung von 38°?",
+    "optionen": [
+      "75 mm",
+      "85 mm",
+      "100 mm",
+      "120 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dachsteine mit tief liegendem Seitenfalz: < 25° → 100 mm; 25°...35° → 85 mm; > 35° → 75 mm. Bei 38° gilt also 75 mm. Bei hoch liegendem Seitenfalz gelten dieselben Werte, aber die Neigungsgrenzen liegen bei < 22°, 22°...30° und > 30°.",
+    "bildDatei": "buch/lf08/tab-dachsteine-seitenfalz.webp",
+    "bildunterschrift": "Dachsteine: Dachneigung und Mindestüberdeckung (Buch S. 304)"
+  },
+  {
+    "id": "lf08-038",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 304",
+    "konfidenz": "hoch",
+    "text": "Bei Dachsteinen gilt: maximaler Traglattenabstand = {{Decksteinlaenge}} minus Mindesthoehenueberdeckung. Buchbeispiel Dachstein 33 x 42 cm bei 30 Grad: 420 mm minus 85 mm = {{335}} mm.",
+    "akzeptiert": {
+      "Decksteinlaenge": [
+        "Decksteinlaenge",
+        "Decksteinlänge",
+        "Dachsteinlaenge",
+        "Dachsteinlänge"
+      ],
+      "335": [
+        "335"
+      ]
+    },
+    "erklaerung": "Der maximale Traglattenabstand errechnet sich aus der Dachsteinlänge minus der Mindesthöhenüberdeckung in Abhängigkeit von der Dachneigung. Buchbeispiel: Dachstein mit hoch liegendem Seitenfalz 33 × 42 cm, DN 30° → 420 mm − 85 mm = 335 mm.",
+    "bildDatei": "buch/lf08/tab-dachsteine-seitenfalz.webp",
+    "bildunterschrift": "Dachsteine: Dachneigung und Mindestüberdeckung (Buch S. 304)"
+  },
+  {
+    "id": "lf08-039",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "quelle": "Grundstufe Bautechnik, Buch S. 304",
+    "konfidenz": "hoch",
+    "frage": "Wie ergibt sich die Deckbreite bei Dachsteinen im Biberformat?",
+    "optionen": [
+      "Steinbreite 168 mm plus 2 mm Fuge",
+      "Steinbreite minus 2 mm",
+      "Steinbreite mal 2",
+      "Die Deckbreite ist frei wählbar"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Dachbreite lässt sich über die Deckbreite der Steine (Steinbreite 168 mm + Fuge 2 mm) und die gewählte Ortgangausbildung ermitteln. Bei der Ortgangausbildung wird zweckmäßigerweise darauf geachtet, dass halbe bzw. ganze Ortgang-Biber oder ganze Flächen-Biber verwendet werden können.",
+    "bildDatei": "buch/lf08/deckbreite-ermittlung.webp",
+    "bildunterschrift": "Ermittlung der erforderlichen Deckbreite (Buch S. 305)"
+  },
+  {
+    "id": "lf08-040",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traufe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 306 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Wodurch unterscheidet sich eine Traufausbildung mit hoch liegender Rinne von einer mit tief liegender Rinne?",
+    "optionen": [
+      "Bei hoch hängender Rinne wird die Traufreihe zurückgesetzt und braucht ein Traufblech; bei tief hängender Rinne muss die Traufreihe in die Rinne hineinragen",
+      "Der Unterschied liegt nur in der Rinnenfarbe",
+      "Hoch hängende Rinnen brauchen keine Rinnenhalter",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Hat die Deckung weniger als 5 cm Überstand zur Rinnenkonstruktion, ist in der Regel ein Traufblech erforderlich. Die Traufreihe soll bei hoch hängenden Rinnen nicht mehr als 1/3 der Rinnenbreite in die Rinne hineinragen. Bei tief hängenden Rinnen wird die Traufreihe zurückgesetzt; dabei sind Traufbleche o. Ä. erforderlich.",
+    "bildDatei": "buch/lf08/traufausbildungen.webp",
+    "bildunterschrift": "Traufausbildungen (Buch S. 306)"
+  },
+  {
+    "id": "lf08-041",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Traufe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 306",
+    "konfidenz": "hoch",
+    "text": "Die Ueberdeckung des Deckwerkstoffes betraegt nach ZVDH bei Dachneigungen ueber 22 Grad mindestens {{100}} mm, bei 15 bis 22 Grad mindestens {{150}} mm und unter 15 Grad mindestens {{200}} mm.",
+    "akzeptiert": {
+      "100": [
+        "100"
+      ],
+      "150": [
+        "150"
+      ],
+      "200": [
+        "200"
+      ]
+    },
+    "erklaerung": "Die Überdeckung des Deckwerkstoffes beträgt nach ZVDH (Metallarbeiten) bei Dachneigungen > 22° mindestens 100 mm, ≥ 15°...≤ 22° mindestens 150 mm und < 15° mindestens 200 mm.",
+    "bildDatei": "buch/lf08/traufausbildungen.webp",
+    "bildunterschrift": "Traufausbildungen (Buch S. 306)"
+  },
+  {
+    "id": "lf08-042",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traufe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 306 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Wie groß müssen die Lüftungsquerschnitte an der Traufe nach DIN 4108-3 mindestens sein?",
+    "optionen": [
+      "2 ‰ der zugehörigen geneigten Dachfläche, mindestens 200 cm² je Meter",
+      "0,5 ‰ der Dachfläche",
+      "50 cm² je Meter",
+      "Lüftung ist an der Traufe nicht nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Lüftungsquerschnitte für belüftete Dächer betragen nach DIN 4108-3 an der Traufe 2 ‰ der zugehörigen geneigten Dachfläche, mindestens jedoch 200 cm² je Meter der angeschlossenen Dachfläche. Am First sind es 0,5 ‰, mindestens 50 cm²/m.",
+    "bildDatei": "buch/lf08/traufausbildungen.webp",
+    "bildunterschrift": "Traufausbildungen (Buch S. 306)"
+  },
+  {
+    "id": "lf08-043",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "quelle": "Grundstufe Bautechnik, Buch S. 307 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Welche drei Ausführungsarten der Firstdeckung gibt es?",
+    "optionen": [
+      "Mörtelfirst, Trockenfirst und Sonderkonstruktionen",
+      "Nur Mörtelfirst",
+      "Klebefirst, Schweißfirst und Nagelfirst",
+      "Flachfirst und Steilfirst"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Firstdeckung kann als Mörtelfirst, Trockenfirst oder durch Sonderkonstruktionen erfolgen. Die Deckfläche sollte so eingeteilt sein, dass am Firstanschluss ganze Flächenziegel/-steine oder Firstanschlussziegel gedeckt werden können.",
+    "bildDatei": "buch/lf08/firstausbildung.webp",
+    "bildunterschrift": "Firstausbildung mit Lüftung (Buch S. 307)"
+  },
+  {
+    "id": "lf08-044",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "quelle": "Grundstufe Bautechnik, Buch S. 307 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Welche Mindestüberdeckung müssen Firstziegel aufweisen?",
+    "optionen": [
+      "Mindestens 4 cm (bei Verfalzung nach Vorgabe)",
+      "Mindestens 1 cm",
+      "Mindestens 10 cm",
+      "Eine Überdeckung ist nicht nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Firstziegel müssen eine ausreichende Überdeckung aufweisen — bei Verfalzung ist sie vorgegeben, sonst mindestens 4 cm. Beim Mörtelfirst beträgt die Überdeckung der bezeichneten Firstziegel/-steine mindestens 40 mm.",
+    "bildDatei": "buch/lf08/firstziegel-masse.webp",
+    "bildunterschrift": "Firstziegelabmessungen (Buch S. 307)"
+  },
+  {
+    "id": "lf08-045",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "quelle": "Grundstufe Bautechnik, Buch S. 307",
+    "konfidenz": "hoch",
+    "text": "Firstziegel und -steine sind gegen Windangriffe durch Schrauben mit mindestens {{4,5}} mm Durchmesser und mindestens {{24}} mm Eindringtiefe oder eine Klammer zu befestigen.",
+    "akzeptiert": {
+      "4,5": [
+        "4,5",
+        "4.5"
+      ],
+      "24": [
+        "24"
+      ]
+    },
+    "erklaerung": "Firstziegel/-steine sind gegen Windangriffe durch entsprechende Befestigungen zu sichern: mindestens 1 korrosionsbeständige Schraube Ø 4,5 mm mit mindestens 24 mm Eindringtiefe oder eine Klammer.",
+    "bildDatei": "buch/lf08/firstausbildung.webp",
+    "bildunterschrift": "Firstausbildung mit Lüftung (Buch S. 307)"
+  },
+  {
+    "id": "lf08-046",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "quelle": "Grundstufe Bautechnik, Buch S. 307",
+    "konfidenz": "hoch",
+    "frage": "Wie groß müssen die Lüftungsquerschnitte am First nach DIN 4108 sein?",
+    "optionen": [
+      "0,5 ‰ der angeschlossenen Dachfläche, mindestens 50 cm²/m First",
+      "2 ‰ der Dachfläche",
+      "200 cm²/m",
+      "Am First ist keine Lüftung nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zur Hinterlüftung sind in Firstnähe oder am First Lüftungsöffnungen vorzusehen. Die Lüftungsquerschnitte sind an DIN 4108 angelehnt und betragen 0,5 ‰ der angeschlossenen Dachfläche, mindestens 50 cm²/m First. Auch ungedämmte Spitzböden sind zu belüften.",
+    "bildDatei": "buch/lf08/firstausbildung.webp",
+    "bildunterschrift": "Firstausbildung mit Lüftung (Buch S. 307)"
+  },
+  {
+    "id": "lf08-047",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "quelle": "Grundstufe Bautechnik, Buch S. 307",
+    "konfidenz": "hoch",
+    "frage": "Warum muss ein Mörtelfirst zusätzlich mechanisch befestigt werden?",
+    "optionen": [
+      "Weil die Vermörtelung nicht als Windsogsicherung herangezogen werden kann",
+      "Weil der Mörtel zu schwer ist",
+      "Weil der Mörtel nicht wasserdicht ist",
+      "Es ist keine zusätzliche Befestigung nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Da die Vermörtelung nicht als Windsogsicherung herangezogen werden kann, muss ein Mörtelfirst zusätzlich befestigt werden — korrosionsbeständiger Bindedraht Ø 0,5 mm ist ausreichend.",
+    "bildDatei": "buch/lf08/firstausbildung.webp",
+    "bildunterschrift": "Firstausbildung mit Lüftung (Buch S. 307)"
+  },
+  {
+    "id": "lf08-048",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Ortgang",
+    "quelle": "Grundstufe Bautechnik, Buch S. 308 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Wie weit darf die Traglattung höchstens über die Außenkante des Auflagers überstehen?",
+    "optionen": [
+      "Höchstens 30 cm",
+      "Höchstens 10 cm",
+      "Höchstens 50 cm",
+      "Es gibt keine Begrenzung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Traglattung darf höchstens 30 cm über die Außenkante Auflager überstehen. Der Überstand der Flächen bzw. Doppelwulstziegel/-steine soll mindestens 3 cm über die Außenkante Holzunterkonstruktion oder Giebelwand betragen.",
+    "bildDatei": "buch/lf08/ortgang-details.webp",
+    "bildunterschrift": "Ortgang – Detailausbildungen (Buch S. 308)"
+  },
+  {
+    "id": "lf08-049",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Ortgang",
+    "quelle": "Grundstufe Bautechnik, Buch S. 308 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Welche Möglichkeiten der Ortgangausbildung gibt es bei der Biberschwanzdoppeldeckung?",
+    "optionen": [
+      "Ortgangziegel, Ortgangbrett mit Blechabdeckung oder Zahnleiste mit Windbrett",
+      "Nur Ortgangziegel",
+      "Nur ein Blech",
+      "Der Ortgang bleibt offen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Für die konstruktive Ausbildung der Ortgänge stehen Ortgangziegel/-steine (links, rechts) zur Verfügung. Sie können auch mit kleinformatigen Deckwerkstoffen ausgeführt werden; Sonderkonstruktionen sind ebenfalls möglich — z. B. Ortgangbrett mit Blechdeckung oder eine Zahnleiste mit Windbrett.",
+    "bildDatei": "buch/lf08/ortgang-details.webp",
+    "bildunterschrift": "Ortgang – Detailausbildungen (Buch S. 308)"
+  },
+  {
+    "id": "lf08-050",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Ortgang",
+    "quelle": "Grundstufe Bautechnik, Buch S. 308",
+    "konfidenz": "hoch",
+    "text": "Die Kante der Ortganglappen innen und die Aussenwand bzw. Aussenbekleidung muessen mindestens {{10}} mm Abstand haben. Dachlatten auf Mauerwerk muessen mindestens {{20}} mm zurueckgesetzt sein.",
+    "akzeptiert": {
+      "10": [
+        "10"
+      ],
+      "20": [
+        "20"
+      ]
+    },
+    "erklaerung": "Die Kante der Ortganglappen innen und die Außenwand bzw. Außenbekleidung müssen mindestens 10 mm Abstand haben. Dachlatten auf Mauerwerk müssen mindestens 20 mm zurückgesetzt sein. Ortgangziegel/-steine werden im Bereich der Höhenüberdeckung mit mindestens 1 Holzschraube Ø 4,5 mm befestigt (Einschraubtiefe mindestens 24 mm).",
+    "bildDatei": "buch/lf08/ortgang-details.webp",
+    "bildunterschrift": "Ortgang – Detailausbildungen (Buch S. 308)"
+  },
+  {
+    "id": "lf08-051",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Einbauteile",
+    "quelle": "Grundstufe Bautechnik, Buch S. 309 (Aufgaben S. 309)",
+    "konfidenz": "hoch",
+    "frage": "Was ist beim Einbau von Solarstromsystemen in die Deckung zu beachten?",
+    "optionen": [
+      "Sie ersetzen Deckelemente, müssen den Herstellervorschriften entsprechen und die Netzanbindung darf nur durch Elektroinstallateure erfolgen",
+      "Sie dürfen frei improvisiert eingebaut werden",
+      "Sie sind immer begehbar",
+      "Sie brauchen keine Befestigung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "In die Deckung integrierte Solarstromsysteme ersetzen in diesem Bereich die entsprechenden Deckelemente. Die Systeme müssen entsprechend den Herstellervorschriften geplant, befestigt und angeschlossen werden. Sie sind in der Regel nicht begehbar. Die Netzanbindung darf nur durch zugelassene Elektroinstallateure erfolgen.",
+    "bildDatei": "buch/lf08/einbauteile-schneefang.webp",
+    "bildunterschrift": "Einbauteile und Pultdachabschluss (Buch S. 309)"
+  },
+  {
+    "id": "lf08-052",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Einbauteile",
+    "quelle": "Grundstufe Bautechnik, Buch S. 309",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Dachneigung sind Laufrostanlagen für Schornsteinfeger gemäß den Unfallverhütungsvorschriften erforderlich?",
+    "optionen": [
+      "Ab 20° Dachneigung",
+      "Ab 45° Dachneigung",
+      "Ab 5° Dachneigung",
+      "Sie sind nie erforderlich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Laufrostanlagen sind gemäß den Unfallverhütungsvorschriften für Schornsteinfegerarbeiten ab 20° Dachneigung erforderlich. Die Systemeinbauteile können aus beschichtetem Aluminium oder bei Dachsteinen auch aus Beton bestehen.",
+    "bildDatei": "buch/lf08/einbauteile-schneefang.webp",
+    "bildunterschrift": "Einbauteile und Pultdachabschluss (Buch S. 309)"
+  },
+  {
+    "id": "lf08-053",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Regeldachneigung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 310",
+    "konfidenz": "hoch",
+    "frage": "Was ist die Regeldachneigung (RDN)?",
+    "optionen": [
+      "Die untere Dachneigungsgrenze, bei der sich in der Praxis die Deckung als regensicher erwiesen hat",
+      "Die maximal zulässige Dachneigung",
+      "Die Neigung der Dachlatten",
+      "Ein Maß für die Ziegelqualität"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Regeldachneigung ist die untere Dachneigungsgrenze, bei der sich in der Praxis die Dachdeckung als regensicher erwiesen hat. Das Maß wird ausgedrückt als Winkel zwischen der Waagerechten und der Dachfläche in Grad oder seltener als Steigung über der Waagerechten in Prozent.",
+    "bildDatei": "buch/lf08/tab-zusatzmassnahmen.webp",
+    "bildunterschrift": "Zuordnung von Zusatzmaßnahmen (Buch S. 310)"
+  },
+  {
+    "id": "lf08-054",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Regeldachneigung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 310 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Wovon hängt die Höhe der Regeldachneigung ab?",
+    "optionen": [
+      "Von der Deckart und dem Deckmaterial — je aufwendiger die Verfalzung, desto geringer die RDN",
+      "Nur von der Gebäudehöhe",
+      "Nur vom Bundesland",
+      "Sie ist für alle Deckungen gleich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Regeldachneigungen sind von den Deckarten abhängig, ob eine Deckmaterialien (z. B. Biberschwanzdeckung) oder gewölbte Deckmaterialien (z. B. Hohlpfannendeckung) verwendet werden. Merke: Je aufwendiger die Verfalzung bei Dachziegeln ausgebildet ist, umso geringer die Regeldachneigung. Je höher der Seitenfalz über der Wasser führenden Ebene liegt, desto geringer die RDN.",
+    "bildDatei": "buch/lf08/tab-zusatzmassnahmen.webp",
+    "bildunterschrift": "Zuordnung von Zusatzmaßnahmen (Buch S. 310)"
+  },
+  {
+    "id": "lf08-055",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 310",
+    "konfidenz": "hoch",
+    "text": "Wird die Regeldachneigung unterschritten, sind {{Zusatzmassnahmen}} erforderlich. Dazu zaehlen Unterspannung, Unterdeckung, Unterdach, Docken und {{Vermoertelung}}.",
+    "akzeptiert": {
+      "Zusatzmassnahmen": [
+        "Zusatzmassnahmen",
+        "Zusatzmaßnahmen",
+        "Zusatzmassnahme",
+        "Zusatzmaßnahme"
+      ],
+      "Vermoertelung": [
+        "Vermoertelung",
+        "Vermörtelung",
+        "Vermoerteln",
+        "Vermörteln"
+      ]
+    },
+    "erklaerung": "Als Zusatzmaßnahmen gelten Unterspannung, Unterdeckung, Unterdach, Docken, Vermörtelung bzw. Innenverstrich. Die Wahl der Zusatzmaßnahme ist abhängig von der Nutzung, Konstruktion und den klimatischen Verhältnissen und ist formal zugeordnet.",
+    "bildDatei": "buch/lf08/tab-massnahmen-fachregel.webp",
+    "bildunterschrift": "Maßnahmen nach Fachregel (Buch S. 310)"
+  },
+  {
+    "id": "lf08-056",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 310 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Welche Anforderungen an ein Dach können Zusatzmaßnahmen erforderlich machen?",
+    "optionen": [
+      "Unterschreiten der RDN, Nutzung, hohe Anforderungen an Regensicherheit, exponierte Lagen und Denkmalpflege",
+      "Nur die Dachfarbe",
+      "Nur der Preis",
+      "Nur die Gebäudebreite"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Besondere Anforderungen an ein Dach mit Dachziegel-/Dachsteindeckungen machen Zusatzmaßnahmen erforderlich: das Unterschreiten der RDN, die Nutzung des Dachgeschosses (z. B. Wohnräume), stark gegliederte Dachflächen, besondere Dachformen, Sparrenlängen über 10 m, exponierte Lagen (wind- und schneereiche Gebiete), klimatische Bedingungen und Auflagen der Denkmalpflege.",
+    "bildDatei": "buch/lf08/tab-zusatzmassnahmen.webp",
+    "bildunterschrift": "Zuordnung von Zusatzmaßnahmen (Buch S. 310)"
+  },
+  {
+    "id": "lf08-057",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 310",
+    "konfidenz": "hoch",
+    "frage": "Um wie viel Grad darf die Regeldachneigung höchstens unterschritten werden?",
+    "optionen": [
+      "Um höchstens 12° — darunter ist die Deckung mit Dachziegeln/-steinen nicht mehr zulässig",
+      "Um höchstens 5°",
+      "Um beliebig viele Grad",
+      "Um höchstens 30°"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Ein RDN-Abzug von 12° ist mit besonderen Maßnahmen zum Erhalt der Tragfähigkeit und mit wasserdichtem Unterdach zulässig. Dachdeckungen mit weniger als 10° Dachneigung sind auch mit Zusatzmaßnahmen nicht mehr zulässig (Mindestdachneigung nach ZVDH).",
+    "bildDatei": "buch/lf08/tab-zusatzmassnahmen.webp",
+    "bildunterschrift": "Zuordnung von Zusatzmaßnahmen (Buch S. 310)"
+  },
+  {
+    "id": "lf08-058",
+    "typ": "fachbegriff",
+    "lernfeld": "lf08",
+    "thema": "Zusatzmaßnahmen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 311 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "begriff": "Docken",
+    "definition": "Einlagestreifen aus Kunststoff oder Bitumen (Baustoffklasse B 1, schwer entflammbar), die beim Dachdecken eingelegt werden und die Fugen verschließen. Sie sind keine regensichere Zusatzmaßnahme bei Unterschreitung der Regeldachneigung.",
+    "bestandteile": [
+      "Docken"
+    ],
+    "erklaerung": "Docken sind Einlagestreifen, die Fugen verschließen. Bei höheren Temperaturen kann eine gewisse Verklebung der Docken mit dem Ziegel eintreten. Unter 25° Dachneigung werden Docken nicht mehr eingesetzt.",
+    "bildDatei": "buch/lf08/vermoertelungsarten.webp",
+    "bildunterschrift": "Vermörtelungsarten (Buch S. 311)"
+  },
+  {
+    "id": "lf08-059",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Vermörtelung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 311 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Welche drei Arten der Vermörtelung unterscheidet man?",
+    "optionen": [
+      "Längsschlag, Querschlag und Innenverstrich",
+      "Ober-, Mittel- und Unterschlag",
+      "Nass-, Trocken- und Halbtrockenmörtel",
+      "Kalk-, Zement- und Gipsverstrich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Man unterscheidet drei Arten der Vermörtelung: Längsfuge (Längsschlag), Querfuge (Querschlag) und Innenverstrich — auch kombinierbar. Das Vermörteln dient zur Befestigung und zur Fugensicherung.",
+    "bildDatei": "buch/lf08/vermoertelungsarten.webp",
+    "bildunterschrift": "Vermörtelungsarten (Buch S. 311)"
+  },
+  {
+    "id": "lf08-060",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Vermörtelung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 312",
+    "konfidenz": "hoch",
+    "frage": "Aus welchen Bestandteilen besteht der Kalkzementmörtel zum Vermörteln?",
+    "optionen": [
+      "Zwei Raumteile Kalk und acht Raumteile Sand auf einen Raumteil Zement (2 : 1 : 8)",
+      "Nur Zement und Wasser",
+      "Gips und Sand",
+      "Lehm und Stroh"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Mörtel wird als Kalkzementmörtel mit der Zusammensetzung ein Raumteil Zement, zwei Raumteile Kalk und acht Raumteile Sand 0/2 verwendet oder es wird Dachdeckerfertigmörtel benutzt.",
+    "bildDatei": "buch/lf08/vermoertelungsarten.webp",
+    "bildunterschrift": "Vermörtelungsarten (Buch S. 311)"
+  },
+  {
+    "id": "lf08-061",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Vermörtelung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 312",
+    "konfidenz": "hoch",
+    "frage": "Warum gelten Vermörtelung und Innenverstrich nicht als Windsogsicherung?",
+    "optionen": [
+      "Weil der Mörtel keine ausreichende dauerhafte Haltekraft gegen Windsog bietet",
+      "Weil Mörtel zu leicht ist",
+      "Weil Mörtel nicht wasserdicht ist",
+      "Sie gelten sehr wohl als Windsogsicherung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Vermörtelung und Innenverstrich gelten generell nicht als Windsogsicherung oder als regensichernde Zusatzmaßnahme. Wenn das Dachgeschoss zu Wohnzwecken ausgebaut wird, verhindert aber der Eintrieb von Staub, Regen und Schnee.",
+    "bildDatei": "buch/lf08/vermoertelungsarten.webp",
+    "bildunterschrift": "Vermörtelungsarten (Buch S. 311)"
+  },
+  {
+    "id": "lf08-062",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Unterspannung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 312 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Unterspannbahnen (USB) verlegt?",
+    "optionen": [
+      "Parallel zur Traufe frei hängend, mit mindestens 10 cm Höhen- und Seitenüberdeckung",
+      "Senkrecht vom First zur Traufe ohne Überdeckung",
+      "Diagonal über die Sparren",
+      "Sie werden auf die Ziegel gelegt"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Unterspannbahnen (USB) werden parallel zur Traufe frei hängend und frei gespannt mit mindestens 10 cm Höhen- und Seitenüberdeckung ohne Deckunterlage verlegt. Die letzte Bahn soll 5 cm unter dem Firstscheitelpunkt enden.",
+    "bildDatei": "buch/lf08/unterspannung-unterdeckung.webp",
+    "bildunterschrift": "Unterspannung, Unterdeckung und Unterdach (Buch S. 312)"
+  },
+  {
+    "id": "lf08-063",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Unterdeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 312 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Worin unterscheidet sich eine Unterdeckung von einer Unterspannung?",
+    "optionen": [
+      "Die Unterdeckung wird auf tragfähiger Unterlage (Schalung) verlegt, die Unterspannung hängt frei",
+      "Die Unterdeckung ist immer dünner",
+      "Es gibt keinen Unterschied",
+      "Die Unterspannung liegt über den Ziegeln"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Unterdeckungen (UDB) werden mit ausreichend wasserundurchlässigen Bahnen überlappend mit mindestens 10 cm auf tragfähiger Unterlage oder mit verfalzten Unterdeckplatten (UDP) unbelüftet hergestellt. Unterspannbahnen dagegen hängen frei zwischen den Sparren.",
+    "bildDatei": "buch/lf08/unterspannung-unterdeckung.webp",
+    "bildunterschrift": "Unterspannung, Unterdeckung und Unterdach (Buch S. 312)"
+  },
+  {
+    "id": "lf08-064",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Unterdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 313 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Bahnen bei einem wasserdichten Unterdach verbunden?",
+    "optionen": [
+      "In der Dachfläche wasserdicht verklebt oder verschweißt, an Naht- und Stoßstellen wasserdicht",
+      "Nur lose überlappt",
+      "Mit Nägeln in der Fläche befestigt",
+      "Gar nicht verbunden"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei wasserdichten Unterdächern müssen die verwendeten Bahnen in der Dachfläche wasserdicht und an Naht- und Stoßstellen wasserdicht verklebt oder verschweißt sein. Mindestfügebreiten: 2 cm bei Warmgasschweißen, 3 cm bei Quellschweißmitteln, 4 cm Klebebereich bei Dichtungsbändern, 5 cm bei Kautschukbahnen mit Kontaktkleber.",
+    "bildDatei": "buch/lf08/unterspannung-unterdeckung.webp",
+    "bildunterschrift": "Unterspannung, Unterdeckung und Unterdach (Buch S. 312)"
+  },
+  {
+    "id": "lf08-065",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Unterdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 313",
+    "konfidenz": "hoch",
+    "text": "Wird die Regeldachneigung um mehr als {{8}} Grad unterschritten, muessen besondere Massnahmen zum Erhalt der Tragfaehigkeit ergriffen werden. Bei mehr als {{12}} Grad Unterschreitung ist ein wasserdichtes Unterdach noetig.",
+    "akzeptiert": {
+      "8": [
+        "8",
+        "acht"
+      ],
+      "12": [
+        "12",
+        "zwoelf",
+        "zwölf"
+      ]
+    },
+    "erklaerung": "Bei regensicheren Unterdächern wird die Konterlattung auf die Abdichtung angebracht. Wird die RDN um mehr als 8° unterschritten, müssen besondere Maßnahmen zum Erhalt der Tragfähigkeit ergriffen werden. Bei mehr als 12° Unterschreitung ist ein wasserdichtes Unterdach erforderlich.",
+    "bildDatei": "buch/lf08/tab-naehte-stoesse.webp",
+    "bildunterschrift": "Nähte, Stöße und Konterlatteneinbindung (Buch S. 311)"
+  },
+  {
+    "id": "lf08-066",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 313 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Wo entsteht am Dach Winddruck und wo Windsog?",
+    "optionen": [
+      "Auf der windzugewandten Seite Winddruck, auf der windabgewandten Seite Windsog",
+      "Überall nur Winddruck",
+      "Überall nur Windsog",
+      "Winddruck nur am First"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Auf der windzugewandten Seite tritt ein erhöhter Winddruck auf, während auf der windabgewandten Seite Windsog auftritt. Der Windsog ist eine abhebende Kraft, der die Eigenlast entgegenwirkt — deshalb müssen gegen abhebende Kräfte Zusatzmaßnahmen zur Windsogsicherung erfolgen.",
+    "bildDatei": "buch/lf08/windsog-klammern.webp",
+    "bildunterschrift": "Windsogkräfte und Klammerarten (Buch S. 313)"
+  },
+  {
+    "id": "lf08-067",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 313 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Welche Bereiche eines Satteldaches sind besonders von Windsog betroffen?",
+    "optionen": [
+      "Die Randbereiche: Traufe, Ortgang und First (im Gegensatz zum Innenbereich)",
+      "Nur die Dachmitte",
+      "Alle Bereiche gleich stark",
+      "Nur die Traufe"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Dachfläche wird eingeteilt in Innenbereich und Randbereiche (Traufe, Ortgang, First). An den Rändern und Kanten sind die Windsogkräfte deutlich höher als im Innenbereich, deshalb muss dort stärker verklammert werden.",
+    "bildDatei": "buch/lf08/dachflaechen-bereiche.webp",
+    "bildunterschrift": "Einteilung der Dachfläche (Buch S. 313)"
+  },
+  {
+    "id": "lf08-068",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 314",
+    "konfidenz": "hoch",
+    "frage": "In wie viele Windzonen ist Deutschland nach DIN 1055-4 unterteilt?",
+    "optionen": [
+      "Vier Windzonen",
+      "Zwei Windzonen",
+      "Sechs Windzonen",
+      "Zehn Windzonen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach DIN 1055-4 ist Deutschland in vier Windzonen unterteilt. Der Gebäudestandort fließt hierbei durch entsprechende Mischprofile ein. Das Mischprofil ‚Küste' gilt für die Inseln der Nordsee sowie küstennahe Gebiete 5 km landeinwärts, das Mischprofil ‚Binnenland' für die übrigen Gebiete.",
+    "bildDatei": "buch/lf08/windzonen-karte.webp",
+    "bildunterschrift": "Windzonen in Deutschland (Buch S. 314)"
+  },
+  {
+    "id": "lf08-069",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 315",
+    "konfidenz": "hoch",
+    "text": "Die Klammertragfaehigkeit ist in drei Gruppen eingeteilt: K-I hat mindestens {{125}} N, K-II mindestens {{175}} N und K-III mindestens {{250}} N.",
+    "akzeptiert": {
+      "125": [
+        "125"
+      ],
+      "175": [
+        "175"
+      ],
+      "250": [
+        "250"
+      ]
+    },
+    "erklaerung": "Die zur Windsogsicherung verwendeten Klammern werden hinsichtlich ihrer Tragfähigkeit R_d in drei Gruppen eingeteilt: K-I ≥ 125 N, K-II ≥ 175 N, K-III ≥ 250 N, B-I ≥ 70 N (Mindestanforderung für Biberdeckungen).",
+    "bildDatei": "buch/lf08/windsog-klammern.webp",
+    "bildunterschrift": "Windsogkräfte und Klammerarten (Buch S. 313)"
+  },
+  {
+    "id": "lf08-070",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 315 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Was bedeutet die ZVDH-Angabe ‚1:3' in den Verklammerungstabellen?",
+    "optionen": [
+      "Jeder dritte Dachziegel/-stein ist zu befestigen",
+      "Drei von einem Ziegel",
+      "Ein Drittel der Dachfläche wird gedeckt",
+      "Die Klammer hält 3 N"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Angaben in den Tabellen des ZVDH bedeuten: 0 = keine Verklammerung notwendig; 1:3 = jeder dritte Dachziegel/-stein ist zu befestigen; 1:2 = jeder zweite; 1:1 = jeder Dachziegel/-stein ist zu befestigen. Keine Angabe bedeutet: Windsogsicherung mit dieser Klammergruppe nicht möglich.",
+    "bildDatei": "buch/lf08/verklammerungstabelle.webp",
+    "bildunterschrift": "Verklammerungstabelle (Buch S. 316)"
+  },
+  {
+    "id": "lf08-071",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 315 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Dachneigung ist grundsätzlich jeder Dachziegel/-stein zu befestigen?",
+    "optionen": [
+      "Ab mehr als 65° Dachneigung",
+      "Ab mehr als 30°",
+      "Ab mehr als 45°",
+      "Erst ab 80°"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Ist die Dachneigung größer als 65°, so ist generell jeder Dachziegel/-stein zu befestigen. Die Dachkanten (z. B. Ortgang, Grat, First) sind einzeln zu befestigen, wobei mindestens eine Kraft von 0,60 kN/m aufgenommen werden können muss.",
+    "bildDatei": "buch/lf08/verklammerungstabelle.webp",
+    "bildunterschrift": "Verklammerungstabelle (Buch S. 316)"
+  },
+  {
+    "id": "lf08-072",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Hinterlüftung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 317 (Aufgaben S. 317)",
+    "konfidenz": "hoch",
+    "text": "Nach DIN 4108-3 betragen die Lueftungsquerschnitte an der Traufe mindestens {{200}} cm² je Meter, am First mindestens {{50}} cm² je Meter und in der Dachflaeche mindestens {{2}} cm freie Hoehe.",
+    "akzeptiert": {
+      "200": [
+        "200"
+      ],
+      "50": [
+        "50"
+      ],
+      "2": [
+        "2",
+        "zwei"
+      ]
+    },
+    "erklaerung": "Traufe/Pult: ≥ 2 ‰ der Dachfläche, mindestens 200 cm²/m. First/Grat: ≥ 0,5 % der Dachfläche, mindestens 50 cm²/m. Dachfläche: ≥ 2 cm freie Höhe. Die Höhe der Konterlattung beträgt mindestens 24 mm.",
+    "bildDatei": "buch/lf08/tab-lueftungsquerschnitte.webp",
+    "bildunterschrift": "Lüftungsquerschnitte (Buch S. 317)"
+  },
+  {
+    "id": "lf08-073",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 317 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Welcher Sortierklasse müssen Dachlatten mindestens entsprechen?",
+    "optionen": [
+      "S 10 nach DIN 4074 bzw. C 24 MTS nach DIN EN 338",
+      "S 7 nach DIN 4074",
+      "S 13 nach DIN 4074",
+      "Es gibt keine Anforderungen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Dachlatten müssen mindestens den Bedingungen der Sortierklasse S 10 nach DIN 4074 genügen. Sie müssen gesund, trocken und möglichst astfrei sein. Regelquerschnitte für tragende Dachlatten (lichter Abstand ≤ 0,40 m): 30 × 50 mm bei max. Stützweite 80 cm, 40 × 60 mm bei 100 cm.",
+    "bildDatei": "buch/lf08/tab-regelquerschnitte-dachlatten.webp",
+    "bildunterschrift": "Regelquerschnitte tragender Dachlatten (Buch S. 317)"
+  },
+  {
+    "id": "lf08-074",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 317 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Bis zu welchem Sparrenabstand ist kein statischer Nachweis für die Dachlatten erforderlich?",
+    "optionen": [
+      "Bis zu 1 m Sparrenabstand",
+      "Bis zu 2 m",
+      "Bis zu 50 cm",
+      "Ein Nachweis ist immer nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bis zu 1 m Sparrenabstand ist kein statischer Nachweis für bewährte Traglattenquerschnitte erforderlich. Die Querschnittsabmessungen werden durch den vorhandenen Sparrenabstand, die Masse der Deckung, die Dachneigung und die Schnee- und Windlasten bestimmt.",
+    "bildDatei": "buch/lf08/tab-regelquerschnitte-dachlatten.webp",
+    "bildunterschrift": "Regelquerschnitte tragender Dachlatten (Buch S. 317)"
+  },
+  {
+    "id": "lf08-075",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 318 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch darf die Holzfeuchte beim Einbau von Konterlatte, Traglatte oder Schalung höchstens sein?",
+    "optionen": [
+      "Höchstens 20 %",
+      "Höchstens 5 %",
+      "Höchstens 40 %",
+      "Die Holzfeuchte spielt keine Rolle"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei Einbau, Transport und Lagerung von Holz (z. B. Konterlatte, Traglatte oder Schalung) darf die Holzfeuchte höchstens 20 % betragen. Das Holz ist ggf. durch Abdecken zu schützen. Holz und Holzwerkstoffe werden in die Gebrauchsklasse (GK) 0...5 eingeteilt.",
+    "bildDatei": "buch/lf08/tab-mindesteindringtiefen.webp",
+    "bildunterschrift": "Mindesteindringtiefen (Buch S. 318)"
+  },
+  {
+    "id": "lf08-076",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 318",
+    "konfidenz": "hoch",
+    "text": "Die Mindesteindringtiefen der Verbindungsmittel betragen vereinfacht: glattschaftige Naegel {{12}} mal d, profilierte Naegel (Rillennaegel) {{8}} mal d und Schrauben {{6}} mal d.",
+    "akzeptiert": {
+      "12": [
+        "12",
+        "zwoelf",
+        "zwölf"
+      ],
+      "8": [
+        "8",
+        "acht"
+      ],
+      "6": [
+        "6",
+        "sechs"
+      ]
+    },
+    "erklaerung": "Die Mindesteindringtiefen betragen vereinfacht (d = Nageldurchmesser): glattschaftige Nägel 12 · d, profilierte Nägel (Rillennägel) 8 · d, Schrauben 6 · d. Die Mindestholzdicke von 24 mm gilt für Traglatten, Konterlatten und Schalungsbretter.",
+    "bildDatei": "buch/lf08/mindesteindringtiefe-schema.webp",
+    "bildunterschrift": "Mindesteindringtiefe von Verbindungsmitteln (Buch S. 318)"
+  },
+  {
+    "id": "lf08-077",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 318 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Wie viele scharfe Kanten müssen Traglatten mindestens besitzen?",
+    "optionen": [
+      "Mindestens drei scharfe Kanten",
+      "Mindestens eine Kante",
+      "Alle vier Kanten müssen scharf sein",
+      "Die Kanten spielen keine Rolle"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Traglatten müssen mindestens drei scharfe Kanten besitzen. Die Baumkante darf nur in Richtung Traufe angeordnet werden, denn es müssen zwei volle Kanten auf dem Auflager liegen.",
+    "bildDatei": "buch/lf08/nagelabstaende-traglatten.webp",
+    "bildunterschrift": "Nagelabstände für Traglatten (Buch S. 318)"
+  },
+  {
+    "id": "lf08-078",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Konterlattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 317, 324 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Welche Mindesthöhe muss die Konterlattung haben?",
+    "optionen": [
+      "Mindestens 24 mm",
+      "Mindestens 10 mm",
+      "Mindestens 50 mm",
+      "Es gibt keine Mindesthöhe"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Konterlatten dienen zur Hinterlüftung. Sie müssen mindestens 24 mm hoch sein, damit der geforderte Lüftungsquerschnitt in der Dachfläche (≥ 2 cm freie Höhe) erreicht wird. Die Einschlagtiefe der Nägel muss s ≥ 38 mm sein.",
+    "bildDatei": "buch/lf08/tab-konterlatten-befestigung.webp",
+    "bildunterschrift": "Befestigung von Konterlatten (Buch S. 322)"
+  },
+  {
+    "id": "lf08-079",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Konterlattung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 319",
+    "konfidenz": "hoch",
+    "frage": "Warum sind bei einer Aufsparrendämmung besondere Schrauben (Schubschrauben) nötig?",
+    "optionen": [
+      "Weil zusätzlich die Schubkräfte der Dämmung abgetragen werden müssen",
+      "Weil normale Nägel zu teuer sind",
+      "Weil die Dämmung sonst brennt",
+      "Sie sind nicht nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei einer Aufsparrendämmung müssen zusätzlich zu den bisherigen Lasten auch die Schubkräfte der Dämmung abgetragen werden. Ein Einzel- bzw. Herstellernachweis ist erforderlich. Bei druckweicher Dämmung darf die Konterlatte keinen Druck auf diese ausüben — spezielle Schrauben mit Unterkopfgewinde verhindern dies.",
+    "bildDatei": "buch/lf08/aufsparrendaemmung-schrauben.webp",
+    "bildunterschrift": "Verschraubung bei Aufsparrendämmung (Buch S. 319)"
+  },
+  {
+    "id": "lf08-080",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dacheinteilung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 323 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "In welcher Reihenfolge wird die Dachfläche eingeteilt?",
+    "optionen": [
+      "Zuerst Trauf- und Firstlattmaß festlegen, dann die Decklänge einteilen, danach die Deckbreite",
+      "Zuerst die Deckbreite, dann die Decklänge",
+      "Zuerst die Ziegel legen, dann messen",
+      "Die Reihenfolge ist beliebig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zur Sparreneinteilung wird das Trauf- und Firstlattmaß festgelegt, dann die Decklänge eingeteilt. Die Lattweite wird immer von Oberkante Latte gemessen. Die Deckbreite wird in Abhängigkeit von der Ortgangausbildung ermittelt und mit Schnurschlägen markiert.",
+    "bildDatei": "buch/lf08/dachflaeche-einteilung.webp",
+    "bildunterschrift": "Einteilung der Deckfläche (Buch S. 323)"
+  },
+  {
+    "id": "lf08-081",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Dacheinteilung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 323 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "text": "Die Lattweite wird immer von {{Oberkante}} Latte gemessen. Wichtig ist, dass die Ziegel- bzw. Dachsteinreihen rechtwinklig zur Lattung verlaufen.",
+    "akzeptiert": {
+      "Oberkante": [
+        "Oberkante",
+        "OK",
+        "Oberkante Latte"
+      ]
+    },
+    "erklaerung": "Die Lattweite wird immer von Oberkante Latte gemessen — nicht von Mitte oder Unterkante. Nur so ist die Höhenüberdeckung der Ziegel korrekt.",
+    "bildDatei": "buch/lf08/dachflaeche-einteilung.webp",
+    "bildunterschrift": "Einteilung der Deckfläche (Buch S. 323)"
+  },
+  {
+    "id": "lf08-082",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Grundstufe Bautechnik, Buch S. 324 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Absturzhöhe sind an der Traufe Dachfanggerüste erforderlich?",
+    "optionen": [
+      "Ab mehr als 3,00 m Absturzhöhe bei Dachneigungen von 22,5° bis 60°",
+      "Ab 1,00 m Absturzhöhe",
+      "Ab 10,00 m",
+      "Sie sind nie erforderlich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dachfanggerüste sind bei einer Absturzhöhe von mehr als 3,00 m an der Traufe gemessen notwendig. Dies gilt für Dachneigungen von 22,5° bis 60°. Bei Dachneigungen zwischen 45° und 60° müssen zusätzlich Arbeitsplätze geschaffen werden.",
+    "bildDatei": "buch/lf08/dachfanggeruest.webp",
+    "bildunterschrift": "Dachfanggerüst am Steildach (Buch S. 324)"
+  },
+  {
+    "id": "lf08-083",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Arbeitssicherheit",
+    "quelle": "Grundstufe Bautechnik, Buch S. 324",
+    "konfidenz": "hoch",
+    "frage": "Was gilt beim Einsatz von Aufzügen für den Transport des Deckmaterials?",
+    "optionen": [
+      "Niemals als Leiter oder zum Transport von Personen verwenden, sicher aufstellen und absteifen",
+      "Personen dürfen mitfahren, wenn sie gesichert sind",
+      "Der Aufzug darf frei stehen",
+      "Es gibt keine Vorschriften"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Aufzüge zum Transport des Deckmaterials sind sicher aufzustellen und abzusteifen. Es dürfen keine Personen befördert und der Aufzug darf nicht als Leiter verwendet werden. An der oberen Ladestelle müssen Absturzsicherungen vorhanden sein. Die untere Ladestelle ist abzusperren.",
+    "bildDatei": "buch/lf08/dachfanggeruest.webp",
+    "bildunterschrift": "Dachfanggerüst am Steildach (Buch S. 324)"
+  },
+  {
+    "id": "lf08-084",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Rechnerische Dacheinteilung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 325",
+    "konfidenz": "hoch",
+    "frage": "Was bedeuten die Abkürzungen DLT und LAF bei der Dacheinteilung?",
+    "optionen": [
+      "DLT = Decklänge Traufe (Traufziegel), LAF = Lattenabstand First (Firstanschlussziegel)",
+      "DLT = Dachlattenteilung, LAF = Lattenanzahl First",
+      "DLT = Deckbreite links, LAF = Länge am First",
+      "Beide bedeuten dasselbe"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "DLT (Decklänge Traufe) ist die Lage der ersten Latte, abhängig von der Ausbildung des Traufbereiches und der Art der Dachziegel in der ersten Reihe. LAF (Lattenabstand First) ist der Abstand der letzten Latte vom Firstscheitelpunkt.",
+    "bildDatei": "buch/lf08/sparreneinteilung-schema.webp",
+    "bildunterschrift": "Sparreneinteilung (Buch S. 325)"
+  },
+  {
+    "id": "lf08-085",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Rechnerische Dacheinteilung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 325",
+    "konfidenz": "hoch",
+    "text": "Die Decklaenge bei Einfachdeckung ist Ziegellaenge minus Ueberdeckung. Bei Doppeldeckung wird dieses Ergebnis zusaetzlich durch {{2}} geteilt. Die Sparrenlaenge ergibt sich aus DLT plus Anzahl Lattreihen mal Decklaenge plus {{LAF}}.",
+    "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
+      "LAF": [
+        "LAF",
+        "Firstlattmass",
+        "Firstlattmaß",
+        "Lattenabstand First"
+      ]
+    },
+    "erklaerung": "Decklänge (Einfachdeckung) DL = l_z − ü. Decklänge (Doppeldeckung) DL = (l_z − ü)/2. Sparrenlänge s = DLT + n_L · DL + LAF. Daraus lässt sich die Anzahl der Lattreihen berechnen.",
+    "bildDatei": "buch/lf08/formeln-decklaenge.webp",
+    "bildunterschrift": "Formeln zur Decklängeneinteilung (Buch S. 325)"
+  },
+  {
+    "id": "lf08-086",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Rechnerische Dacheinteilung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 325",
+    "konfidenz": "hoch",
+    "frage": "Warum wird die berechnete Anzahl der Lattreihen immer aufgerundet?",
+    "optionen": [
+      "Weil die Anzahl ganzzahlig sein muss und die Lattweite dadurch kleiner als der maximale Traglattenabstand bleibt",
+      "Weil man immer Reserve braucht",
+      "Weil Abrunden verboten ist",
+      "Es wird abgerundet, nicht aufgerundet"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Da die tatsächliche Decklänge DL der Lattweite entspricht, lässt sich aus der Gleichung für die Sparreneinteilung die Anzahl der Lattreihen berechnen. Man erhält meist einen Dezimalwert. Da die Anzahl der Lattreihen ganzzahlig sein muss, wird n auf den nächsten ganzen Wert aufgerundet — so bleibt die tatsächliche Lattweite unter dem Maximalwert.",
+    "bildDatei": "buch/lf08/formeln-decklaenge.webp",
+    "bildunterschrift": "Formeln zur Decklängeneinteilung (Buch S. 325)"
+  },
+  {
+    "id": "lf08-087",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Lattweitenberechnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 326 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Sparrenlänge von {sparren} cm soll eingeteilt werden. Das Trauflattmaß DLT beträgt {dlt} cm, das Firstlattmaß LAF {laf} cm. Wie groß ist die einzuteilende Sparrenlänge?",
+    "parameter": [
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "cm",
+        "min": 400,
+        "max": 900,
+        "schritt": 5
+      },
+      {
+        "name": "dlt",
+        "label": "Trauflattmaß DLT",
+        "einheit": "cm",
+        "min": 25,
+        "max": 35,
+        "schritt": 1
+      },
+      {
+        "name": "laf",
+        "label": "Firstlattmaß LAF",
+        "einheit": "cm",
+        "min": 4,
+        "max": 12,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Einzuteilende Sparrenlänge = Sparrenlänge − DLT − LAF = {sparren} − {dlt} − {laf}",
+        "formel": "sparren - dlt - laf",
+        "ergebnisName": "rest",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Einzuteilende Sparrenlänge = Sparrenlänge − DLT − LAF. Buchbeispiel: 615 cm − 30 cm − 4,5 cm = 580,5 cm. Diese Länge wird dann durch den maximalen Traglattenabstand geteilt.",
+    "bildDatei": "buch/lf08/beispiel-lattweite.webp",
+    "bildunterschrift": "Beispiel Lattweitenberechnung (Buch S. 326)"
+  },
+  {
+    "id": "lf08-088",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Lattweitenberechnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 326 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Die einzuteilende Sparrenlänge beträgt {rest} cm. Die Anzahl der Lattreihen wurde mit {reihen} bestimmt. Wie groß ist die tatsächliche Lattweite?",
+    "parameter": [
+      {
+        "name": "rest",
+        "label": "Einzuteilende Sparrenlänge",
+        "einheit": "cm",
+        "min": 400,
+        "max": 850,
+        "schritt": 5
+      },
+      {
+        "name": "reihen",
+        "label": "Anzahl Lattreihen",
+        "einheit": "Stück",
+        "min": 15,
+        "max": 30,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Lattweite LW = einzuteilende Sparrenlänge / Anzahl Lattreihen = {rest} / {reihen}",
+        "formel": "rest / reihen",
+        "ergebnisName": "lw",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "tats. Decklänge DL = Lattweite LW = (s − DLT − LAF) / n_L. Buchbeispiel: 580,5 cm / 17 = 34,14 cm. Kontrolle: Die Lattweite muss zwischen niedrigstem und höchstem Traglattenabstand liegen (hier 33,9 bis 34,3 cm).",
+    "bildDatei": "buch/lf08/beispiel-lattweite.webp",
+    "bildunterschrift": "Beispiel Lattweitenberechnung (Buch S. 326)"
+  },
+  {
+    "id": "lf08-089",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Deckbreitenberechnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 327 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Trauflänge von {trauf} cm ist einzuteilen. Der Überstand ÜO beträgt beidseits {uo} cm, der Ortgang links DBL {dbl} cm und rechts DBR {dbr} cm. Wie groß ist die einzuteilende Breite?",
+    "parameter": [
+      {
+        "name": "trauf",
+        "label": "Trauflänge",
+        "einheit": "cm",
+        "min": 800,
+        "max": 1400,
+        "schritt": 5
+      },
+      {
+        "name": "uo",
+        "label": "Überstand ÜO",
+        "einheit": "cm",
+        "min": 5,
+        "max": 15,
+        "schritt": 0.5
+      },
+      {
+        "name": "dbl",
+        "label": "Ortgang links DBL",
+        "einheit": "cm",
+        "min": 20,
+        "max": 30,
+        "schritt": 0.1
+      },
+      {
+        "name": "dbr",
+        "label": "Ortgang rechts DBR",
+        "einheit": "cm",
+        "min": 20,
+        "max": 30,
+        "schritt": 0.1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Einzuteilende Breite = Trauflänge + 2 · ÜO − DBL − DBR = {trauf} + 2 · {uo} − {dbl} − {dbr}",
+        "formel": "trauf + 2 * uo - dbl - dbr",
+        "ergebnisName": "breite",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die einzuteilende Breite ergibt sich aus l_r + 2 · ÜO − DBL − DBR. Buchbeispiel: 1075 + 2 · 10,5 − 23,6 − 27,5 = 1044,9 cm. Diese Breite wird durch die höchste Deckbreite geteilt.",
+    "bildDatei": "buch/lf08/formeln-deckbreite.webp",
+    "bildunterschrift": "Formeln zur Deckbreiteneinteilung (Buch S. 327)"
+  },
+  {
+    "id": "lf08-090",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Deckbreitenberechnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 327 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Die einzuteilende Breite beträgt {breite} cm, die Anzahl der Ziegelreihen wurde mit {reihen} bestimmt. Wie groß ist die tatsächliche Deckbreite?",
+    "parameter": [
+      {
+        "name": "breite",
+        "label": "Einzuteilende Breite",
+        "einheit": "cm",
+        "min": 800,
+        "max": 1300,
+        "schritt": 5
+      },
+      {
+        "name": "reihen",
+        "label": "Anzahl Ziegelreihen",
+        "einheit": "Stück",
+        "min": 35,
+        "max": 60,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Deckbreite DB = einzuteilende Breite / Anzahl Ziegelreihen = {breite} / {reihen}",
+        "formel": "breite / reihen",
+        "ergebnisName": "db",
+        "einheit": "cm"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "tats. Deckbreite DB = (l_r + 2 · ÜO − DBL − DBR) / n_B. Buchbeispiel: 1044,9 cm / 49 = 21,32 cm. Kontrolle: Die Deckbreite muss zwischen niedrigster und höchster Deckbreite liegen (hier 21,2 bis 21,7 cm).",
+    "bildDatei": "buch/lf08/beispiel-deckbreite.webp",
+    "bildunterschrift": "Beispiel Deckbreitenberechnung (Buch S. 327)"
+  },
+  {
+    "id": "lf08-091",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Deckbreitenberechnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 327",
+    "konfidenz": "hoch",
+    "text": "Bei Biberschwanzziegeln bzw. Dachsteinen im Biberformat gilt: Deckbreite DB = Ziegelbreite plus {{0,2}} cm Fuge.",
+    "akzeptiert": {
+      "0,2": [
+        "0,2",
+        "0.2"
+      ]
+    },
+    "erklaerung": "Bei Deckungen mit Biberschwanzziegeln ist zwischen den Ziegeln eine Fuge von 1,5 bis 2 mm zu berücksichtigen, um Pressungen der Ziegel aus Bewegungen des Dachstuhls und aus thermischen Veränderungen im Biberformat zu verhindern. In der Regel wird 2 mm Fuge angenommen.",
+    "bildDatei": "buch/lf08/breiteneinteilung-schema.webp",
+    "bildunterschrift": "Breiteneinteilung der Dachfläche (Buch S. 327)"
+  },
+  {
+    "id": "lf08-092",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328",
+    "konfidenz": "hoch",
+    "frage": "Wie berechnet man die Deckfläche einer Unterdeckbahn-Rolle?",
+    "optionen": [
+      "Deckfläche = (Länge − Überdeckung) · (Breite − Überdeckung)",
+      "Deckfläche = Länge · Breite",
+      "Deckfläche = Länge + Breite",
+      "Deckfläche = Rollenfläche · 2"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei der Ermittlung des Materialbedarfs ist zwischen der tatsächlichen Bahnenfläche A_R (= l · b) und der Deckfläche A_RD zu unterscheiden. Bei der Deckfläche ist die Überdeckung der Bahnen in der Länge und in der Breite zu berücksichtigen: A_RD = (l − ü) · (b − ü).",
+    "bildDatei": "buch/lf08/formeln-rollenbedarf.webp",
+    "bildunterschrift": "Formeln Rollenbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-093",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Unterdeckbahn-Rolle ist {laenge} m lang und {breite} m breit. Die Überdeckung beträgt {ueber} m in Länge und Breite. Wie groß ist die Deckfläche einer Rolle?",
+    "parameter": [
+      {
+        "name": "laenge",
+        "label": "Rollenlänge",
+        "einheit": "m",
+        "min": 20,
+        "max": 50,
+        "schritt": 5
+      },
+      {
+        "name": "breite",
+        "label": "Rollenbreite",
+        "einheit": "m",
+        "min": 1,
+        "max": 1.6,
+        "schritt": 0.1
+      },
+      {
+        "name": "ueber",
+        "label": "Überdeckung",
+        "einheit": "m",
+        "min": 0.1,
+        "max": 0.2,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Deckfläche = (Länge − Überdeckung) · (Breite − Überdeckung) = ({laenge} − {ueber}) · ({breite} − {ueber})",
+        "formel": "(laenge - ueber) * (breite - ueber)",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "A_RD = (l − ü) · (b − ü). Buchbeispiel: (50,00 − 0,15) · (1,50 − 0,15) = 49,85 · 1,35 = 67,2975 m² Deckfläche bei 75,00 m² Rollenfläche — das entspricht 89,73 % Ausnutzung.",
+    "bildDatei": "buch/lf08/formeln-rollenbedarf.webp",
+    "bildunterschrift": "Formeln Rollenbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-094",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328",
+    "konfidenz": "hoch",
+    "frage": "Wie ermittelt man die benötigte Rollenanzahl für eine Dachfläche?",
+    "optionen": [
+      "Dachfläche geteilt durch die Deckfläche einer Rolle, das Ergebnis wird aufgerundet",
+      "Dachfläche mal Rollenfläche",
+      "Rollenfläche geteilt durch Dachfläche",
+      "Dachfläche geteilt durch die Rollenlänge"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die für eine Dachfläche A_D benötigte theoretische Rollenanzahl n_R erhält man aus n_R = A_D / A_RD. Der ermittelte theoretische Wert n_R ist auf die nächste ganze Zahl aufzurunden — man kann keine halben Rollen kaufen.",
+    "bildDatei": "buch/lf08/formeln-rollenbedarf.webp",
+    "bildunterschrift": "Formeln Rollenbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-095",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Satteldach hat die Trauflänge {trauf} m und die Sparrenlänge {sparren} m (beide Dachflächen gleich). Wie groß ist die gesamte Dachfläche?",
+    "parameter": [
+      {
+        "name": "trauf",
+        "label": "Trauflänge",
+        "einheit": "m",
+        "min": 10,
+        "max": 20,
+        "schritt": 0.25
+      },
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "m",
+        "min": 6,
+        "max": 10,
+        "schritt": 0.25
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Dachfläche = 2 · Trauflänge · Sparrenlänge = 2 · {trauf} · {sparren}",
+        "formel": "2 * trauf * sparren",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Beim Satteldach gibt es zwei gleich große Dachflächen: A_D = 2 · l_r · s. Buchbeispiel: 2 · 13,75 m · 8,14 m = 223,85 m².",
+    "bildDatei": "buch/lf08/beispiel-werkstoffbedarf.webp",
+    "bildunterschrift": "Beispiele Werkstoffbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-096",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Satteldach ist {trauf} m lang und hat eine Sparrenlänge von {sparren} m. Der Sparrenabstand beträgt {abstand} m. Wie viele Meter Konterlatten werden für beide Dachflächen benötigt?",
+    "parameter": [
+      {
+        "name": "trauf",
+        "label": "Trauflänge",
+        "einheit": "m",
+        "min": 8,
+        "max": 16,
+        "schritt": 0.5
+      },
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "m",
+        "min": 5,
+        "max": 10,
+        "schritt": 0.1
+      },
+      {
+        "name": "abstand",
+        "label": "Sparrenabstand",
+        "einheit": "m",
+        "min": 0.6,
+        "max": 0.9,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenanzahl je Fläche = Trauflänge / Sparrenabstand + 1 = {trauf} / {abstand} + 1",
+        "formel": "trauf / abstand + 1",
+        "ergebnisName": "anzahl",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Konterlatten gesamt = Sparrenanzahl · Sparrenlänge · 2 Flächen = {anzahl} · {sparren} · 2",
+        "formel": "anzahl * sparren * 2",
+        "ergebnisName": "meter",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 3,
+    "erklaerung": "L_K = (l_r/a + 1) · s, für zwei Dachflächen mal 2. Buchbeispiel: (10,50 m / 0,70 m + 1) · 7,20 m · 2 = 16 · 7,20 · 2 = 230,40 m Konterlatten.",
+    "bildDatei": "buch/lf08/formeln-konterlatten.webp",
+    "bildunterschrift": "Formeln Konterlattenbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-097",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 328",
+    "konfidenz": "hoch",
+    "text": "Der Konterlattenbedarf in Metern je Quadratmeter Dachflaeche berechnet sich als {{100}} cm/m geteilt durch den Sparrenabstand in cm.",
+    "akzeptiert": {
+      "100": [
+        "100"
+      ]
+    },
+    "erklaerung": "Bei beliebigen Dachflächen lässt sich der Bedarf an Konterlatten in m/m² überschlägig ermitteln: l_r = 100 cm/m / Sparrenabstand in cm. Ohne Berücksichtigung des Verschnitts erhält man dann L_K = A_D · l_r.",
+    "bildDatei": "buch/lf08/formeln-konterlatten.webp",
+    "bildunterschrift": "Formeln Konterlattenbedarf (Buch S. 328)"
+  },
+  {
+    "id": "lf08-098",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329",
+    "konfidenz": "hoch",
+    "frage": "Wie viele Nägel je Meter werden für die Konterlattung bzw. die Traglattung angesetzt?",
+    "optionen": [
+      "4 Nägel/m für die Konterlattung, 2 Nägel/m für die Traglattung",
+      "1 Nagel/m für beide",
+      "10 Nägel/m für beide",
+      "Nägel werden nicht berechnet"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der Nagelbedarf für die Konterlattung lässt sich aus der Menge Konterlatten in m mit 4 Nägeln/m ermitteln (z. B. 4 Stück pro m bei einem Sparrenabstand von 70 cm). Für die Traglattung rechnet man mit 2 Nägeln/m. Jeweils zuzüglich Zuschlag für Verlust.",
+    "bildDatei": "buch/lf08/formeln-ziegelbedarf.webp",
+    "bildunterschrift": "Formeln Traglatten-, Nagel- und Ziegelbedarf (Buch S. 329)"
+  },
+  {
+    "id": "lf08-099",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für die Traglattung werden {laenge} m Latten benötigt. Es sind 2 Nägel je Meter erforderlich, dazu {zuschlag} % Verlustzuschlag. Wie viele Nägel werden benötigt?",
+    "parameter": [
+      {
+        "name": "laenge",
+        "label": "Lattenlänge gesamt",
+        "einheit": "m",
+        "min": 400,
+        "max": 900,
+        "schritt": 10
+      },
+      {
+        "name": "zuschlag",
+        "label": "Verlustzuschlag",
+        "einheit": "%",
+        "min": 3,
+        "max": 10,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Nagelbedarf = Lattenlänge · 2 Nägel/m · (1 + Zuschlag/100) = {laenge} · 2 · (1 + {zuschlag}/100)",
+        "formel": "laenge * 2 * (1 + zuschlag / 100)",
+        "ergebnisName": "naegel",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "n_N = L · 2 Nägel/m · Zuschlagsfaktor. Buchbeispiel: 645,54 m · 2 Nägel/m · 1,05 = 1356 Nägel.",
+    "bildDatei": "buch/lf08/formeln-ziegelbedarf.webp",
+    "bildunterschrift": "Formeln Traglatten-, Nagel- und Ziegelbedarf (Buch S. 329)"
+  },
+  {
+    "id": "lf08-100",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329",
+    "konfidenz": "hoch",
+    "frage": "Wie viele Ziegelreihen ergeben sich, wenn sowohl für die Traufreihe als auch für die Firstreihe spezielle Formziegel verwendet werden?",
+    "optionen": [
+      "Anzahl Lattreihen minus 1",
+      "Anzahl Lattreihen plus 1",
+      "Genau die Anzahl der Lattreihen",
+      "Die doppelte Anzahl der Lattreihen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei der Ermittlung der Anzahl der Ziegelreihen n_LZ ist zu berücksichtigen, ob für die Traufreihe spezielle Traufziegel und für die Firstreihe spezielle Firstanschlussziegel verwendet werden: Beide speziell → n_LZ = n_L − 1. Nur eine Reihe speziell → n_LZ = n_L. Beide normal → n_LZ = n_L + 1.",
+    "bildDatei": "buch/lf08/formeln-ziegelbedarf.webp",
+    "bildunterschrift": "Formeln Traglatten-, Nagel- und Ziegelbedarf (Buch S. 329)"
+  },
+  {
+    "id": "lf08-101",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Satteldach hat {reihen} Ziegelreihen mit je {proReihe} Ziegeln. Wie viele Flächenziegel werden für beide Dachflächen bei {zuschlag} % Bruchzuschlag benötigt?",
+    "parameter": [
+      {
+        "name": "reihen",
+        "label": "Ziegelreihen",
+        "einheit": "Stück",
+        "min": 20,
+        "max": 30,
+        "schritt": 1
+      },
+      {
+        "name": "proReihe",
+        "label": "Ziegel je Reihe",
+        "einheit": "Stück",
+        "min": 40,
+        "max": 60,
+        "schritt": 1
+      },
+      {
+        "name": "zuschlag",
+        "label": "Bruchzuschlag",
+        "einheit": "%",
+        "min": 2,
+        "max": 5,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Ziegel gesamt = 2 Flächen · Reihen · Ziegel je Reihe · (1 + Zuschlag/100) = 2 · {reihen} · {proReihe} · (1 + {zuschlag}/100)",
+        "formel": "2 * reihen * proReihe * (1 + zuschlag / 100)",
+        "ergebnisName": "ziegel",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "n_Z = 2 · n_LZ · n_B · Zuschlagsfaktor. Buchbeispiel: 2 · 25 · 50 · 1,03 = 2575 Flächenziegel.",
+    "bildDatei": "buch/lf08/beispiel-materialbedarf.webp",
+    "bildunterschrift": "Beispiel Materialbedarf Satteldach (Buch S. 329)"
+  },
+  {
+    "id": "lf08-102",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329",
+    "konfidenz": "hoch",
+    "frage": "Wie ermittelt man die Anzahl der Traufziegel bei einem Satteldach?",
+    "optionen": [
+      "2 · Anzahl der Ziegel in einer Reihe (beide Dachflächen)",
+      "Anzahl der Lattreihen",
+      "Trauflänge geteilt durch Ziegellänge",
+      "Immer 100 Stück"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Anzahl an waagerechten Ziegelreihen ergibt die Menge an Ortgangziegeln. Die Anzahl an Traufziegeln, Firstanschlussziegeln und Pultabschlussziegeln entspricht den senkrechten Ziegelreihen. Buchbeispiel: Traufziegel = 2 · n_B = 2 · 50 = 100 Stück.",
+    "bildDatei": "buch/lf08/beispiel-materialbedarf.webp",
+    "bildunterschrift": "Beispiel Materialbedarf Satteldach (Buch S. 329)"
+  },
+  {
+    "id": "lf08-103",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 329 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein First ist {first} m lang. Es werden {proMeter} Firstziegel je Meter benötigt. Wie viele Firstziegel sind erforderlich?",
+    "parameter": [
+      {
+        "name": "first",
+        "label": "Firstlänge",
+        "einheit": "m",
+        "min": 8,
+        "max": 20,
+        "schritt": 0.2
+      },
+      {
+        "name": "proMeter",
+        "label": "Firstziegel je Meter",
+        "einheit": "Stück/m",
+        "min": 2,
+        "max": 3,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Firstziegel = Firstlänge · Ziegel je Meter = {first} · {proMeter}",
+        "formel": "first * proMeter",
+        "ergebnisName": "ziegel",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die Firstziegel werden über die Firstlänge und die Menge in m nach Herstellerangaben ermittelt. Buchbeispiel: 10,60 m · 2,5 Ziegel/m = 26,5 → aufgerundet 27 Firstziegel.",
+    "bildDatei": "buch/lf08/beispiel-materialbedarf.webp",
+    "bildunterschrift": "Beispiel Materialbedarf Satteldach (Buch S. 329)"
+  },
+  {
+    "id": "lf08-104",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332",
+    "konfidenz": "hoch",
+    "frage": "Wie berechnet man die Firsthöhe bei einem Walmdach mit gleicher Dachneigung?",
+    "optionen": [
+      "Firsthöhe = halbe Gebäudebreite mal Tangens der Dachneigung",
+      "Firsthöhe = halbe Gebäudebreite geteilt durch Kosinus",
+      "Firsthöhe = Gebäudebreite mal Sinus",
+      "Firsthöhe = Sparrenlänge mal 2"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim Walmdach mit gleichen Dachneigungen gilt: h = b/2 · tan DN. Buchbeispiel: h₁ = 6,00 m / 2 · tan 40° = 3,00 · 0,8391 = 2,52 m.",
+    "bildDatei": "buch/lf08/walmdach-formeln.webp",
+    "bildunterschrift": "Walmdach-Formeln (Buch S. 332)"
+  },
+  {
+    "id": "lf08-105",
+    "typ": "cloze",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332",
+    "konfidenz": "hoch",
+    "text": "Beim Walmdach gilt: Die Firsthoehe berechnet man mit dem {{Tangens}} der Dachneigung, die Sparrenlaenge dagegen durch Division durch den {{Kosinus}} der Dachneigung.",
+    "akzeptiert": {
+      "Tangens": [
+        "Tangens",
+        "tan"
+      ],
+      "Kosinus": [
+        "Kosinus",
+        "Cosinus",
+        "cos"
+      ]
+    },
+    "erklaerung": "Firsthöhe h = b/2 · tan DN. Sparrenlänge s = (b/2) : cos DN — also eine Division, kein Malpunkt! Buchbeispiel: s₁ = (6,00 m / 2) : cos 40° = 3,00 / 0,766 = 3,92 m.",
+    "bildDatei": "buch/lf08/walmdach-formeln.webp",
+    "bildunterschrift": "Walmdach-Formeln (Buch S. 332)"
+  },
+  {
+    "id": "lf08-106",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332-333 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Walmdach hat die Gebäudebreite {breite} m und die Dachneigung {dn} Grad. Berechne die Firsthöhe.",
+    "parameter": [
+      {
+        "name": "breite",
+        "label": "Gebäudebreite",
+        "einheit": "m",
+        "min": 3,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 25,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Firsthöhe = Breite / 2 · tan(Dachneigung) = {breite} / 2 · tan({dn}°)",
+        "formel": "breite / 2 * tan(dn deg)",
+        "ergebnisName": "hoehe",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "h = b/2 · tan DN. Buchbeispiel: 6,00 m / 2 · tan 40° = 3,00 · 0,8391 = 2,52 m.",
+    "bildDatei": "buch/lf08/walmdach-beispiel.webp",
+    "bildunterschrift": "Rechenbeispiel Walmdach (Buch S. 333)"
+  },
+  {
+    "id": "lf08-107",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332-333 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Walmdach hat die Gebäudebreite {breite} m und die Dachneigung {dn} Grad. Berechne die Sparrenlänge.",
+    "parameter": [
+      {
+        "name": "breite",
+        "label": "Gebäudebreite",
+        "einheit": "m",
+        "min": 3,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 25,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge = (Breite / 2) : cos(Dachneigung) = ({breite} / 2) / cos({dn}°)",
+        "formel": "(breite / 2) / cos(dn deg)",
+        "ergebnisName": "sparren",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "s = (b/2) : cos DN. Achtung: Das ist eine Division! Buchbeispiel: (6,00 m / 2) : cos 40° = 3,00 / 0,766 = 3,92 m.",
+    "bildDatei": "buch/lf08/walmdach-beispiel.webp",
+    "bildunterschrift": "Rechenbeispiel Walmdach (Buch S. 333)"
+  },
+  {
+    "id": "lf08-108",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332-333 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Walmdach hat die Gebäudebreite {breite} m und die Sparrenlänge {sparren} m. Berechne die Gratsparrenlänge.",
+    "parameter": [
+      {
+        "name": "breite",
+        "label": "Gebäudebreite",
+        "einheit": "m",
+        "min": 3,
+        "max": 12,
+        "schritt": 0.5
+      },
+      {
+        "name": "sparren",
+        "label": "Sparrenlänge",
+        "einheit": "m",
+        "min": 1.5,
+        "max": 8,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Gratsparrenlänge = Wurzel aus ((Breite/2)² + Sparrenlänge²) = sqrt(({breite}/2)² + {sparren}²)",
+        "formel": "sqrt((breite / 2)^2 + sparren^2)",
+        "ergebnisName": "grat",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "g = sqrt((b/2)² + s²) — der Satz des Pythagoras. Buchbeispiel: sqrt((6,00/2)² + 3,92²) = sqrt(9 + 15,37) = sqrt(24,37) = 4,94 m.",
+    "bildDatei": "buch/lf08/walmdach-beispiel.webp",
+    "bildunterschrift": "Rechenbeispiel Walmdach (Buch S. 333)"
+  },
+  {
+    "id": "lf08-109",
+    "typ": "calc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332-333 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Gebäude hat die Grundfläche {grund} m² und ein allseitig gleich geneigtes Dach mit {dn} Grad. Berechne die Kontrollfläche des Daches.",
+    "parameter": [
+      {
+        "name": "grund",
+        "label": "Grundfläche",
+        "einheit": "m²",
+        "min": 50,
+        "max": 200,
+        "schritt": 2
+      },
+      {
+        "name": "dn",
+        "label": "Dachneigung",
+        "einheit": "°",
+        "min": 25,
+        "max": 55,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Kontrollfläche = Grundfläche / cos(Dachneigung) = {grund} / cos({dn}°)",
+        "formel": "grund / cos(dn deg)",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "A_k = Grundfläche des Gebäudes / cos DN. Buchbeispiel: (10,00 · 6,00 + 2,00 · 3,00) / cos 40° = 66 / 0,766 = 86,15 m². Damit lässt sich die aufsummierte Einzelflächenberechnung kontrollieren.",
+    "bildDatei": "buch/lf08/walmdach-beispiel.webp",
+    "bildunterschrift": "Rechenbeispiel Walmdach (Buch S. 333)"
+  },
+  {
+    "id": "lf08-110",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 332",
+    "konfidenz": "hoch",
+    "frage": "Wie berechnet man die Länge des Verfallgrates bei einem zusammengesetzten Walmdach?",
+    "optionen": [
+      "Als Differenz der beiden Gratsparrenlängen (v = g₁ − g₂)",
+      "Als Summe der Gratsparrenlängen",
+      "Als halbe Gebäudebreite",
+      "Als Firsthöhe mal 2"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim zusammengesetzten Walmdach gilt: Kehle k = g₂ und Verfallgrat v = g₁ − g₂. Buchbeispiel: k = 2,47 m und v = 4,94 m − 2,47 m = 2,47 m.",
+    "bildDatei": "buch/lf08/walmdach-skizzen.webp",
+    "bildunterschrift": "Walmdach über Winkelbau (Buch S. 332)"
+  },
+  {
+    "id": "lf08-111",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachausmittlung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 339",
+    "konfidenz": "hoch",
+    "frage": "Wie verlaufen Grate und Kehlen bei Dächern mit gleicher Dachneigung im Grundriss?",
+    "optionen": [
+      "Als Winkelhalbierende zu den zugehörigen Traufecken",
+      "Immer im 30°-Winkel",
+      "Parallel zur Traufe",
+      "Senkrecht zum First"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dächer mit Dachflächen gleicher Dachneigungen können in der Draufsicht ausgemittelt werden. Die Grate und Kehlen verlaufen als Winkelhalbierende zu den zugehörigen Traufecken. In einem rechtwinkligen Walmdachgrundriss verlaufen die Grate dann unter 45°.",
+    "bildDatei": "buch/lf08/dachausmittlung-walmdach.webp",
+    "bildunterschrift": "Dachausmittlung bei gleicher Dachneigung (Buch S. 339)"
+  },
+  {
+    "id": "lf08-112",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Dachausmittlung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 340",
+    "konfidenz": "hoch",
+    "frage": "Welche zwei Verfahren gibt es zur Ermittlung wahrer Längen und Flächen von Dächern?",
+    "optionen": [
+      "Das Klappverfahren und das Drehverfahren",
+      "Das Schneid- und das Faltverfahren",
+      "Das Additions- und das Subtraktionsverfahren",
+      "Nur das Klappverfahren"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die durch die Dachausmittlung festgelegten Linien und Flächenformen sind nicht in wahrer Größe dargestellt. Sie können zeichnerisch als wahre Länge und wahre Fläche konstruiert werden — mit dem Klappverfahren (bei rechteckigen Grundrissen) oder dem Drehverfahren (bei schiefwinkligen Grundrissen).",
+    "bildDatei": "buch/lf08/klappverfahren.webp",
+    "bildunterschrift": "Klappverfahren (Buch S. 340)"
+  },
+  {
+    "id": "lf08-113",
+    "typ": "mc",
+    "lernfeld": "lf08",
+    "thema": "Projektaufgabe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 292 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Welche Schritte gehören zur Planung einer Steildachdeckung mit Dachziegeln?",
+    "optionen": [
+      "Ziegelart wählen, Deckunterlage nach RDN festlegen, Trauf-/First-/Ortgangausbildung entscheiden, Dach einteilen, Materialbedarf ermitteln",
+      "Nur die Ziegelfarbe auswählen",
+      "Nur die Ziegel bestellen",
+      "Nur das Gerüst aufstellen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zur Projektaufgabe gehören: Wahl der Dachziegel- bzw. Dachsteinart; Wahl einer geeigneten Deckunterlage in Abhängigkeit von der Regeldachneigung; Entscheidung über Trauf-, First- und Ortgangausbildung unter Beachtung der bauphysikalischen Grundlagen; Einteilung des Daches in Decklänge und Deckbreite; Material- und Bestelllisten; Checkliste zu Arbeitsablauf, Arbeits- und Gesundheitsschutz.",
+    "bildDatei": "buch/lf08/projekt-schnitt.webp",
+    "bildunterschrift": "Projektaufgabe: Schnitt A-A (Buch S. 292)"
+  },
+  {
+    "id": "lf08-114",
+    "typ": "diagram",
+    "lernfeld": "lf08",
+    "thema": "Doppeldeckung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 296 (Aufgaben S. 305)",
+    "konfidenz": "hoch",
+    "frage": "Benenne die Bestandteile der Biberschwanz-Doppeldeckung.",
+    "svg": "<svg viewBox='0 0 330 250' width='100%' style='max-width:330px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Biberschwanz-Doppeldeckung: benenne Deckschicht, Stossfuge, Seitenueberdeckung, Deckbreite'><g stroke='currentColor' stroke-width='1.5' fill='none'><path d='M30 40 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M95 40 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M160 40 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M62 118 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M127 118 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M30 196 h60 v46 a30 30 0 0 1 -60 0 z'/><path d='M95 196 h60 v46 a30 30 0 0 1 -60 0 z'/></g><line x1='30' y1='28' x2='90' y2='28' stroke='currentColor' stroke-width='1.2'/><circle cx='128' cy='60' r='12' fill='#c07d4a'/><text x='128' y='64.5' fill='#1b1d20' font-size='14' text-anchor='middle' font-weight='bold'>1</text><circle cx='92' cy='140' r='12' fill='#c07d4a'/><text x='92' y='144.5' fill='#1b1d20' font-size='14' text-anchor='middle' font-weight='bold'>2</text><circle cx='245' cy='63' r='12' fill='#c07d4a'/><text x='245' y='67.5' fill='#1b1d20' font-size='14' text-anchor='middle' font-weight='bold'>3</text><line x1='222' y1='63' x2='235' y2='63' stroke='#c07d4a' stroke-width='1.2'/><circle cx='60' cy='16' r='12' fill='#c07d4a'/><text x='60' y='20.5' fill='#1b1d20' font-size='14' text-anchor='middle' font-weight='bold'>4</text></svg>",
+    "zuordnung": {
+      "deckschicht": "Deckschicht",
+      "stossfuge": "Stoßfuge",
+      "seitenueberdeckung": "Seitenüberdeckung",
+      "deckbreite": "Deckbreite"
+    },
+    "erklaerung": "1 Deckschicht (die sichtbare obere Ziegelreihe), 2 Stoßfuge (senkrechte Fuge zwischen zwei Ziegeln einer Reihe), 3 Seitenüberdeckung (seitliche Überdeckung durch den versetzten Verband), 4 Deckbreite (die wirksame Breite eines Ziegels in der Fläche).",
+    "bildDatei": "buch/lf08/doppeldeckung-schema.webp",
+    "bildunterschrift": "Doppeldeckung (Buch S. 296)"
+  },
+  {
+    "id": "lf08-115",
+    "typ": "draw",
+    "lernfeld": "lf08",
+    "thema": "Dachaufbau",
+    "quelle": "Grundstufe Bautechnik, Buch S. 317-319 (Aufgaben S. 325)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Schichtaufbau eines belüfteten Steildaches vom Sparren bis zum Dachziegel und benenne die Schichten.",
+    "loesungSvg": "<svg viewBox='0 0 420 230' width='100%' style='max-width:420px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Schichtaufbau belueftetes Steildach'><g stroke='currentColor' stroke-width='1.8' fill='none'><rect x='40' y='168' width='250' height='34'/><line x1='40' y1='150' x2='290' y2='150' stroke-dasharray='6 4'/><rect x='60' y='120' width='16' height='30'/><rect x='150' y='120' width='16' height='30'/><rect x='240' y='120' width='16' height='30'/><rect x='40' y='104' width='250' height='16'/><path d='M40 96 q30 -16 60 0 q30 -16 60 0 q30 -16 60 0 q30 -16 60 0' stroke-width='2.2'/></g><g font-size='11' fill='currentColor'><text x='300' y='190'>Sparren</text><text x='300' y='154'>Unterspannbahn</text><text x='300' y='140'>Konterlatte (≥ 24 mm)</text><text x='300' y='116'>Traglatte</text><text x='300' y='94'>Dachziegel</text></g><g stroke='currentColor' stroke-width='0.8'><line x1='292' y1='186' x2='296' y2='186'/><line x1='292' y1='150' x2='296' y2='150'/><line x1='292' y1='136' x2='296' y2='136'/><line x1='292' y1='112' x2='296' y2='112'/><line x1='292' y1='90' x2='296' y2='90'/></g><text x='96' y='142' font-size='10' fill='currentColor'>Lüftungsraum ≥ 2 cm</text></svg>",
+    "schritte": [
+      "Ganz unten der Sparren als tragendes Bauteil zeichnen.",
+      "Darauf die Unterspannbahn (bzw. Unterdeckbahn) als Zusatzmaßnahme legen.",
+      "Die Konterlatte längs auf dem Sparren aufnageln — mindestens 24 mm hoch, damit der Lüftungsquerschnitt von mindestens 2 cm freier Höhe entsteht.",
+      "Quer dazu die Traglatten im berechneten Lattenabstand befestigen (Regelquerschnitt 30/50 mm).",
+      "Zuletzt die Dachziegel einhängen; die Höhenüberdeckung ergibt sich aus dem Lattenabstand."
+    ],
+    "erklaerung": "Der Aufbau von unten nach oben: Sparren, Unterspannbahn, Konterlatte, Traglatte, Dachziegel. Die Konterlatte erzeugt die Hinterlüftung (≥ 2 cm freie Höhe in der Dachfläche, an der Traufe ≥ 200 cm²/m, am First ≥ 50 cm²/m).",
+    "bildDatei": "buch/lf08/mindesteindringtiefe-schema.webp",
+    "bildunterschrift": "Mindesteindringtiefe von Verbindungsmitteln (Buch S. 318)"
   }
 ]
