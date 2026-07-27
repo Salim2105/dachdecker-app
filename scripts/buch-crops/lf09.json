@@ -1,0 +1,793 @@
+{
+  "lf": "lf09",
+  "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite i = Buchseite 341+i (t1_01 = S.342). Teil 2: PDF-Seite i = Buchseite 368+i (t2_01 = S.369, eigenes pdf-Feld).",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [0.55, 0.14, 0.98, 0.52],
+      "name": "projekt-ansichten",
+      "alt": "Nord- und Westansicht des Walmdachs der Projektaufgabe",
+      "unterschrift": "Projektaufgabe: Gebäudeansichten (Buch S. 342)"
+    },
+    {
+      "seite": 1,
+      "box": [0.14, 0.55, 0.85, 0.94],
+      "name": "projekt-walmdach",
+      "alt": "Draufsicht des ungleich geneigten Walmdachs mit Dachneigungen 50 und 60 Grad",
+      "unterschrift": "Projektaufgabe: Walmdach ungleich geneigt (Buch S. 342)"
+    },
+    {
+      "seite": 2,
+      "box": [0.03, 0.42, 0.98, 0.72],
+      "name": "altdeutsches-schieferdach",
+      "alt": "Altdeutsches Schieferdach mit benannten Bauteilen: Anfangort, Endort, Kehlen, Firstgebinde",
+      "unterschrift": "Altdeutsches Schieferdach – Übersicht (Buch S. 343)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.40, 0.98, 0.90],
+      "name": "schiefer-gewinnung",
+      "alt": "Spalten und Zurichten von Schiefer im Werk",
+      "unterschrift": "Gewinnung von Dachschiefer (Buch S. 344)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.12, 0.98, 0.40],
+      "name": "schiefer-eigenschaften",
+      "alt": "Vom Dachdecker beurteilbare Eigenschaften: Sicht-, Tast-, Behau-, Klang- und Ritzprobe",
+      "unterschrift": "Beurteilbare Eigenschaften des Schiefers (Buch S. 344)"
+    },
+    {
+      "seite": 4,
+      "box": [0.05, 0.35, 0.50, 0.52],
+      "name": "deckstein-bezeichnungen",
+      "alt": "Bezeichnungen am Deckstein: Kopf, Breite, Rücken, Brust, Ferse, Spitze, Fuß, Höhe",
+      "unterschrift": "Bezeichnungen am Deckstein (Buch S. 345)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.45, 0.98, 0.62],
+      "name": "schablonenbeispiele",
+      "alt": "Bogenschnittschablone, Spitzwinkelschablone und Fischschuppenschablone",
+      "unterschrift": "Schablonenbeispiele (Buch S. 345)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.55, 0.98, 0.92],
+      "name": "faserzement-herstellung",
+      "alt": "Ablaufschema der Faserzementherstellung von den Rohstoffen bis zur Verpackung",
+      "unterschrift": "Herstellung von Faserzement (Buch S. 346)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.12, 0.98, 0.48],
+      "name": "faserzement-plattenformen",
+      "alt": "Auswahl gängiger Dach- und Fassadenplatten aus Faserzement mit Abmessungen",
+      "unterschrift": "Dach- und Fassadenplatten aus Faserzement (Buch S. 347)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.48, 0.98, 0.66],
+      "name": "faserzement-eckausbildungen",
+      "alt": "Eckausbildungen A bis F nach Produktdatenblatt mit bevorzugten Abmessungen",
+      "unterschrift": "Eckausbildungen der Dachplatten (Buch S. 347)"
+    },
+    {
+      "seite": 7,
+      "box": [0.48, 0.10, 0.98, 0.52],
+      "name": "vordeckung-schiefer",
+      "alt": "Schiefer werden auf die Vordeckung genagelt; Verlegung eines Aufdachdämmsystems",
+      "unterschrift": "Deckunterlage und Vordeckung (Buch S. 348)"
+    },
+    {
+      "seite": 7,
+      "box": [0.48, 0.55, 0.98, 0.94],
+      "name": "befestigungsmittel-tabelle",
+      "alt": "Stückzahlen der Befestigungsmittel: Schiefernägel, Schieferstifte, Kupferstifte, Edelstahl-Schraubstifte",
+      "unterschrift": "Stückzahlen der Befestigungsmittel (Buch S. 348)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.10, 0.98, 0.46],
+      "name": "schieferwerkzeuge",
+      "alt": "Schieferhammer, Haubrücke, Nageleisen und Schieferschere",
+      "unterschrift": "Werkzeuge zur Schieferbearbeitung (Buch S. 349)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.46, 0.98, 0.62],
+      "name": "lochung-schiefer",
+      "alt": "Lochung der Schiefer bei Schiefernägeln von innen nach außen und bei Schieferstiften von außen nach innen",
+      "unterschrift": "Lochung der Schiefer (Buch S. 349)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.63, 0.98, 0.88],
+      "name": "faserzement-werkzeuge",
+      "alt": "Handschere, Lochzange, Schlagschere und Trennfräser für Dach- und Fassadenplatten",
+      "unterschrift": "Werkzeuge zur Faserzementbearbeitung (Buch S. 349)"
+    },
+    {
+      "seite": 9,
+      "box": [0.50, 0.14, 0.98, 0.52],
+      "name": "altdeutsche-deckschema",
+      "alt": "Deckschema altdeutsche Deckung und Doppeldeckung mit Steinhöhe, Gebindehöhe, Seiten- und Höhenüberdeckung",
+      "unterschrift": "Altdeutsche Deckung und Doppeldeckung (Buch S. 350)"
+    },
+    {
+      "seite": 9,
+      "box": [0.55, 0.52, 0.98, 0.72],
+      "name": "handelsgroessen-decksteine",
+      "alt": "Handelsgrößen der Decksteine nach Sortierung 1/1 bis 1/64 mit Steingrößen und geeigneten Dachneigungen",
+      "unterschrift": "Handelsgrößen der Decksteine (Buch S. 350)"
+    },
+    {
+      "seite": 9,
+      "box": [0.55, 0.72, 0.98, 0.88],
+      "name": "verjuengung-gebindehoehen",
+      "alt": "Verjüngung der Gebindehöhen nach Sparrenlänge",
+      "unterschrift": "Verjüngung der Gebindehöhen (Buch S. 350)"
+    },
+    {
+      "seite": 10,
+      "box": [0.05, 0.12, 0.98, 0.35],
+      "name": "hiebarten",
+      "alt": "Stumpfer, normaler und scharfer Hieb mit Rückenführung und Brustwinkel",
+      "unterschrift": "Hiebarten der Decksteine (Buch S. 351)"
+    },
+    {
+      "seite": 10,
+      "box": [0.48, 0.32, 0.98, 0.50],
+      "name": "mindestueberdeckung-tab",
+      "alt": "Mindestüberdeckung: Höhenüberdeckung 29 Prozent, Seitenüberdeckung nach Hiebart",
+      "unterschrift": "Mindestüberdeckung nach Hiebart (Buch S. 351)"
+    },
+    {
+      "seite": 10,
+      "box": [0.48, 0.50, 0.98, 0.94],
+      "name": "schuppendeckung-schema",
+      "alt": "Deckstein mit normalem Hieb und Deckschema der Schuppendeckung",
+      "unterschrift": "Deckschema Schuppendeckung (Buch S. 351)"
+    },
+    {
+      "seite": 10,
+      "box": [0.05, 0.68, 0.48, 0.90],
+      "name": "schuppen-standardformate",
+      "alt": "Standardformate der Schuppenschablonen mit empfohlenem Dachneigungsbereich",
+      "unterschrift": "Standardformate Schuppenschablonen (Buch S. 351)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.10, 0.98, 0.35],
+      "name": "gebindesteigung-konstruktion",
+      "alt": "Zeichnerische Ermittlung der Mindestgebindesteigung in fünf Schritten",
+      "unterschrift": "Konstruktion der Mindestgebindesteigung (Buch S. 352)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.34, 0.98, 0.62],
+      "name": "mindestgebindesteigung-tab",
+      "alt": "Tabelle der Mindestgebindesteigungen nach Dachneigung in Grad und cm je Meter",
+      "unterschrift": "Mindestgebindesteigungen (Buch S. 352)"
+    },
+    {
+      "seite": 11,
+      "box": [0.05, 0.55, 0.48, 0.95],
+      "name": "hoechstgebindesteigung",
+      "alt": "Ermittlung der höchstzulässigen Gebindesteigung mit Formeln für stumpfen, normalen und scharfen Hieb",
+      "unterschrift": "Höchstgebindesteigung (Buch S. 352)"
+    },
+    {
+      "seite": 12,
+      "box": [0.05, 0.28, 0.98, 0.92],
+      "name": "deckstein-konstruktion",
+      "alt": "Zeichnerische Konstruktion der Decksteine mit normalem, scharfem und stumpfem Hieb",
+      "unterschrift": "Konstruktion der Decksteine (Buch S. 353)"
+    },
+    {
+      "seite": 13,
+      "box": [0.05, 0.12, 0.98, 0.35],
+      "name": "gebindestein-konstruktion",
+      "alt": "Konstruktion eines Gebindesteins mit normalem Hieb für Rechtsdeckung",
+      "unterschrift": "Konstruktion eines Gebindesteins (Buch S. 354)"
+    },
+    {
+      "seite": 13,
+      "box": [0.45, 0.38, 0.98, 0.58],
+      "name": "fussgebinde",
+      "alt": "Deckung eingebundener Fußgebinde mit Anfangfußstein, Fußsteinen, Gebindestein und Endfußstein",
+      "unterschrift": "Eingebundene Fußgebinde (Buch S. 354)"
+    },
+    {
+      "seite": 13,
+      "box": [0.45, 0.58, 0.98, 0.90],
+      "name": "anfangortdeckung",
+      "alt": "Anfangort mit Anfangortstein und Anfangortstichstein",
+      "unterschrift": "Anfangortdeckung (Buch S. 354)"
+    },
+    {
+      "seite": 14,
+      "box": [0.45, 0.12, 0.98, 0.48],
+      "name": "endortdeckung",
+      "alt": "Deckung als Endstichort mit Endortstein und Endortstichstein",
+      "unterschrift": "Endortdeckung (Buch S. 355)"
+    },
+    {
+      "seite": 14,
+      "box": [0.45, 0.48, 0.98, 0.80],
+      "name": "strackortdeckung-grat",
+      "alt": "Strackortdeckung am Grat bei der Schuppendeckung, stehend eingebundenes und gestaffeltes Endort",
+      "unterschrift": "Strackortdeckung am Grat (Buch S. 355)"
+    },
+    {
+      "seite": 14,
+      "box": [0.05, 0.72, 0.45, 0.94],
+      "name": "doppelendort",
+      "alt": "Deckung als Doppelendort mit kleinem und großem Endortstein",
+      "unterschrift": "Deckung als Doppelendort (Buch S. 355)"
+    },
+    {
+      "seite": 15,
+      "box": [0.10, 0.10, 0.98, 0.26],
+      "name": "firstgebinde",
+      "alt": "Firstgebinde mit Ausspitzer, Anfangfirststein, Firststein und Schlussstein",
+      "unterschrift": "Firstgebinde (Buch S. 356)"
+    },
+    {
+      "seite": 16,
+      "box": [0.05, 0.14, 0.55, 0.28],
+      "name": "materialbedarf-altdeutsch",
+      "alt": "Werte für den Materialbedarf altdeutsche Deckung in kg je Quadratmeter und je Meter",
+      "unterschrift": "Materialbedarf altdeutsche Deckung (Buch S. 358)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.24, 0.98, 0.36],
+      "name": "flaechenraender",
+      "alt": "Flächenränder für Fußgebinde, Orte, Grate und Kehlen",
+      "unterschrift": "Flächenränder bei der Materialermittlung (Buch S. 358)"
+    },
+    {
+      "seite": 16,
+      "box": [0.05, 0.44, 0.98, 0.72],
+      "name": "decksteine-sortierung-tab",
+      "alt": "Große Tabelle: Decksteine in normalem, stumpfem und scharfem Hieb nach Dachneigung und Sortierung",
+      "unterschrift": "Decksteine nach Dachneigung und Sortierung (Buch S. 358)"
+    },
+    {
+      "seite": 16,
+      "box": [0.05, 0.74, 0.55, 0.94],
+      "name": "handelsgroessen-ortsteine",
+      "alt": "Handelsgrößen der Ortsteine mit Steinlänge, Steinbreite und Masse",
+      "unterschrift": "Handelsgrößen der Ortsteine (Buch S. 358)"
+    },
+    {
+      "seite": 16,
+      "box": [0.55, 0.74, 0.98, 0.94],
+      "name": "handelsgroessen-kehlsteine",
+      "alt": "Handelsgrößen der Kehlsteine KI bis KIV mit Steinlänge, Steinbreite und Masse",
+      "unterschrift": "Handelsgrößen der Kehlsteine (Buch S. 358)"
+    },
+    {
+      "seite": 17,
+      "box": [0.05, 0.14, 0.50, 0.60],
+      "name": "beispiel-altdeutsch",
+      "alt": "Rechenbeispiel Materialbedarf altdeutsche Deckung mit Gebindesteigung, Schnurabstand und Massen",
+      "unterschrift": "Rechenbeispiel altdeutsche Deckung (Buch S. 359)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.14, 0.98, 0.48],
+      "name": "formeln-schnurabstand",
+      "alt": "Formeln für Schnurabstand und Seitenüberdeckung bei der altdeutschen Doppeldeckung",
+      "unterschrift": "Formeln Schnurabstand (Buch S. 359)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.50, 0.98, 0.80],
+      "name": "formeln-schuppenbedarf",
+      "alt": "Formeln für den Materialbedarf bei der Schuppendeckung je Quadratmeter",
+      "unterschrift": "Formeln Schuppenbedarf (Buch S. 359)"
+    },
+    {
+      "seite": 18,
+      "box": [0.05, 0.14, 0.98, 0.50],
+      "name": "schuppenschablonen-tab",
+      "alt": "Standardformate der Schuppenschablonen mit Überdeckung, Schnurabstand, Bedarf, Nagelbedarf und Masse",
+      "unterschrift": "Standardformate Schuppenschablonen (Buch S. 360)"
+    },
+    {
+      "seite": 18,
+      "box": [0.05, 0.52, 0.98, 0.94],
+      "name": "beispiel-schuppendeckung",
+      "alt": "Vollständiges Rechenbeispiel Schuppendeckung mit Gebindesteigung, Schablonenwahl und Nagelbedarf",
+      "unterschrift": "Rechenbeispiel Schuppendeckung (Buch S. 360)"
+    },
+    {
+      "seite": 19,
+      "box": [0.05, 0.10, 0.98, 0.94],
+      "name": "aufgabenblock-material",
+      "alt": "Aufgabensammlung zur Materialermittlung mit Dachskizzen",
+      "unterschrift": "Aufgabensammlung Materialermittlung (Buch S. 361)"
+    },
+    {
+      "seite": 20,
+      "box": [0.48, 0.10, 0.98, 0.36],
+      "name": "deutsche-deckung-schema",
+      "alt": "Deckschema Bogenschnittdeckung mit rechten Steinen, Seiten- und Höhenüberdeckung",
+      "unterschrift": "Deckschema deutsche Deckung (Buch S. 362)"
+    },
+    {
+      "seite": 20,
+      "box": [0.48, 0.34, 0.98, 0.50],
+      "name": "deutsche-ueberdeckung-tab",
+      "alt": "Seiten- und Höhenüberdeckung in cm bei der deutschen Deckung nach Format und Dachneigung",
+      "unterschrift": "Überdeckungen deutsche Deckung (Buch S. 362)"
+    },
+    {
+      "seite": 20,
+      "box": [0.48, 0.52, 0.98, 0.94],
+      "name": "traufausbildung-deutsche",
+      "alt": "Eingespitztes und eingebundenes Fußgebinde bei der deutschen Deckung",
+      "unterschrift": "Traufausbildung deutsche Deckung (Buch S. 362)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.10, 0.98, 0.52],
+      "name": "ortausbildung-deutsche",
+      "alt": "Anfangort und Endort mit Stichplatte, Anfangortplatte und Zwischenortplatte",
+      "unterschrift": "Ortausbildung deutsche Deckung (Buch S. 363)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.52, 0.98, 0.70],
+      "name": "gleichortgebindesteigung",
+      "alt": "Ermittlung der Gleichortgebindesteigung an der Ortkante",
+      "unterschrift": "Gleichortgebindesteigung (Buch S. 363)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.70, 0.98, 0.94],
+      "name": "firstluftung-deutsche",
+      "alt": "Lüftung am First ohne Unterdachkonstruktion mit Abdeckstreifen und Konterlattung",
+      "unterschrift": "Lüftung am First (Buch S. 363)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.10, 0.98, 0.62],
+      "name": "gratausbildung-deutsche",
+      "alt": "Anfangort am Grat als Stichort, Endort am Grat als Doppelort und als Stichort",
+      "unterschrift": "Gratausbildung deutsche Deckung (Buch S. 364)"
+    },
+    {
+      "seite": 23,
+      "box": [0.05, 0.12, 0.50, 0.62],
+      "name": "formeln-deutsche-deckung",
+      "alt": "Formeln zur Materialbedarfsermittlung deutsche Deckung: Schnurabstand, Plattenbedarf, Nagelbedarf",
+      "unterschrift": "Formeln deutsche Deckung (Buch S. 365)"
+    },
+    {
+      "seite": 23,
+      "box": [0.05, 0.62, 0.50, 0.94],
+      "name": "zubehoersteine-nagelbedarf",
+      "alt": "Tabelle Zubehörsteine und Nagelbedarf für Schiefer nach Format 30/30 und 25/25",
+      "unterschrift": "Zubehörsteine und Nagelbedarf (Buch S. 365)"
+    },
+    {
+      "seite": 23,
+      "box": [0.50, 0.12, 0.98, 0.94],
+      "name": "beispiel-deutsche-deckung",
+      "alt": "Vollständiges Rechenbeispiel deutsche Deckung am Walmdach mit Gratlängen und Materialbedarf",
+      "unterschrift": "Rechenbeispiel deutsche Deckung (Buch S. 365)"
+    },
+    {
+      "seite": 25,
+      "box": [0.05, 0.12, 0.98, 0.34],
+      "name": "standardformate-schablonen",
+      "alt": "Standardformate der Schieferschablonen und Faserzementplatten mit Höhen- und Seitenüberdeckung",
+      "unterschrift": "Standardformate Schablonen und Platten (Buch S. 366)"
+    },
+    {
+      "seite": 26,
+      "box": [0.45, 0.10, 0.98, 0.36],
+      "name": "waagerechte-deckung-schema",
+      "alt": "Waagerechte Deckung mit Höhenüberdeckung, Seitenüberdeckung, Schieferstiften und Plattenhaken",
+      "unterschrift": "Waagerechte Deckung (Buch S. 367)"
+    },
+    {
+      "seite": 26,
+      "box": [0.45, 0.36, 0.98, 0.56],
+      "name": "waagerechte-ueberdeckung-tab",
+      "alt": "Mindestüberdeckungen bei der waagerechten Deckung Format 60/30 mit Plattenbedarf",
+      "unterschrift": "Mindestüberdeckungen waagerechte Deckung (Buch S. 367)"
+    },
+    {
+      "seite": 26,
+      "box": [0.45, 0.56, 0.98, 0.94],
+      "name": "waagerechte-first-ortgang",
+      "alt": "Waagerechte Deckung im Firstbereich und Ortgangdeckung mit Winkelprofil",
+      "unterschrift": "Waagerechte Deckung: First und Ortgang (Buch S. 367)"
+    },
+    {
+      "seite": 27,
+      "box": [0.45, 0.10, 0.98, 0.48],
+      "name": "rhombusdeckung",
+      "alt": "Rhombusdeckung mit rhombenförmigen Platten im Format 40/44 und Ansetzer",
+      "unterschrift": "Rhombusdeckung (Buch S. 368)"
+    },
+    {
+      "seite": 27,
+      "box": [0.45, 0.48, 0.98, 0.70],
+      "name": "spitzwinkel-deckschema",
+      "alt": "Deckschema Spitzwinkeldeckung mit Steinhöhe, Steinbreite, Abschnitt und Hängespitze",
+      "unterschrift": "Deckschema Spitzwinkeldeckung (Buch S. 368)"
+    },
+    {
+      "seite": 27,
+      "box": [0.45, 0.70, 0.98, 0.94],
+      "name": "spitzwinkel-formate",
+      "alt": "Standardformate für Spitzwinkeldeckung mit Schiefer: Größen, Abschnitt, Mindestdachneigung, Bedarf",
+      "unterschrift": "Standardformate Spitzwinkeldeckung (Buch S. 368)"
+    },
+    {
+      "seite": 27,
+      "box": [0.05, 0.72, 0.45, 0.92],
+      "name": "rhombus-schnurabstaende",
+      "alt": "Mindestüberdeckung und Schnurabstände bei der Rhombusdeckung Format 40/44",
+      "unterschrift": "Rhombusdeckung: Überdeckung und Schnurabstand (Buch S. 368)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 1,
+      "box": [0.48, 0.10, 0.98, 0.32],
+      "name": "spitzschablonen-fz-tab",
+      "alt": "Faserzement: Mindestüberdeckungen bei der Spitzschablonendeckung mit Plattenbedarf",
+      "unterschrift": "Spitzschablonendeckung Faserzement (Buch S. 369)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 1,
+      "box": [0.45, 0.52, 0.98, 0.94],
+      "name": "rechteckdoppel-schema",
+      "alt": "Deckschema Rechteckdoppeldeckung mit Steinhöhe, Steinbreite, Schnurabstand, Stoßfuge und Höhenüberdeckung",
+      "unterschrift": "Deckschema Rechteckdoppeldeckung (Buch S. 369)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 2,
+      "box": [0.45, 0.10, 0.98, 0.34],
+      "name": "doppeldeckung-lattung",
+      "alt": "Doppeldeckung auf Lattung mit Schieferstiften, Plattenhaken und Formaten Rechteck, Biberschwanz, Quadrat",
+      "unterschrift": "Doppeldeckung auf Lattung (Buch S. 370)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 2,
+      "box": [0.45, 0.38, 0.98, 0.62],
+      "name": "achteckschablonen",
+      "alt": "Deckung mit Achteckschablonen (Octogones) und Ansetzer",
+      "unterschrift": "Deckung mit Achteckschablonen (Buch S. 370)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 2,
+      "box": [0.45, 0.58, 0.98, 0.82],
+      "name": "rundplaettchen",
+      "alt": "Deckung mit Rundplättchen (Coquettes) und Ansetzer",
+      "unterschrift": "Deckung mit Rundplättchen (Buch S. 370)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 3,
+      "box": [0.05, 0.58, 0.98, 0.90],
+      "name": "schieferplatten-formate",
+      "alt": "Standardformate der Schieferplatten mit Überdeckung und Bedarf nach Dachneigung ab 22 bis 50 Grad",
+      "unterschrift": "Standardformate der Schieferplatten (Buch S. 371)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 3,
+      "box": [0.45, 0.10, 0.98, 0.56],
+      "name": "grat-strackort",
+      "alt": "Strackort mit Rechteckschiefern und eingebundener Grat mit Nocken",
+      "unterschrift": "Gratausbildung Rechteckdoppeldeckung (Buch S. 371)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.10, 0.10, 0.98, 0.28],
+      "name": "faserzement-formate",
+      "alt": "Standardformate der Faserzementplatten mit Überdeckung und Bedarf nach Dachneigung",
+      "unterschrift": "Standardformate der Faserzementplatten (Buch S. 372)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.48, 0.28, 0.98, 0.52],
+      "name": "universalschablonen",
+      "alt": "Symmetrische Decksteinform der Universal- bzw. Vario-Schablonen",
+      "unterschrift": "Universal- und Vario-Schablonen (Buch S. 372)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 5,
+      "box": [0.05, 0.14, 0.50, 0.62],
+      "name": "formeln-waagerechte",
+      "alt": "Formeln für Schnurabstand, Plattenbedarf und Mindestüberdeckungen der waagerechten Deckung",
+      "unterschrift": "Formeln waagerechte Deckung (Buch S. 373)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 5,
+      "box": [0.48, 0.10, 0.98, 0.62],
+      "name": "beispiel-waagerechte",
+      "alt": "Rechenbeispiel waagerechte Deckung mit Plattenbedarf, Firstplatten und Nagelbedarf",
+      "unterschrift": "Rechenbeispiel waagerechte Deckung (Buch S. 373)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 6,
+      "box": [0.05, 0.10, 0.50, 0.60],
+      "name": "formeln-doppeldeckung",
+      "alt": "Formeln für Schnurabstand, Plattenbedarf, Lattenbedarf und Nagelbedarf bei der Doppeldeckung",
+      "unterschrift": "Formeln Doppeldeckung (Buch S. 374)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 6,
+      "box": [0.05, 0.60, 0.98, 0.94],
+      "name": "beispiel-doppeldeckung",
+      "alt": "Rechenbeispiel Doppeldeckung am Pultdach mit Deckfläche, Reihen und Decksteinbedarf",
+      "unterschrift": "Rechenbeispiel Doppeldeckung (Buch S. 374)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 7,
+      "box": [0.05, 0.42, 0.50, 0.78],
+      "name": "formeln-spitzwinkel",
+      "alt": "Formeln für Schnurabstand und Materialbedarf bei der Spitzschablonen- und Spitzwinkeldeckung",
+      "unterschrift": "Formeln Spitzwinkeldeckung (Buch S. 375)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 7,
+      "box": [0.48, 0.42, 0.98, 0.94],
+      "name": "beispiel-spitzwinkel",
+      "alt": "Rechenbeispiel Spitzwinkeldeckung mit Plattenbedarf, Firstplatten und Schieferstiften",
+      "unterschrift": "Rechenbeispiel Spitzwinkeldeckung (Buch S. 375)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 8,
+      "box": [0.05, 0.10, 0.98, 0.94],
+      "name": "aufgabenblock-deckungen",
+      "alt": "Aufgabensammlung zu Doppeldeckung und Spitzwinkeldeckung mit Dachskizzen",
+      "unterschrift": "Aufgabensammlung Deckungen (Buch S. 376)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 9,
+      "box": [0.45, 0.10, 0.98, 0.94],
+      "name": "reparaturen-einbauteile",
+      "alt": "Dachdurchführung mit Formteil, Dachfenster, Schneefanggitter und Dachwohnfenster",
+      "unterschrift": "Reparaturen und Einbauteile (Buch S. 377)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.45, 0.14, 0.98, 0.44],
+      "name": "dachausmittlung-ungleich",
+      "alt": "Zusammengesetztes Walmdach mit ungleichen Dachneigungen in Vorder-, Seitenansicht und Draufsicht",
+      "unterschrift": "Dachausmittlung ungleiche Dachneigungen (Buch S. 378)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.35, 0.55, 0.98, 0.94],
+      "name": "walmdach-ungleich-konstruktion",
+      "alt": "Walmdach ungleich geneigt mit Dachprofilen für 60 und 40 Grad und Konstruktionslinien",
+      "unterschrift": "Walmdach ungleich geneigt (Buch S. 378)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 13,
+      "box": [0.05, 0.44, 0.98, 0.62],
+      "name": "schindelhoelzer-tab",
+      "alt": "Tabelle der Schindelhölzer Lärche, Rot-Zeder, Weiß-Zeder, Alaska-Zeder und Fichte mit Einsatzbereich",
+      "unterschrift": "Schindelhölzer und Einsatzbereiche (Buch S. 381)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.48, 0.50, 0.98, 0.80],
+      "name": "schindelbedarf-tab",
+      "alt": "Höchstzulässige Reihenabstände und Schindelbedarf bei zwei- und dreilagiger Deckung",
+      "unterschrift": "Reihenabstände und Schindelbedarf (Buch S. 382)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.48, 0.80, 0.98, 0.94],
+      "name": "lattenquerschnitte-schindeln",
+      "alt": "Lattenquerschnitte für Quer-, Konterlattung und Querlattung auf Sparren nach Sparrenabstand",
+      "unterschrift": "Lattenquerschnitte Holzschindeln (Buch S. 382)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 15,
+      "box": [0.45, 0.10, 0.98, 0.30],
+      "name": "schindelbefestigung",
+      "alt": "Abstände bei der Schindelbefestigung mit Nagelung im oberen Schindeldrittel",
+      "unterschrift": "Schindelbefestigung – Abstände (Buch S. 383)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 16,
+      "box": [0.45, 0.10, 0.98, 0.94],
+      "name": "schindel-grat-schwenkgrat",
+      "alt": "Aufgelegte Gratdeckung, eingebundener aufgelegter Grat und Schwenkgrate mit Firstlüftung",
+      "unterschrift": "Gratdeckung bei Holzschindeln (Buch S. 384)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 17,
+      "box": [0.45, 0.10, 0.98, 0.60],
+      "name": "schindel-kehle",
+      "alt": "Schwenkkehle mit aufgelegtem Grat und Gaube mit eingebundener Kehle",
+      "unterschrift": "Kehlen bei Holzschindeln (Buch S. 385)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 18,
+      "box": [0.48, 0.10, 0.98, 0.30],
+      "name": "bitumenschindel-formen",
+      "alt": "Verschiedene Schindelformen: Biber und Rechteck sowie Halbverbandsdeckung",
+      "unterschrift": "Schindelformen bei Bitumenschindeln (Buch S. 386)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 18,
+      "box": [0.05, 0.46, 0.48, 0.66],
+      "name": "bitumen-regeldachneigung",
+      "alt": "Regeldachneigung in Abhängigkeit von der Sparrenlänge und Schindelform",
+      "unterschrift": "Regeldachneigung Bitumenschindeln (Buch S. 386)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 18,
+      "box": [0.05, 0.66, 0.48, 0.86],
+      "name": "bitumen-mindestueberdeckung",
+      "alt": "Mindestüberdeckung nach Schindelform und Dachneigung bei Bitumenschindeln",
+      "unterschrift": "Mindestüberdeckung Bitumenschindeln (Buch S. 386)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 18,
+      "box": [0.05, 0.86, 0.48, 0.96],
+      "name": "bitumen-nagelung",
+      "alt": "Befestigung von Bitumendachschindeln mit vier Nägeln bis 60 Grad und sechs Nägeln über 60 Grad",
+      "unterschrift": "Nagelung von Bitumenschindeln (Buch S. 386)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 19,
+      "box": [0.45, 0.10, 0.98, 0.62],
+      "name": "bitumen-traufe-ortgang",
+      "alt": "Traufeindeckung mit Ansetzgebinde und Traufblech sowie Ortgangausbildung",
+      "unterschrift": "Traufe und Ortgang bei Bitumenschindeln (Buch S. 387)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 20,
+      "box": [0.45, 0.10, 0.98, 0.52],
+      "name": "bitumen-grat-kehle",
+      "alt": "Gratausbildung und eingebundene Bitumenschindelkehle",
+      "unterschrift": "Grat und Kehle bei Bitumenschindeln (Buch S. 388)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 20,
+      "box": [0.05, 0.58, 0.98, 0.94],
+      "name": "bitumen-bedarfsberechnung",
+      "alt": "Formeln und Rechenbeispiel zur Bedarfsberechnung bei Bitumenschindeln",
+      "unterschrift": "Bedarfsberechnung Bitumenschindeln (Buch S. 388)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 22,
+      "box": [0.45, 0.30, 0.98, 0.62],
+      "name": "wellplatten-profile",
+      "alt": "Faserzement-Wellplatte Profil 177/51 und Profil 130/30 mit Plattenbreite und Nutzbreite",
+      "unterschrift": "Wellplattenprofile (Buch S. 390)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 22,
+      "box": [0.05, 0.52, 0.48, 0.66],
+      "name": "wellplatten-regeldachneigung",
+      "alt": "Regeldachneigung nach Entfernung Traufe bis First (Dachtiefe)",
+      "unterschrift": "Regeldachneigung Wellplatten (Buch S. 390)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 22,
+      "box": [0.05, 0.70, 0.98, 0.94],
+      "name": "wellplatten-standardformate",
+      "alt": "Standardformate der Wellplatten mit Länge, Profil, Breite und Wellenanzahl",
+      "unterschrift": "Standardformate Wellplatten (Buch S. 390)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 24,
+      "box": [0.05, 0.14, 0.48, 0.48],
+      "name": "rand-eckbereich-wellplatten",
+      "alt": "Rand- und Eckbereich am Dach für die Befestigung der Wellplatten",
+      "unterschrift": "Rand- und Eckbereich am Dach (Buch S. 392)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 24,
+      "box": [0.48, 0.10, 0.98, 0.44],
+      "name": "lage-befestigungen",
+      "alt": "Lage der Befestigungen bei Profil 130/30 und Profil 177/51",
+      "unterschrift": "Lage der Befestigungen (Buch S. 392)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 24,
+      "box": [0.48, 0.48, 0.98, 0.94],
+      "name": "wellplatten-linksdeckung",
+      "alt": "Deckrichtung und Schnurabstände bei der Linksdeckung mit Wellplatten",
+      "unterschrift": "Linksdeckung und Schnurabstände (Buch S. 392)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 26,
+      "box": [0.45, 0.10, 0.98, 0.50],
+      "name": "satteldach-wellplatten",
+      "alt": "Satteldach mit Linksdeckung der Wellplatten und Eckenschnitt im Überdeckungsbereich",
+      "unterschrift": "Satteldach mit Wellplatten (Buch S. 394)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 28,
+      "box": [0.05, 0.10, 0.48, 0.72],
+      "name": "wellplatten-firstsysteme",
+      "alt": "Firstausbildungen mit zweiteiligen Wellfirsthauben, Firstsystem und Entlüfter-Firsthauben",
+      "unterschrift": "Firstausbildungen Wellplatten (Buch S. 396)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 28,
+      "box": [0.48, 0.10, 0.98, 0.30],
+      "name": "pultdachabschluesse",
+      "alt": "Pultdachabschlüsse mit Wellpulthauben",
+      "unterschrift": "Pultdachabschlüsse (Buch S. 396)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 29,
+      "box": [0.05, 0.10, 0.98, 0.32],
+      "name": "wandanschluesse-wellplatten",
+      "alt": "Wandanschlüsse traufseitig und seitlich mit Metallstreifen, Rinne und Winkelplatten",
+      "unterschrift": "Wandanschlüsse Wellplatten (Buch S. 397)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 29,
+      "box": [0.05, 0.52, 0.98, 0.92],
+      "name": "grat-kehle-wellplatten",
+      "alt": "Gratkappen mit Muffe, Gratdichtung flexibel und Kehlausbildungen bei Wellplatten",
+      "unterschrift": "Grat und Kehle bei Wellplatten (Buch S. 397)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF9 TEIL2.pdf",
+      "seite": 30,
+      "box": [0.45, 0.10, 0.98, 0.56],
+      "name": "einbauteile-wellplatten",
+      "alt": "Wellübergangshauben, Laufstegstütze, Leiterhaken, Schneefangstütze und Blitzableiterstütze",
+      "unterschrift": "Einbauteile bei Wellplatten (Buch S. 398)"
+    }
+  ]
+}
