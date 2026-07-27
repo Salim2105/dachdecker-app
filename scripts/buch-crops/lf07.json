@@ -1,0 +1,301 @@
+{
+  "lf": "lf07",
+  "pdf": "/Users/salimsakkali/Downloads/LF7.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 269+i (p01 = S.270).",
+  "figuren": [
+    {
+      "seite": 2,
+      "box": [0.48, 0.22, 0.98, 0.72],
+      "name": "bestandteile-dachentwaesserung",
+      "alt": "Bestandteile der Dachentwässerung: Dachrinne, Rinnenwinkel, Einhangstutzen, Rohrbogen, Fallrohr",
+      "unterschrift": "Bestandteile der Dachentwässerung (Buch S. 271)"
+    },
+    {
+      "seite": 2,
+      "box": [0.03, 0.72, 0.52, 0.94],
+      "name": "zubehoer-rinne-fallleitung",
+      "alt": "Zubehör für Rinne und Fallleitung: Rinnenkorb, Laubkorb, Rinnengitter, Rinnenraupe",
+      "unterschrift": "Zubehör für Rinne und Fallleitung (Buch S. 271)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.24, 0.98, 0.60],
+      "name": "rinnenarten-uebersicht",
+      "alt": "Außen liegende Dachrinnen: vorgehängte Rinne, aufliegende Rinne, Standrinne",
+      "unterschrift": "Außen und innen liegende Dachrinnen (Buch S. 272)"
+    },
+    {
+      "seite": 3,
+      "box": [0.03, 0.66, 0.98, 0.95],
+      "name": "rinnenquerschnitte-h-k",
+      "alt": "Halbrunde Rinne (Kurzzeichen H) und kastenförmige Rinne (Kurzzeichen K) im Schnitt",
+      "unterschrift": "Halbrunde und kastenförmige Rinne im Schnitt (Buch S. 272)"
+    },
+    {
+      "seite": 4,
+      "box": [0.46, 0.10, 0.98, 0.40],
+      "name": "rinnengeometrie-halbrund",
+      "alt": "Geometrie und Maße einer halbrunden Dachrinne mit Rinnenquerschnitt",
+      "unterschrift": "Halbrunde Dachrinne – Geometrie (Buch S. 273)"
+    },
+    {
+      "seite": 4,
+      "box": [0.46, 0.32, 0.98, 0.58],
+      "name": "rinnengeometrie-kasten",
+      "alt": "Geometrie und Maße einer kastenförmigen Dachrinne mit Rinnenquerschnitt",
+      "unterschrift": "Kastenförmige Dachrinne – Geometrie (Buch S. 273)"
+    },
+    {
+      "seite": 4,
+      "box": [0.03, 0.56, 0.98, 0.78],
+      "name": "halbrunde-rinnen-masse",
+      "alt": "Tabelle der Maße halbrunder Dachrinnen mit Nennmaß, Zuschnittbreite und Rinnenquerschnitt",
+      "unterschrift": "Halbrunde Dachrinnen – Maße (Buch S. 273)"
+    },
+    {
+      "seite": 4,
+      "box": [0.03, 0.76, 0.98, 0.95],
+      "name": "kastenfoermige-rinnen-masse",
+      "alt": "Tabelle der Maße kastenförmiger Dachrinnen mit Nennmaß und Rinnenquerschnitt",
+      "unterschrift": "Kastenförmige Dachrinnen – Maße (Buch S. 273)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.12, 0.98, 0.36],
+      "name": "rinnenkasten",
+      "alt": "Rinnenkasten bei besonders großem Wasserzulauf",
+      "unterschrift": "Rinnenkasten bei großem Wasserzulauf (Buch S. 274)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.34, 0.98, 0.62],
+      "name": "einhangstutzen-halbrund",
+      "alt": "Trichterförmiger Einhangstutzen für halbrunde Rinnen",
+      "unterschrift": "Trichterförmiger Einhangstutzen für halbrunde Rinnen (Buch S. 274)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.60, 0.98, 0.86],
+      "name": "einhangstutzen-kasten",
+      "alt": "Trichterförmiger Einhangstutzen für kastenförmige Rinnen",
+      "unterschrift": "Einhangstutzen für kastenförmige Rinnen (Buch S. 274)"
+    },
+    {
+      "seite": 6,
+      "box": [0.45, 0.10, 0.98, 0.42],
+      "name": "regenspenden-tabelle",
+      "alt": "Berechnungsregenspenden r der 16 Landeshauptstädte nach DIN und ZVDH",
+      "unterschrift": "Berechnungsregenspenden der Landeshauptstädte (Buch S. 275)"
+    },
+    {
+      "seite": 6,
+      "box": [0.05, 0.26, 0.50, 0.45],
+      "name": "abflussbeiwerte-tabelle",
+      "alt": "Tabelle der Abflussbeiwerte C für verschiedene Dachflächen",
+      "unterschrift": "Abflussbeiwerte C (Buch S. 275)"
+    },
+    {
+      "seite": 6,
+      "box": [0.45, 0.42, 0.98, 0.62],
+      "name": "sicherheitsfaktoren-tabelle",
+      "alt": "Sicherheitsfaktoren für die Berechnungsregenspende nach Gebäudesituation",
+      "unterschrift": "Sicherheitsfaktoren nach Gebäudesituation (Buch S. 275)"
+    },
+    {
+      "seite": 6,
+      "box": [0.45, 0.62, 0.98, 0.95],
+      "name": "wirksame-dachflaeche-beispiel",
+      "alt": "Beispiel zur wirksamen Dachfläche mit Trauflänge und Ortganglänge am Pultdach",
+      "unterschrift": "Wirksame Dachfläche – Beispiel (Buch S. 275)"
+    },
+    {
+      "seite": 8,
+      "box": [0.03, 0.10, 0.98, 0.44],
+      "name": "tab4-halbrund-abfluss",
+      "alt": "Halbrunde Rinnen: Maximaler Regenabfluss Q in Abhängigkeit von Rinnenlänge und Nennmaß",
+      "unterschrift": "Halbrunde Rinnen: Maximaler Regenabfluss (Tabelle 4, Buch S. 277)"
+    },
+    {
+      "seite": 8,
+      "box": [0.03, 0.42, 0.98, 0.74],
+      "name": "tab5-kasten-abfluss",
+      "alt": "Kastenförmige Rinnen: Maximaler Regenabfluss Q nach Rinnenlänge und Nennmaß",
+      "unterschrift": "Kastenförmige Rinnen: Maximaler Regenabfluss (Tabelle 5, Buch S. 277)"
+    },
+    {
+      "seite": 8,
+      "box": [0.03, 0.73, 0.50, 0.94],
+      "name": "tab6-stutzen-halbrund",
+      "alt": "Maximale Ablaufleistung von Einhangstutzen an halbrunden Dachrinnen",
+      "unterschrift": "Ablaufleistung Einhangstutzen halbrund (Tabelle 6, Buch S. 277)"
+    },
+    {
+      "seite": 8,
+      "box": [0.45, 0.73, 0.98, 0.94],
+      "name": "tab7-stutzen-kasten",
+      "alt": "Maximale Ablaufleistung von Einhangstutzen an kastenförmigen Dachrinnen",
+      "unterschrift": "Ablaufleistung Einhangstutzen kastenförmig (Tabelle 7, Buch S. 277)"
+    },
+    {
+      "seite": 9,
+      "box": [0.05, 0.10, 0.52, 0.42],
+      "name": "tab8-fallleitungen",
+      "alt": "Maximales Ablaufvermögen senkrechter Regenwasserfallleitungen nach Durchmesser",
+      "unterschrift": "Ablaufvermögen Fallleitungen (Tabelle 8, Buch S. 278)"
+    },
+    {
+      "seite": 9,
+      "box": [0.45, 0.20, 0.98, 0.40],
+      "name": "freibord-rinne",
+      "alt": "Rinnenhöhe Z, Wassertiefe W und Freibord F im Rinnenquerschnitt",
+      "unterschrift": "Freibord im Rinnenquerschnitt (Buch S. 278)"
+    },
+    {
+      "seite": 9,
+      "box": [0.45, 0.38, 0.98, 0.55],
+      "name": "tab9-freibord",
+      "alt": "Abhängigkeit des Freibordes von der Rinnenhöhe",
+      "unterschrift": "Mindestfreibord nach Rinnenhöhe (Tabelle 9, Buch S. 278)"
+    },
+    {
+      "seite": 10,
+      "box": [0.03, 0.10, 0.98, 0.40],
+      "name": "tab10-innen-500",
+      "alt": "Abflussvermögen rechteckiger, innen liegender Rinnen mit einer Breite von 500 mm",
+      "unterschrift": "Innen liegende Rinnen 500 mm (Tabelle 10, Buch S. 279)"
+    },
+    {
+      "seite": 10,
+      "box": [0.03, 0.38, 0.98, 0.62],
+      "name": "tab11-innen-600",
+      "alt": "Abflussvermögen rechteckiger, innen liegender Rinnen mit einer Breite von 600 mm",
+      "unterschrift": "Innen liegende Rinnen 600 mm (Tabelle 11, Buch S. 279)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.12, 0.98, 0.62],
+      "name": "montage-rinne-schritte",
+      "alt": "Montageschritte: Rinnenhalter montieren, Stutzen anzeichnen, ansägen, schneiden, umbördeln",
+      "unterschrift": "Montageschritte der Dachrinne (Buch S. 280)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.60, 0.98, 0.94],
+      "name": "montage-endstueck-zwischenstueck",
+      "alt": "Endstück montieren, Rinne befestigen, Zwischenstück ermitteln und ausrichten",
+      "unterschrift": "Endstück, Zwischenstück und Ausrichten (Buch S. 280)"
+    },
+    {
+      "seite": 11,
+      "box": [0.03, 0.60, 0.50, 0.92],
+      "name": "tabelle-zwischenstuecke",
+      "alt": "Tabelle für Zwischenstücke bei 70-Grad-Bögen mit Maßen u, h und l",
+      "unterschrift": "Tabelle für Zwischenstücke (Buch S. 280)"
+    },
+    {
+      "seite": 12,
+      "box": [0.03, 0.32, 0.50, 0.50],
+      "name": "rinnenhalter-abstand",
+      "alt": "Bestimmung der Rinnenhalter in Abhängigkeit vom Abstand und der Beanspruchung",
+      "unterschrift": "Rinnenhalter nach Abstand und Beanspruchung (Buch S. 281)"
+    },
+    {
+      "seite": 12,
+      "box": [0.03, 0.52, 0.50, 0.72],
+      "name": "rinnenhalter-abmessung-halbrund",
+      "alt": "Rinnenhalterabmessung für halbrunde Dachrinnen nach Zuschnittbreite und Reihe",
+      "unterschrift": "Rinnenhalterabmessung halbrund (Buch S. 281)"
+    },
+    {
+      "seite": 12,
+      "box": [0.48, 0.50, 0.98, 0.95],
+      "name": "rinnenhalter-nase-feder",
+      "alt": "Rinnenhalter mit Nase und Feder für halbrunde und kastenförmige Dachrinnen",
+      "unterschrift": "Rinnenhalter mit Nase und Feder (Buch S. 281)"
+    },
+    {
+      "seite": 13,
+      "box": [0.03, 0.38, 0.50, 0.52],
+      "name": "chloropren-dehnungsband",
+      "alt": "Chloropren-Dehnungsband mit Metallband zum Anschluss an die Rinnen",
+      "unterschrift": "Chloropren-Dehnungsband (Buch S. 282)"
+    },
+    {
+      "seite": 13,
+      "box": [0.48, 0.40, 0.98, 0.94],
+      "name": "dachrinnensystem-pvc",
+      "alt": "Dachrinnensystem aus schlagfestem PVC mit allen Zubehörteilen",
+      "unterschrift": "Dachrinnensystem aus PVC (Buch S. 282)"
+    },
+    {
+      "seite": 14,
+      "box": [0.48, 0.12, 0.98, 0.34],
+      "name": "dachablauf-aufstockelement",
+      "alt": "Dachablauf mit Aufstockelement, Abdeckkorb, Anschlussflansch und Ablaufkörper",
+      "unterschrift": "Dachablauf mit Aufstockelement (Buch S. 283)"
+    },
+    {
+      "seite": 14,
+      "box": [0.48, 0.32, 0.98, 0.86],
+      "name": "dachablauf-zweiteilig",
+      "alt": "Anpassen des zweiteiligen Dachablaufes an die Wärmedämmung",
+      "unterschrift": "Zweiteiliger Dachablauf – Anpassung (Buch S. 283)"
+    },
+    {
+      "seite": 15,
+      "box": [0.45, 0.12, 0.98, 0.48],
+      "name": "abwicklung-zylinder",
+      "alt": "Abwicklung eines Zylindermantels zur Rechteckfläche mit Teilung des Umfangs",
+      "unterschrift": "Abwicklung eines Zylinders (Buch S. 284)"
+    },
+    {
+      "seite": 15,
+      "box": [0.03, 0.58, 0.98, 0.90],
+      "name": "schnitte-am-zylinder",
+      "alt": "Schnitte am Zylinder: Geradenschnitt, Rechteckschnitt und Kreisschnitt unter 45 Grad",
+      "unterschrift": "Schnitte am Zylinder (Buch S. 284)"
+    },
+    {
+      "seite": 16,
+      "box": [0.15, 0.22, 0.95, 0.50],
+      "name": "zylinder-ellipsenschnitt",
+      "alt": "Geschnittener Zylinder mit Ellipsenschnitt und Mantelabwicklung",
+      "unterschrift": "Geschnittener Zylinder: Ellipsenschnitt (Buch S. 285)"
+    },
+    {
+      "seite": 16,
+      "box": [0.45, 0.50, 0.98, 0.68],
+      "name": "kegel-kegelstumpf",
+      "alt": "Darstellung von Kegel und Kegelstumpf mit Mantellinie",
+      "unterschrift": "Kegel und Kegelstumpf (Buch S. 285)"
+    },
+    {
+      "seite": 16,
+      "box": [0.45, 0.66, 0.98, 0.90],
+      "name": "abwicklung-kegel",
+      "alt": "Abwicklung eines Kegels als Kreisausschnitt mit Mantellinie als Radius",
+      "unterschrift": "Abwicklung eines Kegels (Buch S. 285)"
+    },
+    {
+      "seite": 17,
+      "box": [0.03, 0.48, 0.98, 0.88],
+      "name": "durchdringung-zylinder",
+      "alt": "Konstruktionsbeispiel für die Durchdringung zweier Zylinder mit gleichem Durchmesser",
+      "unterschrift": "Durchdringung zweier Zylinder (Buch S. 286)"
+    },
+    {
+      "seite": 22,
+      "box": [0.03, 0.10, 0.98, 0.94],
+      "name": "aufgabenblock-lf7",
+      "alt": "Aufgabensammlung zur Ableitung von Niederschlagswasser mit Zeichnungen",
+      "unterschrift": "Aufgabensammlung Lernfeld 7 (Buch S. 291)"
+    },
+    {
+      "seite": 21,
+      "box": [0.10, 0.62, 0.98, 0.95],
+      "name": "projekt-walmdach-draufsicht",
+      "alt": "Draufsicht des zusammengesetzten Walmdachs der Projektaufgabe mit Maßen",
+      "unterschrift": "Projektaufgabe: Walmdach Draufsicht (Buch S. 290)"
+    }
+  ]
+}
