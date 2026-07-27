@@ -1,0 +1,476 @@
+{
+  "lf": "lf11",
+  "pdf": "/Users/salimsakkali/Downloads/LF11.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 421+i (p01 = S.422).",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [0.52, 0.14, 0.98, 0.32],
+      "name": "projekt-giebelwand",
+      "alt": "Ansicht der Giebelwand West des Winkelbungalows der Projektaufgabe",
+      "unterschrift": "Projektaufgabe: Ansicht Giebelwand (Buch S. 422)"
+    },
+    {
+      "seite": 1,
+      "box": [0.52, 0.34, 0.98, 0.55],
+      "name": "projekt-wandaufbau",
+      "alt": "Wandaufbau mit Fensteranschluss: Gipsputz, Hochlochziegel, Kalkzementputz",
+      "unterschrift": "Projektaufgabe: Wandaufbau (Buch S. 422)"
+    },
+    {
+      "seite": 1,
+      "box": [0.12, 0.57, 0.90, 0.93],
+      "name": "projekt-draufsicht",
+      "alt": "Draufsicht des Winkelbungalows mit Maßen",
+      "unterschrift": "Projektaufgabe: Draufsicht Winkelbungalow (Buch S. 422)"
+    },
+    {
+      "seite": 2,
+      "box": [0.48, 0.10, 0.98, 0.36],
+      "name": "rechteckdoppeldeckung-fassade",
+      "alt": "Außenwandbekleidung in Rechteckdoppeldeckung an einem modernen Gebäude",
+      "unterschrift": "Außenwandbekleidung in Rechteckdoppeldeckung (Buch S. 423)"
+    },
+    {
+      "seite": 2,
+      "box": [0.45, 0.40, 0.98, 0.68],
+      "name": "aufbau-aussenwandbekleidung",
+      "alt": "Aufbau und Aufgaben der Außenwandbekleidung mit Wasserdampf, Wärme, Regen und Schnee",
+      "unterschrift": "Aufbau und Aufgaben der Außenwandbekleidung (Buch S. 423)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.10, 0.98, 0.30],
+      "name": "formeln-waermedaemmung",
+      "alt": "Formeln für Wärmedurchlasswiderstand und Dämmstoffdicke",
+      "unterschrift": "Formeln zur Wärmedämmschicht (Buch S. 424)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.30, 0.98, 0.94],
+      "name": "beispiel-daemmstoffdicke",
+      "alt": "Rechenbeispiel zur Ermittlung der erforderlichen Dämmstoffdicke mit Schichtaufbau",
+      "unterschrift": "Rechenbeispiel Dämmstoffdicke (Buch S. 424)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.10, 0.98, 0.42],
+      "name": "eigenlast-bekleidungen",
+      "alt": "Tabelle der Eigenlasten verschiedener Außenwandbekleidungen in kN je m²",
+      "unterschrift": "Eigenlast verschiedener Außenwandbekleidungen (Buch S. 425)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.42, 0.98, 0.68],
+      "name": "beispiel-duebelabstaende",
+      "alt": "Rechenbeispiel zur Ermittlung der Dübelabstände im Eck- und Normalbereich",
+      "unterschrift": "Beispiel Dübelabstände (Buch S. 425)"
+    },
+    {
+      "seite": 4,
+      "box": [0.05, 0.68, 0.98, 0.94],
+      "name": "befestigung-grundhoelzer",
+      "alt": "Befestigung der Grundhölzer, Konterlattung und Traglattung mit Abständen",
+      "unterschrift": "Befestigung der Grundhölzer und Lattung (Buch S. 425)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.10, 0.98, 0.28],
+      "name": "schraubnagel-holzschraube",
+      "alt": "Schraubnagel und Holzschraube als Verbindungselemente",
+      "unterschrift": "Schraubnagel und Holzschraube (Buch S. 426)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.28, 0.98, 0.56],
+      "name": "befestigung-brettschalung",
+      "alt": "Befestigung von Brettschalungen mit zwei, drei oder vier Verbindungselementen je nach Breite",
+      "unterschrift": "Befestigung von Brettschalungen (Buch S. 426)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.56, 0.98, 0.80],
+      "name": "befestigungsabstaende",
+      "alt": "Befestigungsabstände e und a mit Traglattenabstand und Schnurabstand",
+      "unterschrift": "Befestigungsabstände e und a (Buch S. 426)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.80, 0.98, 0.95],
+      "name": "mindestrandabstaende",
+      "alt": "Mindestrandabstände in mm auf Holz und auf Aluminium",
+      "unterschrift": "Mindestrandabstände (Buch S. 426)"
+    },
+    {
+      "seite": 6,
+      "box": [0.05, 0.12, 0.50, 0.34],
+      "name": "tafeldicke-abstaende",
+      "alt": "Tabelle der Befestigungsabstände nach Tafeldicke und Gebäudehöhe",
+      "unterschrift": "Befestigungsabstände nach Tafeldicke (Buch S. 427)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.36, 0.98, 0.60],
+      "name": "spitzwinkelschablonen-wand",
+      "alt": "Wandbekleidung mit Spitzwinkelschablonen",
+      "unterschrift": "Wandbekleidung mit Spitzwinkelschablonen (Buch S. 427)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.60, 0.98, 0.90],
+      "name": "gezogene-rechteckdoppeldeckung",
+      "alt": "Gezogene Rechteckdoppeldeckung als Wandbekleidung",
+      "unterschrift": "Gezogene Rechteckdoppeldeckung (Buch S. 427)"
+    },
+    {
+      "seite": 7,
+      "box": [0.05, 0.14, 0.98, 0.94],
+      "name": "schiefer-deckarten-tabelle",
+      "alt": "Große Übersichtstabelle der Außenwandbekleidungen mit Schiefer mit Formaten, Befestigung, Überdeckungen und Schnurabstand",
+      "unterschrift": "Außenwandbekleidung mit Schiefer – Übersicht (Buch S. 428)"
+    },
+    {
+      "seite": 8,
+      "box": [0.05, 0.14, 0.98, 0.44],
+      "name": "schiefer-deckarten-tabelle2",
+      "alt": "Fortsetzung der Übersichtstabelle mit dynamischer und variabler Deckung",
+      "unterschrift": "Dynamische und variable Deckung (Buch S. 429)"
+    },
+    {
+      "seite": 8,
+      "box": [0.05, 0.48, 0.98, 0.92],
+      "name": "deckarten-details",
+      "alt": "Unterlegte, lineare, dynamische und variable Deckung im Detail",
+      "unterschrift": "Deckarten im Detail (Buch S. 429)"
+    },
+    {
+      "seite": 9,
+      "box": [0.08, 0.28, 0.98, 0.60],
+      "name": "faserzement-bedarf1",
+      "alt": "Bedarfstabelle Faserzementplatten: Doppeldeckung, gezogene Doppeldeckung, deutsche und waagerechte Deckung",
+      "unterschrift": "Bedarfstabelle Faserzementplatten Teil 1 (Buch S. 430)"
+    },
+    {
+      "seite": 9,
+      "box": [0.08, 0.58, 0.98, 0.90],
+      "name": "faserzement-bedarf2",
+      "alt": "Bedarfstabelle Faserzementplatten: geschlaufte Deckung, Wabendeckung, Spitzschablonen- und Stülpdeckung",
+      "unterschrift": "Bedarfstabelle Faserzementplatten Teil 2 (Buch S. 430)"
+    },
+    {
+      "seite": 10,
+      "box": [0.45, 0.28, 0.98, 0.62],
+      "name": "keramische-platten",
+      "alt": "Verlegen von keramischen Platten mit Plattenhaltern auf der Unterkonstruktion",
+      "unterschrift": "Keramische Fassadenbekleidung (Buch S. 431)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.12, 0.98, 0.42],
+      "name": "aufbau-holzschindeln",
+      "alt": "Aufbau einer Wandbekleidung mit Holzschindeln",
+      "unterschrift": "Aufbau Wandbekleidung mit Holzschindeln (Buch S. 432)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.44, 0.98, 0.76],
+      "name": "holzschindeln-wohnhaus",
+      "alt": "Wandbekleidung mit Holzschindeln an einem Wohnhaus",
+      "unterschrift": "Holzschindeln am Wohnhaus (Buch S. 432)"
+    },
+    {
+      "seite": 11,
+      "box": [0.10, 0.76, 0.98, 0.94],
+      "name": "schindelhoelzer",
+      "alt": "Tabelle der Schindelhölzer Lärche, Rot-Zeder, Weiß-Zeder, Alaska-Zeder und Fichte",
+      "unterschrift": "Schindelhölzer und Einsatzbereiche (Buch S. 432)"
+    },
+    {
+      "seite": 12,
+      "box": [0.42, 0.10, 0.98, 0.52],
+      "name": "schindelbedarfstabelle",
+      "alt": "Schindelbedarfstabelle mit Reihenabstand und Schindellänge in Breitenmetern",
+      "unterschrift": "Schindelbedarfstabelle (Buch S. 433)"
+    },
+    {
+      "seite": 12,
+      "box": [0.05, 0.10, 0.42, 0.36],
+      "name": "formel-schindelgrundbedarf",
+      "alt": "Formel für den Schindelgrundbedarf in Breitenmetern",
+      "unterschrift": "Formel Schindelgrundbedarf (Buch S. 433)"
+    },
+    {
+      "seite": 12,
+      "box": [0.05, 0.62, 0.48, 0.80],
+      "name": "nagellaengen-schindeln",
+      "alt": "Tabelle der Nagellängen für gespaltene und gesägte Schindeln",
+      "unterschrift": "Nagellängen für Holzschindeln (Buch S. 433)"
+    },
+    {
+      "seite": 12,
+      "box": [0.48, 0.68, 0.98, 0.94],
+      "name": "abstaende-schindelbefestigung",
+      "alt": "Abstände bei der Schindelbefestigung mit Randabstand und Überdeckung",
+      "unterschrift": "Abstände bei der Schindelbefestigung (Buch S. 433)"
+    },
+    {
+      "seite": 13,
+      "box": [0.48, 0.10, 0.98, 0.26],
+      "name": "fassadenplatten-standardformate",
+      "alt": "Standardformate der Faserzementfassadenplatten für Stülpdeckung und Boden-Deckel-Schalung",
+      "unterschrift": "Standardformate Fassadenplatten (Buch S. 434)"
+    },
+    {
+      "seite": 13,
+      "box": [0.45, 0.28, 0.98, 0.68],
+      "name": "verlegebeispiel-fassadenplatten",
+      "alt": "Verlegebeispiel mit Fassadenplatten von 415 mm Breite mit Lattenabständen",
+      "unterschrift": "Verlegebeispiel Fassadenplatten (Buch S. 434)"
+    },
+    {
+      "seite": 13,
+      "box": [0.05, 0.70, 0.98, 0.94],
+      "name": "befestigung-abmessungen",
+      "alt": "Tabelle Befestigung und Abmessungen mit Format, Fläche, Nägel und Fugenstreifen je Platte",
+      "unterschrift": "Befestigung und Abmessungen (Buch S. 434)"
+    },
+    {
+      "seite": 14,
+      "box": [0.48, 0.10, 0.98, 0.26],
+      "name": "fassadentafeln-formate",
+      "alt": "Formate der Faserzementfassadentafeln für Bekleidung mit offenen oder hinterlegten Fugen",
+      "unterschrift": "Formate Fassadentafeln (Buch S. 435)"
+    },
+    {
+      "seite": 14,
+      "box": [0.45, 0.30, 0.98, 0.70],
+      "name": "fugenausbildung-befestigung",
+      "alt": "Fugenausbildung mit Fugenband und Befestigungsbeispiele mit Hohlzugniet und Schrauben",
+      "unterschrift": "Fugenausbildung und Befestigung (Buch S. 435)"
+    },
+    {
+      "seite": 14,
+      "box": [0.05, 0.70, 0.98, 0.94],
+      "name": "sockelausbildungen",
+      "alt": "Sockelausbildungen mit Holz-Unterkonstruktion und Alu-Unterkonstruktion",
+      "unterschrift": "Sockelausbildungen (Buch S. 435)"
+    },
+    {
+      "seite": 15,
+      "box": [0.48, 0.10, 0.98, 0.32],
+      "name": "deckschema-schuppendeckung",
+      "alt": "Deckschema Schuppendeckung mit Schnurabstand, Höhen- und Seitenüberdeckung",
+      "unterschrift": "Deckschema Schuppendeckung (Buch S. 436)"
+    },
+    {
+      "seite": 15,
+      "box": [0.05, 0.34, 0.55, 0.62],
+      "name": "schiefer-sortierungen",
+      "alt": "Tabelle der Schiefersortierungen 1/16, 1/32 und 1/64 mit Anfangort- und Endortsteinen",
+      "unterschrift": "Schiefersortierungen für Wandbekleidungen (Buch S. 436)"
+    },
+    {
+      "seite": 15,
+      "box": [0.05, 0.62, 0.98, 0.94],
+      "name": "beispiel-altdeutsch-wand",
+      "alt": "Rechenbeispiel altdeutsche Deckung an der Fassade mit Deckfläche und Materialbedarf",
+      "unterschrift": "Rechenbeispiel altdeutsche Wandbekleidung (Buch S. 436)"
+    },
+    {
+      "seite": 15,
+      "box": [0.50, 0.66, 0.98, 0.86],
+      "name": "schuppen-massen",
+      "alt": "Tabelle Decksteinbedarf, Ortsteinbedarf sowie Höhen- und Seitenüberdeckung bei der Schuppendeckung",
+      "unterschrift": "Bedarf und Überdeckungen Schuppendeckung (Buch S. 436)"
+    },
+    {
+      "seite": 16,
+      "box": [0.05, 0.12, 0.98, 0.32],
+      "name": "beispiel-schuppen-m2",
+      "alt": "Rechenbeispiel Materialbedarf pro Quadratmeter bei Decksteinen 24 mal 19 cm",
+      "unterschrift": "Beispiel Materialbedarf je m² (Buch S. 437)"
+    },
+    {
+      "seite": 16,
+      "box": [0.45, 0.34, 0.98, 0.58],
+      "name": "deutsche-deckung-format",
+      "alt": "Deutsche Deckung Format 20 mal 20 cm mit senkrechtem Schnurabstand und Seitenüberdeckung",
+      "unterschrift": "Deutsche Deckung Format 20 × 20 cm (Buch S. 437)"
+    },
+    {
+      "seite": 16,
+      "box": [0.05, 0.60, 0.98, 0.94],
+      "name": "beispiel-giebelflaeche",
+      "alt": "Rechenbeispiel Giebelfläche mit Bogenschnittschablonen und Strackortplatten",
+      "unterschrift": "Rechenbeispiel Giebelfläche (Buch S. 437)"
+    },
+    {
+      "seite": 17,
+      "box": [0.45, 0.10, 0.98, 0.32],
+      "name": "deckschema-wabendeckung",
+      "alt": "Deckschema Wabendeckung mit Brustbreite, Überdeckung und Randstein",
+      "unterschrift": "Deckschema Wabendeckung (Buch S. 438)"
+    },
+    {
+      "seite": 17,
+      "box": [0.05, 0.20, 0.45, 0.46],
+      "name": "beispiel-wabendeckung",
+      "alt": "Rechenbeispiel Wabendeckung mit Brustbreite und Schnurabständen",
+      "unterschrift": "Beispiel Wabendeckung (Buch S. 438)"
+    },
+    {
+      "seite": 17,
+      "box": [0.45, 0.46, 0.98, 0.72],
+      "name": "deckschema-rechteckdoppel",
+      "alt": "Deckschema Rechteckdoppeldeckung mit Steinbreite, Steinhöhe, Stoßfuge und Höhenüberdeckung",
+      "unterschrift": "Deckschema Rechteckdoppeldeckung (Buch S. 438)"
+    },
+    {
+      "seite": 17,
+      "box": [0.05, 0.60, 0.45, 0.76],
+      "name": "formel-deckflaeche-doppel",
+      "alt": "Formel für die Deckfläche bei der Rechteckdoppeldeckung",
+      "unterschrift": "Formel Deckfläche Rechteckdoppeldeckung (Buch S. 438)"
+    },
+    {
+      "seite": 17,
+      "box": [0.05, 0.74, 0.98, 0.94],
+      "name": "beispiel-rechteckdoppel",
+      "alt": "Rechenbeispiel Rechteckdoppeldeckung mit Schieferplatten 35 mal 25 cm",
+      "unterschrift": "Rechenbeispiel Rechteckdoppeldeckung (Buch S. 438)"
+    },
+    {
+      "seite": 18,
+      "box": [0.05, 0.12, 0.98, 0.42],
+      "name": "beispiel-lattung-berechnung",
+      "alt": "Rechenbeispiel Hakenbedarf, Flächeneinteilung, Konterlattung und Traglattung",
+      "unterschrift": "Beispiel Lattenberechnung (Buch S. 439)"
+    },
+    {
+      "seite": 18,
+      "box": [0.45, 0.44, 0.98, 0.70],
+      "name": "deckschema-gezogene-doppel",
+      "alt": "Deckschema gezogene Doppeldeckung mit Seitenüberdeckung und Höhenüberdeckung",
+      "unterschrift": "Deckschema gezogene Doppeldeckung (Buch S. 439)"
+    },
+    {
+      "seite": 18,
+      "box": [0.05, 0.56, 0.45, 0.72],
+      "name": "formeln-gezogene-doppel",
+      "alt": "Formeln für Deckfläche und Schnurabstände bei der gezogenen Doppeldeckung",
+      "unterschrift": "Formeln gezogene Doppeldeckung (Buch S. 439)"
+    },
+    {
+      "seite": 18,
+      "box": [0.05, 0.74, 0.98, 0.94],
+      "name": "beispiel-gezogene-doppel",
+      "alt": "Rechenbeispiel gezogene Rechteckdoppeldeckung Format 30 mal 60 cm",
+      "unterschrift": "Beispiel gezogene Doppeldeckung (Buch S. 439)"
+    },
+    {
+      "seite": 19,
+      "box": [0.45, 0.10, 0.98, 0.34],
+      "name": "deckschema-stuelpdeckung",
+      "alt": "Deckschema Stülpdeckung mit Spezialnägeln, Fugenstreifen und Hinterlüftung",
+      "unterschrift": "Deckschema Stülpdeckung (Buch S. 440)"
+    },
+    {
+      "seite": 19,
+      "box": [0.05, 0.18, 0.45, 0.72],
+      "name": "beispiel-stuelpdeckung",
+      "alt": "Rechenbeispiel Stülpdeckung mit Plattenverbrauch, Schnurabständen und Nagelbedarf",
+      "unterschrift": "Rechenbeispiel Stülpdeckung (Buch S. 440)"
+    },
+    {
+      "seite": 19,
+      "box": [0.45, 0.36, 0.98, 0.62],
+      "name": "deckschema-waagerecht",
+      "alt": "Deckschema waagerechte Deckung mit Höhen- und Seitenüberdeckung",
+      "unterschrift": "Deckschema waagerechte Deckung (Buch S. 440)"
+    },
+    {
+      "seite": 19,
+      "box": [0.45, 0.62, 0.98, 0.86],
+      "name": "geschlaufte-deckung",
+      "alt": "Geschlaufte Deckung Format 20 mal 30 cm mit senkrechtem und waagerechtem Schnurabstand",
+      "unterschrift": "Geschlaufte Deckung (Buch S. 440)"
+    },
+    {
+      "seite": 20,
+      "box": [0.05, 0.12, 0.50, 0.72],
+      "name": "beispiel-waagerechte-deckung",
+      "alt": "Rechenbeispiel waagerechte Deckung mit Faserzementplatten und Traglattenbedarf",
+      "unterschrift": "Rechenbeispiel waagerechte Deckung (Buch S. 441)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.30, 0.98, 0.50],
+      "name": "formeln-schindelbedarf",
+      "alt": "Formeln für Divisions- und Multiplikationsverfahren beim Schindelgrundbedarf",
+      "unterschrift": "Formeln Schindelgrundbedarf (Buch S. 441)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.50, 0.98, 0.94],
+      "name": "beispiel-schindelbedarf",
+      "alt": "Rechenbeispiel Schindelbedarf mit Divisions- und Multiplikationsverfahren",
+      "unterschrift": "Beispiel Schindelbedarf (Buch S. 441)"
+    },
+    {
+      "seite": 21,
+      "box": [0.05, 0.28, 0.98, 0.62],
+      "name": "beispiel-fassadenplatten",
+      "alt": "Rechenbeispiel Fassadenplatten mit Schnurabständen, Flächeneinteilung und Materialbedarf",
+      "unterschrift": "Rechenbeispiel Fassadenplatten (Buch S. 442)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.36, 0.98, 0.58],
+      "name": "aufgabe-sandwich",
+      "alt": "Sandwich-Außenwandelement mit Stahlbeton und EPS-Hartschaum für die Dämmdickenberechnung",
+      "unterschrift": "Aufgabe: Sandwich-Außenwandelement (Buch S. 443)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.58, 0.98, 0.76],
+      "name": "aufgabe-wandaufbau",
+      "alt": "Wandaufbau mit Kalkzementputz, Wärmedämmschicht, Kalksandsteinmauerwerk und Gipsputz",
+      "unterschrift": "Aufgabe: Wandaufbau (Buch S. 443)"
+    },
+    {
+      "seite": 22,
+      "box": [0.05, 0.60, 0.48, 0.80],
+      "name": "aufgabe-giebelflaeche",
+      "alt": "Giebelfläche für die Berechnung der altdeutschen Deckung",
+      "unterschrift": "Aufgabe: Giebelfläche altdeutsch (Buch S. 443)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.78, 0.98, 0.95],
+      "name": "aufgabe-giebel-wabendeckung",
+      "alt": "Giebelfläche für die Berechnung der Wabendeckung mit Bogenschnittschablonen",
+      "unterschrift": "Aufgabe: Giebelfläche Wabendeckung (Buch S. 443)"
+    },
+    {
+      "seite": 23,
+      "box": [0.48, 0.16, 0.98, 0.40],
+      "name": "aufgabe-fassade-7-49",
+      "alt": "Außenwand 7,49 m breit mit Fassadenplatten in zwei Formaten",
+      "unterschrift": "Aufgabe: Fassade 7,49 m (Buch S. 444)"
+    },
+    {
+      "seite": 23,
+      "box": [0.48, 0.44, 0.98, 0.72],
+      "name": "aufgabe-wand-5-24",
+      "alt": "Wand mit fünf Reihen Fassadenplatten Format 415 mal 1250 mm",
+      "unterschrift": "Aufgabe: Wand mit Fassadenplatten (Buch S. 444)"
+    },
+    {
+      "seite": 24,
+      "box": [0.05, 0.12, 0.98, 0.92],
+      "name": "zeichenaufgaben-deckungen",
+      "alt": "Zeichenaufgaben zu Doppeldeckung, gezogener Rechteckdoppeldeckung, Stülpdeckung und geschlaufter Deckung im Maßstab 1:10",
+      "unterschrift": "Zeichenaufgaben Deckungen (Buch S. 445)"
+    }
+  ]
+}
