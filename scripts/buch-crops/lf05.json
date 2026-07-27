@@ -1,0 +1,324 @@
+{
+  "lf": "lf05",
+  "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite i = Buchseite 184+i. Teil 2: PDF-Seite i = Buchseite 211+i. Teil 3: PDF-Seite i = Buchseite 231+i (eigenes pdf-Feld je Figur).",
+  "figuren": [
+    {
+      "seite": 2,
+      "box": [0.06, 0.16, 0.95, 0.78],
+      "name": "holzarten-tabelle",
+      "alt": "Tabelle der Nadel- und Laubhölzer mit Rohdichten und Verwendung",
+      "unterschrift": "Wichtige Holzarten mit Eigenschaften (Buch S. 186)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "nahrungshaushalt-baum",
+      "alt": "Nahrungshaushalt des Baumes: Fotosynthese, Wasser- und Nährstofftransport",
+      "unterschrift": "Nahrungshaushalt des Baumes (Buch S. 187)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.42, 0.95, 0.72],
+      "name": "aufbau-holz-cellulose",
+      "alt": "Hauptbestandteile des Holzes: Cellulose, Hemicellulose, Lignin mit Zug- und Druckfestigkeit",
+      "unterschrift": "Hauptbestandteile des Holzes (Buch S. 188)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.72, 0.95, 0.95],
+      "name": "zellenaufbau-nadelholz",
+      "alt": "Zellenaufbau des Nadelholzes mit Frühholz, Spätholz und Markstrahlen",
+      "unterschrift": "Zellenaufbau des Nadelholzes (Buch S. 188)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.12, 0.95, 0.36],
+      "name": "schnittarten-stamm",
+      "alt": "Schnittarten am Stamm: Querschnitt, Radialschnitt, Tangentialschnitt",
+      "unterschrift": "Schnittarten am Stamm (Buch S. 189)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.55, 0.95, 0.92],
+      "name": "wachstumsfehler-uebersicht",
+      "alt": "Abweichungen vom normalen Wachstum: Vollschäftigkeit, Abholzigkeit, Drehwuchs",
+      "unterschrift": "Abweichungen vom normalen Wachstum (Buch S. 189)"
+    },
+    {
+      "seite": 7,
+      "box": [0.50, 0.10, 0.95, 0.62],
+      "name": "bauschnittholz-arten",
+      "alt": "Bauschnittholz-Einschnittarten: Ganzholz, Halbholz, Viertelholz",
+      "unterschrift": "Bauschnittholz nach Einschnitt und Querschnitt (Buch S. 191)"
+    },
+    {
+      "seite": 8,
+      "box": [0.50, 0.30, 0.95, 0.55],
+      "name": "sortierklassen-tabelle",
+      "alt": "Sortierklassen für Nadelholz S7, S10, S13 mit Festigkeitsklassen C18, C24, C30, C40",
+      "unterschrift": "Sortierklassen mit Zuordnung zu Festigkeitsklassen (Buch S. 192)"
+    },
+    {
+      "seite": 9,
+      "box": [0.50, 0.10, 0.95, 0.38],
+      "name": "furniersperrholz-aufbau",
+      "alt": "Aufbau einer Furnierplatte (dreilagig) und Stabsperrholzplatte",
+      "unterschrift": "Aufbau von Sperrholzplatten (Buch S. 193)"
+    },
+    {
+      "seite": 10,
+      "box": [0.50, 0.35, 0.95, 0.72],
+      "name": "halbfertigerzeugnisse",
+      "alt": "Halbfertigerzeugnisse: Fußleisten, Fasebrett, Stülpschalungsbretter",
+      "unterschrift": "Halbfertigerzeugnisse aus Holz (Buch S. 194)"
+    },
+    {
+      "seite": 11,
+      "box": [0.50, 0.10, 0.95, 0.60],
+      "name": "festigkeiten-holz",
+      "alt": "Druck- und Zugfestigkeit des Holzes in und quer zur Faserrichtung (Röhrenbündel-Modell)",
+      "unterschrift": "Druck- und Zugfestigkeit des Holzes (Buch S. 195)"
+    },
+    {
+      "seite": 11,
+      "box": [0.50, 0.72, 0.95, 0.95],
+      "name": "haerte-rohdichte-tabelle",
+      "alt": "Weiche und harte Holzarten mit ihren Rohdichten",
+      "unterschrift": "Weiche und harte Holzarten und ihre Rohdichten (Buch S. 195)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.10, 0.95, 0.34],
+      "name": "wassergehalt-holz",
+      "alt": "Wassergehalt des Holzes: Fasersättigungspunkt und Schwind-/Quellbereich",
+      "unterschrift": "Wassergehalt des Holzes (Buch S. 196)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.55, 0.95, 0.80],
+      "name": "schwindmasse-holz",
+      "alt": "Durchschnittliche Schwindmaße des Holzes: längs, radial, tangential",
+      "unterschrift": "Durchschnittliche Schwindmaße des Holzes (Buch S. 196)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.80, 0.95, 0.96],
+      "name": "querschnittsverformung-schwinden",
+      "alt": "Querschnittsverformung infolge von Schwinden: Halbholz, Brett, Viertelholz",
+      "unterschrift": "Querschnittsverformung durch Schwinden (Buch S. 196)"
+    },
+    {
+      "seite": 14,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "holztrocknung-stapel",
+      "alt": "Blockstapel und Viereckstapel bei der natürlichen Holztrocknung",
+      "unterschrift": "Natürliche Holztrocknung: Stapelarten (Buch S. 198)"
+    },
+    {
+      "seite": 14,
+      "box": [0.50, 0.55, 0.95, 0.88],
+      "name": "holztrocknungsanlage",
+      "alt": "Schema einer technischen Holztrocknungsanlage",
+      "unterschrift": "Holztrocknungsanlage – Schema (Buch S. 198)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "entwicklungsstufen-insekten",
+      "alt": "Entwicklungsstufen der Holz zerstörenden Insekten: Ei, Larve, Puppe, Käfer",
+      "unterschrift": "Entwicklungsstufen der Holz zerstörenden Insekten (Buch S. 200)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.10, 0.95, 0.50],
+      "name": "holzschutz-baulich",
+      "alt": "Vorbeugende bauliche Holzschutzmaßnahmen am Balkenkopf und Pfosten",
+      "unterschrift": "Vorbeugende bauliche Holzschutzmaßnahmen (Buch S. 201)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.52, 0.95, 0.82],
+      "name": "holzschutzmittel-kennzeichen",
+      "alt": "Kennzeichen der Holzschutzmittel: Iv, P, W, E, B",
+      "unterschrift": "Kennzeichen der Holzschutzmittel (Buch S. 201)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.55, 0.95, 0.95],
+      "name": "saegearten",
+      "alt": "Sägearten: Handsäge, Fuchsschwanz, Rückensäge, Stichsäge",
+      "unterschrift": "Sägearten (Buch S. 205)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.20, 0.95, 0.36],
+      "name": "zahnformen-saege",
+      "alt": "Zahnformen der Säge und Winkel am Sägezahn",
+      "unterschrift": "Zahnformen der Säge (Buch S. 205)"
+    },
+    {
+      "seite": 23,
+      "box": [0.50, 0.10, 0.95, 0.34],
+      "name": "fachwerkwand-hoelzer",
+      "alt": "Fachwerkwand mit benannten Hölzern: Pfosten, Rähm, Schwelle, Streben, Riegel",
+      "unterschrift": "Fachwerkwand auf Holzbalkendecke (Buch S. 207)"
+    },
+    {
+      "seite": 24,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "zapfenverbindung",
+      "alt": "Zapfenverbindungen: einfacher und abgesetzter Zapfen",
+      "unterschrift": "Zapfenverbindungen (Buch S. 208)"
+    },
+    {
+      "seite": 24,
+      "box": [0.50, 0.72, 0.95, 0.95],
+      "name": "strebenzapfen-versatz",
+      "alt": "Strebenzapfen mit Versatz und glattes Eckblatt",
+      "unterschrift": "Strebenzapfen mit Versatz (Buch S. 208)"
+    },
+    {
+      "seite": 25,
+      "box": [0.50, 0.10, 0.95, 0.40],
+      "name": "laengsverbindungen",
+      "alt": "Längsverbindungen bei Pfetten und Schwellen: Blattstoß, Zapfenstoß, gerades Hakenblatt",
+      "unterschrift": "Längsverbindungen bei Pfetten und Schwellen (Buch S. 209)"
+    },
+    {
+      "seite": 25,
+      "box": [0.50, 0.42, 0.95, 0.62],
+      "name": "scherzapfen",
+      "alt": "Scherzapfen (Scherblatt) für die Eckverbindung",
+      "unterschrift": "Scherzapfen (Scherblatt) (Buch S. 209)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 3,
+      "box": [0.50, 0.10, 0.95, 0.48],
+      "name": "holzrahmenbau-prinzip",
+      "alt": "Das Bauprinzip Rippen und Beplankung im Holzrahmenbau",
+      "unterschrift": "Bauprinzip: Rippen und Beplankung (Buch S. 213)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.50, 0.10, 0.95, 0.36],
+      "name": "wandelemente-aufbau",
+      "alt": "Aufbau der Wandelemente: Ständer, Schwelle, Rähm, Beplankung",
+      "unterschrift": "Aufbau der Wandelemente (Buch S. 214)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.50, 0.38, 0.95, 0.68],
+      "name": "statische-funktionen-bauteile",
+      "alt": "Statische Funktionen der Bauteile beim Holzrahmenbau",
+      "unterschrift": "Statische Funktionen der Bauteile (Buch S. 214)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 8,
+      "box": [0.50, 0.10, 0.95, 0.34],
+      "name": "nagelverbindung",
+      "alt": "Bolzenverbindung und Maße für Nägel mit glattem Schaft",
+      "unterschrift": "Nagel- und Bolzenverbindungen (Buch S. 218)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 9,
+      "box": [0.50, 0.20, 0.95, 0.40],
+      "name": "holzschrauben-kurzzeichen",
+      "alt": "Holzschrauben mit Kurzzeichen: Flako, Ruko, Liko, Sechskant",
+      "unterschrift": "Holzschrauben (Kurzbezeichnungen) (Buch S. 219)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.50, 0.38, 0.95, 0.72],
+      "name": "duebelverbindungen",
+      "alt": "Schraubverbindung mit Ringkeildübel und Krallendübel",
+      "unterschrift": "Verbindungen mit Dübeln (Buch S. 220)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.50, 0.28, 0.95, 0.62],
+      "name": "traditionelle-dachformen",
+      "alt": "Traditionelle Dachformen: Satteldach, Mansarddach, Pultdach, Walmdach, Zeltdach",
+      "unterschrift": "Traditionelle Dachformen (Buch S. 225)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 15,
+      "box": [0.50, 0.55, 0.95, 0.95],
+      "name": "pfettendachstuhl-arten",
+      "alt": "Einfach und zweifach stehender Pfettendachstuhl mit Pfosten und V-Streben",
+      "unterschrift": "Pfettendachstuhl-Arten (Buch S. 226)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 16,
+      "box": [0.50, 0.10, 0.95, 0.55],
+      "name": "pfettendachstuhl-aussteifung",
+      "alt": "Einfach und zweifach stehender Pfettendachstuhl mit Längs- und Queraussteifung",
+      "unterschrift": "Aussteifung des Pfettendachstuhls (Buch S. 227)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL2.pdf",
+      "seite": 18,
+      "box": [0.50, 0.30, 0.95, 0.75],
+      "name": "sparrendach-kehlbalkendach",
+      "alt": "Sparrendach und Kehlbalkendach mit Sparren, Kehlbalken und Windrispen",
+      "unterschrift": "Sparren- und Kehlbalkendach (Buch S. 229)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 2,
+      "box": [0.50, 0.10, 0.95, 0.52],
+      "name": "sprengwerk-haengewerk",
+      "alt": "Sprengwerksdach und Hängewerksdach mit Streben und Hängepfosten",
+      "unterschrift": "Spreng- und Hängewerksdächer (Buch S. 233)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 3,
+      "box": [0.50, 0.10, 0.95, 0.34],
+      "name": "sparrenauswechslung",
+      "alt": "Anordnung von Dachflächenfenstern und Sparrenauswechslungen",
+      "unterschrift": "Sparrenauswechslungen (Buch S. 234)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 4,
+      "box": [0.50, 0.10, 0.95, 0.36],
+      "name": "dachgauben-formen",
+      "alt": "Dachaufbauten: Satteldachgaube, Walmdachgaube, Tonnendachgaube, Fledermausgaube, Schleppgaube",
+      "unterschrift": "Dachgaubenformen (Buch S. 235)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 12,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "lasten-am-bau",
+      "alt": "Lasten und Kräfte am Bau: Eigenlasten, Nutzlasten, Wind, Schnee, Bodendruck",
+      "unterschrift": "Lasten und Kräfte am Bau (Buch S. 243)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 13,
+      "box": [0.50, 0.10, 0.95, 0.30],
+      "name": "kraefteparallelogramm",
+      "alt": "Kräftezusammensetzung mit Kräfteparallelogramm und Kräftedreieck",
+      "unterschrift": "Kräfteparallelogramm und Kräftedreieck (Buch S. 244)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF5 TEIL3.pdf",
+      "seite": 14,
+      "box": [0.07, 0.28, 0.95, 0.52],
+      "name": "kraeftezerlegung-winkelfunktionen",
+      "alt": "Rechnerische Kräftezerlegung mit Winkelfunktionen Sinus und Kosinus",
+      "unterschrift": "Rechnerische Kräftezerlegung (Buch S. 245)"
+    }
+  ]
+}
