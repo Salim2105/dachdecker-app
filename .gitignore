@@ -46,3 +46,6 @@ dist-desktop/
 
 # Lokale HTTPS-Zertifikate (private Schluessel!) — nie committen
 certs/
+
+# Vorschau-PNGs, die verify-lf.mjs beim SVG-Rendern im Projektwurzel ablegt
+/lf*-*.png
