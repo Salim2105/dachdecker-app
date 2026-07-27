@@ -1,0 +1,302 @@
+{
+  "lf": "lf03",
+  "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite i = Buchseite 102+i. Teil 2: PDF-Seite i = Buchseite 127+i (eigenes pdf-Feld).",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [0.05, 0.22, 0.95, 0.92],
+      "name": "reihenhaus-isometrie",
+      "alt": "Isometrisches Schnittbild eines Reihenhauses mit allen Mauerwerks-Bauteilen",
+      "unterschrift": "Reihenhaus mit Mauerwerk-Bauteilen (Buch S. 103)"
+    },
+    {
+      "seite": 2,
+      "box": [0.52, 0.04, 0.98, 0.54],
+      "name": "wandarten",
+      "alt": "Wandarten: tragende Wand, aussteifende Wand, nichttragende Trennwand",
+      "unterschrift": "Wandarten und ihre Aufgaben (Buch S. 104)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.04, 0.98, 0.30],
+      "name": "steinformate-grundformen",
+      "alt": "Dünnformat DF und Normalformat NF als 3D-Zeichnung mit Maßen",
+      "unterschrift": "Steinformate: Grundformen DF und NF (Buch S. 105)"
+    },
+    {
+      "seite": 3,
+      "box": [0.38, 0.30, 0.98, 0.68],
+      "name": "steinformate-tabelle",
+      "alt": "Tabelle der Steinformate von DF bis 20 DF mit Länge, Breite, Höhe und Gruppenzuordnung",
+      "unterschrift": "Steinformate und Abmessungen (Buch S. 105)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.72, 0.98, 0.96],
+      "name": "steinhoehen-fugendicken",
+      "alt": "Steinhöhen mit Fugendicken: DF 6,25 cm, NF 8,33 cm, 2 DF 12,5 cm",
+      "unterschrift": "Steinhöhen mit Fugendicken (Buch S. 105)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.04, 0.98, 0.68],
+      "name": "ziegelherstellung-schema",
+      "alt": "Fließschema der Mauerziegelherstellung: Rohstoffabbau, Aufbereiten, Formen, Trocknen, Brennen",
+      "unterschrift": "Herstellung von Mauerziegeln – Schema (Buch S. 106)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.04, 0.98, 0.70],
+      "name": "hochlochziegel-typen",
+      "alt": "Vollziegel Mz, Hochlochziegel mit Lochung A (HLzA) und Hochlochblockziegel mit Lochung W (HLzW)",
+      "unterschrift": "Ziegelarten: Vollziegel, HLzA, HLzW (Buch S. 107)"
+    },
+    {
+      "seite": 6,
+      "box": [0.45, 0.40, 0.98, 0.80],
+      "name": "druckfestigkeitsklassen",
+      "alt": "Tabelle Druckfestigkeitsklassen 4–60 mit Farbkennzeichnung: blau, rot, grün, gelb, braun, violett, schwarz",
+      "unterschrift": "Druckfestigkeitsklassen und Kennzeichnung (Buch S. 108)"
+    },
+    {
+      "seite": 7,
+      "box": [0.48, 0.04, 0.98, 0.20],
+      "name": "kalksandstein-herstellung",
+      "alt": "Schema Kalksandsteinherstellung: Kalk + Sand + Wasser → Pressen → Härten in Autoklaven",
+      "unterschrift": "Herstellung von Kalksandsteinen (Buch S. 109)"
+    },
+    {
+      "seite": 7,
+      "box": [0.48, 0.38, 0.98, 0.78],
+      "name": "kalksandvollsteine",
+      "alt": "Kalksandvollsteine: NF, 2 DF, 3 DF Formate mit Maßen und t-Tasche",
+      "unterschrift": "Kalksandvollsteine – Formate (Buch S. 109)"
+    },
+    {
+      "seite": 9,
+      "box": [0.48, 0.04, 0.98, 0.50],
+      "name": "betonsteine-hohlblock",
+      "alt": "Einkammer- und Dreikammer-Hohlblock, zweischaliger Hohlblock, Schalungsstein",
+      "unterschrift": "Mauersteine aus Beton: Hohlblöcke (Buch S. 111)"
+    },
+    {
+      "seite": 11,
+      "box": [0.50, 0.32, 0.98, 0.94],
+      "name": "kreislauf-luftkalk",
+      "alt": "Kreislauf des Luftkalkes: Brennen, Löschen, Erhärten mit chemischen Formeln",
+      "unterschrift": "Kreislauf des Luftkalkes (Buch S. 113)"
+    },
+    {
+      "seite": 13,
+      "box": [0.48, 0.04, 0.98, 0.52],
+      "name": "moertelgruppen-mischung",
+      "alt": "Mischungsverhältnisse in Raumteilen für Mörtelgruppen I bis IIIa",
+      "unterschrift": "Mörtelgruppen: Mischungsverhältnisse (Buch S. 115)"
+    },
+    {
+      "seite": 13,
+      "box": [0.04, 0.52, 0.98, 0.82],
+      "name": "moertelgruppen-klassen",
+      "alt": "Mörtelgruppen I–IIIa mit Mörtelklassen M1–M20, Mindestdruckfestigkeit und Anwendung",
+      "unterschrift": "Mörtelgruppen und Mörtelklassen (Buch S. 115)"
+    },
+    {
+      "seite": 16,
+      "box": [0.48, 0.04, 0.98, 0.48],
+      "name": "moertelmischung-eimer",
+      "alt": "Eimer-Schema: 3 Eimer Sand + 1 Eimer Bindemittel ergibt 2,5 Eimer Mörtel, Mörtelausbeute 62,5 %",
+      "unterschrift": "Mörtelausbeute am Eimer-Beispiel (Buch S. 118)"
+    },
+    {
+      "seite": 17,
+      "box": [0.30, 0.04, 0.98, 0.22],
+      "name": "moertel-zusammensetzung",
+      "alt": "Kreisdiagramme Zusammensetzung von Zementmörtel 1:4 und Kalkzementmörtel 1:1:6",
+      "unterschrift": "Zusammensetzung Zement-/Kalkzementmörtel (Buch S. 119)"
+    },
+    {
+      "seite": 17,
+      "box": [0.30, 0.22, 0.98, 0.45],
+      "name": "bindemittel-sack-tabelle",
+      "alt": "Tabelle Bindemittel: Masse je Sack und Volumen – Kalkhydrat 20 kg/40 l, Zement 25 kg/20 l",
+      "unterschrift": "Bindemittel: Masse und Volumen je Sack (Buch S. 119)"
+    },
+    {
+      "seite": 19,
+      "box": [0.45, 0.04, 0.98, 0.48],
+      "name": "massordnung-grundlagen",
+      "alt": "Maßordnung im Hochbau: Mauer- und Sturzmaße, Richtmaße, Kopfmaß = 1 am = 12,5 cm",
+      "unterschrift": "Maßordnung im Hochbau – Grundlagen (Buch S. 121)"
+    },
+    {
+      "seite": 19,
+      "box": [0.45, 0.48, 0.98, 0.95],
+      "name": "achtelmeter-kopfmass",
+      "alt": "Der Achtelmeter als Kopfmaß: Steinbreite 11,5 cm + Fuge 1 cm = 12,5 cm",
+      "unterschrift": "Der Achtelmeter als Kopfmaß (Buch S. 121)"
+    },
+    {
+      "seite": 20,
+      "box": [0.45, 0.04, 0.98, 0.50],
+      "name": "mauer-nennmasse",
+      "alt": "Mauer-Nennmaße: Außenmaß, Innenmaß, Anbaumaß mit Berechnungsformeln",
+      "unterschrift": "Mauermaße für Bauzeichnungen (Buch S. 122)"
+    },
+    {
+      "seite": 20,
+      "box": [0.45, 0.50, 0.98, 0.92],
+      "name": "schichtenhoehen-formate",
+      "alt": "Schichtenhöhen: DF 6,25 cm, NF 8,33 cm, 2 DF 12,5 cm, Großformate 25 cm – Rasterdarstellung",
+      "unterschrift": "Schichtenhöhen mit verschiedenen Formaten (Buch S. 122)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.04, 0.98, 0.35],
+      "name": "fugen-dicken-lastverteilung",
+      "alt": "Benennung und Dicken der Fugen im Mauerwerk sowie Lastverteilung",
+      "unterschrift": "Fugen und Lastverteilung im Mauerwerk (Buch S. 123)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.35, 0.98, 0.60],
+      "name": "fugenausbildung-sichtmauerwerk",
+      "alt": "Fugenausbildung bei Sichtmauerwerk: vollfugig, Fuge auskratzen, frostgefährdet, richtige Verfugung",
+      "unterschrift": "Fugenausbildung bei Sichtmauerwerk (Buch S. 123)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.72, 0.98, 0.96],
+      "name": "maurerwerkzeuge",
+      "alt": "Maurerwerkzeuge: dreieckige und viereckige Kelle, Fugeisen, Maurerhammer, Wasserwaage, Schichten-Meterstab, Senklot",
+      "unterschrift": "Maurerwerkzeuge (Buch S. 123)"
+    },
+    {
+      "seite": 22,
+      "box": [0.48, 0.28, 0.98, 0.68],
+      "name": "arbeitsgeruest",
+      "alt": "Bockgerüst als Arbeitsgerüst mit Vertikalrahmen, Geländerholm, Zwischenholm, Bordbrett",
+      "unterschrift": "Arbeitsgerüst beim Mauern (Buch S. 124)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 1,
+      "box": [0.12, 0.18, 0.98, 0.92],
+      "name": "geruestbauteile-benennungen",
+      "alt": "Fassadengerüst als Standgerüst mit allen Bauteilen beschriftet: Ständer, Längsriegel, Querriegel, Belagfläche, Seitenschutz",
+      "unterschrift": "Gerüstbauteile und Benennungen (Buch S. 128)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.48, 0.04, 0.98, 0.40],
+      "name": "geruest-kupplungsteile",
+      "alt": "Normalkupplung, Drehkupplung, Stoßkupplung, Gewindefußplatte",
+      "unterschrift": "Gerüstkupplungsteile (Buch S. 131)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 5,
+      "box": [0.04, 0.04, 0.98, 0.42],
+      "name": "stahlrohr-kupplungsgeruest",
+      "alt": "Stahlrohr-Kupplungsgerüst: Schnitt A-A und Ansicht mit Verankerung, Verstrebung, Ständerstoß",
+      "unterschrift": "Stahlrohr-Kupplungsgerüst (Buch S. 132)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 7,
+      "box": [0.04, 0.48, 0.98, 0.96],
+      "name": "rahmengeruest-aufbau",
+      "alt": "Aufbau eines Rahmengerüstes in 6 Schritten: Ständerrahmen aufstellen, Rahmentafeln einhängen, Streben, Seitenschutz, Verankerung",
+      "unterschrift": "Aufbau eines Rahmengerüstes – 6 Schritte (Buch S. 134)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 8,
+      "box": [0.48, 0.04, 0.98, 0.52],
+      "name": "fahrgeruest",
+      "alt": "Fahrgerüst mit feststellbaren Rollen, Verstrebung, Seitenschutz und Auflagefläche",
+      "unterschrift": "Fahrgerüst (Buch S. 135)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.04, 0.15, 0.98, 0.55],
+      "name": "uebindemass-verzahnung",
+      "alt": "Überbindemaß ü = 0,4 × Steinhöhe (min 4,5 cm) und Verzahnung im Blockverband aus NF-Steinen",
+      "unterschrift": "Überbindemaß und Verzahnung (Buch S. 137)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.48, 0.58, 0.98, 0.96],
+      "name": "verbandsarten",
+      "alt": "Mauerverbandsarten: Läuferverband, Binderverband, Blockverband, Kreuzverband – Foto Sichtmauerwerk",
+      "unterschrift": "Verbandsarten (Buch S. 137)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 11,
+      "box": [0.48, 0.04, 0.98, 0.50],
+      "name": "11-5er-mauer-laeufer",
+      "alt": "11,5er-Mauer im Normalformat im mittigen Verband: Ansicht und Draufsicht",
+      "unterschrift": "11,5er-Mauer, Läuferverband – NF (Buch S. 138)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 12,
+      "box": [0.48, 0.04, 0.98, 0.48],
+      "name": "24er-mauer-blockverband",
+      "alt": "24er-Mauer im Blockverband aus Normalformat-Steinen: Ansicht und Draufsicht",
+      "unterschrift": "24er-Mauer im Blockverband (Buch S. 139)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 12,
+      "box": [0.48, 0.48, 0.98, 0.96],
+      "name": "24er-mauer-kreuzverband",
+      "alt": "24er-Mauer im Kreuzverband aus Normalformat-Steinen: Ansicht und Draufsicht",
+      "unterschrift": "24er-Mauer im Kreuzverband (Buch S. 139)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.45, 0.04, 0.98, 0.48],
+      "name": "mauerecke",
+      "alt": "Mauerecke aus 2 DF-Steinen: Abtreppen, Regelfugenbild, Kreuzfuge und Verbandsfehler",
+      "unterschrift": "Mauerecke – Regelfuge und Verbandsfehler (Buch S. 141)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.45, 0.50, 0.98, 0.96],
+      "name": "maueranschluss",
+      "alt": "Maueranschluss 24/24 cm aus NF- bzw. 2 DF-Steinen: Fugenversatz in Schicht 1 und 2",
+      "unterschrift": "Maueranschluss 24/24 cm (Buch S. 141)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 15,
+      "box": [0.04, 0.48, 0.98, 0.88],
+      "name": "baustoffbedarf-formeln",
+      "alt": "Formeln für Baustoffbedarf: Wandfläche × Mauersteinbedarf pro m² und Wandfläche × Mörtelbedarf pro m²",
+      "unterschrift": "Baustoffbedarf-Berechnung (Buch S. 142)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 16,
+      "box": [0.04, 0.32, 0.98, 0.96],
+      "name": "baustoffbedarf-tabelle",
+      "alt": "Tabelle Baustoffbedarf je m² Wand: Steinformat, Wanddicke, Abmessungen, Anzahl Steine und Mörtel in Liter",
+      "unterschrift": "Baustoffbedarf für Mauerwerk je m² Wand (Buch S. 143)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF3 TEIL2.pdf",
+      "seite": 21,
+      "box": [0.04, 0.04, 0.98, 0.52],
+      "name": "projektaufgabe-gartenhaus",
+      "alt": "Projektaufgabe: Foto eines modernen Gartenhauses und Schema der Mauerziegelherstellung",
+      "unterschrift": "Projektaufgabe Gartenhaus (Buch S. 148)"
+    }
+  ]
+}
