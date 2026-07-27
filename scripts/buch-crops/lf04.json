@@ -1,0 +1,258 @@
+{
+  "lf": "lf04",
+  "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL1.pdf",
+  "_hinweis": "Teil 1: PDF-Seite i = Buchseite 148+i. Teil 2: PDF-Seite i = Buchseite 170+i (eigenes pdf-Feld).",
+  "figuren": [
+    {
+      "seite": 2,
+      "box": [0.50, 0.10, 0.95, 0.90],
+      "name": "zementherstellung-schema",
+      "alt": "Schema der Zementherstellung vom Steinbruch bis zum fertigen Zement",
+      "unterschrift": "Zementherstellung – Schema (Buch S. 150)"
+    },
+    {
+      "seite": 3,
+      "box": [0.08, 0.10, 0.95, 0.62],
+      "name": "normalzemente-tabelle",
+      "alt": "Tabelle der fünf Normalzemente CEM I bis CEM V mit Hauptbestandteilen",
+      "unterschrift": "Normalzemente CEM I–V (Buch S. 151)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.62, 0.95, 0.92],
+      "name": "festigkeitsklassen-zement",
+      "alt": "Tabelle der Festigkeitsklassen 32,5 / 42,5 / 52,5 mit Anfangsfestigkeit L, N, R",
+      "unterschrift": "Festigkeitsklassen und Anfangsfestigkeit (Buch S. 151)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.08, 0.95, 0.42],
+      "name": "kennfarben-zement",
+      "alt": "Kennfarben der Zement-Festigkeitsklassen: braun, grün, rot",
+      "unterschrift": "Kennfarben der Festigkeitsklassen (Buch S. 152)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.10, 0.95, 0.50],
+      "name": "gesteinskoernungen-uebersicht",
+      "alt": "Übersicht: leichte, normale und schwere Gesteinskörnungen mit Rohdichten",
+      "unterschrift": "Gesteinskörnungen nach Rohdichte (Buch S. 153)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.52, 0.95, 0.90],
+      "name": "korngruppen-siebung",
+      "alt": "Korngruppen und Siebversuch zur Bestimmung der Sieblinie",
+      "unterschrift": "Korngruppen und Siebung (Buch S. 153)"
+    },
+    {
+      "seite": 6,
+      "box": [0.50, 0.08, 0.95, 0.55],
+      "name": "sieblinie-diagramm",
+      "alt": "Siebliniendiagramm mit Bereich günstiger Kornzusammensetzung",
+      "unterschrift": "Siebliniendiagramm (Buch S. 154)"
+    },
+    {
+      "seite": 8,
+      "box": [0.08, 0.08, 0.95, 0.55],
+      "name": "druckfestigkeitsklassen-beton",
+      "alt": "Tabelle der Druckfestigkeitsklassen C8/10 bis C100/115",
+      "unterschrift": "Druckfestigkeitsklassen von Beton (Buch S. 156)"
+    },
+    {
+      "seite": 8,
+      "box": [0.50, 0.55, 0.95, 0.92],
+      "name": "konsistenzklassen-tabelle",
+      "alt": "Konsistenzklassen nach Verdichtungsmaß (C0–C3) und Ausbreitmaß (F1–F6)",
+      "unterschrift": "Konsistenzklassen von Frischbeton (Buch S. 156)"
+    },
+    {
+      "seite": 9,
+      "box": [0.50, 0.10, 0.95, 0.55],
+      "name": "ausbreitversuch",
+      "alt": "Ausbreitversuch zur Bestimmung der Konsistenz von Frischbeton",
+      "unterschrift": "Ausbreitversuch (Buch S. 157)"
+    },
+    {
+      "seite": 10,
+      "box": [0.08, 0.08, 0.95, 0.92],
+      "name": "expositionsklassen-tabelle",
+      "alt": "Tabelle der Expositionsklassen X0 bis XM3 mit Beispielen und Mindestfestigkeitsklassen",
+      "unterschrift": "Expositionsklassen (Buch S. 158)"
+    },
+    {
+      "seite": 11,
+      "box": [0.08, 0.08, 0.95, 0.55],
+      "name": "expositionsklassen-mindestfestigkeit",
+      "alt": "Mindestfestigkeitsklassen je Expositionsklasse",
+      "unterschrift": "Mindestfestigkeitsklassen nach Expositionsklasse (Buch S. 159)"
+    },
+    {
+      "seite": 12,
+      "box": [0.08, 0.30, 0.95, 0.90],
+      "name": "standardbeton-tabelle",
+      "alt": "Anhaltswerte für Standardbeton: Konsistenz, Druckfestigkeitsklasse, Zement, Wasser",
+      "unterschrift": "Anhaltswerte für Standardbeton (Buch S. 160)"
+    },
+    {
+      "seite": 14,
+      "box": [0.50, 0.10, 0.95, 0.55],
+      "name": "transportbeton-fahrmischer",
+      "alt": "Fahrmischer für Transportbeton auf der Baustelle",
+      "unterschrift": "Transportbeton – Fahrmischer (Buch S. 162)"
+    },
+    {
+      "seite": 15,
+      "box": [0.50, 0.08, 0.95, 0.48],
+      "name": "verdichten-ruettler",
+      "alt": "Verdichten von Frischbeton mit Innenrüttler (Flaschenrüttler)",
+      "unterschrift": "Verdichten mit Innenrüttler (Buch S. 163)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.10, 0.95, 0.55],
+      "name": "betonstahl-rippen",
+      "alt": "Betonstahl B500 mit Rippenprofil und Kennzeichnung",
+      "unterschrift": "Betonstahl B500 – Rippen und Kennzeichen (Buch S. 164)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.10, 0.95, 0.90],
+      "name": "betonstahlmatten-lagermatten",
+      "alt": "Lagermatten und Listenmatten aus Betonstahl",
+      "unterschrift": "Betonstahlmatten: Lager- und Listenmatten (Buch S. 165)"
+    },
+    {
+      "seite": 19,
+      "box": [0.50, 0.10, 0.95, 0.90],
+      "name": "tragverhalten-stahlbetonbalken",
+      "alt": "Stahlbetonbalken unter Last mit Druck- und Zugzone, Bewehrung und Rissbildung",
+      "unterschrift": "Tragverhalten eines Stahlbetonbalkens (Buch S. 167)"
+    },
+    {
+      "seite": 20,
+      "box": [0.08, 0.35, 0.95, 0.70],
+      "name": "mindestbetondeckung-tabelle",
+      "alt": "Tabelle der Mindestbetondeckung nach Expositionsklassen S1 bis S6",
+      "unterschrift": "Mindestbetondeckung nach Expositionsklassen (Buch S. 168)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.70, 0.95, 0.92],
+      "name": "abstandhalter",
+      "alt": "Verschiedene Abstandhalter für Bewehrung",
+      "unterschrift": "Abstandhalter für Bewehrung (Buch S. 168)"
+    },
+    {
+      "seite": 22,
+      "box": [0.50, 0.10, 0.95, 0.90],
+      "name": "bewehrungsplan-beispiel",
+      "alt": "Beispiel eines Bewehrungsplans mit Positionsnummern und Stahlliste",
+      "unterschrift": "Bewehrungsplan mit Stahlliste (Buch S. 170)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 3,
+      "box": [0.50, 0.08, 0.95, 0.68],
+      "name": "zugzonen-bauteile",
+      "alt": "Lage der Zugbewehrung bei verschiedenen Bauteilen: Kragplatte, Balken, Decke, Fundamentplatte",
+      "unterschrift": "Zugzonen bei verschiedenen Bauteilen (Buch S. 173)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.50, 0.08, 0.95, 0.40],
+      "name": "schalung-aufbau",
+      "alt": "Aufbau einer Schalung: Schalhaut, Unterkonstruktion, Unterstützung, Verspannung",
+      "unterschrift": "Aufbau einer Schalung (Buch S. 174)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 4,
+      "box": [0.50, 0.42, 0.95, 0.92],
+      "name": "betondruck-schalung",
+      "alt": "Wasserdruck und Betondruck auf die Schalung nehmen nach unten zu",
+      "unterschrift": "Betondruck auf die Schalung (Buch S. 174)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 5,
+      "box": [0.50, 0.08, 0.95, 0.42],
+      "name": "brettschalung-verbindungen",
+      "alt": "Verbindungen bei Brettschalungen: stumpf gestoßen, Nut-Feder-Spundung",
+      "unterschrift": "Verbindungen bei Brettschalungen (Buch S. 175)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 7,
+      "box": [0.50, 0.08, 0.95, 0.65],
+      "name": "stuetzen-schalungstraeger",
+      "alt": "Stützen und Schalungsträger: Stahlrohrstützen, Vollwandträger, Gitterträger",
+      "unterschrift": "Stützen und Schalungsträger (Buch S. 177)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 8,
+      "box": [0.50, 0.08, 0.95, 0.50],
+      "name": "verspannen-schalung",
+      "alt": "Verspannen der Schalung mit Schalungsankern und Schraubverschlüssen",
+      "unterschrift": "Verspannen der Schalung (Buch S. 178)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 8,
+      "box": [0.50, 0.55, 0.95, 0.92],
+      "name": "deckenschalung-vollwandtraeger",
+      "alt": "Deckenschalung mit Vollwandträgern und Stahlrohrstützen",
+      "unterschrift": "Deckenschalung mit Vollwandträgern (Buch S. 178)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 9,
+      "box": [0.50, 0.08, 0.95, 0.42],
+      "name": "wandschalung",
+      "alt": "Wandschalung mit Bogenhölzern, Gurthölzern und Richtstützen",
+      "unterschrift": "Wandschalung (Buch S. 179)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.50, 0.08, 0.95, 0.50],
+      "name": "stuetzenschalung-holzliste",
+      "alt": "Stützenschalung mit Holzliste: Ansicht und Schnitt",
+      "unterschrift": "Stützenschalung mit Holzliste (Buch S. 180)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 10,
+      "box": [0.08, 0.55, 0.95, 0.92],
+      "name": "holzliste-tabelle",
+      "alt": "Holzliste für die Stützenschalung mit Stückzahlen, Querschnitten und Rohmengen",
+      "unterschrift": "Holzliste für Stützenschalung (Buch S. 180)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 13,
+      "box": [0.50, 0.08, 0.95, 0.50],
+      "name": "lebenszyklus-produkt",
+      "alt": "Lebenszyklus eines Produktes: Forschung, Produktion, Vermarktung, Nutzung, Beseitigung, Recycling",
+      "unterschrift": "Lebenszyklus eines Produktes (Buch S. 183)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.50, 0.08, 0.95, 0.48],
+      "name": "rohstoffverbrauch-baustoffe",
+      "alt": "Rohstoff- und Energieverbrauch bei der Herstellung verschiedener Baustoffe",
+      "unterschrift": "Rohstoff- und Energieverbrauch verschiedener Baustoffe (Buch S. 184)"
+    },
+    {
+      "pdf": "/Users/salimsakkali/Downloads/LF4 TEIL2.pdf",
+      "seite": 14,
+      "box": [0.50, 0.50, 0.95, 0.80],
+      "name": "treibhauseffekt-porenbeton",
+      "alt": "Treibhauseffekt einer Porenbetonwand über 6 Lebensstufen",
+      "unterschrift": "Treibhauseffekt Porenbetonwand (Buch S. 184)"
+    }
+  ]
+}
