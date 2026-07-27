@@ -3,403 +3,2124 @@
     "id": "lf06-001",
     "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "Bauphysik-Grundlagen (Wärmeleitfähigkeit)",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248",
     "konfidenz": "hoch",
-    "frage": "Was bedeutet ein kleiner λ-Wert (Wärmeleitfähigkeit) bei einem Dämmstoff?",
+    "frage": "Was ist Putz?",
     "optionen": [
-      "Er dämmt schlecht",
-      "Er dämmt gut",
-      "Er ist besonders schwer",
-      "Er ist besonders druckfest"
+      "Ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen für ebene Oberflächen",
+      "Ein reiner Zementkleber ohne Sand",
+      "Eine Kunststofffolie zur Wandbekleidung",
+      "Ein Anstrich aus Farbe"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "λ beschreibt, wie gut ein Stoff Wärme leitet. Bei Dämmstoffen gilt: je kleiner λ, desto weniger Wärme geht durch — also desto besser die Dämmwirkung."
+    "erklaerung": "Putz ist ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen zur Herstellung ebener Oberflächen. Der Putz wird von Hand oder mit Putzmaschinen auf Wand- und Deckenflächen aufgetragen.",
+    "bildDatei": "buch/lf06/putzmoertel-anwendung.webp",
+    "bildunterschrift": "Anwendung des Putzmörtels (Buch S. 248)"
   },
   {
     "id": "lf06-002",
     "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "Dämmstoff-Grundlagen (Brandverhalten)",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248",
     "konfidenz": "hoch",
-    "frage": "Welcher Dämmstoff ist nicht brennbar?",
+    "frage": "Wie heißen die untere und die obere Lage eines mehrlagigen Putzsystems?",
     "optionen": [
-      "EPS (Styropor)",
-      "XPS",
-      "Mineralwolle",
-      "PUR-Hartschaum"
+      "Untere Lage = Unterputz, obere Lage = Oberputz",
+      "Untere Lage = Deckputz, obere Lage = Grundputz",
+      "Beide heißen gleich",
+      "Untere Lage = Feinputz, obere Lage = Grobputz"
     ],
     "korrekt": [
-      2
+      0
     ],
-    "erklaerung": "Mineralwolle (Glas- und Steinwolle) ist nicht brennbar und wird deshalb dort eingesetzt, wo der Brandschutz entscheidend ist. EPS, XPS und PUR sind dagegen brennbar."
+    "erklaerung": "Putze können ein- oder mehrlagig aufgebaut werden. Die unteren Lagen heißen Unterputz, die oberste Lage Oberputz. Die Festigkeit muss dabei von innen nach außen abnehmen.",
+    "bildDatei": "buch/lf06/putzsystem-aufbau.webp",
+    "bildunterschrift": "Aufbau eines mehrlagigen Putzsystems (Buch S. 248)"
   },
   {
     "id": "lf06-003",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "Dämmstoff-Grundlagen (Einsatzbereiche)",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248",
     "konfidenz": "hoch",
-    "frage": "Welcher Dämmstoff eignet sich für druckbelastete und feuchte Bereiche, etwa das Umkehrdach?",
-    "optionen": [
-      "Mineralwolle",
-      "XPS",
-      "Zellulose",
-      "Hanf"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "XPS ist druckfest und nimmt praktisch kein Wasser auf. Deshalb wird es dort verwendet, wo Last und Feuchtigkeit zusammenkommen — Umkehrdach, Perimeterdämmung, unter Terrassen."
+    "text": "Bei einem mehrlagigen Putzsystem muss die {{Festigkeit}} von innen nach außen {{abnehmen}}. Der Oberputz ist also weicher als der Unterputz.",
+    "akzeptiert": {
+      "Festigkeit": [
+        "Festigkeit"
+      ],
+      "abnehmen": [
+        "abnehmen",
+        "kleiner werden",
+        "geringer werden"
+      ]
+    },
+    "erklaerung": "Merkregel ‚weich auf hart': Jede Putzlage muss weicher (weniger fest) sein als die darunterliegende. Ein zu harter Oberputz auf weichem Unterputz reißt, weil er die Zugspannungen aus dem Schwinden nicht aufnehmen kann.",
+    "bildDatei": "buch/lf06/putzsystem-aufbau.webp",
+    "bildunterschrift": "Aufbau eines mehrlagigen Putzsystems (Buch S. 248)"
   },
   {
     "id": "lf06-004",
     "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Baumetalle",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "frage": "Welche Patina bildet Kupfer im Laufe der Zeit?",
+    "frage": "Wozu dient eine Putzbewehrung (z. B. Glasfasergewebe)?",
     "optionen": [
-      "Eine blaugraue Patina",
-      "Eine grüne Patina",
-      "Eine rostbraune Schicht",
-      "Gar keine"
+      "Sie erhöht die Zugfestigkeit des Putzes und vermindert die Gefahr der Rissbildung",
+      "Sie färbt den Putz ein",
+      "Sie ersetzt den Unterputz",
+      "Sie dichtet den Putz gegen Wasser ab"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Kupfer bildet die charakteristische grüne Patina, Titanzink eine blaugraue. Beide Schichten schützen das Metall darunter und sind erwünscht — anders als Weißrost an der Blechrückseite."
+    "erklaerung": "Durch den Einbau einer Putzbewehrung (z. B. Glasfasergewebe im Unterputz) wird die Zugfestigkeit des Putzes erhöht und damit die Gefahr der Rissbildung vermindert. Sie ist besonders beim Materialwechsel und bei Wärmedämm-Verbundsystemen erforderlich.",
+    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
     "id": "lf06-005",
     "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Bauphysik Grundlagen",
-    "quelle": "Bauphysik-Grundlagen (sd-Wert)",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "frage": "Was beschreibt der sd-Wert einer Bahn?",
+    "frage": "Wozu dient ein Putzträger (z. B. Rippenstreckmetall)?",
     "optionen": [
-      "Wie viel Wärme sie durchlässt",
-      "Wie dick eine Luftschicht sein müsste, um den Wasserdampf genauso stark zu bremsen",
-      "Wie schwer sie ist",
-      "Wie hoch ihre Reißfestigkeit ist"
+      "Als Untergrund für den Putz bei nicht ausreichend tragfähigen Untergründen oder zum Überspannen von Wandschlitzen",
+      "Zum Einfärben des Putzes",
+      "Als Ersatz für den Oberputz",
+      "Zur Wärmedämmung"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Der sd-Wert ist die wasserdampfdiffusionsäquivalente Luftschichtdicke in Metern: sd = µ · d. Eine Dampfbremse hat einen großen sd-Wert, eine diffusionsoffene Unterdeckbahn einen kleinen."
+    "erklaerung": "Ein Putzträger (z. B. Rippenstreckmetall) kommt bei nicht ausreichend tragfähigen Untergründen und beim Überspannen von breiten Wandschlitzen zum Einsatz. Er wird befestigt und sorgt für dauerhaften Halt des Putzes.",
+    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
     "id": "lf06-006",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf06",
-    "thema": "Baumetalle",
-    "quelle": "Fachregeln Bauspenglerarbeiten (elektrochemische Spannungsreihe)",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "frage": "Welches Metall darf nicht oberhalb von Titanzink eingebaut werden?",
-    "optionen": [
-      "Aluminium",
-      "Edelstahl",
-      "Kupfer",
-      "Verzinkter Stahl"
-    ],
-    "korrekt": [
-      2
-    ],
-    "erklaerung": "Abfließendes Regenwasser schwemmt Kupferionen nach unten und zerstört dort das unedlere Titanzink. Umgekehrt — Zink über Kupfer — ist es unkritisch."
+    "text": "Die {{Putzbewehrung}} wird in den Putzmörtel eingebettet und erhöht seine Zugfestigkeit. Der {{Putzträger}} dagegen bildet den Untergrund, auf den der Putz aufgebracht wird.",
+    "akzeptiert": {
+      "Putzbewehrung": [
+        "Putzbewehrung"
+      ],
+      "Putzträger": [
+        "Putztraeger",
+        "Putzträger"
+      ]
+    },
+    "erklaerung": "Wichtiger Unterschied: Die Putzbewehrung liegt IM Putz (erhöht Zugfestigkeit, z. B. Glasfasergewebe). Der Putzträger liegt UNTER dem Putz (Untergrund, z. B. Rippenstreckmetall über Fachwerkposten).",
+    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
     "id": "lf06-007",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "Bauphysik-Grundlagen (Dämmwirkung)",
+    "thema": "Innenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "text": "Dämmstoffe wirken, weil sie viel ruhende {{Luft}} einschließen. Je {{kleiner}} die Wärmeleitfähigkeit λ ist, desto besser dämmen sie.",
-    "akzeptiert": {
-      "Luft": [
-        "Luft in Poren"
-      ],
-      "kleiner": [
-        "geringer",
-        "niedriger"
-      ]
-    },
-    "erklaerung": "Ruhende Luft leitet Wärme schlecht. Deshalb sind gute Dämmstoffe leicht und porig — und deshalb verlieren sie ihre Wirkung, wenn sie durchfeuchtet oder zusammengedrückt werden."
+    "frage": "Welche Aufgaben erfüllt ein Innenputz?",
+    "optionen": [
+      "Gestalten der Oberfläche, Ausgleichen von Unebenheiten und Verbessern des Raumklimas",
+      "Nur Wärmedämmung",
+      "Nur Wasserabdichtung",
+      "Nur Schallverstärkung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Innenputze erfüllen gestalterische und technische Aufgaben: die Oberfläche gestalten, Maß- und Winkelabweichungen des Rohbaus ausgleichen, einen ebenen Untergrund für Anstriche schaffen und das Raumklima verbessern (Feuchtigkeit aufnehmen und abgeben)."
   },
   {
     "id": "lf06-008",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Bauphysik Grundlagen",
-    "quelle": "Bauphysik-Grundlagen (sd-Wert)",
+    "thema": "Innenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249",
     "konfidenz": "hoch",
-    "text": "Der sd-Wert berechnet sich aus der Diffusionswiderstandszahl µ mal der {{Dicke}}. Eine Dampfbremse hat einen {{großen}} sd-Wert.",
-    "akzeptiert": {
-      "Dicke": [
-        "Schichtdicke",
-        "d"
-      ],
-      "großen": [
-        "grossen",
-        "hohen"
-      ]
-    },
-    "erklaerung": "sd = µ · d, angegeben in Metern. Große sd-Werte bremsen den Wasserdampf stark (Dampfbremse), kleine lassen ihn passieren (diffusionsoffene Unterdeckbahn)."
+    "frage": "Wofür werden Akustikputze verwendet?",
+    "optionen": [
+      "Zur Verbesserung der Raumakustik — sie absorbieren Schallwellen durch ihre poröse Struktur",
+      "Zur Wasserabdichtung im Keller",
+      "Als besonders harter Bodenbelag",
+      "Zum Verstärken des Schalls"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Akustikputze haben eine sehr offenporige Struktur und können Schallwellen absorbieren. Sie werden zur Verbesserung der Raumakustik eingesetzt, z. B. in Räumen mit starkem Nachhall."
   },
   {
     "id": "lf06-009",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Bauphysik Grundlagen",
-    "quelle": "Bauphysik-Grundlagen (sd = µ · d)",
+    "thema": "Außenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Dampfbremse ist {d} mm dick und hat eine Diffusionswiderstandszahl µ von {mu}. Wie groß ist ihr sd-Wert?",
-    "parameter": [
-      {
-        "name": "d",
-        "label": "Dicke",
-        "einheit": "mm",
-        "min": 0.2,
-        "max": 1,
-        "schritt": 0.1
-      },
-      {
-        "name": "mu",
-        "label": "µ-Wert",
-        "einheit": "",
-        "min": 10000,
-        "max": 100000,
-        "schritt": 10000
-      }
+    "frage": "Welche Aufgaben erfüllt ein Außenputz?",
+    "optionen": [
+      "Gestaltung der Fassade, Schutz der Gebäudehülle vor Witterung und Herstellen einer winddichten Hülle",
+      "Nur die Belichtung der Räume",
+      "Nur die Wärmeerzeugung",
+      "Nur die Statik des Gebäudes"
     ],
-    "schritte": [
-      {
-        "beschreibung": "sd = µ · Dicke in Metern = {mu} · {d} / 1000",
-        "formel": "mu * d / 1000",
-        "ergebnisName": "sd",
-        "einheit": "m"
-      }
+    "korrekt": [
+      0
     ],
-    "toleranzProzent": 2,
-    "erklaerung": "Wichtig: Die Dicke muss in Metern eingesetzt werden — deshalb die Division durch 1000. Der sd-Wert sagt, wie dick eine Luftschicht mit gleicher Bremswirkung wäre."
+    "erklaerung": "Außenputze sind unmittelbar den Witterungseinflüssen ausgesetzt. Aufgaben: Gestaltung der Fassade (Farbe, Putzweise), Schutz der Gebäudehülle vor Durchfeuchtung, Herstellen einer winddichten Hülle, Schutz vor mechanischen Einwirkungen und rissfreie Aufnahme von Spannungen.",
+    "bildDatei": "buch/lf06/aussenputz-beanspruchung.webp",
+    "bildunterschrift": "Beanspruchung des Außenputzes (Buch S. 249)"
   },
   {
     "id": "lf06-010",
-    "typ": "calc",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "Bauphysik-Grundlagen (R = d/λ umgestellt)",
+    "thema": "Außenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Wärmedurchlasswiderstand von R = {r} m²K/W soll erreicht werden. Der Dämmstoff hat eine Wärmeleitfähigkeit λ von {lambda} W/(m·K). Wie dick muss die Dämmschicht sein?",
-    "parameter": [
-      {
-        "name": "r",
-        "label": "geforderter R-Wert",
-        "einheit": "m²K/W",
-        "min": 3,
-        "max": 8,
-        "schritt": 0.5
-      },
-      {
-        "name": "lambda",
-        "label": "Wärmeleitfähigkeit",
-        "einheit": "W/(m·K)",
-        "min": 0.032,
-        "max": 0.045,
-        "schritt": 0.001
-      }
+    "frage": "Wozu dient ein Wärmedämmputz?",
+    "optionen": [
+      "Zur Verbesserung des Wärmeschutzes durch geringe Wärmeleitfähigkeit (Perlit oder Polystyrolkügelchen)",
+      "Zum Abdichten gegen Grundwasser",
+      "Zum Verstärken der Statik",
+      "Als Bodenbelag"
     ],
-    "schritte": [
-      {
-        "beschreibung": "Aus R = d / λ folgt d = R · λ = {r} · {lambda}",
-        "formel": "r * lambda",
-        "ergebnisName": "dicke",
-        "einheit": "m"
-      }
+    "korrekt": [
+      0
     ],
-    "toleranzProzent": 2,
-    "erklaerung": "Die Formel R = d/λ wird nach d umgestellt. Je schlechter der Dämmstoff (größeres λ), desto dicker muss die Schicht werden, um denselben R-Wert zu erreichen."
+    "erklaerung": "Wärmedämmputz hat durch den Zusatz von Perlit oder Polystyrolkügelchen eine geringe Wärmeleitfähigkeit. Er verbessert den Wärmeschutz einer Außenwand. Die Dämmputzdicke beträgt in der Regel mehrlagig ab 5 cm.",
+    "bildDatei": "buch/lf06/waermedaemmputz.webp",
+    "bildunterschrift": "Wärmedämmputz (Buch S. 249)"
   },
   {
     "id": "lf06-011",
-    "typ": "diagram",
+    "typ": "fachbegriff",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6; IVPU-Planungshilfen",
+    "thema": "Außenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249",
     "konfidenz": "hoch",
-    "frage": "Ein Sparren im Querschnitt mit drei möglichen Dämmlagen: Benenne die markierten Lagen.",
-    "svg": "<svg viewBox='0 0 380 204' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sparren mit drei möglichen Dämmlagen'><defs><pattern id='fg79-holz' width='9' height='9' patternUnits='userSpaceOnUse'><path d='M-2 11 L11 -2 M-2 -2 L11 11' stroke='currentColor' stroke-width='0.7' opacity='0.4'/></pattern><pattern id='fg79-daemmung' width='14' height='10' patternUnits='userSpaceOnUse'><path d='M0 5 Q3.5 0 7 5 Q10.5 10 14 5' fill='none' stroke='currentColor' stroke-width='0.9' opacity='0.55'/></pattern></defs><rect x='150' y='40' width='30' height='120' fill='url(#fg79-holz)' stroke='none'/><rect x='150' y='40' width='30' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='150' y='24' width='80' height='16' fill='url(#fg79-daemmung)' stroke='none'/><rect x='150' y='24' width='80' height='16' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='180' y='40' width='50' height='120' fill='url(#fg79-daemmung)' stroke='none'/><rect x='180' y='40' width='50' height='120' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='150' y='160' width='80' height='14' fill='url(#fg79-daemmung)' stroke='none'/><rect x='150' y='160' width='80' height='14' fill='none' stroke='currentColor' stroke-width='1.2'/><circle cx='250' cy='32' r='11' fill='#c07d4a'/><text x='250' y='36.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='250' cy='100' r='11' fill='#c07d4a'/><text x='250' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='250' cy='167' r='11' fill='#c07d4a'/><text x='250' y='171.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text></svg>",
-    "zuordnung": {
-      "aufsparren": "Aufsparrendämmung",
-      "zwischensparren": "Zwischensparrendämmung",
-      "untersparren": "Untersparrendämmung"
-    },
-    "erklaerung": "1 liegt oberhalb der Sparren (Aufsparrendämmung, wärmebrückenfrei), 2 zwischen den Sparren (Zwischensparrendämmung, am häufigsten) und 3 unterhalb (Untersparrendämmung, meist als Ergänzung)."
+    "begriff": "Sanierputz",
+    "definition": "Ein Putz mit hohem Luftporengehalt und hoher Wasserdampfdurchlässigkeit, der das Austrocknen von feuchtem und salzbelastetem Mauerwerk ermöglicht. Er nimmt Salze auf und verhindert einen Feuchtigkeitsnachschub an der Oberfläche.",
+    "bestandteile": [
+      "Sanier",
+      "putz"
+    ],
+    "erklaerung": "Der Sanierputz ‚saniert' feuchtes Mauerwerk: Er lässt die Feuchtigkeit verdunsten und speichert die Salze in seinen Poren, sodass die Oberfläche trocken bleibt.",
+    "bildDatei": "buch/lf06/sanierputz-wirkung.webp",
+    "bildunterschrift": "Wirkung des Sanierputzes (Buch S. 249)"
   },
   {
     "id": "lf06-012",
-    "typ": "draw",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6",
+    "thema": "Putzmörtel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "aufgabentext": "Zeichne einen Sparren im Querschnitt und trage die drei möglichen Dämmlagen ein. Beschrifte sie und markiere, welche Lage die Wärmebrücke über dem Sparren vermeidet.",
-    "vorgabeSvg": "<svg viewBox='0 0 380 188' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sparren im Querschnitt (Vorgabe)'><defs><pattern id='fg102-holz' width='9' height='9' patternUnits='userSpaceOnUse'><path d='M-2 11 L11 -2 M-2 -2 L11 11' stroke='currentColor' stroke-width='0.7' opacity='0.4'/></pattern></defs><rect x='150' y='40' width='30' height='120' fill='url(#fg102-holz)' stroke='none'/><rect x='150' y='40' width='30' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='140' y='104' fill='currentColor' font-size='11' text-anchor='end' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Sparren</text></svg>",
-    "loesungSvg": "<svg viewBox='0 0 380 202' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Musterlösung: drei Dämmlagen'><defs><pattern id='fg103-holz' width='9' height='9' patternUnits='userSpaceOnUse'><path d='M-2 11 L11 -2 M-2 -2 L11 11' stroke='currentColor' stroke-width='0.7' opacity='0.4'/></pattern><pattern id='fg103-daemmung' width='14' height='10' patternUnits='userSpaceOnUse'><path d='M0 5 Q3.5 0 7 5 Q10.5 10 14 5' fill='none' stroke='currentColor' stroke-width='0.9' opacity='0.55'/></pattern></defs><rect x='150' y='40' width='30' height='120' fill='url(#fg103-holz)' stroke='none'/><rect x='150' y='40' width='30' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='140' y='104' fill='currentColor' font-size='11' text-anchor='end' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Sparren</text><rect x='150' y='24' width='90' height='16' fill='url(#fg103-daemmung)' stroke='none'/><rect x='150' y='24' width='90' height='16' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='180' y='40' width='60' height='120' fill='url(#fg103-daemmung)' stroke='none'/><rect x='180' y='40' width='60' height='120' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='150' y='160' width='90' height='14' fill='url(#fg103-daemmung)' stroke='none'/><rect x='150' y='160' width='90' height='14' fill='none' stroke='currentColor' stroke-width='1.2'/><text x='246' y='34' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Aufsparren</text><text x='246' y='104' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Zwischensparren</text><text x='246' y='170' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Untersparren</text></svg>",
-    "schritte": [
-      "Den Sparren als stehendes Rechteck im Querschnitt zeichnen.",
-      "Zwischen die Sparren die Zwischensparrendämmung legen — sie füllt das Gefach aus.",
-      "Über die Sparren die Aufsparrendämmung als durchgehende Lage zeichnen.",
-      "Unter die Sparren die Untersparrendämmung ergänzen.",
-      "Markieren: Nur die Aufsparrendämmung läuft durchgehend über dem Holz — sie vermeidet die Wärmebrücke am Sparren."
+    "frage": "Aus welchen Bestandteilen besteht mineralisch gebundener Putzmörtel?",
+    "optionen": [
+      "Bindemittel, Gesteinskörnung, Anmachwasser und ggf. Zusatzmittel",
+      "Nur Bitumen und Sand",
+      "Kunstharz und Wasser allein",
+      "Nur Zement ohne Zuschlag"
     ],
-    "erklaerung": "Der Sparren selbst dämmt schlechter als der Dämmstoff — er ist eine Wärmebrücke. Nur die durchgehende Aufsparrendämmung überdeckt ihn vollständig. Deshalb wird sie oft mit einer Zwischensparrendämmung kombiniert."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Mineralisch gebundene Putzmörtel bestehen aus natürlich vorkommenden Bindemitteln (Kalk, Zement, Gips), der Gesteinskörnung, dem Anmachwasser und eventuell Zusatzmitteln zur Erzielung besonderer Eigenschaften.",
+    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
     "id": "lf06-013",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Bauphysik Grundlagen",
-    "quelle": "Bauphysik-Grundlagen",
+    "thema": "Putzmörtel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250",
     "konfidenz": "hoch",
-    "begriff": "Wärmeleitfähigkeit",
-    "definition": "Der λ-Wert in W/(m·K): Er gibt an, wie gut ein Stoff Wärme leitet. Bei Dämmstoffen gilt — je kleiner λ, desto besser die Dämmwirkung.",
-    "bestandteile": [
-      "Wärme",
-      "leit",
-      "fähigkeit"
+    "frage": "Welche Aufgabe hat das Bindemittel im Putzmörtel?",
+    "optionen": [
+      "Es verbindet die Bestandteile fest und dauerhaft miteinander",
+      "Es verringert die Festigkeit",
+      "Es färbt den Putz ein",
+      "Es macht den Putz porös"
     ],
-    "erklaerung": "Merke die drei Wortteile: Wärme-leit-fähigkeit — wie fähig der Stoff ist, Wärme zu leiten."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Das Bindemittel hat die Aufgabe, die Bestandteile fest und dauerhaft miteinander zu verbinden. Zu viel Bindemittel (‚fetter Mörtel') führt bei Kalk und Zement zum Schwinden, zu wenig (‚magerer Mörtel') mindert die Festigkeit.",
+    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
     "id": "lf06-014",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 6",
+    "thema": "Putzmörtel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250",
     "konfidenz": "hoch",
-    "begriff": "Wärmebrücke",
-    "definition": "Eine Stelle im Bauteil, an der deutlich mehr Wärme nach außen fließt als in der Fläche — zum Beispiel der Sparren zwischen der Dämmung. Dort wird es innen kälter, was Tauwasser und Schimmel begünstigt.",
-    "bestandteile": [
-      "Wärme",
-      "brücke"
+    "frage": "Welche Aufgabe hat das Anmachwasser im Putzmörtel?",
+    "optionen": [
+      "Es verringert die Reibung, macht den Mörtel verarbeitbar und ist für das Erhärten nötig",
+      "Es erhöht nur das Gewicht",
+      "Es färbt den Mörtel",
+      "Es hat keine Funktion"
     ],
-    "erklaerung": "Merke: Wärme-brücke — die Wärme nimmt dort die Abkürzung nach draußen."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Das Anmachwasser verringert die Reibung zwischen den Bindemittelteilchen und macht den Mörtel plastisch und verarbeitbar. Darüber hinaus ist es beim Erhärten (chemische Reaktion) nötig. Die vorgeschriebene Anmachwassermenge ist einzuhalten."
   },
   {
     "id": "lf06-015",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf06",
-    "thema": "Abdichtungsstoffe",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Putzmörtel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "frage": "Welches Material gehört zu den Kunststoff-Dachbahnen?",
-    "optionen": [
-      "Bitumenschweißbahn",
-      "PVC-Bahn",
-      "Tondachziegel",
-      "Kalksandstein"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Zu den Kunststoff-Dachbahnen zählen PVC, FPO/TPO und EPDM. Bitumenbahnen sind eine eigene Gruppe (aus Bitumen mit Trägereinlage). Ziegel und Stein sind keine Abdichtungsbahnen."
+    "text": "Zu den mineralisch gebundenen Putzmörteln zählen {{Kalkmörtel}}, Kalkzementmörtel, {{Zementmörtel}} und Gipsmörtel.",
+    "akzeptiert": {
+      "Kalkmörtel": [
+        "Kalkmoertel",
+        "Kalkmörtel"
+      ],
+      "Zementmörtel": [
+        "Zementmoertel",
+        "Zementmörtel"
+      ]
+    },
+    "erklaerung": "Mineralisch gebundene Putzmörtel: Kalkmörtel (gut verarbeitbar, für Innenputz), Kalkzementmörtel (fester, für Sockel und Außenputz), Zementmörtel (sehr fest, für Feuchträume), Gips-/Gipskalkmörtel (für Innenputz).",
+    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
     "id": "lf06-016",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Abdichtungsstoffe",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Putzmörtel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250",
     "konfidenz": "hoch",
-    "begriff": "Bitumen",
-    "definition": "Ein zähflüssiges bis festes Bindemittel aus der Erdöl-Destillation. Auf eine Trägereinlage (z. B. Polyestervlies) aufgebracht ergibt es die Bitumen-Dachbahn, die verschweißt oder verklebt wird.",
-    "bestandteile": [
-      "Bi",
-      "tumen"
+    "frage": "Wodurch erhärtet organisch gebundener Putz (Kunstharzputz)?",
+    "optionen": [
+      "Durch physikalische Reaktion: Verdunsten des Wassers, die Bindemittel vernetzen sich zu einem dichten Film",
+      "Durch Hydratation wie Zement",
+      "Durch Brennen bei hoher Temperatur",
+      "Er erhärtet gar nicht"
     ],
-    "erklaerung": "Bitumen ist wasserabweisend und klebrig - ideal zum Abdichten. Modifiziert mit Kunststoff (APP oder SBS) wird es elastischer und alterungsbeständiger."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei organisch gebundenen Putzen (Dispersionsputz, Kunstharzputz) verdunsten beim Trocknen die Wassertröpfchen, die organischen Bindemittel vernetzen sich und bilden einen dichten Film. Das ist eine physikalische Reaktion (im Gegensatz zur chemischen Hydratation mineralischer Putze).",
+    "bildDatei": "buch/lf06/organische-putze-tabelle.webp",
+    "bildunterschrift": "Organisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
     "id": "lf06-017",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Dämmstoffe",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Bindemittel Gips",
+    "quelle": "Grundstufe Bautechnik, Buch S. 251",
     "konfidenz": "hoch",
-    "text": "Die {{Wärmeleitfähigkeit}} eines Dämmstoffs wird mit dem Formelzeichen Lambda angegeben; je {{kleiner}} sie ist, desto besser dämmt der Stoff.",
-    "akzeptiert": {
-      "Wärmeleitfähigkeit": [
-        "waermeleitfaehigkeit",
-        "Waermeleitfaehigkeit",
-        "Lambda",
-        "lambda"
-      ],
-      "kleiner": [
-        "kleiner",
-        "geringer",
-        "niedriger"
-      ]
-    },
-    "erklaerung": "Lambda sagt, wie gut ein Stoff Wärme leitet. Ein kleiner Wert bedeutet wenig Wärmeverlust - also gute Dämmung."
+    "frage": "Was passiert beim Brennen von Gipsstein?",
+    "optionen": [
+      "Das Kristallwasser wird ausgetrieben (als Wasserdampf), es entsteht Stuckgips",
+      "Der Gips wird flüssig",
+      "Der Gips nimmt Wasser auf",
+      "Es passiert nichts"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim Brennen von Gipsstein (CaSO₄·2H₂O) bei etwa 180 °C wird das kristallin gebundene Wasser als Wasserdampf ausgetrieben. Es entsteht Stuckgips (Calciumsulfat-Halbhydrat, CaSO₄·½H₂O).",
+    "bildDatei": "buch/lf06/kreislauf-stuckgips.webp",
+    "bildunterschrift": "Kreislauf des Stuckgipses (Buch S. 251)"
   },
   {
     "id": "lf06-018",
-    "typ": "mc",
+    "typ": "fachbegriff",
     "lernfeld": "lf06",
-    "thema": "Verlegepläne",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Bindemittel Gips",
+    "quelle": "Grundstufe Bautechnik, Buch S. 251 (Aufgaben S. 253)",
     "konfidenz": "hoch",
-    "frage": "Wozu dient ein Verlegeplan?",
-    "optionen": [
-      "Er zeigt die Kosten",
-      "Er legt fest, wie und in welcher Reihenfolge Platten oder Bahnen angeordnet werden",
-      "Er ersetzt die Statik",
-      "Er ist nur Dekoration"
+    "begriff": "Stuckgips",
+    "definition": "Der bei etwa 180 °C gebrannte, gemahlene Gips (Calciumsulfat-Halbhydrat). Beim Anmachen mit Wasser bindet er ab: Es bildet sich wieder Gipskristall (CaSO₄·2H₂O), das Volumen vergrößert sich leicht (1–2 %). Er erhärtet schnell.",
+    "bestandteile": [
+      "Stuck",
+      "gips"
     ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Der Verlegeplan gibt die Anordnung, Reihenfolge und Maße der Deckung oder Bekleidung vor. So passt alles zusammen, Verschnitt wird minimiert und der Ablauf ist klar."
+    "erklaerung": "Kreislauf: Gipsstein → Brennen (180 °C) → Stuckgips → Anmachen mit Wasser → Erhärten → wieder Gipskristall. Stuckgips erhärtet schnell und dehnt sich beim Abbinden leicht aus.",
+    "bildDatei": "buch/lf06/kreislauf-stuckgips.webp",
+    "bildunterschrift": "Kreislauf des Stuckgipses (Buch S. 251)"
   },
   {
     "id": "lf06-019",
-    "typ": "fachbegriff",
+    "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Bauphysik Grundlagen",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Bindemittel Gips",
+    "quelle": "Grundstufe Bautechnik, Buch S. 251",
     "konfidenz": "hoch",
-    "begriff": "sd-Wert",
-    "definition": "Die wasserdampf-diffusionsäquivalente Luftschichtdicke. Sie sagt, wie stark eine Schicht den Durchgang von Wasserdampf bremst - ein hoher sd-Wert bremst stark (Dampfsperre), ein niedriger lässt Dampf durch (diffusionsoffen).",
-    "bestandteile": [
-      "sd",
-      "Wert"
+    "frage": "Wodurch unterscheidet sich Putzgips von Stuckgips?",
+    "optionen": [
+      "Putzgips wird bei höherer Temperatur (ca. 700 °C) gebrannt, erhärtet langsamer und bleibt länger verarbeitbar",
+      "Putzgips wird gar nicht gebrannt",
+      "Putzgips ist wasserlöslich",
+      "Es gibt keinen Unterschied"
     ],
-    "erklaerung": "Der sd-Wert entscheidet, ob eine Bahn als Dampfbremse (innen) oder als diffusionsoffene Unterdeckbahn (außen) taugt."
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Putzgips wird bei etwa 700 °C gebrannt und besteht aus unterschiedlich stark entwässerten Anteilen. Deshalb erhärtet er träger als Stuckgips und bleibt länger verarbeitbar — ideal für das Verputzen von Wänden und Decken.",
+    "bildDatei": "buch/lf06/gipstrockenmoertel-tabelle.webp",
+    "bildunterschrift": "Gipstrockenmörtel (Buch S. 251)"
   },
   {
     "id": "lf06-020",
     "typ": "mc",
     "lernfeld": "lf06",
-    "thema": "Baumetalle",
-    "quelle": "KMK-Rahmenlehrplan LF 6; vdd/Dämmstoff-Grundlagen (verifiziert)",
+    "thema": "Bindemittel Gips",
+    "quelle": "Grundstufe Bautechnik, Buch S. 251",
     "konfidenz": "hoch",
-    "frage": "Was bildet sich auf Kupfer und Zink an der Luft und schützt das Metall?",
+    "frage": "Warum haben Gipsputze gute brandschützende Eigenschaften?",
     "optionen": [
-      "Rost, der es zerstört",
-      "Eine schützende Patina (Deckschicht)",
-      "Nichts",
-      "Eine Farbschicht aus Lack"
+      "Weil das gebundene Kristallwasser (bis 20 %) im Brandfall verdampft und Hitze bindet",
+      "Weil Gips brennbar ist",
+      "Weil Gips Wasser abweist",
+      "Weil Gips besonders hart ist"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Kupfer und Zink bilden an der Luft eine festhaftende Patina (bei Kupfer grünlich, bei Zink grau). Diese Deckschicht schützt das Metall vor weiterer Korrosion - anders als Rost bei ungeschütztem Stahl."
+    "erklaerung": "Gipsputze enthalten gebundenes Kristallwasser (bis 20 %). Im Brandfall verdampft dieses Wasser und bindet dabei Wärme (Hitze). Solange das Wasser verdampft, bleibt die Oberfläche relativ kühl — deshalb ist Gips ein guter Brandschutzstoff."
+  },
+  {
+    "id": "lf06-021",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 252 (Aufgaben S. 253)",
+    "konfidenz": "hoch",
+    "frage": "Was muss vor dem Auftragen des Putzes geprüft werden?",
+    "optionen": [
+      "Der Putzgrund muss sauber, tragfähig, trocken, frostfrei, saugfähig und rau sein",
+      "Nur die Farbe der Wand",
+      "Nur die Raumtemperatur",
+      "Nichts, man kann sofort verputzen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die notwendige Putzhaftung wird nur erreicht, wenn der Putzgrund sauber, tragfähig, trocken, frostfrei, saugfähig und rau ist. Anhaftende Staub- und Schmutzschichten müssen vor der Ausführung entfernt werden.",
+    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
+  },
+  {
+    "id": "lf06-022",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 252 (Aufgaben S. 253)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient ein Spritzbewurf (Haftbrücke) auf glattem, schwach saugendem Untergrund?",
+    "optionen": [
+      "Er schafft eine raue, griffige Oberfläche, damit der Putz besser haftet",
+      "Er dichtet die Wand ab",
+      "Er ersetzt den Oberputz",
+      "Er glättet die Oberfläche"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei schwach saugenden, glatten Oberflächen (z. B. Kalksandstein oder Beton) wird als Putzgrundvorbehandlung eine Haftbrücke aufgebracht oder ein Spritzbewurf ausgeführt. So entsteht eine raue und griffige Oberfläche, an der der Putz gut haftet.",
+    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
+  },
+  {
+    "id": "lf06-023",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 252",
+    "konfidenz": "hoch",
+    "frage": "Wozu dienen Putzprofile (Kantenprofile)?",
+    "optionen": [
+      "Zur rationellen Herstellung ebener Flächen und zum Schutz von Kanten",
+      "Zur Wärmedämmung",
+      "Zum Einfärben des Putzes",
+      "Zur Wasserabdichtung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Putzprofile werden an Ecken und Kanten angebracht. Sie ermöglichen die rationelle Herstellung ebener Flächen (Setzen von Putzlehren) und schützen die Kanten. An Ecken werden Eckprofile (Kantenprofile) angebracht."
+  },
+  {
+    "id": "lf06-024",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 253 (Aufgaben S. 253)",
+    "konfidenz": "hoch",
+    "text": "Als Faustregel für die Trocknungszeit eines Putzes gilt: {{1}} Tag pro mm Schichtdicke. Ein 12 mm dicker Gipsputz braucht also etwa {{12}} Tage.",
+    "akzeptiert": {
+      "1": [
+        "1",
+        "ein",
+        "einen"
+      ],
+      "12": [
+        "12",
+        "zwölf",
+        "zwoelf"
+      ]
+    },
+    "erklaerung": "Faustregel: 1 Tag pro mm Schichtdicke als Trocknungs- bzw. Standzeit vor der nächsten Lage oder Beschichtung. Ein 12 mm dicker Gipsputz benötigt also etwa 12 Tage Trocknungszeit."
+  },
+  {
+    "id": "lf06-025",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 253",
+    "konfidenz": "hoch",
+    "text": "Die Schichtdicke eines Innenputzes hat sich bei etwa {{10}} mm bewährt. Die mittlere Putzdicke eines Außenputzsystems muss mindestens {{20}} mm betragen.",
+    "akzeptiert": {
+      "10": [
+        "10"
+      ],
+      "20": [
+        "20"
+      ]
+    },
+    "erklaerung": "Innenputze werden mit einer Schichtdicke von etwa 10 mm ausgeführt (ein- oder zweilagig). Außenputze sind meist zweilagig; die mittlere Putzdicke des zweischichtigen Systems muss mindestens 20 mm betragen."
+  },
+  {
+    "id": "lf06-026",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 252 (Aufgaben S. 253)",
+    "konfidenz": "hoch",
+    "frage": "Bei welcher Temperatur darf mineralisch gebundener Putz nicht mehr verarbeitet werden?",
+    "optionen": [
+      "Unter +5 °C (bei organisch gebundenen Putzen unter +8 °C)",
+      "Unter +20 °C",
+      "Über +10 °C",
+      "Temperatur spielt keine Rolle"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Es ist darauf zu achten, dass die Bauteil- und Umgebungstemperatur während des Auftragens und der Erhärtung nicht unter +5 °C liegt (bei organisch gebundenen Putzen nicht unter +8 °C). Bei Frost kann der Putz nicht richtig erhärten."
+  },
+  {
+    "id": "lf06-027",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "Was ist Wandtrockenputz?",
+    "optionen": [
+      "Die Bekleidung von Wänden mit Gipsplatten statt Putzfrischmörtel (Nassputz)",
+      "Ein besonders schnell trocknender Nassputz",
+      "Ein Estrich für den Boden",
+      "Eine Farbe für die Fassade"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei Wandtrockenputz werden Wände mit Gipsplatten bekleidet statt mit Putzfrischmörtel (Nassputz). So entfallen Trocknungszeiten. Die Befestigung erfolgt direkt an der Wandfläche (Ansetzmörtel) oder auf einer Unterkonstruktion (Vorsatzschale).",
+    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+  },
+  {
+    "id": "lf06-028",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "Welcher Gipsplattentyp (nach Kartonummantelung) ist der Standard-Bauplatte für Wandtrockenputz?",
+    "optionen": [
+      "Typ A (GKB)",
+      "Typ F (GKF, Feuerschutz)",
+      "Typ H (GKBI, imprägniert)",
+      "Typ E (Außenwandelemente)"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Gipsplatte Typ A (GKB) ist die Standard-Bauplatte für allgemeine Anwendungen ohne besondere Anforderungen an Schall- und Brandschutz. Sie ist der Regelfall beim Wandtrockenputz.",
+    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+  },
+  {
+    "id": "lf06-029",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "text": "Gipsplatte Typ {{F}} (GKF) ist die Feuerschutzplatte, Typ {{H}} (GKBI) ist imprägniert mit reduzierter Wasseraufnahme für Feuchträume.",
+    "akzeptiert": {
+      "F": [
+        "F"
+      ],
+      "H": [
+        "H"
+      ]
+    },
+    "erklaerung": "Typ A = Standard, Typ H = imprägniert (Feuchträume, z. B. Bäder), Typ F = Feuerschutz (verbesserter Gefügezusammenhalt bei Brand), Typ E = Außenwandelemente, Typ P = Putzträger, Typ D = definierte Dichte, Typ R = erhöhte Festigkeit, Typ I = erhöhte Oberflächenhärte.",
+    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+  },
+  {
+    "id": "lf06-030",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "In welche Baustoffklasse fallen Gipsplatten hinsichtlich Brennbarkeit?",
+    "optionen": [
+      "Sie sind nichtbrennbar (Baustoffklasse A2)",
+      "Leicht entflammbar (B3)",
+      "Normal entflammbar (B2)",
+      "Sie brennen sehr gut"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Alle Gipsplatten sind nichtbrennbar (Baustoffklasse A2). Das gebundene Kristallwasser wirkt im Brandfall wärmebindend und macht Gips zu einem guten Brandschutzbaustoff.",
+    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+  },
+  {
+    "id": "lf06-031",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 255",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Gipsplatten beim Ansetzen an der Wand befestigt?",
+    "optionen": [
+      "Mit Ansetzmörtel-Batzen im Abstand von etwa 25 cm und einer durchgehenden Randbatzenreihe",
+      "Nur mit einem einzigen Nagel",
+      "Sie werden nur angelehnt",
+      "Mit Klebeband"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der Ansetzmörtel wird in Batzen aufgebracht: durchlaufend am Rand, in der Plattenmitte und Batzen im Abstand von etwa 25 cm am Rand und 35 cm in der Reihe. Die Platten werden lot- und fluchtgerecht ausgerichtet.",
+    "bildDatei": "buch/lf06/kleberauftrag-plattendicke.webp",
+    "bildunterschrift": "Kleberauftrag bei Gipsplatten (Buch S. 255)"
+  },
+  {
+    "id": "lf06-032",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257",
+    "konfidenz": "hoch",
+    "frage": "Was ist ein Estrich?",
+    "optionen": [
+      "Eine auf einem tragenden Untergrund oder auf einer Trenn-/Dämmschicht hergestellte Schicht, die direkt nutzfähig ist oder einen Belag aufnimmt",
+      "Ein Anstrich für die Wand",
+      "Eine Dachabdichtung",
+      "Ein Mauerstein"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Estrich ist eine auf einem tragenden Untergrund oder auf einer zwischenliegenden Trenn- oder Dämmschicht hergestellte Schicht, die unmittelbar nutzfähig ist oder mit einem Belag versehen werden kann.",
+    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
+  },
+  {
+    "id": "lf06-033",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgaben hat ein Estrich?",
+    "optionen": [
+      "Ebenen Untergrund schaffen, Lasten aufnehmen/verteilen, Tritt-/Wärmeschutz und ggf. Gefälle",
+      "Nur die Fassade gestalten",
+      "Nur Regenwasser ableiten",
+      "Nur Wärme erzeugen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Aufgaben des Estrichs: einen ebenen Untergrund schaffen, Lasten aufnehmen und verteilen, Trittschallschutz und Wärmeschutz zwischen den Geschossen, evtl. ein Gefälle ausbilden und ggf. Heizungen aufnehmen (Heizestrich)."
+  },
+  {
+    "id": "lf06-034",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Wodurch unterscheidet sich ein Estrich auf Dämmschicht (schwimmender Estrich) von einem Verbundestrich?",
+    "optionen": [
+      "Der schwimmende Estrich liegt auf einer Dämmschicht ohne Verbindung zu den angrenzenden Bauteilen, der Verbundestrich ist fest mit dem Untergrund verbunden",
+      "Beide sind identisch",
+      "Der Verbundestrich schwimmt auf Wasser",
+      "Der schwimmende Estrich ist immer dünner als 1 cm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Estriche auf Dämmschicht (S, schwimmender Estrich) verbessern den Trittschall- und Wärmeschutz. Sie liegen frei beweglich auf der Dämmschicht und dürfen keine Verbindung zu Wänden und Rohren haben. Der Verbundestrich (V) ist dagegen fest mit dem Unterboden verbunden.",
+    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
+  },
+  {
+    "id": "lf06-035",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257",
+    "konfidenz": "hoch",
+    "text": "Nach der Konstruktion unterscheidet man drei Estricharten: {{Verbundestrich}}, Estrich auf {{Trennschicht}} und Estrich auf {{Dämmschicht}} (schwimmender Estrich).",
+    "akzeptiert": {
+      "Verbundestrich": [
+        "Verbundestrich"
+      ],
+      "Trennschicht": [
+        "Trennschicht"
+      ],
+      "Dämmschicht": [
+        "Daemmschicht",
+        "Dämmschicht"
+      ]
+    },
+    "erklaerung": "Verbundestrich (V) = fest mit dem Untergrund verbunden. Estrich auf Trennschicht (T) = durch Pappen/Folien getrennt. Estrich auf Dämmschicht (S) = schwimmend auf einer Dämmschicht (Trittschall-/Wärmeschutz).",
+    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
+  },
+  {
+    "id": "lf06-036",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257",
+    "konfidenz": "hoch",
+    "frage": "Was bedeutet das Kurzzeichen CT bei einem Estrich?",
+    "optionen": [
+      "Zementestrich (engl. cementitious screed)",
+      "Calciumsulfatestrich",
+      "Kunstharzestrich",
+      "Gussasphaltestrich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "CT = Zementestrich (cementitious screed). Weitere Kurzzeichen: CA = Calciumsulfatestrich, SR = Kunstharzestrich (synthetic resin), MA = Magnesiaestrich, AS = Gussasphaltestrich (mastic asphalt).",
+    "bildDatei": "buch/lf06/estricharten-bindemittel.webp",
+    "bildunterschrift": "Estricharten nach Bindemittel (Buch S. 257)"
+  },
+  {
+    "id": "lf06-037",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257",
+    "konfidenz": "hoch",
+    "text": "Die Estrichbezeichnung CT-C25-F4-T35 bedeutet: {{Zementestrich}}, Druckfestigkeitsklasse C25, Biegezugfestigkeitsklasse F4, auf {{Trennschicht}} mit {{35}} mm Schichtdicke.",
+    "akzeptiert": {
+      "Zementestrich": [
+        "Zementestrich"
+      ],
+      "Trennschicht": [
+        "Trennschicht"
+      ],
+      "35": [
+        "35"
+      ]
+    },
+    "erklaerung": "CT = Zementestrich, C25 = Druckfestigkeit 25 N/mm², F4 = Biegezugfestigkeit 4 N/mm², T = auf Trennschicht, 35 = Schichtdicke in mm."
+  },
+  {
+    "id": "lf06-038",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258",
+    "konfidenz": "hoch",
+    "frage": "Welche zwei Festigkeiten werden bei Estrichen angegeben?",
+    "optionen": [
+      "Druckfestigkeit (C) und Biegezugfestigkeit (F)",
+      "Nur die Zugfestigkeit",
+      "Wärmeleitfähigkeit und Dichte",
+      "Nur die Härte"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Das mechanische Verhalten von Estrichen wird durch Druckfestigkeit (Klassen C5 bis C80) und Biegezugfestigkeit (Klassen F1 bis F50) angegeben. Beide Klassen richten sich nach der geplanten Nutzung.",
+    "bildDatei": "buch/lf06/estrich-festigkeitsklassen.webp",
+    "bildunterschrift": "Festigkeitsklassen für Estrichmörtel (Buch S. 258)"
+  },
+  {
+    "id": "lf06-039",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Warum werden große Zementestrichflächen durch Fugen unterteilt?",
+    "optionen": [
+      "Um Rissbildung durch Schwinden und Temperaturänderungen zu vermeiden",
+      "Damit der Estrich schneller trocknet",
+      "Aus rein optischen Gründen",
+      "Damit weniger Estrich benötigt wird"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Durch Schwinden und Temperatureinflüsse sind Estriche Längenänderungen unterworfen, die zu Rissen führen können. Deshalb werden Estrichflächen durch Dehn- und Scheinfugen unterteilt (ganze Estrichdicke durchtrennt). Feldgröße bei Zementestrich max. 20–30 m².",
+    "bildDatei": "buch/lf06/estrich-fugen.webp",
+    "bildunterschrift": "Fugenausbildung – Vermeidung von Rissen (Buch S. 259)"
+  },
+  {
+    "id": "lf06-040",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch ist die Mindestdruckfestigkeit eines Zementestrichs als Verbundestrich?",
+    "optionen": [
+      "C25 (25 N/mm²)",
+      "C5 (5 N/mm²)",
+      "C80 (80 N/mm²)",
+      "F1 (1 N/mm²)"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der Zementestrich als Verbundestrich muss mindestens die Druckfestigkeit C25 (25 N/mm²) haben. Die Druckfestigkeitsklassen reichen von C5 bis C80, die Biegezugfestigkeitsklassen von F1 bis F50.",
+    "bildDatei": "buch/lf06/estrich-festigkeitsklassen.webp",
+    "bildunterschrift": "Festigkeitsklassen für Estrichmörtel (Buch S. 258)"
+  },
+  {
+    "id": "lf06-041",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 259",
+    "konfidenz": "hoch",
+    "begriff": "Calciumsulfatfließestrich",
+    "definition": "Ein selbstnivellierender Fließestrich auf Calciumsulfatbasis (CAF). Der trockene Fertigmörtel wird auf der Baustelle mit Wasser angerührt und gepumpt. Er nivelliert sich selbst und wird als Heizestrich (‚Fußwärme') eingesetzt, darf aber keiner dauernden Feuchtigkeit ausgesetzt werden.",
+    "bestandteile": [
+      "Calcium",
+      "sulfat",
+      "fließ",
+      "estrich"
+    ],
+    "erklaerung": "CAF ist ein selbstverlaufender Estrich für Fußbodenheizungen. Vorteil: schnelle, ebene Verlegung. Nachteil: nicht dauerhaft feuchtebeständig, daher nur im Innenbereich."
+  },
+  {
+    "id": "lf06-042",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Dämmstoffe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Welche Eigenschaften müssen Dämmstoffe unter Estrichen erfüllen?",
+    "optionen": [
+      "Geringe Wärmeleitfähigkeit, Feuchte-/Fäulnisbeständigkeit und Elastizität für den Schallschutz",
+      "Hohe Wärmeleitfähigkeit",
+      "Hohe Druckfestigkeit wie Beton",
+      "Sie müssen wasserlöslich sein"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dämmstoffe unter Estrichen brauchen: geringe Wärmeleitfähigkeit (hoher Luftporenanteil), Feuchte- und Fäulnisbeständigkeit sowie Elastizität für den Schallschutz. Beispiele: Mineralwolle, Polystyrol, Holzwolle-Mehrschichtplatten.",
+    "bildDatei": "buch/lf06/daemmstoffe-tabelle.webp",
+    "bildunterschrift": "Dämmstoffe und ihre Verwendung (Buch S. 258)"
+  },
+  {
+    "id": "lf06-043",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fußböden aus Ziegeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 260 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Welche Ausführungsart eignet sich für Ziegel-Fußböden mit geringer Beanspruchung?",
+    "optionen": [
+      "Flachschichtpflaster (Ziegel liegen flach)",
+      "Rollschichtpflaster (Ziegel hochkant)",
+      "Nur Beton",
+      "Gussasphalt"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Fußböden aus Ziegeln gibt es in zwei Ausführungsarten: Flachschichtpflaster (Ziegel flach verlegt) für Fußböden mit geringer Beanspruchung, und Rollschichtpflaster (Ziegel hochkant) für stärker beanspruchte Fußböden.",
+    "bildDatei": "buch/lf06/ziegel-flachschichtpflaster.webp",
+    "bildunterschrift": "Einfaches Ziegel-Flachschichtpflaster (Buch S. 260)"
+  },
+  {
+    "id": "lf06-044",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fußböden aus Ziegeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 260",
+    "konfidenz": "hoch",
+    "frage": "Welche Verlegearten gibt es beim Ziegel-Flachschichtpflaster?",
+    "optionen": [
+      "Schachbrett, Ellenbogen, stehende Rolle und diagonale Verlegung",
+      "Nur waagerecht",
+      "Nur Kreuzverband",
+      "Nur einzelne Steine"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim Ziegelpflaster gibt es verschiedene Verlegearten: Schachbrett(muster), Ellenbogen(verband), stehende Rolle und diagonale Verlegung. Der Ziegel wird nach der Schnur auf ein Sandbett verlegt und mit Zementmörtel verfugt.",
+    "bildDatei": "buch/lf06/verlegearten-ziegelpflaster.webp",
+    "bildunterschrift": "Verlegearten für Ziegelpflaster (Buch S. 260)"
+  },
+  {
+    "id": "lf06-045",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fußböden",
+    "quelle": "Grundstufe Bautechnik, Buch S. 260 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Welche Anforderungen werden an die Fußböden beheizter Aufenthaltsräume gestellt?",
+    "optionen": [
+      "Wärme- und Schallschutz sowie ausreichender Feuchtigkeitsschutz",
+      "Nur eine schöne Optik",
+      "Nur Frostbeständigkeit",
+      "Keine besonderen Anforderungen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Fußböden in Aufenthaltsräumen müssen ausreichenden Feuchtigkeits-, Wärme- und Schallschutz bieten. Im Untergeschoss sind sie gegen aufsteigende Bodenfeuchte durch Abdichtungen zu schützen, zur Wärmedämmung wird der Estrich schwimmend eingebaut.",
+    "bildDatei": "buch/lf06/fussboeden-aufbau.webp",
+    "bildunterschrift": "Aufbau verschiedener Fußböden (Buch S. 261)"
+  },
+  {
+    "id": "lf06-046",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Oberfläche spricht man von einer Platte statt einer Fliese?",
+    "optionen": [
+      "Über 90 cm² Oberfläche = Platte, kleiner = Fliese",
+      "Über 10 cm² = Platte",
+      "Über 1000 cm² = Platte",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Genormte Fliesen und Platten haben eine Oberfläche von etwa 90 cm². Ist die Fläche kleiner oder gleich 90 cm², spricht man von einer Fliese; ist sie größer, von einer Platte. Sehr kleine Formate heißen Mosaik, längliche im Verhältnis über 3:1 Riemchen.",
+    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
+  },
+  {
+    "id": "lf06-047",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "begriff": "Mosaik",
+    "definition": "Sehr kleine keramische Fliesen mit einer Oberfläche kleiner als 90 cm². Sie werden meist auf Netzen oder Papier vorgefertigt geliefert und ermöglichen die Gestaltung gebogener oder gemusterter Flächen.",
+    "bestandteile": [
+      "Mosaik"
+    ],
+    "erklaerung": "Mosaik = besonders kleine Fliesen (< 90 cm²). Sie eignen sich für runde Flächen (z. B. Säulen, Becken) und Muster. Riemchen dagegen sind längliche Fliesen (Verhältnis > 3:1)."
+  },
+  {
+    "id": "lf06-048",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "frage": "Wodurch unterscheiden sich Feinkeramik und Grobkeramik?",
+    "optionen": [
+      "Feinkeramik besteht aus fein aufbereiteten Rohstoffen, Grobkeramik aus gröberen",
+      "Feinkeramik ist immer dicker",
+      "Grobkeramik ist nur für Wände",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Keramische Erzeugnisse unterscheiden sich nach der Rohstoffmischung: Feinkeramik (z. B. keramische Fliesen) besteht aus fein aufbereiteten Rohstoffen, Grobkeramik (z. B. Spaltplatten, Klinker) aus weniger fein aufbereiteten, gröberen Rohstoffen.",
+    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
+  },
+  {
+    "id": "lf06-049",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262",
+    "konfidenz": "hoch",
+    "frage": "Was unterscheidet Verfahren A von Verfahren B bei der Herstellung keramischer Fliesen?",
+    "optionen": [
+      "Verfahren A = stranggepresst, Verfahren B = trocken gepresst",
+      "Verfahren A ist immer teurer",
+      "Verfahren B verwendet kein Wasser",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach Verfahren A werden stranggepresste Fliesen und Platten hergestellt, nach Verfahren B trocken gepresste. Nach der Wasseraufnahme werden sie in Gruppen (I, II, III) eingeteilt.",
+    "bildDatei": "buch/lf06/keramik-wasseraufnahme-gruppen.webp",
+    "bildunterschrift": "Keramische Fliesen nach Wasseraufnahme (Buch S. 262)"
+  },
+  {
+    "id": "lf06-050",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "text": "Fliesen werden nach ihrer Wasseraufnahme in Gruppen eingeteilt: Gruppe {{I}} nimmt bis 3 % Wasser auf, Gruppe III über {{10}} %. Je geringer die Wasseraufnahme, desto {{frostbeständiger}} die Fliese.",
+    "akzeptiert": {
+      "I": [
+        "I",
+        "1"
+      ],
+      "10": [
+        "10"
+      ],
+      "frostbeständiger": [
+        "frostbestaendiger",
+        "frostbeständiger",
+        "frostbestaendig",
+        "frostbeständig"
+      ]
+    },
+    "erklaerung": "Wasseraufnahmegruppen: Gruppe I ≤ 3 % (dicht, frostbeständig), Gruppe II 3–10 % (mittel), Gruppe III > 10 % (porös). Je geringer die Wasseraufnahme, desto verschleißfester und frostbeständiger die Fliese. Gruppe I ist für außen geeignet.",
+    "bildDatei": "buch/lf06/keramik-wasseraufnahme-gruppen.webp",
+    "bildunterschrift": "Keramische Fliesen nach Wasseraufnahme (Buch S. 262)"
+  },
+  {
+    "id": "lf06-051",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262",
+    "konfidenz": "hoch",
+    "frage": "Was bezeichnet das Werkmaß (W) einer Fliese?",
+    "optionen": [
+      "Das tatsächliche Herstellungsmaß der Fliese ohne Fuge",
+      "Das Maß einschließlich Fuge",
+      "Die Diagonale der Fliese",
+      "Die Dicke der Fliese"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Das Werkmaß (W) ist das tatsächliche Herstellungsmaß der Fliese (z. B. 147 × 247 mm). Addiert man die Fugenbreite (J), erhält man das Koordinierungsmaß (C = W + J), z. B. 150 × 250 mm. Das Nennmaß (N) wird im Handel angegeben.",
+    "bildDatei": "buch/lf06/fliesen-plattenmasse.webp",
+    "bildunterschrift": "Fliesen- und Plattenmaße (Buch S. 262)"
+  },
+  {
+    "id": "lf06-052",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 263",
+    "konfidenz": "hoch",
+    "begriff": "Steingut",
+    "definition": "Trocken gepresste keramische Fliesen mit hoher Wasseraufnahme (über 10 %, Gruppe III) und porösem Scherben. Sie sind nicht frostbeständig und dürfen nur für Wandbeläge im Innenbereich verwendet werden.",
+    "bestandteile": [
+      "Stein",
+      "gut"
+    ],
+    "erklaerung": "Steingut = poröser Scherben, hohe Wasseraufnahme, nur innen (Wandfliesen). Der Scherben ist hell. Gegenteil: Steinzeug (dicht, frostbeständig, innen und außen).",
+    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
+  },
+  {
+    "id": "lf06-053",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 263-264",
+    "konfidenz": "hoch",
+    "frage": "Wodurch unterscheidet sich Steinzeug von Steingut?",
+    "optionen": [
+      "Steinzeug hat eine geringe Wasseraufnahme (unter 3 %), ist frostbeständig und für innen und außen geeignet",
+      "Steinzeug ist poröser als Steingut",
+      "Steinzeug ist nur für Wände",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Steinzeugfliesen besitzen einen feinkörnigen, dicht gesinterten Scherben mit einer Wasseraufnahme von höchstens 3 %. Sie sind frostbeständig und verschleißfest, hauptsächlich für Bodenbeläge im Innen- und Außenbereich.",
+    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
+  },
+  {
+    "id": "lf06-054",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 264",
+    "konfidenz": "hoch",
+    "frage": "Welche Eigenschaften haben Bodenklinkerplatten?",
+    "optionen": [
+      "Dichtes Gefüge, geringe Wasseraufnahme (unter 3 %), druck- und abriebfest, frost- und säurebeständig",
+      "Hohe Wasseraufnahme, nur für Wände",
+      "Sehr weich und porös",
+      "Nur für Innenräume"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bodenklinkerplatten werden im Trockenpressverfahren geformt. Sie haben ein dichtes Gefüge mit geringer Wasseraufnahme (≤ 3 %), sind druck- und abriebfest sowie frost- und säurebeständig — z. B. für Balkonbeläge geeignet."
+  },
+  {
+    "id": "lf06-055",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 264",
+    "konfidenz": "hoch",
+    "frage": "Was geben die Abriebklassen 1 bis 4 bei glasierten Steinzeugbodenfliesen an?",
+    "optionen": [
+      "Die Beanspruchung: 1 sehr gering (Schlafraum), 4 stark (Eingang, Arbeitsräume)",
+      "Die Wasseraufnahme",
+      "Die Fliesengröße",
+      "Die Farbe"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Abriebklassen 1–4 geben die zulässige Beanspruchung an: 1 = sehr gering (Bad, Schlafräume), 2 = gering (Wohnbereich), 3 = mittel (Hallen, Dielen, Küchen), 4 = stark (Eingang, Arbeitsräume).",
+    "bildDatei": "buch/lf06/abriebklassen.webp",
+    "bildunterschrift": "Abriebklassen glasierter Steinzeugbodenfliesen (Buch S. 264)"
+  },
+  {
+    "id": "lf06-056",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 264",
+    "konfidenz": "hoch",
+    "frage": "Was sind stranggepresste Platten (Grobkeramik)?",
+    "optionen": [
+      "Spaltplatten und Einzelplatten aus grobkeramischen Erzeugnissen, durch eine Düse gepresst",
+      "Fein aufbereitete Wandfliesen",
+      "Betonplatten ohne Ton",
+      "Kunststoffplatten"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Stranggepresste Platten sind grobkeramische Erzeugnisse. Die Masse wird durch ein Mundstück (Düse) gepresst; je nach Form entstehen Doppelplatten (Spaltplatten) oder Einzelplatten. Dazu zählen keramische Spaltplatten, Trennwandsteine und Überlaufrinnen.",
+    "bildDatei": "buch/lf06/spaltplatten-erzeugnisse.webp",
+    "bildunterschrift": "Keramische Strangerzeugnisse (Buch S. 264)"
+  },
+  {
+    "id": "lf06-057",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 265 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "frage": "Wie ist eine Terrazzoplatte aufgebaut?",
+    "optionen": [
+      "Zweischichtig aus Kernbeton und farbigem Vorsatzbeton mit Natursplitt",
+      "Einschichtig aus reinem Zement",
+      "Aus Bitumen und Sand",
+      "Aus Naturstein ohne Beton"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Terrazzoplatten sind zweischichtige Betonwerksteinplatten aus Kernbeton und Vorsatzbeton. Der Terrazzobelag (Vorsatzbeton) enthält farbigen Natursplitt. Nach dem Schleifen der Oberfläche sehen sie manchen Natursteinplatten ähnlich.",
+    "bildDatei": "buch/lf06/terrazzoplatte-aufbau.webp",
+    "bildunterschrift": "Terrazzoplatte und Terrazzo-Asphaltplatte (Buch S. 265)"
+  },
+  {
+    "id": "lf06-058",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 265",
+    "konfidenz": "hoch",
+    "begriff": "Betonwerkstein",
+    "definition": "Die Bezeichnung für vorgefertigte, werksteinmäßig bearbeitete oder durch die Schalung besonders gestaltete Erzeugnisse aus Beton. Dazu zählen z. B. zementgebundene Betonplatten und zweischichtige Terrazzoplatten.",
+    "bestandteile": [
+      "Beton",
+      "werk",
+      "stein"
+    ],
+    "erklaerung": "Betonwerkstein = ‚Kunststein' aus Beton, der wie Naturwerkstein bearbeitet wird. Häufig zweischichtig: tragender Kernbeton + gestalteter Vorsatzbeton.",
+    "bildDatei": "buch/lf06/verlegemuster-betonplatten.webp",
+    "bildunterschrift": "Verlegemuster für Betonplatten (Buch S. 265)"
+  },
+  {
+    "id": "lf06-059",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 265 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "frage": "Welche Anforderung muss ein Plattenbelag auf dem Balkon erfüllen?",
+    "optionen": [
+      "Er muss frostbeständig sein (geringe Wasseraufnahme, z. B. Steinzeug oder Bodenklinker)",
+      "Er muss besonders porös sein",
+      "Er muss hohe Wasseraufnahme haben",
+      "Er darf nur aus Steingut bestehen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Auf dem Balkon (Außenbereich) sind Beläge der Witterung und dem Frost ausgesetzt. Deshalb müssen die Platten frostbeständig sein — also eine geringe Wasseraufnahme (Gruppe I, ≤ 3 %) haben, z. B. Steinzeug oder Bodenklinker. Steingut wäre ungeeignet."
+  },
+  {
+    "id": "lf06-060",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "frage": "Wann spricht man vom Dickbettverfahren?",
+    "optionen": [
+      "Wenn die Fliesen im dicken Mörtelbett (mind. 10 mm, Mittel 15 mm) verlegt werden",
+      "Wenn der Mörtel nur wenige Millimeter dick ist",
+      "Wenn ohne Mörtel geklebt wird",
+      "Wenn die Fliese sehr dick ist"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Vom Dickbettverfahren spricht man, wenn die Fliesen im dicken Mörtelbett angesetzt werden. Das Mörtelbett soll mindestens 10 mm, im Mittel 15 mm dick sein. Es eignet sich für unebene Wände und Böden.",
+    "bildDatei": "buch/lf06/zementmoerteldübel.webp",
+    "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
+  },
+  {
+    "id": "lf06-061",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266",
+    "konfidenz": "hoch",
+    "text": "Als Ansetzmörtel im Dickbett werden {{Zement}} und Sand im Mischungsverhältnis von etwa 1:4 bis 1:8 verwendet.",
+    "akzeptiert": {
+      "Zement": [
+        "Zement"
+      ]
+    },
+    "erklaerung": "Im Dickbettverfahren wird Ansetzmörtel aus Zement und Sand (Mischungsverhältnis 1:4 bis 1:8) verwendet. Beim Anklopfen der Fliese wird der Zementleim in die Poren des Scherbens gedrückt — es bilden sich Zementmörteldübel (mechanische Verankerung).",
+    "bildDatei": "buch/lf06/zementmoerteldübel.webp",
+    "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
+  },
+  {
+    "id": "lf06-062",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266",
+    "konfidenz": "hoch",
+    "frage": "Warum müssen stark saugende Fliesen vor dem Ansetzen im Dickbett gewässert werden?",
+    "optionen": [
+      "Damit sie dem Mörtel nicht zu viel Wasser entziehen und der Mörtel richtig erhärten kann",
+      "Damit sie schwerer werden",
+      "Damit sie ihre Farbe ändern",
+      "Damit sie leichter brechen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Stark saugende Fliesen würden dem Frischmörtel Wasser entziehen. Dadurch könnte der Mörtel nicht richtig erhärten. Deshalb werden solche Fliesen vor dem Mörtelauftrag im Wasser getaucht (gewässert)."
+  },
+  {
+    "id": "lf06-063",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 267 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "frage": "Was ist eine Voraussetzung für das Dünnbettverfahren?",
+    "optionen": [
+      "Ein ebener, lot- oder waagerechter Untergrund",
+      "Ein stark unebener Untergrund",
+      "Ein nasser Untergrund",
+      "Kein Untergrund nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim Dünnbettverfahren ist die Mörtelschicht nur wenige Millimeter (2–5 mm) dick. Voraussetzung ist ein ebener, lot- oder waagerechter Untergrund, weil Unebenheiten mit dem Dünnbettmörtel nur geringfügig ausgeglichen werden können."
+  },
+  {
+    "id": "lf06-064",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 267 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man beim Dünnbettverfahren unter dem Floating-Verfahren?",
+    "optionen": [
+      "Der Klebemörtel wird auf den Ansetzgrund (Untergrund) aufgetragen und aufgekämmt",
+      "Der Kleber wird auf die Plattenrückseite aufgetragen",
+      "Die Fliese wird ins Wasser getaucht",
+      "Die Fliese wird ohne Kleber verlegt"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Floating-Verfahren: Der Klebemörtel wird auf den Ansetzgrund (Untergrund) aufgetragen und mit der Zahnkelle aufgekämmt. Beim Buttering-Verfahren wird der Kleber auf die Plattenrückseite aufgetragen; das kombinierte Buttering-Floating-Verfahren nutzt beides (Hohlraumfreiheit).",
+    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
+  },
+  {
+    "id": "lf06-065",
+    "typ": "cloze",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 267 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "text": "Beim {{Floating}}-Verfahren wird der Kleber auf den Untergrund aufgetragen, beim {{Buttering}}-Verfahren auf die Plattenrückseite. Das kombinierte Verfahren heißt Buttering-Floating.",
+    "akzeptiert": {
+      "Floating": [
+        "Floating"
+      ],
+      "Buttering": [
+        "Buttering"
+      ]
+    },
+    "erklaerung": "Floating = Kleber auf den Ansetzgrund (Untergrund). Buttering = Kleber auf die Plattenrückseite. Buttering-Floating (kombiniert) = beides, für hohlraumfreie Verlegung bei großformatigen Fliesen und im Außenbereich.",
+    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
+  },
+  {
+    "id": "lf06-066",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 267",
+    "konfidenz": "hoch",
+    "frage": "Wie groß ist die übliche Fugenbreite bei keramischen Wand- und Bodenbelägen?",
+    "optionen": [
+      "Etwa 2 bis 8 mm",
+      "Etwa 2 bis 5 cm",
+      "Etwa 0,1 mm",
+      "Fugen sind nicht nötig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Keramische Wand- und Bodenbeläge werden mit einer Fugenbreite von etwa 2 bis 8 mm angelegt. Die Fugenbreite hängt vom Format und der Art der Fliesen, der Beanspruchung und der Verfugung ab."
+  },
+  {
+    "id": "lf06-067",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient der Spritzbewurf vor dem Ansetzen von Fliesen?",
+    "optionen": [
+      "Er verbessert die Haftung des Belaggrundes und vergrößert die Mörtelhaftfläche",
+      "Er färbt die Fliesen",
+      "Er ersetzt den Ansetzmörtel",
+      "Er glättet die Fliesenoberfläche"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei unverputzten Wandflächen gehört ein Spritzbewurf aus Zementmörtel zur fachgerechten Ausführung, wenn anschließend im Dickbett verlegt wird. Er reguliert die Saugfähigkeit des Belaggrundes und vergrößert die Mörtelhaftfläche."
+  },
+  {
+    "id": "lf06-068",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 268",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Terrasse mit der Fläche {flaeche} m² soll mit Steinzeugfliesen belegt werden. Der Fliesenbedarf beträgt {bedarf} Stück je m². Wie viele Fliesen sind ohne Verschnitt zu bestellen?",
+    "parameter": [
+      {
+        "name": "flaeche",
+        "label": "Fläche",
+        "einheit": "m²",
+        "min": 5,
+        "max": 20,
+        "schritt": 0.5
+      },
+      {
+        "name": "bedarf",
+        "label": "Fliesenbedarf",
+        "einheit": "Stück/m²",
+        "min": 9,
+        "max": 16,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Fliesenbedarf = Fläche · Bedarf je m² = {flaeche} · {bedarf}",
+        "formel": "flaeche * bedarf",
+        "ergebnisName": "stueck",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Fliesenbedarf = Fläche A · Materialbedarf pro m². Beispiel: 7,5 m² · 12 Stück/m² = 90 Stück Fliesen. Für Verschnitt (Zuschnitt an Rändern) plant man einen Zuschlag ein.",
+    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
+  },
+  {
+    "id": "lf06-069",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 268",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für einen Belag der Fläche {flaeche} m² wird ein Mörtelbett von {dicke} mm Dicke aufgebracht. Wie groß ist der Mörtelbedarf (1 l je m² und mm)?",
+    "parameter": [
+      {
+        "name": "flaeche",
+        "label": "Fläche",
+        "einheit": "m²",
+        "min": 5,
+        "max": 15,
+        "schritt": 0.5
+      },
+      {
+        "name": "dicke",
+        "label": "Mörtelbettdicke",
+        "einheit": "mm",
+        "min": 10,
+        "max": 30,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Mörtelbedarf = Fläche · Schichtdicke in mm = {flaeche} · {dicke}",
+        "formel": "flaeche * dicke",
+        "ergebnisName": "moertel",
+        "einheit": "l"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Mörtelbedarf = Fläche A · Schichtdicke in mm. Denn je m² Fläche und je mm Schichtdicke wird 1 l Mörtel benötigt. Beispiel: 7,5 m² · 25 mm = 187,5 l Mörtel.",
+    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
+  },
+  {
+    "id": "lf06-070",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 256 (Aufgaben S. 256)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Die Fläche des Wandaußenputzes beträgt {flaeche} m², die Putzdicke {dicke} mm. Wie viele Liter Putzmörtel werden benötigt (Volumen ohne Verlust)?",
+    "parameter": [
+      {
+        "name": "flaeche",
+        "label": "Putzfläche",
+        "einheit": "m²",
+        "min": 100,
+        "max": 300,
+        "schritt": 5
+      },
+      {
+        "name": "dicke",
+        "label": "Putzdicke",
+        "einheit": "mm",
+        "min": 15,
+        "max": 25,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Volumen = Fläche · Putzdicke in mm (1 l je m² und mm) = {flaeche} · {dicke}",
+        "formel": "flaeche * dicke",
+        "ergebnisName": "volumen",
+        "einheit": "l"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Je m² Putzfläche und je mm Putzdicke wird 1 l Mörtel benötigt. Volumen = Fläche · Dicke in mm. Beispiel: 245 m² · 20 mm = 4900 l. Für den Verlust kommt noch ein Zuschlag dazu.",
+    "bildDatei": "buch/lf06/putzmoertelbedarf-berechnung.webp",
+    "bildunterschrift": "Berechnungsbeispiel Putzmörtelbedarf (Buch S. 256)"
+  },
+  {
+    "id": "lf06-071",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 256 (Aufgaben S. 256)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für einen Putz werden {volumen} l Mörtel benötigt (bereits mit Verlust). Die Ergiebigkeit beträgt {ergiebig} l je 30-kg-Sack. Wie viele Säcke müssen bestellt werden (aufgerundet gerechnet über die reine Sackzahl)?",
+    "parameter": [
+      {
+        "name": "volumen",
+        "label": "Mörtelmenge",
+        "einheit": "l",
+        "min": 4000,
+        "max": 6000,
+        "schritt": 100
+      },
+      {
+        "name": "ergiebig",
+        "label": "Ergiebigkeit",
+        "einheit": "l/Sack",
+        "min": 20,
+        "max": 30,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sackzahl = Mörtelmenge / Ergiebigkeit je Sack = {volumen} / {ergiebig}",
+        "formel": "volumen / ergiebig",
+        "ergebnisName": "saecke",
+        "einheit": "Sack"
+      }
+    ],
+    "toleranzProzent": 3,
+    "erklaerung": "Sackzahl = benötigte Mörtelmenge / Ergiebigkeit je Sack. Beispiel: 5243 l / 25 l pro Sack = 209,7 → aufgerundet 210 Säcke. In der Praxis wird immer auf ganze Säcke aufgerundet.",
+    "bildDatei": "buch/lf06/putzmoertelbedarf-berechnung.webp",
+    "bildunterschrift": "Berechnungsbeispiel Putzmörtelbedarf (Buch S. 256)"
+  },
+  {
+    "id": "lf06-072",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262",
+    "konfidenz": "hoch",
+    "frage": "Was ist ein Riemchen?",
+    "optionen": [
+      "Eine längliche Fliese im Rechteckformat mit einem Seitenverhältnis über 3:1",
+      "Eine besonders große Bodenplatte",
+      "Ein quadratisches Mosaik",
+      "Eine runde Fliese"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Riemchen sind längliche Fliesen im Rechteckformat mit einem Seitenverhältnis von mehr als 3:1. Sie werden häufig als Fassadenverkleidung oder Sockelfliesen verwendet."
+  },
+  {
+    "id": "lf06-073",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 264",
+    "konfidenz": "hoch",
+    "frage": "Was sind keramische Spaltplatten?",
+    "optionen": [
+      "Doppelplatten, die nach dem Brennen in Einzelplatten gespalten werden (daher der Name)",
+      "Platten aus gespaltenem Naturstein",
+      "Platten aus zwei Betonschichten",
+      "Sehr dünne Wandfliesen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Spaltplatten werden als Doppelplatten geformt und nach dem Brennen in Einzelplatten gespalten (daher ‚Spaltplatten'). Sie werden im Mörtelbett (Dickbett) verlegt und eignen sich für witterungs- und frostbeständige Beläge innen und außen.",
+    "bildDatei": "buch/lf06/spaltplatten-erzeugnisse.webp",
+    "bildunterschrift": "Keramische Strangerzeugnisse (Buch S. 264)"
+  },
+  {
+    "id": "lf06-074",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 265",
+    "konfidenz": "hoch",
+    "frage": "Woraus bestehen bitumengebundene Platten (Asphaltplatten)?",
+    "optionen": [
+      "Aus Natur-Asphaltmehl bzw. Bitumen; sie sind trittschalldämmend, aber nicht säurefest",
+      "Aus reinem Zement",
+      "Aus Naturstein",
+      "Aus Keramik"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bitumengebundene Platten (Asphaltplatten) werden aus Naturasphaltmehl bzw. Bitumen hergestellt. Sie sind verhältnismäßig weich, gut wärme- und trittschalldämmend, jedoch nicht säurefest. Sie finden nur als Bodenplatten im Innenbereich Verwendung."
+  },
+  {
+    "id": "lf06-075",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258",
+    "konfidenz": "hoch",
+    "frage": "Aus welchen Ausgangsstoffen besteht ein Zementestrichmörtel?",
+    "optionen": [
+      "Normzemente, Sand, Wasser und ggf. Zusatzmittel bzw. Zusatzstoffe",
+      "Nur Bitumen und Sand",
+      "Kunstharz und Wasser",
+      "Nur Kalk und Gips"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zementestrichmörtel besteht aus Normzementen, Sand (geeignete Gesteinskörnung), Wasser und ggf. Zusatzmitteln bzw. Zusatzstoffen. Die Gesteinskörnung sollte im grob- bis mittelkörnigen Bereich der Sieblinie liegen, der Wasserzusatz gering (Schwindrisse vermeiden)."
+  },
+  {
+    "id": "lf06-076",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 259",
+    "konfidenz": "hoch",
+    "frage": "Warum sollten Zementestriche nicht vor Ablauf von 7 Tagen belastet werden?",
+    "optionen": [
+      "Damit der Estrich ausreichend erhärten kann und nicht beschädigt wird",
+      "Damit er schneller trocknet",
+      "Aus rein optischen Gründen",
+      "Damit er heller wird"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Zementestriche sollten nicht vor Ablauf von 3 Tagen begangen und nicht vor Ablauf von 7 Tagen höher belastet werden. Der Estrich muss ausreichend erhärten, bevor Lasten aufgebracht werden, sonst wird er beschädigt oder reißt."
+  },
+  {
+    "id": "lf06-077",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgabe hat die Gesteinskörnung im Putzmörtel?",
+    "optionen": [
+      "Sie bildet das feste, tragende Gerüst des Putzmörtels und mindert das Schwinden",
+      "Sie verringert die Festigkeit",
+      "Sie färbt den Putz",
+      "Sie hat keine Funktion"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Gesteinskörnung bildet das feste, tragende Gerüst des Putzmörtels (Magerungsmittel). Sie soll so abgestuft sein, dass die kleineren Körner die Hohlräume zwischen den größeren füllen. Sie muss frei von Verunreinigungen sein.",
+    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
+  },
+  {
+    "id": "lf06-078",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 250",
+    "konfidenz": "hoch",
+    "frage": "Welcher organisch gebundene Putz verwendet Kali-Wasserglas als Bindemittel?",
+    "optionen": [
+      "Dispersionssilikatputz (Silikatputz)",
+      "Dispersionsputz (Kunstharzputz)",
+      "Zementputz",
+      "Kalkputz"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der Dispersionssilikatputz (Silikatputz) verwendet Kali-Wasserglas und Polymerdispersion als Bindemittel. Der Dispersionsputz (Kunstharzputz) nutzt reine Polymerdispersion, der Siliconharzputz eine Siliconharzemulsion mit Polymerdispersion.",
+    "bildDatei": "buch/lf06/organische-putze-tabelle.webp",
+    "bildunterschrift": "Organisch gebundene Putzmörtel (Buch S. 250)"
+  },
+  {
+    "id": "lf06-079",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 253",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man unter der Putzweise?",
+    "optionen": [
+      "Die Art der Oberflächenbearbeitung, die dem fertigen Putz seine Struktur und sein Aussehen gibt",
+      "Die Reihenfolge der Putzträger",
+      "Die Bindemittelart",
+      "Die Trocknungszeit"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der fertig abgezogene Putz kann auf vielfältige Weise modelliert, strukturiert, gerieben oder geglättet werden. Die dabei entstehende Struktur wird als Putzweise bezeichnet — sie prägt das Aussehen der Oberfläche."
+  },
+  {
+    "id": "lf06-080",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Gipsplatten werkmäßig hergestellt?",
+    "optionen": [
+      "Mit einem schnell erhärtenden Gipskern und einer stabilisierenden Kartonummantelung",
+      "Aus reinem Holz",
+      "Aus Beton mit Stahleinlage",
+      "Aus Kunststoff ohne Gips"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Gipsplatten werden werkmäßig mit einem schnell erhärtenden Kern aus Stuckgips und einer stabilisierenden Kartonummantelung gefertigt. Die in Längsrichtung verlaufenden Kartonfasern erhalten der Platte in Längsrichtung eine größere Biegesteifigkeit als in Querrichtung.",
+    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+  },
+  {
+    "id": "lf06-081",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 257",
+    "konfidenz": "hoch",
+    "frage": "Nach welchen Verlegetechniken lassen sich Estriche unterscheiden?",
+    "optionen": [
+      "Hand-/kellenverlegte Estriche, selbstnivellierende Fließestriche und Fertigteilestriche (Trockenestriche)",
+      "Nur handverlegte Estriche",
+      "Nur gegossene Estriche",
+      "Nur gepresste Estriche"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Nach der Verlegetechnik unterscheidet man: hand- bzw. kellenverlegte Estriche, selbstnivellierende Fließestriche und Fertigteilestriche (Trockenestriche).",
+    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
+  },
+  {
+    "id": "lf06-082",
+    "typ": "fachbegriff",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266",
+    "konfidenz": "hoch",
+    "begriff": "Zementmörteldübel",
+    "definition": "Beim Anklopfen der Fliese im Dickbett wird der Zementleim in die Poren des Fliesenscherbens gedrückt. Beim Erhärten entstehen dort kleine Zementpfropfen, die eine mechanische Verankerung zwischen Fliese und Mörtelbett bilden.",
+    "bestandteile": [
+      "Zement",
+      "mörtel",
+      "dübel"
+    ],
+    "erklaerung": "Der Zementmörteldübel ist die mechanische Verzahnung: Zementleim dringt in die Poren des Scherbens und ‚dübelt' die Fliese im Mörtel fest. Deshalb muss die Fliese gut angeklopft werden.",
+    "bildDatei": "buch/lf06/zementmoerteldübel.webp",
+    "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
+  },
+  {
+    "id": "lf06-083",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 266 (Aufgaben S. 267)",
+    "konfidenz": "hoch",
+    "frage": "Wie muss der Belaggrund vor dem Ansetzen der Fliesen beschaffen sein?",
+    "optionen": [
+      "Rau, saugfähig, sauber, eben, tragfähig sowie lot- und fluchtgerecht",
+      "Glatt und ölig",
+      "Nass und locker",
+      "Beliebig, das spielt keine Rolle"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Jeder Belaggrund (Ansetzgrund) muss vor dem Ansetzen der Fliesen auf seine Eignung überprüft werden. Er muss rau, saugfähig, sauber, fest, eben, lot- und fluchtgerecht sein. Gegebene Mängel müssen beseitigt oder ausgeglichen werden.",
+    "bildDatei": "buch/lf06/fliesenarbeiten-dusche.webp",
+    "bildunterschrift": "Fliesenarbeiten im Duschbereich (Buch S. 269)"
+  },
+  {
+    "id": "lf06-084",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 249",
+    "konfidenz": "hoch",
+    "frage": "Wie wird der Außenputz durch Beanspruchung belastet?",
+    "optionen": [
+      "Durch Wasserdampf, Luftverschmutzung, Temperaturwechsel/Frost und Niederschläge",
+      "Nur durch Sonnenlicht",
+      "Gar nicht, er ist geschützt",
+      "Nur durch Wind"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Der Außenputz wird durch mehrere Faktoren beansprucht: Wasserdampf (von innen), Luftverschmutzung, Temperaturwechsel und Frost sowie Niederschläge (Schlagregen). Deshalb muss er widerstandsfähig und witterungsbeständig sein.",
+    "bildDatei": "buch/lf06/aussenputz-beanspruchung.webp",
+    "bildunterschrift": "Beanspruchung des Außenputzes (Buch S. 249)"
+  },
+  {
+    "id": "lf06-085",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 259",
+    "konfidenz": "hoch",
+    "frage": "Warum haben sich Calciumsulfatfließestriche im Innenbereich bewährt?",
+    "optionen": [
+      "Wegen des schnellen Einbaus und der schnellen Begehbarkeit, besonders als Estrich auf Dämmschicht im Wohnbereich",
+      "Weil sie besonders feuchtebeständig sind",
+      "Weil sie im Außenbereich unbegrenzt einsetzbar sind",
+      "Weil sie besonders billig sind"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Calciumsulfatfließestriche haben sich im Innenbereich wegen des schnellen Einbaus und der schnellen Begehbarkeit besonders bewährt. Sie kommen als Estrich auf Dämmschicht (häufig als Heizestrich) überwiegend im Wohnbereich zum Einsatz. Für dauerfeuchte Bereiche sind sie ungeeignet."
+  },
+  {
+    "id": "lf06-086",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "Wozu dient die Ummantelung von Holz- und Stahlbauteilen mit Gipsplatten?",
+    "optionen": [
+      "Zur Verbesserung der brandschutztechnischen Eigenschaften",
+      "Zur Wärmeerzeugung",
+      "Zur Wasserableitung",
+      "Nur zur Verschönerung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Durch die Ummantelung von Holz- und Stahlbauteilen mit Gipsplatten (Träger- und Stützenbekleidungen) können deren brandschutztechnische Eigenschaften verbessert werden. Gips ist wegen seines Kristallwassers ein guter Brandschutzstoff."
+  },
+  {
+    "id": "lf06-087",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fußböden",
+    "quelle": "Grundstufe Bautechnik, Buch S. 260 (Aufgaben S. 260)",
+    "konfidenz": "hoch",
+    "frage": "Welchen Zweck haben Dämmschichten unter Estrichen?",
+    "optionen": [
+      "Sie verbessern Wärme- und Trittschallschutz zwischen den Geschossen",
+      "Sie erhöhen die Druckfestigkeit des Estrichs",
+      "Sie leiten Wasser ab",
+      "Sie färben den Estrich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Dämmschichten unter dem Estrich (schwimmender Estrich) verbessern den Wärmeschutz und den Trittschallschutz zwischen den Geschossen. Geeignete Dämmstoffe sind z. B. Mineralwolle, Polystyrol und Holzwolle-Mehrschichtplatten.",
+    "bildDatei": "buch/lf06/daemmstoffe-tabelle.webp",
+    "bildunterschrift": "Dämmstoffe und ihre Verwendung (Buch S. 258)"
+  },
+  {
+    "id": "lf06-088",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 265 (Aufgaben S. 265)",
+    "konfidenz": "hoch",
+    "frage": "Nach welchen Gesichtspunkten erfolgt die Wahl keramischer Erzeugnisse?",
+    "optionen": [
+      "Nach technischen (Frostbeständigkeit, Abriebfestigkeit, Rutschsicherheit) und gestalterischen (Farbe, Format) Gesichtspunkten",
+      "Nur nach dem Preis",
+      "Nur nach der Farbe",
+      "Nach dem Zufall"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Wahl der vielfältigen keramischen Erzeugnisse erfolgt nach technischen Gesichtspunkten wie Frostbeständigkeit, Abriebfestigkeit und Rutschsicherheit, aber auch nach gestalterischen Gesichtspunkten wie Farbe und Format."
+  },
+  {
+    "id": "lf06-089",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 268 (Aufgaben S. 268)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Wandfläche von {flaeche} m² wird mit Fliesen belegt. Der Fliesenbedarf beträgt {bedarf} Stück/m². Wie viele Fliesen sind bei {verschnitt} % Verschnitt zu bestellen?",
+    "parameter": [
+      {
+        "name": "flaeche",
+        "label": "Wandfläche",
+        "einheit": "m²",
+        "min": 8,
+        "max": 25,
+        "schritt": 0.5
+      },
+      {
+        "name": "bedarf",
+        "label": "Fliesenbedarf",
+        "einheit": "Stück/m²",
+        "min": 16,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "verschnitt",
+        "label": "Verschnitt",
+        "einheit": "%",
+        "min": 5,
+        "max": 10,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Grundbedarf = Fläche · Bedarf/m² = {flaeche} · {bedarf}",
+        "formel": "flaeche * bedarf",
+        "ergebnisName": "grund",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Bestellmenge = Grundbedarf · (1 + Verschnitt/100) = {grund} · (1 + {verschnitt}/100)",
+        "formel": "grund * (1 + verschnitt / 100)",
+        "ergebnisName": "bestell",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Erst Grundbedarf (Fläche · Bedarf/m²), dann Verschnittzuschlag. Bestellmenge = Grundbedarf · (1 + Verschnitt/100). In der Praxis wird auf ganze Fliesen/Pakete aufgerundet.",
+    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
+  },
+  {
+    "id": "lf06-090",
+    "typ": "calc",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 268 (Aufgaben S. 268)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Für einen Fliesenbelag der Fläche {flaeche} m² wird Dünnbettmörtel mit einem Verbrauch von {verbrauch} kg/m² benötigt. Ein Sack fasst {sack} kg. Wie viele Säcke werden benötigt (reine Sackzahl)?",
+    "parameter": [
+      {
+        "name": "flaeche",
+        "label": "Fläche",
+        "einheit": "m²",
+        "min": 10,
+        "max": 40,
+        "schritt": 1
+      },
+      {
+        "name": "verbrauch",
+        "label": "Verbrauch",
+        "einheit": "kg/m²",
+        "min": 3,
+        "max": 4,
+        "schritt": 0.5
+      },
+      {
+        "name": "sack",
+        "label": "Sackinhalt",
+        "einheit": "kg",
+        "min": 20,
+        "max": 25,
+        "schritt": 5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Gesamtmenge = Fläche · Verbrauch je m² = {flaeche} · {verbrauch}",
+        "formel": "flaeche * verbrauch",
+        "ergebnisName": "menge",
+        "einheit": "kg"
+      },
+      {
+        "beschreibung": "Sackzahl = Gesamtmenge / Sackinhalt = {menge} / {sack}",
+        "formel": "menge / sack",
+        "ergebnisName": "saecke",
+        "einheit": "Sack"
+      }
+    ],
+    "toleranzProzent": 3,
+    "erklaerung": "Erst Gesamtmenge (Fläche · Verbrauch/m²), dann durch den Sackinhalt teilen. In der Praxis wird immer auf ganze Säcke aufgerundet.",
+    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
+  },
+  {
+    "id": "lf06-091",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 252",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch darf der Restfeuchtegehalt beim Verputzen von Betonflächen höchstens sein?",
+    "optionen": [
+      "3 Masseprozent",
+      "30 Masseprozent",
+      "50 Masseprozent",
+      "Die Feuchte spielt keine Rolle"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Vor dem Verputzen von Betonflächen wird der Restfeuchtegehalt geprüft. Dieser darf höchstens 3 Masseprozent betragen, sonst haftet der Putz nicht ausreichend.",
+    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
+  },
+  {
+    "id": "lf06-092",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258",
+    "konfidenz": "hoch",
+    "frage": "Wovon hängt die erforderliche Estrichdicke ab?",
+    "optionen": [
+      "Von der Estrichkonstruktion, den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit",
+      "Nur von der Farbe",
+      "Nur vom Wetter",
+      "Sie ist immer gleich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Estrichdicke hängt von der Estrichkonstruktion (Verbund, Trenn-, Dämmschicht), den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit des Mörtels ab. Beispiel: Estrich auf Dämmschicht mind. 35 mm (CT).",
+    "bildDatei": "buch/lf06/estrichdicken-tabelle.webp",
+    "bildunterschrift": "Ausgewählte Estrichdicken (Buch S. 258)"
+  },
+  {
+    "id": "lf06-093",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 263",
+    "konfidenz": "hoch",
+    "frage": "Warum dürfen Steingutfliesen nur im Innenbereich verwendet werden?",
+    "optionen": [
+      "Weil sie einen porösen Scherben mit hoher Wasseraufnahme haben und nicht frostbeständig sind",
+      "Weil sie zu teuer für außen sind",
+      "Weil sie zu hart sind",
+      "Weil sie zu dunkel sind"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Steingutfliesen haben einen porösen Scherben mit hoher Wasseraufnahme (über 10 %). Bei Frost würde das aufgenommene Wasser gefrieren und die Fliese sprengen — sie sind nicht frostbeständig und daher nur für Wandbeläge im Innenbereich (z. B. Bad, Dusche) geeignet.",
+    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
+  },
+  {
+    "id": "lf06-094",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 267",
+    "konfidenz": "hoch",
+    "frage": "Welche Klebemörtel werden beim Dünnbettverfahren verwendet?",
+    "optionen": [
+      "Hydraulisch erhärtende Dünnbettmörtel, Dispersionsklebstoffe und Reaktionsharzklebstoffe",
+      "Nur reiner Zement ohne Zusatz",
+      "Nur Bitumen",
+      "Nur Kalk"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beim Dünnbettverfahren werden hauptsächlich hydraulisch erhärtende Dünnbettmörtel (kunstharzvergütete Zementklebstoffe), Dispersionsklebstoffe und Reaktionsharzklebstoffe verwendet. Man wählt den Kleber nach Belaggrund, Belagmaterial und erwarteter Beanspruchung.",
+    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
+  },
+  {
+    "id": "lf06-095",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248",
+    "konfidenz": "hoch",
+    "frage": "Welches Bindemittel wird bei Innenputzen häufig verwendet?",
+    "optionen": [
+      "Gips",
+      "Bitumen",
+      "Kunstharz nur außen",
+      "Zement nur im Keller"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Neben den bekannten Bindemitteln Kalk und Zement wird im Innenbereich häufig das Bindemittel Gips verwendet. Gipsputze erhärten schnell, verbessern das Raumklima und sind gute Brandschutzstoffe.",
+    "bildDatei": "buch/lf06/putzmoertel-anwendung.webp",
+    "bildunterschrift": "Anwendung des Putzmörtels (Buch S. 248)"
+  },
+  {
+    "id": "lf06-096",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 254",
+    "konfidenz": "hoch",
+    "frage": "Was entsteht, wenn man Holz- oder Metallunterkonstruktionen beidseitig mit Gipsplatten beplankt?",
+    "optionen": [
+      "Zweischalige leichte Trennwände (Montagewände)",
+      "Ein Estrich",
+      "Ein Verbundestrich",
+      "Ein tragender Betonpfeiler"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Beplankt man eine Holz- oder Metallunterkonstruktion beidseitig mit Gipsplatten, erhält man zweischalige leichte Trennwände (Montagewände). Zur Verbesserung des Schall-, Wärme- und Brandschutzes können in den Zwischenraum Dämmstoffe eingelegt werden."
+  },
+  {
+    "id": "lf06-097",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "quelle": "Grundstufe Bautechnik, Buch S. 258",
+    "konfidenz": "hoch",
+    "frage": "Wie groß sollte das Größtkorn der Gesteinskörnung bei einem Verbundestrich mindestens sein (bezogen auf die Estrichdicke)?",
+    "optionen": [
+      "Mindestens 3 × Größtkorn ergibt die Mindestdicke (z. B. 8 mm Korn bei 40 mm Dicke)",
+      "Das Größtkorn spielt keine Rolle",
+      "Immer 50 mm",
+      "Immer 1 mm"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Estrichdicke muss mindestens das 3-fache des Größtkorns betragen. Beim Verbundestrich mit 40 mm Dicke wird ein Größtkorn von 16 mm nicht überschritten; bei Estrichdicken über 40 mm ein Größtkorn von 8 mm. So wird der Estrich gleichmäßig tragfähig.",
+    "bildDatei": "buch/lf06/estrichdicken-tabelle.webp",
+    "bildunterschrift": "Ausgewählte Estrichdicken (Buch S. 258)"
+  },
+  {
+    "id": "lf06-098",
+    "typ": "mc",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 262",
+    "konfidenz": "hoch",
+    "frage": "In welche zwei Hauptgruppen werden Platten für Wand- und Bodenbeläge eingeteilt?",
+    "optionen": [
+      "Natursteinplatten und künstliche Platten (keramische und nichtkeramische)",
+      "Nur Betonplatten",
+      "Nur Glasplatten",
+      "Nur Metallplatten"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Platten für Wand- und Bodenbeläge werden in Natursteinplatten und künstliche Platten eingeteilt. Künstliche Platten sind keramisch (gebrannt: Feinkeramik/Grobkeramik) oder nichtkeramisch (ungebrannt: zement-, beton-, bitumen- oder magnesiumgebunden).",
+    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
   }
 ]

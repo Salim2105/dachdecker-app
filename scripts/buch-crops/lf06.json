@@ -1,0 +1,259 @@
+{
+  "lf": "lf06",
+  "pdf": "/Users/salimsakkali/Downloads/LF6.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 246+i (p01 = S.247).",
+  "figuren": [
+    {
+      "seite": 2,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "putzmoertel-anwendung",
+      "alt": "Anwendung des Putzmörtels: Kalkzementmörtel, Gipsmörtel, Zementmörtel je Bauteil",
+      "unterschrift": "Anwendung des Putzmörtels (Buch S. 248)"
+    },
+    {
+      "seite": 2,
+      "box": [0.50, 0.42, 0.95, 0.70],
+      "name": "putzsystem-aufbau",
+      "alt": "Aufbau eines mehrlagigen Putzsystems: Unterputz und Oberputz",
+      "unterschrift": "Aufbau eines mehrlagigen Putzsystems (Buch S. 248)"
+    },
+    {
+      "seite": 2,
+      "box": [0.50, 0.70, 0.95, 0.92],
+      "name": "putztraeger-fachwerk",
+      "alt": "Putzträger über Fachwerkposten und Putzbewehrung",
+      "unterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.36, 0.95, 0.55],
+      "name": "aussenputz-beanspruchung",
+      "alt": "Beanspruchung des Außenputzes durch Wasserdampf, Frost, Niederschläge",
+      "unterschrift": "Beanspruchung des Außenputzes (Buch S. 249)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.55, 0.95, 0.72],
+      "name": "waermedaemmputz",
+      "alt": "Aufbau eines Wärmedämmputzes mit Dämmputz und Oberputz",
+      "unterschrift": "Wärmedämmputz (Buch S. 249)"
+    },
+    {
+      "seite": 3,
+      "box": [0.50, 0.74, 0.95, 0.94],
+      "name": "sanierputz-wirkung",
+      "alt": "Wirkung des Sanierputzes: Feuchtigkeit verdunstet, Salze werden aufgenommen",
+      "unterschrift": "Wirkung des Sanierputzes (Buch S. 249)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.20, 0.95, 0.52],
+      "name": "putzmoertel-tabelle",
+      "alt": "Mineralisch gebundene Putzmörtel: Kalk-, Kalkzement-, Zement-, Gipsmörtel",
+      "unterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
+    },
+    {
+      "seite": 4,
+      "box": [0.50, 0.52, 0.95, 0.70],
+      "name": "organische-putze-tabelle",
+      "alt": "Organisch gebundene Putze: Silikatputz, Kunstharzputz, Siliconharzputz",
+      "unterschrift": "Organisch gebundene Putzmörtel (Buch S. 250)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.36, 0.95, 0.58],
+      "name": "kreislauf-stuckgips",
+      "alt": "Kreislauf des Stuckgipses: Mahlen, Brennen, Anmachen, Erhärten",
+      "unterschrift": "Kreislauf des Stuckgipses (Buch S. 251)"
+    },
+    {
+      "seite": 5,
+      "box": [0.50, 0.58, 0.95, 0.92],
+      "name": "gipstrockenmoertel-tabelle",
+      "alt": "Gipstrockenmörtel B1 bis B7 mit Gipsbindergehalt",
+      "unterschrift": "Gipstrockenmörtel (Buch S. 251)"
+    },
+    {
+      "seite": 6,
+      "box": [0.50, 0.32, 0.95, 0.60],
+      "name": "putzhaftung-oberflaechen",
+      "alt": "Putzhaftung auf verschiedenen Oberflächen und Haftbrücke",
+      "unterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
+    },
+    {
+      "seite": 8,
+      "box": [0.50, 0.58, 0.95, 0.92],
+      "name": "gipsplatten-tabelle",
+      "alt": "Arten und Verwendung von Gipsplatten: Typ A, H, E, F, P, D, R, I",
+      "unterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
+    },
+    {
+      "seite": 9,
+      "box": [0.50, 0.10, 0.95, 0.32],
+      "name": "kantenform-gipsplatten",
+      "alt": "Kantenformen von Gipsplatten: HRAK, RAK, VK, HRK, WK, AK",
+      "unterschrift": "Kantenform von Gipsplatten (Buch S. 255)"
+    },
+    {
+      "seite": 9,
+      "box": [0.50, 0.55, 0.95, 0.78],
+      "name": "kleberauftrag-plattendicke",
+      "alt": "Kleberauftrag abhängig von der Plattendicke bei Dünnbettverklebung",
+      "unterschrift": "Kleberauftrag bei Gipsplatten (Buch S. 255)"
+    },
+    {
+      "seite": 10,
+      "box": [0.50, 0.10, 0.95, 0.48],
+      "name": "putzmoertelbedarf-berechnung",
+      "alt": "Berechnungsbeispiel Putzmörtelbedarf mit Volumen und Sackzahl",
+      "unterschrift": "Berechnungsbeispiel Putzmörtelbedarf (Buch S. 256)"
+    },
+    {
+      "seite": 11,
+      "box": [0.50, 0.30, 0.95, 0.66],
+      "name": "estricharten-konstruktion",
+      "alt": "Estricharten nach der Bauart: Verbundestrich, Estrich auf Trennschicht, auf Dämmschicht",
+      "unterschrift": "Estricharten nach der Bauart (Buch S. 257)"
+    },
+    {
+      "seite": 11,
+      "box": [0.50, 0.66, 0.95, 0.90],
+      "name": "estricharten-bindemittel",
+      "alt": "Estricharten nach Art des Bindemittels: CT, CA, SR, MA, AS",
+      "unterschrift": "Estricharten nach Bindemittel (Buch S. 257)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.10, 0.95, 0.45],
+      "name": "daemmstoffe-tabelle",
+      "alt": "Dämmstoffe und ihre Verwendung für Wärme- und Schallschutz",
+      "unterschrift": "Dämmstoffe und ihre Verwendung (Buch S. 258)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.45, 0.95, 0.72],
+      "name": "estrichdicken-tabelle",
+      "alt": "Ausgewählte Estrichdicken je Estrichkonstruktion",
+      "unterschrift": "Ausgewählte Estrichdicken (Buch S. 258)"
+    },
+    {
+      "seite": 12,
+      "box": [0.50, 0.72, 0.95, 0.92],
+      "name": "estrich-festigkeitsklassen",
+      "alt": "Druck- und Biegezugfestigkeitsklassen für Estrichmörtel C5-C80, F1-F50",
+      "unterschrift": "Festigkeitsklassen für Estrichmörtel (Buch S. 258)"
+    },
+    {
+      "seite": 13,
+      "box": [0.50, 0.28, 0.95, 0.52],
+      "name": "estrich-fugen",
+      "alt": "Fugenausbildung zur Vermeidung von Rissen im Estrich",
+      "unterschrift": "Fugenausbildung – Vermeidung von Rissen (Buch S. 259)"
+    },
+    {
+      "seite": 14,
+      "box": [0.50, 0.32, 0.95, 0.68],
+      "name": "ziegel-flachschichtpflaster",
+      "alt": "Einfaches Ziegel-Flachschichtpflaster mit Sandbett und Verlegearten",
+      "unterschrift": "Einfaches Ziegel-Flachschichtpflaster (Buch S. 260)"
+    },
+    {
+      "seite": 14,
+      "box": [0.50, 0.60, 0.95, 0.88],
+      "name": "verlegearten-ziegelpflaster",
+      "alt": "Verlegearten für Ziegelpflaster: Schachbrett, Ellenbogen, stehende Rolle, diagonal",
+      "unterschrift": "Verlegearten für Ziegelpflaster (Buch S. 260)"
+    },
+    {
+      "seite": 15,
+      "box": [0.06, 0.12, 0.95, 0.66],
+      "name": "fussboeden-aufbau",
+      "alt": "Aufbau verschiedener Fußböden: Verbundestrich, Estrich auf Dämmschicht, Trennschicht",
+      "unterschrift": "Aufbau verschiedener Fußböden (Buch S. 261)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.10, 0.95, 0.44],
+      "name": "platten-uebersicht",
+      "alt": "Übersicht über Platten: Naturstein, Feinkeramik, Grobkeramik, bindemittelgebunden",
+      "unterschrift": "Übersicht über Platten (Buch S. 262)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.44, 0.95, 0.72],
+      "name": "keramik-wasseraufnahme-gruppen",
+      "alt": "Keramische Fliesen für Wand- und Bodenbeläge nach Wasseraufnahmegruppen",
+      "unterschrift": "Keramische Fliesen nach Wasseraufnahme (Buch S. 262)"
+    },
+    {
+      "seite": 16,
+      "box": [0.50, 0.72, 0.95, 0.94],
+      "name": "fliesen-plattenmasse",
+      "alt": "Fliesen- und Plattenmaße: Werkmaß, Fugenbreite, Koordinierungsmaß",
+      "unterschrift": "Fliesen- und Plattenmaße (Buch S. 262)"
+    },
+    {
+      "seite": 17,
+      "box": [0.50, 0.10, 0.95, 0.62],
+      "name": "herstellung-keramik-schema",
+      "alt": "Herstellung keramischer Fliesen im Zweibrandverfahren",
+      "unterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
+    },
+    {
+      "seite": 18,
+      "box": [0.50, 0.10, 0.95, 0.30],
+      "name": "abriebklassen",
+      "alt": "Abriebklassen 1 bis 4 und Beanspruchung glasierter Steinzeugbodenfliesen",
+      "unterschrift": "Abriebklassen glasierter Steinzeugbodenfliesen (Buch S. 264)"
+    },
+    {
+      "seite": 18,
+      "box": [0.50, 0.40, 0.95, 0.70],
+      "name": "spaltplatten-erzeugnisse",
+      "alt": "Keramische Strangerzeugnisse: Spaltplatte, Schenkelplatte, Überlaufrinne",
+      "unterschrift": "Keramische Strangerzeugnisse (Buch S. 264)"
+    },
+    {
+      "seite": 19,
+      "box": [0.50, 0.40, 0.95, 0.68],
+      "name": "verlegemuster-betonplatten",
+      "alt": "Verlegemuster für Betonplatten: Gehwegplatten und Fußbodenplatten",
+      "unterschrift": "Verlegemuster für Betonplatten (Buch S. 265)"
+    },
+    {
+      "seite": 19,
+      "box": [0.50, 0.70, 0.95, 0.88],
+      "name": "terrazzoplatte-aufbau",
+      "alt": "Aufbau Terrazzoplatte und Terrazzo-Asphaltplatte mit Vorsatz- und Kernbeton",
+      "unterschrift": "Terrazzoplatte und Terrazzo-Asphaltplatte (Buch S. 265)"
+    },
+    {
+      "seite": 20,
+      "box": [0.50, 0.55, 0.95, 0.80],
+      "name": "zementmoerteldübel",
+      "alt": "Bildung von Zementmörteldübeln beim Ansetzen im Dickbett",
+      "unterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
+    },
+    {
+      "seite": 21,
+      "box": [0.50, 0.44, 0.95, 0.70],
+      "name": "duennbett-verfahren",
+      "alt": "Floating-, Buttering- und kombiniertes Verfahren beim Dünnbettverlegen",
+      "unterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
+    },
+    {
+      "seite": 22,
+      "box": [0.50, 0.10, 0.95, 0.42],
+      "name": "fliesenbedarf-berechnung",
+      "alt": "Berechnungsbeispiel Fliesenbedarf und Mörtelbedarf pro m²",
+      "unterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
+    },
+    {
+      "seite": 23,
+      "box": [0.06, 0.10, 0.95, 0.52],
+      "name": "fliesenarbeiten-dusche",
+      "alt": "Fliesenarbeiten im Duschbereich mit Schichtenaufbau und Abdichtung",
+      "unterschrift": "Fliesenarbeiten im Duschbereich (Buch S. 269)"
+    }
+  ]
+}
