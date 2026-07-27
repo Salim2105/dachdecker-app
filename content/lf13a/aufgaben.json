@@ -1711,7 +1711,7 @@
     "thema": "Blechkehle",
     "quelle": "Grundstufe Bautechnik, Buch S. 485",
     "konfidenz": "hoch",
-    "text": "Die Kehlbleche ueberdecken sich bei Kehlneigungen unter 22 Grad mindestens {{15}} cm, bei Kehlneigungen ueber 22 Grad mindestens {{10}} cm. Bei Neigungen unter {{15}}b Grad sind 20 cm Ueberdeckung erforderlich.",
+    "text": "Die Kehlbleche ueberdecken sich bei Kehlneigungen unter 22 Grad mindestens {{15}} cm, bei Kehlneigungen ueber 22 Grad mindestens {{10}} cm. Bei Neigungen unter {{15}} Grad sind 20 cm Ueberdeckung erforderlich.",
     "akzeptiert": {
       "15": [
         "15"
@@ -1719,9 +1719,6 @@
       "10": [
         "10",
         "zehn"
-      ],
-      "15b": [
-        "15"
       ]
     },
     "erklaerung": "Die Kehlbleche überdecken sich bei Kehlneigungen unter 22° um mindestens 15 cm, bei Kehlneigungen über 22° um mindestens 10 cm. Bei Neigungen unter 15° sind 20 cm Überdeckung erforderlich. Die Dachplatten überdecken die Blechkehle um mindestens 12 cm bei Dachneigungen unter 50° bzw. 10 cm bei Dachneigungen ≥ 50°.",
@@ -1861,7 +1858,7 @@
     "thema": "Anschlüsse aus Metall",
     "quelle": "Grundstufe Bautechnik, Buch S. 487 (Aufgabe 3, S. 489)",
     "konfidenz": "hoch",
-    "text": "Dachplatten muessen die Anschlussbleche um mindestens {{12}} cm ueberdecken, bei Dachneigungen ueber 35 Grad genuegen {{10}} cm. Die Nocken muessen mindestens {{15}} cm ueberdeckt werden, bei Dachneigungen ueber 35 Grad {{12}}b cm.",
+    "text": "Dachplatten muessen die Anschlussbleche um mindestens {{12}} cm ueberdecken, bei Dachneigungen ueber 35 Grad genuegen {{10}} cm. Die Nocken muessen mindestens {{15}} cm ueberdeckt werden, bei Dachneigungen ueber 35 Grad {{12}} cm.",
     "akzeptiert": {
       "12": [
         "12",
@@ -1874,11 +1871,6 @@
       ],
       "15": [
         "15"
-      ],
-      "12b": [
-        "12",
-        "zwoelf",
-        "zwölf"
       ]
     },
     "erklaerung": "Bei allen Deckarten können Wände und Schornsteinköpfe durch Metallformteile angeschlossen werden. Dazu eignen sich gefalzte Metallblechwinkel, Metallblechschichtstücke (Nocken) und Metallblechrinnen. Dachplatten müssen die Anschlussbleche um mindestens 12 cm (10 cm bei DN > 35°), die Nocken um mindestens 15 cm (12 cm bei DN > 35°) überdecken. An den Metallteilen wird eine Ortdeckung ausgeführt. An Wänden bzw. Schornsteinen müssen die Metallteile mindestens 8 cm über die Deckung hochgeführt werden.",

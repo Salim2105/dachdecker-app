@@ -265,7 +265,7 @@
     "thema": "Regeldachneigung",
     "quelle": "Grundstufe Bautechnik, Buch S. 448 (Tabelle)",
     "konfidenz": "hoch",
-    "text": "Regeldachneigungen: Doppelstehfalzdeckung {{7}}°, Winkelstehfalzdeckung {{25}}°, Leistenfalzdeckung {{7b}}°. Fuer die rollnahtgeschweisste Edelstahldeckung ist {{keine}} Regeldachneigung festgelegt.",
+    "text": "Regeldachneigungen: Doppelstehfalzdeckung {{7}}°, Winkelstehfalzdeckung {{25}}°, Leistenfalzdeckung {{7}}°. Fuer die rollnahtgeschweisste Edelstahldeckung ist {{keine}} Regeldachneigung festgelegt.",
     "akzeptiert": {
       "7": [
         "7",
@@ -273,10 +273,6 @@
       ],
       "25": [
         "25"
-      ],
-      "7b": [
-        "7",
-        "sieben"
       ],
       "keine": [
         "keine",
@@ -2173,16 +2169,13 @@
     "thema": "Materialbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 458 (Beispiel 2)",
     "konfidenz": "hoch",
-    "text": "Zuschnittbreiten der Profile im Buchbeispiel: Traufblech {{26}} cm, Firstkappe {{48}} cm und Ortgangabdeckung {{26b}} cm.",
+    "text": "Zuschnittbreiten der Profile im Buchbeispiel: Traufblech {{26}} cm, Firstkappe {{48}} cm und Ortgangabdeckung {{26}} cm.",
     "akzeptiert": {
       "26": [
         "26"
       ],
       "48": [
         "48"
-      ],
-      "26b": [
-        "26"
       ]
     },
     "erklaerung": "Die Zuschnittbreite ergibt sich aus der Summe der einzelnen Schenkel des abgekanteten Profils. Buchbeispiel S. 458: Traufblech 15 + 6 + 3 + 2 = 26 cm; Firstkappe 14 + 14 + 8 + 8 + 2 + 2 = 48 cm; Ortgangabdeckung 14 + 6 + 3 + 3 = 26 cm. Deshalb werden die Tafeln als 2,00 × 0,26 m bzw. 2,00 × 0,48 m bestellt.",
