@@ -1,0 +1,392 @@
+{
+  "lf": "lf10",
+  "pdf": "/Users/salimsakkali/Downloads/LF10.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 398+i (p01 = S.399).",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [0.48, 0.12, 0.98, 0.30],
+      "name": "projekt-kiosk",
+      "alt": "Schrägbild des Verkaufskiosks der Projektaufgabe mit Flachdach",
+      "unterschrift": "Projektaufgabe: Verkaufskiosk (Buch S. 399)"
+    },
+    {
+      "seite": 1,
+      "box": [0.45, 0.35, 0.98, 0.55],
+      "name": "projekt-schnitt",
+      "alt": "Schnitt A-B durch den Kiosk mit Stahlbetondecke und Maßangaben",
+      "unterschrift": "Projektaufgabe: Schnitt A-B (Buch S. 399)"
+    },
+    {
+      "seite": 1,
+      "box": [0.20, 0.58, 0.75, 0.92],
+      "name": "projekt-grundriss",
+      "alt": "Grundriss des Verkaufskiosks mit Verkaufsraum, Vorraum und WC",
+      "unterschrift": "Projektaufgabe: Grundriss (Buch S. 399)"
+    },
+    {
+      "seite": 2,
+      "box": [0.50, 0.24, 0.98, 0.56],
+      "name": "begruente-flachdaecher",
+      "alt": "Begrünte Flachdächer als Beispiel für zusätzliche Nutzflächen",
+      "unterschrift": "Begrünte Flachdächer (Buch S. 400)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.12, 0.98, 0.44],
+      "name": "stahltrapezprofile",
+      "alt": "Stahltrapezprofile als Unterkonstruktion mit Schichtenaufbau",
+      "unterschrift": "Stahltrapezprofile als Unterkonstruktion (Buch S. 401)"
+    },
+    {
+      "seite": 3,
+      "box": [0.48, 0.48, 0.98, 0.92],
+      "name": "dachabdichtung-holzschalung",
+      "alt": "Dachabdichtung auf Holzschalung mit belüftetem Dachraum und Wärmedämmung",
+      "unterschrift": "Dachabdichtung auf Holzschalung (Buch S. 401)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.10, 0.98, 0.32],
+      "name": "nicht-belueftetes-flachdach",
+      "alt": "Schichtaufbau nicht belüftetes Flachdach mit Dampfsperre unter der Wärmedämmung",
+      "unterschrift": "Nicht belüftetes Flachdach (Buch S. 402)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.32, 0.98, 0.54],
+      "name": "umkehrdach",
+      "alt": "Schichtaufbau Umkehrdach mit Wärmedämmung über der Abdichtung",
+      "unterschrift": "Umkehrdach (Buch S. 402)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.54, 0.98, 0.74],
+      "name": "plusdach",
+      "alt": "Schichtaufbau Plusdach mit Auflast, Filtervlies und zwei Dämmschichten",
+      "unterschrift": "Plusdach (Buch S. 402)"
+    },
+    {
+      "seite": 4,
+      "box": [0.48, 0.74, 0.98, 0.95],
+      "name": "belueftetes-dach",
+      "alt": "Schichtaufbau belüftetes Dach mit Luftraum zwischen oberer und unterer Schale",
+      "unterschrift": "Belüftetes Dach (Buch S. 402)"
+    },
+    {
+      "seite": 5,
+      "box": [0.48, 0.12, 0.98, 0.34],
+      "name": "gruendach-schichtaufbau",
+      "alt": "Schichtaufbau bei begrünten Flachdächern mit Vegetations-, Filter-, Drän- und Wurzelschutzschicht",
+      "unterschrift": "Schichtaufbau bei begrünten Flachdächern (Buch S. 403)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.12, 0.98, 0.36],
+      "name": "schichten-im-flachdach",
+      "alt": "Schichten im Flachdach: Voranstrich, Dampfsperre, Ausgleichsschicht, Wärmedämmung, Abdichtung",
+      "unterschrift": "Schichten im Flachdach (Buch S. 404)"
+    },
+    {
+      "seite": 6,
+      "box": [0.05, 0.32, 0.48, 0.44],
+      "name": "trennschicht-werkstoffe",
+      "alt": "Werkstoffe für Trenn- und Ausgleichsschichten: Lochglasvlies-Bitumenbahnen, Kunststoffvliese",
+      "unterschrift": "Werkstoffe für Trenn- und Ausgleichsschichten (Buch S. 404)"
+    },
+    {
+      "seite": 6,
+      "box": [0.05, 0.52, 0.48, 0.68],
+      "name": "dampfsperrbahnen",
+      "alt": "Übersicht der Bahnen für Dampfsperren",
+      "unterschrift": "Bahnen für Dampfsperren (Buch S. 404)"
+    },
+    {
+      "seite": 6,
+      "box": [0.48, 0.58, 0.98, 0.94],
+      "name": "verlegen-daemmplatten",
+      "alt": "Verlegen von Wärmedämmplatten auf dem Flachdach",
+      "unterschrift": "Verlegen von Wärmedämmplatten (Buch S. 404)"
+    },
+    {
+      "seite": 7,
+      "box": [0.45, 0.14, 0.98, 0.36],
+      "name": "mindestdaemmdicke-trapez",
+      "alt": "Tabelle Mindestdämmstoffdicke auf Trapezprofilen für EPS, PUR, Schaumglas und Mineralfaser",
+      "unterschrift": "Mindestdämmstoffdicke auf Trapezprofilen (Buch S. 405)"
+    },
+    {
+      "seite": 7,
+      "box": [0.05, 0.72, 0.98, 0.94],
+      "name": "einsatzgebiete-daemmstoffe",
+      "alt": "Einsatzgebiete Wärmedämmstoffe EPS, XPS, PUR/PIR und CG mit Anwendungstyp und Druckbelastbarkeit",
+      "unterschrift": "Einsatzgebiete Wärmedämmstoffe (Buch S. 405)"
+    },
+    {
+      "seite": 7,
+      "box": [0.48, 0.50, 0.98, 0.72],
+      "name": "gefaelledaemmplatten",
+      "alt": "Verlegung von Gefälledämmplatten auf dem Flachdach",
+      "unterschrift": "Verlegung von Gefälledämmplatten (Buch S. 405)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.12, 0.98, 0.32],
+      "name": "flachdach-gefaelledaemmung",
+      "alt": "Flachdach mit Gefälledämmschicht im Schnitt",
+      "unterschrift": "Flachdach mit Gefälledämmschicht (Buch S. 406)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.32, 0.98, 0.56],
+      "name": "systemskizze-gefaelle",
+      "alt": "Systemskizze eines Gefälledachsystems mit Kehllinien und Ausgleichsdreiecken",
+      "unterschrift": "Systemskizze Gefälledachsystem (Buch S. 406)"
+    },
+    {
+      "seite": 8,
+      "box": [0.48, 0.56, 0.98, 0.95],
+      "name": "entwaesserung-linien-punkt",
+      "alt": "Linienentwässerung und punktförmige Entwässerung im Vergleich",
+      "unterschrift": "Linien- und punktförmige Entwässerung (Buch S. 406)"
+    },
+    {
+      "seite": 9,
+      "box": [0.48, 0.12, 0.98, 0.32],
+      "name": "penetration",
+      "alt": "Bestimmung der Eindringtiefe (Penetration) von Bitumen mit der Prüfnadel",
+      "unterschrift": "Bestimmung der Penetration (Buch S. 407)"
+    },
+    {
+      "seite": 9,
+      "box": [0.48, 0.32, 0.98, 0.55],
+      "name": "ring-und-kugel",
+      "alt": "Bestimmung des Erweichungspunktes nach dem Ring-und-Kugel-Verfahren",
+      "unterschrift": "Erweichungspunkt Ring und Kugel (Buch S. 407)"
+    },
+    {
+      "seite": 9,
+      "box": [0.45, 0.55, 0.98, 0.68],
+      "name": "bitumensorten-tabelle",
+      "alt": "Tabelle der Bitumensorten mit Penetration und Erweichungspunkt",
+      "unterschrift": "Bitumensorten: Penetration und Erweichungspunkt (Buch S. 407)"
+    },
+    {
+      "seite": 10,
+      "box": [0.05, 0.18, 0.55, 0.50],
+      "name": "traegereinlagen",
+      "alt": "Tabelle der Trägereinlagen mit Kurzzeichen und flächenbezogener Masse",
+      "unterschrift": "Trägereinlagen für Bitumenbahnen (Buch S. 408)"
+    },
+    {
+      "seite": 10,
+      "box": [0.48, 0.72, 0.98, 0.94],
+      "name": "aufbau-bitumenbahn",
+      "alt": "Aufbau einer Bitumenbahn mit Bestreuung, Deckmassen und Trägereinlage",
+      "unterschrift": "Aufbau einer Bitumenbahn (Buch S. 408)"
+    },
+    {
+      "seite": 11,
+      "box": [0.48, 0.10, 0.98, 0.36],
+      "name": "abstreuung",
+      "alt": "Abstreuung mit Schiefersplitt und Quarzsand im Vergleich",
+      "unterschrift": "Abstreuung Schiefersplitt und Quarzsand (Buch S. 409)"
+    },
+    {
+      "seite": 11,
+      "box": [0.45, 0.36, 0.98, 0.76],
+      "name": "kurzzeichen-bitumenbahnen",
+      "alt": "Tabelle der Kurzbezeichnungen für Bitumenbahnen und deren Bedeutung",
+      "unterschrift": "Kurzzeichen Bitumenbahnen (Buch S. 409)"
+    },
+    {
+      "seite": 11,
+      "box": [0.45, 0.76, 0.98, 0.94],
+      "name": "anwendungstypen",
+      "alt": "Anwendungstypen DE, DO, DU und DZ für Dachabdichtungen",
+      "unterschrift": "Anwendungstypen Dachabdichtung (Buch S. 409)"
+    },
+    {
+      "seite": 12,
+      "box": [0.05, 0.10, 0.98, 0.85],
+      "name": "bitumenbahnen-eigenschaften",
+      "alt": "Große Tabelle: Bitumenbahnen mit Verarbeitung, Dicke, Anwendungstyp, Einlage, mechanischen und thermischen Eigenschaften",
+      "unterschrift": "Bitumenbahnen: Eigenschaften und Verwendung (Buch S. 410)"
+    },
+    {
+      "seite": 13,
+      "box": [0.48, 0.12, 0.98, 0.30],
+      "name": "normaldeckung-zweilagig",
+      "alt": "Normaldeckung zweilagig mit Überdeckung der ersten und zweiten Lage",
+      "unterschrift": "Normaldeckung zweilagig (Buch S. 411)"
+    },
+    {
+      "seite": 13,
+      "box": [0.48, 0.30, 0.98, 0.48],
+      "name": "anordnung-bahnen",
+      "alt": "Anordnung der Bahnen bei zweilagiger Abdichtung mit Naht und Stoß",
+      "unterschrift": "Anordnung der Bahnen bei zweilagiger Abdichtung (Buch S. 411)"
+    },
+    {
+      "seite": 13,
+      "box": [0.45, 0.50, 0.98, 0.70],
+      "name": "kaltselbstkleben-giessen",
+      "alt": "Kaltselbstkleben und Gießverfahren bei der Verlegung von Bitumenbahnen",
+      "unterschrift": "Kaltselbstkleben und Gießen (Buch S. 411)"
+    },
+    {
+      "seite": 13,
+      "box": [0.45, 0.70, 0.98, 0.92],
+      "name": "schweissverfahren",
+      "alt": "Verlegen von Bitumenbahnen im Schweißverfahren mit offener Flamme",
+      "unterschrift": "Verlegen im Schweißverfahren (Buch S. 411)"
+    },
+    {
+      "seite": 14,
+      "box": [0.48, 0.10, 0.98, 0.42],
+      "name": "molekuelstruktur-kunststoffe",
+      "alt": "Molekülstruktur der Plastomere, Duromere und Elastomere im Vergleich",
+      "unterschrift": "Molekülstruktur der Kunststoffe (Buch S. 412)"
+    },
+    {
+      "seite": 15,
+      "box": [0.45, 0.12, 0.98, 0.32],
+      "name": "kunststoffbahnen-uebersicht",
+      "alt": "Übersicht Elastomerbahnen und Kunststoffbahnen mit Kurzzeichen ECB, EVA, FPO, PVC-P, PIB",
+      "unterschrift": "Übersicht Kunststoff- und Elastomerbahnen (Buch S. 413)"
+    },
+    {
+      "seite": 15,
+      "box": [0.45, 0.34, 0.98, 0.72],
+      "name": "genormte-kunststoffbahnen",
+      "alt": "Tabelle der genormten Kunststoff- und Elastomerbahnen mit Mindestnenndicke bei einlagiger Verlegung",
+      "unterschrift": "Genormte Kunststoff- und Elastomerbahnen (Buch S. 413)"
+    },
+    {
+      "seite": 15,
+      "box": [0.05, 0.74, 0.98, 0.94],
+      "name": "genormte-kurzbezeichnungen",
+      "alt": "Genormte Kurzbezeichnungen für Kunststoffbahnen mit K, V, E, BV, NB, SK, TPB, PBS",
+      "unterschrift": "Genormte Kurzbezeichnungen (Buch S. 413)"
+    },
+    {
+      "seite": 16,
+      "box": [0.48, 0.10, 0.98, 0.62],
+      "name": "quellschweissen",
+      "alt": "Quellschweißverfahren: Quellschweißmittel einstreichen, Rollen und Andrücken",
+      "unterschrift": "Quellschweißverfahren (Buch S. 414)"
+    },
+    {
+      "seite": 16,
+      "box": [0.48, 0.60, 0.98, 0.80],
+      "name": "heissluftschweissen",
+      "alt": "Nahtverbindung durch Heißluftschweißen mit Warmgasschweißgerät und Kunststoffrolle",
+      "unterschrift": "Nahtverbindung durch Heißluftschweißen (Buch S. 414)"
+    },
+    {
+      "seite": 17,
+      "box": [0.05, 0.38, 0.98, 0.58],
+      "name": "fluessigkunststoffe-tabelle",
+      "alt": "Technische Eigenschaften von Flüssigkunststoffen PMMA, PUR und UP",
+      "unterschrift": "Technische Eigenschaften von Flüssigkunststoffen (Buch S. 415)"
+    },
+    {
+      "seite": 18,
+      "box": [0.48, 0.10, 0.98, 0.46],
+      "name": "windzonen-karte",
+      "alt": "Karte der vier Windzonen in Deutschland nach DIN 1055-4",
+      "unterschrift": "Windzonen in Deutschland (Buch S. 416)"
+    },
+    {
+      "seite": 18,
+      "box": [0.45, 0.44, 0.98, 0.72],
+      "name": "verklebung-tabelle",
+      "alt": "Tabelle 1 Verklebung der Abdichtung mit Heißbitumen, Kaltbitumen und PUR-Kleber je Dachbereich",
+      "unterschrift": "Verklebung der Abdichtung (Buch S. 416)"
+    },
+    {
+      "seite": 18,
+      "box": [0.45, 0.70, 0.98, 0.95],
+      "name": "flachdachbereiche",
+      "alt": "Flachdachbereiche nach DIN 1055-4 mit Eckbereich F, Außenrand G, Innenbereich H und Innenrand I",
+      "unterschrift": "Flachdachbereiche nach DIN 1055-4 (Buch S. 416)"
+    },
+    {
+      "seite": 19,
+      "box": [0.48, 0.12, 0.98, 0.32],
+      "name": "dachrand-attika",
+      "alt": "Dachrand mit Attika ist günstig für die Windlastbeanspruchung",
+      "unterschrift": "Dachrand mit Attika (Buch S. 417)"
+    },
+    {
+      "seite": 19,
+      "box": [0.05, 0.52, 0.98, 0.94],
+      "name": "sicherungsmassnahmen-10m",
+      "alt": "Sicherungsmaßnahmen für Gebäude bis 10 m Höhe nach Windzone, Kies, Befestigern und Stiften",
+      "unterschrift": "Sicherungsmaßnahmen bis 10 m Höhe (Buch S. 417)"
+    },
+    {
+      "seite": 20,
+      "box": [0.05, 0.10, 0.98, 0.48],
+      "name": "sicherungsmassnahmen-18m",
+      "alt": "Sicherungsmaßnahmen für Gebäude von 10 bis 18 m Höhe nach Windzone",
+      "unterschrift": "Sicherungsmaßnahmen 10 bis 18 m Höhe (Buch S. 418)"
+    },
+    {
+      "seite": 20,
+      "box": [0.05, 0.50, 0.98, 0.90],
+      "name": "sicherungsmassnahmen-25m",
+      "alt": "Sicherungsmaßnahmen für Gebäude von 18 bis 25 m Höhe nach Windzone",
+      "unterschrift": "Sicherungsmaßnahmen 18 bis 25 m Höhe (Buch S. 418)"
+    },
+    {
+      "seite": 21,
+      "box": [0.05, 0.60, 0.50, 0.94],
+      "name": "anordnung-bahnen-zweilagig",
+      "alt": "Anordnung der Bahnen bei zweilagiger Abdichtung mit sichtbarer Deckfläche",
+      "unterschrift": "Sichtbare Deckfläche bei zweilagiger Abdichtung (Buch S. 419)"
+    },
+    {
+      "seite": 21,
+      "box": [0.48, 0.58, 0.98, 0.92],
+      "name": "formeln-materialbedarf",
+      "alt": "Formeln für verarbeitete Materialmenge und sichtbare Deckfläche von Dachbahnen",
+      "unterschrift": "Formeln Materialbedarf Dachbahnen (Buch S. 419)"
+    },
+    {
+      "seite": 22,
+      "box": [0.10, 0.26, 0.55, 0.94],
+      "name": "kennzeichnungen-schichten",
+      "alt": "Kennzeichnungen von geschnittenen Stoffen in Bauzeichnungen für Flachdachschichten",
+      "unterschrift": "Kennzeichnungen der Flachdachschichten (Buch S. 420)"
+    },
+    {
+      "seite": 22,
+      "box": [0.55, 0.14, 0.98, 0.94],
+      "name": "aufgaben-konstruktionszeichnungen",
+      "alt": "Aufgaben zum Erstellen von Konstruktionszeichnungen für Flachdachaufbauten",
+      "unterschrift": "Aufgaben Konstruktionszeichnungen (Buch S. 420)"
+    },
+    {
+      "seite": 23,
+      "box": [0.05, 0.28, 0.50, 0.46],
+      "name": "bitumenhaltige-massen",
+      "alt": "Tabelle bitumenhaltige Massen für Dachabdichtungen in kg je Quadratmeter",
+      "unterschrift": "Bitumenhaltige Massen für Dachabdichtungen (Buch S. 421)"
+    },
+    {
+      "seite": 23,
+      "box": [0.50, 0.26, 0.98, 0.50],
+      "name": "anhaltswerte-materialverbrauch",
+      "alt": "Rechenbeispiel und Anhaltswerte für Materialverbrauch bei Wärmedämmplatten, Besplittung und Kies",
+      "unterschrift": "Anhaltswerte für Materialverbrauch (Buch S. 421)"
+    },
+    {
+      "seite": 23,
+      "box": [0.05, 0.52, 0.98, 0.94],
+      "name": "aufgabenblock-materialbedarf",
+      "alt": "Aufgabensammlung zum Materialbedarf mit Winkelbungalow-Skizze",
+      "unterschrift": "Aufgabensammlung Materialbedarf (Buch S. 421)"
+    }
+  ]
+}
