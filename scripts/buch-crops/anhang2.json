@@ -1,0 +1,1484 @@
+{
+  "lf": "anhang2",
+  "pdf": "/Users/salimsakkali/Downloads/ANHANG2.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 581+i (Seite 1 = Buch S. 582 ... Seite 30 = Buch S. 611). Seiten 13 bis 30 sind quer fotografiert und werden mit rot 270 geradegedreht.",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.08,
+        0.162,
+        0.885,
+        0.258
+      ],
+      "name": "einleitung",
+      "alt": "Einleitungskasten zur Bauphysik ueber Kaelte, Waerme, Laerm und Feuchtigkeit als Belastungen",
+      "unterschrift": "Warum Bauphysik (Buch S. 582)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.08,
+        0.728,
+        0.885,
+        0.925
+      ],
+      "name": "bauphysik-uebersicht",
+      "alt": "Baumdiagramm der vier Bereiche der Bauphysik: Waermeschutz, Schallschutz, Feuchtigkeitsschutz und Brandschutz mit ihren Unterpunkten",
+      "unterschrift": "Die verschiedenen Bereiche der Bauphysik (Buch S. 582)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.496,
+        0.272,
+        0.885,
+        0.408
+      ],
+      "name": "molekuele",
+      "alt": "Grafik stark schwingender Molekuele fester Stoffe mit Schwingungsbereich",
+      "unterschrift": "Stark schwingende Molekuele fester Stoffe (Buch S. 583)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.496,
+        0.415,
+        0.885,
+        0.638
+      ],
+      "name": "solarenergie",
+      "alt": "Foto einer Solarthermieanlage auf einem Flachdach als natuerliche Waermequelle",
+      "unterschrift": "Solarenergie als Waermequelle (Buch S. 583)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.496,
+        0.748,
+        0.885,
+        0.93
+      ],
+      "name": "reibungswaerme",
+      "alt": "Grafik der Waermeerzeugung durch mechanische Reibung an einem Werkstueck",
+      "unterschrift": "Waermeerzeugung durch Reibung (Buch S. 583)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.08,
+        0.492,
+        0.472,
+        0.568
+      ],
+      "name": "waerme-definition",
+      "alt": "Kasten mit der Definition von Waerme als Bewegungsenergie der Molekuele",
+      "unterschrift": "Waerme als Bewegungsenergie (Buch S. 583)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.496,
+        0.125,
+        0.885,
+        0.382
+      ],
+      "name": "thermometer",
+      "alt": "Vergleich der Temperaturskalen Grad Celsius und Kelvin mit Siedepunkt, Gefrierpunkt und absolutem Nullpunkt",
+      "unterschrift": "Temperaturmessung: Grad Celsius und Kelvin (Buch S. 584)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.08,
+        0.352,
+        0.472,
+        0.438
+      ],
+      "name": "temperatur-box",
+      "alt": "Kasten zur Temperatur in Kelvin und Grad Celsius mit dem absoluten Nullpunkt bei minus 273 Grad",
+      "unterschrift": "Temperatur und absoluter Nullpunkt (Buch S. 584)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.496,
+        0.465,
+        0.885,
+        0.565
+      ],
+      "name": "waermemenge",
+      "alt": "Grafik zur Einheit der Waermemenge: 1 kg Wasser um 1 Grad erwaermt entspricht 4,19 kJ",
+      "unterschrift": "Einheit der Waermemenge (Buch S. 584)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.496,
+        0.655,
+        0.885,
+        0.735
+      ],
+      "name": "energieeinheiten",
+      "alt": "Umrechnungstabelle Joule, Wattsekunde, Wattstunde und Kilowattstunde",
+      "unterschrift": "Umrechnung der Energieeinheiten (Buch S. 584)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.496,
+        0.788,
+        0.885,
+        0.932
+      ],
+      "name": "laengenausdehnung-messung",
+      "alt": "Versuchsaufbau zum Messen der Laengenausdehnung eines Pruefstabs durch Erwaermen",
+      "unterschrift": "Messen der Laengenausdehnung durch Erwaermen (Buch S. 584)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.496,
+        0.14,
+        0.885,
+        0.372
+      ],
+      "name": "dehn-beispiel",
+      "alt": "Rechenbeispiel zur Laengenaenderung eines Kupfer-Kehlbleches von 6 m Laenge bei 85 Kelvin Temperaturdifferenz",
+      "unterschrift": "Beispiel Laengenaenderung eines Kehlbleches (Buch S. 585)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.496,
+        0.375,
+        0.885,
+        0.565
+      ],
+      "name": "dehnzahl-tabelle",
+      "alt": "Tabelle der Temperaturdehnzahlen von Baustoffen: Stahl 0,011, Kupfer 0,017, Aluminium 0,024, Titanzink 0,022, Blei 0,029",
+      "unterschrift": "Temperaturdehnzahlen von Baustoffen (Buch S. 585)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.08,
+        0.585,
+        0.472,
+        0.915
+      ],
+      "name": "waerme-zusammenfassung",
+      "alt": "Zusammenfassung zu Waerme als Bewegungsenergie, Temperatur und Waermeausdehnung",
+      "unterschrift": "Zusammenfassung Waerme (Buch S. 585)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.496,
+        0.585,
+        0.885,
+        0.928
+      ],
+      "name": "waerme-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 5 zum Abschnitt Waerme",
+      "unterschrift": "Aufgaben zum Abschnitt Waerme (Buch S. 585)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.496,
+        0.125,
+        0.885,
+        0.338
+      ],
+      "name": "waermeschutz-dach",
+      "alt": "Isometrie eines Dachaufbaus mit Waermedaemmung und Dachfenster",
+      "unterschrift": "Waermeschutz am Dach (Buch S. 586)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.08,
+        0.418,
+        0.885,
+        0.602
+      ],
+      "name": "symbol-tabelle",
+      "alt": "Tabelle der neuen Symbole im Waermeschutz mit Groesse, Symbol und Einheit fuer Schichtdicke, Waermeleitfaehigkeit, Waermedurchlasswiderstand und U-Wert",
+      "unterschrift": "Neue Symbole im Waermeschutz (Buch S. 586)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.496,
+        0.645,
+        0.885,
+        0.932
+      ],
+      "name": "konvektion",
+      "alt": "Grafik der Stroemung der Raumluft bei einem Raumheizkoerper mit warmer und abgekuehlter Luft",
+      "unterschrift": "Stroemung der Raumluft bei Raumheizkoerpern (Buch S. 586)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.496,
+        0.1,
+        0.885,
+        0.318
+      ],
+      "name": "waermestrahlung",
+      "alt": "Grafik der Waermestrahlung einer Heizsonne mit Reflexion an hellem Aluminium und Absorption an dunklem Putz",
+      "unterschrift": "Waermestrahlung und ihre Wirkung (Buch S. 587)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.496,
+        0.332,
+        0.885,
+        0.615
+      ],
+      "name": "waermeverlust-haus",
+      "alt": "Hausschnitt mit den Waermeverlusten: Heizung und Schornstein 32 Prozent, Fenster 28 Prozent, Waende 18 Prozent, Dach und Flachdach 16 Prozent, Keller 6 Prozent",
+      "unterschrift": "Waermeverlust durch Waermeleitung (Buch S. 587)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.496,
+        0.655,
+        0.885,
+        0.915
+      ],
+      "name": "waermeleitung-wuerfel",
+      "alt": "Darstellung der Einheit der Waermeleitung durch einen Stoff mit Temperaturdifferenz von 1 Kelvin",
+      "unterschrift": "Darstellung der Einheit der Waermeleitung (Buch S. 587)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.08,
+        0.755,
+        0.472,
+        0.918
+      ],
+      "name": "lambda-box",
+      "alt": "Kasten zur Waermeleitfaehigkeit Lambda: je groesser Lambda, desto groesser die Waermeleitung",
+      "unterschrift": "Die Waermeleitfaehigkeit Lambda (Buch S. 587)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.496,
+        0.135,
+        0.885,
+        0.482
+      ],
+      "name": "r-beispiel",
+      "alt": "Rechenbeispiel zum Waermedurchlasswiderstand R einer einschaligen Wand aus Kalkgipsputz, Kalksandstein, Waermedaemmung und Kalkzementputz",
+      "unterschrift": "Beispiel Waermedurchlasswiderstand einer Wand (Buch S. 588)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.08,
+        0.412,
+        0.472,
+        0.495
+      ],
+      "name": "r-box",
+      "alt": "Kasten mit der Formel R gleich Schichtdicke geteilt durch Waermeleitfaehigkeit",
+      "unterschrift": "Berechnung des Waermedurchlasswiderstands (Buch S. 588)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.496,
+        0.502,
+        0.885,
+        0.93
+      ],
+      "name": "waermedaemmung-waende",
+      "alt": "Uebersicht von sechs Varianten der Waermedaemmung von Waenden: Massivwand, Aussendaemmung, Innendaemmung und mehrschalige Bauweisen",
+      "unterschrift": "Waermedaemmung von Waenden (Buch S. 588)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.08,
+        0.13,
+        0.472,
+        0.252
+      ],
+      "name": "u-formel-box",
+      "alt": "Kasten mit der U-Wert-Formel: U gleich 1 geteilt durch 0,17 plus R",
+      "unterschrift": "Berechnung des U-Wertes (Buch S. 589)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.08,
+        0.255,
+        0.472,
+        0.485
+      ],
+      "name": "u-cartoon",
+      "alt": "Vergleichszeichnung eines Hauses mit hohem und niedrigem U-Wert und dem entsprechenden Waermeabfluss",
+      "unterschrift": "Je kleiner der U-Wert, desto geringer der Waermeabfluss (Buch S. 589)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.496,
+        0.135,
+        0.885,
+        0.5
+      ],
+      "name": "u-beispiel",
+      "alt": "Rechenbeispiel zum U-Wert einer Aussenwand aus Kalkgipsputz, Stahlbeton, PS-Hartschaumplatten und Kalkzementputz mit dem Ergebnis 0,43",
+      "unterschrift": "Beispiel U-Wert einer Aussenwand (Buch S. 589)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.08,
+        0.515,
+        0.472,
+        0.915
+      ],
+      "name": "u-zusammenfassung",
+      "alt": "Zusammenfassung der Zusammenhaenge zwischen Waermeleitfaehigkeit, Waermedurchlasswiderstand und U-Wert",
+      "unterschrift": "Zusammenfassung Waermeschutz (Buch S. 589)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.496,
+        0.515,
+        0.885,
+        0.915
+      ],
+      "name": "u-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 7 zum Waermeschutz mit U-Wert-Berechnungen",
+      "unterschrift": "Aufgaben zum Waermeschutz (Buch S. 589)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.502,
+        0.145,
+        0.885,
+        0.312
+      ],
+      "name": "solar-nutzung",
+      "alt": "Foto eines Hauses mit Photovoltaikanlage und Elektroauto",
+      "unterschrift": "Nutzung von Solarenergie (Buch S. 590)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.496,
+        0.345,
+        0.885,
+        0.688
+      ],
+      "name": "geg-bauteile",
+      "alt": "Gebaeudeschnitt mit den nummerierten Bauteilen nach Gebaeudeenergiegesetz: Aussenwaende, Fenster, Dachfenster, Daecher und Decken gegen unbeheizte Raeume",
+      "unterschrift": "Bauteile nach Gebaeudeenergiegesetz (Buch S. 590)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.062,
+        0.695,
+        0.892,
+        0.922
+      ],
+      "name": "geg-tabelle",
+      "alt": "Tabelle der geforderten U-Werte nach GEG: Aussenwaende 0,24, Fenster 1,30, Dachfenster 1,40, Daecher bei Steildaechern 0,24, Flachdaecher 0,20, Decken gegen unbeheizte Raeume 0,30",
+      "unterschrift": "Hoechstwerte der U-Werte nach dem Gebaeudeenergiegesetz (Buch S. 590)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.496,
+        0.135,
+        0.885,
+        0.372
+      ],
+      "name": "energieausweis",
+      "alt": "Abbildung eines Energieausweises fuer Wohngebaeude mit Energiebedarfsskala",
+      "unterschrift": "Der Energieausweis (Buch S. 591)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.08,
+        0.135,
+        0.472,
+        0.275
+      ],
+      "name": "geg-box",
+      "alt": "Kasten zu den Anforderungen des Gebaeudeenergiegesetzes bei Neubau, Umbau und Verkauf",
+      "unterschrift": "GEG bei Neubau und Umbau (Buch S. 591)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.062,
+        0.362,
+        0.478,
+        0.922
+      ],
+      "name": "bsp1-flachdach",
+      "alt": "Rechenbeispiel 1: Nachweis des U-Wertes eines Flachdachs aus Kalkgipsputz, Stahlbeton, PUR-Hartschaum und Bitumendachbahnen mit dem Ergebnis 0,18",
+      "unterschrift": "Beispiel 1 Flachdach (Buch S. 591)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.485,
+        0.362,
+        0.892,
+        0.855
+      ],
+      "name": "bsp2-wand",
+      "alt": "Rechenbeispiel 2: Nachweis des U-Wertes einer Aussenwand mit Mineralfaserdaemmstoff und Mauerwerk mit dem Ergebnis 0,29, das die Anforderung nicht erfuellt",
+      "unterschrift": "Beispiel 2 Aussenwand (Buch S. 591)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.08,
+        0.125,
+        0.472,
+        0.382
+      ],
+      "name": "geg-zusammenfassung",
+      "alt": "Zusammenfassung zum Gebaeudeenergiegesetz und zur Energiebilanz",
+      "unterschrift": "Zusammenfassung Gebaeudeenergiegesetz (Buch S. 592)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.08,
+        0.392,
+        0.472,
+        0.92
+      ],
+      "name": "geg-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 7 zum Gebaeudeenergiegesetz mit einer Deckenskizze",
+      "unterschrift": "Aufgaben zum Gebaeudeenergiegesetz (Buch S. 592)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.496,
+        0.192,
+        0.885,
+        0.485
+      ],
+      "name": "daemmung-zwischen-sparren-foto",
+      "alt": "Foto einer Daemmung zwischen den Sparren mit Dachfenster",
+      "unterschrift": "Daemmung zwischen den Sparren (Buch S. 592)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.496,
+        0.492,
+        0.885,
+        0.735
+      ],
+      "name": "daemmung-auf-sparren-foto",
+      "alt": "Foto zweier Dachdecker beim Verlegen einer Aufsparrendaemmung",
+      "unterschrift": "Daemmung auf den Sparren (Buch S. 592)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.496,
+        0.742,
+        0.885,
+        0.935
+      ],
+      "name": "daemmung-sparren-schalung",
+      "alt": "Foto eines Dachstuhls mit Schalung und Daemmung zwischen den Sparren",
+      "unterschrift": "Daemmung zwischen den Sparren (Buch S. 592)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.745
+      ],
+      "name": "dachaufbau-schnitte",
+      "alt": "Vier Schnittzeichnungen der Daemmlagen: zwischen den Sparren bei zwei- und einschaligem Dach, unter den Sparren und auf den Sparren",
+      "unterschrift": "Lage der Daemmung im Dachaufbau (Buch S. 593)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.496,
+        0.748,
+        0.885,
+        0.932
+      ],
+      "name": "durchlueftung-dach",
+      "alt": "Schnitt eines ausgebauten Dachraums mit Be- und Entlueftung bei Unterdach und Daemmung unter den Sparren",
+      "unterschrift": "Durchlueftung bei Daechern mit Unterdach (Buch S. 593)"
+    },
+    {
+      "seite": 13,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.465,
+        0.472,
+        0.512
+      ],
+      "name": "zwischensparren-formel",
+      "alt": "Formel fuer den mittleren U-Wert aus U-Wert und Breite von Sparren und Gefach",
+      "unterschrift": "Formel fuer den gemittelten U-Wert (Buch S. 594)"
+    },
+    {
+      "seite": 13,
+      "rot": 270,
+      "box": [
+        0.062,
+        0.505,
+        0.892,
+        0.568
+      ],
+      "name": "zwischensparren-wortformel",
+      "alt": "Wortformel des mittleren U-Wertes aus Sparrenbereich und Gefachbereich",
+      "unterschrift": "Mittlerer U-Wert in Worten (Buch S. 594)"
+    },
+    {
+      "seite": 13,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.565,
+        0.885,
+        0.93
+      ],
+      "name": "zwischensparren-beispiel",
+      "alt": "Rechenbeispiel des U-Wertes eines unbeluefteten Daches mit Zwischensparrendaemmung, Gefach 65 cm und Sparren 10 cm, Ergebnis 0,22",
+      "unterschrift": "Beispiel Zwischensparrendaemmung (Buch S. 594)"
+    },
+    {
+      "seite": 13,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.142,
+        0.885,
+        0.292
+      ],
+      "name": "aufsparren-foto",
+      "alt": "Foto einer Aufsparrendaemmung mit Unterdeckbahn auf dem Dachstuhl",
+      "unterschrift": "Daemmung auf den Sparren (Buch S. 594)"
+    },
+    {
+      "seite": 13,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.268,
+        0.885,
+        0.485
+      ],
+      "name": "aufsparren-schnitt",
+      "alt": "Schnittzeichnung durch eine Aufsparrendaemmung mit Ziegeldeckung",
+      "unterschrift": "Schnitt durch eine Aufsparrendaemmung (Buch S. 594)"
+    },
+    {
+      "seite": 14,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.112,
+        0.472,
+        0.298
+      ],
+      "name": "daemmung-zusammenfassung",
+      "alt": "Zusammenfassung zur Lage der Daemmschichten beim ausgebauten geneigten Dach mit der Formel fuer den gemittelten U-Wert",
+      "unterschrift": "Zusammenfassung Daemmlagen (Buch S. 595)"
+    },
+    {
+      "seite": 14,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.385,
+        0.472,
+        0.915
+      ],
+      "name": "daemmung-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 6 zum Waermeschutz beim geneigten Dach mit zwei Aufbauskizzen",
+      "unterschrift": "Aufgaben zum geneigten Dach (Buch S. 595)"
+    },
+    {
+      "seite": 14,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.382
+      ],
+      "name": "daemmstoff-merkmale",
+      "alt": "Textabschnitt zu den Merkmalen guter Waermedaemmstoffe: geringe Waermeleitfaehigkeit unter 0,1, Witterungs- und Faeulnisbestaendigkeit, geringe Bereitschaft Feuchtigkeit aufzunehmen",
+      "unterschrift": "Merkmale guter Waermedaemmstoffe (Buch S. 595)"
+    },
+    {
+      "seite": 14,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.385,
+        0.885,
+        0.672
+      ],
+      "name": "kennzeichnung-daemmstoffe",
+      "alt": "Textabschnitt zur CE-Kennzeichnung der Daemmstoffe nach europaeischer Norm",
+      "unterschrift": "Kennzeichnung der Daemmstoffe (Buch S. 595)"
+    },
+    {
+      "seite": 14,
+      "rot": 270,
+      "box": [
+        0.485,
+        0.648,
+        0.892,
+        0.918
+      ],
+      "name": "normtabelle-daemmstoffe",
+      "alt": "Tabelle der zehn genormten Waermedaemmstoffe mit DIN-EN-Nummer und Kurzzeichen von Mineralwolle MW bis Calciumsilicat CS",
+      "unterschrift": "Genormte Waermedaemmstoffe (Buch S. 595)"
+    },
+    {
+      "seite": 15,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.128,
+        0.885,
+        0.335
+      ],
+      "name": "etikett-beispiel",
+      "alt": "Beispiel eines Daemmstoff-Etiketts mit CE-Kennzeichnung und den daraus ableitbaren Angaben",
+      "unterschrift": "Etikett eines Daemmpakets (Buch S. 596)"
+    },
+    {
+      "seite": 15,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.345,
+        0.472,
+        0.93
+      ],
+      "name": "anwendungsgebiete-tabelle",
+      "alt": "Tabelle der Anwendungsgebiete und Kurzzeichen von DAD bis PB mit Anwendungsbeispielen fuer Decke, Dach, Wand und Perimeter",
+      "unterschrift": "Anwendungsgebiete und Kurzzeichen (Buch S. 596)"
+    },
+    {
+      "seite": 15,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.345,
+        0.885,
+        0.93
+      ],
+      "name": "produkteigenschaften-1",
+      "alt": "Tabelle der Produkteigenschaften Druckbelastbarkeit, Wasseraufnahme und Zugfestigkeit mit Kurzzeichen und Beispielen",
+      "unterschrift": "Produkteigenschaften und Kurzzeichen, Teil 1 (Buch S. 596)"
+    },
+    {
+      "seite": 16,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.122,
+        0.472,
+        0.305
+      ],
+      "name": "anwendungsgebiete-haus",
+      "alt": "Hausschnitt mit den Anwendungsgebieten von Waermedaemmstoffen und ihren Kurzzeichen",
+      "unterschrift": "Anwendungsgebiete von Waermedaemmstoffen (Buch S. 597)"
+    },
+    {
+      "seite": 16,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.345,
+        0.472,
+        0.678
+      ],
+      "name": "kork-text",
+      "alt": "Textabschnitt zu Kork als natuerlichem Daemmstoff mit Backkork, Expansion und Kennzeichnung ICB",
+      "unterschrift": "Kork als natuerlicher Daemmstoff (Buch S. 597)"
+    },
+    {
+      "seite": 16,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.742,
+        0.472,
+        0.932
+      ],
+      "name": "kork-daemmplatten",
+      "alt": "Foto von Daemmplatten aus Kork",
+      "unterschrift": "Daemmplatten aus Kork (Buch S. 597)"
+    },
+    {
+      "seite": 16,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.495
+      ],
+      "name": "produkteigenschaften-2",
+      "alt": "Fortsetzung der Tabelle der Produkteigenschaften mit schalltechnischen Eigenschaften und Verformung",
+      "unterschrift": "Produkteigenschaften und Kurzzeichen, Teil 2 (Buch S. 597)"
+    },
+    {
+      "seite": 16,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.502,
+        0.885,
+        0.932
+      ],
+      "name": "korkkerne",
+      "alt": "Fotos von Korkkernen und Korkschuettung als Daemmmaterial",
+      "unterschrift": "Korkkerne und Korkschuettung (Buch S. 597)"
+    },
+    {
+      "seite": 17,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.132,
+        0.885,
+        0.29
+      ],
+      "name": "holzfaserplatte",
+      "alt": "Foto einer weichen Holzfaserplatte",
+      "unterschrift": "Weiche Holzfaserplatte (Buch S. 598)"
+    },
+    {
+      "seite": 17,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.288,
+        0.885,
+        0.47
+      ],
+      "name": "hanf-daemmplatten",
+      "alt": "Foto gestapelter Daemmplatten aus Hanf",
+      "unterschrift": "Daemmplatten aus Hanf (Buch S. 598)"
+    },
+    {
+      "seite": 17,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.498,
+        0.885,
+        0.742
+      ],
+      "name": "hanfvliese",
+      "alt": "Foto vom Einbau von Hanfvliesen im Holzrahmenbau zwischen den Sparren",
+      "unterschrift": "Einbau von Hanfvliesen (Buch S. 598)"
+    },
+    {
+      "seite": 17,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.748,
+        0.885,
+        0.932
+      ],
+      "name": "cellulose-schuettung",
+      "alt": "Fotos einer Celluloseflockenschuettung als Fussbodenschuettung",
+      "unterschrift": "Celluloseflockenschuettung (Buch S. 598)"
+    },
+    {
+      "seite": 18,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.152,
+        0.885,
+        0.372
+      ],
+      "name": "polystyrol-makro",
+      "alt": "Makroaufnahme der Zellstruktur von extrudiertem Polystyrol",
+      "unterschrift": "Struktur von extrudiertem Polystyrol (Buch S. 599)"
+    },
+    {
+      "seite": 18,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.378,
+        0.885,
+        0.598
+      ],
+      "name": "polystyrol-flachdach",
+      "alt": "Foto von Daemmplatten aus Polystyrol im Flachdach",
+      "unterschrift": "Daemmplatten aus Polystyrol im Flachdach (Buch S. 599)"
+    },
+    {
+      "seite": 18,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.685,
+        0.472,
+        0.932
+      ],
+      "name": "neopor-flachdach",
+      "alt": "Schnittgrafik einer Flachdachdaemmung aus Neopor mit Begruenung, Drainageschicht, Gefaelle-Elementen und Dampfsperre",
+      "unterschrift": "Flachdachdaemmung aus Neopor (Buch S. 599)"
+    },
+    {
+      "seite": 19,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.338
+      ],
+      "name": "pur-platten",
+      "alt": "Foto verfalzter, kaschierter Polyurethan-Hartschaumplatten",
+      "unterschrift": "Kaschierte Polyurethan-Hartschaumplatten (Buch S. 600)"
+    },
+    {
+      "seite": 19,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.345,
+        0.885,
+        0.598
+      ],
+      "name": "pur-flachdach",
+      "alt": "Foto des Einsatzes von Polyurethan-Hartschaumplatten in der Flachdacheindeckung",
+      "unterschrift": "PUR-Hartschaumplatten im Flachdach (Buch S. 600)"
+    },
+    {
+      "seite": 19,
+      "rot": 270,
+      "box": [
+        0.502,
+        0.655,
+        0.885,
+        0.932
+      ],
+      "name": "mineralfaser-makro",
+      "alt": "Makroaufnahme der Struktur von Mineralfasern",
+      "unterschrift": "Struktur von Mineralfasern (Buch S. 600)"
+    },
+    {
+      "seite": 20,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.122,
+        0.472,
+        0.268
+      ],
+      "name": "mineralwolle-schutz",
+      "alt": "Kasten mit den Schutzmassnahmen beim Arbeiten mit Mineralwolle: Messer statt Saege, geschlossene Kleidung, Handschuhe, Feinstaubmaske und Schutzbrille",
+      "unterschrift": "Schutzmassnahmen bei Mineralwolle (Buch S. 601)"
+    },
+    {
+      "seite": 20,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.145,
+        0.885,
+        0.29
+      ],
+      "name": "steinwolle-platte",
+      "alt": "Foto einer steifen, druckfesten Platte aus Steinwolle fuer einschalige Daecher",
+      "unterschrift": "Druckfeste Platte aus Steinwolle (Buch S. 601)"
+    },
+    {
+      "seite": 20,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.295,
+        0.885,
+        0.532
+      ],
+      "name": "mineralwolle-verarbeitung",
+      "alt": "Foto der Verarbeitung von Mineralwolleplatten in der Daemmung zwischen den Sparren",
+      "unterschrift": "Verarbeitung von Mineralwolleplatten (Buch S. 601)"
+    },
+    {
+      "seite": 20,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.538,
+        0.885,
+        0.712
+      ],
+      "name": "schaumglas-produkte",
+      "alt": "Foto gestapelter Schaumglasprodukte",
+      "unterschrift": "Schaumglasprodukte (Buch S. 601)"
+    },
+    {
+      "seite": 20,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.718,
+        0.885,
+        0.932
+      ],
+      "name": "schaumglas-perimeter",
+      "alt": "Foto der Verwendung von Schaumglasplatten als Perimeterdaemmung an einer Kelleraussenwand",
+      "unterschrift": "Schaumglasplatten als Perimeterdaemmung (Buch S. 601)"
+    },
+    {
+      "seite": 21,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.108,
+        0.885,
+        0.252
+      ],
+      "name": "daemmstoff-zusammenfassung",
+      "alt": "Zusammenfassung zu Waermedaemmstoffen, ihren Eigenschaften und den Schutzmassnahmen bei Mineralwolle",
+      "unterschrift": "Zusammenfassung Waermedaemmstoffe (Buch S. 602)"
+    },
+    {
+      "seite": 21,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.258,
+        0.885,
+        0.442
+      ],
+      "name": "daemmstoff-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 6 zu den Waermedaemmstoffen einschliesslich der Deutung von Kennzeichnungen",
+      "unterschrift": "Aufgaben zu den Waermedaemmstoffen (Buch S. 602)"
+    },
+    {
+      "seite": 21,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.442,
+        0.885,
+        0.645
+      ],
+      "name": "schall-schwingung",
+      "alt": "Diagramm der Uebertragung von Luft- und Koerperschall mit hohem und tiefem Ton",
+      "unterschrift": "Uebertragung von Luft- und Koerperschall (Buch S. 602)"
+    },
+    {
+      "seite": 21,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.775,
+        0.472,
+        0.932
+      ],
+      "name": "schallpegel-wirkung",
+      "alt": "Tabelle der Wirkung von Schallpegeln auf den Menschen von 35 dB Schlafstoerungen bis ueber 90 dB Aggression und Schwerhoerigkeit",
+      "unterschrift": "Wirkung des Schallpegels auf den Menschen (Buch S. 602)"
+    },
+    {
+      "seite": 21,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.652,
+        0.885,
+        0.932
+      ],
+      "name": "schallpegel-geraeusche",
+      "alt": "Tabelle der A-Schallpegel verschiedener Geraeusche von ruhigem Raum 10 dB bis Schmerzschwelle 120 dB",
+      "unterschrift": "Schallpegel verschiedener Geraeusche (Buch S. 602)"
+    },
+    {
+      "seite": 22,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.135,
+        0.885,
+        0.352
+      ],
+      "name": "schallarten",
+      "alt": "Gebaeudeschnitt mit den verschiedenen Schallarten Luftschall, Koerperschall und Trittschall",
+      "unterschrift": "Die verschiedenen Schallarten (Buch S. 603)"
+    },
+    {
+      "seite": 22,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.415,
+        0.885,
+        0.535
+      ],
+      "name": "schallschluckung",
+      "alt": "Vergleich von starker Reflexion an dichten Oberflaechen und starker Absorption an poroesen Baustoffen",
+      "unterschrift": "Die Schallschluckung ist von der Oberflaeche abhaengig (Buch S. 603)"
+    },
+    {
+      "seite": 22,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.542,
+        0.885,
+        0.758
+      ],
+      "name": "schallschutz-wandbauarten",
+      "alt": "Vergleich des Schallschutzes verschiedener Wandbauarten von leicht und poroes bis zweischalig mit Mineralfaser",
+      "unterschrift": "Schallschutz verschiedener Wandbauarten (Buch S. 603)"
+    },
+    {
+      "seite": 22,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.765,
+        0.885,
+        0.932
+      ],
+      "name": "flaechenbezogene-masse",
+      "alt": "Vergleich einer 11,5 cm Hochlochziegelwand mit 130 kg pro Quadratmeter und einer 24 cm Kalksandsteinwand mit 400 kg pro Quadratmeter",
+      "unterschrift": "Bedeutung der flaechenbezogenen Masse (Buch S. 603)"
+    },
+    {
+      "seite": 23,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.14,
+        0.885,
+        0.305
+      ],
+      "name": "schalldaemm-diagramm",
+      "alt": "Diagramm des Zusammenhangs von Schalldaemm-Mass und flaechenbezogener Masse",
+      "unterschrift": "Zusammenhang von Schalldaemm-Mass und Masse (Buch S. 604)"
+    },
+    {
+      "seite": 23,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.312,
+        0.885,
+        0.472
+      ],
+      "name": "schallbruecken",
+      "alt": "Vergleich mangelhafter und sorgfaeltiger Ausfuehrung einer zweischaligen Trennwand mit Schallbruecken durch Moertelbruecken und Luecken in der Daemmschicht",
+      "unterschrift": "Zweischalige Trennwand mit und ohne Schallbruecken (Buch S. 604)"
+    },
+    {
+      "seite": 23,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.478,
+        0.885,
+        0.598
+      ],
+      "name": "zweischalige-wandarten",
+      "alt": "Die drei Arten zweischaliger Waende: zwei schwere biegesteife Schalen, biegesteife plus biegeweiche Schale und zwei biegeweiche Schalen",
+      "unterschrift": "Arten zweischaliger Waende (Buch S. 604)"
+    },
+    {
+      "seite": 23,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.702,
+        0.472,
+        0.918
+      ],
+      "name": "schall-zusammenfassung",
+      "alt": "Zusammenfassung zum Schallschutz mit Luftschall, Trittschall und Koerperschall sowie Schallschluckung und Schalldaemmung",
+      "unterschrift": "Zusammenfassung Schall (Buch S. 604)"
+    },
+    {
+      "seite": 23,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.662,
+        0.885,
+        0.918
+      ],
+      "name": "schall-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 6 zum Schallschutz",
+      "unterschrift": "Aufgaben zum Schallschutz (Buch S. 604)"
+    },
+    {
+      "seite": 24,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.325,
+        0.885,
+        0.538
+      ],
+      "name": "feuchte-uebersicht",
+      "alt": "Baumdiagramm der Feuchtequellen Regen, Wasserdampf und Bodenfeuchte mit den zugehoerigen Schutzmassnahmen",
+      "unterschrift": "Feuchtequellen und Schutzmassnahmen (Buch S. 605)"
+    },
+    {
+      "seite": 24,
+      "rot": 270,
+      "box": [
+        0.49,
+        0.602,
+        0.885,
+        0.838
+      ],
+      "name": "saettigungskurve",
+      "alt": "Diagramm des Feuchtegehalts der Luft mit der Saettigungskurve zwischen 0 und 80 Grad Celsius",
+      "unterschrift": "Feuchtegehalt der Luft, Saettigungskurve (Buch S. 605)"
+    },
+    {
+      "seite": 25,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.305
+      ],
+      "name": "tauwasser-einschichtig",
+      "alt": "Grafik der Tauwasserbildung an einem einschichtigen Bauteil mit Temperaturkurve und Taupunkt",
+      "unterschrift": "Tauwasserbildung an einem einschichtigen Bauteil (Buch S. 606)"
+    },
+    {
+      "seite": 25,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.385,
+        0.885,
+        0.578
+      ],
+      "name": "tauwasser-innendaemmung",
+      "alt": "Grafik der Tauwasserbildung bei einer Innendaemmung mit Kondenswasser zwischen Daemmung und Stahlbeton",
+      "unterschrift": "Tauwasserbildung bei einer Innendaemmung (Buch S. 606)"
+    },
+    {
+      "seite": 25,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.608,
+        0.885,
+        0.902
+      ],
+      "name": "tauwasser-beispiel",
+      "alt": "Rechenbeispiel zur relativen Luftfeuchtigkeit und zum Tauwasserausfall beim Abkuehlen von 15 auf 5 Grad Celsius",
+      "unterschrift": "Beispiel relative Luftfeuchte und Tauwasser (Buch S. 606)"
+    },
+    {
+      "seite": 26,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.298
+      ],
+      "name": "dampfsperre-grafik",
+      "alt": "Schnittgrafik, wie eine Dampfsperre auf der Innenseite die Tauwasserbildung verhindert",
+      "unterschrift": "Dampfsperre verhindert Tauwasserbildung (Buch S. 607)"
+    },
+    {
+      "seite": 26,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.302,
+        0.885,
+        0.715
+      ],
+      "name": "mu-werte-tabelle",
+      "alt": "Tabelle der Wasserdampfdiffusions-Widerstandszahl My von Luft und Faserdaemmstoffen my gleich 1 bis Metalle und Schaumglas my praktisch unendlich",
+      "unterschrift": "Wasserdampfdiffusions-Widerstandszahl My (Buch S. 607)"
+    },
+    {
+      "seite": 26,
+      "rot": 270,
+      "box": [
+        0.062,
+        0.712,
+        0.892,
+        0.775
+      ],
+      "name": "sd-wert-box",
+      "alt": "Kasten mit der Bedeutung des sd-Wertes als Mass fuer die Wasserdampfdiffusion durch ein Bauteil",
+      "unterschrift": "Der sd-Wert (Buch S. 607)"
+    },
+    {
+      "seite": 26,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.775,
+        0.472,
+        0.928
+      ],
+      "name": "sd-beispiel-wand",
+      "alt": "Rechenbeispiel des sd-Wertes einer Aussenwand aus Putz, Mauerwerk und XPS mit dem Ergebnis 6,53 m",
+      "unterschrift": "Beispiel sd-Wert einer Aussenwand (Buch S. 607)"
+    },
+    {
+      "seite": 27,
+      "rot": 270,
+      "box": [
+        0.058,
+        0.3,
+        0.482,
+        0.412
+      ],
+      "name": "lueftung-tabelle",
+      "alt": "Tabelle der Mindestlueftungsquerschnitte in Abhaengigkeit von Dachneigung und Sparrenlaenge mit den zugehoerigen sd-Werten",
+      "unterschrift": "Mindestlueftungsquerschnitte beim beluefteten Dach (Buch S. 608)"
+    },
+    {
+      "seite": 27,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.122,
+        0.885,
+        0.578
+      ],
+      "name": "steildach-schnitte",
+      "alt": "Vier Schnitte der Steildachvarianten: belueftetes Dach, nicht belueftetes diffusionsoffenes, diffusionshemmendes und diffusionsdichtes Dach",
+      "unterschrift": "Steildachvarianten im Feuchteschutz (Buch S. 608)"
+    },
+    {
+      "seite": 27,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.582,
+        0.885,
+        0.762
+      ],
+      "name": "flachdach-einschalig",
+      "alt": "Prinzipschnitt eines einschaligen, nicht beluefteten Flachdachs mit einem sd-Wert von mindestens 100 m",
+      "unterschrift": "Einschaliges, nicht belueftetes Flachdach (Buch S. 608)"
+    },
+    {
+      "seite": 27,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.768,
+        0.885,
+        0.932
+      ],
+      "name": "flachdach-zweischalig",
+      "alt": "Prinzipschnitt eines zweischaligen, beluefteten Flachdachs mit Belueftung zwischen Dachhaut und Daemmung",
+      "unterschrift": "Zweischaliges, belueftetes Flachdach (Buch S. 608)"
+    },
+    {
+      "seite": 28,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.305,
+        0.472,
+        0.522
+      ],
+      "name": "sd-beispiel-1",
+      "alt": "Rechenbeispiel 1 des sd-Wertes eines beluefteten Daches mit Mineralwolle, Stahlbetondecke und Putz, Ergebnis 12,76 m",
+      "unterschrift": "Beispiel 1 sd-Wert belueftetes Dach (Buch S. 609)"
+    },
+    {
+      "seite": 28,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.305,
+        0.885,
+        0.522
+      ],
+      "name": "sd-beispiel-2",
+      "alt": "Rechenbeispiel 2 des sd-Wertes eines unbeluefteten Flachdachs mit Kunststoffbahn, XPS, Dampfsperre und Stahlbetondecke, Ergebnis 80,8 m",
+      "unterschrift": "Beispiel 2 sd-Wert unbelueftetes Flachdach (Buch S. 609)"
+    },
+    {
+      "seite": 28,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.568,
+        0.885,
+        0.712
+      ],
+      "name": "feuchte-zusammenfassung",
+      "alt": "Zusammenfassung zu Tauwasserausfall, Wasserdampfdiffusion und den Schutzmassnahmen",
+      "unterschrift": "Zusammenfassung Feuchteschutz (Buch S. 609)"
+    },
+    {
+      "seite": 28,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.715,
+        0.885,
+        0.918
+      ],
+      "name": "feuchte-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 10 zum Feuchteschutz mit einer Aufbauskizze",
+      "unterschrift": "Aufgaben zum Feuchteschutz (Buch S. 609)"
+    },
+    {
+      "seite": 29,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.148,
+        0.885,
+        0.288
+      ],
+      "name": "brand-dachgeschoss",
+      "alt": "Foto eines Brandes im Dachgeschoss mit Feuerwehrleuten",
+      "unterschrift": "Brand im Dachgeschoss (Buch S. 610)"
+    },
+    {
+      "seite": 29,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.292,
+        0.885,
+        0.612
+      ],
+      "name": "baustoffklassen",
+      "alt": "Tabelle der Baustoffklassen A1, A2, B1 und B2 mit Beispielen von Beton und Mauerwerk bis Dachpappen und PVC-Belaegen",
+      "unterschrift": "Einteilung in Baustoffklassen (Buch S. 610)"
+    },
+    {
+      "seite": 29,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.615,
+        0.885,
+        0.715
+      ],
+      "name": "rauchentwicklung",
+      "alt": "Tabelle der Klassen fuer Rauchentwicklung s1 bis s3 und brennendes Abtropfen d0 bis d2",
+      "unterschrift": "Klassen fuer Rauchentwicklung und brennendes Abtropfen (Buch S. 610)"
+    },
+    {
+      "seite": 29,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.722,
+        0.885,
+        0.918
+      ],
+      "name": "brandklassen-tabelle",
+      "alt": "Gegenueberstellung der nationalen Baustoffklassen nach DIN 4102-1 und der Euroklassen nach DIN EN 13501-1",
+      "unterschrift": "Brandklassen national und europaeisch (Buch S. 610)"
+    },
+    {
+      "seite": 30,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.128,
+        0.885,
+        0.338
+      ],
+      "name": "feuerwiderstandsklassen",
+      "alt": "Tabelle der Feuerwiderstandsklassen fuer Sonderbauteile mit den Kurzzeichen W, T, L, K und G",
+      "unterschrift": "Feuerwiderstandsklassen fuer Sonderbauteile (Buch S. 611)"
+    },
+    {
+      "seite": 30,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.345,
+        0.885,
+        0.512
+      ],
+      "name": "massivdach-brandschutz",
+      "alt": "Foto eines Brandschutzes mit einem Massivdach aus Porenbeton",
+      "unterschrift": "Brandschutz mit einem Massivdach aus Porenbeton (Buch S. 611)"
+    },
+    {
+      "seite": 30,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.518,
+        0.885,
+        0.652
+      ],
+      "name": "brand-zusammenfassung",
+      "alt": "Zusammenfassung zu Baustoffklassen, Feuerwiderstandsklassen und den Anforderungen an Bedachungen",
+      "unterschrift": "Zusammenfassung Brandschutz (Buch S. 611)"
+    },
+    {
+      "seite": 30,
+      "rot": 270,
+      "box": [
+        0.496,
+        0.658,
+        0.885,
+        0.918
+      ],
+      "name": "brand-aufgaben",
+      "alt": "Die Buchaufgaben 1 bis 5 zum Brandschutz",
+      "unterschrift": "Aufgaben zum Brandschutz (Buch S. 611)"
+    },
+    {
+      "seite": 30,
+      "rot": 270,
+      "box": [
+        0.08,
+        0.628,
+        0.472,
+        0.918
+      ],
+      "name": "bedachung-flugfeuer",
+      "alt": "Textabschnitt zum Sonderfall Bedachung mit den gegen Flugfeuer widerstandsfaehigen Bedachungsarten",
+      "unterschrift": "Sonderfall Bedachung gegen Flugfeuer (Buch S. 611)"
+    }
+  ]
+}

@@ -49,6 +49,9 @@ def main() -> int:
     for fig in manifest["figuren"]:
         doc = hole(fig.get("pdf", manifest.get("pdf")))
         page = doc[fig["seite"] - 1]
+        # Manche Buchseiten sind quer fotografiert. "rot" dreht die Seite gerade,
+        # damit die Box im aufrechten (lesbaren) System angegeben werden kann.
+        page.set_rotation(fig.get("rot", 0))
         r = page.rect
         x0, y0, x1, y1 = fig["box"]
         clip = fitz.Rect(r.width * x0, r.height * y0, r.width * x1, r.height * y1)

@@ -14,8 +14,8 @@ describe("filterSichtbar", () => {
 
 describe("content loading", () => {
   // LF 13b (Reet) ist wieder in der Liste — Inhalt aus dem Buch S. 564–571 vorhanden.
-  it("loads all lernfelder (17 LF inkl. 13a + 13b + WiSo + Anhang 1 = 20 entries)", () => {
-    expect(getLernfelder().length).toBe(20);
+  it("loads all lernfelder (17 LF inkl. 13a + 13b + WiSo + Anhang 1 + 2 = 21 entries)", () => {
+    expect(getLernfelder().length).toBe(21);
   });
   it("führt kein Lernfeld ohne Aufgaben in der Liste (keine leeren Karten)", () => {
     for (const lf of getLernfelder()) {
