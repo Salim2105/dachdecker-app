@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "anhang1-001",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Zusammenhänge",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572",
+    "konfidenz": "hoch",
+    "frage": "Warum ist das Vermeiden und Verwerten von Abfällen so wichtig (Buchaufgabe 3)?",
+    "optionen": [
+      "Boden, Luft und Wasser werden durch Schadstoffe belastet und verunreinigt",
+      "Schadstoffe gelangen über Pflanzen und Tiere wieder zurück zum Menschen",
+      "Der Deponieraum zur Aufnahme des Mülls ist begrenzt",
+      "Abfall zerfällt ohnehin innerhalb weniger Jahre rückstandsfrei"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Drei Gründe greifen ineinander: Die Schadstoffe schädigen Boden, Luft und Wasser, sie kehren über die Nahrungskette zum Menschen zurück, und der Platz zum Ablagern ist endlich. Deshalb reicht es nicht, Müll nur zu entsorgen — er muss vermieden und wiederverwertet werden.",
+    "bildDatei": "buch/anhang1/schadstofftabelle.webp",
+    "bildunterschrift": "Umwelt- und gesundheitsschädigende Stoffe (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-002",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Zusammenhänge",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Tabelle)",
+    "konfidenz": "hoch",
+    "frage": "Welche Stoffe nennt die Tabelle als umwelt- und gesundheitsschädigend?",
+    "optionen": [
+      "Gase: Kohlendioxid, Kohlenmonoxid, Schwefeldioxid, Stickstoffoxide, Kohlenwasserstoffe, Fluorkohlenwasserstoffe",
+      "Flüssigkeiten: Säuren, Heiz- und Motorenöle, Treibstoffe, Lösungsmittel, Farben und Lacke, Holzschutzmittel",
+      "Feste Stoffe: Asbest, Stäube mit Blei-, Cadmium- oder Quecksilberverbindungen",
+      "Feste Stoffe: Beton, Ziegel und Kalksandsteine"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Tabelle gliedert nach Aggregatzustand. Beton, Ziegel und Kalksandsteine sind dagegen gewöhnlicher Bauschutt und gehören nicht zu den Schadstoffen — sie tauchen in der Bauabfall-Übersicht unter \"Bauschutt\" auf. Für den Dachdecker sind vor allem Asbest und Holzschutzmittel relevant.",
+    "bildDatei": "buch/anhang1/schadstofftabelle.webp",
+    "bildunterschrift": "Umwelt- und gesundheitsschädigende Stoffe (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-003",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Kreislaufwirtschaftsgesetz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Buchaufgabe 1)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 1: Was ist das Ziel des Kreislaufwirtschaftsgesetzes?",
+    "optionen": [
+      "Immer mehr Abfälle sollen in die Neuproduktion einbezogen werden, sodass ein Kreislauf entsteht",
+      "Die Vermeidung von Abfällen steht an erster Stelle",
+      "Das Abfallaufkommen soll mengenmäßig verringert und umweltverträglich beseitigt werden",
+      "Abfälle sollen möglichst günstig deponiert werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der Name sagt es schon: Aus der Einbahnstraße Produktion–Verbrauch–Deponie soll ein Kreislauf werden. Innerhalb dieses Ziels gilt eine klare Rangfolge, in der die Vermeidung ganz oben steht — Deponieren ist die letzte, nicht die erste Wahl.",
+    "bildDatei": "buch/anhang1/krwg-auswirkungen.webp",
+    "bildunterschrift": "Auswirkungen des Kreislaufwirtschaftsgesetzes (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-004",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Kreislaufwirtschaftsgesetz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Buchaufgabe 2)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 2: Wer ist für die Beseitigung und Verwertung von Bauabfällen verantwortlich?",
+    "optionen": [
+      "Der Bauherr als Abfallerzeuger beziehungsweise Abfallbesitzer",
+      "Das Gesetz nimmt besonders die Hersteller in die Pflicht — sie bleiben bis zum Nachweis der endgültigen Entsorgung verantwortlich",
+      "Alle am Bau Beteiligten haben in ihrem Verantwortungsbereich die Voraussetzungen zu schaffen",
+      "Ausschließlich das Entsorgungsunternehmen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Verantwortung ist mehrfach verteilt und endet nicht mit der Übergabe: Der Bauherr ist Abfallerzeuger, der Hersteller bleibt bis zum Nachweis der endgültigen Entsorgung in der Pflicht, und jeder am Bau Beteiligte muss in seinem Bereich die Voraussetzungen schaffen. Das Entsorgungsunternehmen allein trägt sie also gerade nicht.",
+    "bildDatei": "buch/anhang1/krwg-auswirkungen.webp",
+    "bildunterschrift": "Auswirkungen des Kreislaufwirtschaftsgesetzes (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-005",
+    "typ": "cloze",
+    "lernfeld": "anhang1",
+    "thema": "Kreislaufwirtschaftsgesetz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 und S. 573",
+    "konfidenz": "hoch",
+    "text": "Das Kreislaufwirtschaftsgesetz gibt eine klare Rangfolge vor: {{Vermeidung}} vor Verwertung vor {{Beseitigung}}. Angestrebt wird ausserdem ein abfallarmer, rohstoff- sowie energieschonender Einsatz von {{Baustoffen}}.",
+    "akzeptiert": {
+      "Vermeidung": ["Vermeiden", "Vermeidung von Abfaellen"],
+      "Beseitigung": ["Beseitigen", "Entsorgung"],
+      "Baustoffen": ["Baustoffe", "Bauwerkstoffen"]
+    },
+    "erklaerung": "Diese Rangfolge ist die zentrale Merkregel des ganzen Anhangs. Sie taucht in der Stufengrafik wieder auf: Vermeiden durch verbesserte Materialien, Vermindern der Menge, stoffliche Verwertung, erst zuletzt Beseitigung. Wer die Reihenfolge kennt, kann fast jede Prüfungsfrage zum Thema beantworten.",
+    "bildDatei": "buch/anhang1/vermeiden-stufen.webp",
+    "bildunterschrift": "Rangfolge des Kreislaufwirtschaftsgesetzes (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-006",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Kreislaufwirtschaftsgesetz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573",
+    "konfidenz": "hoch",
+    "frage": "Welche Stufen zeigt die Rangfolge des Kreislaufwirtschaftsgesetzes von oben nach unten?",
+    "optionen": [
+      "Vermeiden durch verbesserte Materialien",
+      "Vermindern der Menge und Schädlichkeit",
+      "Stoffliche Verwertung (Recycling), danach Beseitigung und Energiegewinnung durch Müllverbrennung",
+      "Deponieren, danach Recycling, zuletzt Vermeiden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Vier Stufen: vermeiden, vermindern, verwerten, beseitigen. Beachte den feinen Unterschied zwischen den ersten beiden — Vermeiden setzt beim Material an (bessere Baustoffe wählen), Vermindern bei der Menge und Schädlichkeit dessen, was trotzdem anfällt. Das Gesetz räumt dem Vermeiden den obersten Stellenwert ein.",
+    "bildDatei": "buch/anhang1/vermeiden-stufen.webp",
+    "bildunterschrift": "Rangfolge des Kreislaufwirtschaftsgesetzes (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-007",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Die Bauwirtschaft als Abfallerzeuger",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Diagramm)",
+    "konfidenz": "hoch",
+    "frage": "Welchen Anteil haben Bau- und Abbruchabfälle am gesamten Abfallaufkommen?",
+    "optionen": [
+      "228,1 Mio. t und damit 62,9 %",
+      "Ungefähr 62 % des gesamten Müllaufkommens in Deutschland verursacht die Bauindustrie",
+      "Damit ist die Bauwirtschaft der größte Abfallerzeuger",
+      "55,1 Mio. t und damit 15,2 %"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Fast zwei Drittel allen Abfalls stammt vom Bau — das ist die Kernaussage des Kapitels und der Grund, warum es dieses Thema in der Dachdeckerausbildung überhaupt gibt. Die 55,1 Mio. t mit 15,2 % sind dagegen die Abfälle aus Produktion und Gewerbe.",
+    "bildDatei": "buch/anhang1/kreis-abfallaufkommen.webp",
+    "bildunterschrift": "In Produktions- und Verbrauchsprozessen entstandene Abfälle (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-008",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Die Bauwirtschaft als Abfallerzeuger",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Diagramm)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Das Diagramm nennt vier Abfallgruppen: Bau- und Abbruchabfälle {bau} Mio. t, Abfälle aus Produktion und Gewerbe {prod} Mio. t, Siedlungsabfälle {sied} Mio. t und Bergematerial aus dem Bergbau {berg} Mio. t. Berechne das gesamte Abfallaufkommen und den prozentualen Anteil der Bau- und Abbruchabfälle.",
+    "parameter": [
+      { "name": "bau", "label": "Bau- und Abbruchabfälle", "einheit": "Mio. t", "min": 228.1, "max": 228.1, "schritt": 0.1 },
+      { "name": "prod", "label": "Abfälle aus Produktion und Gewerbe", "einheit": "Mio. t", "min": 55.1, "max": 55.1, "schritt": 0.1 },
+      { "name": "sied", "label": "Siedlungsabfälle", "einheit": "Mio. t", "min": 50.3, "max": 50.3, "schritt": 0.1 },
+      { "name": "berg", "label": "Bergematerial aus dem Bergbau", "einheit": "Mio. t", "min": 28.9, "max": 28.9, "schritt": 0.1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Gesamtes Abfallaufkommen: {bau} + {prod} + {sied} + {berg}", "formel": "bau + prod + sied + berg", "ergebnisName": "gesamt", "einheit": "Mio. t" },
+      { "beschreibung": "Anteil der Bau- und Abbruchabfälle: {bau} ÷ gesamt · 100", "formel": "bau / gesamt * 100", "ergebnisName": "anteil", "einheit": "%" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "228,1 + 55,1 + 50,3 + 28,9 = 362,4 Mio. t; davon sind 228,1 ÷ 362,4 = 62,9 %. Die Prozentangaben des Diagramms lassen sich also aus den Massen exakt nachrechnen — eine gute Kontrolle, ob du das Diagramm richtig gelesen hast.",
+    "bildDatei": "buch/anhang1/kreis-abfallaufkommen.webp",
+    "bildunterschrift": "In Produktions- und Verbrauchsprozessen entstandene Abfälle (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-009",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Einteilung der Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Buchaufgabe 4)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 4: In welche fünf Gruppen werden Bauabfälle eingeteilt?",
+    "optionen": [
+      "Bodenaushub, Straßenaufbruch, Bauschutt",
+      "Baustellenabfälle und Sonderabfälle",
+      "Hausmüll und Gewerbeabfall",
+      "Nur in verwertbare und nicht verwertbare Abfälle"
+    ],
+    "korrekt": [0, 1],
+    "erklaerung": "Fünf Gruppen, eingeteilt nach bausparten- beziehungsweise bauwerksbezogener Herkunft: Bodenaushub, Straßenaufbruch, Bauschutt, Baustellenabfälle und Sonderabfälle. Die Einteilung folgt also der Frage, wo der Abfall herkommt — nicht, ob er verwertbar ist.",
+    "bildDatei": "buch/anhang1/bau-bodenabfaelle.webp",
+    "bildunterschrift": "Einteilung der Bauabfälle (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-010",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Einteilung der Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572",
+    "konfidenz": "hoch",
+    "frage": "Was gehört zum Bodenaushub und was zum Straßenaufbruch?",
+    "optionen": [
+      "Bodenaushub: überschüssiges Aushubmaterial bei Tiefbauarbeiten, z. B. Lehm, Ton, Sand, Kies, Steine",
+      "Straßenaufbruch: Abfallstoffe bei Instandsetzung, Sanierung, Abbruch und Erneuerung befestigter Straßen und ihres befestigten Unterbaus",
+      "Bodenaushub fällt bei der Herstellung von Bauwerken nahezu aller Art an — im Straßen-, Leitungs-, Hoch-, Tunnel- und Wasserbau",
+      "Straßenaufbruch umfasst auch Mutterboden und Schluff"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Mutterboden und Schluff gehören zum Bodenaushub, nicht zum Straßenaufbruch — dort stehen bitumenhaltige oder hydraulisch gebundene Stoffe, teerhaltige Stoffe, Schotter, Kies, Sand sowie Pflaster- und Randsteine. Die Trennung ist wichtig, weil teerhaltiger Straßenaufbruch schadstoffbelastet sein kann.",
+    "bildDatei": "buch/anhang1/bau-bodenabfaelle.webp",
+    "bildunterschrift": "Einteilung der Bauabfälle (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-011",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Einteilung der Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572",
+    "konfidenz": "hoch",
+    "frage": "Wie unterscheiden sich Bauschutt und Baustellenabfälle?",
+    "optionen": [
+      "Bauschutt entsteht in unmittelbarem Zusammenhang mit Errichtung, Änderung oder Abbruch eines Gebäudes",
+      "Baustellenabfälle sind alle sonst als unbrauchbar angesehenen Sachen, die nur in mittelbarem Zusammenhang mit der Baumaßnahme anfallen",
+      "Zum Bauschutt zählen Beton, Ziegel, Kalksandsteine, Mörtel, Natursteine, Keramik, Gips und Sand",
+      "Baustellenabfälle sind immer Sonderabfälle"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der Schlüssel steckt in den Wörtern unmittelbar und mittelbar: Bauschutt ist das Gebäude selbst — Beton, Ziegel, Mörtel. Baustellenabfälle sind das Drumherum — Papier, Pappe, Holz, Metalle, Kabel, Kunststoffe, Textilien, Hausmüll, Tapeten, Sperrmüll. Diese Unterscheidung entscheidet über den Container und damit über den Preis.",
+    "bildDatei": "buch/anhang1/abfallgruppen-text.webp",
+    "bildunterschrift": "Die fünf Gruppen der Bauabfälle (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-012",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Einteilung der Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 572 (Buchaufgabe 14)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 14: Was zählt zu den Sonderabfällen?",
+    "optionen": [
+      "Abfälle, die in der Entsorgung problematisch sind und eine artspezifische Behandlung oder Beseitigung erfordern",
+      "Altfarben, Altöle, Asbest, Mineralwolle-Dämmstoffe",
+      "Schadstoffverunreinigter Boden, Teer- und Dachpappen",
+      "Beton, Ziegel und Mörtel"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Über die Beseitigung von Sonderabfällen sind vorgeschriebene Nachweise zu führen — das unterscheidet sie von allen anderen Gruppen. Für Dachdecker besonders relevant: Asbest, Mineralwolle-Dämmstoffe sowie Teer- und Dachpappen. Beton, Ziegel und Mörtel sind dagegen gewöhnlicher Bauschutt.",
+    "bildDatei": "buch/anhang1/abfallgruppen-text.webp",
+    "bildunterschrift": "Die fünf Gruppen der Bauabfälle (Buch S. 572)"
+  },
+  {
+    "id": "anhang1-013",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Mineralische Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573 (Diagramm)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Die mineralischen Bauabfälle verteilen sich auf Boden und Steine {boden} Mio. t, Bauschutt {schutt} Mio. t, Straßenaufbruch {strasse} Mio. t, Baustellenabfälle {baustelle} Mio. t und Bauabfälle auf Gipsbasis {gips} Mio. t. Berechne die Gesamtmenge und den Anteil von Boden und Steine.",
+    "parameter": [
+      { "name": "boden", "label": "Boden und Steine", "einheit": "Mio. t", "min": 125.2, "max": 125.2, "schritt": 0.1 },
+      { "name": "schutt", "label": "Bauschutt", "einheit": "Mio. t", "min": 58.5, "max": 58.5, "schritt": 0.1 },
+      { "name": "strasse", "label": "Straßenaufbruch", "einheit": "Mio. t", "min": 16, "max": 16, "schritt": 0.1 },
+      { "name": "baustelle", "label": "Baustellenabfälle", "einheit": "Mio. t", "min": 14.3, "max": 14.3, "schritt": 0.1 },
+      { "name": "gips", "label": "Bauabfälle auf Gipsbasis", "einheit": "Mio. t", "min": 0.6, "max": 0.6, "schritt": 0.1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Gesamtmenge der mineralischen Bauabfälle", "formel": "boden + schutt + strasse + baustelle + gips", "ergebnisName": "gesamt", "einheit": "Mio. t" },
+      { "beschreibung": "Anteil von Boden und Steine: {boden} ÷ gesamt · 100", "formel": "boden / gesamt * 100", "ergebnisName": "anteil", "einheit": "%" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Zusammen 214,6 Mio. t, davon 58,3 % Boden und Steine. Merke dir die Größenordnung: Allein Boden und Steine wiegen mehr als alle übrigen mineralischen Bauabfälle zusammen. Deshalb lohnt sich sortenreines Trennen gerade hier am meisten. Kleiner Hinweis, falls du alle Anteile nachrechnest: Beim Straßenaufbruch ergeben 16 ÷ 214,6 rund 7,5 %, das Diagramm nennt 7,3 %. Die Masse ist dort auf volle Mio. t gerundet — die übrigen vier Werte gehen dagegen genau auf.",
+    "bildDatei": "buch/anhang1/kreis-mineralische.webp",
+    "bildunterschrift": "Mineralische Bauabfälle (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-014",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Mineralische Bauabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573",
+    "konfidenz": "hoch",
+    "frage": "Wie hoch sind die Recyclingquoten laut Text auf S. 573?",
+    "optionen": [
+      "Bei Straßenaufbruch schon bei 96 %",
+      "Bei Bauschutt immerhin noch bei über 78 %",
+      "Bei Straßenaufbruch bei etwa 50 %",
+      "Aufgrund des hohen und wachsenden Bestandes an Hochbauten wird mit weiterer Zunahme an Bauschutt und Baustellenabfällen gerechnet"
+    ],
+    "korrekt": [0, 1, 3],
+    "erklaerung": "Straßenaufbruch liegt bei 96 %, Bauschutt bei über 78 %. Die Diagramme auf S. 574 nennen die Werte noch etwas genauer: 95,4 % beim Straßenaufbruch und 77,7 % beim Bauschutt. Weil der Hochbaubestand weiter wächst, wird beides künftig eher noch mehr.",
+    "bildDatei": "buch/anhang1/kreis-mineralische.webp",
+    "bildunterschrift": "Mineralische Bauabfälle (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-015",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Vermeiden",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573 (Buchaufgabe 5)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 5: Wodurch kann jeder Handwerker zum Vermeiden von Bauabfällen beitragen?",
+    "optionen": [
+      "Durch die Verwendung langlebiger Teile und Stoffe, die möglichst mehrfach verwendet werden können",
+      "Durch die Wahl von Maßen bei der Bestellung, die wenig Verschnitt verursachen",
+      "Durch Verzicht auf unnötige Folienverpackung, etwa bei Dachziegeln",
+      "Durch Verbrennen der Reste auf der Baustelle"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Alles drei fängt vor der ersten Handbewegung an: bei der Auswahl der Baustoffe, bei der Bestellmenge und bei der Verpackung. Massenbaustoffe wie Dachziegel müssen nicht in Folie verpackt geliefert werden — und die Lieferanten sind ohnehin gehalten, Verpackungen zurückzunehmen.",
+    "bildDatei": "buch/anhang1/neubau-recycling.webp",
+    "bildunterschrift": "Schon beim Neubau an das Recycling denken (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-016",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Vermeiden",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573",
+    "konfidenz": "hoch",
+    "frage": "Wie bewertet das Buch verschiedene Dachdeckungsmaterialien unter Umweltgesichtspunkten?",
+    "optionen": [
+      "Stroh, Holzschindeln und Schiefer sind natürliche und problemlose Naturstoffe",
+      "Bei Schiefer ist je nach Herkunft Radioaktivität möglich",
+      "Bei der Dachziegel- und Dachsteinherstellung besteht ein enormer Energiebedarf",
+      "Bitumenbahnen sind unproblematisch in der Entsorgung"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Bitumenbahnen sind das Gegenteil von unproblematisch: Durch ihren Erdölanteil zählen sie zu den Sonderabfällen. Beachte auch die Einschränkung beim Schiefer — als Naturstein ist er günstig, kann aber je nach Herkunft radioaktiv belastet sein.",
+    "bildDatei": "buch/anhang1/neubau-recycling.webp",
+    "bildunterschrift": "Schon beim Neubau an das Recycling denken (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-017",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Begriffsklärung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574",
+    "konfidenz": "hoch",
+    "frage": "Was versteht man unter Recycling?",
+    "optionen": [
+      "Die Verwertung von Abfällen und verbrauchten Stoffen als Rohstoff für neue Produkte",
+      "Es setzt eine Vorbehandlung der Altbaustoffe vor einer Zweitverwertung voraus",
+      "Beispiel: Beton, Steine, Putz, Fliesen und keramische Teile werden gebrochen und als Zuschlagstoffe verwendet",
+      "Der wiederholte Einbau eines Bauteils ohne jede Veränderung"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Beim Recycling wird der Stoff zum Rohstoff — das Bauteil verliert seine Form. Der wiederholte Einbau ohne Veränderung ist dagegen Wiederverwendung. Diese Abgrenzung wird gern geprüft: Der gebrochene Dachziegel ist Recycling, der abgenommene und wieder aufgelegte Dachziegel ist Wiederverwendung.",
+    "bildDatei": "buch/anhang1/recycling-ziel.webp",
+    "bildunterschrift": "Ziel des Recyclings (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-018",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Begriffsklärung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574 (Buchaufgabe 6)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 6: Was ist das Ziel des Recyclings?",
+    "optionen": [
+      "Die Bildung eines geschlossenen Stoffkreislaufes auf einem möglichst hohen Niveau",
+      "Recyclingprodukte sollen künftig nicht nur in untergeordneter Funktion, sondern in gleicher, hochwertiger Form wie ihr Ausgangsprodukt verwendet werden",
+      "Beispiel: Straßenaufbruch nicht nur als Verfüllmasse, sondern auch als Deckschicht",
+      "Möglichst viel Material auf der Deponie unterzubringen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Entscheidend ist das Wort Niveau. Es genügt nicht, dass ein Stoff irgendwie weiterverwendet wird — er soll seinen Wert behalten. Der Straßenaufbruch als Deckschicht statt als bloße Verfüllmasse ist das Musterbeispiel: gleiche Funktion wie vorher, kein Abstieg zum Billigmaterial.",
+    "bildDatei": "buch/anhang1/recycling-ziel.webp",
+    "bildunterschrift": "Ziel des Recyclings (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-019",
+    "typ": "fachbegriff",
+    "lernfeld": "anhang1",
+    "thema": "Begriffsklärung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574 bis 575",
+    "konfidenz": "hoch",
+    "begriff": "Wiederverwendung",
+    "definition": "Die wiederholte Benutzung von Baustoffen und Bauteilen über das Ende ihrer eigentlichen Lebensdauer hinaus. Dabei bleiben alle Materialien in ihrer ursprünglichen Zusammensetzung erhalten und werden direkt oder nach einer Vorbehandlung — etwa Säubern oder Reparatur — wieder eingebaut.",
+    "bestandteile": ["Wieder", "ver", "wendung"],
+    "erklaerung": "Der Unterschied zum Recycling steckt im Wort Zusammensetzung: Bei der Wiederverwendung bleibt der Stoff, was er ist. Beim Recycling wird er zerlegt und als Rohstoff neu eingesetzt. Für den Dachdecker heißt das konkret: Alte Dachziegel abnehmen, reinigen und wieder eindecken ist Wiederverwendung — sie zu brechen ist Recycling.",
+    "bildDatei": "buch/anhang1/kreislauf-dachstein.webp",
+    "bildunterschrift": "Kreislauf durch Recycling am Beispiel eines Dachsteins (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-020",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Begriffsklärung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574 (Buchaufgabe 10)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 10: Welchen Entlastungseffekt hat ein geschlossener Stoffkreislauf für die Umwelt?",
+    "optionen": [
+      "Schonung der Rohstoffvorkommen",
+      "Einsparen von Deponieraum — zurückgeführte Stoffe sind kein Abfall, sondern Wirtschaftsgüter",
+      "Einsparung von Energie und weniger Schadstoffe aus der Produktion",
+      "Erhöhung der Transportwege"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Vier Effekte auf einmal: weniger Rohstoffabbau, weniger Deponie, weniger Energie, weniger Schadstoffe. Besonders anschaulich ist die Umdeutung beim Deponieraum — was in den Produktionskreislauf zurückgeht, ist kein Abfall mehr, sondern ein Wirtschaftsgut. Genau darauf beruht auch der finanzielle Vorteil.",
+    "bildDatei": "buch/anhang1/kreislauf-dachstein.webp",
+    "bildunterschrift": "Kreislauf durch Recycling am Beispiel eines Dachsteins (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-021",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Begriffsklärung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574",
+    "konfidenz": "hoch",
+    "aufgabentext": "Durch die Wiederverwendung von Bauschutt lassen sich bis zu {einsparung} % der Energie einsparen, die für Herstellung und Transport neuer Stoffe nötig ist. Für die Neuherstellung würden {energie} kWh gebraucht. Wie viel Energie wird eingespart und wie viel bleibt übrig?",
+    "parameter": [
+      { "name": "energie", "label": "Energiebedarf bei Neuherstellung", "einheit": "kWh", "min": 500, "max": 5000, "schritt": 100 },
+      { "name": "einsparung", "label": "maximale Einsparung", "einheit": "%", "min": 95, "max": 95, "schritt": 1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Eingesparte Energie: {energie} · {einsparung} ÷ 100", "formel": "energie * einsparung / 100", "ergebnisName": "gespart", "einheit": "kWh" },
+      { "beschreibung": "Verbleibender Energiebedarf: {energie} − gespart", "formel": "energie - gespart", "ergebnisName": "rest", "einheit": "kWh" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Bei 1000 kWh Neuherstellung bleiben nur 50 kWh übrig — der Rest entfällt. Diese 95 % sind das stärkste Argument fürs Recycling überhaupt: Wiederverwendeter Bauschutt braucht nur ein Zwanzigstel der Energie. Beachte, dass darin auch der Transport steckt, nicht nur die Herstellung.",
+    "bildDatei": "buch/anhang1/recyclinganteile.webp",
+    "bildunterschrift": "Höhe des Recyclinganteils (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-022",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Recyclinganteile",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574 (Diagramme)",
+    "konfidenz": "hoch",
+    "frage": "Welche Recyclinganteile zeigen die drei Kreisdiagramme?",
+    "optionen": [
+      "Straßenaufbruch: 95,4 % Recycling",
+      "Bauschutt: 77,7 % Recycling",
+      "Baustellenabfälle: nur 1,4 % Recycling",
+      "Baustellenabfälle: 97 % Recycling"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Achte genau hin: Bei den Baustellenabfällen sind 97 % \"sonstige Verwertung\", nur 1,4 % sind echtes Recycling. Das ist die klassische Falle dieses Diagramms — hohe Verwertung heißt nicht hohes Recycling. Straßenaufbruch dagegen wird zu 95,4 % tatsächlich rezykliert.",
+    "bildDatei": "buch/anhang1/recyclinganteile.webp",
+    "bildunterschrift": "Höhe des Recyclinganteils (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-023",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Recyclinganteile",
+    "quelle": "Grundstufe Bautechnik, Buch S. 574 (Buchaufgabe 9)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 9: Warum liegt die Recyclingrate bei Straßenaufbruch wesentlich höher als bei Baustellenabfällen?",
+    "optionen": [
+      "Straßenaufbruch fällt sortenrein und in großen, gleichartigen Mengen an",
+      "Baustellenabfälle sind ein Gemisch aus Papier, Holz, Metallen, Kunststoffen, Textilien und Hausmüll",
+      "Für gebrochenen Straßenaufbruch gibt es einen unmittelbaren Wiedereinsatz im Straßenbau",
+      "Straßenaufbruch enthält grundsätzlich keine Schadstoffe"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der entscheidende Unterschied ist die Sortenreinheit: Straßenaufbruch ist mineralisch und gleichartig, lässt sich brechen und direkt wieder einbauen. Baustellenabfälle sind ein Mischmasch, dessen Trennung aufwendig ist. Schadstofffrei ist Straßenaufbruch aber keineswegs — teerhaltige Stoffe sind ausdrücklich genannt.",
+    "bildDatei": "buch/anhang1/recyclinganteile.webp",
+    "bildunterschrift": "Höhe des Recyclinganteils (Buch S. 574)"
+  },
+  {
+    "id": "anhang1-024",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Voraussetzungen für Recycling",
+    "quelle": "Grundstufe Bautechnik, Buch S. 575 (Buchaufgabe 7)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 7: Welche Voraussetzungen müssen auf der Baustelle geschaffen werden?",
+    "optionen": [
+      "Altbaustoffe sind mindestens in Wertstoffe, Sonder- und Problemabfälle sowie Baustellenabfälle zu trennen",
+      "Der mineralische Teil der Baustellenabfälle sollte gesondert erfasst werden",
+      "Die Bauleitung sollte dafür sorgen, dass während der gesamten Bauzeit Container für die Getrenntsammlung bereitstehen",
+      "Jede Firma sollte eigene Container aufstellen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Gerade weil eine Getrenntsammlung für einzelne Betriebe oft unwirtschaftlich ist — bei ihnen fallen nur geringe Mengen an — sollen die Container gemeinsam genutzt werden. Deshalb ist es Aufgabe der Bauleitung, sie für alle tätigen Firmen bereitzustellen, statt dass jede Firma eigene aufstellt.",
+    "bildDatei": "buch/anhang1/baumischabfaelle.webp",
+    "bildunterschrift": "Baumischabfälle (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-025",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Voraussetzungen für Recycling",
+    "quelle": "Grundstufe Bautechnik, Buch S. 575",
+    "konfidenz": "hoch",
+    "frage": "Was wird künftig immer wichtiger, damit Bauteile getrennt werden können?",
+    "optionen": [
+      "Recyclinggerechte Konstruktionen, die sich wieder auseinanderbauen lassen — etwa durch Schraub- und Steckverbindungen",
+      "Recycelbare Baustoffe verwenden und prüfen, ob neu eingebaute Stoffe wieder verwertbar sind",
+      "Recycling-Baustoffe auch in neuen Bauwerken einsetzen",
+      "Möglichst viele Verbundstoffe wie Sandwichplatten verwenden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Verbundstoffe sind genau das Problem, nicht die Lösung: Bei ihnen ist die Demontage in einzelne Materialgruppen nur mit sehr großem Aufwand möglich — Sandwichplatten nennt das Buch ausdrücklich als Beispiel. Geringe Qualitätsunterschiede von Recycling-Baustoffen lassen sich übrigens durch angepasste Konstruktionen ausgleichen, etwa eine größere Schichtdicke.",
+    "bildDatei": "buch/anhang1/baumischabfaelle.webp",
+    "bildunterschrift": "Baumischabfälle (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-026",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Getrennthaltungsgebot",
+    "quelle": "Grundstufe Bautechnik, Buch S. 575 (Buchaufgabe 8)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 8: Wie unterscheidet das Getrennthaltungsgebot die Bauabfälle?",
+    "optionen": [
+      "Verwertbar: z. B. Beton, Ziegel, Metall, Holz, Papier",
+      "Störend: je nach Abfallsorte, z. B. Glas, Dämmstoffe und Kunststoffe im Holzcontainer oder Dachpappe und Dämmstoffe im Bauschuttcontainer",
+      "Schadstoffhaltig: z. B. Altöl, Asbest, Batterien, Teerpappen, mit Schadstoffen belastete Böden",
+      "Störend: alles, was schwerer als 25 kg ist"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Beachte, dass \"störend\" keine Eigenschaft des Stoffes ist, sondern eine Frage des Containers: Dämmstoff im Holzcontainer stört, im richtigen Container ist er ganz normaler Abfall. Genau deshalb muss man beim Einwerfen wissen, welcher Container vor einem steht.",
+    "bildDatei": "buch/anhang1/getrennthaltungsgebot.webp",
+    "bildunterschrift": "Getrennthaltungsgebot für Bauabfälle (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-027",
+    "typ": "cloze",
+    "lernfeld": "anhang1",
+    "thema": "Getrennthaltungsgebot",
+    "quelle": "Grundstufe Bautechnik, Buch S. 575",
+    "konfidenz": "hoch",
+    "text": "Das Getrennthaltungsgebot unterscheidet drei Arten von Bauabfaellen: {{verwertbar}}, {{stoerend}} und {{schadstoffhaltig}}. Ob ein Stoff stoerend ist, haengt davon ab, in welchem Container er landet.",
+    "akzeptiert": {
+      "verwertbar": ["verwertbare", "Wertstoffe"],
+      "stoerend": ["störend", "stoerende"],
+      "schadstoffhaltig": ["schadstoffhaltige", "schadstoffbelastet"]
+    },
+    "erklaerung": "Diese Dreiteilung entscheidet über die Entsorgungskosten. Verwertbare Stoffe bringen teils sogar Erlöse — Metall kostet im Beispiel des Buches 0 € je Tonne. Schadstoffhaltige Abfälle sind dagegen am teuersten und verlangen zusätzlich Nachweise.",
+    "bildDatei": "buch/anhang1/getrennthaltungsgebot.webp",
+    "bildunterschrift": "Getrennthaltungsgebot für Bauabfälle (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-028",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Recyclingkreislauf",
+    "quelle": "Grundstufe Bautechnik, Buch S. 575 (Grafik)",
+    "konfidenz": "hoch",
+    "frage": "Was zeigt der Kreislauf am Beispiel eines Dachsteins aus Beton?",
+    "optionen": [
+      "Produktrecycling: Wiederverwendung noch intakter Dachsteine nach dem Abriss",
+      "Materialrecycling: Zerkleinern der Dachsteine und Verwendung als Zuschlag zum Herstellen neuer Dachsteine",
+      "Mit Bitumen verunreinigte Reststücke fallen als Abfälle an",
+      "Alle abgerissenen Dachsteine gehen zwingend ins Materialrecycling"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Grafik zeigt zwei Wege nebeneinander: Der intakte Dachstein geht als ganzes Produkt zurück in den Gebrauch (Produktrecycling), der beschädigte wird zerkleinert und als Zuschlag eingesetzt (Materialrecycling). Der höherwertige Weg ist immer der erste — nur was nicht mehr intakt ist, wird gebrochen.",
+    "bildDatei": "buch/anhang1/kreislauf-dachstein.webp",
+    "bildunterschrift": "Kreislauf durch Recycling am Beispiel eines Dachsteins (Buch S. 575)"
+  },
+  {
+    "id": "anhang1-029",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Kosten und Einsparung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "frage": "Welche Grundsätze gelten für den Umgang mit Abfällen auf der Baustelle?",
+    "optionen": [
+      "Es sollen weniger Bauabfälle entstehen",
+      "Nicht vermeidbare Bauabfälle sollen verwertet und recycliert werden",
+      "Nicht verwertbare Bauabfälle sollen umweltverträglich entsorgt werden",
+      "Alle Bauabfälle sollen möglichst schnell deponiert werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die drei Grundsätze sind nichts anderes als die Rangfolge des Kreislaufwirtschaftsgesetzes, übersetzt in die Sprache der Baustelle: vermeiden, verwerten, umweltverträglich beseitigen. Alle am Bau Beteiligten haben in ihrem Verantwortungsbereich die Voraussetzungen dafür zu schaffen.",
+    "bildDatei": "buch/anhang1/grundsatz-abfaelle.webp",
+    "bildunterschrift": "Grundsatz für den Umgang mit Abfällen (Buch S. 576)"
+  },
+  {
+    "id": "anhang1-030",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Kosten und Einsparung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576 (Buchaufgabe 10)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 10: Warum ist es auch finanziell sinnvoll, Bauwerkstoffe getrennt zu sammeln?",
+    "optionen": [
+      "Die Deponiegebühren steigen immer weiter",
+      "Sortenreine Fraktionen sind deutlich günstiger zu entsorgen als Mischabfall",
+      "Manche Fraktionen wie Metall und Papier verursachen gar keine Entsorgungskosten",
+      "Getrennte Sammlung ist immer teurer, lohnt sich aber ökologisch"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Das Rechenbeispiel des Buches zeigt es deutlich: 10 t ungetrennt kosten 2400 €, dieselben 10 t getrennt erfasst nur 1196 €. Metall und Papier stehen dabei mit 0 € je Tonne in der Tabelle. Selbst mit zusätzlichen Lohn- und Logistikkosten für die Sortierung bleibt die getrennte Sammlung weit günstiger.",
+    "bildDatei": "buch/anhang1/getrennte-entsorgung.webp",
+    "bildunterschrift": "Kostensenkung durch sortenreine Trennung (Buch S. 576)"
+  },
+  {
+    "id": "anhang1-031",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Kosten und Einsparung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576 (Rechenbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 576: Baustelle A entsorgt {masse} t ausschließlich als Baustellenabfälle zu {preis} € je Tonne. Baustelle B erfasst dieselbe Menge getrennt: 3 t Bauschutt rein mineralisch (12 €/t), 2 t Bauschutt leicht verunreinigt (40 €/t), 1,1 t Holz (130 €/t), 0,2 t Papier (0 €/t), 0,8 t Metall (0 €/t), 0,3 t Verpackung (90 €/t) und 2,6 t Sortierrest (350 €/t). Wie viel spart Baustelle B?",
+    "parameter": [
+      { "name": "masse", "label": "Abfallmenge", "einheit": "t", "min": 10, "max": 10, "schritt": 0.1 },
+      { "name": "preis", "label": "Preis ungetrennt", "einheit": "€/t", "min": 240, "max": 240, "schritt": 10 }
+    ],
+    "schritte": [
+      { "beschreibung": "Kosten Baustelle A: {masse} t · {preis} €/t", "formel": "masse * preis", "ergebnisName": "kosten_a", "einheit": "€" },
+      { "beschreibung": "Kosten Baustelle B: 3·12 + 2·40 + 1,1·130 + 0,2·0 + 0,8·0 + 0,3·90 + 2,6·350", "formel": "3*12 + 2*40 + 1.1*130 + 0.2*0 + 0.8*0 + 0.3*90 + 2.6*350", "ergebnisName": "kosten_b", "einheit": "€" },
+      { "beschreibung": "Ersparnis: kosten_a − kosten_b", "formel": "kosten_a - kosten_b", "ergebnisName": "ersparnis", "einheit": "€" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "2400 € − 1196 € = 1204 € Ersparnis, also gut die Hälfte. Rechne die Massen zur Kontrolle zusammen: 3 + 2 + 1,1 + 0,2 + 0,8 + 0,3 + 2,6 = 10,0 t — es ist genau dieselbe Menge Abfall, nur anders sortiert. Der größte Kostenblock ist mit 910 € der Sortierrest; wer den kleiner hält, spart am meisten.",
+    "bildDatei": "buch/anhang1/kostenbeispiel.webp",
+    "bildunterschrift": "Kostenvergleich getrennte und ungetrennte Entsorgung (Buch S. 576)"
+  },
+  {
+    "id": "anhang1-032",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Kosten und Einsparung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Buchaufgabe 11)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchaufgabe 11: Auf einer Baustelle steht ein Container mit {masse} t Baustellenabfällen, ungetrennt zu {preis} € je Tonne. Wie viel ließe sich sparen bei getrennter Sammlung von 1,6 t rein mineralischem Bauschutt (12 €/t), 0,9 t leicht verunreinigtem Bauschutt (40 €/t), 0,3 t Metall (0 €/t), 0,6 t Holz (130 €/t), 0,1 t Verpackung (90 €/t) und 1,5 t Sortierresten (350 €/t)?",
+    "parameter": [
+      { "name": "masse", "label": "Abfallmenge im Container", "einheit": "t", "min": 5, "max": 5, "schritt": 0.1 },
+      { "name": "preis", "label": "Preis ungetrennt", "einheit": "€/t", "min": 240, "max": 240, "schritt": 10 }
+    ],
+    "schritte": [
+      { "beschreibung": "Kosten ungetrennt: {masse} t · {preis} €/t", "formel": "masse * preis", "ergebnisName": "kosten_un", "einheit": "€" },
+      { "beschreibung": "Kosten getrennt: 1,6·12 + 0,9·40 + 0,3·0 + 0,6·130 + 0,1·90 + 1,5·350", "formel": "1.6*12 + 0.9*40 + 0.3*0 + 0.6*130 + 0.1*90 + 1.5*350", "ergebnisName": "kosten_ge", "einheit": "€" },
+      { "beschreibung": "Ersparnis: kosten_un − kosten_ge", "formel": "kosten_un - kosten_ge", "ergebnisName": "ersparnis", "einheit": "€" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "1200 € − 667,20 € = 532,80 € Ersparnis. Die Preise stammen aus Abschnitt A1.4.3, auf den die Buchaufgabe ausdrücklich verweist. Auch hier gehen die Einzelmassen genau auf: 1,6 + 0,9 + 0,3 + 0,6 + 0,1 + 1,5 = 5,0 t. Der Sortierrest allein kostet 525 € und macht damit fast 80 % der getrennten Kosten aus.",
+    "bildDatei": "buch/anhang1/kostenbeispiel.webp",
+    "bildunterschrift": "Kostenvergleich getrennte und ungetrennte Entsorgung (Buch S. 576)"
+  },
+  {
+    "id": "anhang1-033",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "frage": "Wie wird Altholz verwertet?",
+    "optionen": [
+      "Hauptabnehmer für Altholz sind die Spanplattenwerke",
+      "Etwa 7 % der verarbeiteten Holzmenge werden wieder verwendet",
+      "Schadstoffbelastetes Holz kann nur in bestimmten Verbrennungsanlagen energetisch verwertet werden",
+      "Altholz darf ausnahmslos deponiert werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Nur etwa 7 % — das ist wenig, und der Grund steht gleich daneben: Holz enthält oft Schadstoffe aus chemischem Holzschutz, Lackresten oder Beschichtungen. Solches Holz taugt nicht mehr für Spanplatten und bleibt nur noch die energetische Verwertung in bestimmten Verbrennungsanlagen.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-034",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "aufgabentext": "Etwa {anteil} % der verarbeiteten Holzmenge werden wieder verwendet. Auf einer Abbruchbaustelle fallen {menge} t Altholz an. Wie viel davon wird rechnerisch wiederverwendet und wie viel muss anders verwertet werden?",
+    "parameter": [
+      { "name": "menge", "label": "anfallendes Altholz", "einheit": "t", "min": 5, "max": 60, "schritt": 1 },
+      { "name": "anteil", "label": "Wiederverwendungsanteil", "einheit": "%", "min": 7, "max": 7, "schritt": 1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Wiederverwendeter Anteil: {menge} · {anteil} ÷ 100", "formel": "menge * anteil / 100", "ergebnisName": "wieder", "einheit": "t" },
+      { "beschreibung": "Rest zur anderweitigen Verwertung: {menge} − wieder", "formel": "menge - wieder", "ergebnisName": "rest", "einheit": "t" }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Bei 40 t Altholz sind das nur 2,8 t Wiederverwendung — 37,2 t gehen andere Wege, meist in die energetische Verwertung. Die Zahl zeigt, wie weit die Praxis beim Holz noch vom Ziel eines geschlossenen Kreislaufs entfernt ist, und warum sauberes, unbehandeltes Holz so viel wertvoller ist als beschichtetes.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-035",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Metalle und mineralischer Bauschutt aufbereitet?",
+    "optionen": [
+      "Metalle können über den Schrotthandel an die Hüttenindustrie zum Einschmelzen zurückgegeben werden",
+      "Mineralischer Bauschutt wird getrennt, zerkleinert und klassiert, das heißt nach Korngröße zugeteilt",
+      "Durch mobile Recyclinganlagen können größere Bauwerke direkt vor Ort rezykliert werden",
+      "Mineralischer Bauschutt wird eingeschmolzen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Merke dir die drei Fachbegriffe der Bauschuttaufbereitung: trennen (sortieren, sieben, sichten), zerkleinern (brechen, mahlen) und klassieren (nach Korngröße zuteilen). Eingeschmolzen wird nur Metall. Der Vorteil mobiler Anlagen ist, dass der Transport zur stationären Anlage entfällt.",
+    "bildDatei": "buch/anhang1/mobile-anlage.webp",
+    "bildunterschrift": "Mobile Baustoffrecyclinganlage (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-036",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Baustellenabfälle und Sonderabfälle aufbereitet?",
+    "optionen": [
+      "Baustellenabfälle werden in Bauabfallrecyclinganlagen zunächst sortiert",
+      "Danach werden sie den Wertstoffen, dem mineralischen Bauschutt, den Verpackungen oder den Sortierresten zugeordnet",
+      "Bei Sonderabfällen wird durch Sammlung der Gefahrenstoffe der Restabfall von Schadstoffen befreit",
+      "Sortierreste können vollständig recycelt werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Sortierreste sind gerade der Teil, der übrig bleibt und entsorgt werden muss — deshalb sind sie im Kostenbeispiel mit 350 € je Tonne mit Abstand die teuerste Position. Wer auf der Baustelle sauber trennt, verkleinert genau diesen Rest. Sonderabfälle können teilweise durch aufwendige Verfahren behandelt oder aufbereitet werden.",
+    "bildDatei": "buch/anhang1/stationaere-anlage.webp",
+    "bildunterschrift": "Stationäre Recyclinganlage (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-037",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Materialtabelle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 577 (Tabelle, Buchaufgabe 12)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 12: Wie werden Holzschindeln recycelt und verwendet?",
+    "optionen": [
+      "Eine Wiederverwendung ist nicht möglich",
+      "Verfahren: Zerspanen, Zerfasern, Entfernen von Fremdteilen, Sortieren und Reinigen, Zugabe von Bindemitteln, Formgebung",
+      "Produkt: Sekundärrohstoff für Faser-, Span- und Bauplatten, Verwertung in der Zellstoffindustrie, Holzbriketts",
+      "Sie werden zu Kies- und Schotterersatz zerkleinert"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Bei Holzschindeln steht in der Spalte Wiederverwendung ausdrücklich \"nein\" — sie sind verwittert und nicht mehr einbaufähig. Möglich ist nur das Materialrecycling zu Faser- und Spanplatten oder Holzbriketts. Zu Kies- und Schotterersatz werden dagegen die mineralischen Stoffe wie Schiefer und Dachziegel.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-038",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Materialtabelle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 577 (Tabelle)",
+    "konfidenz": "hoch",
+    "frage": "Was sagt die Tabelle über Schiefer aus?",
+    "optionen": [
+      "Eine Wiederverwendung ist möglich bei guter Schieferqualität, aber mit hohem Aufwand beim Ausbauen",
+      "Recyclingverfahren: Zerkleinern zu Schieferbruch",
+      "Verwendung als Kies- und Schotterersatz für Lärmschutzwände, Untergrundverbesserungen, Leitungsgräben und Überschüttungen",
+      "Schiefer ist grundsätzlich nicht wiederverwendbar"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Bei Schiefer steht \"möglich bei guter Schieferqualität\" — mit dem ausdrücklichen Hinweis auf den hohen Aufwand beim Ausbauen. Genau das ist die Wirtschaftlichkeitsfrage: Der Werkstoff hält länger als seine Befestigung, aber jede Platte muss einzeln und vorsichtig gelöst werden.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-039",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Materialtabelle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 577 (Tabelle, Buchaufgabe 12)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 12: Was gilt für unglasierte Dachziegel und Betondachsteine?",
+    "optionen": [
+      "Beide sind wiederverwendbar, wenn sie nicht beschädigt sind",
+      "Dachziegel werden zerkleinert zu Ziegelbruch und als Kies- und Schotterersatz verwendet",
+      "Betondachsteine werden zerkleinert, gemahlen und gesiebt zu Dachsteinbruch und Granulat, das in den Herstellungsprozess zurückgeführt wird",
+      "Betondachsteine lassen sich nicht in die Produktion zurückführen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der Betondachstein ist das Musterbeispiel für einen geschlossenen Kreislauf: Sein Granulat geht durch Beimischung direkt in die Herstellung neuer Dachsteine zurück — genau das zeigt die Kreislaufgrafik auf S. 575. Der Ziegel schafft das nicht und landet eine Stufe tiefer als Kies- und Schotterersatz.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-040",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Materialtabelle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 577 (Tabelle, Buchaufgabe 12)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 12: Was gilt für Stahlbauteile sowie für Aluminium, Kupfer, Blei und Zink?",
+    "optionen": [
+      "Stahlbauteile sind wiederverwendbar, eventuell nach Erneuerung von Beschlägen, Dichtungen oder Befestigungen",
+      "Bei Stahl: Entfernen von Fremdteilen, Stahlteile trennen und sortieren, Rückführung über den Schrotthandel in die Stahlproduktion",
+      "Nichteisenmetalle: Entfernen von Fremdteilen wie Glas, Beschlägen und Dichtungen, Rückführung in den Herstellungsprozess",
+      "Blei und Zink dürfen wegen ihrer Schadstoffe nicht recycelt werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Metalle sind die Vorzeigefraktion des Recyclings: Sie lassen sich beliebig oft einschmelzen, ohne an Qualität zu verlieren, und gehen vollständig in den Herstellungsprozess zurück. Auch Blei und Zink — beides klassische Dachdeckerwerkstoffe — werden über den Schrotthandel zurückgeführt.",
+    "bildDatei": "buch/anhang1/materialtabelle.webp",
+    "bildunterschrift": "Wiederverwendungsmöglichkeiten und Recyclingprodukte (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-041",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Bauschuttaufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 578 (Grafik)",
+    "konfidenz": "hoch",
+    "frage": "Welche Stationen durchläuft der Bauschutt in einer Aufbereitungsanlage?",
+    "optionen": [
+      "Aufgabetrichter, Vorabsiebung, Leseband mit Container für Fremdstoffe",
+      "Prallmühle, Magnetscheider, Siebmaschine",
+      "Abwurfband und Sichter",
+      "Schmelzofen und Gießerei"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Reihenfolge folgt einer Logik: erst grob abtrennen (Vorabsiebung, Leseband), dann zerkleinern (Prallmühle), dann Metall herausholen (Magnetscheider), dann nach Korngröße sortieren (Siebmaschine, Sichter). Am Ende stehen definierte Produkte — Brechkorngemisch für Unterbau 0 bis 150 mm, für Wegebau 6 bis 63 mm und Abdeck-/Füllmaterial 0 bis 45 mm. Geschmolzen wird hier nichts.",
+    "bildDatei": "buch/anhang1/bauschuttaufbereitung.webp",
+    "bildunterschrift": "Stationen in einer Bauschuttaufbereitungsanlage (Buch S. 578)"
+  },
+  {
+    "id": "anhang1-042",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Deponieren",
+    "quelle": "Grundstufe Bautechnik, Buch S. 578",
+    "konfidenz": "hoch",
+    "frage": "Welche Probleme entstehen durch die Ansammlung enormer Abfallmengen auf einer Deponie?",
+    "optionen": [
+      "Sickerwasserbildung: Niederschlagswasser nimmt Schadstoffe auf und muss gesammelt und gereinigt werden",
+      "Deponiegasbildung: Es treten Gase giftiger Stoffe sowie Treibhaus- und ozonschichtwirksame Gase aus",
+      "Geruchsbelästigung, Staubentwicklung, Papier- und Kunststoffflug, Sackungen, Setzungen, Flächenverbrauch",
+      "Die Probleme beschränken sich auf den optischen Eindruck"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die beiden ersten sind die technisch schwierigsten: Sickerwasser muss aufgefangen und gereinigt werden, bevor es ins Grundwasser gelangt, und Deponiegas entweicht über Jahrzehnte. Sackungen und Setzungen sind der Grund, warum eine Deponiefläche auch nach der Schließung nicht einfach bebaut werden kann.",
+    "bildDatei": "buch/anhang1/deponie-arbeit.webp",
+    "bildunterschrift": "Arbeit auf einer Deponie (Buch S. 578)"
+  },
+  {
+    "id": "anhang1-043",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Müllverbrennung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 578",
+    "konfidenz": "hoch",
+    "frage": "Welche Argumente sprechen für die Müllverbrennung?",
+    "optionen": [
+      "Energiegewinnung in Form von Energie, Fernwärme und Dampf",
+      "Mengenreduktion im Hinblick auf Volumen und Masse",
+      "Schadstoffsenkung durch Aufkonzentration verteilter Stoffe mit der Möglichkeit gesicherter Ablagerung oder Verwertung",
+      "Vermeidung giftiger Rückstände"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Das dritte Pro-Argument ist das anspruchsvollste: Die Verbrennung sammelt weit verteilte Schadstoffe an einer Stelle, wo man sie kontrolliert ablagern kann. Giftige Rückstände zur Deponierung stehen aber gerade in der Kontra-Spalte — die Verbrennung beseitigt sie nicht, sie konzentriert sie.",
+    "bildDatei": "buch/anhang1/pro-kontra-verbrennung.webp",
+    "bildunterschrift": "Pro und Kontra Müllverbrennung (Buch S. 578)"
+  },
+  {
+    "id": "anhang1-044",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Müllverbrennung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 578",
+    "konfidenz": "hoch",
+    "frage": "Welche Argumente sprechen gegen die Müllverbrennung?",
+    "optionen": [
+      "Hohe Luftbelastung durch Schadstoffe",
+      "Rohstoffverschwendung",
+      "Giftige Rückstände zur Deponierung und Verhinderung einer stofflichen Verwertung",
+      "Zu geringe Mengenreduktion"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Das gewichtigste Gegenargument im Sinne des Kreislaufwirtschaftsgesetzes ist die Verhinderung der stofflichen Verwertung: Was verbrannt ist, kann nicht mehr recycelt werden. Deshalb steht die Verbrennung in der Rangfolge auch ganz unten, gleichauf mit der Beseitigung. In Deutschland ist bis heute strittig, welchen Umfang sie annehmen soll.",
+    "bildDatei": "buch/anhang1/pro-kontra-verbrennung.webp",
+    "bildunterschrift": "Pro und Kontra Müllverbrennung (Buch S. 578)"
+  },
+  {
+    "id": "anhang1-045",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Sonderabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579",
+    "konfidenz": "hoch",
+    "frage": "Welche Materialien zählen zum Sondermüll auf der Baustelle?",
+    "optionen": [
+      "Altfarben, Altöle, Asbest, Mineralfaserdämmstoffe",
+      "Kunststoffreiniger, schadstoffbelasteter Boden",
+      "Teer- und Dachpappen, mit Holzschutzmitteln behandeltes und kunststoffbeschichtetes Holz",
+      "Unbehandeltes Bauholz"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der Unterschied liegt in der Behandlung: Unbehandeltes Bauholz gehört in den Holzcontainer, mit Holzschutzmitteln behandeltes oder kunststoffbeschichtetes Holz dagegen in den Sondermüll. Für Dachdecker besonders wichtig sind Teer- und Dachpappen sowie Mineralfaserdämmstoffe.",
+    "bildDatei": "buch/anhang1/sondermuell-container.webp",
+    "bildunterschrift": "Gekennzeichneter und gesicherter Container mit Sondermüll (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-046",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Sonderabfälle",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579",
+    "konfidenz": "hoch",
+    "frage": "Was gilt bei der Entsorgung von Sondermüll?",
+    "optionen": [
+      "Es muss Schutzkleidung, gegebenenfalls auch Mundschutz getragen werden",
+      "Container mit Sondermüll müssen besonders gekennzeichnet werden",
+      "Sie sind gegen Zugriffe Unbefugter zu sichern",
+      "Sondermüll darf mit dem übrigen Bauabfall gesammelt werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Sondermüll muss zuallererst sorgfältig vom übrigen Bauabfall getrennt werden — sonst wird die gesamte Ladung zum Sonderabfall und damit um ein Vielfaches teurer. Kennzeichnung und Sicherung gegen Unbefugte sind Pflicht, nicht Empfehlung.",
+    "bildDatei": "buch/anhang1/sondermuell-container.webp",
+    "bildunterschrift": "Gekennzeichneter und gesicherter Container mit Sondermüll (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-047",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Asbest",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579 (Buchaufgabe 13)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 13: Warum ist Asbest so gefährlich für die Gesundheit?",
+    "optionen": [
+      "Die nicht sichtbaren Fasern entweichen in großer Zahl an die Luft und werden eingeatmet",
+      "Durch hohe und lang andauernde Belastung mit Asbestfasern kann Krebs entstehen",
+      "Besonders gefährlich ist Spritzasbest, da er die Fasern nur sehr gering bindet",
+      "Asbest ist gefährlich, weil er leicht entzündlich ist"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Gerade das Gegenteil von entzündlich: Asbest wurde wegen seiner hohen Beständigkeit gegen Hitze verbaut. Die Gefahr sind die unsichtbaren Fasern, die eingeatmet werden und nach langer Belastung Krebs auslösen können. Am kritischsten ist Spritzasbest, weil er die Fasern kaum bindet.",
+    "bildDatei": "buch/anhang1/asbest-warnhinweis.webp",
+    "bildunterschrift": "Warnhinweise bei Asbestarbeiten (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-048",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Asbest",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579 (Buchaufgabe 14)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 14: In welchen Produkten kann Asbest vorkommen?",
+    "optionen": [
+      "In Dachplatten, Fensterbänken und Außenwandverkleidungen",
+      "Als Zementasbest in Rohren, Dachplatten und Fensterbänken",
+      "Als Spritzasbest",
+      "In modernen Dachziegeln aus heutiger Produktion"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Asbest darf heute im Hochbau in Deutschland nicht mehr verwendet werden — in neuen Produkten steckt er also nicht. Die Gefahr liegt im Bestand: Dachplatten, Fensterbänke, Außenwandverkleidungen und Rohre. Genau deshalb sind Dachdecker besonders betroffen, wenn sie alte Dächer abdecken.",
+    "bildDatei": "buch/anhang1/asbest-warnhinweis.webp",
+    "bildunterschrift": "Warnhinweise bei Asbestarbeiten (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-049",
+    "typ": "fachbegriff",
+    "lernfeld": "anhang1",
+    "thema": "Asbest",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579",
+    "konfidenz": "hoch",
+    "begriff": "Asbest",
+    "definition": "Sammelbegriff für faserförmige Silicate mit guten technischen Eigenschaften wie hoher Beständigkeit gegen Hitze sowie hoher Biege- und Zugfestigkeit. Die Asbestfaser ist ein Naturprodukt, das aus seiner ursprünglichen Gesteinsform herausgelöst und mit Bindemittel erneut verfestigt wurde. Wegen der Krebsgefahr darf Asbest heute im Hochbau in Deutschland nicht mehr verwendet werden.",
+    "erklaerung": "Der Zwiespalt des Werkstoffs erklärt seine Geschichte: technisch hervorragend — hitzebeständig, fest, günstig — und zugleich krebserzeugend. Deshalb wurde er früher massenhaft verbaut, auch in Kindergärten und Schulen, die heute unter großem Aufwand saniert werden müssen. Auch Zementasbest gibt bei seiner Alterung große Mengen Fasern an die Luft ab.",
+    "bildDatei": "buch/anhang1/asbest-bespruehen.webp",
+    "bildunterschrift": "Besprühen eines Asbestzementprodukts (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-050",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Asbestentsorgung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579 (Buchaufgabe 15)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 15: Wie werden Asbestprodukte fachgerecht ausgebaut und entsorgt?",
+    "optionen": [
+      "Beim Ausbau ist darauf zu achten, dass die Asbestzementprodukte nicht zerstört werden",
+      "Um die Fasern zu binden, sind die Platten anzunässen oder mit faserbindenden Stoffen zu besprühen",
+      "Die Entsorgung erfolgt durch Fachfirmen, in Folie verpackt und nach bestimmten Vorschriften auf der Deponie abgelagert",
+      "Asbestplatten dürfen zur Volumenverringerung gebrochen werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Brechen ist genau das Verbotene: Jeder Bruch setzt Fasern frei. Die ganze Vorgehensweise zielt darauf, das Material feucht und ganz zu halten — annässen oder besprühen, unzerstört abnehmen, in Folie verpacken. Bei einer solchen Sanierung sind immer Atemschutzmaske und Schutzkleidung zu tragen.",
+    "bildDatei": "buch/anhang1/asbest-entfernen.webp",
+    "bildunterschrift": "Entfernen von Asbestprodukten in Schutzanzügen (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-051",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Asbestentsorgung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579 (Buchaufgabe 15)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 15: Welche Sondermaßnahmen sind bei Asbestarbeiten zusätzlich erforderlich?",
+    "optionen": [
+      "Anzeige der geplanten Asbestarbeiten und Betriebsanweisung für die Belegschaft",
+      "Arbeitsplan und arbeitsmedizinische Vorsorgeuntersuchung",
+      "Persönliche Schutzausrüstung",
+      "Eine mündliche Einweisung genügt"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Fünf Maßnahmen, die alle schriftlich beziehungsweise förmlich sind: Anzeige, Betriebsanweisung, Arbeitsplan, Vorsorgeuntersuchung, Schutzausrüstung. Eine mündliche Einweisung genügt ausdrücklich nicht — die Anzeige geht an die Behörde, bevor die Arbeiten überhaupt beginnen.",
+    "bildDatei": "buch/anhang1/asbest-sondermassnahmen.webp",
+    "bildunterschrift": "Sondermaßnahmen bei Asbestarbeiten (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-052",
+    "typ": "cloze",
+    "lernfeld": "anhang1",
+    "thema": "Asbestentsorgung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 579",
+    "konfidenz": "hoch",
+    "text": "Bei einer Asbestsanierung sind immer {{Atemschutzmaske}} und {{Schutzkleidung}} zu tragen. Um die Fasern zu binden, werden die Platten angenaesst oder mit faserbindenden Stoffen {{besprueht}}.",
+    "akzeptiert": {
+      "Atemschutzmaske": ["Atemschutz", "Atemmaske"],
+      "Schutzkleidung": ["Schutzanzug", "Schutzanzuege"],
+      "besprueht": ["besprüht", "bespruehen", "besprühen"]
+    },
+    "erklaerung": "Diese beiden Schutzmittel sind nicht verhandelbar, weil die Gefahr unsichtbar ist: Asbestfasern sieht und riecht man nicht. Das Annässen oder Besprühen wirkt an der Quelle — gebundene Fasern gelangen gar nicht erst in die Atemluft.",
+    "bildDatei": "buch/anhang1/asbest-bespruehen.webp",
+    "bildunterschrift": "Besprühen eines Asbestzementprodukts (Buch S. 579)"
+  },
+  {
+    "id": "anhang1-053",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Der Abriss",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Buchaufgabe 16a)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 16a: Welche Punkte müssen vor Beginn eines Abbruchs geklärt werden?",
+    "optionen": [
+      "Mit der Recyclingfirma: mobile oder stationäre Anlage, Entfernung, angenommenes Material, Kosten, Kapazität, Containergröße und Stellplatz",
+      "Mit der Deponie: Entfernungen, Voraussetzungen zur Beschaffenheit des Bauabfalls, Kosten",
+      "Mit den Behörden: Abbruchantrag, Lagerungs- und Transportauflagen",
+      "Nur die Frage, welcher Bagger eingesetzt wird"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Drei Gesprächspartner, drei Fragenkataloge — und alle drei müssen vor dem ersten Baggerbiss geklärt sein. Besonders leicht übersehen wird der Stellplatz für die Container: Steht kein Platz zur Verfügung, ist eine getrennte Sammlung auf der Baustelle praktisch unmöglich.",
+    "bildDatei": "buch/anhang1/abbrucharbeiten.webp",
+    "bildunterschrift": "Abbrucharbeiten (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-054",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Der Abriss",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Buchaufgabe 16b)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 16b: Was umfassen die Stufen 1 und 2 des Abbruchs?",
+    "optionen": [
+      "Stufe 1 — Direkte Wiederverwendung: Ausbau direkt wieder verwendbarer Bauteile, z. B. Heizkessel, Heizkörper, Armaturen, leichte Trennwände, Verteiler, Schaltschränke",
+      "Stufe 2 — Verwertung nach Vorbehandlung: Demontage von Bauteilen, die erst nach Reinigung oder Reparatur wieder verwendbar sind",
+      "Zu Stufe 2 gehören Treppen, Fenster, Türen, Geländer, Rohrleitungen, Dachziegel, Regenrinnen, Fallrohre und Dachstühle",
+      "Stufe 1 umfasst den Abbruch des Rohbaus"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Stufen folgen genau der Rangfolge des Kreislaufwirtschaftsgesetzes — vom Hochwertigsten zum Geringwertigsten. Für Dachdecker steht das Wichtigste in Stufe 2: Dachziegel, Regenrinnen, Fallrohre und Dachstühle sind nach Reinigung oder Reparatur wieder verwendbar. Der Rohbauabbruch ist erst Stufe 5.",
+    "bildDatei": "buch/anhang1/abbrucharbeiten.webp",
+    "bildunterschrift": "Abbrucharbeiten (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-055",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Der Abriss",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Buchaufgabe 16b)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 16b: Was umfassen die Stufen 3 bis 5 des Abbruchs?",
+    "optionen": [
+      "Stufe 3 — Recycling: Ausbau von Materialien mit etabliertem Materialkreislauf, z. B. Eisen, Kupfer, Zink, Aluminium, Glas",
+      "Stufe 4 — Sonderabfall: Abbau problematischer Bauteile wie Asbestbauteile, Kunststoffteile, Folien, Dämmstoffe, Bitumen, getrennt in Containern",
+      "Stufe 5 — Abbruch des Rohbaus und der Oberflächenbefestigung, möglichst frei von Verunreinigungen",
+      "Stufe 3 umfasst die Entsorgung von Asbest"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Asbest gehört in Stufe 4, nicht in Stufe 3. Die Reihenfolge hat einen praktischen Grund: Erst wenn alle Wertstoffe und alle Sonderabfälle heraus sind, kann der Rohbau möglichst frei von Verunreinigungen abgebrochen werden — nur dann ist er als mineralischer Bauschutt günstig zu entsorgen.",
+    "bildDatei": "buch/anhang1/unfallschutz-abriss.webp",
+    "bildunterschrift": "Unfallschutz beim Abriss (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-056",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Der Abriss",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Buchaufgabe 16c)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 16c: Welche Möglichkeiten der Entsorgung gibt es beim Abbruch?",
+    "optionen": [
+      "Als mineralischer Bauschutt zu ermäßigten Gebühren auf die Deponie",
+      "Brechen direkt auf der Baustelle in einer mobilen Recyclinganlage und weitere Verwendung vor Ort",
+      "Transport zu einer stationären Anlage unter Beachtung der Transportkosten, Verwendung von Containern",
+      "Verbrennen des Bauschutts auf der Baustelle"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Alle drei Wege gelten für Mauerwerk, Betonteile wie Fundamente, Wände, Stützen und Decken sowie keramische Bauteile. Beachte den Kostenhebel: \"ermäßigte Gebühren\" gibt es nur für sortenreinen mineralischen Bauschutt — jede Verunreinigung macht ihn teurer. Mineralischer Bauschutt brennt im Übrigen nicht.",
+    "bildDatei": "buch/anhang1/unfallschutz-abriss.webp",
+    "bildunterschrift": "Unfallschutz beim Abriss (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-057",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Der Abriss",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580",
+    "konfidenz": "hoch",
+    "frage": "Worauf ist beim Abriss neben Abfalltrennung und Sortierung besonders zu achten?",
+    "optionen": [
+      "Auf den Unfallschutz",
+      "Umweltbelastungen wie Lärm, Staubentwicklung und Schmutz müssen in einem zumutbaren Rahmen bleiben",
+      "Auf die möglichst schnelle Durchführung ohne Rücksicht auf Nachbarn",
+      "Umweltbelastungen spielen beim Abriss keine Rolle"
+    ],
+    "korrekt": [0, 1],
+    "erklaerung": "Der Abriss ist die gefährlichste Phase im Lebenszyklus eines Gebäudes — deshalb steht der Unfallschutz ausdrücklich neben der Abfalltrennung. Lärm, Staub und Schmutz treffen zudem die Nachbarschaft und müssen in einem zumutbaren Rahmen bleiben.",
+    "bildDatei": "buch/anhang1/unfallschutz-abriss.webp",
+    "bildunterschrift": "Unfallschutz beim Abriss (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-058",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Absetzbehälter",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Zeichnung)",
+    "konfidenz": "hoch",
+    "frage": "Welche Behältergrößen zeigt die Zeichnung der Absetzbehälter?",
+    "optionen": [
+      "Offene Behälter mit 5 m³ und 12 m³",
+      "Ein geschlossener Behälter mit 7 m³",
+      "Für einen Absetzkipper mit 3 Achsen ist ein Rangierraum von etwa 14000 mm zu berücksichtigen",
+      "Alle Behälter fassen einheitlich 10 m³"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Zeichnung nennt nicht nur die Behälter, sondern auch den Platzbedarf — und der ist der eigentliche Planungspunkt: Rund 14 m Rangierraum braucht der Absetzkipper mit 3 Achsen. Wer auf einer engen Baustelle Container für die Getrenntsammlung aufstellen will, muss diesen Raum einplanen.",
+    "bildDatei": "buch/anhang1/absetzbehaelter.webp",
+    "bildunterschrift": "Absetzbehälter und erforderlicher Platzbedarf (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-059",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Absetzbehälter",
+    "quelle": "Grundstufe Bautechnik, Buch S. 580 (Zeichnung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Bei einem Abbruch fallen {volumen} m³ Bauschutt an. Zur Verfügung stehen Absetzbehälter mit {behaelter} m³ Inhalt. Wie viele Behälterfüllungen sind nötig und wie viel Rauminhalt bleibt in der letzten Füllung ungenutzt?",
+    "parameter": [
+      { "name": "volumen", "label": "anfallender Bauschutt", "einheit": "m³", "min": 20, "max": 200, "schritt": 5 },
+      { "name": "behaelter", "label": "Inhalt eines Absetzbehälters", "einheit": "m³", "min": 5, "max": 12, "schritt": 1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Rechnerische Anzahl: {volumen} ÷ {behaelter}", "formel": "volumen / behaelter", "ergebnisName": "n_roh", "einheit": "Füllungen" },
+      { "beschreibung": "Aufrunden auf ganze Füllungen", "formel": "ceil(n_roh)", "ergebnisName": "n", "einheit": "Füllungen" },
+      { "beschreibung": "Ungenutzter Rauminhalt: n · {behaelter} − {volumen}", "formel": "n * behaelter - volumen", "ergebnisName": "rest", "einheit": "m³" }
+    ],
+    "toleranzProzent": 1,
+    "erklaerung": "Beispiel 100 m³ und ein 12-m³-Behälter: 100 ÷ 12 = 8,33, also 9 Füllungen, davon 8 m³ ungenutzt. Aufgerundet wird immer — eine halbe Fuhre gibt es nicht. Je größer der Behälter, desto weniger Fahrten, aber desto mehr Stellplatz und Rangierraum braucht es auf der Baustelle.",
+    "bildDatei": "buch/anhang1/absetzbehaelter.webp",
+    "bildunterschrift": "Absetzbehälter und erforderlicher Platzbedarf (Buch S. 580)"
+  },
+  {
+    "id": "anhang1-060",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Zusammenfassung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Zusammenfassung)",
+    "konfidenz": "hoch",
+    "frage": "Welche Vorteile bringt eine getrennte Einsammlung und umweltgerechte Beseitigung laut Zusammenfassung?",
+    "optionen": [
+      "Für den Bauherrn: höhere Lebensdauer der Bauwerkstoffe",
+      "Für den Betrieb: niedrigere Entsorgungskosten",
+      "Für die Angestellten: ein sicherer Arbeitsplatz",
+      "Ausschließlich ökologische, keine wirtschaftlichen Vorteile"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Zusammenfassung nennt ausdrücklich drei Nutznießer — Bauherr, Betrieb und Angestellte. Der Umweltschutz ist also nicht der einzige Grund: Wer sauber trennt, spart Geld und arbeitet sicherer. Genau das rechnet das Kostenbeispiel auf S. 576 vor.",
+    "bildDatei": "buch/anhang1/zusammenfassung.webp",
+    "bildunterschrift": "Zusammenfassung Anhang 1 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-061",
+    "typ": "cloze",
+    "lernfeld": "anhang1",
+    "thema": "Zusammenfassung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Zusammenfassung)",
+    "konfidenz": "hoch",
+    "text": "Nur wenn es gelingt, geschlossene {{Stoffkreislaeufe}} auf einem hohen Niveau zu bilden, rezyklierte Baustoffe auch in grossen Mengen einzusetzen und neue Moeglichkeiten fuer hochwertige {{Recyclingprodukte}} zu schaffen, laesst sich die Muelllawine stoppen und ein nachhaltiger {{Umweltschutz}} erreichen.",
+    "akzeptiert": {
+      "Stoffkreislaeufe": ["Stoffkreisläufe", "Stoffkreislauf", "Kreislaeufe"],
+      "Recyclingprodukte": ["Recyclingprodukten", "Recyclingprodukt"],
+      "Umweltschutz": ["Umweltschutzes", "Schutz der Umwelt"]
+    },
+    "erklaerung": "Beachte das Wort hochwertig: Es reicht nicht, Recyclingprodukte irgendwie unterzubringen. Sie müssen in gleicher Qualität wie das Ausgangsprodukt einsetzbar sein — sonst verschiebt man den Abfall nur um eine Stufe nach unten, statt den Kreislauf zu schließen.",
+    "bildDatei": "buch/anhang1/zusammenfassung.webp",
+    "bildunterschrift": "Zusammenfassung Anhang 1 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-062",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Zusammenfassung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Buchaufgabe 5)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 5: Was kann jeder Einzelne laut Zusammenfassung beitragen?",
+    "optionen": [
+      "Jeder kann einen Beitrag leisten, insbesondere bei der Abfallvermeidung, dem Recycling und der Entsorgung",
+      "Zum Beispiel durch den Einsatz umweltgerechter Baustoffe",
+      "Durch die getrennte Einsammlung in verschiedenen Containern",
+      "Der Einzelne hat auf der Baustelle keinen Einfluss auf die Abfallmenge"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der Anhang endet, wo er begonnen hat: bei der Verantwortung des Einzelnen. Auf der Baustelle entscheidet jeder Handwerker mit jedem Griff, in welchen Container etwas wandert — und damit über Kosten und Umweltwirkung. Das ist keine Frage der Hierarchie, sondern der täglichen Praxis.",
+    "bildDatei": "buch/anhang1/aufgaben-buch-1.webp",
+    "bildunterschrift": "Aufgaben 1 bis 7 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-063",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Containerzuordnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Buchaufgabe 8)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 8: Sechs Container stehen bereit — Bauschutt (1), Metall (2), Holz (3), Verpackungen (4), Sortierreste (5), Sonderabfall (6). Was gehört in Container 6?",
+    "optionen": [
+      "Altöl und Hydrauliköl",
+      "Leuchtstoffröhren und Kartuschen",
+      "Schädlich verunreinigter Bauschutt, Dachpappe und Farbreste",
+      "Kalksandsteine und Estrich"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Alles, was Schadstoffe enthält, geht in Container 6 — auch scheinbar harmlose Dinge wie Leuchtstoffröhren (Quecksilber) und Kartuschen (Lösungsmittelreste). Kalksandsteine und Estrich sind dagegen sauberer mineralischer Bauschutt und gehören in Container 1. Merke: \"Bauschutt\" allein sagt noch nichts — schädlich verunreinigter Bauschutt ist Sonderabfall.",
+    "bildDatei": "buch/anhang1/aufgaben-buch-2.webp",
+    "bildunterschrift": "Aufgaben 8 bis 16 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-064",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Containerzuordnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Buchaufgabe 8)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 8: Wie sind diese Abfälle den Containern zuzuordnen?",
+    "optionen": [
+      "Beton, Kalksandsteine, Gips, Fliesen, Estrich, Kies und Sand → Container 1 (Bauschutt)",
+      "Bewehrung, Heizkörper und Badewanne → Container 2 (Metall)",
+      "Naturbelassenes Holz, Paletten, Bahnschwellen und Spanplatten → Container 3 (Holz)",
+      "Kunststoffsäcke und Kunststoffbehälter → Container 1 (Bauschutt)"
+    ],
+    "korrekt": [0, 1],
+    "erklaerung": "Zwei Fallen in dieser Aufgabe. Erstens: Kunststoffsäcke und -behälter sind Verpackungen und gehören in Container 4, nicht in den Bauschutt. Zweitens sind bei Option 3 nicht alle Hölzer gleich — naturbelassenes Holz und Paletten gehören in Container 3, aber Bahnschwellen sind teergetränkt und Spanplatten verleimt und beschichtet; beide sind Sonderabfall.",
+    "bildDatei": "buch/anhang1/aufgaben-buch-2.webp",
+    "bildunterschrift": "Aufgaben 8 bis 16 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-065",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Containerzuordnung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 581 (Buchaufgabe 8)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 8: Welche Zuordnung ist richtig für Dachdeckermaterialien?",
+    "optionen": [
+      "Dachziegel → Container 1 (Bauschutt)",
+      "Dachpappe → Container 6 (Sonderabfall), da sie zu den Sonderabfällen zählt",
+      "Glaswolle und Styropor → Container 5 (Sortierreste) beziehungsweise Sonderabfall, da nicht sortenrein verwertbar",
+      "Dachpappe → Container 1 (Bauschutt)"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Dachpappe im Bauschuttcontainer ist der klassische Fehler — sie ist im Getrennthaltungsgebot ausdrücklich als störend im Bauschuttcontainer genannt und zählt wegen ihres Bitumen- beziehungsweise Teeranteils zum Sonderabfall. Ein einziger Ballen Dachpappe kann eine ganze Bauschuttladung entwerten.",
+    "bildDatei": "buch/anhang1/aufgaben-buch-2.webp",
+    "bildunterschrift": "Aufgaben 8 bis 16 (Buch S. 581)"
+  },
+  {
+    "id": "anhang1-066",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "frage": "Worin unterscheiden sich mobile und stationäre Recyclinganlagen?",
+    "optionen": [
+      "Mobile Anlagen können größere Bauwerke direkt vor Ort rezyklieren",
+      "Stationäre Anlagen bereiten den mineralischen Bauschutt an einem festen Standort auf",
+      "Bei stationären Anlagen sind Entfernung und Transportkosten zu beachten",
+      "Mobile Anlagen erreichen grundsätzlich keine verwertbaren Korngrößen"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Der entscheidende Unterschied ist der Transport: Die mobile Anlage kommt zum Bauwerk, bei der stationären muss das Material gefahren werden. Deshalb steht in der Checkliste vor dem Abbruch ausdrücklich die Frage nach der Entfernung zur stationären Anlage — bei großen Massen entscheiden die Transportkosten über die Wirtschaftlichkeit.",
+    "bildDatei": "buch/anhang1/mobile-anlage.webp",
+    "bildunterschrift": "Mobile Baustoffrecyclinganlage (Buch S. 577)"
+  },
+  {
+    "id": "anhang1-067",
+    "typ": "calc",
+    "lernfeld": "anhang1",
+    "thema": "Recyclinganteile",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573 und S. 574",
+    "konfidenz": "hoch",
+    "aufgabentext": "In Deutschland fallen jährlich {menge} Mio. t Straßenaufbruch an. Davon werden {quote} % rezykliert. Wie viel Material wird wiederverwertet und wie viel bleibt übrig?",
+    "parameter": [
+      { "name": "menge", "label": "Straßenaufbruch je Jahr", "einheit": "Mio. t", "min": 16, "max": 16, "schritt": 0.1 },
+      { "name": "quote", "label": "Recyclingquote", "einheit": "%", "min": 95.4, "max": 95.4, "schritt": 0.1 }
+    ],
+    "schritte": [
+      { "beschreibung": "Rezyklierte Menge: {menge} · {quote} ÷ 100", "formel": "menge * quote / 100", "ergebnisName": "rezykliert", "einheit": "Mio. t" },
+      { "beschreibung": "Verbleibende Menge: {menge} − rezykliert", "formel": "menge - rezykliert", "ergebnisName": "rest", "einheit": "Mio. t" }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "16 · 0,954 = 15,3 Mio. t werden rezykliert, nur 0,7 Mio. t bleiben übrig. Vergleiche das mit dem Bauschutt: Bei 58,5 Mio. t und 77,7 % Quote bleiben 13,0 Mio. t übrig — fast so viel, wie überhaupt an Straßenaufbruch anfällt. Deshalb liegt beim Bauschutt der größere Hebel.",
+    "bildDatei": "buch/anhang1/kreis-mineralische.webp",
+    "bildunterschrift": "Mineralische Bauabfälle (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-068",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Getrennte Entsorgung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576 (Grafik)",
+    "konfidenz": "hoch",
+    "frage": "Welche drei Fraktionen zeigt die Grafik zur getrennten Entsorgung?",
+    "optionen": [
+      "Bauschutt: Beton, Ziegel, Gipsbaustoffe, Fliesen",
+      "Holz und Kunststoffe: Schalholz, Folien, Dämmstoffe",
+      "Metalle: Bewehrung, Profilstähle, Bleche",
+      "Sonderabfall: Asbest und Altöl"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Die Grafik zeigt die drei mengenmäßig wichtigsten Fraktionen einer normalen Baustelle. Sonderabfall taucht dort nicht auf, weil er ohnehin gesondert und gekennzeichnet gesammelt werden muss — er ist kein Teil der Routine-Trennung, sondern ein eigener, strenger geregelter Weg.",
+    "bildDatei": "buch/anhang1/getrennte-entsorgung.webp",
+    "bildunterschrift": "Kostensenkung durch sortenreine Trennung (Buch S. 576)"
+  },
+  {
+    "id": "anhang1-069",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Vermeiden",
+    "quelle": "Grundstufe Bautechnik, Buch S. 573 (Buchaufgabe 5)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 5: Welche konkreten Beispiele aus dem Dachdeckerhandwerk nennt das Buch zum Vermeiden?",
+    "optionen": [
+      "Durch fachkundige Analyse können Holz und Dachziegel eines zu erneuernden Dachstuhls womöglich wiederverwendet werden",
+      "Maße bei der Bestellung so wählen, dass wenig Verschnitt entsteht",
+      "Dachziegel müssen nicht in Folie verpackt geliefert werden",
+      "Reste sollten vorsorglich doppelt bestellt werden"
+    ],
+    "korrekt": [0, 1, 2],
+    "erklaerung": "Alle drei Beispiele setzen vor der Ausführung an — bei Analyse, Bestellmaß und Verpackung. Besonders lohnend ist die fachkundige Analyse des alten Dachstuhls: Was dort als brauchbar erkannt wird, muss weder entsorgt noch neu gekauft werden. Vorsorglich doppelt bestellen erzeugt dagegen genau den Verschnitt, den man vermeiden will.",
+    "bildDatei": "buch/anhang1/vermeiden-stufen.webp",
+    "bildunterschrift": "Rangfolge des Kreislaufwirtschaftsgesetzes (Buch S. 573)"
+  },
+  {
+    "id": "anhang1-070",
+    "typ": "fachbegriff",
+    "lernfeld": "anhang1",
+    "thema": "Aufbereitung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 576",
+    "konfidenz": "hoch",
+    "begriff": "Klassieren",
+    "definition": "Das Zuteilen von aufbereitetem Bauschutt nach Korngröße, zum Beispiel durch Sieben. Klassieren ist der dritte Schritt der Bauschuttaufbereitung nach dem Trennen (Sortieren, Sieben, Sichten) und dem Zerkleinern (Brechen, Mahlen).",
+    "bestandteile": ["Klass", "ieren"],
+    "erklaerung": "Erst das Klassieren macht aus Bauschutt ein verkaufbares Produkt: Ohne definierte Korngröße lässt sich das Material nicht als Unterbau- oder Wegebaumaterial verwenden. Die Anlage liefert deshalb feste Klassen — 0 bis 150 mm für den Unterbau, 6 bis 63 mm für den Wegebau, 0 bis 45 mm als Abdeck- und Füllmaterial.",
+    "bildDatei": "buch/anhang1/bauschuttaufbereitung.webp",
+    "bildunterschrift": "Stationen in einer Bauschuttaufbereitungsanlage (Buch S. 578)"
+  },
+  {
+    "id": "anhang1-071",
+    "typ": "mc",
+    "lernfeld": "anhang1",
+    "thema": "Deponieren",
+    "quelle": "Grundstufe Bautechnik, Buch S. 578",
+    "konfidenz": "hoch",
+    "frage": "Wie wird in Deutschland die Abfallmenge beseitigt, die nicht wiederverwendet wird?",
+    "optionen": [
+      "Sie wird auf Deponien abgelagert",
+      "Sie wird in Müllverbrennungsanlagen entsorgt",
+      "Sie wird vollständig exportiert",
+      "Sie wird ausnahmslos rezykliert"
+    ],
+    "korrekt": [0, 1],
+    "erklaerung": "Zwei Wege, beide am unteren Ende der Rangfolge: Deponie oder Verbrennung. Beide sind Beseitigung, nicht Verwertung — und beide bringen eigene Probleme mit sich, wie die Aufstellungen zu Sickerwasser, Deponiegas und der Pro-Kontra-Vergleich zur Verbrennung zeigen.",
+    "bildDatei": "buch/anhang1/deponie-arbeit.webp",
+    "bildunterschrift": "Arbeit auf einer Deponie (Buch S. 578)"
+  }
+]

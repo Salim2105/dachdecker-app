@@ -20,6 +20,7 @@
     { "id": "lf15", "nr": "15", "titel": "An- und Abschlüsse an Wänden herstellen", "lehrjahr": 3, "stunden": 40, "themen": ["Innen- und Außenecken", "Untere, seitliche und obere Abschlüsse", "Durchdringungen: Fenster und Türen", "Detailskizzen"] },
     { "id": "lf16", "nr": "16", "titel": "Energiesammler, Blitzschutzanlagen und Einbauteile montieren", "lehrjahr": 3, "stunden": 40, "themen": ["Photovoltaik und Solarthermie", "Äußerer Blitzschutz", "Aufgeständerte und integrierte Anlagen", "Wind- und Schneelasten", "Gefahren des elektrischen Stroms", "Schneefang und Absturzsicherung"] },
     { "id": "lf17", "nr": "17", "titel": "Dach- und Wandflächen instand halten", "lehrjahr": 3, "stunden": 40, "themen": ["Inspektion und Checklisten", "Schadensanalyse", "Reparatur, Teilsanierung, Komplettsanierung", "Sofortmaßnahmen", "Wartungsverträge", "Aufmaß"] },
-    { "id": "wiso", "nr": "WiSo", "titel": "Wirtschafts- und Sozialkunde", "lehrjahr": 3, "stunden": 0, "themen": ["Ausbildungsvertrag", "Arbeits- und Tarifrecht", "Betriebsorganisation", "Sozialversicherung", "Berufliche Fortbildung"] }
+    { "id": "wiso", "nr": "WiSo", "titel": "Wirtschafts- und Sozialkunde", "lehrjahr": 3, "stunden": 0, "themen": ["Ausbildungsvertrag", "Arbeits- und Tarifrecht", "Betriebsorganisation", "Sozialversicherung", "Berufliche Fortbildung"] },
+    { "id": "anhang1", "nr": "A1", "titel": "Vermeiden, Verwerten, Beseitigen – Recycling und Abfallentsorgung", "lehrjahr": 3, "stunden": 0, "themen": ["Kreislaufwirtschaftsgesetz", "Einteilung der Bauabfälle", "Vermeiden", "Recycling und Wiederverwendung", "Kosten der Entsorgung", "Deponie und Müllverbrennung", "Asbest und Sonderabfälle", "Abriss"] }
   ]
 }

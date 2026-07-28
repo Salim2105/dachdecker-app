@@ -1,0 +1,403 @@
+{
+  "lf": "anhang1",
+  "pdf": "/Users/salimsakkali/Downloads/ANHANG1.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 571+i (Seite 1 = Buch S. 572 ... Seite 10 = Buch S. 581)",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.56,
+        0.245,
+        0.955,
+        0.395
+      ],
+      "name": "schadstofftabelle",
+      "alt": "Tabelle umwelt- und gesundheitsschaedigender Stoffe, gegliedert in Gase, Fluessigkeiten und feste Stoffe",
+      "unterschrift": "Umwelt- und gesundheitsschaedigende Stoffe (Buch S. 572)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.56,
+        0.42,
+        0.955,
+        0.592
+      ],
+      "name": "kreis-abfallaufkommen",
+      "alt": "Kreisdiagramm des Abfallaufkommens: Bau- und Abbruchabfaelle 228,1 Mio. t entsprechen 62,9 Prozent",
+      "unterschrift": "In Produktions- und Verbrauchsprozessen entstandene Abfaelle (Buch S. 572)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.15,
+        0.665,
+        0.56,
+        0.776
+      ],
+      "name": "krwg-auswirkungen",
+      "alt": "Kasten zu den Auswirkungen des Kreislaufwirtschaftsgesetzes auf Bauabfaelle",
+      "unterschrift": "Auswirkungen des Kreislaufwirtschaftsgesetzes (Buch S. 572)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.555,
+        0.612,
+        0.955,
+        0.915
+      ],
+      "name": "abfallgruppen-text",
+      "alt": "Beschreibung der fuenf Bauabfallgruppen Bodenaushub, Strassenaufbruch, Bauschutt, Baustellenabfaelle und Sonderabfaelle",
+      "unterschrift": "Die fuenf Gruppen der Bauabfaelle (Buch S. 572)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.032,
+        0.12,
+        0.858,
+        0.402
+      ],
+      "name": "bau-bodenabfaelle",
+      "alt": "Uebersicht der Bau- und Bodenabfaelle in fuenf Spalten mit Beispielen je Gruppe",
+      "unterschrift": "Einteilung der Bauabfaelle (Buch S. 573)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.055,
+        0.395,
+        0.49,
+        0.522
+      ],
+      "name": "kreis-mineralische",
+      "alt": "Kreisdiagramm der mineralischen Bauabfaelle: Boden und Steine 125,2 Mio. t, Bauschutt 58,5 Mio. t, Strassenaufbruch 16 Mio. t",
+      "unterschrift": "Mineralische Bauabfaelle (Buch S. 573)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.485,
+        0.665,
+        0.915,
+        0.905
+      ],
+      "name": "vermeiden-stufen",
+      "alt": "Stufengrafik der Abfallhierarchie von Vermeiden ueber Vermindern und stoffliche Verwertung bis zur Beseitigung",
+      "unterschrift": "Rangfolge des Kreislaufwirtschaftsgesetzes (Buch S. 573)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.135,
+        0.15,
+        0.955,
+        0.4
+      ],
+      "name": "neubau-recycling",
+      "alt": "Zeichnung einer Baustelle, auf der bereits beim Neubau recyclingfaehige Baustoffe geplant werden",
+      "unterschrift": "Schon beim Neubau an das Recycling denken (Buch S. 574)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.518,
+        0.42,
+        0.955,
+        0.795
+      ],
+      "name": "recyclinganteile",
+      "alt": "Drei Kreisdiagramme zur Hoehe des Recyclinganteils bei Baustellenabfaellen, Strassenaufbruch und Bauschutt",
+      "unterschrift": "Hoehe des Recyclinganteils (Buch S. 574)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.098,
+        0.651,
+        0.535,
+        0.778
+      ],
+      "name": "recycling-ziel",
+      "alt": "Kasten zum Ziel des Recyclings, geschlossener Stoffkreislauf auf hohem Niveau",
+      "unterschrift": "Ziel des Recyclings (Buch S. 574)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.462,
+        0.145,
+        0.92,
+        0.485
+      ],
+      "name": "kreislauf-dachstein",
+      "alt": "Ablaufdiagramm des Recyclingkreislaufs am Beispiel eines Dachsteins aus Beton mit Produktgebrauch, Produktrecycling und Materialrecycling",
+      "unterschrift": "Kreislauf durch Recycling am Beispiel eines Dachsteins (Buch S. 575)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.468,
+        0.54,
+        0.92,
+        0.745
+      ],
+      "name": "baumischabfaelle",
+      "alt": "Foto eines Haufens unsortierter Baumischabfaelle",
+      "unterschrift": "Baumischabfaelle (Buch S. 575)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.462,
+        0.775,
+        0.92,
+        0.918
+      ],
+      "name": "getrennthaltungsgebot",
+      "alt": "Kasten zum Getrennthaltungsgebot fuer Bauabfaelle mit verwertbaren, stoerenden und schadstoffhaltigen Stoffen",
+      "unterschrift": "Getrennthaltungsgebot fuer Bauabfaelle (Buch S. 575)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.1,
+        0.135,
+        0.51,
+        0.275
+      ],
+      "name": "grundsatz-abfaelle",
+      "alt": "Kasten mit den Grundsaetzen fuer den Umgang mit Abfaellen auf der Baustelle",
+      "unterschrift": "Grundsatz fuer den Umgang mit Abfaellen (Buch S. 576)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.52,
+        0.13,
+        0.94,
+        0.35
+      ],
+      "name": "getrennte-entsorgung",
+      "alt": "Grafik dreier Container fuer Bauschutt, Holz und Kunststoffe sowie Metalle zur getrennten Entsorgung",
+      "unterschrift": "Kostensenkung durch sortenreine Trennung (Buch S. 576)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.1,
+        0.47,
+        0.515,
+        0.925
+      ],
+      "name": "kostenbeispiel",
+      "alt": "Rechenbeispiel zweier Baustellen: 10 t ungetrennt kosten 2400 Euro, 10 t getrennt erfasst nur 1196 Euro",
+      "unterschrift": "Kostenvergleich getrennte und ungetrennte Entsorgung (Buch S. 576)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.07,
+        0.125,
+        0.465,
+        0.325
+      ],
+      "name": "mobile-anlage",
+      "alt": "Foto einer mobilen Baustoffrecyclinganlage im Freien",
+      "unterschrift": "Mobile Baustoffrecyclinganlage (Buch S. 577)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.47,
+        0.14,
+        0.875,
+        0.338
+      ],
+      "name": "stationaere-anlage",
+      "alt": "Foto einer stationaeren Recyclinganlage mit Foerderband und Materialhaufen",
+      "unterschrift": "Stationaere Recyclinganlage (Buch S. 577)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.065,
+        0.375,
+        0.875,
+        0.91
+      ],
+      "name": "materialtabelle",
+      "alt": "Tabelle der Wiederverwendungsmoeglichkeiten und Recyclingprodukte fuer Holzschindeln, Schiefer, Dachziegel, Betondachsteine, Stahlbauteile und Nichteisenmetalle",
+      "unterschrift": "Wiederverwendungsmoeglichkeiten und Recyclingprodukte (Buch S. 577)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.16,
+        0.185,
+        0.955,
+        0.44
+      ],
+      "name": "bauschuttaufbereitung",
+      "alt": "Schema der Stationen einer Bauschuttaufbereitungsanlage mit Brecher, Siebmaschine, Magnetscheider und Korngroessen",
+      "unterschrift": "Stationen in einer Bauschuttaufbereitungsanlage (Buch S. 578)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.56,
+        0.455,
+        0.955,
+        0.635
+      ],
+      "name": "deponie-arbeit",
+      "alt": "Foto von Arbeitern in Schutzkleidung auf einer Deponie",
+      "unterschrift": "Arbeit auf einer Deponie (Buch S. 578)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.56,
+        0.645,
+        0.955,
+        0.925
+      ],
+      "name": "pro-kontra-verbrennung",
+      "alt": "Gegenueberstellung von Pro und Kontra der Muellverbrennung",
+      "unterschrift": "Pro und Kontra Muellverbrennung (Buch S. 578)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.485,
+        0.155,
+        0.645,
+        0.307
+      ],
+      "name": "asbest-warnhinweis",
+      "alt": "Warnschild Zutritt verboten Asbestfasern",
+      "unterschrift": "Warnhinweise bei Asbestarbeiten (Buch S. 579)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.645,
+        0.155,
+        0.93,
+        0.307
+      ],
+      "name": "sondermuell-container",
+      "alt": "Foto eines gekennzeichneten und gesicherten Containers fuer Sondermuell",
+      "unterschrift": "Gekennzeichneter und gesicherter Container mit Sondermuell (Buch S. 579)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.49,
+        0.318,
+        0.925,
+        0.552
+      ],
+      "name": "asbest-bespruehen",
+      "alt": "Foto des Bespruehens eines Asbestzementprodukts mit einem faserbindenden Mittel",
+      "unterschrift": "Bespruehen eines Asbestzementprodukts (Buch S. 579)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.49,
+        0.556,
+        0.925,
+        0.79
+      ],
+      "name": "asbest-entfernen",
+      "alt": "Foto zweier Arbeiter in Schutzanzuegen mit Atemmaske beim Entfernen von Asbestprodukten",
+      "unterschrift": "Entfernen von Asbestprodukten in Schutzanzuegen (Buch S. 579)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.49,
+        0.79,
+        0.925,
+        0.925
+      ],
+      "name": "asbest-sondermassnahmen",
+      "alt": "Liste der erforderlichen Sondermassnahmen bei Asbestarbeiten von der Anzeige bis zur persoenlichen Schutzausruestung",
+      "unterschrift": "Sondermassnahmen bei Asbestarbeiten (Buch S. 579)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.51,
+        0.28,
+        0.94,
+        0.37
+      ],
+      "name": "unfallschutz-abriss",
+      "alt": "Kasten zum Unfallschutz und zur Umweltbelastung bei Abfalltrennung und Sortierung",
+      "unterschrift": "Unfallschutz beim Abriss (Buch S. 580)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.51,
+        0.395,
+        0.94,
+        0.606
+      ],
+      "name": "abbrucharbeiten",
+      "alt": "Foto eines Abbruchbaggers vor einem teilweise abgerissenen Gebaeude",
+      "unterschrift": "Abbrucharbeiten (Buch S. 580)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.458,
+        0.615,
+        0.94,
+        0.928
+      ],
+      "name": "absetzbehaelter",
+      "alt": "Massskizze offener und geschlossener Absetzbehaelter von 5, 7 und 12 Kubikmetern sowie des Platzbedarfs eines Absetzkippers",
+      "unterschrift": "Absetzbehaelter und erforderlicher Platzbedarf (Buch S. 580)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.1,
+        0.11,
+        0.515,
+        0.44
+      ],
+      "name": "zusammenfassung",
+      "alt": "Zusammenfassung des Anhangs 1 zu Vermeiden, Verwerten und Beseitigen von Bauabfaellen",
+      "unterschrift": "Zusammenfassung Anhang 1 (Buch S. 581)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.09,
+        0.465,
+        0.515,
+        0.815
+      ],
+      "name": "aufgaben-buch-1",
+      "alt": "Die Buchaufgaben 1 bis 7 zum Anhang 1",
+      "unterschrift": "Aufgaben 1 bis 7 (Buch S. 581)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.125,
+        0.945,
+        0.8
+      ],
+      "name": "aufgaben-buch-2",
+      "alt": "Die Buchaufgaben 8 bis 16 zum Anhang 1",
+      "unterschrift": "Aufgaben 8 bis 16 (Buch S. 581)"
+    }
+  ]
+}
