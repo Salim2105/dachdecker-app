@@ -1,0 +1,511 @@
+{
+  "lf": "lf16",
+  "pdf": "/Users/salimsakkali/Downloads/LF16.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 545+i (Seiten 546-557). box = Bruchteile [x0,y0,x1,y1].",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.52,
+        0.15,
+        0.98,
+        0.36
+      ],
+      "name": "projekt-ansicht",
+      "alt": "Bemaßte Ansicht des Einfamilienhauses der Projektaufgabe",
+      "unterschrift": "Ansicht Einfamilienhaus (Buch S. 546)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.52,
+        0.37,
+        0.98,
+        0.6
+      ],
+      "name": "projekt-draufsicht",
+      "alt": "Bemaßte Draufsicht des Einfamilienhauses mit Schornstein und Rohrdurchführung",
+      "unterschrift": "Draufsicht Einfamilienhaus (Buch S. 546)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.1,
+        0.62,
+        0.98,
+        0.93
+      ],
+      "name": "projekt-raeumlich",
+      "alt": "Räumliche Darstellung des Einfamilienhauses mit Maßen für die Blitzschutzplanung",
+      "unterschrift": "Projektaufgabe zum Blitzschutz: Einfamilienhaus (Buch S. 546)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.05,
+        0.45,
+        0.5,
+        0.66
+      ],
+      "name": "schutzklassen-tabelle",
+      "alt": "Tabelle der Schutzklassen mit Schutzwahrscheinlichkeit und Maschenweite",
+      "unterschrift": "Schutzklassen einer Blitzschutzanlage (Buch S. 547)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.44,
+        0.98,
+        0.7
+      ],
+      "name": "prinzip-aeusserer-blitzschutz",
+      "alt": "Prinzip des äußeren Blitzschutzes mit Fangeinrichtung, Ableitung und Erdungsanlage",
+      "unterschrift": "Prinzip des äußeren Blitzschutzes (Buch S. 547)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.05,
+        0.7,
+        0.99,
+        0.92
+      ],
+      "name": "mindestabmessungen-tabelle",
+      "alt": "Tabelle der Mindestabmessungen von Blitzschutzbestandteilen je Werkstoff",
+      "unterschrift": "Mindestabmessungen von Blitzschutzbestandteilen (Buch S. 547)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.44
+      ],
+      "name": "symbole-gebaeudeteile",
+      "alt": "Tabelle der Symbole für Gebäudeteile in Blitzschutzzeichnungen",
+      "unterschrift": "Symbole für Gebäudeteile (Buch S. 548)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.5,
+        0.44,
+        0.98,
+        0.94
+      ],
+      "name": "symbole-blitzschutz",
+      "alt": "Tabelle der Symbole für Blitzschutzbauteile in Zeichnungen",
+      "unterschrift": "Symbole für Zeichnungen mit Blitzschutzbauteilen (Buch S. 548)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.06,
+        0.62,
+        0.5,
+        0.95
+      ],
+      "name": "weiche-bedachung-abstaende",
+      "alt": "Fangeinrichtung für Gebäude mit weicher Bedachung mit Tabelle der Abstandsmaße",
+      "unterschrift": "Fangeinrichtung bei weicher Bedachung mit Abstandsmaßen (Buch S. 548)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.15,
+        0.655,
+        0.375
+      ],
+      "name": "fangleitung-first-ortgang",
+      "alt": "Montagemaße für Fangleitungen an First und Ortgang",
+      "unterschrift": "Fangleitungen an First und Ortgang (Buch S. 549)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.655,
+        0.15,
+        0.86,
+        0.375
+      ],
+      "name": "befestigung-ableitung",
+      "alt": "Befestigung der Ableitung an der Fassade mit Abstandsmaßen",
+      "unterschrift": "Befestigung der Ableitung (Buch S. 549)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.395,
+        0.645,
+        0.605
+      ],
+      "name": "fangeinrichtung-luefter",
+      "alt": "Fangeinrichtung an einem Lüfter auf dem Dach",
+      "unterschrift": "Fangeinrichtung an Lüfter (Buch S. 549)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.645,
+        0.395,
+        0.86,
+        0.605
+      ],
+      "name": "fangeinrichtung-schornstein",
+      "alt": "Fangeinrichtung am Schornstein mit Abstandsmaß",
+      "unterschrift": "Fangeinrichtung am Schornstein (Buch S. 549)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.6,
+        0.98,
+        0.93
+      ],
+      "name": "dachaufbau-schutzbereich",
+      "alt": "Dachaufbau im Schutzbereich mit Schutzwinkel und Trennungsabstand",
+      "unterschrift": "Dachaufbau im Schutzbereich (Buch S. 549)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.06,
+        0.16,
+        0.98,
+        0.52
+      ],
+      "name": "bestandteile-blitzschutzanlage",
+      "alt": "Bestandteile und Montageteile einer Blitzschutzanlage am Gebäude, nummeriert",
+      "unterschrift": "Bestandteile einer Blitzschutzanlage (Buch S. 550)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.06,
+        0.52,
+        0.98,
+        0.68
+      ],
+      "name": "bestandteile-legende",
+      "alt": "Legende der 16 Bestandteile und Montageteile einer Blitzschutzanlage",
+      "unterschrift": "Legende der Blitzschutz-Montageteile (Buch S. 550)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.06,
+        0.68,
+        0.98,
+        0.95
+      ],
+      "name": "blitzschutz-zeichnung",
+      "alt": "Zeichnerische Darstellung einer Blitzschutzanlage im Grundriss mit Ableitungen",
+      "unterschrift": "Zeichnerische Darstellung einer Blitzschutzanlage (Buch S. 550)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.26,
+        0.76,
+        0.56
+      ],
+      "name": "anschluss-ableitung-erdung",
+      "alt": "Anschluss der Ableitung an die Erdung mit Maßangaben",
+      "unterschrift": "Anschluss der Ableitung an die Erdung (Buch S. 551)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.71,
+        0.27,
+        0.93,
+        0.52
+      ],
+      "name": "trennstelle-ableitung",
+      "alt": "Trennstelle zwischen Ableitung und Erdung an der Wand",
+      "unterschrift": "Trennstelle zwischen Ableitung und Erdung (Buch S. 551)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.06,
+        0.48,
+        0.48,
+        0.68
+      ],
+      "name": "kreuzung-fangleitungsmaschen",
+      "alt": "Kreuzung von Fangleitungsmaschen auf einem Flachdach",
+      "unterschrift": "Kreuzung von Fangleitungsmaschen auf einem Flachdach (Buch S. 551)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.06,
+        0.68,
+        0.48,
+        0.94
+      ],
+      "name": "blitzschutz-flachdach",
+      "alt": "Blitzschutzanlage auf einem Flachdach mit Lichtkuppeln",
+      "unterschrift": "Blitzschutzanlage auf einem Flachdach (Buch S. 551)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.6,
+        0.98,
+        0.94
+      ],
+      "name": "fangstange-luefter-maengel",
+      "alt": "Fangstange an einem Lüfter, deren Befestigungsschelle sich gelöst hat",
+      "unterschrift": "Mangel bei der Prüfung: gelöste Befestigungsschelle (Buch S. 551)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.34
+      ],
+      "name": "haus-kollektoren-solarzellen",
+      "alt": "Einfamilienhaus mit Sonnenkollektoren und Solarzellen auf dem Dach",
+      "unterschrift": "Einfamilienhaus mit Sonnenkollektoren und Solarzellen (Buch S. 552)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.52,
+        0.35,
+        0.98,
+        0.55
+      ],
+      "name": "aufgestaenderter-kollektor",
+      "alt": "Aufgeständerter Sonnenkollektor auf einem Ziegeldach",
+      "unterschrift": "Aufgeständerter Sonnenkollektor (Buch S. 552)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.06,
+        0.72,
+        0.98,
+        0.95
+      ],
+      "name": "solarenergie-monatsverlauf",
+      "alt": "Diagramm des Anteils der Solarenergie zur Deckung des Warmwasserbedarfs im Monatsverlauf",
+      "unterschrift": "Anteil der Solarenergie am Warmwasserbedarf im Monatsverlauf (Buch S. 552)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.35
+      ],
+      "name": "thermokollektor",
+      "alt": "Thermokollektor auf einem Ziegeldach",
+      "unterschrift": "Thermokollektor (Buch S. 553)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.36,
+        0.98,
+        0.56
+      ],
+      "name": "dachneigung-ausrichtung-ertrag",
+      "alt": "Diagramm zum Einfluss von Dachneigung und Ausrichtung auf den Solarertrag",
+      "unterschrift": "Einfluss der Dachneigung und Ausrichtung auf den Ertrag (Buch S. 553)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.57,
+        0.98,
+        0.78
+      ],
+      "name": "integrierte-solarmodulsysteme",
+      "alt": "Schema integrierter Solarmodulsysteme mit Wechselrichter und Einspeisezähler",
+      "unterschrift": "Integrierte Solarmodulsysteme (Buch S. 553)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.75,
+        0.98,
+        0.9
+      ],
+      "name": "schieferdach-solarelemente",
+      "alt": "Schieferdach mit integrierten Solarelementen",
+      "unterschrift": "Schieferdach mit integrierten Solarelementen (Buch S. 553)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.4
+      ],
+      "name": "montagebeispiel-lattung",
+      "alt": "Montagebeispiel für Solarmodule auf Lattung, Arbeitsschritte",
+      "unterschrift": "Montagebeispiel für Solarmodule auf Lattung (Buch S. 554)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.06,
+        0.42,
+        0.98,
+        0.95
+      ],
+      "name": "montageablauf-rahmeneinbau",
+      "alt": "Montageablauf Rahmeneinbau mit nummerierten Bauteilen",
+      "unterschrift": "Montageablauf Rahmeneinbau (Buch S. 554)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.34
+      ],
+      "name": "einbindung-schieferdeckung",
+      "alt": "Einbindung der Solarmodule in die Schieferdeckung",
+      "unterschrift": "Einbindung der Solarmodule in die Schieferdeckung (Buch S. 555)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.35,
+        0.98,
+        0.52
+      ],
+      "name": "fangstangen-solar",
+      "alt": "Fangstangen zum Blitzschutz mit Schutzwinkel und Trennungsabstand über Solarelementen",
+      "unterschrift": "Fangstangen zum Blitzschutz von Solaranlagen (Buch S. 555)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.53,
+        0.98,
+        0.74
+      ],
+      "name": "aufgeklipste-solarmodule",
+      "alt": "Aufgeklipste Solarmodule werden von Hand montiert",
+      "unterschrift": "„Aufgeklipste“ Solarmodule (Buch S. 555)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.75,
+        0.98,
+        0.94
+      ],
+      "name": "korrosionskategorien",
+      "alt": "Tabelle der Kategorien der Korrosionsbelastung nach DIN EN 12944-2",
+      "unterschrift": "Kategorien der Korrosionsbelastung (Buch S. 555)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.36
+      ],
+      "name": "dachflaechenfenster",
+      "alt": "Eingebautes Dachflächenfenster von innen",
+      "unterschrift": "Dachflächenfenster (Buch S. 556)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.5,
+        0.37,
+        0.98,
+        0.58
+      ],
+      "name": "sicherheitsdachhaken",
+      "alt": "Sicherheitsdachhaken auf einer Ziegeldeckung",
+      "unterschrift": "Sicherheitsdachhaken (Buch S. 556)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.5,
+        0.59,
+        0.98,
+        0.8
+      ],
+      "name": "schneefang-schneehalte",
+      "alt": "Schneefang- und Schneehaltesystem im Traufbereich",
+      "unterschrift": "Schneefang- und Schneehaltesystem (Buch S. 556)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.06,
+        0.76,
+        0.5,
+        0.95
+      ],
+      "name": "dachbegehungsanlage",
+      "alt": "Dachbegehungsanlage mit Laufstegen auf einem Ziegeldach",
+      "unterschrift": "Dachbegehungsanlage (Buch S. 556)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.49,
+        0.13,
+        0.99,
+        0.33
+      ],
+      "name": "laufroststuetze-steigtritt",
+      "alt": "Laufroststütze und Steigtritt als Einbauteile zum Betreten der Dachfläche",
+      "unterschrift": "Laufroststütze und Steigtritt (Buch S. 557)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.06,
+        0.36,
+        0.5,
+        0.93
+      ],
+      "name": "zusammenfassung",
+      "alt": "Zusammenfassung des Lernfelds 16 zu Blitzschutz, Energiesammlern und Einbauteilen",
+      "unterschrift": "Zusammenfassung Lernfeld 16 (Buch S. 557)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.5,
+        0.36,
+        0.98,
+        0.93
+      ],
+      "name": "aufgaben-liste",
+      "alt": "Liste der 18 Buchaufgaben zum Lernfeld 16",
+      "unterschrift": "Aufgaben zum Lernfeld 16 (Buch S. 557)"
+    }
+  ]
+}
