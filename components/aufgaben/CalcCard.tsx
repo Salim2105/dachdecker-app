@@ -53,7 +53,7 @@ export function CalcCard({
 
   return (
     <div>
-      <p className="text-base font-medium leading-relaxed">
+      <p className="text-[17px] font-medium leading-relaxed">
         {ersetzePlatzhalter(aufgabe.aufgabentext, werte)}
       </p>
 
@@ -93,7 +93,7 @@ export function CalcCard({
           {aufloesen && (
             <button
               onClick={neu}
-              className="rounded-xl border px-4 py-3 text-sm"
+              className="min-h-14 rounded-xl border px-4 py-3 text-[15px]"
               style={{ borderColor: "var(--border)", color: "var(--text)" }}
             >
               Neue Zahlen
@@ -160,7 +160,7 @@ function NebenRechner({ onUebernehmen }: { onUebernehmen: (wert: string) => void
           onChange={(e) => setAusdruck(e.target.value)}
           placeholder="z. B. 6.2 / 0.4"
           aria-label="Nebenrechnung"
-          className="min-w-0 flex-1 rounded-lg border px-3 py-2 text-base"
+          className="min-h-14 min-w-0 flex-1 rounded-lg border px-3 py-2 text-[17px]"
           style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
         />
         <span className="tnum shrink-0 text-base font-semibold" style={{ color: ergebnis !== null ? "var(--accent)" : "var(--text-muted)" }}>
@@ -170,7 +170,7 @@ function NebenRechner({ onUebernehmen }: { onUebernehmen: (wert: string) => void
       {ergebnis !== null && (
         <button
           onClick={() => onUebernehmen(String(Number(ergebnis.toFixed(4))))}
-          className="mt-2 w-full rounded-lg border py-2 text-sm font-medium"
+          className="mt-2 min-h-14 w-full rounded-lg border py-2 text-[15px] font-medium"
           style={{ borderColor: "color-mix(in srgb, var(--accent) 45%, transparent)", color: "var(--accent)" }}
         >
           → ins Ergebnis übernehmen

@@ -30,12 +30,14 @@ export function Fortsetzen() {
   return (
     <Link
       href={`/lernen/${lf}/ueben`}
-      className="flex items-center justify-between rounded-[var(--r-lg)] px-4 py-3.5 text-[15px] font-semibold transition-transform active:scale-[0.99]"
-      style={{ background: "var(--accent)", color: "var(--accent-text)", boxShadow: "var(--shadow-md)" }}
+      /* Bewusst als Umriss, nicht gefüllt: "Heute dran" ist die empfohlene
+         Aktion — zwei gefüllte Flächen nebeneinander heben sich gegenseitig auf. */
+      className="flex min-h-14 items-center justify-between rounded-[var(--r-lg)] border px-4 py-3.5 text-[15px] font-semibold transition-transform active:scale-[0.99]"
+      style={{ borderColor: "var(--accent)", color: "var(--text)" }}
     >
       <span className="min-w-0">
         <span className="block truncate">Übung fortsetzen</span>
-        <span className="block text-xs font-medium leading-snug opacity-80">
+        <span className="block text-[13px] font-medium leading-snug" style={{ color: "var(--text-muted)" }}>
           Frage {index + 1} von {total} · {feld.titel}
         </span>
       </span>

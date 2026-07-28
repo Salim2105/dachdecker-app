@@ -50,22 +50,36 @@ export function McCard({
 
   return (
     <div>
-      <p className="text-base font-medium">{aufgabe.frage}</p>
+      <p className="text-[17px] font-medium">{aufgabe.frage}</p>
       {mehrfach && (
-        <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
+        <p className="mt-1 text-[13px]" style={{ color: "var(--text-muted)" }}>
           Mehrfachauswahl möglich
         </p>
       )}
+      {/* Die ganze Zeile ist die Trefferfläche, mindestens 56 px hoch — mit
+          Arbeitshandschuhen trifft niemand ein kleines Kästchen. */}
       <div className="mt-4 flex flex-col gap-2">
         {aufgabe.optionen.map((opt, i) => (
           <button
             key={i}
             onClick={() => toggle(i)}
             disabled={geprueft}
-            className="rounded-lg border p-3 text-left text-sm"
+            aria-pressed={gewaehlt.has(i)}
+            className="flex min-h-14 items-center gap-3 rounded-lg border p-4 text-left text-[17px]"
             style={{ ...stilFuer(i), color: "var(--text)" }}
           >
-            {opt}
+            {/* Zustand nie allein über Farbe — Sonnenlicht frisst Farbnuancen. */}
+            <span
+              aria-hidden="true"
+              className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border text-[15px] font-bold"
+              style={{
+                borderColor: gewaehlt.has(i) ? "var(--accent)" : "var(--border)",
+                color: "var(--accent)",
+              }}
+            >
+              {gewaehlt.has(i) ? "✓" : ""}
+            </span>
+            <span className="min-w-0">{opt}</span>
           </button>
         ))}
       </div>
@@ -73,7 +87,7 @@ export function McCard({
         <button
           onClick={pruefen}
           disabled={gewaehlt.size === 0}
-          className="mt-4 w-full rounded-xl py-3 font-medium disabled:opacity-40"
+          className="mt-4 min-h-14 w-full rounded-xl py-3 text-[17px] font-semibold disabled:opacity-40"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
           {aufloesen ? "Prüfen" : "Antwort abgeben"}

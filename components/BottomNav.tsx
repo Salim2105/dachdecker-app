@@ -2,13 +2,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// Sechs Einträge sind das Maximum, das auf einem Handy noch treffsicher
+// bleibt. "Fortschritt" liegt deshalb im Schnellzugriff der Startseite.
 const ITEMS = [
   { href: "/", label: "Start", icon: "M3 11l9-8 9 8M5 10v10h14V10" },
+  { href: "/heute", label: "Heute", icon: "M12 7v5l3 2M12 21a9 9 0 100-18 9 9 0 000 18" },
   { href: "/lernen", label: "Lernen", icon: "M4 5h16v14H4zM4 9h16M9 5v14" },
   { href: "/zeichnen", label: "Zeichnen", icon: "M3 21l4-1 11-11a2 2 0 00-3-3L4 17l-1 4zM14 5l3 3" },
-  { href: "/pruefung", label: "Prüfung", icon: "M12 7v5l3 2M12 21a9 9 0 100-18 9 9 0 000 18" },
+  { href: "/pruefung", label: "Prüfung", icon: "M9 11l3 3 8-8M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9" },
   { href: "/rechner", label: "Rechner", icon: "M6 3h12v18H6zM9 7h6M8 11h1m3 0h1m3 0h1M8 15h1m3 0h1m3 0h1" },
-  { href: "/fortschritt", label: "Fortschritt", icon: "M4 20V10M10 20V4M16 20v-8M22 20H2" },
 ];
 
 export function BottomNav() {

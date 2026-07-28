@@ -14,10 +14,12 @@
   --surface-2: #232427;
   --surface-3: #2d2f33;
 
-  /* Text */
+  /* Text — die gedämpften Töne sind bewusst heller als üblich. Auf dem Dach
+     bei praller Sonne wäscht das Umgebungslicht schwache Kontraste aus; die
+     Werte hier erreichen 7:1 (muted) bzw. 5:1 (faint) gegen den Grund. */
   --text: #f0ede9;
-  --text-muted: #9a9691;
-  --text-faint: #6b6864;
+  --text-muted: #a5a19c;
+  --text-faint: #88847f;
 
   /* Linien */
   --border: #2b2d31;
@@ -49,8 +51,8 @@
   --surface-3: #e9e5dd;
 
   --text: #23201c;
-  --text-muted: #6a635a;
-  --text-faint: #9a9285;
+  --text-muted: #5c554c;
+  --text-faint: #736b5e;
 
   --border: #e6e1d8;
   --border-soft: #efeae1;

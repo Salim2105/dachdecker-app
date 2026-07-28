@@ -29,3 +29,12 @@ export function createStringStore(key: string) {
 
 export const datumStore = createStringStore("pruefungsdatum");
 export const letztesLfStore = createStringStore("letztesLf");
+
+/** Eingabeart beim Lückentext: Wörter antippen statt tippen (für Handschuhe). */
+const wortbankRaw = createStringStore("wortbank");
+export const wortbankStore = {
+  subscribe: wortbankRaw.subscribe,
+  getSnapshot: () => wortbankRaw.getSnapshot() === "1",
+  getServerSnapshot: () => false,
+  set: (an: boolean) => wortbankRaw.set(an ? "1" : ""),
+};

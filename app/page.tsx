@@ -1,10 +1,11 @@
 "use client";
 import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { getLernfelder, getAufgaben } from "@/lib/content";
+import { getLernfelder } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
 import { Fortsetzen } from "@/components/Fortsetzen";
 import { datumStore, letztesLfStore } from "@/lib/appStores";
+import { pruefungsreife, tagesdosis } from "@/lib/tagesplan";
 
 const TAG = 86_400_000;
 
@@ -52,21 +53,18 @@ export default function Home() {
       letztesLfStore.getServerSnapshot,
     ) || "lf01";
 
-  // Gesamtfortschritt über alle Lernfelder
   const lernfelder = getLernfelder();
-  let total = 0;
-  let done = 0;
-  for (const lf of lernfelder) {
-    const ids = getAufgaben(lf.id).map((a) => a.id);
-    total += ids.length;
-    done += ids.filter((id) => fortschritt[id] && fortschritt[id].bewertung !== "falsch").length;
-  }
-  const prozent = total > 0 ? Math.round((done / total) * 100) : 0;
-
   const [now] = useState(() => Date.now());
   const tageBis = datum
     ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / TAG)
     : null;
+
+  // Prüfungsreife statt Fortschritt: der Wert verfällt, wenn Wiederholungen
+  // liegen bleiben. Ein Balken, der nur steigen kann, misst Aktivität — nicht,
+  // ob der Stoff am Prüfungstag noch abrufbar ist.
+  const grad = pruefungsreife(fortschritt, now);
+  const prozent = Math.round(grad.anteil * 100);
+  const dosis = tagesdosis(grad, tageBis);
 
   return (
     <div className="flex flex-col gap-5">
@@ -160,12 +158,23 @@ export default function Home() {
       >
         <Ring prozent={prozent} />
         <div className="min-w-0 flex-1">
-          <div className="text-[15px] font-semibold">Gesamtfortschritt</div>
+          <div className="text-[15px] font-semibold">Prüfungsreife</div>
           <div className="mt-0.5 text-sm" style={{ color: "var(--text-muted)" }}>
-            <span className="tnum" style={{ color: "var(--text)" }}>
-              {done}
-            </span>{" "}
-            von <span className="tnum">{total}</span> Aufgaben · {lernfelder.length} Lernfelder
+            {grad.faellig > 0 ? (
+              <>
+                <span className="tnum" style={{ color: "var(--text)" }}>
+                  {grad.faellig}
+                </span>{" "}
+                {grad.faellig === 1 ? "Aufgabe fällt" : "Aufgaben fallen"} gerade zurück
+              </>
+            ) : (
+              <>
+                <span className="tnum" style={{ color: "var(--text)" }}>
+                  {grad.gesamt - grad.neu}
+                </span>{" "}
+                von <span className="tnum">{grad.gesamt}</span> Aufgaben sitzen
+              </>
+            )}
           </div>
           <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full" style={{ background: "var(--surface-3)" }}>
             <div
@@ -180,15 +189,33 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Aktionen */}
+      {/* Aktionen. "Heute dran" steht bewusst vorn und nimmt die Auswahl ab:
+          wer selbst wählt, greift zum Vertrauten und lässt die späten
+          Lernfelder liegen. */}
       <div className="flex flex-col gap-3">
+        <Link
+          href="/heute"
+          className="flex min-h-14 items-center justify-between rounded-[var(--r-lg)] px-5 py-4 transition-transform active:scale-[0.99]"
+          style={{ background: "var(--accent)", color: "var(--accent-text)" }}
+        >
+          <span className="min-w-0">
+            <span className="block text-[17px] font-semibold">Heute dran</span>
+            <span className="mt-0.5 block text-[13px] opacity-80">
+              <span className="tnum">{dosis}</span> Aufgaben · die App wählt aus
+            </span>
+          </span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </Link>
+
         <Fortsetzen />
         <Link
           href={`/lernen/${letztesLf}`}
-          className="flex items-center justify-between rounded-[var(--r-lg)] border px-5 py-4 text-[15px] font-semibold transition-transform active:scale-[0.99]"
+          className="flex min-h-14 items-center justify-between rounded-[var(--r-lg)] border px-5 py-4 text-[15px] font-semibold transition-transform active:scale-[0.99]"
           style={{ borderColor: "var(--border)", color: "var(--text)" }}
         >
-          <span>Weiterlernen</span>
+          <span>Einzelnes Lernfeld</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <path d="M5 12h14M13 6l6 6-6 6" />
           </svg>
@@ -203,13 +230,13 @@ export default function Home() {
         <div className="grid grid-cols-3 gap-3">
           {[
             { href: "/lernen", label: "Lernfelder", icon: "M4 5h16v14H4zM4 9h16M9 5v14" },
-            { href: "/pruefung", label: "Prüfung", icon: "M12 7v5l3 2M12 21a9 9 0 100-18 9 9 0 000 18" },
-            { href: "/rechner", label: "Rechner", icon: "M6 3h12v18H6zM9 7h6M8 11h1m3 0h1m3 0h1M8 15h1m3 0h1m3 0h1" },
+            { href: "/fortschritt", label: "Fortschritt", icon: "M4 20V10M10 20V4M16 20v-8M22 20H2" },
+            { href: "/zeichnen", label: "Zeichnen", icon: "M3 21l4-1 11-11a2 2 0 00-3-3L4 17l-1 4zM14 5l3 3" },
           ].map((t) => (
             <Link
               key={t.href}
               href={t.href}
-              className="flex flex-col items-center gap-2 rounded-[var(--r-md)] border px-2 py-4 text-xs font-medium transition-colors active:scale-[0.98]"
+              className="flex min-h-14 flex-col items-center gap-2 rounded-[var(--r-md)] border px-2 py-4 text-[13px] font-medium transition-colors active:scale-[0.98]"
               style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }}
             >
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
