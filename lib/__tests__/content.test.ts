@@ -13,9 +13,9 @@ describe("filterSichtbar", () => {
 });
 
 describe("content loading", () => {
-  // LF 13b (Reet) entfernt — eigene Fachrichtung, kein Inhalt vorhanden.
-  it("loads all lernfelder (17 LF inkl. 13a + WiSo = 18 entries)", () => {
-    expect(getLernfelder().length).toBe(18);
+  // LF 13b (Reet) ist wieder in der Liste — Inhalt aus dem Buch S. 564–571 vorhanden.
+  it("loads all lernfelder (17 LF inkl. 13a + 13b + WiSo = 19 entries)", () => {
+    expect(getLernfelder().length).toBe(19);
   });
   it("führt kein Lernfeld ohne Aufgaben in der Liste (keine leeren Karten)", () => {
     for (const lf of getLernfelder()) {

@@ -1,0 +1,415 @@
+{
+  "lf": "lf13b",
+  "pdf": "/Users/salimsakkali/Downloads/LF13b.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 563+i (Seite 1 = Buch S. 564 ... Seite 8 = Buch S. 571)",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.44,
+        0.148,
+        0.935,
+        0.218
+      ],
+      "name": "reet-geschichte",
+      "alt": "Infokasten zur Geschichte des Reetdachs, aeltestes Bedachungsmaterial, Pfahlbausiedlung Unteruhldingen um 4000 v. Chr.",
+      "unterschrift": "Reet als aeltestes Bedachungsmaterial (Buch S. 564)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.44,
+        0.225,
+        0.935,
+        0.448
+      ],
+      "name": "reetdach-gauben",
+      "alt": "Foto eines Reetdachs mit mehreren Gauben und einem Ziegelfirst",
+      "unterschrift": "Reetdach mit Gauben und Ziegelfirst (Buch S. 564)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.44,
+        0.452,
+        0.705,
+        0.668
+      ],
+      "name": "reeternte-maschine",
+      "alt": "Foto einer maschinellen Reeternte auf einer Eisflaeche",
+      "unterschrift": "Reeternte mit Maschine (Buch S. 564)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.705,
+        0.452,
+        0.935,
+        0.668
+      ],
+      "name": "reetschieber",
+      "alt": "Zeichnung eines Reetschiebers mit abnehmbarem Messer",
+      "unterschrift": "Reeternte mit Reetschieber (Buch S. 564)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.5,
+        0.678,
+        0.935,
+        0.915
+      ],
+      "name": "reetlieferung",
+      "alt": "Foto einer Reetlieferung, Bunde werden mit einem Kran vom Lkw gehoben",
+      "unterschrift": "Reetlieferung (Buch S. 564)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.058,
+        0.212,
+        0.495,
+        0.302
+      ],
+      "name": "bundtabelle",
+      "alt": "Tabelle zur Sortierung der Reetbunde nach Gesamtlaenge und Halmlaengen fuer langes und mittellanges Bund",
+      "unterschrift": "Sortierung der Reetbunde (Buch S. 565)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.5,
+        0.125,
+        0.93,
+        0.335
+      ],
+      "name": "reetbunde-kehldeckung",
+      "alt": "Foto von zwei Dachdeckern, die Reetbunde bei der Kehldeckung verlegen",
+      "unterschrift": "Reetbunde bei der Kehldeckung (Buch S. 565)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.5,
+        0.338,
+        0.93,
+        0.548
+      ],
+      "name": "reetdach-blitzschutz",
+      "alt": "Foto eines Reetdachs mit sichtbar verlegten Blitzschutzleitungen",
+      "unterschrift": "Reetdach mit Blitzschutzleitungen (Buch S. 565)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.5,
+        0.552,
+        0.93,
+        0.742
+      ],
+      "name": "neueindeckung",
+      "alt": "Foto eines Dachstuhls waehrend der Neueindeckung eines Reetdaches",
+      "unterschrift": "Neueindeckung eines Reetdaches (Buch S. 565)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.5,
+        0.745,
+        0.93,
+        0.935
+      ],
+      "name": "dachstuehle",
+      "alt": "Zeichnung verschiedener Dachstuehle als Standflaeche fuer den Reetdecker",
+      "unterschrift": "Verschiedene Dachstuehle (Buch S. 565)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.575,
+        0.12,
+        0.94,
+        0.305
+      ],
+      "name": "naehen-besteck",
+      "alt": "Foto der Naehtechnik mit dem Naehbesteck, zwei Nadeln durchstossen die Dachhaut",
+      "unterschrift": "Naehen mit Besteck (Buch S. 566)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.575,
+        0.308,
+        0.94,
+        0.513
+      ],
+      "name": "naehen-besteck-fest",
+      "alt": "Foto des Festziehens beim Naehen mit dem Naehbesteck",
+      "unterschrift": "Naehen mit Besteck: fest (Buch S. 566)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.575,
+        0.505,
+        0.94,
+        0.952
+      ],
+      "name": "dachfanggeruest",
+      "alt": "Foto von Arbeiten auf dem Dachstuhl mit einem Dachfanggeruest an der Traufe",
+      "unterschrift": "Arbeiten auf dem Dachstuhl mit Dachfanggeruest (Buch S. 566)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.105,
+        0.618,
+        0.575,
+        0.778
+      ],
+      "name": "befestigungsmaterial",
+      "alt": "Textuebersicht der Befestigungsmaterialien: Naeh- und Bindedraht, Dachdeckerschrauben, Stangendraht mit Dickenangaben",
+      "unterschrift": "Befestigungsmaterial zur Reetdeckung (Buch S. 566)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.105,
+        0.78,
+        0.55,
+        0.932
+      ],
+      "name": "werkzeuge-reetdeckung",
+      "alt": "Zeichnung der Werkzeuge zur Reetdeckung: Reetnadel, Reethaken und Klopfer",
+      "unterschrift": "Werkzeuge zur Reetdeckung (Buch S. 566)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.51,
+        0.12,
+        0.945,
+        0.312
+      ],
+      "name": "reetdeckung-ortgang",
+      "alt": "Foto einer Reetdeckung am Ortgang",
+      "unterschrift": "Reetdeckung am Ortgang (Buch S. 567)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.51,
+        0.395,
+        0.945,
+        0.545
+      ],
+      "name": "arbeiten-untertraufe",
+      "alt": "Foto eines Dachdeckers bei Arbeiten an der Untertraufe",
+      "unterschrift": "Arbeiten an der Untertraufe (Buch S. 567)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.51,
+        0.618,
+        0.945,
+        0.777
+      ],
+      "name": "katzentreppe",
+      "alt": "Foto eines Schornsteins mit Katzentreppe, der seitlichen Auskragung ueber der Reetdeckung",
+      "unterschrift": "Katzentreppe am Schornstein (Buch S. 567)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.055,
+        0.398,
+        0.505,
+        0.677
+      ],
+      "name": "deckregeln",
+      "alt": "Textabschnitt der allgemeinen Deckregeln mit Mindestdachneigung 45 Grad, Hinterlueftung 6 cm und Deckdicken",
+      "unterschrift": "Allgemeine Deckregeln (Buch S. 567)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.05,
+        0.778,
+        0.505,
+        0.908
+      ],
+      "name": "lattenabstand-tabelle",
+      "alt": "Tabelle des Lattenabstands in Abhaengigkeit von der Dachneigung: bis 60 Grad hoechstens 40 cm, bis 75 Grad hoechstens 30 cm, ueber 75 Grad hoechstens 25 cm",
+      "unterschrift": "Lattenabstand nach Dachneigung (Buch S. 567)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.525,
+        0.125,
+        0.955,
+        0.335
+      ],
+      "name": "gaubenabschluss",
+      "alt": "Foto eines Gaubenabschlusses mit Holzleckbrettchen an einem Reetdach",
+      "unterschrift": "Gaubenabschluss mit Holzleckbrettchen (Buch S. 568)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.525,
+        0.338,
+        0.955,
+        0.545
+      ],
+      "name": "gebundenes-reetdach",
+      "alt": "Schnittzeichnung eines gebundenen Reetdachs mit Weidenband, Bandstock und Dachlatten",
+      "unterschrift": "Gebundenes Reetdach (Buch S. 568)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.525,
+        0.562,
+        0.955,
+        0.758
+      ],
+      "name": "naehen-von-innen",
+      "alt": "Foto des Naehens mit der Nadel von innen unter der Dachlatte",
+      "unterschrift": "Naehen mit Nadel von innen (Buch S. 568)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.1,
+        0.215,
+        0.515,
+        0.372
+      ],
+      "name": "zusammenfassung-deckregeln",
+      "alt": "Zusammenfassung der Deckregeln: steile Dachneigung, Bindung 40 cm an der Traufe und 25 cm am First, Schornstein am First, Gauben 60 cm Abstand",
+      "unterschrift": "Zusammenfassung der Deckregeln (Buch S. 568)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.51,
+        0.158,
+        0.945,
+        0.372
+      ],
+      "name": "reetlagen-traufe",
+      "alt": "Schnittzeichnung des Aufbaus der Reetdeckung an der Traufe mit Streuschicht, Traufschichten und Flaechenschicht",
+      "unterschrift": "Reetlagen an der Traufe (Buch S. 569)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.51,
+        0.372,
+        0.945,
+        0.552
+      ],
+      "name": "klopfer-naht",
+      "alt": "Foto eines Reetdeckers, der das Reet mit dem Klopfer in die Naht schlaegt",
+      "unterschrift": "Das Reet wird mit dem Klopfer in die Naht geschlagen (Buch S. 569)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.51,
+        0.552,
+        0.945,
+        0.706
+      ],
+      "name": "ortgangbrett",
+      "alt": "Foto eines Reetdach-Ortgangs mit Ortgangbrett",
+      "unterschrift": "Ortgang mit Ortgangbrett (Buch S. 569)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.51,
+        0.735,
+        0.945,
+        0.925
+      ],
+      "name": "deckung-grat",
+      "alt": "Foto einer sauber ausgefuehrten Reetdeckung am Grat",
+      "unterschrift": "Saubere Deckung am Grat (Buch S. 569)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.535,
+        0.128,
+        0.945,
+        0.345
+      ],
+      "name": "kehldeckung",
+      "alt": "Foto einer Reet-Kehldeckung mit angelehnter Leiter",
+      "unterschrift": "Kehldeckung (Buch S. 570)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.51,
+        0.348,
+        0.945,
+        0.562
+      ],
+      "name": "reetfirst-genaeht",
+      "alt": "Foto eines genaehten Reetfirsts",
+      "unterschrift": "Reetfirst, genaeht (Buch S. 570)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.51,
+        0.563,
+        0.945,
+        0.777
+      ],
+      "name": "heide-haengehoelzer-first",
+      "alt": "Foto eines Heide-Haengehoelzer-Firsts mit aufgelegten Eichen-Spaltpfaehlen",
+      "unterschrift": "Heide-Haengehoelzer-First (Buch S. 570)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.515,
+        0.166,
+        0.955,
+        0.487
+      ],
+      "name": "ziegelfirst",
+      "alt": "Foto eines Reetdachs mit Ziegelfirst und zwei Schornsteinen",
+      "unterschrift": "Ziegelfirst (Buch S. 571)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.095,
+        0.572,
+        0.51,
+        0.915
+      ],
+      "name": "zusammenfassung",
+      "alt": "Zusammenfassung des Lernfelds 13b zu Reetdaechern, Befestigungsarten, Mindestdachneigung und Lebensdauer",
+      "unterschrift": "Zusammenfassung Lernfeld 13b (Buch S. 571)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.515,
+        0.572,
+        0.955,
+        0.915
+      ],
+      "name": "aufgaben-buch",
+      "alt": "Die zehn Buchaufgaben zu Lernfeld 13b",
+      "unterschrift": "Aufgaben zu Lernfeld 13b (Buch S. 571)"
+    }
+  ]
+}

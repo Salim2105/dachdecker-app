@@ -25,6 +25,8 @@ import lf12Aufgaben from "@/content/lf12/aufgaben.json";
 import lf12Lektionen from "@/content/lf12/lektionen.json";
 import lf13aAufgaben from "@/content/lf13a/aufgaben.json";
 import lf13aLektionen from "@/content/lf13a/lektionen.json";
+import lf13bAufgaben from "@/content/lf13b/aufgaben.json";
+import lf13bLektionen from "@/content/lf13b/lektionen.json";
 import lf14Aufgaben from "@/content/lf14/aufgaben.json";
 import lf14Lektionen from "@/content/lf14/lektionen.json";
 import lf15Aufgaben from "@/content/lf15/aufgaben.json";
@@ -52,6 +54,7 @@ const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
   lf11: { aufgaben: lf11Aufgaben, lektionen: lf11Lektionen },
   lf12: { aufgaben: lf12Aufgaben, lektionen: lf12Lektionen },
   lf13a: { aufgaben: lf13aAufgaben, lektionen: lf13aLektionen },
+  lf13b: { aufgaben: lf13bAufgaben, lektionen: lf13bLektionen },
   lf14: { aufgaben: lf14Aufgaben, lektionen: lf14Lektionen },
   lf15: { aufgaben: lf15Aufgaben, lektionen: lf15Lektionen },
   lf16: { aufgaben: lf16Aufgaben, lektionen: lf16Lektionen },
