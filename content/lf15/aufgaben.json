@@ -3,432 +3,2463 @@
     "id": "lf15-001",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Sockelabschluss)",
+    "thema": "Wanddetails",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "frage": "Warum wird der untere Abschluss einer hinterlüfteten Bekleidung nicht dicht ausgeführt?",
+    "frage": "Welche Detailpunkte sind bei Außenwandbekleidungen besonders zu beachten?",
     "optionen": [
-      "Damit Regenwasser eindringen kann",
-      "Weil dort die Zuluft für die Hinterlüftung eintreten muss",
-      "Um Material zu sparen",
-      "Damit die Bekleidung leichter wird"
+      "Außen- und Innenecken, Anschlüsse am Sockel, seitliche Abschlüsse, obere Abschlüsse am Dachrand, Giebelschräge oder Gesims sowie Anschlüsse an Wandöffnungen und Einbauteilen",
+      "Nur die Fläche zwischen den Fenstern",
+      "Nur der Sockel",
+      "Nur die Farbe der Bekleidung"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Die Hinterlüftung braucht unten eine Zuluft- und oben eine Abluftöffnung. Ein dichter Sockel würde den Luftstrom abwürgen. Ein Lüftungsprofil oder Lochblech hält dabei Vögel und Insekten fern."
+    "erklaerung": "Neben der Deckung der Wandfläche müssen bei Außenwandbekleidungen besondere Detailpunkte beachtet werden. Dies sind die Außen- und Innenecken, der untere Abschluss am Sockel, seitliche Abschlüsse und obere Abschlüsse am Dachrand, einer Giebelschräge oder dem Gesims. Ferner unterscheidet man bei Wandöffnungen (Fenster, Türen), Durchdringungen (z. B. Öffnungen für Rohre) und Einbauteilen (Verankerungen für z. B. Vordächer) oberseitige, seitliche und unterseitige Anschlüsse.",
+    "bildDatei": "buch/lf15/bezeichnung-wanddetails.webp",
+    "bildunterschrift": "Bezeichnung der Wanddetails (Buch S. 534)"
   },
   {
     "id": "lf15-002",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Sockelabschluss)",
+    "thema": "Sockelausbildung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534 (Aufgabe 1, S. 544)",
     "konfidenz": "hoch",
-    "frage": "Welche zweite Aufgabe hat der untere Abschluss neben der Zuluftführung?",
+    "frage": "Buchaufgabe 1: Wie wird die Sockelausbildung bei einer Bekleidung mit Schiefer bzw. Holzschindeln ausgeführt?",
     "optionen": [
-      "Er trägt die gesamte Fassadenlast ab",
-      "Er hält die Bekleidung aus dem Spritzwasserbereich heraus",
-      "Er ersetzt die Wärmedämmung",
-      "Er dient als Blitzschutz"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Direkt über dem Gelände spritzt Regenwasser vom Boden zurück an die Fassade. Deshalb endet die Bekleidung mit Abstand über dem Gelände — sonst saugt sich das Material dauerhaft voll."
-  },
-  {
-    "id": "lf15-003",
-    "typ": "mc",
-    "lernfeld": "lf15",
-    "thema": "Innen- und Außenecken",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Eckausbildung)",
-    "konfidenz": "hoch",
-    "frage": "Warum ist eine Innenecke wassertechnisch anspruchsvoller als eine Außenecke?",
-    "optionen": [
-      "Weil dort Wasser von zwei Flächen zusammenläuft",
-      "Weil dort keine Befestigung möglich ist",
-      "Weil dort kein Wind angreift",
-      "Weil dort die Dämmung fehlt"
+      "Die ersten Gebinde werden unterlegt gedeckt, um eine gleichbleibende Neigung zu erreichen; das unterste Gebinde muss etwa 30 cm Abstand zum Boden haben, um vor Spritzwasser geschützt zu sein",
+      "Die ersten Gebinde werden direkt auf den Boden gesetzt",
+      "Der Sockel wird ohne Abstand zum Erdreich ausgeführt",
+      "Es sind keine besonderen Maßnahmen nötig"
     ],
     "korrekt": [
       0
     ],
-    "erklaerung": "Die Innenecke wirkt wie eine stehende Kehle: Zwei Flächen entwässern in dieselbe Linie. An der Außenecke läuft das Wasser dagegen auseinander — sie ist eher mechanisch und optisch kritisch."
+    "erklaerung": "Die ersten Gebinde bzw. Reihen werden i. d. R. unterlegt gedeckt, um eine gleichbleibende Neigung zu erreichen. Dabei muss das unterste Gebinde bzw. die unterste Schindelreihe einen ausreichenden Abstand (etwa 30 cm) zum Boden aufweisen, um vor Spritzwasser oder direktem Erdkontakt geschützt zu sein. Die darunterliegende Wand kann durch ein Tropfblech oder eine Rinne vor Tropfwasser geschützt werden.",
+    "bildDatei": "buch/lf15/sockelausbildung.webp",
+    "bildunterschrift": "Sockelausbildung (Buch S. 534)"
+  },
+  {
+    "id": "lf15-003",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Sockelausbildung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534",
+    "konfidenz": "hoch",
+    "text": "Die Platten bzw. Schindeln duerfen nicht auf dem Abtropfprofil aufsitzen. Wenn kein Abtropfprofil vorgesehen ist, muss ein Ueberstand von {{2}} bis 5 cm bei Platten und mindestens {{5}} cm bei Holzschindeln ueber der Fusslatte bzw. der Tragkonstruktion eingehalten werden.",
+    "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
+      "5": [
+        "5",
+        "fuenf",
+        "fünf"
+      ]
+    },
+    "erklaerung": "Die Platten bzw. Schindeln dürfen nicht auf dem Abtropfprofil aufsitzen. Wenn kein Abtropfprofil vorgesehen ist, muss ein Überstand von 2…5 cm bei Platten und mindestens 5 cm bei Holzschindeln über der Fußlatte bzw. der Tragkonstruktion eingehalten werden. Die erforderliche Mindestlüftungsöffnung muss auch am Sockel gewährleistet werden. Zum Schutz vor Nagetieren und Insekten sollte ein Lüftungsgitter verschlossen werden.",
+    "bildDatei": "buch/lf15/sockelausbildung.webp",
+    "bildunterschrift": "Sockelausbildung (Buch S. 534)"
   },
   {
     "id": "lf15-004",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Innen- und Außenecken",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Hinterlüftung an Ecken)",
+    "thema": "Außenecken",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534 (Aufgabe 2, S. 544)",
     "konfidenz": "hoch",
-    "frage": "Was muss an einer Gebäudeecke mit der Hinterlüftungsebene geschehen?",
+    "frage": "Buchaufgabe 2: Was muss bei einer Außenecke beachtet werden?",
     "optionen": [
-      "Sie wird an der Ecke geschlossen",
-      "Sie muss um die Ecke herum durchgehen",
-      "Sie wird an der Ecke verdoppelt",
-      "Sie wird mit Dämmstoff ausgefüllt"
+      "Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen; bei Doppeldeckung und Gezogener Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig",
+      "Die Ecke wird einfach stumpf gestoßen",
+      "Es sind keine Mindestbreiten einzuhalten",
+      "Außenecken werden immer nur mit Mörtel geschlossen"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Wird die Luftschicht an der Ecke zugebaut, entsteht ein toter Bereich ohne Luftwechsel. Dort bleibt Feuchtigkeit stehen — genau da beginnen später die Schäden."
+    "erklaerung": "Außenecken können bei Wandbekleidungen aus Schiefer oder Faserzement mit Überstand (mindestens 2 cm) gedeckt werden, oder es werden Schichtstücke oder Profile aus Metall verwendet. Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen. Bei der Doppeldeckung und Gezogenen Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig.",
+    "bildDatei": "buch/lf15/aussenecke-geschlauft.webp",
+    "bildunterschrift": "Außenecke bei geschlaufter Deckung (Buch S. 535)"
   },
   {
     "id": "lf15-005",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf15",
-    "thema": "Durchdringungen: Fenster und Türen",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "thema": "Außenecken",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "frage": "Wozu dient die Tropfkante an der Vorderkante einer Fensterbank?",
-    "optionen": [
-      "Sie versteift das Blech gegen Wind",
-      "Sie lässt das Wasser abtropfen, statt an der Unterseite zurückzulaufen",
-      "Sie dient der Befestigung",
-      "Sie verhindert Kondenswasser im Fenster"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "Ohne Tropfkante kriecht das Wasser an der Blechunterseite zurück zur Fassade und läuft daran herunter — daher die typischen Schmutzfahnen unter Fensterbänken. Eine Versteifung ist ein willkommener Nebeneffekt, aber nicht der Zweck."
+    "text": "Die Schiefer bzw. Platten werden mit mindestens {{drei}} Schieferstiften bzw. Naegeln innerhalb der Ueberdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusaetzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebaeudehoehen ueber {{20}} m.",
+    "akzeptiert": {
+      "drei": [
+        "drei",
+        "3"
+      ],
+      "20": [
+        "20",
+        "zwanzig"
+      ]
+    },
+    "erklaerung": "Die Schiefer bzw. Platten werden mit mindestens drei Schieferstiften bzw. Nägeln innerhalb der Überdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusätzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebäudehöhen über 20 m. Strackortsteine sollten unterlegt gedeckt werden, um eine ebene Wandfläche zu erzielen. Ihre sichtbaren Ecken sollten gerundet oder gestutzt werden.",
+    "bildDatei": "buch/lf15/aussenecke-metallprofil.webp",
+    "bildunterschrift": "Außenecke mit Metallprofil (Buch S. 536)"
   },
   {
     "id": "lf15-006",
-    "typ": "mc",
+    "typ": "cloze",
     "lernfeld": "lf15",
-    "thema": "Durchdringungen: Fenster und Türen",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Öffnungsanschlüsse)",
+    "thema": "Außenecken",
+    "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "frage": "Welche Aufgabe hat das Blech über einer Fensteröffnung in einer hinterlüfteten Fassade?",
-    "optionen": [
-      "Es trägt das Fenster",
-      "Es führt Wasser aus der Hinterlüftungsebene nach außen ab",
-      "Es dichtet die Luftschicht luftdicht ab",
-      "Es dient nur der Optik"
-    ],
-    "korrekt": [
-      1
-    ],
-    "erklaerung": "In der Luftschicht kann Wasser stehen — Schlagregen, Kondensat. Über der Öffnung muss es nach außen geführt werden, sonst sammelt es sich auf dem Sturz. Deshalb sitzt dort ein Blech mit Tropfkante."
+    "text": "Die Ueberdeckung der Strackortsteine untereinander sowie zur Flaechendeckung muss mindestens {{5}} cm betragen. Die maximale Groesse von Faserzementplatten zur Strackortdeckung betraegt {{30}} mal 30 cm bzw. 40 mal 20 cm.",
+    "akzeptiert": {
+      "5": [
+        "5",
+        "fuenf",
+        "fünf"
+      ],
+      "30": [
+        "30",
+        "dreissig",
+        "dreißig"
+      ]
+    },
+    "erklaerung": "Die Überdeckung der Strackortsteine untereinander sowie zur Flächendeckung muss mindestens 5 cm betragen. Die maximale Größe von Faserzementplatten zur Strackortdeckung beträgt 30 × 30 cm bzw. 40 × 20 cm. Bei eingebundener Ortdeckung muss die Überdeckung mindestens der der Flächendeckung entsprechen.",
+    "bildDatei": "buch/lf15/eckausbildung-holzschindeln.webp",
+    "bildunterschrift": "Eckausbildung mit Holzschindeln (Buch S. 535)"
   },
   {
     "id": "lf15-007",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Bewegungsaufnahme)",
+    "thema": "Außenecken",
+    "quelle": "Grundstufe Bautechnik, Buch S. 535",
     "konfidenz": "hoch",
-    "frage": "Warum werden seitliche Abschlussprofile so ausgebildet, dass sich die Bekleidung bewegen kann?",
+    "frage": "Worauf ist bei Holzschindeln an Außenecken zu achten?",
     "optionen": [
-      "Damit man sie leichter demontieren kann",
-      "Weil sich das Material bei Temperaturwechsel ausdehnt und zusammenzieht",
-      "Damit der Wind hindurchpfeifen kann",
-      "Weil die Wand sich setzt"
+      "Sie werden wechselseitig gestoßen; bei zweilagiger Deckung oder starker Witterungsbeanspruchung sollte Metall hinterlegt werden — die Verträglichkeit von Kupfer oder Zink mit der Holzart ist zu prüfen",
+      "Sie werden auf Gehrung geschnitten und verklebt",
+      "Sie werden immer mit Metallprofilen abgedeckt",
+      "Eine Hinterlegung ist nie erforderlich"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Fassadenbekleidungen erreichen im Sommer hohe Oberflächentemperaturen. Starr eingespannte Flächen beulen oder reißen. Die Abschlüsse müssen die Längenänderung aufnehmen können."
+    "erklaerung": "Holzschindeln werden an Außenecken wechselseitig gestoßen. Bei zweilagiger Deckung oder starker Witterungsbeanspruchung können Metallprofile hinterlegt werden, wobei die Verträglichkeit (insbesondere bei Kupfer oder Zink) mit der Holzart überprüft werden muss. Metallprofile müssen von den Schiefern bzw. Faserzementplatten um mindestens 5 cm überdeckt werden.",
+    "bildDatei": "buch/lf15/eckausbildung-holzschindeln.webp",
+    "bildunterschrift": "Eckausbildung mit Holzschindeln (Buch S. 535)"
   },
   {
     "id": "lf15-008",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Hinterlüftung)",
+    "thema": "Innenecken",
+    "quelle": "Grundstufe Bautechnik, Buch S. 535 (Aufgabe 3, S. 544)",
     "konfidenz": "hoch",
-    "text": "Bei der hinterlüfteten Fassade tritt die Luft am {{unteren}} Abschluss ein und verlässt die Konstruktion am {{oberen}} Abschluss.",
-    "akzeptiert": {
-      "unteren": [
-        "unten",
-        "Sockel",
-        "unterer"
-      ],
-      "oberen": [
-        "oben",
-        "oberer"
-      ]
-    },
-    "erklaerung": "Die erwärmte Luft steigt in der Luftschicht nach oben (Kamineffekt). Fehlt eine der beiden Öffnungen, kommt die Strömung zum Erliegen und die Feuchtigkeit bleibt in der Konstruktion."
+    "frage": "Buchaufgabe 3: Wie kann eine Innenecke ausgeführt werden?",
+    "optionen": [
+      "Mit Schichtstücken aus Metall oder Metallprofilen, oder als untergelegte bzw. eingebundene Kehldeckung; die Mindestbreite der Kehlsteine beträgt 10 cm",
+      "Nur mit Metallprofilen, Kehldeckung ist unzulässig",
+      "Die Mindestbreite beträgt 30 cm",
+      "Innenecken bleiben offen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Innenecken werden bei Wandbekleidungen aus Schiefer oder Faserzement ebenfalls mit Schichtstücken aus Metall oder Metallprofilen ausgeführt. Für die Befestigung der Platten bzw. Schiefer und Nocken, die Ortausbildung und die Mindestüberdeckungen gelten sinngemäß die Regeln der Außeneckausbildung. Ferner können Innenecken als untergelegte oder eingebundene Kehldeckung ausgeführt werden. Verwendet werden als Kehlsteine schmalere Steine als in der Fläche. Ihre Mindestbreite beträgt 10 cm. Die Höhenüberdeckung entspricht mindestens der Flächendeckung. Die Kehldeckung erfordert eine Eckschalung aus Brettern und Dreikantleisten.",
+    "bildDatei": "buch/lf15/innenecke-wechselseitig.webp",
+    "bildunterschrift": "Innenecke wechselseitig gestoßen (Buch S. 535)"
   },
   {
     "id": "lf15-009",
-    "typ": "cloze",
+    "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Durchdringungen: Fenster und Türen",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "thema": "Seitliche und obere Abschlüsse",
+    "quelle": "Grundstufe Bautechnik, Buch S. 535",
     "konfidenz": "hoch",
-    "text": "Eine Fensterbank braucht ein {{Gefälle}} nach außen und seitlich {{Aufkantungen}}, damit das Wasser nicht in die Laibung läuft.",
-    "akzeptiert": {
-      "Gefälle": [
-        "Gefaelle",
-        "Neigung"
-      ],
-      "Aufkantungen": [
-        "Aufkantung",
-        "Bordprofile",
-        "Bordprofil",
-        "Aufbordungen"
-      ]
-    },
-    "erklaerung": "Ohne Aufkantung läuft das Wasser seitlich über die Kante direkt in den Laibungsanschluss — eine der häufigsten Schadensursachen an Fensteranschlüssen."
+    "frage": "Wann ist ein seitlicher Wandabschluss erforderlich?",
+    "optionen": [
+      "Wenn die Deckung an einer Gebäudeecke endet und nicht weitergeführt wird, oder wenn nur Teile einer Wand bekleidet werden",
+      "Nur bei Gebäuden über 20 m Höhe",
+      "Nur bei Holzschindeln",
+      "Nie — die Deckung läuft immer um die Ecke"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Ein seitlicher Wandabschluss wird erforderlich, wenn die Deckung an einer Gebäudeecke endet und nicht weitergeführt wird, oder wenn nur Teile einer Wand bekleidet werden. Er kann entsprechend den Ausführungen an Gebäudeecken hergestellt werden.",
+    "bildDatei": "buch/lf15/giebelabschluss-bogenschnitt.webp",
+    "bildunterschrift": "Giebelabschluss und Fensteranschluss mit Bogenschnittschiefern (Buch S. 536)"
   },
   {
     "id": "lf15-010",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Seitliche und obere Abschlüsse",
+    "quelle": "Grundstufe Bautechnik, Buch S. 535 (Aufgabe 4, S. 544)",
+    "konfidenz": "hoch",
+    "frage": "Wann sind beim oberen Wandabschluss keine weiteren Maßnahmen notwendig?",
+    "optionen": [
+      "Wenn ein Gesims, ein Dachüberstand oder ein anderes überkragendes Bauteil die Bekleidung überragt — dabei muss ein ausreichender Abstand zum überkragenden Bauteil eingehalten werden, um die Belüftung zu gewährleisten",
+      "Wenn die Bekleidung direkt am überkragenden Bauteil anschließt",
+      "Immer — der obere Abschluss braucht nie Maßnahmen",
+      "Nur bei Metallbekleidungen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Wird der obere Abschluss einer Wandbekleidung durch ein Gesims, einen Dachüberstand oder ein anderes überkragendes Bauteil überragt, sind keine weiteren Maßnahmen notwendig. Es muss jedoch ein ausreichender Abstand zum überkragenden Bauteil eingehalten werden, um die erforderliche Belüftung zu gewährleisten. Ansonsten muss der obere Wandabschluss z. B. durch Metallprofile, Mauerwerksabdeckungen oder Ortgangziegel abgedeckt werden.",
+    "bildDatei": "buch/lf15/oberer-wandabschluss.webp",
+    "bildunterschrift": "Oberer Wandabschluss auf Lattung (Buch S. 536)"
+  },
+  {
+    "id": "lf15-011",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Seitliche und obere Abschlüsse",
+    "quelle": "Grundstufe Bautechnik, Buch S. 535",
+    "konfidenz": "hoch",
+    "text": "Bei Schiefer- und Faserzementdeckungen kann der obere Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde ausgefuehrt werden. Die seitliche Ueberdeckung betraegt bei Faserzementplatten mindestens {{4}} cm, bei Schiefer mindestens {{5}} cm.",
+    "akzeptiert": {
+      "4": [
+        "4",
+        "vier"
+      ],
+      "5": [
+        "5",
+        "fuenf",
+        "fünf"
+      ]
+    },
+    "erklaerung": "Bei Schiefer- und Faserzementdeckungen kann der obere Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde ausgeführt werden. Die seitliche Überdeckung beträgt bei Faserzementplatten und aufgelegter Deckung mindestens 4 cm, bei Schiefer mindestens 5 cm. Die Befestigung erfolgt mit mindestens zwei Schieferstiften oder einem Haken und zwei Schieferstiften innerhalb der Überdeckung.",
+    "bildDatei": "buch/lf15/oberer-wandabschluss.webp",
+    "bildunterschrift": "Oberer Wandabschluss auf Lattung (Buch S. 536)"
+  },
+  {
+    "id": "lf15-012",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Anschlüsse an Wandöffnungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 536 (Aufgabe 4, S. 544)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 4: Worauf ist bei oberen und unteren Anschlüssen an Fenstern unbedingt zu achten?",
+    "optionen": [
+      "Die Hinterlüftung der Konstruktion muss gewährleistet bleiben — unterseitig und oberseitig sind Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten",
+      "Die Anschlüsse müssen luftdicht verschlossen werden",
+      "Nur auf die Farbe der Anschlussbleche",
+      "Es sind keine besonderen Anforderungen zu beachten"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 4: Bei der Ausbildung von Anschlüssen, z. B. Fensteröffnungen, muss die Hinterlüftung der Konstruktion gewährleistet bleiben. So sind unterseitig und oberseitig Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten. Merksatz: Bei der Ausbildung dieser Detailpunkte muss die Hinterlüftung der Konstruktion gewährleistet bleiben.",
+    "bildDatei": "buch/lf15/fensteranschluss-holzschindeln.webp",
+    "bildunterschrift": "Fensteranschluss bei Holzschindelbekleidung (Buch S. 536)"
+  },
+  {
+    "id": "lf15-013",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Anschlüsse an Wandöffnungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 536",
+    "konfidenz": "hoch",
+    "text": "Im Bereich von Laibungen muessen Waermebruecken vermieden werden. Dies kann durch Daemmstoffstreifen mit einer Dicke von mindestens {{4}} cm und gegebenenfalls durch das Ausschaeumen von Fugen erfolgen.",
+    "akzeptiert": {
+      "4": [
+        "4",
+        "vier"
+      ]
+    },
+    "erklaerung": "Im Bereich von Laibungen müssen Wärmebrücken vermieden werden. Dies kann durch Dämmstoffstreifen (Dicke mindestens 4 cm) und ggf. das Ausschäumen von Fugen erfolgen. Unterseitige Anschlüsse werden wie obere Abschlüsse, oberseitige Anschlüsse wie untere Sockelabschlüsse ausgebildet. Seitliche Anschlüsse werden entsprechend den Außenecken hergestellt.",
+    "bildDatei": "buch/lf15/laibung-schnitt.webp",
+    "bildunterschrift": "Fensteranschluss: Schnittdarstellung (Buch S. 536)"
+  },
+  {
+    "id": "lf15-014",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Anschlüsse an Wandöffnungen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 536",
+    "konfidenz": "hoch",
+    "frage": "Wie werden Einbauteile (z. B. Verankerungen für Vordächer) in der Wandbekleidung behandelt?",
+    "optionen": [
+      "Sie müssen an der tragenden Wand verankert werden und wie Wanddurchdringungen bzw. Innenecken ausgebildet werden",
+      "Sie werden an der Unterkonstruktion der Bekleidung befestigt",
+      "Sie werden nur auf die Bekleidung geschraubt",
+      "Einbauteile sind in Wandbekleidungen unzulässig"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Einbauteile müssen an der tragenden Wand verankert werden. Sie werden ebenso wie Wanddurchdringungen als Innenecke ausgebildet. Wichtig ist, dass die Last NICHT über die Bekleidung oder ihre Unterkonstruktion abgetragen wird, sondern direkt in die tragende Wand geht.",
+    "bildDatei": "buch/lf15/laibung-schnitt.webp",
+    "bildunterschrift": "Fensteranschluss: Schnittdarstellung (Buch S. 536)"
+  },
+  {
+    "id": "lf15-015",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Großformatige Platten und Tafeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 537",
+    "konfidenz": "hoch",
+    "frage": "Wie werden großformatige Außenwandbekleidungen ausgeführt?",
+    "optionen": [
+      "Mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung",
+      "Immer fugenlos gestoßen",
+      "Nur mit Fugen über 5 cm",
+      "Immer verklebt ohne Fuge"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Großformatige Außenwandbekleidungen werden mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung ausgeführt. Aus den Standardplattenformaten können für die Ausbildung von Wanddetails beliebige Formen und Größen zugeschnitten werden.",
+    "bildDatei": "buch/lf15/schnitt-aussenecke-tafel.webp",
+    "bildunterschrift": "Schnitt durch Außenecke (Buch S. 537)"
+  },
+  {
+    "id": "lf15-016",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Großformatige Platten und Tafeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 537",
+    "konfidenz": "hoch",
+    "frage": "Wie erfolgt bei großformatigen Tafeln die Eckausbildung?",
+    "optionen": [
+      "Gebäudeecken werden entsprechend der Flächendeckung mit offenen oder hinterlegten Fugen ausgebildet; die Fugen werden mit Kunststoff- oder Metallprofilen hinterlegt oder überdeckt",
+      "Die Ecken werden immer auf Gehrung verklebt",
+      "Ecken werden ohne Fuge stumpf gestoßen",
+      "Ecken werden nur verputzt"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Gebäudeecken werden entsprechend der Flächendeckung mit offenen oder hinterlegten Fugen ausgebildet. Die Fugen werden mit Kunststoff- oder Metallprofilen hinterlegt oder überdeckt. Die Befestigung der Profile erfolgt an der Unterkonstruktion oder an der Wandbekleidung. Der Anschluss an Fenster und Türen erfolgt auslaufend mit zugeschnittenen Fassadentafeln und unterlegten Anschlussprofilen.",
+    "bildDatei": "buch/lf15/oberer-abschluss-tafel.webp",
+    "bildunterschrift": "Oberer Abschluss: Schnittdarstellung (Buch S. 537)"
+  },
+  {
+    "id": "lf15-017",
     "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Detailskizzen",
-    "quelle": "Fachrechnen Dachdeckerhandwerk (Flächenermittlung mit Öffnungen)",
+    "thema": "Materialbedarf Fassadentafeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 537 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Wandfläche ist {laenge} m lang und {hoehe} m hoch. Darin liegen {anzahl} gleich große Fensteröffnungen von je {fb} m Breite und {fh} m Höhe. Wie groß ist die zu bekleidende Nettofläche?",
+    "aufgabentext": "Buchbeispiel S. 537: Eine Fassade ist {breite} m breit und {hoehe} m hoch. Berechne die Fassadenfläche und die Fläche eines Fensters mit {fb} m × {fh} m.",
     "parameter": [
       {
-        "name": "laenge",
-        "label": "Wandlänge",
+        "name": "breite",
+        "label": "Fassadenbreite",
         "einheit": "m",
-        "min": 8,
-        "max": 20,
-        "schritt": 0.5
+        "min": 10,
+        "max": 10,
+        "schritt": 1
       },
       {
         "name": "hoehe",
-        "label": "Wandhöhe",
+        "label": "Fassadenhöhe",
         "einheit": "m",
-        "min": 3,
-        "max": 8,
-        "schritt": 0.5
+        "min": 11.25,
+        "max": 11.25,
+        "schritt": 0.05
       },
       {
-        "name": "anzahl",
+        "name": "fb",
+        "label": "Fensterbreite",
+        "einheit": "m",
+        "min": 1.25,
+        "max": 1.25,
+        "schritt": 0.05
+      },
+      {
+        "name": "fh",
+        "label": "Fensterhöhe",
+        "einheit": "m",
+        "min": 1.5,
+        "max": 1.5,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Fassadenfläche A = {breite} · {hoehe}",
+        "formel": "breite * hoehe",
+        "ergebnisName": "a",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Fensterfläche A_F = {fb} · {fh}",
+        "formel": "fb * fh",
+        "ergebnisName": "af",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 537: Fassadenfläche A = 10,00 m · 11,25 m = 112,5 m². Fensterfläche A_F = 1,25 m · 1,50 m = 1,875 m². WICHTIG: 1,875 m² < 2,5 m² — Fensteröffnungen unter 2,5 m² werden nach VOB übermessen, das heißt sie werden NICHT von der Fassadenfläche abgezogen. Das ist eine typische Prüfungsfalle: Wer die kleinen Fenster abzieht, rechnet zu wenig Material.",
+    "bildDatei": "buch/lf15/beispiel-fassadentafeln.webp",
+    "bildunterschrift": "Beispiel Fassadentafeln (Buch S. 537)"
+  },
+  {
+    "id": "lf15-018",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Fassadentafeln",
+    "quelle": "Grundstufe Bautechnik, Buch S. 537 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 537: Die Fassade hat {n} Fenster mit {fb} m Breite und {fh} m Höhe, die Fassadenhöhe beträgt {hoehe} m. Berechne die Länge der Fensterstürze bzw. Brüstungen, die Länge der Fensterlaibungen und die Länge der beiden Gebäudeaußenecken.",
+    "parameter": [
+      {
+        "name": "n",
         "label": "Anzahl Fenster",
         "einheit": "Stück",
-        "min": 2,
-        "max": 6,
+        "min": 8,
+        "max": 8,
         "schritt": 1
       },
       {
         "name": "fb",
         "label": "Fensterbreite",
         "einheit": "m",
-        "min": 0.8,
-        "max": 2,
-        "schritt": 0.1
+        "min": 1.25,
+        "max": 1.25,
+        "schritt": 0.05
       },
       {
         "name": "fh",
         "label": "Fensterhöhe",
         "einheit": "m",
-        "min": 1,
+        "min": 1.5,
+        "max": 1.5,
+        "schritt": 0.05
+      },
+      {
+        "name": "hoehe",
+        "label": "Fassadenhöhe",
+        "einheit": "m",
+        "min": 11.25,
+        "max": 11.25,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Stürze bzw. Brüstungen = {n} · {fb} (je einmal)",
+        "formel": "n * fb",
+        "ergebnisName": "sturz",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Laibungen = 2 · {n} · {fh}",
+        "formel": "2 * n * fh",
+        "ergebnisName": "laibung",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Außenecken = 2 · {hoehe}",
+        "formel": "2 * hoehe",
+        "ergebnisName": "ecken",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 537: Fensterstürze und Brüstungen jeweils 8 · 1,25 m = 10,00 m. Fensterlaibungen 2 · 8 · 1,50 m = 24,00 m (jedes Fenster hat ZWEI senkrechte Laibungen). Gebäudeaußenecken 2 · 11,25 m = 22,50 m. Sockel- und Attikalänge jeweils 10 m. Merke: Sturz und Brüstung sind waagerecht (Fensterbreite), Laibungen sind senkrecht (Fensterhöhe) und kommen doppelt vor.",
+    "bildDatei": "buch/lf15/beispiel-fassadentafeln.webp",
+    "bildunterschrift": "Beispiel Fassadentafeln (Buch S. 537)"
+  },
+  {
+    "id": "lf15-019",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 538",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Gebäudehöhe sind bei hinterlüfteten Fassaden besondere Brandsperren vorgeschrieben?",
+    "optionen": [
+      "Ab 8 m Höhe (Gebäudeklasse 4 und höher)",
+      "Ab 3 m Höhe",
+      "Ab 20 m Höhe",
+      "Brandsperren sind nie vorgeschrieben"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Brandschutzanforderungen an Gebäude mit hinterlüfteter Fassade sind in den jeweiligen Landesbauordnungen geregelt. Die erforderlichen Brandschutzmaßnahmen gelten ab Gebäudeklasse 4. Das sind Gebäude über 8 m Höhe. Hier sind besondere Brandsperren vorgeschrieben. Die Brandsperren sollen die Brandausbreitung über die Lüftungsebene der Fassade behindern und das Überschlagen des Feuers durch Kaminsogwirkung auf höhere Geschosse verhindern.",
+    "bildDatei": "buch/lf15/anordnung-brandsperren.webp",
+    "bildunterschrift": "Anordnung horizontaler Brandsperren (Buch S. 538)"
+  },
+  {
+    "id": "lf15-020",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 538",
+    "konfidenz": "hoch",
+    "frage": "Wodurch unterscheiden sich vertikale und horizontale Brandsperren?",
+    "optionen": [
+      "Vertikale Brandsperren sind nötig, wenn die Fassadenbekleidung über Brandwände hinweggeführt wird; horizontale Brandsperren begrenzen den Hinterlüftungsraum und werden mindestens auf jedem zweiten Geschoss umlaufend angeordnet",
+      "Vertikale Brandsperren sind waagerecht, horizontale senkrecht",
+      "Beide werden nur am Sockel eingebaut",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Vertikale Brandsperren sind notwendig, wenn die Fassadenbekleidung über Brandwände hinweggeführt wird. Der Hinterlüftungsspalt muss im Bereich der Brandwand mit einem nichtbrennbaren Dämmstoff (Schmelzpunkt > 1000 °C) ausgefüllt werden. Horizontale Brandsperren begrenzen den Hinterlüftungsraum der Fassade auf höchstens 100 cm²/m (d. h. der Lüftungsspalt beträgt an diesen Stellen maximal 1 cm). Sie werden mindestens auf jedem zweiten Geschoss umlaufend um das gesamte Gebäude angeordnet.",
+    "bildDatei": "buch/lf15/anordnung-brandsperren.webp",
+    "bildunterschrift": "Anordnung horizontaler Brandsperren (Buch S. 538)"
+  },
+  {
+    "id": "lf15-021",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 538",
+    "konfidenz": "hoch",
+    "text": "Die Brandsperre muss im Brandfall mindestens {{30}} Minuten formstabil bleiben. Dies kann durch ein {{1}} mm dickes Stahlblech erreicht werden. Die Bleche werden in Abstaenden unter {{60}} cm auf Wandankern befestigt und mit 30 mm Ueberlappung eingebaut.",
+    "akzeptiert": {
+      "30": [
+        "30",
+        "dreissig",
+        "dreißig"
+      ],
+      "1": [
+        "1",
+        "ein",
+        "eins"
+      ],
+      "60": [
+        "60",
+        "sechzig"
+      ]
+    },
+    "erklaerung": "Die Brandsperre muss im Brandfall mindestens 30 Minuten formstabil bleiben. Dies kann durch ein 1 mm dickes Stahlblech erreicht werden, das zwischen Wand und Bekleidung eingebaut wird. Die Bleche werden in Abständen < 60 cm auf Wandankern befestigt und mit 30 mm Überlappung eingebaut. Das Brandsperrblech wird 2…3 cm tief in die geschlitzte Wärmedämmung eingeschoben, wenn der Schmelzpunkt der Wärmedämmung über 1000 °C liegt (z. B. bei Steinwolle). Bei anderen Dämmstoffen (Schmelzpunkt ≤ 1000 °C) muss das Blech bis zur tragenden Wand geführt werden.",
+    "bildDatei": "buch/lf15/brandsperren-stahlblech.webp",
+    "bildunterschrift": "Einbau der Brandsperren aus Stahlblech (Buch S. 538)"
+  },
+  {
+    "id": "lf15-022",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 538",
+    "konfidenz": "hoch",
+    "frage": "Was ist ein Brandriegel und wie wirkt er?",
+    "optionen": [
+      "Ein verdickter, nichtbrennbarer Dämmstoffriegel, der den Lüftungsspalt auf unter 10 mm verengt — bei vertikaler Anordnung dienen schmelzende Abstandhalter der Verengung",
+      "Ein Stahlträger im Mauerwerk",
+      "Eine Sprinkleranlage in der Fassade",
+      "Ein Lüftungsgitter aus Kunststoff"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Eine weitere Variante sind Brandsperren, die durch verdickte nichtbrennbare Dämmstoffriegel gebildet werden und dadurch den Lüftungsspalt auf unter 10 mm verengen. Bei vertikaler Anordnung dienen die schmelzenden Abstandhalter der Verengung des Lüftungsraums.",
+    "bildDatei": "buch/lf15/brandriegel-daemmstoff.webp",
+    "bildunterschrift": "Brandriegel aus Dämmstoff (Buch S. 538)"
+  },
+  {
+    "id": "lf15-023",
+    "typ": "cloze",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "quelle": "Grundstufe Bautechnik, Buch S. 538",
+    "konfidenz": "hoch",
+    "text": "Zum Brandschutz bei Schornsteinen muss die Bekleidung aus nichtbrennbaren Baustoffen bestehen. Schalungsbretter sind nur mit Abstand zulaessig, mindestens {{5}} cm bei Hinterfuellung mit nichtbrennbarem Daemmstoff bzw. mindestens {{2}} cm bei Hinterlueftung. Brennbare Baustoffe der Aussenwandbekleidung muessen einen Mindestabstand von {{20}} cm zur Rohrdurchfuehrung aufweisen.",
+    "akzeptiert": {
+      "5": [
+        "5",
+        "fuenf",
+        "fünf"
+      ],
+      "2": [
+        "2",
+        "zwei"
+      ],
+      "20": [
+        "20",
+        "zwanzig"
+      ]
+    },
+    "erklaerung": "Zum Brandschutz bei Schornsteinen muss die Bekleidung aus nichtbrennbaren Baustoffen bestehen. Eine Holzlattung als Unterkonstruktion kann am Schornstein angebracht werden. Schalungsbretter sind nur mit Abstand zulässig (mindestens 5 cm bei Hinterfüllung mit nichtbrennbarem Dämmstoff bzw. mindestens 2 cm bei Hinterlüftung). Wird ein Schornstein durch eine Außenwand geführt, müssen brennbare Baustoffe der Außenwandbekleidung einen Mindestabstand von 20 cm zur Rohrdurchführung aufweisen.",
+    "bildDatei": "buch/lf15/wanddetails-brandriegel.webp",
+    "bildunterschrift": "Wanddetails im Bereich der Brandriegel (Buch S. 539)"
+  },
+  {
+    "id": "lf15-024",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Fassade",
+    "quelle": "Grundstufe Bautechnik, Buch S. 539 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Projektaufgabe S. 539: Eine 20 cm dicke Dämmschicht soll den Wärmeschutz verbessern. Welche Wärmeleitfähigkeit ist für einen Dämmstoff plausibel?",
+    "optionen": [
+      "Etwa 0,035 W/(m·K) — typisch für Mineralwolle oder Polystyrol",
+      "Etwa 0,35 W/(m·K)",
+      "Etwa 3,5 W/(m·K)",
+      "Etwa 35 W/(m·K)"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "ACHTUNG — im Buch (S. 539) steht der Wert 0,35 W/(m·K). Dieser Wert ist für einen Dämmstoff nicht plausibel: Er entspricht etwa Leichtbeton, nicht einer Dämmschicht. Übliche Dämmstoffe liegen bei 0,035 W/(m·K), also dem Zehnfachen besser. Rechnerisch: Mit λ = 0,035 ergibt 20 cm Dämmung R = d/λ = 0,20/0,035 = 5,71 m²·K/W — ein sinnvoller Wert für eine energetische Sanierung. Mit λ = 0,35 wären es nur R = 0,57 m²·K/W, womit sich eine Sanierung nicht lohnen würde. Prüfe die Größenordnung: Dämmstoffe liegen immer bei 0,02…0,05 W/(m·K).",
+    "bildDatei": "buch/lf15/projekt-fassade-gebaeude.webp",
+    "bildunterschrift": "Gebäude der Projektaufgabe (Buch S. 539)"
+  },
+  {
+    "id": "lf15-025",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Fassade",
+    "quelle": "Grundstufe Bautechnik, Buch S. 539 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Projektaufgabe S. 539: Die Frontseite ist {hoehe} m hoch und {breite} m breit. Berechne die Wandfläche für Unterkonstruktion und Bekleidung, die Länge der beiden Gebäudeaußenecken sowie Sockel- und Attikaanschluss zusammen.",
+    "parameter": [
+      {
+        "name": "hoehe",
+        "label": "Frontseitenhöhe",
+        "einheit": "m",
+        "min": 15,
+        "max": 15,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Frontseitenbreite",
+        "einheit": "m",
+        "min": 11.5,
+        "max": 11.5,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Wandfläche A = {hoehe} · {breite}",
+        "formel": "hoehe * breite",
+        "ergebnisName": "a",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Außenecken = 2 · {hoehe}",
+        "formel": "2 * hoehe",
+        "ergebnisName": "ecken",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Sockel- und Attikaanschluss = 2 · {breite}",
+        "formel": "2 * breite",
+        "ergebnisName": "sockelattika",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Projektaufgabe S. 539: Wandfläche A = 15,00 m · 11,50 m = 172,5 m². Gebäudeaußenecken = 2 · 15,00 m = 30,00 m (die Ecken laufen über die ganze Höhe). Sockelabschluss und Attikaanschluss = je 11,50 m, zusammen 23,00 m. Die Fenster (1,00 × 2,00 m = 2,00 m²) liegen unter 2,5 m² und werden nach VOB übermessen, also nicht abgezogen.",
+    "bildDatei": "buch/lf15/projekt-fassade-gebaeude.webp",
+    "bildunterschrift": "Gebäude der Projektaufgabe (Buch S. 539)"
+  },
+  {
+    "id": "lf15-026",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Dach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 533 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Projektaufgabe S. 533: Welche Aufgaben sind beim Walmdach mit Anbau und Schleppgaube zu lösen?",
+    "optionen": [
+      "Eine geeignete kleinformatige Bekleidung für die Gaubenwände wählen und begründen, Vorschläge zur Ausbildung der Kehle und der Anschlüsse machen, die Längen der Kehlen, Außenecken und An-/Abschlüsse berechnen und den Materialbedarf ermitteln",
+      "Nur die Dachziegel auswählen",
+      "Nur die Dachneigung bestimmen",
+      "Nur ein Gerüst planen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Projektaufgabe S. 533: Das Walmdach mit Anbau (Dachneigungen 50° bzw. 60°) und Schleppgaube (Neigung 25°, Überstand allseitig 25 cm) wird mit naturroten Dachziegeln eingedeckt. Die Schleppgaube soll eine kleinformatige Wandbekleidung erhalten, das Gaubenfenster (2,00 × 1,00 m) ist mittig angeordnet. Aufgaben: 1. geeignete Bekleidung für die Gaubenwände auswählen und begründen, 2. Vorschläge zur Ausbildung der Kehle, der seitlichen und oberen Abschlüsse sowie der Anschlüsse an das Gaubenfenster mit Detailzeichnungen, 3. Länge der Kehlen und der Außenecken sowie die Längen der An- und Abschlüsse berechnen, 4. gesamten Materialbedarf für die Bekleidung der Schleppgaube ermitteln.",
+    "bildDatei": "buch/lf15/projekt-draufsicht.webp",
+    "bildunterschrift": "Draufsicht des Projektdachs (Buch S. 533)"
+  },
+  {
+    "id": "lf15-027",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Dach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 533 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Projektaufgabe S. 533: Welche Dachneigungen und welcher Überstand sind für das Projektdach angegeben?",
+    "optionen": [
+      "Hauptdach und Anbau 50° bzw. 60°, Schleppgaube 25°, Überstand allseitig 25 cm",
+      "Alle Flächen 45°, kein Überstand",
+      "Hauptdach 30°, Gaube 60°, Überstand 50 cm",
+      "Es sind keine Neigungen angegeben"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Projektaufgabe S. 533: Das abgebildete Walmdach mit Anbau hat die Dachneigungen 50° bzw. 60°. Die Schleppgaube hat eine Neigung von 25° und einen Überstand von allseitig 25 cm. Es wird mit naturroten Dachziegeln eingedeckt. Die Seitenansicht zeigt die beiden Neigungen 60° und 50° sowie die Maße 1,00 m und 1,50 m.",
+    "bildDatei": "buch/lf15/projekt-seitenansicht.webp",
+    "bildunterschrift": "Seitenansicht mit Dachneigungen (Buch S. 533)"
+  },
+  {
+    "id": "lf15-028",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Dach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 533 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Projektaufgabe S. 533: Wie groß ist das Gaubenfenster und was folgt daraus für die Massenermittlung?",
+    "optionen": [
+      "2,00 × 1,00 m = 2,00 m² — es liegt unter der VOB-Grenze von 2,5 m² und wird deshalb übermessen, also nicht abgezogen",
+      "2,00 × 1,00 m — es wird immer von der Fläche abgezogen",
+      "3,00 × 2,00 m — es wird abgezogen",
+      "Es ist kein Fenster vorgesehen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Projektaufgabe S. 533: Das Gaubenfenster misst 2,00 × 1,00 m und ist mittig angeordnet. Seine Fläche beträgt 2,00 m² und liegt damit unter der VOB-Grenze von 2,5 m². Öffnungen unter 2,5 m² werden nach VOB übermessen — sie werden also NICHT von der Bekleidungsfläche abgezogen. Die Laibungen werden aber trotzdem als laufende Meter erfasst.",
+    "bildDatei": "buch/lf15/projekt-vorderansicht.webp",
+    "bildunterschrift": "Vorderansicht der Schleppgaube (Buch S. 533)"
+  },
+  {
+    "id": "lf15-029",
+    "typ": "fachbegriff",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540",
+    "konfidenz": "hoch",
+    "begriff": "Schleppwinkel",
+    "definition": "Der Winkel γ zwischen Hauptdach und Schleppdach — also die Differenz zwischen der Hauptdachneigung α und der Schleppdachneigung β. Formel: γ = α − β.",
+    "bestandteile": [
+      "Schlepp",
+      "winkel"
+    ],
+    "erklaerung": "Bei der Schleppdachgaube sind drei Winkel im Spiel: α = Hauptdachneigung, β = Schleppdachneigung und γ = Schleppwinkel (Differenz zwischen α und β). Über γ lässt sich die Wangenhöhe direkt berechnen: w = s' · sin γ. Im Buchbeispiel S. 540 sind α = 40° und β = 25°, also γ = 15°.",
+    "bildDatei": "buch/lf15/schleppgaube-geometrie.webp",
+    "bildunterschrift": "Geometrie der Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-030",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 540: Auf einem Dach mit {alpha}° Dachneigung wird eine Schleppdachgaube mit {beta}° Neigung errichtet. Die Sparren sind {sges} m lang, davon {ue} m Überstand. Berechne die Gaubentiefe und die Gaubenhöhe.",
+    "parameter": [
+      {
+        "name": "alpha",
+        "label": "Hauptdachneigung α",
+        "einheit": "°",
+        "min": 40,
+        "max": 40,
+        "schritt": 1
+      },
+      {
+        "name": "beta",
+        "label": "Schleppdachneigung β",
+        "einheit": "°",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "sges",
+        "label": "Sparrenlänge gesamt",
+        "einheit": "m",
+        "min": 4.3,
+        "max": 4.3,
+        "schritt": 0.05
+      },
+      {
+        "name": "ue",
+        "label": "Überstand",
+        "einheit": "m",
+        "min": 0.25,
+        "max": 0.25,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge ohne Überstand s' = {sges} − {ue}",
+        "formel": "sges - ue",
+        "ergebnisName": "sStrich",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gaubentiefe t_g = s' · cos {beta}°",
+        "formel": "sStrich * cos(beta deg)",
+        "ergebnisName": "tg",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gaubenhöhe h_g = t_g · tan {alpha}°",
+        "formel": "tg * tan(alpha deg)",
+        "ergebnisName": "hg",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 540: s' = 4,30 m − 0,25 m = 4,05 m. Gaubentiefe t_g = s' · cos β = 4,05 · cos 25° = 3,67 m. Gaubenhöhe h_g = t_g · tan α = 3,67 · tan 40° = 3,08 m. WICHTIG: Für t_g wird die Sparrenlänge OHNE Überstand (s') verwendet, für die Dachfläche später aber die Länge MIT Überstand (s). Wer das verwechselt, rechnet die Gaube zu tief.",
+    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-031",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 540: Die Gaubentiefe beträgt {tg} m und die Gaubenhöhe {hg} m. Berechne die Anschlusslänge a der Gaube an das Hauptdach.",
+    "parameter": [
+      {
+        "name": "tg",
+        "label": "Gaubentiefe t_g",
+        "einheit": "m",
+        "min": 3.67,
+        "max": 3.67,
+        "schritt": 0.01
+      },
+      {
+        "name": "hg",
+        "label": "Gaubenhöhe h_g",
+        "einheit": "m",
+        "min": 3.08,
+        "max": 3.08,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Anschlusslänge a = sqrt(t_g² + h_g²)",
+        "formel": "sqrt(tg^2 + hg^2)",
+        "ergebnisName": "a",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 540: a = √(t_g² + h_g²) = √((3,67 m)² + (3,08 m)²) = √22,96 = 4,79 m. Alternativ über die Winkelfunktionen: a = t_g : cos α = 3,67 : cos 40° = 4,79 m, oder a = h_g : sin α = 3,08 : sin 40° = 4,79 m. Alle drei Wege führen zum selben Ergebnis — nutze den, für den du die Werte schon hast.",
+    "bildDatei": "buch/lf15/schleppgaube-winkelfunktionen.webp",
+    "bildunterschrift": "Winkelfunktionen Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-032",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 540: Sparrenlänge ohne Überstand s' = {sStrich} m, Gaubentiefe t_g = {tg} m, Gaubenhöhe h_g = {hg} m. Berechne die verminderte Dachhöhe h' und die vordere Sichthöhe h_v.",
+    "parameter": [
+      {
+        "name": "sStrich",
+        "label": "Sparrenlänge s'",
+        "einheit": "m",
+        "min": 4.05,
+        "max": 4.05,
+        "schritt": 0.01
+      },
+      {
+        "name": "tg",
+        "label": "Gaubentiefe t_g",
+        "einheit": "m",
+        "min": 3.67,
+        "max": 3.67,
+        "schritt": 0.01
+      },
+      {
+        "name": "hg",
+        "label": "Gaubenhöhe h_g",
+        "einheit": "m",
+        "min": 3.08,
+        "max": 3.08,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Verminderte Dachhöhe h' = sqrt(s'² − t_g²)",
+        "formel": "sqrt(sStrich^2 - tg^2)",
+        "ergebnisName": "hStrich",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Vordere Sichthöhe h_v = h_g − h'",
+        "formel": "hg - hStrich",
+        "ergebnisName": "hv",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 540: h' = √(s'² − t_g²) = √((4,05 m)² − (3,67 m)²) = √2,93 = 1,71 m. Vordere Sichthöhe h_v = h_g − h' = 3,08 m − 1,71 m = 1,37 m. Die vordere Sichthöhe ist das, was man von vorne an der Gaube tatsächlich sieht — sie ist deutlich kleiner als die Gaubenhöhe, weil das Schleppdach selbst schon Höhe aufnimmt.",
+    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-033",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 540: Berechne die seitliche Wangenfläche A_w auf zwei Wegen. Gegeben: vordere Sichthöhe h_v = {hv} m, Gaubentiefe t_g = {tg} m, Anschlusslänge a = {a} m, Sparrenlänge s' = {sStrich} m, Schleppwinkel γ = {gamma}°.",
+    "parameter": [
+      {
+        "name": "hv",
+        "label": "vord. Sichthöhe h_v",
+        "einheit": "m",
+        "min": 1.37,
+        "max": 1.37,
+        "schritt": 0.01
+      },
+      {
+        "name": "tg",
+        "label": "Gaubentiefe t_g",
+        "einheit": "m",
+        "min": 3.67,
+        "max": 3.67,
+        "schritt": 0.01
+      },
+      {
+        "name": "a",
+        "label": "Anschlusslänge a",
+        "einheit": "m",
+        "min": 4.79,
+        "max": 4.79,
+        "schritt": 0.01
+      },
+      {
+        "name": "sStrich",
+        "label": "Sparrenlänge s'",
+        "einheit": "m",
+        "min": 4.05,
+        "max": 4.05,
+        "schritt": 0.01
+      },
+      {
+        "name": "gamma",
+        "label": "Schleppwinkel γ",
+        "einheit": "°",
+        "min": 15,
+        "max": 15,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Weg 1: A_w = 1/2 · h_v · t_g",
+        "formel": "0.5 * hv * tg",
+        "ergebnisName": "aw1",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Wangenhöhe w = s' · sin {gamma}°",
+        "formel": "sStrich * sin(gamma deg)",
+        "ergebnisName": "w",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Weg 2: A_w = 1/2 · a · w",
+        "formel": "0.5 * a * w",
+        "ergebnisName": "aw2",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 540: Weg 1: A_w = ½ · h_v · t_g = 0,5 · 1,37 · 3,67 = 2,51 m². Weg 2: Wangenhöhe w = s' · sin γ = 4,05 · sin 15° = 1,05 m, dann A_w = ½ · a · w = 0,5 · 4,79 · 1,05 = 2,51 m². Beide Wege liefern dasselbe Ergebnis — die Wange ist ein Dreieck, das man je nach vorhandenen Maßen über zwei verschiedene Grundseite-Höhe-Paare berechnen kann.",
+    "bildDatei": "buch/lf15/schleppgaube-formeln.webp",
+    "bildunterschrift": "Formeln Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-034",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 540: Die Gaube ist {bg} m breit, die vordere Sichthöhe beträgt {hv} m. Die Schleppdachfläche steht allseitig {u} m über, die Sparrenlänge mit Überstand ist {s} m. Berechne die Vorderfläche und die Schleppdachfläche.",
+    "parameter": [
+      {
+        "name": "bg",
+        "label": "Gaubenbreite b_g",
+        "einheit": "m",
+        "min": 2.5,
+        "max": 2.5,
+        "schritt": 0.1
+      },
+      {
+        "name": "hv",
+        "label": "vord. Sichthöhe h_v",
+        "einheit": "m",
+        "min": 1.37,
+        "max": 1.37,
+        "schritt": 0.01
+      },
+      {
+        "name": "u",
+        "label": "seitlicher Überstand",
+        "einheit": "m",
+        "min": 0.1,
+        "max": 0.1,
+        "schritt": 0.05
+      },
+      {
+        "name": "s",
+        "label": "Sparrenlänge s (mit Überstand)",
+        "einheit": "m",
+        "min": 4.3,
+        "max": 4.3,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Vorderfläche A_v = {bg} · {hv}",
+        "formel": "bg * hv",
+        "ergebnisName": "av",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Dachbreite b = {bg} + 2 · {u}",
+        "formel": "bg + 2 * u",
+        "ergebnisName": "b",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Schleppdachfläche A_d = b · {s}",
+        "formel": "b * s",
+        "ergebnisName": "ad",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 540: Vorderfläche A_v = b_g · h_v = 2,50 m · 1,37 m = 3,43 m². Schleppdachfläche A_d = b · s = (2,50 m + 2 · 0,10 m) · 4,30 m = 2,70 · 4,30 = 11,61 m². ACHTUNG zwei Fallen: (1) Für die Dachfläche wird die Sparrenlänge MIT Überstand (4,30 m) genommen, nicht s' = 4,05 m. (2) Der seitliche Überstand von 10 cm zählt ZWEIMAL (links und rechts), also 2,50 + 0,20 = 2,70 m.",
+    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
+  },
+  {
+    "id": "lf15-035",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541",
+    "konfidenz": "hoch",
+    "frage": "Was ist bei der Satteldachgaube zusätzlich zur Schleppdachgaube zu berechnen?",
+    "optionen": [
+      "Die Längen der Kehlen, mit denen das Gaubendach an die Hauptdachfläche anschließt",
+      "Nur die Firsthöhe",
+      "Nur die Traufe",
+      "Es gibt keinen Unterschied"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Bei Satteldachgauben schließt das Dach mit Kehlen an die Hauptdachfläche an. Neben den Anschlusslängen sind hier zusätzlich die Längen der Kehlen zu bestimmen. Die Kehllänge berechnet sich aus k = √((l_f − l_t)² + s²) oder über den Kehl-First-Winkel γ mit k = s : sin γ.",
+    "bildDatei": "buch/lf15/satteldachgaube-geometrie.webp",
+    "bildunterschrift": "Geometrie der Satteldachgaube (Buch S. 541)"
+  },
+  {
+    "id": "lf15-036",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 541: Die Wangen der Satteldachgaube sind {hw} m hoch und {lw} m lang. Berechne die Dachneigung α des Hauptdachs und die Anschlusslänge a der Wange.",
+    "parameter": [
+      {
+        "name": "hw",
+        "label": "Wangenhöhe h_w",
+        "einheit": "m",
+        "min": 1.17,
+        "max": 1.17,
+        "schritt": 0.01
+      },
+      {
+        "name": "lw",
+        "label": "Wangenlänge l_w",
+        "einheit": "m",
+        "min": 1.39,
+        "max": 1.39,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Dachneigung α = atan({hw} : {lw})",
+        "formel": "atan(hw / lw) / pi * 180",
+        "ergebnisName": "alpha",
+        "einheit": "°"
+      },
+      {
+        "beschreibung": "Anschlusslänge a = sqrt(h_w² + l_w²)",
+        "formel": "sqrt(hw^2 + lw^2)",
+        "ergebnisName": "a",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 541: tan α = h_w : l_w = 1,17 m : 1,39 m = 0,8417 ⇒ α = 40°. Anschlusslänge a = √(h_w² + l_w²) = √((1,17)² + (1,39)²) = 1,82 m. Alternativ: a = h_w : sin α = 1,17 : sin 40° = 1,82 m. Die Wange bildet ein rechtwinkliges Dreieck — aus Höhe und Länge folgt direkt die Hauptdachneigung.",
+    "bildDatei": "buch/lf15/satteldachgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Satteldachgaube (Buch S. 541)"
+  },
+  {
+    "id": "lf15-037",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 541: Die Dachbreite der Gaube beträgt {b} m (Gaubendachneigung 45°, daher h = b/2). Der First ist {lf} m lang, die Traufe {lt} m. Berechne die Sparrenlänge s und die gesamte Dachfläche A_d.",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Dachbreite b",
+        "einheit": "m",
+        "min": 2.28,
+        "max": 2.28,
+        "schritt": 0.01
+      },
+      {
+        "name": "lf",
+        "label": "Firstlänge l_f",
+        "einheit": "m",
+        "min": 2.5,
+        "max": 2.5,
+        "schritt": 0.05
+      },
+      {
+        "name": "lt",
+        "label": "Trauflänge l_t",
+        "einheit": "m",
+        "min": 1.15,
+        "max": 1.15,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge s = sqrt((b/2)² + (b/2)²)",
+        "formel": "sqrt((b / 2)^2 + (b / 2)^2)",
+        "ergebnisName": "s",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Dachfläche A_d = 2 · [1/2 · ({lf} + {lt}) · s]",
+        "formel": "2 * (0.5 * (lf + lt) * s)",
+        "ergebnisName": "ad",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 541: Bei 45° Gaubendachneigung gilt h = b/2 = 1,14 m. Sparrenlänge s = √((1,14)² + (1,14)²) = 1,61 m. Dachfläche A_d = 2 · [½ · (l_f + l_t) · s] = 2 · ½ · (2,50 + 1,15) · 1,61 = 5,88 m². Die beiden Dachflächen sind Trapeze (oben First, unten Traufe) — deshalb (l_f + l_t)/2 als mittlere Länge, mal 2 für beide Seiten.",
+    "bildDatei": "buch/lf15/satteldachgaube-formeln.webp",
+    "bildunterschrift": "Formeln Satteldachgaube (Buch S. 541)"
+  },
+  {
+    "id": "lf15-038",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 541: Firstlänge l_f = {lf} m, Trauflänge l_t = {lt} m, Sparrenlänge s = {s} m. Berechne die Kehllänge k und den Kehl-First-Winkel γ.",
+    "parameter": [
+      {
+        "name": "lf",
+        "label": "Firstlänge l_f",
+        "einheit": "m",
+        "min": 2.5,
+        "max": 2.5,
+        "schritt": 0.05
+      },
+      {
+        "name": "lt",
+        "label": "Trauflänge l_t",
+        "einheit": "m",
+        "min": 1.15,
+        "max": 1.15,
+        "schritt": 0.05
+      },
+      {
+        "name": "s",
+        "label": "Sparrenlänge s",
+        "einheit": "m",
+        "min": 1.61,
+        "max": 1.61,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Kehllänge k = sqrt((l_f − l_t)² + s²)",
+        "formel": "sqrt((lf - lt)^2 + s^2)",
+        "ergebnisName": "k",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Kehl-First-Winkel γ = atan(s : (l_f − l_t))",
+        "formel": "atan(s / (lf - lt)) / pi * 180",
+        "ergebnisName": "gamma",
+        "einheit": "°"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 541: k = √((l_f − l_t)² + s²) = √((1,35 m)² + (1,61 m)²) = 2,10 m. Kehl-First-Winkel: tan γ = s : (l_f − l_t) = 1,61 : 1,35 = 1,1926 ⇒ γ = 50°. Gegenprobe: k = s : sin γ = 1,61 : sin 50° = 2,10 m ✓. Die Differenz l_f − l_t ist der waagerechte Versatz zwischen First und Traufe — daraus und der Sparrenlänge ergibt sich die Kehle.",
+    "bildDatei": "buch/lf15/satteldachgaube-winkelfunktionen.webp",
+    "bildunterschrift": "Winkelfunktionen Satteldachgaube (Buch S. 541)"
+  },
+  {
+    "id": "lf15-039",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 541: Berechne die Verkleidungsflächen. Wangen: {lw} m lang, {hw} m hoch. Vorderseite: Gaubenbreite {bg} m, geminderte Firsthöhe {hf} m, Fenster {fb} m × {fh} m.",
+    "parameter": [
+      {
+        "name": "lw",
+        "label": "Wangenlänge l_w",
+        "einheit": "m",
+        "min": 1.39,
+        "max": 1.39,
+        "schritt": 0.01
+      },
+      {
+        "name": "hw",
+        "label": "Wangenhöhe h_w",
+        "einheit": "m",
+        "min": 1.17,
+        "max": 1.17,
+        "schritt": 0.01
+      },
+      {
+        "name": "bg",
+        "label": "Gaubenbreite b_g",
+        "einheit": "m",
+        "min": 1.8,
+        "max": 1.8,
+        "schritt": 0.05
+      },
+      {
+        "name": "hf",
+        "label": "geminderte Firsthöhe h_f",
+        "einheit": "m",
+        "min": 0.9,
+        "max": 0.9,
+        "schritt": 0.05
+      },
+      {
+        "name": "fb",
+        "label": "Fensterbreite",
+        "einheit": "m",
+        "min": 1.51,
+        "max": 1.51,
+        "schritt": 0.01
+      },
+      {
+        "name": "fh",
+        "label": "Fensterhöhe",
+        "einheit": "m",
+        "min": 0.85,
+        "max": 0.85,
+        "schritt": 0.01
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Wangenflächen A_w = 2 · [1/2 · l_w · h_w]",
+        "formel": "2 * (0.5 * lw * hw)",
+        "ergebnisName": "aw",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Vorderseite A_v = b_g · h_w + 1/2 · b_g · h_f − Fensterfläche",
+        "formel": "bg * hw + 0.5 * bg * hf - fb * fh",
+        "ergebnisName": "av",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 3,
+    "erklaerung": "Buchbeispiel S. 541: Wangenflächen A_w = 2 · [½ · 1,39 m · 1,17 m] = 1,63 m². Vorderseite A_v = b_g · h_w + ½ · b_g · h_f − A_Fenster = 1,80 · 1,17 + 0,5 · 1,80 · 0,90 − 1,51 · 0,85 = 2,106 + 0,81 − 1,284 = 1,63 m². Die Vorderseite besteht aus einem Rechteck (bis Traufhöhe) plus einem Dreieck (Giebel) minus dem Fenster. WICHTIG — hier wird das Fenster abgezogen, obwohl es mit 1,28 m² unter 2,5 m² liegt. Das ist kein Widerspruch zur VOB-Regel von S. 537: Das Übermessen kleiner Öffnungen ist eine Abrechnungsregel für das Aufmaß. Hier dagegen wird die tatsächlich zu verkleidende Fläche für den Materialbedarf ermittelt — und dort, wo das Fenster sitzt, liegt nun einmal kein Material. Merke: Aufmaß nach VOB und tatsächlicher Materialbedarf sind zwei verschiedene Rechnungen.",
+    "bildDatei": "buch/lf15/satteldachgaube-skizze.webp",
+    "bildunterschrift": "Skizze zur Satteldachgaube (Buch S. 541)"
+  },
+  {
+    "id": "lf15-040",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Spitzgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 542: Eine Spitzgaube auf einem Hauptdach mit {alpha}° Neigung ist {b} m breit, die Gaubenneigung beträgt {beta}°. Berechne die Gaubenhöhe h_g und die Firstlänge l_f.",
+    "parameter": [
+      {
+        "name": "alpha",
+        "label": "Hauptdachneigung α",
+        "einheit": "°",
+        "min": 40,
+        "max": 40,
+        "schritt": 1
+      },
+      {
+        "name": "b",
+        "label": "Gaubenbreite b",
+        "einheit": "m",
+        "min": 2,
+        "max": 2,
+        "schritt": 0.1
+      },
+      {
+        "name": "beta",
+        "label": "Gaubenneigung β",
+        "einheit": "°",
+        "min": 30,
+        "max": 30,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Gaubenhöhe h_g = ({b}/2) · tan 60°",
+        "formel": "(b / 2) * tan(60 deg)",
+        "ergebnisName": "hg",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Firstlänge l_f = h_g · sin(90° − {alpha}°) : sin {beta}°",
+        "formel": "hg * sin((90 - alpha) deg) / sin(beta deg)",
+        "ergebnisName": "lf",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 542: Gaubenhöhe h_g = b/2 · tan 60° = 1,00 m · 1,732 = 1,73 m. Firstlänge l_f = h_g · sin(90° − 40°) : sin 30° = 1,73 · sin 50° : sin 30° = 1,73 · 0,766 : 0,5 = 2,65 m. Die Spitzgaube ist die anspruchsvollste Gaubenform, weil First und Anschlusslinie räumlich verlaufen — hier hilft nur der Sinussatz.",
+    "bildDatei": "buch/lf15/spitzgaube-geometrie.webp",
+    "bildunterschrift": "Geometrie der Spitzgaube (Buch S. 542)"
+  },
+  {
+    "id": "lf15-041",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Spitzgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 542: Gaubenhöhe h_g = {hg} m, Firstlänge l_f = {lf} m, Gaubenbreite b = {b} m. Berechne die Hilfslängen c1 und c2, daraus c, und schließlich die Anschlusslänge a.",
+    "parameter": [
+      {
+        "name": "hg",
+        "label": "Gaubenhöhe h_g",
+        "einheit": "m",
+        "min": 1.73,
+        "max": 1.73,
+        "schritt": 0.01
+      },
+      {
+        "name": "lf",
+        "label": "Firstlänge l_f",
+        "einheit": "m",
+        "min": 2.65,
+        "max": 2.65,
+        "schritt": 0.01
+      },
+      {
+        "name": "b",
+        "label": "Gaubenbreite b",
+        "einheit": "m",
+        "min": 2,
         "max": 2,
         "schritt": 0.1
       }
     ],
     "schritte": [
       {
-        "beschreibung": "Bruttofläche der Wand = {laenge} · {hoehe}",
-        "formel": "laenge * hoehe",
-        "ergebnisName": "brutto",
+        "beschreibung": "c1 = h_g · cos 50°",
+        "formel": "hg * cos(50 deg)",
+        "ergebnisName": "c1",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "c2 = l_f · cos 30°",
+        "formel": "lf * cos(30 deg)",
+        "ergebnisName": "c2",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "c = c1 + c2",
+        "formel": "c1 + c2",
+        "ergebnisName": "c",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Anschlusslänge a = sqrt(c² − (b/2)²)",
+        "formel": "sqrt(c^2 - (b / 2)^2)",
+        "ergebnisName": "a",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel S. 542: c1 = h_g · cos 50° = 1,73 · 0,643 = 1,11 m. c2 = l_f · cos 30° = 2,65 · 0,866 = 2,295 m. c = c1 + c2 = 3,405 m. Anschlusslänge a = √(c² − (b/2)²) = √((3,405)² − (1,00)²) = √10,60 = 3,25 m.",
+    "bildDatei": "buch/lf15/spitzgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Spitzgaube (Buch S. 542)"
+  },
+  {
+    "id": "lf15-042",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Spitzgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (Beispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel S. 542: Gaubenbreite b = {b} m, Gaubenhöhe h_g = {hg} m, Anschlusslänge a = {a} m, Firstlänge l_f = {lf} m, Gaubenneigung β = {beta}°. Berechne die Vorderfläche und die beiden Wangenflächen.",
+    "parameter": [
+      {
+        "name": "b",
+        "label": "Gaubenbreite b",
+        "einheit": "m",
+        "min": 2,
+        "max": 2,
+        "schritt": 0.1
+      },
+      {
+        "name": "hg",
+        "label": "Gaubenhöhe h_g",
+        "einheit": "m",
+        "min": 1.73,
+        "max": 1.73,
+        "schritt": 0.01
+      },
+      {
+        "name": "a",
+        "label": "Anschlusslänge a",
+        "einheit": "m",
+        "min": 3.25,
+        "max": 3.25,
+        "schritt": 0.01
+      },
+      {
+        "name": "lf",
+        "label": "Firstlänge l_f",
+        "einheit": "m",
+        "min": 2.65,
+        "max": 2.65,
+        "schritt": 0.01
+      },
+      {
+        "name": "beta",
+        "label": "Gaubenneigung β",
+        "einheit": "°",
+        "min": 30,
+        "max": 30,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Vorderfläche A_v = 1/2 · b · h_g",
+        "formel": "0.5 * b * hg",
+        "ergebnisName": "av",
         "einheit": "m²"
       },
       {
-        "beschreibung": "Fläche aller Öffnungen = {anzahl} · {fb} · {fh}",
-        "formel": "anzahl * fb * fh",
-        "ergebnisName": "oeffnungen",
+        "beschreibung": "Eine Wangenfläche A_w = 1/2 · a · l_f · sin {beta}°",
+        "formel": "0.5 * a * lf * sin(beta deg)",
+        "ergebnisName": "aw",
         "einheit": "m²"
       },
       {
-        "beschreibung": "Nettofläche = Bruttofläche − Öffnungen",
-        "formel": "brutto - oeffnungen",
-        "ergebnisName": "netto",
+        "beschreibung": "Beide Wangen = 2 · A_w",
+        "formel": "2 * aw",
+        "ergebnisName": "awGesamt",
         "einheit": "m²"
       }
     ],
     "toleranzProzent": 2,
-    "erklaerung": "Für den Materialbedarf zählt die Nettofläche, für den Arbeitsaufwand aber nicht: Jede Öffnung bringt vier zusätzliche Anschlüsse mit sich und kostet mehr Zeit als die eingesparte Fläche."
+    "erklaerung": "Buchbeispiel S. 542: Vorderfläche A_v = ½ · b · h_g = ½ · 2,00 · 1,73 = 1,73 m². Wangenfläche A_w = ½ · a · l_f · sin β = ½ · 3,25 · 2,65 · sin 30° = 2,15 m². Beide Wangen: 2 · 2,15 = 4,30 m². Die Spitzgaube hat eine dreieckige Vorderfläche — deshalb ½ · Breite · Höhe.",
+    "bildDatei": "buch/lf15/spitzgaube-beispiel.webp",
+    "bildunterschrift": "Beispiel Spitzgaube (Buch S. 542)"
   },
   {
-    "id": "lf15-011",
+    "id": "lf15-043",
     "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachrechnen Dachdeckerhandwerk (Längenermittlung Abschlüsse)",
+    "thema": "Materialbedarf Giebel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (1. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein rechteckiges Gebäude ist {a} m lang und {b} m breit und wird ringsum mit einer hinterlüfteten Fassade bekleidet. Wie viele Meter Sockel-Lüftungsprofil werden benötigt?",
+    "aufgabentext": "Buchbeispiel 1 (S. 542): Eine Giebelansicht ist {breite} m breit, die Traufhöhe beträgt {traufe} m und die Giebelhöhe darüber {giebel} m. Berechne die Giebelfläche und die Länge der Giebelschräge.",
     "parameter": [
       {
-        "name": "a",
-        "label": "Gebäudelänge",
+        "name": "breite",
+        "label": "Giebelbreite",
         "einheit": "m",
         "min": 8,
-        "max": 30,
+        "max": 8,
         "schritt": 0.5
       },
       {
-        "name": "b",
-        "label": "Gebäudebreite",
+        "name": "traufe",
+        "label": "Traufhöhe",
         "einheit": "m",
-        "min": 6,
-        "max": 20,
+        "min": 3,
+        "max": 3,
+        "schritt": 0.5
+      },
+      {
+        "name": "giebel",
+        "label": "Giebelhöhe",
+        "einheit": "m",
+        "min": 2.5,
+        "max": 2.5,
         "schritt": 0.5
       }
     ],
     "schritte": [
       {
-        "beschreibung": "Umfang = 2 · ({a} + {b})",
-        "formel": "2 * (a + b)",
-        "ergebnisName": "umfang",
+        "beschreibung": "Giebelfläche A = {breite} · {traufe} + ({breite} · {giebel}) / 2",
+        "formel": "breite * traufe + (breite * giebel) / 2",
+        "ergebnisName": "a",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Giebelschräge s = sqrt(({breite}/2)² + {giebel}²)",
+        "formel": "sqrt((breite / 2)^2 + giebel^2)",
+        "ergebnisName": "s",
         "einheit": "m"
       }
     ],
-    "toleranzProzent": 1,
-    "erklaerung": "Der Sockelabschluss läuft einmal um das gesamte Gebäude. In der Praxis kommt noch ein Zuschnittzuschlag dazu, weil an jeder Ecke ein Stück verschnitten wird."
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 1 (S. 542): Giebelfläche A = 8 m · 3 m + (8 m · 2,5 m)/2 = 24 + 10 = 34,00 m². Giebelschräge s = √((4,0 m)² + (2,5 m)²) = √22,25 = 4,72 m. Der Giebel ist ein Rechteck plus ein Dreieck; die Schräge ergibt sich aus der halben Breite und der Giebelhöhe.",
+    "bildDatei": "buch/lf15/material-beispiel1-aufgabe.webp",
+    "bildunterschrift": "1. Berechnungsbeispiel Materialbedarf (Buch S. 542)"
   },
   {
-    "id": "lf15-012",
-    "typ": "diagram",
+    "id": "lf15-044",
+    "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Sockeldetail)",
+    "thema": "Materialbedarf Giebel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (1. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "frage": "Sockelabschluss einer hinterlüfteten Außenwandbekleidung im Schnitt: Benenne die markierten Schichten.",
-    "svg": "<svg viewBox='0 0 380 200' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sockelabschluss einer hinterlüfteten Fassade'><defs><pattern id='fg88-mauerwerk' width='9' height='9' patternUnits='userSpaceOnUse'><path d='M-2 11 L11 -2' stroke='currentColor' stroke-width='0.9' opacity='0.45'/></pattern><pattern id='fg88-daemmung' width='14' height='10' patternUnits='userSpaceOnUse'><path d='M0 5 Q3.5 0 7 5 Q10.5 10 14 5' fill='none' stroke='currentColor' stroke-width='0.9' opacity='0.55'/></pattern></defs><rect x='40' y='40' width='40' height='130' fill='url(#fg88-mauerwerk)' stroke='none'/><rect x='40' y='40' width='40' height='130' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='80' y='40' width='30' height='130' fill='url(#fg88-daemmung)' stroke='none'/><rect x='80' y='40' width='30' height='130' fill='none' stroke='currentColor' stroke-width='1.2'/><rect x='122' y='40' width='14' height='130' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='146' y='40' width='12' height='130' fill='none' stroke='#c07d4a' stroke-width='2'/><circle cx='60' cy='100' r='11' fill='#c07d4a'/><text x='60' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><circle cx='95' cy='100' r='11' fill='#c07d4a'/><text x='95' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><circle cx='129' cy='100' r='11' fill='#c07d4a'/><text x='129' y='104.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>3</text><line x1='220' y1='90' x2='158' y2='100' stroke='#c07d4a' stroke-width='1'/><circle cx='220' cy='90' r='11' fill='#c07d4a'/><text x='220' y='94.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>4</text></svg>",
-    "zuordnung": {
-      "mauerwerk": "Tragende Wand",
-      "daemmung": "Wärmedämmung",
-      "luftschicht": "Hinterlüftungsebene",
-      "bekleidung": "Außenwandbekleidung"
-    },
-    "erklaerung": "Von innen nach außen: 1 tragende Wand, 2 Wärmedämmung, 3 Hinterlüftungsebene (Luftschicht), 4 Bekleidung. Unten bleibt die Luftschicht offen — dort tritt die Zuluft ein, gesichert durch ein Lüftungsprofil."
-  },
-  {
-    "id": "lf15-013",
-    "typ": "draw",
-    "lernfeld": "lf15",
-    "thema": "Innen- und Außenecken",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Eckausbildung)",
-    "konfidenz": "hoch",
-    "aufgabentext": "Zeichne die Außenecke einer hinterlüfteten Fassade im waagerechten Schnitt (Grundriss). Die tragende Wand ist vorgegeben. Ergänze Wärmedämmung, Hinterlüftungsebene und Bekleidung und beschrifte die Schichten. Zeige, dass die Luftschicht um die Ecke durchgeht.",
-    "vorgabeSvg": "<svg viewBox='0 0 380 188' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Wandecke im Grundriss (Vorgabe)'><path d='M40 160 L40 60 L130 60' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='70' y='90' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>tragende Wand</text></svg>",
-    "loesungSvg": "<svg viewBox='0 0 380 188' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Musterlösung Außenecke der VHF'><path d='M40 160 L40 60 L130 60' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='70' y='90' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>tragende Wand</text><path d='M28 160 L28 48 L130 48' fill='none' stroke='currentColor' stroke-width='1.2' stroke-dasharray='4 3'/><path d='M18 160 L18 38 L130 38' fill='none' stroke='#c07d4a' stroke-width='2.2'/><path d='M33 150 L33 53 L120 53' fill='none' stroke='#c07d4a' stroke-width='1' stroke-dasharray='4 3'/><text x='140' y='44' fill='#c07d4a' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Bekleidung mit Eckwinkel</text><text x='140' y='60' fill='currentColor' font-size='11' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Hinterlüftung läuft um die Ecke</text></svg>",
+    "aufgabentext": "Buchbeispiel 1 (S. 542): Zwei Türöffnungen sind je {th} m hoch und {tb} m breit, die Giebelschräge misst {schraege} m. Berechne die Türlaibungslänge und den Strackortbedarf bei {deck} Stück/m und {zuschlag} % Verschnitt.",
+    "parameter": [
+      {
+        "name": "th",
+        "label": "Türhöhe",
+        "einheit": "m",
+        "min": 2.5,
+        "max": 2.5,
+        "schritt": 0.1
+      },
+      {
+        "name": "tb",
+        "label": "Türbreite",
+        "einheit": "m",
+        "min": 2,
+        "max": 2,
+        "schritt": 0.1
+      },
+      {
+        "name": "schraege",
+        "label": "Giebelschräge",
+        "einheit": "m",
+        "min": 4.72,
+        "max": 4.72,
+        "schritt": 0.01
+      },
+      {
+        "name": "deck",
+        "label": "Strackorte je m",
+        "einheit": "Stück/m",
+        "min": 10,
+        "max": 10,
+        "schritt": 1
+      },
+      {
+        "name": "zuschlag",
+        "label": "Verschnitt",
+        "einheit": "%",
+        "min": 3,
+        "max": 3,
+        "schritt": 1
+      }
+    ],
     "schritte": [
-      "Die tragende Wand als Ecke im Grundriss übernehmen.",
-      "Die Wärmedämmung als gleichmäßig dicke Schicht außen um die Ecke herumführen.",
-      "Die Hinterlüftungsebene als durchgehenden Luftraum davor zeichnen — sie darf an der Ecke nicht zugebaut werden.",
-      "Die Bekleidung als äußerste Schicht ergänzen und die Ecke mit einem Eckwinkel oder auf Gehrung ausbilden.",
-      "Alle Schichten beschriften und mit Pfeilen zeigen, dass die Luft um die Ecke strömen kann."
+      {
+        "beschreibung": "Türlaibungen = 4 · {th} + 2 · {tb}",
+        "formel": "4 * th + 2 * tb",
+        "ergebnisName": "laibung",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gesamtlänge Strackort = Laibungen + 2 · {schraege}",
+        "formel": "laibung + 2 * schraege",
+        "ergebnisName": "gesamt",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Strackortbedarf = {deck} · Gesamtlänge · (1 + {zuschlag}/100)",
+        "formel": "ceil(deck * gesamt * (1 + zuschlag / 100))",
+        "ergebnisName": "stueck",
+        "einheit": "Stück"
+      }
     ],
-    "erklaerung": "Der entscheidende Punkt ist der durchgehende Luftraum. Viele Ausführungen setzen an der Ecke ein durchgehendes Kantholz — damit ist die Hinterlüftung an dieser Stelle unterbrochen und es entsteht ein toter Bereich, in dem Feuchtigkeit stehen bleibt."
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 1 (S. 542): Türlaibungen l = 4 · 2,50 m + 2 · 2,00 m = 14,00 m (vier senkrechte Laibungen bei zwei Türen plus zwei Stürze). Strackortbedarf: Platten 30/15 mit 10 cm Deckhöhe ergeben 10 Stück/m. 10 St./m · (14,00 m + 2 · 4,72 m) · 1,03 ≈ 242 Stück. Dazu 3 Schieferstifte je Platte: 3 · 242 = 726 Stifte.",
+    "bildDatei": "buch/lf15/material-beispiel1-loesung.webp",
+    "bildunterschrift": "Lösung 1. Berechnungsbeispiel (Buch S. 542)"
   },
   {
-    "id": "lf15-014",
-    "typ": "fachbegriff",
+    "id": "lf15-045",
+    "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Durchdringungen: Fenster und Türen",
-    "quelle": "Fachregeln für Außenwandbekleidungen (Fensterbank)",
+    "thema": "Materialbedarf Giebel",
+    "quelle": "Grundstufe Bautechnik, Buch S. 542 (1. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "begriff": "Tropfkante",
-    "definition": "Die nach unten abgekantete Vorderkante eines Blechs — zum Beispiel an einer Fensterbank oder an einem Abdeckblech. Sie zwingt das ablaufende Wasser zum Abtropfen, damit es nicht an der Blechunterseite zurück zur Fassade läuft.",
-    "bestandteile": [
-      "Abgekantete Blechkante",
-      "Abstand zur Fassade",
-      "Wasser tropft frei ab"
+    "aufgabentext": "Buchbeispiel 1 (S. 542): Giebelfläche {giebelflaeche} m², Strackortlänge {laenge} m bei {breite} m Streifenbreite. Berechne die Strackortfläche, die verbleibende Bekleidungsfläche und den Plattenbedarf 20/20 ({jem2} Stück/m², {zuschlag} % Verschnitt).",
+    "parameter": [
+      {
+        "name": "giebelflaeche",
+        "label": "Giebelfläche",
+        "einheit": "m²",
+        "min": 34,
+        "max": 34,
+        "schritt": 0.5
+      },
+      {
+        "name": "laenge",
+        "label": "Laibungslänge",
+        "einheit": "m",
+        "min": 14,
+        "max": 14,
+        "schritt": 0.5
+      },
+      {
+        "name": "breite",
+        "label": "Strackortbreite",
+        "einheit": "m",
+        "min": 0.25,
+        "max": 0.25,
+        "schritt": 0.05
+      },
+      {
+        "name": "jem2",
+        "label": "Platten je m²",
+        "einheit": "Stück/m²",
+        "min": 39.1,
+        "max": 39.1,
+        "schritt": 0.1
+      },
+      {
+        "name": "zuschlag",
+        "label": "Verschnitt",
+        "einheit": "%",
+        "min": 3,
+        "max": 3,
+        "schritt": 1
+      }
     ],
-    "erklaerung": "Fehlt die Tropfkante, zieht das Wasser durch Kapillarwirkung und Adhäsion an der Unterseite entlang zurück an die Wand. Das Ergebnis sind die typischen dunklen Schmutzfahnen unter Fensterbänken."
+    "schritte": [
+      {
+        "beschreibung": "Strackortfläche A_S = ({laenge} + 2 · 4,72) · {breite}",
+        "formel": "(laenge + 2 * 4.72) * breite",
+        "ergebnisName": "as",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Bekleidungsfläche A_B = {giebelflaeche} − A_S",
+        "formel": "giebelflaeche - as",
+        "ergebnisName": "ab",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Plattenbedarf = {jem2} · A_B · (1 + {zuschlag}/100)",
+        "formel": "ceil(jem2 * ab * (1 + zuschlag / 100))",
+        "ergebnisName": "platten",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Schieferstifte gesamt = Platten + 2 · Platten",
+        "formel": "platten + 2 * platten",
+        "ergebnisName": "stifte",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 1 (S. 542): Strackortfläche A_S = (14,00 m + 2 · 4,72 m) · 0,25 m = 5,86 m². Bekleidungsfläche A_B = 34,00 − 5,86 = 28,14 m². Plattenbedarf 20/20: n = 39,1 St./m² · 28,14 m² · 1,03 = 1134 Stück. Bei 2 Schieferstiften je Platte: 2 · 1134 = 2268 Stifte, zusammen mit den 1134 Strackortstiften ergibt das 3402 Stück + Verluste. Traglattung: 6,25 m/m² · 24,00 m² = 150 m + Verschnitt. WICHTIG: Die Strackortfläche wird von der Giebelfläche ABGEZOGEN, weil dieser Randstreifen bereits mit Strackortplatten gedeckt ist — sonst rechnet man doppelt.",
+    "bildDatei": "buch/lf15/material-beispiel1-loesung.webp",
+    "bildunterschrift": "Lösung 1. Berechnungsbeispiel (Buch S. 542)"
   },
   {
-    "id": "lf15-015",
-    "typ": "fachbegriff",
+    "id": "lf15-046",
+    "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Detailskizzen",
-    "quelle": "KMK-Rahmenlehrplan LF 15 (Detailzeichnungen)",
+    "thema": "Materialbedarf Wangen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "begriff": "Detailzeichnung",
-    "definition": "Ein vergrößerter Ausschnitt aus einem Bauteil, meist im Maßstab 1:5 oder 1:10, der eine konstruktiv besondere Stelle zeigt — Ecke, Abschluss oder Durchdringung — mit Schichtenfolge, Bauteilbezeichnungen und den maßgebenden Maßen.",
-    "bestandteile": [
-      "Schichtenfolge von innen nach außen",
-      "Bauteilbezeichnungen",
-      "Maßgebende Maße",
-      "Wasserführende Ebene"
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Die Seitenflächen einer Schleppgaube werden mit Rechteckschiefern {sb} × {sh} cm in Doppeldeckung verkleidet. Die Gaubenschräge misst {schraege} m, die vordere Höhe {vh} m. Berechne Gaubentiefe und Deckfläche beider Wangen.",
+    "parameter": [
+      {
+        "name": "sb",
+        "label": "Schieferbreite",
+        "einheit": "cm",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "sh",
+        "label": "Schieferhöhe",
+        "einheit": "cm",
+        "min": 20,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "schraege",
+        "label": "Gaubenschräge",
+        "einheit": "m",
+        "min": 3.8,
+        "max": 3.8,
+        "schritt": 0.05
+      },
+      {
+        "name": "vh",
+        "label": "vordere Höhe",
+        "einheit": "m",
+        "min": 1.1,
+        "max": 1.1,
+        "schritt": 0.05
+      }
     ],
-    "erklaerung": "Bewertet wird nicht die Schönheit, sondern die Funktion: richtige Schichtenfolge, Wasser läuft nach außen ab, Hinterlüftung durchgehend, Maße eingetragen."
+    "schritte": [
+      {
+        "beschreibung": "Gaubentiefe t = sqrt({schraege}² − {vh}²)",
+        "formel": "sqrt(schraege^2 - vh^2)",
+        "ergebnisName": "t",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Deckfläche beider Wangen A = 1/2 · {vh} · t · 2",
+        "formel": "0.5 * vh * t * 2",
+        "ergebnisName": "a",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 2 (S. 543): Gaubentiefe t = √((3,80 m)² − (1,10 m)²) = √13,23 = 3,64 m. Deckfläche A = ½ · 1,10 m · 3,64 m · 2 = 4,00 m². ACHTUNG: Das „· 2\" am Ende ist entscheidend — eine Schleppgaube hat ZWEI Wangen. Eine einzelne Wange hätte nur 2,00 m². Wer die Verdopplung vergisst, bestellt die Hälfte des Materials.",
+    "bildDatei": "buch/lf15/material-beispiel2.webp",
+    "bildunterschrift": "2. Berechnungsbeispiel (Buch S. 543)"
   },
   {
-    "id": "lf15-016",
+    "id": "lf15-047",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Wangen",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Rechteckschiefer {sb} × {sh} cm in Doppeldeckung mit {ue} cm Überdeckung. Berechne die Decksteinfläche, den Bedarf je m², den Gesamtbedarf für {flaeche} m² bei {verhau} % Verhau und die Nagelzahl.",
+    "parameter": [
+      {
+        "name": "sb",
+        "label": "Schieferbreite",
+        "einheit": "cm",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "sh",
+        "label": "Schieferhöhe",
+        "einheit": "cm",
+        "min": 20,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "ue",
+        "label": "Überdeckung",
+        "einheit": "cm",
+        "min": 2,
+        "max": 2,
+        "schritt": 1
+      },
+      {
+        "name": "flaeche",
+        "label": "Deckfläche",
+        "einheit": "m²",
+        "min": 4,
+        "max": 4,
+        "schritt": 0.5
+      },
+      {
+        "name": "verhau",
+        "label": "Verhau",
+        "einheit": "%",
+        "min": 5,
+        "max": 5,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Decksteinfläche A_St = (({sb} − {ue}) / 2) · {sh}",
+        "formel": "((sb - ue) / 2) * sh",
+        "ergebnisName": "ast",
+        "einheit": "cm²"
+      },
+      {
+        "beschreibung": "Steine je m² = 10000 : A_St",
+        "formel": "10000 / ast",
+        "ergebnisName": "jem2",
+        "einheit": "Stück/m²"
+      },
+      {
+        "beschreibung": "Bedarf mit Verhau = aufgerundet {flaeche} · Steine je m² · (1 + {verhau}/100)",
+        "formel": "ceil(flaeche * jem2 * (1 + verhau / 100))",
+        "ergebnisName": "bedarf",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Nagelbedarf = Bedarf · 2",
+        "formel": "bedarf * 2",
+        "ergebnisName": "naegel",
+        "einheit": "Stück"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 2 (S. 543): Decksteinfläche A_St = ((25 cm − 2 cm)/2) · 20 cm = 11,5 · 20 = 230 cm². Steine je m²: 10000 cm² : 230 cm² = 43,5 St./m². Bedarf: 4,00 m² · 43,5 = 174 Stück, + 5 % = 9 Stück ⇒ 183 Stück. Nagelbedarf: 183 St. · 2 Nägel/St. = 366 Nägel + Verluste. Merke: Bei der DOPPELDECKUNG wird die Breite abzüglich Überdeckung HALBIERT — daher die Division durch 2.",
+    "bildDatei": "buch/lf15/material-beispiel2-loesung.webp",
+    "bildunterschrift": "Lösung 2. Berechnungsbeispiel (Buch S. 543)"
+  },
+  {
+    "id": "lf15-048",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Schleppgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Hauptdach {alpha}°, Schleppdachgaube {beta}°, Gaubentiefe {tg} m, Überstand {ue} m. Berechne die Sparrenlänge s' ohne und s mit Überstand sowie die Anschlusslänge a.",
+    "parameter": [
+      {
+        "name": "alpha",
+        "label": "Hauptdachneigung α",
+        "einheit": "°",
+        "min": 45,
+        "max": 45,
+        "schritt": 1
+      },
+      {
+        "name": "beta",
+        "label": "Schleppdachneigung β",
+        "einheit": "°",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "tg",
+        "label": "Gaubentiefe",
+        "einheit": "m",
+        "min": 2.75,
+        "max": 2.75,
+        "schritt": 0.05
+      },
+      {
+        "name": "ue",
+        "label": "Überstand",
+        "einheit": "m",
+        "min": 0.3,
+        "max": 0.3,
+        "schritt": 0.05
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sparrenlänge s' = {tg} : cos {beta}°",
+        "formel": "tg / cos(beta deg)",
+        "ergebnisName": "sStrich",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Sparrenlänge s = s' + {ue}",
+        "formel": "sStrich + ue",
+        "ergebnisName": "s",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Anschlusslänge a = {tg} : cos {alpha}°",
+        "formel": "tg / cos(alpha deg)",
+        "ergebnisName": "a",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 3 (S. 543): s' = t_g : cos β = 2,75 m : cos 25° = 3,03 m. s = s' + ü = 3,03 + 0,30 = 3,33 m. Anschlusslänge a = t_g : cos α = 2,75 : cos 45° = 3,89 m. Beachte: Für s' wird mit der SCHLEPPdachneigung β gerechnet, für a mit der HAUPTdachneigung α — die Anschlusslinie liegt in der Hauptdachfläche.",
+    "bildDatei": "buch/lf15/material-beispiel3-skizze.webp",
+    "bildunterschrift": "Skizze 3. Berechnungsbeispiel (Buch S. 543)"
+  },
+  {
+    "id": "lf15-049",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Schleppgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Gaubenbreite {bg} m, Sparrenlänge s = {s} m, Überstand {ue} m, vordere Höhe h_v = {hv} m, Anschlusslänge a = {a} m, Hauptdachneigung {alpha}°. Berechne Dachfläche, Wangenhöhe, eine Wangenfläche, die Vorderfläche und die senkrechten Flächen insgesamt.",
+    "parameter": [
+      {
+        "name": "bg",
+        "label": "Gaubenbreite b_g",
+        "einheit": "m",
+        "min": 4,
+        "max": 4,
+        "schritt": 0.1
+      },
+      {
+        "name": "s",
+        "label": "Sparrenlänge s",
+        "einheit": "m",
+        "min": 3.33,
+        "max": 3.33,
+        "schritt": 0.01
+      },
+      {
+        "name": "ue",
+        "label": "Überstand",
+        "einheit": "m",
+        "min": 0.3,
+        "max": 0.3,
+        "schritt": 0.05
+      },
+      {
+        "name": "hv",
+        "label": "vordere Höhe h_v",
+        "einheit": "m",
+        "min": 1.5,
+        "max": 1.5,
+        "schritt": 0.05
+      },
+      {
+        "name": "a",
+        "label": "Anschlusslänge a",
+        "einheit": "m",
+        "min": 3.89,
+        "max": 3.89,
+        "schritt": 0.01
+      },
+      {
+        "name": "alpha",
+        "label": "Hauptdachneigung α",
+        "einheit": "°",
+        "min": 45,
+        "max": 45,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Dachfläche A_D = ({bg} + 2 · {ue}) · {s}",
+        "formel": "(bg + 2 * ue) * s",
+        "ergebnisName": "ad",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Wangenhöhe w = {hv} · cos {alpha}°",
+        "formel": "hv * cos(alpha deg)",
+        "ergebnisName": "w",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Eine Wangenfläche A_w = 1/2 · {a} · w",
+        "formel": "0.5 * a * w",
+        "ergebnisName": "aw",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Vorderfläche A_v = {bg} · {hv}",
+        "formel": "bg * hv",
+        "ergebnisName": "av",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Senkrechte Flächen gesamt = 2 · A_w + A_v",
+        "formel": "2 * aw + av",
+        "ergebnisName": "senkrecht",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 3 (S. 543): Dachfläche A_D = (4,00 + 2 · 0,30) · 3,33 = 4,60 · 3,33 = 15,32 m². Wangenhöhe w = h_v · cos α = 1,50 · cos 45° = 1,06 m. Wangenfläche A_w = ½ · 3,89 · 1,06 = 2,06 m². Vorderfläche A_v = 4,00 · 1,50 = 6,00 m². Senkrechte Flächen insgesamt: 2 · 2,06 + 6,00 = 10,12 m². Dach- und Wandflächen werden getrennt geführt, weil sie mit unterschiedlichen Plattenformaten gedeckt werden.",
+    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
+  },
+  {
+    "id": "lf15-050",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Schleppgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Für die Wangen- und Vorderflächen werden Platten {pb} × {ph} cm mit {hue} cm Höhenüberdeckung verwendet. Berechne die sichtbare Fläche einer Platte und den Plattenbedarf je m².",
+    "parameter": [
+      {
+        "name": "pb",
+        "label": "Plattenbreite",
+        "einheit": "cm",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "ph",
+        "label": "Plattenhöhe",
+        "einheit": "cm",
+        "min": 35,
+        "max": 35,
+        "schritt": 1
+      },
+      {
+        "name": "hue",
+        "label": "Höhenüberdeckung",
+        "einheit": "cm",
+        "min": 2,
+        "max": 2,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sichtbare Fläche = 1/2 · ({ph} − {hue}) · {pb}",
+        "formel": "0.5 * (ph - hue) * pb",
+        "ergebnisName": "sichtbar",
+        "einheit": "cm²"
+      },
+      {
+        "beschreibung": "Plattenbedarf je m² = 10000 : sichtbare Fläche",
+        "formel": "10000 / sichtbar",
+        "ergebnisName": "jem2",
+        "einheit": "Stück/m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 3 (S. 543): Sichtbare Fläche = ½ · (35 cm − 2 cm) · 25 cm = ½ · 33 · 25 = 412,5 cm². Plattenbedarf je m²: 10000 cm² : 412,5 cm² = 24,24 Stück/m². Für die Dachfläche wurden dagegen Platten 30/60 mit 13,66 Stück/m² und ü = 12 cm gewählt (Tabelle in LF 9).",
+    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
+  },
+  {
+    "id": "lf15-051",
+    "typ": "calc",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Schleppgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Dachfläche {ad} m² mit {dachje} Stück/m², senkrechte Flächen {senk} m² mit {senkje} Stück/m². Berechne beide Plattenbedarfe bei {verhau} % Verhau und den Schalungsbedarf bei {verschnitt} % Verschnitt.",
+    "parameter": [
+      {
+        "name": "ad",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 15.32,
+        "max": 15.32,
+        "schritt": 0.01
+      },
+      {
+        "name": "dachje",
+        "label": "Dachplatten je m²",
+        "einheit": "Stück/m²",
+        "min": 13.66,
+        "max": 13.66,
+        "schritt": 0.01
+      },
+      {
+        "name": "senk",
+        "label": "senkrechte Flächen",
+        "einheit": "m²",
+        "min": 10.12,
+        "max": 10.12,
+        "schritt": 0.01
+      },
+      {
+        "name": "senkje",
+        "label": "Wandplatten je m²",
+        "einheit": "Stück/m²",
+        "min": 24.24,
+        "max": 24.24,
+        "schritt": 0.01
+      },
+      {
+        "name": "verhau",
+        "label": "Verhau",
+        "einheit": "%",
+        "min": 8,
+        "max": 8,
+        "schritt": 1
+      },
+      {
+        "name": "verschnitt",
+        "label": "Verschnitt Schalung",
+        "einheit": "%",
+        "min": 7,
+        "max": 7,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Dachplatten = aufgerundet {ad} · {dachje} · (1 + {verhau}/100)",
+        "formel": "ceil(ad * dachje * (1 + verhau / 100))",
+        "ergebnisName": "dachplatten",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Wandplatten = aufgerundet {senk} · {senkje} · (1 + {verhau}/100)",
+        "formel": "ceil(senk * senkje * (1 + verhau / 100))",
+        "ergebnisName": "wandplatten",
+        "einheit": "Stück"
+      },
+      {
+        "beschreibung": "Schalungsbedarf = ({ad} + {senk}) · (1 + {verschnitt}/100)",
+        "formel": "(ad + senk) * (1 + verschnitt / 100)",
+        "ergebnisName": "schalung",
+        "einheit": "m²"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchbeispiel 3 (S. 543): Dachdeckung 15,32 m² · 13,66 St./m² · 1,08 = 227 Stück. Senkrechte Flächen 10,12 m² · 24,24 St./m² · 1,08 = 265 Stück. Schalungsbedarf (15,32 + 10,12) · 1,07 = 27,22 m². HINWEIS: Im Buch steht bei der Schalung die Einheit m³ — das ist ein Druckfehler, es muss m² heißen, denn Schalung wird als Fläche gerechnet. Rechenweg und Zahlenwert sind korrekt.",
+    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
+  },
+  {
+    "id": "lf15-052",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Durchdringungen: Fenster und Türen",
-    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 5)",
     "konfidenz": "hoch",
-    "frage": "Warum wird eine Fensterbank mit Gefälle nach außen eingebaut?",
+    "frage": "Buchaufgabe 5 (S. 544): Welche Größen sind für ein Angebot bei einer Fassade mit Fassadentafeln zu berechnen?",
     "optionen": [
-      "Aus optischen Gründen",
-      "Damit Regenwasser nach außen abläuft und nicht in die Wand zieht",
-      "Damit sie stabiler ist",
-      "Das Gefälle ist egal"
+      "Fassadenflächen in m², Länge der Fensterlaibungen, Länge der Sturz- und Brüstungsbekleidung, Attikaanschluss und Sockelabschluss, sowie Eckprofile — alle in m",
+      "Nur die Fassadenfläche",
+      "Nur die Anzahl der Fenster",
+      "Nur das Gewicht der Tafeln"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Das Gefälle führt Wasser sicher von der Wand weg. Zusammen mit seitlichen Aufkantungen und einer Tropfkante vorn bleibt die Fassade darunter trocken."
+    "erklaerung": "Buchaufgabe 5 (S. 544): Die Fassade des Mehrfamilienhauses (11,30 m breit, 13,85 m hoch, alle Fenster 1,25 × 1,25 m) wird mit Fassadentafeln 1250 × 2500 mm und 1250 × 1250 mm verkleidet. Für ein Angebot sind zu berechnen: a) Fassadenflächen in m², b) Länge der Fensterlaibungen in m, c) Länge der Sturz- und Brüstungsbekleidung in m, d) Attikaanschluss und Sockelabschluss in m, e) Eckprofile in m. Die Fenster mit 1,5625 m² liegen unter 2,5 m² und werden nach VOB übermessen.",
+    "bildDatei": "buch/lf15/aufg5-mehrfamilienhaus.webp",
+    "bildunterschrift": "Mehrfamilienhaus (Buch S. 544, Aufgabe 5)"
   },
   {
-    "id": "lf15-017",
-    "typ": "fachbegriff",
+    "id": "lf15-053",
+    "typ": "calc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 5)",
     "konfidenz": "hoch",
-    "begriff": "Tropfkante",
-    "definition": "Eine abgekantete Kante (Wassernase) an der Vorderseite von Blechen und Fensterbänken. Das Wasser tropft dort ab, statt an die Wand zurückzulaufen.",
-    "bestandteile": [
-      "Tropf",
-      "kante"
+    "aufgabentext": "Buchaufgabe 5 (S. 544): Die Fassade ist {breite} m breit und {hoehe} m hoch. Berechne die Fassadenfläche, die Fläche eines Fensters ({fb} m × {fb} m) und die Länge der beiden Eckprofile.",
+    "parameter": [
+      {
+        "name": "breite",
+        "label": "Fassadenbreite",
+        "einheit": "m",
+        "min": 11.3,
+        "max": 11.3,
+        "schritt": 0.05
+      },
+      {
+        "name": "hoehe",
+        "label": "Fassadenhöhe",
+        "einheit": "m",
+        "min": 13.85,
+        "max": 13.85,
+        "schritt": 0.05
+      },
+      {
+        "name": "fb",
+        "label": "Fenstermaß",
+        "einheit": "m",
+        "min": 1.25,
+        "max": 1.25,
+        "schritt": 0.05
+      }
     ],
-    "erklaerung": "Ohne Tropfkante läuft Wasser unter das Blech zurück an die Fassade und hinterlässt Schmutzfahnen oder dringt ein. Die kleine Abkantung verhindert das."
+    "schritte": [
+      {
+        "beschreibung": "Fassadenfläche A = {breite} · {hoehe}",
+        "formel": "breite * hoehe",
+        "ergebnisName": "a",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Fensterfläche = {fb} · {fb}",
+        "formel": "fb * fb",
+        "ergebnisName": "af",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Eckprofile = 2 · {hoehe}",
+        "formel": "2 * hoehe",
+        "ergebnisName": "ecken",
+        "einheit": "m"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Buchaufgabe 5 (S. 544): Fassadenfläche A = 11,30 m · 13,85 m = 156,51 m². Fensterfläche = 1,25 m · 1,25 m = 1,5625 m² — das liegt unter 2,5 m², die Fenster werden also nach VOB übermessen und nicht abgezogen. Eckprofile = 2 · 13,85 m = 27,70 m. Die Laibungen werden trotzdem als laufende Meter erfasst, denn sie müssen bekleidet werden.",
+    "bildDatei": "buch/lf15/aufg5-mehrfamilienhaus.webp",
+    "bildunterschrift": "Mehrfamilienhaus (Buch S. 544, Aufgabe 5)"
   },
   {
-    "id": "lf15-018",
-    "typ": "cloze",
-    "lernfeld": "lf15",
-    "thema": "Innen- und Außenecken",
-    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
-    "konfidenz": "hoch",
-    "text": "An Innen- und Außenecken einer hinterlüfteten Bekleidung muss die {{Luftschicht}} durchgehend bleiben, damit die {{Hinterlüftung}} nicht unterbrochen wird.",
-    "akzeptiert": {
-      "Luftschicht": [
-        "luftschicht",
-        "Luftspalt",
-        "Belueftung",
-        "Belüftung"
-      ],
-      "Hinterlüftung": [
-        "hinterlueftung",
-        "Hinterlueftung",
-        "Belueftung",
-        "Belüftung"
-      ]
-    },
-    "erklaerung": "Wird die Luftschicht an der Ecke zugebaut, staut sich Feuchte. Die Eckausbildung muss die Luft um die Ecke weiterführen."
-  },
-  {
-    "id": "lf15-019",
+    "id": "lf15-054",
     "typ": "mc",
     "lernfeld": "lf15",
-    "thema": "Untere, seitliche und obere Abschlüsse",
-    "quelle": "ZVDH-Fachregeln An- und Abschlüsse, LF 15 (verifiziert)",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 6)",
     "konfidenz": "hoch",
-    "frage": "Welche Aufgabe hat der Sockelabschluss unten an einer hinterlüfteten Fassade?",
+    "frage": "Buchaufgabe 6 (S. 544): Was ist bei einem winkelförmigen Gebäude zusätzlich zur Bekleidungsfläche zu bestimmen?",
     "optionen": [
-      "Er verschließt die Luftschicht komplett",
-      "Er lässt Zuluft eintreten und hält zugleich Kleintiere und Spritzwasser ab",
-      "Er trägt die ganze Fassade",
-      "Er dämmt"
+      "Die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge",
+      "Nur die Fassadenfläche",
+      "Nur die Gebäudehöhe",
+      "Nur die Dachneigung"
     ],
     "korrekt": [
-      1
+      0
     ],
-    "erklaerung": "Der Sockelabschluss ist die Zuluftöffnung der Hinterlüftung. Ein Lüftungsgitter lässt Luft ein, hält aber Insekten, Laub und Spritzwasser fern."
+    "erklaerung": "Buchaufgabe 6 (S. 544): Für das abgebildete Gebäude sind die Bekleidungsfläche, die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge zu berechnen. Ein winkelförmiges Gebäude hat neben den Außenecken auch eine INNENECKE — diese wird oft übersehen, braucht aber ebenfalls Eckprofile bzw. eine Kehldeckung. Die Maße des Gebäudes sind 8,60 / 5,60 / 7,00 / 5,60 m bei 8,25 m Höhe.",
+    "bildDatei": "buch/lf15/aufg6-gebaeude.webp",
+    "bildunterschrift": "Gebäude (Buch S. 544, Aufgabe 6)"
+  },
+  {
+    "id": "lf15-055",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 7)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 7 (S. 544): Welche Größen sind bei der abgebildeten Satteldachgaube zu berechnen?",
+    "optionen": [
+      "Anschlusslänge a und Kehllänge k, Firstlänge l_f und Trauflänge l_t sowie Dachfläche, Wangenfläche und Vorderfläche",
+      "Nur die Dachfläche",
+      "Nur die Firsthöhe",
+      "Nur der Überstand"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 7 (S. 544): Für die abgebildete Satteldachgaube (Hauptdachneigung α = 40°, Gaubenbreite b_g = 2,50 m, Überstand ü = 0,30 m) sind zu berechnen: a) Anschlusslänge a und Kehllänge k, b) Firstlänge l_f und Trauflänge l_t, c) Dachfläche, Wangenfläche und Vorderfläche. Der Rechenweg entspricht dem Buchbeispiel von S. 541.",
+    "bildDatei": "buch/lf15/aufg7-satteldachgaube.webp",
+    "bildunterschrift": "Satteldachgaube (Buch S. 544, Aufgabe 7)"
+  },
+  {
+    "id": "lf15-056",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 8)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 8 (S. 544): Was unterscheidet die Walmdachgaube von der Satteldachgaube bei der Berechnung?",
+    "optionen": [
+      "Bei der Walmdachgaube kommt zur Dachfläche und den Wangenflächen noch eine dritte, gewalmte Dachfläche hinzu — die Vorderseite ist dann Dachfläche statt Wandfläche",
+      "Es gibt keinen Unterschied",
+      "Die Walmdachgaube hat keine Kehlen",
+      "Die Walmdachgaube braucht keine Anschlusslänge"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 8 (S. 544): Für die abgebildete Walmdachgaube (Hauptdachneigung 45°) sind die Dachfläche, die Wangenflächen sowie die Anschlusslänge a und die Kehllänge k zu berechnen. Der wesentliche Unterschied zur Satteldachgaube: Bei der Walmdachgaube ist die Vorderseite abgewalmt, also selbst eine geneigte Dachfläche und keine senkrechte Wandfläche. Das ändert den Materialbedarf, weil Dach- und Wandflächen mit unterschiedlichen Formaten gedeckt werden.",
+    "bildDatei": "buch/lf15/aufg8-walmdachgaube.webp",
+    "bildunterschrift": "Walmdachgaube (Buch S. 544, Aufgabe 8)"
+  },
+  {
+    "id": "lf15-057",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 544 (Aufgabe 9)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 9 (S. 544): Welche Größen sind bei der abgebildeten Spitzgaube zu berechnen?",
+    "optionen": [
+      "Die Wangenflächen sowie die Anschlusslänge a",
+      "Nur die Firsthöhe",
+      "Nur die Trauflänge",
+      "Nur die Kehllänge"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 9 (S. 544): Für die abgebildete Spitzgaube (Hauptdachneigung α = 45°, Gaubenneigung β = 25°, Gaubenbreite b = 1,50 m) sind die Wangenflächen sowie die Anschlusslänge a zu berechnen. Die Spitzgaube hat keine Vorderwand im eigentlichen Sinne — die beiden Wangen laufen zur Spitze zusammen. Der Rechenweg entspricht dem Buchbeispiel von S. 542.",
+    "bildDatei": "buch/lf15/aufg9-spitzgaube.webp",
+    "bildunterschrift": "Spitzgaube (Buch S. 544, Aufgabe 9)"
+  },
+  {
+    "id": "lf15-058",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 10)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 10 (S. 545): Welche Größen sind bei der abgebildeten Schleppdachgaube zu bestimmen?",
+    "optionen": [
+      "Die Dachfläche A_d, die Anschlusslänge a und die Verkleidungsfläche (Wangen und Vorderseite)",
+      "Nur die Gaubenbreite",
+      "Nur die Firsthöhe",
+      "Nur die Anzahl der Sparren"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 10 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 4,70 m, b_g = 4,34 m, Höhen 2,46 m / 1,16 m / 3,50 m, Grundmaße 0,39 m und 3,87 m) sind zu bestimmen: a) die Dachfläche A_d, b) die Anschlusslänge a, c) die Verkleidungsfläche (Wangen und Vorderseite). Der Unterschied zwischen b und b_g ist der beidseitige Überstand: (4,70 − 4,34)/2 = 0,18 m je Seite.",
+    "bildDatei": "buch/lf15/aufg10-schleppgaube.webp",
+    "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 10)"
+  },
+  {
+    "id": "lf15-059",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 11)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 11 (S. 545): Was ist bei einer Schleppdachgaube zu bestimmen, die mit Faserzementplatten 20/40 cm in Doppeldeckung gedeckt wird?",
+    "optionen": [
+      "Die fehlenden Dachgrößen, der Plattenbedarf und der Lattenbedarf bei 8 % Verhau bzw. Verschnitt",
+      "Nur die Farbe der Platten",
+      "Nur der Nagelbedarf",
+      "Nur die Dachneigung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 11 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 3,75 m, b_g = 3,25 m, Hauptdachneigung 45°, Schleppdachneigung 18°, Maße 1,61 m / 1,36 m / 0,31 m / 2,79 m) sollen Dach, Wangen und Vorderfläche mit zwei Fenstern 135/95 cm mit Faserzementplatten 20/40 cm in Doppeldeckung auf Lattung gedeckt bzw. verkleidet werden. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) der Plattenbedarf, c) der Lattenbedarf bei 8 % Verhau bzw. Verschnitt.",
+    "bildDatei": "buch/lf15/aufg11-schleppgaube.webp",
+    "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 11)"
+  },
+  {
+    "id": "lf15-060",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 12)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 12 (S. 545): Welche vier Größen sind bei der Schleppdachgaube mit Schieferplatten in Doppeldeckung auf Schalung zu bestimmen?",
+    "optionen": [
+      "Die fehlenden Dachgrößen, die Schieferplattengröße, der Plattenbedarf bei 8 % Verhau und der Schalungsbedarf bei 7 % Verschnitt",
+      "Nur Plattengröße und Plattenbedarf",
+      "Nur der Schalungsbedarf",
+      "Nur die Dachgrößen"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 12 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 3,76 m, b_g = 3,30 m, Hauptdachneigung 45°, Maße 1,50 m / 0,25 m / 2,60 m) sollen Dach, Wangen und Vorderfläche mit zwei Fenstern 90/90 cm mit Schieferplatten in Doppeldeckung auf Schalung gedeckt werden. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Schieferplattengröße, c) der Plattenbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 7 % Verschnitt. Der Rechenweg entspricht dem 3. Berechnungsbeispiel S. 543.",
+    "bildDatei": "buch/lf15/aufg12-schleppgaube.webp",
+    "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 12)"
+  },
+  {
+    "id": "lf15-061",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 13)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 13 (S. 545): Welche Größen sind bei einer Satteldachgaube mit Doppeldeckung aus Faserzementplatten 30/30 cm auf Lattung zu bestimmen?",
+    "optionen": [
+      "Die fehlenden Dachgrößen, der Plattenbedarf bei 6,5 % Verhau, der Lattenbedarf bei 7 % Verschnitt und der Nagelbedarf",
+      "Nur der Plattenbedarf",
+      "Nur der Nagelbedarf",
+      "Nur die Kehllänge"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 13 (S. 545): Die abgebildete Satteldachgaube (Maße 3,20 m / 1,55 m / 1,65 m / 1,10 m / 1,30 m, Gaubendachneigung 45°, Kehle 1,84 m, Fenster 135/95, Breite 2,20 m) soll insgesamt eine Doppeldeckung aus Faserzementplatten 30/30 cm auf Lattung erhalten. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) der Plattenbedarf bei 6,5 % Verhau, c) der Lattenbedarf bei 7 % Verschnitt, d) der Nagelbedarf.",
+    "bildDatei": "buch/lf15/aufg13-satteldachgaube.webp",
+    "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 13)"
+  },
+  {
+    "id": "lf15-062",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 14)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 14 (S. 545): Welche Größen sind bei einer Satteldachgaube mit Doppeldeckung aus Schiefer auf Schalung zu bestimmen?",
+    "optionen": [
+      "Die fehlenden Dachgrößen, die Schieferplattengröße, der Schieferbedarf bei 8 % Verhau und der Schalungsbedarf bei 7 % Verschnitt",
+      "Nur die Schieferplattengröße",
+      "Nur der Schalungsbedarf",
+      "Nur der Lattenbedarf"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 14 (S. 545): Das Dach der abgebildeten Satteldachgaube sowie Wangen und Vorderfläche sollen eine Doppeldeckung aus Schiefer auf Schalung erhalten (Maße 0,20 m / 1,67 m / 1,40 m, Neigungen 40° bzw. 45°, Fenster 135/95, Breiten 2,10 m und 2,50 m). Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Schieferplattengröße, c) der Schieferbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 7 % Verschnitt.",
+    "bildDatei": "buch/lf15/aufg14-satteldachgaube.webp",
+    "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 14)"
+  },
+  {
+    "id": "lf15-063",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "quelle": "Grundstufe Bautechnik, Buch S. 545 (Aufgabe 15)",
+    "konfidenz": "hoch",
+    "frage": "Buchaufgabe 15 (S. 545): Welche Größen sind bei einer Satteldachgaube mit deutscher Deckung auf Schalung zu bestimmen?",
+    "optionen": [
+      "Die fehlenden Dachgrößen, die Plattengrößen für Dach und Wand, der Plattenbedarf bei 8 % Verhau und der Schalungsbedarf bei 6 % Verschnitt",
+      "Nur die Plattengrößen",
+      "Nur der Verhau",
+      "Nur die Fensterfläche"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Buchaufgabe 15 (S. 545): Die abgebildete Satteldachgaube (zwei Fenster 90/90, Breite 2,70 m, Maße 0,25 m / 1,48 m / 1,52 m / 1,41 m, Neigung 45°) soll insgesamt eine deutsche Deckung auf Schalung erhalten. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Plattengrößen für Dach und Wand, c) der Plattenbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 6 % Verschnitt. Wichtig: Für Dach und Wand werden UNTERSCHIEDLICHE Plattengrößen gewählt — die Wandfläche ist steiler und kommt mit kleineren Formaten aus.",
+    "bildDatei": "buch/lf15/aufg15-satteldachgaube.webp",
+    "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 15)"
+  },
+  {
+    "id": "lf15-064",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Dach",
+    "quelle": "Grundstufe Bautechnik, Buch S. 533 (Projektaufgabe)",
+    "konfidenz": "hoch",
+    "frage": "Projektaufgabe S. 533: Warum entstehen beim Walmdach mit Anbau überhaupt Kehlen, deren Länge berechnet werden muss?",
+    "optionen": [
+      "Weil der Anbau als einspringende Ecke auf das Hauptdach trifft — an dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen",
+      "Weil das Dach gewalmt ist",
+      "Weil die Gaube eingebaut wird",
+      "Kehlen entstehen nur bei Flachdächern"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Projektaufgabe S. 533: Der Anbau trifft als einspringende Ecke auf das Hauptdach — genau dort entsteht die Kehle. An dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen, deshalb muss sie besonders sorgfältig ausgebildet und ihre Länge für den Materialbedarf berechnet werden. Die Schleppgaube erzeugt zusätzlich Anschlusslinien zum Hauptdach. Die Draufsicht zeigt die Grate des Walmdachs und die Kehlen am Anbau.",
+    "bildDatei": "buch/lf15/projekt-walmdach.webp",
+    "bildunterschrift": "Walmdach mit Anbau und Schleppgaube (Buch S. 533)"
+  },
+  {
+    "id": "lf15-065",
+    "typ": "mc",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "quelle": "Grundstufe Bautechnik, Buch S. 541",
+    "konfidenz": "hoch",
+    "frage": "Welche Bedeutung hat die Differenz aus Firstlänge und Trauflänge (l_f − l_t) bei der Satteldachgaube?",
+    "optionen": [
+      "Sie ist der waagerechte Versatz zwischen First und Traufe und geht zusammen mit der Sparrenlänge in die Kehllänge ein",
+      "Sie ist die Gaubenhöhe",
+      "Sie ist die Wangenfläche",
+      "Sie hat keine Bedeutung für die Berechnung"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Die Differenz l_f − l_t ist der waagerechte Versatz zwischen First und Traufe der Gaube. Weil das Gaubendach an die geneigte Hauptdachfläche stößt, ist der First kürzer oder länger als die Traufe — dieser Versatz bildet zusammen mit der Sparrenlänge s das rechtwinklige Dreieck der Kehle: k = √((l_f − l_t)² + s²). Im Buchbeispiel S. 541: 2,50 m − 1,15 m = 1,35 m, daraus k = √(1,35² + 1,61²) = 2,10 m.",
+    "bildDatei": "buch/lf15/satteldachgaube-raeumlich.webp",
+    "bildunterschrift": "Satteldachgaube räumlich (Buch S. 541)"
   }
 ]

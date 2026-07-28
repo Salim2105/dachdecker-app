@@ -1,0 +1,619 @@
+{
+  "lf": "lf15",
+  "pdf": "/Users/salimsakkali/Downloads/LF15.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 532+i (Seiten 533-545). box = Bruchteile [x0,y0,x1,y1].",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.5,
+        0.15,
+        0.97,
+        0.32
+      ],
+      "name": "projekt-walmdach",
+      "alt": "Räumliche Ansicht des Walmdachs mit Anbau und Schleppgaube",
+      "unterschrift": "Walmdach mit Anbau und Schleppgaube (Buch S. 533)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.13,
+        0.39,
+        0.72,
+        0.53
+      ],
+      "name": "projekt-vorderansicht",
+      "alt": "Vorderansicht der Schleppgaube mit Gaubenfenster",
+      "unterschrift": "Vorderansicht der Schleppgaube (Buch S. 533)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.1,
+        0.53,
+        0.72,
+        0.9
+      ],
+      "name": "projekt-draufsicht",
+      "alt": "Bemaßte Draufsicht des Walmdachs mit Anbau und Kehlen",
+      "unterschrift": "Draufsicht des Projektdachs (Buch S. 533)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.68,
+        0.53,
+        0.97,
+        0.9
+      ],
+      "name": "projekt-seitenansicht",
+      "alt": "Bemaßte Seitenansicht mit Dachneigungen 50 und 60 Grad",
+      "unterschrift": "Seitenansicht mit Dachneigungen (Buch S. 533)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.4
+      ],
+      "name": "bezeichnung-wanddetails",
+      "alt": "Bezeichnung der Wanddetails mit nummerierten Anschlussstellen",
+      "unterschrift": "Bezeichnung der Wanddetails (Buch S. 534)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.43,
+        0.98,
+        0.92
+      ],
+      "name": "sockelausbildung",
+      "alt": "Sockelausbildung mit Konterlattung, Traglatte und Fußlatte",
+      "unterschrift": "Sockelausbildung (Buch S. 534)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.48,
+        0.12,
+        0.97,
+        0.33
+      ],
+      "name": "aussenecke-geschlauft",
+      "alt": "Außenecke bei geschlaufter Schieferdeckung",
+      "unterschrift": "Außenecke bei geschlaufter Deckung (Buch S. 535)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.48,
+        0.35,
+        0.97,
+        0.58
+      ],
+      "name": "eckausbildung-holzschindeln",
+      "alt": "Eckausbildung mit Holzschindeln, wechselseitig gestoßen",
+      "unterschrift": "Eckausbildung mit Holzschindeln (Buch S. 535)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.48,
+        0.6,
+        0.97,
+        0.84
+      ],
+      "name": "innenecke-wechselseitig",
+      "alt": "Innenecke mit wechselseitig gestoßenen Schindelreihen",
+      "unterschrift": "Innenecke wechselseitig gestoßen (Buch S. 535)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.12,
+        0.98,
+        0.28
+      ],
+      "name": "giebelabschluss-bogenschnitt",
+      "alt": "Giebelabschluss und Fensteranschluss mit Bogenschnittschiefern",
+      "unterschrift": "Giebelabschluss und Fensteranschluss mit Bogenschnittschiefern (Buch S. 536)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.3,
+        0.98,
+        0.62
+      ],
+      "name": "fensteranschluss-holzschindeln",
+      "alt": "Fensteranschluss bei Holzschindelbekleidung",
+      "unterschrift": "Fensteranschluss bei Holzschindelbekleidung (Buch S. 536)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.06,
+        0.51,
+        0.5,
+        0.7
+      ],
+      "name": "laibung-schnitt",
+      "alt": "Schnittdarstellung eines Fensteranschlusses mit nummerierten Schichten",
+      "unterschrift": "Fensteranschluss: Schnittdarstellung (Buch S. 536)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.06,
+        0.7,
+        0.5,
+        0.93
+      ],
+      "name": "oberer-wandabschluss",
+      "alt": "Oberer Wandabschluss auf Lattung, Ausführung auf der Baustelle",
+      "unterschrift": "Oberer Wandabschluss auf Lattung (Buch S. 536)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.5,
+        0.64,
+        0.98,
+        0.93
+      ],
+      "name": "aussenecke-metallprofil",
+      "alt": "Außenecke mit Metallprofil bei Schieferbekleidung",
+      "unterschrift": "Außenecke mit Metallprofil (Buch S. 536)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.5,
+        0.12,
+        0.98,
+        0.37
+      ],
+      "name": "schnitt-aussenecke-tafel",
+      "alt": "Schnitt durch eine Außenecke bei großformatigen Tafeln",
+      "unterschrift": "Schnitt durch Außenecke (Buch S. 537)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.5,
+        0.38,
+        0.98,
+        0.64
+      ],
+      "name": "oberer-abschluss-tafel",
+      "alt": "Oberer Abschluss der Bekleidung, Schnittdarstellung",
+      "unterschrift": "Oberer Abschluss: Schnittdarstellung (Buch S. 537)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.06,
+        0.66,
+        0.98,
+        0.94
+      ],
+      "name": "beispiel-fassadentafeln",
+      "alt": "Durchgerechnetes Beispiel zur Angebotserstellung mit Fassadentafeln",
+      "unterschrift": "Beispiel Fassadentafeln (Buch S. 537)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.12,
+        0.98,
+        0.33
+      ],
+      "name": "anordnung-brandsperren",
+      "alt": "Anordnung horizontaler Brandsperren in jedem zweiten Geschoss",
+      "unterschrift": "Anordnung horizontaler Brandsperren (Buch S. 538)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.35,
+        0.98,
+        0.65
+      ],
+      "name": "brandsperren-stahlblech",
+      "alt": "Einbau der Brandsperren aus Stahlblech bei Dämmstoffen über und unter 1000 Grad Schmelzpunkt",
+      "unterschrift": "Einbau der Brandsperren aus Stahlblech (Buch S. 538)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.68,
+        0.98,
+        0.93
+      ],
+      "name": "brandriegel-daemmstoff",
+      "alt": "Brandriegel aus nichtbrennbarem Dämmstoff in der Fassade",
+      "unterschrift": "Brandriegel aus Dämmstoff (Buch S. 538)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.06,
+        0.13,
+        0.98,
+        0.55
+      ],
+      "name": "wanddetails-brandriegel",
+      "alt": "Wanddetails im Bereich der Brandriegel: Innenecke, Außenecke, Fensteranschluss und Schnittdetail",
+      "unterschrift": "Wanddetails im Bereich der Brandriegel (Buch S. 539)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.15,
+        0.7,
+        0.5,
+        0.92
+      ],
+      "name": "projekt-fassade-gebaeude",
+      "alt": "Räumliche Ansicht des zu sanierenden Gebäudes mit hinterlüfteter Fassade",
+      "unterschrift": "Gebäude der Projektaufgabe (Buch S. 539)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.48,
+        0.12,
+        0.98,
+        0.33
+      ],
+      "name": "schleppgaube-geometrie",
+      "alt": "Geometrische Darstellung einer Schleppdachgaube mit Bezeichnungen",
+      "unterschrift": "Geometrie der Schleppdachgaube (Buch S. 540)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.06,
+        0.34,
+        0.5,
+        0.6
+      ],
+      "name": "schleppgaube-formeln",
+      "alt": "Formeln für Sparrenlänge, Anschlusslänge und Flächen der Schleppdachgaube",
+      "unterschrift": "Formeln Schleppdachgaube (Buch S. 540)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.5,
+        0.33,
+        0.98,
+        0.6
+      ],
+      "name": "schleppgaube-winkelfunktionen",
+      "alt": "Beziehungen über Winkelfunktionen für Dachhöhe, Dachtiefe, Wangenhöhe und Anschlusslänge",
+      "unterschrift": "Winkelfunktionen Schleppdachgaube (Buch S. 540)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.06,
+        0.61,
+        0.98,
+        0.94
+      ],
+      "name": "schleppgaube-beispiel",
+      "alt": "Durchgerechnetes Beispiel zur Schleppdachgaube",
+      "unterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.06,
+        0.14,
+        0.5,
+        0.32
+      ],
+      "name": "satteldachgaube-geometrie",
+      "alt": "Geometrische Darstellung einer Satteldachgaube mit Kehlen",
+      "unterschrift": "Geometrie der Satteldachgaube (Buch S. 541)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.32
+      ],
+      "name": "satteldachgaube-raeumlich",
+      "alt": "Räumliche Darstellung der Satteldachgaube mit Bezeichnungen",
+      "unterschrift": "Satteldachgaube räumlich (Buch S. 541)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.06,
+        0.33,
+        0.5,
+        0.5
+      ],
+      "name": "satteldachgaube-formeln",
+      "alt": "Formeln für Sparrenlänge, Anschlusslänge, Kehllänge und Flächen der Satteldachgaube",
+      "unterschrift": "Formeln Satteldachgaube (Buch S. 541)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.5,
+        0.33,
+        0.98,
+        0.5
+      ],
+      "name": "satteldachgaube-winkelfunktionen",
+      "alt": "Beziehungen über Winkelfunktionen für die Satteldachgaube",
+      "unterschrift": "Winkelfunktionen Satteldachgaube (Buch S. 541)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.06,
+        0.52,
+        0.98,
+        0.8
+      ],
+      "name": "satteldachgaube-beispiel",
+      "alt": "Durchgerechnetes Beispiel zur Satteldachgaube",
+      "unterschrift": "Beispiel Satteldachgaube (Buch S. 541)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.08,
+        0.78,
+        0.62,
+        0.96
+      ],
+      "name": "satteldachgaube-skizze",
+      "alt": "Bemaßte Skizze der Satteldachgaube mit Fenster 151/85",
+      "unterschrift": "Skizze zur Satteldachgaube (Buch S. 541)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.13,
+        0.98,
+        0.42
+      ],
+      "name": "spitzgaube-geometrie",
+      "alt": "Geometrische Darstellung einer Spitzgaube mit Winkeln",
+      "unterschrift": "Geometrie der Spitzgaube (Buch S. 542)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.06,
+        0.13,
+        0.5,
+        0.48
+      ],
+      "name": "spitzgaube-beispiel",
+      "alt": "Durchgerechnetes Beispiel zur Spitzgaube mit Anschlusslänge und Wangenflächen",
+      "unterschrift": "Beispiel Spitzgaube (Buch S. 542)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.06,
+        0.58,
+        0.5,
+        0.94
+      ],
+      "name": "material-beispiel1-aufgabe",
+      "alt": "Aufgabenstellung und Skizze zum ersten Berechnungsbeispiel Materialbedarf",
+      "unterschrift": "1. Berechnungsbeispiel Materialbedarf (Buch S. 542)"
+    },
+    {
+      "seite": 10,
+      "box": [
+        0.5,
+        0.58,
+        0.98,
+        0.94
+      ],
+      "name": "material-beispiel1-loesung",
+      "alt": "Lösung des ersten Berechnungsbeispiels zum Materialbedarf",
+      "unterschrift": "Lösung 1. Berechnungsbeispiel (Buch S. 542)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.06,
+        0.14,
+        0.5,
+        0.36
+      ],
+      "name": "material-beispiel2",
+      "alt": "Zweites Berechnungsbeispiel mit Skizze der Schleppgauben-Seitenfläche",
+      "unterschrift": "2. Berechnungsbeispiel (Buch S. 543)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.5,
+        0.14,
+        0.98,
+        0.36
+      ],
+      "name": "material-beispiel2-loesung",
+      "alt": "Lösung des zweiten Berechnungsbeispiels",
+      "unterschrift": "Lösung 2. Berechnungsbeispiel (Buch S. 543)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.5,
+        0.4,
+        0.98,
+        0.62
+      ],
+      "name": "material-beispiel3-skizze",
+      "alt": "Skizze zum dritten Berechnungsbeispiel mit Dachneigungen 45 und 25 Grad",
+      "unterschrift": "Skizze 3. Berechnungsbeispiel (Buch S. 543)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.06,
+        0.62,
+        0.98,
+        0.94
+      ],
+      "name": "material-beispiel3-loesung",
+      "alt": "Lösung des dritten Berechnungsbeispiels mit Platten- und Schalungsbedarf",
+      "unterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.06,
+        0.51,
+        0.48,
+        0.72
+      ],
+      "name": "aufg5-mehrfamilienhaus",
+      "alt": "Bemaßte Fassade eines Mehrfamilienhauses mit Fassadentafeln",
+      "unterschrift": "Mehrfamilienhaus (Buch S. 544, Aufgabe 5)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.06,
+        0.74,
+        0.48,
+        0.94
+      ],
+      "name": "aufg6-gebaeude",
+      "alt": "Räumliche Ansicht eines Gebäudes mit Maßen für die Bekleidungsfläche",
+      "unterschrift": "Gebäude (Buch S. 544, Aufgabe 6)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.5,
+        0.32,
+        0.98,
+        0.55
+      ],
+      "name": "aufg7-satteldachgaube",
+      "alt": "Bemaßte Satteldachgaube mit Dachneigung 40 Grad",
+      "unterschrift": "Satteldachgaube (Buch S. 544, Aufgabe 7)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.5,
+        0.57,
+        0.98,
+        0.76
+      ],
+      "name": "aufg8-walmdachgaube",
+      "alt": "Bemaßte Walmdachgaube mit Dachneigung 45 Grad",
+      "unterschrift": "Walmdachgaube (Buch S. 544, Aufgabe 8)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.5,
+        0.78,
+        0.98,
+        0.95
+      ],
+      "name": "aufg9-spitzgaube",
+      "alt": "Bemaßte Spitzgaube mit Dachneigung 45 Grad",
+      "unterschrift": "Spitzgaube (Buch S. 544, Aufgabe 9)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.48,
+        0.115,
+        0.98,
+        0.255
+      ],
+      "name": "aufg10-schleppgaube",
+      "alt": "Bemaßte Schleppdachgaube mit Überstand und Gaubenbreite",
+      "unterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 10)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.48,
+        0.265,
+        0.98,
+        0.415
+      ],
+      "name": "aufg11-schleppgaube",
+      "alt": "Bemaßte Schleppdachgaube mit Dachneigung 45 Grad",
+      "unterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 11)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.48,
+        0.425,
+        0.98,
+        0.565
+      ],
+      "name": "aufg12-schleppgaube",
+      "alt": "Bemaßte Schleppdachgaube für die Schieferplattenaufgabe",
+      "unterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 12)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.36,
+        0.575,
+        0.98,
+        0.755
+      ],
+      "name": "aufg13-satteldachgaube",
+      "alt": "Bemaßte Satteldachgaube mit Fenster 135/95",
+      "unterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 13)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.04,
+        0.775,
+        0.48,
+        0.955
+      ],
+      "name": "aufg14-satteldachgaube",
+      "alt": "Bemaßte Satteldachgaube für die Schieferdeckung auf Schalung",
+      "unterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 14)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.46,
+        0.775,
+        0.98,
+        0.955
+      ],
+      "name": "aufg15-satteldachgaube",
+      "alt": "Bemaßte Satteldachgaube mit zwei Fenstern 90/90",
+      "unterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 15)"
+    }
+  ]
+}
