@@ -1,0 +1,235 @@
+{
+  "lf": "lf17",
+  "pdf": "/Users/salimsakkali/Downloads/LF17.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 557+i (Seite 1 = Buch S. 558 ... Seite 6 = Buch S. 563)",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.6,
+        0.16,
+        0.97,
+        0.372
+      ],
+      "name": "projekt-iso",
+      "alt": "Isometrie eines L-foermigen Wohngebaeudes mit Flachdach, bemasst mit 8,40 m, 5,60 m, 7,00 m, 5,60 m und 8,25 m Hoehe",
+      "unterschrift": "Projektaufgabe Flachdachsanierung (Buch S. 558)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.6,
+        0.43,
+        0.97,
+        0.64
+      ],
+      "name": "flachdachaufbau-vorhanden",
+      "alt": "Schichtenschnitt des vorhandenen Flachdachaufbaus mit Stahlbetondecke, Dampfsperre, PUR-Hartschaum, Dichtungsbahn und Kiesschuettung",
+      "unterschrift": "Vorhandener Flachdachaufbau (Buch S. 558)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.15,
+        0.66,
+        0.84,
+        0.925
+      ],
+      "name": "dachrandabschluss",
+      "alt": "Detailzeichnung Dachrandabschluss mit Blechverkleidung, Blechhalterung, Randbohle 6 x 12 cm und Stahlbetondecke 18 cm",
+      "unterschrift": "Dachrandabschluss (Buch S. 558)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.085,
+        0.548,
+        0.392,
+        0.722
+      ],
+      "name": "inspektion-bestandteile",
+      "alt": "Isometrie eines geneigten Daches mit nummerierten Bestandteilen der Dachinspektion",
+      "unterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.395,
+        0.23,
+        0.825,
+        0.585
+      ],
+      "name": "checkliste-inspektion-1",
+      "alt": "Checkliste Inspektion, Teil 1: Dachdeckung, Dachentwaesserung, An- und Abschluesse, Dacheinbauteile",
+      "unterschrift": "Checkliste Inspektion, Punkte 1 bis 4 (Buch S. 559)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.395,
+        0.565,
+        0.825,
+        0.92
+      ],
+      "name": "checkliste-inspektion-2",
+      "alt": "Checkliste Inspektion, Teil 2: Anlagen zur Nutzung von Solarenergie, Sicherheitseinrichtungen, Verkehrssicherheit",
+      "unterschrift": "Checkliste Inspektion, Punkte 4.2 bis 6 (Buch S. 559)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.555,
+        0.135,
+        0.935,
+        0.355
+      ],
+      "name": "plattenhalter",
+      "alt": "Foto eines Plattenhalters zur Reparatur einzelner Schieferplatten",
+      "unterschrift": "Plattenhalter zur Schieferreparatur (Buch S. 560)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.555,
+        0.355,
+        0.935,
+        0.475
+      ],
+      "name": "stehendes-wasser",
+      "alt": "Foto einer grossen Wasserflaeche auf einem Flachdach ohne Gefaelle",
+      "unterschrift": "Stehendes Wasser auf einem Null-Grad-Dach (Buch S. 560)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.545,
+        0.545,
+        0.935,
+        0.775
+      ],
+      "name": "sanierungsarbeiten-flachdach",
+      "alt": "Foto von zwei Dachdeckern bei Sanierungsarbeiten auf einem Flachdach",
+      "unterschrift": "Sanierungsarbeiten am Flachdach (Buch S. 560)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.49,
+        0.12,
+        0.88,
+        0.315
+      ],
+      "name": "verklebung-daemmung",
+      "alt": "Foto eines Dachdeckers beim Auftragen von Klebstoff zur Verklebung der Dachdaemmung",
+      "unterschrift": "Verklebung der Dachdaemmung (Buch S. 561)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.485,
+        0.322,
+        0.885,
+        0.503
+      ],
+      "name": "flachdachsanierung-schichten",
+      "alt": "Schichtenschnitt einer Flachdachsanierung mit vorhandenem Dachaufbau, Ausgleichsschicht, Gefaelledaemmplatten und neuer Abdichtung",
+      "unterschrift": "Flachdachsanierung mit Erhalt des alten Dachaufbaus (Buch S. 561)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.495,
+        0.625,
+        0.905,
+        0.92
+      ],
+      "name": "sanierungsplan-1",
+      "alt": "Sanierungsplan Beispiel 1: Stallgebaeude 18 x 20 m, Alter 22 Jahre, Schaeden und Sanierungsziel",
+      "unterschrift": "Sanierungsplan Beispiel 1, Stallgebaeude (Buch S. 561)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.1,
+        0.13,
+        0.515,
+        0.35
+      ],
+      "name": "arbeiten-beispiel-1",
+      "alt": "Liste der erforderlichen Arbeiten fuer Sanierungsbeispiel 1, von der Demontage der Blitzschutzeinrichtung bis zur Montage der Blitzschutzanlage",
+      "unterschrift": "Erforderliche Arbeiten, Sanierungsbeispiel 1 (Buch S. 562)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.495,
+        0.125,
+        0.955,
+        0.44
+      ],
+      "name": "arbeiten-beispiel-2",
+      "alt": "Sanierungsziel und Arbeitsliste fuer Beispiel 2 mit zweilagigen Gefaelledaemmplatten von mindestens 16 cm Dicke",
+      "unterschrift": "Sanierung und Arbeiten, Beispiel 2 (Buch S. 562)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.072,
+        0.65,
+        0.495,
+        0.94
+      ],
+      "name": "sanierungsplan-2",
+      "alt": "Sanierungsplan Beispiel 2: Turnhalle 25 x 50 m, zweilagige Abdichtung, 4 cm Waermedaemmung, 5 cm Kies, Alter 26 Jahre",
+      "unterschrift": "Sanierungsplan Beispiel 2, Turnhalle (Buch S. 562)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.065,
+        0.125,
+        0.495,
+        0.505
+      ],
+      "name": "sanierungsplan-3",
+      "alt": "Sanierungsplan Beispiel 3: gleiche Turnhalle, Waermeschutz durch waermedaemmenden Gruendachaufbau, mit Arbeitsliste",
+      "unterschrift": "Sanierungsplan Beispiel 3, Gruendachaufbau (Buch S. 563)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.5,
+        0.225,
+        0.89,
+        0.45
+      ],
+      "name": "geg-tabelle",
+      "alt": "Tabelle der GEG-Hoechstwerte fuer Waermedurchgangskoeffizienten: Aussenwaende 0,24, Fenster 1,30, Dachflaechenfenster 1,40, Daecher 0,24, Flachdaecher 0,20",
+      "unterschrift": "GEG-Hoechstwerte der Waermedurchgangskoeffizienten (Buch S. 563)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.062,
+        0.628,
+        0.495,
+        0.95
+      ],
+      "name": "zusammenfassung",
+      "alt": "Zusammenfassung des Lernfelds 17 zu Inspektion, Wartung, Pflege, Teilsanierung und Komplettsanierung",
+      "unterschrift": "Zusammenfassung Lernfeld 17 (Buch S. 563)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.495,
+        0.64,
+        0.9,
+        0.935
+      ],
+      "name": "aufgaben-buch",
+      "alt": "Die zehn Buchaufgaben zu Lernfeld 17",
+      "unterschrift": "Aufgaben zu Lernfeld 17 (Buch S. 563)"
+    }
+  ]
+}
