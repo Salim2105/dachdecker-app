@@ -1,0 +1,667 @@
+{
+  "lf": "lf14",
+  "pdf": "/Users/salimsakkali/Downloads/LF14.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 510+i (Seiten 511-532). box = Bruchteile [x0,y0,x1,y1].",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.4,
+        0.14,
+        0.98,
+        0.52
+      ],
+      "name": "projekt-draufsicht",
+      "alt": "Draufsicht des Projekt-Flachdachs mit Dachabläufen und begehbarem Bereich",
+      "unterschrift": "Draufsicht Flachdach der Projektaufgabe (Buch S. 511)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.05,
+        0.55,
+        0.98,
+        0.92
+      ],
+      "name": "projekt-schnitt",
+      "alt": "Bemaßter Schnitt A-A durch das Projekt-Flachdach",
+      "unterschrift": "Schnitt A-A der Projektaufgabe (Buch S. 511)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.28,
+        0.98,
+        0.5
+      ],
+      "name": "wandanschluss-bitumen",
+      "alt": "Wandanschluss mit Bitumenbahnen und Klemmschiene",
+      "unterschrift": "Wandanschluss mit Bitumenbahnen (Buch S. 512)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.5,
+        0.98,
+        0.71
+      ],
+      "name": "wandanschluss-schema",
+      "alt": "Schematische Darstellung eines Wandanschlusses",
+      "unterschrift": "Wandanschluss (schematische Darstellung) (Buch S. 512)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.52,
+        0.72,
+        0.98,
+        0.94
+      ],
+      "name": "wandanschluss-kunststoff",
+      "alt": "Wandanschluss mit Kunststoffbahnen und abgekantetem Verbundblech",
+      "unterschrift": "Wandanschluss mit Kunststoffbahnen (Buch S. 512)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.05,
+        0.28,
+        0.5,
+        0.52
+      ],
+      "name": "terrassentuer-kunststoff",
+      "alt": "Anschluss einer Terrassentür mit Kunststoffdichtungsbahn",
+      "unterschrift": "Anschluss Terrassentür mit Kunststoffdichtungsbahn (Buch S. 513)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.52,
+        0.47,
+        0.98,
+        0.73
+      ],
+      "name": "dachterrassentuer-rinne",
+      "alt": "Anschluss einer Dachterrassentür mit Bitumenbahnen und Kastenrinne",
+      "unterschrift": "Anschluss Dachterrassentür mit Kastenrinne (Buch S. 513)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.52,
+        0.74,
+        0.98,
+        0.94
+      ],
+      "name": "rohrdurchfuehrung-bitumen",
+      "alt": "Rohrdurchführungen mit Bitumenbahnabdichtung und Klebeflansch",
+      "unterschrift": "Rohrdurchführungen mit Bitumenbahnabdichtung (Buch S. 513)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.05,
+        0.4,
+        0.46,
+        0.58
+      ],
+      "name": "lichtkuppel-einfassung",
+      "alt": "Einfassung für ein Lichtkuppelelement",
+      "unterschrift": "Einfassung für Lichtkuppelelement (Buch S. 514)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.45
+      ],
+      "name": "lichtkuppel-anschluss",
+      "alt": "Lichtkuppelanschluss mit Polymerbitumenbahnen und Einfassung des Aufsetzkranzes",
+      "unterschrift": "Lichtkuppelanschluss mit Einfassung des Aufsetzkranzes (Buch S. 514)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.52,
+        0.47,
+        0.98,
+        0.7
+      ],
+      "name": "dachrandabschluss-kunststoff",
+      "alt": "Dachrandabschluss mit Kunststoffbahnen und Abdeckung",
+      "unterschrift": "Dachrandabschluss mit Kunststoffbahnen (Buch S. 514)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.52,
+        0.72,
+        0.98,
+        0.93
+      ],
+      "name": "dachrandabschluss-bitumen",
+      "alt": "Dachrandabschluss mit Bitumenbahnen, Metallabdeckung und Keil",
+      "unterschrift": "Dachrandabschluss mit Bitumenbahnen (Buch S. 514)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.36
+      ],
+      "name": "fugenband-einklebeflansch",
+      "alt": "Fugenband mit Einklebeflansch",
+      "unterschrift": "Fugenband mit Einklebeflansch (Buch S. 515)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.52,
+        0.38,
+        0.98,
+        0.58
+      ],
+      "name": "fugenband-schweissen",
+      "alt": "Eindichten des Fugenbandes im Schweißverfahren",
+      "unterschrift": "Eindichten des Fugenbandes im Schweißverfahren (Buch S. 515)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.52,
+        0.6,
+        0.98,
+        0.93
+      ],
+      "name": "flanschkonstruktion-fuge",
+      "alt": "Flanschkonstruktion zum Abdichten von Fugen mit Los- und Festflansch",
+      "unterschrift": "Flanschkonstruktion zum Abdichten von Fugen (Buch S. 515)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.38
+      ],
+      "name": "rohrdurchfuehrung-verklebt",
+      "alt": "Verklebte Rohrdurchführung mit vorgefertigter Manschette",
+      "unterschrift": "Rohrdurchführung verklebt (Buch S. 516)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.52,
+        0.4,
+        0.98,
+        0.72
+      ],
+      "name": "dachgully-aufstock",
+      "alt": "Anschluss mit Polymerbitumenbahnen am Dachgully mit Aufstockelement",
+      "unterschrift": "Dachgully mit Aufstockelement (Buch S. 516)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.52,
+        0.75,
+        0.98,
+        0.95
+      ],
+      "name": "mindestflansch-tabelle",
+      "alt": "Tabelle Mindestflanschbreite bei Fest- und Losflansch",
+      "unterschrift": "Mindestflanschbreite (Buch S. 516)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.05,
+        0.47,
+        0.5,
+        0.63
+      ],
+      "name": "abflussleistung-dn-tabelle",
+      "alt": "Tabelle Abflussleistung und Stauhöhe von Abläufen je Nennmaß",
+      "unterschrift": "Abflussleistung und Stauhöhe von Abläufen (Buch S. 517)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.52,
+        0.47,
+        0.98,
+        0.92
+      ],
+      "name": "notueberlauf-tabelle",
+      "alt": "Tabelle Abflussleistung rechteckiger Notüberläufe",
+      "unterschrift": "Abflussleistung rechteckiger Notüberläufe (Buch S. 517)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.05,
+        0.63,
+        0.5,
+        0.92
+      ],
+      "name": "anordnung-notablaeufe",
+      "alt": "Anordnung von Notabläufen mit Druckhöhe und Normalabfluss",
+      "unterschrift": "Anordnung von Notabläufen (Buch S. 517)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.05,
+        0.13,
+        0.46,
+        0.27
+      ],
+      "name": "gefaelle-verhaeltniszahl",
+      "alt": "Gefälledreieck mit Höhe, Länge und Verhältniszahl 1:n",
+      "unterschrift": "Verhältniszahl beim Gefälle (Buch S. 518)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.05,
+        0.28,
+        0.5,
+        0.53
+      ],
+      "name": "gefaelle-formeln",
+      "alt": "Formeln für Prozentsatz, Höhe und Länge beim Gefälle",
+      "unterschrift": "Gefälle-Formeln (Buch S. 518)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.44
+      ],
+      "name": "gefaelle-beispiele",
+      "alt": "Vier Rechenbeispiele zum Gefälle",
+      "unterschrift": "Rechenbeispiele Gefälle (Buch S. 518)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.52,
+        0.55,
+        0.98,
+        0.93
+      ],
+      "name": "dachgully-brandschutz",
+      "alt": "Dachgully mit Brandschutz und nummerierten Schichten",
+      "unterschrift": "Dachgully mit Brandschutz (Buch S. 518)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.5,
+        0.615,
+        0.87,
+        0.735
+      ],
+      "name": "aufg-flachdach-gefaelle",
+      "alt": "Flachdach mit Kehllinien für die Gefälleberechnung",
+      "unterschrift": "Flachdach zur Gefälleberechnung (Buch S. 519, Aufgabe 10)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.5,
+        0.8,
+        0.99,
+        0.94
+      ],
+      "name": "aufg-entwaesserung",
+      "alt": "Zwei Flachdächer für die Entwässerungsberechnung",
+      "unterschrift": "Flachdächer zur Entwässerungsberechnung (Buch S. 519, Aufgabe 11)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.52,
+        0.28,
+        0.98,
+        0.52
+      ],
+      "name": "wasserarten-gebaeude",
+      "alt": "Wasserarten und Abdichtungen am Gebäude",
+      "unterschrift": "Wasserarten und Abdichtungen am Gebäude (Buch S. 521)"
+    },
+    {
+      "seite": 11,
+      "box": [
+        0.05,
+        0.55,
+        0.98,
+        0.95
+      ],
+      "name": "wasserarten-tabelle",
+      "alt": "Tabelle der Wasserarten und Wasserbeanspruchungen nach DIN",
+      "unterschrift": "Wasserarten und Wasserbeanspruchung (Buch S. 521)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.52,
+        0.14,
+        0.98,
+        0.3
+      ],
+      "name": "intensive-dachbegruenung",
+      "alt": "Intensive Dachbegrünung",
+      "unterschrift": "Intensive Dachbegrünung (Buch S. 522)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.52,
+        0.3,
+        0.98,
+        0.46
+      ],
+      "name": "extensive-dachbegruenung",
+      "alt": "Extensive Dachbegrünung",
+      "unterschrift": "Extensive Dachbegrünung (Buch S. 522)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.52,
+        0.48,
+        0.98,
+        0.7
+      ],
+      "name": "schichtaufbau-begruent",
+      "alt": "Schichtaufbau bei begrünten Flachdächern",
+      "unterschrift": "Schichtaufbau bei begrünten Flachdächern (Buch S. 522)"
+    },
+    {
+      "seite": 12,
+      "box": [
+        0.52,
+        0.72,
+        0.98,
+        0.93
+      ],
+      "name": "wurzelschutzbahn-aufbau",
+      "alt": "Aufbau einer Wurzelschutzbahn mit Bitumenlagen und Kupfereinlage",
+      "unterschrift": "Aufbau einer Wurzelschutzbahn (Buch S. 522)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.05,
+        0.4,
+        0.66,
+        0.72
+      ],
+      "name": "dachbegruenung-schichten",
+      "alt": "Dachbegrünungsaufbau in Einschicht- und Mehrschichtbauweise mit nummerierten Schichten",
+      "unterschrift": "Dachbegrünungsaufbau (Buch S. 523)"
+    },
+    {
+      "seite": 13,
+      "box": [
+        0.52,
+        0.72,
+        0.98,
+        0.92
+      ],
+      "name": "dachrandabschluss-extensiv",
+      "alt": "Dachrandabschluss mit Polymerbitumenbahnen bei Extensivbegrünung mit Kiesstreifen",
+      "unterschrift": "Dachrandabschluss Extensivbegrünung (Buch S. 523)"
+    },
+    {
+      "seite": 14,
+      "box": [
+        0.52,
+        0.14,
+        0.98,
+        0.38
+      ],
+      "name": "extensivbegruenung-aufbau",
+      "alt": "Beispiel für eine extensive Dachbegrünung mit nummerierten Schichten",
+      "unterschrift": "Beispiel extensive Dachbegrünung (Buch S. 524)"
+    },
+    {
+      "seite": 15,
+      "box": [
+        0.52,
+        0.14,
+        0.98,
+        0.34
+      ],
+      "name": "genutzte-dachterrasse",
+      "alt": "Genutzte Dachfläche als Dachterrasse mit Plattenbelag",
+      "unterschrift": "Genutzte Dachfläche (Dachterrasse) (Buch S. 525)"
+    },
+    {
+      "seite": 15,
+      "box": [
+        0.05,
+        0.37,
+        0.98,
+        0.95
+      ],
+      "name": "abdichtungsarten-tabelle",
+      "alt": "Auswahltabelle möglicher Abdichtungen gegen nichtdrückendes Niederschlagswasser",
+      "unterschrift": "Auswahl möglicher Abdichtungen (Buch S. 525)"
+    },
+    {
+      "seite": 16,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.42
+      ],
+      "name": "flansch-terrasse-parkdeck",
+      "alt": "Flanschkonstruktion mit Polymerbitumenbahnen auf Terrassen und Parkdecks",
+      "unterschrift": "Flanschkonstruktion auf Terrassen und Parkdecks (Buch S. 526)"
+    },
+    {
+      "seite": 16,
+      "box": [
+        0.52,
+        0.44,
+        0.98,
+        0.86
+      ],
+      "name": "parkdachaufbau-gussasphalt",
+      "alt": "Parkdachaufbau mit Gussasphaltverschleißschicht",
+      "unterschrift": "Parkdachaufbau mit Gussasphaltverschleißschicht (Buch S. 526)"
+    },
+    {
+      "seite": 16,
+      "box": [
+        0.05,
+        0.47,
+        0.5,
+        0.62
+      ],
+      "name": "einwirkungsstufe-tabelle",
+      "alt": "Tabelle Zuordnung genutzter Dachflächen zu den Einwirkungsklassen",
+      "unterschrift": "Einwirkungsklassen genutzter Dachflächen (Buch S. 526)"
+    },
+    {
+      "seite": 17,
+      "box": [
+        0.52,
+        0.63,
+        0.85,
+        0.82
+      ],
+      "name": "aufg-begruent-trapez",
+      "alt": "Bemaßtes trapezförmiges Flachdach für die Ausschreibungsaufgabe",
+      "unterschrift": "Flachdach für die Ausschreibung (Buch S. 527, Aufgabe 4)"
+    },
+    {
+      "seite": 18,
+      "box": [
+        0.52,
+        0.14,
+        0.98,
+        0.3
+      ],
+      "name": "sockel-w4e",
+      "alt": "Abdichtung im Sockelbereich nach W4-E",
+      "unterschrift": "Abdichtung im Sockelbereich (W4-E nach DIN 18533) (Buch S. 528)"
+    },
+    {
+      "seite": 18,
+      "box": [
+        0.52,
+        0.52,
+        0.98,
+        0.68
+      ],
+      "name": "bodenfeuchte-w1e",
+      "alt": "Abdichtung gegen Bodenfeuchte und nichtdrückendes Wasser W1-E",
+      "unterschrift": "Abdichtung gegen Bodenfeuchte (W1-E nach DIN 18533) (Buch S. 528)"
+    },
+    {
+      "seite": 18,
+      "box": [
+        0.52,
+        0.72,
+        0.98,
+        0.94
+      ],
+      "name": "unterkellertes-gebaeude",
+      "alt": "Abdichtung eines unterkellerten Gebäudes RN1-E",
+      "unterschrift": "Abdichtung unterkellertes Gebäude (RN1-E) (Buch S. 528)"
+    },
+    {
+      "seite": 19,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.42
+      ],
+      "name": "bodenplatte-w1e",
+      "alt": "Abdichtungsaufbau bei erdberührten Bodenplatten W1-E mit möglichen Schichten",
+      "unterschrift": "Abdichtungsaufbau bei erdberührten Bodenplatten (W1-E) (Buch S. 529)"
+    },
+    {
+      "seite": 19,
+      "box": [
+        0.52,
+        0.44,
+        0.98,
+        0.62
+      ],
+      "name": "kapillarbrechend-rn1e",
+      "alt": "Aufbau mit kapillarbrechender Schicht RN1-E",
+      "unterschrift": "Aufbau mit kapillarbrechender Schicht (RN1-E) (Buch S. 529)"
+    },
+    {
+      "seite": 20,
+      "box": [
+        0.52,
+        0.14,
+        0.98,
+        0.32
+      ],
+      "name": "aufstauendes-sickerwasser",
+      "alt": "Abdichtung gegen aufstauendes Sickerwasser",
+      "unterschrift": "Abdichtung gegen aufstauendes Sickerwasser (Buch S. 530)"
+    },
+    {
+      "seite": 20,
+      "box": [
+        0.52,
+        0.32,
+        0.98,
+        0.5
+      ],
+      "name": "weisse-wanne",
+      "alt": "Abdichtung durch weiße Wanne, auch gegen drückendes Wasser von außen",
+      "unterschrift": "Abdichtung durch weiße Wanne (Buch S. 530)"
+    },
+    {
+      "seite": 20,
+      "box": [
+        0.05,
+        0.52,
+        0.98,
+        0.95
+      ],
+      "name": "sickerwasser-tabelle",
+      "alt": "Auswahltabelle möglicher Abdichtungen gegen Sickerwasser",
+      "unterschrift": "Auswahl möglicher Abdichtungen gegen Sickerwasser (Buch S. 530)"
+    },
+    {
+      "seite": 21,
+      "box": [
+        0.52,
+        0.13,
+        0.98,
+        0.44
+      ],
+      "name": "schwarze-wanne",
+      "alt": "Abdichtung gegen drückendes Wasser als schwarze Wanne",
+      "unterschrift": "Abdichtung gegen drückendes Wasser (schwarze Wanne) (Buch S. 531)"
+    },
+    {
+      "seite": 21,
+      "box": [
+        0.52,
+        0.47,
+        0.98,
+        0.72
+      ],
+      "name": "mindestlagen-tabelle",
+      "alt": "Tabelle Mindestanzahl der Lagen bei Abdichtungen gegen drückendes Wasser",
+      "unterschrift": "Mindestanzahl der Lagen bei Abdichtungen (W2.2-E) (Buch S. 531)"
+    },
+    {
+      "seite": 22,
+      "box": [
+        0.52,
+        0.34,
+        0.86,
+        0.52
+      ],
+      "name": "aufg-grundriss-materialbedarf",
+      "alt": "Bemaßter Grundriss für die Materialbedarfsaufgabe",
+      "unterschrift": "Grundriss für die Materialbedarfsaufgabe (Buch S. 532, Aufgabe 6)"
+    },
+    {
+      "seite": 22,
+      "box": [
+        0.05,
+        0.55,
+        0.5,
+        0.95
+      ],
+      "name": "aufg-kellerwand",
+      "alt": "Schnitt Kellerwand und Fußboden für die Zeichenaufgabe",
+      "unterschrift": "Kellerwand und Fußbodenaufbau (Buch S. 532, Aufgabe 7)"
+    },
+    {
+      "seite": 22,
+      "box": [
+        0.52,
+        0.55,
+        0.98,
+        0.95
+      ],
+      "name": "aufg-sockel-gelaende",
+      "alt": "Schnitt Gebäudesockel mit angrenzendem Gelände",
+      "unterschrift": "Sockel des Reihenhauses (Buch S. 532, Aufgabe 8)"
+    }
+  ]
+}
