@@ -1,0 +1,463 @@
+{
+  "lf": "anhang3",
+  "pdf": "/Users/salimsakkali/Downloads/ANHANG3.pdf",
+  "_hinweis": "PDF-Seite i = Buchseite 611+i (Seite 1 = Buch S. 612 ... Seite 9 = Buch S. 620)",
+  "figuren": [
+    {
+      "seite": 1,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.305
+      ],
+      "name": "metalle-uebersicht",
+      "alt": "Baumdiagramm der Metalle mit Eisenmetallen (Gusseisen, Stahl) und Nichteisenmetallen (Leichtmetalle, Schwermetalle)",
+      "unterschrift": "Uebersicht der Metalle (Buch S. 612)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.552,
+        0.312,
+        0.963,
+        0.505
+      ],
+      "name": "dachformen-metall",
+      "alt": "Foto eines Daches mit vielfaeltigen Dachformen aus Metall",
+      "unterschrift": "Der Werkstoff ermoeglicht vielfaeltige Dachformen (Buch S. 612)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.105,
+        0.512,
+        0.963,
+        0.678
+      ],
+      "name": "metalltabelle",
+      "alt": "Tabelle der Metalle mit Dichte, Temperaturdehnzahl, Schmelzpunkt, Potenzial und Coilmassen fuer Edelstahl, Aluminium, Zink, Kupfer und Blei",
+      "unterschrift": "Eigenschaften der Metalle im Ueberblick (Buch S. 612)"
+    },
+    {
+      "seite": 1,
+      "box": [
+        0.552,
+        0.688,
+        0.963,
+        0.945
+      ],
+      "name": "gussrohre",
+      "alt": "Zeichnung von Gussrohren fuer die Installation mit Muffenrohren und muffenlosen Rohren",
+      "unterschrift": "Gussrohre fuer die Installation (Buch S. 612)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.552,
+        0.125,
+        0.963,
+        0.278
+      ],
+      "name": "legierungszusaetze",
+      "alt": "Grafik der Legierungszusaetze Nickel, Chrom, Mangan, Wolfram und Silicium und ihrer Wirkung auf die Eigenschaften des Stahls",
+      "unterschrift": "Legierungszusaetze beeinflussen die Eigenschaften des Stahls (Buch S. 613)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.552,
+        0.285,
+        0.963,
+        0.482
+      ],
+      "name": "edelstahlschindeln",
+      "alt": "Foto eines Gebaeudes mit Edelstahlschindeln",
+      "unterschrift": "Gebaeude mit Edelstahlschindeln (Buch S. 613)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.552,
+        0.488,
+        0.963,
+        0.688
+      ],
+      "name": "edelstahlband",
+      "alt": "Foto eines Edelstahlbandes als Coil",
+      "unterschrift": "Edelstahlband (Coil) (Buch S. 613)"
+    },
+    {
+      "seite": 2,
+      "box": [
+        0.552,
+        0.695,
+        0.963,
+        0.935
+      ],
+      "name": "gebogene-dachform",
+      "alt": "Foto einer gebogenen Dachform aus Edelstahl mit Zubehoerteilen",
+      "unterschrift": "Gebogene Dachform mit Zubehoerteilen (Buch S. 613)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.302
+      ],
+      "name": "eloxalschicht",
+      "alt": "Schema der anodischen Oxidation, bei der sich die Eloxalschicht mit dem Aluminium verbindet",
+      "unterschrift": "Eloxalschicht verbindet sich mit Aluminium (Buch S. 614)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.552,
+        0.308,
+        0.963,
+        0.512
+      ],
+      "name": "alu-farben",
+      "alt": "Foto verschiedener Farben und Oberflaechen von Aluminiumblechen",
+      "unterschrift": "Verschiedene Farben und Oberflaechen von Aluminiumblechen (Buch S. 614)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.552,
+        0.518,
+        0.963,
+        0.755
+      ],
+      "name": "zink-schutzschicht",
+      "alt": "Grafik der Schutzschichtbildung auf Zinkdeckungen an feuchter Luft mit der Reaktionsgleichung zu Zinkcarbonat",
+      "unterschrift": "An der Luft bildet sich auf Zinkdeckungen eine Schutzschicht (Buch S. 614)"
+    },
+    {
+      "seite": 3,
+      "box": [
+        0.552,
+        0.762,
+        0.963,
+        0.945
+      ],
+      "name": "titanzink-dach",
+      "alt": "Foto einer Dach- und Wandeindeckung aus Titanzink",
+      "unterschrift": "Dach- und Wandeindeckung aus Titanzink (Buch S. 614)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.365
+      ],
+      "name": "kupfer-patina",
+      "alt": "Grafik der Patinabildung auf Kupfer an feuchter Luft mit der Reaktionsgleichung, dargestellt an einer barocken Turmhaube",
+      "unterschrift": "An feuchter Luft bildet sich auf Kupfer eine Schutzschicht (Buch S. 615)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.552,
+        0.372,
+        0.963,
+        0.572
+      ],
+      "name": "kupferdach",
+      "alt": "Foto einer Kupferkuppel mit gruener Patina",
+      "unterschrift": "Kupferdaecher haben eine sehr lange Lebenszeit (Buch S. 615)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.552,
+        0.578,
+        0.963,
+        0.722
+      ],
+      "name": "bleischuerze",
+      "alt": "Foto einer Bleischuerze beim Dachfenstereinbau",
+      "unterschrift": "Bleischuerzen beim Dachfenstereinbau (Buch S. 615)"
+    },
+    {
+      "seite": 4,
+      "box": [
+        0.552,
+        0.728,
+        0.963,
+        0.945
+      ],
+      "name": "bleideckung-turm",
+      "alt": "Foto der bleigedeckten Tuerme und Mitteldaecher der Stiftskirche in Bad Gandersheim",
+      "unterschrift": "Tuerme und Mitteldach bleigedeckt (Buch S. 615)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.312
+      ],
+      "name": "korrosionsschaden",
+      "alt": "Foto von Korrosionsschaeden an einer Metallabdeckung",
+      "unterschrift": "Schaeden an einer Metallabdeckung (Buch S. 616)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.552,
+        0.322,
+        0.963,
+        0.558
+      ],
+      "name": "chemische-einfluesse",
+      "alt": "Grafik der chemischen Einfluesse auf einen Stahltraeger: Sauerstoff, Niederschlaege, Abgase, Laugen, Saeuren, Salze und Bodenfeuchte",
+      "unterschrift": "Verschiedene chemische Einfluesse (Buch S. 616)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.552,
+        0.565,
+        0.963,
+        0.778
+      ],
+      "name": "spannungsreihe",
+      "alt": "Elektrochemische Spannungsreihe von Calcium bis Gold mit der Kontaktspannung Aluminium zu Kupfer von 2,05 Volt",
+      "unterschrift": "Elektrochemische Spannungsreihe (Buch S. 616)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.552,
+        0.785,
+        0.963,
+        0.945
+      ],
+      "name": "kontaktkorrosion",
+      "alt": "Schnittzeichnung der Verbindung verschiedener Metalle mit Kupferniet, Kupferrohr und verzinkter Rohrschelle und der dort entstehenden Korrosion",
+      "unterschrift": "Verbindung verschiedener Metalle (Buch S. 616)"
+    },
+    {
+      "seite": 5,
+      "box": [
+        0.105,
+        0.865,
+        0.508,
+        0.945
+      ],
+      "name": "kupferwerkstoff-hinweis",
+      "alt": "Hinweiskasten, dass abfliessendes Wasser die Korrosion von Aluminium, Zink und verzinktem Stahl foerdert und diese Metalle nicht unterhalb von Kupfer-Werkstoffen verwendet werden duerfen",
+      "unterschrift": "Kein Aluminium, Zink oder verzinkter Stahl unterhalb von Kupfer (Buch S. 616)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.278
+      ],
+      "name": "bitumenkorrosion",
+      "alt": "Foto von Schaeden am Metalldach durch Bitumenkorrosion",
+      "unterschrift": "Schaeden am Metalldach durch Bitumenkorrosion (Buch S. 617)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.552,
+        0.285,
+        0.963,
+        0.535
+      ],
+      "name": "werkstoffverbindungen",
+      "alt": "Tabelle zulaessiger und unzulaessiger Werkstoffverbindungen zwischen Aluminium, Blei, Kupfer, Titanzink, nichtrostendem Stahl und verzinktem Stahl",
+      "unterschrift": "Uebersicht Werkstoffverbindungen (Buch S. 617)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.552,
+        0.605,
+        0.963,
+        0.835
+      ],
+      "name": "beschichten-metalldach",
+      "alt": "Foto eines Handwerkers beim Beschichten eines Metalldaches",
+      "unterschrift": "Beschichten eines Metalldaches (Buch S. 617)"
+    },
+    {
+      "seite": 6,
+      "box": [
+        0.105,
+        0.838,
+        0.963,
+        0.952
+      ],
+      "name": "feuerverzinken",
+      "alt": "Schematischer Ablauf beim Stueckverzinken mit Entfetten, Spuelen, Beizen, Fluxen, Trocknen, Verzinken und Abkuehlen",
+      "unterschrift": "Ablauf beim Feuerverzinken (Buch S. 617)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.552,
+        0.122,
+        0.963,
+        0.295
+      ],
+      "name": "arbeiten-metalldach",
+      "alt": "Foto eines Dachdeckers bei Arbeiten am Metalldach",
+      "unterschrift": "Arbeiten am Metalldach (Buch S. 618)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.552,
+        0.302,
+        0.963,
+        0.442
+      ],
+      "name": "schneidenwinkel",
+      "alt": "Zeichnung des Schneidenwinkels beim Scheren mit zu grossem, zu kleinem und richtigem Winkel von 15 Grad",
+      "unterschrift": "Schneidenwinkel beim Scheren (Buch S. 618)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.552,
+        0.448,
+        0.963,
+        0.598
+      ],
+      "name": "boerdeln",
+      "alt": "Foto des Boerdelns eines Dachrinnenbodens",
+      "unterschrift": "Boerdeln des Dachrinnenbodens (Buch S. 618)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.552,
+        0.605,
+        0.963,
+        0.775
+      ],
+      "name": "nietformen",
+      "alt": "Zeichnung der Nietformen Rundniet, Senkniet und Blindniet mit den Bezeichnungen Schaft, Setzkopf und Schliesskopf sowie der Scherbeanspruchung",
+      "unterschrift": "Nietformen und Bezeichnungen (Buch S. 618)"
+    },
+    {
+      "seite": 7,
+      "box": [
+        0.552,
+        0.782,
+        0.963,
+        0.945
+      ],
+      "name": "nietvorgang",
+      "alt": "Zeichnung des Nietvorgangs mit Stauchen durch den Niethammer und Formen des Schliesskopfs mit dem Setzstock",
+      "unterschrift": "Nietvorgang (Buch S. 618)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.552,
+        0.128,
+        0.963,
+        0.278
+      ],
+      "name": "blindniet",
+      "alt": "Zeichnung der Verbindung von Blechen mit Blindniet in drei Schritten: einsetzen, Dorn ziehen, abbrechen an der Sollbruchstelle",
+      "unterschrift": "Verbindung von Blechen mit Blindniet (Buch S. 619)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.552,
+        0.285,
+        0.963,
+        0.402
+      ],
+      "name": "gute-loetung",
+      "alt": "Schnittzeichnung einer guten Loetung mit einem Loetspalt von hoechstens 0,5 mm und mindestens 10 mm Ueberlappung",
+      "unterschrift": "Gute Loetung (Buch S. 619)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.552,
+        0.405,
+        0.963,
+        0.535
+      ],
+      "name": "loetspalt",
+      "alt": "Vergleich von richtigem und falschem Loetspalt: hohe Kapillarwirkung bei 0,05 bis 0,5 mm gegenueber geringer Kapillarwirkung bei zu breitem Spalt",
+      "unterschrift": "Einfluss des Loetspaltes (Buch S. 619)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.505,
+        0.538,
+        0.925,
+        0.738
+      ],
+      "name": "weichloetverfahren",
+      "alt": "Massskizze eines Loetkolbens fuer das Weichloetverfahren mit einer Masse von ueber 350 g, besser 500 g",
+      "unterschrift": "Weichloetverfahren (Buch S. 619)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.552,
+        0.742,
+        0.963,
+        0.935
+      ],
+      "name": "loetkolben",
+      "alt": "Foto einer Montageflasche mit Loetkolben und Hochdruckschlauch",
+      "unterschrift": "Montageflasche und Loetkolben mit Hochdruckschlauch (Buch S. 619)"
+    },
+    {
+      "seite": 8,
+      "box": [
+        0.105,
+        0.822,
+        0.508,
+        0.938
+      ],
+      "name": "metalle-zusammenfassung",
+      "alt": "Zusammenfassung zum Bearbeiten und Verbinden von Metallen mit Saegen, Feilen, Bohren, Schneiden, Kanten, Runden, Boerdeln und Loeten",
+      "unterschrift": "Zusammenfassung Bearbeiten und Loeten (Buch S. 619)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.508,
+        0.125,
+        0.955,
+        0.945
+      ],
+      "name": "werkzeuge-metall",
+      "alt": "Uebersicht der Werkzeuge fuer Metalldeckungen: Schaleisen, Doppelfalzeisen, Falzzangen, Deckzangen, Aufstellzange, Schweifhammer, Holzkeilhammer, Quetschfalteneisen, Boerdeleisen, Durchlaufschere und Lochschere",
+      "unterschrift": "Werkzeuge fuer Metalldeckungen (Buch S. 620)"
+    },
+    {
+      "seite": 9,
+      "box": [
+        0.072,
+        0.232,
+        0.515,
+        0.94
+      ],
+      "name": "aufgaben-buch",
+      "alt": "Die siebzehn Buchaufgaben zum Anhang 3 Metalle",
+      "unterschrift": "Aufgaben zu Anhang 3 (Buch S. 620)"
+    }
+  ]
+}
