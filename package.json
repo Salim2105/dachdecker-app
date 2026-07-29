@@ -13,7 +13,7 @@
     "test:watch": "vitest",
     "app": "npm run build && npm start",
     "postbuild": "node scripts/gen-sw.mjs",
-    "export": "EXPORT=1 next build && EXPORT=1 node scripts/gen-sw.mjs",
+    "export": "node scripts/gen-anzahl.mjs && EXPORT=1 next build && EXPORT=1 node scripts/gen-sw.mjs",
     "desktop:dev": "npm run export && electron .",
     "desktop:build": "npm run export && electron-builder --mac",
     "ios": "npm run build && node scripts/serve-ios.mjs",
