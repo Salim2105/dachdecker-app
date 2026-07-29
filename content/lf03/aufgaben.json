@@ -8,10 +8,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke muss eine tragende Wand aus Mauerwerk haben?",
     "optionen": [
-      "11,5 cm",
       "17,5 cm",
+      "30 cm",
       "24 cm",
-      "30 cm"
+      "11,5 cm"
     ],
     "korrekt": [
       2
@@ -29,13 +29,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke haben nichttragende Wände (Trennwände) aus Mauerwerk?",
     "optionen": [
-      "7,1 cm",
-      "11,5 cm",
       "17,5 cm",
-      "24 cm"
+      "24 cm",
+      "11,5 cm",
+      "7,1 cm"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Nichttragende Wände aus Mauerwerk haben eine Mindestdicke von 11,5 cm. Sie dienen als leichte oder schwere Trennwände zur Abgrenzung von Räumen.",
     "bildDatei": "/buch/lf03/wandarten.webp",
@@ -51,12 +51,12 @@
     "frage": "Welche Mindestdicke muss eine Brandwand haben?",
     "optionen": [
       "17,5 cm",
+      "36,5 cm",
       "24 cm",
-      "30 cm",
-      "36,5 cm"
+      "30 cm"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Brandwände müssen mindestens 24 cm dick sein. Bei Einfamilienhäusern mit Massivdecken dürfen Brandwände auch als zweischalige Wände mit Schalendicken von je 17,5 cm ausgeführt werden."
   },
@@ -102,9 +102,9 @@
     "frage": "Welche Maße (L × B × H in cm) hat ein Stein im Dünnformat (DF)?",
     "optionen": [
       "24 × 11,5 × 5,2",
-      "24 × 11,5 × 7,1",
+      "24 × 17,5 × 11,3",
       "24 × 11,5 × 11,3",
-      "24 × 17,5 × 11,3"
+      "24 × 11,5 × 7,1"
     ],
     "korrekt": [
       0
@@ -122,13 +122,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Maße (L × B × H in cm) hat ein Stein im 2 DF-Format?",
     "optionen": [
-      "24 × 11,5 × 7,1",
       "24 × 11,5 × 11,3",
-      "24 × 17,5 × 11,3",
-      "24 × 24 × 11,3"
+      "24 × 11,5 × 7,1",
+      "24 × 24 × 11,3",
+      "24 × 17,5 × 11,3"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "2 DF = 24 × 11,5 × 11,3 cm. Die Formate werden als Vielfache von 1 DF angegeben: 2 DF, 3 DF (24 × 17,5 × 11,3), 4 DF (24 × 24 × 11,3) usw.",
     "bildDatei": "/buch/lf03/steinformate-tabelle.webp",
@@ -160,9 +160,9 @@
     "konfidenz": "hoch",
     "frage": "Welche der folgenden Steine gehören zu den gebrannten Mauersteinen?",
     "optionen": [
-      "Kalksandsteine und Porenbetonsteine",
-      "Ziegel (Vollziegel, Klinker, Leichtziegel)",
       "Leichtbetonsteine und Hohlblocksteine",
+      "Ziegel (Vollziegel, Klinker, Leichtziegel)",
+      "Kalksandsteine und Porenbetonsteine",
       "Porenbeton-Plansteine"
     ],
     "korrekt": [
@@ -195,13 +195,13 @@
     "konfidenz": "hoch",
     "frage": "Was unterscheidet einen P-Ziegel von einem U-Ziegel?",
     "optionen": [
-      "P-Ziegel sind größer als U-Ziegel",
-      "P-Ziegel sind für geschütztes, U-Ziegel für ungeschütztes Mauerwerk",
+      "P-Ziegel sind günstiger als U-Ziegel",
       "P-Ziegel haben Lochung, U-Ziegel nicht",
-      "P-Ziegel sind günstiger als U-Ziegel"
+      "P-Ziegel sind für geschütztes, U-Ziegel für ungeschütztes Mauerwerk",
+      "P-Ziegel sind größer als U-Ziegel"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Nach DIN EN 771-1 sind P-Ziegel für geschütztes Mauerwerk (z. B. durch Putzschicht) und U-Ziegel für ungeschütztes Mauerwerk bestimmt. Geschütztes Mauerwerk hat keinen Kontakt zum Boden und ist gegen eindringendes Wasser geschützt.",
     "bildDatei": "/buch/lf03/hochlochziegel-typen.webp",
@@ -237,13 +237,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Farbe kennzeichnet die Druckfestigkeitsklasse 12 bei Mauersteinen?",
     "optionen": [
-      "blau",
       "rot",
-      "grün",
-      "gelb"
+      "blau",
+      "gelb",
+      "grün"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Druckfestigkeitsklasse 4 = blau, 6 = rot, 8 und 10 = keine Farbe, 12 = grün, 16 und 20 = gelb, 28 = braun, 36 = violett, 48 und 60 = schwarze Streifen.",
     "bildDatei": "/buch/lf03/druckfestigkeitsklassen.webp",
@@ -326,13 +326,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Druckfestigkeit (Mittelwert in MPa) hat ein Porenbeton-Planstein der Klasse PP4?",
     "optionen": [
-      "2,5",
-      "5,0",
+      "10,0",
       "7,5",
-      "10,0"
+      "2,5",
+      "5,0"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Porenbeton-Druckfestigkeitsklassen: PP2 = 2,5 MPa, PP4 = 5,0 MPa, PP6 = 7,5 MPa, PP8 = 10,0 MPa (jeweils mittlere Mindestdruckfestigkeit)."
   },
@@ -345,13 +345,13 @@
     "konfidenz": "hoch",
     "frage": "In welchem Temperaturbereich werden Mauerziegel gebrannt?",
     "optionen": [
-      "200–400 °C",
       "500–800 °C",
-      "900–1200 °C",
-      "1300–1600 °C"
+      "200–400 °C",
+      "1300–1600 °C",
+      "900–1200 °C"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Mauerziegel werden im Tunnelofen bei 900–1200 °C gebrannt. Dabei ‚verbacken' die Ziegelrohstoffe zu einer wasserbeständigen Verbindung. Höhere Brenntemperaturen erhöhen Dichte und Festigkeit.",
     "bildDatei": "/buch/lf03/ziegelherstellung-schema.webp",
@@ -366,13 +366,13 @@
     "konfidenz": "hoch",
     "frage": "Bis zu welchem Gewicht dürfen Mauersteine als Einhandsteine von Hand vermauert werden?",
     "optionen": [
+      "10 kg",
       "4 kg",
       "6 kg",
-      "10 kg",
       "15 kg"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Einhandsteine dürfen bei einer Greifspanne bis 75 mm nicht mehr als 6 kg und bei einer Greifspanne von 75 bis 115 mm nicht mehr als 7,5 kg wiegen. Zweihandsteine: max. 25 kg. Über 25 kg: nur maschinell."
   },
@@ -424,10 +424,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdruckfestigkeit (in MPa) hat Mörtel der Mörtelgruppe II (Mörtelklasse M 2,5)?",
     "optionen": [
-      "1,0",
+      "10,0",
       "2,5",
       "5,0",
-      "10,0"
+      "1,0"
     ],
     "korrekt": [
       1
@@ -445,13 +445,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Einschränkung gilt für Mörtel der Mörtelgruppe I (Kalkmörtel, M 1)?",
     "optionen": [
-      "Darf nur im Innenbereich verwendet werden",
       "Nur für Wände mindestens 24 cm dick, max. 2 Geschosse, unbelastet",
-      "Nur für Pfeiler und Gewölbe",
-      "Nur mit Eignungsprüfung zugelassen"
+      "Nur mit Eignungsprüfung zugelassen",
+      "Darf nur im Innenbereich verwendet werden",
+      "Nur für Pfeiler und Gewölbe"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Mörtelgruppe I (Kalkmörtel, Mörtelklasse M 1): Nur für Wände mit mindestens 24 cm Dicke, Gebäude mit höchstens zwei Geschossen und nur für unbelastete Wände zugelassen.",
     "bildDatei": "/buch/lf03/moertelgruppen-klassen.webp",
@@ -466,13 +466,13 @@
     "konfidenz": "hoch",
     "frage": "Für welche Bauteile wird Mörtelgruppe III (Zementmörtel, M 10) vorwiegend verwendet?",
     "optionen": [
-      "Alle Wanddicken, allgemeine Verwendung",
+      "Nur für Fußbodenaufbau",
       "Nur nichttragende Innenwände",
-      "Pfeiler, Gewölbe, bewehrtes Mauerwerk",
-      "Nur für Fußbodenaufbau"
+      "Alle Wanddicken, allgemeine Verwendung",
+      "Pfeiler, Gewölbe, bewehrtes Mauerwerk"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Mörtelgruppe III (M 10, Zementmörtel) wird dort verwendet, wo hohe Festigkeiten erforderlich sind: Pfeiler, Gewölbe und bewehrtes Mauerwerk. Mörtelgruppe IIIa (M 20) erfordert zusätzlich eine Eignungsprüfung.",
     "bildDatei": "/buch/lf03/moertelgruppen-mischung.webp",
@@ -499,13 +499,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Sandart hat rundkörnige und abgeschliffene Körner und enthält oft Feinkorn?",
     "optionen": [
-      "Grubensand",
       "Flusssand",
+      "Dünensand",
       "Brechsand",
-      "Dünensand"
+      "Grubensand"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Flusssand und Seesand sind rundkörnig und abgeschliffen, oft mit Feinkorn. Grubensand ist weniger rundkörnig mit teilweise tonigen Bestandteilen. Brechsand hat scharfkantige Körner. Dünensand ist feinkörnig und einkörnig.",
     "bildDatei": "/buch/lf03/moertelgruppen-klassen.webp",
@@ -520,13 +520,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat die Gesteinskörnung (Sand) im Mörtel?",
     "optionen": [
+      "Sie sorgt für die Farbgebung des Mörtels",
       "Sie bindet die anderen Bestandteile chemisch",
       "Sie bildet das feste und dauerhafte Gerüst des Mörtels",
-      "Sie liefert die Druckfestigkeit des Mörtels",
-      "Sie sorgt für die Farbgebung des Mörtels"
+      "Sie liefert die Druckfestigkeit des Mörtels"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Die Gesteinskörnung bildet das feste Gerüst des Mörtels. Das Bindemittel (Kalk und/oder Zement) umhüllt die Sandkörner und verbindet sie. Das Anmachwasser macht den Mörtel plastisch und verarbeitbar."
   },
@@ -729,12 +729,12 @@
     "frage": "Ein Sack Zement (25 kg) entspricht welchem Schüttvolumen?",
     "optionen": [
       "ca. 10 l",
+      "ca. 40 l",
       "ca. 20 l",
-      "ca. 30 l",
-      "ca. 40 l"
+      "ca. 30 l"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Zement: 25 kg ≈ 20 l. Zum Vergleich: Weißkalk/Kalkhydrat 20 kg ≈ 40 l, hydraulischer Kalk 2: 25 kg ≈ 35 l, hydraulischer Kalk 3,5: 25 kg ≈ 30 l, hydraulischer Kalk 5: 25 kg ≈ 25 l.",
     "bildDatei": "/buch/lf03/bindemittel-sack-tabelle.webp",
@@ -829,12 +829,12 @@
     "frage": "Wie hoch ist eine Schicht (Steinhöhe + Lagerfuge) bei Steinen im Normalformat (NF)?",
     "optionen": [
       "6,25 cm",
-      "8,33 cm",
+      "25,0 cm",
       "12,5 cm",
-      "25,0 cm"
+      "8,33 cm"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Schichthöhen: DF = 6,25 cm (4 Schichten je 25 cm), NF = 8,33 cm (3 Schichten je 25 cm), 2 DF = 12,5 cm (2 Schichten je 25 cm), Großformat = 25,0 cm (1 Schicht je 25 cm).",
     "bildDatei": "/buch/lf03/mauer-nennmasse.webp",
@@ -923,13 +923,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Dicke haben Lagerfugen und Stoßfugen im Mauerwerk?",
     "optionen": [
+      "Lagerfuge und Stoßfuge je 2 cm",
       "Lagerfuge bis 0,5 cm, Stoßfuge bis 0,5 cm",
       "Lagerfuge bis 1,25 cm, Stoßfuge ca. 1 cm",
-      "Lagerfuge bis 2 cm, Stoßfuge bis 1,5 cm",
-      "Lagerfuge und Stoßfuge je 2 cm"
+      "Lagerfuge bis 2 cm, Stoßfuge bis 1,5 cm"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Lagerfugen verlaufen waagerecht mit einer Dicke bis 1,25 cm. Stoßfugen verlaufen senkrecht mit einer Dicke von ca. 1 cm. Die Mörtelfugen sind der schwächste Teil im Mauerwerk.",
     "bildDatei": "/buch/lf03/fugen-dicken-lastverteilung.webp",
@@ -944,13 +944,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Werkzeuge gehören zu den grundlegenden Maurerwerkzeugen?",
     "optionen": [
-      "Hammer, Meißel und Bohrer",
       "Maurerkelle, Maurerhammer, Wasserwaage, Richtscheit, Senklot und Maurerschnur",
       "Spachtel, Glättkelle und Schleifmaschine",
-      "Schaufel, Rüttler und Betonmischer"
+      "Schaufel, Rüttler und Betonmischer",
+      "Hammer, Meißel und Bohrer"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Die Maurerkelle dient zum Auftragen von Lagerfugen- und Stoßfugenmörtel. Der Maurerhammer wird zum Schlagen von Teilsteinen benötigt. Wasserwaage, Richtscheit und Senklot dienen zum Einmessen waagerechter und senkrechter Mauerkanten.",
     "bildDatei": "/buch/lf03/fugenausbildung-sichtmauerwerk.webp",
@@ -982,13 +982,13 @@
     "konfidenz": "hoch",
     "frage": "Bei Sichtmauerwerk müssen Stoß- und Lagerfugen eine bestimmte Breite einhalten. Wie breit sind sie etwa?",
     "optionen": [
-      "ca. 0,5 cm",
-      "ca. 1,0 cm",
       "ca. 1,5 cm",
-      "ca. 2,0 cm"
+      "ca. 2,0 cm",
+      "ca. 1,0 cm",
+      "ca. 0,5 cm"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Bei Sichtmauerwerk sind Stoß- und Lagerfugen etwa 1,5 cm breit und werden senkrecht eingelotet. Die Fugen werden mit plastischem Fugenmörtel kräftig eingedrückt.",
     "bildDatei": "/buch/lf03/fugen-dicken-lastverteilung.webp",
@@ -1003,13 +1003,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Teilsteine werden beim Mauern unterschieden?",
     "optionen": [
-      "Achtel- und Sechzehntelsteine",
-      "Halb-, Viertel- und Dreiviertelsteine",
       "Drittel- und Zweidrittelsteine",
-      "Fünftel- und Zehntelsteine"
+      "Fünftel- und Zehntelsteine",
+      "Achtel- und Sechzehntelsteine",
+      "Halb-, Viertel- und Dreiviertelsteine"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Zur Herstellung eines einwandfreien Mauerverbandes werden neben ganzen Steinen auch Halb-, Viertel- und Dreiviertelsteine benötigt. Sie werden mit dem Maurerhammer geschlagen oder mit Steinsägen geschnitten."
   },
@@ -1034,13 +1034,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge werden die Arbeitsgänge beim Vermauern von Einhandsteinen ausgeführt?",
     "optionen": [
-      "Lagerfugenmörtel → Stein versetzen → Stoßfugenmörtel → Ausrichten",
       "Stoßfugenmörtel → Lagerfugenmörtel → Stein versetzen → Abstreichen",
       "Stein greifen → Stoßfugenmörtel → Lagerfugenmörtel auftragen → Stein versetzen und ausrichten → Abstreichen",
+      "Lagerfugenmörtel → Stein versetzen → Stoßfugenmörtel → Ausrichten",
       "Stein versetzen → Lagerfugenmörtel → Stoßfugenmörtel → Klopfen"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Die Handwerksregel lautet: ‚ein Stein, ein Mörtel'. Zuerst Stein greifen, dann Stoßfugenmörtel anbringen, Lagerfugenmörtel auftragen und verteilen, Stein versetzen und gegen den bereits versetzten Stein anschieben, hervorquellenden Mörtel abstreichen."
   },
@@ -1053,13 +1053,13 @@
     "konfidenz": "hoch",
     "frage": "Nach der Verwendung werden Gerüste in zwei Hauptgruppen unterteilt. Welche?",
     "optionen": [
+      "Stahlgerüste und Holzgerüste",
       "Innengerüste und Außengerüste",
-      "Arbeitsgerüste und Schutzgerüste",
       "Standgerüste und Hängegerüste",
-      "Stahlgerüste und Holzgerüste"
+      "Arbeitsgerüste und Schutzgerüste"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Arbeitsgerüste (AG) dienen der Ausführung von Bauarbeiten in Höhen. Zu den Schutzgerüsten zählen das Fanggerüst (FG), das Dachfanggerüst (DG) und das Schutzdach (SD).",
     "bildDatei": "/buch/lf03/geruestbauteile-benennungen.webp",
@@ -1112,13 +1112,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Nutzlast (gleichmäßig verteilt, in kN/m²) ist für Arbeitsgerüste der Lastklasse 3 zugelassen?",
     "optionen": [
-      "0,75",
       "1,50",
-      "2,00",
-      "3,00"
+      "0,75",
+      "3,00",
+      "2,00"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Lastklassen: LK 1 = 0,75 kN/m² (Kontrolltätigkeiten), LK 2 = 1,50 (Malerarbeiten), LK 3 = 2,00 (Putzarbeiten), LK 4 = 3,00, LK 5 = 4,50, LK 6 = 6,00 kN/m² (Mauer-/Betonierarbeiten).",
     "bildDatei": "/buch/lf03/geruest-kupplungsteile.webp",
@@ -1133,10 +1133,10 @@
     "konfidenz": "hoch",
     "frage": "Gerüste der Lastklasse 1 dürfen nur für welche Arbeiten verwendet werden?",
     "optionen": [
-      "Mauer- und Betonierarbeiten",
       "Putzarbeiten",
+      "Malerarbeiten",
       "Kontrolltätigkeiten (höchstens eine Person je Gerüstfeld)",
-      "Malerarbeiten"
+      "Mauer- und Betonierarbeiten"
     ],
     "korrekt": [
       2
@@ -1154,10 +1154,10 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist der Ständerabstand bei Stahlrohr-Kupplungsgerüsten der Lastklassen 3 und 4?",
     "optionen": [
-      "1,20 m",
       "1,50 m",
+      "2,50 m",
       "2,00 m",
-      "2,50 m"
+      "1,20 m"
     ],
     "korrekt": [
       2
@@ -1175,11 +1175,11 @@
     "optionen": [
       "15 m",
       "20 m",
-      "24 m",
-      "30 m"
+      "30 m",
+      "24 m"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Stahlrohr-Kupplungsgerüste in Regelausführung dürfen als Standgerüste (Fassadengerüste) eine Höhe von bis zu 30 m erreichen. Die Stahlrohre haben einen Außendurchmesser von 48,3 mm.",
     "bildDatei": "/buch/lf03/rahmengeruest-aufbau.webp",
@@ -1194,13 +1194,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Belaghöhe über dem Boden müssen Gerüste einen Seitenschutz erhalten?",
     "optionen": [
-      "1 m",
       "2 m",
+      "1 m",
       "3 m",
       "5 m"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Gerüste, deren Gerüstbelag mehr als 2 m über dem Boden liegt, müssen an der Außenseite einen Seitenschutz erhalten. Der Seitenschutz besteht aus Geländerholm, Zwischenholm und Bordbrett (dreiteilig).",
     "bildDatei": "/buch/lf03/fahrgeruest.webp",
@@ -1227,13 +1227,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Verhältnis Breite:Höhe darf ein Fahrgerüst im Freien nicht überschreiten?",
     "optionen": [
-      "1:2",
-      "1:3",
       "1:4",
-      "1:5"
+      "1:5",
+      "1:3",
+      "1:2"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Fahrgerüste: im Freien Breite:Höhe ≤ 1:4, im geschlossenen Raum ≤ 1:3 (bei Benutzung im Gebäudeinneren ist die Kippgefahr geringer). Fahrbare Arbeitsgerüste nach DIN EN 1004 dürfen im Freien bis 8 m, innen bis 12 m Arbeitshöhe eingesetzt werden."
   },
@@ -1262,12 +1262,12 @@
     "frage": "An welchen Bauteilen dürfen Verankerungen für Gerüste angebracht werden?",
     "optionen": [
       "An Fensterrahmen und Fensterbrüstungen",
+      "An Dachrinnen und Fallrohren",
       "An Deckenscheiben, Stützen und Mauerscheiben",
-      "An Blitzableitern und Schneefanggittern",
-      "An Dachrinnen und Fallrohren"
+      "An Blitzableitern und Schneefanggittern"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Verankerungen dürfen nur an standsicheren und festen Bauteilen wie Deckenscheiben, Stützen und Mauerscheiben angebracht werden. Befestigungen an Schneefanggittern, Blitzableitern, Dachrinnen oder nicht tragfähigen Fensterbrüstungen sind nicht zulässig."
   },
@@ -1280,13 +1280,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aussage zu Verhaltensregeln auf Arbeitsgerüsten ist korrekt?",
     "optionen": [
-      "Gerüste dürfen als Turngeräte für Gymnastikübungen benutzt werden",
       "Auf Gerüsten darf gelaufen werden, um Zeit zu sparen",
       "Nur schwindelfreie Personen dürfen Gerüste betreten",
-      "Seilzüge auf Gerüsten dürfen auch zum Transport von Personen genutzt werden"
+      "Seilzüge auf Gerüsten dürfen auch zum Transport von Personen genutzt werden",
+      "Gerüste dürfen als Turngeräte für Gymnastikübungen benutzt werden"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Nur absolut schwindelfreie Personen dürfen Gerüste betreten. Auf Gerüsten muss ruhig und konzentriert gearbeitet werden; Hektik und Spontanaktionen sind zu vermeiden. Gerüste sind keine Turngeräte, Seilzüge nur für Werkstoff-/Werkzeugtransport.",
     "bildDatei": "/buch/lf03/geruestbauteile-benennungen.webp",
@@ -1319,12 +1319,12 @@
     "frage": "Wie wird das Mindest-Überbindemaß (ü) berechnet?",
     "optionen": [
       "ü = 0,2 × Steinlänge",
-      "ü = 0,4 × Steinhöhe, mindestens 4,5 cm",
       "ü = 0,5 × Steinbreite",
-      "ü = 1,0 × Fugendicke"
+      "ü = 1,0 × Fugendicke",
+      "ü = 0,4 × Steinhöhe, mindestens 4,5 cm"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Das Mindest-Überbindemaß beträgt mindestens das 0,4-fache der Steinhöhe und darf nicht kleiner als 4,5 cm sein. Beispiel: Steinhöhe 11,3 cm → ü ≥ 0,4 × 11,3 = 4,5 cm.",
     "bildDatei": "/buch/lf03/uebindemass-verzahnung.webp",
@@ -1376,13 +1376,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Verbandsarten werden beim Mauern unterschieden?",
     "optionen": [
-      "Zangen-, Ketten- und Ringverband",
       "Läufer-, Binder-, Block- und Kreuzverband",
       "Spiral-, Diagonal- und Horizontalverband",
-      "Kreuz-, Stern- und Rundbogenverband"
+      "Kreuz-, Stern- und Rundbogenverband",
+      "Zangen-, Ketten- und Ringverband"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Im Läuferverband liegen die Steine in Längsrichtung. Der Binderverband zeigt die Köpfe. Block- und Kreuzverband wechseln Läufer- und Binderschichten ab. Die Benennung einer Mauer erfolgt nach ihrer Dicke, z. B. 11,5er-Mauer.",
     "bildDatei": "/buch/lf03/verbandsarten.webp",
@@ -1431,13 +1431,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist der Unterschied zwischen Blockverband und Kreuzverband bei 24er-Mauern?",
     "optionen": [
-      "Der Blockverband hat dickere Fugen",
-      "Beim Blockverband ist die Verzahnung regelmäßig ½ am, beim Kreuzverband regelmäßig 1 am und die Abtreppung regelmäßig ½ Stein",
       "Der Kreuzverband hat nur Läuferschichten",
-      "Blockverband ist nur für Innenwände, Kreuzverband für Außenwände"
+      "Der Blockverband hat dickere Fugen",
+      "Blockverband ist nur für Innenwände, Kreuzverband für Außenwände",
+      "Beim Blockverband ist die Verzahnung regelmäßig ½ am, beim Kreuzverband regelmäßig 1 am und die Abtreppung regelmäßig ½ Stein"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Beim Blockverband ist die Verzahnung regelmäßig ½ am und die Abtreppung unregelmäßig. Beim Kreuzverband sind die Läuferschichten gegeneinander um ½ Stein (1 am) versetzt, die Verzahnung ist unregelmäßig, aber die Abtreppung regelmäßig.",
     "bildDatei": "/buch/lf03/24er-mauer-kreuzverband.webp",
@@ -1453,12 +1453,12 @@
     "frage": "Wann wird der umgeworfene Verband angewendet?",
     "optionen": [
       "Bei besonders hohen Mauern",
-      "Wenn die Mauerlänge nicht nur ganze, sondern auch ½ Achtelmeter umfasst",
       "Bei zweischaligem Mauerwerk",
-      "Nur bei Sichtmauerwerk"
+      "Nur bei Sichtmauerwerk",
+      "Wenn die Mauerlänge nicht nur ganze, sondern auch ½ Achtelmeter umfasst"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Der umgeworfene Verband wird angewendet, wenn die Mauerlänge nicht nur ganze Achtelmeter, sondern auch ½ Achtelmeter beträgt. Die Binderschicht endet dann mit 2 Dreiviertelsteinen statt einem ganzen Stein.",
     "bildDatei": "/buch/lf03/mauerecke.webp",
@@ -1485,13 +1485,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist eine Kreuzfuge und warum ist sie problematisch?",
     "optionen": [
-      "Eine besonders breite Fuge für Sichtmauerwerk",
-      "Eine Stoßfuge, die über mehr als eine Schicht durchläuft — Stabilitätsverlust",
       "Eine Lagerfuge, die dicker als 2 cm ist",
-      "Eine Fuge mit Bewehrungseinlage"
+      "Eine Fuge mit Bewehrungseinlage",
+      "Eine Stoßfuge, die über mehr als eine Schicht durchläuft — Stabilitätsverlust",
+      "Eine besonders breite Fuge für Sichtmauerwerk"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Kreuzfugen entstehen, wenn Stoßfugen von übereinanderliegenden Schichten genau übereinander liegen. Das hat eine Herabsetzung der Stabilität zur Folge. Beim Mauerecken-Mauern ist darauf zu achten, dass an der Innenkante keine Kreuzfuge entsteht.",
     "bildDatei": "/buch/lf03/uebindemass-verzahnung.webp",
@@ -1506,13 +1506,13 @@
     "konfidenz": "hoch",
     "frage": "Was bewirkt der Maueranschluss (Mauerstoß)?",
     "optionen": [
-      "Er schließt die Mauer am Dach ab",
-      "Er verbindet eine einbindende Mauer aussteifend mit einer durchgehenden Mauer",
+      "Er wird nur bei Sichtmauerwerk benötigt",
       "Er dient der Abdichtung gegen aufsteigende Feuchtigkeit",
-      "Er wird nur bei Sichtmauerwerk benötigt"
+      "Er verbindet eine einbindende Mauer aussteifend mit einer durchgehenden Mauer",
+      "Er schließt die Mauer am Dach ab"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Der Maueranschluss (Mauerstoß) wirkt aussteifend auf die Wand, in die er einbindet. Die Läuferschicht bindet die durchgehende Wand durch, bei NF- oder 2-DF-Steinen.",
     "bildDatei": "/buch/lf03/mauerecke.webp",
@@ -1527,13 +1527,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter ‚Stoßfugenvermörtelung'?",
     "optionen": [
-      "Nur die Lagerfuge wird vermörtelt",
-      "Der Mörtel wird an der Stirnfläche des Steins angebracht, bevor er versetzt wird",
+      "Die Stoßfugen werden nur bei Außenwänden vermörtelt",
       "Der Mörtel wird erst nach dem Versetzen in die Fuge gepresst",
-      "Die Stoßfugen werden nur bei Außenwänden vermörtelt"
+      "Der Mörtel wird an der Stirnfläche des Steins angebracht, bevor er versetzt wird",
+      "Nur die Lagerfuge wird vermörtelt"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Bei Steinen mit glatten Stoßflächen wird der Mörtel an der Stirnfläche des Steins neben der Mörteltasche angetragen. Bei Steinen ohne Stoßfugenvermörtelung (Zahnziegel mit Nut-Feder-System) werden die Steine ohne Stoßfugenmörtel dicht aneinandergestoßen."
   },
@@ -1732,13 +1732,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Steine werden pro m² Wandfläche für eine 11,5-cm-Wand aus DF-Steinen (24 × 11,5 × 5,2) mit vermörtelten Stoßfugen benötigt?",
     "optionen": [
-      "33",
-      "50",
+      "100",
       "66",
-      "100"
+      "33",
+      "50"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Bedarfstabelle (visuell verifiziert): DF-Steine in 11,5-cm-Wand = 66 Steine/m² und 36 l Mörtel/m². NF-Steine = 50/27, 2-DF-Steine = 33/20.",
     "bildDatei": "/buch/lf03/baustoffbedarf-tabelle.webp",
@@ -1753,13 +1753,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist der Unterschied zwischen einer Isometrie und einer Dimetrie?",
     "optionen": [
+      "Isometrie ist zweidimensional, Dimetrie ist dreidimensional",
       "Isometrie zeigt die Draufsicht, Dimetrie die Ansicht",
       "Bei der Isometrie sind alle Achsen im gleichen Maßstab (1:1:1), bei der Dimetrie werden Breiten verkürzt (1:1:0,5)",
-      "Isometrie ist zweidimensional, Dimetrie ist dreidimensional",
       "Es gibt keinen Unterschied"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Isometrie: a:b:c = 1:1:1, alle Kanten unverkürzt, Winkel 30° zur Waagerechten. Dimetrie: a:b:c = 1:1:0,5 (oder 1:1:0,7), eine Achse verkürzt. Die Dimetrie wirkt oft natürlicher."
   },
@@ -1787,10 +1787,10 @@
     "konfidenz": "hoch",
     "frage": "Wozu dienen Aufmaßskizzen auf der Baustelle?",
     "optionen": [
-      "Zur Berechnung der Statik",
+      "Zur Erstellung von Energieausweisen",
       "Zur Bauaufnahme bestehender Gebäude oder Bauteile, z. B. für Um- und Anbau",
-      "Zur Bestellung von Baustoffen",
-      "Zur Erstellung von Energieausweisen"
+      "Zur Berechnung der Statik",
+      "Zur Bestellung von Baustoffen"
     ],
     "korrekt": [
       1
@@ -1807,12 +1807,12 @@
     "frage": "Für ein Gartenhaus (3 Räume, Pultdach 15°, Raumhöhe 2,50 m): Welche maximale Grundfläche darf das Gartenhäuschen haben?",
     "optionen": [
       "16 m²",
-      "20 m²",
       "24 m²",
+      "20 m²",
       "30 m²"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Die maximale Grundfläche des Gartenhäuschens darf 24 m² nicht überschreiten. Es besteht aus drei Räumen: Aufenthaltsraum (12–16 m²), Waschraum (4–6 m²) und Abstellraum (3 m²).",
     "bildDatei": "/buch/lf03/projektaufgabe-gartenhaus.webp",
@@ -1827,13 +1827,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mauersteinsorten kommen prinzipiell für ein kleines Gartenhaus in Betracht?",
     "optionen": [
-      "Nur Klinker wegen der Wetterbeständigkeit",
       "Mauerziegel, Kalksandsteine und Porenbetonsteine",
+      "Nur Normalbetonsteine wegen der Festigkeit",
       "Nur Porenbeton wegen des geringen Gewichts",
-      "Nur Normalbetonsteine wegen der Festigkeit"
+      "Nur Klinker wegen der Wetterbeständigkeit"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Alle drei Hauptgruppen künstlicher Mauersteine sind geeignet: Mauerziegel (gute Druckfestigkeit, wärmedämmend), Kalksandsteine (guter Schallschutz, günstig) und Porenbetonsteine (beste Wärmedämmung, leicht zu bearbeiten).",
     "bildDatei": "/buch/lf03/projektaufgabe-gartenhaus.webp",
@@ -1848,13 +1848,13 @@
     "konfidenz": "hoch",
     "frage": "Warum muss Mauerwerk im Verband hergestellt werden?",
     "optionen": [
-      "Damit es schöner aussieht",
       "Damit die Überbindung (Verzahnung) die Tragfähigkeit der Wand sichert",
-      "Weil es in der Bauordnung vorgeschrieben ist",
-      "Um Mörtel zu sparen"
+      "Um Mörtel zu sparen",
+      "Damit es schöner aussieht",
+      "Weil es in der Bauordnung vorgeschrieben ist"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Mauerverbände bewirken die Überbindung (Verzahnung) der Steine im Mauerwerk und sichern dadurch die Tragfähigkeit der Wand. Ohne Verband würden Stoßfugen und Längsfugen übereinanderfallen (Fugendeckung), was die Stabilität stark vermindert.",
     "bildDatei": "/buch/lf03/projektaufgabe-gartenhaus.webp",
@@ -1915,12 +1915,12 @@
     "frage": "Welche Maße (L × B × H in cm) hat ein Stein im 5-DF-Format?",
     "optionen": [
       "24 × 24 × 11,3",
-      "30 × 24 × 11,3",
+      "24 × 24 × 23,8",
       "36,5 × 24 × 11,3",
-      "24 × 24 × 23,8"
+      "30 × 24 × 11,3"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "5 DF = 30 × 24 × 11,3 cm. Zum Vergleich: 4 DF = 24 × 24 × 11,3, 6 DF = 36,5 × 24 × 11,3, 8 DF = 24 × 24 × 23,8 cm.",
     "bildDatei": "/buch/lf03/steinformate-tabelle.webp",
@@ -1935,13 +1935,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Kurzzeichen steht für einen Wärmedämmziegel?",
     "optionen": [
+      "WDz",
       "Mz",
       "HLz",
-      "WDz",
       "KMz"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "WDz = Wärmedämmziegel, Lochungsart W, erfüllt erhöhte Wärmedämmanforderungen. Mz = Vollziegel, HLz = Hochlochziegel, KMz = Vollklinker.",
     "bildDatei": "/buch/lf03/druckfestigkeitsklassen.webp",
@@ -1968,10 +1968,10 @@
     "konfidenz": "hoch",
     "frage": "Welcher Mörtel eignet sich für alle Wanddicken und ist bei guter Elastizität und Verarbeitbarkeit hinreichend fest?",
     "optionen": [
-      "Mörtelgruppe I (Kalkmörtel, M 1)",
+      "Mörtelgruppe IIIa (Zementmörtel, M 20)",
       "Mörtelgruppe II (Kalkzementmörtel, M 2,5)",
       "Mörtelgruppe III (Zementmörtel, M 10)",
-      "Mörtelgruppe IIIa (Zementmörtel, M 20)"
+      "Mörtelgruppe I (Kalkmörtel, M 1)"
     ],
     "korrekt": [
       1
@@ -1989,13 +1989,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Schichten DF-Steine (Schichthöhe 6,25 cm) ergeben eine Mauerhöhe von 25 cm?",
     "optionen": [
-      "2",
-      "3",
       "4",
-      "5"
+      "3",
+      "5",
+      "2"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "DF: 4 Schichten je 25 cm (Schichthöhe 6,25 cm). NF: 3 Schichten je 25 cm (8,33 cm). 2 DF: 2 Schichten je 25 cm (12,5 cm). Großformat: 1 Schicht je 25 cm.",
     "bildDatei": "/buch/lf03/massordnung-grundlagen.webp",
@@ -2028,10 +2028,10 @@
     "konfidenz": "hoch",
     "frage": "Was ist der wesentliche Vorteil von Porenbetonsteinen gegenüber Kalksandsteinen?",
     "optionen": [
-      "Höhere Druckfestigkeit",
+      "Geringere Kosten",
       "Besserer Schallschutz",
       "Höhere Wärmedämmfähigkeit und leichte Bearbeitung",
-      "Geringere Kosten"
+      "Höhere Druckfestigkeit"
     ],
     "korrekt": [
       2
@@ -2049,13 +2049,13 @@
     "konfidenz": "hoch",
     "frage": "Für welche Lastklassen dürfen Auslegergerüste in Regelausführung eingesetzt werden?",
     "optionen": [
-      "Lastklassen 1 bis 6",
       "Lastklassen 1 bis 3 (als Arbeitsgerüste und Fanggerüste)",
-      "Nur Lastklasse 1",
-      "Lastklassen 4 bis 6"
+      "Lastklassen 1 bis 6",
+      "Lastklassen 4 bis 6",
+      "Nur Lastklasse 1"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Auslegergerüste dürfen in Regelausführung als Arbeitsgerüste der Lastklassen 1 bis 3 sowie für Fanggerüste eingesetzt werden. Der Gerüstbelag wird durch Kragträger (Ausleger) an der Geschossdecke getragen.",
     "bildDatei": "/buch/lf03/geruestbauteile-benennungen.webp",
@@ -2070,13 +2070,13 @@
     "konfidenz": "hoch",
     "frage": "Was kann zu negativen Folgen führen, wenn sich Stoßfugen in einer Mauer überdecken?",
     "optionen": [
-      "Der Mörtelverbrauch steigt",
       "Es entstehen Fugendeckungen, die die Tragfähigkeit vermindern",
-      "Die Mauer wird zu dick",
-      "Die Schichthöhe ändert sich"
+      "Die Schichthöhe ändert sich",
+      "Der Mörtelverbrauch steigt",
+      "Die Mauer wird zu dick"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Mauerverbände verhindern, dass Stoßfugen und Längsfugen übereinander zu Deckung kommen. Durch den Verband werden die Steine versetzt angeordnet (Überbindung), wodurch die Verzahnung die Tragfähigkeit sichert.",
     "bildDatei": "/buch/lf03/uebindemass-verzahnung.webp",
@@ -2122,13 +2122,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mörtelgruppe hat eine Mindestdruckfestigkeit von 5,0 MPa (Mörtelklasse M 5)?",
     "optionen": [
-      "Mörtelgruppe I",
-      "Mörtelgruppe II",
       "Mörtelgruppe IIa",
+      "Mörtelgruppe II",
+      "Mörtelgruppe I",
       "Mörtelgruppe III"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Mörtelgruppe IIa = M 5 (5,0 MPa). Sie umfasst Kalkzementmörtel. Um Verwechslungen auf Baustellen auszuschließen, dürfen Mörtel der Gruppe II und IIa nicht gleichzeitig verwendet werden.",
     "bildDatei": "/buch/lf03/moertelgruppen-mischung.webp",

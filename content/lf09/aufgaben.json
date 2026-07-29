@@ -9,8 +9,8 @@
     "frage": "Was sind die Hauptbestandteile des Dachschiefers?",
     "optionen": [
       "Quarz, Feldspat, Tonerde und Glimmer",
-      "Kalkstein, Gips und Zement",
       "Bitumen, Sand und Kies",
+      "Kalkstein, Gips und Zement",
       "Eisen, Kupfer und Zink"
     ],
     "korrekt": [
@@ -46,13 +46,13 @@
     "konfidenz": "hoch",
     "frage": "Welche schädlichen Beimengungen können im Dachschiefer enthalten sein?",
     "optionen": [
-      "Schwefelkies, Kalkstein und Kohlenstoff (organische Verbindungen)",
-      "Quarz, Feldspat und Glimmer",
       "Zement und Gips",
-      "Aluminium und Zink"
+      "Aluminium und Zink",
+      "Schwefelkies, Kalkstein und Kohlenstoff (organische Verbindungen)",
+      "Quarz, Feldspat und Glimmer"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Schädliche Bestandteile sind: Schwefelkies (reagiert mit Kalkstein zu Gips und mit Kaliglimmer zu Alaun, beide wasserlöslich), ein zu hoher Kalksteinanteil (reagiert mit der im Regen enthaltenen Kohlensäure) und zu viel Kohlenstoff (macht den Schiefer weich und unbeständig gegen Witterungseinflüsse).",
     "bildDatei": "/buch/lf09/schiefer-eigenschaften.webp",
@@ -89,13 +89,13 @@
     "konfidenz": "hoch",
     "frage": "Was zeigt die Ritzprobe beim Dachschiefer an?",
     "optionen": [
+      "Die Dicke der Platte",
       "Den Kohlenstoffanteil — ein heller Strich ist gut, ein dunkler Strich zeigt zu viel Kohlenstoff",
-      "Die Frostbeständigkeit",
       "Den Kalkgehalt",
-      "Die Dicke der Platte"
+      "Die Frostbeständigkeit"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Ritzprobe: Ein Schiefer muss kohlenstoffarm sein. Dann zeigt er beim Anritzen einen hellen Strich. Ist der Kohlenstoffanteil zu groß, zeigt sich ein dunkler Strich.",
     "bildDatei": "/buch/lf09/schiefer-eigenschaften.webp",
@@ -110,13 +110,13 @@
     "konfidenz": "hoch",
     "frage": "Was prüft die Klangprobe beim Dachschiefer?",
     "optionen": [
+      "Die Oberflächenglätte",
       "Ob der Schiefer Haarrisse hat — hell klingt gut, dumpf klingt rissig",
-      "Die Farbe des Schiefers",
       "Das Gewicht der Platte",
-      "Die Oberflächenglätte"
+      "Die Farbe des Schiefers"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Klangprobe: Ein Schiefer darf keine Haarrisse (Schichtenrisse) haben, da in sie Wasser eindringen könnte, das bei Frost den Schiefer zerstört. Beim Anschlagen mit dem Schieferhammer klingt ein rissfreier Schiefer hell, während er bei Rissen dumpf klingt und klirrt.",
     "bildDatei": "/buch/lf09/schiefer-eigenschaften.webp",
@@ -131,13 +131,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß muss die Mindestnenndicke von Schieferplatten sein?",
     "optionen": [
-      "Mindestens 5 mm",
-      "Mindestens 2 mm",
       "Mindestens 10 mm",
-      "Mindestens 20 mm"
+      "Mindestens 5 mm",
+      "Mindestens 20 mm",
+      "Mindestens 2 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Dachschiefer ist in verschiedenen Handelsformen auf dem Markt, um allen möglichen Anforderungen an Dach- und Wandgestaltung gerecht zu werden. Die Mindestnenndicke der Schieferplatten muss mindestens 5 mm betragen.",
     "bildDatei": "/buch/lf09/deckstein-bezeichnungen.webp",
@@ -153,9 +153,9 @@
     "frage": "Wodurch unterscheiden sich altdeutsche Decksteine von Schuppenschablonen?",
     "optionen": [
       "Altdeutsche Decksteine sind in Größe und Form unterschiedlich, Schuppenschablonen sind in einer Größenklasse alle gleich groß",
+      "Es gibt keinen Unterschied",
       "Schuppenschablonen sind immer dicker",
-      "Altdeutsche Decksteine sind immer rechteckig",
-      "Es gibt keinen Unterschied"
+      "Altdeutsche Decksteine sind immer rechteckig"
     ],
     "korrekt": [
       0
@@ -171,7 +171,7 @@
     "thema": "Schiefer Grundlagen",
     "quelle": "Grundstufe Bautechnik, Buch S. 345 (Aufgaben S. 345)",
     "konfidenz": "hoch",
-    "text": "Rechteckschablonen mit gestutzten Ecken heissen {{Achteckschablonen}} (Octogones), solche mit halbkreisfoermigem Fuss heissen {{Rundplaettchen}} (Coquettes).",
+    "text": "Rechteckschablonen mit gestutzten Ecken heissen {{Achteckschablonen}} (Octogones), solche mit halbkreisförmigem Fuss heissen {{Rundplättchen}} (Coquettes).",
     "akzeptiert": {
       "Achteckschablonen": [
         "Achteckschablonen",
@@ -197,13 +197,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Schablonenformen nennen die Fachregeln neben Schuppen- und Rechteckschablonen?",
     "optionen": [
-      "Bogenschnittschablone, Spitzwinkelschablone und Fischschuppenschablone",
-      "Nur die Rautenschablone",
       "Dreieck- und Trapezschablone",
-      "Kreis- und Ovalschablone"
+      "Kreis- und Ovalschablone",
+      "Nur die Rautenschablone",
+      "Bogenschnittschablone, Spitzwinkelschablone und Fischschuppenschablone"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Fachregeln erwähnen daneben noch die Bogenschnittschablone mit Bogenschnitt rechts oder links in den Abmessungen 30 × 30 cm und 25 × 25 cm für Dachdeckungen sowie 20 × 20 cm für Wandbekleidungen und die Spitzwinkelschablonen. Weniger gebräuchlich sind Litera- und Fischschuppenschablonen.",
     "bildDatei": "/buch/lf09/schablonenbeispiele.webp",
@@ -218,13 +218,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus wird Faserzement hergestellt?",
     "optionen": [
+      "Aus Bitumen und Glasfasern",
       "Aus Kunststofffasern, Zellstofffasern, Zement, Zusatzstoffen und Wasser",
-      "Aus Asbest, Zement und Wasser",
       "Aus Ton und Sand",
-      "Aus Bitumen und Glasfasern"
+      "Aus Asbest, Zement und Wasser"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Faserzement ist ein künstlicher Verbundstoff aus Fasermaterial, Zement, Zusatzstoffen und Wasser. Als Fasern werden Kunststofffasern aus Polyvinylalkohol oder Polyacrylnitril verwendet; sie dienen als Bewehrung des Verbundstoffes Faserzement.",
     "bildDatei": "/buch/lf09/faserzement-herstellung.webp",
@@ -239,13 +239,13 @@
     "konfidenz": "hoch",
     "frage": "Warum werden für die Herstellung von Faserzement keine Asbestfasern mehr verwendet?",
     "optionen": [
+      "Weil Asbest nicht fest genug ist",
       "Weil beim Bearbeiten gefährlicher Asbeststaub entsteht, der gesundheitsschädlich ist",
       "Weil Asbest zu teuer ist",
-      "Weil Asbest nicht fest genug ist",
       "Weil Asbest nicht wasserdicht ist"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Trotz ihrer technisch guten Eigenschaften dürfen Asbestfasern wegen der Gesundheitsgefährdung durch diesen Stoff in Deutschland keine Anwendung mehr für Hochbauprodukte finden. Vor allem beim Bearbeiten von asbestzementhaltigen Bauteilen sind besondere Sicherheitsvorkehrungen zu treffen.",
     "bildDatei": "/buch/lf09/faserzement-herstellung.webp",
@@ -260,13 +260,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe haben die Zellstofffasern bei der Herstellung von Faserzement?",
     "optionen": [
-      "Sie sind Prozessfasern und erhöhen die Haftfestigkeit zwischen Kunststofffasern und Zement",
       "Sie färben das Produkt ein",
-      "Sie machen das Produkt wasserdicht",
-      "Sie ersetzen den Zement"
+      "Sie ersetzen den Zement",
+      "Sie sind Prozessfasern und erhöhen die Haftfestigkeit zwischen Kunststofffasern und Zement",
+      "Sie machen das Produkt wasserdicht"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Während des Fertigungsprozesses von Faserzement sind gewisse Prozessfasern notwendig. Diese hauptsächlich aus Zellstoff bestehenden Fasern erhöhen die Haftfestigkeit zwischen Kunststofffasern und Zement.",
     "bildDatei": "/buch/lf09/faserzement-herstellung.webp",
@@ -279,7 +279,7 @@
     "thema": "Faserzement",
     "quelle": "Grundstufe Bautechnik, Buch S. 346-347 (Aufgaben S. 347)",
     "konfidenz": "hoch",
-    "text": "Faserzement ist {{faeulnisbestaendig}} und korrosionsbestaendig gegen Umwelteinfluesse. Er quillt und schwindet thermisch und feuchtigkeitsbedingt, bleibt aber {{formstabil}}.",
+    "text": "Faserzement ist {{fäulnisbeständig}} und korrosionsbeständig gegen Umwelteinflüsse. Er quillt und schwindet thermisch und feuchtigkeitsbedingt, bleibt aber {{formstabil}}.",
     "akzeptiert": {
       "faeulnisbestaendig": [
         "faeulnisbestaendig",
@@ -304,13 +304,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen werden an Dachplatten aus Faserzement gestellt?",
     "optionen": [
-      "Ebenflächig, gleichmäßige Oberflächenbeschaffenheit, wasserdicht, frostbeständig und biegefest",
-      "Nur besonders leicht",
+      "Nur farbig beschichtet",
       "Nur besonders dick",
-      "Nur farbig beschichtet"
+      "Nur besonders leicht",
+      "Ebenflächig, gleichmäßige Oberflächenbeschaffenheit, wasserdicht, frostbeständig und biegefest"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Dachplatten aus Faserzement müssen ebenflächig und von gleichmäßiger Oberflächenbeschaffenheit sein, wobei die Oberfläche auch strukturiert sein kann. Dachplatten müssen wasserdicht, frostbeständig und biegefest sein.",
     "bildDatei": "/buch/lf09/faserzement-plattenformen.webp",
@@ -325,13 +325,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge werden Faserzement-Dachplatten bestellt?",
     "optionen": [
+      "Nur die Fläche in m²",
       "Form, Breite × Höhe (jeweils in mm), Art der Eckenausbildung",
       "Höhe × Breite, Farbe, Gewicht",
-      "Nur die Fläche in m²",
       "Nur die Stückzahl"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei Bestellungen sind in der Reihenfolge anzugeben: Form, Breite × Höhe (jeweils in mm), Art der Eckenausbildung. Beispiel: Dachplatte F 300 × 600 ge — Dachplatte der Form F nach dem Produktdatenblatt, 300 mm breit und 600 mm hoch, mit gestutzten unteren Ecken.",
     "bildDatei": "/buch/lf09/faserzement-eckausbildungen.webp",
@@ -347,9 +347,9 @@
     "frage": "Welche Anforderungen werden an die Schalung als Deckunterlage für Schiefer gestellt?",
     "optionen": [
       "Trocken und gesund, mindestens 24 mm dick, etwa 20 cm breit; Bretter unter 12 cm sollten nicht verwendet werden",
-      "Beliebig feucht, mindestens 10 mm dick",
+      "Es gibt keine Anforderungen",
       "Nur Nadelholz, mindestens 50 mm dick",
-      "Es gibt keine Anforderungen"
+      "Beliebig feucht, mindestens 10 mm dick"
     ],
     "korrekt": [
       0
@@ -367,13 +367,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist eine Vordeckung mit Dachbahnen auf der Schalung notwendig?",
     "optionen": [
-      "Feuchte Bretter schwinden beim Trocknen und könnten die aufgenagelte Schieferdeckung zerstören; außerdem schützt sie vor Schmutz und Treibschnee",
-      "Sie dient nur der Optik",
       "Sie ersetzt die Wärmedämmung",
-      "Sie ist gar nicht notwendig"
+      "Sie ist gar nicht notwendig",
+      "Sie dient nur der Optik",
+      "Feuchte Bretter schwinden beim Trocknen und könnten die aufgenagelte Schieferdeckung zerstören; außerdem schützt sie vor Schmutz und Treibschnee"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Feuchte Bretter schwinden beim Trocknen und könnten die aufgenagelte Schieferdeckung zerstören. Deshalb muss die Schalung vorgedeckt werden, meist mit Bitumendachbahnen. Außerdem wird so der Dachinnenraum vor Schmutz und Treibschnee geschützt. Die Mindestüberlappung beträgt 80 mm.",
     "bildDatei": "/buch/lf09/vordeckung-schiefer.webp",
@@ -386,13 +386,13 @@
     "thema": "Deckunterlagen",
     "quelle": "Grundstufe Bautechnik, Buch S. 348",
     "konfidenz": "hoch",
-    "text": "Ist der Sparrenabstand groesser als {{70}} cm, muessen dickere Bretter verwendet werden. Der Mindestquerschnitt der Latten fuer Rechteckschiefer betraegt {{30}} mal 50 mm.",
+    "text": "Ist der Sparrenabstand groesser als {{70}} cm, müssen dickere Bretter verwendet werden. Der Mindestquerschnitt der Latten für Rechteckschiefer beträgt {{30}} mal 50 mm.",
     "akzeptiert": {
-      "70": [
-        "70"
-      ],
       "30": [
         "30"
+      ],
+      "70": [
+        "70"
       ]
     },
     "erklaerung": "Ist der Sparrenabstand größer als 70 cm, müssen dickere Bretter verwendet werden, um ein Federn der Schalung beim Nageln zu verhindern. Rechteckschiefer können auf Latten genagelt oder geklammert werden; der Mindestquerschnitt der Latten beträgt 30 × 50 mm, der Achsabstand der Sparren darf höchstens 80 cm betragen.",
@@ -408,13 +408,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Werkzeuge werden zur Schieferbearbeitung verwendet?",
     "optionen": [
-      "Schieferhammer, Haubrücke, Nageleisen und Schieferschere",
-      "Nur die Kelle",
       "Nur die Säge",
+      "Nur die Kelle",
+      "Schieferhammer, Haubrücke, Nageleisen und Schieferschere",
       "Winkelschleifer und Bohrmaschine"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zur Schieferbearbeitung dienen der Schieferhammer, die Haubrücke, das Nageleisen und die Schieferschere. Müssen die Schiefer vor dem Eindecken zugerichtet werden, werden sie mit der Schieferschere beschnitten oder mit dem Schieferhammer auf der gebogenen Haubrücke behauen.",
     "bildDatei": "/buch/lf09/schieferwerkzeuge.webp",
@@ -429,13 +429,13 @@
     "konfidenz": "hoch",
     "frage": "Von welcher Seite wird der Schiefer gelocht, wenn Schiefernägel verwendet werden?",
     "optionen": [
-      "Von innen nach außen (von der Unterseite her)",
+      "Die Richtung ist egal",
       "Von außen nach innen",
       "Von der Seite",
-      "Die Richtung ist egal"
+      "Von innen nach außen (von der Unterseite her)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Lochung des Schiefers wird normalerweise mit der Spitze des Schieferhammers von der Unterseite nach oben ausgeführt, um den Kopf des Schiefernagels im entstehenden Trichter versenken zu können. Werden Schieferstifte verwendet, wird von der Oberseite nach unten gelocht.",
     "bildDatei": "/buch/lf09/lochung-schiefer.webp",
@@ -451,9 +451,9 @@
     "frage": "Mit wie vielen Schiefernägeln werden Decksteine in der Höhenüberdeckung befestigt?",
     "optionen": [
       "Mit mindestens drei Schiefernägeln",
-      "Mit einem Nagel",
       "Mit sechs Nägeln",
-      "Sie werden nur geklemmt"
+      "Sie werden nur geklemmt",
+      "Mit einem Nagel"
     ],
     "korrekt": [
       0
@@ -469,7 +469,7 @@
     "thema": "Schieferwerkzeuge",
     "quelle": "Grundstufe Bautechnik, Buch S. 349",
     "konfidenz": "hoch",
-    "text": "Der Kopfdurchmesser eines Schiefernagels sollte mindestens {{9}} mm, die Laenge mindestens {{32}} mm betragen.",
+    "text": "Der Kopfdurchmesser eines Schiefernagels sollte mindestens {{9}} mm, die Länge mindestens {{32}} mm betragen.",
     "akzeptiert": {
       "9": [
         "9",
@@ -493,9 +493,9 @@
     "frage": "Wo darf die Lochung eines Decksteins sichtbar sein?",
     "optionen": [
       "An keiner Stelle — die Nagelung muss innerhalb der Überdeckung erfolgen (Ausnahme: Schlussstein)",
+      "Nur an der Traufe",
       "Überall",
-      "Nur am First",
-      "Nur an der Traufe"
+      "Nur am First"
     ],
     "korrekt": [
       0
@@ -534,13 +534,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Regeldachneigung bei der einfachen altdeutschen Deckung?",
     "optionen": [
-      "25°",
-      "22°",
+      "35°",
       "30°",
-      "35°"
+      "25°",
+      "22°"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Regeldachneigungen betragen 25° bei der einfachen altdeutschen Deckung und 22° bei der Doppeldeckung. Die Doppeldeckung wird bei geringer Dachneigung, großer Dachtiefe (Sparrenlänge) und bei ungünstiger Gebäudelage verwendet.",
     "bildDatei": "/buch/lf09/altdeutsche-deckschema.webp",
@@ -553,17 +553,17 @@
     "thema": "Altdeutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 350",
     "konfidenz": "hoch",
-    "text": "Der Schnurabstand (Gebindehoehe) betraegt bei der altdeutschen Deckung S = H minus {{HUe}} und bei der altdeutschen Doppeldeckung S = (H minus DUe) geteilt durch {{2}}.",
+    "text": "Der Schnurabstand (Gebindehöhe) beträgt bei der altdeutschen Deckung S = H minus {{HÜ}} und bei der altdeutschen Doppeldeckung S = (H minus DÜ) geteilt durch {{2}}.",
     "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
       "HUe": [
         "HUe",
         "HÜ",
         "Hoehenueberdeckung",
         "Höhenüberdeckung"
-      ],
-      "2": [
-        "2",
-        "zwei"
       ]
     },
     "erklaerung": "Schnurabstand (Gebindehöhe): altdeutsche Deckung S = H − HÜ; altdeutsche Doppeldeckung S = (H − DÜ)/2. Dabei ist H die Steinhöhe, HÜ die Höhenüberdeckung und DÜ die Doppelüberdeckung.",
@@ -579,13 +579,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Regel gilt für die Auswahl der Decksteingröße bei der altdeutschen Deckung?",
     "optionen": [
-      "Je größer die Dachneigung und je größer die Entfernung zwischen First und Traufe, desto größer müssen die verwendeten Schiefer sein",
       "Die Steingröße spielt keine Rolle",
-      "Kleine Steine gehören immer an die Traufe",
-      "Alle Steine müssen gleich groß sein"
+      "Je größer die Dachneigung und je größer die Entfernung zwischen First und Traufe, desto größer müssen die verwendeten Schiefer sein",
+      "Alle Steine müssen gleich groß sein",
+      "Kleine Steine gehören immer an die Traufe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Je größer die Dachneigung und je größer die Entfernung zwischen First und Traufe ist, desto größer müssen die verwendeten Schiefer sein. Je geringer die Dachneigung und je kleiner die Entfernung zwischen First und Traufe, desto kleiner können die verwendeten Schiefer sein.",
     "bildDatei": "/buch/lf09/handelsgroessen-decksteine.webp",
@@ -601,8 +601,8 @@
     "frage": "Wo werden bei der altdeutschen Deckung die hohen Decksteine verarbeitet?",
     "optionen": [
       "An der Traufe — zum First hin wird die Steinhöhe immer geringer (Verjüngung)",
-      "Am First",
       "In der Dachmitte",
+      "Am First",
       "Die Reihenfolge ist beliebig"
     ],
     "korrekt": [
@@ -621,13 +621,13 @@
     "konfidenz": "hoch",
     "frage": "Um wie viel muss sich die Gebindehöhe bei einer Sparrenlänge bis 6,00 m mindestens verjüngen?",
     "optionen": [
-      "Um mindestens 4 cm",
       "Um mindestens 1 cm",
+      "Um mindestens 4 cm",
       "Um mindestens 10 cm",
       "Eine Verjüngung ist nicht nötig"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Verjüngung der Gebindehöhen um mindestens: Sparrenlänge ≤ 6,00 m → 4 cm; ≤ 8,00 m → 6 cm; > 8,00 m → 8 cm. Das ist die Differenz zwischen größter und kleinster Gebindehöhe.",
     "bildDatei": "/buch/lf09/verjuengung-gebindehoehen.webp",
@@ -642,13 +642,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß muss die Differenz der sichtbaren Breiten innerhalb einer Gebindehöhe mindestens sein?",
     "optionen": [
-      "Mindestens 40 mm",
-      "Mindestens 5 mm",
       "Mindestens 100 mm",
+      "Mindestens 5 mm",
+      "Mindestens 40 mm",
       "Die Breiten müssen gleich sein"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Breite und schmale Decksteine sollen auf die Dachfläche verteilt werden, wobei die Differenz der sichtbaren Breiten innerhalb einer Gebindehöhe mindestens 40 mm betragen muss. So entsteht das typische lebendige Bild der altdeutschen Deckung.",
     "bildDatei": "/buch/lf09/altdeutsche-deckschema.webp",
@@ -661,16 +661,16 @@
     "thema": "Altdeutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 351 (Aufgaben S. 356)",
     "konfidenz": "hoch",
-    "text": "Der stumpfe Hieb hat eine Rueckenfuehrung von 115 Grad und einen Brustwinkel von {{75}} Grad. Der normale Hieb hat 125 Grad Rueckenfuehrung und {{74}} Grad Brustwinkel, der scharfe Hieb 135 Grad und {{65}} Grad.",
+    "text": "Der stumpfe Hieb hat eine Rückenführung von 115 Grad und einen Brustwinkel von {{75}} Grad. Der normale Hieb hat 125 Grad Rückenführung und {{74}} Grad Brustwinkel, der scharfe Hieb 135 Grad und {{65}} Grad.",
     "akzeptiert": {
-      "75": [
-        "75"
+      "65": [
+        "65"
       ],
       "74": [
         "74"
       ],
-      "65": [
-        "65"
+      "75": [
+        "75"
       ]
     },
     "erklaerung": "Hiebarten: stumpfer Hieb — Rückenführung 115°, Brustwinkel 75°; normaler Hieb — Rückenführung 125°, Brustwinkel 74°; scharfer Hieb — Rückenführung 135°, Brustwinkel 65°.",
@@ -686,13 +686,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Mindesthöhenüberdeckung bei Decksteinen mit normalem Hieb?",
     "optionen": [
-      "29 % der Steinhöhe, mindestens 5 cm und höchstens 12 cm",
-      "50 % der Steinhöhe",
       "10 % der Steinhöhe",
+      "50 % der Steinhöhe",
+      "29 % der Steinhöhe, mindestens 5 cm und höchstens 12 cm",
       "Immer genau 8 cm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Decksteine mit stumpfem und normalem Hieb: Höhenüberdeckung 29 % der Steinhöhe (zwischen mindestens 5 cm und höchstens 12 cm), Seitenüberdeckung wie Höhenüberdeckung. Decksteine mit scharfem Hieb: Höhenüberdeckung ebenfalls 29 % der Steinhöhe, Seitenüberdeckung aber 38 % der Steinhöhe.",
     "bildDatei": "/buch/lf09/mindestueberdeckung-tab.webp",
@@ -707,13 +707,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Seitenüberdeckung bei Decksteinen mit scharfem Hieb?",
     "optionen": [
+      "50 % der Steinhöhe",
       "38 % der Steinhöhe",
-      "29 % der Steinhöhe",
       "Wie die Höhenüberdeckung",
-      "50 % der Steinhöhe"
+      "29 % der Steinhöhe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei Decksteinen mit scharfem Hieb beträgt die Seitenüberdeckung 38 % der Steinhöhe, während die Höhenüberdeckung wie bei den anderen Hiebarten 29 % der Steinhöhe beträgt. Der schärfere Hieb erfordert eine größere Seitenüberdeckung, weil der Fersenversatz größer ist.",
     "bildDatei": "/buch/lf09/mindestueberdeckung-tab.webp",
@@ -796,7 +796,7 @@
     "thema": "Altdeutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 359 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Bei der altdeutschen Doppeldeckung hat der Deckstein die Höhe {hoehe} cm, die Überdoppelung beträgt {ue} cm. Berechne den Schnurabstand.",
+    "aufgabentext": "Bei der altdeutschen Doppeldeckung hat der Deckstein die Höhe {hoehe} cm, die Überdoppelung beträgt {ü} cm. Berechne den Schnurabstand.",
     "parameter": [
       {
         "name": "hoehe",
@@ -837,13 +837,13 @@
     "konfidenz": "hoch",
     "frage": "Um wie viel muss das dritte Gebinde bei der altdeutschen Doppeldeckung das erste überdecken?",
     "optionen": [
-      "Um mindestens 2 cm",
-      "Um mindestens 10 cm",
       "Gar nicht",
-      "Um mindestens 20 cm"
+      "Um mindestens 10 cm",
+      "Um mindestens 20 cm",
+      "Um mindestens 2 cm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei der altdeutschen Doppeldeckung müssen die Decksteine des dritten Gebindes die des ersten um mindestens 2 cm überdecken. Diese Überdeckung heißt Überdoppelung (DÜ) und geht in die Schnurabstandsformel ein.",
     "bildDatei": "/buch/lf09/altdeutsche-deckschema.webp",
@@ -858,13 +858,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich die Schuppendeckung von der altdeutschen Deckung?",
     "optionen": [
+      "Es gibt keinen Unterschied",
       "Bei der Schuppendeckung werden Decksteine gleicher Größe mit normalem Hieb verwendet",
-      "Die Schuppendeckung braucht keine Schnur",
       "Die Schuppendeckung wird ohne Überdeckung ausgeführt",
-      "Es gibt keinen Unterschied"
+      "Die Schuppendeckung braucht keine Schnur"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Für die Schuppendeckung werden Decksteine gleicher Größe mit normalem Hieb verwendet, während bei der altdeutschen Deckung Decksteine verschiedener Größen zum Einsatz kommen. Die Regeldachneigung beträgt bei beiden 25°.",
     "bildDatei": "/buch/lf09/schuppendeckung-schema.webp",
@@ -877,15 +877,15 @@
     "thema": "Schuppendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 351",
     "konfidenz": "hoch",
-    "text": "Bei der Schuppendeckung entspricht die Mindestueberdeckung (Hoehenueberdeckung = Seitenueberdeckung) {{29}} Prozent der Steinhoehe, mindestens {{5}} cm.",
+    "text": "Bei der Schuppendeckung entspricht die Mindestüberdeckung (Höhenüberdeckung = Seitenüberdeckung) {{29}} Prozent der Steinhöhe, mindestens {{5}} cm.",
     "akzeptiert": {
-      "29": [
-        "29"
-      ],
       "5": [
         "5",
         "fuenf",
         "fünf"
+      ],
+      "29": [
+        "29"
       ]
     },
     "erklaerung": "Die Mindestüberdeckung (Höhenüberdeckung = Seitenüberdeckung) entspricht der altdeutschen Deckung mit Decksteinen im normalen Hieb: 29 % der Steinhöhe, mindestens 5 cm. Der Schnurabstand bei der Schuppendeckung ist S = H − HÜ.",
@@ -901,13 +901,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Schuppenschablonen-Format wird für einen Dachneigungsbereich von 25° bis 30° empfohlen?",
     "optionen": [
-      "42/32 bzw. 40/30 cm",
-      "20/15 bzw. 18/15 cm",
       "24/19 bzw. 22/17 cm",
-      "28/23 bzw. 26/21 cm"
+      "42/32 bzw. 40/30 cm",
+      "28/23 bzw. 26/21 cm",
+      "20/15 bzw. 18/15 cm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Standardformate Schuppenschablonen mit empfohlenem Dachneigungsbereich: 42/32 und 40/30 → 25°...30°; 36/28 und 34/28 → 25°...35°; 32/28 und 30/25 → 30°...40°; 28/23 und 26/21 → 35°...50°; 24/19 und 22/17 → 40°...60°; 20/15 und 18/15 → ab 50°. Je flacher das Dach, desto größer der Stein.",
     "bildDatei": "/buch/lf09/schuppen-standardformate.webp",
@@ -922,13 +922,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Schuppenschablonen-Format eignet sich für Dachneigungen ab 50°?",
     "optionen": [
-      "20/15 bzw. 18/15 cm",
-      "42/32 bzw. 40/30 cm",
       "36/28 bzw. 34/28 cm",
-      "32/28 bzw. 30/25 cm"
+      "32/28 bzw. 30/25 cm",
+      "20/15 bzw. 18/15 cm",
+      "42/32 bzw. 40/30 cm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Für Dachneigungen ab 50° werden die kleinsten Formate 20/15 bzw. 18/15 cm empfohlen. Je steiler das Dach, desto kleiner können die Steine sein, weil das Wasser schneller abläuft.",
     "bildDatei": "/buch/lf09/schuppen-standardformate.webp",
@@ -1047,13 +1047,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Mindestgebindesteigung bei einer Dachneigung von 45°?",
     "optionen": [
-      "16,5° bzw. 29,3 cm/m",
       "30° bzw. 57,7 cm/m",
       "20° bzw. 35,7 cm/m",
-      "8° bzw. 13,4 cm/m"
+      "8° bzw. 13,4 cm/m",
+      "16,5° bzw. 29,3 cm/m"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach der Tabelle Mindestgebindesteigungen: 25° → 30° (57,7 cm/m); 30° → 26,5° (50,0 cm/m); 40° → 20° (35,7 cm/m); 45° → 16,5° (29,3 cm/m); 50° → 13,5° (23,4 cm/m); 60° → 8° (13,4 cm/m); 70° → 3,5° (6,0 cm/m).",
     "bildDatei": "/buch/lf09/mindestgebindesteigung-tab.webp",
@@ -1069,9 +1069,9 @@
     "frage": "Ab welcher Dachneigung kann die Deckung ohne Gebindesteigung erfolgen?",
     "optionen": [
       "Bei Dachneigungen über 70°",
-      "Ab 30°",
+      "Nie",
       "Ab 45°",
-      "Nie"
+      "Ab 30°"
     ],
     "korrekt": [
       0
@@ -1087,13 +1087,13 @@
     "thema": "Gebindesteigung",
     "quelle": "Grundstufe Bautechnik, Buch S. 352 (Aufgaben S. 356)",
     "konfidenz": "hoch",
-    "text": "Die Hoechstgebindesteigung berechnet sich mit beta = 90 Grad minus (180 Grad minus {{Brustwinkel}}) geteilt durch 2. Fuer den normalen Hieb ergibt sich dabei {{37}} Grad.",
+    "text": "Die Höchstgebindesteigung berechnet sich mit beta = 90 Grad minus (180 Grad minus {{Brustwinkel}}) geteilt durch 2. Für den normalen Hieb ergibt sich dabei {{37}} Grad.",
     "akzeptiert": {
-      "Brustwinkel": [
-        "Brustwinkel"
-      ],
       "37": [
         "37"
+      ],
+      "Brustwinkel": [
+        "Brustwinkel"
       ]
     },
     "erklaerung": "Höchstgebindesteigung: β = 90° − (180° − Brustwinkel)/2. Für den stumpfen Hieb (75°): β = 37,5°. Für den normalen Hieb (74°): β = 37°. Für den scharfen Hieb (65°): β = 32,5°.",
@@ -1140,13 +1140,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus bestehen eingebundene Fußgebinde an der Traufe?",
     "optionen": [
-      "Aus Fußsteinen und Gebindestein",
       "Nur aus Firststeinen",
+      "Aus Fußsteinen und Gebindestein",
       "Aus Ortsteinen und Kehlsteinen",
       "Aus Metallblechen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Gebinde, die an der Traufe beginnen, heißen Fußgebinde. Sie bestehen aus Fußsteinen und Gebindestein. Durch die Verwendung von Fußsteinen verschiedener Größen wird das schräge Ansteigen der Gebinde erreicht.",
     "bildDatei": "/buch/lf09/fussgebinde.webp",
@@ -1161,13 +1161,13 @@
     "konfidenz": "hoch",
     "frage": "Welche zwei Ortarten unterscheidet man bei der altdeutschen Deckung?",
     "optionen": [
-      "Anfangort und Endort",
-      "Oberort und Unterort",
       "Linksort und Rechtsort",
-      "Kurzort und Langort"
+      "Oberort und Unterort",
+      "Kurzort und Langort",
+      "Anfangort und Endort"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die seitliche Begrenzung der Deckung bilden die Ortsteine. Man unterscheidet Anfangort- und Endortsteine. Ihre Größe sollte der Decksteingröße angepasst sein. Ortsteine werden mit einem Überstand von etwa 5 cm über die Unterkonstruktion gedeckt.",
     "bildDatei": "/buch/lf09/anfangortdeckung.webp",
@@ -1202,13 +1202,13 @@
     "konfidenz": "hoch",
     "frage": "Wie weit müssen die Gebinde der Wetterseite am Grat über die Gebinde der wetterabgewandten Seite hinausragen?",
     "optionen": [
-      "Mindestens 5 cm",
       "Mindestens 1 cm",
+      "Gar nicht",
       "Mindestens 20 cm",
-      "Gar nicht"
+      "Mindestens 5 cm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Gebinde der Wetterseite müssen am Grat mindestens 5 cm über die Gebinde der wetterabgewandten Seite hinausragen. Grate sollten eingebunden werden. Ist dies bei der Schuppendeckung nicht möglich, weil die höchstzulässige Gebindesteigung überschritten würde, können sie als aufgelegte Orte bzw. als Strackorte gedeckt werden.",
     "bildDatei": "/buch/lf09/strackortdeckung-grat.webp",
@@ -1240,13 +1240,13 @@
     "konfidenz": "hoch",
     "frage": "Warum wird der Bedarf an altdeutschen Decksteinen in kg/m² statt in Stück/m² angegeben?",
     "optionen": [
-      "Weil die Decksteine unterschiedliche Höhen und Breiten haben und eine exakte Stückzahl nicht möglich ist",
-      "Weil Schiefer immer nach Gewicht verkauft wird",
       "Weil die Steine zu klein zum Zählen sind",
-      "Weil das Gewicht wichtiger als die Fläche ist"
+      "Weil das Gewicht wichtiger als die Fläche ist",
+      "Weil Schiefer immer nach Gewicht verkauft wird",
+      "Weil die Decksteine unterschiedliche Höhen und Breiten haben und eine exakte Stückzahl nicht möglich ist"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Eine genaue Ermittlung der Decksteine nach Stückzahl ist wegen der unterschiedlichen Höhen und Breiten innerhalb einer Sortierung nicht möglich. Die Schiefermengen für die altdeutsche Deckung werden deshalb bei den Flächen in kg/m² und bei Fußgebinden, Orten, Graten und Kehlen in kg/m bestimmt und gehandelt.",
     "bildDatei": "/buch/lf09/materialbedarf-altdeutsch.webp",
@@ -1259,7 +1259,7 @@
     "thema": "Materialermittlung",
     "quelle": "Grundstufe Bautechnik, Buch S. 358",
     "konfidenz": "hoch",
-    "text": "Der Materialbedarf betraegt bei Decksteinen im normalen Hieb etwa {{36}} kg/m² und bei der Doppeldeckung etwa {{45}} kg/m².",
+    "text": "Der Materialbedarf beträgt bei Decksteinen im normalen Hieb etwa {{36}} kg/m² und bei der Doppeldeckung etwa {{45}} kg/m².",
     "akzeptiert": {
       "36": [
         "36"
@@ -1281,13 +1281,13 @@
     "konfidenz": "hoch",
     "frage": "Wie breit ist der Flächenrand, der bei der Ermittlung der Deckfläche für Fußgebinde abgezogen wird?",
     "optionen": [
-      "0,15 m",
-      "0,20 m",
       "0,50 m",
-      "1,00 m"
+      "0,20 m",
+      "1,00 m",
+      "0,15 m"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Flächenränder: für die Fußgebinde 0,15 m, für die Orte und Grate 0,20 m, für die Kehlen 0,50 m. Diese Streifen werden von der Dachfläche abgezogen, weil dort keine Flächendecksteine, sondern Zubehörsteine verwendet werden.",
     "bildDatei": "/buch/lf09/flaechenraender.webp",
@@ -1436,9 +1436,9 @@
     "frage": "Warum sind die Sortierungen 1/32 und 1/64 bei der altdeutschen Doppeldeckung nicht geeignet?",
     "optionen": [
       "Sie ergeben zu geringe Gebindehöhen und zu sperrende Überdeckungen",
-      "Sie sind zu teuer",
+      "Sie gibt es nicht im Handel",
       "Sie sind nicht frostbeständig",
-      "Sie gibt es nicht im Handel"
+      "Sie sind zu teuer"
     ],
     "korrekt": [
       0
@@ -1454,7 +1454,7 @@
     "thema": "Materialermittlung",
     "quelle": "Grundstufe Bautechnik, Buch S. 359",
     "konfidenz": "hoch",
-    "text": "Der Bedarf an Schuppenschablonen fuer 1 m² berechnet sich mit n = {{10000}} geteilt durch das Produkt aus (Steinhoehe minus Hoehenueberdeckung) und (Breite minus {{Breitenueberdeckung}}).",
+    "text": "Der Bedarf an Schuppenschablonen für 1 m² berechnet sich mit n = {{10000}} geteilt durch das Produkt aus (Steinhöhe minus Höhenüberdeckung) und (Breite minus {{Breitenueberdeckung}}).",
     "akzeptiert": {
       "10000": [
         "10000",
@@ -1542,9 +1542,9 @@
     "frage": "Welche Steine werden für die deutsche Deckung (Bogenschnittdeckung) verwendet?",
     "optionen": [
       "Quadratische Platten und Schiefer mit Bogenschnitt — rechte Steine für Rechtsdeckungen, linke für Linksdeckungen",
-      "Nur rechteckige Platten",
+      "Nur unbehauene Rohlinge",
       "Nur Rautenformate",
-      "Nur unbehauene Rohlinge"
+      "Nur rechteckige Platten"
     ],
     "korrekt": [
       0
@@ -1562,13 +1562,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Höchstgebindesteigung bei der deutschen Deckung?",
     "optionen": [
+      "Es gibt keine Grenze",
       "45°, das heißt 1 m Steigung auf 1 m Trauflänge",
       "30°",
-      "60°",
-      "Es gibt keine Grenze"
+      "60°"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Regeldachneigung der deutschen Deckung beträgt 25°. Die Höchstgebindesteigung beträgt 45°, d. h. 1 m Steigung auf 1 m Trauflänge. Je geringer die Dachneigung ist, desto größer wird die Gebindesteigung. Dächer über 70° können ohne Gebindesteigung gedeckt werden.",
     "bildDatei": "/buch/lf09/deutsche-deckung-schema.webp",
@@ -1583,13 +1583,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Überdeckungen ergeben sich bei Bogenschnittschablonen 30 × 30 cm und einer Dachneigung von 35°?",
     "optionen": [
-      "Seitenüberdeckung 9 cm, Höhenüberdeckung 9 cm",
+      "Seitenüberdeckung 6 cm, Höhenüberdeckung 6 cm",
       "Seitenüberdeckung 12 cm, Höhenüberdeckung 12 cm",
       "Seitenüberdeckung 9 cm, Höhenüberdeckung 11 cm",
-      "Seitenüberdeckung 6 cm, Höhenüberdeckung 6 cm"
+      "Seitenüberdeckung 9 cm, Höhenüberdeckung 9 cm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach der Tabelle Seiten- und Höhenüberdeckung bei der deutschen Deckung, Format 30/30: ≥ 25° → 9/11; ≥ 30° → 9/10; ≥ 35° → 9/9; ≥ 45° → 9/9; ≥ 55° → 9/9. Der erste Wert gibt die Seitenüberdeckung an, der zweite die Höhenüberdeckung.",
     "bildDatei": "/buch/lf09/deutsche-ueberdeckung-tab.webp",
@@ -1602,7 +1602,7 @@
     "thema": "Deutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 362",
     "konfidenz": "hoch",
-    "text": "Bei der deutschen Deckung ist der Schnurabstand des Deckgebindes gleich der Dachplattenhoehe minus der {{Hoehenueberdeckung}} und verlaeuft mit der gewaehlten {{Gebindesteigung}}.",
+    "text": "Bei der deutschen Deckung ist der Schnurabstand des Deckgebindes gleich der Dachplattenhöhe minus der {{Höhenüberdeckung}} und verläuft mit der gewählten {{Gebindesteigung}}.",
     "akzeptiert": {
       "Hoehenueberdeckung": [
         "Hoehenueberdeckung",
@@ -1627,13 +1627,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Seitenüberdeckung beim eingespitzten Fußgebinde der deutschen Deckung?",
     "optionen": [
+      "Sie ist frei wählbar",
       "Mindestens 12 cm",
-      "Mindestens 5 cm",
       "Mindestens 20 cm",
-      "Sie ist frei wählbar"
+      "Mindestens 5 cm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der eingespitzte Fuß wird auf ein waagerecht verlaufendes Traufgebinde gedeckt. Die Gebinde laufen im Traufbereich durch die Verwendung von Einspitzern aus. Die Seitenüberdeckung beträgt beim Traufgebinde mindestens 12 cm.",
     "bildDatei": "/buch/lf09/traufausbildung-deutsche.webp",
@@ -1648,13 +1648,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus besteht der Anfangort bei der deutschen Deckung?",
     "optionen": [
-      "Aus der Stichplatte, der Anfangortplatte und eventuell der Zwischenortplatte",
-      "Nur aus einer einzigen Platte",
+      "Aus Firstplatten",
       "Aus Metallblechen",
-      "Aus Firstplatten"
+      "Aus der Stichplatte, der Anfangortplatte und eventuell der Zwischenortplatte",
+      "Nur aus einer einzigen Platte"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Das Anfangort besteht aus der Stichplatte und der Anfangortplatte und eventuell der Zwischenortplatte. Die Stichplatte wird bis zum Rücken der ersten Dachplatte des darunterliegenden Gebindes geführt; die Anfangortplatte bis zur zweiten Dachplatte. Dabei überdeckt die Anfangortplatte die Spitze der Stichplatte.",
     "bildDatei": "/buch/lf09/ortausbildung-deutsche.webp",
@@ -1669,13 +1669,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist der Überstand an der Ortkante bei der deutschen Deckung?",
     "optionen": [
-      "Etwa 4 bis 6 cm",
       "Etwa 1 cm",
+      "Etwa 4 bis 6 cm",
       "Etwa 20 cm",
       "Kein Überstand"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Ortplatten werden mit rundem Rücken ausgeführt. Der Überstand an der Ortkante beträgt etwa 4 bis 6 cm. Die Orte sollten immer eingebunden werden, aufgelegte Orte sind reparaturanfällig und die Regensicherheit ist gefährdet.",
     "bildDatei": "/buch/lf09/ortausbildung-deutsche.webp",
@@ -1690,13 +1690,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Überdeckungen müssen Firstgebinde aus 30 × 30 cm Platten mit Bogenschnitt aufweisen?",
     "optionen": [
-      "Seitenüberdeckung ≥ 12 cm, Höhenüberdeckung ≥ 10 cm",
       "Seitenüberdeckung ≥ 5 cm, Höhenüberdeckung ≥ 5 cm",
+      "Seitenüberdeckung ≥ 12 cm, Höhenüberdeckung ≥ 10 cm",
       "Seitenüberdeckung ≥ 20 cm, Höhenüberdeckung ≥ 20 cm",
       "Es gibt keine Vorgabe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Firstgebinde aus 30 × 30 cm bzw. 40 × 40 cm Platten mit Bogenschnitt: Seitenüberdeckung ≥ 12 cm, Höhenüberdeckung ≥ 10 cm. Firstgebinde werden aufgelegt und parallel zum First gedeckt.",
     "bildDatei": "/buch/lf09/gratausbildung-deutsche.webp",
@@ -1711,13 +1711,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Endorte am Grat bei der deutschen Deckung gedeckt?",
     "optionen": [
-      "Als Doppelorte oder Stichorte — Doppelorte werden gestaffelt über zwei oder mehrere Gebinde gedeckt",
+      "Nur mit Metallblechen",
       "Nur als aufgelegte Orte",
       "Gar nicht, der Grat bleibt offen",
-      "Nur mit Metallblechen"
+      "Als Doppelorte oder Stichorte — Doppelorte werden gestaffelt über zwei oder mehrere Gebinde gedeckt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Endorte am Grat werden als Doppelorte oder Stichorte gedeckt. Doppelorte werden gestaffelt, d. h. die Endortplatten werden über zwei oder mehrere Gebinde gedeckt. Der Anfangort am Grat wird als Stichort oder als stehend eingebundenes Ort gedeckt.",
     "bildDatei": "/buch/lf09/gratausbildung-deutsche.webp",
@@ -1808,15 +1808,15 @@
     "thema": "Deutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 365",
     "konfidenz": "hoch",
-    "text": "Der Nagelbedarf bei Schiefer betraegt {{3}} Naegel je Deckstein, bei Faserzement dagegen {{2}} Naegel plus ein Plattenhaken beim Format 40/40.",
+    "text": "Der Nagelbedarf bei Schiefer beträgt {{3}} Nägel je Deckstein, bei Faserzement dagegen {{2}} Nägel plus ein Plattenhaken beim Format 40/40.",
     "akzeptiert": {
-      "3": [
-        "3",
-        "drei"
-      ],
       "2": [
         "2",
         "zwei"
+      ],
+      "3": [
+        "3",
+        "drei"
       ]
     },
     "erklaerung": "Nagelbedarf: n_N = 3 · n_b bei Schiefer; n_N = 2 · n_b bei Faserzement, zusätzlich 1 Plattenhaken pro Platte beim Format 40/40. First- und Gratsteine werden mit vier Nägeln befestigt.",
@@ -1833,8 +1833,8 @@
     "frage": "Welche Merkmale hat die waagerechte Deckung?",
     "optionen": [
       "Rechteckplatten werden breitkant mit Höhen- und Seitenüberdeckung gedeckt, die Spitze wird abgesenkt",
-      "Rautenplatten werden diagonal verlegt",
       "Die Platten werden ohne Überdeckung gestoßen",
+      "Rautenplatten werden diagonal verlegt",
       "Die Deckung erfolgt mit Gebindesteigung"
     ],
     "korrekt": [
@@ -1876,8 +1876,8 @@
     "optionen": [
       "Seitenüberdeckung 11 cm, Höhenüberdeckung 9 cm, Plattenbedarf 9,72 Stück/m²",
       "Seitenüberdeckung 12 cm, Höhenüberdeckung 10 cm, Plattenbedarf 10,42 Stück/m²",
-      "Seitenüberdeckung 9 cm, Höhenüberdeckung 8 cm, Plattenbedarf 8,91 Stück/m²",
-      "Seitenüberdeckung 15 cm, Höhenüberdeckung 12 cm"
+      "Seitenüberdeckung 15 cm, Höhenüberdeckung 12 cm",
+      "Seitenüberdeckung 9 cm, Höhenüberdeckung 8 cm, Plattenbedarf 8,91 Stück/m²"
     ],
     "korrekt": [
       0
@@ -1993,13 +1993,13 @@
     "konfidenz": "hoch",
     "frage": "Womit wird die Spitzwinkeldeckung ausgeführt?",
     "optionen": [
-      "Mit rautenförmigen Schieferplatten mit gestutzten Ecken (Abschnitten)",
-      "Mit rechteckigen Platten",
+      "Mit Wellplatten",
       "Mit quadratischen Platten ohne Abschnitt",
-      "Mit Wellplatten"
+      "Mit rechteckigen Platten",
+      "Mit rautenförmigen Schieferplatten mit gestutzten Ecken (Abschnitten)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Spitzwinkeldeckung wird mit rautenförmigen Schieferplatten mit gestutzten Ecken (Abschnitten) ausgeführt. Für die Spitzschablonendeckung werden quadratische Faserzementplatten im Format 30 × 30 cm oder 40 × 40 cm verwendet. Die Regeldachneigung beträgt 30°.",
     "bildDatei": "/buch/lf09/spitzwinkel-deckschema.webp",
@@ -2012,7 +2012,7 @@
     "thema": "Spitzwinkeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 368 (Aufgaben S. 372)",
     "konfidenz": "hoch",
-    "text": "Der Schnurabstand bei der Spitzschablonendeckung mit Faserzementplatten ist S = Steinbreite geteilt durch 2 minus {{Ueberhang}}. Bei Schiefern gilt S = (Steinhoehe minus {{Abschnitt}}) geteilt durch 2 minus Ueberhang.",
+    "text": "Der Schnurabstand bei der Spitzschablonendeckung mit Faserzementplatten ist S = Steinbreite geteilt durch 2 minus {{Überhang}}. Bei Schiefern gilt S = (Steinhöhe minus {{Abschnitt}}) geteilt durch 2 minus Überhang.",
     "akzeptiert": {
       "Ueberhang": [
         "Ueberhang",
@@ -2039,9 +2039,9 @@
     "frage": "Wie groß muss der Überhang an der Spitze bei der Spitzwinkeldeckung mindestens sein?",
     "optionen": [
       "Mindestens 1 cm",
-      "Mindestens 5 cm",
+      "Kein Überhang nötig",
       "Mindestens 10 cm",
-      "Kein Überhang nötig"
+      "Mindestens 5 cm"
     ],
     "korrekt": [
       0
@@ -2059,13 +2059,13 @@
     "konfidenz": "hoch",
     "frage": "In welchem Format werden Rhombusplatten hergestellt?",
     "optionen": [
+      "Format 25/25",
       "Format 40/44 mit gestutzten seitlichen Ecken",
       "Format 30/30",
-      "Format 60/30",
-      "Format 25/25"
+      "Format 60/30"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Rhombusdeckung wird mit rhombenförmigen Platten im Format 40/44 ausgeführt, deren seitliche Ecken gestutzt sind. Bei einer Dachneigung ≥ 30° beträgt die Mindesthöhenüberdeckung 10 cm und der Schnurabstand höchstens 162 mm. Ist die Dachneigung ≥ 35°, reicht eine Höhenüberdeckung von 9 cm; der Schnurabstand ist dann höchstens 174 mm.",
     "bildDatei": "/buch/lf09/rhombusdeckung.webp",
@@ -2080,13 +2080,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdachneigung gilt für Spitzwinkelschablonen im Format 47/31 cm?",
     "optionen": [
-      "30°",
       "45°",
-      "60°",
-      "25°"
+      "25°",
+      "30°",
+      "60°"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Standardformate für Spitzwinkeldeckung mit Schiefer: 47/31 (Abschnitt 10,7 cm) → Mindest-DN 30°, Bedarf 18,27 Stück/m²; 43/29 → 30°, 22,03; 38/25 → 30°, 30,42; 36/24 (9,5) → 45°, 32,68; 33/21 (7,3) → 45°, 38,56; 30/20 → 60°, 46,08; 29/19 → 60°, 50,85; 26/18 → 60°, 62,77 Stück/m².",
     "bildDatei": "/buch/lf09/spitzwinkel-formate.webp",
@@ -2156,13 +2156,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Regeldachneigung der Rechteckdoppeldeckung mit Schieferplatten?",
     "optionen": [
-      "22°",
-      "25°",
+      "35°",
       "30°",
-      "35°"
+      "22°",
+      "25°"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Rechteckdoppeldeckung kann auf Schalung oder auf Lattung erfolgen. Die Regeldachneigung beträgt 22° bei Deckung mit Schieferplatten bzw. 25° bei Deckung mit Faserzementplatten.",
     "bildDatei": "/buch/lf09/rechteckdoppel-schema.webp",
@@ -2177,13 +2177,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch ist die Rechteckdoppeldeckung gekennzeichnet?",
     "optionen": [
-      "Deckung im halben Verband mit 3 bis 6 mm Stoßfuge, das dritte Deckgebinde überdeckt das erste",
-      "Deckung ohne Verband und ohne Fuge",
       "Deckung mit Gebindesteigung",
-      "Deckung nur mit Rautenplatten"
+      "Deckung im halben Verband mit 3 bis 6 mm Stoßfuge, das dritte Deckgebinde überdeckt das erste",
+      "Deckung nur mit Rautenplatten",
+      "Deckung ohne Verband und ohne Fuge"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Rechteckdoppeldeckung erfolgt im halben Verband mit einer Stoßfuge von 3 bis 6 mm Breite. Rechteckschablonen werden auf Schalung oder auf Lattung gedeckt. Diese Deckung wird als Doppeldeckung ausgeführt, das dritte Deckgebinde überdeckt das erste. Die Überdeckung richtet sich nach der Schiefergröße und der Dachneigung.",
     "bildDatei": "/buch/lf09/rechteckdoppel-schema.webp",
@@ -2196,7 +2196,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 370, 374",
     "konfidenz": "hoch",
-    "text": "Der maximale Lattenabstand bei der Doppeldeckung ergibt sich aus (Decksteinhoehe minus Mindesthoehenueberdeckung) geteilt durch {{2}}. Beim Plattenformat 30 mal 60 cm mit 10 cm Doppeldeckung sind das {{25}} cm.",
+    "text": "Der maximale Lattenabstand bei der Doppeldeckung ergibt sich aus (Decksteinhoehe minus Mindesthöhenüberdeckung) geteilt durch {{2}}. Beim Plattenformat 30 mal 60 cm mit 10 cm Doppeldeckung sind das {{25}} cm.",
     "akzeptiert": {
       "2": [
         "2",
@@ -2217,7 +2217,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch bei einer Überdeckung von {ue} cm. Berechne den Schnurabstand bei der Doppeldeckung.",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch bei einer Überdeckung von {ü} cm. Berechne den Schnurabstand bei der Doppeldeckung.",
     "parameter": [
       {
         "name": "hoehe",
@@ -2256,7 +2256,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Stoßfuge {fuge} cm. Berechne die Deckfläche einer Platte.",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Stoßfuge {fuge} cm. Berechne die Deckfläche einer Platte.",
     "parameter": [
       {
         "name": "hoehe",
@@ -2311,7 +2311,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Stoßfuge {fuge} cm. Berechne den Plattenbedarf pro m².",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Stoßfuge {fuge} cm. Berechne den Plattenbedarf pro m².",
     "parameter": [
       {
         "name": "hoehe",
@@ -2413,13 +2413,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Überdeckung und welcher Bedarf gelten bei Schieferplatten 30/60 und einer Dachneigung ab 30°?",
     "optionen": [
-      "Überdeckung 10 cm, Bedarf 13,33 Stück/m²",
-      "Überdeckung 12 cm, Bedarf 13,66 Stück/m²",
+      "Überdeckung 6 cm, Bedarf 12,35 Stück/m²",
       "Überdeckung 8 cm, Bedarf 12,82 Stück/m²",
-      "Überdeckung 6 cm, Bedarf 12,35 Stück/m²"
+      "Überdeckung 12 cm, Bedarf 13,66 Stück/m²",
+      "Überdeckung 10 cm, Bedarf 13,33 Stück/m²"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach der Tabelle Standardformate der Schieferplatten (Breite vor Höhe!), Format 30/60: ≥ 22° → Ü 12 cm, 13,66 Stück/m²; ≥ 30° → Ü 10 cm, 13,33; ≥ 40° → Ü 8 cm, 12,82; ≥ 50° → Ü 6 cm, 12,35 Stück/m².",
     "bildDatei": "/buch/lf09/schieferplatten-formate.webp",
@@ -2434,13 +2434,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Rechteckschablonen auf Vollschalung bzw. auf Lattung befestigt?",
     "optionen": [
-      "Vollschalung: mindestens 2 Schiefernägel oder 2 Schieferstifte; Lattung: 1 Klammerhaken oder 1 Einschlaghaken",
-      "Immer nur mit einem Nagel",
       "Nur mit Klebstoff",
-      "Vollschalung mit Haken, Lattung mit Nägeln"
+      "Vollschalung mit Haken, Lattung mit Nägeln",
+      "Vollschalung: mindestens 2 Schiefernägel oder 2 Schieferstifte; Lattung: 1 Klammerhaken oder 1 Einschlaghaken",
+      "Immer nur mit einem Nagel"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Befestigung pro Schiefer: Vollschalung mindestens 2 Schiefernägel oder 2 Schieferstifte; Lattung 1 Klammerhaken oder 1 Einschlaghaken. Bei Lattendeckung müssen die Mindestlattenquerschnitte beachtet werden.",
     "bildDatei": "/buch/lf09/schieferplatten-formate.webp",
@@ -2456,9 +2456,9 @@
     "frage": "Unter welcher Bedingung darf die Regeldachneigung der Rechteckdoppeldeckung um 4° unterschritten werden?",
     "optionen": [
       "Bei Lattendeckung, wenn eine naht- und perforationsgesicherte Unterdeckung ausgeführt wird",
+      "Eine Unterschreitung ist nie zulässig",
       "Immer ohne weitere Maßnahmen",
-      "Nur bei Schalung",
-      "Eine Unterschreitung ist nie zulässig"
+      "Nur bei Schalung"
     ],
     "korrekt": [
       0
@@ -2476,13 +2476,13 @@
     "konfidenz": "hoch",
     "frage": "Was zeichnet Universal- bzw. Vario-Schablonen aus?",
     "optionen": [
+      "Sie sind nur für Flachdächer",
       "Die symmetrische Decksteinform ermöglicht Rechts- und Linksdeckung sowie Deckung im Hochformat",
-      "Sie sind besonders dick",
       "Sie brauchen keine Befestigung",
-      "Sie sind nur für Flachdächer"
+      "Sie sind besonders dick"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Decksteine entstehen aus quadratischen Schiefern (30 × 30 cm, 25 × 25 cm) mit einem symmetrischen Bogenschnitt. Dadurch hat der Deckstein zwei Fersen, die Rechts- und Linksdeckung sowie eine Deckung im Hochformat (nur Wand) ermöglichen. Die Deckregeln entsprechen der Deckung mit Bogenschnittschablonen.",
     "bildDatei": "/buch/lf09/universalschablonen.webp",
@@ -2497,13 +2497,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sollten Reparaturschiefer aus derselben Grube und mit derselben Dicke verwendet werden?",
     "optionen": [
-      "Damit sie in Farbe, Struktur und Dicke zur vorhandenen Deckung passen",
       "Weil andere Schiefer nicht haltbar sind",
+      "Weil es gesetzlich vorgeschrieben ist",
       "Aus Kostengründen",
-      "Weil es gesetzlich vorgeschrieben ist"
+      "Damit sie in Farbe, Struktur und Dicke zur vorhandenen Deckung passen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei Schieferdeckungen sollten Schiefer aus derselben Grube und mit derselben Dicke verwendet werden. So passt der Reparaturschiefer optisch und technisch zur vorhandenen Deckung.",
     "bildDatei": "/buch/lf09/reparaturen-einbauteile.webp",
@@ -2519,8 +2519,8 @@
     "frage": "Wozu dienen Reparaturhaken bzw. Plattenhalter?",
     "optionen": [
       "Um eine Blankbefestigung zu vermeiden — sie werden auf der Schalung befestigt und halten den Schiefer",
-      "Zum Anheben schwerer Platten",
       "Zur Befestigung der Dachrinne",
+      "Zum Anheben schwerer Platten",
       "Als Schneefanggitter"
     ],
     "korrekt": [
@@ -2539,13 +2539,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Sicherheitsdachhaken bei Schiefer- und Faserzementdeckungen befestigt?",
     "optionen": [
+      "Auf der Deckung aufgeklebt",
       "Nur an den Dachsparren, mit Metallunterlage oder Rastnagel eingedeckt",
       "Nur an den Dachlatten",
-      "Auf der Deckung aufgeklebt",
       "Sie sind nicht zulässig"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Sicherheitsdachhaken werden nur an den Dachsparren befestigt und können durch eine Metallunterlage oder einen Rastnagel eingedeckt werden. Auf dem eingeschlagenen Rastnagel liegt der Dachhaken auf, so wird verhindert, dass die Dachplatten unter Druck brechen.",
     "bildDatei": "/buch/lf09/reparaturen-einbauteile.webp",
@@ -2560,13 +2560,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Dächer mit ungleichen Dachneigungen ausgemittelt?",
     "optionen": [
-      "Über die Ansichten (Vorder- und/oder Seitenansicht) oder die Dachprofile — nicht allein über die Draufsicht",
-      "Nur über die Draufsicht mit Winkelhalbierenden",
       "Gar nicht, das geht nur bei gleichen Neigungen",
+      "Nur über die Draufsicht mit Winkelhalbierenden",
+      "Über die Ansichten (Vorder- und/oder Seitenansicht) oder die Dachprofile — nicht allein über die Draufsicht",
       "Nur rechnerisch"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Dächer mit Dachflächen ungleicher Dachneigungen können in der Draufsicht nur über die Ansichten (Vorder- und/oder Seitenansicht) oder die Dachprofile ausgemittelt werden. Bei schiefwinkligen Grundrissen müssen hier weitere Ansichten in die Bildebene eingeführt werden.",
     "bildDatei": "/buch/lf09/dachausmittlung-ungleich.webp",
@@ -2581,13 +2581,13 @@
     "konfidenz": "hoch",
     "frage": "Wo verlaufen Grat- und Kehllinien bei ungleichen Dachneigungen im Grundriss?",
     "optionen": [
+      "Immer als Winkelhalbierende",
       "Immer näher an der Traufe mit der steileren Dachneigung",
-      "Genau in der Mitte",
       "Immer näher an der flacheren Traufe",
-      "Immer als Winkelhalbierende"
+      "Genau in der Mitte"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei zusammengesetzten Grundrissen werden zweckmäßige Teilgrundrisse gebildet, um die Verfallungen zu bestimmen. In den Anfallpunkten treffen in der Regel immer drei Dachlinien zusammen. Die Grat- und Kehllinien verlaufen im Grundriss immer näher an der Traufe mit der steileren Dachneigung.",
     "bildDatei": "/buch/lf09/walmdach-ungleich-konstruktion.webp",
@@ -2602,13 +2602,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Hölzer eignen sich für Holzschindeldeckungen?",
     "optionen": [
-      "Lärche, Rot-Zeder (WRC), Weiß-Zeder, Alaska-Zeder und Fichte",
-      "Buche und Eiche",
       "Kiefer und Pappel",
-      "Nur Tropenhölzer"
+      "Lärche, Rot-Zeder (WRC), Weiß-Zeder, Alaska-Zeder und Fichte",
+      "Nur Tropenhölzer",
+      "Buche und Eiche"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Zur Dachdeckung und Außenwandbekleidung werden gesägte oder gespaltene Schindeln aus europäischen oder nordamerikanischen Hölzern verwendet: Lärche (Wandbekleidung, Dachdeckung, meist kleinformatig), Rot-Zeder WRC (Dachdeckung, Wandbekleidung), Weiß-Zeder EWC (Wandbekleidung), Alaska-Zeder (Dachdeckung, Farbreaktionen mit Zink) und Fichte (Wandbekleidung).",
     "bildDatei": "/buch/lf09/schindelhoelzer-tab.webp",
@@ -2621,13 +2621,13 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 382 (Aufgaben S. 389)",
     "konfidenz": "hoch",
-    "text": "Die Regeldachneigung bei Holzschindeln betraegt {{71}} Grad bei zweilagiger Deckung und {{22}} Grad bei dreilagiger Deckung.",
+    "text": "Die Regeldachneigung bei Holzschindeln beträgt {{71}} Grad bei zweilagiger Deckung und {{22}} Grad bei dreilagiger Deckung.",
     "akzeptiert": {
-      "71": [
-        "71"
-      ],
       "22": [
         "22"
+      ],
+      "71": [
+        "71"
       ]
     },
     "erklaerung": "Die Regeldachneigung beträgt bei zweilagiger Deckung 71° (dritte Lage überdeckt erste Lage) und bei dreilagiger Deckung 22° (vierte Lage überdeckt erste Lage). Allgemein gilt: Je steiler die Dachneigung, desto höher ist die Lebensdauer der Holzschindeldeckung.",
@@ -2643,13 +2643,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist eine gute Hinterlüftung bei Holzschindeln besonders wichtig?",
     "optionen": [
-      "Damit die Deckung schnell trocknet und Fäulnis durch anhaltende Feuchtigkeit vermieden wird",
+      "Sie ist nicht wichtig",
       "Damit die Schindeln heller werden",
-      "Damit sie leichter werden",
-      "Sie ist nicht wichtig"
+      "Damit die Deckung schnell trocknet und Fäulnis durch anhaltende Feuchtigkeit vermieden wird",
+      "Damit sie leichter werden"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Durch eine gute Hinterlüftung der Holzschindeln kann die Deckung schnell trocknen, Fäulnis durch anhaltende Feuchtigkeit wird verhindert. Holzschindeln sollten daher nicht direkt auf der Dachbahn verlegt werden, sondern auf einer Konterlattung.",
     "bildDatei": "/buch/lf09/lattenquerschnitte-schindeln.webp",
@@ -2662,7 +2662,7 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 382 (Aufgaben S. 389)",
     "konfidenz": "hoch",
-    "text": "Der Schindelgrundbedarf in Breitenmetern berechnet sich als Dachflaeche in Quadratmetern geteilt durch den {{Reihenabstand}} in Metern.",
+    "text": "Der Schindelgrundbedarf in Breitenmetern berechnet sich als Dachfläche in Quadratmetern geteilt durch den {{Reihenabstand}} in Metern.",
     "akzeptiert": {
       "Reihenabstand": [
         "Reihenabstand"
@@ -2720,13 +2720,13 @@
     "konfidenz": "hoch",
     "frage": "Mit welchen Befestigungsmitteln werden Holzschindeln befestigt?",
     "optionen": [
-      "Edelstahlstifte mit rauem, gerilltem oder geschraubtem Schaft",
       "Verzinkte Nägel",
-      "Kupfernägel",
-      "Klebstoff"
+      "Klebstoff",
+      "Edelstahlstifte mit rauem, gerilltem oder geschraubtem Schaft",
+      "Kupfernägel"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zur Befestigung werden Edelstahlstifte mit rauem, gerilltem oder geschraubtem Schaft verwendet. Verzinkte Nägel sind nicht ausreichend korrosionsbeständig und können zu Verfärbungen an der Schindeloberfläche führen. Edelstahlklammern sollten wegen ihrer geringen Auszugsfestigkeit nur in Ausnahmen verwendet werden.",
     "bildDatei": "/buch/lf09/schindelbefestigung.webp",
@@ -2739,13 +2739,13 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 383 (Aufgaben S. 389)",
     "konfidenz": "hoch",
-    "text": "Jede Schindel ueber {{60}} mm Breite ist mit zwei Naegeln zu befestigen, die {{20}} mm tief in die Unterkonstruktion eingeschlagen werden. Schindeln ueber 250 mm Breite werden geteilt.",
+    "text": "Jede Schindel über {{60}} mm Breite ist mit zwei Nägeln zu befestigen, die {{20}} mm tief in die Unterkonstruktion eingeschlagen werden. Schindeln über 250 mm Breite werden geteilt.",
     "akzeptiert": {
-      "60": [
-        "60"
-      ],
       "20": [
         "20"
+      ],
+      "60": [
+        "60"
       ]
     },
     "erklaerung": "Jede Schindel über 60 mm Breite ist mit zwei Nägeln zu befestigen, die 20 mm tief in die Unterkonstruktion eingeschlagen werden. Auch breite Schindeln werden nur mit zwei Stiften befestigt. Schindeln über 250 mm Breite werden geteilt, damit die Quell- und Schwindbewegungen die Schindel nicht lockern oder spalten.",
@@ -2761,13 +2761,13 @@
     "konfidenz": "hoch",
     "frage": "Wie breit müssen die Bewegungsfugen zwischen Holzschindeln sein?",
     "optionen": [
-      "3 bis 5 mm, mit einem Fugenversatz von mindestens 30 mm",
       "0 mm — die Schindeln stoßen dicht aneinander",
       "20 bis 30 mm",
+      "3 bis 5 mm, mit einem Fugenversatz von mindestens 30 mm",
       "Die Fugenbreite ist beliebig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Da die Holzschindeln nach dem Verlegen ‚arbeiten', müssen Bewegungsfugen zwischen den Schindeln vorgesehen werden. Die Fugenbreite beträgt im Allgemeinen zwischen 3 mm und 5 mm. Der Fugenversatz beträgt mindestens 30 mm, zwischen der ersten und der dritten Reihe noch mindestens 20 mm.",
     "bildDatei": "/buch/lf09/schindelbefestigung.webp",
@@ -2782,13 +2782,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Metalle vertragen sich nicht mit Zedernholzschindeln?",
     "optionen": [
-      "Kupfer und Zink — sie werden durch ausgewaschene Holzschutzstoffe angegriffen",
       "Edelstahl und Titan",
+      "Kupfer und Zink — sie werden durch ausgewaschene Holzschutzstoffe angegriffen",
       "Aluminium und Blei",
       "Alle Metalle sind unbedenklich"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Vor allem Zedernholzschindeln (aber auch andere Holzarten) und Holzschutzmittel enthalten Stoffe, die durch den Regen ausgewaschen werden und verschiedene Metalle (insbesondere Kupfer und Zink) verfärben und zerstören können. Bei der Materialauswahl der Metalle muss daher auf ihre Verträglichkeit mit den verwendeten Schindeln geachtet werden.",
     "bildDatei": "/buch/lf09/schindelbefestigung.webp",
@@ -2803,13 +2803,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Arten der Gratdeckung gibt es bei Holzschindeln?",
     "optionen": [
-      "Aufgelegter Grat, eingebundener aufgelegter Grat und Schwenkgrat",
-      "Nur der aufgelegte Grat",
+      "Grate werden nicht gedeckt",
       "Nur Metallgrate",
-      "Grate werden nicht gedeckt"
+      "Nur der aufgelegte Grat",
+      "Aufgelegter Grat, eingebundener aufgelegter Grat und Schwenkgrat"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Es gibt verschiedene Möglichkeiten der Gratdeckung: aufgelegter Grat (Schindeln werden von der Fläche zum Grat verlegt und an der Gratlinie diagonal zugeschnitten), eingebundener aufgelegter Grat (technisch sehr gute Lösung) und Schwenkgrat (Schindeln am Grat werden keilförmig zugeschnitten).",
     "bildDatei": "/buch/lf09/schindel-grat-schwenkgrat.webp",
@@ -2845,13 +2845,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Deckunterlagen kommen für Bitumenschindeldeckungen infrage?",
     "optionen": [
-      "Schalung aus Vollholz (b = 8...15 cm, d ≥ 24 mm), Holzwerkstoffplatten oder Leichtbeton",
-      "Nur Lattung",
       "Nur Stahlblech",
-      "Beliebiger Untergrund"
+      "Schalung aus Vollholz (b = 8...15 cm, d ≥ 24 mm), Holzwerkstoffplatten oder Leichtbeton",
+      "Beliebiger Untergrund",
+      "Nur Lattung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bitumenschindeldeckungen werden als Doppeldeckungen ausgeführt. Als Deckunterlage kommen infrage: Schalung aus Vollholz (b = 8...15 cm, d ≥ 24 mm), Schalung aus Holzwerkstoffplatten (BFU 100 G, d ≥ 22 mm) und Leichtbeton (vernietbare Fugen).",
     "bildDatei": "/buch/lf09/bitumenschindel-formen.webp",
@@ -2866,13 +2866,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Regeldachneigung bei Bitumen-Rechteckschindeln und einer Sparrenlänge bis 10 m?",
     "optionen": [
-      "Mindestens 15°",
+      "Mindestens 30°",
       "Mindestens 20°",
-      "Mindestens 25°",
-      "Mindestens 30°"
+      "Mindestens 15°",
+      "Mindestens 25°"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Regeldachneigung in Abhängigkeit von der Sparrenlänge und Schindelform: Rechteck ≤ 10 m → ≥ 15°, > 10 m → ≥ 20°; Biber und Dreieck ≤ 10 m → ≥ 20°, > 10 m → ≥ 25°; Wabe ≤ 10 m → ≥ 25°, > 10 m → ≥ 30°.",
     "bildDatei": "/buch/lf09/bitumen-regeldachneigung.webp",
@@ -2885,7 +2885,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 386",
     "konfidenz": "hoch",
-    "text": "Die Naht- und Stossueberdeckung bei Bitumenschindeln betraegt {{8}} cm. Die Bahnen werden mit korrosionsgeschuetzten Breitkopfnaegeln in einem Abstand von etwa {{10}} cm befestigt.",
+    "text": "Die Naht- und Stossueberdeckung bei Bitumenschindeln beträgt {{8}} cm. Die Bahnen werden mit korrosionsgeschützten Breitkopfnägeln in einem Abstand von etwa {{10}} cm befestigt.",
     "akzeptiert": {
       "8": [
         "8",
@@ -2909,13 +2909,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Nägel werden bei Bitumenschindeln und Dachneigungen über 60° verwendet?",
     "optionen": [
-      "Sechs Nägel je Schindel (bei ≤ 60° sind es vier)",
+      "Acht Nägel",
       "Zwei Nägel",
-      "Immer vier Nägel",
-      "Acht Nägel"
+      "Sechs Nägel je Schindel (bei ≤ 60° sind es vier)",
+      "Immer vier Nägel"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Befestigung erfolgt mit mindestens vier Breitkopfnägeln in einer Nagellinie etwa 2 cm über den Schürzeneinschnitten. Liegt die Dachneigung über 60°, sind die Bitumenschindeln zusätzlich mit zwei Nägeln an den beiden oberen äußeren Ecken oder in der Nagellinie zu nageln.",
     "bildDatei": "/buch/lf09/bitumen-nagelung.webp",
@@ -2928,7 +2928,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 388 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch bei einer Überdeckung von {ue} cm. Berechne den Schnurabstand (sichtbare Deckhöhe).",
+    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch bei einer Überdeckung von {ü} cm. Berechne den Schnurabstand (sichtbare Deckhöhe).",
     "parameter": [
       {
         "name": "hoehe",
@@ -2967,7 +2967,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 388 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Bewegungsfuge {fuge} cm. Berechne den Materialbedarf pro m².",
+    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Bewegungsfuge {fuge} cm. Berechne den Materialbedarf pro m².",
     "parameter": [
       {
         "name": "hoehe",
@@ -3030,13 +3030,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Traufe bei Bitumenschindeln gedeckt?",
     "optionen": [
-      "Über ein Traufblech wird das erste Gebinde umgekehrt (mit den Schlitzen nach oben) als Ansetzgebinde verlegt",
       "Ohne Traufblech direkt auf die Schalung",
       "Mit Metallformteilen",
-      "Mit doppelter Vordeckung ohne Blech"
+      "Mit doppelter Vordeckung ohne Blech",
+      "Über ein Traufblech wird das erste Gebinde umgekehrt (mit den Schlitzen nach oben) als Ansetzgebinde verlegt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Über ein Traufblech wird das erste Gebinde umgekehrt — mit den Schlitzen nach oben — verlegt. Die Schindel kann auch oberhalb der Schlitze abgeschnitten und als Ansetzgebinde verwendet werden. Dadurch wird eine volle Verklebung mit dem darüberliegenden Gebinde erreicht. Das erste Gebinde soll mit der Traufblechabkantung abschließen.",
     "bildDatei": "/buch/lf09/bitumen-traufe-ortgang.webp",
@@ -3049,7 +3049,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 387",
     "konfidenz": "hoch",
-    "text": "Am Ortgang wird an der Dachkante eine mindestens {{3}} cm hohe Dreikantleiste befestigt, auf der die Vordeckung und die Gebinde hochgefuehrt und mit Stiften befestigt werden.",
+    "text": "Am Ortgang wird an der Dachkante eine mindestens {{3}} cm hohe Dreikantleiste befestigt, auf der die Vordeckung und die Gebinde hochgeführt und mit Stiften befestigt werden.",
     "akzeptiert": {
       "3": [
         "3",
@@ -3069,13 +3069,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Mindestüberdeckung bei der Firstausbildung mit Bitumenschindeln?",
     "optionen": [
-      "Bei Doppeldeckung 4,5 cm — die Höhenüberdeckung entspricht der Überdeckung in der Fläche",
-      "Immer 10 cm",
       "Immer 20 cm",
+      "Immer 10 cm",
+      "Bei Doppeldeckung 4,5 cm — die Höhenüberdeckung entspricht der Überdeckung in der Fläche",
       "Keine Überdeckung nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Firstausbildung: Der First wird entgegen der Wetterrichtung eingedeckt. Dazu werden Firstkappen verwendet, die aus den Bitumenschindeln zugeschnitten werden (Teilstücke mindestens 200 mm breit). Die Mindestüberdeckung in Längsrichtung beträgt als Doppeldeckung 4,5 cm. Die Höhenüberdeckung entspricht der Überdeckung in der Fläche.",
     "bildDatei": "/buch/lf09/bitumen-grat-kehle.webp",
@@ -3090,13 +3090,13 @@
     "konfidenz": "hoch",
     "frage": "Wovon ist die Regeldachneigung bei Faserzement-Wellplattendeckungen abhängig?",
     "optionen": [
-      "Von der Dachtiefe (Entfernung Traufe–First) und der Fugensicherung",
       "Nur von der Plattenfarbe",
       "Nur von der Gebäudehöhe",
+      "Von der Dachtiefe (Entfernung Traufe–First) und der Fugensicherung",
       "Sie ist immer gleich"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Regeldachneigung ist abhängig von der Dachtiefe, dem Abstand von der Traufe zum First und der Ausbildung der Höhenüberdeckung. Es gilt der Grundsatz: Je größer die Dachtiefe, desto steiler sollte die Dachneigung sein. Entfernung Traufe–First ≤ 10 m → ≥ 9°; > 10...20 m → ≥ 10°; > 20...30 m → ≥ 12°; > 30 m → ≥ 14°.",
     "bildDatei": "/buch/lf09/wellplatten-regeldachneigung.webp",
@@ -3109,16 +3109,16 @@
     "thema": "Wellplatten",
     "quelle": "Grundstufe Bautechnik, Buch S. 392, 394 (Aufgaben S. 394)",
     "konfidenz": "hoch",
-    "text": "Standardwellplatten werden einheitlich mit einer Hoehenueberdeckung von {{200}} mm gedeckt. Die Seitenueberdeckung betraegt beim Profil 177/51 {{47}} mm und beim Profil 130/30 {{90}} mm.",
+    "text": "Standardwellplatten werden einheitlich mit einer Höhenüberdeckung von {{200}} mm gedeckt. Die Seitenüberdeckung beträgt beim Profil 177/51 {{47}} mm und beim Profil 130/30 {{90}} mm.",
     "akzeptiert": {
-      "200": [
-        "200"
-      ],
       "47": [
         "47"
       ],
       "90": [
         "90"
+      ],
+      "200": [
+        "200"
       ]
     },
     "erklaerung": "Standardwellplatten werden einheitlich mit einer Höhenüberdeckung von 200 mm gedeckt. Die Seitenüberdeckung ist profilabhängig: Profil 177/51 → 47 mm, Profil 130/30 → 90 mm. Daraus ergeben sich die Deckbreiten 873 mm bzw. 910 mm.",
@@ -3134,13 +3134,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Wellenberge hat eine Standardwellplatte im Profil 177/51?",
     "optionen": [
-      "5 Wellenberge bei 920 mm Plattenbreite",
-      "8 Wellenberge bei 1000 mm Plattenbreite",
       "3 Wellenberge",
-      "10 Wellenberge"
+      "5 Wellenberge bei 920 mm Plattenbreite",
+      "10 Wellenberge",
+      "8 Wellenberge bei 1000 mm Plattenbreite"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Profil 177/51: Plattenbreite 920 mm, 5 Wellenberge, Nutzbreite 873 mm. Profil 130/30: Plattenbreite 1000 mm, 8 Wellenberge, Nutzbreite 910 mm. Standardwellplatten gibt es in den Längen 2500, 2000, 1600 und 1250 mm, Kurzwellplatten mit 625 mm.",
     "bildDatei": "/buch/lf09/wellplatten-standardformate.webp",
@@ -3155,13 +3155,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Wellplatten dürfen an einem Kreuzungspunkt übereinanderliegen?",
     "optionen": [
-      "Höchstens drei — der vierte Eckenschnitt verhindert, dass vier Platten übereinanderliegen",
       "Vier Platten",
       "Zwei Platten",
-      "Beliebig viele"
+      "Beliebig viele",
+      "Höchstens drei — der vierte Eckenschnitt verhindert, dass vier Platten übereinanderliegen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Standardwellplatten sind einheitlich für eine Deckrichtung von rechts nach links (Linksdeckung) vorbereitet und dafür an den entsprechenden Ecken gestutzt (Eckenschnitt). Dadurch wird verhindert, dass am Kreuzungspunkt der Seiten- und Längenüberdeckung vier Wellplatten übereinanderliegen. Der Abstand im Bereich der Eckenschnitte beträgt 5 bis 10 mm.",
     "bildDatei": "/buch/lf09/satteldach-wellplatten.webp",
@@ -3176,13 +3176,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Maße gelten für Kurzwellplatten?",
     "optionen": [
-      "Länge 625 mm, Höhenüberdeckung 125 mm, Lattenabstand 500 mm",
       "Länge 2500 mm, Höhenüberdeckung 200 mm",
       "Länge 1250 mm, Höhenüberdeckung 100 mm",
-      "Länge 1000 mm, Höhenüberdeckung 90 mm"
+      "Länge 1000 mm, Höhenüberdeckung 90 mm",
+      "Länge 625 mm, Höhenüberdeckung 125 mm, Lattenabstand 500 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Kurzwellplatten haben eine einheitliche Länge von 625 mm. Die Höhenüberdeckung ist 125 mm, der Lattenabstand 500 mm. Die Seitenüberdeckung beträgt 47 mm. Die Deckunterlage besteht aus Latten mit einem Mindestquerschnitt 4 × 6 cm.",
     "bildDatei": "/buch/lf09/satteldach-wellplatten.webp",
@@ -3197,13 +3197,13 @@
     "konfidenz": "hoch",
     "frage": "Welche zusätzliche Maßnahme ist bei der Wellplattenverlegung ab 5° Dachneigung nötig?",
     "optionen": [
+      "Die Platten müssen verklebt werden",
       "Die Seitenüberdeckungen müssen zusätzlich abgedichtet werden (Kitteinlage)",
       "Es sind keine zusätzlichen Maßnahmen nötig",
-      "Die Platten müssen verklebt werden",
       "Die Dachneigung muss erhöht werden"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei der Sonderverlegung ab 5° Dachneigung werden die Seitenüberdeckungen zusätzlich abgedichtet. Die Kitteinlage hat einen Durchmesser d = 8 mm und wird dann 30 mm angeordnet. Kurzwellplatten können bei Dachneigungen ≥ 16° anstatt mit Kitteinlagen auch mit Unterspannung gedeckt werden.",
     "bildDatei": "/buch/lf09/wellplatten-profile.webp",
@@ -3218,13 +3218,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Grate bei Wellplattendeckungen ausgebildet?",
     "optionen": [
-      "Mit korbbogenförmigen Gratkappen mit Muffen, die auf Gratbohlen befestigt werden",
       "Mit Bitumenbahnen",
+      "Grate werden offen gelassen",
       "Mit Schieferplatten",
-      "Grate werden offen gelassen"
+      "Mit korbbogenförmigen Gratkappen mit Muffen, die auf Gratbohlen befestigt werden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Grate werden mit korbbogenförmigen Gratkappen mit Muffen eingedeckt, die an Gratbohlen mit mindestens 2 Schrauben befestigt werden. Die Breite der Gratbohlen/-latten muss mindestens 4 cm betragen, die Höhe ist abhängig u. a. von der Dachneigung. Die Gratkappen dürfen nicht auf der Flächendeckung aufliegen.",
     "bildDatei": "/buch/lf09/grat-kehle-wellplatten.webp",
@@ -3240,9 +3240,9 @@
     "frage": "Um welches Maß sollen die Wellplatten bei einer vertieften Kehle die Kehllinie überstehen?",
     "optionen": [
       "Bei nicht vertieften Kehlen 10 cm, bei vertieften 12 cm ab Kehlmitte",
-      "Immer 5 cm",
       "Immer 30 cm",
-      "Kein Überstand nötig"
+      "Kein Überstand nötig",
+      "Immer 5 cm"
     ],
     "korrekt": [
       0
@@ -3260,13 +3260,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Dachneigungswechsel bei Wellplattendeckungen ausgeführt?",
     "optionen": [
-      "Mit Wellübergangshauben — bei geringen Neigungsdifferenzen (≤ 15°) auch mit plastischem Kitt",
       "Mit Bitumenschindeln",
       "Mit Schieferplatten",
-      "Dachneigungswechsel sind nicht möglich"
+      "Dachneigungswechsel sind nicht möglich",
+      "Mit Wellübergangshauben — bei geringen Neigungsdifferenzen (≤ 15°) auch mit plastischem Kitt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Dachneigungswechsel werden mit Wellübergangshauben im entsprechenden Winkel ausgebildet. Geringere Neigungsdifferenzen (≤ 15°) können auch mit plastischem Kitt und genügend Überstand regensicher ausgebildet werden.",
     "bildDatei": "/buch/lf09/einbauteile-wellplatten.webp",

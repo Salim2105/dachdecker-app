@@ -9,9 +9,9 @@
     "frage": "Aus welchen drei Grundstoffen besteht Beton?",
     "optionen": [
       "Zement, Gesteinskörnung und Wasser",
+      "Bitumen, Kies und Sand",
       "Kalk, Sand und Wasser",
-      "Zement, Kalk und Gips",
-      "Bitumen, Kies und Sand"
+      "Zement, Kalk und Gips"
     ],
     "korrekt": [
       0
@@ -44,6 +44,9 @@
     "konfidenz": "hoch",
     "text": "Zur Zementherstellung werden {{Kalkstein}} und {{Ton}} im Drehrohrofen bei etwa {{1450}} °C zu Klinker gebrannt.",
     "akzeptiert": {
+      "1450": [
+        "1450"
+      ],
       "Kalkstein": [
         "Kalkstein",
         "Kalk"
@@ -51,9 +54,6 @@
       "Ton": [
         "Ton",
         "Tonmergel"
-      ],
-      "1450": [
-        "1450"
       ]
     },
     "erklaerung": "Die Rohstoffe Kalkstein und Ton werden gemahlen, gemischt und bei ca. 1450 °C im Drehrohrofen zu Klinker gesintert. Danach wird der Klinker mit Gips fein gemahlen.",
@@ -71,8 +71,8 @@
     "optionen": [
       "Er regelt die Erstarrungszeit des Zements",
       "Er erhöht die Druckfestigkeit",
-      "Er macht den Zement frostbeständig",
-      "Er färbt den Zement grau"
+      "Er färbt den Zement grau",
+      "Er macht den Zement frostbeständig"
     ],
     "korrekt": [
       0
@@ -90,13 +90,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Normalzement besteht ausschließlich aus Portlandzementklinker und Gips?",
     "optionen": [
-      "CEM I (Portlandzement)",
       "CEM II (Portlandkompositzement)",
-      "CEM III (Hochofenzement)",
-      "CEM V (Kompositzement)"
+      "CEM V (Kompositzement)",
+      "CEM I (Portlandzement)",
+      "CEM III (Hochofenzement)"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "CEM I (Portlandzement) besteht zu mindestens 95 % aus Portlandzementklinker. CEM II-V enthalten zusätzlich andere Hauptbestandteile wie Hüttensand, Puzzolane oder Flugasche.",
     "bildDatei": "/buch/lf04/normalzemente-tabelle.webp",
@@ -141,13 +141,13 @@
     "konfidenz": "hoch",
     "frage": "Welche drei Festigkeitsklassen gibt es bei Normalzement?",
     "optionen": [
-      "32,5 – 42,5 – 52,5",
-      "20,0 – 30,0 – 40,0",
       "C20 – C30 – C40",
-      "B250 – B350 – B500"
+      "B250 – B350 – B500",
+      "20,0 – 30,0 – 40,0",
+      "32,5 – 42,5 – 52,5"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Festigkeitsklassen 32,5, 42,5 und 52,5 geben die Mindestdruckfestigkeit in N/mm² nach 28 Tagen an.",
     "bildDatei": "/buch/lf04/festigkeitsklassen-zement.webp",
@@ -162,13 +162,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeuten die Buchstaben L, N und R bei der Zement-Festigkeitsklasse?",
     "optionen": [
-      "Langsam, Normal und Rasch erhärtend (Anfangsfestigkeit)",
       "Leicht, Normal und Robust (Gewichtsklasse)",
       "Luftgehalt, Normalkonsistenz und Rohdichte",
-      "Lager, Norm und Rezeptur"
+      "Lager, Norm und Rezeptur",
+      "Langsam, Normal und Rasch erhärtend (Anfangsfestigkeit)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "L = niedrige Anfangsfestigkeit (langsam), N = normale Anfangsfestigkeit, R = hohe Anfangsfestigkeit (rasch). Die 28-Tage-Festigkeit ist bei allen gleich.",
     "bildDatei": "/buch/lf04/festigkeitsklassen-zement.webp",
@@ -208,9 +208,9 @@
     "frage": "Was versteht man unter Hydratation?",
     "optionen": [
       "Die chemische Reaktion zwischen Zement und Wasser, bei der Zementleim und schließlich Zementstein entsteht",
+      "Die Trocknung des Betons durch Wind",
       "Das Verdunsten von Wasser aus dem Frischbeton",
-      "Das Mischen von Zement und Gesteinskörnung",
-      "Die Trocknung des Betons durch Wind"
+      "Das Mischen von Zement und Gesteinskörnung"
     ],
     "korrekt": [
       0
@@ -241,13 +241,13 @@
     "konfidenz": "hoch",
     "frage": "In welchem Rohdichtebereich liegen normale Gesteinskörnungen?",
     "optionen": [
-      "2000 bis 3000 kg/m³",
-      "Unter 2000 kg/m³",
       "Über 3000 kg/m³",
-      "500 bis 1000 kg/m³"
+      "500 bis 1000 kg/m³",
+      "2000 bis 3000 kg/m³",
+      "Unter 2000 kg/m³"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Normale Gesteinskörnungen (Sand, Kies, Splitt) haben eine Kornrohdichte von 2000 bis 3000 kg/m³. Leichte (Blähton, Bims) liegen darunter, schwere (Baryt) darüber.",
     "bildDatei": "/buch/lf04/gesteinskoernungen-uebersicht.webp",
@@ -262,13 +262,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Gesteinskörnung wird für Leichtbeton verwendet?",
     "optionen": [
-      "Blähton oder Bims",
-      "Quarzkies",
+      "Basaltsplitt",
       "Baryt",
-      "Basaltsplitt"
+      "Quarzkies",
+      "Blähton oder Bims"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Leichte Gesteinskörnungen wie Blähton, Bims oder Blähglas haben eine Kornrohdichte unter 2000 kg/m³ und ergeben Leichtbeton mit geringerer Wärmeleitfähigkeit.",
     "bildDatei": "/buch/lf04/gesteinskoernungen-uebersicht.webp",
@@ -306,13 +306,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist eine gute Sieblinie bei der Gesteinskörnung wichtig?",
     "optionen": [
-      "Damit die Körner sich möglichst dicht packen und wenig Hohlräume bleiben",
-      "Damit der Beton schneller trocknet",
       "Damit weniger Zement benötigt wird",
-      "Damit der Beton leichter wird"
+      "Damit der Beton schneller trocknet",
+      "Damit der Beton leichter wird",
+      "Damit die Körner sich möglichst dicht packen und wenig Hohlräume bleiben"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Eine gute Sieblinie bedeutet: Körner verschiedener Größe füllen die Hohlräume zwischen den groben Körnern. Das ergibt dichten, festen Beton mit weniger Zementleimbedarf.",
     "bildDatei": "/buch/lf04/sieblinie-diagramm.webp",
@@ -327,13 +327,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist der Unterschied zwischen Frischbeton und Festbeton?",
     "optionen": [
-      "Frischbeton ist verarbeitbar und noch nicht erhärtet, Festbeton ist ausgehärtet und tragfähig",
-      "Frischbeton enthält mehr Zement als Festbeton",
+      "Es gibt keinen Unterschied, nur andere Bezeichnungen",
       "Festbeton hat mehr Wasser als Frischbeton",
-      "Es gibt keinen Unterschied, nur andere Bezeichnungen"
+      "Frischbeton ist verarbeitbar und noch nicht erhärtet, Festbeton ist ausgehärtet und tragfähig",
+      "Frischbeton enthält mehr Zement als Festbeton"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Frischbeton lässt sich in die Schalung einbringen und verdichten. Sobald er erhärtet ist und seine Festigkeit erreicht hat, spricht man von Festbeton."
   },
@@ -386,13 +386,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet die Bezeichnung C25/30 bei einer Druckfestigkeitsklasse?",
     "optionen": [
+      "Festigkeit nach 25 bzw. 30 Tagen",
       "25 N/mm² Zylinderdruckfestigkeit und 30 N/mm² Würfeldruckfestigkeit nach 28 Tagen",
-      "25 cm Kantenlänge und 30 cm Höhe des Prüfkörpers",
       "25 kg Zement und 30 kg Wasser pro m³",
-      "Festigkeit nach 25 bzw. 30 Tagen"
+      "25 cm Kantenlänge und 30 cm Höhe des Prüfkörpers"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "C steht für Concrete. Die erste Zahl ist die Zylinderdruckfestigkeit (Ø 150 mm, h = 300 mm), die zweite die Würfeldruckfestigkeit (150 mm Kantenlänge), jeweils nach 28 Tagen.",
     "bildDatei": "/buch/lf04/druckfestigkeitsklassen-beton.webp",
@@ -408,8 +408,8 @@
     "frage": "Welche Druckfestigkeitsklasse ist die niedrigste für Normalbeton?",
     "optionen": [
       "C8/10",
-      "C12/15",
       "C20/25",
+      "C12/15",
       "C30/37"
     ],
     "korrekt": [
@@ -428,13 +428,13 @@
     "konfidenz": "hoch",
     "frage": "Mit welchem Verfahren wird die Konsistenz von Frischbeton auf der Baustelle geprüft?",
     "optionen": [
-      "Ausbreitversuch (Ausbreitmaß in mm)",
-      "Druckversuch am Würfel",
+      "Wasserabscheideversuch",
       "Biegezugversuch",
-      "Wasserabscheideversuch"
+      "Ausbreitversuch (Ausbreitmaß in mm)",
+      "Druckversuch am Würfel"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Beim Ausbreitversuch wird ein Kegelstumpf mit Beton gefüllt, abgehoben und die Platte mehrmals angehoben und fallen gelassen. Der Durchmesser des Betonfladen ist das Ausbreitmaß.",
     "bildDatei": "/buch/lf04/ausbreitversuch.webp",
@@ -469,13 +469,13 @@
     "konfidenz": "hoch",
     "frage": "Was passiert, wenn zu viel Wasser in den Frischbeton gegeben wird?",
     "optionen": [
-      "Der Beton wird porös, die Festigkeit sinkt und die Dauerhaftigkeit nimmt ab",
-      "Der Beton wird fester und dichter",
       "Der Beton bindet schneller ab",
-      "Es hat keinen Einfluss auf die Betongüte"
+      "Es hat keinen Einfluss auf die Betongüte",
+      "Der Beton wird fester und dichter",
+      "Der Beton wird porös, die Festigkeit sinkt und die Dauerhaftigkeit nimmt ab"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Überschüssiges Wasser verdunstet und hinterlässt Poren. Die Druckfestigkeit sinkt, der Beton wird durchlässiger für Wasser und Schadstoffe, und die Bewehrung ist weniger geschützt."
   },
@@ -526,9 +526,9 @@
     "frage": "Was beschreiben Expositionsklassen beim Beton?",
     "optionen": [
       "Die Umweltbedingungen, denen das Bauteil ausgesetzt ist",
-      "Die Druckfestigkeit nach 28 Tagen",
+      "Die Zementart",
       "Die Konsistenz des Frischbetons",
-      "Die Zementart"
+      "Die Druckfestigkeit nach 28 Tagen"
     ],
     "korrekt": [
       0
@@ -546,13 +546,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür steht die Expositionsklasse XC?",
     "optionen": [
-      "Bewehrungskorrosion durch Carbonatisierung",
       "Bewehrungskorrosion durch Chloride",
-      "Frostangriff mit und ohne Taumittel",
-      "Chemischer Angriff"
+      "Bewehrungskorrosion durch Carbonatisierung",
+      "Chemischer Angriff",
+      "Frostangriff mit und ohne Taumittel"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "XC = Carbonatisierung (C = Carbonation). CO₂ aus der Luft dringt in den Beton ein und senkt den pH-Wert, sodass der Stahl zu rosten beginnt. XC1 (trocken) bis XC4 (wechselnd nass/trocken).",
     "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
@@ -597,13 +597,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Expositionsklasse gilt für Beton ohne Bewehrung in dauerhaft trockener Umgebung?",
     "optionen": [
-      "X0",
+      "XA1",
       "XC1",
       "XF1",
-      "XA1"
+      "X0"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "X0 bedeutet: Kein Korrosions- oder Angriffsrisiko. Gilt für unbewehrten Beton ohne Frostgefahr, z. B. Innenbauteile in trockenen Räumen.",
     "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
@@ -619,9 +619,9 @@
     "frage": "Welche Expositionsklasse beschreibt den Verschleiß von Betonflächen?",
     "optionen": [
       "XM",
-      "XC",
+      "XF",
       "XD",
-      "XF"
+      "XC"
     ],
     "korrekt": [
       0
@@ -640,9 +640,9 @@
     "frage": "Welche Mindestdruckfestigkeitsklasse ist für die Expositionsklasse XC4 (wechselnd nass und trocken) erforderlich?",
     "optionen": [
       "C25/30",
+      "C50/60",
       "C8/10",
-      "C12/15",
-      "C50/60"
+      "C12/15"
     ],
     "korrekt": [
       0
@@ -660,13 +660,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist Standardbeton?",
     "optionen": [
-      "Ein Beton für einfache Bauteile mit festgelegter Zusammensetzung, der ohne gesonderte Überwachung hergestellt werden kann",
-      "Ein besonders hochwertiger Spezialbeton für Brücken",
       "Ein Beton mit besonderen Zusatzmitteln",
-      "Ein Leichtbeton mit geringer Festigkeit"
+      "Ein besonders hochwertiger Spezialbeton für Brücken",
+      "Ein Leichtbeton mit geringer Festigkeit",
+      "Ein Beton für einfache Bauteile mit festgelegter Zusammensetzung, der ohne gesonderte Überwachung hergestellt werden kann"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Standardbeton eignet sich für einfache, untergeordnete Bauteile. Er wird nach festgelegten Anhaltswerten gemischt und braucht keine Eignungsprüfung oder besondere Überwachung.",
     "bildDatei": "/buch/lf04/standardbeton-tabelle.webp",
@@ -681,13 +681,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Festlegungsart wird für statisch beanspruchte Stahlbetonbauteile verwendet?",
     "optionen": [
-      "Beton nach Eigenschaften (z. B. C25/30, XC1)",
-      "Standardbeton",
+      "Frischbeton ohne Vorgaben",
       "Beton nach Zusammensetzung",
-      "Frischbeton ohne Vorgaben"
+      "Standardbeton",
+      "Beton nach Eigenschaften (z. B. C25/30, XC1)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für tragende Bauteile wird Beton nach Eigenschaften bestellt: Der Besteller gibt Druckfestigkeitsklasse, Expositionsklasse und Konsistenz vor. Das Betonwerk stellt die Rezeptur zusammen."
   },
@@ -721,13 +721,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist Transportbeton?",
     "optionen": [
+      "Beton, der im Bauwerk transportiert wird",
       "Werkmäßig hergestellter Beton, der in Fahrmischern auf die Baustelle geliefert wird",
       "Beton, der auf der Baustelle von Hand gemischt wird",
-      "Vorgefertigte Betonplatten, die transportiert werden",
-      "Beton, der im Bauwerk transportiert wird"
+      "Vorgefertigte Betonplatten, die transportiert werden"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Transportbeton wird im Betonwerk nach der bestellten Rezeptur gemischt und in Fahrmischern (Betonmischer-LKW) zur Baustelle gefahren. Er muss innerhalb der Verarbeitungszeit eingebaut werden.",
     "bildDatei": "/buch/lf04/transportbeton-fahrmischer.webp",
@@ -744,8 +744,8 @@
     "optionen": [
       "Damit eingeschlossene Luft entweicht und der Beton dicht und fest wird",
       "Damit der Beton schneller trocknet",
-      "Damit weniger Zement benötigt wird",
-      "Damit er leichter wird"
+      "Damit er leichter wird",
+      "Damit weniger Zement benötigt wird"
     ],
     "korrekt": [
       0
@@ -763,13 +763,13 @@
     "konfidenz": "hoch",
     "frage": "Warum muss frischer Beton nachbehandelt werden?",
     "optionen": [
-      "Damit die Hydratation ungestört ablaufen kann und der Beton seine volle Festigkeit erreicht",
       "Damit er schneller trocknet",
+      "Damit er eine hellere Farbe bekommt",
       "Damit die Schalung leichter abgeht",
-      "Damit er eine hellere Farbe bekommt"
+      "Damit die Hydratation ungestört ablaufen kann und der Beton seine volle Festigkeit erreicht"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Beton erhärtet durch die chemische Reaktion von Zement mit Wasser. Trocknet er zu früh aus, fehlt Wasser für die Hydratation: Der Beton bleibt schwach und bekommt Risse. Daher feucht halten und vor Sonne/Wind schützen."
   },
@@ -809,9 +809,9 @@
     "frage": "Welche Streckgrenze hat der Betonstahl B500?",
     "optionen": [
       "500 N/mm² (MPa)",
-      "250 N/mm²",
+      "700 N/mm²",
       "350 N/mm²",
-      "700 N/mm²"
+      "250 N/mm²"
     ],
     "korrekt": [
       0
@@ -829,13 +829,13 @@
     "konfidenz": "hoch",
     "frage": "Was unterscheidet B500A von B500B?",
     "optionen": [
-      "B500A ist normalduktil (kaltverformt), B500B ist hochduktil (warmgewalzt)",
-      "B500A ist dicker als B500B",
+      "B500B ist nur für Leichtbeton geeignet",
       "B500A hat eine höhere Streckgrenze",
-      "B500B ist nur für Leichtbeton geeignet"
+      "B500A ist dicker als B500B",
+      "B500A ist normalduktil (kaltverformt), B500B ist hochduktil (warmgewalzt)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "A = normalduktil (kaltverformt, Rippenstäbe und Draht), B = hochduktil (warmgewalzt, höhere Bruchdehnung). B500B kann sich stärker verformen, bevor er bricht — wichtig für Erdbeben und hohe Lasten.",
     "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
@@ -850,14 +850,14 @@
     "konfidenz": "hoch",
     "text": "Betonstahl B500A ist {{normalduktil}} (kaltverformt), B500B ist {{hochduktil}} (warmgewalzt). Die Streckgrenze beträgt jeweils {{500}} N/mm².",
     "akzeptiert": {
+      "500": [
+        "500"
+      ],
       "normalduktil": [
         "normalduktil"
       ],
       "hochduktil": [
         "hochduktil"
-      ],
-      "500": [
-        "500"
       ]
     },
     "erklaerung": "Duktilität = Verformungsfähigkeit. Hochduktiler Stahl (B) kann sich stärker dehnen, bevor er bricht. A = normal, B = besser verformbar.",
@@ -873,13 +873,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind Betonstahlmatten?",
     "optionen": [
-      "Werkmäßig verschweißte Gitter aus Betonstahl für Platten und Wände",
       "Textilgewebe zur Betonverstärkung",
-      "Kunststoffnetze als Bewehrung",
-      "Stahlbleche, die in den Beton eingelegt werden"
+      "Werkmäßig verschweißte Gitter aus Betonstahl für Platten und Wände",
+      "Stahlbleche, die in den Beton eingelegt werden",
+      "Kunststoffnetze als Bewehrung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Betonstahlmatten bestehen aus sich kreuzenden Betonstählen, die an jedem Kreuzungspunkt verschweißt sind. Man unterscheidet Lagermatten (Standard) und Listenmatten (nach Maß gefertigt).",
     "bildDatei": "/buch/lf04/betonstahlmatten-lagermatten.webp",
@@ -894,13 +894,13 @@
     "konfidenz": "hoch",
     "frage": "Was unterscheidet Lagermatten von Listenmatten?",
     "optionen": [
+      "Listenmatten sind dünner als Lagermatten",
       "Lagermatten sind Standardmatten ab Lager, Listenmatten werden nach individueller Liste gefertigt",
       "Lagermatten sind für Wände, Listenmatten für Decken",
-      "Lagermatten bestehen aus B500A, Listenmatten aus B500B",
-      "Listenmatten sind dünner als Lagermatten"
+      "Lagermatten bestehen aus B500A, Listenmatten aus B500B"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Lagermatten (Kurzzeichen Q oder R) sind Standardmatten mit festen Abmessungen, die auf Lager liegen. Listenmatten werden nach einer individuellen Bestellliste für das Bauvorhaben hergestellt.",
     "bildDatei": "/buch/lf04/betonstahlmatten-lagermatten.webp",
@@ -930,13 +930,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Oberflächenform hat Betonstahl, um den Verbund mit dem Beton zu verbessern?",
     "optionen": [
-      "Rippen (gerippter Stahl)",
-      "Glatte Oberfläche",
       "Geschliffene Oberfläche",
-      "Beschichtung mit Kunststoff"
+      "Beschichtung mit Kunststoff",
+      "Glatte Oberfläche",
+      "Rippen (gerippter Stahl)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Betonstahl hat Rippen auf der Oberfläche. Diese Rippen verzahnen sich mit dem Beton und sorgen für den Verbund: Der Stahl kann sich nicht mehr im Beton verschieben.",
     "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
@@ -951,13 +951,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Kräfte nimmt der Beton im Stahlbeton hauptsächlich auf?",
     "optionen": [
+      "Scherkräfte",
       "Druckkräfte",
       "Zugkräfte",
-      "Scherkräfte",
       "Torsionskräfte"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Beton ist druckfest, aber zugschwach (nur ca. 1/10 der Druckfestigkeit). Deshalb übernimmt der Bewehrungsstahl die Zugkräfte — das ist das Grundprinzip von Stahlbeton.",
     "bildDatei": "/buch/lf04/tragverhalten-stahlbetonbalken.webp",
@@ -997,13 +997,13 @@
     "konfidenz": "hoch",
     "frage": "Warum funktioniert der Verbund zwischen Stahl und Beton?",
     "optionen": [
-      "Weil die Rippen des Stahls sich im Beton verzahnen und beide den gleichen Wärmeausdehnungskoeffizienten haben",
-      "Weil der Stahl mit dem Beton verklebt wird",
       "Weil der Stahl magnetisch ist",
-      "Weil der Beton den Stahl zusammendrückt"
+      "Weil der Beton den Stahl zusammendrückt",
+      "Weil die Rippen des Stahls sich im Beton verzahnen und beide den gleichen Wärmeausdehnungskoeffizienten haben",
+      "Weil der Stahl mit dem Beton verklebt wird"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Drei Gründe für den Verbund: 1) Rippen sorgen für Formschluss, 2) Haftung zwischen Zementstein und Stahl, 3) fast gleicher Wärmeausdehnungskoeffizient — der Verbund wird bei Temperaturänderungen nicht zerstört.",
     "bildDatei": "/buch/lf04/tragverhalten-stahlbetonbalken.webp",
@@ -1019,8 +1019,8 @@
     "frage": "Wozu dient die Betondeckung?",
     "optionen": [
       "Sie schützt den Bewehrungsstahl vor Korrosion und vor Hitze im Brandfall",
-      "Sie macht den Beton leichter",
       "Sie verhindert das Schwinden des Betons",
+      "Sie macht den Beton leichter",
       "Sie beschleunigt das Erhärten"
     ],
     "korrekt": [
@@ -1054,13 +1054,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die geforderte Betondeckung beim Betonieren sichergestellt?",
     "optionen": [
+      "Durch höhere Betonfestigkeit",
       "Durch Abstandhalter zwischen Bewehrung und Schalung",
-      "Durch dickere Bewehrungsstäbe",
       "Durch längeres Nachbehandeln",
-      "Durch höhere Betonfestigkeit"
+      "Durch dickere Bewehrungsstäbe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Abstandhalter (aus Kunststoff, Beton oder Metall) werden zwischen Bewehrung und Schalung geklemmt. Sie sorgen dafür, dass die Bewehrung beim Betonieren ihre Lage behält und die Mindestdeckung eingehalten wird.",
     "bildDatei": "/buch/lf04/abstandhalter.webp",
@@ -1076,9 +1076,9 @@
     "frage": "Warum ist es wichtig, dass Stahl und Beton einen ähnlichen Wärmeausdehnungskoeffizienten haben?",
     "optionen": [
       "Weil sich beide bei Erwärmung gleich ausdehnen und der Verbund nicht zerstört wird",
-      "Weil der Beton sonst zu schnell erhärtet",
       "Weil der Stahl sonst rostet",
-      "Weil die Schalung sonst platzt"
+      "Weil die Schalung sonst platzt",
+      "Weil der Beton sonst zu schnell erhärtet"
     ],
     "korrekt": [
       0
@@ -1153,13 +1153,13 @@
     "konfidenz": "hoch",
     "frage": "Was enthält ein Bewehrungsplan?",
     "optionen": [
-      "Lage, Anzahl, Durchmesser und Form der Bewehrungsstähle mit Positionsnummern",
-      "Nur die Druckfestigkeitsklasse des Betons",
       "Nur die Abmessungen der Schalung",
-      "Die Liefertermine für den Transportbeton"
+      "Lage, Anzahl, Durchmesser und Form der Bewehrungsstähle mit Positionsnummern",
+      "Die Liefertermine für den Transportbeton",
+      "Nur die Druckfestigkeitsklasse des Betons"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Bewehrungsplan zeigt genau, wo welcher Stahl eingebaut wird. Jeder Stab hat eine Positionsnummer, einen Durchmesser, eine Form und eine Stückzahl. Dazu gehört eine Stahlliste.",
     "bildDatei": "/buch/lf04/bewehrungsplan-beispiel.webp",
@@ -1189,13 +1189,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge werden die Bewehrungsarbeiten ausgeführt?",
     "optionen": [
-      "Zuschneiden, Biegen, Verlegen, Verknüpfen (Binden)",
+      "Betonieren, Verlegen, Biegen, Nachbehandeln",
       "Biegen, Zuschneiden, Betonieren, Verlegen",
-      "Verlegen, Biegen, Zuschneiden, Verdichten",
-      "Betonieren, Verlegen, Biegen, Nachbehandeln"
+      "Zuschneiden, Biegen, Verlegen, Verknüpfen (Binden)",
+      "Verlegen, Biegen, Zuschneiden, Verdichten"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Bewehrung wird zunächst nach Plan zugeschnitten, dann gebogen, in die Schalung verlegt und mit Bindedraht verknüpft. Erst dann wird betoniert."
   },
@@ -1229,13 +1229,13 @@
     "konfidenz": "hoch",
     "frage": "Wo liegt die Zugzone bei einer Kragplatte (z. B. Balkon)?",
     "optionen": [
-      "Oben",
       "Unten",
-      "In der Mitte",
-      "Es gibt keine Zugzone"
+      "Es gibt keine Zugzone",
+      "Oben",
+      "In der Mitte"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei einer Kragplatte (einseitig eingespannt, z. B. Balkon) hängt die Platte nach unten: Oben wird gezogen, unten gedrückt. Die Bewehrung liegt oben — umgekehrt wie bei der Platte auf zwei Auflagern!",
     "bildDatei": "/buch/lf04/zugzonen-bauteile.webp",
@@ -1251,8 +1251,8 @@
     "frage": "Welche Aufgabe haben die Abstandhalter bei der Bewehrung?",
     "optionen": [
       "Sie sichern die vorgeschriebene Betondeckung zwischen Bewehrung und Schalung",
-      "Sie verbinden die Bewehrungsstäbe miteinander",
       "Sie verhindern das Schwinden des Betons",
+      "Sie verbinden die Bewehrungsstäbe miteinander",
       "Sie erhöhen die Tragfähigkeit des Bauteils"
     ],
     "korrekt": [
@@ -1271,13 +1271,13 @@
     "konfidenz": "hoch",
     "frage": "Mit welchem Verfahren werden Bewehrungsstäbe an den Kreuzungspunkten verbunden?",
     "optionen": [
-      "Mit Bindedraht verdrahtet (verknüpft)",
+      "Mit Lötverbindungen",
       "Mit Schrauben verschraubt",
       "Mit Klebstoff verklebt",
-      "Mit Lötverbindungen"
+      "Mit Bindedraht verdrahtet (verknüpft)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bewehrungsstäbe werden an den Kreuzungspunkten mit Bindedraht verdrahtet (verknüpft). So bleiben sie beim Betonieren in ihrer vorgeschriebenen Lage."
   },
@@ -1311,9 +1311,9 @@
     "frage": "Aus welchen drei Hauptteilen besteht eine Schalung?",
     "optionen": [
       "Schalhaut, Unterkonstruktion und Unterstützung",
+      "Stütze, Riegel und Strebe",
       "Boden, Wand und Decke",
-      "Bewehrung, Beton und Isolierung",
-      "Stütze, Riegel und Strebe"
+      "Bewehrung, Beton und Isolierung"
     ],
     "korrekt": [
       0
@@ -1356,13 +1356,13 @@
     "konfidenz": "hoch",
     "frage": "Wie verändert sich der Betondruck auf die Schalung mit zunehmender Tiefe?",
     "optionen": [
+      "Er wirkt nur auf den Boden",
       "Er nimmt von oben nach unten zu (hydrostatischer Druck)",
       "Er nimmt von oben nach unten ab",
-      "Er ist überall gleich",
-      "Er wirkt nur auf den Boden"
+      "Er ist überall gleich"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Frischbeton verhält sich ähnlich wie eine Flüssigkeit. Der seitliche Druck nimmt wie der Wasserdruck (hydrostatisch) mit der Tiefe zu. Deshalb müssen Stützenzwingen unten enger angeordnet werden.",
     "bildDatei": "/buch/lf04/betondruck-schalung.webp",
@@ -1378,8 +1378,8 @@
     "frage": "Welches Material wird am häufigsten für die Schalhaut verwendet?",
     "optionen": [
       "Holz (Bretter oder Schalungsplatten)",
-      "Aluminium",
       "Glas",
+      "Aluminium",
       "Naturstein"
     ],
     "korrekt": [
@@ -1399,9 +1399,9 @@
     "frage": "Warum ist es vorteilhaft, wenn bei einer Brettschalung die rechte Brettseite (Kernseite) dem Beton zugewandt ist?",
     "optionen": [
       "Weil das Holz durch Wasseraufnahme aufquillt und sich die Fugen der Schalhaut schließen",
+      "Weil die Bretter sich nicht verziehen",
       "Weil die Kernseite glatter ist",
-      "Weil das Holz dann nicht fault",
-      "Weil die Bretter sich nicht verziehen"
+      "Weil das Holz dann nicht fault"
     ],
     "korrekt": [
       0
@@ -1419,13 +1419,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile haben Schalungsplatten gegenüber Brettschalungen?",
     "optionen": [
-      "Weniger Arbeitsaufwand, glattere Oberfläche und längere Lebensdauer",
-      "Sie sind billiger",
       "Sie brauchen keine Unterkonstruktion",
+      "Sie sind billiger",
+      "Weniger Arbeitsaufwand, glattere Oberfläche und längere Lebensdauer",
       "Sie sind leichter als Bretter"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Schalungsplatten (Furnier- oder Stabsperrholz) sind maßhaltiger, lassen sich schneller verlegen und ergeben eine glattere Betonoberfläche. Die Kunstharzvergütung erhöht die Lebensdauer."
   },
@@ -1438,13 +1438,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür werden Schalungsträger (DIN EN 13377) eingesetzt?",
     "optionen": [
-      "Als Unterkonstruktion für Wand- und Deckenschalungen",
       "Nur für Brücken",
       "Als Bewehrungsersatz",
+      "Als Unterkonstruktion für Wand- und Deckenschalungen",
       "Nur für Fundamente"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Schalungsträger aus Holz (Gitter- oder Vollwandträger) dienen als Unterkonstruktion. Sie tragen die Schalhaut und leiten die Lasten in die Stützen weiter.",
     "bildDatei": "/buch/lf04/stuetzen-schalungstraeger.webp",
@@ -1461,8 +1461,8 @@
     "optionen": [
       "Stahlrohrstützen, Rundholzstützen und Kantholzstützen",
       "Nur Mauerwerkspfeiler",
-      "Nur Betonpfeiler",
-      "Nur Seilabspannungen"
+      "Nur Seilabspannungen",
+      "Nur Betonpfeiler"
     ],
     "korrekt": [
       0
@@ -1480,13 +1480,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen Stützen in Längs- und Querrichtung durch Diagonalen ausgesteift werden?",
     "optionen": [
-      "Damit sie waagerechte Kräfte aufnehmen können und nicht umknicken",
-      "Damit sie schöner aussehen",
       "Damit der Beton schneller erhärtet",
-      "Damit weniger Stützen benötigt werden"
+      "Damit sie waagerechte Kräfte aufnehmen können und nicht umknicken",
+      "Damit weniger Stützen benötigt werden",
+      "Damit sie schöner aussehen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Abstützungen müssen waagerechte Kräfte aus Wind, Schrägstützen und Betoniergeräten aufnehmen. Ohne diagonale Aussteifung (Verschwerung) könnten sie seitlich umknicken.",
     "bildDatei": "/buch/lf04/stuetzen-schalungstraeger.webp",
@@ -1501,13 +1501,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen werden an die Schalhaut gestellt?",
     "optionen": [
-      "Formbeständig, maßgenau und so dicht, dass kein Zementleim auslaufen kann",
       "Möglichst dünn und leicht",
       "Nur farblich passend zum Beton",
-      "Transparent, damit man den Beton sehen kann"
+      "Transparent, damit man den Beton sehen kann",
+      "Formbeständig, maßgenau und so dicht, dass kein Zementleim auslaufen kann"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Schalhaut muss formbeständig und maßgenau sein, damit das Bauteil seine vorgesehene Form bekommt. Sie muss so dicht sein, dass der Feinmörtel nicht durch Ritzen fließt."
   },
@@ -1522,8 +1522,8 @@
     "optionen": [
       "Zwei Seitenplatten und einer Bodenplatte",
       "Nur einer einzigen Platte",
-      "Aus Rundholzstämmen",
-      "Aus Betonfertigteilen"
+      "Aus Betonfertigteilen",
+      "Aus Rundholzstämmen"
     ],
     "korrekt": [
       0
@@ -1539,13 +1539,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Schalung bei Balken und Wänden gegen den seitlichen Betondruck gesichert?",
     "optionen": [
-      "Durch Schalungsanker und Spannstähle, die die gegenüberliegenden Schalseiten zusammenhalten",
-      "Durch Kleben der Schalungsplatten",
       "Durch Beschweren der Schalungsoberseite",
-      "Der Betondruck ist zu gering für besondere Sicherung"
+      "Durch Kleben der Schalungsplatten",
+      "Der Betondruck ist zu gering für besondere Sicherung",
+      "Durch Schalungsanker und Spannstähle, die die gegenüberliegenden Schalseiten zusammenhalten"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Schalungsanker bestehen aus Ankerstab, Ankerverschluss und Abstandhalter. Zum Verspannen werden Schraubverschlüsse verwendet, die über Flügelmuttern angezogen werden.",
     "bildDatei": "/buch/lf04/verspannen-schalung.webp",
@@ -1560,13 +1560,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus besteht eine übliche Deckenschalung?",
     "optionen": [
-      "Schaltafeln, Schalungsträgern und Stahlrohrstützen",
       "Nur aus Brettern",
       "Nur aus Stahlplatten",
+      "Schaltafeln, Schalungsträgern und Stahlrohrstützen",
       "Aus vorgefertigten Betonplatten"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Deckenschalung besteht aus großflächigen Schaltafeln (Schalhaut), Schalungsträgern (Gitter- oder Vollwandträger als Unterkonstruktion) und Stahlrohrstützen (Unterstützung). Der Stützenabstand sollte nicht größer als 1,20 m sein.",
     "bildDatei": "/buch/lf04/deckenschalung-vollwandtraeger.webp",
@@ -1581,13 +1581,13 @@
     "konfidenz": "hoch",
     "frage": "Warum wird die Schalhaut vor dem Betonieren mit einem Trennmittel behandelt?",
     "optionen": [
+      "Damit die Schalung feuerfest wird",
       "Damit sich die Schalung nach dem Erhärten leichter vom Beton löst und eine glatte Oberfläche entsteht",
       "Damit der Beton schneller erhärtet",
-      "Damit die Schalung feuerfest wird",
       "Damit der Beton eine andere Farbe bekommt"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Trennmittel (Schalöl) verhindern, dass der Beton an der Schalhaut haftet. So lässt sich die Schalung leichter entfernen und die Betonoberfläche wird glatt. Die Holzporen werden verschlossen."
   },
@@ -1600,13 +1600,13 @@
     "konfidenz": "hoch",
     "frage": "Wann darf eine Schalung entfernt (ausgeschalt) werden?",
     "optionen": [
-      "Wenn der Beton ausreichende Festigkeit erreicht hat, um die Lasten selbst zu tragen",
-      "Sofort nach dem Betonieren",
       "Nach genau 24 Stunden",
-      "Erst nach einem Jahr"
+      "Wenn der Beton ausreichende Festigkeit erreicht hat, um die Lasten selbst zu tragen",
+      "Erst nach einem Jahr",
+      "Sofort nach dem Betonieren"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Schalung darf erst entfernt werden, wenn der Beton die Last selbst tragen kann. Die Ausschalfrist hängt von Bauteilart, Temperatur und Zement ab. Zur Bestimmung kann eine Erhärtungsprüfung durchgeführt werden."
   },
@@ -1724,13 +1724,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet umweltfreundliches Bauen?",
     "optionen": [
-      "Bauen unter Beachtung ökologischer Wechselbeziehungen, um Schäden am Ökosystem zu vermeiden",
-      "Möglichst schnell und billig bauen",
+      "Auf jede Wärmedämmung verzichten",
       "Nur natürliche Materialien verwenden",
-      "Auf jede Wärmedämmung verzichten"
+      "Bauen unter Beachtung ökologischer Wechselbeziehungen, um Schäden am Ökosystem zu vermeiden",
+      "Möglichst schnell und billig bauen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Ökologisches Bauen berücksichtigt die Wechselbeziehungen zwischen Mensch und Umwelt: beim Planen, Ausführen, Nutzen und Entsorgen. Ziel ist es, Schäden am Ökosystem möglichst zu vermeiden."
   },
@@ -1798,8 +1798,8 @@
     "frage": "Was versteht man unter einer Ökobilanz?",
     "optionen": [
       "Die systematische Erfassung und Bewertung der Umweltwirkungen eines Produktes über seinen gesamten Lebenszyklus",
-      "Die Berechnung der Baukosten",
       "Die Messung der Druckfestigkeit von Beton",
+      "Die Berechnung der Baukosten",
       "Die Berechnung des Energieverbrauchs im fertigen Gebäude"
     ],
     "korrekt": [
@@ -1818,13 +1818,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist eine optimale Wärmedämmung aus Umweltsicht besonders wichtig?",
     "optionen": [
-      "Weil die größten Umweltbelastungen bei Baustoffen in der Nutzungsphase durch Heizenergie entstehen",
+      "Weil sie den Schallschutz verbessert",
       "Weil Dämmstoffe besonders billig sind",
-      "Weil Wärmedämmung den Beton fester macht",
-      "Weil sie den Schallschutz verbessert"
+      "Weil die größten Umweltbelastungen bei Baustoffen in der Nutzungsphase durch Heizenergie entstehen",
+      "Weil Wärmedämmung den Beton fester macht"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Ökobilanzen zeigen: Bei vielen Baustoffen entstehen die größten Umweltbelastungen nicht bei der Herstellung, sondern bei der Nutzung — durch Heizenergie. Eine gute Wärmedämmung spart Energie über Jahrzehnte.",
     "bildDatei": "/buch/lf04/treibhauseffekt-porenbeton.webp",
@@ -1839,13 +1839,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist der Hauptbestandteil von CEM III (Hochofenzement)?",
     "optionen": [
-      "Hüttensand (granulierte Hochofenschlacke)",
       "Nur Portlandzementklinker",
+      "Kalksteinmehl",
       "Flugasche",
-      "Kalksteinmehl"
+      "Hüttensand (granulierte Hochofenschlacke)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "CEM III enthält neben Portlandzementklinker einen hohen Anteil Hüttensand (36-95 %). Hüttensand ist granulierte Hochofenschlacke, ein Nebenprodukt der Eisenherstellung.",
     "bildDatei": "/buch/lf04/normalzemente-tabelle.webp",
@@ -1860,13 +1860,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Expositionsklasse gilt für Beton, der Frost und Taumittel ausgesetzt ist?",
     "optionen": [
-      "XF (z. B. XF2 oder XF4 mit Taumittel)",
+      "X0",
       "XC",
       "XA",
-      "X0"
+      "XF (z. B. XF2 oder XF4 mit Taumittel)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "XF = Frostangriff (Freeze). XF1 und XF3 gelten ohne Taumittel, XF2 und XF4 mit Taumittel. Taumittel verschärft den Frostangriff erheblich.",
     "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
@@ -1881,13 +1881,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet Duktilität bei Betonstahl?",
     "optionen": [
-      "Die Fähigkeit des Stahls, sich plastisch zu verformen, bevor er bricht",
       "Die Widerstandsfähigkeit gegen Rost",
       "Die Festigkeit bei hohen Temperaturen",
-      "Die Schnitthärte beim Biegen"
+      "Die Schnitthärte beim Biegen",
+      "Die Fähigkeit des Stahls, sich plastisch zu verformen, bevor er bricht"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Duktilität = Verformungsfähigkeit. Hochduktiler Stahl (B500B) kann sich stärker dehnen, bevor er bricht. Das ist wichtig für die Sicherheit: Das Bauteil kündigt sein Versagen durch sichtbare Verformung an."
   },
@@ -1900,13 +1900,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind die drei Hauptbestandteile einer Wandschalung?",
     "optionen": [
+      "Fertigbetonwände",
       "Schalhaut aus Brettern oder Platten, senkrechte Bogenhölzer und waagerechte Gurthölzer",
-      "Nur Stahlplatten",
       "Nur Schalungsträger und Stützen",
-      "Fertigbetonwände"
+      "Nur Stahlplatten"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei der Wandschalung wird die Schalhaut gegen senkrechte Bogenhölzer genagelt. Rechtwinklig dazu verlaufen waagerechte Gurthölzer, die mit Schalungsankern verspannt werden.",
     "bildDatei": "/buch/lf04/wandschalung.webp",
@@ -1945,13 +1945,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist eine Holzliste im Schalungsbau?",
     "optionen": [
-      "Eine tabellarische Aufstellung aller benötigten Schalungsteile mit Stückzahl, Querschnitt, Länge und Menge",
-      "Eine Liste der Baumarten für die Schalung",
+      "Eine Rechnung für das Schalungsholz",
       "Ein Verzeichnis der Holzlieferanten",
-      "Eine Rechnung für das Schalungsholz"
+      "Eine Liste der Baumarten für die Schalung",
+      "Eine tabellarische Aufstellung aller benötigten Schalungsteile mit Stückzahl, Querschnitt, Länge und Menge"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Holzliste wird aus dem Schalungsplan abgeleitet. Sie enthält für jedes Schalungsteil: Bezeichnung, Stückzahl, Querschnitt, Länge (Fertigmenge) und Rohmenge (mit Verschnittzuschlag).",
     "bildDatei": "/buch/lf04/holzliste-tabelle.webp",
@@ -1996,9 +1996,9 @@
     "frage": "Welche Gesteinskörnung wird für Schwerbeton (Strahlenschutzbeton) verwendet?",
     "optionen": [
       "Baryt oder Magnetit (Rohdichte über 3000 kg/m³)",
-      "Sand und Kies",
+      "Bims",
       "Blähton",
-      "Bims"
+      "Sand und Kies"
     ],
     "korrekt": [
       0
@@ -2016,13 +2016,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Konsistenzklassen werden mit dem Verdichtungsmaß bestimmt?",
     "optionen": [
-      "C0 bis C3",
-      "F1 bis F6",
       "S1 bis S6",
-      "D1 bis D4"
+      "C0 bis C3",
+      "D1 bis D4",
+      "F1 bis F6"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Das Verdichtungsmaß (Walz-Tabelle) ergibt die Klassen C0 (sehr steif) bis C3 (weich). Das Ausbreitmaß ergibt F1 bis F6. Beide beschreiben die Konsistenz, aber mit unterschiedlichen Prüfverfahren.",
     "bildDatei": "/buch/lf04/konsistenzklassen-tabelle.webp",
@@ -2037,13 +2037,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen bei Stützenschalungen die Säulenzwingen unten enger angeordnet werden?",
     "optionen": [
-      "Weil der seitliche Betondruck von oben nach unten zunimmt",
-      "Weil die Stütze unten dünner ist",
+      "Weil unten weniger Platz ist",
       "Weil der Beton unten zuerst erhärtet",
-      "Weil unten weniger Platz ist"
+      "Weil die Stütze unten dünner ist",
+      "Weil der seitliche Betondruck von oben nach unten zunimmt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Frischbeton erzeugt wie eine Flüssigkeit einen hydrostatischen Druck, der nach unten zunimmt. Unten ist der Seitendruck am größten, deshalb müssen die Zwingen dort enger sitzen.",
     "bildDatei": "/buch/lf04/betondruck-schalung.webp",
@@ -2058,13 +2058,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Nachbehandlungsmaßnahme schützt den Frischbeton vor zu schnellem Austrocknen?",
     "optionen": [
-      "Abdecken mit Folie oder feucht halten",
-      "Erhitzen mit Heizstrahlern",
       "Bestreuen mit Sand",
-      "Anstreichen mit Farbe"
+      "Abdecken mit Folie oder feucht halten",
+      "Anstreichen mit Farbe",
+      "Erhitzen mit Heizstrahlern"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Frischbeton muss vor Wind, Sonne und Frost geschützt werden. Er wird mit Folie abgedeckt, mit Wasser besprüht oder mit einer Nachbehandlungsflüssigkeit (Curing Compound) versiegelt."
   },
@@ -2077,13 +2077,13 @@
     "konfidenz": "hoch",
     "frage": "Bis zu welcher Druckfestigkeitsklasse darf Standardbeton verwendet werden?",
     "optionen": [
-      "C12/15",
       "C8/10",
       "C25/30",
+      "C12/15",
       "C30/37"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Standardbeton darf nur bis zur Klasse C12/15 und maximal Expositionsklasse X0 verwendet werden. Für höhere Anforderungen muss Beton nach Eigenschaften oder Zusammensetzung festgelegt werden.",
     "bildDatei": "/buch/lf04/standardbeton-tabelle.webp",

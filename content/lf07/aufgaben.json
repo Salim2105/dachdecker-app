@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Aus welchen Teilen besteht die Steildachentwässerung?",
     "optionen": [
-      "Dachrinne, Rinnenhalter, Ablaufstutzen, Rohrbögen, Fallrohr und Rohrschellen",
       "Nur aus dem Fallrohr",
       "Nur aus Dachablauf und Gully",
+      "Dachrinne, Rinnenhalter, Ablaufstutzen, Rohrbögen, Fallrohr und Rohrschellen",
       "Aus Kehlblech und Traufstreifen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Das Regenwasser wird über die Dachfläche in die Dachrinne eingesammelt und über Ablaufstutzen in die Fallrohre weitergeleitet. Zur Anlage gehören: Dachrinne mit Endboden, Rinnenhalter (Rinnenschiene/Drehhalter), Rinnenwinkel, Einhangstutzen, Rohrbögen, Fallrohr und Fallrohrschellen.",
     "bildDatei": "/buch/lf07/bestandteile-dachentwaesserung.webp",
@@ -29,13 +29,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird bei Flachdächern das Niederschlagswasser abgeleitet?",
     "optionen": [
-      "Über Dachabläufe (Gullys), die in die Dachfläche eingelassen sind",
-      "Ausschließlich über vorgehängte Dachrinnen",
       "Über Kehlbleche am Ortgang",
+      "Ausschließlich über vorgehängte Dachrinnen",
+      "Über Dachabläufe (Gullys), die in die Dachfläche eingelassen sind",
       "Es versickert im Dachaufbau"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei Flachdächern, Dachterrassen usw. liegt die Entwässerung meist innerhalb der Dachfläche. Das Wasser wird durch Dachabläufe (Gullys) abgeleitet, die in die Dachfläche eingelassen und an Fallrohre angeschlossen sind.",
     "bildDatei": "/buch/lf07/bestandteile-dachentwaesserung.webp",
@@ -52,8 +52,8 @@
     "optionen": [
       "Außen liegende und innen liegende Dachrinnen",
       "Runde und eckige Dachrinnen",
-      "Metall- und Holzrinnen",
-      "Kurze und lange Dachrinnen"
+      "Kurze und lange Dachrinnen",
+      "Metall- und Holzrinnen"
     ],
     "korrekt": [
       0
@@ -71,13 +71,13 @@
     "konfidenz": "hoch",
     "frage": "Worin unterscheiden sich Hängerinnen von Standrinnen?",
     "optionen": [
-      "Hängerinnen hängen vor der Traufe in Rinnenhaltern, Standrinnen stehen auf dem Traufgesims",
+      "Es gibt keinen Unterschied",
       "Hängerinnen sind immer aus Kunststoff",
       "Standrinnen liegen immer innerhalb des Gebäudes",
-      "Es gibt keinen Unterschied"
+      "Hängerinnen hängen vor der Traufe in Rinnenhaltern, Standrinnen stehen auf dem Traufgesims"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Vorgehängte Rinnen (Hängerinnen) hängen vor der Traufe unter einem Traufgesims, sind selbsttragend und werden in Rinnenhaltern eingehängt und gehalten. Standrinnen werden stehend als verdeckte Rinnen auf dem Traufgesims verlegt.",
     "bildDatei": "/buch/lf07/rinnenarten-uebersicht.webp",
@@ -120,9 +120,9 @@
     "frage": "Warum muss der Rinnenwulst tiefer liegen als der Rinnenfalz?",
     "optionen": [
       "Damit überlaufendes Wasser über die Vorderkante abgeleitet wird und nicht ins Gebäude läuft",
+      "Damit sie sich nicht ausdehnt",
       "Damit die Rinne besser aussieht",
-      "Damit die Rinne leichter wird",
-      "Damit sie sich nicht ausdehnt"
+      "Damit die Rinne leichter wird"
     ],
     "korrekt": [
       0
@@ -140,13 +140,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Vorteil haben halbrunde Rinnen gegenüber kastenförmigen Rinnen?",
     "optionen": [
+      "Sie brauchen keine Rinnenhalter",
       "Höhere Abflussgeschwindigkeit, weniger Schmutzablagerungen und geringere Kosten",
       "Sie fassen deutlich mehr Wasser",
-      "Sie sind immer aus Kupfer",
-      "Sie brauchen keine Rinnenhalter"
+      "Sie sind immer aus Kupfer"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Halbrunde Rinnen erzielen bei geringen Wassermengen eine höhere Abflussgeschwindigkeit, Schmutzablagerungen werden dadurch vermieden. Darüber hinaus sind sie einfacher herzustellen und kostengünstiger als kastenförmige Dachrinnen.",
     "bildDatei": "/buch/lf07/rinnenquerschnitte-h-k.webp",
@@ -159,7 +159,7 @@
     "thema": "Dachrinnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 273 (Aufgaben S. 291)",
     "konfidenz": "hoch",
-    "text": "Das Mindestgefaelle einer Dachrinne sollte {{1}} mm auf {{1}} m Rinnenlaenge betragen.",
+    "text": "Das Mindestgefälle einer Dachrinne sollte {{1}} mm auf {{1}} m Rinnenlänge betragen.",
     "akzeptiert": {
       "1": [
         "1",
@@ -180,13 +180,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Metallrinnen miteinander verbunden?",
     "optionen": [
-      "Durch Löten, Nieten mit Dichtungseinlage, Nieten mit Weichloten, Schweißen oder Kleben",
       "Nur durch Verschrauben",
+      "Durch Löten, Nieten mit Dichtungseinlage, Nieten mit Weichloten, Schweißen oder Kleben",
       "Nur durch Klebeband",
       "Sie werden nicht verbunden"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Verbindung von Metallrinnen kann je nach Material durch Löten, Nieten mit Dichtungseinlage, Nieten mit zusätzlichem Weichlöten, Schweißen oder Kleben erfolgen. Die Wahl richtet sich nach dem Rinnenwerkstoff.",
     "bildDatei": "/buch/lf07/halbrunde-rinnen-masse.webp",
@@ -201,13 +201,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet das Kurzzeichen ‚Zn' bei der Materialbezeichnung einer Dachrinne?",
     "optionen": [
-      "Titanzink",
-      "Zinnblech",
       "Verzinktes Stahlblech",
-      "Zementgebundene Rinne"
+      "Zinnblech",
+      "Zementgebundene Rinne",
+      "Titanzink"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Materialbezeichnung wird als Kurzzeichen angegeben: Al = Aluminium, Cu = Kupfer, VSt = verzinktes Stahlblech, Zn = Titanzink, S.S. = nicht rostender Stahl.",
     "bildDatei": "/buch/lf07/halbrunde-rinnen-masse.webp",
@@ -237,7 +237,7 @@
     "thema": "Dachrinnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 273",
     "konfidenz": "hoch",
-    "text": "Die alte Bezeichnung ‚6-teilig' bedeutet, dass aus einem Blechstreifen von {{2}} m Laenge sechs gleiche Rinnenstuecke hergestellt wurden. Die Zuschnittbreite betraegt dann 200 cm : 6 = {{33,3}} cm.",
+    "text": "Die alte Bezeichnung ‚6-teilig' bedeutet, dass aus einem Blechstreifen von {{2}} m Länge sechs gleiche Rinnenstuecke hergestellt wurden. Die Zuschnittbreite beträgt dann 200 cm : 6 = {{33,3}} cm.",
     "akzeptiert": {
       "2": [
         "2",
@@ -261,13 +261,13 @@
     "konfidenz": "hoch",
     "frage": "Welche zwei Formen von Einlaufstutzen (Ablaufstutzen) gibt es?",
     "optionen": [
-      "Trichterförmige und zylindrische Einlaufstutzen",
       "Runde und quadratische Stutzen",
       "Kurze und lange Stutzen",
-      "Nur trichterförmige Stutzen"
+      "Nur trichterförmige Stutzen",
+      "Trichterförmige und zylindrische Einlaufstutzen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Der Anschluss Rinne/Fallrohr erfolgt mit trichterförmigen oder zylindrischen Einlaufstutzen. Bei zylindrischen Einläufen fließt das Wasser langsamer ab, deshalb wird bei zylindrischen Einläufen der Fallrohrdurchmesser um eine Stufe größer gewählt.",
     "bildDatei": "/buch/lf07/einhangstutzen-halbrund.webp",
@@ -280,15 +280,15 @@
     "thema": "Fallrohre",
     "quelle": "Grundstufe Bautechnik, Buch S. 274 (Aufgaben S. 291)",
     "konfidenz": "hoch",
-    "text": "Fallrohre werden mit Rohrschellen befestigt. Der Abstand betraegt hoechstens {{3}} m bei Rohrdurchmessern bis 100 mm und {{2}} m bei groesseren Rohren.",
+    "text": "Fallrohre werden mit Rohrschellen befestigt. Der Abstand beträgt höchstens {{3}} m bei Rohrdurchmessern bis 100 mm und {{2}} m bei groesseren Rohren.",
     "akzeptiert": {
-      "3": [
-        "3",
-        "drei"
-      ],
       "2": [
         "2",
         "zwei"
+      ],
+      "3": [
+        "3",
+        "drei"
       ]
     },
     "erklaerung": "Die Befestigung der Rohre an der Außenwand erfolgt mit Rohrschellen. Sie werden in Abständen von höchstens 3 m (bei Rohrdurchmessern bis 100 mm) bzw. 2 m (bei größeren Rohren) angebracht.",
@@ -304,13 +304,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Mindestabstand muss ein Fallrohr zur Außenwand haben?",
     "optionen": [
+      "Es ist kein Abstand nötig",
       "Mindestens 20 mm",
-      "Mindestens 5 mm",
       "Mindestens 100 mm",
-      "Es ist kein Abstand nötig"
+      "Mindestens 5 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Zwischen Außenwand und Fallrohr muss ein Abstand von mindestens 20 mm eingehalten werden. So kann die Wand hinter dem Rohr abtrocknen und das Rohr ist für Wartungsarbeiten zugänglich.",
     "bildDatei": "/buch/lf07/bestandteile-dachentwaesserung.webp",
@@ -325,13 +325,13 @@
     "konfidenz": "hoch",
     "frage": "Wie weit müssen Metallfallrohre an den Stoßstellen ineinandergesteckt werden?",
     "optionen": [
-      "Mindestens 50 mm",
-      "Mindestens 10 mm",
       "Mindestens 200 mm",
-      "Sie werden nur stumpf gestoßen"
+      "Mindestens 50 mm",
+      "Sie werden nur stumpf gestoßen",
+      "Mindestens 10 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "An den Stoßstellen werden Metallfallrohre mit mindestens 50 mm ineinandergesteckt und verbunden. Kunststoffrohre werden durch Muffen oder Steckelemente verbunden.",
     "bildDatei": "/buch/lf07/bestandteile-dachentwaesserung.webp",
@@ -346,13 +346,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sollten die Längsnähte von Metallfallrohren zur Gebäudeseite zeigen?",
     "optionen": [
-      "Weil sie leicht zugänglich sein sollen und die Ausbesserungsarbeiten nicht sichtbar sind",
-      "Damit sie schneller rosten",
+      "Sie sollen zur Straße zeigen",
       "Damit sie besser aussehen als Löcher",
-      "Sie sollen zur Straße zeigen"
+      "Weil sie leicht zugänglich sein sollen und die Ausbesserungsarbeiten nicht sichtbar sind",
+      "Damit sie schneller rosten"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Fallrohre aus Metall haben Längsnähte, die durch Löten, Schweißen oder Falzen hergestellt sind. Die Längsnähte sollten für eventuelle Ausbesserungsarbeiten leicht zugänglich sein und deshalb nicht auf der dem Gebäude zugewandten Seite liegen."
   },
@@ -366,9 +366,9 @@
     "frage": "Wozu dient eine Regenrohrklappe am Fallrohr?",
     "optionen": [
       "Zum Umleiten des Regenwassers in eine Regenwassertonne, z. B. für die Gartenbewässerung",
+      "Zur Befestigung des Fallrohrs",
       "Zum Verschließen des Rohres im Winter",
-      "Zum Reinigen der Dachrinne",
-      "Zur Befestigung des Fallrohrs"
+      "Zum Reinigen der Dachrinne"
     ],
     "korrekt": [
       0
@@ -388,8 +388,8 @@
     "optionen": [
       "Wirksame Dachfläche A, Berechnungsregenspende r und Abflussbeiwert C",
       "Rinnenlänge, Rinnenfarbe und Material",
-      "Dachneigung, Ziegelart und Traufhöhe",
-      "Nur von der Dachfläche"
+      "Nur von der Dachfläche",
+      "Dachneigung, Ziegelart und Traufhöhe"
     ],
     "korrekt": [
       0
@@ -405,7 +405,7 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 275",
     "konfidenz": "hoch",
-    "text": "Die Formel fuer den Regenwasserabfluss lautet: Q = A geteilt durch {{10000}} mal r mal {{C}}. Dabei ist A die wirksame Dachflaeche in m² und r die Berechnungsregenspende.",
+    "text": "Die Formel für den Regenwasserabfluss lautet: Q = A geteilt durch {{10000}} mal r mal {{C}}. Dabei ist A die wirksame Dachfläche in m² und r die Berechnungsregenspende.",
     "akzeptiert": {
       "10000": [
         "10000",
@@ -429,13 +429,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Abflussbeiwert C haben wasserundurchlässige Deckstoffe (z. B. Dachziegel)?",
     "optionen": [
+      "0,3",
       "1,0",
       "0,5",
-      "0,3",
       "0,1"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Abflussbeiwerte C nach Tabelle 1: wasserundurchlässige Deckstoffe 1,0; Kiesdächer 0,5; Gründächer mit extensiver Begrünung (Aufbaudicke < 10 cm) 0,5; Gründächer mit extensiver Begrünung (Aufbaudicke > 10 cm) 0,3; Gründächer mit intensiver Begrünung 0,3.",
     "bildDatei": "/buch/lf07/abflussbeiwerte-tabelle.webp",
@@ -450,13 +450,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Abflussbeiwert C hat ein Gründach mit intensiver Begrünung?",
     "optionen": [
-      "0,3",
-      "1,0",
       "0,5",
-      "0,8"
+      "0,3",
+      "0,8",
+      "1,0"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Gründächer mit intensiver Begrünung haben den Abflussbeiwert C = 0,3, ebenso extensive Gründächer mit einer Aufbaudicke über 10 cm. Extensive Gründächer unter 10 cm Aufbaudicke und Kiesdächer haben C = 0,5.",
     "bildDatei": "/buch/lf07/abflussbeiwerte-tabelle.webp",
@@ -469,7 +469,7 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 275",
     "konfidenz": "hoch",
-    "text": "Kiesdaecher haben den Abflussbeiwert C = {{0,5}}, waehrend wasserundurchlaessige Deckstoffe den Abflussbeiwert C = {{1,0}} haben.",
+    "text": "Kiesdächer haben den Abflussbeiwert C = {{0,5}}, während wasserundurchlässige Deckstoffe den Abflussbeiwert C = {{1,0}} haben.",
     "akzeptiert": {
       "0,5": [
         "0,5",
@@ -513,9 +513,9 @@
     "frage": "Wie hoch ist die Berechnungsregenspende, wenn für einen Ort keine statistischen Angaben vorliegen?",
     "optionen": [
       "r = 300 l/(s·ha), multipliziert mit einem Sicherheitsfaktor nach Gebäudesituation",
+      "Dann kann nicht bemessen werden",
       "r = 100 l/(s·ha) ohne Zuschlag",
-      "r = 1000 l/(s·ha)",
-      "Dann kann nicht bemessen werden"
+      "r = 1000 l/(s·ha)"
     ],
     "korrekt": [
       0
@@ -533,13 +533,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Sicherheitsfaktor gilt für innen liegende Dachrinnen bei Gebäuden mit hohen Schutzanforderungen (z. B. Krankenhäusern)?",
     "optionen": [
-      "3,0",
-      "1,0",
       "1,5",
-      "2,0"
+      "2,0",
+      "1,0",
+      "3,0"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Sicherheitsfaktoren nach Tabelle 3: vorgehängte Dachrinnen 1,0; vorgehängte Dachrinnen mit Gefahr überfließenden Wassers 1,5; innen liegende Dachrinnen 2,0; innen liegende Dachrinnen bei Gebäuden mit hohen Schutzanforderungen (Krankenhäuser, Kommunikationseinrichtungen, Kunstwerke) 3,0.",
     "bildDatei": "/buch/lf07/sicherheitsfaktoren-tabelle.webp",
@@ -554,13 +554,13 @@
     "konfidenz": "hoch",
     "frage": "Wie berechnet sich die wirksame Dachfläche A?",
     "optionen": [
-      "A = Trauflänge · horizontale Projektion der Ortganglänge (Grundlänge)",
       "A = Trauflänge · Ortganglänge (schräge Länge)",
+      "A = Dachfläche · Dachneigung",
       "A = Firstlänge · Traufhöhe",
-      "A = Dachfläche · Dachneigung"
+      "A = Trauflänge · horizontale Projektion der Ortganglänge (Grundlänge)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die wirksame Dachfläche erhält man aus A = L_R · B_R. Dabei ist L_R die Trauflänge und B_R die horizontale Projektion der Ortganglänge T_R (Grundlänge des Ortes). Es zählt also die waagerechte Grundfläche, nicht die geneigte Dachfläche.",
     "bildDatei": "/buch/lf07/wirksame-dachflaeche-beispiel.webp",
@@ -692,13 +692,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die fünfminütige Regenspende (alle fünf Jahre) für Bremen nach DIN?",
     "optionen": [
-      "246 l/(s·ha)",
       "434 l/(s·ha)",
       "250 l/(s·ha)",
-      "500 l/(s·ha)"
+      "500 l/(s·ha)",
+      "246 l/(s·ha)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach Tabelle 2 gilt für Bremen: r 5/5 nach DIN = 246 l/(s·ha), nach ZVDH = 250 l/(s·ha). Die Jahrhundertregenspende r 5/100 beträgt nach DIN 434 l/(s·ha), nach ZVDH 500 l/(s·ha).",
     "bildDatei": "/buch/lf07/regenspenden-tabelle.webp",
@@ -713,13 +713,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Jahrhundertregenspende für Stuttgart nach DIN?",
     "optionen": [
-      "782 l/(s·ha)",
-      "405 l/(s·ha)",
+      "858 l/(s·ha)",
       "446 l/(s·ha)",
-      "858 l/(s·ha)"
+      "405 l/(s·ha)",
+      "782 l/(s·ha)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach Tabelle 2 gilt für Stuttgart: r 5/5 = 405 (DIN) bzw. 446 (ZVDH); r 5/100 = 782 (DIN) bzw. 858 (ZVDH) l/(s·ha). Stuttgart hat damit die höchsten Regenspenden aller 16 Landeshauptstädte.",
     "bildDatei": "/buch/lf07/regenspenden-tabelle.webp",
@@ -732,7 +732,7 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 275 (Aufgaben S. 291)",
     "konfidenz": "hoch",
-    "text": "Nach Tabelle 2 betraegt die fuenfminuetige Regenspende r 5/5 nach DIN fuer Erfurt {{277}} l/(s·ha) und fuer Magdeburg {{307}} l/(s·ha).",
+    "text": "Nach Tabelle 2 beträgt die fünfminütige Regenspende r 5/5 nach DIN für Erfurt {{277}} l/(s·ha) und für Magdeburg {{307}} l/(s·ha).",
     "akzeptiert": {
       "277": [
         "277"
@@ -754,13 +754,13 @@
     "konfidenz": "hoch",
     "frage": "Für welche zwei Städte enthält Tabelle 2 keine Angaben zur Regenspende?",
     "optionen": [
+      "München und Stuttgart",
       "Potsdam und Wiesbaden",
-      "Berlin und Bremen",
       "Kiel und Schwerin",
-      "München und Stuttgart"
+      "Berlin und Bremen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Tabelle 2 gibt die Berechnungsregenspenden der 16 Landeshauptstädte an. Für Potsdam und Wiesbaden liegen keine Angaben vor — hier muss mit r = 300 l/(s·ha) und dem Sicherheitsfaktor nach Gebäudesituation gerechnet werden.",
     "bildDatei": "/buch/lf07/regenspenden-tabelle.webp",
@@ -775,13 +775,13 @@
     "konfidenz": "hoch",
     "frage": "Wie verändert sich das Abflussvermögen einer Dachrinne bei Rinnenwinkeln und Richtungsänderungen von mehr als 10°?",
     "optionen": [
-      "Es verringert sich — Multiplikation mit dem Reduktionsfaktor 0,85",
       "Es erhöht sich um 15 %",
-      "Es bleibt unverändert",
-      "Es halbiert sich"
+      "Es halbiert sich",
+      "Es verringert sich — Multiplikation mit dem Reduktionsfaktor 0,85",
+      "Es bleibt unverändert"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Rinnenwinkel und Richtungsänderungen von mehr als 10° vermindern das Abflussvermögen. In solchen Fällen ist das Abflussvermögen durch Multiplikation mit dem Reduktionsfaktor 0,85 zu verringern: Q_Rinnenwinkel = 0,85 · Q_Abflussvermögen.",
     "bildDatei": "/buch/lf07/tab4-halbrund-abfluss.webp",
@@ -796,13 +796,13 @@
     "konfidenz": "hoch",
     "frage": "Wie verändert sich das Ablaufvermögen, wenn statt eines trichterförmigen ein zylindrischer Ablaufstutzen verwendet wird?",
     "optionen": [
-      "Es verringert sich um etwa 30 % (Faktor 0,7)",
       "Es erhöht sich um 30 %",
       "Es bleibt gleich",
-      "Es verringert sich um 50 %"
+      "Es verringert sich um 50 %",
+      "Es verringert sich um etwa 30 % (Faktor 0,7)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei zylinderförmigen Ablaufstutzen findet eine Einschnürung der abfließenden Wassermenge statt. Dadurch verringert sich das Ablaufvermögen um etwa 30 %: Q_zylindrisch ≈ 0,7 · Q_trichterförmig.",
     "bildDatei": "/buch/lf07/einhangstutzen-halbrund.webp",
@@ -818,9 +818,9 @@
     "frage": "Wie verändert sich das Ablaufvermögen beim Einbau von Laubfangvorrichtungen?",
     "optionen": [
       "Es verringert sich um etwa 50 % (Faktor 0,5)",
+      "Es bleibt unverändert",
       "Es verringert sich um 30 %",
-      "Es erhöht sich um 50 %",
-      "Es bleibt unverändert"
+      "Es erhöht sich um 50 %"
     ],
     "korrekt": [
       0
@@ -836,7 +836,7 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 276",
     "konfidenz": "hoch",
-    "text": "Reduktionsfaktoren fuer das Abflussvermoegen: Rinnenwinkel ueber 10 Grad ergibt Faktor {{0,85}}, zylindrische Ablaufstutzen ergeben Faktor {{0,7}} und Laubfangvorrichtungen ergeben Faktor {{0,5}}.",
+    "text": "Reduktionsfaktoren für das Abflussvermögen: Rinnenwinkel über 10 Grad ergibt Faktor {{0,85}}, zylindrische Ablaufstutzen ergeben Faktor {{0,7}} und Laubfangvorrichtungen ergeben Faktor {{0,5}}.",
     "akzeptiert": {
       "0,85": [
         "0,85",
@@ -933,7 +933,7 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 277 (Aufgaben S. 291)",
     "konfidenz": "hoch",
-    "text": "Die maximale Ablaufleistung eines Einhangstutzens betraegt bei halbrunden Rinnen mit Nennmass 250 mm {{2,9}} l/s und bei kastenfoermigen Rinnen mit demselben Nennmass {{2,4}} l/s.",
+    "text": "Die maximale Ablaufleistung eines Einhangstutzens beträgt bei halbrunden Rinnen mit Nennmass 250 mm {{2,9}} l/s und bei kastenförmigen Rinnen mit demselben Nennmass {{2,4}} l/s.",
     "akzeptiert": {
       "2,9": [
         "2,9",
@@ -957,13 +957,13 @@
     "konfidenz": "hoch",
     "frage": "Welches maximale Ablaufvermögen hat eine senkrechte Regenwasserfallleitung mit 100 mm Durchmesser (Füllungsgrad 0,33)?",
     "optionen": [
+      "31,6 l/s",
       "10,7 l/s",
-      "5,9 l/s",
       "17,4 l/s",
-      "31,6 l/s"
+      "5,9 l/s"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Nach Tabelle 8 (Füllungsgrad 0,33): d = 50 mm → 1,7 l/s; 60 → 2,7; 70 → 4,1; 75 → 5,0; 80 → 5,9; 85 → 6,9; 100 → 10,7; 120 → 17,4; 125 → 19,4; 150 → 31,6 l/s.",
     "bildDatei": "/buch/lf07/tab8-fallleitungen.webp",
@@ -978,13 +978,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist das Ablaufvermögen einer Fallleitung mit 150 mm Durchmesser?",
     "optionen": [
-      "31,6 l/s",
       "19,4 l/s",
       "17,4 l/s",
-      "10,7 l/s"
+      "10,7 l/s",
+      "31,6 l/s"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach Tabelle 8 hat eine Fallleitung mit d = 150 mm bei einem Füllungsgrad von 0,33 ein maximales Ablaufvermögen von 31,6 l/s — der höchste Wert der Tabelle.",
     "bildDatei": "/buch/lf07/tab8-fallleitungen.webp",
@@ -999,13 +999,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Bedingung muss bei der Bemessung von Ablaufstutzen und Fallleitungen erfüllt sein?",
     "optionen": [
-      "Der Regenwasserabfluss muss kleiner sein als das tatsächliche Abflussvermögen",
-      "Der Regenwasserabfluss muss größer sein als das Abflussvermögen",
+      "Es gibt keine Bedingung",
       "Beide Werte müssen exakt gleich sein",
-      "Es gibt keine Bedingung"
+      "Der Regenwasserabfluss muss kleiner sein als das tatsächliche Abflussvermögen",
+      "Der Regenwasserabfluss muss größer sein als das Abflussvermögen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Grundbedingung: Q_Regenwasserabfluss < Q_tatsächliches Abflussvermögen. Die anfallende Regenwassermenge muss immer kleiner sein als das tatsächliche Abflussvermögen, sonst läuft die Rinne über."
   },
@@ -1018,13 +1018,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lang darf eine Dachrinne nach dem Merkblatt des ZVDH höchstens sein?",
     "optionen": [
+      "Beliebig lang",
       "Nicht länger als 24 m, Abstand zwischen zwei Abläufen nicht größer als 20 m",
       "Nicht länger als 5 m",
-      "Beliebig lang",
       "Höchstens 50 m"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Grundsätzlich beeinflussen Rinnenlänge und Rinnenquerschnitt das Abflussvermögen. Nach DIN bzw. dem Merkblatt des ZVDH dürfen Dachrinnen nicht länger als 24 m sein, und der Abstand zwischen zwei Abläufen darf nicht größer als 20 m sein.",
     "bildDatei": "/buch/lf07/tab4-halbrund-abfluss.webp",
@@ -1040,8 +1040,8 @@
     "frage": "Warum sind bei innen liegenden Dachrinnen immer mindestens zwei Dachabläufe vorzusehen?",
     "optionen": [
       "Weil bei Ausfall eines Ablaufs (Verstopfung) sonst Wasser ins Gebäude eindringen würde",
-      "Weil es schöner aussieht",
       "Weil die Rinne sonst zu schwer wird",
+      "Weil es schöner aussieht",
       "Weil das Baurecht es willkürlich vorschreibt"
     ],
     "korrekt": [
@@ -1077,13 +1077,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist der Mindestfreibord bei einer Rinnenhöhe von über 250 mm?",
     "optionen": [
-      "75 mm",
       "25 mm",
       "0,3 · Z",
+      "75 mm",
       "100 mm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Nach Tabelle 9 gilt für den Mindestfreibord: Rinnenhöhe Z unter 85 mm → 25 mm; Z von 85 bis 250 mm → 0,3 · Z; Z über 250 mm → 75 mm.",
     "bildDatei": "/buch/lf07/tab9-freibord.webp",
@@ -1096,7 +1096,7 @@
     "thema": "Innen liegende Rinnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 278",
     "konfidenz": "hoch",
-    "text": "Bei einer Rinnenhoehe unter 85 mm betraegt der Mindestfreibord {{25}} mm, bei einer Rinnenhoehe zwischen 85 und 250 mm gilt der Faktor {{0,3}} mal die Rinnenhoehe.",
+    "text": "Bei einer Rinnenhöhe unter 85 mm beträgt der Mindestfreibord {{25}} mm, bei einer Rinnenhöhe zwischen 85 und 250 mm gilt der Faktor {{0,3}} mal die Rinnenhöhe.",
     "akzeptiert": {
       "25": [
         "25"
@@ -1119,13 +1119,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird das Mindestabflussvermögen für Notabläufe und Notüberläufe berechnet?",
     "optionen": [
-      "Als Differenz zwischen Jahrhundertregen und dem größten Abflussvermögen des Dachentwässerungssystems",
-      "Als Summe beider Regenspenden",
       "Als Hälfte der normalen Regenspende",
+      "Als Summe beider Regenspenden",
+      "Als Differenz zwischen Jahrhundertregen und dem größten Abflussvermögen des Dachentwässerungssystems",
       "Es muss nicht berechnet werden"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Für die Berechnung des Mindestabflussvermögens von Notabläufen oder Notüberläufen ist die Differenz zwischen dem Jahrhundertregen und dem größten Abflussvermögen des Dachentwässerungssystems maßgebend: Q_Not = (r 5/100 − r 5/5) · C · A / 10000 = Q 5/100 − Q 5/5.",
     "bildDatei": "/buch/lf07/tab10-innen-500.webp",
@@ -1232,13 +1232,13 @@
     "konfidenz": "hoch",
     "frage": "Womit beginnt die Montage einer Dachrinne?",
     "optionen": [
-      "Mit dem Markieren des Rinnenablaufs — dort befindet sich der niedrigste Punkt der Rinne",
       "Mit dem Anbringen des Fallrohrs",
-      "Mit dem Löten der Endstücke",
-      "Mit dem Setzen der Rohrschellen"
+      "Mit dem Setzen der Rohrschellen",
+      "Mit dem Markieren des Rinnenablaufs — dort befindet sich der niedrigste Punkt der Rinne",
+      "Mit dem Löten der Endstücke"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zu Beginn wird die Platzierung des Rinnenablaufs markiert, denn hier befindet sich der niedrigste Punkt der Rinne. Dort werden dann jeweils rechts und links Rinnenhalter angebracht. Danach wird ein Halter an der höchsten Stelle befestigt.",
     "bildDatei": "/buch/lf07/montage-rinne-schritte.webp",
@@ -1253,13 +1253,13 @@
     "konfidenz": "hoch",
     "frage": "Warum darf zum Schneiden der Dachrinne keinesfalls ein Winkelschleifer verwendet werden?",
     "optionen": [
-      "Weil die Hitze die Schutzschicht des Metalls zerstört und Korrosion begünstigt",
       "Weil der Winkelschleifer zu langsam ist",
+      "Weil die Hitze die Schutzschicht des Metalls zerstört und Korrosion begünstigt",
       "Weil er zu leise ist",
       "Weil er die Rinne zu glatt schneidet"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Mit einer Metallsäge wird das Loch ausgesägt; dabei sollte auf keinen Fall ein Winkelschleifer verwendet werden. Die Hitzeeinwirkung des Winkelschleifers zerstört die Schutzschicht des Metalls und begünstigt Korrosion an der Schnittkante.",
     "bildDatei": "/buch/lf07/montage-rinne-schritte.webp",
@@ -1272,7 +1272,7 @@
     "thema": "Montage",
     "quelle": "Grundstufe Bautechnik, Buch S. 280",
     "konfidenz": "hoch",
-    "text": "Nach dem Ausschneiden wird die Kante mit einem Hammer etwas nach unten gebogen. Dieser Arbeitsschritt heisst {{Umboerdeln}}.",
+    "text": "Nach dem Ausschneiden wird die Kante mit einem Hammer etwas nach unten gebogen. Dieser Arbeitsschritt heisst {{Umbördeln}}.",
     "akzeptiert": {
       "Umboerdeln": [
         "Umboerdeln",
@@ -1296,13 +1296,13 @@
     "konfidenz": "hoch",
     "frage": "Mit wie vielen Nägeln oder Schrauben werden Rinnenhalter an der Traufe mindestens befestigt?",
     "optionen": [
+      "Sie werden nur eingehängt",
       "Mit mindestens zwei Nägeln oder Schrauben",
       "Mit einem Nagel",
-      "Mit vier Schrauben",
-      "Sie werden nur eingehängt"
+      "Mit vier Schrauben"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Rinnenhalter werden an der Traufe mit mindestens zwei Nägeln oder Schrauben oder durch Drehhaltersysteme befestigt. Drehrinnenhalter werden in eine durchlaufende Rinnenschiene eingedreht.",
     "bildDatei": "/buch/lf07/rinnenhalter-nase-feder.webp",
@@ -1317,13 +1317,13 @@
     "konfidenz": "hoch",
     "frage": "Aus welchem Material müssen Rinnenhalter für eine Kupferrinne bestehen?",
     "optionen": [
-      "Aus Kupfer — die Halter müssen aus einem mit der Rinne verträglichen Metall bestehen",
-      "Aus verzinktem Stahl",
+      "Das Material spielt keine Rolle",
       "Aus Aluminium",
-      "Das Material spielt keine Rolle"
+      "Aus verzinktem Stahl",
+      "Aus Kupfer — die Halter müssen aus einem mit der Rinne verträglichen Metall bestehen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Rinnenhalter müssen aus Metallen bestehen, die mit der verwendeten Rinne verträglich sind. Für Zink-, Aluminium- und feuerverzinkte Stahlrinnen können Rinnenhalter aus feuerverzinktem Stahl verwendet werden, für Kupferrinnen solche aus Kupfer.",
     "bildDatei": "/buch/lf07/rinnenhalter-nase-feder.webp",
@@ -1359,13 +1359,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Länge müssen bei Metallrinnen Dehnungsmöglichkeiten angeordnet werden?",
     "optionen": [
-      "Ab etwa 15 m Länge (bei Kunststoffrinnen bereits ab 4 m)",
-      "Ab 50 m Länge",
+      "Dehnungsmöglichkeiten sind nie nötig",
       "Ab 2 m Länge",
-      "Dehnungsmöglichkeiten sind nie nötig"
+      "Ab 50 m Länge",
+      "Ab etwa 15 m Länge (bei Kunststoffrinnen bereits ab 4 m)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Um eine ungehinderte Wärmedehnung zu ermöglichen, müssen bei Metallrinnen über 15 m Länge Dehnungsmöglichkeiten angeordnet werden. Die Längenausdehnung von Hart-PVC ist noch größer als die von Metallen, weshalb bei Kunststoffrinnen bereits ab 4 m Länge Elemente eingebaut werden.",
     "bildDatei": "/buch/lf07/chloropren-dehnungsband.webp",
@@ -1380,13 +1380,13 @@
     "konfidenz": "hoch",
     "frage": "Um wie viel dehnt sich eine 10 m lange Kunststoffrinne bei 80 °C Temperaturunterschied etwa aus?",
     "optionen": [
-      "Etwa 40 mm",
-      "Etwa 4 mm",
       "Etwa 400 mm",
+      "Etwa 4 mm",
+      "Etwa 40 mm",
       "Sie dehnt sich nicht aus"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Längenausdehnung von Hart-PVC ist deutlich größer als die von Metallen: Eine 10 m lange Kunststoffrinne dehnt sich bei 80 °C Temperaturunterschied um etwa 40 mm aus. Deshalb sind bei Kunststoffrinnen bereits ab 4 m Dehnungselemente nötig.",
     "bildDatei": "/buch/lf07/chloropren-dehnungsband.webp",
@@ -1419,13 +1419,13 @@
     "konfidenz": "hoch",
     "frage": "Warum dürfen Schiebenähte nur an den höchsten Punkten des Rinnenverlaufs angeordnet werden?",
     "optionen": [
-      "Weil sie den Wasserlauf sperren",
       "Weil sie sonst zu teuer sind",
       "Weil sie dort besser aussehen",
-      "Weil sie sonst einfrieren"
+      "Weil sie sonst einfrieren",
+      "Weil sie den Wasserlauf sperren"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Schiebenähte ermöglichen zwar Dehnbewegungen, sperren aber den Wasserlauf. Sie können daher nur an den höchsten Punkten des Rinnenverlaufs angeordnet werden, wo kein Wasser durchfließen muss.",
     "bildDatei": "/buch/lf07/chloropren-dehnungsband.webp",
@@ -1441,9 +1441,9 @@
     "frage": "Aus welchem Kunststoff werden Dachrinnen und Fallrohre hauptsächlich hergestellt?",
     "optionen": [
       "Aus schlagfestem PVC (Hart-PVC)",
+      "Aus Acrylglas",
       "Aus Polystyrol",
-      "Aus Polyethylen-Schaum",
-      "Aus Acrylglas"
+      "Aus Polyethylen-Schaum"
     ],
     "korrekt": [
       0
@@ -1461,13 +1461,13 @@
     "konfidenz": "hoch",
     "frage": "Wo sollten Dachrinnen aus PVC bevorzugt eingesetzt werden?",
     "optionen": [
-      "Dort, wo sie wenig mechanisch beansprucht werden und die Wärmedehnung ausgeglichen werden kann",
       "Nur an Hochhäusern",
+      "Nur bei Denkmalschutzobjekten",
       "Nur in schneereichen Gebieten",
-      "Nur bei Denkmalschutzobjekten"
+      "Dort, wo sie wenig mechanisch beansprucht werden und die Wärmedehnung ausgeglichen werden kann"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Dachrinnen und Fallrohre aus PVC sind preiswert und haben eine niedrige Masse, aber eine verhältnismäßig hohe Wärmeausdehnung. Sie sollten deshalb nur dort eingesetzt werden, wo sie wenig mechanisch beansprucht werden und die Bewegungen aus der Wärmeausdehnung ausgeglichen oder durch stabile Bauteile aufgefangen werden können.",
     "bildDatei": "/buch/lf07/dachrinnensystem-pvc.webp",
@@ -1483,9 +1483,9 @@
     "frage": "Wie werden Kunststoffrinnen aus Hart-PVC verbunden?",
     "optionen": [
       "Durch Steckverbindungen mit Verbindungsstücken oder durch Klebeverbindungen mit PVC-Kleber",
+      "Durch Nieten",
       "Durch Löten",
-      "Durch Schweißen mit dem Winkelschleifer",
-      "Durch Nieten"
+      "Durch Schweißen mit dem Winkelschleifer"
     ],
     "korrekt": [
       0
@@ -1503,13 +1503,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Mindestabstand müssen Dachabläufe zu Durchdringungen und Aufbauten haben?",
     "optionen": [
-      "Mindestens 30 cm",
       "Mindestens 5 cm",
       "Mindestens 100 cm",
+      "Mindestens 30 cm",
       "Es ist kein Abstand nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Abläufe werden an den Tiefpunkten der Dachfläche angeordnet und sollten einen Mindestabstand von 30 cm zu anderen Durchdringungen bzw. Aufbauten haben. Bei zu geringem Abstand besteht die Gefahr, dass sich Verschmutzungen (z. B. Laub) am Dachrand sammeln und die Dachabläufe verstopfen.",
     "bildDatei": "/buch/lf07/dachablauf-aufstockelement.webp",
@@ -1524,13 +1524,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Belastbarkeitsklasse gilt für Dachabläufe auf Balkonen, Terrassen und begrünten Flachdächern?",
     "optionen": [
+      "Klasse B2",
       "Klasse K3",
       "Klasse H1,5",
-      "Klasse A1",
-      "Klasse B2"
+      "Klasse A1"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Abläufe werden nach ihrer Belastbarkeit eingeteilt: Klasse ‚H1,5' für nicht genutzte Flachdächer, Klasse ‚K3' für Balkone, Terrassen und begrünte Flachdächer. Die höhere Klasse ist nötig, weil diese Flächen begangen werden.",
     "bildDatei": "/buch/lf07/dachablauf-aufstockelement.webp",
@@ -1543,7 +1543,7 @@
     "thema": "Flachdachentwässerung",
     "quelle": "Grundstufe Bautechnik, Buch S. 283",
     "konfidenz": "hoch",
-    "text": "Gaengige Nenngroessen von Dachablaeufen sind DN/ID {{50}}, 70, 100, 125 und {{150}}.",
+    "text": "Gängige Nenngroessen von Dachabläufen sind DN/ID {{50}}, 70, 100, 125 und {{150}}.",
     "akzeptiert": {
       "50": [
         "50"
@@ -1566,9 +1566,9 @@
     "frage": "Warum sollten Dachabläufe und Fallrohre wärmegedämmt sein?",
     "optionen": [
       "Um die Bildung von Tauwasser zu verhindern",
+      "Damit sie schneller Wasser leiten",
       "Um sie schwerer zu machen",
-      "Damit sie besser aussehen",
-      "Damit sie schneller Wasser leiten"
+      "Damit sie besser aussehen"
     ],
     "korrekt": [
       0
@@ -1586,13 +1586,13 @@
     "konfidenz": "hoch",
     "frage": "Wie weit müssen Roste in nicht genutzten Flachdächern über den Dachbelag hinausragen?",
     "optionen": [
-      "Mindestens 30 mm",
-      "Mindestens 5 mm",
+      "Sie sollen bündig liegen",
       "Mindestens 100 mm",
-      "Sie sollen bündig liegen"
+      "Mindestens 5 mm",
+      "Mindestens 30 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Einlauföffnungen der Dachabläufe werden durch Gitterroste, Körbe oder Siebe abgedeckt. Roste in nicht genutzten Flachdächern müssen mindestens 30 mm über den Dachbelag hinausragen, damit sie nicht sofort zuwachsen bzw. verstopfen.",
     "bildDatei": "/buch/lf07/dachablauf-aufstockelement.webp",
@@ -1607,13 +1607,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden bei begrünten Dächern die Dachabläufe geschützt?",
     "optionen": [
-      "Der Bereich der Abläufe wird vor dem Zuwachsen mit einem mindestens 50 cm breiten Kiesrand geschützt",
       "Mit einer dicken Erdschicht abgedeckt",
-      "Sie werden fest verschlossen",
-      "Sie brauchen keinen Schutz"
+      "Der Bereich der Abläufe wird vor dem Zuwachsen mit einem mindestens 50 cm breiten Kiesrand geschützt",
+      "Sie brauchen keinen Schutz",
+      "Sie werden fest verschlossen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei begrünten Dächern ist der Bereich der Abläufe vor dem Zuwachsen mit einem mindestens 50 cm breiten Kiesrand zu schützen. Sonst würden Wurzeln und Pflanzenreste den Ablauf verstopfen."
   },
@@ -1627,9 +1627,9 @@
     "frage": "Wie wird bei frostgefährdeten Dachabläufen eine Vereisung verhindert?",
     "optionen": [
       "Durch eine Heizung (Heizspiralen, Heizmanschette)",
-      "Durch dickere Wärmedämmung allein",
+      "Durch Abdecken mit Folie",
       "Durch häufiges Ausräumen",
-      "Durch Abdecken mit Folie"
+      "Durch dickere Wärmedämmung allein"
     ],
     "korrekt": [
       0
@@ -1647,13 +1647,13 @@
     "konfidenz": "hoch",
     "frage": "Aus welchen Materialien werden Dachabläufe als Fertigteile hergestellt?",
     "optionen": [
+      "Nur aus Holz",
       "Aus Kunststoff, Gusseisen oder korrosionsgeschütztem Stahl",
       "Nur aus Beton",
-      "Nur aus Holz",
       "Nur aus Glas"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Dachabläufe werden als Fertigteile aus Kunststoff, Gusseisen oder korrosionsgeschütztem Stahl angeboten. Sie bestehen aus einem oder mehreren Teilen, die in die Dachfläche eingebaut und abgedichtet werden.",
     "bildDatei": "/buch/lf07/dachablauf-aufstockelement.webp",
@@ -1669,9 +1669,9 @@
     "frage": "Welche Form ergibt die Abwicklung eines Zylindermantels?",
     "optionen": [
       "Eine Rechteckfläche",
-      "Einen Kreisausschnitt",
+      "Eine Ellipse",
       "Ein Dreieck",
-      "Eine Ellipse"
+      "Einen Kreisausschnitt"
     ],
     "korrekt": [
       0
@@ -1687,16 +1687,16 @@
     "thema": "Zeichnerische Darstellung",
     "quelle": "Grundstufe Bautechnik, Buch S. 284",
     "konfidenz": "hoch",
-    "text": "Der Umfang eines Kreises wird berechnet mit der Formel U = d mal {{pi}}. Bei einer Teilung in 12 Teile betraegt der Winkel je Teil {{30}} Grad.",
+    "text": "Der Umfang eines Kreises wird berechnet mit der Formel U = d mal {{pi}}. Bei einer Teilung in 12 Teile beträgt der Winkel je Teil {{30}} Grad.",
     "akzeptiert": {
+      "30": [
+        "30"
+      ],
       "pi": [
         "pi",
         "Pi",
         "3,14",
         "3.14"
-      ],
-      "30": [
-        "30"
       ]
     },
     "erklaerung": "Am genauesten wird der Umfang durch Rechnung ermittelt: U = d · π. Für Konstruktionen teilt man den Umfang mithilfe der Zeichendreiecke in regelmäßige Teile auf: 8 Teile = 45°, 12 Teile = 30°, 16 Teile = 22,5°.",
@@ -1712,13 +1712,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Schnittfigur entsteht, wenn ein Zylinder unter 45° zur Grundrissebene geschnitten wird?",
     "optionen": [
-      "Ein Kreis",
       "Ein Rechteck",
-      "Eine Gerade",
-      "Ein Dreieck"
+      "Ein Kreis",
+      "Ein Dreieck",
+      "Eine Gerade"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Je nach Lage der Schnittebene ergeben sich unterschiedliche Schnittfiguren: Gerade — die Schnittebene liegt parallel zur Grundrissebene; Rechteck — die Schnittebene liegt senkrecht zur Grundrissebene; Kreis — die Schnittebene liegt im 45°-Winkel; Ellipse — die Schnittebene liegt in beliebigem Winkel zur Grundrissebene.",
     "bildDatei": "/buch/lf07/schnitte-am-zylinder.webp",
@@ -1755,8 +1755,8 @@
     "optionen": [
       "Einen Kreisausschnitt",
       "Ein Rechteck",
-      "Ein Trapez",
-      "Einen Vollkreis"
+      "Einen Vollkreis",
+      "Ein Trapez"
     ],
     "korrekt": [
       0
@@ -1775,9 +1775,9 @@
     "frage": "Wie verändert sich die Bogenlänge bei der Kegelabwicklung, je flacher der Kegel ist?",
     "optionen": [
       "Je flacher der Kegel, desto größer die Bogenlänge im Verhältnis zur Mantellänge",
-      "Je flacher der Kegel, desto kleiner die Bogenlänge",
       "Die Bogenlänge bleibt immer gleich",
-      "Die Bogenlänge wird immer zum Vollkreis"
+      "Die Bogenlänge wird immer zum Vollkreis",
+      "Je flacher der Kegel, desto kleiner die Bogenlänge"
     ],
     "korrekt": [
       0
@@ -1813,9 +1813,9 @@
     "frage": "Was entsteht bei der Durchdringung zweier Körper?",
     "optionen": [
       "Eine Durchdringungskurve an der Naht",
-      "Ein Kreis",
+      "Nichts Besonderes",
       "Ein Rechteck",
-      "Nichts Besonderes"
+      "Ein Kreis"
     ],
     "korrekt": [
       0
@@ -1833,13 +1833,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Hilfsschnitte bei der Konstruktion einer Durchdringungskurve gelegt?",
     "optionen": [
-      "So, dass einfache Schnittflächen wie Kreise oder Rechtecke entstehen",
-      "Möglichst schräg und unregelmäßig",
       "Immer nur ein einziger Schnitt",
-      "Beliebig, das ist egal"
+      "So, dass einfache Schnittflächen wie Kreise oder Rechtecke entstehen",
+      "Beliebig, das ist egal",
+      "Möglichst schräg und unregelmäßig"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Hilfsschnitte werden so angeordnet, dass einfache Schnittflächen (z. B. Kreise, Rechtecke) entstehen. Je mehr Punkte durch Hilfsschnitte bestimmt werden, desto genauer wird die Durchdringungskurve, die mit dem Kurvenlineal gezeichnet werden kann.",
     "bildDatei": "/buch/lf07/durchdringung-zylinder.webp",
@@ -1990,13 +1990,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist zu tun, wenn das Abflussvermögen einer Dachrinne nach Anwendung der Reduktionsfaktoren kleiner ist als der Regenwasserabfluss?",
     "optionen": [
-      "Die nächstgrößere Dachrinne muss gewählt werden",
       "Man verzichtet auf die Dachrinne",
-      "Man verringert die Dachfläche",
-      "Man nimmt eine kleinere Rinne"
+      "Man nimmt eine kleinere Rinne",
+      "Die nächstgrößere Dachrinne muss gewählt werden",
+      "Man verringert die Dachfläche"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zunächst wird der Regenwasserabfluss berechnet und eine Dachrinne mit passendem Abflussvermögen ausgewählt. Ist das reduzierte Abflussvermögen nach Anwendung der Faktoren kleiner als der Regenwasserabfluss, muss die nächstgrößere Dachrinne gewählt werden.",
     "bildDatei": "/buch/lf07/tab5-kasten-abfluss.webp",
@@ -2011,13 +2011,13 @@
     "konfidenz": "hoch",
     "frage": "Warum brauchen innen liegende Dachrinnen eine Notüberlaufvorrichtung?",
     "optionen": [
+      "Damit sie schneller trocknen",
       "Weil beim Überlaufen Wasser in die Dachfläche und ins Gebäude eindringen würde",
-      "Weil sie sonst zu leicht sind",
       "Nur aus optischen Gründen",
-      "Damit sie schneller trocknen"
+      "Weil sie sonst zu leicht sind"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Innen liegende Rinnen liegen im Dachbereich innerhalb der Gebäudefläche. Beim Überlaufen würde Wasser in die Dachfläche und unter Umständen in das Gebäude eindringen. Innen liegende Rinnen erhalten deshalb Notüberlaufvorrichtungen.",
     "bildDatei": "/buch/lf07/rinnenarten-uebersicht.webp",
@@ -2032,13 +2032,13 @@
     "konfidenz": "hoch",
     "frage": "Wie kann in kalten, schneereichen Gebieten das Vereisen und Verstopfen innen liegender Rinnen verhindert werden?",
     "optionen": [
+      "Durch schmalere Rinnen",
       "Durch eine Rinnenheizung",
-      "Durch dickere Rinnenhalter",
       "Durch häufiges Streichen",
-      "Durch schmalere Rinnen"
+      "Durch dickere Rinnenhalter"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "In kalten, schneereichen Gebieten kann durch eine Rinnenheizung ein Vereisen und Verstopfen der innen liegenden Rinne verhindert werden. Vereiste Rinnen würden das Wasser aufstauen und zum Überlaufen ins Gebäude führen.",
     "bildDatei": "/buch/lf07/rinnenarten-uebersicht.webp",
@@ -2053,13 +2053,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient ein Rinnenkasten?",
     "optionen": [
+      "Als Ersatz für den Rinnenhalter",
       "Zum Sammeln besonders großer Wasserzuläufe vor dem Fallrohr",
       "Zum Lagern von Werkzeug",
-      "Als Ersatz für den Rinnenhalter",
       "Als Zierelement ohne Funktion"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Rinnenkästen kommen bei besonders großem Wasserzulauf zum Einsatz. Sie sammeln das Wasser aus der Rinne, bevor es in das Fallrohr abgeleitet wird, und verhindern so ein Überlaufen bei Spitzenlasten.",
     "bildDatei": "/buch/lf07/rinnenkasten.webp",
@@ -2074,13 +2074,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird das Fallrohr bei vorgehängten Rinnen mit Dachüberstand an die Wand geführt?",
     "optionen": [
-      "Über Rohrbögen (Verbindungsstutzen), die den Überhang überbrücken",
-      "Senkrecht durch das Dach",
       "Durch die Dachrinne hindurch",
-      "Es wird nicht an die Wand geführt"
+      "Es wird nicht an die Wand geführt",
+      "Senkrecht durch das Dach",
+      "Über Rohrbögen (Verbindungsstutzen), die den Überhang überbrücken"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei Dachüberständen führen Rohrbögen die Fallleitung an die Hauswand, damit sie dort mit Rohrschellen befestigt werden kann. Der Überhang zwischen Rinne und Außenwand wird durch Bögen oder Verbindungsstutzen überbrückt.",
     "bildDatei": "/buch/lf07/bestandteile-dachentwaesserung.webp",
@@ -2095,13 +2095,13 @@
     "konfidenz": "hoch",
     "frage": "Wie muss das Fallrohr am unteren Ende angeschlossen werden?",
     "optionen": [
+      "Es wird in die Wand eingelassen",
       "Über ein Abflussrohr an die Kanalisation",
       "Es endet frei über dem Boden ohne Anschluss",
-      "Es wird in die Wand eingelassen",
       "Es wird verschlossen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Am unteren Ende wird das Fallrohr über ein Abflussrohr an die Kanalisation angeschlossen. Wird eine Regenwassernutzung eingebaut, erhält das Fallrohr zunächst einen Schmutzfilter und leitet das Wasser in ein Sammelbecken."
   },
@@ -2114,13 +2114,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Sammelbecken zur Regenwassernutzung ausgeführt?",
     "optionen": [
-      "Als Kunststofftanks oder abgedichtete Becken aus Beton",
-      "Nur aus Holz",
       "Nur aus Blech",
-      "Als offene Erdgrube"
+      "Als offene Erdgrube",
+      "Nur aus Holz",
+      "Als Kunststofftanks oder abgedichtete Becken aus Beton"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Als Sammelbecken eignen sich Kunststofftanks oder abgedichtete Becken aus Beton. Für weitergehende Regenwassernutzung (z. B. Toilettenspülung, Waschwasser) muss das Regenwasser im Sammelbecken gespeichert und über eine Pumpe in die häusliche Wasserversorgung weitergeleitet werden."
   },
@@ -2134,9 +2134,9 @@
     "frage": "Wozu dient der Überlauf am Sammelbecken einer Regenwassernutzungsanlage?",
     "optionen": [
       "Er leitet überschüssiges Wasser über ein Abflussrohr in die Kanalisation",
-      "Er belüftet das Becken",
       "Er reinigt das Wasser",
-      "Er pumpt Wasser ins Haus"
+      "Er pumpt Wasser ins Haus",
+      "Er belüftet das Becken"
     ],
     "korrekt": [
       0
@@ -2152,13 +2152,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist eine Notentwässerung bei vorgehängten Dachrinnen?",
     "optionen": [
+      "Eine Pumpe in der Rinne",
       "Ein Notüberlauf über die Vorderkante der Rinnenlängsseite, wenn die Dachrinnen voll gefüllt sind",
       "Ein zusätzliches Fallrohr im Gebäude",
-      "Eine Pumpe in der Rinne",
       "Eine Heizung in der Rinne"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei vorgehängten Dachrinnen werden keine speziellen Notüberläufe für den Fall vorgesehen, dass die Dachrinnen voll gefüllt sind. Die Notentwässerung erfolgt in diesem Fall über die Vorderkante der Rinnenlängsseite — deshalb liegt der Rinnenwulst tiefer als der Rinnenfalz.",
     "bildDatei": "/buch/lf07/rinnenquerschnitte-h-k.webp",
@@ -2173,13 +2173,13 @@
     "konfidenz": "hoch",
     "frage": "Wie erfolgt die Abdichtung der Dachabläufe?",
     "optionen": [
-      "Über vorgefertigte Flansche, die mit der Dachabdichtung verklebt oder verschweißt werden",
       "Nur mit Silikon",
-      "Gar nicht, sie werden nur eingesetzt",
-      "Mit Mörtel eingegossen"
+      "Mit Mörtel eingegossen",
+      "Über vorgefertigte Flansche, die mit der Dachabdichtung verklebt oder verschweißt werden",
+      "Gar nicht, sie werden nur eingesetzt"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Abdichtung der Abläufe erfolgt durch vorgefertigte Flansche, die mit der Dachabdichtung verklebt oder verschweißt werden. Bei Dichtungsmanschetten aus Kunststoff werden sie mit Klemmringen oder Schraubflanschen mit den Abläufen verbunden.",
     "bildDatei": "/buch/lf07/dachablauf-zweiteilig.webp",
@@ -2194,13 +2194,13 @@
     "konfidenz": "hoch",
     "frage": "Wie sollen Ablaufstutzen bei innen liegenden Dachrinnen ausgebildet sein?",
     "optionen": [
-      "Konisch, mit doppelt so großem Einlaufquerschnitt wie der Querschnitt der Fallleitung",
-      "Zylindrisch und möglichst eng",
       "Rechteckig ohne Verjüngung",
-      "Die Form ist gleichgültig"
+      "Zylindrisch und möglichst eng",
+      "Die Form ist gleichgültig",
+      "Konisch, mit doppelt so großem Einlaufquerschnitt wie der Querschnitt der Fallleitung"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Ablaufstutzen sollten konisch ausgebildet sein und ihr Einlaufquerschnitt etwa doppelt so groß wie der Querschnitt der Fallleitung sein, um ein optimales Ablaufvermögen zu garantieren."
   },
@@ -2213,13 +2213,13 @@
     "konfidenz": "hoch",
     "frage": "Wohin muss die Notentwässerung über zusätzliche Fallleitungen entwässern?",
     "optionen": [
-      "Frei aufs Grundstück — nicht in die Grundleitungen",
       "In die Grundleitungen der Kanalisation",
+      "Frei aufs Grundstück — nicht in die Grundleitungen",
       "In den Keller",
       "In die Dachrinne zurück"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Wenn die Notentwässerung über zusätzliche Fallleitungen erfolgt, dürfen diese nicht in die Grundleitungen entwässern, sondern müssen frei aufs Grundstück geführt werden. So ist sichergestellt, dass die Notentwässerung auch bei überlasteter Kanalisation funktioniert."
   },
@@ -2271,13 +2271,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Angaben braucht man mindestens, um für ein Gebäude die Dachrinne zu bemessen?",
     "optionen": [
-      "Wirksame Dachfläche, örtliche Regenspende, Abflussbeiwert und Rinnenlänge",
+      "Nur den Gebäudestandort",
       "Nur die Farbe der Dachziegel",
       "Nur die Traufhöhe",
-      "Nur den Gebäudestandort"
+      "Wirksame Dachfläche, örtliche Regenspende, Abflussbeiwert und Rinnenlänge"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für die Bemessung braucht man: die wirksame Dachfläche A (aus Trauflänge und Grundlänge), die örtliche Berechnungsregenspende r (Tabelle 2 oder 300 l/(s·ha) mit Sicherheitsfaktor), den Abflussbeiwert C (nach Deckungsart) und die Rinnenlänge (für die Tabellen 4/5).",
     "bildDatei": "/buch/lf07/projekt-walmdach-draufsicht.webp",
@@ -2292,13 +2292,13 @@
     "konfidenz": "hoch",
     "frage": "Nach welchen Gesichtspunkten wird der Werkstoff für die Dachentwässerung ausgewählt?",
     "optionen": [
-      "Nach technischen, wirtschaftlichen und ökologischen Gesichtspunkten",
       "Nur nach dem Preis",
       "Nur nach der Farbe",
-      "Nach dem Zufall"
+      "Nach dem Zufall",
+      "Nach technischen, wirtschaftlichen und ökologischen Gesichtspunkten"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Werkstoffwahl für die Dachentwässerung erfolgt nach technischen (Korrosionsbeständigkeit, Verträglichkeit mit dem Deckwerkstoff, Wärmedehnung), wirtschaftlichen (Materialpreis, Verarbeitungsaufwand, Lebensdauer) und ökologischen Gesichtspunkten (Herstellungsenergie, Recyclingfähigkeit).",
     "bildDatei": "/buch/lf07/projekt-walmdach-draufsicht.webp",
@@ -2313,13 +2313,13 @@
     "konfidenz": "hoch",
     "frage": "Ein Dach benötigt 36 l/s Ableitung. Es stehen Fallleitungen mit d = 125 mm (je 19,4 l/s) zur Verfügung. Wie viele werden mindestens gebraucht?",
     "optionen": [
-      "Zwei Fallleitungen (zusammen 38,8 l/s)",
+      "Vier Fallleitungen",
       "Eine Fallleitung",
-      "Drei Fallleitungen",
-      "Vier Fallleitungen"
+      "Zwei Fallleitungen (zusammen 38,8 l/s)",
+      "Drei Fallleitungen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Eine Fallleitung mit d = 125 mm führt nach Tabelle 8 maximal 19,4 l/s ab — das reicht für 36 l/s nicht. Zwei Fallleitungen führen zusammen 38,8 l/s ab und decken damit den Bedarf. Bei innen liegenden Rinnen sind ohnehin mindestens zwei Abläufe vorgeschrieben.",
     "bildDatei": "/buch/lf07/tab8-fallleitungen.webp",
@@ -2332,13 +2332,13 @@
     "thema": "Bemessung",
     "quelle": "Grundstufe Bautechnik, Buch S. 276",
     "konfidenz": "hoch",
-    "text": "Nach DIN bzw. ZVDH duerfen Dachrinnen nicht laenger als {{24}} m sein. Der Abstand zwischen zwei Ablaeufen darf nicht groesser als {{20}} m sein.",
+    "text": "Nach DIN bzw. ZVDH dürfen Dachrinnen nicht länger als {{24}} m sein. Der Abstand zwischen zwei Abläufen darf nicht groesser als {{20}} m sein.",
     "akzeptiert": {
-      "24": [
-        "24"
-      ],
       "20": [
         "20"
+      ],
+      "24": [
+        "24"
       ]
     },
     "erklaerung": "Rinnenlänge und Rinnenquerschnitt beeinflussen das Abflussvermögen. Je länger die Rinne, desto geringer das Abflussvermögen je Meter. Deshalb die Grenzen: Rinnenlänge höchstens 24 m, Ablaufabstand höchstens 20 m.",

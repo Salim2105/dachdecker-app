@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Metalle werden für Dachdeckungen eingesetzt?",
     "optionen": [
+      "Nur Aluminium und Stahl",
       "Kupfer, Blei, Aluminium, Stahl und Zink",
       "Nur Kupfer und Blei",
-      "Nur Aluminium und Stahl",
       "Gusseisen und Messing"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Kupfer und Blei gehören zu den alten, traditionsreichen Dachdeckungsmaterialien. Für moderne Metalldeckungen werden — neben Kupfer und Blei — auch Aluminium, Stahl und Zink verwendet. (Buchaufgabe 1: Nennen Sie mindestens fünf verschiedene Metalle.)",
     "bildDatei": "/buch/lf12/titanzink-dacheindeckung.webp",
@@ -29,13 +29,13 @@
     "konfidenz": "hoch",
     "frage": "Worin unterscheiden sich selbsttragende und nicht selbsttragende Metalldeckungen?",
     "optionen": [
-      "Selbsttragende Deckungen können Dachlasten übertragen und brauchen keine vollflächige Deckunterlage, nicht selbsttragende brauchen eine Deckunterlage",
-      "Selbsttragende Deckungen sind immer aus Kupfer",
+      "Es gibt keinen Unterschied in der Unterkonstruktion",
       "Nicht selbsttragende Deckungen sind dicker",
-      "Es gibt keinen Unterschied in der Unterkonstruktion"
+      "Selbsttragende Deckungen können Dachlasten übertragen und brauchen keine vollflächige Deckunterlage, nicht selbsttragende brauchen eine Deckunterlage",
+      "Selbsttragende Deckungen sind immer aus Kupfer"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Selbsttragende Deckungen bestehen aus profilierten oder verfalzten Blechen (z. B. Trapezprofile). Sie nehmen Dachlasten auf und übertragen sie, benötigen daher keine vollflächige Deckunterlage. Nicht selbsttragende Metalldeckungen werden aus Metallbändern oder Tafeln hergestellt und auf einer Deckunterlage verlegt.",
     "bildDatei": "/buch/lf12/titanzink-dacheindeckung.webp",
@@ -48,18 +48,18 @@
     "thema": "Übersicht",
     "quelle": "Grundstufe Bautechnik, Buch S. 447 (Aufgaben S. 463)",
     "konfidenz": "hoch",
-    "text": "Baender werden als {{Coils}} bezeichnet, von Rollen mit bis zu {{300}} m Laenge geliefert. Die Standardbreiten sind {{500}} mm, 600 mm und 670 mm.",
+    "text": "Bänder werden als {{Coils}} bezeichnet, von Rollen mit bis zu {{300}} m Länge geliefert. Die Standardbreiten sind {{500}} mm, 600 mm und 670 mm.",
     "akzeptiert": {
-      "Coils": [
-        "Coils",
-        "Coil",
-        "coils"
-      ],
       "300": [
         "300"
       ],
       "500": [
         "500"
+      ],
+      "Coils": [
+        "Coils",
+        "Coil",
+        "coils"
       ]
     },
     "erklaerung": "Bänder, auch Coils genannt, werden von Rollen mit bis zu 300 m Länge geliefert. Standardbreiten sind 500 mm, 600 mm und 670 mm. Tafeln sind in der Regel in Breiten von 1 m und Längen von 2…3 m erhältlich. (Buchaufgabe 4: Zählen Sie verschiedene Standardgrößen von Bändern und Tafeln auf.)",
@@ -92,13 +92,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Vorteil hat das Verlegen von Metallbändern gegenüber Metalltafeln?",
     "optionen": [
-      "Bänder sind bis 300 m lang, dadurch entfallen viele Querverbindungen und die Fläche wird mit weniger Stößen gedeckt",
-      "Bänder sind dicker und stabiler",
       "Bänder brauchen keine Hafte",
-      "Bänder dehnen sich nicht aus"
+      "Bänder dehnen sich nicht aus",
+      "Bänder sind dicker und stabiler",
+      "Bänder sind bis 300 m lang, dadurch entfallen viele Querverbindungen und die Fläche wird mit weniger Stößen gedeckt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 2: Bänder werden von Rollen mit bis zu 300 m Länge geliefert. Tafeln sind dagegen nur 2…3 m lang und müssen durch Querfalze zu Scharen verbunden werden. Mit Bändern lassen sich also durchlaufende Scharen ohne Querstöße herstellen — das spart Arbeit und verringert die Zahl der wasserführenden Verbindungen.",
     "bildDatei": "/buch/lf12/achsmasse-ermittlung.webp",
@@ -113,13 +113,13 @@
     "konfidenz": "hoch",
     "frage": "Welche besonderen Materialeigenschaften müssen bei Metallen beachtet werden?",
     "optionen": [
+      "Die Brennbarkeit",
       "Die große thermische Längenänderung — die Befestigung muss die Wärmebewegung zulassen",
-      "Die geringe Festigkeit",
       "Die Wasseraufnahme",
-      "Die Brennbarkeit"
+      "Die geringe Festigkeit"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 5: Wegen der großen thermischen Längenänderung von Metallen müssen die Befestigungssysteme Temperaturbewegungen zulassen. Deshalb werden die Scharen nur indirekt mit Haften befestigt. Weiter zu beachten: Metalle können durch Holzschutzmittel angegriffen werden (Trennlage nötig) und es besteht Kontaktkorrosionsgefahr zwischen unterschiedlichen Metallen.",
     "bildDatei": "/buch/lf12/festhaft-anordnung.webp",
@@ -134,15 +134,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile haben Dächer aus Metall? (mehrere richtig)",
     "optionen": [
-      "Sie sind sehr langlebig",
       "Die im Laufe der Zeit entstehende Patina schützt vor Korrosion",
-      "Es können vielfältige, auch runde Formen hergestellt werden",
-      "Sie sind besonders günstig in der Montage"
+      "Sie sind besonders günstig in der Montage",
+      "Sie sind sehr langlebig",
+      "Es können vielfältige, auch runde Formen hergestellt werden"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Buchaufgabe 6 (Vorteile): Dachdeckungen aus Metall sind sehr langlebig; die im Laufe der Zeit entstehende Patina schützt das Metall vor Korrosion. Es können damit vielfältige, auch runde Formen hergestellt werden. Darüber hinaus lassen sich Flächenübergänge (z. B. Dach–Kamin) gut ausbilden. Die Montage ist dagegen aufwendig und damit kostspielig.",
     "bildDatei": "/buch/lf12/kupfer-dach-fassade.webp",
@@ -157,15 +157,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Nachteile haben Dächer aus Metall? (mehrere richtig)",
     "optionen": [
+      "Metall ist nicht recycelbar",
       "Die Montage ist aufwendig und kostspielig",
-      "Starker Regen kann laute Trommelgeräusche erzeugen",
       "Hagel kann die Metalldeckung verformen",
-      "Metall ist nicht recycelbar"
+      "Starker Regen kann laute Trommelgeräusche erzeugen"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Buchaufgabe 6 (Nachteile): Die Montage ist aufwendig und damit kostspielig. Auch muss die Wärmebewegung der Konstruktion berücksichtigt werden, damit es nicht zu Schäden kommt. Starker Regen kann laute Trommelgeräusche erzeugen und Hagel kann die Metalldeckung verformen. Auch kann eine Wellenbildung sichtbar werden, wenn das Metall direkt vom Band verarbeitet wird.",
     "bildDatei": "/buch/lf12/strukturierte-trennlage.webp",
@@ -180,8 +180,8 @@
     "konfidenz": "hoch",
     "frage": "Welche Deckarten gehören zu den nicht selbsttragenden Metalldeckungen? (mehrere richtig)",
     "optionen": [
-      "Stehfalzdeckung als Winkel- oder Doppelstehfalz",
       "Leistendeckung",
+      "Stehfalzdeckung als Winkel- oder Doppelstehfalz",
       "Rollnahtgeschweißte Edelstahldeckung",
       "Deckung mit Sandwichelementen"
     ],
@@ -203,15 +203,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Deckarten gehören zu den selbsttragenden Metalldeckungen? (mehrere richtig)",
     "optionen": [
-      "Deckung mit profilierten Blechen (Well- oder Trapezprofile)",
-      "Deckung mit Sandwichelementen",
+      "Doppelstehfalzdeckung",
       "Deckung mit Kassettenprofilbändern",
-      "Doppelstehfalzdeckung"
+      "Deckung mit profilierten Blechen (Well- oder Trapezprofile)",
+      "Deckung mit Sandwichelementen"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Selbsttragende Metalldeckungen: Deckung mit profilierten Blechen (z. B. Well- oder Trapezprofile), Deckung mit Sandwichelementen und Deckung mit Kassettenprofilbändern. Sie können Dachlasten übertragen und benötigen keine Deckunterlage.",
     "bildDatei": "/buch/lf12/well-trapezprofil.webp",
@@ -224,7 +224,7 @@
     "thema": "Übersicht",
     "quelle": "Grundstufe Bautechnik, Buch S. 447",
     "konfidenz": "hoch",
-    "text": "Baender aus Edelstahl koennen durch das {{Rollnahtschweissverfahren}} wasserdicht verbunden werden.",
+    "text": "Bänder aus Edelstahl können durch das {{Rollnahtschweissverfahren}} wasserdicht verbunden werden.",
     "akzeptiert": {
       "Rollnahtschweissverfahren": [
         "Rollnahtschweissverfahren",
@@ -246,13 +246,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Regeldachneigung der Doppelstehfalzdeckung?",
     "optionen": [
-      "7°",
       "3°",
       "25°",
-      "22°"
+      "22°",
+      "7°"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Regeldachneigungen laut Tabelle S. 448: Doppelstehfalzdeckung 7°, Winkelstehfalzdeckung 25°, Leistenfalzdeckung 7°, rollnahtgeschweißte Edelstahldeckung — keine. Werden diese Werte unterschritten, sind zusätzliche Maßnahmen wie z. B. Dichtbänder oder Unterdachkonstruktionen erforderlich.",
     "bildDatei": "/buch/lf12/regeldachneigung-tabelle.webp",
@@ -265,7 +265,7 @@
     "thema": "Regeldachneigung",
     "quelle": "Grundstufe Bautechnik, Buch S. 448 (Tabelle)",
     "konfidenz": "hoch",
-    "text": "Regeldachneigungen: Doppelstehfalzdeckung {{7}}°, Winkelstehfalzdeckung {{25}}°, Leistenfalzdeckung {{7}}°. Fuer die rollnahtgeschweisste Edelstahldeckung ist {{keine}} Regeldachneigung festgelegt.",
+    "text": "Regeldachneigungen: Doppelstehfalzdeckung {{7}}°, Winkelstehfalzdeckung {{25}}°, Leistenfalzdeckung {{7}}°. Für die rollnahtgeschweisste Edelstahldeckung ist {{keine}} Regeldachneigung festgelegt.",
     "akzeptiert": {
       "7": [
         "7",
@@ -293,13 +293,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen stellt die nicht selbsttragende Konstruktion an die Deckunterlage?",
     "optionen": [
-      "Sie muss tragfähig, flächig und trocken sein",
-      "Sie muss dampfdicht sein",
       "Sie muss aus Beton bestehen",
-      "Sie darf nur aus Latten bestehen"
+      "Sie muss tragfähig, flächig und trocken sein",
+      "Sie darf nur aus Latten bestehen",
+      "Sie muss dampfdicht sein"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die nicht selbsttragenden Konstruktionen benötigen eine tragfähige, flächige und trockene Deckunterlage. Der gesamte Dachaufbau kann dabei belüftet oder unbelüftet ausgeführt werden.",
     "bildDatei": "/buch/lf12/beluefteter-dachaufbau.webp",
@@ -314,13 +314,13 @@
     "konfidenz": "hoch",
     "frage": "Worin besteht der große Vorteil der belüfteten Unterkonstruktion?",
     "optionen": [
-      "Eingedrungene Feuchtigkeit kann über die Lüftungsebene abgeführt werden",
-      "Sie ist billiger als die unbelüftete",
       "Sie braucht keine Dampfbremse",
+      "Sie ist billiger als die unbelüftete",
+      "Eingedrungene Feuchtigkeit kann über die Lüftungsebene abgeführt werden",
       "Sie baut niedriger auf"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 7/12: Der große Vorteil der belüfteten Konstruktion besteht darin, dass eingedrungene Feuchtigkeit über die Lüftungsebene abgeführt werden kann. Diese Feuchtigkeit kann entweder in der Bauphase in die Konstruktion eingedrungen sein oder durch Tauwasserausfall nach Herstellung entstehen. Da Metall dampfdiffusionsdicht ist, kann diese Feuchte sonst nicht abgeführt werden und erzeugt Schäden.",
     "bildDatei": "/buch/lf12/beluefteter-dachaufbau.webp",
@@ -335,15 +335,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Nachteile hat die belüftete Unterkonstruktion? (mehrere richtig)",
     "optionen": [
-      "Relativ hoher Aufbau",
-      "Erhöhte Kosten durch mehr Material",
       "Dachaufbauten wie Gauben und Dachfenster sind nur aufwendig umzusetzen",
-      "Die Dampfsperre muss absolut fehlerfrei verlegt werden"
+      "Die Dampfsperre muss absolut fehlerfrei verlegt werden",
+      "Relativ hoher Aufbau",
+      "Erhöhte Kosten durch mehr Material"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Buchaufgabe 12: Nachteile der belüfteten Konstruktion sind der relativ hohe Aufbau und die erhöhten Kosten durch mehr Material. Auch Dachaufbauten wie Gauben und Dachfenster lassen sich nur aufwendig umsetzen. Die absolut fehlerfreie Dampfsperre ist dagegen ein Thema der unbelüfteten Konstruktion.",
     "bildDatei": "/buch/lf12/beluefteter-dachaufbau.webp",
@@ -358,13 +358,13 @@
     "konfidenz": "hoch",
     "frage": "Ein Kunde wünscht ein Metalldach mit möglichst niedrigem Aufbau, das außerdem günstig sein soll. Welche Konstruktionsart empfehlen Sie?",
     "optionen": [
-      "Die unbelüftete Konstruktion — sie baut niedriger auf und erlaubt auch komplizierte Dachformen",
-      "Die belüftete Konstruktion — sie ist immer günstiger",
       "Eine Doppelkonstruktion mit zwei Lüftungsebenen",
-      "Eine Konstruktion ganz ohne Dampfsperre"
+      "Die unbelüftete Konstruktion — sie baut niedriger auf und erlaubt auch komplizierte Dachformen",
+      "Eine Konstruktion ganz ohne Dampfsperre",
+      "Die belüftete Konstruktion — sie ist immer günstiger"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 7: Durch das Fehlen des Belüftungsraums ist diese Konstruktionsart einerseits im Gesamtaufbau niedriger und es können auch komplizierte Dachformen umgesetzt werden. Besonderheiten in der Bauausführung: Die Dampfsperre muss absolut fehlerfrei verlegt werden, eingedrungene Feuchte kann nicht abgeführt werden, und in der Bauphase darf kein Regen in die Dämmung gelangen. Zum Nachweis der Funktionsfähigkeit kann ein Blower-Door-Test durchgeführt werden.",
     "bildDatei": "/buch/lf12/unbeluefteter-dachaufbau.webp",
@@ -397,13 +397,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Belüftungsraumhöhe ist bei einer Dachneigung von 2° einzuhalten?",
     "optionen": [
-      "150 mm",
+      "60 mm",
       "80 mm",
       "40 mm",
-      "60 mm"
+      "150 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Tabelle S. 448 (Buchaufgabe 8): Dachneigung ≤ 3° → 150 mm Belüftungsraumhöhe und 60 mm Netto-Schlitzbreite. > 3° … ≤ 15° → 80 mm und 60 mm. > 15° → 40 mm und 30 mm. Je flacher das Dach, desto höher muss der Belüftungsraum sein, weil der thermische Auftrieb geringer ist.",
     "bildDatei": "/buch/lf12/belueftung-tabelle.webp",
@@ -416,16 +416,16 @@
     "thema": "Belüftung",
     "quelle": "Grundstufe Bautechnik, Buch S. 448 (Tabelle, Aufgaben S. 463)",
     "konfidenz": "hoch",
-    "text": "Belueftungsraumhoehe: bei Dachneigung bis 3° {{150}} mm, ueber 3° bis 15° {{80}} mm und ueber 15° {{40}} mm.",
+    "text": "Belüftungsraumhöhe: bei Dachneigung bis 3° {{150}} mm, über 3° bis 15° {{80}} mm und über 15° {{40}} mm.",
     "akzeptiert": {
-      "150": [
-        "150"
+      "40": [
+        "40"
       ],
       "80": [
         "80"
       ],
-      "40": [
-        "40"
+      "150": [
+        "150"
       ]
     },
     "erklaerung": "Tabelle S. 448: ≤ 3° → 150 mm; > 3°…≤ 15° → 80 mm; > 15° → 40 mm. Die zugehörigen Netto-Schlitzbreiten betragen 60 mm, 60 mm und 30 mm.",
@@ -459,13 +459,13 @@
     "konfidenz": "hoch",
     "frage": "Wo werden die Lüftungsöffnungen bei der belüfteten Konstruktion angeordnet?",
     "optionen": [
-      "Belüftungsöffnung an der Traufe, Entlüftungsöffnung am First; bei sehr geringen Dachneigungen (DN < 10°) kann auch von Traufe zu Traufe entlüftet werden",
       "Nur am First",
+      "In der Dachmitte",
       "Nur an der Traufe",
-      "In der Dachmitte"
+      "Belüftungsöffnung an der Traufe, Entlüftungsöffnung am First; bei sehr geringen Dachneigungen (DN < 10°) kann auch von Traufe zu Traufe entlüftet werden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Damit ein ausreichender Luftstrom entsteht, muss an der Traufe eine Belüftungsöffnung und am First eine Entlüftungsöffnung hergestellt werden. Bei gering geneigten Dächern (DN < 10°) kann von Traufe zu Traufe entlüftet werden.",
     "bildDatei": "/buch/lf12/hinterlueftung-first-traufe.webp",
@@ -481,9 +481,9 @@
     "frage": "Welchen zusätzlichen Nutzen hat die Belüftung neben dem Abführen von Feuchtigkeit?",
     "optionen": [
       "Der sommerliche Wärmeschutz wird verbessert, weil die entstandene Wärme durch den Luftstrom abgeführt wird",
-      "Sie ersetzt die Wärmedämmung",
+      "Sie erhöht die Tragfähigkeit",
       "Sie verhindert Windsog",
-      "Sie erhöht die Tragfähigkeit"
+      "Sie ersetzt die Wärmedämmung"
     ],
     "korrekt": [
       0
@@ -499,7 +499,7 @@
     "thema": "Unterkonstruktion",
     "quelle": "Grundstufe Bautechnik, Buch S. 448",
     "konfidenz": "hoch",
-    "text": "Bei der beluefteten Konstruktion reicht zum Schutz vor eindringendem Wasserdampf eine {{Dampfbremse}}. Die luftdichte Schicht soll einen s_d-Wert von mindestens {{2,0}} m aufweisen.",
+    "text": "Bei der belüfteten Konstruktion reicht zum Schutz vor eindringendem Wasserdampf eine {{Dampfbremse}}. Die luftdichte Schicht soll einen s_d-Wert von mindestens {{2,0}} m aufweisen.",
     "akzeptiert": {
       "Dampfbremse": [
         "Dampfbremse",
@@ -524,15 +524,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen gelten für eine Schalung aus Holzbrettern? (mehrere richtig)",
     "optionen": [
+      "Mindestens 200 mm breit",
       "Mindestdicke 24 mm",
-      "Höchstens 160 mm breit",
       "Holzfeuchte unter 20 %",
-      "Mindestens 200 mm breit"
+      "Höchstens 160 mm breit"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Buchaufgabe 9: Da die Metallbänder nur eine Dicke von ungefähr 0,7 mm besitzen, müssen sie auf einer Schalung verlegt werden. Die Schalung kann aus Holzbrettern mit einer Mindestdicke von 24 mm bestehen, wobei sie höchstens 160 mm breit sein dürfen. Die Holzfeuchte muss unter 20 % liegen.",
     "bildDatei": "/buch/lf12/traufdetail-belueftet.webp",
@@ -547,13 +547,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sollen Schalungsbretter diagonal verlegt werden?",
     "optionen": [
-      "Damit die Hafte beim Befestigen nicht auf eine Fuge treffen",
       "Damit die Bretter besser aussehen",
-      "Damit Wasser ablaufen kann",
-      "Damit weniger Material benötigt wird"
+      "Damit weniger Material benötigt wird",
+      "Damit die Hafte beim Befestigen nicht auf eine Fuge treffen",
+      "Damit Wasser ablaufen kann"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 9: Um zu verhindern, dass man beim Befestigen der Metallhafte auf die Fuge trifft, sollten Schalungsbretter diagonal verlegt werden. Ein Haft, der in eine Fuge geschraubt wird, hält nicht — und das Dach ist an dieser Stelle nicht gegen Windsog gesichert.",
     "bildDatei": "/buch/lf12/traufdetail-belueftet.webp",
@@ -569,9 +569,9 @@
     "frage": "Warum ist bei mit Holzschutzmittel behandelter Schalung eine Trennlage anzuordnen?",
     "optionen": [
       "Weil Holzschutzmittel die Metalle angreifen können",
-      "Weil die Trennlage die Wärmedämmung verbessert",
+      "Weil sonst die Schalung fault",
       "Weil die Trennlage die Schalung trägt",
-      "Weil sonst die Schalung fault"
+      "Weil die Trennlage die Wärmedämmung verbessert"
     ],
     "korrekt": [
       0
@@ -589,13 +589,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat die Trennlage?",
     "optionen": [
-      "Sie gewährleistet ein problemloses Gleiten der Metalldeckung auf der Schalung",
       "Sie trägt die Dachlasten",
+      "Sie ersetzt die Dampfsperre",
       "Sie dämmt das Dach",
-      "Sie ersetzt die Dampfsperre"
+      "Sie gewährleistet ein problemloses Gleiten der Metalldeckung auf der Schalung"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 10: Um ein problemloses Gleiten der Metalldeckung auf der Schalung zu gewährleisten, wird eine Trennlage eingebaut. Sie kann aus besandeten Bitumen-, Vor- oder Kunststoffbahnen bestehen. Wichtig ist, dass sie keine Feuchtigkeit aufsaugt oder speichert. Sie schützt das Metall zudem vor aggressiven Einflüssen aus dem Untergrund (z. B. Zement oder Holzschutzmittel) und dient darüber hinaus als Notdichtung.",
     "bildDatei": "/buch/lf12/strukturierte-trennlage.webp",
@@ -610,15 +610,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile hat eine strukturierte Trennlage? (mehrere richtig)",
     "optionen": [
-      "Sie mindert Trommelgeräusche und verbessert den Schallschutz",
-      "Eingedrungene Feuchte kann ausweichen und entweichen",
+      "Sie ersetzt die Wärmedämmung",
       "Die Gleitfähigkeit des Metalls wird deutlich verbessert",
-      "Sie ersetzt die Wärmedämmung"
+      "Eingedrungene Feuchte kann ausweichen und entweichen",
+      "Sie mindert Trommelgeräusche und verbessert den Schallschutz"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Buchaufgabe 10: Werden erhöhte Anforderungen an den Schallschutz gestellt, z. B. zum Schutz vor Trommelgeräuschen von Regen, kann eine strukturierte Trennlage verwendet werden. Sie besteht aus einer Trägerbahn mit einer aufliegenden Strukturmatte aus langen Polyamidfäden mit etwa 8 mm Höhe. Diese mindert nicht nur Trommelgeräusche, sondern sorgt auch dafür, dass eventuell eingedrungene Feuchte ausweichen und entweichen kann. Außerdem wird die Gleitfähigkeit des Metalls deutlich verbessert.",
     "bildDatei": "/buch/lf12/strukturierte-trennlage.webp",
@@ -651,13 +651,13 @@
     "konfidenz": "hoch",
     "frage": "Warum werden Metalldeckungen nur indirekt mit Haften befestigt?",
     "optionen": [
-      "Um thermische Längenänderungen zu ermöglichen",
-      "Weil Schrauben zu teuer sind",
       "Weil das Metall zu dünn zum Schrauben ist",
+      "Weil Schrauben zu teuer sind",
+      "Um thermische Längenänderungen zu ermöglichen",
       "Um Kontaktkorrosion zu vermeiden"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Um thermische Längenänderungen zu ermöglichen, werden Metalldeckungen indirekt auf der Schalung montiert. Dazu werden Hafte mit gerauten Stiften oder Schrauben befestigt. Eine direkte Befestigung würde die Bewegung behindern und zu Spannungen und Schäden führen.",
     "bildDatei": "/buch/lf12/festhaft-anordnung.webp",
@@ -670,7 +670,7 @@
     "thema": "Stehfalzdeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 450",
     "konfidenz": "hoch",
-    "text": "Die maximale Scharlaenge betraegt normalerweise {{10}} m. Bei groesseren Laengen muessen {{Querverbindungen}} angeordnet werden.",
+    "text": "Die maximale Scharlänge beträgt normalerweise {{10}} m. Bei groesseren Längen müssen {{Querverbindungen}} angeordnet werden.",
     "akzeptiert": {
       "10": [
         "10",
@@ -694,17 +694,17 @@
     "thema": "Stehfalzdeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 450",
     "konfidenz": "hoch",
-    "text": "Die aufgekanteten Schare werden bis auf {{3}} bis 5 mm aneinander geschoben. Die Aufkantung betraegt {{45}} mm und {{35}} mm, wenn eine Falzhoehe von 25 mm erreicht werden soll.",
+    "text": "Die aufgekanteten Schare werden bis auf {{3}} bis 5 mm aneinander geschoben. Die Aufkantung beträgt {{45}} mm und {{35}} mm, wenn eine Falzhöhe von 25 mm erreicht werden soll.",
     "akzeptiert": {
       "3": [
         "3",
         "drei"
       ],
-      "45": [
-        "45"
-      ],
       "35": [
         "35"
+      ],
+      "45": [
+        "45"
       ]
     },
     "erklaerung": "Die aufgekanteten Schare werden bis auf 3…5 mm aneinander geschoben — dieser Abstand ist wegen der Dehnung parallel zur Traufe nötig. Die Aufkantung beträgt 45 mm und 35 mm, wenn eine Falzhöhe von 25 mm erreicht werden soll. Größere Falzhöhen erfordern höhere Aufkantungen. Diese beiden Maße sind die Grundlage der Achsmaßberechnung.",
@@ -720,13 +720,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der Doppelstehfalz hergestellt?",
     "optionen": [
-      "Zunächst wird der Winkelstehfalz hergestellt und anschließend um weitere 90° umgefalzt",
-      "Der Falz wird in einem Arbeitsgang um 180° gebogen",
       "Beide Schare werden verlötet",
-      "Der Falz wird über eine Holzleiste geführt"
+      "Der Falz wird über eine Holzleiste geführt",
+      "Der Falz wird in einem Arbeitsgang um 180° gebogen",
+      "Zunächst wird der Winkelstehfalz hergestellt und anschließend um weitere 90° umgefalzt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 13: In der Reihenfolge des Falzvorgangs wird zunächst der Winkelstehfalz hergestellt und anschließend um weitere 90° umgefalzt. Der Doppelstehfalz ist regendicht, wenn auf der Dachfläche kein Stauwasser auftritt.",
     "bildDatei": "/buch/lf12/doppel-winkelstehfalz.webp",
@@ -741,13 +741,13 @@
     "konfidenz": "hoch",
     "frage": "Wo erfolgt die temperaturbedingte Querbewegung der Schare?",
     "optionen": [
-      "Im Falzgrund des Doppelstehfalzes, wo ein freier Zwischenraum von 3…5 mm bleibt",
-      "An der Traufe",
       "In den Haften",
+      "An der Traufe",
+      "Im Falzgrund des Doppelstehfalzes, wo ein freier Zwischenraum von 3…5 mm bleibt",
       "Am First"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die temperaturbedingte Querbewegung der Schare erfolgt im Falzgrund des Doppelstehfalzes. Dazu werden die Scharen so vorbereitet, dass im Falzgrund ein freier Zwischenraum von 3…5 mm entsteht. Deshalb dürfen die Falze auch nicht zu fest geschlagen werden — sonst wird die Längenänderung behindert.",
     "bildDatei": "/buch/lf12/profilmasse-doppelstehfalz.webp",
@@ -763,9 +763,9 @@
     "frage": "Wofür wird der Winkelstehfalz vorzugsweise eingesetzt?",
     "optionen": [
       "Bei Fassadenbekleidungen sowie Dachansichtsflächen mit einer Dachneigung über 25°",
+      "Bei allen Kehlen",
       "Bei Flachdächern unter 3°",
-      "Nur bei Bleideckungen",
-      "Bei allen Kehlen"
+      "Nur bei Bleideckungen"
     ],
     "korrekt": [
       0
@@ -783,15 +783,15 @@
     "konfidenz": "hoch",
     "frage": "Was ist bei der Herstellung der Stehfalze zu beachten? (mehrere richtig)",
     "optionen": [
-      "Die Falze sollen nicht zu fest geschlagen werden, um Längenänderungen nicht zu behindern",
-      "Die Längsfalze werden entgegen der Wetterseite umgelegt",
       "Die Falze können von Hand mit Schaleisen und Hammer oder mit Stehfalzmaschinen hergestellt werden",
-      "Die Falze müssen zusätzlich verlötet werden"
+      "Die Längsfalze werden entgegen der Wetterseite umgelegt",
+      "Die Falze müssen zusätzlich verlötet werden",
+      "Die Falze sollen nicht zu fest geschlagen werden, um Längenänderungen nicht zu behindern"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Buchaufgabe 13: Die Falze können von Hand mit Schaleisen und Hammer oder mit speziellen Stehfalzmaschinen hergestellt werden. Die Falze sollen nicht zu fest geschlagen werden, um Längenänderungen nicht zu behindern. Die Längsfalze werden entgegen der Wetterseite umgelegt, damit Wind und Schlagregen nicht in den Falz drücken.",
     "bildDatei": "/buch/lf12/doppel-winkelstehfalz.webp",
@@ -806,13 +806,13 @@
     "konfidenz": "hoch",
     "frage": "Womit werden Bleischaren anstelle von Längsfalzen verbunden?",
     "optionen": [
-      "Mit Hohl- und Holzwulsten, weil diese große Wärmebewegungen ermöglichen",
       "Mit Doppelstehfalzen",
-      "Mit Nieten",
-      "Mit Klebeband"
+      "Mit Hohl- und Holzwulsten, weil diese große Wärmebewegungen ermöglichen",
+      "Mit Klebeband",
+      "Mit Nieten"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bleischaren erhalten im Allgemeinen Hohl- und Holzwulste statt Längsfalze. Hohlwulste ermöglichen große Wärmebewegungen — Blei ist besonders dehnfreudig und weich.",
     "bildDatei": "/buch/lf12/leistenfalz-deutsche-deckart.webp",
@@ -827,13 +827,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Dachneigung darf das Doppelstehfalzsystem ohne zusätzliche Maßnahmen ausgeführt werden?",
     "optionen": [
-      "Ab 15°",
-      "Ab 3°",
       "Ab 7°",
-      "Ab 25°"
+      "Ab 15°",
+      "Ab 25°",
+      "Ab 3°"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Tabelle S. 450 (Buchaufgabe 11): Doppelstehfalzsystem ≥ 3° — dann sind Unterdeckbahn (Möglichkeit) oder strukturierte Trennlage nötig, Dichtungsband in den Falzen ist bei 3°…7° erforderlich. Ab ≥ 15° sind keine zusätzlichen Maßnahmen nötig; in schneereichen Gebieten werden Dichtungsbänder in den Falzen bis ≥ 2 m im Neigungsverlauf des Daches innerhalb des Gebäudes empfohlen.",
     "bildDatei": "/buch/lf12/falzsysteme-tabelle.webp",
@@ -846,7 +846,7 @@
     "thema": "Stehfalzdeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 450 (Tabelle)",
     "konfidenz": "hoch",
-    "text": "Das Doppelstehfalzsystem ist ab {{3}}° einsetzbar, ohne zusaetzliche Massnahmen ab {{15}}°. Das Winkelstehfalzsystem ist ab {{25}}° einsetzbar, in schneereichen Gebieten ohne Zusatzmassnahmen erst ab {{35}}°.",
+    "text": "Das Doppelstehfalzsystem ist ab {{3}}° einsetzbar, ohne zusätzliche Massnahmen ab {{15}}°. Das Winkelstehfalzsystem ist ab {{25}}° einsetzbar, in schneereichen Gebieten ohne Zusatzmassnahmen erst ab {{35}}°.",
     "akzeptiert": {
       "3": [
         "3",
@@ -892,13 +892,13 @@
     "konfidenz": "hoch",
     "frage": "Wann ist eine Querverbindung mit Querfalzen nötig?",
     "optionen": [
-      "Wenn die Scharen länger als 10 m sind oder Tafeln verwendet werden",
-      "Immer bei Doppelstehfalz",
+      "Nur an der Traufe",
       "Nur bei Bleideckungen",
-      "Nur an der Traufe"
+      "Wenn die Scharen länger als 10 m sind oder Tafeln verwendet werden",
+      "Immer bei Doppelstehfalz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Sind die Scharen länger als 10 m oder werden Tafeln verwendet, ist eine Querverbindung mit Querfalzen nötig. Sie können bei steilen Dächern (> 25° Dachneigung) und Wandbekleidungen als einfache Falze ausgeführt werden, sonst als Doppelfalze.",
     "bildDatei": "/buch/lf12/querfalze-dachneigung.webp",
@@ -913,13 +913,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Querverbindung ist bei einer Dachneigung von 12° auszuführen?",
     "optionen": [
+      "Wasserdichte Ausführung durch Löten",
       "Querfalz mit durchlaufendem Zusatzfalz (ab 10°)",
-      "Einfacher Querfalz",
       "Doppelter Querfalz",
-      "Wasserdichte Ausführung durch Löten"
+      "Einfacher Querfalz"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Tabelle S. 451 (Buchaufgabe 14): Einfacher Querfalz ≥ 25°; Querfalz mit durchlaufendem Zusatzfalz ≥ 10°; Doppelter Querfalz ≥ 7°; wasserdichte Ausführung (z. B. Löten) < 7°. Bei 12° ist also der Querfalz mit durchlaufendem Zusatzfalz die richtige Wahl.",
     "bildDatei": "/buch/lf12/querverbindungen-tabelle.webp",
@@ -932,18 +932,18 @@
     "thema": "Querverbindungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 451 (Tabelle)",
     "konfidenz": "hoch",
-    "text": "Querverbindungen: einfacher Querfalz ab {{25}}°, Querfalz mit durchlaufendem Zusatzfalz ab {{10}}°, doppelter Querfalz ab {{7}}° und unter 7° eine {{wasserdichte}} Ausfuehrung, z. B. durch Loeten.",
+    "text": "Querverbindungen: einfacher Querfalz ab {{25}}°, Querfalz mit durchlaufendem Zusatzfalz ab {{10}}°, doppelter Querfalz ab {{7}}° und unter 7° eine {{wasserdichte}} Ausführung, z. B. durch Löten.",
     "akzeptiert": {
-      "25": [
-        "25"
+      "7": [
+        "7",
+        "sieben"
       ],
       "10": [
         "10",
         "zehn"
       ],
-      "7": [
-        "7",
-        "sieben"
+      "25": [
+        "25"
       ],
       "wasserdichte": [
         "wasserdichte",
@@ -966,9 +966,9 @@
     "frage": "Warum müssen Querfalze versetzt angeordnet werden?",
     "optionen": [
       "Um zu verhindern, dass drei Falze in einem Knoten zusammenlaufen",
+      "Damit die Hafte passen",
       "Damit sie besser aussehen",
-      "Damit weniger Material verbraucht wird",
-      "Damit die Hafte passen"
+      "Damit weniger Material verbraucht wird"
     ],
     "korrekt": [
       0
@@ -987,9 +987,9 @@
     "frage": "In welche Richtung werden Querfalze hergestellt?",
     "optionen": [
       "Immer in Gefällerichtung, wobei der obere Falz über den unteren reicht",
+      "Die Richtung ist frei wählbar",
       "Immer quer zum Gefälle ohne Überdeckung",
-      "Entgegen der Gefällerichtung",
-      "Die Richtung ist frei wählbar"
+      "Entgegen der Gefällerichtung"
     ],
     "korrekt": [
       0
@@ -1053,7 +1053,7 @@
     "thema": "Abschnüren",
     "quelle": "Grundstufe Bautechnik, Buch S. 451",
     "konfidenz": "hoch",
-    "text": "Die Standardausgangsbreiten 500, 600, 700 und 800 mm ergeben die Achsmasse {{420}} mm, {{520}} mm, {{620}} mm und {{720}} mm bei einer Stehfalzhoehe von 25 mm.",
+    "text": "Die Standardausgangsbreiten 500, 600, 700 und 800 mm ergeben die Achsmasse {{420}} mm, {{520}} mm, {{620}} mm und {{720}} mm bei einer Stehfalzhöhe von 25 mm.",
     "akzeptiert": {
       "420": [
         "420"
@@ -1118,13 +1118,13 @@
     "konfidenz": "hoch",
     "frage": "Wo beginnt man beim Abschnüren der Dachfläche?",
     "optionen": [
-      "Bei rechteckigen Dachflächen am Ortgang, bei anderen Dachflächen in der Dachmitte",
+      "Immer am First",
       "Immer in der Dachmitte",
-      "Immer an der Traufe",
-      "Immer am First"
+      "Bei rechteckigen Dachflächen am Ortgang, bei anderen Dachflächen in der Dachmitte",
+      "Immer an der Traufe"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 15: Die Einteilung der Dachfläche erfolgt mit Schnurschlag. Man beginnt bei rechteckigen Dachflächen am Ortgang, bei anderen Dachflächen in der Dachmitte. Dabei müssen Dachaufbauten, Durchdringungen, Kehlen usw. berücksichtigt werden. Besonders zu beachten: Es dürfen nicht drei Falze in einem Knoten zusammenlaufen. Unter Umständen müssen stellenweise schmalere Scharbreiten (Passscharen) gewählt werden.",
     "bildDatei": "/buch/lf12/achsmasse-ermittlung.webp",
@@ -1156,13 +1156,13 @@
     "konfidenz": "hoch",
     "frage": "Wo werden Festhafte und wo Schiebehafte angeordnet?",
     "optionen": [
-      "Festhafte im oberen Bereich des Daches, Schiebehafte im mittleren und unteren Bereich",
       "Festhafte an der Traufe, Schiebehafte am First",
-      "Festhafte nur im Eckbereich",
-      "Beide gleichmäßig verteilt"
+      "Festhafte im oberen Bereich des Daches, Schiebehafte im mittleren und unteren Bereich",
+      "Beide gleichmäßig verteilt",
+      "Festhafte nur im Eckbereich"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 16: Festhafte werden im oberen Bereich des Daches verwendet. Sie sorgen dafür, dass sich das Dach nach unten zur Traufe ausdehnt. Die Schiebehafte befinden sich im mittleren und unteren Bereich und ermöglichen durch ihre Gleitfähigkeit eine Bewegung des Daches. Die genaue Anordnung ist von der Dachneigung abhängig.",
     "bildDatei": "/buch/lf12/festhaft-anordnung.webp",
@@ -1297,8 +1297,8 @@
     "frage": "Wo treten Windsogkräfte besonders stark auf?",
     "optionen": [
       "Im Rand- und Eckbereich, vor allem bei flachen Dachneigungen (< 25°) und großen Gebäudehöhen",
-      "In der Dachmitte",
       "Nur am First",
+      "In der Dachmitte",
       "Nur an der Traufe"
     ],
     "korrekt": [
@@ -1354,13 +1354,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 20: Wo liegen die Festhafte bei einem Satteldach mit 45° Dachneigung und 8,60 m Sparrenlänge?",
     "optionen": [
-      "Ausschließlich im oberen Bereich am First — über 30° Dachneigung werden die Festhafte oben angeordnet",
-      "In der Mitte der Sparrenlänge",
+      "Gleichmäßig über die ganze Sparrenlänge verteilt",
       "Im unteren Viertel an der Traufe",
-      "Gleichmäßig über die ganze Sparrenlänge verteilt"
+      "In der Mitte der Sparrenlänge",
+      "Ausschließlich im oberen Bereich am First — über 30° Dachneigung werden die Festhafte oben angeordnet"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach der Abbildung S. 452 werden bei einer Dachneigung über 30° die Festhafte oben (am First) angeordnet. Der gesamte übrige Bereich der 8,60 m langen Sparren erhält Schiebehafte. Grund: Bei steilen Dächern soll sich die Deckung nach unten zur Traufe ausdehnen — die Schwerkraft unterstützt das Gleiten.",
     "bildDatei": "/buch/lf12/festhaft-anordnung.webp",
@@ -1414,13 +1414,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der Traufabschluss bei der Doppelstehfalzdeckung ausgebildet?",
     "optionen": [
-      "Ein durchgehendes Rinneneinhangblech wird verlegt, die Metalldeckung wird über Rinne und Einhangblech verfalzt, die Doppelstehfalze werden über der Traufe umgelegt",
       "Die Schare werden an der Traufe verlötet",
       "Die Schare enden frei über der Rinne",
-      "Die Traufe wird mit Mörtel verstrichen"
+      "Die Traufe wird mit Mörtel verstrichen",
+      "Ein durchgehendes Rinneneinhangblech wird verlegt, die Metalldeckung wird über Rinne und Einhangblech verfalzt, die Doppelstehfalze werden über der Traufe umgelegt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 22: An der Traufe wird ein durchgehendes Rinneneinhangblech verlegt. Die Metalldeckung wird über Rinne und Einhangblech verfalzt. Die Doppelstehfalze werden über der Traufe umgelegt und ebenfalls verfalzt. Ausführungen sind z. B. „stehend gerade“, „stehend schräg“ oder als Quetschfalz.",
     "bildDatei": "/buch/lf12/traufabschluss-stehend.webp",
@@ -1437,8 +1437,8 @@
     "optionen": [
       "Um das Einarbeiten von Längsfalzen zu erleichtern",
       "Um mehr Material zu sparen",
-      "Damit der First besser aussieht",
-      "Damit die Hafte passen"
+      "Damit die Hafte passen",
+      "Damit der First besser aussieht"
     ],
     "korrekt": [
       0
@@ -1456,15 +1456,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Maßnahmen sind bei Scharlängen über 10 m gegen Temperaturdehnung möglich? (mehrere richtig)",
     "optionen": [
+      "Zusätzliche Dehnungen anordnen",
       "Eine Abtreppung der Dachfläche",
       "Eine Schiebenaht (ab 10° Dachneigung)",
-      "Ein festes Verschrauben der Schare",
-      "Zusätzliche Dehnungen anordnen"
+      "Ein festes Verschrauben der Schare"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Bei großen Scharlängen (über 10 m) treten große Temperaturdehnungen auf. Deshalb müssen zusätzliche Dehnungen angeordnet werden. Dies kann durch eine Abtreppung der Dachfläche oder durch Schiebenähte erfolgen. Ein festes Verschrauben wäre genau der falsche Weg — es würde die Bewegung blockieren.",
     "bildDatei": "/buch/lf12/traufabschluss-stehend.webp",
@@ -1511,7 +1511,7 @@
     "thema": "Details Traufe/First/Grat",
     "quelle": "Grundstufe Bautechnik, Buch S. 453 (Merksatz)",
     "konfidenz": "hoch",
-    "text": "Die Schare werden durch {{Doppelstehfalze}} verbunden. Die Befestigung auf der Schalung erfolgt {{indirekt}} durch Hafte. Dadurch werden thermische {{Laengenaenderungen}} ermoeglicht.",
+    "text": "Die Schare werden durch {{Doppelstehfalze}} verbunden. Die Befestigung auf der Schalung erfolgt {{indirekt}} durch Hafte. Dadurch werden thermische {{Längenänderungen}} ermöglicht.",
     "akzeptiert": {
       "Doppelstehfalze": [
         "Doppelstehfalze",
@@ -1542,13 +1542,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Schare bei der Leistendeckung verbunden?",
     "optionen": [
-      "Sie werden getrennt an rechteckigen oder quadratischen Holzleisten befestigt",
-      "Sie werden miteinander verfalzt",
       "Sie werden miteinander verschweißt",
-      "Sie werden verklebt"
+      "Sie werden verklebt",
+      "Sie werden miteinander verfalzt",
+      "Sie werden getrennt an rechteckigen oder quadratischen Holzleisten befestigt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 21: Anstelle der Stehfalze werden rechteckige oder quadratische Holzleisten (Querschnitt h × b = 40 × 40 mm bis 80 × 80 mm) zur Befestigung der Schare verwendet. Merksatz: Bei der Leistendeckung werden die Schare getrennt an Holzleisten befestigt. Die Schare sind dadurch getrennt und können sich unabhängig ausdehnen.",
     "bildDatei": "/buch/lf12/leistenfalz-deutsche-deckart.webp",
@@ -1561,7 +1561,7 @@
     "thema": "Leistendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 454",
     "konfidenz": "hoch",
-    "text": "Die Holzleisten der Leistendeckung haben Querschnitte von {{40}} mal 40 mm bis {{80}} mal 80 mm. Fuer Bleideckungen wird eine gerundete Holzleiste als {{Holzwulst}} verwendet.",
+    "text": "Die Holzleisten der Leistendeckung haben Querschnitte von {{40}} mal 40 mm bis {{80}} mal 80 mm. Für Bleideckungen wird eine gerundete Holzleiste als {{Holzwulst}} verwendet.",
     "akzeptiert": {
       "40": [
         "40"
@@ -1588,13 +1588,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Ausführungen der Leistendeckung werden unterschieden?",
     "optionen": [
-      "Die deutsche Ausführung und die Sonderausführung („Klick-Leistensystem“, belgische Ausführung mit aufgedrückten Leistenkappen)",
       "Nur die deutsche Ausführung",
+      "Die deutsche Ausführung und die Sonderausführung („Klick-Leistensystem“, belgische Ausführung mit aufgedrückten Leistenkappen)",
       "Die französische und die englische Ausführung",
       "Die genagelte und die geklebte Ausführung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Man unterscheidet Leistendeckungen in deutscher Ausführung oder als Sonderausführung („Klick-Leistensystem“). Merksatz S. 454: Man unterscheidet die deutsche Ausführung sowie die belgische Ausführung mit aufgedrückten Leistenkappen.",
     "bildDatei": "/buch/lf12/klick-leistensystem.webp",
@@ -1607,7 +1607,7 @@
     "thema": "Leistendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 454",
     "konfidenz": "hoch",
-    "text": "Bei der Leistendeckung betraegt der Haftabstand etwa {{40}} cm. Die Abdeckkappen ueberlappen sich an den Stoessen etwa {{50}} mm.",
+    "text": "Bei der Leistendeckung beträgt der Haftabstand etwa {{40}} cm. Die Abdeckkappen überlappen sich an den Stoessen etwa {{50}} mm.",
     "akzeptiert": {
       "40": [
         "40"
@@ -1629,13 +1629,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge wird die Leistendeckung in deutscher Ausführung hergestellt?",
     "optionen": [
+      "Alles gleichzeitig von der Traufe aus",
       "Holzleisten mit Haften befestigen → aufgekantete Schare verlegen → Hafte umlegen, sodass sie die Schare umfassen → Abdeckkappe einschieben oder einfalzen",
-      "Schare verlegen → Holzleisten aufsetzen → Kappe aufkleben",
       "Abdeckkappe zuerst → dann Schare → dann Leisten",
-      "Alles gleichzeitig von der Traufe aus"
+      "Schare verlegen → Holzleisten aufsetzen → Kappe aufkleben"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Holzleisten werden zusammen mit den Haften auf der Unterkonstruktion geschraubt oder genagelt. Die Hafte werden auf den Holzleisten befestigt. Anschließend werden die aufgekanteten Schare verlegt. Die Hafte werden umgelegt, sodass sie die Schare umfassen. Zum Schluss wird eine Abdeckkappe eingeschoben oder eingefalzt.",
     "bildDatei": "/buch/lf12/leistenfalz-deutsche-deckart.webp",
@@ -1651,9 +1651,9 @@
     "frage": "Welche Leistenhöhen werden bei der Sonderausführung verwendet und wann sind höhere Leisten sinnvoll?",
     "optionen": [
       "50…80 mm; höhere Leisten sind bei flachen Dachneigungen in schneereichen Gebieten empfehlenswert",
-      "20…30 mm; höhere Leisten bei steilen Dächern",
+      "Immer genau 40 mm",
       "100…120 mm; nur bei Fassaden",
-      "Immer genau 40 mm"
+      "20…30 mm; höhere Leisten bei steilen Dächern"
     ],
     "korrekt": [
       0
@@ -1669,7 +1669,7 @@
     "thema": "Leistendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 454",
     "konfidenz": "hoch",
-    "text": "Bei der Sonderausfuehrung betraegt die seitliche Aufkantung des Schars einheitlich {{47}} mm. Die Leistenkappen werden auf Haftstreifen mit einer Laenge von {{330}} mm befestigt und aufgeklickt.",
+    "text": "Bei der Sonderausführung beträgt die seitliche Aufkantung des Schars einheitlich {{47}} mm. Die Leistenkappen werden auf Haftstreifen mit einer Länge von {{330}} mm befestigt und aufgeklickt.",
     "akzeptiert": {
       "47": [
         "47"
@@ -1773,13 +1773,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Traufe bei der Leistendeckung ausgebildet?",
     "optionen": [
-      "Die Holzleisten enden bündig mit der Schalung oder werden zurückgesetzt; bei zurückgesetzter Deckung wird im Traufbereich (etwa 50 cm) ein Blech vorgedeckt und die Leisten werden abgeschrägt",
       "Die Leisten laufen 20 cm über die Traufe hinaus",
       "Die Traufe wird ohne Blech ausgeführt",
+      "Die Holzleisten enden bündig mit der Schalung oder werden zurückgesetzt; bei zurückgesetzter Deckung wird im Traufbereich (etwa 50 cm) ein Blech vorgedeckt und die Leisten werden abgeschrägt",
       "Die Leisten werden an der Traufe verlötet"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 22: An der Traufe können die Holzleisten bündig mit der Schalung enden oder zurückgesetzt befestigt werden. Bei der zurückgesetzten Deckung wird im Traufbereich (etwa 50 cm) ein Blech vorgedeckt, die Leisten werden abgeschrägt. Bei der deutschen Deckart werden die aufgekanteten Schare nach der Leistenform zugeschnitten, bei der belgischen Deckart über die Leisten gekantet. Die Leistenkappe wird um die Traufkante gelegt bzw. über das Vordeckblech gefalzt.",
     "bildDatei": "/buch/lf12/leistenfalz-deutsche-deckart.webp",
@@ -1794,13 +1794,13 @@
     "konfidenz": "hoch",
     "frage": "Wie erfolgt der Anschluss der Schare an die First- bzw. Gratleisten bei der Leistendeckung?",
     "optionen": [
-      "Durch Aufkantung der Schare im First-/Gratbereich; die Aufkantung wird zuerst mit den Firsthaften verfalzt, dann wird die Firstkappe überdeckt und verfalzt",
-      "Die Schare werden am First einfach abgeschnitten",
       "Der First wird verlötet",
-      "Der First wird mit Mörtel verstrichen"
+      "Durch Aufkantung der Schare im First-/Gratbereich; die Aufkantung wird zuerst mit den Firsthaften verfalzt, dann wird die Firstkappe überdeckt und verfalzt",
+      "Der First wird mit Mörtel verstrichen",
+      "Die Schare werden am First einfach abgeschnitten"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 22: Der Anschluss der Schare an die First- bzw. Gratleisten erfolgt durch Aufkantung der Schare im First-(Grat-)bereich. Die Aufkantung wird zuerst mit den Firsthaften verfalzt, dann wird die Firstkappe überdeckt und verfalzt.",
     "bildDatei": "/buch/lf12/firstentlueftung-detail.webp",
@@ -1815,13 +1815,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Verbindungsnaht bei der rollnahtgeschweißten Edelstahldeckung hergestellt?",
     "optionen": [
-      "Die Scharen erhalten eine 30 mm hohe, einfache Aufkantung und werden mit einer Rollnahtschweißmaschine durchgehend verschweißt",
-      "Die Scharen werden doppelt verfalzt",
       "Die Scharen werden mit Nieten verbunden",
-      "Die Scharen werden verklebt"
+      "Die Scharen erhalten eine 30 mm hohe, einfache Aufkantung und werden mit einer Rollnahtschweißmaschine durchgehend verschweißt",
+      "Die Scharen werden verklebt",
+      "Die Scharen werden doppelt verfalzt"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 23: Das schweißbare Material hat eine Dicke von 0,4 mm oder 0,5 mm. Die Scharen erhalten eine 30 mm hohe, einfache Aufkantung und werden mittels einer Rollnahtschweißmaschine durchgehend verschweißt. Die Schweißverbindung entsteht durch rollenförmige Schweißelektroden, die die Aufkantungen beidseitig umfassen und mit etwa 3,5 m/min an ihnen entlangfahren.",
     "bildDatei": "/buch/lf12/rollnaht-edelstahl.webp",
@@ -1836,12 +1836,12 @@
     "konfidenz": "hoch",
     "text": "Das schweissbare Edelstahlmaterial hat eine Dicke von {{0,4}} mm oder 0,5 mm. Die Aufkantung ist {{30}} mm hoch. Die Schweisselektroden fahren mit etwa {{3,5}} m/min entlang.",
     "akzeptiert": {
+      "30": [
+        "30"
+      ],
       "0,4": [
         "0,4",
         "0.4"
-      ],
-      "30": [
-        "30"
       ],
       "3,5": [
         "3,5",
@@ -1862,8 +1862,8 @@
     "frage": "Wie werden die Hafte bei der rollnahtgeschweißten Edelstahldeckung befestigt?",
     "optionen": [
       "Sie können aufgrund ihrer geringen Dicke (0,15 mm) mit eingeschweißt werden",
-      "Sie werden zusätzlich verschraubt",
       "Sie werden verklebt",
+      "Sie werden zusätzlich verschraubt",
       "Es werden keine Hafte verwendet"
     ],
     "korrekt": [
@@ -1882,13 +1882,13 @@
     "konfidenz": "hoch",
     "frage": "Warum erhält die Naht nach dem Schweißvorgang durch eine zweite Maschine einen einfachen Stehfalz?",
     "optionen": [
-      "Dadurch werden scharfe Kanten beseitigt und die Verbindung stabilisiert",
       "Damit die Naht wasserdicht wird",
-      "Damit die Naht sichtbar bleibt",
-      "Damit die Hafte halten"
+      "Dadurch werden scharfe Kanten beseitigt und die Verbindung stabilisiert",
+      "Damit die Hafte halten",
+      "Damit die Naht sichtbar bleibt"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Nach dem Schweißvorgang erhält die Naht durch eine zweite Maschine einen einfachen Stehfalz. Dadurch werden scharfe Kanten beseitigt und die Verbindung stabilisiert. Wasserdicht ist die Naht bereits durch das Schweißen — deshalb können rollnahtgeschweißte Edelstahldeckungen auch für Dachabdichtungen im Flachdachbereich eingesetzt werden.",
     "bildDatei": "/buch/lf12/rollnaht-edelstahl.webp",
@@ -1903,13 +1903,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Angaben enthält ein Positionsplan?",
     "optionen": [
-      "Position, Menge mit Einheit (m², m, Stück) und Bezeichnung der jeweiligen Leistung",
-      "Nur die Gesamtfläche des Daches",
       "Nur den Preis",
+      "Nur die Gesamtfläche des Daches",
+      "Position, Menge mit Einheit (m², m, Stück) und Bezeichnung der jeweiligen Leistung",
       "Nur die Materialliste"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Positionsplan listet jede Leistung mit Position, Menge und Einheit sowie Bezeichnung auf, z. B.: 1 m² Dachdeckung mit Bändern in Leistenfalztechnik auf Holzschalung, 2 m Herstellung einer Passscharen am Ortgang, 4 m Traufausbildung mit Hängedachrinne, 6 m Firstausbildung mit Entlüftung, 8 Stück Dachdurchbruch mit Einfassung von Sanitärentlüftern, 9 Stück Dachdurchbruch mit Kamineinfassung. Er ist die Grundlage der Angebotserstellung.",
     "bildDatei": "/buch/lf12/positionsplan-tabelle.webp",
@@ -1924,15 +1924,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Bauteile gehören zur Firstentlüftung einer Stehfalzdeckung? (mehrere richtig)",
     "optionen": [
-      "Kopfleiste mit Abdeckkappe",
-      "Lüftungsschlitz mit Lochblech",
+      "Rinneneinhangblech",
       "Haft und Haftstreifen mit umgelegtem Stehfalz",
-      "Rinneneinhangblech"
+      "Lüftungsschlitz mit Lochblech",
+      "Kopfleiste mit Abdeckkappe"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Detail Firstentlüftung S. 457: Kopfleiste, Abdeckkappe, Lüftungsschlitz, Lochblech, Haft, Haftstreifen, umgelegter Stehfalz, Trennlage und Schalung ≥ 24 mm. Die Abluft entweicht durch den Lüftungsschlitz. Das Rinneneinhangblech gehört dagegen zur Traufe.",
     "bildDatei": "/buch/lf12/firstentlueftung-detail.webp",
@@ -1947,13 +1947,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen gelten für die Vollholzschalung im Traufdetail?",
     "optionen": [
+      "Mindestens 40 mm dick und 250 mm breit",
       "Mindestens 24 mm dick und höchstens 160 mm breit",
       "Mindestens 12 mm dick",
-      "Mindestens 40 mm dick und 250 mm breit",
       "Die Dicke ist frei wählbar"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Nach den Detailzeichnungen S. 457 besteht die Unterkonstruktion aus Vollholzschalung mind. 24 mm dick, max. 160 mm breit, dazu Lattung/Kantholz, Funktionsebene (Unterdeckung) und Tragwerk (Sparren). Im Traufdetail kommen Dachrinne, Rinnenhalter und Tropfblech hinzu.",
     "bildDatei": "/buch/lf12/traufdetail-belueftet.webp",
@@ -1968,13 +1968,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Hinterlüftung an First und Traufe konstruktiv hergestellt?",
     "optionen": [
-      "Über Lüftersparren bzw. eine Lattung, die einen durchgehenden Luftweg von der Traufe zum First schaffen",
-      "Durch Löcher in der Metalldeckung",
+      "Durch Fugen in der Schalung",
       "Durch offene Längsfalze",
-      "Durch Fugen in der Schalung"
+      "Durch Löcher in der Metalldeckung",
+      "Über Lüftersparren bzw. eine Lattung, die einen durchgehenden Luftweg von der Traufe zum First schaffen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Hinterlüftung an First und Traufe wird mit Lüftersparren bzw. Lattung hergestellt (S. 456). Die Luft tritt an der Traufe ein, strömt unter der Schalung zum First und entweicht dort über die Lüfterhaube. Die Metalldeckung selbst bleibt dabei geschlossen.",
     "bildDatei": "/buch/lf12/hinterlueftung-first-traufe.webp",
@@ -2503,13 +2503,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sind profilierte Metalle selbsttragend?",
     "optionen": [
-      "Wegen ihrer Querschnittsformen sind sie stabil und können auf Unterkonstruktionen aus Holzlatten oder Metallprofilen verlegt werden",
-      "Weil sie dicker sind als Bänder",
+      "Weil sie aus Edelstahl bestehen",
       "Weil sie verschweißt werden",
-      "Weil sie aus Edelstahl bestehen"
+      "Weil sie dicker sind als Bänder",
+      "Wegen ihrer Querschnittsformen sind sie stabil und können auf Unterkonstruktionen aus Holzlatten oder Metallprofilen verlegt werden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Profilierte Metalle sind wegen ihrer Querschnittsformen stabil und selbsttragend. Sie können daher auf Unterkonstruktionen aus Holzlatten oder Metallprofilen verlegt werden — eine vollflächige Deckunterlage ist nicht erforderlich. Sie bestehen aus vorgefertigten Metallbahnen; man unterscheidet groß- und kleinformatige Elemente.",
     "bildDatei": "/buch/lf12/well-trapezprofil.webp",
@@ -2522,8 +2522,15 @@
     "thema": "Selbsttragende Deckungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 459",
     "konfidenz": "hoch",
-    "text": "Kleinformatige Elemente sind kleiner als {{0,4}} m² und haben eine Masse unter {{0,5}} kg. Ihre Mindestdachneigung betraegt {{10}}°, die Regeldachneigung {{22}}°.",
+    "text": "Kleinformatige Elemente sind kleiner als {{0,4}} m² und haben eine Masse unter {{0,5}} kg. Ihre Mindestdachneigung beträgt {{10}}°, die Regeldachneigung {{22}}°.",
     "akzeptiert": {
+      "10": [
+        "10",
+        "zehn"
+      ],
+      "22": [
+        "22"
+      ],
       "0,4": [
         "0,4",
         "0.4"
@@ -2531,13 +2538,6 @@
       "0,5": [
         "0,5",
         "0.5"
-      ],
-      "10": [
-        "10",
-        "zehn"
-      ],
-      "22": [
-        "22"
       ]
     },
     "erklaerung": "Kleinformatige Elemente: kleiner als 0,4 m² Fläche und Masse unter 0,5 kg. Ihre Mindestdachneigung beträgt 10° und erfordert ein Unterdach; die Regeldachneigung liegt bei 22°. Bei großformatigen Profiltafeln beträgt die Mindestdachneigung dagegen 3° (ohne Querstoß und ohne Durchdringungen), die Regeldachneigung 7°.",
@@ -2553,13 +2553,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Zusatzmaßnahme ist bei kleinformatigen Elementen und 11° Dachneigung erforderlich?",
     "optionen": [
-      "Ein wasserdichtes Unterdach (10°…<12°)",
-      "Ein regensicheres Unterdach",
       "Eine Unterspannung",
-      "Keine Zusatzmaßnahme"
+      "Ein wasserdichtes Unterdach (10°…<12°)",
+      "Keine Zusatzmaßnahme",
+      "Ein regensicheres Unterdach"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Tabelle S. 459: 10°…< 12° wasserdichtes Unterdach; 12°…< 14° regensicheres Unterdach; 14°…< 18° naht- und perforationsgesicherte Unterdeckung; 18°…< 22° verschweißte oder verklebte Unterdeckung bzw. überdeckte und genagelte Unterdeckung mit Bitumenbahnen; ≥ 22° Unterspannung. Je flacher das Dach, desto dichter muss die Zusatzmaßnahme sein.",
     "bildDatei": "/buch/lf12/zusatzmassnahmen-kleinformatig.webp",
@@ -2574,13 +2574,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Mindestüberdeckung bei großformatigen Profiltafeln und 15° Dachneigung?",
     "optionen": [
+      "250 mm",
       "150 mm (12°…<20°)",
       "100 mm",
-      "200 mm",
-      "250 mm"
+      "200 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Tabelle S. 459 (Mindestüberdeckungen großformatiger Profiltafeln): 3°…< 5° ohne Durchdringungen und Querstöße; 5°…< 7° 200 mm mit Zusatzmaßnahmen; 7°…< 12° 200 mm; 12°…< 20° 150 mm; ≥ 20° 100 mm. Bei 15° gilt also 150 mm.",
     "bildDatei": "/buch/lf12/ueberdeckung-grossformatig.webp",
@@ -2596,14 +2596,14 @@
     "frage": "Welche Besonderheiten gibt es bei der Deckung mit Profilbändern und Profiltafeln? (mehrere richtig)",
     "optionen": [
       "Für die Verlegung muss ein Verlegeplan vorhanden sein",
-      "Die Befestigung erfolgt durch Schrauben, Setzbolzen oder Blindniete nach Verlegeplan",
       "Wellprofile werden auf Pfetten verlegt, deren Abstand von Belastung, Blechdicke und Profilgeometrie abhängt",
-      "Sie brauchen immer eine vollflächige Schalung"
+      "Sie brauchen immer eine vollflächige Schalung",
+      "Die Befestigung erfolgt durch Schrauben, Setzbolzen oder Blindniete nach Verlegeplan"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Buchaufgabe 26: Für die Verlegung dieser Profiltafeln muss ein Verlegeplan vorhanden sein. Er enthält u. a. Angaben über die Einteilung der Dachfläche mit Öffnungen und Durchdringungen, die Montagerichtung, Montagehinweise zu Befestigung und Verbindung sowie über die Dichtbänder. Die Befestigung auf der Unterkonstruktion aus Stahl, Holz oder Beton erfolgt durch Schrauben, Setzbolzen oder Blindniete. Wellprofile werden auf Pfetten (Holz- oder Stahlträger) verlegt; der Pfettenabstand hängt von Belastung, Blechdicke und Profilgeometrie ab. Eine vollflächige Deckunterlage ist gerade NICHT erforderlich.",
     "bildDatei": "/buch/lf12/well-trapezprofil.webp",
@@ -2616,17 +2616,17 @@
     "thema": "Selbsttragende Deckungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 459",
     "konfidenz": "hoch",
-    "text": "Trapezbleche haben eine Dicke von {{0,6}} bis 2 mm, die Lieferbreiten reichen von {{610}} bis 1035 mm. Die Ortgangausbildung wird mindestens {{25}} mm ueber die Oberkante des wasserfuehrenden Profils aufgekantet.",
+    "text": "Trapezbleche haben eine Dicke von {{0,6}} bis 2 mm, die Lieferbreiten reichen von {{610}} bis 1035 mm. Die Ortgangausbildung wird mindestens {{25}} mm über die Oberkante des wasserführenden Profils aufgekantet.",
     "akzeptiert": {
-      "0,6": [
-        "0,6",
-        "0.6"
+      "25": [
+        "25"
       ],
       "610": [
         "610"
       ],
-      "25": [
-        "25"
+      "0,6": [
+        "0,6",
+        "0.6"
       ]
     },
     "erklaerung": "Trapezbleche werden als Dachschalen, Dachdeckungen und Wandbekleidungen verwendet. Sie sind biegesteif und oberflächenbeschichtet; ihre Dicke beträgt 0,6…2 mm, die Lieferbreiten reichen von 610…1035 mm. Die Ortgangausbildung kann durch einen seitlichen Metallanschluss erfolgen, der mindestens 25 mm über die Oberkante des wasserführenden Profils aufgekantet wird.",
@@ -2644,8 +2644,8 @@
     "optionen": [
       "Mindestens 150 mm (unter 22°)",
       "Mindestens 100 mm",
-      "Mindestens 200 mm",
-      "Mindestens 250 mm"
+      "Mindestens 250 mm",
+      "Mindestens 200 mm"
     ],
     "korrekt": [
       0
@@ -2663,13 +2663,13 @@
     "konfidenz": "hoch",
     "frage": "Wie ist ein Sandwichelement aufgebaut?",
     "optionen": [
-      "Aus zwei Metallschichten mit einem Wärmedämmstoff als Kern; die obere Metallschicht ist i. d. R. als Trapezprofil ausgebildet",
       "Aus zwei Dämmschichten mit einem Metallkern",
-      "Aus drei Metallschichten ohne Dämmung",
-      "Aus Metall und Holz"
+      "Aus Metall und Holz",
+      "Aus zwei Metallschichten mit einem Wärmedämmstoff als Kern; die obere Metallschicht ist i. d. R. als Trapezprofil ausgebildet",
+      "Aus drei Metallschichten ohne Dämmung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 25: Sandwichelemente bestehen aus zwei Metallschichten und einem Wärmedämmstoff als Kern (z. B. PS-Hartschaum oder PUR-Hartschaum). Die obere Metallschicht ist i. d. R. als Trapezprofil ausgebildet. Merksatz: Sandwichelemente enthalten im Kern einen Wärmedämmstoff. Mögliche Unterkonstruktionen sind Beton, Holz oder Stahl.",
     "bildDatei": "/buch/lf12/sandwich-begriffe.webp",
@@ -2684,15 +2684,15 @@
     "konfidenz": "hoch",
     "frage": "Was ist bei der Montage von Sandwichelementen zu beachten? (mehrere richtig)",
     "optionen": [
-      "Es dürfen ausschließlich vom Hersteller zugelassene Verbindungselemente verwendet werden",
-      "Beim korrekten Verschrauben darf sich die Dichtung höchstens 2 mm verformen",
       "Unter Querstößen ist eine Auflagerbreite von mindestens 90 mm erforderlich",
-      "Die Elemente dürfen frei ohne Verlegeplan verlegt werden"
+      "Beim korrekten Verschrauben darf sich die Dichtung höchstens 2 mm verformen",
+      "Die Elemente dürfen frei ohne Verlegeplan verlegt werden",
+      "Es dürfen ausschließlich vom Hersteller zugelassene Verbindungselemente verwendet werden"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Es dürfen ausschließlich vom Hersteller zugelassene Verbindungselemente verwendet werden. Beim korrekten Verschrauben treten in der Dichtung kleine Verformungen auf, die aber 2 mm nicht überschreiten sollten. Die Verlegung erfolgt anhand eines Verlegeplans: Das erste Element wird eingemessen und positioniert, das nächste an der schaumfreien Zone als Überdeckung angeschlossen. Unter Querstößen ist eine Auflagerbreite von mindestens 90 mm erforderlich.",
     "bildDatei": "/buch/lf12/sandwich-begriffe.webp",
@@ -2707,13 +2707,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der First bei Sandwichelementen ausgebildet?",
     "optionen": [
-      "Mit äußerem Firstblech und Profilfüller zur Abdichtung; die Fuge wird mit PUR-Schaum oder Mineralwolle ausgefüllt, innen wird ein Dichtband als diffusionsdichter Abschluss eingelegt",
-      "Der First bleibt offen zur Belüftung",
       "Der First wird verschweißt",
-      "Der First wird nur verschraubt"
+      "Der First wird nur verschraubt",
+      "Der First bleibt offen zur Belüftung",
+      "Mit äußerem Firstblech und Profilfüller zur Abdichtung; die Fuge wird mit PUR-Schaum oder Mineralwolle ausgefüllt, innen wird ein Dichtband als diffusionsdichter Abschluss eingelegt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Firstausbildung erfolgt mit einem äußeren Firstblech und einem Profilfüller zur Abdichtung. Die Fuge zwischen den Elementen wird mit PUR-Schaum oder Mineralwolle ausgefüllt. Als Innendichtung wird i. d. R. ein Dichtband eingelegt, um einen diffusionsdichten Abschluss zu erreichen.",
     "bildDatei": "/buch/lf12/sandwich-begriffe.webp",
@@ -2728,13 +2728,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Kassettenprofilbänder befestigt?",
     "optionen": [
-      "Direkt mit Schrauben oder Nieten auf der Unterkonstruktion oder über überdeckte Befestigungssysteme (Haltebügel, Halteelemente)",
+      "Ausschließlich durch Schweißen",
       "Ausschließlich durch Verkleben",
       "Ausschließlich durch Falzen",
-      "Ausschließlich durch Schweißen"
+      "Direkt mit Schrauben oder Nieten auf der Unterkonstruktion oder über überdeckte Befestigungssysteme (Haltebügel, Halteelemente)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 26: Kassettenprofilbänder werden entweder mit Schrauben oder Nieten direkt auf der Unterkonstruktion befestigt (vor allem bei Wandbekleidungen) oder es werden überdeckte Befestigungssysteme (Haltebügel oder Halteelemente) verwendet. Dazu werden zuerst die Halteelemente nach Herstellerangabe befestigt, anschließend werden die Bänder darauf verlegt. Neben der Befestigung ermöglichen diese Halteelemente Längenänderungen der Profilbänder.",
     "bildDatei": "/buch/lf12/kassettenprofil-verlegung.webp",
@@ -2749,13 +2749,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Metalldachpfannen verlegt und befestigt?",
     "optionen": [
-      "In Sparrenrichtung auf einer Lattung, verschraubt mit mindestens 6 Schrauben je m²",
-      "Quer zur Sparrenrichtung, genagelt",
+      "Frei aufgelegt und beschwert",
       "Auf vollflächiger Schalung, verklebt",
-      "Frei aufgelegt und beschwert"
+      "Quer zur Sparrenrichtung, genagelt",
+      "In Sparrenrichtung auf einer Lattung, verschraubt mit mindestens 6 Schrauben je m²"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 25b: Metalldachpfannen bestehen aus feuerverzinkten und kunststoffbeschichteten Stahlpfannen oder aus Aluminium. Sie werden i. d. R. in der Sparrenlänge des Daches auf Maß angefertigt und in Sparrenrichtung auf einer Lattung verlegt und verschraubt. Die Befestigung erfolgt mit mindestens 6 Schrauben/m². Der Lattenabstand ergibt sich aus dem Elementprofil und beträgt im Buchbeispiel mindestens 350 mm.",
     "bildDatei": "/buch/lf12/metalldachpfanne-abmessung.webp",
@@ -2768,16 +2768,16 @@
     "thema": "Metalldachpfannen",
     "quelle": "Grundstufe Bautechnik, Buch S. 461",
     "konfidenz": "hoch",
-    "text": "Im Buchbeispiel betraegt die Baubreite der Metalldachpfanne {{1050}} mm und die Tafelbreite {{1140}} mm. Der Lattenabstand betraegt mindestens {{350}} mm, die maximale Tafellaenge {{11500}} mm.",
+    "text": "Im Buchbeispiel beträgt die Baubreite der Metalldachpfanne {{1050}} mm und die Tafelbreite {{1140}} mm. Der Lattenabstand beträgt mindestens {{350}} mm, die maximale Tafellänge {{11500}} mm.",
     "akzeptiert": {
+      "350": [
+        "350"
+      ],
       "1050": [
         "1050"
       ],
       "1140": [
         "1140"
-      ],
-      "350": [
-        "350"
       ],
       "11500": [
         "11500"
@@ -2797,9 +2797,9 @@
     "frage": "Wie werden First, Ortgang und Traufe bei der Metalldachpfannendeckung ausgebildet?",
     "optionen": [
       "First mit vorgefertigten Firstkappen, am Ortgang ein aufgeschraubtes Ortgangblech, an der Traufe i. d. R. ein Traufblech als Einlaufblech",
-      "Alle drei Anschlüsse werden verlötet",
+      "Alle drei Anschlüsse bleiben offen",
       "Alle drei Anschlüsse werden verfalzt",
-      "Alle drei Anschlüsse bleiben offen"
+      "Alle drei Anschlüsse werden verlötet"
     ],
     "korrekt": [
       0
@@ -2815,17 +2815,17 @@
     "thema": "Zusammenfassung",
     "quelle": "Grundstufe Bautechnik, Buch S. 462 (Zusammenfassung)",
     "konfidenz": "hoch",
-    "text": "Die Regeldachneigung bei Metalldeckungen betraegt {{7}}° bzw. {{25}}°. Bei Dachdeckungen mit rechteckigen und rautenfoermigen Blechen betraegt sie {{22}}°.",
+    "text": "Die Regeldachneigung bei Metalldeckungen beträgt {{7}}° bzw. {{25}}°. Bei Dachdeckungen mit rechteckigen und rautenförmigen Blechen beträgt sie {{22}}°.",
     "akzeptiert": {
       "7": [
         "7",
         "sieben"
       ],
-      "25": [
-        "25"
-      ],
       "22": [
         "22"
+      ],
+      "25": [
+        "25"
       ]
     },
     "erklaerung": "Zusammenfassung S. 462: Die Regeldachneigung beträgt 7° (Doppelstehfalz, Leistenfalz) bzw. 25° (Winkelstehfalz). Die Ausführung der Querverbindungen hängt von der Dachneigung ab. Die Regeldachneigung bei Dachdeckungen mit rechteckigen und rautenförmigen Blechen beträgt 22°; diese Bleche werden durch Falze ineinandergehängt.",
@@ -2884,13 +2884,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 462: Das Wohnhaus hat 25° Dachneigung, die Sparren sind 7,00 m bzw. 6,00 m lang. Welche Deckart ist geeignet und was folgt aus den Sparrenlängen?",
     "optionen": [
-      "Doppelstehfalz oder Leistendeckung (beide ab 7° zulässig); die Sparrenlängen unter 10 m erlauben durchlaufende Scharen ohne Querverbindungen",
       "Nur Winkelstehfalz, und es sind zwingend Querfalze nötig",
-      "Nur Trapezprofile",
-      "Keine Metalldeckung möglich"
+      "Doppelstehfalz oder Leistendeckung (beide ab 7° zulässig); die Sparrenlängen unter 10 m erlauben durchlaufende Scharen ohne Querverbindungen",
+      "Keine Metalldeckung möglich",
+      "Nur Trapezprofile"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei 25° Dachneigung sind Doppelstehfalz (Regeldachneigung 7°), Leistendeckung (7°) und auch der Winkelstehfalz (25°) zulässig. Weil die Sparren mit 7,00 m und 6,00 m unter der maximalen Scharlänge von 10 m bleiben, können die Scharen durchlaufend aus Bändern hergestellt werden — Querverbindungen sind nicht erforderlich. Bei 25° liegen die Festhafte nach der Abbildung S. 452 im oberen Viertel der Sparrenlänge.",
     "bildDatei": "/buch/lf12/projekt-wohnhaus.webp",
@@ -2958,13 +2958,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 446: Ein Pultdach hat 30° Dachneigung, keinen Dachüberstand und Sparren 80 × 220 mm im Abstand von 70 cm. Was ist bei der Wahl der Metalldeckung besonders zu prüfen?",
     "optionen": [
-      "Mögliche Korrosionsschäden — vor allem Kontaktkorrosion zwischen unterschiedlichen Metallen — sowie die temperaturbedingte Längenänderung",
-      "Nur die Farbe der Deckung",
       "Nur der Preis",
-      "Nur die Dachneigung"
+      "Mögliche Korrosionsschäden — vor allem Kontaktkorrosion zwischen unterschiedlichen Metallen — sowie die temperaturbedingte Längenänderung",
+      "Nur die Dachneigung",
+      "Nur die Farbe der Deckung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Projektaufgabe S. 446 verlangt ausdrücklich, die Auswahl zu begründen und auf mögliche Probleme, insbesondere mögliche Korrosionsschäden, hinzuweisen. Zusätzlich ist die temperaturbedingte Längenänderung für beide Dächer zu berechnen und es sind Maßnahmen für eine schadensfreie Verlegung festzulegen — insbesondere die Einteilung der Fest- und Schiebehafte. Bei 30° Dachneigung liegen die Festhafte noch im oberen Viertel (10°…30°).",
     "bildDatei": "/buch/lf12/projekt-traufpunkt.webp",

@@ -8,12 +8,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Mängel wurden bei der Schadensinspektion an dem Wohngebäude festgestellt?",
     "optionen": [
-      "Undichte Stellen im Bereich der Dachränder und der Lichtkuppelelemente",
       "Vereinzelte Riss- und Faltenbildungen in der Flächenabdichtung",
-      "Eine vollständig durchfeuchtete und unbrauchbare Wärmedämmschicht",
-      "Ein Absacken der Stahlbetondecke"
+      "Ein Absacken der Stahlbetondecke",
+      "Undichte Stellen im Bereich der Dachränder und der Lichtkuppelelemente",
+      "Eine vollständig durchfeuchtete und unbrauchbare Wärmedämmschicht"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      0,
+      2
+    ],
     "erklaerung": "Genannt sind nur zwei Mängel: undichte Stellen an Dachrändern und Lichtkuppelelementen sowie Riss- und Faltenbildungen in der Fläche. Die Wärmedämmschicht ist ausdrücklich noch funktionstüchtig — genau deshalb kann sie liegen bleiben und es reicht eine Sanierung mit Erhalt des alten Dachaufbaus.",
     "bildDatei": "/buch/lf17/projekt-iso.webp",
     "bildunterschrift": "Projektaufgabe Flachdachsanierung (Buch S. 558)"
@@ -27,12 +30,14 @@
     "konfidenz": "hoch",
     "frage": "Wie alt ist die Flachdachabdichtung des Wohngebäudes und mit welchem Gefälle wurde sie verlegt?",
     "optionen": [
-      "24 Jahre alt, auf einer Stahlbetondecke mit 3 % Gefälle",
-      "22 Jahre alt, auf einer Stahlbetondecke mit 2 % Gefälle",
       "26 Jahre alt, auf einer Stahlbetondecke mit 5 % Gefälle",
+      "22 Jahre alt, auf einer Stahlbetondecke mit 2 % Gefälle",
+      "24 Jahre alt, auf einer Stahlbetondecke mit 3 % Gefälle",
       "24 Jahre alt, ohne Gefälle als Null-Grad-Dach"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Die Abdichtung ist 24 Jahre alt und auf einer Stahlbetondecke mit 3 % Gefälle verlegt. 24 Jahre liegen mitten in der üblichen Nutzungsdauer von Flachdächern (20 bis 30 Jahre) — ein Schaden in diesem Alter ist also nichts Ungewöhnliches. Verwechsle die Zahl nicht mit den Sanierungsbeispielen: Beispiel 1 ist 22 Jahre alt, Beispiel 2 sind es 26 Jahre.",
     "bildDatei": "/buch/lf17/projekt-iso.webp",
     "bildunterschrift": "Projektaufgabe Flachdachsanierung (Buch S. 558)"
@@ -51,7 +56,11 @@
       "Die notwendigen Berechnungen zur Massenermittlung",
       "Ein Angebot mit Einheitspreisen für den Bauherrn"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Der Sanierungsplan besteht aus drei Teilen: a) Arbeitsschritte, b) Zeichnungen des neuen Dachaufbaus samt Dachrandabschluss, c) Massenermittlung. Ein Preisangebot gehört nicht dazu — der Plan ist die technische Grundlage, die im Beratungsgespräch vorgestellt wird; kalkuliert wird erst danach.",
     "bildDatei": "/buch/lf17/projekt-iso.webp",
     "bildunterschrift": "Projektaufgabe Flachdachsanierung (Buch S. 558)"
@@ -65,17 +74,70 @@
     "konfidenz": "hoch",
     "aufgabentext": "Massenermittlung zur Projektaufgabe S. 558: Der Grundriss des Wohngebäudes ist L-förmig. Die eine Außenkante ist in {a1} m und {a2} m unterteilt, die andere in {b1} m und {b2} m. Berechne die Fläche des Flachdachs.",
     "parameter": [
-      { "name": "a1", "label": "erster Abschnitt Längsseite", "einheit": "m", "min": 8.4, "max": 8.4, "schritt": 0.1 },
-      { "name": "a2", "label": "zweiter Abschnitt Längsseite", "einheit": "m", "min": 5.6, "max": 5.6, "schritt": 0.1 },
-      { "name": "b1", "label": "erster Abschnitt Querseite", "einheit": "m", "min": 7.0, "max": 7.0, "schritt": 0.1 },
-      { "name": "b2", "label": "zweiter Abschnitt Querseite", "einheit": "m", "min": 5.6, "max": 5.6, "schritt": 0.1 }
+      {
+        "name": "a1",
+        "label": "erster Abschnitt Längsseite",
+        "einheit": "m",
+        "min": 8.4,
+        "max": 8.4,
+        "schritt": 0.1
+      },
+      {
+        "name": "a2",
+        "label": "zweiter Abschnitt Längsseite",
+        "einheit": "m",
+        "min": 5.6,
+        "max": 5.6,
+        "schritt": 0.1
+      },
+      {
+        "name": "b1",
+        "label": "erster Abschnitt Querseite",
+        "einheit": "m",
+        "min": 7,
+        "max": 7,
+        "schritt": 0.1
+      },
+      {
+        "name": "b2",
+        "label": "zweiter Abschnitt Querseite",
+        "einheit": "m",
+        "min": 5.6,
+        "max": 5.6,
+        "schritt": 0.1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Gesamtlänge des umschließenden Rechtecks: {a1} m + {a2} m", "formel": "a1 + a2", "ergebnisName": "laenge", "einheit": "m" },
-      { "beschreibung": "Gesamtbreite des umschließenden Rechtecks: {b1} m + {b2} m", "formel": "b1 + b2", "ergebnisName": "breite", "einheit": "m" },
-      { "beschreibung": "Fläche des umschließenden Rechtecks: laenge · breite", "formel": "laenge * breite", "ergebnisName": "a_rechteck", "einheit": "m²" },
-      { "beschreibung": "Fläche der fehlenden Ecke: {a2} m · {b2} m", "formel": "a2 * b2", "ergebnisName": "a_ecke", "einheit": "m²" },
-      { "beschreibung": "Dachfläche = Rechteck minus fehlende Ecke", "formel": "a_rechteck - a_ecke", "ergebnisName": "a_dach", "einheit": "m²" }
+      {
+        "beschreibung": "Gesamtlänge des umschließenden Rechtecks: {a1} m + {a2} m",
+        "formel": "a1 + a2",
+        "ergebnisName": "laenge",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gesamtbreite des umschließenden Rechtecks: {b1} m + {b2} m",
+        "formel": "b1 + b2",
+        "ergebnisName": "breite",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Fläche des umschließenden Rechtecks: laenge · breite",
+        "formel": "laenge * breite",
+        "ergebnisName": "a_rechteck",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Fläche der fehlenden Ecke: {a2} m · {b2} m",
+        "formel": "a2 * b2",
+        "ergebnisName": "a_ecke",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Dachfläche = Rechteck minus fehlende Ecke",
+        "formel": "a_rechteck - a_ecke",
+        "ergebnisName": "a_dach",
+        "einheit": "m²"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Das umschließende Rechteck misst 14,00 m × 12,60 m = 176,40 m². Davon fehlt die Ecke 5,60 m × 5,60 m = 31,36 m². Die Dachfläche beträgt also 145,04 m². Die Ergänzungsmethode (Rechteck minus fehlendes Stück) ist bei L-Formen meist schneller und weniger fehleranfällig als das Zerlegen in zwei Teilrechtecke — sie liefert aber dasselbe: 8,40 · 12,60 + 5,60 · 7,00 = 105,84 + 39,20 = 145,04 m².",
@@ -91,15 +153,58 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für den Dachrandabschluss der Projektaufgabe wird die Länge der Dachaußenkanten gebraucht. Der L-förmige Grundriss hat die Abschnitte {a1} m + {a2} m und {b1} m + {b2} m. Berechne den Umfang.",
     "parameter": [
-      { "name": "a1", "label": "erster Abschnitt Längsseite", "einheit": "m", "min": 8.4, "max": 8.4, "schritt": 0.1 },
-      { "name": "a2", "label": "zweiter Abschnitt Längsseite", "einheit": "m", "min": 5.6, "max": 5.6, "schritt": 0.1 },
-      { "name": "b1", "label": "erster Abschnitt Querseite", "einheit": "m", "min": 7.0, "max": 7.0, "schritt": 0.1 },
-      { "name": "b2", "label": "zweiter Abschnitt Querseite", "einheit": "m", "min": 5.6, "max": 5.6, "schritt": 0.1 }
+      {
+        "name": "a1",
+        "label": "erster Abschnitt Längsseite",
+        "einheit": "m",
+        "min": 8.4,
+        "max": 8.4,
+        "schritt": 0.1
+      },
+      {
+        "name": "a2",
+        "label": "zweiter Abschnitt Längsseite",
+        "einheit": "m",
+        "min": 5.6,
+        "max": 5.6,
+        "schritt": 0.1
+      },
+      {
+        "name": "b1",
+        "label": "erster Abschnitt Querseite",
+        "einheit": "m",
+        "min": 7,
+        "max": 7,
+        "schritt": 0.1
+      },
+      {
+        "name": "b2",
+        "label": "zweiter Abschnitt Querseite",
+        "einheit": "m",
+        "min": 5.6,
+        "max": 5.6,
+        "schritt": 0.1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Gesamtlänge: {a1} m + {a2} m", "formel": "a1 + a2", "ergebnisName": "laenge", "einheit": "m" },
-      { "beschreibung": "Gesamtbreite: {b1} m + {b2} m", "formel": "b1 + b2", "ergebnisName": "breite", "einheit": "m" },
-      { "beschreibung": "Umfang der L-Form = Umfang des umschließenden Rechtecks: 2 · (laenge + breite)", "formel": "2 * (laenge + breite)", "ergebnisName": "u", "einheit": "m" }
+      {
+        "beschreibung": "Gesamtlänge: {a1} m + {a2} m",
+        "formel": "a1 + a2",
+        "ergebnisName": "laenge",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Gesamtbreite: {b1} m + {b2} m",
+        "formel": "b1 + b2",
+        "ergebnisName": "breite",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Umfang der L-Form = Umfang des umschließenden Rechtecks: 2 · (laenge + breite)",
+        "formel": "2 * (laenge + breite)",
+        "ergebnisName": "u",
+        "einheit": "m"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Der Umfang beträgt 2 · (14,00 + 12,60) = 53,20 m. Merke dir diese Eigenschaft: Bei einer L-Form ist der Umfang genauso groß wie beim vollen umschließenden Rechteck — die beiden einspringenden Kanten ersetzen genau die beiden fehlenden Außenkanten. Die Fläche schrumpft (145,04 statt 176,40 m²), die Randlänge nicht. Wer den Dachrand aus der Fläche abschätzt, bestellt zu wenig Attikablech.",
@@ -115,12 +220,14 @@
     "konfidenz": "hoch",
     "frage": "Wie ist der vorhandene Flachdachaufbau der Projektaufgabe von unten nach oben aufgebaut?",
     "optionen": [
-      "Stahlbetondecke, Voranstrich, Dampfsperre, PUR-Hartschaumplatten, Dichtungsbahn, Kies",
-      "Stahlbetondecke, Dampfsperre, Voranstrich, Dichtungsbahn, PUR-Hartschaumplatten, Kies",
       "Stahlbetondecke, PUR-Hartschaumplatten, Voranstrich, Dampfsperre, Dichtungsbahn, Kies",
-      "Kies, Dichtungsbahn, PUR-Hartschaumplatten, Dampfsperre, Voranstrich, Stahlbetondecke"
+      "Kies, Dichtungsbahn, PUR-Hartschaumplatten, Dampfsperre, Voranstrich, Stahlbetondecke",
+      "Stahlbetondecke, Dampfsperre, Voranstrich, Dichtungsbahn, PUR-Hartschaumplatten, Kies",
+      "Stahlbetondecke, Voranstrich, Dampfsperre, PUR-Hartschaumplatten, Dichtungsbahn, Kies"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Von unten nach oben: Stahlbetondecke 18 cm, Voranstrich, Dampfsperre V13, PUR-Hartschaumplatten 6 cm, Dichtungsbahn V 60 S4 und PYE-PV 200 S5, 6 cm Kies Ø 16/32 mm. Der Voranstrich kommt vor der Dampfsperre, weil er den Beton grundiert und die Haftung der Bahn sichert. Die Dampfsperre liegt immer auf der warmen Seite, also unter der Dämmung — läge sie darüber, würde Tauwasser in der Dämmung anfallen.",
     "bildDatei": "/buch/lf17/flachdachaufbau-vorhanden.webp",
     "bildunterschrift": "Vorhandener Flachdachaufbau (Buch S. 558)"
@@ -132,10 +239,16 @@
     "thema": "Vorhandener Flachdachaufbau",
     "quelle": "Grundstufe Bautechnik, Buch S. 558",
     "konfidenz": "hoch",
-    "text": "Der vorhandene Flachdachaufbau besteht aus einer Stahlbetondecke von {{18}} cm, einem Voranstrich, einer Dampfsperre V13, PUR-Hartschaumplatten von {{6}} cm, den Dichtungsbahnen V 60 S4 und PYE-PV 200 S5 sowie einer Kiesschuettung von {{6}} cm mit einer Koernung von 16/32 mm.",
+    "text": "Der vorhandene Flachdachaufbau besteht aus einer Stahlbetondecke von {{18}} cm, einem Voranstrich, einer Dampfsperre V13, PUR-Hartschaumplatten von {{6}} cm, den Dichtungsbahnen V 60 S4 und PYE-PV 200 S5 sowie einer Kiesschüttung von {{6}} cm mit einer Körnung von 16/32 mm.",
     "akzeptiert": {
-      "18": ["18 cm", "achtzehn"],
-      "6": ["6 cm", "sechs"]
+      "6": [
+        "6 cm",
+        "sechs"
+      ],
+      "18": [
+        "18 cm",
+        "achtzehn"
+      ]
     },
     "erklaerung": "Die Kiesschüttung ist mit 6 cm genauso dick wie die PUR-Dämmung. Der Kies ist hier nicht Dämmung, sondern schwerer Oberflächenschutz: Er hält die Bahn gegen Windsog nieder und schützt sie vor UV-Strahlung. Bei der Sanierung muss er deshalb zuerst abgeräumt werden — das ist reine Masse, die vom Dach herunter muss.",
     "bildDatei": "/buch/lf17/flachdachaufbau-vorhanden.webp",
@@ -150,12 +263,36 @@
     "konfidenz": "hoch",
     "aufgabentext": "Vor der Sanierung muss die Kiesschüttung vom Dach der Projektaufgabe abgeräumt werden. Die Dachfläche beträgt {flaeche} m², die Kiesschicht ist {dicke} cm dick. Wie viel Kubikmeter Kies fallen an?",
     "parameter": [
-      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 145.04, "max": 145.04, "schritt": 0.01 },
-      { "name": "dicke", "label": "Dicke der Kiesschüttung", "einheit": "cm", "min": 6, "max": 6, "schritt": 1 }
+      {
+        "name": "flaeche",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 145.04,
+        "max": 145.04,
+        "schritt": 0.01
+      },
+      {
+        "name": "dicke",
+        "label": "Dicke der Kiesschüttung",
+        "einheit": "cm",
+        "min": 6,
+        "max": 6,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Schichtdicke von cm in m umrechnen: {dicke} cm ÷ 100", "formel": "dicke / 100", "ergebnisName": "d_m", "einheit": "m" },
-      { "beschreibung": "Volumen = Fläche · Dicke", "formel": "flaeche * d_m", "ergebnisName": "v", "einheit": "m³" }
+      {
+        "beschreibung": "Schichtdicke von cm in m umrechnen: {dicke} cm ÷ 100",
+        "formel": "dicke / 100",
+        "ergebnisName": "d_m",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Volumen = Fläche · Dicke",
+        "formel": "flaeche * d_m",
+        "ergebnisName": "v",
+        "einheit": "m³"
+      }
     ],
     "toleranzProzent": 2,
     "erklaerung": "145,04 m² · 0,06 m = 8,70 m³ Kies. Das klingt wenig, wiegt aber rund 14 Tonnen (Kies hat etwa 1600 kg/m³). Deshalb steht \"Abräumen der Kiesschicht\" in den Arbeitslisten der Sanierungsbeispiele ganz oben — es bestimmt Kran, Container und Zeitbedarf. Der häufigste Fehler ist, die 6 cm nicht in Meter umzurechnen; sonst kommt das Hundertfache heraus.",
@@ -171,12 +308,16 @@
     "konfidenz": "hoch",
     "frage": "Welche Bauteile zeigt die Detailzeichnung des Dachrandabschlusses?",
     "optionen": [
-      "Blechverkleidung und Blechhalterung",
-      "Eine Randbohle mit dem Querschnitt 6 × 12 cm",
       "Eine Stahlbetondecke von 18 cm",
-      "Eine Kiesfangleiste aus Kunststoff"
+      "Eine Randbohle mit dem Querschnitt 6 × 12 cm",
+      "Eine Kiesfangleiste aus Kunststoff",
+      "Blechverkleidung und Blechhalterung"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
     "erklaerung": "Das Detail zeigt die Blechverkleidung, die auf einer Blechhalterung sitzt, die Randbohle 6 × 12 cm als Befestigungsgrund und die Stahlbetondecke 18 cm. Die Randbohle ist der entscheidende Punkt: Auf der Dämmung allein hält keine Schraube, deshalb braucht die Attika ein Holz, in das man befestigen kann.",
     "bildDatei": "/buch/lf17/dachrandabschluss.webp",
     "bildunterschrift": "Dachrandabschluss (Buch S. 558)"
@@ -190,13 +331,44 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für den Dachrandabschluss der Projektaufgabe wird rundum eine Randbohle mit dem Querschnitt {b} cm × {h} cm eingebaut. Die Dachaußenkanten sind zusammen {u} m lang. Wie viel Kubikmeter Holz werden gebraucht?",
     "parameter": [
-      { "name": "u", "label": "Länge der Dachaußenkanten", "einheit": "m", "min": 53.2, "max": 53.2, "schritt": 0.1 },
-      { "name": "b", "label": "Breite der Randbohle", "einheit": "cm", "min": 6, "max": 6, "schritt": 1 },
-      { "name": "h", "label": "Höhe der Randbohle", "einheit": "cm", "min": 12, "max": 12, "schritt": 1 }
+      {
+        "name": "u",
+        "label": "Länge der Dachaußenkanten",
+        "einheit": "m",
+        "min": 53.2,
+        "max": 53.2,
+        "schritt": 0.1
+      },
+      {
+        "name": "b",
+        "label": "Breite der Randbohle",
+        "einheit": "cm",
+        "min": 6,
+        "max": 6,
+        "schritt": 1
+      },
+      {
+        "name": "h",
+        "label": "Höhe der Randbohle",
+        "einheit": "cm",
+        "min": 12,
+        "max": 12,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Querschnittsfläche der Bohle: ({b} ÷ 100) · ({h} ÷ 100)", "formel": "(b / 100) * (h / 100)", "ergebnisName": "a_quer", "einheit": "m²" },
-      { "beschreibung": "Holzvolumen = Querschnitt · Länge", "formel": "a_quer * u", "ergebnisName": "v", "einheit": "m³" }
+      {
+        "beschreibung": "Querschnittsfläche der Bohle: ({b} ÷ 100) · ({h} ÷ 100)",
+        "formel": "(b / 100) * (h / 100)",
+        "ergebnisName": "a_quer",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Holzvolumen = Querschnitt · Länge",
+        "formel": "a_quer * u",
+        "ergebnisName": "v",
+        "einheit": "m³"
+      }
     ],
     "toleranzProzent": 2,
     "erklaerung": "0,06 m · 0,12 m = 0,0072 m² Querschnitt, mal 53,20 m Länge ergibt 0,383 m³ Holz. Bei einer Massenermittlung rechnet man Kanthölzer über den Querschnitt mal die laufende Länge — nicht über die Dachfläche. Die Randbohle folgt dem Umfang, und der ist bei der L-Form ungekürzt 53,20 m.",
@@ -212,12 +384,36 @@
     "konfidenz": "hoch",
     "aufgabentext": "Die Flachdachabdichtung der Projektaufgabe wurde mit {gefaelle} % Gefälle verlegt. Wie viel Höhenunterschied ergibt das auf einer Strecke von {strecke} m?",
     "parameter": [
-      { "name": "gefaelle", "label": "Gefälle", "einheit": "%", "min": 3, "max": 3, "schritt": 1 },
-      { "name": "strecke", "label": "Strecke", "einheit": "m", "min": 5, "max": 20, "schritt": 0.5 }
+      {
+        "name": "gefaelle",
+        "label": "Gefälle",
+        "einheit": "%",
+        "min": 3,
+        "max": 3,
+        "schritt": 1
+      },
+      {
+        "name": "strecke",
+        "label": "Strecke",
+        "einheit": "m",
+        "min": 5,
+        "max": 20,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
-      { "beschreibung": "Höhenunterschied in Metern: {strecke} m · {gefaelle} ÷ 100", "formel": "strecke * gefaelle / 100", "ergebnisName": "h_m", "einheit": "m" },
-      { "beschreibung": "Umrechnen in Zentimeter", "formel": "h_m * 100", "ergebnisName": "h_cm", "einheit": "cm" }
+      {
+        "beschreibung": "Höhenunterschied in Metern: {strecke} m · {gefaelle} ÷ 100",
+        "formel": "strecke * gefaelle / 100",
+        "ergebnisName": "h_m",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Umrechnen in Zentimeter",
+        "formel": "h_m * 100",
+        "ergebnisName": "h_cm",
+        "einheit": "cm"
+      }
     ],
     "toleranzProzent": 2,
     "erklaerung": "Ein Gefälle in Prozent ist nichts anderes als Höhe geteilt durch Länge, mal 100. Bei 3 % und 14,00 m Strecke sind das 0,42 m, also 42 cm. Das erklärt, warum Gefälledämmplatten am Hochpunkt so viel dicker sind als am Tiefpunkt — und warum bei einer Sanierung mit Gefälledämmung die Dachränder erhöht werden müssen. Genau dieser Punkt steht in den Arbeitslisten der Beispiele 2 und 3.",
@@ -233,12 +429,14 @@
     "konfidenz": "hoch",
     "frage": "Wer trägt die Verantwortung für die Inspektion und Wartung des Daches?",
     "optionen": [
-      "Der Gebäudeeigentümer",
       "Der Dachdeckerbetrieb, der zuletzt gearbeitet hat",
       "Der Architekt des Gebäudes",
-      "Die Gebäudeversicherung"
+      "Die Gebäudeversicherung",
+      "Der Gebäudeeigentümer"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Inspektion und Wartung liegen in der Verantwortung des Gebäudeeigentümers. Er ist unter anderem verantwortlich für die Verkehrssicherheit gegenüber Passanten — fällt ein Ziegel vom Dach und trifft jemanden, haftet er. Der Dachdeckerbetrieb führt die Arbeiten aus, aber die Pflicht, sie zu veranlassen, bleibt beim Eigentümer.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -252,12 +450,14 @@
     "konfidenz": "hoch",
     "frage": "Wofür ist der Gebäudeeigentümer neben der Verkehrssicherheit gegenüber Passanten außerdem verantwortlich?",
     "optionen": [
-      "Für Gebäude- und Personenschäden, denen durch rechtzeitige Inspektion vorgebeugt werden kann",
       "Für die Einhaltung der Bauvorschriften beim Neubau des Nachbarn",
+      "Für Gebäude- und Personenschäden, denen durch rechtzeitige Inspektion vorgebeugt werden kann",
       "Für die Entsorgung von Bauschutt der ausführenden Firma",
       "Für die Wetterlage am Ausführungstag"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Der Eigentümer ist auch für Gebäude- und Personenschäden verantwortlich, die als Folgeschäden entstehen — also für Schäden, denen eine rechtzeitige Inspektion vorgebeugt hätte. Deshalb gilt: Je früher Beschädigungen erkannt und repariert werden, desto geringer sind Reparaturaufwand und Folgeschäden.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -271,12 +471,14 @@
     "konfidenz": "hoch",
     "frage": "In welchen Zeitabständen sollen Inspektionen laut Dachinspektionsvertrag durchgeführt werden?",
     "optionen": [
-      "Ab dem 6. Jahr in Zeitabständen von 2 bis 3 Jahren",
       "Ab dem 6. Jahr jährlich",
       "Ab dem 2. Jahr in Zeitabständen von 6 Jahren",
+      "Ab dem 6. Jahr in Zeitabständen von 2 bis 3 Jahren",
       "Ab dem 10. Jahr in Zeitabständen von 5 Jahren"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Dachinspektionen ab dem 6. Jahr in Zeitabständen von 2 bis 3 Jahren. Die ersten Jahre bleiben ausgespart, weil ein neues Dach in dieser Zeit noch unter Gewährleistung steht und erfahrungsgemäß keine Alterungsschäden zeigt. Achte auf die Reihenfolge der Zahlen: 6 ist das Startjahr, 2 bis 3 ist der Abstand — nicht umgekehrt.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -291,11 +493,13 @@
     "frage": "Ab welcher Windstärke sollte nach Unwettern und Stürmen schnellstmöglich eine Inspektion erfolgen?",
     "optionen": [
       "Ab Windstärke 8 Beaufort",
-      "Ab Windstärke 4 Beaufort",
       "Ab Windstärke 12 Beaufort",
+      "Ab Windstärke 4 Beaufort",
       "Ab Windstärke 6 Beaufort"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Nach Unwettereignissen ab 8 Beaufort sollte schnellstmöglich inspiziert werden. 8 Beaufort ist ein stürmischer Wind mit rund 62 bis 74 km/h — die Schwelle, ab der Windsog Deckungen anheben und Ziegel lösen kann. Diese außerplanmäßige Inspektion kommt zusätzlich zu den regelmäßigen Terminen alle 2 bis 3 Jahre.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -309,12 +513,16 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Welche Arbeiten umfasst eine Dachinspektion?",
     "optionen": [
-      "Die Überprüfung der Dachdeckung",
-      "Die Überprüfung der An- und Abschlüsse sowie der Dachentwässerung",
+      "Das Auswechseln beschädigter Dachziegel",
       "Die Überprüfung der Einbauteile und der Sicherheitseinrichtungen auf ihre Funktionstüchtigkeit",
-      "Das Auswechseln beschädigter Dachziegel"
+      "Die Überprüfung der An- und Abschlüsse sowie der Dachentwässerung",
+      "Die Überprüfung der Dachdeckung"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Inspektionsarbeiten umfassen die Überprüfung der Dachdeckung, der An- und Abschlüsse, der Dachentwässerung, der Einbauteile und der Sicherheitseinrichtungen. Das Auswechseln beschädigter Ziegel ist dagegen bereits eine Wartungsarbeit. Die Trennlinie ist scharf: Inspektion schaut nur hin, Wartung greift ein.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -328,12 +536,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgaben 1 und 3: Was unterscheidet Inspektionsarbeiten von Wartungsarbeiten?",
     "optionen": [
+      "Wartungsarbeiten sind ein anderes Wort für Komplettsanierung",
       "Bei Inspektionsarbeiten wird das Dach auf seine Funktionstüchtigkeit überprüft",
       "Bei Wartungsarbeiten werden festgestellte Schäden und Verunreinigungen beseitigt",
-      "Inspektionsarbeiten dürfen nur von Sachverständigen ausgeführt werden",
-      "Wartungsarbeiten sind ein anderes Wort für Komplettsanierung"
+      "Inspektionsarbeiten dürfen nur von Sachverständigen ausgeführt werden"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Inspektion = prüfen, Wartung = beheben. Bei der Wartung werden schadhafte Teile ersetzt, Verkrustungen und lose Verunreinigungen entfernt und, wenn erforderlich, Rinnen und Fallrohre gereinigt. Beides zusammen wird im Dachinspektions- oder Wartungsvertrag vereinbart — genau danach fragt Buchaufgabe 3.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
     "bildunterschrift": "Bestandteile der Dachinspektion (Buch S. 559)"
@@ -345,11 +556,22 @@
     "thema": "Inspektion und Wartung von Steildächern",
     "quelle": "Grundstufe Bautechnik, Buch S. 559",
     "konfidenz": "hoch",
-    "text": "Inspektions- und Wartungsvertraege sorgen fuer eine regelmaessige {{Ueberpruefung}} und beugen so groesseren {{Schaeden}} vor. Je frueher Beschaedigungen erkannt und beseitigt werden, desto geringer ist der erforderliche {{Reparaturaufwand}}.",
+    "text": "Inspektions- und Wartungsvertraege sorgen für eine regelmaessige {{Überprüfung}} und beugen so groesseren {{Schäden}} vor. Je früher Beschädigungen erkannt und beseitigt werden, desto geringer ist der erforderliche {{Reparaturaufwand}}.",
     "akzeptiert": {
-      "Ueberpruefung": ["Überprüfung", "Ueberprufung", "Prüfung", "Pruefung"],
-      "Schaeden": ["Schäden", "Schaden"],
-      "Reparaturaufwand": ["Reparatur-Aufwand", "Aufwand"]
+      "Ueberpruefung": [
+        "Überprüfung",
+        "Ueberprufung",
+        "Prüfung",
+        "Pruefung"
+      ],
+      "Schaeden": [
+        "Schäden",
+        "Schaden"
+      ],
+      "Reparaturaufwand": [
+        "Reparatur-Aufwand",
+        "Aufwand"
+      ]
     },
     "erklaerung": "Der wirtschaftliche Kern des ganzen Lernfelds: Ein Wartungsvertrag kostet Geld, spart aber mehr, weil kleine Schäden billig zu beheben sind und große nicht. Ein undichter Anschluss kostet ein paar hundert Euro — die durchfeuchtete Dämmung, die daraus in zwei Jahren wird, kostet eine Komplettsanierung.",
     "bildDatei": "/buch/lf17/inspektion-bestandteile.webp",
@@ -364,12 +586,16 @@
     "konfidenz": "hoch",
     "frage": "Welche Punkte prüft die Checkliste unter Position 1 \"Dachdeckung\"?",
     "optionen": [
-      "Ob einzelne Dachziegel in der Hauptdachfläche beschädigt sind",
-      "Ob die Hinterlüftung der Dachdeckung noch funktionstüchtig ist",
+      "Ob die Rinnen und Fallrohre gereinigt werden müssen",
       "Ob die Befestigung der Dachdeckung — die Windsogsicherheit — noch funktionstüchtig ist",
-      "Ob die Rinnen und Fallrohre gereinigt werden müssen"
+      "Ob einzelne Dachziegel in der Hauptdachfläche beschädigt sind",
+      "Ob die Hinterlüftung der Dachdeckung noch funktionstüchtig ist"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Position 1 umfasst 1.1 bis 1.6: beschädigte Dachziegel, Beeinträchtigung der Regensicherheit, beschädigte Formziegel, fehlende Dach- oder Formziegel, Hinterlüftung und Befestigung/Windsogsicherheit. Rinnen und Fallrohre stehen unter Position 2 \"Dachentwässerung\". Die Checkliste ist nach Bauteilgruppen geordnet, nicht nach Schadensart — daran erkennt man beim Ausfüllen schnell, wo man nachschauen muss.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-1.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 1 bis 4 (Buch S. 559)"
@@ -388,7 +614,11 @@
       "Ob sonstige lose Verunreinigungen zu entfernen sind",
       "Ob die Schneefangvorrichtungen zu erneuern sind"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Position 3 fragt 3.1 Regensicherheit der Metallan- und -abschlüsse, 3.2 schadhafte Vermörtelungen, 3.3 lose Verunreinigungen. Die Schneefangvorrichtungen stehen unter Position 5 \"Sicherheitseinrichtungen\" — sie schützen Personen, nicht das Bauteil. Beachte bei 3.1 die Formulierung \"noch längerfristig regensicher\": Gefragt ist nicht nur, ob es heute dicht ist, sondern ob es das bis zur nächsten Inspektion bleibt.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-1.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 1 bis 4 (Buch S. 559)"
@@ -402,12 +632,16 @@
     "konfidenz": "hoch",
     "frage": "Welche Dacheinbauteile und Dachsystemteile listet die Checkliste unter Position 4.1 auf?",
     "optionen": [
+      "Kehlelement, Ortgangelement, Dachausstiegsfenster und Wohnraumdachfenster",
       "Durchgangspfanne, Lichtpfanne und Lichtbiber",
       "Firstabschlusselement, Firstlüftungselement, Gratlüftungselement und Trauflüftungselement",
-      "Kehlelement, Ortgangelement, Dachausstiegsfenster und Wohnraumdachfenster",
       "Dachrinnen und Fallrohre"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Position 4.1 zählt genau diese elf Teile auf. Dachrinnen und Fallrohre gehören zur Dachentwässerung (Position 2). Bemerkenswert ist Position 4.2: \"Ist die Regensicherheit hierdurch beeinträchtigt?\" — dieselbe Frage wie bei 1.2. Jedes schadhafte Bauteil ist erst dann wirklich dringend, wenn es die Regensicherheit gefährdet.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-1.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 1 bis 4 (Buch S. 559)"
@@ -421,12 +655,16 @@
     "konfidenz": "hoch",
     "frage": "Was wird in der Checkliste unter Position 5 \"Sicherheitseinrichtungen\" geprüft?",
     "optionen": [
-      "Ob die Blitzschutzeinrichtungen schadhaft sind",
-      "Ob die Tritte und Wege für die Dachbegehungen schadhaft sind",
       "Ob die Schneefangvorrichtungen zu erneuern sind",
-      "Ob die Anlagen zur Nutzung der Solarenergie schadhaft sind"
+      "Ob die Anlagen zur Nutzung der Solarenergie schadhaft sind",
+      "Ob die Tritte und Wege für die Dachbegehungen schadhaft sind",
+      "Ob die Blitzschutzeinrichtungen schadhaft sind"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      2,
+      3
+    ],
     "erklaerung": "Position 5 umfasst Blitzschutzeinrichtungen (5.1), Tritte und Wege für Dachbegehungen (5.2) und Schneefangvorrichtungen (5.3). Die Solaranlagen stehen unter 4.3 bei den Dacheinbauteilen. Bei 5.1 und 4.3 steht zusätzlich die Rückfrage \"Wenn ja, welche Teile müssen gewartet werden?\" — bei diesen Anlagen genügt ein Kreuz nicht, es muss konkret werden.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-2.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 4.2 bis 6 (Buch S. 559)"
@@ -440,12 +678,15 @@
     "konfidenz": "hoch",
     "frage": "Was macht Position 6 \"Verkehrssicherheit\" der Checkliste besonders?",
     "optionen": [
-      "Sie fragt, ob durch festgestellte Schäden die Verkehrssicherheit für Personen berührt ist — also Gefahr im Verzug besteht",
-      "Sie verlangt zusätzlich die Angabe der Nummer der Checkliste, unter der der Schaden steht",
       "Sie ist die einzige Position ohne Ja-Nein-Feld",
-      "Sie betrifft ausschließlich öffentliche Gebäude"
+      "Sie betrifft ausschließlich öffentliche Gebäude",
+      "Sie fragt, ob durch festgestellte Schäden die Verkehrssicherheit für Personen berührt ist — also Gefahr im Verzug besteht",
+      "Sie verlangt zusätzlich die Angabe der Nummer der Checkliste, unter der der Schaden steht"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      2,
+      3
+    ],
     "erklaerung": "Position 6 ist die Sicherheitsklammer über alle anderen Punkte: Sie fragt nicht nach einem neuen Bauteil, sondern ob einer der zuvor angekreuzten Schäden Personen gefährdet. Deshalb muss die Nummer aus der Checkliste angegeben werden. \"Gefahr im Verzug\" heißt: sofort handeln, nicht bis zum nächsten Termin warten — notfalls absperren. Ein Ja-Nein-Feld hat die Position sehr wohl.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-2.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 4.2 bis 6 (Buch S. 559)"
@@ -460,11 +701,15 @@
     "frage": "Wozu dient eine Checkliste bei der Dachinspektion?",
     "optionen": [
       "Sie stellt sicher, dass kein Bauteil bei der Prüfung übersehen wird",
-      "Sie dokumentiert das Ergebnis nachvollziehbar für den Eigentümer",
       "Sie ist die Grundlage für eventuell notwendige Wartungs- oder Sanierungsarbeiten",
+      "Sie dokumentiert das Ergebnis nachvollziehbar für den Eigentümer",
       "Sie ersetzt die Begehung des Daches"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Die Ergebnisse werden protokolliert und dienen als Grundlage für eventuell notwendige Wartungs- oder Sanierungsarbeiten. Eine Checkliste ersetzt aber nie die Begehung — sie strukturiert sie nur. Der praktische Wert: Bei einer späteren Auseinandersetzung ist schriftlich belegt, was wann geprüft wurde und in welchem Zustand es war.",
     "bildDatei": "/buch/lf17/checkliste-inspektion-2.webp",
     "bildunterschrift": "Checkliste Inspektion, Punkte 4.2 bis 6 (Buch S. 559)"
@@ -478,12 +723,16 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Worauf ist bei der Auswechslung einzelner Schiefer zu achten?",
     "optionen": [
-      "Der neue Schiefer soll aus derselben Grube und in derselben Dicke verwendet werden",
-      "Die Blankbefestigung soll mit Schieferstiften aus demselben Werkstoff wie die Deckung erfolgen",
+      "Der neue Schiefer muss immer dicker sein als der alte, damit er hält",
       "Die Schrauben sollen aus Edelstahl oder Kupfer sein",
-      "Der neue Schiefer muss immer dicker sein als der alte, damit er hält"
+      "Die Blankbefestigung soll mit Schieferstiften aus demselben Werkstoff wie die Deckung erfolgen",
+      "Der neue Schiefer soll aus derselben Grube und in derselben Dicke verwendet werden"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Gleiche Grube und gleiche Dicke sorgen dafür, dass der Ersatzstein optisch und technisch zum Bestand passt — Schiefer aus verschiedenen Gruben unterscheidet sich in Farbe und Verwitterungsverhalten. Die Blankbefestigung erfolgt mit Schieferstiften aus demselben Werkstoff wie die Deckung, Schrauben aus Edelstahl oder Kupfer. Hintergrund ist die Kontaktkorrosion: Zwei verschiedene Metalle in Feuchtigkeit bilden ein galvanisches Element, das unedlere löst sich auf.",
     "bildDatei": "/buch/lf17/plattenhalter.webp",
     "bildunterschrift": "Plattenhalter zur Schieferreparatur (Buch S. 560)"
@@ -497,12 +746,14 @@
     "konfidenz": "hoch",
     "frage": "Wodurch kommt es bei eingedeckten Schiefer- und Faserzementdächern zu Beschädigungen?",
     "optionen": [
-      "Durch Setzungen und Bewegungen der Dachräume",
-      "Durch zu hohe Regenmengen im Sommer",
       "Durch die Farbe der Deckung",
-      "Durch die Himmelsrichtung des Daches"
+      "Durch zu hohe Regenmengen im Sommer",
+      "Durch die Himmelsrichtung des Daches",
+      "Durch Setzungen und Bewegungen der Dachräume"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Setzungen und Bewegungen der Dachräume führen dazu, dass Schiefer- oder Faserzementplatten brechen und ersetzt werden müssen. Der Dachstuhl arbeitet — Holz schwindet und quillt, das Gebäude setzt sich — und die starre, spröde Platte macht diese Bewegung nicht mit.",
     "bildDatei": "/buch/lf17/plattenhalter.webp",
     "bildunterschrift": "Plattenhalter zur Schieferreparatur (Buch S. 560)"
@@ -516,7 +767,10 @@
     "konfidenz": "hoch",
     "begriff": "Plattenhalter",
     "definition": "Ein spezielles Reparatursystem für einzelne beschädigte Schiefer- oder Faserzementplatten. Er besteht aus einer Grundplatte, die an der Schalung befestigt wird, und aus Haltearmen, die den Schiefer halten. So lässt sich eine Platte auswechseln, ohne sie durchbohren zu müssen — die Blankbefestigung wird vermieden. Nach dem Einbau ist das Reparatursystem nicht mehr zu sehen.",
-    "bestandteile": ["Platten", "halter"],
+    "bestandteile": [
+      "Platten",
+      "halter"
+    ],
     "erklaerung": "Der Plattenhalter löst ein handfestes Problem: In einer fertigen Deckung kommt man an die verdeckten Nägel der Nachbarplatten nicht mehr heran. Mit dem Halter greift man an die Schalung und klemmt die neue Platte fest — ohne die umliegenden Reihen aufzudecken. Bei einer Blankbefestigung säße der Stift dagegen sichtbar in der Fläche.",
     "bildDatei": "/buch/lf17/plattenhalter.webp",
     "bildunterschrift": "Plattenhalter zur Schieferreparatur (Buch S. 560)"
@@ -531,11 +785,16 @@
     "frage": "Buchaufgabe 5: Welche Beanspruchungen können bei Flachdächern zu Schäden führen?",
     "optionen": [
       "Einwirkung von Hitze und Kälte",
-      "Mechanische Beanspruchungen",
+      "Pfützenbildung mit Schlammkrusten",
       "Bewuchs durch Mikroorganismen und Pflanzen",
-      "Pfützenbildung mit Schlammkrusten"
+      "Mechanische Beanspruchungen"
     ],
-    "korrekt": [0, 1, 2, 3],
+    "korrekt": [
+      0,
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Alle vier stehen im Buch. Diese Belastungen führen zu Rissbildungen und undichten Stellen in der Abdichtung, wobei bereits kleine Undichtigkeiten zu schwerwiegender Durchfeuchtung und Beschädigung führen können. Beim Flachdach gibt es keinen Notausgang für Wasser — anders als beim geneigten Dach läuft nichts von selbst ab, und ein Loch von wenigen Millimetern durchfeuchtet die ganze Dämmschicht.",
     "bildDatei": "/buch/lf17/stehendes-wasser.webp",
     "bildunterschrift": "Stehendes Wasser auf einem Null-Grad-Dach (Buch S. 560)"
@@ -549,12 +808,14 @@
     "konfidenz": "hoch",
     "frage": "Wie lange liegt die Nutzungsdauer von Flachdächern und wodurch wird sie erreicht?",
     "optionen": [
+      "Zwischen 40 und 50 Jahren bei regelmäßiger Wartung",
       "Zwischen 20 und 30 Jahren, und nur bei regelmäßiger Inspektion und Wartung",
       "Zwischen 20 und 30 Jahren, unabhängig von der Pflege",
-      "Zwischen 40 und 50 Jahren bei regelmäßiger Wartung",
       "Zwischen 10 und 15 Jahren, danach ist immer eine Komplettsanierung fällig"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "20 bis 30 Jahre — aber ausdrücklich nur bei regelmäßiger Inspektion und Wartung. Ohne Pflege wird die Spanne nicht erreicht. Das erklärt die Beispiele im Buch: 22, 24 und 26 Jahre alte Dächer sind Sanierungsfälle, keine Ausreißer.",
     "bildDatei": "/buch/lf17/stehendes-wasser.webp",
     "bildunterschrift": "Stehendes Wasser auf einem Null-Grad-Dach (Buch S. 560)"
@@ -568,12 +829,15 @@
     "konfidenz": "hoch",
     "frage": "Warum ist stehendes Wasser auf einem \"Null-Grad-Dach\" ein Problem?",
     "optionen": [
-      "Es entstehen Pfützen mit Schlammkrusten, die zu den Belastungen der Abdichtung zählen",
-      "Es fördert Bewuchs durch Mikroorganismen und Pflanzen",
       "Es macht die Abdichtung sofort undicht",
-      "Es erhöht den Wärmedurchgangskoeffizienten der Dämmung dauerhaft"
+      "Es fördert Bewuchs durch Mikroorganismen und Pflanzen",
+      "Es erhöht den Wärmedurchgangskoeffizienten der Dämmung dauerhaft",
+      "Es entstehen Pfützen mit Schlammkrusten, die zu den Belastungen der Abdichtung zählen"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      3
+    ],
     "erklaerung": "Stehendes Wasser trocknet nicht ab, es sammelt Schmutz zu Schlammkrusten und bietet Mikroorganismen und Pflanzen einen Nährboden. Beides zählt das Buch zu den Belastungen, die zu Rissbildung und Undichtigkeit führen. Sofort undicht wird die Abdichtung dadurch nicht — der Schaden entsteht über Jahre. Genau deshalb wird bei Sanierungen ein Gefälle nachträglich hergestellt, etwa mit Gefälledämmplatten.",
     "bildDatei": "/buch/lf17/stehendes-wasser.webp",
     "bildunterschrift": "Stehendes Wasser auf einem Null-Grad-Dach (Buch S. 560)"
@@ -587,12 +851,15 @@
     "konfidenz": "hoch",
     "frage": "Was wird bei der Inspektion eines Flachdachs untersucht?",
     "optionen": [
-      "Der Zustand der Dachabdichtung in der Fläche",
       "Der Zustand der An- und Abschlüsse und der Durchdringungen",
-      "Die Tragfähigkeit der Stahlbetondecke durch Belastungsversuche",
-      "Die Farbe der Kiesschüttung"
+      "Der Zustand der Dachabdichtung in der Fläche",
+      "Die Farbe der Kiesschüttung",
+      "Die Tragfähigkeit der Stahlbetondecke durch Belastungsversuche"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      0,
+      1
+    ],
     "erklaerung": "Untersucht wird der Zustand der Dachabdichtung in der Fläche sowie der An- und Abschlüsse und der Durchdringungen. Die Durchdringungen sind erfahrungsgemäß die Schwachstelle — im Sanierungsbeispiel 1 liegen die undichten Stellen genau dort. Überall, wo die Abdichtungsebene unterbrochen und wieder angeschlossen werden muss, entsteht ein Risiko.",
     "bildDatei": "/buch/lf17/sanierungsarbeiten-flachdach.webp",
     "bildunterschrift": "Sanierungsarbeiten am Flachdach (Buch S. 560)"
@@ -607,11 +874,15 @@
     "frage": "Was gehört zu den regelmäßigen Pflegearbeiten an einem Flachdach?",
     "optionen": [
       "Verschmutzungen durch Staub, Laub und Bewuchs beseitigen",
-      "Verkrustungen, Humusablagerungen, Undichtigkeiten durch Wurzelwachstum und eine Verstopfung der Entwässerung verhindern",
+      "Die Abdichtung alle zwei Jahre vollflächig erneuern",
       "Die Verfugungen und Befestigungen von Anschlüssen und Abschlüssen besonders überprüfen",
-      "Die Abdichtung alle zwei Jahre vollflächig erneuern"
+      "Verkrustungen, Humusablagerungen, Undichtigkeiten durch Wurzelwachstum und eine Verstopfung der Entwässerung verhindern"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      2,
+      3
+    ],
     "erklaerung": "Pflegearbeiten sind vorbeugend: Staub, Laub und Bewuchs entfernen, damit sich keine Verkrustungen und kein Humus bilden, aus denen Pflanzen wachsen, deren Wurzeln die Abdichtung durchstoßen — und damit die Entwässerung frei bleibt. Wartungsarbeiten umfassen ebenfalls die Reinigung von Dachabläufen und Be- und Entlüftungsöffnungen.",
     "bildDatei": "/buch/lf17/sanierungsarbeiten-flachdach.webp",
     "bildunterschrift": "Sanierungsarbeiten am Flachdach (Buch S. 560)"
@@ -623,11 +894,21 @@
     "thema": "Inspektion und Wartung von Flachdächern",
     "quelle": "Grundstufe Bautechnik, Buch S. 560",
     "konfidenz": "hoch",
-    "text": "Die Instandhaltung von Flachdaechern umfasst die {{Inspektion}}, in der Regel durch regelmaessige Sichtkontrolle, die {{Wartungsarbeiten}} und gegebenenfalls die {{Instandsetzung}} der Abdichtung.",
+    "text": "Die Instandhaltung von Flachdächern umfasst die {{Inspektion}}, in der Regel durch regelmaessige Sichtkontrolle, die {{Wartungsarbeiten}} und gegebenenfalls die {{Instandsetzung}} der Abdichtung.",
     "akzeptiert": {
-      "Inspektion": ["Inspektionen", "Ueberpruefung"],
-      "Wartungsarbeiten": ["Wartung", "Wartungen"],
-      "Instandsetzung": ["Instandsetzungen", "Sanierung", "Reparatur"]
+      "Inspektion": [
+        "Inspektionen",
+        "Ueberpruefung"
+      ],
+      "Wartungsarbeiten": [
+        "Wartung",
+        "Wartungen"
+      ],
+      "Instandsetzung": [
+        "Instandsetzungen",
+        "Sanierung",
+        "Reparatur"
+      ]
     },
     "erklaerung": "Instandhaltung ist der Oberbegriff über allen dreien. Die Reihenfolge ist auch die zeitliche Abfolge: Erst sehe ich hin (Inspektion), dann beseitige ich Kleinigkeiten (Wartung), und erst wenn das nicht mehr reicht, wird repariert (Instandsetzung). Das \"gegebenenfalls\" bei der Instandsetzung ist kein Zufall — sie fällt nur an, wenn tatsächlich ein Schaden vorliegt.",
     "bildDatei": "/buch/lf17/sanierungsarbeiten-flachdach.webp",
@@ -643,11 +924,15 @@
     "frage": "Buchaufgabe 7: Was versteht man unter einer Teilsanierung?",
     "optionen": [
       "Bei der Teilsanierung werden beschädigte Stellen repariert und neu abgedichtet",
-      "Sie kommt in Frage, wenn Undichtigkeiten nur an einzelnen stark beanspruchten Stellen aufgetreten sind",
       "Sie kommt in Frage, wenn die Abdichtung noch nicht insgesamt unbrauchbar geworden ist",
+      "Sie kommt in Frage, wenn Undichtigkeiten nur an einzelnen stark beanspruchten Stellen aufgetreten sind",
       "Bei der Teilsanierung wird die gesamte Abdichtung erneuert"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Teilsanierung heißt: reparieren und neu abdichten, aber nur dort, wo es nötig ist. Voraussetzung ist, dass die Undichtigkeiten auf einzelne stark beanspruchte Stellen begrenzt sind. Zeigt die Abdichtung dagegen starke Blasen-, Wellen- oder Rissbildung oder ist sie insgesamt unbrauchbar, muss die gesamte Abdichtung erneuert werden — das wäre keine Teilsanierung mehr.",
     "bildDatei": "/buch/lf17/verklebung-daemmung.webp",
     "bildunterschrift": "Verklebung der Dachdämmung (Buch S. 561)"
@@ -661,12 +946,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Mit welchen Verfahren können Schadstellen auf Flachdächern lokalisiert werden?",
     "optionen": [
+      "Durch Abklopfen der Kiesschüttung",
       "Mit dem Rauch-Gas-Verfahren",
       "Mit dem Impulsstromverfahren",
-      "Mit einer Druckprüfung der Dachabläufe",
-      "Durch Abklopfen der Kiesschüttung"
+      "Mit einer Druckprüfung der Dachabläufe"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Genannt werden das Rauch-Gas-Verfahren und das Impulsstromverfahren. Beim Rauch-Gas-Verfahren macht der austretende Rauch die Leckstellen sichtbar, beim Impulsstromverfahren die leitende Wirkung von Feuchtigkeit. Beide sind nötig, weil die eingedrungene Feuchtigkeit im Dachaufbau lange Strecken zurücklegen kann — die nasse Stelle in der Wohnung liegt oft meterweit vom eigentlichen Loch entfernt. Genau deshalb ist die genaue Bestimmung der Schadstellen so schwierig.",
     "bildDatei": "/buch/lf17/verklebung-daemmung.webp",
     "bildunterschrift": "Verklebung der Dachdämmung (Buch S. 561)"
@@ -680,12 +968,15 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Schadstellen an Bitumenbahnen bei einer Teilsanierung repariert?",
     "optionen": [
-      "Einzelne Blasen werden aufgeschnitten und mit Bitumenbahnen überklebt",
+      "Risse werden mit Mörtel verfüllt",
       "Risse werden mit einem einseitig befestigten Trennstreifen abgedeckt und überklebt",
-      "Blasen werden mit Wasser gefüllt und beschwert",
-      "Risse werden mit Mörtel verfüllt"
+      "Einzelne Blasen werden aufgeschnitten und mit Bitumenbahnen überklebt",
+      "Blasen werden mit Wasser gefüllt und beschwert"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Blasen werden aufgeschnitten und überklebt. Bei Rissen kommt ein einseitig befestigter Trennstreifen darunter — das ist der entscheidende Kunstgriff: Der Riss entsteht durch Bewegung im Untergrund. Wäre der Flicken vollflächig verklebt, würde er diese Bewegung mitmachen und wieder reißen. Der Trennstreifen erlaubt es der Deckschicht, sich frei zu dehnen.",
     "bildDatei": "/buch/lf17/verklebung-daemmung.webp",
     "bildunterschrift": "Verklebung der Dachdämmung (Buch S. 561)"
@@ -699,12 +990,15 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen Bitumenbahnen mit leichtem Oberflächenschutz nachbehandelt werden?",
     "optionen": [
-      "Sie sind Witterungs- und Umwelteinflüssen besonders stark ausgesetzt",
-      "Die Nachbehandlung kann durch Anstriche oder eine gleichzeitige Erneuerung der Besplittung erfolgen",
       "Sie enthalten kein Bitumen",
+      "Die Nachbehandlung kann durch Anstriche oder eine gleichzeitige Erneuerung der Besplittung erfolgen",
+      "Sie sind Witterungs- und Umwelteinflüssen besonders stark ausgesetzt",
       "Sie sind nur für Steildächer zugelassen"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Ein leichter Oberflächenschutz — zum Beispiel eine Besplittung — schützt die Bahn deutlich schlechter als eine schwere Kiesschüttung. Deshalb sind diese Oberflächen stärker ausgesetzt und müssen rechtzeitig nachbehandelt werden, entweder durch Anstrich oder durch Erneuerung der Besplittung. Kunststoffbahnen erhalten stattdessen reflektierende Anstriche, um die Sonneneinstrahlung zu verringern.",
     "bildDatei": "/buch/lf17/verklebung-daemmung.webp",
     "bildunterschrift": "Verklebung der Dachdämmung (Buch S. 561)"
@@ -718,12 +1012,14 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Beschädigungen an Kunststoffbahnen repariert?",
     "optionen": [
-      "Durch Aufkleben oder Aufschweißen von Kunststoffbahnen desselben Herstellers",
       "Durch Überkleben mit Bitumenbahnen",
-      "Durch Vermörteln der Fehlstelle",
-      "Durch Auftragen eines reflektierenden Anstrichs auf die Schadstelle"
+      "Durch Aufkleben oder Aufschweißen von Kunststoffbahnen desselben Herstellers",
+      "Durch Auftragen eines reflektierenden Anstrichs auf die Schadstelle",
+      "Durch Vermörteln der Fehlstelle"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Aufkleben oder Aufschweißen von Bahnen desselben Herstellers. Der Zusatz \"desselben Herstellers\" ist keine Formsache: Kunststoffbahnen unterschiedlicher Rezeptur verschweißen nicht zuverlässig miteinander, und manche Kunststoffe vertragen sich chemisch nicht. Der reflektierende Anstrich ist eine Pflegemaßnahme gegen Sonneneinstrahlung, keine Reparatur.",
     "bildDatei": "/buch/lf17/verklebung-daemmung.webp",
     "bildunterschrift": "Verklebung der Dachdämmung (Buch S. 561)"
@@ -738,11 +1034,13 @@
     "frage": "Buchaufgabe 8: Wann ist die Sanierung mit Erhalt des alten Dachaufbaus möglich?",
     "optionen": [
       "Wenn die alte Abdichtung Blasen- oder Rissbildung aufweist, die vorhandene Wärmedämmung aber noch funktionsfähig ist",
-      "Wenn die Abdichtung starke Blasen-, Wellen- oder Rissbildung zeigt",
+      "Nur bei Gebäuden unter 100 m² Dachfläche",
       "Wenn die Abdichtung insgesamt unbrauchbar geworden ist",
-      "Nur bei Gebäuden unter 100 m² Dachfläche"
+      "Wenn die Abdichtung starke Blasen-, Wellen- oder Rissbildung zeigt"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Entscheidend ist der Zustand der Wärmedämmung, nicht der Abdichtung. Ist die Dämmung noch funktionsfähig, bleibt der alte Dachaufbau liegen und die Abdichtung wird erneuert. Zeigt die alte Abdichtung dagegen starke Blasen-, Wellen- oder Rissbildung oder ist sie insgesamt unbrauchbar, muss die gesamte Abdichtung erneuert werden. In der Projektaufgabe S. 558 ist die Dämmschicht ausdrücklich noch funktionstüchtig — deshalb ist dort dieser Weg richtig.",
     "bildDatei": "/buch/lf17/flachdachsanierung-schichten.webp",
     "bildunterschrift": "Flachdachsanierung mit Erhalt des alten Dachaufbaus (Buch S. 561)"
@@ -756,12 +1054,15 @@
     "konfidenz": "hoch",
     "frage": "Womit kann der alte Dachaufbau bei dieser Sanierungsmethode ergänzt werden?",
     "optionen": [
-      "Mit einer zusätzlichen Wärmedämmschicht, unter Umständen mit Gefälle",
       "Mit einer Dachbegrünung",
       "Mit einer zusätzlichen Stahlbetondecke",
-      "Mit einer zweiten Dampfsperre unter der alten Decke"
+      "Mit einer zweiten Dampfsperre unter der alten Decke",
+      "Mit einer zusätzlichen Wärmedämmschicht, unter Umständen mit Gefälle"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      0,
+      3
+    ],
     "erklaerung": "Der alte Aufbau kann um eine zusätzliche Wärmedämmschicht ergänzt werden, unter Umständen mit Gefälle, oder auch um eine Dachbegrünung. Genau das sind die Sanierungsbeispiele 2 (Gefälledämmplatten) und 3 (Gründachaufbau) — zwei verschiedene Wege zum selben Ziel, den geforderten Wärmeschutz zu erreichen.",
     "bildDatei": "/buch/lf17/flachdachsanierung-schichten.webp",
     "bildunterschrift": "Flachdachsanierung mit Erhalt des alten Dachaufbaus (Buch S. 561)"
@@ -775,12 +1076,15 @@
     "konfidenz": "hoch",
     "frage": "Wie wird geprüft, ob die vorhandene Wärmedämmung noch funktionsfähig ist?",
     "optionen": [
+      "Durch Aufschneiden der Abdichtung an mehreren Stellen",
       "Durch spezielle Messmethoden wie radiometrische Messungen mithilfe von Elementarteilchen",
       "Diese Messungen erfolgen zerstörungsfrei von außen",
-      "Durch Aufschneiden der Abdichtung an mehreren Stellen",
       "Durch eine Sichtprüfung des Innenraums"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Es kann notwendig sein, die Durchfeuchtung von Bauteilschichten durch spezielle Messmethoden — radiometrische Messungen mithilfe von Elementarteilchen — von außen zerstörungsfrei zu messen. \"Zerstörungsfrei\" ist der Punkt: Man will die intakte Abdichtung nicht öffnen müssen, nur um nachzusehen, denn jede Öffnung ist eine neue potenzielle Schwachstelle.",
     "bildDatei": "/buch/lf17/flachdachsanierung-schichten.webp",
     "bildunterschrift": "Flachdachsanierung mit Erhalt des alten Dachaufbaus (Buch S. 561)"
@@ -792,11 +1096,25 @@
     "thema": "Instandsetzung bei Erhalt des alten Dachaufbaus",
     "quelle": "Grundstufe Bautechnik, Buch S. 561",
     "konfidenz": "hoch",
-    "text": "Eine Erneuerung der Dachabdichtung erfordert eine sorgfaeltige {{Vorbehandlung}} der schadhaften Abdichtung, wenn diese als {{Unterlage}} dienen soll. Sie kann zur Verbesserung der Waermedaemmung und zur nachtraeglichen Herstellung eines {{Dachgefaelles}} genutzt werden.",
+    "text": "Eine Erneuerung der Dachabdichtung erfordert eine sorgfältige {{Vorbehandlung}} der schadhaften Abdichtung, wenn diese als {{Unterlage}} dienen soll. Sie kann zur Verbesserung der Wärmedämmung und zur nachtraeglichen Herstellung eines {{Dachgefaelles}} genutzt werden.",
     "akzeptiert": {
-      "Vorbehandlung": ["Vorbereitung", "Behandlung"],
-      "Unterlage": ["Untergrund", "Unterlagen"],
-      "Dachgefaelles": ["Dachgefälles", "Dachgefaelle", "Dachgefälle", "Gefaelles", "Gefälles", "Gefaelle", "Gefälle"]
+      "Vorbehandlung": [
+        "Vorbereitung",
+        "Behandlung"
+      ],
+      "Unterlage": [
+        "Untergrund",
+        "Unterlagen"
+      ],
+      "Dachgefaelles": [
+        "Dachgefälles",
+        "Dachgefaelle",
+        "Dachgefälle",
+        "Gefaelles",
+        "Gefälles",
+        "Gefaelle",
+        "Gefälle"
+      ]
     },
     "erklaerung": "Die alte Abdichtung wird zur Unterlage der neuen — deshalb muss sie vorher sauber sein: Blasen, Falten und Wellen aufgeschnitten, Verkrustungen und Schmutzablagerungen entfernt. Der Nebeneffekt der Sanierung ist wertvoll: Weil ohnehin neu aufgebaut wird, lässt sich zugleich der Wärmeschutz verbessern und ein Gefälle herstellen, das das Dach vorher nicht hatte.",
     "bildDatei": "/buch/lf17/flachdachsanierung-schichten.webp",
@@ -811,12 +1129,15 @@
     "konfidenz": "hoch",
     "frage": "Warum darf man eine erneute Blasenbildung nicht dadurch verhindern, dass man die neue Abdichtung vollflächig verklebt?",
     "optionen": [
+      "Weil vollflächige Verklebungen grundsätzlich verboten sind",
       "Weil zwischen alter und neuer Abdichtung eine Dampfdruckausgleichsschicht aufgebaut werden muss",
       "Weil eine vollflächige Verklebung des neuen Belags zu erneuter Blasenbildung führen würde",
-      "Weil vollflächige Verklebungen grundsätzlich verboten sind",
       "Weil die neue Abdichtung sonst nicht hält"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      2
+    ],
     "erklaerung": "Das ist die zentrale Verwechslungsfalle dieses Kapitels: Intuitiv würde man vollflächig verkleben, damit sich nichts mehr abheben kann — aber genau das erzeugt das Problem. In der alten Abdichtung steckt Restfeuchte. Wird sie von der Sonne erwärmt, entsteht Dampfdruck, der nirgendwohin kann und die neue Bahn abhebt. Deshalb braucht es zwischen alter und neuer Abdichtung eine Dampfdruckausgleichsschicht, die den Druck flächig abführt. Im Schichtenbild ist das die Ausgleichsschicht.",
     "bildDatei": "/buch/lf17/flachdachsanierung-schichten.webp",
     "bildunterschrift": "Flachdachsanierung mit Erhalt des alten Dachaufbaus (Buch S. 561)"
@@ -830,12 +1151,16 @@
     "konfidenz": "hoch",
     "frage": "Welche Angaben enthält der Sanierungsplan zum Stallgebäude in Beispiel 1?",
     "optionen": [
-      "Abmessungen 18 × 20 m, Alter 22 Jahre",
-      "Leichter Oberflächenschutz durch Beschieferung",
       "Lichtkuppelelemente sowie Durchdringungen für Lüfter und Dachabläufe, dazu eine Blitzschutzanlage",
-      "Eine 4 cm dicke Wärmedämmung aus Hartschaumplatten"
+      "Leichter Oberflächenschutz durch Beschieferung",
+      "Eine 4 cm dicke Wärmedämmung aus Hartschaumplatten",
+      "Abmessungen 18 × 20 m, Alter 22 Jahre"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
     "erklaerung": "Beispiel 1 ist ein Stallgebäude, 18 × 20 m, 22 Jahre alt, mit leichtem Oberflächenschutz durch Beschieferung, Lichtkuppelelementen, Durchdringungen und Blitzschutzanlage. Die 4 cm Hartschaum-Wärmedämmung gehört zu Beispiel 2, der Turnhalle. Beim Stallgebäude ist eine zusätzliche Wärmedämmung aufgrund der Nutzung gar nicht erforderlich — ein Stall wird nicht auf über 19 °C beheizt, damit greifen die GEG-Anforderungen für beheizte Gebäude nicht.",
     "bildDatei": "/buch/lf17/sanierungsplan-1.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 1, Stallgebäude (Buch S. 561)"
@@ -849,12 +1174,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Schäden wurden in der Voruntersuchung des Stallgebäudes festgestellt?",
     "optionen": [
-      "Verschiedene undichte Stellen in der Abdichtung, vorwiegend im Bereich der Durchdringungen",
-      "In der Fläche stellenweise Risse sowie Faltenbildung",
       "Eine vollständig durchfeuchtete Wärmedämmung",
-      "Undichte Stellen im Bereich der Aufkantung"
+      "In der Fläche stellenweise Risse sowie Faltenbildung",
+      "Undichte Stellen im Bereich der Aufkantung",
+      "Verschiedene undichte Stellen in der Abdichtung, vorwiegend im Bereich der Durchdringungen"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      3
+    ],
     "erklaerung": "Undichte Stellen vorwiegend im Bereich der Durchdringungen, in der Fläche Risse und Faltenbildung. Die Aufkantung ist der Schadensschwerpunkt von Beispiel 2 (Turnhalle) — verwechsle die beiden nicht. Merke dir das Muster: Schäden treten fast immer dort auf, wo die Abdichtungsebene unterbrochen oder abgeknickt wird.",
     "bildDatei": "/buch/lf17/sanierungsplan-1.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 1, Stallgebäude (Buch S. 561)"
@@ -868,12 +1196,36 @@
     "konfidenz": "hoch",
     "aufgabentext": "Das Stallgebäude aus Sanierungsbeispiel 1 misst {laenge} m × {breite} m. Berechne die Dachfläche und die Länge der Dachrandabschlüsse.",
     "parameter": [
-      { "name": "laenge", "label": "Gebäudelänge", "einheit": "m", "min": 20, "max": 20, "schritt": 1 },
-      { "name": "breite", "label": "Gebäudebreite", "einheit": "m", "min": 18, "max": 18, "schritt": 1 }
+      {
+        "name": "laenge",
+        "label": "Gebäudelänge",
+        "einheit": "m",
+        "min": 20,
+        "max": 20,
+        "schritt": 1
+      },
+      {
+        "name": "breite",
+        "label": "Gebäudebreite",
+        "einheit": "m",
+        "min": 18,
+        "max": 18,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Dachfläche = {laenge} m · {breite} m", "formel": "laenge * breite", "ergebnisName": "a_dach", "einheit": "m²" },
-      { "beschreibung": "Länge der Dachrandabschlüsse = Umfang: 2 · ({laenge} m + {breite} m)", "formel": "2 * (laenge + breite)", "ergebnisName": "u", "einheit": "m" }
+      {
+        "beschreibung": "Dachfläche = {laenge} m · {breite} m",
+        "formel": "laenge * breite",
+        "ergebnisName": "a_dach",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Länge der Dachrandabschlüsse = Umfang: 2 · ({laenge} m + {breite} m)",
+        "formel": "2 * (laenge + breite)",
+        "ergebnisName": "u",
+        "einheit": "m"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "18 m · 20 m = 360 m² Dachfläche, Umfang 2 · (18 + 20) = 76 m. Das sind die beiden Grundwerte jeder Massenermittlung am Flachdach: Über die Fläche gehen Abdichtungsbahnen, Dämmplatten und Kies; über den Umfang gehen Dachrandabschlüsse, Randbohlen und Attikableche. Beides muss man getrennt ermitteln.",
@@ -890,11 +1242,13 @@
     "frage": "Welche Arbeit steht in der Arbeitsliste von Sanierungsbeispiel 1 an erster Stelle?",
     "optionen": [
       "Die Demontage der Blitzschutzeinrichtungen",
-      "Das Aufschneiden der Abdichtungsblasen",
+      "Das Herstellen der Dachrandabschlüsse",
       "Die Verlegung einer dünnen Dämmplatte",
-      "Das Herstellen der Dachrandabschlüsse"
+      "Das Aufschneiden der Abdichtungsblasen"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Erst wird die Blitzschutzeinrichtung demontiert, zuletzt wird sie wieder montiert und angeschlossen — sie klammert die ganze Arbeitsliste ein. Das ist bei allen drei Sanierungsbeispielen gleich. Der Grund ist praktisch: Die Blitzschutzanlage liegt auf der Abdichtung, an die man heranmuss, und sie darf beim Aufschweißen der Bahnen nicht im Weg sein.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-1.webp",
     "bildunterschrift": "Erforderliche Arbeiten, Sanierungsbeispiel 1 (Buch S. 562)"
@@ -908,12 +1262,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Funktionen erfüllt die dünne Dämmplatte, die in Beispiel 1 verlegt wird?",
     "optionen": [
+      "Sie ersetzt die Dampfsperre",
       "Sie dient als Ausgleichsschicht zum Dampfdruckausgleich",
-      "Sie schafft eine ebene Unterlage",
       "Sie erfüllt die Wärmeschutzanforderungen des GEG",
-      "Sie ersetzt die Dampfsperre"
+      "Sie schafft eine ebene Unterlage"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      3
+    ],
     "erklaerung": "Die dünne Dämmplatte hat hier eine doppelte Aufgabe, die nichts mit Wärmeschutz zu tun hat: Sie führt den Dampfdruck aus der alten Abdichtung ab und gleicht deren Unebenheiten aus. Beim Stallgebäude ist eine zusätzliche Wärmedämmung aufgrund der Nutzung ausdrücklich nicht erforderlich — die Platte ist trotz ihres Namens keine Wärmedämmmaßnahme.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-1.webp",
     "bildunterschrift": "Erforderliche Arbeiten, Sanierungsbeispiel 1 (Buch S. 562)"
@@ -927,12 +1284,16 @@
     "konfidenz": "hoch",
     "frage": "Welche weiteren Arbeiten nennt die Liste zu Sanierungsbeispiel 1?",
     "optionen": [
-      "Aufschneiden der Abdichtungsblasen und Entfernen von losen Teilen, Verschmutzungen und Verkrustungen",
+      "Verlegung von Dränelementen und Pflanzsubstrat",
       "Aufbringen einer zweilagigen Abdichtung aus Polymerbitumenschweißbahnen mit Beschieferung",
-      "Abdichtung der Lichtkuppeleinfassungen und der Dachgullys",
-      "Verlegung von Dränelementen und Pflanzsubstrat"
+      "Aufschneiden der Abdichtungsblasen und Entfernen von losen Teilen, Verschmutzungen und Verkrustungen",
+      "Abdichtung der Lichtkuppeleinfassungen und der Dachgullys"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Aufschneiden und Reinigen, zweilagige Polymerbitumenschweißbahnen mit Beschieferung, Herstellen der Dachrandabschlüsse, Abdichten von Lichtkuppeleinfassungen und Dachgullys, dann die Blitzschutzanlage. Dränelemente und Pflanzsubstrat gehören zu Beispiel 3, dem Gründachaufbau. Die Beschieferung ist hier folgerichtig, denn das Bestandsdach hatte bereits leichten Oberflächenschutz durch Beschieferung.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-1.webp",
     "bildunterschrift": "Erforderliche Arbeiten, Sanierungsbeispiel 1 (Buch S. 562)"
@@ -951,7 +1312,11 @@
       "Oberflächenschutz 5 cm Kies 16/32",
       "Leichter Oberflächenschutz durch Beschieferung"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Turnhalle, 25 × 50 m, zweilagige Abdichtung, 4 cm Hartschaum-Wärmedämmung, 5 cm Kies der Körnung 16/32, verschiedene Durchdringungen, Blitzschutzanlage, 26 Jahre alt. Die Beschieferung ist der leichte Oberflächenschutz von Beispiel 1 — hier liegt dagegen schwerer Oberflächenschutz aus Kies.",
     "bildDatei": "/buch/lf17/sanierungsplan-2.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 2, Turnhalle (Buch S. 562)"
@@ -965,12 +1330,36 @@
     "konfidenz": "hoch",
     "aufgabentext": "Die Turnhalle aus Sanierungsbeispiel 2 misst {laenge} m × {breite} m. Berechne die Dachfläche und den Umfang für die Dachrandabschlüsse.",
     "parameter": [
-      { "name": "laenge", "label": "Hallenlänge", "einheit": "m", "min": 50, "max": 50, "schritt": 1 },
-      { "name": "breite", "label": "Hallenbreite", "einheit": "m", "min": 25, "max": 25, "schritt": 1 }
+      {
+        "name": "laenge",
+        "label": "Hallenlänge",
+        "einheit": "m",
+        "min": 50,
+        "max": 50,
+        "schritt": 1
+      },
+      {
+        "name": "breite",
+        "label": "Hallenbreite",
+        "einheit": "m",
+        "min": 25,
+        "max": 25,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Dachfläche = {laenge} m · {breite} m", "formel": "laenge * breite", "ergebnisName": "a_dach", "einheit": "m²" },
-      { "beschreibung": "Umfang = 2 · ({laenge} m + {breite} m)", "formel": "2 * (laenge + breite)", "ergebnisName": "u", "einheit": "m" }
+      {
+        "beschreibung": "Dachfläche = {laenge} m · {breite} m",
+        "formel": "laenge * breite",
+        "ergebnisName": "a_dach",
+        "einheit": "m²"
+      },
+      {
+        "beschreibung": "Umfang = 2 · ({laenge} m + {breite} m)",
+        "formel": "2 * (laenge + breite)",
+        "ergebnisName": "u",
+        "einheit": "m"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "25 m · 50 m = 1250 m², Umfang 2 · (25 + 50) = 150 m. Das Dach der Turnhalle ist damit rund 3,5-mal so groß wie das des Stallgebäudes und fast neunmal so groß wie das Wohngebäude der Projektaufgabe. Bei dieser Fläche entscheidet jede Schichtdicke spürbar über die Materialmenge — das zeigt die nächste Aufgabe zur Kiesschüttung.",
@@ -986,12 +1375,36 @@
     "konfidenz": "hoch",
     "aufgabentext": "In der Arbeitsliste zu Beispiel 2 steht das Abräumen der Kiesschicht. Die Turnhalle hat {flaeche} m² Dachfläche, die Kiesschüttung ist {dicke} cm dick. Wie viel Kubikmeter Kies müssen abgeräumt und später wieder aufgebracht werden?",
     "parameter": [
-      { "name": "flaeche", "label": "Dachfläche", "einheit": "m²", "min": 1250, "max": 1250, "schritt": 1 },
-      { "name": "dicke", "label": "Dicke der Kiesschüttung", "einheit": "cm", "min": 5, "max": 5, "schritt": 1 }
+      {
+        "name": "flaeche",
+        "label": "Dachfläche",
+        "einheit": "m²",
+        "min": 1250,
+        "max": 1250,
+        "schritt": 1
+      },
+      {
+        "name": "dicke",
+        "label": "Dicke der Kiesschüttung",
+        "einheit": "cm",
+        "min": 5,
+        "max": 5,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Schichtdicke in Meter: {dicke} cm ÷ 100", "formel": "dicke / 100", "ergebnisName": "d_m", "einheit": "m" },
-      { "beschreibung": "Volumen = Fläche · Dicke", "formel": "flaeche * d_m", "ergebnisName": "v", "einheit": "m³" }
+      {
+        "beschreibung": "Schichtdicke in Meter: {dicke} cm ÷ 100",
+        "formel": "dicke / 100",
+        "ergebnisName": "d_m",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Volumen = Fläche · Dicke",
+        "formel": "flaeche * d_m",
+        "ergebnisName": "v",
+        "einheit": "m³"
+      }
     ],
     "toleranzProzent": 2,
     "erklaerung": "1250 m² · 0,05 m = 62,5 m³ Kies — rund 100 Tonnen, die einmal herunter und wieder hinauf müssen. In der Arbeitsliste stehen deshalb zwei getrennte Positionen: \"Abräumen der Kiesschicht\" ganz am Anfang und \"Wiederaufbringen der Kiesschüttung\" am Ende. Der Kies wird also nicht entsorgt, sondern zwischengelagert und wiederverwendet.",
@@ -1007,12 +1420,15 @@
     "konfidenz": "hoch",
     "frage": "Wie wird bei der Turnhalle in Beispiel 2 der geforderte U-Wert von 0,20 W/(m²·K) erreicht?",
     "optionen": [
-      "Die alte Wärmedämmung ist noch weitgehend funktionsfähig und bleibt liegen",
-      "Zusätzlich werden zweilagige Gefälledämmplatten mit einer Mindestdicke von 16 cm aufgebracht",
       "Die alte Wärmedämmung wird vollständig ausgebaut und ersetzt",
-      "Es wird eine 4 cm dicke Zusatzdämmung aufgebracht"
+      "Die alte Wärmedämmung ist noch weitgehend funktionsfähig und bleibt liegen",
+      "Es wird eine 4 cm dicke Zusatzdämmung aufgebracht",
+      "Zusätzlich werden zweilagige Gefälledämmplatten mit einer Mindestdicke von 16 cm aufgebracht"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      1,
+      3
+    ],
     "erklaerung": "Die alte 4-cm-Dämmung bleibt liegen und wird durch zweilagige Gefälledämmplatten von mindestens 16 cm ergänzt. Zusammen ergibt das 20 cm — und das ist kein Zufall, wie die folgenden Rechenaufgaben zeigen. \"Zweilagig\" bedeutet dabei versetzte Stöße, damit an den Plattenfugen keine durchgehenden Wärmebrücken entstehen.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-2.webp",
     "bildunterschrift": "Sanierung und Arbeiten, Beispiel 2 (Buch S. 562)"
@@ -1026,13 +1442,42 @@
     "konfidenz": "hoch",
     "aufgabentext": "Für Flachdächer fordert das GEG einen U-Wert von höchstens {u_soll} W/(m²·K). Wie dick müsste eine Wärmedämmung mit der Wärmeleitfähigkeit λ = {lambda} W/(m·K) mindestens sein, wenn man vereinfacht nur die Dämmschicht rechnet?",
     "parameter": [
-      { "name": "u_soll", "label": "geforderter U-Wert", "einheit": "W/(m²·K)", "min": 0.2, "max": 0.2, "schritt": 0.01 },
-      { "name": "lambda", "label": "Wärmeleitfähigkeit der Dämmung", "einheit": "W/(m·K)", "min": 0.035, "max": 0.035, "schritt": 0.001 }
+      {
+        "name": "u_soll",
+        "label": "geforderter U-Wert",
+        "einheit": "W/(m²·K)",
+        "min": 0.2,
+        "max": 0.2,
+        "schritt": 0.01
+      },
+      {
+        "name": "lambda",
+        "label": "Wärmeleitfähigkeit der Dämmung",
+        "einheit": "W/(m·K)",
+        "min": 0.035,
+        "max": 0.035,
+        "schritt": 0.001
+      }
     ],
     "schritte": [
-      { "beschreibung": "Erforderlicher Wärmedurchlasswiderstand: R = 1 ÷ U", "formel": "1 / u_soll", "ergebnisName": "r", "einheit": "m²K/W" },
-      { "beschreibung": "Erforderliche Dämmdicke: d = λ · R", "formel": "lambda * r", "ergebnisName": "d_m", "einheit": "m" },
-      { "beschreibung": "Umrechnen in Zentimeter", "formel": "d_m * 100", "ergebnisName": "d_cm", "einheit": "cm" }
+      {
+        "beschreibung": "Erforderlicher Wärmedurchlasswiderstand: R = 1 ÷ U",
+        "formel": "1 / u_soll",
+        "ergebnisName": "r",
+        "einheit": "m²K/W"
+      },
+      {
+        "beschreibung": "Erforderliche Dämmdicke: d = λ · R",
+        "formel": "lambda * r",
+        "ergebnisName": "d_m",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Umrechnen in Zentimeter",
+        "formel": "d_m * 100",
+        "ergebnisName": "d_cm",
+        "einheit": "cm"
+      }
     ],
     "toleranzProzent": 3,
     "erklaerung": "R = 1 ÷ 0,20 = 5,0 m²K/W, daraus d = 0,035 · 5,0 = 0,175 m = 17,5 cm. Wichtig: Die Wärmeleitfähigkeit λ = 0,035 W/(m·K) steht nicht im Buch — sie ist hier als typischer Wert für Hartschaum-Dämmplatten angenommen, damit die Rechnung durchführbar wird. Der geforderte U-Wert von 0,20 dagegen steht in der GEG-Tabelle auf S. 563. Die Rechnung ist zudem vereinfacht: Wärmeübergangswiderstände und die übrigen Schichten sind vernachlässigt, sie würden das Ergebnis noch etwas günstiger machen.",
@@ -1048,15 +1493,56 @@
     "konfidenz": "hoch",
     "aufgabentext": "Bei der Turnhalle bleiben die vorhandenen {d_alt} cm Wärmedämmung liegen und werden durch Gefälledämmplatten von mindestens {d_neu} cm ergänzt. Welchen U-Wert ergibt das bei λ = {lambda} W/(m·K)?",
     "parameter": [
-      { "name": "d_alt", "label": "vorhandene Wärmedämmung", "einheit": "cm", "min": 4, "max": 4, "schritt": 1 },
-      { "name": "d_neu", "label": "neue Gefälledämmplatten", "einheit": "cm", "min": 16, "max": 16, "schritt": 1 },
-      { "name": "lambda", "label": "Wärmeleitfähigkeit der Dämmung", "einheit": "W/(m·K)", "min": 0.035, "max": 0.035, "schritt": 0.001 }
+      {
+        "name": "d_alt",
+        "label": "vorhandene Wärmedämmung",
+        "einheit": "cm",
+        "min": 4,
+        "max": 4,
+        "schritt": 1
+      },
+      {
+        "name": "d_neu",
+        "label": "neue Gefälledämmplatten",
+        "einheit": "cm",
+        "min": 16,
+        "max": 16,
+        "schritt": 1
+      },
+      {
+        "name": "lambda",
+        "label": "Wärmeleitfähigkeit der Dämmung",
+        "einheit": "W/(m·K)",
+        "min": 0.035,
+        "max": 0.035,
+        "schritt": 0.001
+      }
     ],
     "schritte": [
-      { "beschreibung": "Gesamte Dämmdicke: {d_alt} cm + {d_neu} cm", "formel": "d_alt + d_neu", "ergebnisName": "d_ges_cm", "einheit": "cm" },
-      { "beschreibung": "Umrechnen in Meter", "formel": "d_ges_cm / 100", "ergebnisName": "d_ges", "einheit": "m" },
-      { "beschreibung": "Wärmedurchlasswiderstand: R = d ÷ λ", "formel": "d_ges / lambda", "ergebnisName": "r", "einheit": "m²K/W" },
-      { "beschreibung": "Wärmedurchgangskoeffizient: U = 1 ÷ R", "formel": "1 / r", "ergebnisName": "u", "einheit": "W/(m²·K)" }
+      {
+        "beschreibung": "Gesamte Dämmdicke: {d_alt} cm + {d_neu} cm",
+        "formel": "d_alt + d_neu",
+        "ergebnisName": "d_ges_cm",
+        "einheit": "cm"
+      },
+      {
+        "beschreibung": "Umrechnen in Meter",
+        "formel": "d_ges_cm / 100",
+        "ergebnisName": "d_ges",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Wärmedurchlasswiderstand: R = d ÷ λ",
+        "formel": "d_ges / lambda",
+        "ergebnisName": "r",
+        "einheit": "m²K/W"
+      },
+      {
+        "beschreibung": "Wärmedurchgangskoeffizient: U = 1 ÷ R",
+        "formel": "1 / r",
+        "ergebnisName": "u",
+        "einheit": "W/(m²·K)"
+      }
     ],
     "toleranzProzent": 3,
     "erklaerung": "4 cm + 16 cm = 20 cm = 0,20 m. R = 0,20 ÷ 0,035 = 5,71 m²K/W, U = 1 ÷ 5,71 = 0,175 W/(m²·K). Das liegt unter der Höchstgrenze von 0,20 — die Anforderung ist erfüllt. Hier zeigt sich, warum das Buch die alte Dämmung ausdrücklich liegen lässt: Die 16 cm neue Dämmung allein reichen nicht, wie die nächste Aufgabe zeigt. Die 4 cm Bestand sind rechnerisch notwendig. λ = 0,035 ist wieder eine Annahme, das Buch nennt keinen Wert.",
@@ -1072,13 +1558,42 @@
     "konfidenz": "hoch",
     "aufgabentext": "Gegenprobe: Angenommen, die alte Wärmedämmung wäre unbrauchbar und man verlegte nur die {d_neu} cm Gefälledämmplatten. Welcher U-Wert ergäbe sich bei λ = {lambda} W/(m·K)?",
     "parameter": [
-      { "name": "d_neu", "label": "neue Gefälledämmplatten", "einheit": "cm", "min": 16, "max": 16, "schritt": 1 },
-      { "name": "lambda", "label": "Wärmeleitfähigkeit der Dämmung", "einheit": "W/(m·K)", "min": 0.035, "max": 0.035, "schritt": 0.001 }
+      {
+        "name": "d_neu",
+        "label": "neue Gefälledämmplatten",
+        "einheit": "cm",
+        "min": 16,
+        "max": 16,
+        "schritt": 1
+      },
+      {
+        "name": "lambda",
+        "label": "Wärmeleitfähigkeit der Dämmung",
+        "einheit": "W/(m·K)",
+        "min": 0.035,
+        "max": 0.035,
+        "schritt": 0.001
+      }
     ],
     "schritte": [
-      { "beschreibung": "Dämmdicke in Meter: {d_neu} cm ÷ 100", "formel": "d_neu / 100", "ergebnisName": "d_m", "einheit": "m" },
-      { "beschreibung": "Wärmedurchlasswiderstand: R = d ÷ λ", "formel": "d_m / lambda", "ergebnisName": "r", "einheit": "m²K/W" },
-      { "beschreibung": "Wärmedurchgangskoeffizient: U = 1 ÷ R", "formel": "1 / r", "ergebnisName": "u", "einheit": "W/(m²·K)" }
+      {
+        "beschreibung": "Dämmdicke in Meter: {d_neu} cm ÷ 100",
+        "formel": "d_neu / 100",
+        "ergebnisName": "d_m",
+        "einheit": "m"
+      },
+      {
+        "beschreibung": "Wärmedurchlasswiderstand: R = d ÷ λ",
+        "formel": "d_m / lambda",
+        "ergebnisName": "r",
+        "einheit": "m²K/W"
+      },
+      {
+        "beschreibung": "Wärmedurchgangskoeffizient: U = 1 ÷ R",
+        "formel": "1 / r",
+        "ergebnisName": "u",
+        "einheit": "W/(m²·K)"
+      }
     ],
     "toleranzProzent": 3,
     "erklaerung": "R = 0,16 ÷ 0,035 = 4,57 m²K/W, U = 1 ÷ 4,57 = 0,219 W/(m²·K) — das liegt über der Höchstgrenze von 0,20 und wäre nicht zulässig. Damit ist gezeigt, warum das Buch bei der Turnhalle beide Schichten braucht: Die 16 cm sind die Mindestdicke der neuen Platten, nicht der Gesamtaufbau. Vernachlässigt sind hier wie zuvor die Wärmeübergangswiderstände; sie verbessern das Ergebnis leicht, ändern die Größenordnung aber nicht.",
@@ -1094,12 +1609,15 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen bei Beispiel 2 die Dachränder erhöht und die Dachabläufe und Lüfter angepasst werden?",
     "optionen": [
-      "Weil der Dachaufbau durch die zusätzlichen Gefälledämmplatten um mindestens 16 cm höher wird",
-      "Weil die Abläufe und Lüfter sonst unterhalb der neuen Abdichtungsebene lägen",
       "Weil das GEG eine bestimmte Attikahöhe vorschreibt",
-      "Weil die Blitzschutzanlage höher montiert werden muss"
+      "Weil die Blitzschutzanlage höher montiert werden muss",
+      "Weil der Dachaufbau durch die zusätzlichen Gefälledämmplatten um mindestens 16 cm höher wird",
+      "Weil die Abläufe und Lüfter sonst unterhalb der neuen Abdichtungsebene lägen"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      2,
+      3
+    ],
     "erklaerung": "Wächst der Aufbau um 16 cm oder mehr, wandert die gesamte Abdichtungsebene nach oben. Die alte Attika wäre dann zu niedrig — die Abdichtung könnte nicht mehr ausreichend hochgeführt werden, und Wasser liefe über den Rand. Ebenso säßen Dachabläufe und Lüfter plötzlich unterhalb der neuen Ebene. Beide Punkte stehen deshalb ausdrücklich in der Arbeitsliste. Das GEG regelt U-Werte, keine Attikahöhen.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-2.webp",
     "bildunterschrift": "Sanierung und Arbeiten, Beispiel 2 (Buch S. 562)"
@@ -1113,12 +1631,16 @@
     "konfidenz": "hoch",
     "frage": "Welche Arbeiten nennt die Liste zu Sanierungsbeispiel 2?",
     "optionen": [
-      "Verlegung einer Trennlage und der Kunststoffdachdichtungsbahnen",
+      "Aufbringen von Pflanzsubstrat und Pflanzen",
       "Ausbildung der Dachrandabschlüsse mit einer Dachrandabdeckung",
-      "Wiederaufbringen der Kiesschüttung",
-      "Aufbringen von Pflanzsubstrat und Pflanzen"
+      "Verlegung einer Trennlage und der Kunststoffdachdichtungsbahnen",
+      "Wiederaufbringen der Kiesschüttung"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Trennlage, Kunststoffdachdichtungsbahnen, Dachrandabschlüsse mit Dachrandabdeckung, Wiederaufbringen der Kiesschüttung, zuletzt die Blitzschutzeinrichtung. Pflanzsubstrat und Pflanzen gehören zu Beispiel 3, dem Gründachaufbau. Die Trennlage ist übrigens nötig, weil sich Kunststoffbahnen und die bituminöse Altabdichtung chemisch nicht vertragen — Weichmacher würden wandern und die Kunststoffbahn schädigen.",
     "bildDatei": "/buch/lf17/arbeiten-beispiel-2.webp",
     "bildunterschrift": "Sanierung und Arbeiten, Beispiel 2 (Buch S. 562)"
@@ -1132,12 +1654,14 @@
     "konfidenz": "hoch",
     "frage": "Wodurch wird bei Sanierungsbeispiel 3 der vorgeschriebene Wärmeschutz erreicht?",
     "optionen": [
+      "Durch eine zusätzliche Dampfsperre",
       "Durch einen wärmedämmenden Gründachaufbau",
-      "Durch zweilagige Gefälledämmplatten von mindestens 16 cm",
       "Durch eine dickere Kiesschüttung",
-      "Durch eine zusätzliche Dampfsperre"
+      "Durch zweilagige Gefälledämmplatten von mindestens 16 cm"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Beispiel 3 betrifft dieselbe Turnhalle wie Beispiel 2, wählt aber einen anderen Weg zum selben Ziel: einen wärmedämmenden Gründachaufbau statt der Gefälledämmplatten. Das ist die Kernaussage des Beispielpaares — für eine Wärmeschutzanforderung gibt es mehrere technisch zulässige Lösungen, und die Entscheidung fällt nach Kosten, Nutzung und Wunsch des Bauherrn.",
     "bildDatei": "/buch/lf17/sanierungsplan-3.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 3, Gründachaufbau (Buch S. 563)"
@@ -1152,11 +1676,15 @@
     "frage": "Welche Arbeiten kommen bei Beispiel 3 gegenüber Beispiel 2 zusätzlich hinzu?",
     "optionen": [
       "Verlegung einer zweiten Abdichtungsebene mit Wurzelschutzbahnen",
-      "Verlegung von Dränelementen",
       "Aufbringen von Pflanzsubstrat und Pflanzen",
+      "Verlegung von Dränelementen",
       "Abräumen der Kiesschicht"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
     "erklaerung": "Neu sind die Wurzelschutzbahnen als zweite Abdichtungsebene, die Dränelemente und das Pflanzsubstrat mit Bepflanzung. Das Abräumen der Kiesschicht steht in beiden Listen. Die drei Zusätze bilden zusammen die Logik eines Gründachs: Der Wurzelschutz hält Wurzeln von der Abdichtung fern, die Dränelemente führen überschüssiges Wasser ab, damit die Pflanzen nicht ersticken.",
     "bildDatei": "/buch/lf17/sanierungsplan-3.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 3, Gründachaufbau (Buch S. 563)"
@@ -1171,11 +1699,13 @@
     "frage": "Womit werden die Dachrandabschlüsse bei Beispiel 3 ausgebildet?",
     "optionen": [
       "Mit Kiesstreifen und einer Dachrandabdeckung",
-      "Nur mit einer Dachrandabdeckung",
       "Mit Pflanzsubstrat bis an den Rand",
-      "Mit einer Blechverwahrung ohne Kiesstreifen"
+      "Mit einer Blechverwahrung ohne Kiesstreifen",
+      "Nur mit einer Dachrandabdeckung"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Bei Beispiel 3 werden die Dachrandabschlüsse mit Kiesstreifen und einer Dachrandabdeckung ausgebildet. Der Kiesstreifen am Rand hat bei einem Gründach eine eigene Aufgabe: Er hält den Bewuchs vom Anschluss fern. Bei Beispiel 2 nennt die Liste nur die Dachrandabdeckung — dort liegt ohnehin Kies auf der ganzen Fläche.",
     "bildDatei": "/buch/lf17/sanierungsplan-3.webp",
     "bildunterschrift": "Sanierungsplan Beispiel 3, Gründachaufbau (Buch S. 563)"
@@ -1189,12 +1719,15 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter einer Komplettsanierung?",
     "optionen": [
-      "Der alte Dachaufbau wird vollständig abgerissen und durch einen neuen Aufbau ersetzt",
       "Alle Schichten werden erneuert, weil ein Großteil der Wärmedämmung durchfeuchtet und unbrauchbar geworden ist",
+      "Der alte Dachaufbau wird vollständig abgerissen und durch einen neuen Aufbau ersetzt",
       "Nur die Abdichtung wird erneuert",
       "Der alte Dachaufbau bleibt erhalten und wird ergänzt"
     ],
-    "korrekt": [0, 1],
+    "korrekt": [
+      0,
+      1
+    ],
     "erklaerung": "Bei der Komplettsanierung wird der alte Dachaufbau vollständig abgerissen und durch einen neuen ersetzt. Das ist die Alternative zu 17.2.3, wo der alte Aufbau erhalten bleibt. Der Auslöser ist fast immer die Wärmedämmung: Ist ein Großteil durchfeuchtet und unbrauchbar geworden, hilft kein Ergänzen mehr.",
     "bildDatei": "/buch/lf17/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 17 (Buch S. 563)"
@@ -1210,10 +1743,14 @@
     "optionen": [
       "Es entstehen keine hohen Kosten durch Abriss und Entsorgung des Altmaterials",
       "Es entstehen keine Kosten für den Neuaufbau aller Schichten",
-      "Die Komplettsanierung führt dagegen zu technisch einwandfreien Lösungen",
-      "Der Erhalt des alten Aufbaus ist immer die technisch bessere Lösung"
+      "Der Erhalt des alten Aufbaus ist immer die technisch bessere Lösung",
+      "Die Komplettsanierung führt dagegen zu technisch einwandfreien Lösungen"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
     "erklaerung": "Das Buch stellt die Abwägung ehrlich dar: Komplettsanierungen führen zu technisch einwandfreien Lösungen — dem stehen aber hohe Kosten durch Abriss, Entsorgung des Altmaterials und den Neuaufbau gegenüber. Der Erhalt spart diese Kosten, ist aber nicht pauschal die bessere Lösung. Er setzt voraus, dass die vorhandene Dämmung noch funktionsfähig ist.",
     "bildDatei": "/buch/lf17/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 17 (Buch S. 563)"
@@ -1227,12 +1764,16 @@
     "konfidenz": "hoch",
     "frage": "Wann müssen bei einer Sanierung die gesetzlichen Bestimmungen zum Wärmeschutz nach dem GEG beachtet werden?",
     "optionen": [
-      "Bei der Erneuerung der Dachabdichtung",
-      "Bei einer Komplettsanierung",
       "Nur bei Flachdächern und Steildächern über beheizten Räumen",
-      "Bei jeder Reparatur einer einzelnen Schadstelle"
+      "Bei der Erneuerung der Dachabdichtung",
+      "Bei jeder Reparatur einer einzelnen Schadstelle",
+      "Bei einer Komplettsanierung"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
     "erklaerung": "Sowohl bei der Erneuerung der Dachabdichtung als auch bei der Komplettsanierung gilt das GEG von 2020, und zwar für Flachdächer und Steildächer über beheizten Räumen. Über unbeheizten Räumen greift die Anforderung nicht — deshalb braucht das Stallgebäude in Beispiel 1 keine zusätzliche Dämmung. Eine einzelne Reparaturstelle löst die Anforderung ebenfalls nicht aus.",
     "bildDatei": "/buch/lf17/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 17 (Buch S. 563)"
@@ -1246,13 +1787,44 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Dachinspektionsvertrag sieht Inspektionen ab dem {start}. Jahr in Zeitabständen von {abstand} Jahren vor. Wie viele Inspektionen sind bis zum Alter von {alter} Jahren fällig geworden?",
     "parameter": [
-      { "name": "start", "label": "erstes Inspektionsjahr", "einheit": "Jahr", "min": 6, "max": 6, "schritt": 1 },
-      { "name": "abstand", "label": "Zeitabstand", "einheit": "Jahre", "min": 2, "max": 3, "schritt": 1 },
-      { "name": "alter", "label": "Alter des Daches", "einheit": "Jahre", "min": 10, "max": 30, "schritt": 1 }
+      {
+        "name": "start",
+        "label": "erstes Inspektionsjahr",
+        "einheit": "Jahr",
+        "min": 6,
+        "max": 6,
+        "schritt": 1
+      },
+      {
+        "name": "abstand",
+        "label": "Zeitabstand",
+        "einheit": "Jahre",
+        "min": 2,
+        "max": 3,
+        "schritt": 1
+      },
+      {
+        "name": "alter",
+        "label": "Alter des Daches",
+        "einheit": "Jahre",
+        "min": 10,
+        "max": 30,
+        "schritt": 1
+      }
     ],
     "schritte": [
-      { "beschreibung": "Zeitraum ab der ersten Inspektion: {alter} − {start}", "formel": "alter - start", "ergebnisName": "spanne", "einheit": "Jahre" },
-      { "beschreibung": "Anzahl: abgerundet (spanne ÷ {abstand}) plus 1 für die erste Inspektion", "formel": "floor(spanne / abstand) + 1", "ergebnisName": "anzahl", "einheit": "Inspektionen" }
+      {
+        "beschreibung": "Zeitraum ab der ersten Inspektion: {alter} − {start}",
+        "formel": "alter - start",
+        "ergebnisName": "spanne",
+        "einheit": "Jahre"
+      },
+      {
+        "beschreibung": "Anzahl: abgerundet (spanne ÷ {abstand}) plus 1 für die erste Inspektion",
+        "formel": "floor(spanne / abstand) + 1",
+        "ergebnisName": "anzahl",
+        "einheit": "Inspektionen"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Beispiel für das 24 Jahre alte Dach der Projektaufgabe bei 3 Jahren Abstand: (24 − 6) ÷ 3 = 6, plus die erste Inspektion im 6. Jahr ergibt 7 Termine (Jahre 6, 9, 12, 15, 18, 21, 24). Die \"+ 1\" ist der klassische Zaunpfahl-Fehler: Zwischen sieben Terminen liegen nur sechs Abstände. Bei 2 Jahren Abstand wären es 10 Inspektionen.",
@@ -1268,12 +1840,14 @@
     "konfidenz": "hoch",
     "frage": "Welchen maximalen Wärmedurchgangskoeffizienten schreibt das GEG von 2020 für Flachdächer vor?",
     "optionen": [
-      "0,20 W/(m²·K)",
-      "0,24 W/(m²·K)",
+      "1,40 W/(m²·K)",
       "1,30 W/(m²·K)",
-      "1,40 W/(m²·K)"
+      "0,24 W/(m²·K)",
+      "0,20 W/(m²·K)"
     ],
-    "korrekt": [0],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Flachdächer: 0,20 W/(m²·K) — der strengste Wert der ganzen Tabelle. Decken, Dächer und Dachschrägen dürfen dagegen 0,24 haben. Der Unterschied hat einen praktischen Grund: Beim Flachdach lässt sich die Dämmdicke frei wählen, beim Steildach begrenzt die Sparrenhöhe den Platz.",
     "bildDatei": "/buch/lf17/geg-tabelle.webp",
     "bildunterschrift": "GEG-Höchstwerte der Wärmedurchgangskoeffizienten (Buch S. 563)"
@@ -1287,12 +1861,16 @@
     "konfidenz": "hoch",
     "frage": "Ordne die GEG-Höchstwerte richtig zu.",
     "optionen": [
+      "Dachflächenfenster: 1,30 W/(m²·K)",
       "Außenwände: 0,24 W/(m²·K)",
-      "Außen liegende Fenster und Fenstertüren: 1,30 W/(m²·K)",
       "Dachflächenfenster: 1,40 W/(m²·K)",
-      "Dachflächenfenster: 1,30 W/(m²·K)"
+      "Außen liegende Fenster und Fenstertüren: 1,30 W/(m²·K)"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Außenwände 0,24, außen liegende Fenster und Fenstertüren 1,30, Dachflächenfenster 1,40, Decken/Dächer/Dachschrägen 0,24, Flachdächer 0,20. Dachflächenfenster dürfen etwas mehr Wärme durchlassen als senkrechte Fenster — der schräge Einbau und die Anschlusssituation machen sie bauphysikalisch schwieriger. Merke dir die Größenordnung: Fenster liegen um den Faktor 5 bis 7 über den geschlossenen Bauteilen.",
     "bildDatei": "/buch/lf17/geg-tabelle.webp",
     "bildunterschrift": "GEG-Höchstwerte der Wärmedurchgangskoeffizienten (Buch S. 563)"
@@ -1304,11 +1882,21 @@
     "thema": "GEG-Anforderungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 563 (GEG-Tabelle)",
     "konfidenz": "hoch",
-    "text": "Werden Aussenbauteile von bestehenden Gebaeuden veraendert, ersetzt oder erneuert, duerfen bestimmte Hoechstwerte der Waermedurchgangskoeffizienten nicht {{ueberschritten}} werden. Die Werte gelten fuer {{beheizte}} Gebaeude mit normalen Innentemperaturen von mehr als {{19}} Grad Celsius.",
+    "text": "Werden Aussenbauteile von bestehenden Gebäuden verändert, ersetzt oder erneuert, dürfen bestimmte Höchstwerte der Waermedurchgangskoeffizienten nicht {{überschritten}} werden. Die Werte gelten für {{beheizte}} Gebäude mit normalen Innentemperaturen von mehr als {{19}} Grad Celsius.",
     "akzeptiert": {
-      "ueberschritten": ["überschritten", "uberschritten"],
-      "beheizte": ["beheizt", "geheizte", "geheizt"],
-      "19": ["19 Grad", "neunzehn"]
+      "19": [
+        "19 Grad",
+        "neunzehn"
+      ],
+      "ueberschritten": [
+        "überschritten",
+        "uberschritten"
+      ],
+      "beheizte": [
+        "beheizt",
+        "geheizte",
+        "geheizt"
+      ]
     },
     "erklaerung": "Die Grenze von 19 °C entscheidet, ob die Anforderungen überhaupt gelten. Deshalb braucht das Stallgebäude in Beispiel 1 keine zusätzliche Dämmung, die Turnhalle in Beispiel 2 dagegen schon. Beachte auch die drei Auslöser: verändert, ersetzt oder erneuert — eine reine Reparatur einer Schadstelle ist keiner davon.",
     "bildDatei": "/buch/lf17/geg-tabelle.webp",
@@ -1323,12 +1911,16 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für die Pflege und Wartung von Wandbekleidungen?",
     "optionen": [
-      "Sie sollten in regelmäßigen Abständen auf Beschädigungen überprüft werden",
-      "Für Ausbesserungsarbeiten gelten sinngemäß die Grundsätze für Reparaturen am Dach",
+      "Wandbekleidungen sind wartungsfrei",
       "Das Reinigungsmittel muss auf seine Verträglichkeit mit dem Material der Wandbekleidung überprüft sein",
-      "Wandbekleidungen sind wartungsfrei"
+      "Sie sollten in regelmäßigen Abständen auf Beschädigungen überprüft werden",
+      "Für Ausbesserungsarbeiten gelten sinngemäß die Grundsätze für Reparaturen am Dach"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      1,
+      2,
+      3
+    ],
     "erklaerung": "Für Wandbekleidungen gelten dieselben Grundsätze wie am Dach. Der eigene Punkt ist das Reinigungsmittel: Werden Schmutzablagerungen aus Abgas- oder Staubbelastung oder mutwillige Verschmutzungen beseitigt, muss das Mittel zur Verträglichkeit mit dem Material überprüft sein. Ein zu scharfer Reiniger richtet sonst mehr Schaden an als der Schmutz.",
     "bildDatei": "/buch/lf17/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 17 (Buch S. 563)"
@@ -1342,12 +1934,16 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 10: In welchen Fällen werden durch eine Sanierung neue Funktionsschichten eingebaut?",
     "optionen": [
-      "Eine Ausgleichsschicht zum Dampfdruckausgleich, wenn die alte Abdichtung als Unterlage dient",
       "Gefälledämmplatten, wenn nachträglich ein Gefälle hergestellt und der U-Wert verbessert werden soll",
       "Wurzelschutzbahnen und Dränelemente, wenn ein Gründachaufbau entsteht",
-      "Eine zweite Stahlbetondecke zur Lastverteilung"
+      "Eine zweite Stahlbetondecke zur Lastverteilung",
+      "Eine Ausgleichsschicht zum Dampfdruckausgleich, wenn die alte Abdichtung als Unterlage dient"
     ],
-    "korrekt": [0, 1, 2],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
     "erklaerung": "Alle drei Beispiele stehen in den Sanierungsplänen: die Ausgleichsschicht in Beispiel 1, die Gefälledämmplatten in Beispiel 2, Wurzelschutzbahnen und Dränelemente in Beispiel 3. Gemeinsam ist ihnen, dass sie im alten Aufbau gar nicht vorkamen — die Sanierung erneuert also nicht nur, sie erweitert die Funktion des Daches. Eine zweite Stahlbetondecke gehört nicht dazu; die Tragkonstruktion bleibt bei allen drei Beispielen unangetastet.",
     "bildDatei": "/buch/lf17/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 17 (Buch S. 563)"
@@ -1361,7 +1957,11 @@
     "konfidenz": "hoch",
     "begriff": "Gefälledämmplatte",
     "definition": "Eine keilförmig zugeschnittene Wärmedämmplatte, die zwei Aufgaben zugleich erfüllt: Sie verbessert den Wärmeschutz und stellt gleichzeitig ein Gefälle her, damit Niederschlagswasser zu den Dachabläufen fließt. Bei Sanierungsbeispiel 2 werden sie zweilagig mit einer Mindestdicke von 16 cm auf die vorhandene Dämmung aufgebracht.",
-    "bestandteile": ["Gefälle", "dämm", "platte"],
+    "bestandteile": [
+      "Gefälle",
+      "dämm",
+      "platte"
+    ],
     "erklaerung": "Der Name verrät die Doppelfunktion. Beim Bestandsdach kommt sie besonders oft zum Einsatz, weil ein nachträgliches Gefälle über die Tragkonstruktion praktisch nicht herstellbar wäre — man müsste die Decke abreißen. Die Folge des Aufbaus muss man mitdenken: Die Dachränder müssen erhöht und die Dachabläufe angepasst werden, weil die Abdichtungsebene nach oben wandert.",
     "bildDatei": "/buch/lf17/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 17 (Buch S. 563)"
@@ -1373,10 +1973,17 @@
     "thema": "Zusammenfassung",
     "quelle": "Grundstufe Bautechnik, Buch S. 563 (Zusammenfassung)",
     "konfidenz": "hoch",
-    "text": "Bei der {{Teilsanierung}} werden beschaedigte Stellen repariert und neu abgedichtet. Bei der {{Komplettsanierung}} wird der alte Dachaufbau vollstaendig abgerissen und durch einen neuen Aufbau ersetzt.",
+    "text": "Bei der {{Teilsanierung}} werden beschädigte Stellen repariert und neu abgedichtet. Bei der {{Komplettsanierung}} wird der alte Dachaufbau vollständig abgerissen und durch einen neuen Aufbau ersetzt.",
     "akzeptiert": {
-      "Teilsanierung": ["Teil-Sanierung", "Teilsanierungen"],
-      "Komplettsanierung": ["Komplett-Sanierung", "Komplettsanierungen", "Vollsanierung"]
+      "Teilsanierung": [
+        "Teil-Sanierung",
+        "Teilsanierungen"
+      ],
+      "Komplettsanierung": [
+        "Komplett-Sanierung",
+        "Komplettsanierungen",
+        "Vollsanierung"
+      ]
     },
     "erklaerung": "Zwischen diesen beiden Polen liegt die Instandsetzung bei Erhalt des alten Dachaufbaus: Dort bleibt der Aufbau liegen, die Abdichtung wird aber vollständig erneuert und meist um neue Schichten ergänzt. Damit gibt es drei Stufen, nicht zwei — und die mittlere ist in der Praxis die häufigste.",
     "bildDatei": "/buch/lf17/aufgaben-buch.webp",

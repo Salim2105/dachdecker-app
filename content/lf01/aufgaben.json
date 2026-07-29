@@ -8,12 +8,14 @@
     "konfidenz": "hoch",
     "frage": "Wie lange dauert die Ausbildung zur Dachdeckerin/zum Dachdecker und wie ist sie aufgebaut?",
     "optionen": [
+      "4 Jahre, dual",
       "2 Jahre, rein schulisch",
       "3 Jahre, dual (Betrieb und Berufsschule)",
-      "3,5 Jahre, rein betrieblich",
-      "4 Jahre, dual"
+      "3,5 Jahre, rein betrieblich"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Die Ausbildung dauert drei Jahre und erfolgt dual: theoretische Kenntnisse in der Berufsschule, praktische Fertigkeiten im Betrieb, ergänzt durch überbetriebliche Ausbildungsstätten."
   },
   {
@@ -26,7 +28,12 @@
     "konfidenz": "hoch",
     "begriff": "VOB",
     "definition": "Vergabe- und Vertragsordnung für Bauleistungen. Sie regelt die Abrechnung: Der Unternehmer muss Art und Umfang seiner Leistung prüfbar nachweisen (Massenberechnungen, Zeichnungen).",
-    "bestandteile": ["Vergabe", "und", "Vertrags", "ordnung"]
+    "bestandteile": [
+      "Vergabe",
+      "und",
+      "Vertrags",
+      "ordnung"
+    ]
   },
   {
     "id": "lf01-003",
@@ -40,11 +47,13 @@
     "frage": "Was muss beim Kranbetrieb im Schwenkbereich des Krans liegen?",
     "optionen": [
       "Die Unterkünfte der Arbeiter",
-      "Das Bauwerk und das Lager schwerer Baustoffe",
+      "Der Zimmerplatz",
       "Der Oberboden",
-      "Der Zimmerplatz"
+      "Das Bauwerk und das Lager schwerer Baustoffe"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Im Schwenkbereich müssen das Bauwerk, das Lager für schwere Baustoffe (Stahl, Steine, Fertigteile) und ein Teil der Zufahrt als Ladezone liegen. Unterkünfte, Zimmerplatz und Oberboden gehören außerhalb des Schwenkbereichs."
   },
   {
@@ -56,10 +65,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Bauwinkel wird im Verhältnis 3 : 4 : 5 abgesteckt, um einen rechten Winkel zu erhalten. Die kurze Seite ist {faktor}·3 m, die zweite Seite {faktor}·4 m lang. Wie lang muss die Hypotenuse (dritte Seite) sein?",
     "parameter": [
-      { "name": "faktor", "label": "Faktor", "einheit": "", "min": 1, "max": 3, "schritt": 0.5 }
+      {
+        "name": "faktor",
+        "label": "Faktor",
+        "einheit": "",
+        "min": 1,
+        "max": 3,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
-      { "beschreibung": "Satz des Pythagoras: aus den Katheten 3·{faktor} m und 4·{faktor} m folgt die Hypotenuse", "formel": "sqrt((3*faktor)^2 + (4*faktor)^2)", "ergebnisName": "hypotenuse", "einheit": "m" }
+      {
+        "beschreibung": "Satz des Pythagoras: aus den Katheten 3·{faktor} m und 4·{faktor} m folgt die Hypotenuse",
+        "formel": "sqrt((3*faktor)^2 + (4*faktor)^2)",
+        "ergebnisName": "hypotenuse",
+        "einheit": "m"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Das Verhältnis 3 : 4 : 5 ergibt immer einen rechten Winkel, weil 3² + 4² = 5² (9 + 16 = 25). Die Hypotenuse ist stets das 5-fache des Faktors."
@@ -76,11 +97,13 @@
     "frage": "Mit welcher Linienart werden verdeckte Kanten und Umrisse von Bauteilen gezeichnet?",
     "optionen": [
       "Schmale Volllinie",
+      "Schmale Punktlinie",
       "Breite Strichlinie",
-      "Schmale Strichpunktlinie",
-      "Schmale Punktlinie"
+      "Schmale Strichpunktlinie"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Verdeckte Kanten und Umrisse werden nach DIN ISO 128-23 mit einer breiten Strichlinie gezeichnet. Die schmale Strichpunktlinie ist für Mittel- und Symmetrielinien reserviert."
   },
   {
@@ -92,11 +115,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "In einem Dreieck sind zwei Innenwinkel bekannt: α = {alpha}° und β = {beta}°. Wie groß ist der dritte Winkel γ?",
     "parameter": [
-      { "name": "alpha", "label": "Winkel α", "einheit": "°", "min": 30, "max": 80, "schritt": 5 },
-      { "name": "beta", "label": "Winkel β", "einheit": "°", "min": 30, "max": 80, "schritt": 5 }
+      {
+        "name": "alpha",
+        "label": "Winkel α",
+        "einheit": "°",
+        "min": 30,
+        "max": 80,
+        "schritt": 5
+      },
+      {
+        "name": "beta",
+        "label": "Winkel β",
+        "einheit": "°",
+        "min": 30,
+        "max": 80,
+        "schritt": 5
+      }
     ],
     "schritte": [
-      { "beschreibung": "Die Summe der Innenwinkel im Dreieck beträgt 180°: γ = 180° − α − β", "formel": "180 - alpha - beta", "ergebnisName": "gamma", "einheit": "°" }
+      {
+        "beschreibung": "Die Summe der Innenwinkel im Dreieck beträgt 180°: γ = 180° − α − β",
+        "formel": "180 - alpha - beta",
+        "ergebnisName": "gamma",
+        "einheit": "°"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Die Innenwinkelsumme im Dreieck ist immer 180°. Also gilt γ = 180° − α − β."
@@ -112,12 +154,14 @@
     "konfidenz": "hoch",
     "frage": "Welches Dokument gehört NICHT zum Bauantrag?",
     "optionen": [
-      "Lageplan (1:500 oder 1:1000)",
-      "Entwurfszeichnungen (1:100)",
       "Baubeschreibung",
+      "Entwurfszeichnungen (1:100)",
+      "Lageplan (1:500 oder 1:1000)",
       "Angebot des billigsten Bauunternehmers"
     ],
-    "korrekt": [3],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Der Bauantrag besteht aus Lageplan, Entwurfszeichnungen, Baubeschreibung, Berechnungen (GRZ, GFZ), technischen Nachweisen und dem Entwässerungsgesuch. Angebote der Unternehmer gehören zur Vergabe, nicht zum Bauantrag."
   },
   {
@@ -130,7 +174,13 @@
     "konfidenz": "hoch",
     "begriff": "ZVDH",
     "definition": "Zentralverband des Deutschen Dachdeckerhandwerks. Er umfasst 16 Landesinnungsverbände mit über 200 Dachdeckerinnungen und rund 7000 Mitgliedsbetrieben.",
-    "bestandteile": ["Zentral", "verband", "Deutsches", "Dachdecker", "Handwerk"]
+    "bestandteile": [
+      "Zentral",
+      "verband",
+      "Deutsches",
+      "Dachdecker",
+      "Handwerk"
+    ]
   },
   {
     "id": "lf01-009",
@@ -160,9 +210,18 @@
     "konfidenz": "hoch",
     "text": "Die gesetzliche Einheit der Länge ist der {{Meter}}. Es gilt: 1 m = 100 {{cm}} = 1000 {{mm}}.",
     "akzeptiert": {
-      "Meter": ["meter", "m"],
-      "cm": ["Zentimeter", "zentimeter"],
-      "mm": ["Millimeter", "millimeter"]
+      "Meter": [
+        "meter",
+        "m"
+      ],
+      "cm": [
+        "Zentimeter",
+        "zentimeter"
+      ],
+      "mm": [
+        "Millimeter",
+        "millimeter"
+      ]
     }
   },
   {
@@ -174,11 +233,28 @@
     "konfidenz": "hoch",
     "aufgabentext": "Eine Wand ist in Wirklichkeit {wand} m lang. Wie lang wird sie im Maßstab 1:50 in der Zeichnung dargestellt (in cm)?",
     "parameter": [
-      { "name": "wand", "label": "wirkliche Länge", "einheit": "m", "min": 2, "max": 12, "schritt": 0.25 }
+      {
+        "name": "wand",
+        "label": "wirkliche Länge",
+        "einheit": "m",
+        "min": 2,
+        "max": 12,
+        "schritt": 0.25
+      }
     ],
     "schritte": [
-      { "beschreibung": "Wirkliche Länge in cm umrechnen: {wand} m · 100", "formel": "wand * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
-      { "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 50", "formel": "wirklich_cm / 50", "ergebnisName": "zeichnung_cm", "einheit": "cm" }
+      {
+        "beschreibung": "Wirkliche Länge in cm umrechnen: {wand} m · 100",
+        "formel": "wand * 100",
+        "ergebnisName": "wirklich_cm",
+        "einheit": "cm"
+      },
+      {
+        "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 50",
+        "formel": "wirklich_cm / 50",
+        "ergebnisName": "zeichnung_cm",
+        "einheit": "cm"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Maßstab 1:50 bedeutet: 1 cm in der Zeichnung entspricht 50 cm in Wirklichkeit. Es gilt Zeichnungslänge = wirkliche Länge / n."
@@ -205,12 +281,14 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Warnleuchten sind beim Sperren der gesamten Fahrbahn mindestens anzubringen?",
     "optionen": [
-      "Mindestens 3 gelbe Warnleuchten",
-      "Mindestens 5 rote Warnleuchten",
+      "Mindestens 5 gelbe Warnleuchten",
       "Mindestens 2 rote Warnleuchten",
-      "Mindestens 5 gelbe Warnleuchten"
+      "Mindestens 3 gelbe Warnleuchten",
+      "Mindestens 5 rote Warnleuchten"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Beim Sperren der gesamten Fahrbahn sind mindestens 5 rote Warnleuchten anzubringen. Werden nur einzelne Fahrstreifen gesperrt, genügen mindestens 3 gelbe Warnleuchten."
   },
   {
@@ -224,12 +302,14 @@
     "konfidenz": "hoch",
     "frage": "Wie verändert sich die Nutzlast eines Krans mit zunehmender Ausladung?",
     "optionen": [
+      "Die Ausladung hat keinen Einfluss auf die Nutzlast",
       "Je größer die Ausladung, desto größer die Nutzlast",
       "Je größer die Ausladung, desto geringer die Nutzlast",
-      "Die Nutzlast bleibt immer gleich",
-      "Die Ausladung hat keinen Einfluss auf die Nutzlast"
+      "Die Nutzlast bleibt immer gleich"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Je größer die Ausladung, desto geringer die Nutzlast. Zum Ausgleich der aufgenommenen Last dient der Ballast, meist aus Betonfertigteilen."
   },
   {
@@ -241,11 +321,30 @@
     "konfidenz": "hoch",
     "aufgabentext": "Das geplante Einfamilienhaus hat eine Länge von {laenge} m und eine Breite von {breite} m. Wie groß ist die überbaute Grundfläche?",
     "parameter": [
-      { "name": "laenge", "label": "Länge", "einheit": "m", "min": 10, "max": 15, "schritt": 0.25 },
-      { "name": "breite", "label": "Breite", "einheit": "m", "min": 6, "max": 9, "schritt": 0.25 }
+      {
+        "name": "laenge",
+        "label": "Länge",
+        "einheit": "m",
+        "min": 10,
+        "max": 15,
+        "schritt": 0.25
+      },
+      {
+        "name": "breite",
+        "label": "Breite",
+        "einheit": "m",
+        "min": 6,
+        "max": 9,
+        "schritt": 0.25
+      }
     ],
     "schritte": [
-      { "beschreibung": "Grundfläche des Rechtecks = Länge · Breite ({laenge} m · {breite} m)", "formel": "laenge * breite", "ergebnisName": "flaeche", "einheit": "m²" }
+      {
+        "beschreibung": "Grundfläche des Rechtecks = Länge · Breite ({laenge} m · {breite} m)",
+        "formel": "laenge * breite",
+        "ergebnisName": "flaeche",
+        "einheit": "m²"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Die Grundfläche eines rechteckigen Gebäudes ist Länge mal Breite. Im Buchbeispiel: 12,50 m · 7,25 m = 90,625 m²."
@@ -270,12 +369,14 @@
     "konfidenz": "hoch",
     "frage": "Wie nennt man einen Winkel zwischen 90° und 180°?",
     "optionen": [
+      "Gestreckter Winkel",
       "Spitzer Winkel",
       "Rechter Winkel",
-      "Stumpfer Winkel",
-      "Gestreckter Winkel"
+      "Stumpfer Winkel"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Winkel zwischen 0° und 90° heißen spitz, genau 90° rechter Winkel, zwischen 90° und 180° stumpf, genau 180° gestreckter Winkel und über 180° überstumpf."
   },
   {
@@ -288,8 +389,13 @@
     "konfidenz": "hoch",
     "text": "Mit der Bauausführung darf erst nach der {{Baugenehmigung}} begonnen werden. Die Ausführungszeichnungen werden in den Maßstäben 1:50 bis 1:{{5}} gezeichnet.",
     "akzeptiert": {
-      "Baugenehmigung": ["baugenehmigung", "Genehmigung"],
-      "5": ["fünf"]
+      "5": [
+        "fünf"
+      ],
+      "Baugenehmigung": [
+        "baugenehmigung",
+        "Genehmigung"
+      ]
     }
   },
   {
@@ -306,7 +412,9 @@
       "Bauindustrie und Bauhandwerk sind dasselbe",
       "Das Bauhandwerk baut nur Industriehallen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Bauhandwerk besteht überwiegend aus kleinen und mittleren Betrieben (in Innungen organisiert), die Bauindustrie aus größeren Betrieben mit Schwerpunkten im Hoch-, Tief- und Ingenieurbau."
   },
   {
@@ -318,12 +426,14 @@
     "konfidenz": "hoch",
     "frage": "Auf welcher Höhe liegt die Oberkante einer Absperrschranke an einer Baustelle?",
     "optionen": [
-      "0,15 m",
+      "1,50 m",
       "0,50 m",
       "1,00 m",
-      "1,50 m"
+      "0,15 m"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Bei einer Absperrschranke liegt die Oberkante auf 1,00 m und die Unterkante auf 0,15 m."
   },
   {
@@ -337,10 +447,22 @@
     "konfidenz": "hoch",
     "aufgabentext": "Ein Winkel beträgt α = {alpha}°. Wie groß ist sein Nebenwinkel?",
     "parameter": [
-      { "name": "alpha", "label": "Winkel α", "einheit": "°", "min": 20, "max": 160, "schritt": 5 }
+      {
+        "name": "alpha",
+        "label": "Winkel α",
+        "einheit": "°",
+        "min": 20,
+        "max": 160,
+        "schritt": 5
+      }
     ],
     "schritte": [
-      { "beschreibung": "Nebenwinkel ergänzen sich zu 180°: Nebenwinkel = 180° − α", "formel": "180 - alpha", "ergebnisName": "nebenwinkel", "einheit": "°" }
+      {
+        "beschreibung": "Nebenwinkel ergänzen sich zu 180°: Nebenwinkel = 180° − α",
+        "formel": "180 - alpha",
+        "ergebnisName": "nebenwinkel",
+        "einheit": "°"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Nebenwinkel haben einen gemeinsamen Schenkel und ergänzen sich immer zu 180°."
@@ -365,12 +487,14 @@
     "konfidenz": "hoch",
     "frage": "In welchen Längen werden Stahl-Messbänder üblicherweise hergestellt?",
     "optionen": [
-      "5, 10 und 15 m",
       "20, 30 und 50 m",
       "25, 40 und 60 m",
+      "5, 10 und 15 m",
       "10, 25 und 100 m"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Messbänder bestehen meist aus Stahl und werden in Längen von 20, 30 und 50 m hergestellt; sie haben eine Zentimeterteilung."
   },
   {
@@ -382,12 +506,14 @@
     "konfidenz": "hoch",
     "frage": "Dürfen Personen mit Lastaufnahmemitteln (z. B. Steinkorb) befördert werden?",
     "optionen": [
-      "Ja, jederzeit",
       "Grundsätzlich nicht; Ausnahme nur im gesicherten, angeseilten Betonierkübel",
       "Ja, wenn ein Helm getragen wird",
+      "Ja, jederzeit",
       "Nur bei Autokranen"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Personen dürfen mit Lastaufnahmemitteln grundsätzlich nicht befördert werden. Ausnahme sind Betonierkübel, wenn der Arbeitsplatz entsprechend gesichert ist und die Personen angeseilt sind."
   },
   {
@@ -401,12 +527,14 @@
     "konfidenz": "hoch",
     "frage": "Welches Dreieck hat zwei gleich lange Seiten?",
     "optionen": [
-      "Gleichseitiges Dreieck",
       "Ungleichseitiges Dreieck",
-      "Gleichschenkliges Dreieck",
-      "Rechtwinkliges Dreieck"
+      "Rechtwinkliges Dreieck",
+      "Gleichseitiges Dreieck",
+      "Gleichschenkliges Dreieck"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Nach den Seiten unterscheidet man: gleichseitig (alle Seiten gleich), gleichschenklig (zwei Seiten gleich) und ungleichseitig (alle Seiten verschieden)."
   },
   {
@@ -419,8 +547,12 @@
     "konfidenz": "hoch",
     "text": "Wird ein vereinbarter Termin überschritten, kann eine Vertragsstrafe fällig werden. Man nennt sie auch {{Konventionalstrafe}}. Der zeitliche Ablauf der Arbeiten wird im {{Bauzeitenplan}} dargestellt.",
     "akzeptiert": {
-      "Konventionalstrafe": ["konventionalstrafe"],
-      "Bauzeitenplan": ["bauzeitenplan"]
+      "Konventionalstrafe": [
+        "konventionalstrafe"
+      ],
+      "Bauzeitenplan": [
+        "bauzeitenplan"
+      ]
     }
   },
   {
@@ -443,12 +575,14 @@
     "konfidenz": "hoch",
     "frage": "In welchem Verhältnis steht die Seite eines regelmäßigen Sechsecks zum Radius seines Umkreises?",
     "optionen": [
+      "Es gibt keinen festen Zusammenhang",
       "Die Sechseckseite ist halb so groß wie der Radius",
-      "Die Sechseckseite entspricht dem Radius (Halbmesser) des Umkreises",
       "Die Sechseckseite ist doppelt so groß wie der Radius",
-      "Es gibt keinen festen Zusammenhang"
+      "Die Sechseckseite entspricht dem Radius (Halbmesser) des Umkreises"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Eine Sechseckseite entspricht genau dem Halbmesser (Radius) des Umkreises. Deshalb lässt sich das Sechseck einfach mit dem Zirkel konstruieren."
   },
   {
@@ -460,11 +594,28 @@
     "konfidenz": "hoch",
     "aufgabentext": "Auf einem Plan im Maßstab 1:100 ist eine Strecke {zeichnung} cm lang. Wie lang ist die Strecke in Wirklichkeit (in m)?",
     "parameter": [
-      { "name": "zeichnung", "label": "Zeichnungslänge", "einheit": "cm", "min": 2, "max": 15, "schritt": 0.5 }
+      {
+        "name": "zeichnung",
+        "label": "Zeichnungslänge",
+        "einheit": "cm",
+        "min": 2,
+        "max": 15,
+        "schritt": 0.5
+      }
     ],
     "schritte": [
-      { "beschreibung": "Wirkliche Länge = Zeichnungslänge · n, hier n = 100 (Ergebnis in cm)", "formel": "zeichnung * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
-      { "beschreibung": "Von cm in m umrechnen: {wirklich_cm} / 100", "formel": "wirklich_cm / 100", "ergebnisName": "wirklich_m", "einheit": "m" }
+      {
+        "beschreibung": "Wirkliche Länge = Zeichnungslänge · n, hier n = 100 (Ergebnis in cm)",
+        "formel": "zeichnung * 100",
+        "ergebnisName": "wirklich_cm",
+        "einheit": "cm"
+      },
+      {
+        "beschreibung": "Von cm in m umrechnen: {wirklich_cm} / 100",
+        "formel": "wirklich_cm / 100",
+        "ergebnisName": "wirklich_m",
+        "einheit": "m"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Wirkliche Länge = Zeichnungslänge · n. Bei 1:100 ist 1 cm in der Zeichnung = 100 cm = 1 m in Wirklichkeit."
@@ -489,12 +640,14 @@
     "konfidenz": "hoch",
     "frage": "Wo werden in der dualen Ausbildung die theoretischen Kenntnisse vermittelt?",
     "optionen": [
-      "Ausschließlich im Betrieb",
-      "In der Berufsschule",
       "Nur in der Meisterschule",
+      "In der Berufsschule",
+      "Ausschließlich im Betrieb",
       "Auf der Baustelle durch den Polier"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "In der dualen Ausbildung werden die theoretischen Kenntnisse in der Berufsschule vermittelt und die praktischen Fertigkeiten im Betrieb, ergänzt durch überbetriebliche Ausbildungsstätten."
   },
   {
@@ -508,10 +661,12 @@
     "optionen": [
       "Weil es besonders leicht ist",
       "Weil es eine statisch stabile, nicht verschiebliche Figur ist",
-      "Weil es am wenigsten Material braucht",
-      "Weil es sich leicht verschieben lässt"
+      "Weil es sich leicht verschieben lässt",
+      "Weil es am wenigsten Material braucht"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Das Dreieck ist statisch betrachtet eine stabile Figur, es ist nicht verschieblich. Deshalb kommt es in Dachkonstruktionen, Fachwerkwänden und Verstrebungen häufig vor."
   },
   {
@@ -523,12 +678,14 @@
     "konfidenz": "hoch",
     "frage": "Ein Bauzeitenplan nennt: Baustelleneinrichtung 2 AT, Erdarbeiten 3 AT, Entwässerung 2 AT, Fundament 2 AT, Betonarbeiten 8 AT, Mauerarbeiten 10 AT, Zimmerarbeiten 6 AT. Wie viele Arbeitstage sind das insgesamt?",
     "optionen": [
-      "29 AT",
-      "31 AT",
       "33 AT",
-      "35 AT"
+      "35 AT",
+      "31 AT",
+      "29 AT"
     ],
-    "korrekt": [2],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "2 + 3 + 2 + 2 + 8 + 10 + 6 = 33 Arbeitstage (AT). Der Bauzeitenplan regelt den zeitlichen Ablauf der Arbeiten."
   },
   {
@@ -540,12 +697,14 @@
     "konfidenz": "hoch",
     "frage": "Wofür steht ein offenes (weißes) Höhendreieck in einer Bauzeichnung nach DIN 1356?",
     "optionen": [
-      "Für eine Rohbauhöhe (z. B. Oberkante Rohdecke)",
       "Für eine fertige Höhenlage (z. B. Oberkante fertiger Fußboden)",
-      "Für die Geschossanzahl",
-      "Für den Dachüberstand"
+      "Für den Dachüberstand",
+      "Für eine Rohbauhöhe (z. B. Oberkante Rohdecke)",
+      "Für die Geschossanzahl"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Offene (weiße) Dreiecke kennzeichnen fertige Höhenlagen (z. B. OK fertiger Fußboden, FFB), angelegte (schwarze) Dreiecke die Rohbauhöhen (z. B. OK Rohdecke, RFB)."
   },
   {
@@ -568,12 +727,14 @@
     "konfidenz": "hoch",
     "frage": "Wie lang sollte der Weg von der Unterkunft zur eigentlichen Arbeitsstelle höchstens sein?",
     "optionen": [
+      "höchstens 300 m",
       "höchstens 50 m",
       "höchstens 150 m",
-      "höchstens 300 m",
       "die Länge spielt keine Rolle"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      2
+    ],
     "erklaerung": "Der Weg von der Unterkunft zur Arbeitsstelle sollte höchstens 150 m betragen. Sonst müssten Transportmittel für die Arbeitskräfte eingesetzt werden."
   },
   {
@@ -603,11 +764,13 @@
     "frage": "Für das geplante Einfamilienhaus gilt: Die Gesamthöhe von OK gewachsener Boden bis OK Traufe darf einen bestimmten Wert nicht überschreiten. Welchen?",
     "optionen": [
       "4,50 m",
-      "5,50 m",
       "6,50 m",
-      "7,25 m"
+      "7,25 m",
+      "5,50 m"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Laut Baubeschreibung darf die Gesamthöhe von Oberkante gewachsener Boden bis Oberkante Traufe 5,50 m nicht überschreiten."
   },
   {
@@ -619,12 +782,14 @@
     "konfidenz": "hoch",
     "frage": "Womit wird in einer Bauzeichnung der Durchmesser eines runden Querschnitts gekennzeichnet?",
     "optionen": [
-      "Mit dem Buchstaben R vor der Maßzahl",
+      "Mit einer Bruchangabe Breite/Höhe",
       "Mit dem Zeichen Ø vor der Maßzahl",
       "Mit dem Quadratzeichen □",
-      "Mit einer Bruchangabe Breite/Höhe"
+      "Mit dem Buchstaben R vor der Maßzahl"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      1
+    ],
     "erklaerung": "Runde Querschnitte erhalten das Durchmesserzeichen Ø vor der Maßzahl (z. B. Ø 30). R kennzeichnet Radien, das Quadratzeichen □ quadratische Querschnitte, die Bruchform Breite/Höhe rechteckige (z. B. 12/16)."
   },
   {
@@ -636,11 +801,28 @@
     "konfidenz": "hoch",
     "aufgabentext": "Das Einfamilienhaus soll im Maßstab 1:125 gezeichnet werden. Eine Hauswand ist in Wirklichkeit {wand} m lang. Wie lang wird sie in der Zeichnung (in cm)?",
     "parameter": [
-      { "name": "wand", "label": "wirkliche Länge", "einheit": "m", "min": 5, "max": 12.5, "schritt": 0.25 }
+      {
+        "name": "wand",
+        "label": "wirkliche Länge",
+        "einheit": "m",
+        "min": 5,
+        "max": 12.5,
+        "schritt": 0.25
+      }
     ],
     "schritte": [
-      { "beschreibung": "Wirkliche Länge in cm: {wand} m · 100", "formel": "wand * 100", "ergebnisName": "wirklich_cm", "einheit": "cm" },
-      { "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 125", "formel": "wirklich_cm / 125", "ergebnisName": "zeichnung_cm", "einheit": "cm" }
+      {
+        "beschreibung": "Wirkliche Länge in cm: {wand} m · 100",
+        "formel": "wand * 100",
+        "ergebnisName": "wirklich_cm",
+        "einheit": "cm"
+      },
+      {
+        "beschreibung": "Zeichnungslänge = wirkliche Länge / n, hier n = 125",
+        "formel": "wirklich_cm / 125",
+        "ergebnisName": "zeichnung_cm",
+        "einheit": "cm"
+      }
     ],
     "toleranzProzent": 1,
     "erklaerung": "Zeichnungslänge = wirkliche Länge / n. Bei 1:125 wird die wirkliche Länge (in cm) durch 125 geteilt."
@@ -654,12 +836,14 @@
     "konfidenz": "hoch",
     "frage": "In welcher Einheit werden Maße unter einem Meter in Bauzeichnungen üblicherweise angegeben?",
     "optionen": [
-      "In Millimetern (mm)",
       "In Zentimetern (cm)",
       "In Metern (m)",
-      "In Dezimetern (dm)"
+      "In Dezimetern (dm)",
+      "In Millimetern (mm)"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "In Bauzeichnungen werden Maße üblicherweise in cm und m angegeben: alle Maße unter einem Meter in cm (z. B. 99), Maße ab einem Meter in m (z. B. 1,24). Millimetermaße werden durch hochgesetzte Ziffern gekennzeichnet."
   },
   {
@@ -683,8 +867,14 @@
     "konfidenz": "hoch",
     "text": "Zu den Aufgaben der Dachdeckerinnungen gehört u. a. die Überwachung der betrieblichen {{Ausbildung}} sowie die Abnahme von Zwischen- und {{Gesellenprüfungen}}.",
     "akzeptiert": {
-      "Ausbildung": ["ausbildung"],
-      "Gesellenprüfungen": ["Gesellenprüfung", "gesellenprüfungen", "Gesellenpruefungen"]
+      "Ausbildung": [
+        "ausbildung"
+      ],
+      "Gesellenprüfungen": [
+        "Gesellenprüfung",
+        "gesellenprüfungen",
+        "Gesellenpruefungen"
+      ]
     }
   },
   {
@@ -697,11 +887,13 @@
     "frage": "Was kennzeichnet ein regelmäßiges Vieleck?",
     "optionen": [
       "Es hat höchstens vier Ecken",
-      "Alle Seiten und alle Winkel sind gleich groß",
+      "Es hat keinen Umkreis",
       "Nur die Seiten sind gleich, die Winkel verschieden",
-      "Es hat keinen Umkreis"
+      "Alle Seiten und alle Winkel sind gleich groß"
     ],
-    "korrekt": [1],
+    "korrekt": [
+      3
+    ],
     "erklaerung": "Vielecke sind Flächen mit mehr als vier Ecken. Bei regelmäßigen Vielecken sind alle Seiten und alle Winkel gleich groß; sie besitzen einen Um- und einen Inkreis."
   },
   {
@@ -742,12 +934,14 @@
     "konfidenz": "hoch",
     "frage": "In welchem Maßstab wird ein Lageplan üblicherweise gezeichnet?",
     "optionen": [
-      "1:5 oder 1:10",
-      "1:50",
+      "1:500 oder 1:1000",
       "1:100",
-      "1:500 oder 1:1000"
+      "1:5 oder 1:10",
+      "1:50"
     ],
-    "korrekt": [3],
+    "korrekt": [
+      0
+    ],
     "erklaerung": "Lagepläne werden im Maßstab 1:500 oder 1:1000 gezeichnet. Entwurfs- und Eingabepläne 1:100, Ausführungszeichnungen 1:50, Teilzeichnungen 1:1 bis 1:25."
   },
   {
@@ -760,8 +954,13 @@
     "konfidenz": "hoch",
     "text": "Bauzeichnungen sind technische Zeichnungen nach einheitlichen Regeln. Sie müssen sachlich, {{eindeutig}} und {{verständlich}} sein.",
     "akzeptiert": {
-      "eindeutig": ["eindeutig"],
-      "verständlich": ["verstaendlich", "verständlich"]
+      "eindeutig": [
+        "eindeutig"
+      ],
+      "verständlich": [
+        "verstaendlich",
+        "verständlich"
+      ]
     }
   }
 ]

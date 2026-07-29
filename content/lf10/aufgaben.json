@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen Flachdächer über die gesamte Fläche abgedichtet werden?",
     "optionen": [
-      "Weil das Wasser langsam abfließt und sich in Unebenheiten oder Durchbiegungen Stauwasser bilden kann",
-      "Weil sie sonst nicht begehbar sind",
       "Weil sie sonst zu leicht wären",
-      "Aus rein optischen Gründen"
+      "Weil das Wasser langsam abfließt und sich in Unebenheiten oder Durchbiegungen Stauwasser bilden kann",
+      "Aus rein optischen Gründen",
+      "Weil sie sonst nicht begehbar sind"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei Steildächern (Dachneigung über 20°) sorgt die Dachneigung für einen schnellen Abfluss. Bei Flachdächern fließt das Wasser langsam ab, es kann sich durch Unebenheiten oder Durchbiegungen Stauwasser bilden. Flachdächer müssen daher über die gesamte Dachfläche abgedichtet sein und eine wasserundurchlässige Schicht erhalten.",
     "bildDatei": "/buch/lf10/begruente-flachdaecher.webp",
@@ -27,7 +27,7 @@
     "thema": "Beanspruchungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 400 (Aufgaben S. 403)",
     "konfidenz": "hoch",
-    "text": "Flachdaecher sollten ein Mindestgefaelle von {{2}} Prozent aufweisen. Bei mehr als {{5}} Prozent Gefaelle muss unter Umstaenden ein Abgleiten des Dachaufbaus konstruktiv verhindert werden.",
+    "text": "Flachdächer sollten ein Mindestgefälle von {{2}} Prozent aufweisen. Bei mehr als {{5}} Prozent Gefälle muss unter Umständen ein Abgleiten des Dachaufbaus konstruktiv verhindert werden.",
     "akzeptiert": {
       "2": [
         "2",
@@ -52,13 +52,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Beanspruchungen wirken neben der Feuchte auf eine Dachabdichtung ein?",
     "optionen": [
-      "Mechanische, thermische, Wurzelwachstum sowie UV-Strahlung und Ozon",
+      "Nur das Eigengewicht",
       "Nur Frost",
       "Nur Wind",
-      "Nur das Eigengewicht"
+      "Mechanische, thermische, Wurzelwachstum sowie UV-Strahlung und Ozon"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Neben der Feuchte wirken ein: mechanische Beanspruchungen (z. B. Formänderung der Tragkonstruktion oder durch Fugenbewegungen), thermische Beanspruchungen durch Oberflächentemperaturen im Bereich von −20 bis +80 °C, Beanspruchung durch Wurzelwachstum bei begrünten Flachdächern (biologische Beanspruchung) sowie Beanspruchung durch UV-Strahlung, Ozon oder andere Einflüsse.",
     "bildDatei": "/buch/lf10/begruente-flachdaecher.webp",
@@ -73,13 +73,13 @@
     "konfidenz": "hoch",
     "frage": "In welchem Temperaturbereich liegen die thermischen Beanspruchungen der Dachabdichtung?",
     "optionen": [
-      "Etwa −20 bis +80 °C Oberflächentemperatur",
       "0 bis +20 °C",
+      "Etwa −20 bis +80 °C Oberflächentemperatur",
       "−5 bis +30 °C",
       "−50 bis +150 °C"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Thermische Beanspruchungen entstehen durch Oberflächentemperaturen im Bereich von etwa −20 bis +80 °C. Dieser große Temperaturbereich verlangt von der Abdichtung sowohl Kaltbiegeverhalten als auch Wärmestandfestigkeit.",
     "bildDatei": "/buch/lf10/begruente-flachdaecher.webp",
@@ -95,9 +95,9 @@
     "frage": "Welche vier Konstruktionsarten bzw. Aufbauten unterscheidet man bei Flachdächern?",
     "optionen": [
       "Nicht belüfteter Dachbau, belüfteter Dachbau, Umkehrdach und Begrünungsaufbau",
-      "Warmdach, Kaltdach, Steildach und Pultdach",
       "Kies-, Platten-, Gründach und Terrasse",
-      "Bitumen-, Kunststoff-, Metall- und Flüssigdach"
+      "Bitumen-, Kunststoff-, Metall- und Flüssigdach",
+      "Warmdach, Kaltdach, Steildach und Pultdach"
     ],
     "korrekt": [
       0
@@ -115,13 +115,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter genutzten Dachflächen?",
     "optionen": [
-      "Flächen für den Aufenthalt von Personen, zur Aufstellung von Anlagen oder zur intensiven Dachbegrünung",
       "Alle Flachdächer",
+      "Flächen für den Aufenthalt von Personen, zur Aufstellung von Anlagen oder zur intensiven Dachbegrünung",
       "Nur Dächer mit Kiesschüttung",
       "Nur Dächer über Wohnräumen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Genutzte Dachflächen sind Flächen, die für den Aufenthalt von Personen (z. B. Terrassen, Balkone, Loggien), zur Aufstellung von z. B. Solaranlagen oder zur intensiven Dachbegrünung genutzt werden. Gefällelose Dachflächen erfordern besondere Abdichtungsmaßnahmen.",
     "bildDatei": "/buch/lf10/begruente-flachdaecher.webp",
@@ -136,13 +136,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Unterkonstruktionen kommen für Dachabdichtungen infrage?",
     "optionen": [
-      "Stahlbetondecken, Betonfertigteilplatten, Stahltrapezprofile oder Schalungen aus Holz bzw. Holzwerkstoffen",
+      "Nur Mauerwerk",
       "Nur Stahlbetondecken",
-      "Nur Holzschalungen",
-      "Nur Mauerwerk"
+      "Stahlbetondecken, Betonfertigteilplatten, Stahltrapezprofile oder Schalungen aus Holz bzw. Holzwerkstoffen",
+      "Nur Holzschalungen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Unterlagen für Dachabdichtungen können Stahlbetondecken, Betonfertigteilplatten, Stahltrapezprofile oder Schalungen aus Holz oder Holzwerkstoffen sein. Sie müssen einen stetig verlaufenden, ebenen und sauberen Untergrund für die Abdichtung darstellen.",
     "bildDatei": "/buch/lf10/stahltrapezprofile.webp",
@@ -155,14 +155,14 @@
     "thema": "Unterkonstruktionen",
     "quelle": "Grundstufe Bautechnik, Buch S. 401 (Aufgaben S. 403)",
     "konfidenz": "hoch",
-    "text": "Vollholzschalungen fuer Dachabdichtungen werden aus Brettern der Sortierklasse {{S10}} mit einer Nenndicke von {{24}} mm und einer Breite von hoechstens 160 mm hergestellt.",
+    "text": "Vollholzschalungen für Dachabdichtungen werden aus Brettern der Sortierklasse {{S10}} mit einer Nenndicke von {{24}} mm und einer Breite von höchstens 160 mm hergestellt.",
     "akzeptiert": {
+      "24": [
+        "24"
+      ],
       "S10": [
         "S10",
         "S 10"
-      ],
-      "24": [
-        "24"
       ]
     },
     "erklaerung": "Vollholzschalungen (Sortierklasse S10, Nenndicke 24 mm, Breite max. 160 mm) werden aus luftrockenen, gespundeten Nut- und Federbrettern hergestellt. Mit chemischen Holzschutzmitteln behandelte Bretter dürfen die Dachabdichtung nicht schädigen, sonst ist eine Trennlage aufzubringen.",
@@ -178,13 +178,13 @@
     "konfidenz": "hoch",
     "frage": "Was muss bei Schalungen aus Holzwerkstoffen besonders beachtet werden?",
     "optionen": [
+      "Sie müssen immer belüftet sein",
       "Die Längenänderung durch Quellen (1 bis 2 mm je Meter) muss durch entsprechende Fugenausbildung berücksichtigt werden",
       "Sie dürfen nicht gestrichen werden",
-      "Sie müssen immer belüftet sein",
       "Sie brauchen keine Trennschicht"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei Schalungsplatten (Nenndicke 22 mm, Kantenlänge max. 2,05 m) aus Holzwerkstoffen (Typ P5 oder P7, BFU 100 G, OSB/3 oder OSB/4) muss die Längenänderung durch Quellen (1 bis 2 mm/m) durch entsprechende Fugenausbildung berücksichtigt werden. Die Fugen werden mit Trennstreifen abgedeckt; über der Schalung sollte eine Trennschicht angeordnet werden.",
     "bildDatei": "/buch/lf10/dachabdichtung-holzschalung.webp",
@@ -200,9 +200,9 @@
     "frage": "Welche Mindestdicke müssen Stahltrapezprofile als Unterkonstruktion haben?",
     "optionen": [
       "0,88 mm",
-      "0,50 mm",
       "1,50 mm",
-      "2,00 mm"
+      "2,00 mm",
+      "0,50 mm"
     ],
     "korrekt": [
       0
@@ -241,13 +241,13 @@
     "konfidenz": "hoch",
     "frage": "Was kennzeichnet das Umkehrdach?",
     "optionen": [
-      "Die Wärmedämmung liegt über der Abdichtung; die Abdichtung wirkt gleichzeitig als Dampfsperre",
       "Die Dämmung liegt unter der Dampfsperre",
+      "Die Abdichtung liegt ganz oben",
       "Es hat keine Wärmedämmung",
-      "Die Abdichtung liegt ganz oben"
+      "Die Wärmedämmung liegt über der Abdichtung; die Abdichtung wirkt gleichzeitig als Dampfsperre"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Das Umkehrdach ist ein nicht belüftetes Dach, bei dem die Wärmedämmung über der Abdichtung verlegt wird. Die Dachabdichtung ist gleichzeitig Dampfsperre und befindet sich dadurch im Bereich geringer Temperaturschwankungen.",
     "bildDatei": "/buch/lf10/umkehrdach.webp",
@@ -262,13 +262,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Dämmstoffe sind beim Umkehrdach zulässig?",
     "optionen": [
-      "Nur Dämmstoffe, die kein Wasser aufnehmen und formbeständig sind, z. B. Polystyrol-Extruderschaum (XPS)",
-      "Alle Dämmstoffe",
       "Nur Mineralwolle",
-      "Nur Schaumglas"
+      "Alle Dämmstoffe",
+      "Nur Schaumglas",
+      "Nur Dämmstoffe, die kein Wasser aufnehmen und formbeständig sind, z. B. Polystyrol-Extruderschaum (XPS)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Es sind nur Dämmstoffe geeignet, die kein Wasser aufnehmen und formbeständig sind (z. B. Polystyrol-Extruderschaum XPS). Der Wärmeverlust beim Umkehrdach ist größer als beim normalen unbelüfteten Flachdach, die Wärmedämmschicht muss daher dicker gewählt werden.",
     "bildDatei": "/buch/lf10/umkehrdach.webp",
@@ -284,9 +284,9 @@
     "frage": "Wozu dient die Filterschicht über der Wärmedämmung beim Umkehrdach?",
     "optionen": [
       "Sie verhindert das Einschlämmen von Feinteilen",
-      "Sie dichtet gegen Wasser ab",
+      "Sie hält die Platten fest",
       "Sie erhöht die Wärmedämmung",
-      "Sie hält die Platten fest"
+      "Sie dichtet gegen Wasser ab"
     ],
     "korrekt": [
       0
@@ -304,13 +304,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Belüftung beim belüfteten Flachdach erreicht?",
     "optionen": [
-      "Nur durch Querlüftung, weil der Höhenunterschied zwischen Be- und Entlüftungsöffnungen fehlt",
       "Durch den Kamineffekt wie beim Steildach",
+      "Gar nicht",
       "Durch Ventilatoren",
-      "Gar nicht"
+      "Nur durch Querlüftung, weil der Höhenunterschied zwischen Be- und Entlüftungsöffnungen fehlt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei belüfteten Flachdächern ist nur eine Querlüftung durch den Wind möglich. Bei Steildächern entsteht durch den Höhenunterschied zwischen Be- und Entlüftungsöffnungen zusätzlich eine Luftbewegung. Die Lüftungshöhe sollte bei Flachdächern mindestens 10 cm betragen.",
     "bildDatei": "/buch/lf10/belueftetes-dach.webp",
@@ -323,14 +323,14 @@
     "thema": "Belüftetes Flachdach",
     "quelle": "Grundstufe Bautechnik, Buch S. 402",
     "konfidenz": "hoch",
-    "text": "Beim beluefteten Flachdach sollte die Belueftung durch eine diffusionshemmende Unterkonstruktion mit einem s_d-Wert von mindestens {{100}} m erfolgen. Die Lueftungshoehe sollte mindestens {{10}} cm betragen.",
+    "text": "Beim belüfteten Flachdach sollte die Belüftung durch eine diffusionshemmende Unterkonstruktion mit einem s_d-Wert von mindestens {{100}} m erfolgen. Die Lüftungshöhe sollte mindestens {{10}} cm betragen.",
     "akzeptiert": {
-      "100": [
-        "100"
-      ],
       "10": [
         "10",
         "zehn"
+      ],
+      "100": [
+        "100"
       ]
     },
     "erklaerung": "Deshalb sollte die Belüftung durch eine diffusionshemmende Unterkonstruktion (s_d ≥ 100 m) entlastet werden. Die Lüftungshöhe sollte bei Flachdächern mindestens 10 cm betragen; bei ungünstigen Windbedingungen, sehr flachen Dächern und großen Sparrenlängen werden größere Höhen erforderlich.",
@@ -346,13 +346,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheiden sich extensive und intensive Begrünung?",
     "optionen": [
-      "Extensiv: niedrig wachsende Pflanzen bis etwa 15 cm Wuchshöhe; intensiv: größere Pflanzen wie Bäume, Sträucher und Stauden",
-      "Extensiv ist teurer als intensiv",
       "Extensiv braucht mehr Pflege",
-      "Es gibt keinen Unterschied"
+      "Extensiv: niedrig wachsende Pflanzen bis etwa 15 cm Wuchshöhe; intensiv: größere Pflanzen wie Bäume, Sträucher und Stauden",
+      "Es gibt keinen Unterschied",
+      "Extensiv ist teurer als intensiv"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei der extensiven Begrünung werden niedrig wachsende Pflanzen (Wuchshöhe bis etwa 15 cm) verwendet. Bei der intensiven Begrünung werden größere Pflanzen (kleine Bäume, Sträucher, Stauden) verwendet, die tiefer wurzeln. Die intensive Begrünung erfordert dickere Bodenaufbauten, höheren Wasseranstau und regelmäßige Pflege.",
     "bildDatei": "/buch/lf10/gruendach-schichtaufbau.webp",
@@ -365,7 +365,7 @@
     "thema": "Begrünte Flachdächer",
     "quelle": "Grundstufe Bautechnik, Buch S. 403 (Aufgaben S. 403)",
     "konfidenz": "hoch",
-    "text": "Die zusaetzlichen Lasten betragen bei extensiver Begruenung etwa {{400}} bis 2500 N/m², bei intensiver Begruenung koennen sie ueber {{10000}} N/m² betragen.",
+    "text": "Die zusätzlichen Lasten betragen bei extensiver Begrünung etwa {{400}} bis 2500 N/m², bei intensiver Begrünung können sie über {{10000}} N/m² betragen.",
     "akzeptiert": {
       "400": [
         "400"
@@ -389,8 +389,8 @@
     "frage": "Welche zusätzlichen Schichten hat ein begrüntes Flachdach?",
     "optionen": [
       "Schutzschicht über der Abdichtung, Wurzelschutzschicht, Dränschicht, Filterschicht und Vegetationsschicht",
-      "Nur eine Erdschicht",
       "Nur eine Kiesschüttung",
+      "Nur eine Erdschicht",
       "Nur eine Folie"
     ],
     "korrekt": [
@@ -430,13 +430,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient der Voranstrich (Haftbrücke)?",
     "optionen": [
-      "Er verbessert die Haftfähigkeit des darauffolgenden Schichtenverbunds und bindet Staubteilchen an der Oberfläche",
-      "Er dichtet gegen Wasser ab",
       "Er dämmt das Dach",
-      "Er färbt die Fläche ein"
+      "Er färbt die Fläche ein",
+      "Er dichtet gegen Wasser ab",
+      "Er verbessert die Haftfähigkeit des darauffolgenden Schichtenverbunds und bindet Staubteilchen an der Oberfläche"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Durch einen Voranstrich (mit Bitumenlösung oder Bitumenemulsion) wird die Haftfähigkeit der darauffolgenden Schicht verbessert: Staubteilchen auf der Oberfläche werden gebunden. Er wird durch Streichen, Rollen oder Spritzen aufgetragen und muss durchgetrocknet sein, bevor weitere Schichten verlegt werden.",
     "bildDatei": "/buch/lf10/schichten-im-flachdach.webp",
@@ -451,13 +451,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat die Trenn- und Ausgleichsschicht?",
     "optionen": [
-      "Sie überbrückt kleine Schwind- und Spannungsrisse und schützt vor Rauigkeit und chemischen Einflüssen der Unterkonstruktion",
-      "Sie dichtet gegen Wasser ab",
+      "Sie hält die Abdichtung fest",
       "Sie dämmt gegen Wärmeverlust",
-      "Sie hält die Abdichtung fest"
+      "Sie überbrückt kleine Schwind- und Spannungsrisse und schützt vor Rauigkeit und chemischen Einflüssen der Unterkonstruktion",
+      "Sie dichtet gegen Wasser ab"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Durch eine Trenn- und Ausgleichsschicht werden kleine Schwind- und Spannungsrisse in der Unterkonstruktion überbrückt und die folgenden Lagen vor Rauigkeit und chemischen Einflüssen aus der Unterkonstruktion geschützt. Sie wird lose verlegt oder punkt- bzw. streifenweise verklebt.",
     "bildDatei": "/buch/lf10/trennschicht-werkstoffe.webp",
@@ -472,13 +472,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat die Dampfsperre?",
     "optionen": [
-      "Sie verhindert das Eindringen von Wasserdampf und damit die Kondenswasserbildung im Dachaufbau",
+      "Sie schützt vor UV-Strahlung",
       "Sie leitet Regenwasser ab",
       "Sie trägt die Wärmedämmung",
-      "Sie schützt vor UV-Strahlung"
+      "Sie verhindert das Eindringen von Wasserdampf und damit die Kondenswasserbildung im Dachaufbau"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Dampfsperre verhindert das Eindringen von Wasserdampf und Kondenswasserbildung im Dachaufbau. Sie wird zwischen Unterkonstruktion und Wärmedämmschicht angebracht. Durch Dampfsperren wird die Kondenswasserbildung im Dachaufbau verhindert.",
     "bildDatei": "/buch/lf10/dampfsperrbahnen.webp",
@@ -494,9 +494,9 @@
     "frage": "Wie werden Dampfsperrbahnen an Anschlüssen und Durchdringungen verlegt?",
     "optionen": [
       "Vollflächig verklebt und an die Wärmedämmschicht angeschlossen — bei geforderter Luftdichtheit besonders sorgfältig",
-      "Lose verlegt ohne Verklebung",
       "Nur genagelt",
-      "Gar nicht angeschlossen"
+      "Gar nicht angeschlossen",
+      "Lose verlegt ohne Verklebung"
     ],
     "korrekt": [
       0
@@ -514,13 +514,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Anwendungstypen müssen Wärmedämmstoffe für Flachdächer entsprechen?",
     "optionen": [
-      "DAA (Dämmung unter Abdichtung) bzw. DUK (Dämmung unter der Bewitterung ausgesetzt)",
-      "WAB und WAP",
+      "S1 und S2",
       "DZ und DE",
-      "S1 und S2"
+      "WAB und WAP",
+      "DAA (Dämmung unter Abdichtung) bzw. DUK (Dämmung unter der Bewitterung ausgesetzt)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Wärmedämmstoffe für Flachdächer müssen den Anwendungstypen DAA (Dämmung unter Abdichtung) bzw. DUK (Dämmung unter der Bewitterung ausgesetzt) entsprechen. Die Auswahl geeigneter Dämmstoffe hängt vom Dachaufbau und der Dachnutzung ab.",
     "bildDatei": "/buch/lf10/einsatzgebiete-daemmstoffe.webp",
@@ -535,13 +535,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Dämmstoff wird beim Umkehrdach verwendet?",
     "optionen": [
-      "Polystyrol-Extruderhartschaum (XPS), weil er geringe Wasseraufnahme hat",
       "Mineralfaser",
       "EPS-Hartschaum",
-      "Schaumglas"
+      "Schaumglas",
+      "Polystyrol-Extruderhartschaum (XPS), weil er geringe Wasseraufnahme hat"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Liegt die Dämmschicht über der Abdichtung (Umkehrdach), müssen Dämmstoffe mit geringer Wasseraufnahme (z. B. Polystyrol-Extruderhartschaum XPS) verwendet werden. Hier muss durch Entwässerung eine Stauwasserbildung verhindert werden.",
     "bildDatei": "/buch/lf10/einsatzgebiete-daemmstoffe.webp",
@@ -557,9 +557,9 @@
     "frage": "Welche Mindestdämmstoffdicke ist bei EPS auf Trapezprofilen mit 150 mm lichter Weite zwischen den Obergurten nötig?",
     "optionen": [
       "70 mm",
-      "40 mm",
       "50 mm",
-      "100 mm"
+      "100 mm",
+      "40 mm"
     ],
     "korrekt": [
       0
@@ -575,14 +575,14 @@
     "thema": "Wärmedämmschicht",
     "quelle": "Grundstufe Bautechnik, Buch S. 405",
     "konfidenz": "hoch",
-    "text": "Waermedaemmplatten sollen mit {{Fugenversatz}} verlegt werden. Betraegt die Daemmschichtdicke mehr als {{160}} mm, sollten stumpf gestossene Daemmplatten mehrlagig verlegt werden.",
+    "text": "Wärmedämmplatten sollen mit {{Fugenversatz}} verlegt werden. Beträgt die Dämmschichtdicke mehr als {{160}} mm, sollten stumpf gestossene Dämmplatten mehrlagig verlegt werden.",
     "akzeptiert": {
+      "160": [
+        "160"
+      ],
       "Fugenversatz": [
         "Fugenversatz",
         "Versatz"
-      ],
-      "160": [
-        "160"
       ]
     },
     "erklaerung": "Wärmedämmplatten sollen mit Fugenversatz verlegt werden. Ergeben sich aufgrund von Maßabweichungen oder Temperaturänderungen Fugen von mehr als 5 mm, müssen diese im Wärmenachweis berücksichtigt werden. Beträgt die Dämmschichtdicke mehr als 160 mm, sollten stumpf gestoßene Dämmplatten mehrlagig verlegt werden.",
@@ -598,13 +598,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Druckfestigkeit können Wärmedämmstoffe aus Mineralwolle bei nicht genutzten Dachflächen ohne lastverteilende Schichten verwendet werden?",
     "optionen": [
-      "Ab etwa 60 kN/m² Druckfestigkeit",
       "Ab 10 kN/m²",
       "Ab 200 kN/m²",
-      "Sie sind nie ohne lastverteilende Schicht verwendbar"
+      "Sie sind nie ohne lastverteilende Schicht verwendbar",
+      "Ab etwa 60 kN/m² Druckfestigkeit"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Wärmedämmstoffe aus Mineralwolle können bei nicht genutzten Dachflächen ohne lastverteilende Schichten verwendet werden, wenn ihre Druckfestigkeit mehr als 60 kN/m² beträgt. Im Bereich von Wartungs- oder Montagewegen müssen dann lastverteilende Schichten vorgesehen werden.",
     "bildDatei": "/buch/lf10/einsatzgebiete-daemmstoffe.webp",
@@ -619,13 +619,13 @@
     "konfidenz": "hoch",
     "frage": "Warum erfordern Gefälledämmsysteme Verlegepläne?",
     "optionen": [
-      "Weil auf ihnen die Geometrie und die Lage der Dämmelemente ersichtlich sein müssen",
       "Weil sie sonst zu teuer werden",
       "Weil das Baurecht es fordert",
+      "Weil auf ihnen die Geometrie und die Lage der Dämmelemente ersichtlich sein müssen",
       "Verlegepläne sind nicht nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Für Gefällesysteme werden Verlegepläne angefertigt, die die Dachgeometrie, die vorgesehenen Entwässerungspunkte und die erforderlichen Dämmstoffdicken berücksichtigen. Gefälledämmungen erfordern Verlegepläne, auf denen die Geometrie und die Lage der Dämmelemente ersichtlich sind.",
     "bildDatei": "/buch/lf10/systemskizze-gefaelle.webp",
@@ -640,13 +640,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat die Dampfdruckausgleichsschicht?",
     "optionen": [
-      "Sie gleicht Dampfdruckunterschiede in der Dachfläche durch eine zusammenhängende Luftschicht unterhalb der Abdichtung aus",
       "Sie dichtet gegen Regen ab",
-      "Sie trägt die Kiesschüttung",
-      "Sie dämmt gegen Schall"
+      "Sie dämmt gegen Schall",
+      "Sie gleicht Dampfdruckunterschiede in der Dachfläche durch eine zusammenhängende Luftschicht unterhalb der Abdichtung aus",
+      "Sie trägt die Kiesschüttung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Dampfdruckausgleichsschicht soll Dampfdruckunterschiede in der Dachfläche (z. B. durch Feuchtigkeit unter der Dachabdichtung) ausgleichen und Temperaturbewegungen der Dachabdichtung ermöglichen. Dies wird durch eine zusammenhängende Luftschicht unterhalb der Abdichtung erreicht.",
     "bildDatei": "/buch/lf10/entwaesserung-linien-punkt.webp",
@@ -659,7 +659,7 @@
     "thema": "Dampfdruckausgleichsschicht",
     "quelle": "Grundstufe Bautechnik, Buch S. 406",
     "konfidenz": "hoch",
-    "text": "Die Verklebung der ersten Lage erfolgt durch {{3}} bis 4 tellergrosse Klebepunkte je m² oder 3 bis 4 Klebestreifen pro Meter Bahnbreite. Die Ueberdeckungen werden {{voll}} verklebt.",
+    "text": "Die Verklebung der ersten Lage erfolgt durch {{3}} bis 4 tellergrosse Klebepunkte je m² oder 3 bis 4 Klebestreifen pro Meter Bahnbreite. Die Überdeckungen werden {{voll}} verklebt.",
     "akzeptiert": {
       "3": [
         "3",
@@ -684,13 +684,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird Bitumen gewonnen?",
     "optionen": [
-      "Durch Destillation aus Erdöl — der zurückbleibende schwerflüchtige Rest",
       "Durch Verbrennung von Kohle",
       "Aus Erdgas",
+      "Durch Destillation aus Erdöl — der zurückbleibende schwerflüchtige Rest",
       "Aus Naturasphalt allein"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bitumen ist ein Erdölprodukt. Bei der fraktionierten Destillation von Erdöl verdampfen die meisten Bestandteile; die leichtflüchtigen Bestandteile werden unter Normdruck und im Vakuum abdestilliert. Der dabei zurückbleibende schwerflüchtige Rest wird als Destillationsbitumen bezeichnet.",
     "bildDatei": "/buch/lf10/penetration.webp",
@@ -705,13 +705,13 @@
     "konfidenz": "hoch",
     "frage": "Was gibt die Penetration bei Bitumen an?",
     "optionen": [
+      "Die Wasseraufnahme in Prozent",
       "Die Eindringtiefe einer Prüfnadel in Zehntel mm — B 80 bedeutet 8,0 mm Eindringtiefe",
-      "Den Erweichungspunkt in °C",
       "Die Dichte in kg/m³",
-      "Die Wasseraufnahme in Prozent"
+      "Den Erweichungspunkt in °C"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die einzelnen Sorten unterscheiden sich durch die Härte. Sie wird in Versuchen bestimmt und zur Kennzeichnung der Bitumen herangezogen. Unter genormten Bedingungen wird die Eindringtiefe einer Prüfnadel in Zehntel mm bestimmt. Der Buchstabe B kennzeichnet die Bitumensorte (Penetrationsversuch): B 80 bedeutet, dass bei diesem Bitumen die Prüfnadel 8,0 mm eingedrungen ist.",
     "bildDatei": "/buch/lf10/penetration.webp",
@@ -726,13 +726,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der Erweichungspunkt von Bitumen bestimmt?",
     "optionen": [
-      "Mit dem Ring-und-Kugel-Versuch",
-      "Mit dem Penetrationsversuch",
       "Mit dem Biegeversuch",
+      "Mit dem Penetrationsversuch",
+      "Mit dem Ring-und-Kugel-Versuch",
       "Mit dem Zugversuch"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Erweichungspunkt wird nach dem Ring-und-Kugel-Versuch bestimmt. Dabei wird gemessen, bei welcher Temperatur eine in einen Ring eingegossene Bitumenschicht unter der Belastung einer Stahlkugel eine bestimmte Verformung erreicht hat.",
     "bildDatei": "/buch/lf10/ring-und-kugel.webp",
@@ -747,13 +747,13 @@
     "konfidenz": "hoch",
     "frage": "Wie entstehen Oxidations- bzw. geblasene Bitumen?",
     "optionen": [
-      "Durch Einblasen von Luft in heiße, flüssige Destillationsbitumen",
       "Durch Zugabe von Wasser",
-      "Durch Abkühlen unter 0 °C",
-      "Durch Mahlen"
+      "Durch Einblasen von Luft in heiße, flüssige Destillationsbitumen",
+      "Durch Mahlen",
+      "Durch Abkühlen unter 0 °C"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Durch Einblasen von Luft in heiße, flüssige Destillationsbitumen, evtl. unter Zugabe von anderen Erdölfraktionen, werden Oxidationsbitumen erzeugt. Durch dieses Verfahren erhalten die Bitumen bei gleicher Härte eine höhere Temperaturfestigkeit und eine größere Elastizität.",
     "bildDatei": "/buch/lf10/bitumensorten-tabelle.webp",
@@ -766,7 +766,7 @@
     "thema": "Bitumen",
     "quelle": "Grundstufe Bautechnik, Buch S. 407",
     "konfidenz": "hoch",
-    "text": "Die wichtigsten Eigenschaften des Bitumens sind sein {{thermoplastisches}} Verhalten, seine gute Haftfaehigkeit und seine {{Wasserundurchlaessigkeit}}.",
+    "text": "Die wichtigsten Eigenschaften des Bitumens sind sein {{thermoplastisches}} Verhalten, seine gute Haftfähigkeit und seine {{Wasserundurchlässigkeit}}.",
     "akzeptiert": {
       "thermoplastisches": [
         "thermoplastisches",
@@ -790,13 +790,13 @@
     "konfidenz": "hoch",
     "frage": "Wogegen ist Bitumen chemisch beständig bzw. unbeständig?",
     "optionen": [
+      "Unbeständig gegen Salze",
       "Beständig gegen anorganische und organische Säuren, Salze und Alkalien; unbeständig gegen Erdölfraktionen wie Benzin und Benzol",
       "Beständig gegen alle Stoffe",
-      "Unbeständig gegen Wasser",
-      "Unbeständig gegen Salze"
+      "Unbeständig gegen Wasser"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Chemisch ist Bitumen gegen anorganische und organische Säuren, anorganische und organische Salze, aggressive Wässer, Kalilaugen und Alkalien bei normalen Temperaturen in hohem Maße beständig. Von anderen Erdölfraktionen (z. B. Benzin, Benzol) und von manchen organischen Lösungsmitteln (z. B. Benzol) wird Bitumen gelöst.",
     "bildDatei": "/buch/lf10/bitumensorten-tabelle.webp",
@@ -811,13 +811,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus besteht eine Bitumenbahn?",
     "optionen": [
-      "Aus einer Trägereinlage mit beidseitiger Bitumendeckmasse und einer Bestreuung aus mineralischen Stoffen",
-      "Nur aus Bitumen",
+      "Aus Metallfolie mit Bitumen",
       "Aus Kunststoff mit Bitumenanstrich",
-      "Aus Metallfolie mit Bitumen"
+      "Aus einer Trägereinlage mit beidseitiger Bitumendeckmasse und einer Bestreuung aus mineralischen Stoffen",
+      "Nur aus Bitumen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bitumenbahnen bestehen aus einer Trägereinlage mit beidseitiger Oxidations- oder Polymerbitumendeckmasse und einer Bestreuung aus mineralischen Stoffen. Die Trägereinlagen armieren die Bahnen und bestimmen die mechanischen Eigenschaften und das Verarbeitungsverhalten.",
     "bildDatei": "/buch/lf10/aufbau-bitumenbahn.webp",
@@ -832,13 +832,13 @@
     "konfidenz": "hoch",
     "frage": "Welche flächenbezogene Masse hat die Trägereinlage Glasvlies (Kurzzeichen V)?",
     "optionen": [
-      "60 g/m²",
-      "200 g/m²",
       "120 g/m²",
+      "200 g/m²",
+      "60 g/m²",
       "300 g/m²"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Trägereinlagen: Glasvlies V → 60 g/m²; Glasgewebe G → 200 g/m²; Polyestervlies PV → 200 g/m²; Kombinationsträgereinlage mit über 50 % Glasanteil KTG → 120 g/m²; Kombinationsträgereinlage mit über 50 % Polyesteranteil KTP → 120 g/m²; Kupferverbundeinlage VCu → 60 g/m² Glasvlies, Verbundfolie über 0,03 mm.",
     "bildDatei": "/buch/lf10/traegereinlagen.webp",
@@ -853,13 +853,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür werden Metallbänder aus Kupfer (Cu 0,1; VCu) als Trägereinlage eingesetzt?",
     "optionen": [
+      "Als Blitzableiter",
       "Als Durchwurzelungsschutz bei begrünten Flachdächern",
       "Zur Verbesserung der Wärmedämmung",
-      "Zur Erhöhung des Gewichts",
-      "Als Blitzableiter"
+      "Zur Erhöhung des Gewichts"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Metallbänder aus Kupfer (Cu 0,1; VCu) werden als Trägereinlagen in Bitumenbahnen für besondere Anwendungen eingesetzt, z. B. als Durchwurzelungsschutz bei begrünten Flachdächern.",
     "bildDatei": "/buch/lf10/traegereinlagen.webp",
@@ -872,7 +872,7 @@
     "thema": "Bitumenbahnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 409",
     "konfidenz": "hoch",
-    "text": "Das Kurzzeichen {{PYE}} steht fuer Elastomerbitumen (modifiziert mit thermoplastischen Elastomeren), das Kurzzeichen {{PYP}} fuer Plastomerbitumen (modifiziert mit thermoplastischen Kunststoffen).",
+    "text": "Das Kurzzeichen {{PYE}} steht für Elastomerbitumen (modifiziert mit thermoplastischen Elastomeren), das Kurzzeichen {{PYP}} für Plastomerbitumen (modifiziert mit thermoplastischen Kunststoffen).",
     "akzeptiert": {
       "PYE": [
         "PYE"
@@ -894,13 +894,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet der Anwendungstyp DO bei Bitumenbahnen?",
     "optionen": [
-      "Bahnen für die Oberlage einer mehrlagigen Dachabdichtung",
-      "Bahnen für einlagige Dachabdichtung",
       "Bahnen für die untere Lage",
+      "Bahnen für einlagige Dachabdichtung",
+      "Bahnen für die Oberlage einer mehrlagigen Dachabdichtung",
       "Bahnen für die Zwischenlage"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Anwendungstypen Dachabdichtung: DE = Bahnen für einlagige Dachabdichtung; DO = Bahnen für die Oberlage einer mehrlagigen Dachabdichtung; DU = Bahnen für die untere Lage einer mehrlagigen Dachabdichtung; DZ = Bahnen für Zwischenlage bzw. zusätzliche Lage einer mehrlagigen Dachabdichtung.",
     "bildDatei": "/buch/lf10/anwendungstypen.webp",
@@ -915,13 +915,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet die Kurzbezeichnung ‚DO / PYE – G 200 S4'?",
     "optionen": [
-      "Oberlage einer mehrlagigen Dachabdichtung, Schweißbahn 4 mm aus Elastomerbitumen mit Glasgewebeeinlage 200 g/m²",
-      "Unterlage aus Oxidationsbitumen mit Polyestervlies",
       "Einlagige Abdichtung aus Plastomerbitumen",
-      "Dampfsperrbahn mit Metallbandeinlage"
+      "Dampfsperrbahn mit Metallbandeinlage",
+      "Oberlage einer mehrlagigen Dachabdichtung, Schweißbahn 4 mm aus Elastomerbitumen mit Glasgewebeeinlage 200 g/m²",
+      "Unterlage aus Oxidationsbitumen mit Polyestervlies"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "DO / PYE – G 200 S4: Oberlage einer mehrlagigen Dachabdichtung (DO), Schweißbahn (S) mit 4 mm Dicke aus Elastomerbitumen (PYE) mit Glasgewebeeinlage (G) von 200 g/m². Die Kurzzeichen stehen in der Reihenfolge Anwendungstyp, Polymerbitumenart, Trägereinlage, Bahnenart und Bahnendicke.",
     "bildDatei": "/buch/lf10/kurzzeichen-bitumenbahnen.webp",
@@ -937,8 +937,8 @@
     "frage": "Welche Stoffe dienen als Abstreuung von Bitumenbahnen?",
     "optionen": [
       "Quarzsand (Körnung etwa 0,2 bis 0,6 mm), Talkum und Schiefersplitt (Korngröße etwa 1 bis 3 mm)",
-      "Nur Kies 16/32",
       "Nur Zement",
+      "Nur Kies 16/32",
       "Nur Sägemehl"
     ],
     "korrekt": [
@@ -957,13 +957,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat der Schiefersplitt auf der Oberseite der letzten Bahn?",
     "optionen": [
+      "Er verbessert die Wärmedämmung",
       "Er schützt die Oberfläche vor Witterungseinflüssen und dient der Oberflächengestaltung",
-      "Er erhöht das Gewicht",
       "Er dichtet gegen Wasser ab",
-      "Er verbessert die Wärmedämmung"
+      "Er erhöht das Gewicht"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Schiefersplitt wird meist als Abstreuung für die Oberseite der letzten Bahn einer Dachabdichtung verwendet. Er soll die Oberfläche vor Witterungseinflüssen schützen. Außerdem dient er der Oberflächengestaltung. Durch seine plättchenförmige Struktur wird eine fast lückenlose Mineralschicht erreicht.",
     "bildDatei": "/buch/lf10/abstreuung.webp",
@@ -976,7 +976,7 @@
     "thema": "Verarbeitung Bitumenbahnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 411 (Aufgaben S. 419)",
     "konfidenz": "hoch",
-    "text": "Die Ueberdeckung der Bitumenbahnen muss mindestens {{8}} cm betragen, bei einlagiger Abdichtung mindestens {{10}} cm.",
+    "text": "Die Überdeckung der Bitumenbahnen muss mindestens {{8}} cm betragen, bei einlagiger Abdichtung mindestens {{10}} cm.",
     "akzeptiert": {
       "8": [
         "8",
@@ -1000,13 +1000,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß muss die Mindestbreite der Längsnaht beim Schmelzverfahren mit Flamme sein?",
     "optionen": [
-      "8 cm (beim Warmgasschweißen 6 cm)",
       "3 cm",
       "15 cm",
+      "8 cm (beim Warmgasschweißen 6 cm)",
       "20 cm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Nahtverbindungen bei einlagig verlegten Polymerbitumenbahnen werden mit Flamme im Schmelzverfahren (Mindestbreite der Längsnaht 8 cm) oder durch Warmgasschweißen (Mindestbreite dann 6 cm) hergestellt. Die Quernahtbreite beträgt jeweils mindestens 10 cm.",
     "bildDatei": "/buch/lf10/anordnung-bahnen.webp",
@@ -1021,13 +1021,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Richtung werden Bitumenbahnen verlegt?",
     "optionen": [
-      "In Gefällerichtung, dabei sind Kreuzstöße zu vermeiden",
-      "Quer zum Gefälle",
+      "Die Richtung ist beliebig",
       "Diagonal",
-      "Die Richtung ist beliebig"
+      "In Gefällerichtung, dabei sind Kreuzstöße zu vermeiden",
+      "Quer zum Gefälle"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Bahnen werden in Gefällerichtung verlegt, dabei sind Kreuzstöße zu vermeiden. Die Überdeckung kann an Abschlüssen und Einbauteilen auch gegen den Wasserlauf erfolgen. Die Lagen können mit normaler Überdeckung oder im Verband in einem Arbeitsgang verlegt werden.",
     "bildDatei": "/buch/lf10/anordnung-bahnen.webp",
@@ -1042,13 +1042,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Verklebeverfahren gibt es bei Bitumenbahnen?",
     "optionen": [
+      "Nur Klemmen",
       "Gießverfahren, Schweißverfahren und Kaltselbstverklebung",
       "Nur Nageln",
-      "Nur Klemmen",
       "Nur Kontaktkleben"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die wichtigste Voraussetzung für eine dauerhafte Abdichtung ist die volle Verklebung der Lagen. Die Verklebung kann durch Gießverfahren, Schweißverfahren oder durch Kaltselbstverklebung hergestellt werden. Das Bürstenstreichverfahren wird heute nicht mehr angewendet.",
     "bildDatei": "/buch/lf10/kaltselbstkleben-giessen.webp",
@@ -1063,13 +1063,13 @@
     "konfidenz": "hoch",
     "frage": "Woran erkennt man beim Gießverfahren die vollflächige Verklebung?",
     "optionen": [
-      "An den Rändern muss die Klebemasse sichtbar herausquellen",
-      "An der Farbe der Bahn",
+      "Man kann es nicht erkennen",
       "Am Geruch",
-      "Man kann es nicht erkennen"
+      "An der Farbe der Bahn",
+      "An den Rändern muss die Klebemasse sichtbar herausquellen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Beim Gießverfahren wird erhitzte Bitumenklebemasse vor die aufgerollte Bahn gegossen. Beim Aufrollen der Bahn muss ein Klebemassenwulst entstehen, an den Rändern muss die Klebemasse sichtbar herausquellen. Das ausgetretene Bitumen wird glatt gestrichen bzw. mit Bestreuungsmaterial abgestreut.",
     "bildDatei": "/buch/lf10/kaltselbstkleben-giessen.webp",
@@ -1084,13 +1084,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Schutzmaßnahme ist beim Arbeiten mit offener Flamme erforderlich?",
     "optionen": [
-      "Brandschutzmaßnahmen",
+      "Nur Gehörschutz",
       "Kein besonderer Schutz",
       "Nur Handschuhe",
-      "Nur Gehörschutz"
+      "Brandschutzmaßnahmen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bitumenschweißbahnen werden mit offener Flamme erhitzt. Die angeschmolzene Bahn wird unter Druck (mit Wickelkern) gerollt, sodass eine vollflächige Verklebung entsteht. Bei Arbeiten mit offener Flamme sind Brandschutzmaßnahmen erforderlich.",
     "bildDatei": "/buch/lf10/schweissverfahren.webp",
@@ -1107,8 +1107,8 @@
     "optionen": [
       "Plastomere (Thermoplaste), Duromere (Duroplaste) und Elastomere",
       "Hart-, Weich- und Schaumkunststoffe",
-      "PVC, PE und PP",
-      "Bitumen-, Kunstharz- und Metallkunststoffe"
+      "Bitumen-, Kunstharz- und Metallkunststoffe",
+      "PVC, PE und PP"
     ],
     "korrekt": [
       0
@@ -1127,9 +1127,9 @@
     "frage": "Wodurch unterscheiden sich Plastomere von Duromeren?",
     "optionen": [
       "Plastomere sind warm verformbar und schweißbar, Duromere können nur gesägt, gebohrt, gefräst und geklebt werden",
-      "Duromere sind schweißbar, Plastomere nicht",
+      "Es gibt keinen Unterschied",
       "Plastomere sind immer hart",
-      "Es gibt keinen Unterschied"
+      "Duromere sind schweißbar, Plastomere nicht"
     ],
     "korrekt": [
       0
@@ -1148,8 +1148,8 @@
     "frage": "Was zeichnet Elastomere aus?",
     "optionen": [
       "Sie sind aufgrund ihrer weitmaschig vernetzten Struktur auch bei normalen Temperaturen elastisch",
-      "Sie sind bei Kälte hart und spröde",
       "Sie sind bei Wärme flüssig",
+      "Sie sind bei Kälte hart und spröde",
       "Sie sind nicht verformbar"
     ],
     "korrekt": [
@@ -1169,8 +1169,8 @@
     "frage": "Welche Dicke haben hochpolymere Bahnen in der Regel?",
     "optionen": [
       "1,3 bis 2,5 mm",
-      "0,2 bis 0,5 mm",
       "4 bis 6 mm",
+      "0,2 bis 0,5 mm",
       "10 bis 15 mm"
     ],
     "korrekt": [
@@ -1189,13 +1189,13 @@
     "konfidenz": "hoch",
     "frage": "Woran erkennt man bitumenbeständige Kunststoffbahnen?",
     "optionen": [
-      "Sie sind oft schwarz oder weiß; nicht bitumenbeständige Bahnen sind grau",
       "An der Dicke",
+      "Man kann sie nicht unterscheiden",
       "Am Geruch",
-      "Man kann sie nicht unterscheiden"
+      "Sie sind oft schwarz oder weiß; nicht bitumenbeständige Bahnen sind grau"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bitumenbeständige Bahnen sind oft schwarz oder weiß und nicht bitumenbeständige Bahnen grau. Bitumenbeständig bedeutet nicht, dass die Bahnen mit Bitumen verklebt werden können, sondern dass sie in Kontakt mit Bitumen kommen können.",
     "bildDatei": "/buch/lf10/kunststoffbahnen-uebersicht.webp",
@@ -1208,15 +1208,15 @@
     "thema": "Kunststoffbahnen",
     "quelle": "Grundstufe Bautechnik, Buch S. 414 (Aufgaben S. 419)",
     "konfidenz": "hoch",
-    "text": "Die Mindestueberdeckung der Kunststoffbahnen betraegt {{4}} cm. Beim Quellschweissverfahren muss die Schweissbreite mindestens {{3}} cm betragen.",
+    "text": "Die Mindestüberdeckung der Kunststoffbahnen beträgt {{4}} cm. Beim Quellschweissverfahren muss die Schweissbreite mindestens {{3}} cm betragen.",
     "akzeptiert": {
-      "4": [
-        "4",
-        "vier"
-      ],
       "3": [
         "3",
         "drei"
+      ],
+      "4": [
+        "4",
+        "vier"
       ]
     },
     "erklaerung": "Die Mindestüberdeckung der Kunststoffbahnen beträgt 4 cm. Beim Quellschweißverfahren wird der Kunststoff durch spezielle Lösungsmittel (Quellschweißmittel) angelöst und durch Zusammendrücken verbunden; die Schweißbreite muss mindestens 3 cm betragen.",
@@ -1233,9 +1233,9 @@
     "frage": "Welche Nahtverbindungen gibt es bei Kunststoffbahnen?",
     "optionen": [
       "Quellschweißen, Heißluftschweißen, Heizkeilschweißen, Kontaktklebstoffe und Dichtungsbänder",
-      "Nur Nageln",
       "Nur Gießverfahren",
-      "Nur Bitumenverklebung"
+      "Nur Bitumenverklebung",
+      "Nur Nageln"
     ],
     "korrekt": [
       0
@@ -1253,13 +1253,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die Schweißbreite beim Heißluft- und Heizkeilschweißen?",
     "optionen": [
-      "Mindestens 2 cm, bei ECB-Bahnen 3 cm",
+      "Mindestens 10 cm",
       "Mindestens 5 cm",
       "Mindestens 1 cm",
-      "Mindestens 10 cm"
+      "Mindestens 2 cm, bei ECB-Bahnen 3 cm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Beim Heißluftschweißen und Heizkeilschweißen werden die Bahnen erwärmt und plastifiziert. Durch Druck werden die Bahnen homogen verbunden. Die Schweißbreite beträgt mindestens 2 cm, bei ECB-Bahnen 3 cm.",
     "bildDatei": "/buch/lf10/heissluftschweissen.webp",
@@ -1276,8 +1276,8 @@
     "optionen": [
       "Sie sind explosionsgefährlich und gesundheitsschädlich — nur im Freien oder in gut durchlüfteten Räumen verarbeiten",
       "Sie sind nur ätzend",
-      "Sie sind ungefährlich",
-      "Sie sind nur bei Kälte gefährlich"
+      "Sie sind nur bei Kälte gefährlich",
+      "Sie sind ungefährlich"
     ],
     "korrekt": [
       0
@@ -1295,13 +1295,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet die Kurzbezeichnung ‚EPDM-E-GG-TPB-SK/PBS'?",
     "optionen": [
-      "Ethylen-Propylen-Dien-Terpolymer, Einlage Glasgewebegelege, thermoplastische Beschichtung, selbstklebebeschichtet mit Polymerbitumenschicht",
       "Polyvinylchlorid weich mit Glasvlies",
+      "Ethylen-Propylen-Dien-Terpolymer, Einlage Glasgewebegelege, thermoplastische Beschichtung, selbstklebebeschichtet mit Polymerbitumenschicht",
       "Ethylencopolymerisat-Bitumen",
       "Flexibles Polyolefin"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Genormte Kurzbezeichnungen: E = Einlage, GG = Glasgewebe/Glasgittergelege, TPB = Thermoplastische Beschichtung, SK = Selbstklebebeschichtet, PBS = Polymerbitumenschicht. EPDM steht für Ethylen-Propylen-Dien-Terpolymer. Die Mindestnenndicke dieser Bahn bei einlagiger Verlegung (DE) beträgt 1,6 mm.",
     "bildDatei": "/buch/lf10/genormte-kurzbezeichnungen.webp",
@@ -1317,9 +1317,9 @@
     "frage": "Welche Mindestnenndicke muss eine ECB-Bahn bei einlagiger Verlegung haben?",
     "optionen": [
       "2,0 mm",
-      "1,5 mm",
+      "1,8 mm",
       "1,3 mm",
-      "1,8 mm"
+      "1,5 mm"
     ],
     "korrekt": [
       0
@@ -1338,9 +1338,9 @@
     "frage": "Warum ist bei Kunststoffbahnen auf brennbaren Wärmedämmstoffen eine Trennlage nötig?",
     "optionen": [
       "Zum Schutz gegen Flugfeuer und Wärmestrahlung, wenn die Unterkonstruktion nicht mit dem Material der Dichtungsbahn verträglich ist",
-      "Zur besseren Wärmedämmung",
       "Zur Erhöhung des Gewichts",
-      "Sie ist nie nötig"
+      "Sie ist nie nötig",
+      "Zur besseren Wärmedämmung"
     ],
     "korrekt": [
       0
@@ -1358,13 +1358,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus bestehen Flüssigabdichtungen?",
     "optionen": [
-      "Aus flüssig aufgetragenen Kunstharzen mit Vliesarmierung, die später erhärten",
       "Aus flüssigem Bitumen ohne Armierung",
-      "Aus Zementmörtel",
-      "Aus geschmolzenem Kunststoff"
+      "Aus flüssig aufgetragenen Kunstharzen mit Vliesarmierung, die später erhärten",
+      "Aus geschmolzenem Kunststoff",
+      "Aus Zementmörtel"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Flüssigabdichtungen werden aus flüssigen Abdichtungssystemen auf Kunstharzbasis mit einer Kunststoffvliesarmierung (mindestens 110 g/m²) hergestellt. Sie bestehen aus flüssig aufgetragenen Kunstharzen mit Vliesarmierung, die später erhärten.",
     "bildDatei": "/buch/lf10/fluessigkunststoffe-tabelle.webp",
@@ -1379,13 +1379,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Kunstharze werden für Flüssigabdichtungen verwendet?",
     "optionen": [
+      "Nur Silikon",
       "PMMA (Polymethylmethacrylat), UP (ungesättigtes Polyesterharz) und PUR (Polyurethanharz)",
       "Nur Epoxidharz",
-      "Nur Silikon",
       "Nur Acrylfarbe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Verwendet werden Abdichtungen aus PMMA (Polymethylmethacrylat), UP (ungesättigtes Polyesterharz) als Ein- (1K) oder Zweikomponentensystem und PUR (Polyurethanharz) als 2K-System.",
     "bildDatei": "/buch/lf10/fluessigkunststoffe-tabelle.webp",
@@ -1402,8 +1402,8 @@
     "optionen": [
       "Für befahrene, begrünte oder erdüberschüttete Flächen sowie Flächen mit einer Wasseranstauhöhe über 10 cm",
       "Nur für einfache Wohnhausdächer",
-      "Nur für Steildächer",
-      "Nur für Innenräume"
+      "Nur für Innenräume",
+      "Nur für Steildächer"
     ],
     "korrekt": [
       0
@@ -1421,13 +1421,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Flüssigabdichtungssystem hat mit 72 Stunden die längste Aushärtezeit bei 20 °C?",
     "optionen": [
-      "PUR (Polyurethanharz)",
       "PMMA (30 Minuten)",
-      "UP (60 Minuten)",
-      "Alle sind gleich schnell"
+      "Alle sind gleich schnell",
+      "PUR (Polyurethanharz)",
+      "UP (60 Minuten)"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Technische Eigenschaften: PMMA — Aushärtung bei 20 °C 30 Minuten, begehbar 1 Stunde, regensicher 30 Minuten. PUR — Aushärtung 72 Stunden, begehbar 8 Stunden, regensicher 4...8 Stunden. UP — Aushärtung 60 Minuten, begehbar 2 Stunden, regensicher 60 Minuten. Bei PUR-1K-Systemen erfolgt die Aushärtung durch eine relativ langsame Reaktion infolge der Luftfeuchtigkeit.",
     "bildDatei": "/buch/lf10/fluessigkunststoffe-tabelle.webp",
@@ -1442,13 +1442,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe erfüllt der Oberflächenschutz im Flachdachaufbau?",
     "optionen": [
-      "Er vermindert Temperaturschwankungen und schützt vor mechanischer Beschädigung und direkter Sonneneinstrahlung",
-      "Er dichtet gegen Wasser ab",
       "Er dämmt gegen Wärmeverlust",
-      "Er trägt die Dachlast"
+      "Er trägt die Dachlast",
+      "Er vermindert Temperaturschwankungen und schützt vor mechanischer Beschädigung und direkter Sonneneinstrahlung",
+      "Er dichtet gegen Wasser ab"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Oberflächenschutz vermindert Temperaturschwankungen, schützt vor mechanischer Beschädigung und direkter Sonneneinstrahlung. Schutzlagen und Oberflächenschutz schützen die Abdichtung vor mechanischer Beschädigung und direkter Sonneneinstrahlung.",
     "bildDatei": "/buch/lf10/abstreuung.webp",
@@ -1463,13 +1463,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheiden sich leichter und schwerer Oberflächenschutz?",
     "optionen": [
-      "Leicht: fabrikmäßig bestreute oder besplittete Bahnen; schwer: Kies (16...32 mm) oder Plattenbeläge",
-      "Leicht ist dicker als schwer",
       "Leicht wird nur innen verwendet",
-      "Es gibt keinen Unterschied"
+      "Es gibt keinen Unterschied",
+      "Leicht ist dicker als schwer",
+      "Leicht: fabrikmäßig bestreute oder besplittete Bahnen; schwer: Kies (16...32 mm) oder Plattenbeläge"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Der leichte Oberflächenschutz besteht aus fabrikmäßig bestreuten oder besplitteten Dachbahnen. Bei der Besplittung wird in der Regel Schiefersplitt in eine Bitumenklebemasse dicht eingestreut. Der schwere Oberflächenschutz besteht bei nicht genutzten Dachflächen aus Kies (Körnung 16...32 mm).",
     "bildDatei": "/buch/lf10/abstreuung.webp",
@@ -1482,7 +1482,7 @@
     "thema": "Oberflächenschutz",
     "quelle": "Grundstufe Bautechnik, Buch S. 415",
     "konfidenz": "hoch",
-    "text": "Die Kiesschuettung wird gleichmaessig mindestens {{5}} cm dick aufgebracht. Die Koernung betraegt dabei {{16}} bis 32 mm.",
+    "text": "Die Kiesschüttung wird gleichmaessig mindestens {{5}} cm dick aufgebracht. Die Körnung beträgt dabei {{16}} bis 32 mm.",
     "akzeptiert": {
       "5": [
         "5",
@@ -1506,13 +1506,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Materialien eignen sich als Schutzlage unter mechanisch beanspruchten Belägen?",
     "optionen": [
-      "Kunststoffvliese über 300 g/m², PVC-Bahnen ab 1,0 mm, Gummimatten ab 6 mm oder Kunststoffgranulat ab 4 mm",
       "Nur Sand",
-      "Nur Papier",
-      "Nur Bitumenbahnen"
+      "Kunststoffvliese über 300 g/m², PVC-Bahnen ab 1,0 mm, Gummimatten ab 6 mm oder Kunststoffgranulat ab 4 mm",
+      "Nur Bitumenbahnen",
+      "Nur Papier"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Schutzlagen werden oberhalb der Abdichtung flächig verlegt und dienen dem Schutz der Abdichtung vor mechanischer Beschädigung oder Durchwurzelung. Dafür eignen sich Kunststoffvliese (über 300 g/m²), PVC-Bahnen (mindestens 1,0 mm dick), Gummimatten (mindestens 6 mm dick) und Kunststoffgranulat (mindestens 4 mm dick) sowie Dränagebauplatten.",
     "bildDatei": "/buch/lf10/gruendach-schichtaufbau.webp",
@@ -1528,9 +1528,9 @@
     "frage": "Wovon hängt die Größe der Windbelastung ab?",
     "optionen": [
       "Von der Lage des Gebäudes (Windzone), der Gebäudehöhe, der Dachform, der Attikahöhe und der Dachneigung",
-      "Nur von der Dachfarbe",
+      "Nur von der Dachfläche",
       "Nur vom Alter des Gebäudes",
-      "Nur von der Dachfläche"
+      "Nur von der Dachfarbe"
     ],
     "korrekt": [
       0
@@ -1546,7 +1546,7 @@
     "thema": "Windsogsicherung",
     "quelle": "Grundstufe Bautechnik, Buch S. 416",
     "konfidenz": "hoch",
-    "text": "Deutschland ist in {{4}} Windzonen eingeteilt. Die mittlere Windgeschwindigkeit betraegt in Windzone 1 {{22,5}} m/s und in Windzone 4 {{30,0}} m/s.",
+    "text": "Deutschland ist in {{4}} Windzonen eingeteilt. Die mittlere Windgeschwindigkeit beträgt in Windzone 1 {{22,5}} m/s und in Windzone 4 {{30,0}} m/s.",
     "akzeptiert": {
       "4": [
         "4",
@@ -1575,13 +1575,13 @@
     "konfidenz": "hoch",
     "frage": "Welche drei Möglichkeiten der Lagesicherung gegen Windsog gibt es?",
     "optionen": [
-      "Auflast, Verklebung und mechanische Befestigung",
+      "Nur Kiesschüttung",
       "Nur Verklebung",
       "Nur Nageln",
-      "Nur Kiesschüttung"
+      "Auflast, Verklebung und mechanische Befestigung"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei geschlossenen Gebäuden bis 25 m Höhe kann die Sicherung gegen Abheben infolge Windsog durch Auflasten, durch Verkleben auf der Unterlage oder durch mechanische Befestigung erfolgen. Für höhere Gebäude muss ein statischer Einzelnachweis erbracht werden.",
     "bildDatei": "/buch/lf10/verklebung-tabelle.webp",
@@ -1596,13 +1596,13 @@
     "konfidenz": "hoch",
     "frage": "Bis zu welcher Dachneigung kann die Lagesicherung durch Auflast erfolgen?",
     "optionen": [
-      "Bis höchstens 3°",
       "Bis 10°",
-      "Bis 20°",
-      "Bei jeder Dachneigung"
+      "Bis höchstens 3°",
+      "Bei jeder Dachneigung",
+      "Bis 20°"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Für lose verlegte Dachabdichtungen und einer Dachneigung bis höchstens 3° kann die Lagesicherung durch Auflast erfolgen. Die Auflast kann bestehen aus einer Kiesschüttung 16/32 mm 5 cm dick, einem Betonplattenbelag mindestens 40 × 40 × 4 cm, Betonplatten mit maximal 2,5 × 2,5 m, Betonformsteinen oder Aufschüttungen aus Vegetationssubstraten.",
     "bildDatei": "/buch/lf10/sicherungsmassnahmen-10m.webp",
@@ -1617,13 +1617,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Verklebungsanteil ist bei Heißbitumen im Eckbereich erforderlich?",
     "optionen": [
-      "40 %",
       "10 %",
-      "20 %",
-      "30 %"
+      "40 %",
+      "30 %",
+      "20 %"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Nach Tabelle 1 (Verklebung der Abdichtung): Innenbereich → Heißbitumen 10 %, Kaltbitumen 2 Streifen/m, PUR-Kleber 4 Streifen/m; Innenrand → 20 %, 3 Streifen/m, 5 Streifen/m; Außenrand → 30 %, 3 Streifen/m, 6 Streifen/m; Eckbereich → 40 %, 4 Streifen/m, 8 Streifen/m.",
     "bildDatei": "/buch/lf10/verklebung-tabelle.webp",
@@ -1638,13 +1638,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viel Heißbitumen bzw. Kaltbitumen wird je Meter und Streifen gerechnet?",
     "optionen": [
-      "Etwa 100 g/m und Streifen bei Heißbitumen, etwa 40 g/m und Streifen bei Kaltbitumen",
       "Beide etwa 500 g/m",
-      "Beide etwa 10 g/m",
-      "Heißbitumen 40 g/m, Kaltbitumen 100 g/m"
+      "Etwa 100 g/m und Streifen bei Heißbitumen, etwa 40 g/m und Streifen bei Kaltbitumen",
+      "Heißbitumen 40 g/m, Kaltbitumen 100 g/m",
+      "Beide etwa 10 g/m"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Zu Tabelle 1: Bei Kaltbitumen rechnet man etwa 100 g/m und Streifen, beim PUR-Kleber etwa 40 g/m und Streifen. Die Angaben sind Fußnoten der Verklebungstabelle.",
     "bildDatei": "/buch/lf10/verklebung-tabelle.webp",
@@ -1660,9 +1660,9 @@
     "frage": "Wie werden die Flachdachbereiche nach DIN 1055-4 bezeichnet?",
     "optionen": [
       "F Eckbereiche, G Außenrand, H Innenbereich, I Innenrand",
-      "A, B, C, D",
       "1, 2, 3, 4",
-      "X, Y, Z"
+      "X, Y, Z",
+      "A, B, C, D"
     ],
     "korrekt": [
       0
@@ -1678,13 +1678,13 @@
     "thema": "Windsogsicherung",
     "quelle": "Grundstufe Bautechnik, Buch S. 417",
     "konfidenz": "hoch",
-    "text": "Bei Nagelung von Bitumenbahnen gelten folgende Reihenabstaende: Innenbereich und Innenrand {{90}} cm, Aussenrand und Eckbereich {{45}} cm.",
+    "text": "Bei Nagelung von Bitumenbahnen gelten folgende Reihenabstände: Innenbereich und Innenrand {{90}} cm, Aussenrand und Eckbereich {{45}} cm.",
     "akzeptiert": {
-      "90": [
-        "90"
-      ],
       "45": [
         "45"
+      ],
+      "90": [
+        "90"
       ]
     },
     "erklaerung": "Bei Nagelung von Bitumenbahnen gelten folgende Reihenabstände: Innenbereich (H) 90 cm, Innenrand (I) 90 cm, Außenrand (G) 45 cm, Eckbereich (F) 45 cm. Kann die Dämmschicht nicht gleichzeitig befestigt werden, muss sie getrennt gesichert werden (mechanisch oder durch Kleben).",
@@ -1742,13 +1742,13 @@
     "konfidenz": "hoch",
     "frage": "Wogegen müssen die Schichten der Dachabdichtung außer gegen Abheben noch gesichert werden?",
     "optionen": [
-      "Gegen Abgleiten infolge horizontaler Kräfte",
-      "Gegen Verrottung",
+      "Gegen Frost",
       "Gegen Schall",
-      "Gegen Frost"
+      "Gegen Verrottung",
+      "Gegen Abgleiten infolge horizontaler Kräfte"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Schichten der Dachabdichtung müssen gegen Abgleiten infolge horizontaler Kräfte gesichert sein. Bei Flachdächern mit lose verlegter einlagiger Abdichtung, bei Abdichtungen auf Stahltrapezprofilen, die nicht vollflächig verklebt sind, sowie bei Dächern mit einem Gefälle über 3° ist eine Sicherung gegen Abgleiten der Dachschichten notwendig.",
     "bildDatei": "/buch/lf10/flachdachbereiche.webp",
@@ -1763,13 +1763,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist ein Dachrand mit Attika für die Windlastbeanspruchung günstig?",
     "optionen": [
-      "Weil die Attika die Windsogspitzen am Dachrand abmindert",
       "Weil sie das Gewicht erhöht",
-      "Weil sie das Wasser ableitet",
-      "Sie ist ungünstig"
+      "Weil die Attika die Windsogspitzen am Dachrand abmindert",
+      "Sie ist ungünstig",
+      "Weil sie das Wasser ableitet"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Ein Dachrand mit Attika ist günstig für die Windlastbeanspruchung. In den Sicherungstabellen wird deshalb zwischen ‚scharfkantigem Traufbereich' und ‚mit Attika' (mit dem Verhältnis Attikahöhe zu Gebäudehöhe h_a/h) unterschieden — je höher die Attika, desto geringer die erforderliche Sicherung.",
     "bildDatei": "/buch/lf10/dachrand-attika.webp",
@@ -1785,9 +1785,9 @@
     "frage": "Warum stimmt die sichtbare Deckfläche einer Dachbahn nicht mit der verarbeiteten Bahnenfläche überein?",
     "optionen": [
       "Weil an Naht und Stoß Überdeckungen abgezogen werden müssen",
+      "Sie stimmen immer überein",
       "Weil die Bahn schrumpft",
-      "Weil die Bahn beim Verlegen wächst",
-      "Sie stimmen immer überein"
+      "Weil die Bahn beim Verlegen wächst"
     ],
     "korrekt": [
       0
@@ -1803,7 +1803,7 @@
     "thema": "Materialbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 419",
     "konfidenz": "hoch",
-    "text": "Die verarbeitete Materialmenge berechnet sich als Bahnenlaenge mal {{Bahnenbreite}}. Die sichtbare Deckflaeche ergibt sich aus (Bahnenlaenge minus Ueberdeckung {{Stoss}}) mal (Bahnenbreite minus Ueberdeckung Naht).",
+    "text": "Die verarbeitete Materialmenge berechnet sich als Bahnenlaenge mal {{Bahnenbreite}}. Die sichtbare Deckfläche ergibt sich aus (Bahnenlaenge minus Überdeckung {{Stoss}}) mal (Bahnenbreite minus Überdeckung Naht).",
     "akzeptiert": {
       "Bahnenbreite": [
         "Bahnenbreite",
@@ -2022,9 +2022,9 @@
     "frage": "Wie viel Voranstrichmittel wird je Quadratmeter gerechnet?",
     "optionen": [
       "0,3 kg/m²",
+      "5 kg/m²",
       "1,5 kg/m²",
-      "1,8 kg/m²",
-      "5 kg/m²"
+      "1,8 kg/m²"
     ],
     "korrekt": [
       0
@@ -2040,17 +2040,17 @@
     "thema": "Materialbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 421",
     "konfidenz": "hoch",
-    "text": "Den Plattenbedarf je m² erhaelt man, indem man 1 m² durch die {{Plattenflaeche}} teilt. Bei Platten 50 mal 100 cm sind das {{2}} Stueck/m², bei Platten 60 mal 60 cm rechnerisch {{2,78}} Stueck/m².",
+    "text": "Den Plattenbedarf je m² erhält man, indem man 1 m² durch die {{Plattenfläche}} teilt. Bei Platten 50 mal 100 cm sind das {{2}} Stück/m², bei Platten 60 mal 60 cm rechnerisch {{2,78}} Stück/m².",
     "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
       "Plattenflaeche": [
         "Plattenflaeche",
         "Plattenfläche",
         "Flaeche",
         "Fläche"
-      ],
-      "2": [
-        "2",
-        "zwei"
       ],
       "2,78": [
         "2,78",
@@ -2170,13 +2170,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dienen die Kennzeichnungen von geschnittenen Stoffen in Bauzeichnungen?",
     "optionen": [
-      "Zur eindeutigen Darstellung der verschiedenen Schichten in der Schnittdarstellung eines Flachdachs",
+      "Sie haben keine Funktion",
       "Zur Farbgestaltung",
       "Zur Berechnung der Fläche",
-      "Sie haben keine Funktion"
+      "Zur eindeutigen Darstellung der verschiedenen Schichten in der Schnittdarstellung eines Flachdachs"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für die zeichnerische Darstellung von Flachdächern (z. B. bei einer Schnittdarstellung der Schichtenfolge) werden die verschiedenen Schichten durch Symbole dargestellt: Holz, Beton (unbewehrt/bewehrt), Haftgrund, Klebemasse (vollflächig/teilflächig), Dampfsperre, Trenn- und Ausgleichsschicht, Bitumenbahnen, Kunststoff-/Elastomerbahnen, Zubehör und Dämmschichten/Oberflächenschutz.",
     "bildDatei": "/buch/lf10/kennzeichnungen-schichten.webp",
@@ -2191,13 +2191,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Zubehörteile werden in Flachdach-Schnittzeichnungen mit eigenen Symbolen dargestellt?",
     "optionen": [
-      "Verbundblech (kunststoffkaschiertes Blech), mechanische Befestigungsmittel, Trenn-/Schutzlage und Spachtelmasse/Fugenmasse",
+      "Es gibt keine Zubehörsymbole",
       "Nur die Dachrinne",
-      "Nur die Schrauben",
-      "Es gibt keine Zubehörsymbole"
+      "Verbundblech (kunststoffkaschiertes Blech), mechanische Befestigungsmittel, Trenn-/Schutzlage und Spachtelmasse/Fugenmasse",
+      "Nur die Schrauben"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Als Zubehör werden in Flachdachzeichnungen dargestellt: Verbundblech (kunststoffkaschiertes Blech), mechanische Befestigungsmittel, Trenn-/Schutzlage sowie Spachtelmasse/Fugenmasse. Für die Dämmschichten und den Oberflächenschutz gibt es eigene Symbole für Wärmedämmschicht (mit Kaschierung), Oberflächenschutz mit Besplittung und Oberflächenschutz mit Kiesschüttung.",
     "bildDatei": "/buch/lf10/kennzeichnungen-schichten.webp",

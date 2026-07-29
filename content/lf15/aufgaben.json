@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Detailpunkte sind bei Außenwandbekleidungen besonders zu beachten?",
     "optionen": [
-      "Außen- und Innenecken, Anschlüsse am Sockel, seitliche Abschlüsse, obere Abschlüsse am Dachrand, Giebelschräge oder Gesims sowie Anschlüsse an Wandöffnungen und Einbauteilen",
       "Nur die Fläche zwischen den Fenstern",
-      "Nur der Sockel",
-      "Nur die Farbe der Bekleidung"
+      "Nur die Farbe der Bekleidung",
+      "Außen- und Innenecken, Anschlüsse am Sockel, seitliche Abschlüsse, obere Abschlüsse am Dachrand, Giebelschräge oder Gesims sowie Anschlüsse an Wandöffnungen und Einbauteilen",
+      "Nur der Sockel"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Neben der Deckung der Wandfläche müssen bei Außenwandbekleidungen besondere Detailpunkte beachtet werden. Dies sind die Außen- und Innenecken, der untere Abschluss am Sockel, seitliche Abschlüsse und obere Abschlüsse am Dachrand, einer Giebelschräge oder dem Gesims. Ferner unterscheidet man bei Wandöffnungen (Fenster, Türen), Durchdringungen (z. B. Öffnungen für Rohre) und Einbauteilen (Verankerungen für z. B. Vordächer) oberseitige, seitliche und unterseitige Anschlüsse.",
     "bildDatei": "/buch/lf15/bezeichnung-wanddetails.webp",
@@ -48,7 +48,7 @@
     "thema": "Sockelausbildung",
     "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "text": "Die Platten bzw. Schindeln duerfen nicht auf dem Abtropfprofil aufsitzen. Wenn kein Abtropfprofil vorgesehen ist, muss ein Ueberstand von {{2}} bis 5 cm bei Platten und mindestens {{5}} cm bei Holzschindeln ueber der Fusslatte bzw. der Tragkonstruktion eingehalten werden.",
+    "text": "Die Platten bzw. Schindeln dürfen nicht auf dem Abtropfprofil aufsitzen. Wenn kein Abtropfprofil vorgesehen ist, muss ein Überstand von {{2}} bis 5 cm bei Platten und mindestens {{5}} cm bei Holzschindeln über der Fusslatte bzw. der Tragkonstruktion eingehalten werden.",
     "akzeptiert": {
       "2": [
         "2",
@@ -73,13 +73,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Was muss bei einer Außenecke beachtet werden?",
     "optionen": [
-      "Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen; bei Doppeldeckung und Gezogener Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig",
-      "Die Ecke wird einfach stumpf gestoßen",
       "Es sind keine Mindestbreiten einzuhalten",
-      "Außenecken werden immer nur mit Mörtel geschlossen"
+      "Die Ecke wird einfach stumpf gestoßen",
+      "Außenecken werden immer nur mit Mörtel geschlossen",
+      "Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen; bei Doppeldeckung und Gezogener Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Außenecken können bei Wandbekleidungen aus Schiefer oder Faserzement mit Überstand (mindestens 2 cm) gedeckt werden, oder es werden Schichtstücke oder Profile aus Metall verwendet. Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen. Bei der Doppeldeckung und Gezogenen Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig.",
     "bildDatei": "/buch/lf15/aussenecke-geschlauft.webp",
@@ -92,15 +92,15 @@
     "thema": "Außenecken",
     "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "text": "Die Schiefer bzw. Platten werden mit mindestens {{drei}} Schieferstiften bzw. Naegeln innerhalb der Ueberdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusaetzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebaeudehoehen ueber {{20}} m.",
+    "text": "Die Schiefer bzw. Platten werden mit mindestens {{drei}} Schieferstiften bzw. Nägeln innerhalb der Überdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusätzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebäudehöhen über {{20}} m.",
     "akzeptiert": {
-      "drei": [
-        "drei",
-        "3"
-      ],
       "20": [
         "20",
         "zwanzig"
+      ],
+      "drei": [
+        "drei",
+        "3"
       ]
     },
     "erklaerung": "Die Schiefer bzw. Platten werden mit mindestens drei Schieferstiften bzw. Nägeln innerhalb der Überdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusätzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebäudehöhen über 20 m. Strackortsteine sollten unterlegt gedeckt werden, um eine ebene Wandfläche zu erzielen. Ihre sichtbaren Ecken sollten gerundet oder gestutzt werden.",
@@ -114,7 +114,7 @@
     "thema": "Außenecken",
     "quelle": "Grundstufe Bautechnik, Buch S. 534",
     "konfidenz": "hoch",
-    "text": "Die Ueberdeckung der Strackortsteine untereinander sowie zur Flaechendeckung muss mindestens {{5}} cm betragen. Die maximale Groesse von Faserzementplatten zur Strackortdeckung betraegt {{30}} mal 30 cm bzw. 40 mal 20 cm.",
+    "text": "Die Überdeckung der Strackortsteine untereinander sowie zur Flächendeckung muss mindestens {{5}} cm betragen. Die maximale Groesse von Faserzementplatten zur Strackortdeckung beträgt {{30}} mal 30 cm bzw. 40 mal 20 cm.",
     "akzeptiert": {
       "5": [
         "5",
@@ -140,13 +140,13 @@
     "konfidenz": "hoch",
     "frage": "Worauf ist bei Holzschindeln an Außenecken zu achten?",
     "optionen": [
-      "Sie werden wechselseitig gestoßen; bei zweilagiger Deckung oder starker Witterungsbeanspruchung sollte Metall hinterlegt werden — die Verträglichkeit von Kupfer oder Zink mit der Holzart ist zu prüfen",
       "Sie werden auf Gehrung geschnitten und verklebt",
-      "Sie werden immer mit Metallprofilen abgedeckt",
-      "Eine Hinterlegung ist nie erforderlich"
+      "Sie werden wechselseitig gestoßen; bei zweilagiger Deckung oder starker Witterungsbeanspruchung sollte Metall hinterlegt werden — die Verträglichkeit von Kupfer oder Zink mit der Holzart ist zu prüfen",
+      "Eine Hinterlegung ist nie erforderlich",
+      "Sie werden immer mit Metallprofilen abgedeckt"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Holzschindeln werden an Außenecken wechselseitig gestoßen. Bei zweilagiger Deckung oder starker Witterungsbeanspruchung können Metallprofile hinterlegt werden, wobei die Verträglichkeit (insbesondere bei Kupfer oder Zink) mit der Holzart überprüft werden muss. Metallprofile müssen von den Schiefern bzw. Faserzementplatten um mindestens 5 cm überdeckt werden.",
     "bildDatei": "/buch/lf15/eckausbildung-holzschindeln.webp",
@@ -161,13 +161,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Wie kann eine Innenecke ausgeführt werden?",
     "optionen": [
-      "Mit Schichtstücken aus Metall oder Metallprofilen, oder als untergelegte bzw. eingebundene Kehldeckung; die Mindestbreite der Kehlsteine beträgt 10 cm",
       "Nur mit Metallprofilen, Kehldeckung ist unzulässig",
-      "Die Mindestbreite beträgt 30 cm",
-      "Innenecken bleiben offen"
+      "Mit Schichtstücken aus Metall oder Metallprofilen, oder als untergelegte bzw. eingebundene Kehldeckung; die Mindestbreite der Kehlsteine beträgt 10 cm",
+      "Innenecken bleiben offen",
+      "Die Mindestbreite beträgt 30 cm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Innenecken werden bei Wandbekleidungen aus Schiefer oder Faserzement ebenfalls mit Schichtstücken aus Metall oder Metallprofilen ausgeführt. Für die Befestigung der Platten bzw. Schiefer und Nocken, die Ortausbildung und die Mindestüberdeckungen gelten sinngemäß die Regeln der Außeneckausbildung. Ferner können Innenecken als untergelegte oder eingebundene Kehldeckung ausgeführt werden. Verwendet werden als Kehlsteine schmalere Steine als in der Fläche. Ihre Mindestbreite beträgt 10 cm. Die Höhenüberdeckung entspricht mindestens der Flächendeckung. Die Kehldeckung erfordert eine Eckschalung aus Brettern und Dreikantleisten.",
     "bildDatei": "/buch/lf15/innenecke-wechselseitig.webp",
@@ -183,9 +183,9 @@
     "frage": "Wann ist ein seitlicher Wandabschluss erforderlich?",
     "optionen": [
       "Wenn die Deckung an einer Gebäudeecke endet und nicht weitergeführt wird, oder wenn nur Teile einer Wand bekleidet werden",
-      "Nur bei Gebäuden über 20 m Höhe",
+      "Nie — die Deckung läuft immer um die Ecke",
       "Nur bei Holzschindeln",
-      "Nie — die Deckung läuft immer um die Ecke"
+      "Nur bei Gebäuden über 20 m Höhe"
     ],
     "korrekt": [
       0
@@ -222,7 +222,7 @@
     "thema": "Seitliche und obere Abschlüsse",
     "quelle": "Grundstufe Bautechnik, Buch S. 535",
     "konfidenz": "hoch",
-    "text": "Bei Schiefer- und Faserzementdeckungen kann der obere Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde ausgefuehrt werden. Die seitliche Ueberdeckung betraegt bei Faserzementplatten mindestens {{4}} cm, bei Schiefer mindestens {{5}} cm.",
+    "text": "Bei Schiefer- und Faserzementdeckungen kann der obere Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde ausgeführt werden. Die seitliche Überdeckung beträgt bei Faserzementplatten mindestens {{4}} cm, bei Schiefer mindestens {{5}} cm.",
     "akzeptiert": {
       "4": [
         "4",
@@ -247,13 +247,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Worauf ist bei oberen und unteren Anschlüssen an Fenstern unbedingt zu achten?",
     "optionen": [
+      "Es sind keine besonderen Anforderungen zu beachten",
       "Die Hinterlüftung der Konstruktion muss gewährleistet bleiben — unterseitig und oberseitig sind Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten",
       "Die Anschlüsse müssen luftdicht verschlossen werden",
-      "Nur auf die Farbe der Anschlussbleche",
-      "Es sind keine besonderen Anforderungen zu beachten"
+      "Nur auf die Farbe der Anschlussbleche"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 4: Bei der Ausbildung von Anschlüssen, z. B. Fensteröffnungen, muss die Hinterlüftung der Konstruktion gewährleistet bleiben. So sind unterseitig und oberseitig Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten. Merksatz: Bei der Ausbildung dieser Detailpunkte muss die Hinterlüftung der Konstruktion gewährleistet bleiben.",
     "bildDatei": "/buch/lf15/fensteranschluss-holzschindeln.webp",
@@ -266,7 +266,7 @@
     "thema": "Anschlüsse an Wandöffnungen",
     "quelle": "Grundstufe Bautechnik, Buch S. 536",
     "konfidenz": "hoch",
-    "text": "Im Bereich von Laibungen muessen Waermebruecken vermieden werden. Dies kann durch Daemmstoffstreifen mit einer Dicke von mindestens {{4}} cm und gegebenenfalls durch das Ausschaeumen von Fugen erfolgen.",
+    "text": "Im Bereich von Laibungen müssen Wärmebrücken vermieden werden. Dies kann durch Dämmstoffstreifen mit einer Dicke von mindestens {{4}} cm und gegebenenfalls durch das Ausschäumen von Fugen erfolgen.",
     "akzeptiert": {
       "4": [
         "4",
@@ -286,13 +286,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Einbauteile (z. B. Verankerungen für Vordächer) in der Wandbekleidung behandelt?",
     "optionen": [
-      "Sie müssen an der tragenden Wand verankert werden und wie Wanddurchdringungen bzw. Innenecken ausgebildet werden",
-      "Sie werden an der Unterkonstruktion der Bekleidung befestigt",
       "Sie werden nur auf die Bekleidung geschraubt",
+      "Sie werden an der Unterkonstruktion der Bekleidung befestigt",
+      "Sie müssen an der tragenden Wand verankert werden und wie Wanddurchdringungen bzw. Innenecken ausgebildet werden",
       "Einbauteile sind in Wandbekleidungen unzulässig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Einbauteile müssen an der tragenden Wand verankert werden. Sie werden ebenso wie Wanddurchdringungen als Innenecke ausgebildet. Wichtig ist, dass die Last NICHT über die Bekleidung oder ihre Unterkonstruktion abgetragen wird, sondern direkt in die tragende Wand geht.",
     "bildDatei": "/buch/lf15/laibung-schnitt.webp",
@@ -307,13 +307,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden großformatige Außenwandbekleidungen ausgeführt?",
     "optionen": [
-      "Mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung",
       "Immer fugenlos gestoßen",
-      "Nur mit Fugen über 5 cm",
-      "Immer verklebt ohne Fuge"
+      "Immer verklebt ohne Fuge",
+      "Mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung",
+      "Nur mit Fugen über 5 cm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Großformatige Außenwandbekleidungen werden mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung ausgeführt. Aus den Standardplattenformaten können für die Ausbildung von Wanddetails beliebige Formen und Größen zugeschnitten werden.",
     "bildDatei": "/buch/lf15/schnitt-aussenecke-tafel.webp",
@@ -477,13 +477,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Gebäudehöhe sind bei hinterlüfteten Fassaden besondere Brandsperren vorgeschrieben?",
     "optionen": [
-      "Ab 8 m Höhe (Gebäudeklasse 4 und höher)",
-      "Ab 3 m Höhe",
       "Ab 20 m Höhe",
-      "Brandsperren sind nie vorgeschrieben"
+      "Ab 8 m Höhe (Gebäudeklasse 4 und höher)",
+      "Brandsperren sind nie vorgeschrieben",
+      "Ab 3 m Höhe"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Brandschutzanforderungen an Gebäude mit hinterlüfteter Fassade sind in den jeweiligen Landesbauordnungen geregelt. Die erforderlichen Brandschutzmaßnahmen gelten ab Gebäudeklasse 4. Das sind Gebäude über 8 m Höhe. Hier sind besondere Brandsperren vorgeschrieben. Die Brandsperren sollen die Brandausbreitung über die Lüftungsebene der Fassade behindern und das Überschlagen des Feuers durch Kaminsogwirkung auf höhere Geschosse verhindern.",
     "bildDatei": "/buch/lf15/anordnung-brandsperren.webp",
@@ -517,17 +517,17 @@
     "thema": "Brandschutz",
     "quelle": "Grundstufe Bautechnik, Buch S. 538",
     "konfidenz": "hoch",
-    "text": "Die Brandsperre muss im Brandfall mindestens {{30}} Minuten formstabil bleiben. Dies kann durch ein {{1}} mm dickes Stahlblech erreicht werden. Die Bleche werden in Abstaenden unter {{60}} cm auf Wandankern befestigt und mit 30 mm Ueberlappung eingebaut.",
+    "text": "Die Brandsperre muss im Brandfall mindestens {{30}} Minuten formstabil bleiben. Dies kann durch ein {{1}} mm dickes Stahlblech erreicht werden. Die Bleche werden in Abständen unter {{60}} cm auf Wandankern befestigt und mit 30 mm Überlappung eingebaut.",
     "akzeptiert": {
-      "30": [
-        "30",
-        "dreissig",
-        "dreißig"
-      ],
       "1": [
         "1",
         "ein",
         "eins"
+      ],
+      "30": [
+        "30",
+        "dreissig",
+        "dreißig"
       ],
       "60": [
         "60",
@@ -548,8 +548,8 @@
     "frage": "Was ist ein Brandriegel und wie wirkt er?",
     "optionen": [
       "Ein verdickter, nichtbrennbarer Dämmstoffriegel, der den Lüftungsspalt auf unter 10 mm verengt — bei vertikaler Anordnung dienen schmelzende Abstandhalter der Verengung",
-      "Ein Stahlträger im Mauerwerk",
       "Eine Sprinkleranlage in der Fassade",
+      "Ein Stahlträger im Mauerwerk",
       "Ein Lüftungsgitter aus Kunststoff"
     ],
     "korrekt": [
@@ -566,16 +566,16 @@
     "thema": "Brandschutz",
     "quelle": "Grundstufe Bautechnik, Buch S. 538",
     "konfidenz": "hoch",
-    "text": "Zum Brandschutz bei Schornsteinen muss die Bekleidung aus nichtbrennbaren Baustoffen bestehen. Schalungsbretter sind nur mit Abstand zulaessig, mindestens {{5}} cm bei Hinterfuellung mit nichtbrennbarem Daemmstoff bzw. mindestens {{2}} cm bei Hinterlueftung. Brennbare Baustoffe der Aussenwandbekleidung muessen einen Mindestabstand von {{20}} cm zur Rohrdurchfuehrung aufweisen.",
+    "text": "Zum Brandschutz bei Schornsteinen muss die Bekleidung aus nichtbrennbaren Baustoffen bestehen. Schalungsbretter sind nur mit Abstand zulässig, mindestens {{5}} cm bei Hinterfüllung mit nichtbrennbarem Dämmstoff bzw. mindestens {{2}} cm bei Hinterlüftung. Brennbare Baustoffe der Aussenwandbekleidung müssen einen Mindestabstand von {{20}} cm zur Rohrdurchführung aufweisen.",
     "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
       "5": [
         "5",
         "fuenf",
         "fünf"
-      ],
-      "2": [
-        "2",
-        "zwei"
       ],
       "20": [
         "20",
@@ -596,9 +596,9 @@
     "frage": "Projektaufgabe S. 539: Eine 20 cm dicke Dämmschicht soll den Wärmeschutz verbessern. Welche Wärmeleitfähigkeit ist für einen Dämmstoff plausibel?",
     "optionen": [
       "Etwa 0,035 W/(m·K) — typisch für Mineralwolle oder Polystyrol",
+      "Etwa 35 W/(m·K)",
       "Etwa 0,35 W/(m·K)",
-      "Etwa 3,5 W/(m·K)",
-      "Etwa 35 W/(m·K)"
+      "Etwa 3,5 W/(m·K)"
     ],
     "korrekt": [
       0
@@ -667,13 +667,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 533: Welche Aufgaben sind beim Walmdach mit Anbau und Schleppgaube zu lösen?",
     "optionen": [
-      "Eine geeignete kleinformatige Bekleidung für die Gaubenwände wählen und begründen, Vorschläge zur Ausbildung der Kehle und der Anschlüsse machen, die Längen der Kehlen, Außenecken und An-/Abschlüsse berechnen und den Materialbedarf ermitteln",
-      "Nur die Dachziegel auswählen",
+      "Nur ein Gerüst planen",
       "Nur die Dachneigung bestimmen",
-      "Nur ein Gerüst planen"
+      "Nur die Dachziegel auswählen",
+      "Eine geeignete kleinformatige Bekleidung für die Gaubenwände wählen und begründen, Vorschläge zur Ausbildung der Kehle und der Anschlüsse machen, die Längen der Kehlen, Außenecken und An-/Abschlüsse berechnen und den Materialbedarf ermitteln"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Projektaufgabe S. 533: Das Walmdach mit Anbau (Dachneigungen 50° bzw. 60°) und Schleppgaube (Neigung 25°, Überstand allseitig 25 cm) wird mit naturroten Dachziegeln eingedeckt. Die Schleppgaube soll eine kleinformatige Wandbekleidung erhalten, das Gaubenfenster (2,00 × 1,00 m) ist mittig angeordnet. Aufgaben: 1. geeignete Bekleidung für die Gaubenwände auswählen und begründen, 2. Vorschläge zur Ausbildung der Kehle, der seitlichen und oberen Abschlüsse sowie der Anschlüsse an das Gaubenfenster mit Detailzeichnungen, 3. Länge der Kehlen und der Außenecken sowie die Längen der An- und Abschlüsse berechnen, 4. gesamten Materialbedarf für die Bekleidung der Schleppgaube ermitteln.",
     "bildDatei": "/buch/lf15/projekt-draufsicht.webp",
@@ -688,13 +688,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 533: Welche Dachneigungen und welcher Überstand sind für das Projektdach angegeben?",
     "optionen": [
-      "Hauptdach und Anbau 50° bzw. 60°, Schleppgaube 25°, Überstand allseitig 25 cm",
-      "Alle Flächen 45°, kein Überstand",
       "Hauptdach 30°, Gaube 60°, Überstand 50 cm",
-      "Es sind keine Neigungen angegeben"
+      "Es sind keine Neigungen angegeben",
+      "Hauptdach und Anbau 50° bzw. 60°, Schleppgaube 25°, Überstand allseitig 25 cm",
+      "Alle Flächen 45°, kein Überstand"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Projektaufgabe S. 533: Das abgebildete Walmdach mit Anbau hat die Dachneigungen 50° bzw. 60°. Die Schleppgaube hat eine Neigung von 25° und einen Überstand von allseitig 25 cm. Es wird mit naturroten Dachziegeln eingedeckt. Die Seitenansicht zeigt die beiden Neigungen 60° und 50° sowie die Maße 1,00 m und 1,50 m.",
     "bildDatei": "/buch/lf15/projekt-seitenansicht.webp",
@@ -709,13 +709,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 533: Wie groß ist das Gaubenfenster und was folgt daraus für die Massenermittlung?",
     "optionen": [
-      "2,00 × 1,00 m = 2,00 m² — es liegt unter der VOB-Grenze von 2,5 m² und wird deshalb übermessen, also nicht abgezogen",
+      "Es ist kein Fenster vorgesehen",
       "2,00 × 1,00 m — es wird immer von der Fläche abgezogen",
       "3,00 × 2,00 m — es wird abgezogen",
-      "Es ist kein Fenster vorgesehen"
+      "2,00 × 1,00 m = 2,00 m² — es liegt unter der VOB-Grenze von 2,5 m² und wird deshalb übermessen, also nicht abgezogen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Projektaufgabe S. 533: Das Gaubenfenster misst 2,00 × 1,00 m und ist mittig angeordnet. Seine Fläche beträgt 2,00 m² und liegt damit unter der VOB-Grenze von 2,5 m². Öffnungen unter 2,5 m² werden nach VOB übermessen — sie werden also NICHT von der Bekleidungsfläche abgezogen. Die Laibungen werden aber trotzdem als laufende Meter erfasst.",
     "bildDatei": "/buch/lf15/projekt-vorderansicht.webp",
@@ -745,7 +745,7 @@
     "thema": "Schleppdachgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel S. 540: Auf einem Dach mit {alpha}° Dachneigung wird eine Schleppdachgaube mit {beta}° Neigung errichtet. Die Sparren sind {sges} m lang, davon {ue} m Überstand. Berechne die Gaubentiefe und die Gaubenhöhe.",
+    "aufgabentext": "Buchbeispiel S. 540: Auf einem Dach mit {alpha}° Dachneigung wird eine Schleppdachgaube mit {beta}° Neigung errichtet. Die Sparren sind {sges} m lang, davon {ü} m Überstand. Berechne die Gaubentiefe und die Gaubenhöhe.",
     "parameter": [
       {
         "name": "alpha",
@@ -1048,13 +1048,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist bei der Satteldachgaube zusätzlich zur Schleppdachgaube zu berechnen?",
     "optionen": [
-      "Die Längen der Kehlen, mit denen das Gaubendach an die Hauptdachfläche anschließt",
-      "Nur die Firsthöhe",
+      "Es gibt keinen Unterschied",
       "Nur die Traufe",
-      "Es gibt keinen Unterschied"
+      "Die Längen der Kehlen, mit denen das Gaubendach an die Hauptdachfläche anschließt",
+      "Nur die Firsthöhe"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei Satteldachgauben schließt das Dach mit Kehlen an die Hauptdachfläche an. Neben den Anschlusslängen sind hier zusätzlich die Längen der Kehlen zu bestimmen. Die Kehllänge berechnet sich aus k = √((l_f − l_t)² + s²) oder über den Kehl-First-Winkel γ mit k = s : sin γ.",
     "bildDatei": "/buch/lf15/satteldachgaube-geometrie.webp",
@@ -1541,7 +1541,7 @@
     "thema": "Materialbedarf Giebel",
     "quelle": "Grundstufe Bautechnik, Buch S. 542 (1. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 1 (S. 542): Zwei Türöffnungen sind je {th} m hoch und {tb} m breit, die Giebelschräge misst {schraege} m. Berechne die Türlaibungslänge und den Strackortbedarf bei {deck} Stück/m und {zuschlag} % Verschnitt.",
+    "aufgabentext": "Buchbeispiel 1 (S. 542): Zwei Türöffnungen sind je {th} m hoch und {tb} m breit, die Giebelschräge misst {schräge} m. Berechne die Türlaibungslänge und den Strackortbedarf bei {deck} Stück/m und {zuschlag} % Verschnitt.",
     "parameter": [
       {
         "name": "th",
@@ -1697,7 +1697,7 @@
     "thema": "Materialbedarf Wangen",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 2 (S. 543): Die Seitenflächen einer Schleppgaube werden mit Rechteckschiefern {sb} × {sh} cm in Doppeldeckung verkleidet. Die Gaubenschräge misst {schraege} m, die vordere Höhe {vh} m. Berechne Gaubentiefe und Deckfläche beider Wangen.",
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Die Seitenflächen einer Schleppgaube werden mit Rechteckschiefern {sb} × {sh} cm in Doppeldeckung verkleidet. Die Gaubenschräge misst {schräge} m, die vordere Höhe {vh} m. Berechne Gaubentiefe und Deckfläche beider Wangen.",
     "parameter": [
       {
         "name": "sb",
@@ -1758,7 +1758,7 @@
     "thema": "Materialbedarf Wangen",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 2 (S. 543): Rechteckschiefer {sb} × {sh} cm in Doppeldeckung mit {ue} cm Überdeckung. Berechne die Decksteinfläche, den Bedarf je m², den Gesamtbedarf für {flaeche} m² bei {verhau} % Verhau und die Nagelzahl.",
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Rechteckschiefer {sb} × {sh} cm in Doppeldeckung mit {ü} cm Überdeckung. Berechne die Decksteinfläche, den Bedarf je m², den Gesamtbedarf für {flaeche} m² bei {verhau} % Verhau und die Nagelzahl.",
     "parameter": [
       {
         "name": "sb",
@@ -1839,7 +1839,7 @@
     "thema": "Materialbedarf Schleppgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 3 (S. 543): Hauptdach {alpha}°, Schleppdachgaube {beta}°, Gaubentiefe {tg} m, Überstand {ue} m. Berechne die Sparrenlänge s' ohne und s mit Überstand sowie die Anschlusslänge a.",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Hauptdach {alpha}°, Schleppdachgaube {beta}°, Gaubentiefe {tg} m, Überstand {ü} m. Berechne die Sparrenlänge s' ohne und s mit Überstand sowie die Anschlusslänge a.",
     "parameter": [
       {
         "name": "alpha",
@@ -1906,7 +1906,7 @@
     "thema": "Materialbedarf Schleppgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 3 (S. 543): Gaubenbreite {bg} m, Sparrenlänge s = {s} m, Überstand {ue} m, vordere Höhe h_v = {hv} m, Anschlusslänge a = {a} m, Hauptdachneigung {alpha}°. Berechne Dachfläche, Wangenhöhe, eine Wangenfläche, die Vorderfläche und die senkrechten Flächen insgesamt.",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Gaubenbreite {bg} m, Sparrenlänge s = {s} m, Überstand {ü} m, vordere Höhe h_v = {hv} m, Anschlusslänge a = {a} m, Hauptdachneigung {alpha}°. Berechne Dachfläche, Wangenhöhe, eine Wangenfläche, die Vorderfläche und die senkrechten Flächen insgesamt.",
     "parameter": [
       {
         "name": "bg",
@@ -2219,13 +2219,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6 (S. 544): Was ist bei einem winkelförmigen Gebäude zusätzlich zur Bekleidungsfläche zu bestimmen?",
     "optionen": [
-      "Die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge",
+      "Nur die Dachneigung",
       "Nur die Fassadenfläche",
       "Nur die Gebäudehöhe",
-      "Nur die Dachneigung"
+      "Die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 6 (S. 544): Für das abgebildete Gebäude sind die Bekleidungsfläche, die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge zu berechnen. Ein winkelförmiges Gebäude hat neben den Außenecken auch eine INNENECKE — diese wird oft übersehen, braucht aber ebenfalls Eckprofile bzw. eine Kehldeckung. Die Maße des Gebäudes sind 8,60 / 5,60 / 7,00 / 5,60 m bei 8,25 m Höhe.",
     "bildDatei": "/buch/lf15/aufg6-gebaeude.webp",
@@ -2262,9 +2262,9 @@
     "frage": "Buchaufgabe 8 (S. 544): Was unterscheidet die Walmdachgaube von der Satteldachgaube bei der Berechnung?",
     "optionen": [
       "Bei der Walmdachgaube kommt zur Dachfläche und den Wangenflächen noch eine dritte, gewalmte Dachfläche hinzu — die Vorderseite ist dann Dachfläche statt Wandfläche",
+      "Die Walmdachgaube braucht keine Anschlusslänge",
       "Es gibt keinen Unterschied",
-      "Die Walmdachgaube hat keine Kehlen",
-      "Die Walmdachgaube braucht keine Anschlusslänge"
+      "Die Walmdachgaube hat keine Kehlen"
     ],
     "korrekt": [
       0
@@ -2283,9 +2283,9 @@
     "frage": "Buchaufgabe 9 (S. 544): Welche Größen sind bei der abgebildeten Spitzgaube zu berechnen?",
     "optionen": [
       "Die Wangenflächen sowie die Anschlusslänge a",
-      "Nur die Firsthöhe",
+      "Nur die Kehllänge",
       "Nur die Trauflänge",
-      "Nur die Kehllänge"
+      "Nur die Firsthöhe"
     ],
     "korrekt": [
       0
@@ -2429,13 +2429,13 @@
     "konfidenz": "hoch",
     "frage": "Projektaufgabe S. 533: Warum entstehen beim Walmdach mit Anbau überhaupt Kehlen, deren Länge berechnet werden muss?",
     "optionen": [
-      "Weil der Anbau als einspringende Ecke auf das Hauptdach trifft — an dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen",
       "Weil das Dach gewalmt ist",
+      "Weil der Anbau als einspringende Ecke auf das Hauptdach trifft — an dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen",
       "Weil die Gaube eingebaut wird",
       "Kehlen entstehen nur bei Flachdächern"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Projektaufgabe S. 533: Der Anbau trifft als einspringende Ecke auf das Hauptdach — genau dort entsteht die Kehle. An dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen, deshalb muss sie besonders sorgfältig ausgebildet und ihre Länge für den Materialbedarf berechnet werden. Die Schleppgaube erzeugt zusätzlich Anschlusslinien zum Hauptdach. Die Draufsicht zeigt die Grate des Walmdachs und die Kehlen am Anbau.",
     "bildDatei": "/buch/lf15/projekt-walmdach.webp",
@@ -2450,13 +2450,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Bedeutung hat die Differenz aus Firstlänge und Trauflänge (l_f − l_t) bei der Satteldachgaube?",
     "optionen": [
-      "Sie ist der waagerechte Versatz zwischen First und Traufe und geht zusammen mit der Sparrenlänge in die Kehllänge ein",
+      "Sie hat keine Bedeutung für die Berechnung",
       "Sie ist die Gaubenhöhe",
-      "Sie ist die Wangenfläche",
-      "Sie hat keine Bedeutung für die Berechnung"
+      "Sie ist der waagerechte Versatz zwischen First und Traufe und geht zusammen mit der Sparrenlänge in die Kehllänge ein",
+      "Sie ist die Wangenfläche"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Differenz l_f − l_t ist der waagerechte Versatz zwischen First und Traufe der Gaube. Weil das Gaubendach an die geneigte Hauptdachfläche stößt, ist der First kürzer oder länger als die Traufe — dieser Versatz bildet zusammen mit der Sparrenlänge s das rechtwinklige Dreieck der Kehle: k = √((l_f − l_t)² + s²). Im Buchbeispiel S. 541: 2,50 m − 1,15 m = 1,35 m, daraus k = √(1,35² + 1,61²) = 2,10 m.",
     "bildDatei": "/buch/lf15/satteldachgaube-raeumlich.webp",

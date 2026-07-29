@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe erfüllen Fassadenbekleidungen?",
     "optionen": [
+      "Sie dienen nur der Optik",
       "Sie schützen die Außenwände vor Witterungseinflüssen und erhalten dadurch die Wärmedämmfähigkeit der Wände",
-      "Sie tragen die Deckenlasten",
       "Sie ersetzen die Wärmedämmung",
-      "Sie dienen nur der Optik"
+      "Sie tragen die Deckenlasten"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Fassadenbekleidungen schützen die Außenwände vor Witterungseinflüssen, sie verhindern ein Durchfeuchten durch Regen- und Schneewasser. Sie erhalten dadurch auch die Wärmedämmfähigkeit der Wände.",
     "bildDatei": "/buch/lf11/aufbau-aussenwandbekleidung.webp",
@@ -29,13 +29,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter kleinformatigen Platten?",
     "optionen": [
+      "Alle Faserzementplatten",
       "Platten, deren Fläche kleiner als 0,4 m² und deren Masse kleiner als 5 kg ist",
-      "Platten unter 1 m² Fläche",
       "Platten unter 10 kg Masse",
-      "Alle Faserzementplatten"
+      "Platten unter 1 m² Fläche"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Als kleinformatige Platten werden Platten bezeichnet, deren Fläche kleiner als 0,4 m² und deren Masse kleiner als 5 kg sind.",
     "bildDatei": "/buch/lf11/rechteckdoppeldeckung-fassade.webp",
@@ -50,13 +50,13 @@
     "konfidenz": "hoch",
     "frage": "Aus welchen Teilen besteht eine Außenwandbekleidung?",
     "optionen": [
+      "Aus Mauerwerk und Anstrich",
       "Wärmedämmschicht, Verankerung, tragende Unterkonstruktion, Luftschicht, Fassadenbekleidung mit Befestigungsmitteln und Ergänzungsteile",
       "Nur aus Platten und Nägeln",
-      "Nur aus Dämmung und Putz",
-      "Aus Mauerwerk und Anstrich"
+      "Nur aus Dämmung und Putz"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Außenwandbekleidungen werden als vorgehängte Fassaden ausgeführt. Sie bestehen aus folgenden Teilen: Wärmedämmschicht (wenn vorgesehen), Verankerung an der tragenden Wand, tragende Unterkonstruktion mit Verbindungsmitteln, Luftschicht, Fassadenbekleidung mit Befestigungsmitteln und Ergänzungsteile für An- und Abschlüsse.",
     "bildDatei": "/buch/lf11/aufbau-aussenwandbekleidung.webp",
@@ -69,15 +69,15 @@
     "thema": "Hinterlüftung",
     "quelle": "Grundstufe Bautechnik, Buch S. 423 (Aufgaben S. 443)",
     "konfidenz": "hoch",
-    "text": "Um eine ausreichende Hinterlueftung zu erreichen, muss eine Luftschicht von mindestens {{20}} mm vorhanden sein, die an einzelnen Stellen auf {{5}} mm reduziert werden kann.",
+    "text": "Um eine ausreichende Hinterlüftung zu erreichen, muss eine Luftschicht von mindestens {{20}} mm vorhanden sein, die an einzelnen Stellen auf {{5}} mm reduziert werden kann.",
     "akzeptiert": {
-      "20": [
-        "20"
-      ],
       "5": [
         "5",
         "fuenf",
         "fünf"
+      ],
+      "20": [
+        "20"
       ]
     },
     "erklaerung": "Um eine ausreichende Hinterlüftung zu erreichen, muss eine Luftschicht von mindestens 20 mm vorhanden sein, die an einzelnen Stellen auf 5 mm reduziert werden kann. Die Luftschicht verhindert Kondenswasserbildung (Tauwasser).",
@@ -93,13 +93,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß muss der Lüftungsquerschnitt am Fassadensockel mindestens sein?",
     "optionen": [
-      "Mindestens 50 cm² pro m Fassadenlänge (bei belüfteten Bekleidungen mindestens 100 cm²/m)",
       "Mindestens 10 cm²/m",
-      "Mindestens 200 cm²/m",
-      "Ein Lüftungsquerschnitt ist nicht nötig"
+      "Mindestens 50 cm² pro m Fassadenlänge (bei belüfteten Bekleidungen mindestens 100 cm²/m)",
+      "Ein Lüftungsquerschnitt ist nicht nötig",
+      "Mindestens 200 cm²/m"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Lüftungsquerschnitt wird in der Regel durch Konterlattung erreicht. Die Entlüftungsöffnungen am Fassadensockel und die Zuluftöffnungen am Traufabschluss müssen bei hinterlüfteten Bekleidungen mindestens 50 cm² pro m Fassadenlänge betragen; bei belüfteten Außenwandbekleidungen beträgt der Lüftungsquerschnitt am unteren Abschluss mindestens 100 cm²/m.",
     "bildDatei": "/buch/lf11/aufbau-aussenwandbekleidung.webp",
@@ -114,13 +114,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch entsteht Kondenswasser im Fassadenaufbau?",
     "optionen": [
-      "Wenn der Wasserdampf aus dem Gebäudeinneren nach außen wandert, dort abkühlt und den Taupunkt erreicht",
-      "Durch Regenwasser von außen",
+      "Kondenswasser entsteht nie",
       "Durch aufsteigende Bodenfeuchte",
-      "Kondenswasser entsteht nie"
+      "Wenn der Wasserdampf aus dem Gebäudeinneren nach außen wandert, dort abkühlt und den Taupunkt erreicht",
+      "Durch Regenwasser von außen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Luftschicht verhindert Kondenswasserbildung (Tau- oder Schwitzwasser). Kondenswasser entsteht, wenn der Wasserdampf aus dem Gebäudeinneren durch die Wandporen nach außen wandert (Wasserdampfdiffusion), abkühlt und den Taupunkt erreicht. Kondenswasser kann zu Schäden führen; durch die Luftschicht und Abluftöffnungen kann der Wasserdampf entweichen, ohne zu kondensieren.",
     "bildDatei": "/buch/lf11/aufbau-aussenwandbekleidung.webp",
@@ -161,9 +161,9 @@
     "frage": "Welche Eigenschaften sollen Wärmedämmstoffe für Außenwandbekleidungen haben?",
     "optionen": [
       "Geringe Wärmeleitfähigkeit, Witterungs- und Fäulnisbeständigkeit sowie geringe Feuchtigkeitsaufnahme",
-      "Hohe Dichte und hohe Wärmeleitfähigkeit",
+      "Nur geringes Gewicht",
       "Hohe Wasseraufnahme",
-      "Nur geringes Gewicht"
+      "Hohe Dichte und hohe Wärmeleitfähigkeit"
     ],
     "korrekt": [
       0
@@ -179,7 +179,7 @@
     "thema": "Wärmedämmschicht",
     "quelle": "Grundstufe Bautechnik, Buch S. 424",
     "konfidenz": "hoch",
-    "text": "Der erforderliche Waermedurchlasswiderstand ergibt sich aus R = {{1}} geteilt durch den erforderlichen Waermedurchgangskoeffizienten U.",
+    "text": "Der erforderliche Wärmedurchlasswiderstand ergibt sich aus R = {{1}} geteilt durch den erforderlichen Waermedurchgangskoeffizienten U.",
     "akzeptiert": {
       "1": [
         "1",
@@ -199,13 +199,13 @@
     "konfidenz": "hoch",
     "frage": "Wie berechnet man die erforderliche Dämmstoffdicke?",
     "optionen": [
+      "d = R_vorhanden · U",
       "d = (R_erforderlich − R_si − R_vorhanden − R_se) · Wärmeleitfähigkeit des Dämmstoffs",
-      "d = R_erforderlich · Wärmeleitfähigkeit",
       "d = U_erforderlich / Wärmeleitfähigkeit",
-      "d = R_vorhanden · U"
+      "d = R_erforderlich · Wärmeleitfähigkeit"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Aus der Bestimmungsgleichung R_erforderlich = R_si + R_vorhanden + R_gesucht + R_se folgt mit R_gesucht = d/λ: d_Dämmung = (R_erforderlich − R_si − R_vorhanden − R_se) · λ_Dämmung.",
     "bildDatei": "/buch/lf11/formeln-waermedaemmung.webp",
@@ -264,7 +264,7 @@
         "label": "Wärmeleitfähigkeit",
         "einheit": "W/(m·K)",
         "min": 0.035,
-        "max": 2.0,
+        "max": 2,
         "schritt": 0.005
       }
     ],
@@ -294,8 +294,8 @@
         "name": "rerf",
         "label": "R erforderlich",
         "einheit": "m²·K/W",
-        "min": 3.0,
-        "max": 6.0,
+        "min": 3,
+        "max": 6,
         "schritt": 0.1
       },
       {
@@ -303,7 +303,7 @@
         "label": "R vorhanden",
         "einheit": "m²·K/W",
         "min": 0.1,
-        "max": 1.0,
+        "max": 1,
         "schritt": 0.01
       },
       {
@@ -343,13 +343,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Dämmplatten an der Wand befestigt?",
     "optionen": [
-      "Durch Kleben oder mit Dämmstoffdübeln, dicht gestoßen mit versetzten Stößen",
+      "Sie werden eingemauert",
       "Nur lose eingelegt",
       "Nur mit Draht",
-      "Sie werden eingemauert"
+      "Durch Kleben oder mit Dämmstoffdübeln, dicht gestoßen mit versetzten Stößen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Wärmedämmung wird durch Kleben oder mit Dämmstoffdübeln befestigt. Dabei sollten die Platten dicht gestoßen mit versetzten Stößen verlegt werden.",
     "bildDatei": "/buch/lf11/formeln-waermedaemmung.webp",
@@ -364,13 +364,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestverankerungstiefe gilt für Dübel in Beton, Vollziegeln und Kalksandvollsteinen?",
     "optionen": [
-      "50 mm, bei Dübeldurchmessern von 10, 12 bzw. 14 mm auch 60 bzw. 70 mm",
-      "20 mm",
+      "150 mm",
       "90 mm",
-      "150 mm"
+      "20 mm",
+      "50 mm, bei Dübeldurchmessern von 10, 12 bzw. 14 mm auch 60 bzw. 70 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "In der Regel werden Dübel-Schrauben-Kombinationen oder Ankerschienen verwendet. Die Mindestverankerungstiefe der Dübel beträgt in Beton, Vollziegeln und Kalksandvollsteinen 50 mm, 60 mm bzw. 70 mm bei Dübeldurchmessern von 10 mm, 12 mm bzw. 14 mm.",
     "bildDatei": "/buch/lf11/befestigung-grundhoelzer.webp",
@@ -385,13 +385,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Verankerungstiefe ist in Hohlblocksteinen oder Lochziegeln erforderlich?",
     "optionen": [
-      "Spezielle Spreizdübel mit mindestens 90 mm Verankerungstiefe",
-      "50 mm wie bei Vollsteinen",
       "30 mm",
-      "Dübel sind dort nicht zulässig"
+      "50 mm wie bei Vollsteinen",
+      "Dübel sind dort nicht zulässig",
+      "Spezielle Spreizdübel mit mindestens 90 mm Verankerungstiefe"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "In Hohlblocksteinen oder Lochziegeln müssen spezielle Spreizdübel mit mindestens 90 mm Verankerungstiefe verwendet werden. Die Bohrlöcher müssen mindestens 10 mm tiefer gebohrt werden, das Bohrmehl ist zu entfernen.",
     "bildDatei": "/buch/lf11/befestigung-grundhoelzer.webp",
@@ -404,16 +404,16 @@
     "thema": "Verankerung",
     "quelle": "Grundstufe Bautechnik, Buch S. 425",
     "konfidenz": "hoch",
-    "text": "Der Duebelabstand d ergibt sich aus dem Lattenabstand a und der erforderlichen Duebelanzahl n mit der Formel d = 1 geteilt durch (a mal {{n}}). Fuer die Holzunterkonstruktion ist eine Mindestlattenbreite von b groesser gleich {{6}} mal Duebeldurchmesser erforderlich.",
+    "text": "Der Dübelabstand d ergibt sich aus dem Lattenabstand a und der erforderlichen Dübelanzahl n mit der Formel d = 1 geteilt durch (a mal {{n}}). Für die Holzunterkonstruktion ist eine Mindestlattenbreite von b groesser gleich {{6}} mal Duebeldurchmesser erforderlich.",
     "akzeptiert": {
+      "6": [
+        "6",
+        "sechs"
+      ],
       "n": [
         "n",
         "Duebelanzahl",
         "Dübelanzahl"
-      ],
-      "6": [
-        "6",
-        "sechs"
       ]
     },
     "erklaerung": "Der Dübelabstand d ergibt sich aus dem Lattenabstand a und der erforderlichen Dübelanzahl n: d = 1/(a · n). Für die Holzunterkonstruktion ist eine Mindestlattenbreite von b ≥ 6 · Durchmesser des Dübels erforderlich.",
@@ -434,15 +434,15 @@
         "label": "Lattenabstand",
         "einheit": "m",
         "min": 0.5,
-        "max": 1.0,
+        "max": 1,
         "schritt": 0.05
       },
       {
         "name": "n",
         "label": "Dübelanzahl",
         "einheit": "Dübel/m²",
-        "min": 2.0,
-        "max": 4.0,
+        "min": 2,
+        "max": 4,
         "schritt": 0.5
       }
     ],
@@ -489,13 +489,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Eigenlast hat eine Außenwandbekleidung aus Schiefer auf Lattung?",
     "optionen": [
-      "0,45 kN/m²",
-      "0,35 kN/m²",
       "0,60 kN/m²",
-      "0,75 kN/m²"
+      "0,75 kN/m²",
+      "0,35 kN/m²",
+      "0,45 kN/m²"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Eigenlast verschiedener Außenwandbekleidungen: Schiefer auf Schalung 0,60 kN/m²; Schiefer auf Lattung 0,45 kN/m²; ebene Faserzementplatte, Faserzementkurzwellplatten, Faserzementpaneele auf Lattung sowie Titanzink, Kupfer und Edelstahl auf Schalung jeweils 0,35 kN/m²; Dachziegel und Dachsteine 0,60 kN/m²; Biberschwanzziegel und ebene Dachsteine aus Beton im Biberformat in Doppel- und Kronendeckung 0,75 kN/m².",
     "bildDatei": "/buch/lf11/eigenlast-bekleidungen.webp",
@@ -510,13 +510,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus kann die Unterkonstruktion einer Außenwandbekleidung bestehen?",
     "optionen": [
-      "Aus einer Holzlattung, einer Schalung aus Holz oder Holzwerkstoffen mit Konterlattung oder aus Metalltragprofilen",
-      "Nur aus Beton",
       "Nur aus Mauerwerk",
-      "Nur aus Kunststoff"
+      "Nur aus Kunststoff",
+      "Aus einer Holzlattung, einer Schalung aus Holz oder Holzwerkstoffen mit Konterlattung oder aus Metalltragprofilen",
+      "Nur aus Beton"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Unterkonstruktion kann aus einer Holzlattung, einer Schalung aus Holz oder Holzwerkstoffen mit Konterlattung oder aus Metalltragprofilen (Stahl, Kupfer oder Aluminium) bestehen.",
     "bildDatei": "/buch/lf11/befestigung-brettschalung.webp",
@@ -531,13 +531,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Verbindungselemente werden bei Brettschalungen je nach Brettbreite verwendet?",
     "optionen": [
-      "Zwei bei Breite bis 16 cm, drei bis 24 cm, vier bis 32 cm",
-      "Immer nur eines",
+      "Die Anzahl ist beliebig",
       "Immer vier",
-      "Die Anzahl ist beliebig"
+      "Zwei bei Breite bis 16 cm, drei bis 24 cm, vier bis 32 cm",
+      "Immer nur eines"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei Verbindungsstellen zwischen Trag- und Konterlatten werden ein bzw. zwei diagonal angeordnete Verbindungselemente verwendet. Bei Brettschalungen werden zwei (Brettbreite ≤ 16 cm), drei (Brettbreite ≤ 24 cm) bzw. vier (Brettbreite ≤ 32 cm) Verbindungselemente verwendet.",
     "bildDatei": "/buch/lf11/befestigung-brettschalung.webp",
@@ -552,13 +552,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestrandabstände gelten für Befestigungselemente auf Holz bzw. Aluminium?",
     "optionen": [
-      "20 mm auf Holz, 30 mm auf Aluminium (jeweils bei 60 mm Abstand zur Kante)",
       "5 mm auf beiden",
       "50 mm auf beiden",
+      "20 mm auf Holz, 30 mm auf Aluminium (jeweils bei 60 mm Abstand zur Kante)",
       "Es gibt keine Vorgaben"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Mindestrandabstände betragen auf Holz 20 mm und auf Aluminium 30 mm (jeweils mit 60 mm zur oberen Kante). Befestigungselemente aus nichtrostendem Stahl, Aluminium und Kupfer dürfen ohne besonderen Korrosionsschutznachweis verwendet werden.",
     "bildDatei": "/buch/lf11/mindestrandabstaende.webp",
@@ -573,13 +573,13 @@
     "konfidenz": "hoch",
     "frage": "Warum muss bei großformatigen Platten die Kraftübertragung verbessert werden?",
     "optionen": [
-      "Weil größere Kreuzungspunkte auftreten — dafür kleinere Lattenabstände, mehr Verbindungselemente pro Kreuzungspunkt oder Elemente mit höherem Kraftschluss",
+      "Eine Verbesserung ist nicht nötig",
       "Weil sie leichter sind",
       "Weil sie dünner sind",
-      "Eine Verbesserung ist nicht nötig"
+      "Weil größere Kreuzungspunkte auftreten — dafür kleinere Lattenabstände, mehr Verbindungselemente pro Kreuzungspunkt oder Elemente mit höherem Kraftschluss"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei kleinformatigen Außenwandbekleidungen ergeben sich durch den geringen Abstand der Traglattung (i. d. R. unter 30 cm) und der Konterlattung (i. d. R. unter 70 cm) eine für die Kraftübertragung ausreichend große Anzahl von Kreuzungspunkten. Bei großformatigen Platten und Tafeln muss die Kraftübertragung u. U. durch kleinere Lattenabstände, mehr Verbindungselemente pro Kreuzungspunkt oder durch Verbindungselemente mit höherem Kraftschluss verbessert werden.",
     "bildDatei": "/buch/lf11/befestigungsabstaende.webp",
@@ -594,13 +594,13 @@
     "konfidenz": "hoch",
     "frage": "Worin unterscheiden sich Wandbekleidungen mit Schiefer von Dachdeckungen?",
     "optionen": [
-      "Wandbekleidungen werden ohne Gebindesteigung gedeckt",
-      "Sie brauchen keine Unterkonstruktion",
+      "Es gibt keinen Unterschied",
       "Sie haben größere Überdeckungen",
-      "Es gibt keinen Unterschied"
+      "Sie brauchen keine Unterkonstruktion",
+      "Wandbekleidungen werden ohne Gebindesteigung gedeckt"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für Wandflächen können dieselben Deckarten wie für Dachflächen angewendet werden. Wandbekleidungen werden ohne Gebindesteigung gedeckt. Zusätzlich sind die gezogene Rechteckdoppeldeckung, die waagerechte Deckung, die Wabendeckung u. a. Ornamentdeckungen mit Ziersteinen möglich.",
     "bildDatei": "/buch/lf11/gezogene-rechteckdoppeldeckung.webp",
@@ -613,13 +613,13 @@
     "thema": "Wandbekleidung mit Schiefer",
     "quelle": "Grundstufe Bautechnik, Buch S. 427",
     "konfidenz": "hoch",
-    "text": "Fuer Rechteckdeckungen werden Schiefer bis {{40}} mal 25 cm verwendet, fuer altdeutsche und Schuppendeckung Schiefer bis {{26}} cm Hoehe.",
+    "text": "Für Rechteckdeckungen werden Schiefer bis {{40}} mal 25 cm verwendet, für altdeutsche und Schuppendeckung Schiefer bis {{26}} cm Höhe.",
     "akzeptiert": {
-      "40": [
-        "40"
-      ],
       "26": [
         "26"
+      ],
+      "40": [
+        "40"
       ]
     },
     "erklaerung": "Für Rechteckdeckungen werden Schiefer bis 40 × 25 cm verwendet, für altdeutsche und Schuppendeckung Schiefer bis 26 cm Höhe. Wandbekleidungen werden ohne Gebindesteigung gedeckt.",
@@ -635,13 +635,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Vordeckung ist bei Schiefer auf Holzwerkstoffschalung erforderlich?",
     "optionen": [
+      "Eine Betonschicht",
       "Eine Vordeckung mit mindestens 4 cm Überdeckung, z. B. Dachbahn V13 besandet",
-      "Keine Vordeckung",
       "Nur eine Folie ohne Überdeckung",
-      "Eine Betonschicht"
+      "Keine Vordeckung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Werden die Schiefer auf einer Holzwerkstoffschalung befestigt, muss eine Vordeckung (z. B. Dachbahn V13 besandet, Mindestüberdeckung 4 cm) vorgesehen werden. Holzschalungen können mit einer Vordeckung vor Feuchtigkeit geschützt werden.",
     "bildDatei": "/buch/lf11/tafeldicke-abstaende.webp",
@@ -657,9 +657,9 @@
     "frage": "Wie groß ist die Höhenüberdeckung bei der altdeutschen Deckung als Wandbekleidung?",
     "optionen": [
       "4 cm",
-      "10 cm",
+      "8 cm",
       "29 % der Steinhöhe",
-      "8 cm"
+      "10 cm"
     ],
     "korrekt": [
       0
@@ -677,13 +677,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lautet die Schnurabstandsformel bei der Rechteckdoppeldeckung im halben Verband?",
     "optionen": [
-      "S = (H − HÜ) / 2",
-      "S = H − HÜ",
+      "S = B − BÜ",
       "S = H / 2",
-      "S = B − BÜ"
+      "S = H − HÜ",
+      "S = (H − HÜ) / 2"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei der Rechteckdoppeldeckung im halben Verband gilt S = (H − HÜ)/2. Bei der gezogenen Rechteckdoppeldeckung ebenfalls S = (H − HÜ)/2, bei der waagerechten und geschlauften Deckung dagegen S = H − HÜ.",
     "bildDatei": "/buch/lf11/schiefer-deckarten-tabelle.webp",
@@ -698,13 +698,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Besonderheit gilt bei der Rechteckdoppeldeckung im halben Verband für die Überdeckung?",
     "optionen": [
-      "Das dritte Gebinde überdeckt das erste um 2 cm bei Nagelung und um 6 cm bei Klammerbefestigung",
-      "Es gibt keine Überdeckung des dritten Gebindes",
+      "Immer 4 cm",
       "Immer 10 cm",
-      "Immer 4 cm"
+      "Das dritte Gebinde überdeckt das erste um 2 cm bei Nagelung und um 6 cm bei Klammerbefestigung",
+      "Es gibt keine Überdeckung des dritten Gebindes"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei der Rechteckdoppeldeckung im halben Verband überdeckt das dritte Gebinde das erste um 2 cm bei Nagelung und um 6 cm bei Klammerbefestigung. Eine Seitenüberdeckung entfällt (Verlegung mit Stoßfuge 3 bis 6 mm).",
     "bildDatei": "/buch/lf11/schiefer-deckarten-tabelle.webp",
@@ -720,9 +720,9 @@
     "frage": "Welche Deckarten sind mit Faserzementplatten an der Wand möglich?",
     "optionen": [
       "Doppeldeckung, deutsche Deckung, geschlaufte Deckung, waagerechte Deckung, Stülpdeckung, Spitzschablonendeckung und Wabendeckung",
-      "Nur die Doppeldeckung",
+      "Nur die waagerechte Deckung",
       "Nur die Stülpdeckung",
-      "Nur die waagerechte Deckung"
+      "Nur die Doppeldeckung"
     ],
     "korrekt": [
       0
@@ -740,13 +740,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch ist der Plattenbedarf bei der deutschen Deckung mit Format 20 × 20 cm?",
     "optionen": [
-      "39,1 Stück/m²",
       "24,7 Stück/m²",
       "18,32 Stück/m²",
+      "39,1 Stück/m²",
       "9,0 Stück/m²"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Nach der Bedarfstabelle (Deutsche Deckung mit hängender Ferse): Format 20 × 20 cm → 39,1 Stück/m²; 30 × 30 → 18,32; 25 × 25 → 29,8; 40 × 40 → 9,0 Stück/m². Der Schnürabstand ist dabei S = H − HÜ.",
     "bildDatei": "/buch/lf11/faserzement-bedarf1.webp",
@@ -762,9 +762,9 @@
     "frage": "Wie hoch ist der Plattenbedarf bei der Doppeldeckung im halben Verband mit quadratischen Platten 30 × 30 cm?",
     "optionen": [
       "24,7 Stück/m²",
+      "39,1 Stück/m²",
       "13,6 Stück/m²",
-      "14,8 Stück/m²",
-      "39,1 Stück/m²"
+      "14,8 Stück/m²"
     ],
     "korrekt": [
       0
@@ -780,15 +780,15 @@
     "thema": "Wandbekleidung mit Faserzement",
     "quelle": "Grundstufe Bautechnik, Buch S. 430",
     "konfidenz": "hoch",
-    "text": "Bei der gezogenen Doppeldeckung mit Rechteckplatten 30 mal 60 cm betraegt der Plattenbedarf {{6,9}} Stueck je m². Die Ueberdeckung ist dabei {{4}}/4 cm.",
+    "text": "Bei der gezogenen Doppeldeckung mit Rechteckplatten 30 mal 60 cm beträgt der Plattenbedarf {{6,9}} Stück je m². Die Überdeckung ist dabei {{4}}/4 cm.",
     "akzeptiert": {
-      "6,9": [
-        "6,9",
-        "6.9"
-      ],
       "4": [
         "4",
         "vier"
+      ],
+      "6,9": [
+        "6,9",
+        "6.9"
       ]
     },
     "erklaerung": "Nach der Bedarfstabelle (Gezogene Doppeldeckung): Quadrat 30 × 30 (Ü 4/4) → 14,8 Stück/m²; Quadrat 40 × 40 → 7,8; Rechteck 20 × 40 → 17,4; Rechteck 30 × 60 → 6,9 Stück/m² mit 3,6 m/m² Lattung.",
@@ -804,13 +804,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Mindestquerschnitt muss die Traglattung bei keramischer Fassadenbekleidung haben?",
     "optionen": [
+      "Es gibt keine Vorgabe",
       "Mindestens 14 cm² Querschnitt (bzw. Schalung mit 24 mm Mindestdicke)",
       "Mindestens 5 cm²",
-      "Mindestens 50 cm²",
-      "Es gibt keine Vorgabe"
+      "Mindestens 50 cm²"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Wandbekleidung wird auf einer Unterkonstruktion aus Holz (Traglattung mit mindestens 14 cm² Querschnitt oder Schalung mit 24 mm Mindestdicke), einer Holzwerkstoffschalung oder einer Metallunterkonstruktion befestigt. Schalungen sollten eine Vordeckung mit Unterdeckbahnen erhalten.",
     "bildDatei": "/buch/lf11/keramische-platten.webp",
@@ -825,11 +825,11 @@
     "konfidenz": "hoch",
     "text": "Am Sockel sollte die Wandbekleidung mit einem Abstand von etwa {{30}} cm zum Untergrund ausgebildet werden, ab Balkonen etwa {{15}} cm zur Belagsoberkante.",
     "akzeptiert": {
-      "30": [
-        "30"
-      ],
       "15": [
         "15"
+      ],
+      "30": [
+        "30"
       ]
     },
     "erklaerung": "Die Wandbekleidung wird hinterlüftet ausgeführt, die Lüftungsöffnungen sollten mit Lüftungsgittern geschützt werden. Am Sockel sollte ein Abstand von etwa 30 cm zum Untergrund bzw. etwa 15 cm zur Belagsoberkante bei Balkonen eingehalten werden.",
@@ -846,9 +846,9 @@
     "frage": "Welche keramischen Erzeugnisse werden für Fassadenbekleidungen verwendet?",
     "optionen": [
       "Keramische Platten, Dachziegel (Falz-, Kremp-, Biberschwanzziegel, Hohlpfannen) und Dachsteine",
+      "Nur Betonplatten",
       "Nur Bodenfliesen",
-      "Nur Klinkerriemchen",
-      "Nur Betonplatten"
+      "Nur Klinkerriemchen"
     ],
     "korrekt": [
       0
@@ -866,13 +866,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist eine 45°-Abfasung am Schindelfuß wichtig?",
     "optionen": [
-      "Sie verhindert Schmutz- und Faserablagerungen unterhalb des Fußendes, die zu Moos- und Pilzbewuchs führen würden",
-      "Sie macht die Schindel leichter",
       "Sie verbessert die Optik",
+      "Sie macht die Schindel leichter",
+      "Sie verhindert Schmutz- und Faserablagerungen unterhalb des Fußendes, die zu Moos- und Pilzbewuchs führen würden",
       "Sie ist nicht wichtig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Wichtig für die Lebensdauer ist eine 45°-Abfasung am Schindelfuß. Dadurch werden Schmutz- und Faserablagerungen unterhalb des Fußendes verhindert, die zu Moos- und Pilzbewuchs führen würden.",
     "bildDatei": "/buch/lf11/aufbau-holzschindeln.webp",
@@ -885,13 +885,13 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 432 (Aufgaben S. 443)",
     "konfidenz": "hoch",
-    "text": "Bei Holzschindeln an der Wand sollen die Be- und Entlueftungsoeffnungen mindestens {{150}} cm² je m Wandbreite betragen, die kleinste Abmessung {{20}} mm.",
+    "text": "Bei Holzschindeln an der Wand sollen die Be- und Entlüftungsöffnungen mindestens {{150}} cm² je m Wandbreite betragen, die kleinste Abmessung {{20}} mm.",
     "akzeptiert": {
-      "150": [
-        "150"
-      ],
       "20": [
         "20"
+      ],
+      "150": [
+        "150"
       ]
     },
     "erklaerung": "Wichtig ist die durchgehende Hinterlüftung der wärmegedämmten Schindelbekleidung. Für die Lüftungsquerschnitte gelten folgende Richtwerte: Be- und Entlüftungsöffnungen mindestens 150 cm²/m Wandbreite, kleinste Abmessung 20 mm. Die Schindeln dürfen nicht direkt auf Dachbahnen oder Folien verlegt werden, dadurch würde eine Hinterlüftung verhindert.",
@@ -907,13 +907,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Wandbekleidungen aus Holzschindeln normalerweise ausgeführt?",
     "optionen": [
-      "Zweilagig, bei sehr starker Witterungsbeanspruchung dreilagig",
       "Immer einlagig",
       "Immer vierlagig",
-      "Die Lagigkeit ist beliebig"
+      "Die Lagigkeit ist beliebig",
+      "Zweilagig, bei sehr starker Witterungsbeanspruchung dreilagig"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Wandbekleidungen werden normalerweise zweilagig ausgeführt, bei sehr starker Witterungsbeanspruchung ist eine dreilagige Bekleidung empfehlenswert.",
     "bildDatei": "/buch/lf11/holzschindeln-wohnhaus.webp",
@@ -928,13 +928,13 @@
     "konfidenz": "hoch",
     "frage": "Womit werden Holzschindeln befestigt?",
     "optionen": [
-      "Mit Edelstahlstiften mit rauem, gerilltem oder geschraubtem Schaft — je Schindel zwei Nägel",
       "Mit verzinkten Nägeln",
-      "Mit Klammern aus Kupfer",
-      "Mit Klebstoff"
+      "Mit Klebstoff",
+      "Mit Edelstahlstiften mit rauem, gerilltem oder geschraubtem Schaft — je Schindel zwei Nägel",
+      "Mit Klammern aus Kupfer"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zur Schindelbefestigung werden Edelstahlstifte mit rauem, gerilltem oder geschraubtem Schaft verwendet. Verzinkte Nägel sind nicht ausreichend korrosionsbeständig und können zu Verfärbungen an der Schindeloberfläche führen. Jede Schindel ist mit zwei Nägeln zu befestigen, die etwa 20 mm tief in die Unterkonstruktion eingeschlagen werden.",
     "bildDatei": "/buch/lf11/nagellaengen-schindeln.webp",
@@ -947,7 +947,7 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 433",
     "konfidenz": "hoch",
-    "text": "Der Randabstand der Stifte sollte {{15}} bis 25 mm betragen, deren Ueberdeckung mindestens {{30}} bis 40 mm.",
+    "text": "Der Randabstand der Stifte sollte {{15}} bis 25 mm betragen, deren Überdeckung mindestens {{30}} bis 40 mm.",
     "akzeptiert": {
       "15": [
         "15"
@@ -969,13 +969,13 @@
     "konfidenz": "hoch",
     "frage": "Wie breit müssen die Bewegungsfugen zwischen Holzschindeln sein?",
     "optionen": [
-      "Im Allgemeinen 1 bis 5 mm",
-      "0 mm",
       "10 bis 20 mm",
-      "Die Breite ist beliebig"
+      "Die Breite ist beliebig",
+      "0 mm",
+      "Im Allgemeinen 1 bis 5 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Da die Holzschindeln nach dem Verlegen ‚arbeiten', sind zwischen ihnen Bewegungsfugen vorzusehen. Ihre Breite richtet sich nach dem Quell- und Schwindmaß des Holzes, der Einbaufeuchte und der durchschnittlichen Holzfeuchte. Die Fugenbreite beträgt im Allgemeinen 1 bis 5 mm.",
     "bildDatei": "/buch/lf11/abstaende-schindelbefestigung.webp",
@@ -991,9 +991,9 @@
     "frage": "Welche Metalle werden durch Zedernholzschindeln und Holzschutzmittel angegriffen?",
     "optionen": [
       "Insbesondere Kupfer und Zink",
-      "Nur Edelstahl",
+      "Keine Metalle",
       "Nur Aluminium",
-      "Keine Metalle"
+      "Nur Edelstahl"
     ],
     "korrekt": [
       0
@@ -1011,13 +1011,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Schindelholz wird für Dachdeckung und Wandbekleidung verwendet und zeigt Farbreaktionen mit Zink?",
     "optionen": [
-      "Alaska-Zeder (Yellow-Cedar) reagiert mit Zink; Rot-Zeder (WRC) eignet sich für Dach und Wand",
       "Nur Fichte",
+      "Alaska-Zeder (Yellow-Cedar) reagiert mit Zink; Rot-Zeder (WRC) eignet sich für Dach und Wand",
       "Nur Lärche",
       "Alle Hölzer sind gleich"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Nach der Übersichtstabelle: Lärche → Wandbekleidung, meist kleinformatig; Rot-Zeder (WRC) → Dachdeckung und Wandbekleidung; Weiß-Zeder (EWC) → Wandbekleidung; Alaska-Zeder (Yellow-Cedar) → Dachdeckung, Farbreaktionen mit Zink; Fichte → Wandbekleidung.",
     "bildDatei": "/buch/lf11/schindelhoelzer.webp",
@@ -1032,13 +1032,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke haben Faserzementfassadenplatten?",
     "optionen": [
-      "6 mm",
-      "4 mm",
       "8 mm",
-      "10 mm"
+      "6 mm",
+      "10 mm",
+      "4 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Faserzementfassadenplatten werden in den Breiten 400 mm, 415 mm und 1570 mm hergestellt. Ihre Mindestdicke beträgt 6 mm. Die kleinen Formate haben eine Fläche unter 0,4 m² und zählen deshalb nach DIN 18517, Teil 1, zu den kleinformatigen Fassadenplatten.",
     "bildDatei": "/buch/lf11/fassadenplatten-standardformate.webp",
@@ -1051,17 +1051,17 @@
     "thema": "Fassadenplatten",
     "quelle": "Grundstufe Bautechnik, Buch S. 434 (Aufgaben S. 443)",
     "konfidenz": "hoch",
-    "text": "Der Traglattenabstand betraegt Plattenbreite plus {{Fuge}}, also z. B. 415 mm plus 5 mm = {{420}} mm. Die Hoehenueberdeckung betraegt {{35}} mm.",
+    "text": "Der Traglattenabstand beträgt Plattenbreite plus {{Fuge}}, also z. B. 415 mm plus 5 mm = {{420}} mm. Die Höhenüberdeckung beträgt {{35}} mm.",
     "akzeptiert": {
-      "Fuge": [
-        "Fuge",
-        "Fugenbreite"
+      "35": [
+        "35"
       ],
       "420": [
         "420"
       ],
-      "35": [
-        "35"
+      "Fuge": [
+        "Fuge",
+        "Fugenbreite"
       ]
     },
     "erklaerung": "Der Traglattenabstand beträgt Plattenbreite + Fuge (z. B. 415 mm + 5 mm = 420 mm). Die Verlegung erfolgt als Stülpdeckung mit senkrechter Fuge (5 mm). Die Höhenüberdeckung beträgt 35 mm.",
@@ -1077,13 +1077,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind Faserzementpaneele?",
     "optionen": [
-      "Brettförmige Elemente unter 30 cm Breite mit Unterstützungsabständen kleiner 80 cm und mindestens 10 mm Dicke",
-      "Großformatige Tafeln über 1 m Breite",
       "Quadratische Kleinformatplatten",
-      "Wellplatten"
+      "Großformatige Tafeln über 1 m Breite",
+      "Wellplatten",
+      "Brettförmige Elemente unter 30 cm Breite mit Unterstützungsabständen kleiner 80 cm und mindestens 10 mm Dicke"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Faserzementpaneele sind brettförmige Elemente unter 30 cm Breite. Sie sind mit Unterstützungsabständen kleiner 80 cm zu verlegen. Ihre Mindestdicke beträgt 10 mm. Die Verlegung kann als Stülpdeckung, mit offener Fuge oder als Boden-Deckel-Schalung erfolgen (Standardformat 3600 × 190 mm).",
     "bildDatei": "/buch/lf11/fassadenplatten-standardformate.webp",
@@ -1098,13 +1098,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke haben Fassadentafeln?",
     "optionen": [
+      "4 mm",
       "8 mm",
       "6 mm",
-      "10 mm",
-      "4 mm"
+      "10 mm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Fassadentafeln sind großformatige Fassadendeckelemente, deren Dicke mindestens 8 mm beträgt. Die Abmessungen von Fassadentafeln sind nicht genormt. Sie werden so gewählt, dass gängige Geschosshöhen (2,75 m) und Brüstungshöhen (1,25 m) nach Besäumen und Zuschneiden mit geringem Verschnitt erreicht werden.",
     "bildDatei": "/buch/lf11/fassadentafeln-formate.webp",
@@ -1119,13 +1119,13 @@
     "konfidenz": "hoch",
     "frage": "Wie müssen Fassadentafeln aus Faserzement beschaffen sein?",
     "optionen": [
-      "Ebenflächig und rechtwinklig, hochgepresst und oberflächenvergütet, frostbeständig, wasserdicht und biegefest",
+      "Nur leicht",
       "Nur farbig beschichtet",
-      "Nur besonders dünn",
-      "Nur leicht"
+      "Ebenflächig und rechtwinklig, hochgepresst und oberflächenvergütet, frostbeständig, wasserdicht und biegefest",
+      "Nur besonders dünn"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Fassadentafeln aus Faserzement müssen ebenflächig und rechtwinklig sein. Sie sind hochgepresst und oberflächenvergütet (kunststoff- oder mineralbeschichtet) und haben bearbeitete oder unbearbeitete Kanten. Fassadentafeln müssen frostbeständig, wasserdicht und biegefest sein.",
     "bildDatei": "/buch/lf11/fassadentafeln-formate.webp",
@@ -1138,7 +1138,7 @@
     "thema": "Fassadentafeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 435",
     "konfidenz": "hoch",
-    "text": "Um Zwaengungen durch Waermedehnung zu verhindern, werden Fassadentafeln mit waagerechten und senkrechten Fugen von {{8}} bis {{10}} mm verlegt.",
+    "text": "Um Zwängungen durch Wärmedehnung zu verhindern, werden Fassadentafeln mit waagerechten und senkrechten Fugen von {{8}} bis {{10}} mm verlegt.",
     "akzeptiert": {
       "8": [
         "8",
@@ -1164,8 +1164,8 @@
     "optionen": [
       "Nach Masse in kg — der Schiefer wird nach Masse gehandelt",
       "Nach Stückzahl",
-      "Nach Fläche in m²",
-      "Nach Volumen"
+      "Nach Volumen",
+      "Nach Fläche in m²"
     ],
     "korrekt": [
       0
@@ -1288,9 +1288,9 @@
     "frage": "Wie hoch ist der Decksteinbedarf bei der Schuppendeckung mit normalem Hieb?",
     "optionen": [
       "Etwa 28 bis 30 kg/m² (behauen)",
-      "Etwa 36 kg/m²",
       "Etwa 10 kg/m²",
-      "Etwa 50 kg/m²"
+      "Etwa 50 kg/m²",
+      "Etwa 36 kg/m²"
     ],
     "korrekt": [
       0
@@ -1306,7 +1306,7 @@
     "thema": "Materialbedarf Schuppen",
     "quelle": "Grundstufe Bautechnik, Buch S. 436",
     "konfidenz": "hoch",
-    "text": "Bei der Schuppendeckung an der Wand betraegt die Hoehenueberdeckung {{4}} cm. Die Seitenueberdeckung ist bei stumpfem und normalem Hieb {{29}} Prozent der Steinhoehe, bei scharfem Hieb {{38}} Prozent.",
+    "text": "Bei der Schuppendeckung an der Wand beträgt die Höhenüberdeckung {{4}} cm. Die Seitenüberdeckung ist bei stumpfem und normalem Hieb {{29}} Prozent der Steinhöhe, bei scharfem Hieb {{38}} Prozent.",
     "akzeptiert": {
       "4": [
         "4",
@@ -1454,8 +1454,8 @@
     "frage": "Wie werden die Randplatten bei der deutschen Deckung mit Bogenschnittschablonen verlegt?",
     "optionen": [
       "Mit mindestens 5 cm Höhenüberdeckung und 5 cm seitlicher Überdeckung",
-      "Ohne Überdeckung",
       "Mit 10 cm Überdeckung",
+      "Ohne Überdeckung",
       "Mit 2 cm Überdeckung"
     ],
     "korrekt": [
@@ -1572,13 +1572,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Platten werden für die Wabendeckung verwendet?",
     "optionen": [
-      "Quadrate mit einer gestutzten Ecke, mit 3 mm Stoßfuge verlegt",
-      "Rechtecke ohne Zuschnitt",
       "Rauten mit zwei gestutzten Ecken",
-      "Sechseckige Platten"
+      "Quadrate mit einer gestutzten Ecke, mit 3 mm Stoßfuge verlegt",
+      "Sechseckige Platten",
+      "Rechtecke ohne Zuschnitt"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Für die Wabendeckung werden Quadrate mit einer gestutzten Ecke verwendet. Die Platten werden mit 3 mm Stoßfuge verlegt. Die gestutzte Ecke weist nach unten, die Gebinde werden um eine halbe Plattendiagonale versetzt gedeckt.",
     "bildDatei": "/buch/lf11/deckschema-wabendeckung.webp",
@@ -1591,7 +1591,7 @@
     "thema": "Wabendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 438",
     "konfidenz": "hoch",
-    "text": "Bei der Wabendeckung ist der senkrechte Schnurabstand S_h = Brustbreite geteilt durch 2 plus {{Fuge}}. Der waagerechte Schnurabstand ist S_w = Brustbreite geteilt durch 2 minus {{1,41}} mal Ueberdeckung.",
+    "text": "Bei der Wabendeckung ist der senkrechte Schnurabstand S_h = Brustbreite geteilt durch 2 plus {{Fuge}}. Der waagerechte Schnurabstand ist S_w = Brustbreite geteilt durch 2 minus {{1,41}} mal Überdeckung.",
     "akzeptiert": {
       "Fuge": [
         "Fuge",
@@ -1645,7 +1645,7 @@
     "thema": "Wabendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 438 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Die Brustbreite beträgt {b} cm, die Stoßfuge {fuge} cm und die Überdeckung {ue} cm. Berechne den senkrechten und den waagerechten Schnurabstand.",
+    "aufgabentext": "Die Brustbreite beträgt {b} cm, die Stoßfuge {fuge} cm und die Überdeckung {ü} cm. Berechne den senkrechten und den waagerechten Schnurabstand.",
     "parameter": [
       {
         "name": "b",
@@ -1700,13 +1700,13 @@
     "konfidenz": "hoch",
     "frage": "Wie berechnet man die Deckfläche einer Platte bei der Rechteckdoppeldeckung?",
     "optionen": [
+      "Deckfläche = Plattenhöhe / 2",
       "Deckfläche = ((Plattenhöhe − Überdeckung) / 2) · Plattenbreite",
-      "Deckfläche = Plattenhöhe · Plattenbreite",
       "Deckfläche = (Höhe − Überdeckung) · (Breite − Überdeckung)",
-      "Deckfläche = Plattenhöhe / 2"
+      "Deckfläche = Plattenhöhe · Plattenbreite"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Rechteckdoppeldeckung erfolgt auf Schalung oder Lattung im halben Verband. Die Platten aus Schiefer oder Faserzement werden ohne Seitenüberdeckung mit 3 bis 6 mm Stoßfuge verlegt. Die Deckfläche einer Platte (sichtbare Plattenfläche) erhält man aus A_D1 = ((H − HÜ)/2) · B.",
     "bildDatei": "/buch/lf11/formel-deckflaeche-doppel.webp",
@@ -1719,7 +1719,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 438 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Schieferplatte ist {hoehe} cm hoch und {breite} cm breit, die Höhenüberdeckung beträgt {ue} cm. Berechne die sichtbare Steinfläche bei der Rechteckdoppeldeckung.",
+    "aufgabentext": "Eine Schieferplatte ist {hoehe} cm hoch und {breite} cm breit, die Höhenüberdeckung beträgt {ü} cm. Berechne die sichtbare Steinfläche bei der Rechteckdoppeldeckung.",
     "parameter": [
       {
         "name": "hoehe",
@@ -1984,13 +1984,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die gezogene Rechteckdoppeldeckung verlegt?",
     "optionen": [
-      "Mit Höhen- und Seitenüberdeckung, mit rechteckigen oder quadratischen Platten",
+      "Nur mit Rautenplatten",
       "Nur mit Höhenüberdeckung",
-      "Ohne jede Überdeckung",
-      "Nur mit Rautenplatten"
+      "Mit Höhen- und Seitenüberdeckung, mit rechteckigen oder quadratischen Platten",
+      "Ohne jede Überdeckung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die gezogene Rechteckdoppeldeckung wird mit Höhen- und Seitenüberdeckung verlegt. Es können rechteckige oder quadratische Platten aus Schiefer oder Faserzement verwendet werden.",
     "bildDatei": "/buch/lf11/deckschema-gezogene-doppel.webp",
@@ -2003,17 +2003,17 @@
     "thema": "Gezogene Doppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 439",
     "konfidenz": "hoch",
-    "text": "Bei der gezogenen Rechteckdoppeldeckung ist die Deckflaeche A = (H minus HUe) mal (B minus {{SUe}}). Der senkrechte Schnurabstand ist S_h = B minus {{2}} mal SUe.",
+    "text": "Bei der gezogenen Rechteckdoppeldeckung ist die Deckfläche A = (H minus HÜ) mal (B minus {{SÜ}}). Der senkrechte Schnurabstand ist S_h = B minus {{2}} mal SÜ.",
     "akzeptiert": {
+      "2": [
+        "2",
+        "zwei"
+      ],
       "SUe": [
         "SUe",
         "SÜ",
         "Seitenueberdeckung",
         "Seitenüberdeckung"
-      ],
-      "2": [
-        "2",
-        "zwei"
       ]
     },
     "erklaerung": "Die sichtbare Plattenfläche (= Deckfläche) ergibt sich aus A_D1 = (H − HÜ) · (B − SÜ). Schnurabstände: S_h = B − 2 · SÜ und S_w = (H − HÜ)/2.",
@@ -2090,13 +2090,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Platten bei der Stülpdeckung verlegt?",
     "optionen": [
+      "Nur mit Seitenüberdeckung",
       "Nur mit Höhenüberdeckung; die Stoßfugen (3 bis 5 mm) werden mit Fugendichtungsstreifen hinterlegt",
-      "Mit Höhen- und Seitenüberdeckung",
       "Ohne Fugen dicht gestoßen",
-      "Nur mit Seitenüberdeckung"
+      "Mit Höhen- und Seitenüberdeckung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei der Stülpdeckung werden die Platten nur mit Höhenüberdeckung verlegt. Die Stoßfugen (3 bis 5 mm) werden mit Fugendichtungsstreifen hinterlegt.",
     "bildDatei": "/buch/lf11/deckschema-stuelpdeckung.webp",
@@ -2287,13 +2287,13 @@
     "konfidenz": "hoch",
     "frage": "Worin unterscheiden sich waagerechte und geschlaufte Deckung?",
     "optionen": [
-      "Bei der waagerechten Deckung liegen die Platten im Querformat, bei der geschlauften Deckung im Hochformat",
+      "Es gibt keinen Unterschied",
       "Die geschlaufte Deckung hat keine Überdeckung",
-      "Die waagerechte Deckung braucht keine Lattung",
-      "Es gibt keinen Unterschied"
+      "Bei der waagerechten Deckung liegen die Platten im Querformat, bei der geschlauften Deckung im Hochformat",
+      "Die waagerechte Deckung braucht keine Lattung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei der waagerechten Deckung werden Schiefer- oder Faserzementplatten im Querformat so gedeckt, dass sie eine Höhen- und Seitenüberdeckung erhalten. Werden die Platten im Hochformat gedeckt, spricht man von einer geschlauften Deckung. Die Gebinde werden als Auslaufgebinde gedeckt.",
     "bildDatei": "/buch/lf11/deckschema-waagerecht.webp",
@@ -2483,13 +2483,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist ein Breitenmeter (Bm) bei Holzschindeln?",
     "optionen": [
-      "Die Menge Holzschindeln, die bei etwa 20 % Holzfeuchtigkeit auf 1 m ohne Fugen nebeneinandergelegt werden können",
       "Die Länge einer Schindel in Metern",
       "Die Breite einer einzelnen Schindel",
+      "Die Menge Holzschindeln, die bei etwa 20 % Holzfeuchtigkeit auf 1 m ohne Fugen nebeneinandergelegt werden können",
       "Ein Quadratmeter Deckfläche"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Schindelgrundbedarf wird in Breitenmetern (Bm) angegeben. Ein Breitenmeter entspricht der Menge von Holzschindeln, die bei einer Holzfeuchtigkeit von etwa 20 % auf 1 m ohne Fugen nebeneinandergelegt werden können.",
     "bildDatei": "/buch/lf11/formeln-schindelbedarf.webp",
@@ -2502,7 +2502,7 @@
     "thema": "Holzschindelbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 441 (Aufgaben S. 443)",
     "konfidenz": "hoch",
-    "text": "Beim {{Divisionsverfahren}} teilt man die Deckflaeche durch den Reihenabstand. Beim {{Multiplikationsverfahren}} multipliziert man die Deckflaeche mit dem Bedarf in Breitenmetern pro m².",
+    "text": "Beim {{Divisionsverfahren}} teilt man die Deckfläche durch den Reihenabstand. Beim {{Multiplikationsverfahren}} multipliziert man die Deckfläche mit dem Bedarf in Breitenmetern pro m².",
     "akzeptiert": {
       "Divisionsverfahren": [
         "Divisionsverfahren",
@@ -2643,13 +2643,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch ist der Verschnittzuschlag beim Schindelgrundbedarf?",
     "optionen": [
-      "Etwa 5 bis 15 %",
-      "Etwa 1 %",
       "Etwa 30 %",
+      "Etwa 1 %",
+      "Etwa 5 bis 15 %",
       "Kein Zuschlag nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Breitenmeter sind das Liefermaß für die nebeneinander gelegten Schindeln bei etwa 20 % Holzfeuchte. Verlegefugen sind dabei nicht berücksichtigt. Der erforderliche Verschnitt muss dem Grundbedarf zugeschlagen werden (etwa 5 bis 15 %). Bei Verringerung der maximal zulässigen Reihenabstände erhöht sich der Schindelgrundbedarf linear.",
     "bildDatei": "/buch/lf11/schindelbedarfstabelle.webp",
@@ -2665,9 +2665,9 @@
     "frage": "Wie ergibt sich der senkrechte Schnurabstand bei Fassadenplatten?",
     "optionen": [
       "Plattenbreite + Fuge",
-      "Plattenbreite − Fuge",
       "Plattenhöhe − Überdeckung",
-      "Plattenbreite / 2"
+      "Plattenbreite / 2",
+      "Plattenbreite − Fuge"
     ],
     "korrekt": [
       0
@@ -2817,9 +2817,9 @@
     "frage": "Wie viele Lattenreihen ergeben sich aus 13 Feldern?",
     "optionen": [
       "14 Lattenreihen (Felder + 1)",
+      "26 Lattenreihen",
       "13 Lattenreihen",
-      "12 Lattenreihen",
-      "26 Lattenreihen"
+      "12 Lattenreihen"
     ],
     "korrekt": [
       0
@@ -2837,13 +2837,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Sockel, Traufe und Gebäudeecken bei Fassadenplatten ausgebildet?",
     "optionen": [
-      "Sockel mit Lüftungsprofil, Attikaabschlüsse mit Metallprofilen, Ecken mit unterlegten Kunststoffwinkeln",
-      "Alle Anschlüsse bleiben offen",
+      "Nur mit Mörtel geschlossen",
       "Nur mit Silikon verfugt",
-      "Nur mit Mörtel geschlossen"
+      "Sockel mit Lüftungsprofil, Attikaabschlüsse mit Metallprofilen, Ecken mit unterlegten Kunststoffwinkeln",
+      "Alle Anschlüsse bleiben offen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Gebäudeecken und seitliche Abschlüsse werden durch unterlegte Kunststoffwinkel abgeschlossen. Der Sockel wird durch ein Lüftungsprofil abgeschlossen. Attikaabschlüsse werden mit Metallprofilen überdeckt. Fenster und Türen werden mit zugeschnittenen Fassadenplatten verkleidet.",
     "bildDatei": "/buch/lf11/sockelausbildungen.webp",

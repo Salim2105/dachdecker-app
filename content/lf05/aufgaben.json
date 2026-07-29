@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Nadelhölzer werden vorwiegend als Bauholz verwendet?",
     "optionen": [
-      "Fichte und Tanne",
-      "Eiche und Rotbuche",
       "Kiefer und Lärche nur im Innenausbau",
-      "Ahorn und Birke"
+      "Ahorn und Birke",
+      "Eiche und Rotbuche",
+      "Fichte und Tanne"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Als Bauhölzer werden vorwiegend die Nadelhölzer Fichte und Tanne verwendet. Kiefern- und Lärchenholz eignet sich wegen seines hohen Harzgehaltes für Bauteile, die feuchte- und witterungsbeständig sein sollen.",
     "bildDatei": "/buch/lf05/holzarten-tabelle.webp",
@@ -30,9 +30,9 @@
     "frage": "Welche Rohdichte hat Fichtenholz (lufttrocken)?",
     "optionen": [
       "470 kg/m³",
-      "750 kg/m³",
+      "250 kg/m³",
       "1000 kg/m³",
-      "250 kg/m³"
+      "750 kg/m³"
     ],
     "korrekt": [
       0
@@ -71,13 +71,13 @@
     "konfidenz": "hoch",
     "frage": "Warum eignet sich Kiefern- und Lärchenholz besonders für feuchte- und witterungsbeanspruchte Bauteile?",
     "optionen": [
-      "Wegen ihres hohen Harzgehaltes",
-      "Weil sie sehr leicht sind",
       "Weil sie keine Jahresringe haben",
+      "Weil sie sehr leicht sind",
+      "Wegen ihres hohen Harzgehaltes",
       "Weil sie nicht brennbar sind"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Kiefer und Lärche haben einen hohen Harzgehalt. Das Harz macht das Holz widerstandsfähiger gegen Feuchtigkeit und Fäulnis, weshalb es für witterungsbeanspruchte Bauteile bevorzugt wird.",
     "bildDatei": "/buch/lf05/holzarten-tabelle.webp",
@@ -109,13 +109,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Bedeutung hat der Wald für den Menschen (ökologisch)?",
     "optionen": [
+      "Er erhöht den CO₂-Gehalt der Luft",
       "Er bindet CO₂, produziert Sauerstoff, ist Wasserreservoir und Erholungsraum",
-      "Er dient nur der Holzproduktion",
       "Er hat keine ökologische Bedeutung",
-      "Er erhöht den CO₂-Gehalt der Luft"
+      "Er dient nur der Holzproduktion"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Wald erfüllt wichtige ökologische Funktionen: Durch die Aufnahme von Kohlenstoffdioxid und die Bindung des Kohlenstoffs verringert er den Treibhausgasanteil (CO₂) in der Atmosphäre. Er ist Sauerstoffquelle, Wasserreservoir, Erholungsraum und schützt den Boden vor Verkarstung.",
     "bildDatei": "/buch/lf05/nahrungshaushalt-baum.webp",
@@ -155,13 +155,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Wachstumsschicht des Stammes findet die Zellteilung (Dickenwachstum) statt?",
     "optionen": [
+      "Im Kernholz",
       "Im Kambium",
-      "Im Mark",
       "In der Borke",
-      "Im Kernholz"
+      "Im Mark"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Das Kambium ist die teilungsfähige Wachstumsschicht zwischen Holz und Rinde. Hier entstehen durch Zellteilung nach innen neue Holzzellen und nach außen Bastzellen — so wächst der Stamm in die Dicke.",
     "bildDatei": "/buch/lf05/zellenaufbau-nadelholz.webp",
@@ -176,13 +176,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich Kernholz von Splintholz?",
     "optionen": [
-      "Kernholz ist dunkler, härter und widerstandsfähiger; Splintholz ist heller und führt Wasser",
-      "Kernholz liegt außen, Splintholz innen",
       "Splintholz ist immer dunkler als Kernholz",
-      "Es gibt keinen Unterschied"
+      "Kernholz ist dunkler, härter und widerstandsfähiger; Splintholz ist heller und führt Wasser",
+      "Es gibt keinen Unterschied",
+      "Kernholz liegt außen, Splintholz innen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Kernholz liegt innen, ist durch Einlagerung von Harzen und Gerbstoffen dunkler, dichter und widerstandsfähiger (verkernt). Splintholz liegt außen, ist heller und führt Wasser und Nährstoffe im lebenden Baum.",
     "bildDatei": "/buch/lf05/schnittarten-stamm.webp",
@@ -199,8 +199,8 @@
     "optionen": [
       "Radialschnitt (Spiegelschnitt)",
       "Querschnitt (Hirnschnitt)",
-      "Tangentialschnitt (Fladerschnitt)",
-      "Schrägschnitt"
+      "Schrägschnitt",
+      "Tangentialschnitt (Fladerschnitt)"
     ],
     "korrekt": [
       0
@@ -235,13 +235,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Wachstumsfehler mindern den Nutzwert des Holzes als Bauholz?",
     "optionen": [
-      "Abholzigkeit, Krummschäftigkeit, Drehwuchs und Äste",
-      "Nur die Rindenfarbe",
+      "Die Höhe des Baumes",
       "Die Anzahl der Jahresringe",
-      "Die Höhe des Baumes"
+      "Nur die Rindenfarbe",
+      "Abholzigkeit, Krummschäftigkeit, Drehwuchs und Äste"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Wachstumsfehler wie Abholzigkeit (starke Durchmesserabnahme), Krummschäftigkeit, Drehwuchs (spiralförmige Fasern), Äste, Harzgallen und Ringrisse mindern die Festigkeit und die Schnittausbeute.",
     "bildDatei": "/buch/lf05/wachstumsfehler-uebersicht.webp",
@@ -273,13 +273,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter Bauschnittholz?",
     "optionen": [
-      "Im Sägewerk eingeschnittenes Rundholz mit mindestens 6 mm Dicke",
       "Entrindete, abgelängte Rundhölzer",
       "Verleimte Holzlamellen",
+      "Im Sägewerk eingeschnittenes Rundholz mit mindestens 6 mm Dicke",
       "Holzspäne mit Kunstharz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bauschnittholz ist im Sägewerk eingeschnittenes Rundholz mit mindestens 6 mm Dicke. Nach Art des Einschnitts unterscheidet man Ganzholz, Halbholz, Viertelholz oder Kreuzholz.",
     "bildDatei": "/buch/lf05/bauschnittholz-arten.webp",
@@ -295,9 +295,9 @@
     "frage": "Welche drei Einschnittarten von Bauschnittholz gibt es?",
     "optionen": [
       "Ganzholz (einstielig), Halbholz (zweistielig), Viertelholz/Kreuzholz",
-      "Kantholz, Bohle, Latte",
+      "Rundholz, Halbrundholz, Vierkant",
       "Sperrholz, Spanplatte, Faserplatte",
-      "Rundholz, Halbrundholz, Vierkant"
+      "Kantholz, Bohle, Latte"
     ],
     "korrekt": [
       0
@@ -340,13 +340,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welchen Abmessungen spricht man bei einem Kantholz von einem Balken (nach DIN EN 844)?",
     "optionen": [
-      "Höhe ≥ 200 mm und Breite ≥ 80 mm",
       "Höhe ≥ 40 mm und Breite ≥ 20 mm",
-      "Dicke > 40 mm und Breite > 3·Dicke",
-      "Bis 40 mm dick und 80 mm breit"
+      "Bis 40 mm dick und 80 mm breit",
+      "Höhe ≥ 200 mm und Breite ≥ 80 mm",
+      "Dicke > 40 mm und Breite > 3·Dicke"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Ein Kantholz gilt als Balken, wenn die Summe von Höhe und Breite ≥ 200 mm und die Höhe ≥ 80 mm ist. Bei h ≥ 200 mm und b ≥ 80 mm spricht man eindeutig von einem Balken.",
     "bildDatei": "/buch/lf05/bauschnittholz-arten.webp",
@@ -361,13 +361,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus besteht Brettschichtholz?",
     "optionen": [
-      "Aus schichtweise verleimten Holzlamellen (Brettern)",
-      "Aus Holzspänen und Kunstharz",
       "Aus einem massiven Baumstamm",
-      "Aus kreuzweise verleimten Furnieren"
+      "Aus Holzspänen und Kunstharz",
+      "Aus kreuzweise verleimten Furnieren",
+      "Aus schichtweise verleimten Holzlamellen (Brettern)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Brettschichtholz (Leimholz) besteht aus schichtweise flach aufeinander verleimten Brettlamellen (30–45 mm dick), meist aus Fichte. Es lässt sich sehr tragfähig und in großen Längen (bis 35 m) herstellen, auch gekrümmt."
   },
@@ -380,13 +380,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Sortiermerkmal beeinflusst die Tragfähigkeit von Schnittholz am stärksten?",
     "optionen": [
-      "Die Ästigkeit (Art, Anzahl und Ausmaß der Äste)",
-      "Die Farbe des Holzes",
       "Der Geruch des Holzes",
-      "Die Rindenstärke"
+      "Die Farbe des Holzes",
+      "Die Rindenstärke",
+      "Die Ästigkeit (Art, Anzahl und Ausmaß der Äste)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Ästigkeit ist das wichtigste Sortiermerkmal. Äste unterbrechen den Faserverlauf und mindern die Tragfähigkeit. Weitere Merkmale sind Jahrringbreite, Faserneigung, Risse und Baumkantenanteil.",
     "bildDatei": "/buch/lf05/sortierklassen-tabelle.webp",
@@ -439,13 +439,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter einem Holzwerkstoff?",
     "optionen": [
-      "Platten und Formteile aus dünnen Holzschichten, Holzspänen oder Holzfasern",
+      "Holz mit besonderem Harzgehalt",
       "Frisch geschlagenes Rundholz",
-      "Nur massives Vollholz",
-      "Holz mit besonderem Harzgehalt"
+      "Platten und Formteile aus dünnen Holzschichten, Holzspänen oder Holzfasern",
+      "Nur massives Vollholz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Als Holzwerkstoffe werden Platten und Formteile bezeichnet, die aus dünnen Holzschichten, Holzspänen oder Holzfasern hergestellt werden. Dazu gehören Sperrholz-, Holzspan- und Holzfaserplatten.",
     "bildDatei": "/buch/lf05/furniersperrholz-aufbau.webp",
@@ -461,9 +461,9 @@
     "frage": "Welchen technischen Vorteil bietet Sperrholz gegenüber Vollholz?",
     "optionen": [
       "Durch kreuzweises Verleimen wird das Arbeiten des Holzes stark eingeschränkt",
-      "Es ist billiger als jedes Vollholz",
       "Es ist unbrennbar",
-      "Es hat eine höhere Zugfestigkeit als Stahl"
+      "Es hat eine höhere Zugfestigkeit als Stahl",
+      "Es ist billiger als jedes Vollholz"
     ],
     "korrekt": [
       0
@@ -502,13 +502,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind OSB-Platten?",
     "optionen": [
-      "Flachpressplatten aus großflächigen, längs ausgerichteten Spänen (Oriented Strand Boards)",
+      "Massivholzplatten aus Vollholz",
       "Sperrholzplatten aus Furnier",
-      "Poröse Holzfaserplatten zur Dämmung",
-      "Massivholzplatten aus Vollholz"
+      "Flachpressplatten aus großflächigen, längs ausgerichteten Spänen (Oriented Strand Boards)",
+      "Poröse Holzfaserplatten zur Dämmung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "OSB (Oriented Strand Boards) sind Flachpressplatten aus großflächigen, langen, schlanken Spänen (strands). Die Späne der Außenschichten liegen in Längsrichtung, wodurch die Platte eine hohe Biegefestigkeit erhält."
   },
@@ -521,13 +521,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür werden poröse Holzfaserplatten verwendet?",
     "optionen": [
+      "Für Betonschalungen",
       "Zur Wärme-, Schall- und Schallschluckdämmung",
       "Als tragende Bauteile",
-      "Für Betonschalungen",
       "Als Bodenbelag mit hoher Belastung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Poröse Holzfaserplatten werden bei der Herstellung nicht gepresst. Wegen ihres porösen Gefüges werden sie zur Wärmedämmung, Schalldämmung und Schallschluckung verwendet — nicht als tragende Bauteile."
   },
@@ -540,13 +540,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind Halbfertigerzeugnisse (Halbfabrikate) aus Holz?",
     "optionen": [
-      "Profilierte, in ihren Abmessungen genormte Hölzer, die einbaufertig vorgeformt sind",
       "Unbehandelte Rundhölzer",
+      "Profilierte, in ihren Abmessungen genormte Hölzer, die einbaufertig vorgeformt sind",
       "Holzspäne für Spanplatten",
       "Frisch geschlagenes Nassholz"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Halbfertigerzeugnisse sind Hölzer, die für einen bestimmten Zweck vorgeformt sind (z. B. Fußleisten, Fasebretter, Stülpschalungsbretter, Balkonbretter). Sie sind bis auf die Oberflächenbehandlung einbaufertig und genormt.",
     "bildDatei": "/buch/lf05/halbfertigerzeugnisse.webp",
@@ -561,13 +561,13 @@
     "konfidenz": "hoch",
     "frage": "Wovon hängt die Druckfestigkeit des Holzes ab?",
     "optionen": [
-      "Vom Faserlauf — in Faserrichtung ist sie viel größer als quer zur Faser",
       "Nur von der Farbe des Holzes",
       "Sie ist in alle Richtungen gleich",
-      "Von der Rindenstärke"
+      "Von der Rindenstärke",
+      "Vom Faserlauf — in Faserrichtung ist sie viel größer als quer zur Faser"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Holzstruktur ist wie ein Röhrenbündel. In Faserrichtung werden die Zellen (Röhren) längs gedrückt und tragen viel. Quer zur Faser werden die Zellen leicht zusammengedrückt — die Druckfestigkeit ist deutlich geringer.",
     "bildDatei": "/buch/lf05/festigkeiten-holz.webp",
@@ -582,13 +582,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Richtung ist die Zugfestigkeit des Holzes am größten?",
     "optionen": [
-      "In Faserrichtung (längs)",
-      "Quer zur Faser",
       "Im 45°-Winkel zur Faser",
-      "Sie ist überall gleich"
+      "Sie ist überall gleich",
+      "Quer zur Faser",
+      "In Faserrichtung (längs)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "In Faserrichtung ist die Zugfestigkeit sehr groß, weil die Cellulosefasern in Längsrichtung ziehen. Quer zur Faser kann Holz kaum auf Zug beansprucht werden — es reißt schnell. Holzfeuchte und Astigkeit mindern die Zugfestigkeit.",
     "bildDatei": "/buch/lf05/festigkeiten-holz.webp",
@@ -660,13 +660,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist das mittlere Schwindmaß von Holz in tangentialer Richtung?",
     "optionen": [
-      "Etwa 10 %",
       "Etwa 0,1 %",
+      "Etwa 10 %",
       "Etwa 30 %",
       "Etwa 50 %"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Schwindmaße sind richtungsabhängig: in Faserrichtung (längs) 0,1–0,5 %, in radialer Richtung (Markstrahlen) etwa 5 %, in tangentialer Richtung (Jahrringe) etwa 10 %. Diese Unterschiede verursachen das Verziehen.",
     "bildDatei": "/buch/lf05/schwindmasse-holz.webp",
@@ -697,13 +697,13 @@
     "konfidenz": "hoch",
     "frage": "Wie verformt sich ein Viertelholz beim Trocknen?",
     "optionen": [
-      "Es verzieht sich rautenförmig",
-      "Es wird kreisrund",
+      "Es wird länger",
       "Es bleibt völlig formstabil",
-      "Es wird länger"
+      "Es verzieht sich rautenförmig",
+      "Es wird kreisrund"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Weil das tangentiale Schwindmaß (10 %) größer ist als das radiale (5 %), verformen sich Querschnitte unterschiedlich: Halbhölzer wölben sich, Bretter werden rund/hohl, und Viertelhölzer verziehen sich rautenförmig.",
     "bildDatei": "/buch/lf05/querschnittsverformung-schwinden.webp",
@@ -719,8 +719,8 @@
     "frage": "Warum sollen Seitenbretter mit der linken Seite (Kernseite) auf die Unterkonstruktion befestigt werden?",
     "optionen": [
       "Weil sich die Bretter zur rechten Seite hin wölben und die Ränder sonst hochstehen",
-      "Weil die linke Seite glatter ist",
       "Weil die linke Seite dunkler ist",
+      "Weil die linke Seite glatter ist",
       "Das ist egal"
     ],
     "korrekt": [
@@ -739,11 +739,11 @@
     "konfidenz": "hoch",
     "text": "Der Holzfeuchtegehalt für die Verwendung im Freien beträgt {{15}}–20 %, in Innenräumen dagegen {{6}}–10 %.",
     "akzeptiert": {
-      "15": [
-        "15"
-      ],
       "6": [
         "6"
+      ],
+      "15": [
+        "15"
       ]
     },
     "erklaerung": "Im Freien (Wandschalungen) trocknet Holz auf 15–20 %, in beheizten Innenräumen (Möbelholz) nur auf 6–10 %. Holz sollte mit dem Feuchtegehalt eingebaut werden, den es am Einbauort erreichen wird."
@@ -757,13 +757,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Regeln sind bei der natürlichen Holztrocknung (Freilufttrocknung) zu beachten?",
     "optionen": [
+      "Holz direkt auf den Boden legen",
       "Stapel luftig aufbauen, vor Regen und Sonne schützen, 50–60 cm über dem Boden lagern",
-      "Holz dicht stapeln und mit Folie luftdicht abdecken",
       "Holz in der prallen Sonne lagern",
-      "Holz direkt auf den Boden legen"
+      "Holz dicht stapeln und mit Folie luftdicht abdecken"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Beim Freilufttrocknen wird das Schnittholz luftig gestapelt (Blockstapel oder Viereckstapel mit Stapelleisten), damit es gleichmäßig trocknet. Der Stapel muss vor Regen und Sonne geschützt und 50–60 cm über dem Boden gelagert werden, um Feuchteaufnahme von unten zu vermeiden.",
     "bildDatei": "/buch/lf05/holztrocknung-stapel.webp",
@@ -799,13 +799,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch werden Rissbildungen bei der Holztrocknung vermieden?",
     "optionen": [
-      "Durch langsames, gleichmäßiges Trocknen ohne zu schnelle Feuchteabgabe",
       "Durch möglichst schnelles Trocknen in der Sonne",
       "Durch Lagerung im Wasser",
-      "Durch dichtes Abdecken mit Folie"
+      "Durch dichtes Abdecken mit Folie",
+      "Durch langsames, gleichmäßiges Trocknen ohne zu schnelle Feuchteabgabe"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Trocknet Holz zu schnell, gibt die Oberfläche schneller Feuchte ab als der Kern — es entstehen Spannungen und Risse. Langsames, gleichmäßiges Trocknen (kontrolliert in der Anlage oder geschützt im luftigen Stapel) vermeidet Rissbildung.",
     "bildDatei": "/buch/lf05/holztrocknung-stapel.webp",
@@ -839,13 +839,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Pilz ist der gefährlichste Holzschädling?",
     "optionen": [
-      "Der Echte Hausschwamm",
-      "Der Kellerschwamm",
       "Der Schimmelpilz",
-      "Der Bläuepilz"
+      "Der Echte Hausschwamm",
+      "Der Bläuepilz",
+      "Der Kellerschwamm"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Echte Hausschwamm ist der gefährlichste Pilz des verarbeiteten Holzes. Er erzeugt Braunfäule, lebt auch ausschließlich von Holz, und seine Myzelstränge können durch Poren und Risse im Mauerwerk und Beton wachsen — er breitet sich so in umgebende Räume aus."
   },
@@ -879,13 +879,13 @@
     "konfidenz": "hoch",
     "frage": "Woran erkennt man, ob Holz vom Hausbockkäfer oder vom Klopfkäfer befallen ist?",
     "optionen": [
-      "An der Größe und Form der Fluglöcher: Hausbock ovale, Klopfkäfer runde kleine Löcher",
       "An der Holzfarbe",
+      "Man kann es nicht unterscheiden",
       "Am Geruch",
-      "Man kann es nicht unterscheiden"
+      "An der Größe und Form der Fluglöcher: Hausbock ovale, Klopfkäfer runde kleine Löcher"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Der Hausbockkäfer hinterlässt ovale Fluglöcher (etwa 3–8 mm), der Klopfkäfer (Nagekäfer) runde, kleine Fluglöcher (etwa 1,5–2 mm) mit Bohrmehlhäufchen darunter. Der Klopfkäfer befällt auch Laubholz.",
     "bildDatei": "/buch/lf05/entwicklungsstufen-insekten.webp",
@@ -900,13 +900,13 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter vorbeugendem baulichem Holzschutz?",
     "optionen": [
-      "Bauliche Maßnahmen, die Feuchtigkeit vom Holz fernhalten (z. B. Sperrschichten, Belüftung)",
-      "Das Bestreichen mit Holzschutzmitteln",
       "Das Ersetzen von befallenem Holz",
-      "Das Verbrennen von Restholz"
+      "Das Verbrennen von Restholz",
+      "Bauliche Maßnahmen, die Feuchtigkeit vom Holz fernhalten (z. B. Sperrschichten, Belüftung)",
+      "Das Bestreichen mit Holzschutzmitteln"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Vorbeugender baulicher Holzschutz hält Feuchtigkeit vom Holz fern: Balkenköpfe im Mauerwerk mit Sperrschichten (Bitumenpappe) schützen, Holz mit Abstand zum Mauerwerk einbauen, Balkenköpfe hinterlüften. Bauliche Maßnahmen sind chemischen vorzuziehen.",
     "bildDatei": "/buch/lf05/holzschutz-baulich.webp",
@@ -922,9 +922,9 @@
     "frage": "Worauf ist beim Einbau der Balkenköpfe eines Reihenhauses zu achten?",
     "optionen": [
       "Sie müssen gegen Feuchtigkeit geschützt und belüftet werden",
+      "Sie brauchen keinen besonderen Schutz",
       "Sie müssen luftdicht eingemauert werden",
-      "Sie müssen im Beton eingegossen werden",
-      "Sie brauchen keinen besonderen Schutz"
+      "Sie müssen im Beton eingegossen werden"
     ],
     "korrekt": [
       0
@@ -962,13 +962,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Unfallschutzregeln sind beim Umgang mit Holzschutzmitteln zu beachten?",
     "optionen": [
-      "Nicht essen/trinken, gekennzeichnet aufbewahren, Schutzkleidung tragen, Hände reinigen",
-      "Holzschutzmittel sind ungefährlich, keine Vorsichtsmaßnahmen nötig",
       "Nur mit bloßen Händen auftragen",
-      "In offenen Behältern lagern"
+      "In offenen Behältern lagern",
+      "Nicht essen/trinken, gekennzeichnet aufbewahren, Schutzkleidung tragen, Hände reinigen",
+      "Holzschutzmittel sind ungefährlich, keine Vorsichtsmaßnahmen nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Holzschutzmittel sind gesundheitsschädlich. Sie müssen gekennzeichnet und sorgfältig verschlossen aufbewahrt werden. Beim Arbeiten Schutzkleidung tragen, nicht essen/trinken/rauchen, danach Hände und Gesicht gründlich reinigen."
   },
@@ -982,9 +982,9 @@
     "frage": "Wie sind Reste und Abfälle von Holzschutzmitteln zu entsorgen?",
     "optionen": [
       "Als Sonderabfall über autorisierte Entsorgungsunternehmen",
-      "Über den normalen Hausmüll",
+      "In den Fluss kippen",
       "In den Boden versickern lassen",
-      "In den Fluss kippen"
+      "Über den normalen Hausmüll"
     ],
     "korrekt": [
       0
@@ -1002,8 +1002,8 @@
     "optionen": [
       "Das Locheisen ist dicker und schmäler und eignet sich für schmale, tiefe Löcher",
       "Das Stemmeisen hat keine Schneide",
-      "Das Locheisen ist breiter als das Stemmeisen",
-      "Es gibt keinen Unterschied"
+      "Es gibt keinen Unterschied",
+      "Das Locheisen ist breiter als das Stemmeisen"
     ],
     "korrekt": [
       0
@@ -1019,13 +1019,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Hobel eignen sich zum Glätten von sägerauem Holz?",
     "optionen": [
-      "Doppelhobel und Raubank (Vorhobeln), dann Putzhobel zum Feinglätten",
       "Nur der Simshobel",
-      "Ein Locheisen",
-      "Der Fuchsschwanz"
+      "Der Fuchsschwanz",
+      "Doppelhobel und Raubank (Vorhobeln), dann Putzhobel zum Feinglätten",
+      "Ein Locheisen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Zum Glätten sägerauer Flächen dienen Doppelhobel und Raubank (grobes Vorhobeln). Mit dem Putzhobel werden die vorgehobelten Flächen ‚fein' geglättet. Der Simshobel dient zum Hobeln von Fälzen."
   },
@@ -1056,13 +1056,13 @@
     "konfidenz": "hoch",
     "frage": "Worauf ist das Klemmen einer Säge beim Schneiden zurückzuführen?",
     "optionen": [
+      "Auf ein zu langes Sägeblatt",
       "Auf eine zu geringe Schränkung der Sägezähne",
-      "Auf eine zu große Schränkung",
       "Auf zu scharfe Zähne",
-      "Auf ein zu langes Sägeblatt"
+      "Auf eine zu große Schränkung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Durch die Schränkung (wechselseitige Schrägstellung der Zähne) wird der Sägespalt breiter als das Blatt. Ist die Schränkung zu gering, klemmt das Blatt im Spalt. Ist sie zu breit, wird der Schnitt unsauber und die Späne reißen aus.",
     "bildDatei": "/buch/lf05/saegearten.webp",
@@ -1077,13 +1077,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Bohrer eignen sich besonders für Dübellochbohrungen?",
     "optionen": [
-      "Forstnerbohrer (für flache, saubere Bohrungen)",
       "Nur der Schneckenbohrer",
       "Der Zentrumbohrer für tiefe Löcher",
+      "Forstnerbohrer (für flache, saubere Bohrungen)",
       "Der Fuchsschwanz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Forstnerbohrer ist ein Maschinenbohrer mit Zentrierspitze für flache Bohrungen (Dübellöcher). Er bohrt den Grund des Bohrloches glatt aus. Der Schlangenbohrer eignet sich für tiefe Bohrungen, der Zentrumbohrer nur für flache Hölzer.",
     "bildDatei": "/buch/lf05/saegearten.webp",
@@ -1099,9 +1099,9 @@
     "frage": "Aus welchen zwei Gruppen von Hölzern besteht eine Fachwerkwand?",
     "optionen": [
       "Tragende Hölzer (Pfosten, Rähm, Schwelle) und aussteifende Hölzer (Streben, Riegel)",
-      "Nur Streben und Riegel",
+      "Sparren und Pfetten",
       "Nur Pfosten und Schwellen",
-      "Sparren und Pfetten"
+      "Nur Streben und Riegel"
     ],
     "korrekt": [
       0
@@ -1159,13 +1159,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Fachwerkwand gegen Feuchtigkeit und Spritzwasser geschützt?",
     "optionen": [
-      "Die Schwelle wird auf dem Sockel gegen Feuchtigkeit geschützt eingebaut (Sperrschicht, Abstand)",
-      "Durch Anstrich der Streben mit Wasser",
       "Durch Einbetonieren der Pfosten",
-      "Gar nicht, Holz braucht keinen Schutz"
+      "Gar nicht, Holz braucht keinen Schutz",
+      "Die Schwelle wird auf dem Sockel gegen Feuchtigkeit geschützt eingebaut (Sperrschicht, Abstand)",
+      "Durch Anstrich der Streben mit Wasser"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Schwelle liegt auf dem Sockel/der Bodenplatte und muss im Freien gegen aufsteigende Feuchtigkeit und Spritzwasser geschützt werden — durch eine kapillarbrechende Schicht (Sperrschicht) und ausreichenden Abstand vom Boden.",
     "bildDatei": "/buch/lf05/fachwerkwand-hoelzer.webp",
@@ -1180,13 +1180,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Pfosten am Ende der Fachwerkwand mit Schwelle und Rähm verbunden?",
     "optionen": [
-      "Mit einem abgesetzten Zapfen",
-      "Mit einem Versatz",
       "Durch Verkleben",
-      "Nur durch Nägel"
+      "Mit einem Versatz",
+      "Nur durch Nägel",
+      "Mit einem abgesetzten Zapfen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Beim Anschluss eines Pfostens am Ende einer Schwelle wird der Zapfen abgesetzt (abgesetzter Zapfen), damit noch genug Holz die Druckkraft über die abgesetzten Flächen überträgt. Die häufigste Querverbindung ist der Zapfen mit Zapfenloch.",
     "bildDatei": "/buch/lf05/zapfenverbindung.webp",
@@ -1219,8 +1219,8 @@
     "frage": "Wofür werden Längsverbindungen wie das gerade Hakenblatt verwendet?",
     "optionen": [
       "Zum Verlängern von Bauhölzern beim Stoß (z. B. Pfetten, Schwellen, Rähme)",
-      "Zum Verbinden von Sparren am First",
       "Zum Anschluss von Pfosten an die Schwelle",
+      "Zum Verbinden von Sparren am First",
       "Zur Dachdeckung"
     ],
     "korrekt": [
@@ -1239,13 +1239,13 @@
     "konfidenz": "hoch",
     "frage": "Wo findet der Scherzapfen (Scherblatt) Anwendung?",
     "optionen": [
-      "Bei der Eckverbindung von Pfetten und beim Anschluss von Sparren am First",
       "Nur bei Fundamenten",
+      "Bei der Eckverbindung von Pfetten und beim Anschluss von Sparren am First",
       "Beim Verlegen von Dachziegeln",
       "Beim Betonieren"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Scherzapfen (Scherblatt) findet z. B. bei der Eckverbindung von Pfetten und beim Anschluss von Sparren am First Anwendung, wenn die Sparren noch durch Pfetten getragen werden. Der Zapfen wird auf Schere (Abscheren) beansprucht.",
     "bildDatei": "/buch/lf05/scherzapfen.webp",
@@ -1260,13 +1260,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist eine Holzliste bei Holzbauarbeiten?",
     "optionen": [
-      "Eine tabellarische Aufstellung aller benötigten Hölzer mit Anzahl, Querschnitt und Länge",
+      "Eine Liste der Werkzeuge",
       "Ein Verzeichnis der Holzarten im Wald",
       "Eine Preisliste des Holzhändlers",
-      "Eine Liste der Werkzeuge"
+      "Eine tabellarische Aufstellung aller benötigten Hölzer mit Anzahl, Querschnitt und Länge"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Die Holzliste vereinfacht die Ermittlung des Holzbedarfs. Sie enthält mindestens Angaben über Anzahl, Querschnitt und Länge der benötigten Hölzer. Aus der Fertigholzmenge wird mit Verschnittzuschlag die Rohholzmenge (Bestellmenge) berechnet."
   },
@@ -1316,13 +1316,13 @@
     "konfidenz": "hoch",
     "frage": "Auf welchen drei Grundprinzipien beruht der Holzrahmenbau?",
     "optionen": [
-      "Rippen (Kanthölzer) tragen, Beplankung (Platten) steift aus, Nägel verbinden",
-      "Streben, Riegel und Versatz",
+      "Beton, Stahl und Ziegel",
       "Sparren, Pfetten und Kehlbalken",
-      "Beton, Stahl und Ziegel"
+      "Rippen (Kanthölzer) tragen, Beplankung (Platten) steift aus, Nägel verbinden",
+      "Streben, Riegel und Versatz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Das Bauprinzip des Holzrahmenbaus: Rippen (Kanthölzer) bilden das Tragwerk, Beplankungen (Holzwerkstoffplatten) steifen aus, und Nägel verbinden die stumpf gestoßenen Hölzer und Platten.",
     "bildDatei": "/buch/lf05/holzrahmenbau-prinzip.webp",
@@ -1337,12 +1337,12 @@
     "konfidenz": "hoch",
     "text": "Das Konstruktionsraster der Ständer beträgt beim Holzrahmenbau {{62,5}} cm, weil sich die Beplankungsplatten mit üblicherweise {{125}} cm Breite ohne Verschnitt auf jedem zweiten Ständer stoßen lassen.",
     "akzeptiert": {
+      "125": [
+        "125"
+      ],
       "62,5": [
         "62,5",
         "62.5"
-      ],
-      "125": [
-        "125"
       ]
     },
     "erklaerung": "Das Raster von 62,5 cm richtet sich nach den Plattenabmessungen (125 cm breit). So passt die Beplankung ohne Verschnitt auf jeden zweiten Ständer. Bei Fenstern und Türen fügt man zusätzliche Ständer ein.",
@@ -1359,9 +1359,9 @@
     "frage": "Welche dreifache Aufgabe übernimmt die Beplankung beim Holzrahmenbau?",
     "optionen": [
       "Aussteifen, Ableiten der Horizontalkräfte und Mittragen der Vertikallasten",
-      "Nur Wärmedämmung",
       "Nur die Optik",
-      "Sie hat keine tragende Funktion"
+      "Sie hat keine tragende Funktion",
+      "Nur Wärmedämmung"
     ],
     "korrekt": [
       0
@@ -1380,9 +1380,9 @@
     "frage": "Wie werden die Wandelemente beim Holzrahmenbau hergestellt?",
     "optionen": [
       "Witterungsunabhängig liegend in der Werkhalle vorgefertigt und dann montiert",
-      "Ausschließlich auf der Baustelle im Freien",
       "Aus einem Stück gegossen",
-      "Nur von Hand ohne Maschinen"
+      "Nur von Hand ohne Maschinen",
+      "Ausschließlich auf der Baustelle im Freien"
     ],
     "korrekt": [
       0
@@ -1398,13 +1398,13 @@
     "konfidenz": "hoch",
     "frage": "Wovon hängt die Tragfähigkeit einer Nagelverbindung ab?",
     "optionen": [
-      "Von der Reibungskraft zwischen Holz und Nagel, also von Holzart, Nageldicke und Nagellage",
+      "Von der Anzahl der Jahresringe",
       "Nur von der Farbe des Nagels",
-      "Nur von der Länge des Holzes",
-      "Von der Anzahl der Jahresringe"
+      "Von der Reibungskraft zwischen Holz und Nagel, also von Holzart, Nageldicke und Nagellage",
+      "Nur von der Länge des Holzes"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Haltefestigkeit hängt von der Reibungskraft zwischen Holz und Nagel ab: Der Nagel haftet in Hartholz besser als in Weichholz und in Hirnholz nur gering. Die Nägel dürfen das Holz beim Eindringen nicht spalten (Nagelspitze stauchen).",
     "bildDatei": "/buch/lf05/nagelverbindung.webp",
@@ -1450,13 +1450,13 @@
     "konfidenz": "hoch",
     "frage": "Durch welche Maßnahme kann verhindert werden, dass das Holz beim Nageln einreißt?",
     "optionen": [
-      "Die Nagelspitze etwas abstumpfen (stauchen) oder vorbohren",
-      "Den Nagel möglichst schnell einschlagen",
+      "Nur ganz dünne Nägel verwenden",
       "Den Nagel erhitzen",
-      "Nur ganz dünne Nägel verwenden"
+      "Den Nagel möglichst schnell einschlagen",
+      "Die Nagelspitze etwas abstumpfen (stauchen) oder vorbohren"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Eine scharfe Nagelspitze reißt die Holzfasern auseinander und spaltet das Holz. Durch Abstumpfen (Stauchen) der Nagelspitze mit dem Hammer werden die Fasern beim Eindringen entzweigeschnitten statt gespalten. Nahe am Rand hilft Vorbohren.",
     "bildDatei": "/buch/lf05/nagelverbindung.webp",
@@ -1494,13 +1494,13 @@
     "konfidenz": "hoch",
     "frage": "Warum soll der Schraubendreher möglichst genau in den Schraubenschlitz passen?",
     "optionen": [
+      "Das ist unwichtig",
       "Damit er nicht abrutscht und den Schlitz oder das Holz beschädigt",
-      "Damit die Schraube schneller rostet",
       "Damit man mehr Kraft braucht",
-      "Das ist unwichtig"
+      "Damit die Schraube schneller rostet"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Schraubendreher muss in Dicke und Breite genau zum Schraubenkopf passen. Ein zu kleiner rutscht ab und beschädigt Schlitz und Holz. Bei dickeren Schrauben (Durchmesser > 10 mm) und Hartholz sollte vorgebohrt werden.",
     "bildDatei": "/buch/lf05/holzschrauben-kurzzeichen.webp",
@@ -1515,13 +1515,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheiden sich Schraubenbolzen und Stabdübel?",
     "optionen": [
-      "Schraubenbolzen werden mit Mutter fest verspannt, Stabdübel werden nur eingetrieben",
+      "Schraubenbolzen sind immer kürzer",
       "Stabdübel sind aus Holz, Schraubenbolzen aus Kunststoff",
       "Es gibt keinen Unterschied",
-      "Schraubenbolzen sind immer kürzer"
+      "Schraubenbolzen werden mit Mutter fest verspannt, Stabdübel werden nur eingetrieben"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bolzen sind zylindrische Verbindungsmittel aus Metall. Schraubenbolzen werden durch eine Mutter mit Unterlagscheibe fest verspannt und verbinden die Hölzer fest. Stabdübel werden in vorgebohrte Löcher glatt eingetrieben und verbinden die Hölzer ohne Verspannung.",
     "bildDatei": "/buch/lf05/duebelverbindungen.webp",
@@ -1536,13 +1536,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist typisch für den Holzskelettbau?",
     "optionen": [
-      "Eine in einem Konstruktionsraster angeordnete Tragstruktur aus Stützen und Trägern",
-      "Massive Wände aus Vollholz",
       "Ausschließlich Betonbauteile",
-      "Kleine Holzquerschnitte ohne Tragfunktion"
+      "Eine in einem Konstruktionsraster angeordnete Tragstruktur aus Stützen und Trägern",
+      "Kleine Holzquerschnitte ohne Tragfunktion",
+      "Massive Wände aus Vollholz"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Typisch für den Skelettbau ist eine in einem Konstruktionsraster angeordnete Tragstruktur aus Stützen und Trägern. Die Wände sind nichttragend. Das tragende Skelett bleibt meist sichtbar und prägt Architektur und Gestalt des Gebäudes."
   },
@@ -1555,13 +1555,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird beim Holzrahmen- und Holzskelettbau die Gebäudeaussteifung erreicht?",
     "optionen": [
-      "Durch Wandscheiben (ausgesteifte Wandelemente) und Deckenscheiben",
       "Nur durch das Eigengewicht",
       "Durch senkrechte Stützen allein",
+      "Durch Wandscheiben (ausgesteifte Wandelemente) und Deckenscheiben",
       "Gar nicht, das ist nicht nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Windkräfte werden durch aussteifende Konstruktionen in Decken- und Wandebene abgetragen. In der Wandebene dienen Wandscheiben (durch Beplankung ausgesteifte Wandelemente), in der Deckenebene Deckenscheiben (großflächige Beplankung)."
   },
@@ -1574,13 +1574,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile haben Holzrahmen- und Holzskelettbau gegenüber dem Fachwerk?",
     "optionen": [
-      "Kleine Holzquerschnitte, rationale Vorfertigung, schnelle Montage und kostengünstiges Bauen",
       "Sie brauchen mehr Holz",
       "Sie sind nur für Ställe geeignet",
-      "Sie lassen keine Gestaltung zu"
+      "Sie lassen keine Gestaltung zu",
+      "Kleine Holzquerschnitte, rationale Vorfertigung, schnelle Montage und kostengünstiges Bauen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Holzrahmen- und Holzskelettbau sind standardisierte Bausysteme: kleine Holzquerschnitte, großflächige Beplankungen, einfache Verbindungen, rationale Vorfertigung in der Werkhalle und schnelle Montage. Das ermöglicht kostengünstiges Bauen mit gestalterischer Vielfalt.",
     "bildDatei": "/buch/lf05/holzrahmenbau-prinzip.webp",
@@ -1595,13 +1595,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Dachneigung spricht man von einem Steildach?",
     "optionen": [
-      "Über 40°",
       "Über 5°",
       "Über 90°",
-      "Über 10°"
+      "Über 10°",
+      "Über 40°"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Von 5° bis 40° Dachneigung spricht man von mäßig steilen Dächern. Ab mehr als 40° sind es Steildächer. Bis zu einer Neigung von 5° werden Dächer als Flachdächer bezeichnet.",
     "bildDatei": "/buch/lf05/traditionelle-dachformen.webp",
@@ -1616,13 +1616,13 @@
     "konfidenz": "hoch",
     "frage": "Welche traditionellen Dachformen unterscheidet man nach dem Querschnitt?",
     "optionen": [
-      "Satteldach, Mansarddach und Pultdach",
       "Nur Flachdach",
       "Kuppel und Schale",
+      "Satteldach, Mansarddach und Pultdach",
       "Zeltdach und Krüppelwalm"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Nach dem Querschnitt unterscheidet man Sattel-, Mansard- und Pultdach. Nach dem Längsschnitt: Giebel-, Krüppelwalm-, Walm- und Zeltdach. Form und Neigung bestimmen das Erscheinungsbild des Gebäudes.",
     "bildDatei": "/buch/lf05/traditionelle-dachformen.webp",
@@ -1678,13 +1678,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Längsaussteifung eines Pfettendaches erreicht?",
     "optionen": [
-      "Durch Pfosten mit Bügen (Kopfbändern) oder V-förmig angeordnete Streben",
       "Nur durch die Dachlattung",
+      "Durch Pfosten mit Bügen (Kopfbändern) oder V-förmig angeordnete Streben",
       "Durch die Dachdeckung",
       "Sie ist nicht erforderlich"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "In Längsrichtung werden Pfettendachstühle durch Pfettenstränge ausgesteift: Die Pfetten werden durch senkrechte Pfosten mit Bügen (Kopfbändern) oder V-förmig angeordnete Streben unterstützt. Die entstehenden Dreiecke geben die Steifigkeit.",
     "bildDatei": "/buch/lf05/pfettendachstuhl-aussteifung.webp",
@@ -1699,13 +1699,13 @@
     "konfidenz": "hoch",
     "frage": "Warum dürfen Kerven am Sparren nicht tiefer als etwa 1/4 der Sparrenhöhe sein?",
     "optionen": [
-      "Weil sie sonst den tragenden Querschnitt des Sparrens zu stark schwächen",
-      "Weil sie sonst zu teuer sind",
       "Weil das Holz sonst nicht brennt",
-      "Weil sie sonst zu klein sind"
+      "Weil sie sonst den tragenden Querschnitt des Sparrens zu stark schwächen",
+      "Weil sie sonst zu klein sind",
+      "Weil sie sonst zu teuer sind"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Kerven (Ausklinkungen zur Auflagerung des Sparrens auf der Pfette) schwächen den Sparrenquerschnitt. Sie dürfen höchstens 1/4 der Sparrenhöhe tief sein, damit genug tragender Querschnitt bleibt. Bei tieferem Bedarf hilft eine angenagelte Knagge.",
     "bildDatei": "/buch/lf05/pfettendachstuhl-aussteifung.webp",
@@ -1720,13 +1720,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Dachlasten bei einem Sparrendach abgetragen?",
     "optionen": [
-      "Die Sparren bilden mit der Decke ein steifes Dreieck; es sind keine innen liegenden Stützen nötig",
-      "Über eine Mittelpfette und Pfosten",
       "Nur über die Firstpfette",
-      "Über Streben in der Dachmitte"
+      "Über Streben in der Dachmitte",
+      "Über eine Mittelpfette und Pfosten",
+      "Die Sparren bilden mit der Decke ein steifes Dreieck; es sind keine innen liegenden Stützen nötig"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Beim Sparrendach bilden die Sparrenpaare mit der darunterliegenden Decke ein steifes Dreieck. Die Verbindungspunkte können gelenkig sein. Es sind keine innen liegenden Konstruktionsteile (Stützen, Pfetten) nötig — das gibt größte Freiheit im Dachraum.",
     "bildDatei": "/buch/lf05/sparrendach-kehlbalkendach.webp",
@@ -1741,13 +1741,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich das Kehlbalkendach vom Sparrendach?",
     "optionen": [
+      "Es ist nur für Flachdächer geeignet",
       "Das Sparrenpaar wird zusätzlich durch einen Kehlbalken ausgesteift",
       "Es hat keine Sparren",
-      "Es hat eine Mittelpfette statt Sparren",
-      "Es ist nur für Flachdächer geeignet"
+      "Es hat eine Mittelpfette statt Sparren"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Beim Kehlbalkendach wird das Sparrenpaar zusätzlich durch einen Kehlbalken ausgesteift. Die günstigste Lage des Kehlbalkens liegt bei etwa 1/2 bis 2/3 der Dachhöhe. Kehlbalkendächer sind bei steilen Dächern (ab 45°) und größeren Spannweiten (über 8 m) wirtschaftlicher als Sparrendächer.",
     "bildDatei": "/buch/lf05/sparrendach-kehlbalkendach.webp",
@@ -1800,13 +1800,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dienen Auswechslungen im Dach?",
     "optionen": [
-      "Sie tragen Belastungen bei Dachdurchbrüchen (Schornstein, Dachfenster) auf benachbarte Sparren ab",
-      "Sie ersetzen die Dachdeckung",
       "Sie dämmen das Dach",
+      "Sie ersetzen die Dachdeckung",
+      "Sie tragen Belastungen bei Dachdurchbrüchen (Schornstein, Dachfenster) auf benachbarte Sparren ab",
       "Sie führen Regenwasser ab"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei Dachdurchbrüchen (Schornstein, Dachflächenfenster) müssen Sparren unterbrochen werden. Durch Auswechslungen (Wechsel + Füllhölzer) werden die Lasten des ausgewechselten Sparrens auf die benachbarten Sparren abgetragen.",
     "bildDatei": "/buch/lf05/sparrenauswechslung.webp",
@@ -1822,8 +1822,8 @@
     "frage": "Was sind Dachgauben?",
     "optionen": [
       "Dachaufbauten mit senkrechten Fenstern, die den Dachraum vergrößern und belichten",
-      "Waagerechte Dachflächenfenster",
       "Schornsteine",
+      "Waagerechte Dachflächenfenster",
       "Regenrinnen"
     ],
     "korrekt": [
@@ -1900,13 +1900,13 @@
     "konfidenz": "hoch",
     "frage": "Welche gesundheitlichen Gefahren können bei der Berührung mit Holzschutzmitteln auftreten?",
     "optionen": [
+      "Nur Erkältung",
       "Vergiftungen, Verätzungen oder Reizungen; bei öligen Mitteln zusätzlich Brand- und Explosionsgefahr",
       "Keine Gefahren",
-      "Nur Sonnenbrand",
-      "Nur Erkältung"
+      "Nur Sonnenbrand"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Unsachgemäßer Umgang und mangelnde Sorgfalt mit Holzschutzmitteln können zu Vergiftungen, Verätzungen oder Reizungen führen. Bei öligen Holzschutzmitteln besteht zusätzlich Brand- und Explosionsgefahr."
   },
@@ -1919,13 +1919,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist bei der Montage der Holzdachkonstruktion in großer Höhe besonders wichtig?",
     "optionen": [
-      "Arbeitsgerüste und Absturzsicherungen (Fanggerüst, Fangnetze) müssen vorhanden sein",
-      "Schnelligkeit vor Sicherheit",
       "Auf Schutzausrüstung kann verzichtet werden",
-      "Nur bei Regen ist Sicherung nötig"
+      "Arbeitsgerüste und Absturzsicherungen (Fanggerüst, Fangnetze) müssen vorhanden sein",
+      "Nur bei Regen ist Sicherung nötig",
+      "Schnelligkeit vor Sicherheit"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei der Montage in großer Höhe müssen Arbeitsgerüste ordnungsgemäß erstellt und Absturzsicherungen (Fanggerüst, Fangnetze, Höhensicherungsgeräte) vorhanden sein. Zur persönlichen Schutzausrüstung gehört im Schwenkbereich des Krans der Schutzhelm."
   },
@@ -1938,13 +1938,13 @@
     "konfidenz": "hoch",
     "frage": "Warum werden im modernen Holzbau immer mehr Blechformteile für Holzverbindungen eingesetzt?",
     "optionen": [
-      "Weil sie den Holzquerschnitt kaum schwächen und rasch, druck- und zugfest montiert werden können",
       "Weil sie billiger als Nägel sind",
       "Weil sie das Holz stärker schwächen",
-      "Weil sie nur bei Flachdächern erlaubt sind"
+      "Weil sie nur bei Flachdächern erlaubt sind",
+      "Weil sie den Holzquerschnitt kaum schwächen und rasch, druck- und zugfest montiert werden können"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Blechformteile (aus min. 2 mm dickem Stahlblech) vermeiden die Schwächung des Holzquerschnitts, die zimmermannsmäßige Verbindungen (Kerven, Zapfen) verursachen. Sie sind druck- und zugfest, rasch einbaubar und für viele Verbindungen geeignet."
   },
@@ -1957,13 +1957,13 @@
     "konfidenz": "hoch",
     "frage": "Warum muss bei einer Zapfenverbindung der Zapfen etwas kürzer sein als das Zapfenloch tief ist?",
     "optionen": [
+      "Damit man Holz spart",
       "Damit keine Belastung auf den Zapfenquerschnitt übertragen wird (der Zapfen soll nicht ‚auf Stoß' stehen)",
       "Damit der Zapfen leichter herausfällt",
-      "Damit man Holz spart",
       "Das ist nicht nötig"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Bei druckbeanspruchten Zapfenverbindungen wird der Druck über die abgesetzten Flächen (Brust) des Zapfens übertragen. Der Zapfen wird etwas kürzer als das Zapfenloch gemacht, damit keine Belastung auf den schwächeren Zapfenquerschnitt gelangt (kein Stoß am Zapfengrund).",
     "bildDatei": "/buch/lf05/zapfenverbindung.webp",
@@ -1978,13 +1978,13 @@
     "konfidenz": "hoch",
     "frage": "Wann kann auf eine chemische Holzschutzmittelbehandlung bei tragenden Bauteilen verzichtet werden?",
     "optionen": [
-      "Wenn durch bauliche Maßnahmen ausreichender Holzschutz erreicht wird (Holz bleibt trocken)",
+      "Nur im Winter",
       "Nie, chemischer Holzschutz ist immer Pflicht",
       "Nur bei Laubholz",
-      "Nur im Winter"
+      "Wenn durch bauliche Maßnahmen ausreichender Holzschutz erreicht wird (Holz bleibt trocken)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für tragende Bauteile aus Holz kann durch baulichen Holzschutz erreicht werden, dass chemischer Holzschutz überflüssig ist. Bleibt das Holz dauerhaft trocken (Holzfeuchte unter ~18 %), ist kein Pilz- oder Insektenbefall möglich — bauliche Maßnahmen sind zu bevorzugen."
   },
@@ -2077,13 +2077,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheiden sich ständige Lasten von veränderlichen Lasten?",
     "optionen": [
+      "Veränderliche Lasten sind immer größer",
       "Ständige Lasten (Eigenlasten) wirken dauernd, veränderliche (Nutzlasten, Wind, Schnee) wechseln",
       "Ständige Lasten wirken nur im Winter",
-      "Veränderliche Lasten sind immer größer",
       "Es gibt keinen Unterschied"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Ständige Lasten sind unveränderlich und wirken ständig — die Eigenlasten der tragenden Bauteile (Wände, Decken, Sparren). Veränderliche Lasten (Nutzlasten) sind beweglich: Personen, Lagerstoffe, Wind, Schnee. Die Gesamtlast ist die Summe aus Eigenlast und Nutzlast.",
     "bildDatei": "/buch/lf05/lasten-am-bau.webp",
@@ -2120,9 +2120,9 @@
     "frage": "Mit welchem zeichnerischen Verfahren setzt man zwei Kräfte zu einer Gesamtkraft (Resultierenden) zusammen?",
     "optionen": [
       "Mit dem Kräfteparallelogramm oder dem Kräftedreieck",
-      "Mit dem Satz des Pythagoras allein",
+      "Mit der Prozentrechnung",
       "Mit dem Strahlensatz",
-      "Mit der Prozentrechnung"
+      "Mit dem Satz des Pythagoras allein"
     ],
     "korrekt": [
       0
@@ -2260,13 +2260,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Zellart bildet die Hauptmasse des Nadelholzes und dient als Leit- und Stützzelle?",
     "optionen": [
-      "Die Tracheide (Mehrzweckzelle)",
       "Die Speicherzelle",
       "Die Markstrahlzelle",
+      "Die Tracheide (Mehrzweckzelle)",
       "Das Kambium"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei Nadelhölzern übernimmt die spindelförmige Mehrzweckzelle (Tracheide) Leitungs- und Stützaufgabe zugleich. Sie bildet die Hauptmasse des Holzes. Die Saftleitung erfolgt durch ventilartige Poren, die Tüpfel.",
     "bildDatei": "/buch/lf05/zellenaufbau-nadelholz.webp",
@@ -2281,13 +2281,13 @@
     "konfidenz": "hoch",
     "frage": "Wie ist eine Stabsperrholzplatte (Tischlerplatte) aufgebaut?",
     "optionen": [
-      "Zwei Deckfurniere mit einer Mittellage aus nebeneinanderliegenden Holzleisten",
+      "Aus Holzfasern mit Bitumen",
       "Aus mindestens fünf gleich dicken Furnierlagen",
-      "Aus Holzspänen und Kunstharz",
-      "Aus Holzfasern mit Bitumen"
+      "Zwei Deckfurniere mit einer Mittellage aus nebeneinanderliegenden Holzleisten",
+      "Aus Holzspänen und Kunstharz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Mittellagensperrholz (Tischlerplatte, TI) besteht aus mindestens drei Lagen: zwei Deckfurnieren und einer Mittellage aus nebeneinanderliegenden Holzleisten (Stabsperrholz) oder Schälfurnierstreifen (Stäbchensperrholz).",
     "bildDatei": "/buch/lf05/furniersperrholz-aufbau.webp",
@@ -2320,9 +2320,9 @@
     "frage": "Wie wird die Queraussteifung bei einem liegenden Pfettendachstuhl erreicht?",
     "optionen": [
       "Durch unverschiebliche Dreiecke aus Streben, Riegel und Mittelpfetten",
+      "Sie ist nicht erforderlich",
       "Nur durch die Dachlattung",
-      "Durch die Dachdeckung",
-      "Sie ist nicht erforderlich"
+      "Durch die Dachdeckung"
     ],
     "korrekt": [
       0
@@ -2340,13 +2340,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden die Sparren am Fußpunkt eines Sparrendaches mit der Decke verbunden?",
     "optionen": [
-      "Der Sparrenfuß wird über eine Schwelle oder Knagge am Stahlbetonwiderlager der Decke angeschlossen",
-      "Die Sparren werden nur lose aufgelegt",
+      "Sie werden verklebt",
       "Die Sparren werden einbetoniert",
-      "Sie werden verklebt"
+      "Der Sparrenfuß wird über eine Schwelle oder Knagge am Stahlbetonwiderlager der Decke angeschlossen",
+      "Die Sparren werden nur lose aufgelegt"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "In den häufigsten Fällen werden die Decken unter Sparren- und Kehlbalkendächern in Stahlbeton ausgeführt. Der Sparrenfuß wird über eine Schwelle an ein Stahlbetonwiderlager angeschlossen — durch Winkelschnitt und Sparrennagel oder über eine Knagge.",
     "bildDatei": "/buch/lf05/sparrendach-kehlbalkendach.webp",
@@ -2377,13 +2377,13 @@
     "konfidenz": "hoch",
     "frage": "Wie können ältere Dachkonstruktionen grundsätzlich ausgebildet sein?",
     "optionen": [
-      "Als abgestrebte/liegende Pfettendachstühle, Spreng- und Hängewerke oder Kehlbalkendächer",
-      "Nur als Flachdächer",
+      "Ausschließlich in Stahlbeton",
       "Nur als Zeltdächer",
-      "Ausschließlich in Stahlbeton"
+      "Als abgestrebte/liegende Pfettendachstühle, Spreng- und Hängewerke oder Kehlbalkendächer",
+      "Nur als Flachdächer"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Ältere Dachtragwerke wurden ohne statischen Nachweis nach Erfahrung errichtet. Sie können als abgestrebte bzw. liegende Pfettendachstühle, als Spreng- und Hängewerke oder als Kehlbalkendächer mit stehendem bzw. liegendem Stuhl ausgebildet sein.",
     "bildDatei": "/buch/lf05/sprengwerk-haengewerk.webp",
@@ -2398,12 +2398,12 @@
     "konfidenz": "hoch",
     "text": "Die günstigste Lage des Kehlbalkens liegt bei etwa der halben bis {{zwei}} Drittel der Dachhöhe. Kehlbalkendächer sind erst bei steilen Dächern ab {{45}}° wirtschaftlicher als Sparrendächer.",
     "akzeptiert": {
+      "45": [
+        "45"
+      ],
       "zwei": [
         "zwei",
         "2"
-      ],
-      "45": [
-        "45"
       ]
     },
     "erklaerung": "Der Kehlbalken sitzt bei 1/2 bis 2/3 der Dachhöhe. Kehlbalkendächer lohnen sich bei steilen Dächern (ab 45°) und größeren Spannweiten (über 8 m). Bei einseitiger Schneelast kann sich der Kehlbalkenanschluss verschieben.",
@@ -2419,13 +2419,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dienen Ringkeildübel und Krallendübel im Ingenieurholzbau?",
     "optionen": [
-      "Zur Übertragung größerer Druck-, Zug- und Schubkräfte auf kleine Anschlussflächen",
-      "Nur zur Verzierung",
+      "Als Wärmedämmung",
       "Zum Abdichten von Fugen",
-      "Als Wärmedämmung"
+      "Zur Übertragung größerer Druck-, Zug- und Schubkräfte auf kleine Anschlussflächen",
+      "Nur zur Verzierung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Dübel besonderer Bauart (Ringkeildübel einseitig/zweiseitig, Krallendübel) ermöglichen die Übertragung größerer Druck-, Zug- und Schubkräfte auf kleine Anschlussflächen. Sie müssen immer mit Schraubenbolzen zusammengespannt werden.",
     "bildDatei": "/buch/lf05/duebelverbindungen.webp",
