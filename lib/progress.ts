@@ -59,10 +59,3 @@ export function loescheFortschritt() {
 export function istFaellig(f: AufgabenFortschritt | undefined, jetzt: number): boolean {
   return f !== undefined && f.faelligAm <= jetzt;
 }
-
-export function lernfeldFortschritt(_lfId: string, aufgabeIds: string[]): number {
-  if (aufgabeIds.length === 0) return 0;
-  const all = ladeFortschritt();
-  const done = aufgabeIds.filter((id) => all[id] && all[id].bewertung !== "falsch").length;
-  return done / aufgabeIds.length;
-}
