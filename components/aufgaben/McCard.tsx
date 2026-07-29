@@ -51,9 +51,24 @@ export function McCard({
   return (
     <div>
       <p className="text-[17px] font-medium">{aufgabe.frage}</p>
+      {/* In der Übung steht die Anzahl da, in der Prüfungssimulation nicht.
+          "Mehrfachauswahl möglich" lässt offen, ob zwei oder drei Antworten
+          stimmen — man probiert durch und merkt sich nebenbei, was man schon
+          angeklickt hat. Das prüft Aufzählen, nicht Erkennen, und kostet
+          Arbeitsgedächtnis, das abends knapp ist. Die Anzahl verrät nicht,
+          WELCHE richtig sind: der Abruf bleibt unangetastet.
+          In der Simulation bleibt es beim vagen Hinweis — sie soll nicht
+          leichter sein als die echte Prüfung. */}
       {mehrfach && (
         <p className="mt-1 text-[13px]" style={{ color: "var(--text-muted)" }}>
-          Mehrfachauswahl möglich
+          {aufloesen ? (
+            <>
+              <span className="tnum">{aufgabe.korrekt.length}</span> von{" "}
+              <span className="tnum">{aufgabe.optionen.length}</span> sind richtig
+            </>
+          ) : (
+            "Mehrfachauswahl möglich"
+          )}
         </p>
       )}
       {/* Die ganze Zeile ist die Trefferfläche, mindestens 56 px hoch — mit
