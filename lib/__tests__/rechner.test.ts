@@ -174,6 +174,15 @@ describe("kehle", () => {
 });
 
 describe("schleppgaube", () => {
+  // Gegengerechnet mit dem durchgerechneten Beispiel auf Buchseite 540:
+  // Hauptdach 40°, Gaube 25°, Sparrenlänge 4,30 m, Überstand 25 cm.
+  // Das Buch kommt auf t_g = 3,67 m und h_g = 3,08 m.
+  it("trifft das durchgerechnete Buchbeispiel S. 540", () => {
+    const g = schleppgaube(4.3, 0.25, 40, 25);
+    expect(g.tiefe).toBeCloseTo(3.67, 2);
+    expect(g.hoehe).toBeCloseTo(3.08, 2);
+  });
+
   // Nach Buchbeispiel S. 540: s' = s − ü, t = s'·cos β, h = t·tan α
   it("folgt der Schrittkette aus dem Buch", () => {
     const g = schleppgaube(5, 0.5, 40, 15);
