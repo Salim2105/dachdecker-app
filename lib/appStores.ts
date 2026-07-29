@@ -38,3 +38,19 @@ export const wortbankStore = {
   getServerSnapshot: () => false,
   set: (an: boolean) => wortbankRaw.set(an ? "1" : ""),
 };
+
+/**
+ * Ton beim Prüfen einer Antwort. Standardmäßig AN.
+ *
+ * Umgekehrt gespeichert als die Wortbank: hier steht "0" für aus, leer für an.
+ * Sonst wäre der Standard aus, und ein Ton, den man erst suchen muss, hört
+ * niemand je.
+ */
+const tonRaw = createStringStore("ton-aus");
+export const tonStore = {
+  subscribe: tonRaw.subscribe,
+  getSnapshot: () => tonRaw.getSnapshot() !== "0",
+  // Auf dem Server still — sonst gäbe es beim Hydrieren einen Zustandssprung.
+  getServerSnapshot: () => true,
+  set: (an: boolean) => tonRaw.set(an ? "" : "0"),
+};

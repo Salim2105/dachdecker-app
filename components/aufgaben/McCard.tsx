@@ -3,7 +3,7 @@ import { useState } from "react";
 import type { McAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
-import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
+import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 export function McCard({
   aufgabe,
@@ -37,7 +37,7 @@ export function McCard({
       gewaehlt.size === korrektSet.size && [...gewaehlt].every((i) => korrektSet.has(i));
     const b: Bewertung = gleich ? "richtig" : "falsch";
     setBewertung(b);
-    haptischeRueckmeldung(b);
+    trefferRueckmeldung(b);
     onErgebnis(b);
   };
 

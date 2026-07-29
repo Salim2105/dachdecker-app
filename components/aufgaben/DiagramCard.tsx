@@ -3,7 +3,7 @@ import { useState } from "react";
 import type { DiagramAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
-import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
+import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -36,7 +36,7 @@ export function DiagramCard({
     const b: Bewertung =
       richtig === keys.length ? "richtig" : richtig === 0 ? "falsch" : "teilweise";
     setBewertung(b);
-    haptischeRueckmeldung(b);
+    trefferRueckmeldung(b);
     onErgebnis(b);
   };
 

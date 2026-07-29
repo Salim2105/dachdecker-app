@@ -4,7 +4,7 @@ import type { CalcAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter, rechne } from "@/lib/calc";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
-import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
+import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 export function CalcCard({
   aufgabe,
@@ -44,7 +44,7 @@ export function CalcCard({
     setGeprueft(true);
     const ok = pruefeAntwort(parseFloat(eingabe.replace(",", ".")), loesung.wert, aufgabe.toleranzProzent);
     const b: Bewertung = ok ? "richtig" : "falsch";
-    haptischeRueckmeldung(b);
+    trefferRueckmeldung(b);
     onErgebnis(b);
   };
 

@@ -6,7 +6,7 @@ import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
 import { wortbankStore } from "@/lib/appStores";
 import { useSyncExternalStore } from "react";
-import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
+import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 /** Reihenfolge stabil pro Aufgabe mischen, damit sie beim Tippen nicht springt. */
 function mischen<T>(xs: T[], saat: string): T[] {
@@ -66,7 +66,7 @@ export function ClozeCard({
     const b: Bewertung =
       richtig === gaps.length ? "richtig" : richtig === 0 ? "falsch" : "teilweise";
     setBewertung(b);
-    haptischeRueckmeldung(b);
+    trefferRueckmeldung(b);
     onErgebnis(b);
   };
 

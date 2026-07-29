@@ -1,7 +1,8 @@
 import type { Bewertung } from "@/content/schema";
+import { spieleTon } from "@/lib/ton";
 
 /**
- * Kurzes haptisches Signal beim Prüfen einer Antwort.
+ * Kurze Rückmeldung beim Prüfen einer Antwort: Vibration und Ton.
  *
  * Nur für maschinell geprüfte Aufgabentypen (mc, calc, cloze, diagram) — dort
  * vergleicht der Code gegen die hinterlegte Lösung, das Signal kann also nicht
@@ -14,8 +15,13 @@ import type { Bewertung } from "@/content/schema";
  * ein Zusatzkanal, kein Zustandsträger. Der Zustand steht weiterhin sichtbar
  * in Farbe und Text.
  */
-export function haptischeRueckmeldung(b: Bewertung): void {
+export function trefferRueckmeldung(b: Bewertung): void {
   if (typeof navigator === "undefined") return;
+
+  // Ton hat einen eigenen Schalter — wer ihn ausmacht, will Ruhe, nicht weniger
+  // Bewegung. Deshalb steht er vor der Bewegungs-Abfrage.
+  spieleTon(b);
+
   // Wer Bewegung reduziert haben will, will in aller Regel auch keine Vibration.
   if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
 

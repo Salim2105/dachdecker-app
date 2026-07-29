@@ -1,10 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
-import { letztesLfStore } from "@/lib/appStores";
+import { letztesLfStore, tonStore } from "@/lib/appStores";
 import { leereCalcCache } from "@/lib/calc";
 // Bewusst aus lib/reifegrad: das Modul kennt nur Zahlen, keine Aufgabentexte.
 import { pruefungsreife, GESAMT_AUFGABEN } from "@/lib/reifegrad";
@@ -106,6 +106,10 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
         <span className="text-xs" style={{ color: "var(--text-muted)" }}>
           {index + 1} / {aufgaben.length}
         </span>
+        {/* Der Schalter steht hier und nicht auf einer Einstellungsseite: Wer
+            den Ton stört, merkt es mitten in der Sitzung — dann muss er in
+            Reichweite sein, nicht zwei Bildschirme entfernt. */}
+        <TonSchalter />
       </div>
 
       <AufgabeSwitch key={aktuell.id} aufgabe={aktuell} onErgebnis={handleErgebnis} />
@@ -120,6 +124,28 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
         </button>
       )}
     </div>
+  );
+}
+
+function TonSchalter() {
+  const an = useSyncExternalStore(
+    tonStore.subscribe,
+    tonStore.getSnapshot,
+    tonStore.getServerSnapshot,
+  );
+  return (
+    <button
+      onClick={() => tonStore.set(!an)}
+      aria-pressed={an}
+      aria-label={an ? "Ton ausschalten" : "Ton einschalten"}
+      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full"
+      style={{ color: an ? "var(--accent)" : "var(--text-faint)" }}
+    >
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M11 5 6 9H3v6h3l5 4z" />
+        {an ? <path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" /> : <path d="M22 9l-6 6M16 9l6 6" />}
+      </svg>
+    </button>
   );
 }
 

@@ -8,6 +8,7 @@ import { datumStore, letztesLfStore } from "@/lib/appStores";
 // Bewusst aus lib/reifegrad statt lib/tagesplan: Letzteres zieht die
 // Aufgabensammlung mit, die diese Seite nie anzeigt.
 import { pruefungsreife, tagesdosis } from "@/lib/reifegrad";
+import { serie } from "@/lib/serie";
 
 const TAG = 86_400_000;
 
@@ -33,6 +34,7 @@ export default function Home() {
   // sinken kann. Wer sie sehen will, holt sie sich dort ab.
   const grad = pruefungsreife(fortschritt, now);
   const dosis = tagesdosis(grad, tageBis);
+  const tage = serie(fortschritt, now);
 
   return (
     <div className="flex flex-col gap-5">
@@ -44,6 +46,18 @@ export default function Home() {
         <p className="mt-1.5 text-[15px]" style={{ color: "var(--text-muted)" }}>
           Übe alle Lernfelder — vom Material bis zum Bau.
         </p>
+        {/* Ab zwei Tagen: "1 Tag in Folge" ist keine Serie, sondern gestern.
+            Gezählt wird Anwesenheit, nicht Erfolg — das ist die einzige Zahl,
+            die man sich nicht schönklicken kann. */}
+        {tage >= 2 && (
+          <p className="mt-3 inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-[13px] font-semibold"
+             style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 2c1 4-2 5-2 8a4 4 0 008 0c0-2-1-3-2-4 3 1 5 4 5 7a7 7 0 11-14 0c0-5 5-7 5-11z" />
+            </svg>
+            <span className="tnum">{tage}</span> Tage in Folge
+          </p>
+        )}
       </div>
 
       {/* Countdown */}
