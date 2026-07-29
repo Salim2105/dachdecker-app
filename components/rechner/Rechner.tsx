@@ -11,6 +11,13 @@ import {
   regenwasserabfluss,
   laengenausdehnung,
   materialbedarf,
+  gratsparren,
+  kehle,
+  schleppgaube,
+  satteldachgaube,
+  haftabstand,
+  scharen,
+  ziegelProQm,
   zahl,
   RSI_WERTE,
   RSE,
@@ -21,9 +28,12 @@ import { Feld, Ergebnis, Hinweis, Block, num } from "@/components/rechner/Feld";
 
 const TABS = [
   { id: "dach", label: "Dachneigung" },
+  { id: "grat", label: "Grat & Kehle" },
+  { id: "gaube", label: "Gauben" },
   { id: "uwert", label: "U-Wert" },
   { id: "wasser", label: "Entwässerung" },
   { id: "metall", label: "Ausdehnung" },
+  { id: "scharen", label: "Scharen & Hafte" },
   { id: "material", label: "Material" },
 ];
 
@@ -56,9 +66,12 @@ export function Rechner() {
 
       <div className="mt-4">
         {tab === "dach" && <DachRechner />}
+        {tab === "grat" && <GratRechner />}
+        {tab === "gaube" && <GaubenRechner />}
         {tab === "uwert" && <UWertRechner />}
         {tab === "wasser" && <WasserRechner />}
         {tab === "metall" && <MetallRechner />}
+        {tab === "scharen" && <ScharenRechner />}
         {tab === "material" && <MaterialRechner />}
       </div>
     </div>
@@ -343,5 +356,191 @@ function MaterialRechner() {
         hängt vom Modell und von der gewählten Lattweite ab.
       </Hinweis>
     </Block>
+  );
+}
+
+function GratRechner() {
+  const [halbeBreite, setHalbeBreite] = useState("4");
+  const [neigung, setNeigung] = useState("30");
+  const [feld1, setFeld1] = useState("8");
+  const [feld2, setFeld2] = useState("6");
+  const [hoehe, setHoehe] = useState("2.31");
+
+  const d = gratsparren(num(halbeBreite), num(neigung));
+  const k = kehle(num(feld1), num(feld2), num(hoehe));
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Gratsparren am Walmdach</h2>
+        <Feld label="Halbe Gebäudebreite" einheit="m" wert={halbeBreite} onWert={setHalbeBreite} />
+        <Feld label="Dachneigung" einheit="°" wert={neigung} onWert={setNeigung} />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Gratsparren" wert={zahl(d.grat)} einheit="m" gross />
+          <Ergebnis label="Flächensparren" wert={zahl(d.sparren)} einheit="m" />
+          <Ergebnis label="Firsthöhe" wert={zahl(d.hoehe)} einheit="m" />
+          <Ergebnis label="Gratneigung" wert={zahl(d.gratneigung, 1)} einheit="°" />
+        </div>
+        <Hinweis>
+          Der Grat überwindet dieselbe Höhe wie der Flächensparren, legt dafür aber den
+          längeren Weg über die Ecke zurück — seine Neigung ist deshalb immer flacher als
+          die Dachneigung. Wer den Gratsparren mit der Dachneigung ablängt, schneidet zu kurz.
+        </Hinweis>
+      </Block>
+
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Kehllänge</h2>
+        <Feld label="Feldbreite 1" einheit="m" wert={feld1} onWert={setFeld1} />
+        <Feld label="Feldbreite 2" einheit="m" wert={feld2} onWert={setFeld2} />
+        <Feld label="Firsthöhe über Traufe" einheit="m" wert={hoehe} onWert={setHoehe} />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Kehllänge" wert={zahl(k.laenge)} einheit="m" gross />
+          <Ergebnis label="Kehlneigung" wert={zahl(k.neigung, 1)} einheit="°" />
+        </div>
+        <Hinweis>
+          k = √((f₁/2)² + (f₂/2)² + h²). Dieselbe Raumdiagonale wie beim Grat, nur nach
+          innen. Bei gleich breiten Feldern sind Grat und Kehle exakt gleich lang.
+        </Hinweis>
+      </Block>
+    </div>
+  );
+}
+
+function GaubenRechner() {
+  const [sges, setSges] = useState("5");
+  const [ue, setUe] = useState("0.5");
+  const [alpha, setAlpha] = useState("45");
+  const [beta, setBeta] = useState("15");
+  const [wangeH, setWangeH] = useState("1.2");
+  const [wangeL, setWangeL] = useState("1.2");
+  const [firstL, setFirstL] = useState("3");
+  const [traufL, setTraufL] = useState("1.5");
+  const [gaubeSparren, setGaubeSparren] = useState("1.4");
+
+  const s = schleppgaube(num(sges), num(ue), num(alpha), num(beta));
+  const g = satteldachgaube(
+    num(wangeH),
+    num(wangeL),
+    num(firstL),
+    num(traufL),
+    num(gaubeSparren),
+  );
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Schleppdachgaube</h2>
+        <Feld label="Sparrenlänge gesamt" einheit="m" wert={sges} onWert={setSges} />
+        <Feld label="Dachüberstand" einheit="m" wert={ue} onWert={setUe} />
+        <Feld label="Neigung Hauptdach" einheit="°" wert={alpha} onWert={setAlpha} />
+        <Feld label="Neigung Gaube" einheit="°" wert={beta} onWert={setBeta} />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Gaubentiefe" wert={zahl(s.tiefe)} einheit="m" gross />
+          <Ergebnis label="Gaubenhöhe am Anschluss" wert={zahl(s.hoehe)} einheit="m" />
+          <Ergebnis label="Anschlusslänge" wert={zahl(s.anschluss)} einheit="m" />
+          <Ergebnis label="Vordere Sichthöhe" wert={zahl(s.sichthoehe)} einheit="m" />
+          <Ergebnis label="Wangenfläche (je Seite)" wert={zahl(s.wange)} einheit="m²" />
+        </div>
+        <Hinweis>
+          Buch S. 540. Die Gaubenhöhe kommt von der Neigung des HAUPTdachs: Über die
+          Gaubentiefe hinweg steigt das Hauptdach um t · tan α. Die flachere Gaubenneigung
+          bestimmt nur, wie weit die Gaube nach vorn reicht.
+        </Hinweis>
+      </Block>
+
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Satteldachgaube</h2>
+        <Feld label="Wangenhöhe" einheit="m" wert={wangeH} onWert={setWangeH} />
+        <Feld label="Wangenlänge" einheit="m" wert={wangeL} onWert={setWangeL} />
+        <Feld label="Firstlänge" einheit="m" wert={firstL} onWert={setFirstL} />
+        <Feld label="Trauflänge" einheit="m" wert={traufL} onWert={setTraufL} />
+        <Feld label="Sparrenlänge Gaube" einheit="m" wert={gaubeSparren} onWert={setGaubeSparren} />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Kehllänge" wert={zahl(g.kehle)} einheit="m" gross />
+          <Ergebnis label="Neigung Hauptdach" wert={zahl(g.neigung, 1)} einheit="°" />
+          <Ergebnis label="Anschlusslänge Wange" wert={zahl(g.anschluss)} einheit="m" />
+          <Ergebnis label="Kehlwinkel" wert={zahl(g.kehlwinkel, 1)} einheit="°" />
+          <Ergebnis label="Gaubendachfläche" wert={zahl(g.dachflaeche)} einheit="m²" />
+        </div>
+        <Hinweis>
+          Buch S. 541. First und Traufe der Gaube sind unterschiedlich lang — das Gaubendach
+          ist je Seite ein Trapez, und die Kehle läuft schräg über die Differenz.
+        </Hinweis>
+      </Block>
+    </div>
+  );
+}
+
+function ScharenRechner() {
+  const [scharbreite, setScharbreite] = useState("0.52");
+  const [hafte, setHafte] = useState("4");
+  const [hafteEck, setHafteEck] = useState("6.4");
+  const [dachlaenge, setDachlaenge] = useState("12");
+  const [nutzbreite, setNutzbreite] = useState("0.525");
+  const [deckbreite, setDeckbreite] = useState("20");
+  const [decklaenge, setDecklaenge] = useState("34");
+
+  const sch = scharen(num(dachlaenge), num(nutzbreite));
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Haftabstand</h2>
+        <Feld label="Scharbreite" einheit="m" wert={scharbreite} onWert={setScharbreite} schritt="0.01" />
+        <Feld label="Hafte je m² (Fläche)" einheit="St/m²" wert={hafte} onWert={setHafte} schritt="0.1" />
+        <Feld label="Hafte je m² (Rand/Ecke)" einheit="St/m²" wert={hafteEck} onWert={setHafteEck} schritt="0.1" />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis
+            label="Abstand in der Fläche"
+            wert={zahl(haftabstand(num(scharbreite), num(hafte)) * 100, 1)}
+            einheit="cm"
+            gross
+          />
+          <Ergebnis
+            label="Abstand am Rand"
+            wert={zahl(haftabstand(num(scharbreite), num(hafteEck)) * 100, 1)}
+            einheit="cm"
+          />
+          <Ergebnis
+            label="Laufende Meter Schar je m²"
+            wert={zahl(num(scharbreite) > 0 ? 1 / num(scharbreite) : 0)}
+            einheit="lfm"
+          />
+        </div>
+        <Hinweis>
+          1 / Scharbreite ergibt die laufenden Meter Schar auf einem Quadratmeter; darauf
+          werden die geforderten Hafte verteilt. Am Rand und in der Ecke greift der Windsog
+          stärker an — dort sind mehr Hafte je m² gefordert, der Abstand rückt zusammen.
+        </Hinweis>
+      </Block>
+
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Scharen einteilen</h2>
+        <Feld label="Dachlänge (Traufe)" einheit="m" wert={dachlaenge} onWert={setDachlaenge} />
+        <Feld label="Nutzbare Scharbreite" einheit="m" wert={nutzbreite} onWert={setNutzbreite} schritt="0.005" />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Volle Scharen" wert={String(sch.anzahl)} einheit="Stück" gross />
+          <Ergebnis label="Passbreite je Ortgang" wert={zahl(sch.passbreite * 100, 1)} einheit="cm" />
+        </div>
+        <Hinweis>
+          Die nutzbare Breite ist kleiner als die Zuschnittbreite — die Falze zehren den
+          Rest auf. Der Überhang wird auf beide Ortgänge verteilt, darum halbiert.
+        </Hinweis>
+      </Block>
+
+      <Block>
+        <h2 className="mb-2 text-sm font-medium">Ziegel je m²</h2>
+        <Feld label="Deckbreite" einheit="cm" wert={deckbreite} onWert={setDeckbreite} schritt="0.5" />
+        <Feld label="Decklänge (Lattweite)" einheit="cm" wert={decklaenge} onWert={setDecklaenge} schritt="0.5" />
+        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+          <Ergebnis label="Bedarf" wert={zahl(ziegelProQm(num(deckbreite), num(decklaenge)), 1)} einheit="St/m²" gross />
+        </div>
+        <Hinweis>
+          10000 / (Deckbreite · Decklänge). Deckbreite und Decklänge sind die überdeckten
+          Maße, nicht die Ziegelmaße — die Überdeckung ist bereits abgezogen. Den Wert
+          kannst du direkt im Reiter „Material“ weiterverwenden.
+        </Hinweis>
+      </Block>
+    </div>
   );
 }

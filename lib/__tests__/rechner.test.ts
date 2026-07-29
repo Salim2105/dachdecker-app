@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
 import {
+  gratsparren,
+  kehle,
+  schleppgaube,
+  satteldachgaube,
+  haftabstand,
+  scharen,
+  ziegelProQm,
   wahreDachflaeche,
   sparrenlaenge,
   firsthoehe,
@@ -122,5 +129,139 @@ describe("zahl", () => {
   it("fängt ungültige Werte ab", () => {
     expect(zahl(NaN)).toBe("—");
     expect(zahl(Infinity)).toBe("—");
+  });
+});
+
+describe("gratsparren", () => {
+  // Der Kern der Grat-Geometrie: gleiche Höhe, längerer Weg — also flacher.
+  // Wer den Gratsparren mit der Dachneigung ablängt, schneidet zu kurz.
+  it("liefert einen längeren und flacheren Sparren als in der Fläche", () => {
+    const d = gratsparren(4, 30);
+    expect(d.grat).toBeGreaterThan(d.sparren);
+    expect(d.gratneigung).toBeLessThan(30);
+  });
+
+  it("rechnet das Buchbeispiel nach", () => {
+    const d = gratsparren(4, 30);
+    expect(d.hoehe).toBeCloseTo(2.309, 2);
+    expect(d.sparren).toBeCloseTo(4.619, 2);
+    expect(d.grat).toBeCloseTo(6.11, 2);
+    expect(d.gratneigung).toBeCloseTo(22.21, 1);
+  });
+
+  it("hat bei 45 Grad noch immer einen flacheren Grat", () => {
+    expect(gratsparren(5, 45).gratneigung).toBeLessThan(45);
+  });
+});
+
+describe("kehle", () => {
+  it("entspricht der Formel aus den Aufgaben", () => {
+    // k = √((f1/2)² + (f2/2)² + h²)
+    const k = kehle(8, 6, 2.5);
+    expect(k.laenge).toBeCloseTo(Math.sqrt(16 + 9 + 6.25), 4);
+  });
+
+  // Grat und Kehle sind dieselbe Raumdiagonale — einmal nach außen, einmal
+  // nach innen. Bei gleichen Feldern muss dieselbe Länge herauskommen.
+  it("ist bei gleichen Feldern so lang wie der Grat", () => {
+    const d = gratsparren(4, 30);
+    expect(kehle(8, 8, d.hoehe).laenge).toBeCloseTo(d.grat, 4);
+  });
+
+  it("fängt Nullmaße ab", () => {
+    expect(kehle(0, 0, 0).neigung).toBe(0);
+  });
+});
+
+describe("schleppgaube", () => {
+  // Nach Buchbeispiel S. 540: s' = s − ü, t = s'·cos β, h = t·tan α
+  it("folgt der Schrittkette aus dem Buch", () => {
+    const g = schleppgaube(5, 0.5, 40, 15);
+    const sStrich = 4.5;
+    const tiefe = sStrich * Math.cos((15 * Math.PI) / 180);
+    expect(g.tiefe).toBeCloseTo(tiefe, 4);
+    expect(g.hoehe).toBeCloseTo(tiefe * Math.tan((40 * Math.PI) / 180), 4);
+    expect(g.anschluss).toBeCloseTo(Math.hypot(g.tiefe, g.hoehe), 4);
+  });
+
+  // Die Höhe kommt von der HAUPTdachneigung: ein steileres Hauptdach steigt
+  // über dieselbe Tiefe weiter an, also wird die Gaube höher.
+  it("wird mit steilerem Hauptdach höher", () => {
+    expect(schleppgaube(5, 0.5, 50, 15).hoehe).toBeGreaterThan(
+      schleppgaube(5, 0.5, 30, 15).hoehe,
+    );
+  });
+
+  it("hält die Sichthöhe bei unmöglichen Maßen bei null", () => {
+    expect(schleppgaube(1, 5, 40, 15).sichthoehe).toBe(0);
+  });
+});
+
+describe("satteldachgaube", () => {
+  it("leitet die Dachneigung aus den Wangenmaßen ab", () => {
+    const g = satteldachgaube(2, 2, 3, 1.5, 1.4);
+    expect(g.neigung).toBeCloseTo(45, 4);
+    expect(g.anschluss).toBeCloseTo(Math.sqrt(8), 4);
+  });
+
+  // Zwei Trapeze: je Seite (First + Traufe) / 2 · Sparren.
+  it("rechnet die Gaubendachfläche als zwei Trapeze", () => {
+    const g = satteldachgaube(2, 2, 3, 1.5, 1.4);
+    expect(g.dachflaeche).toBeCloseTo(2 * (0.5 * (3 + 1.5) * 1.4), 4);
+  });
+
+  it("legt die Kehle über die Differenz von First und Traufe", () => {
+    const g = satteldachgaube(2, 2, 3, 1.5, 1.4);
+    expect(g.kehle).toBeCloseTo(Math.hypot(3 - 1.5, 1.4), 4);
+  });
+
+  it("bleibt bei gleich langem First und Traufe rechtwinklig", () => {
+    expect(satteldachgaube(2, 2, 2, 2, 1.4).kehlwinkel).toBe(90);
+  });
+});
+
+describe("haftabstand und scharen", () => {
+  // Buchaufgabe 17 (S. 463): Scharbreite 520 mm.
+  it("rechnet den Haftabstand aus Scharbreite und Hafte je m²", () => {
+    // 1 / 0,52 = 1,923 lfm Schar je m²; auf 4 Hafte verteilt.
+    expect(haftabstand(0.52, 4)).toBeCloseTo(1 / 0.52 / 4, 6);
+    expect(haftabstand(0.52, 4)).toBeCloseTo(0.4808, 3);
+  });
+
+  // Buchaufgabe 18: im Eckbereich 6,4 Hafte/m², innen 4 — außen enger.
+  it("rückt die Hafte im Eckbereich zusammen", () => {
+    expect(haftabstand(0.52, 6.4)).toBeLessThan(haftabstand(0.52, 4));
+  });
+
+  it("fängt Nullwerte ab", () => {
+    expect(haftabstand(0, 4)).toBe(0);
+    expect(haftabstand(0.52, 0)).toBe(0);
+  });
+
+  it("teilt die Dachlänge in volle Scharen und Passbreite", () => {
+    const s = scharen(12, 0.525);
+    expect(s.anzahl).toBe(22);
+    expect(s.passbreite).toBeCloseTo((12 - 22 * 0.525) / 2, 6);
+    // Die Passbreite verteilt sich auf beide Ortgänge.
+    expect(s.anzahl * 0.525 + 2 * s.passbreite).toBeCloseTo(12, 6);
+  });
+
+  it("liefert bei unbrauchbarer Nutzbreite null", () => {
+    expect(scharen(12, 0)).toEqual({ anzahl: 0, passbreite: 0 });
+  });
+});
+
+describe("ziegelProQm", () => {
+  it("rechnet aus Deckbreite und Decklänge", () => {
+    // 20 cm × 34 cm = 680 cm² je Ziegel → 10000/680 ≈ 14,7 Stück/m²
+    expect(ziegelProQm(20, 34)).toBeCloseTo(14.7, 1);
+  });
+
+  it("braucht bei kleineren Ziegeln mehr Stück", () => {
+    expect(ziegelProQm(15, 25)).toBeGreaterThan(ziegelProQm(20, 34));
+  });
+
+  it("fängt Nullmaße ab", () => {
+    expect(ziegelProQm(0, 34)).toBe(0);
   });
 });
