@@ -52,9 +52,6 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
   }, [KEY, index, ergebnisse, beantwortet, fertig]);
 
   const aktuell = aufgaben[index];
-  // Bei diesen Typen IST das Antippen der Bewertung schon die Antwort — danach
-  // direkt weiter, sonst wirkt es, als würde nichts passieren.
-  const selbstbewertet = aktuell.typ === "draw" || aktuell.typ === "fachbegriff";
 
   const zumNaechsten = () => {
     if (index < aufgaben.length - 1) {
@@ -65,12 +62,17 @@ export function SessionRunner({ aufgaben, lfId }: { aufgaben: Aufgabe[]; lfId: s
     }
   };
 
+  // Alle Typen halten jetzt nach der Bewertung an. Früher sprangen draw und
+  // fachbegriff sofort weiter, weil bei ihnen das Antippen der Bewertung schon
+  // die Antwort war — die Lösung stand ja bereits darüber. Seit die Bewertung
+  // VOR der Lösung kommt, ist das Antippen der Anfang und nicht das Ende: erst
+  // danach erscheint die Musterlösung bzw. die Definition, und die will gelesen
+  // werden, bevor es weitergeht.
   const handleErgebnis = (b: Bewertung) => {
     if (beantwortet) return;
     bewerte(aktuell.id, b);
     setErgebnisse((prev) => [...prev, b]);
-    if (selbstbewertet) zumNaechsten();
-    else setBeantwortet(true);
+    setBeantwortet(true);
   };
 
   if (fertig) {

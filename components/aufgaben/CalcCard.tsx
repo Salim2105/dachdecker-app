@@ -4,6 +4,7 @@ import type { CalcAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter, rechne } from "@/lib/calc";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
+import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 export function CalcCard({
   aufgabe,
@@ -42,7 +43,9 @@ export function CalcCard({
   const pruefen = () => {
     setGeprueft(true);
     const ok = pruefeAntwort(parseFloat(eingabe.replace(",", ".")), loesung.wert, aufgabe.toleranzProzent);
-    onErgebnis(ok ? "richtig" : "falsch");
+    const b: Bewertung = ok ? "richtig" : "falsch";
+    haptischeRueckmeldung(b);
+    onErgebnis(b);
   };
 
   const neu = () => {
@@ -52,7 +55,8 @@ export function CalcCard({
   };
 
   return (
-    <div>
+    // `richtig` ist bereits abgeleitet — kein zweiter Zustand für dieselbe Aussage.
+    <div className={pulsKlasse(geprueft, geprueft ? (richtig ? "richtig" : "falsch") : null)}>
       <p className="text-[17px] font-medium leading-relaxed">
         {ersetzePlatzhalter(aufgabe.aufgabentext, werte)}
       </p>

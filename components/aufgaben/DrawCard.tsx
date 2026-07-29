@@ -4,6 +4,29 @@ import type { DrawAufgabe, Bewertung } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 
+/**
+ * Zeichenaufgabe: auf Papier zeichnen, sich festlegen, dann vergleichen.
+ *
+ * Die Reihenfolge ist der Punkt. Vorher stand die Musterlösung ZUERST und die
+ * Bewertung danach — man urteilte also über die eigene Zeichnung, nachdem man
+ * die richtige gesehen hatte. Das ist Rückschaufehler in Reinform: Alles wirkt
+ * vertraut, sobald es vor einem liegt ("wusste ich doch"). Der Klick "Richtig"
+ * verdoppelt aber das Wiederholungsintervall (lib/progress.ts:12) — fünf
+ * großzügige Klicks schieben eine Aufgabe von 2 auf 32 Tage. Bis zur Prüfung
+ * kommt sie dann nicht mehr wieder.
+ *
+ * Jetzt: erst festlegen, dann aufdecken. Das Urteil ist weniger informiert,
+ * aber unverzerrt — und für die Wiederholungsplanung ist unverzerrt besser,
+ * denn der Rückschaufehler zieht systematisch in eine Richtung, Unsicherheit
+ * dagegen streut. Die Musterlösung wird damit zur Rückmeldung statt zur
+ * Vorlage für das eigene Urteil.
+ */
+const LABELS: Record<Bewertung, string> = {
+  richtig: "Sitzt",
+  teilweise: "Halb",
+  falsch: "Nochmal",
+};
+
 export function DrawCard({
   aufgabe,
   onErgebnis,
@@ -11,9 +34,12 @@ export function DrawCard({
   aufgabe: DrawAufgabe;
   onErgebnis: (b: Bewertung) => void;
 }) {
-  const [gezeigt, setGezeigt] = useState(false);
+  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
 
-  const bewerten = (b: Bewertung) => onErgebnis(b);
+  const bewerten = (b: Bewertung) => {
+    setBewertung(b);
+    onErgebnis(b);
+  };
 
   return (
     <div>
@@ -32,22 +58,47 @@ export function DrawCard({
         />
       )}
 
-      {!gezeigt ? (
+      {bewertung === null ? (
         <>
           <p className="mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
-            Zeichne die Lösung auf Papier oder deinem iPad. Wenn du fertig bist, decke die
-            Musterlösung auf und vergleiche.
+            Zeichne die Lösung auf Papier oder deinem iPad. Wenn du fertig bist, leg dich fest —
+            danach siehst du die Musterlösung.
           </p>
-          <button
-            onClick={() => setGezeigt(true)}
-            className="mt-4 w-full rounded-xl py-3 font-medium"
-            style={{ background: "var(--accent)", color: "var(--accent-text)" }}
-          >
-            Lösung zeigen
-          </button>
+          <p className="mt-4 mb-2 text-sm font-medium">Wie sicher bist du?</p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => bewerten("richtig")}
+              className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
+              style={{ background: "var(--ok)", color: "#08281f" }}
+            >
+              {LABELS.richtig}
+            </button>
+            <button
+              onClick={() => bewerten("teilweise")}
+              className="min-h-14 flex-1 rounded-xl border py-3 text-sm font-medium"
+              style={{ borderColor: "var(--border)", color: "var(--text)" }}
+            >
+              {LABELS.teilweise}
+            </button>
+            <button
+              onClick={() => bewerten("falsch")}
+              className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
+              style={{ background: "var(--bad)", color: "#2a0d0d" }}
+            >
+              {LABELS.falsch}
+            </button>
+          </div>
         </>
       ) : (
         <div className="mt-4">
+          {/* Was man vorher gesagt hat, bleibt sichtbar — sonst korrigiert man
+              es beim Vergleichen still nach oben. */}
+          <p className="mb-3 text-sm" style={{ color: "var(--text-muted)" }}>
+            Du hast getippt:{" "}
+            <span className="font-semibold" style={{ color: "var(--text)" }}>
+              {LABELS[bewertung]}
+            </span>
+          </p>
           <p className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
             Musterlösung
           </p>
@@ -70,31 +121,6 @@ export function DrawCard({
           </ol>
 
           <Erklaerung text={aufgabe.erklaerung} />
-
-          <p className="mt-4 mb-2 text-sm font-medium">Wie war deine Zeichnung?</p>
-          <div className="flex gap-2">
-            <button
-              onClick={() => bewerten("richtig")}
-              className="flex-1 rounded-xl py-3 text-sm font-medium"
-              style={{ background: "var(--ok)", color: "#08281f" }}
-            >
-              Richtig
-            </button>
-            <button
-              onClick={() => bewerten("teilweise")}
-              className="flex-1 rounded-xl border py-3 text-sm font-medium"
-              style={{ borderColor: "var(--border)", color: "var(--text)" }}
-            >
-              Fast
-            </button>
-            <button
-              onClick={() => bewerten("falsch")}
-              className="flex-1 rounded-xl py-3 text-sm font-medium"
-              style={{ background: "var(--bad)", color: "#2a0d0d" }}
-            >
-              Nochmal
-            </button>
-          </div>
         </div>
       )}
     </div>

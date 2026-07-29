@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { McAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
+import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 export function McCard({
   aufgabe,
@@ -17,6 +18,7 @@ export function McCard({
   const mehrfach = aufgabe.korrekt.length > 1;
   const [gewaehlt, setGewaehlt] = useState<Set<number>>(new Set());
   const [geprueft, setGeprueft] = useState(false);
+  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
 
   const toggle = (i: number) => {
     if (geprueft) return;
@@ -33,7 +35,10 @@ export function McCard({
     const korrektSet = new Set(aufgabe.korrekt);
     const gleich =
       gewaehlt.size === korrektSet.size && [...gewaehlt].every((i) => korrektSet.has(i));
-    onErgebnis(gleich ? "richtig" : "falsch");
+    const b: Bewertung = gleich ? "richtig" : "falsch";
+    setBewertung(b);
+    haptischeRueckmeldung(b);
+    onErgebnis(b);
   };
 
   const stilFuer = (i: number) => {
@@ -49,7 +54,7 @@ export function McCard({
   };
 
   return (
-    <div>
+    <div className={pulsKlasse(geprueft, bewertung)}>
       <p className="text-[17px] font-medium">{aufgabe.frage}</p>
       {/* In der Übung steht die Anzahl da, in der Prüfungssimulation nicht.
           "Mehrfachauswahl möglich" lässt offen, ob zwei oder drei Antworten

@@ -132,3 +132,41 @@ body {
   box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--ring);
   border-radius: var(--r-sm);
 }
+
+/* Trefferpuls beim Prüfen einer Antwort.
+   Bewegung statt Sättigung: die --ok/--bad-Töne bleiben gedämpft, weil
+   Sonnenlicht auf dem Dach Farbnuancen wegbrennt. Ein kurzer Lichtschein über
+   die ganze Karte ist auch dann noch zu sehen — und er ist vorbei, bevor er
+   vom Lesen ablenkt. */
+@keyframes treffer-puls {
+  from {
+    box-shadow: 0 0 0 0 var(--puls-farbe);
+  }
+  to {
+    box-shadow: 0 0 0 14px transparent;
+  }
+}
+
+.puls-ok,
+.puls-bad,
+.puls-teilweise {
+  border-radius: var(--r-lg);
+  animation: treffer-puls 150ms ease-out;
+}
+.puls-ok {
+  --puls-farbe: var(--ok-soft);
+}
+.puls-bad {
+  --puls-farbe: var(--bad-soft);
+}
+.puls-teilweise {
+  --puls-farbe: var(--accent-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .puls-ok,
+  .puls-bad,
+  .puls-teilweise {
+    animation: none;
+  }
+}

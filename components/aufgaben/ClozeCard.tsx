@@ -6,6 +6,7 @@ import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
 import { wortbankStore } from "@/lib/appStores";
 import { useSyncExternalStore } from "react";
+import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 /** Reihenfolge stabil pro Aufgabe mischen, damit sie beim Tippen nicht springt. */
 function mischen<T>(xs: T[], saat: string): T[] {
@@ -33,6 +34,7 @@ export function ClozeCard({
   const teile = useMemo(() => parseCloze(aufgabe.text), [aufgabe.text]);
   const [eingaben, setEingaben] = useState<Record<number, string>>({});
   const [geprueft, setGeprueft] = useState(false);
+  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
   const [aktiveLuecke, setAktiveLuecke] = useState<number | null>(null);
 
   // Auf dem Dach ist Freitext mit Arbeitshandschuhen praktisch nicht tippbar.
@@ -61,9 +63,11 @@ export function ClozeCard({
   const pruefen = () => {
     setGeprueft(true);
     const richtig = gaps.filter((g) => istGapKorrekt(g.antwort, eingaben[g.index] ?? "")).length;
-    const bewertung: Bewertung =
+    const b: Bewertung =
       richtig === gaps.length ? "richtig" : richtig === 0 ? "falsch" : "teilweise";
-    onErgebnis(bewertung);
+    setBewertung(b);
+    haptischeRueckmeldung(b);
+    onErgebnis(b);
   };
 
   const randfarbe = (g: { antwort: string; index: number }) => {
@@ -86,7 +90,7 @@ export function ClozeCard({
     woerter.filter((w) => w === wort).length;
 
   return (
-    <div>
+    <div className={pulsKlasse(geprueft, bewertung)}>
       <p className="text-[17px] leading-loose">
         {teile.map((t, i) =>
           t.type === "text" ? (

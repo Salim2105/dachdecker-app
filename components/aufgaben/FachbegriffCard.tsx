@@ -11,7 +11,17 @@ export function FachbegriffCard({
   aufgabe: FachbegriffAufgabe;
   onErgebnis: (b: Bewertung) => void;
 }) {
-  const [umgedreht, setUmgedreht] = useState(false);
+  // Erst festlegen, dann aufdecken. Vorher stand "Umdrehen" zuerst und die
+  // Bewertung danach — man urteilte über das eigene Wissen, nachdem man die
+  // Definition gelesen hatte. Alles wirkt vertraut, sobald es dasteht, und der
+  // Klick "Gewusst" verdoppelt das Wiederholungsintervall (lib/progress.ts:12).
+  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
+  const umgedreht = bewertung !== null;
+
+  const bewerten = (b: Bewertung) => {
+    setBewertung(b);
+    onErgebnis(b);
+  };
 
   return (
     <div>
@@ -57,30 +67,34 @@ export function FachbegriffCard({
       </div>
 
       {!umgedreht ? (
-        <button
-          onClick={() => setUmgedreht(true)}
-          className="mt-4 w-full rounded-xl py-3 font-medium"
-          style={{ background: "var(--accent)", color: "var(--accent-text)" }}
-        >
-          Umdrehen
-        </button>
+        <>
+          <p className="mt-4 mb-2 text-center text-sm" style={{ color: "var(--text-muted)" }}>
+            Sag die Definition laut auf. Dann leg dich fest — danach deckt sie auf.
+          </p>
+          <div className="flex gap-2">
+            <button
+              onClick={() => bewerten("richtig")}
+              className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
+              style={{ background: "var(--ok)", color: "#08281f" }}
+            >
+              Gewusst
+            </button>
+            <button
+              onClick={() => bewerten("falsch")}
+              className="min-h-14 flex-1 rounded-xl border py-3 text-sm font-medium"
+              style={{ borderColor: "var(--border)", color: "var(--text)" }}
+            >
+              Nochmal
+            </button>
+          </div>
+        </>
       ) : (
-        <div className="mt-4 flex gap-2">
-          <button
-            onClick={() => onErgebnis("richtig")}
-            className="flex-1 rounded-xl py-3 text-sm font-medium"
-            style={{ background: "var(--ok)", color: "#08281f" }}
-          >
-            Gewusst
-          </button>
-          <button
-            onClick={() => onErgebnis("falsch")}
-            className="flex-1 rounded-xl border py-3 text-sm font-medium"
-            style={{ borderColor: "var(--border)", color: "var(--text)" }}
-          >
-            Nochmal
-          </button>
-        </div>
+        <p className="mt-4 text-center text-sm" style={{ color: "var(--text-muted)" }}>
+          Du hast getippt:{" "}
+          <span className="font-semibold" style={{ color: "var(--text)" }}>
+            {bewertung === "richtig" ? "Gewusst" : "Nochmal"}
+          </span>
+        </p>
       )}
     </div>
   );

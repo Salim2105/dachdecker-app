@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { DiagramAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
+import { haptischeRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -27,17 +28,20 @@ export function DiagramCard({
   const [pool] = useState<string[]>(() => shuffle([...new Set(Object.values(aufgabe.zuordnung))]));
   const [auswahl, setAuswahl] = useState<Record<string, string>>({});
   const [geprueft, setGeprueft] = useState(false);
+  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
 
   const pruefen = () => {
     setGeprueft(true);
     const richtig = keys.filter((k) => auswahl[k] === aufgabe.zuordnung[k]).length;
-    const bewertung: Bewertung =
+    const b: Bewertung =
       richtig === keys.length ? "richtig" : richtig === 0 ? "falsch" : "teilweise";
-    onErgebnis(bewertung);
+    setBewertung(b);
+    haptischeRueckmeldung(b);
+    onErgebnis(b);
   };
 
   return (
-    <div>
+    <div className={pulsKlasse(geprueft, bewertung)}>
       <p className="text-base font-medium">{aufgabe.frage}</p>
       <SafeSvg
         markup={aufgabe.svg}
