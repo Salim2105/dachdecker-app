@@ -7,7 +7,7 @@ import { Fortsetzen } from "@/components/Fortsetzen";
 import { datumStore, letztesLfStore } from "@/lib/appStores";
 // Bewusst aus lib/reifegrad statt lib/tagesplan: Letzteres zieht die
 // Aufgabensammlung mit, die diese Seite nie anzeigt.
-import { pruefungsreife, tagesdosis } from "@/lib/reifegrad";
+import { pruefungsreife, tagesdosis, MIN_DOSIS, GESAMT_AUFGABEN } from "@/lib/reifegrad";
 import { serie } from "@/lib/serie";
 
 const TAG = 86_400_000;
@@ -129,6 +129,16 @@ export default function Home() {
               className="mt-2.5 w-full rounded-[var(--r-md)] border px-3.5 py-2.5 text-[15px]"
               style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
             />
+            {/* Ohne Termin rechnet tagesdosis() mit MIN_DOSIS weiter — eine
+                Annahme, die vorher unsichtbar blieb. Bei 2039 Aufgaben sind das
+                gut sieben Monate. Wer das nicht weiß, hält 10 Aufgaben am Abend
+                für einen Plan; er ist aber nur ein Standardwert. */}
+            <span className="mt-2.5 block text-[13px]" style={{ color: "var(--text-faint)" }}>
+              Ohne Termin rechne ich mit <span className="tnum">{MIN_DOSIS}</span> Aufgaben am Tag —
+              bei <span className="tnum">{GESAMT_AUFGABEN}</span> Aufgaben rund{" "}
+              <span className="tnum">{Math.round(GESAMT_AUFGABEN / MIN_DOSIS / 30)}</span> Monate.
+              Steht in deinem Ausbildungsvertrag oder bei der Innung.
+            </span>
           </label>
         )}
       </div>
