@@ -1,5 +1,5 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1785314449613";
+const CACHE = "dachdecker-1785319383026";
 const SHELL = [
   "/",
   "/lernen",
@@ -1132,24 +1132,27 @@ const SHELL = [
   "/window.svg",
   "/_next/static/chunks/02xrek61o7abw.css",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
+  "/_next/static/chunks/05n4367tvhua0.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
-  "/_next/static/chunks/0efg7wl6el_lf.js",
-  "/_next/static/chunks/0j-zjnlneufe2.js",
+  "/_next/static/chunks/0fwt9c69zi6tp.js",
+  "/_next/static/chunks/0k1hx7uh_ds6f.js",
   "/_next/static/chunks/0mx15hcbqr42s.js",
+  "/_next/static/chunks/0udmh_j9scuiv.js",
   "/_next/static/chunks/0w05l298o8ksf.js",
-  "/_next/static/chunks/0z2hra2tk1vj8.js",
+  "/_next/static/chunks/1-n_73eo_r2vx.js",
   "/_next/static/chunks/10qk6v6416kh8.js",
   "/_next/static/chunks/14mrh2-p_w84d.js",
   "/_next/static/chunks/1hku-532ar-mt.js",
-  "/_next/static/chunks/1s8d72fjyh60u.js",
+  "/_next/static/chunks/1s5po19bb60v-.js",
   "/_next/static/chunks/27jktro2p5rq9.js",
-  "/_next/static/chunks/2ia3-kyoibez1.js",
-  "/_next/static/chunks/2nc7_medlgw6o.js",
   "/_next/static/chunks/315owoz9ub2zd.js",
-  "/_next/static/chunks/34ar_6wf0tt41.js",
   "/_next/static/chunks/3emq8ppmhyj2i.js",
   "/_next/static/chunks/3rxl-jt3pdxgx.js",
+  "/_next/static/chunks/41f0p2m5bkd47.js",
   "/_next/static/chunks/turbopack-1p7pqniqer0jp.js",
+  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_buildManifest.js",
+  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_clientMiddlewareManifest.js",
+  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_ssgManifest.js",
   "/_next/static/media/4fa387ec64143e14-s.2tuy5pz7dlieh.woff2",
   "/_next/static/media/53b9e256198e5412-s.390ncx5urfkfu.woff2",
   "/_next/static/media/5ce348bf30bf5439-s.31988l_ccedte.woff2",
@@ -1161,10 +1164,7 @@ const SHELL = [
   "/_next/static/media/bbc41e54d2fcbd21-s.1rgnod-3esatf.woff2",
   "/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2",
   "/_next/static/media/favicon.2vob68tjqpejf.ico",
-  "/_next/static/media/fef07dbb0973bf53-s.3p2_lha1f2xer.woff2",
-  "/_next/static/w8jV7bd8YfVmaJCujXHhB/_buildManifest.js",
-  "/_next/static/w8jV7bd8YfVmaJCujXHhB/_clientMiddlewareManifest.js",
-  "/_next/static/w8jV7bd8YfVmaJCujXHhB/_ssgManifest.js"
+  "/_next/static/media/fef07dbb0973bf53-s.3p2_lha1f2xer.woff2"
 ];
 
 self.addEventListener("install", (e) => {

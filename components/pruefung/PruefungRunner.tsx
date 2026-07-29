@@ -15,6 +15,7 @@ import {
   bestanden,
   formatiereZeit,
   punkteFuer,
+  pruefungsprotokoll,
   type Pruefungsteil,
 } from "@/lib/pruefung";
 
@@ -263,6 +264,21 @@ export function PruefungRunner() {
               {falsche.length} Aufgabe{falsche.length === 1 ? "" : "n"} durchgehen
             </button>
           )}
+          <button
+            onClick={() => {
+              const text = pruefungsprotokoll(lauf.teil.titel, lauf.aufgaben, ergebnisse, Date.now());
+              const url = URL.createObjectURL(new Blob([text], { type: "text/plain" }));
+              const a = document.createElement("a");
+              a.href = url;
+              a.download = `pruefung-${lauf.teil.id}-${new Date().toISOString().slice(0, 10)}.txt`;
+              a.click();
+              URL.revokeObjectURL(url);
+            }}
+            className="rounded-xl border py-3 font-medium"
+            style={{ borderColor: "var(--border)", color: "var(--text)" }}
+          >
+            Protokoll sichern
+          </button>
           <button
             onClick={() => starte(lauf.teil, Date.now())}
             className="rounded-xl border py-3 font-medium"

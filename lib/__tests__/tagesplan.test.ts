@@ -1,6 +1,15 @@
 import { describe, it, expect } from "vitest";
 import type { AufgabenFortschritt } from "@/content/schema";
-import { reife, tagesdosis, istVerkettet, MIN_DOSIS, MAX_DOSIS } from "@/lib/tagesplan";
+import type { Aufgabe } from "@/content/schema";
+import {
+  reife,
+  tagesdosis,
+  istVerkettet,
+  verteile,
+  MIN_DOSIS,
+  MAX_DOSIS,
+  MAX_AM_STUECK,
+} from "@/lib/tagesplan";
 
 const TAG = 86_400_000;
 const JETZT = 1_800_000_000_000;
@@ -42,8 +51,17 @@ describe("reife", () => {
     expect(r).toBeGreaterThan(0);
   });
 
-  it("ist nach dem doppelten Intervall vollständig verfallen", () => {
+  // Der Verfall ist exponentiell, nicht linear: Wer zwei Wochen nicht übt, hat
+  // nicht alles vergessen. Nach dem doppelten Intervall bleibt Restwissen.
+  it("behält nach dem doppelten Intervall noch Restreife", () => {
     const f = eintrag({ faelligAm: JETZT - 8 * TAG, intervallTage: 4 });
+    const r = reife(f, JETZT);
+    expect(r).toBeGreaterThan(0.1);
+    expect(r).toBeLessThan(0.3);
+  });
+
+  it("ist irgendwann vollständig verfallen", () => {
+    const f = eintrag({ faelligAm: JETZT - 100 * TAG, intervallTage: 4 });
     expect(reife(f, JETZT)).toBe(0);
   });
 
@@ -51,6 +69,22 @@ describe("reife", () => {
     const frueh = reife(eintrag({ faelligAm: JETZT - 2 * TAG, intervallTage: 4 }), JETZT);
     const spaet = reife(eintrag({ faelligAm: JETZT - 6 * TAG, intervallTage: 4 }), JETZT);
     expect(spaet).toBeLessThan(frueh);
+  });
+
+  // Die Kurve flacht ab — das ist der Unterschied zur Geraden. Der erste
+  // versäumte Tag kostet mehr Reife als der zehnte.
+  it("verliert am Anfang mehr als später", () => {
+    const bei = (tage: number) =>
+      reife(eintrag({ faelligAm: JETZT - tage * TAG, intervallTage: 4 }), JETZT);
+    const ersterVerlust = bei(0) - bei(2);
+    const spaetererVerlust = bei(8) - bei(10);
+    expect(ersterVerlust).toBeGreaterThan(spaetererVerlust);
+  });
+
+  it("lässt ein langes Wiederholungsintervall länger reifen", () => {
+    const kurz = reife(eintrag({ faelligAm: JETZT - 10 * TAG, intervallTage: 2 }), JETZT);
+    const lang = reife(eintrag({ faelligAm: JETZT - 10 * TAG, intervallTage: 30 }), JETZT);
+    expect(lang).toBeGreaterThan(kurz);
   });
 });
 
@@ -122,5 +156,59 @@ describe("istVerkettet", () => {
   it("behandelt Multiple-Choice als atomar", () => {
     const a = { ...basis, typ: "mc" as const, frage: "f", optionen: ["a", "b"], korrekt: [0] };
     expect(istVerkettet(a)).toBe(false);
+  });
+});
+
+describe("verteile", () => {
+  const mk = (lf: string, i: number): Aufgabe => ({
+    id: `${lf}-${i}`,
+    typ: "mc",
+    lernfeld: lf,
+    thema: "t",
+    quelle: "q",
+    konfidenz: "hoch",
+    erklaerung: "e",
+    frage: "f",
+    optionen: ["a", "b"],
+    korrekt: [0],
+  });
+
+  const reihe = (lf: string, n: number) => Array.from({ length: n }, (_, i) => mk(lf, i));
+
+  /** Längste ununterbrochene Serie desselben Lernfelds. */
+  function laengsteSerie(xs: Aufgabe[]): number {
+    let max = 0;
+    let akt = 0;
+    let letztes = "";
+    for (const a of xs) {
+      akt = a.lernfeld === letztes ? akt + 1 : 1;
+      letztes = a.lernfeld;
+      if (akt > max) max = akt;
+    }
+    return max;
+  }
+
+  it("bricht lange Serien desselben Lernfelds auf", () => {
+    const eingabe = [...reihe("lf01", 10), ...reihe("lf02", 10)];
+    expect(laengsteSerie(eingabe)).toBe(10);
+    expect(laengsteSerie(verteile(eingabe))).toBeLessThanOrEqual(MAX_AM_STUECK);
+  });
+
+  it("unterschlägt keine Aufgabe und dupliziert keine", () => {
+    const eingabe = [...reihe("lf01", 7), ...reihe("lf02", 5), ...reihe("lf03", 3)];
+    const raus = verteile(eingabe);
+    expect(raus).toHaveLength(eingabe.length);
+    expect(new Set(raus.map((a) => a.id)).size).toBe(eingabe.length);
+  });
+
+  // Lieber eine lange Serie als eine unterschlagene Aufgabe: Wer nur noch ein
+  // Lernfeld offen hat, soll es trotzdem zu Ende üben können.
+  it("lässt die Serie stehen, wenn es kein anderes Lernfeld gibt", () => {
+    const nurEins = reihe("lf01", 8);
+    expect(verteile(nurEins)).toHaveLength(8);
+  });
+
+  it("kommt mit leerer Eingabe klar", () => {
+    expect(verteile([])).toEqual([]);
   });
 });

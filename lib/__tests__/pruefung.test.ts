@@ -9,6 +9,7 @@ import {
   bestanden,
   formatiereZeit,
   punkteFuer,
+  pruefungsprotokoll,
 } from "@/lib/pruefung";
 import type { Aufgabe } from "@/content/schema";
 
@@ -99,5 +100,52 @@ describe("formatiereZeit", () => {
 
   it("zeigt bei negativer Restzeit null", () => {
     expect(formatiereZeit(-30)).toBe("00:00");
+  });
+});
+
+describe("pruefungsprotokoll", () => {
+  const mc = (id: string, lf: string): Aufgabe => ({
+    id,
+    typ: "mc",
+    lernfeld: lf,
+    thema: "t",
+    quelle: `Buch S. ${id}`,
+    konfidenz: "hoch",
+    erklaerung: `Erklärung zu ${id}`,
+    frage: `Frage ${id}?`,
+    optionen: ["a", "b"],
+    korrekt: [0],
+  });
+
+  const aufgaben = [mc("001", "lf01"), mc("002", "lf02"), mc("003", "lf01")];
+  const JETZT = 1_800_000_000_000;
+
+  it("nennt Ergebnis, Note und Bestehen", () => {
+    const t = pruefungsprotokoll("Teil 1", aufgaben, ["richtig", "richtig", "falsch"], JETZT);
+    expect(t).toContain("Teil 1");
+    expect(t).toContain("67 %");
+    expect(t).toContain("bestanden");
+  });
+
+  // Der eigentliche Zweck: Was man falsch hatte, samt Erklärung zum Nacharbeiten.
+  it("führt nur die nicht vollständig richtigen Aufgaben auf", () => {
+    const t = pruefungsprotokoll("Teil 1", aufgaben, ["richtig", "falsch", "teilweise"], JETZT);
+    expect(t).toContain("Zum Nacharbeiten (2)");
+    expect(t).toContain("Frage 002?");
+    expect(t).toContain("Erklärung zu 003");
+    expect(t).not.toContain("Frage 001?");
+  });
+
+  it("zählt unbeantwortete Aufgaben zum Nacharbeiten", () => {
+    const t = pruefungsprotokoll("Teil 1", aufgaben, ["richtig"], JETZT);
+    expect(t).toContain("Zum Nacharbeiten (2)");
+    expect(t).toContain("nicht bearbeitet");
+  });
+
+  it("schlüsselt nach Lernfeld auf", () => {
+    const t = pruefungsprotokoll("Teil 1", aufgaben, ["richtig", "falsch", "richtig"], JETZT);
+    expect(t).toContain("Nach Lernfeld");
+    expect(t).toMatch(/lf01\s+2 \/ 2/);
+    expect(t).toMatch(/lf02\s+0 \/ 1/);
   });
 });

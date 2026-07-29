@@ -5,75 +5,29 @@
 // 1. Die Prüfungsreife KANN SINKEN. Ein Balken, der nur steigt, misst
 //    Aktivität statt Wissen — bearbeitete Aufgaben sagen nichts darüber aus,
 //    ob du den Stoff morgen noch abrufen kannst. Hier verfällt eine Aufgabe,
-//    sobald sie überfällig wird, und ist nach dem doppelten Wiederholungs-
-//    intervall wieder bei null. Fallende Reife ist das Signal, das zurückholt.
+//    sobald sie überfällig wird. Der Verfall ist exponentiell — siehe
+//    lib/reifegrad.ts. Fallende Reife ist das Signal, das zurückholt.
 //
 // 2. Die Auswahl wird dir abgenommen. Wer selbst wählt, wählt das Vertraute
 //    (LF1–3) und rührt die späten Lernfelder nie an. "Heute dran" mischt
-//    fällige Wiederholungen mit neuen Aufgaben aus dem SCHWÄCHSTEN Lernfeld.
+//    fällige Wiederholungen mit neuen Aufgaben aus den schwächsten Lernfeldern.
+//
+// Reife und Tagesdosis liegen bewusst in lib/reifegrad.ts: Dieses Modul hier
+// importiert die Content-Registry, jenes nicht. Die Startseite braucht nur die
+// Reife und soll dafür nicht 2 MB Aufgabentext laden.
 import type { Aufgabe, AufgabenFortschritt } from "@/content/schema";
 import { getAufgaben, getLernfelder } from "@/lib/content";
+import { reife } from "@/lib/reifegrad";
 
-const TAG = 86_400_000;
-
-/** Untergrenze der Tagesdosis — unter 10 Aufgaben lohnt das Öffnen nicht. */
-export const MIN_DOSIS = 10;
-/** Obergrenze — mehr als das schafft niemand neben der Arbeit freiwillig. */
-export const MAX_DOSIS = 60;
-
-/**
- * Reifegrad einer einzelnen Aufgabe zwischen 0 und 1.
- *
- * Eine richtig beantwortete Aufgabe startet bei 1 und verfällt linear, sobald
- * sie überfällig ist: nach dem doppelten Intervall ist sie zurück auf 0. Damit
- * bildet der Wert ab, was Vergessen tatsächlich tut — er hält nicht ewig.
- */
-export function reife(f: AufgabenFortschritt | undefined, jetzt: number): number {
-  if (!f) return 0;
-  const basis = f.bewertung === "richtig" ? 1 : f.bewertung === "teilweise" ? 0.5 : 0;
-  if (basis === 0) return 0;
-
-  const ueberfaelligMs = jetzt - f.faelligAm;
-  if (ueberfaelligMs <= 0) return basis;
-
-  // Verfallsfenster: doppelt so lang wie das aktuelle Wiederholungsintervall.
-  const fenster = Math.max(1, f.intervallTage) * 2 * TAG;
-  const rest = 1 - ueberfaelligMs / fenster;
-  return rest > 0 ? basis * rest : 0;
-}
-
-export interface Reifegrad {
-  /** Anteil 0..1 über alle sichtbaren Aufgaben. */
-  anteil: number;
-  /** Summe der Reifepunkte (kann Bruchteile enthalten). */
-  punkte: number;
-  gesamt: number;
-  /** Aufgaben, die jetzt zur Wiederholung anstehen. */
-  faellig: number;
-  /** Aufgaben, die noch nie bearbeitet wurden. */
-  neu: number;
-}
-
-export function pruefungsreife(
-  fortschritt: Record<string, AufgabenFortschritt>,
-  jetzt: number,
-): Reifegrad {
-  let punkte = 0;
-  let gesamt = 0;
-  let faellig = 0;
-  let neu = 0;
-
-  for (const lf of getLernfelder()) {
-    for (const a of getAufgaben(lf.id)) {
-      gesamt++;
-      const f = fortschritt[a.id];
-      punkte += reife(f, jetzt);
-      if (!f) neu++;
-      else if (f.faelligAm <= jetzt) faellig++;
-    }
-  }
-  return { anteil: gesamt > 0 ? punkte / gesamt : 0, punkte, gesamt, faellig, neu };
-}
+export {
+  reife,
+  pruefungsreife,
+  tagesdosis,
+  MIN_DOSIS,
+  MAX_DOSIS,
+  GESAMT_AUFGABEN,
+  type Reifegrad,
+} from "@/lib/reifegrad";
 
 /** Reifeanteil eines einzelnen Lernfelds — für die Auswahl des schwächsten. */
 export function lernfeldReife(
@@ -89,20 +43,6 @@ export function lernfeldReife(
 }
 
 /**
- * Wie viele Aufgaben heute dran sind.
- *
- * Grundlage ist der Prüfungstermin: was noch nicht sitzt, geteilt durch die
- * verbleibenden Tage. Ohne Termin bleibt es bei der Mindestdosis. Der letzte
- * Tag bekommt keine 500 Aufgaben aufgehalst — MAX_DOSIS deckelt.
- */
-export function tagesdosis(reifegrad: Reifegrad, tageBis: number | null): number {
-  const offen = reifegrad.gesamt - reifegrad.punkte;
-  if (tageBis === null || tageBis <= 0) return MIN_DOSIS;
-  const proTag = Math.ceil(offen / tageBis);
-  return Math.min(MAX_DOSIS, Math.max(MIN_DOSIS, proTag));
-}
-
-/**
  * Verkettete Aufgaben bauen aufeinander auf: das Ergebnis von Schritt n ist
  * die Eingabe von n+1 (λ → R → U). Sie dürfen nie in Einzelschritte zerlegt
  * werden — wer nur die Schritte übt, kann jeden einzelnen und scheitert
@@ -115,9 +55,58 @@ export function istVerkettet(a: Aufgabe): boolean {
 
 export type Modus = "kurz" | "tief" | "alles";
 
+/** Höchstens so viele Aufgaben desselben Lernfelds direkt hintereinander. */
+export const MAX_AM_STUECK = 3;
+/** So viele der schwächsten Lernfelder liefern neue Aufgaben — nicht nur eines. */
+export const FELDER_JE_SITZUNG = 3;
+
+/**
+ * Bricht lange Serien desselben Lernfelds auf, ohne die Rangfolge preiszugeben.
+ *
+ * Zwanzig Aufgaben am Stück aus einem Lernfeld sind Blockübung: Man erkennt das
+ * Muster der Aufgabenart statt den Inhalt und hält das für Können. In der
+ * Prüfung stehen die Themen gemischt. Genau so wird hier geübt.
+ */
+export function verteile(aufgaben: Aufgabe[], maxAmStueck = MAX_AM_STUECK): Aufgabe[] {
+  // Nach Lernfeld bündeln, Reihenfolge innerhalb bleibt erhalten — die
+  // überfälligsten Aufgaben eines Feldes kommen weiterhin zuerst.
+  const gruppen = new Map<string, Aufgabe[]>();
+  for (const a of aufgaben) {
+    const g = gruppen.get(a.lernfeld);
+    if (g) g.push(a);
+    else gruppen.set(a.lernfeld, [a]);
+  }
+
+  const raus: Aufgabe[] = [];
+  // Reihum je maxAmStueck aus jedem Feld, das größte zuerst. Das Sortieren nach
+  // Restbestand ist entscheidend: Nimmt man stur der Reihe nach, ist ein Feld
+  // vorzeitig leer und sein Rest türmt sich am Ende zu einem langen Block.
+  // ponytail: O(n² log n) durch Neusortieren je Runde — bei maximal 60 Aufgaben
+  // je Sitzung nicht messbar.
+  for (;;) {
+    const offen = [...gruppen.values()].filter((g) => g.length > 0);
+    if (offen.length === 0) break;
+    offen.sort((a, b) => b.length - a.length);
+    for (const g of offen) raus.push(...g.splice(0, maxAmStueck));
+  }
+  return raus;
+}
+
+/** Nimmt reihum aus jeder Gruppe, bis alle leer sind. */
+function reihum(gruppen: Aufgabe[][]): Aufgabe[] {
+  const raus: Aufgabe[] = [];
+  const laenge = Math.max(0, ...gruppen.map((g) => g.length));
+  for (let i = 0; i < laenge; i++) {
+    for (const g of gruppen) if (i < g.length) raus.push(g[i]);
+  }
+  return raus;
+}
+
 /**
  * Stellt die heutige Auswahl zusammen: erst die überfälligsten Wiederholungen,
- * dann neue Aufgaben aus dem schwächsten Lernfeld.
+ * dann neue Aufgaben aus den schwächsten Lernfeldern — reihum, nicht alle aus
+ * einem. Wer immer nur sein schwächstes Feld vorgesetzt bekommt, bleibt darin
+ * stecken und sieht die späten Lernfelder nie.
  *
  * `modus` filtert nach Inhaltsart: "kurz" lässt verkettete Rechenaufgaben weg
  * (Baustellenpause), "tief" zeigt nur sie (abends, mit Ruhe).
@@ -152,10 +141,19 @@ export function heuteAufgaben(
   faellige.sort((x, y) => y.ueberfaellig - x.ueberfaellig);
   const auswahl = faellige.slice(0, anzahl).map((x) => x.a);
 
-  // Rest mit neuen Aufgaben auffüllen, schwächstes Lernfeld zuerst.
+  // Rest mit neuen Aufgaben auffüllen: reihum aus den schwächsten Feldern,
+  // danach der Rest in Rangfolge, falls die nicht reichen.
   if (auswahl.length < anzahl) {
-    neue.sort((x, y) => x.rang - y.rang);
-    auswahl.push(...neue.slice(0, anzahl - auswahl.length).map((x) => x.a));
+    const gruppen: Aufgabe[][] = [];
+    for (let r = 0; r < FELDER_JE_SITZUNG; r++) {
+      const g = neue.filter((n) => n.rang === r).map((n) => n.a);
+      if (g.length > 0) gruppen.push(g);
+    }
+    const spaeter = neue
+      .filter((n) => n.rang >= FELDER_JE_SITZUNG)
+      .sort((x, y) => x.rang - y.rang)
+      .map((n) => n.a);
+    auswahl.push(...[...reihum(gruppen), ...spaeter].slice(0, anzahl - auswahl.length));
   }
-  return auswahl;
+  return verteile(auswahl);
 }

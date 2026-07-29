@@ -5,6 +5,7 @@
   "main": "electron/main.js",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/gen-anzahl.mjs",
     "build": "next build",
     "start": "next start -p 3200 -H 0.0.0.0",
     "lint": "eslint",

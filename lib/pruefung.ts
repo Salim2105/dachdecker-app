@@ -116,3 +116,77 @@ export function formatiereZeit(sekunden: number): string {
   const m = Math.floor(s / 60);
   return `${String(m).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
 }
+
+/** Kurzfassung einer Aufgabe fürs Protokoll — je nach Typ die Frage oder der Text. */
+function frageVon(a: Aufgabe): string {
+  switch (a.typ) {
+    case "mc":
+    case "diagram":
+      return a.frage;
+    case "cloze":
+      return a.text.replace(/\{\{(.+?)\}\}/g, "___");
+    case "calc":
+    case "draw":
+      return a.aufgabentext;
+    case "fachbegriff":
+      return a.begriff;
+  }
+}
+
+/**
+ * Textprotokoll einer abgeschlossenen Prüfung.
+ *
+ * Die Auswertung auf dem Bildschirm ist weg, sobald man eine neue Prüfung
+ * startet. Das Protokoll bleibt — und genau die falsch beantworteten Aufgaben
+ * mit ihrer Erklärung sind das, was man am Abend danach durchgeht.
+ */
+export function pruefungsprotokoll(
+  titel: string,
+  aufgaben: Aufgabe[],
+  ergebnisse: Bewertung[],
+  jetzt: number,
+): string {
+  const prozent = prozentFuer(ergebnisse, aufgaben.length);
+  const note = noteFuer(prozent);
+  const datum = new Date(jetzt).toLocaleString("de-DE");
+
+  const zeilen: string[] = [
+    `Prüfungsprotokoll — ${titel}`,
+    datum,
+    "",
+    `Ergebnis: ${prozent.toFixed(0)} % · Note ${note.note} (${note.text}) · ${
+      bestanden(prozent) ? "bestanden" : "nicht bestanden"
+    }`,
+    `${ergebnisse.filter((e) => e === "richtig").length} von ${aufgaben.length} voll richtig`,
+    "",
+  ];
+
+  const proLf = new Map<string, { richtig: number; gesamt: number }>();
+  aufgaben.forEach((a, i) => {
+    const e = proLf.get(a.lernfeld) ?? { richtig: 0, gesamt: 0 };
+    e.gesamt += 1;
+    e.richtig += punkteFuer(ergebnisse[i] ?? "falsch");
+    proLf.set(a.lernfeld, e);
+  });
+
+  zeilen.push("Nach Lernfeld");
+  for (const [lf, e] of [...proLf.entries()].sort(
+    (a, b) => a[1].richtig / a[1].gesamt - b[1].richtig / b[1].gesamt,
+  )) {
+    zeilen.push(`  ${lf.padEnd(10)} ${e.richtig} / ${e.gesamt}`);
+  }
+
+  const offen = aufgaben.filter((_, i) => ergebnisse[i] !== "richtig");
+  zeilen.push("", `Zum Nacharbeiten (${offen.length})`, "");
+  for (const a of offen) {
+    const i = aufgaben.indexOf(a);
+    const b = ergebnisse[i] ?? "nicht bearbeitet";
+    zeilen.push(`[${a.lernfeld}] ${frageVon(a)}`);
+    zeilen.push(`  Bewertung: ${b}`);
+    zeilen.push(`  ${a.erklaerung}`);
+    zeilen.push(`  Quelle: ${a.quelle}`);
+    zeilen.push("");
+  }
+
+  return zeilen.join("\n");
+}

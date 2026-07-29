@@ -1,11 +1,13 @@
 "use client";
 import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { getLernfelder } from "@/lib/content";
+import { getLernfelder } from "@/lib/lernfelder";
 import { useProgress } from "@/components/useProgress";
 import { Fortsetzen } from "@/components/Fortsetzen";
 import { datumStore, letztesLfStore } from "@/lib/appStores";
-import { pruefungsreife, tagesdosis } from "@/lib/tagesplan";
+// Bewusst aus lib/reifegrad statt lib/tagesplan: Letzteres zieht die
+// Aufgabensammlung mit, die diese Seite nie anzeigt.
+import { pruefungsreife, tagesdosis } from "@/lib/reifegrad";
 
 const TAG = 86_400_000;
 

@@ -1,4 +1,3 @@
-import lernfelderData from "@/content/lernfelder.json";
 import lf01Aufgaben from "@/content/lf01/aufgaben.json";
 import lf01Lektionen from "@/content/lf01/lektionen.json";
 import lf02Aufgaben from "@/content/lf02/aufgaben.json";
@@ -43,7 +42,11 @@ import anhang3Aufgaben from "@/content/anhang3/aufgaben.json";
 import anhang3Lektionen from "@/content/anhang3/lektionen.json";
 import wisoAufgaben from "@/content/wiso/aufgaben.json";
 import wisoLektionen from "@/content/wiso/lektionen.json";
-import { istSichtbar, type Aufgabe, type Lektion, type Lernfeld } from "@/content/schema";
+import { istSichtbar, type Aufgabe, type Lektion } from "@/content/schema";
+
+// Die Lernfeld-Metadaten leben in lib/lernfelder.ts — dort ohne Aufgabenlast.
+// Hier nur durchgereicht, damit bestehende Importe weiter funktionieren.
+export { getLernfelder, getLernfeld, anzahlAufgaben } from "@/lib/lernfelder";
 
 // Neues Lernfeld ergänzen: oben importieren und hier eintragen.
 const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
@@ -73,14 +76,6 @@ const INHALTE: Record<string, { aufgaben: unknown[]; lektionen: unknown[] }> = {
 
 export function filterSichtbar<T extends { konfidenz: Lektion["konfidenz"] }>(xs: T[]): T[] {
   return xs.filter(istSichtbar);
-}
-
-export function getLernfelder(): Lernfeld[] {
-  return (lernfelderData as { lernfelder: Lernfeld[] }).lernfelder;
-}
-
-export function getLernfeld(id: string): Lernfeld | undefined {
-  return getLernfelder().find((lf) => lf.id === id);
 }
 
 export function getAufgaben(lfId: string): Aufgabe[] {

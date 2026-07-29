@@ -2,7 +2,8 @@
 import { useSyncExternalStore } from "react";
 import Link from "next/link";
 import { letztesLfStore } from "@/lib/appStores";
-import { getLernfeld, getAufgaben } from "@/lib/content";
+// Nur Titel und Aufgabenzahl — kein Grund, die Aufgaben selbst zu laden.
+import { getLernfeld, anzahlAufgaben } from "@/lib/lernfelder";
 
 /**
  * Springt mit einem Tipp zurück in die laufende Übung — genau an die Frage, wo
@@ -24,7 +25,7 @@ export function Fortsetzen() {
 
   if (index === null) return null;
   const feld = getLernfeld(lf);
-  const total = getAufgaben(lf).length;
+  const total = anzahlAufgaben(lf);
   if (!feld || index >= total) return null;
 
   return (
