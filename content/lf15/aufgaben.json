@@ -17,7 +17,7 @@
       0
     ],
     "erklaerung": "Neben der Deckung der Wandfläche müssen bei Außenwandbekleidungen besondere Detailpunkte beachtet werden. Dies sind die Außen- und Innenecken, der untere Abschluss am Sockel, seitliche Abschlüsse und obere Abschlüsse am Dachrand, einer Giebelschräge oder dem Gesims. Ferner unterscheidet man bei Wandöffnungen (Fenster, Türen), Durchdringungen (z. B. Öffnungen für Rohre) und Einbauteilen (Verankerungen für z. B. Vordächer) oberseitige, seitliche und unterseitige Anschlüsse.",
-    "bildDatei": "buch/lf15/bezeichnung-wanddetails.webp",
+    "bildDatei": "/buch/lf15/bezeichnung-wanddetails.webp",
     "bildunterschrift": "Bezeichnung der Wanddetails (Buch S. 534)"
   },
   {
@@ -38,7 +38,7 @@
       0
     ],
     "erklaerung": "Die ersten Gebinde bzw. Reihen werden i. d. R. unterlegt gedeckt, um eine gleichbleibende Neigung zu erreichen. Dabei muss das unterste Gebinde bzw. die unterste Schindelreihe einen ausreichenden Abstand (etwa 30 cm) zum Boden aufweisen, um vor Spritzwasser oder direktem Erdkontakt geschützt zu sein. Die darunterliegende Wand kann durch ein Tropfblech oder eine Rinne vor Tropfwasser geschützt werden.",
-    "bildDatei": "buch/lf15/sockelausbildung.webp",
+    "bildDatei": "/buch/lf15/sockelausbildung.webp",
     "bildunterschrift": "Sockelausbildung (Buch S. 534)"
   },
   {
@@ -61,7 +61,7 @@
       ]
     },
     "erklaerung": "Die Platten bzw. Schindeln dürfen nicht auf dem Abtropfprofil aufsitzen. Wenn kein Abtropfprofil vorgesehen ist, muss ein Überstand von 2…5 cm bei Platten und mindestens 5 cm bei Holzschindeln über der Fußlatte bzw. der Tragkonstruktion eingehalten werden. Die erforderliche Mindestlüftungsöffnung muss auch am Sockel gewährleistet werden. Zum Schutz vor Nagetieren und Insekten sollte ein Lüftungsgitter verschlossen werden.",
-    "bildDatei": "buch/lf15/sockelausbildung.webp",
+    "bildDatei": "/buch/lf15/sockelausbildung.webp",
     "bildunterschrift": "Sockelausbildung (Buch S. 534)"
   },
   {
@@ -82,7 +82,7 @@
       0
     ],
     "erklaerung": "Außenecken können bei Wandbekleidungen aus Schiefer oder Faserzement mit Überstand (mindestens 2 cm) gedeckt werden, oder es werden Schichtstücke oder Profile aus Metall verwendet. Die Deckung kann als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung (Strackortdeckung) erfolgen. Bei der Doppeldeckung und Gezogenen Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig.",
-    "bildDatei": "buch/lf15/aussenecke-geschlauft.webp",
+    "bildDatei": "/buch/lf15/aussenecke-geschlauft.webp",
     "bildunterschrift": "Außenecke bei geschlaufter Deckung (Buch S. 535)"
   },
   {
@@ -104,7 +104,7 @@
       ]
     },
     "erklaerung": "Die Schiefer bzw. Platten werden mit mindestens drei Schieferstiften bzw. Nägeln innerhalb der Überdeckung befestigt. Werden Klammerhaken verwendet, ist ein zusätzlicher Schiefernagel zur Befestigung notwendig, ebenso bei Gebäudehöhen über 20 m. Strackortsteine sollten unterlegt gedeckt werden, um eine ebene Wandfläche zu erzielen. Ihre sichtbaren Ecken sollten gerundet oder gestutzt werden.",
-    "bildDatei": "buch/lf15/aussenecke-metallprofil.webp",
+    "bildDatei": "/buch/lf15/aussenecke-metallprofil.webp",
     "bildunterschrift": "Außenecke mit Metallprofil (Buch S. 536)"
   },
   {
@@ -128,7 +128,7 @@
       ]
     },
     "erklaerung": "Die Überdeckung der Strackortsteine untereinander sowie zur Flächendeckung muss mindestens 5 cm betragen. Die maximale Größe von Faserzementplatten zur Strackortdeckung beträgt 30 × 30 cm bzw. 40 × 20 cm. Bei eingebundener Ortdeckung muss die Überdeckung mindestens der der Flächendeckung entsprechen.",
-    "bildDatei": "buch/lf15/eckausbildung-holzschindeln.webp",
+    "bildDatei": "/buch/lf15/eckausbildung-holzschindeln.webp",
     "bildunterschrift": "Eckausbildung mit Holzschindeln (Buch S. 535)"
   },
   {
@@ -149,7 +149,7 @@
       0
     ],
     "erklaerung": "Holzschindeln werden an Außenecken wechselseitig gestoßen. Bei zweilagiger Deckung oder starker Witterungsbeanspruchung können Metallprofile hinterlegt werden, wobei die Verträglichkeit (insbesondere bei Kupfer oder Zink) mit der Holzart überprüft werden muss. Metallprofile müssen von den Schiefern bzw. Faserzementplatten um mindestens 5 cm überdeckt werden.",
-    "bildDatei": "buch/lf15/eckausbildung-holzschindeln.webp",
+    "bildDatei": "/buch/lf15/eckausbildung-holzschindeln.webp",
     "bildunterschrift": "Eckausbildung mit Holzschindeln (Buch S. 535)"
   },
   {
@@ -170,7 +170,7 @@
       0
     ],
     "erklaerung": "Innenecken werden bei Wandbekleidungen aus Schiefer oder Faserzement ebenfalls mit Schichtstücken aus Metall oder Metallprofilen ausgeführt. Für die Befestigung der Platten bzw. Schiefer und Nocken, die Ortausbildung und die Mindestüberdeckungen gelten sinngemäß die Regeln der Außeneckausbildung. Ferner können Innenecken als untergelegte oder eingebundene Kehldeckung ausgeführt werden. Verwendet werden als Kehlsteine schmalere Steine als in der Fläche. Ihre Mindestbreite beträgt 10 cm. Die Höhenüberdeckung entspricht mindestens der Flächendeckung. Die Kehldeckung erfordert eine Eckschalung aus Brettern und Dreikantleisten.",
-    "bildDatei": "buch/lf15/innenecke-wechselseitig.webp",
+    "bildDatei": "/buch/lf15/innenecke-wechselseitig.webp",
     "bildunterschrift": "Innenecke wechselseitig gestoßen (Buch S. 535)"
   },
   {
@@ -191,7 +191,7 @@
       0
     ],
     "erklaerung": "Ein seitlicher Wandabschluss wird erforderlich, wenn die Deckung an einer Gebäudeecke endet und nicht weitergeführt wird, oder wenn nur Teile einer Wand bekleidet werden. Er kann entsprechend den Ausführungen an Gebäudeecken hergestellt werden.",
-    "bildDatei": "buch/lf15/giebelabschluss-bogenschnitt.webp",
+    "bildDatei": "/buch/lf15/giebelabschluss-bogenschnitt.webp",
     "bildunterschrift": "Giebelabschluss und Fensteranschluss mit Bogenschnittschiefern (Buch S. 536)"
   },
   {
@@ -212,7 +212,7 @@
       0
     ],
     "erklaerung": "Wird der obere Abschluss einer Wandbekleidung durch ein Gesims, einen Dachüberstand oder ein anderes überkragendes Bauteil überragt, sind keine weiteren Maßnahmen notwendig. Es muss jedoch ein ausreichender Abstand zum überkragenden Bauteil eingehalten werden, um die erforderliche Belüftung zu gewährleisten. Ansonsten muss der obere Wandabschluss z. B. durch Metallprofile, Mauerwerksabdeckungen oder Ortgangziegel abgedeckt werden.",
-    "bildDatei": "buch/lf15/oberer-wandabschluss.webp",
+    "bildDatei": "/buch/lf15/oberer-wandabschluss.webp",
     "bildunterschrift": "Oberer Wandabschluss auf Lattung (Buch S. 536)"
   },
   {
@@ -235,7 +235,7 @@
       ]
     },
     "erklaerung": "Bei Schiefer- und Faserzementdeckungen kann der obere Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde ausgeführt werden. Die seitliche Überdeckung beträgt bei Faserzementplatten und aufgelegter Deckung mindestens 4 cm, bei Schiefer mindestens 5 cm. Die Befestigung erfolgt mit mindestens zwei Schieferstiften oder einem Haken und zwei Schieferstiften innerhalb der Überdeckung.",
-    "bildDatei": "buch/lf15/oberer-wandabschluss.webp",
+    "bildDatei": "/buch/lf15/oberer-wandabschluss.webp",
     "bildunterschrift": "Oberer Wandabschluss auf Lattung (Buch S. 536)"
   },
   {
@@ -256,7 +256,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 4: Bei der Ausbildung von Anschlüssen, z. B. Fensteröffnungen, muss die Hinterlüftung der Konstruktion gewährleistet bleiben. So sind unterseitig und oberseitig Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten. Merksatz: Bei der Ausbildung dieser Detailpunkte muss die Hinterlüftung der Konstruktion gewährleistet bleiben.",
-    "bildDatei": "buch/lf15/fensteranschluss-holzschindeln.webp",
+    "bildDatei": "/buch/lf15/fensteranschluss-holzschindeln.webp",
     "bildunterschrift": "Fensteranschluss bei Holzschindelbekleidung (Buch S. 536)"
   },
   {
@@ -274,7 +274,7 @@
       ]
     },
     "erklaerung": "Im Bereich von Laibungen müssen Wärmebrücken vermieden werden. Dies kann durch Dämmstoffstreifen (Dicke mindestens 4 cm) und ggf. das Ausschäumen von Fugen erfolgen. Unterseitige Anschlüsse werden wie obere Abschlüsse, oberseitige Anschlüsse wie untere Sockelabschlüsse ausgebildet. Seitliche Anschlüsse werden entsprechend den Außenecken hergestellt.",
-    "bildDatei": "buch/lf15/laibung-schnitt.webp",
+    "bildDatei": "/buch/lf15/laibung-schnitt.webp",
     "bildunterschrift": "Fensteranschluss: Schnittdarstellung (Buch S. 536)"
   },
   {
@@ -295,7 +295,7 @@
       0
     ],
     "erklaerung": "Einbauteile müssen an der tragenden Wand verankert werden. Sie werden ebenso wie Wanddurchdringungen als Innenecke ausgebildet. Wichtig ist, dass die Last NICHT über die Bekleidung oder ihre Unterkonstruktion abgetragen wird, sondern direkt in die tragende Wand geht.",
-    "bildDatei": "buch/lf15/laibung-schnitt.webp",
+    "bildDatei": "/buch/lf15/laibung-schnitt.webp",
     "bildunterschrift": "Fensteranschluss: Schnittdarstellung (Buch S. 536)"
   },
   {
@@ -316,7 +316,7 @@
       0
     ],
     "erklaerung": "Großformatige Außenwandbekleidungen werden mit offenen oder hinterlegten Fugen von 5…10 mm oder als Stülpdeckung ausgeführt. Aus den Standardplattenformaten können für die Ausbildung von Wanddetails beliebige Formen und Größen zugeschnitten werden.",
-    "bildDatei": "buch/lf15/schnitt-aussenecke-tafel.webp",
+    "bildDatei": "/buch/lf15/schnitt-aussenecke-tafel.webp",
     "bildunterschrift": "Schnitt durch Außenecke (Buch S. 537)"
   },
   {
@@ -337,7 +337,7 @@
       0
     ],
     "erklaerung": "Gebäudeecken werden entsprechend der Flächendeckung mit offenen oder hinterlegten Fugen ausgebildet. Die Fugen werden mit Kunststoff- oder Metallprofilen hinterlegt oder überdeckt. Die Befestigung der Profile erfolgt an der Unterkonstruktion oder an der Wandbekleidung. Der Anschluss an Fenster und Türen erfolgt auslaufend mit zugeschnittenen Fassadentafeln und unterlegten Anschlussprofilen.",
-    "bildDatei": "buch/lf15/oberer-abschluss-tafel.webp",
+    "bildDatei": "/buch/lf15/oberer-abschluss-tafel.webp",
     "bildunterschrift": "Oberer Abschluss: Schnittdarstellung (Buch S. 537)"
   },
   {
@@ -398,7 +398,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 537: Fassadenfläche A = 10,00 m · 11,25 m = 112,5 m². Fensterfläche A_F = 1,25 m · 1,50 m = 1,875 m². WICHTIG: 1,875 m² < 2,5 m² — Fensteröffnungen unter 2,5 m² werden nach VOB übermessen, das heißt sie werden NICHT von der Fassadenfläche abgezogen. Das ist eine typische Prüfungsfalle: Wer die kleinen Fenster abzieht, rechnet zu wenig Material.",
-    "bildDatei": "buch/lf15/beispiel-fassadentafeln.webp",
+    "bildDatei": "/buch/lf15/beispiel-fassadentafeln.webp",
     "bildunterschrift": "Beispiel Fassadentafeln (Buch S. 537)"
   },
   {
@@ -465,7 +465,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 537: Fensterstürze und Brüstungen jeweils 8 · 1,25 m = 10,00 m. Fensterlaibungen 2 · 8 · 1,50 m = 24,00 m (jedes Fenster hat ZWEI senkrechte Laibungen). Gebäudeaußenecken 2 · 11,25 m = 22,50 m. Sockel- und Attikalänge jeweils 10 m. Merke: Sturz und Brüstung sind waagerecht (Fensterbreite), Laibungen sind senkrecht (Fensterhöhe) und kommen doppelt vor.",
-    "bildDatei": "buch/lf15/beispiel-fassadentafeln.webp",
+    "bildDatei": "/buch/lf15/beispiel-fassadentafeln.webp",
     "bildunterschrift": "Beispiel Fassadentafeln (Buch S. 537)"
   },
   {
@@ -486,7 +486,7 @@
       0
     ],
     "erklaerung": "Brandschutzanforderungen an Gebäude mit hinterlüfteter Fassade sind in den jeweiligen Landesbauordnungen geregelt. Die erforderlichen Brandschutzmaßnahmen gelten ab Gebäudeklasse 4. Das sind Gebäude über 8 m Höhe. Hier sind besondere Brandsperren vorgeschrieben. Die Brandsperren sollen die Brandausbreitung über die Lüftungsebene der Fassade behindern und das Überschlagen des Feuers durch Kaminsogwirkung auf höhere Geschosse verhindern.",
-    "bildDatei": "buch/lf15/anordnung-brandsperren.webp",
+    "bildDatei": "/buch/lf15/anordnung-brandsperren.webp",
     "bildunterschrift": "Anordnung horizontaler Brandsperren (Buch S. 538)"
   },
   {
@@ -507,7 +507,7 @@
       0
     ],
     "erklaerung": "Vertikale Brandsperren sind notwendig, wenn die Fassadenbekleidung über Brandwände hinweggeführt wird. Der Hinterlüftungsspalt muss im Bereich der Brandwand mit einem nichtbrennbaren Dämmstoff (Schmelzpunkt > 1000 °C) ausgefüllt werden. Horizontale Brandsperren begrenzen den Hinterlüftungsraum der Fassade auf höchstens 100 cm²/m (d. h. der Lüftungsspalt beträgt an diesen Stellen maximal 1 cm). Sie werden mindestens auf jedem zweiten Geschoss umlaufend um das gesamte Gebäude angeordnet.",
-    "bildDatei": "buch/lf15/anordnung-brandsperren.webp",
+    "bildDatei": "/buch/lf15/anordnung-brandsperren.webp",
     "bildunterschrift": "Anordnung horizontaler Brandsperren (Buch S. 538)"
   },
   {
@@ -535,7 +535,7 @@
       ]
     },
     "erklaerung": "Die Brandsperre muss im Brandfall mindestens 30 Minuten formstabil bleiben. Dies kann durch ein 1 mm dickes Stahlblech erreicht werden, das zwischen Wand und Bekleidung eingebaut wird. Die Bleche werden in Abständen < 60 cm auf Wandankern befestigt und mit 30 mm Überlappung eingebaut. Das Brandsperrblech wird 2…3 cm tief in die geschlitzte Wärmedämmung eingeschoben, wenn der Schmelzpunkt der Wärmedämmung über 1000 °C liegt (z. B. bei Steinwolle). Bei anderen Dämmstoffen (Schmelzpunkt ≤ 1000 °C) muss das Blech bis zur tragenden Wand geführt werden.",
-    "bildDatei": "buch/lf15/brandsperren-stahlblech.webp",
+    "bildDatei": "/buch/lf15/brandsperren-stahlblech.webp",
     "bildunterschrift": "Einbau der Brandsperren aus Stahlblech (Buch S. 538)"
   },
   {
@@ -556,7 +556,7 @@
       0
     ],
     "erklaerung": "Eine weitere Variante sind Brandsperren, die durch verdickte nichtbrennbare Dämmstoffriegel gebildet werden und dadurch den Lüftungsspalt auf unter 10 mm verengen. Bei vertikaler Anordnung dienen die schmelzenden Abstandhalter der Verengung des Lüftungsraums.",
-    "bildDatei": "buch/lf15/brandriegel-daemmstoff.webp",
+    "bildDatei": "/buch/lf15/brandriegel-daemmstoff.webp",
     "bildunterschrift": "Brandriegel aus Dämmstoff (Buch S. 538)"
   },
   {
@@ -583,7 +583,7 @@
       ]
     },
     "erklaerung": "Zum Brandschutz bei Schornsteinen muss die Bekleidung aus nichtbrennbaren Baustoffen bestehen. Eine Holzlattung als Unterkonstruktion kann am Schornstein angebracht werden. Schalungsbretter sind nur mit Abstand zulässig (mindestens 5 cm bei Hinterfüllung mit nichtbrennbarem Dämmstoff bzw. mindestens 2 cm bei Hinterlüftung). Wird ein Schornstein durch eine Außenwand geführt, müssen brennbare Baustoffe der Außenwandbekleidung einen Mindestabstand von 20 cm zur Rohrdurchführung aufweisen.",
-    "bildDatei": "buch/lf15/wanddetails-brandriegel.webp",
+    "bildDatei": "/buch/lf15/wanddetails-brandriegel.webp",
     "bildunterschrift": "Wanddetails im Bereich der Brandriegel (Buch S. 539)"
   },
   {
@@ -604,7 +604,7 @@
       0
     ],
     "erklaerung": "ACHTUNG — im Buch (S. 539) steht der Wert 0,35 W/(m·K). Dieser Wert ist für einen Dämmstoff nicht plausibel: Er entspricht etwa Leichtbeton, nicht einer Dämmschicht. Übliche Dämmstoffe liegen bei 0,035 W/(m·K), also dem Zehnfachen besser. Rechnerisch: Mit λ = 0,035 ergibt 20 cm Dämmung R = d/λ = 0,20/0,035 = 5,71 m²·K/W — ein sinnvoller Wert für eine energetische Sanierung. Mit λ = 0,35 wären es nur R = 0,57 m²·K/W, womit sich eine Sanierung nicht lohnen würde. Prüfe die Größenordnung: Dämmstoffe liegen immer bei 0,02…0,05 W/(m·K).",
-    "bildDatei": "buch/lf15/projekt-fassade-gebaeude.webp",
+    "bildDatei": "/buch/lf15/projekt-fassade-gebaeude.webp",
     "bildunterschrift": "Gebäude der Projektaufgabe (Buch S. 539)"
   },
   {
@@ -655,7 +655,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Projektaufgabe S. 539: Wandfläche A = 15,00 m · 11,50 m = 172,5 m². Gebäudeaußenecken = 2 · 15,00 m = 30,00 m (die Ecken laufen über die ganze Höhe). Sockelabschluss und Attikaanschluss = je 11,50 m, zusammen 23,00 m. Die Fenster (1,00 × 2,00 m = 2,00 m²) liegen unter 2,5 m² und werden nach VOB übermessen, also nicht abgezogen.",
-    "bildDatei": "buch/lf15/projekt-fassade-gebaeude.webp",
+    "bildDatei": "/buch/lf15/projekt-fassade-gebaeude.webp",
     "bildunterschrift": "Gebäude der Projektaufgabe (Buch S. 539)"
   },
   {
@@ -676,7 +676,7 @@
       0
     ],
     "erklaerung": "Projektaufgabe S. 533: Das Walmdach mit Anbau (Dachneigungen 50° bzw. 60°) und Schleppgaube (Neigung 25°, Überstand allseitig 25 cm) wird mit naturroten Dachziegeln eingedeckt. Die Schleppgaube soll eine kleinformatige Wandbekleidung erhalten, das Gaubenfenster (2,00 × 1,00 m) ist mittig angeordnet. Aufgaben: 1. geeignete Bekleidung für die Gaubenwände auswählen und begründen, 2. Vorschläge zur Ausbildung der Kehle, der seitlichen und oberen Abschlüsse sowie der Anschlüsse an das Gaubenfenster mit Detailzeichnungen, 3. Länge der Kehlen und der Außenecken sowie die Längen der An- und Abschlüsse berechnen, 4. gesamten Materialbedarf für die Bekleidung der Schleppgaube ermitteln.",
-    "bildDatei": "buch/lf15/projekt-draufsicht.webp",
+    "bildDatei": "/buch/lf15/projekt-draufsicht.webp",
     "bildunterschrift": "Draufsicht des Projektdachs (Buch S. 533)"
   },
   {
@@ -697,7 +697,7 @@
       0
     ],
     "erklaerung": "Projektaufgabe S. 533: Das abgebildete Walmdach mit Anbau hat die Dachneigungen 50° bzw. 60°. Die Schleppgaube hat eine Neigung von 25° und einen Überstand von allseitig 25 cm. Es wird mit naturroten Dachziegeln eingedeckt. Die Seitenansicht zeigt die beiden Neigungen 60° und 50° sowie die Maße 1,00 m und 1,50 m.",
-    "bildDatei": "buch/lf15/projekt-seitenansicht.webp",
+    "bildDatei": "/buch/lf15/projekt-seitenansicht.webp",
     "bildunterschrift": "Seitenansicht mit Dachneigungen (Buch S. 533)"
   },
   {
@@ -718,7 +718,7 @@
       0
     ],
     "erklaerung": "Projektaufgabe S. 533: Das Gaubenfenster misst 2,00 × 1,00 m und ist mittig angeordnet. Seine Fläche beträgt 2,00 m² und liegt damit unter der VOB-Grenze von 2,5 m². Öffnungen unter 2,5 m² werden nach VOB übermessen — sie werden also NICHT von der Bekleidungsfläche abgezogen. Die Laibungen werden aber trotzdem als laufende Meter erfasst.",
-    "bildDatei": "buch/lf15/projekt-vorderansicht.webp",
+    "bildDatei": "/buch/lf15/projekt-vorderansicht.webp",
     "bildunterschrift": "Vorderansicht der Schleppgaube (Buch S. 533)"
   },
   {
@@ -735,7 +735,7 @@
       "winkel"
     ],
     "erklaerung": "Bei der Schleppdachgaube sind drei Winkel im Spiel: α = Hauptdachneigung, β = Schleppdachneigung und γ = Schleppwinkel (Differenz zwischen α und β). Über γ lässt sich die Wangenhöhe direkt berechnen: w = s' · sin γ. Im Buchbeispiel S. 540 sind α = 40° und β = 25°, also γ = 15°.",
-    "bildDatei": "buch/lf15/schleppgaube-geometrie.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-geometrie.webp",
     "bildunterschrift": "Geometrie der Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -802,7 +802,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 540: s' = 4,30 m − 0,25 m = 4,05 m. Gaubentiefe t_g = s' · cos β = 4,05 · cos 25° = 3,67 m. Gaubenhöhe h_g = t_g · tan α = 3,67 · tan 40° = 3,08 m. WICHTIG: Für t_g wird die Sparrenlänge OHNE Überstand (s') verwendet, für die Dachfläche später aber die Länge MIT Überstand (s). Wer das verwechselt, rechnet die Gaube zu tief.",
-    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -841,7 +841,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 540: a = √(t_g² + h_g²) = √((3,67 m)² + (3,08 m)²) = √22,96 = 4,79 m. Alternativ über die Winkelfunktionen: a = t_g : cos α = 3,67 : cos 40° = 4,79 m, oder a = h_g : sin α = 3,08 : sin 40° = 4,79 m. Alle drei Wege führen zum selben Ergebnis — nutze den, für den du die Werte schon hast.",
-    "bildDatei": "buch/lf15/schleppgaube-winkelfunktionen.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-winkelfunktionen.webp",
     "bildunterschrift": "Winkelfunktionen Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -894,7 +894,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 540: h' = √(s'² − t_g²) = √((4,05 m)² − (3,67 m)²) = √2,93 = 1,71 m. Vordere Sichthöhe h_v = h_g − h' = 3,08 m − 1,71 m = 1,37 m. Die vordere Sichthöhe ist das, was man von vorne an der Gaube tatsächlich sieht — sie ist deutlich kleiner als die Gaubenhöhe, weil das Schleppdach selbst schon Höhe aufnimmt.",
-    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -969,7 +969,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 540: Weg 1: A_w = ½ · h_v · t_g = 0,5 · 1,37 · 3,67 = 2,51 m². Weg 2: Wangenhöhe w = s' · sin γ = 4,05 · sin 15° = 1,05 m, dann A_w = ½ · a · w = 0,5 · 4,79 · 1,05 = 2,51 m². Beide Wege liefern dasselbe Ergebnis — die Wange ist ein Dreieck, das man je nach vorhandenen Maßen über zwei verschiedene Grundseite-Höhe-Paare berechnen kann.",
-    "bildDatei": "buch/lf15/schleppgaube-formeln.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-formeln.webp",
     "bildunterschrift": "Formeln Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -1036,7 +1036,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 540: Vorderfläche A_v = b_g · h_v = 2,50 m · 1,37 m = 3,43 m². Schleppdachfläche A_d = b · s = (2,50 m + 2 · 0,10 m) · 4,30 m = 2,70 · 4,30 = 11,61 m². ACHTUNG zwei Fallen: (1) Für die Dachfläche wird die Sparrenlänge MIT Überstand (4,30 m) genommen, nicht s' = 4,05 m. (2) Der seitliche Überstand von 10 cm zählt ZWEIMAL (links und rechts), also 2,50 + 0,20 = 2,70 m.",
-    "bildDatei": "buch/lf15/schleppgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/schleppgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Schleppdachgaube (Buch S. 540)"
   },
   {
@@ -1057,7 +1057,7 @@
       0
     ],
     "erklaerung": "Bei Satteldachgauben schließt das Dach mit Kehlen an die Hauptdachfläche an. Neben den Anschlusslängen sind hier zusätzlich die Längen der Kehlen zu bestimmen. Die Kehllänge berechnet sich aus k = √((l_f − l_t)² + s²) oder über den Kehl-First-Winkel γ mit k = s : sin γ.",
-    "bildDatei": "buch/lf15/satteldachgaube-geometrie.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-geometrie.webp",
     "bildunterschrift": "Geometrie der Satteldachgaube (Buch S. 541)"
   },
   {
@@ -1102,7 +1102,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 541: tan α = h_w : l_w = 1,17 m : 1,39 m = 0,8417 ⇒ α = 40°. Anschlusslänge a = √(h_w² + l_w²) = √((1,17)² + (1,39)²) = 1,82 m. Alternativ: a = h_w : sin α = 1,17 : sin 40° = 1,82 m. Die Wange bildet ein rechtwinkliges Dreieck — aus Höhe und Länge folgt direkt die Hauptdachneigung.",
-    "bildDatei": "buch/lf15/satteldachgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Satteldachgaube (Buch S. 541)"
   },
   {
@@ -1155,7 +1155,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 541: Bei 45° Gaubendachneigung gilt h = b/2 = 1,14 m. Sparrenlänge s = √((1,14)² + (1,14)²) = 1,61 m. Dachfläche A_d = 2 · [½ · (l_f + l_t) · s] = 2 · ½ · (2,50 + 1,15) · 1,61 = 5,88 m². Die beiden Dachflächen sind Trapeze (oben First, unten Traufe) — deshalb (l_f + l_t)/2 als mittlere Länge, mal 2 für beide Seiten.",
-    "bildDatei": "buch/lf15/satteldachgaube-formeln.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-formeln.webp",
     "bildunterschrift": "Formeln Satteldachgaube (Buch S. 541)"
   },
   {
@@ -1208,7 +1208,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 541: k = √((l_f − l_t)² + s²) = √((1,35 m)² + (1,61 m)²) = 2,10 m. Kehl-First-Winkel: tan γ = s : (l_f − l_t) = 1,61 : 1,35 = 1,1926 ⇒ γ = 50°. Gegenprobe: k = s : sin γ = 1,61 : sin 50° = 2,10 m ✓. Die Differenz l_f − l_t ist der waagerechte Versatz zwischen First und Traufe — daraus und der Sparrenlänge ergibt sich die Kehle.",
-    "bildDatei": "buch/lf15/satteldachgaube-winkelfunktionen.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-winkelfunktionen.webp",
     "bildunterschrift": "Winkelfunktionen Satteldachgaube (Buch S. 541)"
   },
   {
@@ -1285,7 +1285,7 @@
     ],
     "toleranzProzent": 3,
     "erklaerung": "Buchbeispiel S. 541: Wangenflächen A_w = 2 · [½ · 1,39 m · 1,17 m] = 1,63 m². Vorderseite A_v = b_g · h_w + ½ · b_g · h_f − A_Fenster = 1,80 · 1,17 + 0,5 · 1,80 · 0,90 − 1,51 · 0,85 = 2,106 + 0,81 − 1,284 = 1,63 m². Die Vorderseite besteht aus einem Rechteck (bis Traufhöhe) plus einem Dreieck (Giebel) minus dem Fenster. WICHTIG — hier wird das Fenster abgezogen, obwohl es mit 1,28 m² unter 2,5 m² liegt. Das ist kein Widerspruch zur VOB-Regel von S. 537: Das Übermessen kleiner Öffnungen ist eine Abrechnungsregel für das Aufmaß. Hier dagegen wird die tatsächlich zu verkleidende Fläche für den Materialbedarf ermittelt — und dort, wo das Fenster sitzt, liegt nun einmal kein Material. Merke: Aufmaß nach VOB und tatsächlicher Materialbedarf sind zwei verschiedene Rechnungen.",
-    "bildDatei": "buch/lf15/satteldachgaube-skizze.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-skizze.webp",
     "bildunterschrift": "Skizze zur Satteldachgaube (Buch S. 541)"
   },
   {
@@ -1338,7 +1338,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 542: Gaubenhöhe h_g = b/2 · tan 60° = 1,00 m · 1,732 = 1,73 m. Firstlänge l_f = h_g · sin(90° − 40°) : sin 30° = 1,73 · sin 50° : sin 30° = 1,73 · 0,766 : 0,5 = 2,65 m. Die Spitzgaube ist die anspruchsvollste Gaubenform, weil First und Anschlusslinie räumlich verlaufen — hier hilft nur der Sinussatz.",
-    "bildDatei": "buch/lf15/spitzgaube-geometrie.webp",
+    "bildDatei": "/buch/lf15/spitzgaube-geometrie.webp",
     "bildunterschrift": "Geometrie der Spitzgaube (Buch S. 542)"
   },
   {
@@ -1403,7 +1403,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 542: c1 = h_g · cos 50° = 1,73 · 0,643 = 1,11 m. c2 = l_f · cos 30° = 2,65 · 0,866 = 2,295 m. c = c1 + c2 = 3,405 m. Anschlusslänge a = √(c² − (b/2)²) = √((3,405)² − (1,00)²) = √10,60 = 3,25 m.",
-    "bildDatei": "buch/lf15/spitzgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/spitzgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Spitzgaube (Buch S. 542)"
   },
   {
@@ -1478,7 +1478,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel S. 542: Vorderfläche A_v = ½ · b · h_g = ½ · 2,00 · 1,73 = 1,73 m². Wangenfläche A_w = ½ · a · l_f · sin β = ½ · 3,25 · 2,65 · sin 30° = 2,15 m². Beide Wangen: 2 · 2,15 = 4,30 m². Die Spitzgaube hat eine dreieckige Vorderfläche — deshalb ½ · Breite · Höhe.",
-    "bildDatei": "buch/lf15/spitzgaube-beispiel.webp",
+    "bildDatei": "/buch/lf15/spitzgaube-beispiel.webp",
     "bildunterschrift": "Beispiel Spitzgaube (Buch S. 542)"
   },
   {
@@ -1531,7 +1531,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 1 (S. 542): Giebelfläche A = 8 m · 3 m + (8 m · 2,5 m)/2 = 24 + 10 = 34,00 m². Giebelschräge s = √((4,0 m)² + (2,5 m)²) = √22,25 = 4,72 m. Der Giebel ist ein Rechteck plus ein Dreieck; die Schräge ergibt sich aus der halben Breite und der Giebelhöhe.",
-    "bildDatei": "buch/lf15/material-beispiel1-aufgabe.webp",
+    "bildDatei": "/buch/lf15/material-beispiel1-aufgabe.webp",
     "bildunterschrift": "1. Berechnungsbeispiel Materialbedarf (Buch S. 542)"
   },
   {
@@ -1606,7 +1606,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 1 (S. 542): Türlaibungen l = 4 · 2,50 m + 2 · 2,00 m = 14,00 m (vier senkrechte Laibungen bei zwei Türen plus zwei Stürze). Strackortbedarf: Platten 30/15 mit 10 cm Deckhöhe ergeben 10 Stück/m. 10 St./m · (14,00 m + 2 · 4,72 m) · 1,03 ≈ 242 Stück. Dazu 3 Schieferstifte je Platte: 3 · 242 = 726 Stifte.",
-    "bildDatei": "buch/lf15/material-beispiel1-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel1-loesung.webp",
     "bildunterschrift": "Lösung 1. Berechnungsbeispiel (Buch S. 542)"
   },
   {
@@ -1687,7 +1687,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 1 (S. 542): Strackortfläche A_S = (14,00 m + 2 · 4,72 m) · 0,25 m = 5,86 m². Bekleidungsfläche A_B = 34,00 − 5,86 = 28,14 m². Plattenbedarf 20/20: n = 39,1 St./m² · 28,14 m² · 1,03 = 1134 Stück. Bei 2 Schieferstiften je Platte: 2 · 1134 = 2268 Stifte, zusammen mit den 1134 Strackortstiften ergibt das 3402 Stück + Verluste. Traglattung: 6,25 m/m² · 24,00 m² = 150 m + Verschnitt. WICHTIG: Die Strackortfläche wird von der Giebelfläche ABGEZOGEN, weil dieser Randstreifen bereits mit Strackortplatten gedeckt ist — sonst rechnet man doppelt.",
-    "bildDatei": "buch/lf15/material-beispiel1-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel1-loesung.webp",
     "bildunterschrift": "Lösung 1. Berechnungsbeispiel (Buch S. 542)"
   },
   {
@@ -1748,7 +1748,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 2 (S. 543): Gaubentiefe t = √((3,80 m)² − (1,10 m)²) = √13,23 = 3,64 m. Deckfläche A = ½ · 1,10 m · 3,64 m · 2 = 4,00 m². ACHTUNG: Das „· 2\" am Ende ist entscheidend — eine Schleppgaube hat ZWEI Wangen. Eine einzelne Wange hätte nur 2,00 m². Wer die Verdopplung vergisst, bestellt die Hälfte des Materials.",
-    "bildDatei": "buch/lf15/material-beispiel2.webp",
+    "bildDatei": "/buch/lf15/material-beispiel2.webp",
     "bildunterschrift": "2. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -1829,7 +1829,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 2 (S. 543): Decksteinfläche A_St = ((25 cm − 2 cm)/2) · 20 cm = 11,5 · 20 = 230 cm². Steine je m²: 10000 cm² : 230 cm² = 43,5 St./m². Bedarf: 4,00 m² · 43,5 = 174 Stück, + 5 % = 9 Stück ⇒ 183 Stück. Nagelbedarf: 183 St. · 2 Nägel/St. = 366 Nägel + Verluste. Merke: Bei der DOPPELDECKUNG wird die Breite abzüglich Überdeckung HALBIERT — daher die Division durch 2.",
-    "bildDatei": "buch/lf15/material-beispiel2-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel2-loesung.webp",
     "bildunterschrift": "Lösung 2. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -1896,7 +1896,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 3 (S. 543): s' = t_g : cos β = 2,75 m : cos 25° = 3,03 m. s = s' + ü = 3,03 + 0,30 = 3,33 m. Anschlusslänge a = t_g : cos α = 2,75 : cos 45° = 3,89 m. Beachte: Für s' wird mit der SCHLEPPdachneigung β gerechnet, für a mit der HAUPTdachneigung α — die Anschlusslinie liegt in der Hauptdachfläche.",
-    "bildDatei": "buch/lf15/material-beispiel3-skizze.webp",
+    "bildDatei": "/buch/lf15/material-beispiel3-skizze.webp",
     "bildunterschrift": "Skizze 3. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -1991,7 +1991,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 3 (S. 543): Dachfläche A_D = (4,00 + 2 · 0,30) · 3,33 = 4,60 · 3,33 = 15,32 m². Wangenhöhe w = h_v · cos α = 1,50 · cos 45° = 1,06 m. Wangenfläche A_w = ½ · 3,89 · 1,06 = 2,06 m². Vorderfläche A_v = 4,00 · 1,50 = 6,00 m². Senkrechte Flächen insgesamt: 2 · 2,06 + 6,00 = 10,12 m². Dach- und Wandflächen werden getrennt geführt, weil sie mit unterschiedlichen Plattenformaten gedeckt werden.",
-    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel3-loesung.webp",
     "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -2044,7 +2044,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 3 (S. 543): Sichtbare Fläche = ½ · (35 cm − 2 cm) · 25 cm = ½ · 33 · 25 = 412,5 cm². Plattenbedarf je m²: 10000 cm² : 412,5 cm² = 24,24 Stück/m². Für die Dachfläche wurden dagegen Platten 30/60 mit 13,66 Stück/m² und ü = 12 cm gewählt (Tabelle in LF 9).",
-    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel3-loesung.webp",
     "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -2127,7 +2127,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchbeispiel 3 (S. 543): Dachdeckung 15,32 m² · 13,66 St./m² · 1,08 = 227 Stück. Senkrechte Flächen 10,12 m² · 24,24 St./m² · 1,08 = 265 Stück. Schalungsbedarf (15,32 + 10,12) · 1,07 = 27,22 m². HINWEIS: Im Buch steht bei der Schalung die Einheit m³ — das ist ein Druckfehler, es muss m² heißen, denn Schalung wird als Fläche gerechnet. Rechenweg und Zahlenwert sind korrekt.",
-    "bildDatei": "buch/lf15/material-beispiel3-loesung.webp",
+    "bildDatei": "/buch/lf15/material-beispiel3-loesung.webp",
     "bildunterschrift": "Lösung 3. Berechnungsbeispiel (Buch S. 543)"
   },
   {
@@ -2148,7 +2148,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 5 (S. 544): Die Fassade des Mehrfamilienhauses (11,30 m breit, 13,85 m hoch, alle Fenster 1,25 × 1,25 m) wird mit Fassadentafeln 1250 × 2500 mm und 1250 × 1250 mm verkleidet. Für ein Angebot sind zu berechnen: a) Fassadenflächen in m², b) Länge der Fensterlaibungen in m, c) Länge der Sturz- und Brüstungsbekleidung in m, d) Attikaanschluss und Sockelabschluss in m, e) Eckprofile in m. Die Fenster mit 1,5625 m² liegen unter 2,5 m² und werden nach VOB übermessen.",
-    "bildDatei": "buch/lf15/aufg5-mehrfamilienhaus.webp",
+    "bildDatei": "/buch/lf15/aufg5-mehrfamilienhaus.webp",
     "bildunterschrift": "Mehrfamilienhaus (Buch S. 544, Aufgabe 5)"
   },
   {
@@ -2207,7 +2207,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Buchaufgabe 5 (S. 544): Fassadenfläche A = 11,30 m · 13,85 m = 156,51 m². Fensterfläche = 1,25 m · 1,25 m = 1,5625 m² — das liegt unter 2,5 m², die Fenster werden also nach VOB übermessen und nicht abgezogen. Eckprofile = 2 · 13,85 m = 27,70 m. Die Laibungen werden trotzdem als laufende Meter erfasst, denn sie müssen bekleidet werden.",
-    "bildDatei": "buch/lf15/aufg5-mehrfamilienhaus.webp",
+    "bildDatei": "/buch/lf15/aufg5-mehrfamilienhaus.webp",
     "bildunterschrift": "Mehrfamilienhaus (Buch S. 544, Aufgabe 5)"
   },
   {
@@ -2228,7 +2228,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 6 (S. 544): Für das abgebildete Gebäude sind die Bekleidungsfläche, die Länge der Außen- und Innenecken, die Sockellängen sowie die Attikalänge zu berechnen. Ein winkelförmiges Gebäude hat neben den Außenecken auch eine INNENECKE — diese wird oft übersehen, braucht aber ebenfalls Eckprofile bzw. eine Kehldeckung. Die Maße des Gebäudes sind 8,60 / 5,60 / 7,00 / 5,60 m bei 8,25 m Höhe.",
-    "bildDatei": "buch/lf15/aufg6-gebaeude.webp",
+    "bildDatei": "/buch/lf15/aufg6-gebaeude.webp",
     "bildunterschrift": "Gebäude (Buch S. 544, Aufgabe 6)"
   },
   {
@@ -2249,7 +2249,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 7 (S. 544): Für die abgebildete Satteldachgaube (Hauptdachneigung α = 40°, Gaubenbreite b_g = 2,50 m, Überstand ü = 0,30 m) sind zu berechnen: a) Anschlusslänge a und Kehllänge k, b) Firstlänge l_f und Trauflänge l_t, c) Dachfläche, Wangenfläche und Vorderfläche. Der Rechenweg entspricht dem Buchbeispiel von S. 541.",
-    "bildDatei": "buch/lf15/aufg7-satteldachgaube.webp",
+    "bildDatei": "/buch/lf15/aufg7-satteldachgaube.webp",
     "bildunterschrift": "Satteldachgaube (Buch S. 544, Aufgabe 7)"
   },
   {
@@ -2270,7 +2270,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 8 (S. 544): Für die abgebildete Walmdachgaube (Hauptdachneigung 45°) sind die Dachfläche, die Wangenflächen sowie die Anschlusslänge a und die Kehllänge k zu berechnen. Der wesentliche Unterschied zur Satteldachgaube: Bei der Walmdachgaube ist die Vorderseite abgewalmt, also selbst eine geneigte Dachfläche und keine senkrechte Wandfläche. Das ändert den Materialbedarf, weil Dach- und Wandflächen mit unterschiedlichen Formaten gedeckt werden.",
-    "bildDatei": "buch/lf15/aufg8-walmdachgaube.webp",
+    "bildDatei": "/buch/lf15/aufg8-walmdachgaube.webp",
     "bildunterschrift": "Walmdachgaube (Buch S. 544, Aufgabe 8)"
   },
   {
@@ -2291,7 +2291,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 9 (S. 544): Für die abgebildete Spitzgaube (Hauptdachneigung α = 45°, Gaubenneigung β = 25°, Gaubenbreite b = 1,50 m) sind die Wangenflächen sowie die Anschlusslänge a zu berechnen. Die Spitzgaube hat keine Vorderwand im eigentlichen Sinne — die beiden Wangen laufen zur Spitze zusammen. Der Rechenweg entspricht dem Buchbeispiel von S. 542.",
-    "bildDatei": "buch/lf15/aufg9-spitzgaube.webp",
+    "bildDatei": "/buch/lf15/aufg9-spitzgaube.webp",
     "bildunterschrift": "Spitzgaube (Buch S. 544, Aufgabe 9)"
   },
   {
@@ -2312,7 +2312,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 10 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 4,70 m, b_g = 4,34 m, Höhen 2,46 m / 1,16 m / 3,50 m, Grundmaße 0,39 m und 3,87 m) sind zu bestimmen: a) die Dachfläche A_d, b) die Anschlusslänge a, c) die Verkleidungsfläche (Wangen und Vorderseite). Der Unterschied zwischen b und b_g ist der beidseitige Überstand: (4,70 − 4,34)/2 = 0,18 m je Seite.",
-    "bildDatei": "buch/lf15/aufg10-schleppgaube.webp",
+    "bildDatei": "/buch/lf15/aufg10-schleppgaube.webp",
     "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 10)"
   },
   {
@@ -2333,7 +2333,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 11 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 3,75 m, b_g = 3,25 m, Hauptdachneigung 45°, Schleppdachneigung 18°, Maße 1,61 m / 1,36 m / 0,31 m / 2,79 m) sollen Dach, Wangen und Vorderfläche mit zwei Fenstern 135/95 cm mit Faserzementplatten 20/40 cm in Doppeldeckung auf Lattung gedeckt bzw. verkleidet werden. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) der Plattenbedarf, c) der Lattenbedarf bei 8 % Verhau bzw. Verschnitt.",
-    "bildDatei": "buch/lf15/aufg11-schleppgaube.webp",
+    "bildDatei": "/buch/lf15/aufg11-schleppgaube.webp",
     "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 11)"
   },
   {
@@ -2354,7 +2354,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 12 (S. 545): Bei der abgebildeten Schleppdachgaube (b = 3,76 m, b_g = 3,30 m, Hauptdachneigung 45°, Maße 1,50 m / 0,25 m / 2,60 m) sollen Dach, Wangen und Vorderfläche mit zwei Fenstern 90/90 cm mit Schieferplatten in Doppeldeckung auf Schalung gedeckt werden. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Schieferplattengröße, c) der Plattenbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 7 % Verschnitt. Der Rechenweg entspricht dem 3. Berechnungsbeispiel S. 543.",
-    "bildDatei": "buch/lf15/aufg12-schleppgaube.webp",
+    "bildDatei": "/buch/lf15/aufg12-schleppgaube.webp",
     "bildunterschrift": "Schleppdachgaube (Buch S. 545, Aufgabe 12)"
   },
   {
@@ -2375,7 +2375,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 13 (S. 545): Die abgebildete Satteldachgaube (Maße 3,20 m / 1,55 m / 1,65 m / 1,10 m / 1,30 m, Gaubendachneigung 45°, Kehle 1,84 m, Fenster 135/95, Breite 2,20 m) soll insgesamt eine Doppeldeckung aus Faserzementplatten 30/30 cm auf Lattung erhalten. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) der Plattenbedarf bei 6,5 % Verhau, c) der Lattenbedarf bei 7 % Verschnitt, d) der Nagelbedarf.",
-    "bildDatei": "buch/lf15/aufg13-satteldachgaube.webp",
+    "bildDatei": "/buch/lf15/aufg13-satteldachgaube.webp",
     "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 13)"
   },
   {
@@ -2396,7 +2396,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 14 (S. 545): Das Dach der abgebildeten Satteldachgaube sowie Wangen und Vorderfläche sollen eine Doppeldeckung aus Schiefer auf Schalung erhalten (Maße 0,20 m / 1,67 m / 1,40 m, Neigungen 40° bzw. 45°, Fenster 135/95, Breiten 2,10 m und 2,50 m). Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Schieferplattengröße, c) der Schieferbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 7 % Verschnitt.",
-    "bildDatei": "buch/lf15/aufg14-satteldachgaube.webp",
+    "bildDatei": "/buch/lf15/aufg14-satteldachgaube.webp",
     "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 14)"
   },
   {
@@ -2417,7 +2417,7 @@
       0
     ],
     "erklaerung": "Buchaufgabe 15 (S. 545): Die abgebildete Satteldachgaube (zwei Fenster 90/90, Breite 2,70 m, Maße 0,25 m / 1,48 m / 1,52 m / 1,41 m, Neigung 45°) soll insgesamt eine deutsche Deckung auf Schalung erhalten. Zu bestimmen sind: a) die fehlenden Dachgrößen, b) die Plattengrößen für Dach und Wand, c) der Plattenbedarf bei 8 % Verhau, d) der Schalungsbedarf bei 6 % Verschnitt. Wichtig: Für Dach und Wand werden UNTERSCHIEDLICHE Plattengrößen gewählt — die Wandfläche ist steiler und kommt mit kleineren Formaten aus.",
-    "bildDatei": "buch/lf15/aufg15-satteldachgaube.webp",
+    "bildDatei": "/buch/lf15/aufg15-satteldachgaube.webp",
     "bildunterschrift": "Satteldachgaube (Buch S. 545, Aufgabe 15)"
   },
   {
@@ -2438,7 +2438,7 @@
       0
     ],
     "erklaerung": "Projektaufgabe S. 533: Der Anbau trifft als einspringende Ecke auf das Hauptdach — genau dort entsteht die Kehle. An dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen, deshalb muss sie besonders sorgfältig ausgebildet und ihre Länge für den Materialbedarf berechnet werden. Die Schleppgaube erzeugt zusätzlich Anschlusslinien zum Hauptdach. Die Draufsicht zeigt die Grate des Walmdachs und die Kehlen am Anbau.",
-    "bildDatei": "buch/lf15/projekt-walmdach.webp",
+    "bildDatei": "/buch/lf15/projekt-walmdach.webp",
     "bildunterschrift": "Walmdach mit Anbau und Schleppgaube (Buch S. 533)"
   },
   {
@@ -2459,7 +2459,7 @@
       0
     ],
     "erklaerung": "Die Differenz l_f − l_t ist der waagerechte Versatz zwischen First und Traufe der Gaube. Weil das Gaubendach an die geneigte Hauptdachfläche stößt, ist der First kürzer oder länger als die Traufe — dieser Versatz bildet zusammen mit der Sparrenlänge s das rechtwinklige Dreieck der Kehle: k = √((l_f − l_t)² + s²). Im Buchbeispiel S. 541: 2,50 m − 1,15 m = 1,35 m, daraus k = √(1,35² + 1,61²) = 2,10 m.",
-    "bildDatei": "buch/lf15/satteldachgaube-raeumlich.webp",
+    "bildDatei": "/buch/lf15/satteldachgaube-raeumlich.webp",
     "bildunterschrift": "Satteldachgaube räumlich (Buch S. 541)"
   }
 ]

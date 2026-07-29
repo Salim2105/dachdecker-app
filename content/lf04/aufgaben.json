@@ -32,7 +32,7 @@
       "klinker"
     ],
     "erklaerung": "Klinker ist das Kernprodukt der Zementherstellung. Ohne Klinkerbrennen kein Zement.",
-    "bildDatei": "buch/lf04/zementherstellung-schema.webp",
+    "bildDatei": "/buch/lf04/zementherstellung-schema.webp",
     "bildunterschrift": "Zementherstellung – Schema (Buch S. 150)"
   },
   {
@@ -57,7 +57,7 @@
       ]
     },
     "erklaerung": "Die Rohstoffe Kalkstein und Ton werden gemahlen, gemischt und bei ca. 1450 °C im Drehrohrofen zu Klinker gesintert. Danach wird der Klinker mit Gips fein gemahlen.",
-    "bildDatei": "buch/lf04/zementherstellung-schema.webp",
+    "bildDatei": "/buch/lf04/zementherstellung-schema.webp",
     "bildunterschrift": "Zementherstellung – Schema (Buch S. 150)"
   },
   {
@@ -78,7 +78,7 @@
       0
     ],
     "erklaerung": "Gips dient als Erstarrungsregler. Ohne Gips würde der Zement nach dem Anmachen mit Wasser sofort erstarren und wäre nicht mehr verarbeitbar.",
-    "bildDatei": "buch/lf04/zementherstellung-schema.webp",
+    "bildDatei": "/buch/lf04/zementherstellung-schema.webp",
     "bildunterschrift": "Zementherstellung – Schema (Buch S. 150)"
   },
   {
@@ -99,7 +99,7 @@
       0
     ],
     "erklaerung": "CEM I (Portlandzement) besteht zu mindestens 95 % aus Portlandzementklinker. CEM II-V enthalten zusätzlich andere Hauptbestandteile wie Hüttensand, Puzzolane oder Flugasche.",
-    "bildDatei": "buch/lf04/normalzemente-tabelle.webp",
+    "bildDatei": "/buch/lf04/normalzemente-tabelle.webp",
     "bildunterschrift": "Normalzemente CEM I–V (Buch S. 151)"
   },
   {
@@ -129,7 +129,7 @@
       ]
     },
     "erklaerung": "Merkhilfe: I = nur Portland, II = Portland + Komposit, III = Hochofen (Hüttensand), IV = Puzzolan, V = Komposit (gemischt).",
-    "bildDatei": "buch/lf04/normalzemente-tabelle.webp",
+    "bildDatei": "/buch/lf04/normalzemente-tabelle.webp",
     "bildunterschrift": "Normalzemente CEM I–V (Buch S. 151)"
   },
   {
@@ -150,7 +150,7 @@
       0
     ],
     "erklaerung": "Die Festigkeitsklassen 32,5, 42,5 und 52,5 geben die Mindestdruckfestigkeit in N/mm² nach 28 Tagen an.",
-    "bildDatei": "buch/lf04/festigkeitsklassen-zement.webp",
+    "bildDatei": "/buch/lf04/festigkeitsklassen-zement.webp",
     "bildunterschrift": "Festigkeitsklassen und Anfangsfestigkeit (Buch S. 151)"
   },
   {
@@ -171,7 +171,7 @@
       0
     ],
     "erklaerung": "L = niedrige Anfangsfestigkeit (langsam), N = normale Anfangsfestigkeit, R = hohe Anfangsfestigkeit (rasch). Die 28-Tage-Festigkeit ist bei allen gleich.",
-    "bildDatei": "buch/lf04/festigkeitsklassen-zement.webp",
+    "bildDatei": "/buch/lf04/festigkeitsklassen-zement.webp",
     "bildunterschrift": "Festigkeitsklassen und Anfangsfestigkeit (Buch S. 151)"
   },
   {
@@ -195,7 +195,7 @@
       ]
     },
     "erklaerung": "Die Kennfarben auf den Zementsäcken helfen bei der schnellen Unterscheidung auf der Baustelle: braun = 32,5, grün = 42,5, rot = 52,5.",
-    "bildDatei": "buch/lf04/kennfarben-zement.webp",
+    "bildDatei": "/buch/lf04/kennfarben-zement.webp",
     "bildunterschrift": "Kennfarben der Festigkeitsklassen (Buch S. 152)"
   },
   {
@@ -250,7 +250,7 @@
       0
     ],
     "erklaerung": "Normale Gesteinskörnungen (Sand, Kies, Splitt) haben eine Kornrohdichte von 2000 bis 3000 kg/m³. Leichte (Blähton, Bims) liegen darunter, schwere (Baryt) darüber.",
-    "bildDatei": "buch/lf04/gesteinskoernungen-uebersicht.webp",
+    "bildDatei": "/buch/lf04/gesteinskoernungen-uebersicht.webp",
     "bildunterschrift": "Gesteinskörnungen nach Rohdichte (Buch S. 153)"
   },
   {
@@ -271,7 +271,7 @@
       0
     ],
     "erklaerung": "Leichte Gesteinskörnungen wie Blähton, Bims oder Blähglas haben eine Kornrohdichte unter 2000 kg/m³ und ergeben Leichtbeton mit geringerer Wärmeleitfähigkeit.",
-    "bildDatei": "buch/lf04/gesteinskoernungen-uebersicht.webp",
+    "bildDatei": "/buch/lf04/gesteinskoernungen-uebersicht.webp",
     "bildunterschrift": "Gesteinskörnungen nach Rohdichte (Buch S. 153)"
   },
   {
@@ -294,7 +294,7 @@
       ]
     },
     "erklaerung": "Die Korngruppen sind: Sand (0/4 mm), Kies (rund, > 4 mm) und Splitt (gebrochen, > 4 mm). Eine gute Sieblinie sorgt für dichten Beton.",
-    "bildDatei": "buch/lf04/korngruppen-siebung.webp",
+    "bildDatei": "/buch/lf04/korngruppen-siebung.webp",
     "bildunterschrift": "Korngruppen und Siebung (Buch S. 153)"
   },
   {
@@ -315,7 +315,7 @@
       0
     ],
     "erklaerung": "Eine gute Sieblinie bedeutet: Körner verschiedener Größe füllen die Hohlräume zwischen den groben Körnern. Das ergibt dichten, festen Beton mit weniger Zementleimbedarf.",
-    "bildDatei": "buch/lf04/sieblinie-diagramm.webp",
+    "bildDatei": "/buch/lf04/sieblinie-diagramm.webp",
     "bildunterschrift": "Siebliniendiagramm (Buch S. 154)"
   },
   {
@@ -395,7 +395,7 @@
       0
     ],
     "erklaerung": "C steht für Concrete. Die erste Zahl ist die Zylinderdruckfestigkeit (Ø 150 mm, h = 300 mm), die zweite die Würfeldruckfestigkeit (150 mm Kantenlänge), jeweils nach 28 Tagen.",
-    "bildDatei": "buch/lf04/druckfestigkeitsklassen-beton.webp",
+    "bildDatei": "/buch/lf04/druckfestigkeitsklassen-beton.webp",
     "bildunterschrift": "Druckfestigkeitsklassen von Beton (Buch S. 156)"
   },
   {
@@ -416,7 +416,7 @@
       0
     ],
     "erklaerung": "C8/10 ist die niedrigste Klasse. Sie wird z. B. für unbewehrte Fundamente oder Sauberkeitsschichten verwendet. Für bewehrte Bauteile braucht man mindestens C12/15 oder höher.",
-    "bildDatei": "buch/lf04/druckfestigkeitsklassen-beton.webp",
+    "bildDatei": "/buch/lf04/druckfestigkeitsklassen-beton.webp",
     "bildunterschrift": "Druckfestigkeitsklassen von Beton (Buch S. 156)"
   },
   {
@@ -437,7 +437,7 @@
       0
     ],
     "erklaerung": "Beim Ausbreitversuch wird ein Kegelstumpf mit Beton gefüllt, abgehoben und die Platte mehrmals angehoben und fallen gelassen. Der Durchmesser des Betonfladen ist das Ausbreitmaß.",
-    "bildDatei": "buch/lf04/ausbreitversuch.webp",
+    "bildDatei": "/buch/lf04/ausbreitversuch.webp",
     "bildunterschrift": "Ausbreitversuch (Buch S. 157)"
   },
   {
@@ -457,7 +457,7 @@
       ]
     },
     "erklaerung": "F steht für Fließmaß/Flow. F1 = steif (≤ 340 mm), F2 = plastisch, F3 = weich, F4 = sehr weich, F5 = fließfähig, F6 = sehr fließfähig (≥ 630 mm).",
-    "bildDatei": "buch/lf04/konsistenzklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/konsistenzklassen-tabelle.webp",
     "bildunterschrift": "Konsistenzklassen von Frischbeton (Buch S. 156)"
   },
   {
@@ -534,7 +534,7 @@
       0
     ],
     "erklaerung": "Expositionsklassen (X0, XC, XD, XS, XF, XA, XM) beschreiben die Umgebungsbedingungen: Carbonatisierung, Chloride, Frost, chemischer Angriff und Verschleiß. Danach richtet sich die Mindestbetongüte.",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -555,7 +555,7 @@
       0
     ],
     "erklaerung": "XC = Carbonatisierung (C = Carbonation). CO₂ aus der Luft dringt in den Beton ein und senkt den pH-Wert, sodass der Stahl zu rosten beginnt. XC1 (trocken) bis XC4 (wechselnd nass/trocken).",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -585,7 +585,7 @@
       ]
     },
     "erklaerung": "XC = Carbonation, XD = Deicing salt (Tausalz-Chloride), XS = Seawater, XF = Freeze, XA = Acid/chemical Attack, XM = Mechanical wear.",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -606,7 +606,7 @@
       0
     ],
     "erklaerung": "X0 bedeutet: Kein Korrosions- oder Angriffsrisiko. Gilt für unbewehrten Beton ohne Frostgefahr, z. B. Innenbauteile in trockenen Räumen.",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -627,7 +627,7 @@
       0
     ],
     "erklaerung": "XM steht für Mechanical wear (Verschleiß). XM1 bis XM3 gelten für Böden, Verkehrsflächen und Industriefußböden, die mechanisch beansprucht werden.",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -648,7 +648,7 @@
       0
     ],
     "erklaerung": "Für XC4 ist mindestens C25/30 erforderlich. Je aggressiver die Umgebung, desto höher die geforderte Mindestbetongüte, um die Bewehrung ausreichend zu schützen.",
-    "bildDatei": "buch/lf04/expositionsklassen-mindestfestigkeit.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-mindestfestigkeit.webp",
     "bildunterschrift": "Mindestfestigkeitsklassen nach Expositionsklasse (Buch S. 159)"
   },
   {
@@ -669,7 +669,7 @@
       0
     ],
     "erklaerung": "Standardbeton eignet sich für einfache, untergeordnete Bauteile. Er wird nach festgelegten Anhaltswerten gemischt und braucht keine Eignungsprüfung oder besondere Überwachung.",
-    "bildDatei": "buch/lf04/standardbeton-tabelle.webp",
+    "bildDatei": "/buch/lf04/standardbeton-tabelle.webp",
     "bildunterschrift": "Anhaltswerte für Standardbeton (Buch S. 160)"
   },
   {
@@ -730,7 +730,7 @@
       0
     ],
     "erklaerung": "Transportbeton wird im Betonwerk nach der bestellten Rezeptur gemischt und in Fahrmischern (Betonmischer-LKW) zur Baustelle gefahren. Er muss innerhalb der Verarbeitungszeit eingebaut werden.",
-    "bildDatei": "buch/lf04/transportbeton-fahrmischer.webp",
+    "bildDatei": "/buch/lf04/transportbeton-fahrmischer.webp",
     "bildunterschrift": "Transportbeton – Fahrmischer (Buch S. 162)"
   },
   {
@@ -751,7 +751,7 @@
       0
     ],
     "erklaerung": "Beim Einbringen enthält Frischbeton eingeschlossene Luft. Durch Verdichten (Rütteln) entweicht die Luft, der Beton wird dichter, fester und umschließt die Bewehrung besser.",
-    "bildDatei": "buch/lf04/verdichten-ruettler.webp",
+    "bildDatei": "/buch/lf04/verdichten-ruettler.webp",
     "bildunterschrift": "Verdichten mit Innenrüttler (Buch S. 163)"
   },
   {
@@ -796,7 +796,7 @@
       ]
     },
     "erklaerung": "Verdichtet wird meist mit Innenrüttlern (Flaschenrüttler) oder Außenrüttlern. Nicht verdichteter Beton enthält Luftnester und ist schwächer.",
-    "bildDatei": "buch/lf04/verdichten-ruettler.webp",
+    "bildDatei": "/buch/lf04/verdichten-ruettler.webp",
     "bildunterschrift": "Verdichten mit Innenrüttler (Buch S. 163)"
   },
   {
@@ -817,7 +817,7 @@
       0
     ],
     "erklaerung": "B500 bedeutet Betonstahl mit einer Streckgrenze von 500 N/mm² (= 500 MPa). Die Streckgrenze ist die Spannung, bis zu der sich der Stahl elastisch verhält.",
-    "bildDatei": "buch/lf04/betonstahl-rippen.webp",
+    "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
     "bildunterschrift": "Betonstahl B500 – Rippen und Kennzeichen (Buch S. 164)"
   },
   {
@@ -838,7 +838,7 @@
       0
     ],
     "erklaerung": "A = normalduktil (kaltverformt, Rippenstäbe und Draht), B = hochduktil (warmgewalzt, höhere Bruchdehnung). B500B kann sich stärker verformen, bevor er bricht — wichtig für Erdbeben und hohe Lasten.",
-    "bildDatei": "buch/lf04/betonstahl-rippen.webp",
+    "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
     "bildunterschrift": "Betonstahl B500 – Rippen und Kennzeichen (Buch S. 164)"
   },
   {
@@ -861,7 +861,7 @@
       ]
     },
     "erklaerung": "Duktilität = Verformungsfähigkeit. Hochduktiler Stahl (B) kann sich stärker dehnen, bevor er bricht. A = normal, B = besser verformbar.",
-    "bildDatei": "buch/lf04/betonstahl-rippen.webp",
+    "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
     "bildunterschrift": "Betonstahl B500 – Rippen und Kennzeichen (Buch S. 164)"
   },
   {
@@ -882,7 +882,7 @@
       0
     ],
     "erklaerung": "Betonstahlmatten bestehen aus sich kreuzenden Betonstählen, die an jedem Kreuzungspunkt verschweißt sind. Man unterscheidet Lagermatten (Standard) und Listenmatten (nach Maß gefertigt).",
-    "bildDatei": "buch/lf04/betonstahlmatten-lagermatten.webp",
+    "bildDatei": "/buch/lf04/betonstahlmatten-lagermatten.webp",
     "bildunterschrift": "Betonstahlmatten: Lager- und Listenmatten (Buch S. 165)"
   },
   {
@@ -903,7 +903,7 @@
       0
     ],
     "erklaerung": "Lagermatten (Kurzzeichen Q oder R) sind Standardmatten mit festen Abmessungen, die auf Lager liegen. Listenmatten werden nach einer individuellen Bestellliste für das Bauvorhaben hergestellt.",
-    "bildDatei": "buch/lf04/betonstahlmatten-lagermatten.webp",
+    "bildDatei": "/buch/lf04/betonstahlmatten-lagermatten.webp",
     "bildunterschrift": "Betonstahlmatten: Lager- und Listenmatten (Buch S. 165)"
   },
   {
@@ -939,7 +939,7 @@
       0
     ],
     "erklaerung": "Betonstahl hat Rippen auf der Oberfläche. Diese Rippen verzahnen sich mit dem Beton und sorgen für den Verbund: Der Stahl kann sich nicht mehr im Beton verschieben.",
-    "bildDatei": "buch/lf04/betonstahl-rippen.webp",
+    "bildDatei": "/buch/lf04/betonstahl-rippen.webp",
     "bildunterschrift": "Betonstahl B500 – Rippen und Kennzeichen (Buch S. 164)"
   },
   {
@@ -960,7 +960,7 @@
       0
     ],
     "erklaerung": "Beton ist druckfest, aber zugschwach (nur ca. 1/10 der Druckfestigkeit). Deshalb übernimmt der Bewehrungsstahl die Zugkräfte — das ist das Grundprinzip von Stahlbeton.",
-    "bildDatei": "buch/lf04/tragverhalten-stahlbetonbalken.webp",
+    "bildDatei": "/buch/lf04/tragverhalten-stahlbetonbalken.webp",
     "bildunterschrift": "Tragverhalten eines Stahlbetonbalkens (Buch S. 167)"
   },
   {
@@ -985,7 +985,7 @@
       ]
     },
     "erklaerung": "Beton drückt, Stahl zieht. Die Verbundwirkung zwischen beiden macht Stahlbeton so leistungsfähig.",
-    "bildDatei": "buch/lf04/tragverhalten-stahlbetonbalken.webp",
+    "bildDatei": "/buch/lf04/tragverhalten-stahlbetonbalken.webp",
     "bildunterschrift": "Tragverhalten eines Stahlbetonbalkens (Buch S. 167)"
   },
   {
@@ -1006,7 +1006,7 @@
       0
     ],
     "erklaerung": "Drei Gründe für den Verbund: 1) Rippen sorgen für Formschluss, 2) Haftung zwischen Zementstein und Stahl, 3) fast gleicher Wärmeausdehnungskoeffizient — der Verbund wird bei Temperaturänderungen nicht zerstört.",
-    "bildDatei": "buch/lf04/tragverhalten-stahlbetonbalken.webp",
+    "bildDatei": "/buch/lf04/tragverhalten-stahlbetonbalken.webp",
     "bildunterschrift": "Tragverhalten eines Stahlbetonbalkens (Buch S. 167)"
   },
   {
@@ -1027,7 +1027,7 @@
       0
     ],
     "erklaerung": "Die Betondeckung ist der Abstand zwischen Bewehrung und Bauteiloberfläche. Sie schützt den Stahl vor Rost (Korrosionsschutz) und vor Hitze im Brandfall (Brandschutz). Abstandhalter sichern das Maß.",
-    "bildDatei": "buch/lf04/mindestbetondeckung-tabelle.webp",
+    "bildDatei": "/buch/lf04/mindestbetondeckung-tabelle.webp",
     "bildunterschrift": "Mindestbetondeckung nach Expositionsklassen (Buch S. 168)"
   },
   {
@@ -1063,7 +1063,7 @@
       0
     ],
     "erklaerung": "Abstandhalter (aus Kunststoff, Beton oder Metall) werden zwischen Bewehrung und Schalung geklemmt. Sie sorgen dafür, dass die Bewehrung beim Betonieren ihre Lage behält und die Mindestdeckung eingehalten wird.",
-    "bildDatei": "buch/lf04/abstandhalter.webp",
+    "bildDatei": "/buch/lf04/abstandhalter.webp",
     "bildunterschrift": "Abstandhalter für Bewehrung (Buch S. 168)"
   },
   {
@@ -1162,7 +1162,7 @@
       0
     ],
     "erklaerung": "Der Bewehrungsplan zeigt genau, wo welcher Stahl eingebaut wird. Jeder Stab hat eine Positionsnummer, einen Durchmesser, eine Form und eine Stückzahl. Dazu gehört eine Stahlliste.",
-    "bildDatei": "buch/lf04/bewehrungsplan-beispiel.webp",
+    "bildDatei": "/buch/lf04/bewehrungsplan-beispiel.webp",
     "bildunterschrift": "Bewehrungsplan mit Stahlliste (Buch S. 170)"
   },
   {
@@ -1217,7 +1217,7 @@
       0
     ],
     "erklaerung": "Bei einer Platte auf zwei Auflagern biegt sich die Platte nach unten durch: Oben entsteht Druck, unten Zug. Die Bewehrung gehört in die Zugzone, also nach unten.",
-    "bildDatei": "buch/lf04/zugzonen-bauteile.webp",
+    "bildDatei": "/buch/lf04/zugzonen-bauteile.webp",
     "bildunterschrift": "Zugzonen bei verschiedenen Bauteilen (Buch S. 173)"
   },
   {
@@ -1238,7 +1238,7 @@
       0
     ],
     "erklaerung": "Bei einer Kragplatte (einseitig eingespannt, z. B. Balkon) hängt die Platte nach unten: Oben wird gezogen, unten gedrückt. Die Bewehrung liegt oben — umgekehrt wie bei der Platte auf zwei Auflagern!",
-    "bildDatei": "buch/lf04/zugzonen-bauteile.webp",
+    "bildDatei": "/buch/lf04/zugzonen-bauteile.webp",
     "bildunterschrift": "Zugzonen bei verschiedenen Bauteilen (Buch S. 173)"
   },
   {
@@ -1259,7 +1259,7 @@
       0
     ],
     "erklaerung": "Abstandhalter werden zwischen Bewehrung und Schalung eingesetzt. Sie stellen sicher, dass die Mindestbetondeckung eingehalten wird — ohne sie könnte die Bewehrung an die Schalung rutschen.",
-    "bildDatei": "buch/lf04/abstandhalter.webp",
+    "bildDatei": "/buch/lf04/abstandhalter.webp",
     "bildunterschrift": "Abstandhalter für Bewehrung (Buch S. 168)"
   },
   {
@@ -1298,7 +1298,7 @@
       ]
     },
     "erklaerung": "Merke: Wo sich das Bauteil durchbiegt, wird die Unterseite gezogen. Bei der Kragplatte biegt sich das freie Ende nach unten — die Oberseite wird gezogen.",
-    "bildDatei": "buch/lf04/zugzonen-bauteile.webp",
+    "bildDatei": "/buch/lf04/zugzonen-bauteile.webp",
     "bildunterschrift": "Zugzonen bei verschiedenen Bauteilen (Buch S. 173)"
   },
   {
@@ -1319,7 +1319,7 @@
       0
     ],
     "erklaerung": "Die Schalhaut gibt dem Beton seine Form und bestimmt die Oberfläche. Die Unterkonstruktion stützt die Schalhaut aus. Die Unterstützung (Unterbau) leitet die Kräfte zum Untergrund weiter.",
-    "bildDatei": "buch/lf04/schalung-aufbau.webp",
+    "bildDatei": "/buch/lf04/schalung-aufbau.webp",
     "bildunterschrift": "Aufbau einer Schalung (Buch S. 174)"
   },
   {
@@ -1344,7 +1344,7 @@
       ]
     },
     "erklaerung": "Drei Teile der Schalung: Schalhaut (formt), Unterkonstruktion (stützt die Haut), Unterstützung/Unterbau (leitet Lasten ab).",
-    "bildDatei": "buch/lf04/schalung-aufbau.webp",
+    "bildDatei": "/buch/lf04/schalung-aufbau.webp",
     "bildunterschrift": "Aufbau einer Schalung (Buch S. 174)"
   },
   {
@@ -1365,7 +1365,7 @@
       0
     ],
     "erklaerung": "Frischbeton verhält sich ähnlich wie eine Flüssigkeit. Der seitliche Druck nimmt wie der Wasserdruck (hydrostatisch) mit der Tiefe zu. Deshalb müssen Stützenzwingen unten enger angeordnet werden.",
-    "bildDatei": "buch/lf04/betondruck-schalung.webp",
+    "bildDatei": "/buch/lf04/betondruck-schalung.webp",
     "bildunterschrift": "Betondruck auf die Schalung (Buch S. 174)"
   },
   {
@@ -1386,7 +1386,7 @@
       0
     ],
     "erklaerung": "Holz ist das häufigste Schalungsmaterial: Bretter, Schalungsplatten aus Furnier- oder Stabsperrholz. Daneben gibt es Stahl- und Kunststoffschalungen für Sichtbeton und hohe Einsatzzahlen.",
-    "bildDatei": "buch/lf04/brettschalung-verbindungen.webp",
+    "bildDatei": "/buch/lf04/brettschalung-verbindungen.webp",
     "bildunterschrift": "Verbindungen bei Brettschalungen (Buch S. 175)"
   },
   {
@@ -1407,7 +1407,7 @@
       0
     ],
     "erklaerung": "Die rechte Brettseite (Kernseite) wölbt sich bei Wasseraufnahme zum Beton hin. Dadurch schließen sich die Fugen zwischen den Brettern und die Schalhaut wird dichter — der Zementleim kann nicht auslaufen.",
-    "bildDatei": "buch/lf04/brettschalung-verbindungen.webp",
+    "bildDatei": "/buch/lf04/brettschalung-verbindungen.webp",
     "bildunterschrift": "Verbindungen bei Brettschalungen (Buch S. 175)"
   },
   {
@@ -1447,7 +1447,7 @@
       0
     ],
     "erklaerung": "Schalungsträger aus Holz (Gitter- oder Vollwandträger) dienen als Unterkonstruktion. Sie tragen die Schalhaut und leiten die Lasten in die Stützen weiter.",
-    "bildDatei": "buch/lf04/stuetzen-schalungstraeger.webp",
+    "bildDatei": "/buch/lf04/stuetzen-schalungstraeger.webp",
     "bildunterschrift": "Stützen und Schalungsträger (Buch S. 177)"
   },
   {
@@ -1468,7 +1468,7 @@
       0
     ],
     "erklaerung": "Stahlrohrstützen sind am häufigsten: Sie sind ausziehbar und lassen sich mit Keilen in der Höhe feineinstellen. Rundholz- und Kantholzstützen werden ebenfalls verwendet.",
-    "bildDatei": "buch/lf04/stuetzen-schalungstraeger.webp",
+    "bildDatei": "/buch/lf04/stuetzen-schalungstraeger.webp",
     "bildunterschrift": "Stützen und Schalungsträger (Buch S. 177)"
   },
   {
@@ -1489,7 +1489,7 @@
       0
     ],
     "erklaerung": "Abstützungen müssen waagerechte Kräfte aus Wind, Schrägstützen und Betoniergeräten aufnehmen. Ohne diagonale Aussteifung (Verschwerung) könnten sie seitlich umknicken.",
-    "bildDatei": "buch/lf04/stuetzen-schalungstraeger.webp",
+    "bildDatei": "/buch/lf04/stuetzen-schalungstraeger.webp",
     "bildunterschrift": "Stützen und Schalungsträger (Buch S. 177)"
   },
   {
@@ -1548,7 +1548,7 @@
       0
     ],
     "erklaerung": "Schalungsanker bestehen aus Ankerstab, Ankerverschluss und Abstandhalter. Zum Verspannen werden Schraubverschlüsse verwendet, die über Flügelmuttern angezogen werden.",
-    "bildDatei": "buch/lf04/verspannen-schalung.webp",
+    "bildDatei": "/buch/lf04/verspannen-schalung.webp",
     "bildunterschrift": "Verspannen der Schalung (Buch S. 178)"
   },
   {
@@ -1569,7 +1569,7 @@
       0
     ],
     "erklaerung": "Die Deckenschalung besteht aus großflächigen Schaltafeln (Schalhaut), Schalungsträgern (Gitter- oder Vollwandträger als Unterkonstruktion) und Stahlrohrstützen (Unterstützung). Der Stützenabstand sollte nicht größer als 1,20 m sein.",
-    "bildDatei": "buch/lf04/deckenschalung-vollwandtraeger.webp",
+    "bildDatei": "/buch/lf04/deckenschalung-vollwandtraeger.webp",
     "bildunterschrift": "Deckenschalung mit Vollwandträgern (Buch S. 178)"
   },
   {
@@ -1667,7 +1667,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Rohmenge = Fertigmenge · (1 + Zuschlag/100). Der Verschnittzuschlag berücksichtigt Abschnitte und Beschädigungen beim Zuschneiden.",
-    "bildDatei": "buch/lf04/stuetzenschalung-holzliste.webp",
+    "bildDatei": "/buch/lf04/stuetzenschalung-holzliste.webp",
     "bildunterschrift": "Stützenschalung mit Holzliste (Buch S. 180)"
   },
   {
@@ -1749,7 +1749,7 @@
       "analyse"
     ],
     "erklaerung": "Die Produktlinienanalyse betrachtet nicht nur das Produkt selbst, sondern seine gesamte ‚Linie' von der Wiege bis zur Bahre.",
-    "bildDatei": "buch/lf04/lebenszyklus-produkt.webp",
+    "bildDatei": "/buch/lf04/lebenszyklus-produkt.webp",
     "bildunterschrift": "Lebenszyklus eines Produktes (Buch S. 183)"
   },
   {
@@ -1785,7 +1785,7 @@
       0
     ],
     "erklaerung": "Die Herstellung von Zement erfordert hohe Temperaturen (ca. 1450 °C) und verursacht erhebliche CO₂-Emissionen. Beton hat daher einen hohen Rohstoff- und Energieverbrauch.",
-    "bildDatei": "buch/lf04/rohstoffverbrauch-baustoffe.webp",
+    "bildDatei": "/buch/lf04/rohstoffverbrauch-baustoffe.webp",
     "bildunterschrift": "Rohstoff- und Energieverbrauch verschiedener Baustoffe (Buch S. 184)"
   },
   {
@@ -1806,7 +1806,7 @@
       0
     ],
     "erklaerung": "Die Ökobilanz erfasst alle Umweltwirkungen von der Rohstoffgewinnung über die Herstellung und Nutzung bis zur Entsorgung. Sie hilft, ökologische Schwachstellen zu erkennen und zu verbessern.",
-    "bildDatei": "buch/lf04/rohstoffverbrauch-baustoffe.webp",
+    "bildDatei": "/buch/lf04/rohstoffverbrauch-baustoffe.webp",
     "bildunterschrift": "Rohstoff- und Energieverbrauch verschiedener Baustoffe (Buch S. 184)"
   },
   {
@@ -1827,7 +1827,7 @@
       0
     ],
     "erklaerung": "Ökobilanzen zeigen: Bei vielen Baustoffen entstehen die größten Umweltbelastungen nicht bei der Herstellung, sondern bei der Nutzung — durch Heizenergie. Eine gute Wärmedämmung spart Energie über Jahrzehnte.",
-    "bildDatei": "buch/lf04/treibhauseffekt-porenbeton.webp",
+    "bildDatei": "/buch/lf04/treibhauseffekt-porenbeton.webp",
     "bildunterschrift": "Treibhauseffekt Porenbetonwand (Buch S. 184)"
   },
   {
@@ -1848,7 +1848,7 @@
       0
     ],
     "erklaerung": "CEM III enthält neben Portlandzementklinker einen hohen Anteil Hüttensand (36-95 %). Hüttensand ist granulierte Hochofenschlacke, ein Nebenprodukt der Eisenherstellung.",
-    "bildDatei": "buch/lf04/normalzemente-tabelle.webp",
+    "bildDatei": "/buch/lf04/normalzemente-tabelle.webp",
     "bildunterschrift": "Normalzemente CEM I–V (Buch S. 151)"
   },
   {
@@ -1869,7 +1869,7 @@
       0
     ],
     "erklaerung": "XF = Frostangriff (Freeze). XF1 und XF3 gelten ohne Taumittel, XF2 und XF4 mit Taumittel. Taumittel verschärft den Frostangriff erheblich.",
-    "bildDatei": "buch/lf04/expositionsklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/expositionsklassen-tabelle.webp",
     "bildunterschrift": "Expositionsklassen (Buch S. 158)"
   },
   {
@@ -1909,7 +1909,7 @@
       0
     ],
     "erklaerung": "Bei der Wandschalung wird die Schalhaut gegen senkrechte Bogenhölzer genagelt. Rechtwinklig dazu verlaufen waagerechte Gurthölzer, die mit Schalungsankern verspannt werden.",
-    "bildDatei": "buch/lf04/wandschalung.webp",
+    "bildDatei": "/buch/lf04/wandschalung.webp",
     "bildunterschrift": "Wandschalung (Buch S. 179)"
   },
   {
@@ -1954,7 +1954,7 @@
       0
     ],
     "erklaerung": "Die Holzliste wird aus dem Schalungsplan abgeleitet. Sie enthält für jedes Schalungsteil: Bezeichnung, Stückzahl, Querschnitt, Länge (Fertigmenge) und Rohmenge (mit Verschnittzuschlag).",
-    "bildDatei": "buch/lf04/holzliste-tabelle.webp",
+    "bildDatei": "/buch/lf04/holzliste-tabelle.webp",
     "bildunterschrift": "Holzliste für Stützenschalung (Buch S. 180)"
   },
   {
@@ -2004,7 +2004,7 @@
       0
     ],
     "erklaerung": "Schwere Gesteinskörnungen wie Baryt (BaSO₄) oder Magnetit (Fe₃O₄) haben eine Rohdichte über 3000 kg/m³. Schwerbeton wird für Strahlenschutz und Gegengewichte eingesetzt.",
-    "bildDatei": "buch/lf04/gesteinskoernungen-uebersicht.webp",
+    "bildDatei": "/buch/lf04/gesteinskoernungen-uebersicht.webp",
     "bildunterschrift": "Gesteinskörnungen nach Rohdichte (Buch S. 153)"
   },
   {
@@ -2025,7 +2025,7 @@
       0
     ],
     "erklaerung": "Das Verdichtungsmaß (Walz-Tabelle) ergibt die Klassen C0 (sehr steif) bis C3 (weich). Das Ausbreitmaß ergibt F1 bis F6. Beide beschreiben die Konsistenz, aber mit unterschiedlichen Prüfverfahren.",
-    "bildDatei": "buch/lf04/konsistenzklassen-tabelle.webp",
+    "bildDatei": "/buch/lf04/konsistenzklassen-tabelle.webp",
     "bildunterschrift": "Konsistenzklassen von Frischbeton (Buch S. 156)"
   },
   {
@@ -2046,7 +2046,7 @@
       0
     ],
     "erklaerung": "Frischbeton erzeugt wie eine Flüssigkeit einen hydrostatischen Druck, der nach unten zunimmt. Unten ist der Seitendruck am größten, deshalb müssen die Zwingen dort enger sitzen.",
-    "bildDatei": "buch/lf04/betondruck-schalung.webp",
+    "bildDatei": "/buch/lf04/betondruck-schalung.webp",
     "bildunterschrift": "Betondruck auf die Schalung (Buch S. 174)"
   },
   {
@@ -2086,7 +2086,7 @@
       0
     ],
     "erklaerung": "Standardbeton darf nur bis zur Klasse C12/15 und maximal Expositionsklasse X0 verwendet werden. Für höhere Anforderungen muss Beton nach Eigenschaften oder Zusammensetzung festgelegt werden.",
-    "bildDatei": "buch/lf04/standardbeton-tabelle.webp",
+    "bildDatei": "/buch/lf04/standardbeton-tabelle.webp",
     "bildunterschrift": "Anhaltswerte für Standardbeton (Buch S. 160)"
   }
 ]

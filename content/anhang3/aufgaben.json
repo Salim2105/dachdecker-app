@@ -15,7 +15,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Korrosionsfrei sind Metalle gerade nicht — das ist ihr wesentlicher Nachteil und Thema des ganzen Abschnitts A3.3. Viele Metalle bilden im Laufe der Zeit aber eine natürliche Schutzschicht, die sogenannte Patina, und erreichen damit eine Lebenserwartung, die je nach Metall der des Gebäudes gleichzusetzen ist.",
-    "bildDatei": "buch/anhang3/metalle-uebersicht.webp",
+    "bildDatei": "/buch/anhang3/metalle-uebersicht.webp",
     "bildunterschrift": "Übersicht der Metalle (Buch S. 612)"
   },
   {
@@ -34,7 +34,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Zwei Fehlerquellen sind zu unterscheiden: falsche Materialpaarung führt zu Korrosion, fehlende Bewegungsmöglichkeit zu Rissen durch Wärmeausdehnung. Wichtig ist auch, dass Metalle dampfundurchlässig sind — anfallende Feuchte muss deshalb am besten durch eine Belüftungsebene abgeführt werden.",
-    "bildDatei": "buch/anhang3/dachformen-metall.webp",
+    "bildDatei": "/buch/anhang3/dachformen-metall.webp",
     "bildunterschrift": "Der Werkstoff ermöglicht vielfältige Dachformen (Buch S. 612)"
   },
   {
@@ -53,7 +53,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Reihenfolge der Tabelle: Aluminium 2,7 – Zink 7,1 – Edelstahl 7,9 – Kupfer 8,9 – Blei 11,3 kg/dm³. Die Folge für die Verwendung: Aluminium hat nur etwa ein Drittel der Dichte von Stahl, deshalb ist bei Tragwerken die Masseneinsparung beachtlich. Umgekehrt lässt sich Blei wegen seiner hohen Masse gut auf Untergründe drücken.",
-    "bildDatei": "buch/anhang3/metalltabelle.webp",
+    "bildDatei": "/buch/anhang3/metalltabelle.webp",
     "bildunterschrift": "Eigenschaften der Metalle im Überblick (Buch S. 612)"
   },
   {
@@ -72,7 +72,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Aluminium schmilzt bei 660 °C — die 1083 °C gehören zu Kupfer. Merke dir den Zusammenhang für die Praxis: Blei und Zink mit den niedrigsten Schmelzpunkten lassen sich am leichtesten löten, Edelstahl mit 1500 °C am schwersten. Bei der Dehnung ist es fast umgekehrt: Blei dehnt sich am stärksten, Edelstahl am wenigsten.",
-    "bildDatei": "buch/anhang3/metalltabelle.webp",
+    "bildDatei": "/buch/anhang3/metalltabelle.webp",
     "bildunterschrift": "Eigenschaften der Metalle im Überblick (Buch S. 612)"
   },
   {
@@ -95,7 +95,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Beispiel Kupfer: 1000 mm breit, 0,6 mm dick, 30 m lang ergibt 10 dm · 0,006 dm · 300 dm = 18 dm³, mal 8,9 kg/dm³ = 160 kg. Achte auf die Umrechnung — 1 dm sind 100 mm. Dieselbe Rolle in Aluminium wöge mit 2,7 kg/dm³ nur 48,6 kg, also weniger als ein Drittel.",
-    "bildDatei": "buch/anhang3/edelstahlband.webp",
+    "bildDatei": "/buch/anhang3/edelstahlband.webp",
     "bildunterschrift": "Edelstahlband (Coil) (Buch S. 613)"
   },
   {
@@ -116,7 +116,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Bei 10 m Blei (α = 0,029) und 80 K sind das 23,2 mm, bei Edelstahl (α = 0,011) nur 8,8 mm — fast dreimal weniger. Genau deshalb brauchen Bleiabdeckungen deutlich großzügigere Dehnungsmöglichkeiten als Edelstahlbänder. Dieselbe Formel begegnet dir in Anhang 2 und in Lernfeld 7 bei der Dachrinne wieder.",
-    "bildDatei": "buch/anhang3/gebogene-dachform.webp",
+    "bildDatei": "/buch/anhang3/gebogene-dachform.webp",
     "bildunterschrift": "Gebogene Dachform mit Zubehörteilen (Buch S. 613)"
   },
   {
@@ -135,7 +135,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Grauguss ist spröde und lässt sich nicht schmieden — deshalb taugt er nicht für Dachrinnen, wohl aber für dickwandige Gussteile wie Rohre und Schachtabdeckungen. Er entsteht, wenn Roheisen bei hoher Temperatur unter Beimengung von Silicium geschmolzen wird, und besitzt hohe Druckfestigkeit sowie geringe Rostneigung.",
-    "bildDatei": "buch/anhang3/gussrohre.webp",
+    "bildDatei": "/buch/anhang3/gussrohre.webp",
     "bildunterschrift": "Gussrohre für die Installation (Buch S. 612)"
   },
   {
@@ -154,7 +154,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Jeder Zusatz hat eine eigene Wirkung: Nickel und Chrom machen den Stahl nichtrostend und schweißbar, Mangan und Wolfram erhöhen Festigkeit und Härte, Silicium steigert die Elastizität. Die Zusätze verbessern die Eigenschaften also gezielt, sie verschlechtern sie nicht.",
-    "bildDatei": "buch/anhang3/legierungszusaetze.webp",
+    "bildDatei": "/buch/anhang3/legierungszusaetze.webp",
     "bildunterschrift": "Legierungszusätze beeinflussen die Eigenschaften des Stahls (Buch S. 613)"
   },
   {
@@ -173,7 +173,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Edelstahl ist gerade ein Sammelbegriff für legierte Stähle — ohne Zusätze wäre er kein Edelstahl. Das Besondere ist die selbstheilende Passivschicht: Wird sie zerkratzt, bildet sich sofort neues Chromoxid nach. Das enthaltene Nickel verbessert zusätzlich die Umform- und Schweißbarkeit.",
-    "bildDatei": "buch/anhang3/edelstahlschindeln.webp",
+    "bildDatei": "/buch/anhang3/edelstahlschindeln.webp",
     "bildunterschrift": "Gebäude mit Edelstahlschindeln (Buch S. 613)"
   },
   {
@@ -192,7 +192,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Umgekehrt: Edelstahlschrauben sind bei Zink- oder Aluminiumeindeckungen unkritisch. Kritisch ist die andere Richtung — in Kombination mit unedleren Metallen wie Zink kann es dazu kommen, dass das unedlere Metall korrodiert. Deshalb gilt für Edelstahlbänder ausdrücklich: Edelstahlschrauben verwenden.",
-    "bildDatei": "buch/anhang3/edelstahlband.webp",
+    "bildDatei": "/buch/anhang3/edelstahlband.webp",
     "bildunterschrift": "Edelstahlband (Coil) (Buch S. 613)"
   },
   {
@@ -211,7 +211,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Aluminium hat mit 2,7 kg/dm³ nur etwa ein Drittel der Dichte von Stahl — bei Tragwerken ist die Masseneinsparung daher beachtlich. Eloxal steht für elektrolytisch oxidiertes Aluminium. Die natürliche Oxidschicht schützt das Metall, das Eloxalverfahren verstärkt sie gezielt.",
-    "bildDatei": "buch/anhang3/eloxalschicht.webp",
+    "bildDatei": "/buch/anhang3/eloxalschicht.webp",
     "bildunterschrift": "Eloxalschicht verbindet sich mit Aluminium (Buch S. 614)"
   },
   {
@@ -230,7 +230,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Aluminium ist gegen Laugen besonders empfindlich — frischer Kalk- und Zementmörtel reagiert alkalisch und greift es an. Als Verbindungsmittel kommen deshalb nur verzinkte Teile und rostfreier Stahl infrage. Bei Erwärmung dehnt sich Aluminium zudem sehr stark aus, was bei der Befestigung besonders zu berücksichtigen ist.",
-    "bildDatei": "buch/anhang3/alu-farben.webp",
+    "bildDatei": "/buch/anhang3/alu-farben.webp",
     "bildunterschrift": "Verschiedene Farben und Oberflächen von Aluminiumblechen (Buch S. 614)"
   },
   {
@@ -249,7 +249,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Während dieses Vorgangs erhält das Zink eine matte, graublaue Patina — der silbrige Glanz verschwindet also. Die Reaktionsgleichung im Buch: 2 ZnO + H₂O + CO₂ ergibt ZnCO₃ · Zn(OH)₂. Bei der Verarbeitung ist zu beachten, dass Zink bei Raumtemperatur spröde ist und erst zwischen 100 und 150 °C geschmeidig wird.",
-    "bildDatei": "buch/anhang3/zink-schutzschicht.webp",
+    "bildDatei": "/buch/anhang3/zink-schutzschicht.webp",
     "bildunterschrift": "An der Luft bildet sich auf Zinkdeckungen eine Schutzschicht (Buch S. 614)"
   },
   {
@@ -268,7 +268,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Titanzink und Kupfer sind gerade die kritische Paarung: Während Titanzink problemlos mit Aluminium, Blei und Edelstahl kombiniert werden kann, ist aufgrund der chemischen Korrosion vor allem der Kontakt mit Kupfer zu vermeiden. Titanzinkbauteile lassen sich durch Weichlöten, Falzen oder Kleben miteinander verbinden.",
-    "bildDatei": "buch/anhang3/titanzink-dach.webp",
+    "bildDatei": "/buch/anhang3/titanzink-dach.webp",
     "bildunterschrift": "Dach- und Wandeindeckung aus Titanzink (Buch S. 614)"
   },
   {
@@ -287,7 +287,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Kupfer reagiert sehr wohl — genau darauf beruht der Schutz. Unter Einwirkung von Kohlenstoffdioxid bildet sich zunächst eine matte braunrote Oxidschicht, daraus über 7 bis 15 Jahre die grüne Patina nach der Gleichung 2 CuO + H₂O + CO₂ ergibt CuCO₃ · Cu(OH)₂. Die Schutzschicht entsteht also durch Korrosion und stoppt sie zugleich.",
-    "bildDatei": "buch/anhang3/kupfer-patina.webp",
+    "bildDatei": "/buch/anhang3/kupfer-patina.webp",
     "bildunterschrift": "An feuchter Luft bildet sich auf Kupfer eine Schutzschicht (Buch S. 615)"
   },
   {
@@ -306,7 +306,7 @@
     ],
     "korrekt": [0, 1, 3],
     "erklaerung": "Kontaktkorrosion schädigt Kupfer sehr wohl — genauer gesagt schädigt die Paarung mit Kupfer die unedleren Metalle. Neben der natürlichen, walzblanken Oberfläche sind kupferrote Bleche auch direkt braun oxidiert oder grün patiniert erhältlich, sodass die Patina nicht erst über Jahre entstehen muss.",
-    "bildDatei": "buch/anhang3/kupferdach.webp",
+    "bildDatei": "/buch/anhang3/kupferdach.webp",
     "bildunterschrift": "Kupferdächer haben eine sehr lange Lebenszeit (Buch S. 615)"
   },
   {
@@ -325,7 +325,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Blei und Bleiverbindungen sind giftig: Gelangen diese Gifte in den Körper, kommt es zu einer schleichenden Bleivergiftung. Nach jeder Arbeit mit Blei müssen deshalb unbedingt die Hände gewaschen werden. Die Schnittfläche ist silberweiß und stark glänzend, erhält aber mit der Zeit einen stumpfen, blaugrauen Überzug.",
-    "bildDatei": "buch/anhang3/bleischuerze.webp",
+    "bildDatei": "/buch/anhang3/bleischuerze.webp",
     "bildunterschrift": "Bleischürzen beim Dachfenstereinbau (Buch S. 615)"
   },
   {
@@ -344,7 +344,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Auch hier ist der Kontakt mit frischem Kalk- und Zementmörtel zu vermeiden — das gilt bei Blei genauso wie bei Aluminium und Titanzink. Eine längere Feuchteeinwirkung sollte ebenfalls vermieden werden, da es ansonsten zu Korrosion kommen kann.",
-    "bildDatei": "buch/anhang3/bleideckung-turm.webp",
+    "bildDatei": "/buch/anhang3/bleideckung-turm.webp",
     "bildunterschrift": "Türme und Mitteldach bleigedeckt (Buch S. 615)"
   },
   {
@@ -363,7 +363,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Fast alle Metalle, die am Bau verwendet werden, zeigen nach einiger Zeit eine veränderte Oberfläche — nicht nur Eisen. Außerdem können Frischmörtel und Frischbeton die Oberfläche bestimmter NE-Metalle angreifen. Ob die Veränderung schützt oder zerstört, hängt vom Metall ab.",
-    "bildDatei": "buch/anhang3/korrosionsschaden.webp",
+    "bildDatei": "/buch/anhang3/korrosionsschaden.webp",
     "bildunterschrift": "Schäden an einer Metallabdeckung (Buch S. 616)"
   },
   {
@@ -382,7 +382,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Genau hier liegt der entscheidende Unterschied: Aluminium, Kupfer, Zink und Blei überziehen sich mit einer Oxidschicht, die so dicht ist, dass sie Schutz vor weiterer Zerstörung bietet. Rost dagegen ist porös und lässt die Zerstörung in die Tiefe fortschreiten. Säurehaltiges Wasser, Basen und Salze beschleunigen die Rostbildung.",
-    "bildDatei": "buch/anhang3/chemische-einfluesse.webp",
+    "bildDatei": "/buch/anhang3/chemische-einfluesse.webp",
     "bildunterschrift": "Verschiedene chemische Einflüsse (Buch S. 616)"
   },
   {
@@ -401,7 +401,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Zwei Bedingungen müssen zusammenkommen: zwei verschiedene Metalle und ein Elektrolyt. Bei gleichen Metallen entsteht keine Spannungsdifferenz und damit kein Stromfluss. In allen Fällen kommt es zur Zerstörung des unedleren Metalls — das edlere bleibt unversehrt.",
-    "bildDatei": "buch/anhang3/spannungsreihe.webp",
+    "bildDatei": "/buch/anhang3/spannungsreihe.webp",
     "bildunterschrift": "Elektrochemische Spannungsreihe (Buch S. 616)"
   },
   {
@@ -420,7 +420,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Aluminium liegt mit 1,7 Volt weit im unedlen Bereich — es ist sogar eines der unedelsten Gebrauchsmetalle. Die Trennlinie ist der Wasserstoff mit ± 0. Chemiker haben die Spannungen der einzelnen Metalle gegen dieses Basiselement gemessen; je weiter zwei Metalle in der Reihe auseinanderliegen, desto stärker die Korrosionsgefahr.",
-    "bildDatei": "buch/anhang3/spannungsreihe.webp",
+    "bildDatei": "/buch/anhang3/spannungsreihe.webp",
     "bildunterschrift": "Elektrochemische Spannungsreihe (Buch S. 616)"
   },
   {
@@ -440,7 +440,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "1,7 + 0,35 = 2,05 Volt, genau der Wert, den das Buch für Al/Cu angibt. Beachte, warum addiert und nicht subtrahiert wird: Aluminium liegt bei −1,7 V, Kupfer bei +0,35 V — die Differenz über den Nullpunkt hinweg ist die Summe der Beträge. Die Metalltabelle auf S. 612 nennt mit −1,66 und +0,34 leicht gerundete Werte, daraus ergäben sich 2,00 V; das Diagramm rechnet mit 1,7 und 0,35.",
-    "bildDatei": "buch/anhang3/kontaktkorrosion.webp",
+    "bildDatei": "/buch/anhang3/kontaktkorrosion.webp",
     "bildunterschrift": "Verbindung verschiedener Metalle (Buch S. 616)"
   },
   {
@@ -459,7 +459,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Merke dir die Richtung: Das unedlere Metall geht kaputt, das edlere bleibt. Kupfer als edles Metall überlebt, Zink und Aluminium als unedle werden zerstört. Deshalb ist die häufigste Bausünde die Kombination Kupfer über Zink — abfließendes Wasser trägt Kupferionen nach unten.",
-    "bildDatei": "buch/anhang3/kupferwerkstoff-hinweis.webp",
+    "bildDatei": "/buch/anhang3/kupferwerkstoff-hinweis.webp",
     "bildunterschrift": "Kein Aluminium, Zink oder verzinkter Stahl unterhalb von Kupfer (Buch S. 616)"
   },
   {
@@ -472,7 +472,7 @@
     "text": "In abfliessendem Wasser enthaltene Kupferionen koennen die Korrosion von Aluminium, Zink und verzinktem Stahl foerdern. Deshalb duerfen diese Metalle in Fliessrichtung nicht {{unterhalb}} von Kupfer-Werkstoffen verwendet werden. Zerstoert wird dabei immer das {{unedlere}} Metall.",
     "akzeptiert": { "unterhalb": ["unter", "darunter"], "unedlere": ["unedle", "unedelere"] },
     "erklaerung": "Die Fließrichtung ist der Schlüssel: Kupfer über Zink ist verboten, Zink über Kupfer dagegen unproblematisch. Das Wasser transportiert die Kupferionen nur nach unten. Besonders kritisch wird es, wenn es sich um größere Kupferflächen handelt.",
-    "bildDatei": "buch/anhang3/kupferwerkstoff-hinweis.webp",
+    "bildDatei": "/buch/anhang3/kupferwerkstoff-hinweis.webp",
     "bildunterschrift": "Kein Aluminium, Zink oder verzinkter Stahl unterhalb von Kupfer (Buch S. 616)"
   },
   {
@@ -492,7 +492,7 @@
     ],
     "korrekt": [0, 1, 2, 3],
     "erklaerung": "Alle vier treffen zu. Merke dir die Geometrie: Bitumen oberhalb des Metalls ist das Problem, weil der Regen die Säuren nach unten spült. Alternativ zur Kiesschüttung können die Metallteile auch mit einer Beschichtung geschützt werden. Auch Kupfer ist betroffen — nur Edelstahl bleibt verschont.",
-    "bildDatei": "buch/anhang3/bitumenkorrosion.webp",
+    "bildDatei": "/buch/anhang3/bitumenkorrosion.webp",
     "bildunterschrift": "Schäden am Metalldach durch Bitumenkorrosion (Buch S. 617)"
   },
   {
@@ -511,7 +511,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Blei mit Kupfer ist zulässig — Blei liegt in der Spannungsreihe mit 0,12 V dicht am Wasserstoff und damit nahe genug bei Kupfer. Die Merkregel für die ganze Tabelle: Kupfer verträgt sich nicht mit Aluminium, Titanzink und verzinktem Stahl. Blei und nichtrostender Stahl vertragen sich dagegen mit allen Metallen.",
-    "bildDatei": "buch/anhang3/werkstoffverbindungen.webp",
+    "bildDatei": "/buch/anhang3/werkstoffverbindungen.webp",
     "bildunterschrift": "Übersicht Werkstoffverbindungen (Buch S. 617)"
   },
   {
@@ -530,7 +530,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Anstriche und Überzüge sind der nichtmetallische beziehungsweise metallische Schutz — sie kommen zusätzlich zum konstruktiven Schutz hinzu. Grundsätzlich dürfen Metalle, die in der Spannungsreihe weit auseinanderliegen, nicht zusammengebaut werden. Konstruktiver Schutz heißt also: durch Planung vermeiden, statt nachträglich schützen.",
-    "bildDatei": "buch/anhang3/beschichten-metalldach.webp",
+    "bildDatei": "/buch/anhang3/beschichten-metalldach.webp",
     "bildunterschrift": "Beschichten eines Metalldaches (Buch S. 617)"
   },
   {
@@ -549,7 +549,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Rost überstreichen funktioniert nicht — er arbeitet unter der Farbe weiter. Deshalb steht die Untergrundvorbereitung an erster Stelle. Die Rostschutzpigmente verringern das Rosten von Eisen und Stahl, da sie den Zutritt von Sauerstoff und Wasser zur Metalloberfläche durch ihre dichten Schichten (120 μm) verhindern und zusätzlich auf elektrochemische Weise wirken.",
-    "bildDatei": "buch/anhang3/beschichten-metalldach.webp",
+    "bildDatei": "/buch/anhang3/beschichten-metalldach.webp",
     "bildunterschrift": "Beschichten eines Metalldaches (Buch S. 617)"
   },
   {
@@ -568,7 +568,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Drei Verfahren: Tauchen, Spritzen, Galvanisieren. Der Ablauf beim Stückverzinken umfasst Entfetten, Spülen, Beizen, erneutes Spülen, Fluxen, Trocknen, Verzinken und Abkühlen — die sorgfältige Reinigung vorweg entscheidet über die Haftung. Metallische Überzüge kommen hauptsächlich für Werkstücke aus Stahl infrage.",
-    "bildDatei": "buch/anhang3/feuerverzinken.webp",
+    "bildDatei": "/buch/anhang3/feuerverzinken.webp",
     "bildunterschrift": "Ablauf beim Feuerverzinken (Buch S. 617)"
   },
   {
@@ -587,7 +587,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Zum Ausschneiden von Innenformen wird die Lochschere verwendet, die Durchlaufschere dagegen zum Schneiden von langen, geraden Stücken. Bei Handscheren sind auch die Unfallverhütungsvorschriften zu beachten: Finger vor Schneidwerkzeugen schützen, Handballen nicht zwischen die Griffenden einklemmen und Blechabfälle wegen ihrer scharfen Schnittkanten sofort aufräumen.",
-    "bildDatei": "buch/anhang3/schneidenwinkel.webp",
+    "bildDatei": "/buch/anhang3/schneidenwinkel.webp",
     "bildunterschrift": "Schneidenwinkel beim Scheren (Buch S. 618)"
   },
   {
@@ -606,7 +606,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Das Runden erfolgt mit der Rundmaschine. Der Biegeradius von mindestens der dreifachen Blechdicke ist die zentrale Zahl beim Kanten — bei zu engem Radius reißt das Blech an der Außenseite. Kleinere Bördel werden mit der Sickenmaschine geformt.",
-    "bildDatei": "buch/anhang3/boerdeln.webp",
+    "bildDatei": "/buch/anhang3/boerdeln.webp",
     "bildunterschrift": "Bördeln des Dachrinnenbodens (Buch S. 618)"
   },
   {
@@ -626,7 +626,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Bei 0,7 mm Titanzink sind das 2,1 mm Mindestradius, bei 3 mm Blei schon 9 mm. Die Regel schützt vor Rissen: An der Außenseite der Biegung wird das Material gedehnt — je enger der Radius, desto größer die Dehnung. Vergleiche mit der Metalltabelle, welche Dicken die einzelnen Metalle üblicherweise haben.",
-    "bildDatei": "buch/anhang3/arbeiten-metalldach.webp",
+    "bildDatei": "/buch/anhang3/arbeiten-metalldach.webp",
     "bildunterschrift": "Arbeiten am Metalldach (Buch S. 618)"
   },
   {
@@ -645,7 +645,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Das Nietloch muss so groß sein, dass der Niet leicht eindrücken lässt — nicht deutlich größer. Der Ablauf: Zuerst werden mit dem Nietenzieher die Teile zusammengedrückt und der Niet wird angezogen. Danach wird der Nietschaft mit dem Niethammer gestaucht und durch schräg gerichtete Schläge zum Schließkopf vorgeformt, mit dem Kopfmacher wird er fertig geformt.",
-    "bildDatei": "buch/anhang3/nietformen.webp",
+    "bildDatei": "/buch/anhang3/nietformen.webp",
     "bildunterschrift": "Nietformen und Bezeichnungen (Buch S. 618)"
   },
   {
@@ -664,7 +664,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Name sagt es: Blindniete werden blind gesetzt, also von nur einer Seite — genau das ist ihr Vorteil bei Blechverbindungen auf dem Dach. Fachgerecht ausgeführte Nietverbindungen können hohe Zugkräfte aufnehmen; der Nietschaft wird dabei auf Abscherung beansprucht.",
-    "bildDatei": "buch/anhang3/blindniet.webp",
+    "bildDatei": "/buch/anhang3/blindniet.webp",
     "bildunterschrift": "Verbindung von Blechen mit Blindniet (Buch S. 619)"
   },
   {
@@ -683,7 +683,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Zum Hartlöten werden Hartlötbrenner und Schweißbrenner eingesetzt — der Kupferlötkolben reicht dafür nicht aus. Für die Baustelle gilt: Kupferrohre und Walzbleibverbindungen werden mit Lötzinn (Zinn-Blei-Legierung) weichgelötet, vorwiegend Schwermetalle und Aluminiumwerkstoffe werden mit Messing- und Silberhartloten hartgelötet.",
-    "bildDatei": "buch/anhang3/weichloetverfahren.webp",
+    "bildDatei": "/buch/anhang3/weichloetverfahren.webp",
     "bildunterschrift": "Weichlötverfahren (Buch S. 619)"
   },
   {
@@ -702,7 +702,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Genau umgekehrt: Ein großer Spalt schwächt die Verbindung, weil das Lot nicht mehr durchfließt. Der günstige Lötspalt liegt bei 0,05 bis 0,5 mm, die Überlappung sollte mindestens 10 mm betragen. Die Kapillarwirkung ist dieselbe Kraft, die auch Wasser in enge Fugen zieht — hier wird sie gezielt genutzt.",
-    "bildDatei": "buch/anhang3/loetspalt.webp",
+    "bildDatei": "/buch/anhang3/loetspalt.webp",
     "bildunterschrift": "Einfluss des Lötspaltes (Buch S. 619)"
   },
   {
@@ -721,7 +721,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Zwei Aufgaben, beide gegen Oxidschichten: vorhandene zerstören und neue verhindern. Denn die Flächen der zu verbindenden Metalle dürfen nicht verunreinigt sein — besonders Fette und Oxidschichten verhindern den Kontakt des Lotes mit den Metallflächen. Das gebräuchlichste Flussmittel ist Lötwasser; nach dem Löten müssen Flussmittelrückstände entfernt werden, da sie sonst die Metalle zerstören.",
-    "bildDatei": "buch/anhang3/gute-loetung.webp",
+    "bildDatei": "/buch/anhang3/gute-loetung.webp",
     "bildunterschrift": "Gute Lötung (Buch S. 619)"
   },
   {
@@ -738,7 +738,7 @@
       "Oxidschichten": ["Oxidschicht", "Oxide"]
     },
     "erklaerung": "Legieren bedeutet hier, dass das Lot geringfügig in die Metalloberfläche eindringt und sich mit ihr verbindet — es klebt nicht nur obenauf. Genau das macht die Lötverbindung fest, und genau das verhindern Fett und Oxidschichten.",
-    "bildDatei": "buch/anhang3/metalle-zusammenfassung.webp",
+    "bildDatei": "/buch/anhang3/metalle-zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Bearbeiten und Löten (Buch S. 619)"
   },
   {
@@ -757,7 +757,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Neben den Handwerkzeugen werden auch Doppelstehfalzmaschinen und Aufkantmaschinen zur wirtschaftlichen Eindeckung großer Dachflächen verwendet. Für die Prüfung lohnt es, die Werkzeuge nach Funktion zu ordnen: Eisen zum Formen, Zangen zum Greifen und Falzen, Hämmer zum Treiben, Scheren zum Trennen.",
-    "bildDatei": "buch/anhang3/werkzeuge-metall.webp",
+    "bildDatei": "/buch/anhang3/werkzeuge-metall.webp",
     "bildunterschrift": "Werkzeuge für Metalldeckungen (Buch S. 620)"
   },
   {
@@ -771,7 +771,7 @@
     "definition": "Ein System aus zwei verschiedenen Metallen, die über einen Elektrolyten leitend verbunden sind. Zwischen ihnen fließt Strom wie in einer Batterie, was zur Zerstörung des unedleren Metalls führt. Je weiter die beiden Metalle in der elektrochemischen Spannungsreihe auseinanderliegen, desto größer ist die Kontaktspannung und damit die Korrosionsgefahr.",
     "bestandteile": ["galvan", "isches", "Element"],
     "erklaerung": "Der Vergleich mit der Batterie ist wörtlich zu nehmen — es ist derselbe physikalische Vorgang, nur unerwünscht. Deshalb hilft die Spannungsreihe direkt bei der Materialwahl: Aluminium und Kupfer liegen 2,05 Volt auseinander und dürfen nicht kombiniert werden, Blei und Kupfer liegen dicht beieinander und vertragen sich.",
-    "bildDatei": "buch/anhang3/aufgaben-buch.webp",
+    "bildDatei": "/buch/anhang3/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Anhang 3 (Buch S. 620)"
   },
   {
@@ -791,7 +791,7 @@
     ],
     "korrekt": [0, 1, 2, 3],
     "erklaerung": "Alle vier treffen zu. Metalle kommen im Bauwesen in vielen Bereichen zum Einsatz — für den Dachdecker sind vor allem Dach- und Fassadenbleche sowie die Entwässerungsanlagen relevant. Der Recyclinganteil von etwa 60 % verbindet dieses Kapitel mit Anhang 1: Metalle lassen sich beliebig oft einschmelzen, ohne an Qualität zu verlieren.",
-    "bildDatei": "buch/anhang3/nietvorgang.webp",
+    "bildDatei": "/buch/anhang3/nietvorgang.webp",
     "bildunterschrift": "Nietvorgang (Buch S. 618)"
   },
   {
@@ -810,7 +810,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Masse ist entscheidend, weil der Lötkolben Wärme speichern muss: Ein zu leichter Kolben kühlt beim Aufsetzen sofort ab, das Lot erstarrt und die Verbindung wird kalt und brüchig. Kupfer wird als Werkstoff gewählt, weil es Wärme besonders gut leitet und speichert.",
-    "bildDatei": "buch/anhang3/loetkolben.webp",
+    "bildDatei": "/buch/anhang3/loetkolben.webp",
     "bildunterschrift": "Montageflasche und Lötkolben mit Hochdruckschlauch (Buch S. 619)"
   }
 ]

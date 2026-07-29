@@ -17,7 +17,7 @@
       0
     ],
     "erklaerung": "Putz ist ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen zur Herstellung ebener Oberflächen. Der Putz wird von Hand oder mit Putzmaschinen auf Wand- und Deckenflächen aufgetragen.",
-    "bildDatei": "buch/lf06/putzmoertel-anwendung.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-anwendung.webp",
     "bildunterschrift": "Anwendung des Putzmörtels (Buch S. 248)"
   },
   {
@@ -38,7 +38,7 @@
       0
     ],
     "erklaerung": "Putze können ein- oder mehrlagig aufgebaut werden. Die unteren Lagen heißen Unterputz, die oberste Lage Oberputz. Die Festigkeit muss dabei von innen nach außen abnehmen.",
-    "bildDatei": "buch/lf06/putzsystem-aufbau.webp",
+    "bildDatei": "/buch/lf06/putzsystem-aufbau.webp",
     "bildunterschrift": "Aufbau eines mehrlagigen Putzsystems (Buch S. 248)"
   },
   {
@@ -60,7 +60,7 @@
       ]
     },
     "erklaerung": "Merkregel ‚weich auf hart': Jede Putzlage muss weicher (weniger fest) sein als die darunterliegende. Ein zu harter Oberputz auf weichem Unterputz reißt, weil er die Zugspannungen aus dem Schwinden nicht aufnehmen kann.",
-    "bildDatei": "buch/lf06/putzsystem-aufbau.webp",
+    "bildDatei": "/buch/lf06/putzsystem-aufbau.webp",
     "bildunterschrift": "Aufbau eines mehrlagigen Putzsystems (Buch S. 248)"
   },
   {
@@ -81,7 +81,7 @@
       0
     ],
     "erklaerung": "Durch den Einbau einer Putzbewehrung (z. B. Glasfasergewebe im Unterputz) wird die Zugfestigkeit des Putzes erhöht und damit die Gefahr der Rissbildung vermindert. Sie ist besonders beim Materialwechsel und bei Wärmedämm-Verbundsystemen erforderlich.",
-    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildDatei": "/buch/lf06/putztraeger-fachwerk.webp",
     "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
@@ -102,7 +102,7 @@
       0
     ],
     "erklaerung": "Ein Putzträger (z. B. Rippenstreckmetall) kommt bei nicht ausreichend tragfähigen Untergründen und beim Überspannen von breiten Wandschlitzen zum Einsatz. Er wird befestigt und sorgt für dauerhaften Halt des Putzes.",
-    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildDatei": "/buch/lf06/putztraeger-fachwerk.webp",
     "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
@@ -123,7 +123,7 @@
       ]
     },
     "erklaerung": "Wichtiger Unterschied: Die Putzbewehrung liegt IM Putz (erhöht Zugfestigkeit, z. B. Glasfasergewebe). Der Putzträger liegt UNTER dem Putz (Untergrund, z. B. Rippenstreckmetall über Fachwerkposten).",
-    "bildDatei": "buch/lf06/putztraeger-fachwerk.webp",
+    "bildDatei": "/buch/lf06/putztraeger-fachwerk.webp",
     "bildunterschrift": "Putzträger über Fachwerkposten (Buch S. 248)"
   },
   {
@@ -182,7 +182,7 @@
       0
     ],
     "erklaerung": "Außenputze sind unmittelbar den Witterungseinflüssen ausgesetzt. Aufgaben: Gestaltung der Fassade (Farbe, Putzweise), Schutz der Gebäudehülle vor Durchfeuchtung, Herstellen einer winddichten Hülle, Schutz vor mechanischen Einwirkungen und rissfreie Aufnahme von Spannungen.",
-    "bildDatei": "buch/lf06/aussenputz-beanspruchung.webp",
+    "bildDatei": "/buch/lf06/aussenputz-beanspruchung.webp",
     "bildunterschrift": "Beanspruchung des Außenputzes (Buch S. 249)"
   },
   {
@@ -203,7 +203,7 @@
       0
     ],
     "erklaerung": "Wärmedämmputz hat durch den Zusatz von Perlit oder Polystyrolkügelchen eine geringe Wärmeleitfähigkeit. Er verbessert den Wärmeschutz einer Außenwand. Die Dämmputzdicke beträgt in der Regel mehrlagig ab 5 cm.",
-    "bildDatei": "buch/lf06/waermedaemmputz.webp",
+    "bildDatei": "/buch/lf06/waermedaemmputz.webp",
     "bildunterschrift": "Wärmedämmputz (Buch S. 249)"
   },
   {
@@ -220,7 +220,7 @@
       "putz"
     ],
     "erklaerung": "Der Sanierputz ‚saniert' feuchtes Mauerwerk: Er lässt die Feuchtigkeit verdunsten und speichert die Salze in seinen Poren, sodass die Oberfläche trocken bleibt.",
-    "bildDatei": "buch/lf06/sanierputz-wirkung.webp",
+    "bildDatei": "/buch/lf06/sanierputz-wirkung.webp",
     "bildunterschrift": "Wirkung des Sanierputzes (Buch S. 249)"
   },
   {
@@ -241,7 +241,7 @@
       0
     ],
     "erklaerung": "Mineralisch gebundene Putzmörtel bestehen aus natürlich vorkommenden Bindemitteln (Kalk, Zement, Gips), der Gesteinskörnung, dem Anmachwasser und eventuell Zusatzmitteln zur Erzielung besonderer Eigenschaften.",
-    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-tabelle.webp",
     "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -262,7 +262,7 @@
       0
     ],
     "erklaerung": "Das Bindemittel hat die Aufgabe, die Bestandteile fest und dauerhaft miteinander zu verbinden. Zu viel Bindemittel (‚fetter Mörtel') führt bei Kalk und Zement zum Schwinden, zu wenig (‚magerer Mörtel') mindert die Festigkeit.",
-    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-tabelle.webp",
     "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -303,7 +303,7 @@
       ]
     },
     "erklaerung": "Mineralisch gebundene Putzmörtel: Kalkmörtel (gut verarbeitbar, für Innenputz), Kalkzementmörtel (fester, für Sockel und Außenputz), Zementmörtel (sehr fest, für Feuchträume), Gips-/Gipskalkmörtel (für Innenputz).",
-    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-tabelle.webp",
     "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -324,7 +324,7 @@
       0
     ],
     "erklaerung": "Bei organisch gebundenen Putzen (Dispersionsputz, Kunstharzputz) verdunsten beim Trocknen die Wassertröpfchen, die organischen Bindemittel vernetzen sich und bilden einen dichten Film. Das ist eine physikalische Reaktion (im Gegensatz zur chemischen Hydratation mineralischer Putze).",
-    "bildDatei": "buch/lf06/organische-putze-tabelle.webp",
+    "bildDatei": "/buch/lf06/organische-putze-tabelle.webp",
     "bildunterschrift": "Organisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -345,7 +345,7 @@
       0
     ],
     "erklaerung": "Beim Brennen von Gipsstein (CaSO₄·2H₂O) bei etwa 180 °C wird das kristallin gebundene Wasser als Wasserdampf ausgetrieben. Es entsteht Stuckgips (Calciumsulfat-Halbhydrat, CaSO₄·½H₂O).",
-    "bildDatei": "buch/lf06/kreislauf-stuckgips.webp",
+    "bildDatei": "/buch/lf06/kreislauf-stuckgips.webp",
     "bildunterschrift": "Kreislauf des Stuckgipses (Buch S. 251)"
   },
   {
@@ -362,7 +362,7 @@
       "gips"
     ],
     "erklaerung": "Kreislauf: Gipsstein → Brennen (180 °C) → Stuckgips → Anmachen mit Wasser → Erhärten → wieder Gipskristall. Stuckgips erhärtet schnell und dehnt sich beim Abbinden leicht aus.",
-    "bildDatei": "buch/lf06/kreislauf-stuckgips.webp",
+    "bildDatei": "/buch/lf06/kreislauf-stuckgips.webp",
     "bildunterschrift": "Kreislauf des Stuckgipses (Buch S. 251)"
   },
   {
@@ -383,7 +383,7 @@
       0
     ],
     "erklaerung": "Putzgips wird bei etwa 700 °C gebrannt und besteht aus unterschiedlich stark entwässerten Anteilen. Deshalb erhärtet er träger als Stuckgips und bleibt länger verarbeitbar — ideal für das Verputzen von Wänden und Decken.",
-    "bildDatei": "buch/lf06/gipstrockenmoertel-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipstrockenmoertel-tabelle.webp",
     "bildunterschrift": "Gipstrockenmörtel (Buch S. 251)"
   },
   {
@@ -423,7 +423,7 @@
       0
     ],
     "erklaerung": "Die notwendige Putzhaftung wird nur erreicht, wenn der Putzgrund sauber, tragfähig, trocken, frostfrei, saugfähig und rau ist. Anhaftende Staub- und Schmutzschichten müssen vor der Ausführung entfernt werden.",
-    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildDatei": "/buch/lf06/putzhaftung-oberflaechen.webp",
     "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
   },
   {
@@ -444,7 +444,7 @@
       0
     ],
     "erklaerung": "Bei schwach saugenden, glatten Oberflächen (z. B. Kalksandstein oder Beton) wird als Putzgrundvorbehandlung eine Haftbrücke aufgebracht oder ein Spritzbewurf ausgeführt. So entsteht eine raue und griffige Oberfläche, an der der Putz gut haftet.",
-    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildDatei": "/buch/lf06/putzhaftung-oberflaechen.webp",
     "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
   },
   {
@@ -543,7 +543,7 @@
       0
     ],
     "erklaerung": "Bei Wandtrockenputz werden Wände mit Gipsplatten bekleidet statt mit Putzfrischmörtel (Nassputz). So entfallen Trocknungszeiten. Die Befestigung erfolgt direkt an der Wandfläche (Ansetzmörtel) oder auf einer Unterkonstruktion (Vorsatzschale).",
-    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
     "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
   },
   {
@@ -564,7 +564,7 @@
       0
     ],
     "erklaerung": "Gipsplatte Typ A (GKB) ist die Standard-Bauplatte für allgemeine Anwendungen ohne besondere Anforderungen an Schall- und Brandschutz. Sie ist der Regelfall beim Wandtrockenputz.",
-    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
     "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
   },
   {
@@ -584,7 +584,7 @@
       ]
     },
     "erklaerung": "Typ A = Standard, Typ H = imprägniert (Feuchträume, z. B. Bäder), Typ F = Feuerschutz (verbesserter Gefügezusammenhalt bei Brand), Typ E = Außenwandelemente, Typ P = Putzträger, Typ D = definierte Dichte, Typ R = erhöhte Festigkeit, Typ I = erhöhte Oberflächenhärte.",
-    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
     "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
   },
   {
@@ -605,7 +605,7 @@
       0
     ],
     "erklaerung": "Alle Gipsplatten sind nichtbrennbar (Baustoffklasse A2). Das gebundene Kristallwasser wirkt im Brandfall wärmebindend und macht Gips zu einem guten Brandschutzbaustoff.",
-    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
     "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
   },
   {
@@ -626,7 +626,7 @@
       0
     ],
     "erklaerung": "Der Ansetzmörtel wird in Batzen aufgebracht: durchlaufend am Rand, in der Plattenmitte und Batzen im Abstand von etwa 25 cm am Rand und 35 cm in der Reihe. Die Platten werden lot- und fluchtgerecht ausgerichtet.",
-    "bildDatei": "buch/lf06/kleberauftrag-plattendicke.webp",
+    "bildDatei": "/buch/lf06/kleberauftrag-plattendicke.webp",
     "bildunterschrift": "Kleberauftrag bei Gipsplatten (Buch S. 255)"
   },
   {
@@ -647,7 +647,7 @@
       0
     ],
     "erklaerung": "Estrich ist eine auf einem tragenden Untergrund oder auf einer zwischenliegenden Trenn- oder Dämmschicht hergestellte Schicht, die unmittelbar nutzfähig ist oder mit einem Belag versehen werden kann.",
-    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
     "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
   },
   {
@@ -687,7 +687,7 @@
       0
     ],
     "erklaerung": "Estriche auf Dämmschicht (S, schwimmender Estrich) verbessern den Trittschall- und Wärmeschutz. Sie liegen frei beweglich auf der Dämmschicht und dürfen keine Verbindung zu Wänden und Rohren haben. Der Verbundestrich (V) ist dagegen fest mit dem Unterboden verbunden.",
-    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
     "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
   },
   {
@@ -711,7 +711,7 @@
       ]
     },
     "erklaerung": "Verbundestrich (V) = fest mit dem Untergrund verbunden. Estrich auf Trennschicht (T) = durch Pappen/Folien getrennt. Estrich auf Dämmschicht (S) = schwimmend auf einer Dämmschicht (Trittschall-/Wärmeschutz).",
-    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
     "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
   },
   {
@@ -732,7 +732,7 @@
       0
     ],
     "erklaerung": "CT = Zementestrich (cementitious screed). Weitere Kurzzeichen: CA = Calciumsulfatestrich, SR = Kunstharzestrich (synthetic resin), MA = Magnesiaestrich, AS = Gussasphaltestrich (mastic asphalt).",
-    "bildDatei": "buch/lf06/estricharten-bindemittel.webp",
+    "bildDatei": "/buch/lf06/estricharten-bindemittel.webp",
     "bildunterschrift": "Estricharten nach Bindemittel (Buch S. 257)"
   },
   {
@@ -774,7 +774,7 @@
       0
     ],
     "erklaerung": "Das mechanische Verhalten von Estrichen wird durch Druckfestigkeit (Klassen C5 bis C80) und Biegezugfestigkeit (Klassen F1 bis F50) angegeben. Beide Klassen richten sich nach der geplanten Nutzung.",
-    "bildDatei": "buch/lf06/estrich-festigkeitsklassen.webp",
+    "bildDatei": "/buch/lf06/estrich-festigkeitsklassen.webp",
     "bildunterschrift": "Festigkeitsklassen für Estrichmörtel (Buch S. 258)"
   },
   {
@@ -795,7 +795,7 @@
       0
     ],
     "erklaerung": "Durch Schwinden und Temperatureinflüsse sind Estriche Längenänderungen unterworfen, die zu Rissen führen können. Deshalb werden Estrichflächen durch Dehn- und Scheinfugen unterteilt (ganze Estrichdicke durchtrennt). Feldgröße bei Zementestrich max. 20–30 m².",
-    "bildDatei": "buch/lf06/estrich-fugen.webp",
+    "bildDatei": "/buch/lf06/estrich-fugen.webp",
     "bildunterschrift": "Fugenausbildung – Vermeidung von Rissen (Buch S. 259)"
   },
   {
@@ -816,7 +816,7 @@
       0
     ],
     "erklaerung": "Der Zementestrich als Verbundestrich muss mindestens die Druckfestigkeit C25 (25 N/mm²) haben. Die Druckfestigkeitsklassen reichen von C5 bis C80, die Biegezugfestigkeitsklassen von F1 bis F50.",
-    "bildDatei": "buch/lf06/estrich-festigkeitsklassen.webp",
+    "bildDatei": "/buch/lf06/estrich-festigkeitsklassen.webp",
     "bildunterschrift": "Festigkeitsklassen für Estrichmörtel (Buch S. 258)"
   },
   {
@@ -854,7 +854,7 @@
       0
     ],
     "erklaerung": "Dämmstoffe unter Estrichen brauchen: geringe Wärmeleitfähigkeit (hoher Luftporenanteil), Feuchte- und Fäulnisbeständigkeit sowie Elastizität für den Schallschutz. Beispiele: Mineralwolle, Polystyrol, Holzwolle-Mehrschichtplatten.",
-    "bildDatei": "buch/lf06/daemmstoffe-tabelle.webp",
+    "bildDatei": "/buch/lf06/daemmstoffe-tabelle.webp",
     "bildunterschrift": "Dämmstoffe und ihre Verwendung (Buch S. 258)"
   },
   {
@@ -875,7 +875,7 @@
       0
     ],
     "erklaerung": "Fußböden aus Ziegeln gibt es in zwei Ausführungsarten: Flachschichtpflaster (Ziegel flach verlegt) für Fußböden mit geringer Beanspruchung, und Rollschichtpflaster (Ziegel hochkant) für stärker beanspruchte Fußböden.",
-    "bildDatei": "buch/lf06/ziegel-flachschichtpflaster.webp",
+    "bildDatei": "/buch/lf06/ziegel-flachschichtpflaster.webp",
     "bildunterschrift": "Einfaches Ziegel-Flachschichtpflaster (Buch S. 260)"
   },
   {
@@ -896,7 +896,7 @@
       0
     ],
     "erklaerung": "Beim Ziegelpflaster gibt es verschiedene Verlegearten: Schachbrett(muster), Ellenbogen(verband), stehende Rolle und diagonale Verlegung. Der Ziegel wird nach der Schnur auf ein Sandbett verlegt und mit Zementmörtel verfugt.",
-    "bildDatei": "buch/lf06/verlegearten-ziegelpflaster.webp",
+    "bildDatei": "/buch/lf06/verlegearten-ziegelpflaster.webp",
     "bildunterschrift": "Verlegearten für Ziegelpflaster (Buch S. 260)"
   },
   {
@@ -917,7 +917,7 @@
       0
     ],
     "erklaerung": "Fußböden in Aufenthaltsräumen müssen ausreichenden Feuchtigkeits-, Wärme- und Schallschutz bieten. Im Untergeschoss sind sie gegen aufsteigende Bodenfeuchte durch Abdichtungen zu schützen, zur Wärmedämmung wird der Estrich schwimmend eingebaut.",
-    "bildDatei": "buch/lf06/fussboeden-aufbau.webp",
+    "bildDatei": "/buch/lf06/fussboeden-aufbau.webp",
     "bildunterschrift": "Aufbau verschiedener Fußböden (Buch S. 261)"
   },
   {
@@ -938,7 +938,7 @@
       0
     ],
     "erklaerung": "Genormte Fliesen und Platten haben eine Oberfläche von etwa 90 cm². Ist die Fläche kleiner oder gleich 90 cm², spricht man von einer Fliese; ist sie größer, von einer Platte. Sehr kleine Formate heißen Mosaik, längliche im Verhältnis über 3:1 Riemchen.",
-    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildDatei": "/buch/lf06/platten-uebersicht.webp",
     "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
   },
   {
@@ -973,7 +973,7 @@
       0
     ],
     "erklaerung": "Keramische Erzeugnisse unterscheiden sich nach der Rohstoffmischung: Feinkeramik (z. B. keramische Fliesen) besteht aus fein aufbereiteten Rohstoffen, Grobkeramik (z. B. Spaltplatten, Klinker) aus weniger fein aufbereiteten, gröberen Rohstoffen.",
-    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildDatei": "/buch/lf06/platten-uebersicht.webp",
     "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
   },
   {
@@ -994,7 +994,7 @@
       0
     ],
     "erklaerung": "Nach Verfahren A werden stranggepresste Fliesen und Platten hergestellt, nach Verfahren B trocken gepresste. Nach der Wasseraufnahme werden sie in Gruppen (I, II, III) eingeteilt.",
-    "bildDatei": "buch/lf06/keramik-wasseraufnahme-gruppen.webp",
+    "bildDatei": "/buch/lf06/keramik-wasseraufnahme-gruppen.webp",
     "bildunterschrift": "Keramische Fliesen nach Wasseraufnahme (Buch S. 262)"
   },
   {
@@ -1021,7 +1021,7 @@
       ]
     },
     "erklaerung": "Wasseraufnahmegruppen: Gruppe I ≤ 3 % (dicht, frostbeständig), Gruppe II 3–10 % (mittel), Gruppe III > 10 % (porös). Je geringer die Wasseraufnahme, desto verschleißfester und frostbeständiger die Fliese. Gruppe I ist für außen geeignet.",
-    "bildDatei": "buch/lf06/keramik-wasseraufnahme-gruppen.webp",
+    "bildDatei": "/buch/lf06/keramik-wasseraufnahme-gruppen.webp",
     "bildunterschrift": "Keramische Fliesen nach Wasseraufnahme (Buch S. 262)"
   },
   {
@@ -1042,7 +1042,7 @@
       0
     ],
     "erklaerung": "Das Werkmaß (W) ist das tatsächliche Herstellungsmaß der Fliese (z. B. 147 × 247 mm). Addiert man die Fugenbreite (J), erhält man das Koordinierungsmaß (C = W + J), z. B. 150 × 250 mm. Das Nennmaß (N) wird im Handel angegeben.",
-    "bildDatei": "buch/lf06/fliesen-plattenmasse.webp",
+    "bildDatei": "/buch/lf06/fliesen-plattenmasse.webp",
     "bildunterschrift": "Fliesen- und Plattenmaße (Buch S. 262)"
   },
   {
@@ -1059,7 +1059,7 @@
       "gut"
     ],
     "erklaerung": "Steingut = poröser Scherben, hohe Wasseraufnahme, nur innen (Wandfliesen). Der Scherben ist hell. Gegenteil: Steinzeug (dicht, frostbeständig, innen und außen).",
-    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildDatei": "/buch/lf06/herstellung-keramik-schema.webp",
     "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
   },
   {
@@ -1080,7 +1080,7 @@
       0
     ],
     "erklaerung": "Steinzeugfliesen besitzen einen feinkörnigen, dicht gesinterten Scherben mit einer Wasseraufnahme von höchstens 3 %. Sie sind frostbeständig und verschleißfest, hauptsächlich für Bodenbeläge im Innen- und Außenbereich.",
-    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildDatei": "/buch/lf06/herstellung-keramik-schema.webp",
     "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
   },
   {
@@ -1120,7 +1120,7 @@
       0
     ],
     "erklaerung": "Die Abriebklassen 1–4 geben die zulässige Beanspruchung an: 1 = sehr gering (Bad, Schlafräume), 2 = gering (Wohnbereich), 3 = mittel (Hallen, Dielen, Küchen), 4 = stark (Eingang, Arbeitsräume).",
-    "bildDatei": "buch/lf06/abriebklassen.webp",
+    "bildDatei": "/buch/lf06/abriebklassen.webp",
     "bildunterschrift": "Abriebklassen glasierter Steinzeugbodenfliesen (Buch S. 264)"
   },
   {
@@ -1141,7 +1141,7 @@
       0
     ],
     "erklaerung": "Stranggepresste Platten sind grobkeramische Erzeugnisse. Die Masse wird durch ein Mundstück (Düse) gepresst; je nach Form entstehen Doppelplatten (Spaltplatten) oder Einzelplatten. Dazu zählen keramische Spaltplatten, Trennwandsteine und Überlaufrinnen.",
-    "bildDatei": "buch/lf06/spaltplatten-erzeugnisse.webp",
+    "bildDatei": "/buch/lf06/spaltplatten-erzeugnisse.webp",
     "bildunterschrift": "Keramische Strangerzeugnisse (Buch S. 264)"
   },
   {
@@ -1162,7 +1162,7 @@
       0
     ],
     "erklaerung": "Terrazzoplatten sind zweischichtige Betonwerksteinplatten aus Kernbeton und Vorsatzbeton. Der Terrazzobelag (Vorsatzbeton) enthält farbigen Natursplitt. Nach dem Schleifen der Oberfläche sehen sie manchen Natursteinplatten ähnlich.",
-    "bildDatei": "buch/lf06/terrazzoplatte-aufbau.webp",
+    "bildDatei": "/buch/lf06/terrazzoplatte-aufbau.webp",
     "bildunterschrift": "Terrazzoplatte und Terrazzo-Asphaltplatte (Buch S. 265)"
   },
   {
@@ -1180,7 +1180,7 @@
       "stein"
     ],
     "erklaerung": "Betonwerkstein = ‚Kunststein' aus Beton, der wie Naturwerkstein bearbeitet wird. Häufig zweischichtig: tragender Kernbeton + gestalteter Vorsatzbeton.",
-    "bildDatei": "buch/lf06/verlegemuster-betonplatten.webp",
+    "bildDatei": "/buch/lf06/verlegemuster-betonplatten.webp",
     "bildunterschrift": "Verlegemuster für Betonplatten (Buch S. 265)"
   },
   {
@@ -1220,7 +1220,7 @@
       0
     ],
     "erklaerung": "Vom Dickbettverfahren spricht man, wenn die Fliesen im dicken Mörtelbett angesetzt werden. Das Mörtelbett soll mindestens 10 mm, im Mittel 15 mm dick sein. Es eignet sich für unebene Wände und Böden.",
-    "bildDatei": "buch/lf06/zementmoertelduebel.webp",
+    "bildDatei": "/buch/lf06/zementmoertelduebel.webp",
     "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
   },
   {
@@ -1237,7 +1237,7 @@
       ]
     },
     "erklaerung": "Im Dickbettverfahren wird Ansetzmörtel aus Zement und Sand (Mischungsverhältnis 1:4 bis 1:8) verwendet. Beim Anklopfen der Fliese wird der Zementleim in die Poren des Scherbens gedrückt — es bilden sich Zementmörteldübel (mechanische Verankerung).",
-    "bildDatei": "buch/lf06/zementmoertelduebel.webp",
+    "bildDatei": "/buch/lf06/zementmoertelduebel.webp",
     "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
   },
   {
@@ -1296,7 +1296,7 @@
       0
     ],
     "erklaerung": "Floating-Verfahren: Der Klebemörtel wird auf den Ansetzgrund (Untergrund) aufgetragen und mit der Zahnkelle aufgekämmt. Beim Buttering-Verfahren wird der Kleber auf die Plattenrückseite aufgetragen; das kombinierte Buttering-Floating-Verfahren nutzt beides (Hohlraumfreiheit).",
-    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildDatei": "/buch/lf06/duennbett-verfahren.webp",
     "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
   },
   {
@@ -1316,7 +1316,7 @@
       ]
     },
     "erklaerung": "Floating = Kleber auf den Ansetzgrund (Untergrund). Buttering = Kleber auf die Plattenrückseite. Buttering-Floating (kombiniert) = beides, für hohlraumfreie Verlegung bei großformatigen Fliesen und im Außenbereich.",
-    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildDatei": "/buch/lf06/duennbett-verfahren.webp",
     "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
   },
   {
@@ -1393,7 +1393,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Fliesenbedarf = Fläche A · Materialbedarf pro m². Beispiel: 7,5 m² · 12 Stück/m² = 90 Stück Fliesen. Für Verschnitt (Zuschnitt an Rändern) plant man einen Zuschlag ein.",
-    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/fliesenbedarf-berechnung.webp",
     "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
   },
   {
@@ -1432,7 +1432,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Mörtelbedarf = Fläche A · Schichtdicke in mm. Denn je m² Fläche und je mm Schichtdicke wird 1 l Mörtel benötigt. Beispiel: 7,5 m² · 25 mm = 187,5 l Mörtel.",
-    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/fliesenbedarf-berechnung.webp",
     "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
   },
   {
@@ -1471,7 +1471,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Je m² Putzfläche und je mm Putzdicke wird 1 l Mörtel benötigt. Volumen = Fläche · Dicke in mm. Beispiel: 245 m² · 20 mm = 4900 l. Für den Verlust kommt noch ein Zuschlag dazu.",
-    "bildDatei": "buch/lf06/putzmoertelbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/putzmoertelbedarf-berechnung.webp",
     "bildunterschrift": "Berechnungsbeispiel Putzmörtelbedarf (Buch S. 256)"
   },
   {
@@ -1510,7 +1510,7 @@
     ],
     "toleranzProzent": 3,
     "erklaerung": "Sackzahl = benötigte Mörtelmenge / Ergiebigkeit je Sack. Beispiel: 5243 l / 25 l pro Sack = 209,7 → aufgerundet 210 Säcke. In der Praxis wird immer auf ganze Säcke aufgerundet.",
-    "bildDatei": "buch/lf06/putzmoertelbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/putzmoertelbedarf-berechnung.webp",
     "bildunterschrift": "Berechnungsbeispiel Putzmörtelbedarf (Buch S. 256)"
   },
   {
@@ -1550,7 +1550,7 @@
       0
     ],
     "erklaerung": "Spaltplatten werden als Doppelplatten geformt und nach dem Brennen in Einzelplatten gespalten (daher ‚Spaltplatten'). Sie werden im Mörtelbett (Dickbett) verlegt und eignen sich für witterungs- und frostbeständige Beläge innen und außen.",
-    "bildDatei": "buch/lf06/spaltplatten-erzeugnisse.webp",
+    "bildDatei": "/buch/lf06/spaltplatten-erzeugnisse.webp",
     "bildunterschrift": "Keramische Strangerzeugnisse (Buch S. 264)"
   },
   {
@@ -1628,7 +1628,7 @@
       0
     ],
     "erklaerung": "Die Gesteinskörnung bildet das feste, tragende Gerüst des Putzmörtels (Magerungsmittel). Sie soll so abgestuft sein, dass die kleineren Körner die Hohlräume zwischen den größeren füllen. Sie muss frei von Verunreinigungen sein.",
-    "bildDatei": "buch/lf06/putzmoertel-tabelle.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-tabelle.webp",
     "bildunterschrift": "Mineralisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -1649,7 +1649,7 @@
       0
     ],
     "erklaerung": "Der Dispersionssilikatputz (Silikatputz) verwendet Kali-Wasserglas und Polymerdispersion als Bindemittel. Der Dispersionsputz (Kunstharzputz) nutzt reine Polymerdispersion, der Siliconharzputz eine Siliconharzemulsion mit Polymerdispersion.",
-    "bildDatei": "buch/lf06/organische-putze-tabelle.webp",
+    "bildDatei": "/buch/lf06/organische-putze-tabelle.webp",
     "bildunterschrift": "Organisch gebundene Putzmörtel (Buch S. 250)"
   },
   {
@@ -1689,7 +1689,7 @@
       0
     ],
     "erklaerung": "Gipsplatten werden werkmäßig mit einem schnell erhärtenden Kern aus Stuckgips und einer stabilisierenden Kartonummantelung gefertigt. Die in Längsrichtung verlaufenden Kartonfasern erhalten der Platte in Längsrichtung eine größere Biegesteifigkeit als in Querrichtung.",
-    "bildDatei": "buch/lf06/gipsplatten-tabelle.webp",
+    "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
     "bildunterschrift": "Arten und Verwendung von Gipsplatten (Buch S. 254)"
   },
   {
@@ -1710,7 +1710,7 @@
       0
     ],
     "erklaerung": "Nach der Verlegetechnik unterscheidet man: hand- bzw. kellenverlegte Estriche, selbstnivellierende Fließestriche und Fertigteilestriche (Trockenestriche).",
-    "bildDatei": "buch/lf06/estricharten-konstruktion.webp",
+    "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
     "bildunterschrift": "Estricharten nach der Bauart (Buch S. 257)"
   },
   {
@@ -1728,7 +1728,7 @@
       "dübel"
     ],
     "erklaerung": "Der Zementmörteldübel ist die mechanische Verzahnung: Zementleim dringt in die Poren des Scherbens und ‚dübelt' die Fliese im Mörtel fest. Deshalb muss die Fliese gut angeklopft werden.",
-    "bildDatei": "buch/lf06/zementmoertelduebel.webp",
+    "bildDatei": "/buch/lf06/zementmoertelduebel.webp",
     "bildunterschrift": "Bildung von Zementmörteldübeln (Buch S. 266)"
   },
   {
@@ -1749,7 +1749,7 @@
       0
     ],
     "erklaerung": "Jeder Belaggrund (Ansetzgrund) muss vor dem Ansetzen der Fliesen auf seine Eignung überprüft werden. Er muss rau, saugfähig, sauber, fest, eben, lot- und fluchtgerecht sein. Gegebene Mängel müssen beseitigt oder ausgeglichen werden.",
-    "bildDatei": "buch/lf06/fliesenarbeiten-dusche.webp",
+    "bildDatei": "/buch/lf06/fliesenarbeiten-dusche.webp",
     "bildunterschrift": "Fliesenarbeiten im Duschbereich (Buch S. 269)"
   },
   {
@@ -1770,7 +1770,7 @@
       0
     ],
     "erklaerung": "Der Außenputz wird durch mehrere Faktoren beansprucht: Wasserdampf (von innen), Luftverschmutzung, Temperaturwechsel und Frost sowie Niederschläge (Schlagregen). Deshalb muss er widerstandsfähig und witterungsbeständig sein.",
-    "bildDatei": "buch/lf06/aussenputz-beanspruchung.webp",
+    "bildDatei": "/buch/lf06/aussenputz-beanspruchung.webp",
     "bildunterschrift": "Beanspruchung des Außenputzes (Buch S. 249)"
   },
   {
@@ -1829,7 +1829,7 @@
       0
     ],
     "erklaerung": "Dämmschichten unter dem Estrich (schwimmender Estrich) verbessern den Wärmeschutz und den Trittschallschutz zwischen den Geschossen. Geeignete Dämmstoffe sind z. B. Mineralwolle, Polystyrol und Holzwolle-Mehrschichtplatten.",
-    "bildDatei": "buch/lf06/daemmstoffe-tabelle.webp",
+    "bildDatei": "/buch/lf06/daemmstoffe-tabelle.webp",
     "bildunterschrift": "Dämmstoffe und ihre Verwendung (Buch S. 258)"
   },
   {
@@ -1901,7 +1901,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Erst Grundbedarf (Fläche · Bedarf/m²), dann Verschnittzuschlag. Bestellmenge = Grundbedarf · (1 + Verschnitt/100). In der Praxis wird auf ganze Fliesen/Pakete aufgerundet.",
-    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/fliesenbedarf-berechnung.webp",
     "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
   },
   {
@@ -1954,7 +1954,7 @@
     ],
     "toleranzProzent": 3,
     "erklaerung": "Erst Gesamtmenge (Fläche · Verbrauch/m²), dann durch den Sackinhalt teilen. In der Praxis wird immer auf ganze Säcke aufgerundet.",
-    "bildDatei": "buch/lf06/fliesenbedarf-berechnung.webp",
+    "bildDatei": "/buch/lf06/fliesenbedarf-berechnung.webp",
     "bildunterschrift": "Materialbedarf für Fliesen und Platten (Buch S. 268)"
   },
   {
@@ -1975,7 +1975,7 @@
       0
     ],
     "erklaerung": "Vor dem Verputzen von Betonflächen wird der Restfeuchtegehalt geprüft. Dieser darf höchstens 3 Masseprozent betragen, sonst haftet der Putz nicht ausreichend.",
-    "bildDatei": "buch/lf06/putzhaftung-oberflaechen.webp",
+    "bildDatei": "/buch/lf06/putzhaftung-oberflaechen.webp",
     "bildunterschrift": "Putzhaftung auf verschiedenen Oberflächen (Buch S. 252)"
   },
   {
@@ -1996,7 +1996,7 @@
       0
     ],
     "erklaerung": "Die Estrichdicke hängt von der Estrichkonstruktion (Verbund, Trenn-, Dämmschicht), den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit des Mörtels ab. Beispiel: Estrich auf Dämmschicht mind. 35 mm (CT).",
-    "bildDatei": "buch/lf06/estrichdicken-tabelle.webp",
+    "bildDatei": "/buch/lf06/estrichdicken-tabelle.webp",
     "bildunterschrift": "Ausgewählte Estrichdicken (Buch S. 258)"
   },
   {
@@ -2017,7 +2017,7 @@
       0
     ],
     "erklaerung": "Steingutfliesen haben einen porösen Scherben mit hoher Wasseraufnahme (über 10 %). Bei Frost würde das aufgenommene Wasser gefrieren und die Fliese sprengen — sie sind nicht frostbeständig und daher nur für Wandbeläge im Innenbereich (z. B. Bad, Dusche) geeignet.",
-    "bildDatei": "buch/lf06/herstellung-keramik-schema.webp",
+    "bildDatei": "/buch/lf06/herstellung-keramik-schema.webp",
     "bildunterschrift": "Herstellung keramischer Fliesen – Schema (Buch S. 263)"
   },
   {
@@ -2038,7 +2038,7 @@
       0
     ],
     "erklaerung": "Beim Dünnbettverfahren werden hauptsächlich hydraulisch erhärtende Dünnbettmörtel (kunstharzvergütete Zementklebstoffe), Dispersionsklebstoffe und Reaktionsharzklebstoffe verwendet. Man wählt den Kleber nach Belaggrund, Belagmaterial und erwarteter Beanspruchung.",
-    "bildDatei": "buch/lf06/duennbett-verfahren.webp",
+    "bildDatei": "/buch/lf06/duennbett-verfahren.webp",
     "bildunterschrift": "Mörtelauftrag auf Untergrund und Fliese (Buch S. 267)"
   },
   {
@@ -2059,7 +2059,7 @@
       0
     ],
     "erklaerung": "Neben den bekannten Bindemitteln Kalk und Zement wird im Innenbereich häufig das Bindemittel Gips verwendet. Gipsputze erhärten schnell, verbessern das Raumklima und sind gute Brandschutzstoffe.",
-    "bildDatei": "buch/lf06/putzmoertel-anwendung.webp",
+    "bildDatei": "/buch/lf06/putzmoertel-anwendung.webp",
     "bildunterschrift": "Anwendung des Putzmörtels (Buch S. 248)"
   },
   {
@@ -2099,7 +2099,7 @@
       0
     ],
     "erklaerung": "Die Estrichdicke muss mindestens das 3-fache des Größtkorns betragen. Beim Verbundestrich mit 40 mm Dicke wird ein Größtkorn von 16 mm nicht überschritten; bei Estrichdicken über 40 mm ein Größtkorn von 8 mm. So wird der Estrich gleichmäßig tragfähig.",
-    "bildDatei": "buch/lf06/estrichdicken-tabelle.webp",
+    "bildDatei": "/buch/lf06/estrichdicken-tabelle.webp",
     "bildunterschrift": "Ausgewählte Estrichdicken (Buch S. 258)"
   },
   {
@@ -2120,7 +2120,7 @@
       0
     ],
     "erklaerung": "Platten für Wand- und Bodenbeläge werden in Natursteinplatten und künstliche Platten eingeteilt. Künstliche Platten sind keramisch (gebrannt: Feinkeramik/Grobkeramik) oder nichtkeramisch (ungebrannt: zement-, beton-, bitumen- oder magnesiumgebunden).",
-    "bildDatei": "buch/lf06/platten-uebersicht.webp",
+    "bildDatei": "/buch/lf06/platten-uebersicht.webp",
     "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
   }
 ]

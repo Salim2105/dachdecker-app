@@ -15,7 +15,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Reet gehört mit der Holzschindel zu den ältesten Dachdeckungsmaterialien. Nachweislich gab es bereits um etwa 4000 v. Chr. in der Pfahlbausiedlung bei Unteruhldingen am Bodensee mit Reet gedeckte Hütten. Heute ist es vor allem in Norddeutschland verbreitet und erlebt durch das landschaftsgebundene Bauen eine Rückkehr.",
-    "bildDatei": "buch/lf13b/reet-geschichte.webp",
+    "bildDatei": "/buch/lf13b/reet-geschichte.webp",
     "bildunterschrift": "Reet als ältestes Bedachungsmaterial (Buch S. 564)"
   },
   {
@@ -34,7 +34,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Der Begriff \"weiche Bedachung\" hat nichts mit der Härte des Materials zu tun — er ist ein Brandschutzbegriff. Reet ist nicht widerstandsfähig gegen Flugfeuer und strahlende Wärme, deshalb müssen besondere Sicherheitsabstände zu anderen Gebäuden eingehalten werden. Das ist die häufigste Verwechslung bei diesem Begriff.",
-    "bildDatei": "buch/lf13b/reet-geschichte.webp",
+    "bildDatei": "/buch/lf13b/reet-geschichte.webp",
     "bildunterschrift": "Reet als ältestes Bedachungsmaterial (Buch S. 564)"
   },
   {
@@ -53,7 +53,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Das Reetdecken ist in Norddeutschland ein eigenständiger Bereich im Dachdeckerhandwerk mit eigenen Werkzeugen, eigenen Befestigungstechniken und eigenen Deckregeln. Die Arbeit erfolgt vollständig von Hand — maschinell ist allenfalls die Ernte des Reets.",
-    "bildDatei": "buch/lf13b/reetdach-gauben.webp",
+    "bildDatei": "/buch/lf13b/reetdach-gauben.webp",
     "bildunterschrift": "Reetdach mit Gauben und Ziegelfirst (Buch S. 564)"
   },
   {
@@ -72,7 +72,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Reet — auch Ried, Rohr, Schilf oder Binse genannt — gehört trotz der volkstümlichen Bezeichnung \"Binse\" zur Familie der Gräser. Es wird 1,25 bis 4 m hoch und wächst in Mitteleuropa an flachen Ufern stehender oder langsam fließender Gewässer. Der hohle, durch Knoten gegliederte Halm ist der Grund für seine Elastizität und geringe Masse.",
-    "bildDatei": "buch/lf13b/reetdach-gauben.webp",
+    "bildDatei": "/buch/lf13b/reetdach-gauben.webp",
     "bildunterschrift": "Reetdach mit Gauben und Ziegelfirst (Buch S. 564)"
   },
   {
@@ -91,7 +91,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Genau darauf beruht die Winterernte: Die Pflanze vertrocknet und wirft die Blätter ab, der Halm bleibt aber elastisch. Ein im Sommer geernteter Halm wäre noch saftführend und würde später schimmeln. Deshalb wird Reet im Winter geerntet — die Knoten, die von den unteren Blattteilen umfasst und gefestigt werden, geben dem Halm seine Festigkeit.",
-    "bildDatei": "buch/lf13b/reeternte-maschine.webp",
+    "bildDatei": "/buch/lf13b/reeternte-maschine.webp",
     "bildunterschrift": "Reeternte mit Maschine (Buch S. 564)"
   },
   {
@@ -110,7 +110,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Ernte über der Eisdecke ist die eleganteste Methode: Das Eis trägt Mensch und Maschine, und der Schnitt liegt dicht über der Wasseroberfläche. Danach wird das Reet zu Hocken aufgestellt und vom Wind getrocknet — nicht künstlich erhitzt. Anschließend wird es gehechelt, um es von welken Blattteilen zu befreien, und zu Garben gebunden.",
-    "bildDatei": "buch/lf13b/reeternte-maschine.webp",
+    "bildDatei": "/buch/lf13b/reeternte-maschine.webp",
     "bildunterschrift": "Reeternte mit Maschine (Buch S. 564)"
   },
   {
@@ -126,7 +126,7 @@
       "Garben": ["Garbe", "Garben zusammengebunden"]
     },
     "erklaerung": "Hecheln ist ein alter Begriff aus der Faserverarbeitung: Das Material wird durch einen Kamm gezogen, der lose und welke Teile heraustrennt. Übrig bleiben die geraden, sauberen Halme — nur die halten das Wasser später zuverlässig ab.",
-    "bildDatei": "buch/lf13b/reetschieber.webp",
+    "bildDatei": "/buch/lf13b/reetschieber.webp",
     "bildunterschrift": "Reeternte mit Reetschieber (Buch S. 564)"
   },
   {
@@ -145,7 +145,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Reetschieber wird geschoben, nicht geschwungen — die Eisfläche dient als Gleitebene und Höhenanschlag zugleich, wodurch alle Halme auf gleicher Höhe abgetrennt werden. Das Messer ist abnehmbar und damit schärf- und austauschbar. Gehechelt wird dagegen erst nach dem Trocknen mit einem eigenen Werkzeug.",
-    "bildDatei": "buch/lf13b/reetschieber.webp",
+    "bildDatei": "/buch/lf13b/reetschieber.webp",
     "bildunterschrift": "Reeternte mit Reetschieber (Buch S. 564)"
   },
   {
@@ -164,7 +164,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Da in Deutschland kaum noch Reetgebiete vorhanden sind, wird das Reet zu etwa 90 % aus Ungarn, Polen und Österreich eingeführt. Das Material ist also fast vollständig ein Importprodukt — auch wenn das gedeckte Dach als typisch norddeutsch gilt.",
-    "bildDatei": "buch/lf13b/reetlieferung.webp",
+    "bildDatei": "/buch/lf13b/reetlieferung.webp",
     "bildunterschrift": "Reetlieferung (Buch S. 564)"
   },
   {
@@ -183,7 +183,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Das kleinste Handelsmaß ist das Bund. Gemessen wird 20 cm über dem Stoppelende, weil das Bund dort am dicksten und die Messung reproduzierbar ist — in der Mitte oder an der Spitze läuft es aus. Der Mindestumfang beträgt 0,60 m; die Zusammenfassung nennt dieses Maß auch kurz \"Bunde von 60 cm\".",
-    "bildDatei": "buch/lf13b/reetlieferung.webp",
+    "bildDatei": "/buch/lf13b/reetlieferung.webp",
     "bildunterschrift": "Reetlieferung (Buch S. 564)"
   },
   {
@@ -203,7 +203,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "d = 0,60 m ÷ π = 0,191 m, also rund 19 cm Durchmesser. Der Umfang lässt sich am Bund mit dem Maßband direkt messen, der Durchmesser nicht — deshalb ist die Handelsangabe der Umfang. Wer sich das Bund vorstellen will, rechnet um: ein knapp 19 cm dickes Bündel, etwa so dick wie ein Unterarm.",
-    "bildDatei": "buch/lf13b/reetlieferung.webp",
+    "bildDatei": "/buch/lf13b/reetlieferung.webp",
     "bildunterschrift": "Reetlieferung (Buch S. 564)"
   },
   {
@@ -222,7 +222,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Langes Bund: Gesamtlänge > 1,90 m, höchstens 10 % der Halme unter 1,40 m, 50 % der Halme über 1,60 m. Beachte die Logik der drei Spalten: Die erste beschreibt das Bund als Ganzes, die zweite begrenzt den Anteil der zu kurzen Halme nach oben, die dritte fordert für die Hälfte der Halme eine Mindestlänge.",
-    "bildDatei": "buch/lf13b/bundtabelle.webp",
+    "bildDatei": "/buch/lf13b/bundtabelle.webp",
     "bildunterschrift": "Sortierung der Reetbunde (Buch S. 565)"
   },
   {
@@ -241,7 +241,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Das kurze Reetbund ist keine eigene Güteklasse mit eigenen Maßen, sondern die Restkategorie: Was die Anforderungen für mittellange Bunde nicht erfüllt, gilt als kurz. Merke dir die Zahlenpaare — beim mittellangen Bund ist die geforderte Gesamtlänge (1,40 m) zufällig gleich der Mindestlänge für die Hälfte der Halme.",
-    "bildDatei": "buch/lf13b/bundtabelle.webp",
+    "bildDatei": "/buch/lf13b/bundtabelle.webp",
     "bildunterschrift": "Sortierung der Reetbunde (Buch S. 565)"
   },
   {
@@ -258,7 +258,7 @@
       "Schnittjahr": ["Erntejahr", "Schnitt-Jahr"]
     },
     "erklaerung": "Sortiert wird nach den Maßen, bezeichnet wird nach Herkunft und Alter. Das Schnittjahr gehört dazu, weil Reet mit der Lagerzeit an Qualität verliert — und weil bei einem Reklamationsfall nachvollziehbar sein muss, aus welcher Ernte die Lieferung stammt.",
-    "bildDatei": "buch/lf13b/bundtabelle.webp",
+    "bildDatei": "/buch/lf13b/bundtabelle.webp",
     "bildunterschrift": "Sortierung der Reetbunde (Buch S. 565)"
   },
   {
@@ -279,7 +279,7 @@
     ],
     "toleranzProzent": 1,
     "erklaerung": "Bei einem 100er-Paket müssen also mindestens 90 Bunde der angegebenen Sortierung entsprechen — 10 dürfen abweichen. Diese Toleranz ist bei einem Naturprodukt nötig: Halme lassen sich nicht auf den Zentimeter genau sortieren. Aufgerundet wird, weil ein Bund nicht teilbar ist.",
-    "bildDatei": "buch/lf13b/reetbunde-kehldeckung.webp",
+    "bildDatei": "/buch/lf13b/reetbunde-kehldeckung.webp",
     "bildunterschrift": "Reetbunde bei der Kehldeckung (Buch S. 565)"
   },
   {
@@ -298,7 +298,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Gras zwischen den Halmen ist ausdrücklich unzulässig — es verrottet schneller als Reet und wird zur Schwachstelle im Dach. Ebenso kritisch sind Insekten- und Larvenbefall sowie Feuchtigkeit bei Aufbereitung und Lagerung. Bei der Prüfung dürfen in geöffneten Reetbunden weder Schimmelspuren noch Schimmelgeruch auftreten — der Geruchstest gehört ausdrücklich dazu.",
-    "bildDatei": "buch/lf13b/reetbunde-kehldeckung.webp",
+    "bildDatei": "/buch/lf13b/reetbunde-kehldeckung.webp",
     "bildunterschrift": "Reetbunde bei der Kehldeckung (Buch S. 565)"
   },
   {
@@ -317,7 +317,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Vorlegestange ist ein Hilfsmittel, kein Bauteil: Sie hält das lose vorgelegte Reet in Position, bis es befestigt ist, und wird danach wieder entfernt. Die Reethaken — Steckhölzer aus Eiche oder Haselholz — klemmen sie gegen die Deckung. In Kehlen werden PVC-Kunststoffschläuche als Vorlegestange verwendet, weil sie sich der Rundung anpassen.",
-    "bildDatei": "buch/lf13b/neueindeckung.webp",
+    "bildDatei": "/buch/lf13b/neueindeckung.webp",
     "bildunterschrift": "Neueindeckung eines Reetdaches (Buch S. 565)"
   },
   {
@@ -336,7 +336,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Achtung, doppelte Wortbedeutung: Der \"Dachstuhl\" ist hier nicht die Tragkonstruktion, sondern ein Arbeitsgerät — eine kurze Leiter mit Standfläche, die mit Haken im bereits gedeckten Reet verankert wird. Von der Traufe aus deckt man vom Gerüst, weiter oben braucht man diesen Stuhl.",
-    "bildDatei": "buch/lf13b/dachstuehle.webp",
+    "bildDatei": "/buch/lf13b/dachstuehle.webp",
     "bildunterschrift": "Verschiedene Dachstühle (Buch S. 565)"
   },
   {
@@ -355,7 +355,7 @@
     ],
     "korrekt": [0],
     "erklaerung": "In Kehlen werden PVC-Kunststoffschläuche als Vorlegestange verwendet. Der Grund ist die Geometrie: Eine starre 3-m-Rundholzstange lässt sich nicht in eine runde Kehle legen, ein Schlauch schmiegt sich an. Das passt zur Regel, dass die Kehle rund und nicht spitz zulaufend ausgeklopft werden soll.",
-    "bildDatei": "buch/lf13b/dachstuehle.webp",
+    "bildDatei": "/buch/lf13b/dachstuehle.webp",
     "bildunterschrift": "Verschiedene Dachstühle (Buch S. 565)"
   },
   {
@@ -374,7 +374,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die lose Nähnadel ist 70 cm lang, unten flachgeklopft und mit einem 5-mm-Loch durchbohrt, oben mit Griff. Das schräg eingesägte, leicht angewinkelte Ende hat dagegen die 2. Nadel des Nähbestecks — sie fängt damit den Draht ein, statt ihn zu tragen.",
-    "bildDatei": "buch/lf13b/werkzeuge-reetdeckung.webp",
+    "bildDatei": "/buch/lf13b/werkzeuge-reetdeckung.webp",
     "bildunterschrift": "Werkzeuge zur Reetdeckung (Buch S. 566)"
   },
   {
@@ -393,7 +393,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beim Nähen mit loser Nadel arbeiten zwei Personen zusammen: Der Dachdecker sticht immer von außen, der Binnennäher hängt den Draht drinnen nur um. Der Draht läuft also unter der Dachlatte hindurch und 2 bis 3 cm darüber wieder heraus — die Dachlatte wird umschlungen. Anschließend sticht der Dachdecker von außen mit 20 bis 25 cm Stichabstand weiter.",
-    "bildDatei": "buch/lf13b/naehen-von-innen.webp",
+    "bildDatei": "/buch/lf13b/naehen-von-innen.webp",
     "bildunterschrift": "Nähen mit Nadel von innen (Buch S. 568)"
   },
   {
@@ -412,7 +412,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Die beiden arbeiten gegeneinander: Der Dachdecker drückt außen auf den Stich, der Binnennäher zieht innen mit der Flachzange an. Nur so entsteht die nötige Spannung, die das Reet dauerhaft gegen die Dachlatte presst. Zieht man ohne Gegendruck, gibt das Reet nach und die Naht bleibt lose.",
-    "bildDatei": "buch/lf13b/naehen-von-innen.webp",
+    "bildDatei": "/buch/lf13b/naehen-von-innen.webp",
     "bildunterschrift": "Nähen mit Nadel von innen (Buch S. 568)"
   },
   {
@@ -431,7 +431,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Das ist der entscheidende Vorteil des Nähbestecks: Der Dachdecker arbeitet allein von außen, ein Binnennäher wird nicht gebraucht. Beide Nadeln müssen aber parallel übereinander gestochen werden, da sonst der Draht nicht erfasst werden kann — steht die 2. Nadel schief, greift sie ins Leere.",
-    "bildDatei": "buch/lf13b/naehen-besteck.webp",
+    "bildDatei": "/buch/lf13b/naehen-besteck.webp",
     "bildunterschrift": "Nähen mit Besteck (Buch S. 566)"
   },
   {
@@ -450,7 +450,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beide Nadeln sind 70 cm lang aus Rundstahl mit Griff — der Unterschied liegt allein am unteren Ende. Die 1. Nadel trägt den Draht in ihrer Öse, die 2. hat einen schrägen Einschnitt zum Einfangen. Die leichte Anwinkelung sorgt dafür, dass sie beim Drehen den Draht sicher greift.",
-    "bildDatei": "buch/lf13b/naehen-besteck.webp",
+    "bildDatei": "/buch/lf13b/naehen-besteck.webp",
     "bildunterschrift": "Nähen mit Besteck (Buch S. 566)"
   },
   {
@@ -469,7 +469,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Die Rundnadel ist die einfachste der drei Nähtechniken: eine Nadel, eine Bewegung — hinein oberhalb der Latte, durch Drehen unterhalb wieder heraus. Wie beim Nähbesteck arbeitet der Dachdecker allein von außen; nur bei der losen Nadel braucht es den zweiten Mann drinnen.",
-    "bildDatei": "buch/lf13b/naehen-besteck-fest.webp",
+    "bildDatei": "/buch/lf13b/naehen-besteck-fest.webp",
     "bildunterschrift": "Nähen mit Besteck: fest (Buch S. 566)"
   },
   {
@@ -488,7 +488,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Drei Werkstoffe, drei Mindestdicken: Niro 1 mm, kunststoffummantelt 1,4 mm, Kupfer 1,5 mm. Die Staffelung folgt der Beanspruchbarkeit — beim ummantelten Draht zählt die Ummantelung mit, beim weicheren Kupfer braucht es mehr Querschnitt für dieselbe Festigkeit. Merke dir die Reihenfolge: Niro am dünnsten, Kupfer am dicksten.",
-    "bildDatei": "buch/lf13b/befestigungsmaterial.webp",
+    "bildDatei": "/buch/lf13b/befestigungsmaterial.webp",
     "bildunterschrift": "Befestigungsmaterial zur Reetdeckung (Buch S. 566)"
   },
   {
@@ -507,7 +507,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Achte auf die Rollenverteilung: Der Stangendraht wird nicht durch das Reet gestochen, sondern liegt als Bandstock quer auf der Deckung und wird selbst festgebunden. Deshalb ist er mit 4,5 bis 6 mm um ein Vielfaches dicker als der Bindedraht mit 1 bis 1,5 mm. Wer die beiden verwechselt, verwechselt das haltende mit dem gehaltenen Teil.",
-    "bildDatei": "buch/lf13b/befestigungsmaterial.webp",
+    "bildDatei": "/buch/lf13b/befestigungsmaterial.webp",
     "bildunterschrift": "Befestigungsmaterial zur Reetdeckung (Buch S. 566)"
   },
   {
@@ -526,7 +526,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Reetdächer haben eine Mindestdachneigung von 45°, empfehlenswert über 50° — auf so steilen Flächen ist ein Dachfanggerüst an der Traufe unverzichtbar. Von dort werden die ersten Reetlagen gedeckt; für die höheren Lagen kommt der Dachstuhl als Standfläche hinzu.",
-    "bildDatei": "buch/lf13b/dachfanggeruest.webp",
+    "bildDatei": "/buch/lf13b/dachfanggeruest.webp",
     "bildunterschrift": "Arbeiten auf dem Dachstuhl mit Dachfanggerüst (Buch S. 566)"
   },
   {
@@ -545,7 +545,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Klopfer wird zweimal eingesetzt: vor der Befestigung, um das Reet in Dachneigung zu bringen, und danach zum Nachputzen — dadurch entsteht das gleichmäßige Aussehen der Dachfläche. Das Festklemmen übernehmen dagegen Vorlegestange und Reethaken, das sind eigene Werkzeuge. Am Klopfbrett sitzt zusätzlich ein Haken, mit dem der Klopfer in die Dachhaut eingehängt werden kann — so hat der Dachdecker beide Hände frei.",
-    "bildDatei": "buch/lf13b/klopfer-naht.webp",
+    "bildDatei": "/buch/lf13b/klopfer-naht.webp",
     "bildunterschrift": "Das Reet wird mit dem Klopfer in die Naht geschlagen (Buch S. 569)"
   },
   {
@@ -562,7 +562,7 @@
       "Aussehen": ["Erscheinungsbild", "Bild"]
     },
     "erklaerung": "Die Reihenfolge klopfen, befestigen, nachputzen ist keine Stilfrage, sondern ergibt sich aus der Statik der Deckung: Wer erst befestigt und dann in Neigung bringen will, kämpft gegen den eigenen Draht. Das Nachputzen am Ende ist reine Optik — aber genau daran erkennt man ein handwerklich sauberes Reetdach.",
-    "bildDatei": "buch/lf13b/klopfer-naht.webp",
+    "bildDatei": "/buch/lf13b/klopfer-naht.webp",
     "bildunterschrift": "Das Reet wird mit dem Klopfer in die Naht geschlagen (Buch S. 569)"
   },
   {
@@ -581,7 +581,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "45° ist das Minimum, über 50° ist empfehlenswert. Der Zusammenhang ist einfach: Reet ist nicht wasserdicht, sondern wasserableitend. Je steiler das Dach, desto schneller läuft das Wasser an den Halmen entlang ab, statt in die Deckung einzudringen. Deshalb gilt: Je steiler die Dachneigung, desto größer die Lebensdauer.",
-    "bildDatei": "buch/lf13b/deckregeln.webp",
+    "bildDatei": "/buch/lf13b/deckregeln.webp",
     "bildunterschrift": "Allgemeine Deckregeln (Buch S. 567)"
   },
   {
@@ -600,7 +600,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Mindestens 6 cm Luftraum, mit Öffnungen an Traufe und First — nur so entsteht der durchgehende Luftstrom, der Feuchtigkeit aus der Deckung abführt. Ein Reetdach, das nicht abtrocknen kann, verrottet von innen. Bei ausgebauten Dachgeschossen kommt über der Wärmedämmung eine regensichere Unterdeckung hinzu.",
-    "bildDatei": "buch/lf13b/deckregeln.webp",
+    "bildDatei": "/buch/lf13b/deckregeln.webp",
     "bildunterschrift": "Allgemeine Deckregeln (Buch S. 567)"
   },
   {
@@ -619,7 +619,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Fließtext auf S. 567 nennt 35 bis 40 cm an der Traufe und 30 bis 35 cm am First, dazu mindestens 50 cm Traufüberstand. Achtung: Die Zusammenfassung auf S. 568 gibt \"zwischen 40 cm an der Traufe und 25 cm am First\" an und weicht damit beim Firstmaß vom Fließtext ab. Für die Prüfung ist der ausführliche Fließtext maßgeblich; die 25 cm der Zusammenfassung sind eine Vereinfachung, die den genannten Bereich unterschreitet.",
-    "bildDatei": "buch/lf13b/deckregeln.webp",
+    "bildDatei": "/buch/lf13b/deckregeln.webp",
     "bildunterschrift": "Allgemeine Deckregeln (Buch S. 567)"
   },
   {
@@ -638,7 +638,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Reetlatten sind deutlich kräftiger als bei einer Ziegeldeckung, weil sie nicht nur tragen, sondern auch die Zugkräfte der Nähte aufnehmen müssen. Die ersten beiden Trauflatten liegen mit 20 cm besonders eng — dort sitzt die dickste und am stärksten beanspruchte Deckung.",
-    "bildDatei": "buch/lf13b/lattenabstand-tabelle.webp",
+    "bildDatei": "/buch/lf13b/lattenabstand-tabelle.webp",
     "bildunterschrift": "Lattenabstand nach Dachneigung (Buch S. 567)"
   },
   {
@@ -657,7 +657,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Lattenabstand wird umso kleiner, je größer die Dachneigung und die Windsogbelastung wird. Das wirkt zunächst widersprüchlich — steiler heißt doch besserer Wasserablauf. Der Grund ist ein anderer: Bei steilem Dach zieht die Schwerkraft stärker in Fallrichtung und der Windsog greift härter an, deshalb braucht die Deckung mehr Befestigungspunkte.",
-    "bildDatei": "buch/lf13b/lattenabstand-tabelle.webp",
+    "bildDatei": "/buch/lf13b/lattenabstand-tabelle.webp",
     "bildunterschrift": "Lattenabstand nach Dachneigung (Buch S. 567)"
   },
   {
@@ -679,7 +679,7 @@
     ],
     "toleranzProzent": 1,
     "erklaerung": "Beispiel: 8 m Sparrenlänge und 30 cm Abstand ergeben 800 ÷ 30 = 26 volle Felder, also 27 Latten. Die \"+ 1\" ist der Zaunpfahl-Fehler — zwischen 27 Latten liegen nur 26 Abstände. Vergleiche das Ergebnis mit 40 cm Abstand: dann sind es nur 21 Latten. Ein steileres Dach kostet also spürbar mehr Lattung.",
-    "bildDatei": "buch/lf13b/lattenabstand-tabelle.webp",
+    "bildDatei": "/buch/lf13b/lattenabstand-tabelle.webp",
     "bildunterschrift": "Lattenabstand nach Dachneigung (Buch S. 567)"
   },
   {
@@ -698,7 +698,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beugung bedeutet, dass die Halme nicht flach in Dachneigung liegen, sondern am Befestigungspunkt abgeknickt werden — dadurch stehen die Stoppelenden flacher als die Bindung. Dieser Winkel setzt sich über die ganze Dachhöhe fort und erzeugt die Spannung, die das Reet zusammenhält. Der Beugewinkel ist deshalb nicht mit der Dachneigung identisch.",
-    "bildDatei": "buch/lf13b/neueindeckung.webp",
+    "bildDatei": "/buch/lf13b/neueindeckung.webp",
     "bildunterschrift": "Neueindeckung eines Reetdaches (Buch S. 565)"
   },
   {
@@ -717,7 +717,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Für die Gaube gilt dieselbe Mindestdachneigung wie für die Hauptfläche — eine Ausnahme gibt es nicht. Die Ausrundung der Anschlüsse ist typisch für Reet: Scharfe Kanten würden das Wasser stauen und die Halme brechen. Nach der Zusammenfassung sollten Gauben zudem mindestens 60 cm Abstand von Grat, Kehle oder Ortgang haben.",
-    "bildDatei": "buch/lf13b/gaubenabschluss.webp",
+    "bildDatei": "/buch/lf13b/gaubenabschluss.webp",
     "bildunterschrift": "Gaubenabschluss mit Holzleckbrettchen (Buch S. 568)"
   },
   {
@@ -736,7 +736,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Unterhalb der Gaube — vom Fenster bis zum Stoppelende — kann der Abschluss auf verschiedene Arten ausgeführt werden: Holzleckbretter, Kupferblech, Heidekissen oder ein Reetfirst. Alle vier Varianten haben dieselbe Aufgabe: das Wasser an dieser waagerechten Bruchstelle sicher über die darunterliegende Deckung zu leiten.",
-    "bildDatei": "buch/lf13b/gaubenabschluss.webp",
+    "bildDatei": "/buch/lf13b/gaubenabschluss.webp",
     "bildunterschrift": "Gaubenabschluss mit Holzleckbrettchen (Buch S. 568)"
   },
   {
@@ -755,7 +755,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beide Regeln folgen aus dem Brandschutz und der Wasserführung: Im First liegt der höchste Punkt — dort läuft kein Wasser gegen die Durchdringung, und ein Anschluss in der Fläche entfällt. Die 1 m Überstand halten Funken von der weichen Bedachung fern. Der Vorsprung der Katzentreppe wird durch die Firstdeckung ausgefüllt.",
-    "bildDatei": "buch/lf13b/katzentreppe.webp",
+    "bildDatei": "/buch/lf13b/katzentreppe.webp",
     "bildunterschrift": "Katzentreppe am Schornstein (Buch S. 567)"
   },
   {
@@ -769,7 +769,7 @@
     "definition": "Die seitliche Auskragung des Schornsteins über einem Reetdach. Der Schornstein wird mit einem etwa 10 cm breiten Vorsprung gemauert, der stufenartig hervorsteht. Der so entstehende Vorsprung wird durch die Firstdeckung ausgefüllt, sodass ein dichter Übergang zwischen Mauerwerk und Reet entsteht.",
     "bestandteile": ["Katzen", "treppe"],
     "erklaerung": "Der Name kommt vom stufenförmigen Aussehen des Mauerwerks. Technisch löst die Auskragung ein Problem, das es beim harten Dach nicht gibt: Reet ist 30 bis 40 cm dick, ein glatter Schornstein hätte an dieser Fuge keinen Anschluss. Die Stufe schafft eine Auflage, in die die Firstdeckung hineingearbeitet wird.",
-    "bildDatei": "buch/lf13b/katzentreppe.webp",
+    "bildDatei": "/buch/lf13b/katzentreppe.webp",
     "bildunterschrift": "Katzentreppe am Schornstein (Buch S. 567)"
   },
   {
@@ -787,7 +787,7 @@
       "60": ["60 cm", "sechzig"]
     },
     "erklaerung": "Die 60 cm Mindestabstand der Gauben zu Grat, Kehle und Ortgang sind ein reiner Ausführungsabstand: An diesen drei Stellen wird das Reet ohnehin gedreht und besonders sorgfältig gearbeitet. Läge eine Gaube zu dicht daran, könnten beide Details nicht mehr sauber ausgebildet werden.",
-    "bildDatei": "buch/lf13b/zusammenfassung-deckregeln.webp",
+    "bildDatei": "/buch/lf13b/zusammenfassung-deckregeln.webp",
     "bildunterschrift": "Zusammenfassung der Deckregeln (Buch S. 568)"
   },
   {
@@ -806,7 +806,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Drei Techniken: gebunden, genäht, geschraubt. Der Unterschied liegt darin, ob ein Bandstock beziehungsweise Stangendraht verwendet wird. Beim gebundenen und geschraubten Dach wird das Reet durch Bandstöcke und Draht an der Lattung geklemmt, beim genähten Dach direkt mit Bindedraht an den Dachlatten befestigt. Geklebt wird Reet nie.",
-    "bildDatei": "buch/lf13b/gebundenes-reetdach.webp",
+    "bildDatei": "/buch/lf13b/gebundenes-reetdach.webp",
     "bildunterschrift": "Gebundenes Reetdach (Buch S. 568)"
   },
   {
@@ -825,7 +825,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Das Festbinden erfolgt mit Steck- und Ziehnadeln von außen. Wichtig ist die Überdeckungsregel: Die obere Reetlage muss die Bandstöcke der unteren Lage mit mindestens 10 cm Dicke überdecken. Sichtbare Befestigungsmittel sind bei einem Reetdach immer ein Mangel — sie leiten Wasser nach innen.",
-    "bildDatei": "buch/lf13b/gebundenes-reetdach.webp",
+    "bildDatei": "/buch/lf13b/gebundenes-reetdach.webp",
     "bildunterschrift": "Gebundenes Reetdach (Buch S. 568)"
   },
   {
@@ -846,7 +846,7 @@
     ],
     "toleranzProzent": 1,
     "erklaerung": "Bei 12 m Lattenlänge und 5 Bindungen je Meter sind das 60 Bindungen — für eine einzige Dachlatte. Multipliziert mit 20 bis 30 Latten je Dachseite wird deutlich, warum eine Reetdeckung so arbeitsintensiv ist. Bei 6 Bindungen je Meter kommen noch einmal 20 % dazu.",
-    "bildDatei": "buch/lf13b/gebundenes-reetdach.webp",
+    "bildDatei": "/buch/lf13b/gebundenes-reetdach.webp",
     "bildunterschrift": "Gebundenes Reetdach (Buch S. 568)"
   },
   {
@@ -865,7 +865,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Kern der Definition steckt in der Klammer des Buches: Genäht heißt ohne Bandstock beziehungsweise Stangendraht — der Draht geht direkt durch die Deckung um die Latte. Der Stichabstand beträgt 20 bis 25 cm, nicht 40 bis 50. Der Mindestabstand von 50 cm zum Stoppelende sorgt dafür, dass die Naht tief genug in der Deckung liegt und verdeckt bleibt.",
-    "bildDatei": "buch/lf13b/naehen-besteck-fest.webp",
+    "bildDatei": "/buch/lf13b/naehen-besteck-fest.webp",
     "bildunterschrift": "Nähen mit Besteck: fest (Buch S. 566)"
   },
   {
@@ -887,7 +887,7 @@
     ],
     "toleranzProzent": 1,
     "erklaerung": "Bei 12 m Naht und 20 cm Stichabstand sind das 60 Abstände, also 61 Stiche — je Dachlatte. Beim engeren Stichabstand von 20 cm sind es rund 25 % mehr Stiche als bei 25 cm. Auch hier gilt der Zaunpfahl-Gedanke: ein Stich mehr als Abstände.",
-    "bildDatei": "buch/lf13b/naehen-besteck-fest.webp",
+    "bildDatei": "/buch/lf13b/naehen-besteck-fest.webp",
     "bildunterschrift": "Nähen mit Besteck: fest (Buch S. 566)"
   },
   {
@@ -906,7 +906,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Auch beim geschraubten Dach bleibt der Draht: Die Schraube hält den Stangendraht, und der Stangendraht hält als Bandstock das Reet. Aufrödeln heißt, die beiden Drahtenden miteinander zu verdrillen — dafür gibt es mit dem Rödler ein eigenes Werkzeug. Der lange Bit ist nötig, weil die Schraube durch 30 bis 40 cm Deckung hindurchmuss.",
-    "bildDatei": "buch/lf13b/befestigungsmaterial.webp",
+    "bildDatei": "/buch/lf13b/befestigungsmaterial.webp",
     "bildunterschrift": "Befestigungsmaterial zur Reetdeckung (Buch S. 566)"
   },
   {
@@ -925,7 +925,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Streuschicht ist die unterste, aus groben Halmen bestehende Lage. Sie wird sukzessive mit dem Arbeitsfortschritt aufgebracht, beginnend an der Kneepkante. Ihre Funktion ist rein konstruktiv: Sie schließt die Zwischenräume zwischen den Latten, sodass keine Halmspitzen ins Dachinnere durchstoßen — und wirkt dabei zugleich als Unterdach.",
-    "bildDatei": "buch/lf13b/reetlagen-traufe.webp",
+    "bildDatei": "/buch/lf13b/reetlagen-traufe.webp",
     "bildunterschrift": "Reetlagen an der Traufe (Buch S. 569)"
   },
   {
@@ -944,7 +944,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Schlüssel ist das Wort \"halbfest\": Die Bunde müssen zunächst noch durch Klopfen auf die richtige Höhe gebracht werden können. Erst danach werden die Bunddrähte entfernt und endgültig befestigt. Beachte den Unterschied der beiden Lagen — die Untertraufe wird waagerecht geklopft, die Obertraufe in Dachneigung.",
-    "bildDatei": "buch/lf13b/arbeiten-untertraufe.webp",
+    "bildDatei": "/buch/lf13b/arbeiten-untertraufe.webp",
     "bildunterschrift": "Arbeiten an der Untertraufe (Buch S. 567)"
   },
   {
@@ -963,7 +963,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Kneep ist die um 5 bis 15 cm angehobene Auflagekante an der Traufe. Er wirkt wie ein Widerlager: Weil die unterste Kante höher liegt als die Lattenebene, steht die gesamte Decklage darüber unter Druck und kann nicht abrutschen. Der Abstand der ersten beiden Trauflatten ist etwas anderes — er beträgt 20 cm.",
-    "bildDatei": "buch/lf13b/arbeiten-untertraufe.webp",
+    "bildDatei": "/buch/lf13b/arbeiten-untertraufe.webp",
     "bildunterschrift": "Arbeiten an der Untertraufe (Buch S. 567)"
   },
   {
@@ -982,7 +982,7 @@
     ],
     "korrekt": [0, 1],
     "erklaerung": "Zweimal 30 cm, aber an zwei verschiedenen Stellen gemessen: die sichtbare Traufdicke (was man von unten sieht) und die Dachstärke auf der ersten Dachlatte. Beide Maße sind Mindestwerte. Der Fließtext auf S. 567 nennt für die Traufe zusätzlich den Bereich von 35 bis 40 cm, gemessen an der ersten Dachlatte.",
-    "bildDatei": "buch/lf13b/reetlagen-traufe.webp",
+    "bildDatei": "/buch/lf13b/reetlagen-traufe.webp",
     "bildunterschrift": "Reetlagen an der Traufe (Buch S. 569)"
   },
   {
@@ -1001,7 +1001,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Ortgang ist der Startpunkt der Deckung. Das erste Bund wird in einem 45-Grad-Winkel aufgekeilt — nicht zu verwechseln mit der Mindestdachneigung von 45°, das ist eine andere Größe. Der zweischrittige Ablauf entspricht dem an der Traufe: erst der Überstand, dann die Rückführung in die Fläche.",
-    "bildDatei": "buch/lf13b/reetdeckung-ortgang.webp",
+    "bildDatei": "/buch/lf13b/reetdeckung-ortgang.webp",
     "bildunterschrift": "Reetdeckung am Ortgang (Buch S. 567)"
   },
   {
@@ -1020,7 +1020,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Übergang von der 45-Grad-Aufkeilung zurück in die Lotrechte braucht 1,50 bis 2,00 m — abhängig von der Dicke des Reets. Der Dachüberstand am Ortgang beträgt 15 bis 25 cm; die mindestens 50 cm gelten für den Traufüberstand, gemessen vom Mauerwerk bis zum Ende des Dachüberstandes.",
-    "bildDatei": "buch/lf13b/ortgangbrett.webp",
+    "bildDatei": "/buch/lf13b/ortgangbrett.webp",
     "bildunterschrift": "Ortgang mit Ortgangbrett (Buch S. 569)"
   },
   {
@@ -1039,7 +1039,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Grund für die erhöhte Sorgfalt steht ausdrücklich im Buch: Grate sind bei Stürmen die ersten Angriffsflächen. Deshalb rückt die Bindung näher an das Stoppelende — der freie Hebel wird kürzer, das Reet lässt sich schwerer herausziehen. Bei der Rückführung in die Fläche wird das Reet wieder in die Lotrechte gedreht.",
-    "bildDatei": "buch/lf13b/deckung-grat.webp",
+    "bildDatei": "/buch/lf13b/deckung-grat.webp",
     "bildunterschrift": "Saubere Deckung am Grat (Buch S. 569)"
   },
   {
@@ -1058,7 +1058,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Drei Regeln, drei verschiedene Gründe: Die runde Form verhindert, dass sich Wasser in einer scharfen Kante staut. Die anderthalbfache Dicke trägt der Tatsache Rechnung, dass in der Kehle das Wasser zweier Dachflächen zusammenläuft. Die Mindestneigung von 40° liegt unter der Flächen-Mindestneigung von 45°, weil der Kehlsparren geometrisch immer flacher liegt als die anschließenden Flächen.",
-    "bildDatei": "buch/lf13b/kehldeckung.webp",
+    "bildDatei": "/buch/lf13b/kehldeckung.webp",
     "bildunterschrift": "Kehldeckung (Buch S. 570)"
   },
   {
@@ -1078,7 +1078,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Bei 35 cm Flächendicke sind das 52,5 cm in der Kehle — mehr als ein halber Meter Reet. Diese Verdickung ist der Grund, warum für die Kehleindeckung ausdrücklich langes Reet verwendet werden muss: Kurze Halme reichen bei dieser Dicke nicht von der Bindung bis zum Stoppelende.",
-    "bildDatei": "buch/lf13b/kehldeckung.webp",
+    "bildDatei": "/buch/lf13b/kehldeckung.webp",
     "bildunterschrift": "Kehldeckung (Buch S. 570)"
   },
   {
@@ -1097,7 +1097,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "\"Umkippen\" heißt hier: Das Reet legt sich waagerecht statt in Fallrichtung — und dann läuft das Wasser nicht mehr ab, sondern in die Deckung hinein. Unterlegte Kehlen, zum Beispiel aus Metall, sind nicht verboten, sondern sogar erforderlich, wenn die Reetfläche an eine andere Dacheindeckung anschließt.",
-    "bildDatei": "buch/lf13b/kehldeckung.webp",
+    "bildDatei": "/buch/lf13b/kehldeckung.webp",
     "bildunterschrift": "Kehldeckung (Buch S. 570)"
   },
   {
@@ -1116,7 +1116,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Für die Firstdeckung kann neben Reet auch Heidekraut verwendet werden, in einigen Gegenden sind Holzschindel-, Ziegel- oder Grassodenfirste gebräuchlich. Eine Bitumendachbahn kommt zwar vor — aber ausschließlich als untere Abdichtung unter Heide- und Grassodenfirst, nie als sichtbare Deckung.",
-    "bildDatei": "buch/lf13b/ziegelfirst.webp",
+    "bildDatei": "/buch/lf13b/ziegelfirst.webp",
     "bildunterschrift": "Ziegelfirst (Buch S. 571)"
   },
   {
@@ -1135,7 +1135,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beim Reetfirst kehrt sich die Richtung um: Anders als in der Fläche zeigt das Stoppelende nach oben. Entscheidend ist die Überdeckungsregel — die wetterzugewandte Seite muss über der anderen liegen, damit Schlagregen nicht in die Fuge gedrückt wird. Bei einem falsch herum gedeckten First zieht das Wasser genau dort ein.",
-    "bildDatei": "buch/lf13b/reetfirst-genaeht.webp",
+    "bildDatei": "/buch/lf13b/reetfirst-genaeht.webp",
     "bildunterschrift": "Reetfirst, genäht (Buch S. 570)"
   },
   {
@@ -1154,7 +1154,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Beim Heidefirst sind es 80 cm beidseitig, beim Heide-Hängehölzer-First 1,00 m — das ist die Zahl, die man leicht verwechselt. Die Befestigung erfolgt beidseitig in Höhe der 2. oder 3. Latte mit 50 cm oder 75 cm breitem kunststoffummanteltem Maschendraht, der nach dem Einstopfen der Heide mit Niro-Bindedraht oben in der Mitte zusammengenäht wird.",
-    "bildDatei": "buch/lf13b/heide-haengehoelzer-first.webp",
+    "bildDatei": "/buch/lf13b/heide-haengehoelzer-first.webp",
     "bildunterschrift": "Heide-Hängehölzer-First (Buch S. 570)"
   },
   {
@@ -1173,7 +1173,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Die Hängehölzer werden im unteren Drittel mit Niro-Bindedraht an der Dachlatte befestigt — nicht oben am Firstscheitel. Das ist der Sinn der Konstruktion: Sie hängen über den First und wirken durch ihr Eigengewicht als Beschwerung, die das Heidekraut niederhält. Der First kann mit Maschendraht oder Nylonnetzen zusätzlich gesichert werden.",
-    "bildDatei": "buch/lf13b/heide-haengehoelzer-first.webp",
+    "bildDatei": "/buch/lf13b/heide-haengehoelzer-first.webp",
     "bildunterschrift": "Heide-Hängehölzer-First (Buch S. 570)"
   },
   {
@@ -1195,7 +1195,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "2 · 80 cm = 1,60 m Streifenbreite; bei 12 m First sind das 19,2 m² Heidekraut. Zum Vergleich: Beim Heide-Hängehölzer-First mit 1,00 m je Seite wären es 2,00 m Breite und damit 24 m² — ein Viertel mehr Material. Die Fläche ist hier die abgewickelte Breite über den First hinweg, nicht die Grundfläche.",
-    "bildDatei": "buch/lf13b/heide-haengehoelzer-first.webp",
+    "bildDatei": "/buch/lf13b/heide-haengehoelzer-first.webp",
     "bildunterschrift": "Heide-Hängehölzer-First (Buch S. 570)"
   },
   {
@@ -1214,7 +1214,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Gesichert wird der Grassodenfirst nicht mit Draht, sondern mit Hartholzpflöcken von etwa 20 cm Länge — nach dem Verlegen werden die Enden mit einem Messer schräg angeschnitten. Achte auf die Maßzuordnung: 30 bis 40 cm ist die Breite, 1,50 m die Länge. Als untere Abdichtung wird auch hier eine Bitumendachbahn verlegt.",
-    "bildDatei": "buch/lf13b/ziegelfirst.webp",
+    "bildDatei": "/buch/lf13b/ziegelfirst.webp",
     "bildunterschrift": "Ziegelfirst (Buch S. 571)"
   },
   {
@@ -1235,7 +1235,7 @@
     ],
     "toleranzProzent": 1,
     "erklaerung": "Bei 12 m First und 7 Soden je Meter sind das 84 Soden, bei 10 je Meter schon 120. Rechne gegen: Eine Sode ist 30 bis 40 cm breit — rein rechnerisch passten also nur etwa 3 nebeneinander auf einen Meter. Dass es 7 bis 10 sind, liegt daran, dass sie schräg aneinander gestellt werden und sich dabei stark überlappen.",
-    "bildDatei": "buch/lf13b/ziegelfirst.webp",
+    "bildDatei": "/buch/lf13b/ziegelfirst.webp",
     "bildunterschrift": "Ziegelfirst (Buch S. 571)"
   },
   {
@@ -1254,7 +1254,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Der Grassodenfirst ist lebendes Material — trocknet er aus, stirbt die Grasnarbe ab, die Soden zerfallen und der First wird undicht. Deshalb der Perlschlauch mittig über dem First. Gegen Windsog und Abrutschen wirken dagegen andere Mittel: Hartholzpflöcke, Maschendraht oder Nylonnetze.",
-    "bildDatei": "buch/lf13b/ziegelfirst.webp",
+    "bildDatei": "/buch/lf13b/ziegelfirst.webp",
     "bildunterschrift": "Ziegelfirst (Buch S. 571)"
   },
   {
@@ -1273,7 +1273,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Kleinere Schäden entstehen häufig durch Marder oder Vögel. Der Reetpfropfen ist die passgenaue Lösung: gleiches Material, gleiche Faserrichtung, und nach dem Einklopfen unsichtbar. Der Reetschneider ist übrigens ein alter Strohschneider — ein Beispiel dafür, wie stark dieses Handwerk aus der Landwirtschaft stammt.",
-    "bildDatei": "buch/lf13b/reetdach-blitzschutz.webp",
+    "bildDatei": "/buch/lf13b/reetdach-blitzschutz.webp",
     "bildunterschrift": "Reetdach mit Blitzschutzleitungen (Buch S. 565)"
   },
   {
@@ -1292,7 +1292,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Kokosband ist ein Naturmaterial und wirkt wie ein Docht: Liegt es frei, transportiert es Wasser durch Kapillarwirkung in den Dachraum. Genau deshalb wird heute korrosionsgeschützter Draht verwendet, der kein Wasser saugt. Sichtbare Befestigungsmittel sind zugleich das Signal, dass die Deckung ihre Mindestdicke unterschritten hat.",
-    "bildDatei": "buch/lf13b/reetdach-blitzschutz.webp",
+    "bildDatei": "/buch/lf13b/reetdach-blitzschutz.webp",
     "bildunterschrift": "Reetdach mit Blitzschutzleitungen (Buch S. 565)"
   },
   {
@@ -1311,7 +1311,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Alle drei Faktoren laufen auf dasselbe hinaus: Wie schnell trocknet das Dach ab? Ein steiles Dach leitet Wasser rasch ab. Beschattung durch Bäume verhindert das Abtrocknen, und Nadel- sowie Laubabfall bildet eine Humusschicht, in der sich Feuchtigkeit hält und Bewuchs ansiedelt. Beides kann die Lebensdauer stark verkürzen.",
-    "bildDatei": "buch/lf13b/zusammenfassung.webp",
+    "bildDatei": "/buch/lf13b/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 13b (Buch S. 571)"
   },
   {
@@ -1334,7 +1334,7 @@
     ],
     "toleranzProzent": 2,
     "erklaerung": "Beispiel 10 m breit, 15 m lang, 45°: Sparrenlänge 5 ÷ cos 45° = 7,07 m, Dachfläche 2 · 7,07 · 15 = 212,1 m². Bei 60° wären es 5 ÷ 0,5 = 10,0 m Sparrenlänge und 300 m² — also gut 40 % mehr Fläche bei gleicher Grundfläche. Die für Reet geforderte steile Neigung verlängert zwar die Lebensdauer, kostet aber spürbar mehr Material und Lattung.",
-    "bildDatei": "buch/lf13b/zusammenfassung.webp",
+    "bildDatei": "/buch/lf13b/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 13b (Buch S. 571)"
   },
   {
@@ -1351,7 +1351,7 @@
       "45": ["45 Grad", "fuenfundvierzig"]
     },
     "erklaerung": "Der Draht muss korrosionsgeschützt sein, weil er dauerhaft in feuchtem Naturmaterial liegt. Ein rostender Draht würde nicht nur reißen, sondern auch das umgebende Reet verfärben und schädigen. Genau deshalb sind Niro, Kunststoffummantelung und Kupfer die einzigen zugelassenen Werkstoffe.",
-    "bildDatei": "buch/lf13b/zusammenfassung.webp",
+    "bildDatei": "/buch/lf13b/zusammenfassung.webp",
     "bildunterschrift": "Zusammenfassung Lernfeld 13b (Buch S. 571)"
   },
   {
@@ -1365,7 +1365,7 @@
     "definition": "Ein Stangendraht aus verzinktem Eisendraht mit einer Dicke von 4,5 bis 6 mm, der quer auf die Reetlage gelegt und an den Dachlatten festgebunden wird. Er klemmt die Reetbunde auf die Dachlatten. Die obere Reetlage muss die Bandstöcke der unteren Lage mit einer Dicke von mindestens 10 cm überdecken.",
     "bestandteile": ["Band", "stock"],
     "erklaerung": "Der Bandstock ist das Unterscheidungsmerkmal der drei Befestigungstechniken: Gebundene und geschraubte Reetdächer haben einen, genähte nicht. Historisch war er tatsächlich ein Stock — im Schnittbild des Buches erkennt man noch das Weidenband, die alte Form dieser Klemmleiste.",
-    "bildDatei": "buch/lf13b/aufgaben-buch.webp",
+    "bildDatei": "/buch/lf13b/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 13b (Buch S. 571)"
   },
   {
@@ -1384,7 +1384,7 @@
     ],
     "korrekt": [0, 1, 2],
     "erklaerung": "Klopfen, befestigen, nachputzen — der Klopfer kommt also zweimal zum Einsatz, vor und nach der Befestigung. Diese Reihenfolge zieht sich durch das ganze Lernfeld: Auch an der Traufe werden die Bunde zunächst nur halbfest aufgebracht, geklopft und erst dann endgültig befestigt.",
-    "bildDatei": "buch/lf13b/aufgaben-buch.webp",
+    "bildDatei": "/buch/lf13b/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 13b (Buch S. 571)"
   }
 ]
