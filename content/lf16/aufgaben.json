@@ -1379,5 +1379,25 @@
     "erklaerung": "Die 18 Aufgaben auf S. 557 decken das gesamte Lernfeld ab: 1. Wirkungsweise von Blitzschutzanlagen, 2. Bestandteile der äußeren Blitzschutzanlage, 3. Fangeinrichtungen auf Dächern, 4. Prüfungen, 5. Montagemaße für Fangleitungen, 6. weiche Bedachung, 7. Bedeutung der Sonnenenergie für die Umwelt, 8. Energiesammler, 9. Sonnenkollektoren, 10. Photovoltaik, 11. Solarmodule, 12. Watt-peak, 13. Montagearten, 14. Zusammenarbeit mit anderen Gewerken, 15. Mindestdachneigung Dachflächenfenster, 16. Einbau von Dachflächenfenstern und Gauben, 17. Sicherheitsdachhaken Typ A/B, 18. erhöhte Schneelast.",
     "bildDatei": "/buch/lf16/aufgaben-liste.webp",
     "bildunterschrift": "Aufgaben zum Lernfeld 16 (Buch S. 557)"
+  },
+  {
+    "id": "lf16-062",
+    "typ": "draw",
+    "lernfeld": "lf16",
+    "thema": "Zeichnerische Darstellung",
+    "quelle": "Grundstufe Bautechnik, Buch S. 548–550",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Dachgrundriss eines Satteldachhauses mit Schornstein und trage die äußere Blitzschutzanlage ein: Fangleitung auf dem First, Ableitungen und Ringerder. Verwende die genormten Linienarten.",
+    "vorgabeSvg": "<svg viewBox='0 0 300 200' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Dachgrundriss eines Satteldachs mit Schornstein, ohne Blitzschutz'><rect x='40' y='40' width='220' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><line x1='40' y1='100' x2='260' y2='100' stroke='currentColor' stroke-width='1' stroke-dasharray='6 4'/><rect x='190' y='72' width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='202' y='66' font-size='8' text-anchor='middle' fill='currentColor'>Schornstein</text><text x='150' y='114' font-size='9' text-anchor='middle' fill='currentColor'>First</text><text x='150' y='182' font-size='10' text-anchor='middle' fill='currentColor'>Blitzschutz eintragen</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 210' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Grundriss mit Fangleitung auf dem First als durchgezogene Linie, Ableitungen an den Ecken und Ringerder gestrichelt'><rect x='40' y='40' width='220' height='120' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='190' y='72' width='24' height='24' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='40' y1='100' x2='260' y2='100' stroke='currentColor' stroke-width='2.6'/><line x1='202' y1='96' x2='202' y2='100' stroke='currentColor' stroke-width='2.2'/><line x1='190' y1='72' x2='214' y2='72' stroke='currentColor' stroke-width='2.2'/><g fill='currentColor'><circle cx='40' cy='100' r='3.5'/><circle cx='260' cy='100' r='3.5'/><circle cx='40' cy='40' r='3'/><circle cx='260' cy='160' r='3'/></g><rect x='24' y='24' width='252' height='152' fill='none' stroke='currentColor' stroke-width='1.4' stroke-dasharray='7 4'/><text x='150' y='94' font-size='9' text-anchor='middle' fill='currentColor'>Fangleitung (Alu Ø ≥ 8 mm)</text><text x='150' y='18' font-size='9' text-anchor='middle' fill='currentColor'>Ringerder — gestrichelt: im Erdreich</text><text x='268' y='104' font-size='8' fill='currentColor'>Ableitung</text><text x='206' y='68' font-size='8' fill='currentColor'>Schornsteinfang</text><text x='24' y='196' font-size='9' fill='currentColor'>durchgezogen = sichtbar verlegt · gestrichelt = unter Dach oder im Erdreich</text></svg>",
+    "schritte": [
+      "Zeichne den Dachgrundriss mit Umriss, First und Schornstein.",
+      "Lege die Fangleitung auf den First — als durchgezogene Linie, weil sie sichtbar verlegt ist. Verwendet wird runder Aluminiumdraht mit mindestens 8 mm Durchmesser.",
+      "Binde den Schornstein an: Er ragt über das Dach hinaus und ist damit selbst ein Einschlagpunkt. Er bekommt eine eigene Fangeinrichtung, die mit der Fangleitung verbunden wird.",
+      "Setze die Ableitungen an den Gebäudeecken an — sie führen den Blitzstrom nach unten. Markiere ihre Anschlusspunkte auf der Fangleitung.",
+      "Zeichne den Ringerder rings um das Gebäude als gestrichelte Linie, denn er liegt im Erdreich. Er besteht aus Bandstahl 30 × 3,5 mm oder Runddraht Ø 10 mm.",
+      "Kontrolliere die Linienarten: durchgezogen für sichtbar verlegte Leitungen, gestrichelt für Leitungen unter Dach, unter Putz oder im Erdreich. Wer beides gleich zeichnet, macht den Plan unbrauchbar."
+    ],
+    "erklaerung": "Die äußere Blitzschutzanlage besteht aus drei Teilen, die in dieser Reihenfolge zusammenspielen: Die Fangeinrichtung fängt den Blitz auf dem höchsten Punkt ab, die Ableitungen führen den Strom am Gebäude vorbei nach unten, der Erder verteilt ihn im Boden. Dachaufbauten wie Schornsteine ragen heraus und müssen deshalb eigens angebunden werden. In der Zeichnung unterscheiden die Linienarten, was sichtbar verlegt ist und was verdeckt liegt — daraus liest der Monteur, wo er suchen muss."
   }
 ]

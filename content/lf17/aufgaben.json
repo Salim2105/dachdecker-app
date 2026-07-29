@@ -1381,5 +1381,25 @@
     "erklaerung": "Zwischen diesen beiden Polen liegt die Instandsetzung bei Erhalt des alten Dachaufbaus: Dort bleibt der Aufbau liegen, die Abdichtung wird aber vollständig erneuert und meist um neue Schichten ergänzt. Damit gibt es drei Stufen, nicht zwei — und die mittlere ist in der Praxis die häufigste.",
     "bildDatei": "/buch/lf17/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 17 (Buch S. 563)"
+  },
+  {
+    "id": "lf17-073",
+    "typ": "draw",
+    "lernfeld": "lf17",
+    "thema": "Vorhandener Flachdachaufbau",
+    "quelle": "Grundstufe Bautechnik, Buch S. 560–561",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Schichtaufbau des vorhandenen Flachdachs aus der Projektaufgabe im Schnitt und benenne alle Schichten von unten nach oben. Trage die Dicken ein.",
+    "vorgabeSvg": "<svg viewBox='0 0 300 180' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Leerer Schnitt für den Flachdachaufbau, nur die Stahlbetondecke ist vorgegeben'><rect x='40' y='120' width='220' height='30' fill='none' stroke='currentColor' stroke-width='1.8'/><g stroke='currentColor' stroke-width='0.6'><line x1='44' y1='146' x2='66' y2='124'/><line x1='70' y1='146' x2='92' y2='124'/><line x1='96' y1='146' x2='118' y2='124'/></g><text x='150' y='166' font-size='9' text-anchor='middle' fill='currentColor'>Stahlbetondecke 18 cm</text><text x='150' y='40' font-size='10' text-anchor='middle' fill='currentColor'>Welche Schichten kommen darüber?</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 190' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Flachdachaufbau von unten nach oben: Stahlbetondecke, Voranstrich, Dampfsperre, PUR-Dämmung, Dichtungsbahn und Kies'><rect x='30' y='120' width='180' height='30' fill='none' stroke='currentColor' stroke-width='1.8'/><g stroke='currentColor' stroke-width='0.6'><line x1='34' y1='146' x2='56' y2='124'/><line x1='60' y1='146' x2='82' y2='124'/></g><line x1='30' y1='116' x2='210' y2='116' stroke='currentColor' stroke-width='1' stroke-dasharray='2 2'/><line x1='30' y1='110' x2='210' y2='110' stroke='currentColor' stroke-width='2.2'/><rect x='30' y='84' width='180' height='26' fill='none' stroke='currentColor' stroke-width='1.5'/><line x1='30' y1='80' x2='210' y2='80' stroke='currentColor' stroke-width='2.4'/><g stroke='currentColor' stroke-width='1'><circle cx='45' cy='72' r='3.5' fill='none'/><circle cx='62' cy='69' r='3' fill='none'/><circle cx='80' cy='73' r='3.5' fill='none'/><circle cx='98' cy='68' r='3' fill='none'/><circle cx='116' cy='72' r='3.5' fill='none'/><circle cx='134' cy='69' r='3' fill='none'/><circle cx='152' cy='73' r='3.5' fill='none'/><circle cx='170' cy='68' r='3' fill='none'/><circle cx='188' cy='72' r='3.5' fill='none'/></g><text x='218' y='64' font-size='9' fill='currentColor'>Kies 16/32, 6 cm</text><text x='218' y='80' font-size='9' fill='currentColor'>Dichtungsbahn</text><text x='218' y='100' font-size='9' fill='currentColor'>PUR-Hartschaum 6 cm</text><text x='218' y='114' font-size='9' fill='currentColor'>Dampfsperre V13</text><text x='218' y='122' font-size='8' fill='currentColor'>+ Voranstrich</text><text x='218' y='140' font-size='9' fill='currentColor'>Stahlbeton 18 cm</text><text x='30' y='176' font-size='9' fill='currentColor'>Dampfsperre unter der Dämmung — auf der warmen Seite</text></svg>",
+    "schritte": [
+      "Beginne unten mit der Stahlbetondecke, 18 cm dick. Sie ist das tragende Bauteil.",
+      "Trage darauf den Voranstrich ab — eine dünne Grundierung, die den Beton für die Dampfsperre haftfähig macht.",
+      "Zeichne die Dampfsperre V13 darüber. Wichtig: Sie liegt UNTER der Dämmung, also auf der warmen Raumseite — sonst gelangt Raumluft in die Dämmung und fällt dort als Tauwasser aus.",
+      "Setze die PUR-Hartschaumplatten mit 6 cm darauf. Sie sind die Wärmedämmung.",
+      "Lege die Dichtungsbahnen darüber (V 60 S4 und PYE-PV 200 S5). Sie halten Regenwasser ab.",
+      "Schütte zuoberst 6 cm Kies der Körnung 16/32 mm auf. Er ist keine Dämmung, sondern schwerer Oberflächenschutz: Er hält die Bahn gegen Windsog nieder und schützt sie vor UV-Strahlung."
+    ],
+    "erklaerung": "Die Reihenfolge ist keine Konvention, sondern Bauphysik: Die Dampfsperre gehört auf die warme Seite, also unter die Dämmung. Läge sie oben, würde die im Raum entstehende Feuchtigkeit in die kalte Dämmung wandern, dort kondensieren und sie durchnässen. Der Kies oben ist bemerkenswert: Mit 6 cm ist er genauso dick wie die Dämmung, hat aber eine völlig andere Aufgabe — Beschwerung gegen Windsog und UV-Schutz für die Bahn."
   }
 ]

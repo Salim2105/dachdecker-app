@@ -2133,5 +2133,25 @@
     "erklaerung": "Mörtelgruppe IIa = M 5 (5,0 MPa). Sie umfasst Kalkzementmörtel. Um Verwechslungen auf Baustellen auszuschließen, dürfen Mörtel der Gruppe II und IIa nicht gleichzeitig verwendet werden.",
     "bildDatei": "/buch/lf03/moertelgruppen-mischung.webp",
     "bildunterschrift": "Mörtelgruppen: Mischungsverhältnisse (Buch S. 115)"
+  },
+  {
+    "id": "lf03-098",
+    "typ": "draw",
+    "lernfeld": "lf03",
+    "thema": "Mauerverbände",
+    "quelle": "Grundstufe Bautechnik, Buch S. 128–131",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne die Ansicht einer Wand im Läuferverband über vier Schichten. Die Steine sind 24 cm lang und 11,3 cm hoch. Trage das Überbindemaß ein und weise nach, dass es eingehalten ist.",
+    "vorgabeSvg": "<svg viewBox='0 0 300 150' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Leeres Raster für vier Mauerschichten'><g stroke='currentColor' stroke-width='0.8' stroke-dasharray='3 3'><line x1='20' y1='30' x2='280' y2='30'/><line x1='20' y1='58' x2='280' y2='58'/><line x1='20' y1='86' x2='280' y2='86'/><line x1='20' y1='114' x2='280' y2='114'/><line x1='20' y1='142' x2='280' y2='142'/></g><text x='150' y='20' font-size='10' text-anchor='middle' fill='currentColor'>vier Schichten, Stein 24 × 11,3 cm</text><text x='8' y='90' font-size='9' fill='currentColor' transform='rotate(-90 8 90)'>Schichten</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 300 160' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Läuferverband über vier Schichten, jede Schicht um einen halben Stein versetzt'><g fill='none' stroke='currentColor' stroke-width='1.4'><rect x='20' y='30' width='60' height='28'/><rect x='80' y='30' width='60' height='28'/><rect x='140' y='30' width='60' height='28'/><rect x='200' y='30' width='60' height='28'/><rect x='20' y='58' width='30' height='28'/><rect x='50' y='58' width='60' height='28'/><rect x='110' y='58' width='60' height='28'/><rect x='170' y='58' width='60' height='28'/><rect x='230' y='58' width='30' height='28'/><rect x='20' y='86' width='60' height='28'/><rect x='80' y='86' width='60' height='28'/><rect x='140' y='86' width='60' height='28'/><rect x='200' y='86' width='60' height='28'/><rect x='20' y='114' width='30' height='28'/><rect x='50' y='114' width='60' height='28'/><rect x='110' y='114' width='60' height='28'/><rect x='170' y='114' width='60' height='28'/><rect x='230' y='114' width='30' height='28'/></g><line x1='80' y1='24' x2='110' y2='24' stroke='currentColor' stroke-width='2'/><line x1='80' y1='20' x2='80' y2='28' stroke='currentColor' stroke-width='1'/><line x1='110' y1='20' x2='110' y2='28' stroke='currentColor' stroke-width='1'/><text x='95' y='16' font-size='9' text-anchor='middle' fill='currentColor'>ü = 12 cm</text><text x='20' y='156' font-size='9' fill='currentColor'>ü ≥ 0,4 · 11,3 = 4,5 cm — eingehalten</text></svg>",
+    "schritte": [
+      "Zeichne die Lagerfugen als waagerechte Linien im Abstand einer Schichthöhe. Die Schichthöhe ist Steinhöhe plus Lagerfuge, hier 11,3 cm + 1,2 cm.",
+      "Setze in der ersten Schicht die Steine der Länge nach nebeneinander — im Läuferverband zeigt jeder Stein seine lange Seite (24 cm) zur Ansicht.",
+      "Versetze die zweite Schicht um einen halben Stein, also 12 cm. An den Wandenden füllst du mit einem halben Stein auf, damit die Wand bündig abschließt.",
+      "Wiederhole den Wechsel: Schicht 3 liegt wie Schicht 1, Schicht 4 wie Schicht 2.",
+      "Trage das Überbindemaß ü ein — das ist der waagerechte Versatz zwischen den Stoßfugen zweier übereinanderliegender Schichten, hier 12 cm.",
+      "Weise nach: ü ≥ 0,4 · Steinhöhe = 0,4 · 11,3 cm = 4,5 cm. Mit 12 cm ist die Bedingung deutlich erfüllt. Kontrolle: Keine Stoßfuge darf senkrecht über einer anderen durchlaufen."
+    ],
+    "erklaerung": "Das Überbindemaß ist keine Schönheitsfrage, sondern der Grund, warum eine Wand überhaupt trägt: Der Versatz zwingt eine Last, sich über mehrere Steine zu verteilen, statt an einer durchgehenden Fuge nach unten zu laufen. Deshalb gilt ü ≥ 0,4 × Steinhöhe und nie weniger als 4,5 cm. Im Läuferverband zeigen alle Steine ihre Längsseite; der Binderverband zeigt dagegen die Köpfe, Block- und Kreuzverband wechseln beide Schichtarten ab."
   }
 ]

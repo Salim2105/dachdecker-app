@@ -1386,5 +1386,25 @@
     "erklaerung": "Klopfen, befestigen, nachputzen — der Klopfer kommt also zweimal zum Einsatz, vor und nach der Befestigung. Diese Reihenfolge zieht sich durch das ganze Lernfeld: Auch an der Traufe werden die Bunde zunächst nur halbfest aufgebracht, geklopft und erst dann endgültig befestigt.",
     "bildDatei": "/buch/lf13b/aufgaben-buch.webp",
     "bildunterschrift": "Aufgaben zu Lernfeld 13b (Buch S. 571)"
+  },
+  {
+    "id": "lf13b-074",
+    "typ": "draw",
+    "lernfeld": "lf13b",
+    "thema": "Traufe",
+    "quelle": "Grundstufe Bautechnik, Buch S. 567–569",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Schnitt durch die Traufe eines Reetdaches mit 55° Dachneigung. Stelle Sparren, Lattung und Kneep dar, trage den Lattenabstand und die Dachstärke ein.",
+    "vorgabeSvg": "<svg viewBox='0 0 320 190' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sparren eines Reetdaches im Schnitt, ohne Lattung und Deckung'><line x1='40' y1='165' x2='280' y2='45' stroke='currentColor' stroke-width='2.4'/><text x='150' y='125' font-size='10' fill='currentColor'>Sparren</text><text x='36' y='182' font-size='9' fill='currentColor'>Traufe</text><text x='250' y='36' font-size='9' fill='currentColor'>zum First</text><text x='150' y='24' font-size='10' text-anchor='middle' fill='currentColor'>Dachneigung 55°</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 200' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Reetdach-Traufe: Sparren, Lattung im Abstand 30 cm, Kneep als angehobene Auflagekante und die Reetdeckung mit 35 bis 40 cm Stärke'><line x1='40' y1='165' x2='280' y2='45' stroke='currentColor' stroke-width='2.4'/><g stroke='currentColor' stroke-width='1.4' fill='none'><rect x='58' y='149' width='11' height='8' transform='rotate(-26.6 63 153)'/><rect x='106' y='125' width='11' height='8' transform='rotate(-26.6 111 129)'/><rect x='154' y='101' width='11' height='8' transform='rotate(-26.6 159 105)'/><rect x='202' y='77' width='11' height='8' transform='rotate(-26.6 207 81)'/></g><path d='M52 140 L120 106 L200 66 L272 30' fill='none' stroke='currentColor' stroke-width='2.2'/><line x1='52' y1='140' x2='52' y2='166' stroke='currentColor' stroke-width='2.2'/><g stroke='currentColor' stroke-width='0.7'><line x1='52' y1='166' x2='38' y2='176'/><line x1='58' y1='161' x2='44' y2='171'/><line x1='64' y1='157' x2='50' y2='167'/></g><line x1='63' y1='153' x2='111' y2='129' stroke='currentColor' stroke-width='0.9' stroke-dasharray='3 2'/><text x='68' y='118' font-size='9' fill='currentColor'>Lattenabstand ≤ 30 cm</text><text x='150' y='72' font-size='9' fill='currentColor'>Reetdeckung 35–40 cm</text><text x='16' y='150' font-size='9' fill='currentColor'>Kneep</text><text x='20' y='192' font-size='9' fill='currentColor'>Auflagekante 5–15 cm über der Lattenebene</text></svg>",
+    "schritte": [
+      "Zeichne den Sparren im Schnitt unter 55° Dachneigung — er ist die Bezugslinie für alles Weitere.",
+      "Setze die Dachlatten quer darauf. Für Reet nimmt man kräftigere Latten als bei Ziegeln: 4 × 6 cm bis etwa 1 m Sparrenabstand, darüber 5 × 8 cm.",
+      "Trage den Lattenabstand ein. Er richtet sich nach der Dachneigung: bis 60° höchstens 40 cm, über 60° bis 75° höchstens 30 cm, über 75° höchstens 25 cm. Bei 55° sind also 40 cm die Obergrenze — hier gezeichnet mit 30 cm.",
+      "Zeichne die unterste Auflagekante 5 bis 15 cm über der Lattenebene angehoben — das ist der Kneep.",
+      "Lege die Reetdeckung darüber. An der Traufe ist sie 35 bis 40 cm dick, gemessen an der ersten Dachlatte, und nimmt zum First hin auf 30 bis 35 cm ab.",
+      "Zeichne die Stoppelenden an der Traufe schräg nach unten auslaufend — die Halme werden am Befestigungspunkt gebeugt, dadurch steht die Deckung unter Spannung."
+    ],
+    "erklaerung": "Der Kneep ist das Herzstück der Reet-Traufe: Weil die unterste Auflagekante höher liegt als die Lattenebene, steht die gesamte Deckung unter Spannung und liegt satt auf. Ohne ihn würde das Reet an der Traufe auffedern und Wind darunter greifen. Der Lattenabstand wird mit steigender Dachneigung kleiner, obwohl das Wasser dann schneller abläuft — der Grund ist die wachsende Windsogbelastung, die mehr Befestigungspunkte verlangt."
   }
 ]

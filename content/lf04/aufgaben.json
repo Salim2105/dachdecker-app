@@ -2088,5 +2088,25 @@
     "erklaerung": "Standardbeton darf nur bis zur Klasse C12/15 und maximal Expositionsklasse X0 verwendet werden. Für höhere Anforderungen muss Beton nach Eigenschaften oder Zusammensetzung festgelegt werden.",
     "bildDatei": "/buch/lf04/standardbeton-tabelle.webp",
     "bildunterschrift": "Anhaltswerte für Standardbeton (Buch S. 160)"
+  },
+  {
+    "id": "lf04-098",
+    "typ": "draw",
+    "lernfeld": "lf04",
+    "thema": "Bewehrungsarbeiten",
+    "quelle": "Grundstufe Bautechnik, Buch S. 176–180",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Querschnitt einer Stahlbetonplatte, die auf zwei Wänden aufliegt. Trage die Bewehrung an der richtigen Stelle ein und kennzeichne Zug- und Druckzone sowie die Betondeckung.",
+    "vorgabeSvg": "<svg viewBox='0 0 300 170' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Stahlbetonplatte auf zwei Auflagern, ohne Bewehrung'><rect x='40' y='60' width='220' height='30' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='20' y='90' width='40' height='60' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='240' y='90' width='40' height='60' fill='none' stroke='currentColor' stroke-width='1.4'/><g stroke='currentColor' stroke-width='0.6'><line x1='24' y1='104' x2='38' y2='94'/><line x1='24' y1='120' x2='56' y2='96'/><line x1='244' y1='104' x2='258' y2='94'/><line x1='244' y1='120' x2='276' y2='96'/></g><text x='150' y='50' font-size='10' text-anchor='middle' fill='currentColor'>Stahlbetonplatte</text><text x='150' y='164' font-size='9' text-anchor='middle' fill='currentColor'>Wo gehört die Bewehrung hin?</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 300 180' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Bewehrung liegt unten in der Zugzone, oben ist die Druckzone, unten die Betondeckung'><rect x='40' y='60' width='220' height='30' fill='none' stroke='currentColor' stroke-width='1.8'/><rect x='20' y='90' width='40' height='60' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='240' y='90' width='40' height='60' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='50' y1='83' x2='250' y2='83' stroke='currentColor' stroke-width='2.6'/><g fill='currentColor'><circle cx='70' cy='83' r='2.5'/><circle cx='110' cy='83' r='2.5'/><circle cx='150' cy='83' r='2.5'/><circle cx='190' cy='83' r='2.5'/><circle cx='230' cy='83' r='2.5'/></g><path d='M40 96 Q150 112 260 96' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='150' y='72' font-size='9' text-anchor='middle' fill='currentColor'>DRUCKZONE (oben)</text><text x='150' y='106' font-size='9' text-anchor='middle' fill='currentColor'>Durchbiegung</text><text x='150' y='54' font-size='9' text-anchor='middle' fill='currentColor'>ZUGZONE unten — Bewehrung hierhin</text><line x1='268' y1='83' x2='268' y2='90' stroke='currentColor' stroke-width='1'/><text x='274' y='88' font-size='8' fill='currentColor'>c</text><text x='40' y='172' font-size='9' fill='currentColor'>c = Betondeckung: schützt den Stahl vor Rost und Feuer</text></svg>",
+    "schritte": [
+      "Zeichne die Platte im Querschnitt als Rechteck und setze sie beidseitig auf die Auflager (Wände).",
+      "Überlege, wie sich die Platte unter Last verformt: Sie biegt sich in der Mitte nach unten durch. Zeichne diese Durchbiegung als dünne Hilfslinie ein.",
+      "Markiere daraus die Zonen: Wo sich das Bauteil streckt, entsteht Zug — das ist unten. Wo es gestaucht wird, entsteht Druck — das ist oben.",
+      "Lege die Bewehrung in die ZUGZONE, also nach unten. Beton nimmt Druck gut auf, aber kaum Zug — genau dafür ist der Stahl da.",
+      "Halte die Bewehrung nicht direkt an die Unterkante, sondern lasse die Betondeckung c frei. Zeichne diesen Abstand ein.",
+      "Kontrolle: Wäre die Platte eingespannt oder ein Kragarm, läge die Zugzone oben — dann gehörte die Bewehrung ebenfalls nach oben. Die Frage lautet immer: Wo dehnt sich das Bauteil?"
+    ],
+    "erklaerung": "Beton hält Druck gut aus, Zug fast gar nicht — deshalb legt man Stahl genau dorthin, wo gezogen wird. Bei einer Platte auf zwei Auflagern biegt sich die Mitte nach unten durch: oben Druck, unten Zug, also Bewehrung unten. Die Betondeckung darf dabei nicht fehlen: Sie schützt den Stahl vor Rost und im Brandfall vor Hitze. Liegt der Stahl zu dicht an der Oberfläche, rostet er, dehnt sich und sprengt den Beton ab."
   }
 ]

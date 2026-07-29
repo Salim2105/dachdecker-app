@@ -2122,5 +2122,25 @@
     "erklaerung": "Platten für Wand- und Bodenbeläge werden in Natursteinplatten und künstliche Platten eingeteilt. Künstliche Platten sind keramisch (gebrannt: Feinkeramik/Grobkeramik) oder nichtkeramisch (ungebrannt: zement-, beton-, bitumen- oder magnesiumgebunden).",
     "bildDatei": "/buch/lf06/platten-uebersicht.webp",
     "bildunterschrift": "Übersicht über Platten (Buch S. 262)"
+  },
+  {
+    "id": "lf06-099",
+    "typ": "draw",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "quelle": "Grundstufe Bautechnik, Buch S. 248–255",
+    "konfidenz": "hoch",
+    "aufgabentext": "Zeichne den Querschnitt eines zweilagigen Außenputzes auf Mauerwerk. Benenne die Lagen und stelle dar, wie sich die Festigkeit von innen nach außen verhält.",
+    "vorgabeSvg": "<svg viewBox='0 0 300 160' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Mauerwerk im Querschnitt ohne Putzlagen'><rect x='30' y='30' width='90' height='100' fill='none' stroke='currentColor' stroke-width='1.8'/><g stroke='currentColor' stroke-width='0.6'><line x1='34' y1='50' x2='54' y2='30'/><line x1='34' y1='75' x2='79' y2='30'/><line x1='34' y1='100' x2='104' y2='30'/><line x1='34' y1='125' x2='119' y2='40'/></g><text x='75' y='146' font-size='10' text-anchor='middle' fill='currentColor'>Mauerwerk</text><text x='200' y='84' font-size='10' text-anchor='middle' fill='currentColor'>außen</text></svg>",
+    "loesungSvg": "<svg viewBox='0 0 320 170' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Zweilagiger Putz: Unterputz dick und fest auf dem Mauerwerk, darauf der dünnere und weichere Oberputz'><rect x='30' y='30' width='90' height='100' fill='none' stroke='currentColor' stroke-width='1.8'/><g stroke='currentColor' stroke-width='0.6'><line x1='34' y1='50' x2='54' y2='30'/><line x1='34' y1='75' x2='79' y2='30'/><line x1='34' y1='100' x2='104' y2='30'/></g><rect x='120' y='30' width='22' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='142' y='30' width='10' height='100' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='162' y='58' font-size='9' fill='currentColor'>Oberputz (dünn, weicher)</text><text x='162' y='84' font-size='9' fill='currentColor'>Unterputz (dick, fester)</text><text x='162' y='110' font-size='9' fill='currentColor'>Putzgrund: Mauerwerk</text><path d='M300 40 L300 120' stroke='currentColor' stroke-width='1.4'/><path d='M296 116 L300 120 L304 116' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='288' y='36' font-size='8' text-anchor='middle' fill='currentColor'>fest</text><text x='288' y='132' font-size='8' text-anchor='middle' fill='currentColor'>weich</text><text x='30' y='160' font-size='9' fill='currentColor'>Die Festigkeit muss von innen nach außen abnehmen.</text></svg>",
+    "schritte": [
+      "Zeichne links das Mauerwerk im Querschnitt — es ist der Putzgrund und muss tragfähig, sauber und ausreichend rau sein.",
+      "Trage darauf den Unterputz als dickere Lage auf. Er gleicht Unebenheiten aus und stellt die Verbindung zum Untergrund her.",
+      "Setze darauf den Oberputz als dünnere Lage — er bildet die sichtbare Oberfläche und bestimmt die Struktur.",
+      "Beschrifte beide Lagen und den Putzgrund.",
+      "Zeichne einen Pfeil von innen nach außen und trage ein: Die Festigkeit muss in dieser Richtung abnehmen — der Oberputz ist weicher als der Unterputz.",
+      "Begründe das in der Zeichnung: Ein harter Oberputz auf weichem Unterputz reißt, weil die steife äußere Schicht den Bewegungen der weicheren darunter nicht folgen kann."
+    ],
+    "erklaerung": "Putz ist ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen und wird ein- oder mehrlagig aufgebaut. Die unteren Lagen heißen Unterputz, die oberste Oberputz. Die entscheidende Regel: Die Festigkeit muss von innen nach außen abnehmen. Ein fester Oberputz auf weicherem Unterputz reißt und schalt ab, weil er den Verformungen des Untergrunds nicht folgen kann — deshalb wird nie hart auf weich geputzt."
   }
 ]
