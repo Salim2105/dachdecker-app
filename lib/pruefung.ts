@@ -40,7 +40,7 @@ export function getPruefungsteile(): Pruefungsteil[] {
     {
       id: "teil2",
       titel: "Teil 2 — alle Lernfelder",
-      beschreibung: "Der gesamte fachliche Stoff von Lernfeld 1 bis 17, gemischt.",
+      beschreibung: "Der gesamte fachliche Stoff: Lernfeld 1 bis 17 und die Anhänge, gemischt.",
       lernfelder: alle,
       anzahl: 40,
       minuten: 60,

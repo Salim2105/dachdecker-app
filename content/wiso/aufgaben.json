@@ -607,5 +607,1108 @@
       ]
     },
     "erklaerung": "Weil am Bau die Betriebe oft wechseln, sammelt die Sozialkasse (SOKA-DACH) die Urlaubsansprüche zentral. So geht Urlaub bei einem Betriebswechsel nicht verloren."
+  },
+  {
+    "id": "wiso-029",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 11 (Vertragsniederschrift)",
+    "konfidenz": "hoch",
+    "frage": "Wann muss der Inhalt des Ausbildungsvertrags schriftlich niedergelegt werden?",
+    "optionen": [
+      "Spätestens am Ende der Probezeit",
+      "Unverzüglich nach Vertragsabschluss, spätestens vor Beginn der Ausbildung",
+      "Erst wenn die Handwerkskammer es anfordert",
+      "Innerhalb des ersten Ausbildungsjahres"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Der Vertrag selbst kann mündlich zustande kommen, die Niederschrift muss aber unverzüglich danach und in jedem Fall vor Ausbildungsbeginn vorliegen. Sie wird von der Handwerkskammer in das Verzeichnis der Berufsausbildungsverhältnisse eingetragen."
+  },
+  {
+    "id": "wiso-030",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 14 (Pflichten der Ausbildenden)",
+    "konfidenz": "hoch",
+    "frage": "Welche Pflichten treffen den Ausbildungsbetrieb? (Mehrfachauswahl)",
+    "optionen": [
+      "Ausbildungsmittel wie Werkzeug und Material kostenlos zur Verfügung stellen",
+      "Für den Berufsschulunterricht freistellen",
+      "Das Berichtsheft regelmäßig durchsehen",
+      "Die Fahrtkosten zur Berufsschule in voller Höhe erstatten"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Werkzeug, Material und Fachliteratur, die zur Ausbildung und zum Ablegen der Prüfung nötig sind, gehen zulasten des Betriebs. Eine gesetzliche Pflicht zur vollen Fahrtkostenerstattung besteht dagegen nicht — hier entscheidet der Tarif- oder Einzelvertrag."
+  },
+  {
+    "id": "wiso-031",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 17 (Vergütung)",
+    "konfidenz": "hoch",
+    "frage": "Was gilt für die Ausbildungsvergütung?",
+    "optionen": [
+      "Sie ist über die gesamte Ausbildung hinweg gleich hoch",
+      "Sie muss angemessen sein und mit fortschreitender Ausbildung jährlich ansteigen",
+      "Sie wird erst ab dem zweiten Ausbildungsjahr gezahlt",
+      "Sie ist frei vereinbar und kann auch entfallen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Das BBiG verlangt eine angemessene Vergütung, die mindestens jährlich steigt. Im Dachdeckerhandwerk legt der Tarifvertrag die konkreten Beträge je Ausbildungsjahr fest."
+  },
+  {
+    "id": "wiso-032",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 21 (Beendigung)",
+    "konfidenz": "hoch",
+    "frage": "Du bestehst die Gesellenprüfung vor dem im Vertrag genannten Enddatum. Wann endet das Ausbildungsverhältnis?",
+    "optionen": [
+      "Erst zum vereinbarten Enddatum",
+      "Mit Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss",
+      "Am Ende des laufenden Kalendermonats",
+      "Nach einer zusätzlichen Kündigungsfrist von vier Wochen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bestehst du vorzeitig, endet die Ausbildung genau mit der Bekanntgabe des Ergebnisses — nicht erst zum Vertragsende. Fällst du durch, verlängert sich das Verhältnis auf deinen Wunsch bis zur nächsten Wiederholungsprüfung, höchstens um ein Jahr."
+  },
+  {
+    "id": "wiso-033",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 22 (Kündigung)",
+    "konfidenz": "hoch",
+    "frage": "Welche Form muss die Kündigung eines Ausbildungsverhältnisses nach der Probezeit haben?",
+    "optionen": [
+      "Mündlich genügt, wenn ein Zeuge dabei ist",
+      "Schriftlich, bei Kündigung durch den Betrieb zusätzlich mit Angabe der Kündigungsgründe",
+      "Nur per Einschreiben mit Rückschein",
+      "Formfrei, solange die Kammer informiert wird"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Nach der Probezeit gilt Schriftform. Kündigt der Betrieb, müssen die Gründe im Kündigungsschreiben stehen — fehlen sie, ist die Kündigung unwirksam."
+  },
+  {
+    "id": "wiso-034",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 13 (Pflichten der Auszubildenden)",
+    "konfidenz": "hoch",
+    "text": "Der Auszubildende muss den schriftlichen Ausbildungsnachweis, das sogenannte {{Berichtsheft}}, führen. Über betriebliche Vorgänge, die ihm anvertraut wurden, hat er {{Stillschweigen}} zu bewahren.",
+    "akzeptiert": {
+      "Berichtsheft": [
+        "berichtsheft",
+        "Ausbildungsnachweis"
+      ],
+      "Stillschweigen": [
+        "stillschweigen",
+        "Schweigepflicht",
+        "Verschwiegenheit"
+      ]
+    },
+    "erklaerung": "Das Berichtsheft ist Zulassungsvoraussetzung zur Gesellenprüfung — ohne geführten Nachweis wirst du nicht zugelassen. Es wird während der Ausbildungszeit geführt, nicht in der Freizeit."
+  },
+  {
+    "id": "wiso-035",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "BGB §§ 106–113 (Geschäftsfähigkeit); Berufsbildungsgesetz",
+    "konfidenz": "hoch",
+    "frage": "Ein 16-Jähriger will einen Ausbildungsvertrag unterschreiben. Was ist nötig?",
+    "optionen": [
+      "Nichts, ab 16 ist man voll geschäftsfähig",
+      "Die Zustimmung der gesetzlichen Vertreter, also in der Regel der Eltern",
+      "Eine Genehmigung des Familiengerichts",
+      "Er darf erst mit 18 einen Vertrag schließen"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Zwischen 7 und 17 Jahren ist man beschränkt geschäftsfähig. Der Ausbildungsvertrag ist für den Minderjährigen nicht lediglich rechtlich vorteilhaft, deshalb müssen die gesetzlichen Vertreter zustimmen und mit unterschreiben."
+  },
+  {
+    "id": "wiso-036",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) § 8 (Arbeitszeit)",
+    "konfidenz": "hoch",
+    "frage": "Wie lang darf ein Jugendlicher unter 18 Jahren regulär arbeiten?",
+    "optionen": [
+      "Höchstens 8 Stunden täglich und 40 Stunden wöchentlich",
+      "Höchstens 10 Stunden täglich und 50 Stunden wöchentlich",
+      "So lange wie die erwachsenen Kollegen",
+      "Höchstens 6 Stunden täglich und 30 Stunden wöchentlich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Acht Stunden am Tag, vierzig in der Woche. Wird an einzelnen Tagen kürzer gearbeitet, darf an anderen Werktagen derselben Woche auf bis zu achteinhalb Stunden verlängert werden."
+  },
+  {
+    "id": "wiso-037",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) § 11 (Ruhepausen)",
+    "konfidenz": "hoch",
+    "frage": "Ein Jugendlicher arbeitet an einem Tag siebeneinhalb Stunden. Wie viel Ruhepause steht ihm mindestens zu?",
+    "optionen": [
+      "30 Minuten",
+      "45 Minuten",
+      "60 Minuten",
+      "Keine, wenn er einverstanden ist"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Bei mehr als sechs Stunden Arbeitszeit sind 60 Minuten Pause vorgeschrieben, bei mehr als viereinhalb bis sechs Stunden 30 Minuten. Als Pause zählt nur eine Unterbrechung von mindestens 15 Minuten am Stück."
+  },
+  {
+    "id": "wiso-038",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) § 13 (Freizeit) und § 14 (Nachtruhe)",
+    "konfidenz": "hoch",
+    "frage": "Welche Aussagen zum Jugendarbeitsschutz sind richtig? (Mehrfachauswahl)",
+    "optionen": [
+      "Nach Arbeitsende müssen mindestens 12 Stunden ununterbrochene Freizeit folgen",
+      "Jugendliche dürfen grundsätzlich nur zwischen 6 und 20 Uhr beschäftigt werden",
+      "Jugendliche dürfen in Akkordarbeit eingesetzt werden, wenn sie zustimmen",
+      "Es gilt grundsätzlich die Fünf-Tage-Woche"
+    ],
+    "korrekt": [
+      0,
+      1,
+      3
+    ],
+    "erklaerung": "Akkordarbeit ist für Jugendliche verboten — auch mit Zustimmung. Das Tempo einer Akkordvorgabe verleitet dazu, Sicherheit und Sorgfalt zu opfern, und genau davor soll das Gesetz schützen."
+  },
+  {
+    "id": "wiso-039",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) § 19 (Urlaub)",
+    "konfidenz": "hoch",
+    "text": "Der gesetzliche Mindesturlaub für Jugendliche ist nach Alter gestaffelt: Wer zu Beginn des Kalenderjahres noch nicht 16 Jahre alt ist, erhält mindestens {{30}} Werktage, wer noch nicht 18 ist, mindestens {{25}} Werktage.",
+    "akzeptiert": {
+      "30": [
+        "dreissig",
+        "dreißig"
+      ],
+      "25": [
+        "fuenfundzwanzig",
+        "fünfundzwanzig"
+      ]
+    },
+    "erklaerung": "Dazwischen liegen 27 Werktage für alle, die noch nicht 17 sind. Je jünger, desto mehr Erholung — das ist die Logik der Staffel. Tarifverträge können mehr vorsehen, aber nie weniger."
+  },
+  {
+    "id": "wiso-040",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) §§ 32–33 (Ärztliche Untersuchungen)",
+    "konfidenz": "hoch",
+    "frage": "Was gilt für die ärztliche Untersuchung Jugendlicher vor Ausbildungsbeginn?",
+    "optionen": [
+      "Sie ist freiwillig",
+      "Eine Erstuntersuchung ist Voraussetzung für die Beschäftigung, eine Nachuntersuchung folgt nach einem Jahr",
+      "Sie wird erst nach der Probezeit fällig",
+      "Sie ist nur bei Arbeiten in großer Höhe nötig"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Ohne Bescheinigung der Erstuntersuchung darf ein Jugendlicher nicht beschäftigt werden. Die erste Nachuntersuchung steht nach einem Jahr an — sie zeigt, ob die Arbeit der Entwicklung geschadet hat."
+  },
+  {
+    "id": "wiso-041",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Jugendarbeitsschutz",
+    "quelle": "Jugendarbeitsschutzgesetz (JArbSchG) § 9 (Berufsschule)",
+    "konfidenz": "hoch",
+    "frage": "Ein Jugendlicher hat einen Berufsschultag mit mehr als fünf Unterrichtsstunden. Was folgt daraus?",
+    "optionen": [
+      "Er arbeitet danach im Betrieb weiter, bis die Tagesarbeitszeit voll ist",
+      "Er darf an diesem Tag einmal in der Woche nicht im Betrieb beschäftigt werden",
+      "Der Schultag wird nicht auf die Arbeitszeit angerechnet",
+      "Er muss die Fehlstunden am Samstag nacharbeiten"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Ein solcher Berufsschultag zählt als voller Arbeitstag und wird mit acht Stunden auf die Wochenarbeitszeit angerechnet. Ein Einsatz im Betrieb davor oder danach ist an diesem Tag nicht zulässig."
+  },
+  {
+    "id": "wiso-042",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB) — Träger der Sozialversicherung",
+    "konfidenz": "hoch",
+    "frage": "Welcher Zweig der Sozialversicherung wird allein vom Arbeitgeber bezahlt?",
+    "optionen": [
+      "Die Krankenversicherung",
+      "Die Rentenversicherung",
+      "Die gesetzliche Unfallversicherung",
+      "Die Arbeitslosenversicherung"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Die Unfallversicherung trägt der Arbeitgeber allein — im Bau über die BG BAU. Die anderen vier Zweige teilen sich Arbeitgeber und Arbeitnehmer grundsätzlich je zur Hälfte."
+  },
+  {
+    "id": "wiso-043",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB VII) — Unfallversicherung",
+    "konfidenz": "hoch",
+    "frage": "Welche Ereignisse sind über die gesetzliche Unfallversicherung abgedeckt? (Mehrfachauswahl)",
+    "optionen": [
+      "Ein Sturz vom Gerüst während der Arbeit",
+      "Ein Verkehrsunfall auf dem direkten Weg zur Baustelle",
+      "Eine anerkannte Berufskrankheit",
+      "Ein Skiunfall im Jahresurlaub"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Arbeitsunfall, Wegeunfall und Berufskrankheit sind die drei Versicherungsfälle. Der Urlaubsunfall gehört in die Krankenversicherung — er hat nichts mit der beruflichen Tätigkeit zu tun."
+  },
+  {
+    "id": "wiso-044",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB VII); BG BAU",
+    "konfidenz": "hoch",
+    "text": "Träger der gesetzlichen Unfallversicherung im Bauhauptgewerbe ist die {{Berufsgenossenschaft}}. Sie zahlt nicht nur nach einem Unfall, sondern hat vor allem den Auftrag der {{Prävention}}.",
+    "akzeptiert": {
+      "Berufsgenossenschaft": [
+        "berufsgenossenschaft",
+        "BG BAU",
+        "BG"
+      ],
+      "Prävention": [
+        "praevention",
+        "prävention",
+        "Unfallverhütung",
+        "Vorbeugung"
+      ]
+    },
+    "erklaerung": "Deshalb erlässt die BG BAU Unfallverhütungsvorschriften, berät Betriebe und kontrolliert Baustellen. Verhinderte Unfälle sind billiger als behandelte — das ist die Rechnung hinter dem Präventionsauftrag."
+  },
+  {
+    "id": "wiso-045",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Entgeltfortzahlungsgesetz (EFZG) § 3",
+    "konfidenz": "hoch",
+    "frage": "Wie lange zahlt der Arbeitgeber bei unverschuldeter Arbeitsunfähigkeit das Entgelt weiter?",
+    "optionen": [
+      "Zwei Wochen",
+      "Sechs Wochen",
+      "Drei Monate",
+      "Bis zur Genesung, ohne zeitliche Grenze"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Sechs Wochen Entgeltfortzahlung durch den Betrieb, danach übernimmt die Krankenkasse mit dem Krankengeld. Voraussetzung ist ein Arbeitsverhältnis, das seit mindestens vier Wochen besteht."
+  },
+  {
+    "id": "wiso-046",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB VI) — Rentenversicherung",
+    "konfidenz": "hoch",
+    "frage": "Welche Leistungen erbringt die gesetzliche Rentenversicherung? (Mehrfachauswahl)",
+    "optionen": [
+      "Altersrente",
+      "Erwerbsminderungsrente",
+      "Leistungen zur medizinischen und beruflichen Rehabilitation",
+      "Arbeitslosengeld"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Arbeitslosengeld kommt aus der Arbeitslosenversicherung über die Bundesagentur für Arbeit. Bemerkenswert an der Rentenversicherung ist die Reha: Rehabilitation vor Rente — wer wieder arbeiten kann, braucht keine Erwerbsminderungsrente."
+  },
+  {
+    "id": "wiso-047",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB III) — Arbeitslosenversicherung",
+    "konfidenz": "hoch",
+    "frage": "Der Betrieb hat wetterbedingt keine Aufträge und meldet Kurzarbeit an. Aus welchem Zweig kommt das Kurzarbeitergeld?",
+    "optionen": [
+      "Aus der Krankenversicherung",
+      "Aus der Arbeitslosenversicherung",
+      "Aus der Unfallversicherung",
+      "Aus der Rentenversicherung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Kurzarbeitergeld zahlt die Bundesagentur für Arbeit aus der Arbeitslosenversicherung. Im Dachdeckerhandwerk kommt in der Winterperiode zusätzlich das Saison-Kurzarbeitergeld in Betracht — es hält eingearbeitete Leute im Betrieb, statt sie zu entlassen."
+  },
+  {
+    "id": "wiso-048",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB) — Zweige der Sozialversicherung",
+    "konfidenz": "hoch",
+    "text": "Die Beiträge zur Kranken-, Renten-, Arbeitslosen- und Pflegeversicherung tragen Arbeitgeber und Arbeitnehmer grundsätzlich {{paritätisch}}. Der Arbeitgeber behält den Arbeitnehmeranteil vom Bruttolohn ein und führt den Gesamtbeitrag an die {{Krankenkasse}} ab.",
+    "akzeptiert": {
+      "paritätisch": [
+        "paritaetisch",
+        "paritätisch",
+        "je zur Hälfte",
+        "hälftig"
+      ],
+      "Krankenkasse": [
+        "krankenkasse",
+        "Einzugsstelle"
+      ]
+    },
+    "erklaerung": "Die Krankenkasse ist Einzugsstelle für alle Zweige und verteilt die Beiträge weiter. Für dich sichtbar wird das auf der Lohnabrechnung als Differenz zwischen Brutto und Netto."
+  },
+  {
+    "id": "wiso-049",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Sozialgesetzbuch (SGB VII) — Meldepflicht bei Arbeitsunfällen",
+    "konfidenz": "hoch",
+    "frage": "Ab wann muss der Betrieb einen Arbeitsunfall der Berufsgenossenschaft melden?",
+    "optionen": [
+      "Bei jedem Unfall, auch ohne Ausfallzeit",
+      "Wenn der Verletzte mehr als drei Tage arbeitsunfähig ist",
+      "Erst nach zwei Wochen Arbeitsunfähigkeit",
+      "Nur wenn ein Krankenhausaufenthalt nötig war"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei mehr als drei Tagen Arbeitsunfähigkeit ist die Unfallanzeige fällig. Unabhängig davon gehört jeder Unfall ins Verbandbuch — auch der kleine, denn erst die Dokumentation sichert später den Versicherungsschutz."
+  },
+  {
+    "id": "wiso-050",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Sozialversicherung",
+    "quelle": "Fachrechnen Wirtschaft (Lohnabrechnung)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Geselle hat {brutto} € Bruttolohn im Monat. Vom Bruttolohn gehen {sv} % Sozialversicherungsbeiträge als Arbeitnehmeranteil und {steuer} % Lohnsteuer ab. Wie hoch ist der Nettolohn?",
+    "parameter": [
+      {
+        "name": "brutto",
+        "label": "Bruttolohn",
+        "einheit": "€",
+        "min": 2200,
+        "max": 4200,
+        "schritt": 50
+      },
+      {
+        "name": "sv",
+        "label": "Sozialversicherung Arbeitnehmeranteil",
+        "einheit": "%",
+        "min": 19,
+        "max": 22,
+        "schritt": 0.5
+      },
+      {
+        "name": "steuer",
+        "label": "Lohnsteuer",
+        "einheit": "%",
+        "min": 8,
+        "max": 18,
+        "schritt": 1
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Sozialversicherungsanteil = {brutto} € · {sv} / 100",
+        "formel": "brutto * sv / 100",
+        "ergebnisName": "svAnteil",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Lohnsteuer = {brutto} € · {steuer} / 100",
+        "formel": "brutto * steuer / 100",
+        "ergebnisName": "lohnsteuer",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Nettolohn = Bruttolohn − Sozialversicherung − Lohnsteuer",
+        "formel": "brutto - svAnteil - lohnsteuer",
+        "ergebnisName": "netto",
+        "einheit": "€"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Beide Abzüge werden vom Brutto gerechnet, nicht nacheinander vom jeweiligen Rest. Die konkreten Beitragssätze ändern sich jährlich — hier zählt der Rechenweg, nicht der Prozentwert."
+  },
+  {
+    "id": "wiso-051",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Tarifvertragsgesetz; Grundgesetz Art. 9 Abs. 3 (Koalitionsfreiheit)",
+    "konfidenz": "hoch",
+    "frage": "Wer schließt einen Tarifvertrag ab?",
+    "optionen": [
+      "Betriebsrat und Geschäftsführung",
+      "Gewerkschaft und Arbeitgeberverband oder einzelner Arbeitgeber",
+      "Handwerkskammer und Innung",
+      "Das Bundesarbeitsministerium"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Das nennt man Tarifautonomie: Der Staat hält sich heraus, die Tarifparteien handeln Löhne und Arbeitsbedingungen selbst aus. Der Betriebsrat schließt keine Tarifverträge, sondern Betriebsvereinbarungen."
+  },
+  {
+    "id": "wiso-052",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Tarifvertragsgesetz — Arten von Tarifverträgen",
+    "konfidenz": "hoch",
+    "text": "Der {{Manteltarifvertrag}} regelt die allgemeinen Arbeitsbedingungen wie Arbeitszeit, Urlaub und Kündigungsfristen und läuft mehrere Jahre. Der {{Lohntarifvertrag}} regelt dagegen die Entgelte und wird meist jährlich neu verhandelt.",
+    "akzeptiert": {
+      "Manteltarifvertrag": [
+        "manteltarifvertrag",
+        "Mantel-Tarifvertrag",
+        "Rahmentarifvertrag"
+      ],
+      "Lohntarifvertrag": [
+        "lohntarifvertrag",
+        "Entgelttarifvertrag",
+        "Gehaltstarifvertrag"
+      ]
+    },
+    "erklaerung": "Die Trennung hat einen praktischen Grund: Über Geld wird oft gestritten, über Rahmenbedingungen selten. So muss nicht bei jeder Lohnrunde das ganze Regelwerk neu aufgemacht werden."
+  },
+  {
+    "id": "wiso-053",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Tarifvertragsgesetz (Friedenspflicht)",
+    "konfidenz": "hoch",
+    "frage": "Was bedeutet die Friedenspflicht während der Laufzeit eines Tarifvertrags?",
+    "optionen": [
+      "Über die geregelten Gegenstände darf nicht gestreikt werden",
+      "Es darf gar nicht gekündigt werden",
+      "Der Betriebsrat darf nicht widersprechen",
+      "Löhne dürfen nicht erhöht werden"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Solange der Tarifvertrag läuft, sind Arbeitskämpfe über seine Inhalte unzulässig. Erst nach Ablauf und gescheiterten Verhandlungen darf die Gewerkschaft zum Streik aufrufen — das gibt beiden Seiten Planungssicherheit."
+  },
+  {
+    "id": "wiso-054",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Betriebsverfassungsgesetz (BetrVG) § 1",
+    "konfidenz": "hoch",
+    "frage": "Ab welcher Betriebsgröße kann ein Betriebsrat gewählt werden?",
+    "optionen": [
+      "Ab 3 ständigen wahlberechtigten Arbeitnehmern",
+      "Ab 5 ständigen wahlberechtigten Arbeitnehmern, von denen 3 wählbar sind",
+      "Ab 10 Arbeitnehmern",
+      "Ab 20 Arbeitnehmern"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Fünf wahlberechtigte Arbeitnehmer, davon drei wählbar — wählbar ist, wer volljährig ist und dem Betrieb mindestens sechs Monate angehört. Die Amtszeit beträgt vier Jahre."
+  },
+  {
+    "id": "wiso-055",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Betriebsverfassungsgesetz (BetrVG) § 60 ff. (Jugend- und Auszubildendenvertretung)",
+    "konfidenz": "hoch",
+    "frage": "Wofür ist die Jugend- und Auszubildendenvertretung (JAV) zuständig?",
+    "optionen": [
+      "Sie schließt eigene Tarifverträge für Auszubildende ab",
+      "Sie vertritt die Interessen der Jugendlichen und Auszubildenden gegenüber dem Betriebsrat und der Betriebsleitung",
+      "Sie führt die Gesellenprüfung durch",
+      "Sie ersetzt den Betriebsrat in Betrieben ohne Betriebsrat"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die JAV kann ohne Betriebsrat nicht bestehen — sie arbeitet ihm zu und bringt Anträge über ihn ein. Gewählt wird sie in Betrieben mit mindestens fünf Beschäftigten unter 18 oder Auszubildenden unter 25, ihre Amtszeit beträgt zwei Jahre."
+  },
+  {
+    "id": "wiso-056",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Arbeitszeitgesetz (ArbZG) §§ 3–5",
+    "konfidenz": "hoch",
+    "frage": "Welche Regeln gelten nach dem Arbeitszeitgesetz für volljährige Arbeitnehmer? (Mehrfachauswahl)",
+    "optionen": [
+      "Werktäglich höchstens 8 Stunden, Verlängerung auf 10 Stunden nur mit Ausgleich",
+      "Mindestens 11 Stunden ununterbrochene Ruhezeit nach Arbeitsende",
+      "Bei mehr als 6 Stunden Arbeitszeit mindestens 30 Minuten Pause",
+      "Höchstens 4 Arbeitstage pro Woche"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Die 10 Stunden sind zulässig, wenn im Schnitt von sechs Monaten oder 24 Wochen die 8 Stunden eingehalten werden. Bei mehr als 9 Stunden Arbeit steigt die Pause auf 45 Minuten."
+  },
+  {
+    "id": "wiso-057",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Kündigungsschutzgesetz (KSchG) §§ 1, 23",
+    "konfidenz": "hoch",
+    "frage": "Wann greift der allgemeine Kündigungsschutz nach dem Kündigungsschutzgesetz?",
+    "optionen": [
+      "Ab dem ersten Arbeitstag in jedem Betrieb",
+      "Nach mehr als sechs Monaten Betriebszugehörigkeit und in Betrieben mit in der Regel mehr als zehn Arbeitnehmern",
+      "Nur für Arbeitnehmer über 50 Jahre",
+      "Erst nach fünf Jahren im Betrieb"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Beide Bedingungen müssen zusammenkommen: Wartezeit erfüllt und kein Kleinbetrieb. Greift das Gesetz, braucht die Kündigung einen Grund — personen-, verhaltens- oder betriebsbedingt."
+  },
+  {
+    "id": "wiso-058",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Arbeitsrecht — Abmahnung und verhaltensbedingte Kündigung",
+    "konfidenz": "hoch",
+    "frage": "Ein Mitarbeiter kommt wiederholt zu spät. Was steht vor einer verhaltensbedingten Kündigung in der Regel?",
+    "optionen": [
+      "Eine Gehaltskürzung",
+      "Eine Abmahnung, die das Fehlverhalten benennt und Konsequenzen androht",
+      "Eine Versetzung",
+      "Nichts, es kann sofort gekündigt werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Abmahnung gibt die Chance zur Änderung und ist Voraussetzung dafür, dass eine spätere Kündigung vor Gericht hält. Sie muss das Fehlverhalten konkret beschreiben — pauschale Vorwürfe genügen nicht."
+  },
+  {
+    "id": "wiso-059",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 433, 611a, 631 (Vertragstypen)",
+    "konfidenz": "hoch",
+    "frage": "Ein Dachdeckerbetrieb verpflichtet sich, ein Dach fertig einzudecken. Um welchen Vertragstyp handelt es sich?",
+    "optionen": [
+      "Kaufvertrag, weil Material geliefert wird",
+      "Dienstvertrag, weil Arbeitsleistung erbracht wird",
+      "Werkvertrag, weil ein bestimmter Erfolg geschuldet wird",
+      "Mietvertrag"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der entscheidende Unterschied: Beim Werkvertrag schuldest du das fertige, mangelfreie Ergebnis. Beim Dienstvertrag schuldest du nur die Tätigkeit — ein Lehrer schuldet Unterricht, nicht den Lernerfolg."
+  },
+  {
+    "id": "wiso-060",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB § 640 (Abnahme)",
+    "konfidenz": "hoch",
+    "frage": "Welche Rechtsfolgen löst die Abnahme des Werks aus? (Mehrfachauswahl)",
+    "optionen": [
+      "Die Vergütung wird fällig",
+      "Die Gefahr geht auf den Besteller über",
+      "Die Verjährungsfrist für Mängelansprüche beginnt zu laufen",
+      "Der Unternehmer haftet ab jetzt für gar nichts mehr"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Die Abnahme ist der Dreh- und Angelpunkt des Werkvertrags. Für Mängel haftet der Betrieb weiter — nur kehrt sich die Beweislast um: Nach der Abnahme muss der Kunde beweisen, dass der Mangel schon vorher da war."
+  },
+  {
+    "id": "wiso-061",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB § 634a; VOB/B § 13 Abs. 4 (Verjährung bei Bauwerken)",
+    "konfidenz": "hoch",
+    "text": "Für Mängel an einem Bauwerk verjähren die Ansprüche nach BGB in {{5}} Jahren ab Abnahme. Ist die VOB/B wirksam vereinbart, verkürzt sich die Frist auf {{4}} Jahre.",
+    "akzeptiert": {
+      "5": [
+        "fuenf",
+        "fünf"
+      ],
+      "4": [
+        "vier"
+      ]
+    },
+    "erklaerung": "Die VOB/B gilt nicht automatisch, sondern nur wenn sie ausdrücklich vereinbart wurde. Für Privatkunden muss sie zudem als Ganzes einbezogen werden — sonst bleibt es bei den fünf Jahren des BGB."
+  },
+  {
+    "id": "wiso-062",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 634, 635 (Mängelrechte)",
+    "konfidenz": "hoch",
+    "frage": "Der Kunde rügt einen Mangel am neuen Dach. Welches Recht steht ihm zuerst zu?",
+    "optionen": [
+      "Sofortiger Rücktritt vom Vertrag",
+      "Nacherfüllung, also Beseitigung des Mangels durch den Betrieb",
+      "Sofortige Minderung des Preises um 50 Prozent",
+      "Schadensersatz ohne vorherige Aufforderung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Die Nacherfüllung hat Vorrang — der Betrieb bekommt die Chance, selbst nachzubessern. Erst wenn sie fehlschlägt, verweigert wird oder die gesetzte Frist verstreicht, kommen Minderung, Rücktritt oder Schadensersatz in Betracht."
+  },
+  {
+    "id": "wiso-063",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB § 650 (Kostenanschlag); Angebotswesen",
+    "konfidenz": "hoch",
+    "frage": "Worin unterscheidet sich ein Kostenvoranschlag von einem Festpreisangebot?",
+    "optionen": [
+      "Es gibt keinen Unterschied",
+      "Der Kostenvoranschlag ist eine unverbindliche Schätzung, das Festpreisangebot bindet den Betrieb an den Preis",
+      "Der Kostenvoranschlag ist immer teurer",
+      "Das Festpreisangebot darf nur mündlich abgegeben werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Beim Kostenvoranschlag sind maßvolle Überschreitungen möglich, der Betrieb muss den Kunden aber unverzüglich warnen, sobald sich eine wesentliche Überschreitung abzeichnet. Beim Festpreis trägt der Betrieb das Risiko der Fehlkalkulation."
+  },
+  {
+    "id": "wiso-064",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Handwerksordnung (HwO) — Aufgaben der Handwerkskammer",
+    "konfidenz": "hoch",
+    "frage": "Welche Aufgaben nimmt die Handwerkskammer wahr? (Mehrfachauswahl)",
+    "optionen": [
+      "Führung der Handwerksrolle",
+      "Führung des Verzeichnisses der Berufsausbildungsverhältnisse",
+      "Abnahme der Gesellen- und Meisterprüfungen",
+      "Abschluss von Lohntarifverträgen"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Die Kammer ist die zuständige Stelle für die Berufsbildung im Handwerk. Tarifverträge schließt sie nicht — das ist Sache der Innungsverbände als Arbeitgeberseite und der Gewerkschaft."
+  },
+  {
+    "id": "wiso-065",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Rechtsformen — Einzelunternehmen und GmbH",
+    "konfidenz": "hoch",
+    "frage": "Wie haftet der Inhaber eines Einzelunternehmens für Schulden des Betriebs?",
+    "optionen": [
+      "Nur mit dem Betriebsvermögen",
+      "Unbeschränkt, auch mit seinem Privatvermögen",
+      "Gar nicht, dafür gibt es die Versicherung",
+      "Nur bis zur Höhe von 25.000 Euro"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Das ist der große Nachteil gegenüber der GmbH, bei der die Haftung grundsätzlich auf das Gesellschaftsvermögen begrenzt ist. Dafür braucht die GmbH ein Stammkapital von 25.000 Euro und mehr Formalitäten."
+  },
+  {
+    "id": "wiso-066",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Handwerksordnung; Innungswesen",
+    "konfidenz": "hoch",
+    "text": "Der freiwillige Zusammenschluss von Handwerksbetrieben desselben Gewerks auf örtlicher Ebene heißt {{Innung}}. Die Mitgliedschaft in der {{Handwerkskammer}} ist dagegen für eingetragene Betriebe verpflichtend.",
+    "akzeptiert": {
+      "Innung": [
+        "innung",
+        "Dachdeckerinnung"
+      ],
+      "Handwerkskammer": [
+        "handwerkskammer",
+        "HWK",
+        "Kammer"
+      ]
+    },
+    "erklaerung": "Freiwillig gegenüber pflichtig ist der Kernunterschied. Die Innungen eines Bezirks bilden die Kreishandwerkerschaft, auf Bundesebene vertritt der ZVDH das Dachdeckerhandwerk."
+  },
+  {
+    "id": "wiso-067",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "BGB §§ 286, 288 (Verzug)",
+    "konfidenz": "hoch",
+    "frage": "Wann gerät ein Kunde spätestens in Zahlungsverzug, ohne dass gemahnt werden muss?",
+    "optionen": [
+      "Sofort mit Rechnungsstellung",
+      "30 Tage nach Fälligkeit und Zugang der Rechnung",
+      "Erst nach drei Mahnungen",
+      "Nach einem Jahr"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Bei Verbrauchern muss auf diese Folge in der Rechnung hingewiesen werden. Ab Verzug darf der Betrieb Verzugszinsen verlangen — vorher nicht."
+  },
+  {
+    "id": "wiso-068",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Handwerksordnung — Meisterprüfung",
+    "konfidenz": "hoch",
+    "frage": "Aus wie vielen Teilen besteht die Meisterprüfung im Handwerk und welche sind das?",
+    "optionen": [
+      "Zwei Teile: Praxis und Theorie",
+      "Drei Teile: Praxis, Theorie, Recht",
+      "Vier Teile: Praxis, Fachtheorie, Wirtschaft und Recht, Berufs- und Arbeitspädagogik",
+      "Fünf Teile"
+    ],
+    "korrekt": [
+      2
+    ],
+    "erklaerung": "Der vierte Teil, die Ausbilder-Eignung, ist der Grund, warum Meister ausbilden dürfen. Die Teile III und IV sind gewerkeübergreifend und können unabhängig vom Gewerk abgelegt werden."
+  },
+  {
+    "id": "wiso-069",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Berufsbildungsgesetz — Fortbildung und Umschulung",
+    "konfidenz": "hoch",
+    "frage": "Was unterscheidet Anpassungsfortbildung von Aufstiegsfortbildung?",
+    "optionen": [
+      "Die Anpassungsfortbildung hält im erlernten Beruf auf dem aktuellen Stand, die Aufstiegsfortbildung führt zu einer höheren Qualifikation",
+      "Beide sind dasselbe",
+      "Die Anpassungsfortbildung ist immer länger",
+      "Die Aufstiegsfortbildung ist nur für Meister zugänglich"
+    ],
+    "korrekt": [
+      0
+    ],
+    "erklaerung": "Ein Lehrgang zu neuen Abdichtungsbahnen ist Anpassung, der Meister ist Aufstieg. Die Umschulung ist noch einmal etwas anderes — sie führt in einen ganz neuen Beruf."
+  },
+  {
+    "id": "wiso-070",
+    "typ": "cloze",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Duales System der Berufsausbildung",
+    "konfidenz": "hoch",
+    "text": "Die Ausbildung findet an zwei Lernorten statt. Im Betrieb gilt der {{Ausbildungsrahmenplan}} nach Bundesrecht, in der Berufsschule der {{Rahmenlehrplan}} der Länder.",
+    "akzeptiert": {
+      "Ausbildungsrahmenplan": [
+        "ausbildungsrahmenplan",
+        "Ausbildungsordnung",
+        "Rahmenplan"
+      ],
+      "Rahmenlehrplan": [
+        "rahmenlehrplan",
+        "Lehrplan"
+      ]
+    },
+    "erklaerung": "Diese Doppelzuständigkeit ist der Kern des dualen Systems: Der Bund regelt die betriebliche Seite über das BBiG, Schulrecht ist Ländersache. Abgestimmt werden beide Pläne bei der Erarbeitung der Ausbildungsordnung."
+  },
+  {
+    "id": "wiso-071",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Berufliche Fortbildung",
+    "quelle": "Berufsbildungsgesetz — Gestreckte Gesellenprüfung",
+    "konfidenz": "hoch",
+    "frage": "Was bedeutet die gestreckte Gesellenprüfung?",
+    "optionen": [
+      "Die Prüfung dauert länger als üblich",
+      "Sie besteht aus zwei zeitlich getrennten Teilen, deren Ergebnisse beide in die Endnote eingehen",
+      "Teil 1 ist nur eine Übung ohne Wertung",
+      "Sie kann beliebig oft wiederholt werden"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Teil 1 liegt etwa in der Mitte der Ausbildung und zählt mit einem festen Anteil zur Endnote. Er kann nicht für sich wiederholt werden — ein schwacher Teil 1 muss über Teil 2 ausgeglichen werden."
+  },
+  {
+    "id": "wiso-072",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "SOKA-DACH — Berufsbildungsverfahren",
+    "konfidenz": "hoch",
+    "frage": "Welche Verfahren führt die SOKA-DACH durch? (Mehrfachauswahl)",
+    "optionen": [
+      "Urlaubskassenverfahren",
+      "Berufsbildungsverfahren mit Erstattungen an ausbildende Betriebe",
+      "Zusätzliche Altersversorgung",
+      "Auszahlung der gesetzlichen Rente"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Die gesetzliche Rente zahlt die Deutsche Rentenversicherung. Die SOKA-DACH gleicht über ihre Umlage die Lasten zwischen ausbildenden und nicht ausbildenden Betrieben aus — wer ausbildet, soll dadurch keinen Wettbewerbsnachteil haben."
+  },
+  {
+    "id": "wiso-073",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Fachrechnen Wirtschaft (Rabatt und Skonto)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Materialrechnung lautet über {listenpreis} € netto. Der Lieferant gewährt {rabatt} % Rabatt und bei Zahlung innerhalb von 10 Tagen zusätzlich {skonto} % Skonto. Wie hoch ist der Zahlbetrag netto?",
+    "parameter": [
+      {
+        "name": "listenpreis",
+        "label": "Listenpreis netto",
+        "einheit": "€",
+        "min": 1500,
+        "max": 12000,
+        "schritt": 100
+      },
+      {
+        "name": "rabatt",
+        "label": "Rabatt",
+        "einheit": "%",
+        "min": 5,
+        "max": 25,
+        "schritt": 1
+      },
+      {
+        "name": "skonto",
+        "label": "Skonto",
+        "einheit": "%",
+        "min": 2,
+        "max": 3,
+        "schritt": 0.5
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Zieleinkaufspreis = {listenpreis} € · (1 − {rabatt} / 100)",
+        "formel": "listenpreis * (1 - rabatt / 100)",
+        "ergebnisName": "zielpreis",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Zahlbetrag = Zieleinkaufspreis · (1 − {skonto} / 100)",
+        "formel": "zielpreis * (1 - skonto / 100)",
+        "ergebnisName": "zahlbetrag",
+        "einheit": "€"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Die Reihenfolge ist zwingend: erst Rabatt, dann Skonto vom bereits verminderten Betrag. Skonto ist keine Höflichkeit, sondern ein hoher Zins — 2 Prozent für 20 Tage früher zahlen entsprechen aufs Jahr gerechnet über 30 Prozent."
+  },
+  {
+    "id": "wiso-074",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Fachrechnen Wirtschaft (Stundenverrechnungssatz)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Ein Betrieb hat {gesamtkosten} € Kosten im Jahr, die über die Gesellenstunden gedeckt werden müssen. {anzahl} Gesellen leisten je {stunden} produktive Stunden im Jahr. Wie hoch muss der Stundenverrechnungssatz mindestens sein?",
+    "parameter": [
+      {
+        "name": "gesamtkosten",
+        "label": "Zu deckende Jahreskosten",
+        "einheit": "€",
+        "min": 180000,
+        "max": 600000,
+        "schritt": 10000
+      },
+      {
+        "name": "anzahl",
+        "label": "Anzahl Gesellen",
+        "einheit": "",
+        "min": 3,
+        "max": 12,
+        "schritt": 1
+      },
+      {
+        "name": "stunden",
+        "label": "Produktive Stunden je Geselle",
+        "einheit": "h",
+        "min": 1300,
+        "max": 1600,
+        "schritt": 50
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Produktive Gesamtstunden = {anzahl} · {stunden} h",
+        "formel": "anzahl * stunden",
+        "ergebnisName": "gesamtstunden",
+        "einheit": "h"
+      },
+      {
+        "beschreibung": "Stundenverrechnungssatz = {gesamtkosten} € / produktive Gesamtstunden",
+        "formel": "gesamtkosten / gesamtstunden",
+        "ergebnisName": "satz",
+        "einheit": "€/h"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Entscheidend ist der Begriff produktiv: Urlaub, Krankheit, Berufsschule und Rüstzeiten sind schon abgezogen. Wer mit den vollen Jahresstunden rechnet, kalkuliert sich systematisch zu billig."
+  },
+  {
+    "id": "wiso-075",
+    "typ": "calc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Fachrechnen Wirtschaft (Umsatzsteuer)",
+    "konfidenz": "hoch",
+    "aufgabentext": "Eine Rechnung weist einen Bruttobetrag von {brutto} € aus. Der Umsatzsteuersatz beträgt 19 %. Wie hoch ist der enthaltene Umsatzsteuerbetrag?",
+    "parameter": [
+      {
+        "name": "brutto",
+        "label": "Bruttobetrag",
+        "einheit": "€",
+        "min": 500,
+        "max": 20000,
+        "schritt": 50
+      }
+    ],
+    "schritte": [
+      {
+        "beschreibung": "Nettobetrag = {brutto} € / 1,19",
+        "formel": "brutto / 1.19",
+        "ergebnisName": "netto",
+        "einheit": "€"
+      },
+      {
+        "beschreibung": "Umsatzsteuer = Bruttobetrag − Nettobetrag",
+        "formel": "brutto - netto",
+        "ergebnisName": "ust",
+        "einheit": "€"
+      }
+    ],
+    "toleranzProzent": 2,
+    "erklaerung": "Aus dem Brutto wird herausgerechnet, nicht aufgeschlagen: 19 Prozent vom Brutto wären zu viel. Der Divisor 1,19 macht daraus rechnerisch rund 15,97 Prozent des Bruttobetrags."
+  },
+  {
+    "id": "wiso-076",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Ausbildungsvertrag",
+    "quelle": "Berufsbildungsgesetz (BBiG) § 16 (Zeugnis)",
+    "konfidenz": "hoch",
+    "frage": "Was gilt für das Zeugnis am Ende der Ausbildung?",
+    "optionen": [
+      "Es ist freiwillig und muss ausdrücklich verlangt werden",
+      "Der Ausbildende muss ein Zeugnis ausstellen; auf Verlangen wird es um Verhalten und Leistung erweitert",
+      "Es wird von der Berufsschule ausgestellt",
+      "Es ersetzt den Gesellenbrief"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Das einfache Zeugnis mit Art, Dauer und Ziel der Ausbildung ist Pflicht. Das qualifizierte Zeugnis mit Bewertung von Leistung und Verhalten gibt es nur auf Verlangen — es kann bei der Bewerbung aber den Ausschlag geben."
+  },
+  {
+    "id": "wiso-077",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Arbeits- und Tarifrecht",
+    "quelle": "Betriebsverfassungsgesetz (BetrVG) § 87 (Mitbestimmung)",
+    "konfidenz": "hoch",
+    "frage": "In welchen Angelegenheiten hat der Betriebsrat ein echtes Mitbestimmungsrecht? (Mehrfachauswahl)",
+    "optionen": [
+      "Beginn und Ende der täglichen Arbeitszeit und Pausenlage",
+      "Regelungen zur Verhütung von Arbeitsunfällen",
+      "Grundsätze des Urlaubsplans",
+      "Höhe des tariflichen Stundenlohns"
+    ],
+    "korrekt": [
+      0,
+      1,
+      2
+    ],
+    "erklaerung": "Der Tariflohn ist dem Betriebsrat entzogen — dafür sind die Tarifparteien zuständig. Bei den echten Mitbestimmungsrechten kann der Arbeitgeber ohne Zustimmung des Betriebsrats nicht handeln."
+  },
+  {
+    "id": "wiso-078",
+    "typ": "mc",
+    "lernfeld": "wiso",
+    "thema": "Betriebsorganisation",
+    "quelle": "Handwerksordnung (HwO) — Handwerksrolle",
+    "konfidenz": "hoch",
+    "frage": "Was ist die Handwerksrolle?",
+    "optionen": [
+      "Eine Liste aller Auszubildenden im Bezirk",
+      "Das Verzeichnis der selbstständigen Handwerker der zulassungspflichtigen Handwerke",
+      "Ein anderes Wort für den Tarifvertrag",
+      "Die Mitgliederliste der Innung"
+    ],
+    "korrekt": [
+      1
+    ],
+    "erklaerung": "Ohne Eintragung in die Handwerksrolle darf ein zulassungspflichtiges Handwerk wie das Dachdeckerhandwerk nicht selbstständig ausgeübt werden. Geführt wird sie von der Handwerkskammer."
   }
 ]
