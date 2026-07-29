@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Aufgabe } from "@/content/schema";
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { istFaellig } from "@/lib/progress";
+import { pruefungsreife } from "@/lib/reifegrad";
 import { progressStore } from "@/lib/progressStore";
 import { useProgress } from "@/components/useProgress";
 import { Wiederholung } from "@/components/session/Wiederholung";
@@ -25,6 +26,16 @@ export function Fortschritt() {
   const faellig = bearbeitet.filter((a) => istFaellig(fortschritt[a.id], jetzt));
   const neu = alle.length - bearbeitet.length;
   const quote = bearbeitet.length > 0 ? (richtig.length / bearbeitet.length) * 100 : 0;
+
+  // Prüfungsreife statt Fortschritt: der Wert verfällt, wenn Wiederholungen
+  // liegen bleiben. Ein Balken, der nur steigen kann, misst Aktivität — nicht,
+  // ob der Stoff am Prüfungstag noch abrufbar ist.
+  //
+  // Er steht hier und nicht auf der Startseite: eine Zahl, die beim Öffnen als
+  // Erstes ins Auge fällt, liest sich als Urteil. Hier ist sie Rechenschaft,
+  // die man sich holt.
+  const grad = pruefungsreife(fortschritt, jetzt);
+  const prozent = Math.round(grad.anteil * 100);
 
   if (wiederholung) {
     return (
@@ -52,6 +63,37 @@ export function Fortschritt() {
   return (
     <div>
       <h1 className="text-[26px] font-semibold tracking-tight">Dein Fortschritt</h1>
+
+      {/* Prüfungsreife */}
+      <div
+        className="mt-4 flex items-center gap-4 rounded-[var(--r-lg)] border p-5"
+        style={{ background: "var(--surface)", borderColor: "var(--border)", boxShadow: "var(--shadow-sm)" }}
+      >
+        <Ring prozent={prozent} />
+        <div className="min-w-0 flex-1">
+          <div className="text-[15px] font-semibold">Prüfungsreife</div>
+          <div className="mt-0.5 text-sm" style={{ color: "var(--text-muted)" }}>
+            {/* punkte, nicht "bearbeitet": eine falsch beantwortete Aufgabe ist
+                bearbeitet, sitzt aber nicht. Die Kachel darunter zählt beides
+                getrennt — hier stünden sonst zwei Zahlen, die sich widersprechen. */}
+            <span className="tnum" style={{ color: "var(--text)" }}>
+              {Math.round(grad.punkte)}
+            </span>{" "}
+            von <span className="tnum">{grad.gesamt}</span> Aufgaben sitzen. Der Wert sinkt,
+            wenn Wiederholungen liegen bleiben.
+          </div>
+          <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full" style={{ background: "var(--surface-3)" }}>
+            <div
+              className="h-full rounded-full"
+              style={{
+                width: `${prozent}%`,
+                background: "var(--accent)",
+                transition: "width 0.6s cubic-bezier(0.4,0,0.2,1)",
+              }}
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="mt-4 grid grid-cols-3 gap-2">
         <Kachel label="Bearbeitet" wert={`${bearbeitet.length}`} zusatz={`von ${alle.length}`} />
@@ -197,6 +239,40 @@ export function Fortschritt() {
         )}
       </div>
     </div>
+  );
+}
+
+function Ring({ prozent }: { prozent: number }) {
+  const r = 26;
+  const c = 2 * Math.PI * r;
+  const off = c * (1 - prozent / 100);
+  return (
+    <svg width="68" height="68" viewBox="0 0 68 68" className="shrink-0" aria-hidden="true">
+      <circle cx="34" cy="34" r={r} fill="none" stroke="var(--surface-3)" strokeWidth="6" />
+      <circle
+        cx="34"
+        cy="34"
+        r={r}
+        fill="none"
+        stroke="var(--accent)"
+        strokeWidth="6"
+        strokeLinecap="round"
+        strokeDasharray={c}
+        strokeDashoffset={off}
+        transform="rotate(-90 34 34)"
+        style={{ transition: "stroke-dashoffset 0.6s cubic-bezier(0.4,0,0.2,1)" }}
+      />
+      <text
+        x="34"
+        y="34"
+        textAnchor="middle"
+        dominantBaseline="central"
+        className="tnum"
+        style={{ fontSize: prozent >= 100 ? "14px" : "16px", fontWeight: 600, fill: "var(--text)" }}
+      >
+        {prozent}%
+      </text>
+    </svg>
   );
 }
 

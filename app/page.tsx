@@ -11,40 +11,6 @@ import { pruefungsreife, tagesdosis } from "@/lib/reifegrad";
 
 const TAG = 86_400_000;
 
-function Ring({ prozent }: { prozent: number }) {
-  const r = 26;
-  const c = 2 * Math.PI * r;
-  const off = c * (1 - prozent / 100);
-  return (
-    <svg width="68" height="68" viewBox="0 0 68 68" className="shrink-0" aria-hidden="true">
-      <circle cx="34" cy="34" r={r} fill="none" stroke="var(--surface-3)" strokeWidth="6" />
-      <circle
-        cx="34"
-        cy="34"
-        r={r}
-        fill="none"
-        stroke="var(--accent)"
-        strokeWidth="6"
-        strokeLinecap="round"
-        strokeDasharray={c}
-        strokeDashoffset={off}
-        transform="rotate(-90 34 34)"
-        style={{ transition: "stroke-dashoffset 0.6s cubic-bezier(0.4,0,0.2,1)" }}
-      />
-      <text
-        x="34"
-        y="34"
-        textAnchor="middle"
-        dominantBaseline="central"
-        className="tnum"
-        style={{ fontSize: prozent >= 100 ? "14px" : "16px", fontWeight: 600, fill: "var(--text)" }}
-      >
-        {prozent}%
-      </text>
-    </svg>
-  );
-}
-
 export default function Home() {
   const { fortschritt } = useProgress();
   const datum = useSyncExternalStore(datumStore.subscribe, datumStore.getSnapshot, datumStore.getServerSnapshot);
@@ -61,11 +27,11 @@ export default function Home() {
     ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / TAG)
     : null;
 
-  // Prüfungsreife statt Fortschritt: der Wert verfällt, wenn Wiederholungen
-  // liegen bleiben. Ein Balken, der nur steigen kann, misst Aktivität — nicht,
-  // ob der Stoff am Prüfungstag noch abrufbar ist.
+  // Nur noch die Tagesdosis. Die Prüfungsreife selbst steht auf /fortschritt:
+  // ein Prozentwert, der beim Öffnen als Erstes ins Auge fällt, wird als Urteil
+  // gelesen, nicht als Auskunft — und er ist die einzige Zahl der App, die
+  // sinken kann. Wer sie sehen will, holt sie sich dort ab.
   const grad = pruefungsreife(fortschritt, now);
-  const prozent = Math.round(grad.anteil * 100);
   const dosis = tagesdosis(grad, tageBis);
 
   return (
@@ -151,44 +117,6 @@ export default function Home() {
             />
           </label>
         )}
-      </div>
-
-      {/* Fortschritt */}
-      <div
-        className="flex items-center gap-4 rounded-[var(--r-lg)] border p-5"
-        style={{ background: "var(--surface)", borderColor: "var(--border)", boxShadow: "var(--shadow-sm)" }}
-      >
-        <Ring prozent={prozent} />
-        <div className="min-w-0 flex-1">
-          <div className="text-[15px] font-semibold">Prüfungsreife</div>
-          <div className="mt-0.5 text-sm" style={{ color: "var(--text-muted)" }}>
-            {grad.faellig > 0 ? (
-              <>
-                <span className="tnum" style={{ color: "var(--text)" }}>
-                  {grad.faellig}
-                </span>{" "}
-                {grad.faellig === 1 ? "Aufgabe fällt" : "Aufgaben fallen"} gerade zurück
-              </>
-            ) : (
-              <>
-                <span className="tnum" style={{ color: "var(--text)" }}>
-                  {grad.gesamt - grad.neu}
-                </span>{" "}
-                von <span className="tnum">{grad.gesamt}</span> Aufgaben sitzen
-              </>
-            )}
-          </div>
-          <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full" style={{ background: "var(--surface-3)" }}>
-            <div
-              className="h-full rounded-full"
-              style={{
-                width: `${prozent}%`,
-                background: "var(--accent)",
-                transition: "width 0.6s cubic-bezier(0.4,0,0.2,1)",
-              }}
-            />
-          </div>
-        </div>
       </div>
 
       {/* Aktionen. "Heute dran" steht bewusst vorn und nimmt die Auswahl ab:
