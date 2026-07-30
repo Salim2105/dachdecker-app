@@ -54,5 +54,303 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 5; Bubiza-Wiki Dachkonstruktion",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 250' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Sparrendach und Pfettendach'><path d='M30 110 L95 50 L160 110' fill='none' stroke='currentColor' stroke-width='2'/><line x1='30' y1='110' x2='160' y2='110' stroke='#c07d4a' stroke-width='2.6'/><line x1='44' y1='122' x2='26' y2='122' stroke='#c07d4a' stroke-width='1.2'/><line x1='26' y1='122' x2='32.3' y2='120.4' stroke='#c07d4a' stroke-width='1.2'/><line x1='26' y1='122' x2='32.3' y2='123.6' stroke='#c07d4a' stroke-width='1.2'/><line x1='146' y1='122' x2='164' y2='122' stroke='#c07d4a' stroke-width='1.2'/><line x1='164' y1='122' x2='157.7' y2='123.6' stroke='#c07d4a' stroke-width='1.2'/><line x1='164' y1='122' x2='157.7' y2='120.4' stroke='#c07d4a' stroke-width='1.2'/><text x='48' y='138' fill='#c07d4a' font-size='11.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Zugband</text><text x='30' y='158' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Sparrendach</text><path d='M220 110 L285 50 L350 110' fill='none' stroke='currentColor' stroke-width='2'/><rect x='279' y='46' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.5'/><rect x='246' y='74' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.5'/><rect x='312' y='74' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.5'/><rect x='216' y='106' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.5'/><rect x='342' y='106' width='12' height='10' fill='none' stroke='#c07d4a' stroke-width='1.5'/><text x='220' y='158' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Pfettendach</text><line x1='18' y1='174' x2='362' y2='174' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='196' fill='currentColor' font-size='12.5'>Sparrendach: Dreieck mit Zugband unten</text><text x='30.0' y='218' fill='currentColor' font-size='12.5'>Pfettendach: Sparren auf drei Pfetten</text></svg>"
+  },
+  {
+    "id": "lf05-l05",
+    "lernfeld": "lf05",
+    "thema": "Holzeigenschaften",
+    "titel": "Festigkeit, Feuchte und das Arbeiten des Holzes",
+    "inhalt": [
+      "Holz ist kein gleichmäßiger Werkstoff: Es trägt je nach Faserrichtung anders und ändert mit der Feuchte seine Form — wer das kennt, baut Sparren, Latten und Schalbretter so ein, dass sie halten und sich nicht verziehen. Stell dir die Holzstruktur als Bündel von Röhren vor, damit erklärt sich fast alles.",
+      "Die Druckfestigkeit hängt vom Faserlauf ab. In Faserrichtung werden die Zellen längs gedrückt — da trägt das Holz viel. Quer zur Faser werden die Röhren leicht zusammengedrückt, die Druckfestigkeit ist deutlich geringer. Kurzform zum Merken: längs stark, quer schwach.",
+      "Beim Zug ist es genauso: In Faserrichtung ist die Zugfestigkeit sehr groß, weil die Cellulosefasern in Längsrichtung ziehen. Quer zur Faser kann Holz kaum auf Zug beansprucht werden, es reißt schnell. Zwei Dinge mindern die Zugfestigkeit zusätzlich: die Holzfeuchte und die Astigkeit.",
+      "Die Härte hängt an der Rohdichte: Je größer die Rohdichte, desto härter das Holz. Weich sind Tanne, Fichte und Kiefer, mittelhart ist die Lärche, hart sind Rotbuche und Eiche. Harte Hölzer nimmst du für stark beanspruchte Bauteile wie Treppen und Böden.",
+      "Der Fasersättigungspunkt liegt bei etwa 30 % Holzfeuchte. Dort sind die Zellwände vollständig mit gebundenem Wasser gesättigt, in den Zellhohlräumen steht aber noch kein freies Wasser. Wichtig: Oberhalb von 30 % schwindet das Holz nicht. Erst darunter gibt es gebundenes Wasser aus den Zellwänden ab und schwindet.",
+      "Arbeiten des Holzes ist der Sammelbegriff für Schwinden, Quellen, Verziehen, Reißen und Werfen infolge wechselnder Holzfeuchte: Beim Trocknen schwindet es, bei Feuchteaufnahme quillt es. Holz ist hygroskopisch und gleicht sich der Umgebungsluft an — bei 15 °C und 70 % relativer Luftfeuchte auf etwa 15 %. Das ist das Holzfeuchtegleichgewicht.",
+      "Deshalb baust du Holz mit der Feuchte ein, die es am Einbauort später sowieso erreicht, und lässt ihm Bewegungsraum. Im Freien liegt der Holzfeuchtegehalt bei 15 bis 20 %, in Innenräumen bei 6 bis 10 %. Wer das ignoriert, bekommt genau das, was unter Arbeiten fällt: Reißen und Werfen.",
+      "Geschwunden wird in jede Richtung anders: längs in Faserrichtung nur 0,1 bis 0,5 %, radial in Richtung der Markstrahlen etwa 5 %, tangential entlang der Jahrringe etwa 10 %. Tangential ist also rund doppelt so viel wie radial — genau dieser Unterschied verzieht das Holz.",
+      "Daraus folgen die Verformungen: Halbhölzer wölben sich, Bretter werden rund beziehungsweise hohl, Viertelhölzer verziehen sich rautenförmig. Seitenbretter wölben sich zur rechten, dem Mark abgewandten Seite. Befestige Seitenbretter deshalb mit der linken Seite, der Kernseite, auf der Unterkonstruktion — dann ziehen die Kanten nach unten an die Unterlage, statt hochzustehen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l06",
+    "lernfeld": "lf05",
+    "thema": "Holzwerkstoffe",
+    "titel": "Sperrholz, OSB und Faserplatten unterscheiden",
+    "inhalt": [
+      "Platten begleiten dich auf jeder Baustelle — als Beplankung, als Schalung, als Dämmung. Als Holzwerkstoffe bezeichnet man Platten und Formteile, die aus dünnen Holzschichten, Holzspänen oder Holzfasern hergestellt werden. Die drei großen Gruppen sind Sperrholzplatten, Holzspanplatten und Holzfaserplatten.",
+      "Sperrholz besteht aus mindestens drei kreuzweise verleimten Furnierlagen. Weil die Lagen um 90 Grad versetzt liegen, sperren sie sich gegenseitig: Das Arbeiten des Holzes, also Quellen und Schwinden, wird stark eingeschränkt. Außerdem hat die Platte in Längs- und in Querrichtung etwa gleiche Festigkeit.",
+      "Merk dir die Kurzzeichen: FU steht für Furniersperrholz, BFU für Bau-Furniersperrholz. BFU ist wetterbeständig verleimt und wird zum Beispiel für Beton- und Stahlbetonschalungen eingesetzt. Die Mindestzahl bleibt in jedem Fall gleich: drei kreuzweise verleimte Lagen.",
+      "Neben dem reinen Furniersperrholz gibt es Mittellagensperrholz mit dem Kurzzeichen TI, besser bekannt als Tischlerplatte. Sie hat mindestens drei Lagen: zwei Deckfurniere und dazwischen eine Mittellage. Besteht die Mittellage aus nebeneinanderliegenden Holzleisten, heißt sie Stabsperrholz; aus Schälfurnierstreifen heißt sie Stäbchensperrholz.",
+      "OSB heißt Oriented Strand Board. Das sind Flachpressplatten aus großflächigen, langen, schlanken Spänen, den strands. Die Späne der Außenschichten liegen in Längsrichtung ausgerichtet — daher kommt die hohe Biegefestigkeit der Platte. Also nicht aus Furnierlagen aufgebaut, sondern aus ausgerichteten Spänen.",
+      "Poröse Holzfaserplatten werden bei der Herstellung nicht gepresst. Wegen ihres porösen Gefüges nimmst du sie zur Wärmedämmung, zur Schalldämmung und zur Schallschluckung, nicht als tragende Bauteile. Das Wort porös ist die ganze Begründung — es steckt die Luft im Gefüge, die dämmt.",
+      "Halbfertigerzeugnisse, auch Halbfabrikate genannt, sind profilierte Hölzer, die in ihren Abmessungen genormt und für einen bestimmten Zweck vorgeformt sind: Fußleisten, Fasebretter, Stülpschalungsbretter, Balkonbretter. Bis auf die Oberflächenbehandlung sind sie einbaufertig."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l07",
+    "lernfeld": "lf05",
+    "thema": "Lasten und Kräfte",
+    "titel": "Lasten am Bau und Kräfte zerlegen",
+    "inhalt": [
+      "Jedes Bauteil am Dach muss Lasten weitergeben — wenn du weißt, welche Lasten wirken und wie man sie zerlegt, verstehst du auch, warum ein Sparren so und nicht anders angeschlossen wird. Am Bau unterscheidest du zuerst zwei Gruppen: ständige Lasten und veränderliche Lasten.",
+      "Ständige Lasten sind die Eigenlasten der tragenden Bauteile — Wände, Decken, Sparren. Sie sind unveränderlich und wirken dauernd. Veränderliche Lasten, auch Nutzlasten genannt, wechseln: Personen, Lagerstoffe, Wind und Schnee. Die Gesamtlast ist die Summe aus Eigenlast und Nutzlast.",
+      "Windkräfte wirken senkrecht auf die Fläche. Auf der windzugewandten Seite, der Luvseite, entsteht Winddruck; auf der windabgewandten Leeseite entsteht Windsog. Der Sog ist der unangenehme Teil, denn er kann das Dach anheben. Deshalb müssen Sparren und Deckung gegen Sog gesichert werden.",
+      "Wirken mehrere Kräfte mit verschiedenen Wirkungslinien auf einen Punkt, fasst du sie zu einer Gesamtkraft zusammen, der Resultierenden. Zeichnerisch geht das mit dem Kräfteparallelogramm: Die Diagonale ist die Gesamtkraft. Alternativ zeichnest du die Teilkräfte aneinander, dann entsteht das Kräftedreieck.",
+      "Rechnerisch zerlegst du eine schräge Kraft F, die unter dem Winkel Alpha zur Waagerechten wirkt, in zwei Anteile. Horizontalkomponente: Fh = cos Alpha mal F. Vertikalkomponente: Fv = sin Alpha mal F. Merkhilfe zur Zuordnung: Sinus geht nach oben, Kosinus geht zur Seite.",
+      "Rechne es einmal komplett durch: F = 70 kN unter 50 Grad. Vertikal ergibt sich Fv = sin 50 Grad mal 70 = 0,766 mal 70 = 53,6 kN. Horizontal ergibt sich Fh = cos 50 Grad mal 70 = 0,643 mal 70 = 45,0 kN. Beide Komponenten sind die Katheten des rechtwinkligen Kraftecks."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l08",
+    "lernfeld": "lf05",
+    "thema": "Werkzeuge",
+    "titel": "Handwerkzeuge für Holz — und sicher damit arbeiten",
+    "inhalt": [
+      "Wer sein Werkzeug kennt, arbeitet schneller, sauberer und mit weniger Risiko. Beim Stemmen unterscheidest du zwei Eisen: Das Stemmeisen, auch Stemmbeitel genannt, gibt es in verschiedenen Breiten zum Ausstemmen. Das Locheisen, auch Lochbeitel, hat eine dickere und schmälere Klinge mit etwa quadratischem Querschnitt und eignet sich für schmale, tiefe Löcher wie Zapfenlöcher.",
+      "Beim Hobeln arbeitest du dich vom Groben ins Feine. Sägeraue Flächen hobelst du zuerst mit Doppelhobel und Raubank vor. Danach glättest du die vorgehobelte Fläche mit dem Putzhobel fein. Der Simshobel hat eine andere Aufgabe: Mit ihm hobelst du Fälze.",
+      "Bei der Säge entscheidet die Feilung der Zähne über die Schnittrichtung. Zähne, die schwach auf Stoß gefeilt sind, eignen sich zum Querschneiden, also quer zur Faser. Für das Längsschneiden in Faserrichtung ist die Bezahnung auf Stoß günstig.",
+      "Die Schränkung ist die wechselseitige Schrägstellung der Zähne. Sie macht den Sägespalt breiter als das Blatt, damit die Säge nicht klemmt. Ist die Schränkung zu gering, klemmt das Blatt im Spalt. Ist sie zu breit, wird der Schnitt unsauber und die Späne reißen aus.",
+      "Drei Bohrer solltest du auseinanderhalten können. Der Forstnerbohrer ist ein Maschinenbohrer mit Zentrierspitze für flache Bohrungen wie Dübellöcher; er bohrt den Grund des Bohrloches glatt aus. Der Schlangenbohrer eignet sich für tiefe Bohrungen. Der Zentrumbohrer ist nur für flache Hölzer geeignet.",
+      "Sicherheit gehört zum Handwerkszeug dazu. Unsachgemäßer Umgang und mangelnde Sorgfalt mit Holzschutzmitteln können zu Vergiftungen, Verätzungen oder Reizungen führen. Bei öligen Holzschutzmitteln kommt Brand- und Explosionsgefahr hinzu. Deshalb gilt: Herstellerangaben lesen und die vorgeschriebene Schutzausrüstung tragen.",
+      "Bei der Montage der Holzdachkonstruktion in großer Höhe müssen die Arbeitsgerüste ordnungsgemäß erstellt und Absturzsicherungen vorhanden sein: Fanggerüst, Fangnetze und Höhensicherungsgeräte. Zur persönlichen Schutzausrüstung gehört im Schwenkbereich des Krans der Schutzhelm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l09",
+    "lernfeld": "lf05",
+    "thema": "Holzrahmenbau",
+    "titel": "Holzrahmenbau und Holzskelettbau",
+    "inhalt": [
+      "Holzrahmenbau begegnet dir auf der Baustelle als fertig angeliefertes Wandelement, und sein Prinzip ist mit drei Wörtern erklärt: Rippen tragen, Beplankung steift aus, Nägel verbinden. Die Rippen sind Kanthölzer und bilden das Tragwerk, die Beplankung besteht aus Holzwerkstoffplatten. Genagelt wird stumpf gestoßen.",
+      "Das Konstruktionsraster der Ständer beträgt 62,5 cm. Der Grund ist reine Rechnerei: Die Beplankungsplatten sind üblicherweise 125 cm breit, also stoßen sie ohne Verschnitt genau auf jedem zweiten Ständer. Bei Fenstern und Türen fügst du zusätzliche Ständer ein.",
+      "Die Beplankung hat drei Aufgaben auf einen Schlag. Erstens steift sie das Wandelement aus und leitet die Horizontalkräfte ab. Zweitens steift sie die Ständer gegen Knicken aus. Drittens trägt sie bei ausreichender Dicke die Vertikallasten mit. Beim Fachwerk sind diese Aufgaben dagegen auf Streben, Riegel und Ausfachung verteilt.",
+      "Die Wandelemente werden in der Zimmerei oder in der Werkhalle witterungsunabhängig liegend vorgefertigt: Rippen legen, Beplankung aufnageln. Die geringere Masse erleichtert Lagerung und Transport. Auf der Baustelle werden die fertigen Elemente nur noch aufgerichtet und miteinander verbunden.",
+      "Gegenüber dem Fachwerk bringt das System klare Vorteile: kleine Holzquerschnitte, großflächige Beplankungen, einfache Verbindungen, rationale Vorfertigung in der Werkhalle und schnelle Montage. Das Ergebnis ist kostengünstiges Bauen — und trotzdem gestalterische Vielfalt.",
+      "Der Holzskelettbau arbeitet anders. Typisch ist eine in einem Konstruktionsraster angeordnete Tragstruktur aus Stützen und Trägern; die Wände sind dabei nichttragend. Das tragende Skelett bleibt meist sichtbar und prägt Architektur und Gestalt des Gebäudes. Kurzform: Rahmenbau trägt über Rippen und Platten, Skelettbau über Stützen und Träger.",
+      "Ausgesteift werden beide Systeme auf dieselbe Weise: Die Windkräfte werden über aussteifende Konstruktionen in der Decken- und in der Wandebene abgetragen. In der Wandebene sind das Wandscheiben, also durch Beplankung ausgesteifte Wandelemente. In der Deckenebene sind es Deckenscheiben mit großflächiger Beplankung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l10",
+    "lernfeld": "lf05",
+    "thema": "Holzarten",
+    "titel": "Holzarten und Wachstumsfehler",
+    "inhalt": [
+      "Welches Holz du wählst, entscheidet mit darüber, wie gut ein Bauteil Feuchte und Fäulnis verträgt. Als Bauhölzer werden vorwiegend die Nadelhölzer Fichte und Tanne verwendet — sie sind das Standardmaterial im Dachstuhl.",
+      "Fichte, auch Rottanne genannt, ist das wichtigste Bauholz: Rohdichte etwa 470 kg/m³, weich bis mittelhart und gut zu bearbeiten. Du findest sie in Dachstühlen, Balken und Schalungen. Die Zahl 470 gehört zur Fichte — merk sie dir zusammen mit dem zweiten Namen Rottanne.",
+      "Kiefern- und Lärchenholz hat einen hohen Harzgehalt. Das Harz macht das Holz widerstandsfähiger gegen Feuchtigkeit und Fäulnis. Deshalb nimmst du Kiefer und Lärche für Bauteile, die feuchte- und witterungsbeständig sein sollen. Das Stichwort in der Begründung heißt Harzgehalt.",
+      "Eiche ist ein Laubholz mit einer Rohdichte von etwa 750 kg/m³ und zählt damit zu den harten Laubhölzern. Sie ist sehr hart, dicht und witterungsbeständig — ein vorzügliches Bauholz für feuchtebeanspruchte Bauteile, Treppen, Außentüren, Schwellen und Fachwerk.",
+      "Nicht jeder Stamm gibt gutes Bauholz. Wachstumsfehler mindern die Festigkeit und die Schnittausbeute. Dazu zählen Abholzigkeit, also eine starke Abnahme des Durchmessers, außerdem Krummschäftigkeit, Drehwuchs, Äste, Harzgallen und Ringrisse.",
+      "Beim Drehwuchs verlaufen die Holzfasern spiralförmig um den Stamm. Solches Holz verzieht sich beim Trocknen stark, es wird windschief. Und die Tragfähigkeit ist vermindert, weil viele Fasern schräg durchschnitten werden. Der Name sagt es: Die Faser dreht sich um den Stamm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l11",
+    "lernfeld": "lf05",
+    "thema": "Holzschädlinge",
+    "titel": "Pilze und Insekten am Holz erkennen",
+    "inhalt": [
+      "Bei Sanierungen und Dachstuhlkontrollen musst du erkennen können, ob ein Pilz oder ein Insekt am Holz war — die Gegenmaßnahmen sind völlig verschieden. Holz zerstörende Pilze brauchen zum Wachsen drei Dinge gleichzeitig: Feuchtigkeit, Wärme und Sauerstoff.",
+      "Genauer: Das Holz muss mehr als etwa 18 % Feuchte besitzen, es braucht Wärme über 3 °C, und Sauerstoff muss vorhanden sein. Daraus folgt die wichtigste Regel im Holzschutz: Trockenes Holz unter 18 % Feuchte wird nicht von Pilzen befallen. Trocken halten schlägt jede Behandlung.",
+      "Der gefährlichste Pilz des verarbeiteten Holzes ist der Echte Hausschwamm. Er erzeugt Braunfäule und lebt ausschließlich von Holz. Gefährlich macht ihn seine Ausbreitung: Seine Myzelstränge können durch Poren und Risse im Mauerwerk und im Beton wachsen und so umgebende Räume erreichen.",
+      "Bei den Insekten ist der Hausbockkäfer der bekannteste, auch großer Holzwurm genannt. Er befällt nur Nadelhölzer, zum Beispiel im Dachgebälk. Seine Larven fressen drei bis acht Jahre lang im trockenen Splintholz. Erkennen kannst du ihn an den Nagegeräuschen der Larven und an den Fluglöchern der Käfer.",
+      "Die Fluglöcher trennen die beiden häufigen Käfer sauber voneinander: Der Hausbock hinterlässt ovale Löcher von etwa 3 bis 8 mm. Der Klopfkäfer, auch Nagekäfer genannt, hinterlässt runde kleine Löcher von etwa 1,5 bis 2 mm, darunter liegen Bohrmehlhäufchen. Der Klopfkäfer befällt außerdem auch Laubholz."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l12",
+    "lernfeld": "lf05",
+    "thema": "Ältere Dachkonstruktionen",
+    "titel": "Ältere Dachtragwerke und das Sparrendach",
+    "inhalt": [
+      "Bei Sanierungen stehst du unter Dachstühlen, die nie jemand gerechnet hat: Ältere Dachtragwerke wurden ohne statischen Nachweis nach Erfahrung errichtet. Deshalb musst du am Tragwerk selbst ablesen können, wohin die Lasten laufen, bevor irgendetwas verändert oder aufgeschnitten wird.",
+      "Ältere Dachkonstruktionen können grundsätzlich auf drei Arten ausgebildet sein: als abgestrebte beziehungsweise liegende Pfettendachstühle, als Spreng- und Hängewerke oder als Kehlbalkendächer mit stehendem beziehungsweise liegendem Stuhl.",
+      "Sprengwerk und Hängewerk verwechselt man leicht. Beim Sprengwerk werden die senkrechten und die waagerechten Lasten über Streben auf die Außenwände abgetragen; der Bundbalken bleibt dabei unbelastet. Beim Hängewerk ist die darunterliegende Decke an den Hängepfosten aufgehängt — die Deckenlast geht über das Dachtragwerk.",
+      "Beim Hängewerk wird also ein beachtlicher Teil der Deckenbelastung über das Dach abgeleitet. Deshalb eignet es sich für große Räume ohne Zwischenwände, zum Beispiel Säle. Hängewerksdächer gelten als Vorläufer der heutigen Hallenbinder. Eselsbrücke: Beim Hängewerk hängt die Decke am Dach.",
+      "Das Sparrendach löst die Aufgabe ganz anders: Die Sparrenpaare bilden zusammen mit der darunterliegenden Decke ein steifes Dreieck. Die Verbindungspunkte dürfen dabei gelenkig sein. Innen liegende Konstruktionsteile wie Stützen oder Pfetten sind nicht nötig — das gibt die größte Freiheit im Dachraum.",
+      "Der Fußpunkt ist beim Sparrendach der entscheidende Anschluss. In den häufigsten Fällen sind die Decken unter Sparren- und Kehlbalkendächern in Stahlbeton ausgeführt. Der Sparrenfuß wird über eine Schwelle an ein Stahlbetonwiderlager angeschlossen: entweder durch Winkelschnitt und Sparrennagel oder über eine Knagge."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l13",
+    "lernfeld": "lf05",
+    "thema": "Dachaufbauten",
+    "titel": "Gauben und Auswechslungen",
+    "inhalt": [
+      "Jede Öffnung im Dach — Gaube, Dachflächenfenster, Schornstein — unterbricht Sparren, und die unterbrochene Last muss irgendwo hin. Dachgauben selbst sind Dachaufbauten mit senkrecht stehenden Fenstern; sie vergrößern den nutzbaren Dachraum und belichten ihn.",
+      "Gauben werden nach ihrer Dachform benannt. Gebräuchlich sind Schleppdachgaube, Fledermausgaube, Satteldachgaube, Walmdachgaube, Tonnendachgaube und Spitzgaube. Wer den Namen kennt, kennt damit auch schon die Dachform des Aufbaus.",
+      "Vier Formen solltest du beschreiben können. Die Satteldachgaube ist ein kleines Satteldach mit senkrechtem Fenster in einem Kantholzrahmen. Die Walmdachgaube ist dieselbe Gaube, vorne abgewalmt. Die Schleppdachgaube hat eine einseitig geneigte Fläche, die von der Hauptdachfläche herabgeschleppt wird. Die Fledermausgaube ist geschwungen und hat keine Kanten.",
+      "Weil die Fledermausgaube ohne Kanten auskommt, eignet sie sich besonders für Schuppenbedeckungen wie Biberschwanz oder Schiefer. Für die Breite gilt: Bei Sparren- und Kehlbalkendächern darf die Gaube höchstens über zwei Sparrenfelder reichen. Breitere Gauben sind nur bei Pfettendachstühlen möglich.",
+      "Bei Dachdurchbrüchen wie Schornstein oder Dachflächenfenster müssen Sparren unterbrochen werden. Genau dafür gibt es die Auswechslung: Sie besteht aus Wechsel und Füllhölzern und trägt die Lasten des ausgewechselten Sparrens auf die benachbarten Sparren ab. Zwei Bauteile, ein Zweck — die Last umleiten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l14",
+    "lernfeld": "lf05",
+    "thema": "Aufbau des Holzes",
+    "titel": "Vom Baum zum Bauholz: Wachstum und Aufbau",
+    "inhalt": [
+      "Wenn du weißt, wie ein Stamm aufgebaut ist, erkennst du am Bauholz, was du vor dir hast: Kernholz oder Splintholz, Frühholz oder Spätholz, Radial- oder Tangentialschnitt. Genau das entscheidet, wie widerstandsfähig dein Holz ist und wie es aussieht.",
+      "Der Baum baut seine Holzsubstanz selbst auf. Bei der Fotosynthese bildet er aus Wasser und Kohlenstoffdioxid mithilfe von Sonnenenergie und Blattgrün (Chlorophyll) Traubenzucker, das nennt man Assimilation. Aus dem Traubenzucker entstehen die weiteren Aufbaustoffe wie Cellulose und Lignin, Sauerstoff wird dabei frei. Foto heißt Licht, Synthese heißt Zusammensetzung.",
+      "Daraus folgt die ökologische Bedeutung des Waldes: Er nimmt Kohlenstoffdioxid auf und bindet den Kohlenstoff, verringert also den CO2-Anteil in der Atmosphäre. Dazu ist er Sauerstoffquelle, Wasserreservoir und Erholungsraum und schützt den Boden vor Verkarstung.",
+      "Die Holzsubstanz besteht zu etwa 50 Prozent aus Cellulose, zu 20 bis 35 Prozent aus Lignin und zu 20 bis 35 Prozent aus Hemicellulose. Cellulose bildet die Zellwände und bewirkt die hohe Zugfestigkeit, Lignin verkittet die Zellwände und dient der Druckfestigkeit, Hemicellulose bindet beide.",
+      "In die Dicke wächst der Stamm im Kambium, der teilungsfähigen Wachstumsschicht zwischen Holz und Rinde. Dort entstehen durch Zellteilung nach innen neue Holzzellen und nach außen Bastzellen. Merk dir die Lage: zwischen Holz und Rinde.",
+      "Kernholz liegt innen. Durch eingelagerte Harze und Gerbstoffe ist es dunkler, dichter und widerstandsfähiger, es ist verkernt. Splintholz liegt außen, ist heller und führt im lebenden Baum Wasser und Nährstoffe. Kurzform: innen dunkel und hart, außen hell und saftführend.",
+      "Ein Jahresring ist der Zuwachs eines Jahres und im Querschnitt sichtbar. Er besteht aus hellem, großzelligem Frühholz aus dem Frühjahr und dunklem, dickwandigem Spätholz aus Sommer und Herbst. Der Kontrast macht die Ringe sichtbar, aus ihrer Zahl lässt sich das Alter ablesen.",
+      "Die Hauptmasse des Nadelholzes bilden die Tracheiden, spindelförmige Mehrzweckzellen. Sie leiten und stützen zugleich. Die Saftleitung läuft über die Tüpfel, das sind ventilartige Poren. Eine Zelle, zwei Aufgaben.",
+      "Drei Schnittrichtungen musst du auseinanderhalten: Der Querschnitt (Hirnschnitt) geht quer durch den Stamm. Der Radial- oder Spiegelschnitt geht längs durch die Stammmitte, die Jahresringe erscheinen als parallele Streifen und die Markstrahlen als glänzende Spiegel. Der Tangential- oder Fladerschnitt verläuft daneben und zeigt die Fladerung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l15",
+    "lernfeld": "lf05",
+    "thema": "Holztrocknung",
+    "titel": "Holz trocknen: lufttrocken oder technisch getrocknet",
+    "inhalt": [
+      "Wie trocken dein Holz ist, entscheidet darüber, ob es reißt und ob es für geleimte Bauteile überhaupt taugt. Deshalb musst du die beiden Trocknungsarten kennen und wissen, welche Holzfeuchte jede davon erreicht.",
+      "Die Freilufttrocknung ist die natürliche Trocknung an der freien Luft. Das luftig gestapelte Schnittholz gibt seine Feuchtigkeit durch Verdunsten an die Umgebungsluft ab und kommt auf etwa 15 bis 20 Prozent, das heißt lufttrocken. Sie ist die kostengünstigste, aber auch die langsamste Trocknungsart.",
+      "Beim Freilufttrocknen stapelst du luftig, als Blockstapel oder Viereckstapel mit Stapelleisten, damit das Holz gleichmäßig trocknet. Der Stapel muss vor Regen und Sonne geschützt und 50 bis 60 Zentimeter über dem Boden gelagert werden, damit von unten keine Feuchte hochzieht.",
+      "Reicht lufttrocken nicht aus, zum Beispiel für geleimte Bauteile oder KVH, kommt das Holz in die Holztrocknungsanlage. Die technische Trocknung erreicht gezielt jeden gewünschten Feuchtegehalt, auch unter 15 Prozent. Das ist ihr Vorteil gegenüber der natürlichen Trocknung, die bei etwa 15 bis 20 Prozent stehen bleibt.",
+      "Risse entstehen, wenn Holz zu schnell trocknet: Die Oberfläche gibt schneller Feuchte ab als der Kern, dadurch entstehen Spannungen im Holz. Langsames, gleichmäßiges Trocknen vermeidet das, kontrolliert in der Anlage oder geschützt im luftigen Stapel.",
+      "Zwei Zahlen, zwei Regeln: 15 bis 20 Prozent schafft die Freilufttrocknung, unter 15 Prozent nur die technische Trocknung. Luftig stapeln, 50 bis 60 Zentimeter über dem Boden, geschützt vor Regen und Sonne, und immer langsam und gleichmäßig trocknen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l16",
+    "lernfeld": "lf05",
+    "thema": "Sortierklassen",
+    "titel": "Sortieren nach Tragfähigkeit: S10, C24 und KVH",
+    "inhalt": [
+      "Bevor Bauholz auf die Baustelle kommt, wird es sortiert, und zwar nach den Merkmalen, die seine Tragfähigkeit bestimmen. An der Sortierklasse erkennst du, welche Festigkeitsklasse das Holz hat.",
+      "Wichtigstes Sortiermerkmal ist die Ästigkeit, also Art, Anzahl und Ausmaß der Äste. Äste unterbrechen den Faserverlauf und mindern dadurch die Tragfähigkeit. Weitere Sortiermerkmale sind Jahrringbreite, Faserneigung, Risse und der Baumkantenanteil.",
+      "Den Sortierklassen sind nach DIN 4074 Festigkeitsklassen zugeordnet: S7 entspricht C18 (geringe Tragfähigkeit), S10 entspricht C24 (normal), S13 entspricht C30 (überdurchschnittlich), S13K entspricht C40 (hoch). Das C steht für die Nadelholz-Festigkeitsklasse.",
+      "Konstruktionsvollholz, Kurzzeichen KVH, ist ein besonders hochwertiges Vollholz: gütegeprüft, visuell oder maschinell sortiert, technisch getrocknet, keilgezinkt, maßhaltig und rissarm. Es wird vor allem für Holzbauteile verwendet, die sichtbar bleiben.",
+      "Merk dir die Paare in der Reihenfolge S7 zu C18, S10 zu C24, S13 zu C30 und S13K zu C40, also: je höher die Zahl, desto tragfähiger. Und das Sortiermerkmal mit dem größten Einfluss auf die Tragfähigkeit ist die Ästigkeit."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l17",
+    "lernfeld": "lf05",
+    "thema": "Handelsformen",
+    "titel": "Bauschnittholz: Einschnitt, Querschnitt, Brettschichtholz",
+    "inhalt": [
+      "Wenn du Holz bestellst oder eine Holzliste liest, musst du die Handelsnamen sicher treffen. Kantholz, Bohle, Brett, Latte, Balken und Brettschichtholz sind keine Geschmacksfrage, sondern über Abmessungen und Herstellung klar festgelegt.",
+      "Bauschnittholz ist im Sägewerk eingeschnittenes Rundholz mit mindestens 6 Millimeter Dicke. Eingeteilt wird es zweifach: nach der Art des Einschnitts und nach dem Querschnitt. Halte beide Einteilungen auseinander, sie beschreiben verschiedene Dinge, nämlich wie der Stamm im Sägewerk aufgeteilt wurde und welche Form das fertige Holz hat.",
+      "Nach der Art des Einschnitts unterscheidest du drei Formen: Ganzholz (einstielig, nur besäumt), Halbholz (zweistielig geschnitten) und Viertelholz beziehungsweise Kreuzholz (kreuzweise geschnitten). Merk dir die Zuordnung stur: Ganzholz einstielig, Halbholz zweistielig, Viertel- oder Kreuzholz kreuzweise.",
+      "Nach dem Querschnitt gibt es Kantholz, Bohle, Brett und Latte. Kantholz: Breite kleiner oder gleich Höhe, Höhe höchstens dreimal die Breite, Breite über 40 Millimeter. Bohle: dicker als 40 Millimeter, Breite größer als dreimal die Dicke. Brett: 8 bis 40 Millimeter dick, mindestens 80 Millimeter breit. Latte: bis 40 Millimeter dick, bis 80 Millimeter breit.",
+      "Ein Kantholz gilt nach DIN EN 844 als Balken, wenn die Summe von Höhe und Breite mindestens 200 Millimeter beträgt und die Höhe mindestens 80 Millimeter ist. Eindeutig ein Balken ist es bei einer Höhe ab 200 Millimeter und einer Breite ab 80 Millimeter.",
+      "Brettschichtholz, auch Leimholz genannt, besteht aus schichtweise flach aufeinander verleimten Brettlamellen von 30 bis 45 Millimeter Dicke, meist aus Fichte. Es ist sehr tragfähig, lässt sich in großen Längen bis 35 Meter herstellen und auch gekrümmt ausführen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l18",
+    "lernfeld": "lf05",
+    "thema": "Ingenieurholzbau",
+    "titel": "Nagel, Schraube, Bolzen, Dübel",
+    "inhalt": [
+      "Nägel, Schrauben, Bolzen und Dübel halten die Holzkonstruktion zusammen. Welches Verbindungsmittel du nimmst und wie du es setzt, entscheidet darüber, ob die Verbindung die Kräfte überträgt oder das Holz aufreißt.",
+      "Die Tragfähigkeit einer Nagelverbindung beruht auf der Reibungskraft zwischen Holz und Nagel. Sie hängt von der Holzart, der Nageldicke und der Nagellage ab: In Hartholz hält der Nagel besser als in Weichholz, in Hirnholz nur gering.",
+      "Faustregel für die Nagellänge: etwa dreimal die Dicke des Holzteils, das du befestigst. Bei einem 24 Millimeter dicken Brett rechnest du 3 mal 24 gleich 72 Millimeter. So sitzt der Nagel weit genug im Untergrundholz.",
+      "Eine scharfe Nagelspitze reißt die Holzfasern auseinander und spaltet das Holz. Stumpfst du die Spitze mit dem Hammer ab, also stauchst du sie, werden die Fasern beim Eindringen durchtrennt statt gespalten. Nahe am Rand hilft Vorbohren.",
+      "Die Kurzzeichen der Holzschrauben: Flako ist der Flachkopf (Senkschraube), Ruko der Rundkopf (Halbrundkopf), Liko der Linsenkopf. Dazu kommen Sechskant-Holzschrauben, auch Schlüsselschrauben genannt. Die Kurzzeichen bestehen jeweils aus den ersten Buchstaben der beiden Wortteile: Fla-ko, Ru-ko, Li-ko.",
+      "Der Schraubendreher muss in Dicke und Breite genau zum Schraubenkopf passen. Ein zu kleiner rutscht ab und beschädigt Schlitz und Holz. Bei Schrauben mit mehr als 10 Millimeter Durchmesser und bei Hartholz solltest du vorbohren.",
+      "Bolzen sind zylindrische Verbindungsmittel aus Metall. Der Schraubenbolzen wird mit Mutter und Unterlagscheibe fest verspannt und verbindet die Hölzer fest. Der Stabdübel wird glatt in ein vorgebohrtes Loch eingetrieben und verbindet ohne Verspannung. Unterschied in zwei Wörtern: verspannt oder eingetrieben.",
+      "Dübel besonderer Bauart, also Ringkeildübel ein- oder zweiseitig und Krallendübel, übertragen größere Druck-, Zug- und Schubkräfte auf kleine Anschlussflächen. Sie müssen immer mit Schraubenbolzen zusammengespannt werden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l19",
+    "lernfeld": "lf05",
+    "thema": "Fachwerkwand",
+    "titel": "Die Fachwerkwand: tragen und aussteifen",
+    "inhalt": [
+      "Die Fachwerkwand trägt die Lasten von oben und hält gleichzeitig dem Wind stand. Wenn du weißt, welches Holz welche Aufgabe hat, kannst du jedes Bauteil benennen und sagen, warum es genau dort sitzt.",
+      "Eine Fachwerkwand besteht aus zwei Gruppen von Hölzern. Die tragenden Hölzer, also Pfosten, Rähm und Schwelle, nehmen die senkrechten Lasten auf. Die aussteifenden Hölzer, also Streben und Riegel, nehmen die waagerecht wirkenden Windlasten auf und leiten sie ab.",
+      "Die Lage merkst du dir so: Die Schwelle bildet den unteren waagerechten Abschluss, das Rähm den oberen. Dazwischen stehen senkrecht die Pfosten. Schräg eingebaut sind die Streben, waagerecht zwischen den Pfosten sitzen die Riegel.",
+      "Das Rähm grenzt die Wandtafel oben ab und nimmt die Lasten der darüberliegenden Decken- und Dachbalken auf. Weil es hauptsächlich auf Biegung beansprucht wird, sollte es einen rechteckigen Querschnitt haben und hochkant verlegt werden.",
+      "Die Schwelle liegt auf dem Sockel beziehungsweise der Bodenplatte. Im Freien muss sie gegen aufsteigende Feuchtigkeit und Spritzwasser geschützt werden, nämlich durch eine kapillarbrechende Schicht (Sperrschicht) und ausreichenden Abstand vom Boden.",
+      "Übe das Benennen an einer Skizze: oben waagerecht das Rähm, unten waagerecht die Schwelle, senkrecht der Pfosten, schräg die Strebe. Tragend sind Rähm, Schwelle und Pfosten, aussteifend sind Streben und Riegel."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l20",
+    "lernfeld": "lf05",
+    "thema": "Pfettendach",
+    "titel": "Pfettendach und Kehlbalkendach",
+    "inhalt": [
+      "Beim Pfettendach und beim Kehlbalkendach musst du wissen, welches Bauteil die Last aufnimmt und was die Konstruktion aussteift. Nur dann kannst du im Dachstuhl sagen, welches Holz du vor dir hast und wofür es da ist.",
+      "Beim Pfettendachstuhl liegen die Sparren als schräg liegende Balken auf den Pfetten, also auf Fußpfette, Mittelpfette und Firstpfette. Die Pfetten sammeln die senkrechten Dachlasten und leiten sie über Pfosten und Streben in die tragenden Wände oder Decken.",
+      "Je nach Anzahl der Pfettenstränge heißt das Tragwerk einfach, zweifach oder dreifach stehend. Einfach stehend bedeutet: nur First- und Fußpfette. In der Regel ist der zweifach stehende Pfettendachstuhl wirtschaftlicher als der einfach stehende.",
+      "In Längsrichtung steift man über die Pfettenstränge aus: Die Pfetten werden durch senkrechte Pfosten mit Bügen (Kopfbändern) oder durch V-förmig angeordnete Streben unterstützt. Die dabei entstehenden Dreiecke geben die Steifigkeit.",
+      "Beim liegenden Pfettendachstuhl verlaufen die Streben fast parallel zu den Sparren. Die Queraussteifung kommt aus den unverschieblichen Dreiecken aus Streben, Riegel und Mittelpfetten. Der Vorteil: Der Dachraum bleibt stützenfrei.",
+      "Die Kerve ist die Ausklinkung, mit der der Sparren auf der Pfette aufliegt. Sie schwächt den Sparrenquerschnitt und darf deshalb höchstens ein Viertel der Sparrenhöhe tief sein, damit genug tragender Querschnitt bleibt. Brauchst du mehr, hilft eine angenagelte Knagge.",
+      "Das Kehlbalkendach unterscheidet sich vom Sparrendach dadurch, dass das Sparrenpaar zusätzlich durch einen Kehlbalken ausgesteift wird. Die günstigste Lage des Kehlbalkens liegt bei etwa der halben bis zwei Drittel der Dachhöhe.",
+      "Wirtschaftlicher als ein Sparrendach ist das Kehlbalkendach erst bei steilen Dächern ab 45 Grad und bei größeren Spannweiten über 8 Meter. Zu beachten ist: Bei einseitiger Schneelast kann sich der Kehlbalkenanschluss verschieben."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l21",
+    "lernfeld": "lf05",
+    "thema": "Dachformen",
+    "titel": "Dachformen, Dachneigung und Dachrand",
+    "inhalt": [
+      "Dachform, Dachneigung und Dachrand bestimmen, wie ein Gebäude aussieht und wie gut die Fassade geschützt ist. Die Begriffe brauchst du, um ein Dach überhaupt sauber benennen und beschreiben zu können.",
+      "Nach der Neigung wird eingeteilt: bis 5 Grad Flachdach, von 5 bis 40 Grad mäßig steiles Dach, über 40 Grad Steildach. Die zwei Merkzahlen sind also 5 Grad und 40 Grad.",
+      "Nach dem Querschnitt unterscheidet man Satteldach, Mansarddach und Pultdach. Nach dem Längsschnitt Giebeldach, Krüppelwalmdach, Walmdach und Zeltdach. Form und Neigung zusammen bestimmen das Erscheinungsbild des Gebäudes.",
+      "Dachüberstände an Traufe und Ortgang schützen die Gebäudefassade vor Regen, Schnee und Hagelschlag. Im Sommer, bei hohem Sonnenstand, schützen sie vor starker Sonneneinstrahlung und spenden Schatten. Außerdem prägen sie den Charakter des Gebäudes.",
+      "Der Ortgang ist der seitliche Dachrand am Giebel. Für seine Ausführung gibt es drei Möglichkeiten: Ortgangziegel beziehungsweise Ortgangdachsteine, das Ortgangbrett und, bei Biberschwanzdeckung, die Zahnleiste.",
+      "Merk dir die Lage: Traufe unten, Ortgang seitlich am Giebel. Dazu die drei Ortgangausführungen Ortgangziegel, Ortgangbrett und Zahnleiste. Und die zwei Neigungsgrenzen: bis 5 Grad Flachdach, dazwischen mäßig steil, über 40 Grad Steildach."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf05-l22",
+    "lernfeld": "lf05",
+    "thema": "Materialbedarf",
+    "titel": "Holzliste, Verschnittzuschlag und Bestellmenge",
+    "inhalt": [
+      "Bevor Holz bestellt wird, musst du wissen, wie viel du brauchst, und dass die Bestellmenge größer ist als das, was am Ende verbaut wird. Genau dafür gibt es die Holzliste und den Verschnittzuschlag.",
+      "Die Holzliste ist eine tabellarische Aufstellung aller benötigten Hölzer. Sie enthält mindestens Anzahl, Querschnitt und Länge und vereinfacht damit die Ermittlung des Holzbedarfs. Aus der Fertigholzmenge wird anschließend mit dem Verschnittzuschlag die Rohholzmenge berechnet, und die ist die Bestellmenge.",
+      "Die Rechnung ist immer dieselbe: Rohholzmenge gleich Fertigholzmenge mal (1 plus Zuschlag geteilt durch 100). Beispiel: 0,606 Kubikmeter Fertigholz bei 3 Prozent Zuschlag ergeben 0,606 mal 1,03 gleich 0,624 Kubikmeter.",
+      "Der Verschnittzuschlag berücksichtigt Abschnitte und handelsübliche Längen. Für Kantholz rechnet man mit etwa 6 Prozent, für Dachschalung mit bis zu 12 bis 15 Prozent. Beispiel Pfettendachstuhl: 3,5 Kubikmeter Fertigholz mal 1,06 ergeben 3,71 Kubikmeter Bestellmenge.",
+      "Die Dachschalungsfläche rechnest du je Dachfläche als Sparrenlänge mal Trauflänge. Beim Satteldach mit zwei gleich großen Dachflächen nimmst du das Ergebnis mal 2. Beispiel: 6 Meter mal 10 Meter gleich 60 Quadratmeter, mal 2 gleich 120 Quadratmeter. Für die Bestellung kommt der Verschnittzuschlag noch dazu.",
+      "Zwei Schritte, immer in dieser Reihenfolge: erst die Fertigmenge aus Fläche oder Holzliste ermitteln, dann den Verschnittzuschlag daraufrechnen. Der Zuschlag wird auf die Fertigmenge aufgeschlagen, nicht von ihr abgezogen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

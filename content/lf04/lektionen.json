@@ -54,5 +54,258 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 4; Betontechnologie-Grundlagen",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 190' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Schalungsdruck, Verdichten und Nachbehandeln'><rect x='40' y='40' width='16' height='84' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='150' y='40' width='16' height='84' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='64' y1='54' x2='86' y2='54' stroke='#c07d4a' stroke-width='1.4'/><line x1='86' y1='54' x2='79.7' y2='55.6' stroke='#c07d4a' stroke-width='1.4'/><line x1='86' y1='54' x2='79.7' y2='52.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='142' y1='54' x2='120' y2='54' stroke='#c07d4a' stroke-width='1.4'/><line x1='120' y1='54' x2='126.3' y2='52.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='120' y1='54' x2='126.3' y2='55.6' stroke='#c07d4a' stroke-width='1.4'/><line x1='64' y1='74' x2='96' y2='74' stroke='#c07d4a' stroke-width='1.4'/><line x1='96' y1='74' x2='89.7' y2='75.6' stroke='#c07d4a' stroke-width='1.4'/><line x1='96' y1='74' x2='89.7' y2='72.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='142' y1='74' x2='110' y2='74' stroke='#c07d4a' stroke-width='1.4'/><line x1='110' y1='74' x2='116.3' y2='72.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='110' y1='74' x2='116.3' y2='75.6' stroke='#c07d4a' stroke-width='1.4'/><line x1='64' y1='94' x2='106' y2='94' stroke='#c07d4a' stroke-width='1.4'/><line x1='106' y1='94' x2='99.7' y2='95.6' stroke='#c07d4a' stroke-width='1.4'/><line x1='106' y1='94' x2='99.7' y2='92.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='142' y1='94' x2='100' y2='94' stroke='#c07d4a' stroke-width='1.4'/><line x1='100' y1='94' x2='106.3' y2='92.4' stroke='#c07d4a' stroke-width='1.4'/><line x1='100' y1='94' x2='106.3' y2='95.6' stroke='#c07d4a' stroke-width='1.4'/><text x='40' y='142' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Schalungsdruck</text><text x='40' y='158' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>nimmt nach unten zu</text><line x1='250' y1='34' x2='250' y2='104' stroke='currentColor' stroke-width='3'/><circle cx='250' cy='110' r='5' fill='none' stroke='currentColor' stroke-width='2'/><rect x='214' y='104' width='72' height='24' fill='none' stroke='currentColor' stroke-width='1.4'/><text x='214' y='148' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Innenrüttler</text><text x='214' y='164' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>treibt Luftporen heraus</text></svg>"
+  },
+  {
+    "id": "lf04-l05",
+    "lernfeld": "lf04",
+    "thema": "Zement",
+    "titel": "Zement: Herstellung, Sorten, Festigkeitsklassen",
+    "inhalt": [
+      "Zement ist das Bindemittel im Beton — er verkittet die Gesteinskörnung und hält alles zusammen. Beton besteht aus genau drei Grundstoffen: Zement, Gesteinskörnung (Sand und Kies) und Wasser. Zusatzmittel und Zusatzstoffe können ergänzt werden, gehören aber nicht zu den drei Grundstoffen.",
+      "Die Herstellung: Kalkstein und Ton werden gemahlen, gemischt und im Drehrohrofen bei etwa 1450 °C zu Klinker gebrannt — das ist der gesinterte Zementklinker, ein Zwischenprodukt. Danach wird der Klinker mit Gips fein gemahlen, und erst dann hast du fertigen Zement. Merke die Reihenfolge: erst brennen, dann mahlen. Danach wird der Klinker mit Gips fein gemahlen, und erst dann hast du fertigen Zement. Merke die Reihenfolge: erst brennen, dann mahlen.",
+      "Der Gips beim Mahlen ist kein Füllstoff, sondern Erstarrungsregler. Ohne Gips würde der Zement sofort erstarren, sobald du ihn mit Wasser anmachst — er wäre gar nicht mehr verarbeitbar. Gips steuert also die Zeit bis zum Erstarren.",
+      "Beton trocknet nicht, er erhärtet chemisch. Diese Reaktion zwischen Zement und Wasser heißt Hydratation: Zuerst entsteht Zementleim, der mit der Zeit zu festem Zementstein erhärtet und die Gesteinskörnung verkittet. Das Wort kommt von „hydor\" = Wasser. Trocknen und Erhärten sind zwei verschiedene Dinge — halte sie auseinander.",
+      "Es gibt fünf Normalzemente: CEM I = Portlandzement, CEM II = Portlandkompositzement, CEM III = Hochofenzement, CEM IV = Puzzolanzement, CEM V = Kompositzement. Merkhilfe: I = nur Portland, II = Portland plus Komposit, III = Hochofen, IV = Puzzolan, V = gemischt.",
+      "CEM I besteht zu mindestens 95 % aus Portlandzementklinker — praktisch nur Klinker und Gips. CEM II bis CEM V enthalten zusätzlich andere Hauptbestandteile wie Hüttensand, Puzzolane oder Flugasche. Bei CEM III ist das Hüttensand, also granulierte Hochofenschlacke aus der Eisenherstellung, mit einem Anteil von 36 bis 95 %.",
+      "Drei Festigkeitsklassen gibt es beim Normalzement: 32,5 — 42,5 — 52,5. Die Zahl ist die Mindestdruckfestigkeit in N/mm² nach 28 Tagen. Auf dem Sack erkennst du die Klasse an der Kennfarbe: braun = 32,5, grün = 42,5, rot = 52,5. Damit siehst du auf der Baustelle sofort, was du in der Hand hast.",
+      "Hinter der Zahl steht ein Buchstabe für die Anfangsfestigkeit: L = niedrige Anfangsfestigkeit (langsam), N = normale, R = hohe (rasch). Wichtig: Die 28-Tage-Festigkeit ist bei allen dreien gleich. Der Buchstabe sagt nur, wie schnell der Zement in den ersten Tagen zulegt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l06",
+    "lernfeld": "lf04",
+    "thema": "Betonstähle",
+    "titel": "Betonstahl B500: Streckgrenze, Duktilität, Matten",
+    "inhalt": [
+      "Im Stahlbetonbauteil nimmt der Betonstahl die Zugkräfte auf, die der Beton allein nicht abkann. Auf der Baustelle musst du erkennen, welchen Stahl du in der Hand hältst — die Kurzbezeichnung B500A oder B500B sagt dir Festigkeit und Verformungsverhalten in einem.",
+      "Die 500 in B500 ist die Streckgrenze: 500 N/mm², gleichbedeutend mit 500 MPa. Streckgrenze heißt: die Spannung, bis zu der sich der Stahl elastisch verformt und nach dem Entlasten in seine Ausgangsform zurückgeht. Darüber verformt er sich bleibend, also plastisch.",
+      "Duktilität ist die Fähigkeit des Stahls, sich plastisch zu verformen, bevor er bricht. Das ist ein Sicherheitsmerkmal: Ein duktiles Bauteil kündigt sein Versagen durch sichtbare Verformung an, statt ohne Vorwarnung zu brechen.",
+      "B500A ist normalduktil und kaltverformt, B500B ist hochduktil und warmgewalzt und hat die höhere Bruchdehnung. Die Streckgrenze ist bei beiden gleich: 500 N/mm². Merke: A = normal, B = besser verformbar. B500B kann sich stärker dehnen, bevor er bricht — wichtig bei Erdbeben und hohen Lasten.",
+      "Betonstahl ist gerippt. Die Rippen verzahnen sich mit dem Beton und stellen den Verbund her: Der Stahl kann sich im erhärteten Beton nicht mehr verschieben. Genau darauf beruht das Zusammenspiel von Stahl und Beton.",
+      "Betonstahlmatten sind werkmäßig verschweißte Gitter aus Betonstahl für Platten und Wände. Die sich kreuzenden Betonstähle sind an jedem Kreuzungspunkt verschweißt. Statt jeden Stab einzeln zu verlegen, bringst du damit eine ganze Fläche in einem Stück ein.",
+      "Zwei Mattenarten musst du unterscheiden: Lagermatten sind Standardmatten mit festen Abmessungen, die auf Lager liegen; ihr Kurzzeichen ist Q oder R. Listenmatten werden nach einer individuellen Bestellliste für das jeweilige Bauvorhaben gefertigt. Merkbrücke: Lager = Standard vom Stapel, Liste = nach Maß bestellt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l07",
+    "lernfeld": "lf04",
+    "thema": "Expositionsklassen",
+    "titel": "Expositionsklassen: Was den Beton angreift",
+    "inhalt": [
+      "Die Expositionsklasse sagt, welchen Umweltbedingungen ein Bauteil ausgesetzt ist — und danach richtet sich die Mindestbetongüte, also was du bestellst. Ein trockenes Innenbauteil braucht anderen Beton als ein Bauteil, das im Winter Frost und Taumittel abbekommt.",
+      "Es gibt sieben Gruppen: X0, XC, XD, XS, XF, XA und XM. Sie stehen für kein Angriffsrisiko, Carbonatisierung, Chloride, Meerwasser, Frost, chemischen Angriff und Verschleiß. Die Buchstaben kommen aus dem Englischen — kennst du die englischen Wörter, musst du nichts stur auswendig lernen.",
+      "Die Herleitung im Einzelnen: XC = Carbonation, Carbonatisierung. XD = Deicing salt, also Chloride aus Tausalz — ausdrücklich nicht Meerwasser. XS = Seawater, Meerwasser. XF = Freeze, Frostangriff. XA = chemischer Angriff (Attack). XM = Mechanical wear, Verschleiß; XM1 bis XM3 gelten für Böden, Verkehrsflächen und Industriefußböden.",
+      "XC im Detail: CO₂ aus der Luft dringt in den Beton ein und senkt den pH-Wert, dadurch beginnt der Stahl zu rosten. Die Stufen reichen von XC1 (trocken) bis XC4 (wechselnd nass und trocken). XC beschreibt also Bewehrungskorrosion durch Carbonatisierung, XD dagegen durch Chloride.",
+      "X0 heißt: kein Korrosions- oder Angriffsrisiko. Das gilt für unbewehrten Beton ohne Frostgefahr in dauerhaft trockener Umgebung, zum Beispiel Innenbauteile in trockenen Räumen. Drei Bedingungen müssen zusammenkommen: keine Bewehrung, keine Frostgefahr und dauerhaft trocken.",
+      "Beim Frostangriff XF entscheidet, ob Taumittel dazukommt: XF1 und XF3 gelten ohne Taumittel, XF2 und XF4 mit Taumittel. Taumittel verschärft den Frostangriff erheblich. Kurzform zum Merken: die geraden Zahlen sind die mit Taumittel.",
+      "Aus der Expositionsklasse folgt eine Mindestdruckfestigkeitsklasse. Für XC4, also wechselnd nass und trocken, ist mindestens C25/30 gefordert. Der Grundsatz dahinter: Je aggressiver die Umgebung, desto höher die geforderte Mindestbetongüte — damit die Bewehrung ausreichend geschützt bleibt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l08",
+    "lernfeld": "lf04",
+    "thema": "Bauen und Umwelt",
+    "titel": "Bauen und Umwelt: Lebenszyklus und Ökobilanz",
+    "inhalt": [
+      "Welchen Baustoff du wählst und wie das Gebäude später genutzt wird, wirkt sich über Jahrzehnte aus. Umweltfreundliches Bauen heißt: bauen unter Beachtung der ökologischen Wechselbeziehungen, um Schäden am Ökosystem möglichst zu vermeiden. Maßstab ist die Wechselbeziehung zwischen Mensch und Umwelt.",
+      "Ökologisches Bauen betrachtet vier Phasen: Planen, Ausführen, Nutzen und Entsorgen. Der Blick hört also nicht auf, wenn das Gebäude fertig ist — Nutzung und Entsorgung gehören genauso dazu wie der Bauvorgang selbst.",
+      "Die Produktlinienanalyse ist eine wissenschaftliche Methode, die den gesamten Lebenszyklus eines Produktes untersucht: Rohstoffgewinnung, Herstellung, Nutzung, Entsorgung. Bewertet werden die Auswirkungen auf Umwelt, Gesellschaft und Wirtschaft. Merkhilfe: die ganze „Linie\" von der Wiege bis zur Bahre, nicht nur das fertige Produkt.",
+      "Die Ökobilanz ist ein Steuerungsinstrument: Sie erfasst und bewertet die Umweltwirkungen eines Produktes über den gesamten Lebenszyklus systematisch, von der Rohstoffgewinnung über Herstellung und Nutzung bis zur Entsorgung. Zweck ist, ökologische Schwachstellen aufzuzeigen und zu beseitigen. Unterschied zur Produktlinienanalyse: Die bewertet zusätzlich Gesellschaft und Wirtschaft.",
+      "Beton hat wegen des hohen Zementanteils einen hohen Rohstoff- und Energieverbrauch bei der Herstellung. Der Grund steckt in der Zementherstellung: Brenntemperaturen um 1450 °C und erhebliche CO₂-Emissionen. Damit steht Beton beim Herstellungsaufwand an der Spitze der Baustoffe.",
+      "Trotzdem entstehen bei vielen Baustoffen die größten Umweltbelastungen nicht bei der Herstellung, sondern in der Nutzungsphase — durch Heizenergie. Deshalb ist eine optimale Wärmedämmung aus Umweltsicht so wichtig: Die Herstellung fällt einmal an, die Heizenergie über Jahrzehnte."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l09",
+    "lernfeld": "lf04",
+    "thema": "Herstellen und Verarbeiten",
+    "titel": "Beton einbauen: Liefern, Verdichten, Nachbehandeln",
+    "inhalt": [
+      "Die Rezeptur wird bei der Festlegung und Bestellung des Betons bestimmt — auf der Baustelle entscheiden Einbau und Nachbehandlung darüber, ob der Beton die bestellte Festigkeit wirklich erreicht. Drei Punkte bestimmen das Ergebnis: rechtzeitig einbauen, richtig verdichten, ordentlich nachbehandeln.",
+      "Transportbeton ist werkmäßig hergestellter Beton: Er wird im Betonwerk nach der bestellten Rezeptur gemischt und in Fahrmischern, also Betonmischer-LKW, zur Baustelle gefahren. Er muss innerhalb der Verarbeitungszeit eingebaut werden.",
+      "Beim Einbringen enthält Frischbeton eingeschlossene Luft. Durch Verdichten entweicht diese Luft: Der Beton wird dichter und fester und umschließt die Bewehrung besser. Nicht verdichteter Beton enthält Luftnester und ist schwächer. Merke: Beim Verdichten wird die eingeschlossene Luft ausgetrieben.",
+      "Verdichtet wird meist durch Rütteln — mit Innenrüttlern, auch Flaschenrüttler genannt, oder mit Außenrüttlern. Der Innenrüttler heißt so, weil er von oben in den frischen Beton eingetaucht wird und dort arbeitet; der Außenrüttler sitzt außen an der Schalung.",
+      "Nachbehandeln ist Pflicht, weil Beton durch die chemische Reaktion von Zement mit Wasser erhärtet. Trocknet er zu früh aus, fehlt Wasser für die Hydratation: Der Beton bleibt schwach und bekommt Risse. Ziel der Nachbehandlung ist, dass die Hydratation ungestört ablaufen kann und der Beton seine volle Festigkeit erreicht.",
+      "Konkret heißt das: mit Folie abdecken, mit Wasser besprühen und feucht halten oder mit einer Nachbehandlungsflüssigkeit (Curing Compound) versiegeln. Geschützt werden muss der Frischbeton vor Wind, Sonne und Frost. Das Feuchthalten ist kein Selbstzweck — das Wasser wird für die Hydratation gebraucht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l10",
+    "lernfeld": "lf04",
+    "thema": "Festlegung des Betons",
+    "titel": "Beton festlegen: Standard, Eigenschaften, Zusammensetzung",
+    "inhalt": [
+      "Bevor der Fahrmischer kommt, muss festgelegt sein, was genau geliefert wird. Dafür gibt es drei Wege: Standardbeton, Beton nach Eigenschaften und Beton nach Zusammensetzung. Welchen du nimmst, hängt davon ab, wie hoch das Bauteil beansprucht wird.",
+      "Standardbeton ist Beton für einfache, untergeordnete Bauteile, und seine Zusammensetzung ist festgelegt. Er wird nach festgelegten Anhaltswerten gemischt und braucht deshalb weder eine Eignungsprüfung noch eine besondere Überwachung. Das macht ihn unkompliziert — aber eben nur für einfache Bauteile.",
+      "Standardbeton hat eine klare Obergrenze: höchstens Druckfestigkeitsklasse C12/15 und höchstens Expositionsklasse X0. Wer mehr braucht — höhere Festigkeit oder eine schärfere Expositionsklasse —, muss den Beton nach Eigenschaften oder nach Zusammensetzung festlegen. Die beiden Grenzwerte C12/15 und X0 gehören zusammen.",
+      "Beton nach Eigenschaften ist der Weg für statisch beanspruchte Stahlbetonbauteile. Der Besteller gibt die gewünschten Leistungen vor: Druckfestigkeitsklasse, Expositionsklasse und Konsistenz, zum Beispiel C25/30 und XC1. Die passende Rezeptur stellt dann das Betonwerk zusammen.",
+      "Beim Beton nach Zusammensetzung ist es umgekehrt: Der Besteller gibt die Rezeptur vor. Merksatz für die Unterscheidung: nach Eigenschaften = ich sage, was der Beton können soll; nach Zusammensetzung = ich sage, was drin sein soll."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l11",
+    "lernfeld": "lf04",
+    "thema": "Betondeckung",
+    "titel": "Betondeckung: Der Schutzmantel um die Bewehrung",
+    "inhalt": [
+      "Die Betondeckung ist der Abstand zwischen der Oberfläche des Bewehrungsstahls und der nächstgelegenen Betonoberfläche. Sie entscheidet darüber, ob ein Stahlbetonbauteil dauerhaft hält: Ohne ausreichende Deckung rostet der Stahl, und das Bauteil versagt.",
+      "Zwei Aufgaben hat die Deckung. Erstens Korrosionsschutz: Sie hält den Bewehrungsstahl vom Rosten ab. Zweitens Brandschutz: Sie schützt den Stahl im Brandfall vor Hitze. Beides gehört zusammen — Rost und Feuer, nicht nur eines von beiden.",
+      "Wie dick die Deckung sein muss, hängt von der Expositionsklasse ab: Die Mindestbetondeckung ist nach Expositionsklassen gestaffelt. Dahinter steckt dieselbe Logik wie bei der Betongüte — je aggressiver die Umgebung, desto mehr Schutz braucht der Stahl.",
+      "Gesichert wird das Maß mit Abstandhaltern aus Kunststoff, Beton oder Metall. Sie werden zwischen Bewehrung und Schalung geklemmt und sorgen dafür, dass die Bewehrung beim Betonieren ihre Lage behält und die Mindestdeckung eingehalten wird.",
+      "Praktisch heißt das: Verrutscht oder hängt die Bewehrung beim Betonieren durch, ist die Deckung an dieser Stelle zu dünn — und genau dort fängt der Stahl später an zu rosten. Die Abstandhalter sind deshalb keine Kleinigkeit, sondern das Bauteil, das die Deckung überhaupt herstellt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l12",
+    "lernfeld": "lf04",
+    "thema": "Schalungspläne",
+    "titel": "Schalungsplan, Holzliste, Mengen und Ausschalen",
+    "inhalt": [
+      "Aus dem Schalungsplan wird auf der Baustelle Material: Du leitest ab, welche Teile du brauchst, rechnest die Mengen mit Verschnitt aus, bestellst den Beton in Kubikmetern — und am Ende musst du wissen, wann die Schalung wieder weg darf.",
+      "Die Holzliste wird aus dem Schalungsplan abgeleitet. Sie ist die tabellarische Aufstellung aller benötigten Schalungsteile und enthält für jedes Teil: Bezeichnung, Stückzahl, Querschnitt, Länge als Fertigmenge und die Rohmenge mit Verschnittzuschlag.",
+      "Fertigmenge ist, was verbaut wird. Rohmenge ist, was du bereitstellen musst — der Verschnittzuschlag deckt Abschnitte und Beschädigungen beim Zuschneiden ab. Formel: Rohmenge = Fertigmenge mal (1 + Zuschlag geteilt durch 100). Beispiel 24 m² Schalfläche mit 15 % Zuschlag: Faktor 1,15, also 24 mal 1,15 = 27,6 m².",
+      "Aus einem Rundholz das größte quadratische Kantholz schneiden: Dann ist die Diagonale des Quadrats genau der Kreisdurchmesser. Kantenlänge a = Durchmesser geteilt durch Wurzel 2, also rund Durchmesser mal 0,707. Beispiel 20 cm Durchmesser: 20 geteilt durch 1,414 = 14,1 cm.",
+      "Beton wird in Kubikmetern bestellt. Beim Streifenfundament rechnest du Volumen = Länge mal Breite mal Höhe. Beispiel: 8 m lang, 0,50 m breit, 0,60 m hoch ergibt 8 mal 0,5 mal 0,6 = 2,4 m³. Für Verluste plant man etwa 5 bis 10 % Zuschlag ein.",
+      "Ausgeschalt wird erst, wenn der Beton ausreichende Festigkeit erreicht hat, um die Lasten selbst zu tragen. Die Ausschalfrist hängt von Bauteilart, Temperatur und Zement ab, ist also nicht für alle Bauteile gleich. Zur Bestimmung kann eine Erhärtungsprüfung durchgeführt werden.",
+      "Hilfsstützen, auch Notstützen genannt, bleiben beim oder unmittelbar nach dem Ausschalen unter dem Bauteil stehen. Sie verhindern Durchbiegungen, bis der Beton seine volle Festigkeit erreicht hat. Ausschalen heißt also nicht automatisch, dass sofort alles Tragende verschwindet."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l13",
+    "lernfeld": "lf04",
+    "thema": "Gesteinskörnungen",
+    "titel": "Gesteinskörnungen: Sand, Kies, Splitt und die Sieblinie",
+    "inhalt": [
+      "Mit der Gesteinskörnung entscheidest du auf der Baustelle, was für ein Beton entsteht: normaler Beton, Leichtbeton mit geringerer Wärmeleitfähigkeit oder Schwerbeton für den Strahlenschutz. Und die Mischung der Korngrößen entscheidet mit, wie dicht und wie fest das Ergebnis wird.",
+      "Sortiere zuerst nach Korngröße: alles bis 4 mm heißt Sand. Über 4 mm entscheidet die Form — rundes, gewachsenes Material ist Kies, gebrochenes Material ist Splitt. Kurzfassung: Die Größe trennt Sand vom Rest, die Form trennt Kies von Splitt.",
+      "Die zweite Einteilung läuft über die Kornrohdichte. Normale Gesteinskörnungen wie Sand, Kies und Splitt liegen bei 2000 bis 3000 kg/m³. Leichte Körnungen liegen darunter, schwere darüber. Merk dir die beiden Grenzen 2000 und 3000 — daran hängt die ganze Einteilung.",
+      "Leichte Gesteinskörnungen sind Blähton, Bims und Blähglas mit einer Kornrohdichte unter 2000 kg/m³. Daraus wird Leichtbeton. Sein Vorteil gegenüber Normalbeton: eine geringere Wärmeleitfähigkeit, er dämmt also besser.",
+      "Schwere Gesteinskörnungen sind Baryt (BaSO₄) und Magnetit (Fe₃O₄) mit einer Rohdichte über 3000 kg/m³. Daraus entsteht Schwerbeton, den man für den Strahlenschutz und für Gegengewichte einsetzt. Eselsbrücke: viel Masse, viel Abschirmung.",
+      "Die Sieblinie beschreibt, wie die Korngrößen gemischt sind. Gut ist sie, wenn die kleinen Körner die Hohlräume zwischen den groben füllen. Dann packt sich alles dicht, der Beton wird fester, und du brauchst weniger Zementleim, um die Körner zu umhüllen.",
+      "Kurzcheck ohne Buch: Bis zu welcher Korngröße redest du von Sand? Was unterscheidet Kies von Splitt? In welchem Rohdichtebereich liegen normale Gesteinskörnungen? Welche Körnung nimmst du für Leichtbeton, welche für Strahlenschutzbeton? Und wozu ist eine gute Sieblinie gut?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l14",
+    "lernfeld": "lf04",
+    "thema": "Betoneigenschaften",
+    "titel": "Beton beurteilen: w/z-Wert, Festigkeitsklasse, Konsistenz",
+    "inhalt": [
+      "Auf der Baustelle musst du zwei Dinge beurteilen können: Ist der Beton noch verarbeitbar oder schon tragfähig? Und stimmen Wassergehalt, Festigkeit und Konsistenz? Genau diese Begriffe bekommst du hier der Reihe nach.",
+      "Frischbeton ist der Beton, den du noch in die Schalung einbringen und verdichten kannst — er ist verarbeitbar und noch nicht erhärtet. Sobald er erhärtet ist und seine Festigkeit erreicht hat, heißt er Festbeton und ist tragfähig. Es ist derselbe Stoff in zwei Zuständen.",
+      "Der Wasserzementwert (w/z-Wert) ist das Massenverhältnis von Wasser zu Zement: w/z = Wassermasse geteilt durch Zementmasse. Beispiel: 160 kg Wasser und 320 kg Zement ergeben 160 / 320 = 0,50. Übliche Werte liegen zwischen 0,40 und 0,65.",
+      "Je kleiner der w/z-Wert, desto weniger Poren und desto fester und dichter der Beton — aber desto schwerer lässt er sich verarbeiten. Das ist der Zielkonflikt: Festigkeit gegen Verarbeitbarkeit. Mehr Wasser macht dir die Arbeit leichter und den Beton schlechter.",
+      "Überschüssiges Wasser verdunstet später und hinterlässt Poren. Die Druckfestigkeit sinkt, der Beton wird durchlässiger für Wasser und Schadstoffe, und die Bewehrung ist schlechter geschützt. Nachträglich Wasser in den Frischbeton kippen ist deshalb kein Trick, sondern ein Schaden.",
+      "C25/30 liest du so: C steht für Concrete. Die erste Zahl ist die Zylinderdruckfestigkeit in N/mm² (Prüfkörper Ø 150 mm, Höhe 300 mm), die zweite die Würfeldruckfestigkeit (Kantenlänge 150 mm) — beide nach 28 Tagen. Reihenfolge: Zylinder zuerst, Würfel danach.",
+      "C8/10 ist die niedrigste Druckfestigkeitsklasse. Sie reicht zum Beispiel für unbewehrte Fundamente oder Sauberkeitsschichten. Sobald Bewehrung im Bauteil liegt, brauchst du mindestens C12/15 oder eine höhere Klasse. Kurz: unbewehrt darf niedrig sein, bewehrt nicht.",
+      "Die Konsistenz prüfst du mit dem Ausbreitversuch: Kegelstumpf mit Beton füllen, abheben, die Platte mehrmals anheben und fallen lassen, dann den Durchmesser des Betonfladens messen. Das ist das Ausbreitmaß in Millimetern. Es ergibt die Klassen F1 (steif, bis 340 mm) über F2 plastisch, F3 weich, F4 sehr weich und F5 fließfähig bis F6 (sehr fließfähig, ab 630 mm).",
+      "Es gibt ein zweites Prüfverfahren für dieselbe Eigenschaft: das Verdichtungsmaß. Es liefert die Klassen C0 (sehr steif) bis C3 (weich). Verwechsle dieses C nicht mit dem C der Druckfestigkeitsklassen. Merksatz: Ausbreitmaß ergibt F1 bis F6, Verdichtungsmaß ergibt C0 bis C3."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l15",
+    "lernfeld": "lf04",
+    "thema": "Tragverhalten",
+    "titel": "Tragverhalten von Stahlbeton: Beton drückt, Stahl zieht",
+    "inhalt": [
+      "Stahlbeton steckt in Decken, Balken und Stützen. Wenn du verstehst, wer im Bauteil welche Kraft aufnimmt, weißt du auch, warum der Stahl genau dort liegen muss, wo er liegt — und warum ein falsch eingebauter Stab das Bauteil schwächt.",
+      "Beton ist druckfest, aber zugschwach: Seine Zugfestigkeit beträgt nur etwa ein Zehntel seiner Druckfestigkeit. Deshalb übernimmt im Stahlbeton der Beton die Druckkräfte und der Bewehrungsstahl die Zugkräfte. Das ist das Grundprinzip in vier Wörtern: Beton drückt, Stahl zieht.",
+      "Beide zusammen ergeben den Verbundbaustoff Stahlbeton. Verbund heißt: Die zwei Stoffe arbeiten nicht nebeneinander her, sondern miteinander. Die Zugkraft geht vom Beton in den Stahl über, ohne dass der Stab sich löst oder verschiebt.",
+      "Drei Gründe machen diesen Verbund möglich. Erstens die Rippen am Betonstahl: Sie verzahnen sich formschlüssig im Beton. Zweitens die Haftung zwischen Zementstein und Stahl. Drittens der fast gleiche Wärmeausdehnungskoeffizient — dadurch wird der Verbund bei Temperaturänderungen nicht zerstört.",
+      "Kurzcheck ohne Buch: Welche Kräfte nimmt der Beton auf, welche der Stahl? Wie groß ist die Zugfestigkeit von Beton ungefähr im Verhältnis zu seiner Druckfestigkeit? Und nenne die drei Gründe, warum der Verbund zwischen Stahl und Beton funktioniert."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l16",
+    "lernfeld": "lf04",
+    "thema": "Wärmeausdehnung",
+    "titel": "Wärmeausdehnung: warum Stahl und Beton zusammenpassen",
+    "inhalt": [
+      "Bauteile werden bei Erwärmung länger. Beim Stahlbeton ist das kein Problem, sondern eine Voraussetzung dafür, dass er überhaupt funktioniert. Auf der Baustelle brauchst du beides: das Verständnis dahinter und die Rechnung für die Längenänderung.",
+      "Die Zahlen: Stahl dehnt sich um 0,012 mm je Meter und Kelvin aus, Beton um 0,010 mm/(m·K). Die beiden Werte liegen so dicht beieinander, dass man von einem fast gleichen Wärmeausdehnungskoeffizienten spricht. Stahl liegt minimal höher — das ist die einzige Reihenfolge, die du dir merken musst.",
+      "Genau darauf beruht der Verbund. Würden sich Stahl und Beton bei Erwärmung unterschiedlich stark ausdehnen, entstünden Spannungen im Verbund, die den Beton sprengen könnten. Weil sich beide annähernd gleich ausdehnen, hält die Verbindung auch bei Temperaturwechseln.",
+      "Die Formel für die Längenänderung lautet: Delta l = Ausdehnungskoeffizient mal Länge mal Temperaturänderung, kurz Delta l = alpha · l · Delta T. Halte die Einheiten sauber: Länge in Metern, Temperaturänderung in Kelvin, Ergebnis in Millimetern.",
+      "Beispiel mit Stahl: Ein 10 m langer Stahlbetonbalken wird um 30 K wärmer. Delta l = 0,012 · 10 · 30 = 3,6 mm. Das Muster bleibt immer gleich — Koeffizient mal Länge mal Temperaturdifferenz. Nichts quadrieren, nichts zusätzlich umrechnen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l17",
+    "lernfeld": "lf04",
+    "thema": "Bewehrungsarbeiten",
+    "titel": "Bewehrung: Plan lesen, flechten, richtig einlegen",
+    "inhalt": [
+      "Der Stahl muss dorthin, wo das Bauteil gezogen wird — sonst trägt die Decke nicht. Was wo hinkommt, steht im Bewehrungsplan. Wie es eingebaut wird, ist Handwerk mit einer festen Reihenfolge. Beides bekommst du hier.",
+      "Der Bewehrungsplan zeigt Lage, Anzahl, Durchmesser und Form der Bewehrungsstähle. Jeder Stab bekommt eine Positionsnummer. Dazu gehört die Stahlliste mit Stückzahlen und Gesamtlängen — nach ihr wird der Stahl bestellt. Ohne Plan wüsste der Eisenflechter nicht, wo welcher Stahl hinkommt.",
+      "Die Bewehrungsarbeiten laufen in vier Schritten ab: zuschneiden, biegen, verlegen, verknüpfen. Also erst nach Plan ablängen, dann biegen, dann in die Schalung einlegen, dann binden. Betoniert wird erst danach — die Reihenfolge dreht man nicht um.",
+      "Verknüpft wird mit Bindedraht an den Kreuzungspunkten der Stäbe. Der Draht sorgt dafür, dass die Bewehrung beim Betonieren in ihrer vorgeschriebenen Lage bleibt. Sie soll sich beim Einbringen und Verdichten des Betons nicht verschieben.",
+      "Für die Lage der Bewehrung stellst du immer dieselbe Frage: Wo dehnt sich das Bauteil? Dort, wo es sich streckt, entsteht Zug — und genau dorthin gehört der Stahl. Wo es gestaucht wird, entsteht Druck, und den nimmt der Beton auf.",
+      "Zwei Fälle zum Merken. Deckenplatte auf zwei Auflagern: Sie biegt sich in der Mitte nach unten durch, oben Druck, unten Zug — Bewehrung unten. Kragplatte, zum Beispiel ein Balkon: Das freie Ende hängt nach unten, oben Zug, unten Druck — Bewehrung oben. Genau umgekehrt.",
+      "Damit der Stahl nicht an die Schalung rutscht, kommen Abstandhalter zwischen Bewehrung und Schalhaut. Sie sichern die vorgeschriebene Betondeckung. Diese Betondeckung schützt den Stahl vor Rost und im Brandfall vor der Hitze.",
+      "Liegt der Stahl zu dicht an der Oberfläche, rostet er, dehnt sich dabei aus und sprengt den Beton ab. Deshalb ist der Abstandhalter kein Zubehör, sondern Teil der Konstruktion — er wird mitgeplant und nicht weggelassen.",
+      "Kurzcheck ohne Buch: Was steht alles im Bewehrungsplan und wozu dient die Stahlliste? Nenne die vier Arbeitsschritte in der richtigen Reihenfolge. Wo liegt die Zugzone bei einer Platte auf zwei Auflagern, wo bei einer Kragplatte? Und wofür sind Abstandhalter da?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l18",
+    "lernfeld": "lf04",
+    "thema": "Schalungselemente",
+    "titel": "Schalungselemente: Schalhaut, Träger, Stützen",
+    "inhalt": [
+      "Die Schalung ist die Form, in die der Beton gegossen wird. Sie bestimmt Maße und Oberfläche des fertigen Bauteils und muss den Druck des Frischbetons aushalten, bis er erhärtet ist. Aus welchen Teilen sie besteht, bekommst du hier von oben nach unten.",
+      "Eine Schalung hat drei Ebenen: die Schalhaut, die direkt am Beton liegt; die Unterkonstruktion aus Schalungsträgern, die die Schalhaut tragen; und die Unterstützung aus Stützen, in die die Träger ihre Lasten weiterleiten. Diese Reihenfolge trägt jede Schalung.",
+      "An die Schalhaut werden drei Anforderungen gestellt: formbeständig, maßgenau und dicht. Formbeständig und maßgenau, damit das Bauteil seine vorgesehene Form bekommt. Dicht, damit kein Zementleim beziehungsweise Feinmörtel durch Ritzen abfließt.",
+      "Am häufigsten ist Holz — als Bretter oder als Schalungsplatten aus Furnier- oder Stabsperrholz. Daneben gibt es Schalungen aus Stahl und aus Kunststoff. Die kommen dort zum Einsatz, wo Sichtbeton entstehen soll oder wo hohe Einsatzzahlen gefragt sind.",
+      "Bei Brettschalungen legst du die rechte Brettseite, die Kernseite, zum Beton hin. Nimmt das Holz Wasser auf, wölbt sich diese Seite zum Beton, die Fugen zwischen den Brettern schließen sich und die Schalhaut wird dichter — der Zementleim kann nicht auslaufen.",
+      "Schalungsplatten aus Furnier- oder Stabsperrholz sind maßhaltiger als einzelne Bretter und lassen sich schneller verlegen. Das bedeutet weniger Arbeitsaufwand und eine glattere Betonoberfläche. Die Kunstharzvergütung erhöht zusätzlich die Lebensdauer, die Platte hält also mehr Einsätze aus.",
+      "Schalungsträger nach DIN EN 13377 bestehen aus Holz, entweder als Gitterträger oder als Vollwandträger. Sie sind die Unterkonstruktion für Wand- und Deckenschalungen: Sie tragen die Schalhaut und leiten die Lasten in die Stützen weiter.",
+      "Als Unterstützung dienen Stahlrohrstützen, Rundholzstützen und Kantholzstützen. Am häufigsten sind Stahlrohrstützen — sie sind ausziehbar und lassen sich mit Keilen in der Höhe fein einstellen. Damit gleichst du auch krumme Untergründe aus.",
+      "Stützen müssen in Längs- und Querrichtung mit Diagonalen ausgesteift werden, sonst knicken sie unter waagerechten Kräften aus Wind, Schrägstützen und Betoniergeräten seitlich um. Und weil Frischbeton wie eine Flüssigkeit einen nach unten zunehmenden Druck erzeugt, sitzen die Säulenzwingen einer Stützenschalung unten enger."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf04-l19",
+    "lernfeld": "lf04",
+    "thema": "Schalungskonstruktionen",
+    "titel": "Wand-, Balken- und Deckenschalung — und was vorher draufkommt",
+    "inhalt": [
+      "Jedes Bauteil hat seine eigene Schalungskonstruktion. Du musst wissen, aus welchen Teilen Wand-, Balken- und Deckenschalung bestehen, wie sie gegen den seitlichen Betondruck gehalten werden und was vor dem Betonieren auf die Schalhaut kommt.",
+      "Die Wandschalung besteht aus drei Teilen: der Schalhaut aus Brettern oder Platten, den senkrechten Bogenhölzern, gegen die die Schalhaut genagelt wird, und den waagerechten Gurthölzern. Die verlaufen rechtwinklig zu den Bogenhölzern und werden mit Schalungsankern verspannt.",
+      "Die Balken- oder Sturzschalung hat U-Form: eine Bodenplatte und zwei Seitenplatten. Die Bodenplatte ist so breit wie der Balken und liegt zwischen den Seitenplatten. Aus diesen drei Platten entsteht die Form für den Balken beziehungsweise den Sturz.",
+      "Die anfallenden Kräfte der Sturzschalung gehen über Kopfhölzer — auch Jochholz genannt — und über Stützen in den Untergrund. Merk dir die Kette von oben nach unten: Schalhaut, Kopfholz, Stütze, Untergrund.",
+      "Die Deckenschalung besteht aus großflächigen Schaltafeln als Schalhaut, aus Schalungsträgern als Unterkonstruktion (Gitter- oder Vollwandträger) und aus Stahlrohrstützen als Unterstützung. Der Stützenabstand sollte dabei nicht größer als 1,20 m sein.",
+      "Gegen den seitlichen Betondruck werden die gegenüberliegenden Schalseiten mit Schalungsankern und Spannstählen zusammengehalten. Ein Schalungsanker besteht aus Ankerstab, Ankerverschluss und Abstandhalter. Zum Verspannen dienen Schraubverschlüsse, die über Flügelmuttern angezogen werden.",
+      "Vor dem Betonieren wird die Schalhaut mit einem Trennmittel (Schalöl) behandelt. Es verschließt die Holzporen und verhindert, dass der Beton an der Schalhaut haftet. Dadurch löst sich die Schalung nach dem Erhärten leichter und die Betonoberfläche wird glatt.",
+      "Kurzcheck ohne Buch: Aus welchen drei Teilen besteht die Wandschalung? Wie ist die Balkenschalung aufgebaut und wie breit ist ihre Bodenplatte? Woraus besteht eine Deckenschalung und wie groß sollte der Stützenabstand höchstens sein? Und wozu dient das Trennmittel?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

@@ -54,5 +54,164 @@
     "quelle": "DIN 1053 / DIN EN 1996 (Regelfugendicke); Kalksandstein-Maurerfibel",
     "konfidenz": "mittel",
     "svg": "<svg viewBox='0 0 380 244' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Lagerfuge und Stoßfuge im Mauerwerk'><rect x='60' y='44' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='150' y='44' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='60' y='78' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='150' y='78' width='90' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='60' y='70' width='180' height='8' fill='#c07d4a' stroke='none' opacity='0.55'/><rect x='146' y='44' width='8' height='26' fill='#c07d4a' stroke='none' opacity='0.55'/><line x1='300' y1='74' x2='250' y2='74' stroke='#c07d4a' stroke-width='1'/><circle cx='300' cy='74' r='11' fill='#c07d4a'/><text x='300' y='78.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>1</text><line x1='300' y1='44' x2='150' y2='40' stroke='#c07d4a' stroke-width='1'/><circle cx='300' cy='44' r='11' fill='#c07d4a'/><text x='300' y='48.5' fill='#1b1d20' font-size='13' text-anchor='middle' font-weight='bold'>2</text><line x1='18' y1='122' x2='362' y2='122' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><circle cx='27.0' cy='139.5' r='9' fill='#c07d4a'/><text x='27.0' y='143.5' fill='#1b1d20' font-size='11' text-anchor='middle' font-weight='bold'>1</text><text x='42.0' y='144' fill='currentColor' font-size='12.5'>Lagerfuge – waagerecht, ca. 12 mm</text><circle cx='27.0' cy='161.5' r='9' fill='#c07d4a'/><text x='27.0' y='165.5' fill='#1b1d20' font-size='11' text-anchor='middle' font-weight='bold'>2</text><text x='42.0' y='166' fill='currentColor' font-size='12.5'>Stoßfuge – senkrecht, ca. 10 mm</text><text x='18' y='199' fill='currentColor' font-size='12'>Der Mörtel verbindet die Steine und gleicht</text><text x='18' y='216' fill='currentColor' font-size='12'>Maßtoleranzen aus.</text></svg>"
+  },
+  {
+    "id": "lf03-l05",
+    "lernfeld": "lf03",
+    "thema": "Wandarten",
+    "titel": "Tragend, aussteifend, Trennwand, Brandwand",
+    "inhalt": [
+      "Bevor du an einer Wand arbeitest, musst du wissen, welche Aufgabe sie hat — davon hängt ihre Mindestdicke ab. Vier Arten musst du auseinanderhalten: tragende Wände, aussteifende Wände, nichttragende Trennwände und Brandwände.",
+      "Tragende Wände nehmen Lasten auf und haben eine Mindestdicke von 24 cm. Außenwände macht man aus Gründen des Wärme- und Schallschutzes im Allgemeinen mindestens 30 cm dick. Zwei Zahlen nebeneinander: 24 cm ist das Minimum fürs Tragen, 30 cm der übliche Wert außen.",
+      "Nichttragende Wände, also Trennwände, haben eine Mindestdicke von 11,5 cm. Sie tragen nur sich selbst und grenzen Räume ab; man unterscheidet leichte und schwere Trennwände. 11,5 cm ist genau eine Steinbreite.",
+      "Aussteifende Wände stehen rechtwinklig zu den tragenden Wänden und wirken dem Ausknicken entgegen. Damit das funktioniert, werden sie im festen Verbund mit den tragenden Wänden gemauert. Sie erhöhen die Standsicherheit des Gebäudes.",
+      "Wird eine aussteifende Wand außer ihrer Eigenlast zusätzlich belastet, wird sie wie eine tragende Wand bemessen. Zwei Stichworte reichen zum Merken: rechtwinklig zur tragenden Wand, im festen Verbund gemauert.",
+      "Die Brandwand muss im Bedarfsfall verhindern, dass Feuer durch die Wand zum Nachbargebäude durchschlägt. Sie darf im Brandfall ihre Standfestigkeit und Tragfähigkeit nicht verlieren. Mindestdicke: 24 cm.",
+      "Ausnahme bei Einfamilienhäusern mit Massivdecken: Dort dürfen Brandwände auch als zweischalige Wände ausgeführt werden, mit Schalendicken von je 17,5 cm. Achtung: 24 cm gilt als Mindestdicke sowohl für tragende Wände als auch für Brandwände — dieselbe Zahl, zwei verschiedene Gründe."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l06",
+    "lernfeld": "lf03",
+    "thema": "Künstliche Mauersteine",
+    "titel": "Steinformate, Ziegel, Kalksandstein, Porenbeton",
+    "inhalt": [
+      "Welchen Stein du vermauerst, entscheidet über Wanddicke, Dämmung und darüber, wie du ihn überhaupt bewegst. Einhandsteine dürfen bei einer Greifspanne bis 75 mm höchstens 6 kg wiegen, bei 75 bis 115 mm höchstens 7,5 kg. Zweihandsteine höchstens 25 kg, alles darüber nur maschinell.",
+      "Die Grundformate sind Dünnformat und Normalformat. DF misst 24 × 11,5 × 5,2 cm (Länge × Breite × Höhe), NF misst 24 × 11,5 × 7,1 cm. Länge und Breite sind gleich, NF ist nur höher. Die Steinmaße sind Nennmaße; das Baurichtmaß 25 cm rechnet die Mörtelfugen schon mit ein.",
+      "Größere Formate sind Vielfache von 1 DF: 2 DF = 24 × 11,5 × 11,3 cm, 3 DF = 24 × 17,5 × 11,3, 4 DF = 24 × 24 × 11,3, 5 DF = 30 × 24 × 11,3, 6 DF = 36,5 × 24 × 11,3, 8 DF = 24 × 24 × 23,8 cm. Von 2 DF bis 6 DF bleibt die Höhe bei 11,3 cm.",
+      "Gebrannte Mauersteine werden aus tonigen Rohstoffen hergestellt: Ziegel (Vollziegel, Leichtziegel, Klinker) und Schamottesteine. Kalksandsteine, Betonsteine und Porenbetonsteine sind ungebrannt. Die Ziegelherstellung läuft in fünf Schritten: Rohstoff abbauen, aufbereiten, im Strangpressverfahren durch ein Mundstück formen und vom Strang abschneiden, trocknen bis 100 Grad, brennen bei 900 bis 1200 Grad im Tunnelofen.",
+      "Die Kurzzeichen musst du lesen können: Mz = Vollziegel (Mauerziegel), HLz = Hochlochziegel, KMz = Vollklinker, VHLz = Vormauer-Hochlochziegel für Sichtmauerwerk, WDz = Wärmedämmziegel mit Lochungsart W. Nach DIN EN 771-1 gilt außerdem: P-Ziegel sind für geschütztes Mauerwerk bestimmt, U-Ziegel für ungeschütztes. Geschützt heißt: kein Kontakt zum Boden, gegen eindringendes Wasser geschützt.",
+      "Vollklinker (KMz) werden bis zur Sinterung bei etwa 1450 Grad gebrannt. Das Ergebnis: hohe Festigkeit, geringe Wasseraufnahme, hohe Frostbeständigkeit. Mindestdruckfestigkeit 28 MPa, bei höchstfesten Klinkern 36 MPa. Eingesetzt werden sie in DF und NF für Sicht- und Verblendmauerwerk; durch Lochung darf der Querschnitt um bis zu 15 Prozent gemindert sein.",
+      "Die Druckfestigkeitsklasse wird farbig gekennzeichnet: 4 blau, 6 rot, 8 und 10 ohne Farbe, 12 grün, 16 und 20 gelb, 28 braun, 36 violett, 48 und 60 schwarze Streifen. Kategorie I heißt: Die vom Hersteller angegebene Druckfestigkeit wird mit mindestens 95 Prozent Wahrscheinlichkeit erreicht. Bei Kategorie II wird sie mit geringerer Wahrscheinlichkeit zuverlässig erreicht — wichtig für die statische Berechnung.",
+      "Kalksandsteine bestehen aus Kalk (Branntkalk), Sand und Wasser. Die gepressten Rohlinge härten im Autoklav unter Dampfdruck bei rund 200 Grad, dabei entsteht Calcium-Silicat-Hydrat. Kurzzeichen: KS Vb = Verblender (mindestens Klasse 16, hohe Anforderungen an den Frostwiderstand), KS Vm = Vormauerstein (Klasse 10), KS BP = Bauplatte für nichttragende innere Trennwände. Gute Werte bei Wärmespeicherung und Schallschutz.",
+      "Porenbeton entsteht aus Quarzsand, Zement und Kalk mit Aluminiumpulver als Treibmittel: Das Aluminium bildet mit Wasser Wasserstoff und bläht die Masse feinporig auf. Die Rohblöcke werden mit Stahldrähten geschnitten und im Autoklav gehärtet, als Plansteine (PP) oder Planelemente (PPE). Klassen: PP2 = 2,5 MPa, PP4 = 5,0, PP6 = 7,5, PP8 = 10,0. Vorteil gegenüber Kalksandstein: höhere Wärmedämmfähigkeit und leichte Bearbeitung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l07",
+    "lernfeld": "lf03",
+    "thema": "Maßordnung",
+    "titel": "Achtelmeter, Nennmaße und Schichthöhen",
+    "inhalt": [
+      "Damit Steine, Fugen und Öffnungen zusammenpassen, rechnet der Hochbau in einem festen Grundmaß. Der Achtelmeter ist dieses Grundmaß: 1 am = 12,5 cm. Er ergibt sich aus einer Steinbreite von 11,5 cm plus einer Fugendicke von 1 cm — deshalb heißt er auch Kopfmaß.",
+      "Alle Mauerlängen, -dicken und -höhen werden in Vielfachen des Achtelmetermaßes berechnet. Zwei Köpfe sind 25 cm, acht Köpfe sind ein Meter. Das Baurichtmaß 25 cm ist die Grundlage der Maßordnung im Hochbau.",
+      "Baurichtmaße sind theoretische Maße für die Planung, zum Beispiel 12,5 cm und 25 cm. Nennmaße sind die wirklichen Maße der Bauteile in Ausführungszeichnungen, zum Beispiel 11,5 cm und 24 cm. Nennmaße ergeben sich aus dem Baurichtmaß zuzüglich oder abzüglich der Fugendicken.",
+      "Drei Maßarten, drei Rechnungen. Außenmaß bei frei endenden Mauern (Pfeiler, Wanddicken, Gebäudeaußenmaß): Nennmaß = Anzahl Köpfe × 12,5 cm minus 1 cm, weil außen keine Fuge sitzt. Innenmaß bei beidseitig angebauten Mauern (Tür- und Fensteröffnungen, Rauminnenmaße): Nennmaß = Anzahl Köpfe × 12,5 cm plus 1 cm, wegen der beidseitigen Fugen.",
+      "Anbaumaß bei einseitig angebauten Mauern (Mauervorlagen, Mauerhöhen): Nennmaß = Anzahl Köpfe × 12,5 cm, weder plus noch minus. Beispiel mit 8 Köpfen: außen 8 × 12,5 minus 1 = 99 cm, innen 8 × 12,5 plus 1 = 101 cm, angebaut glatt 100 cm.",
+      "Eine Schicht ist Steinhöhe plus Lagerfuge. Bei NF sind das 7,1 cm Stein und rund 1,2 cm Fuge, zusammen 8,33 cm — drei Schichten ergeben rund 25 cm. Bei 2 DF: 11,3 cm Stein plus 1,2 cm Fuge = 12,5 cm, zwei Schichten ergeben 25 cm.",
+      "Die vier Schichthöhen gehören in den Kopf: DF 6,25 cm, also 4 Schichten je 25 cm. NF 8,33 cm, 3 Schichten je 25 cm. 2 DF 12,5 cm, 2 Schichten je 25 cm. Großformat 25,0 cm, 1 Schicht je 25 cm.",
+      "Mauerhöhe = Schichtanzahl × Schichthöhe. 30 Schichten NF ergeben 30 × 8,33 = 249,9 cm. Umgekehrt gilt: Schichtanzahl = Mauerhöhe geteilt durch Schichthöhe. Eine 250 cm hohe Wand aus 2-DF-Steinen braucht 250 geteilt durch 12,5 = 20 Schichten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l08",
+    "lernfeld": "lf03",
+    "thema": "Baustoffbedarf",
+    "titel": "Steine und Mörtel je Quadratmeter Wand",
+    "inhalt": [
+      "Bevor du bestellst, musst du wissen, wie viele Steine und wie viel Mörtel in die Wand gehen. Die Rechnung läuft immer gleich: erst die Wandfläche ermitteln, dann Fläche mal Tabellenwert je Quadratmeter.",
+      "Wandfläche = Länge × Höhe, Ergebnis in Quadratmetern. Öffnungen für Fenster und Türen werden abgezogen: Nettofläche = Bruttofläche minus Öffnungsfläche. Erst mit dieser Nettofläche rechnest du den Bedarf aus.",
+      "Steinbedarf = Wandfläche × Steine je Quadratmeter. Mörtelbedarf = Wandfläche × Liter je Quadratmeter. Die Werte je Quadratmeter stehen in der Bedarfstabelle und hängen von Wanddicke und Steinformat ab.",
+      "Für die 11,5-cm-Wand mit vermörtelten Stoßfugen: DF-Steine 66 Stück und 36 Liter Mörtel je Quadratmeter, NF-Steine 50 Stück und 27 Liter, 2-DF-Steine 33 Stück und 20 Liter.",
+      "Für die 24-cm-Wand aus Hochlochziegeln 5 DF (30 × 24 × 11,3 cm) rechnest du mit 26 Steinen und 40 Litern Mörtel je Quadratmeter Wandfläche.",
+      "Beispiel ohne Öffnung: 24-cm-Wand, 6 m lang, 2,5 m hoch. Fläche = 6 × 2,5 = 15 Quadratmeter. Steine = 15 × 26 = 390 Stück. Mörtel = 15 × 40 = 600 Liter.",
+      "Beispiel mit Öffnung: 11,5-cm-Wand aus NF-Steinen, 10 m lang, 2,75 m hoch, 4 Quadratmeter Fenster. Brutto = 27,5, netto = 27,5 minus 4 = 23,5 Quadratmeter. Steine = 23,5 × 50 = 1175 Stück. Mörtel = 23,5 × 27 = 634,5 Liter.",
+      "Zum Gegenchecken innerhalb derselben Wanddicke: Bei der 11,5-cm-Wand gilt — je kleiner der Stein, desto mehr Steine und desto mehr Mörtel je Quadratmeter (66 zu 50 zu 33 Steine, 36 zu 27 zu 20 Liter). Über verschiedene Wanddicken hinweg lässt sich das nicht vergleichen; dort suchst du immer die passende Tabellenzeile heraus. Kommt bei dir für das größere Format mehr Material heraus, hast du die Tabellenzeile verwechselt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l09",
+    "lernfeld": "lf03",
+    "thema": "Darstellung",
+    "titel": "Schrägbilder und Aufmaßskizzen",
+    "inhalt": [
+      "Was du am Bestand siehst oder planst, hältst du am schnellsten in einer Skizze fest. Schrägbilder, auch Raumbilder genannt, erhöhen die Anschaulichkeit von Körpern und werden im Bauwesen häufig skizzenhaft gezeichnet.",
+      "Die Isometrie ist eine genormte schräge Parallelprojektion nach DIN ISO 5456-3. Das Achsenverhältnis ist a : b : c = 1 : 1 : 1, alle Kanten bleiben unverkürzt. Höhen zeichnest du senkrecht, Längen und Breiten im Winkel von 30 Grad zur Waagerechten.",
+      "Die Dimetrie hat das Achsenverhältnis 1 : 1 : 0,5 oder 1 : 1 : 0,7 — eine Achse wird also verkürzt gezeichnet. Dadurch wirkt das Bild oft natürlicher als bei der Isometrie.",
+      "Der Unterschied liegt im Maßverhältnis: Isometrie 1 : 1 : 1, nichts verkürzt. Dimetrie 1 : 1 : 0,5, eine Achse verkürzt. Beides sind räumliche Darstellungen. Entscheidend ist das Maßverhältnis der Achsen: Isometrie 1 : 1 : 1, Dimetrie 1 : 1 : 0,5 beziehungsweise 1 : 1 : 0,7.",
+      "Für die Linien gilt: Sichtbare Kanten zeichnest du als durchgehende Linien, verdeckte Kanten als gestrichelte Linien. So ist auf einen Blick klar, was vorn liegt und was dahinter verdeckt ist.",
+      "Aufmaßskizzen haben besondere Bedeutung bei der Bauaufnahme bestehender Gebäude oder Bauteile, zum Beispiel für einen Um- oder Anbau. Überlegungen zu baulichen Vorhaben werden zunächst durch Skizzen festgehalten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l10",
+    "lernfeld": "lf03",
+    "thema": "Arbeitsgerüste",
+    "titel": "Gerüste: Arten, Lastklassen und Sicherheit",
+    "inhalt": [
+      "An Fassade und Steildach ist das Gerüst das übliche Mittel, um sicher nach oben und sicher zu arbeiten. Und wer das falsche Gerüst oder die falsche Lastklasse nimmt, steht auf einer Konstruktion, die für seine Arbeit gar nicht gebaut ist. Deshalb musst du Gerüstarten, Tragsysteme und Lastklassen sauber auseinanderhalten.",
+      "Nach der Verwendung gibt es zwei Hauptgruppen. Arbeitsgerüste (AG) dienen der Ausführung von Bauarbeiten in Höhen — auf denen arbeitest du. Schutzgerüste dienen nur dem Schutz vor Absturz oder herabfallenden Gegenständen; dazu zählen Fanggerüst (FG), Dachfanggerüst (DG) und Schutzdach (SD). Das Fanggerüst schützt Personen vor tieferen Abstürzen.",
+      "Das zweite Ordnungsmerkmal ist das Tragsystem, davon gibt es vier: Standgerüst (S) steht auf dem Boden, Hängegerüst (H) ist an tragfähigen Bauteilen abgehängt, Auslegergerüst (A) liegt auf Kragträgern, Konsolgerüst (K) sitzt auf Konsolen an der Wand. Merk dir die vier Buchstaben S, H, A, K.",
+      "Die Lastklasse sagt, welche gleichmäßig verteilte Nutzlast der Belag trägt: LK 1 = 0,75, LK 2 = 1,50, LK 3 = 2,00, LK 4 = 3,00, LK 5 = 4,50, LK 6 = 6,00 kN/m². LK 1 nur für Kontrolltätigkeiten, höchstens eine Person je Gerüstfeld, keine Materiallagerung. LK 2 Malerarbeiten, LK 3 Putzarbeiten, LK 4 bis 6 Mauer- und Betonierarbeiten.",
+      "Beim Stahlrohr-Kupplungsgerüst hängt der Ständerabstand an der Lastklasse: LK 1 und 2 = 2,50 m, LK 3 und 4 = 2,00 m, LK 5 = 1,50 m, LK 6 = 1,20 m. Je höher die Lastklasse, desto enger die Ständer. In Regelausführung darf so ein Standgerüst (Fassadengerüst) bis 30 m hoch werden; die Rohre haben 48,3 mm Außendurchmesser.",
+      "Auslegergerüste tragen den Belag über Kragträger an der Geschossdecke. In Regelausführung sind sie als Arbeitsgerüste der Lastklassen 1 bis 3 sowie als Fanggerüste zugelassen. Rahmengerüste sind Systemgerüste aus vorgefertigten Stahl- oder Aluminiumteilen: schnell auf- und abzubauen, Abmessungen durch die Verbindungsmittel vorbestimmt, allgemeine bauaufsichtliche Zulassung nötig. Queraussteifung über Ständerrahmen, Längsaussteifung über Diagonalen oder eingesteckte Rahmen im Seitenschutz.",
+      "Liegt der Gerüstbelag mehr als 2 m über dem Boden, muss die Außenseite einen Seitenschutz bekommen — dreiteilig aus Geländerholm, Zwischenholm und Bordbrett. Ausgesteift wird das Gerüst durch Diagonalen, Rahmen und Verankerungen. Die Diagonalen müssen an den Kreuzungspunkten mit den senkrechten Traggliedern verbunden sein, und ein Strebenzug darf höchstens 5 Gerüstfelder übergreifen.",
+      "Verankern darfst du nur an standsicheren, festen Bauteilen: Deckenscheiben, Stützen, Mauerscheiben. Nicht zulässig sind Schneefanggitter, Blitzableiter, Dachrinnen und nicht tragfähige Fensterbrüstungen. Auf dem Gerüst gilt: nur absolut schwindelfreie Personen betreten es, ruhig und konzentriert arbeiten, keine Hektik und keine Spontanaktionen. Gerüste sind keine Turngeräte, und Seilzüge transportieren Werkstoffe und Werkzeug, keine Personen.",
+      "Fahrgerüst: Breite zu Höhe höchstens 1:4 im Freien, 1:3 im geschlossenen Raum. Nach DIN EN 1004 sind im Freien bis 8 m, innen bis 12 m Arbeitshöhe zulässig. Die Gerüstbezeichnung liest du stückweise: 4D heißt Lastklasse 4 als Dachfanggerüst, im Buchbeispiel als Stahlrohr-Kupplungsgerüst. SW 09/250 = Systembreite 0,90–1,20 m bei 2,50 m Feldlänge, H2 = Höhe 2 m, B = Bekleidung, LS = Leitern und Treppen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l11",
+    "lernfeld": "lf03",
+    "thema": "Das Mauern",
+    "titel": "Mauern: Werkzeug, Fugen und Arbeitsablauf",
+    "inhalt": [
+      "Wenn du selbst eine Wand hochziehst, entscheiden Werkzeug, Fugendicke und Arbeitsreihenfolge darüber, ob sie gerade, tragfähig und sauber wird. Diese Lektion gibt dir genau die Handgriffe und Maße dafür.",
+      "Das Grundwerkzeug beim Mauern: Maurerkelle, Maurerhammer, Wasserwaage, Richtscheit, Senklot und Maurerschnur. Die Kelle trägt Lagerfugen- und Stoßfugenmörtel auf, der Maurerhammer schlägt Teilsteine, und Wasserwaage, Richtscheit sowie Senklot messen waagerechte und senkrechte Mauerkanten ein.",
+      "Die Lagerfuge verläuft waagerecht und ist bis 1,25 cm dick. Die Stoßfuge verläuft senkrecht und ist etwa 1 cm dick. Die Richtung merkst du über das Wort: Lager wie liegend, also waagerecht. Und merk dir: Die Mörtelfugen sind der schwächste Teil im Mauerwerk.",
+      "Bei Sichtmauerwerk gelten andere Breiten: Stoß- und Lagerfugen sind dort etwa 1,5 cm breit und werden senkrecht eingelotet. Der Fugenmörtel wird plastisch verarbeitet und kräftig in die Fuge eingedrückt. Halte die Zahlen auseinander — bis 1,25 cm und ca. 1 cm im Mauerwerk, ca. 1,5 cm im Sichtmauerwerk.",
+      "Beim Hochführen der Schichten fängst du an den Mauerenden und Mauerecken an und mauerst sie lot- und fluchtgerecht hoch. Dazwischen kommt die Fluchtschnur: die gespannte Schnur zwischen zwei Mauerenden oder Ecken, die als Richtlinie für die waagerechte und fluchtgerechte Ausführung dient.",
+      "Für einen einwandfreien Mauerverband brauchst du neben ganzen Steinen auch Teilsteine, und zwar Halbsteine, Viertelsteine und Dreiviertelsteine. Du schlägst sie mit dem Maurerhammer oder schneidest sie mit der Steinsäge.",
+      "Beim Vermauern von Einhandsteinen gilt die Handwerksregel „ein Stein, ein Mörtel“. Die Reihenfolge: Stein greifen, Stoßfugenmörtel anbringen, Lagerfugenmörtel auftragen und verteilen, Stein versetzen und gegen den bereits versetzten Stein anschieben, hervorquellenden Mörtel abstreichen.",
+      "Mauerst du vom Gerüst aus, wird der Seitenschutz dreiteilig ausgebildet: Geländerholm, Zwischenholm und Bordbrett. Er dient der Sicherheit auf und neben dem Gerüst. Dazu kommen die Aussteifung durch diagonale Streben — Dreiecke sind stabil — und die Verankerung an standsicheren Bauteilen. Beides ist unerlässlich."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l12",
+    "lernfeld": "lf03",
+    "thema": "Mörtelmischungen",
+    "titel": "Mörtel mischen: Raumteile, Mörtelfaktor und Bedarf",
+    "inhalt": [
+      "Mörtel wird nach Raumteilen gemischt. Rechnest du die Volumenverminderung beim Mischen nicht ein, bestellst du zu wenig Sand oder rührst mehr an, als du brauchst. Mit einer Handvoll Zahlen rechnest du jeden Bedarf sauber aus.",
+      "Die Mörtelausbeute gibt an, wie viel Prozent des Ausgangsvolumens als fertiger Mörtel erhalten bleiben. Beim Mischen tritt eine Volumenverminderung ein, weil die Feinteile des Bindemittels die Hohlräume zwischen den Sandkörnern füllen. Der Mörtelfaktor ist die Gegenrechnung: Ausgangsstoffe = Mörtelvolumen mal Mörtelfaktor.",
+      "Zwei Zahlen musst du parat haben: Bei baufeuchtem Sand (etwa 3 % Wassergehalt) ist der Mörtelfaktor 1,6, bei trockenem Sand 1,4. Zum Faktor 1,6 gehört eine Mörtelausbeute von rund 62,5 Prozent — aus 100 Litern Ausgangsstoffen werden also etwa 62,5 Liter Mörtel.",
+      "Vom Mörtel zu den Stoffen rechnest du immer in vier Schritten. Erstens: Ausgangsstoffe = Mörtelvolumen mal Mörtelfaktor. Zweitens: Summe der Raumteile aus dem Mischungsverhältnis bilden. Drittens: ein Raumteil = Ausgangsstoffe geteilt durch die Summe der Raumteile. Viertens: Bedarf eines Stoffes = seine Raumteile mal das Volumen eines Raumteils.",
+      "Beispiel Zementmörtel MV 1:4 (1 Raumteil Zement, 4 Raumteile Sand) mit baufeuchtem Sand, 400 Liter Mörtel gewünscht: 400 mal 1,6 = 640 Liter Ausgangsstoffe. 1 plus 4 = 5 Raumteile. 640 geteilt durch 5 = 128 Liter je Raumteil. Sand = 4 mal 128 = 512 Liter, Zement = 128 Liter.",
+      "Kalkzementmörtel MV 1:1:6 heißt 1 Raumteil Kalkhydrat, 1 Raumteil Zement und 6 Raumteile Sand, zusammen 8 Raumteile. Bei 200 Litern Mörtel: 200 mal 1,6 = 320 Liter Ausgangsstoffe, 320 geteilt durch 8 = 40 Liter je Raumteil. Also 40 Liter Zement, 40 Liter Kalkhydrat, 240 Liter Sand.",
+      "Rückwärts geht es genauso, nur mit Division am Schluss. 4 Säcke Zement mal 20 Liter = 80 Liter Zement, bei MV 1:4 ist das genau 1 Raumteil. Mal 5 Raumteile = 400 Liter Ausgangsstoffe. 400 geteilt durch 1,6 = 250 Liter fertiger Mörtel.",
+      "Schüttvolumen je Sack: Zement 25 kg entspricht etwa 20 Liter. Weißkalk beziehungsweise Kalkhydrat 20 kg etwa 40 Liter. Hydraulischer Kalk 2 mit 25 kg etwa 35 Liter, hydraulischer Kalk 3,5 mit 25 kg etwa 30 Liter, hydraulischer Kalk 5 mit 25 kg etwa 25 Liter."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf03-l13",
+    "lernfeld": "lf03",
+    "thema": "Projektaufgabe",
+    "titel": "Projekt Gartenhaus: von der Grundfläche bis zur Dachfläche",
+    "inhalt": [
+      "In der Projektaufgabe hängt alles zusammen: Für ein Gartenhaus planst du Grundriss, Steinwahl, Mauerverband und Dachfläche in einem Durchgang. Diese Lektion gibt dir die Vorgaben und die Rechenwege dazu.",
+      "Die Vorgaben im Buchbeispiel: Das Gartenhäuschen besteht aus drei Räumen und darf höchstens 24 m² Grundfläche haben. Die Aufteilung ist Aufenthaltsraum 12 bis 16 m², Waschraum 4 bis 6 m² und Abstellraum 3 m². Dazu kommen ein Pultdach mit 15 Grad Neigung und 2,50 m Raumhöhe.",
+      "Für die Wände kommen alle drei Hauptgruppen künstlicher Mauersteine infrage: Mauerziegel mit guter Druckfestigkeit und wärmedämmend, Kalksandsteine mit gutem Schallschutz und günstig, Porenbetonsteine mit der besten Wärmedämmung und leicht zu bearbeiten. Du entscheidest also nach der Eigenschaft, auf die es dir bei dem Bau ankommt.",
+      "Mauerwerk wird im Verband hergestellt, weil die Überbindung — also die Verzahnung der Steine — die Tragfähigkeit der Wand sichert. Ohne Verband fallen Stoßfugen und Längsfugen übereinander, das nennt man Fugendeckung, und die Stabilität wird dadurch stark vermindert.",
+      "Die Dachfläche des Pultdachs rechnest du über die Sparrenlänge: Sparrenlänge = waagerechte Strecke geteilt durch cos(Neigungswinkel), Dachfläche = Sparrenlänge mal Gebäudelänge. Beispiel mit 15 Grad, 4 m Breite und 6 m Länge: cos 15 Grad = 0,966; 4 geteilt durch 0,966 = 4,14 m Sparren; 4,14 mal 6 = 24,9 m².",
+      "Kontrolle für deine Rechnung: Die geneigte Dachfläche ist immer größer als die überdeckte Grundfläche, weil du durch einen Kosinus kleiner als 1 teilst. Kommt bei dir weniger heraus als die Grundfläche, hast du multipliziert statt geteilt oder den Taschenrechner auf der falschen Winkeleinheit stehen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

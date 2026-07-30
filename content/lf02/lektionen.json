@@ -54,5 +54,259 @@
     "quelle": "ZVDH-Regelwerk / DIN EN 1991-1-4 Windlast (Erläuterungen); Windsog-Herstellerunterlagen",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 274' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Windsog: die Sogspitzen liegen an Rand und Ecke'><path d='M60 130 L190 58 L320 130' fill='none' stroke='currentColor' stroke-width='2'/><line x1='60' y1='130' x2='320' y2='130' stroke='currentColor' stroke-width='2'/><path d='M60 130 L86 130 L78 108 Z' fill='#c07d4a' stroke='none' stroke-width='1.8'/><path d='M320 130 L294 130 L302 108 Z' fill='#c07d4a' stroke='none' stroke-width='1.8'/><path d='M170 72 L210 72 L190 58 Z' fill='#c07d4a' stroke='none' stroke-width='1.8'/><line x1='44' y1='96' x2='66' y2='108' stroke='currentColor' stroke-width='1.4'/><line x1='66' y1='108' x2='59.7' y2='106.4' stroke='currentColor' stroke-width='1.4'/><line x1='66' y1='108' x2='61.2' y2='103.6' stroke='currentColor' stroke-width='1.4'/><line x1='336' y1='96' x2='314' y2='108' stroke='currentColor' stroke-width='1.4'/><line x1='314' y1='108' x2='318.8' y2='103.6' stroke='currentColor' stroke-width='1.4'/><line x1='314' y1='108' x2='320.3' y2='106.4' stroke='currentColor' stroke-width='1.4'/><line x1='190' y1='34' x2='190' y2='52' stroke='currentColor' stroke-width='1.4'/><line x1='190' y1='52' x2='188.4' y2='45.7' stroke='currentColor' stroke-width='1.4'/><line x1='190' y1='52' x2='191.6' y2='45.7' stroke='currentColor' stroke-width='1.4'/><line x1='18' y1='152' x2='362' y2='152' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='174' fill='currentColor' font-size='12.5'>Sogspitzen: Ortgang, First, Kehle, Traufecke</text><text x='30.0' y='196' fill='currentColor' font-size='12.5'>Windlastzonen 1–4, Zone 4 an Küste und Inseln</text><text x='18' y='229' fill='#c07d4a' font-size='12'>Dort dichter verklammern. Ab 65° Dachneigung wird</text><text x='18' y='246' fill='#c07d4a' font-size='12'>jeder Ziegel gesichert.</text></svg>"
+  },
+  {
+    "id": "lf02-l05",
+    "lernfeld": "lf02",
+    "thema": "Arbeitssicherheit",
+    "titel": "Sicher am Dach: Freileitungen, Leitern, Fanglagen",
+    "inhalt": [
+      "Arbeitssicherheit entscheidet auf dem Dach darüber, ob du abends heil vom Gerüst steigst. Deshalb gehören Sicherheitsabstände, Belastungsgrenzen und Absturzsicherungen genauso zu deinem Handwerk wie das Decken selbst - und zwar als feste Zahlen im Kopf, nicht als Bauchgefühl.",
+      "Träger der gesetzlichen Unfallversicherung sind die Berufsgenossenschaften. Sie erlassen die Unfallverhütungsvorschriften, kurz UVV. Überwacht wird die Einhaltung von den Berufsgenossenschaften zusammen mit den staatlichen Gewerbeaufsichtsämtern. Zwei Stichworte reichen: Berufsgenossenschaft erlässt, Berufsgenossenschaft und Gewerbeaufsichtsamt überwachen gemeinsam.",
+      "Zu elektrischen Freileitungen gelten Sicherheitsabstände nach Spannung: 1 m bis 1 kV, 3 m bei 1 bis 110 kV, 4 m bei 110 bis 220 kV und 5 m bei 220 bis 380 kV. Kennst du die Spannung nicht, gilt immer der größte Abstand von 5 m.",
+      "Diese Abstände gelten auch dann, wenn die Leitung spannungsfrei geschaltet ist, und dürfen nicht unterschritten werden. Besonders gefährlich sind nasse Dachlatten: Selbst weniger gut leitende Materialien leiten nass den Strom und können zu einem Stromüberschlag führen, wenn du sie im Bereich der Leitung unvorsichtig schwenkst.",
+      "Anlegeleitern müssen mindestens 1,00 m über ihren Austritt hinausragen. Der Anstellwinkel beträgt bei Sprossenleitern 65 bis 75 Grad, bei Stufenleitern 60 bis 70 Grad. Merk dir die Zuordnung über den Vergleich: Sprossenleiter steiler, Stufenleiter flacher.",
+      "Die Dachdecker-Auflegeleiter legst du auf Dachflächen bis 75 Grad Dachneigung auf und hängst sie in fachgerecht befestigte Sicherheitsdachhaken ein. Belasten darfst du sie mit höchstens 1,5 kN, und vor jeder Benutzung prüfst du sie auf Mängel. Verboten sind: oberste Sprosse in den Dachhaken einhängen, Leiter in eine Dachrinne stellen, Leitern zusammenbinden.",
+      "Dachdeckerstühle dürfen untereinander höchstens 2,50 m Abstand haben. Als Belag ist je Feld eine Bohle S 10 nach DIN 4074-1 mit einem Mindestquerschnitt von 4,5 mal 24 cm vorgeschrieben, belastbar mit höchstens 150 kg. Geprüft wird vor jeder Benutzung, besonders die Tragmittel. Geländerpfosten für einen Seitenschutz darfst du daran nie anbringen - dadurch entsteht Kippgefahr.",
+      "Schutzwände brauchen eine Bauhöhe von mindestens 1,00 m und müssen den zu sichernden Arbeitsplatz seitlich um mindestens 2 m überragen. Bei Geflechten oder Netzen darf die Maschenweite höchstens 10 cm betragen. Bei Dachneigungen zwischen 45 und 60 Grad sind besondere Arbeitsplätze einzurichten, bei Höhenunterschieden über 5,00 m zusätzlich Schutzwände.",
+      "Beim Fanggerüst darf der Höhenunterschied zwischen Absturzkante und Gerüstbelag bei mindestens 0,90 m Fanglage höchstens 2,00 m betragen. Denk auch nach innen: Schutzmaßnahmen gegen Absturz ins Gebäudeinnere sind unabhängig von der Dachneigung erforderlich. Geeignet sind dafür Fanggerüste oder Fangnetze unter der Arbeitsstelle."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l06",
+    "lernfeld": "lf02",
+    "thema": "Deckunterlage",
+    "titel": "Deckunterlage: Traglatten, Konterlatten, Schalung",
+    "inhalt": [
+      "Die Deckunterlage trägt später jeden Ziegel und jeden Windsog. Stimmen hier Querschnitt, Stützweite oder Befestigung nicht, hilft dir die sauberste Deckung darüber nichts mehr - deshalb sind das die Zahlen, die du schon beim Materialbestellen im Kopf haben musst.",
+      "Traglatten müssen maschinell sortiert sein und dürfen höchstens 20 Prozent Holzfeuchte aufweisen. Sie sollen gesund, trocken und möglichst astfrei sein. Zu feuchtes Holz arbeitet nach dem Einbau nach - die 20-Prozent-Grenze ist deshalb die Zahl, die du dir bei Traglatten zuerst merkst.",
+      "Für die Regelquerschnitte gilt ohne rechnerischen Nachweis: Eine Dachlatte 30/50 mm darf höchstens 80 cm überspannen, eine Dachlatte 40/60 mm höchstens 100 cm. Größerer Querschnitt heißt also größere zulässige Stützweite. Brauchst du mehr Stützweite, geht das nur mit rechnerischem Nachweis.",
+      "Die Fehlkante ist die nicht voll ausgebildete Kante am Schnittholz. Sie darf höchstens ein Drittel der zugehörigen Querschnittsseite betragen. Beim Einbau gilt zusätzlich: Die Kante, die zur Traufe zeigt, muss fehlkantenfrei sein.",
+      "Konterlatten dienen der Schaffung von Belüftungsquerschnitten zwischen der Deckung und den auf den Sparren angebrachten Zusatzmaßnahmen. Ihre Mindeststärke beträgt 24 mm. Ohne diesen Querschnitt kann die Luft unter der Deckung nicht strömen - die Konterlatte ist also kein Beiwerk, sondern Teil der Bauphysik.",
+      "Bei den Verbindungsmitteln zählt die Eindringtiefe, angegeben als Vielfaches des Durchmessers d. Vereinfacht gilt: glattschaftige Nägel und Klammern 12 d, profilierte Nägel - also Rillennägel - 8 d und Schrauben 6 d. Je besser das Mittel im Holz greift, desto geringer die nötige Eindringtiefe.",
+      "Bei der Holzschalung richtet sich die Mindestdicke nach dem Achsabstand der Unterkonstruktion. Ohne Einzelnachweis gilt: mindestens 24 mm bei einem Achsabstand bis 0,80 m, mindestens 28 mm bis 0,90 m und mindestens 30 mm bis 1,00 m. Größerer Abstand heißt also dickere Schalung.",
+      "Schalbretter sollen nicht breiter als 20 cm sein, weil sonst die Gefahr der Verwerfung zu groß wäre. Beim Verlegen zeigt die rechte Seite - die dem Baumkern abgewandte Brettseite - nach oben, und die Baumkanten liegen immer nach innen auf den Sparren."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l07",
+    "lernfeld": "lf02",
+    "thema": "Zusatzmaßnahmen",
+    "titel": "Zusatzmaßnahmen: Vordeckung, Unterspannung, Unterdach",
+    "inhalt": [
+      "Zusatzmaßnahmen liegen unter der Deckung und erhöhen die Regensicherheit des Daches. Sie fangen das Wasser ab, das trotz sauberer Deckung unter die Ziegel gerät - und genau deshalb entscheidet ihre Ausführung mit darüber, ob ein Dach bei Schlagregen dicht bleibt.",
+      "Die Vordeckung aus Bitumendachbahnen wird parallel zur Traufe verlegt, die Überdeckung muss mindestens 8 cm betragen. Befestigt wird mit Pappstiften. Die Richtung ist kein Zufall: parallel zur Traufe, also quer zum Gefälle, damit das Wasser über die Stöße läuft und nicht hinein.",
+      "Unterdeckbahnen (UDB) sind diffusionsoffen. Sie behindern die Diffusion des Wasserdampfes nicht, deshalb ist kein Belüftungsquerschnitt nötig. Unterspannbahnen (USB) sind diffusionsbehindernd und brauchen einen ausreichenden Belüftungsquerschnitt. Kurzform zum Merken: offen gleich ohne Belüftung, behindernd gleich mit Belüftung.",
+      "Unterspannbahnen werden von der Traufe zum First verlegt, alle weiteren Bahnen mit 10 cm Überdeckung. Diffusionshemmende Bahnen enden 5 cm unter dem Firstscheitelpunkt. Zwei Zahlen an zwei Orten: 10 cm Überdeckung in der Fläche, 5 cm Abstand unterhalb des Firstscheitelpunkts.",
+      "Beim wasserdichten Unterdach müssen Durchdringungen, Einbauteile und Einfassungen wasserdicht ausgeführt und wasserdicht in die Konterlatten eingebunden werden. Beim regensicheren Unterdach werden sie nur regensicher ausgeführt, und die Konterlatten werden auf der Abdichtung angebracht. Der Unterschied steckt also in der Konterlatte.",
+      "Für die Anschlüsse von Wärmedämmsystemen nimmst du Klebe- beziehungsweise Dichtungsbänder mit einer Breite über 10 cm. Montageschäume sind für diese Anschlüsse nicht geeignet - auch wenn die Dose auf der Baustelle schneller zur Hand ist als das Band.",
+      "Zwei Begriffe, die du sauber trennen musst: Die zusätzliche Befestigung einzelner Deckelemente heißt Verklammerung. Zusätzliche Sicherheit durch das Schließen von Fugen heißt Docken. Verklammern befestigt also das Deckelement, Docken schließt die Fuge.",
+      "Wichtig zur Einordnung: Docken, Vermörtelungen und Innenverstrich gelten nicht als Zusatzmaßnahme zur Erhöhung der Regensicherheit. Vermörtelung und Innenverstrich zählen außerdem nicht als Windsogsicherung. Docken bringt zwar zusätzliche Sicherheit an der Fuge, ersetzt aber keine Zusatzmaßnahme."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l08",
+    "lernfeld": "lf02",
+    "thema": "Qualität Ziegel",
+    "titel": "Ziegelqualität prüfen - und wozu Formziegel da sind",
+    "inhalt": [
+      "Ob eine Lieferung Dachziegel taugt, entscheidest du meist direkt an der Palette, ohne Labor. Dafür brauchst du drei einfache Prüfungen und das Wissen darüber, welche Werte ein Dachziegel erreichen muss und wie typische Schäden überhaupt entstehen.",
+      "Ohne Laboruntersuchung kannst du die Qualität eines Dachziegels mit drei Prüfungen beurteilen: der Sichtprobe, der Klangprobe und der Hauprobe. Die drei Namen gehören als Dreierpack zusammen - Sicht, Klang, Hau. So hast du sie schneller im Kopf.",
+      "Bei der Klangprobe schlägst du den Ziegel mit einem metallischen Gegenstand an. Der Klang weist auf eventuell vorliegende Risse hin: Ein rissefreier Dachziegel muss hell klingen. Klingt er nicht hell, ist das ein Hinweis auf einen Riss.",
+      "Bei der Prüfung der Biegetragfähigkeit gelten je nach Ziegelart unterschiedliche Mindestwerte: Biberschwanz mindestens 0,6 kN, ebene Falzziegel mindestens 0,9 kN, Mönch- und Nonnenziegel mindestens 1,0 kN und alle übrigen Ziegel mindestens 1,2 kN.",
+      "Mindestens die Hälfte aller Dachziegel einer Lieferung muss mit einer dauerhaften Kennzeichnung versehen sein, im Klartext oder verschlüsselt. Angegeben werden Hersteller, Produkttyp und Herkunftsland, wahlweise auch das Fabrikationsdatum.",
+      "Kalkmännchen entstehen so: Im Rohmaterial vorhandene Kalksteinstückchen werden beim Brennen zu Branntkalk. Wird der Ziegel feucht, löschen diese Teilchen zu Löschkalk ab. Die damit verbundene Volumenvergrößerung von bis zu 100 Prozent erzeugt Innendruck - und der führt zu Aussprengungen an der Oberfläche.",
+      "Für die Frostbeständigkeit ist das Kapillarporensystem entscheidend. Gefrierendes Wasser nimmt um etwa 11 Prozent an Volumen zu. Kann sich das Eis in den Porenhohlraum hinein ausdehnen, findet die Volumenzunahme Platz - genau dafür ist das Kapillarporensystem im Ziegel da.",
+      "Formziegel sind Spezialziegel. Mit ihnen deckst du Ränder, Kanten, Anschlüsse und Durchdringungen eines Ziegeldaches technisch richtig, ohne andere Materialien verwenden zu müssen. Formziegel sind nicht genormt, du richtest dich bei Form und Maßen also nach dem jeweiligen Hersteller und Modell."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l09",
+    "lernfeld": "lf02",
+    "thema": "Dachaufbauten",
+    "titel": "Gauben, Dachflächenfenster und der Wechsel",
+    "inhalt": [
+      "Sobald ein Loch ins Dach kommt - Gaube, Fenster oder Einschnitt -, greifst du in die Tragkonstruktion ein. An jedem Dachaufbau hängen deshalb zwei Fragen gleichzeitig: Wie kommen Licht und Raum ins Dachgeschoss, und wie wird die unterbrochene Last sauber aufgefangen?",
+      "Die drei bekanntesten Grundformen der Dachgaube sind die Schleppdachgaube, die Satteldachgaube beziehungsweise abgewalmte Satteldachgaube und die Fledermausgaube. Diese drei solltest du sicher benennen können, wenn ein Kunde oder ein Planer nach der Gaubenform fragt.",
+      "Bei der Schleppdachgaube muss zwischen der Unterkante der Gaubendecke und der Oberkante des Fußbodens eine lichte Höhe - die Kopfhöhe - von mindestens 1,85 m vorhanden sein. Alles darunter wäre ein Raum, in dem man an dieser Stelle nicht mehr aufrecht steht.",
+      "Dachflächenfenster werden durch Schlagregen und Hagel stark beansprucht. Deshalb sollten sie nie breiter als etwa 1,40 m sein. Sie erstrecken sich über ein bis höchstens zwei Sparrenfelder. Merk dir also beide Grenzen: Breite und Anzahl der Sparrenfelder.",
+      "Wird ein Sparren für eine Öffnung unterbrochen, brauchst du einen Wechsel: ein quer eingebautes Holz, mit dem der unterbrochene Sparren oberhalb und unterhalb der Öffnung abgefangen wird. Die Last wird auf die benachbarten Sparren übertragen, die deshalb stärker ausgebildet werden.",
+      "Über zwei Sparrenfelder hinaus wird es konstruktiv eng: Der Einbau ist dann nur bei Pfettendachstühlen möglich, weil dort ein neues Auflager für die Sparren geschaffen werden kann. Frag also früh nach der Dachkonstruktion, bevor jemand einen breiten Dacheinschnitt zusagt.",
+      "Kurzcheck ohne Buch: Welche drei Gaubengrundformen kannst du nennen? Welche lichte Höhe braucht die Schleppdachgaube? Wie breit darf ein Dachflächenfenster höchstens sein, und über wie viele Sparrenfelder reicht es? Was macht ein Wechsel - und bei welcher Konstruktion sind größere Einschnitte möglich?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l10",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Flächen",
+    "titel": "Flächen berechnen und Pythagoras am Dach",
+    "inhalt": [
+      "Aufmaß und Materialbedarf hängen an zwei Fragen: Wie groß ist die Fläche, und wie lang ist die Schräge? Mit dem Satz des Pythagoras, der Dreiecksformel und der Trapezformel deckst du die Aufgaben dieser Lektion ab - vom Giebeldreieck bis zur trapezförmigen Walmdachfläche.",
+      "Flächeneinheiten rechnest du mit der Umrechnungszahl 100 um, Längen dagegen mit der Zahl 10. Das ist logisch, weil eine Fläche zwei Richtungen hat und der Faktor 10 deshalb doppelt wirkt. So kommst du von 1 Quadratmeter auf 10 000 Quadratzentimeter.",
+      "Für Grundstücke rechnest du in Ar und Hektar: Ein Hektar entspricht 100 Ar, ein Ar entspricht 100 Quadratmetern. Zusammengefasst gilt also 1 ha gleich 100 a gleich 10 000 Quadratmeter. Auch hier steckt wieder die Umrechnungszahl 100 drin.",
+      "Die Dreiecksfläche berechnest du als A gleich g mal h geteilt durch 2. Beispiel Giebeldreieck: Grundlänge 10,20 m und Höhe 6,20 m ergeben 10,20 mal 6,20 geteilt durch 2 gleich 31,62 Quadratmeter.",
+      "Trapezförmige Flächen, etwa eine Walmdachfläche, rechnest du über die Mittellinie. Erst die Mittellinie: l_m gleich (l1 plus l2) geteilt durch 2. Dann die Fläche: A gleich l_m mal h. Beispiel: Trauflänge 18,00 m, Firstlänge 6,00 m, Höhe 8,97 m ergibt 12,00 mal 8,97 gleich 107,64 Quadratmeter.",
+      "Firsthöhe, Grundmaß und Dachschräge bilden ein rechtwinkliges Dreieck, die Dachschräge ist die Hypotenuse. Es gilt: s gleich Wurzel aus (h hoch 2 plus g hoch 2). Beispiel Pultdach: h gleich 4,10 m und g gleich 6,40 m ergeben s ungefähr 7,60 m.",
+      "Beim symmetrischen Satteldach ist das Grundmaß immer die halbe Gebäudebreite. Rechne also erst g gleich b geteilt durch 2, danach s gleich Wurzel aus (g hoch 2 plus h hoch 2). Beispiel: b gleich 13,80 m und h gleich 6,40 m ergeben g gleich 6,90 m und s gleich 9,41 m.",
+      "Die Reihenfolge schützt dich vor Fehlern: erst alle Maße in dieselbe Einheit bringen, dann die Hilfsgröße ausrechnen - halbe Gebäudebreite oder Mittellinie -, dann erst die Hauptformel anwenden. Und zum Schluss die Einheit ans Ergebnis schreiben, also Meter oder Quadratmeter."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l11",
+    "lernfeld": "lf02",
+    "thema": "Brandschutz",
+    "titel": "Dachneigungsklassen und Brandschutz",
+    "inhalt": [
+      "Zwei Grundeinordnungen begleiten dich bei jedem Dach: Wie steil ist es, und wie verhält sich das Material im Brandfall? Beide Einteilungen brauchst du im Gespräch mit Planer, Kunde und Kollegen - und beide bestehen aus wenigen, festen Grenzwerten.",
+      "Nach der Dachneigung (DN) unterscheidest du drei Bereiche: Das Flachdach liegt zwischen 0 und 5 Grad, das flach geneigte Dach zwischen 5 und 22 Grad, und ab mehr als 22 Grad sprichst du vom Steildach. Die beiden Grenzen sind also 5 Grad und 22 Grad.",
+      "Harte Bedachungen sind widerstandsfähig gegen Flugfeuer und strahlende Wärme. Weiche Bedachungen sind Dächer ohne diesen Nachweis nach DIN 4102-7. Hart und weich sagen hier nichts über die Materialhärte aus, sondern nur über das Verhalten gegenüber Flugfeuer und Wärmestrahlung.",
+      "Bei den Baustoffklassen steht A für nichtbrennbare Baustoffe. A1 sind nichtbrennbare Baustoffe ohne brennbare Bestandteile, A2 nichtbrennbare Baustoffe mit brennbaren Bestandteilen - für A2 ist ein Prüfzeichen erforderlich. Der Unterschied zwischen A1 und A2 liegt also in den brennbaren Bestandteilen.",
+      "B kennzeichnet brennbare Baustoffe. B1 heißt schwer entflammbar, B2 heißt normal entflammbar. Damit kannst du A1, A2, B1 und B2 in eine Reihenfolge bringen: von nichtbrennbar ohne brennbare Bestandteile bis normal entflammbar.",
+      "Zwei Klassifizierungen laufen nebeneinander her: Die deutsche Klassifizierung teilt Baustoffe nach ihrer Brennbarkeit ein, die europäische nach ihrem Brandverhalten. Merk dir die beiden Paare als Ganzes: deutsche Klassifizierung - Brennbarkeit, europäische Klassifizierung - Brandverhalten.",
+      "Kurzcheck ohne Buch: In welchem Bereich liegt die Dachneigung eines Flachdaches, und ab wann ist ein Dach ein Steildach? Was macht eine Bedachung zur harten Bedachung? Was unterscheidet A1 von A2? Und wonach teilt die europäische Klassifizierung ein?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l12",
+    "lernfeld": "lf02",
+    "thema": "Dachteile & Dachformen",
+    "titel": "Dachteile und Dachformen: die Sprache am Dach",
+    "inhalt": [
+      "Wenn auf der Baustelle jemand sagt \"die Kehle wird morgen fertig\", musst du sofort wissen, welche Kante gemeint ist. Die Namen der Dachteile sind die gemeinsame Sprache zwischen Plan, Aufmaß und Dach — ohne sie redest du an jedem zweiten Arbeitsschritt vorbei.",
+      "Geometrisch setzt sich ein Dach aus drei Bausteinen zusammen: aus Dachflächen, Dachlinien und Dachpunkten. Die Dachflächen werden von Dachlinien begrenzt, und die Dachlinien beginnen oder enden in Dachpunkten. Merk dir die Kette Fläche – Linie – Punkt, dann hast du die ganze Systematik im Kopf.",
+      "Zwei Kanten liegen waagerecht. Der First ist die obere waagerechte Schnittlinie zweier Dachflächen, ganz oben. Die Traufe ist die untere waagerechte Kante, ganz unten — dort sammelt die Dachrinne das Wasser. Oben First, unten Traufe: diese beiden verwechselst du dann nicht mehr.",
+      "Die beiden schrägen Schnittlinien unterscheidest du nach ihrer Richtung. Der Grat ist die ansteigende, vorspringende Schnittlinie zweier Dachflächen, also eine Außenkante. Die Kehle ist die einspringende, nach innen weisende Schnittlinie. Kurz gemerkt: Der Grat springt vor, die Kehle springt ein.",
+      "Der Ortgang ist die seitliche Kante einer Dachfläche am Giebel, auch Giebelkante genannt. Es gibt einen rechten und einen linken Ortgang. Damit hast du am Satteldach die Grundordnung: First oben, Traufe unten, Ortgang seitlich.",
+      "In der Kehle läuft das Wasser von beiden angrenzenden Dachflächen zusammen - der Wasseranfall ist dort deshalb besonders hoch. Genau deshalb brauchen Kehlen immer eine größere Neigung als die Regeldachneigung. Merksatz: mehr Wasser, mehr Neigung.",
+      "Die am häufigsten vorkommende Dachform ist das Satteldach. Es besteht aus zwei rechteckigen Dachflächen und zwei dreieckigen Giebeln. Walmdach, Pultdach und Mansarddach sind weitere Dachformen — die häufigste ist aber das Satteldach.",
+      "Beim Walmdach ist die Giebelseite durch eine geneigte Dachfläche ersetzt, die Walmdachfläche. Die schrägen Außenkanten, an denen Walmfläche und Hauptdachfläche zusammenstoßen, sind Grate. In der Draufsicht — der Dachausmittlung — siehst du es sofort: der First in der Mitte, vier Grate zu den Ecken, ringsum die Traufe.",
+      "Prüf dich ohne Buch: Wie heißt die obere waagerechte Kante, wie die untere? Welche Linie springt vor, welche springt ein? Wo liegt der Ortgang? Aus welchen drei geometrischen Bestandteilen setzt sich ein Dach zusammen? Und welche Dachform kommt am häufigsten vor?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l13",
+    "lernfeld": "lf02",
+    "thema": "Deckungsarten",
+    "titel": "Ableitend oder abdichtend: die zwei Deckungsarten",
+    "inhalt": [
+      "Ob du Einzelelemente schuppenförmig legst oder Bahnen miteinander verschweißt, entscheidet über alles Weitere: Material, Arbeitsweise und die Frage, ob das Dach überhaupt geneigt sein muss. Deshalb sortierst du jede Deckung zuerst in eine von zwei Schubladen — ableitend oder abdichtend.",
+      "Ableitende Deckungen bestehen aus einzelnen Elementen wie Ziegeln, Dachsteinen oder Schiefer, die sich schuppenförmig überdecken. Ihre Fugen sind nicht wasser- und luftdicht. Das Wasser wird also nur abgeleitet, nicht abgesperrt — und genau deshalb ist für ableitende Deckungen eine Mindestneigung vorgeschrieben.",
+      "Bei einer abdichtenden Deckung entsteht die Dachhaut aus untereinander verklebten oder verschweißten Bahnen und aus Anstrichen. Das Ergebnis ist eine geschlossene, wasser- und luftdichte Dachhaut. Typische Beispiele sind Bitumen- oder Kunststoffbahnen beim Flachdach.",
+      "Der Unterschied in einem Satz: ableitend heißt viele Einzelteile mit offenen Fugen und vorgeschriebener Mindestneigung, abdichtend heißt eine durchgehende dichte Haut aus verbundenen Bahnen. Die Wörter sagen es schon — ableiten heißt weiterleiten, abdichten heißt dicht machen.",
+      "Für beide Deckungsarten gilt derselbe Grundsatz: Anfallendes Wasser wird so schnell wie möglich der Rinne beziehungsweise dem Abflussrohr zugeleitet. Egal ob Ziegeldach oder Flachdach — Wasser soll nicht stehen bleiben, sondern weg.",
+      "Prüf dich ohne Buch: Woraus besteht eine ableitende Deckung, und warum braucht sie eine Mindestneigung? Wodurch entsteht bei einer abdichtenden Deckung die Dachhaut? Und welcher Grundsatz gilt für beide Deckungsarten gleichermaßen?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l14",
+    "lernfeld": "lf02",
+    "thema": "Werkstoffe Ziegel",
+    "titel": "Vom Ton zum Dachziegel: formen, brennen, färben",
+    "inhalt": [
+      "Wenn du weißt, wie ein Dachziegel entsteht, verstehst du auch, warum er sich so verhält, wie er sich verhält: warum der Rohling größer ist als der fertige Ziegel, warum eine Glasur dicht ist und eine Engobe nur Farbe gibt.",
+      "Reiner Ton schwindet beim Brennen sehr stark und muss deshalb gemagert werden. Das geschieht mit feinem Quarzsand und Ziegelmehl. Damit liegt das Schwindmaß zwischen 8 und 12 Prozent. Merk dir das Wortpaar: magern mit Quarzsand und Ziegelmehl.",
+      "Beim Formen gibt es zwei Wege. Strangdachziegel werden durch entsprechend ausgebildete Mundstücke der Strangpresse geformt und von den dahinter angeordneten Abschneidern abgelängt. Pressdachziegel entstehen dagegen in Revolverpressen. Kurz: Strang kommt aus der Strangpresse, Press aus der Revolverpresse.",
+      "Weil Trocknen und Brennen den Rohling schrumpfen lassen, wird er von vornherein größer geformt — bis zu 12 Prozent größer als das Endmaß. Zum Zurückrechnen gilt: Endmaß = Rohlingslänge geteilt durch (1 + Schwindmaß geteilt durch 100).",
+      "Beispiel: Rohling 440 Millimeter, Schwindmaß 10 Prozent. Endmaß = 440 geteilt durch 1,10 = 400 Millimeter. Zieh nicht einfach 10 Prozent ab — das gäbe 396 Millimeter und wäre falsch, weil sich der Prozentsatz auf das kleinere Endmaß bezieht, nicht auf den Rohling.",
+      "Die getrockneten Rohlinge werden auf Stahlwagen durch Tunnelöfen bewegt und bei etwa 900 bis 1200 Grad gebrannt. Dabei findet eine chemische Umbildung statt: Der gebrannte Ziegel lässt sich durch Wasser nicht mehr umformen. Merkzahlen sind 900 bis 1200.",
+      "Drei Wege zur Farbe. Dämpfen: Reduzierende Stoffe im Brand reduzieren das Eisenoxid des Rohtons, der Ziegel wird grau bis dunkelblau. Engoben sind dünnflüssige Schlämme aus Ton, Metalloxiden und Wasser — sie geben Farbe, beeinflussen die Eigenschaften des Ziegels aber nicht. Glasuren aus Metallsilicaten bilden beim Brand eine wasserdichte, glasähnliche, glänzende Schicht.",
+      "Prüf dich ohne Buch: Womit wird Ton gemagert, und wie groß ist das Schwindmaß? Wie unterscheiden sich Strang- und Pressdachziegel in der Herstellung? Bei welcher Temperatur wird im Tunnelofen gebrannt? Und was ist der Unterschied zwischen Engobe und Glasur?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l15",
+    "lernfeld": "lf02",
+    "thema": "Ziegelarten",
+    "titel": "Ziegelarten: Biber, Mönch und Nonne, Pfanne, Falzziegel",
+    "inhalt": [
+      "Jede Ziegelart bringt ihre eigenen Regeln mit: eigene Maße, eigene Deckrichtung, eigene Falze, eigene Regeldachneigung. Wer den Ziegel auf der Palette nicht benennen kann, deckt ihn falsch — deshalb lohnt sich hier das saubere Auseinanderhalten.",
+      "Der Biberschwanzziegel wird überwiegend in zwei Modellen hergestellt: im Berliner Modell mit 155 mal 380 Millimeter und im Süddeutschen Modell mit 180 mal 380 Millimeter. Gleich ist bei beiden die Länge 380, unterschiedlich die Breite — 155 Berlin, 180 Süddeutschland.",
+      "Am unteren Ende hat der Biber verschiedene Fußausbildungen. Am häufigsten gebraucht werden Segment- und Rundschnittbiber. Daneben gibt es unter anderem Sechseck-, Spitzrauten-, Gotische, Wappen- und Gradschnittbiber.",
+      "Bei der Mönch-Nonnen-Deckung liegen die nach unten schmäler werdenden Schalen auf der Dachlatte — das sind die Nonnen. Die nach unten breiter werdenden Schalen, die Mönche, überdecken die Stoßfugen. Eselsbrücke: Die Nonne liegt unten, der Mönch deckt darüber.",
+      "Der Krempziegel besteht aus einer ebenen Platte mit konischem Wulst und senkrechtem Steg. Er ist der einzige nicht ebene Dachziegel, der von links nach rechts eingedeckt wird.",
+      "Bei der Hohlpfanne unterscheidest du zwei Arten des Eckschnittes: Der Kurzschnitt gehört zur Aufschnittdeckung, der Langschnitt zur Vorschnittdeckung. Merk dir die zwei Paare: Kurzschnitt gehört zur Aufschnittdeckung, Langschnitt zur Vorschnittdeckung.",
+      "Um die Regensicherheit der Deckung zu erhöhen, werden die Ränder der Dachziegel mit Kopf-, Fuß-, Seiten- und Deckfalzen versehen, die ineinandergreifen. Ziegel, die nach DIN EN 1304 an allen vier Seiten verfalzt sind, gehören zur Gruppe der Falzziegel.",
+      "Zu den Flachdachziegeln (FDZ) gehören alle verfalzten Pressdachziegel mit mehrfacher Ringverfalzung; ihre Regeldachneigung beträgt 22 Grad. Nicht verwechseln: DIN EN 1304 gilt für Dachziegel aus Ton, DIN EN 490 dagegen für Dachsteine aus Beton.",
+      "Prüf dich ohne Buch: Nenne die beiden Bibermodelle mit ihren Maßen. Welche zwei Fußausbildungen sind die häufigsten? Wer liegt bei Mönch und Nonne auf der Latte? Welcher Ziegel wird von links nach rechts gedeckt? Welcher Eckschnitt gehört zur Vorschnittdeckung? Und wie groß ist die Regeldachneigung der Flachdachziegel?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l16",
+    "lernfeld": "lf02",
+    "thema": "Dachsteine",
+    "titel": "Dachsteine aus Beton und die Einbauteile im Dach",
+    "inhalt": [
+      "Dachsteine sehen auf dem Dach aus wie Ziegel, sind aber ein anderes Produkt mit eigener Norm und eigenen Deckregeln. Und egal welche Deckung darunterliegt: Ohne Einbauteile kommst du weder gesichert aufs Dach noch bekommst du Licht in die Räume darunter.",
+      "Dachsteine aus Beton nach DIN EN 490 sind flächige Deckelemente aus Feinbeton. Für sie darf der Begriff Ziegel nicht verwendet werden, denn der ist Tonprodukten vorbehalten. Also sauber trennen: Ton ergibt Ziegel, Beton ergibt Dachsteine.",
+      "Ausgangsmaterial für Dachsteine sind etwa 70 Masseprozent Sand, hochwertiger Portlandzement, zement- und lichtechte Farbpigmente sowie Wasser. Die Merkzahl ist die 70 Prozent Sand — der Rest ist Bindemittel, Farbe und Wasser.",
+      "Allen Dachsteinarten ist gemeinsam, dass sie keine Kopf- und Fußverfalzungen haben. Dadurch sind sie in der Höhenüberdeckung variabel und damit auch in den Lattabständen. Kein Kopf- und Fußfalz heißt also: mehr Spielraum bei der Lattung als beim rundum verfalzten Dachziegel.",
+      "Profilierte Dachsteine haben statt der Fußverfalzungen Fußverrippungen. Dadurch ist eine zusätzliche Sicherheit gegen das Einwehen von Staub und Flugschnee gegeben. Merke: Die Verrippung übernimmt hier die Aufgabe des fehlenden Fußfalzes.",
+      "Zwei Prüfwerte solltest du im Kopf haben. Frostbeständigkeit: 25 Frost-Tau-Wechsel-Zyklen muss ein Dachstein unbeschadet überstehen. Maßhaltigkeit: für die Hängelänge gilt plus/minus 4 Millimeter, für die Deckbreite plus/minus 5 Millimeter. Kurz gemerkt: 25 — 4 — 5.",
+      "Einbauteile werden nach ihrer Aufgabe in drei Gruppen unterschieden. Sie dienen der Sicherheit, einer Verbindung zwischen innen und außen oder der Belichtung der unter dem Dach liegenden Räume. Drei Stichworte reichen: Sicherheit, Verbindung, Licht.",
+      "Sicherheitsdachhaken werden nach DIN EN 517 hergestellt. Typ B ist in Richtung Traufe und/oder Ortgang und über First belastbar. Halte die Normnummern getrennt: 517 für Sicherheitsdachhaken, 490 für Dachsteine aus Beton, 1304 für Dachziegel aus Ton.",
+      "Prüf dich ohne Buch: Nach welcher Norm werden Dachsteine hergestellt, und warum heißen sie nicht Ziegel? Woraus bestehen sie? Warum sind ihre Lattabstände variabler? Wozu dient die Fußverrippung? Wie viele Frost-Tau-Wechsel müssen sie aushalten? Und welche drei Gruppen von Einbauteilen gibt es?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l17",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Neigung",
+    "titel": "Neigung rechnen: Prozent, Verhältnis, Höhenunterschied",
+    "inhalt": [
+      "Gefälle wird mal in Prozent, mal als Verhältnis 1:n angegeben. Du musst zwischen diesen Angaben hin- und herrechnen können und aus einer Neigung den Höhenunterschied über eine bestimmte Länge bestimmen — sonst stimmt am Flachdach weder das Gefälle noch die Aufkantung.",
+      "Der Prozentsatz gibt an, um wie viel die Strecke auf 100 Meter fällt. 3 Prozent Gefälle heißt also: auf 100 Meter geht es 3 Meter nach unten. Damit hast du sofort ein Gefühl dafür, ob ein Ergebnis überhaupt plausibel sein kann.",
+      "Höhe aus Gefälle und Länge: Höhe h = Prozentsatz mal Länge, geteilt durch 100. Beispiel: 3 Prozent Gefälle auf 12 Meter Länge. h = 3 mal 12 geteilt durch 100 = 0,36 Meter, also 36 Zentimeter Höhenunterschied.",
+      "Umgekehrt rechnest du den Prozentsatz aus: p = Höhe mal 100, geteilt durch Länge. Beispiel: 0,30 Meter Höhenunterschied auf 6 Meter Länge. p = 0,30 mal 100 geteilt durch 6 = 5 Prozent. Bring beide Längen vorher in dieselbe Einheit.",
+      "Verhältnis und Prozentsatz lassen sich wechselseitig umrechnen, denn es gilt 1 geteilt durch n = p geteilt durch 100. Daraus folgt: p = (1 geteilt durch n) mal 100. Beispiel: Neigung 1:20 ergibt 100 geteilt durch 20 = 5 Prozent.",
+      "Einen Kontrollpunkt solltest du auswendig können: 45 Grad entsprechen dem Verhältnis 1:1 und dem Prozentsatz 100 Prozent. Kommt bei einer flachen Neigung ein Wert über 100 Prozent heraus, hast du dich verrechnet — flacher als 45 Grad heißt immer weniger als 100 Prozent.",
+      "Zum Aufmaß am Flachdach: Bei einem rechtwinklig versprungenen Grundriss heben sich die Vor- und Rücksprünge gegenseitig auf. Der Dachrand ist deshalb genauso lang wie der Umfang des umschließenden Rechtecks: U = 2 mal Länge plus 2 mal Breite.",
+      "Beispiel dazu: Das umschließende Rechteck ist 30 Meter lang und 18 Meter breit. U = 2 mal 30 plus 2 mal 18 = 60 plus 36 = 96 Meter Dachrand. Wichtig ist die Bedingung — die Versprünge müssen rechtwinklig sein, sonst gilt die Abkürzung nicht.",
+      "Prüf dich ohne Buch: Wie rechnest du aus Gefälle und Länge den Höhenunterschied? Wie kommst du von Höhe und Länge auf den Prozentsatz? Wie wird aus 1:n ein Prozentsatz? Welchem Winkel entsprechen 100 Prozent? Und wie lang ist der Rand eines rechtwinklig versprungenen Flachdachs?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf02-l18",
+    "lernfeld": "lf02",
+    "thema": "Rechnen Dachflächen",
+    "titel": "Dachflächen und Sparrenlängen mit Winkelfunktionen",
+    "inhalt": [
+      "Ob du Ziegel bestellst, Lattung rechnest oder ein Gerüst planst — du brauchst die Dachfläche in Quadratmetern und die Sparrenlänge in Metern. Beides holst du aus einem einzigen rechtwinkligen Dreieck, das in jedem geneigten Dach steckt.",
+      "Am symmetrischen Satteldach bilden die Firsthöhe h, das Grundmaß g (die halbe Gebäudebreite) und der Sparren s ein rechtwinkliges Dreieck; der Sparren ist die Hypotenuse. Daraus folgen zwei gleichwertige Wege: s = Wurzel aus (g² + h²) über Pythagoras oder s = g geteilt durch cos DN über die Winkelfunktion.",
+      "Beim Pultdach ohne Dachüberstand ist die Gebäudebreite b die Ankathete und die Sparrenlänge die Hypotenuse: s = b geteilt durch cos DN. Die Firsthöhe ist die Gegenkathete: f_H = b mal tan DN. Buchbeispiel: b = 8,00 Meter bei 40 Grad ergibt s = 10,44 Meter und f_H = 6,71 Meter.",
+      "Beim gleich geneigten Satteldach rechnest du mit der halben Breite: s = (b geteilt durch 2) geteilt durch cos DN. Eine Dachfläche ist A1 = Trauflänge t mal s. Weil beide Flächen gleich groß sind, gilt für die Gesamtfläche A_ges = 2 mal A1.",
+      "Buchbeispiel: 10,00 Meter breit, 15,00 Meter lang, 50 Grad Neigung. s = 5,00 geteilt durch cos 50 Grad = 7,78 Meter. A1 = 15,00 mal 7,78 = 116,70 Quadratmeter. A_ges = 2 mal 116,70 = 233,40 Quadratmeter. Rechne mit allen Nachkommastellen weiter, dann bleiben Rundungsunterschiede klein.",
+      "Die schnelle Probe ist die Kontrollfläche: A_K = Grundfläche des Gebäudes geteilt durch cos DN. Für das Beispiel: 10,00 mal 15,00 = 150 Quadratmeter, geteilt durch cos 50 Grad = rund 233,4 Quadratmeter. Das passt zur Summe der Einzelflächen — die Probe gilt für Dächer ohne Dachüberstand.",
+      "Beim gleich geneigten Walmdach ist der Gratsparren die Hypotenuse aus halber Gebäudebreite und Sparrenlänge: g = Wurzel aus ((b geteilt durch 2)² + s²). Buchbeispiel: b = 12,00 Meter bei 48 Grad ergibt s = 8,97 Meter und g = 10,79 Meter.",
+      "Wenn du das Satteldach zeichnen sollst, geh in dieser Reihenfolge vor: zuerst die beiden gleich geneigten Dachflächen über der Hauswand bis zum First, dann die Senkrechte vom First bis zur Traufhöhe als Firsthöhe h mit markiertem rechten Winkel, dann das Grundmaß g als halbe Gebäudebreite und den Sparren s beschriften, zuletzt den Neigungswinkel DN an der Traufe zwischen Sparren und Waagerechter.",
+      "Prüf dich ohne Buch: Wie kommst du beim Pultdach an Sparrenlänge und Firsthöhe? Wie rechnest du die Gesamtfläche eines Satteldachs? Womit kontrollierst du das Ergebnis? Und wie berechnest du den Gratsparren beim Walmdach?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]
