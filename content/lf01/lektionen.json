@@ -40,5 +40,148 @@
     "quelle": "BG BAU / DGUV — Arbeitsschutz am Bau (STOP-Prinzip)",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 252' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='STOP-Prinzip: Rangfolge der Schutzmaßnahmen'><rect x='18' y='40' width='306' height='30' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='30' y='59.2' fill='#c07d4a' font-size='12' text-anchor='start'>S — Substitution: Gefahr vermeiden</text><rect x='18' y='76' width='306' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='30' y='95.2' fill='currentColor' font-size='12' text-anchor='start'>T — Technisch: Geländer, Gerüst, Netz</text><rect x='18' y='112' width='306' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='30' y='131.2' fill='currentColor' font-size='12' text-anchor='start'>O — Organisatorisch: Ablauf, Unterweisung</text><rect x='18' y='148' width='306' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='30' y='167.2' fill='currentColor' font-size='12' text-anchor='start'>P — Persönlich: PSA, Auffanggurt</text><line x1='346' y1='172' x2='346' y2='34' stroke='#c07d4a' stroke-width='2'/><line x1='346' y1='34' x2='347.6' y2='40.3' stroke='#c07d4a' stroke-width='2'/><line x1='346' y1='34' x2='344.4' y2='40.3' stroke='#c07d4a' stroke-width='2'/><text x='340' y='26' fill='#c07d4a' font-size='11' text-anchor='end' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>wirksamer</text><text x='18' y='207' fill='#c07d4a' font-size='12'>Die höhere Stufe hat immer Vorrang. PSA steht an</text><text x='18' y='224' fill='#c07d4a' font-size='12'>letzter Stelle.</text></svg>"
+  },
+  {
+    "id": "lf01-l04",
+    "lernfeld": "lf01",
+    "thema": "Geometrie",
+    "titel": "Winkel, Dreiecke und Zirkelkonstruktionen",
+    "inhalt": [
+      "Winkel, Dreiecke und Konstruktionen mit Zirkel und Lineal brauchst du am Dach jeden Tag: Das Dreieck ist statisch eine stabile, nicht verschiebliche Figur und kommt deshalb in Dachkonstruktionen, Fachwerkwänden und Verstrebungen ständig vor.",
+      "Winkel sortierst du nach ihrer Größe: zwischen 0 und 90 Grad spitz, genau 90 Grad rechter Winkel, zwischen 90 und 180 Grad stumpf, genau 180 Grad gestreckt, über 180 Grad überstumpf. Die wichtige Grenze ist 90 Grad — daran hängt spitz, recht oder stumpf.",
+      "Nebenwinkel haben einen gemeinsamen Schenkel und ergänzen sich immer zu 180 Grad. Die Rechnung ist deshalb kurz: Nebenwinkel = 180 Grad minus alpha. Beispiel: alpha = 125 Grad, also Nebenwinkel = 180 minus 125 = 55 Grad.",
+      "Stufenwinkel entstehen, wenn zwei parallele Geraden von einer dritten Geraden geschnitten werden. Sie liegen auf derselben Seite gleichläufig und sind gleich groß. Achte auf die Lage: Nur die gleichläufig liegenden Winkel sind gleich groß — der Winkel direkt daneben ist dessen Nebenwinkel, also 180 Grad minus dem Wert.",
+      "Die Innenwinkelsumme im Dreieck beträgt immer 180 Grad. Kennst du zwei Winkel, rechnest du den dritten aus: gamma = 180 Grad minus alpha minus beta. Beispiel: alpha = 60 Grad, beta = 45 Grad, dann ist gamma = 180 minus 60 minus 45 = 75 Grad.",
+      "Nach den Seiten unterscheidest du drei Dreiecke: gleichseitig (alle Seiten gleich), gleichschenklig (zwei Seiten gleich), ungleichseitig (alle Seiten verschieden). Zwei gleich lange Seiten heißt also gleichschenklig.",
+      "Die Mittelsenkrechte teilt eine Strecke im rechten Winkel genau in der Mitte; jeder Punkt auf ihr hat zu beiden Endpunkten den gleichen Abstand. Konstruktion: Zirkel größer als die halbe Strecke einstellen (r größer als AB/2), je einen Kreisbogen um A und um B schlagen, die beiden Schnittpunkte oben und unten mit dem Lineal verbinden. Die Gerade trifft AB im Mittelpunkt M.",
+      "Seitenhalbierende sind die Geraden von den Eckpunkten zu den gegenüberliegenden Seitenmitten. Alle drei schneiden sich in einem Punkt S, und genau der ist der Schwerpunkt des Dreiecks. Kurzform: Schnittpunkt der drei Seitenhalbierenden = Schwerpunkt.",
+      "Vielecke sind Flächen mit mehr als vier Ecken. Regelmäßig heißt: alle Seiten und alle Winkel sind gleich groß, und sie besitzen einen Umkreis und einen Inkreis. Beim Sechseck praktisch: Eine Sechseckseite entspricht genau dem Halbmesser (Radius) des Umkreises, deshalb lässt es sich einfach mit dem Zirkel konstruieren."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l05",
+    "lernfeld": "lf01",
+    "thema": "Bauzeichnung",
+    "titel": "Bauzeichnungen lesen: Maßstab, Maße, Linien",
+    "inhalt": [
+      "Die Bauzeichnung ist deine Arbeitsanweisung — was du falsch abliest, baust du falsch aufs Dach. Bauzeichnungen sind technische Zeichnungen nach einheitlichen Regeln. Sie müssen sachlich, eindeutig und verständlich sein, damit alle Beteiligten sie gleich lesen. Drei Wörter zum Merken: sachlich, eindeutig, verständlich.",
+      "Maßstab heißt: das Größenverhältnis einer Strecke in der Zeichnung zu ihrer wirklichen Länge, abgekürzt 1:n. Das n sagt, um welchen Faktor die Zeichnung kleiner ist als die Wirklichkeit. Bei 1:50 entspricht 1 cm in der Zeichnung 50 cm in Wirklichkeit. Beide Richtungen merken: wirkliche Länge = Zeichnungslänge mal n, Zeichnungslänge = wirkliche Länge geteilt durch n.",
+      "Rechne zuerst alles in dieselbe Einheit, dann teilen oder malnehmen. Wirklichkeit in Zeichnung, 1:50: 6 m sind 6 mal 100 = 600 cm, davon 600 geteilt durch 50 = 12 cm auf dem Plan. Zeichnung in Wirklichkeit, 1:100: 7 cm mal 100 = 700 cm, also 7 m. Bei 1:100 gilt: 1 cm auf dem Plan = 1 m.",
+      "Jede Planart hat ihren eigenen Maßstab. Lageplan: 1:500 oder 1:1000. Entwurfs- und Eingabepläne: 1:100. Ausführungszeichnungen: 1:50. Teilzeichnungen: 1:1 bis 1:25. Je größer die Zahl hinter dem Doppelpunkt, desto stärker ist verkleinert.",
+      "Maßangaben: alles unter einem Meter in Zentimetern, zum Beispiel 99. Alles ab einem Meter in Metern, zum Beispiel 1,24. Millimetermaße werden durch hochgesetzte Ziffern gekennzeichnet. Kurz: unter einem Meter — cm.",
+      "Querschnitte erkennst du am Zeichen vor der Maßzahl. Ø heißt runder Querschnitt, die Zahl dahinter ist der Durchmesser, zum Beispiel Ø 30. R kennzeichnet einen Radius. Das Quadratzeichen (Kästchen) steht für quadratische Querschnitte. Rechteckige Querschnitte schreibt man als Bruch Breite/Höhe, zum Beispiel 12/16.",
+      "Höhen stehen nach DIN 1356 in Dreiecken, und die Füllung entscheidet. Offenes, weißes Dreieck: fertige Höhenlage, zum Beispiel Oberkante fertiger Fußboden (FFB). Angelegtes, schwarzes Dreieck: Rohbauhöhe, zum Beispiel Oberkante Rohdecke (RFB). Eselsbrücke: weiß = fertig, schwarz = roh. Verwechselst du die beiden, rechnest du mit der falschen Höhe.",
+      "Linienarten nach DIN ISO 128-23: Verdeckte Kanten und Umrisse von Bauteilen — alles, was von der Ansichtsseite aus nicht zu sehen ist — zeichnest du mit einer breiten Strichlinie. Die schmale Strichpunktlinie ist für Mittel- und Symmetrielinien reserviert, nicht für verdeckte Kanten. Verwechsle die beiden nicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l06",
+    "lernfeld": "lf01",
+    "thema": "Beruf & Organisation",
+    "titel": "Ausbildung, Innung und ZVDH",
+    "inhalt": [
+      "Du musst wissen, wie deine Ausbildung aufgebaut ist und wer sie organisiert — sonst weißt du nicht, wo deine Theorie herkommt, wo deine Praxis herkommt und wer am Ende deine Gesellenprüfung abnimmt.",
+      "Deine Ausbildung dauert drei Jahre und läuft dual — also an zwei Lernorten. Die theoretischen Kenntnisse bekommst du in der Berufsschule, die praktischen Fertigkeiten im Betrieb. Dazu kommen überbetriebliche Ausbildungsstätten, die beides ergänzen. Also: nicht zwei Jahre, nicht rein schulisch, nicht rein betrieblich.",
+      "Merk dir die Zuordnung stur: Theorie gehört in die Berufsschule, Praxis in den Betrieb, die Ergänzung in die überbetriebliche Ausbildungsstätte. Falsch sind Antworten wie ausschließlich im Betrieb, durch den Polier auf der Baustelle oder nur in der Meisterschule.",
+      "Bauhandwerk und Bauindustrie sind nicht dasselbe. Das Bauhandwerk besteht überwiegend aus kleinen und mittleren Betrieben, die in Innungen organisiert sind. Die Bauindustrie besteht aus größeren Betrieben mit Schwerpunkten im Hoch-, Tief- und Ingenieurbau. Unterschieden wird also nach Betriebsgröße und Schwerpunkt.",
+      "In Innungen sind die Betriebe des Bauhandwerks organisiert. Zu den Aufgaben der Dachdeckerinnungen gehört unter anderem die Überwachung der betrieblichen Ausbildung sowie die Abnahme von Zwischen- und Gesellenprüfungen. Zwei Stichworte reichen fürs Gedächtnis: betriebliche Ausbildung überwachen, Zwischen- und Gesellenprüfungen abnehmen.",
+      "Über den Innungen steht der ZVDH — der Zentralverband des Deutschen Dachdeckerhandwerks. Er ist die bundesweite Dachverbands-Organisation des Dachdeckerhandwerks und umfasst 16 Landesinnungsverbände mit über 200 Dachdeckerinnungen und rund 7000 Mitgliedsbetrieben.",
+      "Die Struktur von unten nach oben: Mitgliedsbetrieb, Dachdeckerinnung, Landesinnungsverband, ZVDH. Merk dir dazu die drei Zahlen — 16, über 200, rund 7000. Und die Abkürzung: ZV wie Zentralverband, D wie Deutsches, D wie Dachdecker, H wie Handwerk.",
+      "Kurzcheck ohne Buch: Wie lange dauert die Ausbildung und wie ist sie aufgebaut? Wo werden die theoretischen Kenntnisse vermittelt? Was unterscheidet Bauindustrie und Bauhandwerk? Wofür steht ZVDH und wie viele Landesinnungsverbände umfasst er? Welche zwei Aufgaben der Dachdeckerinnungen musst du nennen können?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l07",
+    "lernfeld": "lf01",
+    "thema": "Bauplanung & Vergabe",
+    "titel": "Vom Bauantrag bis zur Abrechnung",
+    "inhalt": [
+      "Damit du weißt, welches Papier hinter deiner Arbeit steckt: Bauantrag, Baugenehmigung, VOB und Bauzeitenplan bestimmen, wann du anfangen darfst, wie lange du Zeit hast und wie du dein Geld abrechnest. Vier Begriffe, die zusammengehören.",
+      "Zum Bauantrag gehören: Lageplan im Maßstab 1:500 oder 1:1000, Entwurfszeichnungen 1:100, Baubeschreibung, Berechnungen (GRZ, GFZ), technische Nachweise und das Entwässerungsgesuch. GRZ steht für Grundflächenzahl, GFZ für Geschossflächenzahl. Diese Liste lernst du am besten auswendig.",
+      "Die klassische Falle: Das Angebot eines Bauunternehmers gehört NICHT zum Bauantrag. Angebote laufen über die Vergabe, nicht über die Behörde. Merke: Was das Bauamt zur Prüfung braucht, ist Bauantrag. Was zwischen Bauherr und Firma verhandelt wird, ist Vergabe.",
+      "Maßstab lesen: 1:100 heißt, 1 cm auf dem Plan sind 100 cm in echt. Je kleiner die zweite Zahl, desto mehr Detail. Lageplan 1:500 oder 1:1000 zeigt das Grundstück, Entwurfszeichnung 1:100 das Gebäude, Ausführungszeichnungen 1:50 bis 1:5 die Details für die Ausführung.",
+      "Reihenfolge: erst Bauantrag, dann Baugenehmigung. Mit der Bauausführung darf erst nach der Baugenehmigung begonnen werden. Ohne Genehmigung kein Baubeginn.",
+      "VOB heißt Vergabe- und Vertragsordnung für Bauleistungen. Zerleg das Wort: Vergabe + und + Vertrags + ordnung. Sie regelt, wie Bauleistungen vergeben, vertraglich vereinbart und abgerechnet werden. Für die Abrechnung gilt: Der Unternehmer muss Art und Umfang seiner Leistung prüfbar nachweisen — mit Massenberechnungen und Zeichnungen.",
+      "Der Bauzeitenplan stellt den zeitlichen Ablauf der Arbeiten dar: welche Arbeit wann dran ist und wie viele Arbeitstage (AT) sie dauert. Wird ein vereinbarter Termin überschritten, kann eine Vertragsstrafe fällig werden. Das andere Wort dafür: Konventionalstrafe. Beide meinen dasselbe.",
+      "Wird nach der Summe der Arbeitstage gefragt, addierst du die Einzelwerte. Beispiel: Baustelleneinrichtung 2, Erdarbeiten 3, Entwässerung 2, Fundament 2, Betonarbeiten 8, Mauerarbeiten 10, Zimmerarbeiten 6. Also 2 + 3 + 2 + 2 + 8 + 10 + 6 = 33 AT. Tipp: in Häppchen rechnen, 2+3+2+2 = 9, dann 8+10+6 = 24, zusammen 33. Achtung: Das ist die Summe der Arbeitstage — nicht automatisch die Bauzeit, denn im Balkenplan laufen Gewerke teilweise parallel."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l08",
+    "lernfeld": "lf01",
+    "thema": "Baustelleneinrichtung",
+    "titel": "Kran, Wege, Absperrung: so steht die Baustelle",
+    "inhalt": [
+      "Wie du die Baustelle einrichtest, entscheidet jeden Tag über deine Wege, über das, was der Kran erreicht, und darüber, ob der Verkehr sicher an deiner Arbeitsstelle vorbeikommt.",
+      "Der Kran gibt die Anordnung vor. In seinen Schwenkbereich gehören das Bauwerk, das Lager für schwere Baustoffe — Stahl, Steine, Fertigteile — und ein Teil der Zufahrt als Ladezone. Alles, was schwer ist und gehoben werden muss, liegt dort, wo der Kran hinkommt.",
+      "Außerhalb des Schwenkbereichs bleiben die Unterkünfte der Arbeiter, der Zimmerplatz und der Oberboden. Umgekehrt gefragt: Was muss im Schwenkbereich liegen? Das Bauwerk und das Lager schwerer Baustoffe. Nicht die Unterkünfte, nicht der Zimmerplatz, nicht der Oberboden.",
+      "Der Weg von der Unterkunft zur eigentlichen Arbeitsstelle soll höchstens 150 m betragen. Wird er länger, müsstest du Transportmittel für die Arbeitskräfte einsetzen. Merk dir die Zahl genau: 150 m.",
+      "Just-in-time-Baustelle: eine Baustelle mit wenig Lagerplatz, oft innerörtlich. Baustoffe und Bauteile werden genau zu dem Zeitpunkt angeliefert, an dem sie gebraucht werden, und vom Lkw direkt zur Einbaustelle gebracht. Der Grund ist einfach: Es ist kein Lagerplatz vorhanden.",
+      "Absperrschranke, zwei Maße: Oberkante 1,00 m, Unterkante 0,15 m. Beide zusammen merken.",
+      "Sperrst du die gesamte Fahrbahn, bringst du mindestens 5 rote Warnleuchten an. Sind nur einzelne Fahrstreifen gesperrt, genügen mindestens 3 gelbe Warnleuchten. Eselsbrücke: ganze Fahrbahn — mehr Leuchten und rot; einzelner Streifen — weniger Leuchten und gelb.",
+      "Die Zahlen im Schnelldurchlauf: Weg zur Unterkunft höchstens 150 m. Absperrschranke Oberkante 1,00 m, Unterkante 0,15 m. Ganze Fahrbahn gesperrt: mindestens 5 rote Warnleuchten. Nur Fahrstreifen gesperrt: mindestens 3 gelbe. Im Schwenkbereich des Krans: Bauwerk, Lager schwerer Baustoffe, Ladezone."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l09",
+    "lernfeld": "lf01",
+    "thema": "Vermessung",
+    "titel": "Messen und rechte Winkel abstecken",
+    "inhalt": [
+      "Auf der Baustelle brauchst du Vermessung, um Längen zu messen, Geraden abzustecken und rechte Winkel auf den Boden zu bringen. Dein Werkzeug dabei: Messband, Fluchtstab und Kreuzscheibe.",
+      "Die gesetzliche Einheit der Länge ist der Meter. Es gilt: 1 m = 100 cm = 1000 mm. Reines Auswendigwissen — merk dir die Kette in einem Stück: Meter, Zentimeter, Millimeter, also 1, 100, 1000.",
+      "Messbänder bestehen meist aus Stahl und haben eine Zentimeterteilung. Übliche Herstellungslängen sind 20, 30 und 50 m.",
+      "Der Fluchtstab ist etwa 2 m lang, aus Holz, mit rot-weißen Farbfeldern von 50 cm und einer Stahlspitze am unteren Ende. Du stellst ihn senkrecht über den Messungspunkt. Über mehreren Punkten aufgestellt steckst du damit Geraden ab — das heißt Einfluchten.",
+      "Rechte Winkel steckst du mit der Kreuzscheibe ab. Der kegelstumpfförmige Kopf sitzt auf einem etwa 1,40 m langen Stab und hat paarweise gegenüberliegende senkrechte Sehschlitze. Deren Zielebenen bilden einen rechten Winkel: Peilst du durch das eine Schlitzpaar, steht das andere genau 90 Grad dazu.",
+      "Rechte Winkel gehen auch ohne Gerät. Steck ein Dreieck im Verhältnis 3 : 4 : 5 ab, dann liegt der rechte Winkel zwischen der 3er- und der 4er-Seite. Grund: 3 mal 3 plus 4 mal 4 = 5 mal 5, also 9 + 16 = 25.",
+      "In der Rechenaufgabe bekommst du einen Faktor. Die beiden kurzen Seiten sind 3 mal Faktor und 4 mal Faktor, die Hypotenuse ist immer 5 mal Faktor. Faktor 2 heißt: 6 m, 8 m, 10 m. Zur Kontrolle Pythagoras: c = Wurzel aus (a² + b²), also Wurzel aus (36 + 64) = 10.",
+      "Kurz gemerkt: Meter, 100 cm, 1000 mm. Stahlmessband in 20, 30 und 50 m mit Zentimeterteilung. Fluchtstab rund 2 m, rot-weiße 50-cm-Felder, zum Einfluchten. Kreuzscheibe auf 1,40-m-Stab für rechte Winkel. Und 3 : 4 : 5 ergibt immer einen rechten Winkel."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l10",
+    "lernfeld": "lf01",
+    "thema": "Baugeräte",
+    "titel": "Der Kran auf der Baustelle",
+    "inhalt": [
+      "Der Kran ist auf der Baustelle das Gerät, mit dem schwere Baustoffe nach oben kommen. Du musst seine Bauteile benennen können, verstehen, wovon seine Traglast abhängt, und wissen, wer damit nicht befördert werden darf.",
+      "Ein Turmdrehkran mit Katzausleger besteht aus Turm, Ausleger (Katzausleger), Laufkatze, Lasthaken und Ballast (Gegengewicht). In der Zeichnung findest du sie so: Der Turm steht senkrecht, der Ausleger liegt waagerecht oben, die Laufkatze fährt auf dem Ausleger, der Lasthaken hängt an der Laufkatze, und der Ballast sitzt auf der Gegenseite des Auslegers.",
+      "Ausladung heißt: wie weit der Haken waagerecht vom Turm weg ist. Merke die Regel — je größer die Ausladung, desto geringer die Nutzlast. Bei maximaler Ausladung ist die Nutzlast am kleinsten. Grund: langer Hebelarm, also weniger Last, sonst wird das Kippmoment zu groß.",
+      "Zum Ausgleich der aufgenommenen Last dient der Ballast — meist aus Betonfertigteilen. Er sitzt als Gegengewicht auf der Gegenseite.",
+      "Der Schnellaufbaukran ist ein Turmdrehkran, dessen Aufstellzeit nur wenige Stunden beträgt. Deshalb nimmst du ihn bei kurzen Kraneinsätzen. Häufig ist er als Fahrzeugkran auf einem Lkw-Fahrgestell gebaut.",
+      "Personen dürfen mit Lastaufnahmemitteln — zum Beispiel einem Steinkorb — grundsätzlich nicht befördert werden. Nie mitfahren, auch nicht kurz, auch nicht mit Helm. Die einzige Ausnahme: der Betonierkübel, wenn der Arbeitsplatz entsprechend gesichert ist und die Personen angeseilt sind.",
+      "Prüf dich selbst, ohne zurückzublättern: Nenne die fünf Teile des Turmdrehkrans. Was passiert mit der Nutzlast, wenn die Ausladung wächst? Wofür ist der Ballast da und woraus besteht er? Was ist beim Schnellaufbaukran besonders? Und: Wann darf ein Mensch am Kran hängen?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf01-l11",
+    "lernfeld": "lf01",
+    "thema": "Projekt",
+    "titel": "Projekt Einfamilienhaus: Grundfläche, Traufhöhe, Maßstab",
+    "inhalt": [
+      "Bei diesem Projekt liest du aus Plan und Baubeschreibung drei Dinge heraus, die auf der Baustelle zählen: wie groß die überbaute Grundfläche ist, wie hoch das Haus bis zur Traufe werden darf und wie lang eine Wand in der Zeichnung wird.",
+      "Überbaute Grundfläche eines rechteckigen Hauses: Grundfläche = Länge mal Breite. Meter mal Meter ergibt Quadratmeter, das Ergebnis steht also in m². Beispiel: 12,50 m mal 7,25 m = 90,625 m². Rechne mit allen Nachkommastellen weiter und runde erst am Schluss.",
+      "Die Baubeschreibung setzt Grenzen, an die sich die Planung halten muss. Hier gilt: Die Gesamthöhe von Oberkante gewachsener Boden bis Oberkante Traufe darf 5,50 m nicht überschreiten. Beide Messpunkte musst du kennen — unten der gewachsene Boden, oben die Traufe, nicht der First. Merkzahl: 5,50 m.",
+      "Maßstab 1:n heißt: eine Länge auf dem Papier entspricht dem n-fachen in Wirklichkeit. Daraus folgt die Formel: Zeichnungslänge = wirkliche Länge geteilt durch n. Beide Längen müssen dieselbe Einheit haben, deshalb rechnest du die wirkliche Länge zuerst in Zentimeter um. Es gilt 1 m = 100 cm.",
+      "Beispiel im Maßstab 1:125, die Wand ist in Wirklichkeit 10 m lang. Schritt 1: 10 mal 100 = 1000 cm. Schritt 2: 1000 geteilt durch 125 = 8 cm. In der Zeichnung wird die Wand also 8 cm lang. Immer diese Reihenfolge: erst umrechnen, dann teilen.",
+      "Gegenprobe: Zeichnungslänge mal Maßstabszahl muss wieder die wirkliche Länge ergeben. 8 cm mal 125 = 1000 cm = 10 m. Passt. Grober Fehlercheck: Bei 1:125 muss die Zeichnungslänge deutlich kleiner sein als die wirkliche Länge. Kommt etwas Größeres heraus, hast du mal statt geteilt gerechnet.",
+      "Drei Sätze fürs Gedächtnis: Grundfläche = Länge mal Breite, Ergebnis in m². Die Gesamthöhe von Oberkante gewachsener Boden bis Oberkante Traufe darf 5,50 m nicht überschreiten. Zeichnungslänge = wirkliche Länge in cm geteilt durch die Maßstabszahl."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik, LF 1, S. 8–32)",
+    "konfidenz": "hoch"
   }
 ]
