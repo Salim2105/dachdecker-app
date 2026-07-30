@@ -8,17 +8,17 @@
     "konfidenz": "hoch",
     "frage": "Welche Bereiche gehören zur Bauphysik?",
     "optionen": [
-      "Statik und Standsicherheit",
       "Wärmeschutz",
-      "Feuchtigkeitsschutz",
+      "Brandschutz",
       "Schallschutz",
-      "Brandschutz"
+      "Feuchtigkeitsschutz",
+      "Statik und Standsicherheit"
     ],
     "korrekt": [
+      0,
       1,
       2,
-      3,
-      4
+      3
     ],
     "erklaerung": "Wärme, Feuchte und Schall sind die drei großen physikalischen Erscheinungen am Bau, der Brandschutz kommt als vierter Bereich hinzu. Merke dir die Untergliederung: Wärmeschutz im Sommer und im Winter, Schallschutz gegen Luft-, Körper- und Trittschall, Feuchtigkeitsschutz gegen Tauwasser, Bodenfeuchte und Regen, Brandschutz vorbeugend und abwehrend.",
     "bildDatei": "/buch/anhang2/bauphysik-uebersicht.webp",
@@ -33,15 +33,15 @@
     "konfidenz": "hoch",
     "frage": "Welches Ziel verfolgt der Wärmeschutz?",
     "optionen": [
+      "Das Wohlbefinden des Menschen zu jeder Jahreszeit sichern",
       "Gleichzeitig wertvolle Energie einsparen und so die Umwelt schonen",
       "Spannungen und zu erhebliche Bauschäden vermeiden",
-      "Ausschließlich Heizkosten senken",
-      "Das Wohlbefinden des Menschen zu jeder Jahreszeit sichern"
+      "Ausschließlich Heizkosten senken"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Der Wärmeschutz hat drei Ziele auf einmal: Behaglichkeit, Energieeinsparung und Bauschadensfreiheit. Der dritte Punkt wird oft übersehen — schlechter Wärmeschutz führt zu Temperaturspannungen in den Bauteilen und, über Tauwasser, zu Feuchteschäden.",
     "bildDatei": "/buch/anhang2/einleitung.webp",
@@ -58,12 +58,12 @@
     "optionen": [
       "Ein Feuer erst gar nicht aufkommen zu lassen (vorbeugender Brandschutz)",
       "Nur die Rettung von Personen, nicht der Schutz von Sachwerten",
-      "Feuer soll durch die Baustoffe vollständig ausgeschlossen werden",
-      "Kommt es doch zu einem Brand, soll der Schaden möglichst eingegrenzt werden (abwehrender Brandschutz)"
+      "Kommt es doch zu einem Brand, soll der Schaden möglichst eingegrenzt werden (abwehrender Brandschutz)",
+      "Feuer soll durch die Baustoffe vollständig ausgeschlossen werden"
     ],
     "korrekt": [
       0,
-      3
+      2
     ],
     "erklaerung": "Der Brandschutz arbeitet zweistufig: vorbeugend, damit ein Feuer gar nicht entsteht, und abwehrend, damit der Schaden begrenzt bleibt. Vollständig ausschließen lässt sich Feuer nie — deshalb geht es um Widerstandsdauer und Ausbreitungsbegrenzung, nicht um Unbrennbarkeit um jeden Preis.",
     "bildDatei": "/buch/anhang2/einleitung.webp",
@@ -78,15 +78,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Wie kann man sich Wärme modellhaft vorstellen?",
     "optionen": [
-      "Wärme kann als Bewegungsenergie der Moleküle bezeichnet werden",
       "Bei Feststoffen schwingen die Moleküle hin und her und kehren jedoch an ihren Ausgangsort zurück",
-      "Die Moleküle stehen bei Wärme vollkommen still",
-      "Je mehr ein Körper erwärmt wird, umso heftiger bewegen sich die Moleküle"
+      "Je mehr ein Körper erwärmt wird, umso heftiger bewegen sich die Moleküle",
+      "Wärme kann als Bewegungsenergie der Moleküle bezeichnet werden",
+      "Die Moleküle stehen bei Wärme vollkommen still"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Der Schlüssel ist das Wort Bewegungsenergie. Bei Feststoffen schwingen die Moleküle um ihren Platz, bei Flüssigkeiten und Gasen bewegen sie sich wahllos durcheinander und erreichen im gasförmigen Zustand besonders hohe Geschwindigkeit. Stillstand herrscht erst am absoluten Nullpunkt bei minus 273 Grad Celsius.",
     "bildDatei": "/buch/anhang2/molekuele.webp",
@@ -101,17 +101,17 @@
     "konfidenz": "hoch",
     "frage": "Auf welche Arten kann Wärme entstehen?",
     "optionen": [
-      "Bei elektrischen Vorgängen, wenn Strom durch Widerstandsdrähte fließt",
       "Bei mechanischen Vorgängen, zum Beispiel durch Reibung beim Bohren in Beton",
-      "Bei magnetischen Vorgängen, wenn sich zwei Magnete anziehen",
+      "Bei elektrischen Vorgängen, wenn Strom durch Widerstandsdrähte fließt",
       "Durch natürliche Wärmequellen wie Sonne, Erdwärme oder Wind",
-      "Bei chemischen Vorgängen wie der Verbrennung von Kohle, Gas, Öl oder Holz"
+      "Bei chemischen Vorgängen wie der Verbrennung von Kohle, Gas, Öl oder Holz",
+      "Bei magnetischen Vorgängen, wenn sich zwei Magnete anziehen"
     ],
     "korrekt": [
       0,
       1,
-      3,
-      4
+      2,
+      3
     ],
     "erklaerung": "Alle vier stimmen — natürlich, mechanisch, chemisch und elektrisch. Das Beispiel mit dem Bohrer kennt jeder vom Bau: Nach längerem Bohren ist der Bohrerkopf heiß, weil mechanische Arbeit in Wärme umgewandelt wurde. Umgekehrt geht es genauso: Der Dampf im Kochtopf hebt den Deckel, Wärme wird zu mechanischer Energie.",
     "bildDatei": "/buch/anhang2/reibungswaerme.webp",
@@ -126,13 +126,13 @@
     "konfidenz": "hoch",
     "frage": "Was zeigt das Foto der Solarthermieanlage?",
     "optionen": [
-      "Eine chemische Wärmequelle",
       "Röhrenkollektoren auf einem Flachdach",
+      "Eine chemische Wärmequelle",
       "Wärmeerzeugung durch elektrischen Widerstand",
       "Die Sonne als natürliche Wärmequelle (Solarenergie)"
     ],
     "korrekt": [
-      1,
+      0,
       3
     ],
     "erklaerung": "Solarenergie zählt zu den natürlichen Wärmequellen, neben Erdwärme und Wind. Für Dachdecker ist das doppelt relevant: Sie montieren diese Anlagen und müssen dabei die Dachhaut sicher durchdringen — siehe Lernfeld 16.",
@@ -171,14 +171,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Worin unterscheiden sich die Temperaturangaben Kelvin und Grad Celsius?",
     "optionen": [
-      "Die Skalenabstände sind bei Kelvin doppelt so groß wie bei Celsius",
-      "0 Grad Celsius entspricht 273 K, 100 Grad Celsius entspricht 373 K",
       "Nach DIN 4108 sollte für Wärmeangaben Kelvin verwendet werden",
-      "Die Kelvin-Temperaturskala geht vom absoluten Nullpunkt aus, der bei minus 273 Grad Celsius liegt"
+      "Die Kelvin-Temperaturskala geht vom absoluten Nullpunkt aus, der bei minus 273 Grad Celsius liegt",
+      "Die Skalenabstände sind bei Kelvin doppelt so groß wie bei Celsius",
+      "0 Grad Celsius entspricht 273 K, 100 Grad Celsius entspricht 373 K"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Beide Skalen haben gleich große Schritte — nur der Nullpunkt ist verschoben. Deshalb gilt: Eine Temperaturdifferenz von 30 Grad Celsius ist gleich 30 Kelvin. Genau darum wird bei Differenzen immer Kelvin geschrieben, bei absoluten Temperaturen dagegen meist Grad Celsius.",
@@ -194,14 +194,14 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für den absoluten Nullpunkt?",
     "optionen": [
+      "Er liegt bei minus 273 Grad Celsius",
       "In Kelvin entspricht er 0 K",
       "Er liegt bei 0 Grad Celsius",
-      "Bei ihm hört jegliche Molekularbewegung auf",
-      "Er liegt bei minus 273 Grad Celsius"
+      "Bei ihm hört jegliche Molekularbewegung auf"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Am absoluten Nullpunkt steht jede Molekülbewegung still — und da Wärme genau diese Bewegung ist, kann es keine tiefere Temperatur geben. Deshalb beginnt die Kelvin-Skala dort mit 0 K. 0 Grad Celsius ist dagegen nur der Gefrierpunkt des Wassers und liegt bei 273 K.",
@@ -217,10 +217,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: In welchen Einheiten wird die Wärmemenge angegeben?",
     "optionen": [
-      "In Joule (J)",
+      "Es gilt: 1 J = 1 Ws und 3600 Ws = 1 Wh",
       "In Kelvin",
       "Im Bauwesen auch in Wattsekunde (Ws), Wattstunde (Wh) und Kilowattstunde (kWh)",
-      "Es gilt: 1 J = 1 Ws und 3600 Ws = 1 Wh"
+      "In Joule (J)"
     ],
     "korrekt": [
       0,
@@ -241,14 +241,14 @@
     "frage": "Welche Umrechnungen gelten für die Energieeinheiten?",
     "optionen": [
       "1 Joule = 1 Wattsekunde",
-      "1 Wattstunde = 3600 Wattsekunden",
       "1 Kilowattstunde = 1000 Wattstunden",
-      "1 Joule = 1000 Wattsekunden"
+      "1 Joule = 1000 Wattsekunden",
+      "1 Wattstunde = 3600 Wattsekunden"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Die drei Umrechnungen bauen aufeinander auf. Rechne einmal komplett durch: 1 kWh = 1000 Wh = 1000 · 3600 Ws = 3,6 Millionen Joule. Das ist die Energie, die eine Kilowattstunde Strom liefert — und der Bezugswert jeder Heizkostenabrechnung.",
     "bildDatei": "/buch/anhang2/energieeinheiten.webp",
@@ -264,9 +264,9 @@
     "frage": "Warum dehnt sich ein Körper bei Erwärmung aus?",
     "optionen": [
       "Dabei benötigen sie aber mehr Platz, worauf sich der Stoff im Volumen ausdehnt",
-      "Bei Abkühlung zieht er sich wieder zusammen",
+      "Die Moleküle bewegen sich bei Temperaturerhöhung schneller",
       "Weil sich die Masse des Körpers vergrößert",
-      "Die Moleküle bewegen sich bei Temperaturerhöhung schneller"
+      "Bei Abkühlung zieht er sich wieder zusammen"
     ],
     "korrekt": [
       0,
@@ -286,15 +286,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Temperaturdehnzahlen nennt die Tabelle (in mm je m und K)?",
     "optionen": [
-      "Stahl 0,011 und Kupfer 0,017",
-      "Faserzement 0,10",
+      "Aluminium 0,024, Titanzink 0,022 und Blei 0,029",
       "Weich-PVC 0,16 und Weich-PE 0,22",
-      "Aluminium 0,024, Titanzink 0,022 und Blei 0,029"
+      "Stahl 0,011 und Kupfer 0,017",
+      "Faserzement 0,10"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Faserzement hat 0,01 — den kleinsten Wert der Tabelle, nicht 0,10. Präge dir die Größenordnungen ein: Metalle liegen bei 0,01 bis 0,03, Kunststoffe wie Weich-PVC und Weich-PE dagegen bei 0,16 bis 0,22, also rund zehnmal höher. Deshalb brauchen Kunststoffbahnen viel großzügigere Dehnungsmöglichkeiten als Metallbleche.",
     "bildDatei": "/buch/anhang2/dehnzahl-tabelle.webp",
@@ -506,13 +506,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Welche konstruktiven Maßnahmen verhindern Schäden durch Wärmedehnung?",
     "optionen": [
-      "Bei größeren Betonteilen und längeren Mauerwerksbänden werden Dehnfugen angeordnet",
       "Die Bauteile werden starr miteinander verschraubt",
+      "Überlappende Bleche und Fallrohre benötigen eine ausreichende Überlappung",
       "Bei vorgehängten Fassaden müssen die Horizontalfugen entsprechend breit ausgebildet werden",
-      "Überlappende Bleche und Fallrohre benötigen eine ausreichende Überlappung"
+      "Bei größeren Betonteilen und längeren Mauerwerksbänden werden Dehnfugen angeordnet"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -531,8 +531,8 @@
     "optionen": [
       "Durch Strahlung",
       "Durch Verdunstung",
-      "Durch Leitung",
-      "Durch Strömung (Konvektion)"
+      "Durch Strömung (Konvektion)",
+      "Durch Leitung"
     ],
     "korrekt": [
       0,
@@ -552,15 +552,15 @@
     "konfidenz": "hoch",
     "frage": "Wie funktioniert die Wärmeströmung (Konvektion)?",
     "optionen": [
+      "An ihre Stelle treten die kälteren Teilchen, es entsteht eine Bewegung",
       "Träger der Wärme sind bewegte Flüssigkeiten oder Gase, zum Beispiel Luft",
-      "Konvektion benötigt kein Medium",
       "Dabei steigen die wärmeren Teilchen auf, an welche die Wärme gebunden ist",
-      "An ihre Stelle treten die kälteren Teilchen, es entsteht eine Bewegung"
+      "Konvektion benötigt kein Medium"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Konvektion braucht immer ein strömendes Medium — ohne Luft oder Flüssigkeit keine Konvektion. Warme Luft ist weniger dicht und somit leichter, sie steigt nach oben. Genau dieses Prinzip nutzt die Haustechnik bei Heizkörpern, Kaminen und Abluftschächten.",
     "bildDatei": "/buch/anhang2/konvektion.webp",
@@ -576,14 +576,14 @@
     "frage": "Wovon hängt die Wirkung der Wärmestrahlung ab?",
     "optionen": [
       "Raue Materialien wie dunkler Putz nehmen mehr Wärmestrahlung auf",
+      "Helle und glatte Oberflächen wie Aluminium nehmen besonders viel Wärme auf",
       "Ob die benachbarten Körper die Wärme aufnehmen (absorbieren) oder wieder abgeben (reflektieren)",
-      "Wesentlich von ihrer Oberfläche",
-      "Helle und glatte Oberflächen wie Aluminium nehmen besonders viel Wärme auf"
+      "Wesentlich von ihrer Oberfläche"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Genau umgekehrt beim letzten Punkt: Helle, glatte Oberflächen wie Aluminium reflektieren die Strahlung, dunkle und raue absorbieren sie. Deshalb heizt sich ein dunkles Dach im Sommer viel stärker auf als ein helles — und deshalb sind Dampfsperren häufig alukaschiert.",
     "bildDatei": "/buch/anhang2/waermestrahlung.webp",
@@ -598,13 +598,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Wie sollten Baustoffe beschaffen sein, damit sie Wärme schlecht leiten?",
     "optionen": [
-      "Sie sollten trocken sein, denn Wasser in den Poren erhöht die Wärmeleitfähigkeit",
       "Sie sollten eine hohe Dichte haben wie Stahl oder Beton",
-      "Sie sollten eine geringe Rohdichte und viele Lufteinschlüsse haben",
-      "Luft ist ein schlechter Wärmeleiter und hat eine geringe Wärmeleitfähigkeit"
+      "Sie sollten trocken sein, denn Wasser in den Poren erhöht die Wärmeleitfähigkeit",
+      "Luft ist ein schlechter Wärmeleiter und hat eine geringe Wärmeleitfähigkeit",
+      "Sie sollten eine geringe Rohdichte und viele Lufteinschlüsse haben"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -621,15 +621,15 @@
     "konfidenz": "hoch",
     "frage": "Wie verteilen sich die Wärmeverluste eines Gebäudes?",
     "optionen": [
-      "Heizung und Schornstein 32 %",
+      "Dach und Flachdach 32 %",
       "Fenster 28 %",
-      "Wände 18 %, Dach und Flachdach 16 %, Keller 6 %",
-      "Dach und Flachdach 32 %"
+      "Heizung und Schornstein 32 %",
+      "Wände 18 %, Dach und Flachdach 16 %, Keller 6 %"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Zusammen ergeben die fünf Anteile genau 100 %. Bemerkenswert für Dachdecker: Das Dach steht mit 16 % nicht an erster Stelle — Heizung, Schornstein und Fenster verlieren mehr. Trotzdem lohnt die Dachdämmung besonders, weil warme Luft nach oben steigt und die Fläche vergleichsweise günstig zu dämmen ist.",
     "bildDatei": "/buch/anhang2/waermeverlust-haus.webp",
@@ -644,13 +644,13 @@
     "konfidenz": "hoch",
     "frage": "Was gibt die Wärmeleitfähigkeit λ an?",
     "optionen": [
-      "Sie hat die Einheit W/(m·K)",
       "Je größer λ, desto besser ist die Wärmedämmung",
-      "Sie gibt die Wärmemenge in Wattsekunden an, die in 1 Sekunde durch 1 m² einer 1 Meter dicken Schicht hindurchgeht, wenn der Temperaturunterschied beider Bauteiloberflächen 1 Kelvin beträgt",
-      "Je größer λ, desto größer ist die Wärmeleitung"
+      "Sie hat die Einheit W/(m·K)",
+      "Je größer λ, desto größer ist die Wärmeleitung",
+      "Sie gibt die Wärmemenge in Wattsekunden an, die in 1 Sekunde durch 1 m² einer 1 Meter dicken Schicht hindurchgeht, wenn der Temperaturunterschied beider Bauteiloberflächen 1 Kelvin beträgt"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -667,15 +667,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Symbole und Einheiten gelten im Wärmeschutz?",
     "optionen": [
-      "Wärmedurchgangskoeffizient U in m²·K/W",
+      "Wärmedurchlasswiderstand R in m²·K/W",
       "Wärmedurchgangskoeffizient U in W/(m²·K)",
       "Schichtdicke d in m, Wärmeleitfähigkeit λ in W/(m·K)",
-      "Wärmedurchlasswiderstand R in m²·K/W"
+      "Wärmedurchgangskoeffizient U in m²·K/W"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Achte genau auf R und U — die Einheiten sind zueinander umgekehrt. R misst den Widerstand in m²·K/W, U den Durchgang in W/(m²·K). Wer sie vertauscht, dreht die Aussage um. Das R steht dabei für das englische Resistance, also Widerstand.",
     "bildDatei": "/buch/anhang2/symbol-tabelle.webp",
@@ -690,15 +690,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Warum ist es wichtig, den Wärmedurchlasswiderstand R zu bestimmen?",
     "optionen": [
-      "Je größer R ist, desto besser ist die Wärmedämmung",
+      "Er hat die Einheit W/(m²·K)",
       "Er beurteilt, wie viel Wärme ein Bauteil durchlässt",
       "Er errechnet sich aus Schichtdicke geteilt durch Wärmeleitfähigkeit",
-      "Er hat die Einheit W/(m²·K)"
+      "Je größer R ist, desto besser ist die Wärmedämmung"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "R hat die Einheit m²·K/W, nicht W/(m²·K) — Letzteres ist der U-Wert. Aus der Formel R = d ÷ λ folgt direkt: Der Widerstand eines Bauteils ist umso größer, je größer die Schichtdicken und je kleiner die Wärmeleitfähigkeit der Baustoffe ist. Bei mehreren Schichten werden die Einzelwiderstände addiert.",
     "bildDatei": "/buch/anhang2/r-box.webp",
@@ -768,15 +768,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Vor- und Nachteile haben die Varianten der Wanddämmung?",
     "optionen": [
-      "Massivwand mit homogenem Aufbau: poröse Hochlochziegel, wärmespeichernd, aber teuer",
-      "Kerndämmung im Sandwichelement: nur als Fertigteil, viele Vorteile bei der Wärmespeicherung",
       "Außendämmung: nachträgliche Verbesserung möglich, hohe Anforderungen an den Außenputz",
-      "Innendämmung: keine Wärmespeicherung"
+      "Massivwand mit homogenem Aufbau: poröse Hochlochziegel, wärmespeichernd, aber teuer",
+      "Innendämmung: keine Wärmespeicherung",
+      "Kerndämmung im Sandwichelement: nur als Fertigteil, viele Vorteile bei der Wärmespeicherung"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Bei der Kerndämmung im Sandwichelement nennt das Buch als Merkmal, dass sie nur als Fertigteil aus Stahlbeton möglich ist. Die zentrale Unterscheidung: Nur bei Außendämmung und massiven Aufbauten bleibt die Speichermasse innen; bei Innendämmung liegt sie außerhalb der Dämmebene und kann nicht mehr wirken.",
     "bildDatei": "/buch/anhang2/waermedaemmung-waende.webp",
@@ -791,15 +791,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Wie wird der U-Wert berechnet und was sagt ein kleiner U-Wert aus?",
     "optionen": [
-      "U = 1 ÷ (0,17 m²·K/W + R)",
       "Der Wert 0,17 fasst die Wärmeübergangswiderstände innen (0,13) und außen (0,04) zusammen",
-      "Je kleiner der U-Wert, desto mehr Wärme fließt durch das Bauteil",
-      "Je kleiner der U-Wert ist, umso größer sind die Energieeinsparwerte"
+      "Je kleiner der U-Wert ist, umso größer sind die Energieeinsparwerte",
+      "U = 1 ÷ (0,17 m²·K/W + R)",
+      "Je kleiner der U-Wert, desto mehr Wärme fließt durch das Bauteil"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Genau umgekehrt beim letzten Punkt: Je kleiner der U-Wert, desto geringer der Wärmeabfluss durch das Bauteil. Die 0,17 setzen sich nach DIN 4108 aus Rsi = 0,13 (innen) und Rse = 0,04 (außen) zusammen — mit einer Ausnahme: An das Erdreich grenzende Wände rechnen mit Rse = 0.",
     "bildDatei": "/buch/anhang2/u-formel-box.webp",
@@ -814,15 +814,15 @@
     "konfidenz": "hoch",
     "frage": "Was zeigt der Vergleich von hohem und niedrigem U-Wert?",
     "optionen": [
-      "Bei niedrigem U-Wert muss stärker geheizt werden",
       "Je kleiner der U-Wert, umso geringer der Wärmeabfluss durch das Bauteil",
+      "Bei hohem U-Wert entweicht viel Wärme nach außen",
       "Der U-Wert bestimmt den Wärmeschutz der Gebäudehülle",
-      "Bei hohem U-Wert entweicht viel Wärme nach außen"
+      "Bei niedrigem U-Wert muss stärker geheizt werden"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Die Zeichnung macht es anschaulich: Beim schlecht gedämmten Haus strömen die Pfeile hinaus, der Bewohner friert trotz Heizung. Ein niedriger U-Wert bedeutet gerade weniger Heizbedarf, nicht mehr. Der U-Wert hieß früher k-Wert — in älteren Unterlagen findet man noch diese Bezeichnung.",
     "bildDatei": "/buch/anhang2/u-cartoon.webp",
@@ -951,14 +951,14 @@
     "frage": "Buchaufgabe 1: Was ist das Ziel des Gebäudeenergiegesetzes (GEG)?",
     "optionen": [
       "Es löst die Energieeinsparverordnung (EnEV) ab",
-      "Neu errichtete Gebäude müssen einen Teil der Gebäudeenergie aus erneuerbaren Energien decken",
+      "Es schreibt vor, dass Gebäude gar keine Energie mehr verbrauchen dürfen",
       "Den CO₂-Ausstoß in Deutschland deutlich zu reduzieren und so die Erderwärmung zu verlangsamen",
-      "Es schreibt vor, dass Gebäude gar keine Energie mehr verbrauchen dürfen"
+      "Neu errichtete Gebäude müssen einen Teil der Gebäudeenergie aus erneuerbaren Energien decken"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Der Ausgangspunkt sind die Zahlen: Gebäude verbrauchen jährlich 35 % der Gesamtenergie in Deutschland und produzieren dabei etwa 120 Millionen Tonnen CO₂. Das GEG setzt daher Mindestanforderungen und verlangt zusätzlich einen Anteil erneuerbarer Energien — ein Nullverbrauch wird aber nicht gefordert.",
     "bildDatei": "/buch/anhang2/solar-nutzung.webp",
@@ -974,13 +974,13 @@
     "frage": "Buchaufgabe 2: Welche konkreten Vorgaben macht das GEG?",
     "optionen": [
       "Alte Heizungen müssen ausgetauscht werden",
-      "Wird bei Sanierungsmaßnahmen ein Bauteil ausgewechselt oder erneuert, muss der vorhandene U-Wert nachgewiesen werden",
       "Selbst produzierter Strom aus Photovoltaik darf nicht angerechnet werden",
+      "Wird bei Sanierungsmaßnahmen ein Bauteil ausgewechselt oder erneuert, muss der vorhandene U-Wert nachgewiesen werden",
       "Die obersten Geschossdecken zu unbeheizten Dachräumen müssen nachträglich gedämmt werden"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Selbst produzierter Photovoltaikstrom kann in der Energiebilanz sogar großzügig angerechnet werden — das ist ein Anreiz, keine Einschränkung. Für Dachdecker ist der dritte Punkt der wichtigste: Sobald ein Dach saniert wird, greift die Nachweispflicht für den U-Wert.",
@@ -997,9 +997,9 @@
     "frage": "Buchaufgabe 4: Welche U-Werte fordert das GEG für die einzelnen Bauteile?",
     "optionen": [
       "Decken und Wände gegen unbeheizte Räume U ≤ 0,20",
-      "Außenliegende Fenster U ≤ 1,30 und Dachfenster U ≤ 1,40",
       "Dächer bei Flachdächern U ≤ 0,20",
-      "Außenwände U ≤ 0,24 und Dächer bei Steildächern U ≤ 0,24"
+      "Außenwände U ≤ 0,24 und Dächer bei Steildächern U ≤ 0,24",
+      "Außenliegende Fenster U ≤ 1,30 und Dachfenster U ≤ 1,40"
     ],
     "korrekt": [
       1,
@@ -1020,8 +1020,8 @@
     "frage": "Welche Dämmdicken nennt die Tabelle als mögliche Maßnahmen?",
     "optionen": [
       "Decken gegen unbeheizte Räume: Dämmung 20 bis 24 cm",
-      "Dächer bei Steildächern: Dämmung 14 bis 18 cm",
       "Dächer bei Flachdächern: Dämmung 16 bis 20 cm",
+      "Dächer bei Steildächern: Dämmung 14 bis 18 cm",
       "Außenwände: Dämmung 14 bis 18 cm"
     ],
     "korrekt": [
@@ -1156,14 +1156,14 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient der Energieausweis?",
     "optionen": [
-      "Beim Verkauf eines Hauses wird er benötigt",
-      "Er stellt den jährlichen Energiebedarf eines Gebäudes dar",
       "Er ersetzt die U-Wert-Berechnung der einzelnen Bauteile",
-      "Er wird von einem Energieberater ausgestellt"
+      "Beim Verkauf eines Hauses wird er benötigt",
+      "Er wird von einem Energieberater ausgestellt",
+      "Er stellt den jährlichen Energiebedarf eines Gebäudes dar"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Der Energieausweis bewertet das Gebäude als Ganzes, die U-Wert-Berechnung dagegen jedes Bauteil einzeln — beides ergänzt sich, ersetzt sich aber nicht. Bei umfangreichen Modernisierungsmaßnahmen wird ohnehin eine Gesamtbilanzierung nötig, ähnlich wie beim Neubau.",
@@ -1179,9 +1179,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: In welcher Bausituation dürfen einfache Berechnungen des U-Werts durchgeführt werden?",
     "optionen": [
-      "Der Bauhandwerker kann so nachvollziehen, ob seine gewählte Konstruktion den Anforderungen entspricht",
-      "Bei einzelnen Sanierungsmaßnahmen, wenn nur ein Bauteil ausgewechselt oder erneuert wird",
       "Bei umfassenden Maßnahmen ist dagegen eine energetische Gesamtbilanz erforderlich",
+      "Bei einzelnen Sanierungsmaßnahmen, wenn nur ein Bauteil ausgewechselt oder erneuert wird",
+      "Der Bauhandwerker kann so nachvollziehen, ob seine gewählte Konstruktion den Anforderungen entspricht",
       "Immer, auch beim kompletten Neubau"
     ],
     "korrekt": [
@@ -1203,13 +1203,13 @@
     "frage": "Was gilt beim Wärmeschutz am ausgebauten, geneigten Dach?",
     "optionen": [
       "Es muss auch der Feuchteschutz der Wärmedämmung berücksichtigt werden",
-      "Wird ein Dach saniert oder neu errichtet, müssen die Vorgaben des GEG eingehalten werden",
       "Für geneigte Dächer gilt der Flachdachwert von 0,20 W/(m²·K)",
+      "Wird ein Dach saniert oder neu errichtet, müssen die Vorgaben des GEG eingehalten werden",
       "Beim geneigten Dach darf der U-Wert von 0,24 W/(m²·K) nicht überschritten werden"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Die 0,20 gelten für Flachdächer, für geneigte Dächer sind 0,24 gefordert. Der Hinweis auf den Feuchteschutz ist entscheidend: Eine durchfeuchtete Dämmung verliert ihre Wirkung, weil Wasser die Wärmeleitfähigkeit erhöht — der beste U-Wert nützt dann nichts.",
@@ -1225,14 +1225,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Welche Vor- und Nachteile hat die Zwischensparrendämmung?",
     "optionen": [
-      "Sie ist auch bei nachträglichem Dachausbau möglich",
-      "Sie ist die gebräuchlichste Variante",
       "Sie erzeugt eine vollflächig geschlossene Dämmebene ohne Unterbrechung",
-      "Bei unsachgemäßer Verarbeitung besteht die Gefahr von Wärmebrücken"
+      "Bei unsachgemäßer Verarbeitung besteht die Gefahr von Wärmebrücken",
+      "Sie ist die gebräuchlichste Variante",
+      "Sie ist auch bei nachträglichem Dachausbau möglich"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Genau das Gegenteil beim letzten Punkt: Bei der Zwischensparrendämmung unterbrechen die Sparren die Dämmschicht — deshalb muss man später mit dem gemittelten U-Wert rechnen. Eine durchgehend geschlossene Fläche erreicht nur die Aufsparrendämmung.",
@@ -1248,14 +1248,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile hat die Untersparrendämmung und welche die Aufsparrendämmung?",
     "optionen": [
-      "Untersparrendämmung: die Dämmschicht wird nicht durch die Sparren unterbrochen, es entstehen keine Wärmebrücken",
-      "Nachteil der Untersparrendämmung: wertvolles Dach- und Wohnvolumen geht verloren",
+      "Aufsparrendämmung: die Dämmschicht bildet eine geschlossene Fläche, die Sparren bleiben innen sichtbar",
       "Aufsparrendämmung: sie kostet innen Wohnraum",
-      "Aufsparrendämmung: die Dämmschicht bildet eine geschlossene Fläche, die Sparren bleiben innen sichtbar"
+      "Untersparrendämmung: die Dämmschicht wird nicht durch die Sparren unterbrochen, es entstehen keine Wärmebrücken",
+      "Nachteil der Untersparrendämmung: wertvolles Dach- und Wohnvolumen geht verloren"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Der entscheidende Unterschied liegt im Raumverlust: Die Untersparrendämmung nimmt Wohnvolumen weg, die Aufsparrendämmung nicht — sie liegt außen und lässt die Sparren innen als Gestaltungselement sichtbar. Für größere Dämmdicken lassen sich beide auch mit der Zwischensparrendämmung kombinieren.",
@@ -1271,16 +1271,16 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Was kennzeichnet das zweischalig belüftete Dach?",
     "optionen": [
-      "Der Lüftungsraum muss zwischen First und Traufe durchgehend sein und genügend Zu- und Abluftöffnungen haben",
+      "Es kommt ohne Zu- und Abluftöffnungen aus",
       "Feuchtigkeit kann von innen durch Tauwasserbildung und von außen durch Flugschnee entweichen",
       "Nur eine geringe Dämmstoffdicke lässt sich einbringen",
-      "Es kommt ohne Zu- und Abluftöffnungen aus",
-      "Sowohl zwischen Wärmedämmung und Dachschalung als auch zwischen Dachschalung und äußerer Dachhaut befindet sich ein Hohlraum"
+      "Sowohl zwischen Wärmedämmung und Dachschalung als auch zwischen Dachschalung und äußerer Dachhaut befindet sich ein Hohlraum",
+      "Der Lüftungsraum muss zwischen First und Traufe durchgehend sein und genügend Zu- und Abluftöffnungen haben"
     ],
     "korrekt": [
-      0,
       1,
       2,
+      3,
       4
     ],
     "erklaerung": "Die ersten vier treffen zu, die vierte ist dabei der wesentliche Nachteil: Der Lüftungsraum kostet Bauhöhe, die dann für Dämmstoff fehlt. Ohne Zu- und Abluftöffnungen funktioniert das Ganze aber gerade nicht — der Lüftungsraum muss zwischen First und Traufe durchgehend und an beiden Enden offen sein. Als Vorteil bietet das zweischalig belüftete Dach im Sommer, dass entstehende Wärme schnell wieder abtransportiert werden kann.",
@@ -1296,14 +1296,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Wie wird beim unbelüfteten Dach verhindert, dass die Wärmedämmung durchfeuchtet?",
     "optionen": [
-      "Durch eine zusätzliche Belüftungsebene zwischen Dämmung und Dachschalung",
-      "Auf der warmen Seite der Dämmung, im Winter also innen, wird eine Dampfsperre eingebaut",
       "In der Ebene über der Wärmedämmung muss eine diffusionsoffene Schicht aufgebracht werden",
+      "Auf der warmen Seite der Dämmung, im Winter also innen, wird eine Dampfsperre eingebaut",
+      "Durch eine zusätzliche Belüftungsebene zwischen Dämmung und Dachschalung",
       "Denn Feuchtigkeit in der Dämmung erhöht die Wärmeleitfähigkeit eines Stoffes und verringert so den Wärmedämmwert"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Beim unbelüfteten Dach gibt es gerade keine Belüftungsebene zwischen Wärmedämmung und Dachschalung — das ist die Definition. Stattdessen arbeitet man mit dem Schichtenprinzip: innen dicht (Dampfsperre auf der warmen Seite), außen offen (diffusionsoffene Schicht), damit vorhandener Wasserdampf von innen hinausströmen kann.",
@@ -1319,13 +1319,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Worin unterscheidet sich die Berechnung bei Aufsparrendämmung und Zwischensparrendämmung?",
     "optionen": [
-      "Aus beiden Werten wird ein nach der Breite gewichtetes Mittel gebildet",
       "Bei der Untersparrendämmung tragen die Sparren voll zur Wärmedämmung bei",
       "Bei der Zwischensparrendämmung sind Gefachbereich und Sparrenbereich getrennt zu berechnen",
-      "Bei der Aufsparrendämmung ist die Berechnung vergleichbar mit der Außendämmung einer Wand, da die Dämmung vollflächig ist"
+      "Bei der Aufsparrendämmung ist die Berechnung vergleichbar mit der Außendämmung einer Wand, da die Dämmung vollflächig ist",
+      "Aus beiden Werten wird ein nach der Breite gewichtetes Mittel gebildet"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -1466,13 +1466,13 @@
     "frage": "Welche Schichten dürfen bei der Berechnung des Zwischensparren-Beispiels vernachlässigt werden?",
     "optionen": [
       "Die Wärmedämmung",
-      "Die Unterdeckbahn",
+      "Die Sichtschalung",
       "Die Dampfsperre",
-      "Die Sichtschalung"
+      "Die Unterdeckbahn"
     ],
     "korrekt": [
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Dampfsperre und Unterdeckbahn sind so dünn, dass ihr Beitrag zum Wärmedurchlasswiderstand verschwindend klein ist — sie werden vernachlässigt. Beim Feuchteschutz ist es genau umgekehrt: Dort ist die Dampfsperre die entscheidende Schicht und die Schalung fast bedeutungslos.",
     "bildDatei": "/buch/anhang2/aufsparren-schnitt.webp",
@@ -1487,14 +1487,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Welche Anforderungen werden an Wärmedämmstoffe gestellt?",
     "optionen": [
-      "Möglichst hohe Rohdichte",
       "Witterungs- und Fäulnisbeständigkeit",
-      "Geringe Bereitschaft, Feuchtigkeit aufzunehmen, da Wasser die Wärmeleitfähigkeit deutlich erhöht",
-      "Geringe Wärmeleitfähigkeit λ < 0,1 W/(m·K) durch hohen Porenanteil, geringe Dichte und geringe Eigenfeuchte"
+      "Geringe Wärmeleitfähigkeit λ < 0,1 W/(m·K) durch hohen Porenanteil, geringe Dichte und geringe Eigenfeuchte",
+      "Möglichst hohe Rohdichte",
+      "Geringe Bereitschaft, Feuchtigkeit aufzunehmen, da Wasser die Wärmeleitfähigkeit deutlich erhöht"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Hohe Rohdichte ist das Gegenteil des Gewünschten — schwere, dichte Stoffe leiten Wärme gut. Der Grenzwert λ < 0,1 W/(m·K) ist die Definition: Erst darunter spricht man von einem Wärmedämmstoff. Neben der Dämmwirkung müssen die Stoffe oft weitere Anforderungen erfüllen, etwa Schalldämmung, Druckfestigkeit, Dampfdurchlässigkeit oder Feuerbeständigkeit.",
@@ -1512,8 +1512,8 @@
     "optionen": [
       "Weil Dämmstoffe sonst schwerer zu schneiden sind",
       "Die Dämmwirkung geht dadurch verloren",
-      "Wasser erhöht die Wärmeleitfähigkeit deutlich",
-      "Der Porenanteil, der eigentlich Luft enthalten soll, füllt sich mit Wasser"
+      "Der Porenanteil, der eigentlich Luft enthalten soll, füllt sich mit Wasser",
+      "Wasser erhöht die Wärmeleitfähigkeit deutlich"
     ],
     "korrekt": [
       1,
@@ -1533,15 +1533,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Kurzzeichen gelten für die genormten Wärmedämmstoffe?",
     "optionen": [
-      "CG für Schaumglas, ICB für Expandierter Kork",
-      "XPS für Polystyrol-Extruderschaum, PUR für Polyurethan-Hartschaum",
+      "WF für Holzwolle",
       "MW für Mineralwolle, EPS für Polystyrol-Hartschaum",
-      "WF für Holzwolle"
+      "CG für Schaumglas, ICB für Expandierter Kork",
+      "XPS für Polystyrol-Extruderschaum, PUR für Polyurethan-Hartschaum"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "WF steht für Holzfaser (DIN EN 13171), Holzwolle dagegen hat das Kurzzeichen WW (DIN EN 13168) — die beiden werden gern verwechselt. Insgesamt sind zehn Dämmstoffe nach europäischer Norm geregelt, von Mineralwolle bis Calciumsilicat.",
     "bildDatei": "/buch/anhang2/normtabelle-daemmstoffe.webp",
@@ -1556,14 +1556,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Welche Angaben lassen sich aus der Etikettierung eines Dämmpakets ableiten?",
     "optionen": [
-      "Der Name des ausführenden Dachdeckerbetriebs",
-      "Brandverhalten nach DIN EN 13501-1, Dicke, Anzahl, Format und Fläche der Platten",
+      "Material und Norm, zum Beispiel Polystyrol-Hartschaum nach DIN EN 13163",
       "Einsatzgebiet, Druckbelastbarkeit und Wärmeleitfähigkeit",
-      "Material und Norm, zum Beispiel Polystyrol-Hartschaum nach DIN EN 13163"
+      "Der Name des ausführenden Dachdeckerbetriebs",
+      "Brandverhalten nach DIN EN 13501-1, Dicke, Anzahl, Format und Fläche der Platten"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Das Etikett beschreibt das Produkt, nicht den Verarbeiter. Ein Beispiel aus dem Buch: RF-E bedeutet hinnehmbares Brandverhalten, also normal entflammbar. Dazu kommen das Ü- oder CE-Kennzeichen und der CE-Kennzeichnungsschlüssel, aus dem sich Anwendungsgebiet und Eigenschaften ablesen lassen.",
@@ -1580,13 +1580,13 @@
     "frage": "Wofür stehen die Kurzzeichen der Anwendungsgebiete?",
     "optionen": [
       "DAD: Außendämmung von Dach oder Decke, vor Bewitterung geschützt",
-      "PW und PB: Innendämmung der Wand",
       "WAB: Außendämmung der Wand hinter Bekleidung",
+      "PW und PB: Innendämmung der Wand",
       "DZ: Zwischensparrendämmung, zweischaliges Dach"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "PW und PB gehören zum Perimeterbereich — außen liegende Wärmedämmung von Wänden gegen Erdreich (PW) beziehungsweise unter der Bodenplatte gegen Erdreich (PB). Das System der Kurzzeichen folgt einer Logik: Der erste Buchstabe nennt das Bauteil (D für Decke/Dach, W für Wand, P für Perimeter).",
@@ -1625,13 +1625,13 @@
     "konfidenz": "hoch",
     "frage": "Welche weiteren Produkteigenschaften nennt die Fortsetzung der Tabelle?",
     "optionen": [
-      "sk: keine Anforderung an die schalltechnischen Eigenschaften",
       "sg: keine Anforderung an die Verformung",
+      "tk und tf: Anforderungen an die Verformung, etwa Dimensionsstabilität unter Feuchte und Temperatur",
       "sh: Trittschalldämmung mit erhöhter Zusammendrückbarkeit",
-      "tk und tf: Anforderungen an die Verformung, etwa Dimensionsstabilität unter Feuchte und Temperatur"
+      "sk: keine Anforderung an die schalltechnischen Eigenschaften"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -1648,13 +1648,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Welche Vor- und Nachteile hat Kork als natürlicher Dämmstoff?",
     "optionen": [
-      "Kork ist in unbegrenzten Mengen verfügbar",
       "Vorteile: hohe Alterungsbeständigkeit, fäulnisbeständig",
-      "Nachteile: teurer als Mineralwolle, muss trocken eingebaut und vor Durchfeuchtung geschützt werden",
-      "Kork ist nur bedingt mit Heißbitumen verarbeitbar, da er nur bis etwa 150 °C hitzebeständig ist"
+      "Kork ist in unbegrenzten Mengen verfügbar",
+      "Kork ist nur bedingt mit Heißbitumen verarbeitbar, da er nur bis etwa 150 °C hitzebeständig ist",
+      "Nachteile: teurer als Mineralwolle, muss trocken eingebaut und vor Durchfeuchtung geschützt werden"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -1671,10 +1671,10 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Korkdämmplatten hergestellt?",
     "optionen": [
-      "Bei künstlich gebundenen Korkplatten müssen Bindemittel hinzugegeben werden",
+      "Backkork entsteht bei der Expandierung durch Hitze und Druckaufführung, wobei die Körner durch die eigenen Harze gebunden werden",
       "Korkplatten werden ausschließlich aus Korkschrot gepresst, ohne Bindung",
-      "Außerdem kann Bitumen zur Imprägnierung zugeführt werden",
-      "Backkork entsteht bei der Expandierung durch Hitze und Druckaufführung, wobei die Körner durch die eigenen Harze gebunden werden"
+      "Bei künstlich gebundenen Korkplatten müssen Bindemittel hinzugegeben werden",
+      "Außerdem kann Bitumen zur Imprägnierung zugeführt werden"
     ],
     "korrekt": [
       0,
@@ -1694,13 +1694,13 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für weiche Holzfaserplatten?",
     "optionen": [
-      "Die porösen Faserplatten können als Wand- und Bodenplatten eingesetzt werden",
       "Sie sind bei großer Hitze völlig unbedenklich",
       "Sie werden aus Nadelholzabfällen hergestellt, die zu Fasern zerschnitten und mit Wasserdampf zu Platten geformt werden",
+      "Die porösen Faserplatten können als Wand- und Bodenplatten eingesetzt werden",
       "Eine Imprägnierung kann auch hier durch Bitumenzusätze erfolgen"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -1718,14 +1718,14 @@
     "frage": "Was kennzeichnet Hanf als Dämmstoff?",
     "optionen": [
       "Seine Resistenz gegen Fäulnis und Bakterien hat Hanf schon im Sanitärbereich bewiesen",
-      "Hanf ist genormt und trägt ein eigenes Kurzzeichen",
       "Sie können als Zwischensparrendämmung im Steildach und im Holzrahmenbau eingesetzt werden",
-      "Im Herstellungsprozess werden aus dem Hanfstroh die Fasern herausgesondert und zu Dämmvliesen verarbeitet"
+      "Im Herstellungsprozess werden aus dem Hanfstroh die Fasern herausgesondert und zu Dämmvliesen verarbeitet",
+      "Hanf ist genormt und trägt ein eigenes Kurzzeichen"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Für Hanf gilt: Bezeichnung nicht genormt — anders als bei den zehn europäisch geregelten Dämmstoffen. Der THC-arme Nutzhanf ist in Deutschland erst seit 1996 wieder erlaubt; das erklärt, warum die Verwendung als Dämmmaterial noch am Anfang einer neuen Entwicklung steht.",
     "bildDatei": "/buch/anhang2/hanf-daemmplatten.webp",
@@ -1740,15 +1740,15 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für Cellulosedämmung?",
     "optionen": [
-      "Das Material ist fäulnisresistent und muss nicht vor Feuchtigkeitszutritt geschützt werden",
-      "Die Celluloseflocken werden als Zwischensparrendämmung in trockene Hohlräume eingeblasen, wobei sie sich zu dichtem Vlies verfilzen",
       "Es gibt sie als Celluloseflockenschüttung beziehungsweise als Dämmplatten",
-      "Beide Formen bestehen zu mehr als 80 % aus Altpapier, zusätzlich werden Borsalze als Brandschutz- und Schädlingsvernichtungsmittel hinzugegeben"
+      "Die Celluloseflocken werden als Zwischensparrendämmung in trockene Hohlräume eingeblasen, wobei sie sich zu dichtem Vlies verfilzen",
+      "Beide Formen bestehen zu mehr als 80 % aus Altpapier, zusätzlich werden Borsalze als Brandschutz- und Schädlingsvernichtungsmittel hinzugegeben",
+      "Das Material ist fäulnisresistent und muss nicht vor Feuchtigkeitszutritt geschützt werden"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Cellulose ist zwar fäulnisresistent, muss aber trotzdem vor Feuchtigkeitszutritt geschützt werden, damit sie ihre Dämmeigenschaft nicht verliert. Beim Einblasen ist wichtig, dass die Flocken sollten Fachleuten überlassen bleiben — nur so wird eine Lückenbildung in der Dämmung und ein nachträgliches Einsacken verhindert.",
     "bildDatei": "/buch/anhang2/cellulose-schuettung.webp",
@@ -1763,13 +1763,13 @@
     "konfidenz": "hoch",
     "frage": "Wie unterscheiden sich expandiertes (EPS) und extrudiertes (XPS) Polystyrol?",
     "optionen": [
-      "Beide Arten haben eine identische Zellstruktur",
-      "Das expandierte Polystyrol wird in eine Form gegeben und durch Wasserdampf erhitzt, worauf es sich bläht",
       "Expandierte Platten haben eine offenporige Struktur, extrudierte eine geschlossene dampfbremsende Zellstruktur",
-      "Der extrudierte Hartschaum wird aus einem Extruder unter Beimischung eines Treibmittels herausgedrückt"
+      "Beide Arten haben eine identische Zellstruktur",
+      "Der extrudierte Hartschaum wird aus einem Extruder unter Beimischung eines Treibmittels herausgedrückt",
+      "Das expandierte Polystyrol wird in eine Form gegeben und durch Wasserdampf erhitzt, worauf es sich bläht"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -1787,14 +1787,14 @@
     "frage": "Was ist bei der Verarbeitung von Polystyrol-Hartschaumplatten zu beachten?",
     "optionen": [
       "Da die Platten bei hohen Temperaturen schmelzen, können sie nicht geschweißt werden",
-      "Sie lassen sich problemlos mit Heißbitumen verkleben",
+      "Sie müssen mit speziellem Kleber befestigt werden",
       "Beide Arten sind zwar verrottungsfest, müssen aber vor UV-Strahlung und Lösungsmitteln geschützt werden",
-      "Sie müssen mit speziellem Kleber befestigt werden"
+      "Sie lassen sich problemlos mit Heißbitumen verkleben"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Heißbitumen würde die Platten zum Schmelzen bringen — das ist der zentrale Verarbeitungsunterschied gegenüber Schaumglas oder Holzfaserplatten. Eine Alternative bietet die Kaschierung mit Bitumendachbahnen, etwa bei Rolldämmbahnen.",
     "bildDatei": "/buch/anhang2/polystyrol-flachdach.webp",
@@ -1809,15 +1809,15 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für Polyurethan-Hartschaum (PUR)?",
     "optionen": [
-      "Wegen seiner hohen Druckfestigkeit kann er als Flachdach- und Steildachdämmplatte eingesetzt werden",
-      "Er entsteht durch das Mischen verschiedener chemischer Bestandteile auf Basis von Rohöl",
       "Seit 1992 wird kein FCKW mehr als Treibmittel eingesetzt, da es für die Schädigung der Ozonschicht verantwortlich gemacht wird",
-      "Er ist besonders UV-beständig"
+      "Er entsteht durch das Mischen verschiedener chemischer Bestandteile auf Basis von Rohöl",
+      "Er ist besonders UV-beständig",
+      "Wegen seiner hohen Druckfestigkeit kann er als Flachdach- und Steildachdämmplatte eingesetzt werden"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Nachteilig wirkt sich gerade die geringe UV-Beständigkeit aus. Die Alukaschierung der Platten hat einen doppelten Zweck: Sie verhindert, dass Wasser durch Diffusion in die Platten eindringt, und hält sie formstabil. PUR ist alterungs- und fäulnisbeständig sowie resistent gegen die gebräuchlichen Lösungsmittel.",
     "bildDatei": "/buch/anhang2/pur-platten.webp",
@@ -1832,14 +1832,14 @@
     "konfidenz": "hoch",
     "frage": "Was kennzeichnet Mineralwolle?",
     "optionen": [
-      "Im Herstellungsprozess werden die Grundstoffe bei etwa 1400 °C eingeschmolzen und durch Düsen gespritzt",
-      "Sie ist fäulnisresistent und zugleich wasserabweisend",
+      "Sammelbezeichnung für Glas- und Steinwolle, wobei der Name den Hauptbestandteil angibt",
       "Sie ist mit rund 60 % Marktanteil Marktführer unter den Dämmstoffen",
-      "Sammelbezeichnung für Glas- und Steinwolle, wobei der Name den Hauptbestandteil angibt"
+      "Sie ist fäulnisresistent und zugleich wasserabweisend",
+      "Im Herstellungsprozess werden die Grundstoffe bei etwa 1400 °C eingeschmolzen und durch Düsen gespritzt"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Mineralwolle ist zwar fäulnisresistent, aber nicht wasserabweisend — sie muss trocken eingebaut und vor Feuchtigkeit geschützt werden. Die gelb aussehende Glaswolle enthält Glas und Altglas mit Zusätzen wie Schmelzhilfen und Bindemittel, die grüne Steinwolle besteht zum größten Teil aus Basalt und Bindemitteln.",
@@ -1855,14 +1855,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Welche Schutzmaßnahmen müssen beim Verarbeiten von Mineralwolle ergriffen werden?",
     "optionen": [
-      "Eine Staubmaske ist grundsätzlich nicht erforderlich",
-      "Beim Entfernen alter Mineralwolle Staubentwicklung vermeiden",
       "Geschlossene Arbeitskleidung sowie Handschuhe tragen, bei starker Staubentwicklung zusätzlich Feinstaubmasken und Schutzbrille",
-      "Dämmwolle auf fester Unterlage mit einem Messer schneiden, nicht mit einer Säge"
+      "Dämmwolle auf fester Unterlage mit einem Messer schneiden, nicht mit einer Säge",
+      "Eine Staubmaske ist grundsätzlich nicht erforderlich",
+      "Beim Entfernen alter Mineralwolle Staubentwicklung vermeiden"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Der Grund für alle Maßnahmen ist der Staub: Wegen der Staubentwicklung, die bei der Arbeit mit Mineralwolle entsteht, können Hautreizungen, Schleimhautreizungen, Augenbrennen und Allergien auftreten. Die Säge erzeugt viel mehr Staub als das Messer — deshalb der ausdrückliche Hinweis auf das Schneidewerkzeug.",
@@ -1878,15 +1878,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Welcher Dämmstoff ist zur Flachdacheindeckung besonders geeignet und warum?",
     "optionen": [
-      "Es findet Verwendung vor allem im Kellerbereich (Perimeterdämmung), bei der Flachdacheindeckung und der Bauwerksabdichtung",
-      "Schaumglas, da es sehr druckfest ist und keine Feuchtigkeit aufnimmt",
       "Es wird mit bitumenhaltigem Kaltkleber oder Heißbitumen verlegt",
-      "Cellulose, weil sie sich einblasen lässt"
+      "Cellulose, weil sie sich einblasen lässt",
+      "Es findet Verwendung vor allem im Kellerbereich (Perimeterdämmung), bei der Flachdacheindeckung und der Bauwerksabdichtung",
+      "Schaumglas, da es sehr druckfest ist und keine Feuchtigkeit aufnimmt"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Schaumglas vereint drei Eigenschaften, die im Flachdach zusammenkommen müssen: extrem hohe Druckbelastbarkeit, keine Wasseraufnahme und Dampfdichtheit. Es entsteht, indem Glasabfälle zu Pulver gemahlen und bei über 1400 °C geschmolzen werden; Kohlendioxid schäumt das Glas auf. Cellulose wäre im Flachdach wegen der Feuchtebelastung ungeeignet.",
     "bildDatei": "/buch/anhang2/schaumglas-produkte.webp",
@@ -1901,10 +1901,10 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für Perlit als Dämmstoff?",
     "optionen": [
-      "Ausgangsmaterial ist das Perlitgestein, das zerkleinert und stark erhitzt wird",
       "Dabei verdampft das Wasser im Gestein, das Volumen bläht sich um das 20-Fache auf",
+      "Es gibt ihn als lose Schüttung und als bitumengebundene Platten",
       "Perlit trägt das Kurzzeichen PER",
-      "Es gibt ihn als lose Schüttung und als bitumengebundene Platten"
+      "Ausgangsmaterial ist das Perlitgestein, das zerkleinert und stark erhitzt wird"
     ],
     "korrekt": [
       0,
@@ -1924,15 +1924,15 @@
     "konfidenz": "hoch",
     "frage": "Wie lassen sich Wärmedämmstoffe einteilen?",
     "optionen": [
+      "Metallische Dämmstoffe wie Aluminium und Kupfer",
       "Künstliche Dämmstoffe wie Polystyrol und Polyurethan",
-      "Natürliche Dämmstoffe wie Kork und Hanf",
       "Mineralische Dämmstoffe wie Mineralwolle und Schaumglas",
-      "Metallische Dämmstoffe wie Aluminium und Kupfer"
+      "Natürliche Dämmstoffe wie Kork und Hanf"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Drei Gruppen — Metalle gehören nicht dazu, sie sind gerade besonders gute Wärmeleiter. Allen drei Gruppen gemeinsam ist, dass sie sich durch ihre geringe Wärmeleitfähigkeit, durch einen hohen Porenanteil und eine geringe Dichte auszeichnen und witterungs- sowie fäulnisbeständig sein müssen.",
     "bildDatei": "/buch/anhang2/daemmstoff-zusammenfassung.webp",
@@ -1947,15 +1947,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Was bedeutet die Aufschrift MW-EN 13162-DZ-dk-035-B1-100?",
     "optionen": [
-      "B1: normal entflammbar",
-      "dk: keine Druckbelastbarkeit; 035: Wärmeleitfähigkeit 0,035 W/(m·K); 100: Dicke 100 mm",
+      "MW: Mineralwolle nach DIN EN 13162",
       "DZ: Zwischensparrendämmung bei zweischaligem Dach",
-      "MW: Mineralwolle nach DIN EN 13162"
+      "dk: keine Druckbelastbarkeit; 035: Wärmeleitfähigkeit 0,035 W/(m·K); 100: Dicke 100 mm",
+      "B1: normal entflammbar"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "B1 bedeutet schwer entflammbar, normal entflammbar wäre B2. Der Schlüssel liest sich immer in derselben Reihenfolge: Material, Norm, Anwendungsgebiet, Produkteigenschaft, Wärmeleitfähigkeit, Brandverhalten, Dicke. Wer diese Reihenfolge kennt, kann jedes Etikett auf der Baustelle entziffern.",
     "bildDatei": "/buch/anhang2/daemmstoff-aufgaben.webp",
@@ -1988,15 +1988,15 @@
     "konfidenz": "hoch",
     "frage": "Was besagt die Beschriftung MW-EN 13162-040-WAP-zg-B1-40?",
     "optionen": [
-      "Mineralwolle mit λ = 0,40 W/(m·K)",
+      "Mineralwolle mit λ = 0,040 W/(m·K)",
       "zg: geringe Zugfestigkeit; B1: schwer entflammbar; 40: Dicke 40 mm",
       "WAP: Außendämmung der Wand unter Putz",
-      "Mineralwolle mit λ = 0,040 W/(m·K)"
+      "Mineralwolle mit λ = 0,40 W/(m·K)"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Die Zahl 040 im Schlüssel bedeutet 0,040 W/(m·K) — die führende Null wird weggelassen, das Komma steht drei Stellen weiter vorn. Mit 0,40 wäre der Stoff kein Dämmstoff mehr, denn dafür gilt die Grenze λ < 0,1. Dieser Umrechnungsschritt wird gern übersehen.",
     "bildDatei": "/buch/anhang2/mineralwolle-verarbeitung.webp",
@@ -2011,15 +2011,15 @@
     "konfidenz": "hoch",
     "frage": "Wofür werden steife, druckfeste Platten aus Steinwolle verwendet?",
     "optionen": [
-      "Sie sind trocken einzubauen und vor Feuchtigkeit zu schützen",
       "Sie müssen die Lasten aufnehmen können, die auf der Dachfläche wirken",
-      "Ausschließlich als Trittschalldämmung unter Estrich",
-      "Für einschalige Dächer"
+      "Für einschalige Dächer",
+      "Sie sind trocken einzubauen und vor Feuchtigkeit zu schützen",
+      "Ausschließlich als Trittschalldämmung unter Estrich"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Beim einschaligen Dach liegt die Abdichtung direkt auf der Dämmung — die Platte muss also begehbar und druckfest sein. Genau dafür gibt es die Kennzeichnung der Druckbelastbarkeit von dk (keine) bis dx (extrem hoch). Die weiche, zusammendrückbare Variante wäre hier falsch.",
     "bildDatei": "/buch/anhang2/steinwolle-platte.webp",
@@ -2034,15 +2034,15 @@
     "konfidenz": "hoch",
     "frage": "Wo im Gebäude liegen die Anwendungsgebiete mit den Kurzzeichen DAD, DZ und PB?",
     "optionen": [
-      "DAD: Außendämmung von Dach oder Decke, vor Bewitterung geschützt",
-      "DZ: Zwischensparrendämmung im zweischaligen Dach",
       "PB: außen liegende Wärmedämmung unter der Bodenplatte gegen Erdreich",
-      "PB: Dämmung des Firstbereichs"
+      "PB: Dämmung des Firstbereichs",
+      "DAD: Außendämmung von Dach oder Decke, vor Bewitterung geschützt",
+      "DZ: Zwischensparrendämmung im zweischaligen Dach"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Grafik ordnet jedes Kurzzeichen seiner Stelle am Gebäude zu — vom Dach (D) über die Wand (W) bis zum Perimeter (P) unten. P steht immer für den erdberührten Bereich: PW für die Wand gegen Erdreich, PB für die Bodenplatte.",
     "bildDatei": "/buch/anhang2/anwendungsgebiete-haus.webp",
@@ -2057,13 +2057,13 @@
     "konfidenz": "hoch",
     "frage": "Was zeigt die Grafik der Flachdachdämmung aus Neopor?",
     "optionen": [
+      "Gefälle-Elemente und Dämmplatten über der Dampfsperre",
       "Ein Umkehrdach, bei dem die Dämmung über der Abdichtung liegt",
-      "Die Betondecke als Untergrund",
       "Den Schichtenaufbau mit Begrünung, Pflanz-Substrat und Drainageschicht",
-      "Gefälle-Elemente und Dämmplatten über der Dampfsperre"
+      "Die Betondecke als Untergrund"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -2080,10 +2080,10 @@
     "konfidenz": "hoch",
     "frage": "Was besagt die Kennzeichnung PUR-EN 13165-025-DEO-dh-B2-50?",
     "optionen": [
-      "dh: hohe Druckbelastbarkeit; B2: normal entflammbar; 50: Dicke 50 mm",
+      "Polyurethan-Hartschaum mit λ = 0,025 W/(m·K)",
       "PUR ist der Dämmstoff mit der höchsten Wärmeleitfähigkeit",
-      "DEO: Innendämmung der Decke oder Bodenplatte unter Estrich ohne Schallschutzanforderungen",
-      "Polyurethan-Hartschaum mit λ = 0,025 W/(m·K)"
+      "dh: hohe Druckbelastbarkeit; B2: normal entflammbar; 50: Dicke 50 mm",
+      "DEO: Innendämmung der Decke oder Bodenplatte unter Estrich ohne Schallschutzanforderungen"
     ],
     "korrekt": [
       0,
@@ -2103,15 +2103,15 @@
     "konfidenz": "hoch",
     "frage": "Wie wird Kork gewonnen und in welcher Form kommt er als Dämmstoff zum Einsatz?",
     "optionen": [
+      "Korkplatten werden in zweischalige Außenwände und in belüftete Dächer direkt unter der Dachhaut eingebaut",
       "Korkschüttung dient als loses Dämmmaterial",
-      "Kork wird ausschließlich als Schüttung verwendet",
       "Kork ist das abgestorbene Zellgewebe der Korkeiche, das etwa alle 7 bis 14 Jahre pro Baum geerntet wird",
-      "Korkplatten werden in zweischalige Außenwände und in belüftete Dächer direkt unter der Dachhaut eingebaut"
+      "Kork wird ausschließlich als Schüttung verwendet"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Kork gibt es sowohl als Platte wie als Schüttung — die Fotos im Buch zeigen beides, dazu die Korkkerne als Ausgangsmaterial. Wichtig für den Einbauort: In belüfteten Dächern kann er direkt unter die Dachhaut, weil die Belüftung ihn trocken hält.",
     "bildDatei": "/buch/anhang2/korkkerne.webp",
@@ -2126,14 +2126,14 @@
     "konfidenz": "hoch",
     "frage": "Wo werden Hanfvliese eingebaut?",
     "optionen": [
-      "Als Perimeterdämmung im erdberührten Bereich",
+      "Im Holzrahmenbau",
       "Im Steildach als Zwischensparrendämmung",
-      "Als Dämmung zwischen den Sparren",
-      "Im Holzrahmenbau"
+      "Als Perimeterdämmung im erdberührten Bereich",
+      "Als Dämmung zwischen den Sparren"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Für den erdberührten Perimeterbereich ist Hanf ungeeignet — dort braucht es druckfeste, wasserabweisende Stoffe wie XPS oder Schaumglas. Hanf gehört in trockene, geschützte Einbaulagen: Holzrahmenbau und Zwischensparrendämmung im Steildach.",
@@ -2149,10 +2149,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Wie entsteht Schall?",
     "optionen": [
+      "Durch mechanische Schwingungen und Wellen, die sich in festen, flüssigen oder gasförmigen Stoffen ausbreiten",
       "In der Regel gelangt Schall über die Luft in unser Ohr und wird dort in Signale umgewandelt",
-      "Diese Signale lösen im Gehirn bestimmte Reaktionen und Empfindungen aus",
       "Schall breitet sich auch im Vakuum aus",
-      "Durch mechanische Schwingungen und Wellen, die sich in festen, flüssigen oder gasförmigen Stoffen ausbreiten"
+      "Diese Signale lösen im Gehirn bestimmte Reaktionen und Empfindungen aus"
     ],
     "korrekt": [
       0,
@@ -2172,15 +2172,15 @@
     "konfidenz": "hoch",
     "frage": "Was bezeichnet der Schallpegel?",
     "optionen": [
+      "Er ist das Maß für die Stärke eines Geräusches",
       "Er wird in Dezibel (dB) angegeben",
-      "Er misst die Frequenz eines Tones",
       "Die Lautstärke, die durch den Schall erzeugt wird",
-      "Er ist das Maß für die Stärke eines Geräusches"
+      "Er misst die Frequenz eines Tones"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Schallpegel und Frequenz sind zwei verschiedene Größen: Der Pegel beschreibt die Lautstärke in Dezibel, die Frequenz die Tonhöhe. In der Grafik erkennst du beides — mehr Schwingungen je Zeit ergeben einen höheren Ton, größere Ausschläge einen lauteren.",
     "bildDatei": "/buch/anhang2/schallpegel-wirkung.webp",
@@ -2196,8 +2196,8 @@
     "frage": "Welche Wirkung hat eine Dauereinwirkung von Schall auf den Menschen?",
     "optionen": [
       "Über 90 dB: nur leichte Unannehmlichkeiten",
-      "75 bis 80 dB: Erhöhung des Blutdrucks, Verdauungsstörungen",
       "Über 50 dB: geistige Arbeit erschwert",
+      "75 bis 80 dB: Erhöhung des Blutdrucks, Verdauungsstörungen",
       "35 bis 40 dB: Schlafstörungen"
     ],
     "korrekt": [
@@ -2218,15 +2218,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Wie hoch ist der A-Schallpegel folgender Geräusche?",
     "optionen": [
-      "Zimmerlautstärke 60 bis 70 dB, Verkehrslärm 70 bis 80 dB",
+      "Die Schmerzschwelle liegt bei 120 dB",
       "Disco 90 bis 110 dB, Presslufthammer 100 bis 120 dB",
-      "Normale Sprache liegt bei 90 dB",
-      "Die Schmerzschwelle liegt bei 120 dB"
+      "Zimmerlautstärke 60 bis 70 dB, Verkehrslärm 70 bis 80 dB",
+      "Normale Sprache liegt bei 90 dB"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Normale Sprache liegt bei 60 dB, leise Sprache bei 50 dB. Vergleiche die Werte mit der Wirkungstabelle: Disco und Presslufthammer liegen beide über 90 dB, wo Aggression und Schwerhörigkeit drohen — sie reichen bis an die Schmerzschwelle von 120 dB heran.",
     "bildDatei": "/buch/anhang2/schallpegel-geraeusche.webp",
@@ -2242,8 +2242,8 @@
     "frage": "Buchaufgabe 3: Welche Schallarten treten in Gebäuden auf?",
     "optionen": [
       "Wasserschall als vierte eigenständige Art",
-      "Luftschall: Der Schall breitet sich durch die Luft aus, zum Beispiel Verkehrslärm",
       "Körperschall: Der Schall breitet sich in festen Stoffen aus, zum Beispiel durch Klopfen und Hämmern auf Decken oder Wände",
+      "Luftschall: Der Schall breitet sich durch die Luft aus, zum Beispiel Verkehrslärm",
       "Trittschall: eine Form des Körperschalls, die durch das Begehen von Decken entsteht"
     ],
     "korrekt": [
@@ -2264,14 +2264,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Worin besteht der Unterschied zwischen Schallschluckung und Schalldämmung?",
     "optionen": [
+      "Beide Begriffe bezeichnen dasselbe",
       "Schallschluckung mindert die Schallenergie, indem poröse Baustoffe an den Wänden, Decken und Böden den Schall nicht reflektieren, sondern absorbieren",
       "Schallschluckung wirkt im Raum, Schalldämmung zwischen zwei Räumen",
-      "Beide Begriffe bezeichnen dasselbe",
       "Schalldämmung bedeutet, dass die Schallenergie beim Durchgang durch einen Körper wie Mauer oder Dach gemindert wird"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Der Unterschied ist die Richtung: Schluckung mindert den Schall im selben Raum, Dämmung mindert seinen Durchgang in den Nachbarraum. Akustikplatten in Wand und Decke schlucken, eine schwere Trennwand dämmt. Ihre poröse Oberfläche besitzt viele kleine Öffnungen, welche die ankommenden Schallwellen verschlucken.",
@@ -2287,15 +2287,15 @@
     "konfidenz": "hoch",
     "frage": "Wovon hängt die Luftschalldämmung bei einschaligen Bauteilen ab?",
     "optionen": [
+      "Von der Oberflächenrauigkeit des Putzes",
       "Je schwerer das Bauteil, desto besser ist die Luftschalldämmung",
       "Diese ergibt sich aus Rohdichte in kg/m³ mal Schichtdicke in m",
-      "Wesentlich von der flächenbezogenen Masse",
-      "Von der Oberflächenrauigkeit des Putzes"
+      "Wesentlich von der flächenbezogenen Masse"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Bei einschaligen Bauteilen gilt schlicht: Masse dämmt. Das Bauteil wird durch ein Mitschwingen zur Schallübertragung angeregt — je schwerer es ist, desto weniger schwingt es mit. Die Grafik vergleicht 11,5 cm Hochlochziegel mit 130 kg/m² gegen 24 cm Kalksandstein mit 400 kg/m².",
     "bildDatei": "/buch/anhang2/flaechenbezogene-masse.webp",
@@ -2310,15 +2310,15 @@
     "konfidenz": "hoch",
     "frage": "Wie schneiden verschiedene Wandbauarten beim Schallschutz ab?",
     "optionen": [
-      "Schwer und dicht wie Beton oder Kalksandstein: besserer Schallschutz",
-      "Zweischalig mit Mineralfaser weich federnd: der beste Schallschutz",
       "Leicht und porös wie Porenbeton: geringer Schallschutz",
-      "Leicht und porös bietet den besten Schallschutz"
+      "Schwer und dicht wie Beton oder Kalksandstein: besserer Schallschutz",
+      "Leicht und porös bietet den besten Schallschutz",
+      "Zweischalig mit Mineralfaser weich federnd: der beste Schallschutz"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Hier liegt eine wichtige Falle: Porenbeton ist ein guter Wärmedämmstoff, aber ein schlechter Schalldämmer — beim Wärmeschutz will man leicht und porös, beim Schallschutz schwer und dicht. Am besten ist die zweischalige Konstruktion, weil sie Masse und Entkopplung verbindet.",
     "bildDatei": "/buch/anhang2/schallschutz-wandbauarten.webp",
@@ -2333,14 +2333,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Welche Fehler in der Bauausführung ermöglichen eine Schallübertragung?",
     "optionen": [
-      "Mörtelbrücken zwischen den Schalen bei zweischaligen Bauteilen",
-      "Eine vollflächig gefüllte Dämmschicht",
+      "Lücken in der Dämmschicht und unvollständige Abschalung",
       "Schallbrücken durch Wandschlitze oder Aussparungen, in die Wand gestemmt",
-      "Lücken in der Dämmschicht und unvollständige Abschalung"
+      "Eine vollflächig gefüllte Dämmschicht",
+      "Mörtelbrücken zwischen den Schalen bei zweischaligen Bauteilen"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Eine vollflächig gefüllte Dämmschicht ist gerade die sorgfältige Ausführung. Bei allen Ausführungen ist sorgfältig darauf zu achten, dass keine Schallbrücken entstehen — jede starre Verbindung zwischen den Schalen leitet den Schall weiter und macht die Trennung wirkungslos.",
@@ -2356,15 +2356,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Welche Konstruktionen unterscheidet man bei zweischaligen Bauteilen?",
     "optionen": [
-      "Zwei biegeweiche Schalen, zum Beispiel aus Gipsplatten mit Dämmstoffschicht",
-      "Zwei schwere biegesteife Schalen mit durchgehender Trennfuge, mindestens 3 cm Abstand und vollflächig mit Faserdämmplatten gefüllt",
       "Biegeweiche Vorsatzschale, zum Beispiel Holzwolleplatten mit Kanthölzern vor Kalksandsteinmauerwerk",
-      "Eine einzige schwere Schale ohne Fuge"
+      "Zwei biegeweiche Schalen, zum Beispiel aus Gipsplatten mit Dämmstoffschicht",
+      "Eine einzige schwere Schale ohne Fuge",
+      "Zwei schwere biegesteife Schalen mit durchgehender Trennfuge, mindestens 3 cm Abstand und vollflächig mit Faserdämmplatten gefüllt"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Drei Varianten — die einschalige Wand gehört per Definition nicht dazu. Bei zweischaligen Bauteilen reicht die Masse allein nicht: Es müssen weitere konstruktive Details beachtet werden, vor allem die durchgehende Trennfuge und die vollflächige Dämmstofffüllung des Fugenhohlraums.",
     "bildDatei": "/buch/anhang2/zweischalige-wandarten.webp",
@@ -2402,10 +2402,10 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Trittschalldämmung bei Massivdecken verbessert?",
     "optionen": [
-      "Durch das Verlegen der Dämmschicht mit einem Randstreifen zwischen Wand und Estrich",
       "Durch Estrich auf Dämmschicht, da das Eindringen von Körperschall in die Deckenkonstruktion weitgehend verhindert wird",
+      "Auch hier gilt, dass durch eine sorgfältige Ausführung Schallbrücken verhindert werden müssen",
       "Indem der Estrich fest mit der Wand verbunden wird",
-      "Auch hier gilt, dass durch eine sorgfältige Ausführung Schallbrücken verhindert werden müssen"
+      "Durch das Verlegen der Dämmschicht mit einem Randstreifen zwischen Wand und Estrich"
     ],
     "korrekt": [
       0,
@@ -2452,13 +2452,13 @@
     "frage": "Buchaufgabe 1: Welchen Feuchtebeanspruchungen ist ein Gebäude ausgesetzt?",
     "optionen": [
       "Bodenfeuchte",
+      "Wasserdampf",
       "Ausschließlich Grundwasser",
-      "Regen",
-      "Wasserdampf"
+      "Regen"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Drei Quellen mit drei Schutzmaßnahmen: Regenschutz, Bodenfeuchteschutz und Tauwasserschutz. Die Folgen sind erheblich — Putz, Fäulnis und Schwämme im Holz sowie Pilzbefall verursachen Bauschäden, die wiederum ernsthafte Gesundheitsschäden nach sich ziehen können.",
@@ -2474,15 +2474,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Was versteht man unter der relativen Luftfeuchtigkeit?",
     "optionen": [
-      "Sie wird mit dem Formelzeichen φ (groß Phi) angegeben",
+      "Sie gibt die Wassermenge in Gramm je Kubikmeter an",
       "Das Verhältnis der absoluten Luftfeuchte zur maximal möglichen Luftfeuchte",
       "Sie berechnet sich aus absoluter Luftfeuchtigkeit geteilt durch maximale Luftfeuchtigkeit mal 100 %",
-      "Sie gibt die Wassermenge in Gramm je Kubikmeter an"
+      "Sie wird mit dem Formelzeichen φ (groß Phi) angegeben"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Wassermenge in g/m³ ist die absolute Luftfeuchtigkeit — die relative ist ein Verhältnis in Prozent. Der Unterschied ist entscheidend: Die absolute Feuchte kann gleich bleiben, während die relative allein durch Abkühlung auf 100 % steigt. Genau dann fällt Tauwasser aus.",
     "bildDatei": "/buch/anhang2/saettigungskurve.webp",
@@ -2575,14 +2575,14 @@
     "konfidenz": "hoch",
     "frage": "Was ist die Taupunkttemperatur?",
     "optionen": [
-      "Tauwasser führt bei einem Bauwerk ohne entsprechenden Schutz zu einem Durchfeuchten der Bauteile",
-      "Die Temperatur, bei der die Luft mit 100 % relativer Luftfeuchte gesättigt ist",
       "Die Temperatur, bei der Wasser gefriert",
-      "Bei weiterer Abkühlung fällt Tauwasser aus"
+      "Bei weiterer Abkühlung fällt Tauwasser aus",
+      "Tauwasser führt bei einem Bauwerk ohne entsprechenden Schutz zu einem Durchfeuchten der Bauteile",
+      "Die Temperatur, bei der die Luft mit 100 % relativer Luftfeuchte gesättigt ist"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Nicht zu verwechseln mit dem Gefrierpunkt: Der Taupunkt hängt vom Feuchtegehalt der Luft ab und liegt meist deutlich über 0 °C. Im Winter nimmt die Temperatur im Bauteil von innen nach außen ab — unterschreitet sie irgendwo den Taupunkt, kommt es genau dort zum Tauwasserausfall.",
@@ -2598,15 +2598,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Warum diffundiert Wasserdampf durch ein Bauwerk und welche Folgen kann das haben?",
     "optionen": [
-      "Die Diffusion erfolgt immer von außen nach innen",
-      "Fällt das Tauwasser in der Wärmedämmschicht an, wird diese durchfeucht und verliert ihre Dämmeigenschaft",
       "Kühlt der Taupunkt im Bauteil ab, kommt es zum Tauwasserausfall",
-      "Im Winter ist der innere Druck höher als der äußere, deshalb wandern Wasserdampfteilchen durch die Bauteile nach außen"
+      "Im Winter ist der innere Druck höher als der äußere, deshalb wandern Wasserdampfteilchen durch die Bauteile nach außen",
+      "Fällt das Tauwasser in der Wärmedämmschicht an, wird diese durchfeucht und verliert ihre Dämmeigenschaft",
+      "Die Diffusion erfolgt immer von außen nach innen"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Die Richtung folgt dem Druckgefälle: Warme Innenluft enthält mehr Wasserdampf und hat einen höheren Dampfdruck, deshalb wandert die Feuchte im Winter von innen nach außen. Genau deshalb gehört die Dampfsperre auf die warme Seite der Dämmung — sie stoppt den Dampf, bevor er den kalten Bereich erreicht.",
     "bildDatei": "/buch/anhang2/dampfsperre-grafik.webp",
@@ -2621,13 +2621,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 7: Welche Schutzmaßnahmen können gegen Tauwasserausfall ergriffen werden?",
     "optionen": [
+      "Eine Dampfsperre auf der warmen Seite, also der Innenseite, anordnen",
       "Der Diffusionswiderstand sollte von innen nach außen zunehmen",
       "Eine bewegte Luftschicht vor einer dichten Außenschale führt den Wasserdampf schnell nach außen ab",
-      "Der Diffusionswiderstand der Baustoffe sollte von innen nach außen abnehmen",
-      "Eine Dampfsperre auf der warmen Seite, also der Innenseite, anordnen"
+      "Der Diffusionswiderstand der Baustoffe sollte von innen nach außen abnehmen"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -2644,14 +2644,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Wasserdampfdiffusions-Widerstandszahlen μ nennt die Tabelle?",
     "optionen": [
-      "Bitumenbahn μ = 20000, Metalle, Glas und Schaumglas μ = unendlich",
-      "Putz μ = 15, Holz μ = 40, Beton μ = 70, XPS μ = 80",
       "Metalle μ = 100",
-      "Luft und Faserdämmstoffe μ = 1, Mauerziegel und Porenbeton μ = 5"
+      "Luft und Faserdämmstoffe μ = 1, Mauerziegel und Porenbeton μ = 5",
+      "Putz μ = 15, Holz μ = 40, Beton μ = 70, XPS μ = 80",
+      "Bitumenbahn μ = 20000, Metalle, Glas und Schaumglas μ = unendlich"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Metalle, Glas und Schaumglas sind praktisch dampfdicht, ihr μ gilt als unendlich. Die Skala zur Einordnung: Ab μ = 50 bis 500 wird die Dampfdiffusion eingeschränkt, ab μ = 1500 wirkt ein Material dampfbremsend, ab μ = 100000 ist es dampfdicht. μ ist dabei eine dimensionslose Vergleichszahl, die angibt, wievielmal größer der Diffusionswiderstand gegenüber einer gleich dicken Luftschicht ist.",
@@ -2667,10 +2667,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 9: Was besagt der sd-Wert und wie wird er berechnet?",
     "optionen": [
+      "Bei mehrschichtigen Bauteilen werden die sd-Werte der einzelnen Schichten addiert",
       "Er gibt an, wie viel Wasserdampf durch ein Bauteil diffundiert",
-      "Er ist die diffusionsäquivalente Luftschichtdicke und berechnet sich aus sd = μ · d",
       "Er wird in m²·K/W angegeben",
-      "Bei mehrschichtigen Bauteilen werden die sd-Werte der einzelnen Schichten addiert"
+      "Er ist die diffusionsäquivalente Luftschichtdicke und berechnet sich aus sd = μ · d"
     ],
     "korrekt": [
       0,
@@ -2746,14 +2746,14 @@
     "frage": "Welche Mindestlüftungsquerschnitte fordert die Tabelle für belüftete Steildächer?",
     "optionen": [
       "Bei einer Dachneigung ab 5° und Sparrenlänge bis 10 m: 200 cm²/m und 2 cm freie Höhe, sd innen mindestens 2 m",
-      "Die Luftschicht muss ausreichend hoch sein",
       "Bei einer Dachneigung unter 5° und Sparrenlänge bis 10 m: mindestens 5 cm, sd innen mindestens 100 m",
-      "Bei allen Dachneigungen genügen 2 cm freie Höhe"
+      "Bei allen Dachneigungen genügen 2 cm freie Höhe",
+      "Die Luftschicht muss ausreichend hoch sein"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Achte auf den großen Unterschied beim sd-Wert: Bei sehr flacher Neigung unter 5° wird innen ein sd von mindestens 100 m gefordert, ab 5° genügen 2 m. Je flacher das Dach, desto schlechter funktioniert die Belüftung — deshalb muss dann die innere Schicht umso dichter sein.",
     "bildDatei": "/buch/anhang2/lueftung-tabelle.webp",
@@ -2769,14 +2769,14 @@
     "frage": "Welche vier Steildachvarianten unterscheidet das Buch beim Feuchteschutz?",
     "optionen": [
       "Nicht belüftetes diffusionshemmendes Dach: die innere Schicht muss mindestens den 6-fachen Diffusionswiderstand der äußeren aufweisen",
-      "Nicht belüftetes diffusionsdichtes Dach: sd innen mindestens 10 m",
+      "Nicht belüftetes diffusionsoffenes Dach: innerer Diffusionswiderstand sd mindestens 2 m, äußerer höchstens 0,3 m",
       "Belüftetes Dach: Die Feuchtigkeit wird durch die Belüftung abgeführt",
-      "Nicht belüftetes diffusionsoffenes Dach: innerer Diffusionswiderstand sd mindestens 2 m, äußerer höchstens 0,3 m"
+      "Nicht belüftetes diffusionsdichtes Dach: sd innen mindestens 10 m"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Beim diffusionsdichten Dach gilt sd innen mindestens 100 m, nicht 10 m. Alle vier Varianten verfolgen dasselbe Ziel auf verschiedenen Wegen: Entweder die Feuchte wird abgelüftet, oder sie kann nach außen entweichen, oder sie wird innen gar nicht erst hereingelassen.",
     "bildDatei": "/buch/anhang2/steildach-schnitte.webp",
@@ -2791,13 +2791,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 8: Welche Konstruktionsmöglichkeiten gibt es beim Flachdach, um die Durchfeuchtung zu verhindern?",
     "optionen": [
-      "Einschaliges, nicht belüftetes Dach mit dampfsperrender Schicht, der sd-Wert muss größer als 100 m sein",
       "Beim einschaligen Dach genügt ein sd-Wert von 2 m",
       "Zweischaliges, belüftetes Dach, bei dem die dampfundurchlässige Dachhaut hinterlüftet wird",
-      "Beim zweischaligen Dach kann zusätzlich eine Dampfbremse eingebaut werden, es muss ein sd-Wert von 100 m erreicht werden"
+      "Beim zweischaligen Dach kann zusätzlich eine Dampfbremse eingebaut werden, es muss ein sd-Wert von 100 m erreicht werden",
+      "Einschaliges, nicht belüftetes Dach mit dampfsperrender Schicht, der sd-Wert muss größer als 100 m sein"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -2814,15 +2814,15 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für die Luftdichtheit bei durchlüfteten Dächern?",
     "optionen": [
+      "Diese Schicht ist grundsätzlich verschieden von der Dampfsperre",
       "Dazu wird die luftdichte Schicht auf der inneren Seite der Wärmedämmung angebracht, in der Regel aus Kunststofffolien oder luftdicht verlegten Plattenwerkstoffen",
       "Es ist eine winddichte Ausbildung der inneren Schicht notwendig",
-      "Stöße, Abschlüsse und Durchdringungen müssen verklebt, abgedeckt oder verspachtelt werden",
-      "Diese Schicht ist grundsätzlich verschieden von der Dampfsperre"
+      "Stöße, Abschlüsse und Durchdringungen müssen verklebt, abgedeckt oder verspachtelt werden"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Diese Schicht ist in der Regel identisch mit der Dampfsperre — sie erfüllt beide Aufgaben zugleich. Die Luftdichtheit erfordert besondere Sorgfalt im Bereich der Stöße, Abschlüsse und Durchdringungen; genau dort entstehen sonst Leckagen, durch die feuchte Raumluft in die Konstruktion strömt.",
     "bildDatei": "/buch/anhang2/flachdach-zweischalig.webp",
@@ -2839,13 +2839,13 @@
     "optionen": [
       "Der Messwert n50 gibt an, wie oft das Luftvolumen des Gebäudes bei einer Druckdifferenz von 50 Pa in einer Stunde ausgetauscht wird",
       "Der n50-Wert darf bei Gebäuden mit Fensterlüftung 3/h und bei Gebäuden mit Raumluftanlagen 1,5/h nicht überschreiten",
-      "Dabei müssen alle Fenster geöffnet bleiben",
-      "Ein Ventilator in der Außentür saugt Luft aus dem Gebäude oder drückt sie hinein"
+      "Ein Ventilator in der Außentür saugt Luft aus dem Gebäude oder drückt sie hinein",
+      "Dabei müssen alle Fenster geöffnet bleiben"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Genau umgekehrt: Alle Außenöffnungen werden verschlossen, nur die Außentür mit dem Ventilator bleibt offen. Sonst würde man die Fensteröffnung messen statt der Undichtigkeiten. Die Innentüren dagegen bleiben geöffnet, damit das gesamte Gebäudevolumen erfasst wird.",
     "bildDatei": "/buch/anhang2/feuchte-zusammenfassung.webp",
@@ -2985,15 +2985,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Welche Voraussetzungen müssen für einen Brandvorgang gegeben sein?",
     "optionen": [
-      "Es muss genügend Sauerstoff vorhanden sein",
+      "Ein Brand entsteht auch, wenn nur eine dieser Bedingungen erfüllt ist",
       "Der Ausgangsstoff muss brennbar sein",
       "Es muss eine hohe Temperatur entstehen, bei der die Stoffe entzünden können (Entzündungstemperatur)",
-      "Ein Brand entsteht auch, wenn nur eine dieser Bedingungen erfüllt ist"
+      "Es muss genügend Sauerstoff vorhanden sein"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Nur wenn diese Gegebenheiten gemeinsam auftreten, kann es zu einem Brandvorgang kommen — das ist der Schlüsselsatz. Daraus folgt die ganze Brandbekämpfung: Es genügt, eine der drei Bedingungen zu entfernen, etwa den Sauerstoff durch Ersticken oder die Temperatur durch Kühlen mit Wasser.",
     "bildDatei": "/buch/anhang2/brand-dachgeschoss.webp",
@@ -3009,13 +3009,13 @@
     "frage": "Wie unterscheiden sich baulicher und gerätemäßiger Brandschutz?",
     "optionen": [
       "Baulicher Brandschutz: Materialien, Konstruktionen und Grundrissgestaltungen sind so zu wählen, dass ein Feuer schon in der Entstehungsphase keine Möglichkeit zur Ausbreitung hat",
-      "Besonders bei Neubauten, in denen viele Personen zusammentreffen, muss vorbeugend gegen einen möglichen Brandfall geschützt werden",
       "Der bauliche Brandschutz umfasst auch die Feuerwehr",
-      "Gerätemäßiger Brandschutz: Feuerlöscher und Sprinkleranlagen müssen schnellstmöglich zur Brandbekämpfung bereitstehen"
+      "Gerätemäßiger Brandschutz: Feuerlöscher und Sprinkleranlagen müssen schnellstmöglich zur Brandbekämpfung bereitstehen",
+      "Besonders bei Neubauten, in denen viele Personen zusammentreffen, muss vorbeugend gegen einen möglichen Brandfall geschützt werden"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Der bauliche Brandschutz steckt im Gebäude selbst — in Materialwahl, Konstruktion und Grundriss. Geräte und Löscheinrichtungen sind der gerätemäßige Teil. Beispiele für gefährdete Neubauten nennt das Buch: Konzerthallen, öffentliche Verwaltungen und Sporthallen.",
@@ -3031,15 +3031,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Wie werden die Baustoffe in Klassen eingeteilt?",
     "optionen": [
-      "Klasse A: nichtbrennbare Baustoffe, Klasse B: brennbare Baustoffe",
-      "B1 normal entflammbar, B2 schwer entflammbar",
       "A1 ohne brennbare Bestandteile wie Beton, Mauerwerk und Stahl",
-      "A2 mit geringen Mengen brennbarer Bestandteile wie Mineralwolledämmstoffe und Gipsplatten Typ DF"
+      "Klasse A: nichtbrennbare Baustoffe, Klasse B: brennbare Baustoffe",
+      "A2 mit geringen Mengen brennbarer Bestandteile wie Mineralwolledämmstoffe und Gipsplatten Typ DF",
+      "B1 normal entflammbar, B2 schwer entflammbar"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Achtung, hier werden B1 und B2 gern vertauscht: B1 ist schwer entflammbar (Gipsplatte, Spanplatten, Polystyrol PSWL), B2 normal entflammbar (Holz mit d ≥ 2 mm, Dachpappen, PVC-Beläge). Grundlage ist die DIN 4102; Basis dafür ist das Brandverhalten der Baustoffe.",
     "bildDatei": "/buch/anhang2/baustoffklassen.webp",
@@ -3054,15 +3054,15 @@
     "konfidenz": "hoch",
     "frage": "Was bedeuten die Klassen für Rauchentwicklung und brennendes Abtropfen?",
     "optionen": [
-      "d0: kein brennendes Abtropfen",
       "d1: brennendes Abtropfen unter 10 Sekunden, d2: brennendes Abtropfen über 10 Sekunden",
-      "s1: geringe Rauchentwicklung, s2: mittlere, s3: hohe Rauchentwicklung",
-      "s steht für die Entzündungstemperatur"
+      "s steht für die Entzündungstemperatur",
+      "d0: kein brennendes Abtropfen",
+      "s1: geringe Rauchentwicklung, s2: mittlere, s3: hohe Rauchentwicklung"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Buchstaben stehen für die englischen Begriffe: s für smoke (Rauch), d für droplets (Tropfen). Beide Zusatzangaben sind lebenswichtig — bei Bränden sterben die meisten Menschen am Rauch, nicht an den Flammen, und brennendes Abtropfen verbreitet das Feuer nach unten.",
     "bildDatei": "/buch/anhang2/rauchentwicklung.webp",
@@ -3078,9 +3078,9 @@
     "frage": "Wie hängen die nationalen Baustoffklassen und die Euroklassen zusammen?",
     "optionen": [
       "Die nationalen Klassen und die Euroklassen sind identisch",
-      "Die Euroklassen unterteilen deutlicher hinsichtlich ihres Verhaltens bei Brand",
       "Die deutsche Norm DIN 4102-1 wird durch die europäische Norm DIN EN 13501-1 ersetzt",
-      "Der nationalen Klasse A1 entspricht die Euroklasse A1, der Klasse B2 die Euroklassen D, E und F"
+      "Der nationalen Klasse A1 entspricht die Euroklasse A1, der Klasse B2 die Euroklassen D, E und F",
+      "Die Euroklassen unterteilen deutlicher hinsichtlich ihres Verhaltens bei Brand"
     ],
     "korrekt": [
       1,
@@ -3100,8 +3100,8 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Was bedeuten die Abkürzungen F60 A, F90 AB und T180?",
     "optionen": [
-      "F steht für Wände, Decken, Stützen, Balken und Treppen",
       "A oder AB kennzeichnet die Art des Baustoffs: A nichtbrennbar, B brennbar",
+      "F steht für Wände, Decken, Stützen, Balken und Treppen",
       "Die Zahl gibt die Mindestzeit in Minuten an, die das Bauteil seine Funktion trotz Feuereinwirkung behält",
       "T steht für tragende Bauteile"
     ],
@@ -3123,15 +3123,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Welcher Konstruktion würde man aus brandschutztechnischer Sicht den Vorzug geben — unverkleideter Stahlträger oder Träger aus Brettschichtholz?",
     "optionen": [
-      "Stahl verliert schon bei schwacher Rotglut die Hälfte seiner Tragfähigkeit, es kommt zum plötzlichen Zusammensturz",
-      "Dem Träger aus Brettschichtholz, da er im Brandfall nur langsam seine Tragfähigkeit verliert",
       "Die Verkohlung an der Holzoberfläche wirkt dämmend, sodass das Innere des Holzträgers noch nicht zerstört wird",
-      "Dem Stahlträger, weil Stahl nichtbrennbar ist"
+      "Dem Stahlträger, weil Stahl nichtbrennbar ist",
+      "Dem Träger aus Brettschichtholz, da er im Brandfall nur langsam seine Tragfähigkeit verliert",
+      "Stahl verliert schon bei schwacher Rotglut die Hälfte seiner Tragfähigkeit, es kommt zum plötzlichen Zusammensturz"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Das ist das große Paradox des Brandschutzes: Der nichtbrennbare Stahl verhält sich im Brandfall schlechter als das brennbare Holz. Bauteile aus brennbaren Baustoffen weisen unter bestimmten Voraussetzungen ein günstigeres Brandverhalten auf als nichtbrennbare. Damit nun Stahlstützen trotzdem eine Zeitlang Widerstand gegen eine Brandzerstörung entwickeln, müssen sie mit Gipskarton-Feuerschutzplatten verkleidet werden.",
     "bildDatei": "/buch/anhang2/massivdach-brandschutz.webp",
@@ -3187,14 +3187,14 @@
     "konfidenz": "hoch",
     "frage": "Was leistet die Aufsparrendämmung konstruktiv?",
     "optionen": [
-      "Deshalb ist die Berechnung vergleichbar mit der Außendämmung einer Wand",
-      "Die Sparren tragen bei dieser Variante zusätzlich zur Wärmedämmung bei",
+      "Die Dämmung liegt vollflächig über den Sparren",
       "Ein gemittelter U-Wert ist nicht nötig, da keine Sparren die Dämmebene unterbrechen",
-      "Die Dämmung liegt vollflächig über den Sparren"
+      "Die Sparren tragen bei dieser Variante zusätzlich zur Wärmedämmung bei",
+      "Deshalb ist die Berechnung vergleichbar mit der Außendämmung einer Wand"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Die Sparren liegen bei dieser Variante vollständig innerhalb der gedämmten Hülle und spielen für die Berechnung keine Rolle mehr — genau das macht sie so einfach. Nur bei der Zwischensparrendämmung muss zwischen Gefach- und Sparrenbereich unterschieden und gemittelt werden.",
@@ -3210,15 +3210,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Beim Neubau eines geneigten Daches soll die Wärmedämmung unterhalb der Sparren angebracht werden. Was ist dabei zu prüfen?",
     "optionen": [
-      "Ob der Aufbau die Bedingungen des GEG erfüllt, also U ≤ 0,24 W/(m²·K)",
       "Bei der Untersparrendämmung werden die Schichten bis zum Sparren berechnet",
       "Es ist zunächst eine Skizze des Dachaufbaus anzufertigen",
-      "Der Sparren selbst muss in die Berechnung einbezogen werden"
+      "Der Sparren selbst muss in die Berechnung einbezogen werden",
+      "Ob der Aufbau die Bedingungen des GEG erfüllt, also U ≤ 0,24 W/(m²·K)"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Bei der Untersparrendämmung tragen der Sparren selbst und die Unterdeckbahn nicht zur Wärmedämmung bei — gerechnet wird nur bis zum Sparren. Der geplante Aufbau der Buchaufgabe lautet 1,2 cm Gipsplatte, 1,5 cm stehende Luftschicht durch Lattung mit λ = 0,14 W/(m·K) und 16 cm Wärmedämmung der Gruppe 035.",
     "bildDatei": "/buch/anhang2/daemmung-aufgaben.webp",
@@ -3234,8 +3234,8 @@
     "frage": "Wie lassen sich die Dämmschichten beim ausgebauten, geneigten Dach anordnen?",
     "optionen": [
       "Ausschließlich als Zwischensparrendämmung",
-      "Als Zwischensparrendämmung",
       "Als Aufsparrendämmung",
+      "Als Zwischensparrendämmung",
       "Als Untersparrendämmung"
     ],
     "korrekt": [

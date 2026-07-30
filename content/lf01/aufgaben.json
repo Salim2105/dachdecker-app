@@ -46,13 +46,13 @@
     "konfidenz": "hoch",
     "frage": "Was muss beim Kranbetrieb im Schwenkbereich des Krans liegen?",
     "optionen": [
+      "Das Bauwerk und das Lager schwerer Baustoffe",
       "Die Unterkünfte der Arbeiter",
       "Der Zimmerplatz",
-      "Der Oberboden",
-      "Das Bauwerk und das Lager schwerer Baustoffe"
+      "Der Oberboden"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Im Schwenkbereich müssen das Bauwerk, das Lager für schwere Baustoffe (Stahl, Steine, Fertigteile) und ein Teil der Zufahrt als Ladezone liegen. Unterkünfte, Zimmerplatz und Oberboden gehören außerhalb des Schwenkbereichs."
   },
@@ -96,13 +96,13 @@
     "konfidenz": "hoch",
     "frage": "Mit welcher Linienart werden verdeckte Kanten und Umrisse von Bauteilen gezeichnet?",
     "optionen": [
+      "Breite Strichlinie",
       "Schmale Volllinie",
       "Schmale Punktlinie",
-      "Breite Strichlinie",
       "Schmale Strichpunktlinie"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Verdeckte Kanten und Umrisse werden nach DIN ISO 128-23 mit einer breiten Strichlinie gezeichnet. Die schmale Strichpunktlinie ist für Mittel- und Symmetrielinien reserviert."
   },
@@ -154,13 +154,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Dokument gehört NICHT zum Bauantrag?",
     "optionen": [
-      "Baubeschreibung",
       "Entwurfszeichnungen (1:100)",
-      "Lageplan (1:500 oder 1:1000)",
-      "Angebot des billigsten Bauunternehmers"
+      "Baubeschreibung",
+      "Angebot des billigsten Bauunternehmers",
+      "Lageplan (1:500 oder 1:1000)"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Der Bauantrag besteht aus Lageplan, Entwurfszeichnungen, Baubeschreibung, Berechnungen (GRZ, GFZ), technischen Nachweisen und dem Entwässerungsgesuch. Angebote der Unternehmer gehören zur Vergabe, nicht zum Bauantrag."
   },
@@ -281,13 +281,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Warnleuchten sind beim Sperren der gesamten Fahrbahn mindestens anzubringen?",
     "optionen": [
+      "Mindestens 5 rote Warnleuchten",
       "Mindestens 5 gelbe Warnleuchten",
       "Mindestens 2 rote Warnleuchten",
-      "Mindestens 3 gelbe Warnleuchten",
-      "Mindestens 5 rote Warnleuchten"
+      "Mindestens 3 gelbe Warnleuchten"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Beim Sperren der gesamten Fahrbahn sind mindestens 5 rote Warnleuchten anzubringen. Werden nur einzelne Fahrstreifen gesperrt, genügen mindestens 3 gelbe Warnleuchten."
   },
@@ -302,13 +302,13 @@
     "konfidenz": "hoch",
     "frage": "Wie verändert sich die Nutzlast eines Krans mit zunehmender Ausladung?",
     "optionen": [
-      "Die Ausladung hat keinen Einfluss auf die Nutzlast",
       "Je größer die Ausladung, desto größer die Nutzlast",
-      "Je größer die Ausladung, desto geringer die Nutzlast",
-      "Die Nutzlast bleibt immer gleich"
+      "Die Ausladung hat keinen Einfluss auf die Nutzlast",
+      "Die Nutzlast bleibt immer gleich",
+      "Je größer die Ausladung, desto geringer die Nutzlast"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Je größer die Ausladung, desto geringer die Nutzlast. Zum Ausgleich der aufgenommenen Last dient der Ballast, meist aus Betonfertigteilen."
   },
@@ -369,13 +369,13 @@
     "konfidenz": "hoch",
     "frage": "Wie nennt man einen Winkel zwischen 90° und 180°?",
     "optionen": [
+      "Stumpfer Winkel",
       "Gestreckter Winkel",
-      "Spitzer Winkel",
       "Rechter Winkel",
-      "Stumpfer Winkel"
+      "Spitzer Winkel"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Winkel zwischen 0° und 90° heißen spitz, genau 90° rechter Winkel, zwischen 90° und 180° stumpf, genau 180° gestreckter Winkel und über 180° überstumpf."
   },
@@ -407,13 +407,13 @@
     "konfidenz": "hoch",
     "frage": "Was unterscheidet die Bauindustrie vom Bauhandwerk?",
     "optionen": [
-      "Die Bauindustrie umfasst überwiegend kleine Betriebe",
-      "Die Bauindustrie umfasst größere Betriebe mit Schwerpunkt Hoch-, Tief- und Ingenieurbau",
       "Bauindustrie und Bauhandwerk sind dasselbe",
-      "Das Bauhandwerk baut nur Industriehallen"
+      "Das Bauhandwerk baut nur Industriehallen",
+      "Die Bauindustrie umfasst größere Betriebe mit Schwerpunkt Hoch-, Tief- und Ingenieurbau",
+      "Die Bauindustrie umfasst überwiegend kleine Betriebe"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Das Bauhandwerk besteht überwiegend aus kleinen und mittleren Betrieben (in Innungen organisiert), die Bauindustrie aus größeren Betrieben mit Schwerpunkten im Hoch-, Tief- und Ingenieurbau."
   },
@@ -489,8 +489,8 @@
     "optionen": [
       "20, 30 und 50 m",
       "25, 40 und 60 m",
-      "5, 10 und 15 m",
-      "10, 25 und 100 m"
+      "10, 25 und 100 m",
+      "5, 10 und 15 m"
     ],
     "korrekt": [
       0
@@ -506,13 +506,13 @@
     "konfidenz": "hoch",
     "frage": "Dürfen Personen mit Lastaufnahmemitteln (z. B. Steinkorb) befördert werden?",
     "optionen": [
-      "Grundsätzlich nicht; Ausnahme nur im gesicherten, angeseilten Betonierkübel",
-      "Ja, wenn ein Helm getragen wird",
       "Ja, jederzeit",
+      "Ja, wenn ein Helm getragen wird",
+      "Grundsätzlich nicht; Ausnahme nur im gesicherten, angeseilten Betonierkübel",
       "Nur bei Autokranen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Personen dürfen mit Lastaufnahmemitteln grundsätzlich nicht befördert werden. Ausnahme sind Betonierkübel, wenn der Arbeitsplatz entsprechend gesichert ist und die Personen angeseilt sind."
   },
@@ -527,13 +527,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Dreieck hat zwei gleich lange Seiten?",
     "optionen": [
-      "Ungleichseitiges Dreieck",
-      "Rechtwinkliges Dreieck",
       "Gleichseitiges Dreieck",
-      "Gleichschenkliges Dreieck"
+      "Ungleichseitiges Dreieck",
+      "Gleichschenkliges Dreieck",
+      "Rechtwinkliges Dreieck"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Nach den Seiten unterscheidet man: gleichseitig (alle Seiten gleich), gleichschenklig (zwei Seiten gleich) und ungleichseitig (alle Seiten verschieden)."
   },
@@ -576,12 +576,12 @@
     "frage": "In welchem Verhältnis steht die Seite eines regelmäßigen Sechsecks zum Radius seines Umkreises?",
     "optionen": [
       "Es gibt keinen festen Zusammenhang",
+      "Die Sechseckseite entspricht dem Radius (Halbmesser) des Umkreises",
       "Die Sechseckseite ist halb so groß wie der Radius",
-      "Die Sechseckseite ist doppelt so groß wie der Radius",
-      "Die Sechseckseite entspricht dem Radius (Halbmesser) des Umkreises"
+      "Die Sechseckseite ist doppelt so groß wie der Radius"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Eine Sechseckseite entspricht genau dem Halbmesser (Radius) des Umkreises. Deshalb lässt sich das Sechseck einfach mit dem Zirkel konstruieren."
   },
@@ -640,13 +640,13 @@
     "konfidenz": "hoch",
     "frage": "Wo werden in der dualen Ausbildung die theoretischen Kenntnisse vermittelt?",
     "optionen": [
-      "Nur in der Meisterschule",
       "In der Berufsschule",
       "Ausschließlich im Betrieb",
-      "Auf der Baustelle durch den Polier"
+      "Auf der Baustelle durch den Polier",
+      "Nur in der Meisterschule"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "In der dualen Ausbildung werden die theoretischen Kenntnisse in der Berufsschule vermittelt und die praktischen Fertigkeiten im Betrieb, ergänzt durch überbetriebliche Ausbildungsstätten."
   },
@@ -659,13 +659,13 @@
     "konfidenz": "hoch",
     "frage": "Warum wird das Dreieck in Dach- und Fachwerkkonstruktionen so häufig verwendet?",
     "optionen": [
+      "Weil es am wenigsten Material braucht",
       "Weil es besonders leicht ist",
-      "Weil es eine statisch stabile, nicht verschiebliche Figur ist",
       "Weil es sich leicht verschieben lässt",
-      "Weil es am wenigsten Material braucht"
+      "Weil es eine statisch stabile, nicht verschiebliche Figur ist"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Das Dreieck ist statisch betrachtet eine stabile Figur, es ist nicht verschieblich. Deshalb kommt es in Dachkonstruktionen, Fachwerkwänden und Verstrebungen häufig vor."
   },
@@ -697,13 +697,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür steht ein offenes (weißes) Höhendreieck in einer Bauzeichnung nach DIN 1356?",
     "optionen": [
-      "Für eine fertige Höhenlage (z. B. Oberkante fertiger Fußboden)",
-      "Für den Dachüberstand",
+      "Für die Geschossanzahl",
       "Für eine Rohbauhöhe (z. B. Oberkante Rohdecke)",
-      "Für die Geschossanzahl"
+      "Für den Dachüberstand",
+      "Für eine fertige Höhenlage (z. B. Oberkante fertiger Fußboden)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Offene (weiße) Dreiecke kennzeichnen fertige Höhenlagen (z. B. OK fertiger Fußboden, FFB), angelegte (schwarze) Dreiecke die Rohbauhöhen (z. B. OK Rohdecke, RFB)."
   },
@@ -728,9 +728,9 @@
     "frage": "Wie lang sollte der Weg von der Unterkunft zur eigentlichen Arbeitsstelle höchstens sein?",
     "optionen": [
       "höchstens 300 m",
-      "höchstens 50 m",
+      "die Länge spielt keine Rolle",
       "höchstens 150 m",
-      "die Länge spielt keine Rolle"
+      "höchstens 50 m"
     ],
     "korrekt": [
       2
@@ -783,12 +783,12 @@
     "frage": "Womit wird in einer Bauzeichnung der Durchmesser eines runden Querschnitts gekennzeichnet?",
     "optionen": [
       "Mit einer Bruchangabe Breite/Höhe",
-      "Mit dem Zeichen Ø vor der Maßzahl",
       "Mit dem Quadratzeichen □",
+      "Mit dem Zeichen Ø vor der Maßzahl",
       "Mit dem Buchstaben R vor der Maßzahl"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Runde Querschnitte erhalten das Durchmesserzeichen Ø vor der Maßzahl (z. B. Ø 30). R kennzeichnet Radien, das Quadratzeichen □ quadratische Querschnitte, die Bruchform Breite/Höhe rechteckige (z. B. 12/16)."
   },
@@ -836,13 +836,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Einheit werden Maße unter einem Meter in Bauzeichnungen üblicherweise angegeben?",
     "optionen": [
-      "In Zentimetern (cm)",
       "In Metern (m)",
-      "In Dezimetern (dm)",
-      "In Millimetern (mm)"
+      "In Millimetern (mm)",
+      "In Zentimetern (cm)",
+      "In Dezimetern (dm)"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "In Bauzeichnungen werden Maße üblicherweise in cm und m angegeben: alle Maße unter einem Meter in cm (z. B. 99), Maße ab einem Meter in m (z. B. 1,24). Millimetermaße werden durch hochgesetzte Ziffern gekennzeichnet."
   },
@@ -886,13 +886,13 @@
     "konfidenz": "hoch",
     "frage": "Was kennzeichnet ein regelmäßiges Vieleck?",
     "optionen": [
-      "Es hat höchstens vier Ecken",
-      "Es hat keinen Umkreis",
+      "Alle Seiten und alle Winkel sind gleich groß",
       "Nur die Seiten sind gleich, die Winkel verschieden",
-      "Alle Seiten und alle Winkel sind gleich groß"
+      "Es hat keinen Umkreis",
+      "Es hat höchstens vier Ecken"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Vielecke sind Flächen mit mehr als vier Ecken. Bei regelmäßigen Vielecken sind alle Seiten und alle Winkel gleich groß; sie besitzen einen Um- und einen Inkreis."
   },
@@ -935,9 +935,9 @@
     "frage": "In welchem Maßstab wird ein Lageplan üblicherweise gezeichnet?",
     "optionen": [
       "1:500 oder 1:1000",
+      "1:50",
       "1:100",
-      "1:5 oder 1:10",
-      "1:50"
+      "1:5 oder 1:10"
     ],
     "korrekt": [
       0

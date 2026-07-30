@@ -10,8 +10,10 @@
  * Das ist derselbe Goodhart-Kanal, den lib/serie.ts sorgfältig ausschließt,
  * nur im Inhalt statt im Code.
  *
- * Deterministisch: Der Zufall wird aus der Aufgaben-ID gezogen. Zweimal laufen
- * lassen ändert nichts, und die Diffs bleiben zwischen Läufen stabil.
+ * Deterministisch UND idempotent: Der Zufall wird aus der Aufgaben-ID gezogen,
+ * und die Optionen werden vor dem Mischen kanonisch sortiert. Dadurch liefert
+ * jeder weitere Lauf dasselbe Ergebnis wie der erste — ohne die Sortierung
+ * würde ein zweiter Lauf den Bias teilweise wiederherstellen.
  *
  * Ausgenommen: Aufgaben, deren Erklärung auf eine POSITION verweist ("Option 3",
  * "die oberste", "D)"). Sie zu mischen würde die Erklärung auf die falsche
@@ -22,8 +24,20 @@ import fs from "node:fs";
 import path from "node:path";
 
 const WURZEL = path.join(import.meta.dirname, "..", "content");
+/**
+ * Nur echte Verweise auf die REIHENFOLGE der Optionen.
+ *
+ * Die erste Fassung war zu grob und schloss 28 Aufgaben aus, von denen 26 gar
+ * kein Problem hatten:
+ *   `\b[A-D]\)\s`  traf auf "1450 °C) und" und auf Aufzählungen im Fließtext
+ *                  ("zu berechnen: a) Fassadenflächen, b) Länge der Kanten")
+ *   `oberste`      traf auf "die oberste Sprosse", "die oberste Lage Oberputz",
+ *                  "den obersten Stellenwert" — alles normales Deutsch
+ * Ein zu weiter Filter ist hier nicht die sichere Seite: Er lässt den
+ * Positions-Bias in genau den Aufgaben stehen, die er schützen wollte.
+ */
 const POSITIONSVERWEIS =
-  /\b(erste|zweite|dritte|vierte|letzte)\s+(Antwort|Option|Auswahl|Möglichkeit)|Antwort\s+[A-D]\b|Option\s+[1-4]\b|\b[A-D]\)\s|oben\s+stehende|unterste|oberste/i;
+  /\b(erste|zweite|dritte|vierte|letzte)\s+(Antwort|Option|Auswahl|Möglichkeit)\b|\bAntwort\s+[A-D]\b|\bOption\s+[1-4]\b/i;
 
 /** xmur3 + mulberry32 — kleiner, gleichverteilter PRNG aus einem String-Seed. */
 function prng(seed) {
@@ -60,13 +74,26 @@ for (const d of fs.readdirSync(WURZEL, { withFileTypes: true }).filter((e) => e.
       continue;
     }
 
-    // Fisher-Yates über die Indizes, damit `korrekt` sauber mitwandert.
+    // Erst in eine kanonische Reihenfolge bringen, dann permutieren.
+    //
+    // Ohne diesen Schritt ist das Skript NICHT idempotent: Ein zweiter Lauf
+    // wendet dieselbe Permutation erneut an, und eine doppelt angewandte
+    // Vertauschung ergibt wieder die Ausgangsstellung. Gemessen nach einem
+    // versehentlichen zweiten Lauf: Index 0 stieg von 27,9 % zurück auf 44,3 %.
+    // Mit der Sortierung davor haengt das Ergebnis nur noch an der Aufgaben-ID
+    // und am Inhalt der Optionen — beliebig oft wiederholbar.
+    const kanonisch = a.optionen
+      .map((o, i) => ({ o, i }))
+      .sort((x, y) => x.o.localeCompare(y.o, "de"));
+
     const rnd = prng(a.id);
-    const reihenfolge = a.optionen.map((_, i) => i);
+    const reihenfolge = kanonisch.map((_, i) => i);
     for (let i = reihenfolge.length - 1; i > 0; i--) {
       const j = Math.floor(rnd() * (i + 1));
       [reihenfolge[i], reihenfolge[j]] = [reihenfolge[j], reihenfolge[i]];
     }
+    // Von der kanonischen Position zurueck auf den urspruenglichen Index.
+    for (let n = 0; n < reihenfolge.length; n++) reihenfolge[n] = kanonisch[reihenfolge[n]].i;
 
     const neueOptionen = reihenfolge.map((alt) => a.optionen[alt]);
     // reihenfolge[neu] = alt  →  für korrekt brauchen wir alt → neu.

@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist Putz?",
     "optionen": [
-      "Ein Anstrich aus Farbe",
       "Eine Kunststofffolie zur Wandbekleidung",
       "Ein reiner Zementkleber ohne Sand",
-      "Ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen für ebene Oberflächen"
+      "Ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen für ebene Oberflächen",
+      "Ein Anstrich aus Farbe"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Putz ist ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen zur Herstellung ebener Oberflächen. Der Putz wird von Hand oder mit Putzmaschinen auf Wand- und Deckenflächen aufgetragen.",
     "bildDatei": "/buch/lf06/putzmoertel-anwendung.webp",
@@ -29,13 +29,13 @@
     "konfidenz": "hoch",
     "frage": "Wie heißen die untere und die obere Lage eines mehrlagigen Putzsystems?",
     "optionen": [
-      "Untere Lage = Unterputz, obere Lage = Oberputz",
       "Untere Lage = Deckputz, obere Lage = Grundputz",
       "Beide heißen gleich",
+      "Untere Lage = Unterputz, obere Lage = Oberputz",
       "Untere Lage = Feinputz, obere Lage = Grobputz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Putze können ein- oder mehrlagig aufgebaut werden. Die unteren Lagen heißen Unterputz, die oberste Lage Oberputz. Die Festigkeit muss dabei von innen nach außen abnehmen.",
     "bildDatei": "/buch/lf06/putzsystem-aufbau.webp",
@@ -72,13 +72,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient eine Putzbewehrung (z. B. Glasfasergewebe)?",
     "optionen": [
-      "Sie dichtet den Putz gegen Wasser ab",
       "Sie färbt den Putz ein",
+      "Sie erhöht die Zugfestigkeit des Putzes und vermindert die Gefahr der Rissbildung",
       "Sie ersetzt den Unterputz",
-      "Sie erhöht die Zugfestigkeit des Putzes und vermindert die Gefahr der Rissbildung"
+      "Sie dichtet den Putz gegen Wasser ab"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Durch den Einbau einer Putzbewehrung (z. B. Glasfasergewebe im Unterputz) wird die Zugfestigkeit des Putzes erhöht und damit die Gefahr der Rissbildung vermindert. Sie ist besonders beim Materialwechsel und bei Wärmedämm-Verbundsystemen erforderlich.",
     "bildDatei": "/buch/lf06/putztraeger-fachwerk.webp",
@@ -93,13 +93,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient ein Putzträger (z. B. Rippenstreckmetall)?",
     "optionen": [
-      "Als Ersatz für den Oberputz",
+      "Zum Einfärben des Putzes",
       "Zur Wärmedämmung",
-      "Als Untergrund für den Putz bei nicht ausreichend tragfähigen Untergründen oder zum Überspannen von Wandschlitzen",
-      "Zum Einfärben des Putzes"
+      "Als Ersatz für den Oberputz",
+      "Als Untergrund für den Putz bei nicht ausreichend tragfähigen Untergründen oder zum Überspannen von Wandschlitzen"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Ein Putzträger (z. B. Rippenstreckmetall) kommt bei nicht ausreichend tragfähigen Untergründen und beim Überspannen von breiten Wandschlitzen zum Einsatz. Er wird befestigt und sorgt für dauerhaften Halt des Putzes.",
     "bildDatei": "/buch/lf06/putztraeger-fachwerk.webp",
@@ -135,9 +135,9 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgaben erfüllt ein Innenputz?",
     "optionen": [
-      "Nur Schallverstärkung",
       "Nur Wasserabdichtung",
       "Nur Wärmedämmung",
+      "Nur Schallverstärkung",
       "Gestalten der Oberfläche, Ausgleichen von Unebenheiten und Verbessern des Raumklimas"
     ],
     "korrekt": [
@@ -154,13 +154,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür werden Akustikputze verwendet?",
     "optionen": [
-      "Zur Verbesserung der Raumakustik — sie absorbieren Schallwellen durch ihre poröse Struktur",
-      "Zum Verstärken des Schalls",
+      "Als besonders harter Bodenbelag",
       "Zur Wasserabdichtung im Keller",
-      "Als besonders harter Bodenbelag"
+      "Zum Verstärken des Schalls",
+      "Zur Verbesserung der Raumakustik — sie absorbieren Schallwellen durch ihre poröse Struktur"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Akustikputze haben eine sehr offenporige Struktur und können Schallwellen absorbieren. Sie werden zur Verbesserung der Raumakustik eingesetzt, z. B. in Räumen mit starkem Nachhall."
   },
@@ -173,9 +173,9 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgaben erfüllt ein Außenputz?",
     "optionen": [
-      "Nur die Statik des Gebäudes",
-      "Nur die Belichtung der Räume",
       "Nur die Wärmeerzeugung",
+      "Nur die Belichtung der Räume",
+      "Nur die Statik des Gebäudes",
       "Gestaltung der Fassade, Schutz der Gebäudehülle vor Witterung und Herstellen einer winddichten Hülle"
     ],
     "korrekt": [
@@ -195,12 +195,12 @@
     "frage": "Wozu dient ein Wärmedämmputz?",
     "optionen": [
       "Zum Abdichten gegen Grundwasser",
-      "Als Bodenbelag",
       "Zur Verbesserung des Wärmeschutzes durch geringe Wärmeleitfähigkeit (Perlit oder Polystyrolkügelchen)",
+      "Als Bodenbelag",
       "Zum Verstärken der Statik"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Wärmedämmputz hat durch den Zusatz von Perlit oder Polystyrolkügelchen eine geringe Wärmeleitfähigkeit. Er verbessert den Wärmeschutz einer Außenwand. Die Dämmputzdicke beträgt in der Regel mehrlagig ab 5 cm.",
     "bildDatei": "/buch/lf06/waermedaemmputz.webp",
@@ -232,10 +232,10 @@
     "konfidenz": "hoch",
     "frage": "Aus welchen Bestandteilen besteht mineralisch gebundener Putzmörtel?",
     "optionen": [
-      "Nur Bitumen und Sand",
+      "Kunstharz und Wasser allein",
       "Nur Zement ohne Zuschlag",
       "Bindemittel, Gesteinskörnung, Anmachwasser und ggf. Zusatzmittel",
-      "Kunstharz und Wasser allein"
+      "Nur Bitumen und Sand"
     ],
     "korrekt": [
       2
@@ -253,13 +253,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat das Bindemittel im Putzmörtel?",
     "optionen": [
-      "Es färbt den Putz ein",
       "Es verbindet die Bestandteile fest und dauerhaft miteinander",
-      "Es macht den Putz porös",
-      "Es verringert die Festigkeit"
+      "Es färbt den Putz ein",
+      "Es verringert die Festigkeit",
+      "Es macht den Putz porös"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Das Bindemittel hat die Aufgabe, die Bestandteile fest und dauerhaft miteinander zu verbinden. Zu viel Bindemittel (‚fetter Mörtel') führt bei Kalk und Zement zum Schwinden, zu wenig (‚magerer Mörtel') mindert die Festigkeit.",
     "bildDatei": "/buch/lf06/putzmoertel-tabelle.webp",
@@ -274,13 +274,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgabe hat das Anmachwasser im Putzmörtel?",
     "optionen": [
-      "Es färbt den Mörtel",
       "Es hat keine Funktion",
       "Es verringert die Reibung, macht den Mörtel verarbeitbar und ist für das Erhärten nötig",
-      "Es erhöht nur das Gewicht"
+      "Es erhöht nur das Gewicht",
+      "Es färbt den Mörtel"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Das Anmachwasser verringert die Reibung zwischen den Bindemittelteilchen und macht den Mörtel plastisch und verarbeitbar. Darüber hinaus ist es beim Erhärten (chemische Reaktion) nötig. Die vorgeschriebene Anmachwassermenge ist einzuhalten."
   },
@@ -316,12 +316,12 @@
     "frage": "Wodurch erhärtet organisch gebundener Putz (Kunstharzputz)?",
     "optionen": [
       "Er erhärtet gar nicht",
-      "Durch Brennen bei hoher Temperatur",
       "Durch physikalische Reaktion: Verdunsten des Wassers, die Bindemittel vernetzen sich zu einem dichten Film",
+      "Durch Brennen bei hoher Temperatur",
       "Durch Hydratation wie Zement"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Bei organisch gebundenen Putzen (Dispersionsputz, Kunstharzputz) verdunsten beim Trocknen die Wassertröpfchen, die organischen Bindemittel vernetzen sich und bilden einen dichten Film. Das ist eine physikalische Reaktion (im Gegensatz zur chemischen Hydratation mineralischer Putze).",
     "bildDatei": "/buch/lf06/organische-putze-tabelle.webp",
@@ -336,9 +336,9 @@
     "konfidenz": "hoch",
     "frage": "Was passiert beim Brennen von Gipsstein?",
     "optionen": [
-      "Der Gips nimmt Wasser auf",
-      "Das Kristallwasser wird ausgetrieben (als Wasserdampf), es entsteht Stuckgips",
       "Der Gips wird flüssig",
+      "Das Kristallwasser wird ausgetrieben (als Wasserdampf), es entsteht Stuckgips",
+      "Der Gips nimmt Wasser auf",
       "Es passiert nichts"
     ],
     "korrekt": [
@@ -374,13 +374,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich Putzgips von Stuckgips?",
     "optionen": [
+      "Putzgips ist wasserlöslich",
       "Putzgips wird gar nicht gebrannt",
       "Es gibt keinen Unterschied",
-      "Putzgips wird bei höherer Temperatur (ca. 700 °C) gebrannt, erhärtet langsamer und bleibt länger verarbeitbar",
-      "Putzgips ist wasserlöslich"
+      "Putzgips wird bei höherer Temperatur (ca. 700 °C) gebrannt, erhärtet langsamer und bleibt länger verarbeitbar"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Putzgips wird bei etwa 700 °C gebrannt und besteht aus unterschiedlich stark entwässerten Anteilen. Deshalb erhärtet er träger als Stuckgips und bleibt länger verarbeitbar — ideal für das Verputzen von Wänden und Decken.",
     "bildDatei": "/buch/lf06/gipstrockenmoertel-tabelle.webp",
@@ -395,9 +395,9 @@
     "konfidenz": "hoch",
     "frage": "Warum haben Gipsputze gute brandschützende Eigenschaften?",
     "optionen": [
-      "Weil Gips besonders hart ist",
       "Weil Gips Wasser abweist",
       "Weil Gips brennbar ist",
+      "Weil Gips besonders hart ist",
       "Weil das gebundene Kristallwasser (bis 20 %) im Brandfall verdampft und Hitze bindet"
     ],
     "korrekt": [
@@ -414,10 +414,10 @@
     "konfidenz": "hoch",
     "frage": "Was muss vor dem Auftragen des Putzes geprüft werden?",
     "optionen": [
-      "Nichts, man kann sofort verputzen",
+      "Nur die Raumtemperatur",
       "Der Putzgrund muss sauber, tragfähig, trocken, frostfrei, saugfähig und rau sein",
-      "Nur die Farbe der Wand",
-      "Nur die Raumtemperatur"
+      "Nichts, man kann sofort verputzen",
+      "Nur die Farbe der Wand"
     ],
     "korrekt": [
       1
@@ -435,13 +435,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient ein Spritzbewurf (Haftbrücke) auf glattem, schwach saugendem Untergrund?",
     "optionen": [
-      "Er schafft eine raue, griffige Oberfläche, damit der Putz besser haftet",
       "Er dichtet die Wand ab",
       "Er ersetzt den Oberputz",
-      "Er glättet die Oberfläche"
+      "Er glättet die Oberfläche",
+      "Er schafft eine raue, griffige Oberfläche, damit der Putz besser haftet"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Bei schwach saugenden, glatten Oberflächen (z. B. Kalksandstein oder Beton) wird als Putzgrundvorbehandlung eine Haftbrücke aufgebracht oder ein Spritzbewurf ausgeführt. So entsteht eine raue und griffige Oberfläche, an der der Putz gut haftet.",
     "bildDatei": "/buch/lf06/putzhaftung-oberflaechen.webp",
@@ -456,13 +456,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dienen Putzprofile (Kantenprofile)?",
     "optionen": [
-      "Zum Einfärben des Putzes",
       "Zur Wärmedämmung",
+      "Zur rationellen Herstellung ebener Flächen und zum Schutz von Kanten",
       "Zur Wasserabdichtung",
-      "Zur rationellen Herstellung ebener Flächen und zum Schutz von Kanten"
+      "Zum Einfärben des Putzes"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Putzprofile werden an Ecken und Kanten angebracht. Sie ermöglichen die rationelle Herstellung ebener Flächen (Setzen von Putzlehren) und schützen die Kanten. An Ecken werden Eckprofile (Kantenprofile) angebracht."
   },
@@ -515,13 +515,13 @@
     "konfidenz": "hoch",
     "frage": "Bei welcher Temperatur darf mineralisch gebundener Putz nicht mehr verarbeitet werden?",
     "optionen": [
-      "Temperatur spielt keine Rolle",
-      "Unter +20 °C",
+      "Unter +5 °C (bei organisch gebundenen Putzen unter +8 °C)",
       "Über +10 °C",
-      "Unter +5 °C (bei organisch gebundenen Putzen unter +8 °C)"
+      "Unter +20 °C",
+      "Temperatur spielt keine Rolle"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Es ist darauf zu achten, dass die Bauteil- und Umgebungstemperatur während des Auftragens und der Erhärtung nicht unter +5 °C liegt (bei organisch gebundenen Putzen nicht unter +8 °C). Bei Frost kann der Putz nicht richtig erhärten."
   },
@@ -555,9 +555,9 @@
     "konfidenz": "hoch",
     "frage": "Welcher Gipsplattentyp (nach Kartonummantelung) ist der Standard-Bauplatte für Wandtrockenputz?",
     "optionen": [
-      "Typ E (Außenwandelemente)",
       "Typ H (GKBI, imprägniert)",
       "Typ F (GKF, Feuerschutz)",
+      "Typ E (Außenwandelemente)",
       "Typ A (GKB)"
     ],
     "korrekt": [
@@ -596,13 +596,13 @@
     "konfidenz": "hoch",
     "frage": "In welche Baustoffklasse fallen Gipsplatten hinsichtlich Brennbarkeit?",
     "optionen": [
-      "Sie sind nichtbrennbar (Baustoffklasse A2)",
       "Leicht entflammbar (B3)",
       "Normal entflammbar (B2)",
-      "Sie brennen sehr gut"
+      "Sie brennen sehr gut",
+      "Sie sind nichtbrennbar (Baustoffklasse A2)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Alle Gipsplatten sind nichtbrennbar (Baustoffklasse A2). Das gebundene Kristallwasser wirkt im Brandfall wärmebindend und macht Gips zu einem guten Brandschutzbaustoff.",
     "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
@@ -617,10 +617,10 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Gipsplatten beim Ansetzen an der Wand befestigt?",
     "optionen": [
+      "Mit Klebeband",
       "Nur mit einem einzigen Nagel",
-      "Sie werden nur angelehnt",
       "Mit Ansetzmörtel-Batzen im Abstand von etwa 25 cm und einer durchgehenden Randbatzenreihe",
-      "Mit Klebeband"
+      "Sie werden nur angelehnt"
     ],
     "korrekt": [
       2
@@ -638,13 +638,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist ein Estrich?",
     "optionen": [
-      "Eine Dachabdichtung",
-      "Ein Anstrich für die Wand",
+      "Eine auf einem tragenden Untergrund oder auf einer Trenn-/Dämmschicht hergestellte Schicht, die direkt nutzfähig ist oder einen Belag aufnimmt",
       "Ein Mauerstein",
-      "Eine auf einem tragenden Untergrund oder auf einer Trenn-/Dämmschicht hergestellte Schicht, die direkt nutzfähig ist oder einen Belag aufnimmt"
+      "Eine Dachabdichtung",
+      "Ein Anstrich für die Wand"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Estrich ist eine auf einem tragenden Untergrund oder auf einer zwischenliegenden Trenn- oder Dämmschicht hergestellte Schicht, die unmittelbar nutzfähig ist oder mit einem Belag versehen werden kann.",
     "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
@@ -678,13 +678,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich ein Estrich auf Dämmschicht (schwimmender Estrich) von einem Verbundestrich?",
     "optionen": [
-      "Der schwimmende Estrich liegt auf einer Dämmschicht ohne Verbindung zu den angrenzenden Bauteilen, der Verbundestrich ist fest mit dem Untergrund verbunden",
       "Beide sind identisch",
       "Der schwimmende Estrich ist immer dünner als 1 cm",
-      "Der Verbundestrich schwimmt auf Wasser"
+      "Der Verbundestrich schwimmt auf Wasser",
+      "Der schwimmende Estrich liegt auf einer Dämmschicht ohne Verbindung zu den angrenzenden Bauteilen, der Verbundestrich ist fest mit dem Untergrund verbunden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Estriche auf Dämmschicht (S, schwimmender Estrich) verbessern den Trittschall- und Wärmeschutz. Sie liegen frei beweglich auf der Dämmschicht und dürfen keine Verbindung zu Wänden und Rohren haben. Der Verbundestrich (V) ist dagegen fest mit dem Unterboden verbunden.",
     "bildDatei": "/buch/lf06/estricharten-konstruktion.webp",
@@ -723,13 +723,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet das Kurzzeichen CT bei einem Estrich?",
     "optionen": [
-      "Gussasphaltestrich",
+      "Zementestrich (engl. cementitious screed)",
       "Kunstharzestrich",
-      "Calciumsulfatestrich",
-      "Zementestrich (engl. cementitious screed)"
+      "Gussasphaltestrich",
+      "Calciumsulfatestrich"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "CT = Zementestrich (cementitious screed). Weitere Kurzzeichen: CA = Calciumsulfatestrich, SR = Kunstharzestrich (synthetic resin), MA = Magnesiaestrich, AS = Gussasphaltestrich (mastic asphalt).",
     "bildDatei": "/buch/lf06/estricharten-bindemittel.webp",
@@ -766,9 +766,9 @@
     "frage": "Welche zwei Festigkeiten werden bei Estrichen angegeben?",
     "optionen": [
       "Druckfestigkeit (C) und Biegezugfestigkeit (F)",
-      "Nur die Zugfestigkeit",
       "Nur die Härte",
-      "Wärmeleitfähigkeit und Dichte"
+      "Wärmeleitfähigkeit und Dichte",
+      "Nur die Zugfestigkeit"
     ],
     "korrekt": [
       0
@@ -786,13 +786,13 @@
     "konfidenz": "hoch",
     "frage": "Warum werden große Zementestrichflächen durch Fugen unterteilt?",
     "optionen": [
-      "Um Rissbildung durch Schwinden und Temperaturänderungen zu vermeiden",
       "Aus rein optischen Gründen",
+      "Damit weniger Estrich benötigt wird",
       "Damit der Estrich schneller trocknet",
-      "Damit weniger Estrich benötigt wird"
+      "Um Rissbildung durch Schwinden und Temperaturänderungen zu vermeiden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Durch Schwinden und Temperatureinflüsse sind Estriche Längenänderungen unterworfen, die zu Rissen führen können. Deshalb werden Estrichflächen durch Dehn- und Scheinfugen unterteilt (ganze Estrichdicke durchtrennt). Feldgröße bei Zementestrich max. 20–30 m².",
     "bildDatei": "/buch/lf06/estrich-fugen.webp",
@@ -845,9 +845,9 @@
     "konfidenz": "hoch",
     "frage": "Welche Eigenschaften müssen Dämmstoffe unter Estrichen erfüllen?",
     "optionen": [
-      "Hohe Druckfestigkeit wie Beton",
-      "Geringe Wärmeleitfähigkeit, Feuchte-/Fäulnisbeständigkeit und Elastizität für den Schallschutz",
       "Hohe Wärmeleitfähigkeit",
+      "Geringe Wärmeleitfähigkeit, Feuchte-/Fäulnisbeständigkeit und Elastizität für den Schallschutz",
+      "Hohe Druckfestigkeit wie Beton",
       "Sie müssen wasserlöslich sein"
     ],
     "korrekt": [
@@ -867,8 +867,8 @@
     "frage": "Welche Ausführungsart eignet sich für Ziegel-Fußböden mit geringer Beanspruchung?",
     "optionen": [
       "Flachschichtpflaster (Ziegel liegen flach)",
-      "Gussasphalt",
       "Rollschichtpflaster (Ziegel hochkant)",
+      "Gussasphalt",
       "Nur Beton"
     ],
     "korrekt": [
@@ -887,13 +887,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Verlegearten gibt es beim Ziegel-Flachschichtpflaster?",
     "optionen": [
-      "Nur einzelne Steine",
-      "Nur waagerecht",
       "Schachbrett, Ellenbogen, stehende Rolle und diagonale Verlegung",
-      "Nur Kreuzverband"
+      "Nur Kreuzverband",
+      "Nur einzelne Steine",
+      "Nur waagerecht"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Beim Ziegelpflaster gibt es verschiedene Verlegearten: Schachbrett(muster), Ellenbogen(verband), stehende Rolle und diagonale Verlegung. Der Ziegel wird nach der Schnur auf ein Sandbett verlegt und mit Zementmörtel verfugt.",
     "bildDatei": "/buch/lf06/verlegearten-ziegelpflaster.webp",
@@ -910,11 +910,11 @@
     "optionen": [
       "Nur Frostbeständigkeit",
       "Nur eine schöne Optik",
-      "Wärme- und Schallschutz sowie ausreichender Feuchtigkeitsschutz",
-      "Keine besonderen Anforderungen"
+      "Keine besonderen Anforderungen",
+      "Wärme- und Schallschutz sowie ausreichender Feuchtigkeitsschutz"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Fußböden in Aufenthaltsräumen müssen ausreichenden Feuchtigkeits-, Wärme- und Schallschutz bieten. Im Untergeschoss sind sie gegen aufsteigende Bodenfeuchte durch Abdichtungen zu schützen, zur Wärmedämmung wird der Estrich schwimmend eingebaut.",
     "bildDatei": "/buch/lf06/fussboeden-aufbau.webp",
@@ -929,13 +929,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Oberfläche spricht man von einer Platte statt einer Fliese?",
     "optionen": [
-      "Über 90 cm² Oberfläche = Platte, kleiner = Fliese",
+      "Es gibt keinen Unterschied",
       "Über 10 cm² = Platte",
       "Über 1000 cm² = Platte",
-      "Es gibt keinen Unterschied"
+      "Über 90 cm² Oberfläche = Platte, kleiner = Fliese"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Genormte Fliesen und Platten haben eine Oberfläche von etwa 90 cm². Ist die Fläche kleiner oder gleich 90 cm², spricht man von einer Fliese; ist sie größer, von einer Platte. Sehr kleine Formate heißen Mosaik, längliche im Verhältnis über 3:1 Riemchen.",
     "bildDatei": "/buch/lf06/platten-uebersicht.webp",
@@ -964,13 +964,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheiden sich Feinkeramik und Grobkeramik?",
     "optionen": [
-      "Es gibt keinen Unterschied",
-      "Feinkeramik ist immer dicker",
       "Grobkeramik ist nur für Wände",
-      "Feinkeramik besteht aus fein aufbereiteten Rohstoffen, Grobkeramik aus gröberen"
+      "Feinkeramik besteht aus fein aufbereiteten Rohstoffen, Grobkeramik aus gröberen",
+      "Feinkeramik ist immer dicker",
+      "Es gibt keinen Unterschied"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Keramische Erzeugnisse unterscheiden sich nach der Rohstoffmischung: Feinkeramik (z. B. keramische Fliesen) besteht aus fein aufbereiteten Rohstoffen, Grobkeramik (z. B. Spaltplatten, Klinker) aus weniger fein aufbereiteten, gröberen Rohstoffen.",
     "bildDatei": "/buch/lf06/platten-uebersicht.webp",
@@ -985,13 +985,13 @@
     "konfidenz": "hoch",
     "frage": "Was unterscheidet Verfahren A von Verfahren B bei der Herstellung keramischer Fliesen?",
     "optionen": [
-      "Verfahren A ist immer teurer",
-      "Es gibt keinen Unterschied",
       "Verfahren A = stranggepresst, Verfahren B = trocken gepresst",
-      "Verfahren B verwendet kein Wasser"
+      "Verfahren B verwendet kein Wasser",
+      "Es gibt keinen Unterschied",
+      "Verfahren A ist immer teurer"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Nach Verfahren A werden stranggepresste Fliesen und Platten hergestellt, nach Verfahren B trocken gepresste. Nach der Wasseraufnahme werden sie in Gruppen (I, II, III) eingeteilt.",
     "bildDatei": "/buch/lf06/keramik-wasseraufnahme-gruppen.webp",
@@ -1034,12 +1034,12 @@
     "frage": "Was bezeichnet das Werkmaß (W) einer Fliese?",
     "optionen": [
       "Die Dicke der Fliese",
-      "Das Maß einschließlich Fuge",
+      "Das tatsächliche Herstellungsmaß der Fliese ohne Fuge",
       "Die Diagonale der Fliese",
-      "Das tatsächliche Herstellungsmaß der Fliese ohne Fuge"
+      "Das Maß einschließlich Fuge"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Das Werkmaß (W) ist das tatsächliche Herstellungsmaß der Fliese (z. B. 147 × 247 mm). Addiert man die Fugenbreite (J), erhält man das Koordinierungsmaß (C = W + J), z. B. 150 × 250 mm. Das Nennmaß (N) wird im Handel angegeben.",
     "bildDatei": "/buch/lf06/fliesen-plattenmasse.webp",
@@ -1071,13 +1071,13 @@
     "konfidenz": "hoch",
     "frage": "Wodurch unterscheidet sich Steinzeug von Steingut?",
     "optionen": [
-      "Es gibt keinen Unterschied",
       "Steinzeug ist poröser als Steingut",
       "Steinzeug hat eine geringe Wasseraufnahme (unter 3 %), ist frostbeständig und für innen und außen geeignet",
+      "Es gibt keinen Unterschied",
       "Steinzeug ist nur für Wände"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Steinzeugfliesen besitzen einen feinkörnigen, dicht gesinterten Scherben mit einer Wasseraufnahme von höchstens 3 %. Sie sind frostbeständig und verschleißfest, hauptsächlich für Bodenbeläge im Innen- und Außenbereich.",
     "bildDatei": "/buch/lf06/herstellung-keramik-schema.webp",
@@ -1093,8 +1093,8 @@
     "frage": "Welche Eigenschaften haben Bodenklinkerplatten?",
     "optionen": [
       "Hohe Wasseraufnahme, nur für Wände",
-      "Nur für Innenräume",
       "Sehr weich und porös",
+      "Nur für Innenräume",
       "Dichtes Gefüge, geringe Wasseraufnahme (unter 3 %), druck- und abriebfest, frost- und säurebeständig"
     ],
     "korrekt": [
@@ -1113,8 +1113,8 @@
     "optionen": [
       "Die Fliesengröße",
       "Die Beanspruchung: 1 sehr gering (Schlafraum), 4 stark (Eingang, Arbeitsräume)",
-      "Die Farbe",
-      "Die Wasseraufnahme"
+      "Die Wasseraufnahme",
+      "Die Farbe"
     ],
     "korrekt": [
       1
@@ -1132,13 +1132,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind stranggepresste Platten (Grobkeramik)?",
     "optionen": [
-      "Betonplatten ohne Ton",
+      "Kunststoffplatten",
       "Fein aufbereitete Wandfliesen",
-      "Spaltplatten und Einzelplatten aus grobkeramischen Erzeugnissen, durch eine Düse gepresst",
-      "Kunststoffplatten"
+      "Betonplatten ohne Ton",
+      "Spaltplatten und Einzelplatten aus grobkeramischen Erzeugnissen, durch eine Düse gepresst"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Stranggepresste Platten sind grobkeramische Erzeugnisse. Die Masse wird durch ein Mundstück (Düse) gepresst; je nach Form entstehen Doppelplatten (Spaltplatten) oder Einzelplatten. Dazu zählen keramische Spaltplatten, Trennwandsteine und Überlaufrinnen.",
     "bildDatei": "/buch/lf06/spaltplatten-erzeugnisse.webp",
@@ -1153,13 +1153,13 @@
     "konfidenz": "hoch",
     "frage": "Wie ist eine Terrazzoplatte aufgebaut?",
     "optionen": [
-      "Einschichtig aus reinem Zement",
       "Aus Naturstein ohne Beton",
       "Zweischichtig aus Kernbeton und farbigem Vorsatzbeton mit Natursplitt",
-      "Aus Bitumen und Sand"
+      "Aus Bitumen und Sand",
+      "Einschichtig aus reinem Zement"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Terrazzoplatten sind zweischichtige Betonwerksteinplatten aus Kernbeton und Vorsatzbeton. Der Terrazzobelag (Vorsatzbeton) enthält farbigen Natursplitt. Nach dem Schleifen der Oberfläche sehen sie manchen Natursteinplatten ähnlich.",
     "bildDatei": "/buch/lf06/terrazzoplatte-aufbau.webp",
@@ -1193,12 +1193,12 @@
     "frage": "Welche Anforderung muss ein Plattenbelag auf dem Balkon erfüllen?",
     "optionen": [
       "Er muss besonders porös sein",
-      "Er muss frostbeständig sein (geringe Wasseraufnahme, z. B. Steinzeug oder Bodenklinker)",
       "Er darf nur aus Steingut bestehen",
-      "Er muss hohe Wasseraufnahme haben"
+      "Er muss hohe Wasseraufnahme haben",
+      "Er muss frostbeständig sein (geringe Wasseraufnahme, z. B. Steinzeug oder Bodenklinker)"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Auf dem Balkon (Außenbereich) sind Beläge der Witterung und dem Frost ausgesetzt. Deshalb müssen die Platten frostbeständig sein — also eine geringe Wasseraufnahme (Gruppe I, ≤ 3 %) haben, z. B. Steinzeug oder Bodenklinker. Steingut wäre ungeeignet."
   },
@@ -1211,13 +1211,13 @@
     "konfidenz": "hoch",
     "frage": "Wann spricht man vom Dickbettverfahren?",
     "optionen": [
-      "Wenn der Mörtel nur wenige Millimeter dick ist",
-      "Wenn ohne Mörtel geklebt wird",
+      "Wenn die Fliese sehr dick ist",
       "Wenn die Fliesen im dicken Mörtelbett (mind. 10 mm, Mittel 15 mm) verlegt werden",
-      "Wenn die Fliese sehr dick ist"
+      "Wenn der Mörtel nur wenige Millimeter dick ist",
+      "Wenn ohne Mörtel geklebt wird"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Vom Dickbettverfahren spricht man, wenn die Fliesen im dicken Mörtelbett angesetzt werden. Das Mörtelbett soll mindestens 10 mm, im Mittel 15 mm dick sein. Es eignet sich für unebene Wände und Böden.",
     "bildDatei": "/buch/lf06/zementmoertelduebel.webp",
@@ -1249,10 +1249,10 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen stark saugende Fliesen vor dem Ansetzen im Dickbett gewässert werden?",
     "optionen": [
-      "Damit sie leichter brechen",
-      "Damit sie dem Mörtel nicht zu viel Wasser entziehen und der Mörtel richtig erhärten kann",
       "Damit sie schwerer werden",
-      "Damit sie ihre Farbe ändern"
+      "Damit sie dem Mörtel nicht zu viel Wasser entziehen und der Mörtel richtig erhärten kann",
+      "Damit sie ihre Farbe ändern",
+      "Damit sie leichter brechen"
     ],
     "korrekt": [
       1
@@ -1269,8 +1269,8 @@
     "frage": "Was ist eine Voraussetzung für das Dünnbettverfahren?",
     "optionen": [
       "Ein ebener, lot- oder waagerechter Untergrund",
-      "Ein stark unebener Untergrund",
       "Ein nasser Untergrund",
+      "Ein stark unebener Untergrund",
       "Kein Untergrund nötig"
     ],
     "korrekt": [
@@ -1328,13 +1328,13 @@
     "konfidenz": "hoch",
     "frage": "Wie groß ist die übliche Fugenbreite bei keramischen Wand- und Bodenbelägen?",
     "optionen": [
-      "Etwa 2 bis 8 mm",
+      "Etwa 0,1 mm",
       "Etwa 2 bis 5 cm",
       "Fugen sind nicht nötig",
-      "Etwa 0,1 mm"
+      "Etwa 2 bis 8 mm"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Keramische Wand- und Bodenbeläge werden mit einer Fugenbreite von etwa 2 bis 8 mm angelegt. Die Fugenbreite hängt vom Format und der Art der Fliesen, der Beanspruchung und der Verfugung ab."
   },
@@ -1347,13 +1347,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient der Spritzbewurf vor dem Ansetzen von Fliesen?",
     "optionen": [
-      "Er verbessert die Haftung des Belaggrundes und vergrößert die Mörtelhaftfläche",
       "Er ersetzt den Ansetzmörtel",
       "Er glättet die Fliesenoberfläche",
+      "Er verbessert die Haftung des Belaggrundes und vergrößert die Mörtelhaftfläche",
       "Er färbt die Fliesen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei unverputzten Wandflächen gehört ein Spritzbewurf aus Zementmörtel zur fachgerechten Ausführung, wenn anschließend im Dickbett verlegt wird. Er reguliert die Saugfähigkeit des Belaggrundes und vergrößert die Mörtelhaftfläche."
   },
@@ -1524,11 +1524,11 @@
     "optionen": [
       "Eine besonders große Bodenplatte",
       "Eine runde Fliese",
-      "Eine längliche Fliese im Rechteckformat mit einem Seitenverhältnis über 3:1",
-      "Ein quadratisches Mosaik"
+      "Ein quadratisches Mosaik",
+      "Eine längliche Fliese im Rechteckformat mit einem Seitenverhältnis über 3:1"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Riemchen sind längliche Fliesen im Rechteckformat mit einem Seitenverhältnis von mehr als 3:1. Sie werden häufig als Fassadenverkleidung oder Sockelfliesen verwendet."
   },
@@ -1562,13 +1562,13 @@
     "konfidenz": "hoch",
     "frage": "Woraus bestehen bitumengebundene Platten (Asphaltplatten)?",
     "optionen": [
-      "Aus reinem Zement",
       "Aus Natur-Asphaltmehl bzw. Bitumen; sie sind trittschalldämmend, aber nicht säurefest",
       "Aus Keramik",
+      "Aus reinem Zement",
       "Aus Naturstein"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Bitumengebundene Platten (Asphaltplatten) werden aus Naturasphaltmehl bzw. Bitumen hergestellt. Sie sind verhältnismäßig weich, gut wärme- und trittschalldämmend, jedoch nicht säurefest. Sie finden nur als Bodenplatten im Innenbereich Verwendung."
   },
@@ -1581,13 +1581,13 @@
     "konfidenz": "hoch",
     "frage": "Aus welchen Ausgangsstoffen besteht ein Zementestrichmörtel?",
     "optionen": [
+      "Normzemente, Sand, Wasser und ggf. Zusatzmittel bzw. Zusatzstoffe",
       "Nur Bitumen und Sand",
-      "Kunstharz und Wasser",
       "Nur Kalk und Gips",
-      "Normzemente, Sand, Wasser und ggf. Zusatzmittel bzw. Zusatzstoffe"
+      "Kunstharz und Wasser"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Zementestrichmörtel besteht aus Normzementen, Sand (geeignete Gesteinskörnung), Wasser und ggf. Zusatzmitteln bzw. Zusatzstoffen. Die Gesteinskörnung sollte im grob- bis mittelkörnigen Bereich der Sieblinie liegen, der Wasserzusatz gering (Schwindrisse vermeiden)."
   },
@@ -1600,13 +1600,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sollten Zementestriche nicht vor Ablauf von 7 Tagen belastet werden?",
     "optionen": [
-      "Aus rein optischen Gründen",
-      "Damit der Estrich ausreichend erhärten kann und nicht beschädigt wird",
       "Damit er heller wird",
-      "Damit er schneller trocknet"
+      "Aus rein optischen Gründen",
+      "Damit er schneller trocknet",
+      "Damit der Estrich ausreichend erhärten kann und nicht beschädigt wird"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Zementestriche sollten nicht vor Ablauf von 3 Tagen begangen und nicht vor Ablauf von 7 Tagen höher belastet werden. Der Estrich muss ausreichend erhärten, bevor Lasten aufgebracht werden, sonst wird er beschädigt oder reißt."
   },
@@ -1620,9 +1620,9 @@
     "frage": "Welche Aufgabe hat die Gesteinskörnung im Putzmörtel?",
     "optionen": [
       "Sie bildet das feste, tragende Gerüst des Putzmörtels und mindert das Schwinden",
+      "Sie färbt den Putz",
       "Sie verringert die Festigkeit",
-      "Sie hat keine Funktion",
-      "Sie färbt den Putz"
+      "Sie hat keine Funktion"
     ],
     "korrekt": [
       0
@@ -1640,13 +1640,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher organisch gebundene Putz verwendet Kali-Wasserglas als Bindemittel?",
     "optionen": [
-      "Dispersionssilikatputz (Silikatputz)",
-      "Zementputz",
       "Dispersionsputz (Kunstharzputz)",
-      "Kalkputz"
+      "Kalkputz",
+      "Dispersionssilikatputz (Silikatputz)",
+      "Zementputz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Der Dispersionssilikatputz (Silikatputz) verwendet Kali-Wasserglas und Polymerdispersion als Bindemittel. Der Dispersionsputz (Kunstharzputz) nutzt reine Polymerdispersion, der Siliconharzputz eine Siliconharzemulsion mit Polymerdispersion.",
     "bildDatei": "/buch/lf06/organische-putze-tabelle.webp",
@@ -1662,8 +1662,8 @@
     "frage": "Was versteht man unter der Putzweise?",
     "optionen": [
       "Die Trocknungszeit",
-      "Die Bindemittelart",
       "Die Reihenfolge der Putzträger",
+      "Die Bindemittelart",
       "Die Art der Oberflächenbearbeitung, die dem fertigen Putz seine Struktur und sein Aussehen gibt"
     ],
     "korrekt": [
@@ -1680,13 +1680,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Gipsplatten werkmäßig hergestellt?",
     "optionen": [
-      "Mit einem schnell erhärtenden Gipskern und einer stabilisierenden Kartonummantelung",
-      "Aus reinem Holz",
+      "Aus Beton mit Stahleinlage",
       "Aus Kunststoff ohne Gips",
-      "Aus Beton mit Stahleinlage"
+      "Mit einem schnell erhärtenden Gipskern und einer stabilisierenden Kartonummantelung",
+      "Aus reinem Holz"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Gipsplatten werden werkmäßig mit einem schnell erhärtenden Kern aus Stuckgips und einer stabilisierenden Kartonummantelung gefertigt. Die in Längsrichtung verlaufenden Kartonfasern erhalten der Platte in Längsrichtung eine größere Biegesteifigkeit als in Querrichtung.",
     "bildDatei": "/buch/lf06/gipsplatten-tabelle.webp",
@@ -1701,10 +1701,10 @@
     "konfidenz": "hoch",
     "frage": "Nach welchen Verlegetechniken lassen sich Estriche unterscheiden?",
     "optionen": [
-      "Nur gegossene Estriche",
       "Nur gepresste Estriche",
+      "Nur handverlegte Estriche",
       "Hand-/kellenverlegte Estriche, selbstnivellierende Fließestriche und Fertigteilestriche (Trockenestriche)",
-      "Nur handverlegte Estriche"
+      "Nur gegossene Estriche"
     ],
     "korrekt": [
       2
@@ -1742,11 +1742,11 @@
     "optionen": [
       "Nass und locker",
       "Glatt und ölig",
-      "Beliebig, das spielt keine Rolle",
-      "Rau, saugfähig, sauber, eben, tragfähig sowie lot- und fluchtgerecht"
+      "Rau, saugfähig, sauber, eben, tragfähig sowie lot- und fluchtgerecht",
+      "Beliebig, das spielt keine Rolle"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Jeder Belaggrund (Ansetzgrund) muss vor dem Ansetzen der Fliesen auf seine Eignung überprüft werden. Er muss rau, saugfähig, sauber, fest, eben, lot- und fluchtgerecht sein. Gegebene Mängel müssen beseitigt oder ausgeglichen werden.",
     "bildDatei": "/buch/lf06/fliesenarbeiten-dusche.webp",
@@ -1761,10 +1761,10 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der Außenputz durch Beanspruchung belastet?",
     "optionen": [
-      "Gar nicht, er ist geschützt",
+      "Nur durch Sonnenlicht",
       "Durch Wasserdampf, Luftverschmutzung, Temperaturwechsel/Frost und Niederschläge",
       "Nur durch Wind",
-      "Nur durch Sonnenlicht"
+      "Gar nicht, er ist geschützt"
     ],
     "korrekt": [
       1
@@ -1782,10 +1782,10 @@
     "konfidenz": "hoch",
     "frage": "Warum haben sich Calciumsulfatfließestriche im Innenbereich bewährt?",
     "optionen": [
-      "Weil sie im Außenbereich unbegrenzt einsetzbar sind",
-      "Wegen des schnellen Einbaus und der schnellen Begehbarkeit, besonders als Estrich auf Dämmschicht im Wohnbereich",
       "Weil sie besonders feuchtebeständig sind",
-      "Weil sie besonders billig sind"
+      "Wegen des schnellen Einbaus und der schnellen Begehbarkeit, besonders als Estrich auf Dämmschicht im Wohnbereich",
+      "Weil sie besonders billig sind",
+      "Weil sie im Außenbereich unbegrenzt einsetzbar sind"
     ],
     "korrekt": [
       1
@@ -1801,13 +1801,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient die Ummantelung von Holz- und Stahlbauteilen mit Gipsplatten?",
     "optionen": [
-      "Zur Verbesserung der brandschutztechnischen Eigenschaften",
-      "Zur Wasserableitung",
+      "Nur zur Verschönerung",
       "Zur Wärmeerzeugung",
-      "Nur zur Verschönerung"
+      "Zur Verbesserung der brandschutztechnischen Eigenschaften",
+      "Zur Wasserableitung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Durch die Ummantelung von Holz- und Stahlbauteilen mit Gipsplatten (Träger- und Stützenbekleidungen) können deren brandschutztechnische Eigenschaften verbessert werden. Gips ist wegen seines Kristallwassers ein guter Brandschutzstoff."
   },
@@ -1820,13 +1820,13 @@
     "konfidenz": "hoch",
     "frage": "Welchen Zweck haben Dämmschichten unter Estrichen?",
     "optionen": [
-      "Sie verbessern Wärme- und Trittschallschutz zwischen den Geschossen",
-      "Sie leiten Wasser ab",
       "Sie erhöhen die Druckfestigkeit des Estrichs",
-      "Sie färben den Estrich"
+      "Sie leiten Wasser ab",
+      "Sie färben den Estrich",
+      "Sie verbessern Wärme- und Trittschallschutz zwischen den Geschossen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Dämmschichten unter dem Estrich (schwimmender Estrich) verbessern den Wärmeschutz und den Trittschallschutz zwischen den Geschossen. Geeignete Dämmstoffe sind z. B. Mineralwolle, Polystyrol und Holzwolle-Mehrschichtplatten.",
     "bildDatei": "/buch/lf06/daemmstoffe-tabelle.webp",
@@ -1841,13 +1841,13 @@
     "konfidenz": "hoch",
     "frage": "Nach welchen Gesichtspunkten erfolgt die Wahl keramischer Erzeugnisse?",
     "optionen": [
-      "Nach technischen (Frostbeständigkeit, Abriebfestigkeit, Rutschsicherheit) und gestalterischen (Farbe, Format) Gesichtspunkten",
       "Nach dem Zufall",
-      "Nur nach dem Preis",
-      "Nur nach der Farbe"
+      "Nur nach der Farbe",
+      "Nach technischen (Frostbeständigkeit, Abriebfestigkeit, Rutschsicherheit) und gestalterischen (Farbe, Format) Gesichtspunkten",
+      "Nur nach dem Preis"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Wahl der vielfältigen keramischen Erzeugnisse erfolgt nach technischen Gesichtspunkten wie Frostbeständigkeit, Abriebfestigkeit und Rutschsicherheit, aber auch nach gestalterischen Gesichtspunkten wie Farbe und Format."
   },
@@ -1988,12 +1988,12 @@
     "frage": "Wovon hängt die erforderliche Estrichdicke ab?",
     "optionen": [
       "Nur von der Farbe",
+      "Von der Estrichkonstruktion, den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit",
       "Sie ist immer gleich",
-      "Nur vom Wetter",
-      "Von der Estrichkonstruktion, den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit"
+      "Nur vom Wetter"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Die Estrichdicke hängt von der Estrichkonstruktion (Verbund, Trenn-, Dämmschicht), den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit des Mörtels ab. Beispiel: Estrich auf Dämmschicht mind. 35 mm (CT).",
     "bildDatei": "/buch/lf06/estrichdicken-tabelle.webp",
@@ -2008,8 +2008,8 @@
     "konfidenz": "hoch",
     "frage": "Warum dürfen Steingutfliesen nur im Innenbereich verwendet werden?",
     "optionen": [
-      "Weil sie zu dunkel sind",
       "Weil sie zu teuer für außen sind",
+      "Weil sie zu dunkel sind",
       "Weil sie zu hart sind",
       "Weil sie einen porösen Scherben mit hoher Wasseraufnahme haben und nicht frostbeständig sind"
     ],
@@ -2029,9 +2029,9 @@
     "konfidenz": "hoch",
     "frage": "Welche Klebemörtel werden beim Dünnbettverfahren verwendet?",
     "optionen": [
-      "Nur reiner Zement ohne Zusatz",
       "Nur Bitumen",
       "Nur Kalk",
+      "Nur reiner Zement ohne Zusatz",
       "Hydraulisch erhärtende Dünnbettmörtel, Dispersionsklebstoffe und Reaktionsharzklebstoffe"
     ],
     "korrekt": [
@@ -2050,13 +2050,13 @@
     "konfidenz": "hoch",
     "frage": "Welches Bindemittel wird bei Innenputzen häufig verwendet?",
     "optionen": [
-      "Bitumen",
-      "Zement nur im Keller",
       "Gips",
+      "Zement nur im Keller",
+      "Bitumen",
       "Kunstharz nur außen"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Neben den bekannten Bindemitteln Kalk und Zement wird im Innenbereich häufig das Bindemittel Gips verwendet. Gipsputze erhärten schnell, verbessern das Raumklima und sind gute Brandschutzstoffe.",
     "bildDatei": "/buch/lf06/putzmoertel-anwendung.webp",
@@ -2071,13 +2071,13 @@
     "konfidenz": "hoch",
     "frage": "Was entsteht, wenn man Holz- oder Metallunterkonstruktionen beidseitig mit Gipsplatten beplankt?",
     "optionen": [
-      "Ein Estrich",
       "Ein tragender Betonpfeiler",
+      "Zweischalige leichte Trennwände (Montagewände)",
       "Ein Verbundestrich",
-      "Zweischalige leichte Trennwände (Montagewände)"
+      "Ein Estrich"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Beplankt man eine Holz- oder Metallunterkonstruktion beidseitig mit Gipsplatten, erhält man zweischalige leichte Trennwände (Montagewände). Zur Verbesserung des Schall-, Wärme- und Brandschutzes können in den Zwischenraum Dämmstoffe eingelegt werden."
   },
@@ -2091,12 +2091,12 @@
     "frage": "Wie groß sollte das Größtkorn der Gesteinskörnung bei einem Verbundestrich mindestens sein (bezogen auf die Estrichdicke)?",
     "optionen": [
       "Immer 50 mm",
+      "Das Größtkorn spielt keine Rolle",
       "Mindestens 3 × Größtkorn ergibt die Mindestdicke (z. B. 8 mm Korn bei 40 mm Dicke)",
-      "Immer 1 mm",
-      "Das Größtkorn spielt keine Rolle"
+      "Immer 1 mm"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Die Estrichdicke muss mindestens das 3-fache des Größtkorns betragen. Beim Verbundestrich mit 40 mm Dicke wird ein Größtkorn von 16 mm nicht überschritten; bei Estrichdicken über 40 mm ein Größtkorn von 8 mm. So wird der Estrich gleichmäßig tragfähig.",
     "bildDatei": "/buch/lf06/estrichdicken-tabelle.webp",

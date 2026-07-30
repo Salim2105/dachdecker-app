@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Wie entsteht ein Blitz?",
     "optionen": [
+      "Durch Reibung des Windes an Hausdächern",
       "Durch die Erwärmung des Erdbodens",
       "In Gewitterwolken werden Wassertropfen durch Aufwinde in höhere, kalte Luftschichten getragen, gefrieren und zerplatzen — dabei werden elektrische Ladungen getrennt, und die schlagartige Entladung ergibt den Blitz",
-      "Durch Magnetfelder in der Atmosphäre",
-      "Durch Reibung des Windes an Hausdächern"
+      "Durch Magnetfelder in der Atmosphäre"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "In Gewitterwolken werden Wassertropfen durch Aufwinde in höhere, kalte Luftschichten getragen. Dort gefrieren und zerplatzen sie. Dadurch werden elektrische Ladungen getrennt. Zwischen den Wolken oder zwischen den Wolken und der Erde entstehen elektrische Spannungen von vielen Hundert Millionen Volt. Durch diese hohen Spannungen wird die Luft elektrisch leitend, es erfolgt eine schlagartige Entladung durch einen Blitz.",
     "bildDatei": "/buch/lf16/prinzip-aeusserer-blitzschutz.webp",
@@ -53,9 +53,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Erkläre die Wirkungsweise von Blitzschutzanlagen.",
     "optionen": [
-      "Sie lenkt den Blitz auf das Nachbargebäude um",
-      "Sie speichert den Blitzstrom in Batterien",
       "Sie verhindert, dass der Blitz überhaupt einschlägt",
+      "Sie speichert den Blitzstrom in Batterien",
+      "Sie lenkt den Blitz auf das Nachbargebäude um",
       "Der Blitzeinschlag bleibt ohne Folgen, wenn der Blitzstrom einen gut leitenden Weg zur Erde findet — die Anlage fängt ihn mit elektrisch leitenden Metallteilen auf, die das Gebäude wie ein Netz umgeben, und leitet ihn gefahrlos ins Erdreich ab"
     ],
     "korrekt": [
@@ -92,13 +92,13 @@
     "konfidenz": "hoch",
     "frage": "Was gibt die Schutzklasse einer Blitzschutzanlage an?",
     "optionen": [
+      "Das Gewicht der Fangleitungen",
       "Das Restrisiko von Blitzeinschlägen — so soll ein sinnvolles Verhältnis zwischen Schutz und Kostenaufwand erreicht werden",
       "Die Höhe des Gebäudes",
-      "Die Farbe der Ableitungen",
-      "Das Gewicht der Fangleitungen"
+      "Die Farbe der Ableitungen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Die Schutzklasse einer Blitzschutzanlage gibt das Restrisiko von Blitzeinschlägen an. So soll ein sinnvolles Verhältnis zwischen Schutz und Kostenaufwand erreicht werden. Je höher die Schutzwahrscheinlichkeit, desto enger muss die Maschenweite der Fangeinrichtung sein — und desto teurer wird die Anlage.",
     "bildDatei": "/buch/lf16/schutzklassen-tabelle.webp",
@@ -137,9 +137,9 @@
     "frage": "Buchaufgabe 2: Aus welchen drei Teilen besteht die äußere Blitzschutzanlage?",
     "optionen": [
       "Fangeinrichtungen, Ableitungen und Erdungsanlage",
+      "Fangstange, Dachrinne und Regenfallrohr",
       "Schutzschalter, Sicherung und Erdung",
-      "Fangleitung, Wechselrichter und Batterie",
-      "Fangstange, Dachrinne und Regenfallrohr"
+      "Fangleitung, Wechselrichter und Batterie"
     ],
     "korrekt": [
       0
@@ -157,13 +157,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen alle Teile der Blitzschutzanlage bestimmte Mindestabmessungen haben?",
     "optionen": [
-      "Damit sie besser zu montieren sind",
-      "Aus optischen Gründen",
       "Damit sie schwer genug sind",
-      "Damit sie nicht durch die hohe Wärmeentwicklung bei Blitzschlag schmelzen"
+      "Damit sie nicht durch die hohe Wärmeentwicklung bei Blitzschlag schmelzen",
+      "Damit sie besser zu montieren sind",
+      "Aus optischen Gründen"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Alle Teile müssen gewisse Mindestabmessungen haben, damit sie nicht durch die hohe Wärmeentwicklung bei Blitzschlag schmelzen. Beim Blitzschlag fließen Stromstärken von vielen tausend Ampere — ein zu dünner Leiter würde durchschmelzen und die Schutzwirkung wäre verloren.",
     "bildDatei": "/buch/lf16/mindestabmessungen-tabelle.webp",
@@ -202,13 +202,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Mindestdicke gilt für Metallbleche und Metallrohre je nach Werkstoff, wenn ein Durchschmelzen verhindert werden soll?",
     "optionen": [
-      "Bei allen Werkstoffen 0,5 mm",
-      "Stahl 7 mm, Kupfer 4 mm, Aluminium 5 mm",
+      "Bei allen Werkstoffen 2 mm",
       "Stahl und nichtrostender Stahl 4 mm, Kupfer 5 mm, Aluminium 7 mm",
-      "Bei allen Werkstoffen 2 mm"
+      "Bei allen Werkstoffen 0,5 mm",
+      "Stahl 7 mm, Kupfer 4 mm, Aluminium 5 mm"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Aus der Tabelle S. 547 (Spalte „Metallbleche/Metallrohre Mindestdicke“): Stahl feuerverzinkt 0,5/4 mm, nichtrostender Stahl 0,5/4 mm, Kupfer 0,5/5 mm, Aluminium 0,5/7 mm. Der zweite Wert ist die Mindestdicke, wenn ein Durchschmelzen des Materials verhindert werden soll. Merke die Reihenfolge Stahl 4 < Kupfer 5 < Aluminium 7 mm — je niedriger der Schmelzpunkt des Metalls, desto dicker muss das Blech sein.",
     "bildDatei": "/buch/lf16/mindestabmessungen-tabelle.webp",
@@ -224,8 +224,8 @@
     "frage": "Buchaufgabe 3: Welche Fangeinrichtungen werden auf Dächern angebracht?",
     "optionen": [
       "Leitungen oder Stangen aus Kupfer, Stahl oder Aluminium; sie werden entlang First, Ortgang, Grat und Traufe maschenförmig verlegt und befestigt",
-      "Nur Betonplatten",
       "Nur Kunststoffprofile",
+      "Nur Betonplatten",
       "Nur Dachrinnen"
     ],
     "korrekt": [
@@ -270,9 +270,9 @@
     "konfidenz": "hoch",
     "frage": "Wie wird ein Lüfter auf dem Dach an den Blitzschutz angeschlossen?",
     "optionen": [
-      "Er wird gar nicht berücksichtigt",
       "Er wird demontiert",
       "Er wird mit Mörtel verschlossen",
+      "Er wird gar nicht berücksichtigt",
       "Er erhält eine eigene Fangeinrichtung, die ihn umschließt und mit der Fangleitung verbunden wird"
     ],
     "korrekt": [
@@ -343,13 +343,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Warum muss zwischen Fangstange und einem stromleitenden Bauteil (z. B. Schornsteineinsatz aus Metall) ein Trennungsabstand eingehalten werden?",
     "optionen": [
-      "Um einen gefährlichen Funkenflug zu verhindern",
-      "Damit die Fangstange nicht rostet",
       "Aus optischen Gründen",
-      "Damit die Fangstange leichter zu montieren ist"
+      "Damit die Fangstange leichter zu montieren ist",
+      "Damit die Fangstange nicht rostet",
+      "Um einen gefährlichen Funkenflug zu verhindern"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 5: Zwischen Fangstange und einem stromleitenden Bauteil (z. B. Schornsteineinsatz aus Metall) muss ein Trennungsabstand eingehalten werden, um einen gefährlichen Funkenflug zu verhindern. Bei zu geringem Abstand kann der Blitzstrom überspringen und Brände auslösen. Der Schutzwinkel α ist abhängig von der Höhe der Fangstangen und von der Schutzklasse.",
     "bildDatei": "/buch/lf16/fangeinrichtung-schornstein.webp",
@@ -364,13 +364,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist bei Dachaufbauten mit elektrisch betriebenen Einrichtungen (z. B. Aufzüge oder Lüftungsanlagen) zu beachten?",
     "optionen": [
-      "Sie werden direkt mit der Fangeinrichtung verbunden",
       "Sie müssen durch separate Fangeinrichtungen mit ausreichendem Trennungsabstand vor Direkteinschlag geschützt werden; eine direkte Verbindung mit der Fangeinrichtung muss vermieden werden",
       "Sie brauchen keinen Schutz",
-      "Sie werden bei Gewitter abgeschaltet"
+      "Sie werden bei Gewitter abgeschaltet",
+      "Sie werden direkt mit der Fangeinrichtung verbunden"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Dachaufbauten, die elektrisch betriebene Einrichtungen enthalten, z. B. für Aufzüge oder Lüftungsanlagen, müssen durch separate Fangeinrichtungen mit ausreichendem Trennungsabstand vor Direkteinschlag geschützt werden. Da diese Anlagen leitfähig mit dem Gebäude verbunden sind, muss eine direkte Verbindung mit der Fangeinrichtung vermieden werden, da sonst Blitzstromkopplungen mit dem Gebäudeinneren auftreten würden. ACHTUNG Verwechslungsgefahr: Metallteile OHNE Elektrik dürfen angeschlossen werden — Teile MIT Elektrik gerade nicht.",
     "bildDatei": "/buch/lf16/dachaufbau-schutzbereich.webp",
@@ -385,13 +385,13 @@
     "konfidenz": "hoch",
     "frage": "Warum sollte auf Dächern möglichst nicht mit unterschiedlichen Metallen gearbeitet werden?",
     "optionen": [
-      "Weil unterschiedliche Metalle unterschiedlich schwer sind",
-      "Weil es unschön aussieht",
+      "Weil es zu elektrochemischer Korrosion kommen kann, bei der das „unedlere“ Metall zerstört wird — Verbindungsstellen müssen dann besonders geschützt werden (z. B. durch Kunststoffisolierungen)",
       "Weil unterschiedliche Metalle nicht leiten",
-      "Weil es zu elektrochemischer Korrosion kommen kann, bei der das „unedlere“ Metall zerstört wird — Verbindungsstellen müssen dann besonders geschützt werden (z. B. durch Kunststoffisolierungen)"
+      "Weil unterschiedliche Metalle unterschiedlich schwer sind",
+      "Weil es unschön aussieht"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Auf Dächern sollte möglichst nicht mit unterschiedlichen Metallen gearbeitet werden. Dies kann zu elektrochemischer Korrosion führen, bei der das „unedlere“ Metall zerstört wird. Lässt es sich nicht vermeiden, müssen Verbindungsstellen zwischen unterschiedlichen Metallen besonders geschützt werden (z. B. durch Kunststoffisolierungen).",
     "bildDatei": "/buch/lf16/befestigung-ableitung.webp",
@@ -407,12 +407,12 @@
     "frage": "Wie viele Ableitungen sind bei kleineren Gebäuden erforderlich?",
     "optionen": [
       "Immer genau eine",
-      "Zwei — bei einem Umfang der Dachaußenkanten (Projektion auf die Grundfläche) und einer Gebäudehöhe unter 20 m reichen zwei aus; bei größeren Gebäuden ist auf je 20 m Umfang eine weitere Ableitung anzubringen",
       "Ableitungen sind nicht erforderlich",
+      "Zwei — bei einem Umfang der Dachaußenkanten (Projektion auf die Grundfläche) und einer Gebäudehöhe unter 20 m reichen zwei aus; bei größeren Gebäuden ist auf je 20 m Umfang eine weitere Ableitung anzubringen",
       "Mindestens zehn"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Ableitungen sollen eine möglichst kurze Verbindung zwischen Fangeinrichtung und Erdungsanlage herstellen. Bei kleineren Gebäuden (Umfang der Dachaußenkanten — gemessen wird deren Projektion auf die Grundfläche — und Gebäudehöhe unter 20 m) reichen zwei Ableitungen aus. Bei größeren Gebäuden ist auf je 20 m Umfang eine weitere Ableitung anzubringen.",
     "bildDatei": "/buch/lf16/befestigung-ableitung.webp",
@@ -453,13 +453,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch darf der Erdungswiderstand einer Blitzschutzanlage höchstens sein?",
     "optionen": [
-      "Der Erdungswiderstand spielt keine Rolle",
-      "Nicht mehr als 1 Ohm",
       "Nicht mehr als 100 Ohm",
-      "Nicht mehr als 10 Ohm"
+      "Nicht mehr als 10 Ohm",
+      "Nicht mehr als 1 Ohm",
+      "Der Erdungswiderstand spielt keine Rolle"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Entscheidend für die Wirksamkeit der Blitzschutzanlage ist die Erdung. Ein geringer Erdwiderstand ermöglicht die gefahrlose Ableitung des Blitzstromes in das Erdreich. Zwischen Ableitung und Erdung werden Trennstellen vorgesehen. Dadurch kann die Fangeinrichtung mit Ableitung von der Erdungsanlage gelöst und der Erdungswiderstand mit einem Erdungsmessgerät geprüft werden. Der Erdungswiderstand sollte nicht mehr als 10 Ohm betragen.",
     "bildDatei": "/buch/lf16/trennstelle-ableitung.webp",
@@ -474,9 +474,9 @@
     "konfidenz": "hoch",
     "frage": "Wie kann die Erdung ausgeführt werden?",
     "optionen": [
+      "Eine Erdung ist nicht erforderlich",
       "Nur durch Anschluss an die Wasserleitung",
       "Nur durch einen Erdspieß von 10 cm Länge",
-      "Eine Erdung ist nicht erforderlich",
       "Durch Gebäudefundamente (Fundamenterder) oder durch ins Erdreich eingelassene Leiter als Einzelerder oder Ringerder — Ringerder sollten in mindestens 50 cm Tiefe und 1 m Abstand um das Außenfundament verlegt werden"
     ],
     "korrekt": [
@@ -521,13 +521,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Welche Prüfungen werden an Blitzschutzanlagen durchgeführt?",
     "optionen": [
-      "Nur eine Sichtprüfung vom Boden aus",
-      "Gar keine — die Anlage ist wartungsfrei",
       "Nach der Fertigstellung und in bestimmten Abständen wird die Funktionsfähigkeit durch elektrische Messungen (z. B. Erdungswiderstand) überprüft; bei bestehenden Anlagen zusätzlich auf Beschädigungen, lockere Halterungen, Korrosionsschäden und Veränderungen am Gebäude",
-      "Nur eine Prüfung der Farbe"
+      "Nur eine Prüfung der Farbe",
+      "Gar keine — die Anlage ist wartungsfrei",
+      "Nur eine Sichtprüfung vom Boden aus"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Buchaufgabe 4: Blitzschutzanlagen werden nach der Fertigstellung und in bestimmten Abständen geprüft. Dabei soll festgestellt werden, ob die Anlage technisch einwandfrei installiert worden ist. Durch elektrische Messungen wird ihre Funktionsfähigkeit überprüft — so wird z. B. der Erdungswiderstand gemessen, der sich durch die Bodenverhältnisse ändern kann: Feuchte Erde hat eine bessere Leitfähigkeit als trockene Erde. Bei bestehenden Anlagen wird zusätzlich geprüft, ob Beschädigungen aufgetreten sind (z. B. lockere Halterungen, Korrosionsschäden) und ob Veränderungen am Gebäude (z. B. Anbauten) vorhanden sind. Über jede Prüfung wird ein Prüfbericht angefertigt.",
     "bildDatei": "/buch/lf16/fangstange-luefter-maengel.webp",
@@ -542,10 +542,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Bestandteile gehören zur Montage einer Blitzschutzanlage?",
     "optionen": [
-      "Nur Dachziegel und Mörtel",
+      "Nur Fangleitung und Erdung",
       "Fangleitung (Aluminiumdraht Ø mind. 8 mm), Ringerder (Bandstahl 30 × 3,5 mm oder Runddraht Ø 10 mm), Dachleitungshalter, Leitungshalter, Dachrinnenklemme, MV-Klemme, Schneefanggitterklemme und Regenrohrschelle",
       "Nur Schrauben und Dübel",
-      "Nur Fangleitung und Erdung"
+      "Nur Dachziegel und Mörtel"
     ],
     "korrekt": [
       1
@@ -563,13 +563,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür stehen in Blitzschutzzeichnungen eine durchgezogene und eine gestrichelte Linie?",
     "optionen": [
-      "Durchgezogen = Kupfer, gestrichelt = Aluminium",
       "Umgekehrt: durchgezogen = verdeckt, gestrichelt = sichtbar",
-      "Beide bedeuten dasselbe",
-      "Die durchgezogene Linie ist eine sichtbar verlegte Blitzschutzleitung, die gestrichelte eine Leitung unter Dach, unter Putz oder im Erdreich"
+      "Die durchgezogene Linie ist eine sichtbar verlegte Blitzschutzleitung, die gestrichelte eine Leitung unter Dach, unter Putz oder im Erdreich",
+      "Durchgezogen = Kupfer, gestrichelt = Aluminium",
+      "Beide bedeuten dasselbe"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Aus der Symboltabelle S. 548 (Blitzschutzanlage): 1 = Blitzschutzleitung sichtbar verlegt (durchgezogen), 2 = Leitung unter Dach, unter Putz oder im Erdreich (gestrichelt), 3 = unterirdische Leitungen, 4 = Fundamenterder, 5 = Fangstange/Fangspitze, 8 = Trennstelle, 9 = Staberder, 10 = Erdung allgemein, 15 = Potenzialausgleichsschiene, 16 = Anschlussfahne blank.",
     "bildDatei": "/buch/lf16/symbole-blitzschutz.webp",
@@ -585,12 +585,12 @@
     "frage": "Welche Gebäudeteile werden in Blitzschutzzeichnungen mit eigenen Symbolen dargestellt?",
     "optionen": [
       "Nur Fenster und Türen",
-      "Gebäudeumrisse, Dachhöhen, Stahlbeton mit Anschluss der Bewehrungen, Stahlkonstruktion, Metallabdeckung, Schornstein, Regenrinne/Regenfallrohr, Schneefanggitter, Rohrleitungen aus Metall, Antenne, Dachständer und Fahnenstange",
       "Es gibt keine Symbole für Gebäudeteile",
-      "Nur Gebäudeumrisse und Schornstein"
+      "Nur Gebäudeumrisse und Schornstein",
+      "Gebäudeumrisse, Dachhöhen, Stahlbeton mit Anschluss der Bewehrungen, Stahlkonstruktion, Metallabdeckung, Schornstein, Regenrinne/Regenfallrohr, Schneefanggitter, Rohrleitungen aus Metall, Antenne, Dachständer und Fahnenstange"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Symboltabelle S. 548 (Gebäudeteile): 1 Gebäudeumrisse, 2 Dachhöhen, 3 Stahlbeton mit Anschluss der Bewehrungen, 4 Stahlkonstruktion, 5 Metallabdeckung, 6 Schornstein, 7 Regenrinne/Regenfallrohr/Entlüftung, 8 Schneefanggitter, 9 Rohrleitungen aus Metall, 10 Antenne, 11 Dachständer, 12 Fahnenstange. Alle diese Teile sind für die Blitzschutzplanung relevant, weil sie entweder Einschlagpunkte oder leitende Verbindungen darstellen.",
     "bildDatei": "/buch/lf16/symbole-gebaeudeteile.webp",
@@ -607,8 +607,8 @@
     "optionen": [
       "Die Lage aller Fangleitungen auf dem Dach, die Anschlusspunkte der Dachaufbauten sowie die nummerierten Ableitungen an den Gebäudeecken mit ihren Trennstellen",
       "Nur die Fenster",
-      "Nur die Möblierung der Räume",
-      "Nur die Dachneigung"
+      "Nur die Dachneigung",
+      "Nur die Möblierung der Räume"
     ],
     "korrekt": [
       0
@@ -626,13 +626,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird die Fangeinrichtung auf einem Flachdach ausgeführt?",
     "optionen": [
-      "Als Maschennetz aus Fangleitungen, das an den Kreuzungspunkten leitend verbunden wird; die Maschenweite richtet sich nach der Schutzklasse",
       "Als einzelne Fangstange in der Dachmitte",
-      "Ohne Fangeinrichtung",
-      "Nur entlang einer Dachkante"
+      "Als Maschennetz aus Fangleitungen, das an den Kreuzungspunkten leitend verbunden wird; die Maschenweite richtet sich nach der Schutzklasse",
+      "Nur entlang einer Dachkante",
+      "Ohne Fangeinrichtung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Auf Flachdächern wird die Fangeinrichtung als Maschennetz aus Fangleitungen ausgeführt. An den Kreuzungspunkten werden die Leitungen leitend verbunden (Kreuzstück/Parallelverbinder). Die Maschenweite richtet sich nach der Schutzklasse — bei Schutzklasse III (Wohngebäude) höchstens 15 × 15 m. Dachaufbauten wie Lichtkuppeln müssen im Schutzbereich liegen oder eigene Fangeinrichtungen erhalten.",
     "bildDatei": "/buch/lf16/blitzschutz-flachdach.webp",
@@ -647,13 +647,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen Fangleitungen an ihren Kreuzungspunkten verbunden werden?",
     "optionen": [
-      "Nur aus optischen Gründen",
       "Damit man sie leichter zählen kann",
-      "Damit die Leitungen nicht verrutschen",
-      "Damit ein durchgehend leitendes Netz entsteht, in dem sich der Blitzstrom auf mehrere Wege verteilen kann"
+      "Nur aus optischen Gründen",
+      "Damit ein durchgehend leitendes Netz entsteht, in dem sich der Blitzstrom auf mehrere Wege verteilen kann",
+      "Damit die Leitungen nicht verrutschen"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Die Kreuzungen der Fangleitungsmaschen werden mit Kreuzstücken bzw. Parallelverbindern leitend verbunden. Nur so entsteht ein durchgehend leitendes Netz, in dem sich der Blitzstrom auf mehrere Wege verteilen kann. Das reduziert die Strombelastung jedes einzelnen Leiters und damit die Wärmeentwicklung.",
     "bildDatei": "/buch/lf16/kreuzung-fangleitungsmaschen.webp",
@@ -669,9 +669,9 @@
     "frage": "Projektaufgabe S. 546: Welche Aufgaben sind bei der Blitzschutzplanung für das Einfamilienhaus zu lösen?",
     "optionen": [
       "Die äußere Blitzschutzanlage im Maßstab 1:100 zeichnerisch darstellen (mit allen Fangeinrichtungen und Ableitungen) sowie einen geeigneten Werkstoff wählen und die Materialmengen zur Verlegung und Befestigung berechnen",
-      "Nur die Dachziegel auswählen",
+      "Nur die Dachneigung bestimmen",
       "Nur den Schornstein einzeichnen",
-      "Nur die Dachneigung bestimmen"
+      "Nur die Dachziegel auswählen"
     ],
     "korrekt": [
       0
@@ -691,8 +691,8 @@
     "optionen": [
       "Fundamenterder ringförmig in den Streifenfundamenten, an allen vier Außenkanten Trennstellen bis 1,50 m Höhe, Falzziegeldeckung, Rinnen und Fallrohre aus Titanzink, Schneefanggitter aus verzinktem Stahl, zwei Dunstrohrdurchführungen, Schutzklasse III",
       "Nur die Farbe der Fassade",
-      "Nur die Anzahl der Fenster",
-      "Nur die Gebäudehöhe"
+      "Nur die Gebäudehöhe",
+      "Nur die Anzahl der Fenster"
     ],
     "korrekt": [
       0
@@ -761,13 +761,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 8: Was versteht man unter Energiesammlern?",
     "optionen": [
-      "Regenwassertanks",
-      "Wärmepumpen im Erdreich",
       "Solaranlagen, die Sonnenenergie in Wärme (Solarthermie durch Sonnenkollektoren) oder elektrischen Strom (Photovoltaik durch Solarzellen) umwandeln",
-      "Batterien im Keller"
+      "Wärmepumpen im Erdreich",
+      "Batterien im Keller",
+      "Regenwassertanks"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Buchaufgabe 8: Unter Energiesammlern versteht man Solaranlagen, die Sonnenenergie in Wärme (Solarthermie durch Sonnenkollektoren) oder elektrischen Strom (Photovoltaik durch Solarzellen) umwandeln. Energiesammler nutzen die Sonne durch Energiegewinnung und tragen dadurch zum Umweltschutz bei.",
     "bildDatei": "/buch/lf16/haus-kollektoren-solarzellen.webp",
@@ -782,9 +782,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 7: Welche Bedeutung hat die Nutzung der Sonnenenergie für die Umwelt?",
     "optionen": [
-      "Sonnenenergie erzeugt mehr Abgase",
-      "Die fossilen Energiequellen (Holz, Kohle, Erdöl, Erdgas) sind nur begrenzt vorhanden, und bei ihrer Verbrennung entstehen Abgase, die für den Treibhauseffekt und die Veränderung des Erdklimas verantwortlich sind",
       "Sonnenenergie ist teurer als Kohle",
+      "Die fossilen Energiequellen (Holz, Kohle, Erdöl, Erdgas) sind nur begrenzt vorhanden, und bei ihrer Verbrennung entstehen Abgase, die für den Treibhauseffekt und die Veränderung des Erdklimas verantwortlich sind",
+      "Sonnenenergie erzeugt mehr Abgase",
       "Sonnenenergie hat keine Bedeutung für die Umwelt"
     ],
     "korrekt": [
@@ -831,8 +831,8 @@
     "frage": "Buchaufgabe 9: Was versteht man unter Sonnenkollektoren?",
     "optionen": [
       "Bauteile der Solarthermie, in denen dunkel beschichtete Röhren mit einer Wärmeträgerflüssigkeit durch die Sonneneinstrahlung erhitzt werden — sie nutzen die Wärmestrahlung der Sonne zur Warmwasserbereitung",
-      "Speicher für elektrische Energie",
       "Reflektoren zur Beleuchtung des Dachraums",
+      "Speicher für elektrische Energie",
       "Bauteile, die Sonnenlicht in Strom umwandeln"
     ],
     "korrekt": [
@@ -852,12 +852,12 @@
     "frage": "Wie hoch ist der durchschnittliche Anteil der Solarenergie an der Deckung des Warmwasserbedarfs einer vierköpfigen Familie im Jahresverlauf?",
     "optionen": [
       "Etwa 100 % das ganze Jahr",
-      "Etwa 68 % im Jahresdurchschnitt — im Sommer nahezu 100 %, im Winter deutlich weniger",
+      "Der Anteil ist in allen Monaten gleich",
       "Etwa 20 % im Jahresdurchschnitt",
-      "Der Anteil ist in allen Monaten gleich"
+      "Etwa 68 % im Jahresdurchschnitt — im Sommer nahezu 100 %, im Winter deutlich weniger"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Das Diagramm S. 552 zeigt den Anteil der Solarenergie zur Deckung des Warmwasserbedarfs einer 4-köpfigen Familie im Monatsverlauf. Der Durchschnittswert liegt bei etwa 68 %. In den Sommermonaten Mai bis August werden nahezu 100 % erreicht, im Dezember und Januar dagegen nur etwa 20–30 %. Deshalb kann eine Solarthermieanlage die Heizung ergänzen, aber nicht vollständig ersetzen.",
     "bildDatei": "/buch/lf16/solarenergie-monatsverlauf.webp",
@@ -872,9 +872,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 10: Was versteht man unter Photovoltaik?",
     "optionen": [
-      "Die Beleuchtung von Dachräumen",
-      "Den physikalischen Vorgang, bei dem Solarzellen aus Silicium Sonnenenergie in elektrischen Strom umwandeln",
       "Die Umwandlung von Sonnenenergie in Wärme",
+      "Den physikalischen Vorgang, bei dem Solarzellen aus Silicium Sonnenenergie in elektrischen Strom umwandeln",
+      "Die Beleuchtung von Dachräumen",
       "Die Speicherung von Wärme im Erdreich"
     ],
     "korrekt": [
@@ -893,13 +893,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 11: Woraus bestehen Solarmodule?",
     "optionen": [
+      "Aus mehreren zusammengefassten Solarzellen — eine einzelne Zelle leistet bei voller Sonneneinstrahlung nur etwa 1,2 Watt",
       "Aus Kunststofffolien mit Farbstoff",
       "Aus einer einzigen großen Solarzelle",
-      "Aus mehreren zusammengefassten Solarzellen — eine einzelne Zelle leistet bei voller Sonneneinstrahlung nur etwa 1,2 Watt",
       "Aus Kupferblech und Glas"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Buchaufgabe 11: Eine Solarzelle leistet bei voller Sonneneinstrahlung nur etwa 1,2 Watt. Deshalb werden mehrere Zellen zu Solarmodulen zusammengefasst. Deren Leistung wird in Watt-peak (Wp) angegeben. Merksatz: Solarzellen werden zu Solarmodulen zusammengefasst. Ihre Leistung wird in Watt-peak angegeben.",
     "bildDatei": "/buch/lf16/integrierte-solarmodulsysteme.webp",
@@ -976,13 +976,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird der gewonnene Solarstrom ins Netz eingespeist?",
     "optionen": [
+      "Über eine Batterie im Keller",
       "Direkt als Gleichstrom ohne Umwandlung",
       "Über einen Wechselrichter, der den in den Solarzellen erzeugten Gleichstrom in Wechselstrom umwandelt",
-      "Über eine Batterie im Keller",
       "Über einen Wärmetauscher"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Um den gewonnenen Solarstrom über den gesamten Tages- und Jahresverlauf nutzen zu können, müsste er in Batterien gespeichert werden. Meist wird der überschüssige Solarstrom aber in das öffentliche Stromnetz eingespeist und vergütet. Die Stromversorgungsunternehmen sind gesetzlich verpflichtet, eingespeisten Solarstrom anzukaufen. Die Einspeisung erfolgt über einen Wechselrichter, der den in den Solarzellen erzeugten Gleichstrom in Wechselstrom umwandelt.",
     "bildDatei": "/buch/lf16/integrierte-solarmodulsysteme.webp",
@@ -1051,8 +1051,8 @@
     "optionen": [
       "Der Energiesammler wird an der Fassade befestigt",
       "Der Energiesammler ersetzt die Dacheindeckung — er wird auf der Unterkonstruktion der normalen Dacheindeckung verlegt und befestigt, das Solarmodul dient gleichzeitig als Dachdeckung",
-      "Der Energiesammler steht frei im Garten",
-      "Der Energiesammler wird über die vorhandene Deckung gestellt"
+      "Der Energiesammler wird über die vorhandene Deckung gestellt",
+      "Der Energiesammler steht frei im Garten"
     ],
     "korrekt": [
       1
@@ -1070,13 +1070,13 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge werden Solarmodule auf Lattung montiert?",
     "optionen": [
-      "Erst den First, dann die Traufe, dann die Module",
-      "Die Reihenfolge ist beliebig",
+      "Erst die Module, dann die gesamte Dachfläche",
       "Zwischenlattung anbringen, Dachfläche bis unterhalb der Solaranlage decken, Traufabschluss ausarbeiten, Solarmodule verlegen (seitliche Stöße und Überdeckung nach Herstellerangabe), firstseitige Schalung, Seitenrinnen und Rinnenabschlussbleche, Seiten- und Mittelabdeckungen befestigen, Firstschalung abdichten",
-      "Erst die Module, dann die gesamte Dachfläche"
+      "Die Reihenfolge ist beliebig",
+      "Erst den First, dann die Traufe, dann die Module"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Montagebeispiel S. 554: Anbringen einer Zwischenlattung (in Sparrenrichtung) zur Unterstützung der Module und Traglattung zum Einhängen; Decken der Dachfläche bis unterhalb der Solaranlage; Ausarbeitung des Traufabschlusses (je nach Eindeckung z. B. Ausspitzgebinde, Walzblei oder Firsteinlegern); Verlegung der Solarmodule, seitliche Stöße und Überdeckung nach Herstellerangabe ausführen, Befestigung mit Seiten- und Abschlusswinkeln; firstseitige Schalung über den Abschlusswinkeln verlegen; Anbringen der Seitenrinnen und der Rinnenabschlussbleche mit Haften; Befestigen der Seiten- und Mittelabdeckungen; Abdichten der Firstschalung und der Seitenrinnen.",
     "bildDatei": "/buch/lf16/montagebeispiel-lattung.webp",
@@ -1091,13 +1091,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 14: Warum ist bei der Installation von Anlagen zur Energiegewinnung eine enge Zusammenarbeit mit anderen Gewerken erforderlich?",
     "optionen": [
-      "Weil die Kabel und Leitungen der Module im Dachinnenraum geführt und vom Elektro- bzw. Heizungsinstallateur an die Hausinstallation angeschlossen werden müssen",
       "Eine Zusammenarbeit ist nicht erforderlich",
       "Weil nur Maurer das Dach betreten dürfen",
+      "Weil die Kabel und Leitungen der Module im Dachinnenraum geführt und vom Elektro- bzw. Heizungsinstallateur an die Hausinstallation angeschlossen werden müssen",
       "Weil der Dachdecker die Module nicht tragen kann"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 14: Solarmodule werden mit Verkabelung geliefert. Die Kabel der einzelnen Module werden verbunden und in Kabelkanälen zusammengefasst. Ebenso wie die Leitungen von Sonnenkollektoren werden sie in den Dachinnenraum geführt und vom Elektro- bzw. Heizungsinstallateur an die Hausinstallation angeschlossen. Bei Lichteinwirkung liegt bei Photovoltaikmodulen sofort eine hohe Spannung an, die lebensgefährlich sein kann — auch deshalb ist die Abstimmung mit dem Elektriker zwingend.",
     "bildDatei": "/buch/lf16/einbindung-schieferdeckung.webp",
@@ -1112,13 +1112,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden nachträglich montierte Solaranlagen in bestehende Blitzschutzanlagen integriert?",
     "optionen": [
-      "Durch Erdung der Modulrahmen an der Dachrinne",
       "Sie brauchen keinen Blitzschutz",
-      "Durch direkten Anschluss der Module an die Fangleitung",
-      "Durch getrennte Fangstangen mit Trennungsabstand zur Solaranlage — die Module liegen dann im Schutzwinkel der Fangstangen"
+      "Durch getrennte Fangstangen mit Trennungsabstand zur Solaranlage — die Module liegen dann im Schutzwinkel der Fangstangen",
+      "Durch Erdung der Modulrahmen an der Dachrinne",
+      "Durch direkten Anschluss der Module an die Fangleitung"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Nachträglich montierte Solaranlagen können durch getrennte Fangstangen (Trennungsabstand zur Solaranlage beachten) in bestehende Blitzschutzanlagen integriert werden. Die Solarelemente liegen dann im Schutzwinkel der Fangstangen. Ein direkter Anschluss ist zu vermeiden, weil sonst Blitzstrom in die Elektroinstallation gekoppelt würde — dasselbe Prinzip wie bei anderen elektrisch betriebenen Dachaufbauten.",
     "bildDatei": "/buch/lf16/fangstangen-solar.webp",
@@ -1158,13 +1158,13 @@
     "konfidenz": "hoch",
     "frage": "Was sind „aufgeklipste“ Solarmodule?",
     "optionen": [
-      "Solarmodule mit speziellen Dachziegeln, auf die das Modul durch eine Federsystem aufgeklipst und gehalten wird (Solardachdeckung)",
       "Module, die frei auf dem Dach liegen",
+      "Module, die verschweißt werden",
       "Module, die mit Mörtel befestigt werden",
-      "Module, die verschweißt werden"
+      "Solarmodule mit speziellen Dachziegeln, auf die das Modul durch eine Federsystem aufgeklipst und gehalten wird (Solardachdeckung)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Für Solarmodule werden zusätzliche Montagesysteme angeboten, bei denen der Modul durch ein Federsystem auf spezielle Dachziegel „aufgeklipst“ und gehalten wird (Solardachdeckung). Bei Flachdächern kann ebenfalls zwischen Aufdachsystemen und Indachsystemen unterschieden werden — bei Flachdächern werden auch beschwerte Wannen als freistehende Unterlage zur Befestigung verwendet.",
     "bildDatei": "/buch/lf16/aufgeklipste-solarmodule.webp",
@@ -1179,10 +1179,10 @@
     "konfidenz": "hoch",
     "frage": "Welche vier Gruppen von Einbauteilen unterscheidet man neben den Halterungen für Blitzschutz- und Solaranlagen?",
     "optionen": [
-      "Nur Schneefanggitter",
       "Nur Dachfenster und Gauben",
+      "Nur Antennen und Blitzableiter",
       "Einbauteile zur Belichtung bzw. Vergrößerung des Dachraumes, Einbau von Sicherheitsdachhaken und Schneeschutzsystemen, Einbauteile zum Betreten des Daches als Verkehrs- bzw. Rettungsweg, und Einbau von Rohrdurchführungen",
-      "Nur Antennen und Blitzableiter"
+      "Nur Schneefanggitter"
     ],
     "korrekt": [
       2
@@ -1200,13 +1200,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 15: Ab welcher Mindestdachneigung können Dachflächenfenster eingebaut werden?",
     "optionen": [
-      "Nicht unter 15° Neigung",
       "Es gibt keine Mindestneigung",
       "Nicht unter 5° Neigung",
+      "Nicht unter 15° Neigung",
       "Nicht unter 30° Neigung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Buchaufgabe 15: Dachflächenfenster sollten nicht unter 15° Neigung eingebaut werden. Sie werden i. d. R. mithilfe von vorgefertigten Eindeckrahmen regensicher angeschlossen. Fertiggauben erhalten einen Holzrahmen, an dem Untersparren- bzw. Unterdeckbahnen oder Abdichtungsbahnen hochgeführt und angeschlossen werden.",
     "bildDatei": "/buch/lf16/dachflaechenfenster.webp",
@@ -1221,10 +1221,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 16: Worauf ist beim Einbau von Dachflächenfenstern und Gauben besonders zu achten?",
     "optionen": [
-      "Nur auf die Farbe des Rahmens",
       "Es sind keine besonderen Anschlüsse nötig",
+      "Nur auf die Größe der Scheibe",
       "Auf den sorgfältigen Anschluss der Luftdichtheitsschicht und ggf. der Dampfsperre; Wärmedämmstoffe müssen dicht an das Fenster bzw. die Gaube gestoßen werden, um Wärmebrücken zu vermeiden",
-      "Nur auf die Größe der Scheibe"
+      "Nur auf die Farbe des Rahmens"
     ],
     "korrekt": [
       2
@@ -1244,11 +1244,11 @@
     "optionen": [
       "Typ A ist aus Stahl, Typ B aus Aluminium",
       "Typ A ist für Ziegel, Typ B für Schiefer",
-      "Typ A nimmt Kräfte nur in Fallrichtung auf, Typ B nimmt Kräfte in jeder Richtung auf",
-      "Es gibt keinen Unterschied"
+      "Es gibt keinen Unterschied",
+      "Typ A nimmt Kräfte nur in Fallrichtung auf, Typ B nimmt Kräfte in jeder Richtung auf"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Buchaufgabe 17: Sicherheitsdachhaken dienen der Befestigung von Anlegeleitern und Dachdeckerstühlen sowie als Anschlagpunkt für ein Sicherheitsgeschirr mit Falldämpfer. Man unterscheidet Typ A zur Aufnahme von Kräften in Fallrichtung und Typ B, der Kräfte in jeder Richtung aufnehmen kann. Sie müssen der Korrosionsbeständigkeit der Kategorie C3 (siehe Tabelle S. 555) mit hoher Schutzdauer (über 15 Jahre) entsprechen. Die Befestigung erfolgt an der tragfähigen Unterkonstruktion des Daches nach Vorgaben des Herstellers.",
     "bildDatei": "/buch/lf16/sicherheitsdachhaken.webp",
@@ -1263,13 +1263,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 18: In welchen Dachbereichen muss mit einer erhöhten Schneelast gerechnet werden?",
     "optionen": [
+      "Nur am Ortgang",
       "Die Schneelast ist überall gleich",
       "Im Bereich von Kehlen, Gauben usw. — dort sind zusätzliche Maßnahmen erforderlich",
-      "Nur am First",
-      "Nur am Ortgang"
+      "Nur am First"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Buchaufgabe 18: Schneeschutzsysteme können als Schneefang im Traufbereich und/oder als Schneehaltesystem über die gesamte Dachfläche angebracht werden. Die Dimensionierung richtet sich nach der zu erwartenden Schneelast und der Dachgeometrie. Insbesondere im Bereich von Kehlen, Gauben usw. können zusätzliche Maßnahmen erforderlich machen. Der Anschluss der Einbauteile muss mindestens regensicher erfolgen, dabei ist eine Schädigung durch eventuell auftretendes Rückstauwasser zu verhindern. Alle Bestandteile müssen der Kategorie C2 bei hoher Schutzdauer entsprechen.",
     "bildDatei": "/buch/lf16/schneefang-schneehalte.webp",
@@ -1285,9 +1285,9 @@
     "frage": "Welche Kategorien der Korrosionsbelastung nach DIN EN 12944-2 gelten für Einbauteile?",
     "optionen": [
       "C1 unbedeutend (Innenbereich, beheizt), C2 gering (ländlich), C3 mäßig (städtisch mit Industrie), C4 stark (Industrie und Küste), C5 sehr stark (aggressive Atmosphäre), C6 sehr sehr stark (starke Salzbelastung im Meer)",
+      "Nur I, II und III",
       "Es gibt keine Kategorien",
-      "Nur A, B und C",
-      "Nur I, II und III"
+      "Nur A, B und C"
     ],
     "korrekt": [
       0
@@ -1305,10 +1305,10 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Rohr- und Kabeldurchführungen an die Dachkonstruktion angeschlossen?",
     "optionen": [
-      "Nur mit Silikon abgedichtet",
+      "Sie werden offen gelassen",
       "Nur mit Mörtel verschlossen",
       "Durch Formteile (z. B. Rohrmanschetten, mehrteilige Dachabläufe oder Durchlassziegel); der Anschluss muss regensicher, dampfdicht oder luftdicht ausgeführt werden",
-      "Sie werden offen gelassen"
+      "Nur mit Silikon abgedichtet"
     ],
     "korrekt": [
       2
@@ -1326,9 +1326,9 @@
     "konfidenz": "hoch",
     "frage": "Welche Anforderungen gelten für Einzeltritte, Trittflächen und Laufstege auf der Dachfläche?",
     "optionen": [
-      "Sie dürfen nie als Anschlagpunkt dienen",
       "Sie werden nur auf die Ziegel gelegt",
       "Sie brauchen keinen Korrosionsschutz",
+      "Sie dürfen nie als Anschlagpunkt dienen",
       "Sie bestehen aus einer Auftrittsfläche und einer Stützkonstruktion, die auf der tragenden Dachkonstruktion befestigt wird, müssen korrosionsbeständig mindestens Kategorie C2 bei hoher Schutzdauer über 15 Jahre sein und können nach Klasse K2 (DIN EN 516) auch als Anschlagpunkt dienen"
     ],
     "korrekt": [
@@ -1347,13 +1347,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Grundregel gilt für die Befestigung aller Einbauteile?",
     "optionen": [
-      "Sie müssen nach Herstellerangaben so befestigt werden, dass sie standsicher sind und unter Belastung (auch durch Windsog) die Dachdeckung nicht beschädigen",
       "Sie brauchen keine Befestigung",
+      "Sie werden lose aufgelegt",
       "Sie werden auf die Dachziegel geklebt",
-      "Sie werden lose aufgelegt"
+      "Sie müssen nach Herstellerangaben so befestigt werden, dass sie standsicher sind und unter Belastung (auch durch Windsog) die Dachdeckung nicht beschädigen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Merksatz S. 555: Alle Einbauteile müssen nach Herstellerangaben so befestigt werden, dass sie standsicher sind und unter Belastung (auch durch Windsog) die Dachdeckung nicht beschädigen. Grundsätzlich muss der Anschluss von Einbauteilen mindestens den Anforderungen der Dachkonstruktion entsprechen — hinsichtlich Regensicherheit bzw. Abdichtung, Luftdichtheit, Wärme-, Schall- und Brandschutz. Bewährt hat sich die Verwendung von vorgefertigten Zubehörteilen, die auf die jeweilige Dachkonstruktion abgestimmt sind.",
     "bildDatei": "/buch/lf16/zusammenfassung.webp",
@@ -1368,13 +1368,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Themen deckt die Aufgabenliste des Lernfelds 16 auf Buchseite 557 ab?",
     "optionen": [
-      "Nur Blitzschutz",
       "Nur Dachfenster",
+      "Wirkungsweise und Bestandteile von Blitzschutzanlagen, Fangeinrichtungen, Prüfungen, Montagemaße, weiche Bedachung, Sonnenenergie, Energiesammler, Sonnenkollektoren, Photovoltaik, Solarmodule, Watt-peak, Montagearten, Zusammenarbeit mit anderen Gewerken, Dachflächenfenster, Sicherheitsdachhaken und Schneelast",
       "Nur Solaranlagen",
-      "Wirkungsweise und Bestandteile von Blitzschutzanlagen, Fangeinrichtungen, Prüfungen, Montagemaße, weiche Bedachung, Sonnenenergie, Energiesammler, Sonnenkollektoren, Photovoltaik, Solarmodule, Watt-peak, Montagearten, Zusammenarbeit mit anderen Gewerken, Dachflächenfenster, Sicherheitsdachhaken und Schneelast"
+      "Nur Blitzschutz"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Die 18 Aufgaben auf S. 557 decken das gesamte Lernfeld ab: 1. Wirkungsweise von Blitzschutzanlagen, 2. Bestandteile der äußeren Blitzschutzanlage, 3. Fangeinrichtungen auf Dächern, 4. Prüfungen, 5. Montagemaße für Fangleitungen, 6. weiche Bedachung, 7. Bedeutung der Sonnenenergie für die Umwelt, 8. Energiesammler, 9. Sonnenkollektoren, 10. Photovoltaik, 11. Solarmodule, 12. Watt-peak, 13. Montagearten, 14. Zusammenarbeit mit anderen Gewerken, 15. Mindestdachneigung Dachflächenfenster, 16. Einbau von Dachflächenfenstern und Gauben, 17. Sicherheitsdachhaken Typ A/B, 18. erhöhte Schneelast.",
     "bildDatei": "/buch/lf16/aufgaben-liste.webp",

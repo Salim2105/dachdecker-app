@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch soll die Anschlusshöhe bei Wandanschlüssen mit Abdichtung mindestens sein?",
     "optionen": [
-      "Eine Anschlusshöhe ist nicht erforderlich",
       "Mindestens 20 cm bei jeder Dachneigung",
+      "Mindestens 15 cm bei bis 5° Dachneigung, mindestens 10 cm über 5°; in schneereichen Gegenden ist sie zu erhöhen",
       "Immer genau 5 cm",
-      "Mindestens 15 cm bei bis 5° Dachneigung, mindestens 10 cm über 5°; in schneereichen Gegenden ist sie zu erhöhen"
+      "Eine Anschlusshöhe ist nicht erforderlich"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Die Anschlusshöhe an aufgehende Bauteile soll bis 5° Dachneigung mindestens 15 cm und über 5° mindestens 10 cm betragen. In schneereichen Gegenden muss die Anschlusshöhe gegebenenfalls erhöht werden. Merke: Je flacher das Dach, desto höher der Anschluss — bei ≤ 5° staut sich das Wasser leichter.",
     "bildDatei": "/buch/lf14/wandanschluss-bitumen.webp",
@@ -46,9 +46,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Wie kann das obere Ende von Wandanschlüssen regensicher ausgebildet werden?",
     "optionen": [
-      "Es wird nicht geschützt",
-      "Durch direkte oder indirekte Bewitterung geschützt — mit einer Wandbekleidung, eingelassene Klemmschienen, Dichtungsmassen oder Anpressen mit Klemmschienen",
       "Nur durch Anstrich mit Bitumen",
+      "Durch direkte oder indirekte Bewitterung geschützt — mit einer Wandbekleidung, eingelassene Klemmschienen, Dichtungsmassen oder Anpressen mit Klemmschienen",
+      "Es wird nicht geschützt",
       "Es bleibt offen, damit Luft zirkulieren kann"
     ],
     "korrekt": [
@@ -67,10 +67,10 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Wandanschlüsse mit Bitumenbahnen ausgeführt?",
     "optionen": [
-      "Ohne Keil rechtwinklig hochgeführt",
+      "Die Bahnen werden lose gelegt",
       "Nur mit einer einzigen Lage",
       "Am Übergang vom Dach zur Wand wird ein Keil angebracht; die Lagen der Dachabdichtung werden bis über den Keil geführt, die Anschlussbahnen (mindestens 2 Lagen) werden in die Dachabdichtung eingebunden",
-      "Die Bahnen werden lose gelegt"
+      "Ohne Keil rechtwinklig hochgeführt"
     ],
     "korrekt": [
       2
@@ -88,13 +88,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 3: Welche Besonderheiten gibt es beim Anschluss von Türen?",
     "optionen": [
-      "Türen brauchen keinen Anschluss",
-      "Die Abdichtung endet unter der Türschwelle",
+      "Die Abdichtung wird 15 cm über den Oberflächenbelag hochgezogen; bei ausreichender Beschädigungssicherung (z. B. Entwässerungsrost) darf die Anschlusshöhe auf 5 cm reduziert werden",
       "Die Anschlusshöhe muss immer 20 cm betragen",
-      "Die Abdichtung wird 15 cm über den Oberflächenbelag hochgezogen; bei ausreichender Beschädigungssicherung (z. B. Entwässerungsrost) darf die Anschlusshöhe auf 5 cm reduziert werden"
+      "Türen brauchen keinen Anschluss",
+      "Die Abdichtung endet unter der Türschwelle"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Bei Türanschlüssen wird die Abdichtung 15 cm über den Oberflächenbelag hochgezogen und durch Metallabdeckungen gegen mechanische Beschädigung geschützt. Ist eine ausreichende Anschlusshöhe nicht möglich, muss der Türbereich durch andere Maßnahmen geschützt werden (z. B. Entwässerungsrost vor der Tür). In diesen Fällen sollte die Anschlusshöhe mindestens 5 cm betragen. Barrierefreie Übergänge sind als Sonderkonstruktionen möglich, die zusätzliche Maßnahmen erfordern, um ihre Dichtheit sicherzustellen.",
     "bildDatei": "/buch/lf14/terrassentuer-kunststoff.webp",
@@ -109,10 +109,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: Wo sollten Dachdurchdringungen (Lüftungs- und Dunstrohre) liegen und wie werden sie abgedichtet?",
     "optionen": [
-      "Beliebig, Abdichtung ist nicht nötig",
+      "In der Kehle, nur mit Mörtel",
       "An den Hochpunkten des Daches; die Abdichtung erfolgt durch Ummantelung mit Klebeflanschen, Dichtungsmanschetten oder Klemmflanschen (Mindestbreite 12 cm), 15 cm über den Oberflächenbelag hochgezogen",
       "An den Tiefpunkten des Daches, ohne besondere Abdichtung",
-      "In der Kehle, nur mit Mörtel"
+      "Beliebig, Abdichtung ist nicht nötig"
     ],
     "korrekt": [
       1
@@ -130,13 +130,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch soll der Aufsetzkranz von Lichtkuppelelementen höchstens sein und warum?",
     "optionen": [
-      "Höchstens 2,50 m, um temperaturbedingte Längenänderungen und Schäden zu vermeiden",
-      "Höchstens 0,50 m aus optischen Gründen",
       "Beliebig hoch",
+      "Höchstens 0,50 m aus optischen Gründen",
+      "Höchstens 2,50 m, um temperaturbedingte Längenänderungen und Schäden zu vermeiden",
       "Mindestens 5,00 m für die Belüftung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Lichtkuppelelemente sind zweiteilig. Sie bestehen aus einem Aufsetzkranz und einer Lichtschale. Das Nennmaß der Lichtkuppelkränze sollte höchstens 2,50 m betragen, da sonst temperaturbedingte Längenänderungen zu Schäden führen können. Der Aufsetzkranz wird an der Unterkonstruktion befestigt, der Anschluss sollte über der Wasser führenden Ebene der Dichtung liegen.",
     "bildDatei": "/buch/lf14/lichtkuppel-anschluss.webp",
@@ -178,13 +178,13 @@
     "konfidenz": "hoch",
     "frage": "Wie hoch soll der Dachrandabschluss (Attika, Ortgang, Traufe) über der Dachdichtung mindestens liegen?",
     "optionen": [
-      "Mindestens 10 cm (bei Dachneigung über 5°: 5 cm) höher als die Dachdichtung",
       "Genau auf gleicher Höhe wie die Dachdichtung",
+      "Mindestens 10 cm (bei Dachneigung über 5°: 5 cm) höher als die Dachdichtung",
       "Mindestens 30 cm höher",
       "Tiefer als die Dachdichtung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Der Abschluss soll mindestens 10 cm (bei Dachneigung über 5°: 5 cm) höher als die Dachdichtung liegen. Die Randaufkantung kann aus Holz, Beton oder Mauerwerk hergestellt sein. Durch die Aufkantung wird der Dachrand nach innen entwässert. Bei zu geringer Anschlusshöhe besteht die Gefahr, dass Wasser über den Dachrand austritt und die Außenwand durchfeuchtet.",
     "bildDatei": "/buch/lf14/dachrandabschluss-bitumen.webp",
@@ -228,13 +228,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Worin unterscheiden sich Fugen vom Typ I und Typ II?",
     "optionen": [
+      "Es gibt keinen Unterschied",
       "Typ I sind Fugen für langsame und seltene Bewegungen, Typ II für schnelle und häufige Bewegungen",
-      "Typ I sind waagerechte, Typ II senkrechte Fugen",
       "Typ I sind innen, Typ II außen",
-      "Es gibt keinen Unterschied"
+      "Typ I sind waagerechte, Typ II senkrechte Fugen"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Fugen sollen schadensfreie Bewegungen in Bauwerken ermöglichen. Nach Art und Häufigkeit der Bauteilbewegungen werden Fugen in Typ I und Typ II eingeteilt. Fugen Typ I sind Fugen für langsame und seltene Bewegungen (z. B. durch Setzungen oder temperaturbedingte Längenänderungen zwischen Sommer und Winter). Fugen Typ II sind Fugen für schnelle und häufige Bewegungen (z. B. durch wechselnde Verkehrslasten oder temperaturbedingte Längenänderungen zwischen Tag und Nacht).",
     "bildDatei": "/buch/lf14/fugenband-einklebeflansch.webp",
@@ -271,13 +271,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Fugen vom Typ II abgedichtet?",
     "optionen": [
-      "Durch Unterbrechung der Abdichtung mit Fugenbändern mit Einklebeflansch, Fugendichtungsprofilen oder Los- und Festflanschkonstruktionen",
+      "Durch einfaches Überkleben mit einer Lage",
       "Nur mit Mörtel verfüllt",
       "Gar nicht, sie bleiben offen",
-      "Durch einfaches Überkleben mit einer Lage"
+      "Durch Unterbrechung der Abdichtung mit Fugenbändern mit Einklebeflansch, Fugendichtungsprofilen oder Los- und Festflanschkonstruktionen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Fugen Typ II werden durch Unterbrechung der Abdichtung mit Fugenbändern mit Einklebeflansch, vorgefertigten Fugendichtungsprofilen oder durch Los- und Festflanschkonstruktionen abgedichtet. Fugenbänder haben eine mittig angeordnete elastische Dehnungszone, die über die Bewegungsfuge verlegt wird. Die seitlichen Flansche werden zwischen zwei Abdichtungslagen eingedichtet.",
     "bildDatei": "/buch/lf14/fugenband-schweissen.webp",
@@ -292,13 +292,13 @@
     "konfidenz": "hoch",
     "frage": "Wo müssen Dachabläufe (Gullys) bei Flachdächern liegen?",
     "optionen": [
-      "Innerhalb der Dachfläche an den Gefälletiefpunkten",
       "An den Hochpunkten der Dachfläche",
-      "Nur am Dachrand",
-      "Beliebig, die Lage ist egal"
+      "Beliebig, die Lage ist egal",
+      "Innerhalb der Dachfläche an den Gefälletiefpunkten",
+      "Nur am Dachrand"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Die Entwässerung von Flachdächern kann über innen liegende Dachabläufe (Gullys) oder durch vorgehängte Dachrinnen über die Traufe erfolgen. Merksatz: Dachabläufe liegen innerhalb der Dachfläche an den Gefälletiefpunkten. Um eine schnelle Entwässerung zu erreichen, sollte ein ausreichendes Gefälle (mindestens 2 %) vorhanden sein.",
     "bildDatei": "/buch/lf14/dachgully-aufstock.webp",
@@ -498,12 +498,12 @@
     "frage": "Wie ist die Verhältniszahl n beim Gefälle definiert?",
     "optionen": [
       "n = Höhe (h) : Länge (l)",
-      "n = Höhe · Länge",
       "n = Länge (l) : Höhe (h), angegeben als Steigungsverhältnis 1 : n",
+      "n = Höhe · Länge",
       "n = Länge − Höhe"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Um das für den Wasserablauf notwendige Gefälle zu berechnen, kann die Verhältniszahl n als Verhältnis von Länge l zu Höhe h angegeben werden: n = l : h, geschrieben als Steigungsverhältnis 1 : n. Bei Flachdächern und Rinnen ist die Gefälleangabe als Prozentsatz p üblich: p = h · 100 : l.",
     "bildDatei": "/buch/lf14/gefaelle-verhaeltniszahl.webp",
@@ -719,13 +719,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Welches Ziel haben Brandschutzmaßnahmen und wie werden sie konstruktiv erreicht?",
     "optionen": [
-      "Ziel ist, das Ausbreiten des Feuers auf große Gebäudeteile zu verhindern; konstruktiv werden Hohlräume im Bereich der Durchdringungen mit nichtbrennbaren Baustoffen (z. B. Mineralwolle, Schaumglas) ausgefüllt",
       "Brandschutz ist bei Dächern nicht nötig",
-      "Ziel ist eine bessere Wärmedämmung; erreicht durch dickere Dämmung",
-      "Ziel ist die Entwässerung; erreicht durch mehr Gullys"
+      "Ziel ist, das Ausbreiten des Feuers auf große Gebäudeteile zu verhindern; konstruktiv werden Hohlräume im Bereich der Durchdringungen mit nichtbrennbaren Baustoffen (z. B. Mineralwolle, Schaumglas) ausgefüllt",
+      "Ziel ist die Entwässerung; erreicht durch mehr Gullys",
+      "Ziel ist eine bessere Wärmedämmung; erreicht durch dickere Dämmung"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Buchaufgabe 6: Durch Brandschutzmaßnahmen soll die Feuerwiderstandsdauer einer Dachkonstruktion gegen Brände im Gebäudeinneren vergrößert werden. Ziel ist es, das Ausbreiten des Feuers auf große Gebäudeteile zu verhindern. Besondere Bedeutung hat der Bereich von Dachdurchdringungen. Konstruktiv müssen Hohlräume im Bereich der Durchdringung mit nichtbrennbaren Baustoffen (z. B. Mineralwolle, Schaumglas oder zementgebundene Mineralschüttungen) ausgefüllt und gegen das Gebäudeinnere abgeschottet werden. Für großflächige flach geneigte Dächer (über 2500 m² Dachfläche und unter 20° Dachneigung) gilt die DIN 18234.",
     "bildDatei": "/buch/lf14/dachgully-brandschutz.webp",
@@ -742,8 +742,8 @@
     "optionen": [
       "Weil die Kehllinie diagonal verläuft und dadurch bei gleichem Höhenunterschied einen längeren waagerechten Weg hat",
       "Weil die Kehllinie steiler gedämmt wird",
-      "Weil die Kehllinie kürzer ist",
-      "Weil in der Kehle mehr Wasser fließt"
+      "Weil in der Kehle mehr Wasser fließt",
+      "Weil die Kehllinie kürzer ist"
     ],
     "korrekt": [
       0
@@ -927,10 +927,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Wasserart wirkt auf erdberührte Wände unterhalb des Bemessungswasserstandes?",
     "optionen": [
+      "Kapillarwasser",
       "Nur Bodenfeuchte",
-      "Nur Spritzwasser",
       "Grundwasser bzw. Hochwasser — als drückendes Wasser von außen (DIN 18533)",
-      "Kapillarwasser"
+      "Nur Spritzwasser"
     ],
     "korrekt": [
       2
@@ -948,13 +948,13 @@
     "konfidenz": "hoch",
     "frage": "Welche DIN-Norm regelt die Abdichtung von Behältern und Becken (z. B. Schwimmbäder)?",
     "optionen": [
-      "DIN 18234",
+      "DIN 18535",
       "DIN 18531",
       "DIN 18533",
-      "DIN 18535"
+      "DIN 18234"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Die Abdichtungsnormen sind nach Bauteil gegliedert: DIN 18531 = Dachabdichtungen (Dächer, Balkone, Loggien), DIN 18532 = befahrbare Verkehrsflächen aus Beton, DIN 18533 = erdberührte Bauteile (Bauwerksabdichtung), DIN 18534 = Innenraumabdichtung (Nassräume), DIN 18535 = Behälter und Becken (Wasserbehälter, Schwimmbecken — drückendes Wasser von innen).",
     "bildDatei": "/buch/lf14/wasserarten-tabelle.webp",
@@ -969,13 +969,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1 (S. 532): Welche Werkstoffe werden zur Bauwerksabdichtung verwendet? (mehrere richtig)",
     "optionen": [
-      "Kunststoffmodifizierte Bitumendickbeschichtung (PMBC) und mineralische Dichtungsschlämmen (MDS)",
       "Gipsputz und Kalkmörtel",
       "Metallbänder aus Kupfer oder Edelstahl und Flüssigkunststoff (FLK)",
+      "Kunststoffmodifizierte Bitumendickbeschichtung (PMBC) und mineralische Dichtungsschlämmen (MDS)",
       "Bitumen- und Polymerbitumenbahnen sowie Kunststoff- und Elastomerdichtungsbahnen"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -993,12 +993,12 @@
     "frage": "Worin unterscheiden sich extensive und intensive Dachbegrünung?",
     "optionen": [
       "Extensive Begrünung ist teurer",
-      "Es gibt keinen Unterschied",
       "Intensive Begrünung braucht keine Pflege",
-      "Extensive Begrünung nutzt niedrig wachsende Pflanzen (Wuchshöhe bis etwa 15 cm); intensive Begrünung verwendet größere, tiefer wurzelnde Pflanzen (kleine Bäume, Sträucher, Stauden)"
+      "Extensive Begrünung nutzt niedrig wachsende Pflanzen (Wuchshöhe bis etwa 15 cm); intensive Begrünung verwendet größere, tiefer wurzelnde Pflanzen (kleine Bäume, Sträucher, Stauden)",
+      "Es gibt keinen Unterschied"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Dachbegrünungen werden extensiv und intensiv ausgeführt. Bei der extensiven Begrünung werden niedrig wachsende Pflanzen (Wuchshöhe bis etwa 15 cm) verwendet. Bei der intensiven Begrünung werden größere Pflanzen (kleine Bäume, Sträucher, Stauden) verwendet, die tiefer wurzeln. Die intensive Begrünung erfordert daher einen dickeren Bodenaufbau und eine regelmäßige Pflege der Pflanzen. Diese gärtnerischen Arbeiten können zu einer zusätzlichen Beanspruchung der Abdichtung führen.",
     "bildDatei": "/buch/lf14/extensive-dachbegruenung.webp",
@@ -1013,13 +1013,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Schichten hat ein begrüntes Flachdach im Regelfall (von unten nach oben über der Abdichtung)?",
     "optionen": [
-      "Schutzschicht, Trennschicht, Wurzelschutzschicht, Dränschicht, Filterschicht, Vegetationsschicht",
-      "Nur Dämmung und Dichtung",
       "Estrich, Fliesen, Pflanzen",
-      "Nur Erde und Pflanzen"
+      "Nur Erde und Pflanzen",
+      "Schutzschicht, Trennschicht, Wurzelschutzschicht, Dränschicht, Filterschicht, Vegetationsschicht",
+      "Nur Dämmung und Dichtung"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Begrünte Dächer haben in der Regel folgende Schichten im Dachaufbau (über der Abdichtung): Schutzschicht, Trennschicht, Wurzelschutzschicht, Dränschicht, Filterschicht und Vegetationsschicht. Die Wurzelschutzschicht verhindert Beschädigungen der Abdichtung durch eindringende Pflanzenwurzeln, die Dränschicht leitet überschüssiges Wasser ab, die Filterschicht verhindert, dass Feinteile eingeschwemmt werden.",
     "bildDatei": "/buch/lf14/schichtaufbau-begruent.webp",
@@ -1059,13 +1059,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viel Niederschlagswasser halten begrünte Dächer zurück?",
     "optionen": [
+      "100 %, es läuft nichts ab",
       "0 %, alles läuft sofort ab",
       "Etwa 70 % des Niederschlagswassers, wodurch sie die Kanalisation entlasten",
-      "Etwa 10 %",
-      "100 %, es läuft nichts ab"
+      "Etwa 10 %"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Begrünte Dächer schaffen vor allem in Städten neuen Lebensraum für Pflanzen und Tiere, verbessern die Luftverhältnisse durch Sauerstoffbildung (1 m² begrünte Dachfläche = 100 m² „atmende Blätterfläche), Staubbindung und Wasserverdunstung. Dachbegrünungen entlasten die Kanalisation, selbst bei dünner Begrünung werden etwa 70 % des Niederschlagswassers zurückgehalten. Daneben übernimmt die begrünte Dachfläche auch die Aufgaben des Oberflächenschutzes.",
     "bildDatei": "/buch/lf14/intensive-dachbegruenung.webp",
@@ -1080,13 +1080,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden begrünte Dächer ausgeführt?",
     "optionen": [
-      "Nur mit Kies",
       "Nur in Einschichtbauweise",
       "In Einschichtbauweise oder Mehrschichtbauweise",
-      "Ausschließlich mit Betonplatten"
+      "Ausschließlich mit Betonplatten",
+      "Nur mit Kies"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Dachbegrünungen können bei Flachdächern und flach geneigten Dächern vorgenommen werden. Die Detailausbildung erfolgt in Einschichtbauweise oder Mehrschichtbauweise. Bei begrünten Dächern müssen Abschlüsse, Anschlüsse und Durchdringungen besonders sorgfältig ausgeführt werden. An diesen Stellen müssen neben der Abdichtung auch die Schutz- und Wurzelschutzschicht an den Einbauteilen hochgeführt werden, oder die Stellen sind mit Grobkies in einer Breite von etwa 50 cm aufzufüllen.",
     "bildDatei": "/buch/lf14/dachbegruenung-schichten.webp",
@@ -1122,10 +1122,10 @@
     "konfidenz": "hoch",
     "frage": "In welcher Reihenfolge (von unten nach oben) sind die Schichten einer extensiven Dachbegrünung im Musterausschreibungstext aufgeführt?",
     "optionen": [
-      "Nur Abdichtung und Erde",
       "Vegetationsschicht, Substrat, Abdichtung, Dämmung, Voranstrich",
+      "Kies, Estrich, Fliesen, Pflanzen",
       "Bitumen-Voranstrich, Dampfsperre, Wärmedämmung, 1. Lage Abdichtung, Oberlage mit Wurzelschutz, Dränschicht, Substrat-/Speicherschicht, Vegetationsschicht",
-      "Kies, Estrich, Fliesen, Pflanzen"
+      "Nur Abdichtung und Erde"
     ],
     "korrekt": [
       2
@@ -1143,13 +1143,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Plattenbeläge auf einer Dachterrasse verlegt?",
     "optionen": [
-      "Lose ohne Unterlage",
-      "Direkt auf die Abdichtung geklebt",
       "In ein etwa 3 cm dickes Kies- oder Splittbett oder ein 2 cm dickes Mörtelbett — die Abdichtung wird durch zwei Trennschichten (z. B. PE-Folien) geschützt",
-      "In 20 cm dicken Beton eingegossen"
+      "In 20 cm dicken Beton eingegossen",
+      "Direkt auf die Abdichtung geklebt",
+      "Lose ohne Unterlage"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Bei Dachterrassen wird die Abdichtung mit einer Trennlage abgedeckt. Beton-Plattenbeläge (mindestens Format 40 × 40 × 4 cm) werden in ein etwa 3 cm dickes Kies- oder Splittbett oder ein 2 cm dickes Mörtelbett verlegt. Zwischen Mörtelbett und Abdichtung sind zwei Trennschichten (z. B. PE-Folien) oder eine Schutz- und eine Trennschicht erforderlich. Abdichtung und Belag sollen ein Gefälle von 2 % aufweisen, um stehendes Wasser zu vermeiden.",
     "bildDatei": "/buch/lf14/genutzte-dachterrasse.webp",
@@ -1164,13 +1164,13 @@
     "konfidenz": "hoch",
     "frage": "In welche vier Nutzungsklassen werden Verkehrsflächen nach DIN 18532 eingeteilt?",
     "optionen": [
-      "I, II, III, IV nach Gewicht",
       "N1-V (Fußgänger/Radwege), N2-V (Pkw), N3-V (Pkw + leichter Lkw), N4-V (alle Fahrzeuge)",
+      "A, B, C, D",
       "Nur befahrbar und nicht befahrbar",
-      "A, B, C, D"
+      "I, II, III, IV nach Gewicht"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Verkehrsflächen werden in DIN 18532 in vier Nutzungsklassen eingeteilt: N1-V (Fußgänger und Radwege), N2-V (Zwischen- und Freidecks in Parkhäusern mit Pkw-Verkehr), N3-V (mit Pkw- und leichtem Lkw-Verkehr), N4-V (Verkehrsflächen für alle Fahrzeuge). Über der Abdichtung werden Trennlagen abgedeckt, darauf eine Schutzschicht (z. B. Estrich) und/oder eine befahrbare Betonplatte oder Gussasphaltschicht. Gussasphalt als Schutz- und Nutzschicht: Dicke mindestens 5 cm, zweilagig.",
     "bildDatei": "/buch/lf14/parkdachaufbau-gussasphalt.webp",
@@ -1185,13 +1185,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Einwirkungsklasse nach DIN 18531-1 ist eine genutzte Dachfläche OHNE thermisch wirksame Schutz- bzw. Nutzbeläge zuzuordnen?",
     "optionen": [
-      "Einwirkungsklasse I A (hohe thermische Einwirkung Stufe A, hohe mechanische Einwirkung Stufe I)",
       "Einwirkungsklasse I B",
+      "Keiner Klasse",
       "Einwirkungsklasse II C",
-      "Keiner Klasse"
+      "Einwirkungsklasse I A (hohe thermische Einwirkung Stufe A, hohe mechanische Einwirkung Stufe I)"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Nach der Tabelle S. 526: Alle genutzten Dachflächen OHNE thermisch wirksame Schutz- bzw. Nutzbeläge werden der Einwirkungsklasse I A zugeordnet (hohe thermische Einwirkung Stufe A). Dachflächen MIT Schutzschicht (z. B. Kiesschüttung, Nutzbelag, Begrünung) haben nur mäßige thermische Einwirkung (Stufe B) und gehören zur Einwirkungsklasse I B. Der Schutzbelag reduziert also die thermische Beanspruchung der Abdichtung.",
     "bildDatei": "/buch/lf14/einwirkungsstufe-tabelle.webp",
@@ -1206,13 +1206,13 @@
     "konfidenz": "hoch",
     "frage": "Warum müssen bei genutzten Dachflächen (Dachterrassen, Balkone, Parkdecks) zusätzliche Schutzschichten eingebaut werden?",
     "optionen": [
-      "Weil die Abdichtung durch Verkehrsbelastung hoch beansprucht wird und die Schwingungen und Bewegungen nicht direkt an die Abdichtung übertragen werden dürfen",
-      "Um die Dämmung zu ersetzen",
       "Damit das Dach leichter wird",
+      "Um die Dämmung zu ersetzen",
+      "Weil die Abdichtung durch Verkehrsbelastung hoch beansprucht wird und die Schwingungen und Bewegungen nicht direkt an die Abdichtung übertragen werden dürfen",
       "Nur aus optischen Gründen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Bei genutzten Dachflächen wie Dachterrassen oder Balkonen und befahrenen Dachflächen z. B. auf Parkdecks wird die Abdichtung z. B. durch Verkehrsbelastung hoch beansprucht. Die Abdichtung darf durch diese Beanspruchungen (Schwingungen, Bauteilbewegungen) ihre Schutzwirkung nicht verlieren. Deshalb müssen für die jeweilige Nutzung geeignete Schutzschichten (Schutzmatten, Estrich, Beton, Gussasphalt) ausreichende Druckfestigkeit besitzen.",
     "bildDatei": "/buch/lf14/flansch-terrasse-parkdeck.webp",
@@ -1227,13 +1227,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Bitumen-Dichtungsbahnen mit kaltselbstklebender Unterseite (KSK) verarbeitet?",
     "optionen": [
-      "Lose verlegen ohne Verklebung",
-      "Blank nageln",
+      "Vollflächig verschweißen mit dem Brenner",
       "Teilflächig kleben — die Trennfolie wird abgezogen und die Bahn angedrückt",
-      "Vollflächig verschweißen mit dem Brenner"
+      "Blank nageln",
+      "Lose verlegen ohne Verklebung"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Nach der Auswahltabelle S. 525 (Abdichtungen gegen nichtdrückendes Niederschlagswasser): kaltselbstklebende Bitumen-Dichtungsbahnen (KSK) werden teilflächig geklebt, Elastomerbitumen-Schweißbahnen (z. B. PYE PV 200 S5) werden voll- oder teilflächig verschweißt, und über einer Trennlage können Bahnen lose verlegt und teilflächig genagelt werden. Die Verarbeitung hängt von Unterkonstruktion (Beton, Holz) und Beanspruchung ab.",
     "bildDatei": "/buch/lf14/abdichtungsarten-tabelle.webp",
@@ -1248,13 +1248,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2 (S. 532): Wie werden Außenwände gegen aufsteigendes Wasser (Kapillarwasser) geschützt?",
     "optionen": [
-      "Durch waagerechte Abdichtungen (Querschnittsabdichtungen) — die Bahnen werden aufgeklebt und überlappen an den Stoßstellen mindestens 20 cm",
-      "Gar nicht, aufsteigendes Wasser ist unschädlich",
       "Durch eine Dränage allein",
+      "Gar nicht, aufsteigendes Wasser ist unschädlich",
+      "Durch waagerechte Abdichtungen (Querschnittsabdichtungen) — die Bahnen werden aufgeklebt und überlappen an den Stoßstellen mindestens 20 cm",
       "Durch senkrechten Anstrich mit Kalkfarbe"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Durch Kapillarwirkung kann in Baustoffen Wasser aufsteigen. Bodenplatten und Wände müssen daher gegen aufsteigende Feuchte geschützt werden. Dies geschieht durch waagerechte Abdichtungen (Querschnittsabdichtungen). Die Abdichtung besteht in der Regel aus Bitumendachbahnen oder Kunststoffdichtungsbahnen. Die Bahnen werden aufgeklebt, an den Stoßstellen überlappen sie mindestens 20 cm. Eine waagerechte Abdichtung ist erforderlich, wenn die Wand auf einem Kapillarwasser leitenden Baustoff gegründet ist (z. B. Streifenfundament aus Normalbeton).",
     "bildDatei": "/buch/lf14/bodenfeuchte-w1e.webp",
@@ -1270,12 +1270,12 @@
     "frage": "Welche Wassereinwirkungsklasse gilt für den Sockelbereich der Außenwände (Spritzwasser)?",
     "optionen": [
       "W2-E nach DIN 18533",
-      "W4-E nach DIN 18533",
       "RN1-E",
+      "W4-E nach DIN 18533",
       "W1-E nach DIN 18533"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Der Sockelbereich der Außenwände ist Spritz- und Sickerwasser ausgesetzt. Es wird bis 30 cm über Geländeoberkante abgedichtet (Wassereinwirkungsklasse W4-E nach DIN 18533). Der obere Abschluss der Abdichtung muss hinterlaufsicher ausgeführt werden. Die Abdichtung gegen Bodenfeuchte und nichtdrückendes Wasser an erdberührten Bauteilen ist dagegen die Klasse W1-E.",
     "bildDatei": "/buch/lf14/sockel-w4e.webp",
@@ -1290,13 +1290,13 @@
     "konfidenz": "hoch",
     "frage": "Wie werden erdberührte Wandflächen senkrecht abgedichtet?",
     "optionen": [
-      "Nur mit Zementputz verputzt",
+      "Über die gesamte Länge an die waagerechte Abdichtung herangeführt — z. B. mit Bitumen-/Polymerbitumenbahnen, kaltselbstklebenden Bahnen oder kunststoffmodifizierter Bitumendickbeschichtung (PMBC)",
       "Nur im oberen Drittel abgedichtet",
-      "Gar nicht, senkrechte Flächen brauchen keine Abdichtung",
-      "Über die gesamte Länge an die waagerechte Abdichtung herangeführt — z. B. mit Bitumen-/Polymerbitumenbahnen, kaltselbstklebenden Bahnen oder kunststoffmodifizierter Bitumendickbeschichtung (PMBC)"
+      "Nur mit Zementputz verputzt",
+      "Gar nicht, senkrechte Flächen brauchen keine Abdichtung"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Wandflächen, die vom Boden berührt werden, müssen gegen seitliche Feuchtigkeit abgedichtet werden. Die Abdichtung muss über die gesamte Länge an die waagerechte Abdichtung herangeführt werden, dadurch werden Feuchtigkeitsbrücken verhindert. Verwendet werden Bitumen- oder Polymerbitumenbahnen (mindestens einlagig, Überdeckung an Nähten 8 cm, an Stößen 10 cm), kaltselbstklebende Bitumendichtungsbahnen (Breite 1,10 m) oder Kunststoff-/Elastomerbahnen (Überdeckung an Nähten 5 cm) sowie kunststoffmodifizierte Bitumendickbeschichtung (PMBC, mindestens 3 mm Trockendicke). Der Untergrund erhält einen kaltflüssigen Voranstrich.",
     "bildDatei": "/buch/lf14/unterkellertes-gebaeude.webp",
@@ -1339,8 +1339,8 @@
     "optionen": [
       "Die Abdichtung wird mit der waagerechten Wandabdichtung verklebt; sie kann aus Bitumenbahnen, Kunststoffbahnen, Bitumendickbeschichtung oder Asphaltmastix bestehen",
       "Gar nicht, Fußböden brauchen keine Abdichtung",
-      "Nur durch Anstrich der Oberseite",
-      "Nur mit einer Kiesschüttung"
+      "Nur mit einer Kiesschüttung",
+      "Nur durch Anstrich der Oberseite"
     ],
     "korrekt": [
       0
@@ -1359,12 +1359,12 @@
     "frage": "Wie kann bei geringer Anforderung an die Raumtrockenheit (Raumnutzungsklasse RN1-E) das Aufsteigen von Wasser unter der Bodenplatte verhindert werden?",
     "optionen": [
       "Durch einen Anstrich der Deckenunterseite",
-      "Durch eine 5 cm dicke Estrichschicht",
       "Durch eine kapillarbrechende Schüttung mit einer Mindestdicke von 15 cm unter der Bodenplatte",
+      "Durch eine 5 cm dicke Estrichschicht",
       "Gar nicht"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Bei geringer Anforderung an die Trockenheit der Raumluft (Raumnutzungsklasse RN1-E nach DIN 18533-1, z. B. in Tiefgaragen) kann durch eine kapillarbrechende Schüttung (Mindestdicke 15 cm) unter der Bodenplatte das Aufsteigen von Wasser verhindert werden. Bei höheren Anforderungen an die Kellernutzung ist eine flächige Abdichtung und zusätzlicher Wärmeschutz (z. B. Perimeterdämmung unter der Bodenplatte) zu erreichen. Die grobkörnige Schüttung unterbricht die Kapillaren, sodass Wasser nicht mehr aufsteigen kann.",
     "bildDatei": "/buch/lf14/kapillarbrechend-rn1e.webp",
@@ -1381,8 +1381,8 @@
     "optionen": [
       "Bei stark durchlässigem Boden mit Dränung",
       "Bei Kellern in wenig wasserdurchlässigem Boden ohne Dränung",
-      "Nur unterhalb des Grundwasserspiegels",
-      "Nur bei Schwimmbecken"
+      "Nur bei Schwimmbecken",
+      "Nur unterhalb des Grundwasserspiegels"
     ],
     "korrekt": [
       1
@@ -1448,13 +1448,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4 (S. 532): Wann ist eine wasserdruckhaltende Abdichtung (Grundwasserwanne) erforderlich?",
     "optionen": [
-      "Wenn das Untergeschoss unterhalb des Grundwasserspiegels liegt und die Abdichtung dem Druck des Grund- und Stauwassers standhalten muss",
       "Bei jedem Keller unabhängig vom Grundwasser",
       "Nur bei Schwimmbädern",
-      "Nur im Sockelbereich"
+      "Nur im Sockelbereich",
+      "Wenn das Untergeschoss unterhalb des Grundwasserspiegels liegt und die Abdichtung dem Druck des Grund- und Stauwassers standhalten muss"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Buchaufgabe 4 (S. 532): Eine wasserdruckhaltende Abdichtung wird erforderlich, wenn ein Untergeschoss unterhalb des Grundwasserspiegels liegt. Die Abdichtung muss dem Druck des Grund- und Stauwassers standhalten. Sie wird als geschlossene Wanne (schwarze Wanne) ausgebildet, die das Bauwerk allseitig umschließt. Sie wird mindestens 30 cm über den höchstmöglichen Wasserstand geführt und durch eine Schutzschicht (Beton, Mauerwerk) vor mechanischen und chemischen Einflüssen geschützt.",
     "bildDatei": "/buch/lf14/schwarze-wanne.webp",
@@ -1469,13 +1469,13 @@
     "konfidenz": "hoch",
     "frage": "Wie muss der Untergrund für eine wasserdruckhaltende Abdichtung beschaffen sein?",
     "optionen": [
+      "Rau und uneben für bessere Haftung",
       "Die Beschaffenheit spielt keine Rolle",
       "Eben, fest und frei von Kiesnestern, klaffenden Rissen und Graten; Kehlen und Kanten werden ausgerundet",
-      "Rau und uneben für bessere Haftung",
       "Feucht und weich"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Der Untergrund der Abdichtung muss eben, fest und frei von Kiesnestern, klaffenden Rissen und Graten sein. Kehlen und Kanten werden ausgerundet, damit die Bitumenbahnen nicht scharfkantig abknicken und reißen. Die Abdichtung kann aus Bitumenbahnen hergestellt werden, verklebt oder mit Bitumenklebemasse verbunden.",
     "bildDatei": "/buch/lf14/schwarze-wanne.webp",
@@ -1517,8 +1517,8 @@
     "konfidenz": "hoch",
     "frage": "Wie wird gegen drückendes Wasser von innen (Schwimmbäder, Wasserbehälter) abgedichtet?",
     "optionen": [
-      "Gar nicht, das Wasser bleibt im Becken",
       "Nur an der Außenseite",
+      "Gar nicht, das Wasser bleibt im Becken",
       "Als innere Abdichtung, als geschlossene Wanne, die an den Rändern 30 cm über den höchsten Wasserstand reicht",
       "Mit einer kapillarbrechenden Schüttung"
     ],
@@ -1665,13 +1665,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 7 (S. 532): Welchen Aufbau hat der Fußboden eines Aufenthaltsraums über einer Kellerwand (von unten nach oben)?",
     "optionen": [
+      "Nur Estrich auf der Bodenplatte",
       "Fliesen direkt auf Erdreich",
-      "Kapillarbrechende Schicht 15 cm, Bodenplatte 12 cm, Dichtungsbahn (geklebt), Wärmedämmung 4 cm, PE-Folie, Zementestrich 4 cm",
       "Nur Kies und Beton",
-      "Nur Estrich auf der Bodenplatte"
+      "Kapillarbrechende Schicht 15 cm, Bodenplatte 12 cm, Dichtungsbahn (geklebt), Wärmedämmung 4 cm, PE-Folie, Zementestrich 4 cm"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Buchaufgabe 7 (S. 532): Der Fußbodenaufbau von unten nach oben: kapillarbrechende Schicht 15 cm, Bodenplatte 12 cm, Abdichtung (bituminöse Dichtungsbahn, geklebt), Wärmedämmung 4 cm, Abdeckung PE-Folie, Zementestrich 4 cm. Die senkrechte Wandabdichtung (bituminöse Spachtelmasse) wird mit einer Dränplatte 6 cm und einer Dränage DN 100 ergänzt. Die Bodenabdichtung wird mit der Wandabdichtung verbunden, damit keine Feuchtebrücke entsteht.",
     "bildDatei": "/buch/lf14/aufg-kellerwand.webp",
@@ -1686,13 +1686,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 8 (S. 532): Welche Maßnahmen zum Feuchtigkeitsschutz zeigt der Schnitt durch den Gebäudesockel mit angrenzendem Gelände?",
     "optionen": [
-      "Keine besonderen Maßnahmen",
-      "Nur eine Dränage ohne Abdichtung",
       "Waagerechte Abdichtung, Sockelputz, Grobkiesschüttung (b = 50 cm) mit Einfassungsstein, bituminöse Abdichtung mit Spachtelmasse und Dränplatte 6 cm, Arbeitsraum mit nichtbindigem Material verfüllt",
-      "Nur Sockelputz"
+      "Nur Sockelputz",
+      "Keine besonderen Maßnahmen",
+      "Nur eine Dränage ohne Abdichtung"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Buchaufgabe 8 (S. 532): Der Gebäudesockel wird mit einer waagerechten Abdichtung, Sockelputz und einer Grobkiesschüttung (b = 50 cm) mit Einfassungsstein ausgeführt. Die senkrechte Abdichtung besteht aus bituminöser Spachtelmasse mit Dränplatte 6 cm. Der Arbeitsraum wird mit nichtbindigem Material verfüllt, damit das Wasser schnell zur Dränage abgeleitet wird und sich kein Stauwasser bildet. Der Sockelbereich wird bis 30 cm über Gelände (W4-E) abgedichtet.",
     "bildDatei": "/buch/lf14/aufg-sockel-gelaende.webp",
@@ -1708,9 +1708,9 @@
     "frage": "Projektaufgabe S. 511: Welche Aufgaben sind beim Flachdach des Verwaltungsgebäudes zu lösen?",
     "optionen": [
       "Für beide Bereiche (Extensivbegrünung und begehbarer Plattenbelag) einen Dachaufbau wählen, die Dämmdicke für U < 0,20 W/(m²·K) bestimmen und Detailzeichnungen für Attika, Wandanschluss und Dachabläufe anfertigen",
-      "Nur die Dachneigung festlegen",
       "Nur die Farbe der Fassade wählen",
-      "Nur die Fenster einbauen"
+      "Nur die Fenster einbauen",
+      "Nur die Dachneigung festlegen"
     ],
     "korrekt": [
       0
@@ -1728,13 +1728,13 @@
     "konfidenz": "hoch",
     "frage": "Wie wird bei einer bodentiefen Terrassentür entwässert, wenn die Anschlusshöhe knapp ist?",
     "optionen": [
-      "Das Wasser läuft unter der Tür ins Gebäude",
       "Die Tür wird zugemauert",
+      "Durch eine Rinne mit Gitterrost vor der Tür, die das Wasser aufnimmt und ableitet",
       "Es ist keine Entwässerung nötig",
-      "Durch eine Rinne mit Gitterrost vor der Tür, die das Wasser aufnimmt und ableitet"
+      "Das Wasser läuft unter der Tür ins Gebäude"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Bei einer Dachterrassentür kann eine Rinne mit Gitterrost vor der Tür angeordnet werden. Die Rinne (z. B. Kastenrinne) nimmt das anfallende Wasser auf und leitet es ab, sodass die Anschlusshöhe auf 5 cm reduziert werden kann. So ist auch bei barrierefreien, bodentiefen Übergängen ein sicherer Feuchteschutz möglich.",
     "bildDatei": "/buch/lf14/dachterrassentuer-rinne.webp",
@@ -1749,13 +1749,13 @@
     "konfidenz": "hoch",
     "frage": "Wie dick und in wie vielen Lagen wird Gussasphalt als Schutz- und Nutzschicht auf einem Parkdeck aufgebracht?",
     "optionen": [
-      "1 cm dick und einlagig",
-      "Beliebig, einlagig",
       "10 cm dick und dreilagig",
-      "Mindestens 5 cm dick und zweilagig"
+      "Mindestens 5 cm dick und zweilagig",
+      "Beliebig, einlagig",
+      "1 cm dick und einlagig"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Dient der Gussasphalt als Schutz- und Nutzschicht auf der Abdichtung, ist eine Dicke von mindestens 5 cm erforderlich. Die Herstellung erfolgt zweilagig. Über der Abdichtung wird zunächst eine Trennlage abgedeckt, darauf eine Lastverteilungsplatte (Beton) und die Gussasphaltverschleißschicht.",
     "bildDatei": "/buch/lf14/parkdachaufbau-gussasphalt.webp",
@@ -1771,12 +1771,12 @@
     "frage": "Buchaufgabe 4 (S. 527): Wie ermittelt man die zur Angebotserstellung notwendigen Größen für einen Ausschreibungstext?",
     "optionen": [
       "Man fragt nur den Hersteller",
-      "Man schätzt die Kosten grob",
       "Man ermittelt für jede Position (Schicht) die Menge in m², m oder Stück aus den Bauteilmaßen und ordnet sie dem Mustertext (z. B. S. 524) zu",
-      "Der Ausschreibungstext braucht keine Mengen"
+      "Der Ausschreibungstext braucht keine Mengen",
+      "Man schätzt die Kosten grob"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Buchaufgabe 4 (S. 527): Anhand des Ausschreibungstextes (Leistungsverzeichnis) werden die erforderlichen Arbeiten beschrieben. Für jede Teilleistung (Position) wird die Menge (m², m oder Stück) aus den Bauteilmaßen bestimmt. Für jede Position werden ein Einheitspreis (E.P.) und ein Gesamtpreis (G.P.) angegeben. Die Größen ergeben sich aus dem bemaßten Grundriss bzw. Schnitt — die trapezförmige Dachfläche (39,10 / 12,30 / 21,80 / 11,20 / 25,50) liefert die Flächen.",
     "bildDatei": "/buch/lf14/aufg-begruent-trapez.webp",

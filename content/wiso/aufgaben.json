@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lang darf die Probezeit im Berufsausbildungsverhältnis sein?",
     "optionen": [
+      "Immer genau sechs Monate",
       "Mindestens eine Woche, höchstens einen Monat",
-      "Mindestens einen Monat, höchstens vier Monate",
       "Sie ist frei vereinbar",
-      "Immer genau sechs Monate"
+      "Mindestens einen Monat, höchstens vier Monate"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Das BBiG gibt einen Rahmen vor: mindestens ein Monat, höchstens vier Monate. Innerhalb dieses Rahmens wird die Dauer im Vertrag festgelegt."
   },
@@ -27,13 +27,13 @@
     "konfidenz": "hoch",
     "frage": "Wie kann während der Probezeit gekündigt werden?",
     "optionen": [
+      "Von beiden Seiten jederzeit ohne Frist und ohne Angabe von Gründen",
       "Gar nicht",
       "Nur mit vier Wochen Frist",
-      "Von beiden Seiten jederzeit ohne Frist und ohne Angabe von Gründen",
       "Nur vom Ausbildungsbetrieb"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Genau dafür ist die Probezeit da: Beide Seiten prüfen, ob es passt. Nach der Probezeit kann der Betrieb nur noch aus wichtigem Grund fristlos kündigen."
   },
@@ -65,13 +65,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist der Ausbildungsnachweis (das Berichtsheft) wichtig?",
     "optionen": [
-      "Er ersetzt die Berufsschulnoten",
       "Er ersetzt den Ausbildungsvertrag",
       "Er ist Zulassungsvoraussetzung zur Gesellenprüfung",
+      "Er ersetzt die Berufsschulnoten",
       "Er ist freiwillig"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Das Führen des Ausbildungsnachweises ist eine Pflicht nach BBiG — und ohne ordnungsgemäß geführten Nachweis wirst du nicht zur Gesellenprüfung zugelassen."
   },
@@ -84,13 +84,13 @@
     "konfidenz": "hoch",
     "frage": "Wie viele Stunden darf ein Auszubildender unter 18 Jahren höchstens täglich beschäftigt werden?",
     "optionen": [
-      "12 Stunden",
       "8 Stunden",
-      "10 Stunden",
-      "6 Stunden"
+      "12 Stunden",
+      "6 Stunden",
+      "10 Stunden"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Das Jugendarbeitsschutzgesetz erlaubt höchstens acht Stunden täglich und 40 Stunden wöchentlich. Dazu kommen feste Ruhepausen, ein nach Alter gestaffelter Mindesturlaub und die ärztliche Erstuntersuchung vor Beschäftigungsbeginn."
   },
@@ -122,13 +122,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Zweig gehört NICHT zur gesetzlichen Sozialversicherung?",
     "optionen": [
-      "Arbeitslosenversicherung",
       "Hausratversicherung",
+      "Pflegeversicherung",
       "Rentenversicherung",
-      "Pflegeversicherung"
+      "Arbeitslosenversicherung"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Die fünf Zweige sind Kranken-, Pflege-, Renten-, Arbeitslosen- und Unfallversicherung. Die Hausratversicherung ist eine private Sachversicherung."
   },
@@ -141,13 +141,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lange verjähren Mängelansprüche bei Bauwerken nach BGB und nach VOB/B?",
     "optionen": [
+      "BGB 5 Jahre, VOB/B 4 Jahre",
       "Beide 3 Jahre",
       "BGB 2 Jahre, VOB/B 1 Jahr",
-      "BGB 5 Jahre, VOB/B 4 Jahre",
       "BGB 4 Jahre, VOB/B 5 Jahre"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Nach BGB fünf Jahre ab Abnahme, nach der VOB/B bei Bauwerken vier Jahre. Welche Regelung gilt, hängt davon ab, was im Vertrag vereinbart wurde — der Unterschied ist ein ganzes Jahr Haftung."
   },
@@ -160,13 +160,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Vertragsart liegt vor, wenn ein Betrieb ein Dach eindeckt?",
     "optionen": [
+      "Kaufvertrag",
       "Werkvertrag",
       "Dienstvertrag",
-      "Kaufvertrag",
       "Mietvertrag"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Beim Werkvertrag wird ein Erfolg geschuldet — das mangelfreie Werk. Beim Kaufvertrag wird nur eine Sache geliefert, beim Dienstvertrag nur die Tätigkeit, nicht das Ergebnis."
   },
@@ -180,12 +180,12 @@
     "frage": "Was besagt das Günstigkeitsprinzip?",
     "optionen": [
       "Der Arbeitgeber darf immer die für ihn günstigere Regelung wählen",
-      "Der Tarifvertrag gilt immer, egal was im Arbeitsvertrag steht",
+      "Eine einzelvertragliche Regelung gilt, wenn sie für den Arbeitnehmer günstiger ist als der Tarifvertrag",
       "Es gilt immer die ältere Regelung",
-      "Eine einzelvertragliche Regelung gilt, wenn sie für den Arbeitnehmer günstiger ist als der Tarifvertrag"
+      "Der Tarifvertrag gilt immer, egal was im Arbeitsvertrag steht"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Der Tarifvertrag ist die Untergrenze. Besser darf der Arbeitsvertrag sein, schlechter nicht."
   },
@@ -198,13 +198,13 @@
     "konfidenz": "hoch",
     "frage": "Wozu dient das Urlaubskassenverfahren der SOKA-DACH?",
     "optionen": [
-      "Erworbene Urlaubsansprüche bleiben beim Wechsel des Betriebs erhalten",
       "Es ersetzt die Rentenversicherung",
-      "Es zahlt das Arbeitslosengeld",
-      "Es finanziert die Berufsschule"
+      "Es finanziert die Berufsschule",
+      "Erworbene Urlaubsansprüche bleiben beim Wechsel des Betriebs erhalten",
+      "Es zahlt das Arbeitslosengeld"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Das Dachdeckerhandwerk ist stark saisonabhängig, Beschäftigte wechseln häufiger den Betrieb. Über die Sozialkasse gehen die Urlaubsansprüche dabei nicht verloren. Dazu kommen Ausbildungsförderung und zusätzliche Altersversorgung."
   },
@@ -505,8 +505,8 @@
     "optionen": [
       "Sechs Monate",
       "Einen bis vier Monate",
-      "Zwei Wochen",
-      "Ein Jahr"
+      "Ein Jahr",
+      "Zwei Wochen"
     ],
     "korrekt": [
       1
@@ -558,13 +558,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lange gilt bei Bauwerken in der Regel die Gewährleistung nach BGB?",
     "optionen": [
-      "Fünf Jahre",
-      "Sechs Monate",
       "Zehn Jahre",
-      "Zwei Jahre"
+      "Fünf Jahre",
+      "Zwei Jahre",
+      "Sechs Monate"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Für Arbeiten an einem Bauwerk beträgt die Verjährungsfrist für Mängelansprüche nach BGB fünf Jahre. Nach VOB/B sind es vier Jahre - was gilt, hängt davon ab, was vereinbart wurde."
   },
@@ -577,8 +577,8 @@
     "konfidenz": "hoch",
     "frage": "Wer trägt die Beiträge zur gesetzlichen Unfallversicherung (Berufsgenossenschaft)?",
     "optionen": [
-      "Arbeitgeber und Arbeitnehmer je zur Hälfte",
       "Der Arbeitnehmer allein",
+      "Arbeitgeber und Arbeitnehmer je zur Hälfte",
       "Der Staat",
       "Der Arbeitgeber allein"
     ],
@@ -617,13 +617,13 @@
     "konfidenz": "hoch",
     "frage": "Wann muss der Inhalt des Ausbildungsvertrags schriftlich niedergelegt werden?",
     "optionen": [
-      "Innerhalb des ersten Ausbildungsjahres",
-      "Erst wenn die Handwerkskammer es anfordert",
       "Unverzüglich nach Vertragsabschluss, spätestens vor Beginn der Ausbildung",
-      "Spätestens am Ende der Probezeit"
+      "Spätestens am Ende der Probezeit",
+      "Innerhalb des ersten Ausbildungsjahres",
+      "Erst wenn die Handwerkskammer es anfordert"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Der Vertrag selbst kann mündlich zustande kommen, die Niederschrift muss aber unverzüglich danach und in jedem Fall vor Ausbildungsbeginn vorliegen. Sie wird von der Handwerkskammer in das Verzeichnis der Berufsausbildungsverhältnisse eingetragen."
   },
@@ -637,14 +637,14 @@
     "frage": "Welche Pflichten treffen den Ausbildungsbetrieb? (Mehrfachauswahl)",
     "optionen": [
       "Ausbildungsmittel wie Werkzeug und Material kostenlos zur Verfügung stellen",
-      "Für den Berufsschulunterricht freistellen",
       "Das Berichtsheft regelmäßig durchsehen",
-      "Die Fahrtkosten zur Berufsschule in voller Höhe erstatten"
+      "Die Fahrtkosten zur Berufsschule in voller Höhe erstatten",
+      "Für den Berufsschulunterricht freistellen"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Werkzeug, Material und Fachliteratur, die zur Ausbildung und zum Ablegen der Prüfung nötig sind, gehen zulasten des Betriebs. Eine gesetzliche Pflicht zur vollen Fahrtkostenerstattung besteht dagegen nicht — hier entscheidet der Tarif- oder Einzelvertrag."
   },
@@ -657,13 +657,13 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für die Ausbildungsvergütung?",
     "optionen": [
-      "Sie ist frei vereinbar und kann auch entfallen",
       "Sie wird erst ab dem zweiten Ausbildungsjahr gezahlt",
       "Sie muss angemessen sein und mit fortschreitender Ausbildung jährlich ansteigen",
-      "Sie ist über die gesamte Ausbildung hinweg gleich hoch"
+      "Sie ist über die gesamte Ausbildung hinweg gleich hoch",
+      "Sie ist frei vereinbar und kann auch entfallen"
     ],
     "korrekt": [
-      2
+      1
     ],
     "erklaerung": "Das BBiG verlangt eine angemessene Vergütung, die mindestens jährlich steigt. Im Dachdeckerhandwerk legt der Tarifvertrag die konkreten Beträge je Ausbildungsjahr fest."
   },
@@ -676,13 +676,13 @@
     "konfidenz": "hoch",
     "frage": "Du bestehst die Gesellenprüfung vor dem im Vertrag genannten Enddatum. Wann endet das Ausbildungsverhältnis?",
     "optionen": [
-      "Erst zum vereinbarten Enddatum",
       "Am Ende des laufenden Kalendermonats",
+      "Mit Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss",
       "Nach einer zusätzlichen Kündigungsfrist von vier Wochen",
-      "Mit Bekanntgabe des Prüfungsergebnisses durch den Prüfungsausschuss"
+      "Erst zum vereinbarten Enddatum"
     ],
     "korrekt": [
-      3
+      1
     ],
     "erklaerung": "Bestehst du vorzeitig, endet die Ausbildung genau mit der Bekanntgabe des Ergebnisses — nicht erst zum Vertragsende. Fällst du durch, verlängert sich das Verhältnis auf deinen Wunsch bis zur nächsten Wiederholungsprüfung, höchstens um ein Jahr."
   },
@@ -695,13 +695,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Form muss die Kündigung eines Ausbildungsverhältnisses nach der Probezeit haben?",
     "optionen": [
-      "Schriftlich, bei Kündigung durch den Betrieb zusätzlich mit Angabe der Kündigungsgründe",
+      "Mündlich genügt, wenn ein Zeuge dabei ist",
       "Nur per Einschreiben mit Rückschein",
-      "Formfrei, solange die Kammer informiert wird",
-      "Mündlich genügt, wenn ein Zeuge dabei ist"
+      "Schriftlich, bei Kündigung durch den Betrieb zusätzlich mit Angabe der Kündigungsgründe",
+      "Formfrei, solange die Kammer informiert wird"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Nach der Probezeit gilt Schriftform. Kündigt der Betrieb, müssen die Gründe im Kündigungsschreiben stehen — fehlen sie, ist die Kündigung unwirksam."
   },
@@ -735,13 +735,13 @@
     "konfidenz": "hoch",
     "frage": "Ein 16-Jähriger will einen Ausbildungsvertrag unterschreiben. Was ist nötig?",
     "optionen": [
-      "Eine Genehmigung des Familiengerichts",
       "Er darf erst mit 18 einen Vertrag schließen",
-      "Die Zustimmung der gesetzlichen Vertreter, also in der Regel der Eltern",
-      "Nichts, ab 16 ist man voll geschäftsfähig"
+      "Nichts, ab 16 ist man voll geschäftsfähig",
+      "Eine Genehmigung des Familiengerichts",
+      "Die Zustimmung der gesetzlichen Vertreter, also in der Regel der Eltern"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Zwischen 7 und 17 Jahren ist man beschränkt geschäftsfähig. Der Ausbildungsvertrag ist für den Minderjährigen nicht lediglich rechtlich vorteilhaft, deshalb müssen die gesetzlichen Vertreter zustimmen und mit unterschreiben."
   },
@@ -754,13 +754,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lang darf ein Jugendlicher unter 18 Jahren regulär arbeiten?",
     "optionen": [
+      "So lange wie die erwachsenen Kollegen",
       "Höchstens 6 Stunden täglich und 30 Stunden wöchentlich",
       "Höchstens 10 Stunden täglich und 50 Stunden wöchentlich",
-      "Höchstens 8 Stunden täglich und 40 Stunden wöchentlich",
-      "So lange wie die erwachsenen Kollegen"
+      "Höchstens 8 Stunden täglich und 40 Stunden wöchentlich"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Acht Stunden am Tag, vierzig in der Woche. Wird an einzelnen Tagen kürzer gearbeitet, darf an anderen Werktagen derselben Woche auf bis zu achteinhalb Stunden verlängert werden."
   },
@@ -793,8 +793,8 @@
     "frage": "Welche Aussagen zum Jugendarbeitsschutz sind richtig? (Mehrfachauswahl)",
     "optionen": [
       "Jugendliche dürfen grundsätzlich nur zwischen 6 und 20 Uhr beschäftigt werden",
-      "Nach Arbeitsende müssen mindestens 12 Stunden ununterbrochene Freizeit folgen",
       "Es gilt grundsätzlich die Fünf-Tage-Woche",
+      "Nach Arbeitsende müssen mindestens 12 Stunden ununterbrochene Freizeit folgen",
       "Jugendliche dürfen in Akkordarbeit eingesetzt werden, wenn sie zustimmen"
     ],
     "korrekt": [
@@ -833,13 +833,13 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für die ärztliche Untersuchung Jugendlicher vor Ausbildungsbeginn?",
     "optionen": [
-      "Eine Erstuntersuchung ist Voraussetzung für die Beschäftigung, eine Nachuntersuchung folgt nach einem Jahr",
-      "Sie ist nur bei Arbeiten in großer Höhe nötig",
       "Sie ist freiwillig",
-      "Sie wird erst nach der Probezeit fällig"
+      "Sie wird erst nach der Probezeit fällig",
+      "Eine Erstuntersuchung ist Voraussetzung für die Beschäftigung, eine Nachuntersuchung folgt nach einem Jahr",
+      "Sie ist nur bei Arbeiten in großer Höhe nötig"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Ohne Bescheinigung der Erstuntersuchung darf ein Jugendlicher nicht beschäftigt werden. Die erste Nachuntersuchung steht nach einem Jahr an — sie zeigt, ob die Arbeit der Entwicklung geschadet hat."
   },
@@ -852,13 +852,13 @@
     "konfidenz": "hoch",
     "frage": "Ein Jugendlicher hat einen Berufsschultag mit mehr als fünf Unterrichtsstunden. Was folgt daraus?",
     "optionen": [
-      "Er darf an diesem Tag einmal in der Woche nicht im Betrieb beschäftigt werden",
-      "Er muss die Fehlstunden am Samstag nacharbeiten",
       "Er arbeitet danach im Betrieb weiter, bis die Tagesarbeitszeit voll ist",
-      "Der Schultag wird nicht auf die Arbeitszeit angerechnet"
+      "Er muss die Fehlstunden am Samstag nacharbeiten",
+      "Der Schultag wird nicht auf die Arbeitszeit angerechnet",
+      "Er darf an diesem Tag einmal in der Woche nicht im Betrieb beschäftigt werden"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Ein solcher Berufsschultag zählt als voller Arbeitstag und wird mit acht Stunden auf die Wochenarbeitszeit angerechnet. Ein Einsatz im Betrieb davor oder danach ist an diesem Tag nicht zulässig."
   },
@@ -871,13 +871,13 @@
     "konfidenz": "hoch",
     "frage": "Welcher Zweig der Sozialversicherung wird allein vom Arbeitgeber bezahlt?",
     "optionen": [
-      "Die Rentenversicherung",
-      "Die Arbeitslosenversicherung",
       "Die gesetzliche Unfallversicherung",
-      "Die Krankenversicherung"
+      "Die Rentenversicherung",
+      "Die Krankenversicherung",
+      "Die Arbeitslosenversicherung"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Die Unfallversicherung trägt der Arbeitgeber allein — im Bau über die BG BAU. Die anderen vier Zweige teilen sich Arbeitgeber und Arbeitnehmer grundsätzlich je zur Hälfte."
   },
@@ -890,13 +890,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Ereignisse sind über die gesetzliche Unfallversicherung abgedeckt? (Mehrfachauswahl)",
     "optionen": [
-      "Ein Sturz vom Gerüst während der Arbeit",
       "Ein Skiunfall im Jahresurlaub",
       "Eine anerkannte Berufskrankheit",
-      "Ein Verkehrsunfall auf dem direkten Weg zur Baustelle"
+      "Ein Verkehrsunfall auf dem direkten Weg zur Baustelle",
+      "Ein Sturz vom Gerüst während der Arbeit"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -934,13 +934,13 @@
     "konfidenz": "hoch",
     "frage": "Wie lange zahlt der Arbeitgeber bei unverschuldeter Arbeitsunfähigkeit das Entgelt weiter?",
     "optionen": [
-      "Sechs Wochen",
-      "Zwei Wochen",
       "Drei Monate",
-      "Bis zur Genesung, ohne zeitliche Grenze"
+      "Bis zur Genesung, ohne zeitliche Grenze",
+      "Sechs Wochen",
+      "Zwei Wochen"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Sechs Wochen Entgeltfortzahlung durch den Betrieb, danach übernimmt die Krankenkasse mit dem Krankengeld. Voraussetzung ist ein Arbeitsverhältnis, das seit mindestens vier Wochen besteht."
   },
@@ -954,14 +954,14 @@
     "frage": "Welche Leistungen erbringt die gesetzliche Rentenversicherung? (Mehrfachauswahl)",
     "optionen": [
       "Altersrente",
+      "Erwerbsminderungsrente",
       "Leistungen zur medizinischen und beruflichen Rehabilitation",
-      "Arbeitslosengeld",
-      "Erwerbsminderungsrente"
+      "Arbeitslosengeld"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Arbeitslosengeld kommt aus der Arbeitslosenversicherung über die Bundesagentur für Arbeit. Bemerkenswert an der Rentenversicherung ist die Reha: Rehabilitation vor Rente — wer wieder arbeiten kann, braucht keine Erwerbsminderungsrente."
   },
@@ -974,13 +974,13 @@
     "konfidenz": "hoch",
     "frage": "Der Betrieb hat wetterbedingt keine Aufträge und meldet Kurzarbeit an. Aus welchem Zweig kommt das Kurzarbeitergeld?",
     "optionen": [
-      "Aus der Rentenversicherung",
       "Aus der Unfallversicherung",
-      "Aus der Krankenversicherung",
-      "Aus der Arbeitslosenversicherung"
+      "Aus der Rentenversicherung",
+      "Aus der Arbeitslosenversicherung",
+      "Aus der Krankenversicherung"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Kurzarbeitergeld zahlt die Bundesagentur für Arbeit aus der Arbeitslosenversicherung. Im Dachdeckerhandwerk kommt in der Winterperiode zusätzlich das Saison-Kurzarbeitergeld in Betracht — es hält eingearbeitete Leute im Betrieb, statt sie zu entlassen."
   },
@@ -1015,13 +1015,13 @@
     "konfidenz": "hoch",
     "frage": "Ab wann muss der Betrieb einen Arbeitsunfall der Berufsgenossenschaft melden?",
     "optionen": [
-      "Nur wenn ein Krankenhausaufenthalt nötig war",
+      "Wenn der Verletzte mehr als drei Tage arbeitsunfähig ist",
       "Bei jedem Unfall, auch ohne Ausfallzeit",
-      "Erst nach zwei Wochen Arbeitsunfähigkeit",
-      "Wenn der Verletzte mehr als drei Tage arbeitsunfähig ist"
+      "Nur wenn ein Krankenhausaufenthalt nötig war",
+      "Erst nach zwei Wochen Arbeitsunfähigkeit"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Bei mehr als drei Tagen Arbeitsunfähigkeit ist die Unfallanzeige fällig. Unabhängig davon gehört jeder Unfall ins Verbandbuch — auch der kleine, denn erst die Dokumentation sichert später den Versicherungsschutz."
   },
@@ -1091,13 +1091,13 @@
     "konfidenz": "hoch",
     "frage": "Wer schließt einen Tarifvertrag ab?",
     "optionen": [
-      "Handwerkskammer und Innung",
       "Gewerkschaft und Arbeitgeberverband oder einzelner Arbeitgeber",
+      "Das Bundesarbeitsministerium",
       "Betriebsrat und Geschäftsführung",
-      "Das Bundesarbeitsministerium"
+      "Handwerkskammer und Innung"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Das nennt man Tarifautonomie: Der Staat hält sich heraus, die Tarifparteien handeln Löhne und Arbeitsbedingungen selbst aus. Der Betriebsrat schließt keine Tarifverträge, sondern Betriebsvereinbarungen."
   },
@@ -1132,13 +1132,13 @@
     "konfidenz": "hoch",
     "frage": "Was bedeutet die Friedenspflicht während der Laufzeit eines Tarifvertrags?",
     "optionen": [
+      "Der Betriebsrat darf nicht widersprechen",
       "Über die geregelten Gegenstände darf nicht gestreikt werden",
       "Löhne dürfen nicht erhöht werden",
-      "Der Betriebsrat darf nicht widersprechen",
       "Es darf gar nicht gekündigt werden"
     ],
     "korrekt": [
-      0
+      1
     ],
     "erklaerung": "Solange der Tarifvertrag läuft, sind Arbeitskämpfe über seine Inhalte unzulässig. Erst nach Ablauf und gescheiterten Verhandlungen darf die Gewerkschaft zum Streik aufrufen — das gibt beiden Seiten Planungssicherheit."
   },
@@ -1151,13 +1151,13 @@
     "konfidenz": "hoch",
     "frage": "Ab welcher Betriebsgröße kann ein Betriebsrat gewählt werden?",
     "optionen": [
-      "Ab 3 ständigen wahlberechtigten Arbeitnehmern",
       "Ab 10 Arbeitnehmern",
-      "Ab 20 Arbeitnehmern",
-      "Ab 5 ständigen wahlberechtigten Arbeitnehmern, von denen 3 wählbar sind"
+      "Ab 3 ständigen wahlberechtigten Arbeitnehmern",
+      "Ab 5 ständigen wahlberechtigten Arbeitnehmern, von denen 3 wählbar sind",
+      "Ab 20 Arbeitnehmern"
     ],
     "korrekt": [
-      3
+      2
     ],
     "erklaerung": "Fünf wahlberechtigte Arbeitnehmer, davon drei wählbar — wählbar ist, wer volljährig ist und dem Betrieb mindestens sechs Monate angehört. Die Amtszeit beträgt vier Jahre."
   },
@@ -1170,13 +1170,13 @@
     "konfidenz": "hoch",
     "frage": "Wofür ist die Jugend- und Auszubildendenvertretung (JAV) zuständig?",
     "optionen": [
+      "Sie schließt eigene Tarifverträge für Auszubildende ab",
       "Sie führt die Gesellenprüfung durch",
       "Sie vertritt die Interessen der Jugendlichen und Auszubildenden gegenüber dem Betriebsrat und der Betriebsleitung",
-      "Sie ersetzt den Betriebsrat in Betrieben ohne Betriebsrat",
-      "Sie schließt eigene Tarifverträge für Auszubildende ab"
+      "Sie ersetzt den Betriebsrat in Betrieben ohne Betriebsrat"
     ],
     "korrekt": [
-      1
+      2
     ],
     "erklaerung": "Die JAV kann ohne Betriebsrat nicht bestehen — sie arbeitet ihm zu und bringt Anträge über ihn ein. Gewählt wird sie in Betrieben mit mindestens fünf Beschäftigten unter 18 oder Auszubildenden unter 25, ihre Amtszeit beträgt zwei Jahre."
   },
@@ -1189,14 +1189,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Regeln gelten nach dem Arbeitszeitgesetz für volljährige Arbeitnehmer? (Mehrfachauswahl)",
     "optionen": [
-      "Höchstens 4 Arbeitstage pro Woche",
       "Werktäglich höchstens 8 Stunden, Verlängerung auf 10 Stunden nur mit Ausgleich",
-      "Mindestens 11 Stunden ununterbrochene Ruhezeit nach Arbeitsende",
-      "Bei mehr als 6 Stunden Arbeitszeit mindestens 30 Minuten Pause"
+      "Bei mehr als 6 Stunden Arbeitszeit mindestens 30 Minuten Pause",
+      "Höchstens 4 Arbeitstage pro Woche",
+      "Mindestens 11 Stunden ununterbrochene Ruhezeit nach Arbeitsende"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Die 10 Stunden sind zulässig, wenn im Schnitt von sechs Monaten oder 24 Wochen die 8 Stunden eingehalten werden. Bei mehr als 9 Stunden Arbeit steigt die Pause auf 45 Minuten."
@@ -1210,13 +1210,13 @@
     "konfidenz": "hoch",
     "frage": "Wann greift der allgemeine Kündigungsschutz nach dem Kündigungsschutzgesetz?",
     "optionen": [
-      "Nach mehr als sechs Monaten Betriebszugehörigkeit und in Betrieben mit in der Regel mehr als zehn Arbeitnehmern",
+      "Erst nach fünf Jahren im Betrieb",
       "Ab dem ersten Arbeitstag in jedem Betrieb",
-      "Nur für Arbeitnehmer über 50 Jahre",
-      "Erst nach fünf Jahren im Betrieb"
+      "Nach mehr als sechs Monaten Betriebszugehörigkeit und in Betrieben mit in der Regel mehr als zehn Arbeitnehmern",
+      "Nur für Arbeitnehmer über 50 Jahre"
     ],
     "korrekt": [
-      0
+      2
     ],
     "erklaerung": "Beide Bedingungen müssen zusammenkommen: Wartezeit erfüllt und kein Kleinbetrieb. Greift das Gesetz, braucht die Kündigung einen Grund — personen-, verhaltens- oder betriebsbedingt."
   },
@@ -1231,11 +1231,11 @@
     "optionen": [
       "Nichts, es kann sofort gekündigt werden",
       "Eine Versetzung",
-      "Eine Abmahnung, die das Fehlverhalten benennt und Konsequenzen androht",
-      "Eine Gehaltskürzung"
+      "Eine Gehaltskürzung",
+      "Eine Abmahnung, die das Fehlverhalten benennt und Konsequenzen androht"
     ],
     "korrekt": [
-      2
+      3
     ],
     "erklaerung": "Die Abmahnung gibt die Chance zur Änderung und ist Voraussetzung dafür, dass eine spätere Kündigung vor Gericht hält. Sie muss das Fehlverhalten konkret beschreiben — pauschale Vorwürfe genügen nicht."
   },
@@ -1248,13 +1248,13 @@
     "konfidenz": "hoch",
     "frage": "Ein Dachdeckerbetrieb verpflichtet sich, ein Dach fertig einzudecken. Um welchen Vertragstyp handelt es sich?",
     "optionen": [
-      "Mietvertrag",
-      "Kaufvertrag, weil Material geliefert wird",
+      "Werkvertrag, weil ein bestimmter Erfolg geschuldet wird",
       "Dienstvertrag, weil Arbeitsleistung erbracht wird",
-      "Werkvertrag, weil ein bestimmter Erfolg geschuldet wird"
+      "Kaufvertrag, weil Material geliefert wird",
+      "Mietvertrag"
     ],
     "korrekt": [
-      3
+      0
     ],
     "erklaerung": "Der entscheidende Unterschied: Beim Werkvertrag schuldest du das fertige, mangelfreie Ergebnis. Beim Dienstvertrag schuldest du nur die Tätigkeit — ein Lehrer schuldet Unterricht, nicht den Lernerfolg."
   },
@@ -1267,14 +1267,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Rechtsfolgen löst die Abnahme des Werks aus? (Mehrfachauswahl)",
     "optionen": [
+      "Die Vergütung wird fällig",
       "Die Verjährungsfrist für Mängelansprüche beginnt zu laufen",
       "Der Unternehmer haftet ab jetzt für gar nichts mehr",
-      "Die Vergütung wird fällig",
       "Die Gefahr geht auf den Besteller über"
     ],
     "korrekt": [
       0,
-      2,
+      1,
       3
     ],
     "erklaerung": "Die Abnahme ist der Dreh- und Angelpunkt des Werkvertrags. Für Mängel haftet der Betrieb weiter — nur kehrt sich die Beweislast um: Nach der Abnahme muss der Kunde beweisen, dass der Mangel schon vorher da war."
@@ -1307,13 +1307,13 @@
     "konfidenz": "hoch",
     "frage": "Der Kunde rügt einen Mangel am neuen Dach. Welches Recht steht ihm zuerst zu?",
     "optionen": [
-      "Sofortiger Rücktritt vom Vertrag",
-      "Sofortige Minderung des Preises um 50 Prozent",
       "Nacherfüllung, also Beseitigung des Mangels durch den Betrieb",
-      "Schadensersatz ohne vorherige Aufforderung"
+      "Sofortige Minderung des Preises um 50 Prozent",
+      "Schadensersatz ohne vorherige Aufforderung",
+      "Sofortiger Rücktritt vom Vertrag"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Die Nacherfüllung hat Vorrang — der Betrieb bekommt die Chance, selbst nachzubessern. Erst wenn sie fehlschlägt, verweigert wird oder die gesetzte Frist verstreicht, kommen Minderung, Rücktritt oder Schadensersatz in Betracht."
   },
@@ -1328,8 +1328,8 @@
     "optionen": [
       "Der Kostenvoranschlag ist immer teurer",
       "Der Kostenvoranschlag ist eine unverbindliche Schätzung, das Festpreisangebot bindet den Betrieb an den Preis",
-      "Es gibt keinen Unterschied",
-      "Das Festpreisangebot darf nur mündlich abgegeben werden"
+      "Das Festpreisangebot darf nur mündlich abgegeben werden",
+      "Es gibt keinen Unterschied"
     ],
     "korrekt": [
       1
@@ -1345,15 +1345,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Aufgaben nimmt die Handwerkskammer wahr? (Mehrfachauswahl)",
     "optionen": [
-      "Führung des Verzeichnisses der Berufsausbildungsverhältnisse",
-      "Führung der Handwerksrolle",
+      "Abschluss von Lohntarifverträgen",
       "Abnahme der Gesellen- und Meisterprüfungen",
-      "Abschluss von Lohntarifverträgen"
+      "Führung der Handwerksrolle",
+      "Führung des Verzeichnisses der Berufsausbildungsverhältnisse"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Kammer ist die zuständige Stelle für die Berufsbildung im Handwerk. Tarifverträge schließt sie nicht — das ist Sache der Innungsverbände als Arbeitgeberseite und der Gewerkschaft."
   },
@@ -1366,13 +1366,13 @@
     "konfidenz": "hoch",
     "frage": "Wie haftet der Inhaber eines Einzelunternehmens für Schulden des Betriebs?",
     "optionen": [
-      "Unbeschränkt, auch mit seinem Privatvermögen",
-      "Nur mit dem Betriebsvermögen",
+      "Nur bis zur Höhe von 25.000 Euro",
       "Gar nicht, dafür gibt es die Versicherung",
-      "Nur bis zur Höhe von 25.000 Euro"
+      "Nur mit dem Betriebsvermögen",
+      "Unbeschränkt, auch mit seinem Privatvermögen"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Das ist der große Nachteil gegenüber der GmbH, bei der die Haftung grundsätzlich auf das Gesellschaftsvermögen begrenzt ist. Dafür braucht die GmbH ein Stammkapital von 25.000 Euro und mehr Formalitäten."
   },
@@ -1406,13 +1406,13 @@
     "konfidenz": "hoch",
     "frage": "Wann gerät ein Kunde spätestens in Zahlungsverzug, ohne dass gemahnt werden muss?",
     "optionen": [
-      "Sofort mit Rechnungsstellung",
       "30 Tage nach Fälligkeit und Zugang der Rechnung",
       "Erst nach drei Mahnungen",
-      "Nach einem Jahr"
+      "Nach einem Jahr",
+      "Sofort mit Rechnungsstellung"
     ],
     "korrekt": [
-      1
+      0
     ],
     "erklaerung": "Bei Verbrauchern muss auf diese Folge in der Rechnung hingewiesen werden. Ab Verzug darf der Betrieb Verzugszinsen verlangen — vorher nicht."
   },
@@ -1425,9 +1425,9 @@
     "konfidenz": "hoch",
     "frage": "Aus wie vielen Teilen besteht die Meisterprüfung im Handwerk und welche sind das?",
     "optionen": [
-      "Drei Teile: Praxis, Theorie, Recht",
       "Fünf Teile",
       "Zwei Teile: Praxis und Theorie",
+      "Drei Teile: Praxis, Theorie, Recht",
       "Vier Teile: Praxis, Fachtheorie, Wirtschaft und Recht, Berufs- und Arbeitspädagogik"
     ],
     "korrekt": [
@@ -1445,12 +1445,12 @@
     "frage": "Was unterscheidet Anpassungsfortbildung von Aufstiegsfortbildung?",
     "optionen": [
       "Die Anpassungsfortbildung ist immer länger",
-      "Die Anpassungsfortbildung hält im erlernten Beruf auf dem aktuellen Stand, die Aufstiegsfortbildung führt zu einer höheren Qualifikation",
+      "Beide sind dasselbe",
       "Die Aufstiegsfortbildung ist nur für Meister zugänglich",
-      "Beide sind dasselbe"
+      "Die Anpassungsfortbildung hält im erlernten Beruf auf dem aktuellen Stand, die Aufstiegsfortbildung führt zu einer höheren Qualifikation"
     ],
     "korrekt": [
-      1
+      3
     ],
     "erklaerung": "Ein Lehrgang zu neuen Abdichtungsbahnen ist Anpassung, der Meister ist Aufstieg. Die Umschulung ist noch einmal etwas anderes — sie führt in einen ganz neuen Beruf."
   },
@@ -1485,9 +1485,9 @@
     "frage": "Was bedeutet die gestreckte Gesellenprüfung?",
     "optionen": [
       "Sie besteht aus zwei zeitlich getrennten Teilen, deren Ergebnisse beide in die Endnote eingehen",
-      "Sie kann beliebig oft wiederholt werden",
+      "Teil 1 ist nur eine Übung ohne Wertung",
       "Die Prüfung dauert länger als üblich",
-      "Teil 1 ist nur eine Übung ohne Wertung"
+      "Sie kann beliebig oft wiederholt werden"
     ],
     "korrekt": [
       0
@@ -1503,13 +1503,13 @@
     "konfidenz": "hoch",
     "frage": "Welche Verfahren führt die SOKA-DACH durch? (Mehrfachauswahl)",
     "optionen": [
+      "Zusätzliche Altersversorgung",
       "Auszahlung der gesetzlichen Rente",
       "Urlaubskassenverfahren",
-      "Zusätzliche Altersversorgung",
       "Berufsbildungsverfahren mit Erstattungen an ausbildende Betriebe"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -1661,13 +1661,13 @@
     "konfidenz": "hoch",
     "frage": "Was gilt für das Zeugnis am Ende der Ausbildung?",
     "optionen": [
-      "Der Ausbildende muss ein Zeugnis ausstellen; auf Verlangen wird es um Verhalten und Leistung erweitert",
       "Es ersetzt den Gesellenbrief",
       "Es wird von der Berufsschule ausgestellt",
-      "Es ist freiwillig und muss ausdrücklich verlangt werden"
+      "Es ist freiwillig und muss ausdrücklich verlangt werden",
+      "Der Ausbildende muss ein Zeugnis ausstellen; auf Verlangen wird es um Verhalten und Leistung erweitert"
     ],
     "korrekt": [
-      0
+      3
     ],
     "erklaerung": "Das einfache Zeugnis mit Art, Dauer und Ziel der Ausbildung ist Pflicht. Das qualifizierte Zeugnis mit Bewertung von Leistung und Verhalten gibt es nur auf Verlangen — es kann bei der Bewerbung aber den Ausschlag geben."
   },
@@ -1680,15 +1680,15 @@
     "konfidenz": "hoch",
     "frage": "In welchen Angelegenheiten hat der Betriebsrat ein echtes Mitbestimmungsrecht? (Mehrfachauswahl)",
     "optionen": [
+      "Grundsätze des Urlaubsplans",
       "Regelungen zur Verhütung von Arbeitsunfällen",
-      "Höhe des tariflichen Stundenlohns",
       "Beginn und Ende der täglichen Arbeitszeit und Pausenlage",
-      "Grundsätze des Urlaubsplans"
+      "Höhe des tariflichen Stundenlohns"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Der Tariflohn ist dem Betriebsrat entzogen — dafür sind die Tarifparteien zuständig. Bei den echten Mitbestimmungsrechten kann der Arbeitgeber ohne Zustimmung des Betriebsrats nicht handeln."
   },
@@ -1701,13 +1701,13 @@
     "konfidenz": "hoch",
     "frage": "Was ist die Handwerksrolle?",
     "optionen": [
+      "Das Verzeichnis der selbstständigen Handwerker der zulassungspflichtigen Handwerke",
       "Eine Liste aller Auszubildenden im Bezirk",
       "Die Mitgliederliste der Innung",
-      "Das Verzeichnis der selbstständigen Handwerker der zulassungspflichtigen Handwerke",
       "Ein anderes Wort für den Tarifvertrag"
     ],
     "korrekt": [
-      2
+      0
     ],
     "erklaerung": "Ohne Eintragung in die Handwerksrolle darf ein zulassungspflichtiges Handwerk wie das Dachdeckerhandwerk nicht selbstständig ausgeübt werden. Geführt wird sie von der Handwerkskammer."
   }

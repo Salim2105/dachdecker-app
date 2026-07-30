@@ -8,13 +8,13 @@
     "konfidenz": "hoch",
     "frage": "Warum ist das Vermeiden und Verwerten von Abfällen so wichtig (Buchaufgabe 3)?",
     "optionen": [
-      "Boden, Luft und Wasser werden durch Schadstoffe belastet und verunreinigt",
       "Abfall zerfällt ohnehin innerhalb weniger Jahre rückstandsfrei",
       "Schadstoffe gelangen über Pflanzen und Tiere wieder zurück zum Menschen",
+      "Boden, Luft und Wasser werden durch Schadstoffe belastet und verunreinigt",
       "Der Deponieraum zur Aufnahme des Mülls ist begrenzt"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -31,15 +31,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Stoffe nennt die Tabelle als umwelt- und gesundheitsschädigend?",
     "optionen": [
-      "Feste Stoffe: Asbest, Stäube mit Blei-, Cadmium- oder Quecksilberverbindungen",
-      "Gase: Kohlendioxid, Kohlenmonoxid, Schwefeldioxid, Stickstoffoxide, Kohlenwasserstoffe, Fluorkohlenwasserstoffe",
       "Flüssigkeiten: Säuren, Heiz- und Motorenöle, Treibstoffe, Lösungsmittel, Farben und Lacke, Holzschutzmittel",
-      "Feste Stoffe: Beton, Ziegel und Kalksandsteine"
+      "Feste Stoffe: Asbest, Stäube mit Blei-, Cadmium- oder Quecksilberverbindungen",
+      "Feste Stoffe: Beton, Ziegel und Kalksandsteine",
+      "Gase: Kohlendioxid, Kohlenmonoxid, Schwefeldioxid, Stickstoffoxide, Kohlenwasserstoffe, Fluorkohlenwasserstoffe"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Die Tabelle gliedert nach Aggregatzustand. Beton, Ziegel und Kalksandsteine sind dagegen gewöhnlicher Bauschutt und gehören nicht zu den Schadstoffen — sie tauchen in der Bauabfall-Übersicht unter \"Bauschutt\" auf. Für den Dachdecker sind vor allem Asbest und Holzschutzmittel relevant.",
     "bildDatei": "/buch/anhang1/schadstofftabelle.webp",
@@ -54,15 +54,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 1: Was ist das Ziel des Kreislaufwirtschaftsgesetzes?",
     "optionen": [
-      "Die Vermeidung von Abfällen steht an erster Stelle",
-      "Immer mehr Abfälle sollen in die Neuproduktion einbezogen werden, sodass ein Kreislauf entsteht",
       "Das Abfallaufkommen soll mengenmäßig verringert und umweltverträglich beseitigt werden",
-      "Abfälle sollen möglichst günstig deponiert werden"
+      "Abfälle sollen möglichst günstig deponiert werden",
+      "Die Vermeidung von Abfällen steht an erster Stelle",
+      "Immer mehr Abfälle sollen in die Neuproduktion einbezogen werden, sodass ein Kreislauf entsteht"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Der Name sagt es schon: Aus der Einbahnstraße Produktion–Verbrauch–Deponie soll ein Kreislauf werden. Innerhalb dieses Ziels gilt eine klare Rangfolge, in der die Vermeidung ganz oben steht — Deponieren ist die letzte, nicht die erste Wahl.",
     "bildDatei": "/buch/anhang1/krwg-auswirkungen.webp",
@@ -77,15 +77,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 2: Wer ist für die Beseitigung und Verwertung von Bauabfällen verantwortlich?",
     "optionen": [
-      "Alle am Bau Beteiligten haben in ihrem Verantwortungsbereich die Voraussetzungen zu schaffen",
-      "Der Bauherr als Abfallerzeuger beziehungsweise Abfallbesitzer",
       "Das Gesetz nimmt besonders die Hersteller in die Pflicht — sie bleiben bis zum Nachweis der endgültigen Entsorgung verantwortlich",
-      "Ausschließlich das Entsorgungsunternehmen"
+      "Alle am Bau Beteiligten haben in ihrem Verantwortungsbereich die Voraussetzungen zu schaffen",
+      "Ausschließlich das Entsorgungsunternehmen",
+      "Der Bauherr als Abfallerzeuger beziehungsweise Abfallbesitzer"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Die Verantwortung ist mehrfach verteilt und endet nicht mit der Übergabe: Der Bauherr ist Abfallerzeuger, der Hersteller bleibt bis zum Nachweis der endgültigen Entsorgung in der Pflicht, und jeder am Bau Beteiligte muss in seinem Bereich die Voraussetzungen schaffen. Das Entsorgungsunternehmen allein trägt sie also gerade nicht.",
     "bildDatei": "/buch/anhang1/krwg-auswirkungen.webp",
@@ -128,13 +128,13 @@
     "optionen": [
       "Vermeiden durch verbesserte Materialien",
       "Vermindern der Menge und Schädlichkeit",
-      "Stoffliche Verwertung (Recycling), danach Beseitigung und Energiegewinnung durch Müllverbrennung",
-      "Deponieren, danach Recycling, zuletzt Vermeiden"
+      "Deponieren, danach Recycling, zuletzt Vermeiden",
+      "Stoffliche Verwertung (Recycling), danach Beseitigung und Energiegewinnung durch Müllverbrennung"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Vier Stufen: vermeiden, vermindern, verwerten, beseitigen. Beachte den feinen Unterschied zwischen den ersten beiden — Vermeiden setzt beim Material an (bessere Baustoffe wählen), Vermindern bei der Menge und Schädlichkeit dessen, was trotzdem anfällt. Das Gesetz räumt dem Vermeiden den obersten Stellenwert ein.",
     "bildDatei": "/buch/anhang1/vermeiden-stufen.webp",
@@ -150,14 +150,14 @@
     "frage": "Welchen Anteil haben Bau- und Abbruchabfälle am gesamten Abfallaufkommen?",
     "optionen": [
       "Damit ist die Bauwirtschaft der größte Abfallerzeuger",
-      "55,1 Mio. t und damit 15,2 %",
+      "Ungefähr 62 % des gesamten Müllaufkommens in Deutschland verursacht die Bauindustrie",
       "228,1 Mio. t und damit 62,9 %",
-      "Ungefähr 62 % des gesamten Müllaufkommens in Deutschland verursacht die Bauindustrie"
+      "55,1 Mio. t und damit 15,2 %"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Fast zwei Drittel allen Abfalls stammt vom Bau — das ist die Kernaussage des Kapitels und der Grund, warum es dieses Thema in der Dachdeckerausbildung überhaupt gibt. Die 55,1 Mio. t mit 15,2 % sind dagegen die Abfälle aus Produktion und Gewerbe.",
     "bildDatei": "/buch/anhang1/kreis-abfallaufkommen.webp",
@@ -233,9 +233,9 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 4: In welche fünf Gruppen werden Bauabfälle eingeteilt?",
     "optionen": [
-      "Baustellenabfälle und Sonderabfälle",
-      "Nur in verwertbare und nicht verwertbare Abfälle",
       "Bodenaushub, Straßenaufbruch, Bauschutt",
+      "Nur in verwertbare und nicht verwertbare Abfälle",
+      "Baustellenabfälle und Sonderabfälle",
       "Hausmüll und Gewerbeabfall"
     ],
     "korrekt": [
@@ -255,15 +255,15 @@
     "konfidenz": "hoch",
     "frage": "Was gehört zum Bodenaushub und was zum Straßenaufbruch?",
     "optionen": [
-      "Straßenaufbruch umfasst auch Mutterboden und Schluff",
       "Straßenaufbruch: Abfallstoffe bei Instandsetzung, Sanierung, Abbruch und Erneuerung befestigter Straßen und ihres befestigten Unterbaus",
       "Bodenaushub: überschüssiges Aushubmaterial bei Tiefbauarbeiten, z. B. Lehm, Ton, Sand, Kies, Steine",
-      "Bodenaushub fällt bei der Herstellung von Bauwerken nahezu aller Art an — im Straßen-, Leitungs-, Hoch-, Tunnel- und Wasserbau"
+      "Bodenaushub fällt bei der Herstellung von Bauwerken nahezu aller Art an — im Straßen-, Leitungs-, Hoch-, Tunnel- und Wasserbau",
+      "Straßenaufbruch umfasst auch Mutterboden und Schluff"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Mutterboden und Schluff gehören zum Bodenaushub, nicht zum Straßenaufbruch — dort stehen bitumenhaltige oder hydraulisch gebundene Stoffe, teerhaltige Stoffe, Schotter, Kies, Sand sowie Pflaster- und Randsteine. Die Trennung ist wichtig, weil teerhaltiger Straßenaufbruch schadstoffbelastet sein kann.",
     "bildDatei": "/buch/anhang1/bau-bodenabfaelle.webp",
@@ -279,14 +279,14 @@
     "frage": "Wie unterscheiden sich Bauschutt und Baustellenabfälle?",
     "optionen": [
       "Baustellenabfälle sind alle sonst als unbrauchbar angesehenen Sachen, die nur in mittelbarem Zusammenhang mit der Baumaßnahme anfallen",
-      "Baustellenabfälle sind immer Sonderabfälle",
+      "Zum Bauschutt zählen Beton, Ziegel, Kalksandsteine, Mörtel, Natursteine, Keramik, Gips und Sand",
       "Bauschutt entsteht in unmittelbarem Zusammenhang mit Errichtung, Änderung oder Abbruch eines Gebäudes",
-      "Zum Bauschutt zählen Beton, Ziegel, Kalksandsteine, Mörtel, Natursteine, Keramik, Gips und Sand"
+      "Baustellenabfälle sind immer Sonderabfälle"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Der Schlüssel steckt in den Wörtern unmittelbar und mittelbar: Bauschutt ist das Gebäude selbst — Beton, Ziegel, Mörtel. Baustellenabfälle sind das Drumherum — Papier, Pappe, Holz, Metalle, Kabel, Kunststoffe, Textilien, Hausmüll, Tapeten, Sperrmüll. Diese Unterscheidung entscheidet über den Container und damit über den Preis.",
     "bildDatei": "/buch/anhang1/abfallgruppen-text.webp",
@@ -302,14 +302,14 @@
     "frage": "Buchaufgabe 14: Was zählt zu den Sonderabfällen?",
     "optionen": [
       "Altfarben, Altöle, Asbest, Mineralwolle-Dämmstoffe",
-      "Beton, Ziegel und Mörtel",
+      "Schadstoffverunreinigter Boden, Teer- und Dachpappen",
       "Abfälle, die in der Entsorgung problematisch sind und eine artspezifische Behandlung oder Beseitigung erfordern",
-      "Schadstoffverunreinigter Boden, Teer- und Dachpappen"
+      "Beton, Ziegel und Mörtel"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Über die Beseitigung von Sonderabfällen sind vorgeschriebene Nachweise zu führen — das unterscheidet sie von allen anderen Gruppen. Für Dachdecker besonders relevant: Asbest, Mineralwolle-Dämmstoffe sowie Teer- und Dachpappen. Beton, Ziegel und Mörtel sind dagegen gewöhnlicher Bauschutt.",
     "bildDatei": "/buch/anhang1/abfallgruppen-text.webp",
@@ -394,9 +394,9 @@
     "frage": "Wie hoch sind die Recyclingquoten laut Text auf S. 573?",
     "optionen": [
       "Bei Straßenaufbruch bei etwa 50 %",
-      "Bei Straßenaufbruch schon bei 96 %",
+      "Aufgrund des hohen und wachsenden Bestandes an Hochbauten wird mit weiterer Zunahme an Bauschutt und Baustellenabfällen gerechnet",
       "Bei Bauschutt immerhin noch bei über 78 %",
-      "Aufgrund des hohen und wachsenden Bestandes an Hochbauten wird mit weiterer Zunahme an Bauschutt und Baustellenabfällen gerechnet"
+      "Bei Straßenaufbruch schon bei 96 %"
     ],
     "korrekt": [
       1,
@@ -416,15 +416,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Wodurch kann jeder Handwerker zum Vermeiden von Bauabfällen beitragen?",
     "optionen": [
-      "Durch Verzicht auf unnötige Folienverpackung, etwa bei Dachziegeln",
+      "Durch Verbrennen der Reste auf der Baustelle",
       "Durch die Wahl von Maßen bei der Bestellung, die wenig Verschnitt verursachen",
       "Durch die Verwendung langlebiger Teile und Stoffe, die möglichst mehrfach verwendet werden können",
-      "Durch Verbrennen der Reste auf der Baustelle"
+      "Durch Verzicht auf unnötige Folienverpackung, etwa bei Dachziegeln"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Alles drei fängt vor der ersten Handbewegung an: bei der Auswahl der Baustoffe, bei der Bestellmenge und bei der Verpackung. Massenbaustoffe wie Dachziegel müssen nicht in Folie verpackt geliefert werden — und die Lieferanten sind ohnehin gehalten, Verpackungen zurückzunehmen.",
     "bildDatei": "/buch/anhang1/neubau-recycling.webp",
@@ -439,14 +439,14 @@
     "konfidenz": "hoch",
     "frage": "Wie bewertet das Buch verschiedene Dachdeckungsmaterialien unter Umweltgesichtspunkten?",
     "optionen": [
+      "Bitumenbahnen sind unproblematisch in der Entsorgung",
       "Bei der Dachziegel- und Dachsteinherstellung besteht ein enormer Energiebedarf",
       "Stroh, Holzschindeln und Schiefer sind natürliche und problemlose Naturstoffe",
-      "Bitumenbahnen sind unproblematisch in der Entsorgung",
       "Bei Schiefer ist je nach Herkunft Radioaktivität möglich"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Bitumenbahnen sind das Gegenteil von unproblematisch: Durch ihren Erdölanteil zählen sie zu den Sonderabfällen. Beachte auch die Einschränkung beim Schiefer — als Naturstein ist er günstig, kann aber je nach Herkunft radioaktiv belastet sein.",
@@ -462,15 +462,15 @@
     "konfidenz": "hoch",
     "frage": "Was versteht man unter Recycling?",
     "optionen": [
-      "Beispiel: Beton, Steine, Putz, Fliesen und keramische Teile werden gebrochen und als Zuschlagstoffe verwendet",
       "Die Verwertung von Abfällen und verbrauchten Stoffen als Rohstoff für neue Produkte",
-      "Es setzt eine Vorbehandlung der Altbaustoffe vor einer Zweitverwertung voraus",
-      "Der wiederholte Einbau eines Bauteils ohne jede Veränderung"
+      "Beispiel: Beton, Steine, Putz, Fliesen und keramische Teile werden gebrochen und als Zuschlagstoffe verwendet",
+      "Der wiederholte Einbau eines Bauteils ohne jede Veränderung",
+      "Es setzt eine Vorbehandlung der Altbaustoffe vor einer Zweitverwertung voraus"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Beim Recycling wird der Stoff zum Rohstoff — das Bauteil verliert seine Form. Der wiederholte Einbau ohne Veränderung ist dagegen Wiederverwendung. Diese Abgrenzung wird gern geprüft: Der gebrochene Dachziegel ist Recycling, der abgenommene und wieder aufgelegte Dachziegel ist Wiederverwendung.",
     "bildDatei": "/buch/anhang1/recycling-ziel.webp",
@@ -485,14 +485,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 6: Was ist das Ziel des Recyclings?",
     "optionen": [
-      "Möglichst viel Material auf der Deponie unterzubringen",
-      "Die Bildung eines geschlossenen Stoffkreislaufes auf einem möglichst hohen Niveau",
+      "Recyclingprodukte sollen künftig nicht nur in untergeordneter Funktion, sondern in gleicher, hochwertiger Form wie ihr Ausgangsprodukt verwendet werden",
       "Beispiel: Straßenaufbruch nicht nur als Verfüllmasse, sondern auch als Deckschicht",
-      "Recyclingprodukte sollen künftig nicht nur in untergeordneter Funktion, sondern in gleicher, hochwertiger Form wie ihr Ausgangsprodukt verwendet werden"
+      "Möglichst viel Material auf der Deponie unterzubringen",
+      "Die Bildung eines geschlossenen Stoffkreislaufes auf einem möglichst hohen Niveau"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Entscheidend ist das Wort Niveau. Es genügt nicht, dass ein Stoff irgendwie weiterverwendet wird — er soll seinen Wert behalten. Der Straßenaufbruch als Deckschicht statt als bloße Verfüllmasse ist das Musterbeispiel: gleiche Funktion wie vorher, kein Abstieg zum Billigmaterial.",
@@ -526,15 +526,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 10: Welchen Entlastungseffekt hat ein geschlossener Stoffkreislauf für die Umwelt?",
     "optionen": [
-      "Einsparen von Deponieraum — zurückgeführte Stoffe sind kein Abfall, sondern Wirtschaftsgüter",
       "Einsparung von Energie und weniger Schadstoffe aus der Produktion",
-      "Schonung der Rohstoffvorkommen",
-      "Erhöhung der Transportwege"
+      "Erhöhung der Transportwege",
+      "Einsparen von Deponieraum — zurückgeführte Stoffe sind kein Abfall, sondern Wirtschaftsgüter",
+      "Schonung der Rohstoffvorkommen"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Vier Effekte auf einmal: weniger Rohstoffabbau, weniger Deponie, weniger Energie, weniger Schadstoffe. Besonders anschaulich ist die Umdeutung beim Deponieraum — was in den Produktionskreislauf zurückgeht, ist kein Abfall mehr, sondern ein Wirtschaftsgut. Genau darauf beruht auch der finanzielle Vorteil.",
     "bildDatei": "/buch/anhang1/kreislauf-dachstein.webp",
@@ -594,15 +594,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Recyclinganteile zeigen die drei Kreisdiagramme?",
     "optionen": [
-      "Straßenaufbruch: 95,4 % Recycling",
-      "Baustellenabfälle: nur 1,4 % Recycling",
       "Bauschutt: 77,7 % Recycling",
-      "Baustellenabfälle: 97 % Recycling"
+      "Baustellenabfälle: nur 1,4 % Recycling",
+      "Baustellenabfälle: 97 % Recycling",
+      "Straßenaufbruch: 95,4 % Recycling"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Achte genau hin: Bei den Baustellenabfällen sind 97 % \"sonstige Verwertung\", nur 1,4 % sind echtes Recycling. Das ist die klassische Falle dieses Diagramms — hohe Verwertung heißt nicht hohes Recycling. Straßenaufbruch dagegen wird zu 95,4 % tatsächlich rezykliert.",
     "bildDatei": "/buch/anhang1/recyclinganteile.webp",
@@ -617,15 +617,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 9: Warum liegt die Recyclingrate bei Straßenaufbruch wesentlich höher als bei Baustellenabfällen?",
     "optionen": [
-      "Für gebrochenen Straßenaufbruch gibt es einen unmittelbaren Wiedereinsatz im Straßenbau",
-      "Straßenaufbruch fällt sortenrein und in großen, gleichartigen Mengen an",
+      "Straßenaufbruch enthält grundsätzlich keine Schadstoffe",
       "Baustellenabfälle sind ein Gemisch aus Papier, Holz, Metallen, Kunststoffen, Textilien und Hausmüll",
-      "Straßenaufbruch enthält grundsätzlich keine Schadstoffe"
+      "Für gebrochenen Straßenaufbruch gibt es einen unmittelbaren Wiedereinsatz im Straßenbau",
+      "Straßenaufbruch fällt sortenrein und in großen, gleichartigen Mengen an"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Der entscheidende Unterschied ist die Sortenreinheit: Straßenaufbruch ist mineralisch und gleichartig, lässt sich brechen und direkt wieder einbauen. Baustellenabfälle sind ein Mischmasch, dessen Trennung aufwendig ist. Schadstofffrei ist Straßenaufbruch aber keineswegs — teerhaltige Stoffe sind ausdrücklich genannt.",
     "bildDatei": "/buch/anhang1/recyclinganteile.webp",
@@ -664,13 +664,13 @@
     "frage": "Was wird künftig immer wichtiger, damit Bauteile getrennt werden können?",
     "optionen": [
       "Recycling-Baustoffe auch in neuen Bauwerken einsetzen",
-      "Recyclinggerechte Konstruktionen, die sich wieder auseinanderbauen lassen — etwa durch Schraub- und Steckverbindungen",
       "Möglichst viele Verbundstoffe wie Sandwichplatten verwenden",
+      "Recyclinggerechte Konstruktionen, die sich wieder auseinanderbauen lassen — etwa durch Schraub- und Steckverbindungen",
       "Recycelbare Baustoffe verwenden und prüfen, ob neu eingebaute Stoffe wieder verwertbar sind"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Verbundstoffe sind genau das Problem, nicht die Lösung: Bei ihnen ist die Demontage in einzelne Materialgruppen nur mit sehr großem Aufwand möglich — Sandwichplatten nennt das Buch ausdrücklich als Beispiel. Geringe Qualitätsunterschiede von Recycling-Baustoffen lassen sich übrigens durch angepasste Konstruktionen ausgleichen, etwa eine größere Schichtdicke.",
@@ -686,15 +686,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 8: Wie unterscheidet das Getrennthaltungsgebot die Bauabfälle?",
     "optionen": [
-      "Verwertbar: z. B. Beton, Ziegel, Metall, Holz, Papier",
-      "Störend: alles, was schwerer als 25 kg ist",
       "Schadstoffhaltig: z. B. Altöl, Asbest, Batterien, Teerpappen, mit Schadstoffen belastete Böden",
-      "Störend: je nach Abfallsorte, z. B. Glas, Dämmstoffe und Kunststoffe im Holzcontainer oder Dachpappe und Dämmstoffe im Bauschuttcontainer"
+      "Verwertbar: z. B. Beton, Ziegel, Metall, Holz, Papier",
+      "Störend: je nach Abfallsorte, z. B. Glas, Dämmstoffe und Kunststoffe im Holzcontainer oder Dachpappe und Dämmstoffe im Bauschuttcontainer",
+      "Störend: alles, was schwerer als 25 kg ist"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Beachte, dass \"störend\" keine Eigenschaft des Stoffes ist, sondern eine Frage des Containers: Dämmstoff im Holzcontainer stört, im richtigen Container ist er ganz normaler Abfall. Genau deshalb muss man beim Einwerfen wissen, welcher Container vor einem steht.",
     "bildDatei": "/buch/anhang1/getrennthaltungsgebot.webp",
@@ -735,15 +735,15 @@
     "konfidenz": "hoch",
     "frage": "Was zeigt der Kreislauf am Beispiel eines Dachsteins aus Beton?",
     "optionen": [
-      "Produktrecycling: Wiederverwendung noch intakter Dachsteine nach dem Abriss",
+      "Alle abgerissenen Dachsteine gehen zwingend ins Materialrecycling",
       "Materialrecycling: Zerkleinern der Dachsteine und Verwendung als Zuschlag zum Herstellen neuer Dachsteine",
       "Mit Bitumen verunreinigte Reststücke fallen als Abfälle an",
-      "Alle abgerissenen Dachsteine gehen zwingend ins Materialrecycling"
+      "Produktrecycling: Wiederverwendung noch intakter Dachsteine nach dem Abriss"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Grafik zeigt zwei Wege nebeneinander: Der intakte Dachstein geht als ganzes Produkt zurück in den Gebrauch (Produktrecycling), der beschädigte wird zerkleinert und als Zuschlag eingesetzt (Materialrecycling). Der höherwertige Weg ist immer der erste — nur was nicht mehr intakt ist, wird gebrochen.",
     "bildDatei": "/buch/anhang1/kreislauf-dachstein.webp",
@@ -758,15 +758,15 @@
     "konfidenz": "hoch",
     "frage": "Welche Grundsätze gelten für den Umgang mit Abfällen auf der Baustelle?",
     "optionen": [
-      "Nicht verwertbare Bauabfälle sollen umweltverträglich entsorgt werden",
-      "Alle Bauabfälle sollen möglichst schnell deponiert werden",
       "Nicht vermeidbare Bauabfälle sollen verwertet und recycliert werden",
-      "Es sollen weniger Bauabfälle entstehen"
+      "Nicht verwertbare Bauabfälle sollen umweltverträglich entsorgt werden",
+      "Es sollen weniger Bauabfälle entstehen",
+      "Alle Bauabfälle sollen möglichst schnell deponiert werden"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Die drei Grundsätze sind nichts anderes als die Rangfolge des Kreislaufwirtschaftsgesetzes, übersetzt in die Sprache der Baustelle: vermeiden, verwerten, umweltverträglich beseitigen. Alle am Bau Beteiligten haben in ihrem Verantwortungsbereich die Voraussetzungen dafür zu schaffen.",
     "bildDatei": "/buch/anhang1/grundsatz-abfaelle.webp",
@@ -781,13 +781,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 10: Warum ist es auch finanziell sinnvoll, Bauwerkstoffe getrennt zu sammeln?",
     "optionen": [
-      "Sortenreine Fraktionen sind deutlich günstiger zu entsorgen als Mischabfall",
       "Getrennte Sammlung ist immer teurer, lohnt sich aber ökologisch",
+      "Sortenreine Fraktionen sind deutlich günstiger zu entsorgen als Mischabfall",
       "Manche Fraktionen wie Metall und Papier verursachen gar keine Entsorgungskosten",
       "Die Deponiegebühren steigen immer weiter"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -907,14 +907,14 @@
     "frage": "Wie wird Altholz verwertet?",
     "optionen": [
       "Etwa 7 % der verarbeiteten Holzmenge werden wieder verwendet",
+      "Hauptabnehmer für Altholz sind die Spanplattenwerke",
       "Schadstoffbelastetes Holz kann nur in bestimmten Verbrennungsanlagen energetisch verwertet werden",
-      "Altholz darf ausnahmslos deponiert werden",
-      "Hauptabnehmer für Altholz sind die Spanplattenwerke"
+      "Altholz darf ausnahmslos deponiert werden"
     ],
     "korrekt": [
       0,
       1,
-      3
+      2
     ],
     "erklaerung": "Nur etwa 7 % — das ist wenig, und der Grund steht gleich daneben: Holz enthält oft Schadstoffe aus chemischem Holzschutz, Lackresten oder Beschichtungen. Solches Holz taugt nicht mehr für Spanplatten und bleibt nur noch die energetische Verwertung in bestimmten Verbrennungsanlagen.",
     "bildDatei": "/buch/anhang1/materialtabelle.webp",
@@ -974,14 +974,14 @@
     "konfidenz": "hoch",
     "frage": "Wie werden Metalle und mineralischer Bauschutt aufbereitet?",
     "optionen": [
-      "Durch mobile Recyclinganlagen können größere Bauwerke direkt vor Ort rezykliert werden",
-      "Metalle können über den Schrotthandel an die Hüttenindustrie zum Einschmelzen zurückgegeben werden",
       "Mineralischer Bauschutt wird eingeschmolzen",
-      "Mineralischer Bauschutt wird getrennt, zerkleinert und klassiert, das heißt nach Korngröße zugeteilt"
+      "Durch mobile Recyclinganlagen können größere Bauwerke direkt vor Ort rezykliert werden",
+      "Mineralischer Bauschutt wird getrennt, zerkleinert und klassiert, das heißt nach Korngröße zugeteilt",
+      "Metalle können über den Schrotthandel an die Hüttenindustrie zum Einschmelzen zurückgegeben werden"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Merke dir die drei Fachbegriffe der Bauschuttaufbereitung: trennen (sortieren, sieben, sichten), zerkleinern (brechen, mahlen) und klassieren (nach Korngröße zuteilen). Eingeschmolzen wird nur Metall. Der Vorteil mobiler Anlagen ist, dass der Transport zur stationären Anlage entfällt.",
@@ -998,8 +998,8 @@
     "frage": "Wie werden Baustellenabfälle und Sonderabfälle aufbereitet?",
     "optionen": [
       "Baustellenabfälle werden in Bauabfallrecyclinganlagen zunächst sortiert",
-      "Danach werden sie den Wertstoffen, dem mineralischen Bauschutt, den Verpackungen oder den Sortierresten zugeordnet",
       "Bei Sonderabfällen wird durch Sammlung der Gefahrenstoffe der Restabfall von Schadstoffen befreit",
+      "Danach werden sie den Wertstoffen, dem mineralischen Bauschutt, den Verpackungen oder den Sortierresten zugeordnet",
       "Sortierreste können vollständig recycelt werden"
     ],
     "korrekt": [
@@ -1020,15 +1020,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 12: Wie werden Holzschindeln recycelt und verwendet?",
     "optionen": [
-      "Verfahren: Zerspanen, Zerfasern, Entfernen von Fremdteilen, Sortieren und Reinigen, Zugabe von Bindemitteln, Formgebung",
       "Produkt: Sekundärrohstoff für Faser-, Span- und Bauplatten, Verwertung in der Zellstoffindustrie, Holzbriketts",
+      "Sie werden zu Kies- und Schotterersatz zerkleinert",
       "Eine Wiederverwendung ist nicht möglich",
-      "Sie werden zu Kies- und Schotterersatz zerkleinert"
+      "Verfahren: Zerspanen, Zerfasern, Entfernen von Fremdteilen, Sortieren und Reinigen, Zugabe von Bindemitteln, Formgebung"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Bei Holzschindeln steht in der Spalte Wiederverwendung ausdrücklich \"nein\" — sie sind verwittert und nicht mehr einbaufähig. Möglich ist nur das Materialrecycling zu Faser- und Spanplatten oder Holzbriketts. Zu Kies- und Schotterersatz werden dagegen die mineralischen Stoffe wie Schiefer und Dachziegel.",
     "bildDatei": "/buch/anhang1/materialtabelle.webp",
@@ -1043,15 +1043,15 @@
     "konfidenz": "hoch",
     "frage": "Was sagt die Tabelle über Schiefer aus?",
     "optionen": [
-      "Schiefer ist grundsätzlich nicht wiederverwendbar",
+      "Verwendung als Kies- und Schotterersatz für Lärmschutzwände, Untergrundverbesserungen, Leitungsgräben und Überschüttungen",
       "Eine Wiederverwendung ist möglich bei guter Schieferqualität, aber mit hohem Aufwand beim Ausbauen",
       "Recyclingverfahren: Zerkleinern zu Schieferbruch",
-      "Verwendung als Kies- und Schotterersatz für Lärmschutzwände, Untergrundverbesserungen, Leitungsgräben und Überschüttungen"
+      "Schiefer ist grundsätzlich nicht wiederverwendbar"
     ],
     "korrekt": [
+      0,
       1,
-      2,
-      3
+      2
     ],
     "erklaerung": "Bei Schiefer steht \"möglich bei guter Schieferqualität\" — mit dem ausdrücklichen Hinweis auf den hohen Aufwand beim Ausbauen. Genau das ist die Wirtschaftlichkeitsfrage: Der Werkstoff hält länger als seine Befestigung, aber jede Platte muss einzeln und vorsichtig gelöst werden.",
     "bildDatei": "/buch/anhang1/materialtabelle.webp",
@@ -1067,14 +1067,14 @@
     "frage": "Buchaufgabe 12: Was gilt für unglasierte Dachziegel und Betondachsteine?",
     "optionen": [
       "Beide sind wiederverwendbar, wenn sie nicht beschädigt sind",
-      "Betondachsteine lassen sich nicht in die Produktion zurückführen",
+      "Dachziegel werden zerkleinert zu Ziegelbruch und als Kies- und Schotterersatz verwendet",
       "Betondachsteine werden zerkleinert, gemahlen und gesiebt zu Dachsteinbruch und Granulat, das in den Herstellungsprozess zurückgeführt wird",
-      "Dachziegel werden zerkleinert zu Ziegelbruch und als Kies- und Schotterersatz verwendet"
+      "Betondachsteine lassen sich nicht in die Produktion zurückführen"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Der Betondachstein ist das Musterbeispiel für einen geschlossenen Kreislauf: Sein Granulat geht durch Beimischung direkt in die Herstellung neuer Dachsteine zurück — genau das zeigt die Kreislaufgrafik auf S. 575. Der Ziegel schafft das nicht und landet eine Stufe tiefer als Kies- und Schotterersatz.",
     "bildDatei": "/buch/anhang1/materialtabelle.webp",
@@ -1089,13 +1089,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 12: Was gilt für Stahlbauteile sowie für Aluminium, Kupfer, Blei und Zink?",
     "optionen": [
-      "Bei Stahl: Entfernen von Fremdteilen, Stahlteile trennen und sortieren, Rückführung über den Schrotthandel in die Stahlproduktion",
       "Blei und Zink dürfen wegen ihrer Schadstoffe nicht recycelt werden",
+      "Stahlbauteile sind wiederverwendbar, eventuell nach Erneuerung von Beschlägen, Dichtungen oder Befestigungen",
       "Nichteisenmetalle: Entfernen von Fremdteilen wie Glas, Beschlägen und Dichtungen, Rückführung in den Herstellungsprozess",
-      "Stahlbauteile sind wiederverwendbar, eventuell nach Erneuerung von Beschlägen, Dichtungen oder Befestigungen"
+      "Bei Stahl: Entfernen von Fremdteilen, Stahlteile trennen und sortieren, Rückführung über den Schrotthandel in die Stahlproduktion"
     ],
     "korrekt": [
-      0,
+      1,
       2,
       3
     ],
@@ -1112,10 +1112,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Stationen durchläuft der Bauschutt in einer Aufbereitungsanlage?",
     "optionen": [
-      "Prallmühle, Magnetscheider, Siebmaschine",
+      "Aufgabetrichter, Vorabsiebung, Leseband mit Container für Fremdstoffe",
       "Schmelzofen und Gießerei",
-      "Abwurfband und Sichter",
-      "Aufgabetrichter, Vorabsiebung, Leseband mit Container für Fremdstoffe"
+      "Prallmühle, Magnetscheider, Siebmaschine",
+      "Abwurfband und Sichter"
     ],
     "korrekt": [
       0,
@@ -1135,14 +1135,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Probleme entstehen durch die Ansammlung enormer Abfallmengen auf einer Deponie?",
     "optionen": [
+      "Die Probleme beschränken sich auf den optischen Eindruck",
       "Deponiegasbildung: Es treten Gase giftiger Stoffe sowie Treibhaus- und ozonschichtwirksame Gase aus",
       "Sickerwasserbildung: Niederschlagswasser nimmt Schadstoffe auf und muss gesammelt und gereinigt werden",
-      "Die Probleme beschränken sich auf den optischen Eindruck",
       "Geruchsbelästigung, Staubentwicklung, Papier- und Kunststoffflug, Sackungen, Setzungen, Flächenverbrauch"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Die beiden ersten sind die technisch schwierigsten: Sickerwasser muss aufgefangen und gereinigt werden, bevor es ins Grundwasser gelangt, und Deponiegas entweicht über Jahrzehnte. Sackungen und Setzungen sind der Grund, warum eine Deponiefläche auch nach der Schließung nicht einfach bebaut werden kann.",
@@ -1181,10 +1181,10 @@
     "konfidenz": "hoch",
     "frage": "Welche Argumente sprechen gegen die Müllverbrennung?",
     "optionen": [
-      "Giftige Rückstände zur Deponierung und Verhinderung einer stofflichen Verwertung",
+      "Rohstoffverschwendung",
       "Zu geringe Mengenreduktion",
-      "Hohe Luftbelastung durch Schadstoffe",
-      "Rohstoffverschwendung"
+      "Giftige Rückstände zur Deponierung und Verhinderung einer stofflichen Verwertung",
+      "Hohe Luftbelastung durch Schadstoffe"
     ],
     "korrekt": [
       0,
@@ -1228,9 +1228,9 @@
     "frage": "Was gilt bei der Entsorgung von Sondermüll?",
     "optionen": [
       "Sie sind gegen Zugriffe Unbefugter zu sichern",
-      "Es muss Schutzkleidung, gegebenenfalls auch Mundschutz getragen werden",
+      "Container mit Sondermüll müssen besonders gekennzeichnet werden",
       "Sondermüll darf mit dem übrigen Bauabfall gesammelt werden",
-      "Container mit Sondermüll müssen besonders gekennzeichnet werden"
+      "Es muss Schutzkleidung, gegebenenfalls auch Mundschutz getragen werden"
     ],
     "korrekt": [
       0,
@@ -1250,15 +1250,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 13: Warum ist Asbest so gefährlich für die Gesundheit?",
     "optionen": [
-      "Durch hohe und lang andauernde Belastung mit Asbestfasern kann Krebs entstehen",
-      "Asbest ist gefährlich, weil er leicht entzündlich ist",
       "Besonders gefährlich ist Spritzasbest, da er die Fasern nur sehr gering bindet",
-      "Die nicht sichtbaren Fasern entweichen in großer Zahl an die Luft und werden eingeatmet"
+      "Durch hohe und lang andauernde Belastung mit Asbestfasern kann Krebs entstehen",
+      "Die nicht sichtbaren Fasern entweichen in großer Zahl an die Luft und werden eingeatmet",
+      "Asbest ist gefährlich, weil er leicht entzündlich ist"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Gerade das Gegenteil von entzündlich: Asbest wurde wegen seiner hohen Beständigkeit gegen Hitze verbaut. Die Gefahr sind die unsichtbaren Fasern, die eingeatmet werden und nach langer Belastung Krebs auslösen können. Am kritischsten ist Spritzasbest, weil er die Fasern kaum bindet.",
     "bildDatei": "/buch/anhang1/asbest-warnhinweis.webp",
@@ -1273,10 +1273,10 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 14: In welchen Produkten kann Asbest vorkommen?",
     "optionen": [
-      "In Dachplatten, Fensterbänken und Außenwandverkleidungen",
+      "Als Spritzasbest",
       "In modernen Dachziegeln aus heutiger Produktion",
       "Als Zementasbest in Rohren, Dachplatten und Fensterbänken",
-      "Als Spritzasbest"
+      "In Dachplatten, Fensterbänken und Außenwandverkleidungen"
     ],
     "korrekt": [
       0,
@@ -1309,13 +1309,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 15: Wie werden Asbestprodukte fachgerecht ausgebaut und entsorgt?",
     "optionen": [
+      "Um die Fasern zu binden, sind die Platten anzunässen oder mit faserbindenden Stoffen zu besprühen",
       "Asbestplatten dürfen zur Volumenverringerung gebrochen werden",
-      "Beim Ausbau ist darauf zu achten, dass die Asbestzementprodukte nicht zerstört werden",
       "Die Entsorgung erfolgt durch Fachfirmen, in Folie verpackt und nach bestimmten Vorschriften auf der Deponie abgelagert",
-      "Um die Fasern zu binden, sind die Platten anzunässen oder mit faserbindenden Stoffen zu besprühen"
+      "Beim Ausbau ist darauf zu achten, dass die Asbestzementprodukte nicht zerstört werden"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -1333,14 +1333,14 @@
     "frage": "Buchaufgabe 15: Welche Sondermaßnahmen sind bei Asbestarbeiten zusätzlich erforderlich?",
     "optionen": [
       "Arbeitsplan und arbeitsmedizinische Vorsorgeuntersuchung",
-      "Eine mündliche Einweisung genügt",
+      "Persönliche Schutzausrüstung",
       "Anzeige der geplanten Asbestarbeiten und Betriebsanweisung für die Belegschaft",
-      "Persönliche Schutzausrüstung"
+      "Eine mündliche Einweisung genügt"
     ],
     "korrekt": [
       0,
-      2,
-      3
+      1,
+      2
     ],
     "erklaerung": "Fünf Maßnahmen, die alle schriftlich beziehungsweise förmlich sind: Anzeige, Betriebsanweisung, Arbeitsplan, Vorsorgeuntersuchung, Schutzausrüstung. Eine mündliche Einweisung genügt ausdrücklich nicht — die Anzeige geht an die Behörde, bevor die Arbeiten überhaupt beginnen.",
     "bildDatei": "/buch/anhang1/asbest-sondermassnahmen.webp",
@@ -1382,8 +1382,8 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 16a: Welche Punkte müssen vor Beginn eines Abbruchs geklärt werden?",
     "optionen": [
-      "Mit der Recyclingfirma: mobile oder stationäre Anlage, Entfernung, angenommenes Material, Kosten, Kapazität, Containergröße und Stellplatz",
       "Mit den Behörden: Abbruchantrag, Lagerungs- und Transportauflagen",
+      "Mit der Recyclingfirma: mobile oder stationäre Anlage, Entfernung, angenommenes Material, Kosten, Kapazität, Containergröße und Stellplatz",
       "Nur die Frage, welcher Bagger eingesetzt wird",
       "Mit der Deponie: Entfernungen, Voraussetzungen zur Beschaffenheit des Bauabfalls, Kosten"
     ],
@@ -1405,15 +1405,15 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 16b: Was umfassen die Stufen 1 und 2 des Abbruchs?",
     "optionen": [
-      "Stufe 2 — Verwertung nach Vorbehandlung: Demontage von Bauteilen, die erst nach Reinigung oder Reparatur wieder verwendbar sind",
+      "Stufe 1 umfasst den Abbruch des Rohbaus",
       "Stufe 1 — Direkte Wiederverwendung: Ausbau direkt wieder verwendbarer Bauteile, z. B. Heizkessel, Heizkörper, Armaturen, leichte Trennwände, Verteiler, Schaltschränke",
-      "Zu Stufe 2 gehören Treppen, Fenster, Türen, Geländer, Rohrleitungen, Dachziegel, Regenrinnen, Fallrohre und Dachstühle",
-      "Stufe 1 umfasst den Abbruch des Rohbaus"
+      "Stufe 2 — Verwertung nach Vorbehandlung: Demontage von Bauteilen, die erst nach Reinigung oder Reparatur wieder verwendbar sind",
+      "Zu Stufe 2 gehören Treppen, Fenster, Türen, Geländer, Rohrleitungen, Dachziegel, Regenrinnen, Fallrohre und Dachstühle"
     ],
     "korrekt": [
-      0,
       1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Die Stufen folgen genau der Rangfolge des Kreislaufwirtschaftsgesetzes — vom Hochwertigsten zum Geringwertigsten. Für Dachdecker steht das Wichtigste in Stufe 2: Dachziegel, Regenrinnen, Fallrohre und Dachstühle sind nach Reinigung oder Reparatur wieder verwendbar. Der Rohbauabbruch ist erst Stufe 5.",
     "bildDatei": "/buch/anhang1/abbrucharbeiten.webp",
@@ -1428,14 +1428,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 16b: Was umfassen die Stufen 3 bis 5 des Abbruchs?",
     "optionen": [
-      "Stufe 3 umfasst die Entsorgung von Asbest",
+      "Stufe 5 — Abbruch des Rohbaus und der Oberflächenbefestigung, möglichst frei von Verunreinigungen",
       "Stufe 3 — Recycling: Ausbau von Materialien mit etabliertem Materialkreislauf, z. B. Eisen, Kupfer, Zink, Aluminium, Glas",
-      "Stufe 4 — Sonderabfall: Abbau problematischer Bauteile wie Asbestbauteile, Kunststoffteile, Folien, Dämmstoffe, Bitumen, getrennt in Containern",
-      "Stufe 5 — Abbruch des Rohbaus und der Oberflächenbefestigung, möglichst frei von Verunreinigungen"
+      "Stufe 3 umfasst die Entsorgung von Asbest",
+      "Stufe 4 — Sonderabfall: Abbau problematischer Bauteile wie Asbestbauteile, Kunststoffteile, Folien, Dämmstoffe, Bitumen, getrennt in Containern"
     ],
     "korrekt": [
+      0,
       1,
-      2,
       3
     ],
     "erklaerung": "Asbest gehört in Stufe 4, nicht in Stufe 3. Die Reihenfolge hat einen praktischen Grund: Erst wenn alle Wertstoffe und alle Sonderabfälle heraus sind, kann der Rohbau möglichst frei von Verunreinigungen abgebrochen werden — nur dann ist er als mineralischer Bauschutt günstig zu entsorgen.",
@@ -1475,13 +1475,13 @@
     "frage": "Worauf ist beim Abriss neben Abfalltrennung und Sortierung besonders zu achten?",
     "optionen": [
       "Auf den Unfallschutz",
+      "Umweltbelastungen spielen beim Abriss keine Rolle",
       "Auf die möglichst schnelle Durchführung ohne Rücksicht auf Nachbarn",
-      "Umweltbelastungen wie Lärm, Staubentwicklung und Schmutz müssen in einem zumutbaren Rahmen bleiben",
-      "Umweltbelastungen spielen beim Abriss keine Rolle"
+      "Umweltbelastungen wie Lärm, Staubentwicklung und Schmutz müssen in einem zumutbaren Rahmen bleiben"
     ],
     "korrekt": [
       0,
-      2
+      3
     ],
     "erklaerung": "Der Abriss ist die gefährlichste Phase im Lebenszyklus eines Gebäudes — deshalb steht der Unfallschutz ausdrücklich neben der Abfalltrennung. Lärm, Staub und Schmutz treffen zudem die Nachbarschaft und müssen in einem zumutbaren Rahmen bleiben.",
     "bildDatei": "/buch/anhang1/unfallschutz-abriss.webp",
@@ -1498,13 +1498,13 @@
     "optionen": [
       "Für einen Absetzkipper mit 3 Achsen ist ein Rangierraum von etwa 14000 mm zu berücksichtigen",
       "Ein geschlossener Behälter mit 7 m³",
-      "Offene Behälter mit 5 m³ und 12 m³",
-      "Alle Behälter fassen einheitlich 10 m³"
+      "Alle Behälter fassen einheitlich 10 m³",
+      "Offene Behälter mit 5 m³ und 12 m³"
     ],
     "korrekt": [
       0,
       1,
-      2
+      3
     ],
     "erklaerung": "Die Zeichnung nennt nicht nur die Behälter, sondern auch den Platzbedarf — und der ist der eigentliche Planungspunkt: Rund 14 m Rangierraum braucht der Absetzkipper mit 3 Achsen. Wer auf einer engen Baustelle Container für die Getrenntsammlung aufstellen will, muss diesen Raum einplanen.",
     "bildDatei": "/buch/anhang1/absetzbehaelter.webp",
@@ -1570,14 +1570,14 @@
     "konfidenz": "hoch",
     "frage": "Welche Vorteile bringt eine getrennte Einsammlung und umweltgerechte Beseitigung laut Zusammenfassung?",
     "optionen": [
-      "Für die Angestellten: ein sicherer Arbeitsplatz",
-      "Für den Bauherrn: höhere Lebensdauer der Bauwerkstoffe",
+      "Für den Betrieb: niedrigere Entsorgungskosten",
       "Ausschließlich ökologische, keine wirtschaftlichen Vorteile",
-      "Für den Betrieb: niedrigere Entsorgungskosten"
+      "Für die Angestellten: ein sicherer Arbeitsplatz",
+      "Für den Bauherrn: höhere Lebensdauer der Bauwerkstoffe"
     ],
     "korrekt": [
       0,
-      1,
+      2,
       3
     ],
     "erklaerung": "Die Zusammenfassung nennt ausdrücklich drei Nutznießer — Bauherr, Betrieb und Angestellte. Der Umweltschutz ist also nicht der einzige Grund: Wer sauber trennt, spart Geld und arbeitet sicherer. Genau das rechnet das Kostenbeispiel auf S. 576 vor.",
@@ -1620,14 +1620,14 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 5: Was kann jeder Einzelne laut Zusammenfassung beitragen?",
     "optionen": [
-      "Jeder kann einen Beitrag leisten, insbesondere bei der Abfallvermeidung, dem Recycling und der Entsorgung",
-      "Durch die getrennte Einsammlung in verschiedenen Containern",
       "Der Einzelne hat auf der Baustelle keinen Einfluss auf die Abfallmenge",
-      "Zum Beispiel durch den Einsatz umweltgerechter Baustoffe"
+      "Jeder kann einen Beitrag leisten, insbesondere bei der Abfallvermeidung, dem Recycling und der Entsorgung",
+      "Zum Beispiel durch den Einsatz umweltgerechter Baustoffe",
+      "Durch die getrennte Einsammlung in verschiedenen Containern"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Der Anhang endet, wo er begonnen hat: bei der Verantwortung des Einzelnen. Auf der Baustelle entscheidet jeder Handwerker mit jedem Griff, in welchen Container etwas wandert — und damit über Kosten und Umweltwirkung. Das ist keine Frage der Hierarchie, sondern der täglichen Praxis.",
@@ -1643,13 +1643,13 @@
     "konfidenz": "hoch",
     "frage": "Buchaufgabe 8: Sechs Container stehen bereit — Bauschutt (1), Metall (2), Holz (3), Verpackungen (4), Sortierreste (5), Sonderabfall (6). Was gehört in Container 6?",
     "optionen": [
+      "Schädlich verunreinigter Bauschutt, Dachpappe und Farbreste",
       "Kalksandsteine und Estrich",
-      "Leuchtstoffröhren und Kartuschen",
       "Altöl und Hydrauliköl",
-      "Schädlich verunreinigter Bauschutt, Dachpappe und Farbreste"
+      "Leuchtstoffröhren und Kartuschen"
     ],
     "korrekt": [
-      1,
+      0,
       2,
       3
     ],
@@ -1689,14 +1689,14 @@
     "frage": "Buchaufgabe 8: Welche Zuordnung ist richtig für Dachdeckermaterialien?",
     "optionen": [
       "Dachpappe → Container 6 (Sonderabfall), da sie zu den Sonderabfällen zählt",
+      "Dachpappe → Container 1 (Bauschutt)",
       "Dachziegel → Container 1 (Bauschutt)",
-      "Glaswolle und Styropor → Container 5 (Sortierreste) beziehungsweise Sonderabfall, da nicht sortenrein verwertbar",
-      "Dachpappe → Container 1 (Bauschutt)"
+      "Glaswolle und Styropor → Container 5 (Sortierreste) beziehungsweise Sonderabfall, da nicht sortenrein verwertbar"
     ],
     "korrekt": [
       0,
-      1,
-      2
+      2,
+      3
     ],
     "erklaerung": "Dachpappe im Bauschuttcontainer ist der klassische Fehler — sie ist im Getrennthaltungsgebot ausdrücklich als störend im Bauschuttcontainer genannt und zählt wegen ihres Bitumen- beziehungsweise Teeranteils zum Sonderabfall. Ein einziger Ballen Dachpappe kann eine ganze Bauschuttladung entwerten.",
     "bildDatei": "/buch/anhang1/aufgaben-buch-2.webp",
@@ -1711,14 +1711,14 @@
     "konfidenz": "hoch",
     "frage": "Worin unterscheiden sich mobile und stationäre Recyclinganlagen?",
     "optionen": [
-      "Stationäre Anlagen bereiten den mineralischen Bauschutt an einem festen Standort auf",
-      "Mobile Anlagen können größere Bauwerke direkt vor Ort rezyklieren",
       "Mobile Anlagen erreichen grundsätzlich keine verwertbaren Korngrößen",
-      "Bei stationären Anlagen sind Entfernung und Transportkosten zu beachten"
+      "Bei stationären Anlagen sind Entfernung und Transportkosten zu beachten",
+      "Stationäre Anlagen bereiten den mineralischen Bauschutt an einem festen Standort auf",
+      "Mobile Anlagen können größere Bauwerke direkt vor Ort rezyklieren"
     ],
     "korrekt": [
-      0,
       1,
+      2,
       3
     ],
     "erklaerung": "Der entscheidende Unterschied ist der Transport: Die mobile Anlage kommt zum Bauwerk, bei der stationären muss das Material gefahren werden. Deshalb steht in der Checkliste vor dem Abbruch ausdrücklich die Frage nach der Entfernung zur stationären Anlage — bei großen Massen entscheiden die Transportkosten über die Wirtschaftlichkeit.",
@@ -1803,9 +1803,9 @@
     "frage": "Buchaufgabe 5: Welche konkreten Beispiele aus dem Dachdeckerhandwerk nennt das Buch zum Vermeiden?",
     "optionen": [
       "Reste sollten vorsorglich doppelt bestellt werden",
+      "Durch fachkundige Analyse können Holz und Dachziegel eines zu erneuernden Dachstuhls womöglich wiederverwendet werden",
       "Maße bei der Bestellung so wählen, dass wenig Verschnitt entsteht",
-      "Dachziegel müssen nicht in Folie verpackt geliefert werden",
-      "Durch fachkundige Analyse können Holz und Dachziegel eines zu erneuernden Dachstuhls womöglich wiederverwendet werden"
+      "Dachziegel müssen nicht in Folie verpackt geliefert werden"
     ],
     "korrekt": [
       1,
@@ -1843,13 +1843,13 @@
     "frage": "Wie wird in Deutschland die Abfallmenge beseitigt, die nicht wiederverwendet wird?",
     "optionen": [
       "Sie wird auf Deponien abgelagert",
-      "Sie wird in Müllverbrennungsanlagen entsorgt",
       "Sie wird ausnahmslos rezykliert",
-      "Sie wird vollständig exportiert"
+      "Sie wird vollständig exportiert",
+      "Sie wird in Müllverbrennungsanlagen entsorgt"
     ],
     "korrekt": [
       0,
-      1
+      3
     ],
     "erklaerung": "Zwei Wege, beide am unteren Ende der Rangfolge: Deponie oder Verbrennung. Beide sind Beseitigung, nicht Verwertung — und beide bringen eigene Probleme mit sich, wie die Aufstellungen zu Sickerwasser, Deponiegas und der Pro-Kontra-Vergleich zur Verbrennung zeigen.",
     "bildDatei": "/buch/anhang1/deponie-arbeit.webp",
