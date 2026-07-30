@@ -72,5 +72,303 @@
         "musterSvg": "<svg viewBox='0 0 300 180' width='100%' style='max-width:340px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Einzelner Schiefer mit Nagelloch, Zollstock daneben'><g fill='none' stroke='currentColor' stroke-opacity='.4' stroke-width='2' stroke-linecap='round'><path d='M10 24V10H24'/><path d='M276 10H290V24'/><path d='M10 156V170H24'/><path d='M276 170H290V156'/></g><path d='M78 40h70a4 4 0 0 1 4 4v96l-39 12l-39-12V44a4 4 0 0 1 4-4z' fill='none' stroke='currentColor' stroke-opacity='.7' stroke-width='1.8'/><circle cx='113' cy='62' r='5.5' fill='none' stroke='#c07d4a' stroke-width='2.4'/><g fill='none' stroke='currentColor' stroke-opacity='.7' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'><path d='M188 150l14-26l-8-6l16-24l-8-6l14-22'/></g><text x='207' y='120' font-size='10' fill='currentColor' fill-opacity='.55' transform='rotate(-58 207 120)'>cm</text></svg>"
       }
     ]
+  },
+  {
+    "id": "lf09-l05",
+    "lernfeld": "lf09",
+    "thema": "Altdeutsche Deckung",
+    "titel": "Altdeutsche Deckung: Verjüngung, Hieb und Schnurabstand",
+    "inhalt": [
+      "Die altdeutsche Deckung ist die Schieferdeckung mit Decksteinen unterschiedlicher Größe: unten an der Traufe die hohen Steine, nach oben zum First hin immer kleinere. Auf dem Dach musst du deshalb wissen, welcher Stein wohin gehört, wie weit er überdeckt und wo die Schnur liegt.",
+      "Die Regeldachneigung beträgt 25 Grad bei der einfachen altdeutschen Deckung und 22 Grad bei der Doppeldeckung. Die Doppeldeckung setzt du ein bei geringer Dachneigung, bei großer Dachtiefe — also langer Sparrenlänge — und bei ungünstiger Gebäudelage.",
+      "Die Steingröße richtet sich nach dem Dach: Je größer die Dachneigung und je größer die Entfernung zwischen First und Traufe, desto größer müssen die verwendeten Schiefer sein. Je geringer die Neigung und je kürzer der Weg First–Traufe, desto kleiner können sie sein.",
+      "An der Traufe werden die hohen Decksteine verarbeitet, zum First hin wird die Steinhöhe immer geringer — die Gebindehöhe verjüngt sich. Die Deckrichtung läuft entgegen der Hauptwetterrichtung; die Hauptwindrichtung ist in der Regel West bis Nordwest.",
+      "Wie stark sich die Gebindehöhe mindestens verjüngen muss, hängt an der Sparrenlänge: bis 6,00 m mindestens 4 cm, bis 8,00 m mindestens 6 cm, über 8,00 m mindestens 8 cm. Gemeint ist die Differenz zwischen größter und kleinster Gebindehöhe.",
+      "Breite und schmale Decksteine verteilst du über die Dachfläche. Innerhalb einer Gebindehöhe muss die Differenz der sichtbaren Breiten mindestens 40 mm betragen. Genau daraus entsteht das lebendige, unregelmäßige Bild der altdeutschen Deckung.",
+      "Am Deckstein unterscheidest du Kopf, Rücken, Brust und Ferse. Der Hieb legt fest, wie Rücken und Brust geschnitten sind: stumpfer Hieb 115 Grad Rückenführung und 75 Grad Brustwinkel, normaler Hieb 125 und 74 Grad, scharfer Hieb 135 und 65 Grad.",
+      "Die Höhenüberdeckung beträgt bei allen drei Hiebarten 29 Prozent der Steinhöhe, mindestens 5 cm und höchstens 12 cm. Bei stumpfem und normalem Hieb ist die Seitenüberdeckung so groß wie die Höhenüberdeckung, beim scharfen Hieb dagegen 38 Prozent der Steinhöhe, weil der Fersenversatz größer ist. Rechenbeispiel: 18 cm mal 0,29 sind 5,2 cm.",
+      "Schnurabstand, also Gebindehöhe: einfache altdeutsche Deckung S = H minus HÜ, Doppeldeckung S = (H minus DÜ) geteilt durch 2. Bei der Doppeldeckung müssen die Steine des dritten Gebindes die des ersten um mindestens 2 cm überdecken, das ist die Überdoppelung DÜ. Beispiel: (48 minus 2) geteilt durch 2 = 23 cm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l06",
+    "lernfeld": "lf09",
+    "thema": "Schuppendeckung",
+    "titel": "Schuppendeckung: gleiche Steine, gleiches Maß",
+    "inhalt": [
+      "Die Schuppendeckung ist die Schieferdeckung mit Steinen gleicher Größe — dadurch entsteht ein gleichmäßiges Deckbild. Auf der Baustelle heißt das für dich: Format passend zur Dachneigung wählen, dann Überdeckung und Schnurabstand rechnen.",
+      "Der Unterschied zur altdeutschen Deckung: Bei der Schuppendeckung verwendest du Decksteine gleicher Größe mit normalem Hieb, bei der altdeutschen Deckung Decksteine verschiedener Größen. Die Regeldachneigung beträgt bei beiden Deckarten 25 Grad.",
+      "Die Mindestüberdeckung entspricht der altdeutschen Deckung mit normalem Hieb: Höhenüberdeckung gleich Seitenüberdeckung, jeweils 29 Prozent der Steinhöhe, mindestens 5 cm. Der Schnurabstand ist S = H minus HÜ, also Steinhöhe minus Höhenüberdeckung.",
+      "Standardformate der Schuppenschablonen mit empfohlenem Dachneigungsbereich: 42/32 und 40/30 für 25 bis 30 Grad, 36/28 und 34/28 für 25 bis 35 Grad, 32/28 und 30/25 für 30 bis 40 Grad, 28/23 und 26/21 für 35 bis 50 Grad, 24/19 und 22/17 für 40 bis 60 Grad, 20/15 und 18/15 ab 50 Grad.",
+      "Die Logik dahinter: Je flacher das Dach, desto größer der Stein. Je steiler das Dach, desto kleiner kann er sein, weil das Wasser schneller abläuft. Ab 50 Grad werden deshalb die kleinsten Formate 20/15 bzw. 18/15 cm empfohlen.",
+      "Kurzcheck ohne Buch: Was unterscheidet Schuppendeckung und altdeutsche Deckung? Wie groß ist die Regeldachneigung? Wie rechnest du Höhen- und Seitenüberdeckung aus der Steinhöhe? Welches Format nimmst du bei 27 Grad, welches ab 50 Grad?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l07",
+    "lernfeld": "lf09",
+    "thema": "Traufe Ort Grat First",
+    "titel": "Fußgebinde, Ort, Grat und First sauber decken",
+    "inhalt": [
+      "Die Fläche ist das eine, die Ränder das andere. An Traufe, Ortgang, Grat und First arbeitest du mit eigenen Steinen und eigenen Regeln — dort trifft das Wasser auf die Kante der Deckung.",
+      "Gebinde, die an der Traufe beginnen, heißen Fußgebinde. Sie bestehen aus Fußsteinen und Gebindestein. Weil dabei Fußsteine verschiedener Größen verwendet werden, steigen die Gebinde schräg an — genau dafür sind sie da.",
+      "Die seitliche Begrenzung der Deckung bilden die Ortsteine. Du unterscheidest Anfangortsteine und Endortsteine; ihre Größe sollte der Decksteingröße angepasst sein. Ortsteine werden mit einem Überstand von etwa 5 cm über die Unterkonstruktion gedeckt.",
+      "Der Anfangort wird als Stichort gedeckt. Das Endort kann als Stichort — mit Endortstein und Endortstichstein — oder als Doppelort einfach oder gestaffelt gedeckt werden. Die Stichsteine gleichen den Höhenunterschied zwischen den Gebinden aus und leiten das Wasser vom Ortgang weg.",
+      "Am Grat müssen die Gebinde der Wetterseite mindestens 5 cm über die Gebinde der wetterabgewandten Seite hinausragen. Grate sollten eingebunden werden. Geht das bei der Schuppendeckung nicht, weil sonst die höchstzulässige Gebindesteigung überschritten würde, deckst du sie als aufgelegte Orte bzw. als Strackorte.",
+      "Gebinde, die unter dem Firstgebinde enden, werden durch ein Ausspitzgebinde abgeschlossen. Das Firstgebinde selbst besteht aus Anfangfirststeinen, Firststeinen und dem Schlussstein. Sichtbar bleiben nur die Nägel des Schlusssteines, zwei bis drei Steine vor dem Ortgang; Einkerbungen sollen das Wasser von ihnen ableiten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l08",
+    "lernfeld": "lf09",
+    "thema": "Materialermittlung",
+    "titel": "Material rechnen: kg pro Quadratmeter, Flächenränder, Stückzahl",
+    "inhalt": [
+      "Vor der Bestellung steht die Rechnung: Wie viel Schiefer geht auf die Fläche, wie viel an Fuß, Ort, Grat und Kehle? Fehlt Material, steht die Kolonne. Ist zu viel bestellt, liegt Geld auf dem Dach.",
+      "Eine genaue Ermittlung nach Stückzahl ist bei altdeutschen Decksteinen nicht möglich, weil die Höhen und Breiten innerhalb einer Sortierung unterschiedlich sind. Deshalb werden die Schiefermengen für Flächen in kg/m² und für Fußgebinde, Orte, Grate und Kehlen in kg/m bestimmt und gehandelt.",
+      "Materialbedarf altdeutsche Deckung, jeweils behauen: stumpfer Hieb rund 30 kg/m², normaler Hieb rund 36 kg/m², scharfer Hieb rund 38 kg/m², Doppeldeckung rund 45 kg/m². Jeweils roh: Fußsteine 4 bis 7 kg/m, Ortsteine 10 bis 12 kg/m, Firststeine 8 bis 11 kg/m, Kehlsteine 25 bis 30 kg/m.",
+      "Von der Dachfläche ziehst du Randstreifen ab, weil dort keine Flächendecksteine, sondern Zubehörsteine liegen: für die Fußgebinde 0,15 m, für Orte und Grate 0,20 m, für Kehlen 0,50 m.",
+      "Die Dachfläche eines Satteldachs rechnest du als A = 2 mal Trauflänge mal Ortganglänge. Beispiel: 2 mal 24 m mal 7,85 m = 376,8 m². Davon gehen anschließend die Randstreifen für Fuß und Ort ab.",
+      "Masse mit Zuschlag für Bruch und Verhau: Masse = (1 plus Zuschlag in Prozent geteilt durch 100) mal Fläche mal Bedarf. Beispiel Fläche: 1,05 mal 363,32 m² mal 30 kg/m² = 11444,58 kg, also rund 11445 kg. Beispiel Fußgebinde: 1,05 mal 2 mal 24 m mal 7 kg/m = 352,8 kg, also rund 353 kg.",
+      "Die Sortierungen 1/32 und 1/64 werden bei der altdeutschen Doppeldeckung nicht verwendet: Sie ergeben zu geringe Gebindehöhen und zu sperrende Überdeckungen. Im Rechenbeispiel des Buches sind die Flächendecksteine Sortierung 1/12 im normalen Hieb, die Fußsteine je zur Hälfte 1/12 und 1/8, jeweils roh.",
+      "Bei Schablonen mit festem Format geht die Stückzahl: Bedarf n = 10000 geteilt durch die Deckfläche einer Platte in cm², und die Deckfläche ist (Steinhöhe minus Höhenüberdeckung) mal (Breite minus Seitenüberdeckung). Die 10000 stehen dafür, dass ein Quadratmeter 10000 cm² hat. Beispiel 30/30 bei 45 Grad: 10000 geteilt durch (21 mal 22) = 21,65 Stück/m²."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l09",
+    "lernfeld": "lf09",
+    "thema": "Spitzwinkeldeckung",
+    "titel": "Spitzwinkel und Rhombus: Rauten richtig einteilen",
+    "inhalt": [
+      "Bei der Spitzwinkeldeckung liegen die Platten als Rauten auf der Spitze. Du musst daraus drei Dinge holen: das zur Dachneigung passende Format, den Schnurabstand und den Plattenbedarf pro Quadratmeter.",
+      "Ausgeführt wird sie mit rautenförmigen Schieferplatten mit gestutzten Ecken — die Stutzung heißt Abschnitt. Für die Spitzschablonendeckung werden quadratische Faserzementplatten im Format 30 mal 30 cm oder 40 mal 40 cm verwendet. Die Regeldachneigung beträgt 30 Grad.",
+      "Gedeckt wird im halben Verband mit einer Stoßfuge von 3 bis 6 mm Breite. An der Spitze bekommen die Platten einen Überhang von mindestens 1 cm. Rhombusplatten werden mit zwei Schieferstiften befestigt, Spitzschablonen zusätzlich mit einem Plattenhaken.",
+      "Schnurabstand bei der Spitzschablonendeckung mit Faserzementplatten: S = Steinbreite geteilt durch 2 minus Überhang. Bei Schiefern: S = (Steinhöhe minus Abschnitt) geteilt durch 2 minus Überhang. Kürzel dazu: SB Steinbreite, SH Steinhöhe, AB Abschnitt, ÜH Überhang.",
+      "Die Rhombusdeckung wird mit rhombenförmigen Platten im Format 40/44 ausgeführt, deren seitliche Ecken gestutzt sind. Ab 30 Grad Dachneigung beträgt die Mindesthöhenüberdeckung 10 cm und der Schnurabstand höchstens 162 mm. Ab 35 Grad reicht eine Höhenüberdeckung von 9 cm, der Schnurabstand darf dann bis 174 mm betragen.",
+      "Standardformate mit Schiefer, jeweils Mindestdachneigung und Bedarf: 47/31 mit Abschnitt 10,7 cm ab 30 Grad, 18,27 Stück/m²; 43/29 ab 30 Grad, 22,03; 38/25 ab 30 Grad, 30,42; 36/24 ab 45 Grad, 32,68; 33/21 ab 45 Grad, 38,56; 30/20 ab 60 Grad, 46,08; 29/19 ab 60 Grad, 50,85; 26/18 ab 60 Grad, 62,77 Stück/m².",
+      "Deckfläche einer Spitzwinkelschablone nach der Rautenformel: A = 0,5 mal (Steinhöhe minus Abschnitt minus Überhang) mal Steinbreite. Daraus der Bedarf: n = 10000 geteilt durch A. Achte auf die Einheiten — Maße in cm, Deckfläche in cm², Bedarf in Stück pro Quadratmeter."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l10",
+    "lernfeld": "lf09",
+    "thema": "Rechteckdoppeldeckung",
+    "titel": "Rechteckdoppeldeckung: Lattenabstand und Plattenbedarf",
+    "inhalt": [
+      "Die Rechteckdoppeldeckung deckst du mit rechteckigen Schablonen, wobei das dritte Deckgebinde das erste überdeckt. Drei Dinge musst du daraus fürs Dach holen: die zulässige Dachneigung, den Lattenabstand und den Plattenbedarf.",
+      "Regeldachneigung: 22 Grad bei Deckung mit Schieferplatten, 25 Grad bei Deckung mit Faserzementplatten. Gedeckt wird auf Schalung oder auf Lattung. Bei Lattendeckung ist eine Unterschreitung der Regeldachneigung um 4 Grad möglich, wenn eine naht- und perforationsgesicherte Unterdeckung ausgeführt wird.",
+      "Kennzeichen der Deckung: halber Verband, Stoßfuge von 3 bis 6 mm Breite, und das dritte Deckgebinde überdeckt das erste. Wie groß die Überdeckung ausfällt, richtet sich nach der Schiefergröße und nach der Dachneigung.",
+      "Schnurabstand und maximaler Lattenabstand: S = (Plattenhöhe minus Überdeckung) geteilt durch 2. Beispiel Format 30 mal 60 cm mit 10 cm Doppeldeckung: (60 minus 10) geteilt durch 2 = 25 cm. Zweites Beispiel, Rechteckschablone 25 mal 40 cm mit 10 cm Überdeckung: (40 minus 10) geteilt durch 2 = 15 cm.",
+      "Deckfläche einer Platte: A = 0,5 mal (Höhe minus Überdeckung) mal (Breite plus Stoßfuge). Beispiel: 0,5 mal (40 minus 10) mal (25 plus 0,3) = 379,5 cm². Der Bedarf ist dann n = 10000 geteilt durch A. Beispiel dazu: 10000 geteilt durch (0,5 mal 30 mal 25,4) = 10000 geteilt durch 381 = 26,25 Stück/m².",
+      "Reihen einteilen: Anzahl der Reihen = Sparrenlänge geteilt durch Schnurabstand. Beispiel: 9,75 m geteilt durch 0,15 m ergibt 65 Reihen. Rechne beide Werte vorher in dieselbe Einheit um, sonst liegt das Ergebnis um den Faktor 100 daneben.",
+      "Aus der Tabelle der Standardformate der Schieferplatten — dort steht Breite vor Höhe — für das Format 30/60: ab 22 Grad Überdeckung 12 cm und 13,66 Stück/m², ab 30 Grad 10 cm und 13,33, ab 40 Grad 8 cm und 12,82, ab 50 Grad 6 cm und 12,35 Stück/m².",
+      "Befestigung je Schiefer: auf Vollschalung mindestens 2 Schiefernägel oder 2 Schieferstifte, auf Lattung 1 Klammerhaken oder 1 Einschlaghaken. Bei Lattendeckung müssen zusätzlich die Mindestlattenquerschnitte beachtet werden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l11",
+    "lernfeld": "lf09",
+    "thema": "Reparaturen",
+    "titel": "Reparieren, befestigen, Einbauteile setzen",
+    "inhalt": [
+      "Reparatur heißt: einzelne Steine tauschen, ohne dass die Befestigung sichtbar oben aufliegt — und Einbauteile wie Sicherheitsdachhaken so setzen, dass die Platten darunter nicht brechen.",
+      "Bei Schieferdeckungen sollten Reparaturschiefer aus derselben Grube und mit derselben Dicke verwendet werden. Dann passt der neue Stein in Farbe, Struktur und Dicke zur vorhandenen Deckung — optisch wie technisch.",
+      "Um eine Blankbefestigung zu vermeiden, gibt es spezielle Reparaturhaken oder Plattenhalter. Sie bestehen aus einem Blatt, das auf der Schalung befestigt wird, und aus Drähten bzw. Haltearmen, die den Schiefer halten.",
+      "Sicherheitsdachhaken werden bei Schiefer- und Faserzementdeckungen nur an den Dachsparren befestigt. Eingedeckt werden sie über eine Metallunterlage oder einen Rastnagel: Auf dem eingeschlagenen Rastnagel liegt der Dachhaken auf, so brechen die Dachplatten nicht unter Druck.",
+      "Faserzement-Dachplatten werden mit mindestens zwei Schieferstiften aus Edelstahl, Kupfer oder feuerverzinkt befestigt. Bei Plattengrößen über 30 mal 30 cm kommen Sturmklammern oder Haken dazu. Fuß- und Gebindeplatten sowie Ort- und Stichplatten bekommen mindestens 3 bis 4 Schieferstifte, ansteigende Platten am First oder Grat mindestens 4 bis 5.",
+      "Kurzcheck ohne Buch: Warum Schiefer aus derselben Grube? Wofür ist der Reparaturhaken da? Woran wird der Sicherheitsdachhaken befestigt und wozu dient der Rastnagel? Wie viele Stifte hält eine normale Faserzementplatte, wie viele eine Ortplatte?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l12",
+    "lernfeld": "lf09",
+    "thema": "Holzschindeln",
+    "titel": "Holzschindeln: Holzart, Lagen, Nagelung",
+    "inhalt": [
+      "Holzschindeln decken Dächer und bekleiden Außenwände. Drei Entscheidungen triffst du dabei jedes Mal: welche Holzart, wie viele Lagen bei der vorhandenen Dachneigung, und wie du befestigst, ohne dass das Holz spaltet oder das Metall angegriffen wird.",
+      "Verwendet werden gesägte oder gespaltene Schindeln aus europäischen oder nordamerikanischen Hölzern: Lärche für Wandbekleidung und Dachdeckung, meist kleinformatig; Rot-Zeder WRC für Dachdeckung und Wandbekleidung; Weiß-Zeder EWC für Wandbekleidung; Alaska-Zeder für Dachdeckung, mit Farbreaktionen bei Zink; Fichte für Wandbekleidung.",
+      "Regeldachneigung: 71 Grad bei zweilagiger Deckung, dort überdeckt die dritte Lage die erste. 22 Grad bei dreilagiger Deckung, dort überdeckt die vierte Lage die erste. Mehr Lagen erlauben also ein flacheres Dach. Und allgemein gilt: Je steiler die Dachneigung, desto höher die Lebensdauer der Deckung.",
+      "Eine gute Hinterlüftung ist Pflicht: Nur so trocknet die Deckung schnell, und Fäulnis durch anhaltende Feuchtigkeit wird verhindert. Deshalb liegen Holzschindeln nicht direkt auf der Dachbahn, sondern auf einer Konterlattung.",
+      "Bedarf rechnen: Grundbedarf in Breitenmetern = Dachfläche in Quadratmetern geteilt durch den Reihenabstand in Metern. Beispiel: 300 m² bei 125 mm Reihenabstand ergeben 300 geteilt durch 0,125 = 2400 Breitenmeter. Dazu kommt der Verschnitt von etwa 5 bis 15 Prozent. Der Grundbedarf hängt von Schindellänge, Reihenabstand und Lagigkeit ab.",
+      "Befestigt wird mit Edelstahlstiften mit rauem, gerilltem oder geschraubtem Schaft. Verzinkte Nägel sind nicht ausreichend korrosionsbeständig und können zu Verfärbungen an der Schindeloberfläche führen. Edelstahlklammern haben eine geringe Auszugsfestigkeit und sollten nur in Ausnahmen verwendet werden.",
+      "Jede Schindel über 60 mm Breite wird mit zwei Nägeln befestigt, die 20 mm tief in die Unterkonstruktion eingeschlagen werden — auch breite Schindeln bekommen nur zwei Stifte. Schindeln über 250 mm Breite werden geteilt, damit Quell- und Schwindbewegungen sie nicht lockern oder spalten.",
+      "Weil Holzschindeln nach dem Verlegen arbeiten, brauchen sie Bewegungsfugen von im Allgemeinen 3 bis 5 mm. Der Fugenversatz beträgt mindestens 30 mm, zwischen der ersten und der dritten Reihe noch mindestens 20 mm. Achte auf die Metallverträglichkeit: Ausgewaschene Holz- und Holzschutzstoffe greifen vor allem Kupfer und Zink an.",
+      "Grate deckst du als aufgelegten Grat, als eingebundenen aufgelegten Grat oder als Schwenkgrat. Kehlen werden als Schwenkkehlen oder eingebundene Kehlen ausgeführt, wegen der größeren Wassermengen mindestens vierlagig, unterfüttert mit einem 120 bis 160 mm breiten Kehlbrett. Bei Kehlsparrenneigungen unter 26 Grad werden Metallkehlen erforderlich."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l13",
+    "lernfeld": "lf09",
+    "thema": "Wellplatten",
+    "titel": "Faserzement-Wellplatten: Neigung, Profil, Überdeckung",
+    "inhalt": [
+      "Faserzement-Wellplatten decken große Flächen mit wenigen Teilen. Dicht wird das nur, wenn die Dachneigung zur Dachtiefe passt, die Deckrichtung stimmt und die Überdeckungen eingehalten werden.",
+      "Die Regeldachneigung ist abhängig von der Dachtiefe — dem Abstand von der Traufe zum First — und von der Ausbildung der Höhenüberdeckung. Bis 10 m mindestens 9 Grad, über 10 bis 20 m mindestens 10 Grad, über 20 bis 30 m mindestens 12 Grad, über 30 m mindestens 14 Grad. Je größer die Dachtiefe, desto steiler die Neigung.",
+      "Zwei Profile: 177/51 hat 920 mm Plattenbreite, 5 Wellenberge und 873 mm Nutzbreite. 130/30 hat 1000 mm Plattenbreite, 8 Wellenberge und 910 mm Nutzbreite. Standardwellplatten gibt es in den Längen 2500, 2000, 1600 und 1250 mm, Kurzwellplatten mit 625 mm.",
+      "Überdeckungen: Standardwellplatten werden einheitlich mit einer Höhenüberdeckung von 200 mm gedeckt. Die Seitenüberdeckung ist profilabhängig — 47 mm beim Profil 177/51, 90 mm beim Profil 130/30. Genau daraus ergeben sich die Deckbreiten 873 mm und 910 mm.",
+      "Standardwellplatten sind einheitlich für die Linksdeckung vorbereitet, also von rechts nach links, und dafür an den entsprechenden Ecken gestutzt. Dieser Eckenschnitt verhindert, dass am Kreuzungspunkt von Seiten- und Längenüberdeckung vier Platten übereinanderliegen — höchstens drei liegen dort. Der Abstand im Bereich der Eckenschnitte beträgt 5 bis 10 mm.",
+      "Kurzwellplatten haben eine einheitliche Länge von 625 mm. Die Höhenüberdeckung beträgt 125 mm, der Lattenabstand 500 mm, die Seitenüberdeckung 47 mm. Die Deckunterlage besteht aus Latten mit einem Mindestquerschnitt von 4 mal 6 cm.",
+      "Sonderverlegung ab 5 Grad Dachneigung: Die Seitenüberdeckungen werden zusätzlich abgedichtet, mit einer Kitteinlage vom Durchmesser 8 mm. Kurzwellplatten können bei Dachneigungen ab 16 Grad anstatt mit Kitteinlagen auch mit Unterspannung gedeckt werden.",
+      "Grate werden mit korbbogenförmigen Gratkappen mit Muffen eingedeckt. Die Kappen werden an Gratbohlen mit mindestens 2 Schrauben befestigt; die Bohlen bzw. Latten sind mindestens 4 cm breit, ihre Höhe hängt unter anderem von der Dachneigung ab. Die Gratkappen dürfen nicht auf der Flächendeckung aufliegen.",
+      "Kehlen werden als untergelegte Metallkehlen ausgeführt oder mit Dichtungsbahnen abgedichtet. Bei Dachneigungen unter 25 Grad werden sie vertieft, mindestens 4 cm. Kehlen werden als untergelegte Metallkehlen ausgefuehrt oder mit Dichtungsbahnen abgedichtet. Bei Dachneigungen unter 25 Grad werden sie vertieft, mindestens 4 cm. Bei nicht vertieften Kehlen betraegt der Abstand der Wellplatten zur Kehlmitte 10 cm und der Ueberstand in die Kehle 12 cm; der Abstand von der Kehlmittellinie zur Aufkantung soll auf jeder Seite 30 cm betragen. Dachneigungswechsel deckst du mit Wellübergangshauben, bei Neigungsdifferenzen bis 15 Grad auch mit plastischem Kitt und genügend Überstand."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l14",
+    "lernfeld": "lf09",
+    "thema": "Schiefer Grundlagen",
+    "titel": "Dachschiefer: Herkunft, Güte und Handelsformen",
+    "inhalt": [
+      "Schiefer ist der Deckwerkstoff, den du in diesem Lernfeld ständig in der Hand hast — du musst am Stapel beurteilen können, ob das Material taugt, und wissen, welche Form für welche Deckung geliefert wird. Dachschiefer ist ein Umwandlungsgestein, das aus Tonstein entstanden ist.",
+      "Der Schiefer wird aus dem Gebirgsverband gelöst und in Schieferplatten von 4 bis 8 mm Stärke gespalten. Aus diesen rohen Platten werden die endgültigen Steine zugehauen. Dass er sich überhaupt so dünn spalten lässt, liegt an seiner Schieferung — genau die macht ihn als Deckwerkstoff brauchbar.",
+      "In der Hauptsache besteht Dachschiefer aus Quarz, Feldspat, Tonerde und Glimmer, dazu kommen einige andere Stoffe. Über den Anteil dieser Stoffe entscheidet sich die Qualität des Schiefers. Vier Namen zum Merken: Quarz, Feldspat, Tonerde, Glimmer.",
+      "Drei Beimengungen schaden. Schwefelkies reagiert mit Kalkstein zu Gips und mit Kaliglimmer zu Alaun — beides ist wasserlöslich. Ein zu hoher Kalksteinanteil reagiert mit der Kohlensäure, die im Regen steckt. Zu viel Kohlenstoff macht den Schiefer weich und unbeständig gegen Witterungseinflüsse.",
+      "Beurteilt wird eine Dachschieferplatte nach fünf Proben: Sicht-, Tast-, Behau-, Klang- und Ritzprobe. Im Labor kommen chemische, mineralogische und physikalische Untersuchungen dazu. Lern die fünf als feste Reihe — Sicht, Tast, Behau, Klang, Ritz.",
+      "Ritzprobe: Ein Schiefer muss kohlenstoffarm sein, dann zeigt er beim Anritzen einen hellen Strich; ein dunkler Strich bedeutet zu viel Kohlenstoff. Klangprobe: Beim Anschlagen mit dem Schieferhammer klingt ein rissfreier Schiefer hell, ein Schiefer mit Haarrissen dumpf und klirrend. In solche Schichtenrisse dringt Wasser ein, das bei Frost den Stein zerstört.",
+      "Dachschiefer gibt es in verschiedenen Handelsformen, damit alle Anforderungen an Dach- und Wandgestaltung abgedeckt sind. Für alle gilt dieselbe Untergrenze: Die Mindestnenndicke der Schieferplatten muss mindestens 5 mm betragen. Halte diese 5 mm gedanklich getrennt von den 4 bis 8 mm der rohen Spaltplatte.",
+      "Altdeutsche Decksteine werden unbehauen als Rautenrohlinge oder bereits behauen geliefert; man unterscheidet rechte und linke Decksteine, und sie sind in Größe und Form unterschiedlich. Schuppenschablonen werden zugehauen geliefert und ähneln den altdeutschen Decksteinen im Normalhieb — innerhalb einer Größenklasse sind hier aber alle Decksteine gleich groß.",
+      "Neben der Schuppenschablone ist die Rechteckschablone am verbreitetsten. Für Doppeldeckungen gibt es sie mit gestutzten Ecken (Achteckschablonen, Octogones) und mit halbkreisförmigem Fuß (Rundplättchen, Coquettes). Die Fachregeln nennen zusätzlich die Bogenschnittschablone mit Bogenschnitt rechts oder links — 30 × 30 und 25 × 25 cm fürs Dach, 20 × 20 cm für Wandbekleidungen — sowie Spitzwinkelschablonen. Weniger gebräuchlich: Litera- und Fischschuppenschablonen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l15",
+    "lernfeld": "lf09",
+    "thema": "Faserzement",
+    "titel": "Faserzement: Aufbau, Eigenschaften, Bestellung",
+    "inhalt": [
+      "Faserzement ist neben Schiefer der zweite Plattenwerkstoff der kleinformatigen Deckung. Du musst wissen, was drinsteckt, was das Material aushält und in welcher Reihenfolge du es bestellst — sonst liegt am Ende die falsche Plattenform auf der Palette.",
+      "Faserzement ist ein künstlicher Verbundstoff aus Fasermaterial, Zement, Zusatzstoffen und Wasser. Als Fasern werden Kunststofffasern aus Polyvinylalkohol oder Polyacrylnitril verwendet; sie dienen als Bewehrung des Verbundstoffs. Vier Bestandteile also: Fasern, Zement, Zusatzstoffe, Wasser.",
+      "Dazu kommen Prozessfasern, die während des Fertigungsprozesses nötig sind. Sie bestehen hauptsächlich aus Zellstoff und erhöhen die Haftfestigkeit zwischen den Kunststofffasern und dem Zement. Halte die zwei Fasersorten auseinander: Kunststofffasern bewehren, Zellstofffasern verbessern die Haftung.",
+      "Asbestfasern haben technisch gute Eigenschaften, dürfen aber wegen der Gesundheitsgefährdung in Deutschland nicht mehr für Hochbauprodukte verwendet werden. Gefährlich wird es vor allem beim Bearbeiten: Bei asbestzementhaltigen Bauteilen sind besondere Sicherheitsvorkehrungen zu treffen.",
+      "Aufgrund seiner Ausgangsstoffe ist Faserzement fäulnisbeständig und korrosionsbeständig gegen Umwelteinflüsse, außerdem frost- und temperaturbeständig. Er quillt und schwindet thermisch und feuchtigkeitsbedingt, bleibt dabei aber formstabil. Das Paar zusammen merken: quillt und schwindet — und bleibt trotzdem formstabil.",
+      "An Dachplatten aus Faserzement werden fünf Anforderungen gestellt. Sie müssen ebenflächig sein und eine gleichmäßige Oberflächenbeschaffenheit haben, wobei die Oberfläche auch strukturiert sein darf. Dazu müssen sie wasserdicht, frostbeständig und biegefest sein.",
+      "Bei Bestellungen gibst du in dieser Reihenfolge an: Form, Breite × Höhe jeweils in Millimetern, Art der Eckenausbildung. Beispiel: Dachplatte F 300 × 600 ge — Form F nach Produktdatenblatt, 300 mm breit, 600 mm hoch, mit gestutzten unteren Ecken. Also zuerst die Breite, dann die Höhe."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l16",
+    "lernfeld": "lf09",
+    "thema": "Deckunterlagen",
+    "titel": "Schalung, Vordeckung und Lattung unter dem Schiefer",
+    "inhalt": [
+      "Die Deckung ist nur so gut wie das, worauf du sie nagelst: Federt die Schalung oder arbeitet das Holz nach, reißt dir die fertige Schieferdeckung auf. Deshalb sind Brettdicke, Brettbreite, Sparrenabstand und Vordeckung feste Größen und keine Geschmacksfrage.",
+      "Die Schalungsbretter müssen trocken und gesund sein. Sie sollten mindestens 24 mm dick und ungefähr 20 cm breit sein; Bretter unter 12 cm Breite sollten nicht verwendet werden. Je nach Breite befestigst du sie mit zwei oder drei Nägeln auf jedem Sparren.",
+      "Ist der Sparrenabstand größer als 70 cm, müssen dickere Bretter verwendet werden. Der Grund ist das Federn: Eine zu dünne Schalung gibt beim Nageln nach, und dann sitzt der Nagel nicht sauber. Merkzahl dafür: 70 cm.",
+      "Feuchte Bretter schwinden beim Trocknen und könnten die aufgenagelte Schieferdeckung zerstören. Deshalb muss die Schalung vorgedeckt werden, meist mit Bitumendachbahnen. Die Vordeckung schützt außerdem den Dachinnenraum vor Schmutz und Treibschnee. Die Mindestüberlappung beträgt 80 mm.",
+      "Rechteckschiefer müssen nicht zwingend auf Schalung liegen — sie können auch auf Latten genagelt oder geklammert werden. Der Mindestquerschnitt der Latten beträgt dabei 30 × 50 mm, der Achsabstand der Sparren darf höchstens 80 cm betragen. Zwei Zahlen also: Latte 30 × 50 mm, Sparrenachse maximal 80 cm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l17",
+    "lernfeld": "lf09",
+    "thema": "Schieferwerkzeuge",
+    "titel": "Zurichten, Lochen und Nageln von Schiefer",
+    "inhalt": [
+      "Schiefer kommt selten passend auf dem Dach an — du richtest ihn selbst zu, lochst ihn und nagelst ihn so fest, dass am Ende fast kein Nagelkopf mehr zu sehen ist. Dafür brauchst du vier Werkzeuge und ein paar feste Zahlen.",
+      "Zur Schieferbearbeitung dienen der Schieferhammer, die Haubrücke, das Nageleisen und die Schieferschere. Müssen die Schiefer vor dem Eindecken zugerichtet werden, beschneidest du sie mit der Schieferschere oder behaust sie mit dem Schieferhammer auf der gebogenen Haubrücke.",
+      "Gelocht wird normalerweise mit der Spitze des Schieferhammers von der Unterseite nach oben. Dabei entsteht ein Trichter, in dem der Kopf des Schiefernagels versenkt werden kann. Werden dagegen Schieferstifte verwendet, lochst du von der Oberseite nach unten.",
+      "Decksteine werden mit mindestens drei Schiefernägeln in der Höhenüberdeckung befestigt. Steine unter 24 cm Höhe kann man mit zwei Schiefernägeln befestigen. Kehl-, Fuß- und Ortgangsteine bekommen immer mindestens drei Nägel, Firststeine vier.",
+      "Der Kopfdurchmesser eines Schiefernagels sollte mindestens 9 mm betragen, die Länge mindestens 32 mm. Verwendet werden korrosionsgeschützte Schiefernägel oder Schieferstifte — feuerverzinkt, aus Edelstahl oder aus Kupfer. Zwei Zahlen bleiben hängen: Kopf 9 mm, Länge 32 mm.",
+      "Die Nagelung ist mit Ausnahme des Schlusssteins an keiner Stelle sichtbar; die Lochung muss innerhalb der Überdeckung erfolgen. Sichtbar bleiben nur die Nägel des Schlusssteins, also der zwei bis drei Steine vor dem Ortgang."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l18",
+    "lernfeld": "lf09",
+    "thema": "Gebindesteigung",
+    "titel": "Gebindesteigung: Mindestwert, Höchstwert, Konstruktion",
+    "inhalt": [
+      "Bei der altdeutschen Deckung, der Schuppendeckung und der Bogenschnittdeckung dürfen die Gebinde wegen der Form der Decksteine nicht waagerecht verlaufen — die schräge Lage hält das Wasser draußen. Die Gebindesteigung ist der Winkel, den die Fußlinien der Decksteine mit der Trauflinie bilden; sie sichert die Regensicherheit.",
+      "Der Zusammenhang läuft umgekehrt zum Gefühl, deshalb gut merken: Je flacher das Dach geneigt ist, desto steiler muss die Gebindesteigung sein. Steile Dächer bekommen entsprechend eine geringe Gebindesteigung. Angegeben wird sie in Zentimetern je Meter Trauflänge oder als Winkel.",
+      "Die Mindestgebindesteigung rechnest du mit h = 1 minus sin alpha; alpha ist der Dachneigungswinkel, h kommt in Metern je Meter Trauflänge heraus. Beispiel bei 35 Grad: 1 minus 0,5736 = 0,4264 m, also 42,6 cm auf 1,00 m Trauflänge.",
+      "Brauchst du den Winkel statt der Steigung, gilt tan beta = h geteilt durch 1,0 m, also beta = arctan(1 minus sin alpha). Für 35 Grad: arctan(0,4264) = 23,1 Grad. Weil der Sinus zwischen 0 und 90 Grad wächst, wird h bei steilerem Dach automatisch kleiner.",
+      "Die Tabellenwerte der Mindestgebindesteigung: 25 Grad Dachneigung ergeben 30 Grad bzw. 57,7 cm/m; 30 Grad ergeben 26,5 Grad (50,0 cm/m); 40 Grad ergeben 20 Grad (35,7); 45 Grad ergeben 16,5 Grad (29,3); 50 Grad ergeben 13,5 Grad (23,4); 60 Grad ergeben 8 Grad (13,4); 70 Grad ergeben 3,5 Grad (6,0).",
+      "Ab wann geht es ganz ohne? Bei Dachneigungen über 70 Grad kann die Deckung ohne Gebindesteigung erfolgen. Rechnerisch bleiben bei 80 Grad nur noch 0,9 Grad (1,5 cm/m), bei 90 Grad ist die Steigung null — dort läuft das Wasser praktisch senkrecht ab.",
+      "Nach oben setzt der Brustwinkel des Decksteins die Grenze: Höchstgebindesteigung beta = 90 Grad minus (180 Grad minus Brustwinkel) geteilt durch 2. Stumpfer Hieb (75 Grad) ergibt 37,5 Grad, normaler Hieb (74 Grad) 37 Grad, scharfer Hieb (65 Grad) 32,5 Grad. Die tatsächliche Gebindesteigung muss zwischen Mindest- und Höchstwert liegen.",
+      "Zeichnerisch geht es ebenso: Trauflinie waagerecht ziehen und Punkt A festlegen, um A einen Viertelkreisbogen schlagen, die Dachneigung von A aus antragen — der Schenkel schneidet den Bogen im Punkt E —, von E die Senkrechte auf die Trauflinie fällen und zuletzt die Parallele zur Trauflinie durch E mit A verbinden. Dieser Winkel zur Trauflinie ist die Mindestgebindesteigung.",
+      "Kurzcheck ohne Buch: Was genau ist die Gebindesteigung? Wird sie bei flacherem Dach größer oder kleiner? Wie lautet die Formel für die Mindestgebindesteigung, und wie kommst du von h auf den Winkel? Ab welcher Dachneigung darf ohne Gebindesteigung gedeckt werden? Und wovon hängt die Höchstgebindesteigung ab?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l19",
+    "lernfeld": "lf09",
+    "thema": "Deutsche Deckung",
+    "titel": "Deutsche Deckung: Bogenschnitt von der Traufe bis zum Grat",
+    "inhalt": [
+      "Die deutsche Deckung ist die Bogenschnittdeckung: quadratische Steine mit Bogenschnitt, in steigenden Gebinden über die ganze Fläche bis in Traufe, Ort, First und Grat. Weil damit auch Walmdächer gedeckt werden, gehören Dachausmittlung und Flächenberechnung mit dazu.",
+      "Infrage kommen Schieferschablonen und Faserzementplatten, quadratisch und mit Bogenschnitt. Rechte Steine haben den Bogenschnitt links und werden für Rechtsdeckungen verwendet, linke Steine den Bogenschnitt rechts für Linksdeckungen. Universal- oder Vario-Schablonen aus quadratischen Schiefern (30 × 30, 25 × 25 cm) haben einen symmetrischen Bogenschnitt und dadurch zwei Fersen — damit sind Rechts- und Linksdeckung möglich, im Hochformat auch die Wand. Die Deckregeln entsprechen denen der Bogenschnittschablonen.",
+      "Die Regeldachneigung der deutschen Deckung beträgt 25 Grad. Die Höchstgebindesteigung beträgt 45 Grad, das heißt 1 m Steigung auf 1 m Trauflänge. Je geringer die Dachneigung ist, desto größer wird die Gebindesteigung; Dächer über 70 Grad können ohne Gebindesteigung gedeckt werden.",
+      "Überdeckungen beim Format 30/30, erster Wert Seite, zweiter Höhe: ab 25 Grad 9/11, ab 30 Grad 9/10, ab 35 Grad 9/9, ebenso ab 45 und ab 55 Grad. Der Schnurabstand des Deckgebindes ist die Dachplattenhöhe minus der Höhenüberdeckung und verläuft mit der gewählten Gebindesteigung.",
+      "Der eingespitzte Fuß wird auf ein waagerecht verlaufendes Traufgebinde gedeckt; im Traufbereich laufen die Gebinde durch die Verwendung von Einspitzern aus. Beim Traufgebinde beträgt die Seitenüberdeckung mindestens 12 cm. Sein Schnurabstand ist gleich der Dachplattenhöhe und verläuft parallel zur Traufe.",
+      "Das Anfangort besteht aus Stichplatte, Anfangortplatte und eventuell Zwischenortplatte. Die Stichplatte wird bis zum Rücken der ersten Dachplatte des darunterliegenden Gebindes geführt, die Anfangortplatte bis zur zweiten; dabei überdeckt sie die Spitze der Stichplatte. Ortplatten werden mit rundem Rücken ausgeführt, der Überstand an der Ortkante beträgt etwa 4 bis 6 cm. Orte immer einbinden — aufgelegte Orte sind reparaturanfällig und die Regensicherheit ist gefährdet.",
+      "Firstgebinde werden aufgelegt und parallel zum First gedeckt; bei Platten 30 × 30 und 40 × 40 cm mit Bogenschnitt gilt Seitenüberdeckung mindestens 12 cm, Höhenüberdeckung mindestens 10 cm. Endorte am Grat deckst du als Doppelorte oder Stichorte, Doppelorte gestaffelt über zwei oder mehrere Gebinde. Der Anfangort am Grat wird als Stichort oder stehend eingebundenes Ort gedeckt. First- und Gratsteine werden mit vier Nägeln befestigt.",
+      "Dächer mit ungleichen Dachneigungen kannst du in der Draufsicht nur über die Ansichten — Vorder- und Seitenansicht — oder über die Dachprofile ausmitteln; bei schiefwinkligen Grundrissen brauchst du weitere Ansichten in der Bildebene. Zusammengesetzte Grundrisse zerlegst du in zweckmäßige Teilgrundrisse. In den Anfallpunkten treffen in der Regel drei Dachlinien zusammen, und Grat- und Kehllinien verlaufen im Grundriss immer näher an der Traufe mit der steileren Dachneigung.",
+      "Rechnen: Bei allseitig gleicher Dachneigung ist die Dachfläche gleich der Grundfläche geteilt durch den Kosinus der Dachneigung — 11,35 m mal 8,65 m durch cos 45 Grad ergibt 138,82 m². Beim 45-Grad-Walm ist die Gratlänge gleich Breite geteilt durch 2 mal Wurzel 3, also 4,325 mal 1,7321 = 7,49 m. Nagelbedarf: drei Nägel je Deckstein bei Schiefer, zwei bei Faserzement plus ein Plattenhaken beim Format 40/40."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l20",
+    "lernfeld": "lf09",
+    "thema": "Waagerechte Deckung",
+    "titel": "Waagerechte Deckung mit Rechteckplatten 60/30",
+    "inhalt": [
+      "Bei der waagerechten Deckung werden Rechteckplatten breitkant mit Höhen- und Seitenüberdeckung gedeckt; für Dachdeckungen wird das Format 60/30 cm verwendet. Der Name sagt, wie das Ergebnis aussieht: Die Gebinde laufen waagerecht über die Fläche.",
+      "Gedeckt wird gegen die Wetterrichtung, auf einer Lattung oder auf einer Schalung mit Vordeckung. Die Spitze der Platte wird abgesenkt — das ist die hängende Ferse. Konkret heißt das: Die untere, sichtbare Längskante wird um 5 bis 10 mm abgesenkt und bildet so eine Tropfkante.",
+      "Die Regeldachneigung beträgt 30 Grad, bei der Deckung auf Latten 35 Grad. Merk dir die beiden Werte als Paar — auf Latten braucht es die steilere Neigung. Befestigt wird jede Platte mit einem Plattenhaken und zwei Schieferstiften.",
+      "Mindestüberdeckungen beim Format 60/30: ab 30 Grad Seitenüberdeckung 12 cm und Höhenüberdeckung 10 cm bei 10,42 Stück je m²; ab 40 Grad 11 und 9 cm bei 9,72 Stück; ab 50 Grad 9 und 8 cm bei 8,91 Stück. Je steiler das Dach, desto kleiner die Überdeckungen und desto weniger Platten.",
+      "Den Plattenbedarf rechnest du über die sichtbare Fläche: (30 minus Höhenüberdeckung) mal (60 minus Seitenüberdeckung), Ergebnis in cm². Bedarf je m² = 10000 geteilt durch diese Fläche, weil 1 m² gleich 10000 cm² ist. Beispiel: 30 minus 9 = 21 cm, 60 minus 11 = 49 cm, 21 mal 49 = 1029 cm², 10000 geteilt durch 1029 = 9,72 Stück je m².",
+      "Für die Bestellung kommt Bruch und Verhau dazu. Erst Grundbedarf = Dachfläche mal Bedarf je m², dann mal (1 plus Prozentsatz geteilt durch 100). Beispiel: 2 mal 14,35 m mal 6,65 m = 190,855 m²; 190,855 mal 9,72 = 1855,11, aufgerundet 1856 Stück; 2,5 Prozent Bruch sind 46 Stück; insgesamt 1902 Stück."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf09-l21",
+    "lernfeld": "lf09",
+    "thema": "Bitumenschindeln",
+    "titel": "Bitumenschindeln: Unterlage, Nagelung, Anschlüsse",
+    "inhalt": [
+      "Bitumenschindeldeckungen werden als Doppeldeckungen ausgeführt. Du nagelst sie auf eine feste, geschlossene Unterlage und arbeitest Traufe, Ortgang und First mit zugeschnittenen Schindelstücken aus. Deckhöhe und Materialbedarf rechnest du selbst aus zwei kurzen Formeln.",
+      "Als Deckunterlage kommen infrage: Schalung aus Vollholz mit 8 bis 15 cm Brettbreite und mindestens 24 mm Dicke, Schalung aus Holzwerkstoffplatten (BFU 100 G, mindestens 22 mm) und Leichtbeton. Alle drei haben eines gemeinsam — sie tragen die Schindel geschlossen und vollflächig.",
+      "Die Regeldachneigung hängt von Schindelform und Sparrenlänge ab. Rechteck: bis 10 m Sparrenlänge mindestens 15 Grad, über 10 m mindestens 20 Grad. Biber und Dreieck: mindestens 20 bzw. 25 Grad. Wabe: mindestens 25 bzw. 30 Grad. Das Muster ist gleichmäßig — die längere Sparrenlänge kostet jeweils 5 Grad mehr.",
+      "Die Deckunterlage ist mit einer Vordeckung zu versehen, die möglichst horizontal anzuordnen ist. Die Naht- und Stoßüberdeckung beträgt 8 cm. Die Bahnen werden mit korrosionsgeschützten Breitkopfnägeln in einem Abstand von etwa 10 cm befestigt.",
+      "Die Schindel selbst wird mit mindestens vier Breitkopfnägeln befestigt, und zwar in einer Nagellinie etwa 2 cm über den Schürzeneinschnitten. Liegt die Dachneigung über 60 Grad, kommen zwei Nägel dazu — an den beiden oberen äußeren Ecken oder in der Nagellinie. Also vier Nägel normal, sechs über 60 Grad.",
+      "Der Schnurabstand, also die sichtbare Deckhöhe, ist S = (Schindelhöhe minus Überdeckung) geteilt durch 2. Geteilt wird durch 2, weil doppelt gedeckt wird. Beispiel: Schindeln 100 × 33,3 cm bei 8 cm Überdeckung ergeben S = (33,3 minus 8) geteilt durch 2 = 12,65 cm.",
+      "Daraus folgt der Materialbedarf: Deckfläche einer Schindel = 0,5 mal (Höhe minus Überdeckung) mal (Breite plus Bewegungsfuge), wobei die Bewegungsfuge 2 mm beträgt. Bedarf je m² = 10000 geteilt durch diese Fläche in cm². Beispiel: 10000 geteilt durch (12,65 mal 100,2) = 7,889 Stück je m².",
+      "Traufe: Über ein Traufblech wird das erste Gebinde umgekehrt verlegt, mit den Schlitzen nach oben. Die Schindel kann auch oberhalb der Schlitze abgeschnitten und als Ansetzgebinde verwendet werden. Dadurch wird eine volle Verklebung mit dem darüberliegenden Gebinde erreicht. Das erste Gebinde soll mit der Traufblechabkantung abschließen.",
+      "Am Ortgang wird an der Dachkante eine mindestens 3 cm hohe Dreikantleiste befestigt, auf der Vordeckung und Gebinde hochgeführt und mit Stiften befestigt werden; die andere Möglichkeit sind durchgehende untergelegte Bleche mit dachseitigem Wasserfalz. Der First wird entgegen der Wetterrichtung eingedeckt, mit aus den Schindeln zugeschnittenen Firstkappen, Teilstücke mindestens 200 mm breit. Mindestüberdeckung in Längsrichtung bei Doppeldeckung: 4,5 cm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

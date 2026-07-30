@@ -54,5 +54,182 @@
     "quelle": "Bauphysik-Grundlagen (λ, µ, sd-Wert); Herstellerunterlagen Dampfbremsen",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 228' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='sd-Wert als gleichwertige Luftschichtdicke'><rect x='34' y='50' width='16' height='46' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='60' y='78' fill='currentColor' font-size='17' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>≙</text><rect x='86' y='50' width='168' height='46' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='4 3'/><text x='94' y='78' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>gleichwertige Luftschicht</text><line x1='86' y1='118' x2='254' y2='118' stroke='currentColor' stroke-width='1.1'/><line x1='86' y1='118' x2='91.8' y2='116.5' stroke='currentColor' stroke-width='1.1'/><line x1='86' y1='118' x2='91.8' y2='119.5' stroke='currentColor' stroke-width='1.1'/><line x1='254' y1='118' x2='248.2' y2='119.5' stroke='currentColor' stroke-width='1.1'/><line x1='254' y1='118' x2='248.2' y2='116.5' stroke='currentColor' stroke-width='1.1'/><text x='170.0' y='111.0' fill='currentColor' font-size='12' text-anchor='middle' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>sd in Metern</text><text x='34' y='132' fill='#c07d4a' font-size='13' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>sd = µ · d</text><line x1='18' y1='152' x2='362' y2='152' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='174' fill='currentColor' font-size='12.5'>Dampfbremse: großer sd-Wert, bremst stark</text><text x='30.0' y='196' fill='currentColor' font-size='12.5'>Unterdeckbahn: kleiner sd-Wert, diffusionsoffen</text></svg>"
+  },
+  {
+    "id": "lf06-l05",
+    "lernfeld": "lf06",
+    "thema": "Putze",
+    "titel": "Putz: Aufbau, Bestandteile und Putzarten",
+    "inhalt": [
+      "Putz ist die Schicht, die aus rohem Mauerwerk eine ebene, haltbare Oberfläche macht — innen wie außen. Fachlich ist Putz ein Gemisch aus Bindemitteln, Zusätzen, Wasser und Gesteinskörnungen zur Herstellung ebener Oberflächen. Aufgetragen wird er von Hand oder mit Putzmaschinen auf Wand- und Deckenflächen.",
+      "Putze baust du ein- oder mehrlagig auf. Die unteren Lagen heißen Unterputz, die oberste Lage Oberputz. Der Unterputz ist die dickere Lage: Er gleicht Unebenheiten aus und stellt die Verbindung zum Untergrund her. Der Oberputz ist dünner, bildet die sichtbare Oberfläche und bestimmt die Struktur.",
+      "Die wichtigste Regel im Putzaufbau: Die Festigkeit muss von innen nach außen abnehmen — weich auf hart. Der Oberputz ist also weicher als der Unterputz. Ein zu harter Oberputz auf weichem Unterputz reißt, weil er die Zugspannungen aus dem Schwinden nicht aufnehmen kann.",
+      "Die Gesteinskörnung bildet das feste, tragende Gerüst des Putzmörtels und mindert das Schwinden. Sie soll so abgestuft sein, dass die kleineren Körner die Hohlräume zwischen den größeren füllen, und sie muss frei von Verunreinigungen sein. Als Bindemittel dienen Kalk und Zement, im Innenbereich häufig Gips.",
+      "Neben den mineralisch gebundenen gibt es organisch gebundene Putze. Der Dispersionsputz (Kunstharzputz) bindet mit reiner Polymerdispersion. Der Dispersionssilikatputz (Silikatputz) nutzt Kali-Wasserglas zusammen mit Polymerdispersion. Der Siliconharzputz arbeitet mit einer Siliconharzemulsion und Polymerdispersion. Das Merkwort für den Silikatputz lautet Kali-Wasserglas.",
+      "Eine Putzbewehrung, zum Beispiel Glasfasergewebe, wird in den Putzmörtel eingebettet. Sie erhöht die Zugfestigkeit des Putzes und vermindert damit die Gefahr der Rissbildung. Besonders erforderlich ist sie beim Materialwechsel im Untergrund und bei Wärmedämm-Verbundsystemen.",
+      "Ein Putzträger, zum Beispiel Rippenstreckmetall, kommt bei nicht ausreichend tragfähigen Untergründen zum Einsatz und wenn breite Wandschlitze überspannt werden müssen. Er wird befestigt und sorgt für dauerhaften Halt des Putzes. Der Unterschied kurz: Die Bewehrung liegt IM Putz, der Träger liegt UNTER dem Putz.",
+      "Innenputze gestalten die Oberfläche, gleichen Maß- und Winkelabweichungen des Rohbaus aus, schaffen einen ebenen Untergrund für Anstriche und verbessern das Raumklima, weil sie Feuchtigkeit aufnehmen und wieder abgeben. Akustikputze haben eine sehr offenporige Struktur, absorbieren Schallwellen und verbessern so die Raumakustik, etwa in Räumen mit starkem Nachhall.",
+      "Der Außenputz wird von mehreren Seiten beansprucht: Wasserdampf von innen, Luftverschmutzung, Temperaturwechsel und Frost sowie Niederschläge. Deshalb muss er widerstandsfähig und witterungsbeständig sein. Zeichnest du einen zweilagigen Außenputz im Querschnitt, gehören drei Beschriftungen hinein — Putzgrund Mauerwerk, Unterputz, Oberputz — plus der Pfeil, dass die Festigkeit nach außen abnimmt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l06",
+    "lernfeld": "lf06",
+    "thema": "Putzausführung",
+    "titel": "Putz auftragen: Untergrund, Dicke, Temperatur, Trocknung",
+    "inhalt": [
+      "Ob der Putz hält oder in einem Jahr abplatzt, entscheidet sich vor dem ersten Auftrag am Untergrund. Die notwendige Putzhaftung erreichst du nur, wenn der Putzgrund sauber, tragfähig, trocken, frostfrei, saugfähig und rau ist. Anhaftende Staub- und Schmutzschichten musst du vor der Ausführung entfernen.",
+      "Vor dem Verputzen von Betonflächen wird der Restfeuchtegehalt geprüft. Er darf höchstens 3 Masseprozent betragen, sonst haftet der Putz nicht ausreichend. Also gilt: erst messen, dann putzen.",
+      "Bei schwach saugenden, glatten Oberflächen wie Kalksandstein oder Beton bringst du als Putzgrundvorbehandlung eine Haftbrücke auf oder führst einen Spritzbewurf aus. Beides schafft eine raue, griffige Oberfläche, an der der Putz gut haftet.",
+      "Putzprofile werden an Ecken und Kanten angebracht. Sie ermöglichen die rationelle Herstellung ebener Flächen — du setzt damit deine Putzlehren — und schützen gleichzeitig die Kanten. An Ecken kommen Eckprofile, auch Kantenprofile genannt.",
+      "Bei der Schichtdicke hat sich für den Innenputz etwa 10 mm bewährt, ein- oder zweilagig ausgeführt. Außenputze sind meist zweilagig; die mittlere Putzdicke des zweischichtigen Systems muss mindestens 20 mm betragen. Zwei Zahlen zum Merken: innen etwa 10, außen mindestens 20.",
+      "Achte auf die Temperatur: Bauteil- und Umgebungstemperatur dürfen während des Auftragens und der Erhärtung nicht unter +5 Grad Celsius liegen, bei organisch gebundenen Putzen nicht unter +8 Grad Celsius. Bei Frost kann der Putz nicht richtig erhärten.",
+      "Faustregel für die Trocknungs- beziehungsweise Standzeit vor der nächsten Lage oder Beschichtung: 1 Tag pro mm Schichtdicke. Ein 12 mm dicker Gipsputz braucht also etwa 12 Tage. Die Rechnung ist so einfach wie sie aussieht — Schichtdicke in mm gleich Anzahl der Tage.",
+      "Der fertig abgezogene Putz lässt sich auf vielfältige Weise modellieren, strukturieren, reiben oder glätten. Die dabei entstehende Struktur heißt Putzweise. Putzweise meint also die Art der Oberflächenbearbeitung, die dem fertigen Putz seine Struktur und sein Aussehen gibt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l07",
+    "lernfeld": "lf06",
+    "thema": "Bindemittel Gips",
+    "titel": "Gips: vom Gipsstein zum fertigen Putz",
+    "inhalt": [
+      "Gips ist neben Kalk und Zement das Bindemittel, mit dem im Innenbereich haeufig geputzt wird — und du solltest wissen, warum er schnell abbindet und im Brandfall Zeit verschafft. Der Kreislauf in einer Zeile: Gipsstein, brennen, Stuckgips, mit Wasser anmachen, erhärten, wieder Gipskristall.",
+      "Beim Brennen von Gipsstein, chemisch Calciumsulfat-Dihydrat, bei etwa 180 Grad Celsius wird das kristallin gebundene Wasser als Wasserdampf ausgetrieben. Übrig bleibt Stuckgips, das Calciumsulfat-Halbhydrat. Kurz gesagt: Brennen heißt Kristallwasser austreiben.",
+      "Stuckgips ist der bei etwa 180 Grad Celsius gebrannte und gemahlene Gips. Machst du ihn mit Wasser an, bindet er ab: Es bildet sich wieder Gipskristall, und das Volumen vergrößert sich dabei leicht um 1 bis 2 Prozent. Stuckgips erhärtet schnell.",
+      "Putzgips wird bei etwa 700 Grad Celsius gebrannt und besteht aus unterschiedlich stark entwässerten Anteilen. Deshalb erhärtet er träger als Stuckgips und bleibt länger verarbeitbar — genau das brauchst du beim Verputzen von Wänden und Decken. Der Unterschied hängt an der Brenntemperatur: 180 Grad Stuckgips, 700 Grad Putzgips.",
+      "Gipsputze enthalten gebundenes Kristallwasser, bis zu 20 Prozent. Im Brandfall verdampft dieses Wasser und bindet dabei Wärme. Solange Wasser verdampft, bleibt die Oberfläche relativ kühl. Die Begründung für den guten Brandschutz ist also das verdampfende Kristallwasser.",
+      "Neben Kalk und Zement wird im Innenbereich häufig Gips als Bindemittel verwendet. Drei Punkte sprechen dafür: Gipsputze erhärten schnell, sie verbessern das Raumklima und sie sind gute Brandschutzstoffe. Diese Kette — schnell, Raumklima, Brandschutz — erklärt, warum Gips innen so verbreitet ist."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l08",
+    "lernfeld": "lf06",
+    "thema": "Fliesen und Platten",
+    "titel": "Fliesen und Platten: Arten, Maße und Einbau",
+    "inhalt": [
+      "Welche Platte wo hinkommt, entscheidet darüber, ob der Belag den Winter übersteht. Platten für Wand- und Bodenbeläge teilst du in Natursteinplatten und künstliche Platten. Künstliche sind entweder keramisch (gebrannt) oder nichtkeramisch (ungebrannt: zement-, beton-, bitumen- oder magnesiumgebunden). Bei der Keramik gilt: Feinkeramik aus fein aufbereiteten Rohstoffen, Grobkeramik aus gröberen.",
+      "Genormte Fliesen und Platten liegen bei etwa 90 cm² Oberfläche. Ist die Fläche kleiner oder gleich 90 cm², sprichst du von einer Fliese, ist sie größer, von einer Platte. Mosaik sind besonders kleine Fliesen unter 90 cm², meist auf Netzen oder Papier vorgefertigt — gut für gebogene oder gemusterte Flächen. Riemchen sind längliche Fliesen mit einem Seitenverhältnis über 3:1.",
+      "Drei Maße musst du auseinanderhalten. Das Werkmaß W ist das tatsächliche Herstellungsmaß, zum Beispiel 147 mal 247 mm. Zählst du die Fugenbreite J dazu, bekommst du das Koordinierungsmaß: C = W + J, also 150 mal 250 mm. Das Nennmaß N ist die Angabe im Handel.",
+      "Nach Verfahren A werden stranggepresste Fliesen und Platten hergestellt, nach Verfahren B trocken gepresste. Danach folgt die Einteilung nach der Wasseraufnahme: Gruppe I bis 3 Prozent (dicht, frostbeständig), Gruppe II 3 bis 10 Prozent, Gruppe III über 10 Prozent (porös). Je geringer die Wasseraufnahme, desto verschleißfester und frostbeständiger.",
+      "Steingut ist trocken gepresst, hat einen hellen, porösen Scherben und über 10 Prozent Wasseraufnahme (Gruppe III). Es ist nicht frostbeständig — draußen würde das aufgenommene Wasser gefrieren und die Fliese sprengen, deshalb nur Wandbeläge im Innenbereich. Steinzeug hat einen feinkörnigen, dicht gesinterten Scherben mit höchstens 3 Prozent Wasseraufnahme, ist frostbeständig und verschleißfest, vor allem als Bodenbelag innen und außen.",
+      "Bodenklinkerplatten werden im Trockenpressverfahren geformt. Sie haben ein dichtes Gefüge mit höchstens 3 Prozent Wasseraufnahme, sind druck- und abriebfest sowie frost- und säurebeständig, zum Beispiel für Balkonbeläge. Bei glasierten Steinzeugbodenfliesen geben die Abriebklassen die zulässige Beanspruchung an: 1 sehr gering (Bad, Schlafräume), 2 gering (Wohnbereich), 3 mittel (Hallen, Dielen, Küchen), 4 stark (Eingang, Arbeitsräume).",
+      "Stranggepresste Platten sind grobkeramisch: Die Masse wird durch ein Mundstück gepresst, je nach Form entstehen Doppelplatten oder Einzelplatten — dazu zählen keramische Spaltplatten, Trennwandsteine und Überlaufrinnen. Spaltplatten werden als Doppelplatte geformt und nach dem Brennen gespalten, daher der Name. Verlegt werden sie im Mörtelbett (Dickbett). Beim Anklopfen dringt Zementleim in die Poren des Scherbens und bildet beim Erhärten Zementmörteldübel — die mechanische Verankerung.",
+      "Betonwerkstein ist die Bezeichnung für vorgefertigte, werksteinmäßig bearbeitete oder durch die Schalung besonders gestaltete Erzeugnisse aus Beton. Die Terrazzoplatte ist zweischichtig: tragender Kernbeton plus Vorsatzbeton mit farbigem Natursplitt, nach dem Schleifen natursteinähnlich. Bitumengebundene Asphaltplatten aus Naturasphaltmehl bzw. Bitumen sind weich, gut wärme- und trittschalldämmend, aber nicht säurefest — nur Bodenplatten im Innenbereich.",
+      "Ausgewählt wird nach technischen Gesichtspunkten — Frostbeständigkeit, Abriebfestigkeit, Rutschsicherheit — und nach gestalterischen wie Farbe und Format. Für den Balkon heißt das frostbeständig, also geringe Wasseraufnahme, zum Beispiel Steinzeug oder Bodenklinker. Fußböden beheizter Aufenthaltsräume brauchen Feuchtigkeits-, Wärme- und Schallschutz: im Untergeschoss Abdichtung gegen aufsteigende Bodenfeuchte, darüber der schwimmend eingebaute Estrich auf einer Dämmschicht aus Mineralwolle, Polystyrol oder Holzwolle-Mehrschichtplatten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l09",
+    "lernfeld": "lf06",
+    "thema": "Materialbedarf",
+    "titel": "Materialbedarf rechnen: Fliesen, Mörtel, Säcke",
+    "inhalt": [
+      "Zu wenig bestellt heißt Baustopp, zu viel bestellt heißt Geld auf dem Hof — deshalb rechnest du den Bedarf sauber aus. Alle Aufgaben folgen demselben Muster: Fläche mal Bedarf je Einheit, dann gegebenenfalls ein Zuschlag, dann durch die Gebindegröße teilen.",
+      "Stückzahl bei Fliesen: Fliesenbedarf = Fläche mal Bedarf je Quadratmeter. Beispiel: 7,5 m² mal 12 Stück je m² sind 90 Fliesen. Das ist der reine Bedarf ohne Verschnitt — der Zuschlag kommt erst danach.",
+      "An den Rändern musst du zuschneiden, dafür kommt der Verschnittzuschlag drauf. Erst den Grundbedarf rechnen (Fläche mal Bedarf je m²), dann: Bestellmenge = Grundbedarf mal (1 + Verschnitt geteilt durch 100). Bei 8 Prozent Verschnitt heißt das mal 1,08. In der Praxis rundest du auf ganze Fliesen oder Pakete auf.",
+      "Für Mörtel und Putz gilt eine praktische Regel: Je Quadratmeter Fläche und je Millimeter Schichtdicke wird 1 Liter Mörtel benötigt. Daraus folgt die Formel Mörtelbedarf in Litern = Fläche in m² mal Schichtdicke in mm. Beispiel Mörtelbett: 7,5 m² mal 25 mm sind 187,5 Liter.",
+      "Beim Putz rechnest du genauso. Volumen = Putzfläche mal Putzdicke in mm. Beispiel Außenputz: 245 m² mal 20 mm sind 4900 Liter. Achte darauf, dass die Schichtdicke in Millimetern und die Fläche in Quadratmetern eingesetzt wird. Für den Verlust kommt anschließend noch ein Zuschlag dazu.",
+      "Aus Litern werden Säcke über die Ergiebigkeit: Sackzahl = benötigte Mörtelmenge geteilt durch Ergiebigkeit je Sack. Beispiel: 5243 Liter geteilt durch 25 Liter je Sack sind 209,7 — aufgerundet 210 Säcke.",
+      "Beim Dünnbettmörtel läuft es über das Gewicht statt über das Volumen. Erst die Gesamtmenge: Fläche mal Verbrauch je Quadratmeter, zum Beispiel 30 m² mal 3,5 kg/m² sind 105 kg. Dann durch den Sackinhalt teilen: 105 kg geteilt durch 25 kg sind 4,2 Säcke.",
+      "Zwei Dinge zum Schluss. In der Praxis wird immer auf ganze Säcke aufgerundet — aus 4,2 Säcken werden also 5. Und prüfe vor dem Rechnen die Einheiten: Fläche in Quadratmetern, Schichtdicke in Millimetern, Verbrauch in Kilogramm je Quadratmeter oder Litern je Sack."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l10",
+    "lernfeld": "lf06",
+    "thema": "Estriche",
+    "titel": "Estriche: Bauart, Klassen, Dicke und Fugen",
+    "inhalt": [
+      "Der Estrich ist die Schicht, auf der später der Bodenbelag liegt. Fachlich ist Estrich eine auf einem tragenden Untergrund oder auf einer zwischenliegenden Trenn- oder Dämmschicht hergestellte Schicht, die unmittelbar nutzfähig ist oder mit einem Belag versehen werden kann.",
+      "Fünf Aufgaben hat der Estrich: einen ebenen Untergrund schaffen, Lasten aufnehmen und verteilen, Trittschallschutz und Wärmeschutz zwischen den Geschossen bringen, bei Bedarf ein Gefälle ausbilden und gegebenenfalls eine Heizung aufnehmen. Dann heißt er Heizestrich.",
+      "Nach der Konstruktion gibt es drei Bauarten. Der Verbundestrich (V) ist fest mit dem Untergrund verbunden. Der Estrich auf Trennschicht (T) ist durch Pappen oder Folien vom Untergrund getrennt. Der Estrich auf Dämmschicht (S) liegt schwimmend und frei beweglich auf der Dämmung, ohne Verbindung zu Wänden und Rohren, und verbessert Trittschall- und Wärmeschutz.",
+      "Nach der Verlegetechnik unterscheidest du hand- beziehungsweise kellenverlegte Estriche, selbstnivellierende Fließestriche und Fertigteilestriche, auch Trockenestriche genannt. Nach dem Bindemittel bekommt jeder Estrich ein Kurzzeichen: CT ist Zementestrich, CA Calciumsulfatestrich, SR Kunstharzestrich, MA Magnesiaestrich und AS Gussasphaltestrich.",
+      "Angegeben werden zwei Festigkeiten: die Druckfestigkeit mit C in den Klassen C5 bis C80 und die Biegezugfestigkeit mit F in den Klassen F1 bis F50, beide nach der geplanten Nutzung. So liest du CT-C25-F4-T35: Zementestrich, Druckfestigkeit 25 N/mm², Biegezugfestigkeit 4 N/mm², auf Trennschicht, 35 mm dick.",
+      "Als Verbundestrich muss ein Zementestrich mindestens die Druckfestigkeit C25, also 25 N/mm², erreichen. Zementestrichmörtel besteht aus Normzementen, Sand als Gesteinskörnung, Wasser und gegebenenfalls Zusatzmitteln oder Zusatzstoffen. Die Körnung liegt im grob- bis mittelkörnigen Bereich der Sieblinie, der Wasserzusatz bleibt gering, sonst gibt es Schwindrisse.",
+      "Die nötige Estrichdicke hängt von der Estrichkonstruktion, den Nutzlasten, der Zusammendrückbarkeit der Dämmschicht und der Biegezugfestigkeit des Mörtels ab. Beim Zementestrich auf Dämmschicht sind es mindestens 35 mm. Dazu die Kornregel: Die Estrichdicke muss mindestens das Dreifache des Größtkorns betragen.",
+      "Durch Schwinden und Temperatureinflüsse ändert der Estrich seine Länge, und das kann Risse geben. Deshalb unterteilst du große Flächen mit Dehn- und Scheinfugen; beim Zementestrich liegt die Feldgröße bei maximal 20 bis 30 Quadratmetern. Begehen erst nach 3 Tagen, höher belasten erst nach 7 Tagen.",
+      "Der Calciumsulfatfließestrich (CAF) kommt als trockener Fertigmörtel, wird auf der Baustelle mit Wasser angerührt und gepumpt und nivelliert sich selbst. Im Innenbereich hat er sich wegen des schnellen Einbaus und der schnellen Begehbarkeit bewährt, meist als Estrich auf Dämmschicht und als Heizestrich im Wohnbereich. Dauernde Feuchtigkeit verträgt er nicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l11",
+    "lernfeld": "lf06",
+    "thema": "Ansetzen von Fliesen",
+    "titel": "Fliesen ansetzen: Dickbett, Dünnbett, Fugen — und Ziegelpflaster",
+    "inhalt": [
+      "Ob eine Fliese hält, entscheidet sich am Untergrund. Deshalb prüfst du jeden Belaggrund vor dem Ansetzen auf seine Eignung: Er muss rau, saugfähig, sauber, fest, eben sowie lot- und fluchtgerecht sein. Mängel musst du vorher beseitigen oder ausgleichen.",
+      "Bei unverputzten Wandflächen gehört ein Spritzbewurf aus Zementmörtel zur fachgerechten Ausführung, wenn du anschließend im Dickbett verlegst. Er reguliert die Saugfähigkeit des Belaggrundes und vergrößert die Mörtelhaftfläche. Die Haftung des Belaggrundes wird dadurch besser.",
+      "Vom Dickbettverfahren sprichst du, wenn die Fliesen im dicken Mörtelbett angesetzt werden: mindestens 10 mm, im Mittel 15 mm. Das eignet sich für unebene Wände und Böden. Als Ansetzmörtel nimmst du Zement und Sand im Mischungsverhältnis von etwa 1:4 bis 1:8.",
+      "Beim Anklopfen wird der Zementleim in die Poren des Scherbens gedrückt, es entstehen Zementmörteldübel als mechanische Verankerung. Stark saugende Fliesen tauchst du vorher ins Wasser. Sonst entziehen sie dem Frischmörtel Wasser und der Mörtel kann nicht richtig erhärten.",
+      "Beim Dünnbettverfahren ist die Mörtelschicht nur 2 bis 5 mm dick. Voraussetzung ist ein ebener, lot- oder waagerechter Untergrund, denn Unebenheiten lassen sich damit nur geringfügig ausgleichen. Verwendet werden hydraulisch erhärtende Dünnbettmörtel, also kunstharzvergütete Zementklebstoffe, außerdem Dispersionsklebstoffe und Reaktionsharzklebstoffe.",
+      "Den Kleber wählst du nach Belaggrund, Belagmaterial und erwarteter Beanspruchung. Beim Floating-Verfahren trägst du den Klebemörtel auf den Ansetzgrund auf und kämmst ihn mit der Zahnkelle auf, beim Buttering-Verfahren auf die Plattenrückseite. Buttering-Floating kombiniert beides und macht die Verlegung hohlraumfrei.",
+      "Keramische Wand- und Bodenbeläge werden mit einer Fugenbreite von etwa 2 bis 8 mm angelegt. Wie breit es im Einzelfall wird, hängt vom Format und der Art der Fliesen, von der Beanspruchung und von der Verfugung ab.",
+      "Fußböden aus Ziegeln gibt es in zwei Ausführungsarten. Das Flachschichtpflaster mit flach verlegten Ziegeln nimmst du bei geringer Beanspruchung, das Rollschichtpflaster mit hochkant gestellten Ziegeln bei stärker beanspruchten Fußböden.",
+      "Beim Ziegelpflaster gibt es mehrere Verlegearten: Schachbrettmuster, Ellenbogenverband, stehende Rolle und diagonale Verlegung. Der Ziegel wird nach der Schnur auf ein Sandbett verlegt und mit Zementmörtel verfugt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l12",
+    "lernfeld": "lf06",
+    "thema": "Wandtrockenputz",
+    "titel": "Wandtrockenputz: Gipsplatten statt Nassputz",
+    "inhalt": [
+      "Wandtrockenputz heißt: Du bekleidest die Wand mit Gipsplatten statt mit Putzfrischmörtel, also statt Nassputz. Der Vorteil auf der Baustelle sind die entfallenden Trocknungszeiten. Befestigt wird auf zwei Wegen, entweder direkt an der Wandfläche mit Ansetzmörtel oder auf einer Unterkonstruktion als Vorsatzschale.",
+      "Gipsplatten werden werkmäßig hergestellt: ein schnell erhärtender Kern aus Stuckgips mit einer stabilisierenden Kartonummantelung. Die Kartonfasern laufen in Längsrichtung, deshalb hat die Platte in Längsrichtung eine größere Biegesteifigkeit als quer dazu.",
+      "Der Regelfall beim Wandtrockenputz ist die Gipsplatte Typ A (GKB). Sie ist die Standard-Bauplatte für allgemeine Anwendungen ohne besondere Anforderungen an Schall- und Brandschutz. Die anderen Typen kommen erst ins Spiel, wenn eine besondere Anforderung dazukommt.",
+      "Zwei Typen trennst du davon sauber ab. Typ F (GKF) ist die Feuerschutzplatte mit verbessertem Gefügezusammenhalt im Brandfall. Typ H (GKBI) ist imprägniert und hat eine reduzierte Wasseraufnahme, er gehört in Feuchträume, zum Beispiel ins Bad.",
+      "Die übrigen Kurzzeichen der Reihe nach: Typ E für Außenwandelemente, Typ P als Putzträger, Typ D für definierte Dichte, Typ R für erhöhte Festigkeit und Typ I für erhöhte Oberflächenhärte.",
+      "Alle Gipsplatten sind nichtbrennbar, Baustoffklasse A2. Grund ist das gebundene Kristallwasser, es wirkt im Brandfall wärmebindend. Deshalb verbessert auch die Ummantelung von Holz- und Stahlbauteilen mit Gipsplatten, also Träger- und Stützenbekleidungen, deren brandschutztechnische Eigenschaften.",
+      "Beplankst du eine Holz- oder Metallunterkonstruktion beidseitig mit Gipsplatten, entsteht eine zweischalige leichte Trennwand, auch Montagewand genannt. Legst du Dämmstoffe in den Zwischenraum, verbessert das den Schall-, Wärme- und Brandschutz.",
+      "Beim Ansetzen kommt der Ansetzmörtel in Batzen an die Wand: durchlaufend am Rand, dazu in der Plattenmitte, mit Batzenabständen von etwa 25 cm am Rand und 35 cm in der Reihe. Anschließend richtest du die Platten lot- und fluchtgerecht aus."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l13",
+    "lernfeld": "lf06",
+    "thema": "Putzmörtel",
+    "titel": "Putzmörtel: Bindemittel, Anmachwasser, Mörtelarten",
+    "inhalt": [
+      "Putzmörtel ist das Material, aus dem der Putz entsteht — stimmt die Mischung nicht, schwindet er oder wird nicht fest. Mineralisch gebundener Putzmörtel besteht aus natürlich vorkommenden Bindemitteln, also Kalk, Zement oder Gips, aus der Gesteinskörnung, dem Anmachwasser und eventuell Zusatzmitteln für besondere Eigenschaften.",
+      "Das Bindemittel hat die Aufgabe, die Bestandteile fest und dauerhaft miteinander zu verbinden. Die Menge muss stimmen: Zu viel Bindemittel ergibt einen fetten Mörtel, der bei Kalk und Zement zum Schwinden führt. Zu wenig ergibt einen mageren Mörtel und mindert die Festigkeit.",
+      "Das Anmachwasser verringert die Reibung zwischen den Bindemittelteilchen und macht den Mörtel plastisch und verarbeitbar. Darüber hinaus wird es beim Erhärten gebraucht, denn das ist eine chemische Reaktion. Halte deshalb die vorgeschriebene Anmachwassermenge ein.",
+      "Zu den mineralisch gebundenen Putzmörteln zählen Kalkmörtel, Kalkzementmörtel, Zementmörtel und Gipsmörtel. Kalkmörtel ist gut verarbeitbar und geht in den Innenputz. Kalkzementmörtel ist fester und passt an Sockel und Außenputz. Zementmörtel ist sehr fest und kommt in Feuchträume. Gips- und Gipskalkmörtel bleiben im Innenputz.",
+      "Organisch gebundene Putze, zum Beispiel der Dispersionsputz (Kunstharzputz), erhärten anders. Beim Trocknen verdunsten die Wassertröpfchen, die organischen Bindemittel vernetzen sich und bilden einen dichten Film. Das ist eine physikalische Reaktion, im Gegensatz zur chemischen Hydratation der mineralischen Putze.",
+      "Kurzcheck ohne Buch: Aus welchen Bestandteilen besteht mineralisch gebundener Putzmörtel? Was macht das Bindemittel, und was passiert bei zu viel oder zu wenig davon? Nenne zwei Aufgaben des Anmachwassers. Und wodurch erhärtet ein Kunstharzputz?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf06-l14",
+    "lernfeld": "lf06",
+    "thema": "Außenputz",
+    "titel": "Außenputz: Schutz, Wärmedämmputz, Sanierputz",
+    "inhalt": [
+      "Außenputze sind unmittelbar den Witterungseinflüssen ausgesetzt. Was der Putz nicht abhält, landet in der Wand, deshalb hat er auf der Baustelle einen klaren Auftrag: schützen und gestalten.",
+      "Die Aufgaben im Einzelnen: die Fassade gestalten durch Farbe und Putzweise, die Gebäudehülle vor Durchfeuchtung schützen, eine winddichte Hülle herstellen, vor mechanischen Einwirkungen schützen und Spannungen rissfrei aufnehmen.",
+      "Der Wärmedämmputz verbessert den Wärmeschutz einer Außenwand. Möglich macht das der Zusatz von Perlit oder Polystyrolkügelchen, dadurch hat der Putz eine geringe Wärmeleitfähigkeit. Die Dämmputzdicke beträgt in der Regel mehrlagig ab 5 cm.",
+      "Der Sanierputz hat einen hohen Luftporengehalt und eine hohe Wasserdampfdurchlässigkeit. Damit kann feuchtes und salzbelastetes Mauerwerk austrocknen: Die Feuchtigkeit verdunstet, die Salze werden in den Poren aufgenommen, und an der Oberfläche gibt es keinen Feuchtigkeitsnachschub mehr.",
+      "Halte die drei Stichworte getrennt. Wärmedämmputz: geringe Wärmeleitfähigkeit durch Perlit oder Polystyrolkügelchen. Sanierputz: Luftporen und Wasserdampfdurchlässigkeit für feuchtes, salzbelastetes Mauerwerk. Und die Grundaufgabe jedes Außenputzes: Gestaltung der Fassade plus Schutz der Gebäudehülle."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

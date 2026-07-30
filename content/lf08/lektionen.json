@@ -63,5 +63,324 @@
     "quelle": "Bauphysik-Grundlagen (Tauwasser, Diffusion/Konvektion); Herstellerunterlagen Dampfbremsen",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 222' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Diffusion durch die Fläche, Konvektion durch die Fuge'><rect x='28' y='44' width='130' height='66' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='48' y1='108' x2='48' y2='92' stroke='currentColor' stroke-width='1'/><line x1='48' y1='92' x2='49.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='48' y1='92' x2='46.4' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='68' y1='108' x2='68' y2='92' stroke='currentColor' stroke-width='1'/><line x1='68' y1='92' x2='69.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='68' y1='92' x2='66.4' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='88' y1='108' x2='88' y2='92' stroke='currentColor' stroke-width='1'/><line x1='88' y1='92' x2='89.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='88' y1='92' x2='86.4' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='108' y1='108' x2='108' y2='92' stroke='currentColor' stroke-width='1'/><line x1='108' y1='92' x2='109.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='108' y1='92' x2='106.4' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='128' y1='108' x2='128' y2='92' stroke='currentColor' stroke-width='1'/><line x1='128' y1='92' x2='129.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='128' y1='92' x2='126.4' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='148' y1='108' x2='148' y2='92' stroke='currentColor' stroke-width='1'/><line x1='148' y1='92' x2='149.6' y2='98.3' stroke='currentColor' stroke-width='1'/><line x1='148' y1='92' x2='146.4' y2='98.3' stroke='currentColor' stroke-width='1'/><text x='28' y='132' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Diffusion</text><text x='28' y='148' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>langsam, überall verteilt</text><rect x='222' y='44' width='130' height='66' fill='none' stroke='currentColor' stroke-width='1.6'/><line x1='282' y1='44' x2='282' y2='110' stroke='#c07d4a' stroke-width='1' stroke-dasharray='4 3'/><line x1='292' y1='44' x2='292' y2='110' stroke='#c07d4a' stroke-width='1' stroke-dasharray='4 3'/><line x1='287' y1='118' x2='287' y2='50' stroke='#c07d4a' stroke-width='3'/><line x1='287' y1='50' x2='288.6' y2='56.3' stroke='#c07d4a' stroke-width='3'/><line x1='287' y1='50' x2='285.4' y2='56.3' stroke='#c07d4a' stroke-width='3'/><text x='222' y='132' fill='#c07d4a' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Konvektion</text><text x='222' y='148' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>schnell, durch eine Fuge</text><text x='18' y='177' fill='currentColor' font-size='12'>Durch eine Fuge kommt weit mehr Feuchte ins Bauteil</text><text x='18' y='194' fill='currentColor' font-size='12'>als durch Diffusion.</text></svg>"
+  },
+  {
+    "id": "lf08-l05",
+    "lernfeld": "lf08",
+    "thema": "Werkstoffbedarf",
+    "titel": "Werkstoffbedarf rechnen: Bahnen, Latten, Nägel, Ziegel",
+    "inhalt": [
+      "Vor jedem Auftrag musst du wissen, wie viele Rollen, Meter Latten, Nägel und Ziegel wirklich aufs Dach gehen — danach wird bestellt und kalkuliert. Die Rechnungen hier bestehen aus wenigen Bausteinen: Fläche oder Länge ermitteln, mit dem Maß des Bauteils verrechnen, Zuschlag für Verschnitt oder Bruch draufrechnen — und erst ganz zum Schluss auf ganze Stück aufrunden.",
+      "Bei Bahnen musst du zwei Flächen auseinanderhalten. Die Rollenfläche ist A_R = Länge mal Breite. Die Deckfläche zieht die Überdeckung in Länge und Breite ab: A_RD = (l − ü) mal (b − ü). Beispiel: (50,00 − 0,15) mal (1,50 − 0,15) = 49,85 mal 1,35 = 67,2975 m² — bei 75,00 m² Rollenfläche sind das 89,73 % Ausnutzung.",
+      "Die Rollenanzahl ist Dachfläche geteilt durch Deckfläche einer Rolle: n_R = A_D geteilt durch A_RD. Das Ergebnis rundest du auf die nächste ganze Zahl auf, halbe Rollen kannst du nicht kaufen. Die Dachfläche beim Satteldach hat zwei gleich große Seiten: A_D = 2 mal Trauflänge mal Sparrenlänge, zum Beispiel 2 mal 13,75 mal 8,14 = 223,85 m².",
+      "Konterlatten liegen auf den Sparren, also zählst du zuerst die Sparren: Trauflänge geteilt durch Sparrenabstand plus 1. Das Plus eins ist wichtig, sonst fehlt dir der letzte Sparren. Dann mal Sparrenlänge und mal zwei Dachflächen: (10,50 geteilt durch 0,70 plus 1) mal 7,20 mal 2 = 16 mal 7,20 mal 2 = 230,40 m.",
+      "Für beliebige Dachflächen geht es auch überschlägig: Konterlattenbedarf je Quadratmeter l_r = 100 cm/m geteilt durch den Sparrenabstand in cm. Danach L_K = Dachfläche mal l_r. In dieser Überschlagsrechnung steckt noch kein Verschnitt, den musst du getrennt draufrechnen.",
+      "Nägel rechnest du aus den Lattenmetern: für die Konterlattung 4 Nägel je Meter, für die Traglattung 2 Nägel je Meter, jeweils plus Zuschlag für Verlust. Beispiel Traglattung: 645,54 m mal 2 Nägel/m mal 1,05 sind 1356 Nägel.",
+      "Wie viele Ziegelreihen aus den Lattreihen werden, hängt an Traufe und First. Werden Traufreihe und Firstreihe mit speziellen Formziegeln gedeckt, gilt n_LZ = n_L − 1. Ist nur eine der beiden Reihen speziell, gilt n_LZ = n_L. Sind beide normale Flächenziegel, gilt n_LZ = n_L + 1.",
+      "Die Flächenziegel sind dann n_Z = 2 mal Ziegelreihen mal Ziegel je Reihe mal Zuschlagsfaktor. Beispiel: 2 mal 25 mal 50 mal 1,03 = 2575 Stück. Die 2 steht für die beiden Dachflächen, der Faktor 1,03 für 3 % Bruchzuschlag.",
+      "Die Sonderziegel zählst du über die Reihenrichtung. Die waagerechten Ziegelreihen ergeben die Menge an Ortgangziegeln. Die senkrechten Reihen ergeben Trauf-, Firstanschluss- und Pultabschlussziegel, beim Satteldach also 2 mal 50 = 100 Traufziegel. Firstziegel rechnest du über die Firstlänge mal Stück je Meter nach Herstellerangabe: 10,60 mal 2,5 = 26,5, aufgerundet 27."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l06",
+    "lernfeld": "lf08",
+    "thema": "Walmdach",
+    "titel": "Walmdach: Firsthöhe, Sparren, Grat und Ausmittlung",
+    "inhalt": [
+      "Beim Walmdach musst du aus Gebäudebreite und Dachneigung die Firsthöhe sowie die Sparren- und Gratsparrenlänge rechnen können — sonst kannst du weder zuschneiden noch Material bestellen. Alle Formeln hier gelten für Dachflächen mit gleicher Dachneigung.",
+      "Die Firsthöhe rechnest du mit dem Tangens: h = halbe Gebäudebreite mal tan Dachneigung. Beispiel: 6,00 m geteilt durch 2 mal tan 40° = 3,00 mal 0,8391 = 2,52 m. Mit der halben Breite deshalb, weil der First mittig liegt und du mit dem halben Dreieck rechnest.",
+      "Die Sparrenlänge geht über den Kosinus, aber als Division: s = (halbe Gebäudebreite) geteilt durch cos Dachneigung. Beispiel: (6,00 geteilt durch 2) geteilt durch cos 40° = 3,00 geteilt durch 0,766 = 3,92 m. Merk dir das Paar: Tangens wird malgenommen, Kosinus wird geteilt.",
+      "Der Gratsparren ist die Hypotenuse aus halber Gebäudebreite und Sparrenlänge, also Pythagoras: g = Wurzel aus ((b/2) hoch 2 plus s hoch 2). Beispiel: Wurzel aus (9 plus 15,37) = Wurzel aus 24,37 = 4,94 m.",
+      "Zur Kontrolle rechnest du die Dachfläche über die Grundfläche: A_k = Grundfläche des Gebäudes geteilt durch cos Dachneigung. Beispiel: (10,00 mal 6,00 plus 2,00 mal 3,00) geteilt durch cos 40° = 66 geteilt durch 0,766 = 86,15 m². Damit prüfst du, ob deine aufsummierten Einzelflächen stimmen.",
+      "Beim zusammengesetzten Walmdach kommen Kehle und Verfallgrat dazu. Die Kehle entspricht dem zweiten Gratsparren, k = g₂. Der Verfallgrat ist die Differenz der beiden Gratsparren, v = g₁ − g₂. Beispiel: k = 2,47 m und v = 4,94 m − 2,47 m = 2,47 m.",
+      "In der Dachausmittlung zeichnest du das Dach in der Draufsicht. Bei gleichen Dachneigungen verlaufen Grate und Kehlen als Winkelhalbierende zu den zugehörigen Traufecken. In einem rechtwinkligen Walmdachgrundriss heißt das: Die Grate laufen unter 45°.",
+      "Achtung beim Ablesen: Die durch die Ausmittlung festgelegten Linien und Flächenformen sind nicht in wahrer Größe dargestellt. Wahre Längen und Flächen konstruierst du zeichnerisch — mit dem Klappverfahren bei rechteckigen Grundrissen und mit dem Drehverfahren bei schiefwinkligen Grundrissen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l07",
+    "lernfeld": "lf08",
+    "thema": "Windsogsicherung",
+    "titel": "Windsogsicherung und Sicherheit am Dach",
+    "inhalt": [
+      "Wind zieht die Deckung nach oben — ohne Sicherung fliegen dir Ziegel vom Dach. Und du selbst bist da oben genauso gefährdet wie das Material. Deshalb gehören Windsogsicherung und Absturzsicherung in dieselbe Arbeitsvorbereitung.",
+      "Auf der windzugewandten Seite entsteht erhöhter Winddruck, auf der windabgewandten Seite Windsog. Der Windsog ist eine abhebende Kraft, der nur die Eigenlast der Deckung entgegenwirkt. Reicht die nicht aus, sind Zusatzmaßnahmen zur Windsogsicherung nötig.",
+      "Die Dachfläche wird in Innenbereich und Randbereiche eingeteilt. Randbereiche sind Traufe, Ortgang und First. An diesen Rändern und Kanten sind die Windsogkräfte deutlich höher als im Innenbereich — dort musst du also stärker verklammern.",
+      "Nach DIN 1055-4 ist Deutschland in vier Windzonen unterteilt. Der Gebäudestandort fließt über Mischprofile ein: Das Mischprofil Küste gilt für die Inseln der Nordsee und für küstennahe Gebiete bis 5 km landeinwärts, das Mischprofil Binnenland für die übrigen Gebiete.",
+      "Klammern werden nach ihrer Tragfähigkeit R_d in Gruppen eingeteilt: K-I mindestens 125 N, K-II mindestens 175 N, K-III mindestens 250 N. B-I mit mindestens 70 N ist die Mindestanforderung für Biberdeckungen.",
+      "In den Verklammerungstabellen des ZVDH liest du das Befestigungsraster ab: 0 heißt keine Verklammerung nötig, 1:3 jeder dritte Dachziegel oder -stein, 1:2 jeder zweite, 1:1 jeder. Steht dort keine Angabe, ist die Windsogsicherung mit dieser Klammergruppe nicht möglich.",
+      "Ist die Dachneigung größer als 65°, ist generell jeder Dachziegel oder -stein zu befestigen. Die Dachkanten — zum Beispiel Ortgang, Grat und First — sind einzeln zu befestigen, und die Befestigung muss dort mindestens eine Kraft von 0,60 kN/m aufnehmen können.",
+      "Absturzsicherung: Dachfanggerüste sind notwendig, wenn die Absturzhöhe an der Traufe gemessen mehr als 3,00 m beträgt. Das gilt für Dachneigungen von 22,5° bis 60°. Bei Dachneigungen zwischen 45° und 60° müssen zusätzlich Arbeitsplätze geschaffen werden.",
+      "Aufzüge für den Transport des Deckmaterials sind sicher aufzustellen und abzusteifen. Es dürfen keine Personen befördert werden, und der Aufzug darf nicht als Leiter verwendet werden. An der oberen Ladestelle müssen Absturzsicherungen vorhanden sein, die untere Ladestelle ist abzusperren."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l08",
+    "lernfeld": "lf08",
+    "thema": "First",
+    "titel": "First und Ortgang: Abschluss, Befestigung, Lüftung",
+    "inhalt": [
+      "First und Ortgang sind die Ränder deiner Deckung. Hier wird die Fläche abgeschlossen, hier sitzt die Firstlüftung — und genau hier greift der Wind am stärksten an, denn Traufe, Ortgang und First zählen zu den Randbereichen mit höheren Windsogkräften.",
+      "Die Firstdeckung kannst du auf drei Arten ausführen: als Mörtelfirst, als Trockenfirst oder über Sonderkonstruktionen. Teile die Deckfläche so ein, dass am Firstanschluss ganze Flächenziegel bzw. Dachsteine oder Firstanschlussziegel gedeckt werden können.",
+      "Firstziegel brauchen eine ausreichende Überdeckung. Bei Verfalzung ist sie vorgegeben, sonst beträgt sie mindestens 4 cm. Beim Mörtelfirst beträgt die Überdeckung der bezeichneten Firstziegel bzw. -steine mindestens 40 mm.",
+      "Gegen Windangriffe sind Firstziegel und -steine durch entsprechende Befestigungen zu sichern. Verlangt ist mindestens eine korrosionsbeständige Schraube Ø 4,5 mm mit mindestens 24 mm Eindringtiefe — oder alternativ eine Klammer. Der First ist ein Randbereich, dort greift der Wind besonders stark an.",
+      "Auch ein Mörtelfirst muss zusätzlich mechanisch befestigt werden, denn die Vermörtelung kann nicht als Windsogsicherung herangezogen werden. Für diese zusätzliche Befestigung ist korrosionsbeständiger Bindedraht Ø 0,5 mm ausreichend. Der Mörtel allein hält den First also nicht.",
+      "Für die Hinterlüftung sitzen die Lüftungsöffnungen in Firstnähe oder am First. Die Querschnitte sind an DIN 4108 angelehnt und betragen 0,5 ‰ der angeschlossenen Dachfläche, mindestens aber 50 cm² je Meter First. Auch ungedämmte Spitzböden sind zu belüften.",
+      "Am Ortgang gilt für die Unterkonstruktion: Die Traglattung darf höchstens 30 cm über die Außenkante Auflager überstehen. Der Überstand der Flächen- bzw. Doppelwulstziegel oder -steine soll mindestens 3 cm über die Außenkante Holzunterkonstruktion oder Giebelwand betragen.",
+      "Für die Ortgangausbildung stehen Ortgangziegel und -steine in links und rechts zur Verfügung. Der Ortgang lässt sich auch mit kleinformatigen Deckwerkstoffen ausführen, und Sonderkonstruktionen sind möglich — zum Beispiel ein Ortgangbrett mit Blechdeckung oder eine Zahnleiste mit Windbrett.",
+      "Zwei Maße und eine Befestigung am Ortgang: Zwischen der Kante der Ortganglappen innen und der Außenwand bzw. Außenbekleidung sind mindestens 10 mm Abstand einzuhalten. Dachlatten auf Mauerwerk müssen mindestens 20 mm zurückgesetzt sein. Ortgangziegel werden im Bereich der Höhenüberdeckung mit mindestens 1 Holzschraube Ø 4,5 mm bei 24 mm Einschraubtiefe befestigt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l09",
+    "lernfeld": "lf08",
+    "thema": "Biberschwanzdeckungen",
+    "titel": "Regeldachneigung und Biberschwanzdeckungen",
+    "inhalt": [
+      "Bevor du eine Deckart auswählst, musst du wissen, ab welcher Neigung sie noch regensicher ist — genau das sagt dir die Regeldachneigung. Beim Biberschwanz hängt sie direkt an der gewählten Deckart.",
+      "Die Regeldachneigung (RDN) ist die untere Dachneigungsgrenze, bei der sich die Dachdeckung in der Praxis als regensicher erwiesen hat. Angegeben wird sie als Winkel zwischen der Waagerechten und der Dachfläche in Grad, seltener als Steigung über der Waagerechten in Prozent.",
+      "Wie hoch die RDN liegt, hängt von der Deckart und vom Deckmaterial ab — also auch davon, ob ebene Deckmaterialien wie der Biberschwanz oder gewölbte wie die Hohlpfanne verwendet werden. Zwei Merksätze: Je aufwendiger die Verfalzung ausgebildet ist, umso geringer die RDN. Und je höher der Seitenfalz über der wasserführenden Ebene liegt, desto geringer die RDN.",
+      "Biberschwanzziegel werden in drei Deckarten verlegt: als Einfachdeckung mit Spließen, als Kronendeckung oder als Doppeldeckung. Die Wasserableitung erfolgt dabei in der Fläche und in der Längsfuge.",
+      "Die Regeldachneigungen dazu: Einfachdeckung mit Spließen 40°, das entspricht 83,9 %. Kronendeckung 30°, Doppeldeckung ebenfalls 30°. Doppel- und Kronendeckung sind sicherer, weil sie mehrfach überdeckt sind.",
+      "Biberschwanzziegel gibt es in mehreren Fußformen, und die Form prägt das Erscheinungsbild der ganzen Dachfläche: Segmentschnitt, Gotischer Schnitt, Rundschnitt, Rautenspitz sowie Rund- und Geradschnitt strukturiert. Diese Bezeichnungen solltest du benennen können — die Fußform prägt das Erscheinungsbild der ganzen Dachfläche.",
+      "Verlegt wird mit geringem Seitenabstand, damit sich die Ziegel bei Bewegungen der Dachkonstruktion nicht gegenseitig pressen. Für den Mörtelverstrich nimmst du mindestens Kalkzementmörtel im Mischungsverhältnis 2 : 1 : 8. Wichtig: Dieser Verstrich gilt nicht als Zusatzmaßnahme im Sinne der Fachregel, wenn die Regeldachneigung unterschritten wird."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l10",
+    "lernfeld": "lf08",
+    "thema": "Mönch und Nonne",
+    "titel": "Mönch und Nonne, Krempziegel: Überdeckung und Lattabstand",
+    "inhalt": [
+      "Bei Mönch- und Nonnenziegeln wie bei Krempziegeln wird die Regensicherheit über die Höhenüberdeckung festgelegt. Deshalb rechnest du bei beiden Deckungen den maximalen Traglattenabstand aus Ziegellänge minus Mindestüberdeckung. Deshalb rechnest du bei beiden Deckungen den Lattabstand aus Ziegellänge minus Mindestüberdeckung.",
+      "Die Mönch- und Nonnendeckung besteht aus zwei schalenförmig ausgebildeten Ziegelformen. Die konkav verlegten unteren Schalen sind die Nonnen, sie hängen mit der Nase auf der Latte. Die konvex verlegten oberen Schalen heißen Mönche und überdecken die Längsfugen.",
+      "Die Höhenüberdeckung wird über die Überdeckung der Nonnenziegel erreicht und muss mindestens 80 mm betragen. Beispiel: Bei einem Nonnenziegel 21 × 40 cm ergibt sich ein maximaler Traglattenabstand von 400 mm − 80 mm = 320 mm.",
+      "Bei nasser Verlegung bekommen die Nonnenziegel einen Querschlag am Kopf des darunterliegenden Nonnenziegels. Die Mönchziegel werden am Kopf und an den Seiten mit Mörtel versehen — den Längsschlägen — und aufgesetzt. Verwendet wird mindestens Kalkzementmörtel 2 : 1 : 8. Die Regeldachneigung beträgt 40°.",
+      "Beim Krempziegel verläuft der Krempenansatz in der historisch überlieferten Verlegetechnik vertikal zur First-Trauflinie, also rechtwinklig zur Lattung. Dadurch ergibt sich eine leichte Neigung der Ziegel nach rechts — daher der Name Rechtsdeckung.",
+      "Die Krempziegeldeckung wird überwiegend als Rechtsdeckung mit einer Mindestüberdeckung von 80 mm ausgeführt, die Regeldachneigung beträgt 35°. Beispiel: Krempziegel 26 × 34 cm ergibt 340 mm − 80 mm = 260 mm maximalen Traglattenabstand.",
+      "Merk dir das Rechenmuster für beide Deckungen: maximaler Traglattenabstand = Ziegellänge minus Mindestüberdeckung. Die tatsächliche Lattweite legst du dann so fest, dass sie unter diesem Maximalwert bleibt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l11",
+    "lernfeld": "lf08",
+    "thema": "Konterlattung",
+    "titel": "Dachaufbau, Konterlattung und Hinterlüftung",
+    "inhalt": [
+      "Die Konterlatte erzeugt den Luftraum zwischen Unterspannbahn und Deckung — ohne diesen Spalt gibt es keine Hinterlüftung. Ihre Höhe entscheidet deshalb über die Belüftung der ganzen Dachfläche.",
+      "Der Aufbau von unten nach oben: Sparren als tragendes Bauteil, darauf die Unterspannbahn bzw. Unterdeckbahn, darauf längs die Konterlatte, quer dazu die Traglatten im berechneten Lattenabstand, zuletzt die eingehängten Dachziegel. Die Höhenüberdeckung der Ziegel ergibt sich aus dem Lattenabstand.",
+      "Konterlatten müssen mindestens 24 mm hoch sein, damit in der Dachfläche der geforderte Lüftungsquerschnitt von mindestens 2 cm freier Höhe erreicht wird. Die Einschlagtiefe der Nägel muss mindestens 38 mm betragen. Für die Traglatten gilt der Regelquerschnitt 30/50 mm.",
+      "Die Lüftungsquerschnitte nach DIN 4108-3 musst du an drei Stellen kennen: an Traufe und Pult mindestens 2 ‰ der Dachfläche und mindestens 200 cm² je Meter, an First und Grat mindestens 50 cm² je Meter, in der Dachfläche mindestens 2 cm freie Höhe.",
+      "Bei einer Aufsparrendämmung müssen zusätzlich zu den bisherigen Lasten auch die Schubkräfte der Dämmung abgetragen werden — dafür ist ein Einzel- bzw. Herstellernachweis erforderlich. Bei druckweicher Dämmung darf die Konterlatte keinen Druck auf die Dämmung ausüben; spezielle Schrauben mit Unterkopfgewinde verhindern das.",
+      "Unterspannbahnen (USB) werden parallel zur Traufe frei hängend und frei gespannt verlegt, ohne Deckunterlage, mit mindestens 10 cm Höhen- und Seitenüberdeckung. Die letzte Bahn soll 5 cm unter dem Firstscheitelpunkt enden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l12",
+    "lernfeld": "lf08",
+    "thema": "Rechnerische Dacheinteilung",
+    "titel": "Rechnerische Dacheinteilung: DLT, DL und LAF",
+    "inhalt": [
+      "Bevor du lattest, musst du wissen, wo die erste und die letzte Latte liegen und wie viele Reihen dazwischen passen. Genau das leistet die rechnerische Dacheinteilung — sie teilt die Sparrenlänge in Trauflage, Lattreihen und Firstabstand auf.",
+      "Zwei Abkürzungen musst du sicher zuordnen. DLT steht für Decklänge Traufe, also die Lage der ersten Latte; sie hängt von der Ausbildung des Traufbereiches und von der Art der Dachziegel in der ersten Reihe ab. LAF steht für Lattenabstand First, also den Abstand der letzten Latte vom Firstscheitelpunkt.",
+      "Die Decklänge DL ist bei der Einfachdeckung die Ziegellänge minus Überdeckung: DL = l_z − ü. Bei der Doppeldeckung wird dieses Ergebnis zusätzlich halbiert: DL = (l_z − ü) geteilt durch 2.",
+      "Die Sparrenlänge setzt sich zusammen aus s = DLT plus (Anzahl Lattreihen mal DL) plus LAF. Stellst du diese Gleichung nach der Anzahl der Lattreihen um, bekommst du die Reihenzahl — und weil die tatsächliche Decklänge DL der Lattweite entspricht, kennst du damit auch die Einteilung der Fläche.",
+      "Meist kommt dabei ein Dezimalwert heraus. Da die Anzahl der Lattreihen ganzzahlig sein muss, rundest du auf den nächsten ganzen Wert auf. Der Effekt ist entscheidend: Durch das Aufrunden werden die Reihen enger, die tatsächliche Lattweite bleibt also unter dem maximalen Traglattenabstand."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l13",
+    "lernfeld": "lf08",
+    "thema": "Decklänge und Deckbreite",
+    "titel": "Decklänge und Deckbreite nach DIN EN 1304 ermitteln",
+    "inhalt": [
+      "Dachziegel sind nie exakt gleich groß. Deshalb ermittelst du Decklänge und Deckbreite am Material selbst, bevor du die Latten anreißt — daraus ergibt sich der Traglattenabstand, mit dem du auf der Fläche wirklich hinkommst.",
+      "Für die Decklänge legst du zwei Dachziegelreihen mit je 12 Ziegeln aus. Du misst die Länge zwischen dem 1. und dem 11. Ziegel. Dieses Maß l₁ geteilt durch 10 ergibt den höchsten Traglattenabstand, also die höchste Decklänge.",
+      "Danach schiebst du die Ziegel möglichst weit ineinander und misst erneut. Dieses Maß l₂ geteilt durch 10 ergibt den niedrigsten Traglattenabstand. Die mittlere Decklänge ist der Mittelwert aus beiden: (l₁ + l₂) geteilt durch 20.",
+      "Die Deckbreite ermittelst du genauso, nur mit drei Latten und wieder je 12 Ziegeln: höchste Deckbreite b₁ geteilt durch 10, niedrigste b₂ geteilt durch 10, mittlere Deckbreite (b₁ + b₂) geteilt durch 20.",
+      "Die mögliche Decklänge und Deckbreite liegen zwischen dem ermittelten höchsten und niedrigsten Wert. Dieser Spielraum ist gewollt: Dadurch können Toleranzen in der Dachziegelherstellung, thermische Längenänderungen und Bewegungen durch äußere Einflüsse aufgefangen werden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l14",
+    "lernfeld": "lf08",
+    "thema": "Hohlpfannen",
+    "titel": "Hohlpfannen: Vorschnitt- und Aufschnittdeckung",
+    "inhalt": [
+      "Hohlpfannendeckungen dominieren im norddeutschen Raum. Auf der Baustelle musst du vor allem eins auseinanderhalten: welche Schnittart verlegt wird — davon hängt ab, wie flach das Dach geneigt sein darf.",
+      "Hohlpfannen sind im Querschnitt s-förmig gewölbt. Durch diese Wölbung der Pfannen wird das Wasser in der Pfannenmitte abgeleitet. Damit zählt die Hohlpfannendeckung zu den gewölbten Deckmaterialien — im Unterschied zu ebenen Deckmaterialien wie der Biberschwanzdeckung.",
+      "Bei der Vorschnittdeckung liegen die rechten oberen Eckenschnitte des unteren Ziegels vor dem linken unteren Eckenschnitt des rechts darüberliegenden Ziegels. Dort liegen drei Ziegel übereinander. Bei der Aufschnittdeckung sind es an dieser Stelle vier.",
+      "Die Regeldachneigungen unterscheiden sich entsprechend: Vorschnittdeckung mit Langschnittpfannen 40°, Aufschnittdeckung mit Kurzschnittpfannen 35°. Die Aufschnittdeckung ist regensicherer, weil im Vierziegeleck vier Ziegel aufeinanderliegen — deshalb darf sie um 5 Grad flacher geneigt sein als die Vorschnittdeckung.",
+      "Kurzcheck ohne Buch: Welche Querschnittsform hat die Hohlpfanne und wo läuft das Wasser ab? Wie viele Ziegel liegen bei Vorschnitt, wie viele bei Aufschnitt im Eck übereinander? Welche Regeldachneigung gehört zu Langschnitt-, welche zu Kurzschnittpfannen?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l15",
+    "lernfeld": "lf08",
+    "thema": "Dachsteine",
+    "titel": "Dachsteine: Seitenfalz, Überdeckung, Lattenabstand",
+    "inhalt": [
+      "Bei Dachsteinen musst du auf der Baustelle drei Dinge selbst bestimmen können: den maximalen Traglattenabstand, die nötige Mindestüberdeckung und die Deckbreite. Dachsteine im Biberformat haben das Format 16,8 mal 42 cm. Damit sind nach den Fachregeln Doppeldeckung, Kronendeckung oder Einfachdeckung mit Spließen möglich.",
+      "Die Grundformel: maximaler Traglattenabstand = Decksteinlänge minus Mindesthöhenüberdeckung. Buchbeispiel: Dachstein 33 mal 42 cm mit hoch liegendem Seitenfalz bei 30 Grad. Also 420 mm minus 85 mm = 335 mm. Immer erst in dieselbe Einheit bringen, dann abziehen.",
+      "Der Seitenfalz entscheidet über die Regeldachneigung. Hoch liegender Seitenfalz: RDN 22 Grad. Tief liegender Seitenfalz: RDN 25 Grad. Der Grund: Beim tief liegenden Seitenfalz liegt die Seitenfalzkante höher über der Wasser führenden Ebene, deshalb ist die Regeldachneigung dort etwas größer.",
+      "Mindestüberdeckung bei tief liegendem Seitenfalz: unter 25 Grad 100 mm, von 25 bis 35 Grad 85 mm, über 35 Grad 75 mm. Bei 38 Grad also 75 mm. Beim hoch liegenden Seitenfalz gelten dieselben drei Werte, nur liegen die Grenzen bei unter 22 Grad, 22 bis 30 Grad und über 30 Grad.",
+      "Dachstein-Doppeldeckung im Biberformat, maximaler Lattenabstand nach Neigung: bis 35 Grad 16,5 cm, über 35 Grad 17,0 cm, über 40 Grad 17,5 cm, über 45 Grad 18,0 cm, über 60 Grad 18,5 cm. Die Mindesthöhenüberdeckung beträgt bei bis zu 35 Grad 9,0 cm.",
+      "Bei der Kronendeckung wird nicht durch 2 geteilt: maximaler Lattenabstand = Decksteinlänge minus Mindesthöhenüberdeckung. Bis 35 Grad 33,0 cm, über 35 Grad 34,0 cm, über 40 Grad 35,0 cm, über 45 Grad 36,0 cm, über 60 Grad 37,0 cm. Das ist genau das Doppelte der Doppeldeckungswerte — eine gute Kontrolle im Kopf.",
+      "Die Deckbreite im Biberformat: Steinbreite 168 mm plus 2 mm Fuge. Über diese Deckbreite und die gewählte Ortgangausbildung ermittelst du die Dachbreite. Beim Ortgang achtest du zweckmäßigerweise darauf, dass halbe bzw. ganze Ortgang-Biber oder ganze Flächen-Biber verwendet werden können."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l16",
+    "lernfeld": "lf08",
+    "thema": "Doppeldeckung",
+    "titel": "Doppeldeckung und Kronendeckung beim Biber",
+    "inhalt": [
+      "Doppel- und Kronendeckung sind zwei Deckarten für Biberschwanzziegel, und du musst sie auseinanderhalten können, weil Lattenabstand und Ziegelbedarf davon abhängen. Bei der Doppeldeckung liegt auf jeder Latte eine Ziegelreihe, also ein Gebinde.",
+      "Die nachfolgenden Gebinde sind immer um eine halbe Ziegelbreite versetzt im Verband angeordnet. Ein Gebinde wird immer vom übernächsten noch überdeckt. Dadurch ist jede Stelle der Fläche mindestens doppelt gedeckt — daher der Name Doppeldeckung.",
+      "Die Kronendeckung ist der Gegenpol: Auf jeder Latte liegen zwei Reihen Biberschwanzziegel im Biberformat übereinander, die ein Deckgebinde bilden. Die untere Reihe ist die Lagerschicht, die obere die Deckschicht. Die Deckschicht wird direkt auf eine halbe Ziegelbreite versetzt im Halbverband angeordnet.",
+      "Rechnen bei der Doppeldeckung: maximaler Traglattenabstand = (Ziegellänge minus Mindestüberdeckung) geteilt durch 2. Erst die Klammer ausrechnen, dann halbieren. Beispiel bei 40 Grad Dachneigung mit einem Biber 18 mal 38 cm: (380 mm minus 80 mm) geteilt durch 2 = 150 mm.",
+      "Geteilt wird durch 2, weil jede Latte nur eine Ziegelreihe trägt und ein Gebinde erst vom übernächsten überdeckt wird. Bei der Kronendeckung fällt diese Teilung weg, weil dort schon zwei Reihen auf einer Latte liegen.",
+      "Lattweiten bei Biber-Doppeldeckung im Format 18 mal 38 cm: 30 bis 35 Grad 14,5 cm, über 35 bis 40 Grad 15,0 cm, über 40 bis 45 Grad 15,5 cm, über 45 bis 60 Grad 16,0 cm, über 60 Grad 16,5 cm. Bei 38 Grad gilt also 15,0 cm.",
+      "Ziegelbedarf im selben Format: 30 bis 35 Grad 38,3 Stück je Quadratmeter, über 35 bis 40 Grad 37,0, über 40 bis 45 Grad 35,8, über 45 bis 60 Grad 34,7, über 60 Grad 33,6. Die Regel dahinter: Je steiler das Dach, desto weniger Ziegel brauchst du.",
+      "Vier Begriffe an der Deckung: Die Deckschicht ist die sichtbare obere Ziegelreihe. Die Stoßfuge ist die senkrechte Fuge zwischen zwei Ziegeln einer Reihe. Die Seitenüberdeckung ist die seitliche Überdeckung durch den versetzten Verband. Die Deckbreite ist die wirksame Breite eines Ziegels in der Fläche."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l17",
+    "lernfeld": "lf08",
+    "thema": "Einfachdeckung",
+    "titel": "Einfachdeckung mit Spließen",
+    "inhalt": [
+      "Die Einfachdeckung mit Spließen ist die Biberschwanzdeckung mit nur einer Ziegelreihe je Latte — du musst wissen, wie die dabei offenen Fugen trotzdem dicht werden. Bei der Einfachdeckung liegt auf jeder Latte genau eine Ziegelreihe.",
+      "Weil keine Seitenüberdeckung vorhanden ist, ergeben sich von der Traufe zum First durchgehende offene Längsfugen. Genau diese Fugen unterlegen die Spließe, damit kein Wasser eindringt. Ein Spließ ist etwa 28 cm lang und 5 cm breit.",
+      "Die Regeldachneigung der Einfachdeckung mit Spließen beträgt 40 Grad, das entspricht 83,9 Prozent. Kronen- und Doppeldeckung liegen mit 30 Grad darunter. Von den drei Biberschwanz-Deckarten verlangt die Einfachdeckung mit Spließen also die größte Neigung.",
+      "Die Formel für Einfach- und Kronendeckung: maximaler Traglattenabstand = Ziegellänge minus Mindestüberdeckung. Hier wird nicht halbiert. Beispiel bei 45 Grad Dachneigung mit einem Biber 15,5 mal 38 cm: 380 mm minus 160 mm = 220 mm.",
+      "Mindestüberdeckung bei der Einfachdeckung mit Spließen: unter 40 Grad 170 mm, von 40 bis 45 Grad 160 mm, über 45 bis 50 Grad 150 mm, über 50 bis 55 Grad 140 mm, über 55 Grad 130 mm. Bei 42 Grad gilt also 160 mm.",
+      "Die Logik in der Tabelle läuft immer gleich: Je steiler das Dach, desto kleiner ist die geforderte Mindestüberdeckung. Und je kleiner die Überdeckung, desto größer wird nach der Formel dein maximaler Lattenabstand."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l18",
+    "lernfeld": "lf08",
+    "thema": "Traglattung",
+    "titel": "Traglatten: Holz, Querschnitt, Befestigung",
+    "inhalt": [
+      "Die Traglattung trägt die ganze Deckung — stimmt hier das Holz oder der Querschnitt nicht, hält oben nichts. Dachlatten müssen mindestens der Sortierklasse S 10 nach DIN 4074 bzw. C 24 MTS nach DIN EN 338 genügen. Sie müssen gesund, trocken und möglichst astfrei sein.",
+      "Regelquerschnitte für tragende Dachlatten bei einem lichten Abstand bis 0,40 m: 30 mal 50 mm bei einer maximalen Stützweite von 80 cm, 40 mal 60 mm bei 100 cm. Größere Stützweite heißt also größerer Lattenquerschnitt.",
+      "Bis zu 1 m Sparrenabstand ist für die bewährten Traglattenquerschnitte kein statischer Nachweis erforderlich. Die Querschnittsabmessungen werden bestimmt durch den vorhandenen Sparrenabstand, die Masse der Deckung, die Dachneigung sowie die Schnee- und Windlasten.",
+      "Beim Einbau, beim Transport und bei der Lagerung von Holz — also Konterlatte, Traglatte oder Schalung — darf die Holzfeuchte höchstens 20 Prozent betragen. Das Holz ist gegebenenfalls durch Abdecken zu schützen. Holz und Holzwerkstoffe werden in die Gebrauchsklassen 0 bis 5 eingeteilt.",
+      "Traglatten müssen mindestens drei scharfe Kanten besitzen. Die Baumkante darf nur in Richtung Traufe angeordnet werden. Der Grund dafür ist einfach: Es müssen zwei volle Kanten auf dem Auflager liegen.",
+      "Mindesteindringtiefen der Verbindungsmittel, vereinfacht mit d als Nageldurchmesser: glattschaftige Nägel 12 mal d, profilierte Nägel oder Rillennägel 8 mal d, Schrauben 6 mal d. Die Mindestholzdicke von 24 mm gilt für Traglatten, Konterlatten und Schalungsbretter."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l19",
+    "lernfeld": "lf08",
+    "thema": "Zusatzmaßnahmen",
+    "titel": "Zusatzmaßnahmen: Unterspannung, Unterdeckung, Unterdach",
+    "inhalt": [
+      "Wird die Regeldachneigung unterschritten, reicht die Deckung allein nicht mehr — dann sind Zusatzmaßnahmen erforderlich. Dazu zählen Unterspannung, Unterdeckung, Unterdach, Docken sowie Vermörtelung bzw. Innenverstrich. Welche du wählst, hängt von der Nutzung, der Konstruktion und den klimatischen Verhältnissen ab.",
+      "Nicht nur die Neigung löst Zusatzmaßnahmen aus. Auch die Nutzung des Dachgeschosses, zum Beispiel als Wohnraum, stark gegliederte Dachflächen, besondere Dachformen, Sparrenlängen über 10 m, exponierte Lagen in wind- und schneereichen Gebieten, klimatische Bedingungen und Auflagen der Denkmalpflege können sie erforderlich machen.",
+      "Zwei Grenzen musst du im Kopf haben. Wird die Regeldachneigung um mehr als 8 Grad unterschritten, sind besondere Maßnahmen zum Erhalt der Tragfähigkeit nötig. Bei mehr als 12 Grad Unterschreitung kommt ein wasserdichtes Unterdach dazu.",
+      "Ein Abzug von 12 Grad ist mit diesen besonderen Maßnahmen zum Erhalt der Tragfähigkeit und mit wasserdichtem Unterdach zulässig. Nach unten ist trotzdem Schluss: Dachdeckungen mit weniger als 10 Grad Dachneigung sind auch mit Zusatzmaßnahmen nicht mehr zulässig — das ist die Mindestdachneigung nach ZVDH.",
+      "Beim wasserdichten Unterdach müssen die Bahnen in der Dachfläche wasserdicht sein und an Naht- und Stoßstellen wasserdicht verklebt oder verschweißt werden. Mindestfügebreiten: 2 cm beim Warmgasschweißen, 3 cm bei Quellschweißmitteln, 4 cm Klebebereich bei Dichtungsbändern, 5 cm bei Kautschukbahnen mit Kontaktkleber.",
+      "Unterdeckung und Unterspannung werden leicht verwechselt. Unterdeckungen (UDB) werden mit ausreichend wasserundurchlässigen Bahnen mit mindestens 10 cm Überlappung auf tragfähiger Unterlage verlegt oder mit verfalzten Unterdeckplatten (UDP) unbelüftet hergestellt. Unterspannbahnen dagegen hängen frei zwischen den Sparren.",
+      "Bei regensicheren Unterdächern wird die Konterlattung auf die Abdichtung angebracht. So kannst du die drei Stufen sortieren: Unterspannung hängt frei zwischen den Sparren, Unterdeckung liegt auf tragfähiger Unterlage, das wasserdichte Unterdach ist zusätzlich verklebt oder verschweißt.",
+      "Docken sind Einlagestreifen aus Kunststoff oder Bitumen der Baustoffklasse B 1, also schwer entflammbar. Sie werden beim Dachdecken eingelegt und verschließen die Fugen. Achtung: Sie sind keine regensichere Zusatzmaßnahme bei Unterschreitung der Regeldachneigung. Unter 25 Grad Dachneigung werden Docken nicht mehr eingesetzt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l20",
+    "lernfeld": "lf08",
+    "thema": "Falzziegel",
+    "titel": "Falzziegel, Strangfalzziegel und Aufschnittdeckung",
+    "inhalt": [
+      "Bei verfalzten Ziegeln kannst du die Deckbreite nicht frei wählen — das musst du vor der Dacheinteilung wissen. Auf jeder Latte hängt eine Deckschicht. Die nebeneinander angeordneten Ziegel liegen mit den Längsfalzen ineinander, die übereinander angeordneten mit den Querfalzen. Die Deckbreite ist durch die Längsfalze festgelegt.",
+      "Herzziegel gelten als älteste verfalzte Pressdachziegel und stammen aus der Mitte des 19. Jahrhunderts. Doppelmuldenfalzziegel sind eine Weiterentwicklung des Herzziegels. Das gilt auch für Glattziegel, die sich wegen der symmetrischen Anordnung von Wulst und Mulde zusätzlich im Verband verlegen lassen.",
+      "Der Verschiebeziegel ist ein Falzziegel, der überwiegend bei Umdeckungen ohne Umlattung verwendet wird. Die Ausbildung seiner Querfalze lässt in bestimmten Grenzen eine variable Höhenüberdeckung zu, je nach Modell bis zu 100 mm. So kannst du bei einer Sanierung auf der vorhandenen Lattung decken, ohne neu einzuteilen.",
+      "Strangfalzziegel mit geradem Längsfalz sind in der Höhenüberdeckung ebenfalls variabel. Die Mindestüberdeckung beträgt bei ebenen Strangfalzziegeln 120 mm, bei gewölbten 100 mm. Die Regeldachneigung liegt bei 30 Grad. Eben verlangt also mehr Überdeckung als gewölbt.",
+      "Zur Aufschnittdeckung dienen Hohlpfannen mit Kurzschnitt, die Kurzschnittpfannen. Weil die Höhenüberdeckung größer ist als die Eckenschnitte der Kurzschnittpfanne, liegen am Vierziegeleck vier Ziegel aufeinander. Dadurch erhöht sich einerseits die Regensicherheit, andererseits gestaltet sich die Dachoberfläche etwas unebener.",
+      "Mindestüberdeckung bei der Aufschnittdeckung mit Hohlpfannen: bis 40 Grad 100 mm, über 40 bis 45 Grad 90 mm, über 45 Grad 80 mm. Bei 42 Grad also 90 mm. Buchbeispiel bei 45 Grad mit einer Hohlpfanne 23,5 mal 40 cm: 400 mm minus 90 mm = 310 mm maximaler Traglattenabstand."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l21",
+    "lernfeld": "lf08",
+    "thema": "Traufe",
+    "titel": "Traufe, Lüftung und Einbauteile",
+    "inhalt": [
+      "An der Traufe entscheidet sich, ob das Wasser sauber in die Rinne läuft und ob das Dach genug Luft bekommt. Hat die Deckung weniger als 5 cm Überstand zur Rinnenkonstruktion, ist in der Regel ein Traufblech erforderlich.",
+      "Die Rinnenlage ändert die Ausbildung: Bei hoch hängenden Rinnen soll die Traufreihe nicht mehr als ein Drittel der Rinnenbreite in die Rinne hineinragen. Bei tief hängenden Rinnen wird die Traufreihe zurückgesetzt; dabei sind Traufbleche oder Ähnliches erforderlich.",
+      "Überdeckung des Deckwerkstoffes nach ZVDH: bei Dachneigungen über 22 Grad mindestens 100 mm, von 15 bis 22 Grad mindestens 150 mm, unter 15 Grad mindestens 200 mm. Je flacher das Dach, desto mehr Überdeckung ist gefordert.",
+      "Lüftungsquerschnitte für belüftete Dächer nach DIN 4108-3: an der Traufe 2 Promille der zugehörigen geneigten Dachfläche, mindestens jedoch 200 Quadratzentimeter je Meter der angeschlossenen Dachfläche. Am First sind es 0,5 Promille, mindestens 50 Quadratzentimeter je Meter. Die Traufe hat also den vierfachen Wert.",
+      "In die Deckung integrierte Solarstromsysteme ersetzen in diesem Bereich die entsprechenden Deckelemente. Die Systeme müssen entsprechend den Herstellervorschriften geplant, befestigt und angeschlossen werden. Sie sind in der Regel nicht begehbar. Die Netzanbindung darf nur durch zugelassene Elektroinstallateure erfolgen.",
+      "Laufrostanlagen sind gemäß den Unfallverhütungsvorschriften für Schornsteinfegerarbeiten ab 20 Grad Dachneigung erforderlich. Merk dir diese Zahl: 20 Grad. Die Systemeinbauteile können aus beschichtetem Aluminium bestehen, bei Dachsteinen auch aus Beton — der Werkstoff richtet sich also nach der Deckung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l22",
+    "lernfeld": "lf08",
+    "thema": "Vermörtelung",
+    "titel": "Vermörtelung: Arten, Mischung, Grenzen",
+    "inhalt": [
+      "Vermörteln setzt du auf dem Dach zur Befestigung und zur Fugensicherung ein. Man unterscheidet drei Arten: die Längsfuge, auch Längsschlag genannt, die Querfuge oder Querschlag und den Innenverstrich. Diese drei Arten lassen sich auch miteinander kombinieren.",
+      "Der Mörtel wird als Kalkzementmörtel angemischt: ein Raumteil Zement, zwei Raumteile Kalk und acht Raumteile Sand der Körnung 0/2. Alternativ nimmst du fertigen Dachdeckerfertigmörtel. Merke dir die Reihenfolge Zement, Kalk, Sand mit den Zahlen 1, 2 und 8.",
+      "Wichtige Einschränkung: Vermörtelung und Innenverstrich gelten generell nicht als Windsogsicherung und auch nicht als regensichernde Zusatzmaßnahme. Der Grund ist, dass der Mörtel keine ausreichende dauerhafte Haltekraft gegen Windsog bietet. Die Windsogsicherung musst du also immer zusätzlich ausführen.",
+      "Einen Nutzen hat der Innenverstrich trotzdem: Wenn das Dachgeschoss zu Wohnzwecken ausgebaut wird, verhindert er den Eintrieb von Staub, Regen und Schnee. Er hält also Flugschnee und Staub ab, ersetzt aber weder die Befestigung gegen Windsog noch eine regensichernde Zusatzmaßnahme."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf08-l23",
+    "lernfeld": "lf08",
+    "thema": "Deckbreitenberechnung",
+    "titel": "Dach einteilen: Decklänge und Deckbreite berechnen",
+    "inhalt": [
+      "Die Dacheinteilung ist die Rechnung, mit der aus Sparrenlänge und Trauflänge fertige Lattweiten und Deckbreiten werden. Zur Planung einer Steildachdeckung gehören: Ziegel- bzw. Dachsteinart wählen, Deckunterlage abhängig von der Regeldachneigung festlegen, über Trauf-, First- und Ortgangausbildung entscheiden, das Dach einteilen und den Materialbedarf ermitteln.",
+      "Die Reihenfolge auf dem Dach: zuerst Trauf- und Firstlattmaß festlegen, dann die Decklänge einteilen, danach die Deckbreite. Die Deckbreite wird in Abhängigkeit von der Ortgangausbildung ermittelt und mit Schnurschlägen markiert.",
+      "Die Lattweite wird immer von Oberkante Latte gemessen — nicht von der Mitte, nicht von der Unterkante. Nur so stimmt die Höhenüberdeckung der Ziegel. Wichtig ist außerdem, dass die Ziegel- bzw. Dachsteinreihen rechtwinklig zur Lattung verlaufen.",
+      "Schritt 1 in der Länge: einzuteilende Sparrenlänge = Sparrenlänge minus Trauflattmaß DLT minus Firstlattmaß LAF. Buchbeispiel: 615 cm minus 30 cm minus 4,5 cm = 580,5 cm. Diese Länge teilst du anschließend durch den maximalen Traglattenabstand, um die Anzahl der Lattreihen zu bekommen.",
+      "Schritt 2 in der Länge: tatsächliche Decklänge, also Lattweite LW = einzuteilende Sparrenlänge geteilt durch die Anzahl der Lattreihen. Buchbeispiel: 580,5 cm geteilt durch 17 = 34,14 cm. Kontrolle: Die Lattweite muss zwischen niedrigstem und höchstem Traglattenabstand liegen, im Beispiel zwischen 33,9 und 34,3 cm.",
+      "Schritt 1 in der Breite: einzuteilende Breite = Trauflänge plus zweimal Überstand ÜO minus Ortgang links DBL minus Ortgang rechts DBR. Buchbeispiel: 1075 plus 2 mal 10,5 minus 23,6 minus 27,5 = 1044,9 cm. Diese Breite teilst du durch die höchste Deckbreite.",
+      "Schritt 2 in der Breite: tatsächliche Deckbreite DB = einzuteilende Breite geteilt durch die Anzahl der Ziegelreihen. Buchbeispiel: 1044,9 cm geteilt durch 49 = 21,32 cm. Kontrolle wie in der Länge: Die Deckbreite muss zwischen niedrigster und höchster Deckbreite liegen, im Beispiel zwischen 21,2 und 21,7 cm.",
+      "Bei Biberschwanzziegeln und Dachsteinen im Biberformat gilt für die Deckbreite: Ziegelbreite plus 0,2 cm Fuge. Vorgesehen ist eine Fuge von 1,5 bis 2 mm, in der Regel rechnest du mit 2 mm. Sie verhindert Pressungen der Ziegel aus Bewegungen des Dachstuhls und aus thermischen Veränderungen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

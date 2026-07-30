@@ -70,5 +70,175 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 7; Fachregeln Bauspenglerarbeiten; Rheinzink Konstruktionsempfehlungen",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 230' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Kontaktkorrosion: Kupfer nie oberhalb von Zink'><line x1='24' y1='116' x2='88' y2='84' stroke='currentColor' stroke-width='3'/><line x1='88' y1='84' x2='152' y2='52' stroke='#c07d4a' stroke-width='3'/><text x='96' y='44' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Kupfer</text><text x='20' y='134' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Zink</text><line x1='118' y1='66' x2='100' y2='78' stroke='currentColor' stroke-width='1.2'/><line x1='100' y1='78' x2='104.3' y2='73.2' stroke='currentColor' stroke-width='1.2'/><line x1='100' y1='78' x2='106.1' y2='75.8' stroke='currentColor' stroke-width='1.2'/><text x='38' y='156' fill='#c25f4f' font-size='13' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>✗ falsch</text><line x1='228' y1='116' x2='292' y2='84' stroke='#c07d4a' stroke-width='3'/><line x1='292' y1='84' x2='356' y2='52' stroke='currentColor' stroke-width='3'/><text x='300' y='44' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Zink</text><text x='224' y='134' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Kupfer</text><text x='228' y='156' fill='#4f9d78' font-size='13' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>✓ richtig</text><text x='18' y='185' fill='currentColor' font-size='12'>Das Wasser trägt Kupferionen nach unten – sie</text><text x='18' y='202' fill='currentColor' font-size='12'>zerstören das Zink.</text></svg>"
+  },
+  {
+    "id": "lf07-l05",
+    "lernfeld": "lf07",
+    "thema": "Bemessung",
+    "titel": "Entwässerung bemessen: Regenwasserabfluss und Abflussvermögen",
+    "inhalt": [
+      "Bemessen heißt: ausrechnen, ob Rinne, Stutzen und Fallrohr das Wasser wegbekommen, das bei Starkregen aufs Dach fällt. Die Grundbedingung ist kurz: Der berechnete Regenwasserabfluss muss kleiner sein als das tatsächliche Abflussvermögen. Sonst läuft die Rinne über. Nach DIN bzw. dem ZVDH-Merkblatt darf eine Dachrinne höchstens 24 m lang sein, der Abstand zwischen zwei Abläufen höchstens 20 m.",
+      "Der Regenwasserabfluss Q hängt von drei Größen ab: der wirksamen Dachfläche A in Quadratmetern, der Berechnungsregenspende r in l/(s·ha) und dem Abflussbeiwert C. Die Formel: Q ist gleich A geteilt durch 10000, mal r, mal C. Die 10000 rechnet die Fläche von Quadratmetern in Hektar um, weil r auf Hektar bezogen ist. Beispiel: 253,44 geteilt durch 10000, mal 300, mal 1,0 ergibt 7,60 l/s.",
+      "Die wirksame Dachfläche ist nicht die geneigte Dachfläche, sondern die waagerechte Grundfläche: A ist gleich Trauflänge mal Grundlänge des Ortes. Die Grundlänge ist die horizontale Projektion der Ortganglänge, also Ortganglänge mal Kosinus der Dachneigung. Beispiel: 18,74 m mal cos 35 Grad ergibt 15,35 m. Beim Satteldach mit zwei Rinnen entwässert jede Rinne die halbe Dachgrundfläche.",
+      "Der Abflussbeiwert C sagt, welcher Anteil des Regens wirklich abfließt. Wasserundurchlässige Deckstoffe wie Dachziegel oder Metall: C ist gleich 1,0, da fließt alles ab. Kiesdächer und extensiv begrünte Dächer mit Aufbaudicke unter 10 cm: C ist gleich 0,5. Extensive Gründächer über 10 cm Aufbaudicke und intensiv begrünte Dächer: C ist gleich 0,3 — die speichern am meisten.",
+      "Die Berechnungsregenspende r beruht auf Statistik über Dauer, Häufigkeit und Intensität der Regen vor Ort. r 5/5 ist die fünfminütige Regenspende, die alle fünf Jahre auftritt, r 5/100 die Jahrhundertregenspende. Werte nach DIN in l/(s·ha), jeweils r 5/5 und r 5/100: Bremen 246 und 434, Erfurt 277 und 463, Magdeburg 307 und 581, Stuttgart 405 und 782 — der höchste Wert der 16 Landeshauptstädte. In den Beispielen der Tabelle liegen die ZVDH-Werte über den DIN-Werten: Bremen 250 statt 246 und 500 statt 434, Stuttgart 446 statt 405 und 858 statt 782.",
+      "Für Potsdam und Wiesbaden enthält die Tabelle keine Angaben. Liegen für einen Ort keine statistischen Werte vor, rechnest du mit r gleich 300 l/(s·ha) und multiplizierst zusätzlich mit dem Sicherheitsfaktor nach Gebäudesituation: vorgehängte Dachrinne 1,0; vorgehängte Dachrinne mit Gefahr überfließenden Wassers 1,5; innen liegende Dachrinne 2,0; innen liegende Dachrinne bei Gebäuden mit hohen Schutzanforderungen wie Krankenhäusern 3,0.",
+      "Drei Dinge verringern das Abflussvermögen. Rinnenwinkel und Richtungsänderungen über 10 Grad: Faktor 0,85. Zylindrischer statt trichterförmiger Ablaufstutzen: Faktor 0,7, weil sich der Wasserstrom einschnürt, also rund 30 Prozent weniger. Laubfangvorrichtung: Faktor 0,5. Treffen mehrere zu, multiplizierst du die Faktoren: 0,7 mal 0,5 ergibt 0,35. Ist das reduzierte Abflussvermögen kleiner als der Regenwasserabfluss, wählst du die nächstgrößere Dachrinne.",
+      "Maximale Ablaufleistung der Einhangstutzen nach Nennmaß. Halbrunde Rinnen: 250 bringt 2,9 l/s, 280 bringt 4,1 l/s, 333 bringt 7,4 l/s, 400 bringt 14,5 l/s, 500 bringt 21,1 l/s. Kastenförmige Rinnen: 250 bringt 2,4 l/s, 280 bringt 3,3 l/s, 333 bringt 6,0 l/s, 400 bringt 10,8 l/s. Bei gleichem Nennmaß liegt die kastenförmige Rinne darunter.",
+      "Senkrechte Fallleitungen bei Füllungsgrad 0,33: 50 mm bringen 1,7 l/s, 60 mm 2,7, 70 mm 4,1, 75 mm 5,0, 80 mm 5,9, 85 mm 6,9, 100 mm 10,7, 120 mm 17,4, 125 mm 19,4 und 150 mm 31,6 l/s. Reicht eine Leitung nicht, nimmst du mehrere: für 36 l/s zwei Leitungen mit 125 mm, zusammen 38,8 l/s. Bei innen liegenden Rinnen sind mindestens zwei Abläufe vorgeschrieben."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l06",
+    "lernfeld": "lf07",
+    "thema": "Flachdachentwässerung",
+    "titel": "Flachdach entwässern: Dachabläufe richtig setzen und schützen",
+    "inhalt": [
+      "Beim Flachdach liegt die Entwässerung mitten in der Dachfläche — sitzt der Ablauf falsch, steht das Wasser auf dem Dach. Die Abläufe werden an den Tiefpunkten der Dachfläche angeordnet und sollen mindestens 30 cm Abstand zu Durchdringungen und Aufbauten haben. Bei zu geringem Abstand sammeln sich dort Verschmutzungen wie Laub und der Ablauf verstopft.",
+      "Dachabläufe gibt es als Fertigteile aus Kunststoff, Gusseisen oder korrosionsgeschütztem Stahl. In der Regel werden zweiteilige Gullys verwendet, weil sie sich an den Dachaufbau anpassen lassen. Dachabläufe und Fallrohre sollten wärmegedämmt sein — sonst bildet sich an ihnen Tauwasser.",
+      "Als Nenngröße wird entweder der Innendurchmesser, geschrieben DN/ID, oder der Außendurchmesser, geschrieben DN/OD, angegeben. Gängige Nenngrößen von Dachabläufen sind DN/ID 50, 70, 100, 125 und 150. Achte beim Bestellen darauf, welche der beiden Angaben gemeint ist.",
+      "Abläufe werden nach ihrer Belastbarkeit in Klassen eingeteilt. Klasse H1,5 gilt für nicht genutzte Flachdächer. Klasse K3 gilt für Balkone, Terrassen und begrünte Flachdächer. Die höhere Klasse ist dort nötig, weil diese Flächen begangen werden und der Ablauf entsprechend mehr aushalten muss.",
+      "Abgedichtet werden die Abläufe über vorgefertigte Flansche, die mit der Dachabdichtung verklebt oder verschweißt werden. Dichtungsmanschetten aus Kunststoff werden mit Klemmringen oder Schraubflanschen mit den Abläufen verbunden.",
+      "Die Einlauföffnungen werden durch Gitterroste, Körbe oder Siebe abgedeckt. In nicht genutzten Flachdächern müssen die Roste mindestens 30 mm über den Dachbelag hinausragen, damit sie nicht zuwachsen oder verstopfen. Bei begrünten Dächern schützt ein mindestens 50 cm breiter Kiesrand den Ablaufbereich vor dem Zuwachsen. Bei frostgefährdeten Abläufen verhindert eine Heizung mit Heizspiralen oder Heizmanschette die Vereisung.",
+      "Bei innen liegenden Dachrinnen sollen die Ablaufstutzen konisch ausgebildet sein, und ihr Einlaufquerschnitt etwa doppelt so groß wie der Querschnitt der Fallleitung — das gibt das optimale Ablaufvermögen. Erfolgt die Notentwässerung über zusätzliche Fallleitungen, dürfen diese nicht in die Grundleitungen entwässern, sondern müssen frei aufs Grundstück geführt werden. So funktioniert sie auch bei überlasteter Kanalisation."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l07",
+    "lernfeld": "lf07",
+    "thema": "Fallrohre",
+    "titel": "Vom Stutzen bis zum Kanal: Fallrohre und Regenwassernutzung",
+    "inhalt": [
+      "Das Fallrohr bringt das gesammelte Wasser von der Rinne kontrolliert nach unten — sitzt es falsch, läuft das Wasser an der Fassade entlang. Der Weg des Wassers: Dachfläche, Dachrinne, Ablaufstutzen, bei Dachüberstand über Rohrbögen beziehungsweise Verbindungsstutzen an die Hauswand, dann Fallrohr und unten über ein Abflussrohr in die Kanalisation.",
+      "Rinne und Fallrohr werden mit trichterförmigen oder zylindrischen Einlaufstutzen verbunden. Beim zylindrischen Einlauf fließt das Wasser langsamer ab, deshalb wird dort der Fallrohrdurchmesser um eine Stufe größer gewählt. Bei besonders großem Wasserzulauf kommt ein Rinnenkasten davor: Er sammelt das Wasser aus der Rinne, bevor es ins Fallrohr geht, und verhindert Überlaufen bei Spitzenlasten.",
+      "Befestigt wird das Fallrohr mit Rohrschellen an der Außenwand. Der Abstand der Schellen beträgt höchstens 3 m bei Rohrdurchmessern bis 100 mm und höchstens 2 m bei größeren Rohren. Zwischen Außenwand und Fallrohr müssen mindestens 20 mm Abstand bleiben, damit die Wand dahinter abtrocknet und du zum Warten herankommst.",
+      "An den Stoßstellen werden Metallfallrohre mit mindestens 50 mm ineinandergesteckt und verbunden. Kunststoffrohre werden dagegen über Muffen oder Steckelemente verbunden. Die Längsnähte von Metallfallrohren entstehen durch Löten, Schweißen oder Falzen; sie sollen für eventuelle Ausbesserungsarbeiten leicht zugänglich sein.",
+      "Soll das Regenwasser genutzt werden, kann das Fallrohr eine Regenrohrklappe bekommen: Sie leitet das Wasser in eine untergestellte Regenwassertonne um, zum Beispiel für die Gartenbewässerung. Bei einer größeren Anlage erhält das Fallrohr stattdessen zunächst einen Schmutzfilter und leitet das Wasser in ein Sammelbecken.",
+      "Als Sammelbecken eignen sich Kunststofftanks oder abgedichtete Becken aus Beton. Am Zulauf sitzt der Schmutzfilter, dazu kommt eine Überlaufvorrichtung, deren Abflussrohr mit der Kanalisation verbunden ist — so läuft das Becken bei starkem Regen nicht über. Für die weitergehende Nutzung im Haus, etwa Toilettenspülung oder Waschwasser, wird das Wasser gespeichert und über eine Pumpe in die häusliche Wasserversorgung weitergeleitet."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l08",
+    "lernfeld": "lf07",
+    "thema": "Montage",
+    "titel": "Dachrinne montieren: Reihenfolge, Werkzeug und Halter",
+    "inhalt": [
+      "Die Rinne muss zum Ablauf hin Gefälle haben — sonst steht das Wasser drin und du musst nochmal hoch. Deshalb beginnt die Montage damit, die Platzierung des Rinnenablaufs zu markieren: Dort liegt der niedrigste Punkt der Rinne. Rechts und links davon werden Rinnenhalter angebracht, danach wird ein Halter an der höchsten Stelle befestigt.",
+      "Das Loch für den Ablaufstutzen wird mit einer Metallsäge ausgesägt. Auf keinen Fall einen Winkelschleifer verwenden: Seine Hitzeeinwirkung zerstört die Schutzschicht des Metalls und begünstigt Korrosion an der Schnittkante. Der Schaden zeigt sich erst später — als Rost genau an dieser Kante.",
+      "Nach dem Ausschneiden wird die Kante mit einem Hammer etwas nach unten gebogen. Dieser Arbeitsschritt heißt Umbördeln. Anschließend wird der Ablaufstutzen in der Dachrinne festgeklickt beziehungsweise montiert.",
+      "Rinnenhalter werden an der Traufe mit mindestens zwei Nägeln oder Schrauben befestigt — oder durch Drehhaltersysteme. Ein Nagel allein reicht also nicht. Drehrinnenhalter werden dabei in eine durchlaufende Rinnenschiene eingedreht.",
+      "Der Halterabstand richtet sich nach der Beanspruchung. Bei einem Abstand von höchstens 74 cm gilt bei üblicher Beanspruchung Reihe 1, bei hoher Beanspruchung in schneereicher Gegend Reihe 3. Bei einem Abstand von höchstens 84 cm gelten entsprechend Reihe 2 beziehungsweise Reihe 4.",
+      "Rinnenhalter müssen aus Metallen bestehen, die mit der verwendeten Rinne verträglich sind. Für Zink-, Aluminium- und feuerverzinkte Stahlrinnen kannst du Halter aus feuerverzinktem Stahl verwenden, für Kupferrinnen solche aus Kupfer."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l09",
+    "lernfeld": "lf07",
+    "thema": "Aufbau der Anlage",
+    "titel": "Die Dachentwässerung im Überblick: Bauteile und Wasserweg",
+    "inhalt": [
+      "Bevor du etwas montierst oder bestellst, musst du wissen, welches Teil wo hingehört und wohin das Wasser läuft. Beim geneigten Dach wird das Regenwasser über die Dachfläche in die Dachrinne eingesammelt und über Ablaufstutzen in die Fallrohre weitergeleitet.",
+      "Zur Steildachentwässerung gehören: Dachrinne mit Endboden, Rinnenhalter — als Rinnenschiene oder Drehhalter —, Rinnenwinkel, Einhangstutzen, Rohrbögen, Fallrohr und Fallrohrschellen. Diese Teile bilden die Grundausstattung jeder Steildachentwässerung — je nach Objekt kommen noch Dehnungselemente, Laubfang oder ein Rinnenkasten dazu.",
+      "Die vier Hauptteile und ihre Aufgabe: Die Dachrinne sammelt das Wasser an der Traufe. Der Einhangstutzen, auch Ablaufstutzen genannt, verbindet Rinne und Fallrohr. Der Rohrbogen überbrückt den Dachüberstand zur Wand. Das Fallrohr führt das Wasser nach unten zur Grundleitung.",
+      "Beim Flachdach läuft es anders. Dort liegt die Entwässerung meist innerhalb der Dachfläche, ebenso bei Dachterrassen. Das Wasser wird über Dachabläufe abgeleitet, also Gullys, die in die Dachfläche eingelassen und an Fallrohre angeschlossen sind."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l10",
+    "lernfeld": "lf07",
+    "thema": "Dachrinnen",
+    "titel": "Dachrinnen: Bauarten, Querschnitte und Maße",
+    "inhalt": [
+      "Die Dachrinne sammelt das Wasser der ganzen Dachfläche und führt es kontrolliert zum Fallrohr — sitzt an der Traufe die falsche Rinne, landet das Wasser an der Fassade oder im Gebäude. Grundsätzlich unterscheidest du zwei Hauptgruppen: außen liegende und innen liegende Dachrinnen.",
+      "Zu den außen liegenden Rinnen gehören vorgehängte Rinnen (Hängerinne), aufliegende Rinnen (Liegerinne) und Standrinnen. Befestigt werden sie mit Rinnenhaltern oder durch Hafte. Die Hängerinne hängt vor der Traufe unter einem Traufgesims, ist selbsttragend und wird in Rinnenhalter eingehängt. Die Standrinne steht als verdeckte Rinne auf dem Traufgesims.",
+      "Im Querschnitt gibt es Rinnen halbrund (Kurzzeichen H) und kastenförmig (Kurzzeichen K). Beide haben an der Vorderseite einen Rinnenwulst und an der Rückseite einen Rinnenfalz, den Wasserfalz. Merk dir die Lage: Wulst vorne an der Außenkante, Falz hinten zum Dach hin.",
+      "Der Rinnenwulst liegt bei allen Rinnenprofilen mindestens 8 mm tiefer als der Rinnenfalz. Staut sich das Wasser, zum Beispiel durch eine Verstopfung, läuft es über die Vorderkante ab und dringt nicht ins Gebäude. Genau das ist bei vorgehängten Rinnen die Notentwässerung — spezielle Notüberläufe werden dort nicht vorgesehen.",
+      "Halbrund oder kastenförmig? Halbrunde Rinnen erreichen bei geringen Wassermengen eine höhere Abflussgeschwindigkeit, dadurch werden Schmutzablagerungen vermieden. Außerdem sind sie einfacher herzustellen und kostengünstiger als kastenförmige Dachrinnen.",
+      "Verlege die Rinne mit Gefälle: Das Mindestgefälle beträgt 1 mm auf 1 m Rinnenlänge. So verhinderst du Stauwasserbildung und bekommst einen schnelleren Wasserabfluss. Auf 12 m Rinne sind das 12 mm Höhenunterschied. Der Haken dabei: Bei waagerechter Trauflinie stört das Gefälle den optischen Eindruck.",
+      "Metallrinnen verbindest du je nach Werkstoff durch Löten, Nieten mit Dichtungseinlage, Nieten mit zusätzlichem Weichlöten, Schweißen oder Kleben. Den Werkstoff liest du am Kurzzeichen ab: Al = Aluminium, Cu = Kupfer, VSt = verzinktes Stahlblech, Zn = Titanzink, S.S. = nicht rostender Stahl.",
+      "Metallrinnen werden nach ihrer Zuschnittbreite eingeteilt — der Breite des Blechstreifens, aus dem die Rinne gefertigt wird, zugleich das Nennmaß, zum Beispiel 333 mm. Je größer die Zuschnittbreite, desto größer der Rinnenquerschnitt. Die alte Bezeichnung 6-teilig kommt vom 2-m-Normblech: 200 cm : 6 = 33,3 cm, also Nennmaß 333. Kunststoffrinnen zählt man dagegen nach lichter Weite, zum Beispiel RG 180.",
+      "Innen liegende Rinnen liegen im Dachbereich innerhalb der Gebäudefläche. Läuft so eine Rinne über, dringt Wasser in die Dachfläche und unter Umständen ins Gebäude — deshalb bekommen sie Notüberlaufvorrichtungen. In kalten, schneereichen Gebieten verhindert eine Rinnenheizung, dass die Rinne vereist und verstopft."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l11",
+    "lernfeld": "lf07",
+    "thema": "Zeichnerische Darstellung",
+    "titel": "Abwicklungen, Schnitte und Durchdringungen konstruieren",
+    "inhalt": [
+      "Bevor du aus flachem Blech ein Rohr, einen Stutzen oder ein Rinnenteil machst, musst du die Oberfläche des Körpers in der Ebene aufzeichnen — das ist die Abwicklung. Rinnenzuschnitte und Rohrabwicklungen bauen genau auf diesen Konstruktionen auf.",
+      "Die Mantelfläche eines Zylinders wird so abgewickelt, dass sie in einer Ebene liegt. Dabei entsteht eine Rechteckfläche aus der Zylinderhöhe h und dem Kreisumfang U. Den Umfang rechnest du am genauesten aus: U = d mal pi. Fallrohr mit d = 100 mm: 100 mal 3,1416 = 314,2 mm, dazu kommt noch der Zuschlag für die Naht.",
+      "Für die Konstruktion teilst du den Umfang mithilfe der Zeichendreiecke in regelmäßige Teile auf: 8 Teile sind je 45 Grad, 12 Teile je 30 Grad, 16 Teile je 22,5 Grad. Gängig sind 12 Teile zu je 30 Grad.",
+      "Schnitte am Zylinder — die Lage der Schnittebene entscheidet über die Schnittfigur: parallel zur Grundrissebene ergibt eine Gerade, senkrecht dazu ein Rechteck, im 45-Grad-Winkel einen Kreis, in beliebigem Winkel eine Ellipse.",
+      "So wickelst du einen schräg geschnittenen Zylinder ab: Grundkreis in gleiche Teile teilen (üblich sind 12 zu je 30 Grad), die Teilpunkte in die Ansicht hochloten — dort schneiden die Lotlinien die schräge Schnittkante in unterschiedlichen Höhen. Dann die Abwicklungsbreite U = d mal pi berechnen und in genauso viele gleiche Teile unterteilen.",
+      "Anschließend überträgst du die in der Ansicht abgegriffenen Höhen auf die entsprechenden Teilstriche der Abwicklung, verbindest die Punkte mit dem Kurvenlineal zu einer weichen Schnittkurve und ergänzt die Nahtzugabe. Weil der Schnitt schräg liegt, sind die Mantellinien unterschiedlich lang — je mehr Teilpunkte, desto genauer die Kurve.",
+      "Der Kegelmantel wird zu einem Kreisausschnitt abgewickelt: Sein Radius ist die Mantellinie l, seine Bogenlänge entspricht dem Umfang des Grundkreises. Je flacher der Kegel ist, desto größer ist die Bogenlänge im Verhältnis zur Mantellänge — ein sehr flacher Kegel nähert sich dem Vollkreis an.",
+      "Die Mantellinie ist die Verbindungslinie von einem Punkt der Umfangslinie des Grundkreises zur Kegelspitze. In der Ansicht erscheinen nur die beiden begrenzenden Mantellinien in wahrer Größe, alle übrigen verkürzt. Da alle Mantellinien gleich lang sind, greifst du l für die Abwicklung einfach aus der Ansicht ab.",
+      "Durchdringen sich zwei Körper, entsteht an der Naht eine Durchdringungskurve. Du konstruierst sie punktweise mit Hilfsschnitten und legst diese so, dass einfache Schnittflächen entstehen, zum Beispiel Kreise oder Rechtecke. Je mehr Punkte du bestimmst, desto genauer wird die Kurve; gezeichnet wird sie mit dem Kurvenlineal."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l12",
+    "lernfeld": "lf07",
+    "thema": "Innen liegende Rinnen",
+    "titel": "Innen liegende Rinnen: Freibord und Notentwässerung",
+    "inhalt": [
+      "Innen liegende Rinnen liegen innerhalb der Gebäudefläche — läuft so eine Rinne über, geht das Wasser nicht an die Fassade, sondern in die Dachfläche und ins Gebäude. Deshalb ist hier eine sorgfältige Planung nötig: Zu einem Überlaufen darf es in keinem Fall kommen.",
+      "Unabhängig von der Größe der Dachfläche sind mindestens zwei Dachabläufe vorzusehen, und einer von ihnen muss als Notablauf konzipiert sein. Der Grund ist einfach: Fällt ein Ablauf durch eine Verstopfung aus, würde ohne den zweiten Wasser ins Gebäude eindringen.",
+      "Freibord ist der Abstand zwischen dem höchsten Wasserstand in der Rinne und der Rinnenoberkante: F = Z minus W, mit Z als Rinnenhöhe und W als Wassertiefe. Der Freibord gleicht Wasserbewegungen in der Rinne aus und verhindert das Überlaufen — ein Sicherheitsabstand nach oben.",
+      "Mindestfreibord nach Rinnenhöhe Z: unter 85 mm sind es 25 mm, von 85 bis 250 mm gilt 0,3 mal Z, über 250 mm sind es 75 mm. Beispiel: Bei Z = 200 mm rechnest du 0,3 mal 200 = 60 mm Freibord.",
+      "Notabläufe und Notüberläufe bemisst du nach der Differenz zwischen dem Jahrhundertregen und dem größten Abflussvermögen des Dachentwässerungssystems. Als Formel: Q_Not = (r 5/100 minus r 5/5) mal C mal A geteilt durch 10000, kurz Q_Not = Q 5/100 minus Q 5/5.",
+      "Den Regenwasserabfluss rechnest du so: Q = Fläche geteilt durch 10000 mal Regenspende mal Abflussbeiwert C. Buchbeispiel: Dach 40 m mal 30 m ergibt 1200 m², C = 1,0, Regenspende 300 l/(s·ha). Also Q = 1200 geteilt durch 10000 mal 300 = 36 l/s.",
+      "Dasselbe Dach mit der Jahrhundertregenspende von 500 l/(s·ha) ergibt 60 l/s. Die Notentwässerung muss die Differenz abführen: 60 minus 36 = 24 l/s. Rechne also immer zweimal — einmal normal, einmal mit dem Jahrhundertregen — und ziehe dann ab."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l13",
+    "lernfeld": "lf07",
+    "thema": "Wärmedehnung",
+    "titel": "Wärmedehnung: wann die Rinne Platz braucht",
+    "inhalt": [
+      "Rinnen werden in der Sonne warm und nachts wieder kalt, dabei ändern sie ihre Länge. Damit diese Wärmedehnung ungehindert ablaufen kann, brauchen lange Rinnen Dehnungsmöglichkeiten. Ab welcher Länge, das hängt vom Werkstoff ab — Kunststoff dehnt sich stärker als Metall.",
+      "Bei Metallrinnen über 15 m Länge müssen Dehnungsmöglichkeiten angeordnet werden. Bei Kunststoffrinnen sind sie bereits ab 4 m Länge nötig, weil die Längenausdehnung von Hart-PVC noch größer ist als die von Metallen. Zwei Zahlen, ein Unterschied: 15 m bei Metall, 4 m bei Kunststoff.",
+      "Wie viel das ausmacht, zeigt die Größenordnung: Eine 10 m lange Kunststoffrinne dehnt sich bei 80 Grad Celsius Temperaturunterschied um etwa 40 mm aus. Umgerechnet sind das bei diesen 80 Grad Temperaturunterschied rund 4 mm je Meter Rinnenlänge. Genau deshalb liegt die Grenze bei Kunststoff so viel niedriger als bei Metall.",
+      "Aufgenommen wird die Dehnung zum Beispiel vom Chloropren-Dehnungsband: ein elastisches Kunststoffband, das gegen UV-Strahlung und Witterung unempfindlich ist. Es wird zwischen zwei Rinnenabschnitte eingebaut und nimmt die Längenänderung auf, ohne dass Wasser austritt.",
+      "Die zweite Möglichkeit ist die Schiebenaht. Sie ermöglicht ebenfalls Dehnbewegungen, sperrt aber den Wasserlauf. Deshalb darfst du Schiebenähte nur an den höchsten Punkten des Rinnenverlaufs anordnen — dort, wo kein Wasser durchfließen muss.",
+      "Passt zusammen: Kunststoffrinnen kommen als 4 m lange Elemente in den Handel, und ab 4 m Länge sind Dehnungselemente einzubauen. Behalte beim Aufmaß im Kopf, wo die Dehnungsteile hinkommen — das Chloropren-Band kann überall im Verlauf sitzen, die Schiebenaht nur am höchsten Punkt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf07-l14",
+    "lernfeld": "lf07",
+    "thema": "Kunststoffrinnen",
+    "titel": "Kunststoffrinnen und die Werkstoffwahl im Projekt",
+    "inhalt": [
+      "Kunststoffrinnen sind preiswert und leicht — dafür dehnen sie sich stark und vertragen wenig mechanische Beanspruchung. Du musst also wissen, wo sie passen, wie du sie verbindest und nach welchen Kriterien der Werkstoff für eine Dachentwässerung überhaupt ausgewählt wird.",
+      "Dachrinnen und Fallrohre aus Kunststoff werden unter anderem aus schlagfestem PVC hergestellt, also Hart-PVC. Sie entstehen als Strangware mit dem Extruder und kommen als 4 m lange Elemente in den Handel.",
+      "Die Eigenschaften bestimmen den Einsatzort: PVC ist preiswert und hat eine niedrige Masse, dafür eine verhältnismäßig hohe Wärmeausdehnung. Setze solche Rinnen deshalb nur dort ein, wo sie wenig mechanisch beansprucht werden und wo die Bewegungen aus der Wärmeausdehnung ausgeglichen oder durch stabile Bauteile aufgefangen werden können.",
+      "Hart-PVC lässt sich bohren, sägen und fräsen. Verbunden wird es durch Steckverbindungen mit Verbindungsstücken oder durch Klebeverbindungen. Beim Kleben nimmst du speziellen PVC-Kleber: Klebestellen reinigen, beidseitig einstreichen und sofort zusammenfügen.",
+      "Bei der Größe zählt ein anderes Maß als bei Metall: Kunststoffrinnen werden nach ihrer lichten Weite eingeteilt, der Richtgröße — RG 180 bedeutet lichte Weite 180 mm. Metallrinnen gehen dagegen nach der Zuschnittbreite, dem Nennmaß.",
+      "Bei der Projektaufgabe wählst du den Werkstoff für die Dachentwässerung nach drei Gesichtspunkten aus: technisch (Korrosionsbeständigkeit, Verträglichkeit mit dem Deckwerkstoff, Wärmedehnung), wirtschaftlich (Materialpreis, Verarbeitungsaufwand, Lebensdauer) und ökologisch (Herstellungsenergie, Recyclingfähigkeit).",
+      "Für die Bemessung der Rinne brauchst du mindestens vier Angaben: die wirksame Dachfläche A aus Trauflänge und Grundlänge, die örtliche Berechnungsregenspende r nach Tabelle 2 (ersatzweise 300 l/(s·ha) mit Sicherheitsfaktor), den Abflussbeiwert C nach Deckungsart und die Rinnenlänge für die Tabellen 4 und 5."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]
