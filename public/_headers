@@ -1,0 +1,11 @@
+# Cloudflare Pages liest diese Datei beim Ausliefern.
+#
+# Die App enthält 1069 Bildausschnitte aus einem Fachbuch und 2039 Aufgaben mit
+# Seitenverweisen. Der eigentliche Schutz ist Cloudflare Access — diese Header
+# sind die zweite Linie: Sie halten Suchmaschinen und Archivdienste fern, falls
+# Access einmal ausfällt, falsch konfiguriert ist oder eine Vorschau-URL
+# irgendwo auftaucht.
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet, noimageindex
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
