@@ -74,5 +74,313 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 12; Fachregeln Bauspenglerarbeiten; Europa-Lehrmittel Fachkunde Klempner/Spengler",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 230' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Die vier Grundtechniken am Blech'><path d='M28 58 L68 58 L68 40' fill='none' stroke='currentColor' stroke-width='2.4'/><text x='24' y='82' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Kanten</text><path d='M120 58 L152 58 L152 48 L144 48 L144 56 L160 56' fill='none' stroke='currentColor' stroke-width='2.4'/><text x='116' y='82' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Falzen</text><path d='M28 136 L60 136 A6 6 0 1 0 60 124' fill='none' stroke='currentColor' stroke-width='2.4'/><text x='24' y='160' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Bördeln</text><path d='M212 136 Q232 122 252 136 Q272 150 292 136' fill='none' stroke='currentColor' stroke-width='2.4'/><text x='208' y='160' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Schweifen</text><line x1='18' y1='176' x2='362' y2='176' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='198' fill='currentColor' font-size='12.5'>Abwicklung = Deckbreite plus alle Zugaben</text></svg>"
+  },
+  {
+    "id": "lf12-l05",
+    "lernfeld": "lf12",
+    "thema": "Übersicht",
+    "titel": "Metalldeckungen: Werkstoffe, Bauarten und Materialverhalten",
+    "inhalt": [
+      "Metalldeckungen brauchst du überall dort, wo eine dauerhafte und frei formbare Dachhaut gefragt ist. Für Dachdeckungen werden Kupfer, Blei, Aluminium, Stahl und Zink eingesetzt. Kupfer und Blei sind die alten, traditionsreichen Werkstoffe; bei modernen Metalldeckungen kommen Aluminium, Stahl und Zink dazu.",
+      "Jede Metalldeckung sortierst du zuerst in eine von zwei Gruppen. Selbsttragende Deckungen bestehen aus profilierten oder verfalzten Blechen, nehmen Dachlasten auf und übertragen sie — eine vollflächige Deckunterlage brauchen sie nicht. Nicht selbsttragende Deckungen werden aus Metallbändern oder Tafeln hergestellt und auf einer Deckunterlage verlegt.",
+      "Nicht selbsttragend sind: Stehfalzdeckung als Winkel- oder Doppelstehfalz, Leistendeckung und die rollnahtgeschweißte Edelstahldeckung. Selbsttragend sind: Deckung mit profilierten Blechen (Well- oder Trapezprofile), Deckung mit Sandwichelementen und Deckung mit Kassettenprofilbändern. Merk dir vor allem die Sandwichelemente — die gehören zu den selbsttragenden Deckungen.",
+      "Metall kommt als Band oder als Tafel auf die Baustelle. Bänder heißen Coils und werden von Rollen mit bis zu 300 m Länge geliefert; die Standardbreiten sind 500 mm, 600 mm und 670 mm. Tafeln sind in der Regel 1 m breit und 2 bis 3 m lang.",
+      "Der Vorteil der Bänder: Mit bis zu 300 m Länge deckst du die Fläche ohne Querstöße durch. Tafeln von 2 bis 3 m musst du dagegen erst mit Querfalzen verbinden — mehr Arbeit, mehr wasserführende Verbindungen. Die Bänder und die durch Querfalze verbundenen Tafeln heißen Scharen. Eine Schare läuft senkrecht zur Traufe; längs werden Scharen durch Stehfalz- oder Leistendeckung verbunden.",
+      "Vorteile von Metalldächern: Sie sind sehr langlebig, die im Laufe der Zeit entstehende Patina schützt das Metall vor Korrosion, und es lassen sich vielfältige, auch runde Formen herstellen. Auch Flächenübergänge, zum Beispiel vom Dach zum Kamin, lassen sich gut ausbilden.",
+      "Nachteile: Die Montage ist aufwendig und damit kostspielig. Starker Regen kann laute Trommelgeräusche erzeugen, Hagel kann die Metalldeckung verformen, und beim Verarbeiten direkt vom Band kann eine Wellenbildung sichtbar werden. Und die Wärmebewegung der Konstruktion musst du einplanen, sonst kommt es zu Schäden.",
+      "Drei Materialeigenschaften bestimmen die Konstruktion. Erstens die große thermische Längenänderung: Die Befestigung muss die Wärmebewegung zulassen, deshalb werden Scharen nur indirekt über Hafte befestigt. Zweitens greifen Holzschutzmittel die Metalle an, deshalb ist dann eine Trennlage nötig. Drittens besteht zwischen unterschiedlichen Metallen Kontaktkorrosionsgefahr.",
+      "Die Längenänderung rechnest du so: Längenänderung = Ausdehnungskoeffizient mal Länge mal Temperaturdifferenz. Für Zink sind das 0,022 mm je Meter und Kelvin. Beispiel: eine 10 m lange Zinkschare bei 100 K Temperaturdifferenz — 0,022 mal 10 mal 100 = 22 mm. Diese 22 mm muss die Befestigung mitmachen können."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l06",
+    "lernfeld": "lf12",
+    "thema": "Materialbedarf",
+    "titel": "Materialbedarf für Metalldeckungen berechnen",
+    "inhalt": [
+      "Bevor du bestellst, musst du wissen, wie viel Blech, wie viele Schare und wie viele Profiltafeln aufs Dach gehen. Gerechnet wird Position für Position: Fläche, Scharen, Traufe, First, Ortgang, dazu Zulagen für Verschnitt. Flächendeckung beim Satteldach: Dachfläche = 2 mal Sparrenlänge mal Dachlänge, der Faktor 2 steht für die beiden Dachseiten. Beispiel: 2 mal 7,85 mal 12,50 = 196,25 m².",
+      "Anzahl der Schare: rechnerische Anzahl = Dachlänge geteilt durch Achsmaß. Beispiel mit 600er Band und Achsmaß 525 mm: 12,50 geteilt durch 0,525 = 23,81. Gewählt werden 22 Flächenschare und 2 Passschare. Die Passscharbreite ist (12,50 minus 22 mal 0,525) geteilt durch 2 = 0,475 m. Bewusst 22 statt 23, damit die Randscharen breit genug bleiben.",
+      "Laufende Länge der Schare: Beim Satteldach läuft jede Schare über den First durch, also 2 mal Sparrenlänge = 2 mal 7,85 = 15,70 m. Mit 5 Prozent Zulage: 22 mal 15,70 mal 1,05 = 362,67 m für die Flächenschare. Die beiden Passschare: 2 mal 15,70 mal 1,05 = 32,97 m.",
+      "Die Zuschnittbreite eines Profils ist die Summe seiner einzelnen Schenkel. Buchbeispiel: Traufblech 15 + 6 + 3 + 2 = 26 cm, Firstkappe 14 + 14 + 8 + 8 + 2 + 2 = 48 cm, Ortgangabdeckung 14 + 6 + 3 + 3 = 26 cm. Bestellt wird also 2,00 mal 0,26 m beziehungsweise 2,00 mal 0,48 m.",
+      "Stückzahlen aus Standardtafeln von 2,00 m Länge, immer aufgerundet — ein halbes Blech gibt es nicht. Trauflänge = 2 mal 12,50 = 25,00 m, geteilt durch 2,00 = 12,5, also 13 Stück. First: 12,50 geteilt durch 2,00 = 6,25, also 7 Stück. Ortgänge: ein Satteldach hat vier davon, 4 mal 7,85 = 31,40 m, je Ortgang 4 Stück, gesamt 16 Stück.",
+      "Zylinderdach (Tonnendach): Rechne mit der abgewickelten Bogenlänge, nicht mit der Spannweite — das Blech folgt ja der Rundung. Halbkreis: pi mal 22,40 geteilt durch 2 = 35,19 m. Flächendeckung = 35,19 mal 36,80 = 1294,8 m². Der Ortgang folgt an beiden Giebeln der Rundung: 2 mal 35,19 = 70,37 m. Traufausbildung = 2 mal 36,80 = 73,60 m.",
+      "Scharen am Zylinderdach: Achsmaß 625 mm beim 700er Band, 36,80 geteilt durch 0,625 = 58,88, gewählt 58 Flächenschare und 2 Passschare à 0,275 m. Pultdach mit Dachbruch: Teilflächen einzeln rechnen und addieren, 18,50 mal (2,50 + 3,50) = 111,00 m². Pultdachfirst und Dachbruch je 18,50 m, Ortausbildung 2 mal 6,00 = 12,00 m. Die Gesamthöhe brauchst du nicht, weil die Teillängen schon in der Dachfläche gemessen sind.",
+      "Zeltdach: Sparrenlänge = Wurzel aus (Höhe im Quadrat plus halbe Grundseite im Quadrat) = Wurzel aus (5,80² + 4,20²) = 7,16 m. Vier gleiche Dreiecke: 4 mal (8,40 mal 7,16 geteilt durch 2) = 120,3 m². Traufausbildung = 4 mal 8,40 = 33,60 m.",
+      "Der Grat läuft von der Gebäudeecke zur Spitze, also über die Diagonale: halbe Diagonale = Wurzel aus (4,20² + 4,20²) = 5,94 m, Gratlänge = Wurzel aus (5,80² + 5,94²) = 8,30 m, vier Grate = 33,21 m. Der Grat ist länger als der Sparren — mit der Sparrenlänge bestellst du zu wenig."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l07",
+    "lernfeld": "lf12",
+    "thema": "Selbsttragende Deckungen",
+    "titel": "Selbsttragende Deckungen: Profile, Neigungen und Befestigung",
+    "inhalt": [
+      "Selbsttragende Deckungen setzt du dort ein, wo das Blech selbst die Dachlasten übernehmen soll — dann sparst du dir die vollflächige Deckunterlage. Profilierte Metalle sind wegen ihrer Querschnittsformen stabil und können auf Unterkonstruktionen aus Holzlatten oder Metallprofilen verlegt werden. Man unterscheidet groß- und kleinformatige Elemente.",
+      "Kleinformatige Elemente sind kleiner als 0,4 m² und wiegen weniger als 0,5 kg. Ihre Mindestdachneigung beträgt 10 Grad und erfordert dann ein Unterdach, die Regeldachneigung liegt bei 22 Grad. Zu jeder Neigungsstufe dazwischen gehört eine bestimmte Zusatzmaßnahme.",
+      "Die Zusatzmaßnahmen bei kleinformatigen Elementen nach Dachneigung: 10 bis unter 12 Grad wasserdichtes Unterdach, 12 bis unter 14 Grad regensicheres Unterdach, 14 bis unter 18 Grad naht- und perforationsgesicherte Unterdeckung, 18 bis unter 22 Grad verschweißte oder verklebte Unterdeckung beziehungsweise überdeckte und genagelte Unterdeckung mit Bitumenbahnen, ab 22 Grad Unterspannung.",
+      "Dahinter steckt eine einfache Faustregel: Je flacher das Dach, desto dichter muss die Zusatzmaßnahme sein. Bei 11 Grad brauchst du also ein wasserdichtes Unterdach, bei 23 Grad reicht die Unterspannung. Merk dir die vier Grenzen 12, 14, 18 und 22 Grad, dann kannst du jede Neigung einsortieren.",
+      "Großformatige Profiltafeln haben eine Mindestdachneigung von 3 Grad, dann aber ohne Querstoß und ohne Durchdringungen; die Regeldachneigung beträgt 7 Grad. Bei großformatigen Profiltafeln steht dafür die Mindestüberdeckung im Vordergrund: 3 bis unter 5 Grad nur ohne Durchdringungen und Querstöße, 5 bis unter 7 Grad 200 mm mit Zusatzmaßnahmen, 7 bis unter 12 Grad 200 mm, 12 bis unter 20 Grad 150 mm, ab 20 Grad 100 mm.",
+      "Bei 15 Grad gilt nach dieser Reihe also 150 mm Mindestüberdeckung. An der Traufe kann die Eindeckung mit oder ohne Traufblech erfolgen. Die Überdeckung am Traufblech beträgt bei Dachneigungen unter 15 Grad mindestens 200 mm, unter 22 Grad mindestens 150 mm und über 22 Grad 100 mm — bei 18 Grad sind das 150 mm.",
+      "Trapezbleche sind biegesteif und oberflächenbeschichtet. Ihre Dicke liegt bei 0,6 bis 2 mm, die Lieferbreiten reichen von 610 bis 1035 mm. Verwendet werden sie als Dachschalen, Dachdeckungen und Wandbekleidungen. Der Ortgang kann als seitlicher Metallanschluss ausgebildet werden, mindestens 25 mm über die Oberkante des wasserführenden Profils aufgekantet.",
+      "Für die Verlegung muss ein Verlegeplan vorliegen: Einteilung der Dachfläche mit Öffnungen und Durchdringungen, Montagerichtung, Hinweise zu Befestigung und Verbindung sowie zu den Dichtbändern. Befestigt wird auf Stahl, Holz oder Beton mit Schrauben, Setzbolzen oder Blindnieten. Wellprofile liegen auf Pfetten; der Pfettenabstand hängt von Belastung, Blechdicke und Profilgeometrie ab.",
+      "Kassettenprofilbänder werden entweder mit Schrauben oder Nieten direkt auf der Unterkonstruktion befestigt — vor allem bei Wandbekleidungen — oder über überdeckte Befestigungssysteme mit Haltebügeln beziehungsweise Halteelementen. Dann setzt du zuerst die Halteelemente nach Herstellerangabe und verlegst danach die Bänder darauf. Diese Halteelemente ermöglichen zugleich die Längenänderung der Profilbänder."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l08",
+    "lernfeld": "lf12",
+    "thema": "Abschnüren",
+    "titel": "Abschnüren: Achsmaß, Einteilung und Passscharen",
+    "inhalt": [
+      "Bevor die erste Schare aufs Dach kommt, teilst du die Fläche mit dem Schnurschlag ein. Die Schnüre werden im Achsmaß geschlagen — daran richtest du jede Schare aus. Geht die Einteilung nicht glatt auf, bleibt an den Rändern ein Rest; dafür gibt es die Passscharen.",
+      "Das Achsmaß ist die Nutzungsbreite: die Breite von Band oder Tafel abzüglich der Aufkantungen für den Falz. Rechnung: Achsmaß = Bandbreite minus Aufkantung rechts minus Aufkantung links. Beispiel bei 25 mm Stehfalzhöhe: 600 minus 45 minus 35 = 520 mm.",
+      "Weil rechts 45 mm und links 35 mm abgehen, verlierst du von jeder Breite genau 80 mm. Daraus ergeben sich die Achsmaße der Standardausgangsbreiten: 500 wird zu 420 mm, 600 zu 520 mm, 700 zu 620 mm und 800 zu 720 mm.",
+      "Aufpassen bei der Materialbedarfsermittlung: Dort kommt zum reinen Scharmaß noch ein Dehnungsabstand von 5 mm dazu. Bei 800 mm Band heißt das: Scharbreite = 800 minus 45 minus 35 = 720 mm, Achsmaß = 720 plus 5 = 725 mm. Lies also genau, ob der Dehnungsabstand gefragt ist oder nicht.",
+      "Wo du anfängst, hängt von der Dachform ab: Bei rechteckigen Dachflächen beginnst du am Ortgang, bei allen anderen Dachflächen in der Dachmitte. Dachaufbauten, Durchdringungen und Kehlen musst du bei der Einteilung von Anfang an berücksichtigen.",
+      "Eine Regel bestimmt die ganze Einteilung: Es dürfen nicht drei Falze in einem Knoten zusammenlaufen. Deshalb wird die Scharenzahl notfalls um eine reduziert und der Rest anders verteilt, statt die Einteilung stur durchzurechnen.",
+      "Dafür gibt es die Passscharen — schmalere Scharen an den Rändern der Dachfläche. Das Achsmaß geht selten genau in die Dachbreite auf; der Rest wird auf zwei Passscharen an beiden Rändern aufgeteilt. Beispiel: (12,50 m minus 22 mal 0,525 m) geteilt durch 2 = 0,475 m Passscharbreite."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l09",
+    "lernfeld": "lf12",
+    "thema": "Belüftung",
+    "titel": "Belüftung der Metalldeckung",
+    "inhalt": [
+      "Unter der Metalldeckung muss die Luft laufen, sonst bleibt Feuchtigkeit in der Konstruktion stehen. Wie hoch der Belüftungsraum sein muss, hängt an der Dachneigung — je flacher das Dach, desto höher der Raum, weil der thermische Auftrieb geringer ist.",
+      "Die Werte nach Dachneigung: bis 3 Grad 150 mm Belüftungsraumhöhe, über 3 bis 15 Grad 80 mm, über 15 Grad 40 mm. Bei 2 Grad Dachneigung sind es also 150 mm. Merk dir die beiden Grenzen 3 Grad und 15 Grad, daran hängt die ganze Tabelle.",
+      "Dazu gehören die Netto-Schlitzbreiten: 60 mm bis 3 Grad, 60 mm über 3 bis 15 Grad und 30 mm über 15 Grad. Bis 15 Grad Dachneigung also 60 mm, darüber 30 mm.",
+      "Netto-Schlitzbreite heißt: die tatsächlich vorhandene Öffnungsgröße bei Lochblechen, die zum Beispiel als Kleintierschutz angebracht werden. Die Löcher verringern den freien Querschnitt gegenüber der reinen Schlitzbreite — deshalb rechnest du mit dem Nettomaß, nicht mit der Rohöffnung.",
+      "Damit überhaupt ein Luftstrom entsteht, brauchst du zwei Öffnungen: eine Belüftungsöffnung an der Traufe und eine Entlüftungsöffnung am First. Bei sehr geringen Dachneigungen unter 10 Grad kann auch von Traufe zu Traufe entlüftet werden.",
+      "Die Belüftung bringt zwei Vorteile. Erstens wird die Feuchte über die Lüftungsebene abgeführt — deshalb reicht bei der belüfteten Konstruktion eine Dampfbremse als Schutz vor eindringendem Wasserdampf. Zweitens verbessert sich der sommerliche Wärmeschutz, weil der Luftstrom die entstandene Wärme abführt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l10",
+    "lernfeld": "lf12",
+    "thema": "Edelstahldeckung",
+    "titel": "Rollnahtgeschweißte Edelstahldeckung",
+    "inhalt": [
+      "Die rollnahtgeschweißte Edelstahldeckung brauchst du überall dort, wo die Verbindung der Scharen wasserdicht sein muss. Statt zu falzen, verschweißt du die Scharen durchgehend miteinander. Sie zählt zu den nicht selbsttragenden Metalldeckungen und liegt deshalb auf einer vollflächigen Deckunterlage.",
+      "Das schweißbare Material hat eine Dicke von 0,4 mm oder 0,5 mm. Die Scharen erhalten eine einfache, 30 mm hohe Aufkantung. Diese beiden Aufkantungen werden mit einer Rollnahtschweißmaschine durchgehend miteinander verschweißt — die Dichtheit kommt hier also aus der Schweißnaht.",
+      "So arbeitet die Maschine: Rollenförmige Schweißelektroden umfassen die beiden Aufkantungen von beiden Seiten und fahren mit etwa 3,5 m je Minute an ihnen entlang. Dabei entsteht die durchgehende Schweißverbindung. An Stellen, die die selbstlaufende Maschine nicht erreicht, arbeitest du mit Handschweißgerät oder Punktschweißzange.",
+      "Die Hafte zur Befestigung der Scharen auf der Unterkonstruktion sind nur 0,15 mm dick. Wegen dieser geringen Dicke können sie einfach mit eingeschweißt werden.",
+      "Nach dem Schweißen legt eine zweite Maschine einen einfachen Stehfalz um. Das macht die Naht nicht dicht — dicht ist sie schon durch das Schweißen. Der Stehfalz beseitigt die scharfen Kanten und stabilisiert die Verbindung.",
+      "Weil die Naht wasserdicht ist, gibt es für diese Deckung keine festgelegte Regeldachneigung. Sie lässt sich sogar als Dachabdichtung im Flachdachbereich einsetzen. Bänder aus Edelstahl und das Rollnahtschweißverfahren gehören für dich also zusammen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l11",
+    "lernfeld": "lf12",
+    "thema": "Schalung",
+    "titel": "Schalung als Deckunterlage",
+    "inhalt": [
+      "Die Metallbänder haben nur etwa 0,7 mm Dicke — sie tragen sich nicht selbst und werden deshalb auf einer Schalung verlegt. Die Schalung ist die Deckunterlage jeder nicht selbsttragenden Metalldeckung und muss die Hafte sicher halten.",
+      "Für Schalung aus Holzbrettern gelten drei Anforderungen: Mindestdicke 24 mm, Breite höchstens 160 mm, Holzfeuchte unter 20 Prozent. Holz arbeitet mit der Feuchte — genau deshalb sind Brettbreite und Holzfeuchte nach oben begrenzt und nicht frei wählbar.",
+      "Schalungsbretter sollten diagonal verlegt werden. Der Grund ist handfest: So triffst du beim Befestigen der Metallhafte nicht auf eine Fuge. Ein Haft, der in eine Fuge geschraubt wird, hält nicht — und genau dort ist die Deckung dann nicht gegen Windsog gesichert.",
+      "Ist die Schalung mit Holzschutzmittel behandelt, ordnest du eine Trennlage an. Der Grund: Holzschutzmittel können die Metalle angreifen. Die Trennlage hält das Metall und das behandelte Holz auseinander, damit es zu diesem Angriff gar nicht erst kommt.",
+      "Statt Vollholz kannst du auch Holzwerkstoffe wie OSB-Platten oder Sperrholzplatten verwenden. Diese Platten solltest du aber mit Dehnungsfuge verlegen, damit mögliche Quellbewegungen der Platten die darüber liegende Metallauflage nicht verwerfen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l12",
+    "lernfeld": "lf12",
+    "thema": "Dachdetails",
+    "titel": "Traufe, First und Hinterlüftung im Detail",
+    "inhalt": [
+      "An Traufe und First entscheidet sich, ob die Luft unter der Deckung wirklich läuft und ob das Wasser sauber in die Rinne kommt. Deshalb lohnt es sich, die Bauteile dieser beiden Details der Reihe nach zu kennen.",
+      "Der Aufbau von unten nach oben: Tragwerk (Sparren), darauf die Funktionsebene (Unterdeckung), darüber die Lattung beziehungsweise das Kantholz — die den Belüftungsraum bildet — und ganz oben die Vollholzschalung. Für die Schalung gilt auch hier: mindestens 24 mm dick und höchstens 160 mm breit.",
+      "Im Traufdetail kommen Dachrinne, Rinnenhalter und Tropfblech dazu. Auch das Rinneneinhangblech gehört zur Traufe und nicht zum First. Die Merkhilfe: An der Traufe geht es um das Wasser, am First um die Abluft.",
+      "Zur Firstentlüftung gehören: Kopfleiste mit Abdeckkappe, Lüftungsschlitz mit Lochblech, Haft und Haftstreifen mit umgelegtem Stehfalz, dazu Trennlage und Schalung von mindestens 24 mm. Die Abluft entweicht durch den Lüftungsschlitz.",
+      "Konstruktiv hergestellt wird die Hinterlüftung mit Lüftersparren beziehungsweise einer Lattung, die einen durchgehenden Luftweg schaffen. Die Luft tritt an der Traufe ein, strömt unter der Schalung nach oben zum First und entweicht dort über die Lüfterhaube. Die Metalldeckung selbst bleibt dabei geschlossen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l13",
+    "lernfeld": "lf12",
+    "thema": "Metalldachpfannen",
+    "titel": "Metalldachpfannen verlegen",
+    "inhalt": [
+      "Metalldachpfannen sind die Lösung, wenn ein Dach wie eine Pfannendeckung aussehen, aber aus Blech bestehen soll. Sie werden in der Regel in der Sparrenlänge des Daches auf Maß angefertigt und kommen als große Tafeln auf die Baustelle.",
+      "Das Material: feuerverzinkte und kunststoffbeschichtete Stahlpfannen oder Pfannen aus Aluminium. Verlegt werden sie in Sparrenrichtung auf einer Lattung und dort verschraubt. Die Verlegerichtung merkst du dir zusammen mit der Anfertigung: auf Sparrenlänge zugeschnitten, in Sparrenrichtung verlegt.",
+      "Die Befestigung erfolgt mit mindestens 6 Schrauben je Quadratmeter. Der Lattenabstand ergibt sich aus dem Elementprofil und beträgt im Buchbeispiel mindestens 350 mm. Beides sind Zahlen, die du beim Bestellen der Lattung und der Schrauben brauchst.",
+      "Abmessungen aus dem Buchbeispiel: Baubreite 1050 mm, Tafelbreite 1140 mm. Die Differenz von 90 mm ist die seitliche Überdeckung. Die maximale Tafellänge beträgt 11500 mm — zusammen mit der Anfertigung auf Maß lässt sich die Sparrenlänge damit in der Regel in einem Stück abdecken.",
+      "Die Anschlüsse: Den First deckst du mit vorgefertigten Firstkappen ein, die aufgeschraubt werden. Am Ortgang wird ein Ortgangblech aufgeschraubt, an der Traufe kommt in der Regel ein Traufblech als Einlaufblech. In allen drei Bereichen werden zusätzlich Profilfüller eingebaut."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l14",
+    "lernfeld": "lf12",
+    "thema": "Unterkonstruktion",
+    "titel": "Belüftet oder unbelüftet — die Unterkonstruktion",
+    "inhalt": [
+      "Die Unterkonstruktion entscheidet, ob Feuchtigkeit aus dem Dachaufbau wieder herauskommt oder drin bleibt. Metall ist dampfdiffusionsdicht — durch die Deckung geht nichts nach oben weg. Deshalb legst du fest, ob du belüftet oder unbelüftet baust, bevor das erste Blech aufs Dach kommt.",
+      "Nicht selbsttragende Konstruktionen brauchen eine Deckunterlage, die tragfähig, flächig und trocken ist. Drei Wörter, die du dir stur merkst: tragfähig, flächig, trocken. Auf dieser Unterlage kann der gesamte Dachaufbau dann entweder belüftet oder unbelüftet ausgeführt werden.",
+      "Der große Vorteil der belüfteten Konstruktion: Eingedrungene Feuchtigkeit kann über die Lüftungsebene abgeführt werden. Diese Feuchte stammt entweder aus der Bauphase oder entsteht später durch Tauwasserausfall. Ohne Lüftungsebene bleibt sie im Aufbau, weil Metall dampfdiffusionsdicht ist — und erzeugt Schäden.",
+      "Die Nachteile der belüfteten Konstruktion sind drei: relativ hoher Aufbau, erhöhte Kosten durch mehr Material, und Dachaufbauten wie Gauben und Dachfenster lassen sich nur aufwendig umsetzen. Wer wenig Aufbauhöhe hat oder eine komplizierte Dachform, kommt hier schnell an die Grenze.",
+      "Beim Schutz vor eindringendem Wasserdampf reicht der belüfteten Konstruktion eine Dampfbremse — die Lüftungsebene führt zu viel eingedrungene Feuchte ja wieder ab. Im Schichtenaufbau ist die luftdichte Schicht mit dampfbremsender Wirkung mit einem s_d-Wert von mindestens 2,0 m angegeben.",
+      "Die unbelüftete Konstruktion hat keinen Belüftungsraum. Dadurch baut der Gesamtaufbau niedriger auf und es lassen sich auch komplizierte Dachformen umsetzen. Fragt dich ein Kunde nach einem Metalldach mit möglichst niedrigem Aufbau, das dazu günstig sein soll, ist das die passende Antwort.",
+      "Dafür hat die unbelüftete Ausführung drei Besonderheiten in der Bauausführung: Die Dampfsperre muss absolut fehlerfrei verlegt werden, eingedrungene Feuchte kann nicht mehr abgeführt werden, und in der Bauphase darf kein Regen in die Dämmung gelangen. Hier zählt sauberes Arbeiten doppelt.",
+      "Zum Nachweis, dass die Dampfsperre wirklich voll funktionsfähig ist, kann ein Blower-Door-Test durchgeführt werden. Das ist ein Prüfverfahren, mit dem die Luftdichtheit eines Gebäudes gemessen wird. Bei der unbelüfteten Konstruktion ist dieser Nachweis besonders wichtig, weil eingedrungene Feuchte dort keinen Weg nach draußen hat."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l15",
+    "lernfeld": "lf12",
+    "thema": "Trennlage",
+    "titel": "Die Trennlage: damit das Blech gleiten kann",
+    "inhalt": [
+      "Metall arbeitet — und damit die Metalldeckung problemlos auf der Schalung gleiten kann, wird eine Trennlage eingebaut. Ohne sie reibt das Blech direkt auf der Schalung. Das ist ihre Hauptaufgabe, und die solltest du in einem Satz sagen können.",
+      "Die Trennlage kann aus besandeten Bitumenbahnen, Vordeckbahnen oder Kunststoffbahnen bestehen. Wichtig ist bei jeder Variante dasselbe: Sie darf keine Feuchtigkeit aufsaugen und keine speichern. Eine Bahn, die Wasser hält, wäre genau an der Stelle falsch, an der du das Metall schützen willst.",
+      "Sie kann noch zwei weitere Dinge. Erstens schützt sie das Metall vor aggressiven Einflüssen aus dem Untergrund, zum Beispiel Zement oder Holzschutzmittel. Zweitens dient sie als Notdichtung. Also drei Punkte insgesamt: Gleiten ermöglichen, Metall schützen, Notdichtung sein.",
+      "Werden erhöhte Anforderungen an den Schallschutz gestellt — typisch der Schutz vor Trommelgeräuschen von Regen — kannst du eine strukturierte Trennlage verwenden. Sie besteht aus einer Trägerbahn, genauer einer noppenoffenen Vordeckbahn, und einer darauf liegenden diffusionsoffenen Strukturmatte aus langen Polyamidfäden mit etwa 8 mm Höhe.",
+      "Die strukturierte Trennlage bringt drei Vorteile auf einmal: Sie mindert Trommelgeräusche und verbessert damit den Schallschutz, eventuell eingedrungene Feuchte kann in der Struktur ausweichen und entweichen, und die Gleitfähigkeit des Metalls wird deutlich verbessert. Drei Vorteile, eine Lage.",
+      "Halte die Aufgabenteilung im Schichtenaufbau sauber auseinander: Die Trennlage ist fürs Gleiten, den Schutz des Metalls und die Notdichtung zuständig. Der Schutz vor eindringendem Wasserdampf ist Sache der Dampfbremse beziehungsweise Dampfsperre — je nachdem, ob du belüftet oder unbelüftet baust."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l16",
+    "lernfeld": "lf12",
+    "thema": "Regeldachneigung",
+    "titel": "Regeldachneigungen der Metalldeckungen",
+    "inhalt": [
+      "Bevor du eine Deckart aussuchst, schaust du auf die Dachneigung. Für fast jede Konstruktionsart ist eine Regeldachneigung festgelegt — der Wert, ab dem sie ohne zusätzliche Maßnahmen funktioniert. Liegt dein Dach darunter, wird die Ausführung aufwendiger. Es sind wenige Zahlen, die solltest du im Kopf haben.",
+      "Die Werte aus der Tabelle: Doppelstehfalzdeckung 7 Grad, Winkelstehfalzdeckung 25 Grad, Leistenfalzdeckung 7 Grad. Für die rollnahtgeschweißte Edelstahldeckung ist keine Regeldachneigung festgelegt. Vier Einträge, davon drei Zahlen und ein Sonderfall ohne Wert.",
+      "Merkhilfe: Doppelstehfalz und Leistenfalz teilen sich die 7 Grad. Der Winkelstehfalz braucht mit 25 Grad deutlich mehr Neigung, weil er weniger dicht ist. Wenn du dir nur eine Sache merkst, dann diesen Unterschied — 7 gegen 25.",
+      "Bei Dachdeckungen mit rechteckigen und rautenförmigen Blechen beträgt die Regeldachneigung 22 Grad. Diese Bleche werden durch Falze ineinandergehängt. Die 22 gehört also nicht zu den Scharendeckungen, sondern zu den kleinformatigen Blechen — bring die beiden nicht durcheinander.",
+      "Werden die Regeldachneigungen unterschritten, sind zusätzliche Maßnahmen erforderlich, zum Beispiel Dichtbänder oder Unterdachkonstruktionen. Unterschreiten heißt also nicht automatisch unmöglich — es heißt Mehraufwand, und den musst du einplanen und im Angebot auch aufführen.",
+      "Die Dachneigung hängt außerdem direkt mit den Querverbindungen zusammen: Wie eine Querverbindung ausgeführt wird, richtet sich nach der Dachneigung. Wer die Neigung kennt, hat damit gleich zwei Entscheidungen in der Hand — die Deckart und die Ausbildung der Querfalze."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l17",
+    "lernfeld": "lf12",
+    "thema": "Hafte",
+    "titel": "Hafte: festhalten, gleiten lassen, rechnen",
+    "inhalt": [
+      "Hafte sind die indirekte Befestigung der Schare auf der Schalung. Sie halten die Deckung, sichern sie gegen Abrutschen und gegen Abheben durch Windsog — und lassen sie trotzdem arbeiten. Genau deshalb wird nicht direkt durch das Blech geschraubt.",
+      "Zwei Sorten musst du auseinanderhalten. Festhafte sitzen im oberen Bereich des Daches und sorgen dafür, dass sich das Dach nach unten zur Traufe ausdehnt. Schiebehafte sitzen im mittleren und unteren Bereich und ermöglichen durch ihre Gleitfähigkeit die Bewegung. Die genaue Anordnung hängt von der Dachneigung ab.",
+      "Die Aufteilung nach Dachneigung: bis 3 Grad halbe/halbe. Von 3 bis 10 Grad zwei Drittel Schiebehafte unten zu einem Drittel Festhafte oben. Von 10 bis 30 Grad drei Viertel unten zu einem Viertel oben. Über 30 Grad werden die Festhafte oben am First angeordnet.",
+      "Rechenbeispiel Pultdach, 25 Grad Dachneigung, Sparrenlänge 9,60 m. 25 Grad liegt im Bereich 10 bis 30 Grad, also oberes Viertel: Festhaftbereich gleich 9,60 m geteilt durch 4 gleich 2,40 m oben. Schiebehaftbereich gleich 9,60 m mal 3 geteilt durch 4 gleich 7,20 m unten zur Traufe.",
+      "Windsogkräfte treten vor allem im Rand- und Eckbereich auf, dazu bei flachen Dachneigungen unter 25 Grad und bei großen Gebäudehöhen. Deshalb steigt die geforderte Haftanzahl vom Innenbereich über den Randbereich zum Eckbereich deutlich an. Ecke gleich meiste Hafte, Innenfläche gleich wenigste.",
+      "Die Formel für den Haftabstand: H in Metern gleich 1 geteilt durch Scharbreite in Metern, das Ergebnis geteilt durch die Anzahl der Hafte je Quadratmeter. Der erste Schritt, 1 geteilt durch Scharbreite, ergibt die laufenden Meter Schar je Quadratmeter Dachfläche. Danach nur noch durch die Haftanzahl teilen.",
+      "Durchgerechnet bei Scharbreite 520 mm: 1 geteilt durch 0,52 gleich 1,923 m je Quadratmeter. Bei 6 Haften ergibt das 0,32 m Abstand, bei 7 Haften 0,275 m, bei 8 Haften 0,24 m. Mehr Hafte heißt kleinerer Abstand — daran erkennst du sofort, ob dein Ergebnis plausibel ist.",
+      "Zum Schluss vergleichst du deinen Rechenwert mit der Tabelle, die je nach Bereich, Gebäudehöhe und Zuschnittbreite eine Mindestanzahl und einen maximalen Abstand vorgibt. Beispiel Eckbereich, Gebäudehöhe bis 8 m, Zuschnitt bis 600 mm: 6,4 Hafte je Quadratmeter, maximal 300 mm. Deine 275 mm liegen darunter, also zulässig.",
+      "Zweites Beispiel mit Zuschnitt 620 mm: 1 geteilt durch 0,62 gleich 1,613 m je Quadratmeter. Eckbereich mit 6,4 Haften ergibt 0,252 m, die Tabelle erlaubt hier maximal 250 mm — das passt gerade so. Innenbereich mit 4 Haften ergibt 0,403 m bei maximal 400 mm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l18",
+    "lernfeld": "lf12",
+    "thema": "Querverbindungen",
+    "titel": "Querverbindungen: wenn die Schar nicht durchläuft",
+    "inhalt": [
+      "Nicht jede Schar reicht von der Traufe bis zum First. Sind die Scharen länger als 10 m oder werden Tafeln verwendet, ist eine Querverbindung mit Querfalzen nötig. Wie diese Querverbindung aussehen muss, entscheidet die Dachneigung — nicht dein Geschmack.",
+      "Grundregel für die Falzart: Bei steilen Dächern über 25 Grad Dachneigung und bei Wandbekleidungen können die Querfalze als einfache Falze ausgeführt werden. Sonst werden sie als Doppelfalze ausgeführt. Kurzform zum Merken: steil heißt einfach, flacher heißt doppelt.",
+      "Die Staffelung nach Dachneigung im Detail: einfacher Querfalz ab 25 Grad, Querfalz mit durchlaufendem Zusatzfalz ab 10 Grad, doppelter Querfalz ab 7 Grad, und unter 7 Grad eine wasserdichte Ausführung, zum Beispiel durch Löten. Vier Stufen, vier Zahlen — 25, 10, 7 und darunter.",
+      "Dahinter steckt eine einfache Logik: Je flacher das Dach, desto langsamer läuft das Wasser ab und desto aufwendiger muss die Querverbindung werden. Kontrollfrage: Welche Querverbindung bei 12 Grad? Antwort: 12 liegt zwischen 10 und 25, also Querfalz mit durchlaufendem Zusatzfalz.",
+      "Querfalze werden immer in Gefällerichtung hergestellt, wobei der obere Falz über den unteren reicht. Nur so kann ablaufendes Wasser nicht eindringen. Das ist dasselbe Prinzip wie bei jeder Überdeckung am Dach: oben über unten, nie umgekehrt.",
+      "Die Querfalze werden in die Längsfalze eingearbeitet. Die Längsfalze selbst können im Bereich der Querverbindungen umgelegt oder durchlaufend als Falz-in-Falz ausgeführt werden. Zwei zulässige Varianten also — umlegen oder durchlaufen lassen.",
+      "Wichtig bei der Einteilung: Die Querfalze müssen versetzt angeordnet werden, damit nicht drei Falze in einem Knoten zusammenlaufen. An so einem Knoten liegen zu viele Blechlagen übereinander und der Falz lässt sich nicht mehr dicht schließen. Versetzen kostet nichts und erspart dir die undichte Stelle."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l19",
+    "lernfeld": "lf12",
+    "thema": "Details Traufe/First/Grat",
+    "titel": "Traufe, First und Grat — und Platz für die Dehnung",
+    "inhalt": [
+      "An Traufe, First und Grat endet die Fläche. Dort verfalzt du die Deckung an die Rinne, arbeitest die Längsfalze ein und sorgst dafür, dass sich das Blech weiter bewegen kann. Diese Details entscheiden über Dichtheit und Bewegungsfreiheit deiner Deckung.",
+      "Traufabschluss bei der Doppelstehfalzdeckung: Zuerst wird ein durchgehendes Rinneneinhangblech verlegt. Die Metalldeckung wird über Rinne und Einhangblech verfalzt. Die Doppelstehfalze werden über der Traufe umgelegt und ebenfalls verfalzt. Ausführungen sind zum Beispiel stehend gerade, stehend schräg oder als Quetschfalz.",
+      "An Grat und First werden die Falze 5 mm höher ausgeführt. Der Grund ist rein handwerklich: Es erleichtert das Einarbeiten der Längsfalze. Zum Einarbeiten werden die Längsfalze im First- beziehungsweise Gratbereich umgelegt. Kurz: 5 mm höher gleich leichter einarbeiten.",
+      "Im Knotenbereich werden die Ecken der Bänder oder Tafeln passend ausgeschnitten. Damit vermeidest du große Blechdicken genau dort, wo ohnehin schon mehrere Lagen zusammenkommen. Dasselbe Denken wie beim Versetzen der Querfalze: zu viele Blechlagen an einem Punkt sind der Feind der Dichtheit.",
+      "Der Merksatz zur Deckung insgesamt: Die Schare werden durch Doppelstehfalze verbunden. Die Befestigung auf der Schalung erfolgt indirekt durch Hafte. Dadurch werden thermische Längenänderungen ermöglicht. Drei Sätze, die zusammen erklären, warum eine richtig ausgeführte Deckung Temperaturwechsel aushält.",
+      "Bei Scharlängen über 10 m treten große Temperaturdehnungen auf. Deshalb müssen zusätzliche Dehnungen angeordnet werden. Das geht auf zwei Wegen: durch eine Abtreppung der Dachfläche oder durch eine Schiebenaht. Ein festes Verschrauben wäre der genau falsche Weg — es blockiert die Bewegung.",
+      "Die Schiebenaht ist ab 10 Grad Dachneigung möglich. Dabei wird die obere Metalldeckung mit einem zusätzlichen Haftstreifen gefalzt, ohne eine Verbindung zur unteren Metallage auszubilden. So kann sich die obere Lage ungehindert ausdehnen. Die Doppelstehfalze müssen im Bereich der Überdeckung umgelegt werden.",
+      "Die Abtreppung ist die zweite Lösung: Die Dachtiefe wird durch einen Absatz unterbrochen. Dadurch bekommt die Metalldeckung Raum für eine spannungsfreie Ausdehnung. Merke dir die Zuordnung: Abtreppung als Absatz in der Fläche, Schiebenaht als bewegliche Querverbindung ab 10 Grad."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l20",
+    "lernfeld": "lf12",
+    "thema": "Leistendeckung",
+    "titel": "Leistendeckung: Schare an Holzleisten statt Falz an Falz",
+    "inhalt": [
+      "Bei der Leistendeckung hängen die Schare nicht aneinander. Anstelle der Stehfalze werden Holzleisten verwendet, und die Schare werden getrennt an diesen Leisten befestigt. Dadurch sind sie voneinander getrennt und jede kann sich unabhängig ausdehnen. Das ist der Kernsatz dieser Deckart.",
+      "Die Holzleisten sind rechteckig oder quadratisch, Querschnitt Höhe mal Breite von 40 mal 40 mm bis 80 mal 80 mm. Für Bleideckungen wird stattdessen eine gerundete Holzleiste verwendet, der Holzwulst. Also: eckig für die üblichen Metalle, gerundet als Wulst für Blei.",
+      "Der Ablauf in deutscher Ausführung: Holzleisten zusammen mit den Haften auf der Unterkonstruktion aufschrauben oder aufnageln, Haftabstand etwa 40 cm. Dann die aufgekanteten Schare verlegen. Dann die Hafte umlegen, sodass sie die Schare umfassen. Zum Schluss die Abdeckkappe einschieben oder einfalzen — an den Stößen überlappen sich die Kappen etwa 50 mm.",
+      "Es gibt die deutsche Ausführung und die Sonderausführung, das sogenannte Klick-Leistensystem. Der Merksatz im Buch nennt zusätzlich die belgische Ausführung mit aufgedrückten Leistenkappen. Den Unterschied deutsch gegen belgisch siehst du am Schar: deutsch wird nach der Leistenform zugeschnitten, belgisch über die Leisten gekantet.",
+      "Bei der Sonderausführung liegen die Leistenhöhen zwischen 50 und 80 mm. Höhere Leisten sind bei flachen Dachneigungen in schneereichen Gebieten empfehlenswert. Die seitliche Aufkantung des Schars beträgt dabei einheitlich 47 mm — bei höheren Leisten verringert sich lediglich die Überdeckung der Leistenkappe. Die Kappen werden auf Haftstreifen von 330 mm Länge aufgeklickt.",
+      "Scharbreite rechnen: Scharbreite gleich Bandbreite minus zweimal Leistenbreite. Beispiel mit 500 mm Band und 40er Leisten: 500 minus 2 mal 40 gleich 420 mm. Der lichte Leistenabstand ist mindestens Scharbreite plus 5 mm Dehnungsabstand, also 425 mm. Zweites Beispiel: 700 minus 2 mal 40 gleich 620 mm Schar, lichter Abstand 625 mm.",
+      "Pass beim Rechnen auf den Unterschied zur Stehfalzdeckung auf: Bei der Leistendeckung geht die Leistenbreite zweimal ab, links und rechts je eine Leiste. Bei der Stehfalzdeckung gehen dagegen die beiden unterschiedlichen Aufkantungen von 45 mm und 35 mm ab. Der Dehnungsabstand von 5 mm sorgt dafür, dass sich die Schare bei Wärme ausdehnen können, ohne gegen die Leisten zu drücken.",
+      "An der Traufe können die Holzleisten bündig mit der Schalung enden oder zurückgesetzt befestigt werden. Bei der zurückgesetzten Deckung wird im Traufbereich auf etwa 50 cm ein Blech vorgedeckt und die Leisten werden abgeschrägt. Die Leistenkappe wird um die Traufkante gelegt beziehungsweise über das Vordeckblech gefalzt.",
+      "Am First und am Grat läuft der Anschluss der Schare an die First- oder Gratleisten über eine Aufkantung der Schare in diesem Bereich. Die Aufkantung wird zuerst mit den Firsthaften verfalzt, dann wird die Firstkappe überdeckt und verfalzt. Reihenfolge merken: erst Aufkantung mit Firsthaften, dann Kappe."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l21",
+    "lernfeld": "lf12",
+    "thema": "Sandwichelemente",
+    "titel": "Sandwichelemente: Deckung und Dämmung in einem Bauteil",
+    "inhalt": [
+      "Sandwichelemente bringen Deckung und Wärmedämmung in einem einzigen Bauteil aufs Dach. Du baust also nicht Schicht für Schicht auf, sondern montierst fertige Elemente nach Verlegeplan. Das ändert die Reihenfolge deiner Arbeit und die Anforderungen an die Genauigkeit beim Setzen.",
+      "Der Aufbau: zwei Metallschichten und ein Wärmedämmstoff als Kern, zum Beispiel PS-Hartschaum oder PUR-Hartschaum. Die obere Metallschicht ist in der Regel als Trapezprofil ausgebildet. Merksatz: Sandwichelemente enthalten im Kern einen Wärmedämmstoff. Also Metall, Dämmstoff, Metall — in genau dieser Reihenfolge.",
+      "Als Unterkonstruktion kommen Beton, Holz oder Stahl in Frage. Das ist ein breiteres Feld als bei der nicht selbsttragenden Falzdeckung, die eine tragfähige, flächige und trockene Deckunterlage braucht. Drei mögliche Unterkonstruktionen also, die du dir merken solltest.",
+      "Bei den Verbindungselementen gibt es keinen Spielraum: Es dürfen ausschließlich vom Hersteller zugelassene Verbindungselemente verwendet werden. Beim korrekten Verschrauben treten in der Dichtung kleine Verformungen auf — diese sollten 2 mm nicht überschreiten. Mehr Verformung heißt in der Regel zu fest angezogen.",
+      "Die Verlegung erfolgt anhand eines Verlegeplans. Das erste Element wird eingemessen und positioniert, das nächste wird an der schaumfreien Zone als Überdeckung angeschlossen. Unter Querstößen ist eine Auflagerbreite von mindestens 90 mm erforderlich. Die 90 mm sind der Wert, den du beim Querstoß prüfst.",
+      "Die Firstausbildung läuft mit einem äußeren Firstblech und einem Profilfüller zur Abdichtung. Die Fuge zwischen den Elementen wird mit PUR-Schaum oder Mineralwolle ausgefüllt. Innen wird in der Regel ein Dichtband eingelegt, um einen diffusionsdichten Abschluss zu erreichen. Also außen Blech und Füller, in der Fuge Schaum oder Wolle, innen Dichtband."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf12-l22",
+    "lernfeld": "lf12",
+    "thema": "Projektaufgabe",
+    "titel": "Projektaufgabe: vom Dach zum Positionsplan",
+    "inhalt": [
+      "In der Projektaufgabe läuft alles zusammen, was du in diesem Lernfeld gelernt hast: Deckart auswählen, Flächen ermitteln, Dämmdicke rechnen, mögliche Probleme benennen und die Leistungen im Positionsplan aufschreiben. Arbeite die Aufgabe immer in dieser Reihenfolge ab.",
+      "Wohnhaus mit 25 Grad Dachneigung, Sparren 7,00 m und 6,00 m. Bei 25 Grad sind Doppelstehfalz und Leistendeckung zulässig, beide ab 7 Grad, ebenso der Winkelstehfalz mit 25 Grad. Weil beide Sparrenlängen unter der maximalen Scharlänge von 10 m bleiben, kannst du die Scharen durchlaufend aus Bändern herstellen — Querverbindungen sind nicht erforderlich.",
+      "Flächen bei diesem Haus: Dachfläche gleich Firstlänge mal Summe beider Sparrenlängen, also 12,50 m mal 13,00 m gleich 162,50 m². Trauflänge gleich zweimal Firstlänge gleich 25,00 m. Zur Haftanordnung: Bei 25 Grad liegen die Festhafte im oberen Viertel der Sparrenlänge.",
+      "Achtung Fallstrick: Dieses Dach ist unsymmetrisch, 7,00 m auf der einen und 6,00 m auf der anderen Seite. Du darfst hier nicht mit zweimal Sparrenlänge rechnen wie beim symmetrischen Satteldach, sondern musst beide Seiten einzeln addieren. Sonst liegt deine Fläche daneben.",
+      "Dämmung rechnen bei gefordertem U-Wert unter 0,20: Erst der Gesamtwiderstand, 1 geteilt durch 0,20 gleich 5,00. Davon die Wärmeübergangswiderstände abziehen, 5,00 minus 0,10 minus 0,04 gleich 4,86. Dann die Dicke, d gleich R mal Lambda, also 4,86 mal 0,035 gleich 0,170 m — das sind 17 cm.",
+      "Praxisbezug dazu: Die Sparren sind 80 mal 200 mm. Die 17 cm Dämmung passen also als Zwischensparrendämmung in die 20 cm Sparrenhöhe, 3 cm bleiben frei. Werden weitere Schichten wie Schalung und Bekleidung mit angerechnet, wird die nötige Dämmdicke etwas geringer.",
+      "Die zweite Projektaufgabe: Pultdach mit 30 Grad, kein Dachüberstand, Sparren 80 mal 220 mm im Abstand von 70 cm. Zu prüfen und zu begründen sind mögliche Korrosionsschäden, vor allem Kontaktkorrosion zwischen unterschiedlichen Metallen, sowie die temperaturbedingte Längenänderung. Bei 30 Grad liegen die Festhafte noch im oberen Viertel.",
+      "Zum Schluss der Positionsplan. Er enthält je Zeile die Position, die Menge mit Einheit — Quadratmeter, Meter oder Stück — und die Bezeichnung der Leistung, und ist damit die Grundlage der Angebotserstellung. Typische Zeilen: Dachdeckung in Leistenfalztechnik auf Holzschalung in m², Passschar am Ortgang in m, Traufausbildung mit Hängedachrinne in m, Firstausbildung mit Entlüftung in m, Dachdurchbruch mit Einfassung von Sanitärentlüftern in Stück."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

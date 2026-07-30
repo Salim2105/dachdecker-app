@@ -72,5 +72,374 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 13a; ZVDH-Fachregel (erhöhte Anforderungen); BG BAU (Anschlagpunkte)",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 194' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Gaubenformen'><path d='M24 96 L24 68 L96 52 L96 96' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='24' y='118' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Schleppgaube</text><path d='M140 96 L140 70 L176 46 L212 70 L212 96' fill='none' stroke='currentColor' stroke-width='1.8'/><text x='150' y='118' fill='currentColor' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Satteldach</text><path d='M248 96 Q266 96 282 72 Q298 50 314 72 Q330 96 348 96' fill='none' stroke='#c07d4a' stroke-width='2.2'/><text x='250' y='118' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Fledermaus</text><text x='18' y='149' fill='#c07d4a' font-size='12'>Die Fledermausgaube ist am anspruchsvollsten – nach</text><text x='18' y='166' fill='#c07d4a' font-size='12'>ZVDH erhöhte Anforderung.</text></svg>"
+  },
+  {
+    "id": "lf13a-l05",
+    "lernfeld": "lf13a",
+    "thema": "Aufgaben Materialbedarf",
+    "titel": "Buchaufgaben Materialbedarf: vier Bausteine, viele Varianten",
+    "inhalt": [
+      "Materialbedarf rechnest du, damit auf der Baustelle genau so viel Latten, Naegel und Ziegel liegen, wie du verbaust. Alle Aufgaben in diesem Block laufen ueber dieselben vier Bausteine: mittlere Decklaenge, Lattenbedarf, Ziegelbedarf und die Zuschlaege. Hast du die vier drin, ist der Rest nur noch Einsetzen.",
+      "Erster Baustein: mittlere Decklaenge DL = Ziegelhoehe minus Hoehenueberdeckung. Daraus folgt der Lattenbedarf je Quadratmeter = 100 : DL — die 100 sind die 100 cm Hoehe je Quadratmeter. Beispiel Biber 18 mal 38 cm mit 9,5 cm Ueberdeckung: DL = 38 minus 9,5 = 28,5 cm, Lattenbedarf = 100 : 28,5 = 3,51 m je Quadratmeter.",
+      "Zweiter Baustein: Ziegelbedarf je Quadratmeter = 10000 : (DL mal Deckbreite). Bei Bibern kommen 0,2 cm Fugenzuschlag dazu, du rechnest also mit 18,2 statt 18 cm. Bei der Kronendeckung liegen zwei Ziegel uebereinander, deshalb steht eine 2 im Zaehler: 2 mal 10000 : (28,5 mal 18,2) = 38,56 Stueck je Quadratmeter.",
+      "Bei Einfachdeckungen wird nicht verdoppelt. Flachdachziegel mit DL 33,9 und Deckbreite 20,2 cm: Latten 100 : 33,9 = 2,95 m/m², Ziegel 10000 : (33,9 mal 20,2) = 14,6 Stueck/m². Hohlpfanne 41 cm lang, 7 cm Ueberdeckung: DL 34 cm, Latten 2,94 m/m², Pfannen 14,7 Stueck/m². Nagelbedarf = Lattenbedarf geteilt durch Sparrenabstand, also 3,03 : 0,80 = 3,79 Naegel je Quadratmeter.",
+      "Die Doppeldeckung hat ihre eigene Decklaenge: das vierte Gebinde ueberdeckt das erste um 1 cm, also DL = (Ziegelhoehe minus 1) : 3. Beim 38er Biber sind das 12,33 cm und 10000 : (12,33 mal 18,2) = 44,6 Stueck/m². Bruch und Verschnitt schlaegst du nacheinander auf, nicht addiert: 44,6 mal 4 m² mal 1,02 mal 1,05 = 191 Ziegel.",
+      "Dachflaeche am gleich geneigten Walmdach: Sparrenlaenge s = Wurzel aus ((b/2)² + h²). Bei b = 10,48 m und h = 5,24 m sind das 7,41 m. Flaeche ueber die Kontrollformel A = (Trauflaenge mal Traufbreite) : cos DN = 134,56 : 0,7071 = 190,3 m². Gegenprobe A = 2 mal l mal s = 2 mal 12,84 mal 7,41 = 190,3 m² — gleiches Ergebnis.",
+      "Kehllaenge holst du dir ueber zwei Wurzeln: erst s = Wurzel aus ((b/2)² + h²), dann k = Wurzel aus ((b/2)² + s²). Beispiel 40 Grad, b = 6,00 m: h = 3,00 mal tan 40 Grad = 2,52 m, s = 3,92 m, k = 4,93 m. Bei 2,00 m Tafellaenge sind das 2,47, aufgerundet 3 Tafeln je Kehle. Aus der 1,00 m breiten Tafel schneidest du bei 0,50 m Kehlbreite zwei Streifen.",
+      "Kehlstuecke: bei n Stuecken gibt es n minus 1 Ueberdeckungen. Stuecklaenge = (Kehllaenge + (n − 1) mal Ueberdeckung) : n. 17,28 m Kehle mit 15 cm Ueberdeckung, sieben Stuecke: (17,28 + 6 mal 0,15) : 7 = 2,60 m. Biberkehle: S = (38 − 1) : 3 = 12,33 cm, Reihen = 785 : 12,33 = 63,66, aufgerundet 64, korrigiertes S = 785 : 64 = 12,27 cm, Bedarf 64 mal 4 = 256 Biber.",
+      "Bei einer Schleppdachgaube brauchst du zwei Groessen, bevor du Material rechnest: die Sparrenlaenge der Gaubendachflaeche, die mal Gaubenbreite die Flaeche ergibt, und die Kehllaengen der beiden Ankehlungen ans Hauptdach. Im Buchbeispiel sind das s1 = 5,67 m und s2 = 5,23 m. Erst danach folgen Latten, Ziegelmenge und Kehlmaterial. Die Abschleppung sollte mindestens 25 Grad Neigung haben."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l06",
+    "lernfeld": "lf13a",
+    "thema": "Materialbedarf Ziegel",
+    "titel": "Vom Walmdach zur Bestellliste: Flaeche, Latten, Naegel, Ziegel",
+    "inhalt": [
+      "Das ist die komplette Kette von der Zeichnung bis zur Bestellung: erst die Dachgeometrie, daraus die Flaeche, daraus Latten, Naegel und Ziegel. Wer hier einen Zwischenwert verhaut, verschleppt den Fehler bis in die Menge, die auf den Lkw geht.",
+      "Geometrie am gleich geneigten Walmdach, Schritt fuer Schritt: Firsthoehe h = halbe Gebaeudebreite mal tan DN. Sparrenlaenge s = Wurzel aus ((b/2)² + h²). Dachflaeche A = 2 mal Trauflaenge mal s. Firstlaenge f = Trauflaenge minus 2 mal halbe Breite. Gratlaenge g = Wurzel aus (s² + (b/2)²).",
+      "Zahlenbeispiel bei 45 Grad, Trauflaenge 12,70 m, halbe Breite 4,80 m: h = 4,80 m (bei 45 Grad ist h gleich b/2), s = 6,79 m, A = 172,47 m², f = 3,10 m, g = 8,32 m. Beim rundum gleich geneigten Walmdach ist die Gesamtflaeche genauso gross wie beim Satteldach ueber derselben Grundflaeche — deshalb funktioniert A = 2 mal l mal s. Kontrolle: 12,70 mal 9,60 : cos 45 Grad = 172,42 m².",
+      "Lattenbedarf: DL = 38 minus 6 = 32 cm, also 100 : 32 = 3,125 m je Quadratmeter. Gesamtlaenge = 3,125 mal 172,47 m² mal 1,05 (5 Prozent Zuschlag) = 565,92 m, aufgerundet 566 m. Der Zuschlag von 5 Prozent geht als Faktor 1,05 in die Rechnung ein — ob du ihn vor oder nach der Multiplikation mit der Dachflaeche ansetzt, aendert am Ergebnis nichts.",
+      "Nagelbedarf: an jedem Kreuzungspunkt von Latte und Sparren sitzt ein Nagel, deshalb teilst du den Lattenbedarf durch den Sparrenabstand. 3,125 m/m² : 0,62 m = 5,04 Naegel je Quadratmeter. Gesamt 5,04 mal 172,47 mal 1,05 = 912,76, also 913 Naegel. Bei 300 Naegeln je Kilogramm sind das 913 : 300 = 3,04 kg.",
+      "Ziegelbedarf in Kronendeckung: 2 mal 10000 : ((38 − 6) mal 18,2) = 20000 : 582,4 = 34,34 Stueck je Quadratmeter. Die 2 steht dort, weil bei der Kronendeckung zwei Ziegel uebereinanderliegen; die 0,2 cm sind der Fugenzuschlag zur Ziegelbreite. Gesamt: 34,34 mal 172,47 mal 1,05 = 6218,75, also 6219 Ziegel.",
+      "Grat und First zum Schluss: Latten fuer Grate und First = (3,10 m First + 4 mal 8,32 m Grat) mal 1,05 = 38,2 m. Firstziegel = 3,10 mal 2,50 je Meter = 7,75, aufgerundet 8 Stueck. Gratziegel je Grat = 8,32 mal 2,50 = 20,8, aufgerundet 21 Stueck. Erst je Grat aufrunden, dann mal vier: 8 + 4 mal 21 = 92 Ziegel."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l07",
+    "lernfeld": "lf13a",
+    "thema": "Materialbedarf Schiefer",
+    "titel": "Schiefermenge ermitteln: Deckflaeche, Gebindesteigung, Kilogramm",
+    "inhalt": [
+      "Beim Schiefer rechnest du anders als beim Ziegel: du ziehst die Randbereiche aus der Dachflaeche heraus und bestellst bei der altdeutschen Deckung nach Gewicht statt nach Stueck. Wer das verwechselt, bestellt entweder zu viel Flaechenmaterial oder zu wenig Sondersteine.",
+      "Bei der altdeutschen Schieferdeckung kommen unterschiedliche Hoehen und Breiten vor. Eine genaue Ermittlung der Decksteine nach Stueckzahl ist deshalb nicht moeglich — der Bedarf wird in kg je Quadratmeter und kg je Meter angegeben. Bei den anderen Deckarten ist die Angabe in Stueck je Quadratmeter ueblich. Zur Berechnung lassen sich die Tabellen aus Lernfeld 9 verwenden.",
+      "Die Deckflaeche ist nicht die Dachflaeche. Du ziehst Fuss-, Grat- und Kehlbereich ab, weil dort andere Steinsorten liegen — Fusssteine, Gratsteine, Kehlsteine — die getrennt gerechnet werden. Deckflaeche = Dachflaeche minus Fussbereich minus Gratbereich minus Kehlbereich.",
+      "Zahlen aus dem Buchbeispiel: Dachflaeche 126,476 m². Fussbereich = (6,56 + 9,20 + 10,90) mal 0,15 = 3,999 m². Gratbereich = (3 mal 7,02 + 2 mal 8,57) mal 0,20 = 7,640 m². Kehlbereich = 8,53 mal 0,50 = 4,265 m². Deckflaeche = 126,476 − 3,999 − 7,640 − 4,265 = 110,572 m².",
+      "Die Dachgeometrie holst du dir vorher wie gewohnt: Firsthoehe h = die Haelfte der Breite mal tan DN, Sparrenlaenge s = Wurzel aus ((halbe Breite)² + h²). Beispiel mit 60 Grad und 6,56 m Breite: h = 5,68 m, s = 6,56 m. Bei 60 Grad Dachneigung ist die Sparrenlaenge immer genauso gross wie die volle Gebaeudebreite, weil cos 60 Grad = 0,5 ist: s = (b/2) : 0,5 = b. Das gilt fuer jede Breite und ist eine gute Rechenkontrolle.",
+      "Die Gebindesteigung berechnest du aus der Dachneigung mit tan Beta = 1 minus sin Alpha. Rechenweg: sin der Dachneigung bilden, von 1 abziehen, das Ergebnis ist der Tangens; mit dem Arkustangens bekommst du den Winkel Beta, mal 100 die Steigung in Zentimetern je 100 Zentimeter.",
+      "Werte aus dem Buchbeispiel: bei 66,2 Grad ist tan Beta = 0,0850, also Beta = 4,9 Grad und 8,5 cm je 100 cm. Bei 60 Grad: 0,1340, Beta = 7,6 Grad, 13,4 cm. Bei 59,1 Grad: 0,1419, Beta = 8,1 Grad, 14,2 cm. Bei 46,2 Grad: 0,2782, Beta = 15,5 Grad, 27,8 cm. Je flacher das Dach, desto groesser die Gebindesteigung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l08",
+    "lernfeld": "lf13a",
+    "thema": "Metallkehlen",
+    "titel": "Metallkehlen, Rippen-, Roll- und Biegekehle",
+    "inhalt": [
+      "In der Kehle laeuft das Wasser von zwei Dachflaechen zusammen — hier entscheidet sich, ob das Dach dicht ist. Metall- und Kunststoffkehlen sind die Loesung, wenn die Deckung selbst die Kehle nicht regensicher hinbekommt oder das Dach dafuer zu flach ist.",
+      "Kehlen koennen mit Blech ausgeschlagen und so der Kehlenform angepasst werden. Sie lassen sich fuer alle Steildaecher ab der Mindestdachneigung von 10 Grad einsetzen. Fuer die ueblichen Kehlwinkel gibt es vorgeformte Profile im Handel, die du nicht mehr selbst formen musst.",
+      "Die Unterkonstruktion besteht in der Regel aus Schalung mit einer Vordeckung aus Bitumenbahnen; verlegt wird auf Schalung oder Lattung. Die Materialdicke der Kehlbleche betraegt bei Zink, Kupfer und Alu 0,7 mm. Bei einer Kehle mit 13 cm Abstand betraegt der Zuschnitt der Bleche 40 cm.",
+      "Seitlich werden die Bleche an den Falzen mit Haften befestigt, Wasserfalz 15 mm, mindestens 4 Haften je Meter Kehle. Diese Befestigung hat zwei Aufgaben: sie laesst thermisch bedingte Laengenaenderungen zu und verhindert, dass Wasser ueber die Kehlbleche hinauslaeuft.",
+      "Stoesse in Laengsrichtung: bei einer Kehlneigung ueber 22 Grad muessen sich laengere Bleche mindestens 100 mm ueberlappen, bei einer Kehlneigung von 22 Grad und flacher mindestens 150 mm. Anreissen verhindert dabei die Kapillarwirkung. Unter 15 Grad Kehlneigung muessen Stoesse abgedichtet ausgebildet werden.",
+      "Die Deckung darueber: Dachziegel und Dachsteine ueberdecken die untergelegten Bleche bei einer Dachneigung ueber 22 Grad um mindestens 10 cm, bei 15 bis 22 Grad um 15 cm und unter 15 Grad um 20 cm. Je flacher das Dach, desto weiter muss die Deckung ueber das Blech reichen.",
+      "Die Wahl des Metalls — Zink, Kupfer oder Alu — musst du mit den anderen Metallen am Dach abstimmen. Metalle koennen sich nach dem Prinzip des galvanischen Elements zerstoeren, das ist die Kontaktkorrosion. Besonders kritisch wird es dort, wo Wasser vom edleren zum unedleren Metall fliesst.",
+      "Die Rippenkehle ist eine vorgefertigte Spezialkunststoffbahn aus halbhartem PVC, etwa 50 cm breit, in einheitlicher Laenge und mit vorgegebener Ueberdeckung. Die Unterkonstruktion bildet eine Schalung, sie kann aber auch auf der Dachlattung verlegt werden. Auf einer Vordeckung aus Bitumen ist eine Trennlage anzubringen. Befestigt wird im vom Hersteller angegebenen Nagelungsbereich etwa alle 20 cm mit Stiften.",
+      "Die Rollkehle kommt als Rollenmaterial mit 10 m Laenge, ein Verbundwerkstoff aus Aluminium und PVC, etwa 1,2 mm dick und etwa 50 cm breit. Sie laesst sich am Stueck auf Schalung formen und verlegen. Biegekehle und Variokehle bestehen dagegen aus beschichtetem, profiliertem Aluminium mit vorgefertigten Biegelinien."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l09",
+    "lernfeld": "lf13a",
+    "thema": "Anschlüsse",
+    "titel": "Anschlüsse an aufgehende Bauteile: Traufe, Seite, First",
+    "inhalt": [
+      "Ueberall wo Schornstein, Wand oder Gaube durch die Dachflaeche stossen, entsteht eine Fuge — und jede Fuge ist eine moegliche Undichtigkeit. Der Anschluss ist die Loesung dafuer, und er sieht an jeder der drei Seiten anders aus.",
+      "Man unterscheidet traufseitige, seitliche und firstseitige Anschluesse, kurz T, S und F. Alle drei bestehen aus einem wandseitigen und einem dachseitigen Teil. Merk dir die Zuordnung nach der Lage am Bauteil, nicht nach dem Material — Metall, Schiefer oder Ziegel aendern die Einteilung nicht.",
+      "Anschlusshoehen: bei Dachneigungen unter 22 Grad seitlich und traufseitig 10 cm, bei Dachneigungen ab 22 Grad 8 cm. Die firstseitige Hoehe ist immer 15 cm. Der Anschluss ist mit Wasserfalz von mindestens 15 mm herzustellen. Metallanschluesse sind in der Regel zweiteilig; der wandseitige Teil wird mit Ueberhangstreifen ausgefuehrt, etwa alle 25 cm befestigt und abgedichtet.",
+      "Firstseitige Anschluesse sind mit einer Kehle vergleichbar und muessen entsprechend regensicher sein. Sie werden der Deckung untergelegt und ab 1 m Laenge mit Gefaelle versehen. Die Deckung ueberdeckt die untergelegten Bleche bei Dachneigungen ab 22 Grad mindestens 10 cm, unter 22 Grad mindestens 15 cm und unter 15 Grad mindestens 20 cm. Zwischen Deckung und Wandkante sollten mindestens 5 cm Abstand bleiben.",
+      "Traufseitige Anschluesse laufen andersherum: sie ueberdecken die Ziegel- oder Dachsteinreihe, koennen der Deckung angepasst und geformt werden und werden am aufgehenden Bauteil befestigt — damit sind sie gegen Abrutschen und Windsog gesichert. Die Ueberdeckungsmasse sind dieselben: ab 22 Grad mindestens 10 cm, unter 22 Grad 15 cm, unter 15 Grad 20 cm.",
+      "Die zwei Woerter, die du nicht verwechseln darfst: firstseitig geht unter die Deckung, traufseitig geht ueber die Deckung. Wasser laeuft von oben nach unten — deshalb muss das obere Blech unter die Deckung und das untere Blech darueber.",
+      "Seitliche Metallanschluesse gibt es in drei Ausfuehrungen: unterliegend, ueberdeckend und aufliegend. Unterliegende Anschluesse werden auf vollflaechiger Deckunterlage oder auf Lattung mit lichtem Abstand von hoechstens 20 cm im Bereich der Hoehenueberdeckung angelegt und seitlich mit Haften befestigt.",
+      "Masse am seitlichen Anschluss: der Abstand zwischen Deckung und Aufkantung muss mindestens 40 mm betragen. Die Deckung ueberdeckt die unterliegenden Metalle bei konturierten Ziegeln und Dachsteinen um 12 cm; bei ebenen Deckwerkstoffen haengt es von der Neigung ab — bis 35 Grad 12 cm, ueber 35 Grad 8 cm. Blechverbindungen: ab 15 Grad genuegt eine einfache Ueberdeckung von mindestens 10 cm oder eine Verfalzung, unter 15 Grad muss die Verbindung wasserdicht sein.",
+      "Bei Doppel- und Kronendeckung kannst du seitliche Anschluesse mit Nocken herstellen. Die Zuschnittbreite der Metallschichtstuecke betraegt mindestens 200 mm. Die Zuschnittlaenge ergibt sich aus Hoehenueberdeckung und Traglattenabstand, so dass die Nocken nicht sichtbar sind. Konisch gekantet bilden sie an der Wand eine gerade Linie. In jedes Deckgebinde wird eine Nocke eingebunden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l10",
+    "lernfeld": "lf13a",
+    "thema": "Anschlüsse Schiefer",
+    "titel": "Anschlüsse am Schieferdach: Wandkehle, Nocken und Bleche",
+    "inhalt": [
+      "Gauben, Schornsteinkoepfe und andere aufgehende Bauteile durchdringen die Dachflaeche und bilden firstseitige, seitliche und traufseitige Schnittlinien mit ihr. Am Schieferdach hast du dafuer zwei Wege: den Anschluss aus Schiefer selbst oder den Anschluss aus Metall — und beide haben eigene Mindestmasse.",
+      "Seitliche Anschluesse werden als Wand- oder Wangenkehlen in Schiefer gedeckt oder mit abgewinkelten Anschlussblechen beziehungsweise Nocken ausgefuehrt. First- und traufseitige Anschluesse laufen ueber Anschlussbleche. Kurz: seitlich hast du die Wahl zwischen Schiefer und Metall, first- und traufseitig arbeitest du mit Blech.",
+      "Traufseitige Anschluesse kannst du mit Deckgebinden aus Schiefer oder mit abgewinkelten Anschlussblechen aus Metall herstellen. Die Anschlussbleche ueberdecken die ausgespitzten Schiefergebinde um mindestens 10 cm. Firstseitige Anschluesse werden als Metallkehle ausgefuehrt; der Anschluss wird mindestens 15 cm am aufgehenden Bauteil hochgefuehrt und liegt auf der Dachseite waagerecht gemessen darueber.",
+      "Mit der Wandkehle stellst du den Anschluss an Mauern, Schornsteine und aehnliche Bauteile her. Ihre Breite betraegt 3 bis 5 Kehlsteine. Sie wird mit Einfaeller oder Wasserstein in das Deckgebinde eingebunden und kann als rechte oder als linke Wandkehle gedeckt werden. Bei der Deutschen Deckung wird sie nicht im Format 40/40 cm ausgefuehrt.",
+      "Als Kehlplatten der Wandkehle werden Rechteckplatten 13/40 cm verwendet. Ihre Ferse erhaelt einen geraden Ruecken mit kurzem Bruch. Die Wandkehle besteht aus mindestens drei Kehlplatten. Die Seitenueberdeckung betraegt die Haelfte der Kehlplattenbreite.",
+      "Bei allen Deckarten lassen sich Waende und Schornsteinkoepfe durch Metallformteile anschliessen. Dafuer eignen sich gefalzte Metallblechwinkel, Metallblechschichtstuecke — die Nocken — und Metallblechrinnen. An den Metallteilen wird eine Ortdeckung ausgefuehrt.",
+      "Ueberdeckungsmasse beim Metallanschluss: Dachplatten muessen die Anschlussbleche um mindestens 12 cm ueberdecken, bei Dachneigungen ueber 35 Grad genuegen 10 cm. Die Nocken muessen mindestens 15 cm ueberdeckt werden, ueber 35 Grad mindestens 12 cm. An Waenden und Schornsteinen muessen die Metallteile mindestens 8 cm ueber die Deckung hochgefuehrt werden.",
+      "Bei Schieferdeckungen gilt fuer den traufseitigen Metallanschluss: ein abgewinkeltes Metallblech ueberdeckt die Dachplatten um mindestens 10 cm. Firstseitige Anschluesse werden als Kehlbleche hergestellt, die zum First mindestens 28 cm und am aufgehenden Bauteil mindestens 18 cm hochgefuehrt werden. Achtung: fuer die firstseitige Hochfuehrung nennen die beiden Aufgaben unterschiedliche Werte — 15 cm beziehungsweise 18 cm beim Kehlblech."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l11",
+    "lernfeld": "lf13a",
+    "thema": "Schieferkehlen",
+    "titel": "Schieferkehlen und Plattenkehlen sauber decken",
+    "inhalt": [
+      "In der Kehle sammelt sich das Wasser mehrerer Dachflaechen. Genau deshalb hat die Schieferkehle eigene Regeln fuer Ueberdeckung, Breite, Neigung und Befestigung — hier reicht das, was in der Flaeche funktioniert, nicht mehr aus.",
+      "Bei Schieferdeckungen unterscheidest du vier Kehlarten nach ihrer Schnittlinie: Hauptkehlen zwischen zwei Dachflaechen, Sattelkehlen zwischen Dachflaeche und Satteldachflaeche einer Gaube, Wangenkehlen zwischen Dachflaeche und senkrechter Wangenflaeche und Wandkehlen als Anschluss an eine nicht einzudeckende Wandflaeche.",
+      "Ausgefuehrt werden Kehldeckungen entweder als Schieferkehlen, eingebunden oder unterlegt, oder als Metallkehlen — mit Nocken bei der Rechteckdoppeldeckung oder mit Kehlblechen. Erst kommt also die Frage nach der Kehlart, dann die Frage nach dem Werkstoff.",
+      "Die Mindestkehlsparrenneigung fuer regensichere Schieferkehlen betraegt 30 Grad. Die Kehlbreite betraegt mindestens sieben und hoechstens neun Kehlsteine. Die Kehlsteine an der Traufe und am First, das Kragengebinde, werden unterlegt, damit die Schieferneigung gleichbleibt.",
+      "Unterkonstruktion und Befestigung: die Kehle erhaelt eine Vordeckung mit Bitumenbahnen. Die Ausrundung erfolgt durch ein Kehlbrett und unter Umstaenden zusaetzliche Dreikantleisten. Die Kehlschalung aus Brettern und Dreikantleisten ist etwa 16 bis 18 cm breit und soll einen gleichmaessigen Uebergang zwischen den Flaechen herstellen. Alle Kehlsteine muessen mit drei Naegeln innerhalb der Hoehenueberdeckung befestigt werden.",
+      "Weil in der Kehle das Wasser mehrerer Dachflaechen zusammenlaeuft, brauchst du groessere Ueberdeckungen als in der Flaeche: die Hoehenueberdeckung ist um mindestens ein Drittel groesser als im Deckgebinde, die Seitenueberdeckung betraegt mindestens die Haelfte der Kehlsteinbreite — bei runden Kehlsteinen und Kehlsteinen mit langem Bruch mindestens 1 cm mehr.",
+      "Eingebundene Plattenkehle: als Kehlplatten dienen die Formate 13/40 cm oder 20/40 cm. Die Kehlbreite betraegt bei 13/40 cm mindestens 3 Platten, bei 20/40 cm mindestens 2 Platten. Das vierte Kehlgebinde ueberdeckt das erste um mindestens 1 cm. Gedeckt wird mit Unterlaeufer- und Deckschichten im halben Verband mit Stossfuge, Kreuzfugen sind zu vermeiden; jede Kehlplatte bekommt mindestens 2 Stifte.",
+      "Ueberdeckte Plattenkehle: bei allen Deckarten moeglich, Mindestkehlsparrenneigung 30 Grad. Die Breite muss mindestens 4 Platten beim Format 20/40 cm beziehungsweise 5 Platten beim Format 13/40 cm betragen. Gedeckt wird im Verband mit einer Laengsfuge von etwa 4 mm wegen der Ausdehnung, mindestens 2 Stifte je Platte. Die Deckgebinde der Dachflaechen laufen ueber die untergelegte Plattenkehle aus; seitliche Ueberdeckung ab 40 Grad mindestens 12 cm, ab 50 Grad mindestens 10 cm.",
+      "Rechenbeispiel Sichthoehe: Kehlplatte 13/40 cm, 40 cm minus 1 cm Ueberdeckung ergibt 39 cm, geteilt durch 3 sind 13 cm Sichthoehe je Gebinde. Durch drei teilst du, weil das vierte Gebinde das erste ueberdecken muss — dazwischen liegen drei Sichthoehen, nicht vier."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l12",
+    "lernfeld": "lf13a",
+    "thema": "Dreipfannenkehle",
+    "titel": "Ziegelkehlen: Schalung, Dreipfannen-, Nocken- und Schwenkziegelkehle",
+    "inhalt": [
+      "Die Ziegelkehle ist die Kehle ohne Blech: du fuehrst das Wasser mit den Deckwerkstoffen selbst durch die Kehle. Das geht nur, wenn Schalung, Kehlbreite und Ueberdeckungen stimmen — und jede Kehlform hat dafuer ihre eigenen Masse.",
+      "Die Kehlschalung wird auf der Lattung symmetrisch zur Winkelhalbierenden des Kehlwinkels angebracht. Das ist besonders bei ungleichhueftigen Kehlen wichtig. Die Breite des Kehlbretts richtet sich nach der Ausfuehrung der Kehle: bei einer Kehle von 2 bis 3 Ziegel Breite muss es mindestens 25 cm breit sein, bei extrem steilen Dachneigungen entsprechend breiter.",
+      "Die Kehlschalung beginnt an der Kopflinie des Traufgebindes und wird mit einer Vordeckung versehen, die seitlich etwas ueber das Kehlbrett hinausragt. So laeuft Wasser, das unter die Deckung kommt, sicher auf die Vordeckung und nicht auf die Schalung.",
+      "Dreipfannenkehle: das Gebinde besteht aus drei Hohlpfannen — dem mittleren Wasserziegel sowie einem linken und einem rechten Kehlziegel. Die Kehlbreite betraegt stets 63 cm. Die Kehlziegel ueberdecken sich in der Hoehe 10 cm und an den Seiten 4 cm. Die Ziegel der Flaeche muessen die Kehle mindestens 10 cm ueberdecken. Die Kehlsparrenneigungsgrenze liegt bei 35 Grad.",
+      "Die Kehlschalung der Dreipfannenkehle wird mit den Schiftern links und rechts buendig ausgefuehrt. Das Mittelkehlbrett liegt auf dem Kehlsparren und ist mindestens 16 cm breit. Links und rechts schliesst die Kehlschalung mit Dachlatten ab, darauf wird die Lattung der Dachflaeche buendig herangefuehrt. Eine Vordeckung bildet die Trennschicht zwischen Unterkonstruktion und Moertel.",
+      "Nockenkehle, auch kantige Kehle: hier liegen Metallschichtstuecke — die Nocken — abwechselnd mit den eingespitzten Ziegeln oder Dachsteinen in der Kehle, in der Regel bei Biberschwanzdeckungen. Die Nocken sind rechteckig oder schwalbenschwanzfoermig zugeschnitten; die Schwalbenschwanzform entsteht, wenn du sie entsprechend der Lattenoberkante zuschneidest.",
+      "Masse der eingebundenen Nockenkehle: die Ueberdeckung der Nocke mit den anschliessenden Ziegeln betraegt mindestens 20 cm, die Seitenueberdeckung mindestens 15 cm — die Nocke muss also mindestens 40 cm breit sein. Die Hoehenueberdeckung der Schichtstuecke haengt von der Dachneigung ab: bis 45 Grad mindestens 16 cm, ueber 45 Grad mindestens 14 cm. Die Kehlsparrenneigungsgrenze betraegt 25 Grad.",
+      "Schwenkziegelkehle: in der Biberschwanz-Kronendeckung stellst du mit besonders keilfoermig beziehungsweise konisch ausgebildeten Formziegeln eine Schwenkziegelkehle her. Die Unterkonstruktion besteht aus Kehlschalung mit Vordeckung und ist vierziegelbreit. Die Kehlsparrenneigungsgrenze betraegt 35 Grad.",
+      "STREICHEN (Absatz in die Schiefer-Lektion 'Schieferkehlen' verschieben; falls er hier stehen bleiben soll, mit klarer Abgrenzung einleiten: 'Zum Vergleich die Schieferdeckung: Dort verbinden Kehlgebinde die Deckgebinde beider Dachflaechen, und neben den Kehlsteinen braucht man drei Anschlusssteine — Wasserstein, Einfaeller und Schwaermer.') Der Wasserstein kommt dorthin, wo Kehlgebinde und Kehlgebindeanfang unterschiedliche, auseinanderlaufende Deckrichtungen haben — Rechtsdeckung geht in die rechte Kehle ueber, Linksdeckung in eine linke Kehle. Der Einfaeller wird verwendet, wenn Deckgebinde und Kehlgebinde dieselbe Deckrichtung haben; die Dachneigung sollte dabei in der Regel mindestens 50 Grad betragen. Der Schwaermer bildet den Schlussstein, wenn aufeinander zulaufende Deckrichtungen aufeinandertreffen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l13",
+    "lernfeld": "lf13a",
+    "thema": "Fledermausgaube",
+    "titel": "Fledermausgaube decken und die passenden Formziegel",
+    "inhalt": [
+      "Die Fledermausgaube ist die Gaube ohne Kante — alles laeuft rund. Damit die Deckung diese Rundung mitmacht, muessen das Verhaeltnis von Breite zu Hoehe, die Neigungsdifferenz zum Hauptdach und die Deckreihenfolge stimmen.",
+      "Die Stirnbogenkonstruktion haengt vom Eindeckmaterial ab. Das Verhaeltnis von Breite zu Hoehe betraegt bei Hohlpfannen mindestens 8:1 und bei Biberschwanzziegeln mindestens 5:1. Nicht verwechseln: die Hohlpfanne braucht das flachere Verhaeltnis, weil sie sich schlechter an die Rundung anpassen laesst als der kleinformatige Biber.",
+      "Der Unterschied zwischen der Dachneigung der Gaube und der Dachneigung des Hauptdaches sollte nicht mehr als 12 Grad betragen.",
+      "Lattung im Gaubenbereich: die Konterlattung wird moeglichst entsprechend dem Wasserlauf angebracht. Die Traglatten werden auf der Gaube im Prinzip durchgelattet. Die Deckbreite laesst sich durch Ziehen und Druecken im erlaubten Bereich anpassen.",
+      "Gedeckt wird von der Mitte aus, damit die Deckung harmonisch aussieht: zuerst steht in Gaubenmitte ein senkrechter Gang, dann wird von der Mitte aus die Traufreihe gedeckt. Biberschwanzziegel koennen geschnitten werden, oder du verwendest Sonderziegel. Decklaenge und Deckbreite muessen im Gaubenbereich angepasst werden.",
+      "Konvex und konkav gewoelbte Biber erleichtern die Ausfuehrung von Rundungen, etwa bei der Fledermausgaube oder am Zwiebeldach. Angeboten werden ausserdem spezielle Unterlaeufer, Anlaeufer und Querwoelber. Details wie eingebundene Biberkehle oder Fledermausgaube lassen sich zwar auch mit normalen Dachsteinen regelkonform ausfuehren — die Formziegel erlauben unter anderem eine engere Radienfuehrung.",
+      "Fuer einen Kegelturm in Doppeldeckung brauchst du Ausgleichsbiber, konische Biber, konische Dreiviertel-Biber und konische Traufplatten. Fuer andere Dachbereiche gibt es Zubehoerziegel: linke und rechte Ortgangziegel in verschiedenen Breiten, etwa halb, dreiviertel und ganz, Pultdachfirstziegel, Pultdachanfangs- und -endziegel, Rillenluefter fuer Flaeche und First, Standardluefter als Froschmaulluefter, First- und Traufplatten sowie Durchgangssysteme fuer Dunstrohr und Antenne."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l14",
+    "lernfeld": "lf13a",
+    "thema": "Berechnung gleich geneigtes Dach",
+    "titel": "Gleich geneigte Daecher rechnen und ausmitteln",
+    "inhalt": [
+      "Bevor du irgendetwas bestellst oder zuschneidest, brauchst du die Masse des Dachs: Sparrenlaenge, Grat, Kehle, First und Flaeche. Beim gleich geneigten Dach kommst du dabei mit wenigen Formeln aus — und die Ausmittlung im Grundriss ist die Zeichnung dazu.",
+      "Die Basis: Firsthoehe h = tan DN mal halbe Gebaeudebreite. Sparrenlaenge s = halbe Gebaeudebreite geteilt durch cos DN. Bei 40 Grad und 10,00 m Breite sind das h = 4,195 m und s = 6,527 m; bei 8,00 m Breite h = 3,356 m und s = 5,222 m. Ueber Pythagoras, s = Wurzel aus ((b/2)² + h²), bekommst du 6,526 m und 5,221 m — derselbe Wert bis auf die Rundung.",
+      "Grat und Kehle: g = Wurzel aus ((b/2)² + s²), also Wurzel aus (5,00² + 6,526²) = 8,221 m. Den Neigungswinkel holst du dir ueber sin Beta = h : g = 4,195 : 8,221 = 0,51022, das sind 30,68 Grad. Kontrolle ueber die zweite Dachflaeche: 3,356 : 6,577 = 0,51022, ebenfalls 30,68 Grad. Beim gleich geneigten Dach haben Grat und Kehle denselben Neigungswinkel — eine gute Rechenkontrolle.",
+      "Firstlaenge und Verfallgrat: f = Gebaeudelaenge minus 2 mal halbe Breite, also 20,00 minus 2 mal 5,00 = 10,00 m; der zweite First misst 4,00 m. Der Verfallgrat v = g minus k = 8,221 minus 6,577 = 1,644 m. Er ist der Teil des Grates, der ueber die Kehle hinausragt, und entsteht nur dort, wo ein Anbau an das Hauptdach stoesst.",
+      "T-foermiges Walmdach bei 35 Grad, Teil fuer Teil gerechnet: bei 6,00 m Breite h = 2,10 m, s = 3,66 m, g = 4,73 m; bei 5,00 m Breite h = 1,75 m, s = 3,05 m, g = 3,94 m; bei 3,50 m Breite h = 1,23 m, s = 2,14 m, g = 2,76 m. Die Verfallgrate: 4,73 minus 2,76 = 1,97 m und 4,73 minus 3,94 = 0,79 m.",
+      "Die Gesamtflaeche pruefst du mit der Kontrollformel Grundflaeche geteilt durch cos DN: (6,00 mal 7,50 + 2,00 mal 3,50 + 2,50 mal 5,00) : cos 35 Grad = 64,50 : 0,8192 = 78,74 m². Die Summe der acht Einzelflaechen ergibt 78,72 m² — die 0,02 m² Abweichung stammen aus den Rundungen der Zwischenwerte.",
+      "Ausmittlung im Grundriss: Grate und Kehlen sind die Schnittlinien zweier Dachflaechen und liegen bei gleicher Neigung immer auf der Winkelhalbierenden, bei rechtwinkligen Gebaeudeecken also unter 45 Grad. Von jeder ausspringenden Ecke zeichnest du einen Grat, von der einspringenden Ecke die Kehle, dazu je Gebaeudeschenkel den First im Abstand der halben Schenkelbreite parallel zur laengeren Traufe. Kontrolle: von jedem Punkt der Flaeche muss das Wasser ueber genau eine Traufe abfliessen. Bei ungleicher Neigung gilt die 45-Grad-Regel nicht.",
+      "Unterschiedliche Traufhoehen mittelst du mit den Methoden der rechtwinkligen Parallelprojektion aus oder mit Dachprofilen, die entsprechend den Traufhoehen angeordnet sind. Trauflinien, die in eine andere Dachflaeche hineinragen, musst du ergaenzen; die hoeherliegende Traufe laeuft dabei immer in die Dachflaeche mit der niedrigeren Traufe hinein. Eine Hoehenlinie, fuer die Abstaende im Grund der einzelnen Dachneigungen genommen, entspricht im Grundriss der gleichen Hoehenlage.",
+      "Der Stirnbogen einer Fledermausgaube besteht aus drei Segmentboegen und wird mit der Viertelmethode konstruiert: Gaubenbreite als Grundlinie A-B zeichnen, Mittelsenkrechte auf A-B errichten, in A und B Senkrechten zur Grundlinie konstruieren, Scheitelhoehe h auf der Mittelsenkrechten abtragen — das ist Punkt H. Dann die Linien H-A und H-B vierteln und in den Viertelpunkten die Senkrechten zu H-A und H-B errichten. Die Schnittpunkte mit der Mittelsenkrechten und den Senkrechten in A und B sind die Kreismittelpunkte."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l15",
+    "lernfeld": "lf13a",
+    "thema": "Kehlen",
+    "titel": "Kehlen: wie sie entstehen und wie du sie einteilst",
+    "inhalt": [
+      "An der Kehle läuft das Wasser von zwei Dachflächen zusammen. Durch die Fließrichtung der Niederschläge fällt an dieser Verschneidungslinie besonders viel Wasser an, das sich hier sammelt und sicher abgeleitet werden muss. Die Kehle entscheidet also darüber, ob dein Dach an der nassesten Stelle dicht bleibt.",
+      "Eine Kehle entsteht, wenn zwei geneigt verlaufende Dachflächen eine einspringende Ecke bilden. Wichtig für alles Weitere: Die Neigung der Kehllinie ist immer flacher als die der treffenden Dachflächen. Wenn also von Kehlsparrenneigung und von Dachneigung die Rede ist, sind das nie dieselben Zahlen.",
+      "Nach der Dachneigung der zusammentreffenden Flächen unterscheidest du zwei Arten. Gleichhüftige Kehlen entstehen durch gleiche Dachneigungen und sind symmetrisch zur Senkrechten. Ungleichhüftige Kehlen ergeben sich durch verschiedene Dachneigungen und sind symmetrisch zur Winkelhalbierenden des Kehlwinkels.",
+      "Die Deckunterlage baut auf Kehlsparren und Kehlschiftern auf. Die Schifter liegen durch Schmiegen oder Klauen am Kehlsparren an und tragen ihre Last auf ihn ab — deshalb wird der Kehlsparren stärker belastet als ein normaler Sparren. Je nach den Dachneigungen der zusammentreffenden Flächen kann er unterschiedliche Formen haben.",
+      "Der Kehlsparren wird entsprechend der Dachneigung ausgekehlt, die Kehllinie liegt dadurch tiefer. Bei gleichen Dachneigungen ist der Querschnitt symmetrisch. Bei ungleichen Neigungen kann der Kehlsparren aus der Mitte gelegt werden, um gleiche Höhe zu erreichen. Wird nicht ausgekehlt, kann die Kehlauflage durch die aufgeklauten Kehlschifter gebildet werden.",
+      "Nach der Lage der Kehldeckung unterscheidest du die eingebundene und die überdeckte Kehlausführung. Überdeckte Kehlen müssen nicht aus dem Werkstoff der Deckung bestehen: Metallkehle, Formziegelkehle, Dreipfannenkehle, überdeckte Biberkehle oder Nockenkehle. Eingebundene Kehle und Schwenkziegelkehle werden dagegen nur mit Biberschwanzziegeln bzw. Dachsteinen im Biberformat ausgeführt.",
+      "Für überdeckte Kehlen gilt eine Grundregel: Sofern nicht näher geregelt — wie zum Beispiel bei Metallkehlen — soll die Flächendeckung die Kehldeckung um mindestens 10 cm überdecken, gemessen rechtwinklig zur Kehlmitte. Die eingebundene Kehle wird dagegen mit den Deckschichten der Dachfläche im Verband gedeckt.",
+      "Kurzcheck ohne Buch: Wie entsteht eine Kehle? Was unterscheidet gleichhüftige von ungleichhüftigen Kehlen? Warum ist der Kehlsparren stärker belastet als ein normaler Sparren? Welche zwei Kehlarten unterscheidet man nach der Lage der Kehldeckung? Und um wie viel muss die Flächendeckung die Kehldeckung überdecken, wenn nichts anderes geregelt ist?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l16",
+    "lernfeld": "lf13a",
+    "thema": "Kehlgebinde",
+    "titel": "Eingebundene Biberkehle: Gebinde, Kehlanfang und Kehlende",
+    "inhalt": [
+      "Bei der eingebundenen Biberkehle läuft die Deckung ohne Bruch durch die Kehle — sie wird mit den Deckschichten der Dachfläche im Verband gedeckt. Auf der Baustelle heißt das: Du musst Breite und Schichten sauber einteilen, sonst entstehen Kreuzfugen und die Kehle wird undicht.",
+      "Die Kehlbreite wird in Ziegelbreiten angegeben und beträgt mindestens zwei Ziegel; diese zwei Breiten erreichst du auch mit einer Ziegelbreite plus je einem Ausspitzer von mindestens halber Ziegelbreite. In der Höhenüberdeckung muss die vierte Ziegelreihe die erste um mindestens 1 cm überdecken — damit hast du eine Dreifachdeckung. Die Kehlen müssen in der Flucht der angrenzenden Dachflächen liegen.",
+      "Kreuzfugen musst du vermeiden. Sie entstehen, wenn die allseitige Über- bzw. Unterdeckung geringer als 2 cm ist. Die Neigungsgrenze der eingebundenen Biberkehle wird als Kehlsparrenneigung angegeben und beträgt 25 Grad; bei gleichhüftiger Kehle entspricht das einer Dachneigung von 33,4 Grad. Verwechseln kannst du beide Zahlen nicht — die Kehlsparrenneigung ist immer die flachere.",
+      "Gleichhüftige Kehle in Doppeldeckung: Das Kehlgebinde besteht aus Deck- und Unterläuferschicht. Die Unterläufer werden von der Deckschicht rechts und links teilweise überdeckt, sie unterlaufen die Deckschicht also. Gleichhüftige Kehle in Kronendeckung: Dort kommen Lager- und Deckschicht wie in der Kronendeckung plus die jeweilige Unterläuferschicht — also drei Schichten statt zwei.",
+      "Auch die Einteilung unterscheidet sich. In Doppeldeckung schnürst du die Kehlbreite parallel zur Kehlmitte jeweils zur Hälfte ab. In Kronendeckung wird der Abstand zwischen den Schnittpunkten der Deckschicht-Fußenden und den Kehlbreitenlinien nicht halbiert, sondern in drei Teile aufgeteilt.",
+      "Ungleichhüftige Kehle in Doppeldeckung: Zum Kehlgebinde kommt neben Deck- und Unterläuferschicht noch die Überläuferschicht. Überläufer sind an der Dachfläche mit der flacheren Neigung zum Ausgleich nötig und rufen dadurch Unregelmäßigkeiten im Deckungsbild hervor. Die Einteilung hängt von der geforderten Breite ab, unter Beachtung der Mindestüberdeckung (Dreifachdeckung) an der steileren Dachfläche.",
+      "Ungleichhüftige Kehle in Kronendeckung: Hier besteht das Kehlgebinde aus Lager- und Deckschicht sowie den zusätzlichen Unterläufer- und Überläuferschichten. Eingeteilt wird auf der steileren Dachseite, die Abstände musst du entsprechend aufteilen. Reicht eine Dreiteilung nicht aus, teilst du in vier Abstände.",
+      "Kehlanfang und Kehlende werden bei Doppel- und Kronendeckung sowie bei gleichhüftigen und ungleichhüftigen Kehlen gleichermaßen ausgeführt. Im Kehlanfang erhält der Kehlwinkel die Lagerschicht des Kronengebindes mit einem bearbeiteten Ziegel und kleinen Zwickeln zur Ergänzung, verlegt in Mörtel.",
+      "Die Deckschicht des Kehlanfangs bekommt einen über dem Kehlwinkel liegenden Wasserziegel und links und rechts je einen Ausspitzer — das sind in Richtung des Dachsparrens bearbeitete Ziegel. Das Kehlende besteht aus Deck- und Unterläuferschicht und wird mit Kehlauslaufschichten ausgeführt. In einem alternativen Kehlanfang kann an der Traufe zur Erhöhung der Regensicherheit ein Metallschichtstück untergelegt werden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l17",
+    "lernfeld": "lf13a",
+    "thema": "Überdeckte Biberkehle",
+    "titel": "Überdeckte Kehlen: Biberkehle, Formziegelkehle, Blechkehle",
+    "inhalt": [
+      "Bei der überdeckten Kehle liegt die Kehldeckung unter der Flächendeckung: Die Flächengebinde überdecken sie, und das Wasser wird in der Kehle darunter abgeleitet. Der Vorteil auf der Baustelle ist, dass die Kehle nicht aus dem Werkstoff der Deckung bestehen muss — du kannst Biber, Formziegel oder Blech einsetzen.",
+      "Die Breite der überdeckten Biberkehle hängt vom Format ab: bis 155 mm Biberbreite sind es fünf Biber, bis 180 mm sind es vier Biber. Bei der Überdeckung muss die vierte Deckschicht die erste noch um 1 cm überragen. Gedeckt wird im Halbverband, die halben Biber außen müssen Wasser abweisend geschnitten sein.",
+      "Die Deckung der Dachfläche sollte die Biberkehle um 10 cm überdecken, die Mindestkehlsparrenneigung beträgt 30 Grad. Die überdeckte Biberkehle darf nur bei annähernd gleichen Dachneigungen und gleichem Wasseranfall der angrenzenden Flächen angewandt werden — bei stark unterschiedlichen Flächen ist sie also nicht die richtige Wahl.",
+      "Die überdeckte Biberkehle wird auf Kehlschalung hergestellt; die Kehlschalung kann aus mehreren Brettern und Dreikantleisten bestehen. Bei Deckung in Mörtel ist eine Vordeckung der Kehlschalung erforderlich. Bei trockener Deckung sind alle Biber mit korrosionsbeständigem Draht oder Nägeln zu befestigen.",
+      "Die überdeckte Formziegelkehle wird mit besonderen Formkehlziegeln hergestellt, die mit Rinne und Steg versehen sind. Wie weit sich die Kehlziegel untereinander überdecken, hängt vom Modell ab. Auf Schalung wird eine Bitumenbahn oder Kunststoffbahn gelegt. Die Mindestkehlsparrenneigung beträgt hier 35 Grad — also steiler als bei der überdeckten Biberkehle mit 30 Grad.",
+      "Die Unterkonstruktion der Formziegelkehle — Schalung oder Lattung — wird so tief ausgeführt, dass die Oberkante der Kehlziegel höchstens mit der Lattung der Dachfläche abschließt. Nur dann können die Flächenziegel ungehindert mindestens 10 cm auf die Formkehlziegel übergreifen. Die Breite der Kehlaussparung richtet sich nach der Breite der Kehlziegel.",
+      "Blechkehlen können bei allen Deckarten verwendet werden. Als Werkstoffe kommen Aluminium, Blei, Kupfer, Titanzink, feuerverzinktes oder nichtrostendes Stahlblech infrage. Die Kehle wird geschalt — Schalbretter etwa 10 bis 15 mm dünner als die Dachschalung oder Lattung, mindestens 24 mm — und zum Beispiel mit einer Bitumenbahn vorgedeckt. Darauf kommen die Kehlbleche mit Wasserfalz von 1,5 cm.",
+      "Die Überdeckungen bei der Blechkehle merkst du dir nach Neigung: Die Kehlbleche überdecken sich bei Kehlneigungen unter 22 Grad mindestens 15 cm, über 22 Grad mindestens 10 cm, bei Neigungen unter 15 Grad sind 20 cm erforderlich. Die Dachplatten überdecken die Blechkehle mindestens 12 cm bei Dachneigungen unter 50 Grad bzw. 10 cm ab 50 Grad."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l18",
+    "lernfeld": "lf13a",
+    "thema": "Wangenkehle",
+    "titel": "Wandkehle und Wangenkehle: Anschluss an senkrechte Flächen",
+    "inhalt": [
+      "Überall dort, wo eine eingedeckte senkrechte Fläche auf die Dachfläche trifft — Gaubenwange, Schornsteinkopf, Wand — brauchst du eine Wand- oder Wangenkehle. Sie schließt die senkrechte Fläche wasserführend an die Dachfläche an.",
+      "Die Wandkehle bei Biberschwanzdeckung wird auf einer Kehlschalung von höchstens 25 cm Breite gedeckt, die etwa 1 bis 2 cm aus der Mitte der hochkant stehenden Dachlatte befestigt ist. Ausgeführt wird sie mit dreiviertelbreiten Bibern und einer Breite von mindestens drei Bibern.",
+      "Der Kehlbiber wird immer im Halbverband und immer etwas nach oben geschoben verlegt und gegen Abrutschen befestigt. Das ist der Punkt, an dem viele schlampen — ohne Befestigung rutscht dir die Kehlreihe nach unten und die Überdeckung stimmt nicht mehr.",
+      "Eingebundene Wangenkehle: Die Wange wird von oben mit einem geringeren Lattenabstand als auf der Hauptdachfläche eingelattet. Von der Dachfläche werden die ersten drei bis vier Traglatten an der Wange hochgeführt. Die Kehle selbst wird entsprechend der Wandkehle auf Kehlschalung gedeckt.",
+      "Der eigentliche Trick bei der eingebundenen Wangenkehle: Die Deckgebinde der Dachfläche werden mit Unterläufern und Ausspitzern in die Deckschichten der Wange eingebunden. Die Biber werden mit korrosionsbeständigen Schrauben bzw. Bindedraht befestigt.",
+      "Durchgedeckte Wangenkehle: Nach der Einlattung der Dachfläche wird ein Kehlbrett wie bei Wandkehlen über dem Kopfende des ersten Wasserbibers angebracht. Darauf wird mit biegsamen Latten oder Doppelleisten von der Wange bis über die Kehlschalung auf die Dachfläche eingelattet und verschraubt. Die Latten werden vorher über Nacht gewässert und sind dadurch etwas biegsam.",
+      "Bei Schiefer unterscheidest du eingehende und ausgehende Wangenkehle. Die eingehende Kehle wird von der Dachfläche zur senkrechten Fläche gedeckt, ihre Breite muss mindestens sieben Kehlsteine betragen. Die ausgehende Kehle wird von der senkrechten Fläche zur Dachfläche gedeckt — dafür muss die Dachfläche in der Regel mindestens 50 Grad geneigt sein.",
+      "Das Kehlbrett wird durch zwei Dreikantleisten an der Wandfläche und durch eine Dreikantleiste an die Dachfläche angeschlossen. Die Kehlgebinde werden von der Wasserplatte oder von der Einfällerplatte aus gedeckt. Für die Mindestüberdeckung gelten dieselben Maße wie bei den Wandkehlen. Kleinere Wangenflächen können mit Kehlplatten gedeckt werden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l19",
+    "lernfeld": "lf13a",
+    "thema": "Eingebundene Kehle Deutsche Deckung",
+    "titel": "Schieferkehlen: eingebundene Plattenkehle, Hauptkehle, Nockenkehle",
+    "inhalt": [
+      "Bei Schiefer hast du zwei grundsätzliche Wege durch die Kehle: die eingebundene Plattenkehle, bei der Kehlgebinde die Deckgebinde der Dachflächen verbinden, oder die Nockenkehle mit eingelegten Kehlblechschichtstücken. Welcher Weg geht, entscheidet vor allem die Deckart und die Kehlsparrenneigung.",
+      "Die eingebundene Kehle kann bei der Deutschen Deckung gedeckt werden, allerdings nicht im Format 40 mal 40 cm. Bei der Rechteckdoppeldeckung im Format 20 mal 40 cm ist sie möglich, wenn gleiche Dachneigungen vorliegen. Bei beiden beträgt die Mindestkehlsparrenneigung 30 Grad.",
+      "Bei ungleichhüftigen Kehlen sollte die Kehlsparrenneigung mindestens 45 Grad betragen. Das Kehlbrett wird in Deckrichtung um 1 bis 2 cm über die Kehlmitte versetzt angebracht und mit Dreikantleisten angeschlossen. Die Kehlplatten werden aus Rechteckplatten im Format 13/40 cm zugerichtet, die Ferse erhält einen geraden Rücken und kurzen Bruch.",
+      "Die Deckung der Kehle sollte von der Wasserplatte aus erfolgen. Die Kehlbreite beträgt mindestens sieben Kehlplatten. Die Seitenüberdeckung der Kehlplatten beträgt die Hälfte der Kehlplattenbreite, und die Höhenüberdeckung ist mindestens um ein Drittel größer als die Höhenüberdeckung in der Dachfläche.",
+      "Den Firstabschluss bei Hauptkehlen bildet ein Ausspitzgebinde, das von einem Kragengebinde am First überdeckt wird. Merk dir die Reihenfolge: erst das Ausspitzgebinde, darüber das Kragengebinde.",
+      "Für die Deckrichtung von Schieferhauptkehlen gelten zwei Regeln: von der flachen in die steile Dachfläche und von der Nebendachfläche in die Hauptdachfläche. Rechte Kehlen werden von links, linke Kehlen von rechts gedeckt. Die Breite beträgt mindestens sieben Kehlsteine, die Kehlsteinbreite muss mindestens 13 cm betragen.",
+      "Schnürregeln: Rechts und links werden Dreikantleisten angebracht, die erste Schnürung erfolgt auf der Dreikantleiste, und der erste Kehlstein deckt mit der Brust diese Schnürung. Die weiteren Kehllinien trägst du mit einem Schnürabstand von 6,5 cm bei einer Kehlsteinbreite von 13 cm ab; in den Knickbereichen wird auf 7 cm erweitert.",
+      "Die Nockenkehle ist eine Alternative: Bei gleichhüftigen Kehlen mit einer Kehlsparrenneigung über 25 Grad können — außer bei der Spitzschablonendeckung — Kehlblechschichtstücke (Nocken) verwendet werden. Sie werden in jedes Dachplattengebinde eingelegt und im oberen Bereich der Höhenüberdeckung mindestens doppelt genagelt.",
+      "Die Maße der Nockenkehle: Die Dachplatten überdecken die Nocken um mindestens 15 cm. In der Kehlmitte wird ein schmaler Wasserlauf freigehalten, dadurch entsteht eine kleine Schnittfläche der Metallkehle. Die Nocken überdecken sich untereinander mindestens 16 cm bei Dachneigungen unter 45 Grad bzw. 14 cm bei größeren Neigungen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l20",
+    "lernfeld": "lf13a",
+    "thema": "Dachgauben",
+    "titel": "Gauben decken und Einbauteile eindecken",
+    "inhalt": [
+      "Gauben und Einbauteile durchbrechen die Dachfläche. Wenn du die Einteilung der Hauptdachfläche nicht vorher darauf abstimmst, musst du später schneiden, stückeln und stopfen — und genau dort wird das Dach undicht.",
+      "Gauben sind mit ihrer Konstruktion und ihren Abmessungen architektonisch mit der Ziegel- bzw. Dachsteindeckungsart abzustimmen. Die Regeldachneigungen bzw. deren Grenzen gelten auch für die Dachneigungen der Gauben. Schon bei der Einteilung der Hauptdachflächen solltest du die Gaubenabmessungen berücksichtigen.",
+      "Zwei Merksätze für die Satteldachgaube: Die letzte vor der Gaube liegende waagerechte Reihe sollte durchgedeckt werden können. Und die Gaube sollte ein bis zwei Reihen vor dem First enden.",
+      "Der Übergang von der Hauptdachfläche zur Schleppdachfläche ist ein Dachknick. Bei größeren Dachneigungen löst du ihn mit Formziegeln bzw. Formsteinen (Winkelsteinen) oder anderen Konstruktionen. Bei geringeren Dachneigungsunterschieden reicht eine Doppellatte im Dachknick oder die Anordnung der Traglatten jeweils ober- und unterhalb der Knicklinie.",
+      "Bei der Schleppdachgaube sollten die vertikalen Reihen auf der Schleppdachfläche durchgeführt werden können. Die Dachneigung der Abschleppung sollte mindestens 25 Grad betragen.",
+      "Satteldach- und Spitzgauben haben in ihrer Verschneidungslinie zum Hauptdach eine Sattelkehle. Sattelkehlen können wie Hauptkehlen gedeckt werden. Im Biberschwanzdach könnten die Kehlen bei eingehaltener Kehlmindestneigung von 25 Grad durchgedeckt werden. Die Gaubendachneigung sollte sich an der Neigung der Hauptdachfläche orientieren, die Gaubenwangen werden als seitliche Anschlüsse ausgeführt.",
+      "Sicherheitsdachhaken werden nur an den Dachsparren befestigt und können durch eine Metallunterlage oder einen Rastnagel eingedeckt werden. Auf dem eingeschlagenen Rastnagel liegt der Dachhaken auf, so wird verhindert, dass die Dachplatten unter Druck brechen. Bei Befestigung auf einer Metallunterlage führst du die Deckung bis an den Dachhaken heran. Die Stützen von Schneefanggittern werden genauso befestigt.",
+      "Dachfenster können durch Metallschichtstücke (Nocken) in die Dachfläche eingebunden werden, die Dachgebinde umschließen sie durch Ortgangdeckungen. Oft werden Dachfenster mit Eindeckrahmen geliefert — dann ist das Eindecken mit Metallschichtstücken nicht mehr nötig, und eine vorgefertigte Rinne sorgt für den Wasserabfluss."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l21",
+    "lernfeld": "lf13a",
+    "thema": "Dachgauben Schiefer",
+    "titel": "Gaubenformen, Dachschmuck und Reparaturen",
+    "inhalt": [
+      "Dachgauben sind Dachaufbauten, in die senkrechte Fenster eingebaut werden, und sie vergrößern die nutzbare Dachgeschossfläche. Welche Form du vor dir hast, entscheidet darüber, wie du sie anschließt — deshalb lohnt es sich, die Grundformen sicher auseinanderzuhalten.",
+      "Die Formen von Gauben sind sehr vielfältig. Am häufigsten sind vier Grundformen anzutreffen: die Schleppdachgaube, die Satteldachgaube bzw. abgewalmte Satteldachgaube, die Fledermausgaube und die Spitzgaube.",
+      "Bei der Fledermausgaube wird die Dachfläche nur leicht angehoben. Sie eignet sich besonders für Dächer mit Schiefer- oder Faserzementdachplattendeckungen. Über geschweifte Gauben können bei flacher Neigung die normalen Deckgebinde geführt werden — dazu muss das Verhältnis von Höhe zu Breite der Fensterstirnwand mindestens 1:8 betragen. Bei kleinerem Verhältnis wird mit einer Kehldeckung eingebunden.",
+      "Das Dach der Satteldachgaube schließt mit Kehlen an die Hauptdachfläche an. Die Vorderseite bildet — wie bei den Schleppdachgauben — ein Kantholzrahmen: bei kleinen Gauben in Brüstungshöhe auf die Sparren aufgesetzt, bei größeren Gauben unmittelbar auf die Geschossdecke aufgestellt.",
+      "Satteldachgauben sind durch die erforderliche Satteldachneigung in der Breite beschränkt und werden daher in der Regel nur für einzelne Fenster hergestellt. Wenn also mehrere Fenster nebeneinander gewünscht sind, führt der Weg meist über eine andere Gaubenform.",
+      "Dachschmuck dient in erster Linie architektonischen Aspekten. Er kommt bei Neubauvorhaben, vor allem aber im Bereich der Denkmalpflege zum Einsatz. Es handelt sich um besonders gestaltete Formziegel oder um Zubehörteile, die auf vorhandene Formziegel aufgebracht werden — von geometrischen Körpern wie der Firstspitze bis zu Nachbildungen von Mensch und Tier.",
+      "Befestigung am Beispiel Firsthahn: Der Dachschmuck wird mit Zweikomponentenkleber auf der Firstlatte befestigt. Zusätzlich sichern ein Grafi-Halter und eine Gewindestange die Befestigung an der Firstpfette. Erst durch diese zweite Sicherung ist der Dachschmuck auch bei Windsog gehalten.",
+      "Schieferdeckungen erfordern keine regelmäßigen Unterhaltungsarbeiten, mit zunehmendem Alter kann aber die Auswechslung einzelner Schiefer nötig werden. Dafür verwendest du Schiefer aus derselben Grube und mit derselben Dicke. Um eine Blankbefestigung zu vermeiden, werden spezielle Reparaturhaken verwendet.",
+      "Ein Reparaturhaken besteht aus einem Blatt, das auf der Schalung befestigt wird, und aus Drähten bzw. Haltearmen, die die Schiefer halten. Reparaturhaken müssen gegen Korrosion geschützt sein und sollten aus demselben Material bestehen wie die Nägel der Deckung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l22",
+    "lernfeld": "lf13a",
+    "thema": "Kehllänge",
+    "titel": "Kehllänge rechnen und Material für die Kehle ermitteln",
+    "inhalt": [
+      "Die Kehllänge ist der Ausgangswert für alles Weitere: Erst rechnest du die Länge des Kehlsparrens, daraus ergeben sich Reihenzahl, Ziegelmenge und Haftezahl. Wer sich hier vertut, bestellt zu wenig oder zu viel Material.",
+      "Merk dir zuerst die Falle, die fast alle Rechnungen kippt: In die Kehlformeln gehen die HALBEN Hausbreiten ein, nicht die vollen. Wer die vollen Breiten einsetzt, erhält eine viel zu lange Kehle. Aus dem Grundriss also erst halbieren, dann rechnen.",
+      "Fall 1 — unterschiedliche Dachbreiten und unterschiedliche Dachhöhen: k = Wurzel aus ((h2 geteilt durch h1) zum Quadrat mal b1 zum Quadrat, plus b2 zum Quadrat, plus h2 zum Quadrat). Beispiel mit 10,50 m und 8,70 m Breite bei 42 Grad: h1 = 4,73 m, h2 = 3,92 m, k = 7,29 m, sin beta = 3,92 geteilt durch 7,29, also beta = 32,5 Grad.",
+      "Achtung bei Fall 1: Gleiche Dachneigung heißt nicht gleiche Firsthöhe. Haben zwei Dächer dieselbe Neigung, aber verschiedene Breiten, sind die Firsthöhen zwangsläufig verschieden — dann gilt Fall 1 und nicht Fall 2.",
+      "Fall 2 — unterschiedliche Dachbreiten, gleiche Dachhöhen: k = Wurzel aus (b1 zum Quadrat plus b2 zum Quadrat plus h zum Quadrat), und sin beta = h geteilt durch k. Beispiel Winkelbungalow mit 8,20 m und 6,60 m Flügelbreite und 2,80 m Dachhöhe: b1 = 4,10 m, b2 = 3,30 m, k = 5,96 m, beta = 28 Grad.",
+      "Fall 3 — gleiche Breiten und gleiche Höhen: k = Wurzel aus (2 mal b zum Quadrat plus h zum Quadrat). Das ist nur der Sonderfall von Fall 2 mit b1 = b2, deshalb wird b zum Quadrat zweimal gezählt. Beispiel: b = 3,84 m, h = 2,70 m, k = 6,06 m, beta = 26,5 Grad. Fall 4 — dasselbe bei 45 Grad Dachneigung, also h = b: k = b mal Wurzel 3, und beta ist stets 35,3 Grad, unabhängig von der Gebäudegröße.",
+      "Metallkehle aufteilen: Bei einer dreiteiligen Kehle gilt Stücklänge = (Kehllänge plus 2 mal Überdeckung) geteilt durch 3 — bei drei Stücken gibt es nur zwei Überdeckungen. Beispiel: (15,15 m plus 2 mal 0,12 m) geteilt durch 3 = 5,13 m je Stück. Hafte je Seite: 5,13 m geteilt durch 0,40 m, aufgerundet 13 Stück.",
+      "Reihen und Ziegel bei der Biberkehle: Deckhöhe S = ein Drittel mal (Ziegelhöhe minus 1 cm), also bei 38 cm: 12,3 cm. Reihen = 1063 cm geteilt durch 12,3 cm = 86,4, aufgerundet 87 Reihen. Dann die Deckhöhe neu rechnen: 1063 cm geteilt durch 87 = 12,2 cm. Ziegel = 87 Reihen mal 5 Biber je Reihe = 435 Stück.",
+      "Dreipfannenkehle: Deckhöhe S = Pfannenhöhe minus 10 cm, bei 40 cm also 30 cm. Reihen = 1325 cm geteilt durch 30 cm = 44,2, aufgerundet 45. Korrigiert: 1325 geteilt durch 45 = 29,4 cm, Überdeckung = 40 minus 29,4 = 10,6 cm — die geforderten mindestens 10 cm sind erfüllt. Ziegel = 45 mal 3 = 135 Hohlpfannen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l23",
+    "lernfeld": "lf13a",
+    "thema": "Ungleich geneigtes Dach",
+    "titel": "Ungleich geneigtes Dach und Teildachflächen",
+    "inhalt": [
+      "Beim ungleich geneigten Dach hat jede Dachfläche ihre eigene Neigung. Das hat zwei praktische Folgen: Die Firsthöhen der Gebäudeteile sind unterschiedlich, und die schnelle Kontrollformel über die Grundfläche stimmt nicht mehr. Du musst jede Teilfläche einzeln rechnen.",
+      "Zuerst die Firsthöhen, je Dachfläche mit ihrer eigenen Neigung: h = tan Alpha mal halbe Gebäudebreite. Beispiel: h1 = tan 40 Grad mal 10,00 m geteilt durch 2 = 4,195 m und h2 = tan 50 Grad mal 6,00 m geteilt durch 2 = 3,575 m. Beide Dächer treffen sich an einem gemeinsamen Grat, haben aber verschiedene Firsthöhen.",
+      "Jetzt die häufigste Fehlerquelle: Für die Sparrenlänge s1 teilst du die Firsthöhe h1 der einen Dachfläche durch den Sinus der ANDEREN Dachneigung. Also s1 = 4,195 m geteilt durch sin 50 Grad = 5,476 m, und entsprechend s4 = h2 geteilt durch sin 40 Grad = 3,575 geteilt durch sin 40 Grad = 5,56 m. Wer die Winkel vertauscht, bekommt eine deutlich zu lange Sparrenlänge.",
+      "Aus der Sparrenlänge folgt die Gratlänge: g1 = Wurzel aus ((b1 geteilt durch 2) zum Quadrat plus s1 zum Quadrat) = Wurzel aus (5,00 zum Quadrat plus 5,476 zum Quadrat) = 7,415 m.",
+      "Kehllänge und Firstlänge laufen über die Hilfsgröße x. Es gilt x2 = h2 geteilt durch tan Alpha1 = 3,575 geteilt durch tan 40 Grad = 4,26 m, daraus k = Wurzel aus (x2 zum Quadrat plus s3 zum Quadrat) = Wurzel aus (4,26 zum Quadrat plus 4,667 zum Quadrat) = 6,319 m. Ebenso x1 = h1 geteilt durch tan Alpha2 = 3,52 m und daraus f1 = l1 minus 2 mal x1 = 20,00 minus 7,04 = 12,96 m.",
+      "Die Neigungswinkel von Grat und Kehle bekommst du über den Sinus: sin beta1 = 4,195 geteilt durch 7,415 = 0,5657, also beta1 = 34,45 Grad. sin beta2 = 3,575 geteilt durch 6,319 = 0,5657, also beta2 = 34,45 Grad. Grat und Kehle haben denselben Neigungswinkel — das ist eine gute Rechenkontrolle.",
+      "Die Teildachflächen zerlegst du in einfache Figuren. Trapez: A1 = (Trauflänge plus Firstlänge) geteilt durch 2, mal Sparrenlänge — im Buchbeispiel (20,00 plus 10,00) geteilt durch 2 mal 6,526 = 97,89 Quadratmeter. Dreieck (Walmfläche): A2 = (Breite mal Sparrenlänge) geteilt durch 2 = 32,63 Quadratmeter. Parallelogramm: A3 = 4,00 mal 5,221 = 20,88 Quadratmeter, Dreieck A4 = (8,00 mal 5,221) geteilt durch 2 = 20,88 Quadratmeter.",
+      "Zusammengesetzte Teilflächen ergeben sich durch Addieren und Abziehen: A5 = A3 plus A2 = 20,88 plus 32,63 = 53,51 Quadratmeter, A6 = A1 minus A4 = 97,89 minus 20,88 = 77,01 Quadratmeter. Die Gesamtfläche ist die Summe A1 bis A6.",
+      "Die Kontrolle A gesamt = Grundfläche geteilt durch cos Dachneigung funktioniert NUR beim gleich geneigten Dach. Beispiel: (20,00 mal 10,00 plus 4,00 mal 8,00) geteilt durch cos 40 Grad = 232 geteilt durch 0,766 = 302,85 Quadratmeter, gegenüber 302,80 aus der Einzelflächenrechnung — die Differenz kommt aus den Rundungen. Bei unterschiedlichen Neigungen hätte jede Teilfläche einen eigenen cos-Wert."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf13a-l24",
+    "lernfeld": "lf13a",
+    "thema": "Aufgaben Berechnung",
+    "titel": "Die Rechenkette am zusammengesetzten Dach",
+    "inhalt": [
+      "Am zusammengesetzten Dach rechnest du immer in derselben Reihenfolge. Der Grund ist einfach: Jeder Schritt braucht das Ergebnis des vorherigen. Wer mittendrin anfängt, sucht Werte, die er noch gar nicht hat.",
+      "Die Rechenkette in fünf Schritten: erstens die Firsthöhen h = halbe Breite mal tan Alpha. Zweitens die Sparrenlängen s = halbe Breite geteilt durch cos Alpha oder s = Wurzel aus (halbe Breite zum Quadrat plus h zum Quadrat). Drittens Grat- und Kehllängen, g = Wurzel aus (halbe Breite zum Quadrat plus s zum Quadrat) bzw. k über x = h geteilt durch tan Alpha.",
+      "Viertens die Firstlängen f = Gebäudelänge minus 2 mal x. Und fünftens die Teildachflächen als Trapeze, Dreiecke und Parallelogramme. Wichtig bei ungleichen Neigungen: Die Kontrollformel A = Grundfläche geteilt durch cos Dachneigung gilt dann nicht mehr, weil jede Teilfläche einen eigenen Neigungswinkel hat.",
+      "Beispiel gleich geneigtes Dach mit abgewalmtem Anbau, 45 Grad, 9,25 m breit, 13,53 m lang: h = 4,625 mal tan 45 Grad = 4,63 m — bei 45 Grad ist die Firsthöhe gleich der halben Gebäudebreite. Ortgang bzw. Sparrenlänge s = 4,625 geteilt durch cos 45 Grad = 6,54 m. Deckfläche = (9,25 mal 13,53) geteilt durch cos 45 Grad = 125,15 geteilt durch 0,7071 = 177,0 Quadratmeter.",
+      "Weil das Dach allseits gleich geneigt ist, gilt die Kontrollformel A = Grundfläche geteilt durch cos Dachneigung auch beim abgewalmten Anbau. Das ist der eine Fall, in dem du dir die Einzelflächenrechnung sparen kannst.",
+      "Beispiel winkelförmiges Haus mit 5,10 m und 8,55 m Flügelbreite bei 38 Grad: h1 = 2,55 mal tan 38 Grad = 1,99 m, h2 = 4,275 mal tan 38 Grad = 3,34 m. Gleiche Neigung, aber verschiedene Breiten heißt verschiedene Firsthöhen — also Fall 1: k = Wurzel aus (18,32 plus 18,28 plus 11,16) = 6,91 m. sin beta = 3,34 geteilt durch 6,91 = 0,483, also beta = 28,9 Grad — deutlich flacher als die 38 Grad der Dachflächen.",
+      "Projektbeispiel mit 9,95 m Breite und 40 Grad allseits: h = 4,975 mal tan 40 Grad = 4,17 m, s = 4,975 geteilt durch cos 40 Grad = 6,49 m, g = Wurzel aus (4,975 zum Quadrat plus 6,49 zum Quadrat) = 8,18 m. Da die Dachneigung allseits gleich ist, gilt hier wieder A gesamt = Grundfläche geteilt durch cos 40 Grad.",
+      "Die Konstruktionsangaben aus der Projektaufgabe musst du lesen können: Sparren 8/22 mit maximal 80 cm Abstand, Grat- und Kehlsparren 14/24, Firstpfetten 16/24, Schwellen 10/12, Dachneigung allseits 40 Grad, Dachüberstand etwa 30 cm. Das Gebäude ist eingeschossig, das Dach zusammengesetzt mit verschieden hohen Firsten und abgewalmten Dachflächen.",
+      "Was die Projektaufgabe von dir verlangt: Deckmaterial und Deckungsart empfehlen, Grat- und Kehllängen sowie Dachflächen rechnerisch und zeichnerisch ermitteln, die Ausführungsart für die Kehldeckung wählen und begründen, eine Gaube in eine Hauptdachfläche einplanen und den gesamten Materialbedarf ermitteln."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

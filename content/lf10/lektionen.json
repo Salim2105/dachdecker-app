@@ -64,5 +64,284 @@
     "quelle": "BuGG-Fachinformationen Dachbegrünung (Lastannahmen); KMK-Rahmenlehrplan LF 10",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 266' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Dachbegrünung: extensiv oder intensiv'><rect x='30' y='92' width='130' height='12' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='30' y='78' width='130' height='14' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='44' y1='78' x2='44' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='60' y1='78' x2='60' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='76' y1='78' x2='76' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='92' y1='78' x2='92' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='108' y1='78' x2='108' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='124' y1='78' x2='124' y2='70' stroke='#c07d4a' stroke-width='1.4'/><line x1='140' y1='78' x2='140' y2='70' stroke='#c07d4a' stroke-width='1.4'/><text x='30' y='126' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>extensiv</text><rect x='220' y='92' width='130' height='12' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='220' y='66' width='130' height='26' fill='none' stroke='currentColor' stroke-width='1.4'/><circle cx='250' cy='76' r='8' fill='none' stroke='#c07d4a' stroke-width='1.4'/><line x1='290' y1='66' x2='290' y2='54' stroke='#c07d4a' stroke-width='1.4'/><text x='220' y='126' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>intensiv</text><line x1='18' y1='144' x2='362' y2='144' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='166' fill='currentColor' font-size='12.5'>extensiv: Moos, Sedum – ca. 80–170 kg/m²</text><text x='30.0' y='188' fill='currentColor' font-size='12.5'>intensiv: Stauden, Rasen – ab ca. 300 kg/m²</text><text x='18' y='221' fill='#c25f4f' font-size='12'>Immer zuerst die Statik prüfen und durchwurzelungsfest</text><text x='18' y='238' fill='#c25f4f' font-size='12'>abdichten.</text></svg>"
+  },
+  {
+    "id": "lf10-l05",
+    "lernfeld": "lf10",
+    "thema": "Beanspruchungen",
+    "titel": "Was auf ein Flachdach einwirkt — und warum es Gefälle braucht",
+    "inhalt": [
+      "Auf dem Flachdach entscheidet dieses Thema darüber, warum du die gesamte Fläche abdichtest und warum du auf Gefälle achtest: Wasser läuft hier nicht von selbst schnell weg, und die Abdichtung muss Hitze, Kälte, Bewegung und Sonne über Jahre aushalten.",
+      "Beim Steildach mit einer Dachneigung über 20 Grad sorgt die Neigung für schnellen Abfluss. Beim Flachdach fließt das Wasser langsam ab, und in Unebenheiten oder Durchbiegungen bildet sich Stauwasser. Deshalb muss die gesamte Dachfläche abgedichtet werden und eine wasserundurchlässige Schicht bekommen.",
+      "Flachdächer sollen ein Mindestgefälle von 2 Prozent haben. Erzeugen kannst du es über die Unterkonstruktion, über einen später aufgebrachten Gefälleestrich oder über Gefälledämmplatten. Bei mehr als 5 Prozent Gefälle musst du unter Umständen konstruktiv verhindern, dass der Dachaufbau abgleitet. Zwei Zahlen: 2 Prozent Untergrenze, 5 Prozent die Grenze fürs Abgleiten.",
+      "Neben der Feuchte wirken weitere Beanspruchungen ein: mechanische, zum Beispiel durch Formänderung der Tragkonstruktion oder durch Fugenbewegungen; thermische durch die Oberflächentemperatur; biologische durch Wurzelwachstum bei begrünten Flachdächern; dazu UV-Strahlung, Ozon und andere Einflüsse. Wer nach den Beanspruchungen gefragt wird, zählt genau diese Gruppen auf.",
+      "Die thermische Beanspruchung liegt bei Oberflächentemperaturen von etwa minus 20 bis plus 80 Grad Celsius. Dieser große Bereich verlangt von der Abdichtung zweierlei: Kaltbiegeverhalten, damit sie in der Kälte nicht bricht, und Wärmestandfestigkeit, damit sie in der Sonne standfest bleibt.",
+      "Gefälledämmsysteme werden nicht frei Hand verlegt. Für sie werden Verlegepläne angefertigt, die die Dachgeometrie, die vorgesehenen Entwässerungspunkte und die erforderlichen Dämmstoffdicken berücksichtigen. Auf dem Plan müssen die Geometrie und die Lage der einzelnen Dämmelemente ersichtlich sein — sonst stimmt am Ende das Gefälle nicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l06",
+    "lernfeld": "lf10",
+    "thema": "Konstruktionsarten",
+    "titel": "Die vier Flachdach-Aufbauten und das nicht belüftete Dach",
+    "inhalt": [
+      "Bevor du auf einem Flachdach die erste Schicht anfasst, musst du wissen, welcher Aufbau vor dir liegt. Davon hängt ab, wo Dampfsperre, Wärmedämmung und Abdichtung hingehören — und ob die Konstruktion am Ende trocken bleibt.",
+      "Bei Flachdächern unterscheidet man vier Konstruktionsarten beziehungsweise Aufbauten: den nicht belüfteten Dachbau, den belüfteten Dachbau, das Umkehrdach und den Begrünungsaufbau. Diese vier musst du sauber auseinanderhalten. Diese vier musst du sauber auseinanderhalten: Beim nicht belüfteten Dach liegt der Aufbau unmittelbar auf der Unterkonstruktion, beim belüfteten Dach liegt eine belüftete Luftschicht dazwischen, beim Umkehrdach liegt die Wärmedämmung über der Abdichtung, und beim Begrünungsaufbau kommen Schutz-, Wurzelschutz-, Drän-, Filter- und Vegetationsschicht dazu.",
+      "Genutzte Dachflächen sind Flächen für den Aufenthalt von Personen — also Terrassen, Balkone, Loggien —, Flächen zur Aufstellung von Anlagen wie Solaranlagen sowie Flächen für die intensive Dachbegrünung. Gefällelose Dachflächen erfordern besondere Abdichtungsmaßnahmen.",
+      "Beim nicht belüfteten oder einschaligen Dach liegt der Dachaufbau unmittelbar auf der Unterkonstruktion. Die Dampfsperre wird unterhalb der Wärmedämmung angebracht — sie soll Tauwasserbildung innerhalb der Wärmedämmschicht verhindern. Die Dachabdichtung wird über der Wärmedämmschicht verlegt und erhält einen Oberflächenschutz.",
+      "Die Schichtenfolge von oben nach unten: 1 Oberflächenschutz, zum Beispiel eine Kiesschüttung, 2 Dachabdichtung, 3 Wärmedämmschicht, 4 Dampfsperre, 5 Tragschicht beziehungsweise Unterkonstruktion. Das Kennzeichen dieses Aufbaus in einem Satz: Dampfsperre unter der Dämmung, Abdichtung über der Dämmung.",
+      "Das Umkehrdach dreht genau diese Reihenfolge um: Dort liegt die Wärmedämmung über der Abdichtung, und die Abdichtung wirkt gleichzeitig als Dampfsperre. Zulässig sind nur Dämmstoffe, die kein Wasser aufnehmen, zum Beispiel Polystyrol-Extruderschaum. Die Einzelheiten dazu stehen in der eigenen Lektion zum Umkehrdach."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l07",
+    "lernfeld": "lf10",
+    "thema": "Umkehrdach",
+    "titel": "Das Umkehrdach: Dämmung über der Abdichtung",
+    "inhalt": [
+      "Auf der Baustelle erkennst du das Umkehrdach daran, dass du die Dämmplatten auf die fertige Abdichtung legst statt darunter. Wer diese Reihenfolge verwechselt, baut das Dach falsch auf.",
+      "Das Umkehrdach ist ein nicht belüftetes Dach, bei dem die Wärmedämmung über der Abdichtung verlegt wird. Dadurch ist die Dachabdichtung gleichzeitig Dampfsperre und liegt im Bereich geringer Temperaturschwankungen. Der Name kommt daher, dass die übliche Schichtenfolge umgekehrt ist.",
+      "Weil die Dämmung oberhalb der wasserführenden Abdichtung liegt, sind nur Dämmstoffe geeignet, die kein Wasser aufnehmen und formbeständig sind — zum Beispiel Polystyrol-Extruderschaum, kurz XPS. Der Wärmeverlust ist beim Umkehrdach größer als beim normalen unbelüfteten Flachdach, deshalb muss die Wärmedämmschicht dicker gewählt werden.",
+      "Die Wärmedämmung wird durch Kies oder Plattenbeläge abgedeckt. Diese Auflast schützt sie gegen UV-Strahlung und verhindert das Aufschwimmen. Zwischen Dämmung und Auflast liegt eine Filterschicht, zum Beispiel ein Kunststoffvlies: Sie verhindert das Einschlämmen von Feinteilen.",
+      "Schichtenfolge von oben nach unten: Auflast aus Kies oder Plattenbelag, Filtervlies, Wärmedämmung aus XPS, Trennschicht, Dachabdichtung — die zugleich Dampfsperre ist — und darunter die Unterkonstruktion mit einem Gefälle von mindestens 2 Prozent.",
+      "Der Vorteil ist die geschützte Lage der Abdichtung: Sie liegt unter der Dämmung und ist damit vor Temperaturschwankungen und vor mechanischer Beschädigung geschützt. Der Preis dafür ist der höhere Wärmeverlust, den du über die dickere Dämmschicht ausgleichst."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l08",
+    "lernfeld": "lf10",
+    "thema": "Schichten im Flachdachaufbau",
+    "titel": "Voranstrich, Trennschicht, Dampfsperre, Dampfdruckausgleich",
+    "inhalt": [
+      "Diese Schichten liegen alle unter der eigentlichen Abdichtung und entscheiden trotzdem darüber, ob sie hält: Sie sorgen für Haftung, gleichen den Untergrund aus, halten Wasserdampf fern und lassen die Abdichtung sich bewegen.",
+      "Der Voranstrich, auch Haftbrücke genannt, wird mit Bitumenlösung oder Bitumenemulsion aufgetragen — durch Streichen, Rollen oder Spritzen. Er verbessert die Haftfähigkeit der darauffolgenden Schicht und bindet Staubteilchen an der Oberfläche. Wichtig: Er muss durchgetrocknet sein, bevor du weitere Schichten verlegst.",
+      "Die Trenn- und Ausgleichsschicht überbrückt kleine Schwind- und Spannungsrisse in der Unterkonstruktion. Außerdem schützt sie die folgenden Lagen vor Rauigkeit und vor chemischen Einflüssen aus der Unterkonstruktion. Verlegt wird sie lose oder punkt- beziehungsweise streifenweise verklebt.",
+      "Die Dampfsperre verhindert das Eindringen von Wasserdampf und damit die Kondenswasserbildung im Dachaufbau. Ihr Platz ist zwischen Unterkonstruktion und Wärmedämmschicht. Merksatz: Dampfsperre unter die Dämmung, damit im Dämmstoff kein Kondenswasser anfällt.",
+      "Dampfsperrbahnen kannst du lose verlegen, punkt-, streifenweise oder vollflächig verkleben. Die Überdeckungen der Bahnen werden vollflächig verbunden. An Anschlüssen wird die Dampfsperre an die Wärmedämmschicht angeschlossen. Soll sie zusätzlich die Luftdichtheit des Gebäudes sicherstellen, müssen die Anschlüsse sehr sorgfältig ausgeführt werden.",
+      "Die Dampfdruckausgleichsschicht gleicht Dampfdruckunterschiede in der Dachfläche aus, etwa durch Feuchtigkeit unter der Dachabdichtung, und ermöglicht Temperaturbewegungen der Dachabdichtung. Erreicht wird das durch eine zusammenhängende Luftschicht unterhalb der Abdichtung. Ohne diese Luftschicht könnte eingeschlossene Feuchtigkeit bei Erwärmung Blasen bilden.",
+      "Diese Luftschicht entsteht dadurch, dass die erste Lage der Dachabdichtung nur punkt- beziehungsweise streifenweise verklebt oder lose verlegt wird: 3 bis 4 tellergroße Klebepunkte je Quadratmeter oder 3 bis 4 Klebestreifen pro Meter Bahnbreite. Die Überdeckungen werden voll verklebt."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l09",
+    "lernfeld": "lf10",
+    "thema": "Bitumen",
+    "titel": "Bitumen: Herkunft, Kennwerte, Eigenschaften",
+    "inhalt": [
+      "Bitumen ist auf dem Flachdach zugleich Klebstoff und Dichtstoff. Wenn du weißt, woher es kommt und wie seine Kennwerte gemessen werden, verstehst du auch, warum eine Sorte weich bleibt und eine andere in der Sonne standfest ist.",
+      "Bitumen ist ein Erdölprodukt. Bei der fraktionierten Destillation von Erdöl verdampfen die meisten Bestandteile; die leichtflüchtigen werden unter Normdruck und im Vakuum abdestilliert. Der schwerflüchtige Rest, der dabei zurückbleibt, wird als Destillationsbitumen bezeichnet.",
+      "Die Sorten unterscheiden sich durch ihre Härte, und die wird über die Penetration bestimmt: Unter genormten Bedingungen misst man die Eindringtiefe einer Prüfnadel in Zehntel Millimeter. Der Buchstabe B kennzeichnet die Bitumensorte. B 80 heißt also: Die Prüfnadel ist 8,0 Millimeter eingedrungen.",
+      "Den Erweichungspunkt bestimmst du nach dem Ring-und-Kugel-Versuch. Dabei wird gemessen, bei welcher Temperatur eine in einen Ring eingegossene Bitumenschicht unter der Belastung einer Stahlkugel eine bestimmte Verformung erreicht hat. Zwei Kennwerte, zwei Versuche: Penetration für die Härte, Ring und Kugel für den Erweichungspunkt.",
+      "Bläst man Luft in heißes, flüssiges Destillationsbitumen, eventuell unter Zugabe anderer Erdölfraktionen, entstehen Oxidationsbitumen — auch geblasene Bitumen genannt. Durch dieses Verfahren erhalten sie bei gleicher Härte eine höhere Temperaturfestigkeit und eine größere Elastizität.",
+      "Die wichtigsten Eigenschaften sind das thermoplastische Verhalten, die gute Haftfähigkeit und die Wasserundurchlässigkeit. Thermoplastisch heißt hier ganz praktisch: Bei zunehmender Temperatur wird Bitumen erst plastisch und bei 150 bis 230 Grad Celsius flüssig.",
+      "Chemisch ist Bitumen bei normalen Temperaturen in hohem Maße beständig gegen anorganische und organische Säuren, gegen anorganische und organische Salze, gegen aggressive Wässer, Kalilaugen und Alkalien. Von anderen Erdölfraktionen wie Benzin und Benzol und von manchen organischen Lösungsmitteln wird es dagegen gelöst.",
+      "Polymerbitumen ist Bitumen, das durch Elastomer- oder Plastomerzusätze modifiziert wurde. Durch feinverteiltes Vermischen bitumenverträglicher hochpolymerer Stoffe lassen sich Sprödigkeitsverhalten und Temperaturfestigkeit günstig beeinflussen. Elastomerbitumen PYE ist bei tiefen Temperaturen elastisch und flexibel, mit Kaltbiegeverhalten bis minus 25 Grad; Plastomerbitumen PYP ist thermoplastisch und geschmeidig."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l10",
+    "lernfeld": "lf10",
+    "thema": "Kunststoffbahnen",
+    "titel": "Kunststoff- und Elastomerbahnen: Sorten, Dicken, Nähte",
+    "inhalt": [
+      "Kunststoff- und Elastomerbahnen dichten das Flachdach ab. Auf der Baustelle brauchst du zwei Dinge sicher: Welche Bahn du vor dir hast — das steht in der Kurzbezeichnung — und wie du die Nähte dicht bekommst.",
+      "Hochpolymere Bahnen sind in der Regel 1,3 bis 2,5 Millimeter dick, 1 bis etwa 2 Meter breit und 10 bis 25 Meter lang. Damit sie sich besser verarbeiten lassen, werden sie häufig mit Glasvlies, Polyestervlies oder Polypropylenvlies kaschiert und durch Glasgewebe oder Polyestergewebe verstärkt.",
+      "Bitumenbeständige Bahnen sind oft schwarz oder weiß, nicht bitumenbeständige grau. Bitumenbeständig heißt dabei nur: Die Bahn darf mit Bitumen in Kontakt kommen — nicht, dass du sie mit Bitumen verkleben kannst. Eine Trennlage, zum Beispiel Rohglasvlies, wird nötig, wenn brennbare Wärmedämmstoffe gegen Flugfeuer und Wärmestrahlung zu schützen sind oder wenn die Unterkonstruktion mit dem Material der Dichtungsbahn nicht verträglich ist.",
+      "Die Kurzbezeichnungen sind genormt: E steht für Einlage, GG für Glasgewebe beziehungsweise Glasgittergelege, TPB für thermoplastische Beschichtung, SK für selbstklebebeschichtet, PBS für Polymerbitumenschicht. EPDM steht für Ethylen-Propylen-Dien-Terpolymer, ECB für Ethylencopolymerisat-Bitumen.",
+      "Mindestnenndicken bei einlagiger Verlegung, gekennzeichnet mit DE: ECB 2,0 Millimeter; PVC-P 1,8; EPDM-E-GG-TPB-SK/PBS und EPDM-E-GG-TPB-BV je 1,6; EVA/EVAC-BV, FPO-BV, PIB und PVC-P K,V,E je 1,5; EPDM-K-BV 1,3 Millimeter.",
+      "Nahtverbindungen stellst du bei Kunststoffbahnen durch Quellschweißen, Heißluftschweißen, Heizkeilschweißen oder Dichtungsbänder her. Elastomerbahnen werden durch Kontaktklebstoffe oder Dichtungsbänder verbunden. Industriell vorgefertigte Nahtverbindungen entstehen durch Hochfrequenzschweißen und Heißvulkanisieren.",
+      "Die Mindestüberdeckung der Kunststoffbahnen beträgt 4 Zentimeter. Beim Quellschweißverfahren wird der Kunststoff durch spezielle Lösungsmittel, die Quellschweißmittel, angelöst und durch Zusammendrücken verbunden. Die Schweißbreite muss dabei mindestens 3 Zentimeter betragen.",
+      "Beim Heißluft- und beim Heizkeilschweißen werden die Bahnen erwärmt und plastifiziert und anschließend durch Druck homogen verbunden. Die Schweißbreite beträgt hier mindestens 2 Zentimeter, bei ECB-Bahnen 3 Zentimeter. Drei Zahlen zum Merken: 4 Zentimeter Überdeckung, 3 Zentimeter beim Quellschweißen, mindestens 2 Zentimeter beim Heißluft- und Heizkeilschweißen.",
+      "Verdunstende Quellschweißmittel sind explosionsgefährlich und gesundheitsschädlich — gefährlich ist also der Dampf, der beim Verarbeiten entsteht. Deshalb dürfen sie nur im Freien oder in gut durchlüfteten Räumen verarbeitet werden. Rauchen und offenes Feuer sind dabei verboten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l11",
+    "lernfeld": "lf10",
+    "thema": "Flüssigabdichtungen",
+    "titel": "Flüssigabdichtungen aus Kunstharz",
+    "inhalt": [
+      "Eine Flüssigabdichtung wird nicht als Bahn verlegt, sondern flüssig aufgetragen und erhärtet erst auf dem Dach. Deshalb musst du hier andere Dinge im Kopf haben als bei Bahnen: das Harzsystem, die Armierung und die Zeiten, bis die Fläche wieder belastbar ist.",
+      "Flüssigabdichtungen werden aus flüssigen Abdichtungssystemen auf Kunstharzbasis mit einer Kunststoffvliesarmierung hergestellt. Sie bestehen also aus flüssig aufgetragenen Kunstharzen mit Vliesarmierung, die später erhärten. Die Armierung muss mindestens 110 Gramm je Quadratmeter wiegen.",
+      "Verwendet werden drei Harzarten: PMMA, also Polymethylmethacrylat; UP, das ungesättigte Polyesterharz, als Ein- oder Zweikomponentensystem, kurz 1K und 2K; und PUR, das Polyurethanharz, als Zweikomponentensystem. Diese drei Abkürzungen solltest du auflösen können.",
+      "Flüssigabdichtungen gelten als einlagige Abdichtung. Die Mindestdicke beträgt 2,1 Millimeter, die Nutzungsdauer 25 Jahre in der Klasse W3. Als Sonderfälle nennt die Quelle befahrene, begrünte und erdüberschüttete Flächen sowie Flächen mit einer Wasseranstauhöhe über 10 Zentimeter — ob diese Fälle geeignet oder ungeeignet sind, widerspricht sich in der Quelle. Der Erklärungstext sagt: nicht geeignet.",
+      "Die Aushärtezeiten bei 20 Grad Celsius unterscheiden sich deutlich. PMMA: Aushärtung 30 Minuten, regensicher nach 30 Minuten, begehbar nach 1 Stunde. UP: Aushärtung 60 Minuten, regensicher nach 60 Minuten, begehbar nach 2 Stunden. PUR: Aushärtung 72 Stunden, regensicher nach 4 bis 8 Stunden, begehbar nach 8 Stunden.",
+      "PUR ist damit das langsamste der drei Systeme, PMMA das schnellste. Bei PUR-1K-Systemen erfolgt die Aushärtung durch eine relativ langsame Reaktion infolge der Luftfeuchtigkeit — daher die lange Zeit bis zur vollständigen Aushärtung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l12",
+    "lernfeld": "lf10",
+    "thema": "Windsogsicherung",
+    "titel": "Windsog: Bereiche, Lasten und die drei Sicherungsarten",
+    "inhalt": [
+      "Wind zieht am Flachdach nach oben, nicht nach unten. Ohne Lagesicherung hebt er die Abdichtung ab — deshalb entscheidet dieses Thema darüber, wie viel Auflast, Kleber oder wie viele Befestiger du an welcher Stelle des Daches brauchst.",
+      "Die Größe der Windbelastung hängt ab von der Lage des Gebäudes, der Gebäudehöhe, der Dachform, der Attikahöhe und -form und der Dachneigung. Deutschland ist dafür in vier Windzonen eingeteilt: Zone 1 mit 22,5 Meter je Sekunde mittlerer Windgeschwindigkeit, Zone 2 mit 25,0, Zone 3 mit 27,5 und Zone 4 mit 30,0. Für küstennahe Gebiete bis 5 Kilometer landeinwärts und für die Inseln gelten höhere Werte.",
+      "Besonders am Dachrand- und Eckbereich treten große Windsogkräfte auf. Nach DIN 1055-4 werden die Flachdachbereiche mit Buchstaben bezeichnet: F für die Eckbereiche, G für den Außenrand, H für den Innenbereich, I für den Innenrand. Dabei ist h die Gebäudehöhe, b die Gebäudeabmessung quer zum Wind und d die Abmessung in Windrichtung; für e gilt e = b oder e = 2h, maßgebend ist der kleinere Wert.",
+      "Bei geschlossenen Gebäuden bis 25 Meter Höhe kann die Sicherung gegen Abheben infolge Windsog auf drei Wegen erfolgen: durch Auflasten, durch Verkleben auf der Unterlage oder durch mechanische Befestigung. Für höhere Gebäude muss ein statischer Einzelnachweis erbracht werden.",
+      "Für lose verlegte Dachabdichtungen und eine Dachneigung bis höchstens 3 Grad kann die Lagesicherung durch Auflast erfolgen. Als Auflast kommen infrage: Kiesschüttung 16/32 Millimeter, 5 Zentimeter dick; Betonplattenbelag mindestens 40 mal 40 mal 4 Zentimeter; Betonplatten mit maximal 2,5 mal 2,5 Meter; Betonformsteine oder Aufschüttungen aus Vegetationssubstraten.",
+      "Die Verklebung wird nach Dachbereich abgestuft. Heißbitumen: Innenbereich 10 Prozent, Innenrand 20, Außenrand 30, Eckbereich 40 Prozent. Kaltbitumen: 2, 3, 3 und 4 Streifen je Meter. PUR-Kleber: 4, 5, 6 und 8 Streifen je Meter. Zu den Mengen widerspricht sich die Quelle: Der Erklärungstext der Verklebungstabelle nennt etwa 100 Gramm je Meter und Streifen für Kaltbitumen und etwa 40 Gramm für PUR-Kleber; die Musterlösung derselben Aufgabe ordnet 100 Gramm dem Heißbitumen und 40 Gramm dem Kaltbitumen zu. Sicher sind nur die beiden Zahlen 100 und 40 Gramm je Meter und Streifen — die Zuordnung ist in der Quelle nicht eindeutig.",
+      "Bei Nagelung von Bitumenbahnen gelten diese Reihenabstände: Innenbereich H und Innenrand I je 90 Zentimeter, Außenrand G und Eckbereich F je 45 Zentimeter — zum Rand hin also der halbe Abstand. Kann die Dämmschicht nicht gleichzeitig mitbefestigt werden, muss sie getrennt gesichert werden, mechanisch oder durch Kleben.",
+      "Mechanische Befestiger werden gleichmäßig angeordnet und mit zusätzlichen Dachbahnstreifen überdeckt. Ihre Anzahl ist für die verschiedenen Bereiche der Dachfläche im Einzelfall zu ermitteln, soll aber mindestens 2 Stück je Quadratmeter betragen. Geeignet sind korrosionsgeschützte Einzelbefestiger mit Eignungsnachweis und bauaufsichtlicher Zulassung oder korrosionsgeschützte Breitkopfstifte mit extra großem Flachkopf und ausreichendem Schaft.",
+      "Außer gegen Abheben müssen die Schichten der Dachabdichtung auch gegen Abgleiten infolge horizontaler Kräfte gesichert sein — nötig bei lose verlegter einlagiger Abdichtung, bei nicht vollflächig verklebten Abdichtungen auf Stahltrapezprofilen und bei Dächern mit mehr als 3 Grad Gefälle. Ein Dachrand mit Attika ist für die Windlastbeanspruchung günstig: Die Attika mindert die Windsogspitzen am Dachrand ab."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l13",
+    "lernfeld": "lf10",
+    "thema": "Materialbedarf",
+    "titel": "Materialbedarf rechnen und Flachdachschichten zeichnen",
+    "inhalt": [
+      "Bevor die Kolonne aufs Dach geht, musst du wissen, wie viele Rollen, wie viel Kies und wie viel Voranstrich du brauchst — sonst fehlt Material oder du bezahlst Reste. Genau dafür rechnest du Deckfläche, Rollenzahl und Verbrauchsmengen aus.",
+      "Die sichtbare Deckfläche einer Dachbahn stimmt nicht mit der verarbeiteten Bahnenfläche überein — sie ist um die Überdeckungen an Stoß und Naht geringer. Deshalb zwei Formeln: verarbeitete Materialmenge = Bahnenlänge mal Bahnenbreite; sichtbare Deckfläche = (Bahnenlänge minus Überdeckung Stoß) mal (Bahnenbreite minus Überdeckung Naht). Dazu kommt ein Verschnitt von in der Regel 3 bis 5 Prozent.",
+      "Rechne das Buchbeispiel einmal mit: Bahn 10,00 m lang, 1,00 m breit, Überdeckung am Stoß 0,10 m, an der Naht 0,08 m. Materialmenge = 10,00 mal 1,00 = 10,00 Quadratmeter. Deckfläche = (10,00 minus 0,10) mal (1,00 minus 0,08) = 9,90 mal 0,92 = 9,108 Quadratmeter. Ein Quadratmeter Material ergibt also 0,9108 Quadratmeter Deckfläche.",
+      "Die Rollenzahl bekommst du in zwei Schritten. Erst die gesamte Deckfläche: Dachfläche mal Anzahl der Lagen mal (1 plus Verschnitt geteilt durch 100). Dann teilst du diese Gesamtfläche durch die Deckfläche je Rolle. In der Praxis rundest du auf ganze Rollen auf.",
+      "Für die Randausbildung kommt an jeder Seite ein Zuschlag dazu, im Buchbeispiel 20 cm. Gesamtlänge = Dachlänge plus zweimal Randzuschlag, Gesamtbreite = Dachbreite plus zweimal Randzuschlag, abzudichtende Fläche = beides malgenommen. Die abzudichtende Fläche ist damit größer als die reine Dachgrundfläche.",
+      "Bitumenhaltige Massen in Kilogramm je Quadratmeter: Voranstrich 0,3; Bürstenstreichverfahren 1,5; Gießverfahren 1,8; Deckanstrich 1,8. Die Menge rechnest du als Fläche mal Bedarf je Quadratmeter. Wie viel Voranstrich wirklich draufgeht, hängt von der Oberflächenbeschaffenheit des Untergrundes ab.",
+      "Kies rechnest du in Kubikmetern: Menge = Fläche mal Schütthöhe in Metern. Bei 5 cm Schütthöhe sind das 0,05 Kubikmeter je Quadratmeter. Für eine Besplittung rechnest du überschlägig 5 Kilogramm je Quadratmeter.",
+      "Den Plattenbedarf je Quadratmeter erhältst du, indem du 1 Quadratmeter durch die Plattenfläche teilst. Platten 50 mal 100 cm haben 0,50 Quadratmeter, macht 2 Stück je Quadratmeter. Platten 60 mal 60 cm haben 0,36 Quadratmeter, macht rechnerisch 2,78 Stück. Die Buchtabelle nennt dafür 1,33 — das passt rechnerisch nicht, rechne im Zweifel selbst.",
+      "In der Schnittdarstellung bekommt jede Flachdachschicht ihr eigenes Symbol: Holz, Beton bewehrt oder unbewehrt, Haftgrund, Klebemasse vollflächig oder teilflächig, Dampfsperre, Trenn- und Ausgleichsschicht, Bitumenbahnen, Kunststoff- und Elastomerbahnen. Als Zubehör kommen Verbundblech, mechanische Befestigungsmittel, Trenn- und Schutzlage sowie Spachtel- und Fugenmasse dazu, dazu Wärmedämmschicht mit Kaschierung und Oberflächenschutz mit Besplittung oder Kiesschüttung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l14",
+    "lernfeld": "lf10",
+    "thema": "Bitumenbahnen",
+    "titel": "Bitumenbahnen: Aufbau, Trägereinlagen, Kurzzeichen",
+    "inhalt": [
+      "Auf dem Flachdach liegt die Abdichtung meistens aus Bitumenbahnen — und auf jeder Rolle steht eine Kurzbezeichnung. Wenn du die lesen kannst, weißt du, welche Bahn nach unten, welche in die Zwischenlage und welche nach oben gehört.",
+      "Eine Bitumenbahn besteht aus einer Trägereinlage mit beidseitiger Deckmasse aus Oxidations- oder Polymerbitumen und einer Bestreuung aus mineralischen Stoffen. Die Trägereinlage armiert die Bahn: Sie bestimmt die mechanischen Eigenschaften und das Verarbeitungsverhalten. Die drei Bestandteile in dieser Reihenfolge merken.",
+      "Trägereinlagen mit ihrer flächenbezogenen Masse: Glasvlies V 60 g/m², Glasgewebe G 200 g/m², Polyestervlies PV 200 g/m², Kombinationsträgereinlage mit über 50 Prozent Glasanteil KTG 120 g/m², mit über 50 Prozent Polyesteranteil KTP 120 g/m². Die Kupferverbundeinlage VCu hat 60 g/m² Glasvlies und eine Verbundfolie über 0,03 mm.",
+      "Metallbänder aus Kupfer, Kurzzeichen Cu 0,1 und VCu, sind Trägereinlagen für besondere Anwendungen. Ihre Aufgabe: Durchwurzelungsschutz bei begrünten Flachdächern. Kupfer in der Bahn dient dem Schutz gegen Wurzeln.",
+      "Die Bitumenart steckt im Kurzzeichen. PYE steht für Elastomerbitumen, also Bitumen, das mit thermoplastischen Elastomeren modifiziert ist. PYP steht für Plastomerbitumen, modifiziert mit thermoplastischen Kunststoffen. Dazu: KSP ist eine kaltselbstklebende Polymerbitumenbahn mit Trägereinlage, S mit Zahl eine Schweißbahn mit Dickenangabe in Millimetern, DD eine Dachdichtungsbahn.",
+      "Der Anwendungstyp sagt, wo die Bahn hingehört. DE: Bahnen für die einlagige Dachabdichtung. DO: Bahnen für die Oberlage einer mehrlagigen Dachabdichtung. DU: Bahnen für die untere Lage einer mehrlagigen Dachabdichtung. DZ: Bahnen für die Zwischenlage beziehungsweise eine zusätzliche Lage.",
+      "Die Kurzbezeichnung liest du immer in derselben Reihenfolge: Anwendungstyp, Polymerbitumenart, Trägereinlage, Bahnenart, Bahnendicke. Beispiel DO / PYE – G 200 S4: Oberlage einer mehrlagigen Dachabdichtung, Elastomerbitumen, Glasgewebeeinlage mit 200 g/m², Schweißbahn mit 4 mm Dicke.",
+      "Die Abstreuung besteht in der Regel aus mineralischen Stoffen und soll verhindern, dass die aufgerollten Bahnen zusammenkleben. Verwendet werden Quarzsand mit einer Körnung von etwa 0,2 bis 0,6 mm, Talkum — pulverförmig gemahlener Speckstein, vor allem bei Schweißbahnen — und Schiefersplitt mit einer Korngröße von etwa 1 bis 3 mm.",
+      "Schiefersplitt liegt meist oben auf der letzten Bahn der Abdichtung. Er schützt die Oberfläche vor Witterungseinflüssen und dient der Oberflächengestaltung. Wegen seiner plättchenförmigen Struktur entsteht dabei eine fast lückenlose Mineralschicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l15",
+    "lernfeld": "lf10",
+    "thema": "Verarbeitung Bitumenbahnen",
+    "titel": "Bitumenbahnen verlegen: Überdeckung, Nähte, Verklebung",
+    "inhalt": [
+      "Dicht wird das Dach nicht durch die Bahn allein, sondern durch die richtige Verlegerichtung, ausreichende Überdeckung und eine saubere, volle Verklebung. Genau daran entscheidet sich, ob später Wasser durchkommt.",
+      "Die Bahnen werden in Gefällerichtung verlegt, Kreuzstöße sind dabei zu vermeiden. An Abschlüssen und Einbauteilen darf die Überdeckung auch gegen den Wasserlauf erfolgen. Die Lagen kannst du mit normaler Überdeckung verlegen oder im Verband in einem Arbeitsgang.",
+      "Die Überdeckung der Bitumenbahnen muss mindestens 8 cm betragen. Bei einlagiger Abdichtung sind es mindestens 10 cm. Die Quernahtbreite beträgt jeweils mindestens 10 cm. Also: 8 cm ist der Normalfall, 10 cm gilt für einlagig und für die Quernaht.",
+      "Nahtverbindungen bei einlagig verlegten Polymerbitumenbahnen stellst du mit Flamme im Schmelzverfahren her — Mindestbreite der Längsnaht 8 cm — oder durch Warmgasschweißen, dann reichen 6 cm. Die Quernaht bleibt in beiden Fällen bei mindestens 10 cm.",
+      "Die wichtigste Voraussetzung für eine dauerhafte Abdichtung ist die volle Verklebung der Lagen. Dafür gibt es drei Verfahren: Gießverfahren, Schweißverfahren und Kaltselbstverklebung. Das Bürstenstreichverfahren wird heute nicht mehr angewendet.",
+      "Beim Gießverfahren gießt du erhitzte Bitumenklebemasse vor die aufgerollte Bahn. Beim Aufrollen muss ein Klebemassenwulst entstehen, und an den Rändern muss die Klebemasse sichtbar herausquellen — das ist deine Sichtkontrolle für die vollflächige Verklebung. Das ausgetretene Bitumen wird glatt gestrichen oder mit Bestreuungsmaterial abgestreut.",
+      "Beim Schweißverfahren wird die Bitumenschweißbahn mit offener Flamme erhitzt. Die angeschmolzene Bahn rollst du unter Druck mit dem Wickelkern ab, sodass eine vollflächige Verklebung entsteht. Bei Arbeiten mit offener Flamme sind Brandschutzmaßnahmen erforderlich.",
+      "Kurzcheck ohne Buch: In welche Richtung verlegst du die Bahnen und was vermeidest du dabei? Wie groß ist die Überdeckung normal, einlagig und an der Quernaht? Wie breit ist die Längsnaht beim Schmelzverfahren mit Flamme und beim Warmgasschweißen? Welche drei Verklebeverfahren gibt es? Woran siehst du beim Gießen, dass es vollflächig klebt?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l16",
+    "lernfeld": "lf10",
+    "thema": "Wärmedämmschicht",
+    "titel": "Wärmedämmung im Flachdach: Typen, Dicken, Verlegen",
+    "inhalt": [
+      "Die Dämmschicht hält die Wärme im Gebäude und muss gleichzeitig das aushalten, was über ihr passiert — Abdichtung, Bewitterung, Begehen zur Wartung. Deshalb entscheidet der Dachaufbau, welcher Dämmstoff überhaupt infrage kommt.",
+      "Wärmedämmstoffe für Flachdächer müssen den Anwendungstypen DAA oder DUK entsprechen. DAA heißt Dämmung unter Abdichtung, DUK heißt Dämmung unter der Bewitterung ausgesetzt. Welcher Dämmstoff geeignet ist, hängt vom Dachaufbau und von der Dachnutzung ab.",
+      "Liegt die Dämmschicht über der Abdichtung, also beim Umkehrdach, brauchst du Dämmstoffe mit geringer Wasseraufnahme. Typisch dafür ist Polystyrol-Extruderhartschaum, kurz XPS. Zusätzlich muss durch die Entwässerung eine Stauwasserbildung verhindert werden.",
+      "Auf Trapezprofilen hängt die Mindestdämmstoffdicke von der lichten Weite zwischen den Obergurten ab. Die Tabellenwerte für EPS, PUR, Schaumglas und Mineralfaser in Millimetern: lichte Weite 70 mm ergibt 40/40/40/50; 100 ergibt 50/50/50/80; 150 ergibt 70/60/70/120; 160 ergibt 80/70/80/120; 170 ergibt 90/80/90/140; 180 ergibt 100/80/90/140.",
+      "So liest du die Tabelle: erst die lichte Weite in der Zeile suchen, dann die Spalte deines Dämmstoffs. Beispiel: 150 mm lichte Weite mit EPS ergibt 70 mm Mindestdicke. Auffällig ist, dass Mineralfaser durchgehend die größten Dicken braucht.",
+      "Wärmedämmplatten sollen mit Fugenversatz verlegt werden. Ergeben sich durch Maßabweichungen oder Temperaturänderungen Fugen von mehr als 5 mm, müssen diese im Wärmenachweis berücksichtigt werden. Beträgt die Dämmschichtdicke mehr als 160 mm, sollten stumpf gestoßene Dämmplatten mehrlagig verlegt werden.",
+      "Wärmedämmstoffe aus Mineralwolle darfst du bei nicht genutzten Dachflächen ohne lastverteilende Schichten verwenden, wenn ihre Druckfestigkeit mehr als 60 kN/m² beträgt. Im Bereich von Wartungs- oder Montagewegen sind dann trotzdem lastverteilende Schichten vorzusehen.",
+      "Kurzcheck ohne Buch: Was bedeuten DAA und DUK? Welcher Dämmstoff kommt beim Umkehrdach zum Einsatz und warum? Welche Mindestdicke braucht EPS bei 150 mm lichter Weite? Ab welcher Dämmschichtdicke wird mehrlagig verlegt? Ab welcher Druckfestigkeit geht Mineralwolle ohne lastverteilende Schicht?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l17",
+    "lernfeld": "lf10",
+    "thema": "Unterkonstruktionen",
+    "titel": "Unterkonstruktionen und das belüftete Flachdach",
+    "inhalt": [
+      "Die Abdichtung ist nur so gut wie das, worauf sie liegt: Die Unterlage muss einen stetig verlaufenden, ebenen und sauberen Untergrund bilden. Sonst zeichnen sich Unebenheiten und Bewegungen früher oder später in der Abdichtung ab.",
+      "Als Unterlage für Dachabdichtungen kommen Stahlbetondecken, Betonfertigteilplatten, Stahltrapezprofile sowie Schalungen aus Holz oder Holzwerkstoffen infrage. Es ist also nicht auf einen Baustoff festgelegt — entscheidend ist, dass die Unterlage die Anforderungen an Ebenheit und Sauberkeit erfüllt.",
+      "Vollholzschalungen werden aus Brettern der Sortierklasse S10 mit einer Nenndicke von 24 mm und einer Breite von höchstens 160 mm hergestellt, und zwar aus luftrockenen, gespundeten Nut- und Federbrettern. Mit chemischen Holzschutzmitteln behandelte Bretter dürfen die Dachabdichtung nicht schädigen, sonst ist eine Trennlage aufzubringen.",
+      "Schalungsplatten aus Holzwerkstoffen haben eine Nenndicke von 22 mm und eine Kantenlänge von höchstens 2,05 m; verwendet werden Typ P5 oder P7, BFU 100 G sowie OSB/3 oder OSB/4. Wichtig: Die Längenänderung durch Quellen von 1 bis 2 mm je Meter musst du über die Fugenausbildung berücksichtigen.",
+      "Die Fugen bei Holzwerkstoffschalungen werden mit Trennstreifen abgedeckt, und über der Schalung sollte eine Trennschicht angeordnet werden. Merke die Kette: quellender Holzwerkstoff, deshalb Fugen einplanen, Fugen abdecken, Trennschicht darüber.",
+      "Stahltrapezprofile brauchen eine Mindestdicke von 0,88 mm. Ihre Obergurte müssen eine ebene Fläche bilden; die Höhe benachbarter Obergurte darf um höchstens 2 mm abweichen. Bei verklebten Dachkonstruktionen darf die Durchbiegung infolge der Eigenlast 3 mm nicht überschreiten.",
+      "Beim belüfteten Flachdach ist nur eine Querlüftung durch den Wind möglich. Der Grund: Es fehlt der Höhenunterschied zwischen Be- und Entlüftungsöffnungen, der beim Steildach zusätzlich eine Luftbewegung erzeugt. Die Belüftung ist damit schwächer als beim geneigten Dach.",
+      "Deshalb sollte die Belüftung durch eine diffusionshemmende Unterkonstruktion mit einem s_d-Wert von mindestens 100 m entlastet werden. Die Lüftungshöhe sollte bei Flachdächern mindestens 10 cm betragen; bei ungünstigen Windbedingungen, sehr flachen Dächern und großen Sparrenlängen werden größere Höhen erforderlich."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l18",
+    "lernfeld": "lf10",
+    "thema": "Begrünte Flachdächer",
+    "titel": "Begrünte Flachdächer: Aufbau, Lasten, Wurzelschutz",
+    "inhalt": [
+      "Auf einem begrünten Dach liegt zusätzlich Erde, Wasser und Pflanzenwuchs auf der Abdichtung — das bringt Gewicht auf die Konstruktion und Wurzeln an die Abdichtung. Beides musst du beim Aufbau einplanen.",
+      "Bei der extensiven Begrünung werden niedrig wachsende Pflanzen mit einer Wuchshöhe bis etwa 15 cm verwendet. Bei der intensiven Begrünung kommen größere Pflanzen zum Einsatz: kleine Bäume, Sträucher und Stauden. Diese wurzeln tiefer und brauchen dickere Bodenaufbauten, höheren Wasseranstau und regelmäßige Pflege.",
+      "Die zusätzlichen Lasten betragen bei extensiver Begrünung etwa 400 bis 2500 N/m². Bei intensiver Begrünung können sie über 10000 N/m² betragen — also ein Vielfaches. Die Standsicherheit muss durch die Begrünung statisch nachgewiesen werden.",
+      "Der Pflanzenbewuchs erfordert zusätzliche Schichten. Von unten nach oben sind das: Schutzschicht über der Abdichtung, Wurzelschutzschicht, Dränschicht, Filterschicht und Vegetationsschicht. Diese fünf Begriffe in dieser Reihenfolge sind der Kern des Gründachaufbaus.",
+      "Der Schutz vor Durchwurzelung wird durch Wurzelschutzbahnen in der obersten Abdichtungslage sichergestellt. Besonders sorgfältig musst du im Bereich von An- und Abschlüssen arbeiten, damit die Wurzeln die Abdichtung nicht hinterwachsen.",
+      "Passend dazu gibt es Bitumenbahnen mit Kupfer-Metallbändern als Trägereinlage, Kurzzeichen Cu 0,1 und VCu. Genau diese werden als Durchwurzelungsschutz bei begrünten Flachdächern eingesetzt. Für die Schutzschicht über der Abdichtung eignen sich unter anderem Kunststoffvliese über 300 g/m² und Dränagebauplatten.",
+      "Kurzcheck ohne Buch: Wodurch unterscheiden sich extensive und intensive Begrünung? Welche Wuchshöhe gilt als Grenze für extensiv? Welche Lasten setzt du für beide Varianten an? Welche fünf zusätzlichen Schichten nennst du von unten nach oben? Womit sicherst du den Durchwurzelungsschutz und wo ist er besonders heikel?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l19",
+    "lernfeld": "lf10",
+    "thema": "Oberflächenschutz",
+    "titel": "Oberflächenschutz und Schutzlagen auf der Abdichtung",
+    "inhalt": [
+      "Die Abdichtung selbst hält Wasser ab, aber nicht Sonne, Hitze und Trittbelastung. Genau dafür liegt der Oberflächenschutz darüber — er verlängert die Lebensdauer der Abdichtung.",
+      "Der Oberflächenschutz vermindert Temperaturschwankungen und schützt vor mechanischer Beschädigung sowie vor direkter Sonneneinstrahlung.",
+      "Der leichte Oberflächenschutz besteht aus fabrikmäßig bestreuten oder besplitteten Dachbahnen. Bei der Besplittung wird in der Regel Schiefersplitt dicht in eine Bitumenklebemasse eingestreut. Der Schutz kommt hier also schon ab Werk mit der Bahn aufs Dach.",
+      "Der schwere Oberflächenschutz besteht bei nicht genutzten Dachflächen aus Kies mit einer Körnung von 16 bis 32 mm; bei genutzten Flächen kommen Plattenbeläge infrage. Kies schützt zusätzlich gegen Flugfeuer und strahlende Wärme und sichert die Abdichtung gegen abhebende Windkräfte, also gegen Windsog.",
+      "Die Kiesschüttung wird gleichmäßig und mindestens 5 cm dick aufgebracht. Für die Menge rechnest du mit Fläche mal Schütthöhe in Metern — bei 5 cm sind das 0,05 Kubikmeter je Quadratmeter. Für eine Besplittung rechnest du überschlägig 5 Kilogramm je Quadratmeter.",
+      "Schutzlagen werden oberhalb der Abdichtung flächig verlegt und schützen sie vor mechanischer Beschädigung oder Durchwurzelung. Geeignet sind Kunststoffvliese über 300 g/m², PVC-Bahnen ab 1,0 mm Dicke, Gummimatten ab 6 mm, Kunststoffgranulat ab 4 mm sowie Dränagebauplatten.",
+      "Kurzcheck ohne Buch: Welche drei Aufgaben hat der Oberflächenschutz? Woraus besteht der leichte, woraus der schwere Oberflächenschutz? Welche Körnung und welche Mindestdicke hat die Kiesschüttung? Wogegen schützt Kies zusätzlich? Welche vier Materialien nennst du für Schutzlagen mit ihren Mindestwerten?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf10-l20",
+    "lernfeld": "lf10",
+    "thema": "Kunststoffe",
+    "titel": "Kunststoffe: Plastomere, Duromere, Elastomere",
+    "inhalt": [
+      "Kunststoffe stecken am Dach in Bahnen, Profilen, Klebern und Dämmstoffen. Für dich als Verarbeiter zählt vor allem eine Frage: Lässt sich das Material schweißen oder nicht? Die Antwort hängt an der Kunststoffgruppe.",
+      "Der für die Verarbeitung wichtigste Gesichtspunkt ist das physikalische Verhalten. Nach ihrem Temperaturverhalten unterscheidet man drei Gruppen: Plastomere, auch Thermoplaste genannt, Duromere, auch Duroplaste genannt, und Elastomere. Diese Dreiteilung ist die Grundordnung, alles andere hängt daran.",
+      "Plastomere sind warm verformbar, schweißbar und schmelzbar. Außerdem lassen sie sich bohren, sägen und fräsen. Kunststoffbahnen, die du mit Heißluft oder Heizkeil verschweißt, gehören zu den Plastomeren. Bitumenschweißbahnen werden zwar ebenfalls mit der Flamme verschweißt, gehören aber nicht zu den Kunststoffen.",
+      "Duromere erweichen beim Erwärmen nicht. Sie lassen sich nur sägen, bohren, fräsen und kleben — schweißbar sind sie nicht, löslich ebenfalls nicht. Der Name hilft beim Merken: lateinisch durus heißt hart.",
+      "Elastomere sind aufgrund ihrer Struktur auch bei normalen Temperaturen elastisch. Zwischen den vernetzten Makromolekülen liegt eine so große Maschenweite, dass das Material bei Zimmertemperatur nachgibt. Wichtige Elastomere sind Butylkautschuk, Ethylen-Propylen-Dien-Kautschuk und Polyurethanschaum.",
+      "Kurzcheck ohne Buch: Nach welchem Kriterium teilt man Kunststoffe in die drei Gruppen ein und wie heißen sie mit beiden Namen? Welche Gruppe ist schweißbar? Welche Bearbeitungsarten bleiben bei Duromeren übrig? Was macht Elastomere bei Zimmertemperatur elastisch und welche drei Beispiele kennst du?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

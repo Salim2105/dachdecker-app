@@ -54,5 +54,313 @@
     "quelle": "KMK-Rahmenlehrplan Dachdecker 2016, LF 11; Rathscheck (Wandbekleidung, Deckbilder)",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 246' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Deckbild anreißen: Schnurabstand und Sprungmaß'><line x1='30' y1='48' x2='250' y2='48' stroke='currentColor' stroke-width='0.8' stroke-dasharray='5 4'/><line x1='30' y1='80' x2='250' y2='80' stroke='currentColor' stroke-width='0.8' stroke-dasharray='5 4'/><line x1='30' y1='112' x2='250' y2='112' stroke='currentColor' stroke-width='0.8' stroke-dasharray='5 4'/><line x1='30' y1='144' x2='250' y2='144' stroke='currentColor' stroke-width='0.8' stroke-dasharray='5 4'/><rect x='40' y='118' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='92' y='118' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='144' y='118' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='66' y='86' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='118' y='86' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='170' y='86' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='40' y='54' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='92' y='54' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><rect x='144' y='54' width='44' height='28' fill='none' stroke='currentColor' stroke-width='1.4'/><line x1='258' y1='112' x2='258' y2='144' stroke='#c07d4a' stroke-width='1.1'/><line x1='258' y1='112' x2='259.5' y2='117.8' stroke='#c07d4a' stroke-width='1.1'/><line x1='258' y1='112' x2='256.5' y2='117.8' stroke='#c07d4a' stroke-width='1.1'/><line x1='258' y1='144' x2='256.5' y2='138.2' stroke='#c07d4a' stroke-width='1.1'/><line x1='258' y1='144' x2='259.5' y2='138.2' stroke='#c07d4a' stroke-width='1.1'/><text x='249' y='132.2' fill='#c07d4a' font-size='12' text-anchor='end' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Abstand</text><line x1='40' y1='166' x2='66' y2='166' stroke='#c07d4a' stroke-width='1.1'/><line x1='40' y1='166' x2='45.8' y2='164.5' stroke='#c07d4a' stroke-width='1.1'/><line x1='40' y1='166' x2='45.8' y2='167.5' stroke='#c07d4a' stroke-width='1.1'/><line x1='66' y1='166' x2='60.2' y2='167.5' stroke='#c07d4a' stroke-width='1.1'/><line x1='66' y1='166' x2='60.2' y2='164.5' stroke='#c07d4a' stroke-width='1.1'/><text x='53.0' y='159.0' fill='#c07d4a' font-size='12' text-anchor='middle' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Sprungmaß</text><text x='18' y='201' fill='currentColor' font-size='12'>Nur angerissen laufen die Fugen über die ganze Fassade</text><text x='18' y='218' fill='currentColor' font-size='12'>in Flucht.</text></svg>"
+  },
+  {
+    "id": "lf11-l05",
+    "lernfeld": "lf11",
+    "thema": "Verankerung",
+    "titel": "Verankerung: Dübel, Abstände und Eigenlast",
+    "inhalt": [
+      "Die ganze Fassade hängt am Ende an den Dübeln in der Wand — deshalb entscheidet die Verankerung darüber, ob deine Bekleidung an der Wand bleibt. In der Regel werden dafür Dübel-Schrauben-Kombinationen oder Ankerschienen verwendet.",
+      "In Beton, Vollziegeln und Kalksandvollsteinen beträgt die Mindestverankerungstiefe der Dübel 50 mm, 60 mm bzw. 70 mm — passend zu Dübeldurchmessern von 10 mm, 12 mm bzw. 14 mm. Die Richtung merkst du dir leicht: dickerer Dübel, tiefere Verankerung.",
+      "In Hohlblocksteinen oder Lochziegeln greift ein normaler Dübel schlecht. Dort musst du spezielle Spreizdübel mit mindestens 90 mm Verankerungstiefe verwenden. Die Bohrlöcher müssen mindestens 10 mm tiefer gebohrt werden, und das Bohrmehl ist vorher zu entfernen.",
+      "Den Dübelabstand d rechnest du aus dem Lattenabstand a und der erforderlichen Dübelanzahl n je m²: d = 1 geteilt durch (a mal n). Beispiel bei Lattenabstand 0,65 m: Eckbereich mit 3,5 Dübel/m² ergibt d = 1/(0,65 · 3,5) = 0,44 m, Normalbereich mit 2,5 Dübel/m² ergibt 0,61 m.",
+      "Für die Holzunterkonstruktion gilt eine Mindestlattenbreite von b größer gleich 6 mal Dübeldurchmesser. Bei einem 10-mm-Dübel ist die Latte also mindestens 60 mm breit, bei einem 14-mm-Dübel mindestens 84 mm.",
+      "An den Gebäudeecken treten größere Windkräfte auf, deshalb ist dort die erforderliche Dübelanzahl je m² höher als im Normalbereich. Bis zu einer Gebäudebreite von 20 m darfst du den Eckbereich vereinfacht mit 4 m annehmen.",
+      "Zur Verankerung gehört auch die Eigenlast der Bekleidung. Schiefer auf Schalung 0,60 kN/m², Schiefer auf Lattung 0,45 kN/m². Ebene Faserzementplatten, Faserzementkurzwellplatten und Faserzementpaneele auf Lattung liegen wie Titanzink, Kupfer und Edelstahl auf Schalung bei 0,35 kN/m².",
+      "Bei den schwereren Bekleidungen liegen Dachziegel und Dachsteine bei 0,60 kN/m². Biberschwanzziegel und ebene Dachsteine aus Beton im Biberformat in Doppel- und Kronendeckung haben mit 0,75 kN/m² den höchsten der genannten Werte."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l06",
+    "lernfeld": "lf11",
+    "thema": "Wandbekleidung mit Faserzement",
+    "titel": "Faserzement an der Wand: Deckarten und Plattenbedarf",
+    "inhalt": [
+      "Mit Faserzementplatten kannst du eine Wand in sehr unterschiedlichen Mustern bekleiden. Für die Kalkulation zählt vor allem eins: Deckart und Format zusammen bestimmen, wie viele Platten du je Quadratmeter brauchst.",
+      "An der Wand sind mit Faserzementplatten diese Deckarten möglich: Doppeldeckung, deutsche Deckung, geschlaufte Deckung, waagerechte Deckung, Stülpdeckung, Spitzschablonendeckung und Wabendeckung.",
+      "In der Bedarfstabelle suchst du deshalb immer zuerst die Deckart und erst danach das Format. Gleiches Format in einer anderen Deckart heißt anderer Plattenbedarf — und oft auch eine andere Lattenmenge je m².",
+      "Deutsche Deckung mit hängender Ferse: Format 20 × 20 cm ergibt 39,1 Stück/m², 25 × 25 cm ergibt 29,8, 30 × 30 cm ergibt 18,32 und 40 × 40 cm ergibt 9,0 Stück/m². Der Schnürabstand ist dabei S = H − HÜ.",
+      "Doppeldeckung im halben Verband: Quadrat 30 × 30 cm ergibt 24,7 Stück/m² und 7,41 m/m² Lattung, Quadrat 40 × 40 cm ergibt 13,6 Stück/m² und 5,41 m/m². Rechteck 20 × 40 cm ergibt 27,1, Rechteck 30 × 60 cm ergibt 11,7 und geschlitzte Platten 60 × 20 cm ergeben 19,6 Stück/m².",
+      "Gezogene Doppeldeckung: Quadrat 30 × 30 cm mit Überdeckung 4/4 cm ergibt 14,8 Stück/m², Quadrat 40 × 40 cm ergibt 7,8, Rechteck 20 × 40 cm ergibt 17,4 und Rechteck 30 × 60 cm ergibt 6,9 Stück/m² bei 3,6 m/m² Lattung.",
+      "Nimm das Format 30 × 30 cm als Probe: Doppeldeckung im halben Verband 24,7 Stück/m², deutsche Deckung 18,32 Stück/m², gezogene Doppeldeckung 14,8 Stück/m². Nimm das Format 30 × 30 cm als Probe: Doppeldeckung im halben Verband 24,7 Stück/m², deutsche Deckung 18,32 Stück/m², gezogene Doppeldeckung 14,8 Stück/m². Dieselbe Platte — und in der Doppeldeckung im halben Verband brauchst du rund 67 % mehr Platten als in der gezogenen Doppeldeckung. Deshalb schlägst du in der Bedarfstabelle immer zuerst die Deckart nach."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l07",
+    "lernfeld": "lf11",
+    "thema": "Fassadenplatten",
+    "titel": "Fassadenplatten: Formate, Schnurabstände, Lattung",
+    "inhalt": [
+      "Mit Fassadenplatten bekleidest du eine Wand in wenigen großen Reihen. Damit die Platten an den Rändern und an der Attika aufgehen, musst du Schnurabstände, Feldzahl und Randfelder vor dem ersten Nagel ausrechnen.",
+      "Faserzementfassadenplatten werden in den Breiten 400 mm, 415 mm und 1570 mm hergestellt, ihre Mindestdicke beträgt 6 mm. Die kleinen Formate haben eine Fläche unter 0,4 m² und zählen deshalb nach DIN 18517, Teil 1, zu den kleinformatigen Fassadenplatten.",
+      "Faserzementpaneele sind dagegen brettförmige Elemente unter 30 cm Breite mit einer Mindestdicke von 10 mm; die Unterstützungsabstände müssen kleiner als 80 cm sein. Standardformat ist 3600 × 190 mm. Verlegt werden sie als Stülpdeckung, mit offener Fuge oder als Boden-Deckel-Schalung.",
+      "Der Traglattenabstand ist Plattenbreite plus Fuge, zum Beispiel 415 mm + 5 mm = 420 mm. Genauso ergibt sich der senkrechte Schnurabstand. Verlegt wird als Stülpdeckung mit 5 mm senkrechter Fuge, die Höhenüberdeckung beträgt 35 mm.",
+      "Der waagerechte Schnurabstand ist S = H − HÜ. Bei 415 × 1570 mm sind das 1570 − 35 = 1535 mm, bei 415 × 1250 mm 1250 − 35 = 1215 mm. Beide Reihen zusammen ergeben 2750 mm — für 5,50 m Wandhöhe brauchst du von jedem Format also zwei Reihen.",
+      "Feldzahl = Wandbreite geteilt durch senkrechten Schnurabstand. Buchbeispiel: 6240 mm / 420 mm = 14,85. Ausgeführt werden 13 volle Felder mit 420 mm plus zwei Randfelder. Für die Randfelder bleiben 6240 − (13 · 420 + 5) = 775 mm, also je 387,5 mm.",
+      "Aus n Feldern werden immer n + 1 Lattenreihen. Aus 13 Feldern also 14 Reihen: 14 · 5,50 m = 77 m Traglatte, dazu zwei Randlatten mit 2 · 5,50 m = 11 m.",
+      "Den Nagelbedarf rechnest du über die Plattenzahl. Beispiel: 2 Reihen mit je 15 Platten sind 30 Platten je Format. Bei 14 Spezialnägeln je Platte sind das 420 Stück, bei 12 Nägeln je Platte 360 Stück — zusammen 780 Nägel."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l08",
+    "lernfeld": "lf11",
+    "thema": "Fassadentafeln",
+    "titel": "Fassadentafeln und Anschlussdetails",
+    "inhalt": [
+      "Fassadentafeln sind die großformatigen Deckelemente an der Fassade. Genauso wichtig wie die Fläche selbst sind die Details drumherum: Fugen, Sockel, Gebäudeecken und Attika — dort wird angeschlossen, gelüftet und abgedeckt.",
+      "Fassadentafeln sind mindestens 8 mm dick. Ihre Abmessungen sind nicht genormt: Sie werden so gewählt, dass gängige Geschosshöhen von 2,75 m und Brüstungshöhen von 1,25 m nach Besäumen und Zuschneiden mit geringem Verschnitt erreicht werden.",
+      "Fassadentafeln aus Faserzement müssen ebenflächig und rechtwinklig sein. Sie sind hochgepresst und oberflächenvergütet — also kunststoff- oder mineralbeschichtet — und haben bearbeitete oder unbearbeitete Kanten. Gefordert wird außerdem: frostbeständig, wasserdicht und biegefest.",
+      "Damit keine Zwängungen durch Wärmedehnung entstehen, werden Fassadentafeln mit waagerechten und senkrechten Fugen von 8 bis 10 mm verlegt. Die Fugen werden mit Fugenbändern hinterlegt oder mit Deckstreifen bzw. Deckprofilen abgedeckt.",
+      "Die Anschlüsse rundherum: Der Sockel wird durch ein Lüftungsprofil abgeschlossen. Gebäudeecken und seitliche Abschlüsse werden mit unterlegten Kunststoffwinkeln geschlossen. Attikaabschlüsse werden mit Metallprofilen überdeckt. Fenster und Türen verkleidest du mit zugeschnittenen Fassadenplatten.",
+      "Halte die drei Bauteile mit ihren Mindestdicken auseinander: Fassadentafeln großformatig ab 8 mm, Faserzementfassadenplatten ab 6 mm (davon zählen nur die Formate unter 0,4 m² als kleinformatig), Faserzementpaneele brettförmig ab 10 mm. Drei Bauteile, drei Zahlen — und das dickste ist ausgerechnet das schmalste."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l09",
+    "lernfeld": "lf11",
+    "thema": "Deutsche Deckung",
+    "titel": "Deutsche Deckung an der Wand: Ecken und Giebelflächen",
+    "inhalt": [
+      "Die deutsche Deckung führst du an der Wand mit Schiefer oder Faserzement aus. Zwei Dinge brauchst du dafür zusätzlich zum Deckschema: die Eckausbildung und die Rechnung für eine dreieckige Giebelfläche.",
+      "An der Wand kann die Deckung aus Schiefer oder Faserzement ohne Gebindesteigung verlegt werden. Für die Eckausbildung hast du zwei Wege: eingebundene Anfang- und Endortdeckung oder aufgelegte Randplatten im Format 30 × 15 cm.",
+      "Aufgelegte Randplatten verlegst du mit mindestens 5 cm Höhenüberdeckung und 5 cm seitlicher Überdeckung. Zweimal fünf Zentimeter, einmal nach oben und einmal zur Seite — das ist die Zahl, die du dir hier merken musst.",
+      "Ein Giebel ist ein Dreieck, also Fläche = Breite mal Höhe geteilt durch 2. Beispiel: 8,00 m · 4,00 m / 2 = 16,00 m². Von dieser Fläche ziehst du anschließend die Strackortfläche und die Fensterfläche ab.",
+      "Die Länge einer Giebelschräge rechnest du mit Pythagoras: S = Wurzel aus ((Breite/2)² + Höhe²). Beispiel: Wurzel aus ((8,00/2)² + 4,00²) = Wurzel aus (16 + 16) = 5,66 m.",
+      "Plattenzahl = Deckfläche mal Bedarf je m², danach Bruch und Verhau zuschlagen. Beispiel: 9,4 m² · 39,1 Stück/m² = 368 Stück; 3 % Bruch und Verhau sind 12 Stück; insgesamt 380 Bogenschnittschablonen 20/20.",
+      "Die 39,1 Stück/m² stammen aus der Bedarfstabelle für die deutsche Deckung mit hängender Ferse im Format 20 × 20 cm. Änderst du das Format, änderst du den Bedarf: 25 × 25 cm ergibt 29,8, 30 × 30 cm ergibt 18,32, 40 × 40 cm ergibt 9,0 Stück/m²."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l10",
+    "lernfeld": "lf11",
+    "thema": "Rechteckdoppeldeckung",
+    "titel": "Rechteckdoppeldeckung: Deckfläche, Schnurabstände, Lattung",
+    "inhalt": [
+      "Wenn du eine Wand mit Rechteckplatten aus Schiefer oder Faserzement bekleidest, hängt fast alles an einer Formel: der sichtbaren Deckfläche einer Platte. Aus ihr folgen Plattenbedarf, Schnurabstände und am Ende die Lattenmenge.",
+      "Ausgeführt wird auf Schalung oder Lattung im halben Verband. Die Platten werden ohne Seitenüberdeckung verlegt, zwischen ihnen bleibt eine Stoßfuge von 3 bis 6 mm. Doppelt gedeckt ist die Wand, weil das dritte Gebinde das erste noch überdeckt — um 2 cm bei Nagelung, um 6 cm bei Klammerbefestigung.",
+      "Deckfläche einer Platte: A = ((H − HÜ) / 2) · B. Beispiel mit Schieferplatten 35 × 25 cm und 6 cm Höhenüberdeckung: ((35 − 6)/2) · 25 = 14,5 · 25 = 362,5 cm². Das Teilen durch 2 kommt von der doppelten Lage.",
+      "Plattenbedarf je m²: n = 10000 cm²/m² geteilt durch die sichtbare Plattenfläche. Im Beispiel 10000 / 362,5 = 27,6 Stück/m². Die 10000 sind nur die Umrechnung von einem Quadratmeter in Quadratzentimeter.",
+      "Zwei Schnurabstände musst du auseinanderhalten. Waagerecht: S = (H − HÜ)/2, im Beispiel 14,5 cm. Senkrecht im halben Verband: halbe Steinbreite plus halbe Stoßfuge, bei 25 cm Breite und 5 mm Fuge also 12,5 cm + 0,25 cm = 12,75 cm.",
+      "Feldeinteilung in der Breite: 840 cm / 12,75 cm = 65,88, gerundet 66 Felder. Danach rechnest du den Abstand zurück: 840 / 66 = 12,72 cm ausgeglichener Schnurabstand. Der Ausgleich kann auch über die Fugenbreite laufen.",
+      "Konterlatten: 840 cm / 65 cm maximalem Abstand = 12,9, aufgerundet 13 Felder; tatsächlicher Abstand 840 / 13 = 64,6 cm. Wichtig ist der Sprung am Ende: 13 Felder ergeben 14 Lattenreihen, also Felder plus eins.",
+      "Lattenmenge: 14 Reihen · 4,20 m = 58,80 m; 3 % Verschnitt sind 1,80 m; Konterlatten insgesamt 60,60 m.",
+      "Traglatten je m²: l = 100 cm/m geteilt durch den waagerechten Schnurabstand. Im Beispiel 100 / 14,5 = 6,9 m/m². Bei 35,28 m² Wandfläche sind das 243,5 m, plus 3 % Verschnitt (7,3 m) rund 251 m Traglatten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l11",
+    "lernfeld": "lf11",
+    "thema": "Stülpdeckung",
+    "titel": "Stülpdeckung: Deckschema und Materialbedarf",
+    "inhalt": [
+      "Bei der Stülpdeckung wird die obere Plattenreihe über die untere gestülpt — daher der Name. Du brauchst sie als eigene Deckart an der Wand und außerdem bei Faserzement-Fassadenplatten, die als Stülpdeckung verlegt werden.",
+      "Die Platten werden nur mit Höhenüberdeckung verlegt, eine Seitenüberdeckung gibt es nicht. Stattdessen bleiben senkrechte Stoßfugen von 3 bis 5 mm, die mit Fugendichtungsstreifen hinterlegt werden. Bei Faserzement-Fassadenplatten beträgt die Höhenüberdeckung 35 mm.",
+      "Waagerechter Schnurabstand: S = H − HÜ. Beispiel mit 30 cm hohen Platten und 3,5 cm Höhenüberdeckung: 30 − 3,5 = 26,5 cm. Gebindezahl = Wandhöhe geteilt durch Schnurabstand: 450 cm / 26,5 cm = 16,9, also 17 Gebinde.",
+      "17 Gebinde mal 26,5 cm ergeben 450,5 cm — einen halben Zentimeter zu viel für die 450 cm hohe Wand. Der Ausgleich erfolgt durch eine etwas größere Höhenüberdeckung. Also: erst runden, dann über die Überdeckung ausgleichen.",
+      "Senkrechter Schnurabstand im halben Verband: halbe Steinbreite plus halbe Stoßfuge. Bei Platten 60 × 30 cm mit 4 mm Fuge sind das 30 cm + 0,2 cm = 30,2 cm. Die Felder teilst du von der Wandmitte aus ein.",
+      "Plattenbedarf: Fassadenfläche mal Verbrauch je m², dann Bruch und Verhau. Beispiel: 10,80 m · 4,50 m = 48,6 m²; 48,6 · 6,3 Stück/m² = 307 Stück; 3 % Bruch und Verhau sind 10 Stück; zusammen 317 Platten 30/60.",
+      "Aus der Plattenzahl folgt der Rest des Materials. Nägel: 5 Stück je Platte · 307 Platten = 1535 Nägel. Fugenstreifen: einer je Platte, also ebenfalls 307 Stück. Eckprofile im Buchbeispiel: 2 · 4,50 m = 9 m."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l12",
+    "lernfeld": "lf11",
+    "thema": "Waagerechte Deckung",
+    "titel": "Waagerechte Deckung: Deckfläche, Stifte und Latten",
+    "inhalt": [
+      "Bei der waagerechten Deckung bekommen die Platten sowohl eine Höhen- als auch eine Seitenüberdeckung. Genau das steckt in ihrer Formel für die Deckfläche — und daraus fällt der ganze Materialbedarf heraus.",
+      "Bei der waagerechten Deckung werden Schiefer- oder Faserzementplatten im Querformat gedeckt, mit Höhen- und Seitenüberdeckung. Werden dieselben Platten im Hochformat gedeckt, spricht man von geschlaufter Deckung. Die Gebinde werden als Auslaufgebinde gedeckt.",
+      "Deckfläche einer Platte = (Höhe − Überdeckung) · (Breite − Überdeckung). Beispiel mit Platten 60 × 30 cm und 4 cm Überdeckung: (30 − 4) · (60 − 4) = 26 · 56 = 1456 cm². Beide Male wird abgezogen, weil in beide Richtungen überdeckt wird.",
+      "Plattenzahl = Wandfläche in cm² geteilt durch Deckfläche. Beispiel: 12,50 m · 6,50 m = 81,25 m² = 812500 cm²; 812500 / 1456 = 558 Stück. Dazu 5 % Bruch und Verhau, also 28 Stück — insgesamt 586 Faserzementplatten 60 × 30 cm.",
+      "Schieferstifte: 2 Stück je Platte. 2 · 558 = 1116 Stück; 2 % Verlust sind 23 Stück; zusammen 1139 Schieferstifte 28/35. Umgerechnet in Masse: bei 416 Stiften je kg sind das 1139 / 416 = 2,8 kg.",
+      "Traglatten: Schnurabstand S = H − HÜ, im Beispiel 30 − 4 = 26 cm. Lattreihen = Wandhöhe / Schnurabstand + 1 = 6,50 m / 0,26 m + 1 = 26 Reihen. 26 · 12,50 m = 325 m; 6 % Verschnitt sind 20 m; insgesamt 345 m Traglatten 40/60."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l13",
+    "lernfeld": "lf11",
+    "thema": "Holzschindelbedarf",
+    "titel": "Holzschindelbedarf: Rechnen in Breitenmetern",
+    "inhalt": [
+      "Holzschindeln rechnest du nicht in Stück, sondern in Breitenmetern (Bm). Der Grund: Holzschindeln haben unterschiedliche Breiten, eine exakte Stückzahl wäre gar nicht zu ermitteln.",
+      "Ein Breitenmeter ist die Menge Holzschindeln, die bei einer Holzfeuchtigkeit von etwa 20 % auf 1 m ohne Fugen nebeneinandergelegt werden kann. Wichtig: Verlegefugen sind darin nicht berücksichtigt. Bm ist damit das Liefermaß, nicht das fertige Verlegemaß.",
+      "Divisionsverfahren: L = Deckfläche geteilt durch Reihenabstand. Beispiel: 201,63 m² / 0,125 m = 1613,04 Bm. Der Wert 0,125 m stammt aus der Deckung selbst: Bei 400 mm langen Holzschindeln und dreilagiger Deckung beträgt der maximale Reihenabstand 125 mm.",
+      "Multiplikationsverfahren: L = Deckfläche mal Quadratmeterbedarf in Bm/m². Beispiel: 201,63 m² · 8,00 Bm/m² = 1613,04 Bm — dasselbe Ergebnis, weil 1 geteilt durch 0,125 m genau 8,00 Bm/m² ergibt.",
+      "Beide Verfahren sind also dieselbe Rechnung von zwei Seiten. Steht in der Aufgabe der Reihenabstand, teilst du. Steht dort der Quadratmeterbedarf in Bm/m², multiplizierst du. Kontrollieren kannst du dich, indem du den einen Wert in den anderen umrechnest.",
+      "Auf den Grundbedarf kommt noch der Verschnitt: etwa 5 bis 15 %. Und wenn der maximal zulässige Reihenabstand kleiner wird, steigt der Schindelgrundbedarf — nach L = Deckfläche / Reihenabstand braucht der halbe Reihenabstand die doppelte Menge.",
+      "Geliefert wird in Bund. Bundzahl = Grundbedarf geteilt durch Breitenmeter je Bund. Beispiel: 1613,04 Bm / 18,3 Bm je Bund = 88,15 Bund, aufgerundet 89 Bund. In der Praxis wird immer auf ganze Bund aufgerundet."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l14",
+    "lernfeld": "lf11",
+    "thema": "Grundlagen",
+    "titel": "Vorgehängte Fassade: Aufbau und Grundbegriffe",
+    "inhalt": [
+      "Auf der Baustelle ist die Fassadenbekleidung der Wetterschutz der Außenwand: Sie schützt vor Witterungseinflüssen und verhindert, dass Regen- und Schneewasser die Wand durchfeuchten. Weil die Wand trocken bleibt, behält sie ihre Wärmedämmfähigkeit. Die Bekleidung ersetzt die Wärmedämmung nicht — die Wärmedämmschicht ist im Aufbau eine eigene Schicht.",
+      "Außenwandbekleidungen werden als vorgehängte Fassaden ausgeführt. Dazu gehören: Wärmedämmschicht (wenn vorgesehen), Verankerung an der tragenden Wand, tragende Unterkonstruktion mit Verbindungsmitteln, Luftschicht, Fassadenbekleidung mit Befestigungsmitteln und Ergänzungsteile für An- und Abschlüsse. Sechs Teile — die Liste lernst du am besten am Stück.",
+      "Die Schichtenfolge von innen nach außen: 1 tragende Wand, 2 Wärmedämmschicht, 3 Luftschicht, 4 Fassadenbekleidung auf der Unterkonstruktion. Die Luftschicht ist mindestens 20 mm dick. Die Luft steigt darin auf und führt den Wasserdampf nach oben ab.",
+      "Drei Begriffe, ein Unterschied — wo sitzen die Lüftungsöffnungen? Hinterlüftet: Öffnungen oben und unten. Belüftet: nur am unteren Abschluss. Luftdurchlässig: Die Luft entweicht durch die Fugen zwischen den Bekleidungselementen. Bei der hinterlüfteten Bekleidung wird der Wasserdampf abgeführt, bevor er den Taupunkt erreicht — so entsteht kein Kondenswasser.",
+      "Kleinformatige Platten sind über zwei Grenzwerte gleichzeitig definiert: Fläche kleiner als 0,4 m² und Masse kleiner als 5 kg. Beide Bedingungen gehören zusammen, nicht nur die Fläche und nicht nur das Gewicht. Merk dir das Zahlenpaar 0,4 und 5.",
+      "Fassadenbekleidung, Unterkonstruktion, Befestigungsmittel und Dämmstoffe müssen je nach Gebäudehöhe bestimmten Baustoffklassen entsprechen: A sind nichtbrennbare Baustoffe, B1 schwer entflammbare, B2 normal entflammbare. Die Reihenfolge ergibt sich aus den Begriffen selbst — nichtbrennbar, schwer entflammbar, normal entflammbar.",
+      "Kurzcheck ohne Buch: Welche Aufgabe hat eine Fassadenbekleidung? Nenne die sechs Bestandteile einer Außenwandbekleidung. Wie heißen die vier Schichten von innen nach außen? Wodurch unterscheiden sich hinterlüftet, belüftet und luftdurchlässig? Ab welcher Fläche und welcher Masse ist eine Platte nicht mehr kleinformatig? Wofür stehen A, B1 und B2?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l15",
+    "lernfeld": "lf11",
+    "thema": "Wärmedämmschicht",
+    "titel": "Dämmung an der Fassade: Anforderungen und Dämmdicke rechnen",
+    "inhalt": [
+      "Die Wärmedämmschicht ist der Teil der Außenwandbekleidung, der den Wärmeschutz bringt. Hier lernst du, welche Eigenschaften der Dämmstoff mitbringen muss und wie du die erforderliche Dämmstoffdicke in vier Rechenschritten bestimmst — vom geforderten U-Wert bis zu den Zentimetern auf der Wand.",
+      "Ein Dämmstoff für die Außenwandbekleidung soll drei Dinge mitbringen: geringe Wärmeleitfähigkeit (geringe Dichte durch hohen Luftporenanteil und Diffusionsoffenheit), Witterungs- und Fäulnisbeständigkeit sowie geringe Feuchtigkeitsaufnahme, nach Möglichkeit wasserabweisend.",
+      "Erster Schritt: Aus dem geforderten Wärmedurchgangskoeffizienten U wird der erforderliche Wärmedurchlasswiderstand. Die Formel lautet R erforderlich = 1 geteilt durch U erforderlich. Beispiel: 1 geteilt durch 0,24 W/(m²·K) ergibt 4,2 m²·K/W.",
+      "Zweiter Schritt: den vorhandenen Widerstand der Wand aufsummieren. Für jede Schicht gilt R = Dicke geteilt durch Wärmeleitfähigkeit. Beispiel: 2 cm Außenputz 0,02/1,0 = 0,02; 20 cm Stahlbeton 0,20/2,0 = 0,10; 1,5 cm Kalkgipsmörtel 0,015/0,70 rund 0,02. Zusammen R vorhanden = 0,14 m²·K/W.",
+      "Dritter Schritt: die Bestimmungsgleichung R erforderlich = R si + R vorhanden + R gesucht + R se nach der Dämmung auflösen. Weil R gesucht = Dicke geteilt durch Lambda ist, folgt: d Dämmung = (R erforderlich − R si − R vorhanden − R se) mal Lambda des Dämmstoffs. R si und R se sind die Wärmeübergangswiderstände.",
+      "Vierter Schritt: einsetzen. Mit R erforderlich = 4,2, R si = 0,13, R vorhanden = 0,14 und R se = 0,04 bleiben 3,89 m²·K/W übrig. Mal Lambda 0,035 W/(m·K) ergibt das 0,136 m, also 13,6 cm Dämmstoffdicke. Rechne in Metern, dann kommt die Dicke direkt in Metern heraus.",
+      "Befestigt wird die Wärmedämmung durch Kleben oder mit Dämmstoffdübeln. Die Platten werden dabei dicht gestoßen verlegt, und die Stöße werden versetzt angeordnet.",
+      "Kurzcheck ohne Buch: Welche drei Eigenschaften soll der Dämmstoff haben? Wie kommst du von U auf R erforderlich? Wie rechnest du den Wärmedurchlasswiderstand einer einzelnen Schicht? Wie lautet die Formel für die Dämmstoffdicke? Und womit werden die Dämmplatten an der Wand befestigt?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l16",
+    "lernfeld": "lf11",
+    "thema": "Wandbekleidung mit Schiefer",
+    "titel": "Schiefer an der Wand: Deckarten, Formate, Schnurabstände",
+    "inhalt": [
+      "An der Wand deckst du Schiefer nach denselben Deckarten wie am Dach, aber mit einem entscheidenden Unterschied — und mit eigenen Formaten und Schnurabstandsformeln. Genau die brauchst du, um eine Fassade sauber einzuteilen und anzuschlagen.",
+      "Für Wandflächen können dieselben Deckarten wie für Dachflächen angewendet werden, allerdings werden Wandbekleidungen ohne Gebindesteigung gedeckt. Zusätzlich möglich sind die gezogene Rechteckdoppeldeckung, die waagerechte Deckung, die Wabendeckung und weitere Ornamentdeckungen mit Ziersteinen.",
+      "Die Formate hängen an der Deckart: Für Rechteckdeckungen werden Schiefer bis 40 × 25 cm verwendet, für die altdeutsche Deckung und die Schuppendeckung Schiefer bis 26 cm Höhe. Zwei Zahlenangaben für zwei Deckartgruppen — 40 × 25 und 26.",
+      "Werden die Schiefer auf einer Holzwerkstoffschalung befestigt, muss eine Vordeckung vorgesehen werden, zum Beispiel eine besandete Dachbahn V13 mit einer Mindestüberdeckung von 4 cm. Auch Holzschalungen lassen sich mit einer Vordeckung vor Feuchtigkeit schützen.",
+      "Bei der altdeutschen Deckung und der Schuppendeckung als Wandbekleidung beträgt die Höhenüberdeckung 4 cm. Die Seitenüberdeckung ist dagegen kein fester Wert: Sie hängt von der Steinhöhe und von der Hiebart ab.",
+      "Der Schnurabstand S hängt an der Deckart. Rechteckdoppeldeckung im halben Verband: S = (H − HÜ) geteilt durch 2. Gezogene Rechteckdoppeldeckung: ebenfalls (H − HÜ) geteilt durch 2. Waagerechte und geschlaufte Deckung: S = H − HÜ. Dabei ist H die Steinhöhe und HÜ die Höhenüberdeckung.",
+      "Besonderheit der Rechteckdoppeldeckung im halben Verband: Das dritte Gebinde überdeckt das erste um 2 cm bei Nagelung und um 6 cm bei Klammerbefestigung. Eine Seitenüberdeckung entfällt hier — verlegt wird mit einer Stoßfuge von 3 bis 6 mm.",
+      "Kurzcheck ohne Buch: Was ist der Hauptunterschied zwischen Wandbekleidung und Dachdeckung? Bis zu welchem Format werden Schiefer bei Rechteckdeckungen verwendet? Welche Vordeckung braucht eine Holzwerkstoffschalung? Wie groß ist die Höhenüberdeckung bei der altdeutschen Deckung an der Wand? Und wie lauten die drei Schnurabstandsformeln?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l17",
+    "lernfeld": "lf11",
+    "thema": "Keramische Fassadenbekleidung",
+    "titel": "Keramik an der Fassade: Erzeugnisse, Unterkonstruktion, Sockelabstand",
+    "inhalt": [
+      "Keramik an der Wand heißt: keramische Platten und Dachziegel senkrecht verbauen. Damit das hält und trocken bleibt, musst du die Unterkonstruktion und die Hinterlüftung richtig anlegen. Diese Lektion bringt dir die Erzeugnisse, die Mindestmaße der Unterkonstruktion und die Abstände am Sockel.",
+      "Verwendet werden keramische Platten und Dachziegel. Keramische Platten entstehen im Stempelpressverfahren, Ziegelplatten im Strangpressverfahren. Als Dachziegel kommen Falzziegel, Krempziegel, Biberschwanzziegel oder Hohlpfannen infrage. Dazu kommen Dachsteine, und zwar seitenverfalzte Dachsteine in Einfachdeckung.",
+      "Befestigt wird die Wandbekleidung auf einer Unterkonstruktion aus Holz, auf einer Holzwerkstoffschalung oder auf einer Metallunterkonstruktion. Für Holz gelten zwei Mindestmaße: Traglattung mindestens 14 cm² Querschnitt, Schalung mindestens 24 mm Dicke. Schalungen sollten eine Vordeckung mit Unterdeckbahnen erhalten.",
+      "Die Wandbekleidung wird hinterlüftet ausgeführt, und die Lüftungsöffnungen sollten mit Lüftungsgittern geschützt werden. Am Sockel sollte ein Abstand von etwa 30 cm zum Untergrund eingehalten werden, ab Balkonen etwa 15 cm zur Belagsoberkante. Merk dir das Zahlenpaar 30 und 15.",
+      "Kurzcheck ohne Buch: Welche keramischen Erzeugnisse werden für Fassadenbekleidungen verwendet und in welchen Verfahren werden die Platten hergestellt? Welchen Mindestquerschnitt braucht die Traglattung, welche Mindestdicke die Schalung? Wie viel Abstand hältst du am Sockel und wie viel über einem Balkonbelag?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l18",
+    "lernfeld": "lf11",
+    "thema": "Holzschindeln",
+    "titel": "Holzschindeln an der Wand: Holzart, Befestigung, Hinterlüftung",
+    "inhalt": [
+      "Holzschindeln an der Fassade halten nur, wenn drei Dinge stimmen: das richtige Holz, die richtigen Stifte und eine durchgehende Hinterlüftung. Dazu kommen die 45°-Abfasung am Schindelfuß, die für die Lebensdauer wichtig ist, und die Bewegungsfugen, weil Holz nach dem Verlegen arbeitet.",
+      "Die Holzarten und ihre Einsatzgebiete: Lärche für Wandbekleidung, meist kleinformatig. Rot-Zeder (WRC) für Dachdeckung und Wandbekleidung. Weiß-Zeder (EWC) für Wandbekleidung. Alaska-Zeder (Yellow-Cedar) für Dachdeckung, mit Farbreaktionen bei Zink. Fichte für Wandbekleidung.",
+      "Vor allem Zedernholzschindeln und Holzschutzmittel enthalten Stoffe, die durch den Regen ausgewaschen werden. Diese Stoffe können verschiedene Metalle verfärben und zerstören — insbesondere Kupfer und Zink. Das sind die beiden kritischen Metalle, die du dir merken musst.",
+      "Wandbekleidungen aus Holzschindeln werden normalerweise zweilagig ausgeführt. Bei sehr starker Witterungsbeanspruchung ist eine dreilagige Bekleidung empfehlenswert. Zwei Lagen sind also der Normalfall, drei Lagen die Ausführung für starke Witterungsbeanspruchung.",
+      "Wichtig für die Lebensdauer ist eine 45°-Abfasung am Schindelfuß. Dadurch werden Schmutz- und Faserablagerungen unterhalb des Fußendes verhindert, die sonst zu Moos- und Pilzbewuchs führen würden. Die Abfasung ist damit kein Schönheitsdetail, sondern Schutz.",
+      "Befestigt wird mit Edelstahlstiften mit rauem, gerilltem oder geschraubtem Schaft. Verzinkte Nägel sind nicht ausreichend korrosionsbeständig und können zu Verfärbungen an der Schindeloberfläche führen. Jede Schindel wird mit zwei Nägeln befestigt, die etwa 20 mm tief in die Unterkonstruktion eingeschlagen werden.",
+      "Die Maße für die Stifte: Randabstand 15 bis 25 mm, Überdeckung der Stifte mindestens 30 bis 40 mm. Empfehlenswert ist die Befestigung im oberen Schindeldrittel — bei dreilagiger Deckung werden die Stifte dann oben von zwei Schindellagen überdeckt.",
+      "Da die Holzschindeln nach dem Verlegen arbeiten, sind zwischen ihnen Bewegungsfugen vorzusehen. Die Fugenbreite beträgt im Allgemeinen 1 bis 5 mm. Sie richtet sich nach dem Quell- und Schwindmaß des Holzes, der Einbaufeuchte und der durchschnittlichen Holzfeuchte.",
+      "Die wärmegedämmte Schindelbekleidung braucht eine durchgehende Hinterlüftung. Richtwerte für die Lüftungsquerschnitte: Be- und Entlüftungsöffnungen mindestens 150 cm² je Meter Wandbreite, kleinste Abmessung 20 mm. Schindeln dürfen nicht direkt auf Dachbahnen oder Folien verlegt werden, das würde die Hinterlüftung verhindern."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l19",
+    "lernfeld": "lf11",
+    "thema": "Materialbedarf altdeutsch",
+    "titel": "Altdeutsche Wandbekleidung: Schieferbedarf in Kilogramm",
+    "inhalt": [
+      "Beim Materialbedarf für die altdeutsche Wandbekleidung rechnest du nicht in Quadratmetern, sondern in Kilogramm — denn genau so wird der Schiefer gehandelt. Der Weg dorthin führt über die Deckfläche und einen Zuschlag für Bruch und Verhau.",
+      "Schiefer für die altdeutsche Deckung wird nach Masse gehandelt, der Bedarf muss deshalb in kg ermittelt werden. Für Wandbekleidungen werden die Schiefersortierungen 1/16, 1/32 und 1/64 mit den passenden Ortsteinen verwendet.",
+      "Erster Rechenschritt ist die Deckfläche. Von der Fassadenfläche ziehst du die Ortflächen an den beiden Außenecken ab, denn dort sitzen Ortsteine, die getrennt in kg je Meter gerechnet werden. Die Ortlänge ist bei zwei Ecken zweimal die Fassadenhöhe, die Ortfläche ist Ortlänge mal Ortbreite.",
+      "Beispiel: Fassade 8,50 m breit und 6,00 m hoch, Ortstreifen 0,20 m breit. Gesamtfläche 8,50 · 6,00 = 51,0 m². Ortlänge 2 · 6,00 = 12,0 m, Ortfläche 12,0 · 0,20 = 2,4 m². Deckfläche = 51,0 − 2,4 = 48,6 m².",
+      "Zweiter Rechenschritt ist die Masse: Deckfläche mal Bedarf in kg/m², danach den Zuschlag für Bruch und Verhau in Prozent aufschlagen. Beispiel: 28 kg/m² · 48,6 m² = 1360,8 kg; 5 % Bruch und Verhau sind 68 kg; zusammen 1429 kg Decksteine der Sortierung 1/16.",
+      "Kurzcheck ohne Buch: In welcher Einheit rechnest du den Schieferbedarf für die altdeutsche Deckung und warum? Welche Sortierungen kommen an der Wand zum Einsatz? Warum ziehst du die Ortstreifen von der Fassadenfläche ab? Und in welcher Reihenfolge rechnest du Deckfläche, Grundmenge und Bruchzuschlag?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l20",
+    "lernfeld": "lf11",
+    "thema": "Materialbedarf Schuppen",
+    "titel": "Schuppendeckung: Von der Steingröße zur Masse je Quadratmeter",
+    "inhalt": [
+      "Bei der Schuppendeckung an der Wand rechnest du dich in vier Schritten vom einzelnen Stein zur Liefermenge: Überdeckungen festlegen, sichtbare Steinfläche bestimmen, Steine je Quadratmeter berechnen und daraus die Masse je Quadratmeter.",
+      "Die Überdeckungen an der Wand: Höhenüberdeckung 4 cm. Seitenüberdeckung bei stumpfem und normalem Hieb 29 % der Steinhöhe, mindestens 5 cm. Bei scharfem Hieb 38 % der Steinhöhe. Der Hieb bestimmt also die Seitenüberdeckung, die Höhenüberdeckung bleibt bei 4 cm.",
+      "Sichtbare Steinfläche: A = (H − HÜ) mal (B − SÜ), wobei bei normalem Hieb SÜ = 0,29 mal H ist. Beispiel für einen Stein 24 × 19 cm: SÜ = 0,29 · 24 = 7 cm; A = (24 − 4) · (19 − 7) = 20 · 12 = 240 cm².",
+      "Steine je Quadratmeter: Ein Quadratmeter hat 10000 cm², also ist n = 10000 geteilt durch die sichtbare Steinfläche in cm². Beispiel: 10000 / 240 = 41,7 Steine je m².",
+      "Masse je Quadratmeter: Erst die Masse eines Steins aus der Angabe je 1000 Stück bestimmen (durch 1000 teilen), dann mal die Steinzahl je m². Beispiel: 590 kg je 1000 Stück sind 0,59 kg je Stein; 0,59 · 41,7 = 24,6 kg/m².",
+      "Massen je 1000 Stück nach Schuppengröße: 26 × 21 → 690 kg; 24 × 21 → 640 kg; 24 × 19 → 590 kg; 22 × 19 → 530 kg; 22 × 17 → 460 kg; 20 × 15 → 360 kg; 18 × 15 → 320 kg. Je kleiner das Format, desto kleiner die Masse je 1000 Stück.",
+      "Anhaltswerte für den Decksteinbedarf (behauen): normaler Hieb etwa 28 bis 30 kg/m², scharfer Hieb etwa 36 kg/m². Ortsteinbedarf (roh): Doppelort etwa 10 kg je Meter für den Endort, Stichort etwa 12 kg je Meter für den Anfangort.",
+      "Kurzcheck ohne Buch: Wie groß ist die Höhenüberdeckung an der Wand? Wie viel Prozent Seitenüberdeckung gelten bei normalem und bei scharfem Hieb? Wie kommst du von der Steingröße auf die sichtbare Fläche, von dort auf die Steinzahl je m² und schließlich auf die Masse je m²?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l21",
+    "lernfeld": "lf11",
+    "thema": "Wabendeckung",
+    "titel": "Wabendeckung: Brustbreite und Schnurabstände",
+    "inhalt": [
+      "Die Wabendeckung ist eine der Deckarten, die zusätzlich für Wandflächen möglich sind. Ihr ganzes Maßsystem hängt an einer einzigen Größe: der Brustbreite. Hier steht, wie du sie aus der Plattengröße bekommst und was du damit anschlägst.",
+      "Verwendet werden quadratische Platten mit einer gestutzten Ecke, verlegt mit 3 mm Stoßfuge. Die gestutzte Ecke weist nach unten. Die Gebinde werden um eine halbe Plattendiagonale versetzt gedeckt — daraus entsteht das typische Wabenbild.",
+      "Die Brustbreite B ist die Diagonale der quadratischen Platte. Bei der Kantenlänge k gilt also B = Wurzel aus (k² + k²). Beispiel bei 20 × 20 cm: Wurzel aus (400 + 400) = Wurzel aus 800 = 28,3 cm.",
+      "Die beiden Schnurabstände: senkrecht S_h = B geteilt durch 2 plus Fuge. Waagerecht S_w = B geteilt durch 2 minus 1,41 mal Überdeckung. In beiden steckt die halbe Brustbreite; der Unterschied ist, dass du einmal die Fuge addierst und einmal das 1,41-fache der Überdeckung abziehst.",
+      "Beispiel mit B = 28,3 cm, Fuge 0,3 cm und Überdeckung 4 cm: S_h = 28,3/2 + 0,3 = 14,15 + 0,3 = 14,45 cm. S_w = 28,3/2 − 1,41 · 4 = 14,15 − 5,64 = 8,5 cm.",
+      "Kurzcheck ohne Buch: Welche Plattenform wird bei der Wabendeckung verwendet und wie groß ist die Stoßfuge? Wohin zeigt die gestutzte Ecke und wie werden die Gebinde versetzt? Was ist die Brustbreite und wie rechnest du sie aus? Und wie lauten die beiden Schnurabstandsformeln?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf11-l22",
+    "lernfeld": "lf11",
+    "thema": "Gezogene Doppeldeckung",
+    "titel": "Gezogene Rechteckdoppeldeckung: Deckfläche und Plattenbedarf",
+    "inhalt": [
+      "Die gezogene Rechteckdoppeldeckung ist eine Deckart für Wandflächen mit rechteckigen oder quadratischen Platten. Aus den beiden Überdeckungen rechnest du die Deckfläche, daraus den Plattenbedarf je Quadratmeter und die beiden Schnurabstände zum Anschlagen.",
+      "Verlegt wird mit Höhen- und Seitenüberdeckung. Als Platten kommen rechteckige oder quadratische Formate aus Schiefer oder Faserzement infrage. Zum Vergleich: Bei der Rechteckdoppeldeckung im halben Verband entfällt die Seitenüberdeckung — hier gehört sie dagegen dazu.",
+      "Die sichtbare Plattenfläche ist zugleich die Deckfläche: A = (H − HÜ) mal (B − SÜ). Dabei ist H die Plattenhöhe, B die Plattenbreite, HÜ die Höhenüberdeckung und SÜ die Seitenüberdeckung. Von beiden Plattenmaßen ziehst du also die jeweilige Überdeckung ab.",
+      "Aus der Deckfläche folgt der Plattenbedarf: n = 10000 cm² je m² geteilt durch die Deckfläche in cm². Beispiel Format 30 × 60 cm mit HÜ = 4 cm und SÜ = 4 cm: A = (60 − 4) · (30 − 4) = 56 · 26 = 1456 cm²; n = 10000 / 1456 = 6,9 Platten je m².",
+      "Die Schnurabstände: senkrecht S_h = B minus 2 mal SÜ, waagerecht S_w = (H − HÜ) geteilt durch 2. Im selben Beispiel: S_h = 30 − 2 · 4 = 22 cm und S_w = (60 − 4) / 2 = 28 cm.",
+      "Kurzcheck ohne Buch: Mit welchen Überdeckungen wird die gezogene Rechteckdoppeldeckung verlegt und aus welchen Werkstoffen sind die Platten? Wie lautet die Formel für die Deckfläche? Wie kommst du auf den Plattenbedarf je m²? Und wie rechnest du die beiden Schnurabstände?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]
