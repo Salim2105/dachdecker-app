@@ -73,5 +73,274 @@
     "quelle": "Bauwerksabdichtung nach DIN 18533 (Erläuterungen); KMK-Rahmenlehrplan LF 14",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 252' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Schwarze und weiße Wanne'><path d='M40 50 L40 130 L120 130 L120 50' fill='none' stroke='currentColor' stroke-width='1.8'/><path d='M32 50 L32 138 L128 138 L128 50' fill='none' stroke='#c07d4a' stroke-width='3'/><text x='24' y='160' fill='currentColor' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>schwarze Wanne</text><path d='M232 50 L232 130 L312 130 L312 50' fill='none' stroke='currentColor' stroke-width='6'/><line x1='272' y1='126' x2='272' y2='134' stroke='#c07d4a' stroke-width='2.4'/><text x='224' y='160' fill='#c07d4a' font-size='12.5' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>weiße Wanne</text><line x1='18' y1='176' x2='362' y2='176' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='198' fill='currentColor' font-size='12.5'>schwarz: Abdichtungsbahnen von außen</text><text x='30.0' y='220' fill='currentColor' font-size='12.5'>weiß: WU-Beton, dichte Fugen, keine Haut</text></svg>"
+  },
+  {
+    "id": "lf14-l05",
+    "lernfeld": "lf14",
+    "thema": "Dachentwässerung",
+    "titel": "Flachdach entwässern: Abläufe, Menge, Notüberlauf",
+    "inhalt": [
+      "Auf dem Flachdach entscheidet die Entwässerung, ob das Wasser nach dem Regen weg ist oder stehen bleibt — du musst wissen, wo die Abläufe hingehören, wie viele du brauchst und wie groß sie sein müssen.",
+      "Zwei Wege gibt es: innen liegende Dachabläufe, also Gullys, oder vorgehängte Dachrinnen über die Traufe. Für die Lage gilt der Merksatz: Dachabläufe liegen innerhalb der Dachfläche an den Gefälletiefpunkten. Am Gefälletiefpunkt, weil dort das Wasser zusammenläuft — Dachdurchdringungen liegen dagegen an den Hochpunkten.",
+      "Gefälle rechnest du als Höhe geteilt durch Länge, und mindestens 2 Prozent sollten es sein, damit das Wasser schnell abläuft. Aufpassen bei der Kehllinie: Sie läuft diagonal und legt bei gleichem Höhenunterschied einen längeren waagerechten Weg zurück als die Teilfläche. Ihr Gefälle ist deshalb immer kleiner — sie ist die flachste, kritische Linie.",
+      "Ein Dachablauf besteht in der Regel aus zwei vorgefertigten Elementen. Das Grundelement wird in der Unterkonstruktion befestigt. Der Anschluss an die Abdichtung läuft über Los- und Festflanschkonstruktionen, Klebeflansche oder Manschetten mit integrierten Anschlussbahnen. Die Flansche lässt du in die Unterkonstruktion ein, sonst entsteht eine Überhöhung. Körbe, Siebe oder Gitterroste schützen den Einlauf vor Verstopfung.",
+      "Die Regenwassermenge: Q = A geteilt durch 10000 mal r mal C. Das Teilen durch 10000 rechnet Quadratmeter in Hektar um, denn die Regenspende r steht in Liter je Sekunde und Hektar. Beispiel Stuttgart: A = 30 m mal 12 m = 360 m², Q = 360/10000 mal 446 mal 1,0 = 16,1 l/s. Abläufe: 16,1 : 4,5 = 3,6, aufgerundet 4 Stück DN 100.",
+      "Abflussleistung und Stauhöhe bei Freispiegelentwässerung: DN 50 = 0,90 l/s bei 35 mm, DN 70 = 1,70 l/s bei 35 mm, DN 100 = 4,50 l/s bei 35 mm, DN 125 = 7,00 l/s bei 45 mm, DN 150 = 8,10 l/s bei 45 mm. Je größer der Nenndurchmesser, desto mehr Wasser läuft ab.",
+      "Der Abflussbeiwert C verändert das Ergebnis stark. C = 1,0 gilt für die glatte, nicht bekieste Fläche; mit C = 0,5 halbiert sich Q, weil eine bekieste oder begrünte Fläche Wasser zurückhält. Zusammengesetzte Dächer zerlegst du vorher: Trapez A = (a plus c) geteilt durch 2 mal Höhe, zwei Halbkreise ergeben zusammen einen Vollkreis.",
+      "Der Notüberlauf ist die zusätzliche Entwässerungsöffnung, zum Beispiel in der Attika, die anspringt, wenn die normalen Dachabläufe die Regenmenge nicht mehr abführen können. Er führt den Notfluss ab und verhindert, dass sich zu viel Wasser auf dem Dach aufstaut. Bemessen wird er aus der Differenz von Jahrhundertregenspende r5/100 und berechneter Regenspende r5/5.",
+      "Notfluss rechnen: Q_Not = (r5/100 minus r5/5) mal A geteilt durch 10000. Beispiel: (858 minus 446) mal 360 : 10000 = 14,8 l/s. Auf 2 Notüberläufe verteilt sind das 7,4 l/s je Stück. Gewählt wurden dort 2 rechteckige Notüberläufe 180 mal 100 mm mit 7,5 l/s und h mindestens 35 mm über Ablaufhöhe."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l06",
+    "lernfeld": "lf14",
+    "thema": "Dachbegrünung",
+    "titel": "Begrüntes Dach: Schichten, Bauweisen, Kiesstreifen",
+    "inhalt": [
+      "Ein begrüntes Dach ist mehr als Erde auf der Abdichtung: Es kommen mehrere Schichten dazu, die in der richtigen Reihenfolge liegen müssen, sonst wächst dir die Wurzel in die Abdichtung.",
+      "Zwei Arten: Bei der extensiven Begrünung nimmst du niedrig wachsende Pflanzen mit einer Wuchshöhe bis etwa 15 cm. Bei der intensiven Begrünung kommen größere, tiefer wurzelnde Pflanzen rein — kleine Bäume, Sträucher, Stauden. Die braucht deshalb einen dickeren Bodenaufbau und regelmäßige Pflege.",
+      "Merke dir den Unterschied über die Folgen: Intensiv heißt dicker aufgebaut, regelmäßig gepflegt. Und genau diese gärtnerischen Arbeiten können die Abdichtung zusätzlich beanspruchen — jemand steht mit Spaten und Schubkarre auf deinem Dach.",
+      "Die Schichtenfolge über der Abdichtung von unten nach oben: Schutzschicht, Trennschicht, Wurzelschutzschicht, Dränschicht, Filterschicht, Vegetationsschicht. Sechs Schichten, und die Reihenfolge ist nicht beliebig — die Vegetationsschicht liegt immer oben, der Schutz immer direkt auf der Abdichtung.",
+      "Was die Schichten tun: Die Wurzelschutzschicht verhindert Beschädigungen der Abdichtung durch eindringende Pflanzenwurzeln. Die Dränschicht nimmt überschüssiges Niederschlagswasser auf und leitet es ab. Die Filterschicht verhindert, dass Feinteile eingeschwemmt werden und die Dränage zusetzen.",
+      "Als Wurzelschutz eignen sich Kunststofffolien oder Metallfolien. Es gehen auch Bitumenbahnen, die schon in der Abdichtung vorgesehen sind — zum Beispiel Bitumenbahnen mit Metallbandeinlagen aus Kupfer oder Aluminium. Dann übernimmt die Abdichtungslage den Wurzelschutz gleich mit.",
+      "Der Nutzen: Begrünte Dächer schaffen vor allem in Städten Lebensraum, verbessern die Luft durch Sauerstoffbildung, Staubbindung und Wasserverdunstung. Sie entlasten die Kanalisation — selbst bei dünner Begrünung werden etwa 70 Prozent des Niederschlagswassers zurückgehalten. Nebenbei übernimmt die Begrünung auch den Oberflächenschutz der Abdichtung.",
+      "Ausgeführt wird in Einschichtbauweise oder Mehrschichtbauweise, auf Flachdächern und flach geneigten Dächern. An Abschlüssen, Anschlüssen und Durchdringungen musst du besonders sorgfältig arbeiten: Dort werden Schutz- und Wurzelschutzschicht an den Einbauteilen hochgeführt, oder die Stellen werden mit Grobkies in etwa 50 cm Breite aufgefüllt.",
+      "Kiesstreifen an Rändern und Durchdringungen: Körnung 16/32, mindestens 5 cm dick. An An- und Abschlüssen mindestens 5 cm breit, bei Dachdurchdringungen mindestens 50 cm breit. Sie schützen die hochgeführte Abdichtung und schaffen einen bewuchsfreien, wartungsarmen Randbereich."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l07",
+    "lernfeld": "lf14",
+    "thema": "Fugenabdichtung",
+    "titel": "Fugen abdichten: Typ I und Typ II",
+    "inhalt": [
+      "Ein Bauwerk arbeitet — es setzt sich, es dehnt sich bei Wärme, es schwingt unter Verkehr. Fugen sollen genau diese Bewegungen schadensfrei ermöglichen, und deine Abdichtung muss über der Fuge mitgehen, ohne zu reißen.",
+      "Eingeteilt wird nach Art und Häufigkeit der Bauteilbewegungen. Fugen Typ I sind Fugen für langsame und seltene Bewegungen. Fugen Typ II sind Fugen für schnelle und häufige Bewegungen. Eingeteilt wird allein nach Art und Häufigkeit der Bauteilbewegungen.",
+      "Typische Beispiele helfen beim Einordnen: Typ I entsteht durch Setzungen oder durch temperaturbedingte Längenänderungen zwischen Sommer und Winter. Typ II entsteht durch wechselnde Verkehrslasten oder temperaturbedingte Längenänderungen zwischen Tag und Nacht. Faustregel: Jahreszeiten sind langsam, Tag und Nacht und Verkehr sind schnell.",
+      "Bei Fugen vom Typ I sollte die Fugenbewegung bei verklebten Bahnen 5 mm nicht überschreiten. Über einen Schleppstreifen von mindestens 20 cm Breite kann die Fuge Typ I verklebt werden — die Abdichtung läuft also durch und nimmt die kleine Bewegung selbst auf.",
+      "Fugen im Bereich der Bauwerksabdichtung werden verstärkt: mindestens zwei Streifen von 300 mm Breite zusätzlich in den Abdichtungslagen. Als Verstärkungsstreifen kommen zum Beispiel Kupferband über 0,2 mm, Edelstahlband über 0,05 mm oder Kunststoffdichtungsbahnen über 1,5 mm in Frage.",
+      "Fugen vom Typ II gehen anders: Hier wird die Abdichtung unterbrochen und beweglich angeschlossen — mit Fugenbändern mit Einklebeflansch, mit vorgefertigten Fugendichtungsprofilen oder mit Los- und Festflanschkonstruktionen. Bei großen und häufigen Bewegungen nimmt die mittige elastische Dehnungszone des Fugenbandes die Bewegung auf.",
+      "So sitzt ein Fugenband: Die mittig angeordnete elastische Dehnungszone wird über die Bewegungsfuge verlegt, sie nimmt die Bewegung auf. Die seitlichen Flansche werden zwischen zwei Abdichtungslagen eingedichtet, zum Beispiel im Schweißverfahren. Mitte beweglich, Ränder dicht eingebunden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l08",
+    "lernfeld": "lf14",
+    "thema": "Lichtkuppeln",
+    "titel": "Anschlüsse und Durchdringungen: Lichtkuppel, Tür, Brandschutz",
+    "inhalt": [
+      "genau an diesen Stellen ist die Abdichtung besonders gefährdet",
+      "Ein Lichtkuppelelement ist zweiteilig: Aufsetzkranz und Lichtschale. Das Nennmaß der Lichtkuppelkränze sollte höchstens 2,50 m betragen, sonst können temperaturbedingte Längenänderungen zu Schäden führen. Der Aufsetzkranz wird an der Unterkonstruktion befestigt.",
+      "Der Anschluss soll über der Wasser führenden Ebene der Dichtung liegen. Dazu wird der Aufsetzkranz bis zum oberen Rand mit Dichtungsbahnen eingefasst oder über einen Klebeflansch mit Mindestbreite 12 cm angeschlossen. Der Kranz sitzt etwa 5 cm über der Abdichtungsebene, die Einfassung wird mit der Dachabdichtung verschweißt oder verklebt.",
+      "Die Anschlusshöhe der Lichtkuppel soll mindestens 15 cm über den Oberflächenbelag reichen. Diese 15 cm findest du beim Türanschluss wieder — dort wird die Abdichtung ebenfalls 15 cm über den Oberflächenbelag hochgezogen und durch Metallabdeckungen gegen mechanische Beschädigung geschützt.",
+      "Ist bei einer Tür die ausreichende Anschlusshöhe nicht möglich, muss der Türbereich durch andere Maßnahmen geschützt werden, zum Beispiel durch einen Entwässerungsrost vor der Tür. In diesen Fällen sollte die Anschlusshöhe mindestens 5 cm betragen. Barrierefreie Übergänge sind Sonderkonstruktionen, die zusätzliche Maßnahmen für die Dichtheit brauchen.",
+      "Brandschutz am Dach hat ein klares Ziel: Die Feuerwiderstandsdauer der Dachkonstruktion gegen Brände im Gebäudeinneren soll vergrößert werden, damit sich das Feuer nicht auf große Gebäudeteile ausbreitet. Besondere Bedeutung hat dabei wieder der Bereich der Dachdurchdringungen.",
+      "Konstruktiv heißt das: Hohlräume im Bereich der Durchdringung mit nichtbrennbaren Baustoffen ausfüllen — zum Beispiel Mineralwolle, Schaumglas oder zementgebundene Mineralschüttungen — und gegen das Gebäudeinnere abschotten. Für großflächige flach geneigte Dächer über 2500 m² Dachfläche und unter 20 Grad Dachneigung gilt die DIN 18234."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l09",
+    "lernfeld": "lf14",
+    "thema": "Dachterrassen",
+    "titel": "Genutzte Dachflächen: Schutzschichten und Plattenbelag",
+    "inhalt": [
+      "Sobald jemand auf der Dachfläche läuft, sitzt oder parkt, wird deine Abdichtung getreten, belastet und bewegt — deshalb kommt bei Dachterrassen, Balkonen und Parkdecks immer eine Schutzlage zwischen Nutzung und Abdichtung.",
+      "Der Grund: Bei genutzten Dachflächen wird die Abdichtung durch Verkehrsbelastung hoch beansprucht. Sie darf durch diese Beanspruchungen — Schwingungen und Bauteilbewegungen — ihre Schutzwirkung nicht verlieren. Also darf die Last nicht direkt auf der Abdichtung landen.",
+      "Deshalb müssen für die jeweilige Nutzung geeignete Schutzschichten eingebaut werden: Schutzmatten, Estrich, Beton oder Gussasphalt. Entscheidend ist, dass sie ausreichende Druckfestigkeit besitzen. Die Auswahl richtet sich also nach der Nutzung — Terrasse ist nicht dasselbe wie befahrenes Parkdeck.",
+      "Bei der Dachterrasse wird die Abdichtung zuerst mit einer Trennlage abgedeckt. Beton-Plattenbeläge haben mindestens das Format 40 mal 40 mal 4 cm. Verlegt werden sie in ein etwa 3 cm dickes Kies- oder Splittbett oder in ein 2 cm dickes Mörtelbett.",
+      "Merke dir die beiden Bettdicken getrennt: Kies oder Splitt etwa 3 cm, Mörtel 2 cm. Zwischen Mörtelbett und Abdichtung sind zwei Trennschichten erforderlich, zum Beispiel PE-Folien — oder eine Schutzschicht und eine Trennschicht.",
+      "Abdichtung und Belag sollen ein Gefälle von 2 Prozent aufweisen. Das vermeidet stehendes Wasser, das zu Frostschäden und Ausblühungen führen könnte. Ein Belag ohne Gefälle sieht am Einbautag gut aus und macht im ersten Winter Ärger.",
+      "Sollen die Platten auf Stelzlagern verlegt werden, dürfen die Stelzlager nicht direkt auf der Abdichtung stehen. Sie kommen zum Beispiel auf Schutzmatten. Die Punktlast eines Stelzlagers ist genau die Beanspruchung, gegen die du die Abdichtung schützen musst."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l10",
+    "lernfeld": "lf14",
+    "thema": "Wasserarten",
+    "titel": "Wasserarten, Abdichtungsnormen und Werkstoffe",
+    "inhalt": [
+      "Bevor du abdichtest, musst du wissen, welches Wasser überhaupt auf das Bauteil wirkt — davon hängt ab, welche Norm gilt und mit welchem Werkstoff du arbeitest.",
+      "Der Bemessungswasserstand ist die Grenze. Unterhalb davon wirkt Grundwasser beziehungsweise Hochwasser auf erdberührte Wände, Boden- und Deckenplatten als drückendes Wasser von außen nach DIN 18533. Oberhalb des Bemessungswasserstandes wirken dagegen Kapillar-, Haft- und Sickerwasser.",
+      "Beim drückenden Wasser von außen zählt zusätzlich die Eintauchtiefe: Bei weniger als 3 m ist die Einwirkung mäßig, ab 3 m ist sie hoch. Also erst die Frage nach oben oder unterhalb des Bemessungswasserstandes, dann die Frage nach der Tiefe.",
+      "Die Abdichtungsnormen sind nach Bauteil gegliedert: DIN 18531 Dachabdichtungen einschließlich Balkone und Loggien, DIN 18532 befahrbare Verkehrsflächen aus Beton, DIN 18533 erdberührte Bauteile, DIN 18534 Innenraumabdichtung in Nassräumen, DIN 18535 Behälter und Becken wie Wasserbehälter und Schwimmbecken.",
+      "Die Reihe läuft von oben nach unten und dann nach innen: 31 Dach, 32 befahrbar, 33 erdberührt, 34 Innenraum, 35 Behälter. Nur bei DIN 18535 geht es um drückendes Wasser von innen — Wasser, das im Becken steht und nach außen drückt.",
+      "Zur Bauwerksabdichtung werden verwendet: bitumenhaltige Werkstoffe wie Voranstrichmittel, Deckaufstrichmittel und Klebemassen, Asphaltmastix und Gussasphalt, Bitumen- und Polymerbitumenbahnen (auch kaltselbstklebend), Kunststoff- und Elastomerdichtungsbahnen (auch selbstklebend) sowie Metallbänder aus Kupfer oder Edelstahl.",
+      "Dazu kommen drei Abkürzungen, die du auseinanderhalten musst: PMBC ist die kunststoffmodifizierte Bitumendickbeschichtung, MDS sind mineralische Dichtungsschlämmen, FLK ist Flüssigkunststoff. Gipsputz und Kalkmörtel sind ausdrücklich keine Abdichtungswerkstoffe."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l11",
+    "lernfeld": "lf14",
+    "thema": "Bodenfeuchte und Spritzwasser",
+    "titel": "Erdberührte Bauteile: Sockel, Bodenplatte, weiße Wanne",
+    "inhalt": [
+      "Unter der Geländeoberkante zieht Wasser in jeden Baustoff, der Kapillaren hat — ohne Abdichtung steht die Feuchte irgendwann im Mauerwerk und im Keller, und dann ist es teuer.",
+      "Durch Kapillarwirkung kann in Baustoffen Wasser aufsteigen. Wände und Bodenplatten schützt du dagegen mit waagerechten Abdichtungen, den Querschnittsabdichtungen. Sie bestehen in der Regel aus Bitumendachbahnen oder Kunststoffdichtungsbahnen, werden aufgeklebt und überlappen an den Stoßstellen mindestens 20 cm.",
+      "Wann ist die waagerechte Abdichtung nötig? Immer dann, wenn die Wand auf einem Kapillarwasser leitenden Baustoff gegründet ist — zum Beispiel auf einem Streifenfundament aus Normalbeton.",
+      "Der Sockelbereich der Außenwände ist Spritz- und Sickerwasser ausgesetzt. Abgedichtet wird bis 30 cm über Geländeoberkante, Wassereinwirkungsklasse W4-E nach DIN 18533. Der obere Abschluss muss hinterlaufsicher ausgeführt werden, sonst läuft Wasser hinter die Abdichtung.",
+      "Nicht verwechseln: W1-E ist die Klasse für Bodenfeuchte und nichtdrückendes Wasser an erdberührten Bauteilen, W4-E die Klasse für den Spritzwasserbereich am Sockel. Merkhilfe: W1 unten im Erdreich, W4 oben am Sockel bis 30 cm über Gelände.",
+      "Kellerfußböden dichtest du mit Dichtungsbahnen aus Bitumen oder Kunststoff, mit Bitumendickbeschichtung oder mit Asphaltmastix ab. Die Abdichtung wird mit der waagerechten Wandabdichtung verklebt, damit keine Feuchtebrücken entstehen, vor allem im Putzbereich. Überdeckung: bei Bitumenbahnen mindestens 10 cm, bei Kunststoffbahnen 5 cm.",
+      "Bei geringer Anforderung an die Trockenheit der Raumluft — Raumnutzungsklasse RN1-E nach DIN 18533-1, zum Beispiel in Tiefgaragen — kann eine kapillarbrechende Schüttung mit Mindestdicke 15 cm unter der Bodenplatte das Aufsteigen von Wasser verhindern. Die grobkörnige Schüttung unterbricht die Kapillaren.",
+      "Zwei Wannen musst du unterscheiden. Die weiße Wanne wird aus wasserundurchlässigem Beton hergestellt, der Beton selbst dichtet ab; dafür müssen die Arbeitsfugen besonders sorgfältig abgedichtet werden. Bei der schwarzen Wanne wird die Abdichtung mit schwarzen Bitumenbahnen ausgeführt — daher der Name."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l12",
+    "lernfeld": "lf14",
+    "thema": "Materialbedarf",
+    "titel": "Material rechnen und die Projektaufgabe angehen",
+    "inhalt": [
+      "Bevor du bestellst, musst du rechnen können, wie viele Bahnen und wie viel Beschichtung auf die Fläche gehen — sonst steht am Freitagnachmittag ein halbes Dach offen, weil zwei Rollen fehlen.",
+      "Bahnen rechnen, Schritt eins: Fläche einer Bahn = Länge mal Breite. Beispiel: 5,00 m mal 1,00 m sind 5 m² je Bahn. Diesen Wert brauchst du gleich als Teiler — er sagt, wie viel Dachfläche eine einzelne Bahn abdeckt.",
+      "Schritt zwei: Zuschlag drauf. Bei 15 Prozent Zuschlag für Überlappung und Verschnitt wird aus 40 m² abzudichtender Fläche 40 mal 1,15 = 46 m². Der Zuschlag deckt die Überlappungen an den Nähten ab — ohne ihn wäre die Fläche nicht dicht.",
+      "Schritt drei: Anzahl = 46 geteilt durch 5 = 9,2. Aufgerundet sind das 10 Bahnen. Bei Stückzahlen wird immer aufgerundet, eine angebrochene Bahn kannst du nicht bestellen. Reihenfolge merken: Bahnfläche, Zuschlag, teilen, aufrunden.",
+      "Dickbeschichtung rechnest du anders: Sie wird in zwei Arbeitsgängen aufgetragen. Bedarf je Schicht = Fläche mal Verbrauch, also 40 m² mal 2,5 kg/m² = 100 kg. Bei zwei Schichten verdoppelt sich das: 2 mal 100 = 200 kg. Den Faktor 2 vergisst man leicht.",
+      "Die Projektaufgabe fasst das alles zusammen: Ein Flachdach auf einem Verwaltungsgebäude soll nach der Sanierung eine Extensivbegrünung und einen für Wartungsarbeiten begehbaren Bereich mit Plattenbelag bekommen. Vorhanden sind eine Stahlbetondecke mit 2 Prozent Gefälleestrich und eine Außenwandbekleidung aus Aluminiumelementen.",
+      "Zu lösen sind drei Teile: a) für beide Bereiche einen geeigneten Dachaufbau wählen und je eine Konstruktionszeichnung anfertigen, b) die erforderliche Dämmdicke bestimmen, damit der U-Wert unter 0,20 W/(m²·K) liegt, c) den Materialbedarf berechnen und Detailzeichnungen für Attikaanschluss, Wandanschluss und Dachabläufe anfertigen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l13",
+    "lernfeld": "lf14",
+    "thema": "Gefälle",
+    "titel": "Gefälle berechnen: Prozent, Verhältnis, Höhe",
+    "inhalt": [
+      "Ohne Gefälle bleibt das Wasser auf dem Flachdach stehen — deshalb rechnest du auf der Baustelle ständig zwischen Höhenunterschied, Länge und Gefälle hin und her. Das Gefälle ist die Größe, die den Wasserablauf überhaupt erst möglich macht.",
+      "Es gibt zwei Schreibweisen für dieselbe Sache. Die Verhältniszahl n ist Länge geteilt durch Höhe und wird als Steigungsverhältnis 1 : n geschrieben. Der Prozentsatz p ist Höhe mal 100 geteilt durch Länge. Bei Flachdächern und Rinnen ist die Prozentangabe üblich.",
+      "Übersetz die Angaben in Klartext. 1 : 50 heißt: auf 50 m Länge fällt das Dach um 1 m. Ein Gefälle in Prozent sagt, um wie viele Meter das Dach je 100 m Länge fällt. Beides beschreibt dieselbe Neigung, nur anders verpackt.",
+      "Länge aus Verhältnis und Höhe: Länge = n mal Höhe. Buchbeispiel 1: Neigungsverhältnis 1 : 50 und Höhe 0,60 m ergeben 50 mal 0,60 = 30 m Grundmaß. Merk dir die Richtung — aus 1 : n und der Höhe wird durch Multiplizieren die Länge.",
+      "Gefälle in Prozent: p = Höhe mal 100 geteilt durch Länge. Buchbeispiel 2: 1,40 m auf 30 m Länge sind 1,40 mal 100 geteilt durch 30 = 4,7 %. Aufgabe 8 mit 8,70 m Länge: 0,22 m ergeben 2,53 %, 0,435 m ergeben 5,0 %, 0,12 m ergeben 1,38 %.",
+      "Höhe aus Prozent und Länge: Höhe = Prozentsatz mal Länge geteilt durch 100. Buchbeispiel 3: 3 % auf 25 m Breite ergeben 0,75 m. Aufgabe 7 mit 2,5 % Neigung: 10,20 m ergeben 0,255 m, 18,65 m ergeben 0,466 m, 5,60 m ergeben 0,14 m.",
+      "Umgestellt nach der Länge: Länge = Höhe mal 100 geteilt durch Prozentsatz. Buchbeispiel 4: bei 2 % Neigung und 0,50 m Höhe sind das 0,50 mal 100 geteilt durch 2 = 25 m. Höhe und Länge sind über den Prozentsatz direkt verknüpft — doppelte Länge, doppelter Höhenunterschied.",
+      "Manche Aufgaben wollen beide Angaben. Ein 7,20 m breites Haus mit 0,20 m Höhenunterschied: p = 0,20 mal 100 geteilt durch 7,20 = 2,78 %. n = 7,20 geteilt durch 0,20 = 36, also ein Verhältnis von 1 : 36. Beide Zahlen beschreiben dasselbe Gefälle.",
+      "Die Formeln im Block: Prozent = Höhe mal 100 geteilt durch Länge. Höhe = Prozent mal Länge geteilt durch 100. Länge = Höhe mal 100 geteilt durch Prozent. Verhältniszahl n = Länge geteilt durch Höhe. Rechne vorher alles in dieselbe Einheit um, sonst stimmt das Ergebnis nicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l14",
+    "lernfeld": "lf14",
+    "thema": "Wandanschlüsse",
+    "titel": "Anschlüsse an aufgehende Bauteile",
+    "inhalt": [
+      "Am Wandanschluss endet die Dachabdichtung an einem aufgehenden Bauteil. Wie hoch du die Bahn dort hochführst und wie du sie sicherst, entscheidet darüber, ob stehendes Wasser oder liegender Schnee hinter die Abdichtung gelangt.",
+      "Die Anschlusshöhe an aufgehende Bauteile soll bis 5 Grad Dachneigung mindestens 15 cm betragen, über 5 Grad mindestens 10 cm. In schneereichen Gegenden muss sie gegebenenfalls erhöht werden. Merke: je flacher das Dach, desto höher der Anschluss — bei bis zu 5 Grad staut sich das Wasser leichter.",
+      "Gemessen wird ab Oberkante der fertigen Dachfläche, also einschließlich Kies oder Belag — nicht ab der Rohdecke. Wer ab der Rohdecke misst, baut den Anschluss zu niedrig ein.",
+      "Ausführung mit Bitumenbahnen: Anschlussbahnen vorstreichen, am Übergang vom Dach zur Wand einen Keil anbringen, die Lagen der Dachabdichtung bis über den Keil führen und die Anschlussbahnen — mindestens zwei Lagen — in die Dachabdichtung einbinden. Der Keil sorgt für einen stetigen Übergang; scharfe Aufkantungen würden die Bitumenbahnen beschädigen.",
+      "Die Anschlussbahnen werden bis zur Anschlusshöhe über den Dachbelag geführt und mechanisch gegen Abrutschen gesichert. Bei Anschlusshöhen über 50 cm sind die Bahnen zusätzlich in der senkrechten Fläche zu verkleben. Abdichtungen mit Flüssigkunststoffen müssen wegen ausreichender Haftung nicht mechanisch befestigt werden.",
+      "Anschlüsse müssen bis zum oberen Ende wasserdicht ausgebildet oder direkt bewittert geschützt werden. Möglich sind Überdeckung mit einer Wandbekleidung, eingelassene Klemmschienen, Dichtungsmassen oder Anpressen mit Klemmschienen.",
+      "Maße für Klemmschienen: 5 bis 7 mm dick und mindestens 45 mm breit. Die Länge einer Klemmschiene zur oberen Begrenzung sollte höchstens 2,50 m betragen, der Befestigungsabstand der Schrauben höchstens 15 cm.",
+      "Sonderfall bodentiefe Terrassentür: Ist die Anschlusshöhe knapp, ordnest du vor der Tür eine Rinne mit Gitterrost an — zum Beispiel eine Kastenrinne. Sie nimmt das anfallende Wasser auf und leitet es ab, dadurch lässt sich die Anschlusshöhe auf 5 cm reduzieren. So bleibt der Übergang barrierefrei und trotzdem feuchtesicher.",
+      "Beim Zeichnen des Schnitts: Dachdecke und aufgehende Wand anlegen, die Abdichtungsbahn bis an die Wand und dann senkrecht hochführen, den Übergang ausrunden, die Anschlusshöhe von der fertigen Dachfläche aus bemaßen, oben eine Klemmschiene als Sicherung gegen Abrutschen setzen und darüber eine Abdeckung einzeichnen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l15",
+    "lernfeld": "lf14",
+    "thema": "Dachrandabschlüsse",
+    "titel": "Dachrand, Durchdringungen und Flanschbreiten",
+    "inhalt": [
+      "Am Dachrand und an jeder Durchdringung hat die Abdichtungsfläche ein Ende — und genau dort muss sie hochgezogen, befestigt und abgedeckt werden, sonst läuft das Wasser über den Rand oder an der Durchdringung vorbei.",
+      "Der Dachrandabschluss an Attika, Ortgang und Traufe soll mindestens 10 cm höher als die Dachdichtung liegen, bei Dachneigung über 5 Grad mindestens 5 cm. Die Randaufkantung kann aus Holz, Beton oder Mauerwerk hergestellt sein; durch sie wird der Dachrand nach innen entwässert.",
+      "Ist die Anschlusshöhe am Rand zu gering, besteht die Gefahr, dass Wasser über den Dachrand austritt und die Außenwand durchfeuchtet. Der Merksatz zum Abschluss lautet: Bei Dachabschlüssen wird die Abdichtung über den Oberflächenschutz hochgezogen, befestigt und an die Dachabdichtung angeschlossen.",
+      "Den oberen Abschluss bilden Metallabdeckungen, die ein Gefälle zur Dachseite hin aufweisen. Der äußere Schenkel der Abdeckung überlappt die Außenwand um 5 bis 10 cm. Befestigt werden die Abdeckungen am Haltebügel oder mit abgedichteten Schrauben.",
+      "Dachdurchdringungen wie Lüftungs- und Dunstrohre sollten an den Hochpunkten des Daches liegen. Die Dachbahnen werden im Bereich der Rohrdurchdringung ausgeschnitten; die Abdichtung erfolgt durch Ummantelung mit Klebeflanschen, Dichtungsmanschetten oder Klemmflanschen mit einer Mindestbreite von 12 cm.",
+      "Die Ummantelung soll mindestens 15 cm über den Oberflächenbelag gezogen werden. Der Abstand der Durchdringungen untereinander und zu Wandanschlüssen, Dehnfugen oder Dachkanten sollte mindestens 30 cm betragen — sonst ist zu wenig Platz, um die Flansche sauber anzuschließen.",
+      "Beim geklemmten Anschluss mit Gegenflansch gelten Mindestflanschbreiten: Festflansch 70 mm, Losflansch 60 mm. Ab einer Wasserstauhöhe von 10 cm werden daraus 160 mm beim Festflansch und 150 mm beim Losflansch. Die Werte gelten für geklemmten Bitumenbelag genauso wie für geklemmte Bahnen aus Kunststoffen oder Elastomeren.",
+      "Die Zahlen am Stück: Dachrand mindestens 10 cm über der Dachdichtung, über 5 Grad 5 cm. Metallabdeckung überlappt die Außenwand 5 bis 10 cm. Flansch mindestens 12 cm breit, Ummantelung 15 cm hoch, Abstand 30 cm. Festflansch 70 mm, Losflansch 60 mm, ab 10 cm Stauhöhe 160 und 150 mm."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l16",
+    "lernfeld": "lf14",
+    "thema": "Verkehrsflächen",
+    "titel": "Befahrene Dächer: Nutzungs- und Einwirkungsklassen",
+    "inhalt": [
+      "Ein Parkdeck ist auch nur ein Dach — nur dass Autos darüber fahren. Deshalb bekommt die Abdichtung dort Schutz- und Nutzschichten, und du musst wissen, für welche Belastung gebaut wird.",
+      "Verkehrsflächen werden in DIN 18532 in vier Nutzungsklassen eingeteilt: N1-V für Fußgänger und Radwege, N2-V für Zwischen- und Freidecks in Parkhäusern mit Pkw-Verkehr, N3-V für Flächen mit Pkw- und leichtem Lkw-Verkehr, N4-V für Verkehrsflächen für alle Fahrzeuge.",
+      "Der Aufbau über der Abdichtung: Zuerst werden Trennlagen abgedeckt, darauf kommt eine Schutzschicht — zum Beispiel Estrich — und/oder eine befahrbare Betonplatte beziehungsweise eine Gussasphaltschicht. Die Abdichtung selbst wird also nicht direkt befahren.",
+      "Dient der Gussasphalt als Schutz- und Nutzschicht auf der Abdichtung, ist eine Dicke von mindestens 5 cm erforderlich, hergestellt in zwei Lagen. Beim Parkdachaufbau folgt über der Abdichtung die Trennlage, darauf die Lastverteilungsplatte aus Beton und darüber die Gussasphaltverschleißschicht.",
+      "Die Einwirkungsklassen nach DIN 18531-1 beschreiben, wie stark die Abdichtung beansprucht wird. Alle genutzten Dachflächen ohne thermisch wirksame Schutz- oder Nutzbeläge gehören zur Einwirkungsklasse I A: hohe thermische Einwirkung Stufe A, hohe mechanische Einwirkung Stufe I.",
+      "Kommt eine Schutzschicht dazu — Kiesschüttung, Nutzbelag oder Begrünung —, ist die thermische Einwirkung nur mäßig, also Stufe B, und die Fläche gehört zur Einwirkungsklasse I B. Der Schutzbelag reduziert damit die thermische Beanspruchung der Abdichtung.",
+      "Zwei Systeme nicht verwechseln: Die N-Klassen aus DIN 18532 beschreiben, wer über die Fläche fährt. Die Einwirkungsklassen aus DIN 18531-1 beschreiben, wie stark die Abdichtung beansprucht wird. Bei den Buchstaben gilt: A ohne thermisch wirksamen Schutzbelag, B mit."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l17",
+    "lernfeld": "lf14",
+    "thema": "Musterausschreibung",
+    "titel": "Ausschreibung lesen: Schichten, Mengen, Preise",
+    "inhalt": [
+      "Der Ausschreibungstext ist die Bauanleitung in Worten: Er sagt, welche Schicht in welcher Reihenfolge aufs Dach kommt, und liefert die Positionen, mit denen der Betrieb das Angebot rechnet.",
+      "Die extensive Dachbegrünung aus dem Mustertext, von unten nach oben, erste Hälfte: 1. Bitumen-Voranstrich mit etwa 300 g/m², 2. Dampfsperre (AL-HR S4, Alu-Glasvlies), 3. Wärmedämmung und Dampfdruckausgleichsschicht (Dämmbahn Typ GKV, XPS-040-DAA), 4. erste Lage Gründach-System-Abdichtung (WS-PYE PV 250 S5).",
+      "Weiter nach oben: 5. Oberlage mit Wurzelschutz (WS-CU S5 mit Kupferbandeinlage), 6. Dränschicht (Nylonschlingmatte, 15 mm), 7. Substrat- und Speicherschicht (2,5 cm, rund 20 kg/m²), 8. Vegetationsschicht (Gras-Kräuter-Matte, rund 20 kg/m²), 9. Kiesstreifen 16/32.",
+      "Die Reihenfolge kannst du dir logisch merken: Untergrund vorbereiten, Dampf abhalten, dämmen, abdichten, Wurzelschutz obenauf, Wasser abführen, Substrat, Pflanze, Kiesstreifen. Der Wurzelschutz sitzt in der Oberlage über der Abdichtung, weil er sie gegen durchwachsende Wurzeln schützen soll.",
+      "Für das Angebot wird jede Teilleistung zu einer Position im Leistungsverzeichnis. Zu jeder Position gehört eine Menge in m², m oder Stück, dazu ein Einheitspreis (E.P.) und ein Gesamtpreis (G.P.).",
+      "Die Mengen holst du dir aus den Bauteilmaßen im bemaßten Grundriss oder Schnitt — im Buchbeispiel liefert die trapezförmige Dachfläche die Flächen. Reihenfolge: Maße aus der Zeichnung ablesen, Menge je Schicht ermitteln, Menge der passenden Position im Mustertext zuordnen.",
+      "Zur Ausschreibung gehört auch die Verarbeitungsart. Aus der Auswahltabelle für Abdichtungen gegen nichtdrückendes Niederschlagswasser: Kaltselbstklebende Bitumen-Dichtungsbahnen (KSK) werden teilflächig geklebt — Trennfolie abziehen, Bahn andrücken. Elastomerbitumen-Schweißbahnen wie PYE PV 200 S5 werden voll- oder teilflächig verschweißt.",
+      "Über einer Trennlage können Bahnen außerdem lose verlegt und teilflächig genagelt werden. Welche Variante infrage kommt, hängt von der Unterkonstruktion — Beton oder Holz — und von der Beanspruchung ab."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l18",
+    "lernfeld": "lf14",
+    "thema": "Senkrechte Abdichtung",
+    "titel": "Erdberührte Wände, Kellerboden und Sockel",
+    "inhalt": [
+      "Alles, was im Erdreich steht, bekommt von der Seite Feuchtigkeit ab. Deshalb müssen Wandflächen, die vom Boden berührt werden, gegen seitliche Feuchtigkeit abgedichtet werden — und zwar so, dass sie mit der waagerechten Abdichtung eine durchgehende Haut bilden.",
+      "Die Grundregel: Die senkrechte Abdichtung muss über die gesamte Länge an die waagerechte Abdichtung herangeführt werden, dadurch werden Feuchtigkeitsbrücken verhindert. Der Untergrund erhält vorher einen kaltflüssigen Voranstrich.",
+      "Bahnen und ihre Überdeckungen: Bitumen- oder Polymerbitumenbahnen werden mindestens einlagig geklebt oder verschweißt, Überdeckung an Nähten 8 cm, an Stößen 10 cm. Kaltselbstklebende Bitumendichtungsbahnen haben eine Breite von 1,10 m. Kunststoff- und Elastomerbahnen werden an Nähten 5 cm überdeckt.",
+      "Statt Bahnen geht auch die kunststoffmodifizierte Bitumendickbeschichtung, kurz PMBC. Sie wird in zwei Arbeitsgängen aufgetragen und muss eine fest haftende, zusammenhängende Schicht mit mindestens 3 mm Trockendicke ergeben. Aufgepasst: Gegen aufstauendes Sickerwasser sind es 4 mm, dann mit Verstärkungseinlage.",
+      "Fußbodenaufbau eines Aufenthaltsraums über einer Kellerwand, von unten nach oben: kapillarbrechende Schicht 15 cm, Bodenplatte 12 cm, Abdichtung als geklebte bituminöse Dichtungsbahn, Wärmedämmung 4 cm, Abdeckung mit PE-Folie, Zementestrich 4 cm.",
+      "An der Kellerwand gehört dazu: senkrechte Abdichtung aus bituminöser Spachtelmasse, davor eine Dränplatte 6 cm und eine Dränage DN 100. Die Bodenabdichtung wird mit der Wandabdichtung verbunden, damit keine Feuchtebrücke entsteht.",
+      "Am Gebäudesockel kommen zusammen: waagerechte Abdichtung, Sockelputz und eine Grobkiesschüttung mit 50 cm Breite samt Einfassungsstein. Senkrecht wieder bituminöse Spachtelmasse mit Dränplatte 6 cm. Der Sockelbereich wird bis 30 cm über Gelände abgedichtet (W4-E).",
+      "Der Arbeitsraum wird mit nichtbindigem Material verfüllt, damit das Wasser schnell zur Dränage abgeleitet wird und sich kein Stauwasser bildet. Die Zahlen am Stück: Naht 8 cm, Stoß 10 cm, PMBC 3 mm, kapillarbrechende Schicht 15 cm, Bodenplatte 12 cm, Dämmung 4 cm, Estrich 4 cm, Dränplatte 6 cm, Sockel 30 cm über Gelände."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf14-l19",
+    "lernfeld": "lf14",
+    "thema": "Drückendes Wasser von außen",
+    "titel": "Stauwasser, Grundwasser und die schwarze Wanne",
+    "inhalt": [
+      "Wie du ein erdberührtes Bauteil abdichtest, hängt davon ab, wie das Wasser daran ansteht: sickernd, aufgestaut oder drückend. Die Wassereinwirkungsklasse entscheidet über Material, Schichtdicke und Lagenzahl.",
+      "Aufstauendes Sickerwasser, Klasse W2-E: Bei Kellern in wenig wasserdurchlässigem Boden ohne Dränung kann sich das Sickerwasser aufstauen. Liegt dagegen stark durchlässiger Boden mit Dränung vor, hast du nur nichtdrückendes Sickerwasser, Klasse W1-E.",
+      "Gegen aufstauendes Sickerwasser werden Wände und Bodenplatte zum Beispiel mit Bitumendickbeschichtung (PMBC) abgedichtet. Sie wird in zwei Arbeitsgängen mit Verstärkungseinlage aufgebracht und muss mindestens 4 mm Trockendicke ergeben.",
+      "Die Sohlenabdichtung ist an die Wandabdichtung anzuschließen, sodass die Abdichtung das Gebäude wannenförmig umschließt. So kann kein Wasser zwischen Sohle und Wand eindringen. Merk dir das Wort wannenförmig — es beschreibt genau diese durchgehende Verbindung.",
+      "Eine wasserdruckhaltende Abdichtung wird erforderlich, wenn ein Untergeschoss unterhalb des Grundwasserspiegels liegt; sie muss dem Druck des Grund- und Stauwassers standhalten. Ausgeführt wird sie als geschlossene Wanne — die schwarze Wanne —, die das Bauwerk allseitig umschließt.",
+      "Sie wird mindestens 30 cm über den höchstmöglichen Wasserstand geführt und durch eine Schutzschicht aus Beton oder Mauerwerk vor mechanischen und chemischen Einflüssen geschützt. Zur Lagenzahl: Bis zu einer Eintauchtiefe von 4 m sind bei Bitumenbahnen 2 Lagen erforderlich, davon eine mit Polyestervlieseinlage; bei 4 bis 9 m und über 9 m sind es jeweils 3 Lagen mit Kupferbandeinlage.",
+      "Der Untergrund muss eben, fest und frei von Kiesnestern, klaffenden Rissen und Graten sein. Kehlen und Kanten werden ausgerundet, damit die Bitumenbahnen nicht scharfkantig abknicken und reißen. Die Bahnen werden verklebt oder mit Bitumenklebemasse verbunden und erhalten einen Deckanstrich.",
+      "Drückendes Wasser von innen nach DIN 18535 betrifft Schwimmbecken, Wasserspeicherbecken oder Regenrückhaltebecken. Hier wird innen abgedichtet: Die Abdichtung muss eine geschlossene Wanne bilden und an den Rändern 30 cm über den höchsten Wasserstand reichen, damit kein Wasser hinter die Abdichtung läuft.",
+      "Kurzcheck ohne Buch: Wann liegt W2-E vor und wann W1-E? Wie dick muss die PMBC gegen aufstauendes Sickerwasser sein und was kommt dabei hinein? Was ist eine schwarze Wanne und wie weit reicht sie über den Wasserstand? Und welche Norm regelt drückendes Wasser von innen?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

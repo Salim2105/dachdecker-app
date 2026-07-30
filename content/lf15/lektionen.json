@@ -52,11 +52,230 @@
     "inhalt": [
       "Ein Detail ist ein vergrößerter Ausschnitt aus einem Bauteil — meist im Maßstab 1:5 oder 1:10 —, der genau die Stelle zeigt, an der etwas Besonderes passiert: eine Ecke, ein Abschluss, eine Durchdringung.",
       "Eine brauchbare Detailskizze enthält immer dieselben Bestandteile: die Schichtenfolge von innen nach außen, die Bezeichnung der Bauteile, die maßgebenden Maße (Anschlusshöhen, Überdeckungen, Abstände) und die Kennzeichnung der wasserführenden Ebene.",
-      "In der Prüfung wird eine Skizze nicht nach Schönheit bewertet, sondern danach, ob sie funktioniert: Ist die Schichtenfolge richtig? Läuft das Wasser nach außen ab? Ist die Hinterlüftung durchgehend? Sind die geforderten Maße eingetragen?",
+      "Eine Skizze ist nicht nach Schönheit zu beurteilen, sondern danach, ob sie funktioniert: Ist die Schichtenfolge richtig? Läuft das Wasser nach außen ab? Ist die Hinterlüftung durchgehend? Sind die geforderten Maße eingetragen?",
       "Nützlich ist die Gewohnheit, jede Skizze am Ende einmal mit dem Finger als Wassertropfen abzufahren. Wo der Tropfen hängen bleibt oder nach innen läuft, ist ein Fehler im Detail."
     ],
     "quelle": "KMK-Rahmenlehrplan LF 15 (Ausführungs- und Detailzeichnungen)",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 300' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Was in eine Detailskizze gehört'><rect x='30' y='40' width='40' height='96' fill='none' stroke='currentColor' stroke-width='1.6'/><rect x='70' y='40' width='26' height='96' fill='none' stroke='currentColor' stroke-width='1' stroke-dasharray='3 3'/><line x1='112' y1='40' x2='112' y2='136' stroke='#c07d4a' stroke-width='2'/><line x1='126' y1='40' x2='126' y2='136' stroke='#c07d4a' stroke-width='1.1'/><line x1='126' y1='40' x2='127.5' y2='45.8' stroke='#c07d4a' stroke-width='1.1'/><line x1='126' y1='40' x2='124.5' y2='45.8' stroke='#c07d4a' stroke-width='1.1'/><line x1='126' y1='136' x2='124.5' y2='130.2' stroke='#c07d4a' stroke-width='1.1'/><line x1='126' y1='136' x2='127.5' y2='130.2' stroke='#c07d4a' stroke-width='1.1'/><text x='135' y='92.2' fill='#c07d4a' font-size='12' text-anchor='start' stroke='var(--surface)' stroke-width='3.5' paint-order='stroke' stroke-linejoin='round'>Maß</text><line x1='18' y1='156' x2='362' y2='156' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='178' fill='currentColor' font-size='12.5'>Schichtenfolge von innen nach außen</text><text x='30.0' y='200' fill='currentColor' font-size='12.5'>Bauteilnamen und maßgebende Maße</text><text x='30.0' y='222' fill='currentColor' font-size='12.5'>die wasserführende Ebene</text><text x='18' y='255' fill='currentColor' font-size='12'>Maßstab meist 1:5 oder 1:10. Am Ende mit dem Finger</text><text x='18' y='272' fill='currentColor' font-size='12'>als Tropfen abfahren.</text></svg>"
+  },
+  {
+    "id": "lf15-l05",
+    "lernfeld": "lf15",
+    "thema": "Außenecken",
+    "titel": "Wanddetails und Eckausbildung",
+    "inhalt": [
+      "Die Ecke ist die am stärksten beanspruchte Stelle einer Wandbekleidung: Dort greift der Wind am kräftigsten an, und dort treffen zwei Flächen mit unterschiedlicher Ausrichtung aufeinander. Deshalb wird bei Schiefer wechselseitig überdeckt statt stumpf gestoßen — ein durchgehender senkrechter Stoß wäre eine Wasserstraße direkt auf die Unterkonstruktion.",
+      "Neben der Fläche selbst musst du bei Außenwandbekleidungen diese Detailpunkte im Kopf haben: Außen- und Innenecken, den unteren Abschluss am Sockel, seitliche Abschlüsse sowie obere Abschlüsse am Dachrand, an einer Giebelschräge oder am Gesims. Dazu kommen Wandöffnungen wie Fenster und Türen, Durchdringungen für Rohre und Einbauteile wie Vordach-Verankerungen.",
+      "Bei Wandöffnungen, Durchdringungen und Einbauteilen unterscheidest du drei Anschlusslagen: oberseitig, seitlich und unterseitig. Diese Einteilung brauchst du gleich wieder, denn jede Lage wird anders ausgebildet — seitliche Anschlüsse zum Beispiel genau wie eine Außenecke.",
+      "Außenecken bei Schiefer- oder Faserzementbekleidung kannst du mit Überstand decken — mindestens 2 cm — oder mit Schichtstücken bzw. Profilen aus Metall arbeiten. Die Deckung erfolgt als eingebundene Anfang- bzw. Endortdeckung oder als aufgelegte Ortdeckung, auch Strackortdeckung genannt. Bei Doppeldeckung und Gezogener Deckung mit Faserzementplatten sind Breiten unter 10 cm nicht zulässig.",
+      "Befestigt werden Schiefer und Platten mit mindestens drei Schieferstiften bzw. Nägeln, und zwar innerhalb der Überdeckung. Nimmst du Klammerhaken, kommt ein zusätzlicher Schiefernagel dazu — genauso bei Gebäudehöhen über 20 m. Strackortsteine deckst du unterlegt, damit die Wandfläche eben wird; ihre sichtbaren Ecken sollten gerundet oder gestutzt werden.",
+      "Zwei Maße für den Strackort: Die Überdeckung der Strackortsteine untereinander und zur Flächendeckung muss mindestens 5 cm betragen. Die maximale Größe von Faserzementplatten zur Strackortdeckung beträgt 30 mal 30 cm bzw. 40 mal 20 cm. Bei eingebundener Ortdeckung muss die Überdeckung mindestens der der Flächendeckung entsprechen.",
+      "Holzschindeln stößt du an Außenecken wechselseitig. Bei zweilagiger Deckung oder starker Witterungsbeanspruchung kannst du Metallprofile hinterlegen — dann prüfst du vorher die Verträglichkeit des Metalls mit der Holzart, besonders bei Kupfer und Zink. Metallprofile müssen von den Schiefern bzw. Faserzementplatten um mindestens 5 cm überdeckt werden.",
+      "Im waagerechten Schnitt durch die Ecke: Mauerwerk als Winkel, darauf die Lattung, bei Schiefer zusätzlich eine Schalung. Beide müssen über die Ecke hinweg durchlaufen, sonst fehlt der Bekleidung dort der Halt. Auch die Hinterlüftung muss um die Ecke herum durchgehen. Die Deckrichtung folgt der Hauptwetterrichtung, damit die Fugen vom Wind abgewandt liegen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l06",
+    "lernfeld": "lf15",
+    "thema": "Anschlüsse an Wandöffnungen",
+    "titel": "Fenster, Einbauteile und großformatige Tafeln",
+    "inhalt": [
+      "Fenster, Türen und Rohrdurchführungen sind die Stellen, an denen die Bekleidung unterbrochen wird — dort entscheidet sich, ob Hinterlüftung und Wärmeschutz weiter funktionieren. Jeder Anschluss hat deshalb zwei Aufgaben gleichzeitig: Er muss die Konstruktion schützen und die Luft weiter durchlassen.",
+      "Die Kernregel bei Anschlüssen an Fensteröffnungen: Die Hinterlüftung der Konstruktion muss gewährleistet bleiben. Unterseitig und oberseitig sind deshalb Lüftungsöffnungen erforderlich, die durch Lüftungsgitter geschützt werden sollten. Diesen Merksatz kannst du auf jeden dieser Detailpunkte übertragen, nicht nur auf Fenster.",
+      "Im Bereich der Laibungen müssen Wärmebrücken vermieden werden. Das gelingt mit Dämmstoffstreifen von mindestens 4 cm Dicke und, wenn nötig, durch das Ausschäumen von Fugen. Merk dir die Zahl 4 cm zusammen mit dem Wort Laibung, dann fällt sie dir wieder ein.",
+      "Die Zuordnung der Anschlüsse lernst du am besten stur: Unterseitige Anschlüsse werden wie obere Abschlüsse ausgebildet. Oberseitige Anschlüsse werden wie untere Sockelabschlüsse ausgebildet. Seitliche Anschlüsse werden entsprechend den Außenecken hergestellt. Drei Paare, mehr sind es nicht.",
+      "Einbauteile — etwa die Verankerung für ein Vordach — müssen an der tragenden Wand verankert werden. Ausgebildet werden sie ebenso wie Wanddurchdringungen, also als Innenecke. Entscheidend ist die Lastführung: Die Last geht direkt in die tragende Wand und NICHT über die Bekleidung oder ihre Unterkonstruktion.",
+      "Großformatige Außenwandbekleidungen führst du mit offenen oder hinterlegten Fugen von 5 bis 10 mm aus — oder als Stülpdeckung. Aus den Standardplattenformaten kannst du für die Ausbildung von Wanddetails beliebige Formen und Größen zuschneiden, du bist also nicht auf fertige Formteile angewiesen.",
+      "Gebäudeecken werden bei großformatigen Tafeln entsprechend der Flächendeckung mit offenen oder hinterlegten Fugen ausgebildet. Die Fugen hinterlegst oder überdeckst du mit Kunststoff- oder Metallprofilen; befestigt werden diese Profile an der Unterkonstruktion oder an der Wandbekleidung. Der Anschluss an Fenster und Türen erfolgt auslaufend mit zugeschnittenen Fassadentafeln und unterlegten Anschlussprofilen.",
+      "Kurzcheck ohne Buch: Welche Bedingung muss bei jedem dieser Anschlüsse erhalten bleiben? Wie dick sind die Dämmstoffstreifen in der Laibung mindestens? Wie werden unterseitige, oberseitige und seitliche Anschlüsse jeweils ausgebildet? Woran wird ein Vordach verankert? Welche Fugenbreite gilt bei großformatigen Tafeln?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l07",
+    "lernfeld": "lf15",
+    "thema": "Satteldachgaube",
+    "titel": "Satteldachgaube: Kehlen, Flächen und Winkel",
+    "inhalt": [
+      "Gegenüber der Schleppdachgaube kommt bei der Satteldachgaube rechnerisch eines hinzu: Ihr Dach schließt mit Kehlen an die Hauptdachfläche an. Neben den Anschlusslängen sind hier deshalb zusätzlich die Längen der Kehlen zu bestimmen — genau das ist die Zusatzarbeit beim Aufmaß.",
+      "Die Wange ist ein rechtwinkliges Dreieck aus Höhe und Länge. Daraus fällt dir die Hauptdachneigung direkt zu: tan alpha = h_w geteilt durch l_w = 1,17 : 1,39 = 0,8417, also alpha = 40 Grad. Anschlusslänge a = Wurzel aus (h_w im Quadrat plus l_w im Quadrat) = 1,82 m. Gegenprobe: a = h_w geteilt durch sin alpha = 1,82 m.",
+      "Bei 45 Grad Gaubendachneigung gilt h = b geteilt durch 2, hier 1,14 m. Sparrenlänge s = Wurzel aus (1,14 im Quadrat plus 1,14 im Quadrat) = 1,61 m. Die beiden Dachflächen sind Trapeze mit First oben und Traufe unten: A_d = 2 mal [1/2 mal (l_f plus l_t) mal s] = 2 mal 0,5 mal (2,50 plus 1,15) mal 1,61 = 5,88 m².",
+      "Die Differenz l_f minus l_t ist der waagerechte Versatz zwischen First und Traufe der Gaube. Weil das Gaubendach an die geneigte Hauptdachfläche stößt, sind First und Traufe unterschiedlich lang. Dieser Versatz bildet zusammen mit der Sparrenlänge s das rechtwinklige Dreieck der Kehle.",
+      "Kehllänge: k = Wurzel aus ((l_f minus l_t) im Quadrat plus s im Quadrat) = Wurzel aus (1,35 im Quadrat plus 1,61 im Quadrat) = 2,10 m. Kehl-First-Winkel: tan gamma = s geteilt durch (l_f minus l_t) = 1,61 : 1,35 = 1,1926, also gamma = 50 Grad. Gegenprobe über k = s geteilt durch sin gamma = 2,10 m.",
+      "Verkleidungsflächen: Wangen A_w = 2 mal [1/2 mal l_w mal h_w] = 2 mal 0,5 mal 1,39 mal 1,17 = 1,63 m². Die Vorderseite ist ein Rechteck bis Traufhöhe plus das Giebeldreieck, minus Fenster: 1,80 mal 1,17 plus 0,5 mal 1,80 mal 0,90 minus 1,51 mal 0,85 = 2,106 plus 0,81 minus 1,284 = 1,63 m².",
+      "Achtung bei der Vorderseite: Das Fenster wird abgezogen, obwohl es mit 1,28 m² unter 2,5 m² liegt. Das ist kein Widerspruch zur VOB-Regel — das Übermessen kleiner Öffnungen ist eine Abrechnungsregel für das Aufmaß. Hier dagegen ermittelst du die tatsächlich zu verkleidende Fläche für den Materialbedarf, und wo das Fenster sitzt, liegt nun einmal kein Material.",
+      "Kurzcheck ohne Buch: Was hat die Satteldachgaube, was die Schleppdachgaube nicht hat? Wie kommst du von Wangenhöhe und Wangenlänge auf die Hauptdachneigung? Welche zwei Wege führen zur Kehllänge? Warum sind First und Traufe unterschiedlich lang? Wann ziehst du ein kleines Fenster ab und wann nicht?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l08",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Schleppgaube",
+    "titel": "Schleppdachgaube: von der Geometrie zur Bestellliste",
+    "inhalt": [
+      "Bei der Schleppdachgaube rechnest du Dachfläche und senkrechte Flächen getrennt, denn beide werden mit unterschiedlichen Plattenformaten gedeckt. Am Ende hast du zwei Stückzahlen für die Platten und eine gemeinsame Zahl für die Schalung darunter.",
+      "Zwei Neigungen, zwei Rechnungen — hier passieren die meisten Fehler. Sparrenlänge ohne Überstand: s' = Gaubentiefe geteilt durch cos beta, also mit der SCHLEPPdachneigung: 2,75 m : cos 25 Grad = 3,03 m. Mit Überstand: s = 3,03 plus 0,30 = 3,33 m. Anschlusslänge a = Gaubentiefe geteilt durch cos alpha, also mit der HAUPTdachneigung: 2,75 : cos 45 Grad = 3,89 m. Die Anschlusslinie liegt in der Hauptdachfläche.",
+      "Dachfläche A_D = (Gaubenbreite plus 2 mal Überstand) mal s = (4,00 plus 0,60) mal 3,33 = 15,32 m². Wangenhöhe w = h_v mal cos alpha = 1,50 mal cos 45 Grad = 1,06 m. Eine Wangenfläche A_w = 1/2 mal a mal w = 0,5 mal 3,89 mal 1,06 = 2,06 m².",
+      "Vorderfläche A_v = Gaubenbreite mal h_v = 4,00 mal 1,50 = 6,00 m². Senkrechte Flächen insgesamt: 2 mal 2,06 plus 6,00 = 10,12 m². Diese Summe hältst du sauber getrennt von der Dachfläche, weil sie gleich mit einer anderen Stückzahl je Quadratmeter weiterläuft.",
+      "Stückzahl je m² bei Doppeldeckung: Sichtbare Fläche einer Platte = 1/2 mal (Plattenhöhe minus Höhenüberdeckung) mal Plattenbreite. Für Platten 25 mal 35 cm mit 2 cm Überdeckung: 0,5 mal 33 mal 25 = 412,5 cm². Bedarf = 10000 cm² geteilt durch 412,5 cm² = 24,24 Stück/m². Für die Dachfläche wurden dagegen Platten 30/60 mit 13,66 Stück/m² und 12 cm Überdeckung gewählt.",
+      "Jetzt die Zuschläge. Dach: 15,32 m² mal 13,66 Stück/m² mal 1,08 bei 8 Prozent Verhau = 227 Stück. Senkrechte Flächen: 10,12 m² mal 24,24 Stück/m² mal 1,08 = 265 Stück. Schalung für beides zusammen: (15,32 plus 10,12) mal 1,07 bei 7 Prozent Verschnitt = 27,22 m².",
+      "Achte auf die Einheit: Schalung wird als Fläche gerechnet, also in m². Im Buch steht an dieser Stelle m³ — das ist ein Druckfehler. Rechenweg und Zahlenwert sind korrekt, nur die Einheit stimmt nicht.",
+      "Wenn in der Zeichnung zwei Breiten stehen, ist b die Gesamtbreite mit Überstand und b_g die Gaubenbreite ohne. Der Überstand je Seite ist (b minus b_g) geteilt durch 2. Beispiel: (4,70 minus 4,34) geteilt durch 2 = 0,18 m je Seite."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l09",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Giebel",
+    "titel": "Giebel und Fassade: Flächen, laufende Meter, Stückzahlen",
+    "inhalt": [
+      "Bevor Material bestellt wird, ziehst du aus der Ansicht zwei Sorten Zahlen: Flächen in m² für die Platten und laufende Meter für alles am Rand — Ecken, Sockel, Attika, Laibungen, Schrägen. Wer nur die Fläche rechnet, hat die halbe Bestellung vergessen.",
+      "Ein Giebel ist ein Rechteck plus ein Dreieck: A = Breite mal Traufhöhe plus (Breite mal Giebelhöhe) geteilt durch 2. Beispiel: 8 m mal 3 m plus (8 m mal 2,5 m) geteilt durch 2 = 24 plus 10 = 34,00 m². Die Giebelschräge ist die Hypotenuse aus halber Breite und Giebelhöhe: s = Wurzel aus (4,0 im Quadrat plus 2,5 im Quadrat) = Wurzel aus 22,25 = 4,72 m.",
+      "Laufende Meter zählst du stur ab. Zwei Türöffnungen haben vier senkrechte Laibungen und zwei Stürze: l = 4 mal 2,50 m plus 2 mal 2,00 m = 14,00 m. Dazu kommen die beiden Giebelschrägen mit je 4,72 m, denn auch sie werden mit Strackort gedeckt.",
+      "Strackortbedarf: Platten 30/15 mit 10 cm Deckhöhe ergeben 10 Stück je Meter. Also 10 Stück/m mal (14,00 m plus 2 mal 4,72 m) mal 1,03 bei 3 Prozent Verschnitt = rund 242 Stück. Bei 3 Schieferstiften je Platte sind das 3 mal 242 = 726 Stifte.",
+      "Hier wird am häufigsten doppelt gerechnet: Die Strackortfläche muss von der Giebelfläche abgezogen werden, weil dieser Randstreifen bereits mit Strackortplatten gedeckt ist. A_S = (14,00 plus 2 mal 4,72) mal 0,25 m = 5,86 m². Bekleidungsfläche A_B = 34,00 minus 5,86 = 28,14 m².",
+      "Plattenbedarf 20/20: 39,1 Stück/m² mal 28,14 m² mal 1,03 = 1134 Stück. Bei 2 Schieferstiften je Platte sind das 2268 Stifte, zusammen mit den 1134 Strackortstiften 3402 Stück plus Verluste. Traglattung im Beispiel: 6,25 m/m² mal 24,00 m² = 150 m plus Verschnitt.",
+      "Bei einer glatten Fassadenseite läuft es genauso, nur ohne Dreieck. Frontseite 15,00 m hoch und 11,50 m breit ergibt A = 172,5 m². Die beiden Gebäudeaußenecken laufen über die volle Höhe: 2 mal 15,00 = 30,00 m. Sockelabschluss und Attikaanschluss je 11,50 m, zusammen 23,00 m.",
+      "Fenster von 1,00 mal 2,00 m haben 2,00 m² und liegen damit unter 2,5 m² — sie werden nach VOB übermessen, also nicht abgezogen. Merk dir die Grenze 2,5 m² zusammen mit dem Wort Aufmaß, nicht mit dem Wort Materialbedarf; beim Materialbedarf zählt die Fläche, auf der wirklich Platten liegen.",
+      "Ein Rechenwert zum Gegenprüfen: Übliche Dämmstoffe liegen bei 0,02 bis 0,05 W/(m·K), typisch 0,035 für Mineralwolle oder Polystyrol. Damit ergeben 20 cm Dämmung R = 0,20 geteilt durch 0,035 = 5,71 m²·K/W. Der im Buch auf S. 539 genannte Wert 0,35 W/(m·K) passt eher zu Leichtbeton und ergäbe nur 0,57 m²·K/W."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l10",
+    "lernfeld": "lf15",
+    "thema": "Buchaufgaben",
+    "titel": "Buchaufgaben S. 544/545: welche Größe gehört zu welchem Bauteil",
+    "inhalt": [
+      "Die Rechenaufgaben ab Aufgabe 5 (S. 544/545) fragen immer dasselbe Muster ab: welche Flächen, welche laufenden Meter, welcher Materialbedarf. Die Aufgaben 1 bis 4 auf S. 544 sind dagegen reine Verständnisfragen zu Sockel, Außenecke, Innenecke und Anschlüssen.",
+      "Aufgabe 5, Fassade mit Fassadentafeln (11,30 m breit, 13,85 m hoch, Tafeln 1250 mal 2500 mm und 1250 mal 1250 mm): Zu berechnen sind die Fassadenflächen in m² sowie in laufenden Metern die Länge der Fensterlaibungen, die Sturz- und Brüstungsbekleidung, Attikaanschluss und Sockelabschluss und die Eckprofile. Trennung merken: Fläche in m², alle Ränder in m.",
+      "Die Zahlen dazu: Fassadenfläche = 11,30 mal 13,85 = 156,51 m². Fenster 1,25 mal 1,25 = 1,5625 m² — das liegt unter 2,5 m², wird also nach VOB übermessen und nicht abgezogen. Eckprofile = 2 mal 13,85 = 27,70 m. Die Laibungen erfasst du trotzdem als laufende Meter, denn bekleidet werden müssen sie.",
+      "Aufgabe 6, winkelförmiges Gebäude (8,60 / 5,60 / 7,00 / 5,60 m bei 8,25 m Höhe): Neben der Bekleidungsfläche brauchst du die Länge der Außen- UND Innenecken, die Sockellängen und die Attikalänge. Die Innenecke wird oft übersehen, braucht aber ebenfalls Eckprofile bzw. eine Kehldeckung.",
+      "Aufgabe 7, Satteldachgaube (alpha = 40 Grad, b_g = 2,50 m, Überstand 0,30 m): Anschlusslänge a und Kehllänge k, Firstlänge l_f und Trauflänge l_t, dazu Dachfläche, Wangenfläche und Vorderfläche. Aufgabe 9, Spitzgaube (alpha = 45 Grad, beta = 25 Grad, b = 1,50 m): nur die Wangenflächen und die Anschlusslänge a, denn die beiden Wangen laufen zur Spitze zusammen.",
+      "Aufgabe 8, Walmdachgaube (Hauptdach 45 Grad): Dachfläche, Wangenflächen, Anschlusslänge a und Kehllänge k. Der Unterschied zur Satteldachgaube: Die Vorderseite ist abgewalmt, also selbst eine geneigte Dachfläche statt einer senkrechten Wandfläche. Das ändert den Materialbedarf, weil Dach- und Wandflächen mit unterschiedlichen Formaten gedeckt werden.",
+      "Die Schleppdachgauben: Aufgabe 10 (b = 4,70 m, b_g = 4,34 m) will Dachfläche A_d, Anschlusslänge a und die Verkleidungsfläche aus Wangen und Vorderseite. Aufgabe 11 mit Faserzementplatten 20/40 in Doppeldeckung auf Lattung: fehlende Dachgrößen, Plattenbedarf, Lattenbedarf bei 8 Prozent. Aufgabe 12 mit Schiefer auf Schalung: zusätzlich die Schieferplattengröße, Platten bei 8 Prozent Verhau, Schalung bei 7 Prozent Verschnitt.",
+      "Die Satteldachgauben: Aufgabe 13 mit Faserzement 30/30 auf Lattung will Dachgrößen, Platten bei 6,5 Prozent Verhau, Latten bei 7 Prozent Verschnitt und den Nagelbedarf. Aufgabe 14 mit Schiefer auf Schalung: Dachgrößen, Schieferplattengröße, Schiefer bei 8 Prozent Verhau, Schalung bei 7 Prozent. Aufgabe 15, deutsche Deckung auf Schalung: Plattengrößen für Dach und Wand, Platten bei 8 Prozent Verhau, Schalung bei 6 Prozent.",
+      "Das Muster hinter allen: erst die fehlenden Geometriegrößen, dann die Flächen getrennt nach Dach und Wand, dann die Stückzahlen, zuletzt die Unterkonstruktion. In diesen Aufgaben steht Verhau durchgehend bei den Platten und Verschnitt bei Latten und Schalung. Bei Aufgabe 15 werden für Dach und Wand unterschiedliche Plattengrößen gewählt — die Wandfläche kommt mit kleineren Formaten aus."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l11",
+    "lernfeld": "lf15",
+    "thema": "Schleppdachgaube",
+    "titel": "Schleppdachgaube berechnen: von der Sparrenlänge zu allen Flächen",
+    "inhalt": [
+      "Die Schleppdachgaube rechnest du durch, damit du weißt, wie lang der Anschluss ans Hauptdach wird und wie viel Fläche auf Gaubendach, Wangen und Vorderseite geht. Ohne diese Maße kannst du weder die Unterkonstruktion abbinden noch das Material bestellen.",
+      "Drei Winkel sind im Spiel: alpha ist die Hauptdachneigung, beta die Schleppdachneigung, gamma der Schleppwinkel. Gamma ist einfach die Differenz: gamma = alpha minus beta. Im Buchbeispiel also 40 Grad minus 25 Grad = 15 Grad. Über gamma bekommst du später direkt die Wangenhöhe: w = s' mal sin gamma.",
+      "Zuerst ziehst du den Überstand ab: s' = s gesamt minus Überstand, also 4,30 minus 0,25 = 4,05 Meter. Dann die Gaubentiefe: t_g = s' mal cos beta = 4,05 mal cos 25 Grad = 3,67 Meter. Daraus die Gaubenhöhe: h_g = t_g mal tan alpha = 3,67 mal tan 40 Grad = 3,08 Meter.",
+      "Achte auf den Winkelwechsel: Die Gaubentiefe rechnest du mit der Gaubenneigung beta, die Gaubenhöhe aber mit der Hauptdachneigung alpha. Der häufigste Fehler ist, h_g aus beta zu bilden. Dort, wo die Gaube endet, ist das Hauptdach um t_g mal tan alpha angestiegen — genau diese Differenz ist die Gaubenhöhe.",
+      "Die Anschlusslänge a ist die Linie, an der die Gaube das Hauptdach schneidet. Drei Wege, ein Ergebnis: a = Wurzel aus (t_g Quadrat plus h_g Quadrat) = 4,79 Meter, oder a = t_g geteilt durch cos alpha, oder a = h_g geteilt durch sin alpha. Nimm den Weg, für den du die Werte schon hast.",
+      "Von vorne siehst du nicht die volle Gaubenhöhe. Rechne erst die verminderte Dachhöhe h' = Wurzel aus (s' Quadrat minus t_g Quadrat) = Wurzel aus 2,93 = 1,71 Meter. Die vordere Sichthöhe ist die Differenz: h_v = h_g minus h' = 3,08 minus 1,71 = 1,37 Meter.",
+      "Die Wange ist ein Dreieck und geht auf zwei Wegen. Weg 1: A_w = 1/2 mal h_v mal t_g = 0,5 mal 1,37 mal 3,67 = 2,51 Quadratmeter. Weg 2: Wangenhöhe w = s' mal sin gamma = 4,05 mal sin 15 Grad = 1,05 Meter, dann A_w = 1/2 mal a mal w = 2,51 Quadratmeter.",
+      "Vorderfläche A_v = b_g mal h_v = 2,50 mal 1,37 = 3,43 Quadratmeter. Für das Gaubendach nimmst du die Sparrenlänge MIT Überstand: A_d = (b_g plus 2 mal seitlicher Überstand) mal s = (2,50 plus 2 mal 0,10) mal 4,30 = 11,61 Quadratmeter. Zwei Fallen: s statt s', und der seitliche Überstand zählt links und rechts.",
+      "Skizziere im Schnitt immer in dieser Reihenfolge: erst die Hauptdachfläche als geneigte Gerade, dann die flachere Gaubenfläche darunter — beta ist kleiner als alpha, sonst würde die Gaube das Hauptdach nicht schneiden. Danach s' auf der Gaubenfläche, t_g waagerecht, h_g senkrecht am Anschlusspunkt, a als Verbindung und h_v vorne."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l12",
+    "lernfeld": "lf15",
+    "thema": "Spitzgaube",
+    "titel": "Spitzgaube: rechnen mit Sinussatz und Hilfslängen",
+    "inhalt": [
+      "Die Spitzgaube ist die anspruchsvollste Gaubenform, weil First und Anschlusslinie räumlich verlaufen. Deshalb kommst du mit Pythagoras allein nicht durch — du brauchst Winkelfunktionen und zwei Hilfslängen, um Firstlänge, Anschlusslänge sowie die Flächen von Vorderseite und Wangen zu bekommen.",
+      "Die Werte des Buchbeispiels: Hauptdachneigung alpha = 40 Grad, Gaubenbreite b = 2,00 Meter, Gaubenneigung beta = 30 Grad. Die Gaubenhöhe rechnest du mit h_g = b geteilt durch 2 mal tan 60 Grad = 1,00 mal 1,732 = 1,73 Meter.",
+      "Die Firstlänge kommt über den Sinussatz: l_f = h_g mal sin(90 Grad minus alpha) geteilt durch sin beta. Eingesetzt: 1,73 mal sin 50 Grad geteilt durch sin 30 Grad = 1,73 mal 0,766 : 0,5 = 2,65 Meter.",
+      "Für den Anschluss brauchst du zwei Hilfslängen: c1 = h_g mal cos 50 Grad = 1,73 mal 0,643 = 1,11 Meter und c2 = l_f mal cos 30 Grad = 2,65 mal 0,866 = 2,295 Meter. Addiert ergibt das c = 3,405 Meter. Die 50 Grad sind 90 minus die Hauptdachneigung 40, die 30 Grad sind die Gaubenneigung.",
+      "Aus c und der halben Gaubenbreite folgt die Anschlusslänge: a = Wurzel aus (c Quadrat minus (b geteilt durch 2) Quadrat) = Wurzel aus (3,405 Quadrat minus 1,00 Quadrat) = Wurzel aus 10,60 = 3,25 Meter. Achte auf das Minuszeichen — hier wird abgezogen, nicht addiert.",
+      "Die Vorderseite ist ein Dreieck: A_v = 1/2 mal b mal h_g = 1/2 mal 2,00 mal 1,73 = 1,73 Quadratmeter. Eine Wange: A_w = 1/2 mal a mal l_f mal sin beta = 1/2 mal 3,25 mal 2,65 mal sin 30 Grad = 2,15 Quadratmeter. Beide Wangen zusammen 4,30 Quadratmeter.",
+      "Die Reihenfolge liegt fest: erst h_g, dann l_f, dann c1 und c2, daraus a, zuletzt die Flächen. Jeder Schritt braucht das Ergebnis des vorherigen. Runde deshalb nicht zu früh — im Buchbeispiel wird mit 2,295 und 3,405 weitergerechnet, also mit drei Nachkommastellen."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l13",
+    "lernfeld": "lf15",
+    "thema": "Projektaufgabe Dach",
+    "titel": "Projektaufgabe Walmdach mit Anbau und Schleppgaube",
+    "inhalt": [
+      "Die Projektaufgabe ist der Ernstfall im Kleinen: ein Walmdach mit Anbau und Schleppgaube. Du bekommst nur die Zeichnung und musst selbst entscheiden, was gedeckt wird, wie die Details aussehen und welche Mengen am Ende bestellt werden.",
+      "Die Vorgaben: Hauptdach und Anbau haben 50 Grad beziehungsweise 60 Grad Neigung, die Schleppgaube 25 Grad mit allseitigem Überstand von 25 Zentimetern. Eingedeckt wird mit naturroten Dachziegeln. Die Seitenansicht zeigt die beiden Neigungen 60 und 50 Grad sowie die Maße 1,00 Meter und 1,50 Meter.",
+      "Vier Teilaufgaben sind zu lösen: eine geeignete kleinformatige Bekleidung für die Gaubenwände auswählen und begründen, Vorschläge mit Detailzeichnungen für Kehle, seitliche und obere Abschlüsse sowie die Anschlüsse ans Gaubenfenster machen, die Längen von Kehlen, Außenecken und An- und Abschlüssen berechnen und den gesamten Materialbedarf ermitteln.",
+      "Warum überhaupt Kehlen? Der Anbau trifft als einspringende Ecke auf das Hauptdach. Genau an dieser Verschneidungslinie läuft das Wasser beider Dachflächen zusammen. Deshalb muss die Kehle besonders sorgfältig ausgebildet und ihre Länge für den Materialbedarf berechnet werden. Die Schleppgaube erzeugt zusätzlich Anschlusslinien zum Hauptdach.",
+      "In der Draufsicht siehst du beides nebeneinander: die Grate des Walmdachs und die Kehlen am Anbau. Faustregel zum Auseinanderhalten: Wo zwei Dachflächen nach außen zusammenstoßen, entsteht ein Grat, wo sie einspringend zusammenlaufen, eine Kehle — und nur die Kehle sammelt Wasser.",
+      "Das Gaubenfenster misst 2,00 mal 1,00 Meter und sitzt mittig. Seine Fläche von 2,00 Quadratmetern liegt unter der VOB-Grenze von 2,5 Quadratmetern, wird also übermessen und NICHT von der Bekleidungsfläche abgezogen. Die Laibungen erfasst du trotzdem — die zählen als laufende Meter.",
+      "Halte beim Aufmaß zwei Listen getrennt: Flächen in Quadratmetern für die Bekleidung selbst und Längen in laufenden Metern für Kehlen, Außenecken, seitliche und obere Abschlüsse sowie Fensterlaibungen. Erst danach rechnest du Stückzahlen mit Deckfläche je Platte und Zuschlag."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l14",
+    "lernfeld": "lf15",
+    "thema": "Brandschutz",
+    "titel": "Brandsperren an der hinterlüfteten Fassade",
+    "inhalt": [
+      "Hinter einer hinterlüfteten Fassade läuft ein durchgehender Luftraum über die Geschosse. Genau der wirkt im Brandfall wie ein Kamin. Brandsperren sollen die Brandausbreitung über die Lüftungsebene behindern und verhindern, dass das Feuer durch Kaminsogwirkung auf höhere Geschosse überschlägt.",
+      "Geregelt sind die Anforderungen in den jeweiligen Landesbauordnungen. Die Brandschutzmaßnahmen gelten ab Gebäudeklasse 4, also bei Gebäuden über 8 Meter Höhe. Ab dieser Höhe sind besondere Brandsperren vorgeschrieben. Die 8 Meter sind die Zahl, an der du dich orientierst.",
+      "Vertikale Brandsperren brauchst du, wenn die Fassadenbekleidung über Brandwände hinweggeführt wird. Im Bereich der Brandwand muss der Hinterlüftungsspalt mit einem nichtbrennbaren Dämmstoff ausgefüllt werden, dessen Schmelzpunkt über 1000 Grad Celsius liegt.",
+      "Horizontale Brandsperren begrenzen den Hinterlüftungsraum der Fassade auf höchstens 100 Quadratzentimeter je Meter — der Lüftungsspalt beträgt an diesen Stellen also maximal 1 Zentimeter. Angeordnet werden sie mindestens auf jedem zweiten Geschoss, und zwar umlaufend um das gesamte Gebäude.",
+      "Ausführung als Stahlblech: Die Brandsperre muss im Brandfall mindestens 30 Minuten formstabil bleiben. Das schafft ein 1 Millimeter dickes Stahlblech zwischen Wand und Bekleidung. Es wird in Abständen unter 60 Zentimetern auf Wandankern befestigt und mit 30 Millimetern Überlappung eingebaut.",
+      "Wie tief das Blech gehen muss, hängt am Dämmstoff. Liegt dessen Schmelzpunkt über 1000 Grad Celsius, zum Beispiel bei Steinwolle, wird das Blech 2 bis 3 Zentimeter tief in die geschlitzte Wärmedämmung eingeschoben. Bei Dämmstoffen mit niedrigerem Schmelzpunkt muss es bis zur tragenden Wand geführt werden.",
+      "Eine andere Variante ist der Brandriegel: ein verdickter, nichtbrennbarer Dämmstoffriegel, der den Lüftungsspalt auf unter 10 Millimeter verengt. Bei vertikaler Anordnung übernehmen schmelzende Abstandhalter diese Verengung des Lüftungsraums.",
+      "Am Schornstein gelten eigene Regeln. Die Bekleidung muss aus nichtbrennbaren Baustoffen bestehen, eine Holzlattung als Unterkonstruktion darf angebracht werden. Schalungsbretter nur mit Abstand: mindestens 5 Zentimeter bei Hinterfüllung mit nichtbrennbarem Dämmstoff, mindestens 2 Zentimeter bei Hinterlüftung. Brennbare Baustoffe der Außenwandbekleidung halten 20 Zentimeter Abstand zur Rohrdurchführung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l15",
+    "lernfeld": "lf15",
+    "thema": "Seitliche und obere Abschlüsse",
+    "titel": "Ränder der Wandbekleidung: Sockel, seitlicher und oberer Abschluss, Innenecke",
+    "inhalt": [
+      "Die Fläche einer Wandbekleidung ist schnell gedeckt — kritisch sind die Ränder. Unten am Sockel, seitlich am Ende der Deckung, oben unter dem überkragenden Bauteil und in der Innenecke entscheidet sich, ob Wasser draußen bleibt und die Hinterlüftung weiter funktioniert.",
+      "Am Sockel deckst du die ersten Gebinde beziehungsweise Schindelreihen in der Regel unterlegt, damit die Neigung gleich bleibt. Das unterste Gebinde braucht etwa 30 Zentimeter Abstand zum Boden — sonst steht es im Spritzwasser oder hat direkten Erdkontakt. Die Wand darunter schützt ein Tropfblech oder eine Rinne.",
+      "Die Platten oder Schindeln dürfen nicht auf dem Abtropfprofil aufsitzen. Ist kein Abtropfprofil vorgesehen, hältst du über der Fußlatte beziehungsweise der Tragkonstruktion einen Überstand von 2 bis 5 Zentimetern bei Platten und mindestens 5 Zentimetern bei Holzschindeln ein.",
+      "Auch am Sockel muss die erforderliche Mindestlüftungsöffnung gewährleistet bleiben — sonst nützt die beste Hinterlüftung weiter oben nichts. Damit dort keine Nagetiere und Insekten hineinkommen, sollte die Öffnung mit einem Lüftungsgitter verschlossen werden.",
+      "Einen seitlichen Wandabschluss brauchst du, wenn die Deckung an einer Gebäudeecke endet und nicht weitergeführt wird, oder wenn nur Teile einer Wand bekleidet werden. Hergestellt wird er entsprechend den Ausführungen an Gebäudeecken.",
+      "Beim oberen Abschluss gilt: Überragt ein Gesims, ein Dachüberstand oder ein anderes überkragendes Bauteil die Bekleidung, sind keine weiteren Maßnahmen nötig — aber der Abstand zu diesem Bauteil muss für die Belüftung ausreichen. Sonst deckst du oben mit Metallprofilen, Mauerwerksabdeckungen oder Ortgangziegeln ab.",
+      "Bei Schiefer- und Faserzementdeckungen führst du den oberen Abschluss als auslaufende Deckung oder mit aufgelegtem Abschlussgebinde aus. Die seitliche Überdeckung beträgt bei Faserzementplatten und aufgelegter Deckung mindestens 4 Zentimeter, bei Schiefer mindestens 5 Zentimeter. Befestigt wird mit mindestens zwei Schieferstiften oder einem Haken und zwei Stiften innerhalb der Überdeckung.",
+      "Die Innenecke führst du mit Schichtstücken aus Metall oder Metallprofilen aus — oder als untergelegte beziehungsweise eingebundene Kehldeckung. Als Kehlsteine nimmst du schmalere Steine als in der Fläche, Mindestbreite 10 Zentimeter. Die Höhenüberdeckung entspricht mindestens der Flächendeckung. Die Kehldeckung braucht eine Eckschalung aus Brettern und Dreikantleisten.",
+      "Für Befestigung, Ortausbildung und Mindestüberdeckungen in der Innenecke gelten sinngemäß die Regeln der Außeneckausbildung. Die Randzahlen zum Mitnehmen: 30 Zentimeter Bodenabstand, 2 bis 5 beziehungsweise 5 Zentimeter Überstand am Sockel, 4 und 5 Zentimeter seitliche Überdeckung oben, 10 Zentimeter Kehlsteinbreite."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf15-l16",
+    "lernfeld": "lf15",
+    "thema": "Materialbedarf Fassadentafeln",
+    "titel": "Massen ermitteln: Fassadenflächen, laufende Meter und Wangen",
+    "inhalt": [
+      "Aus der Zeichnung wird die Bestellung. Du brauchst Flächen in Quadratmetern für die Deckung, Längen in laufenden Metern für alles, was mit Sonderstücken oder Profilen eingefasst wird, und daraus die Stückzahlen mit Zuschlag.",
+      "Fassadenfläche des Buchbeispiels: A = 10,00 mal 11,25 = 112,5 Quadratmeter. Ein Fenster misst 1,25 mal 1,50 = 1,875 Quadratmeter. Wichtig: 1,875 liegt unter 2,5 Quadratmetern, und Öffnungen unter 2,5 Quadratmetern werden nach VOB übermessen, also NICHT abgezogen. Wer die kleinen Fenster abzieht, rechnet zu wenig Material.",
+      "Jetzt die laufenden Meter. Bei 8 Fenstern: Stürze 8 mal 1,25 = 10,00 Meter und Brüstungen ebenfalls 10,00 Meter. Laibungen 2 mal 8 mal 1,50 = 24,00 Meter, denn jedes Fenster hat zwei senkrechte Laibungen. Gebäudeaußenecken 2 mal 11,25 = 22,50 Meter, Sockel und Attika je 10 Meter.",
+      "Merke dir die Richtung: Sturz und Brüstung liegen waagerecht, also rechnest du mit der Fensterbreite und zählst sie je einmal. Laibungen stehen senkrecht, also rechnest du mit der Fensterhöhe — und die kommt bei jedem Fenster doppelt vor.",
+      "Bei den Gaubenwangen kommst du über den Satz des Pythagoras zur Tiefe: t = Wurzel aus (Gaubenschräge Quadrat minus vordere Höhe Quadrat) = Wurzel aus (3,80 Quadrat minus 1,10 Quadrat) = Wurzel aus 13,23 = 3,64 Meter. Deckfläche beider Wangen: A = 1/2 mal 1,10 mal 3,64 mal 2 = 4,00 Quadratmeter.",
+      "Das mal 2 am Ende ist entscheidend — eine Schleppgaube hat zwei Wangen. Eine einzelne Wange hätte nur 2,00 Quadratmeter. Wer die Verdopplung vergisst, bestellt die Hälfte des Materials.",
+      "Jetzt die Stückzahl bei Rechteckschiefern 25 mal 20 Zentimeter in Doppeldeckung mit 2 Zentimetern Überdeckung: Decksteinfläche = ((25 minus 2) geteilt durch 2) mal 20 = 11,5 mal 20 = 230 Quadratzentimeter. Steine je Quadratmeter: 10000 geteilt durch 230 = 43,5 Stück.",
+      "Bedarf für die 4,00 Quadratmeter Wangenfläche: 4,00 mal 43,5 = 174 Stück, plus 5 Prozent Verhau sind 9 Stück, also 183 Stück. Nagelbedarf bei 2 Nägeln je Stein: 183 mal 2 = 366 Nägel plus Verluste. Runde die Stückzahl immer auf.",
+      "Warum die Division durch 2? Bei der Doppeldeckung wird die Breite abzüglich Überdeckung halbiert — deshalb steht in der Decksteinfläche die Hälfte der verbleibenden Breite. Vergisst du die Halbierung, kommt nur die halbe Stückzahl heraus."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]
