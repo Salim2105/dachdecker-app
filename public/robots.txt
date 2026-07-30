@@ -1,5 +1,5 @@
 # Private Lern-App. Nichts hier gehört in einen Suchindex.
-# Der verbindliche Schutz ist Cloudflare Access; das hier ist die Höflichkeitsform
-# für Crawler, die sich daran halten.
+# Der verbindliche Schutz ist die Rolle `dachdecker` in staticwebapp.config.json;
+# das hier ist die Höflichkeitsform für Crawler, die sich daran halten.
 User-agent: *
 Disallow: /
