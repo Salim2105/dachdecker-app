@@ -124,5 +124,137 @@
     ],
     "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
     "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l08",
+    "lernfeld": "anhang3",
+    "thema": "Metalleigenschaften",
+    "titel": "Metalle am Dach: Dichte, Schmelzpunkt, Dehnung",
+    "inhalt": [
+      "Metalle triffst du auf jeder Baustelle: als Dach- und Fassadenbleche, in Entwässerungsanlagen wie Rinnen und Fallrohren, als Bewehrungsstähle und Matten im Stahlbetonbau und als Stahlträger im Metallbau. Rund 60 Prozent der Metalle aus wiederverwendeter Herstellung bestehen schon aus Recyclingrohstoffen — Metall lässt sich beliebig oft einschmelzen, ohne an Qualität zu verlieren.",
+      "Die Dichte in kg/dm³ merkst du dir als Reihe: Aluminium 2,7 – Zink 7,1 – Edelstahl 7,9 – Kupfer 8,9 – Blei 11,3. Blei hat damit von diesen Metallen die höchste Dichte, Aluminium die geringste. Kupfer liegt mit 8,9 kg/dm³ dazwischen.",
+      "Was das praktisch heißt: Aluminium hat nur etwa ein Drittel der Dichte von Stahl, deshalb ist bei Tragwerken die Masseneinsparung beachtlich. Umgekehrt lässt sich Blei wegen seiner hohen Masse gut auf einen Untergrund drücken.",
+      "Schmelzpunkte: Blei 327 °C, Zink 419 °C, Aluminium 660 °C, Kupfer 1083 °C, Edelstahl 1500 °C. Der Zusammenhang für die Praxis: Blei und Zink mit den niedrigsten Schmelzpunkten lassen sich am leichtesten löten, Edelstahl mit 1500 °C am schwersten. Pass auf beim Aluminium — die 1083 °C gehören zu Kupfer, nicht zu Alu.",
+      "Bei der Temperaturdehnzahl ist es fast umgekehrt: Blei dehnt sich mit 0,029 mm/(m·K) am stärksten, Edelstahl mit 0,011 mm/(m·K) am wenigsten. Deshalb brauchen Bleiabdeckungen deutlich großzügigere Dehnungsmöglichkeiten als Edelstahlbänder.",
+      "Masse eines Coils: erst das Volumen in dm³, dann mal Dichte. Volumen = (Breite in mm geteilt durch 100) mal (Dicke in mm geteilt durch 100) mal (Länge in m mal 10). Achte auf die Umrechnung — 1 dm sind 100 mm. Danach gilt: Masse = Volumen mal Dichte.",
+      "Beispiel Kupfer, 1000 mm breit, 0,6 mm dick, 30 m lang: 10 dm mal 0,006 dm mal 300 dm ergibt 18 dm³, mal 8,9 kg/dm³ sind 160 kg. Dieselbe Rolle in Aluminium wöge mit 2,7 kg/dm³ nur 48,6 kg, also weniger als ein Drittel.",
+      "Längenänderung durch Temperatur: Delta l = Temperaturdehnzahl mal Länge mal Temperaturunterschied, kurz Δl = α · l · ΔT. Beispiel: 10 m Blei mit α = 0,029 und 80 K ergeben 23,2 mm. Derselbe Streifen aus Edelstahl mit α = 0,011 dehnt sich nur 8,8 mm — fast dreimal weniger.",
+      "Kurzcheck ohne Buch: Welches der fünf Metalle hat die höchste, welches die geringste Dichte? Welche zwei lassen sich am leichtesten löten und warum? Wer dehnt sich stärker, Blei oder Edelstahl? Wie rechnest du aus mm-Maßen ein Volumen in dm³? Wie lautet die Formel für die Längenänderung?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l09",
+    "lernfeld": "anhang3",
+    "thema": "Eisenmetalle",
+    "titel": "Grauguss, Baustahl und legierter Stahl",
+    "inhalt": [
+      "Eisenmetalle begegnen dir am Bau als Gussrohre und Schachtabdeckungen im Boden, als Stahlträger im Skelett und als Bewehrung im Beton — du musst wissen, welche Sorte wofür taugt, denn Grauguss und Baustahl verhalten sich völlig unterschiedlich.",
+      "Grauguss entsteht, wenn Roheisen bei hoher Temperatur unter Beimengung von Silicium geschmolzen wird. Er besitzt eine hohe Druckfestigkeit und eine geringe Rostneigung. Sein Nachteil: Er ist spröde und lässt sich nicht schmieden.",
+      "Aus Grauguss macht man deshalb dickwandige Gussteile: Entwässerungsrohre, Bodeneinläufe und Schachtabdeckungen. Für Dachrinnen taugt er dagegen nicht — dafür ist er zu spröde und nicht schmiedbar. Wenn in einer Antwort „Grauguss für Dachrinnen“ steht, ist sie falsch.",
+      "Baustahl steckt im Skelettbau, im Brückenbau, im Hallenbau sowie im Tief- und Wasserbau. Aus Baustahl werden außerdem Betonstahl und Betonstahlmatten hergestellt — also genau die Bewehrungsstähle und Matten, die im Stahlbetonbau eingebaut werden.",
+      "Legierter Stahl entsteht, indem andere wertvolle Metalle wie Chrom, Nickel, Wolfram oder Mangan als Legierungszusätze eingeschmolzen werden. Je nach Legierungszusatz lassen sich bestimmte Eigenschaften wie Festigkeit, Härte und Elastizität gezielt beeinflussen.",
+      "Jeder Zusatz hat seine eigene Wirkung: Nickel und Chrom machen den Stahl nichtrostend und schweißbar, Mangan und Wolfram erhöhen Festigkeit und Härte, Silicium steigert die Elastizität. Die Zusätze verbessern die Eigenschaften also gezielt — sie verringern die Festigkeit nicht.",
+      "Eine besondere Form des legierten Stahls ist der Edelstahl. Wenn du also Edelstahlband am Dach verarbeitest, hast du legierten Stahl in der Hand — mit genau den Eigenschaften, die ihm die Legierungszusätze mitgegeben haben.",
+      "Kurzcheck ohne Buch: Wie entsteht Grauguss, und welche drei Produkte kannst du nennen? Warum ist er für Dachrinnen ungeeignet? Vier Einsatzbereiche für Baustahl? Welche vier Legierungsmetalle fallen dir ein, und was bewirken Nickel, Chrom, Mangan, Wolfram und Silicium?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l10",
+    "lernfeld": "anhang3",
+    "thema": "Blei",
+    "titel": "Blei am Dach und elektrochemische Korrosion",
+    "inhalt": [
+      "Blei verarbeitest du am Dach als Bleischürze rund um Dachfenster und als Deckung an Türmen und Mitteldächern. Und weil Blei dort auf andere Metalle trifft, gehört die elektrochemische Korrosion direkt daneben — sie entscheidet, welches der beiden Metalle stehen bleibt.",
+      "Blei ist weich und dehnbar, also sehr geschmeidig und biegsam — genau deshalb bekommst du es an jede Form gedrückt. Es besitzt aber nur geringe Festigkeit, Härte und Elastizität. Und: Blei ist das schwerste und dichteste aller Gebrauchsmetalle.",
+      "Gewonnen wird Blei aus Bleiglanz, heute aber hauptsächlich aus Recyclingprodukten aufbereitet. Die frische Schnittfläche ist silberweiß und stark glänzend; mit der Zeit bekommt sie einen stumpfen, blaugrauen Überzug. Wenn Blei am Dach also matt und blaugrau wird, ist das normal.",
+      "Wichtig für dich selbst: Blei und Bleiverbindungen sind giftig. Gelangen diese Gifte in den Körper, kommt es zu einer schleichenden Bleivergiftung. Nach jeder Arbeit mit Blei müssen deshalb unbedingt die Hände gewaschen werden.",
+      "Bleibleche werden mit natürlicher oder mit industriell veredelter Oberfläche angeboten. Einen handwerklichen Oberflächenschutz kannst du nach der Montage durch Streichen mit Öl aufbringen. Von Schwefel- und Salzsäure werden Bleibleche nicht angegriffen, von Laugen dagegen zerstört.",
+      "Frischen Kalk- und Zementmörtel hältst du von Blei fern — das gilt hier genauso wie bei Aluminium und Titanzink. Auch längere Feuchteeinwirkung solltest du vermeiden, weil es sonst zu Korrosion kommen kann.",
+      "Elektrochemische Korrosion entsteht zwischen zwei verschiedenen Metallen, wenn eine elektrisch leitende Flüssigkeit dazukommt — ein Elektrolyt. Dann fließt Strom, ähnlich wie in einer Batterie; man spricht vom galvanischen Element. Dieser Strom hat die Zerstörung eines Metalls zur Folge.",
+      "Zwei Bedingungen müssen also zusammenkommen: zwei verschiedene Metalle und ein Elektrolyt. Als Elektrolyte wirken Luftfeuchtigkeit, Säuren, Laugen und Salzlösungen. Bei zwei gleichen Metallen entsteht keine Spannungsdifferenz und damit auch kein Stromfluss.",
+      "Zerstört wird immer das unedlere Metall, das edlere bleibt unversehrt. Kurzcheck ohne Buch: Welche Eigenschaften machen Blei geschmeidig, welche fehlen ihm? Warum wäschst du nach Bleiarbeit die Hände? Welche zwei Bedingungen braucht elektrochemische Korrosion? Welches Metall wird dabei zerstört?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l11",
+    "lernfeld": "anhang3",
+    "thema": "Nieten",
+    "titel": "Bleche umformen und nieten",
+    "inhalt": [
+      "Bleche kommen flach vom Coil und müssen am Dach erst in Form gebracht und dann verbunden werden: Kanten, Runden und Bördeln formen das Blech, Nieten hält zwei Bleche dauerhaft zusammen.",
+      "Kanten brauchst du für Falzen, Anschlüsse und Verwahrungen. Die zentrale Zahl dabei: Der Biegeradius sollte mindestens der dreifachen Blechdicke entsprechen. Ist der Radius zu eng, reißt das Blech an der Außenseite auf.",
+      "Runden heißt, Bleche zylinder- oder kegelförmig zu verformen — nötig für die Herstellung von Rohren und Dachrinnen. Das Runden erfolgt mit der Rundmaschine.",
+      "Bördeln ist das Abbiegen gekrümmter Blechkanten, meist auf dem Bördeleisen mithilfe des Holzhammers — so entsteht zum Beispiel der Rand am Dachrinnenboden. Kleinere Bördel werden mit der Sickenmaschine geformt.",
+      "Ein Niet besteht aus Schaft, Setzkopf und Schließkopf. Nach der Kopfform unterscheidet man Halbrundniete und Senkniete. Die Nietlöcher in den zu verbindenden Werkstücken können gebohrt oder gelocht werden — und zwar nur so groß, dass sich der Niet leicht eindrücken lässt, nicht deutlich größer.",
+      "Der Ablauf: Zuerst werden mit dem Nietenzieher die Teile zusammengedrückt und der Niet wird angezogen. Danach wird der Nietschaft mit dem Niethammer gestaucht und durch schräg gerichtete Schläge zum Schließkopf vorgeformt. Mit dem Kopfmacher wird er fertig geformt.",
+      "Die Regel für die Verarbeitungstemperatur ist kurz: Niete bis 8 mm Durchmesser werden kalt geschlagen, über 8 mm warm. Die Grenze liegt also bei 8 mm — bis dahin kalt, darüber warm.",
+      "Blindniete werden von nur einer Seite gesetzt — daher der Name — und genau das macht sie für Blechverbindungen so geeignet. Dabei wird der Nietdorn durch den Hohlniet gezogen, der Schaft gewellet und der Schließkopf geformt; anschließend bricht der überstehende Dorn an der eingekerbten Sollbruchstelle ab.",
+      "Fachgerecht ausgeführte Nietverbindungen können hohe Zugkräfte aufnehmen; der Nietschaft wird dabei auf Abscherung beansprucht. Kurzcheck ohne Buch: Wie heißen die drei Teile eines Niets? Ab welchem Durchmesser wird warm genietet? Wie groß muss das Nietloch sein? Welcher Biegeradius gilt beim Kanten?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l12",
+    "lernfeld": "anhang3",
+    "thema": "Korrosionsschutz",
+    "titel": "Korrosionsschutz: konstruktiv, Anstrich, metallischer Überzug",
+    "inhalt": [
+      "Korrosionsschutz ist alles, was du tust, damit Metall am Bau nicht zerstört wird — ein Teil davon passiert schon beim Planen, der Rest mit Pinsel und Verzinkerei. Halte drei Arten sauber auseinander: konstruktiver Schutz, nichtmetallischer Schutz durch Anstriche und metallischer Schutz durch Überzüge.",
+      "Konstruktiver Korrosionsschutz heißt: korrosionsfördernde Stoffe fernhalten und elektrochemische Korrosion vermeiden. Dazu gehört die richtige Wahl der Baustoffe und ihre fachgerechte Verarbeitung — und ausdrücklich, dass sich verschiedene Metalle nicht unter Feuchtigkeitszutritt berühren. Anstriche und Überzüge zählen nicht dazu, die kommen zusätzlich obendrauf.",
+      "Die Grundregel dahinter kennst du aus der Spannungsreihe: Metalle, die darin weit auseinanderliegen, dürfen nicht zusammengebaut werden. Konstruktiver Schutz heißt deshalb vermeiden statt reparieren — du planst den Schaden weg, statt ihn nachträglich zu überstreichen.",
+      "Beim Anstreichen entscheidet der Untergrund. Er muss sorgfältig vorbereitet werden, vorhandene Rostschichten sind zu entfernen. Dafür nennt die Aufgabe vier Wege: Schleifmaschinen, Flammstrahlen, Sandstrahlen oder chemische Entrostung. Erst wenn der Untergrund sauber ist, kommt Farbe drauf.",
+      "Rost einfach überstreichen funktioniert nicht — er arbeitet unter der Farbe weiter. Die Farbschicht sieht dann eine Weile gut aus, während sich das Bauteil darunter weiter auffrisst. Deshalb steht die Untergrundvorbereitung an erster Stelle und nicht der Anstrich.",
+      "Als Rostschutzpigmente kommen Bleimennige, Zinkstaub und Zinkchromat infrage. Sie verringern das Rosten von Eisen und Stahl auf zwei Wegen: Ihre dichten Schichten von 120 μm halten Sauerstoff und Wasser von der Metalloberfläche fern, und zusätzlich wirken sie auf elektrochemische Weise.",
+      "Metallische Überzüge bringst du auf drei Arten auf: durch Galvanisieren, im geschmolzenen Zustand durch Tauchen — das ist das Feuerverzinken — und durch Spritzen, zum Beispiel Spritzverzinken. Infrage kommen sie hauptsächlich für Werkstücke aus Stahl.",
+      "Den Ablauf beim Stückverzinken merkst du dir als Kette: Entfetten, Spülen, Beizen, erneutes Spülen, Fluxen, Trocknen, Verzinken, Abkühlen. Auffällig ist, wie viel davon reine Reinigung ist — genau die entscheidet darüber, ob die Zinkschicht später haftet.",
+      "Kurzcheck ohne Buch: Welche drei Arten von Korrosionsschutz kannst du unterscheiden? Was gehört zum konstruktiven Schutz und was nicht? Welche vier Verfahren bereiten einen rostigen Untergrund vor, und warum darf Rost nicht überstrichen werden? Nenne drei Rostschutzpigmente, drei Wege für metallische Überzüge und die Schritte beim Stückverzinken."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l13",
+    "lernfeld": "anhang3",
+    "thema": "Spannungsreihe",
+    "titel": "Spannungsreihe und Kontaktspannung: welche Metalle zusammendürfen",
+    "inhalt": [
+      "Die Spannungsreihe ist dein Werkzeug, um schon vor dem Einbau zu entscheiden, ob zwei Metalle nebeneinander dürfen. Sie teilt die Metalle in zwei große Gruppen — edel und unedel — und gibt jedem einen Zahlenwert, mit dem du die Gefahr abschätzen kannst.",
+      "Als Basiselement wurde der Wasserstoff mit ± 0 gewählt. Chemiker haben die Spannungen der einzelnen Metalle gegen dieses Basiselement gemessen. Der Wasserstoff ist damit die Trennlinie: Was auf der einen Seite liegt, ist edel, was auf der anderen liegt, unedel.",
+      "Unterhalb des Wasserstoffs stehen die edlen Metalle, zum Beispiel Kupfer, Silber und Gold. Oberhalb stehen die unedlen: Calcium, Magnesium, Aluminium, Zink, Eisen, Nickel und Blei. Aluminium gehört also nicht zu den edlen Metallen — mit 1,7 Volt ist es sogar eines der unedelsten Gebrauchsmetalle.",
+      "Die Zahl ist keine Deko: Je weiter zwei Metalle in der Reihe auseinanderliegen, desto stärker ist die Korrosionsgefahr. Zwei Metalle dicht beieinander vertragen sich, zwei weit auseinander nicht. Genau darauf läuft jede Entscheidung über eine Materialpaarung hinaus.",
+      "Die Kontaktspannung rechnest du mit den Beträgen. Aluminium liegt bei 1,7 Volt im unedlen Bereich, Kupfer bei 0,35 Volt im edlen Bereich. Also: Kontaktspannung gleich 1,7 plus 0,35 gleich 2,05 Volt. Addiert wird, weil die beiden auf verschiedenen Seiten des Wasserstoffs liegen.",
+      "Warum addieren und nicht subtrahieren: Aluminium liegt bei minus 1,7 Volt, Kupfer bei plus 0,35 Volt. Der Abstand über den Nullpunkt hinweg ist die Summe der Beträge. Mit den gerundeten Tabellenwerten minus 1,66 und plus 0,34 kämst du auf 2,00 Volt — dieselbe Aussage, nur anders gerundet.",
+      "Aus dieser Logik folgt die Tabelle der Werkstoffverbindungen. Nicht zulässig sind Aluminium mit Kupfer, verzinkter Stahl mit Kupfer und Titanzink mit Kupfer. Merkregel für die ganze Tabelle: Kupfer verträgt sich nicht mit Aluminium, Titanzink und verzinktem Stahl.",
+      "Zulässig ist dagegen Blei mit Kupfer — Blei liegt mit 0,12 Volt dicht am Wasserstoff und damit nahe genug bei Kupfer. Blei und nichtrostender Stahl vertragen sich überhaupt mit allen Metallen. Der Problemfall ist also Kupfer, nicht die Paarung an sich.",
+      "Kurzcheck ohne Buch: Welches Element ist das Basiselement der Spannungsreihe, und mit welchem Wert? Nenne je drei edle und drei unedle Metalle. Rechne die Kontaktspannung von Aluminium und Kupfer aus und erkläre, warum du addierst. Welche drei Kombinationen mit Kupfer sind nicht zulässig, und welche zwei Metalle vertragen sich mit allen?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang3-l14",
+    "lernfeld": "anhang3",
+    "thema": "Aluminium",
+    "titel": "Aluminium und Titanzink: Eigenschaften, Grenzen, Verarbeitung",
+    "inhalt": [
+      "Aluminium und Titanzink sind zwei der Metalle, die du am Dach verbaust — beide gut zu verarbeiten, beide empfindlich gegen die falsche Nachbarschaft und gegen den falschen Untergrund. Wer ihre Grenzen kennt, baut den Schaden gar nicht erst ein.",
+      "Aluminium wird aus Bauxit gewonnen und ist sehr weich, dehnbar und einfach zu bearbeiten. Mit 2,7 kg/dm³ hat es nur etwa ein Drittel der Dichte von Stahl — bei Tragwerken ist die Masseneinsparung dadurch beachtlich.",
+      "An der Luft überzieht sich Aluminium mit einer dünnen, aber dichten und fest haftenden Oxidschicht, die das Metall schützt. Beim Eloxalverfahren wird genau diese Schicht elektrolytisch verstärkt; sie ist dann besonders hart und witterungsbeständig. Eloxal steht für elektrolytisch oxidiertes Aluminium.",
+      "Aluminium wird von Säuren und Laugen zerstört, gegen Laugen ist es besonders empfindlich. Frischer Kalk- und Zementmörtel reagiert alkalisch und greift es an — davor musst du es schützen. Als Sperrmaßnahme kommt zum Beispiel ein Abziehlack auf das Aluminiumteil.",
+      "Der zweite Fehler ist die falsche Nachbarschaft: Aluminium darf nicht mit edleren Metallen wie Kupfer in Berührung kommen, auch nicht über Niete. Als Verbindungsmittel kommen deshalb nur verzinkte Teile und rostfreier Stahl infrage. Dazu dehnt sich Aluminium bei Erwärmung sehr stark aus — die Befestigung muss das mitmachen.",
+      "Titanzink ist das Metall mit bestimmten Kupfer- und Titananteilen, das im Dachdeckungsbereich für Dach- und Wandeindeckungen verwendet wird. Wie Aluminium und Blei ist es empfindlich gegenüber Laugen und Säuren. Der kritische Partner ist Kupfer: Wegen der chemischen Korrosion ist dieser Kontakt zu vermeiden.",
+      "Mit Aluminium, Blei und Edelstahl lässt sich Titanzink dagegen problemlos kombinieren. Untereinander verbindest du Titanzinkbauteile durch Weichlöten, Falzen oder Kleben. Bei der Verarbeitung gilt außerdem: Bei Temperaturen unter 10 °C muss das Material angewärmt werden.",
+      "Bearbeiten heißt bei Metallen sägen, feilen, bohren und schneiden. Für viele Arbeiten müssen Bleche zusätzlich gekantet, gerundet und gebördelt werden. Beim Löten sollen Lot und Werkstoff legieren — das Lot dringt geringfügig in die Metalloberfläche ein und verbindet sich mit ihr, statt nur obenauf zu kleben.",
+      "Genau das verhindern Fett und Oxidschichten. Deshalb muss das Flussmittel Oxidschichten beseitigen und ihre erneute Bildung verhindern. Kurzcheck ohne Buch: Woraus wird Aluminium gewonnen, wie schwer ist es im Vergleich zu Stahl, und was passiert beim Eloxieren? Welche Verbindungsmittel sind zulässig? Womit verträgt sich Titanzink nicht, und ab wann wird angewärmt?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]

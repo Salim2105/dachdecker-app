@@ -1,1 +1,363 @@
-[]
+[
+  {
+    "id": "anhang2-l01",
+    "lernfeld": "anhang2",
+    "thema": "Wärme",
+    "titel": "Wärme: Bewegungsenergie der Moleküle",
+    "inhalt": [
+      "Wärme ist das Fundament von allem, was du später über Dämmung, U-Wert und Tauwasser rechnest — ohne dieses Grundverständnis bleibt der gesamte Wärmeschutz am Dach reines Auswendiglernen.",
+      "Wärme kann als Bewegungsenergie der Moleküle bezeichnet werden. Bei Feststoffen schwingen die Moleküle hin und her und kehren an ihren Ausgangsort zurück. Je mehr ein Körper erwärmt wird, umso heftiger bewegen sich die Moleküle. Vollkommen still stehen sie erst am absoluten Nullpunkt bei minus 273 Grad Celsius.",
+      "Bei Flüssigkeiten und Gasen bewegen sich die Moleküle wahllos durcheinander und erreichen im gasförmigen Zustand besonders hohe Geschwindigkeit. Temperatur ist nichts anderes als ein Maß für diese Molekülbewegung. Daraus folgt auch die Wärmeausdehnung: Schneller bewegte Moleküle brauchen mehr Platz.",
+      "Wärme entsteht auf vier Arten. Mechanisch durch Reibung, zum Beispiel beim Bohren in Beton — nach längerem Bohren ist der Bohrerkopf heiß. Elektrisch, wenn Strom durch Widerstandsdrähte fließt. Chemisch bei der Verbrennung von Kohle, Gas, Öl oder Holz. Und natürlich durch Sonne, Erdwärme oder Wind.",
+      "Der Weg geht auch andersherum: Der Dampf im Kochtopf hebt den Deckel, Wärme wird zu mechanischer Energie. Solarenergie zählt zu den natürlichen Wärmequellen. Für dich ist das doppelt wichtig — Röhrenkollektoren auf dem Flachdach montierst du selbst und musst dabei die Dachhaut sicher durchdringen.",
+      "Die Wärmemenge misst du in Joule (J), im Bauwesen auch in Wattsekunde (Ws), Wattstunde (Wh) und Kilowattstunde (kWh). Kelvin ist dagegen eine Temperatureinheit und keine Energieeinheit — das ist die häufigste Verwechslung bei diesem Thema.",
+      "Die Umrechnungen: 1 Joule = 1 Wattsekunde, 1 Wattstunde = 3600 Wattsekunden, 1 Kilowattstunde = 1000 Wattstunden. Einmal komplett durchgerechnet ergibt das 1 kWh = 1000 · 3600 Ws = 3,6 Millionen Joule. Zum Einprägen: 1 kg Wasser um 1 Grad zu erwärmen kostet 4,19 kJ."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l02",
+    "lernfeld": "anhang2",
+    "thema": "Wärmeschutz",
+    "titel": "Wie Wärme wandert: Leitung, Strömung, Strahlung",
+    "inhalt": [
+      "Der Wärmeschutz entscheidet, ob die Wärme im Winter im Gebäude bleibt und im Sommer draußen — und das Dach ist eine der Flächen, über die sie verschwindet.",
+      "Wärme wird auf drei Arten übertragen: durch Leitung, durch Strömung (Konvektion) und durch Strahlung. Das Buch unterscheidet drei Übertragungsarten: Leitung, Strömung (Konvektion) und Strahlung. Für den Wärmeschutz spielt die Wärmeleitung die besondere Rolle, weil durch sie im Winter wertvolle Wärme aus dem Gebäude entweicht und im Sommer Wärme ins Hausinnere eingeleitet wird.",
+      "Konvektion: Träger der Wärme sind bewegte Flüssigkeiten oder Gase, zum Beispiel Luft. Die wärmeren Teilchen steigen auf, an ihre Stelle treten die kälteren, es entsteht eine Bewegung. Ohne Luft oder Flüssigkeit gibt es keine Konvektion. Genau dieses Prinzip nutzt die Haustechnik bei Heizkörpern, Kaminen und Abluftschächten.",
+      "Die Wirkung der Wärmestrahlung hängt wesentlich von der Oberfläche ab: davon, ob die benachbarten Körper die Wärme aufnehmen (absorbieren) oder wieder abgeben (reflektieren). Raue, dunkle Materialien wie dunkler Putz nehmen mehr Wärmestrahlung auf, helle und glatte Oberflächen wie Aluminium reflektieren sie. Deshalb heizt sich ein dunkles Dach im Sommer stärker auf, und deshalb sind Dampfsperren häufig alukaschiert.",
+      "Damit ein Baustoff Wärme schlecht leitet, soll er eine geringe Rohdichte, viele Lufteinschlüsse und wenig Feuchte haben. Luft ist ein schlechter Wärmeleiter — sie ist der eigentliche Dämmstoff, das Material hält sie nur an Ort und Stelle. Baustoffe mit großer Dichte wie Stahl, Normalbeton oder Kupfer leiten dagegen gut, und Wasser in den Poren erhöht die Wärmeleitfähigkeit.",
+      "Die Wärmeleitfähigkeit Lambda hat die Einheit W/(m·K). Sie gibt die Wärmemenge in Wattsekunden an, die in 1 Sekunde durch 1 m² einer 1 Meter dicken Schicht hindurchgeht, wenn der Temperaturunterschied beider Bauteiloberflächen 1 Kelvin beträgt. Je größer Lambda, desto größer die Wärmeleitung — ein guter Dämmstoff hat ein kleines Lambda unter 0,1 W/(m·K).",
+      "Jeder Baustoff hat seinen eigenen Lambda-Wert, im Versuchslabor ermittelt und im Tabellenbuch nachzuschlagen. So verteilen sich die Wärmeverluste eines Gebäudes: Heizung und Schornstein 32 Prozent, Fenster 28 Prozent, Wände 18 Prozent, Dach und Flachdach 16 Prozent, Keller 6 Prozent — zusammen genau 100 Prozent.",
+      "Die Kennzahl, an der jedes Bauteil gemessen wird, ist der Wärmedurchgangskoeffizient U. Er gibt an, wie viel Wärme in Watt durch 1 m² eines Bauteils übertragen wird, wenn zwischen den beiderseits angrenzenden Lufttemperaturen ein Unterschied von 1 Kelvin besteht. Einheit W/(m²·K), Formel U = 1 ÷ (0,17 m²·K/W + R). Früher hieß er k-Wert."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l03",
+    "lernfeld": "anhang2",
+    "thema": "U-Wert",
+    "titel": "R und U berechnen — und die Wand richtig dämmen",
+    "inhalt": [
+      "Mit dem Wärmedurchlasswiderstand R und dem U-Wert rechnest du nach, ob ein Dach- oder Wandaufbau wirklich dämmt — das ist der Nachweis, den du bei jedem ausgetauschten Bauteil brauchst.",
+      "Der Wärmedurchlasswiderstand einer Schicht ist R = Schichtdicke d geteilt durch Wärmeleitfähigkeit Lambda, Einheit m²·K/W. Je kleiner Lambda und je größer die Schichtdicke d, desto größer ist R. Bei mehreren Schichten rechnest du jede einzeln aus und addierst. Je größer R, desto besser ist die Wärmedämmung.",
+      "Der U-Wert folgt daraus: U = 1 ÷ (0,17 m²·K/W + R), Einheit W/(m²·K). Die 0,17 fassen nach DIN 4108 die Wärmeübergangswiderstände zusammen — innen 0,13 und außen 0,04. Eine Ausnahme gibt es: An das Erdreich grenzende Wände rechnen mit einem äußeren Übergangswiderstand von 0.",
+      "Die Richtung darfst du nicht verdrehen: Je kleiner der U-Wert, desto geringer ist der Wärmeabfluss durch das Bauteil und umso größer sind die Energieeinsparwerte. Bei hohem U-Wert entweicht viel Wärme nach außen. Der U-Wert bestimmt den Wärmeschutz der Gebäudehülle.",
+      "Die ganze Kette in einer Zeile: kleines Lambda ergibt großes R, großes R ergibt kleines U, kleines U bedeutet guten Wärmeschutz. Ein großes Lambda führt dagegen zu einem kleinen R. Unterschied der beiden Kennwerte: R beschreibt nur das Bauteil selbst, U zusätzlich den Übergang zur Luft auf beiden Seiten — daher die 0,17 in der Formel.",
+      "Rechenbeispiel Außenwand: 0,015 m Kalkgipsputz (Lambda 0,87), 0,20 m Stahlbeton (Lambda 2,1), 0,06 m PS-Hartschaumplatten (Lambda 0,030) und 0,02 m Kalkzementputz (Lambda 0,87). R = 0,015/0,87 + 0,20/2,1 + 0,06/0,030 + 0,02/0,87 = 2,14 m²·K/W. U = 1 ÷ (0,17 + 2,14) = 0,43 W/(m²·K).",
+      "Achte auf die Einheiten: R in m²·K/W, U in W/(m²·K). Und sieh dir an, wer die Arbeit macht — die 6 cm Hartschaum liefern mit 2,0 m²·K/W fast den gesamten Widerstand, die 20 cm Stahlbeton nur etwa 0,10.",
+      "Bei der Wärmedämmung von Wänden unterscheidest du mehrere Varianten: Außendämmung, nachträgliche Verbesserung möglich, aber hohe Anforderungen an den Außenputz. Massivwand mit homogenem Aufbau aus porösen Hochlochziegeln, wärmespeichernd, aber teuer. Innendämmung, ohne Wärmespeicherung. Kerndämmung im Sandwichelement, nur als Fertigteil aus Stahlbeton möglich.",
+      "Die Unterscheidung, auf die es ankommt: Nur bei Außendämmung und massiven Aufbauten bleibt die Speichermasse innen. Bei der Innendämmung liegt sie außerhalb der Dämmebene und kann nicht mehr wirken."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l04",
+    "lernfeld": "anhang2",
+    "thema": "Gebäudeenergiegesetz",
+    "titel": "GEG: welche U-Werte gefordert sind und wie du sie nachweist",
+    "inhalt": [
+      "Das Gebäudeenergiegesetz (GEG) sagt dir, welchen U-Wert dein Dach nach einer Sanierung oder im Neubau höchstens haben darf — daran entscheidet sich, ob dein geplanter Aufbau überhaupt zulässig ist.",
+      "Ziel des GEG ist es, den CO2-Ausstoß in Deutschland deutlich zu reduzieren und so die Erderwärmung zu verlangsamen. Der Hintergrund sind die Zahlen: Gebäude verbrauchen jährlich 35 Prozent der Gesamtenergie in Deutschland und produzieren dabei etwa 120 Millionen Tonnen CO2. Das GEG löst die Energieeinsparverordnung (EnEV) ab.",
+      "Neu errichtete Gebäude müssen einen Teil der Gebäudeenergie aus erneuerbaren Energien decken, ein Nullverbrauch wird aber nicht gefordert. Selbst produzierter Photovoltaikstrom darf in der Energiebilanz angerechnet werden. Weiter gilt: Alte Heizungen müssen ausgetauscht, oberste Geschossdecken zu unbeheizten Dachräumen nachträglich gedämmt werden. Und wird bei einer Sanierung ein Bauteil ausgewechselt oder erneuert, muss der vorhandene U-Wert nachgewiesen werden.",
+      "Die Höchstwerte des GEG, alle in W/(m²·K): Außenwände U kleiner oder gleich 0,24. Dächer bei Steildächern 0,24, bei Flachdächern 0,20. Decken und Wände gegen unbeheizte Räume 0,30. Außenliegende Fenster 1,30 und Dachfenster 1,40.",
+      "Passend dazu nennt die Tabelle mögliche Dämmdicken: Flachdach 16 bis 20 cm, Steildach 14 bis 18 cm, Außenwände 14 bis 18 cm, Decken gegen unbeheizte Räume 10 bis 14 cm. Am mildesten ist die Anforderung gegen unbeheizte Räume, weil dahinter kein Außenklima, sondern ein gemäßigter Pufferraum liegt.",
+      "Nachweis Flachdach: 0,02 m Kalkgipsputz (Lambda 0,87), 0,16 m Stahlbeton C35/45 (Lambda 2,1), 0,18 m PUR-Hartschaum WLG 035 (Lambda 0,035) und 0,01 m Bitumendachbahnen (Lambda 0,17). R = 5,3 m²·K/W, U = 1 ÷ 5,47 = 0,18 W/(m²·K). Gefordert sind höchstens 0,20 — erfüllt. Der PUR-Hartschaum allein liefert 5,14 davon.",
+      "Gegenbeispiel Außenwand: 0,015 m Kalkgipsputz (Lambda 0,87), 0,17 m Mauerwerk HLz-1,2 (Lambda 0,42) und 0,10 m Mineralfaser WLG 035 (Lambda 0,035). R = 3,28, U = 1 ÷ 3,45 = 0,29 W/(m²·K) — mehr als die geforderten 0,24, die Dämmstoffdicke muss erhöht werden. Luftschicht und Fassadenplatten zählen nicht mit, weil sie mit der Außenluft in Verbindung stehen.",
+      "Einfache U-Wert-Berechnungen genügen bei einzelnen Sanierungsmaßnahmen, wenn nur ein Bauteil ausgewechselt oder erneuert wird; so kann der Bauhandwerker selbst nachvollziehen, ob seine Konstruktion passt. Bei umfassenden Maßnahmen ist dagegen eine energetische Gesamtbilanz erforderlich. Der Energieausweis stellt den jährlichen Energiebedarf eines Gebäudes dar, wird vom Energieberater ausgestellt und beim Hausverkauf gebraucht — er ersetzt die Bauteilberechnung nicht.",
+      "Am ausgebauten geneigten Dach darf der U-Wert von 0,24 W/(m²·K) nicht überschritten werden; die 0,20 sind der Flachdachwert. Zusätzlich muss der Feuchteschutz der Wärmedämmung berücksichtigt werden. Bei einer Untersparrendämmung werden die Schichten nur bis zum Sparren berechnet — der Sparren selbst gehört nicht in die Rechnung. Fertige zuerst eine Skizze des Dachaufbaus an."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l05",
+    "lernfeld": "anhang2",
+    "thema": "Wärmedämmstoffe",
+    "titel": "Was einen Dämmstoff zum Dämmstoff macht",
+    "inhalt": [
+      "Bevor du einen Dämmstoff einbaust, musst du wissen, was ihn überhaupt zum Dämmstoff macht und warum Feuchtigkeit ihn wertlos macht — das entscheidet über jede Materialwahl am Dach.",
+      "An Wärmedämmstoffe werden folgende Anforderungen gestellt: geringe Wärmeleitfähigkeit unter 0,1 W/(m·K) durch hohen Porenanteil, geringe Dichte und geringe Eigenfeuchte, dazu Witterungs- und Fäulnisbeständigkeit sowie eine geringe Bereitschaft, Feuchtigkeit aufzunehmen. Eine hohe Rohdichte ist gerade nicht gewünscht — schwere, dichte Stoffe leiten Wärme gut.",
+      "Der Grenzwert unter 0,1 W/(m·K) ist die Definition: Erst darunter spricht man von einem Wärmedämmstoff. Oft müssen die Stoffe zusätzlich weitere Anforderungen erfüllen, etwa Schalldämmung, Druckfestigkeit, Dampfdurchlässigkeit oder Feuerbeständigkeit — je nachdem, wo sie eingebaut werden.",
+      "Warum Feuchtigkeit unbedingt ferngehalten werden muss: Der Porenanteil, der eigentlich Luft enthalten soll, füllt sich mit Wasser. Wasser erhöht die Wärmeleitfähigkeit deutlich, die Dämmwirkung geht verloren — auch wenn der Dämmstoff äußerlich unverändert aussieht. Deshalb hängen Wärmeschutz und Feuchteschutz untrennbar zusammen.",
+      "Wärmedämmstoffe teilst du in drei Gruppen ein: natürliche wie Kork und Hanf, mineralische wie Mineralwolle und Schaumglas, künstliche wie Polystyrol und Polyurethan. Metalle wie Aluminium und Kupfer gehören nicht dazu — sie sind gerade besonders gute Wärmeleiter.",
+      "Der Kennzeichnungsschlüssel liest sich immer in derselben Reihenfolge: Material, Norm, Anwendungsgebiet, Produkteigenschaft, Wärmeleitfähigkeit, Brandverhalten, Dicke. Beispiel MW-EN 13162-DZ-dk-035-B1-100 bedeutet: Mineralwolle nach DIN EN 13162, Zwischensparrendämmung bei zweischaligem Dach, keine Druckbelastbarkeit, Wärmeleitfähigkeit 0,035 W/(m·K), schwer entflammbar, Dicke 100 mm.",
+      "Bei den Brandbuchstaben nicht vertauschen: B1 heißt schwer entflammbar, B2 heißt normal entflammbar. Wer die Reihenfolge des Schlüssels und diese Buchstaben kennt, kann jedes Etikett auf der Baustelle entziffern."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l06",
+    "lernfeld": "anhang2",
+    "thema": "Kennzeichnung",
+    "titel": "Das Etikett lesen: Kurzzeichen, Anwendungsgebiet, Eigenschaften",
+    "inhalt": [
+      "Am Etikett des Dämmpakets liest du ab, ob der Stoff an die Stelle darf, an der du ihn einbauen willst — Anwendungsgebiet, Druckbelastbarkeit und Brandverhalten stehen alle in einem einzigen Schlüssel.",
+      "Kurzzeichen der genormten Wärmedämmstoffe: MW für Mineralwolle, EPS für Polystyrol-Hartschaum, XPS für Polystyrol-Extruderschaum, PUR für Polyurethan-Hartschaum, CG für Schaumglas, ICB für expandierten Kork. Vorsicht bei Holz: WF steht für Holzfaser nach DIN EN 13171, WW für Holzwolle nach DIN EN 13168. Insgesamt sind zehn Dämmstoffe nach europäischer Norm geregelt.",
+      "Aus der Etikettierung eines Dämmpakets liest du Material und Norm, zum Beispiel Polystyrol-Hartschaum nach DIN EN 13163, außerdem Einsatzgebiet, Druckbelastbarkeit, Wärmeleitfähigkeit, Brandverhalten nach DIN EN 13501-1 sowie Dicke, Anzahl, Format und Fläche der Platten. Dazu kommen das Ü- oder CE-Kennzeichen und der CE-Kennzeichnungsschlüssel. Der Name des ausführenden Betriebs steht dort nicht.",
+      "Anwendungsgebiete: DAD Außendämmung von Dach oder Decke, vor Bewitterung geschützt. DZ Zwischensparrendämmung, zweischaliges Dach. WAB Außendämmung der Wand hinter Bekleidung. PW außen liegende Dämmung der Wand gegen Erdreich, PB unter der Bodenplatte gegen Erdreich. Der erste Buchstabe nennt das Bauteil: D für Decke oder Dach, W für Wand, P für Perimeter.",
+      "Die Produkteigenschaften folgen demselben Muster. Erster Buchstabe die Eigenschaft: d Druckbelastbarkeit, w Wasseraufnahme, z Zugfestigkeit. Zweiter Buchstabe die Stufe, von k (keine) über g (gering) und m (mittel) bis h (hoch) und x (extrem). Also dk keine Druckbelastbarkeit für Hohlraum- und Zwischensparrendämmung, dx extrem hohe für Industrieböden und Parkdecks, wf Wasseraufnahme durch flüssiges Wasser, zk keine Anforderung an die Zugfestigkeit, zh hohe.",
+      "Weiter geht es mit s für die schalltechnischen Eigenschaften: sk keine Anforderung, sg Trittschalldämmung mit geringer Zusammendrückbarkeit, sh Trittschalldämmung mit erhöhter Zusammendrückbarkeit. Mit t sind Anforderungen an die Verformung gemeint, etwa tk und tf für die Dimensionsstabilität unter Feuchte und Temperatur. Bei Trittschalldämmung ist die Zusammendrückbarkeit entscheidend: Der Dämmstoff muss federn können.",
+      "Dahinter stehen die drei Schallarten im Gebäude. Luftschall breitet sich durch die Luft aus, zum Beispiel Verkehrslärm. Körperschall breitet sich in festen Stoffen aus, etwa durch Klopfen und Hämmern auf Decken oder Wände. Trittschall entsteht durch das Begehen von Decken und ist eine Form des Körperschalls, keine eigenständige vierte Art."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l07",
+    "lernfeld": "anhang2",
+    "thema": "Natürliche Dämmstoffe",
+    "titel": "Kork, Holzfaser, Hanf und Cellulose",
+    "inhalt": [
+      "Natürliche Dämmstoffe begegnen dir im Steildach und im Holzrahmenbau — du musst wissen, welcher wohin gehört und welcher bei Hitze oder Feuchte Ärger macht.",
+      "Kork ist das abgestorbene Zellgewebe der Korkeiche, das etwa alle 7 bis 14 Jahre pro Baum geerntet werden kann. Daraus folgt der wichtigste Nachteil: Die Vorkommen an Kork reichen bei den heutigen Dämmstoffdicken bei Weitem nicht aus. Kork ist also gerade nicht in unbegrenzten Mengen verfügbar.",
+      "Vorteile von Kork sind seine hohe Alterungsbeständigkeit und seine Fäulnisbeständigkeit. Nachteile: Er ist teurer als Mineralwolle, muss trocken eingebaut und vor Durchfeuchtung geschützt werden. Er ist nur bis etwa 150 Grad Celsius hitzebeständig und deshalb nur bedingt mit Heißbitumen verarbeitbar.",
+      "Zwei Herstellungswege: Backkork entsteht bei der Expandierung durch Hitze und Druck, wobei die Körner durch die eigenen Harze gebunden werden. Bei künstlich gebundenen Korkplatten müssen Bindemittel hinzugegeben werden, außerdem kann Bitumen zur Imprägnierung zugeführt werden. Kork gibt es als Platte und als Schüttung; Platten werden in zweischalige Außenwände und in belüftete Dächer direkt unter der Dachhaut eingebaut. Beispielkennzeichnung: ICB-EN 13170-WH-B2-045-120.",
+      "Weiche Holzfaserplatten werden aus Nadelholzabfällen hergestellt, die zu Fasern zerschnitten und mit Wasserdampf zu Platten geformt werden. Die porösen Faserplatten lassen sich als Wand- und Bodenplatten einsetzen, eine Imprägnierung kann durch Bitumenzusätze erfolgen. Achtung bei Hitze: In bitumenhaltiger Form können sich die Platten bei zu großer Hitze entzünden. Als Unterdachkonstruktion müssen die Stöße in den Kehlen mit Heißbitumen abgedichtet werden. Kennzeichnung zum Beispiel WF-EN 13171-040-DAA-B1-60.",
+      "Hanf: Im Herstellungsprozess werden aus dem Hanfstroh die Fasern herausgesondert und zu Dämmvliesen verarbeitet. Hanf hat seine Resistenz gegen Fäulnis und Bakterien schon im Sanitärbereich bewiesen. Eingebaut wird er als Zwischensparrendämmung im Steildach und im Holzrahmenbau, nicht als Perimeterdämmung im erdberührten Bereich. Die Bezeichnung ist nicht genormt; THC-armer Nutzhanf ist in Deutschland erst seit 1996 wieder erlaubt.",
+      "Cellulose gibt es als Flockenschüttung und als Dämmplatten. Beide Formen bestehen zu mehr als 80 Prozent aus Altpapier, dazu kommen Borsalze als Brandschutz- und Schädlingsvernichtungsmittel. Die Flocken werden als Zwischensparrendämmung in trockene Hohlräume eingeblasen und verfilzen dort zu dichtem Vlies. Cellulose ist fäulnisresistent, muss aber trotzdem vor Feuchtigkeitszutritt geschützt werden. Das Einblasen gehört in Fachhände, sonst entstehen Lücken oder die Dämmung sackt nach."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l08",
+    "lernfeld": "anhang2",
+    "thema": "Tauwasserbildung",
+    "titel": "Luftfeuchte, Taupunkt und wann Tauwasser ausfällt",
+    "inhalt": [
+      "Tauwasser ist der Schaden, der von innen kommt: Wer nicht versteht, wann die Feuchtigkeit in der Luft flüssig wird, baut Dächer, die von innen durchfeuchten.",
+      "Ein Gebäude ist drei Feuchtebeanspruchungen ausgesetzt: Regen, Bodenfeuchte und Wasserdampf. Dazu passen drei Schutzmaßnahmen: Regenschutz, Bodenfeuchteschutz und Tauwasserschutz. Die Folgen fehlenden Schutzes sind erheblich — Schäden am Putz, Fäulnis und Schwämme im Holz sowie Pilzbefall, der auch ernsthafte Gesundheitsschäden nach sich ziehen kann.",
+      "Zwei Begriffe musst du sauber trennen. Die absolute Luftfeuchtigkeit gibt die Wassermenge in Gramm je Kubikmeter an. Die relative Luftfeuchtigkeit mit dem Formelzeichen Phi ist das Verhältnis der absoluten zur maximal möglichen Luftfeuchte: absolute Luftfeuchtigkeit geteilt durch maximale Luftfeuchtigkeit mal 100 Prozent.",
+      "Je wärmer die Luft, desto mehr Wasserdampf kann sie halten — das zeigt die Sättigungskurve. Genau daraus entsteht die Gefahr: Die absolute Feuchte kann gleich bleiben, während die relative Feuchte allein durch Abkühlung auf 100 Prozent steigt.",
+      "Rechenbeispiel: Bei 15 Grad Celsius enthält die Luft 9,4 g/m³ Wasserdampf, maximal möglich sind bei dieser Temperatur 13,3 g/m³. Also 9,4 geteilt durch 13,3 mal 100 = 70 Prozent relative Luftfeuchtigkeit. Die Luft kann folglich noch 30 Prozent Wasserdampf aufnehmen.",
+      "Die Taupunkttemperatur ist die Temperatur, bei der die Luft mit 100 Prozent relativer Luftfeuchte gesättigt ist. Bei weiterer Abkühlung fällt Tauwasser aus. Nicht mit dem Gefrierpunkt verwechseln — der Taupunkt hängt vom Feuchtegehalt der Luft ab und liegt meist deutlich über 0 Grad Celsius.",
+      "Weiter mit demselben Beispiel: Dieselbe Luft mit 9,4 g/m³ wird auf 5 Grad Celsius abgekühlt, wo maximal nur noch 7,2 g/m³ möglich sind. 9,4 minus 7,2 ergibt 2,2 g Tauwasser je Kubikmeter Luft. Schon bei 10 Grad Celsius war diese Luft gesättigt — das ist hier die Taupunkttemperatur.",
+      "Am Bauteil läuft es genauso ab: Im Winter nimmt die Temperatur im Bauteil von innen nach außen ab. Unterschreitet sie irgendwo den Taupunkt, kommt es genau dort zum Tauwasserausfall — und ohne entsprechenden Schutz durchfeuchten die Bauteile."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l09",
+    "lernfeld": "anhang2",
+    "thema": "sd-Wert",
+    "titel": "sd-Wert und Dampfsperre: innen dicht, außen offen",
+    "inhalt": [
+      "Mit dem sd-Wert weist du nach, dass dein Aufbau den Wasserdampf ausreichend bremst — belüftetes Dach und unbelüftetes Flachdach haben dafür ganz unterschiedliche Anforderungen, die du kennen musst.",
+      "Der sd-Wert ist die diffusionsäquivalente Luftschichtdicke und berechnet sich aus sd = Mü mal d. Mü ist die dimensionslose Wasserdampfdiffusions-Widerstandszahl, d die Schichtdicke in Metern. Der sd-Wert gibt an, wie viel Wasserdampf durch ein Bauteil diffundiert, und hat die Einheit Meter — nicht m²·K/W, das ist der Wärmedurchlasswiderstand.",
+      "Anschaulich heißt ein sd-Wert von 6,53 m: Das Bauteil bremst den Wasserdampf genauso stark wie eine 6,53 m dicke Luftschicht. Bei mehrschichtigen Bauteilen werden die sd-Werte der einzelnen Schichten addiert.",
+      "Beispiel Außenwand von innen nach außen: 0,015 m Putz mit Mü 15 ergibt 0,225 m. 0,24 m Mauerwerk mit Mü 5 ergibt 1,2 m. 0,06 m XPS mit Mü 80 ergibt 4,8 m. 0,02 m Putz mit Mü 15 ergibt 0,3 m. Summe sd = 6,53 m. Für Wände gelten sd-Werte zwischen 4 m und 7 m als besonders günstig.",
+      "Schutz gegen Tauwasserausfall, Merkregel innen dicht und außen offen: Die Dampfsperre wird auf der warmen Seite angeordnet, also innen — zum Beispiel aus Aluminiumfolie oder PE-Folie. Der Diffusionswiderstand der Baustoffe sollte von innen nach außen abnehmen, damit der Wasserdampf entweichen kann. Eine bewegte Luftschicht vor einer dichten Außenschale führt ihn schnell nach außen ab.",
+      "Belüftetes Dach mit Dachneigung über 5 Grad, gefordert sd größer oder gleich 2 m. Beispiel unter der Luftschicht: 0,14 m Mineralwolle mit Mü 1 ergibt 0,14 m, 0,18 m Stahlbetondecke mit Mü 70 ergibt 12,6 m, 0,015 m Putz mit Mü 15 ergibt 0,225 m. Summe 12,97 m — weit über den geforderten 2 m, ein rechnerischer Nachweis erübrigt sich.",
+      "Unbelüftetes Flachdach, gefordert sd größer oder gleich 100 m. Beispiel: 0,002 m PVC-Bahn mit Mü 10000 ergibt 20 m, 0,12 m XPS mit Mü 80 ergibt 9,6 m, 0,0004 m PE-Dampfsperre mit Mü 100000 ergibt 40 m, 0,16 m Stahlbeton mit Mü 70 ergibt 11,2 m. Summe 80,8 m — Anforderung nicht erfüllt. Es braucht einen gesonderten rechnerischen Nachweis oder eine andere Kunststoffbahn.",
+      "Sieh dir an, wer die Arbeit macht: Die 0,4 mm dünne PE-Folie liefert allein 40 m, die 16 cm dicke Betondecke nur 11,2 m. Nicht die Dicke allein entscheidet, sondern Mü mal d."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l10",
+    "lernfeld": "anhang2",
+    "thema": "Baustoffklassen",
+    "titel": "Brandverhalten: Baustoffklassen, Feuerwiderstand, Bedachung",
+    "inhalt": [
+      "Ob ein Dämmstoff oder eine Bedachung an einer bestimmten Stelle eingebaut werden darf, entscheidet oft nicht die Dämmwirkung, sondern das Brandverhalten — die Klassen dazu musst du lesen können.",
+      "Nach DIN 4102 gilt: Klasse A sind nichtbrennbare Baustoffe, Klasse B brennbare Baustoffe. A1 enthält keine brennbaren Bestandteile, zum Beispiel Beton, Mauerwerk und Stahl. A2 enthält geringe Mengen brennbarer Bestandteile, etwa Mineralwolledämmstoffe und Gipsplatten Typ DF.",
+      "Bei den B-Klassen wird gern vertauscht: B1 ist schwer entflammbar, dazu zählen Gipsplatte, Spanplatten und Polystyrol PSWL. B2 ist normal entflammbar, dazu zählen Holz mit einer Dicke ab 2 mm, Dachpappen und PVC-Beläge.",
+      "Zu den Klassen gehören zwei Zusatzangaben aus dem Englischen. s wie smoke steht für die Rauchentwicklung: s1 gering, s2 mittel, s3 hoch. d wie droplets steht für brennendes Abtropfen: d0 kein brennendes Abtropfen, d1 unter 10 Sekunden, d2 über 10 Sekunden. Beides ist lebenswichtig, denn bei Bränden sterben die meisten Menschen am Rauch.",
+      "Die deutsche Norm DIN 4102-1 wird durch die europäische Norm DIN EN 13501-1 ersetzt. Die Systeme sind nicht identisch: Die Euroklassen unterteilen deutlicher hinsichtlich des Verhaltens bei Brand. Der nationalen Klasse A1 entspricht die Euroklasse A1, der nationalen Klasse B2 entsprechen dagegen gleich drei Euroklassen — D, E und F.",
+      "Feuerwiderstandsklassen wie F60 A, F90 AB oder T180: Der Buchstabe nennt das Bauteil. F steht für Wände, Decken, Stützen, Balken und Treppen, W für nichttragende Außenwände, T für Feuerabschlusstüren und -tore, G für feuerwiderstandsfähige Verglasung. Die Zahl gibt die Mindestzeit in Minuten an, die das Bauteil seine Funktion trotz Feuereinwirkung behält, gestaffelt in 30, 60, 90, 120 und 180. A oder AB kennzeichnet die Art des Baustoffs: A nichtbrennbar, B brennbar.",
+      "Sonderfall Bedachung: Sie muss gegen Flugfeuer und strahlende Hitze geschützt sein. Als widerstandsfähig gelten Bedachungen aus natürlichen und künstlichen Steinen der Baustoffklasse A sowie Stahlblech- und sonstige Metalldächer, mehrlagige Bitumendachbahnen auf geschlossener, tragender Unterlage mit mindestens Baustoffklasse B2 und beliebige Bedachungen mit einer mindestens 5 cm dicken Kiesschüttung. Reetdächer zählen zu den weichen Bedachungen und sind wegen ihrer Feuergefährlichkeit besonders kritisch."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l11",
+    "lernfeld": "anhang2",
+    "thema": "Grundlagen",
+    "titel": "Bauphysik im Überblick und Brandschutz",
+    "inhalt": [
+      "Bauphysik erklärt dir, warum ein Dachaufbau genau so geschichtet wird, wie er geschichtet wird — jede Schicht hat eine bauphysikalische Aufgabe. Zur Bauphysik gehören vier Bereiche: Wärmeschutz, Brandschutz, Schallschutz und Feuchtigkeitsschutz. Statik und Standsicherheit gehören nicht dazu.",
+      "Merk dir die Untergliederung: Wärmeschutz im Sommer und im Winter, Schallschutz gegen Luft-, Körper- und Trittschall, Feuchtigkeitsschutz gegen Tauwasser, Bodenfeuchte und Regen, Brandschutz vorbeugend und abwehrend. Vier Bereiche, jeder mit zwei bis drei Unterpunkten — damit hast du das Gerüst für alles Weitere.",
+      "Der Wärmeschutz verfolgt drei Ziele gleichzeitig: das Wohlbefinden des Menschen zu jeder Jahreszeit sichern, wertvolle Energie einsparen und so die Umwelt schonen, und Spannungen sowie erhebliche Bauschäden vermeiden. Der dritte Punkt wird oft übersehen: Schlechter Wärmeschutz erzeugt Temperaturspannungen in den Bauteilen und über Tauwasser Feuchteschäden. Heizkosten senken ist nur ein Teil davon.",
+      "Der Brandschutz arbeitet zweistufig. Vorbeugend heißt: Ein Feuer soll gar nicht erst aufkommen. Abwehrend heißt: Kommt es doch zum Brand, soll der Schaden möglichst eingegrenzt werden. Durch Baustoffe lässt sich Feuer nie vollständig ausschließen — es geht um Widerstandsdauer und Ausbreitungsbegrenzung, nicht um Unbrennbarkeit um jeden Preis.",
+      "Ein Brand braucht drei Dinge gleichzeitig: einen brennbaren Ausgangsstoff, eine hohe Temperatur, bei der sich der Stoff entzünden kann (Entzündungstemperatur), und genügend Sauerstoff. Nur wenn alle drei zusammen auftreten, kommt es zum Brandvorgang. Daraus folgt die Brandbekämpfung: Es genügt, eine Bedingung wegzunehmen — Sauerstoff durch Ersticken, Temperatur durch Kühlen mit Wasser.",
+      "Baulicher Brandschutz steckt im Gebäude selbst: Materialien, Konstruktionen und Grundrissgestaltungen werden so gewählt, dass ein Feuer schon in der Entstehungsphase keine Möglichkeit zur Ausbreitung hat. Gerätemäßiger Brandschutz sind Feuerlöscher und Sprinkleranlagen, die schnellstmöglich zur Brandbekämpfung bereitstehen. Besonders Neubauten, in denen viele Personen zusammentreffen, werden vorbeugend geschützt.",
+      "Nichtbrennbar heißt nicht automatisch brandsicher. Ein unverkleideter Stahlträger verliert schon bei schwacher Rotglut die Hälfte seiner Tragfähigkeit, es kommt zum plötzlichen Zusammensturz. Ein Träger aus Brettschichtholz verliert seine Tragfähigkeit nur langsam, weil die Verkohlung an der Holzoberfläche dämmend wirkt und das Innere noch nicht zerstört ist. Stahlstützen brauchen deshalb Gipskarton-Feuerschutzplatten.",
+      "Kurzcheck ohne Buch: Welche vier Bereiche gehören zur Bauphysik? Welche drei Ziele hat der Wärmeschutz? Was bedeuten vorbeugender und abwehrender Brandschutz? Welche drei Voraussetzungen braucht ein Brand gleichzeitig? Und warum verhält sich ein Holzträger im Brandfall günstiger als ein unverkleideter Stahlträger?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l12",
+    "lernfeld": "anhang2",
+    "thema": "Wärmeausdehnung",
+    "titel": "Temperatur und Wärmedehnung: rechnen und konstruieren",
+    "inhalt": [
+      "Jedes Blech, jede Rinne und jedes Fallrohr auf dem Dach bewegt sich mit der Temperatur — wer das nicht einplant, reißt Nähte auf und Halter heraus. Sämtliche auf dem Dach und in Verkleidungen verwendeten Materialien unterliegen dieser Wärmedehnung, weil sie direkt Wärme und Kälte ausgesetzt sind.",
+      "Kelvin und Celsius haben gleich große Skalenabstände, nur der Nullpunkt ist verschoben: 0 Grad Celsius entspricht 273 K, 100 Grad Celsius entspricht 373 K. Deshalb ist eine Differenz von 30 Grad Celsius genau 30 Kelvin. Nach DIN 4108 soll für Wärmeangaben Kelvin verwendet werden — bei Differenzen also immer Kelvin schreiben.",
+      "Der absolute Nullpunkt liegt bei minus 273 Grad Celsius, in Kelvin sind das 0 K. Dort hört jegliche Molekularbewegung auf, und weil Wärme genau diese Bewegung ist, kann es nicht kälter werden. 0 Grad Celsius ist dagegen nur der Gefrierpunkt des Wassers.",
+      "Bei Temperaturerhöhung bewegen sich die Moleküle schneller und brauchen mehr Platz, worauf sich der Stoff im Volumen ausdehnt. Bei Abkühlung zieht er sich wieder zusammen. Wichtig: Die Masse bleibt dabei gleich, nur das Volumen ändert sich. Das ist die physikalische Grundlage jeder Dehnfuge und jeder Schiebenaht im Metalldach.",
+      "Temperaturdehnzahlen in mm je m und Kelvin: Stahl 0,011, Kupfer 0,017, Titanzink 0,022, Aluminium 0,024, Blei 0,029, Faserzement 0,01. Kunststoffe liegen viel höher: Weich-PVC 0,16 und Weich-PE 0,22, also rund zehnmal so viel wie Metalle. Deshalb brauchen Kunststoffbahnen großzügigere Dehnungsmöglichkeiten als Metallbleche.",
+      "Die Formel lautet: Längenänderung = Temperaturdehnzahl mal Länge mal Temperaturdifferenz. Beispiel Kupfer-Kehlblech, 6 m lang, zwischen 65 Grad Celsius im Sommer und minus 20 Grad Celsius im Winter: Differenz 65 minus minus 20 = 85 K, dann 0,017 mal 6 mal 85 = 8,67 mm. Achte auf das Minuszeichen — bei Minusgraden wird die Differenz größer.",
+      "Zweites Beispiel, Kupferrinne 13,80 m lang, 70 Grad Celsius bis minus 25 Grad Celsius: Differenz 95 K, also 0,017 mal 13,80 mal 95 = 22,3 mm. Über zwei Zentimeter Bewegung an einer einzigen Rinne — ohne Dehnungsausgleicher werden die Rinnenhalter herausgerissen oder die Nähte reißen auf.",
+      "Bei zusammengesteckten Teilen rechnest du ab der Verlegetemperatur, nicht ab null Grad. Kupfer-Fallrohr 5,50 m, verlegt bei 35 Grad Celsius, Erwärmung auf 70 Grad Celsius: Differenz 35 K, also 0,017 mal 5,50 mal 35 = 3,27 mm. Von 50 mm Überlappung bleiben 46,7 mm — die Mindestüberlappung von 5 cm ist eingehalten.",
+      "Konstruktiv gilt: Bewegung zulassen, nicht verhindern. Überlappende Bleche und Fallrohre brauchen eine ausreichende Überlappung, bei vorgehängten Fassaden werden die Horizontalfugen entsprechend breit ausgebildet, bei größeren Betonteilen und längeren Mauerwerksbändern werden Dehnfugen angeordnet. Starres Verschrauben ist genau der Fehler — dann entstehen Spannungen und Risse."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l13",
+    "lernfeld": "anhang2",
+    "thema": "Gemittelter U-Wert",
+    "titel": "Von Lambda über R zum U-Wert — auch beim Sparrendach",
+    "inhalt": [
+      "Mit R und U rechnest du nach, ob ein Dach- oder Wandaufbau die geforderte Dämmwirkung überhaupt bringt — und beim Sparrendach zeigt die Rechnung, wie stark dir das Holz das Ergebnis verdirbt.",
+      "Die vier Symbole des Wärmeschutzes: Schichtdicke d in m, Wärmeleitfähigkeit Lambda in W/(m·K), Wärmedurchlasswiderstand R in m²·K/W, Wärmedurchgangskoeffizient U in W/(m²·K). Achte auf R und U — ihre Einheiten sind zueinander umgekehrt. Wer sie vertauscht, dreht die Aussage um. Das R steht für das englische Resistance, also Widerstand.",
+      "R beurteilt, wie viel Wärme ein Bauteil durchlässt, und errechnet sich aus Schichtdicke geteilt durch Wärmeleitfähigkeit. Je größer R, desto besser die Wärmedämmung. Daraus folgt direkt: R wird umso größer, je dicker die Schichten und je kleiner das Lambda der Baustoffe ist. Bei mehreren Schichten addierst du die Einzelwiderstände.",
+      "Beispielwand: 0,015 m Kalkgipsputz (0,7), 0,24 m Kalksandstein (0,7), 0,06 m Dämmung (0,035), 0,02 m Kalkzementputz (0,87). Das ergibt 0,021 plus 0,343 plus 1,714 plus 0,023 = 2,10 m²·K/W. Die nur 6 cm dicke Dämmschicht liefert allein über 80 Prozent des Widerstands — so stark wirkt ein kleines Lambda.",
+      "Aus R wird der U-Wert. Im Buchbeispiel wird gerechnet: U = 1 geteilt durch (0,17 plus R). Der Zuschlag 0,17 steht für den Wärmeübergang an der Innen- und Außenoberfläche des Bauteils. Zahlenbeispiel: R = 5,47 ergibt U = 1 geteilt durch 5,64 = 0,18 W/(m²·K).",
+      "Ob du mitteln musst, hängt von der Dämmlage ab. Bei Aufsparrendämmung ist die Dämmung vollflächig, die Berechnung ist vergleichbar mit der Außendämmung einer Wand. Bei Zwischensparrendämmung sind Gefachbereich und Sparrenbereich getrennt zu berechnen. Bei Untersparrendämmung werden die Schichten bis zum Sparren gerechnet; Sparren und Unterdeckbahn tragen dabei nicht zur Wärmedämmung bei.",
+      "Die Wortformel für den gemittelten Wert: U-Wert des Sparrenbereichs mal Breite dieses Bereichs, plus U-Wert des Gefachs mal Breite des Gefachs, geteilt durch die Summe beider Breiten. Es ist also ein nach der Breite gewichtetes Mittel — im Buchbeispiel 0,10 m Sparren gegen 0,65 m Gefach.",
+      "Durchgerechnetes Dachbeispiel: R des Gefachs 5,47 ergibt U 0,18; R des Sparrens 1,86 ergibt U 0,49; gemittelt kommen 0,22 W/(m²·K) heraus. Das Buch vergleicht dieses Ergebnis mit dem geforderten Wert 0,24. Sieh dir an, wie stark der Sparren stört: fast der dreifache U-Wert des Gefachs.",
+      "Zwei Schichten darfst du beim Wärmedurchlasswiderstand weglassen: Dampfsperre und Unterdeckbahn sind so dünn, dass ihr Beitrag verschwindend klein ist. Beim Feuchteschutz ist es genau umgekehrt — dort ist die Dampfsperre die entscheidende Schicht und die Schalung fast bedeutungslos."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l14",
+    "lernfeld": "anhang2",
+    "thema": "Lage der Dämmung",
+    "titel": "Auf, zwischen oder unter den Sparren",
+    "inhalt": [
+      "Wo die Dämmung liegt, entscheidet über Wärmebrücken, Wohnraum und darüber, ob du später mit einem gemittelten U-Wert rechnen musst — deshalb musst du die drei Lagen sicher auseinanderhalten können.",
+      "Beim ausgebauten, geneigten Dach lassen sich die Dämmschichten als Aufsparren-, Zwischensparren- oder Untersparrendämmung anordnen. Die Varianten sind kombinierbar, etwa Zwischen- plus Untersparrendämmung, um größere Dämmstoffdicken zu erreichen. Je nach Art der Belüftung unterscheidet man zusätzlich unbelüftete Dächer und zweischalig belüftete Dächer.",
+      "Die Zwischensparrendämmung ist die gebräuchlichste Variante und auch bei nachträglichem Dachausbau möglich. Ihr Nachteil: Die Sparren unterbrechen die Dämmschicht, deshalb muss später mit dem gemittelten U-Wert gerechnet werden. Bei unsachgemäßer Verarbeitung besteht zusätzlich die Gefahr von Wärmebrücken.",
+      "Deshalb ist hier Sorgfalt Pflicht: Die Dämmung muss die Gefache vollständig und ohne Lücken ausfüllen. In Hohlräumen strömt Luft, und die Dämmwirkung entfällt genau dort, wo der Sparren ohnehin schon als Wärmebrücke wirkt. Der Bewitterung ist diese Dämmung dagegen nicht ausgesetzt — darüber liegen Unterdeckbahn und Dachhaut.",
+      "Bei der Aufsparrendämmung liegt die Dämmung vollflächig über den Sparren und bildet eine geschlossene Fläche; die Sparren bleiben innen sichtbar. Sie kostet keinen Wohnraum. Ein gemittelter U-Wert ist nicht nötig, weil keine Sparren die Dämmebene unterbrechen — die Berechnung ist vergleichbar mit der Außendämmung einer Wand.",
+      "Bei der Untersparrendämmung wird die Dämmschicht ebenfalls nicht durch die Sparren unterbrochen, es entstehen keine Wärmebrücken. Der Nachteil liegt woanders: Wertvolles Dach- und Wohnvolumen geht verloren, weil die Schicht innen aufgebaut wird. Genau das ist der entscheidende Unterschied zur Aufsparrendämmung.",
+      "Kurzcheck ohne Buch: Welche drei Lagen gibt es und lassen sie sich kombinieren? Welche Variante ist die gebräuchlichste und warum braucht sie einen gemittelten U-Wert? Welche Lage kostet Wohnvolumen? Und bei welcher Lage bleiben die Sparren innen sichtbar?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l15",
+    "lernfeld": "anhang2",
+    "thema": "Dachkonstruktion",
+    "titel": "Belüftetes und unbelüftetes Dach",
+    "inhalt": [
+      "Ob ein Dach belüftet wird oder nicht, entscheidet darüber, wie die Feuchtigkeit wieder aus der Konstruktion herauskommt — und damit, ob deine Dämmung trocken bleibt oder nach ein paar Jahren wirkungslos ist.",
+      "Beim zweischalig belüfteten Dach befindet sich sowohl zwischen Wärmedämmung und Dachschalung als auch zwischen Dachschalung und äußerer Dachhaut ein Hohlraum. Feuchtigkeit kann von innen durch Tauwasserbildung und von außen durch Flugschnee wieder entweichen, im Sommer wird entstehende Wärme schnell abtransportiert. Nachteil: Es lässt sich nur eine geringe Dämmstoffdicke einbringen.",
+      "Damit das funktioniert, muss der Lüftungsraum zwischen First und Traufe durchgehend sein und genügend Zu- und Abluftöffnungen haben. Ohne diese Öffnungen ist die Belüftung wirkungslos — die Luft muss unten hinein und oben wieder heraus können.",
+      "Beim unbelüfteten Dach gibt es diese Belüftungsebene zwischen Dämmung und Dachschalung gerade nicht. Stattdessen gilt das Schichtenprinzip: Auf der warmen Seite der Dämmung, im Winter also innen, wird eine Dampfsperre eingebaut; in der Ebene über der Wärmedämmung muss eine diffusionsoffene Schicht aufgebracht werden. Feuchtigkeit in der Dämmung erhöht die Wärmeleitfähigkeit und verringert den Dämmwert.",
+      "Mindestlüftungsquerschnitte beim belüfteten Steildach: ab 5 Grad Dachneigung und Sparrenlänge bis 10 m sind es 200 cm² je Meter und 2 cm freie Höhe, innen ein sd-Wert von mindestens 2 m. Unter 5 Grad und bis 10 m Sparrenlänge sind mindestens 5 cm gefordert und innen ein sd-Wert von mindestens 100 m. Je flacher das Dach, desto dichter muss es innen sein.",
+      "Vier Steildachvarianten unterscheidet das Buch beim Feuchteschutz: belüftet, hier wird die Feuchtigkeit durch die Belüftung abgeführt; nicht belüftet diffusionsoffen mit sd innen mindestens 2 m und außen höchstens 0,3 m; nicht belüftet diffusionshemmend, wo die innere Schicht mindestens den sechsfachen Diffusionswiderstand der äußeren aufweisen muss; nicht belüftet diffusionsdicht mit sd innen mindestens 100 m.",
+      "Beim Flachdach gibt es drei Wege gegen Durchfeuchtung: einschalig, nicht belüftet mit dampfsperrender Schicht und einem sd-Wert über 100 m; zweischalig belüftet, wobei die dampfundurchlässige Dachhaut hinterlüftet wird; und zweischalig mit zusätzlicher Dampfbremse, für die ein sd-Wert von 100 m erreicht werden muss.",
+      "Beim einschaligen Flachdach kommt es auf die Lage an: Die dampfsperrende Schicht wird so weit innen eingelegt, dass an dieser Stelle keine Kondensation stattfindet, also unter der Wärmedämmschicht. Die geforderten über 100 m sd entsprechen der diffusionsdichten Variante beim geneigten Dach."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l16",
+    "lernfeld": "anhang2",
+    "thema": "Künstliche Dämmstoffe",
+    "titel": "Polystyrol, PUR und die Kurzzeichen auf der Platte",
+    "inhalt": [
+      "Künstliche Dämmstoffe sind auf dem Dach Alltag — und der Aufdruck auf der Platte sagt dir, ob du genau das Produkt in der Hand hältst, das an diese Stelle gehört.",
+      "Expandiertes Polystyrol (EPS) wird in eine Form gegeben und durch Wasserdampf erhitzt, worauf es sich bläht; extrudierter Hartschaum (XPS) wird aus einem Extruder unter Beimischung eines Treibmittels herausgedrückt. Grundstoff beider ist Erdöl. Entscheidend ist die Struktur: EPS offenporig, XPS mit geschlossener, dampfbremsender Zellstruktur.",
+      "Aus der Zellstruktur folgt der Einsatzort: Nur die geschlossenzelligen, wasserabweisenden XPS-Platten eignen sich für Umkehrdächer und für die Perimeterdämmung, weil die Dämmung dort ständig Feuchtigkeit ausgesetzt ist.",
+      "Verarbeitung von Polystyrol-Hartschaumplatten: Da sie bei hohen Temperaturen schmelzen, können sie nicht geschweißt und nicht mit Heißbitumen verklebt werden — sie brauchen speziellen Kleber. Beide Arten sind verrottungsfest, müssen aber vor UV-Strahlung und Lösungsmitteln geschützt werden. Eine Alternative bietet die Kaschierung mit Bitumendachbahnen, etwa bei Rolldämmbahnen.",
+      "Polyurethan-Hartschaum (PUR) entsteht durch das Mischen verschiedener chemischer Bestandteile auf Basis von Rohöl. Wegen seiner hohen Druckfestigkeit lässt er sich als Flachdach- und Steildachdämmplatte einsetzen. Seit 1992 wird kein FCKW mehr als Treibmittel eingesetzt, weil es für die Schädigung der Ozonschicht verantwortlich gemacht wird. UV-beständig ist PUR nicht.",
+      "PUR ist alterungs- und fäulnisbeständig sowie resistent gegen die gebräuchlichen Lösungsmittel. Die Alukaschierung der Platten hat einen doppelten Zweck: Sie verhindert, dass Wasser durch Diffusion eindringt, und hält die Platten formstabil. Beim Lambda liegt PUR mit 0,025 W/(m·K) vorn, Mineralwolle bei 0,040 und Kork bei 0,045.",
+      "So liest du eine Kennzeichnung, Beispiel PUR-EN 13165-025-DEO-dh-B2-50: Polyurethan-Hartschaum mit Lambda 0,025 W/(m·K); DEO steht für Innendämmung der Decke oder Bodenplatte unter Estrich ohne Schallschutzanforderungen; dh für hohe Druckbelastbarkeit; B2 für normal entflammbar; 50 für 50 mm Dicke.",
+      "Die Kurzzeichen der Anwendungsgebiete folgen dem Ort am Gebäude: DAD ist die Außendämmung von Dach oder Decke, vor Bewitterung geschützt. DZ ist die Zwischensparrendämmung im zweischaligen Dach. P steht immer für den erdberührten Bereich — PW für die Wand gegen Erdreich, PB für die außen liegende Dämmung unter der Bodenplatte gegen Erdreich.",
+      "Zum Aufbau eines begrünten Warmdachs aus Polystyrol: über der Betondecke die Dampfsperre, darüber Gefälle-Elemente und Dämmplatten, dann die Dachbahnen, darüber Drainageschicht, Pflanz-Substrat und Begrünung. Beim Umkehrdach läge die Dämmung dagegen über der Abdichtung — dafür brauchst du die geschlossenzelligen XPS-Platten."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l17",
+    "lernfeld": "anhang2",
+    "thema": "Mineralische Dämmstoffe",
+    "titel": "Mineralwolle, Schaumglas und Perlit",
+    "inhalt": [
+      "Mineralische Dämmstoffe deckst du auf fast jeder Baustelle ab — und jeder der drei hat eine Eigenschaft, die über seinen Einsatzort entscheidet: Mineralwolle mag keine Feuchte, Schaumglas nimmt gar keine auf, Perlit macht Gefälle.",
+      "Mineralwolle ist die Sammelbezeichnung für Glas- und Steinwolle, wobei der Name den Hauptbestandteil angibt. Mit rund 60 Prozent Marktanteil ist sie Marktführer unter den Dämmstoffen. Im Herstellungsprozess werden die Grundstoffe bei etwa 1400 Grad Celsius eingeschmolzen und durch Düsen gespritzt. Sie ist fäulnisresistent, aber nicht wasserabweisend.",
+      "Die gelb aussehende Glaswolle enthält Glas und Altglas mit Zusätzen wie Schmelzhilfen und Bindemittel. Die grüne Steinwolle besteht zum größten Teil aus Basalt und Bindemitteln. Weil Mineralwolle nicht wasserabweisend ist, muss sie trocken eingebaut und vor Feuchtigkeit geschützt werden.",
+      "Schutzmaßnahmen beim Verarbeiten: geschlossene Arbeitskleidung und Handschuhe tragen, bei starker Staubentwicklung zusätzlich Feinstaubmaske und Schutzbrille. Dämmwolle auf fester Unterlage mit einem Messer schneiden, nicht mit einer Säge — die erzeugt viel mehr Staub. Auch beim Entfernen alter Mineralwolle Staubentwicklung vermeiden. Der Staub kann Haut- und Schleimhautreizungen, Augenbrennen und Allergien auslösen.",
+      "Steife, druckfeste Platten aus Steinwolle werden für einschalige Dächer verwendet. Dort liegt die Abdichtung direkt auf der Dämmung, die Platte muss also die Lasten aufnehmen können, die auf der Dachfläche wirken. Dafür gibt es die Kennzeichnung der Druckbelastbarkeit von dk (keine) bis dx (extrem hoch). Auch diese Platten sind trocken einzubauen.",
+      "Eine Beschriftung wie MW-EN 13162-040-WAP-zg-B1-40 liest du so: Mineralwolle mit Lambda 0,040 W/(m·K), WAP für Außendämmung der Wand unter Putz, zg für geringe Zugfestigkeit, B1 für schwer entflammbar, 40 für 40 mm Dicke. Achtung bei der Zahl: 040 bedeutet 0,040 — mit 0,40 wäre der Stoff kein Dämmstoff mehr, denn dafür gilt die Grenze Lambda kleiner 0,1.",
+      "Schaumglas entsteht, indem Glasabfälle zu Pulver gemahlen und bei über 1400 Grad Celsius geschmolzen werden; Kohlendioxid schäumt das Glas auf. Es ist sehr druckfest, nimmt keine Feuchtigkeit auf und ist dampfdicht. Verlegt wird es mit bitumenhaltigem Kaltkleber oder Heißbitumen. Verwendung findet es vor allem im Kellerbereich als Perimeterdämmung, bei der Flachdacheindeckung und der Bauwerksabdichtung.",
+      "Ausgangsmaterial von Perlit ist das Perlitgestein, das zerkleinert und stark erhitzt wird. Dabei verdampft das Wasser im Gestein, das Volumen bläht sich um das 20-Fache auf. Anschließend kann das Gestein noch mit Naturharz oder Bitumen ummantelt werden. Es gibt Perlit als lose Schüttung und als bitumengebundene Platten; die Kurzbezeichnung ist nicht genormt.",
+      "Einsatz von Perlit: Platten dienen bei Flachdachdämmungen als gefällegebende Schicht, Schüttungen werden unter Estrichen eingebracht. Merk dir die Arbeitsteilung der drei mineralischen Dämmstoffe: Mineralwolle in der trockenen Konstruktion, Schaumglas dort wo Druck und Nässe zusammenkommen, Perlit dort wo Gefälle gebraucht wird."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l18",
+    "lernfeld": "anhang2",
+    "thema": "Schall",
+    "titel": "Wie Schall entsteht und was er anrichtet",
+    "inhalt": [
+      "Schall ist auf der Baustelle ein Gesundheitsthema und im fertigen Gebäude ein Qualitätsmerkmal — wer die Pegel und ihre Wirkung kennt, versteht, warum Gehörschutz auf der Baustelle nötig ist und was ein Bewohner später hört.",
+      "Schall entsteht durch mechanische Schwingungen und Wellen, die sich in festen, flüssigen oder gasförmigen Stoffen ausbreiten. In der Regel gelangt er über die Luft in unser Ohr und wird dort in Signale umgewandelt; diese Signale lösen im Gehirn bestimmte Reaktionen und Empfindungen aus. Schall braucht immer ein Medium — im Vakuum breitet er sich nicht aus.",
+      "Von Lärm spricht man dann, wenn der Schall als störend empfunden wird. Das ist keine physikalische, sondern eine subjektive Grenze: Derselbe Pegel kann für den einen Musik und für den anderen Lärm sein.",
+      "Der Schallpegel ist das Maß für die Stärke eines Geräusches, also für die Lautstärke, die durch den Schall erzeugt wird. Angegeben wird er in Dezibel (dB). Verwechsle ihn nicht mit der Frequenz: Der Pegel beschreibt die Lautstärke, die Frequenz die Tonhöhe. Mehr Schwingungen je Zeit ergeben einen höheren Ton, größere Ausschläge einen lauteren.",
+      "Dauereinwirkung von Schall wirkt sich stufenweise aus: 35 bis 40 dB stören den Schlaf, über 50 dB wird geistige Arbeit erschwert, 75 bis 80 dB erhöhen den Blutdruck und führen zu Verdauungsstörungen, über 90 dB drohen Aggression und Schwerhörigkeit.",
+      "Zum Einordnen die Pegel typischer Geräusche: leise Sprache 50 dB, normale Sprache 60 dB, Zimmerlautstärke 60 bis 70 dB, Verkehrslärm 70 bis 80 dB, Disco 90 bis 110 dB, Presslufthammer 100 bis 120 dB. Die Schmerzschwelle liegt bei 120 dB.",
+      "Für dich auf dem Dach heißt das konkret: Der Presslufthammer liegt mit 100 bis 120 dB weit über der 90-dB-Marke, ab der Aggression und Schwerhörigkeit drohen, und reicht bis an die Schmerzschwelle heran. Gehörschutz ist deshalb kein Komfort, sondern Vorsorge gegen bleibende Schäden."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l19",
+    "lernfeld": "anhang2",
+    "thema": "Schallschutz",
+    "titel": "Schall dämmen, schlucken und Schallbrücken vermeiden",
+    "inhalt": [
+      "Schallschutz entscheidet sich nicht am Material allein, sondern an der Ausführung: Eine einzige starre Verbindung macht die ganze Konstruktion wirkungslos — deshalb musst du wissen, wo die Schallwege sind.",
+      "Schallschluckung und Schalldämmung sind zwei verschiedene Dinge. Schallschluckung mindert die Schallenergie, indem poröse Baustoffe an Wänden, Decken und Böden den Schall nicht reflektieren, sondern absorbieren; ihre poröse Oberfläche besitzt viele kleine Öffnungen, welche die ankommenden Schallwellen verschlucken. Schalldämmung heißt, dass die Schallenergie beim Durchgang durch einen Körper wie Mauer oder Dach gemindert wird.",
+      "Der Unterschied ist die Richtung: Schluckung wirkt im Raum, Dämmung zwischen zwei Räumen. Akustikplatten in Wand und Decke schlucken, eine schwere Trennwand dämmt.",
+      "Bei einschaligen Bauteilen hängt die Luftschalldämmung wesentlich von der flächenbezogenen Masse ab: Rohdichte in kg/m³ mal Schichtdicke in m. Je schwerer das Bauteil, desto besser die Luftschalldämmung, denn das Bauteil wird durch Mitschwingen zur Schallübertragung angeregt. Zum Vergleich: 11,5 cm Hochlochziegel bringen 130 kg/m², 24 cm Kalksandstein 400 kg/m².",
+      "Daraus folgt eine wichtige Falle: Leicht und porös wie Porenbeton bedeutet geringen Schallschutz, schwer und dicht wie Beton oder Kalksandstein besseren. Beim Wärmeschutz willst du leicht und porös, beim Schallschutz schwer und dicht. Am besten schneidet die zweischalige Wand mit weich federnder Mineralfaser ab, weil sie Masse und Entkopplung verbindet.",
+      "Drei zweischalige Konstruktionen unterscheidet man: eine biegeweiche Vorsatzschale, zum Beispiel Holzwolleplatten mit Kanthölzern vor Kalksandsteinmauerwerk; zwei biegeweiche Schalen, zum Beispiel aus Gipsplatten mit Dämmstoffschicht; und zwei schwere biegesteife Schalen mit durchgehender Trennfuge, mindestens 3 cm Abstand, vollflächig mit Faserdämmplatten gefüllt.",
+      "Typische Ausführungsfehler, die Schall übertragen: Lücken in der Dämmschicht und unvollständige Abschalung, Schallbrücken durch Wandschlitze oder in die Wand gestemmte Aussparungen, Mörtelbrücken zwischen den Schalen bei zweischaligen Bauteilen. Jede starre Verbindung zwischen den Schalen leitet den Schall weiter und macht die Trennung wirkungslos.",
+      "Bei Dächern gilt dasselbe Prinzip. Beim geneigten, mehrschaligen Dachaufbau hängen die Dämmwerte von der Dichte der Dacheindeckung ab; Faserzementplatten haben eine hohe Dichtheit. Auch Sparrenhöhe, innere Bekleidung und eine Zwischenlattung beeinflussen den Wert. Beim Flachdach ist die Masse der Kiesschüttung bei der Schalldämmung zu berücksichtigen.",
+      "Trittschall bei Massivdecken verbesserst du durch Estrich auf Dämmschicht, weil das Eindringen von Körperschall in die Deckenkonstruktion weitgehend verhindert wird. Entscheidend ist der Randstreifen zwischen Wand und Estrich: Berührt der Estrich die Wand, entsteht genau dort eine Schallbrücke. Merksatz: einschalig durch Masse, zweischalig durch Entkopplung — Schall entsteht durch Schwingungen, unterschieden werden Luft-, Tritt- und Körperschall."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "anhang2-l20",
+    "lernfeld": "anhang2",
+    "thema": "Luftdichtheit",
+    "titel": "Dampfdiffusion, my-Wert und luftdichte Ebene",
+    "inhalt": [
+      "Feuchte Raumluft will im Winter nach draußen — entweder wandert sie kontrolliert durch die Schichten oder sie strömt durch ein Leck in die Konstruktion und fällt dort als Tauwasser aus. Beides musst du beherrschen können.",
+      "Im Winter ist der innere Dampfdruck höher als der äußere, deshalb wandern Wasserdampfteilchen durch die Bauteile nach außen. Kühlt der Taupunkt im Bauteil ab, kommt es zum Tauwasserausfall. Fällt das Tauwasser in der Wärmedämmschicht an, wird diese durchfeuchtet und verliert ihre Dämmeigenschaft. Deshalb gehört die Dampfsperre auf die warme Seite der Dämmung.",
+      "Die Wasserdampfdiffusions-Widerstandszahl my ist eine dimensionslose Vergleichszahl. Sie gibt an, wievielmal größer der Diffusionswiderstand eines Stoffes ist als der einer gleich dicken Luftschicht. Luft selbst hat deshalb den Wert 1.",
+      "Werte aus der Tabelle: Luft und Faserdämmstoffe 1, Mauerziegel und Porenbeton 5, Putz 15, Holz 40, Beton 70, XPS 80, Bitumenbahn 20000. Metalle, Glas und Schaumglas gelten als praktisch dampfdicht, ihr my ist unendlich. Zur Einordnung: ab my 50 bis 500 ist die Diffusion eingeschränkt, ab 1500 wirkt ein Material dampfbremsend, ab 100000 ist es dampfdicht.",
+      "Auf my baut der sd-Wert auf: sd ist my mal Schichtdicke d und wird in Metern angegeben — also die Dicke der Luftschicht, die denselben Diffusionswiderstand hätte. Genau deshalb stehen in den Dachtabellen Anforderungen wie sd innen mindestens 2 m oder mindestens 100 m.",
+      "Neben der Diffusion braucht es die Luftdichtheit. Bei durchlüfteten Dächern ist eine winddichte Ausbildung der inneren Schicht notwendig: Die luftdichte Schicht wird auf der inneren Seite der Wärmedämmung angebracht, in der Regel aus Kunststofffolien oder luftdicht verlegten Plattenwerkstoffen. In der Regel ist sie identisch mit der Dampfsperre und erfüllt beide Aufgaben zugleich.",
+      "Die Sorgfalt entscheidet an den Anschlüssen: Stöße, Abschlüsse und Durchdringungen müssen verklebt, abgedeckt oder verspachtelt werden. Genau dort entstehen sonst Leckagen, durch die feuchte Raumluft direkt in die Konstruktion strömt.",
+      "Geprüft wird das mit der Blower-door-Messung: Ein Ventilator in der Außentür saugt Luft aus dem Gebäude oder drückt sie hinein. Alle übrigen Außenöffnungen werden verschlossen, die Innentüren bleiben offen. Der Messwert n50 gibt an, wie oft das Luftvolumen bei einer Druckdifferenz von 50 Pa in einer Stunde ausgetauscht wird.",
+      "Die Grenzwerte: Der n50-Wert darf bei Gebäuden mit Fensterlüftung 3 je Stunde und bei Gebäuden mit Raumluftanlagen 1,5 je Stunde nicht überschreiten. Merk dir die Logik dahinter — je besser die Lüftungstechnik, desto dichter muss die Hülle sein."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  }
+]

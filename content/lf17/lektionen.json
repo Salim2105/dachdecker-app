@@ -58,5 +58,293 @@
     "quelle": "KMK-Rahmenlehrplan LF 17; Gefahrstoffverordnung / TRGS 519 (Asbest — Abbruch-, Sanierungs- und Instandhaltungsarbeiten)",
     "konfidenz": "hoch",
     "svg": "<svg viewBox='0 0 380 195' width='100%' style='max-width:380px;height:auto' xmlns='http://www.w3.org/2000/svg' font-family='system-ui, sans-serif' role='img' aria-label='Nach dem Sturm: Reihenfolge und Asbest'><rect x='24' y='40' width='96' height='30' fill='none' stroke='#c07d4a' stroke-width='2'/><text x='72.0' y='59.2' fill='#c07d4a' font-size='12' text-anchor='middle'>1 absperren</text><line x1='120' y1='55' x2='140' y2='55' stroke='currentColor' stroke-width='1.4'/><line x1='140' y1='55' x2='133.7' y2='56.6' stroke='currentColor' stroke-width='1.4'/><line x1='140' y1='55' x2='133.7' y2='53.4' stroke='currentColor' stroke-width='1.4'/><rect x='142' y='40' width='96' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='190.0' y='59.2' fill='currentColor' font-size='12' text-anchor='middle'>2 sichern</text><line x1='238' y1='55' x2='258' y2='55' stroke='currentColor' stroke-width='1.4'/><line x1='258' y1='55' x2='251.7' y2='56.6' stroke='currentColor' stroke-width='1.4'/><line x1='258' y1='55' x2='251.7' y2='53.4' stroke='currentColor' stroke-width='1.4'/><rect x='260' y='40' width='96' height='30' fill='none' stroke='currentColor' stroke-width='1.6'/><text x='308.0' y='59.2' fill='currentColor' font-size='12' text-anchor='middle'>3 abdichten</text><line x1='18' y1='90' x2='362' y2='90' stroke='currentColor' stroke-width='1' stroke-dasharray='2 4' opacity='0.5'/><text x='30.0' y='112' fill='currentColor' font-size='12.5'>Altes Faserzement kann Asbest enthalten</text><text x='30.0' y='134' fill='#c25f4f' font-size='12.5'>Verboten: Hochdruck, Schleifen, Bohren, Bürsten</text><text x='18' y='167' fill='currentColor' font-size='12'>Erst danach dokumentieren und reparieren.</text></svg>"
+  },
+  {
+    "id": "lf17-l05",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Wartung von Steildächern",
+    "titel": "Inspektion und Wartung: Wer, wann und was",
+    "inhalt": [
+      "Inspektion und Wartung sind der Grund, warum aus einem undichten Anschluss keine durchfeuchtete Dämmung wird. Je früher eine Beschädigung erkannt und beseitigt wird, desto geringer sind Reparaturaufwand und Folgeschäden.",
+      "Die Verantwortung für Inspektion und Wartung liegt beim Gebäudeeigentümer, nicht bei deinem Betrieb. Er haftet für die Verkehrssicherheit gegenüber Passanten — fällt ein Ziegel herunter und trifft jemanden, ist das seine Sache. Genauso haftet er für Gebäude- und Personenschäden, denen eine rechtzeitige Inspektion vorgebeugt hätte. Ihr führt aus, veranlassen muss er.",
+      "Der Dachinspektionsvertrag regelt die Termine: Inspektionen ab dem 6. Jahr in Zeitabständen von 2 bis 3 Jahren. Die ersten Jahre bleiben ausgespart, weil ein neues Dach in dieser Zeit noch unter Gewährleistung steht und erfahrungsgemäß keine Alterungsschäden zeigt. Achte auf die Reihenfolge der Zahlen: 6 ist das Startjahr, 2 bis 3 ist der Abstand.",
+      "Dazu kommt der außerplanmäßige Termin. Nach Unwettern und Stürmen ab Windstärke 8 Beaufort — stürmischer Wind mit rund 62 bis 74 km/h — sollte schnellstmöglich inspiziert werden. Ab dieser Schwelle kann Windsog Deckungen anheben und Ziegel lösen.",
+      "Inspektion heißt hinschauen, sonst nichts. Geprüft werden die Dachdeckung, die An- und Abschlüsse, die Dachentwässerung sowie die Einbauteile und die Sicherheitseinrichtungen auf ihre Funktionstüchtigkeit. Das Auswechseln eines beschädigten Dachziegels gehört nicht dazu — das ist bereits eine Wartungsarbeit.",
+      "Wartung heißt eingreifen: schadhafte Teile ersetzen, Verkrustungen und lose Verunreinigungen entfernen und, wenn erforderlich, Rinnen und Fallrohre reinigen. Die Trennlinie ist scharf — Inspektion schaut nur hin, Wartung greift ein. Beides zusammen wird im Dachinspektions- oder Wartungsvertrag vereinbart.",
+      "Der wirtschaftliche Kern: Inspektions- und Wartungsverträge sorgen für eine regelmäßige Überprüfung und beugen so größeren Schäden vor. Ein undichter Anschluss kostet ein paar hundert Euro — die durchfeuchtete Dämmung, die daraus in zwei Jahren wird, kostet eine Komplettsanierung.",
+      "Die Zahl der fälligen Inspektionen rechnest du so: Spanne = Alter des Daches minus Startjahr, dann Anzahl = abgerundet (Spanne geteilt durch Abstand) plus 1 für die erste Inspektion. Beispiel 24 Jahre altes Dach, Abstand 3 Jahre: (24 − 6) ÷ 3 = 6, plus 1 macht 7 Termine (Jahre 6, 9, 12, 15, 18, 21, 24). Das Plus eins ist der klassische Zaunpfahl-Fehler."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l06",
+    "lernfeld": "lf17",
+    "thema": "Checkliste Inspektion",
+    "titel": "Die Checkliste: sechs Positionen, kein Bauteil vergessen",
+    "inhalt": [
+      "Die Checkliste ist dein Laufzettel auf dem Dach: Sie stellt sicher, dass kein Bauteil bei der Prüfung übersehen wird, und liefert am Ende ein Protokoll, mit dem der Eigentümer etwas anfangen kann. Sie ist nach Bauteilgruppen geordnet, nicht nach Schadensart — deshalb weißt du bei jedem Punkt sofort, wo du nachschauen musst.",
+      "Position 1 Dachdeckung umfasst 1.1 bis 1.6: beschädigte Dachziegel in der Hauptdachfläche, Beeinträchtigung der Regensicherheit, beschädigte Formziegel, fehlende Dach- oder Formziegel, die Hinterlüftung der Dachdeckung und die Befestigung der Dachdeckung, also die Windsogsicherheit. Alles, was zur Deckung selbst gehört.",
+      "Rinnen und Fallrohre stehen nicht unter Position 1, sondern unter Position 2 Dachentwässerung. Position 3 An- und Abschlüsse fragt drei Punkte ab: 3.1, ob die Metallan- und -abschlüsse noch längerfristig regensicher sind, 3.2, ob Vermörtelungen schadhaft sind, und 3.3, ob sonstige lose Verunreinigungen zu entfernen sind.",
+      "Achte bei 3.1 auf das Wort längerfristig: Gefragt ist nicht nur, ob der Anschluss heute dicht ist, sondern ob er es bis zur nächsten Inspektion bleibt. Bei einem Abstand von 2 bis 3 Jahren ist das ein echter Unterschied.",
+      "Position 4.1 zählt elf Dacheinbauteile und Dachsystemteile auf: Firstabschluss-, Firstlüftungs-, Gratlüftungs- und Trauflüftungselement, Durchgangspfanne, Lichtpfanne und Lichtbiber, Kehlelement, Ortgangelement, Dachausstiegsfenster und Wohnraumdachfenster. Position 4.2 stellt dann dieselbe Frage wie 1.2: Ist die Regensicherheit hierdurch beeinträchtigt? Unter 4.3 stehen die Anlagen zur Nutzung der Solarenergie.",
+      "Position 5 Sicherheitseinrichtungen prüft 5.1 die Blitzschutzeinrichtungen, 5.2 die Tritte und Wege für die Dachbegehungen und 5.3 die Schneefangvorrichtungen. Bei 5.1 und bei 4.3 genügt ein Kreuz nicht — dort steht zusätzlich die Rückfrage, welche Teile gewartet werden müssen.",
+      "Position 6 Verkehrssicherheit ist die Klammer über alle anderen Punkte: Sie fragt, ob durch festgestellte Schäden die Verkehrssicherheit für Personen berührt ist, also Gefahr im Verzug besteht. Dazu musst du die Nummer aus der Checkliste angeben, unter der der Schaden steht. Gefahr im Verzug heißt sofort handeln, notfalls absperren — nicht bis zum nächsten Termin warten.",
+      "Die Ergebnisse werden protokolliert und dienen als Grundlage für eventuell notwendige Wartungs- oder Sanierungsarbeiten. Die Checkliste ersetzt die Begehung des Daches nie, sie strukturiert sie nur. Ihr praktischer Wert zeigt sich später: Bei einer Auseinandersetzung ist schriftlich belegt, was wann geprüft wurde und in welchem Zustand es war."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l07",
+    "lernfeld": "lf17",
+    "thema": "Teilsanierung",
+    "titel": "Teilsanierung, Instandsetzung, Komplettsanierung",
+    "inhalt": [
+      "Vor jeder Flachdachsanierung steht eine Entscheidung: Reicht Ausbessern, oder muss die ganze Abdichtung runter? Davon hängen Preis und Aufwand ab — und die Antwort steckt darin, wie weit die vorhandene Abdichtung hin ist.",
+      "Teilsanierung heißt: Beschädigte Stellen werden repariert und neu abgedichtet. Sie kommt in Frage, wenn Undichtigkeiten nur an einzelnen stark beanspruchten Stellen aufgetreten sind und die Abdichtung noch nicht insgesamt unbrauchbar geworden ist.",
+      "Die Grenze ist erreicht bei starker Blasen-, Wellen- oder Rissbildung oder wenn die Abdichtung insgesamt unbrauchbar ist — dann muss die gesamte Abdichtung erneuert werden. Bei der Komplettsanierung geht es noch weiter: Der alte Dachaufbau wird vollständig abgerissen und durch einen neuen Aufbau ersetzt.",
+      "Dazwischen liegt die Instandsetzung bei Erhalt des alten Dachaufbaus: Der Aufbau bleibt liegen, die Abdichtung wird aber vollständig erneuert und meist um neue Schichten ergänzt. Es sind also drei Stufen, nicht zwei — und die mittlere ist in der Praxis die häufigste.",
+      "Die Schadstelle zu finden ist der schwierigste Teil, weil eingedrungene Feuchtigkeit im Dachaufbau lange Strecken zurücklegen kann: Der nasse Fleck in der Wohnung liegt oft meterweit vom eigentlichen Loch entfernt. Das Buch nennt dafür zwei Verfahren — das Rauch-Gas-Verfahren, bei dem austretender Rauch die Leckstelle zeigt, und das Impulsstromverfahren, das die leitende Wirkung von Feuchtigkeit nutzt.",
+      "An Bitumenbahnen arbeitest du so: Einzelne Blasen aufschneiden und mit Bitumenbahnen überkleben. Risse bekommen zuerst einen einseitig befestigten Trennstreifen darunter, dann wird überklebt. Der Trennstreifen ist der entscheidende Kunstgriff — ein vollflächig verklebter Flicken würde die Bewegung im Untergrund mitmachen und wieder reißen.",
+      "Bitumenbahnen mit leichtem Oberflächenschutz, etwa einer Besplittung, sind Witterungs- und Umwelteinflüssen besonders stark ausgesetzt und müssen rechtzeitig nachbehandelt werden. Das geht durch Anstriche oder durch eine gleichzeitige Erneuerung der Besplittung. Eine schwere Kiesschüttung schützt die Bahn deutlich besser.",
+      "Kunststoffbahnen reparierst du durch Aufkleben oder Aufschweißen von Kunststoffbahnen desselben Herstellers. Desselben Herstellers ist keine Formsache: Unterschiedliche Rezepturen verschweißen nicht zuverlässig und vertragen sich chemisch nicht immer. Der reflektierende Anstrich auf Kunststoffbahnen ist dagegen eine Pflegemaßnahme gegen Sonneneinstrahlung, keine Reparatur."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l08",
+    "lernfeld": "lf17",
+    "thema": "Reparatur von Schiefer- und Faserzementdeckungen",
+    "titel": "Einzelne Platten wechseln — und Wandbekleidungen pflegen",
+    "inhalt": [
+      "Einzelne gebrochene Schiefer oder Faserzementplatten sind Alltagsarbeit — und eine unsauber ausgeführte Auswechslung sieht man dem Dach später an. Deshalb hängt hier viel an zwei Dingen: richtiger Stein und richtiges Befestigungsmittel.",
+      "Ursache der Beschädigungen sind Setzungen und Bewegungen der Dachräume. Der Dachstuhl arbeitet, das Gebäude setzt sich — und die starre, spröde Platte macht diese Bewegung nicht mit. Sie bricht und muss ersetzt werden.",
+      "Beim Auswechseln gilt: neuer Schiefer aus derselben Grube und in derselben Dicke. Gleiche Grube und gleiche Dicke sorgen dafür, dass der Ersatzstein optisch und technisch zum Bestand passt — Schiefer aus verschiedenen Gruben unterscheidet sich in Farbe und Verwitterungsverhalten.",
+      "Bei der Befestigung erfolgt die Blankbefestigung mit Schieferstiften aus demselben Werkstoff wie die Deckung, Schrauben sollen aus Edelstahl oder Kupfer sein. Dahinter steckt die Kontaktkorrosion: Zwei verschiedene Metalle in Feuchtigkeit bilden ein galvanisches Element, und das unedlere löst sich auf.",
+      "Der Plattenhalter ist das saubere Reparatursystem für einzelne beschädigte Schiefer- oder Faserzementplatten. Er besteht aus einer Grundplatte, die an der Schalung befestigt wird, und aus Haltearmen, die den Schiefer halten. So wechselst du eine Platte aus, ohne sie durchbohren zu müssen — die Blankbefestigung wird vermieden, bei der der Stift sichtbar in der Fläche säße. Nach dem Einbau ist das System nicht mehr zu sehen.",
+      "Der praktische Vorteil: In einer fertigen Deckung kommst du an die verdeckten Nägel der Nachbarplatten nicht mehr heran. Mit dem Halter greifst du an die Schalung und klemmst die neue Platte fest, ohne die umliegenden Reihen aufzudecken.",
+      "Für Wandbekleidungen gelten dieselben Grundsätze: Sie sollten in regelmäßigen Abständen auf Beschädigungen überprüft werden, und für Ausbesserungsarbeiten gelten sinngemäß die Grundsätze für Reparaturen am Dach. Der eigene Punkt ist die Reinigung — bei Schmutzablagerungen aus Abgas- oder Staubbelastung oder mutwilligen Verschmutzungen muss das Reinigungsmittel auf seine Verträglichkeit mit dem Material der Wandbekleidung überprüft sein. Ein zu scharfer Reiniger richtet sonst mehr Schaden an als der Schmutz."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l09",
+    "lernfeld": "lf17",
+    "thema": "Inspektion und Wartung von Flachdächern",
+    "titel": "Flachdach instandhalten: hinsehen, pflegen, reparieren",
+    "inhalt": [
+      "Am Flachdach hängt die Dichtheit an der Dachabdichtung — geht die auf, läuft das Wasser direkt ins Gebäude. Die Instandhaltung von Flachdächern umfasst deshalb die Inspektion, in der Regel durch regelmäßige Sichtkontrolle, die Wartungsarbeiten und gegebenenfalls die Instandsetzung der Abdichtung.",
+      "Die Reihenfolge dieser drei ist auch die zeitliche Abfolge: Erst siehst du hin (Inspektion), dann beseitigst du Kleinigkeiten (Wartung), und erst wenn das nicht mehr reicht, wird repariert (Instandsetzung). Das gegebenenfalls vor der Instandsetzung ist kein Zufall — sie fällt nur an, wenn tatsächlich ein Schaden vorliegt. Instandhaltung ist der Oberbegriff über alle drei.",
+      "Bei der Inspektion untersuchst du den Zustand der Dachabdichtung in der Fläche sowie den Zustand der An- und Abschlüsse und der Durchdringungen. Die Durchdringungen sind erfahrungsgemäß die Schwachstelle: Überall, wo die Abdichtungsebene unterbrochen und wieder angeschlossen werden muss, entsteht ein Risiko.",
+      "Pflegearbeiten sind vorbeugend. Du beseitigst Verschmutzungen durch Staub, Laub und Bewuchs und verhinderst damit Verkrustungen, Humusablagerungen, Undichtigkeiten durch Wurzelwachstum und eine Verstopfung der Entwässerung. Aus abgelagertem Humus wachsen Pflanzen, und deren Wurzeln gehen durch die Abdichtung.",
+      "Besonders überprüfen musst du die Verfugungen und die Befestigungen von Anschlüssen und Abschlüssen. ein verstopfter Ablauf lässt das Wasser auf der Fläche stehen — und stehendes Wasser ist genau die Belastung, die zu Schlammkrusten und Bewuchs führt"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l10",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 1: Arbeitsschritte",
+    "titel": "Beispiel 1: die Arbeitsliste von oben nach unten",
+    "inhalt": [
+      "Sanierungsbeispiel 1 zeigt dir, in welcher Reihenfolge eine Flachdachsanierung abläuft. Die Reihenfolge ist keine Geschmackssache — jeder Schritt setzt voraus, dass der vorige fertig ist.",
+      "An erster Stelle steht die Demontage der Blitzschutzeinrichtungen, an letzter ihre Montage und der Anschluss. Sie klammert die ganze Arbeitsliste ein, und das ist bei allen drei Sanierungsbeispielen gleich. Der Grund ist praktisch: Die Blitzschutzanlage liegt auf der Abdichtung, an die man heranmuss, und sie darf beim Aufschweißen der Bahnen nicht im Weg sein.",
+      "Dann kommt der Untergrund dran: Aufschneiden der Abdichtungsblasen und Entfernen von losen Teilen, Verschmutzungen und Verkrustungen. Auf einer losen oder verkrusteten Fläche hält keine neue Bahn — deshalb steht dieser Schritt vor allem Weiteren.",
+      "Darauf wird eine dünne Dämmplatte verlegt, mit zwei Aufgaben, die nichts mit Wärmeschutz zu tun haben: Sie schafft eine ebene Unterlage und dient als Ausgleichsschicht zum Dampfdruckausgleich, führt also den Dampfdruck aus der alten Abdichtung ab. Beim Stallgebäude ist eine zusätzliche Wärmedämmung aufgrund der Nutzung ausdrücklich nicht erforderlich.",
+      "Es folgt das Aufbringen einer zweilagigen Abdichtung aus Polymerbitumenschweißbahnen mit Beschieferung. Die Beschieferung ist folgerichtig, denn das Bestandsdach hatte bereits leichten Oberflächenschutz durch Beschieferung.",
+      "Danach die Anschlüsse: Herstellen der Dachrandabschlüsse sowie Abdichtung der Lichtkuppeleinfassungen und der Dachgullys. Erst zum Schluss wird die Blitzschutzeinrichtung wieder montiert und angeschlossen.",
+      "Die Kette am Stück: Blitzschutz ab — aufschneiden und reinigen — dünne Dämmplatte — zweilagige Polymerbitumenschweißbahnen mit Beschieferung — Dachrandabschlüsse — Lichtkuppeln und Dachgullys abdichten — Blitzschutz wieder dran. Dränelemente und Pflanzsubstrat kommen in dieser Liste nicht vor, die gehören zum Gründachaufbau in Beispiel 3."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l11",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 2: Arbeitsschritte",
+    "titel": "Beispiel 2: Wenn der Dachaufbau in die Höhe wächst",
+    "inhalt": [
+      "Sanierungsbeispiel 2 ist eine Turnhalle, für die ein U-Wert von 0,20 W/(m²·K) gefordert ist. Hier siehst du, was passiert, wenn zur Abdichtung noch eine Wärmeschutzanforderung kommt: Das Dach wächst nach oben, und der ganze Rand muss mit.",
+      "Der geforderte U-Wert wird so erreicht: Die alte Wärmedämmung von 4 cm ist noch weitgehend funktionsfähig und bleibt liegen. Zusätzlich werden zweilagige Gefälledämmplatten mit einer Mindestdicke von 16 cm aufgebracht. Zusammen ergibt das 20 cm.",
+      "Zweilagig bedeutet versetzte Stöße: Liegen die Plattenfugen der beiden Lagen nicht übereinander, entstehen an den Fugen keine durchgehenden Wärmebrücken. Das Gefälle sorgt zugleich dafür, dass das Wasser zu den Abläufen läuft und nicht auf der Fläche steht.",
+      "Weil der Dachaufbau um mindestens 16 cm höher wird, wandert die gesamte Abdichtungsebene nach oben. Deshalb müssen die Dachränder erhöht werden — sonst könnte die Abdichtung nicht mehr ausreichend hochgeführt werden und Wasser liefe über den Rand. Und die Dachabläufe und Lüfter müssen angepasst werden, weil sie sonst unterhalb der neuen Abdichtungsebene lägen.",
+      "Auf den Aufbau kommt eine Trennlage, darauf die Kunststoffdachdichtungsbahnen. Die Trennlage ist nötig, weil sich Kunststoffbahnen und die bituminöse Altabdichtung chemisch nicht vertragen — Weichmacher würden wandern und die Kunststoffbahn schädigen.",
+      "Zum Abschluss: Ausbildung der Dachrandabschlüsse mit einer Dachrandabdeckung, Wiederaufbringen der Kiesschüttung und zuletzt die Blitzschutzeinrichtung. Pflanzsubstrat und Pflanzen stehen nicht in dieser Liste, die gehören zu Beispiel 3."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l12",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 3: Gründachaufbau",
+    "titel": "Beispiel 3: dasselbe Dach, anderer Weg — das Gründach",
+    "inhalt": [
+      "Beispiel 3 betrifft dieselbe Turnhalle wie Beispiel 2, wählt aber einen anderen Weg zum selben Ziel. Das ist die Kernaussage des Beispielpaares: Für eine Wärmeschutzanforderung gibt es mehrere technisch zulässige Lösungen, und entschieden wird nach Kosten, Nutzung und Wunsch des Bauherrn.",
+      "Der vorgeschriebene Wärmeschutz wird hier durch einen wärmedämmenden Gründachaufbau erreicht — nicht durch die zweilagigen Gefälledämmplatten aus Beispiel 2. Die Dämmwirkung steckt also im Gründachaufbau selbst.",
+      "Gegenüber Beispiel 2 kommen drei Arbeiten hinzu: die Verlegung einer zweiten Abdichtungsebene mit Wurzelschutzbahnen, die Verlegung von Dränelementen und das Aufbringen von Pflanzsubstrat und Pflanzen. Das Abräumen der Kiesschicht dagegen steht in beiden Listen, ist also nichts Neues.",
+      "Die drei Zusätze ergeben zusammen die Logik eines Gründachs: Der Wurzelschutz hält die Wurzeln von der Abdichtung fern, die Dränelemente führen überschüssiges Wasser ab, damit die Pflanzen nicht ersticken, und das Substrat ist der Boden, in dem sie wachsen.",
+      "Die Dachrandabschlüsse werden bei Beispiel 3 mit Kiesstreifen und einer Dachrandabdeckung ausgebildet. Der Kiesstreifen am Rand hat dabei eine eigene Aufgabe: Er hält den Bewuchs vom Anschluss fern. Bei Beispiel 2 nennt die Liste nur die Dachrandabdeckung — dort liegt ohnehin Kies auf der ganzen Fläche."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l13",
+    "lernfeld": "lf17",
+    "thema": "GEG-Anforderungen",
+    "titel": "GEG: wann es gilt und welche Höchstwerte gelten",
+    "inhalt": [
+      "Sobald an einem bestehenden Gebäude ein Außenbauteil angefasst wird, kann das GEG mitreden — und dann entscheidet nicht der Bauherr über die Dämmdicke, sondern eine Tabelle mit Höchstwerten der Wärmedurchgangskoeffizienten.",
+      "Die Regel: Werden Außenbauteile von bestehenden Gebäuden verändert, ersetzt oder erneuert, dürfen bestimmte Höchstwerte der Wärmedurchgangskoeffizienten nicht überschritten werden. Drei Auslöser also — verändert, ersetzt, erneuert. Die reine Reparatur einer einzelnen Schadstelle ist keiner davon.",
+      "Die Werte gelten für beheizte Gebäude mit normalen Innentemperaturen von mehr als 19 Grad Celsius. Diese Grenze entscheidet, ob die Anforderungen überhaupt greifen: Das Stallgebäude in Beispiel 1 braucht deshalb keine zusätzliche Wärmedämmung, die Turnhalle in Beispiel 2 dagegen schon.",
+      "Die Höchstwerte des GEG von 2020, alle in W/(m²·K): Flachdächer 0,20. Decken, Dächer und Dachschrägen 0,24. Außenwände 0,24. Außen liegende Fenster und Fenstertüren 1,30. Dachflächenfenster 1,40.",
+      "Zwei Merkhilfen dazu: Flachdächer haben den strengsten Wert der Tabelle, weil sich dort die Dämmdicke frei wählen lässt, während am Steildach die Sparrenhöhe den Platz begrenzt. Und die Fensterwerte liegen um den Faktor 5 bis 7 über den geschlossenen Bauteilen — Dachflächenfenster dürfen dabei noch etwas mehr Wärme durchlassen als senkrechte Fenster, weil der schräge Einbau und die Anschlusssituation bauphysikalisch schwieriger sind."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l14",
+    "lernfeld": "lf17",
+    "thema": "Projektaufgabe Flachdachsanierung",
+    "titel": "Die Projektaufgabe: Schadensbild, Sanierungsplan und Massen",
+    "inhalt": [
+      "Die Projektaufgabe ist dein Trainingsfall: Ein Wohngebäude hat ein undichtes Flachdach, und du sollst daraus einen Sanierungsplan machen — also entscheiden, wie saniert wird, und die Mengen ermitteln, die später bestellt werden.",
+      "Die Schadensinspektion nennt genau zwei Mängel: undichte Stellen im Bereich der Dachränder und der Lichtkuppelelemente sowie vereinzelte Riss- und Faltenbildungen in der Flächenabdichtung. Die Wärmedämmschicht ist ausdrücklich noch funktionstüchtig — deshalb kann sie liegen bleiben, und eine Sanierung mit Erhalt des alten Dachaufbaus reicht.",
+      "Eckdaten des Dachs: Die Abdichtung ist 24 Jahre alt und liegt auf einer Stahlbetondecke mit 3 % Gefälle. Verwechsle die Zahl nicht mit den Sanierungsbeispielen — Beispiel 1 ist 22 Jahre alt, Beispiel 2 sind es 26 Jahre.",
+      "Der Sanierungsplan hat drei Teile: eine Beschreibung der notwendigen Arbeitsschritte, Zeichnungen des Dachaufbaus nach der Sanierung einschließlich Dachrandabschluss und die Berechnungen zur Massenermittlung. Ein Preisangebot gehört nicht dazu: Der Plan ist die technische Grundlage fürs Beratungsgespräch, kalkuliert wird erst danach.",
+      "Der Grundriss ist L-förmig, die Außenkanten sind in 8,40 m + 5,60 m und 7,00 m + 5,60 m unterteilt. Rechne mit dem umschließenden Rechteck: 14,00 m mal 12,60 m = 176,40 m², minus die fehlende Ecke 5,60 m mal 5,60 m = 31,36 m². Bleiben 145,04 m² Dachfläche.",
+      "Der Umfang beträgt 2 mal (14,00 m + 12,60 m) = 53,20 m. Merk dir die Eigenschaft: Bei einer L-Form ist der Umfang genauso groß wie beim vollen umschließenden Rechteck, die beiden einspringenden Kanten ersetzen genau die fehlenden Außenkanten. Die Fläche schrumpft, die Randlänge nicht.",
+      "Gefälle in Prozent heißt Höhe geteilt durch Länge, mal 100. Umgestellt: Höhe = Strecke mal Prozent geteilt durch 100. Bei 3 % und 14,00 m Strecke sind das 0,42 m, also 42 cm Höhenunterschied. Das erklärt, warum Gefälledämmplatten am Hochpunkt viel dicker sind als am Tiefpunkt.",
+      "Kurzcheck ohne Buch: Welche zwei Mängel wurden festgestellt, und in welchem Zustand ist die Dämmung? Wie alt ist die Abdichtung, worauf und mit welchem Gefälle liegt sie? Aus welchen drei Teilen besteht der Sanierungsplan? Wie groß sind Fläche und Umfang?"
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l15",
+    "lernfeld": "lf17",
+    "thema": "Vorhandener Flachdachaufbau",
+    "titel": "Der Bestandsaufbau und der Dachrandabschluss",
+    "inhalt": [
+      "Bevor du saniert, musst du wissen, was auf dem Dach liegt: Die Schichtfolge und das Randdetail entscheiden, was abgeräumt wird, was liegen bleiben darf und welche Mengen du bestellst.",
+      "Der vorhandene Aufbau von unten nach oben: Stahlbetondecke 18 cm, Voranstrich, Dampfsperre V13, PUR-Hartschaumplatten 6 cm, Dichtungsbahnen V 60 S4 und PYE-PV 200 S5, darüber 6 cm Kies der Körnung 16/32 mm.",
+      "In dieser Reihenfolge stecken zwei Regeln. Der Voranstrich kommt vor der Dampfsperre, weil er den Beton grundiert und die Haftung der Bahn sichert. Und die Dampfsperre liegt auf der warmen Seite, also unter der Dämmung — läge sie darüber, würde Tauwasser in der Dämmung anfallen.",
+      "Der Kies oben ist keine Dämmung, sondern schwerer Oberflächenschutz: Er hält die Bahn gegen Windsog nieder und schützt sie vor UV-Strahlung. Mit 6 cm ist er genauso dick wie die PUR-Dämmung. Bei der Sanierung muss er zuerst herunter.",
+      "Kiesmenge: 145,04 m² mal 0,06 m = 8,70 m³. Das wiegt rund 14 Tonnen, denn Kies hat etwa 1600 kg/m³. Häufigster Fehler: die 6 cm nicht in Meter umrechnen — dann kommt das Hundertfache heraus.",
+      "Das Detail des Dachrandabschlusses zeigt die Blechverkleidung, darunter die Blechhalterung, eine Randbohle mit dem Querschnitt 6 mal 12 cm und die Stahlbetondecke 18 cm. Die Randbohle ist der entscheidende Punkt: Auf der Dämmung allein hält keine Schraube, die Attika braucht ein Holz zum Befestigen.",
+      "Holzmenge für die Randbohle: Querschnitt 0,06 m mal 0,12 m = 0,0072 m², mal 53,20 m Randlänge ergibt 0,383 m³ Holz. Kanthölzer rechnest du immer über Querschnitt mal laufende Länge, nie über die Dachfläche.",
+      "Merk dir die Trennung für jede Massenermittlung: Über die Fläche gehen Abdichtungsbahnen, Dämmplatten und Kies. Über den Umfang gehen Dachrandabschluss, Randbohle und Attikablech. Beides musst du getrennt ermitteln."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l16",
+    "lernfeld": "lf17",
+    "thema": "Belastungen von Flachdächern",
+    "titel": "Was Flachdächer kaputt macht",
+    "inhalt": [
+      "Wer weiß, was ein Flachdach kaputt macht, weiß bei der Inspektion, wo er hinschauen muss — und kann dem Kunden erklären, warum sein über 20 Jahre altes Dach kein Ausreißer ist.",
+      "Vier Beanspruchungen können zu Schäden führen: Bewuchs durch Mikroorganismen und Pflanzen, Pfützenbildung mit Schlammkrusten, mechanische Beanspruchungen und die Einwirkung von Hitze und Kälte. Alle vier gehören zusammen in die Antwort.",
+      "Die Folge sind Rissbildungen und undichte Stellen in der Abdichtung, wobei bereits kleine Undichtigkeiten zu schwerwiegender Durchfeuchtung und Beschädigung führen können. Anders als beim geneigten Dach läuft beim Flachdach nichts von selbst ab.",
+      "Die Nutzungsdauer von Flachdächern liegt zwischen 20 und 30 Jahren — aber ausdrücklich nur bei regelmäßiger Inspektion und Wartung. Ohne Pflege wird diese Spanne nicht erreicht.",
+      "Deshalb sind die Buchbeispiele keine Ausreißer, sondern ganz normale Sanierungsfälle: 22 Jahre beim Stallgebäude, 24 Jahre beim Wohngebäude der Projektaufgabe, 26 Jahre bei der Turnhalle.",
+      "Stehendes Wasser auf einem Null-Grad-Dach trocknet nicht ab. Es sammelt Schmutz zu Schlammkrusten und bietet Mikroorganismen und Pflanzen einen Nährboden — beides zählt zu den Belastungen der Abdichtung. Sofort undicht wird die Bahn dadurch nicht, der Schaden entsteht über Jahre.",
+      "Genau deshalb wird bei Sanierungen ein Gefälle nachträglich hergestellt, zum Beispiel mit Gefälledämmplatten. Die leiten das Wasser zu den Dachabläufen, statt es auf der Fläche stehen zu lassen, und verbessern nebenbei den Wärmeschutz."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l17",
+    "lernfeld": "lf17",
+    "thema": "Instandsetzung bei Erhalt des alten Dachaufbaus",
+    "titel": "Alter Aufbau bleibt liegen: Voraussetzungen und neue Schichten",
+    "inhalt": [
+      "Das ist die häufigste Flachdachsanierung: Der alte Aufbau bleibt liegen, die Abdichtung wird erneuert. Du musst entscheiden können, wann das zulässig ist — und was zwischen alte und neue Bahn gehört.",
+      "Voraussetzung: Die alte Abdichtung zeigt Blasen- oder Rissbildung, die vorhandene Wärmedämmung ist aber noch funktionsfähig. Entscheidend ist also der Zustand der Dämmung. Zeigt die Abdichtung starke Blasen-, Wellen- oder Rissbildung oder ist sie insgesamt unbrauchbar, muss die gesamte Abdichtung erneuert werden.",
+      "Ob die Dämmung noch trocken ist, lässt sich mit speziellen Messmethoden prüfen: radiometrische Messungen mithilfe von Elementarteilchen, von außen und zerstörungsfrei. Zerstörungsfrei ist der Punkt — jede Öffnung in einer intakten Abdichtung wäre eine neue Schwachstelle.",
+      "Soll die alte Abdichtung als Unterlage dienen, braucht sie eine sorgfältige Vorbehandlung: Blasen, Falten und Wellen aufschneiden, Verkrustungen und Schmutzablagerungen entfernen.",
+      "Die zentrale Falle: Verklebe die neue Bahn nicht vollflächig. In der alten Abdichtung steckt Restfeuchte. Erwärmt die Sonne sie, entsteht Dampfdruck, der nirgendwohin kann und die neue Bahn abhebt — eine vollflächige Verklebung würde also erneute Blasenbildung erzeugen. Dazwischen gehört eine Dampfdruckausgleichsschicht.",
+      "Weil ohnehin neu aufgebaut wird, kann der alte Aufbau zugleich ergänzt werden: um eine zusätzliche Wärmedämmschicht, unter Umständen mit Gefälle, oder um eine Dachbegrünung. Genau das sind die Sanierungsbeispiele 2 und 3.",
+      "Gefälledämmplatte: eine keilförmig zugeschnittene Dämmplatte mit Doppelfunktion — sie verbessert den Wärmeschutz und stellt zugleich das Gefälle zu den Dachabläufen her. Bei Beispiel 2 zweilagig mit mindestens 16 cm. Folge mitdenken: Dachränder erhöhen, Dachabläufe anpassen, weil die Abdichtungsebene nach oben wandert.",
+      "Neue Funktionsschichten, die im alten Aufbau gar nicht vorkamen: die Ausgleichsschicht zum Dampfdruckausgleich, Gefälledämmplatten für Gefälle und U-Wert, Wurzelschutzbahnen und Dränelemente beim Gründachaufbau. Die Tragkonstruktion bleibt in allen drei Beispielen unangetastet."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l18",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 1: Stallgebäude",
+    "titel": "Beispiel 1: Stallgebäude ohne zusätzliche Dämmung",
+    "inhalt": [
+      "Sanierungsbeispiel 1 zeigt dir, wie ein Sanierungsplan in der Praxis aussieht — und warum nicht jedes Dach bei der Sanierung nachträglich gedämmt werden muss.",
+      "Eckdaten: Stallgebäude, 18 mal 20 m, 22 Jahre alt, leichter Oberflächenschutz durch Beschieferung, Lichtkuppelelemente sowie Durchdringungen für Lüfter und Dachabläufe, dazu eine Blitzschutzanlage.",
+      "Eine zusätzliche Wärmedämmung ist hier aufgrund der Nutzung nicht erforderlich. Ein Stall wird nicht auf über 19 Grad Celsius beheizt, damit greifen die GEG-Anforderungen für beheizte Gebäude nicht. Die 4 cm Hartschaumdämmung, an die du vielleicht denkst, gehören zu Beispiel 2.",
+      "Festgestellte Schäden: verschiedene undichte Stellen in der Abdichtung, vorwiegend im Bereich der Durchdringungen, und in der Fläche stellenweise Risse sowie Faltenbildung. Die undichte Aufkantung ist dagegen der Schadensschwerpunkt von Beispiel 2 — verwechsle die beiden nicht.",
+      "Merk dir das Muster dahinter: Schäden treten fast immer dort auf, wo die Abdichtungsebene unterbrochen oder abgeknickt wird — an Durchdringungen, Aufkantungen und Rändern.",
+      "Massen: 18 m mal 20 m = 360 m² Dachfläche, Umfang 2 mal (18 + 20) = 76 m für die Dachrandabschlüsse. Über die Fläche gehen Bahnen, Dämmplatten und Kies, über den Umfang Randabschlüsse, Randbohlen und Attikableche.",
+      "Oberflächenschutz auseinanderhalten: Beim Stallgebäude liegt leichter Oberflächenschutz durch Beschieferung. Bei der Turnhalle in Beispiel 2 liegt dagegen schwerer Oberflächenschutz aus 5 cm Kies der Körnung 16/32."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l19",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 2: Turnhalle",
+    "titel": "Beispiel 2: Turnhalle mit Kies und Gefälledämmung",
+    "inhalt": [
+      "Beispiel 2 ist der große Bruder von Beispiel 1: dieselbe Sanierungsmethode, aber deutlich mehr Fläche — und hier wird zusätzlich gedämmt.",
+      "Eckdaten: Turnhalle, 25 mal 50 m, 26 Jahre alt, zweilagige Abdichtung, 4 cm Wärmedämmung aus Hartschaumplatten, Oberflächenschutz 5 cm Kies der Körnung 16/32, verschiedene Durchdringungen und eine Blitzschutzanlage.",
+      "Hier liegt schwerer Oberflächenschutz aus Kies — die Beschieferung als leichter Oberflächenschutz gehört zu Beispiel 1. Der Schadensschwerpunkt der Turnhalle liegt im Bereich der Aufkantung, nicht wie bei Beispiel 1 vorwiegend an den Durchdringungen.",
+      "Massen: 25 m mal 50 m = 1250 m² Dachfläche, Umfang 2 mal (25 + 50) = 150 m. Das Dach ist damit rund 3,5-mal so groß wie das des Stallgebäudes und fast neunmal so groß wie das Wohngebäude der Projektaufgabe.",
+      "Kies: 1250 m² mal 0,05 m = 62,5 m³ — rund 100 Tonnen, die einmal herunter und wieder hinauf müssen. Bei dieser Fläche entscheidet jeder Zentimeter Schichtdicke spürbar über die Materialmenge.",
+      "In der Arbeitsliste stehen deshalb zwei getrennte Positionen: Abräumen der Kiesschicht ganz am Anfang und Wiederaufbringen der Kiesschüttung am Ende. Der Kies wird also nicht entsorgt, sondern zwischengelagert und wiederverwendet.",
+      "Die vorhandenen 4 cm Wärmedämmung bleiben liegen und werden durch Gefälledämmplatten von mindestens 16 cm ergänzt. Was das rechnerisch bedeutet, steht in der Lektion zum Wärmeschutz von Beispiel 2."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l20",
+    "lernfeld": "lf17",
+    "thema": "Sanierungsbeispiel 2: Wärmeschutz",
+    "titel": "U-Wert rechnen: Wie dick muss die neue Dämmung sein?",
+    "inhalt": [
+      "Hier entscheidet die Rechnung, wie dick die neue Dämmung wird — und ob der alte Bestand liegen bleiben darf oder nicht.",
+      "Zwei Formeln reichen. Wärmedurchlasswiderstand: R = Dämmdicke d geteilt durch Wärmeleitfähigkeit Lambda. Wärmedurchgangskoeffizient: U = 1 geteilt durch R. Umgestellt für die Dicke: R = 1 geteilt durch U, und d = Lambda mal R.",
+      "Für Flachdächer fordert die GEG-Tabelle einen U-Wert von höchstens 0,20 W/(m²·K). Achtung bei Lambda: Der Wert 0,035 W/(m·K) für Hartschaumplatten steht nicht im Buch, er ist als üblicher Wert angenommen, damit die Rechnung durchführbar wird.",
+      "Mindestdicke, wenn man vereinfacht nur die Dämmschicht rechnet: R = 1 geteilt durch 0,20 = 5,0 m²K/W, daraus d = 0,035 mal 5,0 = 0,175 m, also 17,5 cm.",
+      "Turnhalle: 4 cm Bestand plus 16 cm Gefälledämmplatten = 20 cm = 0,20 m. R = 0,20 geteilt durch 0,035 = 5,71 m²K/W, U = 1 geteilt durch 5,71 = 0,175 W/(m²·K). Das liegt unter 0,20, die Anforderung ist erfüllt.",
+      "Gegenprobe mit den 16 cm allein: R = 0,16 geteilt durch 0,035 = 4,57 m²K/W, U = 1 geteilt durch 4,57 = 0,219 W/(m²·K). Das liegt über der Grenze und wäre nicht zulässig. Deshalb bleiben die alten 4 cm liegen — sie sind rechnerisch nötig.",
+      "Wichtig zur Einordnung: Diese Rechnungen sind vereinfacht. Wärmeübergangswiderstände und die übrigen Schichten sind vernachlässigt. Sie würden das Ergebnis noch etwas günstiger machen, ändern die Größenordnung aber nicht."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
+  },
+  {
+    "id": "lf17-l21",
+    "lernfeld": "lf17",
+    "thema": "Komplettsanierung",
+    "titel": "Komplettsanierung oder Erhalt: die Entscheidung",
+    "inhalt": [
+      "Die Komplettsanierung ist die Alternative zum Erhalt des alten Aufbaus. Du musst begründen können, wann sie nötig ist und was sie kostet — das ist der Kern des Gesprächs mit dem Bauherrn.",
+      "Bei der Komplettsanierung wird der alte Dachaufbau vollständig abgerissen und durch einen neuen ersetzt, alle Schichten werden erneuert. Auslöser ist fast immer die Wärmedämmung: Ist ein Großteil durchfeuchtet und unbrauchbar geworden, hilft kein Ergänzen mehr.",
+      "Die Abwägung ehrlich: Komplettsanierungen führen zu technisch einwandfreien Lösungen. Dem stehen hohe Kosten durch Abriss und Entsorgung des Altmaterials sowie durch den Neuaufbau aller Schichten gegenüber.",
+      "Der Erhalt des alten Aufbaus spart genau diese Kosten. Er ist aber nicht pauschal die bessere Lösung — Voraussetzung bleibt, dass die vorhandene Wärmedämmung noch funktionsfähig ist.",
+      "Den Wärmeschutz nach dem GEG von 2020 musst du sowohl bei der Erneuerung der Dachabdichtung als auch bei einer Komplettsanierung beachten, und zwar bei Flachdächern und Steildächern über beheizten Räumen.",
+      "Zwei Abgrenzungen dazu: Über unbeheizten Räumen greift die Anforderung nicht — deshalb braucht das Stallgebäude in Beispiel 1 keine zusätzliche Dämmung. Und die Reparatur einer einzelnen Schadstelle löst die Anforderung ebenfalls nicht aus.",
+      "Der Entscheidungsweg in zwei Sätzen: Dämmung noch funktionsfähig, dann bleibt der alte Aufbau liegen, die Abdichtung wird erneuert und der Aufbau bei Bedarf ergänzt. Dämmung größtenteils durchfeuchtet und unbrauchbar, dann Komplettsanierung."
+    ],
+    "quelle": "Abgeleitet aus den geprüften Aufgaben dieses Lernfelds (Dachdecker-Fachbuch, Handwerk und Technik)",
+    "konfidenz": "hoch"
   }
 ]
