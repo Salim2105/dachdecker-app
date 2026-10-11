@@ -1,0 +1,6 @@
+extends: ./electron-builder.yml
+appId: com.dachdecker.lernapp.neu
+productName: Dachdecker Neu
+extraMetadata:
+  desktopVariant: neu
+  productName: Dachdecker Neu

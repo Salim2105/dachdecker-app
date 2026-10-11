@@ -16,6 +16,7 @@
     "export": "node scripts/gen-anzahl.mjs && EXPORT=1 next build && EXPORT=1 node scripts/gen-sw.mjs",
     "desktop:dev": "npm run export && electron .",
     "desktop:build": "npm run export && electron-builder --mac",
+    "desktop:build:neu": "npm run export && electron-builder --mac --config electron-builder-neu.yml",
     "ios": "npm run build && node scripts/serve-ios.mjs",
     "deploy": "npm run export && wrangler pages deploy out --project-name=dachdecker --commit-dirty=true"
   },

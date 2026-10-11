@@ -5,10 +5,18 @@
 // die Dateien über einen winzigen lokalen HTTP-Server auf 127.0.0.1 und öffnen
 // ein Fenster darauf. Alles läuft lokal — kein Internet, kein externer Server.
 
-const { app, BrowserWindow, shell } = require("electron");
+const { app, BrowserWindow, shell, dialog } = require("electron");
 const http = require("node:http");
 const path = require("node:path");
 const fs = require("node:fs");
+const NEUE_APP = require("../package.json").desktopVariant === "neu";
+const APP_NAME = NEUE_APP ? "Dachdecker Neu" : "Dachdecker";
+
+// Die neue Variante behält ihren eigenen Lernstand; die alte App bleibt erhalten.
+if (NEUE_APP) {
+  app.setName(APP_NAME);
+  app.setPath("userData", path.join(app.getPath("appData"), APP_NAME));
+}
 
 // Wo liegt der Export? Gepackt unter resources/out, sonst im Projekt.
 const OUT_DIR = app.isPackaged
@@ -16,7 +24,8 @@ const OUT_DIR = app.isPackaged
   : path.join(__dirname, "..", "out");
 
 // Fester, unüblicher Port → stabile Adresse → Fortschritt bleibt erhalten.
-const FEST_PORT = 39217;
+const FEST_PORT = NEUE_APP ? 39218 : 39217;
+let lokalerServer;
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -51,7 +60,8 @@ function dateiFuer(pfad) {
 }
 
 function starteServer() {
-  return new Promise((resolve) => {
+  if (lokalerServer) return Promise.resolve(FEST_PORT);
+  return new Promise((resolve, reject) => {
     const server = http.createServer((req, res) => {
       const datei = dateiFuer(req.url || "/");
       if (!datei) {
@@ -70,8 +80,11 @@ function starteServer() {
     // FESTER Port: sonst ändert sich bei jedem Start die Adresse
     // (http://127.0.0.1:PORT), und weil der Fortschritt pro Adresse im
     // localStorage liegt, wäre er nach jedem Neustart weg.
-    server.once("error", () => resolve(FEST_PORT)); // schon belegt → gleiche Adresse weiternutzen
-    server.listen(FEST_PORT, "127.0.0.1", () => resolve(FEST_PORT));
+    server.once("error", reject);
+    server.listen(FEST_PORT, "127.0.0.1", () => {
+      lokalerServer = server;
+      resolve(FEST_PORT);
+    });
   });
 }
 
@@ -82,7 +95,7 @@ async function erstelleFenster() {
     height: 860,
     minWidth: 360,
     minHeight: 560,
-    title: "Dachdecker",
+    title: APP_NAME,
     backgroundColor: "#0f1011",
     webPreferences: { contextIsolation: true, nodeIntegration: false },
   });
@@ -105,12 +118,33 @@ async function erstelleFenster() {
   fenster.loadURL(`http://127.0.0.1:${port}/`);
 }
 
-app.whenReady().then(erstelleFenster);
+function startFehler(error) {
+  dialog.showErrorBox(APP_NAME, error.code === "EADDRINUSE"
+    ? "Der App-Port ist bereits belegt. Beende andere laufende Dachdecker-Apps vollständig und starte diese App erneut."
+    : "Die App konnte nicht starten. Bitte starte sie erneut.\n\n" + error.message);
+  app.quit();
+}
+
+if (!app.requestSingleInstanceLock()) {
+  app.quit();
+} else {
+  app.on("second-instance", () => {
+    const fenster = BrowserWindow.getAllWindows()[0];
+    if (fenster) {
+      if (fenster.isMinimized()) fenster.restore();
+      fenster.show();
+      fenster.focus();
+    } else if (app.isReady()) {
+      erstelleFenster().catch(startFehler);
+    }
+  });
+  app.whenReady().then(erstelleFenster).catch(startFehler);
+}
 
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
 
 app.on("activate", () => {
-  if (BrowserWindow.getAllWindows().length === 0) erstelleFenster();
+  if (BrowserWindow.getAllWindows().length === 0) erstelleFenster().catch(startFehler);
 });
