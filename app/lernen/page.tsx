@@ -3,6 +3,8 @@ import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
 import { LernfeldCard } from "@/components/LernfeldCard";
 import { Fortsetzen } from "@/components/Fortsetzen";
+import { useState } from "react";
+import { lernStatus } from "@/lib/lernstand";
 import type { AufgabenFortschritt } from "@/content/schema";
 
 const GRUPPEN = [
@@ -11,14 +13,15 @@ const GRUPPEN = [
   { key: 3, label: "3. Lehrjahr" },
 ];
 
-function anteil(fortschritt: Record<string, AufgabenFortschritt>, ids: string[]): number {
+function anteil(fortschritt: Record<string, AufgabenFortschritt>, ids: string[], jetzt: number): number {
   if (ids.length === 0) return 0;
-  const done = ids.filter((id) => fortschritt[id] && fortschritt[id].bewertung !== "falsch").length;
+  const done = ids.filter((id) => lernStatus(fortschritt[id], jetzt) === "gefestigt").length;
   return done / ids.length;
 }
 
 export default function LernenPage() {
   const { fortschritt } = useProgress();
+  const [jetzt] = useState(() => Date.now());
   const alle = getLernfelder();
   const wiso = alle.filter((lf) => lf.id === "wiso");
   const lernfelder = alle.filter((lf) => lf.id !== "wiso");
@@ -30,6 +33,7 @@ export default function LernenPage() {
       anteil: anteil(
         fortschritt,
         aufgaben.map((a) => a.id),
+        jetzt,
       ),
     };
   };

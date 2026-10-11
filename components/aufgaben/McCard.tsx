@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import type { McAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
+import type { McAufgabe, Bewertung, AufgabeModus, BewertungsKontext } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
 import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
@@ -11,10 +11,12 @@ export function McCard({
   modus = "uebung",
 }: {
   aufgabe: McAufgabe;
-  onErgebnis: (b: Bewertung) => void;
+  onErgebnis: (b: Bewertung, kontext?: BewertungsKontext) => void;
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
+  const [abruf, setAbruf] = useState<"frei" | "vergleich" | "auswahl">(modus === "pruefung" ? "auswahl" : "frei");
+  const [notiz, setNotiz] = useState("");
   const mehrfach = aufgabe.korrekt.length > 1;
   const [gewaehlt, setGewaehlt] = useState<Set<number>>(new Set());
   const [geprueft, setGeprueft] = useState(false);
@@ -31,6 +33,7 @@ export function McCard({
   };
 
   const pruefen = () => {
+    if (geprueft) return;
     setGeprueft(true);
     const korrektSet = new Set(aufgabe.korrekt);
     const gleich =
@@ -38,7 +41,8 @@ export function McCard({
     const b: Bewertung = gleich ? "richtig" : "falsch";
     setBewertung(b);
     trefferRueckmeldung(b);
-    onErgebnis(b);
+    if (aufloesen) onErgebnis(b, { mitHilfe: true });
+    else onErgebnis(b);
   };
 
   const stilFuer = (i: number) => {
@@ -52,6 +56,62 @@ export function McCard({
     if (gewaehlt.has(i)) return { borderColor: "var(--bad)", background: "var(--surface-2)" };
     return { borderColor: "var(--border)", background: "var(--surface)" };
   };
+
+  if (abruf !== "auswahl") {
+    const selbstBewerten = (b: Bewertung) => {
+      if (geprueft) return;
+      setGeprueft(true);
+      setBewertung(b);
+      trefferRueckmeldung(b);
+      onErgebnis(b, { selbstBewertet: true, mitHilfe: false });
+    };
+    return (
+      <div>
+        <p className="text-[17px] font-medium">{aufgabe.frage}</p>
+        {abruf === "frei" ? (
+          <>
+            <label className="mt-4 block text-sm">
+              Deine Antwort – notieren oder laut aussprechen
+              <textarea aria-label="Deine Antwort" value={notiz} onChange={(e) => setNotiz(e.target.value)}
+                className="mt-2 min-h-24 w-full rounded-xl border p-3"
+                style={{ background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" }} />
+            </label>
+            <button onClick={() => setAbruf("vergleich")} className="mt-3 min-h-14 w-full rounded-xl p-3 font-medium"
+              style={{ background: "var(--accent)", color: "var(--accent-text)" }}>
+              Antwort vergleichen
+            </button>
+            <button onClick={() => setAbruf("auswahl")} className="mt-2 min-h-11 w-full rounded-xl border p-3 text-sm"
+              style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>
+              Antwortmöglichkeiten als Hilfe
+            </button>
+          </>
+        ) : (
+          <>
+            {notiz && <p className="mt-3 whitespace-pre-wrap text-sm">Deine Antwort: {notiz}</p>}
+            <div className="mt-4 rounded-xl p-4" style={{ background: "var(--accent-soft)" }}>
+              <h2 className="font-semibold">Musterantwort</h2>
+              <ul className="mt-2 list-disc pl-5 text-sm">
+                {aufgabe.korrekt.map((i) => <li key={i}>{aufgabe.optionen[i]}</li>)}
+              </ul>
+            </div>
+            <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+            <p className="mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
+              Vergleiche mit deiner ersten Antwort. Das ist deine Selbsteinschätzung.
+            </p>
+            {!geprueft ? (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {([ ["richtig", "Stimmt vollständig"], ["teilweise", "Teilweise"], ["falsch", "Noch unsicher"] ] as const).map(([b, label]) => (
+                  <button key={b} onClick={() => selbstBewerten(b)} className="min-h-14 flex-1 rounded-xl border p-3 text-sm"
+                    style={{ borderColor: "var(--border)", background: "var(--surface)" }}>{label}</button>
+                ))}
+              </div>
+            ) : <p className="mt-3 text-sm" role="status">Bewertung gespeichert: {bewertung === "richtig" ? "vollständig" : bewertung === "teilweise" ? "teilweise" : "noch unsicher"}.</p>}
+            {aufgabe.bildDatei && <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />}
+          </>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div className={pulsKlasse(geprueft, bewertung)}>
@@ -115,7 +175,7 @@ export function McCard({
       ) : (
         aufloesen && (
           <>
-            <Erklaerung text={aufgabe.erklaerung} />
+            <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
             {aufgabe.bildDatei && (
               <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
             )}

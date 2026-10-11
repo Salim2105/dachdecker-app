@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import { saetze } from "@/lib/saetze";
+import { QuellenHinweis } from "@/components/QuellenHinweis";
 
 /**
- * Zeigt nur die Erklärung. Die Quelle steht weiterhin in den Inhalts-Daten
- * (Feld `quelle`) als Nachweis, wird aber bewusst nicht angezeigt.
+ * Zeigt die Erklärung und eine aufklappbare Quellenangabe.
  *
  * Der Text kam bisher als ein einziger Block heraus, egal wie lang. Gemessen
  * über alle 2039 Erklärungen: Median 248 Zeichen, 611 über 300, längste 779 —
@@ -24,7 +24,7 @@ const AB_SATZANZAHL = 3;
 const AB_ZEICHEN = 500;
 const VORSCHAU_SAETZE = 2;
 
-export function Erklaerung({ text }: { text: string }) {
+export function Erklaerung({ text, quelle }: { text: string; quelle?: string }) {
   const [offen, setOffen] = useState(false);
 
   const teile = saetze(text);
@@ -71,6 +71,7 @@ export function Erklaerung({ text }: { text: string }) {
             {offen ? "Weniger" : "Ganze Erklärung"}
           </button>
         )}
+        {quelle && <QuellenHinweis quelle={quelle} />}
       </div>
     </div>
   );

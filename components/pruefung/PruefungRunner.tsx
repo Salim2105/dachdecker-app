@@ -9,7 +9,7 @@ import { leereCalcCache } from "@/lib/calc";
 import {
   getPruefungsteile,
   poolFuer,
-  zieheAufgaben,
+  ziehePruefung,
   prozentFuer,
   noteFuer,
   bestanden,
@@ -94,7 +94,7 @@ export function PruefungRunner() {
   // jetztMs kommt aus dem Event-Handler, damit im Render keine Zeit gelesen wird.
   const starte = (teil: Pruefungsteil, jetztMs: number) => {
     leereCalcCache(); // frische Zahlen für jede Prüfung
-    const gezogen = zieheAufgaben(poolFuer(teil), teil.anzahl);
+    const gezogen = ziehePruefung(poolFuer(teil), teil.anzahl);
     setLauf({ teil, aufgaben: gezogen, endeAm: jetztMs + teil.minuten * 60_000 });
     setIndex(0);
     setErgebnisse([]);
@@ -128,7 +128,7 @@ export function PruefungRunner() {
           {teile.map((t) => {
             const verfuegbar = poolFuer(t).length;
             const anzahl = Math.min(t.anzahl, verfuegbar);
-            const badge = t.id === "teil1" ? "Wichtig" : t.id === "wiso" ? "Optional" : "Standard";
+            const badge = t.id === "wiso" ? "WiSo" : "Trainingsmix";
             return (
               <div
                 key={t.id}

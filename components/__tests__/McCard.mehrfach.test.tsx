@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen, cleanup, fireEvent } from "@testing-library/react";
 import { McCard } from "@/components/aufgaben/McCard";
 import type { McAufgabe } from "@/content/schema";
 
@@ -32,6 +32,8 @@ afterEach(cleanup);
 describe("McCard – Anzahl richtiger Antworten", () => {
   it("nennt in der Übung, wie viele Antworten stimmen", () => {
     render(<McCard aufgabe={mehrfach} onErgebnis={() => {}} />);
+    expect(screen.queryByText(/sind richtig/)).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
     const hinweis = screen.getByText(/sind richtig/).textContent?.replace(/\s+/g, " ");
     expect(hinweis).toContain("2 von 4");
   });

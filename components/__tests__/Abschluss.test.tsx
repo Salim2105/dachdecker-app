@@ -23,7 +23,8 @@ const frage = (id: string): Aufgabe => ({
 
 /** Beantwortet die eine Aufgabe richtig und geht bis zum Abschluss durch. */
 function durchspielen() {
-  fireEvent.click(screen.getByText("A"));
+  fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
+    fireEvent.click(screen.getByText("A"));
   fireEvent.click(screen.getByText("Prüfen"));
   fireEvent.click(screen.getByText("Ergebnis anzeigen"));
 }
@@ -32,6 +33,39 @@ beforeEach(() => localStorage.clear());
 afterEach(cleanup);
 
 describe("Abschlussbildschirm", () => {
+  it("setzt einen Stand zurück, der zu einer anderen Aufgabenliste gehört", () => {
+    localStorage.setItem("dd-session-lf01", JSON.stringify({
+      index: 1, ergebnisse: ["richtig"], beantwortet: false,
+      aufgabenIds: ["alt-1", "alt-2"],
+    }));
+    render(<SessionRunner aufgaben={[frage("neu-1"), frage("neu-2")]} lfId="lf01" />);
+    expect(screen.getByText("Frage neu-1?")).toBeTruthy();
+    expect(screen.getByText("1 / 2")).toBeTruthy();
+  });
+
+  it.each([-1, 0.5, 2])("verwirft den ungültigen gespeicherten Index %s", (index) => {
+    localStorage.setItem("dd-session-lf01", JSON.stringify({
+      index, ergebnisse: [], beantwortet: false, aufgabenIds: ["neu-1", "neu-2"],
+    }));
+    render(<SessionRunner aufgaben={[frage("neu-1"), frage("neu-2")]} lfId="lf01" />);
+    expect(screen.getByText("Frage neu-1?")).toBeTruthy();
+  });
+
+  it("setzt die gleiche Aufgabenliste nach einer Unterbrechung fort", () => {
+    const aufgaben = [frage("weiter-1"), frage("weiter-2")];
+    const ansicht = render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
+    fireEvent.click(screen.getByText("A"));
+    fireEvent.click(screen.getByText("Prüfen"));
+    fireEvent.click(screen.getByText("Weiter"));
+    ansicht.unmount();
+    render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    expect(screen.getByText("Frage weiter-2?")).toBeTruthy();
+    expect(screen.getByText("2 / 2")).toBeTruthy();
+    durchspielen();
+    expect(screen.getByRole("img").getAttribute("aria-label")).toBe("2 Richtig, 0 Fast, 0 Nochmal");
+  });
+
   it("nennt die geschaffte Menge und den Bezug zum Gesamtstoff", () => {
     render(<SessionRunner aufgaben={[frage("t-1")]} lfId="lf01" />);
     durchspielen();
@@ -46,7 +80,7 @@ describe("Abschlussbildschirm", () => {
     durchspielen();
 
     const balken = screen.getByRole("img");
-    expect(balken.getAttribute("aria-label")).toBe("1 Sitzt, 0 Fast, 0 Nochmal");
+    expect(balken.getAttribute("aria-label")).toBe("1 Richtig, 0 Fast, 0 Nochmal");
   });
 
   it("führt aus einem Lernfeld zurück in dieses Lernfeld", () => {

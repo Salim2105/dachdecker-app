@@ -1,5 +1,5 @@
 import { ladeFortschritt, speichereBewertung, loescheFortschritt } from "@/lib/progress";
-import type { AufgabenFortschritt, Bewertung } from "@/content/schema";
+import type { AufgabenFortschritt, Bewertung, BewertungsKontext } from "@/content/schema";
 
 const EMPTY: Record<string, AufgabenFortschritt> = {};
 let cache: Record<string, AufgabenFortschritt> | undefined;
@@ -20,8 +20,8 @@ export const progressStore = {
   },
   getSnapshot,
   getServerSnapshot: () => EMPTY,
-  bewerte(id: string, b: Bewertung) {
-    speichereBewertung(id, b);
+  bewerte(id: string, b: Bewertung, kontext?: BewertungsKontext) {
+    speichereBewertung(id, b, kontext);
     cache = ladeFortschritt();
     listeners.forEach((l) => l());
   },

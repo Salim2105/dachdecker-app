@@ -17,7 +17,7 @@
 // Reife und soll dafür nicht 2 MB Aufgabentext laden.
 import type { Aufgabe, AufgabenFortschritt } from "@/content/schema";
 import { getAufgaben, getLernfelder } from "@/lib/content";
-import { reife } from "@/lib/reifegrad";
+import { lernStatus } from "@/lib/lernstand";
 
 export {
   reife,
@@ -38,7 +38,10 @@ export function lernfeldReife(
   const aufgaben = getAufgaben(lfId);
   if (aufgaben.length === 0) return 1;
   let punkte = 0;
-  for (const a of aufgaben) punkte += reife(fortschritt[a.id], jetzt);
+  for (const a of aufgaben) {
+    const status = lernStatus(fortschritt[a.id], jetzt);
+    punkte += status === "gefestigt" ? 1 : status === "erinnert" ? 0.5 : status === "unsicher" ? 0.2 : 0;
+  }
   return punkte / aufgaben.length;
 }
 

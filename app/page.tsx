@@ -1,13 +1,12 @@
 "use client";
 import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { getLernfelder } from "@/lib/lernfelder";
+import { LernzeitWahl } from "@/components/LernzeitWahl";
 import { useProgress } from "@/components/useProgress";
 import { Fortsetzen } from "@/components/Fortsetzen";
-import { datumStore, letztesLfStore } from "@/lib/appStores";
+import { datumStore, letztesLfStore, lernzeitStore } from "@/lib/appStores";
 // Bewusst aus lib/reifegrad statt lib/tagesplan: Letzteres zieht die
 // Aufgabensammlung mit, die diese Seite nie anzeigt.
-import { pruefungsreife, tagesdosis, MIN_DOSIS, GESAMT_AUFGABEN } from "@/lib/reifegrad";
 import { serie } from "@/lib/serie";
 
 const TAG = 86_400_000;
@@ -22,18 +21,12 @@ export default function Home() {
       letztesLfStore.getServerSnapshot,
     ) || "lf01";
 
-  const lernfelder = getLernfelder();
+  const minuten = useSyncExternalStore(lernzeitStore.subscribe, lernzeitStore.getSnapshot, lernzeitStore.getServerSnapshot);
   const [now] = useState(() => Date.now());
   const tageBis = datum
     ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / TAG)
     : null;
 
-  // Nur noch die Tagesdosis. Die Prüfungsreife selbst steht auf /fortschritt:
-  // ein Prozentwert, der beim Öffnen als Erstes ins Auge fällt, wird als Urteil
-  // gelesen, nicht als Auskunft — und er ist die einzige Zahl der App, die
-  // sinken kann. Wer sie sehen will, holt sie sich dort ab.
-  const grad = pruefungsreife(fortschritt, now);
-  const dosis = tagesdosis(grad, tageBis);
   const tage = serie(fortschritt, now);
 
   return (
@@ -129,15 +122,8 @@ export default function Home() {
               className="mt-2.5 w-full rounded-[var(--r-md)] border px-3.5 py-2.5 text-[15px]"
               style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
             />
-            {/* Ohne Termin rechnet tagesdosis() mit MIN_DOSIS weiter — eine
-                Annahme, die vorher unsichtbar blieb. Bei 2039 Aufgaben sind das
-                gut sieben Monate. Wer das nicht weiß, hält 10 Aufgaben am Abend
-                für einen Plan; er ist aber nur ein Standardwert. */}
             <span className="mt-2.5 block text-[13px]" style={{ color: "var(--text-faint)" }}>
-              Ohne Termin rechne ich mit <span className="tnum">{MIN_DOSIS}</span> Aufgaben am Tag —
-              bei <span className="tnum">{GESAMT_AUFGABEN}</span> Aufgaben rund{" "}
-              <span className="tnum">{Math.round(GESAMT_AUFGABEN / MIN_DOSIS / 30)}</span> Monate.
-              Steht in deinem Ausbildungsvertrag oder bei der Innung.
+              Ein Termin hilft dir beim Planen. Deine Lernrunde richtet sich nach der verfügbaren Zeit.
             </span>
           </label>
         )}
@@ -147,6 +133,7 @@ export default function Home() {
           wer selbst wählt, greift zum Vertrauten und lässt die späten
           Lernfelder liegen. */}
       <div className="flex flex-col gap-3">
+        <LernzeitWahl />
         <Link
           href="/heute"
           className="flex min-h-14 items-center justify-between rounded-[var(--r-lg)] px-5 py-4 transition-transform active:scale-[0.99]"
@@ -155,7 +142,7 @@ export default function Home() {
           <span className="min-w-0">
             <span className="block text-[17px] font-semibold">Heute dran</span>
             <span className="mt-0.5 block text-[13px] opacity-80">
-              <span className="tnum">{dosis}</span> Aufgaben · die App wählt aus
+              <span className="tnum">{minuten}</span> Minuten · Wiederholen und Neues lernen
             </span>
           </span>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -163,6 +150,10 @@ export default function Home() {
           </svg>
         </Link>
 
+        <Link href="/praxis" className="min-h-14 rounded-xl border p-4 font-semibold"
+          style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+          Praxisfälle: Wissen zusammen anwenden
+        </Link>
         <Fortsetzen />
         <Link
           href={`/lernen/${letztesLf}`}

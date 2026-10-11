@@ -1,11 +1,13 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1785319383026";
+const CACHE = "dachdecker-1791740907229";
 const SHELL = [
   "/",
   "/lernen",
   "/zeichnen",
   "/pruefung",
   "/rechner",
+  "/heute",
+  "/praxis",
   "/fortschritt",
   "/manifest.webmanifest",
   "/lernen/lf01",
@@ -52,6 +54,7 @@ const SHELL = [
   "/lernen/anhang2/ueben",
   "/lernen/anhang3",
   "/lernen/anhang3/ueben",
+  "/_worker.js",
   "/buch/anhang1/abbrucharbeiten.webp",
   "/buch/anhang1/abfallgruppen-text.webp",
   "/buch/anhang1/absetzbehaelter.webp",
@@ -1128,31 +1131,34 @@ const SHELL = [
   "/icons/icon-512.png",
   "/icons/maskable-512.png",
   "/next.svg",
+  "/robots.txt",
   "/vercel.svg",
   "/window.svg",
-  "/_next/static/chunks/02xrek61o7abw.css",
+  "/_next/static/E6Gx7MfD4LIka-YAyDYVy/_buildManifest.js",
+  "/_next/static/E6Gx7MfD4LIka-YAyDYVy/_clientMiddlewareManifest.js",
+  "/_next/static/E6Gx7MfD4LIka-YAyDYVy/_ssgManifest.js",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
-  "/_next/static/chunks/05n4367tvhua0.js",
+  "/_next/static/chunks/08e4m-cht6xwr.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
-  "/_next/static/chunks/0fwt9c69zi6tp.js",
-  "/_next/static/chunks/0k1hx7uh_ds6f.js",
-  "/_next/static/chunks/0mx15hcbqr42s.js",
-  "/_next/static/chunks/0udmh_j9scuiv.js",
-  "/_next/static/chunks/0w05l298o8ksf.js",
-  "/_next/static/chunks/1-n_73eo_r2vx.js",
   "/_next/static/chunks/10qk6v6416kh8.js",
   "/_next/static/chunks/14mrh2-p_w84d.js",
-  "/_next/static/chunks/1hku-532ar-mt.js",
-  "/_next/static/chunks/1s5po19bb60v-.js",
+  "/_next/static/chunks/163q7j9olwlqt.js",
+  "/_next/static/chunks/1a-1tskzhda0j.js",
+  "/_next/static/chunks/1v-sm_ej-kub0.css",
   "/_next/static/chunks/27jktro2p5rq9.js",
+  "/_next/static/chunks/2fwb9878bp7l2.js",
+  "/_next/static/chunks/2iegfoyx4hfph.js",
+  "/_next/static/chunks/2mz9pmbnc8vhe.js",
+  "/_next/static/chunks/2mzi31skvlv4b.js",
+  "/_next/static/chunks/2qxcwg9pg4po0.js",
+  "/_next/static/chunks/2vgubuafsrlml.js",
   "/_next/static/chunks/315owoz9ub2zd.js",
-  "/_next/static/chunks/3emq8ppmhyj2i.js",
+  "/_next/static/chunks/3blo32cheqyqt.js",
+  "/_next/static/chunks/3hzkyu4m9002a.js",
+  "/_next/static/chunks/3inp4bz2d3_lv.js",
   "/_next/static/chunks/3rxl-jt3pdxgx.js",
-  "/_next/static/chunks/41f0p2m5bkd47.js",
+  "/_next/static/chunks/43uukxn5po-vd.js",
   "/_next/static/chunks/turbopack-1p7pqniqer0jp.js",
-  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_buildManifest.js",
-  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_clientMiddlewareManifest.js",
-  "/_next/static/gYEhE6r1Mo3vtk22OTM7M/_ssgManifest.js",
   "/_next/static/media/4fa387ec64143e14-s.2tuy5pz7dlieh.woff2",
   "/_next/static/media/53b9e256198e5412-s.390ncx5urfkfu.woff2",
   "/_next/static/media/5ce348bf30bf5439-s.31988l_ccedte.woff2",
@@ -1193,8 +1199,16 @@ self.addEventListener("fetch", (e) => {
       if (hit) return hit;
       return fetch(e.request)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put(e.request, copy));
+          // Umgeleitete Antwort = Login-Seite. Für Navigationen als echte
+          // Weiterleitung durchreichen (ein Service Worker darf sie nicht direkt
+          // zurückgeben), und niemals unter dem Schlüssel der Datei cachen.
+          if (res.redirected) {
+            return e.request.mode === "navigate" ? Response.redirect(res.url, 302) : res;
+          }
+          if (res.ok) {
+            const copy = res.clone();
+            caches.open(CACHE).then((c) => c.put(e.request, copy));
+          }
           return res;
         })
         .catch(() => {

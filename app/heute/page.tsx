@@ -1,14 +1,20 @@
 "use client";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Aufgabe } from "@/content/schema";
 import { SessionRunner } from "@/components/session/SessionRunner";
-import { useProgress } from "@/components/useProgress";
-import { datumStore } from "@/lib/appStores";
-import { heuteAufgaben, pruefungsreife, tagesdosis, type Modus } from "@/lib/tagesplan";
+import { getAufgaben, getLernfelder } from "@/lib/content";
+import { ladeGespeicherteAufgaben } from "@/lib/uebungStand";
+import { progressStore } from "@/lib/progressStore";
+import { LernzeitWahl } from "@/components/LernzeitWahl";
+import { zeitAuswahl } from "@/lib/lernzeit";
+import { lernzeitStore } from "@/lib/appStores";
+import { heuteAufgaben, istVerkettet, type Modus } from "@/lib/tagesplan";
 
-const TAG = 86_400_000;
 const SESSION_ID = "heute";
+const subscribeClient = () => () => {};
+const getClientSnapshot = () => true;
+const getServerSnapshot = () => false;
 
 // Zwei Sitzungsarten, weil zwei Inhaltsarten existieren: Fachbegriffe und
 // Einzelwerte lassen sich in einer Pause abfragen, mehrschrittige Rechnungen
@@ -25,6 +31,7 @@ const MODI: { id: Modus; titel: string }[] = [
 ];
 
 export default function HeutePage() {
+  const [runde, setRunde] = useState(0);
   const [modus, setModus] = useState<Modus>("alles");
 
   const wechsle = (m: Modus) => {
@@ -39,6 +46,14 @@ export default function HeutePage() {
 
   return (
     <div>
+      <LernzeitWahl />
+      <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>Eine laufende Runde bleibt erhalten. Die Zeitwahl gilt für die nächste Runde.</p>
+      <button onClick={() => {
+        try { localStorage.removeItem(`dd-session-${SESSION_ID}`); } catch {}
+        setRunde((n) => n + 1);
+      }} className="my-3 min-h-11 rounded-xl border px-4 text-sm" style={{ borderColor: "var(--border)" }}>
+        Neue Runde mit gewählter Zeit
+      </button>
       <div className="mb-4 flex gap-2">
         {MODI.map((m) => {
           const aktiv = m.id === modus;
@@ -68,7 +83,7 @@ export default function HeutePage() {
         })}
       </div>
 
-      <Sitzung modus={modus} />
+      <Sitzung key={runde} modus={modus} />
     </div>
   );
 }
@@ -82,34 +97,33 @@ export default function HeutePage() {
  * der laufenden Sitzung zeigte plötzlich auf eine übersprungene Frage.
  */
 function Sitzung({ modus }: { modus: Modus }) {
-  const { fortschritt } = useProgress();
-  const datum = useSyncExternalStore(
-    datumStore.subscribe,
-    datumStore.getSnapshot,
-    datumStore.getServerSnapshot,
-  );
-  const [aufgaben, setAufgaben] = useState<Aufgabe[] | null>(null);
+  const minuten = useSyncExternalStore(lernzeitStore.subscribe, lernzeitStore.getSnapshot, lernzeitStore.getServerSnapshot);
+  const client = useSyncExternalStore(subscribeClient, getClientSnapshot, getServerSnapshot);
 
-  // Erst nach dem Mount: währenddessen liefert der Fortschritts-Store noch den
-  // leeren Server-Snapshot, und die Liste bestünde nur aus neuen Aufgaben.
-  useEffect(() => {
-    const jetzt = Date.now();
-    const tageBis = datum
-      ? Math.ceil((new Date(datum + "T00:00:00").getTime() - jetzt) / TAG)
-      : null;
-    const dosis = tagesdosis(pruefungsreife(fortschritt, jetzt), tageBis);
-    setAufgaben(heuteAufgaben(fortschritt, jetzt, dosis, modus));
-    // fortschritt bewusst nicht in den Abhängigkeiten — siehe Kommentar oben.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [modus, datum]);
-
-  if (aufgaben === null) {
+  if (!client) {
     return (
       <p className="mt-6 text-[15px]" style={{ color: "var(--text-muted)" }}>
         Aufgaben werden zusammengestellt …
       </p>
     );
   }
+
+  return <GeplanteSitzung key={modus} modus={modus} minuten={minuten} />;
+}
+
+function GeplanteSitzung({ modus, minuten }: { modus: Modus; minuten: number }) {
+  // Erst nach der Hydrierung lesen, dann die Auswahl für die Sitzung einfrieren.
+  // Antworten dürfen die laufende Liste nicht verschieben.
+  const [aufgaben] = useState<Aufgabe[]>(() => {
+    const pool = getLernfelder().flatMap((lf) => getAufgaben(lf.id)).filter((a) =>
+      modus === "alles" || (modus === "tief" ? istVerkettet(a) : !istVerkettet(a)),
+    );
+    const gespeichert = ladeGespeicherteAufgaben(`dd-session-${SESSION_ID}`, pool);
+    if (gespeichert) return gespeichert;
+    const fortschritt = progressStore.getSnapshot();
+    const jetzt = Date.now();
+    return zeitAuswahl(heuteAufgaben(fortschritt, jetzt, 60, modus), minuten);
+  });
 
   if (aufgaben.length === 0) {
     return (

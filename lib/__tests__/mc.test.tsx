@@ -22,17 +22,19 @@ describe("McCard", () => {
   it("reports richtig and shows explanation when the correct option is chosen", () => {
     const onErgebnis = vi.fn();
     render(<McCard aufgabe={aufgabe} onErgebnis={onErgebnis} />);
+    fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
     fireEvent.click(screen.getByText("B"));
     fireEvent.click(screen.getByText("Prüfen"));
-    expect(onErgebnis).toHaveBeenCalledWith("richtig");
+    expect(onErgebnis).toHaveBeenCalledWith("richtig", { mitHilfe: true });
     expect(screen.getByText("Die richtige Antwort ist B.")).toBeTruthy();
   });
 
   it("reports falsch for a wrong choice", () => {
     const onErgebnis = vi.fn();
     render(<McCard aufgabe={aufgabe} onErgebnis={onErgebnis} />);
+    fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
     fireEvent.click(screen.getByText("A"));
     fireEvent.click(screen.getByText("Prüfen"));
-    expect(onErgebnis).toHaveBeenCalledWith("falsch");
+    expect(onErgebnis).toHaveBeenCalledWith("falsch", { mitHilfe: true });
   });
 });

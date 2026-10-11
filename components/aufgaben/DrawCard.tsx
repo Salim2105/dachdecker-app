@@ -120,7 +120,7 @@ export function DrawCard({
             ))}
           </ol>
 
-          <Erklaerung text={aufgabe.erklaerung} />
+          <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
         </div>
       )}
     </div>

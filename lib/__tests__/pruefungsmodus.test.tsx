@@ -109,6 +109,7 @@ describe("Prüfungsmodus verrät nichts", () => {
 describe("Übungsmodus löst weiterhin auf", () => {
   it("McCard zeigt die Erklärung", () => {
     render(<McCard aufgabe={mc} onErgebnis={vi.fn()} />);
+    fireEvent.click(screen.getByRole("button", { name: "Antwortmöglichkeiten als Hilfe" }));
     fireEvent.click(screen.getByText("A"));
     fireEvent.click(screen.getByText("Prüfen"));
     expect(screen.getByText("ERKLAERUNG-MC")).toBeTruthy();

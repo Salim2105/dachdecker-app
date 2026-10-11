@@ -31,15 +31,15 @@ export function getPruefungsteile(): Pruefungsteil[] {
   return [
     {
       id: "teil1",
-      titel: "Teil 1 — Zwischenprüfung",
-      beschreibung: "Lernfeld 1 bis 9, gemischt. Zählt bei der gestreckten Gesellenprüfung zur Endnote.",
+      titel: "Grundlagen — Lernfeld 1 bis 9",
+      beschreibung: "Gemischtes Training. Gleiche Verteilung über Lernfelder, keine offizielle Prüfungsgewichtung.",
       lernfelder: alle.filter((id) => /^lf0[1-9]$/.test(id)),
       anzahl: 30,
       minuten: 45,
     },
     {
       id: "teil2",
-      titel: "Teil 2 — alle Lernfelder",
+      titel: "Fachwissen — alle Lernfelder",
       beschreibung: "Der gesamte fachliche Stoff: Lernfeld 1 bis 17 und die Anhänge, gemischt.",
       lernfelder: alle,
       anzahl: 40,
@@ -54,6 +54,28 @@ export function getPruefungsteile(): Pruefungsteil[] {
       minuten: 25,
     },
   ];
+}
+
+/** Lernfelder und Aufgabentypen ausgewogen üben, ohne amtliche Gewichtung zu behaupten. */
+export function ziehePruefung(pool: Aufgabe[], anzahl: number, zufall: () => number = Math.random): Aufgabe[] {
+  const felder = new Map<string, Map<string, Aufgabe[]>>();
+  for (const a of pool) {
+    const typen = felder.get(a.lernfeld) ?? new Map<string, Aufgabe[]>();
+    const gruppe = typen.get(a.typ) ?? [];
+    gruppe.push(a);
+    typen.set(a.typ, gruppe);
+    felder.set(a.lernfeld, typen);
+  }
+  const reihum = (gruppen: Aufgabe[][]): Aufgabe[] => {
+    const auswahl: Aufgabe[] = [];
+    for (let i = 0; i < Math.max(0, ...gruppen.map((g) => g.length)); i++) {
+      for (const g of gruppen) if (g[i]) auswahl.push(g[i]);
+    }
+    return auswahl;
+  };
+  const gruppen = zieheAufgaben([...felder.values()], felder.size, zufall)
+    .map((typen) => reihum(zieheAufgaben([...typen.values()], typen.size, zufall).map((g) => zieheAufgaben(g, g.length, zufall))));
+  return reihum(gruppen).slice(0, Math.max(0, anzahl));
 }
 
 export function poolFuer(teil: Pruefungsteil): Aufgabe[] {

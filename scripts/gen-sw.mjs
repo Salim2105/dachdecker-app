@@ -199,6 +199,8 @@ const seiten = [
   "/zeichnen",
   "/pruefung",
   "/rechner",
+  "/heute",
+  "/praxis",
   "/fortschritt",
   "/manifest.webmanifest",
   ...lernfelder.flatMap((lf) => [`/lernen/${lf.id}`, `/lernen/${lf.id}/ueben`]),

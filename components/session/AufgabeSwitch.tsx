@@ -1,5 +1,5 @@
 "use client";
-import type { Aufgabe, Bewertung, AufgabeModus } from "@/content/schema";
+import type { Aufgabe, Bewertung, AufgabeModus, BewertungsKontext } from "@/content/schema";
 import { McCard } from "@/components/aufgaben/McCard";
 import { ClozeCard } from "@/components/aufgaben/ClozeCard";
 import { CalcCard } from "@/components/aufgaben/CalcCard";
@@ -13,7 +13,7 @@ export function AufgabeSwitch({
   modus = "uebung",
 }: {
   aufgabe: Aufgabe;
-  onErgebnis: (b: Bewertung) => void;
+  onErgebnis: (b: Bewertung, kontext?: BewertungsKontext) => void;
   modus?: AufgabeModus;
 }) {
   switch (aufgabe.typ) {
@@ -28,9 +28,9 @@ export function AufgabeSwitch({
     // draw und fachbegriff bewertet man selbst — sie kommen in der
     // Prüfungssimulation nicht vor (siehe istAutoBewertbar in lib/pruefung.ts).
     case "draw":
-      return <DrawCard aufgabe={aufgabe} onErgebnis={onErgebnis} />;
+      return <DrawCard aufgabe={aufgabe} onErgebnis={(b) => onErgebnis(b, { selbstBewertet: true })} />;
     case "fachbegriff":
-      return <FachbegriffCard aufgabe={aufgabe} onErgebnis={onErgebnis} />;
+      return <FachbegriffCard aufgabe={aufgabe} onErgebnis={(b) => onErgebnis(b, { selbstBewertet: true })} />;
     default:
       return null;
   }

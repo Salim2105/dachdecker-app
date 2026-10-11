@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { ClozeAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
+import type { ClozeAufgabe, Bewertung, AufgabeModus, BewertungsKontext } from "@/content/schema";
 import { parseCloze, pruefeLuecke } from "@/lib/cloze";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
@@ -27,7 +27,7 @@ export function ClozeCard({
   modus = "uebung",
 }: {
   aufgabe: ClozeAufgabe;
-  onErgebnis: (b: Bewertung) => void;
+  onErgebnis: (b: Bewertung, kontext?: BewertungsKontext) => void;
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
@@ -67,7 +67,8 @@ export function ClozeCard({
       richtig === gaps.length ? "richtig" : richtig === 0 ? "falsch" : "teilweise";
     setBewertung(b);
     trefferRueckmeldung(b);
-    onErgebnis(b);
+    if (aufloesen) onErgebnis(b, { mitHilfe: wortbankAn });
+    else onErgebnis(b);
   };
 
   const randfarbe = (g: { antwort: string; index: number }) => {
@@ -187,7 +188,7 @@ export function ClozeCard({
       ) : (
         aufloesen && (
           <>
-            <Erklaerung text={aufgabe.erklaerung} />
+            <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
             {aufgabe.bildDatei && (
               <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
             )}

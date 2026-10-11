@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getLernfeld, getLektionen, getAufgaben, getLernfelder } from "@/lib/content";
-import { LektionCard } from "@/components/LektionCard";
+import { LernEinheiten } from "@/components/LernEinheiten";
 
 export default async function LernfeldDetailPage({
   params,
@@ -57,18 +57,7 @@ export default async function LernfeldDetailPage({
         ))}
       </div>
 
-      {lektionen.length > 0 && (
-        <section className="mt-6">
-          <h2 className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-            Theorie
-          </h2>
-          <div className="flex flex-col gap-3">
-            {lektionen.map((l) => (
-              <LektionCard key={l.id} lektion={l} />
-            ))}
-          </div>
-        </section>
-      )}
+      <LernEinheiten lfId={lf} lektionen={lektionen} aufgaben={aufgaben} />
 
       <div className="mt-8">
         {aufgaben.length > 0 ? (
@@ -77,7 +66,7 @@ export default async function LernfeldDetailPage({
             className="block rounded-xl px-5 py-4 text-center font-medium"
             style={{ background: "var(--accent)", color: "var(--accent-text)" }}
           >
-            Üben starten · {aufgaben.length} Aufgaben
+            Alle Aufgaben frei üben · {aufgaben.length} Aufgaben
           </Link>
         ) : (
           <p

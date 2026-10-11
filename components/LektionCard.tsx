@@ -1,6 +1,7 @@
 import type { Lektion } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { FotoStrecke } from "@/components/FotoStrecke";
+import { QuellenHinweis } from "@/components/QuellenHinweis";
 
 export function LektionCard({ lektion }: { lektion: Lektion }) {
   return (
@@ -16,7 +17,7 @@ export function LektionCard({ lektion }: { lektion: Lektion }) {
           <p key={i}>{absatz}</p>
         ))}
       </div>
-      {/* lektion.quelle bleibt in den Daten als Nachweis, wird aber nicht angezeigt. */}
+      <QuellenHinweis quelle={lektion.quelle} />
     </article>
   );
 }

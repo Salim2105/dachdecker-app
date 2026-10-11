@@ -82,7 +82,7 @@ describe("ClozeCard – Wortbank", () => {
     fireEvent.click(screen.getByLabelText("Lücke 2"));
     fireEvent.click(screen.getByRole("button", { name: "Kilogramm" }));
     fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
-    expect(onErgebnis).toHaveBeenCalledWith("richtig");
+    expect(onErgebnis).toHaveBeenCalledWith("richtig", { mitHilfe: true });
   });
 
   it("bewertet eine vertauschte Zuordnung als falsch", () => {
@@ -94,7 +94,7 @@ describe("ClozeCard – Wortbank", () => {
     fireEvent.click(screen.getByLabelText("Lücke 2"));
     fireEvent.click(screen.getByRole("button", { name: "Meter" }));
     fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
-    expect(onErgebnis).toHaveBeenCalledWith("falsch");
+    expect(onErgebnis).toHaveBeenCalledWith("falsch", { mitHilfe: true });
   });
 
   it("merkt sich die gewählte Eingabeart über die Aufgabe hinaus", () => {

@@ -1,4 +1,4 @@
-import type { AufgabenFortschritt, Bewertung } from "@/content/schema";
+import type { AufgabenFortschritt, Bewertung, BewertungsKontext, LernVersuch } from "@/content/schema";
 
 const KEY = "fortschritt-v1";
 const TAG = 86_400_000;
@@ -36,17 +36,39 @@ export function naechsteFaelligkeit(b: Bewertung, intervallTage: number) {
 export function ladeFortschritt(): Record<string, AufgabenFortschritt> {
   if (typeof window === "undefined") return {};
   try {
-    return JSON.parse(localStorage.getItem(KEY) || "{}");
+    const daten = JSON.parse(localStorage.getItem(KEY) || "{}");
+    return daten && typeof daten === "object" && !Array.isArray(daten) ? daten : {};
   } catch {
     return {};
   }
 }
 
-export function speichereBewertung(aufgabeId: string, bewertung: Bewertung) {
+export function speichereBewertung(aufgabeId: string, bewertung: Bewertung, kontext: BewertungsKontext = {}) {
   const all = ladeFortschritt();
-  const prev = all[aufgabeId]?.intervallTage ?? 0;
-  const { intervallTage, faelligAm } = naechsteFaelligkeit(bewertung, prev);
-  all[aufgabeId] = { aufgabeId, bewertung, gesehenAm: Date.now(), faelligAm, intervallTage };
+  const vorher = all[aufgabeId];
+  const jetzt = Date.now();
+  // Alte Einträge bleiben erhalten, liefern aber keine erfundene Erfolgshistorie.
+  const verlauf: LernVersuch[] = [...(vorher?.verlauf ?? [])];
+  const letzter = verlauf.at(-1);
+  const gleicherTag = letzter && new Date(letzter.am).toDateString() === new Date(jetzt).toDateString();
+  const kurzfristig = bewertung === "richtig" && (kontext.nachErklaerung || gleicherTag);
+  const versuch: LernVersuch = { am: jetzt, bewertung, ...kontext, nachErklaerung: !!kontext.nachErklaerung || !!kurzfristig };
+  verlauf.push(versuch);
+  // Mehrere Klicks am selben Tag oder unmittelbar nach Theorie verlängern nichts.
+  if (vorher && kurzfristig) {
+    all[aufgabeId] = { ...vorher, verlauf: verlauf.slice(-60) };
+  } else {
+    const prev = vorher?.intervallTage ?? 0;
+    const fehler = verlauf.slice(-5).filter((v) => v.bewertung === "falsch").length;
+    let { intervallTage } = naechsteFaelligkeit(bewertung, prev);
+    if (bewertung === "teilweise" && gleicherTag) intervallTage = Math.min(Math.max(1, prev), 2);
+    if (bewertung === "richtig" && (kontext.mitHilfe || kontext.nachErklaerung)) intervallTage = 1;
+    else if (bewertung === "richtig" && fehler >= 2) intervallTage = Math.min(intervallTage, 3);
+    all[aufgabeId] = {
+      aufgabeId, bewertung, gesehenAm: jetzt, faelligAm: jetzt + intervallTage * TAG,
+      intervallTage, verlauf: verlauf.slice(-60),
+    };
+  }
   localStorage.setItem(KEY, JSON.stringify(all));
 }
 

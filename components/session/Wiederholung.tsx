@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import type { Aufgabe, Bewertung } from "@/content/schema";
+import type { Aufgabe, Bewertung, BewertungsKontext } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
 
@@ -37,9 +37,10 @@ export function Wiederholung({
       <AufgabeSwitch
         key={aktuell.id}
         aufgabe={aktuell}
-        onErgebnis={(b: Bewertung) => {
+        onErgebnis={(b: Bewertung, kontext?: BewertungsKontext) => {
+          if (beantwortet) return;
           setBeantwortet(true);
-          bewerte(aktuell.id, b);
+          bewerte(aktuell.id, b, kontext);
         }}
       />
 

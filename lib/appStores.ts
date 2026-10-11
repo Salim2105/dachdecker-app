@@ -30,6 +30,17 @@ export function createStringStore(key: string) {
 export const datumStore = createStringStore("pruefungsdatum");
 export const letztesLfStore = createStringStore("letztesLf");
 
+const zeitRaw = createStringStore("lernzeit");
+export const lernzeitStore = {
+  subscribe: zeitRaw.subscribe,
+  getSnapshot: () => {
+    const n = Number(zeitRaw.getSnapshot());
+    return n === 5 || n === 30 ? n : 15;
+  },
+  getServerSnapshot: () => 15,
+  set: (minuten: number) => zeitRaw.set(String(minuten)),
+};
+
 /** Eingabeart beim Lückentext: Wörter antippen statt tippen (für Handschuhe). */
 const wortbankRaw = createStringStore("wortbank");
 export const wortbankStore = {

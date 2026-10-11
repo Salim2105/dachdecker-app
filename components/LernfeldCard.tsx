@@ -27,7 +27,7 @@ export function LernfeldCard({
         <span className="block truncate font-semibold">{lernfeld.titel}</span>
         <span className="mt-0.5 block text-xs" style={{ color: "var(--text-muted)" }}>
           {anzahlAufgaben > 0 ? `${anzahlAufgaben} Aufgaben` : `${lernfeld.themen.length} Themen`}
-          {begonnen && <span className="tnum"> · {Math.round(fortschritt * 100)} %</span>}
+          {begonnen && <span className="tnum"> · {Math.round(fortschritt * anzahlAufgaben)} mehrfach erinnert</span>}
         </span>
       </span>
       <svg

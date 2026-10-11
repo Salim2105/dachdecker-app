@@ -117,6 +117,18 @@ export interface Lektion {
 
 export type Bewertung = "richtig" | "teilweise" | "falsch";
 
+export interface BewertungsKontext {
+  mitHilfe?: boolean;
+  selbstBewertet?: boolean;
+  /** Direkt nach einer Lektion oder Musterlösung: kein langfristiger Abruf. */
+  nachErklaerung?: boolean;
+}
+
+export interface LernVersuch extends BewertungsKontext {
+  am: number;
+  bewertung: Bewertung;
+}
+
 /**
  * "uebung": Karte deckt Lösung und Erklärung sofort nach dem Prüfen auf.
  * "pruefung": Karte nimmt die Antwort nur entgegen — keine Rückmeldung,
@@ -130,6 +142,7 @@ export interface AufgabenFortschritt {
   gesehenAm: number; // epoch ms
   faelligAm: number; // epoch ms, nächster Spaced-Repetition-Termin
   intervallTage: number;
+  verlauf?: LernVersuch[];
 }
 
 export function istSichtbar(x: { konfidenz: Konfidenz }): boolean {

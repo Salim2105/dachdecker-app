@@ -128,7 +128,7 @@ export function CalcCard({
               ))}
             </ol>
           </div>
-          <Erklaerung text={aufgabe.erklaerung} />
+          <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
           {aufgabe.bildDatei && (
             <Buchbild datei={aufgabe.bildDatei} unterschrift={aufgabe.bildunterschrift} />
           )}
