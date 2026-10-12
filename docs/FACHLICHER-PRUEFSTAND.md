@@ -38,6 +38,12 @@ unabhängigen Prüfung.
 
 ## Weiter zu prüfen
 
+Stand 12. Oktober 2026: Der Nutzer hat die angefragten Originalquellen aktuell
+noch nicht zur Verfügung. Die vollständige fachliche Prüfung (Schritt 3) bleibt
+offen, bis passende Buchseiten/PDFs und aktuelle Fachquellen vorliegen. Die
+vorläufig zurückgestellten Sicherheitseinträge bleiben bis zur Bestätigung
+ausgeblendet. Dieser offene Punkt ist bei weiteren Updates zu berücksichtigen.
+
 Eine fachkundige Person muss die zitierten Buchstellen und gegebenenfalls aktuelle
 Fachregeln und Herstellerangaben vergleichen. Besonders Zahlenwerte zu Neigungen,
 Befestigung, Überdeckung und Sicherheit brauchen den richtigen Anwendungsbereich
