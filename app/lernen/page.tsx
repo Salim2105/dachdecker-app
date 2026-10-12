@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
 import { LernfeldCard } from "@/components/LernfeldCard";
@@ -45,6 +46,10 @@ export default function LernenPage() {
         1. Lehrjahr &amp; darüber hinaus
       </p>
       <div className="mt-4">
+        <Link href="/lernweg" className="my-4 block rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+          <span className="block font-semibold">Mit dem geführten Lernweg starten</span>
+          <span className="mt-1 block" style={{ color: "var(--text-muted)" }}>Sechs Grundlagen-Einheiten: verstehen, erinnern, rechnen und anwenden.</span>
+        </Link>
         <Fortsetzen />
       </div>
       <div

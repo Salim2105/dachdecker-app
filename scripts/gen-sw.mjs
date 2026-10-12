@@ -201,6 +201,7 @@ const seiten = [
   "/rechner",
   "/heute",
   "/praxis",
+  "/lernweg",
   "/fortschritt",
   "/manifest.webmanifest",
   ...lernfelder.flatMap((lf) => [`/lernen/${lf.id}`, `/lernen/${lf.id}/ueben`]),

@@ -150,6 +150,11 @@ export default function Home() {
           </svg>
         </Link>
 
+        <Link href="/lernweg" className="min-h-14 rounded-xl border p-4"
+          style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+          <span className="block font-semibold">Geführter Lernweg</span>
+          <span className="mt-1 block text-sm" style={{ color: "var(--text-muted)" }}>Verstehen → erinnern → rechnen → Baustellenfall</span>
+        </Link>
         <Link href="/praxis" className="min-h-14 rounded-xl border p-4 font-semibold"
           style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
           Praxisfälle: Wissen zusammen anwenden

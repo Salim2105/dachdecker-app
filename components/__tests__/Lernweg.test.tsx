@@ -1,0 +1,61 @@
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { Lernweg } from "@/components/Lernweg";
+import { LERNWEGE, lernwegStore, lernwegAuswahl, leseLernwege } from "@/lib/lernweg";
+import { PRAXISFAELLE } from "@/lib/praxis";
+
+beforeEach(() => { localStorage.clear(); lernwegStore.set(""); lernwegAuswahl.set(""); });
+afterEach(cleanup);
+
+describe("Geführter Lernweg", () => {
+  it("führt durch alle Schritte, verbirgt die Theorie beim Abruf und verlangt eine Korrektur falscher Zahlen", () => {
+    render(<Lernweg />);
+    const e = LERNWEGE[0];
+    expect(screen.getByText(e.erklaerung[0])).toBeTruthy();
+    fireEvent.click(screen.getByText("Weiter: aus dem Kopf erklären"));
+    expect(screen.queryByText(e.erklaerung[0])).toBeNull();
+    expect(screen.queryByText(e.abrufMuster)).toBeNull();
+    expect((screen.getByText("Mit Musterantwort vergleichen") as HTMLButtonElement).disabled).toBe(true);
+    fireEvent.change(screen.getByRole("textbox", { name: e.abrufFrage }), { target: { value: "Beide Seiten, Stückzahl je m², Zuschlag" } });
+    fireEvent.click(screen.getByText("Mit Musterantwort vergleichen"));
+    expect(screen.getByText(e.abrufMuster)).toBeTruthy();
+    expect(screen.queryByText("Weiter: selbst rechnen")).toBeNull();
+    fireEvent.click(screen.getByText("Teilweise"));
+    fireEvent.click(screen.getByText("Weiter: selbst rechnen"));
+    const fall = PRAXISFAELLE[0];
+    ["60", "600", "648"].forEach((v, i) => fireEvent.change(screen.getByLabelText(fall.rechnungen[i].frage), { target: { value: v } }));
+    fireEvent.click(screen.getByText("Rechnung prüfen"));
+    expect(screen.getByText("Beide Dachseiten berücksichtigen")).toBeTruthy();
+    expect(screen.queryByText("Weiter: auf die Baustelle übertragen")).toBeNull();
+    fall.rechnungen.forEach((r) => fireEvent.change(screen.getByLabelText(r.frage), { target: { value: String(r.ergebnis) } }));
+    fireEvent.click(screen.getByText("Rechnung prüfen"));
+    fireEvent.click(screen.getByText("Weiter: auf die Baustelle übertragen"));
+    expect(screen.queryByText(e.transferMuster)).toBeNull();
+    fireEvent.change(screen.getByRole("textbox", { name: e.transferFrage }), { target: { value: "Schräge Maße und Produktdeckmaß klären" } });
+    fireEvent.click(screen.getByText("Begründung vergleichen"));
+    fireEvent.click(screen.getByText("Passt"));
+    fireEvent.click(screen.getByText("Einheit abschließen"));
+    expect(screen.getByText("Einheit bearbeitet")).toBeTruthy();
+    expect(screen.getByText(/1 von 6 Einheiten/)).toBeTruthy();
+    expect(screen.getByText(/Dort hast du noch Unsicherheit angegeben/)).toBeTruthy();
+    expect(localStorage.getItem("fortschritt-v1")).toBeNull();
+    expect(leseLernwege(lernwegStore.getSnapshot()).satteldach.schritt).toBe(4);
+    fireEvent.click(screen.getByText("Nächste offene Einheit"));
+    expect((screen.getByRole("combobox") as HTMLSelectElement).value).toBe("platten");
+  });
+  it("setzt nach Neuladen und Themenwechsel an derselben Stelle mit den eigenen Eingaben fort", () => {
+    const view = render(<Lernweg />);
+    fireEvent.change(screen.getByRole("combobox"), { target: { value: "gefaelle" } });
+    const e = LERNWEGE.find((e) => e.id === "gefaelle")!;
+    fireEvent.click(screen.getByText("Weiter: aus dem Kopf erklären"));
+    fireEvent.change(screen.getByRole("textbox", { name: e.abrufFrage }), { target: { value: "Strecke mal Prozent durch 100" } });
+    fireEvent.change(screen.getByRole("combobox"), { target: { value: "platten" } });
+    fireEvent.change(screen.getByRole("combobox"), { target: { value: "gefaelle" } });
+    expect((screen.getByRole("textbox", { name: e.abrufFrage }) as HTMLTextAreaElement).value).toBe("Strecke mal Prozent durch 100");
+    view.unmount();
+    render(<Lernweg />);
+    expect((screen.getByRole("combobox") as HTMLSelectElement).value).toBe("gefaelle");
+    expect((screen.getByRole("textbox", { name: e.abrufFrage }) as HTMLTextAreaElement).value).toBe("Strecke mal Prozent durch 100");
+    expect(screen.queryByText(e.erklaerung[0])).toBeNull();
+  });
+});
