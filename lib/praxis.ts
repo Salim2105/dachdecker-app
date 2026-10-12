@@ -1,3 +1,5 @@
+import { leseDezimalzahl } from "@/lib/zahlen";
+
 export interface PraxisFall {
   id: string;
   titel: string;
@@ -88,8 +90,8 @@ export const PRAXISFAELLE: PraxisFall[] = [
 ];
 
 export function pruefePraxisZahl(eingabe: string, ergebnis: number): boolean {
-  if (!/^[+-]?(?:\d+(?:[.,]\d*)?|[.,]\d+)$/.test(eingabe.trim())) return false;
-  const wert = Number(eingabe.trim().replace(",", "."));
+  const wert = leseDezimalzahl(eingabe);
+  if (wert === null) return false;
   if (Number.isInteger(ergebnis) && !Number.isInteger(wert)) return false;
   return Number.isFinite(wert) && Math.abs(wert - ergebnis) < 0.001;
 }

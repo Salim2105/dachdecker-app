@@ -3,6 +3,8 @@ import { useState, useSyncExternalStore } from "react";
 import { PRAXISFAELLE, pruefePraxisZahl, type PraxisFall } from "@/lib/praxis";
 import { QuellenHinweis } from "@/components/QuellenHinweis";
 import { lesePraxis, leererPraxisStand, praxisStore, speicherePraxis, type PraxisStand } from "@/lib/praxisStore";
+import { praxisFeedback } from "@/lib/rechenFeedback";
+import { RechenFehlerHilfe } from "@/components/RechenFehlerHilfe";
 
 export function PraxisTrainer() {
   const [id, setId] = useState(PRAXISFAELLE[0].id);
@@ -32,7 +34,9 @@ function Fall({ fall, stand }: { fall: PraxisFall; stand: PraxisStand }) {
     <h2 className="text-lg font-semibold">{fall.titel}</h2>
     <p className="mt-2 rounded-xl p-4 text-sm leading-relaxed" style={{ background: "var(--accent-soft)" }}>{fall.situation}</p>
     <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>Zahlen ohne Tausendertrennzeichen eingeben; ein Dezimalkomma ist möglich.</p>
-    {fall.rechnungen.map((r, i) => <div key={r.frage} className="mt-4">
+    {fall.rechnungen.map((r, i) => {
+      const feedback = geprueft ? praxisFeedback(fall.id, i, eingaben) : null;
+      return <div key={r.frage} className="mt-4">
       <label className="block text-sm">{i + 1}. {r.frage}
         <div className="mt-2 flex items-center gap-2">
           <input aria-label={r.frage} inputMode="decimal" value={eingaben[i]} disabled={geprueft}
@@ -50,9 +54,10 @@ function Fall({ fall, stand }: { fall: PraxisFall; stand: PraxisStand }) {
       </div>}
       {geprueft && <div className="mt-2 rounded-xl border p-3 text-sm" style={{ borderColor: pruefePraxisZahl(eingaben[i], r.ergebnis) ? "var(--ok)" : "var(--bad)" }}>
         <p className="font-semibold">{pruefePraxisZahl(eingaben[i], r.ergebnis) ? "Richtig" : "Noch einmal prüfen"}</p>
+        {feedback && <RechenFehlerHilfe feedback={feedback} />}
         <p className="mt-1">{r.loesungsweg}</p>
       </div>}
-    </div>)}
+    </div>})}
     <label className="mt-5 block text-sm">{fall.entscheidung}
       <textarea value={begruendung} onChange={(e) => aktualisiere({ begruendung: e.target.value })} disabled={geprueft}
         className="mt-2 min-h-24 w-full rounded-xl border p-3" style={{ background: "var(--surface)", borderColor: "var(--border)" }} />

@@ -5,6 +5,9 @@ import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter, 
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
 import { trefferRueckmeldung, pulsKlasse } from "@/lib/rueckmeldung";
+import { leseDezimalzahl } from "@/lib/zahlen";
+import { calcFeedback } from "@/lib/rechenFeedback";
+import { RechenFehlerHilfe } from "@/components/RechenFehlerHilfe";
 
 export function CalcCard({
   aufgabe,
@@ -35,14 +38,16 @@ export function CalcCard({
   }, [KEY, werte]);
   const [eingabe, setEingabe] = useState("");
   const [geprueft, setGeprueft] = useState(false);
+  const zahl = leseDezimalzahl(eingabe);
 
   const schritte = useMemo(() => berechneSchritte(aufgabe.schritte, werte), [aufgabe.schritte, werte]);
   const loesung = schritte[schritte.length - 1];
-  const richtig = geprueft && pruefeAntwort(parseFloat(eingabe.replace(",", ".")), loesung.wert, aufgabe.toleranzProzent);
+  const richtig = geprueft && zahl !== null && pruefeAntwort(zahl, loesung.wert, aufgabe.toleranzProzent);
 
   const pruefen = () => {
+    if (geprueft || zahl === null) return;
     setGeprueft(true);
-    const ok = pruefeAntwort(parseFloat(eingabe.replace(",", ".")), loesung.wert, aufgabe.toleranzProzent);
+    const ok = pruefeAntwort(zahl, loesung.wert, aufgabe.toleranzProzent);
     const b: Bewertung = ok ? "richtig" : "falsch";
     trefferRueckmeldung(b);
     onErgebnis(b);
@@ -83,12 +88,15 @@ export function CalcCard({
         />
         <span style={{ color: "var(--text-muted)" }}>{loesung.einheit}</span>
       </div>
+      {!geprueft && eingabe.trim() && zahl === null && <p className="mt-2 text-sm" role="status">
+        Gib nur die Zahl ein, ohne Einheit oder Tausendertrennzeichen. Ein Dezimalkomma ist möglich.
+      </p>}
 
       {!geprueft ? (
         <div className="mt-4 flex gap-2">
           <button
             onClick={pruefen}
-            disabled={eingabe.trim() === ""}
+            disabled={zahl === null}
             className="flex-1 rounded-xl py-3 font-medium disabled:opacity-40"
             style={{ background: "var(--accent)", color: "var(--accent-text)" }}
           >
@@ -109,6 +117,7 @@ export function CalcCard({
           <p className="text-sm font-medium" style={{ color: richtig ? "var(--ok)" : "var(--bad)" }}>
             {richtig ? "Richtig!" : `Richtige Lösung: ${loesung.wert} ${loesung.einheit}`}
           </p>
+          {!richtig && zahl !== null && <RechenFehlerHilfe feedback={calcFeedback(zahl, schritte)} />}
           <div
             className="mt-3 rounded-lg border p-3"
             style={{ borderColor: "var(--border)", background: "var(--surface)" }}
