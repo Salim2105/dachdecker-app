@@ -2759,7 +2759,7 @@
     "thema": "Holzschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 383 (Aufgaben S. 389)",
     "konfidenz": "hoch",
-    "frage": "Wie breit müssen die Bewegungsfugen zwischen Holzschindeln sein?",
+    "frage": "Welche Fugenbreite und welcher Fugenversatz werden für die Holzschindel-Dachdeckung in der hier zitierten Buchstelle (S. 383) angegeben?",
     "optionen": [
       "20 bis 30 mm",
       "3 bis 5 mm, mit einem Fugenversatz von mindestens 30 mm",
@@ -2769,7 +2769,7 @@
     "korrekt": [
       1
     ],
-    "erklaerung": "Da die Holzschindeln nach dem Verlegen ‚arbeiten', müssen Bewegungsfugen zwischen den Schindeln vorgesehen werden. Die Fugenbreite beträgt im Allgemeinen zwischen 3 mm und 5 mm. Der Fugenversatz beträgt mindestens 30 mm, zwischen der ersten und der dritten Reihe noch mindestens 20 mm.",
+    "erklaerung": "Da die Holzschindeln nach dem Verlegen ‚arbeiten', müssen Bewegungsfugen zwischen den Schindeln vorgesehen werden. Die Fugenbreite beträgt im Allgemeinen zwischen 3 mm und 5 mm. Der Fugenversatz beträgt mindestens 30 mm, zwischen der ersten und der dritten Reihe noch mindestens 20 mm. Diese Angabe gehört zum genannten Anwendungsbereich und zur zitierten Buchstelle. Dach- und Fassadenangaben dürfen nicht ohne Prüfung aufeinander übertragen werden; Holzart, Einbaufeuchte und konkrete Produktangaben sind zu berücksichtigen.",
     "bildDatei": "/buch/lf09/schindelbefestigung.webp",
     "bildunterschrift": "Schindelbefestigung – Abstände (Buch S. 383)"
   },

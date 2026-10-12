@@ -109,7 +109,7 @@
     "thema": "Dachneigung",
     "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
     "konfidenz": "hoch",
-    "frage": "In welchem Bereich liegt die Dachneigung (DN) eines Flachdaches?",
+    "frage": "Welcher Bereich wird in der hier zitierten Einteilung des Dachdecker-Fachbuchs (LF 2, S. 35) als Flachdach bezeichnet?",
     "optionen": [
       "0° ≤ DN ≤ 10°",
       "5° < DN ≤ 22°",
@@ -119,7 +119,7 @@
     "korrekt": [
       3
     ],
-    "erklaerung": "Flachdächer haben eine Dachneigung von 0° bis 5°. Flach geneigte Dächer liegen zwischen 5° und 22°, Steildächer über 22°.",
+    "erklaerung": "Flachdächer haben eine Dachneigung von 0° bis 5°. Flach geneigte Dächer liegen zwischen 5° und 22°, Steildächer über 22°. Diese Antwort gilt für die Einteilung der genannten Buchstelle. Andere Lehrwerke verwenden andere Grenzen. Die Bezeichnung allein legt keine geeignete Deckung oder Abdichtung fest.",
     "bildDatei": "/buch/lf02/schutzaufgaben.webp",
     "bildunterschrift": "Schutzaufgaben des Daches (Buch S. 35)"
   },
@@ -130,7 +130,7 @@
     "thema": "Dachneigung",
     "quelle": "Dachdecker-Fachbuch (Handwerk und Technik), LF 2, S. 35",
     "konfidenz": "hoch",
-    "frage": "Ab welcher Dachneigung spricht man von einem Steildach?",
+    "frage": "Ab welcher Dachneigung beginnt das Steildach in der hier zitierten Einteilung des Dachdecker-Fachbuchs (LF 2, S. 35)?",
     "optionen": [
       "ab mehr als 5°",
       "ab mehr als 15°",
@@ -140,7 +140,7 @@
     "korrekt": [
       3
     ],
-    "erklaerung": "Steildächer haben eine Dachneigung von mehr als 22°. Zwischen 5° und 22° spricht man von flach geneigten Dächern."
+    "erklaerung": "Steildächer haben eine Dachneigung von mehr als 22°. Zwischen 5° und 22° spricht man von flach geneigten Dächern. Diese Antwort gilt für die Einteilung der genannten Buchstelle. Andere Lehrwerke verwenden andere Grenzen. Die Bezeichnung allein legt keine geeignete Deckung oder Abdichtung fest."
   },
   {
     "id": "lf02-009",

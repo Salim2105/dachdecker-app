@@ -10,6 +10,7 @@ import { LernzeitWahl } from "@/components/LernzeitWahl";
 import { zeitAuswahl } from "@/lib/lernzeit";
 import { lernzeitStore } from "@/lib/appStores";
 import { heuteAufgaben, istVerkettet, type Modus } from "@/lib/tagesplan";
+import { erklaereLernplan } from "@/lib/lernplan";
 
 const SESSION_ID = "heute";
 const subscribeClient = () => () => {};
@@ -114,16 +115,17 @@ function Sitzung({ modus }: { modus: Modus }) {
 function GeplanteSitzung({ modus, minuten }: { modus: Modus; minuten: number }) {
   // Erst nach der Hydrierung lesen, dann die Auswahl für die Sitzung einfrieren.
   // Antworten dürfen die laufende Liste nicht verschieben.
-  const [aufgaben] = useState<Aufgabe[]>(() => {
+  const [plan] = useState(() => {
     const pool = getLernfelder().flatMap((lf) => getAufgaben(lf.id)).filter((a) =>
       modus === "alles" || (modus === "tief" ? istVerkettet(a) : !istVerkettet(a)),
     );
     const gespeichert = ladeGespeicherteAufgaben(`dd-session-${SESSION_ID}`, pool);
-    if (gespeichert) return gespeichert;
     const fortschritt = progressStore.getSnapshot();
     const jetzt = Date.now();
-    return zeitAuswahl(heuteAufgaben(fortschritt, jetzt, 60, modus), minuten);
+    const aufgaben: Aufgabe[] = gespeichert ?? zeitAuswahl(heuteAufgaben(fortschritt, jetzt, 60, modus), minuten);
+    return { aufgaben, themen: erklaereLernplan(aufgaben, fortschritt, jetzt) };
   });
+  const { aufgaben } = plan;
 
   if (aufgaben.length === 0) {
     return (
@@ -143,5 +145,22 @@ function GeplanteSitzung({ modus, minuten }: { modus: Modus; minuten: number }) 
     );
   }
 
-  return <SessionRunner key={modus} aufgaben={aufgaben} lfId={SESSION_ID} />;
+  return <>
+    <details className="mb-4 rounded-xl border p-3 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+      <summary className="min-h-11 cursor-pointer font-medium">Warum diese {aufgaben.length} Aufgaben?</summary>
+      <p className="mt-2" style={{ color: "var(--text-muted)" }}>Fällige Wiederholungen kommen zuerst. Danach lernst du Neues aus Lernfeldern, in denen bisher weniger Aufgaben gefestigt sind. Der Plan bleibt während dieser Runde gleich.</p>
+      <ul className="mt-3 space-y-2">
+        {plan.themen.map((t) => <li key={`${t.lernfeld}:${t.thema}`}>
+          <strong>{t.thema || "Übung"}</strong> · {getLernfelder().find((lf) => lf.id === t.lernfeld)?.titel ?? t.lernfeld}
+          <div style={{ color: "var(--text-muted)" }}>{[
+            t.faellig ? `${t.faellig} fällige Wiederholungen` : "",
+            t.neu ? `${t.neu} neue Aufgaben` : "",
+            t.freiwillig ? `${t.freiwillig} Aufgaben aus deiner gespeicherten Runde` : "",
+          ].filter(Boolean).join(" · ")}</div>
+        </li>)}
+      </ul>
+      <p className="mt-3">Erst selbst antworten, dann die Erklärung vergleichen. Fehler bearbeitest du am Ende der Runde erneut.</p>
+    </details>
+    <SessionRunner key={modus} aufgaben={aufgaben} lfId={SESSION_ID} />
+  </>;
 }

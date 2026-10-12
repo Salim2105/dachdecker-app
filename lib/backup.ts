@@ -1,7 +1,7 @@
 // Lernstand sichern & wiederherstellen. Fortschritt, Prüfungsdatum, zuletzt
 // gelerntes LF und Theme leben nur im localStorage — ohne Backup sind sie bei
 // Gerätewechsel oder gelöschtem Cache weg. Darum eine Export-/Import-Datei.
-const KEYS = ["fortschritt-v1", "pruefungsdatum", "letztesLf", "theme", "lernzeit"];
+const KEYS = ["fortschritt-v1", "pruefungsdatum", "letztesLf", "theme", "lernzeit", "praxis-v1"];
 const MARKER = "dachdecker-lernstand";
 
 export function exportiereDaten(): string {

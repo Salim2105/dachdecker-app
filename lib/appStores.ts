@@ -10,7 +10,9 @@ export function createStringStore(key: string) {
     },
     getSnapshot(): string {
       if (typeof window === "undefined") return "";
-      if (cache === undefined) cache = localStorage.getItem(key) ?? "";
+      if (cache === undefined) {
+        try { cache = localStorage.getItem(key) ?? ""; } catch { cache = ""; }
+      }
       return cache;
     },
     getServerSnapshot: () => "",

@@ -53,6 +53,6 @@ describe("Praxisrechnungen", () => {
   });
   it("akzeptiert ein Dezimalkomma und lehnt leere oder ungültige Werte ab", () => {
     expect(pruefePraxisZahl("0,72", 0.72)).toBe(true);
-    for (const v of ["", "abc", "Infinity", "62 Platten"]) expect(pruefePraxisZahl(v, 62)).toBe(false);
+    for (const v of ["", "abc", "Infinity", "62 Platten", "0x3e", "6.2e1", "61,9999"]) expect(pruefePraxisZahl(v, 62)).toBe(false);
   });
 });

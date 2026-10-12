@@ -1593,7 +1593,7 @@
     "thema": "Dachformen",
     "quelle": "Grundstufe Bautechnik, Buch S. 225",
     "konfidenz": "hoch",
-    "frage": "Ab welcher Dachneigung spricht man von einem Steildach?",
+    "frage": "Ab welcher Dachneigung beginnt das Steildach in der hier zitierten Einteilung aus Grundstufe Bautechnik (S. 225)?",
     "optionen": [
       "Über 40°",
       "Über 5°",
@@ -1603,7 +1603,7 @@
     "korrekt": [
       0
     ],
-    "erklaerung": "Von 5° bis 40° Dachneigung spricht man von mäßig steilen Dächern. Ab mehr als 40° sind es Steildächer. Bis zu einer Neigung von 5° werden Dächer als Flachdächer bezeichnet.",
+    "erklaerung": "Von 5° bis 40° Dachneigung spricht man von mäßig steilen Dächern. Ab mehr als 40° sind es Steildächer. Bis zu einer Neigung von 5° werden Dächer als Flachdächer bezeichnet. Diese Antwort gilt für die Einteilung der genannten Buchstelle. Andere Lehrwerke verwenden andere Grenzen. Die Bezeichnung allein legt keine geeignete Deckung oder Abdichtung fest.",
     "bildDatei": "/buch/lf05/traditionelle-dachformen.webp",
     "bildunterschrift": "Traditionelle Dachformen (Buch S. 225)"
   },
