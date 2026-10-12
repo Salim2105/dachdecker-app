@@ -1517,7 +1517,7 @@
     "thema": "Absetzbehälter",
     "quelle": "Grundstufe Bautechnik, Buch S. 580 (Zeichnung)",
     "konfidenz": "hoch",
-    "aufgabentext": "Bei einem Abbruch fallen {volumen} m³ Bauschutt an. Zur Verfügung stehen Absetzbehälter mit {behälter} m³ Inhalt. Wie viele Behälterfüllungen sind nötig und wie viel Rauminhalt bleibt in der letzten Füllung ungenutzt?",
+    "aufgabentext": "Bei einem Abbruch fallen {volumen} m³ Bauschutt an. Zur Verfügung stehen Absetzbehälter mit {behaelter} m³ Inhalt. Wie viele Behälterfüllungen sind nötig und wie viel Rauminhalt bleibt in der letzten Füllung ungenutzt?",
     "parameter": [
       {
         "name": "volumen",

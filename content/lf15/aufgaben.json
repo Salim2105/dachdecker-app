@@ -745,7 +745,7 @@
     "thema": "Schleppdachgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 540 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel S. 540: Auf einem Dach mit {alpha}° Dachneigung wird eine Schleppdachgaube mit {beta}° Neigung errichtet. Die Sparren sind {sges} m lang, davon {ü} m Überstand. Berechne die Gaubentiefe und die Gaubenhöhe.",
+    "aufgabentext": "Buchbeispiel S. 540: Auf einem Dach mit {alpha}° Dachneigung wird eine Schleppdachgaube mit {beta}° Neigung errichtet. Die Sparren sind {sges} m lang, davon {ue} m Überstand. Berechne die Gaubentiefe und die Gaubenhöhe.",
     "parameter": [
       {
         "name": "alpha",
@@ -1541,7 +1541,7 @@
     "thema": "Materialbedarf Giebel",
     "quelle": "Grundstufe Bautechnik, Buch S. 542 (1. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 1 (S. 542): Zwei Türöffnungen sind je {th} m hoch und {tb} m breit, die Giebelschräge misst {schräge} m. Berechne die Türlaibungslänge und den Strackortbedarf bei {deck} Stück/m und {zuschlag} % Verschnitt.",
+    "aufgabentext": "Buchbeispiel 1 (S. 542): Zwei Türöffnungen sind je {th} m hoch und {tb} m breit, die Giebelschräge misst {schraege} m. Berechne die Türlaibungslänge und den Strackortbedarf bei {deck} Stück/m und {zuschlag} % Verschnitt.",
     "parameter": [
       {
         "name": "th",
@@ -1697,7 +1697,7 @@
     "thema": "Materialbedarf Wangen",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 2 (S. 543): Die Seitenflächen einer Schleppgaube werden mit Rechteckschiefern {sb} × {sh} cm in Doppeldeckung verkleidet. Die Gaubenschräge misst {schräge} m, die vordere Höhe {vh} m. Berechne Gaubentiefe und Deckfläche beider Wangen.",
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Die Seitenflächen einer Schleppgaube werden mit Rechteckschiefern {sb} × {sh} cm in Doppeldeckung verkleidet. Die Gaubenschräge misst {schraege} m, die vordere Höhe {vh} m. Berechne Gaubentiefe und Deckfläche beider Wangen.",
     "parameter": [
       {
         "name": "sb",
@@ -1758,7 +1758,7 @@
     "thema": "Materialbedarf Wangen",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (2. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 2 (S. 543): Rechteckschiefer {sb} × {sh} cm in Doppeldeckung mit {ü} cm Überdeckung. Berechne die Decksteinfläche, den Bedarf je m², den Gesamtbedarf für {flaeche} m² bei {verhau} % Verhau und die Nagelzahl.",
+    "aufgabentext": "Buchbeispiel 2 (S. 543): Rechteckschiefer {sb} × {sh} cm in Doppeldeckung mit {ue} cm Überdeckung. Berechne die Decksteinfläche, den Bedarf je m², den Gesamtbedarf für {flaeche} m² bei {verhau} % Verhau und die Nagelzahl.",
     "parameter": [
       {
         "name": "sb",
@@ -1839,7 +1839,7 @@
     "thema": "Materialbedarf Schleppgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 3 (S. 543): Hauptdach {alpha}°, Schleppdachgaube {beta}°, Gaubentiefe {tg} m, Überstand {ü} m. Berechne die Sparrenlänge s' ohne und s mit Überstand sowie die Anschlusslänge a.",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Hauptdach {alpha}°, Schleppdachgaube {beta}°, Gaubentiefe {tg} m, Überstand {ue} m. Berechne die Sparrenlänge s' ohne und s mit Überstand sowie die Anschlusslänge a.",
     "parameter": [
       {
         "name": "alpha",
@@ -1906,7 +1906,7 @@
     "thema": "Materialbedarf Schleppgaube",
     "quelle": "Grundstufe Bautechnik, Buch S. 543 (3. Berechnungsbeispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 3 (S. 543): Gaubenbreite {bg} m, Sparrenlänge s = {s} m, Überstand {ü} m, vordere Höhe h_v = {hv} m, Anschlusslänge a = {a} m, Hauptdachneigung {alpha}°. Berechne Dachfläche, Wangenhöhe, eine Wangenfläche, die Vorderfläche und die senkrechten Flächen insgesamt.",
+    "aufgabentext": "Buchbeispiel 3 (S. 543): Gaubenbreite {bg} m, Sparrenlänge s = {s} m, Überstand {ue} m, vordere Höhe h_v = {hv} m, Anschlusslänge a = {a} m, Hauptdachneigung {alpha}°. Berechne Dachfläche, Wangenhöhe, eine Wangenfläche, die Vorderfläche und die senkrechten Flächen insgesamt.",
     "parameter": [
       {
         "name": "bg",

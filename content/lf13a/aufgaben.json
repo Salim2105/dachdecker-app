@@ -1653,7 +1653,7 @@
     "thema": "Plattenkehle",
     "quelle": "Grundstufe Bautechnik, Buch S. 484 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel S. 484: Kehlplatten im Format 13/40 cm haben eine Überdeckung von {ü} cm. Berechne die Sichthöhe einer Platte und die Sichthöhe, um die das vierte Gebinde das erste überdeckt.",
+    "aufgabentext": "Buchbeispiel S. 484: Kehlplatten im Format 13/40 cm haben eine Überdeckung von {ue} cm. Berechne die Sichthöhe einer Platte und die Sichthöhe, um die das vierte Gebinde das erste überdeckt.",
     "parameter": [
       {
         "name": "ue",
@@ -3018,7 +3018,7 @@
     "thema": "Materialbedarf Ziegel",
     "quelle": "Grundstufe Bautechnik, Buch S. 501 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel S. 501: Biberschwanzziegel Format 18 × 38 cm mit einer Überdeckung von {ü} cm. Berechne den Lattenbedarf je m² und den Gesamtbedarf für {a} m² Dachfläche bei {z} % Zuschlag.",
+    "aufgabentext": "Buchbeispiel S. 501: Biberschwanzziegel Format 18 × 38 cm mit einer Überdeckung von {ue} cm. Berechne den Lattenbedarf je m² und den Gesamtbedarf für {a} m² Dachfläche bei {z} % Zuschlag.",
     "parameter": [
       {
         "name": "ue",
@@ -3152,7 +3152,7 @@
     "thema": "Materialbedarf Ziegel",
     "quelle": "Grundstufe Bautechnik, Buch S. 501 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel S. 501: Kronendeckung mit Biberschwanzziegeln, Format {br} × {ho} cm, Überdeckung {ü} cm. Berechne den Ziegelbedarf je m² und gesamt für {a} m² bei {z} % Zuschlag.",
+    "aufgabentext": "Buchbeispiel S. 501: Kronendeckung mit Biberschwanzziegeln, Format {br} × {ho} cm, Überdeckung {ue} cm. Berechne den Ziegelbedarf je m² und gesamt für {a} m² bei {z} % Zuschlag.",
     "parameter": [
       {
         "name": "br",
@@ -3302,7 +3302,7 @@
     "thema": "Materialbedarf Kehlen",
     "quelle": "Grundstufe Bautechnik, Buch S. 502 (Beispiel 1)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchbeispiel 1 (S. 502): Eine {l} m lange Kehle soll als dreiteilige Metallkehle ausgebildet werden. Die Kehlstücke sollen gleich lang sein und sich um {ü} m überdecken. Berechne die Länge eines Kehlstücks und die Anzahl der Hafte je Seite bei höchstens {ha} m Abstand.",
+    "aufgabentext": "Buchbeispiel 1 (S. 502): Eine {l} m lange Kehle soll als dreiteilige Metallkehle ausgebildet werden. Die Kehlstücke sollen gleich lang sein und sich um {ue} m überdecken. Berechne die Länge eines Kehlstücks und die Anzahl der Hafte je Seite bei höchstens {ha} m Abstand.",
     "parameter": [
       {
         "name": "l",
@@ -3693,7 +3693,7 @@
     "thema": "Aufgaben Materialbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 506 (Aufgabe 1)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchaufgabe 1 (S. 506): Ein Dach wird in Kronendeckung mit Biberschwanzziegeln Format {br} × {ho} cm gedeckt. Wegen der Dachneigung ist eine Höhenüberdeckung von {ü} cm erforderlich. Berechne Lattenbedarf und Ziegelbedarf je m².",
+    "aufgabentext": "Buchaufgabe 1 (S. 506): Ein Dach wird in Kronendeckung mit Biberschwanzziegeln Format {br} × {ho} cm gedeckt. Wegen der Dachneigung ist eine Höhenüberdeckung von {ue} cm erforderlich. Berechne Lattenbedarf und Ziegelbedarf je m².",
     "parameter": [
       {
         "name": "br",
@@ -3797,7 +3797,7 @@
     "thema": "Aufgaben Materialbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 506 (Aufgabe 4)",
     "konfidenz": "hoch",
-    "aufgabentext": "Buchaufgabe 4 (S. 506): Ein Dach wird mit Hohlpfannen im Langschnitt gedeckt. Die Länge der Pfanne ist {l} cm und die Höhenüberdeckung {ü} cm. Die mittlere Deckbreite beträgt {db} cm. Berechne Latten- und Pfannenbedarf je m².",
+    "aufgabentext": "Buchaufgabe 4 (S. 506): Ein Dach wird mit Hohlpfannen im Langschnitt gedeckt. Die Länge der Pfanne ist {l} cm und die Höhenüberdeckung {ue} cm. Die mittlere Deckbreite beträgt {db} cm. Berechne Latten- und Pfannenbedarf je m².",
     "parameter": [
       {
         "name": "l",

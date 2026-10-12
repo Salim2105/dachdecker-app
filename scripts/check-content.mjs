@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { evaluate } from "mathjs";
 
 // Prüft die Daten und widersprüchliche identische Fragen, nicht die Richtigkeit
 // der zitierten Bücher. Fachliche Freigabe braucht einen Vergleich mit Quellen.
@@ -9,6 +10,7 @@ const fragen = new Map();
 const fehler = [];
 let aufgaben = 0;
 let lektionen = 0;
+let rechenaufgaben = 0;
 const normal = (text) => text.toLocaleLowerCase("de-DE").replace(/\s+/g, " ").trim();
 
 for (const ordner of fs.readdirSync(root, { withFileTypes: true }).filter((e) => e.isDirectory())) {
@@ -23,6 +25,45 @@ for (const ordner of fs.readdirSync(root, { withFileTypes: true }).filter((e) =>
       if (typ === "lektionen") { lektionen++; continue; }
       aufgaben++;
       if (!eintrag.erklaerung?.trim()) fehler.push(`${eintrag.id}: Erklärung fehlt`);
+      if (eintrag.typ === "calc") {
+        rechenaufgaben++;
+        const namen = new Set(eintrag.parameter.map((p) => p.name));
+        for (const treffer of eintrag.aufgabentext.matchAll(/\{([^}]+)\}/g)) {
+          if (!namen.has(treffer[1])) fehler.push(`${eintrag.id}: unbekannter Platzhalter ${treffer[0]}`);
+        }
+        for (const p of eintrag.parameter) {
+          if (![p.min, p.max, p.schritt].every(Number.isFinite) || p.min > p.max || p.schritt <= 0) {
+            fehler.push(`${eintrag.id}: ungültiger Parameterbereich für ${p.name}`);
+          }
+        }
+        if (!eintrag.schritte.length || !Number.isFinite(eintrag.toleranzProzent) || eintrag.toleranzProzent < 0) {
+          fehler.push(`${eintrag.id}: fehlende Schritte oder ungültige Toleranz`);
+        }
+        const textNamen = new Set(namen);
+        for (const s of eintrag.schritte) {
+          textNamen.add(s.ergebnisName);
+          for (const treffer of s.beschreibung.matchAll(/\{([^}]+)\}/g)) {
+            if (!textNamen.has(treffer[1])) fehler.push(`${eintrag.id}: unbekannter Platzhalter im Lösungsweg ${treffer[0]}`);
+          }
+        }
+        // Stichproben bestätigen Ausführbarkeit, nicht die Baugeometrie.
+        for (let probe = 0; probe < 5; probe++) {
+          const scope = Object.fromEntries(eintrag.parameter.map((p, i) => {
+            const mitte = Math.min(p.max, Math.max(p.min, Math.round(((p.min + p.max) / 2) / p.schritt) * p.schritt));
+            const wert = probe === 0 ? p.min : probe === 1 ? p.max : probe === 2 ? mitte : (i + probe) % 2 ? p.min : p.max;
+            return [p.name, wert];
+          }));
+          try {
+            for (const s of eintrag.schritte) {
+              const wert = Number(evaluate(s.formel, scope));
+              if (!Number.isFinite(wert)) throw new Error(`kein endliches Ergebnis für ${s.formel}`);
+              scope[s.ergebnisName] = wert;
+            }
+          } catch (error) {
+            fehler.push(`${eintrag.id}: Rechenprobe ${probe + 1} scheitert: ${error.message}`);
+          }
+        }
+      }
       if (eintrag.typ !== "mc") continue;
       if (!eintrag.korrekt?.length || eintrag.korrekt.some((i) => !Number.isInteger(i) || i < 0 || i >= eintrag.optionen.length)) {
         fehler.push(`${eintrag.id}: ungültige richtige Antwort`);
@@ -41,5 +82,5 @@ if (fehler.length) {
   console.error(fehler.join("\n"));
   process.exitCode = 1;
 } else {
-  console.log(`Inhaltsprüfung bestanden: ${aufgaben} Aufgaben, ${lektionen} Lektionen. Datenstruktur, Quellenangaben und identische Fragen geprüft; keine fachliche Freigabe.`);
+  console.log(`Inhaltsprüfung bestanden: ${aufgaben} Aufgaben, ${lektionen} Lektionen, ${rechenaufgaben} Rechenaufgaben mit je 5 Zahlenproben. Datenstruktur, Platzhalter, Quellenangaben und identische Fragen geprüft; keine vollständige fachliche Freigabe.`);
 }

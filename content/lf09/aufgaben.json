@@ -796,7 +796,7 @@
     "thema": "Altdeutsche Deckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 359 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Bei der altdeutschen Doppeldeckung hat der Deckstein die Höhe {hoehe} cm, die Überdoppelung beträgt {ü} cm. Berechne den Schnurabstand.",
+    "aufgabentext": "Bei der altdeutschen Doppeldeckung hat der Deckstein die Höhe {hoehe} cm, die Überdoppelung beträgt {ue} cm. Berechne den Schnurabstand.",
     "parameter": [
       {
         "name": "hoehe",
@@ -2217,7 +2217,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch bei einer Überdeckung von {ü} cm. Berechne den Schnurabstand bei der Doppeldeckung.",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch bei einer Überdeckung von {ue} cm. Berechne den Schnurabstand bei der Doppeldeckung.",
     "parameter": [
       {
         "name": "hoehe",
@@ -2256,7 +2256,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Stoßfuge {fuge} cm. Berechne die Deckfläche einer Platte.",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Stoßfuge {fuge} cm. Berechne die Deckfläche einer Platte.",
     "parameter": [
       {
         "name": "hoehe",
@@ -2311,7 +2311,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 374 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Stoßfuge {fuge} cm. Berechne den Plattenbedarf pro m².",
+    "aufgabentext": "Eine Rechteckschablone ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Stoßfuge {fuge} cm. Berechne den Plattenbedarf pro m².",
     "parameter": [
       {
         "name": "hoehe",
@@ -2928,7 +2928,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 388 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch bei einer Überdeckung von {ü} cm. Berechne den Schnurabstand (sichtbare Deckhöhe).",
+    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch bei einer Überdeckung von {ue} cm. Berechne den Schnurabstand (sichtbare Deckhöhe).",
     "parameter": [
       {
         "name": "hoehe",
@@ -2967,7 +2967,7 @@
     "thema": "Bitumenschindeln",
     "quelle": "Grundstufe Bautechnik, Buch S. 388 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ü} cm, die Bewegungsfuge {fuge} cm. Berechne den Materialbedarf pro m².",
+    "aufgabentext": "Eine Bitumenschindel ist {hoehe} cm hoch und {breite} cm breit, die Überdeckung beträgt {ue} cm, die Bewegungsfuge {fuge} cm. Berechne den Materialbedarf pro m².",
     "parameter": [
       {
         "name": "hoehe",

@@ -8,6 +8,23 @@ unabhängigen Prüfung.
 
 ## Bearbeitete Unklarheiten
 
+- **309 Quellenhinweise in Lektionen:** Die unbelegte Formulierung
+  „abgeleitet aus den geprüften Aufgaben“ wurde durch „Zusammenfassung auf Basis
+  der zitierten Aufgaben“ ersetzt. Der Hinweis auf den noch ausstehenden
+  unabhängigen Abgleich der Originalquellen ist ausdrücklich ergänzt.
+
+- **24 Rechenaufgaben:** Nicht definierte Platzhalter mit Umlauten wurden auf
+  die tatsächlich vorhandenen Parameternamen korrigiert. Dadurch sind Maße wie
+  Dachüberstände und Behältergrößen wieder im Aufgabentext sichtbar.
+- **285 Rechenaufgaben:** Formeln werden mit je fünf deterministischen
+  Zahlenproben ausgeführt; Textplatzhalter und Parameterbereiche werden geprüft.
+  Das prüft Ausführbarkeit, nicht jede Formel fachlich oder die Baugeometrie.
+- **Arbeitssicherheit, LF 8:** Aufgabe `lf08-082` und Lektion `lf08-l07` sind
+  vorläufig als `pruefen` ausgeblendet. Die pauschale Absturzhöhen-Angabe und
+  die zahlenbezogenen Vorgaben der Lektion sind anhand aktueller Originalquellen
+  zu prüfen. Die Inhalte bleiben im Repository erhalten. Der Online-Abruf bei
+  der BG BAU wurde von der Netzwerkumgebung mit HTTP 403 blockiert.
+
 - **Steildach, LF 2 / LF 5:** Identische Fragen hatten unterschiedliche Antworten
   (über 22° / über 40°). Fragen und Lektionen benennen jetzt die jeweilige
   Buchklassifikation. Eine Klassifikation ersetzt keine Auswahl des Dachaufbaus.
@@ -28,4 +45,5 @@ und Quellenstand. Das ist noch keine abgeschlossene Prüfung des gesamten Bestan
 
 `npm run content:check` findet fehlende Quellenangaben, doppelte IDs, ungültige
 Antwortindizes, fehlende Erklärungen und identische MC-Fragen mit unterschiedlichen
-Antworten. Es beweist nicht, dass eine fachliche Aussage richtig ist.
+Antworten. Zusätzlich prüft es Parameter, Textplatzhalter und fünf Zahlenproben
+je Rechenaufgabe. Es beweist nicht, dass eine fachliche Aussage richtig ist.

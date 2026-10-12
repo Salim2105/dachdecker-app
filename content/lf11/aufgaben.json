@@ -1645,7 +1645,7 @@
     "thema": "Wabendeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 438 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Die Brustbreite beträgt {b} cm, die Stoßfuge {fuge} cm und die Überdeckung {ü} cm. Berechne den senkrechten und den waagerechten Schnurabstand.",
+    "aufgabentext": "Die Brustbreite beträgt {b} cm, die Stoßfuge {fuge} cm und die Überdeckung {ue} cm. Berechne den senkrechten und den waagerechten Schnurabstand.",
     "parameter": [
       {
         "name": "b",
@@ -1719,7 +1719,7 @@
     "thema": "Rechteckdoppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 438 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Schieferplatte ist {hoehe} cm hoch und {breite} cm breit, die Höhenüberdeckung beträgt {ü} cm. Berechne die sichtbare Steinfläche bei der Rechteckdoppeldeckung.",
+    "aufgabentext": "Eine Schieferplatte ist {hoehe} cm hoch und {breite} cm breit, die Höhenüberdeckung beträgt {ue} cm. Berechne die sichtbare Steinfläche bei der Rechteckdoppeldeckung.",
     "parameter": [
       {
         "name": "hoehe",

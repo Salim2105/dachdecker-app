@@ -152,7 +152,7 @@
     "thema": "Einfachdeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 294",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang. Bei der Einfachdeckung ist eine Mindestüberdeckung von {über} mm gefordert. Berechne den maximalen Traglattenabstand.",
+    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang. Bei der Einfachdeckung ist eine Mindestüberdeckung von {ueber} mm gefordert. Berechne den maximalen Traglattenabstand.",
     "parameter": [
       {
         "name": "laenge",
@@ -251,7 +251,7 @@
     "thema": "Doppeldeckung",
     "quelle": "Grundstufe Bautechnik, Buch S. 296",
     "konfidenz": "hoch",
-    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang, die Mindestüberdeckung beträgt {über} mm. Berechne den maximalen Traglattenabstand bei Doppeldeckung.",
+    "aufgabentext": "Ein Biberschwanzziegel ist {laenge} mm lang, die Mindestüberdeckung beträgt {ueber} mm. Berechne den maximalen Traglattenabstand bei Doppeldeckung.",
     "parameter": [
       {
         "name": "laenge",
@@ -1747,7 +1747,7 @@
     "lernfeld": "lf08",
     "thema": "Arbeitssicherheit",
     "quelle": "Grundstufe Bautechnik, Buch S. 324 (Aufgaben S. 325)",
-    "konfidenz": "hoch",
+    "konfidenz": "pruefen",
     "frage": "Ab welcher Absturzhöhe sind an der Traufe Dachfanggerüste erforderlich?",
     "optionen": [
       "Ab mehr als 3,00 m Absturzhöhe bei Dachneigungen von 22,5° bis 60°",
@@ -2075,7 +2075,7 @@
     "thema": "Werkstoffbedarf",
     "quelle": "Grundstufe Bautechnik, Buch S. 328 (Beispiel)",
     "konfidenz": "hoch",
-    "aufgabentext": "Eine Unterdeckbahn-Rolle ist {laenge} m lang und {breite} m breit. Die Überdeckung beträgt {über} m in Länge und Breite. Wie groß ist die Deckfläche einer Rolle?",
+    "aufgabentext": "Eine Unterdeckbahn-Rolle ist {laenge} m lang und {breite} m breit. Die Überdeckung beträgt {ueber} m in Länge und Breite. Wie groß ist die Deckfläche einer Rolle?",
     "parameter": [
       {
         "name": "laenge",

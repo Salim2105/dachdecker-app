@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import { SessionRunner } from "@/components/session/SessionRunner";
 import type { Aufgabe } from "@/content/schema";
+import anzahl from "@/content/anzahl.json";
 
 // Der Abschlussbildschirm ist der einzige Ort, an dem Rückmeldung folgenlos
 // laut sein darf: alle Bewertungen sind dort längst geschrieben. Diese Tests
@@ -71,8 +72,8 @@ describe("Abschlussbildschirm", () => {
     durchspielen();
 
     expect(screen.getByText(/1 Aufgabe geschafft/)).toBeTruthy();
-    // Ohne den Bezug sind die Zahlen eine Insel — 2039 Aufgaben stehen dahinter.
-    expect(screen.getByText(/von/).textContent).toMatch(/von\s*2039\s*Aufgaben/);
+    // Der Gesamtbestand muss auch nach Inhaltskorrekturen stimmen.
+    expect(screen.getByText(/von/).textContent).toContain(`von ${anzahl.gesamt} Aufgaben`);
   });
 
   it("zählt die Ergebnisse nach Art", () => {
