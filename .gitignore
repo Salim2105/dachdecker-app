@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# Automatisch aus den jeweiligen Build-Dateien erzeugter Offline-Cache.
+/public/sw.js
+
 # production (Create-React-App-Altlast); Icon fürs Desktop-Bundle behalten
 /build/*
 !/build/icon.icns
