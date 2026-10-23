@@ -31,6 +31,7 @@ export function createStringStore(key: string) {
 
 export const datumStore = createStringStore("pruefungsdatum");
 export const letztesLfStore = createStringStore("letztesLf");
+export const letzteSessionStore = createStringStore("letzte-session");
 
 const zeitRaw = createStringStore("lernzeit");
 export const lernzeitStore = {

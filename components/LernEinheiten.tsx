@@ -1,16 +1,24 @@
 "use client";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import type { Aufgabe, Lektion } from "@/content/schema";
 import { LektionCard } from "@/components/LektionCard";
 import { SessionRunner } from "@/components/session/SessionRunner";
 import { progressStore } from "@/lib/progressStore";
 import { ladeGespeicherteAufgaben } from "@/lib/uebungStand";
 
-export function LernEinheiten({ lfId, lektionen, aufgaben }: { lfId: string; lektionen: Lektion[]; aufgaben: Aufgabe[] }) {
+type Props = { lfId: string; lektionen: Lektion[]; aufgaben: Aufgabe[] };
+const subscribeClient = () => () => {};
+export function LernEinheiten(props: Props) {
+  const client = useSyncExternalStore(subscribeClient, () => true, () => false);
+  return client ? <AktiveLernEinheiten key={props.lfId} {...props} /> : <p className="mt-5">Lerneinheit wird geladen …</p>;
+}
+
+function AktiveLernEinheiten({ lfId, lektionen, aufgaben }: Props) {
   const themen = [...new Set([...lektionen.map((l) => l.thema), ...aufgaben.map((a) => a.thema)])];
-  const [thema, setThema] = useState(themen[0] ?? "");
+  const [gespeichert] = useState(() => ladeGespeicherteAufgaben(`dd-session-${lfId}-einheit`, aufgaben));
+  const [thema, setThema] = useState(gespeichert?.[0]?.thema ?? themen[0] ?? "");
   const [lektionIndex, setLektionIndex] = useState(0);
-  const [runde, setRunde] = useState<Aufgabe[] | null>(null);
+  const [runde, setRunde] = useState<Aufgabe[] | null>(gespeichert);
   const [notiz, setNotiz] = useState("");
   const theorie = lektionen.filter((l) => l.thema === thema);
   const passend = aufgaben.filter((a) => a.thema === thema);

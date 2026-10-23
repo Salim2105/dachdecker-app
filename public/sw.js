@@ -1,5 +1,5 @@
 // Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = "dachdecker-1791835262733";
+const CACHE = "dachdecker-1792781824737";
 const SHELL = [
   "/",
   "/lernen",
@@ -1135,30 +1135,28 @@ const SHELL = [
   "/robots.txt",
   "/vercel.svg",
   "/window.svg",
-  "/_next/static/c1tOdgOeJQHrxmtBTZzNi/_buildManifest.js",
-  "/_next/static/c1tOdgOeJQHrxmtBTZzNi/_clientMiddlewareManifest.js",
-  "/_next/static/c1tOdgOeJQHrxmtBTZzNi/_ssgManifest.js",
   "/_next/static/chunks/0-uiwrl-f60tt.js",
   "/_next/static/chunks/05-c3ty_6dwfk.js",
+  "/_next/static/chunks/097mcw50bdyu1.js",
   "/_next/static/chunks/0cz1d0mv5g_q7.js",
-  "/_next/static/chunks/0czy0367zujhj.js",
   "/_next/static/chunks/0nfq2civ_0bi0.js",
+  "/_next/static/chunks/0z1pyrbs7g_uq.js",
+  "/_next/static/chunks/10fy99w4m1qmu.js",
   "/_next/static/chunks/10qk6v6416kh8.js",
   "/_next/static/chunks/14mrh2-p_w84d.js",
-  "/_next/static/chunks/1ah9cuectpsjp.js",
-  "/_next/static/chunks/1d9ex8i-vv2mn.js",
-  "/_next/static/chunks/1df_fibe0c6ud.js",
-  "/_next/static/chunks/24vcr1tz81h8a.js",
+  "/_next/static/chunks/1ckho33wglk5z.js",
+  "/_next/static/chunks/1gyod5-wp662y.js",
+  "/_next/static/chunks/1t85pnipgi5su.js",
   "/_next/static/chunks/26i-3d_6ypgfj.css",
   "/_next/static/chunks/27jktro2p5rq9.js",
-  "/_next/static/chunks/2a0_g_194_6j3.js",
-  "/_next/static/chunks/2dicwwnt3m7pt.js",
   "/_next/static/chunks/315owoz9ub2zd.js",
+  "/_next/static/chunks/3a9nqkek_rgn3.js",
   "/_next/static/chunks/3blo32cheqyqt.js",
-  "/_next/static/chunks/3d8rmya1_8h3n.js",
-  "/_next/static/chunks/3grxd18pv34q7.js",
+  "/_next/static/chunks/3erloxrf5i214.js",
+  "/_next/static/chunks/3grfdh7_vd605.js",
   "/_next/static/chunks/3rxl-jt3pdxgx.js",
-  "/_next/static/chunks/409osb76n2p8l.js",
+  "/_next/static/chunks/3skk2n_dmsdps.js",
+  "/_next/static/chunks/3t_0w05eomw4w.js",
   "/_next/static/chunks/43uukxn5po-vd.js",
   "/_next/static/chunks/turbopack-1p7pqniqer0jp.js",
   "/_next/static/media/4fa387ec64143e14-s.2tuy5pz7dlieh.woff2",
@@ -1172,7 +1170,10 @@ const SHELL = [
   "/_next/static/media/bbc41e54d2fcbd21-s.1rgnod-3esatf.woff2",
   "/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2",
   "/_next/static/media/favicon.2vob68tjqpejf.ico",
-  "/_next/static/media/fef07dbb0973bf53-s.3p2_lha1f2xer.woff2"
+  "/_next/static/media/fef07dbb0973bf53-s.3p2_lha1f2xer.woff2",
+  "/_next/static/yFBfiFtZHIoOgIuPIFCrW/_buildManifest.js",
+  "/_next/static/yFBfiFtZHIoOgIuPIFCrW/_clientMiddlewareManifest.js",
+  "/_next/static/yFBfiFtZHIoOgIuPIFCrW/_ssgManifest.js"
 ];
 
 self.addEventListener("install", (e) => {

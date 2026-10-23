@@ -1,4 +1,5 @@
 import type { AufgabenFortschritt, Bewertung, BewertungsKontext, LernVersuch } from "@/content/schema";
+import { istFortschritt, istObjekt } from "@/lib/fortschrittDaten";
 
 const KEY = "fortschritt-v1";
 const TAG = 86_400_000;
@@ -37,7 +38,11 @@ export function ladeFortschritt(): Record<string, AufgabenFortschritt> {
   if (typeof window === "undefined") return {};
   try {
     const daten = JSON.parse(localStorage.getItem(KEY) || "{}");
-    return daten && typeof daten === "object" && !Array.isArray(daten) ? daten : {};
+    const valid: Record<string, AufgabenFortschritt> = {};
+    if (istObjekt(daten)) {
+      for (const [id, wert] of Object.entries(daten)) if (istFortschritt(wert, id)) valid[id] = wert;
+    }
+    return valid;
   } catch {
     return {};
   }

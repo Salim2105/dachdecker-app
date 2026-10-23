@@ -13,14 +13,14 @@ function sindBewertungen(value: unknown): value is Bewertung[] {
 }
 
 // Gespeicherten Übungsstand laden (z. B. nach Abstecher zum Rechner).
-export function ladeStand(key: string, aufgaben: Aufgabe[]): Uebungsstand | null {
+function ladeStandFuerIds(key: string, ids: readonly string[]): Uebungsstand | null {
   if (typeof window !== "undefined") {
     try {
       const s = JSON.parse(localStorage.getItem(key) || "null");
       if (
         s && Number.isInteger(s.index) && s.index >= 0 &&
-        Array.isArray(s.aufgabenIds) && s.aufgabenIds.length === aufgaben.length &&
-        s.aufgabenIds.every((id: unknown, i: number) => id === aufgaben[i].id) &&
+        Array.isArray(s.aufgabenIds) && s.aufgabenIds.length === ids.length &&
+        s.aufgabenIds.every((id: unknown, i: number) => id === ids[i]) &&
         typeof s.beantwortet === "boolean" && sindBewertungen(s.ergebnisse)
       ) {
         // Ältere Stände ohne Nacharbeitsfelder bleiben für den ersten Durchgang gültig.
@@ -31,8 +31,8 @@ export function ladeStand(key: string, aufgaben: Aufgabe[]): Uebungsstand | null
         if (
           typeof nacharbeit === "boolean" && sindBewertungen(nacharbeitErgebnisse) &&
           (nacharbeit
-            ? s.ergebnisse.length === aufgaben.length && s.index < offen && nacharbeitErgebnisse.length === beantwortete
-            : s.index < aufgaben.length && s.ergebnisse.length === beantwortete && nacharbeitErgebnisse.length === 0)
+            ? s.ergebnisse.length === ids.length && s.index < offen && nacharbeitErgebnisse.length === beantwortete
+            : s.index < ids.length && s.ergebnisse.length === beantwortete && nacharbeitErgebnisse.length === 0)
         ) {
           return { index: s.index, ergebnisse: s.ergebnisse, beantwortet: s.beantwortet, nacharbeit, nacharbeitErgebnisse };
         }
@@ -40,6 +40,26 @@ export function ladeStand(key: string, aufgaben: Aufgabe[]): Uebungsstand | null
     } catch {}
   }
   return null;
+}
+
+export function ladeStand(key: string, aufgaben: Aufgabe[]): Uebungsstand | null {
+  return ladeStandFuerIds(key, aufgaben.map((a) => a.id));
+}
+
+/** Liest nur den Sitzungsstand; die Startseite braucht keine Aufgabentexte. */
+export function ladeSitzungsInfo(id: string) {
+  if (typeof window === "undefined") return null;
+  try {
+    const key = `dd-session-${id}`;
+    const s = JSON.parse(localStorage.getItem(key) || "null");
+    if (!s || !Array.isArray(s.aufgabenIds) || !s.aufgabenIds.length ||
+        !s.aufgabenIds.every((a: unknown) => typeof a === "string") ||
+        new Set(s.aufgabenIds).size !== s.aufgabenIds.length) return null;
+    const stand = ladeStandFuerIds(key, s.aufgabenIds);
+    if (!stand) return null;
+    return { index: stand.index, nacharbeit: stand.nacharbeit,
+      total: stand.nacharbeit ? stand.ergebnisse.filter((b) => b !== "richtig").length : s.aufgabenIds.length };
+  } catch { return null; }
 }
 
 export function leererStand(): Uebungsstand {

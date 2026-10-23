@@ -4,7 +4,8 @@ import Link from "next/link";
 import type { Aufgabe, Bewertung, BewertungsKontext } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { useProgress } from "@/components/useProgress";
-import { letztesLfStore, tonStore } from "@/lib/appStores";
+import { letzteSessionStore, letztesLfStore, tonStore } from "@/lib/appStores";
+import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { leereCalcCache } from "@/lib/calc";
 // Bewusst aus lib/reifegrad: das Modul kennt nur Zahlen, keine Aufgabentexte.
 import { lernStatus } from "@/lib/lernstand";
@@ -38,6 +39,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   const [stand] = useState(() => ladeStand(KEY, aufgaben) ?? leererStand());
   const [index, setIndex] = useState(stand.index);
   const [beantwortet, setBeantwortet] = useState(stand.beantwortet);
+  const [antwortWiederhergestellt, setAntwortWiederhergestellt] = useState(stand.beantwortet);
   const [ergebnisse, setErgebnisse] = useState<Bewertung[]>(stand.ergebnisse);
   const [nacharbeit, setNacharbeit] = useState(stand.nacharbeit);
   const [nacharbeitErgebnisse, setNacharbeitErgebnisse] = useState<Bewertung[]>(stand.nacharbeitErgebnisse);
@@ -59,17 +61,22 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
     try {
       if (fertig) {
         localStorage.removeItem(KEY);
+        if (letzteSessionStore.getSnapshot() === lfId) letzteSessionStore.set("");
         leereCalcCache();
-      } else localStorage.setItem(KEY, JSON.stringify({
-        index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse,
-        aufgabenIds: aufgaben.map((a) => a.id),
-      }));
+      } else {
+        localStorage.setItem(KEY, JSON.stringify({
+          index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse,
+          aufgabenIds: aufgaben.map((a) => a.id),
+        }));
+        if (aufgaben.length && letzteSessionStore.getSnapshot() !== lfId) letzteSessionStore.set(lfId);
+      }
     } catch {}
-  }, [KEY, index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse, fertig, aufgaben]);
+  }, [KEY, lfId, index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse, fertig, aufgaben]);
 
   const aktuell = liste[index];
 
   const zumNaechsten = () => {
+    setAntwortWiederhergestellt(false);
     if (index < liste.length - 1) {
       setIndex((i) => i + 1);
       setBeantwortet(false);
@@ -113,6 +120,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
           leereCalcCache();
           setIndex(0);
           setBeantwortet(false);
+          setAntwortWiederhergestellt(false);
           setErgebnisse([]);
           setNacharbeit(false);
           setNacharbeitErgebnisse([]);
@@ -151,7 +159,12 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         <TonSchalter />
       </div>
 
-      <AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} />
+      {antwortWiederhergestellt ? <div className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
+        <h2 className="font-semibold">Diese Aufgabe ist bereits bewertet</h2>
+        <p className="mt-2 text-sm">Thema: {aktuell.thema}. Gespeicherte Bewertung: {({ richtig: "Richtig", teilweise: "Teilweise richtig", falsch: "Noch üben" })[(nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index]]}.</p>
+        <p className="mt-2 text-sm">Du kannst die Erklärung noch einmal lesen und danach weitermachen. Deine Bewertung bleibt erhalten.</p>
+        <Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} />
+      </div> : <AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} />}
 
       {beantwortet && (
         <button

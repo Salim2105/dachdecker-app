@@ -38,6 +38,14 @@ unabhängigen Prüfung.
 
 ## Weiter zu prüfen
 
+Stand 23. Oktober 2026: Der Nutzer stellt die weitere fachliche Quellenprüfung
+ausdrücklich zurück. Weitere App-Arbeiten konzentrieren sich auf Bedienung,
+Lernabläufe und technische Zuverlässigkeit. Der vorhandene Schulbuchinhalt ist
+die Arbeitsgrundlage; eine vollständige unabhängige Quellenprüfung wird nicht
+behauptet. Das Buchcover ist als „Dachdecker – Grundstufe und Fachstufen“,
+8. Auflage (HT), identifiziert; die vollständigen Buchdateien wurden noch nicht
+übertragen. Fehlende Buchdateien blockieren die technische Weiterentwicklung nicht.
+
 Stand 12. Oktober 2026: Der Nutzer hat die angefragten Originalquellen aktuell
 noch nicht zur Verfügung. Die vollständige fachliche Prüfung (Schritt 3) bleibt
 offen, bis passende Buchseiten/PDFs und aktuelle Fachquellen vorliegen. Die
