@@ -70,7 +70,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <span><strong>{item.label}</strong><small>{item.hinweis}</small></span>
           </Link>)}
         </nav>
-        <div className="nav-fuss"><p>Schritt für Schritt.<br />Vom Verstehen zum Können.</p><Link href="/fortschritt">Lernstand & Sicherungen →</Link></div>
+        <div className="nav-fuss"><div className="nav-motivation"><span aria-hidden="true">✦</span><strong>Dein Wissen.<br />Dein Handwerk.</strong><p>Ein kleiner Lernschritt bringt dich weiter.</p></div><Link href="/fortschritt">Dein Fortschritt & Sicherungen →</Link></div>
       </aside>
       <div className="werkstatt-arbeit" inert={overlay && !!werkzeug}>
         <header className="werkstatt-kopf">

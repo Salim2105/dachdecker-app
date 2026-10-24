@@ -2,6 +2,7 @@
 import { useEffect, useState, useSyncExternalStore, type CSSProperties } from "react";
 import Link from "next/link";
 import type { Aufgabe } from "@/content/schema";
+import { ExamLevelArt } from "@/components/practice/PracticeArtwork";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Wiederholung } from "@/components/session/Wiederholung";
 import { appStorage } from "@/lib/lernSpeicher";
@@ -106,8 +107,16 @@ function Pruefungsraum() {
     const active = attempt && attempt.submittedAt === null;
     const presets = getPruefungsteile();
     return <div>
-      <h1 className="text-3xl font-semibold tracking-tight">Prüfungsraum</h1>
-      <p className="mt-3 max-w-prose" style={muted}>Übe in deinem Tempo oder mit Zeitlimit. Du kannst zurückgehen, Fragen überspringen und markieren. Lösungen und Punkte siehst du nach der Abgabe.</p>
+      <section className="relative overflow-hidden rounded-[28px] p-6 sm:p-8" style={{ background: "var(--ink, #172c39)", color: "#fff9f0" }}>
+        <div className="absolute -right-12 -top-20 h-72 w-72 rounded-full" style={{ background: "#b7a1f3", opacity: .16 }} />
+        <div className="relative flex flex-wrap items-center justify-between gap-5"><div className="max-w-xl"><span className="mb-3 inline-flex rounded-full border px-3 py-1 text-xs font-semibold tracking-wider" style={{ color: "#d9ccff", borderColor: "#718198" }}>DEIN NÄCHSTER MEILENSTEIN</span><h1 className="text-3xl font-semibold tracking-tight" style={{ color: "#fff9f0" }}>Prüfungsraum</h1><p className="mt-3 max-w-prose leading-relaxed" style={{ color: "#dce5f3" }}>Finde heraus, was schon sitzt. Starte entspannt, wachse mit deinen Aufgaben und mach den nächsten Schritt Richtung Gesellenprüfung.</p></div><div className="rounded-2xl px-5 py-3" style={{ background: "#e6e2fb" }}><ExamLevelArt level={2} /></div></div>
+      </section>
+      <div className="mt-5 grid grid-cols-3 gap-3" aria-label="Dein Trainingsstand">
+        <div className="min-w-0 rounded-2xl border p-3 sm:p-4" style={panel}><span className="block text-2xl font-bold tabular-nums">{history.length}</span><span className="text-sm [overflow-wrap:anywhere]" style={muted}>Trainings abgeschlossen</span></div>
+        <div className="min-w-0 rounded-2xl border p-3 sm:p-4" style={panel}><span className="block text-2xl font-bold tabular-nums" style={{ color: "var(--accent)" }}>{history.length ? `${Math.max(...history.map((item) => scoreExam(item)?.percent ?? 0)).toFixed(0)} %` : "—"}</span><span className="text-sm [overflow-wrap:anywhere]" style={muted}>Dein bestes Ergebnis</span></div>
+        <div className="min-w-0 rounded-2xl border p-3 sm:p-4" style={panel}><span className="block text-2xl font-bold tabular-nums">{TRAINING_GOAL} %</span><span className="text-sm [overflow-wrap:anywhere]" style={muted}>Internes Trainingsziel</span></div>
+      </div>
+      <p className="mt-5 max-w-prose text-sm" style={muted}>Übe in deinem Tempo oder mit Zeitlimit. Du kannst zurückgehen, Fragen überspringen und markieren. Lösungen und Punkte siehst du nach der Abgabe.</p>
       {alert}
       {active && <section className="my-5 rounded-2xl border p-5" style={panel} aria-label="Laufendes Training">
         <h2 className="text-lg font-semibold">Dein Training ist gespeichert</h2>
@@ -118,8 +127,8 @@ function Pruefungsraum() {
         <input type="checkbox" className="h-5 w-5 accent-[var(--accent)]" checked={timed} onChange={(e) => setTimed(e.target.checked)} />
         Mit Zeitlimit trainieren <span style={muted}>(freiwillig)</span>
       </label>
-      <h2 className="mt-8 text-xl font-semibold">LF7 · Dachentwässerung</h2>
-      <p className="mt-2" style={muted}>Drei redaktionell zugeordnete Stufen. Trainingsziel: {TRAINING_GOAL} % der Punkte. Keine offizielle Bestehensregel.</p>
+      <div className="mt-8 flex flex-wrap items-end justify-between gap-3"><div><span className="text-xs font-bold tracking-wider" style={{ color: "var(--accent)" }}>DREI STUFEN. DEIN WEG.</span><h2 className="mt-1 text-2xl font-semibold tracking-tight">LF7 · Dachentwässerung</h2></div><span className="rounded-full border px-3 py-1 text-sm" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>Vom Einstieg zum Transfer</span></div>
+      <p className="mt-2 text-sm" style={muted}>Drei redaktionell zugeordnete Stufen. Trainingsziel: {TRAINING_GOAL} % der Punkte. Keine offizielle Bestehensregel.</p>
       <div className="mt-5 grid gap-4 lg:grid-cols-3">{presets.filter((p) => p.stufe).map((p) => <PresetCard key={p.id} preset={p} timed={timed} disabled={Boolean(active)} onStart={start} />)}</div>
       <h2 className="mt-9 text-xl font-semibold">Gemischtes Training</h2>
       <p className="mt-2" style={muted}>Der übrige Aufgabenbestand bleibt als lernfeldübergreifender Mix verfügbar.</p>
@@ -189,7 +198,12 @@ function Pruefungsraum() {
 }
 
 function PresetCard({ preset, timed, disabled, onStart }: { preset: Pruefungsteil; timed: boolean; disabled: boolean; onStart: (preset: Pruefungsteil, time: number) => void }) {
-  return <article className="flex flex-col rounded-2xl border p-5" style={panel}><h3 className="text-xl font-semibold">{preset.titel}</h3><p className="mt-2 font-medium" style={{ color: "var(--accent)" }}>{preset.anzahl} Aufgaben · {timed ? `${preset.minuten} Minuten` : "ohne Zeitlimit"}</p><p className="mb-5 mt-3 flex-1" style={muted}>{preset.beschreibung}</p><button className={buttonClass} style={primary} disabled={disabled} onClick={() => onStart(preset, Date.now())}>{preset.titel} starten</button></article>;
+  const level = preset.stufe === "grundlagen" ? 0 : preset.stufe === "anwendung" ? 1 : 2;
+  const farbe = preset.stufe ? ["#daf2eb", "#ffe6cb", "#e6e2fb"][level] : "var(--surface-2)";
+  return <article className="group flex min-w-0 flex-col overflow-hidden rounded-[24px] border transition-transform motion-safe:hover:-translate-y-1" style={{ ...panel, boxShadow: "0 4px 0 color-mix(in srgb, var(--border) 50%, transparent)" }}>
+    {preset.stufe && <div className="flex items-center justify-between gap-2 px-5 pt-4" style={{ background: farbe }}><span className="self-start rounded-full bg-white/70 px-3 py-1 text-xs font-bold tracking-wide" style={{ color: "#24344e" }}>STUFE {level + 1}</span><ExamLevelArt level={level} /></div>}
+    <div className="flex flex-1 flex-col p-5"><h3 className="text-xl font-semibold leading-snug">{preset.titel}</h3><div className="mt-3 flex flex-wrap gap-2"><span className="rounded-lg border px-2.5 py-1 text-xs font-semibold" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>{preset.anzahl} Aufgaben</span><span className="rounded-lg border px-2.5 py-1 text-xs font-semibold" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>{timed ? `${preset.minuten} Minuten` : "ohne Zeitlimit"}</span></div><p className="mb-5 mt-3 flex-1 text-sm leading-relaxed" style={muted}>{preset.beschreibung}</p><button className={buttonClass} style={preset.stufe ? { background: farbe, color: "#24344e", borderColor: "transparent" } : primary} disabled={disabled} onClick={() => onStart(preset, Date.now())}>{preset.titel} starten</button></div>
+  </article>;
 }
 
 /** Controlled inputs: navigating never remounts or randomizes the answers. No explanations are rendered here. */
@@ -213,11 +227,9 @@ function ExamResult({ attempt, onMenu, onPractice, onReflection }: { attempt: Ex
   return <div>
     <p className="font-medium" style={muted}>{attempt.preset.titel} · {new Date(attempt.submittedAt!).toLocaleString("de-DE")}</p>
     <h1 className="mt-2 text-3xl font-semibold">Deine Auswertung</h1>
-    <section className="mt-5 rounded-2xl border p-6" style={panel}>
-      <p className="text-4xl font-semibold" style={{ color: score.goalReached ? "var(--ok)" : "var(--accent)" }}>{score.percent.toFixed(0)} %</p>
-      <p className="mt-3 text-lg font-medium">{score.earned} von {score.possible} Punkten · {score.lost} Fehlerpunkte</p>
-      <p className="mt-2">{score.goalReached ? "Trainingsziel erreicht." : "Dein nächstes Ziel: gezielt nacharbeiten und erneut üben."}</p>
-      <p className="mt-2" style={muted}>Trainingsziel {TRAINING_GOAL} %. Fehlerpunkte = mögliche Punkte − erreichte Punkte. Das ist keine offizielle Bestehensregel.</p>
+    <section className="relative mt-5 overflow-hidden rounded-[28px] border p-6 sm:p-8" style={panel}>
+      <div className="absolute -right-14 -top-20 h-64 w-64 rounded-full" style={{ background: score.goalReached ? "var(--tint-teal, #daf2eb)" : "var(--tint-orange, #ffe6cb)", opacity: .65 }} />
+      <div className="relative flex flex-wrap items-center gap-6"><div className="relative grid h-40 w-40 shrink-0 place-items-center"><svg width="160" height="160" viewBox="0 0 160 160" aria-hidden="true" className="absolute inset-0"><circle cx="80" cy="80" r="66" fill="none" stroke="var(--surface-2)" strokeWidth="13" /><circle cx="80" cy="80" r="66" fill="none" stroke={score.goalReached ? "var(--ok)" : "var(--accent)"} strokeWidth="13" strokeLinecap="round" strokeDasharray={`${score.percent / 100 * 414.69} 414.69`} transform="rotate(-90 80 80)" /></svg><p className="text-3xl font-bold tabular-nums" style={{ color: score.goalReached ? "var(--ok)" : "var(--accent)" }}>{score.percent.toFixed(0)} %</p></div><div className="min-w-0 flex-1"><span className="inline-flex rounded-full px-3 py-1 text-xs font-bold tracking-wide" style={{ background: score.goalReached ? "var(--ok-soft)" : "var(--accent-soft)", color: score.goalReached ? "var(--ok)" : "var(--accent)" }}>{score.goalReached ? "MEILENSTEIN GESCHAFFT" : "DEIN NÄCHSTER SCHRITT"}</span><p className="mt-3 text-xl font-semibold">{score.earned} von {score.possible} Punkten · {score.lost} Fehlerpunkte</p><p className="mt-2 leading-relaxed">{score.goalReached ? "Trainingsziel erreicht." : "Dein nächstes Ziel: gezielt nacharbeiten und erneut üben."}</p><p className="mt-3 text-sm leading-relaxed" style={muted}>Trainingsziel {TRAINING_GOAL} %. Fehlerpunkte = mögliche Punkte − erreichte Punkte. Das ist keine offizielle Bestehensregel.</p></div></div>
     </section>
     <section className="mt-7" aria-labelledby="exam-next-title"><h2 id="exam-next-title" className="text-xl font-semibold">Deine nächsten Übungen</h2>{missed.length === 0 ? <p className="mt-3" style={muted}>Alle Aufgaben vollständig gelöst. Wiederhole die Inhalte in einigen Tagen oder wähle eine andere Stufe.</p> : <div className="mt-4 grid gap-3 sm:grid-cols-2">{topics.filter((t) => t.taskIds.length).map((topic) => <div key={`${topic.lernfeld}/${topic.thema}`} className="rounded-xl border p-4" style={panel}><h3 className="font-semibold">{topic.thema}</h3><p className="my-2" style={muted}>{topic.earned}/{topic.possible} Punkte · {topic.taskIds.length} Aufgabe{topic.taskIds.length === 1 ? "" : "n"} nacharbeiten</p><button className="font-semibold underline underline-offset-4" style={{ color: "var(--accent)" }} onClick={() => onPractice(attempt.questions.filter((q) => topic.taskIds.includes(q.task.id)))}>Dieses Thema üben →</button></div>)}</div>}</section>
     <section className="mt-8" aria-labelledby="exam-review-title"><h2 id="exam-review-title" className="text-xl font-semibold">Antworten und Lösungen</h2><div className="mt-4 flex flex-col gap-3">{attempt.questions.map((q, index) => <details key={q.task.id} className="rounded-xl border p-4" style={panel}><summary className="cursor-pointer font-medium">{index + 1}. {q.task.thema} · {scoreExamQuestion(q, attempt.answers[q.task.id])}/{q.maxPoints} Punkte</summary><div className="mt-4 space-y-3 leading-relaxed"><p className="font-medium">{q.prompt}</p><p><strong>Deine Antwort:</strong> {answerText(q, attempt.answers[q.task.id])}</p><p className="whitespace-pre-line"><strong>Lösung:</strong> {solutionText(q)}</p><p>{q.task.erklaerung}</p><p style={muted}>Quelle: {q.task.quelle} · Inhaltsversion {q.taskVersion}</p></div></details>)}</div></section>

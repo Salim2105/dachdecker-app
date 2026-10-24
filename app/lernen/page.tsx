@@ -2,114 +2,86 @@
 import Link from "next/link";
 import { getLernfelder, getAufgaben } from "@/lib/content";
 import { useProgress } from "@/components/useProgress";
-import { LernfeldCard } from "@/components/LernfeldCard";
 import { Fortsetzen } from "@/components/Fortsetzen";
 import { useState } from "react";
 import { lernStatus } from "@/lib/lernstand";
-import type { AufgabenFortschritt } from "@/content/schema";
+import type { AufgabenFortschritt, Lernfeld } from "@/content/schema";
+import { LearningArtwork } from "@/components/learning/LearningArtwork";
+import { learningTone } from "@/components/learning/learningDesign";
+import styles from "@/components/learning/Learning.module.css";
 
 const GRUPPEN = [
-  { key: 1, label: "1. Lehrjahr" },
-  { key: 2, label: "2. Lehrjahr" },
-  { key: 3, label: "3. Lehrjahr" },
+  { key: 1, label: "1. Lehrjahr", beschreibung: "Dein Fundament fürs Handwerk" },
+  { key: 2, label: "2. Lehrjahr", beschreibung: "Zusammenhänge verstehen und anwenden" },
+  { key: 3, label: "3. Lehrjahr", beschreibung: "Mehr Verantwortung. Mehr Können." },
 ];
-
 function anteil(fortschritt: Record<string, AufgabenFortschritt>, ids: string[], jetzt: number): number {
   if (ids.length === 0) return 0;
-  const done = ids.filter((id) => lernStatus(fortschritt[id], jetzt) === "gefestigt").length;
-  return done / ids.length;
+  return ids.filter((id) => lernStatus(fortschritt[id], jetzt) === "gefestigt").length / ids.length;
 }
 
 export default function LernenPage() {
   const { fortschritt } = useProgress();
   const [jetzt] = useState(() => Date.now());
+  const [lehrjahr, setLehrjahr] = useState<number | "alle">("alle");
   const alle = getLernfelder();
   const wiso = alle.filter((lf) => lf.id === "wiso");
   const lernfelder = alle.filter((lf) => lf.id !== "wiso");
 
-  const karte = (lfId: string) => {
-    const aufgaben = getAufgaben(lfId);
-    return {
-      anzahl: aufgaben.length,
-      anteil: anteil(
-        fortschritt,
-        aufgaben.map((a) => a.id),
-        jetzt,
-      ),
-    };
-  };
-
-  return (
-    <div>
-      <h1 className="text-[26px] font-semibold tracking-tight">Dein Lernpfad</h1>
-      <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
-        Deine Lernfelder, unterteilt in Kapitel und kurze Einheiten
-      </p>
-      <div className="mt-4">
-        <Link href="/lernen/lf07" className="werkstatt-karte mb-4 block"><span className="text-sm" style={{color:"var(--accent)"}}>NEUE LERNWERKSTATT</span><h2 className="mt-2 text-xl font-semibold">LF7 · Dachentwässerung Schritt für Schritt</h2><p className="mt-2" style={{color:"var(--text-muted)"}}>Sechs Kapitel · 18 Einheiten · Lernziele, Begriffe und aktive Aufgaben</p><span className="mt-3 block underline" style={{color:"var(--accent)"}}>Mit dem Wasserweg beginnen →</span></Link>
-        <Link href="/lernweg" className="my-4 block rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
-          <span className="block font-semibold">Mit dem geführten Lernweg starten</span>
-          <span className="mt-1 block" style={{ color: "var(--text-muted)" }}>Sechs Grundlagen-Einheiten: verstehen, erinnern, rechnen und anwenden.</span>
-        </Link>
-        <Fortsetzen />
+  function lernfeldKarte(lf: Lernfeld, index: number) {
+    const aufgaben = getAufgaben(lf.id);
+    const gefestigt = anteil(fortschritt, aufgaben.map((a) => a.id), jetzt);
+    return <Link key={lf.id} href={`/lernen/${lf.id}`} className={styles.field} style={learningTone(index)}>
+      <div className={styles.fieldTop}>
+        <span className={styles.numberBadge}>{lf.nr}</span>
+        <LearningArtwork variant={index} className={styles.fieldArt} />
       </div>
-      <div
-        className="mt-3 flex gap-2.5 rounded-[var(--r-md)] px-3 py-2.5 text-sm leading-relaxed"
-        style={{ background: "var(--surface-2)", color: "var(--text-muted)" }}
-      >
-        <svg
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="var(--accent)"
-          strokeWidth="1.9"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-hidden="true"
-          className="mt-0.5 flex-shrink-0"
-        >
-          <circle cx="12" cy="12" r="9" />
-          <path d="M12 11v5M12 7.5h.01" />
-        </svg>
-        <p>Empfohlen: Lernfeld 7 vor 8–10 lernen. Gesperrt ist nichts — lerne in deinem Tempo.</p>
+      <h3>{lf.titel}</h3>
+      <span className={styles.fieldMeta}>{aufgaben.length ? `${aufgaben.length} Aufgaben` : `${lf.themen.length} Themen`}{gefestigt > 0 ? ` · ${Math.round(gefestigt * aufgaben.length)} gefestigt` : " · Bereit für deinen ersten Schritt"}</span>
+      <div className={styles.fieldBottom}>
+        <div className={styles.progressTrack} role="progressbar" aria-label={`${lf.titel}: gefestigte Aufgaben`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(gefestigt * 100)}><span className={styles.progressFill} style={{ width: `${gefestigt * 100}%` }} /></div>
+        <span className={styles.arrow} aria-hidden="true">→</span>
       </div>
+    </Link>;
+  }
 
-      {GRUPPEN.map((g) => {
-        const items = lernfelder.filter((lf) => lf.lehrjahr === g.key);
-        if (items.length === 0) return null;
-        return (
-          <section key={g.key} className="mt-6">
-            <h2 className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-              {g.label}
-            </h2>
-            <div className="grid gap-3 xl:grid-cols-2">
-              {items.map((lf) => {
-                const k = karte(lf.id);
-                return (
-                  <LernfeldCard key={lf.id} lernfeld={lf} fortschritt={k.anteil} anzahlAufgaben={k.anzahl} />
-                );
-              })}
-            </div>
-          </section>
-        );
-      })}
-
-      {wiso.length > 0 && (
-        <section className="mt-6">
-          <h2 className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-            Wirtschafts- und Sozialkunde
-          </h2>
-          <div className="grid gap-3 xl:grid-cols-2">
-            {wiso.map((lf) => {
-              const k = karte(lf.id);
-              return (
-                <LernfeldCard key={lf.id} lernfeld={lf} fortschritt={k.anteil} anzahlAufgaben={k.anzahl} />
-              );
-            })}
-          </div>
-        </section>
-      )}
+  return <div>
+    <header className={styles.pathHero}>
+      <div><span className={styles.eyebrow}>Wissen wird Handwerk</span><h1>Dein Lernpfad</h1><p>Vom ersten Fachbegriff bis zur fertigen Dachkonstruktion. Entdecke dein nächstes Kapitel.</p></div>
+      <LearningArtwork variant={5} className={styles.heroArt} />
+    </header>
+    <Link href="/lernen/lf07" className={styles.feature}>
+      <div>
+        <span className={styles.chip}><span className={styles.chipDot} aria-hidden="true" /> Dein Einstieg in die Lernwerkstatt</span>
+        <h2>LF7 · Dem Wasser<br />auf der Spur.</h2>
+        <p>Sechs Kapitel, 18 kurze Einheiten. Verstehen, selbst ausprobieren und Schritt für Schritt sicherer werden.</p>
+        <span className={styles.featureButton}>Mit dem Wasserweg beginnen <span aria-hidden="true">→</span></span>
+      </div>
+      <LearningArtwork variant={0} className={styles.heroArt} />
+    </Link>
+    <Fortsetzen />
+    <div className={styles.shortcuts}>
+      <Link href="/lernweg" className={styles.shortcut}>
+        <span className={styles.shortcutIcon} aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M5 19V7a2 2 0 0 1 2-2h12M5 19h12a2 2 0 0 0 2-2V5M5 19l4-4m4-4 3-3"/><circle cx="9" cy="15" r="1"/></svg></span>
+        <span><strong>Lieber mit Begleitung starten?</strong><small>Sechs geführte Grundlagen-Einheiten →</small></span>
+      </Link>
     </div>
-  );
+    <div className={styles.filters} role="group" aria-label="Lernfelder nach Lehrjahr filtern">
+      <button aria-pressed={lehrjahr === "alle"} onClick={() => setLehrjahr("alle")}>Alle Lernfelder</button>
+      {GRUPPEN.map((g) => <button key={g.key} aria-pressed={lehrjahr === g.key} onClick={() => setLehrjahr(g.key)}>{g.label}</button>)}
+    </div>
+    {GRUPPEN.filter((g) => lehrjahr === "alle" || lehrjahr === g.key).map((g) => {
+      const items = lernfelder.filter((lf) => lf.lehrjahr === g.key);
+      if (!items.length) return null;
+      return <section key={g.key}>
+        <div className={styles.groupTitle}><div><h2>{g.label}</h2><span>{g.beschreibung}</span></div><span>{items.length} Lernbereiche</span></div>
+        <div className={styles.fields}>{items.map((lf, index) => lernfeldKarte(lf, index + g.key - 1))}</div>
+      </section>;
+    })}
+    {lehrjahr === "alle" && wiso.length > 0 && <section>
+      <div className={styles.groupTitle}><h2>Wirtschafts- und Sozialkunde</h2><span>Wissen über den Beruf hinaus</span></div>
+      <div className={styles.fields}>{wiso.map((lf, index) => lernfeldKarte(lf, index + 2))}</div>
+    </section>}
+    <p className={`${styles.hint} mt-6`}><span aria-hidden="true">→</span><span>Unser Tipp: Lernfeld 7 bereitet dich auf LF8–10 vor. Du kannst jeden Bereich öffnen und in deinem Tempo lernen.</span></p>
+  </div>;
 }

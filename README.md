@@ -2,6 +2,8 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
+Neu in 0.3: [Illustrierte Lernwelten und gestalteter Lernpfad](docs/gestaltung-0.3.md).
+
 ## Die vier Arbeitsbereiche
 
 - **Meine Übersicht:** Weiterlernen, Tagesempfehlung und nächste Wiederholungen.

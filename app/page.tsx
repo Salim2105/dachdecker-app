@@ -8,6 +8,12 @@ import { datumStore, lernzeitStore } from "@/lib/appStores";
 import { serie } from "@/lib/serie";
 import { pruefungsreife } from "@/lib/reifegrad";
 import { appStorage } from "@/lib/lernSpeicher";
+import { getCurriculum } from "@/lib/curriculum";
+import { ladeKursStand } from "@/lib/kursStand";
+import { Arrow } from "@/components/design/Arrow";
+import { LernIllustration } from "@/components/design/LernIllustration";
+
+const WOCHE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 
 export default function Home() {
   const { fortschritt } = useProgress();
@@ -17,38 +23,46 @@ export default function Home() {
   const [letzteEinheit] = useState(() => {
     try { const s = JSON.parse(appStorage.getItem("lernwerkstatt-zuletzt") || "null"); return s && typeof s.lfId === "string" ? s : null; } catch { return null; }
   });
+  const [erledigt] = useState(() => getCurriculum("lf07")!.kapitel.flatMap((k) => k.einheiten).filter((e) => ladeKursStand(e).abgeschlossen).length);
   const stand = pruefungsreife(fortschritt, now);
   const tage = serie(fortschritt, now);
-  const hatStand = Object.keys(fortschritt).length > 0 || letzteEinheit;
+  const bearbeitet = Object.keys(fortschritt).length;
+  const hatStand = bearbeitet > 0 || letzteEinheit;
   const ziel = letzteEinheit ? `/lernen/${letzteEinheit.lfId}${typeof letzteEinheit.unitId === "string" ? `#${letzteEinheit.unitId}` : ""}` : hatStand ? "/heute" : "/lernen/lf07";
   const tageBis = datum ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / 86400000) : null;
-  return <div>
-    <section className="werkstatt-hero" aria-labelledby="willkommen">
-      <div>
-        <p className="eyebrow">DEINE DACHDECKER-LERNWERKSTATT</p>
-        <h1 id="willkommen">Ein kleiner Schritt.<br />Ein Stück mehr Können.</h1>
-        <p>{stand.faellig ? `${stand.faellig} Aufgaben warten auf eine Wiederholung. Wir stellen dir eine überschaubare Runde zusammen.` : "Verstehe einen Zusammenhang, probiere ihn selbst aus und wende ihn auf der Baustelle an."}</p>
-        <Link className="hauptaktion mt-6" href={ziel}>{hatStand ? "Weiterlernen" : "Mit LF7 starten"} <span className="ml-3" aria-hidden="true">→</span></Link>
-        <p className="text-sm">{hatStand ? `Dein Tagesziel: ${minuten} Minuten. Pausen sind jederzeit möglich.` : "Dachentwässerung · sechs Kapitel · kurze Einheiten"}</p>
+  const lerntage = new Set(Object.values(fortschritt).flatMap((f) => [f.gesehenAm, ...(f.verlauf?.map((v) => v.am) ?? [])]).map((t) => new Date(t).toLocaleDateString("de-DE")));
+  const heute = new Date(now);
+  const montag = new Date(heute); montag.setDate(heute.getDate() - (heute.getDay() + 6) % 7);
+  return <div className="home-dashboard">
+    <div className="home-begruessung"><div><span className="home-kicker">DEIN PLATZ ZUM WEITERKOMMEN</span><h1>Schön, dass du da bist.</h1></div><Link href="/fortschritt" className="home-serie"><span aria-hidden="true">✦</span><span>{tage >= 2 ? `${tage} Lerntage in Folge` : bearbeitet ? "Dein Lernweg wächst" : "Dein erster Schritt wartet"}</span><Arrow /></Link></div>
+    <section className="home-hero" aria-labelledby="willkommen">
+      <div className="home-hero-text"><span className="home-hero-chip"><span aria-hidden="true">✦</span> MIT KOPF. MIT HAND. MIT DIR.</span>
+        <h2 id="willkommen">Dein Handwerk.<br /><span>Dein nächstes Level.</span></h2>
+        <p>{stand.faellig ? `${stand.faellig} Aufgaben warten auf dich. Frische dein Wissen auf und mach den nächsten Schritt.` : "Vom ersten Fachbegriff bis zur Gesellenprüfung: Entdecke, probiere aus und bring dein Dachwissen nach oben."}</p>
+        <Link className="home-hero-cta" href={ziel}>{hatStand ? "Weiterlernen" : "Mit LF7 starten"}<Arrow /></Link>
+        <div className="home-hero-detail"><span className="home-zeit-icon" aria-hidden="true">◷</span>{hatStand ? `${minuten} Minuten für deinen nächsten Schritt` : "Kleine Einheiten. Echte Aha-Momente."}</div>
       </div>
-      <svg viewBox="0 0 200 180" width="180" height="180" fill="none" aria-hidden="true">
-        <path d="M14 91L101 22l85 69M29 87v70h142V87M101 23v134M42 68l129 64M72 45l99 49M143 54L29 111M173 78L29 150" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" />
-        <path d="M18 102h25v49c0 9 9 12 16 12" stroke="var(--ok)" strokeWidth="5" strokeLinecap="round" />
-        <circle cx="157" cy="143" r="26" fill="var(--surface)" stroke="var(--accent)" strokeWidth="2" /><path d="M145 144l8 8 16-18" stroke="var(--ok)" strokeWidth="4" strokeLinecap="round" />
-      </svg>
+      <div className="home-hero-art"><span className="home-art-label"><span aria-hidden="true">✓</span> VERSTEHEN. ANPACKEN. KÖNNEN.</span><LernIllustration motiv="dach" /><span className="home-art-sticker"><strong>Schritt für Schritt</strong><span>wird aus Wissen Handwerk.</span></span></div>
+      <span className="home-hero-grain" aria-hidden="true" />
     </section>
-    <div className="statistik-zeile"><span><strong>{stand.faellig}</strong> Wiederholungen fällig</span><span><strong>{Object.keys(fortschritt).length}</strong> Aufgaben schon bearbeitet</span>{tage >= 2 && <span><strong>{tage}</strong> Lerntage in Folge</span>}</div>
-    <Fortsetzen />
-    <div className="werkstatt-kopfzeile"><h2>Dein nächster Lernschritt</h2><Link href="/heute" className="text-sm underline" style={{ color: "var(--accent)" }}>Heutige Aufgaben ansehen →</Link></div>
-    <div className="werkstatt-raster">
-      <section className="werkstatt-karte"><h3>Heute in deinem Tempo</h3><p>Fällige Aufgaben zuerst, danach etwas Neues. Antworten und verwendete Hilfen bestimmen die nächste Wiederholung.</p><div className="mt-4"><LernzeitWahl /></div><Link href="/heute">Tagesempfehlung öffnen →</Link></section>
-      <section className="werkstatt-karte"><span className="text-sm" style={{ color: "var(--accent)" }}>LF7 · Dachentwässerung</span><h3 className="mt-2">Dem Wasser auf der Spur</h3><p>Vom Wasserweg über die Materialwahl bis zum Projekt. 18 kurze Einheiten mit Kontrollaufgaben und Baustellenfällen.</p><Link href="/lernen/lf07">Kapitel entdecken →</Link></section>
+    <div className="home-stat-cards" aria-label="Dein Lernstand">
+      <div className="home-stat"><span className="home-stat-icon home-icon-orange" aria-hidden="true">↻</span><span><strong>{stand.faellig}</strong><span>Wiederholungen fällig</span></span><Link href="/heute" aria-label="Fällige Aufgaben wiederholen"><Arrow /></Link></div>
+      <div className="home-stat"><span className="home-stat-icon home-icon-teal" aria-hidden="true">✓</span><span><strong>{bearbeitet}</strong><span>Aufgaben bearbeitet</span></span><Link href="/fortschritt" aria-label="Deinen Aufgabenfortschritt ansehen"><Arrow /></Link></div>
+      <div className="home-stat"><span className="home-stat-icon home-icon-violet" aria-hidden="true">⚑</span><span><strong>{erledigt}<small> / 18</small></strong><span>LF7-Einheiten geschafft</span></span><Link href="/lernen/lf07" aria-label="Zu deinen LF7-Einheiten"><Arrow /></Link></div>
     </div>
-    <div className="werkstatt-kopfzeile"><h2>Aus Wissen wird Praxis</h2></div>
-    <div className="werkstatt-raster">
-      <section className="werkstatt-karte"><h3>Etwas selbst ausprobieren</h3><p>Bauteile zuordnen, Abläufe ordnen, Fehler erkennen oder eine Zeichnung anfertigen.</p><Link href="/ueben">Zum Übungsraum →</Link></section>
-      <section className="werkstatt-karte"><h3>Deinen Stand einschätzen</h3><p>Grundlagen, Anwendung oder prüfungsnah trainieren. Danach siehst du, welche Themen du gezielt üben kannst.</p><Link href="/pruefung">Zum Prüfungsraum →</Link></section>
+    <div className="home-resume"><Fortsetzen /></div>
+    <div className="werkstatt-kopfzeile home-section-title"><div><span className="home-kicker">KLEIN ANFANGEN. WEIT KOMMEN.</span><h2>Was nimmst du dir heute vor?</h2></div><Link href="/lernen">Alle Lernfelder <Arrow /></Link></div>
+    <div className="home-next-grid">
+      <Link href="/lernen/lf07" className="home-mission-card"><div className="home-mission-copy"><span className="home-small-badge">DEINE LERNMISSION</span><span className="home-mission-meta">LF7 · DACHENTWÄSSERUNG</span><h3>Dem Wasser<br />auf der Spur.</h3><p>Verfolge den Wasserweg. Lerne die Bauteile kennen. Löse deinen ersten Baustellenfall.</p><span className="home-mission-progress"><span><span style={{width:`${erledigt / 18 * 100}%`}} /></span><small>{erledigt} von 18 Einheiten</small></span><span className="home-card-cta">Kapitel entdecken <span aria-hidden="true">→</span></span></div><LernIllustration motiv="wasser" className="home-mission-art" /></Link>
+      <section className="home-time-card"><div className="home-time-heading"><span className="home-stat-icon home-icon-orange" aria-hidden="true">◷</span><span className="home-kicker">DEINE ZEIT. DEIN TEMPO.</span></div><h3>Auch kurz zählt.</h3><p>Eine kleine Runde passt fast immer. Wir wählen die passenden Aufgaben für dich aus.</p><LernzeitWahl /><Link href="/heute" className="home-outline-cta">Tagesempfehlung öffnen <span aria-hidden="true">→</span></Link><span className="home-time-doodle" aria-hidden="true">✦</span></section>
     </div>
-    <details className="mt-7 werkstatt-karte"><summary className="cursor-pointer font-semibold">Prüfungstermin und Lernstand</summary><div className="mt-4"><label className="block">Mein Prüfungstermin<input type="date" value={datum} onChange={(e) => datumStore.set(e.target.value)} className="mt-2 block rounded-lg border p-3" style={{ borderColor: "var(--border)", background: "var(--surface-2)" }} /></label>{tageBis !== null && <p>{tageBis >= 0 ? `Noch ${tageBis} Tage bis zu deinem Termin.` : "Dein gespeicherter Prüfungstermin liegt in der Vergangenheit."}</p>}<Link href="/fortschritt">Fortschritt, Einstellungen & Datensicherung →</Link></div></details>
+    <div className="werkstatt-kopfzeile home-section-title"><div><span className="home-kicker">ABWECHSLUNG TUT DEM KOPF GUT</span><h2>Heute mal anders lernen.</h2></div><Link href="/ueben">Zum Übungsraum <Arrow /></Link></div>
+    <div className="home-discover-grid">
+      <Link className="home-discover home-discover-orange" href="/lernen/lf07"><div className="home-discover-art"><LernIllustration motiv="quiz" /><span className="home-discover-tag">MITDENKEN</span></div><div className="home-discover-copy"><h3>Kopf an. Quiz los.</h3><p>Zuordnen, Knobeln und Zusammenhänge entdecken.</p><span>Aktive Aufgaben entdecken <Arrow /></span></div></Link>
+      <Link className="home-discover home-discover-violet" href="/zeichnen"><div className="home-discover-art"><LernIllustration motiv="zeichnen" /><span className="home-discover-tag">AUSPROBIEREN</span></div><div className="home-discover-copy"><h3>Dein Strich zählt.</h3><p>Skizzieren, vergleichen und die nächste Idee festhalten.</p><span>Zeichenwerkstatt öffnen <Arrow /></span></div></Link>
+      <Link className="home-discover home-discover-teal" href="/pruefung"><div className="home-discover-art"><LernIllustration motiv="pruefung" /><span className="home-discover-tag">DURCHSTARTEN</span></div><div className="home-discover-copy"><h3>Zeig, was du kannst.</h3><p>Drei Trainingsstufen. Dein Tempo. Klare nächste Schritte.</p><span>Zum Prüfungsraum <Arrow /></span></div></Link>
+    </div>
+    <section className="home-week"><div className="home-week-copy"><span className="home-kicker">DRANBLEIBEN FÜHLT SICH GUT AN</span><h2>Deine Woche. Deine Schritte.</h2><p>Jeder ausgefüllte Tag steht für eine bearbeitete Aufgabe. Auch nach einer Pause geht dein Lernweg weiter.</p></div><div className="home-week-days" aria-label="Lerntage dieser Woche">{WOCHE.map((name,index)=>{const tag=new Date(montag);tag.setDate(montag.getDate()+index);const aktiv=lerntage.has(tag.toLocaleDateString("de-DE"));const istHeute=tag.toLocaleDateString("de-DE")===heute.toLocaleDateString("de-DE");return <div key={name} className={`${aktiv ? "gelernt" : ""} ${istHeute ? "heute" : ""}`} aria-label={`${name}, ${tag.toLocaleDateString("de-DE")}: ${aktiv ? "gelernt" : "noch keine Aufgabe"}${istHeute ? ", heute" : ""}`}><span>{name}</span><span>{aktiv ? "✓" : istHeute ? "·" : ""}</span></div>;})}</div><span className="home-week-star" aria-hidden="true">✦</span></section>
+    <details className="home-exam-date"><summary><span aria-hidden="true">⚑</span> Prüfungstermin und Lernstand <span aria-hidden="true">＋</span></summary><div><label>Mein Prüfungstermin<input type="date" value={datum} onChange={(e)=>datumStore.set(e.target.value)} /></label>{tageBis!==null&&<p>{tageBis>=0?`Noch ${tageBis} Tage bis zu deinem Termin.`:"Dein gespeicherter Prüfungstermin liegt in der Vergangenheit."}</p>}<Link href="/fortschritt">Fortschritt, Einstellungen & Datensicherung →</Link></div></details>
   </div>;
 }

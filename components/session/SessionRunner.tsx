@@ -134,9 +134,10 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   }
 
   if (!aktuell) return <p>Für diese Sitzung sind keine Aufgaben vorhanden.</p>;
+  const rueckmeldung = (nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index];
 
   return (
-    <div>
+    <div className="session-werkstatt">
       {nacharbeit && (
         <div className="mb-4 rounded-xl p-4" style={{ background: "var(--accent-soft)" }}>
           <h1 className="text-lg font-semibold">Fehler nacharbeiten</h1>
@@ -146,11 +147,12 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
           </p>
         </div>
       )}
-      <div className="mb-4 flex items-center gap-3">
+      <div className="session-auftakt"><span className="session-symbol" aria-hidden="true">✦</span><div><span>DEIN TRAININGSLAUF</span><strong>{nacharbeit ? "Noch einmal ausprobieren." : "Ein Schritt nach dem anderen."}</strong></div><span className="session-thema">{aktuell.thema}</span></div>
+      <div className="mb-5 flex items-center gap-3">
         <div className="h-1.5 flex-1 overflow-hidden rounded-full" style={{ background: "var(--surface-2)" }}>
           <div
             className="h-full rounded-full"
-            style={{ width: `${((index + (beantwortet ? 1 : 0)) / liste.length) * 100}%`, background: "var(--accent)" }}
+            style={{ width: `${((index + (beantwortet ? 1 : 0)) / liste.length) * 100}%`, background: "var(--brand-teal)" }}
           />
         </div>
         <span className="text-xs" style={{ color: "var(--text-muted)" }}>
@@ -162,17 +164,19 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         <TonSchalter />
       </div>
 
-      {antwortWiederhergestellt ? <div className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
+      <div className="session-frage">{antwortWiederhergestellt ? <div className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
         <h2 className="font-semibold">Diese Aufgabe ist bereits bewertet</h2>
         <p className="mt-2 text-sm">Thema: {aktuell.thema}. Gespeicherte Bewertung: {({ richtig: "Richtig", teilweise: "Teilweise richtig", falsch: "Noch üben" })[(nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index]]}.</p>
         <p className="mt-2 text-sm">Du kannst die Erklärung noch einmal lesen und danach weitermachen. Deine Bewertung bleibt erhalten.</p>
         <Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} />
-      </div> : <AufgabenKontext.Provider value={lfId}><AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} /></AufgabenKontext.Provider>}
+      </div> : <AufgabenKontext.Provider value={lfId}><AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} /></AufgabenKontext.Provider>}</div>
+
+      {beantwortet && <div className={`session-feedback ${rueckmeldung === "richtig" ? "session-feedback-ok" : ""}`} role="status"><span aria-hidden="true">{rueckmeldung === "richtig" ? "✓" : "↻"}</span><div><strong>{rueckmeldung === "richtig" ? "Ein Schritt weiter!" : "Genau dafür übst du."}</strong><p>Vergleiche deine Antwort mit der Erklärung und nimm den nächsten Schritt mit.</p></div></div>}
 
       {beantwortet && (
         <button
           onClick={zumNaechsten}
-          className="mt-6 w-full rounded-xl py-3 font-medium"
+          className="hauptaktion mt-5 w-full"
           style={{ background: "var(--accent)", color: "var(--accent-text)" }}
         >
           {index < liste.length - 1 ? "Weiter" : !nacharbeit && offeneAufgaben.length > 0 ? "Fehler nacharbeiten" : "Ergebnis anzeigen"}
