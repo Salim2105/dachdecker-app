@@ -1,4 +1,5 @@
 "use client";
+import { appStorage } from "@/lib/lernSpeicher";
 import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Aufgabe } from "@/content/schema";
@@ -40,7 +41,7 @@ export default function HeutePage() {
     // Der gespeicherte Stand gehört zur alten Liste und würde mitten in die
     // neue springen.
     try {
-      localStorage.removeItem(`dd-session-${SESSION_ID}`);
+      appStorage.removeItem(`dd-session-${SESSION_ID}`);
     } catch {}
     setModus(m);
   };
@@ -50,7 +51,7 @@ export default function HeutePage() {
       <LernzeitWahl />
       <p className="mt-2 text-xs" style={{ color: "var(--text-muted)" }}>Eine laufende Runde bleibt erhalten. Die Zeitwahl gilt für die nächste Runde.</p>
       <button onClick={() => {
-        try { localStorage.removeItem(`dd-session-${SESSION_ID}`); } catch {}
+        try { appStorage.removeItem(`dd-session-${SESSION_ID}`); } catch {}
         setRunde((n) => n + 1);
       }} className="my-3 min-h-11 rounded-xl border px-4 text-sm" style={{ borderColor: "var(--border)" }}>
         Neue Runde mit gewählter Zeit

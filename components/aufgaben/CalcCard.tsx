@@ -1,4 +1,6 @@
 "use client";
+import { appStorage } from "@/lib/lernSpeicher";
+import { useAufgabenId, loescheAufgabenEntwurf, useAufgabenEntwurf, istText } from "@/components/useAufgabenEntwurf";
 import { useEffect, useMemo, useState } from "react";
 import type { CalcAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { wuerfleParameter, berechneSchritte, pruefeAntwort, ersetzePlatzhalter, rechne } from "@/lib/calc";
@@ -19,24 +21,25 @@ export function CalcCard({
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
+  const scopedId = useAufgabenId(aufgabe.id);
   // Gewürfelte Zahlen pro Aufgabe merken, damit ein Abstecher zum Rechner (und
   // zurück) NICHT neue Zahlen zieht — sonst wäre die schon gerechnete Antwort falsch.
-  const KEY = `dd-calc-${aufgabe.id}`;
+  const KEY = `dd-calc-${scopedId}`;
   const [werte, setWerte] = useState<Record<string, number>>(() => {
     if (typeof window !== "undefined") {
       try {
-        const s = JSON.parse(sessionStorage.getItem(KEY) || "null");
-        if (s && aufgabe.parameter.every((p) => typeof s[p.name] === "number")) return s;
+        const s = JSON.parse(appStorage.getItem(KEY) || "null");
+        if (s && aufgabe.parameter.every((p) => typeof s[p.name] === "number" && Number.isFinite(s[p.name]))) return s;
       } catch {}
     }
     return wuerfleParameter(aufgabe.parameter);
   });
   useEffect(() => {
     try {
-      sessionStorage.setItem(KEY, JSON.stringify(werte));
+      appStorage.setItem(KEY, JSON.stringify(werte));
     } catch {}
   }, [KEY, werte]);
-  const [eingabe, setEingabe] = useState("");
+  const [eingabe, setEingabe] = useAufgabenEntwurf(aufgabe.id, `${modus}-rechnung`, "", istText);
   const [geprueft, setGeprueft] = useState(false);
   const zahl = leseDezimalzahl(eingabe);
 
@@ -46,6 +49,7 @@ export function CalcCard({
 
   const pruefen = () => {
     if (geprueft || zahl === null) return;
+    loescheAufgabenEntwurf(scopedId);
     setGeprueft(true);
     const ok = pruefeAntwort(zahl, loesung.wert, aufgabe.toleranzProzent);
     const b: Bewertung = ok ? "richtig" : "falsch";
@@ -144,15 +148,15 @@ export function CalcCard({
         </div>
       ) : null}
 
-      {!geprueft && <NebenRechner onUebernehmen={setEingabe} />}
+      {!geprueft && <NebenRechner aufgabenId={aufgabe.id} onUebernehmen={setEingabe} />}
     </div>
   );
 }
 
 // Kleiner Rechner direkt in der Aufgabe — so muss man zum Rechnen nicht mehr
 // die Seite wechseln. Die große Rechner-Seite bleibt zusätzlich bestehen.
-function NebenRechner({ onUebernehmen }: { onUebernehmen: (wert: string) => void }) {
-  const [ausdruck, setAusdruck] = useState("");
+function NebenRechner({ aufgabenId, onUebernehmen }: { aufgabenId: string; onUebernehmen: (wert: string) => void }) {
+  const [ausdruck, setAusdruck] = useAufgabenEntwurf(aufgabenId, "nebenrechnung", "", istText);
   const ergebnis = rechne(ausdruck);
   return (
     <div

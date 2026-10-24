@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useAufgabenId, loescheAufgabenEntwurf, useAufgabenEntwurf, istText } from "@/components/useAufgabenEntwurf";
 import type { McAufgabe, Bewertung, AufgabeModus, BewertungsKontext } from "@/content/schema";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
 import { Buchbild } from "@/components/aufgaben/Buchbild";
@@ -15,10 +16,11 @@ export function McCard({
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
-  const [abruf, setAbruf] = useState<"frei" | "vergleich" | "auswahl">(modus === "pruefung" ? "auswahl" : "frei");
-  const [notiz, setNotiz] = useState("");
+  const scopedId = useAufgabenId(aufgabe.id);
+  const [abruf, setAbruf] = useAufgabenEntwurf<"frei" | "vergleich" | "auswahl">(aufgabe.id, `${modus}-abruf`, modus === "pruefung" ? "auswahl" : "frei", (v): v is "frei" | "vergleich" | "auswahl" => v === "frei" || v === "vergleich" || v === "auswahl");
+  const [notiz, setNotiz] = useAufgabenEntwurf(aufgabe.id, `${modus}-notiz`, "", istText);
   const mehrfach = aufgabe.korrekt.length > 1;
-  const [gewaehlt, setGewaehlt] = useState<Set<number>>(new Set());
+  const [gewaehlt, setGewaehlt] = useAufgabenEntwurf<Set<number>>(aufgabe.id, `${modus}-auswahl`, new Set(), (v): v is Set<number> => v instanceof Set && [...v].every((n) => Number.isInteger(n) && n >= 0 && n < aufgabe.optionen.length));
   const [geprueft, setGeprueft] = useState(false);
   const [bewertung, setBewertung] = useState<Bewertung | null>(null);
 
@@ -34,6 +36,7 @@ export function McCard({
 
   const pruefen = () => {
     if (geprueft) return;
+    loescheAufgabenEntwurf(scopedId);
     setGeprueft(true);
     const korrektSet = new Set(aufgabe.korrekt);
     const gleich =
@@ -60,7 +63,8 @@ export function McCard({
   if (abruf !== "auswahl") {
     const selbstBewerten = (b: Bewertung) => {
       if (geprueft) return;
-      setGeprueft(true);
+      loescheAufgabenEntwurf(scopedId);
+    setGeprueft(true);
       setBewertung(b);
       trefferRueckmeldung(b);
       onErgebnis(b, { selbstBewertet: true, mitHilfe: false });

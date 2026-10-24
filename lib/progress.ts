@@ -1,3 +1,4 @@
+import { appStorage } from "@/lib/lernSpeicher";
 import type { AufgabenFortschritt, Bewertung, BewertungsKontext, LernVersuch } from "@/content/schema";
 import { istFortschritt, istObjekt } from "@/lib/fortschrittDaten";
 
@@ -37,7 +38,7 @@ export function naechsteFaelligkeit(b: Bewertung, intervallTage: number) {
 export function ladeFortschritt(): Record<string, AufgabenFortschritt> {
   if (typeof window === "undefined") return {};
   try {
-    const daten = JSON.parse(localStorage.getItem(KEY) || "{}");
+    const daten = JSON.parse(appStorage.getItem(KEY) || "{}");
     const valid: Record<string, AufgabenFortschritt> = {};
     if (istObjekt(daten)) {
       for (const [id, wert] of Object.entries(daten)) if (istFortschritt(wert, id)) valid[id] = wert;
@@ -74,12 +75,12 @@ export function speichereBewertung(aufgabeId: string, bewertung: Bewertung, kont
       intervallTage, verlauf: verlauf.slice(-60),
     };
   }
-  localStorage.setItem(KEY, JSON.stringify(all));
+  appStorage.setItem(KEY, JSON.stringify(all));
 }
 
 export function loescheFortschritt() {
   if (typeof window === "undefined") return;
-  localStorage.removeItem(KEY);
+  appStorage.removeItem(KEY);
 }
 
 /** Fällig sind nur Aufgaben, die schon einmal bearbeitet wurden. */

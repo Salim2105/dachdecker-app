@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useAufgabenId, loescheAufgabenEntwurf, useAufgabenEntwurf, istTextRecord } from "@/components/useAufgabenEntwurf";
 import type { DiagramAufgabe, Bewertung, AufgabeModus } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
@@ -24,13 +25,15 @@ export function DiagramCard({
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
+  const scopedId = useAufgabenId(aufgabe.id);
   const keys = Object.keys(aufgabe.zuordnung);
   const [pool] = useState<string[]>(() => shuffle([...new Set(Object.values(aufgabe.zuordnung))]));
-  const [auswahl, setAuswahl] = useState<Record<string, string>>({});
+  const [auswahl, setAuswahl] = useAufgabenEntwurf<Record<string, string>>(aufgabe.id, `${modus}-zuordnung`, {}, istTextRecord);
   const [geprueft, setGeprueft] = useState(false);
   const [bewertung, setBewertung] = useState<Bewertung | null>(null);
 
   const pruefen = () => {
+    loescheAufgabenEntwurf(scopedId);
     setGeprueft(true);
     const richtig = keys.filter((k) => auswahl[k] === aufgabe.zuordnung[k]).length;
     const b: Bewertung =

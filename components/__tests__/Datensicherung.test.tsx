@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { Datensicherung } from "@/components/fortschritt/Datensicherung";
+import { strToU8, zipSync } from "fflate";
 
 beforeEach(() => localStorage.clear());
 afterEach(cleanup);
@@ -18,6 +19,21 @@ describe("Datensicherung vorab ansehen", () => {
     fireEvent.click(screen.getByText("Abbrechen"));
     expect(screen.queryByText("Sicherung übernehmen")).toBeNull();
     expect(localStorage.getItem("theme")).toBe("dark");
+  });
+  it("zeigt vollständige ZIP-Sicherungen mit Prüfungen und Fotos vorab an", async () => {
+    localStorage.setItem("dd-pruefung-v2", "aktueller Versuch");
+    const ansicht = render(<Datensicherung />);
+    const zip = zipSync({
+      "sicherung.json": strToU8(JSON.stringify({ app: "dachdecker-lernstand", version: 2, daten: { "dd-pruefung-v2": "gesicherter Versuch" }, dateien: [{ key: "foto", datei: "dateien/0.bin", typ: "image/png", groesse: 2 }] })),
+      "dateien/0.bin": new Uint8Array([1, 2]),
+    });
+    const datei = new File([Uint8Array.from(zip).buffer], "vollstaendig.zip", { type: "application/zip" });
+    fireEvent.change(ansicht.container.querySelector('input[type="file"]')!, { target: { files: [datei] } });
+    await screen.findByText("Sicherung prüfen: vollstaendig.zip");
+    expect(screen.getByText(/Zeichnungen und Fotos \(1\)/)).toBeTruthy();
+    expect(localStorage.getItem("dd-pruefung-v2")).toBe("aktueller Versuch");
+    fireEvent.click(screen.getByText("Abbrechen"));
+    expect(localStorage.getItem("dd-pruefung-v2")).toBe("aktueller Versuch");
   });
   it("lehnt eine beschädigte Sicherung ohne Datenverlust ab", async () => {
     localStorage.setItem("theme", "dark");

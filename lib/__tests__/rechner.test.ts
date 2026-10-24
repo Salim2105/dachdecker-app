@@ -16,10 +16,12 @@ import {
   waermedurchlasswiderstand,
   uWert,
   regenwasserabfluss,
+  ablaufanzahl,
   laengenausdehnung,
   materialbedarf,
   zahl,
   RSE,
+  RechenFehler,
 } from "@/lib/rechner";
 
 describe("Dachgeometrie", () => {
@@ -54,9 +56,8 @@ describe("Dachgeometrie", () => {
     expect(prozentZuGrad(100)).toBeCloseTo(45, 6);
   });
 
-  it("begrenzt die Neigung, statt durch null zu teilen", () => {
-    expect(Number.isFinite(wahreDachflaeche(100, 90))).toBe(true);
-    expect(Number.isFinite(wahreDachflaeche(100, 180))).toBe(true);
+  it("weist Neigungen außerhalb des Modells ausdrücklich zurück", () => {
+    for (const winkel of [-1, 90, 180, Infinity, NaN]) expect(() => wahreDachflaeche(100, winkel)).toThrow(RechenFehler);
   });
 });
 
@@ -75,12 +76,11 @@ describe("Bauphysik", () => {
     expect(r).toBeCloseTo(5 + 0.024 / 0.13, 6);
   });
 
-  it("ignoriert Schichten ohne Dicke oder Lambda", () => {
-    const r = waermedurchlasswiderstand([
-      { name: "leer", dickeCm: 0, lambda: 0.04 },
-      { name: "kaputt", dickeCm: 10, lambda: 0 },
-    ]);
-    expect(r).toBe(0);
+  it("weist ungültige Schichten zurück, statt sie wegzulassen", () => {
+    for (const schicht of [{ name: "leer", dickeCm: 0, lambda: 0.04 }, { name: "kaputt", dickeCm: 10, lambda: 0 }]) {
+      expect(() => waermedurchlasswiderstand([{ name: "gültig", dickeCm: 20, lambda: 0.035 }, schicht])).toThrow(RechenFehler);
+    }
+    expect(() => waermedurchlasswiderstand([])).toThrow(RechenFehler);
   });
 
   it("U ist der Kehrwert des Gesamtwiderstands", () => {
@@ -88,7 +88,7 @@ describe("Bauphysik", () => {
   });
 
   it("liefert bei leerem Aufbau kein Unendlich", () => {
-    expect(uWert(0, 0, 0)).toBe(0);
+    expect(() => uWert(0, 0, 0)).toThrow(RechenFehler);
   });
 });
 
@@ -169,7 +169,7 @@ describe("kehle", () => {
   });
 
   it("fängt Nullmaße ab", () => {
-    expect(kehle(0, 0, 0).neigung).toBe(0);
+    expect(() => kehle(0, 0, 0)).toThrow(RechenFehler);
   });
 });
 
@@ -201,8 +201,9 @@ describe("schleppgaube", () => {
     );
   });
 
-  it("hält die Sichthöhe bei unmöglichen Maßen bei null", () => {
-    expect(schleppgaube(1, 5, 40, 15).sichthoehe).toBe(0);
+  it("weist unmögliche Überstände zurück", () => {
+    expect(() => schleppgaube(1, 5, 40, 15)).toThrow(RechenFehler);
+    expect(() => schleppgaube(1, 1, 40, 15)).toThrow(RechenFehler);
   });
 });
 
@@ -243,8 +244,8 @@ describe("haftabstand und scharen", () => {
   });
 
   it("fängt Nullwerte ab", () => {
-    expect(haftabstand(0, 4)).toBe(0);
-    expect(haftabstand(0.52, 0)).toBe(0);
+    expect(() => haftabstand(0, 4)).toThrow(RechenFehler);
+    expect(() => haftabstand(0.52, 0)).toThrow(RechenFehler);
   });
 
   it("teilt die Dachlänge in volle Scharen und Passbreite", () => {
@@ -255,8 +256,9 @@ describe("haftabstand und scharen", () => {
     expect(s.anzahl * 0.525 + 2 * s.passbreite).toBeCloseTo(12, 6);
   });
 
-  it("liefert bei unbrauchbarer Nutzbreite null", () => {
-    expect(scharen(12, 0)).toEqual({ anzahl: 0, passbreite: 0 });
+  it("weist unbrauchbare Nutzbreiten zurück", () => {
+    expect(() => scharen(12, 0)).toThrow(RechenFehler);
+    expect(() => scharen(12, 13)).toThrow(RechenFehler);
   });
 });
 
@@ -271,6 +273,64 @@ describe("ziegelProQm", () => {
   });
 
   it("fängt Nullmaße ab", () => {
-    expect(ziegelProQm(0, 34)).toBe(0);
+    expect(() => ziegelProQm(0, 34)).toThrow(RechenFehler);
+  });
+});
+
+
+describe("Modellgrenzen und Einheiten", () => {
+  it.each([
+    () => wahreDachflaeche(-100, 30), () => sparrenlaenge(0, 30), () => firsthoehe(4, NaN),
+    () => neigungAusMassen(-1, 4), () => neigungAusMassen(1, 0), () => gradZuProzent(90),
+    () => prozentZuGrad(-1), () => regenwasserabfluss(300, 200, 1.1), () => regenwasserabfluss(300, 200, -0.1),
+    () => regenwasserabfluss(300, 0, 1), () => laengenausdehnung(-22, 10, 50), () => laengenausdehnung(22, 0, 50),
+    () => laengenausdehnung(22, 10, Infinity), () => materialbedarf(100, -10, 5), () => materialbedarf(100, 10, -5),
+    () => materialbedarf(1e300, 1e300, 5), () => gratsparren(-4, 30), () => kehle(8, -6, 2),
+    () => schleppgaube(5, -1, 40, 15), () => schleppgaube(5, 0.5, 15, 15), () => schleppgaube(5, 0.5, 15, 40),
+    () => satteldachgaube(1, 1, 1, 3, 1), () => satteldachgaube(1, 0, 3, 1, 1),
+    () => haftabstand(NaN, 4), () => scharen(-12, 0.525), () => ziegelProQm(20, Infinity),
+    () => waermedurchlasswiderstand([{ name: "defekt", dickeCm: -2, lambda: 0.04 }]),
+    () => waermedurchlasswiderstand([{ name: "defekt", dickeCm: 20, lambda: Infinity }]),
+    () => uWert(5, -0.1, 0.04),
+  ])("liefert für ungültige Eingaben kein scheinbar gültiges Ergebnis (%#)", (rechne) => {
+    expect(rechne).toThrow(RechenFehler);
+  });
+
+  it("unterscheidet Zentimeter, Meter und Quadratmeter", () => {
+    expect(waermedurchlasswiderstand([{ name: "Dämmung", dickeCm: 20, lambda: 0.04 }])).toBe(5);
+    expect(ziegelProQm(20, 50)).toBe(10);
+    expect(haftabstand(52 / 100, 4)).toBeCloseTo(0.480769, 6);
+  });
+
+  it("unterstützt Abkühlung und unveränderte Temperatur", () => {
+    expect(laengenausdehnung(22, 10, -50)).toBeCloseTo(-11, 8);
+    expect(laengenausdehnung(22, 10, 0)).toBe(0);
+  });
+
+  it("erlaubt gültige Grenzfälle ausdrücklich", () => {
+    expect(neigungAusMassen(0, 4)).toBe(0);
+    expect(regenwasserabfluss(300, 200, 0)).toBe(0);
+    expect(schleppgaube(5, 0, 40, 0).sichthoehe).toBeGreaterThan(0);
+    expect(scharen(1, 1)).toEqual({ anzahl: 1, passbreite: 0 });
+  });
+});
+
+
+describe("ganze Stückzahlen ohne Gleitkomma-Fehlaufschlag", () => {
+  it("rundet rechnerisch ganze Materialmengen nicht um ein Stück hoch", () => {
+    expect(materialbedarf(0.07, 100, 0)).toBe(7);
+    expect(materialbedarf(0.0701, 100, 0)).toBe(8);
+  });
+  it("erkennt eine exakt aufgehende Schareneinteilung", () => {
+    expect(scharen(0.3, 0.1)).toEqual({ anzahl: 3, passbreite: 0 });
+    expect(scharen(0.2999, 0.1).anzahl).toBe(2);
+  });
+  it("rundet Abläufe sicher auf und prüft die Ablaufleistung", () => {
+    expect(ablaufanzahl(6, 5)).toBe(2);
+    expect(ablaufanzahl(0.07 * 100, 1)).toBe(7);
+    expect(ablaufanzahl(0, 5)).toBe(0);
+    expect(() => ablaufanzahl(6, 0)).toThrow(RechenFehler);
+    expect(() => ablaufanzahl(-6, 5)).toThrow(RechenFehler);
+    expect(() => ablaufanzahl(1e300, 1)).toThrow(RechenFehler);
   });
 });

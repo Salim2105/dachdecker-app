@@ -1,3 +1,4 @@
+import { appStorage } from "@/lib/lernSpeicher";
 import type { Aufgabe, Bewertung } from "@/content/schema";
 
 interface Uebungsstand {
@@ -16,7 +17,7 @@ function sindBewertungen(value: unknown): value is Bewertung[] {
 function ladeStandFuerIds(key: string, ids: readonly string[]): Uebungsstand | null {
   if (typeof window !== "undefined") {
     try {
-      const s = JSON.parse(localStorage.getItem(key) || "null");
+      const s = JSON.parse(appStorage.getItem(key) || "null");
       if (
         s && Number.isInteger(s.index) && s.index >= 0 &&
         Array.isArray(s.aufgabenIds) && s.aufgabenIds.length === ids.length &&
@@ -51,7 +52,7 @@ export function ladeSitzungsInfo(id: string) {
   if (typeof window === "undefined") return null;
   try {
     const key = `dd-session-${id}`;
-    const s = JSON.parse(localStorage.getItem(key) || "null");
+    const s = JSON.parse(appStorage.getItem(key) || "null");
     if (!s || !Array.isArray(s.aufgabenIds) || !s.aufgabenIds.length ||
         !s.aufgabenIds.every((a: unknown) => typeof a === "string") ||
         new Set(s.aufgabenIds).size !== s.aufgabenIds.length) return null;
@@ -70,7 +71,7 @@ export function leererStand(): Uebungsstand {
 export function ladeGespeicherteAufgaben(key: string, pool: Aufgabe[]): Aufgabe[] | null {
   if (typeof window === "undefined") return null;
   try {
-    const s = JSON.parse(localStorage.getItem(key) || "null");
+    const s = JSON.parse(appStorage.getItem(key) || "null");
     if (!s || !Array.isArray(s.aufgabenIds) || s.aufgabenIds.length === 0 ||
         !s.aufgabenIds.every((id: unknown) => typeof id === "string") ||
         new Set(s.aufgabenIds).size !== s.aufgabenIds.length) return null;

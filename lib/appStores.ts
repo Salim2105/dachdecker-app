@@ -1,3 +1,4 @@
+import { appStorage } from "@/lib/lernSpeicher";
 export function createStringStore(key: string) {
   let cache: string | undefined;
   const listeners = new Set<() => void>();
@@ -11,7 +12,7 @@ export function createStringStore(key: string) {
     getSnapshot(): string {
       if (typeof window === "undefined") return "";
       if (cache === undefined) {
-        try { cache = localStorage.getItem(key) ?? ""; } catch { cache = ""; }
+        try { cache = appStorage.getItem(key) ?? ""; } catch { cache = ""; }
       }
       return cache;
     },
@@ -20,8 +21,8 @@ export function createStringStore(key: string) {
       cache = value;
       try {
         if (typeof window !== "undefined") {
-          if (value) localStorage.setItem(key, value);
-          else localStorage.removeItem(key);
+          if (value) appStorage.setItem(key, value);
+          else appStorage.removeItem(key);
         }
       } catch {}
       listeners.forEach((l) => l());

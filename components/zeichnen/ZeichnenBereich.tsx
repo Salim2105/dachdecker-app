@@ -6,33 +6,40 @@ import { useProgress } from "@/components/useProgress";
 import { getLernfeld } from "@/lib/content";
 import { alleZeichenaufgaben, zeichenaufgabenNachLernfeld } from "@/lib/zeichnen";
 import { zieheAufgaben } from "@/lib/pruefung";
+import { ladeZeichenLauf, speichereZeichenLauf, type ZeichenLauf } from "@/lib/zeichenSpeicher";
 
 export function ZeichnenBereich() {
   const { fortschritt, bewerte } = useProgress();
-  const [lauf, setLauf] = useState<DrawAufgabe[] | null>(null);
-  const [index, setIndex] = useState(0);
-  const [beantwortet, setBeantwortet] = useState(false);
-
   const gruppen = zeichenaufgabenNachLernfeld();
   const alle = alleZeichenaufgaben();
+  const [lauf, setLauf] = useState<ZeichenLauf | null>(() => ladeZeichenLauf(new Set(alle.map((a) => a.id))));
+  const [aktiv, setAktiv] = useState(true);
+  const [speicherFehler, setSpeicherFehler] = useState("");
+
+  function aktualisiereLauf(neu: ZeichenLauf | null) {
+    setLauf(neu);
+    try { speichereZeichenLauf(neu); setSpeicherFehler(""); }
+    catch { setSpeicherFehler("Der Zeichenlauf konnte nicht gespeichert werden. Deine einzelnen Entwürfe bleiben bei ihren Aufgaben."); }
+  }
 
   const starte = (aufgaben: DrawAufgabe[]) => {
-    setLauf(aufgaben);
-    setIndex(0);
-    setBeantwortet(false);
+    if (!aufgaben.length) return;
+    aktualisiereLauf({ ids: aufgaben.map((a) => a.id), index: 0, bewertungen: {} });
+    setAktiv(true);
   };
 
-  if (lauf) {
-    const aktuell = lauf[index];
+  if (lauf && aktiv) {
+    const aktuell = alle.find((a) => a.id === lauf.ids[lauf.index])!;
+    const beantwortet = !!lauf.bewertungen[aktuell.id];
     const lf = getLernfeld(aktuell.lernfeld);
     return (
       <div>
         <div className="mb-4 flex items-center justify-between">
-          <button onClick={() => setLauf(null)} className="text-sm" style={{ color: "var(--text-muted)" }}>
+          <button onClick={() => setAktiv(false)} className="text-sm" style={{ color: "var(--text-muted)" }}>
             ← Zeichnen
           </button>
           <span className="text-xs" style={{ color: "var(--text-muted)" }}>
-            {index + 1} / {lauf.length}
+            {lauf.index + 1} / {lauf.ids.length}
           </span>
         </div>
         <p className="mb-3 text-xs" style={{ color: "var(--text-muted)" }}>
@@ -42,26 +49,25 @@ export function ZeichnenBereich() {
         <DrawCard
           key={aktuell.id}
           aufgabe={aktuell}
+          anfangsBewertung={lauf.bewertungen[aktuell.id]}
           onErgebnis={(b: Bewertung) => {
-            setBeantwortet(true);
-            bewerte(aktuell.id, b);
+            if (beantwortet) return;
+            aktualisiereLauf({ ...lauf, bewertungen: { ...lauf.bewertungen, [aktuell.id]: b } });
+            bewerte(aktuell.id, b, { selbstBewertet: true });
           }}
         />
 
+        {speicherFehler && <p role="alert" className="mt-3 text-sm" style={{ color: "var(--bad)" }}>{speicherFehler}</p>}
         {beantwortet && (
           <button
             onClick={() => {
-              if (index < lauf.length - 1) {
-                setIndex((i) => i + 1);
-                setBeantwortet(false);
-              } else {
-                setLauf(null);
-              }
+              if (lauf.index < lauf.ids.length - 1) aktualisiereLauf({ ...lauf, index: lauf.index + 1 });
+              else aktualisiereLauf(null);
             }}
             className="mt-6 w-full rounded-xl py-3 font-medium"
             style={{ background: "var(--accent)", color: "var(--accent-text)" }}
           >
-            {index < lauf.length - 1 ? "Nächste Zeichnung" : "Fertig"}
+            {lauf.index < lauf.ids.length - 1 ? "Nächste Zeichnung" : "Fertig"}
           </button>
         )}
       </div>
@@ -74,9 +80,11 @@ export function ZeichnenBereich() {
     <div>
       <h1 className="text-[26px] font-semibold tracking-tight">Zeichnen</h1>
       <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
-        Freihandzeichnungen und geometrische Konstruktionen für Dach &amp; Wand üben.
+        Mit Maus, Trackpad oder Tastatur zeichnen – oder ein Papierfoto mit der Musterlösung vergleichen. Deine Entwürfe bleiben erhalten; die Bewertung erfolgt durch dich.
       </p>
 
+      {lauf && <button onClick={() => setAktiv(true)} className="mt-4 min-h-14 w-full rounded-xl border p-3 text-left font-medium" style={{ borderColor: "var(--accent)", background: "var(--surface-2)" }}>Zeichenlauf fortsetzen · {lauf.index + 1} von {lauf.ids.length}</button>}
+      {speicherFehler && <p role="alert" className="mt-3 text-sm" style={{ color: "var(--bad)" }}>{speicherFehler}</p>}
       <div className="mt-4 flex flex-col gap-2">
         <button
           onClick={() => starte(zieheAufgaben(alle, alle.length))}

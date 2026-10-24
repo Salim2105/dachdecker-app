@@ -5,10 +5,11 @@
 // die Dateien über einen winzigen lokalen HTTP-Server auf 127.0.0.1 und öffnen
 // ein Fenster darauf. Alles läuft lokal — kein Internet, kein externer Server.
 
-const { app, BrowserWindow, shell, dialog } = require("electron");
+const { app, BrowserWindow, shell, dialog, ipcMain } = require("electron");
 const http = require("node:http");
 const path = require("node:path");
 const fs = require("node:fs");
+const { convertHeicToPng } = require("./heic");
 const NEUE_APP = require("../package.json").desktopVariant === "neu";
 const APP_NAME = NEUE_APP ? "Dachdecker Neu" : "Dachdecker";
 
@@ -26,6 +27,19 @@ const OUT_DIR = app.isPackaged
 // Fester, unüblicher Port → stabile Adresse → Fortschritt bleibt erhalten.
 const FEST_PORT = NEUE_APP ? 39218 : 39217;
 let lokalerServer;
+let heicUmwandlungAktiv = false;
+
+ipcMain.handle("drawing:convert-heic", async (event, payload) => {
+  // Nur die Hauptseite unseres lokalen Fensters darf die Umwandlung anfordern.
+  if (!event.senderFrame || event.senderFrame !== event.sender.mainFrame || new URL(event.senderFrame.url).origin !== `http://127.0.0.1:${FEST_PORT}`) throw new Error("Dieser Fotoupload ist nicht erlaubt.");
+  if (heicUmwandlungAktiv) throw new Error("Ein Foto wird bereits umgewandelt. Bitte warte kurz.");
+  heicUmwandlungAktiv = true;
+  try { return await convertHeicToPng(payload); }
+  catch (error) {
+    if (error.killed || error.code === "ENOENT") throw new Error("Das HEIC-Foto konnte nicht geöffnet werden. Exportiere es in Vorschau als JPEG oder PNG.");
+    throw error;
+  } finally { heicUmwandlungAktiv = false; }
+});
 
 const MIME = {
   ".html": "text/html; charset=utf-8",
@@ -91,13 +105,13 @@ function starteServer() {
 async function erstelleFenster() {
   const port = await starteServer();
   const fenster = new BrowserWindow({
-    width: 430,
-    height: 860,
-    minWidth: 360,
-    minHeight: 560,
+    width: 1280,
+    height: 900,
+    minWidth: 760,
+    minHeight: 620,
     title: APP_NAME,
-    backgroundColor: "#0f1011",
-    webPreferences: { contextIsolation: true, nodeIntegration: false },
+    backgroundColor: "#191d1b",
+    webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true, preload: path.join(__dirname, "preload.js") },
   });
 
   const EIGEN = `http://127.0.0.1:${port}/`;
@@ -114,6 +128,20 @@ async function erstelleFenster() {
   // Das Fenster selbst bleibt immer auf der lokalen App — kein Wegnavigieren.
   fenster.webContents.on("will-navigate", (e, url) => {
     if (!url.startsWith(EIGEN)) e.preventDefault();
+  });
+  fenster.webContents.on("will-prevent-unload", (event) => {
+    const wahl = dialog.showMessageBoxSync(fenster, {
+      type: "warning",
+      title: "Lernstand wird noch gespeichert",
+      message: "Einige Änderungen sind noch nicht dauerhaft gespeichert.",
+      detail: "Warte, bis die Speicherung abgeschlossen ist. Bei einem Speicherfehler sichere deinen Lernstand über die Datensicherung. Wenn du trotzdem schließt, können die letzten Änderungen fehlen.",
+      buttons: ["Weiter warten", "Trotzdem schließen"],
+      defaultId: 0,
+      cancelId: 0,
+      noLink: true,
+    });
+    // Bei will-prevent-unload hebt preventDefault ausnahmsweise die Sperre auf.
+    if (wahl === 1) event.preventDefault();
   });
   fenster.loadURL(`http://127.0.0.1:${port}/`);
 }

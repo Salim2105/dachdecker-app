@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getLernfeld, getAufgaben, getLernfelder } from "@/lib/content";
-import { SessionRunner } from "@/components/session/SessionRunner";
+import { Suspense } from "react";
+import { LernfeldUebung } from "@/components/LernfeldUebung";
 
 export default async function UebenPage({ params }: { params: Promise<{ lf: string }> }) {
   const { lf } = await params;
@@ -27,7 +28,7 @@ export default async function UebenPage({ params }: { params: Promise<{ lf: stri
         ← {lernfeld.titel}
       </Link>
       <div className="mt-3">
-        <SessionRunner aufgaben={aufgaben} lfId={lf} />
+        <Suspense fallback={<p>Übung wird geöffnet …</p>}><LernfeldUebung aufgaben={aufgaben} lfId={lf} /></Suspense>
       </div>
     </div>
   );

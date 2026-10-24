@@ -196,6 +196,7 @@ const { lernfelder } = JSON.parse(readFileSync("content/lernfelder.json", "utf8"
 const seiten = [
   "/",
   "/lernen",
+  "/ueben",
   "/zeichnen",
   "/pruefung",
   "/rechner",

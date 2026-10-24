@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { getLernfeld, getLektionen, getAufgaben, getLernfelder } from "@/lib/content";
-import { LernEinheiten } from "@/components/LernEinheiten";
+import { getLernfeld, getAufgaben, getLernfelder } from "@/lib/content";
+import { LernwerkstattKurs } from "@/components/LernwerkstattKurs";
 
 export default async function LernfeldDetailPage({
   params,
@@ -21,7 +21,6 @@ export default async function LernfeldDetailPage({
     );
   }
 
-  const lektionen = getLektionen(lf);
   const aufgaben = getAufgaben(lf);
 
   return (
@@ -57,7 +56,7 @@ export default async function LernfeldDetailPage({
         ))}
       </div>
 
-      <LernEinheiten lfId={lf} lektionen={lektionen} aufgaben={aufgaben} />
+      <LernwerkstattKurs lfId={lf} />
 
       <div className="mt-8">
         {aufgaben.length > 0 ? (

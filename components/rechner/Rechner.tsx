@@ -1,546 +1,178 @@
 "use client";
-import { useState } from "react";
-import {
-  wahreDachflaeche,
-  sparrenlaenge,
-  firsthoehe,
-  neigungAusMassen,
-  gradZuProzent,
-  waermedurchlasswiderstand,
-  uWert,
-  regenwasserabfluss,
-  laengenausdehnung,
-  materialbedarf,
-  gratsparren,
-  kehle,
-  schleppgaube,
-  satteldachgaube,
-  haftabstand,
-  scharen,
-  ziegelProQm,
-  zahl,
-  RSI_WERTE,
-  RSE,
-  AUSDEHNUNG,
-  type Schicht,
-} from "@/lib/rechner";
-import { Feld, Ergebnis, Hinweis, Block, num } from "@/components/rechner/Feld";
 
-const TABS = [
-  { id: "dach", label: "Dachneigung" },
-  { id: "grat", label: "Grat & Kehle" },
-  { id: "gaube", label: "Gauben" },
-  { id: "uwert", label: "U-Wert" },
-  { id: "wasser", label: "Entwässerung" },
-  { id: "metall", label: "Ausdehnung" },
-  { id: "scharen", label: "Scharen & Hafte" },
-  { id: "material", label: "Material" },
-];
+import { useMemo, useSyncExternalStore, type ReactNode } from "react";
+import Link from "next/link";
+import { wahreDachflaeche, sparrenlaenge, firsthoehe, neigungAusMassen, gradZuProzent, waermedurchlasswiderstand, uWert, regenwasserabfluss, ablaufanzahl, laengenausdehnung, materialbedarf, gratsparren, kehle, schleppgaube, satteldachgaube, haftabstand, scharen, ziegelProQm, zahl, RSI_WERTE, RSE, AUSDEHNUNG } from "@/lib/rechner";
+import { leseDezimalzahl } from "@/lib/zahlen";
+import { leseRechnerEntwurf, rechnerEntwurfStore, RECHNER_TABS, type RechnerEntwurf, type RechnerTab } from "@/lib/rechnerEntwurf";
+import { Feld, Ergebnis, Hinweis, Block } from "./Feld";
+import { RechenSkizze, type SkizzenArt } from "./RechenSkizze";
 
-export function Rechner() {
-  const [tab, setTab] = useState("dach");
+type Regel = "positiv" | "nichtNegativ" | "winkel" | "anteil" | "beliebig";
+interface Eingabe { id: string; label: string; einheit?: string; regel?: Regel; hilfe?: string }
+interface Zeile { label: string; wert: number; einheit: string; formel: string; eingesetzt: string; stellen?: number; transfer?: "flaeche" | "stueck" }
+type Zahlen = Record<string, number>;
+const feld = (id: string, label: string, einheit?: string, regel: Regel = "positiv", hilfe?: string): Eingabe => ({ id, label, einheit, regel, hilfe });
+const zeile = (label: string, wert: number, einheit: string, formel: string, eingesetzt: string, extra: Partial<Zeile> = {}): Zeile => ({ label, wert, einheit, formel, eingesetzt, ...extra });
+const n = (wert: number) => zahl(wert, 4).replace(/,?0+$/, "");
+const buttonClass = "rounded-xl border px-3 py-2 text-sm focus-visible:outline-2 focus-visible:outline-offset-2";
+const buttonStyle = { borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)", outlineColor: "var(--accent)" };
 
-  return (
-    <div>
-      <h1 className="text-[26px] font-semibold tracking-tight">Fachrechner</h1>
-      <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
-        Die Formeln aus den Lernfeldern — zum Nachrechnen und Kontrollieren.
-      </p>
-
-      <div className="-mx-4 mt-4 flex gap-2 overflow-x-auto px-4 pb-1">
-        {TABS.map((t) => (
-          <button
-            key={t.id}
-            onClick={() => setTab(t.id)}
-            className="flex-shrink-0 rounded-full border px-3 py-1.5 text-sm"
-            style={{
-              borderColor: tab === t.id ? "var(--accent)" : "var(--border)",
-              background: tab === t.id ? "var(--accent)" : "transparent",
-              color: tab === t.id ? "var(--accent-text)" : "var(--text-muted)",
-            }}
-          >
-            {t.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-4">
-        {tab === "dach" && <DachRechner />}
-        {tab === "grat" && <GratRechner />}
-        {tab === "gaube" && <GaubenRechner />}
-        {tab === "uwert" && <UWertRechner />}
-        {tab === "wasser" && <WasserRechner />}
-        {tab === "metall" && <MetallRechner />}
-        {tab === "scharen" && <ScharenRechner />}
-        {tab === "material" && <MaterialRechner />}
-      </div>
-    </div>
-  );
+function eingabeFehler(text: string, regel: Regel = "positiv"): string | undefined {
+  const v = leseDezimalzahl(text);
+  if (v === null) return text.trim() ? "Bitte nur eine Zahl eingeben, zum Beispiel 2,5. Die Einheit steht daneben." : "Bitte einen Wert eingeben.";
+  if (regel === "positiv" && v <= 0) return "Der Wert muss größer als 0 sein.";
+  if ((regel === "nichtNegativ" || regel === "winkel" || regel === "anteil") && v < 0) return "Der Wert darf nicht negativ sein.";
+  if (regel === "winkel" && v >= 90) return "Bitte einen Winkel von 0° bis unter 90° eingeben.";
+  if (regel === "anteil" && v > 1) return "Der Abflussbeiwert liegt zwischen 0 und 1.";
 }
 
-function DachRechner() {
-  const [neigung, setNeigung] = useState("30");
-  const [grundflaeche, setGrundflaeche] = useState("100");
-  const [halbeBreite, setHalbeBreite] = useState("4");
-  const [hoehe, setHoehe] = useState("2.31");
-  const [breite, setBreite] = useState("4");
-
-  const a = num(neigung);
-
-  return (
-    <div className="flex flex-col gap-4">
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Wahre Dachfläche und Sparren</h2>
-        <Feld label="Dachneigung" einheit="°" wert={neigung} onWert={setNeigung} />
-        <Feld label="Grundrissfläche" einheit="m²" wert={grundflaeche} onWert={setGrundflaeche} />
-        <Feld label="Halbe Gebäudebreite" einheit="m" wert={halbeBreite} onWert={setHalbeBreite} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis
-            label="Wahre Dachfläche"
-            wert={zahl(wahreDachflaeche(num(grundflaeche), a))}
-            einheit="m²"
-            gross
-          />
-          <Ergebnis label="Sparrenlänge" wert={zahl(sparrenlaenge(num(halbeBreite), a))} einheit="m" />
-          <Ergebnis label="Firsthöhe über Traufe" wert={zahl(firsthoehe(num(halbeBreite), a))} einheit="m" />
-          <Ergebnis label="Neigung in Prozent" wert={zahl(gradZuProzent(a), 1)} einheit="%" />
-        </div>
-        <Hinweis>
-          Wahre Dachfläche = Grundrissfläche / cos α. Sparrenlänge = halbe Breite / cos α,
-          Firsthöhe = halbe Breite · tan α. Die Grundrissfläche ist die Fläche von oben
-          gesehen — nicht die geneigte Fläche.
-        </Hinweis>
-      </Block>
-
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Neigung aus Höhe und Länge</h2>
-        <Feld label="Höhe" einheit="m" wert={hoehe} onWert={setHoehe} />
-        <Feld label="Waagerechte Länge" einheit="m" wert={breite} onWert={setBreite} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis
-            label="Dachneigung"
-            wert={zahl(neigungAusMassen(num(hoehe), num(breite)), 1)}
-            einheit="°"
-            gross
-          />
-          <Ergebnis
-            label="entspricht"
-            wert={zahl(gradZuProzent(neigungAusMassen(num(hoehe), num(breite))), 1)}
-            einheit="%"
-          />
-        </div>
-        <Hinweis>α = arctan(Höhe / Länge). 45° entsprechen genau 100 %.</Hinweis>
-      </Block>
+export function Rechner({ compact = false }: { compact?: boolean }) {
+  const raw = useSyncExternalStore(rechnerEntwurfStore.subscribe, rechnerEntwurfStore.getSnapshot, rechnerEntwurfStore.getServerSnapshot);
+  const entwurf = useMemo(() => leseRechnerEntwurf(raw), [raw]);
+  const set = (patch: Partial<RechnerEntwurf>) => rechnerEntwurfStore.set({ ...entwurf, ...patch });
+  const setFeld = (id: string, wert: string) => set({ felder: { ...entwurf.felder, [id]: wert } });
+  const transfer = (art: "flaeche" | "stueck", wert: number) => set({ tab: "material", felder: { ...entwurf.felder, [art === "flaeche" ? "materialFlaeche" : "stueck"]: String(wert) } });
+  const block = (id: string, titel: string, eingaben: Eingabe[], berechne: (v: Zahlen) => Zeile[], skizze: SkizzenArt, hinweis: string, lf: string) => <RechenBlock key={id} {...{ id, titel, eingaben, berechne, skizze, hinweis, lf, transfer, compact }} werte={entwurf.felder} onWert={setFeld} />;
+  let inhalt: ReactNode;
+  switch (entwurf.tab) {
+    case "dach": inhalt = <>
+      {block("dach", "Wahre Dachfläche und Sparren", [feld("neigung", "Dachneigung α", "°", "winkel"), feld("grundflaeche", "Grundrissfläche A₀", "m²"), feld("halbeBreite", "Halbe Gebäudebreite b", "m")], (v) => [
+        zeile("Wahre Dachfläche", wahreDachflaeche(v.grundflaeche, v.neigung), "m²", "A = A₀ / cos α", `${n(v.grundflaeche)} m² / cos(${n(v.neigung)}°)`, { transfer: "flaeche" }),
+        zeile("Sparrenlänge", sparrenlaenge(v.halbeBreite, v.neigung), "m", "s = b / cos α", `${n(v.halbeBreite)} m / cos(${n(v.neigung)}°)`),
+        zeile("Firsthöhe über Traufe", firsthoehe(v.halbeBreite, v.neigung), "m", "h = b · tan α", `${n(v.halbeBreite)} m · tan(${n(v.neigung)}°)`),
+        zeile("Neigung in Prozent", gradZuProzent(v.neigung), "%", "p = tan α · 100", `tan(${n(v.neigung)}°) · 100`, { stellen: 1 }),
+      ], "dach", "Die Grundrissfläche ist die Fläche von oben gesehen. Das Modell setzt eine einheitliche Dachneigung voraus; b ist die waagerechte Strecke von der Traufe zum First.", "lf08")}
+      {block("neigung", "Neigung aus Höhe und Länge", [feld("hoehe", "Höhe h", "m", "nichtNegativ"), feld("breite", "Waagerechte Länge b", "m")], (v) => [
+        zeile("Dachneigung", neigungAusMassen(v.hoehe, v.breite), "°", "α = arctan(h / b)", `arctan(${n(v.hoehe)} / ${n(v.breite)})`, { stellen: 1 }),
+        zeile("Neigung in Prozent", v.hoehe / v.breite * 100, "%", "p = h / b · 100", `${n(v.hoehe)} m / ${n(v.breite)} m · 100`, { stellen: 1 }),
+      ], "dach", "45° entsprechen 100 %. 100 cm sind 1 m: Beide Längen müssen vor dem Einsetzen in derselben Einheit vorliegen.", "lf02")}
+    </>; break;
+    case "grat": inhalt = <>
+      {block("grat", "Gratsparren", [feld("gratBreite", "Halbe Gebäudebreite b", "m"), feld("gratNeigung", "Dachneigung α", "°", "winkel")], (v) => {
+        const d = gratsparren(v.gratBreite, v.gratNeigung);
+        return [zeile("Firsthöhe", d.hoehe, "m", "h = b · tan α", `${n(v.gratBreite)} m · tan(${n(v.gratNeigung)}°)`), zeile("Flächensparren", d.sparren, "m", "s = b / cos α", `${n(v.gratBreite)} m / cos(${n(v.gratNeigung)}°)`), zeile("Gratsparren", d.grat, "m", "g = √(b² + s²)", `√(${n(v.gratBreite)}² + ${n(d.sparren)}²) m`), zeile("Gratneigung", d.gratneigung, "°", "γ = arcsin(h / g)", `arcsin(${n(d.hoehe)} / ${n(d.grat)})`, { stellen: 1 })];
+      }, "grat", "Modell: beide angrenzenden Dachflächen haben dieselbe Neigung und die Traufen dieselbe Höhe. Der Grat ist länger und flacher als der Flächensparren.", "lf13a")}
+      {block("kehle", "Kehle als Raumdiagonale", [feld("feld1", "Feldbreite f₁", "m"), feld("feld2", "Feldbreite f₂", "m"), feld("kehlHoehe", "Firsthöhe h", "m", "nichtNegativ")], (v) => {
+        const k = kehle(v.feld1, v.feld2, v.kehlHoehe);
+        return [zeile("Kehllänge", k.laenge, "m", "k = √((f₁/2)² + (f₂/2)² + h²)", `√((${n(v.feld1)}/2)² + (${n(v.feld2)}/2)² + ${n(v.kehlHoehe)}²) m`), zeile("Kehlneigung", k.neigung, "°", "γ = arcsin(h / k)", `arcsin(${n(v.kehlHoehe)} / ${n(k.laenge)})`, { stellen: 1 })];
+      }, "grat", "Die waagerechten Teilstrecken betragen jeweils die halbe Feldbreite. Das ist ein rechtwinkliges Raumdiagonalen-Modell; abweichende Anschlussgeometrien sind gesondert zu konstruieren.", "lf13a")}
+    </>; break;
+    case "gaube": inhalt = <>
+      {block("schleppgaube", "Schleppdachgaube", [feld("sges", "Gesamtsparren s", "m"), feld("ue", "Überstand ü (am Sparren)", "m", "nichtNegativ"), feld("alpha", "Hauptdachneigung α", "°", "winkel"), feld("beta", "Gaubenneigung β", "°", "winkel")], (v) => {
+        const g = schleppgaube(v.sges, v.ue, v.alpha, v.beta), s = v.sges - v.ue;
+        return [zeile("Waagerechte Tiefe", g.tiefe, "m", "t = (s − ü) · cos β", `(${n(v.sges)} − ${n(v.ue)}) m · cos(${n(v.beta)}°)`), zeile("Höhe am Anschluss", g.hoehe, "m", "h = t · tan α", `${n(g.tiefe)} m · tan(${n(v.alpha)}°)`), zeile("Wangenanschluss", g.anschluss, "m", "a = √(t² + h²)", `√(${n(g.tiefe)}² + ${n(g.hoehe)}²) m`), zeile("Vordere Sichthöhe", g.sichthoehe, "m", "hᵥ = h − (s − ü) · sin β", `${n(g.hoehe)} m − ${n(s)} m · sin(${n(v.beta)}°)`), zeile("Fläche einer Wange", g.wange, "m²", "Aᵥ = hᵥ · t / 2", `${n(g.sichthoehe)} m · ${n(g.tiefe)} m / 2`)];
+      }, "schleppgaube", "Das Modell benötigt ü < s und β < α. Der Überstand wird entlang des Gaubensparrens gemessen. Ein steileres Gaubendach ergibt in diesem Modell keine positive vordere Sichthöhe.", "lf15")}
+      {block("sattelgaube", "Satteldachgaube", [feld("wangeH", "Wangenhöhe h", "m"), feld("wangeL", "Wangenlänge t", "m"), feld("firstL", "Firstlänge f", "m"), feld("traufL", "Trauflänge e", "m"), feld("gaubeSparren", "Gaubensparren s", "m")], (v) => {
+        const g = satteldachgaube(v.wangeH, v.wangeL, v.firstL, v.traufL, v.gaubeSparren);
+        return [zeile("Hauptdachneigung", g.neigung, "°", "α = arctan(h / t)", `arctan(${n(v.wangeH)} / ${n(v.wangeL)})`, { stellen: 1 }), zeile("Wangenanschluss", g.anschluss, "m", "a = √(h² + t²)", `√(${n(v.wangeH)}² + ${n(v.wangeL)}²) m`), zeile("Gaubenkehle", g.kehle, "m", "k = √((f − e)² + s²)", `√((${n(v.firstL)} − ${n(v.traufL)})² + ${n(v.gaubeSparren)}²) m`), zeile("Kehlwinkel zum First", g.kehlwinkel, "°", "γ = atan2(s, f − e)", `atan2(${n(v.gaubeSparren)}, ${n(v.firstL - v.traufL)})`, { stellen: 1 }), zeile("Beide Gaubendachflächen", g.dachflaeche, "m²", "A = 2 · (f + e) / 2 · s", `2 · (${n(v.firstL)} + ${n(v.traufL)}) m / 2 · ${n(v.gaubeSparren)} m`, { transfer: "flaeche" })];
+      }, "sattelgaube", "Vereinfachtes symmetrisches Modell mit zwei trapezförmigen Dachflächen. Es setzt Firstlänge ≥ Trauflänge voraus. Der Sparren ist hier die schräge Trapezhöhe.", "lf15")}
+    </>; break;
+    case "uwert": inhalt = <UWertRechner entwurf={entwurf} set={set} compact={compact} />; break;
+    case "wasser": inhalt = block("wasser", "Regenwasserabfluss", [feld("regenspende", "Regenspende r", "l/(s·ha)"), feld("wasserFlaeche", "Wirksame Fläche A", "m²"), feld("beiwert", "Abflussbeiwert C", "", "anteil"), feld("leistung", "Leistung je Ablauf qₐ", "l/s")], (v) => {
+      const q = regenwasserabfluss(v.regenspende, v.wasserFlaeche, v.beiwert);
+      return [zeile("Abfluss Q", q, "l/s", "Q = r · A · C / 10 000", `${n(v.regenspende)} l/(s·ha) · ${n(v.wasserFlaeche)} m² · ${n(v.beiwert)} / 10 000`), zeile("Abläufe rechnerisch nötig", ablaufanzahl(q, v.leistung), "Stück", "n = aufrunden(Q / qₐ)", `aufrunden(${n(q)} l/s / ${n(v.leistung)} l/s)`, { stellen: 0 })];
+    }, "wasser", "Regenspende und Abflussbeiwert aus den zutreffenden Vorgaben übernehmen. Die Ablaufanzahl ist ein vereinfachter Kapazitätsvergleich. Leitungsführung, Anstauhöhe und getrennte Notentwässerung sind zusätzlich zu planen.", "lf07"); break;
+    case "metall": inhalt = <>
+      <Auswahl label="Material (Richtwert für α)" wert={entwurf.felder.materialId} optionen={AUSDEHNUNG} onWert={(id) => { const m = AUSDEHNUNG.find((a) => a.id === id); if (m) set({ felder: { ...entwurf.felder, materialId: id, metallAlpha: String(m.alpha) } }); }} />
+      {block("metall", "Thermische Längenänderung", [feld("metallAlpha", "Ausdehnungskoeffizient α", "10⁻⁶/K"), feld("metallLaenge", "Ausgangslänge L", "m"), feld("deltaT", "Temperaturänderung ΔT", "K", "beliebig", "Erwärmung positiv, Abkühlung negativ; 0 K ergibt keine Längenänderung.")], (v) => [zeile("Längenänderung Δl", laengenausdehnung(v.metallAlpha, v.metallLaenge, v.deltaT), "mm", "Δl = α · 10⁻⁶ · L · ΔT · 1000", `${n(v.metallAlpha)} · 10⁻⁶/K · ${n(v.metallLaenge)} m · ${n(v.deltaT)} K · 1000 mm/m`)], "metall", "Positives Ergebnis: Ausdehnung. Negatives Ergebnis: Verkürzung. Maßgebend ist die Bauteiltemperatur und der vom Hersteller angegebene Ausdehnungskoeffizient. Der Materialname wählt einen Richtwert; α bleibt bearbeitbar.", "lf07")}
+    </>; break;
+    case "scharen": inhalt = <>
+      {block("hafte", "Haftabstand", [feld("scharbreite", "Scharbreite b", "m"), feld("hafte", "Hafte im Innenbereich nᵢ", "1/m²"), feld("hafteEck", "Hafte im Eckbereich nₑ", "1/m²")], (v) => [zeile("Abstand innen", haftabstand(v.scharbreite, v.hafte), "m", "aᵢ = 1 / (b · nᵢ)", `1 / (${n(v.scharbreite)} m · ${n(v.hafte)} 1/m²)`, { stellen: 3 }), zeile("Abstand im Eckbereich", haftabstand(v.scharbreite, v.hafteEck), "m", "aₑ = 1 / (b · nₑ)", `1 / (${n(v.scharbreite)} m · ${n(v.hafteEck)} 1/m²)`, { stellen: 3 })], "scharen", "520 mm Scharbreite sind 0,52 m. Benötigte Haftzahlen sind aus dem Befestigungsnachweis zu übernehmen. Dieses Rechenmodell ersetzt keinen Windsognachweis.", "lf12")}
+      {block("scharen", "Scharen einteilen", [feld("dachlaenge", "Dachlänge L", "m"), feld("nutzbreite", "Nutzbreite bₙ", "m")], (v) => { const s = scharen(v.dachlaenge, v.nutzbreite); return [zeile("Volle Scharen", s.anzahl, "Stück", "n = abrunden(L / bₙ)", `abrunden(${n(v.dachlaenge)} m / ${n(v.nutzbreite)} m)`, { stellen: 0 }), zeile("Passbreite je Ortgang", s.passbreite, "m", "p = (L − n · bₙ) / 2", `(${n(v.dachlaenge)} − ${s.anzahl} · ${n(v.nutzbreite)}) m / 2`, { stellen: 3 })]; }, "scharen", "Der Rest wird symmetrisch auf zwei Ortgänge verteilt. Falzzugaben und Anschlüsse sind nicht enthalten; die Passbreiten sind für die Ausführung zu prüfen. Modellgrenze: Nutzbreite ≤ Dachlänge.", "lf12")}
+      {block("ziegel", "Ziegel je Quadratmeter", [feld("deckbreite", "Deckbreite b", "cm"), feld("decklaenge", "Decklänge l", "cm")], (v) => [zeile("Bedarf ohne Verschnitt", ziegelProQm(v.deckbreite, v.decklaenge), "Stück/m²", "n = 10 000 / (b · l)", `10 000 cm²/m² / (${n(v.deckbreite)} cm · ${n(v.decklaenge)} cm)`, { transfer: "stueck" })], "ziegel", "1 m² = 10 000 cm². Verwende Deckmaße nach Abzug der Überdeckung, keine Außenmaße. Bei variabler Decklänge den gewählten Herstellerwert einsetzen.", "lf02")}
+    </>; break;
+    case "material": inhalt = block("material", "Materialbedarf", [feld("materialFlaeche", "Wahre Dachfläche A", "m²"), feld("stueck", "Stück je m² n", "St./m²"), feld("verschnitt", "Verschnittzuschlag p", "%", "nichtNegativ")], (v) => [zeile("Benötigte Gesamtmenge", materialbedarf(v.materialFlaeche, v.stueck, v.verschnitt), "Stück", "N = aufrunden(A · n · (1 + p/100))", `aufrunden(${n(v.materialFlaeche)} m² · ${n(v.stueck)} St./m² · (1 + ${n(v.verschnitt)}/100))`, { stellen: 0 })], "material", "Die geneigte Dachfläche kannst du aus „Dachneigung“, den Ziegelbedarf aus „Scharen & Hafte“ übernehmen. Erst das Gesamtergebnis wird auf ganze Stück aufgerundet. Der Zuschlag hängt von Form und Deckung ab.", "lf02"); break;
+  }
+  return <div className="min-w-0">
+    {compact ? <h2 className="text-xl font-semibold">Fachrechner</h2> : <h1 className="text-3xl font-semibold tracking-tight">Fachrechner</h1>}
+    <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>Nachrechnen und den Rechenweg verstehen. Deine Eingaben bleiben beim Wechsel erhalten.</p>
+    <div className="mt-4 flex flex-wrap gap-2" aria-label="Rechnerbereiche">
+      {RECHNER_TABS.map((t) => <button key={t.id} type="button" aria-pressed={entwurf.tab === t.id} onClick={() => set({ tab: t.id as RechnerTab })} className={buttonClass} style={{ ...buttonStyle, ...(entwurf.tab === t.id ? { background: "var(--accent)", borderColor: "var(--accent)", color: "var(--accent-text)" } : {}) }}>{t.label}</button>)}
     </div>
-  );
+    <div className="mt-5 flex flex-col gap-4">{inhalt}</div>
+  </div>;
 }
 
-const START_SCHICHTEN: Schicht[] = [
-  { name: "Zwischensparrendämmung", dickeCm: 20, lambda: 0.035 },
-  { name: "Holzfaserplatte", dickeCm: 2.4, lambda: 0.13 },
-];
+function RechenBlock({ id, titel, eingaben, berechne, skizze, hinweis, lf, werte, onWert, transfer, compact }: {
+  id: string; titel: string; eingaben: Eingabe[]; berechne: (v: Zahlen) => Zeile[]; skizze: SkizzenArt; hinweis: string; lf: string;
+  compact: boolean; werte: Record<string, string>; onWert: (id: string, wert: string) => void; transfer: (art: "flaeche" | "stueck", wert: number) => void;
+}) {
+  const fehler = Object.fromEntries(eingaben.map((f) => [f.id, eingabeFehler(werte[f.id] ?? "", f.regel)]));
+  const zahlen = Object.fromEntries(eingaben.map((f) => [f.id, leseDezimalzahl(werte[f.id] ?? "")!]));
+  if (!Object.values(fehler).some(Boolean)) {
+    if (id === "schleppgaube") {
+      if (zahlen.ue >= zahlen.sges) fehler.ue = "Der Überstand muss kleiner als der Gesamtsparren sein.";
+      if (zahlen.beta >= zahlen.alpha) fehler.beta = "Die Gaubenneigung muss in diesem Modell kleiner als die Hauptdachneigung sein.";
+    }
+    if (id === "sattelgaube" && zahlen.firstL < zahlen.traufL) fehler.firstL = "Dieses Modell benötigt Firstlänge ≥ Trauflänge.";
+    if (id === "scharen" && zahlen.nutzbreite > zahlen.dachlaenge) fehler.nutzbreite = "Die Nutzbreite darf in diesem Modell die Dachlänge nicht überschreiten.";
+  }
+  let resultate: Zeile[] = [], modellFehler: string | undefined;
+  if (!Object.values(fehler).some(Boolean)) {
+    try {
+      resultate = berechne(zahlen);
+      if (resultate.some((r) => !Number.isFinite(r.wert))) throw new Error("Die Werte liegen außerhalb des darstellbaren Rechenbereichs.");
+    } catch (error) { resultate = []; modellFehler = error instanceof Error ? error.message : "Bitte die eingegebenen Maße prüfen."; }
+  }
+  const Ueberschrift = compact ? "h3" : "h2";
+  return <Block>
+    <Ueberschrift className="text-lg font-semibold">{titel}</Ueberschrift>
+    <RechenSkizze art={skizze} />
+    {eingaben.map((f) => <Feld key={f.id} label={f.label} einheit={f.einheit} wert={werte[f.id] ?? ""} onWert={(v) => onWert(f.id, v)} fehler={fehler[f.id]} hilfe={f.hilfe} />)}
+    {modellFehler && <p role="alert" className="mt-3 rounded-xl border p-3 text-sm" style={{ borderColor: "var(--bad, #b42318)", color: "var(--bad, #b42318)" }}>{modellFehler}</p>}
+    <div aria-live="polite" aria-atomic="true" className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+      {resultate.length ? resultate.map((r, i) => <div key={r.label} className={i ? "mt-4" : ""}>
+        <Ergebnis label={r.label} wert={zahl(r.wert, r.stellen ?? 2)} einheit={r.einheit} gross={i === 0} />
+        <p className="mt-1 break-words text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{r.formel}<br />{r.eingesetzt} = {zahl(r.wert, r.stellen ?? 2)} {r.einheit}</p>
+        {r.transfer && <button type="button" onClick={() => transfer(r.transfer!, r.wert)} className={`${buttonClass} mt-2`} style={buttonStyle}>{r.transfer === "flaeche" ? "Dachfläche für Material übernehmen" : "Stückbedarf für Material übernehmen"}</button>}
+      </div>) : <p className="text-sm" style={{ color: "var(--text-muted)" }}>Sobald alle Eingaben zum Modell passen, siehst du hier den Rechenweg und das Ergebnis.</p>}
+    </div>
+    <Hinweis>{hinweis}</Hinweis>
+    <Link href={`/lernen/${lf}/ueben?typ=rechnung`} className="mt-3 inline-block rounded text-sm font-medium underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-2" style={{ color: "var(--accent)" }}>Passende Rechenaufgaben üben</Link>
+  </Block>;
+}
 
-function UWertRechner() {
-  const [schichten, setSchichten] = useState<Schicht[]>(START_SCHICHTEN);
-  const [rsiId, setRsiId] = useState("aufwaerts");
+function Auswahl({ label, wert, optionen, onWert }: { label: string; wert: string; optionen: { id: string; label: string }[]; onWert: (id: string) => void }) {
+  return <label className="block text-sm">{label}<select value={wert} onChange={(e) => onWert(e.target.value)} className="mt-2 w-full rounded-xl border p-3 text-base focus-visible:outline-2 focus-visible:outline-offset-2" style={buttonStyle}>{optionen.map((o) => <option key={o.id} value={o.id}>{o.label}</option>)}</select></label>;
+}
 
-  const rsi = RSI_WERTE.find((r) => r.id === rsiId)?.rsi ?? 0.1;
-  const r = waermedurchlasswiderstand(schichten);
-  const u = uWert(r, rsi, RSE);
-
-  const setze = (i: number, feld: keyof Schicht, wert: string) => {
-    setSchichten((prev) =>
-      prev.map((s, j) =>
-        j !== i ? s : { ...s, [feld]: feld === "name" ? wert : num(wert) },
-      ),
-    );
-  };
-
-  return (
-    <Block>
-      <h2 className="mb-2 text-sm font-medium">U-Wert des Bauteils</h2>
-
-      <label className="mb-3 block">
-        <span className="text-sm" style={{ color: "var(--text-muted)" }}>
-          Bauteil
-        </span>
-        <select
-          value={rsiId}
-          onChange={(e) => setRsiId(e.target.value)}
-          className="mt-1 w-full rounded-lg border px-3 py-2 text-sm"
-          style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
-        >
-          {RSI_WERTE.map((o) => (
-            <option key={o.id} value={o.id}>
-              {o.label}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <div className="flex flex-col gap-3">
-        {schichten.map((s, i) => (
-          <div key={i} className="rounded-lg border p-3" style={{ borderColor: "var(--border)" }}>
-            <div className="flex items-center gap-2">
-              <input
-                value={s.name}
-                onChange={(e) => setze(i, "name", e.target.value)}
-                aria-label={`Name Schicht ${i + 1}`}
-                className="flex-1 rounded-lg border px-3 py-2 text-sm"
-                style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
-              />
-              <button
-                onClick={() => setSchichten((p) => p.filter((_, j) => j !== i))}
-                aria-label={`Schicht ${i + 1} entfernen`}
-                className="rounded-lg border px-3 py-2 text-sm"
-                style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}
-              >
-                ✕
-              </button>
-            </div>
-            <Feld
-              label="Dicke"
-              einheit="cm"
-              wert={String(s.dickeCm)}
-              onWert={(v) => setze(i, "dickeCm", v)}
-            />
-            <Feld
-              label="λ (Wärmeleitfähigkeit)"
-              einheit="W/mK"
-              wert={String(s.lambda)}
-              onWert={(v) => setze(i, "lambda", v)}
-              schritt="0.001"
-            />
-            <div className="text-right text-xs" style={{ color: "var(--text-muted)" }}>
-              R = {zahl(s.lambda > 0 ? s.dickeCm / 100 / s.lambda : 0, 3)} m²K/W
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <button
-        onClick={() => setSchichten((p) => [...p, { name: "Neue Schicht", dickeCm: 0, lambda: 0.04 }])}
-        className="mt-3 w-full rounded-lg border py-2 text-sm"
-        style={{ borderColor: "var(--border)", color: "var(--text)" }}
-      >
-        Schicht hinzufügen
-      </button>
-
-      <div className="mt-4 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+function UWertRechner({ entwurf, set, compact }: { entwurf: RechnerEntwurf; set: (patch: Partial<RechnerEntwurf>) => void; compact: boolean }) {
+  const schichten = entwurf.schichten;
+  const rsi = RSI_WERTE.find((s) => s.id === entwurf.felder.rsiId)?.rsi;
+  const fehler = schichten.map((s) => ({ dicke: eingabeFehler(s.dickeCm), lambda: eingabeFehler(s.lambda) }));
+  let r: number | undefined, u: number | undefined;
+  let meldung = schichten.length ? "" : "Bitte mindestens eine Schicht hinzufügen.";
+  if (rsi === undefined) meldung = "Bitte eine Richtung des Wärmestroms wählen.";
+  if (!meldung && !fehler.some((f) => f.dicke || f.lambda)) {
+    try { r = waermedurchlasswiderstand(schichten.map((s) => ({ name: s.name, dickeCm: leseDezimalzahl(s.dickeCm)!, lambda: leseDezimalzahl(s.lambda)! }))); u = uWert(r, rsi!, RSE); }
+    catch (error) { meldung = error instanceof Error ? error.message : "Bitte die Schichten prüfen."; }
+  }
+  const setSchicht = (index: number, key: "name" | "dickeCm" | "lambda", wert: string) => set({ schichten: schichten.map((s, i) => i === index ? { ...s, [key]: wert } : s) });
+  const Ueberschrift = compact ? "h3" : "h2";
+  return <Block>
+    <Ueberschrift className="text-lg font-semibold">U-Wert des Bauteils</Ueberschrift>
+    <RechenSkizze art="uwert" />
+    <Auswahl label="Richtung des Wärmestroms" wert={entwurf.felder.rsiId} optionen={RSI_WERTE} onWert={(id) => set({ felder: { ...entwurf.felder, rsiId: id } })} />
+    <div className="mt-4 flex flex-col gap-3">{schichten.map((s, i) => <fieldset key={s.id} className="min-w-0 rounded-xl border p-3" style={{ borderColor: "var(--border)" }}>
+      <legend className="px-1 text-sm font-semibold">Schicht {i + 1}</legend>
+      <label className="block text-sm">Bezeichnung<input value={s.name} onChange={(e) => setSchicht(i, "name", e.target.value)} aria-label={`Name Schicht ${i + 1}`} className="mt-1 w-full rounded-lg border p-2 text-base" style={buttonStyle} /></label>
+      <Feld label={`Dicke Schicht ${i + 1}`} einheit="cm" wert={s.dickeCm} onWert={(v) => setSchicht(i, "dickeCm", v)} fehler={fehler[i].dicke} />
+      <Feld label={`λ Schicht ${i + 1}`} einheit="W/(m·K)" wert={s.lambda} onWert={(v) => setSchicht(i, "lambda", v)} fehler={fehler[i].lambda} />
+      {!fehler[i].dicke && !fehler[i].lambda && <p className="mt-1 text-sm" style={{ color: "var(--text-muted)" }}>R{i + 1} = d / λ = ({s.dickeCm} cm / 100) / {s.lambda} W/(m·K) = {zahl(leseDezimalzahl(s.dickeCm)! / 100 / leseDezimalzahl(s.lambda)!, 3)} m²K/W</p>}
+      <button type="button" className={`${buttonClass} mt-2`} style={buttonStyle} onClick={() => set({ schichten: schichten.filter((_, j) => j !== i) })} aria-label={`Schicht ${i + 1} entfernen`}>Schicht entfernen</button>
+    </fieldset>)}</div>
+    <button type="button" className={`${buttonClass} mt-3`} style={buttonStyle} onClick={() => set({ schichten: [...schichten, { id: crypto.randomUUID(), name: "Neue Schicht", dickeCm: "", lambda: "" }] })}>Schicht hinzufügen</button>
+    {meldung && <p role="alert" className="mt-3 text-sm" style={{ color: "var(--bad, #b42318)" }}>{meldung}</p>}
+    <div aria-live="polite" className="mt-4 border-t pt-3" style={{ borderColor: "var(--border)" }}>
+      {r !== undefined && u !== undefined ? <>
         <Ergebnis label="R der Schichten" wert={zahl(r, 3)} einheit="m²K/W" />
-        <Ergebnis label={`Rsi + Rse`} wert={zahl(rsi + RSE, 2)} einheit="m²K/W" />
-        <Ergebnis label="U-Wert" wert={zahl(u, 3)} einheit="W/m²K" gross />
-      </div>
-
-      <Hinweis>
-        R = d / λ je Schicht, U = 1 / (Rsi + ΣR + Rse). Rse ist mit {zahl(RSE, 2)} angesetzt,
-        Rsi je nach Richtung des Wärmestroms. Das sind Richtwerte für den Überschlag —
-        ruhende Luftschichten, Wärmebrücken und Befestigungen sind hier nicht enthalten.
-      </Hinweis>
-    </Block>
-  );
-}
-
-function WasserRechner() {
-  const [regenspende, setRegenspende] = useState("300");
-  const [flaeche, setFlaeche] = useState("200");
-  const [beiwert, setBeiwert] = useState("1");
-  const [leistung, setLeistung] = useState("5");
-
-  const q = regenwasserabfluss(num(regenspende), num(flaeche), num(beiwert));
-  const gullys = num(leistung) > 0 ? Math.ceil(q / num(leistung)) : 0;
-
-  return (
-    <Block>
-      <h2 className="mb-2 text-sm font-medium">Regenwasserabfluss</h2>
-      <Feld label="Regenspende r" einheit="l/s·ha" wert={regenspende} onWert={setRegenspende} />
-      <Feld label="Wirksame Fläche A" einheit="m²" wert={flaeche} onWert={setFlaeche} />
-      <Feld label="Abflussbeiwert C" einheit="" wert={beiwert} onWert={setBeiwert} schritt="0.1" />
-      <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-        <Ergebnis label="Abfluss Q" wert={zahl(q)} einheit="l/s" gross />
-      </div>
-
-      <div className="mt-4 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-        <Feld label="Leistung je Ablauf" einheit="l/s" wert={leistung} onWert={setLeistung} />
-        <Ergebnis label="Abläufe nötig" wert={String(gullys)} einheit="Stück" />
-      </div>
-
-      <Hinweis>
-        Q = r · A · C / 10000. Die Regenspende hängt vom Ort ab und wird der Berechnungsregen-
-        Tabelle entnommen. Zusätzlich zur Hauptentwässerung ist eine Notentwässerung
-        erforderlich — die wird getrennt bemessen und ist hier nicht enthalten.
-      </Hinweis>
-    </Block>
-  );
-}
-
-function MetallRechner() {
-  const [materialId, setMaterialId] = useState("titanzink");
-  const [alpha, setAlpha] = useState("22");
-  const [laenge, setLaenge] = useState("10");
-  const [deltaT, setDeltaT] = useState("50");
-
-  const waehle = (id: string) => {
-    setMaterialId(id);
-    const m = AUSDEHNUNG.find((x) => x.id === id);
-    if (m) setAlpha(String(m.alpha));
-  };
-
-  return (
-    <Block>
-      <h2 className="mb-2 text-sm font-medium">Thermische Längenänderung</h2>
-
-      <label className="mb-2 block">
-        <span className="text-sm" style={{ color: "var(--text-muted)" }}>
-          Material
-        </span>
-        <select
-          value={materialId}
-          onChange={(e) => waehle(e.target.value)}
-          className="mt-1 w-full rounded-lg border px-3 py-2 text-sm"
-          style={{ borderColor: "var(--border)", background: "var(--surface-2)", color: "var(--text)" }}
-        >
-          {AUSDEHNUNG.map((m) => (
-            <option key={m.id} value={m.id}>
-              {m.label}
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <Feld label="α" einheit="10⁻⁶/K" wert={alpha} onWert={setAlpha} schritt="0.1" />
-      <Feld label="Länge L" einheit="m" wert={laenge} onWert={setLaenge} />
-      <Feld label="Temperaturdifferenz ΔT" einheit="K" wert={deltaT} onWert={setDeltaT} />
-
-      <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-        <Ergebnis
-          label="Längenänderung Δl"
-          wert={zahl(laengenausdehnung(num(alpha), num(laenge), num(deltaT)))}
-          einheit="mm"
-          gross
-        />
-      </div>
-
-      <Hinweis>
-        Δl = α · L · ΔT. Die Werte für α sind Richtwerte — maßgebend ist die Angabe des
-        Herstellers. ΔT ist die Spanne zwischen kältestem und heißestem Zustand des Bauteils,
-        nicht die Lufttemperatur: Dunkles Metall wird im Sommer deutlich wärmer als die Luft.
-        Deshalb brauchen lange Scharen und Rinnen Dehnungsausgleich.
-      </Hinweis>
-    </Block>
-  );
-}
-
-function MaterialRechner() {
-  const [flaeche, setFlaeche] = useState("100");
-  const [stueck, setStueck] = useState("12.5");
-  const [verschnitt, setVerschnitt] = useState("5");
-
-  return (
-    <Block>
-      <h2 className="mb-2 text-sm font-medium">Materialbedarf</h2>
-      <Feld label="Wahre Dachfläche" einheit="m²" wert={flaeche} onWert={setFlaeche} />
-      <Feld label="Stück je m²" einheit="St/m²" wert={stueck} onWert={setStueck} schritt="0.1" />
-      <Feld label="Verschnitt" einheit="%" wert={verschnitt} onWert={setVerschnitt} />
-      <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-        <Ergebnis
-          label="Benötigt"
-          wert={String(materialbedarf(num(flaeche), num(stueck), num(verschnitt)))}
-          einheit="Stück"
-          gross
-        />
-      </div>
-      <Hinweis>
-        Immer aufgerundet. Wichtig: Gerechnet wird mit der wahren Dachfläche, nicht mit der
-        Grundrissfläche — die Umrechnung machst du im Reiter „Dachneigung“. Der Bedarf je m²
-        hängt vom Modell und von der gewählten Lattweite ab.
-      </Hinweis>
-    </Block>
-  );
-}
-
-function GratRechner() {
-  const [halbeBreite, setHalbeBreite] = useState("4");
-  const [neigung, setNeigung] = useState("30");
-  const [feld1, setFeld1] = useState("8");
-  const [feld2, setFeld2] = useState("6");
-  const [hoehe, setHoehe] = useState("2.31");
-
-  const d = gratsparren(num(halbeBreite), num(neigung));
-  const k = kehle(num(feld1), num(feld2), num(hoehe));
-
-  return (
-    <div className="flex flex-col gap-4">
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Gratsparren am Walmdach</h2>
-        <Feld label="Halbe Gebäudebreite" einheit="m" wert={halbeBreite} onWert={setHalbeBreite} />
-        <Feld label="Dachneigung" einheit="°" wert={neigung} onWert={setNeigung} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Gratsparren" wert={zahl(d.grat)} einheit="m" gross />
-          <Ergebnis label="Flächensparren" wert={zahl(d.sparren)} einheit="m" />
-          <Ergebnis label="Firsthöhe" wert={zahl(d.hoehe)} einheit="m" />
-          <Ergebnis label="Gratneigung" wert={zahl(d.gratneigung, 1)} einheit="°" />
-        </div>
-        <Hinweis>
-          Der Grat überwindet dieselbe Höhe wie der Flächensparren, legt dafür aber den
-          längeren Weg über die Ecke zurück — seine Neigung ist deshalb immer flacher als
-          die Dachneigung. Wer den Gratsparren mit der Dachneigung ablängt, schneidet zu kurz.
-        </Hinweis>
-      </Block>
-
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Kehllänge</h2>
-        <Feld label="Feldbreite 1" einheit="m" wert={feld1} onWert={setFeld1} />
-        <Feld label="Feldbreite 2" einheit="m" wert={feld2} onWert={setFeld2} />
-        <Feld label="Firsthöhe über Traufe" einheit="m" wert={hoehe} onWert={setHoehe} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Kehllänge" wert={zahl(k.laenge)} einheit="m" gross />
-          <Ergebnis label="Kehlneigung" wert={zahl(k.neigung, 1)} einheit="°" />
-        </div>
-        <Hinweis>
-          k = √((f₁/2)² + (f₂/2)² + h²). Dieselbe Raumdiagonale wie beim Grat, nur nach
-          innen. Bei gleich breiten Feldern sind Grat und Kehle exakt gleich lang.
-        </Hinweis>
-      </Block>
+        <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>R = Σ(d / λ) = {schichten.map((s) => `${zahl(leseDezimalzahl(s.dickeCm)! / 100 / leseDezimalzahl(s.lambda)!, 3)}`).join(" + ")} = {zahl(r, 3)} m²K/W</p>
+        <div className="mt-3"><Ergebnis label="U-Wert" wert={zahl(u, 3)} einheit="W/(m²·K)" gross /></div>
+        <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>U = 1 / (Rsi + ΣR + Rse)<br />1 / ({zahl(rsi!, 2)} + {zahl(r, 3)} + {zahl(RSE, 2)}) m²K/W = {zahl(u, 3)} W/(m²·K)</p>
+      </> : <p className="text-sm" style={{ color: "var(--text-muted)" }}>Bitte alle Schichten vollständig eingeben. Eine ungültige Schicht wird nicht aus der Rechnung weggelassen.</p>}
     </div>
-  );
-}
-
-function GaubenRechner() {
-  const [sges, setSges] = useState("5");
-  const [ue, setUe] = useState("0.5");
-  const [alpha, setAlpha] = useState("45");
-  const [beta, setBeta] = useState("15");
-  const [wangeH, setWangeH] = useState("1.2");
-  const [wangeL, setWangeL] = useState("1.2");
-  const [firstL, setFirstL] = useState("3");
-  const [traufL, setTraufL] = useState("1.5");
-  const [gaubeSparren, setGaubeSparren] = useState("1.4");
-
-  const s = schleppgaube(num(sges), num(ue), num(alpha), num(beta));
-  const g = satteldachgaube(
-    num(wangeH),
-    num(wangeL),
-    num(firstL),
-    num(traufL),
-    num(gaubeSparren),
-  );
-
-  return (
-    <div className="flex flex-col gap-4">
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Schleppdachgaube</h2>
-        <Feld label="Sparrenlänge gesamt" einheit="m" wert={sges} onWert={setSges} />
-        <Feld label="Dachüberstand" einheit="m" wert={ue} onWert={setUe} />
-        <Feld label="Neigung Hauptdach" einheit="°" wert={alpha} onWert={setAlpha} />
-        <Feld label="Neigung Gaube" einheit="°" wert={beta} onWert={setBeta} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Gaubentiefe" wert={zahl(s.tiefe)} einheit="m" gross />
-          <Ergebnis label="Gaubenhöhe am Anschluss" wert={zahl(s.hoehe)} einheit="m" />
-          <Ergebnis label="Anschlusslänge" wert={zahl(s.anschluss)} einheit="m" />
-          <Ergebnis label="Vordere Sichthöhe" wert={zahl(s.sichthoehe)} einheit="m" />
-          <Ergebnis label="Wangenfläche (je Seite)" wert={zahl(s.wange)} einheit="m²" />
-        </div>
-        <Hinweis>
-          Buch S. 540. Die Gaubenhöhe kommt von der Neigung des HAUPTdachs: Über die
-          Gaubentiefe hinweg steigt das Hauptdach um t · tan α. Die flachere Gaubenneigung
-          bestimmt nur, wie weit die Gaube nach vorn reicht.
-        </Hinweis>
-      </Block>
-
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Satteldachgaube</h2>
-        <Feld label="Wangenhöhe" einheit="m" wert={wangeH} onWert={setWangeH} />
-        <Feld label="Wangenlänge" einheit="m" wert={wangeL} onWert={setWangeL} />
-        <Feld label="Firstlänge" einheit="m" wert={firstL} onWert={setFirstL} />
-        <Feld label="Trauflänge" einheit="m" wert={traufL} onWert={setTraufL} />
-        <Feld label="Sparrenlänge Gaube" einheit="m" wert={gaubeSparren} onWert={setGaubeSparren} />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Kehllänge" wert={zahl(g.kehle)} einheit="m" gross />
-          <Ergebnis label="Neigung Hauptdach" wert={zahl(g.neigung, 1)} einheit="°" />
-          <Ergebnis label="Anschlusslänge Wange" wert={zahl(g.anschluss)} einheit="m" />
-          <Ergebnis label="Kehlwinkel" wert={zahl(g.kehlwinkel, 1)} einheit="°" />
-          <Ergebnis label="Gaubendachfläche" wert={zahl(g.dachflaeche)} einheit="m²" />
-        </div>
-        <Hinweis>
-          Buch S. 541. First und Traufe der Gaube sind unterschiedlich lang — das Gaubendach
-          ist je Seite ein Trapez, und die Kehle läuft schräg über die Differenz.
-        </Hinweis>
-      </Block>
-    </div>
-  );
-}
-
-function ScharenRechner() {
-  const [scharbreite, setScharbreite] = useState("0.52");
-  const [hafte, setHafte] = useState("4");
-  const [hafteEck, setHafteEck] = useState("6.4");
-  const [dachlaenge, setDachlaenge] = useState("12");
-  const [nutzbreite, setNutzbreite] = useState("0.525");
-  const [deckbreite, setDeckbreite] = useState("20");
-  const [decklaenge, setDecklaenge] = useState("34");
-
-  const sch = scharen(num(dachlaenge), num(nutzbreite));
-
-  return (
-    <div className="flex flex-col gap-4">
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Haftabstand</h2>
-        <Feld label="Scharbreite" einheit="m" wert={scharbreite} onWert={setScharbreite} schritt="0.01" />
-        <Feld label="Hafte je m² (Fläche)" einheit="St/m²" wert={hafte} onWert={setHafte} schritt="0.1" />
-        <Feld label="Hafte je m² (Rand/Ecke)" einheit="St/m²" wert={hafteEck} onWert={setHafteEck} schritt="0.1" />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis
-            label="Abstand in der Fläche"
-            wert={zahl(haftabstand(num(scharbreite), num(hafte)) * 100, 1)}
-            einheit="cm"
-            gross
-          />
-          <Ergebnis
-            label="Abstand am Rand"
-            wert={zahl(haftabstand(num(scharbreite), num(hafteEck)) * 100, 1)}
-            einheit="cm"
-          />
-          <Ergebnis
-            label="Laufende Meter Schar je m²"
-            wert={zahl(num(scharbreite) > 0 ? 1 / num(scharbreite) : 0)}
-            einheit="lfm"
-          />
-        </div>
-        <Hinweis>
-          1 / Scharbreite ergibt die laufenden Meter Schar auf einem Quadratmeter; darauf
-          werden die geforderten Hafte verteilt. Am Rand und in der Ecke greift der Windsog
-          stärker an — dort sind mehr Hafte je m² gefordert, der Abstand rückt zusammen.
-        </Hinweis>
-      </Block>
-
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Scharen einteilen</h2>
-        <Feld label="Dachlänge (Traufe)" einheit="m" wert={dachlaenge} onWert={setDachlaenge} />
-        <Feld label="Nutzbare Scharbreite" einheit="m" wert={nutzbreite} onWert={setNutzbreite} schritt="0.005" />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Volle Scharen" wert={String(sch.anzahl)} einheit="Stück" gross />
-          <Ergebnis label="Passbreite je Ortgang" wert={zahl(sch.passbreite * 100, 1)} einheit="cm" />
-        </div>
-        <Hinweis>
-          Die nutzbare Breite ist kleiner als die Zuschnittbreite — die Falze zehren den
-          Rest auf. Der Überhang wird auf beide Ortgänge verteilt, darum halbiert.
-        </Hinweis>
-      </Block>
-
-      <Block>
-        <h2 className="mb-2 text-sm font-medium">Ziegel je m²</h2>
-        <Feld label="Deckbreite" einheit="cm" wert={deckbreite} onWert={setDeckbreite} schritt="0.5" />
-        <Feld label="Decklänge (Lattweite)" einheit="cm" wert={decklaenge} onWert={setDecklaenge} schritt="0.5" />
-        <div className="mt-3 border-t pt-3" style={{ borderColor: "var(--border)" }}>
-          <Ergebnis label="Bedarf" wert={zahl(ziegelProQm(num(deckbreite), num(decklaenge)), 1)} einheit="St/m²" gross />
-        </div>
-        <Hinweis>
-          10000 / (Deckbreite · Decklänge). Deckbreite und Decklänge sind die überdeckten
-          Maße, nicht die Ziegelmaße — die Überdeckung ist bereits abgezogen. Den Wert
-          kannst du direkt im Reiter „Material“ weiterverwenden.
-        </Hinweis>
-      </Block>
-    </div>
-  );
+    <Hinweis>Dicke in Zentimetern eingeben: 20 cm = 0,20 m. λ bezeichnet die Wärmeleitfähigkeit. Dieses eindimensionale Schichtenmodell enthält keine Wärmebrücken, Befestigungen oder Luftschichten; dafür ist ein gesonderter Nachweis nötig.</Hinweis>
+    <Link href="/lernen/lf10/ueben?typ=rechnung" className="mt-3 inline-block text-sm font-medium underline underline-offset-4" style={{ color: "var(--accent)" }}>Passende Rechenaufgaben üben</Link>
+  </Block>;
 }

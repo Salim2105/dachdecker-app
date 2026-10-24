@@ -21,11 +21,12 @@ export function Fortsetzen() {
   if (typeof window === "undefined") return null;
   const kandidaten = [...new Set([letzte, lf].filter(Boolean))].flatMap((id) => {
     const einheit = id.endsWith("-einheit");
-    const feld = getLernfeld(einheit ? id.slice(0, -8) : id);
+    const rechnen = id.endsWith("-rechnung");
+    const feld = getLernfeld(einheit ? id.slice(0, -8) : rechnen ? id.slice(0, -9) : id);
     if (id !== "heute" && !feld) return [];
     const stand = ladeSitzungsInfo(id);
     if (!stand) return [];
-    return [{ ...stand, href: id === "heute" ? "/heute" : einheit ? `/lernen/${feld!.id}` : `/lernen/${feld!.id}/ueben`,
+    return [{ ...stand, href: id === "heute" ? "/heute" : einheit ? `/lernen/${feld!.id}` : `/lernen/${feld!.id}/ueben${rechnen ? "?typ=rechnung" : ""}`,
       titel: id === "heute" ? "Heutige Runde fortsetzen" : einheit ? "Lerneinheit fortsetzen" : "Übung fortsetzen",
       thema: id === "heute" ? "Heute dran" : feld!.titel }];
   });

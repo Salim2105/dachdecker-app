@@ -41,11 +41,12 @@ export default function LernenPage() {
 
   return (
     <div>
-      <h1 className="text-[26px] font-semibold tracking-tight">Lernfelder</h1>
+      <h1 className="text-[26px] font-semibold tracking-tight">Dein Lernpfad</h1>
       <p className="mt-1 text-[15px]" style={{ color: "var(--text-muted)" }}>
-        1. Lehrjahr &amp; darüber hinaus
+        Deine Lernfelder, unterteilt in Kapitel und kurze Einheiten
       </p>
       <div className="mt-4">
+        <Link href="/lernen/lf07" className="werkstatt-karte mb-4 block"><span className="text-sm" style={{color:"var(--accent)"}}>NEUE LERNWERKSTATT</span><h2 className="mt-2 text-xl font-semibold">LF7 · Dachentwässerung Schritt für Schritt</h2><p className="mt-2" style={{color:"var(--text-muted)"}}>Sechs Kapitel · 18 Einheiten · Lernziele, Begriffe und aktive Aufgaben</p><span className="mt-3 block underline" style={{color:"var(--accent)"}}>Mit dem Wasserweg beginnen →</span></Link>
         <Link href="/lernweg" className="my-4 block rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
           <span className="block font-semibold">Mit dem geführten Lernweg starten</span>
           <span className="mt-1 block" style={{ color: "var(--text-muted)" }}>Sechs Grundlagen-Einheiten: verstehen, erinnern, rechnen und anwenden.</span>
@@ -82,7 +83,7 @@ export default function LernenPage() {
             <h2 className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
               {g.label}
             </h2>
-            <div className="flex flex-col gap-2">
+            <div className="grid gap-3 xl:grid-cols-2">
               {items.map((lf) => {
                 const k = karte(lf.id);
                 return (
@@ -99,7 +100,7 @@ export default function LernenPage() {
           <h2 className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
             Wirtschafts- und Sozialkunde
           </h2>
-          <div className="flex flex-col gap-2">
+          <div className="grid gap-3 xl:grid-cols-2">
             {wiso.map((lf) => {
               const k = karte(lf.id);
               return (

@@ -11,7 +11,7 @@ export function LernzeitWahl() {
       <div className="flex gap-2">
         {LERNZEITEN.map((n) => (
           <button key={n} onClick={() => lernzeitStore.set(n)} aria-pressed={n === minuten}
-            className="min-h-11 flex-1 rounded-xl border px-3 py-2 text-sm"
+            className="min-h-11 min-w-0 flex-1 rounded-xl border px-3 py-2 text-sm"
             style={{ borderColor: "var(--border)", background: n === minuten ? "var(--accent)" : "var(--surface)", color: n === minuten ? "var(--accent-text)" : "var(--text)" }}>
             {n} Minuten
           </button>

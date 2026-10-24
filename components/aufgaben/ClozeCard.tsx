@@ -1,5 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
+import { useAufgabenId, loescheAufgabenEntwurf, useAufgabenEntwurf, istTextRecord } from "@/components/useAufgabenEntwurf";
 import type { ClozeAufgabe, Bewertung, AufgabeModus, BewertungsKontext } from "@/content/schema";
 import { parseCloze, pruefeLuecke } from "@/lib/cloze";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
@@ -31,8 +32,9 @@ export function ClozeCard({
   modus?: AufgabeModus;
 }) {
   const aufloesen = modus === "uebung";
+  const scopedId = useAufgabenId(aufgabe.id);
   const teile = useMemo(() => parseCloze(aufgabe.text), [aufgabe.text]);
-  const [eingaben, setEingaben] = useState<Record<number, string>>({});
+  const [eingaben, setEingaben] = useAufgabenEntwurf<Record<number, string>>(aufgabe.id, `${modus}-luecken`, {}, istTextRecord);
   const [geprueft, setGeprueft] = useState(false);
   const [bewertung, setBewertung] = useState<Bewertung | null>(null);
   const [aktiveLuecke, setAktiveLuecke] = useState<number | null>(null);
@@ -61,6 +63,7 @@ export function ClozeCard({
     pruefeLuecke(eingabe ?? "", antwort, aufgabe.akzeptiert?.[antwort] ?? []);
 
   const pruefen = () => {
+    loescheAufgabenEntwurf(scopedId);
     setGeprueft(true);
     const richtig = gaps.filter((g) => istGapKorrekt(g.antwort, eingaben[g.index] ?? "")).length;
     const b: Bewertung =

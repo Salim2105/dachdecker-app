@@ -1,5 +1,6 @@
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { getAufgaben, getLernfelder } from "@/lib/content";
+import { LF7_EXAM_METADATA, type ExamLevel } from "@/lib/examMetadata";
 
 /**
  * Nur diese Aufgabentypen werden automatisch bewertet. draw und fachbegriff
@@ -18,6 +19,7 @@ export interface Pruefungsteil {
   lernfelder: string[];
   anzahl: number;
   minuten: number;
+  stufe?: ExamLevel;
 }
 
 function fachLernfelder(): string[] {
@@ -29,6 +31,21 @@ function fachLernfelder(): string[] {
 export function getPruefungsteile(): Pruefungsteil[] {
   const alle = fachLernfelder();
   return [
+    {
+      id: "lf07-grundlagen", titel: "Grundlagen", stufe: "grundlagen",
+      beschreibung: "LF7: Bauteile, Begriffe und einzelne Zusammenhänge der Dachentwässerung.",
+      lernfelder: ["lf07"], anzahl: 10, minuten: 15,
+    },
+    {
+      id: "lf07-anwendung", titel: "Anwendung", stufe: "anwendung",
+      beschreibung: "LF7: Rechenwege, Materialwahl und Entscheidungen bei der Ausführung.",
+      lernfelder: ["lf07"], anzahl: 15, minuten: 25,
+    },
+    {
+      id: "lf07-pruefungsnah", titel: "Prüfungsnah", stufe: "pruefungsnah",
+      beschreibung: "LF7: zusammenhängende Entscheidungen, Bemessung und Transfer auf Baustellenfälle.",
+      lernfelder: ["lf07"], anzahl: 20, minuten: 40,
+    },
     {
       id: "teil1",
       titel: "Grundlagen — Lernfeld 1 bis 9",
@@ -79,7 +96,8 @@ export function ziehePruefung(pool: Aufgabe[], anzahl: number, zufall: () => num
 }
 
 export function poolFuer(teil: Pruefungsteil): Aufgabe[] {
-  return teil.lernfelder.flatMap((id) => getAufgaben(id)).filter(istAutoBewertbar);
+  return teil.lernfelder.flatMap((id) => getAufgaben(id)).filter(istAutoBewertbar)
+    .filter((a) => !teil.stufe || LF7_EXAM_METADATA[a.id]?.level === teil.stufe);
 }
 
 export function zieheAufgaben<T>(
@@ -129,6 +147,7 @@ export function noteFuer(prozent: number): Notenstufe {
   return NOTENSCHLUESSEL.find((n) => prozent >= n.ab) ?? NOTENSCHLUESSEL[NOTENSCHLUESSEL.length - 1];
 }
 
+/** @deprecated Nur für alte Protokolle; der neue Prüfungsraum verwendet das Trainingsziel 80 %. */
 export function bestanden(prozent: number): boolean {
   return prozent >= 50;
 }

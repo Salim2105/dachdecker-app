@@ -1,4 +1,6 @@
 "use client";
+import { AufgabenKontext, loescheAufgabenEntwurf } from "@/components/useAufgabenEntwurf";
+import { appStorage } from "@/lib/lernSpeicher";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Aufgabe, Bewertung, BewertungsKontext } from "@/content/schema";
@@ -60,11 +62,11 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   useEffect(() => {
     try {
       if (fertig) {
-        localStorage.removeItem(KEY);
+        appStorage.removeItem(KEY);
         if (letzteSessionStore.getSnapshot() === lfId) letzteSessionStore.set("");
-        leereCalcCache();
+        leereCalcCache(aufgaben.map((a) => `${lfId}:${a.id}`));
       } else {
-        localStorage.setItem(KEY, JSON.stringify({
+        appStorage.setItem(KEY, JSON.stringify({
           index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse,
           aufgabenIds: aufgaben.map((a) => a.id),
         }));
@@ -98,6 +100,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   // werden, bevor es weitergeht.
   const handleErgebnis = (b: Bewertung, kontext?: BewertungsKontext) => {
     if (beantwortet) return;
+    loescheAufgabenEntwurf(`${lfId}:${aktuell.id}`);
     if (nacharbeit) {
       // Abruf direkt nach der Erklärung ist kein Nachweis für langfristiges Wissen.
       // Die Bewertung des ersten Versuchs bestimmt weiterhin die nächste Fälligkeit.
@@ -117,7 +120,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         // "heute" ist kein Lernfeld — der Weg zurück führt auf die Startseite.
         zurueck={zurueck ?? (lfId === "heute" ? "/" : `/lernen/${lfId}`)}
         nochmal={() => {
-          leereCalcCache();
+          leereCalcCache(aufgaben.map((a) => `${lfId}:${a.id}`));
           setIndex(0);
           setBeantwortet(false);
           setAntwortWiederhergestellt(false);
@@ -164,7 +167,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         <p className="mt-2 text-sm">Thema: {aktuell.thema}. Gespeicherte Bewertung: {({ richtig: "Richtig", teilweise: "Teilweise richtig", falsch: "Noch üben" })[(nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index]]}.</p>
         <p className="mt-2 text-sm">Du kannst die Erklärung noch einmal lesen und danach weitermachen. Deine Bewertung bleibt erhalten.</p>
         <Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} />
-      </div> : <AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} />}
+      </div> : <AufgabenKontext.Provider value={lfId}><AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} /></AufgabenKontext.Provider>}
 
       {beantwortet && (
         <button

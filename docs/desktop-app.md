@@ -37,7 +37,7 @@ Das öffnet die App direkt aus dem Projekt (gut zum Testen).
 
 - `next.config.ts`: mit `EXPORT=1` baut Next reine statische Dateien nach `out/`.
 - `electron/main.js`: startet einen winzigen lokalen Server auf `127.0.0.1`
-  (zufälliger Port) und öffnet das Fenster darauf. Externe Links (Referenzen)
+  (fester Port: 39217 beziehungsweise 39218 für Dachdecker Neu) und öffnet das Fenster darauf. Externe Links (Referenzen)
   gehen im normalen Browser auf.
 - `electron-builder.yml`: baut die unsignierte `.app` (arm64 / Apple Silicon),
   ohne `node_modules`, mit dem Export als mitgelieferte Dateien.
@@ -49,3 +49,9 @@ Das ist ein eigenes Thema: Eine echte iOS-App braucht Xcode + Apple-ID zum
 Signieren (gratis = 7 Tage gültig, 99 $/Jahr = dauerhaft). Ohne Apple bleibt der
 Weg „Zum Home-Bildschirm" (App-Icon) — offline dann nur über lokales HTTPS.
 Siehe Gespräch; wird separat entschieden.
+
+## Lernwerkstatt-Update
+
+Die neue breite Oberfläche startet mit 1280 × 900 Pixeln. Rechner und Glossar liegen rechts neben der Aufgabe. Der Lernspeicher verwendet IndexedDB; alte lokale Lernstände werden beim ersten Öffnen übernommen. Vollständige ZIP-Sicherungen einschließlich Fotos findest du unter „Lernstand & Sicherungen“.
+
+Dachdecker Neu und die alte Dachdecker-App haben getrennte Benutzerverzeichnisse. Beim Aktualisieren derselben Variante bleibt ihr Benutzerverzeichnis erhalten. Übertrage Daten zwischen Varianten mit Export/Import, bevor du eine alte Variante entfernst. Native Installation: `bash scripts/install-mac-neu.sh`.

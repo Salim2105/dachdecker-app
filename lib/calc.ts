@@ -1,3 +1,4 @@
+import { appStorage } from "@/lib/lernSpeicher";
 import { evaluate } from "mathjs";
 import type { CalcParameter, CalcSchritt } from "@/content/schema";
 
@@ -47,13 +48,15 @@ export function pruefeAntwort(eingabe: number, loesung: number, toleranzProzent:
   return Math.abs(eingabe - loesung) <= toleranz + 1e-9;
 }
 
-// Gemerkte Zufallszahlen aller Rechenaufgaben verwerfen, damit ein neuer
-// Durchgang (Nochmal üben / neue Prüfung) frische Zahlen zieht.
-export function leereCalcCache(): void {
+// Nur die abgeschlossene Runde zurücksetzen. Andere offene Rechnungen behalten
+// ihre Zahlen und Eingaben, auch wenn sie später wieder geöffnet werden.
+export function leereCalcCache(aufgabenIds: readonly string[]): void {
   if (typeof window === "undefined") return;
   try {
-    for (const k of Object.keys(sessionStorage))
-      if (k.startsWith("dd-calc-")) sessionStorage.removeItem(k);
+    for (const id of aufgabenIds) {
+      appStorage.removeItem(`dd-calc-${id}`);
+      for (const key of Object.keys(appStorage)) if (key.startsWith(`dd-entwurf-${id}-`)) appStorage.removeItem(key);
+    }
   } catch {}
 }
 

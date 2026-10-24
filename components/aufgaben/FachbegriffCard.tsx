@@ -77,7 +77,7 @@ export function FachbegriffCard({
             <button
               onClick={() => bewerten("richtig")}
               className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
-              style={{ background: "var(--ok)", color: "#08281f" }}
+              style={{ background: "var(--ok)", color: "var(--ok-text)" }}
             >
               Gewusst
             </button>

@@ -3,126 +3,78 @@ import { useState } from "react";
 import type { DrawAufgabe, Bewertung } from "@/content/schema";
 import { SafeSvg } from "@/components/SafeSvg";
 import { Erklaerung } from "@/components/aufgaben/Erklaerung";
+import { ZeichenFlaeche } from "@/components/zeichnen/ZeichenFlaeche";
+import { PapierZeichnung } from "@/components/zeichnen/PapierZeichnung";
+import { ladeZeichenEntwurf, speichereZeichenEntwurf } from "@/lib/zeichenSpeicher";
+import { selbstBewerten, type ZeichenEntwurf } from "@/lib/zeichenEntwurf";
 
-/**
- * Zeichenaufgabe: auf Papier zeichnen, sich festlegen, dann vergleichen.
- *
- * Die Reihenfolge ist der Punkt. Vorher stand die Musterlösung ZUERST und die
- * Bewertung danach — man urteilte also über die eigene Zeichnung, nachdem man
- * die richtige gesehen hatte. Das ist Rückschaufehler in Reinform: Alles wirkt
- * vertraut, sobald es vor einem liegt ("wusste ich doch"). Der Klick "Richtig"
- * verdoppelt aber das Wiederholungsintervall (lib/progress.ts:12) — fünf
- * großzügige Klicks schieben eine Aufgabe von 2 auf 32 Tage. Bis zur Prüfung
- * kommt sie dann nicht mehr wieder.
- *
- * Jetzt: erst festlegen, dann aufdecken. Das Urteil ist weniger informiert,
- * aber unverzerrt — und für die Wiederholungsplanung ist unverzerrt besser,
- * denn der Rückschaufehler zieht systematisch in eine Richtung, Unsicherheit
- * dagegen streut. Die Musterlösung wird damit zur Rückmeldung statt zur
- * Vorlage für das eigene Urteil.
- */
-const LABELS: Record<Bewertung, string> = {
-  richtig: "Sitzt",
-  teilweise: "Halb",
-  falsch: "Nochmal",
-};
+const LABELS: Record<Bewertung, string> = { richtig: "Sitzt", teilweise: "Halb", falsch: "Nochmal" };
 
-export function DrawCard({
-  aufgabe,
-  onErgebnis,
-}: {
+/** Eigenen Versuch zuerst festhalten, anschließend anhand sichtbarer Kriterien vergleichen. */
+export function DrawCard({ aufgabe, onErgebnis, anfangsBewertung }: {
   aufgabe: DrawAufgabe;
   onErgebnis: (b: Bewertung) => void;
+  /** Nur für den wiederhergestellten aktuellen Versuch; frühere Urteile schließen neue Übungen nicht ab. */
+  anfangsBewertung?: Bewertung;
 }) {
-  const [bewertung, setBewertung] = useState<Bewertung | null>(null);
+  const [entwurf, setEntwurf] = useState(() => ladeZeichenEntwurf(aufgabe.id));
+  const [bewertung, setBewertung] = useState<Bewertung | null>(anfangsBewertung ?? null);
+  const [speicherFehler, setSpeicherFehler] = useState("");
 
-  const bewerten = (b: Bewertung) => {
+  function aktualisieren(neu: ZeichenEntwurf): boolean {
+    setEntwurf(neu);
+    try { speichereZeichenEntwurf(neu); setSpeicherFehler(""); return true; }
+    catch { setSpeicherFehler("Dein Entwurf konnte nicht dauerhaft gespeichert werden. Lass die Aufgabe geöffnet und sichere deine Zeichnung als SVG beziehungsweise das Originalfoto."); return false; }
+  }
+  function bewerten(b: Bewertung) {
+    if (bewertung !== null) return;
+    aktualisieren({ ...entwurf, kriterien: [], selbstbewertung: selbstBewerten(b) });
     setBewertung(b);
     onErgebnis(b);
-  };
+  }
 
-  return (
-    <div>
-      <div
-        className="mb-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium"
-        style={{ background: "var(--surface-2)", color: "var(--accent)" }}
-      >
-        ✎ Zeichnen
-      </div>
-      <p className="text-base font-medium leading-relaxed">{aufgabe.aufgabentext}</p>
+  return <div>
+    <div className="mb-3 inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium" style={{ background: "var(--surface-2)", color: "var(--accent)" }}>✎ Zeichenwerkstatt</div>
+    <p className="text-base font-medium leading-relaxed">{aufgabe.aufgabentext}</p>
+    {aufgabe.vorgabeSvg && <SafeSvg markup={aufgabe.vorgabeSvg} className="my-4 flex justify-center rounded-xl border p-3 [&_svg]:max-w-full" />}
+    <p className="mt-3 text-sm" style={{ color: "var(--text-muted)" }}>Zeichne direkt oder auf Papier. Schätze deinen Versuch ein, bevor du die Musterlösung ansiehst. Das Ergebnis ist ausdrücklich deine Selbsteinschätzung; die App bewertet freie Zeichnungen nicht automatisch.</p>
 
-      {aufgabe.vorgabeSvg && (
-        <SafeSvg
-          markup={aufgabe.vorgabeSvg}
-          className="my-4 flex justify-center rounded-lg border p-3"
-        />
-      )}
-
-      {bewertung === null ? (
-        <>
-          <p className="mt-4 text-sm" style={{ color: "var(--text-muted)" }}>
-            Zeichne die Lösung auf Papier oder deinem iPad. Wenn du fertig bist, leg dich fest —
-            danach siehst du die Musterlösung.
-          </p>
-          <p className="mt-4 mb-2 text-sm font-medium">Wie sicher bist du?</p>
-          <div className="flex gap-2">
-            <button
-              onClick={() => bewerten("richtig")}
-              className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
-              style={{ background: "var(--ok)", color: "#08281f" }}
-            >
-              {LABELS.richtig}
-            </button>
-            <button
-              onClick={() => bewerten("teilweise")}
-              className="min-h-14 flex-1 rounded-xl border py-3 text-sm font-medium"
-              style={{ borderColor: "var(--border)", color: "var(--text)" }}
-            >
-              {LABELS.teilweise}
-            </button>
-            <button
-              onClick={() => bewerten("falsch")}
-              className="min-h-14 flex-1 rounded-xl py-3 text-sm font-medium"
-              style={{ background: "var(--bad)", color: "#2a0d0d" }}
-            >
-              {LABELS.falsch}
-            </button>
-          </div>
-        </>
-      ) : (
-        <div className="mt-4">
-          {/* Was man vorher gesagt hat, bleibt sichtbar — sonst korrigiert man
-              es beim Vergleichen still nach oben. */}
-          <p className="mb-3 text-sm" style={{ color: "var(--text-muted)" }}>
-            Du hast getippt:{" "}
-            <span className="font-semibold" style={{ color: "var(--text)" }}>
-              {LABELS[bewertung]}
-            </span>
-          </p>
-          <p className="mb-2 text-sm font-medium" style={{ color: "var(--text-muted)" }}>
-            Musterlösung
-          </p>
-          <SafeSvg
-            markup={aufgabe.loesungSvg}
-            className="flex justify-center rounded-lg border p-3"
-          />
-          <ol className="mt-3 flex flex-col gap-2 text-sm">
-            {aufgabe.schritte.map((s, i) => (
-              <li key={i} className="flex gap-2">
-                <span
-                  className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full text-xs"
-                  style={{ background: "var(--surface-2)", color: "var(--accent)" }}
-                >
-                  {i + 1}
-                </span>
-                <span style={{ color: "var(--text)" }}>{s}</span>
-              </li>
-            ))}
-          </ol>
-
-          <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
-        </div>
-      )}
+    <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Zeichenweg">
+      {([['digital', 'Direkt zeichnen'], ['papier', 'Auf Papier zeichnen']] as const).map(([modus, label]) => <button key={modus} type="button" aria-pressed={entwurf.modus === modus} className="min-h-11 rounded-xl border px-4 py-2 text-sm font-medium" style={{ borderColor: "var(--border)", background: entwurf.modus === modus ? "var(--surface-2)" : "var(--surface)", color: "var(--text)" }} onClick={() => aktualisieren({ ...entwurf, modus })}>{label}</button>)}
     </div>
-  );
+    <div className={bewertung !== null ? "mt-4 grid items-start gap-4 xl:grid-cols-2" : ""}>
+      <div className="min-w-0">
+        {bewertung !== null && <h3 className="text-sm font-semibold">Deine Zeichnung</h3>}
+        {entwurf.modus === "digital"
+          ? <ZeichenFlaeche entwurf={entwurf} onChange={aktualisieren} titel={aufgabe.aufgabentext} />
+          : <PapierZeichnung aufgabenId={aufgabe.id} foto={entwurf.foto} onChange={(foto) => aktualisieren({ ...ladeZeichenEntwurf(aufgabe.id), foto })} />}
+      </div>
+      {bewertung !== null && <div className="min-w-0 space-y-3 rounded-xl border p-4" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+        <h3 className="text-sm font-semibold">Musterlösung</h3>
+        <SafeSvg markup={aufgabe.loesungSvg} className="flex justify-center overflow-auto rounded-lg border p-3 [&_svg]:h-auto [&_svg]:max-w-full" />
+        <p className="text-sm" style={{ color: "var(--text-muted)" }}>Vergleiche selbst: Welche Kriterien erfüllt deine Zeichnung? Die Häkchen sind deine eigene Prüfung und ändern deine erste Einschätzung nicht.</p>
+        <ul className="space-y-3 text-sm">
+          {aufgabe.schritte.map((schritt, i) => <li key={i}>
+            <label className="flex min-h-11 items-start gap-3"><input type="checkbox" className="mt-1 shrink-0" checked={entwurf.kriterien[i] ?? false} onChange={(e) => {
+              const kriterien = [...entwurf.kriterien];
+              for (let j = 0; j <= i; j++) if (typeof kriterien[j] !== "boolean") kriterien[j] = false;
+              kriterien[i] = e.target.checked; aktualisieren({ ...entwurf, kriterien });
+            }} /><span>{schritt}</span></label>
+          </li>)}
+        </ul>
+        <label className="block text-sm font-medium">Das verbessere ich beim nächsten Versuch
+          <textarea className="mt-2 min-h-24 w-full rounded-lg border p-3 text-sm" maxLength={4000} value={entwurf.notizen} onChange={(e) => aktualisieren({ ...entwurf, notizen: e.target.value })} />
+        </label>
+        <Erklaerung text={aufgabe.erklaerung} quelle={aufgabe.quelle} />
+      </div>}
+    </div>
+
+    {speicherFehler ? <p role="alert" className="mt-3 text-sm" style={{ color: "var(--bad)" }}>{speicherFehler}</p> : <p className="mt-3 text-xs" style={{ color: "var(--text-muted)" }}>Dein Entwurf bleibt bei dieser Aufgabe auf diesem Gerät erhalten.</p>}
+    {bewertung === null ? <div className="mt-5">
+      <p className="mb-2 text-sm font-medium">Wie sicher bist du?</p>
+      <div className="flex flex-wrap gap-2">
+        {(["richtig", "teilweise", "falsch"] as const).map((b) => <button key={b} type="button" onClick={() => bewerten(b)} className="min-h-14 min-w-24 flex-1 rounded-xl border px-3 py-3 text-sm font-medium" style={{ borderColor: "var(--border)", background: b === "richtig" ? "var(--ok)" : b === "falsch" ? "var(--bad)" : "var(--surface)", color: b === "richtig" ? "var(--ok-text)" : b === "falsch" ? "var(--bad-text)" : "var(--text)" }}>{LABELS[b]}</button>)}
+      </div>
+    </div> : <p className="mt-4 rounded-xl border p-3 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface-2)" }}>Du hast getippt: <strong>{LABELS[bewertung]}</strong> · Als Selbsteinschätzung gespeichert. Prüfe deine Zeichnung in Ruhe mit den Kriterien.</p>}
+  </div>;
 }
