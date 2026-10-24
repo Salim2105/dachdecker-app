@@ -4,6 +4,8 @@ Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nu
 
 Neu in 0.4: [Kurze Einheiten für alle Lernfelder, Fachmathe und Sprachwerkstätten](docs/lernwerkstatt-0.4.md). Die [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben die gemeinsame Oberfläche.
 
+Für Kollegen mit iPhone: [Test-Link ohne Anmeldung erstellen](docs/kollegen-probe.md) mit `bash scripts/probe-teilen.sh`.
+
 ## Die vier Arbeitsbereiche
 
 - **Meine Übersicht:** Weiterlernen, Tagesempfehlung und nächste Wiederholungen.

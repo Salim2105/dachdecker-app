@@ -16,6 +16,8 @@
 # next.js
 /.next/
 /out/
+/.probe-export/
+/.probe-link.txt
 
 # Automatisch aus den jeweiligen Build-Dateien erzeugter Offline-Cache.
 /public/sw.js
