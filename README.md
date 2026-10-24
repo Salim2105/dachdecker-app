@@ -2,12 +2,12 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in 0.3: [Illustrierte Lernwelten und gestalteter Lernpfad](docs/gestaltung-0.3.md).
+Neu in 0.4: [Kurze Einheiten für alle Lernfelder, Fachmathe und Sprachwerkstätten](docs/lernwerkstatt-0.4.md). Die [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben die gemeinsame Oberfläche.
 
 ## Die vier Arbeitsbereiche
 
 - **Meine Übersicht:** Weiterlernen, Tagesempfehlung und nächste Wiederholungen.
-- **Lernpfad:** Lernfelder, Kapitel und überschaubare Einheiten. LF7 ist das redaktionell ausgearbeitete Muster mit sechs Kapiteln und 18 Einheiten.
+- **Lernpfad:** Alle vorhandenen Lernfelder, Anhänge und WiSo mit redigierten kurzen Einheiten. Dazu Fachmathe, Deutsch fürs Handwerk und Baustellenenglisch.
 - **Übungsraum:** Zuordnungen, Reihenfolgen, Skizzenfehler, Baustellenfälle, freies Üben und digitales Zeichnen oder Papierfoto.
 - **Prüfungsraum:** drei LF7-Stufen und gemischtes Training; optionaler Timer, gespeicherte Antworten und nachvollziehbare Punktwertung mit internem Trainingsziel 80 %.
 
@@ -18,8 +18,9 @@ Rechner und Begriffshilfe öffnen sich neben der Aufgabe. Indexierte Lernstände
 Die App vollständig beenden. Im bisherigen Projektordner ausführen:
 
 ```bash
-cd ~/Downloads/dachdecker-chatgpt
-git pull --ff-only
+cd ~/Downloads/dachdecker-chatgpt &&
+(git restore -- public/sw.js 2>/dev/null || true) &&
+git pull --ff-only origin codex/lernverbesserungen &&
 bash scripts/install-mac-neu.sh
 ```
 
@@ -50,6 +51,8 @@ npm run export
 
 ## Inhaltspflege und nächste Abnahme
 
-Die LF7-Einheiten stehen in `content/lf07/lernwerkstatt.ts`. IDs, Inhaltsversion, Lernziel, Quelllektionen, Kontrollaufgaben und Aktivität sind ausdrücklich zugeordnet. Für die übrigen Lernfelder sind Quellenabschnitte und Aufgaben im gemeinsamen Einheitenaufbau verfügbar; die Zuordnungen in `content/curriculum-verknuepfungen.json` können redaktionell geprüft und geändert werden, ohne Aufgabentitel angleichen zu müssen. Die vollständige inhaltliche Überarbeitung der übrigen Lernfelder folgt nach Erprobung des LF7-Musters.
+Die LF7-Einheiten stehen in `content/lf07/lernwerkstatt.ts`, alle weiteren redigierten Einheiten in `content/lernwerkstatt/`. IDs, Inhaltsversion, Lernziel, Quelllektionen, Kontrollaufgaben und Aktivität sind ausdrücklich zugeordnet. Verknüpfungen dürfen passende Aufgaben aus anderen Lernfeldern verwenden. Quellenlektionen und bestehende Aufgaben-IDs bleiben erhalten. Frühere Notizen und Lernstände sind im Kursarchiv lesbar.
+
+Fachmathe und Sprache stehen in `lib/matheGrundlagen.ts` und `lib/sprachWerkstatt.ts`. `lib/lerndiagnose.ts` erzeugt begründete Übungshinweise aus jüngsten Antworten und genutzten Hilfen. Der [Erprobungsmodus](docs/ERPROBUNG.md) unterstützt echte beobachtete Tests; tatsächliche Erprobungen mit Azubis stehen noch aus.
 
 [Funktionsabnahme und Lernendentest](docs/lernwerkstatt-abnahme.md) · [Mac-App](docs/desktop-app.md) · [Quellenstand](docs/FACHLICHER-PRUEFSTAND.md)

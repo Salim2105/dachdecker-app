@@ -85,3 +85,11 @@ export function getAufgaben(lfId: string): Aufgabe[] {
 export function getLektionen(lfId: string): Lektion[] {
   return filterSichtbar((INHALTE[lfId]?.lektionen as Lektion[]) ?? []);
 }
+
+let aufgabenNachId: Map<string, Aufgabe> | undefined;
+
+/** Explicit curriculum links can cross fields when the same concept is taught. */
+export function getAufgabe(id: string): Aufgabe | undefined {
+  aufgabenNachId ??= new Map(Object.keys(INHALTE).flatMap((lfId) => getAufgaben(lfId)).map((a) => [a.id, a]));
+  return aufgabenNachId.get(id);
+}

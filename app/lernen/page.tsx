@@ -9,6 +9,7 @@ import type { AufgabenFortschritt, Lernfeld } from "@/content/schema";
 import { LearningArtwork } from "@/components/learning/LearningArtwork";
 import { learningTone } from "@/components/learning/learningDesign";
 import styles from "@/components/learning/Learning.module.css";
+import { GrundlagenEntdecken } from "@/components/GrundlagenEntdecken";
 
 const GRUPPEN = [
   { key: 1, label: "1. Lehrjahr", beschreibung: "Dein Fundament fürs Handwerk" },
@@ -60,6 +61,7 @@ export default function LernenPage() {
       <LearningArtwork variant={0} className={styles.heroArt} />
     </Link>
     <Fortsetzen />
+    <GrundlagenEntdecken />
     <div className={styles.shortcuts}>
       <Link href="/lernweg" className={styles.shortcut}>
         <span className={styles.shortcutIcon} aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"><path d="M5 19V7a2 2 0 0 1 2-2h12M5 19h12a2 2 0 0 0 2-2V5M5 19l4-4m4-4 3-3"/><circle cx="9" cy="15" r="1"/></svg></span>
@@ -82,6 +84,6 @@ export default function LernenPage() {
       <div className={styles.groupTitle}><h2>Wirtschafts- und Sozialkunde</h2><span>Wissen über den Beruf hinaus</span></div>
       <div className={styles.fields}>{wiso.map((lf, index) => lernfeldKarte(lf, index + 2))}</div>
     </section>}
-    <p className={`${styles.hint} mt-6`}><span aria-hidden="true">→</span><span>Unser Tipp: Lernfeld 7 bereitet dich auf LF8–10 vor. Du kannst jeden Bereich öffnen und in deinem Tempo lernen.</span></p>
+    <p className={`${styles.hint} mt-6`}><span aria-hidden="true">→</span><span>Alle Lernfelder, Anhänge und WiSo sind in kurze Einheiten unterteilt. Fachmathe und Sprache ergänzen deinen Lernpfad. Du kannst jeden Bereich öffnen und in deinem Tempo lernen.</span></p>
   </div>;
 }

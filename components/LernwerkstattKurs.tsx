@@ -2,12 +2,15 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import type { Bewertung, BewertungsKontext } from "@/content/schema";
-import { getAufgaben, getLektionen } from "@/lib/content";
+import { getAufgabe, getAufgaben, getLektionen } from "@/lib/content";
 import { getCurriculum, type LernCurriculum, type LernEinheit } from "@/lib/curriculum";
 import { appStorage } from "@/lib/lernSpeicher";
 import { getBegriff, sucheBegriffe } from "@/lib/glossar";
-import { kursStandKey, ladeKursStand, type KursStand } from "@/lib/kursStand";
+import { kursStandKey, ladeKursArchiv, ladeKursStand, type KursStand } from "@/lib/kursStand";
 import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
+import { SafeSvg } from "@/components/SafeSvg";
+import { speichereLernsignal } from "@/lib/lerndiagnose";
+import { bewerteAktivitaet, istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { LernSkizze } from "@/components/LernSkizze";
 import { AktivitaetsKarte } from "@/components/AktivitaetsKarte";
 import { AufgabenKontext } from "@/components/useAufgabenEntwurf";
@@ -32,13 +35,19 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
     const id = window.location.hash.slice(1) || appStorage.getItem(`lernwerkstatt-auswahl-${lfId}`);
     return kurs?.kapitel.some((k) => k.einheiten.some((e) => e.id === id)) ? id : null;
   });
+  useEffect(()=>{
+    const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(kurs?.kapitel.some(k=>k.einheiten.some(e=>e.id===id))?id:null);};
+    window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);
+    return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};
+  },[kurs]);
   if (!kurs) return null;
   if (alteRunde && alteRundeOffen) return <section className="mt-6"><button className="mb-4 min-h-11 underline" onClick={() => setAlteRundeOffen(false)}>← Zu den neuen Kapiteln</button><p className="mb-5">Deine bisherige Übungsrunde ist erhalten geblieben. Du kannst sie hier beenden.</p><SessionRunner aufgaben={alteRunde} lfId={`${lfId}-einheit`} zurueck={`/lernen/${lfId}`} /></section>;
   const einheiten = kurs.kapitel.flatMap((k) => k.einheiten);
+  const archiv = ladeKursArchiv(lfId, einheiten);
   const einheit = einheiten.find((e) => e.id === auswahl);
   function waehle(id: string | null) {
     setAuswahl(id);
-    if (id) { appStorage.setItem(`lernwerkstatt-auswahl-${lfId}`, id); appStorage.setItem("lernwerkstatt-zuletzt", JSON.stringify({ lfId, unitId: id })); }
+    if (id) { appStorage.setItem(`lernwerkstatt-auswahl-${lfId}`, id); appStorage.setItem("lernwerkstatt-zuletzt", JSON.stringify({ lfId, unitId: id })); appStorage.setItem("lernwerkstatt-zuletzt-route", `/lernen/${lfId}#${id}`); }
     else appStorage.removeItem(`lernwerkstatt-auswahl-${lfId}`);
     window.history.replaceState(null, "", `${window.location.pathname}${id ? `#${id}` : ""}`);
     window.scrollTo({ top: 0 });
@@ -51,7 +60,7 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
     {einheit ? <Einheit key={`${einheit.id}:${einheit.version}`} kurs={kurs} einheit={einheit} zurueck={() => waehle(null)} naechste={() => waehle(einheiten[einheiten.indexOf(einheit) + 1]?.id ?? null)} />
     : <>
       <div className={styles.journeyIntro}>
-        <div><h2>Deine Kapitel</h2><p>{kurs.redaktionell ? "Dein Weg durch die Dachentwässerung. Kleine Schritte, eigene Antworten und Aufgaben zum Ausprobieren." : "Dein Wissen wächst mit jedem Schritt. Entdecke die Kapitel und wähle deine nächste kurze Einheit."}</p></div>
+        <div><h2>Deine Kapitel</h2><p>{kurs.redaktionell ? "Dein Weg durch dieses Lernfeld. Kleine Schritte, eigene Antworten und Aufgaben zum Ausprobieren." : "Dein Wissen wächst mit jedem Schritt. Entdecke die Kapitel und wähle deine nächste kurze Einheit."}</p></div>
         <div className={styles.ring} aria-label={`${abgeschlossen} von ${einheiten.length} Einheiten abgeschlossen`}>
           <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="32" fill="none" stroke="var(--border)" strokeWidth="7" /><circle cx="40" cy="40" r="32" fill="none" stroke="var(--brand-teal, #67d8c8)" strokeWidth="7" strokeLinecap="round" strokeDasharray="201.06" strokeDashoffset={201.06 * (1 - abgeschlossen / Math.max(1, einheiten.length))} /></svg>
           <div><strong>{abgeschlossen}<span> / {einheiten.length}</span></strong><span>Einheiten abgeschlossen</span></div>
@@ -80,6 +89,16 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
         })}
       </div>
     </>}
+    {archiv.length > 0 && <details className="mt-7 rounded-2xl border p-4" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
+      <summary className="min-h-11 cursor-pointer font-semibold">Frühere Notizen und Lernstände ({archiv.length})</summary>
+      <p className="mt-3 max-w-prose text-sm" style={{ color: "var(--text-muted)" }}>Deine bisherigen Einträge bleiben erhalten. Sie gehören zu früheren Einheiten oder Fassungen. Überarbeitete Aufgaben haben einen eigenen Lernstand.</p>
+      <ul className="mt-4 space-y-4">{archiv.map((a) => <li key={a.key} className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
+        <h3 className="font-semibold">{einheiten.find((e) => e.id === a.einheitId)?.titel ?? getLektionen(lfId).find((l) => a.einheitId.startsWith(`${l.id}-e`))?.titel ?? "Frühere Lerneinheit"}</h3>
+        <p className="break-words text-sm" style={{ color: "var(--text-muted)" }}>{a.einheitId} · Version {a.version}</p>
+        <p className="mt-2 text-sm">Früherer Stand: {a.abgeschlossen ? "als bearbeitet abgeschlossen" : "angefangen"} · {a.ergebnisse.length} gespeicherte Kontrollantworten{a.selbstbewertung ? " · mit eigener Selbsteinschätzung" : ""}.</p>
+        {a.notiz.trim() && <div className="mt-3"><h4 className="text-sm font-semibold">Deine frühere Notiz</h4><p className="mt-1 whitespace-pre-wrap break-words">{a.notiz}</p></div>}
+      </li>)}</ul>
+    </details>}
   </section>;
 }
 
@@ -88,7 +107,7 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
   const [fehler, setFehler] = useState("");
   const standRef = useRef(stand);
   const { bewerte } = useProgress();
-  const aufgaben = e.aufgabenIds.flatMap((id) => { const a = getAufgaben(kurs.lfId).find((q) => q.id === id); return a ? [a] : []; });
+  const aufgaben = e.aufgabenIds.flatMap((id) => { const a = getAufgabe(id); return a ? [a] : []; });
   const quellen = getLektionen(kurs.lfId).filter((l) => e.lektionIds.includes(l.id));
   function speichern(aenderung: Partial<KursStand>) {
     const neu = { ...standRef.current, ...aenderung };
@@ -98,6 +117,11 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
     catch { setFehler("Dein Entwurf konnte nicht gespeichert werden. Bitte den Lernspeicher prüfen."); }
   }
   useEffect(() => {
+    try {
+      appStorage.setItem(`lernwerkstatt-auswahl-${kurs.lfId}`,e.id);
+      appStorage.setItem("lernwerkstatt-zuletzt",JSON.stringify({lfId:kurs.lfId,unitId:e.id}));
+      appStorage.setItem("lernwerkstatt-zuletzt-route",`/lernen/${kurs.lfId}#${e.id}`);
+    } catch { /* Speicherfehler erscheinen in der gemeinsamen Statusanzeige. */ }
     const hilfe = () => {
       const neu = { ...standRef.current, hilfen: [...new Set([...standRef.current.hilfen, "begriffshilfe"])] };
       standRef.current = neu; setStand(neu);
@@ -105,33 +129,51 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
     };
     window.addEventListener("dachdecker:begriff", hilfe);
     return () => window.removeEventListener("dachdecker:begriff", hilfe);
-  }, [e]);
+  }, [e,kurs.lfId]);
   const aktuell = aufgaben[stand.kontrolleIndex];
   const ergebnis = aktuell && stand.ergebnisse.find((r) => r.id === aktuell.id);
+  const anwendungUnsicher = !!e.aktivitaet && (!stand.aktivitaetGeprueft || !bewerteAktivitaet(e.aktivitaet, stand.aktivitaet).richtig);
   const begriffe = e.begriffe.flatMap((id) => { const b = getBegriff(id) ?? sucheBegriffe(id)[0]; return b ? [b] : []; });
   const phase = (n: number) => { speichern({ phase: n }); window.scrollTo({ top: 0 }); };
+  function aendereAktivitaet(antwort: AktivitaetAntwort) {
+    const vorher = standRef.current;
+    speichern({ aktivitaet: antwort, aktivitaetGeprueft: false, abgeschlossen: false,
+      hilfen: vorher.aktivitaetGeprueft ? [...new Set([...vorher.hilfen, "aktivitaet-rueckmeldung"])] : vorher.hilfen });
+  }
+  function pruefeAktivitaet() {
+    const vorher = standRef.current;
+    if (!e.aktivitaet || vorher.aktivitaetGeprueft || !istAktivitaetVollstaendig(e.aktivitaet, vorher.aktivitaet)) return;
+    const ergebnis = bewerteAktivitaet(e.aktivitaet, vorher.aktivitaet);
+    speichern({ aktivitaetGeprueft: true });
+    speichereLernsignal({ quelle: "fachwissen", aufgabeId: e.aktivitaet.id, lernzielId: e.id,
+      richtig: ergebnis.richtig, kategorie: "fachwissen", hilfen: vorher.hilfen,
+      route: `/lernen/${kurs.lfId}#${e.id}`, thema: e.titel });
+  }
   return <div>
     <button className="mb-5 min-h-11 underline" onClick={zurueck}>← Alle Kapitel</button>
     <header className={styles.unitHeader}>
       <div><span className={styles.unitEyebrow}><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg> Etwa {e.minuten} Minuten · Dein nächster Lernschritt</span><h2>{e.titel}</h2></div>
       <LearningArtwork variant={Math.max(0, kurs.kapitel.findIndex((k) => k.einheiten.some((u) => u.id === e.id)))} className={styles.unitHeaderArt} />
     </header>
+    {stand.uebernommenAusVersion !== undefined && <p className="mb-5 rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>Deine frühere Notiz aus Version {stand.uebernommenAusVersion} bleibt erhalten. Die überarbeiteten Aufgaben haben einen eigenen Lernstand; frühere Bewertungen findest du im Archiv unten.</p>}
     <div className={styles.goal}><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="15" cy="17" r="11"/><circle cx="15" cy="17" r="6"/><path d="M15 17 28 4m-7 0h7v7" strokeLinecap="round"/></svg><p><strong>Dein Lernziel:</strong>{e.lernziel}</p></div>
     <ol className={styles.phases} aria-label="Schritte der Lerneinheit">{PHASEN.map((p, index) => <li key={p}><button aria-current={stand.phase === index ? "step" : undefined} disabled={index > stand.phase} onClick={() => phase(index)}>{index + 1}. {p}</button></li>)}</ol>
     {fehler && <p role="alert" style={{ color: "var(--bad)" }}>{fehler}</p>}
-    {stand.phase === 0 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Kurz verstehen</h3><p className="mt-4 max-w-prose whitespace-pre-line text-lg leading-relaxed"><GlossarText text={e.textschritte[stand.textIndex]} /></p>{e.illustration && <LernSkizze illustration={e.illustration} />}{quellen[0]?.svg && !e.illustration && <details className="mt-4"><summary className="min-h-11 cursor-pointer">Darstellung aus der Lektion ansehen</summary><LektionCard lektion={quellen[0]} /></details>}<div className="mt-5 flex items-center justify-between gap-3"><span className="text-sm">Textschritt {stand.textIndex + 1} von {e.textschritte.length}</span><button className="hauptaktion" onClick={() => stand.textIndex < e.textschritte.length - 1 ? speichern({ textIndex: stand.textIndex + 1 }) : phase(1)}>{stand.textIndex < e.textschritte.length - 1 ? "Nächster Textschritt" : "Jetzt selbst erklären"}</button></div></section>}
+    {stand.phase === 0 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Kurz verstehen</h3><p className="mt-4 max-w-prose whitespace-pre-line text-lg leading-relaxed"><GlossarText text={e.textschritte[stand.textIndex]} /></p>{e.illustration && <LernSkizze illustration={e.illustration} />}{quellen[0]?.svg && !e.illustration && <figure className="my-5 rounded-xl border p-3" style={{borderColor:"var(--border)"}}><SafeSvg markup={quellen[0].svg} className="mx-auto max-w-xl [&_svg]:h-auto [&_svg]:max-w-full" /><figcaption className="mt-2 text-sm" style={{color:"var(--text-muted)"}}>Darstellung zum Quellenabschnitt „{quellen[0].titel}“</figcaption></figure>}<div className="mt-5 flex items-center justify-between gap-3"><span className="text-sm">Textschritt {stand.textIndex + 1} von {e.textschritte.length}</span><button className="hauptaktion" onClick={() => stand.textIndex < e.textschritte.length - 1 ? speichern({ textIndex: stand.textIndex + 1 }) : phase(1)}>{stand.textIndex < e.textschritte.length - 1 ? "Nächster Textschritt" : "Jetzt selbst erklären"}</button></div></section>}
     {stand.phase === 1 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Aus dem Kopf erklären</h3><p>{e.abrufFrage}</p><label className="mt-4 block">Deine Erklärung (du kannst auch laut antworten)<textarea value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} className="mt-2 min-h-32 w-full rounded-xl border p-3" style={{ borderColor: "var(--border)", background: "var(--surface-2)" }} /></label>{!stand.verglichen ? <button className="hauptaktion mt-4" onClick={() => speichern({ verglichen: true })}>Mit der Musterantwort vergleichen</button> : <><div className="mt-5 rounded-xl p-4" style={{ background: "var(--accent-soft)" }}><h4 className="font-semibold">Musterantwort</h4><p><GlossarText text={e.abrufMuster} /></p></div><p>Wie gut passt deine erste Erklärung? Das ist deine Selbsteinschätzung.</p><div className="mt-3 flex flex-wrap gap-3">{([["richtig", "Sicher erklärt"], ["teilweise", "Teilweise erklärt"], ["falsch", "Noch unsicher"]] as const).map(([b, text]) => <button key={b} className="min-h-12 rounded-xl border p-3" aria-pressed={stand.selbstbewertung === b} onClick={() => speichern({ selbstbewertung: b })}>{text}</button>)}</div><button className="hauptaktion mt-5" disabled={!stand.selbstbewertung} onClick={() => phase(2)}>Zu den Kontrollfragen</button></>}</section>}
     {stand.phase === 2 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Selbst beantworten</h3><p className="mb-5">Kontrollfrage {stand.kontrolleIndex + 1} von {aufgaben.length}. Nimm dir Zeit für eine eigene Antwort.</p>{aktuell ? <>{ergebnis ? <div role="status"><strong>Gespeicherte Rückmeldung: {ergebnis.bewertung === "richtig" ? "richtig" : ergebnis.bewertung === "teilweise" ? "teilweise richtig" : "noch üben"}</strong><Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} /></div> : <AufgabenKontext.Provider value={e.id}><AufgabeSwitch key={aktuell.id} aufgabe={aktuell} onErgebnis={(b: Bewertung, kontext?: BewertungsKontext) => {
       if (stand.ergebnisse.some((r) => r.id === aktuell.id)) return;
-      bewerte(aktuell.id, b, { ...kontext, nachErklaerung: true }); speichern({ ergebnisse: [...stand.ergebnisse, { id: aktuell.id, bewertung: b }] });
+      bewerte(aktuell.id, b, { ...kontext, nachErklaerung: true });
+      speichereLernsignal({ quelle: "fachwissen", aufgabeId: aktuell.id, lernzielId: e.id, richtig: b === "richtig", selbstBewertet: kontext?.selbstBewertet === true, kategorie: "fachwissen", hilfen: [...stand.hilfen, ...(kontext?.mitHilfe ? ["auswahlhilfe"] : [])], route: `/lernen/${kurs.lfId}#${e.id}`, thema: e.titel });
+      speichern({ ergebnisse: [...stand.ergebnisse, { id: aktuell.id, bewertung: b }] });
     }} /></AufgabenKontext.Provider>}{ergebnis && <button className="hauptaktion mt-5" onClick={() => stand.kontrolleIndex < aufgaben.length - 1 ? speichern({ kontrolleIndex: stand.kontrolleIndex + 1 }) : phase(3)}>{stand.kontrolleIndex < aufgaben.length - 1 ? "Nächste Kontrollfrage" : "Jetzt anwenden"}</button>}</> : <button className="hauptaktion mt-5" onClick={() => phase(3)}>Zur Anwendung</button>}</section>}
-    {stand.phase === 3 && <>{e.aktivitaet ? <AktivitaetsKarte aktivitaet={e.aktivitaet} antwort={stand.aktivitaet} geprueft={stand.aktivitaetGeprueft} onChange={(antwort) => speichern({ aktivitaet: antwort, aktivitaetGeprueft: false })} onPruefen={() => speichern({ aktivitaetGeprueft: true })} /> : <section className="werkstatt-karte"><h3>Auf die Baustelle übertragen</h3><p>Lies deine Erklärung noch einmal. Wo würde dir dieser Zusammenhang bei einer echten Aufgabe helfen? Ergänze ein konkretes Beispiel in deiner Notiz.</p><label className="mt-4 block">Mein Beispiel<textarea className="mt-2 min-h-28 w-full rounded-xl border p-3" value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} /></label></section>}{(!e.aktivitaet || stand.aktivitaetGeprueft) && <button className="hauptaktion mt-5" onClick={() => { speichern({ phase: 4, abgeschlossen: true }); }}>Einheit abschließen</button>}</>}
+    {stand.phase === 3 && <>{e.aktivitaet ? <AktivitaetsKarte aktivitaet={e.aktivitaet} antwort={stand.aktivitaet} geprueft={stand.aktivitaetGeprueft} onChange={aendereAktivitaet} onPruefen={pruefeAktivitaet} /> : <section className="werkstatt-karte"><h3>Auf die Baustelle übertragen</h3><p>Lies deine Erklärung noch einmal. Wo würde dir dieser Zusammenhang bei einer echten Aufgabe helfen? Ergänze ein konkretes Beispiel in deiner Notiz.</p><label className="mt-4 block">Mein Beispiel<textarea className="mt-2 min-h-28 w-full rounded-xl border p-3" value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} /></label></section>}{(!e.aktivitaet || stand.aktivitaetGeprueft) && <button className="hauptaktion mt-5" onClick={() => { speichern({ phase: 4, abgeschlossen: true }); }}>Einheit abschließen</button>}</>}
     {stand.phase === 4 && <section className={styles.success}>
       <LernIllustration motiv="erfolg" className={styles.successArt} />
       <span className={styles.chip}>✓ Einen Schritt weiter</span>
       <h3>Ein Lernschritt geschafft.</h3><p>{e.lernziel}</p>
-      <div className={styles.successStats}><span><strong>{stand.ergebnisse.length}</strong> Kontrollfragen bearbeitet</span><span><strong>✓</strong> {e.aktivitaet ? "Wissen angewendet" : "Beispiel entwickelt"}</span></div>
-      <p>{stand.ergebnisse.some((r) => r.bewertung !== "richtig") || stand.selbstbewertung !== "richtig" ? "Einige Antworten waren noch unsicher. Wiederhole den Zusammenhang und nutze die Tagesrunde für die nächsten fälligen Aufgaben." : "Du hast die Kontrollfragen bearbeitet. Ob der Zusammenhang auch später sitzt, zeigen deine nächsten Wiederholungen."}</p>
+      <div className={styles.successStats}><span><strong>{stand.ergebnisse.length}</strong> Kontrollfragen bearbeitet</span><span><strong>{anwendungUnsicher ? "↻" : "✓"}</strong> {e.aktivitaet ? anwendungUnsicher ? "Anwendung noch üben" : "Anwendung bearbeitet" : "Beispiel entwickelt"}</span></div>
+      <p>{stand.ergebnisse.some((r) => r.bewertung !== "richtig") || stand.selbstbewertung !== "richtig" || anwendungUnsicher ? "Einige Antworten oder Schritte waren noch unsicher. Wiederhole den Zusammenhang und nutze die Tagesrunde für die nächsten fälligen Aufgaben." : "Du hast die Kontrollfragen bearbeitet. Ob der Zusammenhang auch später sitzt, zeigen deine nächsten Wiederholungen."}</p>
       <button className="hauptaktion mt-5" onClick={naechste}>Nächste Einheit →</button><Link className="ml-4 inline-block underline" href="/heute">Später wiederholen</Link>
       <p className="text-sm">Ein abgeschlossener Lernschritt ist noch kein Nachweis langfristiger Beherrschung.</p>
     </section>}

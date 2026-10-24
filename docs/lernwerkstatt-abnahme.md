@@ -1,10 +1,12 @@
-# Lernwerkstatt 0.2 – Umsetzung und Abnahme
+# Lernwerkstatt – Umsetzung und Abnahme
+
+Aktueller Ausbau: [Version 0.4 mit allen Lernfeldern, Fachmathe und Sprachen](lernwerkstatt-0.4.md).
 
 ## Umgesetzt
 
 Die App besitzt eine breite Mac-Arbeitsfläche, vier Hauptbereiche, eine verstellbare Hilfeseitenleiste, Hell-/Dunkeldesign und Schriftvergrößerung. Vorhandene URLs bleiben gültig. Fällige Wiederholungen bleiben in der Tagesrunde; der Überblick beginnt mit dem nächsten Lernschritt.
 
-LF7 enthält sechs Kapitel mit je drei eigenformulierten Einheiten. Jede Einheit hat eine stabile ID und Version, ein Lernziel, kurze Erklärungen, eine Darstellung, einen freien Abrufversuch, zwei bis vier ausdrücklich verknüpfte Bestandsaufgaben sowie eine aktive Anwendung. Vier Aufgabenformen sind per Tastatur bedienbar. Begriffe sind im Text und in einer Einheitenliste erreichbar. Die übrigen Lernfelder verwenden das gemeinsame Gerüst mit gekürzten Textschritten und gespeicherten Aufgabenverknüpfungen. Das ersetzt noch keine redaktionelle Ausarbeitung jedes einzelnen Kapitels auf LF7-Niveau.
+LF7 enthält sechs Kapitel mit je drei eigenformulierten Einheiten. Jede Einheit hat eine stabile ID und Version, ein Lernziel, kurze Erklärungen, eine Darstellung, einen freien Abrufversuch, zwei bis vier ausdrücklich verknüpfte Bestandsaufgaben sowie eine aktive Anwendung. Vier Aufgabenformen sind per Tastatur bedienbar. Begriffe sind im Text und in einer Einheitenliste erreichbar. Seit 0.4 sind auch alle übrigen Lernfelder, Anhänge und WiSo eigenständig in kurze Einheiten mit Lernziel, Abruf, ausdrücklich verknüpften Kontrollfragen und Aktivitäten aufbereitet. Frühere Notizen und Versionen bleiben im Kursarchiv erreichbar.
 
 Der Prüfungsraum speichert Aufgaben-Snapshots, tatsächliche Antworten, Rechenwerte, Index, Markierungen, Frist und Ergebnisse. Die LF7-Stufen haben 10/15/20 Aufgaben und freiwillige 15/25/40 Minuten. Das Trainingsziel beträgt intern 80 %. Teilpunkte und Fehlerpunkte sind nachvollziehbar; Selbsteinschätzung und Zeichnen verändern die automatisch ermittelte Punktzahl nicht.
 
@@ -34,13 +36,13 @@ Mit vier bis sechs Auszubildenden unterschiedlicher Vorkenntnisse jeweils ungef�
 
 Beobachtungsbogen je Aufgabe: Ziel gefunden? Selbstständig abgeschlossen? Benötigte Hinweise? Missverstandene Wörter? Fehler und vermutete Ursache? Zeit ohne Bewertung der Person? Aussage der Person im eigenen Wortlaut? Bei Rechenübertragung den nachvollziehbaren Weg und passende Einheiten prüfen, nicht nur das Endergebnis.
 
-Abnahme: Alle Testpersonen müssen ohne verlorene Eingaben zu ihren Aufgaben zurückkehren können. Wiederkehrende Verständnis- oder Bedienprobleme zuerst korrigieren und den betroffenen Ablauf erneut beobachten. Erst danach die redaktionelle LF7-Struktur vollständig auf die übrigen Lernfelder übertragen.
+Abnahme: Alle Testpersonen müssen ohne verlorene Eingaben zu ihren Aufgaben zurückkehren können. Wiederkehrende Verständnis- oder Bedienprobleme zuerst korrigieren und den betroffenen Ablauf erneut beobachten. Der Aufbau wurde auf alle vorhandenen Bereiche übertragen. Beobachtete Verständnisschwierigkeiten in diesen Bereichen müssen anschließend ebenfalls mit Lernenden geprüft und verbessert werden. Der Erprobungsmodus unter `/erprobung` speichert diese tatsächlichen Beobachtungen; [Anleitung](ERPROBUNG.md).
 
 ## Bewusst nachgelagert
 
-Beobachtete Lernendentests und anschließende Überarbeitung, vollständige redaktionelle Ausarbeitung der übrigen Lernfelder, Konten/Cloud-Synchronisierung, Meistervorbereitung, Apple-Signierung und Verlagsansprache. Aktuelle externe Webseitenvergleiche wurden wegen blockierter Abrufe nicht als Grundlage behauptet.
+Beobachtete Lernendentests und anschließende Überarbeitung, Konten/Cloud-Synchronisierung, Meistervorbereitung, Apple-Signierung und Verlagsansprache. Aktuelle externe Webseitenvergleiche wurden wegen blockierter Abrufe nicht als Grundlage behauptet.
 
-## Prüflauf vom 24. Oktober 2026
+## Früherer Prüflauf für Version 0.2 am 24. Oktober 2026
 
 - 369 automatisierte Tests in 53 Dateien bestanden.
 - TypeScript ohne Fehler; ESLint ohne Fehler mit zwei unveränderten Warnungen in bestehenden Hilfsskripten.

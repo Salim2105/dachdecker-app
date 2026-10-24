@@ -34,12 +34,40 @@ export interface AktivitaetErgebnis {
   erreicht: number;
   moeglich: number;
 }
+/** Stabile Anzeigereihenfolge statt verräterischer Lösungspositionen.
+ * Die Aktivitäts-ID bestimmt die Mischung auch nach Neustart und beim Rendern
+ * auf Server und Gerät. Originaldaten, Antwort-IDs und Lösungen bleiben gleich. */
+export function mischeAnzeige<T>(werte: readonly T[], aktivitaetId: string): T[] {
+  const anzeige = [...werte];
+  let seed = 2166136261;
+  for (let i = 0; i < aktivitaetId.length; i++) {
+    seed = Math.imul(seed ^ aktivitaetId.charCodeAt(i), 16777619) >>> 0;
+  }
+  const zufall = () => {
+    seed = (seed + 0x6d2b79f5) >>> 0;
+    let n = Math.imul(seed ^ (seed >>> 15), seed | 1);
+    n ^= n + Math.imul(n ^ (n >>> 7), n | 61);
+    return ((n ^ (n >>> 14)) >>> 0) / 4294967296;
+  };
+  for (let i = anzeige.length - 1; i > 0; i--) {
+    const j = Math.floor(zufall() * (i + 1));
+    [anzeige[i], anzeige[j]] = [anzeige[j], anzeige[i]];
+  }
+  return anzeige;
+}
 export function starteAktivitaet(aktivitaet: Aktivitaet): AktivitaetAntwort {
+  let reihenfolge: string[] = [];
+  if (aktivitaet.typ === "reihenfolge") {
+    const loesung = aktivitaet.schritte.map((s) => s.id);
+    reihenfolge = mischeAnzeige(loesung, `${aktivitaet.id}:reihenfolge`);
+    // Eine zufällig richtige Startanordnung würde ohne Übung als Erfolg zählen.
+    if (reihenfolge.length > 1 && reihenfolge.every((id, i) => id === loesung[i])) {
+      reihenfolge.push(reihenfolge.shift()!);
+    }
+  }
   return {
     zuordnung: {},
-    // Ein deterministischer Start überlebt einen Neustart und vermeidet eine
-    // bereits gelöste Anordnung beim ersten Öffnen.
-    reihenfolge: aktivitaet.typ === "reihenfolge" ? aktivitaet.schritte.map((s) => s.id).reverse() : [],
+    reihenfolge,
     auswahl: [],
   };
 }

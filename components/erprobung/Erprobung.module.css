@@ -1,0 +1,51 @@
+.werkstatt { display: grid; gap: 1.5rem; }
+.hero { display: flex; gap: 2rem; align-items: center; justify-content: space-between; padding: clamp(1.4rem, 3vw, 2.5rem); border-radius: 1.8rem; background: var(--tint-teal); color: var(--on-tint-teal); }
+.hero > div { max-width: 38rem; }
+.hero span, .sitzung > div > span, .auftrag > span, .auswertung > div > span { font-size: .72rem; font-weight: 800; letter-spacing: .1em; }
+.hero h1 { font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.18; font-weight: 800; margin: .7rem 0; }
+.hero p, .anleitung, .leer p, .auftrag p, .kriterium p, .auswertung > p { line-height: 1.65; }
+.hero svg { flex: 0 1 220px; min-width: 130px; }
+.leer, .anleitung, .sitzungsLeiste, .sitzung, .beobachtung, .auswertung { border: 1px solid var(--border); border-radius: 1.3rem; background: var(--surface); padding: 1.4rem; }
+.leer { border-color: var(--brand-orange); background: var(--tint-orange); color: var(--on-tint-orange); }
+.leer h2, .sitzung h2, .beobachtung h2, .auswertung h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: .5rem; }
+.anleitung summary { font-weight: 750; cursor: pointer; min-height: 2.75rem; display: list-item; }
+.anleitung ol { list-style: decimal; padding-left: 1.5rem; display: grid; gap: .6rem; margin-bottom: 1rem; }
+.sitzungsLeiste, .sitzung { display: flex; align-items: end; flex-wrap: wrap; gap: 1.5rem; }
+.sitzungsLeiste form { display: flex; flex: 1; align-items: end; flex-wrap: wrap; gap: 1rem; }
+.sitzungsLeiste label { flex: 1; min-width: min(100%, 15rem); }
+.sitzung > div { flex: 1; }
+.sitzung > label { flex: 1; min-width: min(100%, 18rem); }
+.werkstatt label { display: grid; gap: .45rem; font-weight: 650; }
+.werkstatt label small, .auftrag > small { font-size: .82rem; font-weight: 400; color: var(--text-muted); line-height: 1.5; }
+.werkstatt input:not([type="radio"]), .werkstatt select, .werkstatt textarea { min-height: 2.75rem; width: 100%; border: 1px solid var(--border); border-radius: .7rem; padding: .65rem .8rem; background: var(--surface-2); color: var(--text); font-weight: 400; }
+.werkstatt textarea { resize: vertical; }
+.raster { display: grid; grid-template-columns: minmax(13rem, .8fr) minmax(0, 2fr); gap: 1rem; align-items: start; }
+.aufgaben { display: grid; gap: .6rem; }
+.aufgaben button { display: flex; gap: .8rem; text-align: left; align-items: start; border: 1px solid var(--border); background: var(--surface); border-radius: 1rem; padding: 1rem; }
+.aufgaben button > span:first-child { font-size: 1.2rem; font-weight: 800; color: var(--text-muted); }
+.aufgaben button strong, .aufgaben button small { display: block; }
+.aufgaben button small { margin-top: .3rem; font-size: .76rem; color: var(--text-muted); }
+.aufgaben button[aria-current] { border-color: var(--brand-teal); background: var(--tint-teal); color: var(--on-tint-teal); }
+.aufgaben button[aria-current] small, .aufgaben button[aria-current] > span:first-child { color: inherit; }
+.beobachtung { display: grid; gap: 1.4rem; }
+.auftrag > span { color: var(--accent); }
+.auftrag h2 { margin-top: .5rem; }
+.auftrag a, .auswertung > a { display: block; min-height: 2.75rem; margin: .7rem 0 .2rem; text-decoration: underline; font-weight: 700; }
+.auftrag > small { display: block; }
+.kriterium { background: var(--tint-yellow); color: var(--on-tint-yellow); padding: 1rem; border-radius: .8rem; }
+.ergebnis { display: grid; gap: .55rem; }
+.ergebnis legend { font-weight: 750; margin-bottom: .6rem; }
+.ergebnis label { display: flex; align-items: center; gap: .7rem; min-height: 2.75rem; padding: .6rem; border: 1px solid var(--border); border-radius: .7rem; cursor: pointer; font-weight: 500; }
+.ergebnis label:has(input:checked) { background: var(--tint-violet); color: var(--on-tint-violet); }
+.ergebnis input { accent-color: var(--brand-violet); width: 1.15rem; height: 1.15rem; flex-shrink: 0; }
+.notizen { display: grid; gap: 1.2rem; }
+.zeit { max-width: 26rem; }
+.zahlen { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .8rem; margin: 1rem 0; }
+.zahlen p { padding: 1rem; border-radius: 1rem; background: var(--surface-2); font-size: .83rem; }
+.zahlen strong { display: block; font-size: 1.7rem; color: var(--accent); }
+.export { display: flex; gap: .8rem; flex-wrap: wrap; margin-top: 1rem; }
+.export button { min-height: 2.75rem; padding: .8rem 1rem; border-radius: .8rem; border: 1px solid var(--border); font-weight: 700; }
+.werkstatt button:disabled { opacity: .5; cursor: default; }
+.fehler { color: var(--bad); font-weight: 650; }
+@media (max-width: 860px) { .raster { grid-template-columns: minmax(0, 1fr); } .aufgaben { grid-template-columns: repeat(2, minmax(0, 1fr)); } .zahlen { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .hero { gap: .5rem; align-items: start; } .hero svg { display: none; } .aufgaben { grid-template-columns: minmax(0, 1fr); } .sitzungsLeiste form { flex-direction: column; align-items: stretch; } .sitzungsLeiste form > * { width: 100%; } .leer, .anleitung, .sitzungsLeiste, .sitzung, .beobachtung, .auswertung { padding: 1rem; } .export { flex-direction: column; } }

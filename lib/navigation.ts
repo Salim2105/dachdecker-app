@@ -7,7 +7,7 @@ export const WERKSTATT_NAV = [
 
 export function aktiverBereich(path: string): string {
   if (path.startsWith("/pruefung")) return "/pruefung";
-  if (path.endsWith("/ueben") || ["/ueben", "/zeichnen", "/praxis", "/rechner"].some((p) => path.startsWith(p))) return "/ueben";
-  if (path.startsWith("/lernen") || path.startsWith("/lernweg")) return "/lernen";
+  if (path.endsWith("/ueben") || ["/ueben", "/zeichnen", "/praxis", "/rechner", "/lernhilfe", "/erprobung"].some((p) => path.startsWith(p))) return "/ueben";
+  if (["/lernen", "/lernweg", "/grundlagen", "/sprache"].some((p) => path.startsWith(p))) return "/lernen";
   return "/";
 }

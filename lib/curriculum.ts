@@ -1,6 +1,10 @@
 import { getAufgaben, getLektionen, getLernfeld } from "@/lib/content";
-import { findeBegriffe } from "@/lib/glossar";
+import { findeBegriffe, getBegriff, sucheBegriffe } from "@/lib/glossar";
 import { LF7_KAPITEL } from "@/content/lf07/lernwerkstatt";
+import { GRUNDSTUFE_KURSE } from "@/content/lernwerkstatt/grundstufe";
+import { ANHANG_KURSE } from "@/content/lernwerkstatt/anhang";
+import { FACHSTUFE_KURSE } from "@/content/lernwerkstatt/fachstufe";
+import { DETAIL_KURSE } from "@/content/lernwerkstatt/details";
 import verknuepfungen from "@/content/curriculum-verknuepfungen.json";
 import type { Aktivitaet } from "@/lib/aktivitaeten";
 
@@ -38,8 +42,16 @@ export function getCurriculum(lfId: string): LernCurriculum | null {
   if (cache.has(lfId)) return cache.get(lfId)!;
   const lf = getLernfeld(lfId);
   if (!lf) return null;
-  if (lfId === "lf07") {
-    const kurs = { lfId, titel: lf.titel, redaktionell: true, kapitel: LF7_KAPITEL };
+  const redigiert = lfId === "lf07" ? LF7_KAPITEL : GRUNDSTUFE_KURSE[lfId] ?? FACHSTUFE_KURSE[lfId] ?? DETAIL_KURSE[lfId] ?? ANHANG_KURSE[lfId];
+  if (redigiert) {
+    const kapitel = redigiert.map(k => ({ ...k, einheiten: k.einheiten.map(e => ({
+      ...e,
+      begriffe: [...new Set([
+        ...e.begriffe.map(id => getBegriff(id)?.id ?? sucheBegriffe(id)[0]?.id ?? id),
+        ...findeBegriffe(e.textschritte.join(" ")).map(b => b.id),
+      ])],
+    })) }));
+    const kurs = { lfId, titel: lf.titel, redaktionell: true, kapitel };
     cache.set(lfId, kurs); return kurs;
   }
   const lektionen = getLektionen(lfId);

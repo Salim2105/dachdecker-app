@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getCurriculum, teileLerntext } from "@/lib/curriculum";
-import { getAufgaben, getLektionen, getLernfelder } from "@/lib/content";
+import { getAufgabe, getAufgaben, getLektionen, getLernfelder } from "@/lib/content";
 import { bewerteAktivitaet, starteAktivitaet } from "@/lib/aktivitaeten";
 
 describe("Kapitel und stabile Aufgabenverknüpfungen", () => {
@@ -26,10 +26,21 @@ describe("Kapitel und stabile Aufgabenverknüpfungen", () => {
   it("behält sämtliche sichtbaren Lektionen in den übrigen Lernfeldern mit gültigen Aufgaben-IDs", () => {
     for (const lf of getLernfelder()) {
       const kurs = getCurriculum(lf.id)!;
+      expect(kurs.redaktionell,lf.id).toBe(true);
       const einheiten = kurs.kapitel.flatMap((k) => k.einheiten);
-      const aufgaben = new Set(getAufgaben(lf.id).map((a) => a.id));
+      const quellen = new Set(getLektionen(lf.id).map(l=>l.id));
+      expect(new Set(einheiten.map(e=>e.id)).size,lf.id).toBe(einheiten.length);
       for (const l of getLektionen(lf.id)) expect(einheiten.some((e) => e.lektionIds.includes(l.id)), l.id).toBe(true);
-      for (const e of einheiten) { expect(e.aufgabenIds.length, e.id).toBeGreaterThanOrEqual(2); expect(e.aufgabenIds.every((id) => aufgaben.has(id)), e.id).toBe(true); }
+      for (const e of einheiten) {
+        expect(e.aufgabenIds.length, e.id).toBeGreaterThanOrEqual(2); expect(e.aufgabenIds.length,e.id).toBeLessThanOrEqual(4);
+        expect(new Set(e.aufgabenIds).size,e.id).toBe(e.aufgabenIds.length);
+        expect(new Set(e.begriffe).size,e.id).toBe(e.begriffe.length);
+        expect(e.aufgabenIds.every((id) => !!getAufgabe(id)), e.id).toBe(true);
+        expect(e.lektionIds.every(id=>quellen.has(id)),e.id).toBe(true);
+        expect(e.aktivitaet,e.id).toBeDefined();
+        expect(e.lernziel.length,e.id).toBeGreaterThan(30);
+        for(const text of e.textschritte){const n=text.trim().split(/\s+/).length;expect(n,e.id).toBeGreaterThanOrEqual(80);expect(n,e.id).toBeLessThanOrEqual(150);}
+      }
     }
   });
   it("teilt auch sehr lange Absätze ohne Textverlust", () => {
@@ -38,7 +49,7 @@ describe("Kapitel und stabile Aufgabenverknüpfungen", () => {
     expect(texte.join(" ")).toBe(original); expect(texte.every((t) => t.split(" ").length <= 150)).toBe(true);
   });
   it("bewertet Zuordnung, Reihenfolge und Mehrfachauswahl ohne Alles-Ankreuzen-Bonus", () => {
-    for (const e of getCurriculum("lf07")!.kapitel.flatMap((k) => k.einheiten)) {
+    for (const e of getLernfelder().flatMap(lf=>getCurriculum(lf.id)!.kapitel.flatMap((k) => k.einheiten))) {
       const a = e.aktivitaet!; const antwort = starteAktivitaet(a);
       if (a.typ === "zuordnen") antwort.zuordnung = Object.fromEntries(a.paare.map((p) => [p.id, p.id]));
       else if (a.typ === "reihenfolge") antwort.reihenfolge = a.schritte.map((s) => s.id);
