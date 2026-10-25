@@ -2,6 +2,7 @@ import type { Bewertung, DrawAufgabe } from "@/content/schema";
 import { bewerteAktivitaet, istAktivitaetVollstaendig, starteAktivitaet, type Aktivitaet, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { appStorage } from "@/lib/lernSpeicher";
 import { leseDezimalzahl } from "@/lib/zahlen";
+import { leseLernsignale, type LernSignal } from "@/lib/lerndiagnose";
 
 export const PROJEKT_SCHRITTE = ["Auftrag verstehen", "Situation beurteilen", "Rechnen", "Material und Maßnahme", "Ablauf und Detail", "Ergebnis erklären"] as const;
 export interface ProjektRechnung { id: string; frage: string; einheit: string; wert: number; toleranz: number; stellen: number; weg: string; tipp: string; abhaengigVon?: string }
@@ -80,6 +81,7 @@ export const BAUPROJEKTE:BauProjekt[] = [
 ];
 
 export interface ProjektStand {
+ lernSignale?:LernSignal[];
  version:1; projekt:BauProjekt; versuchId:string; schritt:number; besucht:number; begleitet:boolean; notiz:string;
  antworten:Record<string,AktivitaetAntwort>; geprueft:string[]; zahlen:Record<string,string>; zahlenGeprueft:string[]; referenzen:string[];
  hilfen:string[]; wiederholungen:Record<string,number>; zeichnen?:Bewertung; erklaerung:string; laut:boolean; musterOffen:boolean; selbst?:Bewertung; abgeschlossen:boolean;
@@ -132,6 +134,7 @@ export function leseProjektStand(raw:string|null,vorlage:BauProjekt):ProjektStan
  try{
   const s:unknown=JSON.parse(raw);
   if(!objekt(s)||s.version!==1||!istProjektSnapshot(s.projekt,vorlage)||!sichereId(s.versuchId)||!Number.isInteger(s.schritt)||Number(s.schritt)<0||Number(s.schritt)>5||!Number.isInteger(s.besucht)||Number(s.besucht)<Number(s.schritt)||Number(s.besucht)>5||typeof s.begleitet!=="boolean"||typeof s.notiz!=="string"||typeof s.erklaerung!=="string"||typeof s.laut!=="boolean"||typeof s.musterOffen!=="boolean"||typeof s.abgeschlossen!=="boolean")return null;
+  if(s.lernSignale!==undefined&&(!Array.isArray(s.lernSignale)||leseLernsignale(JSON.stringify(s.lernSignale)).length!==s.lernSignale.length||s.lernSignale.some(v=>!objekt(v)||v.quelle!=="projekt"||typeof v.id!=="string"||!v.id.startsWith(s.versuchId as string))))return null;
   if(!objekt(s.antworten)||!objekt(s.zahlen)||!Object.values(s.zahlen).every(x=>typeof x==="string")||!objekt(s.wiederholungen)||!Object.values(s.wiederholungen).every(x=>Number.isSafeInteger(x)&&Number(x)>=0)||![s.geprueft,s.zahlenGeprueft,s.referenzen,s.hilfen].every(eindeutigeStrings))return null;
   const akeys=Object.keys(s.projekt.aktivitaeten);const rkeys=s.projekt.rechnungen.map(r=>r.id);
   if(!(s.geprueft as string[]).every(k=>akeys.includes(k))||!(s.zahlenGeprueft as string[]).every(k=>rkeys.includes(k))||!(s.referenzen as string[]).every(k=>rkeys.includes(k))||Object.keys(s.zahlen).some(k=>!rkeys.includes(k)))return null;

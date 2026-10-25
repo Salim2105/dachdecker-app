@@ -2,7 +2,7 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in 0.7: [Prüfungsstufen für alle Lernbereiche, gemeinsame Tagesrunde, zehn Aufbau-Matheeinheiten, sechs Baustellenprojekte und 24 Bildaufgaben](docs/lernwerkstatt-0.7.md). Die bisherigen [402 kurzen Fachwissen-Einheiten und Sprachwerkstätten](docs/lernwerkstatt-0.4.md) und [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben erhalten.
+Neu in 0.7.1: [Anklickbare Fachwörter mit Skizzen und gezielte Fehlernacharbeit](docs/lernwerkstatt-0.7.1.md). Dazu kommen die [Prüfungsstufen für alle Lernbereiche, gemeinsame Tagesrunde, zehn Aufbau-Matheeinheiten, sechs Baustellenprojekte und 24 Bildaufgaben aus 0.7](docs/lernwerkstatt-0.7.md). Die bisherigen [402 kurzen Fachwissen-Einheiten und Sprachwerkstätten](docs/lernwerkstatt-0.4.md) und [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben erhalten.
 
 Für Kollegen mit iPhone: [Test-Link ohne Anmeldung erstellen](docs/kollegen-probe.md) mit `bash scripts/probe-teilen.sh`.
 

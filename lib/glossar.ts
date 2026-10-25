@@ -1,7 +1,9 @@
 import { getAufgaben } from "@/lib/content";
 import { getLernfelder } from "@/lib/lernfelder";
+import { GLOSSAR_BILDER, WERKSTATT_BEGRIFFE, type GlossarBild } from "@/lib/glossarWerkstatt";
 
 export interface GlossarEintrag {
+  bild?: GlossarBild;
   id: string;
   begriff: string;
   einfach: string;
@@ -231,7 +233,11 @@ export function getGlossar(): GlossarEintrag[] {
       lernfelder: ["lf07"],
     });
   }
-  glossar = [...gruppen.values()].sort((a, b) => a.begriff.localeCompare(b.begriff, "de"));
+  for(const e of WERKSTATT_BEGRIFFE){
+    const quelle="Eigene Sprachhilfe zu Mathe und Baustellenprojekten der Lernwerkstatt.";
+    gruppen.set(e.id,{...e,quelle,quellen:[quelle],aufgabenIds:[],lernfelder:[]});
+  }
+  glossar = [...gruppen.values()].map(e=>({...e,bild:e.bild??GLOSSAR_BILDER[e.id]})).sort((a, b) => a.begriff.localeCompare(b.begriff, "de"));
   return glossar;
 }
 

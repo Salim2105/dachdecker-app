@@ -12,7 +12,7 @@ describe("vollständige Sicherung der drei Ausbaustufen",()=>{
     const r=tasks.createReviewSession("alles",15,1800000000000,()=>.2);
     const ref=r.tasks[0].ref,key=review.reviewKey(ref);
     r.answers[key]={...tasks.emptyReviewAnswer(),wert:"12,",hilfen:["tipp"]};tasks.saveReviewSession(r);
-    review.recordReviewResult({ref:{quelle:"mathe",id:"aufbau-trig-1",version:1,lernzielIds:["aufbau-trig"]},versuchId:"eigener-versuch",am:1800000000000,bewertung:"teilweise",hilfen:[]});
+    review.recordReviewResult({ref:{quelle:"mathe",id:"aufbau-trig-1",version:1,lernzielIds:["aufbau-trig"]},versuchId:"eigener-versuch",am:1800000000000,bewertung:"teilweise",hilfen:[],hinweise:[{kategorie:"einheiten",lernzielId:"aufbau-trig",route:"/grundlagen/mathe#aufbau-trig",thema:"Dachdreieck",richtig:false,hinweis:"Eine Länge braucht m statt m²."}]});
     const m=math.neuerAufbauStand(math.AUFBAU_EINHEITEN[0],3);m.notiz="Nach der Breite umstellen";s.appStorage.setItem(math.aufbauKey(math.AUFBAU_EINHEITEN[0].id),JSON.stringify(m));
     const p=projekt.neuerProjektStand(projekt.BAUPROJEKTE[0]);p.zahlen.schraege="99";p.zahlenGeprueft=["schraege"];p.referenzen=["schraege"];p.hilfen.push("referenz:schraege");s.appStorage.setItem(projekt.projektKey(p.projekt.id),JSON.stringify(p));
     const v=bild.neuerBildStand(bild.BILD_AUFGABEN[0]);v.notiz="Die Unterdeckung liegt unter den Latten";s.appStorage.setItem(bild.bildStandKey(bild.BILD_AUFGABEN[0].id),JSON.stringify(v));
@@ -27,6 +27,7 @@ describe("vollständige Sicherung der drei Ausbaustufen",()=>{
     expect(projekt.leseProjektStand(s.appStorage.getItem(projekt.projektKey(p.projekt.id)),projekt.BAUPROJEKTE[0])).toEqual(p);
     expect(s.appStorage.getItem(feedback.FEEDBACK_KEY)).toBe(vorher.daten[feedback.FEEDBACK_KEY]);
     expect(review.loadReviewRecords()["mathe:aufbau-trig-1:v1"].verlauf).toHaveLength(1);
+    expect(review.loadReviewRecords()["mathe:aufbau-trig-1:v1"].verlauf[0].hinweise?.[0].hinweis).toContain("m statt m²");
     expect(new Uint8Array(await(await s.readBlob("private-projekt-foto"))!.arrayBuffer())).toEqual(bytes);
   },20000);
 });

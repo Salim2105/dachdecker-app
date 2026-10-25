@@ -35,6 +35,14 @@ describe("gemeinsames Glossar", () => {
       expect(sucheBegriffe(name)[0].begriff).toBe(name);
     }
   });
+  it("ergänzt Mathe- und Projektbegriffe mit Erklärung, Baustellenbeispiel und Skizze",()=>{
+    for(const wort of["Hypotenuse","Ankathete","Gegenkathete","Sinus","Kosinus","Tangens","Deckmaß","Lattweite","Wärmeleitfähigkeit","Wärmedurchlasswiderstand","Festpunkt","Gleitbereich","Befund","Abdichtung"]){
+      const b=sucheBegriffe(wort).find(b=>b.begriff===wort)!;expect(b,wort).toBeDefined();expect(b.einfach.length).toBeGreaterThan(30);expect(b.beispiel.length).toBeGreaterThan(30);expect(b.bild).toBeTruthy();
+    }
+    expect(getBegriff("anhang2-071")?.bild).toBe("waerme");
+    expect(findeBegriffe("Eine Hypotenuse, zwei Deckmaße und ein Festpunkt.").map(b=>b.begriff)).toEqual(["Hypotenuse","Deckmaß","Festpunkt"]);
+    expect(getBegriff("glossar-werkstatt-luftschicht")?.id).not.toBe(getBegriff("glossar-werkstatt-hinterlueftung")?.id);
+  });
 });
 
 describe("Begriffe im Lerntext", () => {

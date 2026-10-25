@@ -2,11 +2,15 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
+import { LernLink } from "@/components/LernLink";
 import type { Bewertung, BewertungsKontext } from "@/content/schema";
 import { LernzeitWahl } from "@/components/LernzeitWahl";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
 import { AufgabenKontext } from "@/components/useAufgabenEntwurf";
 import { SafeSvg } from "@/components/SafeSvg";
+import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
+import { Nacharbeit } from "@/components/Nacharbeit";
+import { aufbauNacharbeit, basisNacharbeit, bildNacharbeit, transferNacharbeit } from "@/lib/lernNacharbeit";
 import { BildAntwortKarte } from "@/components/bildtraining/BildWerkstatt";
 import { lernzeitStore } from "@/lib/appStores";
 import { appStorage } from "@/lib/lernSpeicher";
@@ -115,6 +119,11 @@ function Runde({ art, minuten }: { art: ReviewFilter; minuten: number }) {
       try { const raw: unknown = JSON.parse(appStorage.getItem(`review-antwort-${scope}:${task.payload.aufgabe.id}`) ?? "null"); if (raw && typeof raw === "object" && !Array.isArray(raw) && Object.values(raw).every(v => typeof v === "string")) a = { ...a, original: raw as Record<string, string> }; } catch { /* no archived text for a purely visual self-assessment */ }
     }
     const r: ReviewResult = createReviewResult(task.ref,`${s.id}:${key}`,b,{ hilfen: [...new Set([...a.hilfen, ...(kontext?.mitHilfe ? ["Antwortmöglichkeiten"] : [])])], selbstBewertet: kontext?.selbstBewertet, nachErklaerung: kontext?.nachErklaerung });
+    const p=task.payload;
+    if(p.typ==="aufbau"){const e=pruefeAufbauAufgabe(p.aufgabe,a.schritte??{});if(e)r.hinweise=aufbauNacharbeit(p.aufgabe,a.schritte??{},e);}
+    if(p.typ==="mathe"){const e=pruefeMathe(p.aufgabe,a.wert,a.einheit);if(e)r.hinweise=basisNacharbeit(p.aufgabe,task.ref.lernzielIds[0],task.titel,e);}
+    if(p.typ==="bild"&&a.aktivitaet)r.hinweise=bildNacharbeit(p.aufgabe,a.aktivitaet);
+    if(p.typ==="projekt")r.hinweise=transferNacharbeit(p.aufgabe,b==="richtig",a.einheit);
     if (!speichern({ ...s, answers: { ...s.answers, [key]: a }, results: { ...s.results, [key]: r } })) return;
     try { recordReviewResult(r); } catch (e) { setFehler(fehlertext(e)); }
   }
@@ -135,9 +144,10 @@ function Runde({ art, minuten }: { art: ReviewFilter; minuten: number }) {
       <h3 role="status">{bewertungsText(result.bewertung)}</h3>
       <GespeicherteAntwort task={task} answer={answer} />
       <Loesung task={task} />
-      {(result.hilfen.length > 0 || result.selbstBewertet || result.nachErklaerung) && <p className={styles.hinweis}>{[result.selbstBewertet ? "Selbsteinschätzung" : "", result.hilfen.length ? `Mit Hilfe: ${result.hilfen.join(", ")}` : "", result.nachErklaerung ? "Direkt nach einer Erklärung bearbeitet" : ""].filter(Boolean).join(" · ")}. Das verlängert die langfristigen Erfolgsabstände nicht.</p>}
+      <Nacharbeit hinweise={result.hinweise} hilfen={result.hilfen}/>
+      {(result.hilfen.length > 0 || result.selbstBewertet || result.nachErklaerung) && <p className={styles.hinweis}>{[result.selbstBewertet ? "Selbsteinschätzung" : "", result.hilfen.length ? `Mit Hilfe: ${[...new Set(result.hilfen.map(h=>h.startsWith("begriff:")?"Begriffserklärung":h))].join(", ")}` : "", result.nachErklaerung ? "Direkt nach einer Erklärung bearbeitet" : ""].filter(Boolean).join(" · ")}. Das verlängert die langfristigen Erfolgsabstände nicht.</p>}
     </div> : task.payload.typ === "fachwissen" ? <AufgabenKontext.Provider value={scope}><AufgabeSwitch key={scope} aufgabe={task.payload.aufgabe} onErgebnis={bewerten} modus="pruefung" /></AufgabenKontext.Provider> : <EigeneAufgabe task={task} answer={answer} onChange={aendern} onHilfe={hilfe} onErgebnis={bewerten} />}
-    {!result && <Link className={styles.textknopf} href={task.route} onClick={() => hilfe("Erklärung geöffnet")}>Erklärung im Lernbereich öffnen ↗</Link>}
+    {!result && <LernLink className={styles.textknopf} href={task.route} onClick={() => hilfe("Erklärung geöffnet")}>Erklärung im Lernbereich öffnen ↗</LernLink>}
     <footer className={styles.fuss}><button disabled={stand.index === 0} onClick={() => navigieren(stand.index - 1)}>← Zurück</button><button className="hauptaktion" disabled={!result} onClick={() => navigieren(stand.index + 1)}>{stand.index + 1 === stand.tasks.length ? "Runde abschließen →" : "Nächste Aufgabe →"}</button></footer>
   </section>;
 }
@@ -145,24 +155,26 @@ function Runde({ art, minuten }: { art: ReviewFilter; minuten: number }) {
 function bewertungsText(b?: Bewertung) { return b === "richtig" ? "Das passt!" : b === "teilweise" ? "Ein Teil passt schon." : b === "falsch" ? "Hier üben wir weiter." : "Noch offen"; }
 
 function EigeneAufgabe({ task, answer, onChange, onHilfe, onErgebnis }: { task: ReviewTask; answer: ReviewAnswer; onChange: (v: Partial<ReviewAnswer>) => void; onHilfe: (id: string) => void; onErgebnis: (b: Bewertung) => void }) {
+  const begriff=(id:string)=>{onHilfe(`begriff:${id}`);oeffneGlossarBegriff(id);};
+  const text=(t:string)=><GlossarText text={t} onBegriff={begriff}/>;
   if (task.payload.typ === "aufbau") {
     const a = task.payload.aufgabe, r = pruefeAufbauAufgabe(a, answer.schritte ?? {});
-    return <div className={styles.aufgabe}><p>{a.frage}</p><ul>{a.gegeben.map(g => <li key={g}>{g}</li>)}</ul>
+    return <div className={styles.aufgabe}><p>{text(a.frage)}</p><ul>{a.gegeben.map(g => <li key={g}>{text(g)}</li>)}</ul>
       {a.schritte.map((s, i) => <fieldset className={styles.schritt} key={s.id}><legend>{i + 1}. {s.label}</legend><div className={styles.eingaben}><label>Ergebnis: {s.label}<input inputMode="decimal" value={answer.schritte?.[s.id]?.wert ?? ""} onChange={e => onChange({ schritte: { ...answer.schritte, [s.id]: { wert: e.target.value, einheit: answer.schritte?.[s.id]?.einheit ?? "" } } })} /></label><label>Einheit: {s.label}<select value={answer.schritte?.[s.id]?.einheit ?? ""} onChange={e => onChange({ schritte: { ...answer.schritte, [s.id]: { wert: answer.schritte?.[s.id]?.wert ?? "", einheit: e.target.value } } })}><option value="">Bitte wählen</option>{s.einheiten.map(e => <option key={e}>{e}</option>)}</select></label></div><p className={styles.hinweis}>{s.ganzzahl ? "Ganze Zahl angeben." : `Auf ${s.stellen} Nachkommastellen runden.`} Rechne mit ungerundeten Zwischenwerten weiter.</p></fieldset>)}
       <details className={styles.hilfe} onToggle={e => { if (e.currentTarget.open) onHilfe("Formelhinweise"); }}><summary>Ich brauche einen Ansatz</summary><ul>{a.schritte.map(s => <li key={s.id}>{s.label}: {s.formel}</li>)}</ul></details>
       <button className="hauptaktion" disabled={r === null} onClick={() => { if (r) onErgebnis(r.bewertung); }}>Meine Rechenkette prüfen</button></div>;
   }
   if (task.payload.typ === "projekt") {
     const a = task.payload.aufgabe, r = pruefeProjektTransfer(a, answer.wert);
-    return <div className={styles.aufgabe}><p>{a.frage}</p><div className={styles.eingaben}><label>Dein Ergebnis<input inputMode="decimal" value={answer.wert} onChange={e => onChange({ wert: e.target.value })} /></label><label>Einheit<select value={answer.einheit} onChange={e => onChange({ einheit: e.target.value })}><option value="">Bitte wählen</option>{[...new Set([a.einheit, "m", "m²", "cm", "Stück", "mm", "m²K/W"])].map(e => <option key={e}>{e}</option>)}</select></label></div><p className={styles.hinweis}>Dezimalzahlen sind möglich. Die Einheit gehört zu deiner Antwort.</p><button className="hauptaktion" disabled={r === null || !answer.einheit} onClick={() => { if (r) onErgebnis(answer.einheit === a.einheit ? r : "falsch"); }}>Meine Antwort prüfen</button></div>;
+    return <div className={styles.aufgabe}><p>{text(a.frage)}</p><div className={styles.eingaben}><label>Dein Ergebnis<input inputMode="decimal" value={answer.wert} onChange={e => onChange({ wert: e.target.value })} /></label><label>Einheit<select value={answer.einheit} onChange={e => onChange({ einheit: e.target.value })}><option value="">Bitte wählen</option>{[...new Set([a.einheit, "m", "m²", "cm", "Stück", "mm", "m²K/W"])].map(e => <option key={e}>{e}</option>)}</select></label></div><p className={styles.hinweis}>Dezimalzahlen sind möglich. Die Einheit gehört zu deiner Antwort.</p><button className="hauptaktion" disabled={r === null || !answer.einheit} onClick={() => { if (r) onErgebnis(answer.einheit === a.einheit ? r : "falsch"); }}>Meine Antwort prüfen</button></div>;
   }
   if (task.payload.typ === "bild") {
     const a = task.payload.aufgabe, antwort = answer.aktivitaet ?? starteAktivitaet(a.aktivitaet);
-    return <BildAntwortKarte aufgabe={a} antwort={antwort} geprueft={false} onChange={aktivitaet => onChange({ aktivitaet })} onPruefen={() => onErgebnis(pruefeBildAufgabe(a, antwort))} />;
+    return <BildAntwortKarte aufgabe={a} antwort={antwort} geprueft={false} onChange={aktivitaet => onChange({ aktivitaet })} onPruefen={() => onErgebnis(pruefeBildAufgabe(a, antwort))} onBegriff={begriff}/>;
   }
   if (task.payload.typ === "mathe") {
     const m = task.payload.aufgabe, r = pruefeMathe(m, answer.wert, answer.einheit);
-    return <div className={styles.aufgabe}><p>{m.frage}</p><ul>{m.gegeben.map(g => <li key={g}>{g}</li>)}</ul>
+    return <div className={styles.aufgabe}><p>{text(m.frage)}</p><ul>{m.gegeben.map(g => <li key={g}>{text(g)}</li>)}</ul>
       <div className={styles.eingaben}><label>Dein Ergebnis<input inputMode="decimal" value={answer.wert} onChange={e => onChange({ wert: e.target.value })} /></label><label>Einheit<select value={answer.einheit} onChange={e => onChange({ einheit: e.target.value })}><option value="">Bitte wählen</option>{m.einheiten.map(e => <option key={e}>{e}</option>)}</select></label></div>
       {answer.wert.trim() && r === null && <p className={styles.hinweis}>Gib eine Zahl ohne Einheit ein und wähle die Einheit daneben.</p>}
       <details className={styles.hilfe} onToggle={e => { if (e.currentTarget.open) onHilfe("Formelhinweis"); }}><summary>Ich brauche einen Ansatz</summary><p>{m.formel}</p></details>

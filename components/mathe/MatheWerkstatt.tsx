@@ -6,6 +6,7 @@ import { appStorage } from "@/lib/lernSpeicher";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
 import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
 import { LernIllustration } from "@/components/design/LernIllustration";
+import { GlossarText, BegriffsListe, oeffneGlossarBegriff } from "@/components/GlossarText";
 import { MatheSkizze } from "./MatheSkizze";
 import { AUFBAU_EINHEITEN, leseAufbauStand } from "@/lib/matheAufbau";
 import { recordReviewResult, validReviewResult, type ReviewResult } from "@/lib/review";
@@ -68,6 +69,7 @@ function MatheLernschritt({ einheit: e, zurueck, weiter }: { einheit: MatheEinhe
   function speichern(neu: Stand):boolean { ref.current=neu;setStand(neu);try{appStorage.setItem(matheKey(e.id),JSON.stringify(neu));return true;}catch{setFehler("Dein Rechenentwurf konnte nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen.");return false;} }
   function aendere(patch:Partial<Antwort>) {const aktuell=ref.current;const vorher=aktuell.antworten[f.id]??{wert:"",einheit:"",hilfen:[]};speichern({...aktuell,antworten:{...aktuell.antworten,[f.id]:{...vorher,...patch}}});}
   function hilfe(id:string) { const bisher=ref.current.antworten[f.id]?.hilfen??[];if(!bisher.includes(id))aendere({hilfen:[...bisher,id]}); }
+  function begriff(id:string){if(!ref.current.antworten[f.id]?.ergebnis)hilfe(`begriff:${id}`);oeffneGlossarBegriff(id);}
   function pruefen(){
     const s=ref.current,aktuell=s.antworten[f.id]??{wert:"",einheit:"",hilfen:[]};
     if(aktuell.ergebnis)return;
@@ -85,8 +87,9 @@ function MatheLernschritt({ einheit: e, zurueck, weiter }: { einheit: MatheEinhe
     <button className={styles.back} onClick={zurueck}>← Alle Mathe-Grundlagen</button>
     <header className={styles.unitHead}><span>FACHMATHE · {e.minuten} MINUTEN</span><h1>{e.titel}</h1><p>{e.ziel}</p></header>
     {stand.abgeschlossen ? <section className={styles.success}><LernIllustration motiv="erfolg"/><h2>Ein Rechenweg mehr im Werkzeugkoffer.</h2><p>{e.fragen.filter((q)=>stand.antworten[q.id]?.ergebnis?.richtig).length} von {e.fragen.length} zuletzt geprüften Antworten passen. Genutzte Hilfen bleiben in deinem Lernstand erkennbar.</p><button className="hauptaktion" onClick={weiter}>Nächste Mathe-Einheit →</button><Link href="/lernhilfe">Deine nächsten Übungen ansehen</Link><button className={styles.back} onClick={()=>speichern({...stand,abgeschlossen:false})}>Rechenwege nochmals ansehen</button></section> : <>
-    <section className={styles.text}><h2>Erst verstehen</h2><p>{e.text}</p><MatheSkizze id={e.id}/><strong>{e.merksatz}</strong><div><span>BEISPIEL</span><p>{e.beispiel}</p></div></section>
-    <section className={styles.task}><div className={styles.taskHead}><span>JETZT DU</span><span>Aufgabe {stand.index+1} von {e.fragen.length}</span></div><h2>{f.frage}</h2><p className={styles.gesucht}><strong>Gesucht:</strong> {f.gesucht}</p>
+    <section className={styles.text}><h2>Erst verstehen</h2><p><GlossarText text={e.text} onBegriff={begriff}/></p><MatheSkizze id={e.id}/><strong><GlossarText text={e.merksatz} onBegriff={begriff}/></strong><div><span>BEISPIEL</span><p><GlossarText text={e.beispiel} onBegriff={begriff}/></p></div></section>
+    <BegriffsListe texte={[e.text,e.merksatz,e.beispiel,f.frage]} onBegriff={begriff}/>
+    <section className={styles.task}><div className={styles.taskHead}><span>JETZT DU</span><span>Aufgabe {stand.index+1} von {e.fragen.length}</span></div><h2><GlossarText text={f.frage} onBegriff={begriff}/></h2><p className={styles.gesucht}><strong>Gesucht:</strong> {f.gesucht}</p>
       <div className={styles.antwort}><label>Dein Ergebnis<input type="text" inputMode="decimal" value={antwort.wert} disabled={!!antwort.ergebnis} onChange={(ev)=>aendere({wert:ev.target.value})} onKeyDown={(ev)=>{if(ev.key==="Enter"&&!antwort.ergebnis)pruefen();}} /></label><label>Einheit<select aria-label="Einheit" value={antwort.einheit} disabled={!!antwort.ergebnis} onChange={(ev)=>aendere({einheit:ev.target.value})}><option value="">Bitte wählen</option>{f.einheiten.map((u)=><option key={u}>{u}</option>)}</select></label></div>
       {!antwort.ergebnis && <button className="hauptaktion" onClick={pruefen}>Rechenweg prüfen</button>}
       {fehler&&<p role="alert" className={styles.fehler}>{fehler}</p>}

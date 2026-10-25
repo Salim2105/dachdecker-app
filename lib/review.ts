@@ -2,10 +2,12 @@ import type { Bewertung } from "@/content/schema";
 import { appStorage } from "@/lib/lernSpeicher";
 import { progressStore } from "@/lib/progressStore";
 import { ladeFortschritt } from "@/lib/progress";
+import { istLernHinweis, type LernHinweis } from "@/lib/lernHinweise";
 
 export type ReviewQuelle = "fachwissen" | "mathe" | "sprache" | "projekt" | "bild";
 export interface ReviewRef { quelle: ReviewQuelle; id: string; version: number; lernzielIds: string[] }
 export interface ReviewResult {
+  hinweise?: LernHinweis[];
   ref: ReviewRef; versuchId: string; bewertung: Bewertung; am: number; hilfen: string[];
   selbstBewertet?: boolean; nachErklaerung?: boolean;
 }
@@ -30,7 +32,8 @@ export function validReviewRef(v: unknown): v is ReviewRef {
 }
 export function validReviewResult(v: unknown): v is ReviewResult {
   return obj(v) && validReviewRef(v.ref) && text(v.versuchId) && typeof v.bewertung === "string" && ["richtig", "teilweise", "falsch"].includes(v.bewertung) && zeit(v.am) && strings(v.hilfen) &&
-    (v.selbstBewertet === undefined || typeof v.selbstBewertet === "boolean") && (v.nachErklaerung === undefined || typeof v.nachErklaerung === "boolean");
+    (v.selbstBewertet === undefined || typeof v.selbstBewertet === "boolean") && (v.nachErklaerung === undefined || typeof v.nachErklaerung === "boolean") &&
+    (v.hinweise===undefined||Array.isArray(v.hinweise)&&v.hinweise.length<=12&&v.hinweise.every(istLernHinweis));
 }
 export function parseReviewStore(raw: string | null): Record<string, ReviewStand> | null {
   if (raw === null) return {};

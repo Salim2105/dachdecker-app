@@ -24,6 +24,7 @@ export interface AuswahlAktivitaet extends AktivitaetBasis {
   optionen: { id: string; text: string; korrekt: boolean }[];
 }
 export type Aktivitaet = ZuordnungsAktivitaet | ReihenfolgeAktivitaet | AuswahlAktivitaet;
+export function aktivitaetTexte(a:Aktivitaet):string[]{return [a.titel,a.auftrag,a.erklaerung,...(a.typ==="zuordnen"?a.paare.flatMap(p=>[p.links,p.rechts]):a.typ==="reihenfolge"?a.schritte.map(s=>s.text):[a.situation,...a.optionen.map(o=>o.text)])];}
 export interface AktivitaetAntwort {
   zuordnung: Record<string, string>;
   reihenfolge: string[];

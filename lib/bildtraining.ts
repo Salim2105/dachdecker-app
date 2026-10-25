@@ -1,6 +1,7 @@
 import type { Bewertung } from "@/content/schema";
 import { bewerteAktivitaet, istAktivitaetVollstaendig, starteAktivitaet, type Aktivitaet, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { appStorage } from "@/lib/lernSpeicher";
+import { istLernHinweis, type LernHinweis } from "@/lib/lernHinweise";
 
 export type BildProjekt = "ziegeldach" | "flachdach" | "sanierung" | "schiefer" | "metalldach" | "fassade";
 export type BildAufgabenArt = "bauteile" | "folge" | "fehler" | "massnahme";
@@ -167,13 +168,14 @@ export function pruefeBildAufgabe(a:BildAufgabe,antwort:AktivitaetAntwort):Bewer
  const r=bewerteAktivitaet(a.aktivitaet,antwort);
  return r.richtig?"richtig":r.erreicht>0?"teilweise":"falsch";
 }
-export interface BildStand {version:1;aufgabenVersion:number;antwort:AktivitaetAntwort;geprueft:boolean;notiz:string;hilfen:string[];versuchId:string;bewertetAm:number|null;abgeschlossen:boolean}
+export interface BildStand {version:1;aufgabenVersion:number;antwort:AktivitaetAntwort;geprueft:boolean;notiz:string;hilfen:string[];versuchId:string;bewertetAm:number|null;abgeschlossen:boolean;nacharbeit?:LernHinweis[]}
 export const bildStandKey=(id:string)=>`bildtraining-${id}-v1`;
 export function neuerBildStand(a:BildAufgabe):BildStand{return {version:1,aufgabenVersion:a.version,antwort:starteAktivitaet(a.aktivitaet),geprueft:false,notiz:"",hilfen:[],versuchId:globalThis.crypto.randomUUID(),bewertetAm:null,abgeschlossen:false};}
 export function leseBildStand(raw:string|null,a:BildAufgabe):BildStand|null {
  if(raw===null)return neuerBildStand(a);
  try{
   const s=JSON.parse(raw);
+  if(s?.nacharbeit!==undefined&&(!Array.isArray(s.nacharbeit)||s.nacharbeit.length>12||!s.nacharbeit.every(istLernHinweis)))return null;
   if(!s||s.version!==1||s.aufgabenVersion!==a.version||(s.bewertetAm!==null&&(!Number.isFinite(s.bewertetAm)||s.bewertetAm<0))||typeof s.geprueft!=="boolean"||typeof s.notiz!=="string"||typeof s.abgeschlossen!=="boolean"||typeof s.versuchId!=="string"||!s.versuchId||!Array.isArray(s.hilfen)||!s.hilfen.every((h:unknown)=>typeof h==="string")||!s.antwort||typeof s.antwort.zuordnung!=="object"||!s.antwort.zuordnung||Array.isArray(s.antwort.zuordnung)||!Object.values(s.antwort.zuordnung).every(v=>typeof v==="string")||![s.antwort.reihenfolge,s.antwort.auswahl].every(v=>Array.isArray(v)&&v.every((t:unknown)=>typeof t==="string")))return null;
   const akt=a.aktivitaet;
   if(akt.typ==="zuordnen"&&Object.entries(s.antwort.zuordnung).some(([k,v])=>!akt.paare.some(p=>p.id===k)||(v!==""&&!akt.paare.some(p=>p.id===v))))return null;

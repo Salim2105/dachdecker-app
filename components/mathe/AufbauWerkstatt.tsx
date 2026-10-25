@@ -6,6 +6,9 @@ import { recordReviewResult } from "@/lib/review";
 import { neueMatheRueckmeldung } from "@/lib/matheBewertung";
 import { aufbauKey, erzeugeAufbauAufgabe, neuerAufbauStand, parseAufbauStand, pruefeAufbauAufgabe, type AufbauAntwort, type AufbauEinheit, type AufbauStand, type AufbauVersuch } from "@/lib/matheAufbau";
 import { AufbauSkizze } from "./AufbauSkizze";
+import { GlossarText, BegriffsListe, oeffneGlossarBegriff } from "@/components/GlossarText";
+import { Nacharbeit } from "@/components/Nacharbeit";
+import { aufbauNacharbeit } from "@/lib/lernNacharbeit";
 import styles from "./Mathe.module.css";
 import own from "./Aufbau.module.css";
 
@@ -43,12 +46,14 @@ export function AufbauWerkstatt({ einheit: e, zurueck, weiter }: { einheit: Aufb
     const aktuell = ref.current.versuche[id];
     if (!aktuell.ergebnis && !aktuell.hilfen.includes(schritt)) versuchAendern({ hilfen: [...aktuell.hilfen, schritt] });
   }
+  function begriff(id:string){hilfe(`begriff:${id}`);oeffneGlossarBegriff(id);}
   function pruefen() {
     const aktuell = ref.current.versuche[id];
     if (aktuell.ergebnis) return;
     const r = pruefeAufbauAufgabe(aktuell.aufgabe, aktuell.antworten);
     if (!r) { setFehler("Trage für jeden Schritt eine gültige Zahl ein und wähle jeweils eine Einheit."); return; }
     const result = neueMatheRueckmeldung(id, a.version, e.id, r.bewertung, aktuell.hilfen, aktuell.versuchId);
+    result.hinweise=aufbauNacharbeit(aktuell.aufgabe,aktuell.antworten,r);
     setFehler("");
     if (versuchAendern({ ergebnis: r, reviewResult: result })) {
       try { recordReviewResult(result); }
@@ -77,10 +82,11 @@ export function AufbauWerkstatt({ einheit: e, zurueck, weiter }: { einheit: Aufb
     <button className={styles.back} onClick={zurueck}>← Alle Mathe-Einheiten</button>
     <header className={styles.unitHead}><span>FACHMATHE · AUFBAU · 10–15 MINUTEN</span><h1>{e.titel}</h1><p>{e.ziel}</p></header>
     {stand.abgeschlossen ? <section className={styles.success}><span className={own.erfolg} aria-hidden="true">✓</span><h2>Dein Rechenweg wächst.</h2><p>{e.aufgabenIds.reduce((sum, aufgabeId) => sum + (stand.versuche[aufgabeId].ergebnis?.erreicht ?? 0), 0)} von {e.aufgabenIds.reduce((sum, aufgabeId) => sum + stand.versuche[aufgabeId].aufgabe.schritte.length, 0)} zuletzt geprüften Schritten passen. Hilfen und Teilantworten bleiben in deinem Lernstand erkennbar.</p><button className="hauptaktion" onClick={weiter}>Nächste Aufbau-Einheit →</button><button className={styles.back} onClick={() => speichern({ ...ref.current, abgeschlossen: false })}>Meine Rechenwege nochmals ansehen</button><Link href="/heute">Später in der Tagesrunde wiederholen →</Link></section> : <>
-      <section className={styles.text}><h2>Erst verstehen</h2><p>{e.text}</p><AufbauSkizze art={e.art} /><strong>{e.merksatz}</strong><div><span>DURCHGERECHNETES BEISPIEL</span><p>{e.beispiel}</p></div></section>
+      <section className={styles.text}><h2>Erst verstehen</h2><p><GlossarText text={e.text} onBegriff={begriff}/></p><AufbauSkizze art={e.art} /><strong><GlossarText text={e.merksatz} onBegriff={begriff}/></strong><div><span>DURCHGERECHNETES BEISPIEL</span><p><GlossarText text={e.beispiel} onBegriff={begriff}/></p></div></section>
+      <BegriffsListe texte={[e.text,e.beispiel,e.merksatz,a.frage,...a.gegeben]} onBegriff={begriff}/>
       <section className={styles.task}>
         <div className={styles.taskHead}><span>JETZT DU · AUFBAU</span><span>Aufgabe {stand.index + 1} von {e.aufgabenIds.length}</span></div>
-        <h2>{a.frage}</h2><ul className={own.gegeben}>{a.gegeben.map(g => <li key={g}>{g}</li>)}</ul>
+        <h2><GlossarText text={a.frage} onBegriff={begriff}/></h2><ul className={own.gegeben}>{a.gegeben.map(g => <li key={g}><GlossarText text={g} onBegriff={begriff}/></li>)}</ul>
         <p className={own.hinweis}>Rechne intern mit ungerundeten Werten weiter. Runde erst die angezeigten Eingaben wie angegeben. Jeder richtige Schritt zählt einzeln.</p>
         <div className={own.schritte}>{a.schritte.map((s, i) => <fieldset key={`${v.versuchId}:${s.id}`} className={own.schritt}>
           <legend><span aria-hidden="true">{i + 1}</span>{s.label}</legend>
@@ -90,7 +96,8 @@ export function AufbauWerkstatt({ einheit: e, zurueck, weiter }: { einheit: Aufb
           {v.ergebnis && <div className={own.schrittAntwort}><strong>{v.ergebnis.schritte[s.id].richtig ? "✓ Dieser Schritt passt." : "Diesen Schritt nacharbeiten."}</strong><p>{v.ergebnis.schritte[s.id].hinweis}</p><p>{s.formel} → {s.einsetzen} → <strong>{s.wert.toLocaleString("de-DE", { minimumFractionDigits: s.stellen, maximumFractionDigits: s.stellen })} {s.einheit}</strong></p></div>}
         </fieldset>)}</div>
         {!v.ergebnis && <button className="hauptaktion" onClick={pruefen}>Alle Rechenschritte prüfen</button>}
-        {v.ergebnis && <div role="status" className={styles.feedback}><strong>{v.ergebnis.erreicht} von {v.ergebnis.moeglich} Schritten passen.</strong><p>{a.erklaerung}</p><span>{v.hilfen.length ? "Mit Hilfe oder unmittelbar nach einer Erklärung bearbeitet." : "Ohne aufgedeckte Rechenhilfe bearbeitet."}</span><div><button className={styles.back} onClick={neueZahlen}>Noch einmal mit neuen Zahlen</button>{stand.index < e.aufgabenIds.length - 1 && <button className="hauptaktion" onClick={() => speichern({ ...ref.current, index: stand.index + 1 })}>Nächste Aufbau-Aufgabe →</button>}</div></div>}
+        {v.ergebnis && <div role="status" className={styles.feedback}><strong>{v.ergebnis.erreicht} von {v.ergebnis.moeglich} Schritten passen.</strong><p><GlossarText text={a.erklaerung} onBegriff={begriff}/></p><span>{v.hilfen.length ? "Mit Hilfe oder unmittelbar nach einer Erklärung bearbeitet." : "Ohne aufgedeckte Rechenhilfe bearbeitet."}</span><div><button className={styles.back} onClick={neueZahlen}>Noch einmal mit neuen Zahlen</button>{stand.index < e.aufgabenIds.length - 1 && <button className="hauptaktion" onClick={() => speichern({ ...ref.current, index: stand.index + 1 })}>Nächste Aufbau-Aufgabe →</button>}</div></div>}
+        {v.ergebnis&&<Nacharbeit hinweise={v.reviewResult?.hinweise} hilfen={v.hilfen}/>}
         {fehler && <p role="alert" className={styles.fehler}>{fehler}</p>}
       </section>
       <label className={styles.notiz}>Dein Merksatz in eigenen Worten<textarea value={stand.notiz} onChange={ev => speichern({ ...ref.current, notiz: ev.target.value })} /></label>

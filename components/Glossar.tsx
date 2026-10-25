@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import { getBegriff, getGlossar, sucheBegriffe, type GlossarEintrag } from "@/lib/glossar";
 import { oeffneGlossarBegriff } from "@/components/GlossarText";
+import { GlossarSkizze } from "@/components/GlossarSkizze";
 
 const keinAbonnement = () => () => {};
 const vorlesenMoeglich = () => typeof window !== "undefined" && "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
@@ -73,6 +74,7 @@ function BegriffErklaerung({ begriff }: { begriff: GlossarEintrag }) {
       <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: "var(--text-muted)" }}>Kurz erklärt</p>
       <h3 id={titelId} className="mt-1 break-words text-xl font-bold">{begriff.begriff}</h3>
       <p className="mt-3 leading-relaxed">{begriff.einfach}</p>
+      {begriff.bild&&<GlossarSkizze bild={begriff.bild}/>}
       <div className="mt-4 rounded-xl p-3" style={{ background: "var(--accent-soft)" }}>
         <h4 className="text-sm font-semibold">Beispiel auf der Baustelle</h4>
         <p className="mt-1 text-sm leading-relaxed">{begriff.beispiel}</p>
