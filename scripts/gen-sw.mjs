@@ -133,7 +133,7 @@ export function generateServiceWorker(exportMode = process.env.EXPORT === "1") {
       });
   } else {
     const { lernfelder } = JSON.parse(readFileSync("content/lernfelder.json", "utf8"));
-    const seiten = ["/", "/lernen", "/ueben", "/zeichnen", "/pruefung", "/rechner", "/heute", "/praxis", "/lernweg", "/grundlagen/mathe", "/sprache/deutsch", "/sprache/englisch", "/lernhilfe", "/erprobung", "/fortschritt", "/projekte", "/bildtraining", "/rueckmeldung", "/manifest.webmanifest",
+    const seiten = ["/", "/lernen", "/ueben", "/zeichnen", "/pruefung", "/rechner", "/heute", "/praxis", "/lernweg", "/grundlagen/mathe", "/sprache/deutsch", "/sprache/englisch", "/lernhilfe", "/erprobung", "/fortschritt", "/projekte", "/bildtraining", "/fachbegriffe", "/rueckmeldung", "/manifest.webmanifest",
       ...lernfelder.flatMap((lf) => [`/lernen/${lf.id}`, `/lernen/${lf.id}/ueben`])];
     const assets = dateienIn(".next/static").filter((p) => !p.endsWith(".map")).map((p) => "/_next/static/" + relative(".next/static", p).split("\\").join("/"));
     const statisch = dateienIn("public").map((p) => "/" + relative("public", p).split("\\").join("/")).filter((p) => !["/sw.js", "/_worker.js", "/manifest.webmanifest"].includes(p));

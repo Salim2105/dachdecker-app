@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { MATHE_EINHEITEN, pruefeMathe, type MatheEinheit, type MatheErgebnis } from "@/lib/matheGrundlagen";
 import { appStorage } from "@/lib/lernSpeicher";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
@@ -36,10 +37,7 @@ export function leseMatheStand(id: string): Stand {
   } catch { return leer; }
 }
 export function MatheWerkstatt() {
-  const [auswahl, setAuswahl] = useState(() => {
-    const id = typeof window !== "undefined" ? window.location.hash.slice(1) || appStorage.getItem("fachmathe-auswahl") : "";
-    return [...MATHE_EINHEITEN, ...AUFBAU_EINHEITEN].some((e) => e.id === id) ? id : "";
-  });
+  const [auswahl, setAuswahl] = useState(() => bereichsAuswahl([...MATHE_EINHEITEN,...AUFBAU_EINHEITEN].map(e=>e.id),appStorage.getItem("fachmathe-auswahl")));
   useEffect(()=>{
     const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl([...MATHE_EINHEITEN,...AUFBAU_EINHEITEN].some(e=>e.id===id)?id:"");};
     window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);

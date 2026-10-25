@@ -1,14 +1,11 @@
 "use client";
-import Link from "next/link";
+import { LernLink } from "@/components/LernLink";
 import { usePathname } from "next/navigation";
-import { aktiverBereich, WERKSTATT_NAV } from "@/lib/navigation";
+import { aktiverBereich,MOBILE_NAV,WERKSTATT_NAV } from "@/lib/navigation";
 
-export function BottomNav() {
+export function BottomNav({onBereiche,menueOffen}:{onBereiche:()=>void;menueOffen:boolean}) {
   const aktiv = aktiverBereich(usePathname());
   return <nav className="mobile-nav" aria-label="Hauptnavigation mobil">
-    {WERKSTATT_NAV.map((item) => <Link key={item.href} href={item.href} aria-current={aktiv === item.href ? "page" : undefined}>
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={item.icon} /></svg>
-      <span>{item.kurz}</span>
-    </Link>)}
+    {MOBILE_NAV.map(item=>item.href===null?<button key="bereiche" type="button" onClick={onBereiche} aria-controls="bereiche-menue" aria-expanded={menueOffen} className={aktiv&&!['/','/heute','/fortschritt'].includes(aktiv)?"anderer-bereich-aktiv":""}><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg><span>Bereiche</span></button>:<LernLink key={item.href} href={item.href} aria-current={aktiv===item.href?"page":undefined}><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d={WERKSTATT_NAV.find(e=>e.href===item.href)!.icon}/></svg><span>{item.label}</span></LernLink>)}
   </nav>;
 }

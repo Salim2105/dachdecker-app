@@ -2,16 +2,22 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in 0.7.1: [Anklickbare Fachwörter mit Skizzen und gezielte Fehlernacharbeit](docs/lernwerkstatt-0.7.1.md). Dazu kommen die [Prüfungsstufen für alle Lernbereiche, gemeinsame Tagesrunde, zehn Aufbau-Matheeinheiten, sechs Baustellenprojekte und 24 Bildaufgaben aus 0.7](docs/lernwerkstatt-0.7.md). Die bisherigen [402 kurzen Fachwissen-Einheiten und Sprachwerkstätten](docs/lernwerkstatt-0.4.md) und [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben erhalten.
+Neu in **0.8.0**: [16 direkte Bereiche, übersichtlichere Einstiege und ein vollständiges Handy-Menü](docs/lernwerkstatt-0.8.md).
+
+Seit 0.7.1: [Anklickbare Fachwörter mit Skizzen und gezielte Fehlernacharbeit](docs/lernwerkstatt-0.7.1.md). Dazu kommen die [Prüfungsstufen für alle Lernbereiche, gemeinsame Tagesrunde, zehn Aufbau-Matheeinheiten, sechs Baustellenprojekte und 24 Bildaufgaben aus 0.7](docs/lernwerkstatt-0.7.md). Die bisherigen [402 kurzen Fachwissen-Einheiten und Sprachwerkstätten](docs/lernwerkstatt-0.4.md) und [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben erhalten.
 
 Für Kollegen mit iPhone: [Test-Link ohne Anmeldung erstellen](docs/kollegen-probe.md) mit `bash scripts/probe-teilen.sh`.
 
-## Die vier Arbeitsbereiche
+## 16 direkte Bereiche in vier Menügruppen
 
-- **Meine Übersicht:** Weiterlernen, Tagesempfehlung und nächste Wiederholungen.
-- **Lernpfad:** Alle vorhandenen Lernfelder, Anhänge und WiSo mit redigierten kurzen Einheiten. Dazu Fachmathe, Deutsch fürs Handwerk und Baustellenenglisch.
-- **Übungsraum:** sechs zusammenhängende Baustellenprojekte, 24 Bildaufgaben, Zuordnungen, Reihenfolgen, Baustellenfälle und digitales Zeichnen oder Papierfoto.
-- **Prüfungsraum:** drei Stufen für alle 22 Lernbereiche und bestehendes gemischtes Training; optionaler Timer, gespeicherte Antworten und nachvollziehbare Punktwertung mit internem Trainingsziel 80 %.
+| Menügruppe | Bereiche |
+|---|---|
+| Mein Lernen | Übersicht · Tagesrunde · Gezielt weiterüben · Lernstand & Sicherungen |
+| Wissen & Fächer | Lernfelder · Fachmathe · Deutsch fürs Handwerk · Baustellenenglisch · Fachbegriffe |
+| Üben & Praxis | Quiz & Aufgaben · Bildtraining · Zeichnen · Baustellenprojekte · Praxisfälle |
+| Prüfung & Werkzeuge | Prüfungen · Rechner |
+
+Auf dem Mac scrollt die Seitenleiste unabhängig von der Aufgabe. Auf dem Handy öffnen „Start“, „Heute“ und „Lernstand“ die wichtigsten Seiten; „Bereiche“ öffnet die vollständige Liste über der aktuellen Aufgabe. Rückmeldungen und Erprobungsbogen stehen zusätzlich unter Service.
 
 Rechner und Begriffshilfe öffnen sich neben der Aufgabe. Indexierte Lernstände, Prüfungen, Vektorzeichnungen und Fotos liegen auf dem Gerät. Vollständige Sicherungen sind ZIP-Dateien; ältere JSON-Sicherungen bleiben importierbar. Es gibt keine Konten oder Cloud-Synchronisierung.
 

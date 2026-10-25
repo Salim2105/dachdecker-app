@@ -1,10 +1,8 @@
 "use client";
 import { useSyncExternalStore } from "react";
-import Link from "next/link";
+import { LernLink as Link } from "@/components/LernLink";
 import { letzteSessionStore, letztesLfStore } from "@/lib/appStores";
-// Nur Titel und Aufgabenzahl — kein Grund, die Aufgaben selbst zu laden.
-import { getLernfeld } from "@/lib/lernfelder";
-import { ladeSitzungsInfo } from "@/lib/uebungStand";
+import { uebungsFortsetzung } from "@/lib/fortsetzung";
 
 /**
  * Springt mit einem Tipp zurück in die laufende Übung — genau an die Frage, wo
@@ -19,18 +17,7 @@ export function Fortsetzen() {
 
   const letzte = useSyncExternalStore(letzteSessionStore.subscribe, letzteSessionStore.getSnapshot, letzteSessionStore.getServerSnapshot);
   if (typeof window === "undefined") return null;
-  const kandidaten = [...new Set([letzte, lf].filter(Boolean))].flatMap((id) => {
-    const einheit = id.endsWith("-einheit");
-    const rechnen = id.endsWith("-rechnung");
-    const feld = getLernfeld(einheit ? id.slice(0, -8) : rechnen ? id.slice(0, -9) : id);
-    if (id !== "heute" && !feld) return [];
-    const stand = ladeSitzungsInfo(id);
-    if (!stand) return [];
-    return [{ ...stand, href: id === "heute" ? "/heute" : einheit ? `/lernen/${feld!.id}` : `/lernen/${feld!.id}/ueben${rechnen ? "?typ=rechnung" : ""}`,
-      titel: id === "heute" ? "Heutige Runde fortsetzen" : einheit ? "Lerneinheit fortsetzen" : "Übung fortsetzen",
-      thema: id === "heute" ? "Heute dran" : feld!.titel }];
-  });
-  const aktiv = kandidaten[0];
+  const aktiv = uebungsFortsetzung(letzte, lf);
   if (!aktiv) return null;
 
   return (

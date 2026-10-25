@@ -11,6 +11,7 @@ import { projektAktivNacharbeit, projektZahlNacharbeit } from "@/lib/lernNacharb
 import { aktivitaetTexte } from "@/lib/aktivitaeten";
 import { DrawCard } from "@/components/aufgaben/DrawCard";
 import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
+import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage } from "@/lib/lernSpeicher";
 import { istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { BAUPROJEKTE, PROJEKT_SCHRITTE, darfProjektRechnen, leseProjektStand, neuerProjektStand, projektErgebnis, projektKey, projektVollstaendig, pruefeProjektZahl, type BauProjekt, type ProjektStand, type ProjektRechnung } from "@/lib/bauprojekte";
@@ -25,11 +26,8 @@ function ProjektAktivitaet({name,projekt,stand,onAntwort,onPruefen,onBegriff}:{n
 function letzteSignale(s:ProjektStand,key:string){return (s.lernSignale??[]).filter(r=>r.aufgabeId===`projekt-${s.projekt.id}-${key}`).slice(-1);}
 function letzteHinweise(s:ProjektStand,key:string):LernHinweis[]{return letzteSignale(s,key).map(r=>({...r,hinweis:r.hinweis??"Vergleiche die Erklärung und übe den Zusammenhang erneut."}));}
 function letzteHilfen(s:ProjektStand,key:string):string[]{return letzteSignale(s,key)[0]?.hilfen??[];}
-function gespeicherteAuswahl(): string {
-  if (typeof window === "undefined") return "";
-  const id = window.location.hash.slice(1) || appStorage.getItem(AUSWAHL_KEY);
-  return BAUPROJEKTE.some(p => p.id === id) ? id! : "";
-}
+function gespeicherteAuswahl(): string {return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id),appStorage.getItem(AUSWAHL_KEY));}
+
 export function ProjektWerkstatt() {
   const [auswahl, setAuswahl] = useState(gespeicherteAuswahl);
   useEffect(() => {

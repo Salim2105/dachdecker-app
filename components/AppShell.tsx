@@ -3,10 +3,11 @@ import { createContext, useCallback, useContext, useEffect, useRef, useState } f
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
+import { BereichsNavigation,BereicheMenue } from "@/components/BereichsNavigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Rechner } from "@/components/rechner/Rechner";
 import { Glossar } from "@/components/Glossar";
-import { aktiverBereich, WERKSTATT_NAV } from "@/lib/navigation";
+import { aktiverBereich,bereichsTitel } from "@/lib/navigation";
 import { appStorage } from "@/lib/lernSpeicher";
 import { feedbackHref } from "@/lib/feedback";
 
@@ -19,6 +20,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const aktiv = aktiverBereich(pathname);
   const [werkzeug, setWerkzeug] = useState<Werkzeug | null>(null);
+  const [menueOffen,setMenueOffen]=useState(false);
+  const menueRuecksprung=useRef<HTMLElement|null>(null);
   const [besucht, setBesucht] = useState<Set<Werkzeug>>(new Set());
   const [begriff, setBegriff] = useState<string>();
   const [breite, setBreite] = useState(() => Math.min(560, Math.max(320, Number(appStorage.getItem("hilfe-breite")) || 380)));
@@ -27,6 +30,19 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const panelTitel = useRef<HTMLHeadingElement>(null);
   const panel = useRef<HTMLElement>(null);
   const [overlay, setOverlay] = useState(false);
+  const menueSchliessen=useCallback(()=>{setMenueOffen(false);requestAnimationFrame(()=>{if(menueRuecksprung.current?.isConnected)menueRuecksprung.current.focus();});},[]);
+  const nachNavigation=useCallback(()=>setMenueOffen(false),[]);
+  function bereicheOeffnen(){
+    menueRuecksprung.current=document.activeElement instanceof HTMLElement?document.activeElement:null;
+    window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));setWerkzeug(null);setMenueOffen(true);
+  }
+  useEffect(()=>{
+    const restored=(e:PageTransitionEvent)=>{if(e.persisted)setMenueOffen(false);};
+    const media=window.matchMedia?.("(min-width: 801px)");
+    const groesser=()=>{if(media?.matches)setMenueOffen(false);};
+    window.addEventListener("pageshow",restored);media?.addEventListener("change",groesser);
+    return()=>{window.removeEventListener("pageshow",restored);media?.removeEventListener("change",groesser);};
+  },[]);
   useEffect(() => {
     if (!window.matchMedia) return;
     const query = window.matchMedia("(max-width: 1200px)");
@@ -35,6 +51,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return () => query.removeEventListener("change", aktualisieren);
   }, []);
   const oeffnen = useCallback((tool: Werkzeug, id?: string) => {
+    setMenueOffen(false);
     window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));
     if (document.activeElement instanceof HTMLElement && !document.activeElement.closest("#werkzeug-panel")) ruecksprung.current = document.activeElement;
     setBesucht((old) => new Set([...old, tool]));
@@ -56,27 +73,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, [oeffnen, schliessen, werkzeug]);
   useEffect(() => {
     document.documentElement.style.zoom = String(schrift / 100);
+    document.documentElement.style.setProperty("--app-zoom", String(schrift / 100));
     appStorage.setItem("schriftgroesse", String(schrift));
   }, [schrift]);
+  const blockiert=menueOffen||(overlay&&!!werkzeug);
   return <WerkzeugContext.Provider value={{ oeffnen }}>
-    <a className="skip-link" href="#arbeitsflaeche" inert={overlay && !!werkzeug}>Zum Inhalt springen</a>
+    <a className="skip-link" href="#arbeitsflaeche" inert={blockiert}>Zum Inhalt springen</a>
     <div className={`app-shell ${werkzeug ? "mit-werkzeug" : ""}`} style={{ "--hilfe-breite": `${breite}px` } as React.CSSProperties}>
-      <aside className="werkstatt-nav" inert={overlay && !!werkzeug}>
+      <aside className="werkstatt-nav" inert={blockiert}>
         <Link href="/" className="werkstatt-marke" aria-label="Dachdecker Lernwerkstatt – Übersicht">
           <svg viewBox="0 0 48 40" width="46" height="40" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 23L24 5l22 18M9 21v15h30V21M24 6v29M14 14l22 18M33 14L13 31" /></svg>
           <span>Dachdecker<strong>Lernwerkstatt</strong></span>
         </Link>
-        <nav aria-label="Hauptnavigation">
-          {WERKSTATT_NAV.map((item) => <Link href={item.href} key={item.href} aria-current={aktiv === item.href ? "page" : undefined}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d={item.icon} /></svg>
-            <span><strong>{item.label}</strong><small>{item.hinweis}</small></span>
-          </Link>)}
-        </nav>
-        <div className="nav-fuss"><div className="nav-motivation"><span aria-hidden="true">✦</span><strong>Dein Wissen.<br />Dein Handwerk.</strong><p>Ein kleiner Lernschritt bringt dich weiter.</p></div><Link href="/fortschritt">Dein Fortschritt & Sicherungen →</Link></div>
+        <div className="navigation-scroll"><BereichsNavigation aktiv={aktiv}/></div>
+        <div className="navigation-fuss">Dein Wissen. Dein Handwerk.</div>
       </aside>
-      <div className="werkstatt-arbeit" inert={overlay && !!werkzeug}>
+      <div className="werkstatt-arbeit" inert={blockiert}>
         <header className="werkstatt-kopf">
-          <span className="bereich-name">{WERKSTATT_NAV.find((i) => i.href === aktiv)?.label}</span>
+          <span className="bereich-name">{bereichsTitel(pathname)}</span>
           <div className="werkzeug-knopfleiste">
             <Link href={feedbackHref(pathname)} className="inline-flex min-h-[42px] items-center rounded-xl border px-3 py-2 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }} onClick={(event) => {
               if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -108,6 +122,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <div hidden={werkzeug !== "glossar"}>{besucht.has("glossar") && <Glossar begriffId={begriff} onBegriff={setBegriff} />}</div>
       </aside>
     </div>
-    <div inert={overlay && !!werkzeug}><BottomNav /></div>
+    <div inert={blockiert}><BottomNav onBereiche={bereicheOeffnen} menueOffen={menueOffen}/></div>
+    {menueOffen&&<BereicheMenue aktiv={aktiv} onSchliessen={menueSchliessen} onNavigationReady={nachNavigation}/>}
   </WerkzeugContext.Provider>;
 }

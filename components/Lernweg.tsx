@@ -24,7 +24,7 @@ export function Lernweg() {
   const fertig = LERNWEGE.filter((e) => staende[e.id]?.schritt === 4).length;
 
   return <div>
-    <h1 className="text-[26px] font-semibold">Dein geführter Lernweg</h1>
+    <h1 className="text-[26px] font-semibold">Praxisfälle mit Erklärung</h1>
     <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>Sechs Grundlagen-Einheiten: erst verstehen, dann selbst erklären, rechnen und auf eine Baustellensituation anwenden.</p>
     <p className="mt-2 text-sm">{fertig} von {LERNWEGE.length} Einheiten bearbeitet. Deine Stelle und Eingaben werden auf diesem Gerät gespeichert und mitgesichert.</p>
     <label className="mt-4 block text-sm">Lerneinheit wählen

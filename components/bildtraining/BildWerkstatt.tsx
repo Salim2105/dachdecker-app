@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage } from "@/lib/lernSpeicher";
 import { BILD_AUFGABEN, BILD_THEMEN, bildStandKey, ladeBildStand, leseBildStand, neuerBildStand, pruefeBildAufgabe, type BildAufgabe, type BildStand } from "@/lib/bildtraining";
 import { istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
@@ -17,7 +18,7 @@ import styles from "./Bildtraining.module.css";
 const AUSWAHL_KEY="bildtraining-auswahl";
 function letzteAufgabe(id:string){try{appStorage.setItem(AUSWAHL_KEY,id);appStorage.setItem("lernwerkstatt-zuletzt-route",`/bildtraining#${id}`);}catch{/* The global storage status stays visible. */}}
 export function BildWerkstatt(){
- const [auswahl,setAuswahl]=useState(()=>{const id=typeof window!=="undefined"?window.location.hash.slice(1)||appStorage.getItem(AUSWAHL_KEY):"";return BILD_AUFGABEN.some(a=>a.id===id)?id:"";});
+ const [auswahl,setAuswahl]=useState(()=>bereichsAuswahl(BILD_AUFGABEN.map(a=>a.id),appStorage.getItem(AUSWAHL_KEY)));
  const [filter,setFilter]=useState("alle");
  useEffect(()=>{const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(BILD_AUFGABEN.some(a=>a.id===id)?id:"");};window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};},[]);
  function waehle(id:string){setAuswahl(id);try{if(id)letzteAufgabe(id);else appStorage.removeItem(AUSWAHL_KEY);}catch{}window.history.replaceState(null,"",`${window.location.pathname}${id?`#${id}`:""}`);window.scrollTo({top:0});}

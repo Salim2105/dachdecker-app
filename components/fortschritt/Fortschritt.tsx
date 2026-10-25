@@ -26,7 +26,7 @@ export function Fortschritt() {
 
   return (
     <div>
-      <h1 className="text-[26px] font-semibold">Dein Lernstand nach Themen</h1>
+      <h1 className="text-[26px] font-semibold">Dein Fachwissen-Lernstand</h1>
       <p className="mt-2 text-sm" style={{ color: "var(--text-muted)" }}>
         Eine richtige Antwort ist ein Anfang. „Mehrfach erinnert“ bedeutet mindestens drei erfolgreiche Abrufe ohne Hilfe an verschiedenen Tagen.
         Selbsteinschätzungen sind keine automatische Wissensprüfung.

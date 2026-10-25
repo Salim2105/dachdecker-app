@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage } from "@/lib/lernSpeicher";
 import { recordReviewResult, type ReviewResult } from "@/lib/review";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
@@ -12,15 +13,12 @@ import styles from "./Sprache.module.css";
 
 export function SprachWerkstatt({ sprache }: { sprache: WerkstattSprache }) {
   const einheiten=sprachEinheiten(sprache);
-  const [auswahl,setAuswahl]=useState(()=>{
-    const id=typeof window!=="undefined" ? window.location.hash.slice(1)||appStorage.getItem(`sprachwerkstatt-${sprache}-auswahl`) : "";
-    return einheiten.some((e)=>e.id===id)?id:"";
-  });
+  const [auswahl,setAuswahl]=useState(()=>bereichsAuswahl(einheiten.map(e=>e.id),appStorage.getItem(`sprachwerkstatt-${sprache}-auswahl`)));
   useEffect(()=>{
     const ausAdresse=()=>{
       const hash=window.location.hash.slice(1);
       const id=einheiten.some((e)=>e.id===hash)?hash:"";
-      setAuswahl(id);try{appStorage.setItem(`sprachwerkstatt-${sprache}-auswahl`,id);}catch{ /* Der gemeinsame Speicherhinweis zeigt den fehlgeschlagenen Schreibzugriff. */ }
+      setAuswahl(id);try{if(id)appStorage.setItem(`sprachwerkstatt-${sprache}-auswahl`,id);}catch{ /* Der gemeinsame Speicherhinweis zeigt den fehlgeschlagenen Schreibzugriff. */ }
     };
     window.addEventListener("hashchange",ausAdresse);window.addEventListener("popstate",ausAdresse);
     return ()=>{window.removeEventListener("hashchange",ausAdresse);window.removeEventListener("popstate",ausAdresse);};
