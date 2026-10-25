@@ -10,6 +10,7 @@ const eslintConfig = defineConfig([
     // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
+    ".probe-export/**",
     "build/**",
     "dist-desktop/**",
     "electron/**", // eigener Node/CJS-Prozess, nicht die Next-App

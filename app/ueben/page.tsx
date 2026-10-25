@@ -7,6 +7,9 @@ import { PracticeArtwork, type PracticeArt } from "@/components/practice/Practic
 import { GrundlagenEntdecken } from "@/components/GrundlagenEntdecken";
 
 const AKTIVITAETEN: { art: PracticeArt; titel: string; text: string; farbe: string; label: string; aktion: string; href?: string; tool?: "glossar" | "rechner" }[] = [
+  { art: "baustelle", titel: "Dein Auftrag. Deine Baustelle.", text: "Sechs zusammenhängende Projekte: planen, rechnen, auswählen und zeichnen. Mit Begleitung oder selbst probieren.", farbe: "#fbe1d9", label: "GANZE PROJEKTE ANPACKEN", aktion: "Baustellenprojekte öffnen →", href: "/projekte" },
+  { art: "zuordnen", titel: "Mit offenen Augen lernen", text: "24 Bildaufgaben: Bauteile erkennen, Schichten ordnen und Fehler in verständlichen Dachskizzen finden.", farbe: "#d9f0e9", label: "BILDER LESEN & VERSTEHEN", aktion: "Bildtraining entdecken →", href: "/bildtraining" },
+  { art: "wiederholen", titel: "Deine gemeinsame Tagesrunde", text: "Frische Fachwissen, Mathe und Sprachen auf. Fällige Aufgaben zuerst, passende neue Übungen danach.", farbe: "#f5edc8", label: "DEIN WISSEN BLEIBT", aktion: "Tagesrunde starten →", href: "/heute" },
   { art: "zuordnen", titel: "Kleine Aufgaben, große Aha-Momente", text: "Bauteile zuordnen, Abläufe sortieren und Fehler in Skizzen entdecken. In allen Lernfeldern.", farbe: "#f2e5ff", label: "ZUORDNEN & ENTDECKEN", aktion: "Lernfeld und Aktivität wählen →", href: "/lernen" },
   { art: "zeichnen", titel: "Zeichnen und vergleichen", text: "Von der ersten Linie zur Dachskizze. Digital oder mit deinem Papierfoto.", farbe: "#ffe6cb", label: "DEINE ZEICHENWERKSTATT", aktion: "Zeichenwerkstatt öffnen →", href: "/zeichnen" },
   { art: "begriffe", titel: "Fachbegriffe verstehen", text: "Aus komplizierten Wörtern werden verständliche Beispiele von der Baustelle.", farbe: "#d9f0e9", label: "KURZ ERKLÄRT", aktion: "Begriffshilfe öffnen →", tool: "glossar" },
@@ -26,9 +29,9 @@ export default function Uebungsraum() {
       </div>
     </section>
     <Fortsetzen />
-    <div className="mb-4 mt-7 flex flex-wrap items-end justify-between gap-3"><h2 className="text-2xl font-semibold tracking-tight">Worauf hast du Lust?</h2><p className="text-sm" style={{ color: "var(--text-muted)" }}>Sechs Wege, aktiv zu lernen</p></div>
+    <div className="mb-4 mt-7 flex flex-wrap items-end justify-between gap-3"><h2 className="text-2xl font-semibold tracking-tight">Worauf hast du Lust?</h2><p className="text-sm" style={{ color: "var(--text-muted)" }}>Dein Wissen auf verschiedene Arten anwenden</p></div>
     <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
-      {AKTIVITAETEN.map((a) => <section key={a.art} className="group flex min-w-0 flex-col overflow-hidden rounded-[24px] border transition-transform motion-safe:hover:-translate-y-1" style={{ background: "var(--surface)", borderColor: "var(--border)", boxShadow: "0 5px 0 color-mix(in srgb, var(--border) 55%, transparent)" }}>
+      {AKTIVITAETEN.map((a) => <section key={a.titel} className="group flex min-w-0 flex-col overflow-hidden rounded-[24px] border transition-transform motion-safe:hover:-translate-y-1" style={{ background: "var(--surface)", borderColor: "var(--border)", boxShadow: "0 5px 0 color-mix(in srgb, var(--border) 55%, transparent)" }}>
         <div className="relative flex min-h-44 items-center justify-center overflow-hidden px-5 py-2" style={{ background: a.farbe }}><span className="absolute left-4 top-3 text-[11px] font-bold tracking-[.1em]" style={{ color: "#43506b" }}>{a.label}</span><div className="mt-4"><PracticeArtwork art={a.art} /></div></div>
         <div className="flex flex-1 flex-col p-5"><h2 className="text-xl font-semibold leading-snug">{a.titel}</h2><p className="mb-5 mt-2 flex-1 text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>{a.text}</p>
           {a.href ? <Link href={a.href} className="flex min-h-12 items-center justify-between gap-3 rounded-xl px-4 py-3 text-sm font-semibold" style={{ color: "#24344e", background: a.farbe }}>{a.aktion}</Link> : <button className="flex min-h-12 items-center justify-between gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold" style={{ color: "#24344e", background: a.farbe }} onClick={() => oeffnen(a.tool!)}>{a.aktion}</button>}

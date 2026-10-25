@@ -10,5 +10,6 @@ export function istFortschritt(v: unknown, id: string): v is AufgabenFortschritt
       !istZeit(v.faelligAm) || !istZeit(v.intervallTage)) return false;
   return v.verlauf === undefined || Array.isArray(v.verlauf) && v.verlauf.every((eintrag: unknown) =>
     istObjekt(eintrag) && istZeit(eintrag.am) && istBewertung(eintrag.bewertung) &&
+    (eintrag.versuchId === undefined || typeof eintrag.versuchId === "string" && !!eintrag.versuchId) &&
     ["mitHilfe", "selbstBewertet", "nachErklaerung"].every((key) => eintrag[key] === undefined || typeof eintrag[key] === "boolean"));
 }

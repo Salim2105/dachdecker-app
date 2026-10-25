@@ -27,5 +27,11 @@ export function useAufgabenEntwurf<T>(id: string, feld: string, initial: T, vali
 export const istText = (value: unknown): value is string => typeof value === "string";
 export const istTextRecord = (value: unknown): value is Record<string, string> => !!value && typeof value === "object" && !Array.isArray(value) && Object.values(value).every((v) => typeof v === "string");
 export function loescheAufgabenEntwurf(id: string) {
-  for (const key of Object.keys(appStorage)) if (key.startsWith(`dd-entwurf-${id}-`)) appStorage.removeItem(key);
+  // The mixed round keeps the actual submitted answer even after the old card
+  // clears its editable draft. Archive first, so a storage failure keeps it intact.
+  const keys = Object.keys(appStorage).filter((key) => key.startsWith(`dd-entwurf-${id}-`));
+  if (id.startsWith("tagesrunde:") && keys.length) {
+    appStorage.setItem(`review-antwort-${id}`, JSON.stringify(Object.fromEntries(keys.map((key) => [key.slice(`dd-entwurf-${id}-`.length), appStorage.getItem(key) ?? ""]))));
+  }
+  for (const key of keys) appStorage.removeItem(key);
 }

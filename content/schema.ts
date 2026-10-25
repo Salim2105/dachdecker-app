@@ -118,6 +118,9 @@ export interface Lektion {
 export type Bewertung = "richtig" | "teilweise" | "falsch";
 
 export interface BewertungsKontext {
+  /** Stable event identity and original answer time for resumed mixed rounds. */
+  versuchId?: string;
+  am?: number;
   mitHilfe?: boolean;
   selbstBewertet?: boolean;
   /** Direkt nach einer Lektion oder Musterlösung: kein langfristiger Abruf. */

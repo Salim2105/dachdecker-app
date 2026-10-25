@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { appStorage } from "@/lib/lernSpeicher";
+import { recordReviewResult, type ReviewResult } from "@/lib/review";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
 import { mischeAnzeige } from "@/lib/aktivitaeten";
 import { leseSprachStand, leereSprachAntwort, pruefeSprachAntwort, sprachEinheiten, sprachKey, type SprachAntwort, type SprachEinheit, type SprachStand, type WerkstattSprache } from "@/lib/sprachWerkstatt";
@@ -53,12 +54,21 @@ function SprachLerneinheit({einheit:e,zurueck,weiter}:{einheit:SprachEinheit;zur
     try{appStorage.setItem("lernwerkstatt-zuletzt-route",`/sprache/${e.sprache}#${e.id}`);appStorage.setItem(`sprachwerkstatt-${e.sprache}-auswahl`,e.id);}catch{ /* StorageGate zeigt den Fehler; Inhalte bleiben bedienbar. */ }
     return ()=>{if(typeof window!=="undefined" && "speechSynthesis" in window)window.speechSynthesis.cancel();};
   },[e.sprache,e.id]);
+  useEffect(()=>{
+    let aktiv=true;
+    try {
+      // Only new submissions have a stored review event. Older drafts and
+      // historical checked answers never manufacture retrospective success.
+      for(const a of Object.values(ref.current.antworten))for(const r of a.reviews??[])recordReviewResult(r);
+    }catch{queueMicrotask(()=>{if(aktiv)setFehler("Deine Antwort bleibt gespeichert. Ihr Wiederholungstermin konnte noch nicht übernommen werden. Bitte den Speicherhinweis prüfen.");});}
+    return ()=>{aktiv=false;};
+  },[e.id]);
   const f=e.aufgaben[stand.index];
   const antwort=stand.antworten[f.id]??leereSprachAntwort();
   const fertig=e.aufgaben.every((a)=>stand.antworten[a.id]?.geprueft);
   function speichern(neu:SprachStand) {
     ref.current=neu;setStand(neu);
-    try{appStorage.setItem(sprachKey(e),JSON.stringify(neu));}catch{setFehler("Dein Sprachentwurf konnte nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen.");}
+    try{appStorage.setItem(sprachKey(e),JSON.stringify(neu));return true;}catch{setFehler("Dein Sprachentwurf konnte nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen.");return false;}
   }
   function aendere(patch:Partial<SprachAntwort>) {
     const aktuell=ref.current;
@@ -77,7 +87,12 @@ function SprachLerneinheit({einheit:e,zurueck,weiter}:{einheit:SprachEinheit;zur
     const r=pruefeSprachAntwort(f,aktuell);
     if(r===null){setFehler(f.typ==="wahl"?"Wähle zuerst eine Antwort aus.":"Ordne zuerst jedem Begriff eine Bedeutung zu.");return;}
     const hilfen=[...new Set([...aktuell.hilfen,...(wortlisteGesehen?["wortliste"]:[])])];
-    setFehler("");aendere({geprueft:true,hilfen});signal(r,hilfen);
+    const review:ReviewResult={ref:{quelle:"sprache",id:`${e.sprache}:${f.id}`,version:1,lernzielIds:[`${e.sprache}-${e.id}`]},versuchId:`sprache-${globalThis.crypto.randomUUID()}`,bewertung:r?"richtig":"falsch",am:Date.now(),hilfen,nachErklaerung:hilfen.includes("rueckmeldung")};
+    setFehler("");
+    const neu={...aktuell,geprueft:true,hilfen,reviews:[...(aktuell.reviews??[]),review]};
+    if(!speichern({...ref.current,antworten:{...ref.current.antworten,[f.id]:neu}}))return;
+    try{recordReviewResult(review);}catch{setFehler("Deine Antwort bleibt gespeichert. Ihr Wiederholungstermin konnte noch nicht übernommen werden. Bitte den Speicherhinweis prüfen.");}
+    signal(r,hilfen);
   }
   function selbstBewerten(wert:"passt"|"unsicher") {
     if(ref.current.selbst===wert)return;
@@ -100,7 +115,7 @@ function SprachLerneinheit({einheit:e,zurueck,weiter}:{einheit:SprachEinheit;zur
     {stand.abgeschlossen?<section className={styles.success}><LernIllustration motiv="erfolg"/><h2>Ein Sprachwerkzeug mehr.</h2><p>{e.aufgaben.filter((a)=>{const v=stand.antworten[a.id];return v?.geprueft&&pruefeSprachAntwort(a,v);}).length} von {e.aufgaben.length} zuletzt geprüften Antworten passen. Wiederholungen und genutzte Hilfen bleiben erkennbar.</p><button className="hauptaktion" onClick={weiter}>Nächste Spracheinheit →</button><Link href="/lernhilfe">Deine nächsten Übungen ansehen</Link><button className={styles.back} onClick={()=>speichern({...ref.current,abgeschlossen:false})}>Antworten und eigene Formulierung ansehen</button></section>:<>
       <section className={styles.text}><h2>Erst verstehen</h2><p>{e.text}</p><strong>{e.merksatz}</strong><div className={styles.example}><span>BEISPIEL AUS DEM HANDWERK</span><p>{e.sprache==="englisch"?<><span lang="en">{e.beispiel.split("—")[0]}</span>—{e.beispiel.split("—").slice(1).join("—")}</>:e.beispiel}</p>{e.sprache==="englisch"&&<button className={styles.back} onClick={sprechen}>Englischen Beispielsatz anhören</button>}</div></section>
       <section className={styles.words}><button aria-expanded={wortlisteOffen} className={styles.wordButton} onClick={()=>{setWortlisteOffen(!wortlisteOffen);if(!wortlisteOffen){setWortlisteGesehen(true);hilfe("wortliste");}}}>Deine Worthilfe {wortlisteOffen?"schließen":"öffnen"} <span aria-hidden="true">{wortlisteOffen?"−":"+"}</span></button>{wortlisteOffen&&<dl>{e.woerter.map((w)=><div key={w.wort}><dt lang={e.sprache==="englisch"?"en":undefined}>{w.wort}</dt><dd>{w.bedeutung}</dd></div>)}</dl>}</section>
-      <section className={styles.task}><div className={styles.taskHead}><span>JETZT DU</span><span>Aufgabe {stand.index+1} von {e.aufgaben.length}</span></div><h2 tabIndex={-1} ref={fragenTitel}>{f.frage}</h2>
+      <section className={styles.task} data-aufgabe-id={`${e.sprache}:${f.id}`} data-aufgabe-text={f.frage}><div className={styles.taskHead}><span>JETZT DU</span><span>Aufgabe {stand.index+1} von {e.aufgaben.length}</span></div><h2 tabIndex={-1} ref={fragenTitel}>{f.frage}</h2>
         {f.typ==="wahl"?<fieldset className={styles.options} disabled={antwort.geprueft}><legend className="sr-only">Deine Antwort</legend>{f.optionen.map((o,i)=><label key={o}><input type="radio" name={f.id} value={i} checked={antwort.wahl===String(i)} onChange={()=>aendere({wahl:String(i)})}/><span lang={e.sprache==="englisch"&&["werkzeuge-3","masse-3","nachfragen-1"].includes(f.id)?"en":undefined}>{o}</span></label>)}</fieldset>:<div className={styles.pairs}>{f.paare.map((p)=><label key={p.links}><span lang={e.sprache==="englisch"?"en":undefined}>{p.links}</span><select aria-label={`Bedeutung zu ${p.links}`} disabled={antwort.geprueft} value={antwort.paare[p.links]??""} onChange={(ev)=>aendere({paare:{...antwort.paare,[p.links]:ev.target.value}})}><option value="">Bedeutung wählen</option>{mischeAnzeige(f.paare, `${e.sprache}:${e.id}:${f.id}:bedeutungen`).map((q)=><option key={q.rechts}>{q.rechts}</option>)}</select></label>)}</div>}
         {!antwort.geprueft&&<button className="hauptaktion" onClick={pruefen}>Antwort vergleichen</button>}
         <details className={styles.hint} key={f.id} onToggle={(ev)=>{if(ev.currentTarget.open)hilfe("tipp");}}><summary>Ein kleiner Hinweis</summary><p>{f.tipp}</p></details>

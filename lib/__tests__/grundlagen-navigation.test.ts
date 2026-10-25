@@ -27,6 +27,7 @@ describe("Übungshinweise führen zu den tatsächlich geübten Lernzielen", () =
   it.each([
     ["/grundlagen/mathe", "/lernen"], ["/sprache/deutsch", "/lernen"], ["/sprache/englisch", "/lernen"],
     ["/lernhilfe", "/ueben"], ["/erprobung", "/ueben"], ["/lernen/lf08/ueben", "/ueben"],
+    ["/projekte", "/ueben"], ["/bildtraining", "/ueben"],
     ["/lernen/lf08", "/lernen"], ["/pruefung", "/pruefung"], ["/fortschritt", "/"],
   ])("ordnet %s dem richtigen Hauptbereich %s zu", (route, bereich) => {
     expect(aktiverBereich(route)).toBe(bereich);

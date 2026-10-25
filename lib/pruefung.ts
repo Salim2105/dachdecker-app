@@ -1,6 +1,6 @@
 import type { Aufgabe, Bewertung } from "@/content/schema";
 import { getAufgaben, getLernfelder } from "@/lib/content";
-import { LF7_EXAM_METADATA, type ExamLevel } from "@/lib/examMetadata";
+import { EXAM_METADATA, type ExamLevel } from "@/lib/examMetadata";
 
 /**
  * Nur diese Aufgabentypen werden automatisch bewertet. draw und fachbegriff
@@ -46,6 +46,14 @@ export function getPruefungsteile(): Pruefungsteil[] {
       beschreibung: "LF7: zusammenhängende Entscheidungen, Bemessung und Transfer auf Baustellenfälle.",
       lernfelder: ["lf07"], anzahl: 20, minuten: 40,
     },
+    ...getLernfelder().filter((lf) => lf.id !== "lf07").flatMap((lf): Pruefungsteil[] => [
+      { id: `${lf.id}-grundlagen`, titel: "Grundlagen", stufe: "grundlagen", lernfelder: [lf.id], anzahl: 10, minuten: 15,
+        beschreibung: `${lf.titel}: Begriffe, Bauteile und einzelne Zusammenhänge sicher erkennen.` },
+      { id: `${lf.id}-anwendung`, titel: "Anwendung", stufe: "anwendung", lernfelder: [lf.id], anzahl: 10, minuten: 20,
+        beschreibung: `${lf.titel}: bekannte Verfahren, Zusammenhänge und Maßnahmen anwenden.` },
+      { id: `${lf.id}-pruefungsnah`, titel: "Prüfungsnah", stufe: "pruefungsnah", lernfelder: [lf.id], anzahl: 10, minuten: 30,
+        beschreibung: `${lf.titel}: mehrere Angaben oder Baustellensituationen verknüpfen und Entscheidungen beurteilen.` },
+    ]),
     {
       id: "teil1",
       titel: "Grundlagen — Lernfeld 1 bis 9",
@@ -97,7 +105,7 @@ export function ziehePruefung(pool: Aufgabe[], anzahl: number, zufall: () => num
 
 export function poolFuer(teil: Pruefungsteil): Aufgabe[] {
   return teil.lernfelder.flatMap((id) => getAufgaben(id)).filter(istAutoBewertbar)
-    .filter((a) => !teil.stufe || LF7_EXAM_METADATA[a.id]?.level === teil.stufe);
+    .filter((a) => Boolean(EXAM_METADATA[a.id]) && (!teil.stufe || EXAM_METADATA[a.id].level === teil.stufe));
 }
 
 export function zieheAufgaben<T>(

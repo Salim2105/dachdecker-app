@@ -17,6 +17,7 @@ const { lernfelder } = JSON.parse(
   fs.readFileSync(path.join(contentDir, "lernfelder.json"), "utf8"),
 );
 
+const ergaenzungen = JSON.parse(fs.readFileSync(path.join(contentDir, "pruefung", "ergaenzungen.json"), "utf8"));
 const proLernfeld = {};
 let gesamt = 0;
 
@@ -24,7 +25,7 @@ for (const lf of lernfelder) {
   const datei = path.join(contentDir, lf.id, "aufgaben.json");
   let anzahl = 0;
   if (fs.existsSync(datei)) {
-    const aufgaben = JSON.parse(fs.readFileSync(datei, "utf8"));
+    const aufgaben = [...JSON.parse(fs.readFileSync(datei, "utf8")), ...(ergaenzungen[lf.id] ?? [])];
     anzahl = aufgaben.filter((a) => a.konfidenz !== "pruefen").length;
   }
   proLernfeld[lf.id] = anzahl;

@@ -1,13 +1,14 @@
 "use client";
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Rechner } from "@/components/rechner/Rechner";
 import { Glossar } from "@/components/Glossar";
 import { aktiverBereich, WERKSTATT_NAV } from "@/lib/navigation";
 import { appStorage } from "@/lib/lernSpeicher";
+import { feedbackHref } from "@/lib/feedback";
 
 type Werkzeug = "rechner" | "glossar";
 const WerkzeugContext = createContext<{ oeffnen: (tool: Werkzeug, begriff?: string) => void }>({ oeffnen: () => {} });
@@ -15,6 +16,7 @@ export const useWerkzeug = () => useContext(WerkzeugContext);
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const router = useRouter();
   const aktiv = aktiverBereich(pathname);
   const [werkzeug, setWerkzeug] = useState<Werkzeug | null>(null);
   const [besucht, setBesucht] = useState<Set<Werkzeug>>(new Set());
@@ -76,6 +78,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <header className="werkstatt-kopf">
           <span className="bereich-name">{WERKSTATT_NAV.find((i) => i.href === aktiv)?.label}</span>
           <div className="werkzeug-knopfleiste">
+            <Link href={feedbackHref(pathname)} className="inline-flex min-h-[42px] items-center rounded-xl border px-3 py-2 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }} onClick={(event) => {
+              if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+              const aufgabe = [...document.querySelectorAll<HTMLElement>("#arbeitsflaeche [data-aufgabe-id]")].find((el) => !el.closest("[hidden], [inert]"));
+              const ziel = feedbackHref(`${pathname}${window.location.hash}`, aufgabe?.dataset.aufgabeId, aufgabe?.dataset.aufgabeText);
+              event.preventDefault();
+              router.push(ziel);
+            }}>Rückmeldung geben</Link>
             <button aria-controls="werkzeug-panel" aria-expanded={werkzeug === "rechner"} onClick={() => werkzeug === "rechner" ? schliessen() : oeffnen("rechner")}>Rechner</button>
             <button aria-controls="werkzeug-panel" aria-expanded={werkzeug === "glossar"} onClick={() => werkzeug === "glossar" ? schliessen() : oeffnen("glossar")}>Begriffshilfe</button>
             <label className="schriftwahl"><span className="sr-only">Schriftgröße</span><select aria-label="Schriftgröße" value={schrift} onChange={(e) => setSchrift(Number(e.target.value))}>{[100, 115, 130].map((n) => <option key={n} value={n}>Aa {n} %</option>)}</select></label>

@@ -15,6 +15,7 @@ import { LernIllustration } from "@/components/design/LernIllustration";
 import { GrundlagenEntdecken } from "@/components/GrundlagenEntdecken";
 import { getLernfelder } from "@/lib/content";
 import { ladeLernsignale } from "@/lib/lerndiagnose";
+import { loadReviewRecords } from "@/lib/review";
 
 const WOCHE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 
@@ -24,6 +25,7 @@ export default function Home() {
   const minuten = useSyncExternalStore(lernzeitStore.subscribe, lernzeitStore.getSnapshot, lernzeitStore.getServerSnapshot);
   const [now] = useState(() => Date.now());
   const [werkstattAntworten] = useState(ladeLernsignale);
+  const [wiederholungen] = useState(loadReviewRecords);
   const [letzteEinheit] = useState(() => {
     try { const s = JSON.parse(appStorage.getItem("lernwerkstatt-zuletzt") || "null"); return s && typeof s.lfId === "string" ? s : null; } catch { return null; }
   });
@@ -34,15 +36,16 @@ export default function Home() {
   });
   const [letzteRoute] = useState(() => {
     const route=appStorage.getItem("lernwerkstatt-zuletzt-route");
-    return route&&/^\/(?:lernen\/(?:lf\d{2}[ab]?|anhang[123]|wiso)|grundlagen\/mathe|sprache\/(?:deutsch|englisch))(?:#[a-z0-9-]+)?$/.test(route)?route:null;
+    return route&&/^\/(?:lernen\/(?:lf\d{2}[ab]?|anhang[123]|wiso)|grundlagen\/mathe|sprache\/(?:deutsch|englisch)|projekte|bildtraining)(?:#[a-z0-9-]+)?$/.test(route)?route:null;
   });
   const stand = pruefungsreife(fortschritt, now);
+  const faellig = stand.faellig + Object.values(wiederholungen).filter(s => s.ref.quelle !== "fachwissen" && s.faelligAm <= now).length;
   const tage = serie(fortschritt, now);
   const bearbeitet = Object.keys(fortschritt).length;
-  const hatStand = bearbeitet > 0 || letzteEinheit || letzteRoute;
+  const hatStand = bearbeitet > 0 || Object.keys(wiederholungen).length > 0 || letzteEinheit || letzteRoute;
   const ziel = letzteRoute ?? (letzteEinheit && getCurriculum(letzteEinheit.lfId) ? `/lernen/${letzteEinheit.lfId}${typeof letzteEinheit.unitId === "string" ? `#${encodeURIComponent(letzteEinheit.unitId)}` : ""}` : hatStand ? "/heute" : "/lernen");
   const tageBis = datum ? Math.ceil((new Date(datum + "T00:00:00").getTime() - now) / 86400000) : null;
-  const lerntage = new Set([...Object.values(fortschritt).flatMap((f) => [f.gesehenAm, ...(f.verlauf?.map((v) => v.am) ?? [])]),...werkstattAntworten.filter(s=>!s.selbstBewertet).map(s=>s.am)].map((t) => new Date(t).toLocaleDateString("de-DE")));
+  const lerntage = new Set([...Object.values(fortschritt).flatMap((f) => [f.gesehenAm, ...(f.verlauf?.map((v) => v.am) ?? [])]),...werkstattAntworten.filter(s=>!s.selbstBewertet).map(s=>s.am),...Object.values(wiederholungen).flatMap(s=>s.verlauf.filter(r=>!r.selbstBewertet).map(r=>r.am))].map((t) => new Date(t).toLocaleDateString("de-DE")));
   const heute = new Date(now);
   const montag = new Date(heute); montag.setDate(heute.getDate() - (heute.getDay() + 6) % 7);
   return <div className="home-dashboard">
@@ -50,7 +53,7 @@ export default function Home() {
     <section className="home-hero" aria-labelledby="willkommen">
       <div className="home-hero-text"><span className="home-hero-chip"><span aria-hidden="true">✦</span> MIT KOPF. MIT HAND. MIT DIR.</span>
         <h2 id="willkommen">Dein Handwerk.<br /><span>Dein nächstes Level.</span></h2>
-        <p>{stand.faellig ? `${stand.faellig} Aufgaben warten auf dich. Frische dein Wissen auf und mach den nächsten Schritt.` : "Vom ersten Fachbegriff bis zur Gesellenprüfung: Entdecke, probiere aus und bring dein Dachwissen nach oben."}</p>
+        <p>{faellig ? `${faellig} Aufgaben warten auf dich. Frische dein Wissen auf und mach den nächsten Schritt.` : "Vom ersten Fachbegriff bis zur Gesellenprüfung: Entdecke, probiere aus und bring dein Dachwissen nach oben."}</p>
         <Link className="home-hero-cta" href={ziel}>{hatStand ? "Weiterlernen" : "Deinen Lernpfad entdecken"}<Arrow /></Link>
         <div className="home-hero-detail"><span className="home-zeit-icon" aria-hidden="true">◷</span>{hatStand ? `${minuten} Minuten für deinen nächsten Schritt` : "Kleine Einheiten. Echte Aha-Momente."}</div>
       </div>
@@ -58,7 +61,7 @@ export default function Home() {
       <span className="home-hero-grain" aria-hidden="true" />
     </section>
     <div className="home-stat-cards" aria-label="Dein Lernstand">
-      <div className="home-stat"><span className="home-stat-icon home-icon-orange" aria-hidden="true">↻</span><span><strong>{stand.faellig}</strong><span>Wiederholungen fällig</span></span><Link href="/heute" aria-label="Fällige Aufgaben wiederholen"><Arrow /></Link></div>
+      <div className="home-stat"><span className="home-stat-icon home-icon-orange" aria-hidden="true">↻</span><span><strong>{faellig}</strong><span>Wiederholungen fällig</span></span><Link href="/heute" aria-label="Fällige Aufgaben wiederholen"><Arrow /></Link></div>
       <div className="home-stat"><span className="home-stat-icon home-icon-teal" aria-hidden="true">✓</span><span><strong>{bearbeitet}</strong><span>Fachaufgaben bearbeitet</span></span><Link href="/fortschritt" aria-label="Deinen Aufgabenfortschritt ansehen"><Arrow /></Link></div>
       <div className="home-stat"><span className="home-stat-icon home-icon-violet" aria-hidden="true">⚑</span><span><strong>{alleEinheiten.fertig}<small> / {alleEinheiten.gesamt}</small></strong><span>Fachwissen-Einheiten geschafft</span></span><Link href="/lernen" aria-label="Zu deinen Lerneinheiten"><Arrow /></Link></div>
     </div>

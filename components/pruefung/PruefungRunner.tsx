@@ -9,10 +9,11 @@ import { appStorage } from "@/lib/lernSpeicher";
 import { parseCloze } from "@/lib/cloze";
 import { leseDezimalzahl } from "@/lib/zahlen";
 import { formatiereZeit, getPruefungsteile, type Pruefungsteil } from "@/lib/pruefung";
+import { getLernfelder, getLernfeld } from "@/lib/lernfelder";
 import {
   answerFields, answerText, createExamAttempt, emptyExamAnswer, examProtocol, examTopics,
   finishExam, isExamAnswered, loadExam, loadExamHistory, saveExam, scoreExam,
-  scoreExamQuestion, solutionText, TRAINING_GOAL, updateExamAnswer,
+  scoreExamQuestion, solutionText, syncExamReviews, TRAINING_GOAL, updateExamAnswer,
   type ExamAnswer, type ExamAttempt, type ExamQuestion,
 } from "@/lib/exam";
 
@@ -21,6 +22,10 @@ const panel: CSSProperties = { background: "var(--surface)", borderColor: "var(-
 const primary: CSSProperties = { background: "var(--accent)", color: "var(--accent-text)" };
 const muted: CSSProperties = { color: "var(--text-muted)" };
 const buttonClass = "rounded-xl border px-4 py-3 font-medium disabled:opacity-40";
+function trainingsTitel(preset: Pruefungsteil): string {
+  if (!preset.stufe || preset.lernfelder.length !== 1) return preset.titel;
+  return `${getLernfeld(preset.lernfelder[0])?.titel ?? preset.lernfelder[0]} · ${preset.titel}`;
+}
 
 /** The client gate prevents a saved attempt from disagreeing with the server HTML. */
 export function PruefungRunner() {
@@ -46,17 +51,25 @@ function Pruefungsraum() {
   const [now, setNow] = useState(() => Date.now());
   const [confirmSubmit, setConfirmSubmit] = useState(false);
   const [practice, setPractice] = useState<Aufgabe[] | null>(null);
+  const [bereich, setBereich] = useState("lf07");
 
   function commit(next: ExamAttempt) {
     setAttempt(next);
     try {
       saveExam(appStorage, next);
+      syncExamReviews(next);
       if (next.submittedAt !== null) setHistory(loadExamHistory(appStorage));
       setWarning(null);
     } catch {
       setWarning("Die letzte Änderung konnte nicht gespeichert werden. Lass dieses Fenster geöffnet und sichere den Lernstand.");
     }
   }
+
+  useEffect(() => {
+    if (!initial.attempt || initial.attempt.submittedAt === null) return;
+    try { syncExamReviews(initial.attempt); }
+    catch { queueMicrotask(() => setWarning("Die Prüfung ist gespeichert. Die Wiederholung konnte noch nicht aktualisiert werden. Bitte den Lernspeicher prüfen.")); }
+  }, [initial.attempt]);
 
   useEffect(() => {
     if (!attempt || attempt.submittedAt !== null) return;
@@ -68,6 +81,7 @@ function Pruefungsraum() {
         setAttempt(finished);
         try {
           saveExam(appStorage, finished);
+          syncExamReviews(finished);
           setHistory(loadExamHistory(appStorage));
         } catch {
           setWarning("Die Abgabe konnte nicht dauerhaft gespeichert werden. Bitte das Fenster geöffnet lassen und eine Sicherung erstellen.");
@@ -106,6 +120,8 @@ function Pruefungsraum() {
   if (!viewed) {
     const active = attempt && attempt.submittedAt === null;
     const presets = getPruefungsteile();
+    const lernbereiche = getLernfelder();
+    const aktuellerBereich = getLernfeld(bereich)!;
     return <div>
       <section className="relative overflow-hidden rounded-[28px] p-6 sm:p-8" style={{ background: "var(--ink, #172c39)", color: "#fff9f0" }}>
         <div className="absolute -right-12 -top-20 h-72 w-72 rounded-full" style={{ background: "#b7a1f3", opacity: .16 }} />
@@ -120,18 +136,24 @@ function Pruefungsraum() {
       {alert}
       {active && <section className="my-5 rounded-2xl border p-5" style={panel} aria-label="Laufendes Training">
         <h2 className="text-lg font-semibold">Dein Training ist gespeichert</h2>
-        <p className="mt-2" style={muted}>{attempt.preset.titel} · {attempt.questions.filter((q) => isExamAnswered(q, attempt.answers[q.task.id])).length} von {attempt.questions.length} beantwortet. {attempt.deadline !== null ? "Das Zeitlimit läuft weiter." : "Ohne Zeitdruck weiterlernen."}</p>
+        <p className="mt-2" style={muted}>{trainingsTitel(attempt.preset)} · {attempt.questions.filter((q) => isExamAnswered(q, attempt.answers[q.task.id])).length} von {attempt.questions.length} beantwortet. {attempt.deadline !== null ? "Das Zeitlimit läuft weiter." : "Ohne Zeitdruck weiterlernen."}</p>
         <button className={`${buttonClass} mt-4`} style={primary} onClick={() => setMenu(false)}>Training fortsetzen</button>
       </section>}
       <label className="my-6 flex w-fit cursor-pointer items-center gap-3 rounded-xl border p-4" style={panel}>
         <input type="checkbox" className="h-5 w-5 accent-[var(--accent)]" checked={timed} onChange={(e) => setTimed(e.target.checked)} />
         Mit Zeitlimit trainieren <span style={muted}>(freiwillig)</span>
       </label>
-      <div className="mt-8 flex flex-wrap items-end justify-between gap-3"><div><span className="text-xs font-bold tracking-wider" style={{ color: "var(--accent)" }}>DREI STUFEN. DEIN WEG.</span><h2 className="mt-1 text-2xl font-semibold tracking-tight">LF7 · Dachentwässerung</h2></div><span className="rounded-full border px-3 py-1 text-sm" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>Vom Einstieg zum Transfer</span></div>
+      <label className="mt-8 flex max-w-2xl flex-col gap-2 font-semibold">
+        <span>Deinen Lernbereich wählen</span>
+        <select className="w-full min-w-0 rounded-xl border p-3 font-normal" style={panel} value={bereich} onChange={(e) => setBereich(e.target.value)}>
+          {lernbereiche.map((lf) => <option key={lf.id} value={lf.id}>{lf.id.startsWith("lf") ? `LF ${lf.nr} · ` : ""}{lf.titel}</option>)}
+        </select>
+      </label>
+      <div className="mt-6 flex flex-wrap items-end justify-between gap-3"><div><span className="text-xs font-bold tracking-wider" style={{ color: "var(--accent)" }}>DREI STUFEN. DEIN WEG.</span><h2 className="mt-1 text-2xl font-semibold tracking-tight">{aktuellerBereich.id.startsWith("lf") ? `LF ${aktuellerBereich.nr} · ` : ""}{aktuellerBereich.titel}</h2></div><span className="rounded-full border px-3 py-1 text-sm" style={{ borderColor: "var(--border)", color: "var(--text-muted)" }}>Vom Einstieg zum Transfer</span></div>
       <p className="mt-2 text-sm" style={muted}>Drei redaktionell zugeordnete Stufen. Trainingsziel: {TRAINING_GOAL} % der Punkte. Keine offizielle Bestehensregel.</p>
-      <div className="mt-5 grid gap-4 lg:grid-cols-3">{presets.filter((p) => p.stufe).map((p) => <PresetCard key={p.id} preset={p} timed={timed} disabled={Boolean(active)} onStart={start} />)}</div>
+      <div className="mt-5 grid gap-4 lg:grid-cols-3">{presets.filter((p) => p.stufe && p.lernfelder[0] === bereich).map((p) => <PresetCard key={p.id} preset={p} timed={timed} disabled={Boolean(active)} onStart={start} />)}</div>
       <h2 className="mt-9 text-xl font-semibold">Gemischtes Training</h2>
-      <p className="mt-2" style={muted}>Der übrige Aufgabenbestand bleibt als lernfeldübergreifender Mix verfügbar.</p>
+      <p className="mt-2" style={muted}>Zusätzlich zu den drei Stufen kannst du die bisherigen gemischten Trainings verwenden.</p>
       <div className="mt-5 grid gap-4 lg:grid-cols-3">{presets.filter((p) => !p.stufe).map((p) => <PresetCard key={p.id} preset={p} timed={timed} disabled={Boolean(active)} onStart={start} />)}</div>
       {active && <p className="mt-3" style={muted}>Schließe zuerst dein laufendes Training ab, bevor du ein neues startest.</p>}
       <section className="mt-9" aria-labelledby="exam-history-title">
@@ -139,7 +161,7 @@ function Pruefungsraum() {
         {history.length === 0 ? <p className="mt-3" style={muted}>Nach deiner ersten Abgabe findest du hier den vollständigen Verlauf.</p> : <ul className="mt-4 flex flex-col gap-3">{history.map((item) => {
           const score = scoreExam(item)!;
           return <li key={item.id}><button onClick={() => setHistoryView(item)} className="flex w-full flex-wrap items-center justify-between gap-3 rounded-xl border p-4 text-left" style={panel}>
-            <span><strong>{item.preset.titel}</strong><span className="mt-1 block" style={muted}>{new Date(item.submittedAt!).toLocaleString("de-DE")}</span></span>
+            <span><strong>{trainingsTitel(item.preset)}</strong><span className="mt-1 block" style={muted}>{new Date(item.submittedAt!).toLocaleString("de-DE")}</span></span>
             <span className="font-semibold">{score.percent.toFixed(0)} % · {score.earned}/{score.possible} Punkte <span aria-hidden="true">→</span></span>
           </button></li>;
         })}</ul>}
@@ -162,7 +184,7 @@ function Pruefungsraum() {
   return <div>
     {alert}
     <div className="flex flex-wrap items-center justify-between gap-3">
-      <div><p className="font-medium" style={muted}>{viewed.preset.titel}</p><h1 className="mt-1 text-2xl font-semibold">Aufgabe {viewed.index + 1} von {viewed.questions.length}</h1></div>
+      <div><p className="font-medium" style={muted}>{trainingsTitel(viewed.preset)}</p><h1 className="mt-1 text-2xl font-semibold">Aufgabe {viewed.index + 1} von {viewed.questions.length}</h1></div>
       {viewed.deadline !== null ? <span className="rounded-xl border px-4 py-2 font-semibold tabular-nums" style={{ ...panel, color: viewed.deadline - now < 300_000 ? "var(--bad)" : "var(--text)" }} aria-label="Verbleibende Zeit">{formatiereZeit((viewed.deadline - now) / 1000)}</span> : <span className="rounded-full px-3 py-2" style={{ background: "var(--accent-soft)", color: "var(--accent)" }}>Ohne Zeitlimit</span>}
     </div>
     <p className="mt-3" style={muted}>{completed} beantwortet · {remaining} offen · Antworten bleiben bis zur Abgabe veränderbar.</p>
@@ -225,7 +247,7 @@ function ExamResult({ attempt, onMenu, onPractice, onReflection }: { attempt: Ex
   const topics = examTopics(attempt);
   const missed = attempt.questions.filter((q) => scoreExamQuestion(q, attempt.answers[q.task.id]) < q.maxPoints);
   return <div>
-    <p className="font-medium" style={muted}>{attempt.preset.titel} · {new Date(attempt.submittedAt!).toLocaleString("de-DE")}</p>
+    <p className="font-medium" style={muted}>{trainingsTitel(attempt.preset)} · {new Date(attempt.submittedAt!).toLocaleString("de-DE")}</p>
     <h1 className="mt-2 text-3xl font-semibold">Deine Auswertung</h1>
     <section className="relative mt-5 overflow-hidden rounded-[28px] border p-6 sm:p-8" style={panel}>
       <div className="absolute -right-14 -top-20 h-64 w-64 rounded-full" style={{ background: score.goalReached ? "var(--tint-teal, #daf2eb)" : "var(--tint-orange, #ffe6cb)", opacity: .65 }} />

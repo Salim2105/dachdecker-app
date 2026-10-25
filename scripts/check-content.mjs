@@ -11,13 +11,14 @@ const fehler = [];
 let aufgaben = 0;
 let lektionen = 0;
 let rechenaufgaben = 0;
+const pruefungsErgaenzungen = JSON.parse(fs.readFileSync(path.join(root, "pruefung", "ergaenzungen.json"), "utf8"));
 const normal = (text) => text.toLocaleLowerCase("de-DE").replace(/\s+/g, " ").trim();
 
 for (const ordner of fs.readdirSync(root, { withFileTypes: true }).filter((e) => e.isDirectory())) {
   for (const typ of ["aufgaben", "lektionen"]) {
     const datei = path.join(root, ordner.name, `${typ}.json`);
     if (!fs.existsSync(datei)) continue;
-    for (const eintrag of JSON.parse(fs.readFileSync(datei, "utf8"))) {
+    for (const eintrag of [...JSON.parse(fs.readFileSync(datei, "utf8")), ...(typ === "aufgaben" ? pruefungsErgaenzungen[ordner.name] ?? [] : [])]) {
       if (!eintrag.id || ids.has(eintrag.id)) fehler.push(`${eintrag.id}: fehlende oder doppelte ID`);
       ids.add(eintrag.id);
       if (!eintrag.quelle?.trim()) fehler.push(`${eintrag.id}: Quellenangabe fehlt`);

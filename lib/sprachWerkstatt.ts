@@ -1,4 +1,5 @@
 import { appStorage } from "@/lib/lernSpeicher";
+import { validReviewResult, type ReviewResult } from "@/lib/review";
 
 export type WerkstattSprache = "deutsch" | "englisch";
 export interface SprachWahl { id: string; typ: "wahl"; frage: string; optionen: string[]; korrekt: number; erklaerung: string; tipp: string }
@@ -153,7 +154,7 @@ export const ENGLISCH_EINHEITEN: SprachEinheit[] = [
 ];
 
 export function sprachEinheiten(sprache: WerkstattSprache): SprachEinheit[] { return sprache === "deutsch" ? DEUTSCH_EINHEITEN : ENGLISCH_EINHEITEN; }
-export interface SprachAntwort { wahl: string; paare: Record<string,string>; hilfen: string[]; geprueft: boolean }
+export interface SprachAntwort { wahl: string; paare: Record<string,string>; hilfen: string[]; geprueft: boolean; reviews?: ReviewResult[] }
 export interface SprachStand { version: 1; index: number; antworten: Record<string,SprachAntwort>; text: string; musterOffen: boolean; selbst?: "passt" | "unsicher"; abgeschlossen: boolean }
 export const sprachKey = (e: Pick<SprachEinheit,"sprache"|"id">) => `sprachwerkstatt-${e.sprache}-${e.id}-v1`;
 export const leereSprachAntwort = (): SprachAntwort => ({wahl:"",paare:{},hilfen:[],geprueft:false});
@@ -173,6 +174,7 @@ export function leseSprachStand(e: SprachEinheit): SprachStand {
     for (const [id,v] of Object.entries(s.antworten)) {
       const a=e.aufgaben.find((a)=>a.id===id);
       if(!a || !v || typeof v.wahl!=="string" || typeof v.geprueft!=="boolean" || !v.paare || typeof v.paare!=="object" || Array.isArray(v.paare) || !Object.values(v.paare).every((p)=>typeof p==="string") || !Array.isArray(v.hilfen) || !v.hilfen.every((h)=>typeof h==="string") || (v.geprueft && pruefeSprachAntwort(a,v)===null))return leer;
+      if(v.reviews!==undefined && (!Array.isArray(v.reviews) || !v.reviews.every(r=>validReviewResult(r) && r.ref.quelle==="sprache" && r.ref.id===`${e.sprache}:${id}` && r.ref.version===1 && r.ref.lernzielIds.length===1 && r.ref.lernzielIds[0]===`${e.sprache}-${e.id}`) || new Set(v.reviews.map(r=>r.versuchId)).size!==v.reviews.length))return leer;
     }
     s.abgeschlossen=s.abgeschlossen && e.aufgaben.every((a)=>s.antworten[a.id]?.geprueft);
     if(!s.text.trim())s.selbst=undefined;

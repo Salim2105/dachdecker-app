@@ -3,6 +3,7 @@ import { berechneSchritte, ersetzePlatzhalter, pruefeAntwort } from "@/lib/calc"
 import { parseCloze, pruefeLuecke } from "@/lib/cloze";
 import { leseDezimalzahl } from "@/lib/zahlen";
 import { examMetadata } from "@/lib/examMetadata";
+import { recordReviewResult } from "@/lib/review";
 import { poolFuer, ziehePruefung, type Pruefungsteil } from "@/lib/pruefung";
 
 export const EXAM_KEY = "dd-pruefung-v2";
@@ -14,6 +15,7 @@ type ExamStorage = Pick<Storage, "getItem" | "setItem" | "removeItem">;
 export interface ExamQuestion {
   task: AutoAufgabe;
   taskVersion: number;
+  lernzielIds?: string[];
   maxPoints: number;
   /** Werte und Fragetext entstehen genau einmal beim Start. */
   parameters: Record<string, number>;
@@ -26,6 +28,8 @@ export interface ExamAnswer {
 }
 export interface ExamAttempt {
   version: 2;
+  /** Only new attempts participate; opening old results never invents review successes. */
+  reviewVersion?: 1;
   id: string;
   preset: Pruefungsteil;
   startedAt: number;
@@ -62,14 +66,14 @@ export function instantiateExamQuestion(task: Aufgabe, random: () => number = Ma
     : snapshot.typ === "cloze" ? snapshot.text.replace(/\{\{.+?\}\}/g, "___")
       : ersetzePlatzhalter(snapshot.aufgabentext, parameters);
   const metadata = examMetadata(task);
-  return { task: snapshot, taskVersion: metadata.version, maxPoints: metadata.maxPoints, parameters, prompt };
+  return { task: snapshot, taskVersion: metadata.version, lernzielIds: [...metadata.lernzielIds], maxPoints: metadata.maxPoints, parameters, prompt };
 }
 
 export function createExamAttempt(preset: Pruefungsteil, timed: boolean, now = Date.now(), random: () => number = Math.random): ExamAttempt {
   const questions = ziehePruefung(poolFuer(preset), preset.anzahl, random).map((a) => instantiateExamQuestion(a, random));
   if (questions.length !== preset.anzahl) throw new Error("Für diesen Trainingsumfang fehlen Aufgaben.");
   return {
-    version: 2, id: `exam-${now}-${Math.floor(random() * 1e9)}`, preset: { ...preset },
+    version: 2, reviewVersion: 1, id: `exam-${now}-${Math.floor(random() * 1e9)}`, preset: { ...preset },
     startedAt: now, deadline: timed ? now + preset.minuten * 60_000 : null,
     submittedAt: null, index: 0, questions, answers: {}, bookmarks: [], reflection: "",
   };
@@ -158,6 +162,7 @@ const finite = (v: unknown): v is number => typeof v === "number" && Number.isFi
 const strings = (v: unknown): v is string[] => Array.isArray(v) && v.every((s) => typeof s === "string");
 
 function validQuestion(v: unknown): v is ExamQuestion {
+  if (record(v) && v.lernzielIds !== undefined && !strings(v.lernzielIds)) return false;
   if (!record(v) || !record(v.task) || !record(v.parameters) || !Object.values(v.parameters).every(finite) || !finite(v.maxPoints) || v.maxPoints <= 0 || v.maxPoints > 100 || !Number.isInteger(v.taskVersion) || (v.taskVersion as number) < 1 || typeof v.prompt !== "string") return false;
   const a = v.task;
   if (!["id", "lernfeld", "thema", "quelle", "erklaerung"].every((key) => typeof a[key] === "string") || !a.id || !["hoch", "mittel"].includes(String(a.konfidenz))) return false;
@@ -175,7 +180,7 @@ export function parseExamAttempt(raw: string | null): ExamAttempt | null {
   if (!raw) return null;
   try {
     const v: unknown = JSON.parse(raw);
-    if (!record(v) || v.version !== 2 || typeof v.id !== "string" || !finite(v.startedAt) || !record(v.preset) || !["id", "titel", "beschreibung"].every((k) => typeof (v.preset as Record<string, unknown>)[k] === "string") || !strings(v.preset.lernfelder) || !finite(v.preset.anzahl) || !finite(v.preset.minuten) || v.preset.minuten <= 0) return null;
+    if (!record(v) || v.version !== 2 || (v.reviewVersion !== undefined && v.reviewVersion !== 1) || typeof v.id !== "string" || !finite(v.startedAt) || !record(v.preset) || !["id", "titel", "beschreibung"].every((k) => typeof (v.preset as Record<string, unknown>)[k] === "string") || !strings(v.preset.lernfelder) || !finite(v.preset.anzahl) || !finite(v.preset.minuten) || v.preset.minuten <= 0) return null;
     if (!Array.isArray(v.questions) || v.questions.length < 1 || v.questions.length > 100 || !v.questions.every(validQuestion) || v.preset.anzahl !== v.questions.length || !Number.isInteger(v.index) || (v.index as number) < 0 || (v.index as number) >= v.questions.length || !record(v.answers) || !strings(v.bookmarks) || typeof v.reflection !== "string") return null;
     if ((v.deadline !== null && (!finite(v.deadline) || v.deadline < v.startedAt)) || (v.submittedAt !== null && (!finite(v.submittedAt) || v.submittedAt < v.startedAt || (finite(v.deadline) && v.submittedAt > v.deadline)))) return null;
     const ids = new Set(v.questions.map((q) => q.task.id));
@@ -220,6 +225,18 @@ export function saveExam(storage: ExamStorage, attempt: ExamAttempt): void {
   if (attempt.submittedAt !== null) {
     const history = loadExamHistory(storage).filter((a) => a.id !== attempt.id);
     storage.setItem(EXAM_HISTORY_KEY, JSON.stringify([attempt, ...history].slice(0, 50)));
+  }
+}
+
+/** Safe to replay after saving: each question of one submitted attempt counts once. */
+export function syncExamReviews(attempt: ExamAttempt): void {
+  if (attempt.reviewVersion !== 1 || attempt.submittedAt === null) return;
+  for (const q of attempt.questions) {
+    const earned = scoreExamQuestion(q, attempt.answers[q.task.id]);
+    recordReviewResult({ ref: { quelle: "fachwissen", id: q.task.id, version: q.taskVersion,
+      lernzielIds: q.lernzielIds ?? [`${q.task.lernfeld}:${q.task.thema}`] },
+      versuchId: `${attempt.id}:${q.task.id}`, am: attempt.submittedAt,
+      bewertung: earned === q.maxPoints ? "richtig" : earned > 0 ? "teilweise" : "falsch", hilfen: [] });
   }
 }
 

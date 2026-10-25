@@ -1,286 +1,147 @@
-/**
- * Erzeugt den Service Worker.
- *
- * Zwei Modi:
- *  - Web/Server (Standard): schreibt public/sw.js mit der Liste aller Seiten UND
- *    Build-Dateien aus .next/static. Wird von `next start` ausgeliefert.
- *  - Export (EXPORT=1): schreibt out/sw.js und cacht ALLE Dateien des statischen
- *    Exports. Der Fetch-Handler löst zusätzlich saubere URLs (z. B. /lernen/lf07)
- *    auf die passende .html-Datei auf, damit die App auch offline navigierbar ist
- *    (z. B. auf Cloudflare Pages fürs iPad).
- *
- * Ohne die Build-Dateien lädt die App offline zwar, aber ohne Styling und ohne
- * Interaktion — genau das war früher der Fehler.
- */
+/** Generate the same explicit-update protocol for server and static exports. */
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
-import { join, relative } from "node:path";
+import { randomUUID } from "node:crypto";
+import { join, relative, resolve } from "node:path";
+import { pathToFileURL } from "node:url";
 
+const CACHE_PREFIX = "dachdecker-lernwerkstatt-root-";
 function dateienIn(wurzel) {
   if (!existsSync(wurzel)) return [];
-  const raus = [];
-  for (const eintrag of readdirSync(wurzel)) {
-    const pfad = join(wurzel, eintrag);
-    if (statSync(pfad).isDirectory()) raus.push(...dateienIn(pfad));
-    else raus.push(pfad);
-  }
-  return raus;
+  return readdirSync(wurzel).flatMap((name) => {
+    const pfad = join(wurzel, name);
+    return statSync(pfad).isDirectory() ? dateienIn(pfad) : [pfad];
+  });
 }
-
-if (process.env.EXPORT === "1") {
-  // --- Export-Modus: kompletter statischer Ordner out/ ---
-  if (!existsSync("out")) {
-    console.error("EXPORT=1, aber out/ fehlt. Erst `EXPORT=1 next build` laufen lassen.");
-    process.exit(1);
-  }
-  // Pages liefert Seiten unter der sauberen Adresse aus und leitet den
-  // Dateinamen dorthin um: /lernen.html -> 308 -> /lernen. Würden wir die
-  // Dateinamen vorladen, liefe jede Seite in eine Umleitung — und eine
-  // umgeleitete Antwort lässt sich weder sinnvoll cachen noch später für eine
-  // Navigation zurückgeben. Also gleich die Adresse nehmen, die auch der
-  // Browser anfragt.
-  function saubereUrl(p) {
-    if (!p.endsWith(".html")) return p;
-    let u = p.slice(0, -".html".length);
-    if (u.endsWith("/index")) u = u.slice(0, -"/index".length);
-    return u === "" ? "/" : u;
-  }
-
-  const alles = [
-    ...new Set(
-      dateienIn("out")
-        .map((p) => "/" + relative("out", p).split("\\").join("/"))
-        // _worker.js ist der Zugangsschutz und wird von Pages nie als Datei
-        // ausgeliefert — der Versuch, ihn zu cachen, scheitert immer.
-        .filter((p) => p !== "/sw.js" && p !== "/_worker.js" && !p.endsWith(".map"))
-        .map(saubereUrl),
-    ),
-  ];
-
-  const cache = `dachdecker-${Date.now()}`;
-  const sw = `// Automatisch erzeugt von scripts/gen-sw.mjs (Export) — nicht von Hand ändern.
-const CACHE = ${JSON.stringify(cache)};
-const SHELL = ${JSON.stringify(alles, null, 2)};
-
-// Höchstens so viele Dateien gleichzeitig laden. Alle 1601 auf einmal
-// überfordert eine Mobilfunk- oder WLAN-Verbindung: ein Grossteil scheitert,
-// der Cache bleibt halbleer, und die App ist offline kaputt.
+export function createServiceWorker({ cacheName, shell }) {
+  return `// Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
+const CACHE = ${JSON.stringify(cacheName)};
+const CACHE_PREFIX = ${JSON.stringify(CACHE_PREFIX)};
+const SHELL = ${JSON.stringify(shell, null, 2)};
 const GLEICHZEITIG = 6;
 
-// Der Seite mitteilen, wie weit das Vorladen ist. Ohne diese Rückmeldung kann
-// niemand wissen, ab wann der Flugmodus gefahrlos ist.
-async function melde(nachricht) {
-  const clients = await self.clients.matchAll({ includeUncontrolled: true, type: "window" });
-  for (const cl of clients) cl.postMessage({ quelle: "dachdecker-sw", ...nachricht });
+// Nur unsere Root-App-Caches einschließlich der bisherigen Namensform.
+function eigenerCache(name) {
+  return name.startsWith(CACHE_PREFIX) || /^dachdecker-\\d+$/.test(name);
 }
-
-async function vorladen(c, urls) {
+function zeit(name) {
+  return Number(name.startsWith(CACHE_PREFIX) ? name.slice(CACHE_PREFIX.length).split('-')[0] : name.slice('dachdecker-'.length)) || 0;
+}
+async function eigeneCaches() {
+  return (await caches.keys()).filter(eigenerCache).sort((a, b) => zeit(b) - zeit(a));
+}
+async function ausCache(request, vorherige = false) {
+  const aktuell = await (await caches.open(CACHE)).match(request);
+  if (aktuell || !vorherige) return aktuell;
+  for (const name of await eigeneCaches()) {
+    if (name === CACHE) continue;
+    const hit = await (await caches.open(name)).match(request);
+    if (hit) return hit;
+  }
+}
+async function melde(nachricht) {
+  for (const client of await self.clients.matchAll({ includeUncontrolled: true, type: 'window' })) {
+    client.postMessage({ quelle: 'dachdecker-sw', ...nachricht });
+  }
+}
+async function vorladen(cache, urls) {
   let naechster = 0;
   let fehlend = 0;
-  const arbeiter = Array.from({ length: GLEICHZEITIG }, async () => {
+  await Promise.all(Array.from({ length: GLEICHZEITIG }, async () => {
     while (naechster < urls.length) {
       const url = urls[naechster++];
-      try {
-        await c.add(url);
-      } catch {
-        // Ein zweiter Versuch. Mobilfunk verliert einzelne Anfragen.
-        try {
-          await c.add(url);
-        } catch {
-          fehlend++;
-        }
-      }
+      try { await cache.add(url); }
+      catch { try { await cache.add(url); } catch { fehlend++; } }
     }
-  });
-  await Promise.all(arbeiter);
+  }));
   return fehlend;
 }
-
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    (async () => {
-      const c = await caches.open(CACHE);
-      // Erst die Seiten selbst, dann Code und Bilder. Bricht das Laden ab,
-      // ist die App wenigstens bedienbar statt gar nicht startbar.
-      // Reihenfolge entscheidet, wann die App offline benutzbar ist.
-      // Kern = Seiten, JavaScript, Symbole (~9 MB). Ohne das JavaScript
-      // rendert die Seite gar nicht — es muss vor die 31 MB Buchbilder.
-      const istBild = (u) => u.startsWith("/buch/") || u.startsWith("/fotos/");
-      const kern = SHELL.filter((u) => !istBild(u));
-      const bilder = SHELL.filter(istBild);
-
-      const fehlendKern = await vorladen(c, kern);
-      await melde({ typ: "kern-fertig", fehlend: fehlendKern, gesamt: kern.length });
-
-      const fehlendBilder = await vorladen(c, bilder);
-      await melde({
-        typ: "alles-fertig",
-        fehlend: fehlendKern + fehlendBilder,
-        gesamt: SHELL.length,
-      });
-    })(),
-  );
-  self.skipWaiting();
+self.addEventListener('install', (event) => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    const istBild = (url) => url.startsWith('/buch/') || url.startsWith('/fotos/');
+    const kern = SHELL.filter((url) => !istBild(url));
+    const fehlendKern = await vorladen(cache, kern);
+    await melde({ typ: 'kern-fertig', fehlend: fehlendKern, gesamt: kern.length });
+    // Eine unvollständige neue Oberfläche ersetzt keine funktionierende alte.
+    if (fehlendKern) throw new Error('Kern-Dateien konnten nicht vollständig gespeichert werden.');
+    const fehlendBilder = await vorladen(cache, SHELL.filter(istBild));
+    await melde({ typ: 'alles-fertig', fehlend: fehlendBilder, gesamt: SHELL.length });
+  })());
+  // Mit bestehender App wartet dieses Update bis zur bewussten Freigabe.
 });
-
-self.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches
-      .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim()),
-  );
-});
-
-// Saubere URL -> mögliche Dateien im Export.
-function kandidaten(pfad) {
-  // Im Cache liegen saubere Adressen. Ein angehängter Schrägstrich ist die
-  // einzige Abweichung, die der Browser noch anfragen kann.
-  if (pfad.length > 1 && pfad.endsWith("/")) return [pfad.slice(0, -1), pfad];
-  return [pfad];
-}
-
-self.addEventListener("fetch", (e) => {
-  if (e.request.method !== "GET") return;
-  const url = new URL(e.request.url);
-  if (url.origin !== self.location.origin) return;
-
-  if (e.request.mode === "navigate") {
-    e.respondWith(
-      (async () => {
-        for (const k of kandidaten(url.pathname)) {
-          const hit = await caches.match(k);
-          if (hit) return hit;
-        }
-        try {
-          const res = await fetch(e.request);
-          // Ein Service Worker darf für eine Navigation keine umgeleitete Antwort
-          // zurückgeben. Beim Zugangsschutz (302 zum Login) als echte Weiterleitung
-          // durchreichen, damit der Browser ihr selbst folgt.
-          if (res.redirected) return Response.redirect(res.url, 302);
-          return res;
-        } catch {
-          return (await caches.match("/")) || Response.error();
-        }
-      })(),
-    );
-    return;
+self.addEventListener('message', (event) => {
+  if (event.data?.quelle === 'dachdecker-app' && event.data.typ === 'UPDATE_AKTIVIEREN') {
+    event.waitUntil(self.skipWaiting());
   }
-
-  e.respondWith(
-    caches.match(e.request).then((hit) => {
+});
+self.addEventListener('activate', (event) => {
+  event.waitUntil((async () => {
+    const namen = await eigeneCaches();
+    // Ein weiterer offener Tab kann noch ein älteres Bundle verwenden. Solange
+    // mehrere Fenster offen sind, löschen wir keines dieser eigenen Bundles.
+    // Beim nächsten Wechsel mit nur einem Fenster genügen aktuell + vorherig.
+    const fenster = await self.clients.matchAll({ includeUncontrolled: true, type: 'window' });
+    const behalten = new Set([CACHE, ...namen.filter((name) => name !== CACHE).slice(0, fenster.length > 1 ? undefined : 1)]);
+    await Promise.all(namen.filter((name) => !behalten.has(name)).map((name) => caches.delete(name)));
+    await self.clients.claim();
+  })());
+});
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin || url.pathname === '/sw.js') return;
+  event.respondWith((async () => {
+    if (event.request.mode === 'navigate') {
+      const pfad = url.pathname.length > 1 ? url.pathname.replace(/\\/$/, '') : '/';
+      // Neue Navigationen verwenden zuerst das aktuelle HTML, keine alte Cache-Version.
+      const hit = await ausCache(pfad);
       if (hit) return hit;
-      return fetch(e.request)
-        .then((res) => {
-          // Eine umgeleitete Antwort ist die Login-Seite, nicht die Datei. Die
-          // unter dem Schlüssel der Datei zu cachen, würde den Offline-Bestand
-          // unbrauchbar machen.
-          if (res.ok && !res.redirected) {
-            const copy = res.clone();
-            caches.open(CACHE).then((c) => c.put(e.request, copy));
-          }
-          return res;
-        })
-        .catch(() => Response.error());
-    }),
-  );
+      try {
+        const antwort = await fetch(event.request);
+        return antwort.redirected ? Response.redirect(antwort.url, 302) : antwort;
+      } catch { return (await ausCache('/')) || Response.error(); }
+    }
+    // Static Next navigation payloads have a changing _rsc query. The fixed
+    // payload from this bundle must stay paired with its cached JavaScript.
+    const schluessel = url.pathname.endsWith('.txt') || url.pathname.startsWith('/_next/') ? url.pathname : event.request;
+    const hit = await ausCache(schluessel, true);
+    if (hit) return hit;
+    try {
+      const antwort = await fetch(event.request);
+      if (antwort.ok && !antwort.redirected) {
+        const kopie = antwort.clone();
+        event.waitUntil(caches.open(CACHE).then((cache) => cache.put(event.request, kopie)));
+      }
+      return antwort;
+    } catch { return Response.error(); }
+  })());
 });
 `;
-  writeFileSync("out/sw.js", sw);
-  console.log(`out/sw.js erzeugt: ${alles.length} Dateien gecacht (${cache}).`);
-  process.exit(0);
 }
 
-// --- Web/Server-Modus ---
-const { lernfelder } = JSON.parse(readFileSync("content/lernfelder.json", "utf8"));
-
-const seiten = [
-  "/",
-  "/lernen",
-  "/ueben",
-  "/zeichnen",
-  "/pruefung",
-  "/rechner",
-  "/heute",
-  "/praxis",
-  "/lernweg",
-  "/grundlagen/mathe",
-  "/sprache/deutsch",
-  "/sprache/englisch",
-  "/lernhilfe",
-  "/erprobung",
-  "/fortschritt",
-  "/manifest.webmanifest",
-  ...lernfelder.flatMap((lf) => [`/lernen/${lf.id}`, `/lernen/${lf.id}/ueben`]),
-];
-
-// Build-Dateien: .next/static/... wird unter /_next/static/... ausgeliefert.
-// Source-Maps sind nur zum Debuggen und werden nicht mitgespeichert.
-const assets = dateienIn(".next/static")
-  .filter((p) => !p.endsWith(".map"))
-  .map((p) => "/_next/static/" + relative(".next/static", p).split("\\").join("/"));
-
-// Eigene Dateien aus public (Icons), ohne den Service Worker selbst.
-const statisch = dateienIn("public")
-  .map((p) => "/" + relative("public", p).split("\\").join("/"))
-  .filter((p) => p !== "/sw.js" && p !== "/manifest.webmanifest");
-
-const alles = [...seiten, ...statisch, ...assets];
-const cache = `dachdecker-${Date.now()}`;
-
-const sw = `// Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
-const CACHE = ${JSON.stringify(cache)};
-const SHELL = ${JSON.stringify(alles, null, 2)};
-
-self.addEventListener("install", (e) => {
-  e.waitUntil(
-    caches.open(CACHE).then((c) =>
-      // Einzeln, damit eine fehlende Datei nicht die ganze Installation kippt.
-      Promise.all(SHELL.map((url) => c.add(url).catch(() => {}))),
-    ),
-  );
-  self.skipWaiting();
-});
-
-self.addEventListener("activate", (e) => {
-  e.waitUntil(
-    caches
-      .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim()),
-  );
-});
-
-self.addEventListener("fetch", (e) => {
-  if (e.request.method !== "GET") return;
-  e.respondWith(
-    caches.match(e.request).then((hit) => {
-      if (hit) return hit;
-      return fetch(e.request)
-        .then((res) => {
-          // Umgeleitete Antwort = Login-Seite. Für Navigationen als echte
-          // Weiterleitung durchreichen (ein Service Worker darf sie nicht direkt
-          // zurückgeben), und niemals unter dem Schlüssel der Datei cachen.
-          if (res.redirected) {
-            return e.request.mode === "navigate" ? Response.redirect(res.url, 302) : res;
-          }
-          if (res.ok) {
-            const copy = res.clone();
-            caches.open(CACHE).then((c) => c.put(e.request, copy));
-          }
-          return res;
-        })
-        .catch(() => {
-          // Nur beim Seitenaufruf auf die Startseite ausweichen. Für CSS oder
-          // JavaScript wäre HTML als Ersatz schlimmer als ein sauberer Fehler.
-          if (e.request.mode === "navigate") return caches.match("/");
-          return Response.error();
-        });
-    }),
-  );
-});
-`;
-
-writeFileSync("public/sw.js", sw);
-console.log(
-  `sw.js erzeugt: ${seiten.length} Seiten, ${statisch.length} eigene Dateien, ${assets.length} Build-Dateien (${cache})`,
-);
+export function generateServiceWorker(exportMode = process.env.EXPORT === "1") {
+  let alles;
+  const ziel = exportMode ? "out/sw.js" : "public/sw.js";
+  if (exportMode) {
+    if (!existsSync("out/index.html")) throw new Error("out/index.html fehlt. Erst npm run export ausführen.");
+    alles = dateienIn("out").map((p) => "/" + relative("out", p).split("\\").join("/"))
+      .filter((p) => !["/sw.js", "/_worker.js"].includes(p) && !p.endsWith(".map"))
+      .map((p) => {
+        if (!p.endsWith(".html")) return p;
+        const ohneHtml = p.slice(0, -5).replace(/\/index$/, "");
+        return ohneHtml || "/";
+      });
+  } else {
+    const { lernfelder } = JSON.parse(readFileSync("content/lernfelder.json", "utf8"));
+    const seiten = ["/", "/lernen", "/ueben", "/zeichnen", "/pruefung", "/rechner", "/heute", "/praxis", "/lernweg", "/grundlagen/mathe", "/sprache/deutsch", "/sprache/englisch", "/lernhilfe", "/erprobung", "/fortschritt", "/projekte", "/bildtraining", "/rueckmeldung", "/manifest.webmanifest",
+      ...lernfelder.flatMap((lf) => [`/lernen/${lf.id}`, `/lernen/${lf.id}/ueben`])];
+    const assets = dateienIn(".next/static").filter((p) => !p.endsWith(".map")).map((p) => "/_next/static/" + relative(".next/static", p).split("\\").join("/"));
+    const statisch = dateienIn("public").map((p) => "/" + relative("public", p).split("\\").join("/")).filter((p) => !["/sw.js", "/_worker.js", "/manifest.webmanifest"].includes(p));
+    alles = [...seiten, ...statisch, ...assets];
+  }
+  const shell = [...new Set(alles)];
+  const cacheName = `${CACHE_PREFIX}${Date.now()}-${randomUUID().slice(0, 8)}`;
+  writeFileSync(ziel, createServiceWorker({ cacheName, shell }));
+  console.log(`${ziel} erzeugt: ${shell.length} Dateien (${cacheName}).`);
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) generateServiceWorker();

@@ -23,7 +23,7 @@ describe("Redaktionelle LF7-Prüfungen", () => {
   it("ordnet jede automatisch bewertbare LF7-Aufgabe ausdrücklich genau einer Stufe zu", () => {
     const auto = getAufgaben("lf07").filter(istAutoBewertbar);
     expect(Object.keys(LF7_EXAM_METADATA).sort()).toEqual(auto.map((a) => a.id).sort());
-    const tiers = getPruefungsteile().filter((p) => p.stufe);
+    const tiers = getPruefungsteile().filter((p) => p.stufe && p.lernfelder[0] === "lf07");
     expect(tiers.map((p) => [p.anzahl, p.minuten])).toEqual([[10, 15], [15, 25], [20, 40]]);
     for (const preset of tiers) {
       expect(poolFuer(preset).length).toBeGreaterThanOrEqual(preset.anzahl);

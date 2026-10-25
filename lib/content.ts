@@ -42,6 +42,7 @@ import anhang3Aufgaben from "@/content/anhang3/aufgaben.json";
 import anhang3Lektionen from "@/content/anhang3/lektionen.json";
 import wisoAufgaben from "@/content/wiso/aufgaben.json";
 import wisoLektionen from "@/content/wiso/lektionen.json";
+import pruefungsErgaenzungen from "@/content/pruefung/ergaenzungen.json";
 import { istSichtbar, type Aufgabe, type Lektion } from "@/content/schema";
 
 // Die Lernfeld-Metadaten leben in lib/lernfelder.ts — dort ohne Aufgabenlast.
@@ -79,7 +80,8 @@ export function filterSichtbar<T extends { konfidenz: Lektion["konfidenz"] }>(xs
 }
 
 export function getAufgaben(lfId: string): Aufgabe[] {
-  return filterSichtbar((INHALTE[lfId]?.aufgaben as Aufgabe[]) ?? []);
+  const zusaetze = (pruefungsErgaenzungen as Record<string, unknown[]>)[lfId] ?? [];
+  return filterSichtbar([...(INHALTE[lfId]?.aufgaben ?? []), ...zusaetze] as Aufgabe[]);
 }
 
 export function getLektionen(lfId: string): Lektion[] {

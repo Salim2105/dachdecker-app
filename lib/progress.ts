@@ -26,12 +26,12 @@ const TAG = 86_400_000;
  * Teilerfolg zusätzlich die Tagesdosis an.
  */
 export function naechsteFaelligkeit(b: Bewertung, intervallTage: number) {
-  const next =
+  const next = Math.min(365,
     b === "falsch"
       ? 1
       : b === "teilweise"
         ? Math.max(2, Math.round(intervallTage * 1.3 || 2))
-        : Math.max(2, Math.round(intervallTage * 2 || 2));
+        : Math.max(2, Math.round(intervallTage * 2 || 2)));
   return { intervallTage: next, faelligAm: Date.now() + next * TAG };
 }
 
@@ -52,9 +52,17 @@ export function ladeFortschritt(): Record<string, AufgabenFortschritt> {
 export function speichereBewertung(aufgabeId: string, bewertung: Bewertung, kontext: BewertungsKontext = {}) {
   const all = ladeFortschritt();
   const vorher = all[aufgabeId];
-  const jetzt = Date.now();
+  const jetzt = kontext.am ?? Date.now();
   // Alte Einträge bleiben erhalten, liefern aber keine erfundene Erfolgshistorie.
   const verlauf: LernVersuch[] = [...(vorher?.verlauf ?? [])];
+  if (kontext.versuchId && verlauf.some(v => v.versuchId === kontext.versuchId)) return;
+  if (vorher && jetzt < vorher.gesehenAm) {
+    // A recovered older exam may finish its history, never undo a newer schedule.
+    verlauf.push({ ...kontext, am: jetzt, bewertung });
+    all[aufgabeId] = { ...vorher, verlauf: verlauf.sort((a,b)=>a.am-b.am).slice(-60) };
+    appStorage.setItem(KEY, JSON.stringify(all));
+    return;
+  }
   const letzter = verlauf.at(-1);
   const gleicherTag = letzter && new Date(letzter.am).toDateString() === new Date(jetzt).toDateString();
   const kurzfristig = bewertung === "richtig" && (kontext.nachErklaerung || gleicherTag);

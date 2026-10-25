@@ -1,0 +1,2919 @@
+{
+  "lf01": [
+    {
+      "id": "lf01-p001",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Genehmigung, Vertrag und Bauzeitenplan lesen / Hausfläche und Projekthöhe nachvollziehbar prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01 und lf01-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Alle Vorgänge ergeben zusammen 33 Arbeitstage. Im Balkenplan überschneiden sich mehrere Gewerke. Situation B: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Grundfläche beschreibt die Entfernung vom Boden zum First.",
+        "A: Die tatsächliche Dauer kann unter 33 Arbeitstagen liegen.",
+        "A: Aus der Summe folgt zwingend ein Fertigstellungstermin nach 33 Tagen.",
+        "B: Die Höhenbegrenzung gehört zu diesem Projekt."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine Summe beschreibt Arbeitsumfang; der Ablaufplan zeigt zusätzlich Parallelität und Abhängigkeiten. Zu B: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist."
+    },
+    {
+      "id": "lf01-p002",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Kranbereich und knappen Lagerplatz organisieren / Hausfläche und Projekthöhe nachvollziehbar prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l08-e01 und lf01-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf einer engen Baustelle trifft eine Ziegellieferung ein. Die vorgesehene Ladezone ist noch gesperrt, ein Gehweg wäre frei. Situation B: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Anlieferung und den freigegebenen Entladebereich neu abstimmen.",
+        "A: Den Gehweg ohne abgestimmte Verkehrsführung als Lager nutzen.",
+        "B: Die Höhenbegrenzung gehört zu diesem Projekt.",
+        "B: Die Grundfläche beschreibt die Entfernung vom Boden zum First."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Zeitgewinn durch Direktanlieferung funktioniert nur mit einem sicheren, verfügbaren Materialweg. Zu B: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist."
+    },
+    {
+      "id": "lf01-p003",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Genehmigung, Vertrag und Bauzeitenplan lesen / Kranbereich und knappen Lagerplatz organisieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01 und lf01-l08-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Alle Vorgänge ergeben zusammen 33 Arbeitstage. Im Balkenplan überschneiden sich mehrere Gewerke. Situation B: Auf einer engen Baustelle trifft eine Ziegellieferung ein. Die vorgesehene Ladezone ist noch gesperrt, ein Gehweg wäre frei. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Aus der Summe folgt zwingend ein Fertigstellungstermin nach 33 Tagen.",
+        "B: Die Anlieferung und den freigegebenen Entladebereich neu abstimmen.",
+        "B: Den Gehweg ohne abgestimmte Verkehrsführung als Lager nutzen.",
+        "A: Die tatsächliche Dauer kann unter 33 Arbeitstagen liegen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine Summe beschreibt Arbeitsumfang; der Ablaufplan zeigt zusätzlich Parallelität und Abhängigkeiten. Zu B: Zeitgewinn durch Direktanlieferung funktioniert nur mit einem sicheren, verfügbaren Materialweg."
+    },
+    {
+      "id": "lf01-p004",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Gefahren nach STOP verringern / Hausfläche und Projekthöhe nachvollziehbar prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l03-e01 und lf01-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Wirksamkeit hat Vorrang“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Höhenbegrenzung gehört zu diesem Projekt.",
+        "B: Die Grundfläche beschreibt die Entfernung vom Boden zum First.",
+        "A: Die Reihenfolge lautet: Gefahr vermeiden oder ungefährlicher ersetzen → Technische Schutzmaßnahme vorsehen → Arbeitsablauf organisatorisch absichern → Erforderliche persönliche Schutzausrüstung ergänzen.",
+        "A: Die Reihenfolge lautet: Arbeitsablauf organisatorisch absichern → Technische Schutzmaßnahme vorsehen → Gefahr vermeiden oder ungefährlicher ersetzen → Erforderliche persönliche Schutzausrüstung ergänzen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Reihenfolge beschreibt die Prüfung der Schutzmaßnahmen. Mehrere Maßnahmen können zusammen erforderlich bleiben. Zu B: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist."
+    },
+    {
+      "id": "lf01-p005",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Genehmigung, Vertrag und Bauzeitenplan lesen / Gefahren nach STOP verringern",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01 und lf01-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Alle Vorgänge ergeben zusammen 33 Arbeitstage. Im Balkenplan überschneiden sich mehrere Gewerke. Situation B: Für „Wirksamkeit hat Vorrang“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Arbeitsablauf organisatorisch absichern → Technische Schutzmaßnahme vorsehen → Gefahr vermeiden oder ungefährlicher ersetzen → Erforderliche persönliche Schutzausrüstung ergänzen.",
+        "A: Die tatsächliche Dauer kann unter 33 Arbeitstagen liegen.",
+        "A: Aus der Summe folgt zwingend ein Fertigstellungstermin nach 33 Tagen.",
+        "B: Die Reihenfolge lautet: Gefahr vermeiden oder ungefährlicher ersetzen → Technische Schutzmaßnahme vorsehen → Arbeitsablauf organisatorisch absichern → Erforderliche persönliche Schutzausrüstung ergänzen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine Summe beschreibt Arbeitsumfang; der Ablaufplan zeigt zusätzlich Parallelität und Abhängigkeiten. Zu B: Die Reihenfolge beschreibt die Prüfung der Schutzmaßnahmen. Mehrere Maßnahmen können zusammen erforderlich bleiben."
+    },
+    {
+      "id": "lf01-p006",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Eine Baustelle mit kurzen, sicheren Wegen planen / Hausfläche und Projekthöhe nachvollziehbar prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l02-e01 und lf01-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Materialfluss vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Reihenfolge lautet: Zufahrt und mögliche Entladestelle im Plan prüfen → Kranreichweite und geeignete Lagerfläche zuordnen → Sichere Verkehrswege und Versorgung abstimmen → Einrichtung vor der ersten Lieferung kontrollieren.",
+        "A: Die Reihenfolge lautet: Sichere Verkehrswege und Versorgung abstimmen → Kranreichweite und geeignete Lagerfläche zuordnen → Zufahrt und mögliche Entladestelle im Plan prüfen → Einrichtung vor der ersten Lieferung kontrollieren.",
+        "B: Die Höhenbegrenzung gehört zu diesem Projekt.",
+        "B: Die Grundfläche beschreibt die Entfernung vom Boden zum First."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Lager und Kran werden gemeinsam geplant; freie und sichere Wege bleiben Teil derselben Aufgabe. Zu B: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist."
+    },
+    {
+      "id": "lf01-p007",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Genehmigung, Vertrag und Bauzeitenplan lesen / Eine Baustelle mit kurzen, sicheren Wegen planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01 und lf01-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Alle Vorgänge ergeben zusammen 33 Arbeitstage. Im Balkenplan überschneiden sich mehrere Gewerke. Situation B: Für „Materialfluss vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Aus der Summe folgt zwingend ein Fertigstellungstermin nach 33 Tagen.",
+        "B: Die Reihenfolge lautet: Zufahrt und mögliche Entladestelle im Plan prüfen → Kranreichweite und geeignete Lagerfläche zuordnen → Sichere Verkehrswege und Versorgung abstimmen → Einrichtung vor der ersten Lieferung kontrollieren.",
+        "B: Die Reihenfolge lautet: Sichere Verkehrswege und Versorgung abstimmen → Kranreichweite und geeignete Lagerfläche zuordnen → Zufahrt und mögliche Entladestelle im Plan prüfen → Einrichtung vor der ersten Lieferung kontrollieren.",
+        "A: Die tatsächliche Dauer kann unter 33 Arbeitstagen liegen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine Summe beschreibt Arbeitsumfang; der Ablaufplan zeigt zusätzlich Parallelität und Abhängigkeiten. Zu B: Lager und Kran werden gemeinsam geplant; freie und sichere Wege bleiben Teil derselben Aufgabe."
+    },
+    {
+      "id": "lf01-p008",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Geraden und rechte Winkel abstecken / Hausfläche und Projekthöhe nachvollziehbar prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l09-e01 und lf01-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Einen Bauwinkel kontrollieren“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Höhenbegrenzung gehört zu diesem Projekt.",
+        "B: Die Grundfläche beschreibt die Entfernung vom Boden zum First.",
+        "A: Die Reihenfolge lautet: Gerade und eindeutigen Ausgangspunkt festlegen → Zwei Seiten im Verhältnis 3 zu 4 abmessen → Abstand ihrer Endpunkte auf den Anteil 5 einstellen → Längen, Einheiten und Lage des rechten Winkels prüfen.",
+        "A: Die Reihenfolge lautet: Abstand ihrer Endpunkte auf den Anteil 5 einstellen → Zwei Seiten im Verhältnis 3 zu 4 abmessen → Gerade und eindeutigen Ausgangspunkt festlegen → Längen, Einheiten und Lage des rechten Winkels prüfen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Ein gemeinsamer Maßfaktor erhält das Verhältnis 3:4:5. Der rechte Winkel liegt den fünf Anteilen gegenüber. Zu B: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist."
+    },
+    {
+      "id": "lf01-p009",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Hausfläche und Projekthöhe nachvollziehbar prüfen / Mittelsenkrechte und Schwerpunkt konstruieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l11-e01 und lf01-l04-e02.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Im Beispiel stehen 90,625 m² Grundfläche, 5,50 m Höhenbegrenzung bis Traufe und Maßstab 1:125. Situation B: Für „Die Mittelsenkrechte entsteht“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Beide Schnittpunkte der Bögen markieren → Mit gleicher Öffnung Bögen um beide Endpunkte schlagen → Zirkelradius größer als die halbe Strecke wählen → Schnittpunkte verbinden und rechten Winkel prüfen.",
+        "A: Die Höhenbegrenzung gehört zu diesem Projekt.",
+        "A: Die Grundfläche beschreibt die Entfernung vom Boden zum First.",
+        "B: Die Reihenfolge lautet: Zirkelradius größer als die halbe Strecke wählen → Mit gleicher Öffnung Bögen um beide Endpunkte schlagen → Beide Schnittpunkte der Bögen markieren → Schnittpunkte verbinden und rechten Winkel prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Einheiten und Bezugspunkte machen deutlich, ob Fläche, Bauhöhe oder Zeichnungslänge gemeint ist. Zu B: Die unveränderte Zirkelöffnung sichert gleiche Abstände zu den Endpunkten."
+    },
+    {
+      "id": "lf01-p010",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Transfer: Genehmigung, Vertrag und Bauzeitenplan lesen / Geraden und rechte Winkel abstecken",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01 und lf01-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Alle Vorgänge ergeben zusammen 33 Arbeitstage. Im Balkenplan überschneiden sich mehrere Gewerke. Situation B: Für „Einen Bauwinkel kontrollieren“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die tatsächliche Dauer kann unter 33 Arbeitstagen liegen.",
+        "A: Aus der Summe folgt zwingend ein Fertigstellungstermin nach 33 Tagen.",
+        "B: Die Reihenfolge lautet: Gerade und eindeutigen Ausgangspunkt festlegen → Zwei Seiten im Verhältnis 3 zu 4 abmessen → Abstand ihrer Endpunkte auf den Anteil 5 einstellen → Längen, Einheiten und Lage des rechten Winkels prüfen.",
+        "B: Die Reihenfolge lautet: Abstand ihrer Endpunkte auf den Anteil 5 einstellen → Zwei Seiten im Verhältnis 3 zu 4 abmessen → Gerade und eindeutigen Ausgangspunkt festlegen → Längen, Einheiten und Lage des rechten Winkels prüfen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine Summe beschreibt Arbeitsumfang; der Ablaufplan zeigt zusätzlich Parallelität und Abhängigkeiten. Zu B: Ein gemeinsamer Maßfaktor erhält das Verhältnis 3:4:5. Der rechte Winkel liegt den fünf Anteilen gegenüber."
+    },
+    {
+      "id": "lf01-a001",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit lf01-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Auf dem Einrichtungsplan stehen Lagerplatz, Kran und Zufahrt. Eine Palette ist auf dem Lagerplatz abgestellt, liegt aber außerhalb der vorgesehenen Kranreichweite. Was muss vor dem Umschlag geklärt werden?",
+      "optionen": [
+        "Lagerplatz und tatsächlichen Arbeitsbereich des Krans aufeinander abstimmen.",
+        "Aus der eingezeichneten Lagerfläche allein auf Erreichbarkeit schließen.",
+        "Die Zufahrt ohne Abstimmung als weiteren Lagerplatz einplanen."
+      ],
+      "korrekt": [
+        0
+      ],
+      "erklaerung": "Eine Lagerfläche muss auch im abgestimmten Materialfluss erreichbar sein. Die Zeichnung allein ersetzt die Prüfung der tatsächlichen Reichweite nicht."
+    },
+    {
+      "id": "lf01-p011",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Ablauf und Anlieferung gemeinsam abstimmen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l07-e01, lf01-l08-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für die Neueindeckung ist am Montag ein Kran vorgesehen. Die Dachöffnung wird nach einer Planänderung erst am Dienstag vom Zimmerer hergestellt. Die Ziegel sollen Montag genau im gesperrten Kranbereich abgestellt werden. Welche zwei Entscheidungen passen zusammen? Zwei Aussagen passen.",
+      "optionen": [
+        "Den Beginn der Anschlussarbeiten mit der geänderten Vorleistung abstimmen.",
+        "Entladezeit und freigegebenen Lagerbereich vor der Anlieferung neu abstimmen.",
+        "Die Anschlussarbeiten unabhängig vom Planstand am Montag beginnen.",
+        "Den gesperrten Kranbereich als automatisch freigegebenen Lagerplatz behandeln."
+      ],
+      "korrekt": [
+        0,
+        1
+      ],
+      "erklaerung": "Die geänderte Vorleistung verändert den Arbeitsablauf. Gleichzeitig braucht die Lieferung einen sicheren, freigegebenen Materialweg. Ein neuer Termin allein löst den Lagerkonflikt nicht."
+    },
+    {
+      "id": "lf01-p012",
+      "lernfeld": "lf01",
+      "typ": "mc",
+      "thema": "Planmaß und Höhenbezug prüfen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf01-l11-e01, lf01-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine Zeichnung im Maßstab 1:100 zeigt eine 8 cm lange Gebäudekante. Die projektbezogene Höhenbegrenzung beträgt 5,50 m bis Oberkante Traufe; im geänderten Entwurf stehen 5,70 m bis zur Traufe. Welche zwei Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "Der geänderte Höhenwert überschreitet die genannte Begrenzung um 0,20 m.",
+        "8 cm im Plan entsprechen bei diesem Maßstab 0,08 m in Wirklichkeit.",
+        "Die Überschreitung ist zulässig, weil der Maßstab die Höhenbegrenzung verkleinert.",
+        "Die dargestellte Gebäudekante ist in Wirklichkeit 8 m lang."
+      ],
+      "korrekt": [
+        0,
+        3
+      ],
+      "erklaerung": "Bei 1:100 werden aus 8 cm im Plan 800 cm beziehungsweise 8 m in Wirklichkeit. Der Höhenvergleich betrifft dagegen reale Meter und denselben Bezugspunkt: 5,70 − 5,50 = 0,20 m."
+    }
+  ],
+  "lf02": [
+    {
+      "id": "lf02-p001",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Freileitungen vor dem Materialtransport klären / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l05-e01 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Lange feuchte Latten sollen nahe einer Freileitung gedreht werden. Die Spannung ist nicht bekannt. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Transport unterbrechen und Leitung sowie Schutzmaßnahmen klären.",
+        "A: Ein Helm erlaubt es, die Latte näher an die Leitung zu führen.",
+        "B: 1:20 entspricht fünf Prozent.",
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Der Abstand gilt für die gesamte Arbeitssituation. Persönliche Ausrüstung beseitigt die elektrische Gefahr nicht. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p002",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Fläche, Linie und Punkt in der Dachausmittlung / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l12-e01 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Plan zeigt einen kurzen mittleren First und vier schräge Linien zu den Hausecken. Ringsum liegt eine Trauflinie. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Jede schräge Linie muss eine wasserführende Kehle sein.",
+        "B: 1:20 entspricht fünf Prozent.",
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20.",
+        "A: Die schrägen Außenkanten sind Grate."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Richtung der Flächen zueinander entscheidet: vorspringend bedeutet Grat, einspringend bedeutet Kehle. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p003",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Unterdach, Fugenschluss und Anschluss unterscheiden / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l07-e02 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Kolonne schlägt vor, geforderte Unterdachdetails und Sturmklammern vollständig durch vermörtelte Fugen zu ersetzen. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: 1:20 entspricht fünf Prozent.",
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20.",
+        "A: Fugenschluss ersetzt die mechanische Befestigung nicht.",
+        "A: Alle Maßnahmen erfüllen unabhängig vom Aufbau dieselbe Aufgabe."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Regensicherheit, Fugenschluss und mechanische Befestigung haben unterschiedliche Funktionen. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p004",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Eine Öffnung braucht einen geplanten Lastweg / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l09-e01 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein großes Dachfenster soll eingesetzt werden. Dafür müssten mehrere Sparren ohne vorhandene Detailplanung durchtrennt werden. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20.",
+        "A: Vor dem Eingriff Tragkonstruktion und Lastweiterleitung planen lassen.",
+        "A: Sparren zunächst abschneiden und den Wechsel später nach Bedarf ergänzen.",
+        "B: 1:20 entspricht fünf Prozent."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Last muss vor dem Eingriff einen geplanten sicheren Weg erhalten. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p005",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Arbeitsplatz und Fangschutz zusammen planen / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l05-e03 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Dachfläche besitzt einen gesicherten äußeren Rand. In der Fläche liegt eine ungesicherte Öffnung über dem Gebäudeinneren. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die innere Öffnung braucht eine dafür geeignete Sicherung.",
+        "A: Der äußere Randsschutz verhindert automatisch jeden inneren Absturz.",
+        "B: 1:20 entspricht fünf Prozent.",
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Jeder mögliche Absturzweg braucht eine passende Maßnahme. Außenkante und Öffnung sind verschiedene Gefahrenstellen. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p006",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Randbereiche gegen Windsog sichern / Gefälle in Prozent und als Verhältnis",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l04-e01 und lf02-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf der Baustelle wird vorgeschlagen, dieselbe gelegentliche Verklammerung von der Fläche bis in alle Eckbereiche fortzuführen. Situation B: Auf einer Skizze steht 1:20. Ein Kollege trägt dafür ohne weitere Rechnung 5 Grad ein. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Windbeanspruchung hat mit der Lage eines Deckelements nichts zu tun.",
+        "B: 1:20 entspricht fünf Prozent.",
+        "B: Die Angabe fünf Grad folgt allein aus 100 ÷ 20.",
+        "A: Zuerst den gebäude- und systembezogenen Befestigungsplan prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Das Dach wird für die Befestigung in unterschiedlich beanspruchte Bereiche eingeteilt. Zu B: Die Rechnung 100 ÷ n liefert Prozent, keinen Winkel in Grad."
+    },
+    {
+      "id": "lf02-p007",
+      "lernfeld": "lf02",
+      "typ": "mc",
+      "thema": "Transfer: Fläche, Linie und Punkt in der Dachausmittlung / Freileitungen vor dem Materialtransport klären",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf02-l12-e01 und lf02-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Plan zeigt einen kurzen mittleren First und vier schräge Linien zu den Hausecken. Ringsum liegt eine Trauflinie. Situation B: Lange feuchte Latten sollen nahe einer Freileitung gedreht werden. Die Spannung ist nicht bekannt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Transport unterbrechen und Leitung sowie Schutzmaßnahmen klären.",
+        "B: Ein Helm erlaubt es, die Latte näher an die Leitung zu führen.",
+        "A: Die schrägen Außenkanten sind Grate.",
+        "A: Jede schräge Linie muss eine wasserführende Kehle sein."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Richtung der Flächen zueinander entscheidet: vorspringend bedeutet Grat, einspringend bedeutet Kehle. Zu B: Der Abstand gilt für die gesamte Arbeitssituation. Persönliche Ausrüstung beseitigt die elektrische Gefahr nicht."
+    }
+  ],
+  "lf03": [
+    {
+      "id": "lf03-p001",
+      "lernfeld": "lf03",
+      "typ": "mc",
+      "thema": "Transfer: Steinformat und Kennzeichnung lesen / Vor dem Eingriff die Wandaufgabe klären",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf03-l06-e01 und lf03-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Geliefert werden größere Steine als geplant. Die Kolonne möchte sie mit demselben Handgriff und derselben Schichthöhe einsetzen. Situation B: Eine dünn wirkende Wand soll für eine Leitung geöffnet werden. Ihre Aufgabe ist aus den verfügbaren Unterlagen nicht bekannt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Größeres Format verändert nur die Anzahl auf der Palette.",
+        "B: Wandfunktion und zulässigen Eingriff vor der Bearbeitung klären.",
+        "B: Jede dünne Wand darf ohne Prüfung entfernt werden.",
+        "A: Maße und Schichthöhe erneut mit der Planung vergleichen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Ein Formatwechsel betrifft Maße, Schichten, Bedarf und Arbeitsverfahren. Zu B: Auch eine nichttragende Wand kann wichtige Schutzfunktionen haben."
+    },
+    {
+      "id": "lf03-p002",
+      "lernfeld": "lf03",
+      "typ": "mc",
+      "thema": "Transfer: Vor dem Eingriff die Wandaufgabe klären / Lastklasse und Materiallagerung beachten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf03-l05-e01 und lf03-l10-e02.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine dünn wirkende Wand soll für eine Leitung geöffnet werden. Ihre Aufgabe ist aus den verfügbaren Unterlagen nicht bekannt. Situation B: Eine volle Steinpalette soll auf einem Gerüstfeld abgestellt werden. Lastklasse und zulässige Lagerung sind der Kolonne nicht bekannt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Kennzeichnung und Nutzungsfreigabe vor dem Absetzen prüfen.",
+        "B: Freier Platz auf dem Belag beweist ausreichende Tragfähigkeit.",
+        "A: Wandfunktion und zulässigen Eingriff vor der Bearbeitung klären.",
+        "A: Jede dünne Wand darf ohne Prüfung entfernt werden."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Auch eine nichttragende Wand kann wichtige Schutzfunktionen haben. Zu B: Platz und Tragfähigkeit sind verschiedene Dinge. Ungeklärte Lasten werden nicht durch Ausprobieren freigegeben."
+    },
+    {
+      "id": "lf03-p003",
+      "lernfeld": "lf03",
+      "typ": "mc",
+      "thema": "Transfer: Steinformat und Kennzeichnung lesen / Lastklasse und Materiallagerung beachten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf03-l06-e01 und lf03-l10-e02.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Geliefert werden größere Steine als geplant. Die Kolonne möchte sie mit demselben Handgriff und derselben Schichthöhe einsetzen. Situation B: Eine volle Steinpalette soll auf einem Gerüstfeld abgestellt werden. Lastklasse und zulässige Lagerung sind der Kolonne nicht bekannt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Freier Platz auf dem Belag beweist ausreichende Tragfähigkeit.",
+        "A: Maße und Schichthöhe erneut mit der Planung vergleichen.",
+        "A: Größeres Format verändert nur die Anzahl auf der Palette.",
+        "B: Kennzeichnung und Nutzungsfreigabe vor dem Absetzen prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Ein Formatwechsel betrifft Maße, Schichten, Bedarf und Arbeitsverfahren. Zu B: Platz und Tragfähigkeit sind verschiedene Dinge. Ungeklärte Lasten werden nicht durch Ausprobieren freigegeben."
+    },
+    {
+      "id": "lf03-p004",
+      "lernfeld": "lf03",
+      "typ": "mc",
+      "thema": "Transfer: Vor dem Eingriff die Wandaufgabe klären / Von den Mauerecken zur fluchtgerechten Schicht",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf03-l05-e01 und lf03-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine dünn wirkende Wand soll für eine Leitung geöffnet werden. Ihre Aufgabe ist aus den verfügbaren Unterlagen nicht bekannt. Situation B: Für „Eine Schicht mauern“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Wandfunktion und zulässigen Eingriff vor der Bearbeitung klären.",
+        "A: Jede dünne Wand darf ohne Prüfung entfernt werden.",
+        "B: Die Reihenfolge lautet: Mauerenden und Ecken lot- und höhengerecht anlegen → Schnur für die Schicht spannen → Vorgesehene Lager- und Stoßfugen vorbereiten → Steine versetzen, ausrichten und Mörtel abstreichen → Verband, Höhe und Flucht fortlaufend kontrollieren.",
+        "B: Die Reihenfolge lautet: Vorgesehene Lager- und Stoßfugen vorbereiten → Schnur für die Schicht spannen → Mauerenden und Ecken lot- und höhengerecht anlegen → Steine versetzen, ausrichten und Mörtel abstreichen → Verband, Höhe und Flucht fortlaufend kontrollieren."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Auch eine nichttragende Wand kann wichtige Schutzfunktionen haben. Zu B: Die Schnur führt die Lage, ersetzt aber weder die Kontrolle der Endpunkte noch die Prüfung des Verbands."
+    }
+  ],
+  "lf04": [
+    {
+      "id": "lf04-p001",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Verbund braucht Kontakt und Verzahnung / Betondeckung als Schutz sichern",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l15-e01 und lf04-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Bei einer Kontrolle wird ein größerer Hohlraum direkt an der Bewehrung gefunden. Situation B: Vor dem Betonieren berühren mehrere Bewehrungsstäbe die Schalung. Abstandhalter fehlen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die vorgesehene Deckung ist dort nicht gesichert.",
+        "B: Der Stahl wird durch den Beton später von selbst passend angehoben.",
+        "A: Die vollständige Umschließung des Stahls ist für den Verbund wichtig.",
+        "A: Die Rippen ersetzen den fehlenden Beton unabhängig vom Hohlraum."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Rippen funktionieren durch ihren Kontakt mit dem umgebenden Beton. Zu B: Die Deckung wird durch eine gesicherte Lage hergestellt und nicht dem Zufall überlassen."
+    },
+    {
+      "id": "lf04-p002",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Verbund braucht Kontakt und Verzahnung / Lieferung, Einbau und Nachbehandlung planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l15-e01 und lf04-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Bei einer Kontrolle wird ein größerer Hohlraum direkt an der Bewehrung gefunden. Situation B: Der Fahrmischer steht bereit, aber der Rüttler fehlt und Schutzmaterial für die fertige Fläche ist noch nicht vorhanden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Das Betonwerk ersetzt die fehlenden Arbeiten durch die Rezeptur.",
+        "A: Die vollständige Umschließung des Stahls ist für den Verbund wichtig.",
+        "A: Die Rippen ersetzen den fehlenden Beton unabhängig vom Hohlraum.",
+        "B: Der vorbereitete Betonierablauf ist unvollständig."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Rippen funktionieren durch ihren Kontakt mit dem umgebenden Beton. Zu B: Bestellte Eigenschaften müssen durch geeignete Verarbeitung und Nachbehandlung erhalten werden."
+    },
+    {
+      "id": "lf04-p003",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Wassergehalt, Festigkeit und Konsistenz / Verbund braucht Kontakt und Verzahnung",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l14-e01 und lf04-l15-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der gelieferte Beton erscheint steif. Jemand will ohne Abstimmung Wasser nachgießen und nennt das eine Festigkeitsverbesserung. Situation B: Bei einer Kontrolle wird ein größerer Hohlraum direkt an der Bewehrung gefunden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Mehr Wasser kann die spätere Porigkeit erhöhen.",
+        "A: Ein weicherer Beton ist automatisch fester.",
+        "B: Die vollständige Umschließung des Stahls ist für den Verbund wichtig.",
+        "B: Die Rippen ersetzen den fehlenden Beton unabhängig vom Hohlraum."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die vorgesehene Rezeptur wird nicht durch eigenmächtiges Nachgießen verändert. Zu B: Rippen funktionieren durch ihren Kontakt mit dem umgebenden Beton."
+    },
+    {
+      "id": "lf04-p004",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Betondeckung als Schutz sichern / Lieferung, Einbau und Nachbehandlung planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l11-e01 und lf04-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Vor dem Betonieren berühren mehrere Bewehrungsstäbe die Schalung. Abstandhalter fehlen. Situation B: Der Fahrmischer steht bereit, aber der Rüttler fehlt und Schutzmaterial für die fertige Fläche ist noch nicht vorhanden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Der Stahl wird durch den Beton später von selbst passend angehoben.",
+        "B: Der vorbereitete Betonierablauf ist unvollständig.",
+        "B: Das Betonwerk ersetzt die fehlenden Arbeiten durch die Rezeptur.",
+        "A: Die vorgesehene Deckung ist dort nicht gesichert."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Deckung wird durch eine gesicherte Lage hergestellt und nicht dem Zufall überlassen. Zu B: Bestellte Eigenschaften müssen durch geeignete Verarbeitung und Nachbehandlung erhalten werden."
+    },
+    {
+      "id": "lf04-p005",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Wassergehalt, Festigkeit und Konsistenz / Betondeckung als Schutz sichern",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l14-e01 und lf04-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der gelieferte Beton erscheint steif. Jemand will ohne Abstimmung Wasser nachgießen und nennt das eine Festigkeitsverbesserung. Situation B: Vor dem Betonieren berühren mehrere Bewehrungsstäbe die Schalung. Abstandhalter fehlen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die vorgesehene Deckung ist dort nicht gesichert.",
+        "B: Der Stahl wird durch den Beton später von selbst passend angehoben.",
+        "A: Mehr Wasser kann die spätere Porigkeit erhöhen.",
+        "A: Ein weicherer Beton ist automatisch fester."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die vorgesehene Rezeptur wird nicht durch eigenmächtiges Nachgießen verändert. Zu B: Die Deckung wird durch eine gesicherte Lage hergestellt und nicht dem Zufall überlassen."
+    },
+    {
+      "id": "lf04-p006",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Verbund braucht Kontakt und Verzahnung / Mengen berechnen und Ausschalen begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l15-e01 und lf04-l12-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Bei einer Kontrolle wird ein größerer Hohlraum direkt an der Bewehrung gefunden. Situation B: Die seitliche Schalung lässt sich lösen. Eine Person will daraus ableiten, dass auch jede tragende Unterstützung entfernt werden kann. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine gelöste Seitenplatte beweist die volle Tragfähigkeit der Decke.",
+        "A: Die vollständige Umschließung des Stahls ist für den Verbund wichtig.",
+        "A: Die Rippen ersetzen den fehlenden Beton unabhängig vom Hohlraum.",
+        "B: Der erforderliche Festigkeitszustand und die Planung müssen geprüft werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Rippen funktionieren durch ihren Kontakt mit dem umgebenden Beton. Zu B: Die Lösbarkeit der Schalhaut ist kein Nachweis ausreichender Tragfähigkeit."
+    },
+    {
+      "id": "lf04-p007",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Betondeckung als Schutz sichern / Mengen berechnen und Ausschalen begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l11-e01 und lf04-l12-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Vor dem Betonieren berühren mehrere Bewehrungsstäbe die Schalung. Abstandhalter fehlen. Situation B: Die seitliche Schalung lässt sich lösen. Eine Person will daraus ableiten, dass auch jede tragende Unterstützung entfernt werden kann. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die vorgesehene Deckung ist dort nicht gesichert.",
+        "A: Der Stahl wird durch den Beton später von selbst passend angehoben.",
+        "B: Der erforderliche Festigkeitszustand und die Planung müssen geprüft werden.",
+        "B: Eine gelöste Seitenplatte beweist die volle Tragfähigkeit der Decke."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Deckung wird durch eine gesicherte Lage hergestellt und nicht dem Zufall überlassen. Zu B: Die Lösbarkeit der Schalhaut ist kein Nachweis ausreichender Tragfähigkeit."
+    },
+    {
+      "id": "lf04-p008",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Wassergehalt, Festigkeit und Konsistenz / Lieferung, Einbau und Nachbehandlung planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l14-e01 und lf04-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der gelieferte Beton erscheint steif. Jemand will ohne Abstimmung Wasser nachgießen und nennt das eine Festigkeitsverbesserung. Situation B: Der Fahrmischer steht bereit, aber der Rüttler fehlt und Schutzmaterial für die fertige Fläche ist noch nicht vorhanden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ein weicherer Beton ist automatisch fester.",
+        "B: Der vorbereitete Betonierablauf ist unvollständig.",
+        "B: Das Betonwerk ersetzt die fehlenden Arbeiten durch die Rezeptur.",
+        "A: Mehr Wasser kann die spätere Porigkeit erhöhen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die vorgesehene Rezeptur wird nicht durch eigenmächtiges Nachgießen verändert. Zu B: Bestellte Eigenschaften müssen durch geeignete Verarbeitung und Nachbehandlung erhalten werden."
+    },
+    {
+      "id": "lf04-p009",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Mengen berechnen und Ausschalen begründen / Lieferung, Einbau und Nachbehandlung planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l12-e01 und lf04-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die seitliche Schalung lässt sich lösen. Eine Person will daraus ableiten, dass auch jede tragende Unterstützung entfernt werden kann. Situation B: Der Fahrmischer steht bereit, aber der Rüttler fehlt und Schutzmaterial für die fertige Fläche ist noch nicht vorhanden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Der vorbereitete Betonierablauf ist unvollständig.",
+        "B: Das Betonwerk ersetzt die fehlenden Arbeiten durch die Rezeptur.",
+        "A: Der erforderliche Festigkeitszustand und die Planung müssen geprüft werden.",
+        "A: Eine gelöste Seitenplatte beweist die volle Tragfähigkeit der Decke."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Lösbarkeit der Schalhaut ist kein Nachweis ausreichender Tragfähigkeit. Zu B: Bestellte Eigenschaften müssen durch geeignete Verarbeitung und Nachbehandlung erhalten werden."
+    },
+    {
+      "id": "lf04-p010",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Wassergehalt, Festigkeit und Konsistenz / Mengen berechnen und Ausschalen begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l14-e01 und lf04-l12-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der gelieferte Beton erscheint steif. Jemand will ohne Abstimmung Wasser nachgießen und nennt das eine Festigkeitsverbesserung. Situation B: Die seitliche Schalung lässt sich lösen. Eine Person will daraus ableiten, dass auch jede tragende Unterstützung entfernt werden kann. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine gelöste Seitenplatte beweist die volle Tragfähigkeit der Decke.",
+        "A: Mehr Wasser kann die spätere Porigkeit erhöhen.",
+        "A: Ein weicherer Beton ist automatisch fester.",
+        "B: Der erforderliche Festigkeitszustand und die Planung müssen geprüft werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die vorgesehene Rezeptur wird nicht durch eigenmächtiges Nachgießen verändert. Zu B: Die Lösbarkeit der Schalhaut ist kein Nachweis ausreichender Tragfähigkeit."
+    },
+    {
+      "id": "lf04-p011",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Vom Klinker zur Zementbezeichnung / Verbund braucht Kontakt und Verzahnung",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l05-e01 und lf04-l15-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Zement herstellen“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Bei einer Kontrolle wird ein größerer Hohlraum direkt an der Bewehrung gefunden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Reihenfolge lautet: Kalkstein und Ton aufbereiten und mischen → Rohstoffe im Ofen zu Klinker brennen → Klinker mit Gips fein mahlen → Fertigen Zement anhand seiner Kennzeichnung auswählen.",
+        "A: Die Reihenfolge lautet: Klinker mit Gips fein mahlen → Rohstoffe im Ofen zu Klinker brennen → Kalkstein und Ton aufbereiten und mischen → Fertigen Zement anhand seiner Kennzeichnung auswählen.",
+        "B: Die vollständige Umschließung des Stahls ist für den Verbund wichtig.",
+        "B: Die Rippen ersetzen den fehlenden Beton unabhängig vom Hohlraum."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Klinker ist ein Zwischenprodukt. Der Gips wird beim abschließenden Mahlen zugesetzt. Zu B: Rippen funktionieren durch ihren Kontakt mit dem umgebenden Beton."
+    },
+    {
+      "id": "lf04-p012",
+      "lernfeld": "lf04",
+      "typ": "mc",
+      "thema": "Transfer: Vom Klinker zur Zementbezeichnung / Betondeckung als Schutz sichern",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf04-l05-e01 und lf04-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Zement herstellen“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Vor dem Betonieren berühren mehrere Bewehrungsstäbe die Schalung. Abstandhalter fehlen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Reihenfolge lautet: Klinker mit Gips fein mahlen → Rohstoffe im Ofen zu Klinker brennen → Kalkstein und Ton aufbereiten und mischen → Fertigen Zement anhand seiner Kennzeichnung auswählen.",
+        "B: Die vorgesehene Deckung ist dort nicht gesichert.",
+        "B: Der Stahl wird durch den Beton später von selbst passend angehoben.",
+        "A: Die Reihenfolge lautet: Kalkstein und Ton aufbereiten und mischen → Rohstoffe im Ofen zu Klinker brennen → Klinker mit Gips fein mahlen → Fertigen Zement anhand seiner Kennzeichnung auswählen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Klinker ist ein Zwischenprodukt. Der Gips wird beim abschließenden Mahlen zugesetzt. Zu B: Die Deckung wird durch eine gesicherte Lage hergestellt und nicht dem Zufall überlassen."
+    }
+  ],
+  "lf05": [
+    {
+      "id": "lf05-p001",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Holzart und Wachstumsfehler prüfen / Kräfte mit ihrer Richtung beschreiben",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l10-e01 und lf05-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein angeliefertes Holz zeigt schräg umlaufende Fasern und hat sich nach dem Trocknen deutlich verdreht. Situation B: Ein Anschluss wird nur für das Gewicht nach unten betrachtet. In der Aufgabe tritt zusätzlich Windsog auf. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine schwere Deckung ersetzt grundsätzlich den Nachweis der Befestigung.",
+        "A: Drehwuchs kann die Verformung erklären.",
+        "A: Die Holzart allein macht jede Verformung bedeutungslos.",
+        "B: Eine mögliche aufwärts gerichtete Einwirkung muss berücksichtigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Natürliche Merkmale werden bei der Qualitätsbeurteilung berücksichtigt. Zu B: Das Tragwerk und seine Befestigungen müssen zu den tatsächlich angesetzten Einwirkungen passen."
+    },
+    {
+      "id": "lf05-p002",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Holzart und Wachstumsfehler prüfen / Feuchte zuerst konstruktiv vermeiden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l10-e01 und lf05-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein angeliefertes Holz zeigt schräg umlaufende Fasern und hat sich nach dem Trocknen deutlich verdreht. Situation B: Ein Balkenkopf bleibt wegen eines undichten Anschlusses feucht. Als einzige Maßnahme wird ein Schutzmittel vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Drehwuchs kann die Verformung erklären.",
+        "A: Die Holzart allein macht jede Verformung bedeutungslos.",
+        "B: Die Feuchtequelle muss zuerst geklärt und beseitigt werden.",
+        "B: Ein Mittel macht jede dauerhaft nasse Konstruktion zuverlässig unschädlich."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Natürliche Merkmale werden bei der Qualitätsbeurteilung berücksichtigt. Zu B: Baulicher Schutz hat Vorrang. Chemische Maßnahmen werden nur bedarfsgerecht ergänzt."
+    },
+    {
+      "id": "lf05-p003",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Feuchte zuerst konstruktiv vermeiden / Kräfte mit ihrer Richtung beschreiben",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l03-e01 und lf05-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Balkenkopf bleibt wegen eines undichten Anschlusses feucht. Als einzige Maßnahme wird ein Schutzmittel vorgeschlagen. Situation B: Ein Anschluss wird nur für das Gewicht nach unten betrachtet. In der Aufgabe tritt zusätzlich Windsog auf. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ein Mittel macht jede dauerhaft nasse Konstruktion zuverlässig unschädlich.",
+        "B: Eine mögliche aufwärts gerichtete Einwirkung muss berücksichtigt werden.",
+        "B: Eine schwere Deckung ersetzt grundsätzlich den Nachweis der Befestigung.",
+        "A: Die Feuchtequelle muss zuerst geklärt und beseitigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Baulicher Schutz hat Vorrang. Chemische Maßnahmen werden nur bedarfsgerecht ergänzt. Zu B: Das Tragwerk und seine Befestigungen müssen zu den tatsächlich angesetzten Einwirkungen passen."
+    },
+    {
+      "id": "lf05-p004",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Holzart und Wachstumsfehler prüfen / Alte Dachtragwerke vor Veränderungen verstehen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l10-e01 und lf05-l12-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein angeliefertes Holz zeigt schräg umlaufende Fasern und hat sich nach dem Trocknen deutlich verdreht. Situation B: In einem alten Dachstuhl soll ein senkrechtes Holz entfernt werden. Es ist noch ungeklärt, ob eine Decke daran aufgehängt ist. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Zuerst Tragwerk und Lastweg fachlich klären.",
+        "B: Ein Holz unter dem First ist grundsätzlich entbehrlich.",
+        "A: Drehwuchs kann die Verformung erklären.",
+        "A: Die Holzart allein macht jede Verformung bedeutungslos."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Natürliche Merkmale werden bei der Qualitätsbeurteilung berücksichtigt. Zu B: Die Funktion wird vor der Veränderung geklärt, besonders bei historischen Tragwerken."
+    },
+    {
+      "id": "lf05-p005",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Holzart und Wachstumsfehler prüfen / Faserrichtung und Schwindrichtung beachten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l10-e01 und lf05-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein angeliefertes Holz zeigt schräg umlaufende Fasern und hat sich nach dem Trocknen deutlich verdreht. Situation B: Ein Brett wird quer zur Faser auf Zug belastet. Jemand begründet die Eignung allein mit der hohen Zugfestigkeit längs zur Faser. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Ein Wert längs zur Faser gilt unverändert quer dazu.",
+        "A: Drehwuchs kann die Verformung erklären.",
+        "A: Die Holzart allein macht jede Verformung bedeutungslos.",
+        "B: Die Faserrichtung muss bei der Beurteilung berücksichtigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Natürliche Merkmale werden bei der Qualitätsbeurteilung berücksichtigt. Zu B: Holz besitzt richtungsabhängige Eigenschaften und braucht dazu passende Anschlüsse."
+    },
+    {
+      "id": "lf05-p006",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Alte Dachtragwerke vor Veränderungen verstehen / Kräfte mit ihrer Richtung beschreiben",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l12-e01 und lf05-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: In einem alten Dachstuhl soll ein senkrechtes Holz entfernt werden. Es ist noch ungeklärt, ob eine Decke daran aufgehängt ist. Situation B: Ein Anschluss wird nur für das Gewicht nach unten betrachtet. In der Aufgabe tritt zusätzlich Windsog auf. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Zuerst Tragwerk und Lastweg fachlich klären.",
+        "A: Ein Holz unter dem First ist grundsätzlich entbehrlich.",
+        "B: Eine mögliche aufwärts gerichtete Einwirkung muss berücksichtigt werden.",
+        "B: Eine schwere Deckung ersetzt grundsätzlich den Nachweis der Befestigung."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Funktion wird vor der Veränderung geklärt, besonders bei historischen Tragwerken. Zu B: Das Tragwerk und seine Befestigungen müssen zu den tatsächlich angesetzten Einwirkungen passen."
+    },
+    {
+      "id": "lf05-p007",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Holzart und Wachstumsfehler prüfen / Verbindungsmittel passend einsetzen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l10-e01 und lf05-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein angeliefertes Holz zeigt schräg umlaufende Fasern und hat sich nach dem Trocknen deutlich verdreht. Situation B: Eine Verbindung muss laut Planung verspannt werden. Jemand ersetzt den vorgesehenen Schraubenbolzen durch einen glatten Stabdübel. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Holzart allein macht jede Verformung bedeutungslos.",
+        "B: Ein Stabdübel stellt die verlangte Verspannung nicht selbst her.",
+        "B: Gleicher Durchmesser bedeutet automatisch gleiche Funktion.",
+        "A: Drehwuchs kann die Verformung erklären."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Natürliche Merkmale werden bei der Qualitätsbeurteilung berücksichtigt. Zu B: Geometrie allein macht unterschiedliche Verbindungsmittel nicht austauschbar."
+    },
+    {
+      "id": "lf05-p008",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Faserrichtung und Schwindrichtung beachten / Kräfte mit ihrer Richtung beschreiben",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l05-e01 und lf05-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Brett wird quer zur Faser auf Zug belastet. Jemand begründet die Eignung allein mit der hohen Zugfestigkeit längs zur Faser. Situation B: Ein Anschluss wird nur für das Gewicht nach unten betrachtet. In der Aufgabe tritt zusätzlich Windsog auf. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine mögliche aufwärts gerichtete Einwirkung muss berücksichtigt werden.",
+        "B: Eine schwere Deckung ersetzt grundsätzlich den Nachweis der Befestigung.",
+        "A: Die Faserrichtung muss bei der Beurteilung berücksichtigt werden.",
+        "A: Ein Wert längs zur Faser gilt unverändert quer dazu."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Holz besitzt richtungsabhängige Eigenschaften und braucht dazu passende Anschlüsse. Zu B: Das Tragwerk und seine Befestigungen müssen zu den tatsächlich angesetzten Einwirkungen passen."
+    },
+    {
+      "id": "lf05-p009",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Verbindungsmittel passend einsetzen / Kräfte mit ihrer Richtung beschreiben",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l18-e01 und lf05-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Verbindung muss laut Planung verspannt werden. Jemand ersetzt den vorgesehenen Schraubenbolzen durch einen glatten Stabdübel. Situation B: Ein Anschluss wird nur für das Gewicht nach unten betrachtet. In der Aufgabe tritt zusätzlich Windsog auf. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine schwere Deckung ersetzt grundsätzlich den Nachweis der Befestigung.",
+        "A: Ein Stabdübel stellt die verlangte Verspannung nicht selbst her.",
+        "A: Gleicher Durchmesser bedeutet automatisch gleiche Funktion.",
+        "B: Eine mögliche aufwärts gerichtete Einwirkung muss berücksichtigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Geometrie allein macht unterschiedliche Verbindungsmittel nicht austauschbar. Zu B: Das Tragwerk und seine Befestigungen müssen zu den tatsächlich angesetzten Einwirkungen passen."
+    },
+    {
+      "id": "lf05-p010",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Feuchte zuerst konstruktiv vermeiden / Alte Dachtragwerke vor Veränderungen verstehen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l03-e01 und lf05-l12-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Balkenkopf bleibt wegen eines undichten Anschlusses feucht. Als einzige Maßnahme wird ein Schutzmittel vorgeschlagen. Situation B: In einem alten Dachstuhl soll ein senkrechtes Holz entfernt werden. Es ist noch ungeklärt, ob eine Decke daran aufgehängt ist. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Feuchtequelle muss zuerst geklärt und beseitigt werden.",
+        "A: Ein Mittel macht jede dauerhaft nasse Konstruktion zuverlässig unschädlich.",
+        "B: Zuerst Tragwerk und Lastweg fachlich klären.",
+        "B: Ein Holz unter dem First ist grundsätzlich entbehrlich."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Baulicher Schutz hat Vorrang. Chemische Maßnahmen werden nur bedarfsgerecht ergänzt. Zu B: Die Funktion wird vor der Veränderung geklärt, besonders bei historischen Tragwerken."
+    },
+    {
+      "id": "lf05-p011",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Faserrichtung und Schwindrichtung beachten / Feuchte zuerst konstruktiv vermeiden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l05-e01 und lf05-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Brett wird quer zur Faser auf Zug belastet. Jemand begründet die Eignung allein mit der hohen Zugfestigkeit längs zur Faser. Situation B: Ein Balkenkopf bleibt wegen eines undichten Anschlusses feucht. Als einzige Maßnahme wird ein Schutzmittel vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ein Wert längs zur Faser gilt unverändert quer dazu.",
+        "B: Die Feuchtequelle muss zuerst geklärt und beseitigt werden.",
+        "B: Ein Mittel macht jede dauerhaft nasse Konstruktion zuverlässig unschädlich.",
+        "A: Die Faserrichtung muss bei der Beurteilung berücksichtigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Holz besitzt richtungsabhängige Eigenschaften und braucht dazu passende Anschlüsse. Zu B: Baulicher Schutz hat Vorrang. Chemische Maßnahmen werden nur bedarfsgerecht ergänzt."
+    },
+    {
+      "id": "lf05-p012",
+      "lernfeld": "lf05",
+      "typ": "mc",
+      "thema": "Transfer: Feuchte zuerst konstruktiv vermeiden / Verbindungsmittel passend einsetzen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf05-l03-e01 und lf05-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Balkenkopf bleibt wegen eines undichten Anschlusses feucht. Als einzige Maßnahme wird ein Schutzmittel vorgeschlagen. Situation B: Eine Verbindung muss laut Planung verspannt werden. Jemand ersetzt den vorgesehenen Schraubenbolzen durch einen glatten Stabdübel. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Ein Stabdübel stellt die verlangte Verspannung nicht selbst her.",
+        "B: Gleicher Durchmesser bedeutet automatisch gleiche Funktion.",
+        "A: Die Feuchtequelle muss zuerst geklärt und beseitigt werden.",
+        "A: Ein Mittel macht jede dauerhaft nasse Konstruktion zuverlässig unschädlich."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Baulicher Schutz hat Vorrang. Chemische Maßnahmen werden nur bedarfsgerecht ergänzt. Zu B: Geometrie allein macht unterschiedliche Verbindungsmittel nicht austauschbar."
+    }
+  ],
+  "lf06": [
+    {
+      "id": "lf06-p001",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Patina und Metallverträglichkeit unterscheiden / Außenputz nach seiner Aufgabe auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l03-e01 und lf06-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Situation B: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "A: Ohne direkte Berührung ist jede Kombination unproblematisch.",
+        "B: Feuchtequelle und Salzbelastung gehören zur Planung.",
+        "B: Sanierputz macht jede Ursachenklärung überflüssig."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft. Zu B: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden."
+    },
+    {
+      "id": "lf06-p002",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Außenputz nach seiner Aufgabe auswählen / Fläche, Zuschlag und Gebinde verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l14-e01 und lf06-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Situation B: Für „Fliesenbedarf bestellen“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Sanierputz macht jede Ursachenklärung überflüssig.",
+        "B: Die Reihenfolge lautet: Zu belegende Fläche ermitteln → Mit dem Stückbedarf je Quadratmeter multiplizieren → Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden.",
+        "B: Die Reihenfolge lautet: Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Mit dem Stückbedarf je Quadratmeter multiplizieren → Zu belegende Fläche ermitteln → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden.",
+        "A: Feuchtequelle und Salzbelastung gehören zur Planung."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden. Zu B: Der Zuschlag kommt vor der Anpassung an die lieferbare Verpackungseinheit."
+    },
+    {
+      "id": "lf06-p003",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Putzhaftung vor dem Auftrag sichern / Außenputz nach seiner Aufgabe auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l06-e01 und lf06-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Putzarbeiten vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Feuchtequelle und Salzbelastung gehören zur Planung.",
+        "B: Sanierputz macht jede Ursachenklärung überflüssig.",
+        "A: Die Reihenfolge lautet: Untergrund und Feuchtezustand prüfen → Lose und haftungsmindernde Schichten entfernen → Erforderliche Vorbehandlung und Profile ausführen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen.",
+        "A: Die Reihenfolge lautet: Erforderliche Vorbehandlung und Profile ausführen → Lose und haftungsmindernde Schichten entfernen → Untergrund und Feuchtezustand prüfen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Oberflächenbearbeitung kann eine mangelhafte Untergrundvorbereitung nicht ausgleichen. Zu B: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden."
+    },
+    {
+      "id": "lf06-p004",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Patina und Metallverträglichkeit unterscheiden / Fläche, Zuschlag und Gebinde verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l03-e01 und lf06-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Situation B: Für „Fliesenbedarf bestellen“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Mit dem Stückbedarf je Quadratmeter multiplizieren → Zu belegende Fläche ermitteln → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden.",
+        "A: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "A: Ohne direkte Berührung ist jede Kombination unproblematisch.",
+        "B: Die Reihenfolge lautet: Zu belegende Fläche ermitteln → Mit dem Stückbedarf je Quadratmeter multiplizieren → Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft. Zu B: Der Zuschlag kommt vor der Anpassung an die lieferbare Verpackungseinheit."
+    },
+    {
+      "id": "lf06-p005",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Patina und Metallverträglichkeit unterscheiden / Putzhaftung vor dem Auftrag sichern",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l03-e01 und lf06-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Situation B: Für „Putzarbeiten vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "A: Ohne direkte Berührung ist jede Kombination unproblematisch.",
+        "B: Die Reihenfolge lautet: Untergrund und Feuchtezustand prüfen → Lose und haftungsmindernde Schichten entfernen → Erforderliche Vorbehandlung und Profile ausführen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen.",
+        "B: Die Reihenfolge lautet: Erforderliche Vorbehandlung und Profile ausführen → Lose und haftungsmindernde Schichten entfernen → Untergrund und Feuchtezustand prüfen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft. Zu B: Die Oberflächenbearbeitung kann eine mangelhafte Untergrundvorbereitung nicht ausgleichen."
+    },
+    {
+      "id": "lf06-p006",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Den Gipskreislauf verstehen / Außenputz nach seiner Aufgabe auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l07-e01 und lf06-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Vom Gipsstein zum erhärteten Gips“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Reihenfolge lautet: Gebranntes Material zum Bindemittel aufbereiten → Beim Brennen einen Teil des Kristallwassers austreiben → Gipsstein mit gebundenem Kristallwasser gewinnen → Mit Wasser anmachen → Neue Gipskristalle bilden lassen und erhärten.",
+        "B: Feuchtequelle und Salzbelastung gehören zur Planung.",
+        "B: Sanierputz macht jede Ursachenklärung überflüssig.",
+        "A: Die Reihenfolge lautet: Gipsstein mit gebundenem Kristallwasser gewinnen → Beim Brennen einen Teil des Kristallwassers austreiben → Gebranntes Material zum Bindemittel aufbereiten → Mit Wasser anmachen → Neue Gipskristalle bilden lassen und erhärten."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Das Anmachwasser ermöglicht die erneute Kristallbildung; bloßes Trocknen erklärt den Vorgang nicht vollständig. Zu B: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden."
+    },
+    {
+      "id": "lf06-p007",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Patina und Metallverträglichkeit unterscheiden / Den Gipskreislauf verstehen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l03-e01 und lf06-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Situation B: Für „Vom Gipsstein zum erhärteten Gips“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Gipsstein mit gebundenem Kristallwasser gewinnen → Beim Brennen einen Teil des Kristallwassers austreiben → Gebranntes Material zum Bindemittel aufbereiten → Mit Wasser anmachen → Neue Gipskristalle bilden lassen und erhärten.",
+        "B: Die Reihenfolge lautet: Gebranntes Material zum Bindemittel aufbereiten → Beim Brennen einen Teil des Kristallwassers austreiben → Gipsstein mit gebundenem Kristallwasser gewinnen → Mit Wasser anmachen → Neue Gipskristalle bilden lassen und erhärten.",
+        "A: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "A: Ohne direkte Berührung ist jede Kombination unproblematisch."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft. Zu B: Das Anmachwasser ermöglicht die erneute Kristallbildung; bloßes Trocknen erklärt den Vorgang nicht vollständig."
+    },
+    {
+      "id": "lf06-p008",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Außenputz nach seiner Aufgabe auswählen / Platten nach Material und Beanspruchung wählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l14-e01 und lf06-l08-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Situation B: Für einen frostbeanspruchten Balkon werden Wandfliesen aus porösem Steingut allein wegen ihrer Farbe ausgewählt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Jede glasierte Oberfläche macht eine Fliese automatisch frostbeständig.",
+        "A: Feuchtequelle und Salzbelastung gehören zur Planung.",
+        "A: Sanierputz macht jede Ursachenklärung überflüssig.",
+        "B: Die technische Eignung für Frost muss geprüft werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden. Zu B: Die Eignung des ganzen Produkts zählt, nicht nur das Aussehen seiner Oberfläche."
+    },
+    {
+      "id": "lf06-p009",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Patina und Metallverträglichkeit unterscheiden / Platten nach Material und Beanspruchung wählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l03-e01 und lf06-l08-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Situation B: Für einen frostbeanspruchten Balkon werden Wandfliesen aus porösem Steingut allein wegen ihrer Farbe ausgewählt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "A: Ohne direkte Berührung ist jede Kombination unproblematisch.",
+        "B: Die technische Eignung für Frost muss geprüft werden.",
+        "B: Jede glasierte Oberfläche macht eine Fliese automatisch frostbeständig."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft. Zu B: Die Eignung des ganzen Produkts zählt, nicht nur das Aussehen seiner Oberfläche."
+    },
+    {
+      "id": "lf06-p010",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Einbauort vor dem Dämmstoff wählen / Außenputz nach seiner Aufgabe auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l02-e01 und lf06-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für einen feuchtebeanspruchten und belasteten Einbauort soll die billigste Platte gewählt werden. Ihr Anwendungsgebiet ist noch unbekannt. Situation B: Auf eine dauerhaft feuchte, salzbelastete Wand soll Sanierputz aufgebracht werden. Die Feuchtequelle wurde noch nicht untersucht. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Gleiche Dicke macht alle Dämmplatten austauschbar.",
+        "B: Feuchtequelle und Salzbelastung gehören zur Planung.",
+        "B: Sanierputz macht jede Ursachenklärung überflüssig.",
+        "A: Druckbelastbarkeit und Verhalten bei Feuchte müssen geprüft werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Auswahl verbindet Dämmwirkung mit den Beanspruchungen des tatsächlichen Einbauorts. Zu B: Materialwahl und Ursachenbeseitigung müssen zusammen geplant werden."
+    },
+    {
+      "id": "lf06-p011",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Einbauort vor dem Dämmstoff wählen / Patina und Metallverträglichkeit unterscheiden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l02-e01 und lf06-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für einen feuchtebeanspruchten und belasteten Einbauort soll die billigste Platte gewählt werden. Ihr Anwendungsgebiet ist noch unbekannt. Situation B: Eine größere Kupferfläche entwässert direkt in eine Titanzinkrinne. Zwischen Dachblech und Rinne besteht kein direkter Metallkontakt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Auch der Wasserweg kann ein Korrosionsrisiko erzeugen.",
+        "B: Ohne direkte Berührung ist jede Kombination unproblematisch.",
+        "A: Druckbelastbarkeit und Verhalten bei Feuchte müssen geprüft werden.",
+        "A: Gleiche Dicke macht alle Dämmplatten austauschbar."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Auswahl verbindet Dämmwirkung mit den Beanspruchungen des tatsächlichen Einbauorts. Zu B: Wasser kann Stoffe transportieren. Werkstoffverträglichkeit wird daher entlang des gesamten Abflusswegs geprüft."
+    },
+    {
+      "id": "lf06-p012",
+      "lernfeld": "lf06",
+      "typ": "mc",
+      "thema": "Transfer: Putzhaftung vor dem Auftrag sichern / Fläche, Zuschlag und Gebinde verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf06-l06-e01 und lf06-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Putzarbeiten vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Für „Fliesenbedarf bestellen“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Mit dem Stückbedarf je Quadratmeter multiplizieren → Zu belegende Fläche ermitteln → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden.",
+        "A: Die Reihenfolge lautet: Untergrund und Feuchtezustand prüfen → Lose und haftungsmindernde Schichten entfernen → Erforderliche Vorbehandlung und Profile ausführen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen.",
+        "A: Die Reihenfolge lautet: Erforderliche Vorbehandlung und Profile ausführen → Lose und haftungsmindernde Schichten entfernen → Untergrund und Feuchtezustand prüfen → Putzlagen systemgerecht auftragen und bearbeiten → Zustand und erforderliche Standzeit vor weiterer Beschichtung prüfen.",
+        "B: Die Reihenfolge lautet: Zu belegende Fläche ermitteln → Mit dem Stückbedarf je Quadratmeter multiplizieren → Vorgegebenen Verschnittzuschlag auf den Grundbedarf rechnen → Auf ganze Fliesen beziehungsweise lieferbare Pakete aufrunden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Oberflächenbearbeitung kann eine mangelhafte Untergrundvorbereitung nicht ausgleichen. Zu B: Der Zuschlag kommt vor der Anpassung an die lieferbare Verpackungseinheit."
+    }
+  ],
+  "lf08": [
+    {
+      "id": "lf08-p001",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Feuchtewege statt bloßer Foliennamen / Was Mörtel leisten soll",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l04-e01 und lf08-l22-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Bahnfläche ist unbeschädigt. Am Wandanschluss bleibt eine durchgehende offene Fuge. Situation B: An einem First sind Mörtelstücke ausgebrochen. Als einzige Maßnahme wird ein neuer Innenverstrich vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Ursache, Bewegung und vorhandene Befestigung untersuchen.",
+        "B: Frischer Mörtel ist automatisch der Nachweis ausreichender Windsogsicherung.",
+        "A: Die Fuge unterbricht die geplante Luftdichtung.",
+        "A: Der Diffusionswert der Bahn macht den offenen Anschluss unschädlich."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Luftdichtung entsteht durch die zusammenhängende Ebene einschließlich aller Anschlüsse. Zu B: Eine Reparatur muss die Ursache und alle vorgesehenen Funktionen erfassen."
+    },
+    {
+      "id": "lf08-p002",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Feuchtewege statt bloßer Foliennamen / Das Vierziegeleck untersuchen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l04-e01 und lf08-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Bahnfläche ist unbeschädigt. Am Wandanschluss bleibt eine durchgehende offene Fuge. Situation B: Ein Ersatzziegel passt ungefähr in Länge und Breite. Sein Eckenschnitt unterscheidet sich vom vorhandenen Modell. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Ähnliche Außenmaße beweisen die Austauschbarkeit.",
+        "A: Die Fuge unterbricht die geplante Luftdichtung.",
+        "A: Der Diffusionswert der Bahn macht den offenen Anschluss unschädlich.",
+        "B: Das Vierziegeleck vor der Freigabe zusammensetzen und prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Luftdichtung entsteht durch die zusammenhängende Ebene einschließlich aller Anschlüsse. Zu B: Die Eckenausbildung ist ein funktionaler Teil der Deckung."
+    },
+    {
+      "id": "lf08-p003",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Feuchtewege statt bloßer Foliennamen / Zusatzmaßnahmen aus dem Dachfall ableiten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l04-e01 und lf08-l19-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Bahnfläche ist unbeschädigt. Am Wandanschluss bleibt eine durchgehende offene Fuge. Situation B: Zwei Dächer haben dieselbe Neigung. Eines besitzt einen einfachen offenen Dachraum, das andere ausgebaute Räume und viele Durchdringungen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Fuge unterbricht die geplante Luftdichtung.",
+        "A: Der Diffusionswert der Bahn macht den offenen Anschluss unschädlich.",
+        "B: Die gleiche Neigung garantiert keine identische Zusatzkonstruktion.",
+        "B: Nur die Farbe der Unterdeckbahn entscheidet."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Luftdichtung entsteht durch die zusammenhängende Ebene einschließlich aller Anschlüsse. Zu B: Die Schutzanforderung entsteht aus dem gesamten Dachfall."
+    },
+    {
+      "id": "lf08-p004",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Das Vierziegeleck untersuchen / Was Mörtel leisten soll",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l14-e01 und lf08-l22-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Ersatzziegel passt ungefähr in Länge und Breite. Sein Eckenschnitt unterscheidet sich vom vorhandenen Modell. Situation B: An einem First sind Mörtelstücke ausgebrochen. Als einzige Maßnahme wird ein neuer Innenverstrich vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ähnliche Außenmaße beweisen die Austauschbarkeit.",
+        "B: Ursache, Bewegung und vorhandene Befestigung untersuchen.",
+        "B: Frischer Mörtel ist automatisch der Nachweis ausreichender Windsogsicherung.",
+        "A: Das Vierziegeleck vor der Freigabe zusammensetzen und prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Eckenausbildung ist ein funktionaler Teil der Deckung. Zu B: Eine Reparatur muss die Ursache und alle vorgesehenen Funktionen erfassen."
+    },
+    {
+      "id": "lf08-p005",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Feuchtewege statt bloßer Foliennamen / Länge und Breite gemeinsam kontrollieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l04-e01 und lf08-l23-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Bahnfläche ist unbeschädigt. Am Wandanschluss bleibt eine durchgehende offene Fuge. Situation B: Die Lattweite passt zum Produkt. Für die Dachbreite müssten die Seitenfalze jedoch über ihren vorgesehenen Bereich auseinandergezogen werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Breiteneinteilung und Ortgangdetails überarbeiten.",
+        "B: Die passende Lattweite beweist automatisch eine passende Deckbreite.",
+        "A: Die Fuge unterbricht die geplante Luftdichtung.",
+        "A: Der Diffusionswert der Bahn macht den offenen Anschluss unschädlich."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Luftdichtung entsteht durch die zusammenhängende Ebene einschließlich aller Anschlüsse. Zu B: Längen- und Breiteneinteilung sind zwei getrennte Prüfungen desselben Daches."
+    },
+    {
+      "id": "lf08-p006",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Zusatzmaßnahmen aus dem Dachfall ableiten / Was Mörtel leisten soll",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l19-e01 und lf08-l22-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zwei Dächer haben dieselbe Neigung. Eines besitzt einen einfachen offenen Dachraum, das andere ausgebaute Räume und viele Durchdringungen. Situation B: An einem First sind Mörtelstücke ausgebrochen. Als einzige Maßnahme wird ein neuer Innenverstrich vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Frischer Mörtel ist automatisch der Nachweis ausreichender Windsogsicherung.",
+        "A: Die gleiche Neigung garantiert keine identische Zusatzkonstruktion.",
+        "A: Nur die Farbe der Unterdeckbahn entscheidet.",
+        "B: Ursache, Bewegung und vorhandene Befestigung untersuchen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Schutzanforderung entsteht aus dem gesamten Dachfall. Zu B: Eine Reparatur muss die Ursache und alle vorgesehenen Funktionen erfassen."
+    },
+    {
+      "id": "lf08-p007",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Das Vierziegeleck untersuchen / Zusatzmaßnahmen aus dem Dachfall ableiten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l14-e01 und lf08-l19-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Ersatzziegel passt ungefähr in Länge und Breite. Sein Eckenschnitt unterscheidet sich vom vorhandenen Modell. Situation B: Zwei Dächer haben dieselbe Neigung. Eines besitzt einen einfachen offenen Dachraum, das andere ausgebaute Räume und viele Durchdringungen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Das Vierziegeleck vor der Freigabe zusammensetzen und prüfen.",
+        "A: Ähnliche Außenmaße beweisen die Austauschbarkeit.",
+        "B: Die gleiche Neigung garantiert keine identische Zusatzkonstruktion.",
+        "B: Nur die Farbe der Unterdeckbahn entscheidet."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Eckenausbildung ist ein funktionaler Teil der Deckung. Zu B: Die Schutzanforderung entsteht aus dem gesamten Dachfall."
+    },
+    {
+      "id": "lf08-p008",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Länge und Breite gemeinsam kontrollieren / Was Mörtel leisten soll",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l23-e01 und lf08-l22-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Lattweite passt zum Produkt. Für die Dachbreite müssten die Seitenfalze jedoch über ihren vorgesehenen Bereich auseinandergezogen werden. Situation B: An einem First sind Mörtelstücke ausgebrochen. Als einzige Maßnahme wird ein neuer Innenverstrich vorgeschlagen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die passende Lattweite beweist automatisch eine passende Deckbreite.",
+        "B: Ursache, Bewegung und vorhandene Befestigung untersuchen.",
+        "B: Frischer Mörtel ist automatisch der Nachweis ausreichender Windsogsicherung.",
+        "A: Breiteneinteilung und Ortgangdetails überarbeiten."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Längen- und Breiteneinteilung sind zwei getrennte Prüfungen desselben Daches. Zu B: Eine Reparatur muss die Ursache und alle vorgesehenen Funktionen erfassen."
+    },
+    {
+      "id": "lf08-p009",
+      "lernfeld": "lf08",
+      "typ": "mc",
+      "thema": "Transfer: Länge und Breite gemeinsam kontrollieren / Das Vierziegeleck untersuchen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf08-l23-e01 und lf08-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die Lattweite passt zum Produkt. Für die Dachbreite müssten die Seitenfalze jedoch über ihren vorgesehenen Bereich auseinandergezogen werden. Situation B: Ein Ersatzziegel passt ungefähr in Länge und Breite. Sein Eckenschnitt unterscheidet sich vom vorhandenen Modell. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Das Vierziegeleck vor der Freigabe zusammensetzen und prüfen.",
+        "B: Ähnliche Außenmaße beweisen die Austauschbarkeit.",
+        "A: Breiteneinteilung und Ortgangdetails überarbeiten.",
+        "A: Die passende Lattweite beweist automatisch eine passende Deckbreite."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Längen- und Breiteneinteilung sind zwei getrennte Prüfungen desselben Daches. Zu B: Die Eckenausbildung ist ein funktionaler Teil der Deckung."
+    }
+  ],
+  "lf09": [
+    {
+      "id": "lf09-p001",
+      "lernfeld": "lf09",
+      "typ": "mc",
+      "thema": "Transfer: Gebindesteigung mit zwei Grenzen / Waagerecht decken, wirksam rechnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf09-l18-e01 und lf09-l20-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein vereinfachter Fall nennt 38° Mindestgebindesteigung und 37° Höchstgebindesteigung. Situation B: Eine Materialliste rechnet bei den genannten Übungsmaßen mit 1800 cm² Deckfläche je Platte. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Außenfläche und die Deckfläche sind hier identisch.",
+        "A: Zwischen den Vorgaben liegt kein gemeinsamer zulässiger Bereich.",
+        "A: 37,5° erfüllt beide Vorgaben.",
+        "B: Die Überdeckungen sind in dieser Fläche noch nicht abgezogen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Ein Mittelwert kann widersprüchliche Grenzen nicht auflösen. Zu B: Seitliche und obere Überdeckung verkleinern die wiederkehrende Deckfläche."
+    },
+    {
+      "id": "lf09-p002",
+      "lernfeld": "lf09",
+      "typ": "mc",
+      "thema": "Transfer: Faserzement eindeutig bestellen / Gebindesteigung mit zwei Grenzen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf09-l15-e01 und lf09-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die vorhandenen Platten sind alt und unbeschriftet. Für eine Anpassung soll sofort eine Ecke abgeschnitten werden. Situation B: Ein vereinfachter Fall nennt 38° Mindestgebindesteigung und 37° Höchstgebindesteigung. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Material vor einer Bearbeitung klären.",
+        "A: Ein ähnliches aktuelles Produkt beweist die Zusammensetzung des Altbestands.",
+        "B: Zwischen den Vorgaben liegt kein gemeinsamer zulässiger Bereich.",
+        "B: 37,5° erfüllt beide Vorgaben."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine Bestandsplatte darf nicht allein anhand ihrer Form als moderner Faserzement eingestuft werden. Zu B: Ein Mittelwert kann widersprüchliche Grenzen nicht auflösen."
+    },
+    {
+      "id": "lf09-p003",
+      "lernfeld": "lf09",
+      "typ": "mc",
+      "thema": "Transfer: Schalung und Vordeckung gemeinsam prüfen / Gebindesteigung mit zwei Grenzen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf09-l16-e01 und lf09-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zwischen den Sparren federn beschädigte Schalungsbretter. Vorgeschlagen wird, lediglich eine neue Bahn darüberzulegen. Situation B: Ein vereinfachter Fall nennt 38° Mindestgebindesteigung und 37° Höchstgebindesteigung. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Vordeckung ersetzt die Tragfähigkeit der Bretter.",
+        "B: Zwischen den Vorgaben liegt kein gemeinsamer zulässiger Bereich.",
+        "B: 37,5° erfüllt beide Vorgaben.",
+        "A: Schalung und Auflager vor dem Eindecken instand setzen beziehungsweise klären."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine zusätzliche Lage löst nicht automatisch das Problem der darunterliegenden Tragkonstruktion. Zu B: Ein Mittelwert kann widersprüchliche Grenzen nicht auflösen."
+    },
+    {
+      "id": "lf09-p004",
+      "lernfeld": "lf09",
+      "typ": "mc",
+      "thema": "Transfer: Faserzement eindeutig bestellen / Waagerecht decken, wirksam rechnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf09-l15-e01 und lf09-l20-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Die vorhandenen Platten sind alt und unbeschriftet. Für eine Anpassung soll sofort eine Ecke abgeschnitten werden. Situation B: Eine Materialliste rechnet bei den genannten Übungsmaßen mit 1800 cm² Deckfläche je Platte. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Überdeckungen sind in dieser Fläche noch nicht abgezogen.",
+        "B: Die Außenfläche und die Deckfläche sind hier identisch.",
+        "A: Material vor einer Bearbeitung klären.",
+        "A: Ein ähnliches aktuelles Produkt beweist die Zusammensetzung des Altbestands."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine Bestandsplatte darf nicht allein anhand ihrer Form als moderner Faserzement eingestuft werden. Zu B: Seitliche und obere Überdeckung verkleinern die wiederkehrende Deckfläche."
+    }
+  ],
+  "lf10": [
+    {
+      "id": "lf10-p001",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Eine Kunststoffbahn vollständig identifizieren / Begrünungsarten nach Nutzung und Pflege auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l10-e01 und lf10-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zwei helle Bahnen sollen miteinander verbunden werden, weil sie ähnlich aussehen. Produktkennzeichnungen fehlen. Situation B: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "A: Zuerst beide Bahnsysteme eindeutig feststellen.",
+        "A: Ähnliche Farbe beweist die Eignung einer gemeinsamen Naht.",
+        "B: Nutzung, Pflege und Zugang müssen neu geklärt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Sichtbare Ähnlichkeit ersetzt keine Material- und Systembestimmung. Zu B: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern."
+    },
+    {
+      "id": "lf10-p002",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Dämmstoff nach Einbau und Belastung auswählen / Begrünungsarten nach Nutzung und Pflege auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l16-e01 und lf10-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Dicke wurde aus der Zeile für 150 mm lichte Weite abgelesen. Der verwendete Dämmstoff gehört jedoch zu einer anderen Tabellenspalte. Situation B: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die passende Dämmstoffspalte muss neu gelesen werden.",
+        "A: Gleiche Auflagerweite macht alle Dämmstoffe gleich belastbar.",
+        "B: Nutzung, Pflege und Zugang müssen neu geklärt werden.",
+        "B: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Ein Tabellenwert gilt nur für seine Zeile, Spalte und Bedingungen. Zu B: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern."
+    },
+    {
+      "id": "lf10-p003",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Eine Kunststoffbahn vollständig identifizieren / Dämmstoff nach Einbau und Belastung auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l10-e01 und lf10-l16-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zwei helle Bahnen sollen miteinander verbunden werden, weil sie ähnlich aussehen. Produktkennzeichnungen fehlen. Situation B: Eine Dicke wurde aus der Zeile für 150 mm lichte Weite abgelesen. Der verwendete Dämmstoff gehört jedoch zu einer anderen Tabellenspalte. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ähnliche Farbe beweist die Eignung einer gemeinsamen Naht.",
+        "B: Die passende Dämmstoffspalte muss neu gelesen werden.",
+        "B: Gleiche Auflagerweite macht alle Dämmstoffe gleich belastbar.",
+        "A: Zuerst beide Bahnsysteme eindeutig feststellen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Sichtbare Ähnlichkeit ersetzt keine Material- und Systembestimmung. Zu B: Ein Tabellenwert gilt nur für seine Zeile, Spalte und Bedingungen."
+    },
+    {
+      "id": "lf10-p004",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Nahtplanung und Brandvorsorge verbinden / Begrünungsarten nach Nutzung und Pflege auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l15-e01 und lf10-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Vor der ersten Bahn“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Nutzung, Pflege und Zugang müssen neu geklärt werden.",
+        "B: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "A: Die Reihenfolge lautet: Untergrund, angrenzende Bauteile und Brandgefährdungen prüfen → Bahnenverlauf und versetzte Stöße planen → Passendes System mit vorgesehenen Nahtmaßen festlegen → Bahn mit dem geeigneten Verfahren verbinden → Verbindung und gefährdete Bereiche planmäßig kontrollieren.",
+        "A: Die Reihenfolge lautet: Passendes System mit vorgesehenen Nahtmaßen festlegen → Bahnenverlauf und versetzte Stöße planen → Untergrund, angrenzende Bauteile und Brandgefährdungen prüfen → Bahn mit dem geeigneten Verfahren verbinden → Verbindung und gefährdete Bereiche planmäßig kontrollieren."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Sicheres Arbeiten und fachgerechte Verbindung werden gemeinsam vorbereitet. Zu B: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern."
+    },
+    {
+      "id": "lf10-p005",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Nahtverfahren aus dem Werkstoff ableiten / Begrünungsarten nach Nutzung und Pflege auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l02-e01 und lf10-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Vor dem Verbinden klären“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "A: Die Reihenfolge lautet: Bahnsystem und Fügeverfahren eindeutig feststellen → Unterlage und Materialverträglichkeit prüfen → Naht vorbereiten und Gerät passend einstellen → Probenaht unter den tatsächlichen Bedingungen herstellen → Naht nach dem vorgesehenen Verfahren kontrollieren.",
+        "A: Die Reihenfolge lautet: Naht vorbereiten und Gerät passend einstellen → Unterlage und Materialverträglichkeit prüfen → Bahnsystem und Fügeverfahren eindeutig feststellen → Probenaht unter den tatsächlichen Bedingungen herstellen → Naht nach dem vorgesehenen Verfahren kontrollieren.",
+        "B: Nutzung, Pflege und Zugang müssen neu geklärt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die richtige Reihenfolge verhindert, dass ungeeignete Parameter unbemerkt auf die Fläche übertragen werden. Zu B: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern."
+    },
+    {
+      "id": "lf10-p006",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Begrünungsarten nach Nutzung und Pflege auswählen / Von der Rollenfläche zur Bestellmenge rechnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l04-e01 und lf10-l13-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Situation B: Für „Bedarf Schritt für Schritt“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Nutzung, Pflege und Zugang müssen neu geklärt werden.",
+        "A: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "B: Die Reihenfolge lautet: Dachfläche und Lagenzahl festlegen → Nutzbare Deckfläche je Rolle aus Überdeckungen bestimmen → Rechnerischen Rollenbedarf ermitteln → Vorgegebene Zuschläge nachvollziehbar berücksichtigen → Bestellmenge auf ganze Rollen aufrunden.",
+        "B: Die Reihenfolge lautet: Rechnerischen Rollenbedarf ermitteln → Nutzbare Deckfläche je Rolle aus Überdeckungen bestimmen → Dachfläche und Lagenzahl festlegen → Vorgegebene Zuschläge nachvollziehbar berücksichtigen → Bestellmenge auf ganze Rollen aufrunden."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern. Zu B: Zwischenergebnisse bleiben ungerundet; erst die kaufbare Einheit bestimmt die Bestellrundung."
+    },
+    {
+      "id": "lf10-p007",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Eine Kunststoffbahn vollständig identifizieren / Nahtplanung und Brandvorsorge verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l10-e01 und lf10-l15-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zwei helle Bahnen sollen miteinander verbunden werden, weil sie ähnlich aussehen. Produktkennzeichnungen fehlen. Situation B: Für „Vor der ersten Bahn“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Ähnliche Farbe beweist die Eignung einer gemeinsamen Naht.",
+        "B: Die Reihenfolge lautet: Untergrund, angrenzende Bauteile und Brandgefährdungen prüfen → Bahnenverlauf und versetzte Stöße planen → Passendes System mit vorgesehenen Nahtmaßen festlegen → Bahn mit dem geeigneten Verfahren verbinden → Verbindung und gefährdete Bereiche planmäßig kontrollieren.",
+        "B: Die Reihenfolge lautet: Passendes System mit vorgesehenen Nahtmaßen festlegen → Bahnenverlauf und versetzte Stöße planen → Untergrund, angrenzende Bauteile und Brandgefährdungen prüfen → Bahn mit dem geeigneten Verfahren verbinden → Verbindung und gefährdete Bereiche planmäßig kontrollieren.",
+        "A: Zuerst beide Bahnsysteme eindeutig feststellen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Sichtbare Ähnlichkeit ersetzt keine Material- und Systembestimmung. Zu B: Sicheres Arbeiten und fachgerechte Verbindung werden gemeinsam vorbereitet."
+    },
+    {
+      "id": "lf10-p008",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Flüssigabdichtung als System verstehen / Begrünungsarten nach Nutzung und Pflege auswählen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l11-e01 und lf10-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Eine Durchführung vorbereiten“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Nutzung, Pflege und Zugang müssen neu geklärt werden.",
+        "B: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "A: Die Reihenfolge lautet: Untergrund und konkretes Abdichtungssystem prüfen → Geometrie und erforderliche Vlieszuschnitte vorbereiten → Untergrund nach Systemvorgabe vorbereiten → Harz und Armierung entsprechend der Vorgabe einarbeiten → Aushärtung und fertige Anschlüsse vor Nutzung kontrollieren.",
+        "A: Die Reihenfolge lautet: Untergrund nach Systemvorgabe vorbereiten → Geometrie und erforderliche Vlieszuschnitte vorbereiten → Untergrund und konkretes Abdichtungssystem prüfen → Harz und Armierung entsprechend der Vorgabe einarbeiten → Aushärtung und fertige Anschlüsse vor Nutzung kontrollieren."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die Reihenfolge verbindet Vorbereitung, Ausführung und Freigabe; konkrete Zeiten kommen aus dem System. Zu B: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern."
+    },
+    {
+      "id": "lf10-p009",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Begrünungsarten nach Nutzung und Pflege auswählen / Die Zusatzschichten eines Gründachs ordnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l04-e01 und lf10-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein extensiv begrüntes Bestandsdach soll ohne weitere Prüfung zu einem Dachgarten mit Sträuchern werden. Situation B: Für „Funktionen über der Abdichtung“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Dränfunktion für überschüssiges Wasser anordnen → Nachgewiesenen Wurzelschutz fortführen → Mechanischen Schutz der Abdichtung vorsehen → Filter zum Rückhalt von Feinteilen einplanen → Vegetationstragschicht und passende Pflanzen aufbauen.",
+        "A: Nutzung, Pflege und Zugang müssen neu geklärt werden.",
+        "A: Vorhandene Begrünung beweist die Eignung für jeden Dachgarten.",
+        "B: Die Reihenfolge lautet: Mechanischen Schutz der Abdichtung vorsehen → Nachgewiesenen Wurzelschutz fortführen → Dränfunktion für überschüssiges Wasser anordnen → Filter zum Rückhalt von Feinteilen einplanen → Vegetationstragschicht und passende Pflanzen aufbauen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine Änderung der Vegetation kann Aufbau, Lasten und Betrieb des Dachs verändern. Zu B: Die Reihenfolge beschreibt die Funktionen des Quellenmodells; Systemprodukte können einzelne Funktionen zusammenfassen."
+    },
+    {
+      "id": "lf10-p010",
+      "lernfeld": "lf10",
+      "typ": "mc",
+      "thema": "Transfer: Nahtverfahren aus dem Werkstoff ableiten / Eine Kunststoffbahn vollständig identifizieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf10-l02-e01 und lf10-l10-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Für „Vor dem Verbinden klären“ ist eine vollständige Arbeitsfolge festzulegen. Situation B: Zwei helle Bahnen sollen miteinander verbunden werden, weil sie ähnlich aussehen. Produktkennzeichnungen fehlen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Reihenfolge lautet: Bahnsystem und Fügeverfahren eindeutig feststellen → Unterlage und Materialverträglichkeit prüfen → Naht vorbereiten und Gerät passend einstellen → Probenaht unter den tatsächlichen Bedingungen herstellen → Naht nach dem vorgesehenen Verfahren kontrollieren.",
+        "A: Die Reihenfolge lautet: Naht vorbereiten und Gerät passend einstellen → Unterlage und Materialverträglichkeit prüfen → Bahnsystem und Fügeverfahren eindeutig feststellen → Probenaht unter den tatsächlichen Bedingungen herstellen → Naht nach dem vorgesehenen Verfahren kontrollieren.",
+        "B: Zuerst beide Bahnsysteme eindeutig feststellen.",
+        "B: Ähnliche Farbe beweist die Eignung einer gemeinsamen Naht."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Die richtige Reihenfolge verhindert, dass ungeeignete Parameter unbemerkt auf die Fläche übertragen werden. Zu B: Sichtbare Ähnlichkeit ersetzt keine Material- und Systembestimmung."
+    }
+  ],
+  "lf13b": [
+    {
+      "id": "lf13b-p001",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Weiche Bedachung richtig verstehen / Kanten, First und Pflege zusammen denken",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l05-e01 und lf13b-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Das Reet ist hart und trocken. Situation B: An vielen Stellen liegen Bindungen frei. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die brandschutztechnische Einordnung bleibt davon unabhängig.",
+        "A: Harte Halme machen Reet automatisch zu einer harten Bedachung.",
+        "B: Den Gesamtzustand und die erforderliche Erneuerung untersuchen.",
+        "B: Alle sichtbaren Bindungen gelten als normale fertige Oberfläche."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Es ist eine Brandschutzeinordnung hinsichtlich Flugfeuer und strahlender Wärme, keine Aussage über die fühlbare Härte. Zu B: Die schützende Deckungsdicke ist abgenommen; Wasser kann die Befestigung erreichen und tiefer in den Aufbau gelangen."
+    },
+    {
+      "id": "lf13b-p002",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Weiche Bedachung richtig verstehen / Sortierung von Bezeichnung unterscheiden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l05-e01 und lf13b-l13-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Das Reet ist hart und trocken. Situation B: Auf dem Lieferschein steht nur langes Reet. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Harte Halme machen Reet automatisch zu einer harten Bedachung.",
+        "B: Für eine vollständige Bezeichnung auch Schnittjahr und Herkunft prüfen.",
+        "B: Die Angabe lang ersetzt sämtliche Angaben zur Herkunft.",
+        "A: Die brandschutztechnische Einordnung bleibt davon unabhängig."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Es ist eine Brandschutzeinordnung hinsichtlich Flugfeuer und strahlender Wärme, keine Aussage über die fühlbare Härte. Zu B: Die Sortierung berücksichtigt zusätzlich die Verteilung kurzer und längerer Halme innerhalb des gesamten Bundes."
+    },
+    {
+      "id": "lf13b-p003",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Weiche Bedachung richtig verstehen / Mit dem Klopfer ausrichten und reparieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l05-e01 und lf13b-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Das Reet ist hart und trocken. Situation B: Eine kleine Tierfraßstelle soll repariert werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Einen passenden Reetpfropfen fachgerecht einarbeiten und den umgebenden Zustand prüfen.",
+        "B: Die Stelle lediglich mit losem Gras stopfen.",
+        "A: Die brandschutztechnische Einordnung bleibt davon unabhängig.",
+        "A: Harte Halme machen Reet automatisch zu einer harten Bedachung."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Es ist eine Brandschutzeinordnung hinsichtlich Flugfeuer und strahlender Wärme, keine Aussage über die fühlbare Härte. Zu B: Lose Halme ausrichten, die Deckung befestigen, danach die Fläche nachputzen."
+    },
+    {
+      "id": "lf13b-p004",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Sortierung von Bezeichnung unterscheiden / Kanten, First und Pflege zusammen denken",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l13-e01 und lf13b-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf dem Lieferschein steht nur langes Reet. Situation B: An vielen Stellen liegen Bindungen frei. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Alle sichtbaren Bindungen gelten als normale fertige Oberfläche.",
+        "A: Für eine vollständige Bezeichnung auch Schnittjahr und Herkunft prüfen.",
+        "A: Die Angabe lang ersetzt sämtliche Angaben zur Herkunft.",
+        "B: Den Gesamtzustand und die erforderliche Erneuerung untersuchen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Sortierung berücksichtigt zusätzlich die Verteilung kurzer und längerer Halme innerhalb des gesamten Bundes. Zu B: Die schützende Deckungsdicke ist abgenommen; Wasser kann die Befestigung erreichen und tiefer in den Aufbau gelangen."
+    },
+    {
+      "id": "lf13b-p005",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Weiche Bedachung richtig verstehen / Werkzeuge und Hilfsmittel auseinanderhalten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l05-e01 und lf13b-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Das Reet ist hart und trocken. Situation B: Der Klopfer soll die Vorlegestange dauerhaft ersetzen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die brandschutztechnische Einordnung bleibt davon unabhängig.",
+        "A: Harte Halme machen Reet automatisch zu einer harten Bedachung.",
+        "B: Die Haltehilfe und das Ausrichtwerkzeug erfüllen verschiedene Aufgaben.",
+        "B: Der Klopfer ist das eigentliche Befestigungsmittel der Deckung."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Es ist eine Brandschutzeinordnung hinsichtlich Flugfeuer und strahlender Wärme, keine Aussage über die fühlbare Härte. Zu B: Vorlegestange und Reethaken halten das lose Reet; der Klopfer richtet es aus und putzt die befestigte Fläche nach."
+    },
+    {
+      "id": "lf13b-p006",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Kanten, First und Pflege zusammen denken / Mit dem Klopfer ausrichten und reparieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l04-e01 und lf13b-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: An vielen Stellen liegen Bindungen frei. Situation B: Eine kleine Tierfraßstelle soll repariert werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Alle sichtbaren Bindungen gelten als normale fertige Oberfläche.",
+        "B: Einen passenden Reetpfropfen fachgerecht einarbeiten und den umgebenden Zustand prüfen.",
+        "B: Die Stelle lediglich mit losem Gras stopfen.",
+        "A: Den Gesamtzustand und die erforderliche Erneuerung untersuchen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die schützende Deckungsdicke ist abgenommen; Wasser kann die Befestigung erreichen und tiefer in den Aufbau gelangen. Zu B: Lose Halme ausrichten, die Deckung befestigen, danach die Fläche nachputzen."
+    },
+    {
+      "id": "lf13b-p007",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Weiche Bedachung richtig verstehen / Schornstein und Katzentreppe einordnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l05-e01 und lf13b-l10-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Das Reet ist hart und trocken. Situation B: Die Katzentreppe wird als Leiter zum Schornstein bezeichnet. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Sie ist eine gemauerte Auskragung des Anschlussdetails.",
+        "B: Sie ist ein loses Arbeitsgerät für den Dachdecker.",
+        "A: Die brandschutztechnische Einordnung bleibt davon unabhängig.",
+        "A: Harte Halme machen Reet automatisch zu einer harten Bedachung."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Es ist eine Brandschutzeinordnung hinsichtlich Flugfeuer und strahlender Wärme, keine Aussage über die fühlbare Härte. Zu B: Die seitliche Auskragung ermöglicht einen geschützten Anschlussbereich für die dicke Reet- beziehungsweise Firstdeckung am Mauerwerk."
+    },
+    {
+      "id": "lf13b-p008",
+      "lernfeld": "lf13b",
+      "typ": "mc",
+      "thema": "Transfer: Sortierung von Bezeichnung unterscheiden / Mit dem Klopfer ausrichten und reparieren",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf13b-l13-e01 und lf13b-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Auf dem Lieferschein steht nur langes Reet. Situation B: Eine kleine Tierfraßstelle soll repariert werden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Stelle lediglich mit losem Gras stopfen.",
+        "A: Für eine vollständige Bezeichnung auch Schnittjahr und Herkunft prüfen.",
+        "A: Die Angabe lang ersetzt sämtliche Angaben zur Herkunft.",
+        "B: Einen passenden Reetpfropfen fachgerecht einarbeiten und den umgebenden Zustand prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Die Sortierung berücksichtigt zusätzlich die Verteilung kurzer und längerer Halme innerhalb des gesamten Bundes. Zu B: Lose Halme ausrichten, die Deckung befestigen, danach die Fläche nachputzen."
+    }
+  ],
+  "lf14": [
+    {
+      "id": "lf14-p001",
+      "lernfeld": "lf14",
+      "typ": "mc",
+      "thema": "Transfer: Nutzungsklasse und Einwirkung auseinanderhalten / Kapillarwasser und Sockelanschluss unterbrechen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf14-l16-e01 und lf14-l11-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Schutzbelag vermindert Temperaturschwankungen. Situation B: Die Bodenbahn endet mehrere Zentimeter vor der Wandsperre. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Der Estrich schließt die Feuchtebrücke automatisch.",
+        "A: Die mechanische Verkehrsbelastung muss trotzdem gesondert berücksichtigt werden.",
+        "A: Mit geringer thermischer Einwirkung verschwindet jede Fahrzeuglast.",
+        "B: Den durchgehenden dichten Anschluss nach dem vorgesehenen System herstellen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Nutzung bezeichnet die Verkehrsart; Einwirkung beschreibt die daraus und aus der Umgebung entstehende Beanspruchung der Abdichtung. Zu B: Ein offener Übergang würde eine Feuchtebrücke bilden und den kapillaren Wasserweg nicht durchgängig unterbrechen."
+    },
+    {
+      "id": "lf14-p002",
+      "lernfeld": "lf14",
+      "typ": "mc",
+      "thema": "Transfer: Gully, Rohr und schwierige Ecke abdichten / Nutzungsklasse und Einwirkung auseinanderhalten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf14-l02-e01 und lf14-l16-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Bei einem Rohr liegt eine Manschette lose auf der Dachbahn. Situation B: Ein Schutzbelag vermindert Temperaturschwankungen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die vorgesehene dichte Verbindung zur Rohr- und Flächenabdichtung herstellen.",
+        "A: Die Form der Manschette allein dichtet ohne Anschluss.",
+        "B: Die mechanische Verkehrsbelastung muss trotzdem gesondert berücksichtigt werden.",
+        "B: Mit geringer thermischer Einwirkung verschwindet jede Fahrzeuglast."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Beim Klemmflansch wird die Bahn mechanisch gepresst, beim Klebeflansch flächig verklebt oder verschweißt. Zu B: Nutzung bezeichnet die Verkehrsart; Einwirkung beschreibt die daraus und aus der Umgebung entstehende Beanspruchung der Abdichtung."
+    },
+    {
+      "id": "lf14-p003",
+      "lernfeld": "lf14",
+      "typ": "mc",
+      "thema": "Transfer: Nutzungsklasse und Einwirkung auseinanderhalten / Kellerwand, Boden und Sockel lückenlos verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf14-l16-e01 und lf14-l18-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Schutzbelag vermindert Temperaturschwankungen. Situation B: Eine Dränplatte wird als einzige Kellerabdichtung vorgesehen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Mit geringer thermischer Einwirkung verschwindet jede Fahrzeuglast.",
+        "B: Schutz oder Dränung und eigentliche Abdichtung getrennt planen.",
+        "B: Eine Dränplatte ersetzt bei jeder Wasserbeanspruchung die Abdichtung.",
+        "A: Die mechanische Verkehrsbelastung muss trotzdem gesondert berücksichtigt werden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Nutzung bezeichnet die Verkehrsart; Einwirkung beschreibt die daraus und aus der Umgebung entstehende Beanspruchung der Abdichtung. Zu B: Das Material verändert sich beim Trocknen; der Auftrag muss zum nachgewiesenen System und dessen Verbrauch passen."
+    },
+    {
+      "id": "lf14-p004",
+      "lernfeld": "lf14",
+      "typ": "mc",
+      "thema": "Transfer: Nutzungsklasse und Einwirkung auseinanderhalten / Geschlossene Wannen gegen anstehendes Wasser planen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf14-l16-e01 und lf14-l19-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Schutzbelag vermindert Temperaturschwankungen. Situation B: Die Wände sind dicht, die Sohlenabdichtung bleibt unverbunden. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Den vorgesehenen dichten Sohlen-Wand-Anschluss herstellen.",
+        "B: Getrennte dichte Flächen ergeben automatisch eine geschlossene Wanne.",
+        "A: Die mechanische Verkehrsbelastung muss trotzdem gesondert berücksichtigt werden.",
+        "A: Mit geringer thermischer Einwirkung verschwindet jede Fahrzeuglast."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Nutzung bezeichnet die Verkehrsart; Einwirkung beschreibt die daraus und aus der Umgebung entstehende Beanspruchung der Abdichtung. Zu B: Nur eine durchgehende Verbindung bildet eine geschlossene Wanne; eine Lücke ermöglicht Wasserzutritt unabhängig von den dichten Flächen."
+    },
+    {
+      "id": "lf14-p005",
+      "lernfeld": "lf14",
+      "typ": "mc",
+      "thema": "Transfer: Nutzungsklasse und Einwirkung auseinanderhalten / Fugenbewegung mit dem Abdichtungsdetail verbinden",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf14-l16-e01 und lf14-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Schutzbelag vermindert Temperaturschwankungen. Situation B: Eine häufig bewegte Fuge wird ohne Bewegungszone starr überklebt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Zusätzliche starre Klebung verhindert jede Bauteilbewegung dauerhaft.",
+        "A: Die mechanische Verkehrsbelastung muss trotzdem gesondert berücksichtigt werden.",
+        "A: Mit geringer thermischer Einwirkung verschwindet jede Fahrzeuglast.",
+        "B: Ein für Art und Größe der Bewegung geeignetes Fugendetail planen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Nutzung bezeichnet die Verkehrsart; Einwirkung beschreibt die daraus und aus der Umgebung entstehende Beanspruchung der Abdichtung. Zu B: Die mittige Dehnzone nimmt Bewegung auf; die seitlichen Flansche werden dicht an die Abdichtung angeschlossen."
+    }
+  ],
+  "lf16": [
+    {
+      "id": "lf16-p001",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Transfer: Der Weg bis ins Erdreich muss passen / Zusatzlasten und Befestigungen gemeinsam prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l06-e01 und lf16-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Leitungen werden mit beliebigen verschiedenen Metallen direkt verbunden. Situation B: Zusätzliche Ballaststeine werden ohne Prüfung der Tragfähigkeit aufgelegt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Alle metallischen Werkstoffe können ohne Prüfung gleichwertig kombiniert werden.",
+        "B: Windsicherung und Tragfähigkeit des Aufbaus gemeinsam prüfen.",
+        "B: Ballast ist schwer und deshalb unabhängig vom Dach immer zulässig.",
+        "A: Geeignete und verträgliche Werkstoffe sowie Verbindungsteile wählen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Ungeeignete Metallkombinationen können durch Kontaktkorrosion die Verbindung und damit die Funktion beeinträchtigen. Zu B: Er erhöht die Last auf dem Dach; Tragfähigkeit und Lastverteilung müssen zur geplanten Sicherung passen."
+    },
+    {
+      "id": "lf16-p002",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Transfer: Der Weg bis ins Erdreich muss passen / Einbauteile nach Funktion und Lastweg ordnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l06-e01 und lf16-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Leitungen werden mit beliebigen verschiedenen Metallen direkt verbunden. Situation B: Ein beliebiger Montagehaken wird als persönlicher Anschlagpunkt verwendet. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Nur einen für diesen Sicherungszweck geeigneten und geprüften Anschlagpunkt einsetzen.",
+        "B: Die Form als Haken beweist die Eignung zur Personensicherung.",
+        "A: Geeignete und verträgliche Werkstoffe sowie Verbindungsteile wählen.",
+        "A: Alle metallischen Werkstoffe können ohne Prüfung gleichwertig kombiniert werden."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Ungeeignete Metallkombinationen können durch Kontaktkorrosion die Verbindung und damit die Funktion beeinträchtigen. Zu B: Sicherungsfunktion, Tragfähigkeit und Zulassung beziehungsweise vorgesehene Verwendung müssen für diesen Zweck nachgewiesen sein."
+    },
+    {
+      "id": "lf16-p003",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Transfer: Zusatzlasten und Befestigungen gemeinsam prüfen / Einbauteile nach Funktion und Lastweg ordnen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l04-e01 und lf16-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Zusätzliche Ballaststeine werden ohne Prüfung der Tragfähigkeit aufgelegt. Situation B: Ein beliebiger Montagehaken wird als persönlicher Anschlagpunkt verwendet. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Form als Haken beweist die Eignung zur Personensicherung.",
+        "A: Windsicherung und Tragfähigkeit des Aufbaus gemeinsam prüfen.",
+        "A: Ballast ist schwer und deshalb unabhängig vom Dach immer zulässig.",
+        "B: Nur einen für diesen Sicherungszweck geeigneten und geprüften Anschlagpunkt einsetzen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Er erhöht die Last auf dem Dach; Tragfähigkeit und Lastverteilung müssen zur geplanten Sicherung passen. Zu B: Sicherungsfunktion, Tragfähigkeit und Zulassung beziehungsweise vorgesehene Verwendung müssen für diesen Zweck nachgewiesen sein."
+    },
+    {
+      "id": "lf16-p004",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Transfer: Der Weg bis ins Erdreich muss passen / Schutzklasse ist eine Planungsgröße",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l06-e01 und lf16-l10-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Leitungen werden mit beliebigen verschiedenen Metallen direkt verbunden. Situation B: Eine Maschenweite wird ohne Schutzklasse aus einem anderen Projekt übernommen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Geeignete und verträgliche Werkstoffe sowie Verbindungsteile wählen.",
+        "A: Alle metallischen Werkstoffe können ohne Prüfung gleichwertig kombiniert werden.",
+        "B: Die Maßvorgabe der vorgesehenen Schutzklasse und Planung zuordnen.",
+        "B: Die Schutzklasse beeinflusst die Ausführung einer Fangeinrichtung nicht."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Ungeeignete Metallkombinationen können durch Kontaktkorrosion die Verbindung und damit die Funktion beeinträchtigen. Zu B: Die Schutzklasse beeinflusst die Anforderungen; eine isolierte Maßzahl beschreibt kein vollständiges Schutzkonzept."
+    },
+    {
+      "id": "lf16-p005",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Transfer: Der Weg bis ins Erdreich muss passen / Blitzschutzprojekt systematisch bearbeiten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l06-e01 und lf16-l13-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Leitungen werden mit beliebigen verschiedenen Metallen direkt verbunden. Situation B: Die Liste enthält nur Leitungen im Dachgrundriss, keine senkrechten Ableitungen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Alle metallischen Werkstoffe können ohne Prüfung gleichwertig kombiniert werden.",
+        "B: Die tatsächlichen Ableitungslängen und zugehörigen Teile ergänzen.",
+        "B: Ein Grundriss enthält automatisch alle senkrechten Leitungslängen.",
+        "A: Geeignete und verträgliche Werkstoffe sowie Verbindungsteile wählen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Ungeeignete Metallkombinationen können durch Kontaktkorrosion die Verbindung und damit die Funktion beeinträchtigen. Zu B: Jeder geplante Abschnitt und jedes benötigte Verbindungsteil muss in der Mengenliste nachvollziehbar enthalten sein."
+    },
+    {
+      "id": "lf16-p006",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "PV-Nachrüstung und vorhandenen Blitzschutz abstimmen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l13-e01, lf16-l16-e01.",
+      "konfidenz": "hoch",
+      "frage": "Auf einem Dach mit bestehender Blitzschutzanlage wird eine PV-Anlage nachgerüstet. Der Lageplan zeigt neue Metallgestelle nahe vorhandener Leitungen; der Ausführungsvorschlag enthält keinen Abgleich mit der Blitzschutzplanung. Welche zwei Maßnahmen gehören zur Klärung? Zwei Aussagen passen.",
+      "optionen": [
+        "Die Ausführung einschließlich erforderlicher Abstände oder Einbindung anhand des konkreten Konzepts prüfen lassen.",
+        "Aus dem Vorhandensein einer alten Anlage die unveränderte Eignung nach jedem Umbau ableiten.",
+        "Alle neuen Gestelle ohne Konzept beliebig mit vorhandenen Leitungen verbinden.",
+        "Neue Lage und metallene Bauteile mit der zuständigen Blitzschutzplanung abstimmen."
+      ],
+      "korrekt": [
+        0,
+        3
+      ],
+      "erklaerung": "Eine Nachrüstung verändert die Anordnung auf dem Dach. Die bestehende Planung muss mit den neuen Bauteilen abgestimmt werden; eine pauschale Aussage über Verbinden oder Abstand ersetzt das konkrete Blitzschutzkonzept nicht."
+    },
+    {
+      "id": "lf16-p007",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Dachfenster mit unterbrochenen Funktionsebenen prüfen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l09-e01, lf16-l17-e01.",
+      "konfidenz": "hoch",
+      "frage": "Nach dem Einbau eines Dachfensters liegt die Unterdeckung seitlich offen. Innen wurde der Anschluss an die Luftdichtheitsebene noch nicht hergestellt. Ein Kollege möchte lediglich die äußere Deckung ergänzen. Welche zwei Punkte müssen geklärt werden? Zwei Aussagen passen.",
+      "optionen": [
+        "Die äußere Deckung übernimmt automatisch jeden inneren Luftdichtheitsanschluss.",
+        "Offene seitliche Unterdeckungsanschlüsse sind durch eine bessere Innenverkleidung erledigt.",
+        "Die wasserführende Ebene außen muss passend an das Fenster angeschlossen werden.",
+        "Auch der innere Anschluss an die Luftdichtheitsebene muss geplant und hergestellt werden."
+      ],
+      "korrekt": [
+        2,
+        3
+      ],
+      "erklaerung": "Die äußere Wasserführung und die innere Luftdichtheit sind unterschiedliche Funktionsebenen. Eine Reparatur nur an der sichtbaren Deckung schließt die beschriebenen Lücken nicht automatisch."
+    },
+    {
+      "id": "lf16-p008",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Durchführung und Befestigung vollständig erfassen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l17-e01, lf16-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine neue Rohrdurchführung soll durch die Dachfläche geführt werden. Der Entwurf nennt eine Manschette, enthält aber weder eine abgestimmte Befestigung noch den Anschluss an die betroffenen inneren Schichten. Welche zwei Rückfragen sind sachgerecht? Zwei Aussagen passen.",
+      "optionen": [
+        "Entfallen innere Anschlüsse grundsätzlich, sobald außen eine Abdeckung vorhanden ist?",
+        "Wie werden die betroffenen Funktionsebenen durchgehend an die Durchführung angeschlossen?",
+        "Wie werden Bauteil und Lasten in der vorgesehenen Konstruktion sicher befestigt beziehungsweise abgetragen?",
+        "Kann die Manschette ungeprüft alle mechanischen Lasten übernehmen?"
+      ],
+      "korrekt": [
+        1,
+        2
+      ],
+      "erklaerung": "Eine Durchführung betrifft mehrere Ebenen und eine mechanische Einbausituation. Die äußere Manschette allein ist weder ein Nachweis der Lastabtragung noch eine automatisch vollständige Lösung für innere Anschlüsse."
+    },
+    {
+      "id": "lf16-p009",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Den Planstand nach einer Dachänderung prüfen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l13-e01, lf16-l16-e01.",
+      "konfidenz": "hoch",
+      "frage": "Bei einer Sanierung werden Dachaufbauten versetzt und neue Leitungswege einer Solaranlage vorgesehen. Die Baustelle arbeitet noch mit dem alten Lageplan der Blitzschutzanlage. Welche zwei Entscheidungen passen? Zwei Aussagen passen.",
+      "optionen": [
+        "Den geänderten Dach- und Anlagenplan vor der weiteren Ausführung mit den zuständigen Planenden abgleichen.",
+        "Die betroffenen Details und Leitungswege auf Grundlage des abgestimmten Konzepts dokumentieren.",
+        "Den alten Plan nur umbenennen, ohne die Lage der Bauteile zu prüfen.",
+        "Neue Leitungswege ausschließlich nach kürzester Strecke ohne weiteren Abgleich festlegen."
+      ],
+      "korrekt": [
+        0,
+        1
+      ],
+      "erklaerung": "Geänderte Aufbauten und Leitungswege können das vorhandene Konzept betreffen. Planabgleich und Dokumentation gehören zusammen; ein alter Plan wird durch eine neue Dateibezeichnung nicht aktuell."
+    },
+    {
+      "id": "lf16-p010",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Gaubenänderung zwischen Gewerken abstimmen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l09-e01, lf16-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine geplante Gaube wird breiter. Die neue Öffnung passt nicht zum bisherigen Holzbauplan; zugleich ist der seitliche Deckungsanschluss unverändert eingezeichnet. Welche zwei Arbeitspunkte folgen daraus? Zwei Aussagen passen.",
+      "optionen": [
+        "Die geänderte Geometrie auch in den Anschluss- und Wasserführungsdetails berücksichtigen.",
+        "Nur die Breitenzahl überschreiben und alle Bauteile ohne weitere Prüfung ausführen.",
+        "Den bisherigen seitlichen Anschluss unabhängig von der neuen Geometrie unverändert übernehmen.",
+        "Die geänderte Öffnung und Tragkonstruktion mit der zuständigen Planung und dem Holzbau abstimmen."
+      ],
+      "korrekt": [
+        0,
+        3
+      ],
+      "erklaerung": "Eine geänderte Öffnung betrifft Tragkonstruktion und Dachanschluss. Die betroffenen Gewerke brauchen denselben freigegebenen Planstand; eine Maßänderung allein löst die Anschlussfragen nicht."
+    },
+    {
+      "id": "lf16-p011",
+      "lernfeld": "lf16",
+      "typ": "mc",
+      "thema": "Fehler an zwei Ebenen gezielt nacharbeiten",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf16-l17-e01, lf16-l09-e01.",
+      "konfidenz": "hoch",
+      "frage": "An einer nachträglich eingebauten Dachöffnung sind außen Feuchtespuren und innen eine spürbare Luftströmung am Anschluss erkennbar. Welche zwei Schlussfolgerungen sind für die Fehlersuche passend? Zwei Aussagen passen.",
+      "optionen": [
+        "Die Luftströmung beweist bereits allein die genaue Ursache der äußeren Feuchtespur.",
+        "Eine sichtbare Silikonfuge ersetzt ohne Prüfung alle Anschlüsse und die Dokumentation.",
+        "Den äußeren Wasserweg und die Anschlussdetails getrennt vom inneren Luftdichtheitsanschluss untersuchen.",
+        "Befunde und betroffene Ebenen dokumentieren, bevor eine passende Nacharbeit festgelegt wird."
+      ],
+      "korrekt": [
+        2,
+        3
+      ],
+      "erklaerung": "Zwei Befunde können unterschiedliche Ursachen oder gemeinsame Schwachstellen haben. Die Untersuchung ordnet sie den Funktionsebenen zu. Aus einer Luftströmung allein folgt noch keine eindeutige Ursache für jeden Feuchteschaden."
+    }
+  ],
+  "lf17": [
+    {
+      "id": "lf17-p001",
+      "lernfeld": "lf17",
+      "typ": "mc",
+      "thema": "Transfer: Flachdachpflege von Reparatur unterscheiden / Den Umfang einer Sanierung begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf17-l09-e01 und lf17-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der Ablauf wurde gereinigt. Daneben bleibt eine offene Naht sichtbar. Situation B: Ein örtlicher Riss wird gefunden; über die Dämmung ist noch nichts bekannt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Den Bestandszustand prüfen, bevor der gesamte Sanierungsumfang festgelegt wird.",
+        "B: Ein einzelner Riss beweist zwingend, dass jede Schicht entfernt werden muss.",
+        "A: Die Reinigung und die noch nötige Instandsetzung getrennt dokumentieren.",
+        "A: Ein gereinigter Ablauf bedeutet, dass auch die offene Naht instand gesetzt ist."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Laubentfernung ist vorbeugende Pflege; das Wiederherstellen einer beschädigten Abdichtungsverbindung ist Instandsetzung. Zu B: Der tatsächliche Zustand von Fläche, Details und darunterliegenden Schichten bestimmt den notwendigen Eingriff. Gleich alte Dächer können unterschiedlich geschädigt sein."
+    },
+    {
+      "id": "lf17-p002",
+      "lernfeld": "lf17",
+      "typ": "mc",
+      "thema": "Transfer: Flachdachpflege von Reparatur unterscheiden / Kiesmengen im Turnhallen-Fall nachvollziehen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf17-l09-e01 und lf17-l19-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Der Ablauf wurde gereinigt. Daneben bleibt eine offene Naht sichtbar. Situation B: Aus 62,5 m³ Kies wird ohne weitere Angabe eine Masse von 62,5 kg übernommen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Kubikmeter und Kilogramm sind ohne weitere Angabe dieselbe Menge.",
+        "A: Die Reinigung und die noch nötige Instandsetzung getrennt dokumentieren.",
+        "A: Ein gereinigter Ablauf bedeutet, dass auch die offene Naht instand gesetzt ist.",
+        "B: Für die Massenberechnung eine geeignete vorgegebene Schüttdichte verwenden."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Laubentfernung ist vorbeugende Pflege; das Wiederherstellen einer beschädigten Abdichtungsverbindung ist Instandsetzung. Zu B: 1250 m² · 0,05 m = 62,5 m³. Für eine Masse in Kilogramm wird zusätzlich eine passende Schüttdichte benötigt."
+    }
+  ],
+  "anhang1": [
+    {
+      "id": "anhang1-p001",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Asbestverdacht richtig einordnen / Eine Quote braucht eine eindeutige Bedeutung",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l14-e01 und anhang1-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Beim Besichtigen eines alten Dachs ist die Zusammensetzung der Platten unbekannt. Situation B: Jemand liest einen hohen Wert für sonstige Verwertung und nennt ihn Recyclingquote. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Kategorien in der Legende getrennt betrachten.",
+        "B: Sonstige Verwertung ohne Prüfung als Recycling bezeichnen.",
+        "A: Den Verdacht an die verantwortliche Leitung weitergeben.",
+        "A: Eine Ecke abbrechen, um Asbest mit dem Auge zu erkennen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Sichtprüfung und Beschädigung sind keine zuverlässige Materialbestimmung. Unnötige Faserfreisetzung muss vermieden werden. Zu B: Verwertung ist der weitere Begriff. Eine Zahl ist erst mit ihrer Kategorie und Bezugsgröße verständlich."
+    },
+    {
+      "id": "anhang1-p002",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Asbestverdacht richtig einordnen / Den richtigen Container begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l14-e01 und anhang1-l07-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Beim Besichtigen eines alten Dachs ist die Zusammensetzung der Platten unbekannt. Situation B: Es gibt einen Container für naturbelassenes Holz. Daneben liegt ein unbekannt beschichtetes Holzteil. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Das Teil wegen seines Holzkerns sofort einwerfen.",
+        "A: Den Verdacht an die verantwortliche Leitung weitergeben.",
+        "A: Eine Ecke abbrechen, um Asbest mit dem Auge zu erkennen.",
+        "B: Behandlung und vorgesehenen Entsorgungsweg klären."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Sichtprüfung und Beschädigung sind keine zuverlässige Materialbestimmung. Unnötige Faserfreisetzung muss vermieden werden. Zu B: Der Grundstoff allein reicht bei behandelten Produkten nicht für eine sichere Zuordnung."
+    },
+    {
+      "id": "anhang1-p003",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Den richtigen Container begründen / Eine Quote braucht eine eindeutige Bedeutung",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l07-e01 und anhang1-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Es gibt einen Container für naturbelassenes Holz. Daneben liegt ein unbekannt beschichtetes Holzteil. Situation B: Jemand liest einen hohen Wert für sonstige Verwertung und nennt ihn Recyclingquote. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Behandlung und vorgesehenen Entsorgungsweg klären.",
+        "A: Das Teil wegen seines Holzkerns sofort einwerfen.",
+        "B: Die Kategorien in der Legende getrennt betrachten.",
+        "B: Sonstige Verwertung ohne Prüfung als Recycling bezeichnen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Der Grundstoff allein reicht bei behandelten Produkten nicht für eine sichere Zuordnung. Zu B: Verwertung ist der weitere Begriff. Eine Zahl ist erst mit ihrer Kategorie und Bezugsgröße verständlich."
+    },
+    {
+      "id": "anhang1-p004",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Asbestverdacht richtig einordnen / Schadstoffe brauchen einen eigenen Arbeitsplan",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l14-e01 und anhang1-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Beim Besichtigen eines alten Dachs ist die Zusammensetzung der Platten unbekannt. Situation B: Neben sauberen Ziegeln liegen unbekannte alte Platten. Die Gruppe möchte alles gemeinsam abfahren lassen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Eine Ecke abbrechen, um Asbest mit dem Auge zu erkennen.",
+        "B: Unbekannte Platten vor der Zuordnung fachkundig beurteilen lassen.",
+        "B: Eine einzelne Atemschutzmaske als vollständige Arbeitsfreigabe ansehen.",
+        "A: Den Verdacht an die verantwortliche Leitung weitergeben."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Sichtprüfung und Beschädigung sind keine zuverlässige Materialbestimmung. Unnötige Faserfreisetzung muss vermieden werden. Zu B: Schutzmaßnahmen sind Teil einer fachlich geplanten Arbeit. Sie ersetzen weder Materialklärung noch Qualifikation."
+    },
+    {
+      "id": "anhang1-p005",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Asbestverdacht richtig einordnen / Einen tragfähigen Kreislauf begründen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l14-e01 und anhang1-l15-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Beim Besichtigen eines alten Dachs ist die Zusammensetzung der Platten unbekannt. Situation B: Material wurde getrennt gesammelt. Ein vorgesehener neuer Einsatz und ein geeigneter Empfänger fehlen noch. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Qualität und Annahme mit einem geeigneten Empfänger klären.",
+        "B: Allein aus der Zahl der Container auf einen geschlossenen Kreislauf schließen.",
+        "A: Den Verdacht an die verantwortliche Leitung weitergeben.",
+        "A: Eine Ecke abbrechen, um Asbest mit dem Auge zu erkennen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Sichtprüfung und Beschädigung sind keine zuverlässige Materialbestimmung. Unnötige Faserfreisetzung muss vermieden werden. Zu B: Der Kreislauf verbindet Sammlung, Aufbereitung und Nachfrage nach einem geeigneten Produkt."
+    },
+    {
+      "id": "anhang1-p006",
+      "lernfeld": "anhang1",
+      "typ": "mc",
+      "thema": "Transfer: Schadstoffe brauchen einen eigenen Arbeitsplan / Eine Quote braucht eine eindeutige Bedeutung",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang1-l06-e01 und anhang1-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Neben sauberen Ziegeln liegen unbekannte alte Platten. Die Gruppe möchte alles gemeinsam abfahren lassen. Situation B: Jemand liest einen hohen Wert für sonstige Verwertung und nennt ihn Recyclingquote. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Sonstige Verwertung ohne Prüfung als Recycling bezeichnen.",
+        "A: Unbekannte Platten vor der Zuordnung fachkundig beurteilen lassen.",
+        "A: Eine einzelne Atemschutzmaske als vollständige Arbeitsfreigabe ansehen.",
+        "B: Die Kategorien in der Legende getrennt betrachten."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Schutzmaßnahmen sind Teil einer fachlich geplanten Arbeit. Sie ersetzen weder Materialklärung noch Qualifikation. Zu B: Verwertung ist der weitere Begriff. Eine Zahl ist erst mit ihrer Kategorie und Bezugsgröße verständlich."
+    }
+  ],
+  "anhang3": [
+    {
+      "id": "anhang3-p001",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Blei: anpassungsfähig und gesundheitlich relevant / Eine Lötverbindung an ihren Voraussetzungen prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l10-e01 und anhang3-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Nach einer Arbeit mit Blei stehen Werkzeugreinigung und die Pause an. Situation B: Eine Übungsprobe zeigt Lot auf der Oberfläche, aber keine gut benetzte Fuge. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die festgelegten Hygiene- und Schutzmaßnahmen vor dem Essen einhalten.",
+        "A: Die gute Formbarkeit als Beleg gesundheitlicher Unbedenklichkeit ansehen.",
+        "B: Sauberkeit, Oxidschichten und passendes Flussmittel prüfen.",
+        "B: Eine dickere sichtbare Lotschicht allein als sicheren Qualitätsnachweis ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Technische Eignung und gesundheitliche Wirkung sind unterschiedliche Fragen desselben Werkstoffs. Zu B: Eine tragfähige Lötung braucht eine passende Benetzung und Verbindung in der Fuge. Sichtbare Lotmenge allein beweist sie nicht."
+    },
+    {
+      "id": "anhang3-p002",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Blei: anpassungsfähig und gesundheitlich relevant / Auch der Wasserweg verbindet Werkstoffe",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l10-e01 und anhang3-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Nach einer Arbeit mit Blei stehen Werkzeugreinigung und die Pause an. Situation B: Eine große Kupferabdeckung entwässert in eine neue Zinkrinne. Beide Teile berühren sich nicht direkt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die gute Formbarkeit als Beleg gesundheitlicher Unbedenklichkeit ansehen.",
+        "B: Die Fließrichtung als mögliche Korrosionsursache prüfen.",
+        "B: Die fehlende direkte Berührung als ausreichenden Schutz ansehen.",
+        "A: Die festgelegten Hygiene- und Schutzmaßnahmen vor dem Essen einhalten."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Technische Eignung und gesundheitliche Wirkung sind unterschiedliche Fragen desselben Werkstoffs. Zu B: Wasser kann Stoffe vom oberen Bauteil auf das untere transportieren. Direkter Metallkontakt ist dafür nicht erforderlich."
+    },
+    {
+      "id": "anhang3-p003",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Auch der Wasserweg verbindet Werkstoffe / Eine Lötverbindung an ihren Voraussetzungen prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l05-e01 und anhang3-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine große Kupferabdeckung entwässert in eine neue Zinkrinne. Beide Teile berühren sich nicht direkt. Situation B: Eine Übungsprobe zeigt Lot auf der Oberfläche, aber keine gut benetzte Fuge. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Sauberkeit, Oxidschichten und passendes Flussmittel prüfen.",
+        "B: Eine dickere sichtbare Lotschicht allein als sicheren Qualitätsnachweis ansehen.",
+        "A: Die Fließrichtung als mögliche Korrosionsursache prüfen.",
+        "A: Die fehlende direkte Berührung als ausreichenden Schutz ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Wasser kann Stoffe vom oberen Bauteil auf das untere transportieren. Direkter Metallkontakt ist dafür nicht erforderlich. Zu B: Eine tragfähige Lötung braucht eine passende Benetzung und Verbindung in der Fuge. Sichtbare Lotmenge allein beweist sie nicht."
+    },
+    {
+      "id": "anhang3-p004",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Aluminium und Titanzink passend verarbeiten / Blei: anpassungsfähig und gesundheitlich relevant",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l14-e01 und anhang3-l10-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Aluminiumanschluss soll unmittelbar an frischem Zementmörtel liegen. Die Ausführung ist noch nicht abgestimmt. Situation B: Nach einer Arbeit mit Blei stehen Werkzeugreinigung und die Pause an. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die gute Formbarkeit als Beleg gesundheitlicher Unbedenklichkeit ansehen.",
+        "A: Die alkalische Beanspruchung und einen geeigneten Schutzanschluss klären.",
+        "A: Die natürliche Oxidschicht als Garantie gegen jeden Mörtelangriff ansehen.",
+        "B: Die festgelegten Hygiene- und Schutzmaßnahmen vor dem Essen einhalten."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine natürliche Schutzschicht wirkt nur innerhalb geeigneter Einsatzbedingungen. Das Detail muss zum Werkstoff passen. Zu B: Technische Eignung und gesundheitliche Wirkung sind unterschiedliche Fragen desselben Werkstoffs."
+    },
+    {
+      "id": "anhang3-p005",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Aluminium und Titanzink passend verarbeiten / Eine Lötverbindung an ihren Voraussetzungen prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l14-e01 und anhang3-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Aluminiumanschluss soll unmittelbar an frischem Zementmörtel liegen. Die Ausführung ist noch nicht abgestimmt. Situation B: Eine Übungsprobe zeigt Lot auf der Oberfläche, aber keine gut benetzte Fuge. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die alkalische Beanspruchung und einen geeigneten Schutzanschluss klären.",
+        "A: Die natürliche Oxidschicht als Garantie gegen jeden Mörtelangriff ansehen.",
+        "B: Sauberkeit, Oxidschichten und passendes Flussmittel prüfen.",
+        "B: Eine dickere sichtbare Lotschicht allein als sicheren Qualitätsnachweis ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine natürliche Schutzschicht wirkt nur innerhalb geeigneter Einsatzbedingungen. Das Detail muss zum Werkstoff passen. Zu B: Eine tragfähige Lötung braucht eine passende Benetzung und Verbindung in der Fuge. Sichtbare Lotmenge allein beweist sie nicht."
+    },
+    {
+      "id": "anhang3-p006",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Nichtrostenden Stahl und seine Oberfläche verstehen / Blei: anpassungsfähig und gesundheitlich relevant",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l02-e01 und anhang3-l10-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Schraubenverbindung ist für ein System vorgesehen. Daraus soll die Verträglichkeit beliebig großer Mischmetallflächen abgeleitet werden. Situation B: Nach einer Arbeit mit Blei stehen Werkzeugreinigung und die Pause an. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Schraubenfreigabe ohne Prüfung auf jede große Blechkombination übertragen.",
+        "B: Die festgelegten Hygiene- und Schutzmaßnahmen vor dem Essen einhalten.",
+        "B: Die gute Formbarkeit als Beleg gesundheitlicher Unbedenklichkeit ansehen.",
+        "A: Die konkrete Paarung einschließlich Feuchte und Flächenverhältnissen prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine einzelne Befestigung und eine große Kontaktfläche stellen unterschiedliche Bedingungen für eine Materialpaarung dar. Zu B: Technische Eignung und gesundheitliche Wirkung sind unterschiedliche Fragen desselben Werkstoffs."
+    },
+    {
+      "id": "anhang3-p007",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Aluminium und Titanzink passend verarbeiten / Auch der Wasserweg verbindet Werkstoffe",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l14-e01 und anhang3-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Ein Aluminiumanschluss soll unmittelbar an frischem Zementmörtel liegen. Die Ausführung ist noch nicht abgestimmt. Situation B: Eine große Kupferabdeckung entwässert in eine neue Zinkrinne. Beide Teile berühren sich nicht direkt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Fließrichtung als mögliche Korrosionsursache prüfen.",
+        "B: Die fehlende direkte Berührung als ausreichenden Schutz ansehen.",
+        "A: Die alkalische Beanspruchung und einen geeigneten Schutzanschluss klären.",
+        "A: Die natürliche Oxidschicht als Garantie gegen jeden Mörtelangriff ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine natürliche Schutzschicht wirkt nur innerhalb geeigneter Einsatzbedingungen. Das Detail muss zum Werkstoff passen. Zu B: Wasser kann Stoffe vom oberen Bauteil auf das untere transportieren. Direkter Metallkontakt ist dafür nicht erforderlich."
+    },
+    {
+      "id": "anhang3-p008",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Nichtrostenden Stahl und seine Oberfläche verstehen / Eine Lötverbindung an ihren Voraussetzungen prüfen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l02-e01 und anhang3-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Schraubenverbindung ist für ein System vorgesehen. Daraus soll die Verträglichkeit beliebig großer Mischmetallflächen abgeleitet werden. Situation B: Eine Übungsprobe zeigt Lot auf der Oberfläche, aber keine gut benetzte Fuge. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Eine dickere sichtbare Lotschicht allein als sicheren Qualitätsnachweis ansehen.",
+        "A: Die konkrete Paarung einschließlich Feuchte und Flächenverhältnissen prüfen.",
+        "A: Die Schraubenfreigabe ohne Prüfung auf jede große Blechkombination übertragen.",
+        "B: Sauberkeit, Oxidschichten und passendes Flussmittel prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine einzelne Befestigung und eine große Kontaktfläche stellen unterschiedliche Bedingungen für eine Materialpaarung dar. Zu B: Eine tragfähige Lötung braucht eine passende Benetzung und Verbindung in der Fuge. Sichtbare Lotmenge allein beweist sie nicht."
+    },
+    {
+      "id": "anhang3-p009",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Nichtrostenden Stahl und seine Oberfläche verstehen / Auch der Wasserweg verbindet Werkstoffe",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l02-e01 und anhang3-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Schraubenverbindung ist für ein System vorgesehen. Daraus soll die Verträglichkeit beliebig großer Mischmetallflächen abgeleitet werden. Situation B: Eine große Kupferabdeckung entwässert in eine neue Zinkrinne. Beide Teile berühren sich nicht direkt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die konkrete Paarung einschließlich Feuchte und Flächenverhältnissen prüfen.",
+        "A: Die Schraubenfreigabe ohne Prüfung auf jede große Blechkombination übertragen.",
+        "B: Die Fließrichtung als mögliche Korrosionsursache prüfen.",
+        "B: Die fehlende direkte Berührung als ausreichenden Schutz ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Eine einzelne Befestigung und eine große Kontaktfläche stellen unterschiedliche Bedingungen für eine Materialpaarung dar. Zu B: Wasser kann Stoffe vom oberen Bauteil auf das untere transportieren. Direkter Metallkontakt ist dafür nicht erforderlich."
+    },
+    {
+      "id": "anhang3-p010",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Nichtrostenden Stahl und seine Oberfläche verstehen / Aluminium und Titanzink passend verarbeiten",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l02-e01 und anhang3-l14-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Eine Schraubenverbindung ist für ein System vorgesehen. Daraus soll die Verträglichkeit beliebig großer Mischmetallflächen abgeleitet werden. Situation B: Ein Aluminiumanschluss soll unmittelbar an frischem Zementmörtel liegen. Die Ausführung ist noch nicht abgestimmt. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "A: Die Schraubenfreigabe ohne Prüfung auf jede große Blechkombination übertragen.",
+        "B: Die alkalische Beanspruchung und einen geeigneten Schutzanschluss klären.",
+        "B: Die natürliche Oxidschicht als Garantie gegen jeden Mörtelangriff ansehen.",
+        "A: Die konkrete Paarung einschließlich Feuchte und Flächenverhältnissen prüfen."
+      ],
+      "korrekt": [
+        1,
+        3
+      ],
+      "erklaerung": "Zu A: Eine einzelne Befestigung und eine große Kontaktfläche stellen unterschiedliche Bedingungen für eine Materialpaarung dar. Zu B: Eine natürliche Schutzschicht wirkt nur innerhalb geeigneter Einsatzbedingungen. Das Detail muss zum Werkstoff passen."
+    },
+    {
+      "id": "anhang3-p011",
+      "lernfeld": "anhang3",
+      "typ": "mc",
+      "thema": "Transfer: Blei: anpassungsfähig und gesundheitlich relevant / Mit der Spannungsreihe eine Paarung beurteilen",
+      "quelle": "Eigene kombinierte Trainingsaufgabe auf Grundlage der Lernwerkstatt-Einheiten anhang3-l10-e01 und anhang3-l13-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für zwei Arbeitsschritte sind Vorschläge zu beurteilen. Situation A: Nach einer Arbeit mit Blei stehen Werkzeugreinigung und die Pause an. Situation B: Für „Tabellenwerte richtig vergleichen“ ist eine vollständige Arbeitsfolge festzulegen. Welche der folgenden Bewertungen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "B: Die Reihenfolge lautet: Die beiden zum Modell gehörenden Werte mit Vorzeichen ablesen → Den Zahlenabstand zwischen den Werten berechnen → Das Ergebnis als Orientierung für die Paarung einordnen → Die konkrete Verbindung anhand von Feuchte und Systemangaben prüfen.",
+        "B: Die Reihenfolge lautet: Das Ergebnis als Orientierung für die Paarung einordnen → Den Zahlenabstand zwischen den Werten berechnen → Die beiden zum Modell gehörenden Werte mit Vorzeichen ablesen → Die konkrete Verbindung anhand von Feuchte und Systemangaben prüfen.",
+        "A: Die festgelegten Hygiene- und Schutzmaßnahmen vor dem Essen einhalten.",
+        "A: Die gute Formbarkeit als Beleg gesundheitlicher Unbedenklichkeit ansehen."
+      ],
+      "korrekt": [
+        0,
+        2
+      ],
+      "erklaerung": "Zu A: Technische Eignung und gesundheitliche Wirkung sind unterschiedliche Fragen desselben Werkstoffs. Zu B: Die Spannungsreihe hilft beim Verständnis. Die tatsächliche Paarung wird unter ihren Einbaubedingungen beurteilt."
+    }
+  ],
+  "wiso": [
+    {
+      "id": "wiso-a001",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit wiso-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine Rechnung nennt zuerst Rabatt und danach Skonto auf den verbleibenden Betrag. Wie wendest du diese vereinbarte Rechenfolge an?",
+      "optionen": [
+        "Beide Prozentsätze addieren und einmal vom Listenpreis abziehen.",
+        "Zuerst den Rabatt berechnen, danach Skonto vom verbleibenden Betrag.",
+        "Skonto immer vom ursprünglichen Listenpreis berechnen."
+      ],
+      "korrekt": [
+        1
+      ],
+      "erklaerung": "Aufeinanderfolgende Nachlässe haben unterschiedliche Bezugsbeträge. Hier ist die Reihenfolge ausdrücklich vorgegeben."
+    },
+    {
+      "id": "wiso-a002",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit wiso-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für einen Dachauftrag sollen Betrieb und Kunde unterschiedliche Leistungsbeschreibungen verwenden. Welche Vorbereitung schafft eine eindeutige Grundlage?",
+      "optionen": [
+        "Nur die Materialfarbe festhalten.",
+        "Erst nach der Ausführung über die Leistung sprechen.",
+        "Die vereinbarte Leistung und Vertragsgrundlage vor der Ausführung klären."
+      ],
+      "korrekt": [
+        2
+      ],
+      "erklaerung": "Eine nachvollziehbare Vereinbarung beschreibt das geschuldete Werk und die maßgebende Vertragsgrundlage."
+    },
+    {
+      "id": "wiso-a003",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit wiso-l01-e01.",
+      "konfidenz": "hoch",
+      "frage": "Im Berichtsheft steht nur „gearbeitet“. Welche Ergänzung macht den Eintrag für die Ausbildung nachvollziehbarer?",
+      "optionen": [
+        "Tätigkeit, bearbeitetes Thema und erlernten Ablauf sachlich beschreiben.",
+        "Den Eintrag durch private Angaben ersetzen.",
+        "Eine andere Woche unverändert kopieren."
+      ],
+      "korrekt": [
+        0
+      ],
+      "erklaerung": "Ein Ausbildungsnachweis dokumentiert die tatsächlich ausgeführten und vermittelten Ausbildungsinhalte."
+    },
+    {
+      "id": "wiso-a004",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit wiso-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Zwei Personen nennen „Innung“ und „Handwerkskammer“ als dieselbe Einrichtung. Welche Vorgehensweise hilft beim Zuordnen einer Anfrage?",
+      "optionen": [
+        "Die Namen ohne Prüfung austauschen.",
+        "Aufgaben und Zuständigkeit der jeweiligen Einrichtung getrennt prüfen.",
+        "Jede Anfrage an den Materiallieferanten schicken."
+      ],
+      "korrekt": [
+        1
+      ],
+      "erklaerung": "Verschiedene Einrichtungen haben verschiedene Aufgaben. Die zuständige Stelle wird anhand des konkreten Anliegens bestimmt."
+    },
+    {
+      "id": "wiso-a005",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Anwendung im Ausbildungsalltag",
+      "quelle": "Eigene Trainingsaufgabe zur Lernwerkstatt-Einheit wiso-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Bei einer betrieblichen Unterweisung soll ein Beispiel zur gesetzlichen Unfallversicherung besprochen werden. Welches Beispiel passt als möglicher Arbeitsunfall?",
+      "optionen": [
+        "Ein Skiunfall im privaten Urlaub.",
+        "Jeder Unfall allein wegen des Berufs Dachdecker.",
+        "Ein Gerüststurz bei der versicherten Arbeit."
+      ],
+      "korrekt": [
+        2
+      ],
+      "erklaerung": "Der Bezug zur versicherten Tätigkeit ist entscheidend. Eine Berufsbezeichnung allein macht nicht jeden privaten Unfall zu einem Arbeitsunfall."
+    },
+    {
+      "id": "wiso-a006",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Berichtsheft nachvollziehbar führen",
+      "quelle": "Eigene Anwendungsaufgabe zur Lernwerkstatt-Einheit wiso-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Im Ausbildungsnachweis fehlen die vergangenen zwei Wochen. Du möchtest sie mit frei erfundenen Baustellenarbeiten auffüllen. Wie gehst du passend vor?",
+      "optionen": [
+        "Die tatsächlich bearbeiteten Inhalte rekonstruieren und mit der ausbildenden Person klären.",
+        "Beliebige Arbeiten eintragen, solange die Seiten vollständig sind.",
+        "Den Nachweis erst nach der Abschlussprüfung beginnen.",
+        "Den Nachweis durch eine bloße Anwesenheitsliste ersetzen."
+      ],
+      "korrekt": [
+        0
+      ],
+      "erklaerung": "Der Ausbildungsnachweis beschreibt tatsächlich bearbeitete Inhalte. Fehlende Einträge werden nachvollziehbar nachgearbeitet und kontrolliert; erfundene Inhalte erfüllen diesen Zweck nicht."
+    },
+    {
+      "id": "wiso-a007",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Aufgaben der Tarifpartner zuordnen",
+      "quelle": "Eigene Anwendungsaufgabe zur Lernwerkstatt-Einheit wiso-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Dein Kollege möchte eine neue branchenweite Lohnregelung aushandeln und fragt nur bei der Urlaubskasse an. Welche Zuständigkeit erklärst du?",
+      "optionen": [
+        "Die Urlaubskasse erlässt allein neue Tariflöhne.",
+        "Gewerkschaft und Arbeitgeberseite handeln Tarifverträge aus; die Sozialkasse führt vereinbarte Verfahren durch.",
+        "Jeder Azubi legt den Tariflohn für die gesamte Branche fest.",
+        "Ein Manteltarifvertrag ersetzt jede einzelne Lohnverhandlung automatisch."
+      ],
+      "korrekt": [
+        1
+      ],
+      "erklaerung": "Tarifpartner handeln die Arbeitsbedingungen aus. Die SOKA-DACH führt unter anderem das Urlaubskassenverfahren durch; das ist eine andere Aufgabe."
+    },
+    {
+      "id": "wiso-a008",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Ein Weiterbildungsziel begründen",
+      "quelle": "Eigene Anwendungsaufgabe zur Lernwerkstatt-Einheit wiso-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine Gesellin möchte ein neues Abdichtungsverfahren sicher anwenden. Sie möchte zunächst keine höhere Berufsqualifikation erwerben. Welchen Bildungsweg ordnest du ihrem Ziel zu?",
+      "optionen": [
+        "Umschulung in einen anderen Beruf.",
+        "Nur die vollständige Meisterprüfung kommt infrage.",
+        "Anpassungsfortbildung zur Aktualisierung beruflicher Fähigkeiten.",
+        "Der Ausbildungsnachweis des ersten Lehrjahrs ersetzt den Lehrgang."
+      ],
+      "korrekt": [
+        2
+      ],
+      "erklaerung": "Eine Anpassungsfortbildung aktualisiert berufliche Kenntnisse und Fähigkeiten. Eine Aufstiegsfortbildung verfolgt eine höhere Qualifikation; eine Umschulung führt in einen anderen Beruf."
+    },
+    {
+      "id": "wiso-a009",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Pflichten im Ausbildungsalltag anwenden",
+      "quelle": "Eigene Anwendungsaufgabe zur Lernwerkstatt-Einheit wiso-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Der Betrieb plant einen normalen Baustelleneinsatz während deines verbindlichen Berufsschulunterrichts. Welche Aussage passt zu den behandelten Ausbildungspflichten?",
+      "optionen": [
+        "Berufsschule ist grundsätzlich freiwillig.",
+        "Der Betrieb muss für den Unterricht freistellen; du musst am Unterricht teilnehmen.",
+        "Ein voller Auftragskalender hebt die Schulpflicht immer auf.",
+        "Du darfst die Unterrichtszeit ohne Absprache als Urlaub buchen."
+      ],
+      "korrekt": [
+        1
+      ],
+      "erklaerung": "Zur Ausbildung gehören die Freistellung für den Unterricht durch den Betrieb und die Teilnahme des Azubis an der Berufsschule. Die jeweiligen Pflichten greifen ineinander."
+    },
+    {
+      "id": "wiso-a010",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Jugendliche und Erwachsene unterscheiden",
+      "quelle": "Eigene Anwendungsaufgabe zur Lernwerkstatt-Einheit wiso-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für einen sechzehnjährigen Azubi soll ein Arbeitsplan aus einer Vorlage für volljährige Gesellen übernommen werden. Was prüfst du zuerst?",
+      "optionen": [
+        "Ob die Schriftgröße der Vorlage zur Baustelle passt.",
+        "Ob alle erwachsenen Gesellen derselben Gewerkschaft angehören.",
+        "Die besonderen Schutzregeln für Jugendliche, statt Erwachsenenregeln ungeprüft zu übernehmen.",
+        "Nur die Farbe des Berichtshefts."
+      ],
+      "korrekt": [
+        2
+      ],
+      "erklaerung": "Bei Arbeitszeit- und Schutzfragen ist das Alter entscheidend. Für Jugendliche gelten zusätzliche Schutzregeln; eine Erwachsenenregel darf nicht ungeprüft übertragen werden."
+    },
+    {
+      "id": "wiso-p001",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Berufswechsel und Ausbildungspflichten einordnen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l01-e01, wiso-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Ein Azubi möchte nach der Probezeit die Dachdeckerausbildung aufgeben und einen anderen Beruf lernen. Bis zum wirksamen Ausbildungsende will er weder zur Berufsschule gehen noch den Nachweis führen. Welche zwei Bewertungen passen zu den behandelten Regeln? Zwei Aussagen passen.",
+      "optionen": [
+        "Die Kündigungsregeln der Probezeit gelten nach deren Ende unverändert weiter.",
+        "Für die Aufgabe beziehungsweise den Wechsel des Ausbildungsberufs ist die dafür vorgesehene Kündigungsregel mit vier Wochen Frist zu prüfen.",
+        "Bis zum wirksamen Ausbildungsende bestehen die Ausbildungspflichten weiter.",
+        "Die bloße Absicht eines Berufswechsels beendet sofort alle Pflichten."
+      ],
+      "korrekt": [
+        1,
+        2
+      ],
+      "erklaerung": "Zeitpunkt und Anlass bestimmen die einschlägige Kündigungsregel. Die beabsichtigte spätere Änderung hebt die laufenden Lern-, Schul- und Nachweispflichten nicht bereits sofort auf; Form und konkreter Fall werden geklärt."
+    },
+    {
+      "id": "wiso-p002",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Rabatt und Skonto nacheinander rechnen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Eine Rechnung beträgt 1.000 € netto. Vereinbart sind 10 % Rabatt und anschließend 2 % Skonto auf den rabattierten Nettobetrag bei fristgerechter Zahlung. Welche zwei Aussagen stimmen? Zwei Aussagen passen.",
+      "optionen": [
+        "Nach dem Rabatt verbleiben 900 € netto.",
+        "Bei erfüllten Skontobedingungen beträgt der Zahlbetrag 882 € netto.",
+        "Beide Prozentsätze werden stets zu 12 % addiert; es bleiben 880 €.",
+        "Das Skonto beträgt hier 20 €, weil es auf den ursprünglichen Listenbetrag angewandt wird."
+      ],
+      "korrekt": [
+        0,
+        1
+      ],
+      "erklaerung": "Erst Rabatt: 1.000 × 0,90 = 900 €. Anschließend Skonto: 900 × 0,98 = 882 €. Die Skontobasis ist ausdrücklich der rabattierte Betrag; Umsatzsteuer ist in dieser Nettorechnung nicht enthalten."
+    },
+    {
+      "id": "wiso-p003",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Lohnrechnung und Versicherungsfinanzierung unterscheiden",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l04-e01, wiso-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für eine vereinfachte Übung werden von 3.000 € Bruttolohn ausdrücklich 20 % Arbeitnehmer-Sozialbeiträge und 10 % Lohnsteuer abgezogen; weitere Abzüge gibt es im Modell nicht. Zusätzlich fragt ein Kollege nach dem Beitrag zur gesetzlichen Unfallversicherung. Welche zwei Aussagen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "Der Beitrag zur gesetzlichen Unfallversicherung wird grundsätzlich vom Arbeitgeber getragen und ist hier kein zusätzlicher Arbeitnehmerabzug.",
+        "Im vorgegebenen Modell verbleiben 2.700 €, weil die Sozialbeiträge entfallen.",
+        "Die gesetzliche Unfallversicherung wird grundsätzlich vollständig vom Azubi allein finanziert.",
+        "Nach den vorgegebenen Abzügen verbleiben rechnerisch 2.100 €."
+      ],
+      "korrekt": [
+        0,
+        3
+      ],
+      "erklaerung": "Für das vereinfachte Modell sind 3.000 − 600 − 300 = 2.100 € zu rechnen. Die tatsächliche Lohnabrechnung kann weitere Einzelheiten enthalten. Die Unfallversicherung unterscheidet sich in der Finanzierung von den typischen geteilten Sozialbeiträgen."
+    },
+    {
+      "id": "wiso-p004",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Werkvertrag und Mangelbearbeitung verbinden",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l05-e01.",
+      "konfidenz": "hoch",
+      "frage": "Ein Betrieb hat die Fertigstellung einer Dachdeckung vereinbart. Nach der Abnahme rügt der Kunde einen konkreten Ausführungsfehler. Welche zwei Einordnungen passen zusammen? Zwei Aussagen passen.",
+      "optionen": [
+        "Die Abnahme beseitigt automatisch sämtliche Mängelrechte.",
+        "Aus jeder Mängelrüge folgt ohne weitere Prüfung sofort die kostenlose komplette Neueindeckung.",
+        "Die vereinbarte Herstellung eines fertigen Werks kennzeichnet hier einen Werkvertrag.",
+        "Bei einem behebbaren Mangel ist zunächst das Recht auf Nacherfüllung beziehungsweise dessen Voraussetzungen zu prüfen."
+      ],
+      "korrekt": [
+        2,
+        3
+      ],
+      "erklaerung": "Der geschuldete Erfolg beschreibt den Werkvertrag. Eine Abnahme beendet nicht pauschal alle Mängelrechte. Bei einem behebbaren Mangel steht grundsätzlich die Prüfung der Nacherfüllung und ihrer Voraussetzungen am Anfang; der konkrete Fall bleibt maßgebend."
+    },
+    {
+      "id": "wiso-p005",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Zwei Fortbildungsziele begründet zuordnen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l06-e01.",
+      "konfidenz": "hoch",
+      "frage": "Ein Geselle will nur ein neues Verlegeverfahren erlernen. Eine Kollegin möchte dagegen eine höhere berufliche Qualifikation mit Meisterabschluss erreichen. Welche zwei Zuordnungen stimmen? Zwei Aussagen passen.",
+      "optionen": [
+        "Ein kurzer Kurs und eine höhere Qualifikation sind immer derselbe Bildungsweg.",
+        "Das Aktualisieren der Verlegetechnik gehört zur Anpassungsfortbildung.",
+        "Der angestrebte Meisterabschluss gehört zur Aufstiegsfortbildung.",
+        "Beide Vorhaben sind allein wegen eines anderen Kursortes automatisch Umschulungen."
+      ],
+      "korrekt": [
+        1,
+        2
+      ],
+      "erklaerung": "Entscheidend ist das Ziel: Fähigkeiten im bestehenden Beruf aktualisieren oder eine höhere Qualifikation erwerben. Ort und Dauer eines Kurses reichen zur Einordnung nicht aus; eine Umschulung führt in einen anderen Beruf."
+    },
+    {
+      "id": "wiso-p006",
+      "lernfeld": "wiso",
+      "typ": "mc",
+      "thema": "Ausbildung und Branchenorganisation auseinanderhalten",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten wiso-l02-e01, wiso-l03-e01.",
+      "konfidenz": "hoch",
+      "frage": "Ein Betrieb will fehlende Ausbildungsinhalte durch bloße Berichtshefteinträge ersetzen. Ein Kollege meint außerdem, die SOKA-DACH handle allein den Tariflohn aus. Welche zwei Korrekturen treffen zu? Zwei Aussagen passen.",
+      "optionen": [
+        "Der Betrieb muss die erforderlichen Ausbildungsinhalte tatsächlich vermitteln; ein Nachweiseintrag ersetzt das Lernen nicht.",
+        "Tarifverträge werden von Gewerkschaft und Arbeitgeberseite ausgehandelt; das ist von den Verfahren der Sozialkasse zu unterscheiden.",
+        "Ein vollständig beschriebenes Berichtsheft beweist unabhängig von der tatsächlichen Ausbildung alle Fertigkeiten.",
+        "Ein Urlaubskassenverfahren ersetzt automatisch den individuellen Ausbildungsvertrag."
+      ],
+      "korrekt": [
+        0,
+        1
+      ],
+      "erklaerung": "Ausbildungsnachweise dokumentieren tatsächliche Ausbildung. Die Vermittlung bleibt eine Pflicht des Betriebs. Tarifverhandlung und die Durchführung von Branchenverfahren sind unterschiedliche Aufgaben; die Sozialkasse ersetzt keinen Ausbildungsvertrag."
+    }
+  ],
+  "lf12": [
+    {
+      "id": "lf12-p001",
+      "lernfeld": "lf12",
+      "typ": "mc",
+      "thema": "Unterlage und Bewegungsweg gemeinsam prüfen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf12-l03-e01, lf12-l15-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für eine Metalldeckung verlangt das ausgewählte System eine geeignete Trennlage auf der vorhandenen behandelten Holzschalung und bewegliche Befestigungsbereiche. Ein Vorschlag streicht die Trennlage und fixiert jede Schar starr an beiden Enden. Welche zwei Einwände treffen zu? Zwei Aussagen passen.",
+      "optionen": [
+        "Eine starre Fixierung ersetzt sämtliche Funktionen der Trennlage.",
+        "Temperaturbewegungen entfallen automatisch durch die Behandlung der Schalung.",
+        "Die vorgesehene Trennlage muss hinsichtlich Werkstoffverträglichkeit und Systemaufbau berücksichtigt werden.",
+        "Eine beidseitige starre Fixierung kann den vorgesehenen Bewegungsweg behindern."
+      ],
+      "korrekt": [
+        2,
+        3
+      ],
+      "erklaerung": "Unterlage und Befestigung erfüllen unterschiedliche Funktionen. Eine Trennlage löst keine Behinderung der Temperaturbewegung; eine Befestigung ersetzt keine erforderliche Trennlage. Beides wird im ausgewählten System geprüft."
+    },
+    {
+      "id": "lf12-p002",
+      "lernfeld": "lf12",
+      "typ": "mc",
+      "thema": "Freie Dehnung und Befestigung unterscheiden",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf12-l20-e01, lf12-l02-e01.",
+      "konfidenz": "hoch",
+      "frage": "Für eine 8 m lange Metallschar werden ausdrücklich α = 0,022 mm/(m·K) und eine Temperaturänderung von 50 K vorgegeben. Im Entwurf fehlen außerdem die vorgesehenen Gleitbereiche. Welche zwei Aussagen passen? Zwei Aussagen passen.",
+      "optionen": [
+        "Aus der freien Längenänderung folgt, dass jede Schar an allen Punkten starr fixiert wird.",
+        "Die rechnerische freie Längenänderung beträgt 8,8 mm.",
+        "Der Befestigungsentwurf muss die vorgesehene Bewegung im konkreten System ermöglichen.",
+        "Die freie Längenänderung beträgt 8,8 m."
+      ],
+      "korrekt": [
+        1,
+        2
+      ],
+      "erklaerung": "Δl = 0,022 × 8 × 50 = 8,8 mm. Das Ergebnis beschreibt freie Längenänderung, keine vollständige Befestigungsplanung. Festpunkt und Bewegungsbereiche werden nach dem konkreten System abgestimmt."
+    },
+    {
+      "id": "lf12-p003",
+      "lernfeld": "lf12",
+      "typ": "mc",
+      "thema": "Mengenrechnung und Anschlussplanung trennen",
+      "quelle": "Eigene zusammenhängende Transferaufgabe auf Grundlage der Lernwerkstatt-Einheiten lf12-l01-e01, lf12-l04-e01.",
+      "konfidenz": "hoch",
+      "frage": "Ein rechteckiges Übungsfeld ist 4 m breit und 6 m lang. Die nutzbare Scharbreite wird mit 0,50 m vorgegeben. Rand- und Anschlusszuschläge bleiben bei der ersten Rechnung unberücksichtigt. Ein Kollege will mit dem Ergebnis zugleich die Anschlüsse freigeben. Welche zwei Aussagen sind richtig? Zwei Aussagen passen.",
+      "optionen": [
+        "Für die Feldbreite ergeben sich acht Scharen und insgesamt 48 m geometrische Scharlänge.",
+        "Die Anschlussdetails und die dafür erforderlichen Zuschläge müssen zusätzlich geplant werden.",
+        "Es ergeben sich zwölf Scharen, weil die Scharbreite durch die Feldlänge geteilt wird.",
+        "Die geometrische Scharlänge beweist bereits die Funktion aller Anschlüsse."
+      ],
+      "korrekt": [
+        0,
+        1
+      ],
+      "erklaerung": "4 / 0,50 = 8 Scharen; 8 × 6 = 48 m. Diese Mengenrechnung enthält ausdrücklich keine Rand- und Anschlusszuschläge und bewertet weder Wasserführung noch Beweglichkeit des Details."
+    }
+  ]
+}

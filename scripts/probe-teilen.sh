@@ -19,9 +19,9 @@ else
   printf '%s\n' "$ausgabe"
   exit 1
 fi
-link="$(printf '%s' "$ausgabe" | node -e 'let s="";process.stdin.on("data",d=>s+=d);process.stdin.on("end",()=>{const urls=s.match(/https:\/\/[a-z0-9.-]+\.pages\.dev\b/g);if(!urls?.length)process.exit(1);console.log(urls.at(-1));});')"
+link="https://${projekt}.pages.dev/"
 printf '%s\n' "$link" > .probe-link.txt
 if command -v pbcopy >/dev/null 2>&1; then printf '%s' "$link" | pbcopy || true; fi
-echo "Fertig! Diesen Link deinem Kollegen schicken:"
+echo "Fertig! Diese dauerhafte Adresse deinem Kollegen schicken (auch für spätere Updates):"
 printf '%s\n' "$link"
 echo "Auf dem Mac ist der Link auch in deiner Zwischenablage: In WhatsApp einfach Einfügen."

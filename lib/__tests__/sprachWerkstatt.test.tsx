@@ -4,6 +4,7 @@ import { DEUTSCH_EINHEITEN, ENGLISCH_EINHEITEN, leereSprachAntwort, leseSprachSt
 import { SprachWerkstatt } from "@/components/sprache/SprachWerkstatt";
 import { appStorage } from "@/lib/lernSpeicher";
 import { DIAGNOSE_KEY, ladeLernsignale } from "@/lib/lerndiagnose";
+import { loadReviewRecords, REVIEW_KEY } from "@/lib/review";
 
 beforeEach(()=>{appStorage.clear();window.history.replaceState(null,"","/sprache/deutsch");vi.spyOn(window,"scrollTo").mockImplementation(()=>{});});
 afterEach(()=>{cleanup();vi.restoreAllMocks();vi.unstubAllGlobals();});
@@ -48,6 +49,52 @@ describe("Sprachwerkstatt: überprüfbare Aufgaben",()=>{
 });
 
 describe("Sprachwerkstatt: unterbrechen und fortsetzen",()=>{
+  it("speichert neue Antworten als einmalige Wiederholung und setzt eine unterbrochene Übernahme fort",()=>{
+    window.history.replaceState(null,"","/sprache/deutsch#auftrag");
+    const first=render(<SprachWerkstatt sprache="deutsch"/>);
+    fireEvent.click(screen.getByRole("radio",{name:"Die Rinnenstücke kontrollieren"}));
+    fireEvent.click(screen.getByRole("button",{name:"Antwort vergleichen"}));
+    const key="sprache:deutsch:auftrag-1:v1";
+    const vorher=loadReviewRecords()[key];
+    expect(vorher.verlauf).toHaveLength(1);
+    expect(vorher.ref.lernzielIds).toEqual(["deutsch-auftrag"]);
+    expect(vorher.verlauf[0]).toMatchObject({bewertung:"richtig",hilfen:[]});
+    const gespeichert=leseSprachStand(DEUTSCH_EINHEITEN[0]).antworten["auftrag-1"];
+    expect(gespeichert.reviews?.[0].versuchId).toBe(vorher.verlauf[0].versuchId);
+    first.unmount();
+    // A checked answer already has its immutable event before the scheduler
+    // commits. Reopening completes this write without making another attempt.
+    appStorage.removeItem(REVIEW_KEY);
+    const wieder=render(<SprachWerkstatt sprache="deutsch"/>);
+    expect(loadReviewRecords()[key]).toEqual(vorher);
+    wieder.unmount();render(<SprachWerkstatt sprache="deutsch"/>);
+    expect(loadReviewRecords()[key].verlauf).toHaveLength(1);
+    expect(ladeLernsignale()).toHaveLength(1);
+  });
+  it("erfindet aus früher bewerteten Sprachentwürfen keine Wiederholungserfolge",()=>{
+    const e=DEUTSCH_EINHEITEN[0];
+    const alt=leseSprachStand(e);
+    appStorage.setItem(sprachKey(e),JSON.stringify({...alt,antworten:{"auftrag-1":{...leereSprachAntwort(),wahl:"1",geprueft:true}}}));
+    window.history.replaceState(null,"","/sprache/deutsch#auftrag");
+    render(<SprachWerkstatt sprache="deutsch"/>);
+    expect(screen.getByText("Das passt.")).toBeTruthy();
+    expect(loadReviewRecords()).toEqual({});
+    expect(appStorage.getItem(REVIEW_KEY)).toBeNull();
+  });
+  it("hält eine weitere Antwort nach der Erklärung als neuen unterstützten Versuch fest",()=>{
+    window.history.replaceState(null,"","/sprache/deutsch#auftrag");
+    render(<SprachWerkstatt sprache="deutsch"/>);
+    fireEvent.click(screen.getByRole("radio",{name:"Die Rinnen heute montieren"}));
+    fireEvent.click(screen.getByRole("button",{name:"Antwort vergleichen"}));
+    fireEvent.click(screen.getByRole("button",{name:"Noch einmal versuchen"}));
+    fireEvent.click(screen.getByRole("radio",{name:"Die Rinnenstücke kontrollieren"}));
+    fireEvent.click(screen.getByRole("button",{name:"Antwort vergleichen"}));
+    const v=loadReviewRecords()["sprache:deutsch:auftrag-1:v1"].verlauf;
+    expect(v).toHaveLength(2);
+    expect(v[0].bewertung).toBe("falsch");
+    expect(v[1]).toMatchObject({bewertung:"richtig",hilfen:["rueckmeldung"],nachErklaerung:true});
+    expect(v[1].versuchId).not.toBe(v[0].versuchId);
+  });
   it("folgt einer neuen Einheit in der Adresse und beendet Vorlesen beim Verlassen",()=>{
     const cancel=vi.fn();vi.stubGlobal("speechSynthesis",{cancel,speak:vi.fn()});
     window.history.replaceState(null,"","/sprache/englisch#werkzeuge");
