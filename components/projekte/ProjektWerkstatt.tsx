@@ -10,6 +10,8 @@ import type { LernHinweis } from "@/lib/lernHinweise";
 import { projektAktivNacharbeit, projektZahlNacharbeit } from "@/lib/lernNacharbeit";
 import { aktivitaetTexte } from "@/lib/aktivitaeten";
 import { DrawCard } from "@/components/aufgaben/DrawCard";
+import { PraxisVorbereitung } from "./PraxisVorbereitung";
+import { LernLink } from "@/components/LernLink";
 import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage } from "@/lib/lernSpeicher";
@@ -26,10 +28,14 @@ function ProjektAktivitaet({name,projekt,stand,onAntwort,onPruefen,onBegriff}:{n
 function letzteSignale(s:ProjektStand,key:string){return (s.lernSignale??[]).filter(r=>r.aufgabeId===`projekt-${s.projekt.id}-${key}`).slice(-1);}
 function letzteHinweise(s:ProjektStand,key:string):LernHinweis[]{return letzteSignale(s,key).map(r=>({...r,hinweis:r.hinweis??"Vergleiche die Erklärung und übe den Zusammenhang erneut."}));}
 function letzteHilfen(s:ProjektStand,key:string):string[]{return letzteSignale(s,key)[0]?.hilfen??[];}
-function gespeicherteAuswahl(): string {return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id),appStorage.getItem(AUSWAHL_KEY));}
+function gespeicherteAuswahl(): string {
+  const praxis = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("ansicht") === "praxis";
+  return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id),praxis ? null : appStorage.getItem(AUSWAHL_KEY));
+}
 
 export function ProjektWerkstatt() {
   const [auswahl, setAuswahl] = useState(gespeicherteAuswahl);
+  const [praxisAnsicht, setPraxisAnsicht] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("ansicht") === "praxis");
   useEffect(() => {
     const wechseln = () => setAuswahl(BAUPROJEKTE.some(p => p.id === window.location.hash.slice(1)) ? window.location.hash.slice(1) : "");
     window.addEventListener("hashchange", wechseln);
@@ -37,6 +43,7 @@ export function ProjektWerkstatt() {
     return () => { window.removeEventListener("hashchange", wechseln); window.removeEventListener("popstate", wechseln); };
   }, []);
   function waehlen(id: string) {
+    setPraxisAnsicht(false);
     setAuswahl(id);
     try {
       if (id) { appStorage.setItem(AUSWAHL_KEY, id); appStorage.setItem("lernwerkstatt-zuletzt-route", `/projekte#${id}`); }
@@ -47,8 +54,10 @@ export function ProjektWerkstatt() {
   }
   const projekt = BAUPROJEKTE.find(p => p.id === auswahl);
   if (projekt) return <ProjektEinheit key={projekt.id} vorlage={projekt} zurueck={() => waehlen("")}/>;
+  if (praxisAnsicht) return <PraxisVorbereitung/>;
   return <div>
     <header className={styles.hero}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Vom Auftrag zum fertigen Plan.</h1><p>Sechs Baustellenprojekte verbinden Fachwissen, Rechnen und Zeichnen. Arbeite in sechs Schritten – mit Begleitung oder auf eigene Faust.</p><Link href="/heute">Kurze Projektaufgaben in der Tagesrunde üben →</Link></div><PracticeArtwork art="baustelle"/></header>
+    <div className="werkstatt-karte mt-5"><h2>Für Betrieb und Schule vorbereiten</h2><p>Sechs Praxisblätter mit Werkzeug, Material, Arbeitsfolge, Skizze und getrenntem Übungsprotokoll.</p><LernLink href="/projekte?ansicht=praxis">Praxisblätter öffnen →</LernLink></div>
     <div className={styles.einstieg}><h2>Welchen Auftrag übernimmst du?</h2><p>Deine Antworten, Zeichnungen und Notizen bleiben pro Projekt auf diesem Gerät gespeichert. Du kannst jederzeit wechseln und später weitermachen.</p></div>
     <div className={styles.grid}>{BAUPROJEKTE.map((p, i) => {
       const raw = appStorage.getItem(projektKey(p.id));
