@@ -22,7 +22,8 @@ import { pruefeProjektTransfer } from "@/lib/bauprojekte";
 import { pruefeBildAufgabe } from "@/lib/bildtraining";
 import { pruefeSprachAntwort } from "@/lib/sprachWerkstatt";
 import { createReviewResult, recordReviewResult, reviewKey, reviewStorageError, type ReviewResult } from "@/lib/review";
-import { createReviewSession, emptyReviewAnswer, parseReviewSession, reviewSessionKey, saveReviewSession, type ReviewAnswer, type ReviewFilter, type ReviewSession, type ReviewTask } from "@/lib/reviewTasks";
+import { createReviewSession, emptyReviewAnswer, parseReviewSession, reviewSessionKey, saveReviewSession, getReviewTasks, freezeReviewTask, type ReviewAnswer, type ReviewFilter, type ReviewSession, type ReviewTask } from "@/lib/reviewTasks";
+import { ladeAktuellenPlanBlock, ladePruefungsPlan, erledigePlanBlock, speicherePruefungsPlan, merkeAktuellenPlanBlock } from "@/lib/pruefungsPlan";
 import styles from "./Tagesrunde.module.css";
 
 const filter: { id: ReviewFilter; titel: string; erklaerung: string }[] = [
@@ -36,9 +37,19 @@ const clientTrue = () => true;
 const clientFalse = () => false;
 const fehlertext = (e: unknown) => e instanceof Error ? e.message : "Dein Stand konnte nicht gespeichert werden. Bitte erstelle eine Sicherung.";
 
-export function Tagesrunde() {
+export function Tagesrunde({planId}:{planId?:string} = {}) {
   const client = useSyncExternalStore(clientSubscribe, clientTrue, clientFalse);
-  return client ? <TagesrundeAufGeraet /> : <p>Deine Tagesrunde wird geöffnet …</p>;
+  return client ? planId !== undefined ? <GeplanteTagesrundeAufGeraet key={planId} planId={planId}/> : <TagesrundeAufGeraet /> : <p>Deine Tagesrunde wird geöffnet …</p>;
+}
+
+/** A planned round has its own storage key and never replaces a free/legacy round. */
+export const planRundenKey = (id:string) => `tagesrunde-plan-${id}`;
+function GeplanteTagesrundeAufGeraet({planId}:{planId:string}) {
+  return <div className={styles.werkstatt}>
+    <header className={styles.hero}><span className={styles.kicker}>Dein Prüfungsfahrplan</span><h1>Deine geplante Tagesrunde</h1><p>Diese feste Auswahl gehört zu deinem Fahrplan. Deine anderen angefangenen Runden bleiben erhalten.</p></header>
+    <div className="my-4 flex flex-wrap gap-4"><LernLink href="/heute" className="min-h-11 py-2 underline">Freie und bisherige Tagesrunden öffnen →</LernLink><LernLink href="/pruefung#fahrplan" className="min-h-11 py-2 underline">Zum Prüfungsfahrplan →</LernLink></div>
+    <Runde key={`plan:${planId}`} art="alles" minuten={15} planId={planId}/>
+  </div>;
 }
 
 function TagesrundeAufGeraet() {
@@ -80,28 +91,58 @@ function TagesrundeAufGeraet() {
   </div>;
 }
 
-function Runde({ art, minuten }: { art: ReviewFilter; minuten: number }) {
+function Runde({ art, minuten, planId }: { art: ReviewFilter; minuten: number; planId?:string }) {
+  const speicherKey=planId!==undefined ? planRundenKey(planId) : reviewSessionKey(art);
   const [geladen] = useState(() => {
-    const raw = appStorage.getItem(reviewSessionKey(art));
-    return { raw, stand: raw === null ? createReviewSession(art, minuten) : parseReviewSession(raw) };
+    const raw=appStorage.getItem(speicherKey);
+    if(raw!==null) {
+      const stand=parseReviewSession(raw);
+      const passend=planId===undefined || !!stand && stand.filter==="alles" && stand.id.startsWith(`plan-runde-${planId}:`) && stand.tasks.reduce((sum,t)=>sum+t.sekunden,0)<=stand.minuten*60*.8+1 && (stand.index<stand.tasks.length || stand.tasks.every(t=>stand.results[reviewKey(t.ref)]));
+      return {raw,stand:passend?stand:null,fehler:""};
+    }
+    if(planId===undefined)return {raw,stand:createReviewSession(art,minuten),fehler:""};
+    const block=ladeAktuellenPlanBlock(),plan=ladePruefungsPlan();
+    if(!planId || planId.length>200 || !block || block.id!==planId || block.art!=="tagesrunde" || block.minuten===90 || !plan?.bloecke.some(b=>b.id===planId && b.status!=="empfohlen"))return {raw,stand:null,fehler:"Diese geplante Runde wurde nicht gestartet oder ihr Planbezug fehlt. Öffne die Empfehlung erneut im Prüfungsfahrplan. Andere Runden bleiben erhalten."};
+    const pool=new Map(getReviewTasks().map(t=>[reviewKey(t.ref),t]));
+    const tasks=block.aufgabeIds.map(id=>pool.get(id));
+    if(!tasks.length || tasks.some(t=>!t) || tasks.reduce((sum,t)=>sum+(t?.sekunden??0),0)>block.minuten*60*.8+1)return {raw,stand:null,fehler:"Die geplante Aufgabenliste ist nicht mehr vollständig verfügbar. Es wurden keine Ersatzaufgaben gewählt. Bitte öffne deinen Prüfungsfahrplan."};
+    const stand:ReviewSession={version:1,id:`plan-runde-${planId}:${globalThis.crypto.randomUUID()}`,filter:"alles",minuten:block.minuten,startedAt:Date.now(),index:0,tasks:tasks.map(t=>freezeReviewTask(t!)),answers:{},results:{}};
+    return {raw,stand,fehler:""};
   });
+  function schreibe(neu:ReviewSession) {
+    if(planId===undefined)saveReviewSession(neu);
+    else appStorage.setItem(speicherKey,JSON.stringify(neu));
+  }
   const [stand, setStand] = useState(geladen.stand);
   const aktuell = useRef(stand);
   const [fehler, setFehler] = useState("");
   function speichern(neu: ReviewSession) {
-    try { saveReviewSession(neu); aktuell.current = neu; setStand(neu); setFehler(""); return true; }
+    try { schreibe(neu); aktuell.current = neu; setStand(neu); setFehler(""); return true; }
     catch (e) { setFehler(fehlertext(e)); return false; }
   }
   useEffect(() => {
     try {
-      if (geladen.raw === null && geladen.stand?.tasks.length) saveReviewSession(geladen.stand);
+      if (geladen.raw === null && geladen.stand?.tasks.length) {
+        if(planId===undefined)saveReviewSession(geladen.stand);
+        else appStorage.setItem(speicherKey,JSON.stringify(geladen.stand));
+      }
       // The answer and result are saved before updating the common scheduler.
       // Replaying finishes an interrupted write without counting it twice.
       for (const r of Object.values(geladen.stand?.results ?? {})) recordReviewResult(r);
     } catch (e) { queueMicrotask(() => setFehler(fehlertext(e))); }
-  }, [geladen]);
-  if (!stand) return <section className={styles.karte}><h2>Deine angefangene Runde bleibt erhalten.</h2><p role="alert">Dieser Stand lässt sich gerade nicht lesen. Er wird nicht überschrieben. Erstelle eine Sicherung oder beginne oben ausdrücklich eine neue Runde; dabei wird der bisherige Stand archiviert.</p><Link href="/fortschritt">Datensicherung öffnen →</Link></section>;
-  if (!stand.tasks.length) return <section className={styles.karte}><h2>Hier ist gerade nichts fällig.</h2><p>Wähle einen anderen Mix oder übe ein Thema gezielt.</p><Link href="/lernen">Zum Lernpfad →</Link></section>;
+  }, [geladen,planId,speicherKey]);
+  useEffect(()=>{
+    if(planId===undefined || !stand || !stand.tasks.length || stand.index!==stand.tasks.length || !stand.tasks.every(t=>stand.results[reviewKey(t.ref)]))return;
+    try {
+      const plan=ladePruefungsPlan(),block=plan?.bloecke.find(b=>b.id===planId);
+      if(!plan || !block)throw new Error("Die Runde ist gespeichert; der zugehörige Fahrplan kann gerade nicht aktualisiert werden.");
+      if(block.status!=="erledigt")speicherePruefungsPlan(erledigePlanBlock(plan,planId));
+      const aktuellBlock=ladeAktuellenPlanBlock();
+      if(aktuellBlock?.id===planId && aktuellBlock.status!=="erledigt")merkeAktuellenPlanBlock({...aktuellBlock,status:"erledigt"});
+    }catch(e){queueMicrotask(()=>setFehler(fehlertext(e)));}
+  },[planId,stand]);
+  if (!stand) return <section className={styles.karte}><h2>Deine angefangene Runde bleibt erhalten.</h2><p role="alert">{geladen.fehler || "Dieser Stand lässt sich gerade nicht lesen. Er wird nicht überschrieben. Erstelle eine Sicherung oder beginne oben ausdrücklich eine neue Runde; dabei wird der bisherige Stand archiviert."}</p><Link href="/fortschritt">Datensicherung öffnen →</Link></section>;
+  if (!stand.tasks.length) return <section className={styles.karte}><h2>Für diese Zeit passt gerade keine Aufgabe.</h2><p>Wähle einen anderen Mix oder mehr Zeit. Eine längere Rechenkette bleibt vollständig und wird nicht in eine zu kurze Runde gepackt.</p><Link href="/lernen">Zum Lernpfad →</Link></section>;
   const task = stand.tasks[stand.index], key = task ? reviewKey(task.ref) : "", answer = stand.answers[key] ?? emptyReviewAnswer(), result = stand.results[key];
   const scope = `tagesrunde:${stand.id}:${key}`;
   function aendern(update: Partial<ReviewAnswer>) {
@@ -130,6 +171,7 @@ function Runde({ art, minuten }: { art: ReviewFilter; minuten: number }) {
   function navigieren(index: number) { speichern({ ...aktuell.current!, index }); }
   if (!task) return <section className={styles.karte}>
     <span className={styles.kicker}>Runde abgeschlossen</span><h2>Du hast Zusammenhänge geübt.</h2>
+    {fehler && <p role="alert" className={styles.fehler}>{fehler}</p>}
     <p>{Object.keys(stand.results).length} von {stand.tasks.length} Aufgaben bearbeitet. {Object.values(stand.results).filter(r => r.bewertung === "richtig").length} Antworten waren richtig.</p>
     <p>Genutzte Hilfen und Selbsteinschätzungen bleiben erkennbar. Was noch unsicher ist, kommt früher wieder.</p>
     <div className={styles.ergebnisliste}>{stand.tasks.map((t, i) => <button key={reviewKey(t.ref)} onClick={() => navigieren(i)}><span>{i + 1}. {t.titel}</span><strong>{bewertungsText(stand.results[reviewKey(t.ref)]?.bewertung)}</strong></button>)}</div>
