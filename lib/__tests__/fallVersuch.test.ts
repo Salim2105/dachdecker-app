@@ -87,6 +87,25 @@ describe("Dauerhafter eigener Prüfungsversuch",()=>{
   expect(parseFallVersuch(JSON.stringify({...v,antworten:{fremd:neueTeilAntwort()}}))).toBeNull();
   expect(parseFallVersuch(JSON.stringify({...v,faelle:[v.faelle[0],v.faelle[0]]}))).toBeNull();
  });
+ it("friert Daten und Zeitvorgaben auch bei späteren Speicherungen ein",()=>{
+  const v=neuerFallVersuch(["ziegeldach"],"probelauf",true,1000);speichereFallVersuch(v);
+  expect(()=>speichereFallVersuch({...v,revision:1,frist:9999999})).toThrow(/Zeitvorgaben/);
+  const geaendert=structuredClone(v);geaendert.revision=1;geaendert.faelle[0].parameter.neueZahl=42;
+  expect(()=>speichereFallVersuch(geaendert)).toThrow(/Zeitvorgaben/);expect(ladeFallVersuch()).toEqual(v);
+ });
+ it("erhält die erste Erklärung und protokollierte Hilfen",()=>{
+  const v=neuerFallVersuch(["ziegeldach"],"probelauf",false,1000),id=v.faelle[0].teile[0].id;
+  v.antworten[id]={...neueTeilAntwort(),text:"Neue Fassung",erstText:"Mein erster Gedanke",hilfen:["formel"],musterOffen:true};
+  v.hilfsEreignisse=[{teilId:id,art:"glossar",am:1001}];speichereFallVersuch(v);
+  expect(()=>speichereFallVersuch({...v,revision:1,hilfsEreignisse:[]})).toThrow(/Hilfen/);
+  expect(()=>speichereFallVersuch({...v,revision:1,antworten:{[id]:{...v.antworten[id],erstText:"Ersetzt"}}})).toThrow(/erste Erklärung/);
+  expect(()=>speichereFallVersuch({...v,revision:1,antworten:{[id]:{...v.antworten[id],hilfen:[]}}})).toThrow(/erste Erklärung/);
+  speichereFallVersuch({...v,revision:1,antworten:{[id]:{...v.antworten[id],text:"Weitere Überarbeitung"}}});expect(ladeFallVersuch()!.antworten[id].erstText).toBe("Mein erster Gedanke");
+ });
+ it("lehnt unbekannte Antwortschritte innerhalb einer bekannten Aufgabe ab",()=>{
+  const v=neuerFallVersuch(["ziegeldach"],"probelauf"),teil=v.faelle[0].teile.find(t=>t.typ==="rechnen")!;
+  v.antworten[teil.id]={...neueTeilAntwort(),zahlen:{fremderSchritt:"5"}};expect(parseFallVersuch(JSON.stringify(v))).toBeNull();
+ });
  it("weist einen älteren Bearbeitungsstand in derselben Speicheransicht zurück",()=>{
   const v=neuerFallVersuch(["ziegeldach"],"begleitet");speichereFallVersuch({...v,revision:2});
   expect(()=>speichereFallVersuch({...v,revision:1})).toThrow(/neuerer/);expect(ladeFallVersuch()!.revision).toBe(2);

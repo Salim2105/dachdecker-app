@@ -130,7 +130,14 @@ export function parseFallVersuch(raw: string | null): FallVersuch | null {
     const gestartetAm = v.gestartetAm;
     const teile = v.faelle.flatMap(f => f.teile), ids = new Set(teile.map(t => t.id));
     if (ids.size !== teile.length || !Number.isInteger(v.index) || Number(v.index) < 0 || Number(v.index) >= teile.length + (Array.isArray(v.wiso) ? v.wiso.length : 0)) return null;
-    if (!Object.entries(v.antworten).every(([id, a]) => ids.has(id) && safeKey(id) && validAntwort(a)) || !Object.entries(v.bewertungen).every(([id, b]) => ids.has(id) && validBewertung(b))) return null;
+    if (!Object.entries(v.antworten).every(([id, a]) => {
+      if (!ids.has(id) || !safeKey(id) || !validAntwort(a)) return false;
+      const teil = teile.find(t => t.id === id)!;
+      if (teil.typ === "auswahl" && !a.wahl.every(w => teil.optionen.some(o => o.id === w))) return false;
+      if (teil.typ === "reihenfolge" && !a.reihenfolge.every(w => teil.schritte.some(s => s.id === w))) return false;
+      if (teil.typ === "rechnen" && ![...Object.keys(a.zahlen), ...Object.keys(a.einheiten)].every(w => teil.schritte.some(s => s.id === w))) return false;
+      return true;
+    }) || !Object.entries(v.bewertungen).every(([id, b]) => ids.has(id) && validBewertung(b))) return null;
     const hilfeIds = new Set([...ids, ...(Array.isArray(v.wiso) ? v.wiso.filter(obj).map(w => String(w.id)) : [])]);
     if (!v.hilfsEreignisse.every(e => obj(e) && hilfeIds.has(String(e.teilId)) && text(e.art) && zeit(e.am) && e.am >= gestartetAm)) return null;
     if (v.abgegebenAm !== null) {
@@ -161,6 +168,17 @@ export function speichereFallVersuch(v: FallVersuch): void {
   if (raw !== null && !alt) throw new Error("Der alte Prüfungsstand kann nicht gelesen werden. Bitte zuerst sichern.");
   if (alt?.id === v.id && alt.abgegebenAm !== null && JSON.stringify(alt) !== JSON.stringify(v)) throw new Error("Eine abgegebene Bearbeitung bleibt unverändert. Beginne für neue Antworten einen neuen Versuch.");
   if (alt?.id === v.id && JSON.stringify(alt) !== JSON.stringify(v) && v.revision <= alt.revision) throw new Error("Ein neuerer Bearbeitungsstand ist bereits gespeichert. Bitte neu öffnen.");
+  if (alt?.id === v.id) {
+    const fest = (s: FallVersuch) => JSON.stringify([s.faelle, s.profilId, s.profilVersion, s.modus, s.gestartetAm, s.frist]);
+    if (fest(alt) !== fest(v)) throw new Error("Die Aufgaben und Zeitvorgaben eines laufenden Versuchs bleiben unverändert.");
+    const eventKey = (e: FallVersuch["hilfsEreignisse"][number]) => JSON.stringify([e.teilId, e.art, e.am]);
+    const hilfen = new Set(v.hilfsEreignisse.map(eventKey));
+    if (alt.hilfsEreignisse.some(e => !hilfen.has(eventKey(e))) || alt.werkzeuge.some(w => !v.werkzeuge.includes(w))) throw new Error("Bereits verwendete Hilfen bleiben beim Versuch dokumentiert.");
+    for (const [id, a] of Object.entries(alt.antworten)) {
+      const neu = v.antworten[id];
+      if (a.hilfen.some(h => !neu?.hilfen.includes(h)) || a.musterOffen && !neu?.musterOffen || a.erstText !== undefined && a.erstText !== neu?.erstText) throw new Error("Die erste Erklärung und verwendete Hilfen bleiben erhalten.");
+    }
+  }
   if (alt && alt.id !== v.id && !ladeFallVerlauf().some(a => a.id === alt.id && JSON.stringify(a) === JSON.stringify(alt))) throw new Error("Bitte den bisherigen Prüfungsversuch zuerst archivieren; seine Antworten bleiben geöffnet.");
   appStorage.setItem(FALL_VERSUCH_KEY, JSON.stringify(v));
 }
