@@ -180,8 +180,16 @@ export const appStorage: Storage = new Proxy(storageMethods, {
 }) as Storage;
 
 export async function flushStorage(): Promise<void> {
-  await queue;
-  if (dirty.size || status.phase === "error") throw new Error(status.error ?? "Änderungen sind noch nicht dauerhaft gespeichert.");
+  // Effects may enqueue another write while the previously captured queue is
+  // settling (for example the shell's font setting on opening an assessment).
+  // Drain the current queue before deciding that a dirty value is a failure.
+  for (;;) {
+    const captured = queue;
+    await captured;
+    if (captured !== queue) continue;
+    if (dirty.size || status.phase === "error") throw new Error(status.error ?? "Änderungen sind noch nicht dauerhaft gespeichert.");
+    return;
+  }
 }
 export async function retryStorageWrites(): Promise<void> {
   await initializeStorage();

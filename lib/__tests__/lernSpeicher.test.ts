@@ -14,6 +14,17 @@ beforeEach(async () => {
 afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
 describe("dauerhafter Lernspeicher", () => {
+  it("wartet auch auf eine Einstellung, die erst während des Flushs eingereiht wird", async () => {
+    await storage.initializeStorage();
+    const gespeichert = storage.flushStorage();
+    storage.appStorage.setItem("schriftgroesse", "130");
+    await expect(gespeichert).resolves.toBeUndefined();
+    expect(storage.getStorageStatus().pending).toBe(0);
+    vi.resetModules();
+    const reopened = await import("@/lib/lernSpeicher");
+    await reopened.initializeStorage();
+    expect(reopened.appStorage.getItem("schriftgroesse")).toBe("130");
+  });
   it("übernimmt alte Daten vollständig und lädt nach Neustart den neueren IndexedDB-Stand", async () => {
     localStorage.setItem("fortschritt-v1", '{"vorhanden":true}');
     localStorage.setItem("dd-pruefung-v2", '{"zahlen":[12.5],"antworten":["B"]}');
