@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState, useSyncExternalStore } from "react";
+import { useCallback, useMemo, useState, useSyncExternalStore } from "react";
 import { LernLink } from "@/components/LernLink";
 import { KOMPETENZEN, VORBEREITUNGS_PROFIL, type KompetenzId } from "@/lib/pruefungsVorbereitungTypen";
 import { KOMPETENZ_STATUS, kompetenzSnapshot, kompetenzStand, parseKompetenzNachweise, subscribeKompetenzNachweise, type KompetenzNachweis } from "@/lib/kompetenzNachweise";
@@ -16,20 +16,21 @@ function belegText(n:KompetenzNachweis):string {
   return n.richtig ? "Selbstständig richtig" : "Noch gezielt üben";
 }
 export function KompetenzUebersicht() {
-  const raw = useSyncExternalStore(subscribeKompetenzNachweise, kompetenzSnapshot, () => "");
+  const [jetzt, setJetzt] = useState(() => Date.now());
+  const subscribe = useCallback((listener: () => void) => subscribeKompetenzNachweise(() => { setJetzt(Date.now()); listener(); }), []);
+  const raw = useSyncExternalStore(subscribe, kompetenzSnapshot, () => "");
   const nachweise = useMemo(() => parseKompetenzNachweise(raw || null), [raw]);
-  const [jetzt] = useState(() => Date.now());
   const [gewaehlt, setGewaehlt] = useState<KompetenzId>("rechnen");
   const werte = nachweise ?? [];
   const staende = (Object.keys(KOMPETENZEN) as KompetenzId[]).map(k => kompetenzStand(k, werte, jetzt));
   const aktiv = staende.find(s => s.kompetenz === gewaehlt)!;
-  return <section aria-labelledby="kompetenz-titel" className="mt-7">
+  return <section id="kompetenzen" aria-labelledby="kompetenz-titel" className="mt-7">
     <header className="bereichs-einstieg"><span>DEINE PRÜFUNGSVORBEREITUNG</span><h2 id="kompetenz-titel" className="mt-2 text-2xl font-semibold">Was du schon selbstständig gezeigt hast</h2><p>{VORBEREITUNGS_PROFIL.titel} · {VORBEREITUNGS_PROFIL.hinweis}</p></header>
     <p className="mt-3 text-sm" style={{color:"var(--text-muted)"}}>Hier zählen dokumentierte Versuche. Alte Lernstände bleiben erhalten und werden nicht rückwirkend zu Prüfungsnachweisen. Deine Bestehenschance wird daraus nicht berechnet.</p>
     {!nachweise && <p role="alert" className="mt-4 rounded-xl border p-4" style={{borderColor:"var(--bad)",color:"var(--bad)"}}>Die Kompetenznachweise können nicht gelesen werden. Sichere deinen Stand, bevor du weiterarbeitest.</p>}
     <div role="group" aria-label="Kompetenz auswählen" className="mt-5 grid gap-3 sm:grid-cols-2">
       {staende.map(s => <button key={s.kompetenz} type="button" className="min-h-24 rounded-2xl border p-4 text-left" style={{...karte,...(gewaehlt===s.kompetenz?{borderColor:"var(--accent)",background:"var(--accent-soft)"}:{})}} aria-pressed={gewaehlt===s.kompetenz} onClick={()=>setGewaehlt(s.kompetenz)}>
-        <strong className="block">{KOMPETENZEN[s.kompetenz]}</strong><span className="mt-1 block text-sm">{eigenerVergleich(s.kompetenz) ? s.selbst ? "Selbst eingeschätzt" : "Eigener Vergleich noch offen" : KOMPETENZ_STATUS[s.status]}</span>
+        <strong className="block">{KOMPETENZEN[s.kompetenz]}</strong>{" "}<span className="mt-1 block text-sm">{eigenerVergleich(s.kompetenz) ? s.selbst ? "Selbst eingeschätzt" : "Eigener Vergleich noch offen" : KOMPETENZ_STATUS[s.status]}</span>{" "}
         <span className="mt-1 block text-xs" style={{color:"var(--text-muted)"}}>{eigenerVergleich(s.kompetenz) ? `${s.selbst} eigene Vergleiche · getrennt von automatischen Punkten` : `${s.unabhaengig} selbstständige Nachweise · ${s.familien} Aufgabenfamilien${s.auffrischen ? " · Auffrischung empfohlen" : ""}`}</span>
       </button>)}
     </div>

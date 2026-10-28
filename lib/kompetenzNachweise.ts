@@ -47,6 +47,7 @@ export function istKompetenzNachweis(v: unknown): v is KompetenzNachweis {
     Number.isSafeInteger(v.inhaltsVersion) && Number(v.inhaltsVersion) > 0 && zeit(v.am) &&
     ["automatisch", "selbst", "praxis"].includes(String(v.art)) &&
     ["begleitet", "probelauf", "mathe", "transfer", "selbst", "praxis"].includes(String(v.modus)) &&
+    (v.art === "automatisch" ? ["begleitet", "probelauf", "mathe", "transfer"].includes(String(v.modus)) : v.modus === v.art) &&
     nummer(v.erreicht) && nummer(v.moeglich) && v.erreicht <= v.moeglich &&
     (v.art !== "automatisch" || v.moeglich > 0) && typeof v.richtig === "boolean" &&
     (!v.richtig || v.art !== "automatisch" || v.erreicht === v.moeglich) &&
