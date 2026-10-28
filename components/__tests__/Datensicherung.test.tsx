@@ -13,7 +13,7 @@ describe("Datensicherung vorab ansehen", () => {
     const text = JSON.stringify({ app: "dachdecker-lernstand", version: 1, daten: { theme: "light" } });
     const datei = new File([text], "meine-sicherung.json", { type: "application/json" });
     fireEvent.change(ansicht.container.querySelector('input[type="file"]')!, { target: { files: [datei] } });
-    await screen.findByText("Sicherung prüfen: meine-sicherung.json");
+    await screen.findByText("Sicherung prüfen: meine-sicherung.json", {}, {timeout:5000});
     expect(screen.getByText(/Enthalten: Darstellung/)).toBeTruthy();
     expect(localStorage.getItem("theme")).toBe("dark");
     fireEvent.click(screen.getByText("Abbrechen"));
@@ -29,7 +29,7 @@ describe("Datensicherung vorab ansehen", () => {
     });
     const datei = new File([Uint8Array.from(zip).buffer], "vollstaendig.zip", { type: "application/zip" });
     fireEvent.change(ansicht.container.querySelector('input[type="file"]')!, { target: { files: [datei] } });
-    await screen.findByText("Sicherung prüfen: vollstaendig.zip");
+    await screen.findByText("Sicherung prüfen: vollstaendig.zip", {}, {timeout:5000});
     expect(screen.getByText(/Zeichnungen und Fotos \(1\)/)).toBeTruthy();
     expect(localStorage.getItem("dd-pruefung-v2")).toBe("aktueller Versuch");
     fireEvent.click(screen.getByText("Abbrechen"));
@@ -40,7 +40,8 @@ describe("Datensicherung vorab ansehen", () => {
     const ansicht = render(<Datensicherung />);
     const datei = new File(['{"app":"dachdecker-lernstand","daten":{"theme":"light","fortschritt-v1":"kaputt"}}'], "kaputt.json", { type: "application/json" });
     fireEvent.change(ansicht.container.querySelector('input[type="file"]')!, { target: { files: [datei] } });
-    await waitFor(() => expect(screen.getByRole("status").textContent).toContain("Keine gültige Sicherung"));
+    // FileReader is real asynchronous I/O; allow slower CI without changing the data-safety assertions.
+    await waitFor(() => expect(screen.getByRole("status").textContent).toContain("Keine gültige Sicherung"), {timeout:5000});
     expect(localStorage.getItem("theme")).toBe("dark");
     expect(screen.queryByText("Sicherung übernehmen")).toBeNull();
   });

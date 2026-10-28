@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.8.0**: [16 direkte Bereiche, übersichtlichere Einstiege und ein vollständiges Handy-Menü](docs/lernwerkstatt-0.8.md).
+Neu in **0.11.0**: [Zusammenhängende Prüfungsfälle, Fahrplan, Prüfungs-Mathe, Praxisblätter und Kompetenznachweise](docs/pruefungsvorbereitung-0.11.md) für das erste Trainingsprofil HWK Dortmund · Dachdeckungstechnik. Der amtliche Abgleich ist offen.
+
+Seit **0.8.0**: [16 direkte Bereiche, übersichtlichere Einstiege und ein vollständiges Handy-Menü](docs/lernwerkstatt-0.8.md).
 
 Seit 0.7.1: [Anklickbare Fachwörter mit Skizzen und gezielte Fehlernacharbeit](docs/lernwerkstatt-0.7.1.md). Dazu kommen die [Prüfungsstufen für alle Lernbereiche, gemeinsame Tagesrunde, zehn Aufbau-Matheeinheiten, sechs Baustellenprojekte und 24 Bildaufgaben aus 0.7](docs/lernwerkstatt-0.7.md). Die bisherigen [402 kurzen Fachwissen-Einheiten und Sprachwerkstätten](docs/lernwerkstatt-0.4.md) und [illustrierten Lernwelten](docs/gestaltung-0.3.md) bleiben erhalten.
 
