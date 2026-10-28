@@ -58,6 +58,7 @@ describe("Unabhängiger Mathe-Probelauf",()=>{
   const aktiv=ladePruefungsMatheStand()!.aktiv;v.unmount();window.history.replaceState(null,"","/grundlagen/mathe?ansicht=pruefungsaufgaben");
   render(<MatheWerkstatt/>);expect(screen.getByRole("heading",{name:"Dein Rechenweg zählt."})).toBeDefined();expect(ladePruefungsMatheStand()!.aktiv).toBe(aktiv);
   fireEvent.click(screen.getByRole("button",{name:"Angefangenen Rechenweg fortsetzen"}));expect((screen.getByRole("textbox",{name:/Dein Wert/})as HTMLInputElement).value).toBe("0,");expect(window.location.search).toContain("fortsetzen=1");
+  fireEvent.click(screen.getByRole("button",{name:"← Alle selbstständigen Matheaufgaben"}));expect(screen.getByRole("heading",{name:"Dein Rechenweg zählt."})).toBeDefined();expect(ladePruefungsMatheStand()!.aktiv).toBe(aktiv);expect(window.location.search).toBe("?ansicht=pruefungsaufgaben");
  });
 
 });

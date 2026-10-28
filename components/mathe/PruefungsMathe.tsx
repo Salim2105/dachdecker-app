@@ -85,6 +85,12 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
   neu.nachErklaerung=s.versuche.some(v=>v.familie===neu.familie&&v.abgegebenAm!==null&&neu.gestartetAm-v.abgegebenAm>=0&&neu.gestartetAm-v.abgegebenAm<86400000);
   speichern({...s,aktiv:neu.id,versuche:[...s.versuche,neu]});window.scrollTo({top:0});
  }
+ function katalogZeigen() {
+  const s=aktuell.current;if(!s||!darfBearbeiten)return;
+  // Catalogue navigation changes the view, never the saved continuation point.
+  const ansicht={...s,aktiv:null};aktuell.current=ansicht;setStand(ansicht);
+  window.history.replaceState(null,"","/grundlagen/mathe?ansicht=pruefungsaufgaben");
+ }
  function abgeben() {
   const s=aktuell.current,a=s?.versuche.find(v=>v.id===s.aktiv);if(!s||!a||a.abgegebenAm!==null)return;
   try {const neu=abgegebenerPruefungsMatheVersuch(a);if(speichern({...s,versuche:s.versuche.map(v=>v.id===a.id?neu:v)}))verarbeiteNachweis(neu);}
@@ -113,7 +119,7 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
  </div>;
  const aufgabe=v.aufgabe,schritte=pruefungsMatheSchritte(v),fertig=v.abgegebenAm!==null;
  return <div className={styles.einheit}>
-  <button className={styles.back} onClick={()=>speichern({...stand,aktiv:null})}>← Alle selbstständigen Matheaufgaben</button>
+  <button className={styles.back} onClick={katalogZeigen}>← Alle selbstständigen Matheaufgaben</button>
   <header className={styles.unitHead}><span>PRÜFUNGS-MATHE · {aufgabe.typ==="transfer"?"VERÄNDERTER ZUSAMMENHANG":"EIGENER RECHENWEG"}</span><h1>{aufgabe.typ==="aufbau"?aufgabe.aufgabe.titel:aufgabe.titel}</h1><p>Die Lösung bleibt bis zu deiner Abgabe verborgen. Die Zahlen bleiben pro Versuch fest gespeichert.</p></header>
   {kompatibilitaet}
   <section className={styles.task} data-aufgabe-id={v.aufgabenId} data-aufgabe-text={aufgabe.typ==="aufbau"?aufgabe.aufgabe.frage:aufgabe.frage}>
