@@ -36,7 +36,7 @@ export default function Home() {
   });
   const [letzteRoute] = useState(() => {
     const route=appStorage.getItem("lernwerkstatt-zuletzt-route");
-    return route && (route==="/grundlagen/mathe?ansicht=pruefungsaufgaben"||route==="/pruefung#fortsetzen"||/^\/(?:lernen\/(?:lf\d{2}[ab]?|anhang[123]|wiso)|grundlagen\/mathe|sprache\/(?:deutsch|englisch)|projekte|bildtraining)(?:#[a-z0-9-]+)?$/.test(route))?route:null;
+    return route && (["/grundlagen/mathe?ansicht=pruefungsaufgaben","/grundlagen/mathe?ansicht=pruefungsaufgaben&fortsetzen=1"].includes(route)||route==="/pruefung#fortsetzen"||/^\/(?:lernen\/(?:lf\d{2}[ab]?|anhang[123]|wiso)|grundlagen\/mathe|sprache\/(?:deutsch|englisch)|projekte|bildtraining)(?:#[a-z0-9-]+)?$/.test(route))?route:null;
   });
   const hinweise = lernEmpfehlungen(werkstattAntworten, now).slice(0, 2);
   const stand = pruefungsreife(fortschritt, now);

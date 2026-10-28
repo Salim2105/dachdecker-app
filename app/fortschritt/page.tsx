@@ -1,9 +1,3 @@
-import { Fortschritt } from "@/components/fortschritt/Fortschritt";
-
-import { KompetenzUebersicht } from "@/components/fortschritt/KompetenzUebersicht";
-
-export const metadata = { title: "Fortschritt" };
-
-export default function FortschrittPage() {
-  return <><section id="kompetenzen"><KompetenzUebersicht/></section><Fortschritt /></>;
-}
+import { LernstandWerkstatt } from "@/components/fortschritt/LernstandWerkstatt";
+export const metadata = { title: "Lernstand und Sicherungen" };
+export default function FortschrittPage() { return <LernstandWerkstatt/>; }
