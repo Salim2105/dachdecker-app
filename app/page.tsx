@@ -1,6 +1,7 @@
 "use client";
 import { useState, useSyncExternalStore } from "react";
 import { LernLink as Link } from "@/components/LernLink";
+import { PruefungsPlanHinweis } from "@/components/pruefung/PruefungsFahrplan";
 import { LernzeitWahl } from "@/components/LernzeitWahl";
 import { useProgress } from "@/components/useProgress";
 import { datumStore, lernzeitStore } from "@/lib/appStores";
@@ -60,6 +61,7 @@ export default function Home() {
       <div className="home-hero-art"><span className="home-art-label"><span aria-hidden="true">✓</span> VERSTEHEN. ANPACKEN. KÖNNEN.</span><LernIllustration motiv="dach" /><span className="home-art-sticker"><strong>Schritt für Schritt</strong><span>wird aus Wissen Handwerk.</span></span></div>
       <span className="home-hero-grain" aria-hidden="true" />
     </section>
+    <PruefungsPlanHinweis/>
     <div className="home-fokus-grid">
       <section className="home-time-card" aria-labelledby="tagesrunde-titel"><span className="home-kicker">DEINE ZEIT. DEIN TEMPO.</span><h3 id="tagesrunde-titel">Deine Tagesrunde</h3><p>{faellig ? `${faellig} Wiederholungen sind fällig. Wir beginnen mit diesen Aufgaben.` : "Fachwissen, Mathe und Sprachen in einer passenden Runde."}</p><LernzeitWahl /><Link href="/heute" className="home-outline-cta">Tagesrunde öffnen <Arrow /></Link></section>
       <section className="home-hinweise" aria-labelledby="hinweise-titel"><span className="home-kicker">PASSEND ZU DEINEN ANTWORTEN</span><h3 id="hinweise-titel">Deine Lernhinweise</h3>{hinweise.length ? <ul>{hinweise.map(h=><li key={`${h.kategorie}:${h.lernzielId}`}><Link href={h.route}><strong>{h.titel}</strong><span>{h.grund}</span><span className="home-hinweis-ziel">Gezielt weiterüben <Arrow /></span></Link></li>)}</ul> : <><p>Finde heraus, welche Begriffe und Rechenwege du als Nächstes üben möchtest.</p><Link href="/lernhilfe" className="home-outline-cta">Deinen nächsten Schritt finden <Arrow /></Link></>}</section>

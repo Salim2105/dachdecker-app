@@ -1,7 +1,7 @@
-import { PruefungRunner } from "@/components/pruefung/PruefungRunner";
+import { PruefungsWerkstatt } from "@/components/pruefung/PruefungsWerkstatt";
 
-export const metadata = { title: "Prüfungssimulation" };
+export const metadata = { title: "Prüfungsvorbereitung" };
 
 export default function PruefungPage() {
-  return <PruefungRunner />;
+  return <PruefungsWerkstatt />;
 }
