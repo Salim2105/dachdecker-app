@@ -1,10 +1,12 @@
 "use client";
-import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
 import { BereichsNavigation,BereicheMenue } from "@/components/BereichsNavigation";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Taschenrechner } from "@/components/rechner/Taschenrechner";
+import { meldePruefungsHilfe, pruefungsHilfenSnapshot, pruefungsHilfenServerSnapshot, subscribePruefungsHilfen } from "@/lib/pruefungsHilfen";
 import { Rechner } from "@/components/rechner/Rechner";
 import { Glossar } from "@/components/Glossar";
 import { aktiverBereich,bereichsTitel } from "@/lib/navigation";
@@ -19,6 +21,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const aktiv = aktiverBereich(pathname);
+  const pruefungsKontext=useSyncExternalStore(subscribePruefungsHilfen,pruefungsHilfenSnapshot,pruefungsHilfenServerSnapshot);
+  const [formelHilfe,setFormelHilfe]=useState(false);
   const [werkzeug, setWerkzeug] = useState<Werkzeug | null>(null);
   const [menueOffen,setMenueOffen]=useState(false);
   const menueRuecksprung=useRef<HTMLElement|null>(null);
@@ -52,6 +56,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, []);
   const oeffnen = useCallback((tool: Werkzeug, id?: string) => {
     setMenueOffen(false);
+    if(tool==="rechner"){setFormelHilfe(false);meldePruefungsHilfe("taschenrechner");}else meldePruefungsHilfe("glossar");
     window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));
     if (document.activeElement instanceof HTMLElement && !document.activeElement.closest("#werkzeug-panel")) ruecksprung.current = document.activeElement;
     setBesucht((old) => new Set([...old, tool]));
@@ -107,7 +112,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         </header>
         <main id="arbeitsflaeche" className="arbeitsflaeche" tabIndex={-1}>{children}</main>
       </div>
-      <aside ref={panel} id="werkzeug-panel" className="werkzeug-panel" hidden={!werkzeug} role={overlay ? "dialog" : undefined} aria-modal={overlay && werkzeug ? true : undefined} aria-label="Lernhilfen" onKeyDown={(event) => {
+      <aside ref={panel} id="werkzeug-panel" data-werkzeug={werkzeug??undefined} className="werkzeug-panel" hidden={!werkzeug} role={overlay ? "dialog" : undefined} aria-modal={overlay && werkzeug ? true : undefined} aria-label="Lernhilfen" onKeyDown={(event) => {
         if (!overlay || event.key !== "Tab") return;
         const elemente = [...(panel.current?.querySelectorAll<HTMLElement>('button:not(:disabled), input:not(:disabled), select:not(:disabled), textarea:not(:disabled), a[href]') ?? [])].filter((el) => !el.closest("[hidden]") && el.getClientRects().length > 0);
         const erstes = elemente[0], letztes = elemente.at(-1);
@@ -118,7 +123,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <p className="werkzeug-hinweis">Deine Aufgabe bleibt geöffnet. Mit Esc schließt du die Hilfe.</p>
         <div role="group" aria-label="Lernhilfe auswählen" className="werkzeug-tabs"><button aria-pressed={werkzeug === "rechner"} onClick={() => oeffnen("rechner")}>Rechner</button><button aria-pressed={werkzeug === "glossar"} onClick={() => oeffnen("glossar")}>Begriffe</button></div>
         <label className="panel-breite">Breite <input type="range" min="320" max="560" step="20" value={breite} onChange={(e) => { setBreite(Number(e.target.value)); appStorage.setItem("hilfe-breite", e.target.value); }} /></label>
-        <div hidden={werkzeug !== "rechner"}>{besucht.has("rechner") && <Rechner compact />}</div>
+        <div hidden={werkzeug !== "rechner"}>{pruefungsKontext&&<><Taschenrechner/><button className="link" onClick={()=>{meldePruefungsHilfe("formelrechner");setFormelHilfe(true);}}>Formelrechner als Lernhilfe öffnen</button><p className="text-sm mt-2">Die Formelhilfe wird bei deiner aktuellen Aufgabe vermerkt.</p></>}<div hidden={!!pruefungsKontext&&!formelHilfe}>{besucht.has("rechner") && <Rechner compact />}</div></div>
         <div hidden={werkzeug !== "glossar"}>{besucht.has("glossar") && <Glossar begriffId={begriff} onBegriff={setBegriff} />}</div>
       </aside>
     </div>
