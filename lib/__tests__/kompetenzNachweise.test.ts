@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it } from "vitest";
 import { appStorage } from "@/lib/lernSpeicher";
+import { DIAGNOSE_KEY, ladeLernsignale, lernEmpfehlungen } from "@/lib/lerndiagnose";
 import { neuerFallVersuch, neueTeilAntwort, abgegebenerFallVersuch } from "@/lib/fallVersuch";
 import type { FallVersuch } from "@/lib/pruefungsVorbereitungTypen";
-import { KOMPETENZ_NACHWEISE_KEY, kompetenzStand, ladeKompetenzNachweise, parseKompetenzNachweise, recordMatheNachweis, recordTransferNachweis, recordSelbstNachweis, syncFallNachweise, unabhaengigerNachweis } from "@/lib/kompetenzNachweise";
+import { KOMPETENZ_NACHWEISE_KEY, kompetenzStand, ladeKompetenzNachweise, parseKompetenzNachweise, recordMatheNachweis, recordTransferNachweis, recordSelbstNachweis, syncFallNachweise, unabhaengigerNachweis, syncFallLernhinweise, FALL_LERNHINWEISE_KEY } from "@/lib/kompetenzNachweise";
 
 const TAG=86400000, start=Date.UTC(2026,0,2,12);
 beforeEach(()=>appStorage.clear());
@@ -101,4 +102,46 @@ describe("Dauerhafte Kompetenznachweise",()=>{
     appStorage.setItem(KOMPETENZ_NACHWEISE_KEY,"kaputt");expect(parseKompetenzNachweise("kaputt")).toBeNull();
     expect(()=>rechnen("a",start)).toThrow(/nicht gelesen/);expect(appStorage.getItem(KOMPETENZ_NACHWEISE_KEY)).toBe("kaputt");
   });
+});
+
+
+describe("Fall-Ergebnisse leiten gezielte Nacharbeit ab",()=>{
+ it("fasst zwei zusammenhängende Rechenfehler zu einem Lernzielhinweis zusammen",()=>{
+  const v=korrekt();
+  for(const t of v.faelle[0].teile.filter(t=>t.typ==="rechnen"))for(const s of t.schritte)v.antworten[t.id].zahlen[s.id]="0";
+  const abgegeben=abgegebenerFallVersuch(v,start+5000);syncFallNachweise(abgegeben);syncFallNachweise(abgegeben);
+  const n=ladeLernsignale().filter(s=>s.lernzielId==="fall-ziegeldach-rechnen");
+  expect(n).toHaveLength(1);expect(n[0].richtig).toBe(false);expect(n[0].quelle).toBe("projekt");
+  expect(n[0].route).toBe("/grundlagen/mathe?ansicht=pruefungsaufgaben");
+  const hinweise=lernEmpfehlungen(ladeLernsignale(),start+10000).filter(h=>h.lernzielId==="fall-ziegeldach-rechnen");
+  expect(hinweise).toHaveLength(1);expect(hinweise[0].offen).toBe(1);
+ });
+ it("übernimmt Hilfen und trennt begleitete richtige Antworten von unabhängigen Erfolgen",()=>{
+  const v=abgegebenerFallVersuch(korrekt("ziegeldach",start,0,"begleitet"),start+5000);syncFallNachweise(v);
+  const n=ladeLernsignale().find(s=>s.lernzielId==="fall-ziegeldach-rechnen")!;
+  expect(n.richtig).toBe(true);expect(n.hilfen).toContain("begleiteter-fall");
+  expect(lernEmpfehlungen(ladeLernsignale(),start+10000).some(h=>h.lernzielId===n.lernzielId)).toBe(true);
+  expect(ladeLernsignale().some(s=>s.lernzielId.endsWith("detail")||s.lernzielId.endsWith("erklaeren"))).toBe(false);
+ });
+ it("zwei spätere richtige andere Varianten erledigen einen kurzfristigen Hinweis ohne Nachweise umzuschreiben",()=>{
+  const v=korrekt();const t=v.faelle[0].teile.find(t=>t.typ==="rechnen")!;
+  if(t.typ==="rechnen")v.antworten[t.id].zahlen[t.schritte[0].id]="0";
+  syncFallNachweise(abgegebenerFallVersuch(v,start+5000));const vorher=ladeKompetenzNachweise()[0];
+  syncFallNachweise(abgegebenerFallVersuch(korrekt("ziegeldach",start+TAG,1),start+TAG+5000));
+  syncFallNachweise(abgegebenerFallVersuch(korrekt("ziegeldach",start+2*TAG,2),start+2*TAG+5000));
+  expect(lernEmpfehlungen(ladeLernsignale(),start+3*TAG).some(h=>h.lernzielId==="fall-ziegeldach-rechnen")).toBe(false);
+  expect(ladeKompetenzNachweise().find(n=>n.id===vorher.id)).toEqual(vorher);
+ });
+ it("holt eine abgebrochene Ableitung nach und zählt nach Kürzen der Diagnosehistorie nicht erneut",()=>{
+  const v=abgegebenerFallVersuch(korrekt(),start+5000);syncFallLernhinweise(v);
+  const ids=ladeLernsignale().map(s=>s.id);expect(ids.length).toBeGreaterThan(0);
+  syncFallLernhinweise(v);expect(ladeLernsignale().map(s=>s.id)).toEqual(ids);
+  appStorage.setItem(DIAGNOSE_KEY,"[]");syncFallLernhinweise(v);expect(ladeLernsignale()).toEqual([]);
+  expect(appStorage.getItem(FALL_LERNHINWEISE_KEY)).toContain(v.id);
+ });
+ it("überschreibt eine beschädigte Diagnosehistorie nicht",()=>{
+  appStorage.setItem(DIAGNOSE_KEY,"kaputt");const v=abgegebenerFallVersuch(korrekt(),start+5000);
+  expect(()=>syncFallLernhinweise(v)).toThrow(/Lernhinweise können nicht gelesen/);
+  expect(appStorage.getItem(DIAGNOSE_KEY)).toBe("kaputt");expect(appStorage.getItem(FALL_LERNHINWEISE_KEY)).toBeNull();
+ });
 });

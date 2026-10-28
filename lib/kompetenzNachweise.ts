@@ -1,7 +1,10 @@
 import { appStorage } from "@/lib/lernSpeicher";
+import { DIAGNOSE_KEY, speichereLernsignaleEinmal, type LernSignal } from "@/lib/lerndiagnose";
+import { istLernRoute, type LernKategorie } from "@/lib/lernHinweise";
 import { KOMPETENZEN, type KompetenzId, type FallVersuch } from "@/lib/pruefungsVorbereitungTypen";
 
 export const KOMPETENZ_NACHWEISE_KEY = "kompetenznachweise-v1";
+export const FALL_LERNHINWEISE_KEY = "fall-lernhinweise-v1";
 export type NachweisArt = "automatisch" | "selbst" | "praxis";
 export interface KompetenzNachweis {
   id: string; versuchId: string; aufgabeId: string; kompetenz: KompetenzId;
@@ -164,6 +167,65 @@ export function syncFallNachweise(v: FallVersuch): void {
     });
   }
   speichereKompetenzNachweise(neu);
+  syncFallLernhinweise(v);
+}
+
+/** Feedback is an aggregate per case/competency, not one new weakness per dependent number. */
+export function syncFallLernhinweise(v: FallVersuch): void {
+  if (v.abgegebenAm === null) return;
+  const rawMarker = appStorage.getItem(FALL_LERNHINWEISE_KEY);
+  let verarbeitet: string[] = [];
+  if (rawMarker !== null) {
+    try {
+      const parsed: unknown = JSON.parse(rawMarker);
+      if (!obj(parsed) || parsed.version !== 1 || !Array.isArray(parsed.versuche) || !parsed.versuche.every(text) || new Set(parsed.versuche).size !== parsed.versuche.length) throw new Error();
+      verarbeitet = parsed.versuche;
+    } catch { throw new Error("Die verarbeiteten Fall-Lernhinweise können nicht gelesen werden. Bitte sichere deinen Stand."); }
+  }
+  if (verarbeitet.includes(v.id)) return;
+  const diagnose = appStorage.getItem(DIAGNOSE_KEY);
+  if (diagnose !== null) {
+    try { if (!Array.isArray(JSON.parse(diagnose))) throw new Error(); }
+    catch { throw new Error("Deine Lernhinweise können nicht gelesen werden. Bitte sichere deinen Stand."); }
+  }
+  const kategorien: Record<KompetenzId, LernKategorie> = {plan:"leseverstehen",rechnen:"rechenweg",material:"fachwissen",ablauf:"ablauf",detail:"befund",erklaeren:"leseverstehen",wiso:"fachwissen"};
+  const signale: LernSignal[] = [];
+  for (const fall of v.faelle) for (const k of Object.keys(KOMPETENZEN) as KompetenzId[]) {
+    const teile = fall.teile.filter(t => t.kompetenzen.includes(k) && t.typ !== "zeichnung" && t.typ !== "begruendung");
+    if (!teile.length) continue;
+    const bewertungen = teile.map(t => v.bewertungen[t.id]);
+    if (bewertungen.some(b => !b || b.selbst || !Number.isFinite(b.moeglich) || b.moeglich <= 0 || !Number.isFinite(b.erreicht) || b.erreicht < 0 || b.erreicht > b.moeglich)) continue;
+    const hilfen = ohneErlaubteWerkzeuge([
+      ...(v.modus === "begleitet" ? ["begleiteter-fall"] : []),
+      ...teile.flatMap(t => [...(v.antworten[t.id]?.hilfen ?? []), ...(v.antworten[t.id]?.musterOffen ? ["muster"] : []), ...v.hilfsEreignisse.filter(e => e.teilId === t.id || e.teilId === "*").map(e => e.art)]),
+    ]);
+    const richtig = bewertungen.every(b => b.richtig && b.erreicht === b.moeglich);
+    const details = [...new Set(bewertungen.flatMap(b => b.hinweise))].join(" ");
+    signale.push({
+      id: `fall:${v.id}:${fall.id}:${k}`, am: v.abgegebenAm, quelle: "projekt",
+      aufgabeId: `fall-${fall.familie}-${k}-v${fall.version}-${fall.variante}`, lernzielId: `fall-${fall.familie}-${k}`,
+      kategorie: kategorien[k], richtig, hilfen,
+      route: k === "rechnen" ? "/grundlagen/mathe?ansicht=pruefungsaufgaben" : `/projekte#${fall.familie}`,
+      thema: `${fall.titel}: ${KOMPETENZEN[k]}`,
+      hinweis: (details || (richtig ? hilfen.length ? "Bearbeite diesen Zusammenhang später an einer neuen Variante ohne Lernhilfe." : "Du hast diesen Zusammenhang selbstständig gelöst. Ein anderer Fall hilft beim späteren Übertragen." : `Vergleiche im Fall „${fall.titel}“ noch einmal die Angaben und deinen Lösungsweg.`)).slice(0, 1200),
+    });
+  }
+  if (v.wiso?.length) {
+    const richtig = v.wiso.every(q => q.wahl.length === q.korrekt.length && q.korrekt.every(i => q.wahl.includes(i)));
+    signale.push({
+      id: `fall:${v.id}:wiso:wiso`, am: v.abgegebenAm, quelle: "projekt",
+      aufgabeId: `fall-wiso-${v.wiso.map(q => q.id).join("-")}`, lernzielId: "fall-wiso-wiso",
+      kategorie: "fachwissen", richtig,
+      hilfen: ohneErlaubteWerkzeuge([...(v.modus === "begleitet" ? ["begleiteter-fall"] : []), ...v.hilfsEreignisse.filter(e => e.teilId === "*" || e.teilId.startsWith("wiso")).map(e => e.art)]),
+      route: "/lernen/wiso", thema: "Wirtschafts- und Sozialkunde im Musterlauf",
+      hinweis: richtig ? "Frische die Zusammenhänge später mit anderen WiSo-Fragen auf." : "Vergleiche deine Antworten zu Rechten, Pflichten und wirtschaftlichen Entscheidungen mit den passenden WiSo-Erklärungen.",
+    });
+  }
+  if (!signale.every(s => istLernRoute(s.route))) throw new Error("Ein Lernhinweis hat noch kein unterstütztes Übungsziel.");
+  speichereLernsignaleEinmal(signale);
+  // Keep this completion marker beyond the capped diagnostic history. A crash
+  // between the two writes is safe because signal IDs are themselves stable.
+  appStorage.setItem(FALL_LERNHINWEISE_KEY, JSON.stringify({version: 1, versuche: [...verarbeitet, v.id]}));
 }
 export function unabhaengigerNachweis(n: KompetenzNachweis): boolean {
   return n.art === "automatisch" && n.richtig && n.erreicht === n.moeglich && n.moeglich > 0 &&
