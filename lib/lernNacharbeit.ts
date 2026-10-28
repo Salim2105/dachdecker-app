@@ -5,6 +5,7 @@ import type { MatheAufgabe, MatheErgebnis } from "@/lib/matheGrundlagen";
 import type { BauProjekt, ProjektRechnung, ProjektTransfer } from "@/lib/bauprojekte";
 import type { BildAufgabe } from "@/lib/bildtraining";
 import type { LernHinweis, LernKategorie } from "@/lib/lernHinweise";
+import { pruefungsTransferFamilie, pruefungsTransferRef, PRUEFUNGS_TRANSFER_ROUTE } from "@/lib/pruefungsTransfer";
 
 export function aufbauNacharbeit(a:AufbauAufgabe,antworten:Record<string,AufbauAntwort>,r:AufbauErgebnis):LernHinweis[]{
  const basis={lernzielId:a.einheitId,route:`/grundlagen/mathe#${a.einheitId}`,thema:a.titel};
@@ -53,6 +54,9 @@ export function bildNacharbeit(a:BildAufgabe,antwort:AktivitaetAntwort):LernHinw
  return [{kategorie,lernzielId:`werkstatt-${a.projektId}-${folge?"ablauf":bauteile?"schichten":"zusammenhang"}`,route:`/bildtraining#bild-${a.projektId}-${art}`,thema:a.titel,richtig:r.richtig,hinweis}];
 }
 export function transferNacharbeit(a:ProjektTransfer,richtig:boolean,einheit:string):LernHinweis[]{
+ const familie=pruefungsTransferFamilie(a.id);
+ if(familie)return [{kategorie:einheit!==a.einheit?"einheiten":"rechenweg",lernzielId:pruefungsTransferRef(familie).lernzielIds[0],route:PRUEFUNGS_TRANSFER_ROUTE,thema:a.titel,richtig:richtig&&einheit===a.einheit,
+  hinweis:einheit!==a.einheit?`Du hast ${einheit||"keine Einheit"} gewählt. Gesucht ist ${a.einheit}.`:richtig?"Rechenwert und Einheit passen im veränderten Auftrag.":`Prüfe den veränderten Auftrag und seine Bezugsgrößen. ${a.erklaerung}`}];
  const ziel:Record<string,string>={ziegeldach:"flaechen",flachdach:"gefaelle",sanierung:"waerme",schiefer:"bedarf",fassade:"flaechen"};
  const unit=ziel[a.projektId];
  return [{kategorie:einheit!==a.einheit?"einheiten":"rechenweg",lernzielId:unit?`aufbau-${unit}`:`werkstatt-${a.projektId}-bewegung`,route:unit?`/grundlagen/mathe#aufbau-${unit}`:`/bildtraining#bild-${a.projektId}-fehler`,thema:a.titel,richtig,

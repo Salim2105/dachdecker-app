@@ -12,7 +12,8 @@ describe("gemeinsame Tagesrunde",()=>{
     const aufgaben=getReviewTasks();
     expect(new Set(aufgaben.map(a=>a.payload.typ))).toEqual(new Set(["fachwissen","mathe","sprache","aufbau","projekt","bild"]));
     expect(aufgaben.filter(a=>a.payload.typ==="aufbau")).toHaveLength(30);
-    expect(aufgaben.filter(a=>a.payload.typ==="projekt")).toHaveLength(6);
+    expect(aufgaben.filter(a=>a.payload.typ==="projekt")).toHaveLength(12);
+    expect(aufgaben.filter(a=>a.ref.id.startsWith("pruefungs-transfer-"))).toHaveLength(6);
     expect(aufgaben.filter(a=>a.payload.typ==="bild")).toHaveLength(24);
     expect(new Set(aufgaben.map(a=>reviewKey(a.ref))).size).toBe(aufgaben.length);
     for(const a of aufgaben)expect(validReviewTask(freezeReviewTask(a,()=>.4)),a.ref.id).toBe(true);

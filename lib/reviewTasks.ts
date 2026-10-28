@@ -11,6 +11,8 @@ import { DEUTSCH_EINHEITEN, ENGLISCH_EINHEITEN, type SprachAufgabe } from "@/lib
 import { berechneSchritte } from "@/lib/calc";
 import { instantiateExamQuestion } from "@/lib/exam";
 import { appStorage } from "@/lib/lernSpeicher";
+import { FALL_THEMEN } from "@/lib/pruefungsFaelle";
+import { erzeugePruefungsTransfer, pruefungsTransferFamilie } from "@/lib/pruefungsTransfer";
 import { ladeFortschritt } from "@/lib/progress";
 import { loadReviewRecords, reviewKey, validReviewRef, validReviewResult, type ReviewRef, type ReviewResult } from "@/lib/review";
 
@@ -39,7 +41,11 @@ export function getReviewTasks():ReviewTask[] {
   const aufbau:ReviewTask[]=AUFBAU_EINHEITEN.flatMap(e=>e.aufgabenIds.map(id=>({ref:{quelle:"mathe" as const,id,version:e.version,lernzielIds:[e.id]},titel:e.titel,thema:e.titel,route:`/grundlagen/mathe#${e.id}`,sekunden:240,tief:true,payload:{typ:"aufbau" as const,aufgabe:erzeugeAufbauAufgabe(id,0)}})));
   const projekt:ReviewTask[]=PROJEKT_TRANSFER.map(a=>({ref:{quelle:"projekt",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:a.route,sekunden:a.sekunden,tief:true,payload:{typ:"projekt",aufgabe:a}}));
   const bild:ReviewTask[]=BILD_AUFGABEN.map(a=>({ref:{quelle:"bild",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:`/bildtraining#${a.id}`,sekunden:a.minuten*60,tief:false,payload:{typ:"bild",aufgabe:a}}));
-  base=[...fach,...mathe,...sprache,...aufbau,...projekt,...bild];return base;
+  const pruefungsTransfer:ReviewTask[]=FALL_THEMEN.map(f=>{
+    const a=erzeugePruefungsTransfer(f.id);
+    return {ref:{quelle:"projekt",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:a.route,sekunden:a.sekunden,tief:true,payload:{typ:"projekt",aufgabe:a}};
+  });
+  base=[...fach,...mathe,...sprache,...aufbau,...projekt,...bild,...pruefungsTransfer];return base;
 }
 export function freezeReviewTask(task:ReviewTask,random:()=>number=Math.random):ReviewTask {
   const frozen=clone(task);
@@ -47,7 +53,10 @@ export function freezeReviewTask(task:ReviewTask,random:()=>number=Math.random):
     frozen.payload.aufgabe=instantiateExamQuestion(frozen.payload.aufgabe,random).task;
   }
   if(frozen.payload.typ==="aufbau") frozen.payload.aufgabe=erzeugeAufbauAufgabe(frozen.ref.id,Math.floor(random()*5));
-  if(frozen.payload.typ==="projekt") frozen.payload.aufgabe=instantiateProjektTransfer(frozen.ref.id,random);
+  if(frozen.payload.typ==="projekt") {
+    const familie=pruefungsTransferFamilie(frozen.ref.id);
+    frozen.payload.aufgabe=familie?erzeugePruefungsTransfer(familie,Math.min(2,Math.max(0,Math.floor(random()*3)))):instantiateProjektTransfer(frozen.ref.id,random);
+  }
   return frozen;
 }
 /** Old Fachwissen schedules are read directly; other sources use durable review records. */
