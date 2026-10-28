@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { AUFBAU_EINHEITEN } from "@/lib/matheAufbau";
 import { FALL_THEMEN } from "@/lib/pruefungsFaelle";
 import { appStorage } from "@/lib/lernSpeicher";
+import { useBearbeitungsSperre } from "@/components/useBearbeitungsSperre";
+import { pruefungsTransferRef } from "@/lib/pruefungsTransfer";
 import { recordReviewResult } from "@/lib/review";
 import { recordMatheNachweis, recordTransferNachweis } from "@/lib/kompetenzNachweise";
 import { registrierePruefungsHilfen } from "@/lib/pruefungsHilfen";
@@ -13,7 +15,10 @@ import styles from "./Mathe.module.css";
 function verarbeiteNachweis(v: PruefungsMatheVersuch) {
  if(v.abgegebenAm===null||!v.ergebnis)return;
  const data={versuchId:v.id,aufgabeId:v.aufgabenId,familie:v.familie,thema:v.aufgabe.typ==="aufbau"?v.aufgabe.aufgabe.titel:v.aufgabe.titel,variante:v.aufgabe.typ==="aufbau"?v.aufgabe.aufgabe.variante:v.aufgabe.variante,am:v.abgegebenAm,richtig:v.ergebnis.richtig,hilfen:v.hilfen,nachErklaerung:v.nachErklaerung,erstversuch:true};
- if(v.aufgabe.typ==="transfer")recordTransferNachweis(data);
+ if(v.aufgabe.typ==="transfer") {
+  recordTransferNachweis(data);
+  recordReviewResult({ref:pruefungsTransferRef(v.aufgabe.fallId),versuchId:v.id,bewertung:v.ergebnis.richtig?"richtig":v.ergebnis.erreicht?"teilweise":"falsch",am:v.abgegebenAm,hilfen:v.hilfen,nachErklaerung:v.nachErklaerung});
+ }
  else {
   recordMatheNachweis(data);
   recordReviewResult({ref:{quelle:"mathe",id:v.aufgabenId,version:1,lernzielIds:[v.familie]},versuchId:v.id,bewertung:v.ergebnis.richtig?"richtig":v.ergebnis.erreicht?"teilweise":"falsch",am:v.abgegebenAm,hilfen:v.hilfen,nachErklaerung:v.nachErklaerung});
@@ -21,11 +26,19 @@ function verarbeiteNachweis(v: PruefungsMatheVersuch) {
 }
 /** No worked example, formula or solved sketch precedes an independent answer. */
 export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
- const [stand,setStand]=useState(ladePruefungsMatheStand);
+ const sperre=useBearbeitungsSperre("dachdecker-pruefungsmathe-bearbeitung");
+ const darfBearbeiten=sperre.status==="frei"||sperre.status==="nicht-verfuegbar";
+ const [geladen]=useState(()=>{
+  const s=ladePruefungsMatheStand(),query=typeof window!=="undefined"?new URLSearchParams(window.location.search):new URLSearchParams();
+  const katalog=query.get("ansicht")==="pruefungsaufgaben"&&query.get("fortsetzen")!=="1";
+  return {stand:katalog&&s?{...s,aktiv:null}:s,letzteAktive:s?.aktiv??null};
+ });
+ const [stand,setStand]=useState(geladen.stand);
  const aktuell=useRef(stand);
  const [fehler,setFehler]=useState("");
  const v=stand?.versuche.find(v=>v.id===stand.aktiv), scopeId=v?.id??"", offen=v?.abgegebenAm===null;
  function speichern(neu:PruefungsMatheStand) {
+  if(!darfBearbeiten)return false;
   aktuell.current=neu;setStand(neu);
   try {speicherePruefungsMatheStand(neu);setFehler("");return true;}
   catch {setFehler("Dein Matheentwurf konnte noch nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen.");return false;}
@@ -35,16 +48,20 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
   speichern({...s,versuche:s.versuche.map(x=>x.id===s.aktiv?{...x,...patch}:x)});
  }
  useEffect(()=>{
+  if(!darfBearbeiten)return;
   try {for(const v of aktuell.current?.versuche??[])verarbeiteNachweis(v);}
   catch {queueMicrotask(()=>setFehler("Deine Antwort bleibt erhalten. Der Lernnachweis konnte noch nicht gespeichert werden; beim erneuten Öffnen versuchen wir es wieder."));}
- },[]);
+ },[darfBearbeiten]);
  useEffect(()=>{
-  if(!scopeId)return;
-  try {appStorage.setItem("lernwerkstatt-zuletzt-route","/grundlagen/mathe?ansicht=pruefungsaufgaben");}
+  if(!scopeId||!darfBearbeiten)return;
+  try {
+   window.history.replaceState(null,"","/grundlagen/mathe?ansicht=pruefungsaufgaben&fortsetzen=1");
+   appStorage.setItem("lernwerkstatt-zuletzt-route","/grundlagen/mathe?ansicht=pruefungsaufgaben&fortsetzen=1");
+  }
   catch {queueMicrotask(()=>setFehler("Dein Bearbeitungspunkt konnte noch nicht gespeichert werden. Bitte den Speicherhinweis prüfen."));}
- },[scopeId]);
+ },[scopeId,darfBearbeiten]);
  useEffect(()=>{
-  if(!scopeId||!offen)return;
+  if(!scopeId||!offen||!darfBearbeiten)return;
   const weg=registrierePruefungsHilfen(scopeId);
   const hilfe=(e:Event)=>{
    const detail=(e as CustomEvent<{art?:string;versuchId?:string}>).detail,s=aktuell.current;
@@ -58,7 +75,7 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
   };
   window.addEventListener("dachdecker:pruefung-hilfe",hilfe);
   return()=>{weg();window.removeEventListener("dachdecker:pruefung-hilfe",hilfe);};
- },[scopeId,offen]);
+ },[scopeId,offen,darfBearbeiten]);
  function starten(id:string,forceNeu=false) {
   const s=aktuell.current;if(!s)return;
   const unfertig=[...s.versuche].reverse().find(v=>v.aufgabenId===id&&v.abgegebenAm===null);
@@ -78,13 +95,18 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
   try {for(const v of s.versuche)verarbeiteNachweis(v);}
   catch {setFehler("Der Matheentwurf ist gesichert. Der Lernnachweis konnte noch nicht gespeichert werden. Versuche es erneut.");}
  }
+ if(!darfBearbeiten)return <section className="werkstatt-karte"><h1>{sperre.status==="pruefen"?"Prüfungs-Mathe wird geöffnet …":"Prüfungs-Mathe ist in einem anderen Fenster geöffnet"}</h1><p role={sperre.status==="gesperrt"?"alert":"status"}>{sperre.status==="pruefen"?"Wir prüfen, ob du hier sicher weiterarbeiten kannst.":sperre.fehler}</p>{sperre.status==="gesperrt"&&<button className="hauptaktion mt-4" onClick={()=>window.location.reload()}>Erneut öffnen</button>}{zurueck&&<button className={styles.back} onClick={zurueck}>← Zur Fachmathe</button>}</section>;
+ const kompatibilitaet=sperre.status==="nicht-verfuegbar"?<p role="status" className="my-4 rounded-xl border p-4" style={{borderColor:"var(--border)"}}>{sperre.fehler}</p>:null;
  const fehlerHinweis=fehler?<div role="alert" className={styles.fehler}><p>{fehler}</p><button className={styles.back} onClick={erneutSichern}>Stand erneut sichern</button></div>:null;
  if(!stand)return <section className="werkstatt-karte"><h1>Dein Mathe-Prüfungsstand bleibt erhalten.</h1><p role="alert">Der gespeicherte Stand kann nicht gelesen werden. Er wird nicht überschrieben. Sichere deine Daten unter Lernstand &amp; Sicherungen.</p>{zurueck&&<button className={styles.back} onClick={zurueck}>Zur Fachmathe</button>}</section>;
+ const fortsetzung=stand.versuche.find(a=>a.id===geladen.letzteAktive&&a.abgegebenAm===null)??[...stand.versuche].reverse().find(a=>a.abgegebenAm===null);
  if(!v)return <div>
   {zurueck&&<button className={styles.back} onClick={zurueck}>← Zur Fachmathe</button>}
   <header className={styles.unitHead}><span>SELBSTSTÄNDIG RECHNEN</span><h1>Dein Rechenweg zählt.</h1><p>30 Aufgaben ohne vorangestellte Lösung. Erst selbst rechnen, danach Wert, Einheit und eigenen Formelansatz vergleichen. Frühere Lernaufgaben und ihre Stände bleiben erhalten.</p></header>
+  {kompatibilitaet}
   <p className="mb-6">Der einfache Taschenrechner ist zugelassen. Begriffserklärungen und Formelhilfen werden als Unterstützung erfasst. Dies ist App-Training, keine amtliche Prüfung.</p>
   {fehlerHinweis}
+  {fortsetzung&&<section className="werkstatt-karte mb-6"><h2>Dein angefangener Rechenweg bleibt erhalten</h2><p>{fortsetzung.aufgabe.typ==="aufbau"?fortsetzung.aufgabe.aufgabe.titel:fortsetzung.aufgabe.titel}</p><button className="hauptaktion mt-3" onClick={()=>speichern({...stand,aktiv:fortsetzung.id})}>Angefangenen Rechenweg fortsetzen</button></section>}
   {AUFBAU_EINHEITEN.map(e=><section key={e.id} className="mb-7"><h2 className="mb-3 text-xl font-semibold">{e.titel}</h2><div className={styles.grid}>{PRUEFUNGS_MATHE_AUFGABEN.filter(a=>a.familie===e.id).map((a,i)=>{const unfertig=stand.versuche.find(v=>v.aufgabenId===a.id&&v.abgegebenAm===null);return <button key={a.id} className={styles.card} onClick={()=>starten(a.id)}><span className={styles.nummer}>{i+1}</span><span><strong>{a.titel}</strong><small>{unfertig?"Angefangene Aufgabe fortsetzen":"Selbsttest öffnen"}</small><span>Auftrag, eigene Formelnotiz und Rechenschritte</span></span></button>;})}</div></section>)}
   <section className="mb-7"><h2 className="mb-3 text-xl font-semibold">Auf einen anderen Zusammenhang übertragen</h2><p className="mb-4">Hier verändert sich der Auftrag. Neue Zahlen allein wären noch kein anderer Zusammenhang.</p><div className={styles.grid}>{FALL_THEMEN.map(f=><button className={styles.card} key={f.id} onClick={()=>starten(`transfer:${f.id}`)}><span><strong>{f.titel}</strong><small>Kurze Transferaufgabe</small></span></button>)}</div></section>
   {!!stand.versuche.length&&<details className="werkstatt-karte"><summary className="min-h-11 cursor-pointer font-semibold">Frühere Versuche und Entwürfe ({stand.versuche.length})</summary><ul className="mt-3 space-y-2">{[...stand.versuche].reverse().map(a=><li key={a.id}><button className={styles.back} onClick={()=>speichern({...stand,aktiv:a.id})}>{a.aufgabe.typ==="aufbau"?a.aufgabe.aufgabe.titel:a.aufgabe.titel} · {new Date(a.gestartetAm).toLocaleDateString("de-DE")} · {a.ergebnis?`${a.ergebnis.erreicht}/${a.ergebnis.moeglich} Punkte`:"Entwurf"}</button></li>)}</ul></details>}
@@ -93,6 +115,7 @@ export function PruefungsMathe({zurueck}:{zurueck?:()=>void}) {
  return <div className={styles.einheit}>
   <button className={styles.back} onClick={()=>speichern({...stand,aktiv:null})}>← Alle selbstständigen Matheaufgaben</button>
   <header className={styles.unitHead}><span>PRÜFUNGS-MATHE · {aufgabe.typ==="transfer"?"VERÄNDERTER ZUSAMMENHANG":"EIGENER RECHENWEG"}</span><h1>{aufgabe.typ==="aufbau"?aufgabe.aufgabe.titel:aufgabe.titel}</h1><p>Die Lösung bleibt bis zu deiner Abgabe verborgen. Die Zahlen bleiben pro Versuch fest gespeichert.</p></header>
+  {kompatibilitaet}
   <section className={styles.task} data-aufgabe-id={v.aufgabenId} data-aufgabe-text={aufgabe.typ==="aufbau"?aufgabe.aufgabe.frage:aufgabe.frage}>
    <h2>{aufgabe.typ==="aufbau"?aufgabe.aufgabe.frage:aufgabe.frage}</h2>
    {aufgabe.typ==="aufbau"&&<ul className="my-5 list-disc space-y-2 pl-5" aria-label="Gegebene Größen">{aufgabe.aufgabe.gegeben.map(g=><li key={g}>{g}</li>)}</ul>}
