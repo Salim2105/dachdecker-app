@@ -66,9 +66,8 @@ export function selectReviewTasks(filter:ReviewFilter,minuten:number,now=Date.no
   const queues=[...quellen.values()].map(gs=>{const out:ReviewTask[]=[];for(let i=0;i<Math.max(0,...gs.map(g=>g.length));i++)for(const g of gs)if(g[i])out.push(g[i]);return out;});
   for(let i=0;i<Math.max(0,...queues.map(q=>q.length));i++)for(const q of queues)if(q[i])neue.push(q[i]);
   const auswahl:ReviewTask[]=[];let budget=minuten*60*.8;
-  if(faellig.length&&faellig[0].sekunden>budget)return [faellig[0]];
   for(const t of [...faellig,...neue])if(t.sekunden<=budget){auswahl.push(t);budget-=t.sekunden;}
-  return auswahl.length?auswahl:([...faellig,...neue].slice(0,1));
+  return auswahl;
 }
 export function createReviewSession(filter:ReviewFilter,minuten:number,now=Date.now(),random:()=>number=Math.random):ReviewSession {
   return {version:1,id:`runde-${now}-${Math.floor(random()*1e9)}`,filter,minuten,startedAt:now,index:0,tasks:selectReviewTasks(filter,minuten,now).map(t=>freezeReviewTask(t,random)),answers:{},results:{}};

@@ -37,10 +37,12 @@ describe("gemeinsame Tagesrunde",()=>{
     const a=task("fachwissen");speichereBewertung(a.ref.id,"falsch",{am:jetzt-2*86400000});
     expect(selectReviewTasks("alles",5,jetzt,[task("sprache"),a])[0].ref.id).toBe(a.ref.id);
   });
-  it("bietet lange fällige Rechenketten vollständig an",()=>{
+  it("bietet lange fällige Rechenketten nur in einem passenden Zeitfenster vollständig an",()=>{
     const a={...task("aufbau"),sekunden:400};
     recordReviewResult({ref:a.ref,versuchId:"kette",am:jetzt-3*86400000,bewertung:"falsch",hilfen:[]});
-    expect(selectReviewTasks("alles",5,jetzt,[task("sprache"),a])).toEqual([a]);
+    expect(selectReviewTasks("alles",5,jetzt,[task("sprache"),a])).toEqual([task("sprache")]);
+    expect(selectReviewTasks("alles",5,jetzt,[a])).toEqual([]);
+    expect(selectReviewTasks("alles",15,jetzt,[a])[0]).toEqual(a);
   });
   it("mischt neue Quellen auch bei großem Fachwissenpool",()=>{
     const selection=selectReviewTasks("alles",30,jetzt);

@@ -24,6 +24,6 @@ export function zeitAuswahl(aufgaben: Aufgabe[], minuten: number): Aufgabe[] {
       sekunden += dauer;
     }
   }
-  // Auch eine einzelne längere Aufgabe ist sinnvoller als eine leere Runde.
-  return auswahl.length ? auswahl : aufgaben.slice(0, 1);
+  // Never disguise a long task as a short round. Offer a larger time slot instead.
+  return auswahl;
 }
