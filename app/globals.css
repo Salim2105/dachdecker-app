@@ -501,3 +501,83 @@ body.min-h-screen, .app-shell { min-height: calc(100dvh / var(--app-zoom, 1)); }
   .home-aufgeraeumt .home-art-sticker { bottom: 15px; left: 25px; }
   .home-aufgeraeumt .home-hero-detail { max-width: none; }
 }
+
+/* Zusammenhängende Prüfungsvorbereitung. */
+.vorbereitung-seitenkopf { margin-bottom:22px; }
+.vorbereitung-seitenkopf p { color:var(--text-muted); margin-top:10px; }
+.vorbereitung-kicker { display:block; color:var(--accent); font-size:11px; font-weight:750; letter-spacing:.1em; margin-bottom:10px; }
+.vorbereitung-tabs, .vorbereitung-aktionen { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 24px; }
+.vorbereitung-tabs button, .vorbereitung-aktionen button, .vorbereitung-konfiguration button, .vorbereitung-aufgabe button:not(.hauptaktion) { min-height:44px; border:1px solid var(--border); padding:9px 14px; border-radius:12px; background:var(--surface); color:var(--text); }
+.vorbereitung-tabs button[aria-current], .vorbereitung-konfiguration button[aria-pressed="true"] { color:var(--on-tint-orange); background:var(--tint-orange); border-color:var(--brand-orange); font-weight:650; }
+.vorbereitung-einstieg { display:flex; align-items:center; gap:24px; background:var(--ink); color:#fff8ef; padding:clamp(24px,4vw,38px); border-radius:25px; overflow:hidden; }
+.vorbereitung-einstieg>div { flex:1; }
+.vorbereitung-einstieg h2 { font-size:clamp(26px,3vw,38px); letter-spacing:-.035em; line-height:1.2; font-weight:750; max-width:18ch; }
+.vorbereitung-einstieg p { color:#d3e1e8; max-width:60ch; margin-top:16px; font-size:14px; }
+.vorbereitung-einstieg .vorbereitung-kicker { color:#ffbc91; }
+.vorbereitung-dach { font-size:140px; line-height:1; color:#ffc39a; transform:rotate(-7deg); padding:10px; }
+.vorbereitung-einstieg p.vorbereitung-profil { display:inline-block; padding:10px 14px; border:1px solid #ffffff38; border-radius:12px; font-size:12px; }
+.vorbereitung-profil strong { color:#f0d99c; font-weight:500; }
+.vorbereitung-fortsetzen { margin:20px 0; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:14px; border:1px solid var(--accent); border-radius:18px; padding:20px; background:var(--surface); }
+.vorbereitung-fortsetzen h3 { font-size:20px; font-weight:650; }
+.vorbereitung-fortsetzen p { color:var(--text-muted); margin-top:4px; }
+.vorbereitung-konfiguration { border:1px solid var(--border-soft); border-radius:20px; padding:20px; margin:24px 0; background:var(--surface); }
+.vorbereitung-konfiguration legend { padding:0 8px; font-weight:650; }
+.vorbereitung-konfiguration div[role="group"] { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:14px; }
+.vorbereitung-konfiguration label { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:12px; }
+.vorbereitung-konfiguration p, .vorbereitung-hinweis { color:var(--text-muted); font-size:13px; margin-top:16px; line-height:1.7; }
+.vorbereitung-konfiguration select { border:1px solid var(--border); border-radius:10px; padding:8px; color:var(--text); background:var(--surface); min-height:44px; }
+.vorbereitung-fallraster { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.vorbereitung-fallraster article { display:flex; flex-direction:column; align-items:flex-start; border:1px solid var(--border-soft); padding:24px; border-radius:22px; background:var(--surface); box-shadow:var(--shadow-sm); }
+.vorbereitung-fallraster article:nth-child(3n+2) { background:var(--tint-teal); color:var(--on-tint-teal); }
+.vorbereitung-fallraster article:nth-child(3n+3) { background:var(--tint-violet); color:var(--on-tint-violet); }
+.vorbereitung-nummer { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:13px; background:var(--tint-orange); color:var(--on-tint-orange); font-size:19px; font-weight:750; margin-bottom:18px; }
+.vorbereitung-fallraster h3 { font-size:21px; font-weight:700; line-height:1.25; letter-spacing:-.025em; }
+.vorbereitung-fallraster p { line-height:1.7; font-size:14px; margin:13px 0; }
+.vorbereitung-fallraster small { font-size:12px; margin:auto 0 16px; }
+.vorbereitung-fallraster .hauptaktion { min-height:46px; padding:10px 16px; font-size:14px; margin-top:auto; }
+.vorbereitung-arbeitskopf { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; margin:18px 0; color:var(--text-muted); font-size:14px; }
+.vorbereitung-arbeitskopf>button { min-height:44px; color:var(--accent); }
+.vorbereitung-arbeitskopf strong { color:var(--text); padding:8px 12px; background:var(--tint-orange); border-radius:10px; }
+.vorbereitung-teilnavigation { display:flex; flex-wrap:wrap; gap:7px; margin:20px 0; }
+.vorbereitung-teilnavigation button { min-width:44px; min-height:44px; padding:8px; border:1px solid var(--border); border-radius:10px; background:var(--surface); }
+.vorbereitung-teilnavigation button[aria-current] { background:var(--accent); color:var(--accent-text); }
+.vorbereitung-fallakte { border:1px solid var(--border-soft); border-radius:20px; background:var(--surface); margin-bottom:20px; }
+.vorbereitung-fallakte summary { padding:18px 22px; font-weight:650; cursor:pointer; min-height:48px; }
+.vorbereitung-dossier { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:center; padding:0 22px 22px; }
+.vorbereitung-dossier p { line-height:1.8; font-size:14px; }
+.vorbereitung-dossier ul { padding-left:20px; list-style:disc; font-size:14px; margin-top:12px; }
+.vorbereitung-dossier svg { width:100%; height:auto; }
+.vorbereitung-aufgabe { padding:clamp(20px,3vw,32px); background:var(--surface); border:1px solid var(--border-soft); border-radius:24px; }
+.vorbereitung-aufgabe h2 { font-size:clamp(23px,2.4vw,30px); font-weight:700; line-height:1.3; }
+.vorbereitung-aufgabe h3 { font-size:18px; font-weight:650; margin:16px 0 10px; }
+.vorbereitung-auftrag { font-size:17px; line-height:1.8; margin:14px 0 24px; max-width:65ch; }
+.vorbereitung-aufgabe label, .vorbereitung-taschenrechner label { display:block; font-weight:550; font-size:14px; margin:14px 0; }
+.vorbereitung-aufgabe :is(textarea,input:not([type]),input[type="text"],select), .vorbereitung-taschenrechner input { width:100%; min-width:0; min-height:46px; padding:11px; border:1px solid var(--border); border-radius:11px; background:var(--surface); color:var(--text); margin-top:7px; font-size:16px; }
+.vorbereitung-aufgabe textarea { min-height:100px; line-height:1.75; }
+.vorbereitung-aufgabe input[type="checkbox"], .vorbereitung-konfiguration input[type="checkbox"] { width:20px; height:20px; flex-shrink:0; accent-color:var(--accent); }
+.vorbereitung-aufgabe label.vorbereitung-auswahl { display:flex; align-items:flex-start; gap:12px; padding:15px; border:1px solid var(--border); border-radius:13px; line-height:1.7; }
+.vorbereitung-auswahl input { margin-top:3px; }
+.vorbereitung-rechenschritt { margin:20px 0; padding:18px; border-radius:16px; background:var(--surface-2); }
+.vorbereitung-rechenschritt p { font-size:13px; color:var(--text-muted); }
+.vorbereitung-zahleneingabe { display:grid; grid-template-columns:1fr 150px; gap:15px; }
+.vorbereitung-reihenfolge { list-style:none; padding:0; }
+.vorbereitung-reihenfolge li { display:flex; align-items:center; gap:8px; border:1px solid var(--border); border-radius:13px; padding:12px; margin:10px 0; }
+.vorbereitung-reihenfolge li span { flex:1; min-width:0; font-size:14px; }
+.vorbereitung-aufgabe .vorbereitung-reihenfolge button { padding:8px 12px; flex-shrink:0; }
+.vorbereitung-vergleich, .vorbereitung-naechste { margin-top:24px; border-radius:18px; background:var(--tint-teal); color:var(--on-tint-teal); padding:20px; }
+.vorbereitung-vergleich p, .vorbereitung-vergleich li { font-size:14px; line-height:1.8; margin:8px 0; }
+.vorbereitung-vergleich details, .vorbereitung-vergleich fieldset { margin-top:16px; }
+.vorbereitung-vergleich summary { cursor:pointer; min-height:44px; padding:10px 0; }
+.vorbereitung-ergebnis { padding:24px; border-radius:22px; background:var(--tint-violet); color:var(--on-tint-violet); }
+.vorbereitung-ergebnis h2 { font-size:28px; font-weight:700; margin:8px 0; }
+.vorbereitung-ergebnis a, .vorbereitung-naechste a { display:inline-block; text-decoration:underline; text-underline-offset:4px; min-height:44px; padding:10px 0; }
+.vorbereitung-naechste p { margin:12px 0; }
+.vorbereitung-fehler { padding:18px; border:2px solid var(--bad); border-radius:15px; margin:16px 0; }
+.vorbereitung-verlauf { margin:20px 0; border-top:1px solid var(--border); padding-top:16px; }
+.vorbereitung-verlauf summary { min-height:44px; cursor:pointer; }
+.vorbereitung-verlauf button { display:block; min-height:44px; padding:10px 0; text-align:left; color:var(--accent); }
+.vorbereitung-taschenrechner p { margin:12px 0; font-size:14px; }
+.vorbereitung-taschenrechner output { display:block; font-size:28px; font-weight:700; overflow-wrap:anywhere; margin:18px 0; }
+.vorbereitung-taschenrechner details { margin:18px 0; }
+@media(max-width:1100px) { .vorbereitung-fallraster { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:600px) { .vorbereitung-fallraster, .vorbereitung-dossier, .vorbereitung-zahleneingabe { grid-template-columns:1fr; } .vorbereitung-dach { display:none; } .vorbereitung-tabs button { flex:1; font-size:13px; padding:9px; } .vorbereitung-rechenschritt { padding:12px; } .vorbereitung-reihenfolge li { flex-wrap:wrap; } .vorbereitung-reihenfolge li span { flex-basis:100%; } }
