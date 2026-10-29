@@ -6,7 +6,7 @@ import { useBearbeitungsSperre } from "@/components/useBearbeitungsSperre";
 import { appStorage, flushStorage } from "@/lib/lernSpeicher";
 import { registrierePruefungsHilfen } from "@/lib/pruefungsHilfen";
 import { WERKSTATT_PFADE, getWerkstattEinheit, getWerkstattPfad } from "@/lib/werkstattInhalte";
-import { syncWerkstattNachweise } from "@/lib/werkstattNachweise";
+import { syncWerkstattNachweise, werkstattNacharbeitAusVorversuchen } from "@/lib/werkstattNachweise";
 import { archiviereWerkstattStand, hilfeWerkstatt, ladeWerkstattStand, neuerWerkstattStand, parseWerkstattStand, pruefeWerkstattAufgabe, setWerkstattModus, speichereWerkstattStand, werkstattKey } from "@/lib/werkstattStand";
 import type { WerkstattAnsicht, WerkstattAntwort, WerkstattEinheit as Einheit, WerkstattStand } from "@/lib/werkstattTypen";
 import { WerkstattAufgabe } from "./WerkstattAufgabe";
@@ -134,7 +134,7 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     speichern(patch({ antworten: { ...mitHilfe.antworten, [aufgabe.id]: antwort }, geprueft: mitHilfe.geprueft.filter(id => id !== aufgabe.id), abgeschlossenAm: null }, mitHilfe));
   }
   function pruefen() {
-    try { speichern(pruefeWerkstattAufgabe(aktuell.current!, aufgabe.id)); }
+    try { const now = Date.now(); speichern(pruefeWerkstattAufgabe(aktuell.current!, aufgabe.id, now, werkstattNacharbeitAusVorversuchen(aktuell.current!, now))); }
     catch (err) { setFehler(textFehler(err)); }
   }
   function phaseWaehlen(phase: WerkstattStand["phase"]) {

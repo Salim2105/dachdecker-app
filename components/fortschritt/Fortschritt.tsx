@@ -8,6 +8,7 @@ import { progressStore } from "@/lib/progressStore";
 import { useProgress } from "@/components/useProgress";
 import { Wiederholung } from "@/components/session/Wiederholung";
 import { Datensicherung } from "@/components/fortschritt/Datensicherung";
+import { WerkstattFortschritt } from "@/components/fortschritt/WerkstattFortschritt";
 
 const STATUS: LernStatus[] = ["neu", "unsicher", "erinnert", "gefestigt", "faellig"];
 export function Fortschritt() {
@@ -62,6 +63,7 @@ export function Fortschritt() {
           ))}
         </details>)}
       </div>
+      <WerkstattFortschritt />
       <Datensicherung />
       <div className="mt-8 border-t pt-4" style={{ borderColor: "var(--border)" }}>
         {loeschenGefragt ? <div>
