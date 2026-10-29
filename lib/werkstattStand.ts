@@ -130,7 +130,7 @@ export function neuerWerkstattStand(einheit: WerkstattEinheit, now = Date.now())
   if (!validWerkstattEinheit(einheit) || !zeit(now)) throw new Error("Die Werkstatteinheit ist unvollständig.");
   return { version: 1, id: `werkstatt-${globalThis.crypto.randomUUID()}`, revision: 0, erstelltAm: now, aktualisiertAm: now,
     einheit: clone(einheit), modus: "begleitet", phase: "anleitung", schritt: 0, aufgabeIndex: 0, ansicht: einheit.bildschritte[0].ansicht, wasser: 0,
-    antworten: Object.fromEntries(einheit.aufgaben.map(a => [a.id, emptyWerkstattAntwort(a)])), abgaben: {}, geprueft: [], gesehen: [], hilfen: [], notiz: "", abgeschlossenAm: null };
+    antworten: Object.fromEntries(einheit.aufgaben.map(a => [a.id, emptyWerkstattAntwort(a)])), abgaben: {}, geprueft: [], gesehen: [], hilfen: [], hilfeEreignisse: [], notiz: "", abgeschlossenAm: null };
 }
 function validAbgabe(v: unknown, a: WerkstattAufgabe, s: WerkstattStand): v is WerkstattAbgabe {
   if (!obj(v) || !text(v.id, 500) || !zeit(v.am) || v.am < s.erstelltAm || v.am > s.aktualisiertAm || !validAntwort(v.antwort, a) || !werkstattAntwortVollstaendig(a, v.antwort) || !obj(v.bewertung) || !hilfen(v.hilfen) || !v.hilfen.every(h => s.hilfen.includes(h)) || typeof v.nachErklaerung !== "boolean" || !MODI.includes(String(v.modus))) return false;
@@ -142,6 +142,7 @@ export function parseWerkstattStand(raw: string | null): WerkstattStand | null {
     const v: unknown = JSON.parse(raw);
     if (!obj(v) || v.version !== 1 || !safeKey(v.id) || !ganz(v.revision, 0, Number.MAX_SAFE_INTEGER) || !zeit(v.erstelltAm) || !zeit(v.aktualisiertAm) || v.aktualisiertAm < v.erstelltAm || !validWerkstattEinheit(v.einheit) || !MODI.includes(String(v.modus)) || !["anleitung", "uebung", "praxis"].includes(String(v.phase)) || !ganz(v.schritt, 0, v.einheit.bildschritte.length - 1) || (v.aufgabeIndex !== undefined && !ganz(v.aufgabeIndex, 0, 1)) || !ANSICHTEN.includes(String(v.ansicht)) || !ganz(v.wasser, 0, 5) || !obj(v.antworten) || !obj(v.abgaben) || !ids(v.geprueft, 2) || !ids(v.gesehen, 6) || !hilfen(v.hilfen) || !str(v.notiz) || !(v.abgeschlossenAm === null || zeit(v.abgeschlossenAm) && v.abgeschlossenAm >= v.erstelltAm && v.abgeschlossenAm <= v.aktualisiertAm)) return null;
     const s = v as unknown as WerkstattStand;
+    if (s.hilfeEreignisse !== undefined && (!Array.isArray(s.hilfeEreignisse) || s.hilfeEreignisse.length > 1000 || !s.hilfeEreignisse.every((e, i) => obj(e) && text(e.id, 500) && s.hilfen.includes(e.id) && zeit(e.am) && e.am >= s.erstelltAm && e.am <= s.aktualisiertAm && (i === 0 || e.am >= s.hilfeEreignisse![i - 1].am)))) return null;
     const aufgaben = s.einheit.aufgaben;
     if (Object.keys(s.antworten).length !== aufgaben.length || !Object.keys(s.antworten).every(id => aufgaben.some(a => a.id === id)) || Object.keys(s.abgaben).length > 2 || !Object.keys(s.abgaben).every(id => aufgaben.some(a => a.id === id)) || !s.geprueft.every(id => aufgaben.some(a => a.id === id)) || !s.gesehen.every(id => s.einheit.bildschritte.some(b => b.id === id))) return null;
     const abgabeIds: string[] = [];
@@ -176,6 +177,8 @@ export function speichereWerkstattStand(s: WerkstattStand): void {
     if (s.revision <= alt.revision || s.aktualisiertAm < alt.aktualisiertAm) throw new Error("Ein neuerer Werkstattstand ist bereits gespeichert. Bitte neu öffnen.");
     if (!gleich(alt.einheit, s.einheit) || alt.erstelltAm !== s.erstelltAm) throw new Error("Die Übungsangaben eines begonnenen Versuchs bleiben unverändert.");
     if (alt.hilfen.some(h => !s.hilfen.includes(h)) || alt.gesehen.some(id => !s.gesehen.includes(id))) throw new Error("Bereits geöffnete Erklärungen und Hilfen bleiben dokumentiert.");
+    const ereignisse = alt.hilfeEreignisse ?? [];
+    if (ereignisse.length > 0 && !gleich(ereignisse, s.hilfeEreignisse?.slice(0, ereignisse.length))) throw new Error("Die Zeitpunkte bereits geöffneter Hilfen bleiben unverändert.");
     for (const [id, verlauf] of Object.entries(alt.abgaben)) if (!gleich(verlauf, s.abgaben[id]?.slice(0, verlauf.length))) throw new Error("Frühere Antworten und Bewertungen bleiben unverändert.");
   }
   if (alt && alt.id !== s.id && appStorage.getItem(werkstattArchivKey(alt)) !== raw) throw new Error("Bitte den bisherigen Werkstattversuch zuerst archivieren.");
@@ -189,17 +192,28 @@ export function archiviereWerkstattStand(s: WerkstattStand): void {
   appStorage.setItem(werkstattArchivKey(s), JSON.stringify(s));
 }
 function bearbeiten(s: WerkstattStand, now = Date.now()): WerkstattStand {
+  if (!zeit(now)) throw new Error("Ungültiger Bearbeitungszeitpunkt.");
   const neu = clone(s); neu.revision++; neu.aktualisiertAm = Math.max(s.aktualisiertAm, now); return neu;
 }
-export function hilfeWerkstatt(s: WerkstattStand, id: string): WerkstattStand {
-  if (!text(id, 500)) throw new Error("Die Lernhilfe ist unbekannt.");
-  if (s.hilfen.includes(id)) return clone(s);
-  const neu = bearbeiten(s); neu.hilfen.push(id); return neu;
+/** Record actual exposure, including opening an already known guide again later. */
+function markiereHilfe(s: WerkstattStand, id: string): boolean {
+  const ereignisse = s.hilfeEreignisse ?? [];
+  const doppelt = ereignisse.some(e => e.id === id && s.aktualisiertAm - e.am >= 0 && s.aktualisiertAm - e.am <= 1000);
+  if (doppelt && s.hilfen.includes(id)) return false;
+  if (ereignisse.length >= 1000) throw new Error("Dieser Werkstattversuch enthält bereits sehr viele Hilfen. Sichere und archiviere ihn, bevor du einen neuen Versuch beginnst.");
+  if (!s.hilfen.includes(id)) s.hilfen.push(id);
+  s.hilfeEreignisse = [...ereignisse, { id, am: s.aktualisiertAm }];
+  return true;
 }
-export function setWerkstattModus(s: WerkstattStand, modus: "begleitet" | "probelauf"): WerkstattStand {
+export function hilfeWerkstatt(s: WerkstattStand, id: string, now = Date.now()): WerkstattStand {
+  if (!text(id, 500)) throw new Error("Die Lernhilfe ist unbekannt.");
+  const neu = bearbeiten(s, now);
+  return markiereHilfe(neu, id) ? neu : clone(s);
+}
+export function setWerkstattModus(s: WerkstattStand, modus: "begleitet" | "probelauf", now = Date.now()): WerkstattStand {
   if (!MODI.includes(modus)) throw new Error("Unbekannter Werkstattmodus.");
-  const neu = bearbeiten(s); neu.modus = modus;
-  if (modus === "begleitet" && !neu.hilfen.includes("begleitung")) neu.hilfen.push("begleitung");
+  const neu = bearbeiten(s, now); neu.modus = modus;
+  if (modus === "begleitet") markiereHilfe(neu, "begleitung");
   return neu;
 }
 export function pruefeWerkstattAufgabe(s: WerkstattStand, aufgabeId: string, now = Date.now()): WerkstattStand {
@@ -210,7 +224,7 @@ export function pruefeWerkstattAufgabe(s: WerkstattStand, aufgabeId: string, now
   if (!werkstattAntwortVollstaendig(a, antwort)) throw new Error("Bearbeite zuerst die vollständige Aufgabe und prüfe deine Eingaben.");
   if (!zeit(now)) throw new Error("Ungültiger Bewertungszeitpunkt.");
   const neu = bearbeiten(s, now), verlauf = neu.abgaben[a.id] ?? [];
-  if (neu.modus === "begleitet" && !neu.hilfen.includes("begleitung")) neu.hilfen.push("begleitung");
+  if (neu.modus === "begleitet") markiereHilfe(neu, "begleitung");
   const hilfsListe = neu.hilfen.filter(h => h === "begleitung" || h.startsWith("bildschritt:") || h.startsWith("begriff:") || h.startsWith(`${a.id}:`));
   const abgabe: WerkstattAbgabe = { id: `${neu.id}:${a.id}:${verlauf.length}`, am: neu.aktualisiertAm, antwort: clone(antwort), bewertung: bewerteWerkstattAufgabe(a, antwort), hilfen: hilfsListe, nachErklaerung: verlauf.length > 0, modus: neu.modus };
   neu.abgaben[a.id] = [...verlauf, abgabe]; neu.geprueft.push(a.id); neu.abgeschlossenAm = null;

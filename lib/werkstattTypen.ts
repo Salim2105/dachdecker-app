@@ -58,5 +58,7 @@ export interface WerkstattStand {
   einheit: WerkstattEinheit; modus: "begleitet" | "probelauf";
   phase: "anleitung" | "uebung" | "praxis"; schritt: number; aufgabeIndex?: number; ansicht: WerkstattAnsicht; wasser: number;
   antworten: Record<string, WerkstattAntwort>; abgaben: Record<string, WerkstattAbgabe[]>;
-  geprueft: string[]; gesehen: string[]; hilfen: string[]; notiz: string; abgeschlossenAm: number | null;
+  geprueft: string[]; gesehen: string[]; hilfen: string[];
+  hilfeEreignisse?: { id: string; am: number }[];
+  notiz: string; abgeschlossenAm: number | null;
 }

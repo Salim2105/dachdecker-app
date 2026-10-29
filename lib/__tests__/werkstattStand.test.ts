@@ -197,4 +197,40 @@ describe("Werkstatt: verlässliche Momentaufnahmen und Erstantworten", () => {
     const ohneHilfe = { ...s, gesehen: [s.einheit.bildschritte[0].id] };
     expect(parseWerkstattStand(JSON.stringify(ohneHilfe))).toBeNull();
   });
+  it("speichert tatsächliche Hilfezeitpunkte und eine spätere erneute Öffnung derselben Anleitung", () => {
+    const frisch = neuerWerkstattStand(einheit(), 1000);
+    expect(frisch.hilfeEreignisse).toEqual([]);
+    const id = `bildschritt:${frisch.einheit.bildschritte[0].id}`;
+    const einmal = hilfeWerkstatt(frisch, id, 2000);
+    expect(einmal.hilfeEreignisse).toEqual([{ id, am: 2000 }]);
+    expect(hilfeWerkstatt(einmal, id, 2500)).toEqual(einmal);
+    const wieder = hilfeWerkstatt(einmal, id, 4000);
+    expect(wieder.hilfen).toEqual([id]);
+    expect(wieder.hilfeEreignisse).toEqual([{ id, am: 2000 }, { id, am: 4000 }]);
+    const gewechselt = setWerkstattModus(setWerkstattModus(wieder, "begleitet", 5000), "probelauf", 6000);
+    expect(gewechselt.hilfeEreignisse).toEqual([{ id, am: 2000 }, { id, am: 4000 }, { id: "begleitung", am: 5000 }]);
+    speichereWerkstattStand(gewechselt); expect(ladeWerkstattStand(gewechselt.einheit.id)).toEqual(gewechselt);
+  });
+  it("erhält Hilfezeitpunkte als unveränderlichen Verlauf", () => {
+    const id = "begleitung";
+    let s = hilfeWerkstatt(neuerWerkstattStand(einheit(), 1000), id, 2000);
+    speichereWerkstattStand(s);
+    s = hilfeWerkstatt(s, id, 4000); speichereWerkstattStand(s);
+    expect(() => speichereWerkstattStand({ ...s, revision: s.revision + 1, hilfeEreignisse: [] })).toThrow(/Zeitpunkte/);
+    const verschoben = clone(s); verschoben.revision++; verschoben.hilfeEreignisse![0].am = 3000;
+    expect(() => speichereWerkstattStand(verschoben)).toThrow(/Zeitpunkte/);
+    expect(ladeWerkstattStand(s.einheit.id)).toEqual(s);
+  });
+  it("prüft importierte Hilfezeiten und erhält ältere Stände ohne Zeitprotokoll", () => {
+    const s = hilfeWerkstatt(neuerWerkstattStand(einheit(), 1000), "begleitung", 2000);
+    for (const ereignisse of [
+      [{ id: "begleitung", am: 999 }], [{ id: "begleitung", am: 2001 }],
+      [{ id: "fremd", am: 2000 }], [{ id: "begleitung", am: 2000 }, { id: "begleitung", am: 1500 }],
+      Array.from({ length: 1001 }, () => ({ id: "begleitung", am: 2000 })),
+    ]) expect(parseWerkstattStand(JSON.stringify({ ...s, hilfeEreignisse: ereignisse }))).toBeNull();
+    const alt = clone(s); delete alt.hilfeEreignisse;
+    expect(parseWerkstattStand(JSON.stringify(alt))).toEqual(alt);
+    const fortgesetzt = hilfeWerkstatt(alt, "begleitung", 4000);
+    expect(fortgesetzt.hilfeEreignisse).toEqual([{ id: "begleitung", am: 4000 }]);
+  });
 });
