@@ -6,6 +6,8 @@ import { MATHE_EINHEITEN, type MatheAufgabe } from "@/lib/matheGrundlagen";
 import { AUFBAU_EINHEITEN, erzeugeAufbauAufgabe, type AufbauAufgabe, type AufbauAntwort } from "@/lib/matheAufbau";
 import { PROJEKT_TRANSFER, instantiateProjektTransfer, type ProjektTransfer } from "@/lib/bauprojekte";
 import { BILD_AUFGABEN, type BildAufgabe } from "@/lib/bildtraining";
+import { WERKSTATT_WIEDERHOLUNGEN, getWerkstattWiederholung, werkstattWiederholungRoute } from "@/lib/werkstattWiederholung";
+import { istPraxisSvg } from "@/lib/praxisVorbereitung";
 import type { AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { DEUTSCH_EINHEITEN, ENGLISCH_EINHEITEN, type SprachAufgabe } from "@/lib/sprachWerkstatt";
 import { berechneSchritte } from "@/lib/calc";
@@ -41,11 +43,12 @@ export function getReviewTasks():ReviewTask[] {
   const aufbau:ReviewTask[]=AUFBAU_EINHEITEN.flatMap(e=>e.aufgabenIds.map(id=>({ref:{quelle:"mathe" as const,id,version:e.version,lernzielIds:[e.id]},titel:e.titel,thema:e.titel,route:`/grundlagen/mathe#${e.id}`,sekunden:240,tief:true,payload:{typ:"aufbau" as const,aufgabe:erzeugeAufbauAufgabe(id,0)}})));
   const projekt:ReviewTask[]=PROJEKT_TRANSFER.map(a=>({ref:{quelle:"projekt",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:a.route,sekunden:a.sekunden,tief:true,payload:{typ:"projekt",aufgabe:a}}));
   const bild:ReviewTask[]=BILD_AUFGABEN.map(a=>({ref:{quelle:"bild",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:`/bildtraining#${a.id}`,sekunden:a.minuten*60,tief:false,payload:{typ:"bild",aufgabe:a}}));
+  const werkstatt:ReviewTask[]=WERKSTATT_WIEDERHOLUNGEN.map(a=>({ref:{quelle:"bild",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:werkstattWiederholungRoute(a.id)!,sekunden:a.minuten*60,tief:false,payload:{typ:"bild",aufgabe:a}}));
   const pruefungsTransfer:ReviewTask[]=FALL_THEMEN.map(f=>{
     const a=erzeugePruefungsTransfer(f.id);
     return {ref:{quelle:"projekt",id:a.id,version:a.version,lernzielIds:a.lernzielIds},titel:a.titel,thema:a.titel,route:a.route,sekunden:a.sekunden,tief:true,payload:{typ:"projekt",aufgabe:a}};
   });
-  base=[...fach,...mathe,...sprache,...aufbau,...projekt,...bild,...pruefungsTransfer];return base;
+  base=[...fach,...mathe,...sprache,...aufbau,...projekt,...bild,...werkstatt,...pruefungsTransfer];return base;
 }
 export function freezeReviewTask(task:ReviewTask,random:()=>number=Math.random):ReviewTask {
   const frozen=clone(task);
@@ -107,8 +110,11 @@ export function validReviewTask(v:unknown):v is ReviewTask {
   if(p.typ==="aufbau")return v.ref.quelle==="mathe"&&a.id===v.ref.id&&a.version===v.ref.version&&typeof a.frage==="string"&&strings(a.gegeben)&&Number.isSafeInteger(a.variante)&&Array.isArray(a.schritte)&&a.schritte.length>0&&a.schritte.every(s=>object(s)&&["id","label","formel","einsetzen","einheit"].every(k=>typeof s[k]==="string")&&finite(s.wert)&&strings(s.einheiten)&&s.einheiten.includes(String(s.einheit))&&Number.isInteger(s.stellen)&&Number(s.stellen)>=0&&Number(s.stellen)<=8&&finite(s.toleranz)&&s.toleranz>=0&&typeof s.ganzzahl==="boolean")&&new Set(a.schritte.map(s=>s.id)).size===a.schritte.length;
   if(p.typ==="projekt")return v.ref.quelle==="projekt"&&a.id===v.ref.id&&a.version===v.ref.version&&typeof a.frage==="string"&&typeof a.einheit==="string"&&typeof a.erklaerung==="string"&&finite(a.wert)&&finite(a.toleranz)&&a.toleranz>=0&&object(a.parameter)&&Object.values(a.parameter).every(finite);
   if(p.typ==="bild"){
+    // New workshop snapshots contain registered tasks and passive local SVG only.
+    if(v.ref.id.startsWith("werkstatt-")&&(!getWerkstattWiederholung(v.ref.id)||!istPraxisSvg(a.svg)||!strings(a.lernzielIds)||!a.lernzielIds.length||JSON.stringify(a.lernzielIds)!==JSON.stringify(v.ref.lernzielIds)))return false;
     if(v.ref.quelle!=="bild"||a.id!==v.ref.id||a.version!==v.ref.version||typeof a.svg!=="string"||typeof a.bildbeschreibung!=="string"||!Array.isArray(a.bildbereiche)||!a.bildbereiche.every(b=>object(b)&&typeof b.id==="string"&&Number.isInteger(b.nummer)&&finite(b.x)&&finite(b.y))||!object(a.aktivitaet))return false;
     const ac=a.aktivitaet;
+    if(v.ref.id.startsWith("werkstatt-")&&ac.svg!==undefined&&!istPraxisSvg(ac.svg))return false;
     if(!["id","titel","auftrag","erklaerung"].every(k=>typeof ac[k]==="string"))return false;
     if(ac.typ==="zuordnen")return Array.isArray(ac.paare)&&ac.paare.length>0&&ac.paare.every(p=>object(p)&&["id","links","rechts"].every(k=>typeof p[k]==="string"));
     if(ac.typ==="reihenfolge")return Array.isArray(ac.schritte)&&ac.schritte.length>0&&ac.schritte.every(s=>object(s)&&typeof s.id==="string"&&typeof s.text==="string");

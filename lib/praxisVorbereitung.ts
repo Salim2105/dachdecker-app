@@ -2,6 +2,7 @@ import { appStorage } from "@/lib/lernSpeicher";
 import { erzeugePruefungsFall, FALL_THEMEN } from "@/lib/pruefungsFaelle";
 import type { Bewertung } from "@/content/schema";
 import type { OffenerTeil } from "@/lib/pruefungsVorbereitungTypen";
+import { WERKSTATT_PRAXIS_THEMEN, werkstattPraxisBlatt } from "@/lib/werkstattPraxis";
 
 export interface PraxisBlatt {
   thema: string; version: number; titel: string; auftrag: string; angaben: string[]; svg: string;
@@ -19,6 +20,8 @@ export interface PraxisVorbereitungStand {
 }
 export const praxisVorbereitungKey = (thema: string) => `praxisvorbereitung-${thema}-v1`;
 export const praxisKey = praxisVorbereitungKey;
+/** Worksheet topics deliberately stay separate from the six exam families. */
+export const PRAXIS_VORBEREITUNG_THEMEN: readonly { id: string; titel: string }[] = [...FALL_THEMEN, ...WERKSTATT_PRAXIS_THEMEN];
 const obj = (v: unknown): v is Record<string, unknown> => !!v && typeof v === "object" && !Array.isArray(v);
 const text = (v: unknown, max = 12000): v is string => typeof v === "string" && v.length <= max;
 const texte = (v: unknown): v is string[] => Array.isArray(v) && v.length <= 50 && v.every(s => text(s, 4000));
@@ -39,6 +42,13 @@ export function istPraxisSvg(v: unknown): v is string {
   return true;
 }
 export function neuePraxisVorbereitung(thema: string, jetzt = Date.now()): PraxisVorbereitungStand {
+  const vorlage = werkstattPraxisBlatt(thema);
+  if (vorlage) return {
+    version: 1, id: `praxis-${thema}-${globalThis.crypto.randomUUID()}`, erstelltAm: jetzt, aktualisiertAm: jetzt,
+    blatt: JSON.parse(JSON.stringify(vorlage)), planung: false, ausgefuehrt: false, rueckmeldungErfasst: false,
+    werkzeugeText: "", materialText: "", ablaufText: "", notiz: "", erstePlanung: null,
+    ausgefuehrtAm: "", ausfuehrungNotiz: "", rueckmeldung: { datum: "", name: "", rolle: "", text: "" }, kontrolliert: [],
+  };
   const fall = erzeugePruefungsFall(thema, 0);
   const zeichnung = fall.teile.find((t): t is OffenerTeil => t.typ === "zeichnung");
   const ablauf = fall.teile.find(t => t.typ === "reihenfolge");
@@ -59,7 +69,7 @@ export function parsePraxisVorbereitung(raw: string | null): PraxisVorbereitungS
     const s: unknown = JSON.parse(raw);
     if (!obj(s) || s.version !== 1 || !text(s.id, 300) || !s.id || !zeit(s.erstelltAm) || !zeit(s.aktualisiertAm) || !obj(s.blatt)) return null;
     const b = s.blatt;
-    if (!FALL_THEMEN.some(t => t.id === b.thema) || !Number.isInteger(b.version) || Number(b.version) < 1 ||
+    if (!PRAXIS_VORBEREITUNG_THEMEN.some(t => t.id === b.thema) || !Number.isInteger(b.version) || Number(b.version) < 1 ||
       ![b.titel,b.auftrag,b.zeichenAuftrag].every(v => text(v)) ||
       ![b.angaben,b.werkzeuge,b.material,b.sicherheit,b.kontrolle,b.gespraech,b.ablauf,b.zeichenKriterien].every(texte) ||
       !istPraxisSvg(b.svg) || !istPraxisSvg(b.musterSvg)) return null;

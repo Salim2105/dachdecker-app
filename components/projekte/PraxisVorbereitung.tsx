@@ -3,9 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { LernLink } from "@/components/LernLink";
 import { SafeSvg } from "@/components/SafeSvg";
 import { DrawCard } from "@/components/aufgaben/DrawCard";
-import { FALL_THEMEN } from "@/lib/pruefungsFaelle";
 import { appStorage } from "@/lib/lernSpeicher";
-import { neuePraxisVorbereitung, parsePraxisVorbereitung, planungFesthalten, praxisVorbereitungKey, speicherePraxisVorbereitung, type PraxisVorbereitungStand } from "@/lib/praxisVorbereitung";
+import { PRAXIS_VORBEREITUNG_THEMEN, neuePraxisVorbereitung, parsePraxisVorbereitung, planungFesthalten, praxisVorbereitungKey, speicherePraxisVorbereitung, type PraxisVorbereitungStand } from "@/lib/praxisVorbereitung";
 import type { DrawAufgabe } from "@/content/schema";
 
 const flaeche = { background: "var(--surface)", borderColor: "var(--border)", color: "var(--text)" };
@@ -32,11 +31,12 @@ function NotizFeld({ label, wert, onChange }: {label:string;wert:string;onChange
 function Liste({ texte }: {texte:string[]}) { return <ul className="mt-2 list-disc space-y-2 pl-5">{texte.map((x,i)=><li key={i}>{x}</li>)}</ul>; }
 
 export function PraxisVorbereitung({ initialThema }: { initialThema?: string }) {
-  const [thema, setThema] = useState(() => FALL_THEMEN.some(t=>t.id===initialThema) ? initialThema! : FALL_THEMEN[0].id);
+  const [thema, setThema] = useState(() => PRAXIS_VORBEREITUNG_THEMEN.some(t=>t.id===initialThema) ? initialThema! : PRAXIS_VORBEREITUNG_THEMEN[0].id);
   return <div>
     <style>{PRINT_CSS}</style>
     <header className="bereichs-einstieg praxis-nicht-drucken"><span>VORBEREITEN · AUSFÜHREN · BESPRECHEN</span><h1>Dein Praxisblatt für Betrieb und Schule</h1><p>Plane Werkzeug, Material und Arbeitsfolge. Halte anschließend getrennt fest, was du tatsächlich geübt und welche Rückmeldung du erhalten hast.</p><LernLink href="/projekte?ansicht=uebersicht" className="mt-4 inline-block min-h-11 py-2 underline">← Zu den Baustellenprojekten</LernLink></header>
-    <label className="mt-6 block font-semibold praxis-nicht-drucken">Praxisthema auswählen<select value={thema} onChange={e=>setThema(e.target.value)} className="mt-2 min-h-12 w-full rounded-xl border p-3" style={flaeche}>{FALL_THEMEN.map(t=><option value={t.id} key={t.id}>{t.titel}</option>)}</select></label>
+    <label className="mt-6 block font-semibold praxis-nicht-drucken">Praxisthema auswählen<select value={thema} onChange={e=>setThema(e.target.value)} className="mt-2 min-h-12 w-full rounded-xl border p-3" style={flaeche}>{PRAXIS_VORBEREITUNG_THEMEN.map(t=><option value={t.id} key={t.id}>{t.titel}</option>)}</select></label>
+    {thema.startsWith("werkstatt-")&&<LernLink className="mt-4 inline-block min-h-11 py-2 underline praxis-nicht-drucken" href="/projekte#werkstatt">← Zum Werkstatttraining</LernLink>}
     <PraxisBlatt key={thema} thema={thema}/>
   </div>;
 }

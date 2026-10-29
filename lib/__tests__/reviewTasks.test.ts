@@ -8,13 +8,15 @@ const jetzt=Date.UTC(2026,9,25,12);
 beforeEach(()=>localStorage.clear());
 const task=(typ:string)=>getReviewTasks().find(t=>t.payload.typ===typ)!;
 describe("gemeinsame Tagesrunde",()=>{
-  it("verbindet Fachwissen, beide Mathestufen, Sprachen, kurze Projekte und 24 Bildaufgaben",()=>{
+  it("verbindet Fachwissen, beide Mathestufen, Sprachen, kurze Projekte, 24 Bild- und 20 Werkstattaufgaben",()=>{
     const aufgaben=getReviewTasks();
     expect(new Set(aufgaben.map(a=>a.payload.typ))).toEqual(new Set(["fachwissen","mathe","sprache","aufbau","projekt","bild"]));
     expect(aufgaben.filter(a=>a.payload.typ==="aufbau")).toHaveLength(30);
     expect(aufgaben.filter(a=>a.payload.typ==="projekt")).toHaveLength(12);
     expect(aufgaben.filter(a=>a.ref.id.startsWith("pruefungs-transfer-"))).toHaveLength(6);
-    expect(aufgaben.filter(a=>a.payload.typ==="bild")).toHaveLength(24);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild")).toHaveLength(44);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild"&&!a.ref.id.startsWith("werkstatt-"))).toHaveLength(24);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild"&&a.ref.id.startsWith("werkstatt-"))).toHaveLength(20);
     expect(new Set(aufgaben.map(a=>reviewKey(a.ref))).size).toBe(aufgaben.length);
     for(const a of aufgaben)expect(validReviewTask(freezeReviewTask(a,()=>.4)),a.ref.id).toBe(true);
   });

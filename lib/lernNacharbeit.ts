@@ -6,6 +6,7 @@ import type { BauProjekt, ProjektRechnung, ProjektTransfer } from "@/lib/bauproj
 import type { BildAufgabe } from "@/lib/bildtraining";
 import type { LernHinweis, LernKategorie } from "@/lib/lernHinweise";
 import { pruefungsTransferFamilie, pruefungsTransferRef, PRUEFUNGS_TRANSFER_ROUTE } from "@/lib/pruefungsTransfer";
+import { getWerkstattWiederholung, werkstattWiederholungRoute } from "@/lib/werkstattWiederholung";
 
 export function aufbauNacharbeit(a:AufbauAufgabe,antworten:Record<string,AufbauAntwort>,r:AufbauErgebnis):LernHinweis[]{
  const basis={lernzielId:a.einheitId,route:`/grundlagen/mathe#${a.einheitId}`,thema:a.titel};
@@ -39,6 +40,13 @@ export function projektAktivNacharbeit(p:BauProjekt,key:keyof BauProjekt["aktivi
   hinweis:r.richtig?`„${a.titel}“ wurde richtig bearbeitet.`:`Bei „${a.titel}“ passen ${r.erreicht} von ${r.moeglich} bewerteten Zusammenhängen. ${auftrag?"Trenne gegebene Angaben, gesuchte Leistung und noch offene Fragen.":ablauf?"Ordne Prüfen und Planen vor der Ausführung ein; schließe mit der Kontrolle ab.":a.erklaerung}`}];
 }
 export function bildNacharbeit(a:BildAufgabe,antwort:AktivitaetAntwort):LernHinweis[]{
+ const werkstatt=getWerkstattWiederholung(a.id),werkstattRoute=werkstattWiederholungRoute(a.id);
+ if(werkstatt&&werkstattRoute){
+  const r=bewerteAktivitaet(a.aktivitaet,antwort);
+  const slug=a.id.replace(/^werkstatt-(falzziegel|biber-doppel)-/,"").replace(/-wiederholung$/,"");
+  const kategorien:Record<string,LernKategorie>={messen:"rechenweg",ziegel:"begriffe",laengen:"rechenweg",breiten:"rechenweg",wasser:"wasserweg",verlegen:"ablauf",schnitt:"fachwissen",bearbeiten:"ablauf",befestigen:"fachwissen",kontrolle:"befund"};
+  return [{kategorie:kategorien[slug]??"fachwissen",lernzielId:a.lernzielIds[0],route:werkstattRoute,thema:a.titel,richtig:r.richtig,hinweis:r.richtig?"Den dargestellten Werkstattschritt richtig wiedererkannt.":a.aktivitaet.erklaerung}];
+ }
  const r=bewerteAktivitaet(a.aktivitaet,antwort),folge=a.art==="folge",bauteile=a.art==="bauteile";
  const kategorie:LernKategorie=folge?"ablauf":bauteile?"schichten":a.art==="massnahme"?"befund":a.projektId==="sanierung"?"schichten":a.projektId==="metalldach"?"fachwissen":"wasserweg";
  let hinweis=r.richtig?"Die dargestellten Zusammenhänge passen.":a.aktivitaet.erklaerung;
