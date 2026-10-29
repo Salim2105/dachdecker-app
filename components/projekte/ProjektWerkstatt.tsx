@@ -14,7 +14,9 @@ import { PraxisVorbereitung } from "./PraxisVorbereitung";
 import { LernLink } from "@/components/LernLink";
 import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
-import { appStorage } from "@/lib/lernSpeicher";
+import { appStorage, flushStorage } from "@/lib/lernSpeicher";
+import { getWerkstattEinheit } from "@/lib/werkstattInhalte";
+import { WerkstattTraining } from "@/components/werkstatt/WerkstattTraining";
 import { istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { BAUPROJEKTE, PROJEKT_SCHRITTE, darfProjektRechnen, leseProjektStand, neuerProjektStand, projektErgebnis, projektKey, projektVollstaendig, pruefeProjektZahl, type BauProjekt, type ProjektStand, type ProjektRechnung } from "@/lib/bauprojekte";
 import styles from "./Projekte.module.css";
@@ -28,35 +30,51 @@ function ProjektAktivitaet({name,projekt,stand,onAntwort,onPruefen,onBegriff}:{n
 function letzteSignale(s:ProjektStand,key:string){return (s.lernSignale??[]).filter(r=>r.aufgabeId===`projekt-${s.projekt.id}-${key}`).slice(-1);}
 function letzteHinweise(s:ProjektStand,key:string):LernHinweis[]{return letzteSignale(s,key).map(r=>({...r,hinweis:r.hinweis??"Vergleiche die Erklärung und übe den Zusammenhang erneut."}));}
 function letzteHilfen(s:ProjektStand,key:string):string[]{return letzteSignale(s,key)[0]?.hilfen??[];}
+/** A committed hash wins over catalogue queries and previous project selection. */
+export function projektAnsicht(hash: string, search: string, gespeichert: string | null): string {
+  const id = hash.replace(/^#/, "");
+  if (id === "werkstatt" || id === "werkstatt-praxis-falzziegel" || id === "werkstatt-praxis-biber-doppel" || getWerkstattEinheit(id)) return id;
+  if (!id && new URLSearchParams(search).get("ansicht") === "praxis") return "praxis";
+  return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id), gespeichert, { hash, search });
+}
 function gespeicherteAuswahl(): string {
-  const praxis = typeof window !== "undefined" && new URLSearchParams(window.location.search).get("ansicht") === "praxis";
-  return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id),praxis ? null : appStorage.getItem(AUSWAHL_KEY));
+  if (typeof window === "undefined") return "";
+  return projektAnsicht(window.location.hash, window.location.search, appStorage.getItem(AUSWAHL_KEY));
 }
 
 export function ProjektWerkstatt() {
   const [auswahl, setAuswahl] = useState(gespeicherteAuswahl);
-  const [praxisAnsicht, setPraxisAnsicht] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("ansicht") === "praxis");
+  const [navigationFehler, setNavigationFehler] = useState("");
   useEffect(() => {
-    const wechseln = () => setAuswahl(BAUPROJEKTE.some(p => p.id === window.location.hash.slice(1)) ? window.location.hash.slice(1) : "");
+    const wechseln = () => setAuswahl(gespeicherteAuswahl());
     window.addEventListener("hashchange", wechseln);
     window.addEventListener("popstate", wechseln);
     return () => { window.removeEventListener("hashchange", wechseln); window.removeEventListener("popstate", wechseln); };
   }, []);
   function waehlen(id: string) {
-    setPraxisAnsicht(false);
-    setAuswahl(id);
-    try {
-      if (id) { appStorage.setItem(AUSWAHL_KEY, id); appStorage.setItem("lernwerkstatt-zuletzt-route", `/projekte#${id}`); }
-      else appStorage.removeItem(AUSWAHL_KEY);
-    } catch { /* StorageGate displays a persistent device-storage warning. */ }
-    window.history.replaceState(null, "", `${window.location.pathname}${id ? `#${id}` : ""}`);
-    window.scrollTo({ top: 0 });
+    const wechseln = () => {
+      try {
+        if (id) { appStorage.setItem(AUSWAHL_KEY, id); appStorage.setItem("lernwerkstatt-zuletzt-route", `/projekte#${id}`); }
+        else appStorage.removeItem(AUSWAHL_KEY);
+        setAuswahl(id); setNavigationFehler("");
+        window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : "?ansicht=uebersicht"}`);
+        window.scrollTo({ top: 0 });
+      } catch { setNavigationFehler("Der Bereich konnte noch nicht gespeichert werden. Deine aktuelle Arbeit bleibt geöffnet."); }
+    };
+    // Selecting an unopened project does not leave an editing surface. Leaving
+    // an existing project waits for its pending IndexedDB writes first.
+    if (BAUPROJEKTE.some(p => p.id === auswahl)) void flushStorage().then(wechseln).catch(() => setNavigationFehler("Deine Änderungen konnten noch nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen."));
+    else wechseln();
   }
   const projekt = BAUPROJEKTE.find(p => p.id === auswahl);
-  if (projekt) return <ProjektEinheit key={projekt.id} vorlage={projekt} zurueck={() => waehlen("")}/>;
-  if (praxisAnsicht) return <PraxisVorbereitung/>;
+  if (projekt) return <>{navigationFehler && <p role="alert">{navigationFehler}</p>}<ProjektEinheit key={projekt.id} vorlage={projekt} zurueck={() => waehlen("")}/></>;
+  if (auswahl === "praxis") return <PraxisVorbereitung/>;
+  if (auswahl === "werkstatt-praxis-falzziegel" || auswahl === "werkstatt-praxis-biber-doppel") return <div><LernLink href="/projekte#werkstatt" className="mb-4 inline-flex min-h-11 items-center underline">← Alle Werkstatt-Lernpfade</LernLink><PraxisVorbereitung key={auswahl} initialThema={auswahl.replace("werkstatt-praxis-", "werkstatt-")}/></div>;
+  if (auswahl === "werkstatt" || getWerkstattEinheit(auswahl)) return <WerkstattTraining einheitId={auswahl === "werkstatt" ? undefined : auswahl}/>;
   return <div>
-    <header className={styles.hero}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Vom Auftrag zum fertigen Plan.</h1><p>Sechs Baustellenprojekte verbinden Fachwissen, Rechnen und Zeichnen. Arbeite in sechs Schritten – mit Begleitung oder auf eigene Faust.</p><Link href="/heute">Kurze Projektaufgaben in der Tagesrunde üben →</Link></div><PracticeArtwork art="baustelle"/></header>
+    <header className={styles.hero}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Planen. Verstehen. Handwerk üben.</h1><p>Wähle dein Angebot: Handgriffe in der Werkstatt verstehen, einen vollständigen Auftrag durchdenken oder die praktische Arbeit in Betrieb und Schule vorbereiten.</p><LernLink href="/projekte#werkstatt">Zum handwerklichen Werkstatttraining →</LernLink></div><PracticeArtwork art="baustelle"/></header>
+    {navigationFehler && <p role="alert">{navigationFehler}</p>}
+    <div className="werkstatt-karte mt-5"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>NEU · 20 EINHEITEN MIT INTERAKTIVEN ZEICHNUNGEN</span><h2 className="mt-2">Handwerk Schritt für Schritt verstehen</h2><p>Falzziegel und Biberschwanz-Doppeldeckung: messen, anzeichnen, einteilen, verlegen, Schnitt planen und die eigene Arbeit kontrollieren.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#werkstatt">Werkstatttraining öffnen →</LernLink></div>
     <div className="werkstatt-karte mt-5"><h2>Für Betrieb und Schule vorbereiten</h2><p>Sechs Praxisblätter mit Werkzeug, Material, Arbeitsfolge, Skizze und getrenntem Übungsprotokoll.</p><LernLink href="/projekte?ansicht=praxis">Praxisblätter öffnen →</LernLink></div>
     <div className={styles.einstieg}><h2>Welchen Auftrag übernimmst du?</h2><p>Deine Antworten, Zeichnungen und Notizen bleiben pro Projekt auf diesem Gerät gespeichert. Du kannst jederzeit wechseln und später weitermachen.</p></div>
     <div className={styles.grid}>{BAUPROJEKTE.map((p, i) => {
