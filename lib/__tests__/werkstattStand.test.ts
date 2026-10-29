@@ -211,6 +211,19 @@ describe("Werkstatt: verlässliche Momentaufnahmen und Erstantworten", () => {
     expect(gewechselt.hilfeEreignisse).toEqual([{ id, am: 2000 }, { id, am: 4000 }, { id: "begleitung", am: 5000 }]);
     speichereWerkstattStand(gewechselt); expect(ladeWerkstattStand(gewechselt.einheit.id)).toEqual(gewechselt);
   });
+  it("hält einen von außen ermittelten vorherigen Erklärungskontext bereits in der ersten Abgabe fest", () => {
+    let s = geloest(setWerkstattModus(neuerWerkstattStand(einheit(), 1000), "probelauf", 2000));
+    const a = s.einheit.aufgaben[0];
+    s = pruefeWerkstattAufgabe(s, a.id, 3000, true);
+    const erste = clone(s.abgaben[a.id][0]);
+    expect(erste).toMatchObject({ nachErklaerung: true, bewertung: { richtig: true } });
+    expect(parseWerkstattStand(JSON.stringify(s))).toEqual(s);
+    expect(pruefeWerkstattAufgabe(s, a.id, 4000, false)).toEqual(s);
+    s = { ...s, geprueft: [] };
+    s = pruefeWerkstattAufgabe(s, a.id, 5000, false);
+    expect(s.abgaben[a.id][0]).toEqual(erste);
+    expect(s.abgaben[a.id][1].nachErklaerung).toBe(true);
+  });
   it("erhält Hilfezeitpunkte als unveränderlichen Verlauf", () => {
     const id = "begleitung";
     let s = hilfeWerkstatt(neuerWerkstattStand(einheit(), 1000), id, 2000);

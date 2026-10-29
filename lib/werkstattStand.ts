@@ -216,17 +216,18 @@ export function setWerkstattModus(s: WerkstattStand, modus: "begleitet" | "probe
   if (modus === "begleitet") markiereHilfe(neu, "begleitung");
   return neu;
 }
-export function pruefeWerkstattAufgabe(s: WerkstattStand, aufgabeId: string, now = Date.now()): WerkstattStand {
+export function pruefeWerkstattAufgabe(s: WerkstattStand, aufgabeId: string, now = Date.now(), nachVorigerErklaerung = false): WerkstattStand {
   const a = s.einheit.aufgaben.find(a => a.id === aufgabeId);
   if (!a) throw new Error("Die Werkstattaufgabe ist unbekannt.");
   if (s.geprueft.includes(a.id)) return clone(s);
   const antwort = s.antworten[a.id];
   if (!werkstattAntwortVollstaendig(a, antwort)) throw new Error("Bearbeite zuerst die vollständige Aufgabe und prüfe deine Eingaben.");
   if (!zeit(now)) throw new Error("Ungültiger Bewertungszeitpunkt.");
+  if (typeof nachVorigerErklaerung !== "boolean") throw new Error("Der Erklärungskontext der Aufgabe ist ungültig.");
   const neu = bearbeiten(s, now), verlauf = neu.abgaben[a.id] ?? [];
   if (neu.modus === "begleitet") markiereHilfe(neu, "begleitung");
   const hilfsListe = neu.hilfen.filter(h => h === "begleitung" || h.startsWith("bildschritt:") || h.startsWith("begriff:") || h.startsWith(`${a.id}:`));
-  const abgabe: WerkstattAbgabe = { id: `${neu.id}:${a.id}:${verlauf.length}`, am: neu.aktualisiertAm, antwort: clone(antwort), bewertung: bewerteWerkstattAufgabe(a, antwort), hilfen: hilfsListe, nachErklaerung: verlauf.length > 0, modus: neu.modus };
+  const abgabe: WerkstattAbgabe = { id: `${neu.id}:${a.id}:${verlauf.length}`, am: neu.aktualisiertAm, antwort: clone(antwort), bewertung: bewerteWerkstattAufgabe(a, antwort), hilfen: hilfsListe, nachErklaerung: verlauf.length > 0 || nachVorigerErklaerung, modus: neu.modus };
   neu.abgaben[a.id] = [...verlauf, abgabe]; neu.geprueft.push(a.id); neu.abgeschlossenAm = null;
   return neu;
 }
