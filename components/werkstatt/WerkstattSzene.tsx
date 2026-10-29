@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useRef, useState, type ReactNode } from "react";
+import { useId, useRef, useState, type ReactNode, type KeyboardEvent } from "react";
 import type { WerkstattAnsicht, WerkstattAntwort, WerkstattAufgabe, WerkstattPunkt, WerkstattSzene as Szene, WerkstattSystemkarte } from "@/lib/werkstattTypen";
 import { leseDezimalzahl } from "@/lib/zahlen";
 import styles from "./Werkstatt.module.css";
@@ -118,6 +118,13 @@ export function WerkstattSzene({ systemkarte: system, szene, ansicht, wasser = 0
     setZoomQuelle(`data:image/svg+xml;charset=utf-8,${encodeURIComponent(source.outerHTML)}`);
     zoomRef.current?.showModal();
   }
+  function dialogFokus(event: KeyboardEvent<HTMLDialogElement>) {
+    if (event.key !== "Tab") return;
+    const controls = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), [tabindex="0"]'));
+    const first = controls[0], last = controls.at(-1);
+    if (event.shiftKey && document.activeElement === first && last) { event.preventDefault();last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last && first) { event.preventDefault();first.focus(); }
+  }
   const phase = Math.max(0, Math.min(5, schritt));
   const mark = aufgabe?.typ === "anzeichnen" ? aufgabe : null, grid = aufgabe?.typ === "einteilen" ? aufgabe : null, lay = aufgabe?.typ === "verlegen" ? aufgabe : null;
   const view: WerkstattAnsicht = mark || grid || lay ? "draufsicht" : ansicht ?? (szene === "ziegel" || szene === "schnitt" ? "einzelziegel" : szene === "wasser" ? "schnitt" : "draufsicht");
@@ -182,7 +189,7 @@ export function WerkstattSzene({ systemkarte: system, szene, ansicht, wasser = 0
     </svg>
     <figcaption className={styles.caption}>Eigene schematische Lernzeichnung ohne Maßstab · {TITEL[szene]}. Maße und Befestigungen gelten für das beschriebene Übungsmodell.</figcaption>
     <div className={styles.zoomAction}><button ref={zoomButton} type="button" className={styles.secondary} onClick={vergroessern}>Zeichnung vergrößern</button></div>
-    <dialog ref={zoomRef} className={styles.zoomDialog} aria-labelledby={`${id}-zoom-titel`} onClose={() => {setZoomQuelle("");zoomButton.current?.focus();}}>
+    <dialog ref={zoomRef} className={styles.zoomDialog} onKeyDown={dialogFokus} aria-labelledby={`${id}-zoom-titel`} onClose={() => {setZoomQuelle("");zoomButton.current?.focus();}}>
       <header className={styles.zoomHeader}><h2 id={`${id}-zoom-titel`}>{TITEL[szene]}</h2><button type="button" autoFocus className={styles.secondary} onClick={() => zoomRef.current?.close()}>Zeichnung schließen</button></header>
       <p className={styles.zoomHelp}>Vergrößerte Ansicht deiner Zeichnung. Auf kleinen Bildschirmen kannst du seitlich scrollen. Zum Bearbeiten schließt du diese Ansicht.</p>
       <div className={styles.zoomScroll} tabIndex={0} role="region" aria-label="Vergrößerte Zeichnung verschieben">

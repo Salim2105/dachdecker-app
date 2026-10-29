@@ -112,7 +112,11 @@ describe("Werkstatt: unterschiedliche und inhaltlich beschriftete Ansichten",()=
       expect(image.src).toMatch(/^data:image\/svg\+xml/);
       expect(decodeURIComponent(image.src)).toContain('width="640"');
       expect(decodeURIComponent(image.src)).toContain("Bezug finden und Maß übertragen");
-      fireEvent.click(within(dialog).getByRole("button",{name:"Zeichnung schließen"}));
+      const close=within(dialog).getByRole("button",{name:"Zeichnung schließen"});
+      const region=within(dialog).getByRole("region");region.focus();fireEvent.keyDown(region,{key:"Tab"});
+      expect(document.activeElement).toBe(close);
+      fireEvent.keyDown(close,{key:"Tab",shiftKey:true});expect(document.activeElement).toBe(region);
+      fireEvent.click(close);
       expect(screen.queryByRole("dialog")).toBeNull();expect(document.activeElement).toBe(opener);
     } finally {
       delete (proto as unknown as Record<string,unknown>).showModal;
