@@ -36,7 +36,7 @@ beforeEach(() => {
   fetcher = vi.fn(async () => new Response("altes Modell", { headers: { "Content-Type": "model/gltf-binary" } }));
   vi.stubGlobal("fetch", fetcher);
 });
-afterEach(() => vi.unstubAllGlobals());
+afterEach(() => { vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 const contentCache = () => stores.get(DACH_MEDIEN_CACHE)!;
 const noStages = () => expect([...stores.keys()].some(k => k.includes("staging"))).toBe(false);
 
@@ -115,5 +115,64 @@ describe("Öffentliche Dachpakete mit atomarem Abschluss", () => {
     vi.stubGlobal("navigator", undefined);
     await ladeDachPaket(paket([oldAsset]));
     expect(await dachPaketStatus(paket([oldAsset]))).toMatchObject({ status: "gespeichert" });
+  });
+  it("räumt nach einem Tab-Absturz eigene verwaiste Stages erst unter der gemeinsamen Sperre auf", async () => {
+    const orphan = "dachdecker-medien-staging-v1-steildach-abgestuerzter-tab";
+    const fresh = `dachdecker-medien-staging-v1-${Date.now()}-walmdach-1234abcd`;
+    await (await caches.open(orphan)).put("/teil", new Response("unvollständig"));
+    await (await caches.open(fresh)).put("/teil", new Response("abgestürzt"));
+    const fremd = await caches.open("andere-app-zwischenspeicher");
+    await fremd.put("/privat", new Response("behalten"));
+    vi.stubGlobal("navigator", { locks: { request: async (_n: string, _o: unknown, cb: (lock: unknown) => unknown) => cb(null) } });
+    await expect(ladeDachPaket(paket([oldAsset]))).rejects.toThrow(/anderen Fenster/);
+    expect(stores.has(orphan)).toBe(true); expect(stores.has(fresh)).toBe(true);
+    vi.stubGlobal("navigator", { locks: { request: async (_n: string, _o: unknown, cb: (lock: unknown) => unknown) => cb({ name: "dachdecker-medien-download" }) } });
+    fetcher.mockImplementationOnce(async () => {
+      expect(stores.has(orphan)).toBe(false); expect(stores.has(fresh)).toBe(false);
+      return new Response("altes Modell");
+    });
+    await ladeDachPaket(paket([oldAsset]));
+    noStages();
+    expect(await (await fremd.match("/privat"))!.text()).toBe("behalten");
+    expect(await dachPaketStatus(paket([oldAsset]))).toMatchObject({ status: "gespeichert" });
+  });
+  it("behält ohne Web Locks frische oder nicht datierbare Stages und entfernt nur abgelaufene", async () => {
+    const jetzt = Date.UTC(2026, 9, 30, 12);
+    vi.spyOn(Date, "now").mockReturnValue(jetzt);
+    const prefix = "dachdecker-medien-staging-v1-";
+    const alt = `${prefix}${jetzt - 2 * 86400000}-steildach-aabb`;
+    const frisch = `${prefix}${jetzt - 60000}-walmdach-ccdd`;
+    const zukunft = `${prefix}${jetzt + 86400000}-flachdach-eeff`;
+    const unbekannt = `${prefix}steildach-alte-namensform`;
+    for (const name of [alt, frisch, zukunft, unbekannt]) await (await caches.open(name)).put("/teil", new Response("Teilmodell"));
+    await ladeDachPaket(paket([oldAsset]));
+    expect(stores.has(alt)).toBe(false);
+    for (const name of [frisch, zukunft, unbekannt]) expect(stores.has(name)).toBe(true);
+  });
+  it("entfernt beim Löschen auch verwaiste Stages, erhält aber gemeinsame vollständige Pakete", async () => {
+    const gemeinsam = asset("gemeinsam/oberflaeche.webp", "altes Modell");
+    const steil = paket([oldAsset, gemeinsam]), walm = paket([gemeinsam], "walmdach");
+    await ladeDachPaket(steil); await ladeDachPaket(walm);
+    const orphan = "dachdecker-medien-staging-v1-unterbrochener-download";
+    await (await caches.open(orphan)).put("/teil", new Response("Teil"));
+    vi.stubGlobal("navigator", { locks: { request: async (_n: string, _o: unknown, cb: (lock: unknown) => unknown) => cb({}) } });
+    await loescheDachPaket(steil);
+    expect(stores.has(orphan)).toBe(false);
+    expect(await dachPaketStatus(walm)).toMatchObject({ status: "gespeichert" });
+    expect(contentCache().has(cacheKey(dachAssetCacheKey(gemeinsam.sha256)))).toBe(true);
+  });
+  it("rollt nach fehlgeschlagenem Marker nur neu kopierte unreferenzierte Bytes zurück", async () => {
+    await ladeDachPaket(paket([oldAsset]));
+    const gemeinsam = asset("gemeinsam/oberflaeche.webp", "altes Modell");
+    await ladeDachPaket(paket([gemeinsam], "walmdach"));
+    vi.stubGlobal("navigator", { locks: { request: async (_n: string, _o: unknown, cb: (lock: unknown) => unknown) => cb({}) } });
+    failPut = name => name === DACH_MEDIEN_INDEX_CACHE;
+    fetcher.mockResolvedValue(new Response("neues Modell"));
+    await expect(ladeDachPaket(paket([newAsset]))).rejects.toThrow(/Gerätespeicher/);
+    expect(contentCache().has(cacheKey(dachAssetCacheKey(newAsset.sha256)))).toBe(false);
+    expect(contentCache().has(cacheKey(dachAssetCacheKey(oldAsset.sha256)))).toBe(true);
+    expect(await dachPaketStatus(paket([oldAsset]))).toMatchObject({ status: "gespeichert" });
+    expect(await dachPaketStatus(paket([gemeinsam], "walmdach"))).toMatchObject({ status: "gespeichert" });
+    noStages();
   });
 });
