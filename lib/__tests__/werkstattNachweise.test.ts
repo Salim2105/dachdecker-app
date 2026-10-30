@@ -109,7 +109,10 @@ describe("Werkstatt: ehrliche und einmalige Lernnachweise", () => {
   it("verhindert unabhängige Soforterfolge durch Archivieren und Neustarten", () => {
     const alt = fertig(neuerWerkstattStand(einheit, start));
     speichereWerkstattStand(alt); archiviereWerkstattStand(alt);
-    const neu = fertig(setWerkstattModus(neuerWerkstattStand(einheit, alt.aktualisiertAm + 10000), "probelauf"));
+    // Keep the mode change on the same explicit fixture timeline as the new
+    // attempt. Date.now() here would turn "immediately" into a later day.
+    const neuStart = alt.aktualisiertAm + 10000;
+    const neu = fertig(setWerkstattModus(neuerWerkstattStand(einheit, neuStart), "probelauf", neuStart));
     speichereWerkstattStand(neu); syncWerkstattNachweise(neu);
     expect(ladeKompetenzNachweise().every(n => n.nachErklaerung && !unabhaengigerNachweis(n))).toBe(true);
     const r = createReviewResult({ quelle: "bild", id: einheit.wiederholungId, version: 1, lernzielIds: einheit.lernzielIds }, "archivnacharbeit", "richtig", { hilfen: [] }, neu.aktualisiertAm + 1000);
