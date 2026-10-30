@@ -23,6 +23,7 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
       if (!stores.has(name)) stores.set(name, new Map());
       const store = stores.get(name)!;
       return {
+        keys: async () => [...store.keys()].map(url => new Request(url)),
         match: async (request: string | Request) => store.get(key(request))?.clone(),
         put: async (request: string | Request, response: Response) => { store.set(key(request), response.clone()); },
         add: async (request: string) => {
@@ -44,8 +45,8 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
       handlers[name]({ data, waitUntil: (p) => { pending.push(p); } });
       await Promise.all(pending);
     },
-    async request(path: string, navigate = false) {
-      const request = new Request(ORIGIN + path);
+    async request(path: string, navigate = false, cache?: RequestCache) {
+      const request = new Request(ORIGIN + path, { cache });
       if (navigate) Object.defineProperty(request, "mode", { value: "navigate" });
       const pending: Promise<unknown>[] = [];
       let response: Promise<Response> | undefined;
@@ -58,6 +59,26 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
 }
 
 describe("Service Worker mit ausdrücklich freigegebenen Updates", () => {
+  it("lädt kleine Dachansichten im Kern, aber keine großen Modelle oder Detailbilder automatisch", async () => {
+    const h = harness(["/", "/dach-vorschau/v1/steildach-falzziegel/s03-nah.webp", "/dach-medien/v1/steildach-falzziegel/uebersicht.glb", "/dach-medien/v1/steildach-falzziegel/s03/nah.webp"]);
+    await h.dispatch("install");
+    const kern = h.stores.get(h.cacheName)!;
+    expect(kern.has(ORIGIN + "/dach-vorschau/v1/steildach-falzziegel/s03-nah.webp")).toBe(true);
+    expect([...kern.keys()].some(url => url.includes("/dach-medien/"))).toBe(false);
+    expect(h.messages).toContainEqual({ quelle: "dachdecker-sw", typ: "alles-fertig", fehlend: 0, gesamt: 2 });
+  });
+  it("liefert nur bestätigte öffentliche Medien offline und umgeht alte Bytes bei einem neuen Paketdownload", async () => {
+    const h = harness(), sha256 = "a".repeat(64), url = "/dach-medien/v1/steildach-falzziegel/uebersicht.glb";
+    await h.put("dachdecker-medien-v1", `/dach-medien/_inhalt/${sha256}`, "voriges Modell");
+    expect(await (await h.request(url))!.text()).toBe("Netzwerk");
+    await h.put("dachdecker-medien-index-v1", "/dach-medien/paket-steildach.json", JSON.stringify({ version: 1, id: "steildach", am: 1000, assets: [{ url, sha256 }] }));
+    h.fetch.mockClear();
+    expect(await (await h.request(url))!.text()).toBe("voriges Modell"); expect(h.fetch).not.toHaveBeenCalled();
+    expect(await (await h.request(url, false, "no-store"))!.text()).toBe("Netzwerk"); expect(h.fetch).toHaveBeenCalledOnce();
+    await h.dispatch("activate");
+    expect(h.stores.has("dachdecker-medien-v1")).toBe(true);
+    expect(h.stores.has("dachdecker-medien-index-v1")).toBe(true);
+  });
   it("wartet nach vollständigem Vorladen und aktiviert erst nach der passenden Nachricht", async () => {
     const h = harness(["/", "/_next/app.js", "/buch/skizze.webp"]);
     await h.dispatch("install");

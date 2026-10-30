@@ -13,11 +13,14 @@ function dateienIn(wurzel) {
   });
 }
 export function createServiceWorker({ cacheName, shell }) {
+  const kernShell = shell.filter((url) => !url.startsWith("/dach-medien/"));
   return `// Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
 const CACHE = ${JSON.stringify(cacheName)};
 const CACHE_PREFIX = ${JSON.stringify(CACHE_PREFIX)};
-const SHELL = ${JSON.stringify(shell, null, 2)};
+const SHELL = ${JSON.stringify(kernShell, null, 2)};
 const GLEICHZEITIG = 6;
+const MEDIEN_CACHE = 'dachdecker-medien-v1';
+const MEDIEN_INDEX = 'dachdecker-medien-index-v1';
 
 // Nur unsere Root-App-Caches einschließlich der bisherigen Namensform.
 function eigenerCache(name) {
@@ -37,6 +40,40 @@ async function ausCache(request, vorherige = false) {
     const hit = await (await caches.open(name)).match(request);
     if (hit) return hit;
   }
+}
+// Public media packages are committed by one small index write after all
+// content-addressed files are complete. They never enter private learning ZIPs.
+async function dachMedium(request, url) {
+  // Explicit package downloads must fetch the new bytes. Reusing an older
+  // package here would fail its new SHA-256 check and make updates impossible.
+  if (request.cache === 'no-store') {
+    try { return await fetch(request); }
+    catch { return Response.error(); }
+  }
+  try {
+    const index = await caches.open(MEDIEN_INDEX);
+    const marker = [];
+    for (const key of await index.keys()) {
+      try {
+        const response = await index.match(key);
+        const m = response && await response.json();
+        if (m && m.version === 1 && ['steildach','walmdach','flachdach'].includes(m.id) && Array.isArray(m.assets) && m.assets.length < 10000 && Number.isFinite(m.am)) marker.push(m);
+      } catch { /* An incomplete marker never replaces a usable package. */ }
+    }
+    marker.sort((a,b) => b.am - a.am);
+    const cache = await caches.open(MEDIEN_CACHE);
+    for (const m of marker) {
+      const asset = m.assets.find(a => a && a.url === url.pathname && typeof a.sha256 === 'string' && /^[a-f0-9]{64}$/.test(a.sha256));
+      if (asset) {
+        const hit = await cache.match('/dach-medien/_inhalt/' + asset.sha256);
+        if (hit) return hit;
+      }
+    }
+  } catch { /* Cache availability does not prevent an online media request. */ }
+  // Merely viewing a model does not silently download a whole offline package.
+  // Failed optional media do not fall back to unrelated app HTML.
+  try { return await fetch(request); }
+  catch { return Response.error(); }
 }
 async function melde(nachricht) {
   for (const client of await self.clients.matchAll({ includeUncontrolled: true, type: 'window' })) {
@@ -90,6 +127,10 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || url.pathname === '/sw.js') return;
+  if (url.pathname.startsWith('/dach-medien/')) {
+    event.respondWith(dachMedium(event.request, url));
+    return;
+  }
   event.respondWith((async () => {
     if (event.request.mode === 'navigate') {
       const pfad = url.pathname.length > 1 ? url.pathname.replace(/\\/$/, '') : '/';
@@ -139,7 +180,7 @@ export function generateServiceWorker(exportMode = process.env.EXPORT === "1") {
     const statisch = dateienIn("public").map((p) => "/" + relative("public", p).split("\\").join("/")).filter((p) => !["/sw.js", "/_worker.js", "/manifest.webmanifest"].includes(p));
     alles = [...seiten, ...statisch, ...assets];
   }
-  const shell = [...new Set(alles)];
+  const shell = [...new Set(alles)].filter((url) => !url.startsWith("/dach-medien/"));
   const cacheName = `${CACHE_PREFIX}${Date.now()}-${randomUUID().slice(0, 8)}`;
   writeFileSync(ziel, createServiceWorker({ cacheName, shell }));
   console.log(`${ziel} erzeugt: ${shell.length} Dateien (${cacheName}).`);

@@ -1,0 +1,27 @@
+import { describe, expect, it } from "vitest";
+import { dachDeckung, dachMedien, dachVariante, istDachMedienPfad, istDachMedienRef, istMedienAsset } from "@/lib/dach3dMedien";
+
+describe("Feste, versionierte und passive Dachmedien", () => {
+  it("unterscheidet die tatsächlichen Deckungen und führt gültige Detailansichten zur passenden Variante", () => {
+    expect(dachDeckung("flachdach", "falzziegel")).toBe("warmdach");
+    expect(dachVariante("walmdach", "biber-doppel")).toBe("walmdach-biber-doppel");
+    const m = dachMedien("steildach", "biber-doppel", "s04");
+    expect(m.bilder.schnitt).toBe("/dach-vorschau/v1/steildach-biber-doppel/s04-schnitt.webp");
+    expect(m.fehler).toBe("/dach-vorschau/v1/steildach-biber-doppel/s04-fehler.webp");
+    expect(() => dachMedien("walmdach", "falzziegel", "s04")).toThrow(/andere/);
+  });
+  it.each(["https://fremd.example/a.glb", "//fremd/a.webp", "steildach-falzziegel/../privat.webp", "steildach-falzziegel/%2e%2e/a.webp", "steildach-falzziegel/a.svg", "steildach-falzziegel/a.js", "steildach-falzziegel/a.glb?x=1", "fremdes-dach/a.glb"])("weist unzulässigen Pfad %s ab", id => expect(istDachMedienPfad(id)).toBe(false));
+  it("nimmt nur vollständige lokale Metadaten und vorhandene fachliche Detailverweise an", () => {
+    const id = "steildach-falzziegel/s03/modell.glb", a = { id, url: `/dach-medien/v1/${id}`, bytes: 10, sha256: "a".repeat(64), typ: "modell" };
+    expect(istMedienAsset(a)).toBe(true);
+    expect(istMedienAsset({ ...a, sha256: "falsch" })).toBe(false);
+    expect(istMedienAsset({ ...a, bytes: 0 })).toBe(false);
+    expect(istMedienAsset({ ...a, typ: "bild" })).toBe(false);
+    expect(istMedienAsset({ ...a, url: "https://fremd.example/modell.glb" })).toBe(false);
+    const ref = { version: 1, form: "walmdach", deckung: "biber-doppel", detailId: "w01", ansicht: "nah" };
+    expect(istDachMedienRef(ref)).toBe(true);
+    expect(istDachMedienRef({ ...ref, detailId: "s04" })).toBe(false);
+    expect(istDachMedienRef({ ...ref, deckung: "warmdach" })).toBe(false);
+    expect(istDachMedienRef({ ...ref, ansicht: "fehler" })).toBe(false);
+  });
+});
