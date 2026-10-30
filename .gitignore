@@ -54,3 +54,8 @@ certs/
 
 # Vorschau-PNGs, die verify-lf.mjs beim SVG-Rendern im Projektwurzel ablegt
 /lf*-*.png
+
+# Zwischenstände der reproduzierbaren Blender-Produktion
+/scripts/dach3d/__pycache__/
+/.dach3d-build-state/
+/.dach3d-build-state/

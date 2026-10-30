@@ -12,6 +12,7 @@ import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
 import { Nacharbeit } from "@/components/Nacharbeit";
 import { aufbauNacharbeit, basisNacharbeit, bildNacharbeit, transferNacharbeit } from "@/lib/lernNacharbeit";
 import { BildAntwortKarte } from "@/components/bildtraining/BildWerkstatt";
+import { DachBild } from "@/components/dach3d/DachBild";
 import { lernzeitStore } from "@/lib/appStores";
 import { appStorage } from "@/lib/lernSpeicher";
 import { berechneSchritte } from "@/lib/calc";
@@ -23,6 +24,7 @@ import { pruefeBildAufgabe } from "@/lib/bildtraining";
 import { pruefeSprachAntwort } from "@/lib/sprachWerkstatt";
 import { createReviewResult, recordReviewResult, reviewKey, reviewStorageError, type ReviewResult } from "@/lib/review";
 import { mitWerkstattReviewKontext, syncWerkstattReviewNachweise } from "@/lib/werkstattNachweise";
+import { mitDachReviewKontext, syncDachReviewNachweise } from "@/lib/dach3dNachweise";
 import { createReviewSession, emptyReviewAnswer, parseReviewSession, reviewSessionKey, saveReviewSession, getReviewTasks, freezeReviewTask, type ReviewAnswer, type ReviewFilter, type ReviewSession, type ReviewTask } from "@/lib/reviewTasks";
 import { ladeAktuellenPlanBlock, ladePruefungsPlan, erledigePlanBlock, speicherePruefungsPlan, merkeAktuellenPlanBlock } from "@/lib/pruefungsPlan";
 import styles from "./Tagesrunde.module.css";
@@ -129,7 +131,7 @@ function Runde({ art, minuten, planId }: { art: ReviewFilter; minuten: number; p
       }
       // The answer and result are saved before updating the common scheduler.
       // Replaying finishes an interrupted write without counting it twice.
-      for (const r of Object.values(geladen.stand?.results ?? {})) { recordReviewResult(r); syncWerkstattReviewNachweise(r); }
+      for (const r of Object.values(geladen.stand?.results ?? {})) { recordReviewResult(r); syncWerkstattReviewNachweise(r); syncDachReviewNachweise(r); }
     } catch (e) { queueMicrotask(() => setFehler(fehlertext(e))); }
   }, [geladen,planId,speicherKey]);
   useEffect(()=>{
@@ -161,14 +163,14 @@ function Runde({ art, minuten, planId }: { art: ReviewFilter; minuten: number; p
       try { const raw: unknown = JSON.parse(appStorage.getItem(`review-antwort-${scope}:${task.payload.aufgabe.id}`) ?? "null"); if (raw && typeof raw === "object" && !Array.isArray(raw) && Object.values(raw).every(v => typeof v === "string")) a = { ...a, original: raw as Record<string, string> }; } catch { /* no archived text for a purely visual self-assessment */ }
     }
     let r: ReviewResult = createReviewResult(task.ref,`${s.id}:${key}`,b,{ hilfen: [...new Set([...a.hilfen, ...(kontext?.mitHilfe ? ["Antwortmöglichkeiten"] : [])])], selbstBewertet: kontext?.selbstBewertet, nachErklaerung: kontext?.nachErklaerung });
-    try { r = mitWerkstattReviewKontext(r); } catch (e) { setFehler(fehlertext(e)); return; }
+    try { r = mitDachReviewKontext(mitWerkstattReviewKontext(r)); } catch (e) { setFehler(fehlertext(e)); return; }
     const p=task.payload;
     if(p.typ==="aufbau"){const e=pruefeAufbauAufgabe(p.aufgabe,a.schritte??{});if(e)r.hinweise=aufbauNacharbeit(p.aufgabe,a.schritte??{},e);}
     if(p.typ==="mathe"){const e=pruefeMathe(p.aufgabe,a.wert,a.einheit);if(e)r.hinweise=basisNacharbeit(p.aufgabe,task.ref.lernzielIds[0],task.titel,e);}
     if(p.typ==="bild"&&a.aktivitaet)r.hinweise=bildNacharbeit(p.aufgabe,a.aktivitaet);
     if(p.typ==="projekt")r.hinweise=transferNacharbeit(p.aufgabe,b==="richtig",a.einheit);
     if (!speichern({ ...s, answers: { ...s.answers, [key]: a }, results: { ...s.results, [key]: r } })) return;
-    try { recordReviewResult(r); syncWerkstattReviewNachweise(r); } catch (e) { setFehler(fehlertext(e)); }
+    try { recordReviewResult(r); syncWerkstattReviewNachweise(r); syncDachReviewNachweise(r); } catch (e) { setFehler(fehlertext(e)); }
   }
   function navigieren(index: number) { speichern({ ...aktuell.current!, index }); }
   if (!task) return <section className={styles.karte}>
@@ -241,7 +243,7 @@ function Loesung({ task }: { task: ReviewTask }) {
   if (p.typ === "projekt") return <div><h4>Der Zusammenhang auf der Baustelle</h4><p>{p.aufgabe.erklaerung}</p></div>;
   if (p.typ === "bild") {
     const a = p.aufgabe.aktivitaet;
-    return <div><SafeSvg markup={p.aufgabe.svg} /><p>{p.aufgabe.bildbeschreibung}</p><h4>Darauf kommt es an</h4><p>{a.erklaerung}</p>{a.typ === "zuordnen" ? <ul>{a.paare.map(z => <li key={z.id}>{z.links}: {z.rechts}</li>)}</ul> : a.typ === "reihenfolge" ? <ol>{a.schritte.map(s => <li key={s.id}>{s.text}</li>)}</ol> : <ul>{a.optionen.filter(o => o.korrekt).map(o => <li key={o.id}>{o.text}</li>)}</ul>}</div>;
+    return <div>{p.aufgabe.medienRef ? <DachBild medium={p.aufgabe.medienRef} alt={p.aufgabe.bildbeschreibung} /> : <SafeSvg markup={p.aufgabe.svg} />}<p>{p.aufgabe.bildbeschreibung}</p><h4>Darauf kommt es an</h4><p>{a.erklaerung}</p>{a.typ === "zuordnen" ? <ul>{a.paare.map(z => <li key={z.id}>{z.links}: {z.rechts}</li>)}</ul> : a.typ === "reihenfolge" ? <ol>{a.schritte.map(s => <li key={s.id}>{s.text}</li>)}</ol> : <ul>{a.optionen.filter(o => o.korrekt).map(o => <li key={o.id}>{o.text}</li>)}</ul>}</div>;
   }
   const a = p.aufgabe;
   return <div><h4>Lösung und Zusammenhang</h4>

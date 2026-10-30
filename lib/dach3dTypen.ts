@@ -27,7 +27,7 @@ export interface DachMedienRef { form: DachForm; deckung: DachDeckung; detailId:
 export interface DachAntwort {
   versuchId: string; aufgabe: DachAufgabe; auswahl: string[]; ersteAuswahl?: string[];
   geprueft: boolean; bewertung?: Bewertung; abgegebenAm?: number; hilfen: string[];
-  nachErklaerung: boolean; medienRef?: DachMedienRef;
+  nachErklaerung: boolean; medienRef: DachMedienRef;
 }
 export interface DachPosition {
   deckung: DachDeckung; detailId: string | null; phase: DachPhase; schritt: number;

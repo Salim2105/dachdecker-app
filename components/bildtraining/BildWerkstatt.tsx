@@ -12,6 +12,7 @@ import { GlossarText, BegriffsListe, oeffneGlossarBegriff } from "@/components/G
 import { Nacharbeit } from "@/components/Nacharbeit";
 import { AktivitaetsKarte } from "@/components/AktivitaetsKarte";
 import { SafeSvg } from "@/components/SafeSvg";
+import { DachBild } from "@/components/dach3d/DachBild";
 import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
 import styles from "./Bildtraining.module.css";
 
@@ -35,7 +36,7 @@ export function BildWerkstatt(){
 export function BildAntwortKarte({aufgabe:a,antwort,geprueft,onChange,onPruefen,onBegriff}:{aufgabe:BildAufgabe;antwort:AktivitaetAntwort;geprueft:boolean;onChange:(a:AktivitaetAntwort)=>void;onPruefen:()=>void;onBegriff?:(id:string)=>void}){
  const controls=useRef<HTMLDivElement>(null);
  return <>
-  <figure className={styles.abbildung}><div className={styles.bild}><SafeSvg markup={a.svg}/>{a.bildbereiche.length>0&&<div className={styles.regionen} aria-label="Nummerierte Bildbereiche">{a.bildbereiche.map((b,i)=><button key={b.id} aria-label={`Bildbereich ${b.nummer} in der Liste zuordnen`} className={styles.region} style={{left:`${b.x/640*100}%`,top:`${b.y/310*100}%`}} onClick={()=>controls.current?.querySelectorAll<HTMLSelectElement>("select")[i]?.focus()}>{b.nummer}</button>)}</div>}</div><figcaption>{onBegriff?<GlossarText text={a.bildbeschreibung} onBegriff={onBegriff}/>:a.bildbeschreibung}<span>Schematische Lernzeichnung ohne Maßstab.</span></figcaption></figure>
+  <figure className={styles.abbildung}><div className={styles.bild}>{a.medienRef ? <DachBild medium={a.medienRef} alt={a.bildbeschreibung}/> : <SafeSvg markup={a.svg}/>} {a.bildbereiche.length>0&&<div className={styles.regionen} aria-label="Nummerierte Bildbereiche">{a.bildbereiche.map((b,i)=><button key={b.id} aria-label={`Bildbereich ${b.nummer} in der Liste zuordnen`} className={styles.region} style={{left:`${b.x/640*100}%`,top:`${b.y/310*100}%`}} onClick={()=>controls.current?.querySelectorAll<HTMLSelectElement>("select")[i]?.focus()}>{b.nummer}</button>)}</div>}</div><figcaption>{onBegriff?<GlossarText text={a.bildbeschreibung} onBegriff={onBegriff}/>:a.bildbeschreibung}<span>{a.medienRef ? "Gerenderte Ansicht des festgelegten Lehrmodells, teilweise als Lehrausschnitt geöffnet." : "Schematische Lernzeichnung ohne Maßstab."}</span></figcaption></figure>
   <div ref={controls}><AktivitaetsKarte aktivitaet={a.aktivitaet} antwort={antwort} geprueft={geprueft} onChange={onChange} onPruefen={onPruefen} onBegriff={onBegriff}/></div>
  </>;
 }

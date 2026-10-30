@@ -40,6 +40,10 @@ export function projektAktivNacharbeit(p:BauProjekt,key:keyof BauProjekt["aktivi
   hinweis:r.richtig?`„${a.titel}“ wurde richtig bearbeitet.`:`Bei „${a.titel}“ passen ${r.erreicht} von ${r.moeglich} bewerteten Zusammenhängen. ${auftrag?"Trenne gegebene Angaben, gesuchte Leistung und noch offene Fragen.":ablauf?"Ordne Prüfen und Planen vor der Ausführung ein; schließe mit der Kontrolle ab.":a.erklaerung}`}];
 }
 export function bildNacharbeit(a:BildAufgabe,antwort:AktivitaetAntwort):LernHinweis[]{
+ if(a.medienRef&&a.id.startsWith("dach3d-")){
+  const r=bewerteAktivitaet(a.aktivitaet,antwort);
+  return [{kategorie:a.medienRef.detailId==="g06"||a.medienRef.detailId==="f02"?"wasserweg":"fachwissen",lernzielId:a.lernzielIds[0],route:`/projekte#dach-${a.medienRef.form}-${a.medienRef.detailId}`,thema:a.titel,richtig:r.richtig,hinweis:r.richtig?"Den dargestellten Zusammenhang des Dachdetails richtig erkannt.":a.aktivitaet.erklaerung}];
+ }
  const werkstatt=getWerkstattWiederholung(a.id),werkstattRoute=werkstattWiederholungRoute(a.id);
  if(werkstatt&&werkstattRoute){
   const r=bewerteAktivitaet(a.aktivitaet,antwort);

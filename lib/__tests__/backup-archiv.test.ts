@@ -12,6 +12,30 @@ beforeEach(() => {
 afterEach(() => { vi.unstubAllGlobals(); vi.restoreAllMocks(); });
 
 describe("vollständige Sicherungen", () => {
+  it("sichert Dachpositionen, eingefrorene Aufgaben und private Fotos ohne öffentliche Modellpakete", async () => {
+    const storage = await import("@/lib/lernSpeicher");
+    const backup = await import("@/lib/backup");
+    const dach = await import("@/lib/dach3dStand");
+    const { DACH_DETAILS } = await import("@/lib/dach3dInhalte");
+    await storage.initializeStorage();
+    const s = dach.neuerDachStand();
+    s.jeDach.steildach.detailId = "s03";
+    s.jeDach.steildach.phase = "aufgaben";
+    const a = DACH_DETAILS.find(d => d.id === "s03")!.aufgaben[0];
+    s.antworten[a.id] = { ...dach.dachAntwort(s, a), auswahl: [a.optionen[0].id] };
+    s.notizen.s03 = "Rinnenhalter am Übungsmodell prüfen";
+    dach.speichereDachStand(s);
+    await storage.writeBlob("drawing:photo:werkstatt-privat", new Blob([new Uint8Array([12, 34, 56])], { type: "image/png" }));
+    const checked = backup.pruefeArchiv(await backup.exportiereArchiv())!;
+    expect(checked.dateien.size).toBe(1);
+    expect(Object.keys(checked.daten)).toContain(dach.dachStandKey);
+    expect([...checked.dateien.keys()].some(k => k.includes("dach-medien"))).toBe(false);
+    storage.appStorage.removeItem(dach.dachStandKey);
+    await storage.deleteBlob("drawing:photo:werkstatt-privat");
+    await backup.importiereArchiv(checked);
+    expect(dach.ladeDachStand()).toEqual(s);
+    expect(new Uint8Array(await (await storage.readBlob("drawing:photo:werkstatt-privat"))!.arrayBuffer())).toEqual(new Uint8Array([12, 34, 56]));
+  });
   it("stellt Entwürfe, tatsächliche Prüfungsantworten und Bildbytes aus dem ZIP wieder her", async () => {
     const storage = await import("@/lib/lernSpeicher");
     const backup = await import("@/lib/backup");

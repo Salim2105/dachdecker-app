@@ -3,6 +3,7 @@ import { DACH_DETAILS, getDachDetail } from "@/lib/dach3dInhalte";
 import { DACH_FORMEN, DACH_SCHICHTEN, dachDeckung, istDachMedienRef } from "@/lib/dach3dMedien";
 import type { Bewertung } from "@/content/schema";
 import type { DachAntwort, DachAufgabe, DachErkundungStand, DachForm, DachPosition } from "@/lib/dach3dTypen";
+import { parseReviewStore, REVIEW_KEY } from "@/lib/review";
 
 export const dachStandKey = "dach3d-erkundung-v1";
 export const DACH_STAND_KEY = dachStandKey;
@@ -57,7 +58,7 @@ function gueltigePosition(v: unknown, form: DachForm): v is DachPosition {
 }
 function gueltigeAntwort(v: unknown, id: string, s: DachErkundungStand): v is DachAntwort {
   if (!obj(v) || !text(v.versuchId, 500) || !validDachAufgabe(v.aufgabe) || v.aufgabe.id !== id || v.versuchId !== `${s.id}:${id}` || !ids(v.auswahl, 12) || v.auswahl.some(id => !(v.aufgabe as DachAufgabe).optionen.some(o => o.id === id)) || typeof v.geprueft !== "boolean" || !texte(v.hilfen, 1000) || !unique(v.hilfen) || typeof v.nachErklaerung !== "boolean") return false;
-  if (v.medienRef !== undefined && (!istDachMedienRef(v.medienRef) || v.medienRef.detailId !== v.aufgabe.detailId)) return false;
+  if (!istDachMedienRef(v.medienRef) || v.medienRef.detailId !== v.aufgabe.detailId) return false;
   if (v.geprueft) return ids(v.ersteAuswahl, 12) && gleich(v.ersteAuswahl, v.auswahl) && zeit(v.abgegebenAm) && v.abgegebenAm >= s.erstelltAm && v.abgegebenAm <= s.aktualisiertAm && v.bewertung === bewerteDachAntwort(v.aufgabe, v.auswahl) && v.bewertung !== null;
   return v.ersteAuswahl === undefined && v.abgegebenAm === undefined && v.bewertung === undefined;
 }
@@ -98,10 +99,19 @@ function bearbeiten(s: DachErkundungStand, now = Date.now()): DachErkundungStand
   if (!zeit(now)) throw new Error("Ungültiger Speicherzeitpunkt.");
   const neu = clone(s); neu.revision++; neu.aktualisiertAm = Math.max(now, s.aktualisiertAm); return neu;
 }
-function zeitnaheHilfen(s: DachErkundungStand, detailId: string, am: number): string[] {
+function zeitnaheTagesAntworten(detailId: string, am: number, versuchId?: string): string[] {
+  const historie = parseReviewStore(appStorage.getItem(REVIEW_KEY));
+  if (!historie) throw new Error("Der Wiederholungsstand ist nicht lesbar. Bitte zuerst eine vollständige Sicherung erstellen.");
+  const aufgaben = getDachDetail(detailId)?.aufgaben.map(a => a.id) ?? [];
+  return Object.values(historie).some(stand => stand.ref.quelle === "bild" && aufgaben.includes(stand.ref.id) && stand.verlauf.some(r =>
+    r.versuchId !== versuchId && r.am <= am && am - r.am <= DACH_NACHARBEIT_MS
+  )) ? ["vergleich-der-tagesantwort"] : [];
+}
+function zeitnaheHilfen(s: DachErkundungStand, detailId: string, am: number, versuchId?: string): string[] {
   return [...new Set([
     ...s.hilfeEreignisse.filter(h => h.detailId === detailId && h.am <= am && am - h.am <= DACH_NACHARBEIT_MS).map(h => h.art),
     ...Object.values(s.antworten).filter(a => a.aufgabe.detailId === detailId && a.geprueft && a.abgegebenAm! <= am && am - a.abgegebenAm! <= DACH_NACHARBEIT_MS).map(() => "vergleich-der-vorigen-antwort"),
+    ...zeitnaheTagesAntworten(detailId, am, versuchId),
   ])];
 }
 /** Pure, stable getter: freeze this value in antworten before editing it. */
@@ -143,8 +153,8 @@ export function pruefeDachAufgabe(s: DachErkundungStand, aufgabeId: string, now 
 }
 
 /** Public helper for review normalization; never mutates the source record. */
-export function dachDetailZeitnahErklaert(detailId: string, am = Date.now()): boolean {
+export function dachDetailZeitnahErklaert(detailId: string, am = Date.now(), versuchId?: string): boolean {
   const s = ladeDachStand();
-  return !!s && zeitnaheHilfen(s, detailId, am).length > 0;
+  return s ? zeitnaheHilfen(s, detailId, am, versuchId).length > 0 : zeitnaheTagesAntworten(detailId, am, versuchId).length > 0;
 }
 export const DACH_AUFGABEN = () => DACH_DETAILS.flatMap(d => d.aufgaben);

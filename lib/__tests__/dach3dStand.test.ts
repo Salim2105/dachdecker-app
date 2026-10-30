@@ -48,6 +48,8 @@ describe("Dachlernstand: Wiederaufnahme und echte erste Antworten", () => {
     expect(dachAntwort(neu, aufgabe)).toEqual(a);
     const fremd = copy(neu); fremd.antworten[aufgabe.id].aufgabe.frage = "Eine andere Frage";
     expect(() => speichereDachStand(fremd)).toThrow(/Übungsangaben/);
+    const ohneBild = JSON.parse(JSON.stringify(s)); delete ohneBild.antworten[aufgabe.id].medienRef;
+    expect(parseDachStand(JSON.stringify(ohneBild))).toBeNull();
   });
   it("behält Erstantwort und Ergebnis bei erneutem Prüfen unverändert", () => {
     let s = mitAntwort(); s = pruefeDachAufgabe(s, aufgabe.id, start + 1000);

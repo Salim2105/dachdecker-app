@@ -2,6 +2,7 @@ import type { Bewertung } from "@/content/schema";
 import { bewerteAktivitaet, istAktivitaetVollstaendig, starteAktivitaet, type Aktivitaet, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { appStorage } from "@/lib/lernSpeicher";
 import { istLernHinweis, type LernHinweis } from "@/lib/lernHinweise";
+import type { DachMedienRef } from "@/lib/dach3dTypen";
 
 export type BildProjekt = "ziegeldach" | "flachdach" | "sanierung" | "schiefer" | "metalldach" | "fassade";
 export type BildAufgabenArt = "bauteile" | "folge" | "fehler" | "massnahme";
@@ -10,6 +11,7 @@ export interface BildAufgabe {
   id: string; version: number; projektId: BildProjekt; art: BildAufgabenArt; titel: string;
   lernziel: string; lernzielIds: string[]; lfIds: string[]; minuten: number;
   svg: string; bildbeschreibung: string; bildbereiche: BildBereich[]; aktivitaet: Aktivitaet;
+  medienRef?: DachMedienRef;
 }
 export const BILD_THEMEN: { id: BildProjekt; titel: string; lfIds: string[] }[] = [
   {id:"ziegeldach",titel:"Ziegeldach",lfIds:["lf02","lf08"]},

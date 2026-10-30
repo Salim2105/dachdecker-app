@@ -8,15 +8,16 @@ const jetzt=Date.UTC(2026,9,25,12);
 beforeEach(()=>localStorage.clear());
 const task=(typ:string)=>getReviewTasks().find(t=>t.payload.typ===typ)!;
 describe("gemeinsame Tagesrunde",()=>{
-  it("verbindet Fachwissen, beide Mathestufen, Sprachen, kurze Projekte, 24 Bild- und 20 Werkstattaufgaben",()=>{
+  it("verbindet Fachwissen, beide Mathestufen, Sprachen, Projekte und alle drei Bildaufgabenbestände",()=>{
     const aufgaben=getReviewTasks();
     expect(new Set(aufgaben.map(a=>a.payload.typ))).toEqual(new Set(["fachwissen","mathe","sprache","aufbau","projekt","bild"]));
     expect(aufgaben.filter(a=>a.payload.typ==="aufbau")).toHaveLength(30);
     expect(aufgaben.filter(a=>a.payload.typ==="projekt")).toHaveLength(12);
     expect(aufgaben.filter(a=>a.ref.id.startsWith("pruefungs-transfer-"))).toHaveLength(6);
-    expect(aufgaben.filter(a=>a.payload.typ==="bild")).toHaveLength(44);
-    expect(aufgaben.filter(a=>a.payload.typ==="bild"&&!a.ref.id.startsWith("werkstatt-"))).toHaveLength(24);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild")).toHaveLength(112);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild"&&!a.ref.id.startsWith("werkstatt-")&&!a.ref.id.startsWith("dach3d-"))).toHaveLength(24);
     expect(aufgaben.filter(a=>a.payload.typ==="bild"&&a.ref.id.startsWith("werkstatt-"))).toHaveLength(20);
+    expect(aufgaben.filter(a=>a.payload.typ==="bild"&&a.ref.id.startsWith("dach3d-"))).toHaveLength(68);
     expect(new Set(aufgaben.map(a=>reviewKey(a.ref))).size).toBe(aufgaben.length);
     for(const a of aufgaben)expect(validReviewTask(freezeReviewTask(a,()=>.4)),a.ref.id).toBe(true);
   });
@@ -63,5 +64,18 @@ describe("gemeinsame Tagesrunde",()=>{
     expect(parseReviewSession(JSON.stringify({...s,tasks:[...s.tasks,s.tasks[0]]}))).toBeNull();
     const unsafe:ReviewTask={...s.tasks[0],route:"https://fremde.example"};
     expect(parseReviewSession(JSON.stringify({...s,tasks:[unsafe]}))).toBeNull();
+  });
+  it("friert Dachbilder ohne laufendes 3D ein und lehnt fremde oder aktive Bildinhalte ab",()=>{
+    const a=freezeReviewTask(getReviewTasks().find(t=>t.ref.id==="dach3d-s03-funktion")!);
+    expect(validReviewTask(a)).toBe(true);
+    expect(a.route).toBe("/projekte#dach-steildach-s03");
+    const s=createReviewSession("alles",5,jetzt,()=>.1);s.tasks=[a];s.index=0;s.answers={};s.results={};
+    expect(parseReviewSession(JSON.stringify(s))?.tasks).toEqual([a]);
+    if(a.payload.typ!=="bild")throw new Error("Bildaufgabe erwartet");
+    const bad=(extra:object)=>({...a,payload:{...a.payload,aufgabe:{...a.payload.aufgabe,...extra}}});
+    expect(validReviewTask(bad({medienRef:{...a.payload.aufgabe.medienRef,detailId:"s04"}}))).toBe(false);
+    expect(validReviewTask(bad({medienRef:{...a.payload.aufgabe.medienRef,url:"https://fremd.example/x.glb",form:"../fremd"}}))).toBe(false);
+    expect(validReviewTask(bad({aktivitaet:{...a.payload.aufgabe.aktivitaet,svg:'<svg><script>alert(1)</script></svg>'}}))).toBe(false);
+    expect(validReviewTask(bad({svg:'<svg onload="alert(1)"></svg>'}))).toBe(false);
   });
 });

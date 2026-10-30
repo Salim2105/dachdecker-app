@@ -15,7 +15,9 @@ vi.mock("@/lib/dach3dMedien", () => ({ dachMedien: () => ({
 const props = (): DachBetrachterProps => ({ form: "steildach", deckung: "falzziegel", detailId: "s03", ansicht: "nah", phase: "erkennen", schritt: 0, schichten: ["deckung", "tragwerk"], kamera: "nah", wasser: 0, onDetail: vi.fn(), onKamera: vi.fn() });
 beforeEach(() => {
   vi.stubGlobal("WebGL2RenderingContext", class {});
-  vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockReturnValue({ getExtension: () => ({ loseContext: vi.fn() }) } as unknown as WebGL2RenderingContext);
+  const context = { getExtension: () => ({ loseContext: vi.fn() }) };
+  // getContext also has a WebGPU overload; this fake implements our WebGL probe.
+  vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockImplementation((() => context) as unknown as HTMLCanvasElement["getContext"]);
 });
 afterEach(() => { cleanup(); vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
