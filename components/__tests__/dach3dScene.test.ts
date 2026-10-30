@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { BoxGeometry, Group, Mesh, MeshStandardMaterial, Object3D, Texture } from "three";
-import { dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, vorbereiteDachModell, wasserPunkte } from "@/components/dach3d/dach3dScene";
+import { BoxGeometry, Group, Mesh, MeshStandardMaterial, Object3D, Texture, Vector3 } from "three";
+import { dachKameraAbstand, dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, vorbereiteDachModell, wasserPunkte } from "@/components/dach3d/dach3dScene";
 
 function scene() {
   const root = new Group();
@@ -74,6 +74,14 @@ describe("Dachmodell: echte Geometrie, Schichten und sichere Bedienung", () => {
   it("weist ungültige und richtungslose Kamerastände zurück", () => {
     expect(gueltigerOrbit({ position: [5, 3, 2], target: [0, 1, 0] })).toBe(true);
     for (const v of [null, {}, { position: [NaN, 0, 0], target: [0, 0, 0] }, { position: [1001, 0, 0], target: [0, 0, 0] }, { position: [1, 2, 3], target: [1, 2, 3] }, { position: [1, 2], target: [0, 0, 0] }]) expect(gueltigerOrbit(v)).toBe(false);
+  });
+  it("hält auch lange diagonale Bauteile im Hoch- und Querformat vollständig im Bild", () => {
+    const size = new Vector3(2.2, 2.7, 1.9), radius = size.length() / 2, halfY = 43 * Math.PI / 360;
+    for (const aspect of [.5, .9, 1, 1.8]) {
+      const distance = dachKameraAbstand(size, 43, aspect), halfX = Math.atan(Math.tan(halfY) * aspect);
+      expect(Math.asin(radius / distance)).toBeLessThan(Math.min(halfX, halfY));
+    }
+    expect(dachKameraAbstand(size, 43, .5)).toBeGreaterThan(dachKameraAbstand(size, 43, 1.8));
   });
   it("gibt geteilte Geometrien, Materialien und Texturen beim Dachwechsel genau einmal frei", () => {
     const root = new Group(), geometry = new BoxGeometry(), texture = new Texture(), material = new MeshStandardMaterial({ map: texture, normalMap: texture });

@@ -117,6 +117,13 @@ export function wasserPunkte(root: Object3D): Vector3[] {
 }
 
 export interface DachOrbit { position: [number, number, number]; target: [number, number, number] }
+/** Fit the complete bounding sphere, including long parts viewed diagonally. */
+export function dachKameraAbstand(size: Vector3, fov: number, aspect: number): number {
+  const halfY = Math.max(.01, Math.min(Math.PI / 2 - .01, fov * Math.PI / 360));
+  const halfX = Math.atan(Math.tan(halfY) * Math.max(.05, aspect));
+  const radius = Math.max(.1, size.length() / 2);
+  return radius / Math.sin(Math.min(halfX, halfY)) * 1.08;
+}
 export function gueltigerOrbit(v: unknown): v is DachOrbit {
   if (!v || typeof v !== "object") return false;
   const a = v as Record<string, unknown>;

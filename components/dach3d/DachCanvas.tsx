@@ -4,7 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import { Html, Line, OrbitControls } from "@react-three/drei";
-import { ACESFilmicToneMapping, Color, Mesh, Object3D, PCFSoftShadowMap, PerspectiveCamera, PMREMGenerator, Spherical, Vector3 } from "three";
+import { ACESFilmicToneMapping, Box3, Color, Mesh, Object3D, PCFSoftShadowMap, PerspectiveCamera, PMREMGenerator, Spherical, Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import type { OrbitControls as OrbitControlsImpl } from "three-stdlib";
@@ -12,7 +12,7 @@ import { getDachDetail } from "@/lib/dach3dInhalte";
 import { DACH_MEDIEN } from "@/lib/dach3dMedien";
 import type { DachAnsicht, DachPhase, DachPosition } from "@/lib/dach3dTypen";
 import type { DachBefehl } from "./DachBetrachter";
-import { dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, vorbereiteDachModell, wasserPunkte, type DachOrbit } from "./dach3dScene";
+import { dachKameraAbstand, dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, vorbereiteDachModell, wasserPunkte, type DachOrbit } from "./dach3dScene";
 
 const erlaubteMedien = new Set(DACH_MEDIEN.map(a => a.url));
 
@@ -80,7 +80,7 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
   const bewegung = useRef<{ start: Vector3; ziel: Vector3; altTarget: Vector3; zielTarget: Vector3; zeit: number } | null>(null);
   const [anker, setAnker] = useState<Anker[]>([]), [wasser, setWasser] = useState<Vector3[]>([]);
   const layerKey = props.schichten.join("|"), erlaubteKey = props.erlaubt.join("|");
-  const gezeichnet = useRef(false), modellGezeichnet = useRef(false), fertigFrame = useRef<number | null>(null);
+  const gezeichnet = useRef(false), modellGezeichnet = useRef(false), fertigFrame = useRef<number | null>(null), startFrames = useRef(0);
   useEffect(() => () => { if (fertigFrame.current !== null) cancelAnimationFrame(fertigFrame.current); }, []);
   useEffect(() => {
     const callbacks = new Map<Mesh, Mesh["onAfterRender"]>();
@@ -90,8 +90,12 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
       const vorher = node.onAfterRender;
       node.onAfterRender = function (...args) { modellGezeichnet.current = true; vorher.apply(this, args); };
     });
-    return () => { for (const [mesh, vorher] of callbacks) mesh.onAfterRender = vorher; };
-  }, [root]);
+    // The first demand frame can finish before passive effects attach these
+    // handlers. Request a fresh frame after this browser turn, rather than
+    // relying on layout changes or pointer movement to restart the idle loop.
+    const frame = requestAnimationFrame(() => invalidate());
+    return () => { cancelAnimationFrame(frame); for (const [mesh, vorher] of callbacks) mesh.onAfterRender = vorher; };
+  }, [root, invalidate]);
 
   useEffect(() => {
     konfiguriereDachModell(root, basis, { schichten: props.schichten, ansicht: props.ansicht, phase: props.phase, schritt: props.schritt });
@@ -111,13 +115,14 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
   const cameraBefehl = useRef(0);
   function anpassen(schnell: boolean) {
     const orbit = props.orbit;
-    const center = basis.center.clone(), max = Math.max(basis.size.x, basis.size.y, basis.size.z, .2);
+    const bounds = new Box3().setFromObject(root), viewSize = bounds.getSize(new Vector3());
+    const center = bounds.getCenter(new Vector3()), max = Math.max(viewSize.x, viewSize.y, viewSize.z, .2);
     const perspektive = camera as PerspectiveCamera;
     const aspect = Math.max(.3, size.width / Math.max(size.height, 1));
-    const dist = max / 2 / Math.tan(perspektive.fov * Math.PI / 360) / Math.min(1, aspect) * 1.3;
+    const dist = dachKameraAbstand(viewSize, perspektive.fov, aspect);
     const target = gueltigerOrbit(orbit) ? new Vector3(...orbit.target) : center;
     const direction = props.kamera === "oben" ? new Vector3(.001, 1, .02) : props.kamera === "seite" ? new Vector3(1.5, .35, .1) : props.kamera === "nah" ? new Vector3(1, .55, 1.1) : new Vector3(1.35, .8, 1.35);
-    const ziel = gueltigerOrbit(orbit) ? new Vector3(...orbit.position) : direction.normalize().multiplyScalar(dist * (props.kamera === "nah" ? .84 : 1)).add(center);
+    const ziel = gueltigerOrbit(orbit) ? new Vector3(...orbit.position) : direction.normalize().multiplyScalar(dist).add(center);
     perspektive.near = Math.max(.001, max / 1000); perspektive.far = Math.max(100, max * 150); perspektive.updateProjectionMatrix();
     if (!controls.current) return;
     controls.current.minDistance = Math.max(.04, max * .18); controls.current.maxDistance = Math.max(2, max * 7);
@@ -131,7 +136,7 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
     anpassen(first.current); first.current = false;
   // Camera restoration depends on authored presets and captured orbit only.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [root, props.kamera, props.resetSignal, props.reduziert, size.width, size.height, orbitKey]);
+  }, [root, props.kamera, props.ansicht, props.resetSignal, props.reduziert, size.width, size.height, orbitKey]);
 
   useFrame((_, delta) => {
     // R3F invokes useFrame before drawing. Observe the next browser frame so
@@ -142,7 +147,14 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
     if (!gezeichnet.current && fertigFrame.current === null) {
       fertigFrame.current = requestAnimationFrame(() => {
         fertigFrame.current = null;
-        if (gl.info.render.calls <= 0 || gl.info.render.triangles <= 0) return;
+        startFrames.current++;
+        if (gl.info.render.calls <= 0 || gl.info.render.triangles <= 0 || !modellGezeichnet.current && startFrames.current < 2) {
+          // Loading a demand-driven scene must never depend on a later resize.
+          // Limit retries so a broken renderer cannot start a permanent loop.
+          if (startFrames.current < 4) invalidate();
+          else props.onFehler("Die 3D-Ansicht konnte nicht gezeichnet werden. Die feste Ansicht bleibt verfügbar.");
+          return;
+        }
         gezeichnet.current = true;
         onBereit.current();
         window.dispatchEvent(new CustomEvent("dach3d:bereit", { detail: {
@@ -169,9 +181,9 @@ function GeladenesModell({ root, ...props }: DachCanvasProps & { root: Object3D 
     if (!props.befehl.nummer || cameraBefehl.current === props.befehl.nummer || !controls.current) return;
     cameraBefehl.current = props.befehl.nummer; bewegung.current = null;
     if (props.befehl.art === "reset") {
-      const max = Math.max(basis.size.x, basis.size.y, basis.size.z, .2), aspect = Math.max(.3, size.width / Math.max(size.height, 1));
-      const dist = max / 2 / Math.tan((camera as PerspectiveCamera).fov * Math.PI / 360) / Math.min(1, aspect) * 1.3;
-      camera.position.copy((props.detailId ? new Vector3(1, .55, 1.1) : new Vector3(1.35, .8, 1.35)).normalize().multiplyScalar(dist * (props.detailId ? .84 : 1)).add(basis.center)); controls.current.target.copy(basis.center);
+      const bounds = new Box3().setFromObject(root), center = bounds.getCenter(new Vector3()), aspect = Math.max(.3, size.width / Math.max(size.height, 1));
+      const dist = dachKameraAbstand(bounds.getSize(new Vector3()), (camera as PerspectiveCamera).fov, aspect);
+      camera.position.copy((props.detailId ? new Vector3(1, .55, 1.1) : new Vector3(1.35, .8, 1.35)).normalize().multiplyScalar(dist).add(center)); controls.current.target.copy(center);
     } else {
       const kugel = new Spherical().setFromVector3(camera.position.clone().sub(controls.current.target));
       if (props.befehl.art === "links") kugel.theta -= .18;
