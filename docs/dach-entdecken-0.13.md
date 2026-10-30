@@ -24,7 +24,7 @@ Die Systemkarten legen die gezeigten Übungsaufbauten und ihre Grenzen offen. Si
 
 Erkunden vergibt keine Wissenspunkte. Zwei beantwortete Kontrollfragen können einen digitalen Verständnisnachweis erzeugen; praktische Ausführung und Transfer werden dadurch nicht behauptet. Geöffnete Erklärungen, Begriffshilfen und unmittelbare Antworten nach einem Feedback bleiben als Unterstützung erkennbar. Dieser Kontext wird auch beim Wechsel zwischen 3D-Detail und Tagesrunde berücksichtigt. Erneutes Öffnen einer Auswertung zählt denselben Versuch nicht doppelt.
 
-Die 68 Fragen stehen zusätzlich als kurze Bildaufgaben in der Tagesrunde bereit. Diese benötigt keinen laufenden 3D-Betrachter. Auch ihre Auswertung zeigt dieselbe eingefrorene Renderansicht.
+Die 68 Fragen stehen zusätzlich als kurze Bildaufgaben in der Tagesrunde bereit. Eine tatsächlich abgegebene Antwort im Dachdetail erhält dort einen Wiederholungstermin; genutzte Hilfen bleiben berücksichtigt. Diese Runde benötigt keinen laufenden 3D-Betrachter. Auch ihre Auswertung zeigt dieselbe eingefrorene Renderansicht.
 
 Vollständige ZIP-Sicherungen enthalten den neuen Lernstand, Antworten sowie private Zeichnungen und Fotos. Herunterladbare öffentliche Modelle liegen getrennt davon und werden nicht in jeder privaten Sicherung dupliziert. Alte Sicherungsformate bleiben importierbar.
 

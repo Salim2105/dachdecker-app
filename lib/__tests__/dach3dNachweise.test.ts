@@ -5,7 +5,7 @@ import { dachAntwort, dachHilfe, neuerDachStand, pruefeDachAufgabe, speichereDac
 import { DACH_NACHWEISE_SYNC_KEY, mitDachReviewKontext, syncDachNachweise, syncDachReviewNachweise } from "@/lib/dach3dNachweise";
 import { ladeKompetenzNachweise, unabhaengigerNachweis } from "@/lib/kompetenzNachweise";
 import { ladeLernsignale } from "@/lib/lerndiagnose";
-import { createReviewResult, recordReviewResult } from "@/lib/review";
+import { createReviewResult, loadReviewRecords, recordReviewResult, reviewKey } from "@/lib/review";
 import type { DachErkundungStand } from "@/lib/dach3dTypen";
 
 const jetzt = Date.UTC(2026, 9, 30, 12);
@@ -31,6 +31,9 @@ describe("ehrliche Lernnachweise aus den Dachdetails", () => {
     s = pruefeDachAufgabe(s, aufgabe.id, jetzt + 1000);
     syncDachNachweise(s);
     expect(ladeKompetenzNachweise()).toEqual([]);
+    const wiederholung = Object.values(loadReviewRecords());
+    expect(wiederholung).toHaveLength(1);
+    expect(wiederholung[0]).toMatchObject({ ref: { id: aufgabe.id }, intervallTage: 1, faelligAm: jetzt + 1000 + 86400000 });
   });
   it("wertet zwei Antworten nach Neustart genau einmal als digitales Verständnis", () => {
     const s = beantwortet(neuerDachStand(jetzt));
@@ -43,6 +46,7 @@ describe("ehrliche Lernnachweise aus den Dachdetails", () => {
     expect(nachweise[0]).toMatchObject({ art: "automatisch", erreicht: 2, moeglich: 2, transfer: false, richtig: true });
     expect(unabhaengigerNachweis(nachweise[0])).toBe(false);
     expect(nachweise[0].hilfen).toContain("begleitung");
+    for (const a of detail.aufgaben) expect(loadReviewRecords()[reviewKey({ quelle: "bild", id: a.id, version: a.version, lernzielIds: a.lernzielIds })].verlauf).toHaveLength(1);
   });
   it("behält falsche Antworten und leitet zur passenden Korrektur", () => {
     syncDachNachweise(beantwortet(neuerDachStand(jetzt), false));

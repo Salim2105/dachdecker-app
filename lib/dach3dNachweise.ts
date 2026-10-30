@@ -2,7 +2,7 @@ import { appStorage } from "@/lib/lernSpeicher";
 import { speichereKompetenzNachweise, type KompetenzNachweis } from "@/lib/kompetenzNachweise";
 import { speichereLernsignaleEinmal } from "@/lib/lerndiagnose";
 import type { KompetenzId } from "@/lib/pruefungsVorbereitungTypen";
-import { validReviewResult, type ReviewResult } from "@/lib/review";
+import { loadReviewRecords, recordReviewResult, reviewKey, validReviewResult, type ReviewResult } from "@/lib/review";
 import { DACH_DETAILS } from "@/lib/dach3dInhalte";
 import { dachDetailZeitnahErklaert } from "@/lib/dach3dStand";
 import type { DachErkundungStand } from "@/lib/dach3dTypen";
@@ -22,6 +22,17 @@ function verarbeitete(): string[] {
 /** One detail, two answers, one digital proof. Looking around never creates points. */
 export function syncDachNachweise(s: DachErkundungStand): void {
   const vorher = verarbeitete(), ids = new Set(vorher), neu: string[] = [];
+  const wiederholungen = loadReviewRecords();
+  // These are the very same frozen questions as in the daily round. Schedule
+  // actual submissions, including an unfinished detail, without inventing an
+  // answer to a different exercise or awarding an additional competency proof.
+  for (const a of Object.values(s.antworten)) {
+    if (!a.geprueft || !a.bewertung || a.abgegebenAm === undefined) continue;
+    const ref = { quelle: "bild" as const, id: a.aufgabe.id, version: a.aufgabe.version, lernzielIds: [...a.aufgabe.lernzielIds] };
+    if (wiederholungen[reviewKey(ref)]?.verarbeiteteVersuche.includes(a.versuchId)) continue;
+    recordReviewResult({ ref,
+      versuchId: a.versuchId, bewertung: a.bewertung, am: a.abgegebenAm, hilfen: [...a.hilfen], nachErklaerung: a.nachErklaerung });
+  }
   for (const detail of DACH_DETAILS) {
     const antworten = detail.aufgaben.map(a => s.antworten[a.id]);
     if (antworten.some(a => !a?.geprueft || !a.bewertung || a.abgegebenAm === undefined)) continue;
