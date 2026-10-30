@@ -16,6 +16,8 @@ import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage, flushStorage } from "@/lib/lernSpeicher";
 import { getWerkstattEinheit } from "@/lib/werkstattInhalte";
+import { DachErkunden } from "@/components/dach3d/DachErkunden";
+import { dachDeckungsWunsch, dachRoutenZiel } from "@/lib/dach3dVerknuepfungen";
 import { WerkstattTraining } from "@/components/werkstatt/WerkstattTraining";
 import { istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
 import { BAUPROJEKTE, PROJEKT_SCHRITTE, darfProjektRechnen, leseProjektStand, neuerProjektStand, projektErgebnis, projektKey, projektVollstaendig, pruefeProjektZahl, type BauProjekt, type ProjektStand, type ProjektRechnung } from "@/lib/bauprojekte";
@@ -33,8 +35,10 @@ function letzteHilfen(s:ProjektStand,key:string):string[]{return letzteSignale(s
 /** A committed hash wins over catalogue queries and previous project selection. */
 export function projektAnsicht(hash: string, search: string, gespeichert: string | null): string {
   const id = hash.replace(/^#/, "");
+  if (dachRoutenZiel(id)) return id;
   if (id === "werkstatt" || id === "werkstatt-praxis-falzziegel" || id === "werkstatt-praxis-biber-doppel" || getWerkstattEinheit(id)) return id;
   if (!id && new URLSearchParams(search).get("ansicht") === "praxis") return "praxis";
+  if (!id && new URLSearchParams(search).get("ansicht") !== "uebersicht" && gespeichert && dachRoutenZiel(gespeichert)) return gespeichert;
   return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id), gespeichert, { hash, search });
 }
 function gespeicherteAuswahl(): string {
@@ -44,9 +48,10 @@ function gespeicherteAuswahl(): string {
 
 export function ProjektWerkstatt() {
   const [auswahl, setAuswahl] = useState(gespeicherteAuswahl);
+  const [routeSearch, setRouteSearch] = useState(() => typeof window === "undefined" ? "" : window.location.search);
   const [navigationFehler, setNavigationFehler] = useState("");
   useEffect(() => {
-    const wechseln = () => setAuswahl(gespeicherteAuswahl());
+    const wechseln = () => { setAuswahl(gespeicherteAuswahl()); setRouteSearch(window.location.search); };
     window.addEventListener("hashchange", wechseln);
     window.addEventListener("popstate", wechseln);
     return () => { window.removeEventListener("hashchange", wechseln); window.removeEventListener("popstate", wechseln); };
@@ -66,6 +71,8 @@ export function ProjektWerkstatt() {
     if (BAUPROJEKTE.some(p => p.id === auswahl)) void flushStorage().then(wechseln).catch(() => setNavigationFehler("Deine Änderungen konnten noch nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen."));
     else wechseln();
   }
+  const dach = dachRoutenZiel(auswahl);
+  if (dach) return <DachErkunden form={dach.form} detailId={dach.detailId} deckung={dachDeckungsWunsch(routeSearch, dach.form)}/>;
   const projekt = BAUPROJEKTE.find(p => p.id === auswahl);
   if (projekt) return <>{navigationFehler && <p role="alert">{navigationFehler}</p>}<ProjektEinheit key={projekt.id} vorlage={projekt} zurueck={() => waehlen("")}/></>;
   if (auswahl === "praxis") return <PraxisVorbereitung/>;
@@ -74,6 +81,7 @@ export function ProjektWerkstatt() {
   return <div>
     <header className={styles.hero}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Planen. Verstehen. Handwerk üben.</h1><p>Wähle dein Angebot: Handgriffe in der Werkstatt verstehen, einen vollständigen Auftrag durchdenken oder die praktische Arbeit in Betrieb und Schule vorbereiten.</p><LernLink href="/projekte#werkstatt">Zum handwerklichen Werkstatttraining →</LernLink></div><PracticeArtwork art="baustelle"/></header>
     {navigationFehler && <p role="alert">{navigationFehler}</p>}
+    <section className="werkstatt-karte mt-5" aria-labelledby="dach-entdecken-katalog"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>DAS GANZE DACH RÄUMLICH VERSTEHEN</span><h2 id="dach-entdecken-katalog" className="mt-2">3D-Dach entdecken</h2><p>Drei Lehrdächer, zwei Ziegeldeckungen und 34 Details: Bauteile auswählen, Schichten öffnen, Montage verfolgen und dein Verständnis prüfen.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#dach-entdecken">Mein Dach erkunden →</LernLink></section>
     <div className="werkstatt-karte mt-5"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>NEU · 20 EINHEITEN MIT INTERAKTIVEN ZEICHNUNGEN</span><h2 className="mt-2">Handwerk Schritt für Schritt verstehen</h2><p>Falzziegel und Biberschwanz-Doppeldeckung: messen, anzeichnen, einteilen, verlegen, Schnitt planen und die eigene Arbeit kontrollieren.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#werkstatt">Werkstatttraining öffnen →</LernLink></div>
     <div className="werkstatt-karte mt-5"><h2>Für Betrieb und Schule vorbereiten</h2><p>Acht Praxisblätter mit Werkzeug, Material, Arbeitsfolge, Skizze und getrenntem Übungsprotokoll.</p><LernLink href="/projekte?ansicht=praxis">Praxisblätter öffnen →</LernLink></div>
     <div className={styles.einstieg}><h2>Welchen Auftrag übernimmst du?</h2><p>Deine Antworten, Zeichnungen und Notizen bleiben pro Projekt auf diesem Gerät gespeichert. Du kannst jederzeit wechseln und später weitermachen.</p></div>
