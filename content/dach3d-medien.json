@@ -1,0 +1,3715 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "flachdach-warmdach/a01/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a01/aufbau.webp",
+      "bytes": 118064,
+      "sha256": "e8bbbc54c5038388a3e0202e7c8cf73cc266c3635eae4cee23b31e2682c6fe86",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a01/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a01/fehler.webp",
+      "bytes": 100570,
+      "sha256": "3bdcebd2d9918e081264cf075adead216300e59b1b7ce7a70bc822ccbad40deb",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a01/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/a01/modell.glb",
+      "bytes": 487648,
+      "sha256": "660f17ecfe3845fd9908370a688b98099ac92db22706aeb8109d284b5b1b5bd2",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/a01/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a01/nah.webp",
+      "bytes": 100562,
+      "sha256": "38fba83702286c2070b407f8be2ad5f8907034c6bd9ac1803496d6b68ed886e4",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a01/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a01/schnitt.webp",
+      "bytes": 95762,
+      "sha256": "bad0cb8b2040dbbbd094ce1b229eed47bdee2143610ba8324014bea2bc802167",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a03/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a03/aufbau.webp",
+      "bytes": 135560,
+      "sha256": "6a34abca10e0634b26150c2f9350a8bc50a982d08478771c6b38956a02557322",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a03/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a03/fehler.webp",
+      "bytes": 93088,
+      "sha256": "e429c1e78374cc44e1b669600c2e57303dce6550c5ccfe2d66dedea29d4ddb24",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a03/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/a03/modell.glb",
+      "bytes": 398112,
+      "sha256": "0b1c79dad71ba8a71cdee7a698e78493e16a01bbcd9a00b30621c303f544582e",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/a03/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a03/nah.webp",
+      "bytes": 93722,
+      "sha256": "063ba02539b0a9b55b3be194d90ed945231085f428b8924ca2269124a6207e18",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a03/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a03/schnitt.webp",
+      "bytes": 78374,
+      "sha256": "79be12a1158614af11c5add54e440b2fd1b9110b97c210f4b5de590a5679d497",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a04/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a04/aufbau.webp",
+      "bytes": 119456,
+      "sha256": "1ce1d29c0245c6a6be0a150a3d505335614ad0c827f3b035e17e7c681151050b",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a04/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a04/fehler.webp",
+      "bytes": 95746,
+      "sha256": "29de86b8a819d247bd1f3e9945c9f6b39f54660ca22e2d63d17d7aa03f1ffa20",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a04/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/a04/modell.glb",
+      "bytes": 337796,
+      "sha256": "3b9d0c19c285222e714c78fc7cc9e08ce57810cde76a6e406f565f4575789073",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/a04/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a04/nah.webp",
+      "bytes": 96150,
+      "sha256": "b2305db83749f29823d0fdddfb1755364d3c2274c90171d0787daa37d669e211",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/a04/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/a04/schnitt.webp",
+      "bytes": 89600,
+      "sha256": "a3424e4567ae4617c267f0619a297d9c14a16809c5e63a2e2dccadfbed1ee71f",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f01/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f01/aufbau.webp",
+      "bytes": 120384,
+      "sha256": "37b231ccf1afdc4a9bcc1e8b1639ba987e856e9398e91e6ca00a21195a8682c4",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f01/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f01/fehler.webp",
+      "bytes": 76662,
+      "sha256": "6f121073fc2f963ed31920fe6e93611a125754fa931935fbba3788228a90d81a",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f01/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f01/modell.glb",
+      "bytes": 314656,
+      "sha256": "c42193214deb96bc328f616982462b3cb5a05d86c1ff7222f36889d8e3d00d4e",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f01/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f01/nah.webp",
+      "bytes": 74562,
+      "sha256": "bbe580c9ea06bf7b36e6c93a74bc4239e03090267caa58eb7a4f7bef7ee095f4",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f01/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f01/schnitt.webp",
+      "bytes": 73336,
+      "sha256": "b643158dc86932ce8f525f3324d2ec82d5f761cad38f8d72431ed3f609ed6015",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f02/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f02/aufbau.webp",
+      "bytes": 124296,
+      "sha256": "7012d89b206a5ca56bd77c6edf687ec7b4b8098fbd12320006a9c6d94298f1fc",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f02/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f02/fehler.webp",
+      "bytes": 99910,
+      "sha256": "c1d127cb7247f49032c640d3d10f9c37cdce6f35f9a25dbd733b917aff060d08",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f02/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f02/modell.glb",
+      "bytes": 359060,
+      "sha256": "cc1a5dd634e32a9585ed6d7428d6daaa0843052ac857429fb52db7adb087b732",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f02/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f02/nah.webp",
+      "bytes": 100926,
+      "sha256": "6557758b381b745d207acb2017ce72c54f01a20335afa515ac73c78dc6d87705",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f02/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f02/schnitt.webp",
+      "bytes": 101506,
+      "sha256": "998a2abdc26423b06f2d5b3fe46d11f1a46f8fe0cff8582b74fc6f3922ae96ca",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f03/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f03/aufbau.webp",
+      "bytes": 120306,
+      "sha256": "e56e855e3cddbce2ac97dca424e1641c97581b6035def8c2385e9a2fb3ba1a69",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f03/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f03/fehler.webp",
+      "bytes": 74772,
+      "sha256": "454ba6256f49abc6529875e72556ffeffce3b3a38686a25bf4e2fce2858ebd97",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f03/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f03/modell.glb",
+      "bytes": 388908,
+      "sha256": "e87a88d71b6e74aefadc2af2a8a1af200f714738fd2d5891bc1eb25905262021",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f03/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f03/nah.webp",
+      "bytes": 74840,
+      "sha256": "01f144201d7a2a5f52384e0d6e00d8657a462c5dacf6542089a32823f2698f4e",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f03/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f03/schnitt.webp",
+      "bytes": 77782,
+      "sha256": "85f3adc59139a251b9c6f6beafb69b04c2975aa3e696778623a42d7743cad040",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f04/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f04/aufbau.webp",
+      "bytes": 119920,
+      "sha256": "44c1690f2e335e38d894d24c122f2344443ba5630ca471cc863c3667385b59b3",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f04/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f04/fehler.webp",
+      "bytes": 93056,
+      "sha256": "fce1f6ef396b09502e4f3cf6521d5097c1b7ee37aad87d0fd95d44f1c5b66aa7",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f04/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f04/modell.glb",
+      "bytes": 553912,
+      "sha256": "36d9d193bc1c45b09b737527ba131443430008b44cfb4be9e5aa13183ce36d2a",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f04/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f04/nah.webp",
+      "bytes": 92620,
+      "sha256": "8081ee375c872c51aee573ffa11aef93080800b05c8fae7914a652d44d2018bc",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f04/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f04/schnitt.webp",
+      "bytes": 82550,
+      "sha256": "3957999491358f3c6da759d317c04e58a8c3d9d8e57e77ea6290aa133b68faf8",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f05/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f05/aufbau.webp",
+      "bytes": 130132,
+      "sha256": "3f9e6d02159c04658a82774b54f0fda1a51103a8b9cffbc32982c68cd87eebd3",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f05/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f05/fehler.webp",
+      "bytes": 83280,
+      "sha256": "c988415613273ff0a7929234cf904a8c7950e402a4e00bc411e6dce25bb77302",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f05/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f05/modell.glb",
+      "bytes": 527840,
+      "sha256": "baa4f7331fe292defb7f9449cae62c4579b741ff92dd7454ec49a919fd832ae3",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f05/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f05/nah.webp",
+      "bytes": 97306,
+      "sha256": "c83c08e333788752040e49952ac7d7af872ade4e33d69c8df599ebd1c611ea29",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f05/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f05/schnitt.webp",
+      "bytes": 85510,
+      "sha256": "7cce11a148ef260dde230be7edc4673b3bb5de6f2c3b7b77b1223c5367559966",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f06/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f06/aufbau.webp",
+      "bytes": 121272,
+      "sha256": "37747d804f564202de37e138a93d1a6a5fe0308107b71222a615853f63e3cdae",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f06/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f06/fehler.webp",
+      "bytes": 77484,
+      "sha256": "1b1a4c2e3362392f20add4e8b3cb41999adef62194d543ebde904341fe1d6901",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f06/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f06/modell.glb",
+      "bytes": 436888,
+      "sha256": "bcef2efa0be6a844756f2f05b337367636ba61aa2651fc2ea626761dfead1e4a",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f06/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f06/nah.webp",
+      "bytes": 75666,
+      "sha256": "081d82df1e7151145b14d186065de73a2907c7757b1bcfb4f57b23e697e018cb",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f06/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f06/schnitt.webp",
+      "bytes": 74084,
+      "sha256": "c5112800fceb45c24808f28381128f351077e20f2f244ca69861b533693823a0",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f07/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f07/aufbau.webp",
+      "bytes": 121134,
+      "sha256": "b0339111a8ca1108baa1c52532d20dbfe868fcf20050f87b0dd44e5e929c4d4f",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f07/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f07/fehler.webp",
+      "bytes": 98596,
+      "sha256": "81336a7b4fad0d95b1dac92f28c4004d3e36d524f3b3b615a2b826298898c760",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f07/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f07/modell.glb",
+      "bytes": 536852,
+      "sha256": "9db363bfece7f8a93169f44f2cf3782e20b980f552fee64c737b8d072bf3f962",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f07/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f07/nah.webp",
+      "bytes": 100136,
+      "sha256": "f17ae8b7de00e69c92863c8b8abed28f15486efa70f98f9f358c6de02dc32a71",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f07/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f07/schnitt.webp",
+      "bytes": 87926,
+      "sha256": "a384b621ac95c9ff41716cafb0df06b7f72cbf6cce6adcd8737a55a29302ba37",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f08/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f08/aufbau.webp",
+      "bytes": 120614,
+      "sha256": "735382c7e6620ef6227054fd54682a2da30b5949864610c44f122bb4fa608705",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f08/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f08/fehler.webp",
+      "bytes": 91628,
+      "sha256": "f43b4ae4dd21929194ffc50b17c0197d6c622f81c063a0f6e9fb331627c4a6b1",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f08/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f08/modell.glb",
+      "bytes": 445292,
+      "sha256": "2b4bd074bc2b3a77b2b3e8b5e82c891e6086e4f21f13680b57de79f26d897aeb",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f08/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f08/nah.webp",
+      "bytes": 91254,
+      "sha256": "ab4ccbc121f396e3fa471a4e04219865cd065caaeaa804aac5bb795ef579579d",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f08/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f08/schnitt.webp",
+      "bytes": 81708,
+      "sha256": "8dc704ec9b8ff01823e49611f0cd6efda8910947b82579a8e4cec7b33beead4f",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f09/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f09/aufbau.webp",
+      "bytes": 122964,
+      "sha256": "123d353b72ea45c4b18dfef1cf3e7a0b0eab956f9556946a3683d1906205dbe8",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f09/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f09/fehler.webp",
+      "bytes": 88228,
+      "sha256": "02fbfec3f4adaee1667401fcedb9403d1ed6f98af186045f55276ca0c956cad8",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f09/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/f09/modell.glb",
+      "bytes": 339716,
+      "sha256": "17df726a79d52c538c5077cccb9685fe57335073aa7275b4bb47e70ed3100b4f",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/f09/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f09/nah.webp",
+      "bytes": 88466,
+      "sha256": "401d820cf6470015e9647cec7769b3804ef914bc34f8d93953a4104d12059660",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/f09/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/f09/schnitt.webp",
+      "bytes": 75780,
+      "sha256": "d6f1d32a8be6477c9c61b0cfdb518523ef7efcce03148864b517d7a91c4201d2",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g01/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g01/aufbau.webp",
+      "bytes": 114934,
+      "sha256": "51fe053fc03a9ecb54e417cddae4c9e1f71f24b34eae6ee8426401d2c5519c91",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g01/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g01/fehler.webp",
+      "bytes": 72498,
+      "sha256": "f3f2e18719675d53db3009e2a7da06a48ec1d2d3d4e2ec141d01ac07adb5a06e",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g01/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g01/modell.glb",
+      "bytes": 317940,
+      "sha256": "68d784f0192c55db19a7a0d48e9e54ccf9ab453cce05c193e4afb0f9012448ad",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g01/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g01/nah.webp",
+      "bytes": 74512,
+      "sha256": "39427b9f4edb8a7b8e661dc7936dc6d5aba940ce0fa48802c7487f71f21184cc",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g01/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g01/schnitt.webp",
+      "bytes": 72222,
+      "sha256": "e12b05689fc92938c418ae024532588fa90e01ac95794bddc2b68acf1f21ddf5",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g02/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g02/aufbau.webp",
+      "bytes": 82836,
+      "sha256": "e889faece0f691c5952870904ed703259b745f3a9725daefe9f254670a4a27b9",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g02/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g02/fehler.webp",
+      "bytes": 74514,
+      "sha256": "b70555747285c8ecb28eb050b92fd955656b18c307b5d504039775cf447ab294",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g02/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g02/modell.glb",
+      "bytes": 215788,
+      "sha256": "7932df28846e503dfbef2c5e9a0f2ccaa0e1e9d3447589934bac4c755ab9fd71",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g02/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g02/nah.webp",
+      "bytes": 74432,
+      "sha256": "c15f6c7dfef8d7f643c9a666b5e99d1436b351894ab2e5bc400c78cb315e6adb",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g02/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g02/schnitt.webp",
+      "bytes": 71280,
+      "sha256": "25a0b7139fddbb3b547753828bc0f2cdec6e98ec546206d8ee8980bbd6521ee3",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g03/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g03/aufbau.webp",
+      "bytes": 87044,
+      "sha256": "9fbf2728654c3a82a9ddbb74a87459d627bf96b8d91853dff0f9b951cf1dca88",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g03/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g03/fehler.webp",
+      "bytes": 80162,
+      "sha256": "03a020c6f00ca20465a38a6689dd8ce9a6299487d37974b08b1d82d9714dae94",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g03/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g03/modell.glb",
+      "bytes": 306716,
+      "sha256": "a7fe0f4f8c45623e09e0fd6d45888bcdacf3eda1a3909d2eaead59b8259cc9bc",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g03/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g03/nah.webp",
+      "bytes": 81030,
+      "sha256": "1f2e815ae1cdc32d7d5cbe38132d1ecc29003f6118401427fdc4761fbaa3593d",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g03/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g03/schnitt.webp",
+      "bytes": 79872,
+      "sha256": "934b650e0507dc464851dfa6b0fb1ff28a6ae3d87448379be6d9e816453360ca",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g04/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g04/aufbau.webp",
+      "bytes": 97956,
+      "sha256": "3dc38293e00f1340f41b2f61a3c08b28a153a871735c00431e59eedff9b8365e",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g04/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g04/fehler.webp",
+      "bytes": 81662,
+      "sha256": "dff8889755eb7008b23eb386c402b51d47c5638efb216315ed026321bfa35127",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g04/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g04/modell.glb",
+      "bytes": 301536,
+      "sha256": "2fcd40b1332d9786f4a73f7bb31512cb531be649cd4ad2354b59474a0f733f24",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g04/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g04/nah.webp",
+      "bytes": 82712,
+      "sha256": "e6f30c4dabef226cd005f1c7d327e596cf7a43e57f9065d3860a6cc8c39b0504",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g04/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g04/schnitt.webp",
+      "bytes": 80584,
+      "sha256": "24d587c508d13f5cc3d93689014fecf55ff88dbb7595af7a12ccb27ea84c2735",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g05/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g05/aufbau.webp",
+      "bytes": 105788,
+      "sha256": "5283e13a537390839cd131b8385cfe26aedd92ae415f832c189efe8e0168a104",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g05/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g05/fehler.webp",
+      "bytes": 68570,
+      "sha256": "8283bd3285515b3a303296f99145f5aa8ff33c6a9566dcdc00c401b3d6274b55",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g05/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g05/modell.glb",
+      "bytes": 346256,
+      "sha256": "bd5b8980d2b4b7987fbef22aee6fff815b5565a00f4e7a4d4ce25e377a2ee059",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g05/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g05/nah.webp",
+      "bytes": 69014,
+      "sha256": "5f936a480dab22ebbb9b46ffb3e25573abbe66bcc5d36c7e02ea945dc5733d13",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g05/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g05/schnitt.webp",
+      "bytes": 69184,
+      "sha256": "f582258a0cdcfe18ba84d01dc258b2a067e5b81c60d8b83a9cf9173c79e26d4b",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g06/aufbau.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g06/aufbau.webp",
+      "bytes": 124130,
+      "sha256": "a1336c7124fd8608da532a33e3e74db9d32d6fedf083f93fa569bbc086189025",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g06/fehler.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g06/fehler.webp",
+      "bytes": 100812,
+      "sha256": "2971436e49724c468f7764f8b79f911def298431b289c11e9ba9203fb1e218e8",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g06/modell.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/g06/modell.glb",
+      "bytes": 359872,
+      "sha256": "9a524d8f4d41ab60eb905a07fd429d6a30eab15f6eb7090bac8eea665be888ca",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/g06/nah.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g06/nah.webp",
+      "bytes": 100768,
+      "sha256": "a8a34d35519455cb43da37f238ea8e50ac9f159fbe66ffd2abf70ed9fb1632d5",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/g06/schnitt.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/g06/schnitt.webp",
+      "bytes": 100048,
+      "sha256": "547e28db3145db62d677b00b0bc13fdf6f0339426d1f52f20f26dddaf0ddb8e6",
+      "typ": "bild"
+    },
+    {
+      "id": "flachdach-warmdach/uebersicht.glb",
+      "url": "/dach-medien/v1/flachdach-warmdach/uebersicht.glb",
+      "bytes": 883932,
+      "sha256": "8feb5145e8fdac52f5522285ddf74eef014abae3c1511547b4de9b9ebf765165",
+      "typ": "modell"
+    },
+    {
+      "id": "flachdach-warmdach/uebersicht.webp",
+      "url": "/dach-medien/v1/flachdach-warmdach/uebersicht.webp",
+      "bytes": 137158,
+      "sha256": "b6b09d8b9cc1d1c88191dfc2ec398f47d56176564a52277c4629fea42d1aae05",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a01/aufbau.webp",
+      "bytes": 121642,
+      "sha256": "6e3bd69b305a31d1356e76a96f6902b14d44d26264b7f8c52ce7ebec007803cb",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a01/fehler.webp",
+      "bytes": 116368,
+      "sha256": "608f746e508fe414840324ae700b23a9a54b9dbabdd9a6821137bf34e4904a38",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a01/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a01/modell.glb",
+      "bytes": 1014948,
+      "sha256": "41f296ce15e22d4cf2a45a776be35f9063e52a0f2162941209e245fa2a789e07",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/a01/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a01/nah.webp",
+      "bytes": 116446,
+      "sha256": "6db6f6d1593bd1d1e8666e7304a13091c7e8c2f523519e3f0ac673d04f09eab9",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a01/schnitt.webp",
+      "bytes": 110540,
+      "sha256": "e02b75d13cc4631089e0190352fc7de0d6367bcff7fe33e3ca342d9eae245020",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a02/aufbau.webp",
+      "bytes": 125250,
+      "sha256": "c409197d9cc81db4d8ff6428d333a34d53504d62dbf3a85c9c19730286f4b903",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a02/fehler.webp",
+      "bytes": 121842,
+      "sha256": "efa05467de17afa66661184a49fdc8238d8791052b26559be7b3c26123c2e963",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a02/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a02/modell.glb",
+      "bytes": 889984,
+      "sha256": "018d525bfa680f9b0723188f80e7e411870bb460b3afcce49a38513ce1db0959",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/a02/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a02/nah.webp",
+      "bytes": 121922,
+      "sha256": "b7deb027afac7ad0fd21b6c041aeeeb7edf83987547ce9e7f601c3efefea8b0f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a02/schnitt.webp",
+      "bytes": 107106,
+      "sha256": "ab1c29a9e839ef487a82e2ae4b5b6a43432548e700ae84d4e57ca4d9be57e7ba",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a03/aufbau.webp",
+      "bytes": 140168,
+      "sha256": "5bd3999a2588bac3e43de75a0b95fe8c78f6a5acc146b87a9fab1cded5278e4d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a03/fehler.webp",
+      "bytes": 123652,
+      "sha256": "4dcfc1b1bbad49ff1282c458f009f6317c69f8c973e923f46122def760d74d75",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a03/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a03/modell.glb",
+      "bytes": 957320,
+      "sha256": "f62cecaecb9dc2f2bf44cedc0058777944571c56cc57deb7b417200933861224",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/a03/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a03/nah.webp",
+      "bytes": 123742,
+      "sha256": "6708d2fc82fffa102323bc98c6f8fddb4b1621b0bc82e1f37c3b13fe460746ea",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a03/schnitt.webp",
+      "bytes": 103796,
+      "sha256": "9a01017bb42322ccbdc257e9f084378417afb6eb6b4d1ac4c0e25ab96f686ce0",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a04/aufbau.webp",
+      "bytes": 115950,
+      "sha256": "7a2607c756fbb7773cb4747457b72b4c8e583a144e0d8b62d16d5925b4f0c01f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a04/fehler.webp",
+      "bytes": 104282,
+      "sha256": "352669334710f632751829511ad81cc4e6109fcfba2180af91c7aaa4781b2b86",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a04/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a04/modell.glb",
+      "bytes": 873880,
+      "sha256": "93b08e3318fc1433950b49a4a20d29503a8ae070f8aefaa3d1162925a8116470",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/a04/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a04/nah.webp",
+      "bytes": 104264,
+      "sha256": "3783ac275ebcf9c762c18d486327da0c0ee0e52409aeac5e98ee16763f38f43d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/a04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/a04/schnitt.webp",
+      "bytes": 90466,
+      "sha256": "8b14311ed7223b8cfe4d9a164852f949ca08309fe01825662aa72f7d7b606c52",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g01/aufbau.webp",
+      "bytes": 116906,
+      "sha256": "aa7e277d76b7d097076e331782fbb487707b9f3b63acb74908d775fda33d0cc3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g01/fehler.webp",
+      "bytes": 94182,
+      "sha256": "00af92457ef94d1c3d9e1a31144dba26eb606c922c401a9ae8173c664dd479c9",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g01/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g01/modell.glb",
+      "bytes": 843632,
+      "sha256": "35a2e421b53634f18724c5cf1d83e1caf7b781aef9fcc728503f9f17643a6798",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g01/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g01/nah.webp",
+      "bytes": 93676,
+      "sha256": "ce1e88469cfdfc0cb3f7e4ecb8af260cd2f5140c254186b985916c00378dfeb3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g01/schnitt.webp",
+      "bytes": 81786,
+      "sha256": "058d9ec1b1c479c9ea8782e90eea95c5ba8b096c5534b4897eccf32ed178d313",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g02/aufbau.webp",
+      "bytes": 103352,
+      "sha256": "62fed3bef633da85605098db1d3f3844fce08aae76130c63f3197f500996d45b",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g02/fehler.webp",
+      "bytes": 92522,
+      "sha256": "1ddc68e94f99a7aa6ef39d63113f3bc834645001ba868b1247a8b7cc6883ffe3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g02/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g02/modell.glb",
+      "bytes": 403384,
+      "sha256": "317950b072a4fc38b9e1eff61ce05b0928307968556b355af86a4914fbfe44d4",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g02/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g02/nah.webp",
+      "bytes": 93492,
+      "sha256": "eb187a910c6fc19ed5ee293934ff23df6f6ddf1f66f9bde8e81aa7bb9bfef5e3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g02/schnitt.webp",
+      "bytes": 76958,
+      "sha256": "591cc9173f898a40142eab565844615a90f812438196e9e55c7c07472ef9f452",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g03/aufbau.webp",
+      "bytes": 112198,
+      "sha256": "7dda2609cbb876ac81a80daae1e5fd9769fb0d406a20991471e536782fe340ee",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g03/fehler.webp",
+      "bytes": 98788,
+      "sha256": "420cabf4798608358c70afe72741954fa68f0d6564eb74e4453c65a17020c831",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g03/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g03/modell.glb",
+      "bytes": 403436,
+      "sha256": "3f141836364bc22b8243404f7673d5659c45df3232bc414bff0b9fc52bbdadaf",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g03/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g03/nah.webp",
+      "bytes": 98858,
+      "sha256": "e66f960e0c461cdac0be5b1fbb99bcd15f220c12eff3c4307ab47205497230d6",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g03/schnitt.webp",
+      "bytes": 83436,
+      "sha256": "24ae7075b25c8897a3fb86f7b599e427385419495ab1002bddd4803dd75f8d4a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g04/aufbau.webp",
+      "bytes": 111418,
+      "sha256": "42de6eab238fb9481f745d89a82cb62dce9c7f2bdfab90345b292699cb00e9d7",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g04/fehler.webp",
+      "bytes": 104972,
+      "sha256": "95ef7afbe31a74213ec4663deeeb13a567433207d4cbc51705f97af365f65ee1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g04/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g04/modell.glb",
+      "bytes": 499868,
+      "sha256": "71f093840405230a86d3fc1160b9e0825c9c44e706c8fdbb3faed9bc9541c399",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g04/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g04/nah.webp",
+      "bytes": 105482,
+      "sha256": "5a456bbe7b2f0a841a1369996f8b4f8e84b4bcf47dc9a5a90e9b543b1c6b6a7f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g04/schnitt.webp",
+      "bytes": 101866,
+      "sha256": "345cb1a8ad7bd0da7a771920bc6a2d3b109f7fd0dd0f2ae56bf1f8f46abf760e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g05/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g05/aufbau.webp",
+      "bytes": 109374,
+      "sha256": "a910e27dfb9dd40fc06a1d12c07438648a42a9e94f8b7a99697f528cc22b937c",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g05/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g05/fehler.webp",
+      "bytes": 93820,
+      "sha256": "abcf244870bd3005b7a9611473abfff28b53f39cfd74fd16fd901b8695f3a8cd",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g05/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g05/modell.glb",
+      "bytes": 862760,
+      "sha256": "c3a02086d97f9b880aa6dce7420d76ec264b97961dce1e2c810d5e29e6ecedc2",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g05/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g05/nah.webp",
+      "bytes": 94308,
+      "sha256": "65675e1672945f5acb36396341af27b46c24a9e94579786c6d05693b118b913d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g05/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g05/schnitt.webp",
+      "bytes": 81078,
+      "sha256": "daea8b84e3a65c787150ce00c8368669154bfdb63c1d6c48d0404e2365c0e7d1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g06/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g06/aufbau.webp",
+      "bytes": 130614,
+      "sha256": "b711773f4d5990e3bb84d0a9ebd221bac28afb35045578ab9de1b439dbd1a75d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g06/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g06/fehler.webp",
+      "bytes": 129396,
+      "sha256": "26eb3209f28656ffaa47e0ab676ca6e9464ae253ad4edddebe5ab18a862c2802",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g06/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g06/modell.glb",
+      "bytes": 990428,
+      "sha256": "b2039e78dc714d4f87d768630d83c2c8a39ca095b82ccc89a0aa7955f24fdacd",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/g06/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g06/nah.webp",
+      "bytes": 128890,
+      "sha256": "6ccdc35de78b9349e35c2b10b060a576a1e670d3cd0568b31dee8abf064065df",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/g06/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/g06/schnitt.webp",
+      "bytes": 112432,
+      "sha256": "769085e9e79e23d6d5dd935b29672f52b1235c39c976a00043a1ec0b6fb70f69",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s01/aufbau.webp",
+      "bytes": 116318,
+      "sha256": "0df97fc0b5d44afb021effea0196158dbed44b9b52d46bc8b23b06881c1f68e6",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s01/fehler.webp",
+      "bytes": 91350,
+      "sha256": "0ac33d068e8865d9839160e800e40d5e8a6566ab11f64247c3f311290c8a254f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s01/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s01/modell.glb",
+      "bytes": 690664,
+      "sha256": "b17d5ccd84f89ffbb5e9226f476620954414ec948fb28e47d7b61526f194a4df",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s01/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s01/nah.webp",
+      "bytes": 90178,
+      "sha256": "05c403f8904aadf56c13e3927f0b07ccbf8533a18932e518476378efe1ac3b56",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s01/schnitt.webp",
+      "bytes": 79498,
+      "sha256": "35b8eb0d5a144cb96f5f0a3fee473227a68a62432ac9ee1d800be8ca523868b1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s02/aufbau.webp",
+      "bytes": 127414,
+      "sha256": "6bc4a4a28429fd07d906b8cc29abc73b2300af1046f13957f5dd05aa7fa48081",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s02/fehler.webp",
+      "bytes": 111422,
+      "sha256": "dacc2df9296986e924156b4b38dd285a3034fc78ab81895403a86fd91ba30cb8",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s02/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s02/modell.glb",
+      "bytes": 926140,
+      "sha256": "07d89c7881910bce5b705d5bd62e9f9876cfa4c50047b0355a0878745247ccfb",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s02/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s02/nah.webp",
+      "bytes": 110434,
+      "sha256": "4e5e6bd07b25a0d9555b8cba076581b7acdadf4c7bc24789b0dc523a6c104b64",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s02/schnitt.webp",
+      "bytes": 115734,
+      "sha256": "1d6e8f5d16ff45fffa675ff95b790eeb34bd69ebb4d0432c11636967d6852150",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s03/aufbau.webp",
+      "bytes": 128566,
+      "sha256": "c0da8ac9cc03d3a6d4f1874226ed3bb5de5592d9313a73b733242032c2639238",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s03/fehler.webp",
+      "bytes": 114170,
+      "sha256": "2878904d4d5a7c112af46ab240044cb26f807d11123658a69979a9c0ae23fe7a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s03/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s03/modell.glb",
+      "bytes": 926140,
+      "sha256": "799048a99c5aa8ba814dbaf0f8b7a591f21a9ea006bc63901f5e61a9c803c9a9",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s03/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s03/nah.webp",
+      "bytes": 113956,
+      "sha256": "06109e5cb87989b2445c96705c762d5bc6e47df6a99f4badfb3e1897354ccd46",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s03/schnitt.webp",
+      "bytes": 120592,
+      "sha256": "5fa4d69929f65f471cbc063a51f8c306740d99f08e01679e6eae93e346682d45",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s04/aufbau.webp",
+      "bytes": 126512,
+      "sha256": "8202e2e30430cf19d469d8be97f3406d4265b833ffd591d28c35022f4c895e0b",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s04/fehler.webp",
+      "bytes": 101914,
+      "sha256": "810d50948e639c8dac7f4476ad67927cf73b4120cfba113b7f69dd321ca5bc54",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s04/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s04/modell.glb",
+      "bytes": 867136,
+      "sha256": "d455fad542cec817b4aa6d3e7cf4d62467cd7e9fbb74c5729e94a4c3649fa657",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s04/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s04/nah.webp",
+      "bytes": 101914,
+      "sha256": "810d50948e639c8dac7f4476ad67927cf73b4120cfba113b7f69dd321ca5bc54",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s04/schnitt.webp",
+      "bytes": 102314,
+      "sha256": "068b20b9c3e805d5cf3ecd52729050d3db5f19828de293aef284fce8978fd2f9",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s05/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s05/aufbau.webp",
+      "bytes": 123384,
+      "sha256": "1557d1ee58d4d03af1d13ce6c49ef841e05217383387900513c90c72344ec72f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s05/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s05/fehler.webp",
+      "bytes": 101796,
+      "sha256": "fe03320493d3566b49147434e8b51d4bc08b6f7111fa2c42ecb28b91100ce02b",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s05/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s05/modell.glb",
+      "bytes": 1024580,
+      "sha256": "525e1ddfa29ab38d3d44eb022cf26a2755159fdb667a14a399844889ab1819e7",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s05/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s05/nah.webp",
+      "bytes": 100896,
+      "sha256": "c46facdbfbe3e017b61e420772b52e15f0b756f42f55101a91e27b9d4daa526f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s05/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s05/schnitt.webp",
+      "bytes": 102226,
+      "sha256": "9daf39aaba8962079fffec7b0e2b2b14fe3b102f6080f78934918ab68546afdf",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s06/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s06/aufbau.webp",
+      "bytes": 143334,
+      "sha256": "077b31d41c90fe487a61882eab739e3da376e9d81a628846e12bd7ecab22ebeb",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s06/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s06/fehler.webp",
+      "bytes": 114570,
+      "sha256": "511fa39e04cc7857d7a39bfaefc9c4ff7bb65bb397183adccc9564787ef272a1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s06/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s06/modell.glb",
+      "bytes": 638396,
+      "sha256": "5a917a662ba83d2e05c3e41cfa6aab81555c050011282b7ea987d61baaa7fba7",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s06/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s06/nah.webp",
+      "bytes": 113328,
+      "sha256": "53bb1dba7e77514d923c7cdd547f290dbc26b5315a9c6153b0f992fc0a13b949",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s06/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s06/schnitt.webp",
+      "bytes": 106506,
+      "sha256": "3e1baf3311275096e47a2bf85687b8d1efa0617ce785e00140624fb53a9c4f47",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s07/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s07/aufbau.webp",
+      "bytes": 121230,
+      "sha256": "4cf2342c6653434c80db6aaf11f505cb28023428758df8382e1cd5abab0c48e8",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s07/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s07/fehler.webp",
+      "bytes": 109092,
+      "sha256": "d4a6b2240d8d7f9f7be4fd5e8453431fcb04d61d50ec920720a64042b13b348e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s07/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s07/modell.glb",
+      "bytes": 1011228,
+      "sha256": "bfaee7a5c53914b5750ba69548007592e3b45b9969aab29fcfa89d6f253740d6",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s07/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s07/nah.webp",
+      "bytes": 109188,
+      "sha256": "b382ae49274e5899d87f76a41f5b6567243e2ece1a1e62456fd9f5318ee912f4",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s07/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s07/schnitt.webp",
+      "bytes": 107698,
+      "sha256": "73b3d374c317f951eb90c769c8c362d37e881d3a3c2044acf914acb690ec5f64",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s08/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s08/aufbau.webp",
+      "bytes": 139646,
+      "sha256": "c83f0b20ccb3e0590537c078e9b73b33bfa91500ddd194d7834df4269f149025",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s08/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s08/fehler.webp",
+      "bytes": 113414,
+      "sha256": "3819f8c41aca93f623ddad4e341bcd66ea534500d09790d322264f58c5f9c1ba",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s08/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s08/modell.glb",
+      "bytes": 1085820,
+      "sha256": "f328bf4cd2b2c0f695ba5173c5364a9c2d6c460412f65a63887323d17d94629d",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s08/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s08/nah.webp",
+      "bytes": 113668,
+      "sha256": "f887dd11d701c537f40fd913e3310b13b7ab6bac57fb8e9605e498d350eb24f3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s08/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s08/schnitt.webp",
+      "bytes": 110788,
+      "sha256": "d0ada1ff0ffddd9de8e4a7a708f0ec0e19ab3f61b70b816e61622a6eb10828b2",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s09/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s09/aufbau.webp",
+      "bytes": 135638,
+      "sha256": "2f131d3ed88cded5f669454d8fce568b46dbdadd658dd1f245eb0833b767b908",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s09/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s09/fehler.webp",
+      "bytes": 101886,
+      "sha256": "2ad3185bac3060636a16c8def73438343a29f9c94b4079cfb216745f3c476dcd",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s09/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s09/modell.glb",
+      "bytes": 930428,
+      "sha256": "f735d1aa74e464f264eee3a7714af6ec58e2d3fda9d430886592681b7ce407b5",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s09/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s09/nah.webp",
+      "bytes": 99578,
+      "sha256": "d6a8ddfaa1f9632f10bce37129ff414030aa544f40b454e70dca3bc1a6d5b2ac",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s09/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s09/schnitt.webp",
+      "bytes": 84394,
+      "sha256": "aea780d7c05f96f7d07a5eef239fa376514f70589fa7236c573f43fc16a6dc44",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s10/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s10/aufbau.webp",
+      "bytes": 142832,
+      "sha256": "84adc825ffc2233f829f8d046a548711fdc04c39a47a396e9c0915d55e744996",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s10/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s10/fehler.webp",
+      "bytes": 128928,
+      "sha256": "ec0a77bdaf30dc828d7d4b5baf0f8371a5b9e4c5bfe5e83fe7a313e384bf860a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s10/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s10/modell.glb",
+      "bytes": 1319652,
+      "sha256": "34a29584374e1d193b3b8a3781acb07918846891606ea372c58bdf576878fb7a",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s10/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s10/nah.webp",
+      "bytes": 117986,
+      "sha256": "4c310f19d665cbbde5204161652ced008c7ad3d47dcbee5d4e268b4cf204cb0f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s10/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s10/schnitt.webp",
+      "bytes": 115646,
+      "sha256": "63a4931676d6079975f0b802c849ac241bc06fb71dd2d5a733ec95f13d076ee5",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s11/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s11/aufbau.webp",
+      "bytes": 128194,
+      "sha256": "690be2c69a2e4a48bb5a8b9644de2e33ebabcea836d2c7cb25267bed01df313d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s11/fehler.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s11/fehler.webp",
+      "bytes": 113096,
+      "sha256": "0ad70c4f9aef76bdffd35ae5f2b94847817ade3b811b7c3fe99c8a65da5c5303",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s11/modell.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s11/modell.glb",
+      "bytes": 919844,
+      "sha256": "48e6a50e0ab7ac55cc52cc914c219bccdc32e8db093f8a54920aa0625464d120",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/s11/nah.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s11/nah.webp",
+      "bytes": 113414,
+      "sha256": "1d5e2cce90c4716b792264a7a16f34847ff798015fb07bc63d6e1689c8a63c46",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/s11/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/s11/schnitt.webp",
+      "bytes": 111972,
+      "sha256": "6355a50ef4aa14ba628b466f84e9d9d1155abfc189636299a2fa98d3667c9ea2",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-biber-doppel/uebersicht.glb",
+      "url": "/dach-medien/v1/steildach-biber-doppel/uebersicht.glb",
+      "bytes": 5457728,
+      "sha256": "42a165942010dbeb19105b8639695f880c4c125a9ee980c79deb5832eb3908fb",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-biber-doppel/uebersicht.webp",
+      "url": "/dach-medien/v1/steildach-biber-doppel/uebersicht.webp",
+      "bytes": 205104,
+      "sha256": "54c8e3100dee4ec9ff882a044ef70660d03ea1e308c43acbd45a4572e9ebf9df",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a01/aufbau.webp",
+      "bytes": 120368,
+      "sha256": "1b918a941c4da0079a15c0b69f8bafaf5f4fd559693170ceb288b179234dc91d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a01/fehler.webp",
+      "bytes": 115648,
+      "sha256": "4ce9267e2f81fb33c9a8f3a880dd052bfa29b27213ac8d95aaf2cb5abe355bfc",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a01/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/a01/modell.glb",
+      "bytes": 796572,
+      "sha256": "86e74febc11e963fc5b52db8a47fb92fcfb3054e3ae141e4ac20c12b2f72844a",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/a01/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a01/nah.webp",
+      "bytes": 115804,
+      "sha256": "0034641cd5a09bde256025b6525b26013d69daa163dab0b62d70c981ac3d072e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a01/schnitt.webp",
+      "bytes": 111108,
+      "sha256": "767efe5bb22730b7f34ff3ab7a096eac684a7540c93091ed7ae9c494f929dc33",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a02/aufbau.webp",
+      "bytes": 123066,
+      "sha256": "408335961b24eb190bf40fc96dc09e864fa3b7a9ec5795bd9e23e50df191e002",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a02/fehler.webp",
+      "bytes": 122342,
+      "sha256": "e14a3627facdb3adb6003c8d8f0fa730b98054ff435e8280565de7d7afaeeb45",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a02/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/a02/modell.glb",
+      "bytes": 671608,
+      "sha256": "217608e5e9483fcad880123f697bf3be3a926e7e773e8d05259714ead45ae4b7",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/a02/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a02/nah.webp",
+      "bytes": 122234,
+      "sha256": "51802db839f114193e655e4ca8fef70181cd5fabb503495251ff93fe6caea5a7",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a02/schnitt.webp",
+      "bytes": 108078,
+      "sha256": "a9a63ffdce1605ebb5c214983a73b524e88fa530e47091ccc6907f42d9837b9c",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a03/aufbau.webp",
+      "bytes": 136636,
+      "sha256": "eb6ac874a1cc74856e4b39ce91e37bcd23defa313e4a48efbdc4f792a1c4de5b",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a03/fehler.webp",
+      "bytes": 121592,
+      "sha256": "7e4f8d85386a2ee25fff3a8b21f57d63c328a498403c806dbda66c3abc3a3bf0",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a03/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/a03/modell.glb",
+      "bytes": 738948,
+      "sha256": "61931c580f66b02571a7940086ebfacf52b99dcf7faec26b86f2c75cf826bfdd",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/a03/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a03/nah.webp",
+      "bytes": 121668,
+      "sha256": "b445b215212384f3b24ce85c8682252367aff06003482966f138d02825b270d7",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a03/schnitt.webp",
+      "bytes": 102836,
+      "sha256": "5f78fc87f26b6a2eef1c938551ad272912f4ebca8da47bc5b4122cec98cb04ae",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a04/aufbau.webp",
+      "bytes": 115916,
+      "sha256": "e96b3554a1a82fee73dfe22c5d9e5ce6381597d6c04e9044ad9f479a1ae65683",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a04/fehler.webp",
+      "bytes": 106796,
+      "sha256": "1458ef8d703822cbaeb7ddaf94c50f18b65a34d24d8675d8729f960cd0fc4739",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a04/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/a04/modell.glb",
+      "bytes": 655504,
+      "sha256": "9fcdb620cfaac540588e33dbc951535a822d7261507585142570504065aa4aa5",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/a04/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a04/nah.webp",
+      "bytes": 106672,
+      "sha256": "302169b1cca913719dda7aca60fe15292c7a173e895375b2355aad55aa85a001",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/a04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/a04/schnitt.webp",
+      "bytes": 91850,
+      "sha256": "1cfd5a92a356afbfd181679542c93c7d5419d3539c38fdf456601ad64c256962",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g01/aufbau.webp",
+      "bytes": 116390,
+      "sha256": "15f655cd020667c6f74b051be76a93f10fd872f8554d053ac69a8af24d48d17f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g01/fehler.webp",
+      "bytes": 97324,
+      "sha256": "b1957d18a8e5230207748801f27c257f16ddebdd53be2b155a1223cd92a72be1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g01/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g01/modell.glb",
+      "bytes": 635908,
+      "sha256": "5be0d6f01a5a1559f014734ee3aaef0650c4df78d5af99a25e1f065424e4716c",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g01/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g01/nah.webp",
+      "bytes": 96596,
+      "sha256": "d18e048cf6ed9b54aa534471de8a72bb31a607949415b38507c52eba5ca1dfed",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g01/schnitt.webp",
+      "bytes": 95334,
+      "sha256": "9b00b35205d40e4139adf3e491bdd897f57445bb64cb02f1a6240fc581cb81eb",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g02/aufbau.webp",
+      "bytes": 100602,
+      "sha256": "32591ee7a5bf7aba440f1fc9155bda4ff099df301c6d9cf5095c340bcc30b7f5",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g02/fehler.webp",
+      "bytes": 89834,
+      "sha256": "0859b46d1d162f90ab64e277cc3d2db39dcbb6408982578a2f6c863f77728a7d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g02/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g02/modell.glb",
+      "bytes": 365816,
+      "sha256": "95eb0c7aecf072447ce81ed9ef5b1c429828351511d3537c1dc7f02c2d27e874",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g02/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g02/nah.webp",
+      "bytes": 90642,
+      "sha256": "72e3aa81831670886aa2d1fab72bd648cb6324175fd66c469ffef0d870031642",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g02/schnitt.webp",
+      "bytes": 76118,
+      "sha256": "1f45545f994e527397dfe25f8686d8889c68bf3e221d6f8540175b5cecb522bc",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g03/aufbau.webp",
+      "bytes": 110118,
+      "sha256": "3ba753dc3b5949473e6bef4b83be49972d7a3e73e4430001668c9f55ea19e054",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g03/fehler.webp",
+      "bytes": 94848,
+      "sha256": "b93fc04d0e22799d8d0d7bbcf1615e71806dbbc783cd1ec4531d4f41cbeb6091",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g03/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g03/modell.glb",
+      "bytes": 365868,
+      "sha256": "04cfd96187f6b7caae80fb5daad9372bc170c9bbe0b2313ecb9fbb3e17d93b1b",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g03/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g03/nah.webp",
+      "bytes": 94542,
+      "sha256": "09952a810dc667371b43c5afbde1c5020651d36e613dfaf44be4451229934fdb",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g03/schnitt.webp",
+      "bytes": 81152,
+      "sha256": "bbac53977749e7f93b40ca5a10e26c751018079ebc102f1ae6eba131c54d187e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g04/aufbau.webp",
+      "bytes": 108916,
+      "sha256": "ac733fb48eab1348c3e2924138e5282346e0bb0831d76565149ef16e43dfc54a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g04/fehler.webp",
+      "bytes": 101210,
+      "sha256": "3c85b4edf12e4a2f09e3106d762006ba051ede6d83d735ddeeef05c4570946ad",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g04/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g04/modell.glb",
+      "bytes": 462296,
+      "sha256": "912b71a411e443915cc46d4ea266b723e21f6fce6daebc1fcc78601da8da3b5a",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g04/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g04/nah.webp",
+      "bytes": 101908,
+      "sha256": "788254ac82780c00d7df2e5979d3a35b2dcb275bef2c846c06290b046b178757",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g04/schnitt.webp",
+      "bytes": 88136,
+      "sha256": "9b5c670bba56a1f2f0a51d79cd1c97a89d42bb41f7c4735b28ec9294a7688576",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g05/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g05/aufbau.webp",
+      "bytes": 109308,
+      "sha256": "9ee8f98654ff0ebe0de3ed239c970904a024820ae92a0c79c252bd59e9778c65",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g05/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g05/fehler.webp",
+      "bytes": 95366,
+      "sha256": "aa9572ca09309ab4980a482917364665cf0280eb5171283738abaea2e6884297",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g05/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g05/modell.glb",
+      "bytes": 655036,
+      "sha256": "826308bfcbce221e67f37039a21d70c8ffaf179ac12b65955f2346a545040439",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g05/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g05/nah.webp",
+      "bytes": 95844,
+      "sha256": "7f17cea8cd8484d4ced5e881dd0ee4f596ad69ef0c487400d70e71bae860bbcc",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g05/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g05/schnitt.webp",
+      "bytes": 93796,
+      "sha256": "afbdb1b4b3a8adf552d8db764be8cf93021cb9eb46597b882988a5ae67fe2e96",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g06/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g06/aufbau.webp",
+      "bytes": 141560,
+      "sha256": "de402a5e0990ca49a1ad00e454a35b922c92f1b4d6cbc296ce194a1a9e6758a9",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g06/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g06/fehler.webp",
+      "bytes": 132002,
+      "sha256": "4b54371b796a7d6c53dd92fd5f8f3dfce5e4dbf3d46a14a13a8e9185536082fb",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g06/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/g06/modell.glb",
+      "bytes": 782704,
+      "sha256": "5a3d6a615c825b03d8f3ad297f0b1cbf693befb4d5c13bee6ad67f14119b1204",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/g06/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g06/nah.webp",
+      "bytes": 131674,
+      "sha256": "498fb3913b5e9616911615cd40b96b226a6c7c393a97c0a5335bc417568894e1",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/g06/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/g06/schnitt.webp",
+      "bytes": 113838,
+      "sha256": "1a2c49a17887b74b8ef47feb5144a5660a50caf979f13eebfe72f0330bd8306a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s01/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s01/aufbau.webp",
+      "bytes": 115904,
+      "sha256": "b64d290c010b30f0e8955ee43562e5ddd6630746a9e25c846efb51f6bb30fc72",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s01/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s01/fehler.webp",
+      "bytes": 93400,
+      "sha256": "04fa2ce0452e91876037171b81b0fd8a329de552a1c1b569aa666ccbad8b7284",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s01/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s01/modell.glb",
+      "bytes": 563812,
+      "sha256": "3206b6e1cb01d485cff4d71376ea92653afaf711f3bf50117850b454840906a9",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s01/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s01/nah.webp",
+      "bytes": 91942,
+      "sha256": "91b3dc59d948f84ea4c0f9442bcc0e11677a132dec9816d9321bdcded859fb09",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s01/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s01/schnitt.webp",
+      "bytes": 91176,
+      "sha256": "b866e92d8233fad9466d8e91c5d40b1fe1beca53e5eea226d54e2a025d695e9e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s02/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s02/aufbau.webp",
+      "bytes": 126816,
+      "sha256": "59d77e10ede674eae30b6de53ee5440dca2e9f19a754a8a2dffbc8d1e25cfb12",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s02/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s02/fehler.webp",
+      "bytes": 112790,
+      "sha256": "8a67eda07093fa4d8fa03df02d0700c9b708f62e38082751785b7eca15ecbe11",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s02/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s02/modell.glb",
+      "bytes": 761144,
+      "sha256": "b1e36ea20f4c5700dd4c0c9e5674efb0d24ed99f68ea82b8fa320e37b9a1f9c8",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s02/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s02/nah.webp",
+      "bytes": 111868,
+      "sha256": "04f920a06726b5ffd6f744caec305c1a77ece8a3ee68c5919f0edf87cdfb3335",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s02/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s02/schnitt.webp",
+      "bytes": 117050,
+      "sha256": "3dcd0a532558ec17d2f19c3c3a705ecce8d74fa4c64b5164b59a8a189d021908",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s03/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s03/aufbau.webp",
+      "bytes": 128976,
+      "sha256": "876004426cc01972484f1c5861830b89b6fac26d80139735351249248804742f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s03/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s03/fehler.webp",
+      "bytes": 126840,
+      "sha256": "0cb73654f29d82016a9399aa9fa9ea68ccda235c3eaf01295e96b36f2144cd36",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s03/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s03/modell.glb",
+      "bytes": 761144,
+      "sha256": "5b8343339fd431016a1149d14537507396b048abcc9db10a45285d2c5656fb25",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s03/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s03/nah.webp",
+      "bytes": 126746,
+      "sha256": "95b60a4a478f14bc0d2259eb7ae7ce4d1bce30703584978f048a5e44656fd0a7",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s03/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s03/schnitt.webp",
+      "bytes": 121992,
+      "sha256": "3f5fa6744d59ce3235e8e2abcb6d4ba598731f0d06e14c51c3c69656f26f2698",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s04/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s04/aufbau.webp",
+      "bytes": 135598,
+      "sha256": "2e60b8f5d42e7aea88c78aa7dc0a444c2100b9981b7cc864fb72c398e38de19b",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s04/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s04/fehler.webp",
+      "bytes": 103214,
+      "sha256": "7a742356df8be9483957c653ea0ec2dae112decf007cfe64eae045d97a4aaea0",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s04/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s04/modell.glb",
+      "bytes": 637808,
+      "sha256": "7736c66a9f9e5e19543e5708f6482c3db61e3cb46b6fd76843827e00f39cf0d8",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s04/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s04/nah.webp",
+      "bytes": 103214,
+      "sha256": "989a6599d6d80ad35eb1df3f33a0babf63adda968d7bc823a522a0c8e35d32ba",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s04/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s04/schnitt.webp",
+      "bytes": 102710,
+      "sha256": "75b5b505418d0086adb49ae06b0990687e8402ade82f020ed696900c2a7d2548",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s05/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s05/aufbau.webp",
+      "bytes": 136230,
+      "sha256": "669c20b16c759f6990b4cea8e8986a19bc605b5750a371319a0ed2392e960f03",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s05/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s05/fehler.webp",
+      "bytes": 103156,
+      "sha256": "4596d869b2b3ff08dc2e5505974aaf131c4c0a0704157b851f32a3b684514247",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s05/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s05/modell.glb",
+      "bytes": 711736,
+      "sha256": "ebabf3a03508eac295b7c9a219927988751b1dff628c793811da5527def123f8",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s05/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s05/nah.webp",
+      "bytes": 102424,
+      "sha256": "94905454ce2644f03be8560034eec6164250e4632a9dee8dfde0671c6f94230c",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s05/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s05/schnitt.webp",
+      "bytes": 102782,
+      "sha256": "393d8683960eaa13532c9a516aafaa66465e215261ab44dcf2e1bfa44329c446",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s06/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s06/aufbau.webp",
+      "bytes": 142708,
+      "sha256": "65b4b48865aa30899456c47179e1b56067e33f8102439f92cf88ef90dabe47bc",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s06/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s06/fehler.webp",
+      "bytes": 114482,
+      "sha256": "629262f03f5c7989d74f5424d3d1c570b7a50844c698b6c69cf9f5e60d3f3007",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s06/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s06/modell.glb",
+      "bytes": 444844,
+      "sha256": "bfe5504fea388b54727306306666153a976f89923a24e33cedf6f2f627c65dbe",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s06/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s06/nah.webp",
+      "bytes": 114194,
+      "sha256": "30eebdfe626bba8eec1e6e5895248b278ddc168800ea750a55cf70f3b605f69c",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s06/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s06/schnitt.webp",
+      "bytes": 106340,
+      "sha256": "075c7d52a3e572b0efb54d30e3dc1940460240d3fab1683331be58a5966a3012",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s07/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s07/aufbau.webp",
+      "bytes": 122986,
+      "sha256": "b6dd8365de8ead3a55c2467052e02fe8c9303fc69a39670678c07969d72ba69d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s07/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s07/fehler.webp",
+      "bytes": 110688,
+      "sha256": "d654195ed2da183703c42a12b9b51977984534aae6c0a1e4050cf96b244006c0",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s07/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s07/modell.glb",
+      "bytes": 812072,
+      "sha256": "8ce2086cec5f14ef26cf4676c49fc068cb0f97c220a0e90a48f716e74c95d313",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s07/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s07/nah.webp",
+      "bytes": 111800,
+      "sha256": "246bf53351d989738ffe09a2d868e53319393c59918704b4e32ca083dccd0535",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s07/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s07/schnitt.webp",
+      "bytes": 108838,
+      "sha256": "97fe8479effd235c3a0d734e04df392cc2ba47671b54ce1fd2d39f2050fcc996",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s08/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s08/aufbau.webp",
+      "bytes": 140822,
+      "sha256": "9081a8e8bfb9051a4fff5068c7522b9d270bf8b0b89e4ef8e0192a5a8dd1e5b3",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s08/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s08/fehler.webp",
+      "bytes": 115820,
+      "sha256": "cce27f5406d8dee440e37de531a3fc98ba088e75bf5f3a446022ba73350cdf6a",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s08/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s08/modell.glb",
+      "bytes": 937272,
+      "sha256": "29f011d38e3abaf20153400272479a416bc67e82f1789c0d878a9164d8b95fa7",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s08/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s08/nah.webp",
+      "bytes": 116022,
+      "sha256": "ed3fedc7ba3ba329ef73300ae440f1f5e68026e1b0028012632bc74618a77675",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s08/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s08/schnitt.webp",
+      "bytes": 111520,
+      "sha256": "75cf8bb5f3c86e31472aafd92400a6c75d89d2c742e8011b9630c684f92004bc",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s09/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s09/aufbau.webp",
+      "bytes": 136532,
+      "sha256": "f4eadffa4330a81c8887563c6c4eb2f6bb46359eec02bdef15dedbae67fda00d",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s09/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s09/fehler.webp",
+      "bytes": 101758,
+      "sha256": "78612c576144cf1570de7a962402eedbd30b7365739acd0c99e7664b673f5704",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s09/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s09/modell.glb",
+      "bytes": 766456,
+      "sha256": "260ef836d675e496bc4f60e69c297b0dadebd8fd6591cefd36e14229a79ff356",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s09/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s09/nah.webp",
+      "bytes": 99818,
+      "sha256": "9dff27ef89070e71cf329f0e4420333a2ea322b570ff00df93e298d97b166d1e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s09/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s09/schnitt.webp",
+      "bytes": 85734,
+      "sha256": "15d93d5a3536ece6738e907276febe7f7a54b9076b46ac2dcc09134d4d77e85f",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s10/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s10/aufbau.webp",
+      "bytes": 144966,
+      "sha256": "8a3aeb496d95b3a46ba2129af9509567c55d0e219b67c22a364255d9902a5dea",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s10/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s10/fehler.webp",
+      "bytes": 129648,
+      "sha256": "0e68ae405560adce38bdbd4c7d317d44ec39bfd9c6754d8a704907f686a0e7d9",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s10/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s10/modell.glb",
+      "bytes": 950736,
+      "sha256": "8c89a057fe0a43ba138436d1a25839fd6a5b7e0076f51a31dbf0dccd75f4f096",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s10/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s10/nah.webp",
+      "bytes": 128842,
+      "sha256": "da724d5d46faff5001f31b506738190488c4649b7af60343925f34eaf9b2f76e",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s10/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s10/schnitt.webp",
+      "bytes": 116582,
+      "sha256": "fa103b1311bceea6fedd82922e57b976b4d9d6f23d260c2df2a8b58735b9e0a7",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s11/aufbau.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s11/aufbau.webp",
+      "bytes": 137504,
+      "sha256": "1a29a1a7c9194407711f62bc02620c712b1e58e11f6bdcf0dc284504b80bdd44",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s11/fehler.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s11/fehler.webp",
+      "bytes": 125162,
+      "sha256": "dc4d2b2fea9828aa5486335a3d951d5295e30d2bfdae57cd7140971bd47e9b92",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s11/modell.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/s11/modell.glb",
+      "bytes": 735184,
+      "sha256": "b6f02c7f54b14bc5848bf8d25a9b14d4b2973f9d3e7a658a0c6534808a6d2430",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/s11/nah.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s11/nah.webp",
+      "bytes": 125390,
+      "sha256": "fcf17b7967cb789fb2e64c2c91ec72065f7f725c8a335ed24d4517b171994c34",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/s11/schnitt.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/s11/schnitt.webp",
+      "bytes": 113738,
+      "sha256": "4921297ba0e8b965701444dfc3a98660b9c1d4f5a7763af8c16eb07ba90c8490",
+      "typ": "bild"
+    },
+    {
+      "id": "steildach-falzziegel/uebersicht.glb",
+      "url": "/dach-medien/v1/steildach-falzziegel/uebersicht.glb",
+      "bytes": 3861452,
+      "sha256": "29db1fe315582fdc3a13bcddc7cfeed56680d14f4f2b55216202f2643b5d79c4",
+      "typ": "modell"
+    },
+    {
+      "id": "steildach-falzziegel/uebersicht.webp",
+      "url": "/dach-medien/v1/steildach-falzziegel/uebersicht.webp",
+      "bytes": 206812,
+      "sha256": "0e67f053dbad8b8baa4c9d644f859328b63a01e503b65589ebc09c761ed5f4bb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a01/aufbau.webp",
+      "bytes": 121642,
+      "sha256": "6e3bd69b305a31d1356e76a96f6902b14d44d26264b7f8c52ce7ebec007803cb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a01/fehler.webp",
+      "bytes": 116368,
+      "sha256": "608f746e508fe414840324ae700b23a9a54b9dbabdd9a6821137bf34e4904a38",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a01/modell.glb",
+      "bytes": 1014948,
+      "sha256": "41f296ce15e22d4cf2a45a776be35f9063e52a0f2162941209e245fa2a789e07",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/a01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a01/nah.webp",
+      "bytes": 116446,
+      "sha256": "6db6f6d1593bd1d1e8666e7304a13091c7e8c2f523519e3f0ac673d04f09eab9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a01/schnitt.webp",
+      "bytes": 110540,
+      "sha256": "e02b75d13cc4631089e0190352fc7de0d6367bcff7fe33e3ca342d9eae245020",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a02/aufbau.webp",
+      "bytes": 125250,
+      "sha256": "c409197d9cc81db4d8ff6428d333a34d53504d62dbf3a85c9c19730286f4b903",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a02/fehler.webp",
+      "bytes": 121842,
+      "sha256": "efa05467de17afa66661184a49fdc8238d8791052b26559be7b3c26123c2e963",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a02/modell.glb",
+      "bytes": 889984,
+      "sha256": "018d525bfa680f9b0723188f80e7e411870bb460b3afcce49a38513ce1db0959",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/a02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a02/nah.webp",
+      "bytes": 121922,
+      "sha256": "b7deb027afac7ad0fd21b6c041aeeeb7edf83987547ce9e7f601c3efefea8b0f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a02/schnitt.webp",
+      "bytes": 107106,
+      "sha256": "ab1c29a9e839ef487a82e2ae4b5b6a43432548e700ae84d4e57ca4d9be57e7ba",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a03/aufbau.webp",
+      "bytes": 140168,
+      "sha256": "5bd3999a2588bac3e43de75a0b95fe8c78f6a5acc146b87a9fab1cded5278e4d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a03/fehler.webp",
+      "bytes": 123652,
+      "sha256": "4dcfc1b1bbad49ff1282c458f009f6317c69f8c973e923f46122def760d74d75",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a03/modell.glb",
+      "bytes": 957320,
+      "sha256": "f62cecaecb9dc2f2bf44cedc0058777944571c56cc57deb7b417200933861224",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/a03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a03/nah.webp",
+      "bytes": 123742,
+      "sha256": "6708d2fc82fffa102323bc98c6f8fddb4b1621b0bc82e1f37c3b13fe460746ea",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a03/schnitt.webp",
+      "bytes": 103796,
+      "sha256": "9a01017bb42322ccbdc257e9f084378417afb6eb6b4d1ac4c0e25ab96f686ce0",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a04/aufbau.webp",
+      "bytes": 115950,
+      "sha256": "7a2607c756fbb7773cb4747457b72b4c8e583a144e0d8b62d16d5925b4f0c01f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a04/fehler.webp",
+      "bytes": 104282,
+      "sha256": "352669334710f632751829511ad81cc4e6109fcfba2180af91c7aaa4781b2b86",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a04/modell.glb",
+      "bytes": 873880,
+      "sha256": "93b08e3318fc1433950b49a4a20d29503a8ae070f8aefaa3d1162925a8116470",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/a04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a04/nah.webp",
+      "bytes": 104264,
+      "sha256": "3783ac275ebcf9c762c18d486327da0c0ee0e52409aeac5e98ee16763f38f43d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/a04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/a04/schnitt.webp",
+      "bytes": 90466,
+      "sha256": "8b14311ed7223b8cfe4d9a164852f949ca08309fe01825662aa72f7d7b606c52",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g01/aufbau.webp",
+      "bytes": 116906,
+      "sha256": "aa7e277d76b7d097076e331782fbb487707b9f3b63acb74908d775fda33d0cc3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g01/fehler.webp",
+      "bytes": 94182,
+      "sha256": "00af92457ef94d1c3d9e1a31144dba26eb606c922c401a9ae8173c664dd479c9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g01/modell.glb",
+      "bytes": 843632,
+      "sha256": "35a2e421b53634f18724c5cf1d83e1caf7b781aef9fcc728503f9f17643a6798",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g01/nah.webp",
+      "bytes": 93676,
+      "sha256": "ce1e88469cfdfc0cb3f7e4ecb8af260cd2f5140c254186b985916c00378dfeb3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g01/schnitt.webp",
+      "bytes": 81786,
+      "sha256": "058d9ec1b1c479c9ea8782e90eea95c5ba8b096c5534b4897eccf32ed178d313",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g02/aufbau.webp",
+      "bytes": 103352,
+      "sha256": "62fed3bef633da85605098db1d3f3844fce08aae76130c63f3197f500996d45b",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g02/fehler.webp",
+      "bytes": 92522,
+      "sha256": "1ddc68e94f99a7aa6ef39d63113f3bc834645001ba868b1247a8b7cc6883ffe3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g02/modell.glb",
+      "bytes": 403384,
+      "sha256": "317950b072a4fc38b9e1eff61ce05b0928307968556b355af86a4914fbfe44d4",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g02/nah.webp",
+      "bytes": 93492,
+      "sha256": "eb187a910c6fc19ed5ee293934ff23df6f6ddf1f66f9bde8e81aa7bb9bfef5e3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g02/schnitt.webp",
+      "bytes": 76958,
+      "sha256": "591cc9173f898a40142eab565844615a90f812438196e9e55c7c07472ef9f452",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g03/aufbau.webp",
+      "bytes": 112198,
+      "sha256": "7dda2609cbb876ac81a80daae1e5fd9769fb0d406a20991471e536782fe340ee",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g03/fehler.webp",
+      "bytes": 98788,
+      "sha256": "420cabf4798608358c70afe72741954fa68f0d6564eb74e4453c65a17020c831",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g03/modell.glb",
+      "bytes": 403436,
+      "sha256": "3f141836364bc22b8243404f7673d5659c45df3232bc414bff0b9fc52bbdadaf",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g03/nah.webp",
+      "bytes": 98858,
+      "sha256": "e66f960e0c461cdac0be5b1fbb99bcd15f220c12eff3c4307ab47205497230d6",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g03/schnitt.webp",
+      "bytes": 83436,
+      "sha256": "24ae7075b25c8897a3fb86f7b599e427385419495ab1002bddd4803dd75f8d4a",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g04/aufbau.webp",
+      "bytes": 111418,
+      "sha256": "42de6eab238fb9481f745d89a82cb62dce9c7f2bdfab90345b292699cb00e9d7",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g04/fehler.webp",
+      "bytes": 104972,
+      "sha256": "95ef7afbe31a74213ec4663deeeb13a567433207d4cbc51705f97af365f65ee1",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g04/modell.glb",
+      "bytes": 499868,
+      "sha256": "71f093840405230a86d3fc1160b9e0825c9c44e706c8fdbb3faed9bc9541c399",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g04/nah.webp",
+      "bytes": 105482,
+      "sha256": "5a456bbe7b2f0a841a1369996f8b4f8e84b4bcf47dc9a5a90e9b543b1c6b6a7f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g04/schnitt.webp",
+      "bytes": 101866,
+      "sha256": "345cb1a8ad7bd0da7a771920bc6a2d3b109f7fd0dd0f2ae56bf1f8f46abf760e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g05/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g05/aufbau.webp",
+      "bytes": 109374,
+      "sha256": "a910e27dfb9dd40fc06a1d12c07438648a42a9e94f8b7a99697f528cc22b937c",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g05/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g05/fehler.webp",
+      "bytes": 93820,
+      "sha256": "abcf244870bd3005b7a9611473abfff28b53f39cfd74fd16fd901b8695f3a8cd",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g05/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g05/modell.glb",
+      "bytes": 862760,
+      "sha256": "c3a02086d97f9b880aa6dce7420d76ec264b97961dce1e2c810d5e29e6ecedc2",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g05/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g05/nah.webp",
+      "bytes": 94308,
+      "sha256": "65675e1672945f5acb36396341af27b46c24a9e94579786c6d05693b118b913d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g05/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g05/schnitt.webp",
+      "bytes": 81078,
+      "sha256": "daea8b84e3a65c787150ce00c8368669154bfdb63c1d6c48d0404e2365c0e7d1",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g06/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g06/aufbau.webp",
+      "bytes": 130614,
+      "sha256": "b711773f4d5990e3bb84d0a9ebd221bac28afb35045578ab9de1b439dbd1a75d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g06/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g06/fehler.webp",
+      "bytes": 129396,
+      "sha256": "26eb3209f28656ffaa47e0ab676ca6e9464ae253ad4edddebe5ab18a862c2802",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g06/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g06/modell.glb",
+      "bytes": 990428,
+      "sha256": "b2039e78dc714d4f87d768630d83c2c8a39ca095b82ccc89a0aa7955f24fdacd",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/g06/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g06/nah.webp",
+      "bytes": 128890,
+      "sha256": "6ccdc35de78b9349e35c2b10b060a576a1e670d3cd0568b31dee8abf064065df",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/g06/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/g06/schnitt.webp",
+      "bytes": 112432,
+      "sha256": "769085e9e79e23d6d5dd935b29672f52b1235c39c976a00043a1ec0b6fb70f69",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s01/aufbau.webp",
+      "bytes": 116318,
+      "sha256": "0df97fc0b5d44afb021effea0196158dbed44b9b52d46bc8b23b06881c1f68e6",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s01/fehler.webp",
+      "bytes": 91350,
+      "sha256": "0ac33d068e8865d9839160e800e40d5e8a6566ab11f64247c3f311290c8a254f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s01/modell.glb",
+      "bytes": 690664,
+      "sha256": "b17d5ccd84f89ffbb5e9226f476620954414ec948fb28e47d7b61526f194a4df",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s01/nah.webp",
+      "bytes": 90178,
+      "sha256": "05c403f8904aadf56c13e3927f0b07ccbf8533a18932e518476378efe1ac3b56",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s01/schnitt.webp",
+      "bytes": 79498,
+      "sha256": "35b8eb0d5a144cb96f5f0a3fee473227a68a62432ac9ee1d800be8ca523868b1",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s02/aufbau.webp",
+      "bytes": 127414,
+      "sha256": "6bc4a4a28429fd07d906b8cc29abc73b2300af1046f13957f5dd05aa7fa48081",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s02/fehler.webp",
+      "bytes": 111422,
+      "sha256": "dacc2df9296986e924156b4b38dd285a3034fc78ab81895403a86fd91ba30cb8",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s02/modell.glb",
+      "bytes": 926140,
+      "sha256": "07d89c7881910bce5b705d5bd62e9f9876cfa4c50047b0355a0878745247ccfb",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s02/nah.webp",
+      "bytes": 110434,
+      "sha256": "4e5e6bd07b25a0d9555b8cba076581b7acdadf4c7bc24789b0dc523a6c104b64",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s02/schnitt.webp",
+      "bytes": 115734,
+      "sha256": "1d6e8f5d16ff45fffa675ff95b790eeb34bd69ebb4d0432c11636967d6852150",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s03/aufbau.webp",
+      "bytes": 128566,
+      "sha256": "c0da8ac9cc03d3a6d4f1874226ed3bb5de5592d9313a73b733242032c2639238",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s03/fehler.webp",
+      "bytes": 114170,
+      "sha256": "2878904d4d5a7c112af46ab240044cb26f807d11123658a69979a9c0ae23fe7a",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s03/modell.glb",
+      "bytes": 926140,
+      "sha256": "799048a99c5aa8ba814dbaf0f8b7a591f21a9ea006bc63901f5e61a9c803c9a9",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s03/nah.webp",
+      "bytes": 113956,
+      "sha256": "06109e5cb87989b2445c96705c762d5bc6e47df6a99f4badfb3e1897354ccd46",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s03/schnitt.webp",
+      "bytes": 120592,
+      "sha256": "5fa4d69929f65f471cbc063a51f8c306740d99f08e01679e6eae93e346682d45",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s05/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s05/aufbau.webp",
+      "bytes": 123384,
+      "sha256": "1557d1ee58d4d03af1d13ce6c49ef841e05217383387900513c90c72344ec72f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s05/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s05/fehler.webp",
+      "bytes": 101796,
+      "sha256": "fe03320493d3566b49147434e8b51d4bc08b6f7111fa2c42ecb28b91100ce02b",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s05/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s05/modell.glb",
+      "bytes": 1024580,
+      "sha256": "525e1ddfa29ab38d3d44eb022cf26a2755159fdb667a14a399844889ab1819e7",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s05/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s05/nah.webp",
+      "bytes": 100896,
+      "sha256": "c46facdbfbe3e017b61e420772b52e15f0b756f42f55101a91e27b9d4daa526f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s05/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s05/schnitt.webp",
+      "bytes": 102226,
+      "sha256": "9daf39aaba8962079fffec7b0e2b2b14fe3b102f6080f78934918ab68546afdf",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s07/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s07/aufbau.webp",
+      "bytes": 121230,
+      "sha256": "4cf2342c6653434c80db6aaf11f505cb28023428758df8382e1cd5abab0c48e8",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s07/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s07/fehler.webp",
+      "bytes": 109092,
+      "sha256": "d4a6b2240d8d7f9f7be4fd5e8453431fcb04d61d50ec920720a64042b13b348e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s07/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s07/modell.glb",
+      "bytes": 1011228,
+      "sha256": "bfaee7a5c53914b5750ba69548007592e3b45b9969aab29fcfa89d6f253740d6",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s07/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s07/nah.webp",
+      "bytes": 109188,
+      "sha256": "b382ae49274e5899d87f76a41f5b6567243e2ece1a1e62456fd9f5318ee912f4",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s07/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s07/schnitt.webp",
+      "bytes": 107698,
+      "sha256": "73b3d374c317f951eb90c769c8c362d37e881d3a3c2044acf914acb690ec5f64",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s08/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s08/aufbau.webp",
+      "bytes": 139646,
+      "sha256": "c83f0b20ccb3e0590537c078e9b73b33bfa91500ddd194d7834df4269f149025",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s08/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s08/fehler.webp",
+      "bytes": 113414,
+      "sha256": "3819f8c41aca93f623ddad4e341bcd66ea534500d09790d322264f58c5f9c1ba",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s08/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s08/modell.glb",
+      "bytes": 1085820,
+      "sha256": "f328bf4cd2b2c0f695ba5173c5364a9c2d6c460412f65a63887323d17d94629d",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s08/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s08/nah.webp",
+      "bytes": 113668,
+      "sha256": "f887dd11d701c537f40fd913e3310b13b7ab6bac57fb8e9605e498d350eb24f3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s08/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s08/schnitt.webp",
+      "bytes": 110788,
+      "sha256": "d0ada1ff0ffddd9de8e4a7a708f0ec0e19ab3f61b70b816e61622a6eb10828b2",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s09/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s09/aufbau.webp",
+      "bytes": 135638,
+      "sha256": "2f131d3ed88cded5f669454d8fce568b46dbdadd658dd1f245eb0833b767b908",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s09/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s09/fehler.webp",
+      "bytes": 101886,
+      "sha256": "2ad3185bac3060636a16c8def73438343a29f9c94b4079cfb216745f3c476dcd",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s09/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s09/modell.glb",
+      "bytes": 930428,
+      "sha256": "f735d1aa74e464f264eee3a7714af6ec58e2d3fda9d430886592681b7ce407b5",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s09/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s09/nah.webp",
+      "bytes": 99578,
+      "sha256": "d6a8ddfaa1f9632f10bce37129ff414030aa544f40b454e70dca3bc1a6d5b2ac",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s09/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s09/schnitt.webp",
+      "bytes": 84394,
+      "sha256": "aea780d7c05f96f7d07a5eef239fa376514f70589fa7236c573f43fc16a6dc44",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s11/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s11/aufbau.webp",
+      "bytes": 128194,
+      "sha256": "690be2c69a2e4a48bb5a8b9644de2e33ebabcea836d2c7cb25267bed01df313d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s11/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s11/fehler.webp",
+      "bytes": 113096,
+      "sha256": "0ad70c4f9aef76bdffd35ae5f2b94847817ade3b811b7c3fe99c8a65da5c5303",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s11/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s11/modell.glb",
+      "bytes": 919844,
+      "sha256": "48e6a50e0ab7ac55cc52cc914c219bccdc32e8db093f8a54920aa0625464d120",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/s11/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s11/nah.webp",
+      "bytes": 113414,
+      "sha256": "1d5e2cce90c4716b792264a7a16f34847ff798015fb07bc63d6e1689c8a63c46",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/s11/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/s11/schnitt.webp",
+      "bytes": 111972,
+      "sha256": "6355a50ef4aa14ba628b466f84e9d9d1155abfc189636299a2fa98d3667c9ea2",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/uebersicht.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/uebersicht.glb",
+      "bytes": 5583376,
+      "sha256": "d260d5de3fd6d7bae3a329941aa1d99b92dfd316a9c22721c9e81ab7fad6d67b",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/uebersicht.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/uebersicht.webp",
+      "bytes": 201494,
+      "sha256": "dbc8303e8328ac7160767a79ef4ff47edc08c33f9f76a13cca8c2c7ec80f5580",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w01/aufbau.webp",
+      "bytes": 136938,
+      "sha256": "a572aff300679b9a0da7ee4e3a00b8a6feb01f801b79ca005399fb6e2cbef10b",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w01/fehler.webp",
+      "bytes": 121576,
+      "sha256": "a33a8a570ec7314396f21f05f96bcd34182e2e66b0f145b0b5d2deae9c69398e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w01/modell.glb",
+      "bytes": 645348,
+      "sha256": "c426a45a9aad1767753fcd9cff768180197cf894953418100ab061ebedcc88fd",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/w01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w01/nah.webp",
+      "bytes": 120860,
+      "sha256": "dd72d88731b58529dc6a518e6755f0d1c15ea09260334bd8d7b0b3b3088442ca",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w01/schnitt.webp",
+      "bytes": 107242,
+      "sha256": "ed1652d845818492e45a677357ebb9a9e07fc740d361bea05e6532ea822d534c",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w02/aufbau.webp",
+      "bytes": 141584,
+      "sha256": "7f1182c1a73bfae2223d00c5ac4669773efc9a22c9d2bd505c919d568801f3a2",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w02/fehler.webp",
+      "bytes": 121974,
+      "sha256": "3720faa12da8f93f8435666df104a5b16f03e6c15403378fc68d4f24b2430bee",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w02/modell.glb",
+      "bytes": 769828,
+      "sha256": "1d3609b1784b245d9ba79f439a21989ae84143ea1f86e3541bf2e1c1bf86099d",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/w02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w02/nah.webp",
+      "bytes": 121980,
+      "sha256": "1edc869179849e1293091711ef73bcacb1b29e4fd672000011ab27a6b8cec893",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w02/schnitt.webp",
+      "bytes": 107900,
+      "sha256": "c383320fcd32923b5bb7eebad29344c52e32b3a46553b4286257474dcc4e5cfd",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w03/aufbau.webp",
+      "bytes": 141436,
+      "sha256": "3cf2846ea80649e51996b1f6bcaee8e7b4010bcc42e180e9957dc8d9e0734101",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w03/fehler.webp",
+      "bytes": 127076,
+      "sha256": "d8e8c40c1fb31e64a92baf66b453107e585875970b007900f9808aa70d818740",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w03/modell.glb",
+      "bytes": 684748,
+      "sha256": "8f877770d85ac72596c9d2a5eb1e3af0ee21b49ac917e689c818ff1ace401d42",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/w03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w03/nah.webp",
+      "bytes": 127050,
+      "sha256": "2215d183e24d2bb0b9d81701a6188802951fc5512446e064063b0982a38bf385",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w03/schnitt.webp",
+      "bytes": 110112,
+      "sha256": "08c68e83db4a8b71778841e746e3ee40cf6bd792789b871fd155302917e49a14",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w04/aufbau.webp",
+      "bytes": 134524,
+      "sha256": "674cc5b068f94ecf91164e017e3023a71d8551dadea7e5e18a4b11f1882b2aa5",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w04/fehler.webp",
+      "bytes": 121464,
+      "sha256": "f17d4f8e4304c60bec9f04edd27e8b2940861a1da4873eec926f2b4d50ef15c3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w04/modell.glb",
+      "bytes": 648940,
+      "sha256": "f09b5f48f778ad41ab45839e2771975caf5c0772ad1e94b1e889fa9c68a8fa25",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-biber-doppel/w04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w04/nah.webp",
+      "bytes": 121178,
+      "sha256": "be77a8a2096421ac3eff02873c1f7cd62ffff6750c51534a6bcc19f4910afaf5",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-biber-doppel/w04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-biber-doppel/w04/schnitt.webp",
+      "bytes": 106784,
+      "sha256": "761484ac4f5326b2ce1f0708a14c743cf03a97a13ea710014b69bfbffeb789bb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a01/aufbau.webp",
+      "bytes": 120368,
+      "sha256": "1b918a941c4da0079a15c0b69f8bafaf5f4fd559693170ceb288b179234dc91d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a01/fehler.webp",
+      "bytes": 115648,
+      "sha256": "4ce9267e2f81fb33c9a8f3a880dd052bfa29b27213ac8d95aaf2cb5abe355bfc",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a01/modell.glb",
+      "bytes": 796572,
+      "sha256": "86e74febc11e963fc5b52db8a47fb92fcfb3054e3ae141e4ac20c12b2f72844a",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/a01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a01/nah.webp",
+      "bytes": 115804,
+      "sha256": "0034641cd5a09bde256025b6525b26013d69daa163dab0b62d70c981ac3d072e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a01/schnitt.webp",
+      "bytes": 111108,
+      "sha256": "767efe5bb22730b7f34ff3ab7a096eac684a7540c93091ed7ae9c494f929dc33",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a02/aufbau.webp",
+      "bytes": 123066,
+      "sha256": "408335961b24eb190bf40fc96dc09e864fa3b7a9ec5795bd9e23e50df191e002",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a02/fehler.webp",
+      "bytes": 122342,
+      "sha256": "e14a3627facdb3adb6003c8d8f0fa730b98054ff435e8280565de7d7afaeeb45",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a02/modell.glb",
+      "bytes": 671608,
+      "sha256": "217608e5e9483fcad880123f697bf3be3a926e7e773e8d05259714ead45ae4b7",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/a02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a02/nah.webp",
+      "bytes": 122234,
+      "sha256": "51802db839f114193e655e4ca8fef70181cd5fabb503495251ff93fe6caea5a7",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a02/schnitt.webp",
+      "bytes": 108078,
+      "sha256": "a9a63ffdce1605ebb5c214983a73b524e88fa530e47091ccc6907f42d9837b9c",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a03/aufbau.webp",
+      "bytes": 136636,
+      "sha256": "eb6ac874a1cc74856e4b39ce91e37bcd23defa313e4a48efbdc4f792a1c4de5b",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a03/fehler.webp",
+      "bytes": 121592,
+      "sha256": "7e4f8d85386a2ee25fff3a8b21f57d63c328a498403c806dbda66c3abc3a3bf0",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a03/modell.glb",
+      "bytes": 738948,
+      "sha256": "61931c580f66b02571a7940086ebfacf52b99dcf7faec26b86f2c75cf826bfdd",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/a03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a03/nah.webp",
+      "bytes": 121668,
+      "sha256": "b445b215212384f3b24ce85c8682252367aff06003482966f138d02825b270d7",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a03/schnitt.webp",
+      "bytes": 102836,
+      "sha256": "5f78fc87f26b6a2eef1c938551ad272912f4ebca8da47bc5b4122cec98cb04ae",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a04/aufbau.webp",
+      "bytes": 115916,
+      "sha256": "e96b3554a1a82fee73dfe22c5d9e5ce6381597d6c04e9044ad9f479a1ae65683",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a04/fehler.webp",
+      "bytes": 106796,
+      "sha256": "1458ef8d703822cbaeb7ddaf94c50f18b65a34d24d8675d8729f960cd0fc4739",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a04/modell.glb",
+      "bytes": 655504,
+      "sha256": "9fcdb620cfaac540588e33dbc951535a822d7261507585142570504065aa4aa5",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/a04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a04/nah.webp",
+      "bytes": 106672,
+      "sha256": "302169b1cca913719dda7aca60fe15292c7a173e895375b2355aad55aa85a001",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/a04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/a04/schnitt.webp",
+      "bytes": 91850,
+      "sha256": "1cfd5a92a356afbfd181679542c93c7d5419d3539c38fdf456601ad64c256962",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g01/aufbau.webp",
+      "bytes": 116390,
+      "sha256": "15f655cd020667c6f74b051be76a93f10fd872f8554d053ac69a8af24d48d17f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g01/fehler.webp",
+      "bytes": 97324,
+      "sha256": "b1957d18a8e5230207748801f27c257f16ddebdd53be2b155a1223cd92a72be1",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g01/modell.glb",
+      "bytes": 635908,
+      "sha256": "5be0d6f01a5a1559f014734ee3aaef0650c4df78d5af99a25e1f065424e4716c",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g01/nah.webp",
+      "bytes": 96596,
+      "sha256": "d18e048cf6ed9b54aa534471de8a72bb31a607949415b38507c52eba5ca1dfed",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g01/schnitt.webp",
+      "bytes": 95334,
+      "sha256": "9b00b35205d40e4139adf3e491bdd897f57445bb64cb02f1a6240fc581cb81eb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g02/aufbau.webp",
+      "bytes": 100602,
+      "sha256": "32591ee7a5bf7aba440f1fc9155bda4ff099df301c6d9cf5095c340bcc30b7f5",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g02/fehler.webp",
+      "bytes": 89834,
+      "sha256": "0859b46d1d162f90ab64e277cc3d2db39dcbb6408982578a2f6c863f77728a7d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g02/modell.glb",
+      "bytes": 365816,
+      "sha256": "95eb0c7aecf072447ce81ed9ef5b1c429828351511d3537c1dc7f02c2d27e874",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g02/nah.webp",
+      "bytes": 90642,
+      "sha256": "72e3aa81831670886aa2d1fab72bd648cb6324175fd66c469ffef0d870031642",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g02/schnitt.webp",
+      "bytes": 76118,
+      "sha256": "1f45545f994e527397dfe25f8686d8889c68bf3e221d6f8540175b5cecb522bc",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g03/aufbau.webp",
+      "bytes": 110118,
+      "sha256": "3ba753dc3b5949473e6bef4b83be49972d7a3e73e4430001668c9f55ea19e054",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g03/fehler.webp",
+      "bytes": 94848,
+      "sha256": "b93fc04d0e22799d8d0d7bbcf1615e71806dbbc783cd1ec4531d4f41cbeb6091",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g03/modell.glb",
+      "bytes": 365868,
+      "sha256": "04cfd96187f6b7caae80fb5daad9372bc170c9bbe0b2313ecb9fbb3e17d93b1b",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g03/nah.webp",
+      "bytes": 94542,
+      "sha256": "09952a810dc667371b43c5afbde1c5020651d36e613dfaf44be4451229934fdb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g03/schnitt.webp",
+      "bytes": 81152,
+      "sha256": "bbac53977749e7f93b40ca5a10e26c751018079ebc102f1ae6eba131c54d187e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g04/aufbau.webp",
+      "bytes": 108916,
+      "sha256": "ac733fb48eab1348c3e2924138e5282346e0bb0831d76565149ef16e43dfc54a",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g04/fehler.webp",
+      "bytes": 101210,
+      "sha256": "3c85b4edf12e4a2f09e3106d762006ba051ede6d83d735ddeeef05c4570946ad",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g04/modell.glb",
+      "bytes": 462296,
+      "sha256": "912b71a411e443915cc46d4ea266b723e21f6fce6daebc1fcc78601da8da3b5a",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g04/nah.webp",
+      "bytes": 101908,
+      "sha256": "788254ac82780c00d7df2e5979d3a35b2dcb275bef2c846c06290b046b178757",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g04/schnitt.webp",
+      "bytes": 88136,
+      "sha256": "9b5c670bba56a1f2f0a51d79cd1c97a89d42bb41f7c4735b28ec9294a7688576",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g05/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g05/aufbau.webp",
+      "bytes": 109308,
+      "sha256": "9ee8f98654ff0ebe0de3ed239c970904a024820ae92a0c79c252bd59e9778c65",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g05/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g05/fehler.webp",
+      "bytes": 95366,
+      "sha256": "aa9572ca09309ab4980a482917364665cf0280eb5171283738abaea2e6884297",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g05/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g05/modell.glb",
+      "bytes": 655036,
+      "sha256": "826308bfcbce221e67f37039a21d70c8ffaf179ac12b65955f2346a545040439",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g05/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g05/nah.webp",
+      "bytes": 95844,
+      "sha256": "7f17cea8cd8484d4ced5e881dd0ee4f596ad69ef0c487400d70e71bae860bbcc",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g05/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g05/schnitt.webp",
+      "bytes": 93796,
+      "sha256": "afbdb1b4b3a8adf552d8db764be8cf93021cb9eb46597b882988a5ae67fe2e96",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g06/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g06/aufbau.webp",
+      "bytes": 141560,
+      "sha256": "de402a5e0990ca49a1ad00e454a35b922c92f1b4d6cbc296ce194a1a9e6758a9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g06/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g06/fehler.webp",
+      "bytes": 132002,
+      "sha256": "4b54371b796a7d6c53dd92fd5f8f3dfce5e4dbf3d46a14a13a8e9185536082fb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g06/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g06/modell.glb",
+      "bytes": 782704,
+      "sha256": "5a3d6a615c825b03d8f3ad297f0b1cbf693befb4d5c13bee6ad67f14119b1204",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/g06/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g06/nah.webp",
+      "bytes": 131674,
+      "sha256": "498fb3913b5e9616911615cd40b96b226a6c7c393a97c0a5335bc417568894e1",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/g06/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/g06/schnitt.webp",
+      "bytes": 113838,
+      "sha256": "1a2c49a17887b74b8ef47feb5144a5660a50caf979f13eebfe72f0330bd8306a",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s01/aufbau.webp",
+      "bytes": 115904,
+      "sha256": "b64d290c010b30f0e8955ee43562e5ddd6630746a9e25c846efb51f6bb30fc72",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s01/fehler.webp",
+      "bytes": 93400,
+      "sha256": "04fa2ce0452e91876037171b81b0fd8a329de552a1c1b569aa666ccbad8b7284",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s01/modell.glb",
+      "bytes": 563812,
+      "sha256": "3206b6e1cb01d485cff4d71376ea92653afaf711f3bf50117850b454840906a9",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s01/nah.webp",
+      "bytes": 91942,
+      "sha256": "91b3dc59d948f84ea4c0f9442bcc0e11677a132dec9816d9321bdcded859fb09",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s01/schnitt.webp",
+      "bytes": 91176,
+      "sha256": "b866e92d8233fad9466d8e91c5d40b1fe1beca53e5eea226d54e2a025d695e9e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s02/aufbau.webp",
+      "bytes": 126816,
+      "sha256": "59d77e10ede674eae30b6de53ee5440dca2e9f19a754a8a2dffbc8d1e25cfb12",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s02/fehler.webp",
+      "bytes": 112790,
+      "sha256": "8a67eda07093fa4d8fa03df02d0700c9b708f62e38082751785b7eca15ecbe11",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s02/modell.glb",
+      "bytes": 761144,
+      "sha256": "b1e36ea20f4c5700dd4c0c9e5674efb0d24ed99f68ea82b8fa320e37b9a1f9c8",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s02/nah.webp",
+      "bytes": 111868,
+      "sha256": "04f920a06726b5ffd6f744caec305c1a77ece8a3ee68c5919f0edf87cdfb3335",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s02/schnitt.webp",
+      "bytes": 117050,
+      "sha256": "3dcd0a532558ec17d2f19c3c3a705ecce8d74fa4c64b5164b59a8a189d021908",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s03/aufbau.webp",
+      "bytes": 128976,
+      "sha256": "876004426cc01972484f1c5861830b89b6fac26d80139735351249248804742f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s03/fehler.webp",
+      "bytes": 126840,
+      "sha256": "0cb73654f29d82016a9399aa9fa9ea68ccda235c3eaf01295e96b36f2144cd36",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s03/modell.glb",
+      "bytes": 761144,
+      "sha256": "5b8343339fd431016a1149d14537507396b048abcc9db10a45285d2c5656fb25",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s03/nah.webp",
+      "bytes": 126746,
+      "sha256": "95b60a4a478f14bc0d2259eb7ae7ce4d1bce30703584978f048a5e44656fd0a7",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s03/schnitt.webp",
+      "bytes": 121992,
+      "sha256": "3f5fa6744d59ce3235e8e2abcb6d4ba598731f0d06e14c51c3c69656f26f2698",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s05/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s05/aufbau.webp",
+      "bytes": 136230,
+      "sha256": "669c20b16c759f6990b4cea8e8986a19bc605b5750a371319a0ed2392e960f03",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s05/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s05/fehler.webp",
+      "bytes": 103156,
+      "sha256": "4596d869b2b3ff08dc2e5505974aaf131c4c0a0704157b851f32a3b684514247",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s05/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s05/modell.glb",
+      "bytes": 711736,
+      "sha256": "ebabf3a03508eac295b7c9a219927988751b1dff628c793811da5527def123f8",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s05/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s05/nah.webp",
+      "bytes": 102424,
+      "sha256": "94905454ce2644f03be8560034eec6164250e4632a9dee8dfde0671c6f94230c",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s05/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s05/schnitt.webp",
+      "bytes": 102782,
+      "sha256": "393d8683960eaa13532c9a516aafaa66465e215261ab44dcf2e1bfa44329c446",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s07/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s07/aufbau.webp",
+      "bytes": 122986,
+      "sha256": "b6dd8365de8ead3a55c2467052e02fe8c9303fc69a39670678c07969d72ba69d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s07/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s07/fehler.webp",
+      "bytes": 110688,
+      "sha256": "d654195ed2da183703c42a12b9b51977984534aae6c0a1e4050cf96b244006c0",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s07/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s07/modell.glb",
+      "bytes": 812072,
+      "sha256": "8ce2086cec5f14ef26cf4676c49fc068cb0f97c220a0e90a48f716e74c95d313",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s07/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s07/nah.webp",
+      "bytes": 111800,
+      "sha256": "246bf53351d989738ffe09a2d868e53319393c59918704b4e32ca083dccd0535",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s07/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s07/schnitt.webp",
+      "bytes": 108838,
+      "sha256": "97fe8479effd235c3a0d734e04df392cc2ba47671b54ce1fd2d39f2050fcc996",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s08/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s08/aufbau.webp",
+      "bytes": 140822,
+      "sha256": "9081a8e8bfb9051a4fff5068c7522b9d270bf8b0b89e4ef8e0192a5a8dd1e5b3",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s08/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s08/fehler.webp",
+      "bytes": 115820,
+      "sha256": "cce27f5406d8dee440e37de531a3fc98ba088e75bf5f3a446022ba73350cdf6a",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s08/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s08/modell.glb",
+      "bytes": 937272,
+      "sha256": "29f011d38e3abaf20153400272479a416bc67e82f1789c0d878a9164d8b95fa7",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s08/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s08/nah.webp",
+      "bytes": 116022,
+      "sha256": "ed3fedc7ba3ba329ef73300ae440f1f5e68026e1b0028012632bc74618a77675",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s08/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s08/schnitt.webp",
+      "bytes": 111520,
+      "sha256": "75cf8bb5f3c86e31472aafd92400a6c75d89d2c742e8011b9630c684f92004bc",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s09/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s09/aufbau.webp",
+      "bytes": 136532,
+      "sha256": "f4eadffa4330a81c8887563c6c4eb2f6bb46359eec02bdef15dedbae67fda00d",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s09/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s09/fehler.webp",
+      "bytes": 101758,
+      "sha256": "78612c576144cf1570de7a962402eedbd30b7365739acd0c99e7664b673f5704",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s09/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s09/modell.glb",
+      "bytes": 766456,
+      "sha256": "260ef836d675e496bc4f60e69c297b0dadebd8fd6591cefd36e14229a79ff356",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s09/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s09/nah.webp",
+      "bytes": 99818,
+      "sha256": "9dff27ef89070e71cf329f0e4420333a2ea322b570ff00df93e298d97b166d1e",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s09/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s09/schnitt.webp",
+      "bytes": 85734,
+      "sha256": "15d93d5a3536ece6738e907276febe7f7a54b9076b46ac2dcc09134d4d77e85f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s11/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s11/aufbau.webp",
+      "bytes": 137504,
+      "sha256": "1a29a1a7c9194407711f62bc02620c712b1e58e11f6bdcf0dc284504b80bdd44",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s11/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s11/fehler.webp",
+      "bytes": 125162,
+      "sha256": "dc4d2b2fea9828aa5486335a3d951d5295e30d2bfdae57cd7140971bd47e9b92",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s11/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s11/modell.glb",
+      "bytes": 735184,
+      "sha256": "b6f02c7f54b14bc5848bf8d25a9b14d4b2973f9d3e7a658a0c6534808a6d2430",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/s11/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s11/nah.webp",
+      "bytes": 125390,
+      "sha256": "fcf17b7967cb789fb2e64c2c91ec72065f7f725c8a335ed24d4517b171994c34",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/s11/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/s11/schnitt.webp",
+      "bytes": 113738,
+      "sha256": "4921297ba0e8b965701444dfc3a98660b9c1d4f5a7763af8c16eb07ba90c8490",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/uebersicht.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/uebersicht.glb",
+      "bytes": 3283612,
+      "sha256": "486368f1b1b9696a4ab5813d4878c37d5ff8b7729188df602c308b0926d48fb3",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/uebersicht.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/uebersicht.webp",
+      "bytes": 205212,
+      "sha256": "294ee5db0df8f4f4ade19b0d68b9f2fab86016ce9b12b7b66d795275d94d42e9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w01/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w01/aufbau.webp",
+      "bytes": 135870,
+      "sha256": "7b9d44955cc4b28439e13ec0b9710acfd3bd2b5798c05552111eeb51bb8fa078",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w01/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w01/fehler.webp",
+      "bytes": 121824,
+      "sha256": "529aff8b7ef007a79973d5dbfc242456f7510cab1fbc870872239121aaf0a8e2",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w01/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w01/modell.glb",
+      "bytes": 336796,
+      "sha256": "8b0d0464e039ef63bacb54e1def8619d55dfa130faa18d0a8b7a6cff7aa2ae1a",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/w01/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w01/nah.webp",
+      "bytes": 122086,
+      "sha256": "72bbf7695298518a77f18592490b90757a0d92024a56db07005993da8acdee3c",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w01/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w01/schnitt.webp",
+      "bytes": 107516,
+      "sha256": "f52213aa59df0cf50c4fa46ee5dc6f9c92d9d90742162004390cfeddb18c5fce",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w02/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w02/aufbau.webp",
+      "bytes": 140776,
+      "sha256": "4b51a33a2ad6d25e0a34cec534973726c81ed9095943e257add1f830f861484b",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w02/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w02/fehler.webp",
+      "bytes": 123026,
+      "sha256": "9de3cff48497dc2c29dc430961892bdd1a80790f572805b788c5201456979d18",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w02/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w02/modell.glb",
+      "bytes": 461276,
+      "sha256": "1690c8c8b6ffab49bc4a28e4f37075fe424a9216ebd051ad98c213eb8239a2b5",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/w02/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w02/nah.webp",
+      "bytes": 123072,
+      "sha256": "26821dc1b9d6d010e3b745b2c9c476b59172c270d21e2b6f11d4dff5bf48b482",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w02/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w02/schnitt.webp",
+      "bytes": 107680,
+      "sha256": "538a4b9ec7dcddfdce312f3e0abddec791032ddb0e5b6635b40d8ca6c64930d9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w03/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w03/aufbau.webp",
+      "bytes": 140642,
+      "sha256": "1225e70072ca575bcc5f00e551acf9a163846a6c71a31aefb1466a3ddd21d3a9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w03/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w03/fehler.webp",
+      "bytes": 128706,
+      "sha256": "ddc7c50b04bd136f2af4b5715eebdfe8efbff7cf9a1ce95d20d68597c5779a8f",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w03/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w03/modell.glb",
+      "bytes": 376196,
+      "sha256": "f1ec24ec2c5a32527514982dbcef586a99fd370bb190508c3cdd2ae175bd3dc5",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/w03/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w03/nah.webp",
+      "bytes": 127834,
+      "sha256": "f1c354511f28b9bdcce341f2b6e7fd76f28846c46d616b6a1e9b1e13b77e65b9",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w03/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w03/schnitt.webp",
+      "bytes": 109468,
+      "sha256": "ea8133aefd97ae043b2bd08545c306843f538ee0b2f007c20dfd8242f1617084",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w04/aufbau.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w04/aufbau.webp",
+      "bytes": 134208,
+      "sha256": "6362edd8e141bc7db719a13ac84bdc475ff593ee025a9178e99805243a6bb303",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w04/fehler.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w04/fehler.webp",
+      "bytes": 121488,
+      "sha256": "bf718c3c4cc36e82430d8d3599c69435aeb774dc51ddf69c19281546a51df9cb",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w04/modell.glb",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w04/modell.glb",
+      "bytes": 340388,
+      "sha256": "58ed601cfcbd17c5a9b190a40faa282deabc4375955e61958f8e3b33d58c80ee",
+      "typ": "modell"
+    },
+    {
+      "id": "walmdach-falzziegel/w04/nah.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w04/nah.webp",
+      "bytes": 121360,
+      "sha256": "5f9b1b3aaf37ef62a6dab6fce3639149b3e56b5520005f01fc10284e6bf66893",
+      "typ": "bild"
+    },
+    {
+      "id": "walmdach-falzziegel/w04/schnitt.webp",
+      "url": "/dach-medien/v1/walmdach-falzziegel/w04/schnitt.webp",
+      "bytes": 107022,
+      "sha256": "59e560d30db0670c33b032fa7a972cc90a1467cf2ae9cc47c27a593d7b89291f",
+      "typ": "bild"
+    }
+  ]
+}
