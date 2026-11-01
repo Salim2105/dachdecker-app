@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { DachBetrachter, type DachBetrachterProps } from "@/components/dach3d/DachBetrachter";
 
 vi.mock("next/dynamic", () => ({ default: () => function CanvasProbe(props: { onBereit: () => void; onFehler: (m: string) => void; befehl: { art: string; nummer: number } }) {
@@ -19,7 +19,7 @@ beforeEach(() => {
   // getContext also has a WebGPU overload; this fake implements our WebGL probe.
   vi.spyOn(HTMLCanvasElement.prototype, "getContext").mockImplementation((() => context) as unknown as HTMLCanvasElement["getContext"]);
 });
-afterEach(() => { cleanup(); vi.restoreAllMocks(); vi.unstubAllGlobals(); });
+afterEach(() => { cleanup(); vi.useRealTimers(); vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
 describe("Dachbetrachter: Ausweichansicht und kontrollierte 3D-Nutzung", () => {
   it("zeigt dasselbe Lehrbild ohne WebGL und lädt keinen aktiven Betrachter", async () => {
@@ -66,6 +66,54 @@ describe("Dachbetrachter: Ausweichansicht und kontrollierte 3D-Nutzung", () => {
     expect(view.container.querySelector("img")?.getAttribute("src")).toBe("/richtig.webp");
     fireEvent.click(screen.getByRole("button", { name: "3D erneut versuchen" }));
     await screen.findByTestId("dach-canvas");
+  });
+  it("wechselt nach einer Minute ohne Bild zum Lehrbild, erlaubt einen frischen Versuch und beendet die Frist beim ersten Frame", async () => {
+    vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout"] });
+    const view = render(<DachBetrachter {...props()} />);
+    await act(async () => { await Promise.resolve(); });
+    expect(screen.getByTestId("dach-canvas")).toBeDefined();
+    act(() => vi.advanceTimersByTime(59_999));
+    expect(view.container.querySelector("figure")?.getAttribute("data-status")).toBe("3d-laedt");
+    act(() => vi.advanceTimersByTime(1));
+    expect(screen.queryByTestId("dach-canvas")).toBeNull();
+    expect(view.container.querySelector("img")?.getAttribute("src")).toBe("/richtig.webp");
+    expect(screen.getByRole("status").textContent).toContain("Eingaben bleiben verfügbar");
+    fireEvent.click(screen.getByRole("button", { name: "3D erneut versuchen" }));
+    await act(async () => { await Promise.resolve(); });
+    act(() => vi.advanceTimersByTime(59_999));
+    expect(screen.getByTestId("dach-canvas")).toBeDefined();
+    fireEvent.click(screen.getByRole("button", { name: "Zeichnung beendet" }));
+    expect(vi.getTimerCount()).toBe(0);
+    act(() => vi.advanceTimersByTime(60_000));
+    expect(view.container.querySelector("figure")?.getAttribute("data-status")).toBe("3d-bereit");
+    expect(screen.queryByRole("button", { name: "3D erneut versuchen" })).toBeNull();
+  });
+  it("verwirft Ladefristen bei Dachwechsel, verdecktem Tab, fester Ansicht und beim Schließen", async () => {
+    vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout"] });
+    let hidden = false;
+    vi.spyOn(document, "hidden", "get").mockImplementation(() => hidden);
+    const view = render(<DachBetrachter {...props()} />);
+    await act(async () => { await Promise.resolve(); });
+    act(() => vi.advanceTimersByTime(55_000));
+    view.rerender(<DachBetrachter {...props()} form="walmdach" />);
+    await act(async () => { await Promise.resolve(); });
+    act(() => vi.advanceTimersByTime(5_000));
+    expect(screen.getByTestId("dach-canvas")).toBeDefined();
+    expect(vi.getTimerCount()).toBe(1);
+    hidden = true; fireEvent(document, new Event("visibilitychange"));
+    expect(vi.getTimerCount()).toBe(0);
+    act(() => vi.advanceTimersByTime(60_000));
+    hidden = false; fireEvent(document, new Event("visibilitychange"));
+    await act(async () => { await Promise.resolve(); });
+    expect(screen.getByTestId("dach-canvas")).toBeDefined();
+    expect(vi.getTimerCount()).toBe(1);
+    fireEvent.click(screen.getByRole("button", { name: "Feste Ansicht" }));
+    expect(vi.getTimerCount()).toBe(0);
+    fireEvent.click(screen.getByRole("button", { name: "3D ansehen" }));
+    await act(async () => { await Promise.resolve(); });
+    expect(vi.getTimerCount()).toBe(1);
+    view.unmount();
+    expect(vi.getTimerCount()).toBe(0);
   });
   it("zeigt im Prüfmodus weder aktives 3D noch erklärende Alternativtexte", async () => {
     const view = render(<DachBetrachter {...props()} pruefmodus />);

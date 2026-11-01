@@ -81,6 +81,16 @@ export function DachBetrachter({ form, deckung, detailId, ansicht, phase, schrit
     queueMicrotask(() => { if (aktiv) { setRundgang(false); setBefehl({ art: "reset", nummer: 0 }); } });
     return () => { aktiv = false; };
   }, [url, dreid, reduzierteBewegung]);
+  useEffect(() => {
+    if (!dreid || bereit) return;
+    // A blocked driver or unfinished shader compile must not leave the
+    // learner waiting forever. The same-scene image stays available, and a
+    // deliberate retry starts a fresh deadline without changing any answers.
+    const deadline = window.setTimeout(() => {
+      setModellFehler({ url, text: "Das 3D-Modell hat innerhalb einer Minute kein Bild gezeichnet." });
+    }, 60_000);
+    return () => window.clearTimeout(deadline);
+  }, [dreid, bereit, url, versuch]);
 
   function kommando(art: DachBefehl) {
     setBefehl(v => ({ art, nummer: v.nummer + 1 }));
