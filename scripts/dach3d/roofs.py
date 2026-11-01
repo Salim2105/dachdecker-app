@@ -14,6 +14,100 @@ STEEP=['s%02d'%i for i in range(1,12)]
 HIP=['s%02d'%i for i in (1,2,3,5,7,8,9,11)]+['w%02d'%i for i in range(1,5)]
 FLAT=['f%02d'%i for i in range(1,10)]
 EQUIP=['a%02d'%i for i in range(1,5)]
+STUDIO=False
+
+def studio_surface_normals(obj,normal):
+    # Read the face normals before changing any smoothing flags. Interleaving
+    # reads with RNA writes repeatedly invalidates Blender's normal cache on
+    # the large Biber batches and makes model production unnecessarily slow.
+    flags=[face.normal.dot(normal)>.7 for face in obj.data.polygons]
+    obj.data.polygons.foreach_set('use_smooth',flags)
+
+def profiled_tile_batch(verts,faces,polygons,n,u,thickness=.012):
+    """A formed ceramic surface with joined normals and real visible foot edges.
+
+    Adjacent profile strips share their upper vertices. Their internal edges
+    never acquire artificial vertical walls; only the tile silhouette does.
+    """
+    lookup={};boundary={}
+    def key(p):return tuple(round(float(v),6) for v in p)
+    def top(p):
+      k=key(p)
+      if k not in lookup:lookup[k]=len(verts);verts.append(Vector(p))
+      return lookup[k]
+    for poly in polygons:
+      if len(poly)<3:continue
+      faces.append(tuple(top(p) for p in poly))
+      for i,p in enumerate(poly):
+        q=poly[(i+1)%len(poly)];k=tuple(sorted((key(p),key(q))))
+        if k in boundary:del boundary[k]
+        else:boundary[k]=(Vector(p),Vector(q))
+    head=max((Vector(p).dot(u) for poly in polygons for p in poly),default=0)
+    for a,b in boundary.values():
+      if abs(a.dot(u)-head)<.00001 and abs(b.dot(u)-head)<.00001:continue
+      k=len(verts);verts.extend([a,b,b-n*thickness,a-n*thickness]);faces.append((k,k+1,k+2,k+3))
+
+def ceramic_profile(p,h,u,n,W,L,biber=False):
+    if biber:
+      # Overview LOD keeps the six-point rounded silhouette used by v1. More
+      # subdivisions on thousands of tiny noses exceed the mobile budget;
+      # the individual teaching tiles retain their full curved outline.
+      outline=[(-W/2,L),(W/2,L),(W/2,.06),(W*.25,0),(-W*.25,0),(-W/2,.06)]
+      return [list(reversed([p+h*a+u*b+n*(.021*(1-b/L)) for a,b in outline]))]
+    # The shallow pan, side interlock and softly raised roll are the actual
+    # tile cross-section, rather than two bars applied onto a flat rectangle.
+    cross=[(-.50,.024),(-.43,.031),(-.35,.012),(-.22,.002),(.12,.002),(.30,.012),(.39,.034),(.47,.036),(.50,.019)]
+    return [[p+h*(a*W)+u*b+n*(height+.025*(1-b/L))
+      for a,height,b in [(x,z,0),(xx,zz,0),(xx,zz,L),(x,z,L)]]
+      for (x,z),(xx,zz) in zip(cross,cross[1:])]
+
+def studio_wall(name,axis,outer,span,height,windows,M):
+    """A masonry elevation with genuine apertures, reveals and inset glazing."""
+    sign=1 if outer>0 else -1;thick=.22;lo,hi=-span/2,span/2
+    def point(along,depth,z):return (outer-sign*depth,along,z) if axis=='x' else (along,outer-sign*depth,z)
+    def piece(label,a,b,z0,z1,depth=thick,mat='plaster',setback=0):
+      if b-a<.0001 or z1-z0<.0001:return
+      size=(depth,b-a,z1-z0) if axis=='x' else (b-a,depth,z1-z0)
+      return box(name+' · '+label,point((a+b)/2,setback+depth/2,(z0+z1)/2),size,M[mat],'g02','tragwerk',0,bevel=.004 if mat=='plaster' else .006)
+    sill=.96;top=2.39;width=1.42
+    piece('Mauerwerk unter Öffnungen',lo,hi,.28,sill)
+    piece('Sturzbereich',lo,hi,top,height)
+    cursor=lo
+    for i,center in enumerate(windows):
+      left,right=center-width/2,center+width/2
+      piece('Pfeiler '+str(i),cursor,left,sill,top);cursor=right
+      # Each jamb's depth is visible because no wall remains behind the glass.
+      piece('Innenraum hinter Glas',left+.04,right-.04,sill+.04,top-.04,.018,'inside',.36)
+      frame=.052;glassDepth=.105
+      for edge in [left+.045,right-.045]:piece('Fensterprofil seitlich',edge-frame/2,edge+frame/2,sill+.035,top-.035,.068,'steel',.065)
+      for z in [sill+.045,top-.045]:piece('Fensterprofil waagerecht',left+.025,right-.025,z-frame/2,z+frame/2,.068,'steel',.065)
+      piece('Fenstermittelprofil',center-.016,center+.016,sill+.06,top-.06,.07,'steel',.06)
+      for aa,bb in [(left+.072,center-.021),(center+.021,right-.072)]:piece('Verglasung',aa,bb,sill+.072,top-.072,.008,'glass',glassDepth)
+      # Sill and top drip project beyond the plaster, with physically readable edges.
+      piece('Fensterbank',left-.055,right+.055,sill-.035,sill-.01,.40,'zinc',-.15)
+      piece('Sturz Tropfkante',left-.025,right+.025,top+.008,top+.022,.09,'plaster',-.027)
+    piece('Letzter Pfeiler',cursor,hi,sill,top)
+
+def studio_house_body(M,flat=False):
+    hx,hy,height=(4.5,5.5,3.3) if flat else (4.3,5.3,3.1)
+    box('Bodenplatte',(0,0,.22),(hx*2+.04,hy*2+.04,.22),M['concrete'],'g02','tragwerk',0,bevel=.012)
+    for sy in [-1,1]:studio_wall('Fassade Giebelseite '+str(sy),'y',sy*hy,hx*2,height,[-2.36,0,2.36],M)
+    for sx in [-1,1]:studio_wall('Fassade Traufseite '+str(sx),'x',sx*hx,hy*2,height,[-3.62,-1.22,1.22,3.62],M)
+    # The elevations consist of separate closed masonry pieces around their
+    # apertures. Their perpendicular end caps otherwise coincide at the four
+    # outside corners, producing black ray-tracing/self-shadow seams. A closed
+    # plaster return covers this joint, with a 6 mm projection and the same
+    # finish as the adjacent elevations; no glass or window hole is covered.
+    corner=.235;projection=.006
+    for sx in [-1,1]:
+      for sy in [-1,1]:
+        box('Geschlossener Putzeckverband '+str(sx)+' '+str(sy),
+            (sx*(hx+projection-corner/2),sy*(hy+projection-corner/2),(height+.28)/2),
+            (corner,corner,height-.28),M['plaster'],'g02','tragwerk',0,bevel=.004)
+    # Four modest plinth strips and a thin shadow line articulate the building
+    # without adding landscape, unrelated props or a toy-like oversized base.
+    for x in [-hx,hx]:box('Sockel längs '+str(x),(x,0,.25),(.23,hy*2+.04,.37),M['concrete'],'g02','tragwerk',0,bevel=.008)
+    for y in [-hy,hy]:box('Sockel quer '+str(y),(0,y,.25),(hx*2+.04,.23,.37),M['concrete'],'g02','tragwerk',0,bevel=.008)
 
 def shell(name,polygon,thickness,mat,detail_id,layer,step=0,normal=(0,0,1)):
     n=Vector(normal).normalized()*thickness; low=[Vector(p) for p in polygon]; high=[p+n for p in low]
@@ -69,6 +163,16 @@ def roof_tiles(side,hip,biber,M):
         # made the roof resemble long metal strips instead of separate tiles.
         laprise=.031 if biber else .024
         poly=[p+h*a+u*b+n*(laprise*(1-b/L)) for a,b in outline]
+        if STUDIO:
+          pieces=[]
+          for pp in ceramic_profile(p,h,u,n,W,L,biber):
+            pp=clip(pp,lambda q:length/2-q.y);pp=clip(pp,lambda q:q.y+length/2)
+            pp=clip(pp,lambda q:side*q.x+.07)
+            if hip:pp=clip(pp,lambda q:hipridge+(length/2-hipridge)*(abs(q.x)/half)-abs(q.y))
+            if len(pp)>2:pieces.extend(without_rectangle(pp,2.45,3.65,2.59,3.85) if side>0 else [pp])
+          group=1 if rnd.random()<.06 else 0;v,f=batches[group]
+          if pieces:profiled_tile_batch(v,f,pieces,n,u)
+          continue
         poly=clip(poly,lambda q:length/2-q.y);poly=clip(poly,lambda q:q.y+length/2)
         poly=clip(poly,lambda q:side*q.x+.07)
         if hip:
@@ -87,7 +191,9 @@ def roof_tiles(side,hip,biber,M):
               strips=without_rectangle(strip,2.45,3.65,2.59,3.85) if side>0 else [strip]
               for fragment in strips:batch_add(v,f,fragment,n,.009,u)
     for i,(v,f)in enumerate(batches):
-      if v:mesh('Deckziegel '+('Biber'if biber else'Falz')+' Dachfläche '+str(side)+' Nuance'+str(i),v,f,M['ceramic_dark'if i else'ceramic'],'s01','deckung',4)
+      if v:
+        ob=mesh('Deckziegel '+('Biber'if biber else'Falz')+' Dachfläche '+str(side)+' Nuance'+str(i),v,f,M['ceramic_dark'if i else'ceramic'],'s01','deckung',4)
+        if STUDIO:studio_surface_normals(ob,n)
     if hip:
       # The triangular hipped end planes are independently tiled, with real clipped edge pieces.
       run=length/2-hipridge;u0=Vector((0,-side*run,rise)).normalized();h0=Vector((1,0,0));n0=h0.cross(u0)
@@ -98,9 +204,18 @@ def roof_tiles(side,hip,biber,M):
         along=-half+c*breadth+((r%2)*breadth*.5 if biber else 0);p=Vector((along,side*length/2,eave))+u0*(r*pitch)+n0*.115
         outline=[(-W/2,L),(W/2,L),(W/2,.045),(W*.25,0),(-W*.25,0),(-W/2,.045)] if biber else [(-W/2,L),(W/2,L),(W/2,0),(-W/2,0)]
         poly=[p+h0*a+u0*b+n0*((.031 if biber else .024)*(1-b/L)) for a,b in outline]
+        if STUDIO:
+          pieces=[]
+          for pp in ceramic_profile(p,h0,u0,n0,W,L,biber):
+            pp=clip(pp,lambda q:half*(abs(q.y)-hipridge)/run-abs(q.x));pp=clip(pp,lambda q:side*q.y-hipridge)
+            if len(pp)>2:pieces.append(pp)
+          if pieces:profiled_tile_batch(v,f,pieces,n0,u0)
+          continue
         poly=clip(poly,lambda q:half*(abs(q.y)-hipridge)/run-abs(q.x));poly=clip(poly,lambda q:side*q.y-hipridge)
         if len(poly)>2:batch_add(v,f,poly,n0,.014,u0)
-      if v:mesh('Walmfläche mit Grat-Zuschnitten '+str(side),v,f,M['ceramic'],'w04','deckung',4)
+      if v:
+        ob=mesh('Walmfläche mit Grat-Zuschnitten '+str(side),v,f,M['ceramic'],'w04','deckung',4)
+        if STUDIO:studio_surface_normals(ob,n0)
 
 def gutter(name,a,b,M,detail='s03'):
     a,b=Vector(a),Vector(b);d=(b-a).normalized();side=Vector((d.y,-d.x,0));radius=.16;verts=[];faces=[]
@@ -135,12 +250,22 @@ def dormer_deck(side,biber,M):
         p=Vector((x,center+side,edge))+u*(row*pitch)+n*.065
         outline=[(-W/2,L),(W/2,L),(W/2,.045),(W*.25,0),(-W*.25,0),(-W/2,.045)] if biber else [(-W/2,L),(W/2,L),(W/2,0),(-W/2,0)]
         poly=[p+h*a+u*b+n*((.031 if biber else .024)*(1-b/L)) for a,b in outline]
+        if STUDIO:
+          pieces=[]
+          for pp in ceramic_profile(p,h,u,n,W,L,biber):
+            pp=clip(pp,lambda q:front-q.x)
+            pp=clip(pp,lambda q:q.z-(6.13-2.65*q.x/4.75))
+            pp=clip(pp,lambda q:side*(q.y-center));pp=clip(pp,lambda q:1.02-side*(q.y-center))
+            if len(pp)>2:pieces.append(pp)
+          if pieces:profiled_tile_batch(verts,faces,pieces,n,u)
+          continue
         poly=clip(poly,lambda q:front-q.x)
         poly=clip(poly,lambda q:q.z-(6.13-2.65*q.x/4.75))
         poly=clip(poly,lambda q:side*(q.y-center))
         poly=clip(poly,lambda q:1.02-side*(q.y-center))
         if len(poly)>2:batch_add(verts,faces,poly,n,.012,u)
-    mesh('Gaubendeckung '+('Biber-Doppeldeckung' if biber else 'Falzziegel')+' '+str(side),verts,faces,M['ceramic'],'s10','deckung',4)
+    ob=mesh('Gaubendeckung '+('Biber-Doppeldeckung' if biber else 'Falzziegel')+' '+str(side),verts,faces,M['ceramic'],'s10','deckung',4)
+    if STUDIO:studio_surface_normals(ob,n)
 
 def downpipe(x,y,z,M,detail='s03'):
     # Linked bevelled curves make bends continuous, with visible sleeve rings.
@@ -179,12 +304,14 @@ def solar_panel(name,center,u,h,M,detail='a01',flat=False):
 
 def steep_house(hip,biber,M):
     e=3.48;r=2.65;ridgeZ=e+r;half=4.75;length=11.5;hr=2.2
-    box('Putzkörper Erdgeschoss',(0,0,1.55),(8.6,10.6,3.1),M['plaster'],'g02','tragwerk',0,bevel=.045)
-    box('Sockelzone',(0,0,.23),(8.72,10.72,.4),M['concrete'],'g02','tragwerk',0)
+    if STUDIO:studio_house_body(M)
+    else:
+      box('Putzkörper Erdgeschoss',(0,0,1.55),(8.6,10.6,3.1),M['plaster'],'g02','tragwerk',0,bevel=.045)
+      box('Sockelzone',(0,0,.23),(8.72,10.72,.4),M['concrete'],'g02','tragwerk',0)
     if not hip:
       for sy in[-1,1]:shell('Giebelwand', [(-4.3,sy*5.3,3.08),(4.3,sy*5.3,3.08),(0,sy*5.3,6.05)],.12,M['plaster'],'g02','tragwerk',normal=(0,sy,0))
     # Real openings and sober glazing on the visible elevations.
-    for x in[-2.3,.0,2.3]:
+    for x in [] if STUDIO else [-2.3,.0,2.3]:
       box('Fensterrahmen Front',(x,-5.325,1.75),(1.38,.11,1.35),M['steel'],'g02','tragwerk',0,bevel=.015)
       box('Fensterglas Front',(x,-5.389,1.75),(1.18,.022,1.16),M['glass'],'g02','tragwerk',0,bevel=.005)
       box('Fensterbank Front',(x,-5.46,1.05),(1.51,.32,.04),M['zinc'],'g02','tragwerk',0,bevel=.005)
@@ -235,12 +362,24 @@ def steep_house(hip,biber,M):
           box('Ortgangziegel Seitenabschluss',(x,sy*5.81,z),(.34,.11,.13),M['ceramic'],'s04','deckung',4,bevel=.013,rotation=(0,sx*math.atan2(r,half),0))
       # Satteldachgaube: intersection with the main roof determines both valley lines.
       center=-1;front=4.02;top=5.95;edge=5.10
-      shell('Gaubenfront',[ (front,-2,3.9),(front,0,3.9),(front,0,edge),(front,-1,top),(front,-2,edge)],.08,M['plaster'],'s10','tragwerk',1,normal=(1,0,0))
+      gaubenfront=shell('Gaubenfront',[ (front,-2,3.9),(front,0,3.9),(front,0,edge),(front,-1,top),(front,-2,edge)],.08,M['plaster'],'s10','tragwerk',1,normal=(1,0,0))
+      if STUDIO:
+        bpy.ops.mesh.primitive_cube_add(size=1,location=(front+.04,-1,4.62));cutter=bpy.context.object;cutter.dimensions=(.5,1.26,.95)
+        bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)
+        bpy.context.view_layer.objects.active=gaubenfront;mod=gaubenfront.modifiers.new('Echte Gaubenfensteröffnung','BOOLEAN');mod.operation='DIFFERENCE';mod.object=cutter;bpy.ops.object.modifier_apply(modifier=mod.name);bpy.data.objects.remove(cutter,do_unlink=True)
       for yy in[-2,0]:
         back=(ridgeZ-edge)/(r/half)
         shell('Gaubenwange '+str(yy),[(back,yy,edge),(front,yy,e+r*(1-front/half)),(front,yy,edge)],.07,M['plaster'],'s10','tragwerk',1,normal=(0,1,0))
-      box('Gaubenfenster Rahmen',(front+.09,-1,4.62),(.08,1.34,1.03),M['steel'],'s10','deckung',3,bevel=.012)
-      box('Gaubenfenster Glas',(front+.139,-1,4.62),(.015,1.18,.87),M['glass'],'s10','deckung',4,bevel=.003)
+      if STUDIO:
+        for yy in [-1.62,-.38]:box('Gaubenfenster Seitenprofil',(front+.04,yy,4.62),(.10,.048,.94),M['steel'],'s10','deckung',3,bevel=.007)
+        for zz in [4.17,5.07]:box('Gaubenfenster Querprofil',(front+.04,-1,zz),(.10,1.29,.048),M['steel'],'s10','deckung',3,bevel=.007)
+        box('Gaubenfenster Mittelprofil',(front+.035,-1,4.62),(.09,.027,.88),M['steel'],'s10','deckung',3,bevel=.004)
+        box('Gaubenfenster Glas',(front+.026,-1,4.62),(.008,1.19,.84),M['glass'],'s10','deckung',4,bevel=.002)
+        box('Gaubenfenster Innenraum',(front-.23,-1,4.62),(.012,1.23,.91),M['inside'],'s10','tragwerk',1,bevel=0)
+        box('Gaubenfenster Bank',(front+.11,-1,4.14),(.32,1.37,.025),M['zinc'],'s10','deckung',4,bevel=.004)
+      else:
+        box('Gaubenfenster Rahmen',(front+.09,-1,4.62),(.08,1.34,1.03),M['steel'],'s10','deckung',3,bevel=.012)
+        box('Gaubenfenster Glas',(front+.139,-1,4.62),(.015,1.18,.87),M['glass'],'s10','deckung',4,bevel=.003)
       for sy in[-1,1]:
         yy=center+sy;back_edge=(ridgeZ-edge)/(r/half);back_top=(ridgeZ-top)/(r/half)
         poly=[(back_top,center,top),(front+.16,center,top),(front+.16,yy,edge),(back_edge,yy,edge)]
@@ -260,8 +399,12 @@ def steep_house(hip,biber,M):
     shell('Dachfenster Glas',[p+h*(-.46)+u*(-.5)+n*.12,p+h*.46-u*.5+n*.12,p+h*.46+u*.5+n*.12,p-h*.46+u*.5+n*.12],.008,M['glass'],'s09','deckung',4,n)
     # Chimney with each apron/back/side flashing represented as metal parts.
     cx=-1.55;cy=1.2;cz=ridgeZ-r*abs(cx)/half
-    box('Schornsteinschaft',(cx,cy,cz+.85),(.72,.86,1.9),M['plaster'],'s08','tragwerk',1)
+    box('Schornsteinschaft',(cx,cy,cz+.85),(.72,.86,1.9),M['plaster'],'s08','tragwerk',1,bevel=.008 if STUDIO else .02)
     box('Schornsteinkopf Abdeckung',(cx,cy,cz+1.84),(.88,1.02,.11),M['zinc'],'s08','deckung',5)
+    if STUDIO:
+      for yy in [cy-.17,cy+.17]:
+        cylinder('Schornstein Rauchrohr',(cx,yy,cz+1.92),.12,.10,M['steel'],'s08','deckung',5,vertices=16)
+        cylinder('Schornstein Mündung dunkel',(cx,yy,cz+1.974),.10,.006,M['inside'],'s08','deckung',5,vertices=16)
     for dx,dy,sx,sy in[(0,-.53,1.04,.2),(0,.53,1.04,.2),(-.51,0,.2,1.02),(.51,0,.2,1.02)]:
       box('Schornstein Anschlussblech',(cx+dx,cy+dy,cz+.10),(sx,sy,.12),M['zinc'],'s08','deckung',3,bevel=.01)
     cylinder('Entlüftungsrohr',(1.05,1.42,ridgeZ-r*1.05/half+.31),.10,.70,M['steel'],'s11','deckung',3)
@@ -303,8 +446,10 @@ def steep_house(hip,biber,M):
     for i,p in enumerate(water):o=empty_hotspot('wasser'+str(i),p);o.name='Wasser_'+str(i);o['water_step']=i
 
 def flat_house(M):
-    box('Putzkörper Flachdach',(0,0,1.65),(9,11,3.3),M['plaster'],'g02','tragwerk',0,bevel=.045)
-    box('Sockel Flachdach',(0,0,.22),(9.1,11.1,.36),M['concrete'],'g02','tragwerk',0)
+    if STUDIO:studio_house_body(M,True)
+    else:
+      box('Putzkörper Flachdach',(0,0,1.65),(9,11,3.3),M['plaster'],'g02','tragwerk',0,bevel=.045)
+      box('Sockel Flachdach',(0,0,.22),(9.1,11.1,.36),M['concrete'],'g02','tragwerk',0)
     box('Tragschale',(0,0,3.30),(9.15,11.15,.22),M['concrete'],'g02','tragwerk',0)
     box('Dampfbremse durchgehende Ebene',(0,0,3.423),(9.08,11.08,.012),M['seal'],'g04','luftdichtheit',1,bevel=0)
     for sign in[-1,1]:box('Dämmfeld '+str(sign),(sign*2.28,0,3.53),(4.49,11.05,.20),M['insulation'],'g03','daemmung',2,bevel=.006)
@@ -403,8 +548,10 @@ def flat_house(M):
     water=[(x,y,surface(x,y)+.045) for x,y in[(-1.8,2.4),(-2.5,.8),(-3.1,-2),(-3.5,-4.2)]]+[(-3.5,-4.2,2.8)]
     for i,p in enumerate(water):o=empty_hotspot('wasser'+str(i),p);o.name='Wasser_'+str(i);o['water_step']=i
 
-def build(variant,samples=24,width=1200,model_only=False):
-    reset_scene();M=make_materials();isflat=variant.startswith('flachdach');hip=variant.startswith('walmdach');biber=variant.endswith('biber-doppel')
+def build(variant,samples=24,width=1200,model_only=False,asset_version=1):
+    global STUDIO
+    STUDIO=asset_version>=2
+    reset_scene();M=make_studio_materials() if STUDIO else make_materials();isflat=variant.startswith('flachdach');hip=variant.startswith('walmdach');biber=variant.endswith('biber-doppel')
     if isflat:flat_house(M)
     else:steep_house(hip,biber,M)
     # Small overview bevels need one segment at mobile scale. Detailed teaching
@@ -414,22 +561,23 @@ def build(variant,samples=24,width=1200,model_only=False):
         for mod in ob.modifiers:
           if mod.type=='BEVEL':mod.segments=1
     join_semantic_meshes()
-    root=os.path.join(ROOT,'public/dach-medien/v1',variant);os.makedirs(root,exist_ok=True)
+    root=os.path.join(ROOT,'public/dach-medien/v'+str(asset_version),variant);os.makedirs(root,exist_ok=True)
     export_glb(os.path.join(root,'uebersicht.glb'))
     if model_only:
       print('DACH_OVERVIEW_MODEL '+variant,flush=True)
       return
     ground=box('Neutraler Renderboden',(0,0,-.055),(200,200,.1),M['ground'],bevel=0);ground['render_only']=True
-    setup_render((16,-20,14 if not isflat else 15),(0,0,2.9 if not isflat else 3.1),(width,round(width*2/3)),samples)
-    render_webp(os.path.join(root,'uebersicht.webp'))
-    image=bpy.data.images.load(os.path.join(root,'uebersicht.webp'),check_existing=False);image.scale(480,320);preview=os.path.join(ROOT,'public/dach-vorschau/v1',variant,'uebersicht.webp');os.makedirs(os.path.dirname(preview),exist_ok=True);image.filepath_raw=preview;image.file_format='WEBP';image.save()
+    setup=setup_studio_render if STUDIO else setup_render
+    setup((16,-20,14 if not isflat else 15),(0,0,2.9 if not isflat else 3.1),(width,round(width*2/3)),samples)
+    (render_studio_webp if STUDIO else render_webp)(os.path.join(root,'uebersicht.webp'))
+    image=bpy.data.images.load(os.path.join(root,'uebersicht.webp'),check_existing=False);image.scale(480,320);preview=os.path.join(ROOT,'public/dach-vorschau/v'+str(asset_version),variant,'uebersicht.webp');os.makedirs(os.path.dirname(preview),exist_ok=True);image.filepath_raw=preview;image.file_format='WEBP';image.save()
     stats={'variant':variant,'objects':len([o for o in bpy.context.scene.objects if o.type=='MESH' and not o.get('render_only')]),'triangles':sum(len(p.vertices)-2 for o in bpy.context.scene.objects if o.type=='MESH' and not o.get('render_only')for p in o.data.polygons),'bytes':os.path.getsize(os.path.join(root,'uebersicht.glb'))}
     print('DACH_OVERVIEW_STATS '+json.dumps(stats),flush=True)
-    production_record('overview',variant,None,{'samples':samples,'width':width},overview_files(variant))
+    if asset_version==1:production_record('overview',variant,None,{'samples':samples,'width':width},overview_files(variant))
 
 if __name__=='__main__':
     args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[]
-    parser=argparse.ArgumentParser();parser.add_argument('variants',nargs='*',default=['all']);parser.add_argument('--samples',type=int,default=24);parser.add_argument('--width',type=int,default=1200);parser.add_argument('--model-only',action='store_true');opts=parser.parse_args(args)
+    parser=argparse.ArgumentParser();parser.add_argument('variants',nargs='*',default=['all']);parser.add_argument('--samples',type=int,default=24);parser.add_argument('--width',type=int,default=1200);parser.add_argument('--model-only',action='store_true');parser.add_argument('--asset-version',type=int,choices=[1,2],default=1);opts=parser.parse_args(args)
     for variant in VARIANTS if not opts.variants or opts.variants[0]=='all' else opts.variants:
       if variant not in VARIANTS:raise ValueError(variant)
-      build(variant,opts.samples,opts.width,opts.model_only)
+      build(variant,opts.samples,opts.width,opts.model_only,opts.asset_version)

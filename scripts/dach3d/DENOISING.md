@@ -7,7 +7,11 @@ Der optionale externe Produktionsschritt verwendet Intel OpenImageDenoise 1.4.3 
 ```bash
 python3 -m venv /tmp/dach-denoise-env
 /tmp/dach-denoise-env/bin/pip install -r scripts/dach3d/denoise-requirements.txt
+export DACH_DENOISE_PYTHON=/tmp/dach-denoise-env/bin/python
 ```
+
+`render_studio_webp` verwendet ausdrücklich diesen Interpreter. Blenders eigenes
+Python und das System-Python müssen die Produktionspakete nicht installiert haben.
 
 `oidn`/Intel OIDN verwenden Apache-2.0, OpenEXR BSD-3-Clause, NumPy BSD-3-Clause und Pillow HPND. Die Bibliotheken werden nur als lokale Produktionswerkzeuge verwendet und nicht in Website-Dateien oder GLBs eingebettet. Die gerenderten Bilder und Geometrien bleiben eigene Arbeiten.
 

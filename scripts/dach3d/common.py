@@ -81,6 +81,61 @@ def make_materials():
     }
     return _MATERIALS
 
+def make_studio_materials():
+    """A separate material set: published v1 teaching assets stay reproducible.
+
+    The studio surfaces use restrained colour variation; texture relief belongs
+    to micrometre roughness, not a coarse noise overlay on every colour map.
+    """
+    definitions={
+      'ceramic':('Keramik naturrot',(.39,.105,.045,1),.44,0),
+      'ceramic_dark':('Keramik leichte Brennnuance',(.355,.088,.039,1),.46,0),
+      'wood':('Fichte warme Schnittfläche',(.43,.30,.17,1),.64,0),
+      'metal':('Aluminium fein eloxiert',(.43,.47,.48,1),.27,.86),
+      'zinc':('Titanzink seidenmatt',(.43,.49,.51,1),.33,.84),
+      'membrane':('Dachbahn Anthrazit',(.055,.065,.069,1),.91,0),
+      'insulation':('Mineralische Dämmplatte',(.68,.51,.22,1),.97,0),
+      'plaster':('Mineralputz warmweiss',(.73,.715,.68,1),.86,0),
+      'concrete':('Mineralischer Sockel',(.45,.47,.45,1),.88,0),
+      'glass':('Fensterglas neutral',(.17,.24,.26,1),.12,.12),
+      'pv':('Monokristalline Solarzellen',(.016,.027,.033,1),.20,.35),
+      'steel':('Pulverbeschichtung Graphit',(.045,.052,.055,1),.36,.58),
+      'seal':('Luftdichtung im Lehrschnitt',(.13,.31,.30,1),.83,0),
+      'ground':('Studio Kalkstein',(.73,.72,.68,1),.94,0),
+      'inside':('Dunkler Innenraum',(.065,.073,.070,1),.95,0),
+    }
+    result={}
+    for key,(title,color,roughness,metallic) in definitions.items():
+      mat=material('Studio · '+title,color,roughness,metallic,transmission=.16 if key=='glass' else 0)
+      bs=next(n for n in mat.node_tree.nodes if n.type=='BSDF_PRINCIPLED')
+      bs.inputs['Specular IOR Level'].default_value=.38
+      if key=='ceramic' or key=='ceramic_dark':
+        bs.inputs['Coat Weight'].default_value=.055;bs.inputs['Coat Roughness'].default_value=.28
+      if key in ['ceramic','ceramic_dark','wood','zinc','plaster','concrete','pv','membrane']:
+        name='StudioColour_'+key
+        image=bpy.data.images.get(name)
+        if image is None:
+          image=bpy.data.images.new(name,width=256,height=256,alpha=False);pixels=[];randomizer=random.Random(1981+sum(map(ord,key)))
+          for y in range(256):
+            for x in range(256):
+              variation=.008*math.sin(x*.13)*math.sin(y*.09)+randomizer.uniform(-.004,.004)
+              if key=='wood':variation+=.055*math.sin(x*.25+math.sin(y*.024))+.018*math.sin(x*.91+y*.012)
+              if key=='zinc':variation+=.006*math.sin(y*.80)
+              if key=='pv':variation+=.012 if x%42<1 or y%64<1 else 0
+              pixels.extend([max(.001,min(.99,c*(1+variation))) for c in color[:3]]+[1])
+          image.pixels.foreach_set(pixels);os.makedirs(_TEXTURE_DIR,exist_ok=True)
+          image.filepath_raw=os.path.join(_TEXTURE_DIR,name+'.png');image.file_format='PNG';image.save()
+        tex=mat.node_tree.nodes.new('ShaderNodeTexImage');tex.image=image;mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color'])
+      if key in ['ceramic','ceramic_dark','plaster','concrete','wood','zinc','membrane']:
+        nodes=mat.node_tree.nodes;links=mat.node_tree.links
+        tex=nodes.new('ShaderNodeTexNoise');tex.inputs['Scale'].default_value=120 if key!='wood' else 5
+        tex.inputs['Detail'].default_value=2;tex.inputs['Roughness'].default_value=.6
+        bump=nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.18
+        bump.inputs['Distance'].default_value=.00045 if key in ['ceramic','ceramic_dark','plaster'] else .0008
+        links.new(tex.outputs['Fac'],bump.inputs['Height']);links.new(bump.outputs['Normal'],bs.inputs['Normal'])
+      result[key]=mat
+    return result
+
 def _mat(obj, mat):
     if isinstance(mat,str): mat=make_materials()[mat]
     if mat: obj.data.materials.append(mat)
@@ -138,6 +193,53 @@ def setup_render(camera_location, target, resolution=(960,640), samples=24):
     for name,loc,energy,size in [('Großes weiches Tageslicht',(-8,-10,15),1800,8),('Heller Reflektor',(8,-2,10),1100,7),('Rücklicht',(0,9,14),1500,6)]:
       bpy.ops.object.light_add(type='AREA',location=loc); light=bpy.context.object; light.name=name; light.data.energy=energy; light.data.shape='DISK'; light.data.size=size; light.rotation_euler=(Vector(target)-light.location).to_track_quat('-Z','Y').to_euler()
     return cam
+
+def setup_studio_render(camera_location,target,resolution=(1440,960),samples=96):
+    cam=setup_render(camera_location,target,resolution,samples)
+    scene=bpy.context.scene;scene.view_settings.exposure=.40
+    scene.cycles.max_bounces=8;scene.cycles.transparent_max_bounces=6
+    scene.cycles.adaptive_threshold=.015
+    scene.world.node_tree.nodes['Background'].inputs[0].default_value=(.80,.84,.88,1)
+    scene.world.node_tree.nodes['Background'].inputs[1].default_value=.38
+    scene.view_layers[0].cycles.denoising_store_passes=True
+    # One directional soft key and broad reflectors keep architectural reveals
+    # readable. Excessively uniform lights made the old model look cardboard.
+    lights=[o for o in scene.objects if o.type=='LIGHT']
+    for light,loc,power,size in zip(lights,[(5,-9,15),(-10,-1,8),(1,10,14)],[2400,650,1300],[7,11,6]):
+      light.location=loc;light.data.energy=power;light.data.size=size
+      light.rotation_euler=(Vector(target)-light.location).to_track_quat('-Z','Y').to_euler()
+    cam.data.lens=52
+    # Frame the full physical model, including low pipe bends. Fitting only
+    # its roof centre clipped the front plinth/pipe in the earlier poster.
+    from bpy_extras.object_utils import world_to_camera_view
+    bpy.context.view_layer.update()
+    points=[obj.matrix_world@Vector(corner) for obj in scene.objects
+            if obj.type in ['MESH','CURVE'] and not obj.get('render_only')
+            for corner in obj.bound_box]
+    target_vector=Vector(target)
+    for _ in range(30):
+      projected=[world_to_camera_view(scene,cam,p) for p in points]
+      if projected and all(.035<=p.x<=.965 and .035<=p.y<=.965 and p.z>0 for p in projected):break
+      cam.location=target_vector+(cam.location-target_vector)*1.025
+      cam.rotation_euler=(target_vector-cam.location).to_track_quat('-Z','Y').to_euler()
+      bpy.context.view_layer.update()
+    else:raise RuntimeError('Studio camera could not frame the complete roof within its margin')
+    return cam
+
+def render_studio_webp(path):
+    """Render linear HDR, denoise with real OIDN and apply Blender's AgX once."""
+    scene=bpy.context.scene;os.makedirs(os.path.dirname(path),exist_ok=True)
+    raw='/tmp/dach-studio-'+str(os.getpid())+'-raw.exr';clean=raw.replace('-raw.exr','-clean.exr')
+    scene.render.image_settings.file_format='OPEN_EXR_MULTILAYER';scene.render.image_settings.color_depth='32';scene.render.filepath=raw
+    bpy.ops.render.render(write_still=True)
+    denoise_python=os.environ.get('DACH_DENOISE_PYTHON','python3')
+    subprocess.run([denoise_python,os.path.join(ROOT,'scripts/dach3d/denoise.py'),raw,clean,'--threads','2'],check=True)
+    image=bpy.data.images.load(clean,check_existing=False)
+    scene.render.image_settings.file_format='WEBP';scene.render.image_settings.quality=94
+    image.save_render(path,scene=scene);bpy.data.images.remove(image)
+    for file in [raw,clean]:
+      try:os.remove(file)
+      except OSError:pass
 
 def export_glb(path):
     os.makedirs(os.path.dirname(path),exist_ok=True)
