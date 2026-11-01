@@ -1,4 +1,4 @@
-import { DACH_FORMEN, istMedienAsset, type DachPaket } from "@/lib/dach3dMedien";
+import { DACH_FORMEN, gehoertDachAssetZu, istMedienAsset, type DachPaket } from "@/lib/dach3dMedien";
 import type { MedienAsset } from "@/lib/dach3dTypen";
 
 /** Public, reproducible downloads are deliberately outside the private ZIP store. */
@@ -22,7 +22,7 @@ function cacheStorage(): CacheStorage {
   return caches;
 }
 function validPaket(p: DachPaket): boolean {
-  return !!p && DACH_FORMEN.includes(p.id) && typeof p.titel === "string" && Array.isArray(p.assets) && p.assets.length > 0 && p.assets.length < 10000 && p.assets.every(a => istMedienAsset(a) && (a.id.startsWith(`${p.id}-`) || a.id.startsWith("gemeinsam/"))) && new Set(p.assets.map(a => a.id)).size === p.assets.length && p.bytes === p.assets.reduce((s, a) => s + a.bytes, 0);
+  return !!p && DACH_FORMEN.includes(p.id) && typeof p.titel === "string" && Array.isArray(p.assets) && p.assets.length > 0 && p.assets.length < 10000 && p.assets.every(a => istMedienAsset(a) && gehoertDachAssetZu(a.id, p.id)) && new Set(p.assets.map(a => a.id)).size === p.assets.length && p.bytes === p.assets.reduce((s, a) => s + a.bytes, 0);
 }
 function validMarker(v: unknown): v is PaketMarker {
   return obj(v) && v.version === 1 && DACH_FORMEN.includes(v.id as DachPaket["id"]) && typeof v.am === "number" && Number.isFinite(v.am) && v.am >= 0 && Array.isArray(v.assets) && v.assets.length > 0 && v.assets.length < 10000 && v.assets.every(istMedienAsset) && new Set(v.assets.map(a => a.id)).size === v.assets.length;
@@ -138,7 +138,7 @@ export async function ladeDachPaket(paket: DachPaket, options: { signal?: AbortS
         const response = await fetch(asset.url, { signal: options.signal, credentials: "same-origin", cache: "no-store", redirect: "error" });
         const bytes = await lesen(response, asset, options.signal, n => { fortschritt.geladen += n; publish(); });
         if (await sha256(bytes) !== asset.sha256) throw new Error("Die heruntergeladene Mediendatei hat eine abweichende Prüfsumme. Das bisherige Paket bleibt erhalten.");
-        await stage.put(cacheKey, new Response(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer, { headers: { "Content-Type": asset.typ === "modell" ? "model/gltf-binary" : response.headers.get("Content-Type") ?? "image/webp", "Content-Length": String(asset.bytes), "X-Dach-Sha256": asset.sha256 } }));
+        await stage.put(cacheKey, new Response(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer, { headers: { "Content-Type": asset.typ === "modell" ? "model/gltf-binary" : asset.typ === "umgebung" ? "image/vnd.radiance" : response.headers.get("Content-Type") ?? "image/webp", "Content-Length": String(asset.bytes), "X-Dach-Sha256": asset.sha256 } }));
       }
       fortschritt.dateien++; publish();
     }

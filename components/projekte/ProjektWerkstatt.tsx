@@ -12,7 +12,7 @@ import { aktivitaetTexte } from "@/lib/aktivitaeten";
 import { DrawCard } from "@/components/aufgaben/DrawCard";
 import { PraxisVorbereitung } from "./PraxisVorbereitung";
 import { LernLink } from "@/components/LernLink";
-import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
+import { dachMedien } from "@/lib/dach3dMedien";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage, flushStorage } from "@/lib/lernSpeicher";
 import { getWerkstattEinheit } from "@/lib/werkstattInhalte";
@@ -78,8 +78,13 @@ export function ProjektWerkstatt() {
   if (auswahl === "praxis") return <PraxisVorbereitung/>;
   if (auswahl === "werkstatt-praxis-falzziegel" || auswahl === "werkstatt-praxis-biber-doppel") return <div><LernLink href="/projekte#werkstatt" className="mb-4 inline-flex min-h-11 items-center underline">← Alle Werkstatt-Lernpfade</LernLink><PraxisVorbereitung key={auswahl} initialThema={auswahl.replace("werkstatt-praxis-", "werkstatt-")}/></div>;
   if (auswahl === "werkstatt" || getWerkstattEinheit(auswahl)) return <WerkstattTraining einheitId={auswahl === "werkstatt" ? undefined : auswahl}/>;
+  const dachVorschau = dachMedien("steildach", "falzziegel");
   return <div>
-    <header className={styles.hero}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Planen. Verstehen. Handwerk üben.</h1><p>Wähle dein Angebot: Handgriffe in der Werkstatt verstehen, einen vollständigen Auftrag durchdenken oder die praktische Arbeit in Betrieb und Schule vorbereiten.</p><LernLink href="/projekte#werkstatt">Zum handwerklichen Werkstatttraining →</LernLink></div><PracticeArtwork art="baustelle"/></header>
+    <header className={`${styles.hero} ${styles.studioHero}`}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Planen. Verstehen. Handwerk üben.</h1><p>Erkunde das Dach als räumliches Modell, verstehe einzelne Handgriffe und arbeite dich durch vollständige Baustellenaufträge.</p><LernLink href="/projekte#werkstatt">Zum handwerklichen Werkstatttraining →</LernLink></div><figure className={styles.heroRoof}><LernLink href="/projekte#dach-entdecken" aria-label="3D-Dach entdecken: Modellvorschau öffnen">
+      {/* Own local render, with an offline thumbnail fallback. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={dachVorschau.hdPreview ?? dachVorschau.preview} alt="Gerendertes Lehrdach mit profilierten Ziegeln, Gaube, Fenster und Dachentwässerung" width={1440} height={960} onError={e => { if (e.currentTarget.getAttribute("src") !== dachVorschau.preview) e.currentTarget.src = dachVorschau.preview; }} />
+      <figcaption><span>3D-Lernstudio</span><strong>Das ganze Dach verstehen <span aria-hidden="true">↗</span></strong></figcaption></LernLink></figure></header>
     {navigationFehler && <p role="alert">{navigationFehler}</p>}
     <section className="werkstatt-karte mt-5" aria-labelledby="dach-entdecken-katalog"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>DAS GANZE DACH RÄUMLICH VERSTEHEN</span><h2 id="dach-entdecken-katalog" className="mt-2">3D-Dach entdecken</h2><p>Drei Lehrdächer, zwei Ziegeldeckungen und 34 Details: Bauteile auswählen, Schichten öffnen, Montage verfolgen und dein Verständnis prüfen.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#dach-entdecken">Mein Dach erkunden →</LernLink></section>
     <div className="werkstatt-karte mt-5"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>NEU · 20 EINHEITEN MIT INTERAKTIVEN ZEICHNUNGEN</span><h2 className="mt-2">Handwerk Schritt für Schritt verstehen</h2><p>Falzziegel und Biberschwanz-Doppeldeckung: messen, anzeichnen, einteilen, verlegen, Schnitt planen und die eigene Arbeit kontrollieren.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#werkstatt">Werkstatttraining öffnen →</LernLink></div>

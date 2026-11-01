@@ -31,7 +31,7 @@ function Umgebung() {
   const { gl, scene, invalidate } = useThree();
   useEffect(() => {
     const pmrem = new PMREMGenerator(gl), raum = new RoomEnvironment();
-    const fallback = pmrem.fromScene(raum, .055), abort = new AbortController();
+    const fallback = pmrem.fromScene(raum, .04), abort = new AbortController();
     let aktiv = true, natuerlich: WebGLRenderTarget | null = null;
     const vorher = scene.environment, vorherIntensity = scene.environmentIntensity, vorherDrehung = scene.environmentRotation.clone();
     scene.environment = fallback.texture; scene.environmentIntensity = .72; scene.background = new Color("#f2f2ee");

@@ -1,4 +1,5 @@
 import { getDachDetail } from "@/lib/dach3dInhalte";
+import { dachMedien } from "@/lib/dach3dMedien";
 import type { DachDeckung, DachForm, DachMedienRef } from "@/lib/dach3dTypen";
 import type { WerkstattAnsicht, WerkstattEinheit } from "@/lib/werkstattTypen";
 
@@ -31,7 +32,7 @@ const WERKSTATT_DETAILS: Record<string, string> = {
 export function werkstattDachMedium(e: Pick<WerkstattEinheit, "pfadId" | "slug">, ansicht: WerkstattAnsicht): DachMedienRef | null {
   const detailId = WERKSTATT_DETAILS[e.slug];
   if (!detailId) return null;
-  return { form: "steildach", deckung: e.pfadId, detailId, ansicht: ansicht === "schnitt" ? "schnitt" : "nah", version: 1 };
+  return { form: "steildach", deckung: e.pfadId, detailId, ansicht: ansicht === "schnitt" ? "schnitt" : "nah", version: dachMedien("steildach", e.pfadId, detailId).version };
 }
 
 const LEKTIONS_DETAILS: Record<string, { form: DachForm; detailId: string }[]> = {

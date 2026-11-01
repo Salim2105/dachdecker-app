@@ -1,6 +1,6 @@
 import { appStorage } from "@/lib/lernSpeicher";
 import { DACH_DETAILS, getDachDetail } from "@/lib/dach3dInhalte";
-import { DACH_FORMEN, DACH_SCHICHTEN, dachDeckung, istDachMedienRef } from "@/lib/dach3dMedien";
+import { DACH_FORMEN, DACH_SCHICHTEN, dachDeckung, dachMedien, istDachMedienRef } from "@/lib/dach3dMedien";
 import type { Bewertung } from "@/content/schema";
 import type { DachAntwort, DachAufgabe, DachErkundungStand, DachForm, DachPosition } from "@/lib/dach3dTypen";
 import { parseReviewStore, REVIEW_KEY } from "@/lib/review";
@@ -122,7 +122,7 @@ export function dachAntwort(s: DachErkundungStand, aufgabe: DachAufgabe, now = D
   const form = detail.formen.includes(s.form) ? s.form : detail.formen[0];
   const hilfen = zeitnaheHilfen(s, detail.id, Math.max(now, s.aktualisiertAm));
   return { versuchId: `${s.id}:${aufgabe.id}`, aufgabe: clone(aufgabe), auswahl: [], geprueft: false, hilfen,
-    nachErklaerung: hilfen.length > 0, medienRef: { form, deckung: s.jeDach[form].deckung, detailId: detail.id, ansicht: aufgabe.ansicht, version: 1 } };
+    nachErklaerung: hilfen.length > 0, medienRef: { form, deckung: s.jeDach[form].deckung, detailId: detail.id, ansicht: aufgabe.ansicht, version: dachMedien(form, s.jeDach[form].deckung, detail.id).version } };
 }
 export function dachHilfe(s: DachErkundungStand, detailId: string, art: string, now = Date.now()): DachErkundungStand {
   if (!getDachDetail(detailId) || !text(art, 500)) throw new Error("Diese Dachhilfe ist nicht verfügbar.");

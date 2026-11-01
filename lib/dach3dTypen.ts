@@ -22,8 +22,8 @@ export interface DachModell {
   id: DachForm; titel: string; kurz: string; deckungen: DachDeckung[]; detailIds: string[];
   systemkarte: { titel: string; beschreibung: string; angaben: string[]; grenzen: string[] };
 }
-export interface MedienAsset { id: string; url: string; bytes: number; sha256: string; typ: "modell" | "bild" }
-export interface DachMedienRef { form: DachForm; deckung: DachDeckung; detailId: string; ansicht: DachAnsicht; version: 1 }
+export interface MedienAsset { id: string; url: string; bytes: number; sha256: string; typ: "modell" | "bild" | "umgebung" }
+export interface DachMedienRef { form: DachForm; deckung: DachDeckung; detailId: string; ansicht: DachAnsicht; version: 1 | 2 }
 export interface DachAntwort {
   versuchId: string; aufgabe: DachAufgabe; auswahl: string[]; ersteAuswahl?: string[];
   geprueft: boolean; bewertung?: Bewertung; abgegebenAm?: number; hilfen: string[];
