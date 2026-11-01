@@ -74,6 +74,50 @@ describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
     expect(ladeDachStand()!.antworten["dach3d-s03-funktion"].hilfen).toContain("fragehinweis");
     expect(ladeDachStand()!.antworten["dach3d-s03-funktion"].nachErklaerung).toBe(true);
   });
+  it("öffnet Notizen ausdrücklich und erhält Antwort und Text beim Zuklappen", () => {
+    unabhaengig(); render(<DachErkunden />);
+    const a = getDachDetail("s03")!.aufgaben[0];
+    fireEvent.click(screen.getByLabelText(a.optionen[0].text));
+    const antwort = ladeDachStand()!.antworten[a.id];
+    const summary = screen.getByText("Meine Notizen", { exact: true }).closest("summary")!;
+    const details = summary.parentElement as HTMLDetailsElement;
+    expect(details.open).toBe(false);
+    fireEvent.click(summary); expect(details.open).toBe(true);
+    fireEvent.change(screen.getByRole("textbox", { name: "Meine Notizen zu Dachrinne, Halter, Stutzen und Fallrohr" }), { target: { value: "Halter am Schulmodell prüfen." } });
+    fireEvent.click(summary); expect(details.open).toBe(false);
+    fireEvent.click(summary);
+    expect((screen.getByRole("textbox", { name: "Meine Notizen zu Dachrinne, Halter, Stutzen und Fallrohr" }) as HTMLTextAreaElement).value).toBe("Halter am Schulmodell prüfen.");
+    expect(ladeDachStand()!.antworten[a.id]).toEqual(antwort);
+  });
+  it("macht die Bauteilauswahl bei Bedarf zugänglich und schließt sie nach einem gespeicherten Sprung", async () => {
+    render(<DachErkunden form="steildach" detailId="s03" />);
+    expect(screen.queryByRole("combobox", { name: "Bereich auswählen" })).toBeNull();
+    const picker = screen.getByRole("button", { name: /Bauteil wechseln/ });
+    fireEvent.click(picker);
+    expect(picker.getAttribute("aria-expanded")).toBe("true");
+    fireEvent.change(screen.getByRole("combobox", { name: "Bereich auswählen" }), { target: { value: "aufbau" } });
+    fireEvent.change(screen.getByRole("searchbox", { name: "In diesem Bereich suchen" }), { target: { value: "Luftdichtheit" } });
+    fireEvent.click(screen.getByRole("button", { name: /G04.*Luftdichtheit/ }));
+    await waitFor(() => expect(ladeDachStand()!.jeDach.steildach.detailId).toBe("g04"));
+    expect(screen.queryByRole("combobox", { name: "Bereich auswählen" })).toBeNull();
+    expect(window.location.hash).toBe("#dach-steildach-g04");
+  });
+  it("schließt das Ansichtenmenü mit Escape oder einem Klick außerhalb, ohne die Schichtwahl zu verlieren", () => {
+    render(<DachErkunden form="steildach" detailId="s03" />);
+    const summary = screen.getByText("Ansichten & Schichten", { exact: true });
+    const details = summary.parentElement as HTMLDetailsElement;
+    fireEvent.click(summary);
+    expect(details.open).toBe(true);
+    fireEvent.click(screen.getByRole("checkbox", { name: "Dämmung" }));
+    const schichten = [...ladeDachStand()!.jeDach.steildach.schichten];
+    expect(schichten).not.toContain("daemmung");
+    fireEvent.keyDown(document, { key: "Escape" });
+    expect(details.open).toBe(false); expect(document.activeElement).toBe(summary);
+    fireEvent.click(summary); expect(details.open).toBe(true);
+    fireEvent.pointerDown(screen.getByRole("heading", { name: "3D-Dach entdecken" }));
+    expect(details.open).toBe(false);
+    expect(ladeDachStand()!.jeDach.steildach.schichten).toEqual(schichten);
+  });
   it("verlinkt Lerntexte und beide Werkstattdeckungen auf gültige Details", () => {
     expect(lernDachVerweise(["lf07-l01", "lf07-l01"])).toHaveLength(1);
     expect(lernDachVerweise(["lf07-l01"])[0].href).toBe("/projekte#dach-steildach-s03");
