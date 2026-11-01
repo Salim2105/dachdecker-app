@@ -48,16 +48,17 @@ Die alte Medienprüfung bleibt aktiv. Zusätzlich prüft `npm run studio:check` 
 
 ## Abnahme dieser Version
 
-Medienproduktion und Sichtprüfung sind abgeschlossen und im [Produktionsbericht](../scripts/dach3d/STUDIO.md) festgehalten. Die abschließende technische Abnahme wird vor Bereitstellung in dieser Liste ergänzt; offene Punkte sind keine bestätigten Testergebnisse.
+Medienproduktion und Sichtprüfung sind abgeschlossen und im [Produktionsbericht](../scripts/dach3d/STUDIO.md) festgehalten. Die folgenden Prüfungen wurden am 1. November 2026 durchgeführt. Offene Punkte sind keine bestätigten Testergebnisse.
 
 | Prüfung | Stand |
 |---|---|
 | Neue Medien: Dateiprüfung, Budgets, Dekodierung und Sichtprüfung | Abgeschlossen; Einzelheiten im Produktionsbericht |
-| Vollständiger Testlauf, TypeScript und Lint | Abschließenden Lauf dokumentieren |
-| Produktionsbuild, statischer Export und Website-Paket | Abschließenden Lauf dokumentieren |
+| Vollständiger Testlauf, TypeScript und Lint | 1.316 Tests in 126 Dateien bestanden; `tsc --noEmit` erfolgreich; ESLint ohne Fehler, mit zwei bestehenden Warnungen in `_worker.js` und `repariere-umlaute.mjs` |
+| Produktionsbuild, statischer Export und Website-Paket | `npm run build`, `npm run export` und `node scripts/prepare-probe.mjs` erfolgreich; beide Medienprüfungen bestanden; Mac-/Website-Shellskripte syntaktisch geprüft |
 | Tatsächlicher WebGL-Modellaufbau aller fünf Varianten | Im Chromium-Cloudbrowser jeweils Übersicht und Detail tatsächlich gezeichnet; v2-URL und Geometrie-Zeichenereignis geprüft |
 | Kamera, Rundgang, Pause und Ruhezustand | Weiche Kamera-/Schichtwechsel, Rundgang und erneuter Start geprüft; im Ruhezustand und nach Pause jeweils 0 zusätzliche GL-Zeichenaufrufe über 2 Sekunden |
-| Alte Bildreferenzen, Speichern, Neustart und Offline-Pakete | Abschließende Integrationsprüfung dokumentieren |
+| Fertiger statischer Export im Browser | v2-Satteldachübersicht und Rinnendetail tatsächlich in WebGL gezeichnet; Rundgang und Pause, 0 zusätzliche GL-Zeichenaufrufe im Ruhezustand, 390 Pixel ohne Überlauf, keine JavaScript-Seitenfehler |
+| Alte Bildreferenzen, Speichern, Neustart und Offline-Pakete | v1/v2-Kompatibilität, unveränderte erste Antworten und genau einmal gezählte Tagesrunden getestet. Im fertigen Export: Offline-Neustart erhält Notizen, Auswahl und v2-Aufgabenbild; vollständiges Flachdachpaket mit beiden Medienfassungen und HDR gespeichert; Modell/HDR im Cache unabhängig per SHA-256 geprüft; v2-Ablaufmodell tatsächlich offline gezeichnet; Paketlöschen erhält Lernarbeit und aktiviert die feste Ansicht, keine JavaScript-Seitenfehler |
 | 390, 760 und 1.280 Pixel, Hell/Dunkel und 130 Prozent Schrift | Tatsächliche 130-%-Einstellung ohne horizontalen Überlauf geprüft; Tastaturauswahl sowie Escape und Fokus-Rückgabe funktionieren |
 | Safari und Touch-Bildrate auf einem echten iPhone | Noch nicht durchgeführt |
 | Installation und Ausführung des nativen macOS-Bundles | In dieser Cloud nicht durchgeführt |
