@@ -4,7 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree, type ThreeEvent } from "@react-three/fiber";
 import { Html, Line, OrbitControls } from "@react-three/drei";
-import { ACESFilmicToneMapping, Box3, Color, DataTexture, LinearFilter, LinearSRGBColorSpace, Mesh, Object3D, PCFSoftShadowMap, PerspectiveCamera, PMREMGenerator, RGBAFormat, Spherical, Vector3, type WebGLRenderTarget } from "three";
+import { ACESFilmicToneMapping, Color, DataTexture, LinearFilter, LinearSRGBColorSpace, Mesh, Object3D, PCFSoftShadowMap, PerspectiveCamera, PMREMGenerator, RGBAFormat, Spherical, Vector3, type WebGLRenderTarget } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { HDRLoader } from "three/examples/jsm/loaders/HDRLoader.js";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";

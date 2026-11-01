@@ -102,12 +102,12 @@ describe("Dach erkunden: vollständiger Lernumfang 0.13", () => {
     expect(istDachBildRef(g)).toBe(true);
     for (const aenderung of [
       { form: "flachdach" }, { deckung: "warmdach" }, { detailId: "s04" }, { detailId: "../../privat" },
-      { ansicht: "fehler" }, { ansicht: "javascript:alert(1)" }, { version: 2 },
+      { ansicht: "fehler" }, { ansicht: "javascript:alert(1)" }, { version: 3 },
     ]) expect(istDachBildRef({ ...g, ...aenderung })).toBe(false);
     for (const form of ["steildach", "walmdach", "flachdach"] satisfies DachForm[]) {
       for (const d of dachDetailsFuer(form)) {
         for (const deckung of getDachModell(form).deckungen) {
-          expect(istDachBildRef({ version: 1, form, deckung, detailId: d.id, ansicht: "schnitt" })).toBe(true);
+          for (const version of [1, 2]) expect(istDachBildRef({ version, form, deckung, detailId: d.id, ansicht: "schnitt" })).toBe(true);
         }
       }
     }

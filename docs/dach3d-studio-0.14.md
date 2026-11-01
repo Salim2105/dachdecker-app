@@ -42,6 +42,8 @@ Texte, Oberfläche und kleine Vorschaubilder gehören weiterhin zum Grundpaket. 
 
 Ein Paket gilt erst nach vollständigem Download mit gültigen Größen und Prüfsummen als gespeichert. Ein unterbrochener neuer Download ersetzt kein bereits vollständiges Paket. Das Entfernen eines Dachpakets löscht keine Lernantworten oder privaten Bilder. Ohne verfügbares 3D oder bei einem fehlerhaften Modell bleiben feste Ansichten und die Lernaufgaben erreichbar.
 
+Wenn ein Modell innerhalb von 60 Sekunden kein Bild zeichnet, wechselt der Betrachter ebenfalls zur festen Ansicht. „3D erneut versuchen“ startet einen neuen Ladeversuch. Bereitschaft, Dachwechsel, ein verdeckter Tab, die feste Ansicht und das Schließen beenden die jeweilige Ladefrist.
+
 Die alte Medienprüfung bleibt aktiv. Zusätzlich prüft `npm run studio:check` die neue Medienfassung. Build und statischer Export führen beide Medienprüfungen aus.
 
 ## Abnahme dieser Version
@@ -53,15 +55,17 @@ Medienproduktion und Sichtprüfung sind abgeschlossen und im [Produktionsbericht
 | Neue Medien: Dateiprüfung, Budgets, Dekodierung und Sichtprüfung | Abgeschlossen; Einzelheiten im Produktionsbericht |
 | Vollständiger Testlauf, TypeScript und Lint | Abschließenden Lauf dokumentieren |
 | Produktionsbuild, statischer Export und Website-Paket | Abschließenden Lauf dokumentieren |
-| Tatsächlicher WebGL-Modellaufbau aller fünf Varianten | Abschließende Browserprüfung dokumentieren |
-| Kamera, Rundgang, Pause und Ruhezustand | Abschließende Browserprüfung dokumentieren |
+| Tatsächlicher WebGL-Modellaufbau aller fünf Varianten | Im Chromium-Cloudbrowser jeweils Übersicht und Detail tatsächlich gezeichnet; v2-URL und Geometrie-Zeichenereignis geprüft |
+| Kamera, Rundgang, Pause und Ruhezustand | Weiche Kamera-/Schichtwechsel, Rundgang und erneuter Start geprüft; im Ruhezustand und nach Pause jeweils 0 zusätzliche GL-Zeichenaufrufe über 2 Sekunden |
 | Alte Bildreferenzen, Speichern, Neustart und Offline-Pakete | Abschließende Integrationsprüfung dokumentieren |
-| 390, 760 und 1.280 Pixel, Hell/Dunkel und 130 Prozent Schrift | Abschließende Browserprüfung dokumentieren |
+| 390, 760 und 1.280 Pixel, Hell/Dunkel und 130 Prozent Schrift | Tatsächliche 130-%-Einstellung ohne horizontalen Überlauf geprüft; Tastaturauswahl sowie Escape und Fokus-Rückgabe funktionieren |
 | Safari und Touch-Bildrate auf einem echten iPhone | Noch nicht durchgeführt |
 | Installation und Ausführung des nativen macOS-Bundles | In dieser Cloud nicht durchgeführt |
 | Beobachtete Erprobung mit Azubis | Noch nicht durchgeführt |
 
 Cloud-Browserprüfungen ersetzen die drei zuletzt genannten Erprobungen nicht. Praxisvideos und NotebookLM-Clips bleiben ein späterer eigener Ausbau.
+
+Im langen Entwicklungs-Browserlauf erreichte die fünfte Dachvariante nach vier vorherigen Kontexten und Hot Reload einmal die WebGL-Bereitschaft nicht. Ein frischer Browser zeichnete dieselbe Flachdachübersicht und das Ablaufdetail korrekt; der Hänger ließ sich dabei nicht wiederholen. Die Ursache ist damit nicht abschließend geklärt. Die neue Ladefrist verhindert unbegrenztes Warten, ohne einen behobenen Treiberfehler zu behaupten. Die anschließende Prüfung ohne WebGL erhielt Notizen, Deckung, Lernschritt und Antworten bei Dachwechsel, Browser-Zurück und Neustart.
 
 ## Aktualisieren und bereitstellen
 
