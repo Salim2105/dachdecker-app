@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import { BoxGeometry, Group, Mesh, MeshStandardMaterial, Object3D, Texture, Vector3 } from "three";
-import { dachKameraAbstand, dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, vorbereiteDachModell, wasserPunkte } from "@/components/dach3d/dach3dScene";
+import { dachBewegung, dachKameraAbstand, dachOrbitZwischen, dachProjektionsAbstand, dachRessource, detailVonObjekt, entsorgeDachModell, gueltigerOrbit, hatSichtbareDachGeometrie, konfiguriereDachModell, sichtbareDachBounds, vorbereiteDachModell, wasserPunkte } from "@/components/dach3d/dach3dScene";
 
 function scene() {
   const root = new Group();
@@ -45,6 +45,33 @@ describe("Dachmodell: echte Geometrie, Schichten und sichere Bedienung", () => {
     konfiguriereDachModell(root, basis, { schichten: ["deckung", "tragwerk"], ansicht: "nah", phase: "montage", schritt: 3 });
     expect(tile.visible).toBe(true); expect((timber.material as MeshStandardMaterial).clippingPlanes).toEqual([]);
   });
+  it("kompiliert Materialien beim Bewegen der Schichten nicht erneut", () => {
+    const { root, tile, basis } = scene(), material = tile.material as MeshStandardMaterial;
+    const config = { schichten: ["deckung", "tragwerk"], ansicht: "aufbau", phase: "aufbau", schritt: 0 };
+    const original = material.version;
+    konfiguriereDachModell(root, basis, config);
+    konfiguriereDachModell(root, basis, { ...config, schichten: ["tragwerk"] });
+    expect(material.version).toBe(original);
+    konfiguriereDachModell(root, basis, { ...config, ansicht: "schnitt" });
+    const geschnitten = material.version, plane = material.clippingPlanes![0];
+    expect(geschnitten).toBeGreaterThan(original);
+    konfiguriereDachModell(root, basis, { ...config, ansicht: "schnitt", phase: "montage", schritt: 1 });
+    expect(material.version).toBe(geschnitten); expect(material.clippingPlanes![0]).toBe(plane);
+    konfiguriereDachModell(root, basis, { ...config, ansicht: "nah" });
+    expect(material.version).toBe(geschnitten + 1);
+  });
+  it("rahmt nur sichtbare Bauteile und berücksichtigt die tatsächliche Schnitthälfte", () => {
+    const { root, tile, timber } = scene();
+    const whole = sichtbareDachBounds(root);
+    tile.visible = false;
+    const structure = sichtbareDachBounds(root);
+    expect(structure.max.y).toBeLessThan(whole.max.y);
+    expect(structure.getSize(new Vector3()).x).toBeCloseTo(2);
+    const half = sichtbareDachBounds(root, "schnitt", structure.getCenter(new Vector3()).x);
+    expect(half.getSize(new Vector3()).x).toBeCloseTo(1);
+    timber.visible = false;
+    expect(sichtbareDachBounds(root).isEmpty()).toBe(false);
+  });
   it("verschiebt untergeordnete Schichten nicht zweimal", () => {
     const { root, tile } = scene(), gruppe = new Group();
     root.remove(tile); gruppe.userData.layer = "deckung"; gruppe.add(tile); root.add(gruppe);
@@ -82,6 +109,32 @@ describe("Dachmodell: echte Geometrie, Schichten und sichere Bedienung", () => {
       expect(Math.asin(radius / distance)).toBeLessThan(Math.min(halfX, halfY));
     }
     expect(dachKameraAbstand(size, 43, .5)).toBeGreaterThan(dachKameraAbstand(size, 43, 1.8));
+  });
+  it("füllt das Bild gezielter als die alte Kugelpassung und hält alle acht Ecken im Rand", () => {
+    const size = new Vector3(9.5, 6, 12), direction = new Vector3(1.35, .82, 1.35).normalize(), halfY = 43 * Math.PI / 360;
+    const right = new Vector3(0, 1, 0).cross(direction).normalize(), up = direction.clone().cross(right).normalize();
+    for (const aspect of [.45, .8, 1.25, 1.9]) {
+      const distance = dachProjektionsAbstand(size, direction, 43, aspect);
+      expect(distance).toBeLessThan(dachKameraAbstand(size, 43, aspect));
+      for (const x of [-.5, .5]) for (const y of [-.5, .5]) for (const z of [-.5, .5]) {
+        const p = new Vector3(size.x * x, size.y * y, size.z * z), depth = distance - p.dot(direction);
+        expect(Math.abs(p.dot(right)) / (depth * Math.tan(halfY) * aspect)).toBeLessThan(.9);
+        expect(Math.abs(p.dot(up)) / (depth * Math.tan(halfY))).toBeLessThan(.9);
+      }
+    }
+  });
+  it("bewegt Kameras um das Dach statt durch die Mitte und bremst an beiden Enden weich", () => {
+    const start = { position: [0, 4, -10] as [number, number, number], target: [0, 0, 0] as [number, number, number] };
+    const ziel = { position: [10, 4, 0] as [number, number, number], target: [0, 0, 0] as [number, number, number] };
+    dachOrbitZwischen(start, ziel, 0).position.forEach((n, i) => expect(n).toBeCloseTo(start.position[i]));
+    dachOrbitZwischen(start, ziel, 1).position.forEach((n, i) => expect(n).toBeCloseTo(ziel.position[i]));
+    const middle = dachOrbitZwischen(start, ziel, .5);
+    expect(new Vector3(...middle.position).length()).toBeCloseTo(new Vector3(...start.position).length());
+    expect(middle.position[0]).toBeGreaterThan(0); expect(middle.position[2]).toBeLessThan(0);
+    expect(dachBewegung(-1)).toBe(0); expect(dachBewegung(2)).toBe(1);
+    expect(dachBewegung(.05)).toBeLessThan(.05); expect(dachBewegung(.95)).toBeGreaterThan(.95);
+    const opposite = dachOrbitZwischen({ ...start, position: [-.01, 4, -10] }, { ...ziel, position: [.01, 4, -10] }, .5);
+    expect(opposite.position[2]).toBeLessThan(-9.9);
   });
   it("gibt geteilte Geometrien, Materialien und Texturen beim Dachwechsel genau einmal frei", () => {
     const root = new Group(), geometry = new BoxGeometry(), texture = new Texture(), material = new MeshStandardMaterial({ map: texture, normalMap: texture });

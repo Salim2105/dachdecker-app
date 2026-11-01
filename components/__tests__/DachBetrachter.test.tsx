@@ -2,11 +2,11 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { DachBetrachter, type DachBetrachterProps } from "@/components/dach3d/DachBetrachter";
 
-vi.mock("next/dynamic", () => ({ default: () => function CanvasProbe(props: { onBereit: () => void; onFehler: (m: string) => void }) {
-  return <div data-testid="dach-canvas"><button onClick={props.onBereit}>Zeichnung beendet</button><button onClick={() => props.onFehler("Modell unterbrochen")}>Modellfehler auslösen</button></div>;
+vi.mock("next/dynamic", () => ({ default: () => function CanvasProbe(props: { onBereit: () => void; onFehler: (m: string) => void; befehl: { art: string; nummer: number } }) {
+  return <div data-testid="dach-canvas" data-befehl={props.befehl.art} data-befehl-nummer={props.befehl.nummer}><button onClick={props.onBereit}>Zeichnung beendet</button><button onClick={() => props.onFehler("Modell unterbrochen")}>Modellfehler auslösen</button></div>;
 } }));
-vi.mock("@/lib/dach3dMedien", () => ({ dachMedien: () => ({
-  modell: { url: "/dach-medien/v1/steildach-falzziegel/s03/modell.glb" },
+vi.mock("@/lib/dach3dMedien", () => ({ dachMedien: (form = "steildach", deckung = "falzziegel") => ({
+  modell: { url: `/dach-medien/v1/${form}-${deckung}/s03/modell.glb` },
   preview: "/dach-vorschau/v1/steildach-falzziegel/uebersicht.webp",
   bilder: { nah: "/richtig.webp", schnitt: "/schnitt.webp", aufbau: "/aufbau.webp" },
   hdBilder: { nah: "/gross.webp", schnitt: "/gross-schnitt.webp", aufbau: "/gross-aufbau.webp" },
@@ -83,11 +83,32 @@ describe("Dachbetrachter: Ausweichansicht und kontrollierte 3D-Nutzung", () => {
   it("setzt ein Detail zurück auf seine Nahansicht und lässt Pfeiltasten im fokussierten Betrachter zu", async () => {
     const p = props(); render(<DachBetrachter {...p} />);
     await screen.findByTestId("dach-canvas");
+    fireEvent.click(screen.getByRole("button", { name: "Zeichnung beendet" }));
     const region = screen.getByRole("region");
     expect(region.getAttribute("tabindex")).toBe("0");
     const event = new KeyboardEvent("keydown", { key: "ArrowRight", bubbles: true, cancelable: true });
     region.dispatchEvent(event); expect(event.defaultPrevented).toBe(true);
     fireEvent.click(screen.getByRole("button", { name: "Ansicht zurücksetzen" }));
     expect(p.onKamera).toHaveBeenCalledWith("nah");
+  });
+  it("beginnt einen Rundgang nur bewusst und nimmt ihn nach einem Dachwechsel nicht ungefragt wieder auf", async () => {
+    const view = render(<DachBetrachter {...props()} />);
+    await screen.findByTestId("dach-canvas");
+    expect((screen.getByRole("button", { name: "Rundgang abspielen" }) as HTMLButtonElement).disabled).toBe(true);
+    fireEvent.click(screen.getByRole("button", { name: "Zeichnung beendet" }));
+    fireEvent.click(screen.getByRole("button", { name: "Rundgang abspielen" }));
+    expect(screen.getByTestId("dach-canvas").getAttribute("data-befehl")).toBe("rundgang");
+    expect(screen.getByRole("button", { name: "Rundgang pausieren" }).getAttribute("aria-pressed")).toBe("true");
+    view.rerender(<DachBetrachter {...props()} form="walmdach" />);
+    await waitFor(() => expect(screen.getByTestId("dach-canvas").getAttribute("data-befehl-nummer")).toBe("0"));
+    expect(screen.getByTestId("dach-canvas").getAttribute("data-befehl")).toBe("reset");
+    expect(screen.getByRole("button", { name: "Rundgang abspielen" }).getAttribute("aria-pressed")).toBe("false");
+  });
+  it("bietet bei reduzierter Bewegung feste Ansichten statt eines automatischen Rundgangs", async () => {
+    render(<DachBetrachter {...props()} reduzierteBewegung />);
+    await screen.findByTestId("dach-canvas");
+    fireEvent.click(screen.getByRole("button", { name: "Zeichnung beendet" }));
+    expect((screen.getByRole("button", { name: "Rundgang abspielen" }) as HTMLButtonElement).disabled).toBe(true);
+    expect((screen.getByRole("button", { name: "Ansicht zurücksetzen" }) as HTMLButtonElement).disabled).toBe(false);
   });
 });

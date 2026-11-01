@@ -60,6 +60,7 @@ export function entsorgeDachModell(root: Object3D): void {
 export interface DachSzeneBasis {
   bounds: Box3; center: Vector3; size: Vector3;
   positionen: Map<Object3D, Vector3>; sichtbar: Map<Object3D, boolean>;
+  materialien: Material[];
 }
 
 export function vorbereiteDachModell(root: Object3D): DachSzeneBasis {
@@ -72,9 +73,15 @@ export function vorbereiteDachModell(root: Object3D): DachSzeneBasis {
   const bounds = new Box3().setFromObject(root), positionen = new Map<Object3D, Vector3>(), sichtbar = new Map<Object3D, boolean>();
   root.traverse(node => {
     positionen.set(node, node.position.clone()); sichtbar.set(node, node.visible);
-    if (node instanceof Mesh) { node.castShadow = true; node.receiveShadow = true; }
+    if (node instanceof Mesh) {
+      node.castShadow = true;
+      // The roof is already made of overlapping geometry. Receiving its own
+      // low-resolution shadow on every tile creates crawling dark seams when
+      // orbiting. The facade, structure and ground can still receive shadows.
+      node.receiveShadow = node.userData.layer !== "deckung";
+    }
   });
-  return { bounds, center: bounds.getCenter(new Vector3()), size: bounds.getSize(new Vector3()), positionen, sichtbar };
+  return { bounds, center: bounds.getCenter(new Vector3()), size: bounds.getSize(new Vector3()), positionen, sichtbar, materialien: modellMaterialien(root) };
 }
 
 function schichtVorfahre(node: Object3D): boolean {
@@ -100,9 +107,70 @@ export function konfiguriereDachModell(root: Object3D, basis: DachSzeneBasis, co
     const schritt: unknown = node.userData.montage_step;
     if (config.phase === "montage" && typeof schritt === "number" && Number.isFinite(schritt)) node.visible &&= schritt <= config.schritt;
   }
-  const plane = config.ansicht === "schnitt" ? [new Plane(new Vector3(-1, 0, 0), basis.center.x)] : [];
-  for (const mat of modellMaterialien(root)) { mat.clippingPlanes = plane; mat.clipShadows = plane.length > 0; mat.needsUpdate = true; }
+  const geschnitten = config.ansicht === "schnitt";
+  for (const mat of basis.materialien) {
+    const vorher = mat.clippingPlanes?.length ?? 0;
+    if (geschnitten) {
+      if (vorher !== 1) mat.clippingPlanes = [new Plane(new Vector3(-1, 0, 0), basis.center.x)];
+      else mat.clippingPlanes![0].constant = basis.center.x;
+    } else if (vorher) mat.clippingPlanes = [];
+    mat.clipShadows = geschnitten;
+    // Moving a layer or replaying a step does not change the shader program.
+    if (vorher !== (geschnitten ? 1 : 0)) mat.needsUpdate = true;
+  }
   root.updateMatrixWorld(true);
+}
+
+/** Bounds of the visible teaching object, excluding hidden assembly layers. */
+export function sichtbareDachBounds(root: Object3D, ansicht?: string, schnittX = 0): Box3 {
+  root.updateMatrixWorld(true);
+  const bounds = new Box3();
+  root.traverseVisible(node => {
+    if (!(node instanceof Mesh)) return;
+    if (!node.geometry.boundingBox) node.geometry.computeBoundingBox();
+    if (node.geometry.boundingBox) bounds.union(node.geometry.boundingBox.clone().applyMatrix4(node.matrixWorld));
+  });
+  if (bounds.isEmpty()) return new Box3().setFromObject(root);
+  if (ansicht === "schnitt" && bounds.min.x < schnittX && bounds.max.x > schnittX) bounds.max.x = schnittX;
+  return bounds;
+}
+
+/** Project all eight box corners onto the chosen view instead of fitting an
+ * oversized sphere. Long roofs fill the studio while every corner stays clear
+ * of the edge, including portrait windows and exploded assembly views. */
+export function dachProjektionsAbstand(size: Vector3, direction: Vector3, fov: number, aspect: number, fuellung = .9): number {
+  const forward = direction.clone().normalize();
+  const right = new Vector3(0, 1, 0).cross(forward);
+  if (right.lengthSq() < .000001) right.set(1, 0, 0);
+  right.normalize();
+  const up = forward.clone().cross(right).normalize();
+  const tanY = Math.tan(Math.max(.01, Math.min(Math.PI / 2 - .01, fov * Math.PI / 360)));
+  const tanX = tanY * Math.max(.05, aspect), fill = Math.max(.5, Math.min(.96, fuellung));
+  let distance = .2;
+  for (const x of [-.5, .5]) for (const y of [-.5, .5]) for (const z of [-.5, .5]) {
+    const corner = new Vector3(size.x * x, size.y * y, size.z * z), depth = corner.dot(forward);
+    distance = Math.max(distance, depth + Math.abs(corner.dot(right)) / (tanX * fill), depth + Math.abs(corner.dot(up)) / (tanY * fill));
+  }
+  return distance + Math.max(.015, size.length() * .015);
+}
+
+export const dachBewegung = (progress: number): number => {
+  const t = Math.max(0, Math.min(1, progress));
+  return t * t * (3 - 2 * t);
+};
+
+/** An orbit follows the short arc around the roof rather than passing through
+ * it. The same interpolation is used for presets and keyboard camera moves. */
+export function dachOrbitZwischen(start: DachOrbit, ziel: DachOrbit, fortschritt: number): DachOrbit {
+  const t = dachBewegung(fortschritt), aTarget = new Vector3(...start.target), bTarget = new Vector3(...ziel.target);
+  const a = new Vector3(...start.position).sub(aTarget), b = new Vector3(...ziel.position).sub(bTarget);
+  const aRadius = Math.max(.0001, a.length()), bRadius = Math.max(.0001, b.length());
+  const aTheta = Math.atan2(a.x, a.z), bTheta = Math.atan2(b.x, b.z);
+  const theta = aTheta + Math.atan2(Math.sin(bTheta - aTheta), Math.cos(bTheta - aTheta)) * t;
+  const phi = Math.acos(Math.max(-1, Math.min(1, a.y / aRadius))) * (1 - t) + Math.acos(Math.max(-1, Math.min(1, b.y / bRadius))) * t;
+  const radius = aRadius * (1 - t) + bRadius * t, target = aTarget.lerp(bTarget, t);
+  const position = new Vector3(radius * Math.sin(phi) * Math.sin(theta), radius * Math.cos(phi), radius * Math.sin(phi) * Math.cos(theta)).add(target);
+  return { position: position.toArray() as DachOrbit["position"], target: target.toArray() as DachOrbit["target"] };
 }
 
 export function wasserPunkte(root: Object3D): Vector3[] {
