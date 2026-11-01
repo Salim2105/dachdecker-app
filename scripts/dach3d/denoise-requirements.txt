@@ -1,0 +1,5 @@
+# Optional Linux x86_64 production tools, never web/Mac app dependencies.
+oidn==0.2.1
+OpenEXR==3.4.4
+numpy==2.5.4
+Pillow==13.0.0
