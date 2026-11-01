@@ -38,6 +38,8 @@ Der Betrachter verwendet Three.js, React Three Fiber und Drei ausschließlich au
 
 ## Herstellung und technische Abnahme
 
+Die tatsächlich ausgeführten Prüfungen und die noch offenen Gerätetests stehen im [Abnahmebericht](abnahme-dach-0.13.md).
+
 Die lokale Produktionsumgebung benötigt Blender 4.3 oder neuer sowie die in `package-lock.json` festgelegten Node-Werkzeuge. Inhaltsexport und Medienverzeichnis werden erzeugt mit:
 
 ```bash
