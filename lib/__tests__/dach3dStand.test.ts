@@ -42,7 +42,7 @@ describe("Dachlernstand: Wiederaufnahme und echte erste Antworten", () => {
   it("friert Aufgabe und tatsächlich gewählte Dachvariante schon vor der Abgabe ein", () => {
     const s = selbst(); s.jeDach.steildach.deckung = "biber-doppel";
     const a = dachAntwort(s, aufgabe);
-    expect(a.medienRef).toMatchObject({ form: "steildach", deckung: "biber-doppel", detailId: detail.id });
+    expect(a.medienRef).toMatchObject({ version: 2, form: "steildach", deckung: "biber-doppel", detailId: detail.id });
     s.antworten[aufgabe.id] = a; speichereDachStand(s);
     const neu = copy(s); neu.revision++; neu.form = "flachdach";
     expect(dachAntwort(neu, aufgabe)).toEqual(a);
@@ -50,6 +50,24 @@ describe("Dachlernstand: Wiederaufnahme und echte erste Antworten", () => {
     expect(() => speichereDachStand(fremd)).toThrow(/Übungsangaben/);
     const ohneBild = JSON.parse(JSON.stringify(s)); delete ohneBild.antworten[aufgabe.id].medienRef;
     expect(parseDachStand(JSON.stringify(ohneBild))).toBeNull();
+  });
+  it("erhält eingefrorene v1-Ansichten und erste Antworten nach dem Wechsel zu Studiomedien", () => {
+    let alt = mitAntwort();
+    alt.antworten[aufgabe.id].medienRef.version = 1;
+    alt = pruefeDachAufgabe(alt, aufgabe.id, start + 1000);
+    const abgabe = copy(alt.antworten[aufgabe.id]);
+    speichereDachStand(alt);
+    expect(ladeDachStand()).toEqual(alt);
+    const neu = copy(ladeDachStand()!); neu.revision++; neu.aktualisiertAm++;
+    neu.jeDach.steildach.deckung = "biber-doppel";
+    expect(dachAntwort(neu, aufgabe)).toEqual(abgabe);
+    expect(dachAntwort(neu, detail.aufgaben[1]).medienRef.version).toBe(2);
+    speichereDachStand(neu);
+    expect(ladeDachStand()?.antworten[aufgabe.id]).toEqual(abgabe);
+    const ersetzt = copy(neu); ersetzt.revision++; ersetzt.aktualisiertAm++;
+    ersetzt.antworten[aufgabe.id].medienRef.version = 2;
+    expect(() => speichereDachStand(ersetzt)).toThrow(/Übungsangaben/);
+    expect(ladeDachStand()?.antworten[aufgabe.id]).toEqual(abgabe);
   });
   it("behält Erstantwort und Ergebnis bei erneutem Prüfen unverändert", () => {
     let s = mitAntwort(); s = pruefeDachAufgabe(s, aufgabe.id, start + 1000);

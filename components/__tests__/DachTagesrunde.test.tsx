@@ -10,14 +10,17 @@ const now = Date.UTC(2026, 9, 30, 12);
 beforeEach(() => { appStorage.clear(); vi.spyOn(Date, "now").mockReturnValue(now); });
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 describe("Dachaufgaben in der Tagesrunde", () => {
-  it("zeigt vor und nach der Antwort dieselbe feste Ansicht und zählt nach Neustart einmal", () => {
-    const task = getReviewTasks().find(t => t.ref.id === "dach3d-s03-funktion")!;
+  it.each([1, 2] as const)("erhält eine eingefrorene v%s-Ansicht vor und nach der Antwort und zählt nach Neustart einmal", version => {
+    const task = structuredClone(getReviewTasks().find(t => t.ref.id === "dach3d-s03-funktion")!);
+    if (task.payload.typ !== "bild" || !task.payload.aufgabe.medienRef) throw new Error("Dachbild erwartet");
+    expect(task.payload.aufgabe.medienRef.version).toBe(2);
+    task.payload.aufgabe.medienRef.version = version;
     const s: ReviewSession = { version: 1, id: "dach-runde", filter: "alles", minuten: 5, startedAt: now, index: 0, tasks: [task], answers: {}, results: {} };
     saveReviewSession(s);
     const view = render(<Tagesrunde />);
     const image = screen.getByRole("img");
     const src = image.getAttribute("src");
-    expect(src).toBe("/dach-vorschau/v1/steildach-falzziegel/s03-nah.webp");
+    expect(src).toBe(`/dach-vorschau/v${version}/steildach-falzziegel/s03-nah.webp`);
     expect(document.querySelector("canvas")).toBeNull();
     if (task.payload.typ !== "bild" || task.payload.aufgabe.aktivitaet.typ !== "baustellenfall") throw new Error("Dachauswahl erwartet");
     for (const o of task.payload.aufgabe.aktivitaet.optionen.filter(o => o.korrekt)) fireEvent.click(screen.getByRole("checkbox", { name: o.text }));

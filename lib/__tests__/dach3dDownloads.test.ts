@@ -8,7 +8,7 @@ import type { MedienAsset } from "@/lib/dach3dTypen";
 const origin = "https://dach.example";
 const cacheKey = (r: string | Request) => new URL(typeof r === "string" ? r : r.url, origin).href;
 const hash = (s: string) => createHash("sha256").update(s).digest("hex");
-function asset(id: string, bytes: string): MedienAsset { return { id, url: `/dach-medien/v1/${id}`, bytes: Buffer.byteLength(bytes), sha256: hash(bytes), typ: id.endsWith("glb") ? "modell" : "bild" }; }
+function asset(id: string, bytes: string): MedienAsset { return { id, url: id.startsWith("v2/") ? `/dach-medien/${id}` : `/dach-medien/v1/${id}`, bytes: Buffer.byteLength(bytes), sha256: hash(bytes), typ: id.endsWith("glb") ? "modell" : id.endsWith(".hdr") ? "umgebung" : "bild" }; }
 function paket(assets: MedienAsset[], id: DachPaket["id"] = "steildach"): DachPaket { return { id, titel: id, assets, bytes: assets.reduce((s, a) => s + a.bytes, 0) }; }
 const oldAsset = asset("steildach-falzziegel/uebersicht.glb", "altes Modell"), newAsset = asset(oldAsset.id, "neues Modell");
 let stores: Map<string, Map<string, Response>>, failPut: ((cache: string, key: string) => boolean) | undefined;
@@ -72,6 +72,39 @@ describe("Öffentliche Dachpakete mit atomarem Abschluss", () => {
     expect(await dachPaketStatus(paket([newAsset]))).toMatchObject({ status: "gespeichert" });
     expect(contentCache().has(cacheKey(dachAssetCacheKey(oldAsset.sha256)))).toBe(true);
     expect(contentCache().has(cacheKey(dachAssetCacheKey(newAsset.sha256)))).toBe(true);
+  });
+  it("ergänzt ein altes Paket atomar um Studiomedien und erhält den alten Marker bei Abbruch", async () => {
+    await ladeDachPaket(paket([oldAsset]));
+    const vorher = await (await (await caches.open(DACH_MEDIEN_INDEX_CACHE)).match("/dach-medien/paket-steildach.json"))!.text();
+    const studio = asset("v2/steildach-falzziegel/uebersicht.glb", "Studiomodell");
+    const umgebung = asset("v2/gemeinsam/royal_esplanade_1k.hdr", "Lichtumgebung");
+    const neu = paket([oldAsset, studio, umgebung]);
+    fetcher.mockImplementation(async (url: string) => {
+      if (url === umgebung.url) throw new Error("unterbrochen");
+      return new Response("Studiomodell");
+    });
+    await expect(ladeDachPaket(neu)).rejects.toThrow(/unterbrochen/);
+    expect(await dachPaketStatus(paket([oldAsset]))).toMatchObject({ status: "gespeichert" });
+    expect(await (await (await caches.open(DACH_MEDIEN_INDEX_CACHE)).match("/dach-medien/paket-steildach.json"))!.text()).toBe(vorher);
+    expect(await dachPaketStatus(neu)).toMatchObject({ status: "aelter" });
+    noStages();
+    fetcher.mockImplementation(async (url: string) => new Response(url === studio.url ? "Studiomodell" : "Lichtumgebung"));
+    await ladeDachPaket(neu);
+    expect(await dachPaketStatus(neu)).toMatchObject({ status: "gespeichert", bytes: neu.bytes });
+    expect(await contentCache().get(cacheKey(dachAssetCacheKey(oldAsset.sha256)))!.clone().text()).toBe("altes Modell");
+    expect(contentCache().get(cacheKey(dachAssetCacheKey(umgebung.sha256)))!.headers.get("Content-Type")).toBe("image/vnd.radiance");
+  });
+  it("verwendet die lokale HDR-Lichtumgebung dachübergreifend wieder und erhält sie beim Löschen", async () => {
+    const licht = asset("v2/gemeinsam/royal_esplanade_1k.hdr", "Lichtumgebung");
+    const studio = asset("v2/steildach-falzziegel/uebersicht.glb", "Studiomodell");
+    const steil = paket([studio, licht]), walm = paket([licht], "walmdach");
+    fetcher.mockImplementation(async (url: string) => new Response(url === licht.url ? "Lichtumgebung" : "Studiomodell"));
+    await ladeDachPaket(steil); await ladeDachPaket(walm);
+    expect(fetcher.mock.calls.filter(([url]) => url === licht.url)).toHaveLength(1);
+    await loescheDachPaket(steil);
+    expect(await dachPaketStatus(walm)).toMatchObject({ status: "gespeichert", bytes: licht.bytes });
+    expect(contentCache().has(cacheKey(dachAssetCacheKey(licht.sha256)))).toBe(true);
+    expect(contentCache().has(cacheKey(dachAssetCacheKey(studio.sha256)))).toBe(false);
   });
   it("lädt gemeinsame Inhaltsbytes auch innerhalb eines Pakets nur einmal", async () => {
     const doppel = asset("steildach-falzziegel/g01/modell.glb", "altes Modell");
