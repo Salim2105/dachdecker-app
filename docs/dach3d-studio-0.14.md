@@ -1,0 +1,77 @@
+# 3D-Lernstudio · Update 0.14
+
+## Was sich sichtbar verändert
+
+Unter **Baustellenprojekte → 3D-Dach entdecken** steht das Modell im Mittelpunkt einer zusammenhängenden Arbeitsfläche. Auf breiten Fenstern liegen die Erklärungen und Aufgaben rechts daneben; auf schmalen Bildschirmen folgen sie darunter. Dachform und Deckungsart bleiben direkt wählbar. Die Bauteilauswahl, Ansichtshilfen, Notizen, Systemangaben und Offline-Pakete lassen sich bei Bedarf öffnen. Die 16 Hauptbereiche bleiben erhalten.
+
+Der Lernablauf bleibt vollständig: **Erkennen → Aufbau → Montage → Kontrolle → Selbst prüfen**. Der rechte Lernbereich führt durch die einzelnen Schritte, statt mehrere große Karten gleichzeitig anzuzeigen. Die beschriftete Bauteilliste bietet weiterhin dieselben Einstiege wie die Markierungen am Modell. Kameraschaltflächen und Tastaturbedienung ergänzen Maus und Touch.
+
+Die Kamera richtet sich nach den tatsächlich sichtbaren Modellteilen. Drehungen und Zoom wechseln über kurze Übergänge; eine begonnene Drehung klingt aus. Ein bewusst gestarteter Rundgang führt einmal um das Dach und lässt sich pausieren. Auch Montage- und Schichtwechsel erhalten begrenzte Übergänge. Im Ruhezustand soll der Betrachter keine dauerhafte Animation berechnen. Bei reduzierter Bewegung bleiben unmittelbare Ansichts- und Schrittwechsel verfügbar.
+
+Die Übersichten wurden mit ausgearbeiteten Keramikprofilen, Fensteröffnungen, Laibungen, Rahmen und Materialoberflächen neu hergestellt. Die Detailbilder erhalten dieselbe abgestimmte Materialdarstellung. Die festen Ansichten werden aus den jeweiligen Lehrszenen gerendert und mit einem dafür vorgesehenen Verfahren entrauscht. Die Bilder sind eigene Renderdarstellungen; sie dokumentieren keine ausgeführten Praxisdächer.
+
+## Umfang und Medienherkunft
+
+Die fünf Dach-/Deckungsvarianten bleiben bestehen:
+
+- Satteldach mit Gaube, jeweils mit Falzziegeln oder Biberschwanz-Doppeldeckung.
+- Walmdach mit denselben beiden getrennten Deckungsvarianten.
+- Flachdach als festgelegtes Warmdach-Beispiel.
+
+Die 34 Detailthemen und 68 Kontrollfragen bleiben erhalten. Daraus entstehen 104 passende Detailkontexte. Die zweite Medienfassung enthält **109 GLB-Modelle, 421 große Renderansichten und eine HDR-Lichtumgebung**, insgesamt 531 optional ladbare Dateien. Hinzu kommen 421 kleine Vorschaubilder im Grundpaket. Inhaltlich identische Detailkontexte dürfen dieselben Dateibytes verwenden.
+
+Das größte neue Modell hat 5.297.108 Byte, die höchste Dreiecksanzahl beträgt 94.522. Damit bleiben die produzierten Modelle unter den vorgesehenen Grenzen von 6 MiB und 100.000 Dreiecken. Diese Dateigrenzen sind kein Nachweis einer bestimmten Bildrate auf einem iPhone.
+
+Die Dachgeometrie und Materialdarstellung sind eigene Arbeiten. Die lokal ausgelieferte Lichtumgebung **Royal Esplanade 1K** ist ein unter CC0 angebotenes HDRI. Herkunft, erfolgreich geprüfte Lizenzquelle und tatsächlich abgerufene Gestaltungsreferenzen stehen in [Quellen und Gestaltungsvorbildern](dach-materialien-quellen.md). Die blockierten Hersteller- und Modellplattformen wurden nicht als angesehene Videos oder geprüfte fremde Dachmodelle ausgegeben. Es wurden keine fremden Dachmodelle oder Videoclips übernommen.
+
+Die Herstellung und Medienkontrolle sind in [Studiomedien v2](../scripts/dach3d/STUDIO.md) beschrieben. Die optionale Bildentrauschung gehört ausschließlich zur Medienproduktion; sie muss auf dem Mac oder iPhone der Lernenden nicht installiert werden.
+
+## Bestehende Antworten bleiben nachvollziehbar
+
+Die veröffentlichten Dateien unter `/dach-medien/v1/` und `/dach-vorschau/v1/` bleiben unverändert vorhanden. Neu erzeugte Modelle und Bilder liegen unter `v2`. Neue Aufgaben verwenden die neue Bildfassung. Bereits eingefrorene Antworten und Tagesrunden behalten ihre tatsächliche ursprüngliche Medienreferenz; ein Update ersetzt deren Bildfassung nicht nachträglich.
+
+Der vorhandene Lernstand verwendet weiterhin dieselben Speicherzugriffe und Schlüssel. Dachform, Deckung, Detail, Lernschritt, Kamera, Antworten, Hilfen und Notizen bleiben Teil dieses Lernstands. Die Speicheranzeige bestätigt erst das dauerhaft abgeschlossene Speichern. Eine Fehlermeldung lässt die aktuelle Arbeit für einen erneuten Speicherversuch geöffnet.
+
+Bloßes Erkunden erzeugt weiterhin keinen Wissensnachweis. Eine beantwortete Kontrollfrage wird mit ihrer konkreten Aufgabe und Medienfassung festgehalten. Genutzte Erklärungen und Hilfen bleiben erkennbar; digitales Verständnis wird getrennt von einer praktischen Ausführung geführt. Ein erneut geöffnetes Ergebnis zählt keinen zusätzlichen Versuch.
+
+Öffentliche Modelle bleiben von privaten Zeichnungen und Fotos getrennt. Vollständige Lernstand-Sicherungen speichern Medienverweise, ohne herunterladbare Modellpakete in jeder Sicherung zu duplizieren. Historische Bildverweise bleiben beim Import gültig.
+
+## Laden, Offline-Nutzung und Fehlerfälle
+
+Texte, Oberfläche und kleine Vorschaubilder gehören weiterhin zum Grundpaket. Große Dateien laden bei Bedarf. Die getrennten Dachpakete enthalten auch die bisherige Medienfassung, damit alte eingefrorene Aufgaben offline lesbar bleiben. Das gemeinsame HDRI wird von den Dachpaketen wiederverwendet. Es ist kein externes CDN erforderlich.
+
+Ein Paket gilt erst nach vollständigem Download mit gültigen Größen und Prüfsummen als gespeichert. Ein unterbrochener neuer Download ersetzt kein bereits vollständiges Paket. Das Entfernen eines Dachpakets löscht keine Lernantworten oder privaten Bilder. Ohne verfügbares 3D oder bei einem fehlerhaften Modell bleiben feste Ansichten und die Lernaufgaben erreichbar.
+
+Die alte Medienprüfung bleibt aktiv. Zusätzlich prüft `npm run studio:check` die neue Medienfassung. Build und statischer Export führen beide Medienprüfungen aus.
+
+## Abnahme dieser Version
+
+Medienproduktion und Sichtprüfung sind abgeschlossen und im [Produktionsbericht](../scripts/dach3d/STUDIO.md) festgehalten. Die abschließende technische Abnahme wird vor Bereitstellung in dieser Liste ergänzt; offene Punkte sind keine bestätigten Testergebnisse.
+
+| Prüfung | Stand |
+|---|---|
+| Neue Medien: Dateiprüfung, Budgets, Dekodierung und Sichtprüfung | Abgeschlossen; Einzelheiten im Produktionsbericht |
+| Vollständiger Testlauf, TypeScript und Lint | Abschließenden Lauf dokumentieren |
+| Produktionsbuild, statischer Export und Website-Paket | Abschließenden Lauf dokumentieren |
+| Tatsächlicher WebGL-Modellaufbau aller fünf Varianten | Abschließende Browserprüfung dokumentieren |
+| Kamera, Rundgang, Pause und Ruhezustand | Abschließende Browserprüfung dokumentieren |
+| Alte Bildreferenzen, Speichern, Neustart und Offline-Pakete | Abschließende Integrationsprüfung dokumentieren |
+| 390, 760 und 1.280 Pixel, Hell/Dunkel und 130 Prozent Schrift | Abschließende Browserprüfung dokumentieren |
+| Safari und Touch-Bildrate auf einem echten iPhone | Noch nicht durchgeführt |
+| Installation und Ausführung des nativen macOS-Bundles | In dieser Cloud nicht durchgeführt |
+| Beobachtete Erprobung mit Azubis | Noch nicht durchgeführt |
+
+Cloud-Browserprüfungen ersetzen die drei zuletzt genannten Erprobungen nicht. Praxisvideos und NotebookLM-Clips bleiben ein späterer eigener Ausbau.
+
+## Aktualisieren und bereitstellen
+
+Nach Bereitstellung auf `codex/lernverbesserungen` die installierte Mac-App vollständig schließen und im bisherigen Projektordner ausführen:
+
+```bash
+cd ~/Downloads/dachdecker-chatgpt &&
+(git restore -- public/sw.js 2>/dev/null || true) &&
+git pull --ff-only origin codex/lernverbesserungen &&
+bash scripts/install-mac-neu.sh
+```
+
+Der Website-Upload erfolgt anschließend mit `bash scripts/probe-teilen.sh` über Salims bestehende Hosting-Anmeldung. Der dauerhafte Test-Link bleibt `https://dachdecker-probe-salim2105.pages.dev/`. Der Kollege benötigt weiterhin kein Konto. Ein erfolgreich vorbereiteter Export veröffentlicht die Website noch nicht.

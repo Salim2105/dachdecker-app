@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.13.0**: [Drei Lehrdächer zum Erkunden](docs/dach-entdecken-0.13.md) mit 34 Detailthemen, zwei Ziegeldeckungen, 68 Kontrollfragen und getrennten Offline-Dachpaketen.
+Neu in **0.14.0**: [Überarbeitetes 3D-Lernstudio](docs/dach3d-studio-0.14.md) mit einer großen Modellansicht, begleitenden Lernschritten, weicheren Kamerabewegungen und neu erzeugten Dachmodellen und Renderansichten.
+
+Seit **0.13.0**: [Drei Lehrdächer zum Erkunden](docs/dach-entdecken-0.13.md) mit 34 Detailthemen, zwei Ziegeldeckungen, 68 Kontrollfragen und getrennten Offline-Dachpaketen.
 
 Seit **0.12.0**: [Handwerkliches Werkstatttraining für Falzziegel und Biberschwanz-Doppeldeckung](docs/werkstatttraining-0.12.md) mit 20 Einheiten, 40 aktiven Übungen, 20 Wiederholungsaufgaben und zwei Praxisblättern.
 
@@ -57,6 +59,7 @@ Die Entwicklungsadresse steht im Terminal. Prüfungen:
 npm test
 npx tsc --noEmit
 npm run lint
+npm run studio:check
 npm run build
 npm run export
 ```
