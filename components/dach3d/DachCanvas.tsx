@@ -37,10 +37,11 @@ function Umgebung() {
   return <><ambientLight intensity={.65}/><hemisphereLight args={["#fff5df", "#71877b", .9]}/></>;
 }
 
-function LadeModell(props: DachCanvasProps) {
+export function LadeModell(props: DachCanvasProps) {
   const { url } = props;
   const [gltf, setGltf] = useState<{ url: string; root: Object3D } | null>(null);
-  const [error, setError] = useState<{ url: string; error: Error } | null>(null);
+  const onFehler = useRef(props.onFehler);
+  useEffect(() => { onFehler.current = props.onFehler; }, [props.onFehler]);
   useEffect(() => {
     const abort = new AbortController();
     let aktiv = true, geladen: Object3D | null = null;
@@ -61,11 +62,12 @@ function LadeModell(props: DachCanvasProps) {
       if (aktiv) setGltf({ url, root: geladen });
       else entsorgeDachModell(geladen);
     })().catch((err: unknown) => {
-      if (aktiv && !abort.signal.aborted) setError({ url, error: err instanceof Error ? err : new Error("Das Modell konnte nicht geöffnet werden.") });
+      // Missing optional media are an expected offline state. Report them to
+      // the poster fallback instead of throwing through the WebGL React root.
+      if (aktiv && !abort.signal.aborted) onFehler.current(err instanceof Error ? err.message : "Das Modell konnte nicht geöffnet werden.");
     });
     return () => { aktiv = false; abort.abort(); if (geladen) entsorgeDachModell(geladen); };
   }, [url]);
-  if (error?.url === url) throw error.error;
   return gltf?.url === url ? <GeladenesModell key={url} {...props} root={gltf.root}/> : null;
 }
 
