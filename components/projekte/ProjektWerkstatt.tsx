@@ -12,7 +12,7 @@ import { aktivitaetTexte } from "@/lib/aktivitaeten";
 import { DrawCard } from "@/components/aufgaben/DrawCard";
 import { PraxisVorbereitung } from "./PraxisVorbereitung";
 import { LernLink } from "@/components/LernLink";
-import { dachMedien } from "@/lib/dach3dMedien";
+import { KatalogKopf, KatalogSuche, katalogPasst, useKatalogFokus } from "@/components/katalog/KatalogKopf";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { appStorage, flushStorage } from "@/lib/lernSpeicher";
 import { getWerkstattEinheit } from "@/lib/werkstattInhalte";
@@ -38,6 +38,7 @@ export function projektAnsicht(hash: string, search: string, gespeichert: string
   if (dachRoutenZiel(id)) return id;
   if (id === "werkstatt" || id === "werkstatt-praxis-falzziegel" || id === "werkstatt-praxis-biber-doppel" || getWerkstattEinheit(id)) return id;
   if (!id && new URLSearchParams(search).get("ansicht") === "praxis") return "praxis";
+  if (!id && new URLSearchParams(search).get("ansicht") === "auftraege") return "";
   if (!id && new URLSearchParams(search).get("ansicht") !== "uebersicht" && gespeichert && dachRoutenZiel(gespeichert)) return gespeichert;
   return bereichsAuswahl(BAUPROJEKTE.map(p=>p.id), gespeichert, { hash, search });
 }
@@ -50,19 +51,21 @@ export function ProjektWerkstatt() {
   const [auswahl, setAuswahl] = useState(gespeicherteAuswahl);
   const [routeSearch, setRouteSearch] = useState(() => typeof window === "undefined" ? "" : window.location.search);
   const [navigationFehler, setNavigationFehler] = useState("");
+  const [suche, setSuche] = useState("");
   useEffect(() => {
     const wechseln = () => { setAuswahl(gespeicherteAuswahl()); setRouteSearch(window.location.search); };
     window.addEventListener("hashchange", wechseln);
     window.addEventListener("popstate", wechseln);
     return () => { window.removeEventListener("hashchange", wechseln); window.removeEventListener("popstate", wechseln); };
   }, []);
-  function waehlen(id: string) {
+  function waehlen(id: string, katalog: "uebersicht" | "auftraege" = "auftraege") {
     const wechseln = () => {
       try {
         if (id) { appStorage.setItem(AUSWAHL_KEY, id); appStorage.setItem("lernwerkstatt-zuletzt-route", `/projekte#${id}`); }
-        else appStorage.removeItem(AUSWAHL_KEY);
         setAuswahl(id); setNavigationFehler("");
-        window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : "?ansicht=uebersicht"}`);
+        const search = id ? "" : `?ansicht=${katalog}`;
+        window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : search}`);
+        setRouteSearch(search);
         window.scrollTo({ top: 0 });
       } catch { setNavigationFehler("Der Bereich konnte noch nicht gespeichert werden. Deine aktuelle Arbeit bleibt geöffnet."); }
     };
@@ -71,6 +74,7 @@ export function ProjektWerkstatt() {
     if (BAUPROJEKTE.some(p => p.id === auswahl)) void flushStorage().then(wechseln).catch(() => setNavigationFehler("Deine Änderungen konnten noch nicht dauerhaft gespeichert werden. Bitte den Speicherhinweis prüfen."));
     else wechseln();
   }
+  useKatalogFokus(`${auswahl}:${routeSearch}`);
   const dach = dachRoutenZiel(auswahl);
   if (dach) return <DachErkunden form={dach.form} detailId={dach.detailId} deckung={dachDeckungsWunsch(routeSearch, dach.form)}/>;
   const projekt = BAUPROJEKTE.find(p => p.id === auswahl);
@@ -78,24 +82,30 @@ export function ProjektWerkstatt() {
   if (auswahl === "praxis") return <PraxisVorbereitung/>;
   if (auswahl === "werkstatt-praxis-falzziegel" || auswahl === "werkstatt-praxis-biber-doppel") return <div><LernLink href="/projekte#werkstatt" className="mb-4 inline-flex min-h-11 items-center underline">← Alle Werkstatt-Lernpfade</LernLink><PraxisVorbereitung key={auswahl} initialThema={auswahl.replace("werkstatt-praxis-", "werkstatt-")}/></div>;
   if (auswahl === "werkstatt" || getWerkstattEinheit(auswahl)) return <WerkstattTraining einheitId={auswahl === "werkstatt" ? undefined : auswahl}/>;
-  const dachVorschau = dachMedien("steildach", "falzziegel");
-  return <div>
-    <header className={`${styles.hero} ${styles.studioHero}`}><div><span>DEINE BAUSTELLE. DEINE ENTSCHEIDUNGEN.</span><h1>Planen. Verstehen. Handwerk üben.</h1><p>Erkunde das Dach als räumliches Modell, verstehe einzelne Handgriffe und arbeite dich durch vollständige Baustellenaufträge.</p><LernLink href="/projekte#werkstatt">Zum handwerklichen Werkstatttraining →</LernLink></div><figure className={styles.heroRoof}><LernLink href="/projekte#dach-entdecken" aria-label="3D-Dach entdecken: Modellvorschau öffnen">
-      {/* Own local render, with an offline thumbnail fallback. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={dachVorschau.hdPreview ?? dachVorschau.preview} alt="Gerendertes Lehrdach mit profilierten Ziegeln, Gaube, Fenster und Dachentwässerung" width={1440} height={960} onError={e => { if (e.currentTarget.getAttribute("src") !== dachVorschau.preview) e.currentTarget.src = dachVorschau.preview; }} />
-      <figcaption><span>3D-Lernstudio</span><strong>Das ganze Dach verstehen <span aria-hidden="true">↗</span></strong></figcaption></LernLink></figure></header>
+  const auftraegeOffen = new URLSearchParams(routeSearch).get("ansicht") === "auftraege";
+  if (!auftraegeOffen) return <div>
+    <KatalogKopf bereich="PROJEKTE" titel="Was möchtest du üben?">Wähle einen Einstieg für Handgriffe, Dachaufbau oder einen eigenen Auftrag.</KatalogKopf>
     {navigationFehler && <p role="alert">{navigationFehler}</p>}
-    <section className="werkstatt-karte mt-5" aria-labelledby="dach-entdecken-katalog"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>DAS GANZE DACH RÄUMLICH VERSTEHEN</span><h2 id="dach-entdecken-katalog" className="mt-2">3D-Dach entdecken</h2><p>Drei Lehrdächer, zwei Ziegeldeckungen und 34 Details: Bauteile auswählen, Schichten öffnen, Montage verfolgen und dein Verständnis prüfen.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#dach-entdecken">Mein Dach erkunden →</LernLink></section>
-    <div className="werkstatt-karte mt-5"><span className="text-sm font-semibold" style={{color:"var(--text-muted)"}}>NEU · 20 EINHEITEN MIT INTERAKTIVEN ZEICHNUNGEN</span><h2 className="mt-2">Handwerk Schritt für Schritt verstehen</h2><p>Falzziegel und Biberschwanz-Doppeldeckung: messen, anzeichnen, einteilen, verlegen, Schnitt planen und die eigene Arbeit kontrollieren.</p><LernLink className="hauptaktion mt-4 inline-flex" href="/projekte#werkstatt">Werkstatttraining öffnen →</LernLink></div>
-    <div className="werkstatt-karte mt-5"><h2>Für Betrieb und Schule vorbereiten</h2><p>Acht Praxisblätter mit Werkzeug, Material, Arbeitsfolge, Skizze und getrenntem Übungsprotokoll.</p><LernLink href="/projekte?ansicht=praxis">Praxisblätter öffnen →</LernLink></div>
-    <div className={styles.einstieg}><h2>Welchen Auftrag übernimmst du?</h2><p>Deine Antworten, Zeichnungen und Notizen bleiben pro Projekt auf diesem Gerät gespeichert. Du kannst jederzeit wechseln und später weitermachen.</p></div>
-    <div className={styles.grid}>{BAUPROJEKTE.map((p, i) => {
+    <nav className={styles.einstiege} aria-label="Einstiege in die Projekte">
+      <LernLink href="/projekte#werkstatt"><strong>Handgriffe lernen</strong><span>Messen, einteilen und verlegen: Schritt für Schritt üben.</span><span aria-hidden="true">→</span></LernLink>
+      <LernLink href="/projekte#dach-entdecken"><strong>Dach in 3D verstehen</strong><span>Bauteile, Schichten und Montage am Modell erkunden.</span><span aria-hidden="true">→</span></LernLink>
+      <LernLink href="/projekte?ansicht=auftraege"><strong>Baustellenauftrag bearbeiten</strong><span>Sechs Projekte vom Auftrag bis zur eigenen Erklärung.</span><span aria-hidden="true">→</span></LernLink>
+      <LernLink href="/projekte?ansicht=praxis"><strong>Im Betrieb ausprobieren</strong><span>Praxisblätter für Werkzeug, Material und Arbeitsfolge.</span><span aria-hidden="true">→</span></LernLink>
+    </nav>
+  </div>;
+  const projekte = BAUPROJEKTE.filter(p => katalogPasst(suche, p.titel, p.kurz));
+  return <div>
+    <button className={styles.back} onClick={() => waehlen("", "uebersicht")}>← Alle Projekteinstiege</button>
+    <KatalogKopf bereich="PROJEKTE" titel="Baustellenauftrag bearbeiten">Wähle einen Auftrag. Antworten, Zeichnungen und Notizen bleiben pro Projekt gespeichert.</KatalogKopf>
+    {navigationFehler && <p role="alert">{navigationFehler}</p>}
+    <KatalogSuche label="Baustellenaufträge suchen" wert={suche} onChange={setSuche}/>
+    <div className={styles.grid}>{projekte.map(p => {
       const raw = appStorage.getItem(projektKey(p.id));
       const stand = leseProjektStand(raw, p);
-      return <button key={p.id} className={styles.projektKarte} onClick={() => waehlen(p.id)}><span className={styles.nummer}>{String(i + 1).padStart(2, "0")}</span><span className={styles.kartenInhalt}><small>SECHS ARBEITSSCHRITTE · ETWA {p.minuten} MINUTEN</small><strong>{p.titel}</strong><span>{p.kurz}</span><span className={styles.pfad}>{PROJEKT_SCHRITTE.slice(0, 3).join(" → ")} …</span><span className={styles.status}>{stand?.abgeschlossen ? "Bearbeitet ✓ · Noch einmal ansehen" : stand ? `Bei Schritt ${stand.schritt + 1} weiterarbeiten →` : raw ? "Gespeicherten Stand prüfen →" : "Auftrag öffnen →"}</span></span></button>;
+      return <button key={p.id} className={styles.projektKarte} onClick={() => waehlen(p.id)}><span className={styles.nummer}>{String(BAUPROJEKTE.indexOf(p) + 1).padStart(2, "0")}</span><span className={styles.kartenInhalt}><strong>{p.titel}</strong><small>{p.minuten} Minuten · Sechs Arbeitsschritte</small><span>{p.kurz}</span><span className={styles.status}>{stand?.abgeschlossen ? "Bearbeitet ✓ · Noch einmal ansehen" : stand ? `Bei Schritt ${stand.schritt + 1} weiterarbeiten →` : raw ? "Gespeicherten Stand prüfen →" : "Auftrag öffnen →"}</span></span></button>;
     })}</div>
-    <aside className={styles.hinweis}><strong>Üben mit klaren Grenzen</strong><p>Die Projekte verwenden ausdrücklich genannte Rechenannahmen und schematische Zeichnungen. Richtige Auswahl- und Rechenantworten werden getrennt von deiner eigenen Einschätzung einer freien Erklärung oder Zeichnung angezeigt.</p><Link href="/bildtraining">Details im Bildtraining erkennen →</Link></aside>
+    {projekte.length === 0 && <p role="status">Kein Auftrag passt zu deiner Suche.</p>}
+    <p className={styles.katalogHinweis}><Link href="/bildtraining?ansicht=uebersicht">Details im Bildtraining üben →</Link></p>
   </div>;
 }
 

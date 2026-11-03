@@ -8,12 +8,16 @@ import { appStorage } from "@/lib/lernSpeicher";
 
 beforeEach(()=>appStorage.clear());afterEach(cleanup);
 describe("Aufgeräumte Einstiegsseiten",()=>{
-  it("bietet auf der Übersicht Weiterlernen, Tagesrunde und persönliche Hinweise statt wiederholter Kataloge",()=>{
+  it("bietet eine konkrete Fortsetzung und zwei kompakte Alternativen",()=>{
     appStorage.setItem("lernwerkstatt-zuletzt-route","/grundlagen/mathe#aufbau-laengen");
     render(<Home/>);
     expect(screen.getByRole("link",{name:"Weiterlernen"}).getAttribute("href")).toBe("/grundlagen/mathe#aufbau-laengen");
-    expect(screen.getByRole("heading",{name:"Deine Tagesrunde"})).toBeDefined();
-    expect(screen.getByRole("heading",{name:"Deine Lernhinweise"})).toBeDefined();
+    expect(screen.getByRole("heading",{name:"Wahre Sparren-, Grat- und Kehllängen"})).toBeDefined();
+    expect(screen.getByRole("navigation",{name:"Andere Lernmöglichkeiten"}).querySelectorAll("a")).toHaveLength(2);
+    expect(screen.getByRole("link",{name:/^Tagesrunde /}).getAttribute("href")).toBe("/heute");
+    expect(screen.getByRole("link",{name:/^Gezielt weiterüben /}).getAttribute("href")).toBe("/lernhilfe");
+    expect(document.querySelectorAll(".home-hero-cta")).toHaveLength(1);
+    expect(document.querySelector(".home-exam-date")?.hasAttribute("open")).toBe(false);
     expect(screen.queryByText(/Dem Wasser/)).toBeNull();expect(screen.queryByText("Heute mal anders lernen.")).toBeNull();
   });
   it("behält auf der Startseite auch ältere angefangene Quizrunden erreichbar",()=>{

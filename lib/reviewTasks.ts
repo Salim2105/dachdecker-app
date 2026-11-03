@@ -87,6 +87,8 @@ export function createReviewSession(filter:ReviewFilter,minuten:number,now=Date.
   return {version:1,id:`runde-${now}-${Math.floor(random()*1e9)}`,filter,minuten,startedAt:now,index:0,tasks:selectReviewTasks(filter,minuten,now).map(t=>freezeReviewTask(t,random)),answers:{},results:{}};
 }
 export const reviewSessionKey=(filter:ReviewFilter)=>`tagesrunde-v2-${filter}`;
+export const planReviewSessionKey=(id:string)=>`tagesrunde-plan-${id}`;
+export const reviewSessionRoute=(filter:ReviewFilter,planId?:string)=>planId===undefined?`/heute?runde=${filter}`:`/heute?plan=${encodeURIComponent(planId)}`;
 const object=(v:unknown):v is Record<string,unknown>=>!!v&&typeof v==="object"&&!Array.isArray(v);
 const strings=(v:unknown):v is string[]=>Array.isArray(v)&&v.every(x=>typeof x==="string");
 const finite=(v:unknown):v is number=>typeof v==="number"&&Number.isFinite(v);

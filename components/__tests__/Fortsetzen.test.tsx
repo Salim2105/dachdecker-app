@@ -45,8 +45,18 @@ describe("Übungen wieder aufnehmen", () => {
     expect(screen.getByText("Frage b")).toBeTruthy();
     expect(screen.getByText("2 / 2")).toBeTruthy();
   });
+  it("behält bei einer gestarteten Themenrunde den Filter im neuen Fortsetzungsziel", () => {
+    window.history.replaceState(null, "", "/lernen/lf01/ueben?thema=Dach");
+    render(<SessionRunner aufgaben={aufgaben} lfId="lf01"/>);
+    expect(localStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/lernen/lf01/ueben?thema=Dach");
+    expect(JSON.parse(localStorage.getItem("dd-session-lf01")!).aufgabenIds).toEqual(["a", "b"]);
+    window.history.replaceState(null, "", "/");
+  });
+
   it("zeigt eine schon gespeicherte Bewertung nach Neuladen ohne zweite Bewertung", () => {
+    localStorage.setItem("lernwerkstatt-zuletzt-route", "/sprache/deutsch#auftrag");
     const ansicht = render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    expect(localStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/lernen/lf01/ueben");
     fireEvent.click(screen.getByText("Antwort vergleichen"));
     fireEvent.click(screen.getByText("Stimmt vollständig"));
     const vorher = ladeFortschritt().a;

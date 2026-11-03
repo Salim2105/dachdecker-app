@@ -19,3 +19,11 @@ export function uebungsFortsetzung(letzte: string, lf: string) {
   }
   return null;
 }
+
+/** Canonical activity route, without changing older saved pointers. */
+export function uebungsRoute(id: string): string | null {
+  if (id === "heute") return "/heute";
+  const einheit = id.endsWith("-einheit"), rechnen = id.endsWith("-rechnung");
+  const feld = getLernfeld(einheit ? id.slice(0, -8) : rechnen ? id.slice(0, -9) : id);
+  return feld ? einheit ? `/lernen/${feld.id}?ansicht=alte-runde` : `/lernen/${feld.id}/ueben${rechnen ? "?typ=rechnung" : ""}` : null;
+}

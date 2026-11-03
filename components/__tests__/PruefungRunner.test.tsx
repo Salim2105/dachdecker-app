@@ -20,7 +20,9 @@ describe("Prüfungsraum mit gespeicherten Antworten", () => {
   it("erhält Antworten, Rechenwerte und Markierungen beim Navigieren und kompletten Wiederöffnen", () => {
     const original = attempt();
     saveExam(appStorage, original);
+    appStorage.setItem("lernwerkstatt-zuletzt-route", "/sprache/deutsch#auftrag");
     const first = render(<PruefungRunner />);
+    expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/pruefung#feldtraining");
     fireEvent.click(screen.getByRole("checkbox", { name: "Rinne" }));
     fireEvent.click(screen.getByRole("button", { name: /Zum Wiedersehen markieren/ }));
     fireEvent.click(screen.getByRole("button", { name: "Weiter" }));
@@ -45,6 +47,12 @@ describe("Prüfungsraum mit gespeicherten Antworten", () => {
     expect(restored.answers[calc.id].fields.result).toBe("60,0");
     expect(screen.queryByText("Verborgene Musterlösung")).toBeNull();
     expect(screen.queryByText(/Deine Auswertung/)).toBeNull();
+  });
+
+  it("überschreibt beim bloßen Öffnen des Prüfungsmenüs keinen begonnenen Lernschritt", () => {
+    appStorage.setItem("lernwerkstatt-zuletzt-route", "/sprache/englisch#sicherheit");
+    render(<PruefungRunner/>);
+    expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/sprache/englisch#sicherheit");
   });
 
   it("zeigt Überspringen im Überblick und gibt erst nach ausdrücklicher Abgabe Ergebnisse frei", () => {

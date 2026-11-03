@@ -5,6 +5,7 @@ import type { Bewertung, BewertungsKontext } from "@/content/schema";
 import { getAufgabe, getAufgaben, getLektionen } from "@/lib/content";
 import { getCurriculum, type LernCurriculum, type LernEinheit } from "@/lib/curriculum";
 import { appStorage } from "@/lib/lernSpeicher";
+import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { getBegriff, sucheBegriffe } from "@/lib/glossar";
 import { kursStandKey, ladeKursArchiv, ladeKursStand, type KursStand } from "@/lib/kursStand";
 import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
@@ -24,24 +25,29 @@ import { SessionRunner } from "@/components/session/SessionRunner";
 import { ladeGespeicherteAufgaben } from "@/lib/uebungStand";
 import { LearningArtwork } from "@/components/learning/LearningArtwork";
 import { LernIllustration } from "@/components/design/LernIllustration";
-import { learningTone } from "@/components/learning/learningDesign";
 import styles from "@/components/learning/Learning.module.css";
+import { useKatalogFokus } from "@/components/katalog/KatalogKopf";
+import katalogStyles from "@/components/katalog/Katalog.module.css";
 
 const PHASEN = ["Verstehen", "Selbst erklären", "Kontrollfragen", "Anwenden", "Abschluss"];
 export function LernwerkstattKurs({ lfId }: { lfId: string }) {
   const kurs = getCurriculum(lfId);
   const [alteRunde] = useState(() => ladeGespeicherteAufgaben(`dd-session-${lfId}-einheit`, getAufgaben(lfId)));
-  const [alteRundeOffen, setAlteRundeOffen] = useState(() => !!alteRunde && appStorage.getItem("letzte-session") === `${lfId}-einheit`);
+  const [alteRundeOffen, setAlteRundeOffen] = useState(() => !!alteRunde && appStorage.getItem("letzte-session") === `${lfId}-einheit` && (typeof window === "undefined" || !window.location.hash && new URLSearchParams(window.location.search).get("ansicht") !== "uebersicht"));
   const [auswahl, setAuswahl] = useState<string | null>(() => {
     if (typeof window === "undefined") return null;
-    const id = window.location.hash.slice(1) || appStorage.getItem(`lernwerkstatt-auswahl-${lfId}`);
-    return kurs?.kapitel.some((k) => k.einheiten.some((e) => e.id === id)) ? id : null;
+    return bereichsAuswahl(kurs?.kapitel.flatMap(k => k.einheiten.map(e => e.id)) ?? [], appStorage.getItem(`lernwerkstatt-auswahl-${lfId}`)) || null;
+  });
+  const [offenesKapitel, setOffenesKapitel] = useState(() => {
+    const id = typeof window === "undefined" ? null : window.location.hash.slice(1) || appStorage.getItem(`lernwerkstatt-auswahl-${lfId}`);
+    return kurs?.kapitel.find(k => k.einheiten.some(e => e.id === id))?.id ?? kurs?.kapitel.find(k => k.einheiten.some(e => !ladeKursStand(e).abgeschlossen))?.id ?? kurs?.kapitel[0]?.id ?? "";
   });
   useEffect(()=>{
-    const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(kurs?.kapitel.some(k=>k.einheiten.some(e=>e.id===id))?id:null);};
+    const wechseln=()=>{const id=window.location.hash.slice(1);const kapitel=kurs?.kapitel.find(k=>k.einheiten.some(e=>e.id===id));setAuswahl(kapitel?id:null);if(kapitel)setOffenesKapitel(kapitel.id);setAlteRundeOffen(false);};
     window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);
     return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};
   },[kurs]);
+  useKatalogFokus(`${auswahl}:${alteRundeOffen}`, "[data-kurs-einstieg] h2");
   if (!kurs) return null;
   if (alteRunde && alteRundeOffen) return <section className="mt-6"><button className="mb-4 min-h-11 underline" onClick={() => setAlteRundeOffen(false)}>← Zu den neuen Kapiteln</button><p className="mb-5">Deine bisherige Übungsrunde ist erhalten geblieben. Du kannst sie hier beenden.</p><SessionRunner aufgaben={alteRunde} lfId={`${lfId}-einheit`} zurueck={`/lernen/${lfId}`} /></section>;
   const einheiten = kurs.kapitel.flatMap((k) => k.einheiten);
@@ -49,34 +55,27 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
   const einheit = einheiten.find((e) => e.id === auswahl);
   function waehle(id: string | null) {
     setAuswahl(id);
-    if (id) { appStorage.setItem(`lernwerkstatt-auswahl-${lfId}`, id); appStorage.setItem("lernwerkstatt-zuletzt", JSON.stringify({ lfId, unitId: id })); appStorage.setItem("lernwerkstatt-zuletzt-route", `/lernen/${lfId}#${id}`); }
-    else appStorage.removeItem(`lernwerkstatt-auswahl-${lfId}`);
-    window.history.replaceState(null, "", `${window.location.pathname}${id ? `#${id}` : ""}`);
+    if (id) { setOffenesKapitel(kurs!.kapitel.find(k => k.einheiten.some(e => e.id === id))?.id ?? ""); appStorage.setItem(`lernwerkstatt-auswahl-${lfId}`, id); appStorage.setItem("lernwerkstatt-zuletzt", JSON.stringify({ lfId, unitId: id })); appStorage.setItem("lernwerkstatt-zuletzt-route", `/lernen/${lfId}#${id}`); }
+    window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : "?ansicht=uebersicht"}`);
     window.scrollTo({ top: 0 });
   }
   const fertig = new Map(einheiten.map((e) => [e.id, ladeKursStand(e).abgeschlossen]));
   const abgeschlossen = [...fertig.values()].filter(Boolean).length;
   const naechsteEinheit = einheiten.find((e) => !fertig.get(e.id));
-  return <section className="mt-7" aria-label="Kapitel und Lerneinheiten">
+  return <section className="mt-7" aria-label="Kapitel und Lerneinheiten" data-kurs-einstieg>
     {alteRunde && <button className="mb-5 min-h-12 rounded-xl border p-3 text-left" onClick={() => setAlteRundeOffen(true)}>Bisherige Übungsrunde fortsetzen →</button>}
     {einheit ? <Einheit key={`${einheit.id}:${einheit.version}`} kurs={kurs} einheit={einheit} zurueck={() => waehle(null)} naechste={() => waehle(einheiten[einheiten.indexOf(einheit) + 1]?.id ?? null)} />
     : <>
-      <div className={styles.journeyIntro}>
-        <div><h2>Deine Kapitel</h2><p>{kurs.redaktionell ? "Dein Weg durch dieses Lernfeld. Kleine Schritte, eigene Antworten und Aufgaben zum Ausprobieren." : "Dein Wissen wächst mit jedem Schritt. Entdecke die Kapitel und wähle deine nächste kurze Einheit."}</p></div>
-        <div className={styles.ring} aria-label={`${abgeschlossen} von ${einheiten.length} Einheiten abgeschlossen`}>
-          <svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="32" fill="none" stroke="var(--border)" strokeWidth="7" /><circle cx="40" cy="40" r="32" fill="none" stroke="var(--brand-teal, #67d8c8)" strokeWidth="7" strokeLinecap="round" strokeDasharray="201.06" strokeDashoffset={201.06 * (1 - abgeschlossen / Math.max(1, einheiten.length))} /></svg>
-          <div><strong>{abgeschlossen}<span> / {einheiten.length}</span></strong><span>Einheiten abgeschlossen</span></div>
-        </div>
+      <div className={katalogStyles.kapitelIntro}>
+        <h2>Deine Kapitel</h2><p>Öffne ein Kapitel und wähle eine kurze Einheit. {abgeschlossen} von {einheiten.length} Einheiten abgeschlossen.</p>
       </div>
-      <div className={styles.chapters}>
+      <div className={katalogStyles.kapitelListe}>
         {kurs.kapitel.map((k, index) => {
           const kapitelFertig = k.einheiten.filter((e) => fertig.get(e.id)).length;
-          return <section key={k.id} className={styles.chapter} style={learningTone(index)}>
-            <header className={styles.chapterHeader}>
-              <div><span className={styles.chapterLabel}><span>{String(index + 1).padStart(2, "0")}</span> Kapitel</span><h3>{k.titel}</h3><small>{kapitelFertig ? `${kapitelFertig} von ${k.einheiten.length} Einheiten geschafft` : `${k.einheiten.length} kurze Einheiten · In deinem Tempo`}</small></div>
-              <LearningArtwork variant={index} className={styles.chapterArt} />
-            </header>
-            <div className={styles.unitList}>
+          const offen = offenesKapitel === k.id;
+          return <section key={k.id} className={katalogStyles.kapitel}>
+            <h3><button className={katalogStyles.kapitelKnopf} aria-expanded={offen} aria-controls={`kapitel-${k.id}`} onClick={() => setOffenesKapitel(offen ? "" : k.id)}><span className={katalogStyles.kapitelNummer}>{String(index + 1).padStart(2, "0")}</span><span><strong>{k.titel}</strong><small>{kapitelFertig ? `${kapitelFertig} von ${k.einheiten.length} Einheiten abgeschlossen` : `${k.einheiten.length} kurze Einheiten`}</small></span><span aria-hidden="true">{offen ? "−" : "+"}</span></button></h3>
+            <div id={`kapitel-${k.id}`} hidden={!offen} className={katalogStyles.einheiten}>
               {k.einheiten.map((e, einheitIndex) => {
                 const erledigt = fertig.get(e.id);
                 const naechste = e.id === naechsteEinheit?.id;

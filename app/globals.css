@@ -581,3 +581,49 @@ body.min-h-screen, .app-shell { min-height: calc(100dvh / var(--app-zoom, 1)); }
 .vorbereitung-taschenrechner details { margin:18px 0; }
 @media(max-width:1100px) { .vorbereitung-fallraster { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:600px) { .vorbereitung-fallraster, .vorbereitung-dossier, .vorbereitung-zahleneingabe { grid-template-columns:1fr; } .vorbereitung-dach { display:none; } .vorbereitung-tabs button { flex:1; font-size:13px; padding:9px; } .vorbereitung-rechenschritt { padding:12px; } .vorbereitung-reihenfolge li { flex-wrap:wrap; } .vorbereitung-reihenfolge li span { flex-basis:100%; } }
+
+/* HOME 0.15: one next step, two compact alternatives and a quiet overview. */
+.home-klar { max-width:1080px; margin-inline:auto; }
+.home-klar .home-begruessung { margin-bottom:20px; }
+.home-next { padding:clamp(24px,4vw,40px); border-radius:24px; background:var(--ink); color:#fff8ef; border:1px solid var(--border-soft); box-shadow:var(--shadow-sm); }
+.home-next-label { display:block; color:#ffc39a; font-size:11px; font-weight:750; letter-spacing:.11em; }
+.home-next-bereich { color:#d3e1e8; margin-top:20px; font-size:14px; }
+.home-next h2 { font-size:clamp(27px,3.4vw,40px); line-height:1.2; letter-spacing:-.035em; font-weight:750; max-width:32ch; margin-top:8px; overflow-wrap:anywhere; }
+.home-next-schritt { font-size:16px; line-height:1.7; margin-top:16px; max-width:65ch; }
+.home-next-zeit { font-size:12px; color:#d3e1e8; margin-top:8px; }
+.home-next .home-hero-cta { margin-top:24px; gap:25px; }
+.home-alternativen { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px; }
+.home-alternative { display:flex; align-items:center; gap:14px; padding:19px; border:1px solid var(--border); border-radius:18px; background:var(--surface); min-width:0; transition:border-color .2s,background .2s; }
+.home-alternative:hover { border-color:var(--accent); background:var(--surface-2); }
+.home-alternative-icon { display:grid; place-items:center; flex-shrink:0; width:38px; height:38px; border-radius:12px; background:var(--tint-teal); color:var(--on-tint-teal); font-size:24px; }
+.home-alternative:nth-child(2) .home-alternative-icon { background:var(--tint-orange); color:var(--on-tint-orange); }
+.home-alternative > span:nth-child(2) { flex:1; min-width:0; }
+.home-alternative strong { display:block; font-size:16px; font-weight:700; }
+.home-alternative > span > span { display:block; color:var(--text-muted); font-size:12px; line-height:1.6; margin-top:4px; overflow-wrap:anywhere; }
+.home-alternative > svg { flex-shrink:0; color:var(--accent); }
+.home-kompakt { margin-top:26px; padding:22px; border:1px solid var(--border-soft); border-radius:20px; background:var(--surface); }
+.home-kompakt-woche { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.home-kompakt h2 { font-size:17px; font-weight:700; }
+.home-kompakt-woche p { font-size:12px; line-height:1.6; color:var(--text-muted); margin-top:5px; }
+.home-klar .home-week-days { color:var(--text-muted); gap:11px; }
+.home-klar .home-week-days > div { gap:7px; }
+.home-klar .home-week-days > div > span:last-child { width:26px; height:26px; border-color:var(--border); }
+.home-klar .home-week-days .gelernt > span:last-child { background:var(--tint-teal); color:var(--on-tint-teal); border-color:var(--on-tint-teal); }
+.home-klar .home-week-days .heute > span:last-child { outline-color:var(--accent); }
+.home-kompakt-zahlen { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:24px; padding-top:19px; border-top:1px solid var(--border-soft); }
+.home-kompakt-zahlen > div { display:flex; flex-direction:column-reverse; gap:4px; }
+.home-kompakt-zahlen dt { color:var(--text-muted); font-size:11px; line-height:1.5; }
+.home-kompakt-zahlen dd { font-size:23px; font-weight:700; letter-spacing:-.03em; }
+.home-kompakt-zahlen small { font-size:13px; font-weight:500; color:var(--text-muted); }
+.home-stand-link { display:inline-flex; align-items:center; gap:8px; min-height:44px; color:var(--accent); font-size:12px; margin-top:12px; text-decoration:underline; text-underline-offset:4px; }
+.home-klar .home-exam-date { margin-top:18px; }
+.home-klar .home-exam-date label { padding-top:12px; }
+.home-klar .home-exam-date summary { min-height:56px; }
+@media(max-width:700px) {
+  .home-alternativen { grid-template-columns:1fr; gap:10px; }
+  .home-alternative { padding:15px; }
+  .home-kompakt { padding:19px; }
+  .home-kompakt-woche { flex-direction:column; align-items:flex-start; gap:17px; }
+  .home-klar .home-week-days { width:100%; justify-content:space-between; gap:5px; }
+  .home-kompakt-zahlen { gap:12px; }
+}

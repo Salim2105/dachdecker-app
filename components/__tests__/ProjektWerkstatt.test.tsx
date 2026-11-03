@@ -4,7 +4,7 @@ import { ProjektWerkstatt } from "@/components/projekte/ProjektWerkstatt";
 import { BAUPROJEKTE,leseProjektStand,projektKey } from "@/lib/bauprojekte";
 
 vi.mock("@/components/aufgaben/DrawCard",()=>({DrawCard:({aufgabe,onErgebnis}:{aufgabe:{id:string};onErgebnis:(b:"teilweise")=>void})=><button data-testid="zeichnung" data-id={aufgabe.id} onClick={()=>onErgebnis("teilweise")}>Meine Zeichnung selbst vergleichen</button>}));
-beforeEach(()=>{localStorage.clear();window.history.replaceState(null,"","/projekte");vi.spyOn(window,"scrollTo").mockImplementation(()=>{});});
+beforeEach(()=>{localStorage.clear();window.history.replaceState(null,"","/projekte?ansicht=auftraege");vi.spyOn(window,"scrollTo").mockImplementation(()=>{});});
 afterEach(()=>{cleanup();vi.restoreAllMocks();});
 const p=BAUPROJEKTE[0];
 const stand=()=>leseProjektStand(localStorage.getItem(projektKey(p.id)),p)!;

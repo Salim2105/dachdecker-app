@@ -13,6 +13,7 @@ import { leereCalcCache } from "@/lib/calc";
 import { lernStatus } from "@/lib/lernstand";
 import { GESAMT_AUFGABEN } from "@/lib/reifegrad";
 
+import { uebungsRoute } from "@/lib/fortsetzung";
 import { ladeStand, leererStand } from "@/lib/uebungStand";
 
 const subscribeClient = () => () => {};
@@ -70,7 +71,16 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
           index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse,
           aufgabenIds: aufgaben.map((a) => a.id),
         }));
-        if (aufgaben.length && letzteSessionStore.getSnapshot() !== lfId) letzteSessionStore.set(lfId);
+        if (aufgaben.length) {
+          if (letzteSessionStore.getSnapshot() !== lfId) letzteSessionStore.set(lfId);
+          const standard = uebungsRoute(lfId);
+          if (standard) {
+            // Keep an explicitly selected topic/calculation subset reproducible.
+            const route = !lfId.endsWith("-einheit") && lfId !== "heute" && window.location.pathname === standard.split("?")[0]
+              ? `${window.location.pathname}${window.location.search}` : standard;
+            appStorage.setItem("lernwerkstatt-zuletzt-route", route);
+          }
+        }
       }
     } catch {}
   }, [KEY, lfId, index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse, fertig, aufgaben]);

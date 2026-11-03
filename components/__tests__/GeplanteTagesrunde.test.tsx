@@ -4,7 +4,7 @@ import * as reviewTasks from "@/lib/reviewTasks";
 import HeutePage from "@/app/heute/page";
 import {Tagesrunde,planRundenKey} from "@/components/review/Tagesrunde";
 import {appStorage} from "@/lib/lernSpeicher";
-import {reviewKey,loadReviewRecords} from "@/lib/review";
+import {reviewKey,loadReviewRecords,createReviewResult} from "@/lib/review";
 import {getReviewTasks,parseReviewSession,reviewSessionKey,type ReviewTask,type ReviewSession} from "@/lib/reviewTasks";
 import {PRUEFUNGS_PLAN_KEY,neuerPruefungsPlan,speicherePruefungsPlan,ladePruefungsPlan,merkeAktuellenPlanBlock,ladeAktuellenPlanBlock,type PlanBlock} from "@/lib/pruefungsPlan";
 const now=Date.parse("2026-10-26T10:00:00Z");
@@ -25,6 +25,7 @@ describe("Feste Tagesrunde aus dem Prüfungsfahrplan",()=>{
   const oldRaw=JSON.stringify(frei);appStorage.setItem(reviewSessionKey("alles"),oldRaw);appStorage.setItem("dd-session-heute","unberührte frühere Runde");
   const v=render(<HeutePage/>);
   expect(screen.getByRole("heading",{name:"Deine geplante Tagesrunde"})).toBeDefined();
+  expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe(block.route);
   expect(stored(block).tasks.map(t=>reviewKey(t.ref))).toEqual(block.aufgabeIds);
   fireEvent.change(screen.getByLabelText("Dein Ergebnis"),{target:{value:"0,"}});
   const vorher=stored(block);v.unmount();vi.spyOn(Math,"random").mockReturnValue(.99);render(<HeutePage/>);
@@ -54,8 +55,9 @@ describe("Feste Tagesrunde aus dem Prüfungsfahrplan",()=>{
   expect(loadReviewRecords()[reviewKey(first.ref)].verlauf).toHaveLength(1);expect(loadReviewRecords()[reviewKey(second.ref)].verlauf).toHaveLength(1);
  });
  it("erfindet bei einer nicht gestarteten Planadresse keine neue Runde",()=>{
-  window.history.replaceState(null,"","/heute?plan=unbekannt");render(<HeutePage/>);
+  appStorage.setItem("lernwerkstatt-zuletzt-route","/sprache/deutsch#auftrag");window.history.replaceState(null,"","/heute?plan=unbekannt");render(<HeutePage/>);
   expect(screen.getByRole("alert").textContent).toContain("nicht gestartet");expect(appStorage.getItem(planRundenKey("unbekannt"))).toBeNull();expect(appStorage.getItem(reviewSessionKey("alles"))).toBeNull();
+  expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/sprache/deutsch#auftrag");
  });
  it("ersetzt unbekannte Aufgaben nicht durch andere Fragen",()=>{
   const block=seed();const plan=ladePruefungsPlan()!;const unbekannt={...block,aufgabeIds:["mathe:entfernt:v1"]};plan.bloecke=[unbekannt];speicherePruefungsPlan(plan);merkeAktuellenPlanBlock(unbekannt);
@@ -74,5 +76,21 @@ describe("Feste Tagesrunde aus dem Prüfungsfahrplan",()=>{
   const block=seed();const v=render(<HeutePage/>);const frozen=stored(block);v.unmount();
   const plan=ladePruefungsPlan()!;plan.wochentage=[0,0,0,0,0,0,0];appStorage.setItem(PRUEFUNGS_PLAN_KEY,JSON.stringify(plan));render(<HeutePage/>);
   expect(stored(block).tasks).toEqual(frozen.tasks);expect(stored(block).minuten).toBe(15);
+ });
+ it("öffnet den ausdrücklich fortgesetzten Mix trotz anderer Auswahl und früherer Quizrunde",()=>{
+  const frei:ReviewSession={version:1,id:"freie-kurz-runde",filter:"kurz",minuten:15,startedAt:now,index:0,tasks:[basic()],answers:{},results:{}};
+  appStorage.setItem(reviewSessionKey("kurz"),JSON.stringify(frei));appStorage.setItem("tagesrunde-filter","tief");appStorage.setItem("dd-session-heute","frühere Quizrunde");
+  window.history.replaceState(null,"","/heute?runde=kurz");render(<HeutePage/>);
+  expect(screen.getByRole("button",{name:/Kurz & aktiv/}).getAttribute("aria-pressed")).toBe("true");
+  expect(screen.getByRole("heading",{name:basic().titel})).toBeDefined();expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/heute?runde=kurz");
+  expect(appStorage.getItem("dd-session-heute")).toBe("frühere Quizrunde");
+  fireEvent.click(screen.getByRole("button",{name:/In Ruhe rechnen/}));
+  expect(window.location.search).toBe("?runde=tief");expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/heute?runde=tief");
+ });
+ it("überschreibt beim Öffnen einer abgeschlossenen Runde kein anderes letztes Lernziel",()=>{
+  const block=seed();const frei:ReviewSession={version:1,id:`plan-runde-${block.id}:fertig`,filter:"alles",minuten:15,startedAt:now,index:1,tasks:[basic()],answers:{},results:{}};
+  const task=frei.tasks[0],key=reviewKey(task.ref);frei.results[key]=createReviewResult(task.ref,`${frei.id}:${key}`,"richtig",{hilfen:[]},now);
+  appStorage.setItem(planRundenKey(block.id),JSON.stringify(frei));appStorage.setItem("lernwerkstatt-zuletzt-route","/sprache/deutsch#auftrag");render(<HeutePage/>);
+  expect(screen.getByRole("heading",{name:"Du hast Zusammenhänge geübt."})).toBeDefined();expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/sprache/deutsch#auftrag");
  });
 });

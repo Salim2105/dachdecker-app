@@ -7,12 +7,13 @@ import { recordReviewResult, type ReviewResult } from "@/lib/review";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
 import { mischeAnzeige } from "@/lib/aktivitaeten";
 import { leseSprachStand, leereSprachAntwort, pruefeSprachAntwort, sprachEinheiten, sprachKey, type SprachAntwort, type SprachEinheit, type SprachStand, type WerkstattSprache } from "@/lib/sprachWerkstatt";
-import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
+import { KatalogKopf, KatalogSuche, katalogPasst, useKatalogFokus } from "@/components/katalog/KatalogKopf";
 import { LernIllustration } from "@/components/design/LernIllustration";
 import styles from "./Sprache.module.css";
 
 export function SprachWerkstatt({ sprache }: { sprache: WerkstattSprache }) {
   const einheiten=sprachEinheiten(sprache);
+  const [suche, setSuche] = useState("");
   const [auswahl,setAuswahl]=useState(()=>bereichsAuswahl(einheiten.map(e=>e.id),appStorage.getItem(`sprachwerkstatt-${sprache}-auswahl`)));
   useEffect(()=>{
     const ausAdresse=()=>{
@@ -25,17 +26,20 @@ export function SprachWerkstatt({ sprache }: { sprache: WerkstattSprache }) {
   },[sprache,einheiten]);
   function waehle(id:string) {
     setAuswahl(id);
-    try{appStorage.setItem(`sprachwerkstatt-${sprache}-auswahl`,id);if(id)appStorage.setItem("lernwerkstatt-zuletzt-route",`/sprache/${sprache}#${id}`);}catch{ /* Der gemeinsame Speicherhinweis bleibt sichtbar; die Einheit kann geöffnet werden. */ }
-    window.history.replaceState(null,"",`${window.location.pathname}${id?`#${id}`:""}`);
+    try{if(id){appStorage.setItem(`sprachwerkstatt-${sprache}-auswahl`,id);appStorage.setItem("lernwerkstatt-zuletzt-route",`/sprache/${sprache}#${id}`);}}catch{ /* Der gemeinsame Speicherhinweis bleibt sichtbar; die Einheit kann geöffnet werden. */ }
+    window.history.pushState(null,"",`${window.location.pathname}${id?`#${id}`:"?ansicht=uebersicht"}`);
     window.scrollTo({top:0});
   }
+  useKatalogFokus(auswahl);
   const e=einheiten.find((e)=>e.id===auswahl);
   if(e)return <SprachLerneinheit key={e.id} einheit={e} zurueck={()=>waehle("")} weiter={()=>waehle(einheiten[einheiten.indexOf(e)+1]?.id??"")} />;
+  const themen = einheiten.filter(e => katalogPasst(suche, e.titel, e.ziel));
   return <div>
-    <section className={styles.hero}><div><span>DEINE SPRACHWERKZEUGE</span><h1>{sprache==="deutsch"?"Deutsch fürs Handwerk.":"Baustellenenglisch. Schritt für Schritt."}</h1><p>{sprache==="deutsch"?"Aufträge verstehen, Arbeit erklären und klar nachfragen. Kurze Situationen aus deinem Ausbildungsalltag.":"Werkzeuge, Maße und klare Rückfragen: einfache englische Sätze, die du auf der Baustelle verstehst."}</p><Link href="/lernhilfe">Deine nächsten Übungen finden →</Link></div><PracticeArtwork art="begriffe"/></section>
-    <div className={styles.intro}><h2>Verstehen. Ausprobieren. Anwenden.</h2><p>Jede Einheit verbindet eine kurze Erklärung, drei Aufgaben und eine freiwillige Schreibübung. Ohne Zeitdruck.</p></div>
-    <div className={styles.grid}>{einheiten.map((e,i)=><button className={styles.card} key={e.id} onClick={()=>waehle(e.id)}><span className={styles.nummer}>{String(i+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>6–8 Minuten · 3 Sprachaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseSprachStand(e).abgeschlossen?"Bearbeitet":"Öffnen"}>{leseSprachStand(e).abgeschlossen?"✓":"→"}</span></button>)}</div>
-    <p className={styles.crosslink}>Noch ein Werkzeug für dich: <Link href={sprache==="deutsch"?"/sprache/englisch":"/sprache/deutsch"}>{sprache==="deutsch"?"Baustellenenglisch entdecken":"Deutsch fürs Handwerk entdecken"} →</Link></p>
+    <KatalogKopf bereich="SPRACHE" titel={sprache==="deutsch"?"Deutsch fürs Handwerk":"Baustellenenglisch"}>{sprache==="deutsch"?"Wähle ein Thema: Aufträge verstehen, Arbeit erklären und klar nachfragen.":"Wähle ein Thema: Werkzeuge, Maße und einfache Rückfragen auf Englisch."}</KatalogKopf>
+    <KatalogSuche label="Sprachthemen suchen" wert={suche} onChange={setSuche}/>
+    <div className={styles.grid}>{themen.map(e=><button className={styles.card} key={e.id} onClick={()=>waehle(e.id)}><span className={styles.nummer}>{String(einheiten.indexOf(e)+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>6–8 Minuten · 3 Sprachaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseSprachStand(e).abgeschlossen?"Bearbeitet":"Öffnen"}>{leseSprachStand(e).abgeschlossen?"✓":"→"}</span></button>)}</div>
+    {themen.length === 0 && <p role="status">Kein Sprachthema passt zu deiner Suche.</p>}
+    <p className={styles.crosslink}><Link href={sprache==="deutsch"?"/sprache/englisch?ansicht=uebersicht":"/sprache/deutsch?ansicht=uebersicht"}>{sprache==="deutsch"?"Zu Baustellenenglisch":"Zu Deutsch fürs Handwerk"} →</Link></p>
   </div>;
 }
 

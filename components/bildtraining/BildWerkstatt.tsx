@@ -13,7 +13,7 @@ import { Nacharbeit } from "@/components/Nacharbeit";
 import { AktivitaetsKarte } from "@/components/AktivitaetsKarte";
 import { SafeSvg } from "@/components/SafeSvg";
 import { DachBild } from "@/components/dach3d/DachBild";
-import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
+import { KatalogKopf, useKatalogFokus } from "@/components/katalog/KatalogKopf";
 import styles from "./Bildtraining.module.css";
 
 const AUSWAHL_KEY="bildtraining-auswahl";
@@ -22,12 +22,12 @@ export function BildWerkstatt(){
  const [auswahl,setAuswahl]=useState(()=>bereichsAuswahl(BILD_AUFGABEN.map(a=>a.id),appStorage.getItem(AUSWAHL_KEY)));
  const [filter,setFilter]=useState("alle");
  useEffect(()=>{const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(BILD_AUFGABEN.some(a=>a.id===id)?id:"");};window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};},[]);
- function waehle(id:string){setAuswahl(id);try{if(id)letzteAufgabe(id);else appStorage.removeItem(AUSWAHL_KEY);}catch{}window.history.replaceState(null,"",`${window.location.pathname}${id?`#${id}`:""}`);window.scrollTo({top:0});}
+ function waehle(id:string){setAuswahl(id);try{if(id)letzteAufgabe(id);}catch{}window.history.pushState(null,"",`${window.location.pathname}${id?`#${id}`:"?ansicht=uebersicht"}`);window.scrollTo({top:0});}
+ useKatalogFokus(auswahl);
  const aufgabe=BILD_AUFGABEN.find(a=>a.id===auswahl);
  if(aufgabe)return <BildEinheit key={aufgabe.id} aufgabe={aufgabe} zurueck={()=>waehle("")} weiter={()=>waehle(BILD_AUFGABEN[BILD_AUFGABEN.indexOf(aufgabe)+1]?.id??"")}/>;
  return <div>
-  <section className={styles.hero}><div><span>DEIN AUGE FÜRS HANDWERK</span><h1>Genau hinsehen. Zusammenhänge erkennen.</h1><p>24 Bildaufgaben zu sechs Baustellenthemen. Bauteile erkennen, Abläufe ordnen und sichtbare Befunde untersuchen.</p><Link href="/projekte">Im ganzen Baustellenprojekt anwenden →</Link></div><PracticeArtwork art="zeichnen"/></section>
-  <div className={styles.intro}><h2>Womit möchtest du anfangen?</h2><p>Die Zeichnungen zeigen vereinfachte Lernbeispiele. Jede Nummer ist auch mit Tastatur und Auswahlliste erreichbar.</p></div>
+  <KatalogKopf bereich="BILDTRAINING" titel="Genau hinsehen und verstehen">Wähle ein Baustellenthema. 24 Bildaufgaben helfen dir, Bauteile, Abläufe und sichtbare Befunde zu erkennen.</KatalogKopf>
   <div className={styles.filter} role="group" aria-label="Bildaufgaben nach Baustellenthema filtern"><button aria-pressed={filter==="alle"} onClick={()=>setFilter("alle")}>Alle Themen</button>{BILD_THEMEN.map(t=><button key={t.id} aria-pressed={filter===t.id} onClick={()=>setFilter(t.id)}>{t.titel}</button>)}</div>
   {BILD_THEMEN.filter(t=>filter==="alle"||filter===t.id).map(t=><section className={styles.thema} key={t.id}><div className={styles.themeHead}><h2>{t.titel}</h2><span>Vier Wege, genauer hinzusehen</span></div><div className={styles.grid}>{BILD_AUFGABEN.filter(a=>a.projektId===t.id).map((a,i)=>{const s=ladeBildStand(a);return <button className={styles.karte} key={a.id} onClick={()=>waehle(a.id)}><span className={styles.nummer}>{String(i+1).padStart(2,"0")}</span><span><strong>{a.aktivitaet.titel}</strong><small>{a.minuten} Minuten · {a.art==="bauteile"?"Zuordnung":a.art==="folge"?"Reihenfolge":a.art==="fehler"?"Fehlersuche":"Befund prüfen"}</small><span>{a.lernziel}</span></span><span className={styles.badge}>{s.abgeschlossen?pruefeBildAufgabe(a,s.antwort)==="richtig"?"Bearbeitet ✓":"Noch üben":"Öffnen →"}</span></button>;})}</div></section>)}
  </div>;

@@ -10,6 +10,33 @@ beforeEach(() => { appStorage.clear(); window.history.replaceState(null, "", "/l
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
 
 describe("LF7-Lerneinheit", () => {
+  it("klappt Kapitel einzeln auf und öffnet nach einem Einheitensprung das zugehörige Kapitel", () => {
+    const kurs = getCurriculum("lf07")!;
+    render(<LernwerkstattKurs lfId="lf07"/>);
+    const erstes = screen.getByRole("button", {name:new RegExp(kurs.kapitel[0].titel)});
+    expect(erstes.getAttribute("aria-expanded")).toBe("true");
+    const kapitel = kurs.kapitel[1];
+    const knopf = screen.getByRole("button", {name:new RegExp(kapitel.titel)});
+    fireEvent.click(knopf);
+    expect(erstes.getAttribute("aria-expanded")).toBe("false");
+    expect(knopf.getAttribute("aria-expanded")).toBe("true");
+    fireEvent.click(screen.getByRole("button", {name:new RegExp(kapitel.einheiten[0].titel)}));
+    fireEvent.click(screen.getByRole("button", {name:"← Alle Kapitel"}));
+    expect(screen.getByRole("button", {name:new RegExp(kapitel.titel)}).getAttribute("aria-expanded")).toBe("true");
+    expect(window.location.search).toBe("?ansicht=uebersicht");
+  });
+  it("lässt beim ausdrücklichen Katalogaufruf den gespeicherten Lernschritt und seine Notiz erhalten", () => {
+    const e = getCurriculum("lf07")!.kapitel[1].einheiten[0];
+    appStorage.setItem(`lernwerkstatt-auswahl-lf07`, e.id);
+    const vorher = JSON.stringify({...neuerKursStand(e), notiz:"Mein gespeicherter Entwurf"});
+    appStorage.setItem(kursStandKey(e), vorher);
+    window.history.replaceState(null,"","/lernen/lf07?ansicht=uebersicht");
+    render(<LernwerkstattKurs lfId="lf07"/>);
+    expect(screen.getByRole("heading", {name:"Deine Kapitel"})).toBeDefined();
+    expect(screen.getByRole("button", {name:new RegExp(getCurriculum("lf07")!.kapitel[1].titel)}).getAttribute("aria-expanded")).toBe("true");
+    expect(appStorage.getItem(kursStandKey(e))).toBe(vorher);
+    expect(appStorage.getItem("lernwerkstatt-auswahl-lf07")).toBe(e.id);
+  });
   it("führt durch Verstehen, Abruf, drei Kontrollen, Anwendung und Abschluss", () => {
     render(<LernwerkstattKurs lfId="lf07" />);
     fireEvent.click(screen.getByRole("button", { name: /Vier Bauteile, ein Wasserweg/ }));

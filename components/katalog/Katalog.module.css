@@ -1,0 +1,22 @@
+.kopf{margin:8px 0 24px;max-width:75ch}
+.kopf>span{font-size:12px;letter-spacing:.09em;font-weight:700;color:var(--accent)}
+.kopf h1{font-size:clamp(27px,3vw,38px);font-weight:750;line-height:1.22;letter-spacing:-.035em;margin:8px 0 12px}
+.kopf p{color:var(--text-muted);line-height:1.75;max-width:65ch}
+.suche{display:flex;flex-direction:column;gap:8px;max-width:520px;margin:20px 0;font-size:14px;font-weight:600}
+.suche input{min-height:46px;width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text);font-size:16px;font-weight:400}
+.suche input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.kapitelIntro{margin-bottom:20px}
+.kapitelIntro h2{font-size:23px;font-weight:700}
+.kapitelIntro p{margin-top:8px;line-height:1.7;color:var(--text-muted)}
+.kapitelListe{display:grid;gap:12px}
+.kapitel{min-width:0;overflow:hidden;border:1px solid var(--border);border-radius:16px;background:var(--surface)}
+.kapitelKnopf{display:flex;align-items:center;gap:16px;width:100%;min-height:88px;padding:18px 20px;text-align:left}
+.kapitelKnopf>span:nth-child(2){flex:1;min-width:0}
+.kapitelKnopf strong{display:block;font-size:18px;line-height:1.45;font-weight:650;overflow-wrap:anywhere}
+.kapitelKnopf small{display:block;margin-top:5px;font-size:13px;font-weight:400;line-height:1.6;color:var(--text-muted)}
+.kapitelKnopf>span:last-child{font-size:24px;color:var(--accent)}
+.kapitelNummer{font-size:14px;font-weight:700;color:var(--text-muted)}
+.kapitelKnopf:focus-visible{outline:3px solid var(--accent);outline-offset:-4px;border-radius:14px}
+.einheiten{border-top:1px solid var(--border);padding:5px 20px 10px}
+.einheiten[hidden]{display:none}
+@media(max-width:560px){.kapitelKnopf{padding:16px;gap:12px}.einheiten{padding:4px 12px 8px}.kapitelKnopf strong{font-size:16px}}

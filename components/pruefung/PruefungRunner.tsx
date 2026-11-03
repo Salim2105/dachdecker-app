@@ -53,6 +53,13 @@ function Pruefungsraum() {
   const [practice, setPractice] = useState<Aufgabe[] | null>(null);
   const [bereich, setBereich] = useState("lf07");
 
+  useEffect(() => {
+    if (attempt && attempt.submittedAt === null && !menu && !historyView && !practice) {
+      try { appStorage.setItem("lernwerkstatt-zuletzt-route", "/pruefung#feldtraining"); }
+      catch { /* The shared storage status reports a failed write. */ }
+    }
+  }, [attempt, menu, historyView, practice]);
+
   function commit(next: ExamAttempt) {
     setAttempt(next);
     try {

@@ -25,7 +25,7 @@ import { pruefeSprachAntwort } from "@/lib/sprachWerkstatt";
 import { createReviewResult, recordReviewResult, reviewKey, reviewStorageError, type ReviewResult } from "@/lib/review";
 import { mitWerkstattReviewKontext, syncWerkstattReviewNachweise } from "@/lib/werkstattNachweise";
 import { mitDachReviewKontext, syncDachReviewNachweise } from "@/lib/dach3dNachweise";
-import { createReviewSession, emptyReviewAnswer, parseReviewSession, reviewSessionKey, saveReviewSession, getReviewTasks, freezeReviewTask, type ReviewAnswer, type ReviewFilter, type ReviewSession, type ReviewTask } from "@/lib/reviewTasks";
+import { createReviewSession, emptyReviewAnswer, parseReviewSession, reviewSessionKey, planReviewSessionKey, reviewSessionRoute, saveReviewSession, getReviewTasks, freezeReviewTask, type ReviewAnswer, type ReviewFilter, type ReviewSession, type ReviewTask } from "@/lib/reviewTasks";
 import { ladeAktuellenPlanBlock, ladePruefungsPlan, erledigePlanBlock, speicherePruefungsPlan, merkeAktuellenPlanBlock } from "@/lib/pruefungsPlan";
 import styles from "./Tagesrunde.module.css";
 
@@ -40,13 +40,13 @@ const clientTrue = () => true;
 const clientFalse = () => false;
 const fehlertext = (e: unknown) => e instanceof Error ? e.message : "Dein Stand konnte nicht gespeichert werden. Bitte erstelle eine Sicherung.";
 
-export function Tagesrunde({planId}:{planId?:string} = {}) {
+export function Tagesrunde({planId,runde}:{planId?:string;runde?:ReviewFilter} = {}) {
   const client = useSyncExternalStore(clientSubscribe, clientTrue, clientFalse);
-  return client ? planId !== undefined ? <GeplanteTagesrundeAufGeraet key={planId} planId={planId}/> : <TagesrundeAufGeraet /> : <p>Deine Tagesrunde wird geöffnet …</p>;
+  return client ? planId !== undefined ? <GeplanteTagesrundeAufGeraet key={planId} planId={planId}/> : <TagesrundeAufGeraet key={runde} startFilter={runde}/> : <p>Deine Tagesrunde wird geöffnet …</p>;
 }
 
 /** A planned round has its own storage key and never replaces a free/legacy round. */
-export const planRundenKey = (id:string) => `tagesrunde-plan-${id}`;
+export const planRundenKey = planReviewSessionKey;
 function GeplanteTagesrundeAufGeraet({planId}:{planId:string}) {
   return <div className={styles.werkstatt}>
     <header className={styles.hero}><span className={styles.kicker}>Dein Prüfungsfahrplan</span><h1>Deine geplante Tagesrunde</h1><p>Diese feste Auswahl gehört zu deinem Fahrplan. Deine anderen angefangenen Runden bleiben erhalten.</p></header>
@@ -55,14 +55,14 @@ function GeplanteTagesrundeAufGeraet({planId}:{planId:string}) {
   </div>;
 }
 
-function TagesrundeAufGeraet() {
-  const [art, setArt] = useState<ReviewFilter>(() => { const v = appStorage.getItem("tagesrunde-filter"); return v === "kurz" || v === "tief" ? v : "alles"; });
+function TagesrundeAufGeraet({startFilter}:{startFilter?:ReviewFilter}) {
+  const [art, setArt] = useState<ReviewFilter>(() => { const v = startFilter ?? appStorage.getItem("tagesrunde-filter"); return v === "kurz" || v === "tief" ? v : "alles"; });
   const [nummer, setNummer] = useState(0);
   const [bestaetigen, setBestaetigen] = useState(false);
   const [fehler, setFehler] = useState("");
   const minuten = useSyncExternalStore(lernzeitStore.subscribe, lernzeitStore.getSnapshot, lernzeitStore.getServerSnapshot);
   function wechseln(v: ReviewFilter) {
-    try { appStorage.setItem("tagesrunde-filter", v); setArt(v); setBestaetigen(false); }
+    try { appStorage.setItem("tagesrunde-filter", v); setArt(v); setBestaetigen(false); window.history.pushState(null,"",reviewSessionRoute(v)); window.dispatchEvent(new PopStateEvent("popstate")); }
     catch (e) { setFehler(fehlertext(e)); }
   }
   function neueRunde() {
@@ -100,7 +100,7 @@ function Runde({ art, minuten, planId }: { art: ReviewFilter; minuten: number; p
     const raw=appStorage.getItem(speicherKey);
     if(raw!==null) {
       const stand=parseReviewSession(raw);
-      const passend=planId===undefined || !!stand && stand.filter==="alles" && stand.id.startsWith(`plan-runde-${planId}:`) && stand.tasks.reduce((sum,t)=>sum+t.sekunden,0)<=stand.minuten*60*.8+1 && (stand.index<stand.tasks.length || stand.tasks.every(t=>stand.results[reviewKey(t.ref)]));
+      const passend=!!stand && (planId===undefined ? stand.filter===art : stand.filter==="alles" && stand.id.startsWith(`plan-runde-${planId}:`) && stand.tasks.reduce((sum,t)=>sum+t.sekunden,0)<=stand.minuten*60*.8+1 && (stand.index<stand.tasks.length || stand.tasks.every(t=>stand.results[reviewKey(t.ref)])));
       return {raw,stand:passend?stand:null,fehler:""};
     }
     if(planId===undefined)return {raw,stand:createReviewSession(art,minuten),fehler:""};
@@ -134,6 +134,11 @@ function Runde({ art, minuten, planId }: { art: ReviewFilter; minuten: number; p
       for (const r of Object.values(geladen.stand?.results ?? {})) { recordReviewResult(r); syncWerkstattReviewNachweise(r); syncDachReviewNachweise(r); }
     } catch (e) { queueMicrotask(() => setFehler(fehlertext(e))); }
   }, [geladen,planId,speicherKey]);
+  useEffect(() => {
+    if (!stand?.tasks[stand.index]) return;
+    try { appStorage.setItem("lernwerkstatt-zuletzt-route",reviewSessionRoute(stand.filter,planId)); }
+    catch (e) { queueMicrotask(() => setFehler(fehlertext(e))); }
+  }, [stand,planId]);
   useEffect(()=>{
     if(planId===undefined || !stand || !stand.tasks.length || stand.index!==stand.tasks.length || !stand.tasks.every(t=>stand.results[reviewKey(t.ref)]))return;
     try {

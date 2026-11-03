@@ -2,65 +2,55 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
-import { MATHE_EINHEITEN, pruefeMathe, type MatheEinheit, type MatheErgebnis } from "@/lib/matheGrundlagen";
+import { MATHE_EINHEITEN, pruefeMathe, type MatheEinheit } from "@/lib/matheGrundlagen";
 import { appStorage } from "@/lib/lernSpeicher";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
-import { PracticeArtwork } from "@/components/practice/PracticeArtwork";
+import { KatalogKopf, KatalogSuche, katalogPasst, useKatalogFokus } from "@/components/katalog/KatalogKopf";
 import { LernIllustration } from "@/components/design/LernIllustration";
 import { GlossarText, BegriffsListe, oeffneGlossarBegriff } from "@/components/GlossarText";
 import { MatheSkizze } from "./MatheSkizze";
 import { AUFBAU_EINHEITEN, leseAufbauStand } from "@/lib/matheAufbau";
-import { recordReviewResult, validReviewResult, type ReviewResult } from "@/lib/review";
+import { recordReviewResult } from "@/lib/review";
+import { leseMatheStand, matheKey, type MatheStand as Stand, type MatheAntwort as Antwort } from "@/lib/matheStand";
 import { neueMatheRueckmeldung } from "@/lib/matheBewertung";
 import { PruefungsMathe } from "./PruefungsMathe";
 import { AufbauWerkstatt } from "./AufbauWerkstatt";
 import styles from "./Mathe.module.css";
-import aufbauStyles from "./Aufbau.module.css";
 
-interface Antwort { wert: string; einheit: string; hilfen: string[]; ergebnis?: MatheErgebnis; reviewResult?: ReviewResult }
-interface Stand { version: 1; index: number; notiz: string; antworten: Record<string, Antwort>; abgeschlossen: boolean; reviewPending?: ReviewResult[] }
-export const matheKey = (id: string) => `fachmathe-${id}-v1`;
-export function leseMatheStand(id: string): Stand {
-  const e = MATHE_EINHEITEN.find((m) => m.id === id);
-  const leer: Stand = { version: 1, index: 0, notiz: "", antworten: {}, abgeschlossen: false };
-  if (!e) return leer;
-  try {
-    const s = JSON.parse(appStorage.getItem(matheKey(id)) || "null");
-    if (!s || s.version !== 1 || !Number.isInteger(s.index) || s.index < 0 || s.index >= e.fragen.length || typeof s.notiz !== "string" || typeof s.abgeschlossen !== "boolean" || !s.antworten || typeof s.antworten !== "object" || Array.isArray(s.antworten)) return leer;
-    if (s.reviewPending !== undefined && (!Array.isArray(s.reviewPending) || !s.reviewPending.every((r:unknown)=>validReviewResult(r)&&r.ref.quelle==="mathe"&&e.fragen.some(f=>f.id===r.ref.id)))) return leer;
-    for (const [key, v] of Object.entries(s.antworten) as [string, Antwort][]) {
-      if (!e.fragen.some((f) => f.id === key) || !v || typeof v.wert !== "string" || typeof v.einheit !== "string" || !Array.isArray(v.hilfen) || !v.hilfen.every((h) => typeof h === "string")) return leer;
-      if (v.ergebnis) { const f = e.fragen.find((f) => f.id === key)!; const geprueft = pruefeMathe(f, v.wert, v.einheit); if (!geprueft) return leer; v.ergebnis = geprueft; }
-      if (v.reviewResult && (!validReviewResult(v.reviewResult) || v.reviewResult.ref.quelle !== "mathe" || v.reviewResult.ref.id !== key || !v.ergebnis || v.reviewResult.bewertung !== (v.ergebnis.richtig ? "richtig" : "falsch"))) return leer;
-    }
-    s.abgeschlossen = s.abgeschlossen && e.fragen.every((f) => !!s.antworten[f.id]?.ergebnis);
-    return s;
-  } catch { return leer; }
-}
+export { leseMatheStand, matheKey } from "@/lib/matheStand";
 const matheEinheitsIds=[...MATHE_EINHEITEN,...AUFBAU_EINHEITEN].map(e=>e.id);
 function pruefungsModusAusAdresse(){return typeof window!=="undefined"&&new URLSearchParams(window.location.search).get("ansicht")==="pruefungsaufgaben"&&!matheEinheitsIds.includes(window.location.hash.slice(1));}
 export function MatheWerkstatt() {
   const [pruefungsModus,setPruefungsModus]=useState(pruefungsModusAusAdresse);
+  const [gruppe, setGruppe] = useState(() => AUFBAU_EINHEITEN.some(e => e.id === (typeof window === "undefined" ? null : window.location.hash.slice(1) || appStorage.getItem("fachmathe-auswahl"))) ? "aufbau" : "grundlagen");
+  const [suche, setSuche] = useState("");
   const [auswahl, setAuswahl] = useState(() => pruefungsModusAusAdresse()?"":bereichsAuswahl([...MATHE_EINHEITEN,...AUFBAU_EINHEITEN].map(e=>e.id),appStorage.getItem("fachmathe-auswahl")));
   useEffect(()=>{
-    const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(matheEinheitsIds.includes(id)?id:"");setPruefungsModus(pruefungsModusAusAdresse());};
+    const wechseln=()=>{const id=window.location.hash.slice(1);setAuswahl(matheEinheitsIds.includes(id)?id:"");if(id)setGruppe(AUFBAU_EINHEITEN.some(e=>e.id===id)?"aufbau":"grundlagen");setPruefungsModus(pruefungsModusAusAdresse());};
     window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);
     return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};
   },[]);
-  function waehle(id: string) { setPruefungsModus(false); setAuswahl(id); appStorage.setItem("fachmathe-auswahl", id); if(id)appStorage.setItem("lernwerkstatt-zuletzt-route", `/grundlagen/mathe#${id}`); window.history.replaceState(null, "", `${window.location.pathname}${id ? `#${id}` : ""}`); window.scrollTo({top:0}); }
-  function pruefungsAnsicht(offen:boolean){setPruefungsModus(offen);setAuswahl("");window.history.replaceState(null,"",`${window.location.pathname}?ansicht=${offen?"pruefungsaufgaben":"uebersicht"}`);window.scrollTo({top:0});}
+  function waehle(id: string) { setPruefungsModus(false); setAuswahl(id); if(id){setGruppe(AUFBAU_EINHEITEN.some(e=>e.id===id)?"aufbau":"grundlagen");appStorage.setItem("fachmathe-auswahl", id);appStorage.setItem("lernwerkstatt-zuletzt-route", `/grundlagen/mathe#${id}`);} window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : "?ansicht=uebersicht"}`); window.scrollTo({top:0}); }
+  function pruefungsAnsicht(offen:boolean){setPruefungsModus(offen);setAuswahl("");window.history.pushState(null,"",`${window.location.pathname}?ansicht=${offen?"pruefungsaufgaben":"uebersicht"}`);window.scrollTo({top:0});}
+  useKatalogFokus(`${auswahl}:${pruefungsModus}`);
   const einheit = MATHE_EINHEITEN.find((e) => e.id === auswahl);
   const aufbau = AUFBAU_EINHEITEN.find((e) => e.id === auswahl);
   if (aufbau) return <AufbauWerkstatt key={aufbau.id} einheit={aufbau} zurueck={() => waehle("")} weiter={() => waehle(AUFBAU_EINHEITEN[AUFBAU_EINHEITEN.indexOf(aufbau)+1]?.id ?? "")} />;
   if (einheit) return <MatheLernschritt key={einheit.id} einheit={einheit} zurueck={() => waehle("")} weiter={() => waehle(MATHE_EINHEITEN[MATHE_EINHEITEN.indexOf(einheit)+1]?.id ?? AUFBAU_EINHEITEN[0].id)} />;
   if(pruefungsModus)return <PruefungsMathe zurueck={()=>pruefungsAnsicht(false)}/>;
+  const grundlagen = MATHE_EINHEITEN.filter(e => katalogPasst(suche, e.titel, e.ziel));
+  const aufbauEinheiten = AUFBAU_EINHEITEN.filter(e => katalogPasst(suche, e.titel, e.ziel));
   return <div>
-    <section className={styles.hero}><div><span>DEINE GRUNDLAGEN FÜRS HANDWERK</span><h1>Fachmathe, die du verstehst.</h1><p>Von der Einheit bis zur Dachschräge. Du siehst, was gegeben ist, welche Formel passt und wie dein Rechenweg entsteht.</p><Link href="/lernhilfe">Mit einem kurzen Standortcheck starten →</Link></div><PracticeArtwork art="rechnen" /></section>
-    <section className="werkstatt-karte my-6"><h2>Bereit für einen eigenen Rechenweg?</h2><p>30 Aufgaben und sechs kurze Transferaufträge. Die Lösung erscheint nach deiner Abgabe.</p><button className="hauptaktion mt-4" onClick={()=>pruefungsAnsicht(true)}>Selbstständig rechnen öffnen →</button></section>
-    <div className={styles.intro}><h2>Kleine Schritte, sichere Grundlagen</h2><p>Beginne dort, wo du Hilfe brauchst. Alle Einheiten sind offen, ohne Zeitdruck.</p></div>
-    <div className={styles.grid}>{MATHE_EINHEITEN.map((e,index) => <button key={e.id} className={styles.card} onClick={() => waehle(e.id)}><span className={styles.nummer}>{String(index+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>{e.minuten} Minuten · {e.fragen.length} Rechenaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseMatheStand(e.id).abgeschlossen ? "Bearbeitet" : "Öffnen"}>{leseMatheStand(e.id).abgeschlossen ? "✓" : "→"}</span></button>)}</div>
-    <section className={aufbauStyles.aufbauIntro}><h2>Aufbau: aus Zahlen wird ein Rechenweg</h2><p>Wenn die Grundlagen sitzen, verbindest du mehrere Schritte: Dachgeometrie, Deckmaße, Wärme und Mengenplanung. Du bekommst Teilpunkte für jeden passenden Schritt und jederzeit Hilfe.</p></section>
-    <div className={styles.grid}>{AUFBAU_EINHEITEN.map((e,index) => <button key={e.id} className={styles.card} onClick={() => waehle(e.id)}><span className={`${styles.nummer} ${aufbauStyles.aufbauNummer}`}>{String(index+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>Aufbau · 10–15 Minuten · 3 Rechenaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseAufbauStand(e).abgeschlossen ? "Bearbeitet" : "Öffnen"}>{leseAufbauStand(e).abgeschlossen ? "✓" : "→"}</span></button>)}</div>
+    <KatalogKopf bereich="FACHMATHE" titel="Was möchtest du rechnen?">Wähle Grundlagen, verbinde mehrere Rechenschritte oder löse eine Aufgabe selbstständig.</KatalogKopf>
+    <div className={styles.gruppen} role="group" aria-label="Mathe-Bereich auswählen">{[["grundlagen", "Grundlagen"], ["aufbau", "Aufbau"], ["selbststaendig", "Selbstständig rechnen"]].map(([id, titel]) => <button key={id} aria-pressed={gruppe === id} onClick={() => setGruppe(id)}>{titel}</button>)}</div>
+    {gruppe !== "selbststaendig" && <KatalogSuche label="Mathe-Einheiten suchen" wert={suche} onChange={setSuche}/>}
+    {gruppe === "grundlagen" && <section aria-labelledby="mathe-grundlagen"><div className={styles.intro}><h2 id="mathe-grundlagen">Grundlagen</h2><p>Einheiten, Formeln und kurze Rechenwege Schritt für Schritt.</p></div>
+      <div className={styles.grid}>{grundlagen.map(e => <button key={e.id} className={styles.card} onClick={() => waehle(e.id)}><span className={styles.nummer}>{String(MATHE_EINHEITEN.indexOf(e)+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>{e.minuten} Minuten · {e.fragen.length} Rechenaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseMatheStand(e.id).abgeschlossen ? "Bearbeitet" : "Öffnen"}>{leseMatheStand(e.id).abgeschlossen ? "✓" : "→"}</span></button>)}</div>{grundlagen.length === 0 && <p role="status">Keine Grundlagen-Einheit passt zu deiner Suche.</p>}
+    </section>}
+    {gruppe === "aufbau" && <section aria-labelledby="mathe-aufbau"><div className={styles.intro}><h2 id="mathe-aufbau">Aufbau</h2><p>Dachgeometrie, Deckmaße, Wärme und Mengen in mehreren Schritten berechnen.</p></div>
+      <div className={styles.grid}>{aufbauEinheiten.map(e => <button key={e.id} className={styles.card} onClick={() => waehle(e.id)}><span className={styles.nummer}>{String(AUFBAU_EINHEITEN.indexOf(e)+1).padStart(2,"0")}</span><span><strong>{e.titel}</strong><small>10–15 Minuten · 3 Rechenaufgaben</small><span>{e.ziel}</span></span><span aria-label={leseAufbauStand(e).abgeschlossen ? "Bearbeitet" : "Öffnen"}>{leseAufbauStand(e).abgeschlossen ? "✓" : "→"}</span></button>)}</div>{aufbauEinheiten.length === 0 && <p role="status">Keine Aufbau-Einheit passt zu deiner Suche.</p>}
+    </section>}
+    {gruppe === "selbststaendig" && <section className={styles.selbststaendig}><h2>Selbstständig rechnen</h2><p>30 Aufgaben und sechs Transferaufträge. Vergleiche deinen Rechenweg nach der Abgabe.</p><button className="hauptaktion" onClick={()=>pruefungsAnsicht(true)}>Selbstständig rechnen öffnen →</button></section>}
   </div>;
 }
 function MatheLernschritt({ einheit: e, zurueck, weiter }: { einheit: MatheEinheit; zurueck: () => void; weiter: () => void }) {
