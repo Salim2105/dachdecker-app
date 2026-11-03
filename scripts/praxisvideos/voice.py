@@ -13,6 +13,7 @@ import hashlib
 import io
 import json
 import os
+import sys
 from pathlib import Path
 import re
 import subprocess
@@ -22,6 +23,9 @@ import wave
 
 for key in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
     os.environ[key] = "2"
+os.environ.setdefault("LRU_CACHE_CAPACITY", "1")
+os.environ.setdefault("ONEDNN_PRIMITIVE_CACHE_CAPACITY", "1")
+os.environ.setdefault("MALLOC_ARENA_MAX", "2")
 os.environ.setdefault("NUMBA_CACHE_DIR", "/tmp/dach-video-numba-cache")
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/dach-video-matplotlib")
 os.environ.setdefault("HF_HOME", "/tmp/dach-video-huggingface")
@@ -127,6 +131,16 @@ def main() -> None:
     torch.manual_seed(150)
     from TTS.api import TTS
     model = TTS(model_path=str(args.model_dir / "model_file.pth"), config_path=str(args.model_dir / "config.json"), progress_bar=False).to("cpu")
+    # VITS normally allocates alignment/decoder tensors from predicted durations
+    # before max_inference_len is applied. Reject outliers before that allocation;
+    # retry the same authored text with another seed instead of clipping speech.
+    def bounded_duration(module, inputs, output):
+        mask = inputs[1]
+        durations = torch.exp(output) * mask * model.synthesizer.tts_model.length_scale
+        frames = torch.ceil(durations).sum()
+        if not torch.isfinite(durations).all() or frames.item() > 2600:
+            raise RuntimeError(f"VITS duration outlier rejected before allocation: {frames.item()} frames")
+    model.synthesizer.tts_model.duration_predictor.register_forward_hook(bounded_duration)
     sample_rate = model.synthesizer.output_sample_rate
     if sample_rate != 22050:
         raise SystemExit(f"Unexpected model sample rate {sample_rate}")
@@ -135,6 +149,7 @@ def main() -> None:
     started = time.monotonic()
     status_path = args.audio_dir / "production.json"
     completed = []
+    new_contexts = 0
     for n, video_id in enumerate(selected, 1):
         atomic_json(status_path, {"pid": os.getpid(), "version": VOICE_VERSION, "state": "running", "current": video_id, "completed": completed, "total": len(selected)})
         video = lookup[video_id]
@@ -161,10 +176,21 @@ def main() -> None:
             cached = cache / f"{key}.wav"
             timing_path = cache / f"{key}.json"
             if not cached.exists() or not timing_path.exists():
-                capture = io.StringIO()
-                with contextlib.redirect_stdout(capture), torch.inference_mode():
-                    generated = model.tts(text=text, split_sentences=True, return_dict=True)
-                    samples = np.asarray(generated["wav"], dtype=np.float32)
+                print(f"SYNTH {video_id}/{chapter['id']} chars={len(text)}", flush=True)
+                for attempt in range(3):
+                    # Text-derived seed makes resumed and uninterrupted production
+                    # agree, and a bounded retry can recover a stochastic outlier.
+                    torch.manual_seed(int(key[:8], 16) + attempt)
+                    capture = io.StringIO()
+                    try:
+                        with contextlib.redirect_stdout(capture), torch.inference_mode():
+                            generated = model.tts(text=text, split_sentences=True, return_dict=True)
+                            samples = np.asarray(generated["wav"], dtype=np.float32)
+                        break
+                    except RuntimeError as error:
+                        if "VITS duration outlier" not in str(error) or attempt == 2:
+                            raise
+                        print(f"RETRY {video_id}/{chapter['id']} attempt={attempt + 1}: {error}", flush=True)
                 if samples.ndim != 1 or samples.size < sample_rate / 4 or not np.isfinite(samples).all():
                     raise RuntimeError(f"Invalid neural voice output for {video_id}/{chapter['id']}")
                 peak = float(np.abs(samples).max())
@@ -208,11 +234,18 @@ def main() -> None:
         if not 45 <= video["dauer"] <= 90:
             raise RuntimeError(f"Clip outside production duration: {video_id} {video['dauer']}")
         write_vtt(cues, args.vtt_dir / f"{video_id}.vtt")
-        receipt = {"version": 2, "id": video_id, "signature": signature, "engine": "coqui-tts 0.27.5 / VITS / CPU", "model": MODEL_ID, "modelArchiveSha256": MODEL_SHA256, "sampleRate": sample_rate, "audioSha256": digest(output / "audio.wav"), "rawDuration": raw_duration, "pace": pace, "dauer": video["dauer"], "kapitel": [{k: c[k] for k in ("id", "start", "ende")} for c in video["kapitel"]], "cues": cues}
+        receipt = {"version": 2, "id": video_id, "signature": signature, "engine": "coqui-tts 0.27.5 / VITS / CPU", "model": MODEL_ID, "modelArchiveSha256": MODEL_SHA256, "sampleRate": sample_rate, "inferenceBounds": {"maxSentenceFrames": 2600, "cpuThreads": 2, "recycleNewContexts": 6, "seed": "chapter-cache-sha256-plus-attempt"}, "audioSha256": digest(output / "audio.wav"), "rawDuration": raw_duration, "pace": pace, "dauer": video["dauer"], "kapitel": [{k: c[k] for k in ("id", "start", "ende")} for c in video["kapitel"]], "cues": cues}
         atomic_json(receipt_path, receipt)
         atomic_json(args.content, data)
         completed.append(video_id)
         print(f"DONE {n}/{len(selected)} {video_id} {video['dauer']:.3f}s elapsed={time.monotonic() - started:.1f}s", flush=True)
+        new_contexts += 1
+        if new_contexts >= 6 and n < len(selected):
+            # CPU convolution allocators retain variable-length inference buffers.
+            # Re-exec releases all retained native memory without spawning a
+            # concurrent worker; receipts make this a cheap, idempotent resume.
+            print("RECYCLE native inference memory after 6 new contexts", flush=True)
+            os.execv(sys.executable, [sys.executable, "-u", __file__, *sys.argv[1:]])
     atomic_json(status_path, {"pid": os.getpid(), "version": VOICE_VERSION, "state": "complete", "completed": completed, "total": len(selected), "elapsedSeconds": round(time.monotonic() - started, 3)})
 
 

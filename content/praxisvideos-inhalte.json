@@ -9,55 +9,55 @@
       "deckung": "falzziegel",
       "detailId": "g01",
       "version": 1,
-      "dauer": 44.15,
+      "dauer": 54.777,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.25,
+          "start": 0.0,
+          "ende": 9.899,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Dachaufbau und Aufgaben der Schichten. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.25,
-          "ende": 13.7,
+          "start": 9.899,
+          "ende": 18.88,
           "text": "Ein Dachaufbau verbindet mehrere Aufgaben: tragen, Wärme begrenzen, Luftströmungen verhindern und Niederschlagswasser ableiten."
         },
         {
           "id": "schritt-1",
           "titel": "Aufbau vom Raum aus lesen",
-          "start": 13.7,
-          "ende": 17.95,
+          "start": 18.88,
+          "ende": 23.357,
           "text": "Wähle die innere Lage und verfolge den Aufbau nach außen."
         },
         {
           "id": "schritt-2",
           "titel": "Unterlage und Anschlüsse klären",
-          "start": 17.95,
-          "ende": 23.4,
+          "start": 23.357,
+          "ende": 28.53,
           "text": "Prüfe im Modell, worauf jede Lage aufliegt und wo sie am Rand endet."
         },
         {
           "id": "schritt-3",
           "titel": "Die Lagen zusammenführen",
-          "start": 23.4,
-          "ende": 28.05,
+          "start": 28.53,
+          "ende": 33.993,
           "text": "Setze die im Modell getrennten Ebenen in ihrer festgelegten Reihenfolge zusammen."
         },
         {
           "id": "schritt-4",
           "titel": "Funktionen am fertigen Aufbau prüfen",
-          "start": 28.05,
-          "ende": 32.7,
+          "start": 33.993,
+          "ende": 39.456,
           "text": "Zeige je einen Wärmeweg, eine luftdichte Verbindung und einen äußeren Wasserweg."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 32.7,
-          "ende": 44.15,
+          "start": 39.456,
+          "ende": 54.777,
           "text": "Im Beispiel endet die innere Anschlusslage offen, während die äußere Deckung vollständig aussieht. Den unterbrochenen inneren Anschluss mit dem zum Aufbau gehörenden Detail vervollständigen und danach gezielt kontrollieren."
         }
       ],
@@ -71,55 +71,55 @@
       "deckung": "falzziegel",
       "detailId": "g02",
       "version": 1,
-      "dauer": 45.35,
+      "dauer": 52.083,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.085,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Tragwerk, Deckunterlage und Tragschale. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 13.3,
+          "start": 10.085,
+          "ende": 15.78,
           "text": "Das Tragwerk nimmt Lasten auf und leitet sie an weitere tragende Bauteile weiter."
         },
         {
           "id": "schritt-1",
           "titel": "Lastweg finden",
-          "start": 13.3,
-          "ende": 18.75,
+          "start": 15.78,
+          "ende": 21.615,
           "text": "Blende die äußeren Lagen aus und zeige die Auflager unter einem ausgewählten Bauteil."
         },
         {
           "id": "schritt-2",
           "titel": "Unterlage prüfen",
-          "start": 18.75,
-          "ende": 23,
+          "start": 21.615,
+          "ende": 27.148,
           "text": "Ordne Deckunterlage oder Tragschale dem im Modell gewählten Dachaufbau zu."
         },
         {
           "id": "schritt-3",
           "titel": "Verbindungen betrachten",
-          "start": 23,
-          "ende": 28.05,
+          "start": 27.148,
+          "ende": 32.379,
           "text": "Vergrößere ein Auflager und benenne die Verbindung, über die die Last weitergeht."
         },
         {
           "id": "schritt-4",
           "titel": "Vor Weiterarbeit kontrollieren",
-          "start": 28.05,
-          "ende": 33.5,
+          "start": 32.379,
+          "ende": 38.922,
           "text": "Prüfe die Auflage und dokumentiere eine sichtbare Unterbrechung vor dem Aufbringen weiterer Lagen."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 33.5,
-          "ende": 45.35,
+          "start": 38.922,
+          "ende": 52.083,
           "text": "Eine Unterlage endet zwischen zwei Auflagern ohne die im Detail vorgesehene Unterstützung. Die fehlende Unterstützung und Verbindung anhand der vorgesehenen Tragwerks- und Systemplanung klären, bevor der Aufbau geschlossen wird."
         }
       ],
@@ -133,55 +133,55 @@
       "deckung": "falzziegel",
       "detailId": "g03",
       "version": 1,
-      "dauer": 38.5,
+      "dauer": 45.384,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.45,
+          "start": 0.0,
+          "ende": 9.516,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Wärmedämmung und Wärmebrücken. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.45,
-          "ende": 10.45,
+          "start": 9.516,
+          "ende": 12.796,
           "text": "Wärmedämmung verringert den Wärmestrom."
         },
         {
           "id": "schritt-1",
           "titel": "Dämmebene zuordnen",
-          "start": 10.45,
-          "ende": 15.5,
+          "start": 12.796,
+          "ende": 17.517,
           "text": "Wähle im Schnitt die wärmedämmende Lage und verfolge sie bis zum Dachrand."
         },
         {
           "id": "schritt-2",
           "titel": "Passung vorbereiten",
-          "start": 15.5,
-          "ende": 18.95,
+          "start": 17.517,
+          "ende": 22.167,
           "text": "Betrachte die vorhandenen Hohlräume und die vorgesehenen Randstücke."
         },
         {
           "id": "schritt-3",
           "titel": "Randanschluss ergänzen",
-          "start": 18.95,
-          "ende": 23.6,
+          "start": 22.167,
+          "ende": 27.665,
           "text": "Verfolge die Dämmung um das gezeigte Auflager bis zum angrenzenden Bauteil."
         },
         {
           "id": "schritt-4",
           "titel": "Abweichung beurteilen",
-          "start": 23.6,
-          "ende": 27.85,
+          "start": 27.665,
+          "ende": 32.525,
           "text": "Vergleiche den vollständigen Anschluss mit dem Beispiel einer offenen Fuge."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.85,
-          "ende": 38.5,
+          "start": 32.525,
+          "ende": 45.384,
           "text": "Zwischen Dämmlage und angrenzendem Bauteil bleibt eine offene Fuge. Die Fuge mit einer zum vorgesehenen Aufbau passenden Dämm- und Anschlusslösung schließen und anschließend die Kontinuität kontrollieren."
         }
       ],
@@ -195,55 +195,55 @@
       "deckung": "falzziegel",
       "detailId": "g04",
       "version": 1,
-      "dauer": 39.35,
+      "dauer": 46.383,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.526,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Luftdichtheit und Dampfbremse anschließen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 11.3,
+          "start": 10.526,
+          "ende": 14.886,
           "text": "Die luftdichte Ebene begrenzt Luftströmungen durch den Aufbau."
         },
         {
           "id": "schritt-1",
           "titel": "Ebene und Untergrund bestimmen",
-          "start": 11.3,
-          "ende": 16.35,
+          "start": 14.886,
+          "ende": 20.291,
           "text": "Verfolge die vorgesehene innere Ebene bis zur Wand und benenne ihren Untergrund."
         },
         {
           "id": "schritt-2",
           "titel": "Stoß vorbereiten",
-          "start": 16.35,
-          "ende": 19.8,
+          "start": 20.291,
+          "ende": 24.954,
           "text": "Zeige den vorgesehenen Überlappungs- und Verbindungsbereich der Bahnen."
         },
         {
           "id": "schritt-3",
           "titel": "Rand ohne Unterbrechung verbinden",
-          "start": 19.8,
-          "ende": 24.05,
+          "start": 24.954,
+          "ende": 30.266,
           "text": "Führe die Bahn mit dem dargestellten Systemanschluss zum angrenzenden Bauteil."
         },
         {
           "id": "schritt-4",
           "titel": "Anschluss gezielt kontrollieren",
-          "start": 24.05,
-          "ende": 27.9,
+          "start": 30.266,
+          "ende": 34.545,
           "text": "Vergleiche den geschlossenen Anschluss mit einer sichtbar offenen Stelle."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.9,
-          "ende": 39.35,
+          "start": 34.545,
+          "ende": 46.383,
           "text": "Die innere Bahn endet neben der Wand offen; die Innenbekleidung würde diese Stelle später verdecken. Den passenden Randanschluss an den vorbereiteten Untergrund herstellen und vor dem Schließen prüfen."
         }
       ],
@@ -257,55 +257,55 @@
       "deckung": "falzziegel",
       "detailId": "g05",
       "version": 1,
-      "dauer": 42.15,
+      "dauer": 52.664,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.34,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Befestigung, Lastabtragung und Windsog. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 13.3,
+          "start": 10.34,
+          "ende": 16.953,
           "text": "Befestigungen verbinden die Dachbauteile mit dem geeigneten Untergrund und übertragen die vorgesehenen Lasten."
         },
         {
           "id": "schritt-1",
           "titel": "Plan auf das Dach beziehen",
-          "start": 13.3,
-          "ende": 17.55,
+          "start": 16.953,
+          "ende": 22.753,
           "text": "Ordne einen ausdrücklich vorgegebenen Befestigungspunkt seiner Position im Modell zu."
         },
         {
           "id": "schritt-2",
           "titel": "Passende Teile bestimmen",
-          "start": 17.55,
-          "ende": 21,
+          "start": 22.753,
+          "ende": 28.112,
           "text": "Vergleiche Bauteil, Befestigungsmittel und Untergrund am vergrößerten Detail."
         },
         {
           "id": "schritt-3",
           "titel": "Verbindung herstellen",
-          "start": 21,
-          "ende": 25.65,
+          "start": 28.112,
+          "ende": 33.424,
           "text": "Verfolge im Modell die festgelegte Verbindung vom gesicherten Teil zum Untergrund."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Planübereinstimmung prüfen",
-          "start": 25.65,
-          "ende": 30.7,
+          "start": 33.424,
+          "ende": 39.038,
           "text": "Vergleiche die ausgeführte Stelle mit dem gegebenen Plan und der vorgesehenen Lage."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.7,
-          "ende": 42.15,
+          "start": 39.038,
+          "ende": 52.664,
           "text": "Die Halterung ist am Dachbauteil vorhanden, besitzt aber keinen Anschluss an den vorgesehenen tragenden Untergrund. Die Befestigung mit dem geeigneten Untergrund nach dem zugehörigen Plan vervollständigen und kontrollieren."
         }
       ],
@@ -319,55 +319,55 @@
       "deckung": "falzziegel",
       "detailId": "g06",
       "version": 1,
-      "dauer": 43.35,
+      "dauer": 49.042,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.65,
+          "start": 0.0,
+          "ende": 9.795,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Wasserwege vom Dach bis zur Entwässerung. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.65,
-          "ende": 14.1,
+          "start": 9.795,
+          "ende": 15.409,
           "text": "Wasser muss von der aufnehmenden Fläche über passende Anschlüsse zum vorgesehenen Abfluss gelangen."
         },
         {
           "id": "schritt-1",
           "titel": "Am Auftreffpunkt beginnen",
-          "start": 14.1,
-          "ende": 19.15,
+          "start": 15.409,
+          "ende": 21.209,
           "text": "Wähle eine Wasserstelle auf der Dachfläche und bestimme die zugehörige wasserführende Ebene."
         },
         {
           "id": "schritt-2",
           "titel": "Übergang verfolgen",
-          "start": 19.15,
-          "ende": 24.2,
+          "start": 21.209,
+          "ende": 26.591,
           "text": "Gehe vom markierten Punkt über den Rand- oder Öffnungsanschluss zum nächsten Bauteil."
         },
         {
           "id": "schritt-3",
           "titel": "Weiterleitung prüfen",
-          "start": 24.2,
-          "ende": 28.45,
+          "start": 26.591,
+          "ende": 32.031,
           "text": "Verfolge den gezeigten Sammel- und Ablaufbereich bis zur angeschlossenen Leitung."
         },
         {
           "id": "schritt-4",
           "titel": "Störung erkennen",
-          "start": 28.45,
-          "ende": 32.7,
+          "start": 32.031,
+          "ende": 36.867,
           "text": "Vergleiche den ununterbrochenen Weg mit einem offenen oder blockierten Abschnitt."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 32.7,
-          "ende": 43.35,
+          "start": 36.867,
+          "ende": 49.042,
           "text": "Der dargestellte Weg endet vor dem vorgesehenen Ablauf an einer offenen Anschlussstelle. Den betroffenen Anschluss passend ergänzen und den gesamten Weg bis zur Weiterleitung erneut kontrollieren."
         }
       ],
@@ -381,55 +381,55 @@
       "deckung": "falzziegel",
       "detailId": "s01",
       "version": 1,
-      "dauer": 41.35,
+      "dauer": 47.254,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.073,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Deckfläche, Falze und Überdeckungen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.1,
+          "start": 10.073,
+          "ende": 14.828,
           "text": "Die Deckfläche führt Niederschlag durch das Zusammenspiel ihrer Deckelemente ab."
         },
         {
           "id": "schritt-1",
           "titel": "Produkt und Deckschema zuordnen",
-          "start": 12.1,
-          "ende": 17.15,
+          "start": 14.828,
+          "ende": 20.291,
           "text": "Wähle Falzziegel oder Biber und benenne die für diese Variante sichtbaren Merkmale."
         },
         {
           "id": "schritt-2",
           "titel": "Auflage und Einteilung prüfen",
-          "start": 17.15,
-          "ende": 21.8,
+          "start": 20.291,
+          "ende": 24.489,
           "text": "Verfolge am Schnitt die Aufhängung und die Lage der nächsten Reihe."
         },
         {
           "id": "schritt-3",
           "titel": "Deckelemente zusammenführen",
-          "start": 21.8,
-          "ende": 26.45,
+          "start": 24.489,
+          "ende": 29.314,
           "text": "Füge die im Modell vorgegebene Reihe in der angegebenen Folge zusammen."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Wasserführung kontrollieren",
-          "start": 26.45,
-          "ende": 30.3,
+          "start": 29.314,
+          "ende": 33.895,
           "text": "Vergleiche den flächigen Sitz mit einem sichtbar angehobenen Deckelement."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.3,
-          "ende": 41.35,
+          "start": 33.895,
+          "ende": 47.254,
           "text": "Ein Deckelement steht sichtbar über seinen Nachbarn und liegt nicht an der vorgesehenen Aufhängung an. Den fehlerhaften Sitz korrigieren und anschließend Nachbarelemente, Fugenlage und Wasserführung erneut prüfen."
         }
       ],
@@ -443,55 +443,55 @@
       "deckung": "falzziegel",
       "detailId": "s02",
       "version": 1,
-      "dauer": 37.65,
+      "dauer": 47.81,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.25,
+          "start": 0.0,
+          "ende": 10.8,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Traufe und Abschluss der Zusatzebene. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.25,
-          "ende": 11.25,
+          "start": 10.8,
+          "ende": 14.314,
           "text": "Die Traufe ist der untere Dachabschluss."
         },
         {
           "id": "schritt-1",
           "titel": "Zwei Wasserwege unterscheiden",
-          "start": 11.25,
-          "ende": 14.25,
+          "start": 14.314,
+          "ende": 17.518,
           "text": "Blende die Deckung ein und aus."
         },
         {
           "id": "schritt-2",
           "titel": "Rand und Auflage festlegen",
-          "start": 14.25,
-          "ende": 18.9,
+          "start": 17.518,
+          "ende": 23.537,
           "text": "Ordne die unterste Reihe ihrer vorgesehenen Auflage und dem Randbezug zu."
         },
         {
           "id": "schritt-3",
           "titel": "Zusatzebene weiterführen",
-          "start": 18.9,
-          "ende": 22.75,
+          "start": 23.537,
+          "ende": 28.502,
           "text": "Führe die untere Ebene zum im Beispiel vorgesehenen Traufblech."
         },
         {
           "id": "schritt-4",
           "titel": "Fertiges Detail kontrollieren",
-          "start": 22.75,
-          "ende": 27.4,
+          "start": 28.502,
+          "ende": 33.929,
           "text": "Verfolge beide Wasserwege bis zum Dachrand und prüfe die unterste Reihe."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.4,
-          "ende": 37.65,
+          "start": 33.929,
+          "ende": 47.81,
           "text": "Die zusätzliche wasserführende Ebene endet offen vor dem vorgesehenen Traufblech. Den Übergang der Zusatzebene zum vorgesehenen Traufdetail passend vervollständigen und den unteren Wasserweg erneut verfolgen."
         }
       ],
@@ -567,55 +567,55 @@
       "deckung": "falzziegel",
       "detailId": "s04",
       "version": 1,
-      "dauer": 40.95,
+      "dauer": 48.264,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 9.597,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Ortgang am freien Giebelrand. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.9,
+          "start": 9.597,
+          "ende": 15.676,
           "text": "Der Ortgang bildet den seitlichen Abschluss einer geneigten Dachfläche am freien Giebelrand."
         },
         {
           "id": "schritt-1",
           "titel": "Freien Rand erkennen",
-          "start": 12.9,
-          "ende": 17.95,
+          "start": 15.676,
+          "ende": 21.104,
           "text": "Wähle den geneigten freien Giebelrand und unterscheide ihn von Traufe und First."
         },
         {
           "id": "schritt-2",
           "titel": "Randteil und Auflage prüfen",
-          "start": 17.95,
-          "ende": 21.8,
+          "start": 21.104,
+          "ende": 26.173,
           "text": "Ordne Randstück und randnahe Unterkonstruktion dem gewählten Decksystem zu."
         },
         {
           "id": "schritt-3",
           "titel": "Rand ausführen",
-          "start": 21.8,
-          "ende": 26.85,
+          "start": 26.173,
+          "ende": 30.939,
           "text": "Führe die Deckung mit dem im Beispiel vorgesehenen Abschluss bis zum Rand."
         },
         {
           "id": "schritt-4",
           "titel": "Befestigung kontrollieren",
-          "start": 26.85,
-          "ende": 30.7,
+          "start": 30.939,
+          "ende": 35.764,
           "text": "Betrachte die Verbindung des Randteils mit der geeigneten Unterkonstruktion."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.7,
-          "ende": 40.95,
+          "start": 35.764,
+          "ende": 48.264,
           "text": "Am Randziegel fehlt die im dargestellten Detail vorgesehene Befestigung. Die passende Randbefestigung nach dem zugehörigen System und Plan ergänzen und anschließend Sitz sowie Randanschluss prüfen."
         }
       ],
@@ -629,55 +629,55 @@
       "deckung": "falzziegel",
       "detailId": "s05",
       "version": 1,
-      "dauer": 36.15,
+      "dauer": 45.141,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.45,
+          "start": 0.0,
+          "ende": 9.214,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: First und Lüftungsführung. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.45,
-          "ende": 10.5,
+          "start": 9.214,
+          "ende": 12.855,
           "text": "Am First treffen die oberen Dachflächen zusammen."
         },
         {
           "id": "schritt-1",
           "titel": "Obere Bezugslage prüfen",
-          "start": 10.5,
-          "ende": 14.75,
+          "start": 12.855,
+          "ende": 17.273,
           "text": "Betrachte die letzten Deckreihen und den Platz für das Firstdetail."
         },
         {
           "id": "schritt-2",
           "titel": "Auflage und Anschluss vorbereiten",
-          "start": 14.75,
-          "ende": 18.2,
+          "start": 17.273,
+          "ende": 22.272,
           "text": "Ordne Firstlatte, Halterung und Anschlussbereich ihren Lagen zu."
         },
         {
           "id": "schritt-3",
           "titel": "Firstelemente ergänzen",
-          "start": 18.2,
-          "ende": 21.65,
+          "start": 22.272,
+          "ende": 26.609,
           "text": "Setze die Elemente in der vorgesehenen Anschlussfolge ein."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Führung prüfen",
-          "start": 21.65,
-          "ende": 25.9,
+          "start": 26.609,
+          "ende": 31.863,
           "text": "Verfolge Anschluss, Befestigung und den für den Aufbau vorgesehenen Luftweg."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 25.9,
-          "ende": 36.15,
+          "start": 31.863,
+          "ende": 45.141,
           "text": "Ein Firstelement ist angehoben und lässt den vorgesehenen Anschluss zum Nachbarelement offen. Sitz und Anschlussfolge korrigieren, das passende Befestigungsteil prüfen und die geplante Lüftungsführung erhalten."
         }
       ],
@@ -691,55 +691,55 @@
       "deckung": "falzziegel",
       "detailId": "s06",
       "version": 1,
-      "dauer": 45.35,
+      "dauer": 52.443,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.45,
+          "start": 0.0,
+          "ende": 9.62,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Kehle zwischen Dachflächen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.45,
-          "ende": 14.5,
+          "start": 9.62,
+          "ende": 16.663,
           "text": "Eine Kehle liegt an der nach innen verlaufenden Schnittlinie zweier Dachflächen und sammelt Wasser aus beiden Flächen."
         },
         {
           "id": "schritt-1",
           "titel": "Zufließende Flächen bestimmen",
-          "start": 14.5,
-          "ende": 20.35,
+          "start": 16.663,
+          "ende": 22.416,
           "text": "Wähle die beiden Flächen neben der Kehle und verfolge deren Wasser bis zur Schnittlinie."
         },
         {
           "id": "schritt-2",
           "titel": "Unterlage und unteren Weg vorbereiten",
-          "start": 20.35,
-          "ende": 24.6,
+          "start": 22.416,
+          "ende": 27.717,
           "text": "Blende Deckelemente aus und ordne die Kehlunterlage der Anschlusslage zu."
         },
         {
           "id": "schritt-3",
           "titel": "Kehlteile und Deckung anschließen",
-          "start": 24.6,
-          "ende": 29.65,
+          "start": 27.717,
+          "ende": 33.981,
           "text": "Verfolge die vorgegebene Folge der Kehlteile und die Lage der angrenzenden Zuschnitte."
         },
         {
           "id": "schritt-4",
           "titel": "Vom oberen Ende bis zur Traufe prüfen",
-          "start": 29.65,
-          "ende": 34.3,
+          "start": 33.981,
+          "ende": 38.887,
           "text": "Gehe die Kehle durch und betrachte Stöße sowie den unteren Auslauf."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 34.3,
-          "ende": 45.35,
+          "start": 38.887,
+          "ende": 52.443,
           "text": "Ein Stoß der dargestellten Kehlbleche ist offen und unterbricht den vorgesehenen Wasserweg. Die Kehlverbindung nach dem zugehörigen System vervollständigen und Unterlage, angrenzende Deckung sowie den Auslauf kontrollieren."
         }
       ],
@@ -753,55 +753,55 @@
       "deckung": "falzziegel",
       "detailId": "s07",
       "version": 1,
-      "dauer": 34.95,
+      "dauer": 45.965,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 9.655,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Seitlicher und oberer Wandanschluss. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.1,
+          "start": 9.655,
+          "ende": 14.805,
           "text": "Ein Wandanschluss verbindet die geneigte Dachfläche mit einem aufgehenden Bauteil."
         },
         {
           "id": "schritt-1",
           "titel": "Lage des Anschlusses unterscheiden",
-          "start": 12.1,
-          "ende": 15.15,
+          "start": 14.805,
+          "ende": 18.898,
           "text": "Zeige seitlichen und oberen Wandanschluss am Modell."
         },
         {
           "id": "schritt-2",
           "titel": "Untere Ebene anschließen",
-          "start": 15.15,
-          "ende": 18.2,
+          "start": 18.898,
+          "ende": 23.526,
           "text": "Verfolge die Zusatzebene bis zum vorgesehenen Wanddetail."
         },
         {
           "id": "schritt-3",
           "titel": "Äußeren Anschluss herstellen",
-          "start": 18.2,
-          "ende": 22.45,
+          "start": 23.526,
+          "ende": 28.803,
           "text": "Ordne das Anschlussbauteil der Wand und den angrenzenden Deckelementen zu."
         },
         {
           "id": "schritt-4",
           "titel": "Übergänge gemeinsam prüfen",
-          "start": 22.45,
-          "ende": 25.9,
+          "start": 28.803,
+          "ende": 33.86,
           "text": "Verfolge Wasser oberhalb, seitlich und unterhalb des Anschlussbereichs."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 25.9,
-          "ende": 34.95,
+          "start": 33.86,
+          "ende": 45.965,
           "text": "Das sichtbare Anschlussbauteil endet vor der vorgesehenen Verbindung zur aufgehenden Wand. Den vorgesehenen Wandübergang vervollständigen und äußeren sowie unteren Wasserweg gemeinsam prüfen."
         }
       ],
@@ -815,55 +815,55 @@
       "deckung": "falzziegel",
       "detailId": "s08",
       "version": 1,
-      "dauer": 40.1,
+      "dauer": 46.754,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 9.911,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Schornsteinanschluss von allen Seiten. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 10.85,
+          "start": 9.911,
+          "ende": 12.982,
           "text": "Ein Schornstein unterbricht die Dachfläche."
         },
         {
           "id": "schritt-1",
           "titel": "Berg- und Talseite zeigen",
-          "start": 10.85,
-          "ende": 15.5,
+          "start": 12.982,
+          "ende": 18.028,
           "text": "Drehe die Ansicht und ordne dem Schornstein seine vier Anschlussseiten zu."
         },
         {
           "id": "schritt-2",
           "titel": "Untere Ebene vorsehen",
-          "start": 15.5,
-          "ende": 19.35,
+          "start": 18.028,
+          "ende": 22.55,
           "text": "Verfolge unter der Deckung die Ebene bis zum Schornsteinkörper."
         },
         {
           "id": "schritt-3",
           "titel": "Anschlussfolge zusammenführen",
-          "start": 19.35,
-          "ende": 24,
+          "start": 22.55,
+          "ende": 28.536,
           "text": "Setze die Seiten des Beispielanschlusses in der dargestellten wasserführenden Folge zusammen."
         },
         {
           "id": "schritt-4",
           "titel": "Alle Seiten kontrollieren",
-          "start": 24,
-          "ende": 28.65,
+          "start": 28.536,
+          "ende": 33.698,
           "text": "Untersuche die Rückseite und die Übergänge zu den Seitenteilen besonders genau."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 28.65,
-          "ende": 40.1,
+          "start": 33.698,
+          "ende": 46.754,
           "text": "Am Schornstein ist die bergseitige Rückseite ohne das im Beispiel vorgesehene Anschlussbauteil geblieben. Den bergseitigen Anschluss und seine Übergänge zu den Seiten vervollständigen; auch die untere Ebene kontrollieren."
         }
       ],
@@ -877,55 +877,55 @@
       "deckung": "falzziegel",
       "detailId": "s09",
       "version": 1,
-      "dauer": 41.75,
+      "dauer": 51.549,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.038,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Dachflächenfenster und seine Anschlussebenen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 13.3,
+          "start": 10.038,
+          "ende": 16.221,
           "text": "Das Dachflächenfenster benötigt passende Anschlüsse an die Deckung und an die betroffenen Funktionslagen."
         },
         {
           "id": "schritt-1",
           "titel": "Einbauteil und System bestimmen",
-          "start": 13.3,
-          "ende": 16.75,
+          "start": 16.221,
+          "ende": 21.243,
           "text": "Ordne Fenster und Eindeckrahmen der dargestellten Deckungsvariante zu."
         },
         {
           "id": "schritt-2",
           "titel": "Untere Anschlusslage verfolgen",
-          "start": 16.75,
-          "ende": 22.2,
+          "start": 21.243,
+          "ende": 27.427,
           "text": "Blende die Deckung aus und verfolge die Zusatzebene bis an den vorgesehenen Fensteranschluss."
         },
         {
           "id": "schritt-3",
           "titel": "Eindeckrahmen anschließen",
-          "start": 22.2,
-          "ende": 27.25,
+          "start": 27.427,
+          "ende": 32.867,
           "text": "Füge die im Beispiel vorgesehenen äußeren Teile in ihrer beschriebenen Folge hinzu."
         },
         {
           "id": "schritt-4",
           "titel": "Innere und äußere Funktionen prüfen",
-          "start": 27.25,
-          "ende": 30.3,
+          "start": 32.867,
+          "ende": 37.773,
           "text": "Betrachte Wasserführung, Dämmanschluss und innere Anschlusslage getrennt."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.3,
-          "ende": 41.75,
+          "start": 37.773,
+          "ende": 51.549,
           "text": "Die zusätzliche wasserführende Ebene endet vor dem Fensterrahmen offen, obwohl der äußere Eindeckrahmen fertig aussieht. Den vorgesehenen Anschluss der Zusatzebene zum Fenster vervollständigen und den verdeckten Wasserweg prüfen."
         }
       ],
@@ -939,55 +939,55 @@
       "deckung": "falzziegel",
       "detailId": "s10",
       "version": 1,
-      "dauer": 41.35,
+      "dauer": 51.77,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.65,
+          "start": 0.0,
+          "ende": 10.329,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Gaube, Wangen und Übergänge zum Hauptdach. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.65,
-          "ende": 12.5,
+          "start": 10.329,
+          "ende": 15.85,
           "text": "Eine Gaube verändert die Dachgeometrie und unterbricht mehrere Funktionslagen."
         },
         {
           "id": "schritt-1",
           "titel": "Neue Dachlinien erkennen",
-          "start": 12.5,
-          "ende": 17.55,
+          "start": 15.85,
+          "ende": 21.859,
           "text": "Wähle die Flächen von Gaube und Hauptdach und zeige die dazwischenliegenden Anschlusslinien."
         },
         {
           "id": "schritt-2",
           "titel": "Unterbrochene Ebenen benennen",
-          "start": 17.55,
-          "ende": 21.8,
+          "start": 21.859,
+          "ende": 26.893,
           "text": "Blende Deckung und Bekleidung aus und verfolge die betroffenen Anschlusslagen."
         },
         {
           "id": "schritt-3",
           "titel": "Übergänge herstellen",
-          "start": 21.8,
-          "ende": 26.05,
+          "start": 26.893,
+          "ende": 32.1,
           "text": "Verfolge die im Beispiel vorgesehene Folge an Gaubenwange und Hauptdach."
         },
         {
           "id": "schritt-4",
           "titel": "Rund um die Gaube kontrollieren",
-          "start": 26.05,
-          "ende": 31.1,
+          "start": 32.1,
+          "ende": 37.912,
           "text": "Gehe alle Anschlusslinien ab und prüfe zusätzlich die oberen und unteren Übergänge."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 31.1,
-          "ende": 41.35,
+          "start": 37.912,
+          "ende": 51.77,
           "text": "Am Übergang von Gaubenwange und Hauptdach ist die zusätzliche wasserführende Ebene offen unterbrochen. Den vorgesehenen Wangenanschluss der Zusatzebene vervollständigen und angrenzende Kehl- und Randdetails mitkontrollieren."
         }
       ],
@@ -1001,55 +1001,55 @@
       "deckung": "falzziegel",
       "detailId": "s11",
       "version": 1,
-      "dauer": 40.15,
+      "dauer": 48.217,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.45,
+          "start": 0.0,
+          "ende": 9.539,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Rohrdurchführung und Entlüfter. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.45,
-          "ende": 14.1,
+          "start": 9.539,
+          "ende": 16.837,
           "text": "Eine Rohrdurchführung führt ein Einbauteil durch die Dachfläche und muss an die betroffenen Schutzebenen angeschlossen werden."
         },
         {
           "id": "schritt-1",
           "titel": "Durchdringung abgrenzen",
-          "start": 14.1,
-          "ende": 17.55,
+          "start": 16.837,
+          "ende": 20.57,
           "text": "Zeige Rohr und die von ihm durchquerten Dachlagen."
         },
         {
           "id": "schritt-2",
           "titel": "Passendes Formteil bestimmen",
-          "start": 17.55,
-          "ende": 21.4,
+          "start": 20.57,
+          "ende": 25.464,
           "text": "Ordne das Formteil dem gewählten Decksystem und Einbauteil zu."
         },
         {
           "id": "schritt-3",
           "titel": "Betroffene Ebenen anschließen",
-          "start": 21.4,
-          "ende": 25.65,
+          "start": 25.464,
+          "ende": 30.429,
           "text": "Verfolge den äußeren Übergang und den getrennten Anschluss der Zusatzebene."
         },
         {
           "id": "schritt-4",
           "titel": "Ringsum kontrollieren",
-          "start": 25.65,
-          "ende": 30.3,
+          "start": 30.429,
+          "ende": 35.706,
           "text": "Drehe die Ansicht und prüfe Vorder-, Rück- und Seitenbereich des Anschlusses."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.3,
-          "ende": 40.15,
+          "start": 35.706,
+          "ende": 48.217,
           "text": "Zwischen Rohr und dargestellter Anschlusslage bleibt eine sichtbare ringförmige Lücke. Die passende Anschlusslösung rund um das Rohr vervollständigen und äußere sowie darunterliegende Ebenen kontrollieren."
         }
       ],
@@ -1063,55 +1063,55 @@
       "deckung": "falzziegel",
       "detailId": "a01",
       "version": 1,
-      "dauer": 43.35,
+      "dauer": 54.371,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.25,
+          "start": 0.0,
+          "ende": 9.295,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: PV- und Solarhalterung am Dach. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.25,
-          "ende": 16.9,
+          "start": 9.295,
+          "ende": 19.495,
           "text": "Die Dachbefestigung von PV- oder Solaranlagen muss Lasten über geeignete Halterungen in die vorgesehene Konstruktion leiten und die betroffenen Dachfunktionen erhalten."
         },
         {
           "id": "schritt-1",
           "titel": "Dach- und Anlagenplan zusammen lesen",
-          "start": 16.9,
-          "ende": 20.35,
+          "start": 19.495,
+          "ende": 24.576,
           "text": "Ordne Anlage, Dachform und geplante Halterstellen einander zu."
         },
         {
           "id": "schritt-2",
           "titel": "Tragende Verbindung bestimmen",
-          "start": 20.35,
-          "ende": 24.2,
+          "start": 24.576,
+          "ende": 29.54,
           "text": "Verfolge Schiene und Halter bis zum vorgesehenen tragenden Untergrund."
         },
         {
           "id": "schritt-3",
           "titel": "Dachfunktionen anschließen",
-          "start": 24.2,
-          "ende": 27.65,
+          "start": 29.54,
+          "ende": 34.097,
           "text": "Betrachte jede durchdrungene Schutzebene an der gezeigten Halterung."
         },
         {
           "id": "schritt-4",
           "titel": "Dachanbindung kontrollieren",
-          "start": 27.65,
-          "ende": 31.9,
+          "start": 34.097,
+          "ende": 39.514,
           "text": "Prüfe Auflage, Verbindung und die betroffenen Wasserwege an der Beispielhalterung."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 31.9,
-          "ende": 43.35,
+          "start": 39.514,
+          "ende": 54.371,
           "text": "An der dargestellten Halterdurchführung fehlt die vorgesehene wetterseitige Anschlussverbindung zum Dachaufbau. Den zur Halterung und zum Dachsystem gehörenden Schutzanschluss vervollständigen und den Lastweg sowie alle betroffenen Ebenen prüfen."
         }
       ],
@@ -1125,55 +1125,55 @@
       "deckung": "falzziegel",
       "detailId": "a02",
       "version": 1,
-      "dauer": 38.55,
+      "dauer": 49.715,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.073,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Schneefang und seine Lastaufnahme. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.5,
+          "start": 10.073,
+          "ende": 16.465,
           "text": "Ein Schneefangsystem nimmt die dafür vorgesehenen Beanspruchungen aus zurückgehaltenem Schnee auf."
         },
         {
           "id": "schritt-1",
           "titel": "System und Anordnung lesen",
-          "start": 12.5,
-          "ende": 15.95,
+          "start": 16.465,
+          "ende": 21.127,
           "text": "Zeige die im Beispiel vorgesehenen Fangbauteile und Halterstellen."
         },
         {
           "id": "schritt-2",
           "titel": "Lastweg verfolgen",
-          "start": 15.95,
-          "ende": 20.6,
+          "start": 21.127,
+          "ende": 25.813,
           "text": "Blende die Deckung aus und zeige die Verbindung zum vorgesehenen Untergrund."
         },
         {
           "id": "schritt-3",
           "titel": "Halter und Fangbauteil verbinden",
-          "start": 20.6,
-          "ende": 24.05,
+          "start": 25.813,
+          "ende": 29.953,
           "text": "Füge die im Modell vorgesehenen zusammengehörigen Teile ein."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Verbindung kontrollieren",
-          "start": 24.05,
-          "ende": 27.9,
+          "start": 29.953,
+          "ende": 34.986,
           "text": "Vergleiche die vollständige Halterstelle mit einer nur aufliegenden Halterung."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.9,
-          "ende": 38.55,
+          "start": 34.986,
+          "ende": 49.715,
           "text": "Der Schneefanghalter liegt nur am Deckziegel an und besitzt keine Verbindung zum vorgesehenen Befestigungsuntergrund. Die passende Untergrundverbindung nach dem geplanten Schneefangsystem herstellen und die Deckungsanschlüsse prüfen."
         }
       ],
@@ -1187,55 +1187,55 @@
       "deckung": "falzziegel",
       "detailId": "a03",
       "version": 1,
-      "dauer": 40.15,
+      "dauer": 51.004,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.433,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Dachzugang, Tritte und Laufroste. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.9,
+          "start": 10.433,
+          "ende": 17.522,
           "text": "Dachzugang und Tritt- beziehungsweise Laufbauteile gehören zu einer geplanten Zugangs- und Arbeitsorganisation."
         },
         {
           "id": "schritt-1",
           "titel": "Geplanten Weg erfassen",
-          "start": 12.9,
-          "ende": 16.75,
+          "start": 17.522,
+          "ende": 22.869,
           "text": "Wähle Zugang und vorgesehene Trittstellen bis zum betrachteten Arbeitsbereich."
         },
         {
           "id": "schritt-2",
           "titel": "Tragende Verbindung zeigen",
-          "start": 16.75,
-          "ende": 21.4,
+          "start": 22.869,
+          "ende": 27.566,
           "text": "Betrachte die Halter unter der Trittfläche bis zu ihrem vorgesehenen Untergrund."
         },
         {
           "id": "schritt-3",
           "titel": "Zugehörige Bauteile montieren",
-          "start": 21.4,
-          "ende": 24.85,
+          "start": 27.566,
+          "ende": 31.682,
           "text": "Ordne Trittfläche und Halter dem gezeigten System zu."
         },
         {
           "id": "schritt-4",
           "titel": "Vor Nutzung prüfen",
-          "start": 24.85,
-          "ende": 28.3,
+          "start": 31.682,
+          "ende": 36.867,
           "text": "Kontrolliere Verbindung und Zugangsweg anhand der vorgesehenen Kriterien."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 28.3,
-          "ende": 40.15,
+          "start": 36.867,
+          "ende": 51.004,
           "text": "Unter dem gezeigten Dachtritt fehlt die Verbindung eines Halters zum vorgesehenen tragfähigen Anschlussbereich. Die Halterverbindung anhand des zugehörigen Systems vervollständigen und die Eignung des gesamten Zugangswegs vor Nutzung prüfen."
         }
       ],
@@ -1249,55 +1249,55 @@
       "deckung": "falzziegel",
       "detailId": "a04",
       "version": 1,
-      "dauer": 40.95,
+      "dauer": 55.729,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 11.002,
           "text": "Am Satteldach mit Gaube mit Falzziegeln betrachten wir: Blitzschutzbauteile und zusammenhängender Ableitweg. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.9,
+          "start": 11.002,
+          "ende": 18.3,
           "text": "Beim äußeren Blitzschutz wirken Fangeinrichtungen, Ableitungen und Erdungsanlage als geplantes System zusammen."
         },
         {
           "id": "schritt-1",
           "titel": "Bauteile zuordnen",
-          "start": 12.9,
-          "ende": 15.95,
+          "start": 18.3,
+          "ende": 22.753,
           "text": "Wähle Fangeinrichtung, Ableitung und den dargestellten Erdanschluss."
         },
         {
           "id": "schritt-2",
           "titel": "Geplante Führung lesen",
-          "start": 15.95,
-          "ende": 19.8,
+          "start": 22.753,
+          "ende": 27.624,
           "text": "Verfolge die Leitung entlang der vorgesehenen Halter und Anschlussstellen."
         },
         {
           "id": "schritt-3",
           "titel": "Verbindungen nachvollziehen",
-          "start": 19.8,
-          "ende": 23.25,
+          "start": 27.624,
+          "ende": 32.228,
           "text": "Betrachte die im Beispiel zugehörigen Leitungs- und Verbindungsteile."
         },
         {
           "id": "schritt-4",
           "titel": "Weg kontrollieren und Abweichung melden",
-          "start": 23.25,
-          "ende": 29.1,
+          "start": 32.228,
+          "ende": 38.899,
           "text": "Gehe den dargestellten Weg bis zum zugehörigen Anschluss durch und benenne eine sichtbare Unterbrechung."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 29.1,
-          "ende": 40.95,
+          "start": 38.899,
+          "ende": 55.729,
           "text": "Die sichtbare Ableitung ist zwischen zwei zugehörigen Abschnitten unterbrochen. Die Unterbrechung dokumentieren und die vorgesehene fachgerechte Systemverbindung beziehungsweise Instandsetzung veranlassen; die vollständige Anlage anschließend nach ihren Prüfanforderungen beurteilen lassen."
         }
       ],
@@ -1311,55 +1311,55 @@
       "deckung": "biber-doppel",
       "detailId": "g01",
       "version": 1,
-      "dauer": 44.15,
+      "dauer": 55.195,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.25,
+          "start": 0.0,
+          "ende": 10.317,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Dachaufbau und Aufgaben der Schichten. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.25,
-          "ende": 13.7,
+          "start": 10.317,
+          "ende": 19.298,
           "text": "Ein Dachaufbau verbindet mehrere Aufgaben: tragen, Wärme begrenzen, Luftströmungen verhindern und Niederschlagswasser ableiten."
         },
         {
           "id": "schritt-1",
           "titel": "Aufbau vom Raum aus lesen",
-          "start": 13.7,
-          "ende": 17.95,
+          "start": 19.298,
+          "ende": 23.774,
           "text": "Wähle die innere Lage und verfolge den Aufbau nach außen."
         },
         {
           "id": "schritt-2",
           "titel": "Unterlage und Anschlüsse klären",
-          "start": 17.95,
-          "ende": 23.4,
+          "start": 23.774,
+          "ende": 28.947,
           "text": "Prüfe im Modell, worauf jede Lage aufliegt und wo sie am Rand endet."
         },
         {
           "id": "schritt-3",
           "titel": "Die Lagen zusammenführen",
-          "start": 23.4,
-          "ende": 28.05,
+          "start": 28.947,
+          "ende": 34.411,
           "text": "Setze die im Modell getrennten Ebenen in ihrer festgelegten Reihenfolge zusammen."
         },
         {
           "id": "schritt-4",
           "titel": "Funktionen am fertigen Aufbau prüfen",
-          "start": 28.05,
-          "ende": 32.7,
+          "start": 34.411,
+          "ende": 39.874,
           "text": "Zeige je einen Wärmeweg, eine luftdichte Verbindung und einen äußeren Wasserweg."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 32.7,
-          "ende": 44.15,
+          "start": 39.874,
+          "ende": 55.195,
           "text": "Im Beispiel endet die innere Anschlusslage offen, während die äußere Deckung vollständig aussieht. Den unterbrochenen inneren Anschluss mit dem zum Aufbau gehörenden Detail vervollständigen und danach gezielt kontrollieren."
         }
       ],
@@ -1373,55 +1373,55 @@
       "deckung": "biber-doppel",
       "detailId": "g02",
       "version": 1,
-      "dauer": 45.35,
+      "dauer": 52.908,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.909,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Tragwerk, Deckunterlage und Tragschale. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 13.3,
+          "start": 10.909,
+          "ende": 16.605,
           "text": "Das Tragwerk nimmt Lasten auf und leitet sie an weitere tragende Bauteile weiter."
         },
         {
           "id": "schritt-1",
           "titel": "Lastweg finden",
-          "start": 13.3,
-          "ende": 18.75,
+          "start": 16.605,
+          "ende": 22.439,
           "text": "Blende die äußeren Lagen aus und zeige die Auflager unter einem ausgewählten Bauteil."
         },
         {
           "id": "schritt-2",
           "titel": "Unterlage prüfen",
-          "start": 18.75,
-          "ende": 23,
+          "start": 22.439,
+          "ende": 27.972,
           "text": "Ordne Deckunterlage oder Tragschale dem im Modell gewählten Dachaufbau zu."
         },
         {
           "id": "schritt-3",
           "titel": "Verbindungen betrachten",
-          "start": 23,
-          "ende": 28.05,
+          "start": 27.972,
+          "ende": 33.203,
           "text": "Vergrößere ein Auflager und benenne die Verbindung, über die die Last weitergeht."
         },
         {
           "id": "schritt-4",
           "titel": "Vor Weiterarbeit kontrollieren",
-          "start": 28.05,
-          "ende": 33.5,
+          "start": 33.203,
+          "ende": 39.746,
           "text": "Prüfe die Auflage und dokumentiere eine sichtbare Unterbrechung vor dem Aufbringen weiterer Lagen."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 33.5,
-          "ende": 45.35,
+          "start": 39.746,
+          "ende": 52.908,
           "text": "Eine Unterlage endet zwischen zwei Auflagern ohne die im Detail vorgesehene Unterstützung. Die fehlende Unterstützung und Verbindung anhand der vorgesehenen Tragwerks- und Systemplanung klären, bevor der Aufbau geschlossen wird."
         }
       ],
@@ -1435,55 +1435,55 @@
       "deckung": "biber-doppel",
       "detailId": "g03",
       "version": 1,
-      "dauer": 38.5,
+      "dauer": 46.406,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.45,
+          "start": 0.0,
+          "ende": 10.538,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Wärmedämmung und Wärmebrücken. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.45,
-          "ende": 10.45,
+          "start": 10.538,
+          "ende": 13.818,
           "text": "Wärmedämmung verringert den Wärmestrom."
         },
         {
           "id": "schritt-1",
           "titel": "Dämmebene zuordnen",
-          "start": 10.45,
-          "ende": 15.5,
+          "start": 13.818,
+          "ende": 18.538,
           "text": "Wähle im Schnitt die wärmedämmende Lage und verfolge sie bis zum Dachrand."
         },
         {
           "id": "schritt-2",
           "titel": "Passung vorbereiten",
-          "start": 15.5,
-          "ende": 18.95,
+          "start": 18.538,
+          "ende": 23.189,
           "text": "Betrachte die vorhandenen Hohlräume und die vorgesehenen Randstücke."
         },
         {
           "id": "schritt-3",
           "titel": "Randanschluss ergänzen",
-          "start": 18.95,
-          "ende": 23.6,
+          "start": 23.189,
+          "ende": 28.687,
           "text": "Verfolge die Dämmung um das gezeigte Auflager bis zum angrenzenden Bauteil."
         },
         {
           "id": "schritt-4",
           "titel": "Abweichung beurteilen",
-          "start": 23.6,
-          "ende": 27.85,
+          "start": 28.687,
+          "ende": 33.547,
           "text": "Vergleiche den vollständigen Anschluss mit dem Beispiel einer offenen Fuge."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.85,
-          "ende": 38.5,
+          "start": 33.547,
+          "ende": 46.406,
           "text": "Zwischen Dämmlage und angrenzendem Bauteil bleibt eine offene Fuge. Die Fuge mit einer zum vorgesehenen Aufbau passenden Dämm- und Anschlusslösung schließen und anschließend die Kontinuität kontrollieren."
         }
       ],
@@ -1497,55 +1497,55 @@
       "deckung": "biber-doppel",
       "detailId": "g04",
       "version": 1,
-      "dauer": 39.35,
+      "dauer": 46.638,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.781,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Luftdichtheit und Dampfbremse anschließen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 11.3,
+          "start": 10.781,
+          "ende": 15.142,
           "text": "Die luftdichte Ebene begrenzt Luftströmungen durch den Aufbau."
         },
         {
           "id": "schritt-1",
           "titel": "Ebene und Untergrund bestimmen",
-          "start": 11.3,
-          "ende": 16.35,
+          "start": 15.142,
+          "ende": 20.547,
           "text": "Verfolge die vorgesehene innere Ebene bis zur Wand und benenne ihren Untergrund."
         },
         {
           "id": "schritt-2",
           "titel": "Stoß vorbereiten",
-          "start": 16.35,
-          "ende": 19.8,
+          "start": 20.547,
+          "ende": 25.209,
           "text": "Zeige den vorgesehenen Überlappungs- und Verbindungsbereich der Bahnen."
         },
         {
           "id": "schritt-3",
           "titel": "Rand ohne Unterbrechung verbinden",
-          "start": 19.8,
-          "ende": 24.05,
+          "start": 25.209,
+          "ende": 30.521,
           "text": "Führe die Bahn mit dem dargestellten Systemanschluss zum angrenzenden Bauteil."
         },
         {
           "id": "schritt-4",
           "titel": "Anschluss gezielt kontrollieren",
-          "start": 24.05,
-          "ende": 27.9,
+          "start": 30.521,
+          "ende": 34.8,
           "text": "Vergleiche den geschlossenen Anschluss mit einer sichtbar offenen Stelle."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 27.9,
-          "ende": 39.35,
+          "start": 34.8,
+          "ende": 46.638,
           "text": "Die innere Bahn endet neben der Wand offen; die Innenbekleidung würde diese Stelle später verdecken. Den passenden Randanschluss an den vorbereiteten Untergrund herstellen und vor dem Schließen prüfen."
         }
       ],
@@ -1559,55 +1559,55 @@
       "deckung": "biber-doppel",
       "detailId": "g05",
       "version": 1,
-      "dauer": 42.15,
+      "dauer": 53.163,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.839,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Befestigung, Lastabtragung und Windsog. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 13.3,
+          "start": 10.839,
+          "ende": 17.452,
           "text": "Befestigungen verbinden die Dachbauteile mit dem geeigneten Untergrund und übertragen die vorgesehenen Lasten."
         },
         {
           "id": "schritt-1",
           "titel": "Plan auf das Dach beziehen",
-          "start": 13.3,
-          "ende": 17.55,
+          "start": 17.452,
+          "ende": 23.252,
           "text": "Ordne einen ausdrücklich vorgegebenen Befestigungspunkt seiner Position im Modell zu."
         },
         {
           "id": "schritt-2",
           "titel": "Passende Teile bestimmen",
-          "start": 17.55,
-          "ende": 21,
+          "start": 23.252,
+          "ende": 28.611,
           "text": "Vergleiche Bauteil, Befestigungsmittel und Untergrund am vergrößerten Detail."
         },
         {
           "id": "schritt-3",
           "titel": "Verbindung herstellen",
-          "start": 21,
-          "ende": 25.65,
+          "start": 28.611,
+          "ende": 33.923,
           "text": "Verfolge im Modell die festgelegte Verbindung vom gesicherten Teil zum Untergrund."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Planübereinstimmung prüfen",
-          "start": 25.65,
-          "ende": 30.7,
+          "start": 33.923,
+          "ende": 39.537,
           "text": "Vergleiche die ausgeführte Stelle mit dem gegebenen Plan und der vorgesehenen Lage."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.7,
-          "ende": 42.15,
+          "start": 39.537,
+          "ende": 53.163,
           "text": "Die Halterung ist am Dachbauteil vorhanden, besitzt aber keinen Anschluss an den vorgesehenen tragenden Untergrund. Die Befestigung mit dem geeigneten Untergrund nach dem zugehörigen Plan vervollständigen und kontrollieren."
         }
       ],
@@ -1621,55 +1621,55 @@
       "deckung": "biber-doppel",
       "detailId": "g06",
       "version": 1,
-      "dauer": 43.35,
+      "dauer": 50.168,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 8.65,
+          "start": 0.0,
+          "ende": 10.921,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Wasserwege vom Dach bis zur Entwässerung. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 8.65,
-          "ende": 14.1,
+          "start": 10.921,
+          "ende": 16.535,
           "text": "Wasser muss von der aufnehmenden Fläche über passende Anschlüsse zum vorgesehenen Abfluss gelangen."
         },
         {
           "id": "schritt-1",
           "titel": "Am Auftreffpunkt beginnen",
-          "start": 14.1,
-          "ende": 19.15,
+          "start": 16.535,
+          "ende": 22.335,
           "text": "Wähle eine Wasserstelle auf der Dachfläche und bestimme die zugehörige wasserführende Ebene."
         },
         {
           "id": "schritt-2",
           "titel": "Übergang verfolgen",
-          "start": 19.15,
-          "ende": 24.2,
+          "start": 22.335,
+          "ende": 27.717,
           "text": "Gehe vom markierten Punkt über den Rand- oder Öffnungsanschluss zum nächsten Bauteil."
         },
         {
           "id": "schritt-3",
           "titel": "Weiterleitung prüfen",
-          "start": 24.2,
-          "ende": 28.45,
+          "start": 27.717,
+          "ende": 33.157,
           "text": "Verfolge den gezeigten Sammel- und Ablaufbereich bis zur angeschlossenen Leitung."
         },
         {
           "id": "schritt-4",
           "titel": "Störung erkennen",
-          "start": 28.45,
-          "ende": 32.7,
+          "start": 33.157,
+          "ende": 37.993,
           "text": "Vergleiche den ununterbrochenen Weg mit einem offenen oder blockierten Abschnitt."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 32.7,
-          "ende": 43.35,
+          "start": 37.993,
+          "ende": 50.168,
           "text": "Der dargestellte Weg endet vor dem vorgesehenen Ablauf an einer offenen Anschlussstelle. Den betroffenen Anschluss passend ergänzen und den gesamten Weg bis zur Weiterleitung erneut kontrollieren."
         }
       ],

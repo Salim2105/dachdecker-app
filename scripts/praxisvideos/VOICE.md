@@ -41,8 +41,8 @@ sh scripts/praxisvideos/voice-run.sh
 tail -f /tmp/dach-video-voice-batch.log
 ```
 
-Der Start läuft mit `nohup`, schreibt seine PID nach
-`/tmp/dach-video-voice-batch.pid` und produziert zuerst
+Der Start läuft mit `nohup`, schreibt die PID seines Standardbibliothek-Wächters
+nach `/tmp/dach-video-voice-batch.pid` und produziert zuerst
 `dach-steildach-falzziegel-s03`, danach die übrigen 111 Kontexte. Der
 Fortschritt steht in `/tmp/dach-video-audio/production.json`. Derselbe Befehl
 setzt einen unterbrochenen Lauf fort: Text, Modell und Produktionsversion
@@ -50,6 +50,26 @@ bestimmen die Signatur; vorhandene vollständige WAV-Dateien werden zusätzlich
 gegen die Prüfsumme im Beleg geprüft. Kapitel mit identischem Text teilen
 einen lokalen Synthesecache. Es läuft jeweils eine Sprachproduktion mit zwei
 CPU-Threads; parallel sind zwei Threads für die Videoproduktion vorgesehen.
+
+Ein beendeter, noch nicht aufgeräumter Zombieprozess gilt ausdrücklich nicht
+als laufende Produktion. Der Wächter prüft alle 15 Sekunden den tatsächlichen
+Prozesszustand und den residenten Speicher. Oberhalb von 6 GiB oder nach
+600 Sekunden ohne Kapitel-/Kontextfortschritt beendet er den Arbeiter und
+setzt den verifizierten Cache fort; maximal drei Fehlstarts werden versucht.
+Nach jeweils sechs neu produzierten Kontexten ersetzt sich der Arbeiter selbst
+mit `exec`, damit native CPU-Inferenzpuffer vollständig freigegeben werden.
+Die primitiven CPU-Operatorcaches sind zusätzlich auf einen Eintrag begrenzt.
+
+VITS kann seine Ausgabelänge stochastisch vorhersagen. Die Modelloption
+`max_inference_len` begrenzt erst den Decoder, nachdem bereits potenziell
+sehr große Alignmenttensoren angelegt wurden. Deshalb prüft ein Forward-Hook
+direkt die vorhergesagten Dauern: nicht endliche Werte oder mehr als 2.600
+Frames pro Satz werden vor der Alignmentallokation verworfen. Derselbe
+vollständige Text wird mit bis zu drei aus dem Kapitelcache-Schlüssel
+abgeleiteten Seeds erneut gesprochen. Es wird keine Erzählung abgeschnitten
+und keine andere Stimme eingesetzt. Bestehende, signierte Aufnahmen bleiben
+gültig. Diese Grenzen beheben die fehlende Speicherbegrenzung; sie belegen
+nicht rückwirkend die Ursache eines früher abgebrochenen Prozesses.
 
 Einzelner Kontext:
 
