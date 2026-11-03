@@ -8,7 +8,7 @@ const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),
 const {spawn,execFileSync}=require('node:child_process');
 const ROOT=path.resolve(__dirname,'../..'),CACHE=process.env.PRAXISVIDEO_CACHE||'/tmp/dach-video-render';
 const AUDIO=process.env.PRAXISVIDEO_AUDIO||'/tmp/dach-video-audio',OUT=path.join(ROOT,'public/praxisvideos/v1');
-const FRAMES=Number(process.env.PRAXISVIDEO_FRAMES||36),FPS=24,REVISION='three-geometry-015-r1';
+const FRAMES=Number(process.env.PRAXISVIDEO_FRAMES||48),FPS=24,REVISION='three-geometry-015-r1';
 const args=process.argv.slice(2),all=args.includes('--all'),selected=args.find(a=>a.startsWith('--id='))?.slice(5)||'dach-steildach-falzziegel-s03';
 let browser,server,page,stopping=false;
 const log=(event,data={})=>console.log(JSON.stringify({time:new Date().toISOString(),event,...data}));
@@ -29,9 +29,9 @@ async function command(bin,argv,logfile){
  });
 }
 function modelInfo(clip,overview=false){
- if(clip.typ==='handgriff')return {...clip,overview:false,cacheKey:crypto.createHash('sha256').update(REVISION+SCENE_SHA+clip.pfadId+clip.slug).digest('hex').slice(0,24)};
+ if(clip.typ==='handgriff')return {...clip,overview:false,cacheKey:crypto.createHash('sha256').update(REVISION+SCENE_SHA+FRAMES+clip.pfadId+clip.slug).digest('hex').slice(0,24)};
  const model='/public/dach-medien/v2/'+clip.form+'-'+clip.deckung+'/'+(overview?'uebersicht.glb':clip.detailId+'/modell.glb');
- return {typ:clip.typ,form:clip.form,deckung:clip.deckung,detailId:clip.detailId,model,overview,cacheKey:crypto.createHash('sha256').update(REVISION+SCENE_SHA+sha(path.join(ROOT,model))+(overview?'overview':'detail')).digest('hex').slice(0,24)};
+ return {typ:clip.typ,form:clip.form,deckung:clip.deckung,detailId:clip.detailId,model,overview,cacheKey:crypto.createHash('sha256').update(REVISION+SCENE_SHA+FRAMES+sha(path.join(ROOT,model))+(overview?'overview':'detail')).digest('hex').slice(0,24)};
 }
 async function init(){
  fs.mkdirSync(CACHE,{recursive:true});fs.mkdirSync(OUT,{recursive:true});
@@ -77,8 +77,8 @@ async function encode(clip,dirs){
    atomic(path.join(work,'chapter.txt'),`${String(i+1).padStart(2,'0')} / 07   ${title}`);
    atomic(path.join(work,'phase.txt'),i===6?'FEHLER SICHTBAR MACHEN  →  BAUTEIL KORRIGIEREN  →  ERNEUT PRÜFEN':i===3?'SCHNITT DURCH DAS 3D-MODELL':i===4?'BAUTEILE IN IHRER REIHENFOLGE ZUSAMMENFÜHREN':i===1?'DIE SCHICHTEN UND IHRE AUFGABEN':i===0?'EINORDNUNG AM DACH / SCHULMODELL':'ANIMATION AM RÄUMLICHEN LEHRMODELL');
    const font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf';
-   const filter=`minterpolate=fps=24:mi_mode=blend,tpad=stop_mode=clone:stop_duration=1,trim=duration=${seconds},setpts=PTS-STARTPTS,drawbox=x=0:y=0:w=iw:h=108:color=0x133b37@0.96:t=fill,drawtext=fontfile=${font}:textfile=${work}/title.txt:fontcolor=white:fontsize=29:x=40:y=18:line_spacing=4,drawtext=fontfile=${font}:textfile=${work}/context.txt:fontcolor=0xb9ddd2:fontsize=18:x=42:y=79,drawbox=x=0:y=628:w=iw:h=92:color=0x133b37@0.96:t=fill,drawtext=fontfile=${font}:textfile=${work}/chapter.txt:fontcolor=white:fontsize=24:x=42:y=642,drawtext=fontfile=${font}:textfile=${work}/phase.txt:fontcolor=0xb9ddd2:fontsize=14:x=43:y=683,format=yuv420p`;
-   await command('ffmpeg',['-hide_banner','-loglevel','warning','-y','-threads','2','-filter_threads','2','-framerate',String((FRAMES-1)/seconds),'-start_number','0','-i',path.join(dirs[i],'%04d.jpg'),'-vf',filter,'-an','-c:v','libx264','-preset','veryfast','-crf','24','-maxrate','1100k','-bufsize','2200k','-r','24','-t',String(seconds),'-threads','2',part+'.tmp.mp4'],path.join(work,'encode.log'));
+   const filter=`fps=24,tpad=stop_mode=clone:stop_duration=${seconds},trim=duration=${seconds},setpts=PTS-STARTPTS,drawbox=x=0:y=0:w=iw:h=108:color=0x133b37@0.96:t=fill,drawtext=fontfile=${font}:textfile=${work}/title.txt:fontcolor=white:fontsize=29:x=40:y=18:line_spacing=4,drawtext=fontfile=${font}:textfile=${work}/context.txt:fontcolor=0xb9ddd2:fontsize=18:x=42:y=79,drawbox=x=0:y=628:w=iw:h=92:color=0x133b37@0.96:t=fill,drawtext=fontfile=${font}:textfile=${work}/chapter.txt:fontcolor=white:fontsize=24:x=42:y=642,drawtext=fontfile=${font}:textfile=${work}/phase.txt:fontcolor=0xb9ddd2:fontsize=14:x=43:y=683,format=yuv420p`;
+   await command('ffmpeg',['-hide_banner','-loglevel','warning','-y','-threads','2','-filter_threads','2','-framerate',String(FRAMES/Math.min(2,seconds)),'-start_number','0','-i',path.join(dirs[i],'%04d.jpg'),'-vf',filter,'-an','-c:v','libx264','-preset','veryfast','-crf','24','-maxrate','1100k','-bufsize','2200k','-r','24','-t',String(seconds),'-threads','2',part+'.tmp.mp4'],path.join(work,'encode.log'));
    fs.renameSync(part+'.tmp.mp4',part);atomic(part+'.json',{key,seconds});
   }
   files.push(part);
@@ -91,7 +91,7 @@ async function encode(clip,dirs){
  if(!vs||vs.codec_name!=='h264'||vs.width!==1280||vs.height!==720||vs.avg_frame_rate!=='24/1'||!as||as.codec_name!=='aac'||fs.statSync(temp).size>15*1024*1024||Math.abs(Number(probe.format.duration)-duration)>.35)throw new Error('Invalid final video '+clip.id);
  fs.renameSync(temp,output);
  const poster=path.join(OUT,clip.id+'.webp');await command('ffmpeg',['-hide_banner','-loglevel','warning','-y','-threads','2','-ss',String(measured.kapitel[4].start+1),'-i',output,'-frames:v','1','-c:v','libwebp','-quality','83','-threads','2',poster],path.join(work,'encode.log'));
- atomic(finalReceipt,{id:clip.id,revision:REVISION,pipelineSha:PIPELINE_SHA,sceneSha:SCENE_SHA,sourceSha,audioSha,sha256:sha(output),bytes:fs.statSync(output).size,duration:Number(probe.format.duration),width:1280,height:720,fps:24,videoCodec:'h264',audioCodec:'aac',sourceFramesPerChapter:FRAMES,chapters:measured.kapitel,visualCache:dirs,interpolation:'24fps temporal blend of continuously transformed 3D geometry'});
+ atomic(finalReceipt,{id:clip.id,revision:REVISION,pipelineSha:PIPELINE_SHA,sceneSha:SCENE_SHA,sourceSha,audioSha,sha256:sha(output),bytes:fs.statSync(output).size,duration:Number(probe.format.duration),width:1280,height:720,fps:24,videoCodec:'h264',audioCodec:'aac',sourceFramesPerChapter:FRAMES,chapters:measured.kapitel,visualCache:dirs,animation:'48 actual geometry poses at 24fps, then intentional final-pose hold; no blended or invented poses'});
  log('clip-ready',{id:clip.id,seconds:Number(probe.format.duration),bytes:fs.statSync(output).size,output});
 }
 async function manifest(){
