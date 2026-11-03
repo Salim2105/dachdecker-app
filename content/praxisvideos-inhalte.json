@@ -1683,55 +1683,55 @@
       "deckung": "biber-doppel",
       "detailId": "s01",
       "version": 1,
-      "dauer": 41.35,
+      "dauer": 48.078,
       "kapitel": [
         {
           "id": "einordnung",
           "titel": "Einordnung im Lehrmodell",
-          "start": 0,
-          "ende": 7.85,
+          "start": 0.0,
+          "ende": 10.897,
           "text": "Am Satteldach mit Gaube mit Biberschwanz-Doppeldeckung betrachten wir: Deckfläche, Falze und Überdeckungen. Es gelten die vorgegebenen Anschlüsse dieses Lehrmodells."
         },
         {
           "id": "funktion",
           "titel": "Funktion und Bauteile",
-          "start": 7.85,
-          "ende": 12.1,
+          "start": 10.897,
+          "ende": 15.653,
           "text": "Die Deckfläche führt Niederschlag durch das Zusammenspiel ihrer Deckelemente ab."
         },
         {
           "id": "schritt-1",
           "titel": "Produkt und Deckschema zuordnen",
-          "start": 12.1,
-          "ende": 17.15,
+          "start": 15.653,
+          "ende": 21.116,
           "text": "Wähle Falzziegel oder Biber und benenne die für diese Variante sichtbaren Merkmale."
         },
         {
           "id": "schritt-2",
           "titel": "Auflage und Einteilung prüfen",
-          "start": 17.15,
-          "ende": 21.8,
+          "start": 21.116,
+          "ende": 25.314,
           "text": "Verfolge am Schnitt die Aufhängung und die Lage der nächsten Reihe."
         },
         {
           "id": "schritt-3",
           "titel": "Deckelemente zusammenführen",
-          "start": 21.8,
-          "ende": 26.45,
+          "start": 25.314,
+          "ende": 30.138,
           "text": "Füge die im Modell vorgegebene Reihe in der angegebenen Folge zusammen."
         },
         {
           "id": "schritt-4",
           "titel": "Sitz und Wasserführung kontrollieren",
-          "start": 26.45,
-          "ende": 30.3,
+          "start": 30.138,
+          "ende": 34.719,
           "text": "Vergleiche den flächigen Sitz mit einem sichtbar angehobenen Deckelement."
         },
         {
           "id": "fehlerkorrektur",
           "titel": "Fehler erkennen und korrigieren",
-          "start": 30.3,
-          "ende": 41.35,
+          "start": 34.719,
+          "ende": 48.078,
           "text": "Ein Deckelement steht sichtbar über seinen Nachbarn und liegt nicht an der vorgesehenen Aufhängung an. Den fehlerhaften Sitz korrigieren und anschließend Nachbarelemente, Fugenlage und Wasserführung erneut prüfen."
         }
       ],

@@ -74,7 +74,8 @@ def main() -> None:
             child.wait()
         state = json.loads((AUDIO / 'production.json').read_text()) if (AUDIO / 'production.json').exists() else {}
         if state.get('state') == 'complete':
-            print(f"WATCH complete {len(state.get('completed', []))}/{state.get('total')}", flush=True)
+            subprocess.run(['python3', str(ROOT / 'scripts/praxisvideos/voice-audit.py')], cwd=ROOT, check=True)
+            print(f"WATCH complete {len(state.get('completed', []))}/{state.get('total')}; all measured audio/captions audited", flush=True)
             return
         failures += 1
         if failures > 3:

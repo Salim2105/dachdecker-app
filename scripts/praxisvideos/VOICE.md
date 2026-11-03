@@ -99,3 +99,17 @@ das Tempo mit FFmpegs tonhöhenerhaltendem `atempo` angepasst. Kapitel- und
 Untertitelzeiten beziehen sich auf das fertig gemessene Ergebnis. Das
 Inhaltsgeneratorskript erhält bereits gemessene Zeiten, solange sich der
 zugehörige Text nicht ändert.
+
+## Prüfung der tatsächlichen Arbeitsmedien
+
+```sh
+python3 scripts/praxisvideos/voice-audit.py --allow-partial
+python3 scripts/praxisvideos/voice-audit.py
+```
+
+Der erste Aufruf prüft alle bereits fertigen Kontexte. Der zweite verlangt
+alle 112. Geprüft werden Modell-/Textsignatur, WAV-Prüfsumme, PCM-Format,
+45–90 Sekunden, gemessene Kapitelgrenzen im Inhaltsmanifest sowie vollständige,
+zeitlich gültige Untertitel und die tatsächlich veröffentlichten VTT-Dateien.
+Der Bericht liegt in `/tmp/dach-video-audio/audit.json`. Der Wächter startet
+diese vollständige Prüfung bei regulärem Produktionsabschluss automatisch.

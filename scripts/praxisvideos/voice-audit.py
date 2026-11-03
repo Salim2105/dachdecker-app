@@ -1,60 +1,92 @@
 #!/usr/bin/env python3
-"""Validate produced narration, hashes, measured chapters and German captions."""
+"""Audit actual neural WAVs, receipts, measured chapters and published captions."""
+from __future__ import annotations
+
 import argparse
-from array import array
 import hashlib
 import json
 from pathlib import Path
 import wave
 
+from voice import MODEL_SHA256, VOICE_VERSION, timestamp
+
 ROOT = Path(__file__).resolve().parents[2]
-parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("--partial", action="store_true", help="Allow contexts not produced yet")
-args = parser.parse_args()
-videos = json.loads((ROOT / "content/praxisvideos-inhalte.json").read_text())["videos"]
-audio_root = Path("/tmp/dach-video-audio")
-errors, pending, produced = [], [], []
-for video in videos:
-    folder = audio_root / video["id"]
-    receipt_path = folder / "receipt.json"
-    if not receipt_path.exists() or json.loads(receipt_path.read_text()).get("version") != 2:
-        pending.append(video["id"])
-        continue
-    try:
-        receipt = json.loads(receipt_path.read_text())
-        raw = (folder / "audio.wav").read_bytes()
-        assert hashlib.sha256(raw).hexdigest() == receipt["audioSha256"], "audio hash"
-        with wave.open(str(folder / "audio.wav")) as wav:
-            assert (wav.getnchannels(), wav.getsampwidth(), wav.getframerate()) == (1, 2, 22050), "PCM format"
-            seconds = wav.getnframes() / wav.getframerate()
-            samples = array("h", wav.readframes(wav.getnframes()))
-        assert 45 <= seconds <= 90, "duration range"
-        assert abs(seconds - video["dauer"]) <= .001, "manifest duration"
-        assert abs(seconds - receipt["dauer"]) <= .001, "receipt duration"
-        assert 150 < max(abs(s) for s in samples) <= 29500, "audible unclipped peak"
-        assert sum(s * s for s in samples) / len(samples) > 10000, "audible RMS"
-        end = 0
-        for authored, measured in zip(video["kapitel"], receipt["kapitel"], strict=True):
-            assert authored["id"] == measured["id"], "chapter identity"
-            assert authored["start"] == measured["start"] and authored["ende"] == measured["ende"], "chapter manifest timing"
-            assert authored["start"] == end < authored["ende"], "continuous chapter timing"
-            end = authored["ende"]
-        assert abs(end - seconds) <= .001, "last chapter end"
-        cues = receipt["cues"]
-        assert " ".join(" ".join(c["text"].split()) for c in cues) == " ".join(video["transkript"].split()), "caption transcript"
-        end = 0
-        for cue in cues:
-            assert end <= cue["start"] < cue["ende"] <= video["dauer"], "caption timing"
-            lines = cue["text"].splitlines()
-            assert len(lines) <= 2, "caption line count"
-            assert all(len(line) <= 42 or len(line.split()) == 1 for line in lines), "caption line width"
-            end = cue["ende"]
-        vtt = (ROOT / "public/praxisvideos/v1" / f"{video['id']}.vtt").read_text()
-        assert vtt.startswith("WEBVTT\n") and vtt.count(" --> ") == len(cues), "WebVTT cues"
-        produced.append({"id": video["id"], "seconds": seconds, "cues": len(cues), "audioSha256": receipt["audioSha256"]})
-    except (AssertionError, OSError, ValueError, KeyError) as error:
-        errors.append({"id": video["id"], "error": str(error)})
-result = {"catalogCount": len(videos), "producedCount": len(produced), "pendingCount": len(pending), "complete": len(produced) == 112 and not errors, "errors": errors, "pending": pending, "produced": produced}
-(audio_root / "audit.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
-print(json.dumps({key: result[key] for key in ("catalogCount", "producedCount", "pendingCount", "complete", "errors")}, ensure_ascii=False))
-raise SystemExit(1 if errors or (pending and not args.partial) else 0)
+
+
+def sha256(path: Path) -> str:
+    result = hashlib.sha256()
+    with path.open('rb') as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
+            result.update(chunk)
+    return result.hexdigest()
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--allow-partial', action='store_true')
+    parser.add_argument('--audio-dir', type=Path, default=Path('/tmp/dach-video-audio'))
+    args = parser.parse_args()
+    catalog = json.loads((ROOT / 'content/praxisvideos-inhalte.json').read_text())['videos']
+    missing, errors, valid = [], [], []
+    for video in catalog:
+        video_id = video['id']
+        directory = args.audio_dir / video_id
+        if not (directory / 'receipt.json').exists():
+            missing.append(video_id)
+            continue
+        try:
+            receipt = json.loads((directory / 'receipt.json').read_text())
+            audio = directory / 'audio.wav'
+            assert receipt['id'] == video_id, 'Receipt ID differs'
+            assert receipt['modelArchiveSha256'] == MODEL_SHA256, 'Model provenance differs'
+            signature = hashlib.sha256((MODEL_SHA256 + video['transkript'] + VOICE_VERSION).encode()).hexdigest()
+            assert signature == receipt['signature'], 'Authored script/model signature differs'
+            assert sha256(audio) == receipt['audioSha256'], 'WAV SHA-256 differs'
+            with wave.open(str(audio)) as stream:
+                duration = stream.getnframes() / stream.getframerate()
+                assert stream.getframerate() == receipt['sampleRate'] == 22050, 'Sample rate differs'
+                assert stream.getnchannels() == 1 and stream.getsampwidth() == 2, 'Expected mono PCM16'
+            assert 45 <= duration <= 90, f'Duration {duration:.3f}s outside 45–90s'
+            assert abs(duration - receipt['dauer']) < .002, 'Receipt duration differs'
+            assert video['dauer'] == receipt['dauer'], 'Manifest duration differs'
+            assert len(video['kapitel']) == len(receipt['kapitel']), 'Chapter count differs'
+            previous_end = 0
+            for chapter, timing in zip(video['kapitel'], receipt['kapitel']):
+                assert chapter['id'] == timing['id'], 'Chapter ID differs'
+                assert chapter['start'] == timing['start'] and chapter['ende'] == timing['ende'], 'Manifest chapter timing differs'
+                assert abs(chapter['start'] - previous_end) <= .002, 'Chapter timing gap'
+                assert 0 <= chapter['start'] < chapter['ende'] <= duration + .002, 'Chapter bounds invalid'
+                previous_end = chapter['ende']
+            assert abs(previous_end - duration) <= .002, 'Last chapter does not end at WAV duration'
+            previous_end = 0
+            for cue in receipt['cues']:
+                assert 0 <= cue['start'] < cue['ende'] <= duration + .002, 'Caption bounds invalid'
+                assert cue['start'] >= previous_end - .002, 'Captions overlap'
+                assert len(cue['text'].splitlines()) <= 2, 'Caption exceeds two lines'
+                previous_end = cue['ende']
+            vtt = (ROOT / 'public/praxisvideos/v1' / f'{video_id}.vtt').read_text()
+            assert vtt.startswith('WEBVTT\n'), 'Published VTT header missing'
+            assert vtt.count(' --> ') == len(receipt['cues']), 'Published VTT cue count differs'
+            for cue in receipt['cues']:
+                expected = f"{timestamp(cue['start'])} --> {timestamp(cue['ende'])}\n{cue['text']}"
+                assert expected in vtt, 'Published VTT text/timing differs'
+            caption_text = ' '.join(' '.join(cue['text'].split()) for cue in receipt['cues'])
+            authored_text = ' '.join(' '.join(chapter['text'].split()) for chapter in video['kapitel'])
+            assert caption_text == authored_text, 'Captions do not cover the complete authored narration'
+            valid.append({'id': video_id, 'dauer': receipt['dauer'], 'audioSha256': receipt['audioSha256']})
+        except (AssertionError, KeyError, FileNotFoundError, wave.Error) as error:
+            errors.append({'id': video_id, 'error': str(error)})
+    report = {'total': len(catalog), 'valid': len(valid), 'missing': missing, 'errors': errors, 'receipts': valid}
+    target = args.audio_dir / 'audit.json'
+    temporary = target.with_suffix('.json.tmp')
+    temporary.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
+    temporary.replace(target)
+    print(f"Neural audio audit: {len(valid)}/{len(catalog)} valid, {len(missing)} missing, {len(errors)} errors. {target}")
+    for error in errors:
+        print(f"ERROR {error['id']}: {error['error']}")
+    if errors or (missing and not args.allow_partial):
+        raise SystemExit(1)
+
+
+if __name__ == '__main__':
+    main()
