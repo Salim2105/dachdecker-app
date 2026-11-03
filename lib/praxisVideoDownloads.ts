@@ -166,12 +166,14 @@ export async function ladePraxisVideoPaket(paket: PraxisVideoPaket, options: { s
         const response = await fetch(asset.url, { signal: options.signal, credentials: "same-origin", cache: "no-store", redirect: "error" });
         const bytes = await lesen(response, asset, options.signal, n => { fortschritt.geladen += n; publish(); });
         if (await sha256(bytes) !== asset.sha256) throw new Error("Die heruntergeladene Mediendatei hat eine abweichende Prüfsumme. Das bisherige Paket bleibt erhalten.");
+        abbruch(options.signal);
         await stage.put(cacheKey, new Response(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength) as ArrayBuffer, { headers: { "Content-Type": asset.typ === "video" ? "video/mp4" : asset.typ === "untertitel" ? "text/vtt; charset=utf-8" : "image/webp", "Content-Length": String(asset.bytes), "X-Praxisvideo-Sha256": asset.sha256 } }));
       }
       fortschritt.dateien++; publish();
     }
     abbruch(options.signal);
     for (const request of await stage.keys()) {
+      abbruch(options.signal);
       const response = await stage.match(request);
       if (!response) throw new Error("Ein Zwischenspeicher ist nicht vollständig. Bitte den Download erneut starten.");
       const pfad = new URL(request.url).pathname;
@@ -181,6 +183,7 @@ export async function ladePraxisVideoPaket(paket: PraxisVideoPaket, options: { s
     }
     abbruch(options.signal);
     const index = await cs.open(PRAXIS_VIDEO_INDEX_CACHE);
+    abbruch(options.signal);
     const neu: PaketMarker = { version: 1, id: paket.id, am: Date.now(), assets: paket.assets };
     await index.put(markerKey(paket.id), new Response(JSON.stringify(neu), { headers: { "Content-Type": "application/json" } }));
     melden();

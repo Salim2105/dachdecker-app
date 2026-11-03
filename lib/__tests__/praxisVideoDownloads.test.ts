@@ -114,6 +114,22 @@ describe("Explizite, geprüfte Offline-Videopakete", () => {
     await expect(download).rejects.toMatchObject({ name: "AbortError" });
     expect(cancel).toHaveBeenCalledOnce(); noStages();
   });
+  it("behält bei Abbruch unmittelbar vor dem Paketabschluss die bisherige Fassung", async () => {
+    const p = paket(); await ladePraxisVideoPaket(p); const vorher = await marker();
+    const neu = paket(assets(clipId, true)), controller = new AbortController();
+    fetcher.mockImplementation(async (url: string) => new Response(body(neu.assets.find(a => a.url === url)!, true)));
+    const open = caches.open.bind(caches);
+    vi.spyOn(caches, "open").mockImplementation(async name => {
+      const cache = await open(name);
+      if (name === PRAXIS_VIDEO_INDEX_CACHE) controller.abort();
+      return cache;
+    });
+    await expect(ladePraxisVideoPaket(neu, { signal: controller.signal })).rejects.toMatchObject({ name: "AbortError" });
+    expect(await marker()).toBe(vorher);
+    expect(await praxisVideoPaketStatus(p)).toMatchObject({ status: "gespeichert" });
+    expect(stores.get(PRAXIS_VIDEO_CACHE)!.size).toBe(3);
+    noStages();
+  });
   it("vergleicht bei komprimierten Antworten die gelesenen statt der übertragenen Bytes", async () => {
     const p = paket();
     fetcher.mockImplementation(async (url: string) => new Response(body(p.assets.find(a => a.url === url)!), { headers: { "Content-Encoding": "gzip", "Content-Length": "1" } }));

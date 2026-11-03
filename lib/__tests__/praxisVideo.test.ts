@@ -56,6 +56,10 @@ describe("Versionierte Praxisvideos", () => {
     expect(istPraxisVideoAsset({ ...a, bytes: Infinity })).toBe(false);
     for (const pfad of ["../clip.mp4", `${v.id}.mp4?x=1`, `v2/${v.id}.mp4`, `${v.id}.html`]) expect(istPraxisVideoMedienPfad(pfad)).toBe(false);
   });
+  it("verwirft Laufzeitkontexte, deren Bindestriche nur zufällig eine bekannte Video-ID ergeben", () => {
+    expect(getDachPraxisVideo("steildach", "biber" as never, "doppel-g01")).toBeUndefined();
+    expect(getWerkstattPraxisVideo("biber" as never, "doppel-schnitt")).toBeUndefined();
+  });
   it("sichert unabhängige Ton-/Untertitelwahl und Wiedergabepositionen ohne öffentliche Videobytes", async () => {
     const storage = await import("@/lib/lernSpeicher"), stand = await import("@/lib/praxisVideoStand"), backup = await import("@/lib/backup");
     await storage.initializeStorage();

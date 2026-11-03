@@ -51,11 +51,13 @@ export const PRAXIS_VIDEOS: PraxisVideo[] = (() => {
 })();
 export const getPraxisVideo = (id: string): PraxisVideo | undefined => PRAXIS_VIDEOS.find(v => v.id === id);
 export function getDachPraxisVideo(form: DachForm, deckung: DachDeckung, detailId: string): PraxisVideo | undefined {
-  return getPraxisVideo(`dach-${form}-${deckung}-${detailId}`);
+  const video = getPraxisVideo(`dach-${form}-${deckung}-${detailId}`);
+  return video?.typ === "dachdetail" && video.form === form && video.deckung === deckung && video.detailId === detailId ? video : undefined;
 }
 export function getDachPraxisVideos(form: DachForm, deckung?: DachDeckung): PraxisVideo[] {
   return PRAXIS_VIDEOS.filter(v => v.typ === "dachdetail" && v.form === form && (!deckung || v.deckung === deckung));
 }
 export function getWerkstattPraxisVideo(pfadId: WerkstattPfadId, slug: string): PraxisVideo | undefined {
-  return getPraxisVideo(`werkstatt-${pfadId}-${slug}`);
+  const video = getPraxisVideo(`werkstatt-${pfadId}-${slug}`);
+  return video?.typ === "handgriff" && video.pfadId === pfadId && video.slug === slug ? video : undefined;
 }
