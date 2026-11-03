@@ -45,8 +45,8 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
       handlers[name]({ data, waitUntil: (p) => { pending.push(p); } });
       await Promise.all(pending);
     },
-    async request(path: string, navigate = false, cache?: RequestCache) {
-      const request = new Request(ORIGIN + path, { cache });
+    async request(path: string, navigate = false, cache?: RequestCache, init: RequestInit = {}) {
+      const request = new Request(ORIGIN + path, { cache, ...init });
       if (navigate) Object.defineProperty(request, "mode", { value: "navigate" });
       const pending: Promise<unknown>[] = [];
       let response: Promise<Response> | undefined;
@@ -59,6 +59,49 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
 }
 
 describe("Service Worker mit ausdrücklich freigegebenen Updates", () => {
+  it("lädt Poster und Untertitel, aber keine Filme als notwendigen Grunddownload", async () => {
+    const base = "/praxisvideos/v1/dach-steildach-falzziegel-s03";
+    const h = harness(["/", base + ".mp4", base + ".webm", base + ".vtt", base + ".webp"]);
+    await h.dispatch("install");
+    const keys = [...h.stores.get(h.cacheName)!.keys()];
+    expect(keys).toEqual([ORIGIN + "/", ORIGIN + base + ".vtt", ORIGIN + base + ".webp"]);
+    expect(await (await h.request(base + ".vtt"))!.text()).toBe("neu:" + base + ".vtt");
+  });
+  it("spult vollständige Videopakete offline mit geschlossenen, offenen und Suffix-Ranges", async () => {
+    const h = harness(), id = "dach-steildach-falzziegel-s03", url = `/praxisvideos/v1/${id}.mp4`, sha256 = "b".repeat(64);
+    const data = "0123456789";
+    await (await h.caches.open("dachdecker-praxisvideos-v1")).put(`/praxisvideos/_inhalt/${sha256}`, new Response(data, { headers: { "Content-Type": "video/mp4", "Content-Length": "10" } }));
+    await h.put("dachdecker-praxisvideos-index-v1", `/praxisvideos/_pakete/clip-${id}.json`, JSON.stringify({ version: 1, id: `clip-${id}`, am: 1, assets: [{ id: id + ".mp4", url, sha256, bytes: 10, typ: "video" }] }));
+    for (const [range, body, contentRange] of [["bytes=0-1", "01", "bytes 0-1/10"], ["bytes=4-", "456789", "bytes 4-9/10"], ["bytes=-3", "789", "bytes 7-9/10"], ["bytes=8-99", "89", "bytes 8-9/10"]]) {
+      const response = (await h.request(url, false, undefined, { headers: { Range: range } }))!;
+      expect(response.status).toBe(206); expect(response.headers.get("Content-Type")).toBe("video/mp4");
+      expect(response.headers.get("Content-Range")).toBe(contentRange);
+      expect(response.headers.get("Content-Length")).toBe(String(body.length));
+      expect(await response.text()).toBe(body);
+    }
+    const head = (await h.request(url, false, undefined, { method: "HEAD", headers: { Range: "bytes=0-1" } }))!;
+    expect(head.status).toBe(200); expect(head.headers.get("Content-Length")).toBe("10"); expect(await head.text()).toBe("");
+    for (const range of ["bytes=10-", "bytes=5-2", "bytes=-0", "bytes=a-b"]) {
+      const response = (await h.request(url, false, undefined, { headers: { Range: range } }))!;
+      expect(response.status).toBe(416); expect(response.headers.get("Content-Range")).toBe("bytes */10"); expect(await response.text()).toBe("");
+    }
+    expect(await (await h.request(url))!.text()).toBe(data);
+    expect(h.fetch).not.toHaveBeenCalled();
+    await h.dispatch("activate");
+    expect(h.stores.has("dachdecker-praxisvideos-v1")).toBe(true);
+    expect(h.stores.has("dachdecker-praxisvideos-index-v1")).toBe(true);
+  });
+  it("speichert gestreamte Teilantworten nie ungefragt und umgeht alte Videos beim neuen Download", async () => {
+    const h = harness(), url = "/praxisvideos/v1/dach-steildach-falzziegel-s03.mp4";
+    h.fetch.mockResolvedValue(new Response("01", { status: 206, headers: { "Content-Range": "bytes 0-1/10" } }));
+    const response = (await h.request(url, false, undefined, { headers: { Range: "bytes=0-1" } }))!;
+    expect(response.status).toBe(206); expect(await response.text()).toBe("01");
+    expect([...h.stores.values()].some(store => store.has(ORIGIN + url))).toBe(false);
+    h.fetch.mockResolvedValue(new Response("new full bytes"));
+    expect(await (await h.request(url, false, "no-store"))!.text()).toBe("new full bytes");
+    h.fetch.mockRejectedValue(new Error("offline"));
+    expect((await h.request(url))!.type).toBe("error");
+  });
   it("lädt kleine Dachansichten im Kern, aber keine großen Modelle oder Detailbilder automatisch", async () => {
     const h = harness(["/", "/dach-vorschau/v1/steildach-falzziegel/s03-nah.webp", "/dach-medien/v1/steildach-falzziegel/uebersicht.glb", "/dach-medien/v1/steildach-falzziegel/s03/nah.webp"]);
     await h.dispatch("install");

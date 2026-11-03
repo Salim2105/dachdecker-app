@@ -8,8 +8,8 @@
 const { app, BrowserWindow, shell, dialog, ipcMain } = require("electron");
 const http = require("node:http");
 const path = require("node:path");
-const fs = require("node:fs");
 const { convertHeicToPng } = require("./heic");
+const { createStaticHandler } = require("./static-server");
 const NEUE_APP = require("../package.json").desktopVariant === "neu";
 const APP_NAME = NEUE_APP ? "Dachdecker Neu" : "Dachdecker";
 
@@ -41,56 +41,10 @@ ipcMain.handle("drawing:convert-heic", async (event, payload) => {
   } finally { heicUmwandlungAktiv = false; }
 });
 
-const MIME = {
-  ".html": "text/html; charset=utf-8",
-  ".js": "text/javascript; charset=utf-8",
-  ".css": "text/css; charset=utf-8",
-  ".json": "application/json; charset=utf-8",
-  ".svg": "image/svg+xml",
-  ".png": "image/png",
-  ".jpg": "image/jpeg",
-  ".jpeg": "image/jpeg",
-  ".webp": "image/webp",
-  ".ico": "image/x-icon",
-  ".woff": "font/woff",
-  ".woff2": "font/woff2",
-  ".txt": "text/plain; charset=utf-8",
-  ".webmanifest": "application/manifest+json",
-};
-
-// Löst eine URL auf eine Datei im Export auf: exakte Datei, sonst .html,
-// sonst index.html im Ordner. So passen die sauberen Router-URLs.
-function dateiFuer(pfad) {
-  const rein = decodeURIComponent(pfad.split("?")[0]).replace(/^\/+/, "");
-  const basis = path.join(OUT_DIR, rein);
-  const kandidaten = rein === "" || rein.endsWith("/")
-    ? [path.join(basis, "index.html")]
-    : [basis, basis + ".html", path.join(basis, "index.html")];
-  for (const k of kandidaten) {
-    // OUT_DIR + Trenner: sonst würde ein Nachbarordner "out…" durchrutschen.
-    if (k.startsWith(OUT_DIR + path.sep) && fs.existsSync(k) && fs.statSync(k).isFile()) return k;
-  }
-  return null;
-}
-
 function starteServer() {
   if (lokalerServer) return Promise.resolve(FEST_PORT);
   return new Promise((resolve, reject) => {
-    const server = http.createServer((req, res) => {
-      const datei = dateiFuer(req.url || "/");
-      if (!datei) {
-        const fallback = path.join(OUT_DIR, "404.html");
-        if (fs.existsSync(fallback)) {
-          res.writeHead(404, { "Content-Type": MIME[".html"] });
-          fs.createReadStream(fallback).pipe(res);
-        } else {
-          res.writeHead(404).end("Not found");
-        }
-        return;
-      }
-      res.writeHead(200, { "Content-Type": MIME[path.extname(datei)] || "application/octet-stream" });
-      fs.createReadStream(datei).pipe(res);
-    });
+    const server = http.createServer(createStaticHandler(OUT_DIR));
     // FESTER Port: sonst ändert sich bei jedem Start die Adresse
     // (http://127.0.0.1:PORT), und weil der Fortschritt pro Adresse im
     // localStorage liegt, wäre er nach jedem Neustart weg.

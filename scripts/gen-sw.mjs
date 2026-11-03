@@ -3,6 +3,10 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "
 import { randomUUID } from "node:crypto";
 import { join, relative, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import rangeHelpers from "../electron/http-byte-range.cjs";
+
+const { parseByteRange } = rangeHelpers;
+const grossesVideo = (url) => url.startsWith("/praxisvideos/") && /\.(?:mp4|webm|mov|m4v)$/i.test(url);
 
 const CACHE_PREFIX = "dachdecker-lernwerkstatt-root-";
 function dateienIn(wurzel) {
@@ -13,7 +17,7 @@ function dateienIn(wurzel) {
   });
 }
 export function createServiceWorker({ cacheName, shell }) {
-  const kernShell = shell.filter((url) => !url.startsWith("/dach-medien/"));
+  const kernShell = shell.filter((url) => !url.startsWith("/dach-medien/") && !grossesVideo(url));
   return `// Automatisch erzeugt von scripts/gen-sw.mjs — nicht von Hand ändern.
 const CACHE = ${JSON.stringify(cacheName)};
 const CACHE_PREFIX = ${JSON.stringify(CACHE_PREFIX)};
@@ -21,6 +25,58 @@ const SHELL = ${JSON.stringify(kernShell, null, 2)};
 const GLEICHZEITIG = 6;
 const MEDIEN_CACHE = 'dachdecker-medien-v1';
 const MEDIEN_INDEX = 'dachdecker-medien-index-v1';
+const VIDEO_CACHE = 'dachdecker-praxisvideos-v1';
+const VIDEO_INDEX = 'dachdecker-praxisvideos-index-v1';
+${parseByteRange.toString()}
+
+// Only complete, explicitly downloaded videos enter the media cache. The
+// browser may request two bytes first, then seek anywhere in that same file.
+async function videoAntwort(request, response) {
+  const headers = Object.fromEntries(response.headers.entries());
+  const size = Number(headers['content-length']);
+  if (!Number.isSafeInteger(size) || size < 0 || size > 15 * 1024 * 1024 || response.status !== 200) return Response.error();
+  headers['accept-ranges'] = 'bytes';
+  if (request.method === 'HEAD') return new Response(null, { status: 200, headers });
+  const range = parseByteRange(request.headers.get('Range'), size);
+  if (range && range.invalid) return new Response(null, { status: 416, headers: { ...headers, 'content-range': 'bytes */' + size, 'content-length': '0' } });
+  if (!range) return new Response(response.body, { status: 200, headers });
+  const bytes = await response.arrayBuffer();
+  if (bytes.byteLength !== size) return Response.error();
+  headers['content-range'] = 'bytes ' + range.start + '-' + range.end + '/' + size;
+  headers['content-length'] = String(range.end - range.start + 1);
+  return new Response(bytes.slice(range.start, range.end + 1), { status: 206, headers });
+}
+async function praxisVideoMedium(request, url) {
+  // A new explicit download must not reuse bytes from a preceding version.
+  if (request.cache !== 'no-store') {
+    try {
+      const index = await caches.open(VIDEO_INDEX), cache = await caches.open(VIDEO_CACHE);
+      const markers = [];
+      for (const key of await index.keys()) {
+        try {
+          const item = await index.match(key), m = item && await item.json();
+          if (m && m.version === 1 && typeof m.id === 'string' && /^(?:clip-[a-z0-9-]+|dach-(?:steildach|walmdach|flachdach))$/.test(m.id) && Number.isFinite(m.am) && Array.isArray(m.assets) && m.assets.length <= 1000) markers.push(m);
+        } catch { /* A malformed/incomplete index cannot replace a full file. */ }
+      }
+      markers.sort((a,b) => b.am - a.am);
+      for (const m of markers) {
+        const asset = m.assets.find(a => a && a.url === url.pathname && /^\\/praxisvideos\\/v[0-9]+\\/[a-z0-9-]+\\.(?:mp4|vtt|webp)$/.test(a.url) && typeof a.sha256 === 'string' && /^[a-f0-9]{64}$/.test(a.sha256) && Number.isSafeInteger(a.bytes) && a.bytes > 0 && a.bytes <= 15 * 1024 * 1024);
+        if (!asset) continue;
+        const hit = await cache.match('/praxisvideos/_inhalt/' + asset.sha256);
+        if (hit && hit.status === 200 && Number(hit.headers.get('Content-Length')) === asset.bytes) return videoAntwort(request, hit);
+      }
+      // Posters and caption tracks belong to the small offline surface.
+      if (!url.pathname.endsWith('.mp4')) {
+        const small = await ausCache(url.pathname, true);
+        if (small) return request.method === 'HEAD' ? new Response(null, { status: small.status, headers: small.headers }) : small;
+      }
+    } catch { /* Keep the online request usable when storage is unavailable. */ }
+  }
+  // Return streamed 200/206 responses directly. Cache.put rejects partial
+  // responses, and merely watching must not silently save a large movie.
+  try { return await fetch(request); }
+  catch { return Response.error(); }
+}
 
 // Nur unsere Root-App-Caches einschließlich der bisherigen Namensform.
 function eigenerCache(name) {
@@ -124,9 +180,14 @@ self.addEventListener('activate', (event) => {
   })());
 });
 self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return;
+  if (event.request.method !== 'GET' && event.request.method !== 'HEAD') return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || url.pathname === '/sw.js') return;
+  if (url.pathname.startsWith('/praxisvideos/')) {
+    event.respondWith(praxisVideoMedium(event.request, url));
+    return;
+  }
+  if (event.request.method !== 'GET') return;
   if (url.pathname.startsWith('/dach-medien/')) {
     event.respondWith(dachMedium(event.request, url));
     return;
@@ -180,7 +241,7 @@ export function generateServiceWorker(exportMode = process.env.EXPORT === "1") {
     const statisch = dateienIn("public").map((p) => "/" + relative("public", p).split("\\").join("/")).filter((p) => !["/sw.js", "/_worker.js", "/manifest.webmanifest"].includes(p));
     alles = [...seiten, ...statisch, ...assets];
   }
-  const shell = [...new Set(alles)].filter((url) => !url.startsWith("/dach-medien/"));
+  const shell = [...new Set(alles)].filter((url) => !url.startsWith("/dach-medien/") && !grossesVideo(url));
   const cacheName = `${CACHE_PREFIX}${Date.now()}-${randomUUID().slice(0, 8)}`;
   writeFileSync(ziel, createServiceWorker({ cacheName, shell }));
   console.log(`${ziel} erzeugt: ${shell.length} Dateien (${cacheName}).`);
