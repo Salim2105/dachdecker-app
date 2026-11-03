@@ -1,0 +1,36 @@
+.player { min-width: 0; width: 100%; color: var(--text); background: var(--surface); }
+.heading { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; padding: .85rem 1rem; border-bottom: 1px solid var(--border); }
+.heading > span { font-size: .68rem; font-weight: 750; letter-spacing: .12em; color: var(--accent); }
+.heading > strong { flex: 1 1 200px; font-size: .9rem; }
+.heading > small { font-size: .72rem; color: var(--text-muted); }
+.film { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #14292d; }
+.studio .film { height: var(--dach-viewport-height); aspect-ratio: auto; }
+.settings { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; padding: .8rem 1rem; margin: 0; border: 0; border-top: 1px solid var(--border); }
+.settings legend { font-size: .7rem; font-weight: 650; padding-top: .65rem; color: var(--text-muted); }
+.player button, .player select { min-height: 44px; padding: .5rem .75rem; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: .76rem; cursor: pointer; }
+.settings button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.settings label { display: inline-flex; align-items: center; gap: .5rem; font-size: .73rem; margin-left: auto; }
+.player :is(button, select, summary):focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.player button:disabled, .player select:disabled { opacity: .55; cursor: default; }
+.text { padding: 0 1rem 1rem; font-size: .78rem; border-top: 1px solid var(--border); }
+.text summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 650; }
+.text summary::after { content: "+"; margin-left: auto; }
+.text[open] summary::after { content: "−"; }
+.chapters { list-style: none; padding: 0; margin: .5rem 0 1.5rem; }
+.chapters li { margin-bottom: 1rem; border-left: 2px solid var(--border); padding-left: .75rem; }
+.chapters li[aria-current="step"] { border-color: var(--accent); }
+.chapters button { text-align: left; font-weight: 650; }
+.chapters button span { color: var(--text-muted); margin-right: .5rem; font-variant-numeric: tabular-nums; }
+.chapters p, .transcript { line-height: 1.8; color: var(--text-muted); margin: .6rem 0; }
+.transcript { white-space: pre-line; }
+.unavailable { padding: 1.5rem 1rem; font-size: .8rem; line-height: 1.8; color: var(--text-muted); }
+.error { padding: .8rem 1rem; color: var(--bad); font-size: .8rem; }
+.download { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding: .9rem 1rem; border-top: 1px solid var(--border); font-size: .73rem; color: var(--text-muted); }
+.download p { flex: 1 1 100%; line-height: 1.7; margin: 0 0 .2rem; }
+.download button { min-height: 44px; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface-2); color: var(--text); font: inherit; cursor: pointer; }
+.download progress { width: min(200px, 100%); accent-color: var(--accent); }
+.download [role="alert"] { color: var(--bad); }
+.roofDownloads { padding: 1rem 1.25rem; font-size: .8rem; line-height: 1.8; }
+.roofDownloads > section { border: 1px solid var(--border); border-radius: 12px; margin-top: 1rem; overflow: hidden; }
+.roofDownloads h3 { padding: .75rem 1rem; font-size: .85rem; }
+@media (max-width: 480px) { .settings label { margin-left: 0; } .heading { padding: .75rem; } .settings { padding: .6rem .75rem; } }

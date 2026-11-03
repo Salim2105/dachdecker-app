@@ -4,11 +4,13 @@ import { lesePraxis } from "@/lib/praxisStore";
 import { leseLernwege } from "@/lib/lernweg";
 import { appStorage, restoreStorage, snapshotStorage, type StorageSnapshot } from "@/lib/lernSpeicher";
 import { strFromU8, strToU8, unzipSync, zipSync } from "fflate";
+import { istPraxisVideoEinstellungen, istPraxisVideoPositionen, praxisVideoEinstellungenKey, praxisVideoPositionenKey } from "@/lib/praxisVideoStand";
 
 const BEREICHE: Record<string, string> = {
   "fortschritt-v1": "Aufgaben-Lernstand", pruefungsdatum: "Prüfungstermin", letztesLf: "Letztes Lernfeld",
   theme: "Darstellung", lernzeit: "Lernzeit", "praxis-v1": "Praxisübungen", "lernweg-v1": "Geführter Lernweg",
   "lernweg-thema": "Ausgewählte Lerneinheit", wortbank: "Wortbank", "ton-aus": "Ton",
+  [praxisVideoEinstellungenKey]: "Praxisvideo-Einstellungen", [praxisVideoPositionenKey]: "Praxisvideo-Positionen",
 };
 const KEYS = Object.keys(BEREICHE);
 const MARKER = "dachdecker-lernstand";
@@ -37,6 +39,11 @@ export function pruefeSicherung(text: string): Sicherung | null {
   for (const [k, v] of Object.entries(parsed.daten)) {
     if (!KEYS.includes(k)) continue;
     if (typeof v !== "string") return null;
+    if (k === praxisVideoEinstellungenKey || k === praxisVideoPositionenKey) {
+      let inhalt: unknown;
+      try { inhalt = JSON.parse(v); } catch { return null; }
+      if (!(k === praxisVideoEinstellungenKey ? istPraxisVideoEinstellungen(inhalt) : istPraxisVideoPositionen(inhalt))) return null;
+    }
     if (["fortschritt-v1", "praxis-v1", "lernweg-v1"].includes(k)) {
       let inhalt: unknown;
       try { inhalt = JSON.parse(v); } catch { return null; }

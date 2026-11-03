@@ -10,6 +10,9 @@ import { dachAntwort, dachHilfe, ladeDachStand, neuerDachStand, pruefeDachAufgab
 import { dachPakete } from "@/lib/dach3dMedien";
 import { dachPaketStatus, ladeDachPaket, loescheDachPaket, subscribeDachDownloads } from "@/lib/dach3dDownloads";
 import { syncDachNachweise } from "@/lib/dach3dNachweise";
+import { getDachPraxisVideo } from "@/lib/praxisVideoInhalte";
+import { PRAXIS_VIDEO_MEDIEN, praxisVideoMedien } from "@/lib/praxisVideoMedien";
+import { PraxisVideoDachDownloads, PraxisVideoPlayer } from "@/components/video/PraxisVideoPlayer";
 import type { DachAnsicht, DachDeckung, DachErkundungStand, DachForm, DachGruppe, DachPhase, DachPosition } from "@/lib/dach3dTypen";
 import { DachBetrachter } from "./DachBetrachter";
 import { DachBild } from "./DachBild";
@@ -56,6 +59,7 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
   const [stand, setStand] = useState(anfang.stand), aktuell = useRef(stand);
   const [fehler, setFehler] = useState(anfang.fehler), [gruppe, setGruppe] = useState<DachGruppe>(() => getDachDetail(anfang.stand?.jeDach[anfang.stand.form].detailId ?? "")?.gruppe ?? "dachraender"), [suche, setSuche] = useState("");
   const [spielen, setSpielen] = useState(false), [reduziert, setReduziert] = useState(false), [fehlerBild, setFehlerBild] = useState(false), [kameraReset, setKameraReset] = useState(0), [hinweisOffen, setHinweisOffen] = useState(false);
+  const [darstellung, setDarstellung] = useState<"modell" | "video">("modell");
   const navigationLaeuft = useRef(false);
   const [navigationBusy, setNavigationBusy] = useState(false);
   const [auswahlOffen, setAuswahlOffen] = useState(() => !anfang.stand?.jeDach[anfang.stand.form].detailId);
@@ -249,6 +253,9 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
   const antwort = vorlageAufgabe ? stand.antworten[vorlageAufgabe.id] : undefined;
   const aufgabe = antwort?.aufgabe ?? vorlageAufgabe;
   const notizKey = detail?.id ?? stand.form;
+  const passendesVideo = detail ? getDachPraxisVideo(stand.form, p.deckung, detail.id) : undefined;
+  const lernvideo = passendesVideo && praxisVideoMedien(passendesVideo).video ? passendesVideo : undefined;
+  const videoOffen = p.phase !== "aufgaben" && darstellung === "video" && !!lernvideo;
 
   return <div className={styles.page}>
     <header className={styles.hero}>
@@ -264,8 +271,9 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
       </div>
       <div className={styles.workspace}>
         <section className={styles.visual} aria-label="Dein Dachmodell">
-          {detail && p.phase === "aufgaben" && aufgabe && antwort?.medienRef ? <div className={styles.questionImage}><DachBild medium={antwort.medienRef} alt={`Aufgabenansicht: ${detail.titel}`} /><p><strong>Aufgabenansicht · {deckungTitel[antwort.medienRef.deckung]}</strong><br />Ohne Lösungsbeschriftungen. Deine Antwort gehört zu dieser gespeicherten Ansicht; ein Wechsel der Deckungsart verändert sie nicht.</p></div> : <DachBetrachter form={stand.form} deckung={p.deckung} detailId={detail?.id ?? null} ansicht={p.ansicht} phase={p.phase} schritt={p.schritt} schichten={p.schichten} kamera={p.kamera} orbit={p.orbit} onOrbit={orbit => speichern(position({ orbit }))} resetSignal={kameraReset} wasser={p.wasser} reduzierteBewegung={reduziert} pruefmodus={p.phase === "aufgaben"} fehler={p.phase === "kontrolle" && fehlerBild} activeDetailIds={liste.map(d => d.id)} onDetail={waehleDetail} onKamera={kamera} />}
-          {p.phase !== "aufgaben" && <div className={styles.displayRail}>
+          {lernvideo && p.phase !== "aufgaben" && <div className={styles.mediaToggle} role="group" aria-label="Dachdetail als Modell oder Video ansehen"><button type="button" disabled={!editierbar} aria-pressed={!videoOffen} onClick={() => setDarstellung("modell")}>3D-Modell</button><button type="button" disabled={!editierbar} aria-pressed={videoOffen} onClick={() => { setSpielen(false); setDarstellung("video"); }}>Lernvideo</button></div>}
+          {detail && p.phase === "aufgaben" && aufgabe && antwort?.medienRef ? <div className={styles.questionImage}><DachBild medium={antwort.medienRef} alt={`Aufgabenansicht: ${detail.titel}`} /><p><strong>Aufgabenansicht · {deckungTitel[antwort.medienRef.deckung]}</strong><br />Ohne Lösungsbeschriftungen. Deine Antwort gehört zu dieser gespeicherten Ansicht; ein Wechsel der Deckungsart verändert sie nicht.</p></div> : videoOffen && lernvideo ? <PraxisVideoPlayer video={lernvideo} studio disabled={!editierbar} onPlay={clip => { const s = aktuell.current; if (s && detail && editierbar) speichern(dachHilfe(s, detail.id, `video:${clip.id}@v${clip.version}`)); }} /> : <DachBetrachter form={stand.form} deckung={p.deckung} detailId={detail?.id ?? null} ansicht={p.ansicht} phase={p.phase} schritt={p.schritt} schichten={p.schichten} kamera={p.kamera} orbit={p.orbit} onOrbit={orbit => speichern(position({ orbit }))} resetSignal={kameraReset} wasser={p.wasser} reduzierteBewegung={reduziert} pruefmodus={p.phase === "aufgaben"} fehler={p.phase === "kontrolle" && fehlerBild} activeDetailIds={liste.map(d => d.id)} onDetail={waehleDetail} onKamera={kamera} />}
+          {p.phase !== "aufgaben" && !videoOffen && <div className={styles.displayRail}>
             <fieldset className={styles.camera} disabled={!editierbar}><legend className="sr-only">{detail ? "Das Detail untersuchen" : "Feste Blickrichtungen"}</legend>{detail ? ansichten.map(v => <button key={v.id} type="button" aria-pressed={p.ansicht === v.id} onClick={() => speichern(position({ ansicht: v.id }))}>{v.label}</button>) : ([{ id: "gesamt", label: "Ganzes Dach" }, { id: "nah", label: "Detail" }, { id: "seite", label: "Seite" }, { id: "oben", label: "Von oben" }] as const).map(c => <button type="button" key={c.id} aria-pressed={p.kamera === c.id} onClick={() => kamera(c.id)}>{c.label}</button>)}</fieldset>
             <details ref={ansichtenMenue} className={styles.displayOptions}><summary>Ansichten & Schichten</summary><div className={styles.displayPopover}>
               {detail && <fieldset className={styles.camera} disabled={!editierbar}><legend>Feste Blickrichtungen</legend>{([{ id: "gesamt", label: "Ganzes Dach" }, { id: "nah", label: "Detail" }, { id: "seite", label: "Seite" }, { id: "oben", label: "Von oben" }] as const).map(c => <button type="button" key={c.id} aria-pressed={p.kamera === c.id} onClick={() => kamera(c.id)}>{c.label}</button>)}</fieldset>}
@@ -302,6 +310,7 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
       <details className={styles.utility}><summary><span className={styles.utilityIcon} aria-hidden="true">✎</span><span><strong>Meine Notizen</strong><small>{stand.notizen[notizKey]?.trim() ? "Deine Notiz weiterführen" : "Fragen und Beobachtungen festhalten"}</small></span><span className={styles.utilityArrow} aria-hidden="true">+</span></summary><label className={styles.notes}>Meine Notizen zu {detail?.titel ?? modell.titel}<textarea maxLength={12000} disabled={!editierbar} value={stand.notizen[notizKey] ?? ""} onChange={e => speichern(patch({ notizen: { ...aktuell.current!.notizen, [notizKey]: e.target.value } }))} placeholder="Was möchte ich im Betrieb prüfen oder nachfragen?"/></label></details>
       <details className={styles.utility} onToggle={e => { if (e.currentTarget.open && detail && editierbar) speichern(dachHilfe(aktuell.current!, detail.id, "systemkarte")); }}><summary><span className={styles.utilityIcon} aria-hidden="true">⌁</span><span><strong>Modell & Grundlagen</strong><small>Aufbau, Annahmen und Quellen</small></span><span className={styles.utilityArrow} aria-hidden="true">+</span></summary><div className={styles.system}><h2>{modell.systemkarte.titel}</h2><p>{modell.systemkarte.beschreibung}</p><ul>{modell.systemkarte.angaben.map(x => <li key={x}>{x}</li>)}</ul><ul>{modell.systemkarte.grenzen.map(x => <li key={x}>{x}</li>)}</ul>{detail && <p className={styles.muted}>{detail.quellen.join(" · ")}</p>}</div></details>
       <details className={styles.utility}><summary><span className={styles.utilityIcon} aria-hidden="true">↓</span><span><strong>Offline lernen</strong><small>Dachpakete auf diesem Gerät verwalten</small></span><span className={styles.utilityArrow} aria-hidden="true">+</span></summary><DachDownloads/></details>
+      {PRAXIS_VIDEO_MEDIEN.some(asset => asset.typ === "video") && <details className={styles.utility}><summary><span className={styles.utilityIcon} aria-hidden="true">▷</span><span><strong>Lernvideos offline speichern</strong><small>Videopakete nach Dachform auswählen</small></span><span className={styles.utilityArrow} aria-hidden="true">+</span></summary><PraxisVideoDachDownloads/></details>}
     </section>
   </div>;
 }

@@ -8,12 +8,50 @@ import { WERKSTATT_PFADE } from "@/lib/werkstattInhalte";
 import { ladeWerkstattStand, werkstattKey } from "@/lib/werkstattStand";
 import { ladeKompetenzNachweise } from "@/lib/kompetenzNachweise";
 import { meldePruefungsHilfe, pruefungsHilfenSnapshot } from "@/lib/pruefungsHilfen";
+import { getDachPraxisVideo, getWerkstattPraxisVideo } from "@/lib/praxisVideoInhalte";
+import { werkstattDachMedium } from "@/lib/dach3dVerknuepfungen";
+
+const videoMedien = vi.hoisted(() => ({ verfuegbar: false }));
+vi.mock("@/lib/praxisVideoMedien", () => ({
+  PRAXIS_VIDEO_MEDIEN: [],
+  praxisVideoMedien: (video: { id: string }) => ({ video: videoMedien.verfuegbar ? { url: `/praxisvideos/v1/${video.id}.mp4` } : undefined, assets: [] }),
+  praxisVideoClipPaket: () => ({ assets: [] }), praxisVideoDachPaket: () => ({ assets: [] }),
+}));
 
 const falz = WERKSTATT_PFADE[0], biber = WERKSTATT_PFADE[1];
-beforeEach(() => { appStorage.clear(); window.history.replaceState(null, "", "/projekte#werkstatt"); vi.spyOn(window, "scrollTo").mockImplementation(() => {}); });
+beforeEach(() => { videoMedien.verfuegbar = false; appStorage.clear(); window.history.replaceState(null, "", "/projekte#werkstatt"); vi.spyOn(window, "scrollTo").mockImplementation(() => {}); vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {}); vi.spyOn(document, "hidden", "get").mockReturnValue(false); });
 afterEach(async () => { cleanup(); vi.restoreAllMocks(); await retryStorageWrites(); });
 
 describe("Handwerkliches Werkstatttraining", () => {
+  it.each(WERKSTATT_PFADE.flatMap(p => ["schnitt", "bearbeiten", "verlegen", "kontrolle"].map(slug => p.einheiten.find(e => e.slug === slug)!)))("zeigt den passenden 3D-Handgriff für $id ohne vorzeitigen Lernnachweis", e => {
+    videoMedien.verfuegbar = true;
+    const clip = getWerkstattPraxisVideo(e.pfadId, e.slug)!;
+    render(<WerkstattTraining einheitId={e.id} />);
+    expect(screen.getByRole("region", { name: "3D-Handgriff zur Werkstatteinheit" })).toBeDefined();
+    const film = screen.getByLabelText(clip.titel);
+    expect(film.querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
+    expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([]);
+    expect(ladeKompetenzNachweise()).toEqual([]);
+    fireEvent.play(film);
+    expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([`video:${clip.id}@v1`]);
+    expect(ladeWerkstattStand(e.id)!.geprueft).toEqual([]);
+    expect(ladeKompetenzNachweise()).toEqual([]);
+  });
+  it("bietet für andere Einheiten den passenden Dachzusammenhang an", () => {
+    videoMedien.verfuegbar = true;
+    const e = falz.einheiten[0], medium = werkstattDachMedium(e, e.bildschritte[0].ansicht)!;
+    const clip = getDachPraxisVideo(medium.form, medium.deckung, medium.detailId)!;
+    render(<WerkstattTraining einheitId={e.id} />);
+    expect(screen.getByRole("region", { name: "Lernvideo zum Dachaufbau" })).toBeDefined();
+    expect(screen.getByLabelText(clip.titel).querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
+    expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([]);
+  });
+  it("lässt ohne veröffentlichte Videodateien die Werkstatteinheit vollständig benutzbar", () => {
+    render(<WerkstattTraining einheitId={falz.einheiten.find(e => e.slug === "schnitt")!.id} />);
+    expect(screen.queryByRole("region", { name: "3D-Handgriff zur Werkstatteinheit" })).toBeNull();
+    expect(document.querySelector("video")).toBeNull();
+    expect(screen.getByRole("button", { name: "Direkt selbst probieren →" })).toBeDefined();
+  });
   it("zeigt zwei getrennte Pfade und alle20Einheiten mit unverwechselbaren Links", () => {
     render(<WerkstattTraining />);
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);

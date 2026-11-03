@@ -226,7 +226,7 @@ export function pruefeWerkstattAufgabe(s: WerkstattStand, aufgabeId: string, now
   if (typeof nachVorigerErklaerung !== "boolean") throw new Error("Der Erklärungskontext der Aufgabe ist ungültig.");
   const neu = bearbeiten(s, now), verlauf = neu.abgaben[a.id] ?? [];
   if (neu.modus === "begleitet") markiereHilfe(neu, "begleitung");
-  const hilfsListe = neu.hilfen.filter(h => h === "begleitung" || h.startsWith("bildschritt:") || h.startsWith("begriff:") || h.startsWith(`${a.id}:`));
+  const hilfsListe = neu.hilfen.filter(h => h === "begleitung" || h.startsWith("bildschritt:") || h.startsWith("begriff:") || h.startsWith("video:") || h.startsWith(`${a.id}:`));
   const abgabe: WerkstattAbgabe = { id: `${neu.id}:${a.id}:${verlauf.length}`, am: neu.aktualisiertAm, antwort: clone(antwort), bewertung: bewerteWerkstattAufgabe(a, antwort), hilfen: hilfsListe, nachErklaerung: verlauf.length > 0 || nachVorigerErklaerung, modus: neu.modus };
   neu.abgaben[a.id] = [...verlauf, abgabe]; neu.geprueft.push(a.id); neu.abgeschlossenAm = null;
   return neu;

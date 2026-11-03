@@ -133,6 +133,19 @@ describe("Werkstatt: verlässliche Momentaufnahmen und Erstantworten", () => {
     expect(fertig.abgaben[s.einheit.aufgaben[0].id][0].hilfen).toContain("begleitung");
     expect(parseWerkstattStand(JSON.stringify(fertig))).toEqual(fertig);
   });
+  it("zählt abgespielte Lernvideos als Hilfe und erhält frühere Abgaben unverändert", () => {
+    let s = setWerkstattModus(neuerWerkstattStand(einheit()), "probelauf");
+    const a = s.einheit.aufgaben[0], video = "video:werkstatt-falzziegel-schnitt@v1";
+    s = pruefeWerkstattAufgabe(geloest(s), a.id);
+    const erste = clone(s.abgaben[a.id][0]);
+    s = hilfeWerkstatt(s, video);
+    expect(s.abgaben[a.id][0]).toEqual(erste);
+    s = pruefeWerkstattAufgabe(geloest({ ...s, geprueft: [] }), a.id);
+    expect(s.abgaben[a.id][0]).toEqual(erste);
+    expect(s.abgaben[a.id][1].hilfen).toContain(video);
+    speichereWerkstattStand(s);
+    expect(ladeWerkstattStand(s.einheit.id)).toEqual(s);
+  });
   it("erhält die Erstantwort; erneute Prüfung erzeugt genau eine Nacharbeit", () => {
     let s = setWerkstattModus(neuerWerkstattStand(einheit()), "probelauf");
     const a = s.einheit.aufgaben[0];

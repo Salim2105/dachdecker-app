@@ -7,13 +7,25 @@ import * as lernSpeicher from "@/lib/lernSpeicher";
 import { ladeDachStand, neuerDachStand, speichereDachStand } from "@/lib/dach3dStand";
 import { getDachDetail } from "@/lib/dach3dInhalte";
 import { dachDeckungsWunsch, dachMedienRoute, dachRoutenZiel, lernDachVerweise, werkstattDachMedium } from "@/lib/dach3dVerknuepfungen";
+import { getDachPraxisVideo } from "@/lib/praxisVideoInhalte";
+import { ladeKompetenzNachweise } from "@/lib/kompetenzNachweise";
+
+const videoMedien = vi.hoisted(() => ({ verfuegbar: false }));
+vi.mock("@/lib/praxisVideoMedien", () => ({
+  PRAXIS_VIDEO_MEDIEN: [],
+  praxisVideoMedien: (video: { id: string }) => ({ video: videoMedien.verfuegbar ? { url: `/praxisvideos/v1/${video.id}.mp4` } : undefined, assets: [] }),
+  praxisVideoClipPaket: () => ({ assets: [] }), praxisVideoDachPaket: () => ({ assets: [] }),
+}));
 
 vi.mock("@/components/dach3d/DachBetrachter", () => ({ DachBetrachter: ({ form, detailId }: { form: string; detailId: string | null }) => <div data-testid="dachmodell">{form}:{detailId}</div> }));
 vi.mock("@/lib/dach3dDownloads", () => ({ subscribeDachDownloads: () => () => {}, dachPaketStatus: async () => ({ status: "fehlt", bytes: 0 }), ladeDachPaket: async () => {}, loescheDachPaket: async () => {} }));
 beforeEach(() => {
+  videoMedien.verfuegbar = false;
   appStorage.clear(); window.history.replaceState(null, "", "/projekte#dach-entdecken");
   vi.stubGlobal("matchMedia", vi.fn(() => ({ matches: false, addEventListener: vi.fn(), removeEventListener: vi.fn() })));
   vi.spyOn(window, "scrollTo").mockImplementation(() => {});
+  vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {});
+  vi.spyOn(document, "hidden", "get").mockReturnValue(false);
 });
 afterEach(async () => { await act(async () => { await Promise.resolve(); }); cleanup(); vi.restoreAllMocks(); vi.unstubAllGlobals(); await retryStorageWrites(); });
 
@@ -30,8 +42,31 @@ describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
     expect(dachRoutenZiel("dach-flachdach-s03")).toBeNull();
     expect(projektAnsicht("", "?ansicht=uebersicht", "dach-steildach-s03")).toBe("");
     window.history.replaceState(null, "", "/projekte?ansicht=uebersicht"); render(<ProjektWerkstatt />);
-    expect(screen.getByRole("heading", { name: "3D-Dach entdecken" })).toBeDefined();
-    expect(screen.getByRole("link", { name: "Mein Dach erkunden →" }).getAttribute("href")).toBe("/projekte#dach-entdecken");
+    expect(screen.getByRole("link", { name: /Dach in 3D verstehen/ }).getAttribute("href")).toBe("/projekte#dach-entdecken");
+  });
+  it("bietet ohne veröffentlichte Videodateien keine leeren Videoansichten oder Downloads an", () => {
+    render(<DachErkunden form="steildach" detailId="s03" />);
+    expect(screen.queryByRole("button", { name: "Lernvideo" })).toBeNull();
+    expect(screen.queryByText("Lernvideos offline speichern")).toBeNull();
+    expect(screen.getByTestId("dachmodell")).toBeDefined();
+  });
+  it("tauscht das Modell gegen den passenden Film und vermerkt erst dessen Wiedergabe als Lernhilfe", () => {
+    videoMedien.verfuegbar = true;
+    const clip = getDachPraxisVideo("steildach", "falzziegel", "s03")!;
+    render(<DachErkunden form="steildach" detailId="s03" />);
+    const nachweise = ladeKompetenzNachweise();
+    fireEvent.click(screen.getByRole("button", { name: "Lernvideo" }));
+    expect(screen.queryByTestId("dachmodell")).toBeNull();
+    const film = screen.getByLabelText(clip.titel);
+    expect(film.querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
+    expect(ladeDachStand()!.hilfeEreignisse.some(h => h.art.startsWith("video:"))).toBe(false);
+    fireEvent.play(film);
+    expect(ladeDachStand()!.hilfeEreignisse.filter(h => h.art === `video:${clip.id}@v1`)).toHaveLength(1);
+    expect(ladeKompetenzNachweise()).toEqual(nachweise);
+    fireEvent.click(screen.getByRole("button", { name: "3D-Modell" }));
+    expect(screen.getByTestId("dachmodell")).toBeDefined();
+    expect(screen.queryByLabelText(clip.titel)).toBeNull();
+    expect(HTMLMediaElement.prototype.pause).toHaveBeenCalled();
   });
   it("bewahrt Notizen und den Bearbeitungspunkt jeder Dachform nach Wechsel und Neustart", async () => {
     const v = render(<DachErkunden form="steildach" detailId="s03" />);
@@ -48,9 +83,11 @@ describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
     expect(ladeDachStand()!.notizen.walmdach).toBe("Vier geneigte Seiten");
   });
   it("hält den Selbsttest ohne Erklärung und speichert Antworten samt Bildvariante unverändert", () => {
+    videoMedien.verfuegbar = true;
     unabhaengig(); const detail = getDachDetail("s03")!;
     const v = render(<DachErkunden />);
     expect(screen.queryByText(detail.funktion)).toBeNull();
+    expect(screen.queryByRole("button", { name: "Lernvideo" })).toBeNull();
     const a = detail.aufgaben[0], korrekt = a.optionen.find(o => o.korrekt)!;
     fireEvent.click(screen.getByLabelText(korrekt.text));
     const entwurf = ladeDachStand()!.antworten[a.id];
