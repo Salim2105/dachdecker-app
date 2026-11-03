@@ -53,7 +53,14 @@ function chooseFault(){
 }
 function remember(o){
  o.userData.originalPosition=o.position.clone();o.userData.originalQuaternion=o.quaternion.clone();o.userData.originalScale=o.scale.clone();
- o.material=(Array.isArray(o.material)?o.material[0]:o.material).clone();
+ const source=Array.isArray(o.material)?o.material[0]:o.material;
+ // Preserve the source's PBR appearance and all surface textures. Software GL
+ // screen-space transmission renders the entire scene repeatedly per frame;
+ // simple glass alpha gives the same readable school model at practical cost.
+ const surface={};
+ for(const key of ['color','map','roughness','roughnessMap','metalness','metalnessMap','normalMap','normalScale','bumpMap','bumpScale','aoMap','aoMapIntensity','emissive','emissiveMap','emissiveIntensity','alphaMap','alphaTest','opacity','transparent','depthWrite','vertexColors'])if(source[key]!==undefined)surface[key]=source[key]?.clone&& !source[key]?.isTexture?source[key].clone():source[key];
+ if(source.transmission>0){surface.opacity=(source.opacity??1)*(1-source.transmission);surface.transparent=true;surface.depthWrite=false}
+ o.material=new THREE.MeshStandardMaterial(surface);
  o.material.side=THREE.DoubleSide;o.userData.originalColor=o.material.color.clone();
 }
 // GLTFLoader can produce both regular and interleaved attributes from one GLB.
@@ -68,7 +75,17 @@ function joinOverview(source){
  source.updateMatrixWorld(true);const groups=new Map();
  source.traverse(o=>{
   if(!o.isMesh)return;
-  const g=o.geometry.clone().applyMatrix4(o.matrixWorld);
+  const g=o.geometry.clone();
+  // KHR_mesh_quantization stores local positions as normalized integers.
+  // Baking a metre-scale world matrix back into that integer range would
+  // wrap or clamp vertices. Decode every attribute before transforming;
+  // accessor getters preserve the source's normalized/interleaved values.
+  for(const [name,a] of Object.entries(g.attributes)){
+   const values=new Float32Array(a.count*a.itemSize);
+   for(let i=0;i<a.count;i++)for(let c=0;c<a.itemSize;c++)values[i*a.itemSize+c]=a.getComponent(i,c);
+   g.setAttribute(name,new THREE.BufferAttribute(values,a.itemSize));
+  }
+  g.applyMatrix4(o.matrixWorld);
   // Multi-material primitives retain their original material groups intact.
   const key=(Array.isArray(o.material)?o.material.map(m=>m.uuid).join(','):o.material.uuid)+'|'+geometryLayout(g)+(Array.isArray(o.material)?'|'+o.uuid:'');
   if(!groups.has(key))groups.set(key,{material:o.material,geometries:[]});
