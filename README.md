@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.14.0**: [Überarbeitetes 3D-Lernstudio](docs/dach3d-studio-0.14.md) mit einer großen Modellansicht, begleitenden Lernschritten, weicheren Kamerabewegungen und neu erzeugten Dachmodellen und Renderansichten.
+In Prüfung für **0.15.0**: [Klarere Lerneinstiege und 112 lokal produzierte Praxisvideos](docs/lernwerkstatt-0.15.md) mit genauer Fortsetzung auf der Startseite, vier Projekteinstiegen, drei Mathegruppen und getrennt schaltbarem deutschem Sprecher und Untertiteln. Alle 336 Videodateien sind vorhanden; der aktuelle Abnahmestand und die offenen Gerätetests stehen im Release-Dokument.
+
+Seit **0.14.0**: [Überarbeitetes 3D-Lernstudio](docs/dach3d-studio-0.14.md) mit einer großen Modellansicht, begleitenden Lernschritten, weicheren Kamerabewegungen und neu erzeugten Dachmodellen und Renderansichten.
 
 Seit **0.13.0**: [Drei Lehrdächer zum Erkunden](docs/dach-entdecken-0.13.md) mit 34 Detailthemen, zwei Ziegeldeckungen, 68 Kontrollfragen und getrennten Offline-Dachpaketen.
 

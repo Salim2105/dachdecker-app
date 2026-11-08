@@ -12,14 +12,14 @@ Python 3.12, FFmpeg und eine eigene virtuelle Umgebung verwenden. Modelle,
 Umgebung und unkomprimierte Arbeitsdateien gehören nicht ins Repository.
 
 ```sh
-python3 -m venv /tmp/dach-video-voice-env
-/tmp/dach-video-voice-env/bin/python -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
-/tmp/dach-video-voice-env/bin/python -m pip install -r scripts/praxisvideos/voice-requirements.txt
+python3 -m venv .praxisvideo-production/voice-env
+.praxisvideo-production/voice-env/bin/python -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+.praxisvideo-production/voice-env/bin/python -m pip install -r scripts/praxisvideos/voice-requirements.txt
 ```
 
 Das offizielle Modellarchiv kommt ausschließlich aus dem
 [Coqui-Release](https://github.com/coqui-ai/TTS/releases/download/v0.7.0_models/tts_models--de--thorsten--vits.zip).
-Als `/tmp/dach-video-model/thorsten-vits.zip` ablegen und darunter nach
+Als `.praxisvideo-production/model/thorsten-vits.zip` ablegen und darunter nach
 `tts_models--de--thorsten--vits/` entpacken. Die Produktion prüft vor der
 Modellverwendung die SHA-256:
 
@@ -38,13 +38,13 @@ Aus dem Repository-Stamm:
 
 ```sh
 sh scripts/praxisvideos/voice-run.sh
-tail -f /tmp/dach-video-voice-batch.log
+tail -f .praxisvideo-production/voice-batch.log
 ```
 
 Der Start läuft mit `nohup`, schreibt die PID seines Standardbibliothek-Wächters
-nach `/tmp/dach-video-voice-batch.pid` und produziert zuerst
+nach `.praxisvideo-production/voice-batch.pid` und produziert zuerst
 `dach-steildach-falzziegel-s03`, danach die übrigen 111 Kontexte. Der
-Fortschritt steht in `/tmp/dach-video-audio/production.json`. Derselbe Befehl
+Fortschritt steht in `.praxisvideo-production/audio/production.json`. Derselbe Befehl
 setzt einen unterbrochenen Lauf fort: Text, Modell und Produktionsversion
 bestimmen die Signatur; vorhandene vollständige WAV-Dateien werden zusätzlich
 gegen die Prüfsumme im Beleg geprüft. Kapitel mit identischem Text teilen
@@ -74,12 +74,12 @@ nicht rückwirkend die Ursache eines früher abgebrochenen Prozesses.
 Einzelner Kontext:
 
 ```sh
-/tmp/dach-video-voice-env/bin/python scripts/praxisvideos/voice.py --ids dach-steildach-falzziegel-s03
+.praxisvideo-production/voice-env/bin/python scripts/praxisvideos/voice.py --ids dach-steildach-falzziegel-s03
 ```
 
 ## Übergabe an die Videoproduktion
 
-Pro Kontext entstehen unter `/tmp/dach-video-audio/<id>/`:
+Pro Kontext entstehen unter `.praxisvideo-production/audio/<id>/`:
 
 - `audio.wav`: PCM 16 Bit, mono, 22.050 Hz, vollständige Erzählspur.
 - `receipt.json`: Modell- und Audioprüfsumme, Dauer, Tempo, gemessene
@@ -111,5 +111,5 @@ Der erste Aufruf prüft alle bereits fertigen Kontexte. Der zweite verlangt
 alle 112. Geprüft werden Modell-/Textsignatur, WAV-Prüfsumme, PCM-Format,
 45–90 Sekunden, gemessene Kapitelgrenzen im Inhaltsmanifest sowie vollständige,
 zeitlich gültige Untertitel und die tatsächlich veröffentlichten VTT-Dateien.
-Der Bericht liegt in `/tmp/dach-video-audio/audit.json`. Der Wächter startet
+Der Bericht liegt in `.praxisvideo-production/audio/audit.json`. Der Wächter startet
 diese vollständige Prüfung bei regulärem Produktionsabschluss automatisch.
