@@ -1,0 +1,2357 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "dach-steildach-falzziegel-g01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g01.mp4",
+      "bytes": 1796883,
+      "sha256": "0011b45cc82c318989815559247769e8c1ad5d9f243b52c52a19962997a21cfd",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g01.webp",
+      "bytes": 29202,
+      "sha256": "bdc2b7e6fef6fc751880152c1e2ba573f621db44fd021e68ba5670c3fe2e479e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g01.vtt",
+      "bytes": 1331,
+      "sha256": "16c1a4fc373a950986ef4f444146928b842575c360f8c9427f8b265fd2e21db0",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g02.mp4",
+      "bytes": 1611288,
+      "sha256": "ae2f912f7cc3647317c8bc66114f177c0372808ae10a1dbf0d31f04c82434e51",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g02.webp",
+      "bytes": 28794,
+      "sha256": "f22a09cdd7a22b38aa4ed95919eb3dc2c821b4abc9fbfb8f81d62634abfc384e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g02.vtt",
+      "bytes": 1340,
+      "sha256": "bfa77b515d8fefd5d604939ee953d6a467f4a945bfc46c760d540db2c9b59eec",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g03.mp4",
+      "bytes": 1496902,
+      "sha256": "13194058e73fa35b22d4f3860e9a1dc8f10d2f02a4b68abb97e83fd4031ee1e1",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g03.webp",
+      "bytes": 27618,
+      "sha256": "094ddd038bbcdeb8ff2c59463ffaa6e2e9b6d615a5748b45283cba09497da84c",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g03.vtt",
+      "bytes": 1160,
+      "sha256": "68cf584f3c90c10c10d45688665c0e89723252ba8ee827a834987ab50fb4c776",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g04.mp4",
+      "bytes": 1502674,
+      "sha256": "84e27939ff7704e68ae5bbc1bdcaf05eebe049f28702aacc79f0878257489881",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g04.webp",
+      "bytes": 29190,
+      "sha256": "ae4c98d07d60dfbf17543627b3496224e3a8137465d5b2c5c0258a529f74a011",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g04.vtt",
+      "bytes": 1224,
+      "sha256": "4e810f1d2724c3738cc6eb7b13bfaedaf0410ae65f801a4bd179845986373ef1",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g05.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g05.mp4",
+      "bytes": 1822641,
+      "sha256": "fd16e0bc5ac9d24342eb33d654013937ca4045c4765fb8c9377721227a6504a7",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g05.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g05.webp",
+      "bytes": 30564,
+      "sha256": "844acf022d8416e5b8ccf756226610952328029becf9f807234069afcc9e51b4",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g05.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g05.vtt",
+      "bytes": 1417,
+      "sha256": "968724875e4eca2344be51d94230fa45e77b366b166386bed7f03fab37a9af7b",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g06.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g06.mp4",
+      "bytes": 1864280,
+      "sha256": "a92403f51957b4a53db9fe45a93b7d82c77c0d29877412488375ab00cc641353",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g06.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g06.webp",
+      "bytes": 30270,
+      "sha256": "4cd7cd48a23158ed897b29d253068ac48bc2b563eb82dcf37e866b52ffd526d9",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-g06.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-g06.vtt",
+      "bytes": 1432,
+      "sha256": "aa5c289151f21cb0311a89e8b77e3134eb7b28e2520535540fda671e36029d97",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s01.mp4",
+      "bytes": 1614404,
+      "sha256": "493b8129e67fa097ca8c8cbc106ac27d8b7a56d9b90ae9f3744f4bc1ac450b1f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s01.webp",
+      "bytes": 27786,
+      "sha256": "a861c3b446ad8d74cfb517621c01f1fffbe6c7667b22ae22d0e6746e97193252",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s01.vtt",
+      "bytes": 1281,
+      "sha256": "c5ad163ea0f12153524977839455186e6cfb9ccb6916dbba247774d395098bd9",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s02.mp4",
+      "bytes": 1837680,
+      "sha256": "6d0157d9a17002f27b4ee517561f02dd2c8081df47d0049e5d3f8c31ec2ab568",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s02.webp",
+      "bytes": 30524,
+      "sha256": "50c6507deb1b50a8edf5d5eaf8e299a78da9b55d2131c4f00e0a1918ab09edb5",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s02.vtt",
+      "bytes": 1105,
+      "sha256": "0d7ea762b8bc5129002b0689ab0079e5e278e3016a264a65b1b48d7ce55b5a5d",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s03.mp4",
+      "bytes": 1826315,
+      "sha256": "a16e8cef1cdbd27325f7ce27f53bcad5898ae75b75ee3d60a562a51ab19bee5f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s03.webp",
+      "bytes": 30236,
+      "sha256": "ffab80c5fc8c9140dc1df7f3a2b6df1fdee089adb3c07c0422e33865243b6a3d",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s03.vtt",
+      "bytes": 1331,
+      "sha256": "561bd621145533a2acf19d96e0a9c6483cc30fe2cedfaeb17f2d3120ea8a28bb",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s04.mp4",
+      "bytes": 1677350,
+      "sha256": "2165aeaf4237991ea7c2501dee47a59d716de3d6f879933d0e77682616bac48c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s04.webp",
+      "bytes": 27530,
+      "sha256": "17c06ac531917516d5eb372da6f2518bb8d990b9fa34a0e0f70875f8776ebd8f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s04.vtt",
+      "bytes": 1275,
+      "sha256": "341a58feefc4450623287a7120b264cd1ee66319addb3d03dad55100732a3f7e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s05.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s05.mp4",
+      "bytes": 1687075,
+      "sha256": "7238994cd0db52c3783fde27cc2fd42cb587fcc9502035acacfbaccdab414251",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s05.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s05.webp",
+      "bytes": 25284,
+      "sha256": "3463272c8d1228009ebc7656a3a6db302041553e64b13c2216f84842f396a017",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s05.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s05.vtt",
+      "bytes": 1134,
+      "sha256": "72d44877b493fb8f37f9d5835b664c4456ff72b6429eaddf4d6be146c29a6537",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s06.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s06.mp4",
+      "bytes": 1664539,
+      "sha256": "7a41cd3e2e6879e7ea95a494cfef052c58d93f844ffcc421095dddd7a9bb15b2",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s06.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s06.webp",
+      "bytes": 25200,
+      "sha256": "52e0794c77cbff8cc1ce07964adeb3604cad7b6ef2dd28d07c6fecf4c13ccd78",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s06.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s06.vtt",
+      "bytes": 1403,
+      "sha256": "e568456d71d12fe5a09c76a2168b3eb9d8015e8e94e656be99e3205be6127c0c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s07.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s07.mp4",
+      "bytes": 1616706,
+      "sha256": "cb132377f4df16a71111778ebbd66d309bee24c1b96629190e2bc0eaaab8b8c7",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s07.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s07.webp",
+      "bytes": 27946,
+      "sha256": "02065ec73997dc74184351ace9111463937f1cfac3f46cf63b684bc531ee6126",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s07.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s07.vtt",
+      "bytes": 1178,
+      "sha256": "8cf124b72742633953905a27df1f0ada7af07f002a738c883376097d831be0da",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s08.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s08.mp4",
+      "bytes": 1622982,
+      "sha256": "c62d4b4848b9cd6edbd9e86e531a613738198ce43bd81956fdda968cb974e138",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s08.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s08.webp",
+      "bytes": 24418,
+      "sha256": "00b8130041c663071779718c8dea34838a9353b1627b28a894a6e956992a6c0f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s08.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s08.vtt",
+      "bytes": 1264,
+      "sha256": "1c1c58ef3e59fc0a6283bb4a5eb560ebf4255042d8a6cf37dbe243e6ed072475",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s09.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s09.mp4",
+      "bytes": 1818031,
+      "sha256": "0ed4385f0e40c575c27ed0b29a0808eae4b3d06de0495a4f9d081df5acf6834b",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s09.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s09.webp",
+      "bytes": 30006,
+      "sha256": "0cd3c473da781b7a860224c0bb073c4a4d3fdfe241e7555eeb4ce6fda9d889ec",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s09.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s09.vtt",
+      "bytes": 1390,
+      "sha256": "59f7bec8fd04d14063895e04b941bbdeb1f6d5e0f4201b8e1f7cc71819e2c50e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s10.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s10.mp4",
+      "bytes": 1891830,
+      "sha256": "81ef2df116929798e5851dd138a83127015b9437a8ad932ffddd80c13b6f0bd3",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s10.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s10.webp",
+      "bytes": 29262,
+      "sha256": "c7ee1325be555389fb037b5df6a0f9792c119cc0610d74eed2dd6269b14ad5bc",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s10.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s10.vtt",
+      "bytes": 1359,
+      "sha256": "1cbbe0509e2e170e6b96606ef3a840d5bece9012c4fad4b10e5ff422c754a2e4",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s11.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s11.mp4",
+      "bytes": 1727940,
+      "sha256": "1fd3d676deedf4dd7f3aef9a82ac3cb5ece2c522fab525e215a96a32f9c3a44c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s11.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s11.webp",
+      "bytes": 25258,
+      "sha256": "c6f8916839d283b3fb418a913ee5207798d653d22439c5ba3cb52f6c8879f56e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-s11.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-s11.vtt",
+      "bytes": 1286,
+      "sha256": "901349887b4cc1aea86c64806b2dddebbe8971583b3e176e9a38bc17776bd368",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a01.mp4",
+      "bytes": 1674379,
+      "sha256": "ab922c3ca0c60382632df5157ec10e1eeccddcabc6fd526b9a51dbfc1edcdef4",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a01.webp",
+      "bytes": 26894,
+      "sha256": "31822711a712f4c21bc55d2315c19ec8594aefefbea57eae6715e4ff4f2abd95",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a01.vtt",
+      "bytes": 1444,
+      "sha256": "eac85b2388b27a4393d71915ed6e57d9b5de8202b664d7a376b4601ed5757557",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a02.mp4",
+      "bytes": 1821170,
+      "sha256": "181b8dde6f61ea3d0e1f1f340503ac5ed8e1cb24c5375d7c5e2f8a5e1008a34c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a02.webp",
+      "bytes": 31114,
+      "sha256": "b373943cbe3ec23877edb8fed61322457ec5d51aaf37d0ca3e6bec1c7c4475a4",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a02.vtt",
+      "bytes": 1295,
+      "sha256": "1e3158387386ed5fb129a313716895a1e6e321757059231ac0a9437c0d7681c6",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a03.mp4",
+      "bytes": 2048654,
+      "sha256": "4cc437475d0af14dfe469180c94e632ec85f280f6d25efaf3fa5bbaaf1d1eb81",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a03.webp",
+      "bytes": 34310,
+      "sha256": "8c57be733a77025457f3a5bf63d6f6d19742343ba4e743c68193df311508bef7",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a03.vtt",
+      "bytes": 1320,
+      "sha256": "70fd42d6195df508101b93bd33dc11f5ed4e6baed7aa9d03964680ed36606c51",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a04.mp4",
+      "bytes": 1773888,
+      "sha256": "d18bce22b2ed308e4a40c4430c765f0fa62bcf5b0bee0d902b7251432b05fec4",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a04.webp",
+      "bytes": 24660,
+      "sha256": "30b6605da48fc62e950d0d0a468e03603c9ac64446b0aa31b1ed16c9f596a5af",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-falzziegel-a04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-falzziegel-a04.vtt",
+      "bytes": 1455,
+      "sha256": "ba55234fcb38c08278a8de147f43bebe3ecd74b4b0a131584b11c3fa8506bab3",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g01.mp4",
+      "bytes": 1761797,
+      "sha256": "4c8993491c036930177128b4180fc882d03048815d48c3f76872f57fc03f101c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g01.webp",
+      "bytes": 30686,
+      "sha256": "d9527dbc9eb9ed076315d94e570afc74108fb02a30eeab8a17b6d5873cc76dc8",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g01.vtt",
+      "bytes": 1346,
+      "sha256": "f2ed28c91692c4dfe2ced63a0fc3af0d97984fcd8ffa0cf322eea425ebad973c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g02.mp4",
+      "bytes": 1769452,
+      "sha256": "6422a652630e6b05e338fc045e155b13a998dd518ead608bddbe6fb3ec09093c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g02.webp",
+      "bytes": 32684,
+      "sha256": "74d8b882ea9a6d18928c5188ff7be6954c2fb0188b3158edfc2933323460c880",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g02.vtt",
+      "bytes": 1355,
+      "sha256": "0183cf5d291be6701074c9426cc440e10579580d974889260b1aedcbfe898609",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g03.mp4",
+      "bytes": 1606606,
+      "sha256": "24d84d04a601545cf0598df6f1f90d6cb837a86ec958ba5d127af768836ea53b",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g03.webp",
+      "bytes": 33604,
+      "sha256": "c7a0f02e1c911d07129e0c4233352718ca24d038bd683d09bae0d73dbb541f8e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g03.vtt",
+      "bytes": 1175,
+      "sha256": "46c86348b16467539b4d6e0d440652d44c1bed85637f0b320470191911c9f25f",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g04.mp4",
+      "bytes": 1597853,
+      "sha256": "d164bb50336f8b9982a049eaf3106b88af15ed4bf322eb8f84bdd90eee29ed74",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g04.webp",
+      "bytes": 33750,
+      "sha256": "107de23a9abcdb0b0280a8b2bfdf0f31e70798a5a491fbae8cf031459580e826",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g04.vtt",
+      "bytes": 1239,
+      "sha256": "053563c75366d3c3ad1722e788e90b8c185b21c269c26fcb6e88f07cc3dae009",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g05.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g05.mp4",
+      "bytes": 1806897,
+      "sha256": "4cbfd2acf9178552d878a8933e4b748ccc6bfddbd85a25b0080f5daaae5900f1",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g05.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g05.webp",
+      "bytes": 30424,
+      "sha256": "8780fa97eb53f7d946bd1188db5be6033ea0f7a76675d28e470c5633d637895c",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g05.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g05.vtt",
+      "bytes": 1432,
+      "sha256": "95edda097eaf24f7bc1cc639687dd4a657e9c004c9ffc89210dec5f9f2423527",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g06.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g06.mp4",
+      "bytes": 1829907,
+      "sha256": "4e9d63a856ca34957d9478e057ced1666bdc12efd775581cd959baf697605eaa",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g06.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g06.webp",
+      "bytes": 30408,
+      "sha256": "32fbb84e0483f34ff2bc331d777f0b584b46b3e60b4ff648ccba5925d1217071",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-g06.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-g06.vtt",
+      "bytes": 1447,
+      "sha256": "4c425128b4f94ee84ab7937d5fa962b7d0e7a0210f8dd9cf2bbfa2a7beb0d811",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s01.mp4",
+      "bytes": 1668116,
+      "sha256": "659895f5d66ecc5be4d137005517eaf0ffe6ab8d994ab9dd497fcab34eb11081",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s01.webp",
+      "bytes": 29288,
+      "sha256": "d69dcc0ed7eef50b32119d12ddcfb22f40be0a798029c5ac003856416b80fadf",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s01.vtt",
+      "bytes": 1296,
+      "sha256": "a76e93bf7cbc6e57b03d6550fe8ff9954c570291c89b028301302297f9ea6772",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s02.mp4",
+      "bytes": 1764743,
+      "sha256": "8d22cf95e2fdeed6ce29593bcd58349d79c42536783dcb87866fdbc68e77cece",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s02.webp",
+      "bytes": 32258,
+      "sha256": "3441902e8bd77ed5e275b52cec63acdee874e2f0d0401a4f153039559a5fc46f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s02.vtt",
+      "bytes": 1120,
+      "sha256": "c6ae9dcc4572d8f9c39529b0f1c17f800b287f17ef144a8cc9d03fcc6e4b1f1d",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s03.mp4",
+      "bytes": 1809165,
+      "sha256": "99b244e4ec17e43ffd51820d896234e4611571d46ab9307347e08f46d2637302",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s03.webp",
+      "bytes": 31982,
+      "sha256": "5e67193e0d358e9ee55cbd95b23d684b71d459455852e247f762260abb2343d3",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s03.vtt",
+      "bytes": 1346,
+      "sha256": "3a530af6544b2fd08067a9fff5cb1bb56dc7b8a46d2f196ca9066efff1c51bd3",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s04.mp4",
+      "bytes": 1630252,
+      "sha256": "09bc1895afb3b7d47d5bbb3b0a16165d34d6fa0a1c16a177f98d6fc95a153652",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s04.webp",
+      "bytes": 29250,
+      "sha256": "cb9899d949701d9b0f4de11283913341dc372ea6f7b5c2620461caf91ece9f61",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s04.vtt",
+      "bytes": 1290,
+      "sha256": "42bac55575972d013fac198ce495b356cfb720cc1a651910e1efc8f6ad17bf33",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s05.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s05.mp4",
+      "bytes": 1684043,
+      "sha256": "94c73ce323e8bec75cb03b8bd62828a9a3506ce5acf21ce3d13e2b26b80214bb",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s05.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s05.webp",
+      "bytes": 27874,
+      "sha256": "213f8f3c88d22195879b55531c6e3bca436657fac5da73d5e7f8f041a0366222",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s05.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s05.vtt",
+      "bytes": 1183,
+      "sha256": "ffa66da62e4163bbe9fc56378818bed656933570e53de96107c88230b35d234c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s06.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s06.mp4",
+      "bytes": 1690377,
+      "sha256": "ffa4f8ef04b06d8e9fef04c9c502e2a718b847100023ced374658b1c7dc9c616",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s06.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s06.webp",
+      "bytes": 25214,
+      "sha256": "4649a873fa631e3f5dc3d97cd36faaed9fbfa7f5b7241415d88ad57b7582233e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s06.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s06.vtt",
+      "bytes": 1418,
+      "sha256": "af9ba96bb97f34a0d3805e4c119cc9d5db3c726c2dfeac8c646b053a098edcfc",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s07.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s07.mp4",
+      "bytes": 1584183,
+      "sha256": "b67b0a7df6d98035825474ec891406c332e35250ffeafb5ac642aa4ebdbd072f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s07.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s07.webp",
+      "bytes": 30606,
+      "sha256": "96ab3f5a9925fe4f44be921094b78e5516c240889a1c3bd6cdb1e717b3be8933",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s07.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s07.vtt",
+      "bytes": 1193,
+      "sha256": "f764dd695bdfe99f6421e2300357d177fa5441e4693d7649c2f86173ba188ffc",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s08.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s08.mp4",
+      "bytes": 1585751,
+      "sha256": "a5b20f3aa591646c5a83fac73871b3b0562e21e1a4c0da5de99c6b7ab949702a",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s08.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s08.webp",
+      "bytes": 26690,
+      "sha256": "78a4b0034b95b99ee93807d4def83d593c5b7da230419defed2bfc8e01cd484f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s08.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s08.vtt",
+      "bytes": 1279,
+      "sha256": "34e6600dd01f2b346c828f1ef5fffd7d0af5cbf5ed55cdfc636ba02983593a6a",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s09.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s09.mp4",
+      "bytes": 1834319,
+      "sha256": "5a96068b9c1c68b41c535088b38f136f18b20b495ee860e66a324f283d62f16f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s09.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s09.webp",
+      "bytes": 30936,
+      "sha256": "cca631cd34947fc7fbe3a41efa45ac9c90485ec0e2e26cab631e9d10ebb65c1f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s09.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s09.vtt",
+      "bytes": 1405,
+      "sha256": "f21fafa7a76a751e9144c96fb06ab5927b8626bb036ad1c1a2fdeb591c8db81e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s10.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s10.mp4",
+      "bytes": 1921017,
+      "sha256": "c01cd69a345d509a98c5b0888c21d54a2e5fa049f9b5158f789941f522711286",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s10.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s10.webp",
+      "bytes": 32562,
+      "sha256": "7259406470d5a864c5c87e59be22da892cd74c0a9e455c832bbe3ec358a24b53",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s10.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s10.vtt",
+      "bytes": 1374,
+      "sha256": "43d2ce9fc5380164b26c4a2d6c86990b75e0360dfbee6d9edfba667b1cc8a40d",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s11.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s11.mp4",
+      "bytes": 1707479,
+      "sha256": "78544b42c070cd6e6233fca765d17ac5c02b29da32a169bbda5861c91ecf2c09",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s11.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s11.webp",
+      "bytes": 27170,
+      "sha256": "0e989790b808a33fb11fd01498bf8cc7ae64dc75aced78e2050ab08dcdd0f708",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-s11.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-s11.vtt",
+      "bytes": 1301,
+      "sha256": "532ede21a1e60d41c2b1605670893e2c6d09c4c41dd58e655887028965285aaf",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a01.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a01.mp4",
+      "bytes": 1686399,
+      "sha256": "e5c6f310df27713d801e813c06678a573429d9e409bfa1079f049ca6a82786b3",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a01.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a01.webp",
+      "bytes": 28292,
+      "sha256": "44a082894b76fad573601fd6bc6ee9f4fe919407e1b275f2129ea502366b5b02",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a01.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a01.vtt",
+      "bytes": 1459,
+      "sha256": "e299665a0100a39c23b6e3f2595506f5e2f20e200bba1a6e62598c924cb87c45",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a02.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a02.mp4",
+      "bytes": 1735167,
+      "sha256": "442dded41bf672796c0ec21be4c7b3d642a00cfad0ae2bdb0cdadee88da6d7e6",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a02.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a02.webp",
+      "bytes": 32282,
+      "sha256": "0bcb6f2d45c5c0ca8c68c35e1f7b826d2a23b9abee11e1f7650a3988f5358fd6",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a02.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a02.vtt",
+      "bytes": 1310,
+      "sha256": "beb5e9c06c7d3e2fa3e08e7fee9bebcf72beab8d961fed8e1eac538f78c3d875",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a03.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a03.mp4",
+      "bytes": 2066195,
+      "sha256": "e67a58ec14772d5b19a636b088d7745acd58cbbe3fc9dbb1f377ea7c953389b6",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a03.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a03.webp",
+      "bytes": 37808,
+      "sha256": "b8f5c46b902dd6eace092aa7d9ed96006b22424369e819256903f54718f54344",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a03.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a03.vtt",
+      "bytes": 1335,
+      "sha256": "809a026cf12fcaf99c15e23746753eff8da36ae630dc56baf9b04d4406fedb60",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a04.mp4",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a04.mp4",
+      "bytes": 1720910,
+      "sha256": "3645caf6388c0ca03b0bcbeb9b8cbffa89ad8744af2631d663442d2f9876b831",
+      "typ": "video"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a04.webp",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a04.webp",
+      "bytes": 28674,
+      "sha256": "cd2d7738e7a990326475f5d911f2c8248252c108f40b029aa37e8768906b3f5d",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-steildach-biber-doppel-a04.vtt",
+      "url": "/praxisvideos/v1/dach-steildach-biber-doppel-a04.vtt",
+      "bytes": 1470,
+      "sha256": "cb5dad436ff92f413b5562634daff29a8173b3c0ad3376028f598ecd2609776f",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g01.mp4",
+      "bytes": 1785158,
+      "sha256": "b2bdedb673a1490ddced059028257f0702e3e31858f763bc8fee45b859065686",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g01.webp",
+      "bytes": 29100,
+      "sha256": "3393cacac605ff96767f8a4830ed822b2445254402bfb938ddea6725e8a69f7c",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g01.vtt",
+      "bytes": 1319,
+      "sha256": "a661c7f10e3b1dc9b496a4f037b839c97564a2a9eaa8d78ee3bb470912500ebb",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g02.mp4",
+      "bytes": 1604032,
+      "sha256": "06f29bdcce90bd9f92453be1dfefdf605e1c67acc5530a9f31624bb9c05551bd",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g02.webp",
+      "bytes": 27918,
+      "sha256": "425914a0761e1cd00eba3a3ab6b3e5f5db22fa72906bb6e05d87a3488ca88ece",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g02.vtt",
+      "bytes": 1328,
+      "sha256": "204515ce15da36360bfb4397908c6d3e3778b711f0d0fcd3c55849c95c57d31c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g03.mp4",
+      "bytes": 1476553,
+      "sha256": "f75c5ebd47a5722b67373851913bdf2a7ceac7a8b6c2d529436521bf78664e02",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g03.webp",
+      "bytes": 27144,
+      "sha256": "b967b6e65c788b727e5ed3cd041f2c95086a612a5de69ca3fd7645602df93f11",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g03.vtt",
+      "bytes": 1114,
+      "sha256": "da30dc900f108244033521ad3733b53ea21b9be577414eac0f2d9dd46f76c709",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g04.mp4",
+      "bytes": 1455404,
+      "sha256": "6a05f9a38754bb1cdc7aa0f5d17f09246058bb0cb63002f15df4392216cf4a2f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g04.webp",
+      "bytes": 28642,
+      "sha256": "61dbb8f5cf9778805224ff263ad0bde4804039e29d1f1dbdc9d6ea79231218ef",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g04.vtt",
+      "bytes": 1212,
+      "sha256": "a8d0bc0e60e9fd98d5e5d1e86989d1b686f503fe39a84c27dbb7ad9ab699c094",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g05.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g05.mp4",
+      "bytes": 1812469,
+      "sha256": "980c626893b985137092233499fa2f0ad7fae40855c90fbb7767dd0c53cb9b6e",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g05.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g05.webp",
+      "bytes": 28172,
+      "sha256": "d4b42abf72cb187ea29e9f928e06ce956e1300fcc0a4f1f97975d864392079c4",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g05.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g05.vtt",
+      "bytes": 1405,
+      "sha256": "3a6cbf1738d6c9070b9134533b068b99352e58cbb7594615bddd959bd438d1c6",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g06.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g06.mp4",
+      "bytes": 1843340,
+      "sha256": "a92bace8fc5ffb4d356c661cf5ca057fa6b70e1620ec5a60c4f08eec711ed40c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g06.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g06.webp",
+      "bytes": 29834,
+      "sha256": "2409f48cfe60831ffc747bfbb762d5a4953e855dffcdc34ed7d500ca8abb62e9",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-g06.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-g06.vtt",
+      "bytes": 1420,
+      "sha256": "cb0ebe4b52f976e6e0f8a27df594fe2cec2687826799bccbc5e3c09dcacdfcbf",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s01.mp4",
+      "bytes": 1601547,
+      "sha256": "4ea2d72a2e7a1a6e9d8f7e526f5048c3ca8b799f2e3bfa04ecab625ba451b8f6",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s01.webp",
+      "bytes": 27066,
+      "sha256": "868b10761153913d020000e3d3326cf2c7f553c33ce7c4657174c825961c80c8",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s01.vtt",
+      "bytes": 1235,
+      "sha256": "526d6c17186e0042a2459865a4bc0a8a971b3bfa79cc3f1733ef4bff7b1ff6c4",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s02.mp4",
+      "bytes": 1775994,
+      "sha256": "6fb0f2d12fee72171ff4e04af6c39091cfa7dfe27f92dd0f84bfee661d5610a6",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s02.webp",
+      "bytes": 29878,
+      "sha256": "606392dd007777a15c61478629c2e1e47e9a4a1dde59c99bae757372d580b897",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s02.vtt",
+      "bytes": 1059,
+      "sha256": "a58d48ee16a5a7bd852b9c31cbfde2bee54ae7afffc5b95797cdfc910ada0e34",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s03.mp4",
+      "bytes": 1807562,
+      "sha256": "43a9477690fb8325a6874843343adf0ababf53ca60df20264d0d0a3ca3e79a3c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s03.webp",
+      "bytes": 29638,
+      "sha256": "f299791c45842a24ac3603e92112c4da584887b4608c1c00a4f1d218ddf37d96",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s03.vtt",
+      "bytes": 1319,
+      "sha256": "b448f3e05b990191de881c4a8e959342e7678b2c1de1d86b20e7354a9c47e286",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s05.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s05.mp4",
+      "bytes": 1673871,
+      "sha256": "969e262007207c0e99210bf5825fa5e8f6a794ffbc3ce7ad1ffbb13bb2810b37",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s05.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s05.webp",
+      "bytes": 24658,
+      "sha256": "af9a379066c4f086314aec6e3ed6ab33f43c6c4246e9b42d2c8e781358fb24ab",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s05.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s05.vtt",
+      "bytes": 1122,
+      "sha256": "976a9049c4a3d024a5c4f7841138d63dc89151144592ca4ada2bce44363db721",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s07.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s07.mp4",
+      "bytes": 1600469,
+      "sha256": "43135833543b39496bbd8d7f9b1ed5d62b633e1fc86519e16204db8eef871a76",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s07.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s07.webp",
+      "bytes": 27090,
+      "sha256": "1f3429d476b7920a76f29abe0648e977a9434dc0409f9e0b151d635753ed9a39",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s07.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s07.vtt",
+      "bytes": 1132,
+      "sha256": "6a9dfb89d6d487fd27cba8500fdd97751c4bfe69a1434e1857af6bb4f3075ecb",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s08.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s08.mp4",
+      "bytes": 1602656,
+      "sha256": "55f0e9fa13bdc261ea10aba6c7841b8547c16a10b21151f09e9e65d7f1ec936d",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s08.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s08.webp",
+      "bytes": 23536,
+      "sha256": "90cc655202b00bd45f91c5a30810744ef30a8b346fcd286eef7ded5e5a56b7e1",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s08.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s08.vtt",
+      "bytes": 1252,
+      "sha256": "30538a3c1f1293f97d11d1ec193ac0e48e139169e3296784f3cb4e30b214d20f",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s09.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s09.mp4",
+      "bytes": 1799098,
+      "sha256": "4537c4cf6e804210f38bb417fe29d125d54196aeed752045dd99ab6751d3dde4",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s09.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s09.webp",
+      "bytes": 29384,
+      "sha256": "a27cbf9b54a36c0901c3ba0f0fad3c9cadb761db1466e76c379b17666c9b3ac2",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s09.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s09.vtt",
+      "bytes": 1378,
+      "sha256": "204daad4d19536d1bb24126751af2ba16b41350760c87e64eb741d04c3a68c55",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s11.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s11.mp4",
+      "bytes": 1713067,
+      "sha256": "5a216da2ff66967e4cf2f01431e43f479f6e6e05284ca1aa2ceaecead9c3a520",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s11.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s11.webp",
+      "bytes": 24618,
+      "sha256": "8759dbb77a642abea696cef22fa2d3e9679697eecf1f9c08577401d56f6d7bc7",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-s11.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-s11.vtt",
+      "bytes": 1240,
+      "sha256": "4a2a847535438a168d4ff3d07fe298a89315c1499610b36b0b5c0b15eb55c19c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w01.mp4",
+      "bytes": 1465280,
+      "sha256": "c24b550262ba2e733891d0fd2f93fe70cb5ca4ef091c96b339297e3862c96063",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w01.webp",
+      "bytes": 22108,
+      "sha256": "32e333fb292325037d1cf9d342ed35ff47f992b24e5d5b57d1d398e086a3b95d",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w01.vtt",
+      "bytes": 1244,
+      "sha256": "4a5f55913b40d5a57e8b584959b7d010bd44c2af934d0229c3964db999eee160",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w02.mp4",
+      "bytes": 1527939,
+      "sha256": "478090d4bdf5f3bf0164ffed7d81da4f79875333b3f31d25f75302492e5265d2",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w02.webp",
+      "bytes": 21506,
+      "sha256": "338b0fbdc16b4852cb70c95fd77d5a8df854fafe6781f3f7c87620b316574368",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w02.vtt",
+      "bytes": 1174,
+      "sha256": "8c840689ae96f4296f7ea3379e9141c7dcb4915c5048b19353f599f219e5e098",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w03.mp4",
+      "bytes": 1455339,
+      "sha256": "ac41e2081f730cd6ff1ec64370d6bd1ccca481e4cf9ec8e02d7890232e681b8b",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w03.webp",
+      "bytes": 21548,
+      "sha256": "626e680fa3cb3d4f6c2b9090e2486a455fc63bf454b1d5420992f2ddbf54dd39",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w03.vtt",
+      "bytes": 1138,
+      "sha256": "107d510c32834c156f21b186107a4f449aa49909a1c452e9e924c9401e993b8f",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w04.mp4",
+      "bytes": 1581416,
+      "sha256": "47761997513022bc73724a2911496a0a8c61724fb3cb4a26c63c2bd93b12f229",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w04.webp",
+      "bytes": 22620,
+      "sha256": "0fee965491385ae96914a62c903e234c6d954ce04d0f71d5584fd2b5262b57d2",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-w04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-w04.vtt",
+      "bytes": 1434,
+      "sha256": "df180a75a930e38dafea3c57bb70c6b762b2ff630a236f43f355186de6507451",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a01.mp4",
+      "bytes": 1659834,
+      "sha256": "0882e3135c34fafcb2abc8d19e9a339c362c9b6e522a8ed39d29c9b77fd505d8",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a01.webp",
+      "bytes": 26066,
+      "sha256": "fc8736c2749298ee3c6615d0d8958ef801bc8bd3aebc6fb79331bc84f6f7a059",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a01.vtt",
+      "bytes": 1398,
+      "sha256": "9e5b9f1390b803a3e92bfacb922380353dfe0671a19658046181f5bdc1607944",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a02.mp4",
+      "bytes": 1800650,
+      "sha256": "632d1451261cd8317171c0ed16fe1fe4e6fee0bc7caab0fefeb260befcbbad4b",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a02.webp",
+      "bytes": 30536,
+      "sha256": "f3713fad0a11b03e1d37a95d39099d2107b734c8507e36c5a97b169ddeeab34e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a02.vtt",
+      "bytes": 1249,
+      "sha256": "77093e46abf8c4c1c12a2881d2bed9752925b0970e143df55858aeaf6215c3d2",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a03.mp4",
+      "bytes": 2032507,
+      "sha256": "4d9f678f466ee2b54b54bdd2b6d813d03b4321f9f31b63ee945f09533665cdb1",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a03.webp",
+      "bytes": 33774,
+      "sha256": "970619bba6b9f1a90be3a3ca90efb693648338b17a295db0f0ab6cfe438f459d",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a03.vtt",
+      "bytes": 1274,
+      "sha256": "9877db0ebdcef306d4f85d2beccba8a88fdf9555ba406e77007c6a10c652c265",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a04.mp4",
+      "bytes": 1721009,
+      "sha256": "ba8c0f9c68bc60eb7fff5d66570d60dca3301a3434a412ca39c29a46b598c95c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a04.webp",
+      "bytes": 24004,
+      "sha256": "e21dc424d4168e000991d7e4e9fb1ce9cec01f47c79bae37dff4dc5ace11e03f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-falzziegel-a04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-falzziegel-a04.vtt",
+      "bytes": 1443,
+      "sha256": "edf15f6240255ba1acafddbe8f4e8e8b25f7aa7aa0dbec336260ca06e306edd6",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g01.mp4",
+      "bytes": 1697129,
+      "sha256": "b410ed3accda9b91b28234c0776cded4f22c1adfd5729af491fb8079111d16e5",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g01.webp",
+      "bytes": 30056,
+      "sha256": "f3f0e8ac7977b9b41e6d41aafc58b870fafed41eaa1137b00ea50950a571bbcb",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g01.vtt",
+      "bytes": 1334,
+      "sha256": "f279c55f7f276ce3e6d13266bb2fb6e0693fa46f6fcf3c719d1a7fb1d6d6bbdc",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g02.mp4",
+      "bytes": 1697314,
+      "sha256": "7b0da13fcf76b37361ed86e6f474e44cd96a7a3fbdd0e913d4cd1e2d832e4d0f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g02.webp",
+      "bytes": 31740,
+      "sha256": "fbaf69d2fbeb50a8b31e656fd3d002e69ca378f8c79cee2ebecdaddcec2f1c31",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g02.vtt",
+      "bytes": 1343,
+      "sha256": "6dd9f87edffa2a403b78f101fba2d880b2632ad14079f464bcece460ccd2161b",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g03.mp4",
+      "bytes": 1581389,
+      "sha256": "a84d9ca3d91e04f63b003fce878340a1fbeb486dff272eaa80037f388e89e007",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g03.webp",
+      "bytes": 32954,
+      "sha256": "47a5750164ae08b9815d250cdcfd1cd22377b0197043f24ca8194b3a9ddf0d27",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g03.vtt",
+      "bytes": 1163,
+      "sha256": "55820c0ff58b107fc5d76f0f40490dd6805e3f19efb5b9251d46873cf27e2415",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g04.mp4",
+      "bytes": 1563761,
+      "sha256": "e61fb026515bcb93e5628be76f365b26e2e4247c4d9569b87f733380dbd58ad5",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g04.webp",
+      "bytes": 33116,
+      "sha256": "b29f78ffff9f419afd75edc74c7c827bc2da4964bcf62dc9cce22c80dad38388",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g04.vtt",
+      "bytes": 1227,
+      "sha256": "8536fe99dc8686c4eb9da4d14c0ba1297b6b003a2325b8c14614ecd19b3e2dd2",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g05.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g05.mp4",
+      "bytes": 1777620,
+      "sha256": "33d281063f0df335e2118cc5e87c37fc1bdb1ce950f0c8d124d774df536b2e5a",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g05.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g05.webp",
+      "bytes": 31386,
+      "sha256": "ed89c48f6a027bf0575461f9264238d850442a75ec67efc9f1a2af5c926790b7",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g05.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g05.vtt",
+      "bytes": 1420,
+      "sha256": "9073f225ce15c401520f7d1a36f968845df84bce3baf102456368a283da7f7bc",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g06.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g06.mp4",
+      "bytes": 1768965,
+      "sha256": "e715f6638488e212c902111022528f8f2bcece0195f2c33139529771aa460c68",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g06.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g06.webp",
+      "bytes": 29794,
+      "sha256": "5fcce5d674538dd2b2763e74d6f3e9e72f3d3206de8a10a51d00c37c20dc2c6d",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-g06.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-g06.vtt",
+      "bytes": 1435,
+      "sha256": "a85911dc67c346288b92663270bb81533dc456c88994ae843060846421f26abd",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s01.mp4",
+      "bytes": 1599335,
+      "sha256": "be23f41903d6d9d5fd18990c909a025637e27b23ebcdd96c4004c497b181268c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s01.webp",
+      "bytes": 28612,
+      "sha256": "afb535c6045dda5d9bcb8c41719c16b2ca4d423c628069ed1118766c7e02dea4",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s01.vtt",
+      "bytes": 1284,
+      "sha256": "6c8e3555e6643ef54be05ec4e12f0d956e79add8742c083af4c40eaec0b346eb",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s02.mp4",
+      "bytes": 1746198,
+      "sha256": "05dc7aee752e66734cab5d8dfaf18df3061a6835330cf5a4783979ec2b95e4a5",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s02.webp",
+      "bytes": 31604,
+      "sha256": "3fa97ce17f15130ea75bd706256adeed519ba1f0b5955d5376e7594bc35cc7cb",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s02.vtt",
+      "bytes": 1108,
+      "sha256": "fd185b5d586025467c7465396cd74efb64fc855eb3d5c0d218ebbea3b8a1ae0e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s03.mp4",
+      "bytes": 1773052,
+      "sha256": "4060dcf167f1bbeb249c33a6a56401bd5c9d0e2b08a7710c3079e0bf5d49771c",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s03.webp",
+      "bytes": 31380,
+      "sha256": "f82cb4607eaa071ce9ecc152586aeeb78d4511feb0e85796397bf595c266e6fa",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s03.vtt",
+      "bytes": 1334,
+      "sha256": "e7c6345d1ee5310b87ca4d341b312f50504e0ec4843431f9ba175723f2fe724d",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s05.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s05.mp4",
+      "bytes": 1662004,
+      "sha256": "dccd899c4dd739184dfe3082428cc31988535f6f1c8fc15937f3a56a0df5e0e2",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s05.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s05.webp",
+      "bytes": 27206,
+      "sha256": "d36c1f847fcc8d9e8bd4ebbcbc3293cf6df98b9707e920710e50de92362669a9",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s05.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s05.vtt",
+      "bytes": 1137,
+      "sha256": "ae0eee1131ddd98afe86349e6a44fcc4c9fd3bf12fc74bbeee978945b4b20ef0",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s07.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s07.mp4",
+      "bytes": 1559943,
+      "sha256": "05b8044289f7749cde7778f9821beecf744473bfe397ca78bab8f295f2078630",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s07.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s07.webp",
+      "bytes": 29696,
+      "sha256": "6e722e33429f94c10122dc3ca91876686e771cfe78d3f5ce4ebb1510e586a97b",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s07.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s07.vtt",
+      "bytes": 1181,
+      "sha256": "15ad2af4a32e328d4e8469ac2f17d2737ac14e666bf65ba86426d11ce3e75878",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s08.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s08.mp4",
+      "bytes": 1565482,
+      "sha256": "0ca7e5e367a18eab25ac42b9e8d044bf21613f0bc416031f92a7717682a1178f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s08.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s08.webp",
+      "bytes": 26154,
+      "sha256": "5b12871477a0763012b06572e0736eaf6f8f25c95d6462436b9a25ac40a9b7f6",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s08.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s08.vtt",
+      "bytes": 1267,
+      "sha256": "b3125231c1f5ab1fcbd51fa0d70a5e56e04daad26a2336116ff7677a4505cf6b",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s09.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s09.mp4",
+      "bytes": 1771820,
+      "sha256": "a1aedd8a0b5e5a7acd1e98388c631a8269ca36c2c1c4be83f3d6f53d9d86f9ea",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s09.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s09.webp",
+      "bytes": 30510,
+      "sha256": "64d6269ae68af07df57633a9b848b8fda87a7a93a96079ef35bf285887fde8fd",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s09.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s09.vtt",
+      "bytes": 1393,
+      "sha256": "75b02e1d0692d134feb927d9c5bee86be184f29d11184c5f4b1219f57fa362b3",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s11.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s11.mp4",
+      "bytes": 1652186,
+      "sha256": "c827fae515944edfd60cbe7e640788f44ec62aff46fdf626b5d636716a851e5e",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s11.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s11.webp",
+      "bytes": 26576,
+      "sha256": "a33f1e200eb3fdca8a2bef7a2e4ba3e15af9d9af2588aeca4676e15f796e037b",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-s11.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-s11.vtt",
+      "bytes": 1289,
+      "sha256": "a1ae261430f73c8150c3c13f59990e4953f0da0cdc44aabe8b188615df91416e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w01.mp4",
+      "bytes": 1537589,
+      "sha256": "687906ac519f7e103108d7e26518d3fd34ce363fbb386667607359616df657b9",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w01.webp",
+      "bytes": 23776,
+      "sha256": "24685acb8311e72e46805214a997ebfa704eb69788c66adc02676930b26e2469",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w01.vtt",
+      "bytes": 1293,
+      "sha256": "b829d43ae2a53bc8f6deb25fbebbd58e7121715cff4c6440f3daaa75581942df",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w02.mp4",
+      "bytes": 1591680,
+      "sha256": "0008a63f9f7acbc9b01ffed57fd3afa39ee6d5fd739138fda68ee0868c4a2ac2",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w02.webp",
+      "bytes": 22392,
+      "sha256": "cf08f6e0ee1d81c8cb7d74143cf52cd35430bcbb86fbf303f325aacf518b2d10",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w02.vtt",
+      "bytes": 1189,
+      "sha256": "335098bfe7625e8e706a2fb8738c04e50fc788886459c7f23f18ca6ba2865d87",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w03.mp4",
+      "bytes": 1513316,
+      "sha256": "e5b7d4a209103a32489a8b5445a3bf8a3e8b8cd2e063a842a375e0903f4dac92",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w03.webp",
+      "bytes": 21858,
+      "sha256": "e675d444893486df006ea6f5d7102b2222d0686a4c04962b2a6273e147140e94",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w03.vtt",
+      "bytes": 1187,
+      "sha256": "c0f07f67a42fe3b334060b4630d72bda2c9083f88bbfd6cd7d141cb9922c3b3b",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w04.mp4",
+      "bytes": 1656748,
+      "sha256": "ff3059ed95b4da7f29c09e5e9e7e9ec8245bc50b4fc401105ca714a05699c7ac",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w04.webp",
+      "bytes": 22758,
+      "sha256": "2d0e80d652bbe9b07c292a730b4a63178b938dfb5a3cd53542038ea599c21d0f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-w04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-w04.vtt",
+      "bytes": 1449,
+      "sha256": "4ee2040d3b3f1995bbb3ab244dd437d15bc6980799162a505b6ae29facb64612",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a01.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a01.mp4",
+      "bytes": 1668421,
+      "sha256": "e9362b5bea2d5496bf264470535fb623c3985ba7f26d8598a3b4f7a77877a9d0",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a01.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a01.webp",
+      "bytes": 27744,
+      "sha256": "a423f67f8e07660326f39e82c12ab5b294dfba614f4c323a51121b4aee73d0d0",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a01.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a01.vtt",
+      "bytes": 1447,
+      "sha256": "c11beced79d316ed9aa783cf222f061c8286bcd2557ed627df4b6a9909ffabee",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a02.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a02.mp4",
+      "bytes": 1710588,
+      "sha256": "b92bdc18b7131e53868deb0b5611986e8816d8eca4df5720b7a8f0d4cca2337d",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a02.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a02.webp",
+      "bytes": 31652,
+      "sha256": "6640f7a08a077b88649000e6602468a562c006df03b62ea85288ff06274bc230",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a02.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a02.vtt",
+      "bytes": 1298,
+      "sha256": "81de36fe8958da74f4b1c30f04a450aa4e5390019a6cfc59e70f00126f5c5ccd",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a03.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a03.mp4",
+      "bytes": 1991176,
+      "sha256": "1b4f2238e88eff3f217e3648fb1e5e43d0f3a2f447ba9ba1597e50ff70e76222",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a03.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a03.webp",
+      "bytes": 37196,
+      "sha256": "a3ee8d9f1262230ccbc3f60787a79e16e1769e18ba723eacc9fbd719120ef770",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a03.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a03.vtt",
+      "bytes": 1323,
+      "sha256": "30fe46fc433abd594a8bb6a758ac8a3090f71caba7f0f76c0f6a7100f89147f2",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a04.mp4",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a04.mp4",
+      "bytes": 1690168,
+      "sha256": "98033e0bb58838b8a671cc36a1523e9035f6e92df359a0ecefc61829b6b46cd1",
+      "typ": "video"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a04.webp",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a04.webp",
+      "bytes": 27698,
+      "sha256": "9467760467c2ed9f579de495e58f5cc2f15b5085251596b84301774d1d802690",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-walmdach-biber-doppel-a04.vtt",
+      "url": "/praxisvideos/v1/dach-walmdach-biber-doppel-a04.vtt",
+      "bytes": 1458,
+      "sha256": "b389d4b04c044c98577a9a2fae6a23781cbd41db2b5a8d3dfbe474c6a5659f47",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g01.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g01.mp4",
+      "bytes": 1372453,
+      "sha256": "1489e24c55d707546916cd5a51a3c4c8a271c01cb2dad49ca87a4a57b5169a24",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g01.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g01.webp",
+      "bytes": 21078,
+      "sha256": "55eb7ab39f6d889640a1251269e1fb7ae9fc843d69d4102fc171ac7ff66a8bde",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g01.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g01.vtt",
+      "bytes": 1343,
+      "sha256": "12a09245a065a568f7128cb2419c02d896888a140ae5d638e4bc07997bf7d4f0",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g02.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g02.mp4",
+      "bytes": 1262522,
+      "sha256": "3b0cc3d73d4b00b407cce30817a6a73f7b276f6bbb45b0c7e4cceb234d3fb1ce",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g02.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g02.webp",
+      "bytes": 17936,
+      "sha256": "268822cefefdf46d21ad6c33b01f172c781e2f9519b8dbc0c9f8ef893cf2f698",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g02.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g02.vtt",
+      "bytes": 1352,
+      "sha256": "eb67ece579a9bec60dd1af3110bd7234fb0d2a44c238dd3fee19d241972f7116",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g03.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g03.mp4",
+      "bytes": 1088326,
+      "sha256": "0e6f366b9b5f827769208278247511ad2b1e6a08866bffd04c8cc45b94dd50f2",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g03.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g03.webp",
+      "bytes": 17422,
+      "sha256": "f7d2797711e9ea8146f7348ad9200fb90a59851a7970ea364ebaefe52224c1c6",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g03.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g03.vtt",
+      "bytes": 1172,
+      "sha256": "8021ee245cf049e71e5389789ff0c55896e8757a14f238d0e7197b2c967782c0",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g04.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g04.mp4",
+      "bytes": 1132359,
+      "sha256": "3ea54aa4dff441ec82f8e14920d28819eabfaf3d1397085217b7479a0aac5f11",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g04.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g04.webp",
+      "bytes": 18542,
+      "sha256": "68929b29ea8a8b2d0a853a174f4ed734e936feec4e94d9639fcdd09900540707",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g04.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g04.vtt",
+      "bytes": 1236,
+      "sha256": "f81eff947dd55c1b3c12b20d978768b591cda47e4f4de4abbbfd2f9440cf654b",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g05.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g05.mp4",
+      "bytes": 1437939,
+      "sha256": "8579d81e644899a11d9938fb50f32d2d09ceea7fde179c3c4ba391fc2d620171",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g05.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g05.webp",
+      "bytes": 21542,
+      "sha256": "c833b948c27eb86b79dae4360183512a8627eeac6ecc4be5757b4f59714f8682",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g05.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g05.vtt",
+      "bytes": 1429,
+      "sha256": "ed659a054abea68bf387ca887d32d85b4d6202b3a377cced7693be30f56d9779",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g06.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g06.mp4",
+      "bytes": 2445194,
+      "sha256": "14ff2e36ec20f0c74ec463651437b122b34fceb85b74a7a615d0a2d7de649295",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g06.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g06.webp",
+      "bytes": 21486,
+      "sha256": "e3ca4c2a0247bb3288fba0079533f425e3607f73017d9d97c268507b0c32f9ec",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-g06.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-g06.vtt",
+      "bytes": 1444,
+      "sha256": "0908e0a513d212df58a60e68bbd04a3591d1a53188ef2562296cfa433ee37c32",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f01.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f01.mp4",
+      "bytes": 1279442,
+      "sha256": "b3e1e0a4fb4960d6150a38ae28448fe22514b7c6691e2afcbda07b3c24c46b7f",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f01.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f01.webp",
+      "bytes": 21156,
+      "sha256": "bf54abed816f54307e33df63dda4b78f7da85e9c0c40d71150cb8e8a5de09e20",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f01.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f01.vtt",
+      "bytes": 1300,
+      "sha256": "6548e839ab4f0f4fba32bdd3de1ca5fb8e0f38666c5888e43a3156bfd46695ac",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f02.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f02.mp4",
+      "bytes": 1345767,
+      "sha256": "a0221b7b73bd30d4435f574f1c82a4b64e4cb03b741cd5efbdc6bacd2e98308b",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f02.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f02.webp",
+      "bytes": 20958,
+      "sha256": "6702781c5f0e65d53691495ddc1cd1edcd1427fee0aceedadf890c9ebe9e5d07",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f02.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f02.vtt",
+      "bytes": 1264,
+      "sha256": "1f83f092868cc29a11cde9700ce4ea6c0b89e4aeab3a4ca45222b69a443574d1",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f03.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f03.mp4",
+      "bytes": 1330663,
+      "sha256": "41cdda4684b35c8f1583b13cdfe0d67c87edae039f576baa6c57e7bc7a001eea",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f03.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f03.webp",
+      "bytes": 21440,
+      "sha256": "b534a6e7c831c25eac75130a3d1b905b20f51b819eff76a82585bcd3cfaa1eca",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f03.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f03.vtt",
+      "bytes": 1212,
+      "sha256": "5125082dc495895a0a32a3dea605e22ec8fcb589a71fefac0906943f11cfd78c",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f04.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f04.mp4",
+      "bytes": 1432396,
+      "sha256": "49bb834371c3f39fde3f40647e8e93c9bb99ce7d56aaaae2a32c0e41dbe64be6",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f04.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f04.webp",
+      "bytes": 22636,
+      "sha256": "a06ab3e90d9fd4d4403e59dd39a7497740170a8b1b55ab374052e59c78eccddd",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f04.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f04.vtt",
+      "bytes": 1444,
+      "sha256": "4896b40d22be46ab6892b1cafecc9e8d6a137308c54859314cdc09662d3f036f",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f05.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f05.mp4",
+      "bytes": 1397936,
+      "sha256": "a6bf3f57e1aad3d0eb051a60cf4eef7ebefe43aff8eb5dc6d65d3a202d21d409",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f05.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f05.webp",
+      "bytes": 22308,
+      "sha256": "6a8f78ccdc5f1ca06c33e145b9720b8852d4457a882becb281ce710f6d02098f",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f05.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f05.vtt",
+      "bytes": 1227,
+      "sha256": "6d839126b8bf7f53b5832159f4f2e6d10e6ddb9d8566b7f524fd556e132c8aba",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f06.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f06.mp4",
+      "bytes": 1360042,
+      "sha256": "29cd7b7131d1f46a7e64539560391d0be07ac8c59d3a83335ea805d2967bd61e",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f06.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f06.webp",
+      "bytes": 24558,
+      "sha256": "129b5414bea9cab38392b451372d9b92d798c4aa5b06bf89a28d1ebfb81f96bf",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f06.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f06.vtt",
+      "bytes": 1360,
+      "sha256": "6498d16670fa4b1d136fabc5ab0c6a9d02217a71d1707099ad775dc79dfe03ab",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f07.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f07.mp4",
+      "bytes": 1310321,
+      "sha256": "8d22ec489f123d631c2be1ded269b5ed01eb8d1027e30c23ef78cee69d03e0f7",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f07.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f07.webp",
+      "bytes": 19720,
+      "sha256": "a050d7527f1bf5ba4f3144d274f564337bef025d234687676e9dd2d1da3ee201",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f07.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f07.vtt",
+      "bytes": 1328,
+      "sha256": "b89c6e094e3ca37f7b64bae8ba7af3a972a05cd86b7fa9bd297da7a3a743d8b2",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f08.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f08.mp4",
+      "bytes": 1376394,
+      "sha256": "01f11a5b1486357d4a1fe12f4c7329b5a0501311f2fd265c6a290151a65fbc92",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f08.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f08.webp",
+      "bytes": 21582,
+      "sha256": "cc9cfb1b4fb0c8c7676b982ecdcf4b468a6dd67999cbcc849873bff6edc48f0e",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f08.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f08.vtt",
+      "bytes": 1331,
+      "sha256": "a34bff5160c9f4afc1cd29206d80d279b43daa68834bbb3f1f3d68adf41b93cf",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f09.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f09.mp4",
+      "bytes": 1326973,
+      "sha256": "33c8c6a9c5709f1f7137eff8fd6e5b36430415df4e1a7f8a4ee378aca4d48156",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f09.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f09.webp",
+      "bytes": 21632,
+      "sha256": "18d127c4154f2ebe2e2bf06429f2af41d8726ee50476f7f357a2af5bb21dfc00",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-f09.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-f09.vtt",
+      "bytes": 1342,
+      "sha256": "9fdaf2e637fb0d85876fc8003d18c9bce7277284e67886f1151896e49e7a5a95",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a01.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a01.mp4",
+      "bytes": 1446531,
+      "sha256": "04760eaf8524d0823ab535f16fb778769c49be776ecf7eefa67ca5e6b6a3c0da",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a01.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a01.webp",
+      "bytes": 21714,
+      "sha256": "ed049633a5551fc5e32aa1cb2681b3ea90e90b1bc0369e62fc0b547f460eb61b",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a01.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a01.vtt",
+      "bytes": 1456,
+      "sha256": "824a962ff6cabf6a481e105c906591e894a8c1ecc88d05c8ce20c9f8a3f03bb7",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a03.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a03.mp4",
+      "bytes": 1669099,
+      "sha256": "7b23ebf0bcad7669b213fdd8210d0c1fedc2296dae837f1bafbcff9abd47adf9",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a03.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a03.webp",
+      "bytes": 26802,
+      "sha256": "1ca1eee1b9dca7dfc47c4f9bf5a0527a6056ba05aa388c33fa78c7054779d5ac",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a03.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a03.vtt",
+      "bytes": 1332,
+      "sha256": "9612c345de2eac02d8a6a0b3ae5030520fb1425245ac4cbcd31ad80eb9b47dc1",
+      "typ": "untertitel"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a04.mp4",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a04.mp4",
+      "bytes": 1413320,
+      "sha256": "382e7fa1c8061f04855be09249b022b742fdea820f567975f6e2d0a811a1c2bf",
+      "typ": "video"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a04.webp",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a04.webp",
+      "bytes": 20462,
+      "sha256": "f7443c2dfc7339805ec272d88920033d14ab4dd6e422da39b6408f36cf7a47ba",
+      "typ": "bild"
+    },
+    {
+      "id": "dach-flachdach-warmdach-a04.vtt",
+      "url": "/praxisvideos/v1/dach-flachdach-warmdach-a04.vtt",
+      "bytes": 1467,
+      "sha256": "cc0ec0471d2362922d8cd9ea4e96ee0cdf8a832999186244f8697f79779215f6",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-falzziegel-schnitt.mp4",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-schnitt.mp4",
+      "bytes": 1038193,
+      "sha256": "9e92cdcd063412d8995cace14471c822764ff014fc0f9f006c60f115ae4a8736",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-falzziegel-schnitt.webp",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-schnitt.webp",
+      "bytes": 19356,
+      "sha256": "36358ffbf38c4c67117416490926867da98b26555279e6fa4f1997aca4dcc34b",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-falzziegel-schnitt.vtt",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-schnitt.vtt",
+      "bytes": 1544,
+      "sha256": "02178a89e22893366f1544be706de722ecc8b4f51770cc0f399c9eb600b95878",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-falzziegel-bearbeiten.mp4",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-bearbeiten.mp4",
+      "bytes": 1319303,
+      "sha256": "786bf8ea75cf1235871c72e36e3eed458ac1e1595124f131ea6ea82607ba4adf",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-falzziegel-bearbeiten.webp",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-bearbeiten.webp",
+      "bytes": 21258,
+      "sha256": "0fc314a92439537562ce9cca9d4d43cad052353e54c2c370c203da44e3558cfe",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-falzziegel-bearbeiten.vtt",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-bearbeiten.vtt",
+      "bytes": 2023,
+      "sha256": "f9ab1afc5d0d1ecd396d755326a532f0e9cb3196ddec8d9d886137ba4d5b662e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-falzziegel-verlegen.mp4",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-verlegen.mp4",
+      "bytes": 1343193,
+      "sha256": "5fb819ad352f8a80905433f1e8d04006b2c4b272af4a5b825a2539d1c1b3b3b8",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-falzziegel-verlegen.webp",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-verlegen.webp",
+      "bytes": 22032,
+      "sha256": "0f97549657eb6dcdc658bc6849bd78ccf0af9ed85a8dca7540ea42505e495a15",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-falzziegel-verlegen.vtt",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-verlegen.vtt",
+      "bytes": 1637,
+      "sha256": "ea2ba09b8bd51fb1574f773b4dc6bcbfb99892eb1e2b90e0097a72626134b80e",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-falzziegel-kontrolle.mp4",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-kontrolle.mp4",
+      "bytes": 1365666,
+      "sha256": "bf02ce1f7bcf86e7f8c8fe0f50a31b051cb454fa53b4c06cfaa19adb717e32cf",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-falzziegel-kontrolle.webp",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-kontrolle.webp",
+      "bytes": 23682,
+      "sha256": "3c38e996d66978bee0bafa9320fca52a669ca3d060d1b24a7849bc364de3d909",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-falzziegel-kontrolle.vtt",
+      "url": "/praxisvideos/v1/werkstatt-falzziegel-kontrolle.vtt",
+      "bytes": 1783,
+      "sha256": "4af20e73d8f89a29f7d980d71d86261ed4eead5c9e68618dee4e41699c8bb9aa",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-biber-doppel-schnitt.mp4",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-schnitt.mp4",
+      "bytes": 1060840,
+      "sha256": "600a1e770e98e7f909dac8157f8d741f1fa1abb31d89bc88e93e11c61891d242",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-biber-doppel-schnitt.webp",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-schnitt.webp",
+      "bytes": 20482,
+      "sha256": "74929a6a85098dba503b9ff3f694fdc9f43f8d069800cdc3a4a83e74095f3a24",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-biber-doppel-schnitt.vtt",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-schnitt.vtt",
+      "bytes": 1571,
+      "sha256": "8c782f4b4b93a06e5df5a06be0a5a6283ff3f2d88c3d1fff913eefedcf86d0c6",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-biber-doppel-bearbeiten.mp4",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-bearbeiten.mp4",
+      "bytes": 1328664,
+      "sha256": "7284094994a0e7230d09734104db736cb98a896c091ca8a5a317d1400c1771b7",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-biber-doppel-bearbeiten.webp",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-bearbeiten.webp",
+      "bytes": 22342,
+      "sha256": "a1ba3ece9d974a0bb4cdfeb6e825b62a3a142bb124fd367ccf69c169995c6fea",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-biber-doppel-bearbeiten.vtt",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-bearbeiten.vtt",
+      "bytes": 2038,
+      "sha256": "ec59a669e02eb3bcae5a995633660d92fa344c9367534345f7e4569af7113ec0",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-biber-doppel-verlegen.mp4",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-verlegen.mp4",
+      "bytes": 1351607,
+      "sha256": "1395cb11b7f666044708dcd233199cb42ceed0ed928c0f6b76967d27b597849f",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-biber-doppel-verlegen.webp",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-verlegen.webp",
+      "bytes": 21298,
+      "sha256": "68c8dbe75001205be37cb6abb14e3ba15e03816a9cec81ee8646421b375f867d",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-biber-doppel-verlegen.vtt",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-verlegen.vtt",
+      "bytes": 1664,
+      "sha256": "d5961ed0994ee926d54e9a27498a4aee0b63e95df9019a5e732fe1f4009971f2",
+      "typ": "untertitel"
+    },
+    {
+      "id": "werkstatt-biber-doppel-kontrolle.mp4",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-kontrolle.mp4",
+      "bytes": 1310214,
+      "sha256": "2332fd22c00da6fe348a846561f5f75386b58ae2222bd2b5fb3b742045f6e224",
+      "typ": "video"
+    },
+    {
+      "id": "werkstatt-biber-doppel-kontrolle.webp",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-kontrolle.webp",
+      "bytes": 22926,
+      "sha256": "073498d47fa6ca2e921cff78dc8c97c02b761b4d21b5a5dfac04de3c9f71c7cf",
+      "typ": "bild"
+    },
+    {
+      "id": "werkstatt-biber-doppel-kontrolle.vtt",
+      "url": "/praxisvideos/v1/werkstatt-biber-doppel-kontrolle.vtt",
+      "bytes": 1775,
+      "sha256": "5a82986d8fc2155e776b708509fa6b45f911a0cf96b1f0dcdb6f185f8a1cab63",
+      "typ": "untertitel"
+    }
+  ]
+}
