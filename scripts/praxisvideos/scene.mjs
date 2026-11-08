@@ -58,7 +58,8 @@ function chooseFault(){
   // Native details.py fault: Blender (x,y,z) becomes Three (x,z,-y).
   const bridge=box([2.22,.065,.17],[0,.53,-1.04],0x879397,model);
   bridge.userData.part_id='f09-starre-ueberbrueckung';remember(bridge);
-  bridge.visible=false;config.rigidBridge=bridge;
+  bridge.visible=false;bridge.userData.frameWhenHidden=true;config.rigidBridge=bridge;
+  for(const o of faultParts)o.userData.frameWhenHidden=true;
  }
  if(['g05','s04','w02','a02'].includes(id)){
   const group=new THREE.Group();extra.add(group);config.fixingCallout=group;
@@ -326,7 +327,7 @@ function framedPoints(){
  const points=[];
  scene.updateMatrixWorld(true);
  const visit=o=>{
-  if(!o.visible)return;
+  if(!o.visible&&!(config.frameFaultBounds&&o.userData.frameWhenHidden))return;
   if(o.geometry){
    const positions=o.geometry.getAttribute('position');
    for(let i=0;i<positions.count;i++)points.push(v().fromBufferAttribute(positions,i).applyMatrix4(o.matrixWorld));
@@ -366,6 +367,9 @@ function fitAnimatedFrame(){
  camera.updateMatrixWorld(true);config.framing={adjusted:true,before,after:projection(points)};
 }
 function pose(index,t){
+ // Reserve the same geometry bounds while fault parts are revealed/removed.
+ // Visibility changes must not make the camera jump between repair states.
+ config.frameFaultBounds=config.detailId==='f09'&&index===6;
  if(config.typ==='handgriff')craftFrame(index,t);
  else{
   reset();
