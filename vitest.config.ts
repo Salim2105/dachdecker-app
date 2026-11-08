@@ -12,7 +12,7 @@ export default defineConfig({
     // diesen Ausschluss läuft jeder Test doppelt — einmal hier, einmal in der
     // Kopie, die auf einem anderen Stand sein kann. Eine grüne Gesamtzahl sagt
     // dann nichts mehr darüber aus, ob DIESER Stand grün ist.
-    exclude: ["**/node_modules/**", "**/dist/**", "**/.next/**", "**/.claude/worktrees/**"],
+    exclude: ["**/node_modules/**", "**/dist/**", "**/.next/**", "**/.praxisvideo-production/**", "**/.claude/worktrees/**"],
     setupFiles: ["./vitest.setup.ts"],
     environmentOptions: { jsdom: { url: "http://localhost:3200" } },
   },

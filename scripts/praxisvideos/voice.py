@@ -21,20 +21,22 @@ import textwrap
 import time
 import wave
 
+ROOT = Path(__file__).resolve().parents[2]
+BUILD = Path(os.environ.get("PRAXISVIDEO_BUILD", ROOT / ".praxisvideo-production")).resolve()
+
 for key in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS", "NUMEXPR_NUM_THREADS"):
     os.environ[key] = "2"
 os.environ.setdefault("LRU_CACHE_CAPACITY", "1")
 os.environ.setdefault("ONEDNN_PRIMITIVE_CACHE_CAPACITY", "1")
 os.environ.setdefault("MALLOC_ARENA_MAX", "2")
-os.environ.setdefault("NUMBA_CACHE_DIR", "/tmp/dach-video-numba-cache")
-os.environ.setdefault("MPLCONFIGDIR", "/tmp/dach-video-matplotlib")
-os.environ.setdefault("HF_HOME", "/tmp/dach-video-huggingface")
-os.environ.setdefault("TTS_HOME", "/tmp/dach-video-tts")
-os.environ.setdefault("XDG_CACHE_HOME", "/tmp/dach-video-cache")
+os.environ.setdefault("NUMBA_CACHE_DIR", str(BUILD / "numba-cache"))
+os.environ.setdefault("MPLCONFIGDIR", str(BUILD / "matplotlib"))
+os.environ.setdefault("HF_HOME", str(BUILD / "huggingface"))
+os.environ.setdefault("TTS_HOME", str(BUILD / "tts-cache"))
+os.environ.setdefault("XDG_CACHE_HOME", str(BUILD / "cache"))
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
-ROOT = Path(__file__).resolve().parents[2]
 MODEL_SHA256 = "665f718c558693f5bd0747db19f4b5b4ce81b8903e48b7a51dd5f634475d7d6b"
 MODEL_ID = "tts_models/de/thorsten/vits"
 VOICE_VERSION = "voice-v2-measured-sentences"
@@ -104,15 +106,15 @@ def write_vtt(cues: list[dict], target: Path) -> None:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--content", type=Path, default=ROOT / "content/praxisvideos-inhalte.json")
-    p.add_argument("--model-dir", type=Path, default=Path("/tmp/dach-video-model/tts_models--de--thorsten--vits"))
-    p.add_argument("--audio-dir", type=Path, default=Path("/tmp/dach-video-audio"))
+    p.add_argument("--model-dir", type=Path, default=BUILD / "model/tts_models--de--thorsten--vits")
+    p.add_argument("--audio-dir", type=Path, default=BUILD / "audio")
     p.add_argument("--vtt-dir", type=Path, default=ROOT / "public/praxisvideos/v1")
     p.add_argument("--ids", nargs="*")
     p.add_argument("--first", help="Produce this context first, then the rest of the selected catalog")
     p.add_argument("--force", action="store_true")
     args = p.parse_args()
     data = json.loads(args.content.read_text(encoding="utf-8"))
-    selected = args.ids or [v["id"] for v in data["videos"]]
+    selected = args.ids or [v["id"] for v in sorted(data["videos"], key=lambda v: v["typ"] != "handgriff")]
     lookup = {v["id"]: v for v in data["videos"]}
     if set(selected) - lookup.keys():
         raise SystemExit(f"Unknown video IDs: {set(selected) - lookup.keys()}")

@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import wave
 
-from voice import MODEL_SHA256, VOICE_VERSION, timestamp
+from voice import BUILD, MODEL_SHA256, VOICE_VERSION, timestamp
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -24,7 +24,7 @@ def sha256(path: Path) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--allow-partial', action='store_true')
-    parser.add_argument('--audio-dir', type=Path, default=Path('/tmp/dach-video-audio'))
+    parser.add_argument('--audio-dir', type=Path, default=BUILD / 'audio')
     args = parser.parse_args()
     catalog = json.loads((ROOT / 'content/praxisvideos-inhalte.json').read_text())['videos']
     missing, errors, valid = [], [], []

@@ -11,9 +11,10 @@ import subprocess
 import time
 
 ROOT = Path(__file__).resolve().parents[2]
-AUDIO = Path('/tmp/dach-video-audio')
-LOG = Path('/tmp/dach-video-voice-batch.log')
-WORKER = '/tmp/dach-video-voice-env/bin/python'
+BUILD = Path(os.environ.get('PRAXISVIDEO_BUILD', ROOT / '.praxisvideo-production')).resolve()
+AUDIO = BUILD / 'audio'
+LOG = BUILD / 'voice-batch.log'
+WORKER = str(BUILD / 'voice-env/bin/python')
 MAX_RSS_KIB = 6 * 1024 * 1024
 STALL_SECONDS = 600
 

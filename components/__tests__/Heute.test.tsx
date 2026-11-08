@@ -27,7 +27,7 @@ function seed(task: ReviewTask = basic, filter: ReviewFilter = "alles"): ReviewS
   return s;
 }
 function stored(filter: ReviewFilter = "alles") { return parseReviewSession(localStorage.getItem(reviewSessionKey(filter)))!; }
-beforeEach(() => { localStorage.clear(); lernzeitStore.set(15); vi.clearAllMocks(); });
+beforeEach(() => { localStorage.clear(); window.history.replaceState(null, "", "/heute"); lernzeitStore.set(15); vi.clearAllMocks(); });
 afterEach(cleanup);
 
 describe("Gemeinsame Tagesrunde", () => {

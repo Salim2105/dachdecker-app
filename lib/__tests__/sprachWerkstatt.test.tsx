@@ -105,7 +105,7 @@ describe("Sprachwerkstatt: unterbrechen und fortsetzen",()=>{
     expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe("/sprache/englisch#sicherheit");
     expect(cancel).toHaveBeenCalled();
     act(()=>{window.history.replaceState(null,"","/sprache/englisch");window.dispatchEvent(new PopStateEvent("popstate"));});
-    expect(screen.getByRole("heading",{level:1}).textContent).toBe("Baustellenenglisch. Schritt für Schritt.");
+    expect(screen.getByRole("heading",{level:1}).textContent).toBe("Baustellenenglisch");
   });
   it("stellt eine konkrete Einheit, Auswahl und eigenen Text nach erneutem Öffnen wieder her",()=>{
     window.history.replaceState(null,"","/sprache/deutsch#auftrag");

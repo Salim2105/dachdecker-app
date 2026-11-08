@@ -58,3 +58,5 @@ certs/
 # Zwischenstände der reproduzierbaren Blender-Produktion
 /scripts/dach3d/__pycache__/
 /.dach3d-build-state/
+/scripts/praxisvideos/__pycache__/
+/.praxisvideo-production/

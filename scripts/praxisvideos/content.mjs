@@ -8,9 +8,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 async function authored(file) {
   const source = await readFile(resolve(root, file), "utf8");
   const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 } }).outputText;
-  const module = { exports: {} };
-  new Function("module", "exports", "require", compiled)(module, module.exports, createRequire(resolve(root, file)));
-  return module.exports;
+  const authored = { exports: {} };
+  new Function("module", "exports", "require", compiled)(authored, authored.exports, createRequire(resolve(root, file)));
+  return authored.exports;
 }
 const { DACH_DETAILS, DACH_MODELLE } = await authored("lib/dach3dInhalte.ts");
 const { WERKSTATT_PFADE } = await authored("lib/werkstattInhalte.ts");
