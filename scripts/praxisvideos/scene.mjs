@@ -48,7 +48,7 @@ function chooseFault(){
  if(['s02','f01'].includes(id))gapParts=parts.filter(o=>id==='s02'?o.userData.part_id===id+'-zusatzebene':o.userData.layer==='deckung');
  else if(id==='f04'){
   const blocker=box([.42,.16,.035],[0,.64,-1.69],0x77858a,model);blocker.userData.part_id='f04-fehler';blocker.userData.montage_step=3;
-  remember(blocker);parts.push(blocker);blocker.userData.addedFault=true;faultParts=[blocker];
+  remember(blocker);parts.push(blocker);blocker.userData.addedFault=true;blocker.userData.frameWhenHidden=true;faultParts=[blocker];
  }else{
   faultParts=parts.filter(o=>o.userData.part_id===id+'-'+suffixes[id]);
   if(['s01','s04','s05','w01','w02','w04','g02','a01','a02','a03'].includes(id))faultParts=faultParts.slice(0,1);
@@ -369,7 +369,7 @@ function fitAnimatedFrame(){
 function pose(index,t){
  // Reserve the same geometry bounds while fault parts are revealed/removed.
  // Visibility changes must not make the camera jump between repair states.
- config.frameFaultBounds=config.detailId==='f09'&&index===6;
+ config.frameFaultBounds=index===6;
  if(config.typ==='handgriff')craftFrame(index,t);
  else{
   reset();
