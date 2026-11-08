@@ -9,6 +9,7 @@ import { getDachDetail } from "@/lib/dach3dInhalte";
 import { dachDeckungsWunsch, dachMedienRoute, dachRoutenZiel, lernDachVerweise, werkstattDachMedium } from "@/lib/dach3dVerknuepfungen";
 import { getDachPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { ladeKompetenzNachweise } from "@/lib/kompetenzNachweise";
+import { lernFortsetzung } from "@/lib/lernFortsetzung";
 
 const videoMedien = vi.hoisted(() => ({ verfuegbar: false }));
 vi.mock("@/lib/praxisVideoMedien", () => ({
@@ -36,6 +37,20 @@ function unabhaengig(detailId = "s03") {
 }
 
 describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
+  it("setzt einen direkt geöffneten Biber-Lernschritt auf der Startseite mit Deckung und Position fort", () => {
+    render(<DachErkunden form="steildach" detailId="s03" deckung="biber-doppel" />);
+    expect(lernFortsetzung()).toMatchObject({ art: "fortsetzen", href: "/projekte?deckung=biber-doppel#dach-steildach-s03" });
+    fireEvent.click(screen.getByRole("button", { name: "3. Montage" }));
+    expect(lernFortsetzung().schritt).toContain("Montage · Schritt 1");
+    fireEvent.change(screen.getByLabelText("Deckungsart"), { target: { value: "falzziegel" } });
+    expect(lernFortsetzung().href).toBe("/projekte?deckung=falzziegel#dach-steildach-s03");
+  });
+  it("ersetzt beim Öffnen der Dachübersicht kein anderes begonnenes Lernziel", () => {
+    const vorher = "/lernen/lf07#lf07-l01";
+    appStorage.setItem("lernwerkstatt-zuletzt-route", vorher);
+    render(<DachErkunden form="steildach" />);
+    expect(appStorage.getItem("lernwerkstatt-zuletzt-route")).toBe(vorher);
+  });
   it("zeigt den neuen Einstieg unter Baustellenprojekten und löst nur passende Dachlinks auf", () => {
     expect(projektAnsicht("#dach-walmdach-w01", "?ansicht=uebersicht", null)).toBe("dach-walmdach-w01");
     expect(dachRoutenZiel("dach-walmdach-s04")).toBeNull();

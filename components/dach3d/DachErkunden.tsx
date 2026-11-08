@@ -35,6 +35,12 @@ const schichten = [{ id: "deckung", label: "Deckung / Abdichtung" }, { id: "latt
 const deckungTitel: Record<DachDeckung, string> = { falzziegel: "Falzziegel", "biber-doppel": "Biber-Doppeldeckung", warmdach: "Warmdach" };
 const dateiGroesse = (bytes: number) => `${(bytes / 1024 / 1024).toLocaleString("de-DE", { maximumFractionDigits: 1 })} MB`;
 const route = (form: DachForm, detailId?: string | null, deckung?: DachDeckung) => `/projekte${deckung ? `?deckung=${deckung}` : ""}#dach-${form}${detailId ? `-${detailId}` : ""}`;
+function merkeDachFortsetzung(stand: DachErkundungStand) {
+  const position = stand.jeDach[stand.form];
+  if (!position.detailId) return;
+  appStorage.setItem("lernwerkstatt-zuletzt-route", route(stand.form, position.detailId, position.deckung));
+  appStorage.setItem("bauprojekte-auswahl", `dach-${stand.form}-${position.detailId}`);
+}
 
 export function DachErkunden({ form, detailId, deckung }: { form?: DachForm; detailId?: string; deckung?: DachDeckung }) {
   return useSyncExternalStore(subscribe, ready, notReady) ? <DachAufGeraet form={form} detailId={detailId} deckung={deckung} /> : <p>Dein 3D-Dach wird geöffnet …</p>;
@@ -67,12 +73,13 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
   const routeKey = `${routeForm ?? ""}:${routeDetail ?? ""}:${routeDeckung ?? ""}`;
   const angewendetesZiel = useRef(routeKey);
   const letzteExposition = useRef("");
+  const einstiegGemerkt = useRef(false);
   const sperre = useBearbeitungsSperre("dachdecker-dach3d-bearbeitung");
   const editierbar = (sperre.status === "frei" || sperre.status === "nicht-verfuegbar") && !navigationBusy;
   const speichern = useCallback((neu: DachErkundungStand) => {
     if (!editierbar) return false;
     aktuell.current = neu; setStand(neu);
-    try { speichereDachStand(neu); syncDachNachweise(neu); setFehler(""); return true; }
+    try { speichereDachStand(neu); syncDachNachweise(neu); merkeDachFortsetzung(neu); setFehler(""); return true; }
     catch (e) { setFehler(fail(e)); return false; }
   }, [editierbar]);
   const patch = (wert: Partial<DachErkundungStand>, basis = aktuell.current!) => ({ ...basis, ...wert, revision: basis.revision + 1, aktualisiertAm: Math.max(Date.now(), basis.aktualisiertAm) });
@@ -96,7 +103,12 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
 
   useEffect(() => {
     if (!editierbar || !aktuell.current) return;
-    try { speichereDachStand(aktuell.current); syncDachNachweise(aktuell.current); }
+    try {
+      speichereDachStand(aktuell.current); syncDachNachweise(aktuell.current);
+      // Remember a direct learning link once. Releasing a failed navigation's
+      // lock must not replace its restored pointer or clear its error message.
+      if (!einstiegGemerkt.current) { merkeDachFortsetzung(aktuell.current); einstiegGemerkt.current = true; }
+    }
     catch (e) { queueMicrotask(() => setFehler(fail(e))); }
   }, [anfang, editierbar]);
   useEffect(() => {
