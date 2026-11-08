@@ -251,9 +251,11 @@ function setupCraft(){
   // Four exercise tiles: A/B in the lower course, then C/D above.
   for(const [i,n] of [4,5,9,10].entries()){
    const ob=craft.animated[n];ob.userData.exercise=i;
-   label('ABCD'[i],ob.position.clone().add(v(0,.15,0)),'#173e3a',.22,ob);
-   // Labels follow their actual tile, including its loose starting position.
-   ob.children.at(-1).position.set(0,.24,0);
+   const marker=label('ABCD'[i],ob.position.clone().add(v(0,.15,0)),'#173e3a',.22,ob);
+   // Raise the upper Biber row above A/B; short course spacing would otherwise
+   // hide C behind B. A leader keeps the marker attached to its actual tile.
+   marker.position.set(0,biber&&i>=2?.48:.24,0);
+   if(biber&&i>=2)line(v(0,.055,0),v(0,.38,0),0x245958,.004,ob);
   }
   craft.ruler=box([1.25,.012,.045],[0,.11,.6],0xeadbb6);for(let i=0;i<25;i++)box([.003,.014,i%5===0?.035:.02],[-.6+i*.05,.12,.6],0x605744);
   craft.inspect=ring(v(0,.22,0),colors.green,.12);
