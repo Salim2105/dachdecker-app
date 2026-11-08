@@ -346,9 +346,10 @@ function projection(points){
  for(const p of a){const x=(p.x+1)*W/2,y=(1-p.y)*H/2;b.left=Math.min(b.left,x);b.right=Math.max(b.right,x);b.top=Math.min(b.top,y);b.bottom=Math.max(b.bottom,y)}return b;
 }
 function fitAnimatedFrame(){
- const points=framedPoints(),before=projection(points),safe={left:24,right:1256,top:120,bottom:616};
+ const points=framedPoints(),before=projection(points);
  config.framing={adjusted:false,before,after:before};
- if(before.left>=safe.left&&before.right<=safe.right&&before.top>=safe.top&&before.bottom<=safe.bottom)return;
+ // Always solve the same camera fit. Switching abruptly at a safe-area
+ // threshold would introduce a visible jump during an otherwise smooth pose.
  // Solve perspective bounds in the camera's existing orientation. This includes
  // every animated layer, loose piece, repair and workshop tile, excluding floor.
  const local=points.map(p=>p.clone().applyMatrix4(camera.matrixWorldInverse));
