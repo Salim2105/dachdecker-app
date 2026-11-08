@@ -6,9 +6,9 @@
  */
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),crypto=require('node:crypto');
 const {spawn,execFileSync}=require('node:child_process');
-const ROOT=path.resolve(__dirname,'../..'),CACHE=process.env.PRAXISVIDEO_CACHE||'/tmp/dach-video-render';
-const AUDIO=process.env.PRAXISVIDEO_AUDIO||'/tmp/dach-video-audio',OUT=path.join(ROOT,'public/praxisvideos/v1');
-const FRAMES=Number(process.env.PRAXISVIDEO_FRAMES||48),FPS=24,REVISION='three-geometry-015-r1';
+const ROOT=path.resolve(__dirname,'../..'),BUILD=process.env.PRAXISVIDEO_BUILD||path.join(ROOT,'.praxisvideo-production'),CACHE=process.env.PRAXISVIDEO_CACHE||path.join(BUILD,'render');
+const AUDIO=process.env.PRAXISVIDEO_AUDIO||path.join(BUILD,'audio'),OUT=path.join(ROOT,'public/praxisvideos/v1');
+const FRAMES=Number(process.env.PRAXISVIDEO_FRAMES||48),REVISION='three-geometry-015-r1';
 const args=process.argv.slice(2),all=args.includes('--all'),selected=args.find(a=>a.startsWith('--id='))?.slice(5)||'dach-steildach-falzziegel-s03';
 let browser,server,page,stopping=false;
 const log=(event,data={})=>console.log(JSON.stringify({time:new Date().toISOString(),event,...data}));
@@ -17,15 +17,22 @@ const json=file=>JSON.parse(fs.readFileSync(file,'utf8'));
 const atomic=(file,data)=>{fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file+'.tmp',typeof data==='string'?data:JSON.stringify(data,null,2)+'\n');fs.renameSync(file+'.tmp',file)};
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 const exists=file=>fs.existsSync(file);
+function alive(pid){
+ if(!Number.isSafeInteger(pid)||pid<=0)return false;
+ try{process.kill(pid,0);if(process.platform==='linux'&&fs.readFileSync('/proc/'+pid+'/stat','utf8').split(') ')[1]?.startsWith('Z'))return false;return true}catch(e){if(e.code==='EPERM')return true;return false}
+}
 // Cache identity follows the actual renderer sources, not a manually bumped
 // revision. Interrupted runs can never silently reuse obsolete animation.
 const SCENE_SHA=sha(path.join(__dirname,'scene.mjs'));
 const PIPELINE_SHA=crypto.createHash('sha256').update(sha(__filename)+SCENE_SHA+sha(path.join(__dirname,'scene.html'))).digest('hex');
+const VOICE_SOURCE=fs.readFileSync(path.join(__dirname,'voice.py'),'utf8');
+const VOICE_VERSION=VOICE_SOURCE.match(/^VOICE_VERSION = "([^"]+)"/m)?.[1];
+const VOICE_MODEL_SHA=VOICE_SOURCE.match(/^MODEL_SHA256 = "([^"]+)"/m)?.[1];
 const quote=s=>"'"+s.replaceAll("'","'\\''")+"'";
 async function command(bin,argv,logfile){
  return await new Promise((resolve,reject)=>{
   const fd=fs.openSync(logfile,'a');const p=spawn(bin,argv,{cwd:ROOT,stdio:['ignore',fd,fd],env:{...process.env,OMP_NUM_THREADS:'2',OPENBLAS_NUM_THREADS:'2'}});
-  p.on('error',e=>{fs.closeSync(fd);reject(e)});p.on('exit',code=>{fs.closeSync(fd);code===0?resolve():reject(new Error(bin+' exit '+code+'; '+logfile))});
+  p.on('error',e=>{fs.closeSync(fd);reject(e)});p.on('exit',code=>{fs.closeSync(fd);if(code===0)resolve();else reject(new Error(bin+' exit '+code+'; '+logfile))});
  });
 }
 function modelInfo(clip,overview=false){
@@ -35,7 +42,7 @@ function modelInfo(clip,overview=false){
 }
 async function init(){
  fs.mkdirSync(CACHE,{recursive:true});fs.mkdirSync(OUT,{recursive:true});
- const {chromium}=require(process.env.PLAYWRIGHT_PATH||'/tmp/dachdecker-browser/node_modules/playwright');
+ const {chromium}=require(process.env.PLAYWRIGHT_PATH||path.join(BUILD,'browser/node_modules/playwright'));
  server=http.createServer((q,r)=>{
   const url=decodeURIComponent(q.url.split('?')[0]);const file=path.resolve(ROOT,'.'+(url==='/'?'/scripts/praxisvideos/scene.html':url));
   if(!file.startsWith(ROOT+path.sep)){r.writeHead(403);r.end();return}
@@ -52,6 +59,7 @@ async function renderScene(clip,index){
  for(let i=0;i<FRAMES;i++){
   const file=path.join(dir,`${String(i).padStart(4,'0')}.jpg`);if(exists(file))continue;
   const data=await page.evaluate(({index,t})=>window.frame(index,t),{index,t:i/(FRAMES-1)});fs.writeFileSync(file,Buffer.from(data,'base64'));
+  if((i+1)%12===0)log('frames-progress',{id:clip.id,chapter:index,frame:i+1,total:FRAMES});
  }
  atomic(receipt,{revision:REVISION,sceneSha:SCENE_SHA,frames:FRAMES,width:1280,height:720,animation:'physical-geometry',chapter:index,model:info.model||'procedural-school-workpiece',modelSha:info.model?sha(path.join(ROOT,info.model)):null,geometry,seconds:(Date.now()-started)/1000});
  log('scene-ready',{id:clip.id,chapter:index,seconds:(Date.now()-started)/1000,cache:info.cacheKey});return dir;
@@ -59,11 +67,23 @@ async function renderScene(clip,index){
 function wrap(text,max=62){const words=text.split(/\s+/);let lines=[''];for(const word of words){const last=lines.length-1;if(lines[last].length+word.length+1>max)lines.push(word);else lines[last]+=(lines[last]?' ':'')+word}return lines.join('\n')}
 async function encode(clip,dirs){
  const receiptPath=path.join(AUDIO,clip.id,'receipt.json'),audio=path.join(AUDIO,clip.id,'audio.wav');
- while(!exists(receiptPath)||!exists(audio)){if(stopping)throw new Error('Interrupted waiting for audio');log('waiting-audio',{id:clip.id});await wait(15000)}
- const measured=json(receiptPath);if(!measured.kapitel||measured.kapitel.length!==7)throw new Error('Expected seven measured chapters '+receiptPath);
+ const voiceSignature=crypto.createHash('sha256').update(VOICE_MODEL_SHA+clip.transkript+VOICE_VERSION).digest('hex');
+ let measured,audioSha;
+ while(true){
+  if(exists(receiptPath)&&exists(audio)){
+   measured=json(receiptPath);audioSha=sha(audio);
+   if(measured.signature===voiceSignature&&measured.audioSha256===audioSha)break;
+  }
+  if(stopping)throw new Error('Interrupted waiting for audio');log('waiting-audio',{id:clip.id});await wait(15000);
+ }
+ if(!measured.kapitel||measured.kapitel.length!==7)throw new Error('Expected seven measured chapters '+receiptPath);
  const duration=Number(measured.dauer);if(!(duration>=45&&duration<=90.01))throw new Error('Measured duration outside 45–90s: '+clip.id+' '+duration);
  const work=path.join(CACHE,'clips',clip.id);fs.mkdirSync(work,{recursive:true});
- const audioSha=sha(audio),sourceSha=crypto.createHash('sha256').update(JSON.stringify({revision:REVISION,pipelineSha:PIPELINE_SHA,sceneSha:SCENE_SHA,visuals:dirs.map(dir=>sha(path.join(dir,'receipt.json'))),clip,frames:FRAMES,audioSha,chapters:measured.kapitel})).digest('hex');
+ // Voice production writes measured times back to content during rendering.
+ // Identity follows authored content; those timing-only writes do not evict a
+ // correct completed clip when a batch resumes.
+ const authored={...clip};delete authored.dauer;authored.kapitel=clip.kapitel.map(chapter=>Object.fromEntries(Object.entries(chapter).filter(([key])=>key!=='start'&&key!=='ende')));
+ const sourceSha=crypto.createHash('sha256').update(JSON.stringify({revision:REVISION,pipelineSha:PIPELINE_SHA,sceneSha:SCENE_SHA,visuals:dirs.map(dir=>sha(path.join(dir,'receipt.json'))),clip:authored,frames:FRAMES,audioSha,chapters:measured.kapitel})).digest('hex');
  const finalReceipt=path.join(work,'receipt.json'),output=path.join(OUT,clip.id+'.mp4');
  if(exists(finalReceipt)&&exists(output)&&json(finalReceipt).sourceSha===sourceSha&&json(finalReceipt).sha256===sha(output)){log('clip-cached',{id:clip.id});return}
  const files=[];
@@ -101,14 +121,30 @@ async function manifest(){
  }
  atomic(path.join(ROOT,'content/praxisvideos-medien.json'),{version:1,assets});log('manifest-ready',{assets:assets.length});
 }
+async function previews(){
+ const ids=['dach-steildach-falzziegel-s03','dach-steildach-falzziegel-g01','dach-walmdach-falzziegel-w01','dach-flachdach-warmdach-f02','dach-flachdach-warmdach-f09','werkstatt-falzziegel-verlegen','dach-steildach-falzziegel-g05','dach-steildach-falzziegel-s04'];
+ const out=path.join(BUILD,'visual-fix-r2','previews');fs.mkdirSync(out,{recursive:true});
+ const clips=json(path.join(ROOT,'content/praxisvideos-inhalte.json')).videos;
+ await init();
+ for(const id of ids){
+  const clip=clips.find(c=>c.id===id);await page.evaluate(input=>window.loadScene(input),modelInfo(clip));
+  for(const [index,t]of [[3,1],[4,0],[4,.5],[6,0],[6,1]]){
+   const data=await page.evaluate(({index,t})=>window.frame(index,t),{index,t});
+   const file=path.join(out,id+'-'+index+'-'+t+'.jpg');fs.writeFileSync(file,Buffer.from(data,'base64'));
+   log('preview',{id,index,t,file});
+  }
+ }
+}
 async function main(){
  const lock=path.join(CACHE,'render.lock');fs.mkdirSync(CACHE,{recursive:true});
- if(exists(lock)){const pid=Number(fs.readFileSync(lock,'utf8'));try{process.kill(pid,0);throw new Error('Renderer already running PID '+pid)}catch(e){if(e.code!=='ESRCH')throw e}}
+ if(exists(lock)){const pid=Number(fs.readFileSync(lock,'utf8'));if(alive(pid))throw new Error('Renderer already running PID '+pid)}
  fs.writeFileSync(lock,String(process.pid));
  try{
   if(args.includes('--manifest')){await manifest();return}
+  if(args.includes('--preview')){await previews();return}
   const clips=json(path.join(ROOT,'content/praxisvideos-inhalte.json')).videos;
-  const ordered=all?[...clips.filter(c=>c.id===selected),...clips.filter(c=>c.id!==selected)]:clips.filter(c=>c.id===selected);
+  const rest=clips.filter(c=>c.id!==selected);
+  const ordered=all?[...clips.filter(c=>c.id===selected),...rest.filter(c=>c.typ==='handgriff'),...rest.filter(c=>c.typ!=='handgriff')]:clips.filter(c=>c.id===selected);
   if(!ordered.length)throw new Error('Unknown clip '+selected);await init();log('start',{clips:ordered.length,frames:FRAMES,revision:REVISION,pid:process.pid});
   for(const clip of ordered){const dirs=[];for(let i=0;i<7;i++)dirs.push(await renderScene(clip,i));await encode(clip,dirs)}
   if(all){while(json(path.join(ROOT,'content/praxisvideos-inhalte.json')).videos.some(c=>!exists(path.join(OUT,c.id+'.vtt')))){log('waiting-captions');await wait(15000)}await manifest()}

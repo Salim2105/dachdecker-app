@@ -5,7 +5,8 @@ import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.
 import { mergeGeometries } from '/node_modules/three/examples/jsm/utils/BufferGeometryUtils.js';
 
 const W=1280,H=720;
-const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+const inspection=new URLSearchParams(location.search).has('inspect');
+const renderer=inspection?{setSize(){},setPixelRatio(){},setClearColor(){},render(){},domElement:document.createElement('canvas')}:new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
 renderer.setSize(W,H);renderer.setPixelRatio(1);renderer.setClearColor('#e7ece9');
 renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure=1.15;renderer.localClippingEnabled=true;
@@ -22,19 +23,23 @@ const clamp=THREE.MathUtils.clamp;
 const v=(x=0,y=0,z=0)=>new THREE.Vector3(x,y,z);
 const layerHeight={tragwerk:0,luftdichtheit:.22,daemmung:.43,zusatzebene:.66,lattung:.89,deckung:1.11};
 const colors={red:0xde594c,green:0x21a586,blue:0x2d96cc,yellow:0xf5bf52};
-let model,parts=[],water=[],center=v(),extent=3,radius=3,chapter=0,config={},extra=new THREE.Group(),faultParts=[],gapParts=[],floor;
+let model,parts=[],water=[],center=v(),extent=3,radius=3,config={},extra=new THREE.Group(),faultParts=[],gapParts=[],floor;
 scene.add(extra);
 
-function dispose(object){object.traverse(o=>{o.geometry?.dispose();if(o.material){for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()}})}
+function dispose(object){
+ const textures=new Set(),materials=new Set(),geometries=new Set();
+ object.traverse(o=>{if(o.geometry)geometries.add(o.geometry);for(const m of o.material?(Array.isArray(o.material)?o.material:[o.material]):[]){materials.add(m);for(const value of Object.values(m))if(value?.isTexture)textures.add(value)}});
+ for(const item of geometries)item.dispose();for(const item of materials)item.dispose();for(const item of textures)item.dispose();
+}
 function material(color,roughness=.58){return new THREE.MeshStandardMaterial({color,roughness,metalness:.08})}
 function box(size,pos,color,parent=extra){const o=new THREE.Mesh(new THREE.BoxGeometry(...size),material(color));o.position.set(...pos);parent.add(o);return o}
 function line(a,b,color,width=.012,parent=extra){const d=b.clone().sub(a);const o=new THREE.Mesh(new THREE.CylinderGeometry(width,width,d.length(),10),material(color));o.position.copy(a).add(b).multiplyScalar(.5);o.quaternion.setFromUnitVectors(v(0,1,0),d.normalize());parent.add(o);return o}
 function label(text,pos,color='#173e3a',scale=.28,parent=extra){
- const canvas=document.createElement('canvas');canvas.width=512;canvas.height=128;
- const c=canvas.getContext('2d');c.fillStyle='rgba(248,251,248,.94)';c.fillRect(0,0,512,128);
- c.fillStyle=color;c.font='bold 44px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(text,256,64,492);
+ const canvas=document.createElement('canvas');canvas.width=text.length===1?128:512;canvas.height=128;
+ const c=canvas.getContext('2d');c.fillStyle='rgba(248,251,248,.94)';c.fillRect(0,0,canvas.width,128);
+ c.fillStyle=color;c.font=`bold ${text.length===1?96:64}px sans-serif`;c.textAlign='center';c.textBaseline='middle';c.fillText(text,canvas.width/2,64,canvas.width-20);
  const tex=new THREE.CanvasTexture(canvas),o=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,depthTest:false}));
- o.position.copy(pos);o.scale.set(scale*4,scale,1);parent.add(o);return o;
+ o.position.copy(pos);o.scale.set(scale*canvas.width/128,scale,1);parent.add(o);return o;
 }
 function ring(position,color=colors.green,size=.15){const o=new THREE.Mesh(new THREE.TorusGeometry(size,size*.075,8,48),material(color));o.rotation.x=-Math.PI/2;o.position.copy(position);extra.add(o);return o}
 function chooseFault(){
@@ -49,6 +54,20 @@ function chooseFault(){
   if(['s01','s04','s05','w01','w02','w04','g02','a01','a02','a03'].includes(id))faultParts=faultParts.slice(0,1);
   if(id==='a04')faultParts=faultParts.slice(Math.floor(faultParts.length/2),Math.floor(faultParts.length/2)+1);
  }
+ if(id==='f09'){
+  // Native details.py fault: Blender (x,y,z) becomes Three (x,z,-y).
+  const bridge=box([2.22,.065,.17],[0,.53,-1.04],0x879397,model);
+  bridge.userData.part_id='f09-starre-ueberbrueckung';remember(bridge);
+  bridge.visible=false;config.rigidBridge=bridge;
+ }
+ if(['g05','s04','w02','a02'].includes(id)){
+  const group=new THREE.Group();extra.add(group);config.fixingCallout=group;
+  const halo=new THREE.Mesh(new THREE.RingGeometry(extent*.028,extent*.038,48),new THREE.MeshBasicMaterial({color:colors.red,side:THREE.DoubleSide,depthTest:false,depthWrite:false}));
+  group.add(halo);config.fixingHalo=halo;
+  const text=label('BEFESTIGUNG',v(extent*.13,extent*.11,0),'#173e3a',extent*.055,group);text.renderOrder=11;text.material.toneMapped=false;
+  const arrow=line(v(extent*.10,extent*.08,0),v(extent*.028,extent*.022,0),colors.yellow,extent*.003,group);
+  arrow.renderOrder=10;arrow.material.toneMapped=false;arrow.material.depthTest=false;arrow.material.depthWrite=false;config.fixingLabel=text;group.visible=false;
+ }
  if(!faultParts.length&&!gapParts.length)throw new Error('No physical fault part for '+id);
 }
 function remember(o){
@@ -62,6 +81,11 @@ function remember(o){
  if(source.transmission>0){surface.opacity=(source.opacity??1)*(1-source.transmission);surface.transparent=true;surface.depthWrite=false}
  o.material=new THREE.MeshStandardMaterial(surface);
  o.material.side=THREE.DoubleSide;o.userData.originalColor=o.material.color.clone();
+ // The published F02 membrane and insulation share their sloping top faces.
+ // Offset raster depth only: source GLB vertices and teaching dimensions stay exact.
+ if(config.detailId==='f02'&&o.userData.part_id==='f02-abdichtung'){
+  o.material.polygonOffset=true;o.material.polygonOffsetFactor=-2;o.material.polygonOffsetUnits=-2;
+ }
 }
 // GLTFLoader can produce both regular and interleaved attributes from one GLB.
 // BufferGeometryUtils deliberately refuses to merge their incompatible layouts.
@@ -118,6 +142,8 @@ function makeWater(){
  config.waterCurve=curve;config.hasWater=!!model.getObjectByName('Wasser_0');
 }
 function reset(){
+ if(config.rigidBridge)config.rigidBridge.visible=false;
+ if(config.fixingCallout)config.fixingCallout.visible=false;
  for(const o of parts){o.position.copy(o.userData.originalPosition);o.quaternion.copy(o.userData.originalQuaternion);o.scale.copy(o.userData.originalScale);o.visible=!o.userData.addedFault;o.material.color.copy(o.userData.originalColor);o.material.clippingPlanes=[];o.material.clipIntersection=false;}
  water.forEach(o=>o.visible=false);
 }
@@ -143,8 +169,10 @@ function fault(t){
  const repaired=smooth((t-.48)/.34),amount=1-repaired;
  for(const o of faultParts){
   const id=config.detailId;
-  if(o.userData.addedFault){o.visible=amount>.001;o.position.x+=repaired*extent*.65;continue}
-  if(id==='s03'){o.position.y-=.22*amount}
+  if(id==='f09'){
+   o.visible=repaired>.001;o.position.y+=amount*extent*.22;
+  }else if(o.userData.addedFault){o.visible=amount>.001;o.position.x+=repaired*extent*.65;continue}
+  else if(id==='s03'){o.position.y-=.22*amount}
   else if(['s01','s05','w01'].includes(id)){o.position.y+=.21*amount;o.rotation.z+=.08*amount}
   else if(id==='w04'){o.position.x-=.25*amount;o.position.y+=.05*amount}
   else if(id==='f02'){o.position.y+=.16*amount}
@@ -154,6 +182,17 @@ function fault(t){
    o.position.x+=amount*extent*.64;o.position.y+=amount*extent*.24;
   }
   o.material.color.copy(o.userData.originalColor).lerp(new THREE.Color(t<.48?colors.red:colors.green),.38*amount);
+ }
+ if(config.rigidBridge){
+  const bridge=config.rigidBridge;bridge.visible=amount>.025;
+  bridge.position.set(repaired*extent*.5,.53+repaired*extent*.18,-1.04);
+  bridge.material.color.set(colors.red);
+ }
+ if(config.fixingCallout&&faultParts[0]){
+  config.fixingCallout.visible=true;model.updateMatrixWorld(true);
+  const target=new THREE.Box3().setFromObject(faultParts[0]).getCenter(v());
+  config.fixingCallout.position.copy(target);config.fixingCallout.quaternion.copy(camera.quaternion);
+  config.fixingHalo.material.color.set(t<.48?colors.red:colors.green);
  }
  for(const o of gapParts){
   const sourceCenter=config.detailId==='s02'?.13:.84,width=(config.detailId==='s02'?.18:.08)*amount;
@@ -184,7 +223,7 @@ function setupCraft(){
  box([2.25,.13,1.55],[0,-.18,0],0x8b6b4a);
  for(const x of [-.85,.85])box([.09,.55,1.1],[x,-.5,0],0x687370);
  if(['schnitt','bearbeiten'].includes(slug)){
-  const w=.72,l=1.05,cutZ=.04; // an enlarged actual school workpiece
+  const w=.72,l=1.05; // an enlarged actual school workpiece
   craft.used=polygonTile([[-w/2,-l/2],[.08,-l/2],[-.10,l/2],[-w/2,l/2]],-.04,0xb55c3e);
   craft.rest=polygonTile([[.08,-l/2],[w/2,-l/2],[w/2,l/2],[-.10,l/2]],-.04,0xa44c36);
   craft.start=v(.08,.025,-l/2);craft.end=v(-.10,.025,l/2);
@@ -208,7 +247,13 @@ function setupCraft(){
    const ob=tile(biber,craft.field);ob.position.set((c-1.5)*dx+(biber&&r%2?dx/2:0),.07+r*.025,.34-r*dz);
    ob.userData.target=ob.position.clone();ob.userData.row=r;ob.userData.col=c;craft.animated.push(ob);
   }
-  for(let i=0;i<4;i++){const ob=craft.animated[4+i];label('ABCD'[i],ob.position.clone().add(v(0,.15,0)),'#173e3a',.045,craft.field)}
+  // Four exercise tiles: A/B in the lower course, then C/D above.
+  for(const [i,n] of [4,5,9,10].entries()){
+   const ob=craft.animated[n];ob.userData.exercise=i;
+   label('ABCD'[i],ob.position.clone().add(v(0,.15,0)),'#173e3a',.12,ob);
+   // Labels follow their actual tile, including its loose starting position.
+   ob.children.at(-1).position.set(0,.18,0);
+  }
   craft.ruler=box([1.25,.012,.045],[0,.11,.6],0xeadbb6);for(let i=0;i<25;i++)box([.003,.014,i%5===0?.035:.02],[-.6+i*.05,.12,.6],0x605744);
   craft.inspect=ring(v(0,.22,0),colors.green,.12);
   craft.fasteners=[];for(let i=0;i<3;i++){const n=new THREE.Mesh(new THREE.CylinderGeometry(.012,.012,.1,10),material(0xc4ced0));n.position.set(-.35+i*.35,.13,-.1);extra.add(n);craft.fasteners.push(n);label(String(i+1),n.position.clone().add(v(0,.13,0)),'#173e3a',.035)}
@@ -227,7 +272,7 @@ function craftFrame(index,t){
   if(index===3)craft.mark.position.lerp(craft.start,(1-smooth(t))*.5);
   craft.pencil.visible=!cut&&index===3;craft.pencil.position.copy(craft.start).lerp(craft.end,t).add(v(0,.1,0));
   craft.guide.visible=!cut&&index<5;craft.tool.visible=cut&&index>=3&&index<6;
-  craft.clamps.forEach((o,i)=>{o.visible=cut;o.position.y=.035+(index===3?(1-smooth(t))*.35:0)});
+  craft.clamps.forEach(o=>{o.visible=cut;o.position.y=.035+(index===3?(1-smooth(t))*.35:0)});
   craft.tool.position.copy(craft.start).lerp(craft.end,progress).add(v(.018,.19,0));craft.blade.rotation.x=progress*80;
   craft.rest.position.x=cut&&index>=4?smooth(index===4?(t-.82)*5:1)*.2:0;
   craft.chip.visible=cut&&index>=4;craft.chip.position.copy(craft.start).lerp(craft.end,progress);craft.chip.scale.z=clamp(progress,.001,1)*10;
@@ -241,8 +286,9 @@ function craftFrame(index,t){
   const placing=slug==='verlegen';
   for(let i=0;i<craft.animated.length;i++){
    const o=craft.animated[i],row=o.userData.row,col=o.userData.col;o.position.copy(o.userData.target);o.rotation.set(0,0,0);
-   if(placing&&row>0){
-    let p=index<3?0:index===3?(row===1?smooth((t-col*.1)/.55):0):index===4?(row===2?smooth((t-col*.1)/.55):1):1;
+   if(placing&&o.userData.exercise!==undefined){
+    const exercise=o.userData.exercise,course=exercise<2?1:2,order=exercise%2;
+    const p=index<3?0:index===3?(course===1?smooth((t-order*.18)/.55):0):index===4?(course===2?smooth((t-order*.18)/.55):1):1;
     o.position.x+=(1-p)*(1.1+col*.1);o.position.y+=(1-p)*(.25+row*.05);
    }
   }
@@ -256,7 +302,7 @@ function craftFrame(index,t){
 }
 
 window.loadScene=async input=>{
- config={...input};chapter=0;parts=[];water=[];faultParts=[];gapParts=[];craft={};
+ config={...input};parts=[];water=[];faultParts=[];gapParts=[];craft={};
  if(model){scene.remove(model);dispose(model)}scene.remove(extra);dispose(extra);extra=new THREE.Group();scene.add(extra);
  if(floor){scene.remove(floor);dispose(floor)}
  if(input.typ==='handgriff'){model=null;setupCraft()}
@@ -276,7 +322,49 @@ window.loadScene=async input=>{
  floor=new THREE.Mesh(new THREE.PlaneGeometry(200,200),material(0xd4ddd6));floor.rotation.x=-Math.PI/2;floor.position.y=y;scene.add(floor);
  cameraAt(.5,0);renderer.render(scene,camera);return {parts:parts.length,extent,water:!!config.hasWater,faultParts:faultParts.map(o=>o.userData.part_id),gapParts:gapParts.map(o=>o.userData.part_id)};
 };
-window.frame=(index,t)=>{
+function framedPoints(){
+ const points=[];
+ scene.updateMatrixWorld(true);
+ const visit=o=>{
+  if(!o.visible)return;
+  if(o.geometry){
+   const positions=o.geometry.getAttribute('position');
+   for(let i=0;i<positions.count;i++)points.push(v().fromBufferAttribute(positions,i).applyMatrix4(o.matrixWorld));
+  }else if(o.isSprite){
+   const p=o.getWorldPosition(v()),s=o.getWorldScale(v());
+   const right=v(1,0,0).applyQuaternion(camera.quaternion),up=v(0,1,0).applyQuaternion(camera.quaternion);
+   for(const x of [-.5,.5])for(const y of [-.5,.5])points.push(p.clone().addScaledVector(right,x*s.x).addScaledVector(up,y*s.y));
+  }
+  for(const child of o.children)visit(child);
+ };
+ if(model)visit(model);visit(extra);return points;
+}
+function projection(points){
+ camera.updateMatrixWorld(true);
+ const a=points.map(p=>p.clone().project(camera));
+ const b={left:Infinity,right:-Infinity,top:Infinity,bottom:-Infinity};
+ for(const p of a){const x=(p.x+1)*W/2,y=(1-p.y)*H/2;b.left=Math.min(b.left,x);b.right=Math.max(b.right,x);b.top=Math.min(b.top,y);b.bottom=Math.max(b.bottom,y)}return b;
+}
+function fitAnimatedFrame(){
+ const points=framedPoints(),before=projection(points),safe={left:24,right:1256,top:120,bottom:616};
+ config.framing={adjusted:false,before,after:before};
+ if(before.left>=safe.left&&before.right<=safe.right&&before.top>=safe.top&&before.bottom<=safe.bottom)return;
+ // Solve perspective bounds in the camera's existing orientation. This includes
+ // every animated layer, loose piece, repair and workshop tile, excluding floor.
+ const local=points.map(p=>p.clone().applyMatrix4(camera.matrixWorldInverse));
+ const bounds=new THREE.Box3().setFromPoints(local),min=axis=>bounds.min[axis],max=axis=>bounds.max[axis];
+ const tanY=Math.tan(THREE.MathUtils.degToRad(camera.fov/2)),tanX=tanY*camera.aspect;
+ const shiftX=(min('x')+max('x'))/2,depth=-(min('z')+max('z'))/2;
+ const shiftY=(min('y')+max('y'))/2-(-.0222222222222222)*depth*tanY;
+ let retreat=0;
+ for(const p of local){
+  retreat=Math.max(retreat,Math.abs(p.x-shiftX)/(tanX*.9625)+p.z);
+  const y=p.y-shiftY;retreat=Math.max(retreat,y/(tanY*(y>=0?.6666666666666666:-.7111111111111111))+p.z);
+ }
+ camera.position.add(v(shiftX,shiftY,Math.max(0,retreat)+extent*.006).applyQuaternion(camera.quaternion));
+ camera.updateMatrixWorld(true);config.framing={adjusted:true,before,after:projection(points)};
+}
+function pose(index,t){
  if(config.typ==='handgriff')craftFrame(index,t);
  else{
   reset();
@@ -292,6 +380,9 @@ window.frame=(index,t)=>{
    cameraAt(t,explode);
   }
  }
- renderer.render(scene,camera);return renderer.domElement.toDataURL('image/jpeg',.92).slice(23);
-};
+ fitAnimatedFrame();
+ if(config.fixingCallout?.visible)config.fixingCallout.quaternion.copy(camera.quaternion);
+}
+window.frame=(index,t)=>{pose(index,t);renderer.render(scene,camera);return renderer.domElement.toDataURL('image/jpeg',.92).slice(23)};
+window.inspectFrame=(index,t)=>{pose(index,t);return config.framing};
 window.ready=true;
