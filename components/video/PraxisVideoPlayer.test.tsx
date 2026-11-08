@@ -47,6 +47,13 @@ const film = () => screen.getByLabelText(clip.titel) as HTMLVideoElement;
 function metadata(video = film()) { Object.defineProperty(video, "duration", { value: clip.dauer, configurable: true }); fireEvent.loadedMetadata(video); }
 
 describe("Praxisvideo mit unabhängigen Ton- und Untertitelspuren", () => {
+  it("zeigt auch bei einem Fehler des source-Elements den Hinweis und erhält den Sprechertext", () => {
+    render(<PraxisVideoPlayer video={clip} />);
+    fireEvent(film().querySelector("source")!, new Event("error", { bubbles: false }));
+    expect(screen.getByRole("status").textContent).toContain("Der Film kann gerade nicht geladen werden.");
+    fireEvent.click(screen.getByText("Kapitel und vollständigen Text öffnen"));
+    expect(screen.getByText(clip.transkript)).toBeDefined();
+  });
   it("verwendet native Bedienelemente, lädt erst auf Wunsch und startet keine Wiedergabe selbst", () => {
     const onPlay = vi.fn(); render(<PraxisVideoPlayer video={clip} onPlay={onPlay} />);
     const video = film();

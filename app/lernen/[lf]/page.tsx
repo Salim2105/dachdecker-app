@@ -36,8 +36,8 @@ export default async function LernfeldDetailPage({
         >
           {lernfeld.nr}
         </span>
-        <div>
-          <h1 className="text-xl font-medium leading-tight">{lernfeld.titel}</h1>
+        <div className="min-w-0 flex-1">
+          <h1 className="text-xl font-medium leading-tight break-words">{lernfeld.titel}</h1>
           <p className="mt-1 text-xs" style={{ color: "var(--text-muted)" }}>
             {lernfeld.lehrjahr}. Lehrjahr{lernfeld.stunden > 0 ? ` · ${lernfeld.stunden} Std.` : ""}
           </p>

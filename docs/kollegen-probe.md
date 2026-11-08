@@ -14,6 +14,14 @@ Im Projektordner `bash scripts/probe-teilen.sh` ausführen. Das Skript baut die 
 
 Safari ist für den Einstieg ausreichend. Eine App-Store-Installation oder ein Entwicklerprofil ist nicht nötig. Die Lernstände des Kollegen werden nicht automatisch an Salim übertragen. Für Rückmeldungen kann er Nachrichten oder Bildschirmfotos schicken; der Beobachtungsbogen liegt im Übungsraum.
 
+## Lernvideos ausprobieren
+
+Unter **Baustellenprojekte → Handgriffe lernen** eine Einheit zu Anzeichnen, Bearbeiten, Verlegen oder Kontrollieren öffnen. Im 3D-Lernstudio gibt es außerdem zum gewählten Dachdetail die Ansicht **Lernvideo**. Die Wiedergabe beginnt erst mit Play.
+
+**Sprecher** und **Untertitel** lassen sich unabhängig ein- und ausschalten. Die App merkt sich beide Einstellungen und die Abspielposition auf diesem Gerät. Die Kapitel und der vollständige Sprechertext lassen sich unter dem Film öffnen.
+
+Für unterwegs beim gewünschten Film **Video offline speichern** wählen und den Abschluss abwarten. Die großen Filme werden nicht automatisch mit der Oberfläche heruntergeladen. Ein gespeichertes Video lässt sich wieder löschen; Antworten und Notizen bleiben erhalten. Öffentliche Videodateien gehören nicht zur Lernstand-Sicherung und können bei Bedarf erneut heruntergeladen werden.
+
 ## Einmal vom bisherigen Versionslink wechseln
 
 Die bisher verschickte Adresse mit `95f6d713.` am Anfang bleibt eine eigene Version. Sie hat einen anderen Gerätespeicher als die dauerhafte Adresse. Deshalb auf dem iPhone einmal unter der **bisherigen Adresse** „Fortschritt & Sicherungen“ öffnen und eine vollständige Sicherung herunterladen. Dann die **dauerhafte Adresse** in Safari öffnen und diese Sicherung dort importieren. Anschließend das neue Symbol über „Zum Home-Bildschirm“ hinzufügen. Die gespeicherten Daten unter der bisherigen Adresse bleiben erhalten.

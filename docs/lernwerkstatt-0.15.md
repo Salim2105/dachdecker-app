@@ -1,6 +1,6 @@
 # Lernwerkstatt · Update 0.15
 
-**Stand: 8. November 2026 · Release in Validierung.** Die Oberfläche und alle 112 Praxisvideos sind hergestellt; die abschließenden Gesamt- und Browserprüfungen werden noch erfasst. Diese Seite unterscheidet vorhandene Produktionsnachweise von offenen Abnahmen. Die dauerhafte Test-Website ist für dieses Update noch nicht veröffentlicht.
+**Stand: 8. November 2026 · Update 0.15.0 geprüft und vorbereitet.** Die Oberfläche und alle 112 Praxisvideos sind hergestellt. Produktionsbuild, statischer Export, Inhalts- und Medienprüfungen sowie die beschriebenen Browser- und Offlineprüfungen bestehen. Die dauerhafte Test-Website ist für dieses Update noch nicht veröffentlicht; der Upload erfolgt über Salims Hosting-Anmeldung.
 
 ## Klarer anfangen und genau weiterlernen
 
@@ -90,12 +90,12 @@ Die folgenden Einträge beziehen sich auf 0.15. Offene Zeilen sind keine bestät
 |---|---|
 | Vollständigkeit der Videoproduktion | 112 Videokontexte und alle 336 MP4-/VTT-/WebP-Dateien vorhanden; Medienverzeichnis mit Größen und SHA-256 erstellt |
 | Tatsächliche Erzählspuren, Kapitelzeiten und veröffentlichte Untertitel | Gespeicherter vollständiger Sprachaudit: **112 von 112 gültig, 0 fehlend, 0 Fehler**; Beleg unter `.praxisvideo-production/audio/audit.json` |
-| Abschließende Inhalts-, Dachmedien- und Videomedienprüfungen | Aktuelle Ergebnisse werden nach dem laufenden Prüflauf ergänzt |
-| Vollständiger Testlauf, TypeScript und Lint | Aktuelle Ergebnisse werden nach dem laufenden Prüflauf ergänzt |
-| Produktionsbuild, statischer Export und Website-Paket | Aktuelle Ergebnisse werden nach dem laufenden Prüflauf ergänzt |
-| Startseite, Navigation, Player und vier Ton-/Untertitelkombinationen im fertigen Export | Abschließende Browserprüfung noch offen |
-| Offline-Download, SHA-256, Range/HEAD, Neustart, Abbruch und Paketlöschen im Browser | Abschließende Browserprüfung noch offen |
-| Schmale und breite Fenster, Hell/Dunkel, vergrößerte Schrift und Tastaturbedienung | Abschließende Browserprüfung noch offen |
+| Inhaltsprüfung und bestehende Dachmedien | Bestanden: 2.183 Aufgaben, 387 Lektionen und 285 Rechenaufgaben mit je fünf Zahlenproben; 34 Dachthemen mit 104 Modellkontexten sowie alle fünf Studio-Dachvarianten geprüft. Auch die abschließende Videoprüfung mit FFprobe und SHA-256 besteht: 112 Filme, 336 Dateien, insgesamt 173,5 MiB MP4, größte Datei 2,33 MiB. Die [dokumentierte Sichtprüfung](praxisvideos-0.15-qualitaet.md) beschreibt korrigierte Befunde und ihre Grenzen. |
+| Vollständiger Testlauf, TypeScript und Lint | **1.422 Tests in 131 Dateien bestanden**; anschließend **29 gezielte Player-/Dachtests einschließlich des neuen Quellenfehlerfalls bestanden**. TypeScript ohne Fehler; Lint ohne Fehler mit zwei bereits bestehenden Warnungen in `public/_worker.js` und `scripts/repariere-umlaute.mjs`. |
+| Produktionsbuild, statischer Export und Website-Paket | Bestanden: 66 statische Seiten, 2.799 Dateien im Offline-Grundpaket, kein MP4 im notwendigen Grunddownload. `.probe-export/` für den vorhandenen Upload vorbereitet; privater Zugangsschutz im ursprünglichen Export erhalten. |
+| Startseite, Navigation, Player und vier Ton-/Untertitelkombinationen im fertigen Export | 14 semantische Browserprüfungen bestanden, einschließlich echter H.264-/AAC-Wiedergabe, aller vier Ton-/Untertitelzustände über Clipwechsel und Neustart, gespeicherter Position, Biber-Fortsetzung und unveränderter Antworten. |
+| Offline-Download, SHA-256, Range/HEAD, Neustart, Abbruch und Paketlöschen im Browser | Bestanden in Chromium mit Offline-Emulation: geprüfter Download mit SHA-256, deterministisch unterbrochener Abruf, echte MP4-Wiedergabe mit korrekten Teilbytes, vier Einstellungen und Positionen nach Neustart, tatsächlicher ZIP-Export ohne öffentliche Filme, Paketlöschen ohne verlorene Lernarbeit. Eine kontrolliert fehlende Videodatei zeigt den Hinweis und erhält den Text. Ein echter Service-Worker-Wechsel wartet auf „Speichern und aktualisieren“ und erhält Antworten, Notizen, Einstellungen und Positionen. |
+| Schmale und breite Fenster, Hell/Dunkel, vergrößerte Schrift und Tastaturbedienung | Bestanden: 42 Varianten bei 390, 760 und 1.280 Pixeln, Hell/Dunkel, tatsächlicher 130-%-Einstellung und zusätzlichem 100-%-Vergleich. Kein horizontaler Überlauf; Tastaturfokus, Menükreis, Escape und Erhalt einer angefangenen Werkstattnotiz bestätigt. |
 | Safari und Wiedergabe auf einem echten iPhone | Noch nicht durchgeführt |
 | Installation und Ausführung des nativen macOS-Bundles | In dieser Cloud nicht durchgeführt |
 | Beobachtete Erprobung mit Azubis | Noch nicht durchgeführt |

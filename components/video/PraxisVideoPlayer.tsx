@@ -128,7 +128,7 @@ function PraxisVideoAufGeraet({ video, onPlay, disabled = false, studio = false 
       onRateChange={event => setRate(event.currentTarget.playbackRate)}
       onLoadedMetadata={event => { anwenden(aktuell.current); if (!wiederhergestellt.current) { wiederhergestellt.current = true; const film = event.currentTarget; film.currentTime = letztePosition.current < film.duration ? letztePosition.current : 0; setPosition(film.currentTime); } }}
       onError={() => setMedienFehler(true)}>
-      <source src={medien.video.url} type="video/mp4" />
+      <source src={medien.video.url} type="video/mp4" onError={() => setMedienFehler(true)} />
       {medien.untertitel && <track kind="captions" label="Deutsch" srcLang="de" src={medien.untertitel.url} default={anfang.einstellungen.untertitel} onLoad={() => anwenden(aktuell.current)} />}
       Dein Browser kann diesen Film nicht abspielen. Die Kapitel und der vollständige Text stehen darunter.
     </video> : <p className={styles.unavailable}>Der Film ist auf diesem Gerät noch nicht verfügbar. Du kannst die Arbeitsschritte unten als Text lesen.</p>}
