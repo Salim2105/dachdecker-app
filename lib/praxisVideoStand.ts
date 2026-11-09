@@ -1,9 +1,10 @@
 import { appStorage } from "@/lib/lernSpeicher";
 import { getPraxisVideo, istPraxisVideoId } from "@/lib/praxisVideoInhalte";
-import type { PraxisVideoEinstellungen, PraxisVideoPosition } from "@/lib/praxisVideoTypen";
+import type { PraxisVideoEinstellungen, PraxisVideoPosition, PraxisVideoVersion } from "@/lib/praxisVideoTypen";
 
 export const praxisVideoEinstellungenKey = "praxisvideo-einstellungen-v1";
 export const praxisVideoPositionenKey = "praxisvideo-positionen-v1";
+export const praxisVideoPositionenV2Key = "praxisvideo-positionen-v2";
 const einstellungenListeners = new Set<() => void>();
 export const subscribePraxisVideoEinstellungen = (listener: () => void): (() => void) => {
   einstellungenListeners.add(listener); return () => { einstellungenListeners.delete(listener); };
@@ -13,14 +14,14 @@ export function istPraxisVideoEinstellungen(v: unknown): v is PraxisVideoEinstel
   return obj(v) && typeof v.sprecher === "boolean" && typeof v.untertitel === "boolean" && Object.keys(v).length === 2;
 }
 export function istPraxisVideoPosition(v: unknown): v is PraxisVideoPosition {
-  if (!obj(v) || v.version !== 1 || v.videoVersion !== 1 || !istPraxisVideoId(v.videoId) ||
+  if (!obj(v) || v.version !== 1 || (v.videoVersion !== 1 && v.videoVersion !== 2) || !istPraxisVideoId(v.videoId) ||
       typeof v.position !== "number" || !Number.isFinite(v.position) || v.position < 0 || v.position > 1800 ||
       typeof v.aktualisiertAm !== "number" || !Number.isFinite(v.aktualisiertAm) || v.aktualisiertAm < 0) return false;
-  const clip = getPraxisVideo(v.videoId);
-  return !clip || v.videoVersion === clip.version && v.position <= clip.dauer;
+  const clip = getPraxisVideo(v.videoId, v.videoVersion);
+  return !!clip && v.position <= clip.dauer;
 }
-export function istPraxisVideoPositionen(v: unknown): v is Record<string, PraxisVideoPosition> {
-  return obj(v) && Object.keys(v).length <= 1000 && Object.entries(v).every(([id, p]) => istPraxisVideoPosition(p) && p.videoId === id);
+export function istPraxisVideoPositionen(v: unknown, videoVersion: PraxisVideoVersion = 1): v is Record<string, PraxisVideoPosition> {
+  return obj(v) && Object.keys(v).length <= 1000 && Object.entries(v).every(([id, p]) => istPraxisVideoPosition(p) && p.videoId === id && p.videoVersion === videoVersion);
 }
 function json(key: string): unknown {
   try { return JSON.parse(appStorage.getItem(key) ?? "null"); } catch { return null; }
@@ -34,15 +35,16 @@ export function speicherePraxisVideoEinstellungen(v: PraxisVideoEinstellungen): 
   appStorage.setItem(praxisVideoEinstellungenKey, JSON.stringify(v));
   einstellungenListeners.forEach(listener => listener()); return { ...v };
 }
-export function ladePraxisVideoPosition(videoId: string): PraxisVideoPosition | null {
-  const v = json(praxisVideoPositionenKey);
-  return istPraxisVideoPositionen(v) && Object.hasOwn(v, videoId) ? { ...v[videoId] } : null;
+export function ladePraxisVideoPosition(videoId: string, videoVersion: PraxisVideoVersion = 1): PraxisVideoPosition | null {
+  const v = json(videoVersion === 2 ? praxisVideoPositionenV2Key : praxisVideoPositionenKey);
+  return istPraxisVideoPositionen(v, videoVersion) && Object.hasOwn(v, videoId) ? { ...v[videoId] } : null;
 }
-export function speicherePraxisVideoPosition(videoId: string, position: number): PraxisVideoPosition {
+export function speicherePraxisVideoPosition(videoId: string, position: number, videoVersion: PraxisVideoVersion = 1): PraxisVideoPosition {
   if (!Number.isFinite(position) || position < 0) throw new Error("Die Videoposition ist ungültig.");
-  const clip = getPraxisVideo(videoId);
-  const neu: PraxisVideoPosition = { version: 1, videoId, videoVersion: 1, position: Math.min(position, clip?.dauer ?? 1800), aktualisiertAm: Date.now() };
+  const clip = getPraxisVideo(videoId, videoVersion);
+  const neu: PraxisVideoPosition = { version: 1, videoId, videoVersion, position: Math.min(position, clip?.dauer ?? 1800), aktualisiertAm: Date.now() };
   if (!istPraxisVideoPosition(neu)) throw new Error("Die Videoposition ist ungültig.");
-  const alt = json(praxisVideoPositionenKey), positionen = istPraxisVideoPositionen(alt) ? alt : {};
-  appStorage.setItem(praxisVideoPositionenKey, JSON.stringify({ ...positionen, [videoId]: neu })); return neu;
+  const key = videoVersion === 2 ? praxisVideoPositionenV2Key : praxisVideoPositionenKey;
+  const alt = json(key), positionen = istPraxisVideoPositionen(alt, videoVersion) ? alt : {};
+  appStorage.setItem(key, JSON.stringify({ ...positionen, [videoId]: neu })); return neu;
 }

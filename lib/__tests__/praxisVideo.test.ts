@@ -2,7 +2,7 @@ import { Blob as NodeBlob } from "node:buffer";
 import { IDBFactory } from "fake-indexeddb";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { DACH_MODELLE } from "@/lib/dach3dInhalte";
-import { getDachPraxisVideo, getWerkstattPraxisVideo, istPraxisVideo, istPraxisVideoRef, PRAXIS_VIDEO_KONTEXTE, PRAXIS_VIDEOS, pruefePraxisVideoInhalte } from "@/lib/praxisVideoInhalte";
+import { getDachPraxisVideo, getPraxisVideo, getWerkstattPraxisVideo, istPraxisVideo, istPraxisVideoRef, PRAXIS_VIDEO_KONTEXTE, PRAXIS_VIDEOS, pruefePraxisVideoInhalte } from "@/lib/praxisVideoInhalte";
 import { istPraxisVideoAsset, istPraxisVideoMedienPfad, pruefePraxisVideoMedien } from "@/lib/praxisVideoMedien";
 
 beforeEach(() => { vi.resetModules(); localStorage.clear(); vi.stubGlobal("indexedDB", new IDBFactory()); vi.stubGlobal("Blob", NodeBlob); });
@@ -48,7 +48,7 @@ describe("Versionierte Praxisvideos", () => {
     expect(pruefePraxisVideoMedien({ version: 1, assets: [] })).toBe(false);
     expect(pruefePraxisVideoMedien({ version: 1, assets: [] }, { allowEmpty: true })).toBe(true);
     const vollstaendigeMedien = PRAXIS_VIDEO_KONTEXTE.flatMap(k => (["mp4", "vtt", "webp"] as const).map(ext => ({
-      ...a, id: `${k.id}.${ext}`, url: `/praxisvideos/v1/${k.id}.${ext}`, typ: ext === "mp4" ? "video" : ext === "vtt" ? "untertitel" : "bild",
+      ...a, id: `${k.id}.${ext}`, url: `/praxisvideos/v${getPraxisVideo(k.id)!.version}/${k.id}.${ext}`, typ: ext === "mp4" ? "video" : ext === "vtt" ? "untertitel" : "bild",
     })));
     expect(pruefePraxisVideoMedien({ version: 1, assets: vollstaendigeMedien })).toBe(true);
     expect(pruefePraxisVideoMedien({ version: 1, assets: vollstaendigeMedien.slice(1) })).toBe(false);
