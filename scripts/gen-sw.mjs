@@ -8,6 +8,17 @@ import rangeHelpers from "../electron/http-byte-range.cjs";
 const { parseByteRange } = rangeHelpers;
 const grossesVideo = (url) => url.startsWith("/praxisvideos/") && /\.(?:mp4|webm|mov|m4v)$/i.test(url);
 
+/** Same public edition budgets for package inspection and offline streaming. */
+export function praxisVideoByteBudget(path) {
+  const parts = path.split("/");
+  if (parts.length !== 4 || parts[1] !== "praxisvideos") return 0;
+  const dot = parts[3].lastIndexOf("."), id = parts[3].slice(0, dot), ext = parts[3].slice(dot + 1);
+  if (!/^[a-z0-9-]+$/.test(id) || !["mp4", "vtt", "webp"].includes(ext)) return 0;
+  const version = parts[2];
+  if (version !== "v1" && !(version === "v2" && ["werkstatt-falzziegel-schnitt", "werkstatt-falzziegel-bearbeiten", "werkstatt-falzziegel-verlegen"].includes(id))) return 0;
+  return (ext === "mp4" ? version === "v2" ? 25 : 15 : 2) * 1024 * 1024;
+}
+
 const CACHE_PREFIX = "dachdecker-lernwerkstatt-root-";
 function dateienIn(wurzel) {
   if (!existsSync(wurzel)) return [];
@@ -28,13 +39,14 @@ const MEDIEN_INDEX = 'dachdecker-medien-index-v1';
 const VIDEO_CACHE = 'dachdecker-praxisvideos-v1';
 const VIDEO_INDEX = 'dachdecker-praxisvideos-index-v1';
 ${parseByteRange.toString()}
+${praxisVideoByteBudget.toString()}
 
 // Only complete, explicitly downloaded videos enter the media cache. The
 // browser may request two bytes first, then seek anywhere in that same file.
 async function videoAntwort(request, response) {
   const headers = Object.fromEntries(response.headers.entries());
   const size = Number(headers['content-length']);
-  if (!Number.isSafeInteger(size) || size < 0 || size > 15 * 1024 * 1024 || response.status !== 200) return Response.error();
+  if (!Number.isSafeInteger(size) || size < 0 || size > praxisVideoByteBudget(new URL(request.url).pathname) || response.status !== 200) return Response.error();
   headers['accept-ranges'] = 'bytes';
   if (request.method === 'HEAD') return new Response(null, { status: 200, headers });
   const range = parseByteRange(request.headers.get('Range'), size);
@@ -60,7 +72,7 @@ async function praxisVideoMedium(request, url) {
       }
       markers.sort((a,b) => b.am - a.am);
       for (const m of markers) {
-        const asset = m.assets.find(a => a && a.url === url.pathname && /^\\/praxisvideos\\/v[0-9]+\\/[a-z0-9-]+\\.(?:mp4|vtt|webp)$/.test(a.url) && typeof a.sha256 === 'string' && /^[a-f0-9]{64}$/.test(a.sha256) && Number.isSafeInteger(a.bytes) && a.bytes > 0 && a.bytes <= 15 * 1024 * 1024);
+        const asset = m.assets.find(a => a && a.url === url.pathname && /^\\/praxisvideos\\/v[0-9]+\\/[a-z0-9-]+\\.(?:mp4|vtt|webp)$/.test(a.url) && typeof a.sha256 === 'string' && /^[a-f0-9]{64}$/.test(a.sha256) && Number.isSafeInteger(a.bytes) && a.bytes > 0 && a.bytes <= praxisVideoByteBudget(a.url));
         if (!asset) continue;
         const hit = await cache.match('/praxisvideos/_inhalt/' + asset.sha256);
         if (hit && hit.status === 200 && Number(hit.headers.get('Content-Length')) === asset.bytes) return videoAntwort(request, hit);

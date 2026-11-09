@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { runInNewContext } from "node:vm";
 import { describe, expect, it, vi } from "vitest";
-import { createServiceWorker } from "../../scripts/gen-sw.mjs";
+import { createServiceWorker, praxisVideoByteBudget } from "../../scripts/gen-sw.mjs";
 
 const ORIGIN = "https://dachdecker.example";
 const PREFIX = "dachdecker-lernwerkstatt-root-";
@@ -59,6 +59,25 @@ function harness(shell: string[] = ["/", "/_next/app.js"], failed: string[] = []
 }
 
 describe("Service Worker mit ausdrücklich freigegebenen Updates", () => {
+  it("reserviert das höhere Filmbudget nur für die drei bekannten neuen Werkstattfassungen", () => {
+    expect(praxisVideoByteBudget("/praxisvideos/v2/werkstatt-falzziegel-schnitt.mp4")).toBe(25 * 1024 * 1024);
+    expect(praxisVideoByteBudget("/praxisvideos/v1/werkstatt-falzziegel-schnitt.mp4")).toBe(15 * 1024 * 1024);
+    expect(praxisVideoByteBudget("/praxisvideos/v2/werkstatt-falzziegel-schnitt.vtt")).toBe(2 * 1024 * 1024);
+    expect(praxisVideoByteBudget("/praxisvideos/v2/werkstatt-biber-doppel-schnitt.mp4")).toBe(0);
+    expect(praxisVideoByteBudget("/praxisvideos/v99/werkstatt-falzziegel-schnitt.mp4")).toBe(0);
+    expect(praxisVideoByteBudget("/praxisvideos/v2/../werkstatt-falzziegel-schnitt.mp4")).toBe(0);
+  });
+  it("liefert neue Full-HD-Filme über 15 MiB als korrekte Offline-Teilbereiche", async () => {
+    const h = harness(), id = "werkstatt-falzziegel-schnitt", sha256 = "c".repeat(64);
+    const url = `/praxisvideos/v2/${id}.mp4`, data = new Uint8Array(16 * 1024 * 1024);
+    data.set([1, 2, 3], data.length - 3);
+    await (await h.caches.open("dachdecker-praxisvideos-v1")).put(`/praxisvideos/_inhalt/${sha256}`, new Response(data, { headers: { "Content-Type": "video/mp4", "Content-Length": String(data.length) } }));
+    await h.put("dachdecker-praxisvideos-index-v1", `/praxisvideos/_pakete/clip-${id}.json`, JSON.stringify({ version: 1, id: `clip-${id}`, am: 1, assets: [{ id: id + ".mp4", url, sha256, bytes: data.length, typ: "video" }] }));
+    const response = (await h.request(url, false, undefined, { headers: { Range: "bytes=-3" } }))!;
+    expect(response.status).toBe(206);
+    expect([...new Uint8Array(await response.arrayBuffer())]).toEqual([1, 2, 3]);
+    expect(response.headers.get("Content-Range")).toBe(`bytes ${data.length - 3}-${data.length - 1}/${data.length}`);
+  });
   it("lädt Poster und Untertitel, aber keine Filme als notwendigen Grunddownload", async () => {
     const base = "/praxisvideos/v1/dach-steildach-falzziegel-s03";
     const h = harness(["/", base + ".mp4", base + ".webm", base + ".vtt", base + ".webp"]);
