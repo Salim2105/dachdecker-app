@@ -15,6 +15,7 @@ import { dachMedienRoute, werkstattDachMedium } from "@/lib/dach3dVerknuepfungen
 import { WerkstattSzene } from "./WerkstattSzene";
 import { getDachPraxisVideo, getWerkstattPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { praxisVideoMedien } from "@/lib/praxisVideoMedien";
+import type { PraxisVideoLernpunkt } from "@/lib/praxisVideoTypen";
 import { PraxisVideoPlayer } from "@/components/video/PraxisVideoPlayer";
 import styles from "./WerkstattTraining.module.css";
 
@@ -73,6 +74,7 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
   });
   const [stand, setStand] = useState(anfang.stand), aktuell = useRef(stand);
   const [fehler, setFehler] = useState(anfang.fehler);
+  const [videoPunkt, setVideoPunkt] = useState<PraxisVideoLernpunkt | null>(null);
   const [neustartBusy, setNeustartBusy] = useState(false), neustartLaeuft = useRef(false);
   const sperre = useBearbeitungsSperre(`dachdecker-werkstatt-${vorlage.id}`);
   const editierbar = sperre.status === "frei" || sperre.status === "nicht-verfuegbar";
@@ -83,6 +85,15 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     try { speichereWerkstattStand(neu); syncWerkstattNachweise(neu); setFehler(""); return true; }
     catch (e) { setFehler(textFehler(e)); return false; }
   }, [editierbar]);
+  const videoPunktMerken = useCallback((punkt: PraxisVideoLernpunkt | null) => {
+    setVideoPunkt(punkt);
+    const basis = aktuell.current;
+    if (!punkt || !basis || !editierbar || punkt.einheitId !== basis.einheit.id) return;
+    const hilfe = `video:${punkt.einheitId}@v2`;
+    // A task opened after seeking is still guided video training, even when
+    // no PLAY event was needed to inspect the already displayed frame.
+    if (!basis.hilfen.includes(hilfe)) speichern(hilfeWerkstatt(basis, hilfe));
+  }, [editierbar, speichern]);
   function patch(wert: Partial<WerkstattStand>, basis = aktuell.current!) {
     return { ...basis, ...wert, revision: basis.revision + 1, aktualisiertAm: Math.max(Date.now(), basis.aktualisiertAm) };
   }
@@ -103,8 +114,8 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     const hilfe = (art: string) => {
       const alt = aktuell.current;
       if (!alt || art === "taschenrechner" || art === "werkzeug:taschenrechner") return;
-      const a = alt.einheit.aufgaben[alt.aufgabeIndex ?? 0];
-      const id = alt.phase === "anleitung" ? `begriff:${art}` : `${a.id}:${art}`;
+      const a = alt.einheit.aufgaben.find(a => a.id === videoPunkt?.aufgabeId) ?? alt.einheit.aufgaben[alt.aufgabeIndex ?? 0];
+      const id = !videoPunkt && alt.phase === "anleitung" ? `begriff:${art}` : `${a.id}:${art}`;
       speichern(hilfeWerkstatt(alt, id));
     };
     const listener = (event: Event) => {
@@ -114,7 +125,7 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     window.addEventListener("dachdecker:pruefung-hilfe", listener);
     if (document.querySelector('#werkzeug-panel:not([hidden])[data-werkzeug="glossar"]')) hilfe("glossar");
     return () => { ende(); window.removeEventListener("dachdecker:pruefung-hilfe", listener); };
-  }, [editierbar, stand?.id, stand?.aufgabeIndex, stand?.phase, speichern]);
+  }, [editierbar, stand?.id, stand?.aufgabeIndex, stand?.phase, videoPunkt, speichern]);
 
   if (sperre.status === "gesperrt") return <section className={styles.note}><h1>In einem anderen Fenster geöffnet</h1><p role="alert">{sperre.fehler}</p><LernLink href="/projekte#werkstatt" className={styles.back}>Zur Werkstattübersicht →</LernLink></section>;
   if (!stand) return <section className={styles.note}><h1>Dein Werkstattstand bleibt erhalten.</h1><p role="alert">{fehler}</p><LernLink href="/fortschritt" className="hauptaktion">Vollständige Sicherung erstellen →</LernLink><LernLink href="/projekte#werkstatt" className={styles.back}>Zur Werkstattübersicht →</LernLink></section>;
@@ -138,13 +149,13 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     if (modus === "begleitet") bildOeffnen(neu.schritt, neu);
     else speichern(neu);
   }
-  function antwortAendern(antwort: WerkstattAntwort) {
+  function antwortAendern(antwort: WerkstattAntwort, aufgabeId = aufgabe.id) {
     const basis = aktuell.current!;
-    const mitHilfe = basis.geprueft.includes(aufgabe.id) ? hilfeWerkstatt(basis, `${aufgabe.id}:vergleich`) : basis;
-    speichern(patch({ antworten: { ...mitHilfe.antworten, [aufgabe.id]: antwort }, geprueft: mitHilfe.geprueft.filter(id => id !== aufgabe.id), abgeschlossenAm: null }, mitHilfe));
+    const mitHilfe = basis.geprueft.includes(aufgabeId) ? hilfeWerkstatt(basis, `${aufgabeId}:vergleich`) : basis;
+    speichern(patch({ antworten: { ...mitHilfe.antworten, [aufgabeId]: antwort }, geprueft: mitHilfe.geprueft.filter(id => id !== aufgabeId), abgeschlossenAm: null }, mitHilfe));
   }
-  function pruefen() {
-    try { const now = Date.now(); speichern(pruefeWerkstattAufgabe(aktuell.current!, aufgabe.id, now, werkstattNacharbeitAusVorversuchen(aktuell.current!, now))); }
+  function pruefen(aufgabeId = aufgabe.id) {
+    try { const now = Date.now(); speichern(pruefeWerkstattAufgabe(aktuell.current!, aufgabeId, now, werkstattNacharbeitAusVorversuchen(aktuell.current!, now))); }
     catch (err) { setFehler(textFehler(err)); }
   }
   function phaseWaehlen(phase: WerkstattStand["phase"]) {
@@ -175,17 +186,21 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     <fieldset className={styles.mode} disabled={!editierbar}><legend>Wie möchtest du arbeiten?</legend><button type="button" aria-pressed={s.modus === "begleitet"} onClick={() => modusWaehlen("begleitet")}>Mit Begleitung</button><button type="button" aria-pressed={s.modus === "probelauf"} onClick={() => modusWaehlen("probelauf")}>Selbst probieren</button><p>Du kannst jederzeit wechseln. Deine Antworten und bereits genutzten Hilfen bleiben erhalten.</p></fieldset>
     <nav className={styles.phaseNav} aria-label="Ablauf deiner Werkstatteinheit">{phasen.map(p => <button key={p.id} type="button" disabled={!editierbar} aria-current={s.phase === p.id ? "step" : undefined} onClick={() => phaseWaehlen(p.id)}>{p.label}</button>)}</nav>
     <details className={styles.system}><summary>Übungsmodell und vorgegebene Angaben ansehen</summary><h2>{e.systemkarte.titel}</h2><p>{e.systemkarte.hinweis}</p><ul>{e.systemkarte.angaben.map(a => <li key={a}>{a}</li>)}</ul><h3>Befestigung in diesem Modell</h3><ul>{e.systemkarte.befestigung.map(a => <li key={a}>{a}</li>)}</ul><p className={styles.muted}>{e.systemkarte.quellen.join(" · ")}</p></details>
-    {lernvideo && <section className={styles.videoGuide} aria-label={handgriffVideo ? "3D-Handgriff zur Werkstatteinheit" : "Lernvideo zum Dachaufbau"}><header><span className={styles.eyebrow}>{handgriffVideo ? "DEN HANDGRIFF RÄUMLICH VERSTEHEN" : "DEN ZUSAMMENHANG AM DACH VERSTEHEN"}</span><h2>{handgriffVideo ? `3D-Handgriff: ${handgriffTitel[e.slug]}` : "Passendes Lernvideo zum Dachaufbau"}</h2><p>{handgriffVideo ? "Sieh dir den Handgriff am 3D-Schulmodell an. Kapitel und Sprechertext helfen dir, jeden Schritt nachzuvollziehen." : "Dieses 3D-Lernvideo zeigt den passenden Dachaufbau. Die genauen Maße deiner Übung findest du in der Werkstattzeichnung."}</p></header><PraxisVideoPlayer video={lernvideo} disabled={!editierbar || neustartBusy} onPlay={clip => { const basis = aktuell.current; if (basis && editierbar) speichern(hilfeWerkstatt(basis, `video:${clip.id}@v${clip.version}`)); }} /></section>}
-    {erstStart ? <section className={styles.launch}><span className={styles.launchIcon} aria-hidden="true">⌁</span><h2>Erst ansehen oder direkt ausprobieren?</h2><p>Die Bildanleitung führt dich durch den Arbeitsschritt. Wenn du dein Vorwissen ausprobieren möchtest, kannst du sofort mit den Aufgaben anfangen.</p><div className={styles.actions}><button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => bildOeffnen(0)}>Bildanleitung starten →</button><button type="button" className={styles.secondary} disabled={!editierbar} onClick={() => { const neu = setWerkstattModus(aktuell.current!, "probelauf"); speichern(patch({ phase: "uebung" }, neu)); }}>Direkt selbst probieren →</button></div></section> : s.phase === "anleitung" ? <section className={styles.guide} aria-label="Bildanleitung">
+    {lernvideo && <section className={styles.videoGuide} aria-label={handgriffVideo ? "3D-Handgriff zur Werkstatteinheit" : "Lernvideo zum Dachaufbau"}><header><span className={styles.eyebrow}>{handgriffVideo ? "DEN HANDGRIFF RÄUMLICH VERSTEHEN" : "DEN ZUSAMMENHANG AM DACH VERSTEHEN"}</span><h2>{handgriffVideo ? `3D-Handgriff: ${handgriffTitel[e.slug]}` : "Passendes Lernvideo zum Dachaufbau"}</h2><p>{handgriffVideo ? "Sieh dir den Handgriff am 3D-Schulmodell an. Kapitel und Sprechertext helfen dir, jeden Schritt nachzuvollziehen." : "Dieses 3D-Lernvideo zeigt den passenden Dachaufbau. Die genauen Maße deiner Übung findest du in der Werkstattzeichnung."}</p></header><PraxisVideoPlayer video={lernvideo} versuchId={s.id} onLernpunktAktiv={videoPunktMerken} istLernpunktBearbeitet={punkt => s.geprueft.includes(punkt.aufgabeId)} renderLernpunkt={punkt => {
+      const a = e.aufgaben.find(a => a.id === punkt.aufgabeId);
+      if (!a || punkt.einheitId !== e.id) return <p>Die Aufgabe passt nicht zu diesem gespeicherten Werkstattversuch. Deine bisherigen Antworten bleiben erhalten.</p>;
+      return <WerkstattAufgabe key={a.id} aufgabe={a} systemkarte={e.systemkarte} antwort={s.antworten[a.id]} geprueft={s.geprueft.includes(a.id)} bewertung={s.abgaben[a.id]?.at(-1)?.bewertung} disabled={!editierbar || neustartBusy} onChange={antwort => antwortAendern(antwort, a.id)} onPruefen={() => pruefen(a.id)} onHilfe={() => speichern(hilfeWerkstatt(aktuell.current!, `${a.id}:hinweis`))}/>;
+    }} disabled={!editierbar || neustartBusy} onPlay={clip => { const basis = aktuell.current; if (basis && editierbar) speichern(hilfeWerkstatt(basis, `video:${clip.id}@v${clip.version}`)); }} /></section>}
+    {!videoPunkt && (erstStart ? <section className={styles.launch}><span className={styles.launchIcon} aria-hidden="true">⌁</span><h2>Erst ansehen oder direkt ausprobieren?</h2><p>Die Bildanleitung führt dich durch den Arbeitsschritt. Wenn du dein Vorwissen ausprobieren möchtest, kannst du sofort mit den Aufgaben anfangen.</p><div className={styles.actions}><button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => bildOeffnen(0)}>Bildanleitung starten →</button><button type="button" className={styles.secondary} disabled={!editierbar} onClick={() => { const neu = setWerkstattModus(aktuell.current!, "probelauf"); speichern(patch({ phase: "uebung" }, neu)); }}>Direkt selbst probieren →</button></div></section> : s.phase === "anleitung" ? <section className={styles.guide} aria-label="Bildanleitung">
       <div className={styles.guideHeading}><span className={styles.eyebrow}>BILDSCHRITT {s.schritt + 1} VON {e.bildschritte.length}</span><h2>{bild.titel}</h2></div>
       <div className={styles.guideGrid}><div>{dachMedium && <figure className="overflow-hidden rounded-xl border" style={{borderColor:"var(--border)"}}><DachBild medium={dachMedium} alt={`Lehrmodell zur Werkstatteinheit ${e.titel}`} /><figcaption className="p-3 text-sm" style={{color:"var(--text-muted)"}}>Räumlicher Zusammenhang am Lehrmodell. Die genauen Übungsmaße stehen in der ergänzenden Zeichnung.<br/><LernLink href={dachMedienRoute(dachMedium)}>Diesen Aufbau in 3D untersuchen →</LernLink></figcaption></figure>}<details className="my-3 rounded-xl border p-3" style={{borderColor:"var(--border)"}}><summary className="min-h-11 cursor-pointer font-semibold">Genaue Werkstattzeichnung und Wasserweg</summary><WerkstattSzene systemkarte={e.systemkarte} szene={bild.szene} ansicht={s.ansicht} wasser={s.wasser} schritt={s.schritt}/></details><fieldset className={styles.viewTools} disabled={!editierbar}><legend>Dieselbe Stelle anders ansehen</legend>{ansichten.map(v => <button key={v.id} type="button" aria-pressed={s.ansicht === v.id} onClick={() => speichern(patch({ ansicht: v.id }))}>{v.label}</button>)}<button type="button" onClick={() => speichern(patch({ wasser: (s.wasser + 1) % 5 }))}>Wasserweg: Schritt {s.wasser} von 4</button></fieldset></div>
       <div className={styles.guideText}><section><span className={styles.eyebrow}>SO GEHST DU VOR</span><p>{bild.handlung}</p></section><section className={styles.why}><h3>Warum mache ich das so?</h3><p>{bild.warum}</p></section><section className={styles.control}><h3>Darauf achtest du</h3><p>{bild.kontrolle}</p></section></div></div>
       <div className={styles.guideFooter}><button type="button" className={styles.secondary} disabled={!editierbar || s.schritt === 0} onClick={() => bildOeffnen(s.schritt - 1)}>← Vorheriges Bild</button><span>{s.schritt + 1} / {e.bildschritte.length}</span>{s.schritt + 1 < e.bildschritte.length ? <button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => bildOeffnen(s.schritt + 1)}>Nächstes Bild →</button> : <button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => phaseWaehlen("uebung")}>Jetzt selbst entscheiden →</button>}</div>
     </section> : s.phase === "uebung" ? <section aria-label="Deine Werkstattübungen">
       <div className={styles.taskNav} role="group" aria-label="Übung auswählen">{e.aufgaben.map((a, i) => <button key={a.id} type="button" disabled={!editierbar} aria-pressed={aufgabeIndex === i} onClick={() => speichern(patch({ aufgabeIndex: i }))}>{s.geprueft.includes(a.id) ? "✓ " : ""}Übung {i + 1}: {a.titel}</button>)}</div>
-      <WerkstattAufgabe key={aufgabe.id} aufgabe={aufgabe} systemkarte={e.systemkarte} antwort={s.antworten[aufgabe.id]} geprueft={s.geprueft.includes(aufgabe.id)} bewertung={letzte?.bewertung} disabled={!editierbar} onChange={antwortAendern} onPruefen={pruefen} onHilfe={() => speichern(hilfeWerkstatt(aktuell.current!, `${aufgabe.id}:hinweis`))}/>
+      <WerkstattAufgabe key={aufgabe.id} aufgabe={aufgabe} systemkarte={e.systemkarte} antwort={s.antworten[aufgabe.id]} geprueft={s.geprueft.includes(aufgabe.id)} bewertung={letzte?.bewertung} disabled={!editierbar} onChange={antwort => antwortAendern(antwort)} onPruefen={() => pruefen()} onHilfe={() => speichern(hilfeWerkstatt(aktuell.current!, `${aufgabe.id}:hinweis`))}/>
       {s.geprueft.includes(aufgabe.id) && <div className={styles.guideFooter}><p>{letzte?.hilfen.length || letzte?.nachErklaerung || letzte?.modus === "begleitet" ? "Mit Unterstützung bearbeitet. Deine erste Antwort bleibt gespeichert." : "Deine Antwort ist als eigenständiger Versuch gespeichert."}</p>{aufgabeIndex === 0 ? <button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => speichern(patch({ aufgabeIndex: 1 }))}>Zur zweiten Übung →</button> : <button type="button" className="hauptaktion" disabled={!editierbar} onClick={() => phaseWaehlen("praxis")}>Zum praktischen Auftrag →</button>}</div>}
-    </section> : <section className={styles.practice} aria-label="Dein praktischer Auftrag"><span className={styles.eyebrow}>JETZT AM ÜBUNGSMODELL</span><h2>{e.praxis.auftrag}</h2><p>Besprich Material, Ausführung und Arbeitsanweisung mit Betrieb oder Schule. Digitale Antworten und tatsächliche praktische Arbeit bleiben getrennt dokumentiert.</p><div className={styles.practiceGrid}><div><h3>Werkzeuge</h3><ul>{e.praxis.werkzeuge.map(x => <li key={x}>{x}</li>)}</ul><h3>Material</h3><ul>{e.praxis.material.map(x => <li key={x}>{x}</li>)}</ul></div><div><h3>Dein Arbeitsablauf</h3><ol>{e.praxis.ablauf.map(x => <li key={x}>{x}</li>)}</ol></div></div><div className={styles.practiceGrid}><div><h3>Sicher vorbereiten</h3><ul>{e.praxis.sicherheit.map(x => <li key={x}>{x}</li>)}</ul></div><div><h3>Ergebnis kontrollieren</h3><ul>{e.praxis.kontrolle.map(x => <li key={x}>{x}</li>)}</ul></div></div><h3>Erkläre deinen Arbeitsschritt</h3><ul>{e.praxis.gespraech.map(x => <li key={x}>{x}</li>)}</ul><LernLink href={`/projekte#werkstatt-praxis-${e.pfadId}`} className="hauptaktion">Praktische Ausführung und Rückmeldung festhalten →</LernLink></section>}
+    </section> : <section className={styles.practice} aria-label="Dein praktischer Auftrag"><span className={styles.eyebrow}>JETZT AM ÜBUNGSMODELL</span><h2>{e.praxis.auftrag}</h2><p>Besprich Material, Ausführung und Arbeitsanweisung mit Betrieb oder Schule. Digitale Antworten und tatsächliche praktische Arbeit bleiben getrennt dokumentiert.</p><div className={styles.practiceGrid}><div><h3>Werkzeuge</h3><ul>{e.praxis.werkzeuge.map(x => <li key={x}>{x}</li>)}</ul><h3>Material</h3><ul>{e.praxis.material.map(x => <li key={x}>{x}</li>)}</ul></div><div><h3>Dein Arbeitsablauf</h3><ol>{e.praxis.ablauf.map(x => <li key={x}>{x}</li>)}</ol></div></div><div className={styles.practiceGrid}><div><h3>Sicher vorbereiten</h3><ul>{e.praxis.sicherheit.map(x => <li key={x}>{x}</li>)}</ul></div><div><h3>Ergebnis kontrollieren</h3><ul>{e.praxis.kontrolle.map(x => <li key={x}>{x}</li>)}</ul></div></div><h3>Erkläre deinen Arbeitsschritt</h3><ul>{e.praxis.gespraech.map(x => <li key={x}>{x}</li>)}</ul><LernLink href={`/projekte#werkstatt-praxis-${e.pfadId}`} className="hauptaktion">Praktische Ausführung und Rückmeldung festhalten →</LernLink></section>)}
     <label className={styles.notes}>Meine Werkstattnotizen<textarea maxLength={12000} disabled={!editierbar} value={s.notiz} onChange={event => speichern(patch({ notiz: event.target.value }))} placeholder="Welcher Handgriff oder Zusammenhang ist mir klar geworden?" /></label>
     <section className={styles.result} aria-label="Dein Lernstand in dieser Einheit"><h2>Dein Lernstand in dieser Einheit</h2><p>{status(s, true)}.</p><p className={styles.muted}>Die digitale Bearbeitung bewertet dein Verständnis. Praktische Ausführung und Rückmeldung trägst du im eigenen Praxisblatt ein.</p>{allesGeprueft && <button type="button" className={styles.secondary} disabled={!editierbar || !!s.abgeschlossenAm} onClick={() => speichern(patch({ abgeschlossenAm: Date.now() }))}>{s.abgeschlossenAm ? "Digitale Einheit als bearbeitet gespeichert ✓" : "Digitale Einheit als bearbeitet festhalten"}</button>}<details className={styles.compat}><summary>Später noch einmal ohne Anleitung probieren</summary><p>Ein neuer Versuch beginnt mit eigenen Antworten. Der bisherige Versuch einschließlich seiner Hilfen bleibt archiviert.</p><button type="button" className={styles.secondary} disabled={!editierbar || neustartBusy} onClick={() => void neuerVersuch()}>{neustartBusy ? "Bisherigen Versuch sichern …" : "Neuen digitalen Versuch beginnen"}</button></details></section>
     <footer className={styles.unitFooter}>{e.nummer > 1 && <LernLink className={styles.back} href={`/projekte#${pfad.einheiten[e.nummer - 2].id}`}>← Vorherige Einheit</LernLink>}{e.nummer < 10 ? <LernLink className="hauptaktion" href={`/projekte#${pfad.einheiten[e.nummer].id}`}>Nächste Einheit →</LernLink> : <LernLink className="hauptaktion" href="/projekte#werkstatt">Zur Werkstattübersicht →</LernLink>}</footer>

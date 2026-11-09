@@ -1,4 +1,6 @@
 import { beforeEach, describe, expect, it } from "vitest";
+import { neuerPraxisVideoLernStand, speicherePraxisVideoLernStand } from "@/lib/praxisVideoLernStand";
+import { getPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { lernFortsetzung, letzterLernschritt } from "@/lib/lernFortsetzung";
 import { appStorage } from "@/lib/lernSpeicher";
 import { getAufgaben } from "@/lib/content";
@@ -33,6 +35,18 @@ function loesung(a: Aktivitaet) {
 beforeEach(() => appStorage.clear());
 
 describe("Gemeinsame Lernfortsetzung", () => {
+  it("setzt einen offenen Video-Lernpunkt nur für den zugehörigen Werkstattversuch fort", () => {
+    const e = WERKSTATT_PFADE[0].einheiten.find(e => e.slug === "schnitt")!;
+    const s = neuerWerkstattStand(e);
+    speichern(werkstattKey(e.id), s); letzte(`/projekte#${e.id}`);
+    const v = { ...getPraxisVideo(e.id, 1)!, version: 2 as const, lernpunkte: [{ id: `${e.id}-mitmachen`, kapitelId: "schritt-2", einheitId: e.id, aufgabeId: `${e.id}-a` }] };
+    const lernStand = neuerPraxisVideoLernStand(s.id, v);
+    speicherePraxisVideoLernStand({ ...lernStand, modus: "mitmachen", aktivLernpunktId: `${e.id}-mitmachen` });
+    expect(lernFortsetzung()).toMatchObject({ href: `/projekte#${e.id}`, schritt: "Mitmachaufgabe im Lernvideo fortsetzen" });
+    speichern(werkstattKey(e.id), neuerWerkstattStand(e));
+    expect(lernFortsetzung().schritt).not.toContain("Mitmachaufgabe");
+  });
+
   it("bevorzugt die gültige angefangene Einheit, dann fällige Aufgaben, dann die Lernfeldauswahl", () => {
     expect(lernFortsetzung(0, now)).toMatchObject({ art: "auswahl", href: "/lernen" });
     expect(lernFortsetzung(3, now)).toMatchObject({ art: "heute", href: "/heute", schritt: "3 Wiederholungen sind fällig." });

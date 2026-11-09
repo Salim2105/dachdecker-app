@@ -34,3 +34,17 @@
 .roofDownloads > section { border: 1px solid var(--border); border-radius: 12px; margin-top: 1rem; overflow: hidden; }
 .roofDownloads h3 { padding: .75rem 1rem; font-size: .85rem; }
 @media (max-width: 480px) { .settings label { margin-left: 0; } .heading { padding: .75rem; } .settings { padding: .6rem .75rem; } }
+.edition { min-width: 0; }
+.editionChoice { padding: .8rem 1rem; border: 1px solid var(--border); border-radius: 10px; font-size: .8rem; line-height: 1.7; background: var(--surface-2); }
+.editionChoice button { min-height: 44px; padding: .5rem .75rem; border: 1px solid var(--border); border-radius: 8px; color: var(--text); background: var(--surface); cursor: pointer; }
+.learningModes { display: flex; flex-wrap: wrap; gap: .5rem; padding: .8rem 1rem; border: 0; border-bottom: 1px solid var(--border); }
+.learningModes legend { font-size: .8rem; font-weight: 650; padding-top: .8rem; }
+.learningModes button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); }
+.learningModes p { flex: 1 1 100%; font-size: .75rem; line-height: 1.7; color: var(--text-muted); margin: .25rem 0; }
+.checkpoint { min-width: 0; padding: 1rem; border: 2px solid var(--accent); background: var(--surface); border-radius: 10px; }
+.checkpoint > h3 { font-size: 1rem; margin-bottom: 1rem; }
+.checkpoint > h3:focus { outline: 3px solid var(--accent); outline-offset: 4px; }
+.checkpointActions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
+.catchUp { margin: .75rem 1rem; }
+.editionChoice button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.editionChoice button:disabled { opacity: .55; cursor: default; }

@@ -1,4 +1,5 @@
 import { appStorage } from "@/lib/lernSpeicher";
+import { offenerPraxisVideoLernStand } from "@/lib/praxisVideoLernStand";
 import { getAufgaben } from "@/lib/content";
 import { getLernfeld } from "@/lib/lernfelder";
 import { ladeStand, ladeGespeicherteAufgaben } from "@/lib/uebungStand";
@@ -150,7 +151,8 @@ export function letzterLernschritt(href: string, now = Date.now()): Lernschritt 
       if (raw !== null && (!stand || stand.einheit.id !== id)) return null;
       const einheit = stand?.einheit ?? werkstatt;
       if (stand?.abgeschlossenAm !== null && stand?.abgeschlossenAm !== undefined) return null;
-      const schritt = stand?.phase === "uebung" ? `Selbst entscheiden · Aufgabe ${(stand.aufgabeIndex ?? 0) + 1} von ${einheit.aufgaben.length}` : stand?.phase === "praxis" ? "Praktisch ausprobieren" : `Ansehen & verstehen · Bildschritt ${(stand?.schritt ?? 0) + 1} von ${einheit.bildschritte.length}`;
+      const mitmachen = stand && offenerPraxisVideoLernStand(stand.id, id);
+      const schritt = mitmachen ? "Mitmachaufgabe im Lernvideo fortsetzen" : stand?.phase === "uebung" ? `Selbst entscheiden · Aufgabe ${(stand.aufgabeIndex ?? 0) + 1} von ${einheit.aufgaben.length}` : stand?.phase === "praxis" ? "Praktisch ausprobieren" : `Ansehen & verstehen · Bildschritt ${(stand?.schritt ?? 0) + 1} von ${einheit.bildschritte.length}`;
       return { href: hash ? href : `/projekte#${id}`, titel: einheit.titel, bereich: "Digitale Werkstatt", schritt, minuten: einheit.minuten };
     }
     const projekt = BAUPROJEKTE.find(p => p.id === id);

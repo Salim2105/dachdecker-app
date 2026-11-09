@@ -11,18 +11,55 @@ import { meldePruefungsHilfe, pruefungsHilfenSnapshot } from "@/lib/pruefungsHil
 import { getDachPraxisVideo, getWerkstattPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { werkstattDachMedium } from "@/lib/dach3dVerknuepfungen";
 
-const videoMedien = vi.hoisted(() => ({ verfuegbar: false }));
+const videoMedien = vi.hoisted(() => ({ verfuegbar: false, version2: false }));
 vi.mock("@/lib/praxisVideoMedien", () => ({
   PRAXIS_VIDEO_MEDIEN: [],
   praxisVideoMedien: (video: { id: string }) => ({ video: videoMedien.verfuegbar ? { url: `/praxisvideos/v1/${video.id}.mp4` } : undefined, assets: [] }),
   praxisVideoClipPaket: () => ({ assets: [] }), praxisVideoDachPaket: () => ({ assets: [] }),
 }));
 
+vi.mock("@/lib/praxisVideoInhalte", async importOriginal => {
+  const actual = await importOriginal<typeof import("@/lib/praxisVideoInhalte")>();
+  const v2 = (gegeben: ReturnType<typeof actual.getWerkstattPraxisVideo>) => {
+    const clip = gegeben ? actual.getPraxisVideo(gegeben.id, 1) ?? gegeben : undefined;
+    if (!clip || !videoMedien.version2 || clip.pfadId !== "falzziegel" || !["schnitt", "bearbeiten", "verlegen"].includes(clip.slug!)) return clip;
+    return { ...clip, version: 2 as const, lernpunkte: [{ id: `${clip.id}-mitmachen`, kapitelId: clip.slug === "bearbeiten" ? "schritt-3" : clip.slug === "schnitt" ? "schritt-2" : "schritt-1", einheitId: clip.id, aufgabeId: `${clip.id}-${clip.slug === "bearbeiten" ? "b" : "a"}` }] };
+  };
+  return { ...actual, getWerkstattPraxisVideo: (pfad: "falzziegel" | "biber-doppel", slug: string) => v2(actual.getWerkstattPraxisVideo(pfad, slug)), getPraxisVideo: (id: string, version?: 1 | 2) => version === 2 ? v2(actual.getPraxisVideo(id, 1)) : actual.getPraxisVideo(id, version) };
+});
+
 const falz = WERKSTATT_PFADE[0], biber = WERKSTATT_PFADE[1];
-beforeEach(() => { videoMedien.verfuegbar = false; appStorage.clear(); window.history.replaceState(null, "", "/projekte#werkstatt"); vi.spyOn(window, "scrollTo").mockImplementation(() => {}); vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {}); vi.spyOn(document, "hidden", "get").mockReturnValue(false); });
+beforeEach(() => { videoMedien.verfuegbar = false; videoMedien.version2 = false; appStorage.clear(); window.history.replaceState(null, "", "/projekte#werkstatt"); vi.spyOn(window, "scrollTo").mockImplementation(() => {}); vi.spyOn(HTMLMediaElement.prototype, "pause").mockImplementation(() => {}); vi.spyOn(document, "hidden", "get").mockReturnValue(false); });
 afterEach(async () => { cleanup(); vi.restoreAllMocks(); await retryStorageWrites(); });
 
 describe("Handwerkliches Werkstatttraining", () => {
+  it("bewertet den Video-Lernpunkt nach Aufgaben-ID, ohne die andere Übung oder den Ablauf auszutauschen", () => {
+    videoMedien.verfuegbar = true; videoMedien.version2 = true;
+    const e = falz.einheiten.find(e => e.slug === "bearbeiten")!;
+    const clip = getWerkstattPraxisVideo("falzziegel", "bearbeiten")!;
+    render(<WerkstattTraining einheitId={e.id} />);
+    const vor = ladeWerkstattStand(e.id)!;
+    expect(vor.aufgabeIndex).toBe(0);
+    fireEvent.click(screen.getByRole("button", { name: "Mitmachen" }));
+    const video = screen.getByLabelText(clip.titel) as HTMLVideoElement;
+    video.currentTime = clip.kapitel.find(k => k.id === "schritt-3")!.start + .2;
+    fireEvent.seeked(video);
+    fireEvent.click(screen.getByRole("button", { name: "Aufgabe nachholen" }));
+    expect(screen.getByRole("region", { name: "Mitmachaufgabe im Lernvideo" })).toBeDefined();
+    expect(screen.getAllByRole("button", { name: "Meine Lösung prüfen" })).toHaveLength(1);
+    fireEvent.click(screen.getByRole("button", { name: "Schritt 1 nach unten" }));
+    fireEvent.click(screen.getByRole("button", { name: "Meine Lösung prüfen" }));
+    const nach = ladeWerkstattStand(e.id)!;
+    expect(nach.geprueft).toEqual([`${e.id}-b`]);
+    expect(nach.abgaben[`${e.id}-b`]).toHaveLength(1);
+    expect(nach.abgaben[`${e.id}-a`]).toBeUndefined();
+    expect(nach.antworten[`${e.id}-a`]).toEqual(vor.antworten[`${e.id}-a`]);
+    expect(nach.phase).toBe(vor.phase); expect(nach.aufgabeIndex).toBe(vor.aufgabeIndex);
+    expect(nach.abgaben[`${e.id}-b`][0].hilfen).toContain(`video:${clip.id}@v2`);
+    fireEvent.click(screen.getByRole("button", { name: "Später üben" }));
+    expect(ladeWerkstattStand(e.id)!.abgaben[`${e.id}-b`]).toHaveLength(1);
+  });
+
   it.each(WERKSTATT_PFADE.flatMap(p => ["schnitt", "bearbeiten", "verlegen", "kontrolle"].map(slug => p.einheiten.find(e => e.slug === slug)!)))("zeigt den passenden 3D-Handgriff für $id ohne vorzeitigen Lernnachweis", e => {
     videoMedien.verfuegbar = true;
     const clip = getWerkstattPraxisVideo(e.pfadId, e.slug)!;

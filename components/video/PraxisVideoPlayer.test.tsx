@@ -4,23 +4,30 @@ import { PraxisVideoPlayer } from "./PraxisVideoPlayer";
 import type { PraxisVideo } from "@/lib/praxisVideoTypen";
 import { appStorage, retryStorageWrites } from "@/lib/lernSpeicher";
 import { ladePraxisVideoEinstellungen, ladePraxisVideoPosition, speicherePraxisVideoEinstellungen, speicherePraxisVideoPosition } from "@/lib/praxisVideoStand";
-import { getWerkstattPraxisVideo } from "@/lib/praxisVideoInhalte";
+import { getPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { ladePraxisVideoPaket, loeschePraxisVideoPaket, praxisVideoPaketStatus } from "@/lib/praxisVideoDownloads";
 
+vi.mock("@/lib/praxisVideoInhalte", async importOriginal => {
+  const actual = await importOriginal<typeof import("@/lib/praxisVideoInhalte")>();
+  return { ...actual, getPraxisVideo: (id: string, version?: number) => {
+    const clip = actual.getPraxisVideo(id, version === 2 ? 1 : version as 1 | undefined);
+    return version === 2 && clip && /^werkstatt-falzziegel-(schnitt|bearbeiten|verlegen)$/.test(id) ? { ...clip, version: 2 } : clip;
+  } };
+});
 const medienStand = vi.hoisted(() => ({ download: false, assets: [
   { id: "werkstatt-falzziegel-schnitt.mp4", url: "/praxisvideos/v1/werkstatt-falzziegel-schnitt.mp4", bytes: 1048576, sha256: "1234567890abcdef".repeat(4), typ: "video" as const },
   { id: "werkstatt-falzziegel-schnitt.vtt", url: "/praxisvideos/v1/werkstatt-falzziegel-schnitt.vtt", bytes: 300, sha256: "234567890abcdef1".repeat(4), typ: "untertitel" as const },
   { id: "werkstatt-falzziegel-schnitt.webp", url: "/praxisvideos/v1/werkstatt-falzziegel-schnitt.webp", bytes: 1000, sha256: "34567890abcdef12".repeat(4), typ: "bild" as const },
 ] }));
 vi.mock("@/lib/praxisVideoMedien", () => ({
-  praxisVideoMedien: (video: PraxisVideo) => ({ video: { url: `/praxisvideos/v1/${video.id}.mp4` }, untertitel: { url: `/praxisvideos/v1/${video.id}.vtt` }, poster: { url: `/praxisvideos/v1/${video.id}.webp` }, assets: medienStand.download ? medienStand.assets : [] }),
+  praxisVideoMedien: (video: PraxisVideo) => ({ video: { url: `/praxisvideos/v${video.version}/${video.id}.mp4` }, untertitel: { url: `/praxisvideos/v${video.version}/${video.id}.vtt` }, poster: { url: `/praxisvideos/v${video.version}/${video.id}.webp` }, assets: medienStand.download ? medienStand.assets : [] }),
   praxisVideoClipPaket: () => ({ id: "clip-werkstatt-falzziegel-schnitt", titel: "Schnitt anzeichnen", bytes: medienStand.assets.reduce((summe, asset) => summe + asset.bytes, 0), assets: medienStand.assets }), praxisVideoDachPaket: () => ({ assets: [] }),
 }));
 vi.mock("@/lib/praxisVideoDownloads", () => ({
   ladePraxisVideoPaket: vi.fn(), loeschePraxisVideoPaket: vi.fn(), praxisVideoPaketStatus: vi.fn(),
   subscribePraxisVideoDownloads: () => () => {},
 }));
-const vorlage = getWerkstattPraxisVideo("falzziegel", "schnitt")!;
+const vorlage = getPraxisVideo("werkstatt-falzziegel-schnitt", 1)!;
 const clip: PraxisVideo = { ...vorlage, titel: "Schnitt am Modell anzeichnen",
   kapitel: [{ id: "bezug", titel: "Bezug festlegen", start: 0, ende: 20, text: "Lege die Bezugskante fest." }, { id: "markierung", titel: "Schnitt markieren", start: 20, ende: vorlage.dauer, text: "Markiere das Nutzstück." }], transkript: "Bezug prüfen. Schnitt anzeichnen. Nutzstück kontrollieren." };
 type TrackList = TextTrackList & { dispatchEvent(event: Event): boolean };
@@ -45,6 +52,67 @@ beforeEach(() => {
 afterEach(async () => { cleanup(); vi.restoreAllMocks(); await retryStorageWrites(); });
 const film = () => screen.getByLabelText(clip.titel) as HTMLVideoElement;
 function metadata(video = film()) { Object.defineProperty(video, "duration", { value: clip.dauer, configurable: true }); fireEvent.loadedMetadata(video); }
+
+const lernVideo: PraxisVideo = { ...clip, version: 2, lernpunkte: [{ id: `${clip.id}-mitmachen`, kapitelId: "markierung", einheitId: clip.id, aufgabeId: `${clip.id}-a` }] };
+function laeuft(video = film()) { Object.defineProperty(video, "paused", { configurable: true, value: false }); }
+
+describe("Mitmachpunkte im Werkstattfilm", () => {
+  it("pausiert beim Abspielen am Lernpunkt, erhält den Entwurf nach Neustart und setzt nur ausdrücklich fort", () => {
+    let bearbeitet = false;
+    const props = { video: lernVideo, versuchId: "werkstatt-versuch", renderLernpunkt: () => <p>Vorhandene Werkstattaufgabe</p>, istLernpunktBearbeitet: () => bearbeitet };
+    const view = render(<PraxisVideoPlayer {...props} />); metadata();
+    expect(screen.getByRole("button", { name: "Anschauen" }).getAttribute("aria-pressed")).toBe("true");
+    fireEvent.click(screen.getByRole("button", { name: "Mitmachen" }));
+    const video = film(); laeuft(video); video.currentTime = 19; fireEvent.timeUpdate(video); video.currentTime = 20.5; fireEvent.timeUpdate(video);
+    expect(video.currentTime).toBe(20);
+    expect(screen.getByRole("region", { name: "Mitmachaufgabe im Lernvideo" })).toBeDefined();
+    expect(document.activeElement?.textContent).toBe("Jetzt selbst ausprobieren");
+    expect((screen.getByRole("button", { name: "Film fortsetzen" }) as HTMLButtonElement).disabled).toBe(true);
+    view.unmount(); render(<PraxisVideoPlayer {...props} />);
+    expect(screen.getByRole("region", { name: "Mitmachaufgabe im Lernvideo" })).toBeDefined();
+    bearbeitet = true; cleanup(); render(<PraxisVideoPlayer {...props} />);
+    fireEvent.click(screen.getByRole("button", { name: "Film fortsetzen" }));
+    expect(screen.queryByRole("region", { name: "Mitmachaufgabe im Lernvideo" })).toBeNull();
+    expect(HTMLMediaElement.prototype.play).toHaveBeenCalledTimes(1);
+  });
+  it("spult bei Vorwärtssprüngen nicht zurück und bietet übersprungene Aufgaben erneut an", () => {
+    render(<PraxisVideoPlayer video={lernVideo} versuchId="werkstatt-versuch" renderLernpunkt={() => <p>Aufgabe</p>} />); metadata();
+    fireEvent.click(screen.getByRole("button", { name: "Mitmachen" }));
+    const video = film(); laeuft(video); fireEvent.seeking(video); video.currentTime = 30; fireEvent.timeUpdate(video); fireEvent.seeked(video);
+    expect(video.currentTime).toBe(30); expect(screen.queryByRole("region", { name: "Mitmachaufgabe im Lernvideo" })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "Aufgabe nachholen" }));
+    fireEvent.click(screen.getByRole("button", { name: "Später üben" }));
+    expect(HTMLMediaElement.prototype.play).not.toHaveBeenCalled();
+    expect(screen.getByRole("button", { name: "Aufgabe nachholen" })).toBeDefined();
+    fireEvent.click(screen.getByRole("button", { name: "Anschauen" }));
+    expect(video.currentTime).toBe(30);
+  });
+  it("überträgt die Wahl einer älteren Fassung nicht ungefragt auf ein anderes Video", async () => {
+    vi.mocked(praxisVideoPaketStatus).mockResolvedValue({ status: "gespeichert", bytes: 100 });
+    const view = render(<PraxisVideoPlayer video={lernVideo} versuchId="werkstatt-versuch" renderLernpunkt={() => <p>Aufgabe</p>} />);
+    fireEvent.click(await screen.findByRole("button", { name: "Gespeicherte ältere Fassung ansehen" }));
+    expect(document.querySelector("video source")?.getAttribute("src")).toContain("/v1/");
+    const basis = getPraxisVideo("werkstatt-falzziegel-verlegen", 1)!;
+    const neu: PraxisVideo = { ...basis, version: 2, lernpunkte: [{ id: `${basis.id}-mitmachen`, kapitelId: "schritt-1", einheitId: basis.id, aufgabeId: `${basis.id}-a` }] };
+    view.rerender(<PraxisVideoPlayer video={neu} versuchId="werkstatt-versuch" renderLernpunkt={() => <p>Aufgabe</p>} />);
+    expect(document.querySelector("video source")?.getAttribute("src")).toContain(`/v2/${basis.id}.mp4`);
+    expect(screen.getByRole("button", { name: "Mitmachen" })).toBeDefined();
+  });
+  it("wechselt nur ausdrücklich zur gespeicherten älteren Fassung und hält ihre Positionen getrennt", async () => {
+    medienStand.download = true;
+    vi.mocked(praxisVideoPaketStatus).mockResolvedValue({ status: "gespeichert", bytes: 100 });
+    speicherePraxisVideoPosition(clip.id, 11, 1);
+    const props = { video: lernVideo, versuchId: "werkstatt-versuch", renderLernpunkt: () => <p>Aufgabe</p> };
+    render(<PraxisVideoPlayer {...props} />); metadata();
+    expect(film().currentTime).toBe(0);
+    fireEvent.click(await screen.findByRole("button", { name: "Gespeicherte ältere Fassung ansehen" }));
+    const alt = document.querySelector("video")!; metadata(alt); expect(alt.currentTime).toBe(11);
+    expect(screen.queryByRole("button", { name: "Videopaket erneut speichern" })).toBeNull();
+    expect(screen.queryByRole("button", { name: "Mitmachen" })).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "Aktuelle Fassung öffnen" })); metadata();
+    expect(film().currentTime).toBe(0); expect(ladePraxisVideoPosition(clip.id, 1)?.position).toBe(11);
+  });
+});
 
 describe("Praxisvideo mit unabhängigen Ton- und Untertitelspuren", () => {
   it("zeigt auch bei einem Fehler des source-Elements den Hinweis und erhält den Sprechertext", () => {
