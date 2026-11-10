@@ -150,8 +150,8 @@ export function letzterLernschritt(href: string, now = Date.now()): Lernschritt 
       const raw = lesen(werkstattKey(id)), stand = parseWerkstattStand(raw);
       if (raw !== null && (!stand || stand.einheit.id !== id)) return null;
       const einheit = stand?.einheit ?? werkstatt;
-      if (stand?.abgeschlossenAm !== null && stand?.abgeschlossenAm !== undefined) return null;
       const mitmachen = stand && offenerPraxisVideoLernStand(stand.id, id);
+      if (stand?.abgeschlossenAm !== null && stand?.abgeschlossenAm !== undefined && !mitmachen) return null;
       const schritt = mitmachen ? "Mitmachaufgabe im Lernvideo fortsetzen" : stand?.phase === "uebung" ? `Selbst entscheiden · Aufgabe ${(stand.aufgabeIndex ?? 0) + 1} von ${einheit.aufgaben.length}` : stand?.phase === "praxis" ? "Praktisch ausprobieren" : `Ansehen & verstehen · Bildschritt ${(stand?.schritt ?? 0) + 1} von ${einheit.bildschritte.length}`;
       return { href: hash ? href : `/projekte#${id}`, titel: einheit.titel, bereich: "Digitale Werkstatt", schritt, minuten: einheit.minuten };
     }

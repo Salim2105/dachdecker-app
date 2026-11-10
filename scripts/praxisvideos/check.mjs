@@ -49,11 +49,13 @@ for (const video of [...content.videos, ...archive.videos]) {
 let ready = 0, bytes = 0, maximum = 0;
 for (const video of editions.values()) {
   const context = known.get(video.id), label = `${video.id}@v${video.version}`;
-  check(context && (video.version === 1 || video.version === 2 && Object.hasOwn(v2Points, video.id)) && ["typ", "form", "deckung", "detailId", "pfadId", "slug"].every(k => video[k] === context[k]), `Falscher Dach-/Handgriffbezug: ${label}`);
+  const validContext = context && (video.version === 1 || video.version === 2 && Object.hasOwn(v2Points, video.id)) && ["typ", "form", "deckung", "detailId", "pfadId", "slug"].every(k => video[k] === context[k]);
+  check(validContext, `Falscher Dach-/Handgriffbezug: ${label}`);
+  if (!validContext) continue;
   check(typeof video.titel === "string" && video.titel.trim() && Array.isArray(video.kapitel) && video.kapitel.length === 7, `Vollständiger Ablauf fehlt: ${label}`);
   check(typeof video.transkript === "string" && words(video.transkript) === words(video.kapitel.map(k => k.text).join(" ")), `Sprechertext und Kapitel weichen ab: ${label}`);
   let end = 0; const chapterIds = new Set();
-  for (const chapter of video.kapitel) { check(typeof chapter.id === "string" && !chapterIds.has(chapter.id) && Number.isFinite(chapter.start) && Number.isFinite(chapter.ende) && Math.abs(chapter.start - end) <= .001 && chapter.ende > chapter.start, `Kapitelzeit/ID ungültig: ${label}/${chapter.id}`); chapterIds.add(chapter.id); end = chapter.ende; }
+  for (const chapter of video.kapitel) { check(typeof chapter.id === "string" && /^[a-z0-9][a-z0-9-]*$/.test(chapter.id) && !chapterIds.has(chapter.id) && Number.isFinite(chapter.start) && Number.isFinite(chapter.ende) && Math.abs(chapter.start - end) <= .001 && chapter.ende > chapter.start, `Kapitelzeit/ID ungültig: ${label}/${chapter.id}`); chapterIds.add(chapter.id); end = chapter.ende; }
   check(Number.isFinite(video.dauer) && Math.abs(end - video.dauer) <= .001, `Filmdauer und Kapitel weichen ab: ${label}`);
   if (video.version === 2) {
     const p = video.lernpunkte?.[0], expected = v2Points[video.id];

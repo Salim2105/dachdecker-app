@@ -11,7 +11,7 @@ import { AUFBAU_EINHEITEN, aufbauKey, neuerAufbauStand, pruefeAufbauAufgabe } fr
 import { sprachEinheiten, sprachKey, leseSprachStand } from "@/lib/sprachWerkstatt";
 import { BAUPROJEKTE, projektKey, neuerProjektStand } from "@/lib/bauprojekte";
 import { WERKSTATT_PFADE } from "@/lib/werkstattInhalte";
-import { neuerWerkstattStand, werkstattKey } from "@/lib/werkstattStand";
+import { neuerWerkstattStand, pruefeWerkstattAufgabe, werkstattKey } from "@/lib/werkstattStand";
 import { BILD_AUFGABEN, bildStandKey, neuerBildStand } from "@/lib/bildtraining";
 import { getDachDetail } from "@/lib/dach3dInhalte";
 import { dachAntwort, dachStandKey, neuerDachStand, pruefeDachAufgabe } from "@/lib/dach3dStand";
@@ -45,6 +45,27 @@ describe("Gemeinsame Lernfortsetzung", () => {
     expect(lernFortsetzung()).toMatchObject({ href: `/projekte#${e.id}`, schritt: "Mitmachaufgabe im Lernvideo fortsetzen" });
     speichern(werkstattKey(e.id), neuerWerkstattStand(e));
     expect(lernFortsetzung().schritt).not.toContain("Mitmachaufgabe");
+  });
+
+  it("setzt eine später geöffnete Mitmachaufgabe auch nach Abschluss der Werkstatteinheit fort", () => {
+    const e = WERKSTATT_PFADE[0].einheiten.find(e => e.slug === "schnitt")!;
+    let s = neuerWerkstattStand(e, now);
+    for (const a of e.aufgaben) {
+      if (a.typ === "anzeichnen") s.antworten[a.id] = { ...s.antworten[a.id], punkte: [...a.loesung], nutzseite: a.nutzseite ?? "" };
+      else if (a.typ === "aktivitaet") s.antworten[a.id].aktivitaet = loesung(a.aktivitaet);
+      else throw new Error("Die Schnitt-Einheit verwendet unerwartete Aufgaben.");
+      s = pruefeWerkstattAufgabe(s, a.id, now);
+    }
+    s.abgeschlossenAm = now;
+    speichern(werkstattKey(e.id), s); letzte(`/projekte#${e.id}`);
+    expect(letzterLernschritt(`/projekte#${e.id}`, now)).toBeNull();
+    const v = { ...getPraxisVideo(e.id, 1)!, version: 2 as const, lernpunkte: [{ id: `${e.id}-mitmachen`, kapitelId: "schritt-2", einheitId: e.id, aufgabeId: `${e.id}-a` }] };
+    const lernStand = neuerPraxisVideoLernStand(s.id, v);
+    speicherePraxisVideoLernStand({ ...lernStand, modus: "mitmachen", aktivLernpunktId: `${e.id}-mitmachen` });
+    expect(lernFortsetzung(0, now)).toMatchObject({ href: `/projekte#${e.id}`, schritt: "Mitmachaufgabe im Lernvideo fortsetzen" });
+    speicherePraxisVideoLernStand({ ...lernStand, modus: "mitmachen", lernpunkte: { [`${e.id}-mitmachen`]: "bearbeitet" } });
+    expect(letzterLernschritt(`/projekte#${e.id}`, now)).toBeNull();
+    expect(JSON.parse(appStorage.getItem(werkstattKey(e.id))!).abgaben).toEqual(s.abgaben);
   });
 
   it("bevorzugt die gültige angefangene Einheit, dann fällige Aufgaben, dann die Lernfeldauswahl", () => {
