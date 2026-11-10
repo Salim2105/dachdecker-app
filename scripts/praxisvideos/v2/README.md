@@ -82,9 +82,49 @@ keinen unvollständigen App-Katalog. Erst nach vollständiger Produktion werden
 aktuelle Metadaten und Medienmanifest auf die drei v2-Fassungen umgestellt;
 die ursprünglichen Fassungen bleiben im Archiv erreichbar.
 
+### Vollständige Filme registrieren
+
+Die Registrierung benötigt die unveränderte Kompatibilitätsgrundlage aus
+Commit `d4517ca` (Update 0.15). Der Commit muss in der lokalen Git-Historie
+vorhanden sein. Auf einer frischen Produktionskopie wird diese ignorierte
+Arbeitsdatei einmal vor der Registrierung erzeugt:
+
 ```sh
+node --input-type=module <<'JS'
+import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+const baseline = Object.fromEntries(['praxisvideos-inhalte', 'praxisvideos-medien'].map(name => [
+  name, JSON.parse(execFileSync('git', ['show', 'd4517ca:content/' + name + '.json'], { encoding: 'utf8' }))
+]));
+fs.mkdirSync('.praxisvideo-production/v2', { recursive: true });
+fs.writeFileSync('.praxisvideo-production/v2/compatibility-baseline.json', JSON.stringify(baseline, null, 2) + '\n');
+JS
+```
+
+Erst wenn alle drei Filme, drei Untertiteldateien und drei Poster vollständig
+hergestellt und gesichtet sind:
+
+```sh
+node scripts/praxisvideos/v2/register.mjs
+node scripts/praxisvideos/v2/register.mjs --write
 node scripts/praxisvideos/check.mjs --v016 --deep
 ```
+
+Der erste Aufruf ist ein **reiner Trockenlauf**. Er prüft alle ursprünglichen
+v1-Dateien gegen die Grundlage, die drei gemessenen Sprecherfassungen,
+Mitmachzuordnungen, H.264/1080p/30fps/AAC-Struktur, Untertitel, Größen,
+SHA-256-Werte und die Produktionsbelege einschließlich Modell-/Quellhashes.
+Fehlende oder abweichende Dateien verhindern die Registrierung. Dafür werden
+kein Browser, Blender, TTS oder FFprobe gestartet; die anschließende
+Tiefenprüfung verwendet zusätzlich FFprobe.
+
+Nur `--write` ersetzt die drei aktiven Inhaltsobjekte und ihre neun aktuellen
+Medienverweise. Die übrigen 109 Inhaltsobjekte, das Archiv und veröffentlichte
+v1-Dateien werden nicht überschrieben. Beide neuen JSON-Dateien werden zuerst
+vollständig temporär geschrieben und anschließend umbenannt. Scheitert der
+zweite Dateitausch, wird der bisherige Inhaltskatalog wiederhergestellt. Ein
+erneuter identischer Aufruf verändert nichts. Die Registrierung ist eine
+Produktionsaufgabe und kein Bestandteil von App-Installation oder Wiedergabe.
 
 Die Bild- und Kameraprüfung ist eine technische Sichtprüfung des Lehrmodells.
 Sie ist keine Erprobung am echten Gerät oder an einer ausgeführten Baustelle.
