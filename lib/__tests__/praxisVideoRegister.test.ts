@@ -51,7 +51,7 @@ function captions(clip: PraxisVideo) {
   }
   return "WEBVTT\n\n" + blocks.join("\n\n") + "\n";
 }
-async function fixture() {
+async function fixture(options: { scene?: string; legacySceneIds?: string[] } = {}) {
   const root = await fs.mkdtemp(join(tmpdir(), "praxis-video-register-")); roots.push(root);
   const put = async (path: string, data: string | Uint8Array) => { await fs.mkdir(join(root, path, ".."), { recursive: true }); await fs.writeFile(join(root, path), data); };
   const json = (path: string, data: unknown) => put(path, JSON.stringify(data, null, 2) + "\n");
@@ -71,26 +71,74 @@ async function fixture() {
     return { ...alt, version: 2, dauer: 60, kapitel: alt.kapitel.map((c, j) => ({ ...c, start: c.start * 60 / alt.dauer, ende: j === 6 ? 60 : c.ende * 60 / alt.dauer })), lernpunkte: [{ id: `${id}-mitmachen`, kapitelId: points[i], einheitId: id, aufgabeId: `${id}-${tasks[i]}` }] };
   });
   await json(".praxisvideo-production/v2/content.json", { version: 1, videos: clips });
-  const artifacts = { sources: Object.fromEntries(sources.map(name => [name, hash(name)])), models: Object.fromEntries(models.map(name => [name, hash(name)])), system: hash("system"), light: hash("light") };
-  for (const name of sources) await put(`scripts/praxisvideos/v2/${name}`, name);
+  const artifacts = { sources: Object.fromEntries(sources.map(name => [name, hash(name === "scene.mjs" ? options.scene ?? name : name)])), models: Object.fromEntries(models.map(name => [name, hash(name)])), system: hash("system"), light: hash("light") };
+  for (const name of sources) await put(`scripts/praxisvideos/v2/${name}`, name === "scene.mjs" ? options.scene ?? name : name);
   for (const name of models) await put(`.praxisvideo-production/v2/models/${name}.glb`, name);
   await put(".praxisvideo-production/v2/system.json", "system"); await put("public/dach-medien/v2/gemeinsam/royal_esplanade_1k.hdr", "light");
-  const renderProfile = { width: 1920, height: 1080, fps: 30 }, sourceSha = hash(JSON.stringify({ artifacts, renderProfile }));
+  const renderProfile = { width: 1920, height: 1080, fps: 30 };
   for (const clip of clips) {
+    const clipArtifacts = structuredClone(artifacts);
+    if (options.legacySceneIds?.includes(clip.id)) clipArtifacts.sources["scene.mjs"] = "e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979";
+    const sourceSha = hash(JSON.stringify({ artifacts: clipArtifacts, renderProfile }));
     const mp4 = movie(), audio = Buffer.from("measured-narration:" + clip.id), audioSha256 = hash(audio);
     await put(`public/praxisvideos/v2/${clip.id}.mp4`, mp4); await put(`public/praxisvideos/v2/${clip.id}.vtt`, captions(clip));
     await put(`public/praxisvideos/v2/${clip.id}.webp`, Buffer.from("RIFF0000WEBPstructural-image-fixture"));
     await put(`.praxisvideo-production/v2/audio/${clip.id}/audio.wav`, audio);
     const chapters = clip.kapitel.map(c => ({ id: c.id, start: c.start, ende: c.ende }));
     await json(`.praxisvideo-production/v2/audio/${clip.id}/receipt.json`, { audioSha256, dauer: clip.dauer, kapitel: chapters });
-    await json(`.praxisvideo-production/v2/render/${clip.id}/receipt.json`, { id: clip.id, version: 2, signature: hash(sourceSha + JSON.stringify(clip) + audioSha256), sourceSha, renderProfile, artifacts, audioSha256, sha256: hash(mp4), bytes: mp4.length, duration: 60, width: 1920, height: 1080, fps: 30, frames: 1800, sourceFrames: 1800, chapters });
+    await json(`.praxisvideo-production/v2/render/${clip.id}/receipt.json`, { id: clip.id, version: 2, signature: hash(sourceSha + JSON.stringify(clip) + audioSha256), sourceSha, renderProfile, artifacts: clipArtifacts, audioSha256, sha256: hash(mp4), bytes: mp4.length, duration: 60, width: 1920, height: 1080, fps: 30, frames: 1800, sourceFrames: 1800, chapters });
   }
   const original = await Promise.all([fs.readFile(join(root, "content/praxisvideos-inhalte.json")), fs.readFile(join(root, "content/praxisvideos-medien.json")), fs.readFile(join(root, "content/praxisvideos-archiv.json"))]);
   return { root, content, manifest, clips, original, put, json };
 }
+async function sceneRevisions() {
+  const current = await fs.readFile(new URL("../../scripts/praxisvideos/v2/scene.mjs", import.meta.url), "utf8");
+  const original = current.replace("refs.head.position.z=-.30;", "refs.head.position.z=-.28;").replace("lerp(-.30,.28,q)", "lerp(-.28,.28,q)");
+  const corrected = original.replace("refs.head.position.z=-.28;", "refs.head.position.z=-.30;").replace("lerp(-.28,.28,q)", "lerp(-.30,.28,q)");
+  expect(hash(original)).toBe("e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979");
+  expect(hash(corrected)).toBe("b83817111b17371bd54a56ede9efbda458284128c3e125bdb3414304adb18485");
+  return { original, corrected };
+}
+async function reviseReceipt(f: Awaited<ReturnType<typeof fixture>>, id: string, change: (receipt: Record<string, unknown>) => void) {
+  const file = `.praxisvideo-production/v2/render/${id}/receipt.json`, receipt = JSON.parse(await fs.readFile(join(f.root, file), "utf8"));
+  change(receipt);
+  receipt.sourceSha = hash(JSON.stringify({ artifacts: receipt.artifacts, renderProfile: receipt.renderProfile }));
+  receipt.signature = hash(receipt.sourceSha + JSON.stringify(f.clips.find(c => c.id === id)) + receipt.audioSha256);
+  await f.json(file, receipt);
+}
 afterEach(async () => { vi.restoreAllMocks(); await Promise.all(roots.splice(0).map(root => fs.rm(root, { recursive: true, force: true }))); });
 
 describe("Vollständige Werkstattfilme sicher registrieren", () => {
+  it("behält die echten alten Quellenbelege nur für die unveränderten Anzeichnen-/Verlegeszenen", async () => {
+    const { corrected } = await sceneRevisions();
+    const f = await fixture({ scene: corrected, legacySceneIds: [ids[0], ids[2]] });
+    const receipts = await Promise.all(ids.map(id => fs.readFile(join(f.root, `.praxisvideo-production/v2/render/${id}/receipt.json`))));
+    expect(await registerPraxisVideosV2({ root: f.root })).toMatchObject({ dryRun: true, written: false });
+    expect(await Promise.all(ids.map(id => fs.readFile(join(f.root, `.praxisvideo-production/v2/render/${id}/receipt.json`))))).toEqual(receipts);
+  });
+  it.each(["old-cutting", "old-current-scene", "unknown-scene", "future-current-scene"])("verwirft nicht freigegebene Szenenbelege: %s", async fault => {
+    const { original, corrected } = await sceneRevisions();
+    const scene = fault === "old-current-scene" ? original : fault === "future-current-scene" ? corrected + "\n// other future change\n" : corrected;
+    const f = await fixture({ scene, legacySceneIds: fault === "old-cutting" ? [ids[1]] : [ids[0], ids[2]] });
+    if (fault === "unknown-scene") await reviseReceipt(f, ids[0], r => { (r.artifacts as { sources: Record<string, string> }).sources["scene.mjs"] = "a".repeat(64); });
+    await expect(registerPraxisVideosV2({ root: f.root, write: true })).rejects.toThrow(/Produktionsquelle/);
+    expect(await fs.readFile(join(f.root, "content/praxisvideos-inhalte.json"))).toEqual(f.original[0]);
+    expect(await fs.readFile(join(f.root, "content/praxisvideos-medien.json"))).toEqual(f.original[1]);
+  });
+  it("verwirft unterschiedliche tatsächliche Renderprofile auch bei intern schlüssigen Fingerabdrücken", async () => {
+    const f = await fixture();
+    await reviseReceipt(f, ids[2], r => { r.renderProfile = { ...(r.renderProfile as object), backend: "a different renderer" }; });
+    await expect(registerPraxisVideosV2({ root: f.root })).rejects.toThrow(/unterschiedlichen Renderprofilen/);
+  });
+  it.each(["valid", "wrong-script-hash", "wrong-clip", "wrong-frame-count"])("prüft die nachvollziehbare Nachkodierung aller Quellbilder: %s", async fault => {
+    const f = await fixture(), script = "scripts/praxisvideos/v2/repair-encode.mjs", source = "encode every actual source frame";
+    await f.put(script, source);
+    await reviseReceipt(f, fault === "wrong-clip" ? ids[0] : ids[2], r => {
+      r.encoding = { repair: "full-source-frame-count-v1", script, scriptSha256: fault === "wrong-script-hash" ? "a".repeat(64) : hash(source), frames: fault === "wrong-frame-count" ? 1799 : r.frames, previousFailure: "output-time-limit-trimmed-final-source-frame" };
+    });
+    if (fault === "valid") expect(await registerPraxisVideosV2({ root: f.root })).toMatchObject({ dryRun: true, written: false });
+    else await expect(registerPraxisVideosV2({ root: f.root })).rejects.toThrow(/Nachkodierungsbeleg/);
+  });
   it("prüft im Standardmodus alle Dateien, ohne Katalog, Manifest oder Archiv zu schreiben", async () => {
     const f = await fixture();
     expect(await registerPraxisVideosV2({ root: f.root })).toMatchObject({ dryRun: true, written: false, preservedVideos: 109, activeVideos: 112, activeAssets: 336, historicalAssetsChecked: 336 });

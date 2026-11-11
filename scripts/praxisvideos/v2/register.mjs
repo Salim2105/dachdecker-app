@@ -14,6 +14,11 @@ const MODELS = ["bench", "tile", "tile-cut", "marking", "cutting"];
 const POINTS = ["schritt-2", "schritt-3", "schritt-1"];
 const TASKS = ["a", "b", "a"];
 const EXTENSIONS = [["mp4", "video"], ["vtt", "untertitel"], ["webp", "bild"]];
+// Only the cutting scene changed: its parked blade and cutting start moved
+// 20 mm clear of the head ridge. These two exact revisions leave the marking
+// and laying scenes unchanged; no other historic scene hash is accepted.
+const ORIGINAL_SCENE = "e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979";
+const CORRECTED_SCENE = "b83817111b17371bd54a56ede9efbda458284128c3e125bdb3414304adb18485";
 const sha = value => createHash("sha256").update(value).digest("hex");
 const object = value => !!value && typeof value === "object" && !Array.isArray(value);
 const requireThat = (ok, message) => { if (!ok) throw new Error(message); };
@@ -93,7 +98,7 @@ export async function registerPraxisVideosV2({ root = DEFAULT_ROOT, write = fals
   }
   requireThat(production.version === 1 && Array.isArray(production.videos) && production.videos.length === 3 && new Set(production.videos.map(v => v.id)).size === 3, "Drei vollständige neue Werkstattfilme erwartet.");
   production.videos.forEach(validateClip);
-  const assets = [], sources = new Set();
+  const assets = []; let commonRenderProfile;
   for (const clip of production.videos) {
     const data = {};
     for (const [extension, typ] of EXTENSIONS) {
@@ -114,14 +119,26 @@ export async function registerPraxisVideosV2({ root = DEFAULT_ROOT, write = fals
     requireThat(voice.audioSha256 === audioSha && receipt.audioSha256 === audioSha && voice.dauer === clip.dauer && isDeepStrictEqual(chapterTimes(voice.kapitel), chapterTimes(clip.kapitel)), `Gemessene Erzählung passt nicht zur Fassung: ${clip.id}`);
     const a = receipt.artifacts;
     requireThat(object(a) && object(a.sources) && Object.keys(a.sources).length === SOURCES.length && object(a.models) && Object.keys(a.models).length === MODELS.length, `Quellenbeleg fehlt: ${clip.id}`);
-    for (const source of SOURCES) requireThat(a.sources[source] === sha(await read(join(root, "scripts/praxisvideos/v2", source))), `Produktionsquelle wurde seit dem Rendern verändert: ${source}`);
+    for (const source of SOURCES) {
+      const current = sha(await read(join(root, "scripts/praxisvideos/v2", source)));
+      const unchangedScene = source === "scene.mjs" && current === CORRECTED_SCENE && a.sources[source] === ORIGINAL_SCENE &&
+        ["werkstatt-falzziegel-schnitt", "werkstatt-falzziegel-verlegen"].includes(clip.id);
+      const uncorrectedCutting = source === "scene.mjs" && clip.id === "werkstatt-falzziegel-bearbeiten" && a.sources[source] === ORIGINAL_SCENE;
+      requireThat(!uncorrectedCutting && (a.sources[source] === current || unchangedScene), `Produktionsquelle wurde seit dem Rendern verändert: ${source}`);
+    }
     for (const model of MODELS) requireThat(a.models[model] === sha(await read(join(build, "models", model + ".glb"))), `Produktionsmodell wurde seit dem Rendern verändert: ${model}`);
     requireThat(a.system === sha(await read(join(build, "system.json"))) && a.light === sha(await read(join(root, "public/dach-medien/v2/gemeinsam/royal_esplanade_1k.hdr"))), `Systemkarte oder Lichtquelle wurde seit dem Rendern verändert: ${clip.id}`);
     requireThat(receipt.renderProfile?.width === 1920 && receipt.renderProfile.height === 1080 && receipt.renderProfile.fps === 30 && receipt.sourceSha === sha(JSON.stringify({ artifacts: a, renderProfile: receipt.renderProfile })) &&
       receipt.signature === sha(receipt.sourceSha + JSON.stringify(clip) + audioSha), `Produktionsfingerabdruck ungültig: ${clip.id}`);
-    sources.add(receipt.sourceSha);
+    if (commonRenderProfile === undefined) commonRenderProfile = receipt.renderProfile;
+    else requireThat(isDeepStrictEqual(receipt.renderProfile, commonRenderProfile), "Die Filme stammen aus unterschiedlichen Renderprofilen.");
+    if (receipt.encoding !== undefined) {
+      const encoding = receipt.encoding, script = "scripts/praxisvideos/v2/repair-encode.mjs";
+      requireThat(clip.id === "werkstatt-falzziegel-verlegen" && object(encoding) && Object.keys(encoding).length === 5 &&
+        encoding.repair === "full-source-frame-count-v1" && encoding.script === script && encoding.frames === receipt.frames &&
+        encoding.previousFailure === "output-time-limit-trimmed-final-source-frame" && encoding.scriptSha256 === sha(await read(join(root, script))), `Nachkodierungsbeleg ungültig: ${clip.id}`);
+    }
   }
-  requireThat(sources.size === 1, "Die Filme stammen aus unterschiedlichen Modell- oder Renderständen.");
   const replacements = new Map(production.videos.map(v => [v.id, v])), media = new Map(assets.map(a => [a.id, a]));
   const nextContent = { ...content, videos: content.videos.map(v => replacements.get(v.id) ?? v) };
   const nextManifest = { ...manifest, assets: manifest.assets.map(a => media.get(a.id) ?? a) };

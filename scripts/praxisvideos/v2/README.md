@@ -82,6 +82,32 @@ keinen unvollständigen App-Katalog. Erst nach vollständiger Produktion werden
 aktuelle Metadaten und Medienmanifest auf die drei v2-Fassungen umgestellt;
 die ursprünglichen Fassungen bleiben im Archiv erreichbar.
 
+Die endgültige Schneidefassung verwendet eine um 20 mm zurückgesetzte
+Park- und Startposition der Scheibe, damit sie vor dem Schnitt die erhöhte
+Ziegelkante nicht berührt. Anzeichnen und Verlegen wurden mit den unveränderten
+Szenen bereits vollständig berechnet. Ihre ursprünglichen Quellenbelege bleiben
+erhalten: Die Registrierung erlaubt genau deren fest hinterlegten alten
+`scene.mjs`-Hash und ausschließlich gegenüber dem Hash dieser beiden gezielten
+Positionskorrekturen. Der Schneidefilm muss den aktuellen Szenenstand besitzen.
+Andere Quellen, Modelle, Systemkarte und Licht müssen weiterhin dem aktuellen
+Stand entsprechen; alle drei Filme benötigen dasselbe tatsächliche Renderprofil.
+Bei anderen späteren Szenenänderungen gilt diese Ausnahme nicht.
+
+Falls FFmpegs Ausgabe-Zeitlimit am letzten angebrochenen Bildintervall das letzte
+bereits berechnete Verlegebild abschneidet, kann die vollständige Bildfolge ohne
+erneute Bildproduktion kodiert werden:
+
+```sh
+node scripts/praxisvideos/v2/repair-encode.mjs --id=werkstatt-falzziegel-verlegen
+```
+
+Dieses Werkzeug akzeptiert ausschließlich einen vollständigen, passend
+signierten Verlege-Bildcache und kodiert ausdrücklich alle Quellbilder. Alte
+Fehlausgaben bleiben im ignorierten Produktionsarchiv erhalten. Der neue Beleg
+behält die echten ursprünglichen Bildquellen bei und ergänzt den Hash des
+Nachkodierungsskripts, die Bildzahl und den Grund. Diese Angaben werden bei der
+Registrierung geprüft; sie gelten ausschließlich für den Verlegefilm.
+
 ### Vollständige Filme registrieren
 
 Die Registrierung benötigt die unveränderte Kompatibilitätsgrundlage aus
