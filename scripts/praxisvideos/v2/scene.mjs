@@ -105,7 +105,7 @@ function prepareCutting(){
 const cutShots=[[[.89,1.53,1.07],[0,.92,0]],[[.58,1.26,.65],[.015,.91,0]],[[.38,1.20,.44],[.025,.91,-.015]],[[.46,1.22,.57],[.025,.89,0]],[[.40,1.16,.47],[.045,.93,0]],[[.29,1.13,.35],[.035,.91,.04]],[[.28,1.14,.36],[.025,.91,.08]]];
 function cutting(index,t){
  refs.tile.position.set(0,BOARD+.05,0);refs.tile.rotation.set(0,0,0);refs.cutTile.visible=index>=5;refs.tile.visible=index<5;refs.rest.position.copy(refs.restOriginal);
- refs.head.position.copy(refs.headOriginal);refs.head.position.y=.145;refs.head.position.z=-.28;
+ refs.head.position.copy(refs.headOriginal);refs.head.position.y=.145;refs.head.position.z=-.30;
  refs.halo.visible=false;progressLine(refs.mark,1);progressLine(refs.crack,0);
  for(const p of refs.clampParts)p.mesh.position.y=p.target;
  refs.spinner.rotation.x=0;
@@ -117,7 +117,7 @@ function cutting(index,t){
   addNote('Anriss · freier Schnittweg',V(refs.cut,BOARD+.07,.10),120,105);
  }
  if(index===4){
-  const q=ramp(t,.05,.95);refs.head.position.z=lerp(-.28,.28,q);refs.spinner.rotation.x=t*85;
+  const q=ramp(t,.05,.95);refs.head.position.z=lerp(-.30,.28,q);refs.spinner.rotation.x=t*85;
   // The blade first crosses the finite tile. Separation begins only after the
   // head has completely left the workpiece in the following chapter.
   refs.halo.visible=t>.10&&t<.90;refs.halo.position.set(refs.cut,BOARD+.10,refs.head.position.z);refs.halo.scale.setScalar(.58);
