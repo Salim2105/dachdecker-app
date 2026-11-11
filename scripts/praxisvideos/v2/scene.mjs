@@ -168,7 +168,7 @@ function laying(index,t){
  if(index===6){
   for(let i=0;i<4;i++)tilePose(i,1);
   const retreat=ramp(t,.22,.48),repair=ramp(t,.56,.88),r=refs.tiles[3];r.tile.position.y+=lerp(.035,.10,retreat)*(1-repair);r.tile.position.x+=.035*(1-repair);r.tile.rotation.z=.08*(1-repair);
-  refs.halo.visible=true;refs.halo.position.copy(world(r.tile,V(-.10,.035,0)));addNote(t<.52?'Sitzfehler':'Erneut prüfen',refs.halo.position,150,-90,t<.52?'#8f4639':'#1b5148');
+  refs.halo.visible=true;refs.halo.position.copy(world(r.tile,V(-.10,.035,0)));addNote(t<.52?'Sitzfehler':'Erneut prüfen',refs.halo.position,150,-240,t<.52?'#8f4639':'#1b5148');
  }
  // A–D name the physical tiles, never the empty target positions. Labels are
  // withheld before the checkpoint, then follow the actual moving piece.

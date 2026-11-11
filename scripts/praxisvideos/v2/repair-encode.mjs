@@ -37,16 +37,17 @@ const voice = await json(path.join(build, "audio", id, "receipt.json"));
 const audioSha = sha(await fs.readFile(audio));
 requireThat(voice.audioSha256 === audioSha && voice.dauer === clip.dauer, "Erzählung stimmt nicht mit der Fassung überein.");
 const candidates = [];
+const currentSceneSha = sha(await fs.readFile(path.join(root, "scripts/praxisvideos/v2/scene.mjs")));
 for (const name of await fs.readdir(work)) {
   if (!/^[a-f0-9]{20}$/.test(name)) continue;
   const folder = path.join(work, name);
   try {
     const receipt = await json(path.join(folder, "receipt.json"));
-    if (receipt.clip === id && receipt.frames === frames && receipt.signature === sha(receipt.sourceSha + JSON.stringify(clip) + audioSha) &&
+    if (receipt.clip === id && receipt.frames === frames && receipt.artifacts?.sources?.["scene.mjs"] === currentSceneSha && receipt.signature === sha(receipt.sourceSha + JSON.stringify(clip) + audioSha) &&
         receipt.sourceSha === sha(JSON.stringify({ artifacts: receipt.artifacts, renderProfile: receipt.renderProfile }))) candidates.push({ folder, receipt });
   } catch { /* An incomplete cache is not usable. */ }
 }
-requireThat(candidates.length === 1, "Genau ein vollständiger, passender Bild-Cache wird benötigt.");
+requireThat(candidates.length === 1, "Genau ein vollständiger Bild-Cache der aktuellen Szene wird benötigt. Alte Szenen werden nicht still übernommen.");
 const { folder, receipt } = candidates[0];
 const images = (await fs.readdir(folder)).filter(name => /^\d{6}\.jpg$/.test(name)).sort();
 requireThat(images.length === frames && images.every((name, i) => name === `${String(i).padStart(6, "0")}.jpg`), "Einzelbilder sind unvollständig.");
