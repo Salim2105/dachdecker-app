@@ -84,11 +84,14 @@ die ursprünglichen Fassungen bleiben im Archiv erreichbar.
 
 Die endgültige Schneidefassung verwendet eine um 20 mm zurückgesetzte
 Park- und Startposition der Scheibe, damit sie vor dem Schnitt die erhöhte
-Ziegelkante nicht berührt. Anzeichnen und Verlegen wurden mit den unveränderten
-Szenen bereits vollständig berechnet. Ihre ursprünglichen Quellenbelege bleiben
-erhalten: Die Registrierung erlaubt genau deren fest hinterlegten alten
-`scene.mjs`-Hash und ausschließlich gegenüber dem Hash dieser beiden gezielten
-Positionskorrekturen. Der Schneidefilm muss den aktuellen Szenenstand besitzen.
+Ziegelkante nicht berührt. Danach wurde ausschließlich im letzten Verlegekapitel
+die Beschriftung „Erneut prüfen“ nach oben versetzt, damit die Teilemarkierung D
+sie nicht verdeckt. Die unveränderten Filmszenen werden durch diese jeweils
+anderen Korrekturen nicht neu berechnet; ihre echten Quellenbelege bleiben
+erhalten. Gegenüber genau dem endgültigen, fest hinterlegten `scene.mjs`-Hash
+erlaubt die Registrierung den ursprünglichen Szenenhash nur für Anzeichnen
+und den Hash der korrigierten Parkposition nur für Schneiden. Verlegen muss
+den endgültigen Stand einschließlich der neuen Beschriftungsposition besitzen.
 Andere Quellen, Modelle, Systemkarte und Licht müssen weiterhin dem aktuellen
 Stand entsprechen; alle drei Filme benötigen dasselbe tatsächliche Renderprofil.
 Bei anderen späteren Szenenänderungen gilt diese Ausnahme nicht.
@@ -102,7 +105,9 @@ node scripts/praxisvideos/v2/repair-encode.mjs --id=werkstatt-falzziegel-verlege
 ```
 
 Dieses Werkzeug akzeptiert ausschließlich einen vollständigen, passend
-signierten Verlege-Bildcache und kodiert ausdrücklich alle Quellbilder. Alte
+signierten Verlege-Bildcache mit dem aktuellen Szenenhash und kodiert
+ausdrücklich alle Quellbilder. Ein alter Cache wird auch dann nicht ausgewählt,
+wenn er bereits vollständig ist; bei mehreren passenden Caches wird abgebrochen. Alte
 Fehlausgaben bleiben im ignorierten Produktionsarchiv erhalten. Der neue Beleg
 behält die echten ursprünglichen Bildquellen bei und ergänzt den Hash des
 Nachkodierungsskripts, die Bildzahl und den Grund. Diese Angaben werden bei der

@@ -51,7 +51,7 @@ function captions(clip: PraxisVideo) {
   }
   return "WEBVTT\n\n" + blocks.join("\n\n") + "\n";
 }
-async function fixture(options: { scene?: string; legacySceneIds?: string[] } = {}) {
+async function fixture(options: { scene?: string; legacySceneIds?: string[]; sceneHashes?: Record<string, string> } = {}) {
   const root = await fs.mkdtemp(join(tmpdir(), "praxis-video-register-")); roots.push(root);
   const put = async (path: string, data: string | Uint8Array) => { await fs.mkdir(join(root, path, ".."), { recursive: true }); await fs.writeFile(join(root, path), data); };
   const json = (path: string, data: unknown) => put(path, JSON.stringify(data, null, 2) + "\n");
@@ -79,6 +79,7 @@ async function fixture(options: { scene?: string; legacySceneIds?: string[] } = 
   for (const clip of clips) {
     const clipArtifacts = structuredClone(artifacts);
     if (options.legacySceneIds?.includes(clip.id)) clipArtifacts.sources["scene.mjs"] = "e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979";
+    if (options.sceneHashes?.[clip.id]) clipArtifacts.sources["scene.mjs"] = options.sceneHashes[clip.id];
     const sourceSha = hash(JSON.stringify({ artifacts: clipArtifacts, renderProfile }));
     const mp4 = movie(), audio = Buffer.from("measured-narration:" + clip.id), audioSha256 = hash(audio);
     await put(`public/praxisvideos/v2/${clip.id}.mp4`, mp4); await put(`public/praxisvideos/v2/${clip.id}.vtt`, captions(clip));
@@ -93,11 +94,14 @@ async function fixture(options: { scene?: string; legacySceneIds?: string[] } = 
 }
 async function sceneRevisions() {
   const current = await fs.readFile(new URL("../../scripts/praxisvideos/v2/scene.mjs", import.meta.url), "utf8");
-  const original = current.replace("refs.head.position.z=-.30;", "refs.head.position.z=-.28;").replace("lerp(-.30,.28,q)", "lerp(-.28,.28,q)");
+  const original = current.replace("refs.head.position.z=-.30;", "refs.head.position.z=-.28;").replace("lerp(-.30,.28,q)", "lerp(-.28,.28,q)")
+    .replace("refs.halo.position,150,-240,t<.52?", "refs.halo.position,150,-90,t<.52?");
   const corrected = original.replace("refs.head.position.z=-.28;", "refs.head.position.z=-.30;").replace("lerp(-.28,.28,q)", "lerp(-.30,.28,q)");
+  const final = corrected.replace("refs.halo.position,150,-90,t<.52?", "refs.halo.position,150,-240,t<.52?");
   expect(hash(original)).toBe("e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979");
   expect(hash(corrected)).toBe("b83817111b17371bd54a56ede9efbda458284128c3e125bdb3414304adb18485");
-  return { original, corrected };
+  expect(hash(final)).toBe("31c9767aba64a25c2dde9a2ee53522b3b85a9a04689825f1ffbe24f0141fbede");
+  return { original, corrected, final };
 }
 async function reviseReceipt(f: Awaited<ReturnType<typeof fixture>>, id: string, change: (receipt: Record<string, unknown>) => void) {
   const file = `.praxisvideo-production/v2/render/${id}/receipt.json`, receipt = JSON.parse(await fs.readFile(join(f.root, file), "utf8"));
@@ -109,6 +113,26 @@ async function reviseReceipt(f: Awaited<ReturnType<typeof fixture>>, id: string,
 afterEach(async () => { vi.restoreAllMocks(); await Promise.all(roots.splice(0).map(root => fs.rm(root, { recursive: true, force: true }))); });
 
 describe("Vollständige Werkstattfilme sicher registrieren", () => {
+  it("bewahrt die echten Belege je unverändertem Film nach beiden unabhängigen Szenenkorrekturen", async () => {
+    const { original, corrected, final } = await sceneRevisions();
+    const f = await fixture({ scene: final, sceneHashes: { [ids[0]]: hash(original), [ids[1]]: hash(corrected) } });
+    const receipts = await Promise.all(ids.map(id => fs.readFile(join(f.root, `.praxisvideo-production/v2/render/${id}/receipt.json`))));
+    expect(await registerPraxisVideosV2({ root: f.root })).toMatchObject({ dryRun: true, written: false });
+    expect(await Promise.all(ids.map(id => fs.readFile(join(f.root, `.praxisvideo-production/v2/render/${id}/receipt.json`))))).toEqual(receipts);
+  });
+  it.each(["old-cutting", "old-laying", "pre-label-laying", "wrong-clip-revision", "unknown-scene", "future-current-scene"])("verwirft veraltete oder falsch zugeordnete Belege nach der Beschriftungskorrektur: %s", async fault => {
+    const { original, corrected, final } = await sceneRevisions();
+    const sceneHashes = { [ids[0]]: hash(original), [ids[1]]: hash(corrected) };
+    if (fault === "old-cutting") sceneHashes[ids[1]] = hash(original);
+    if (fault === "old-laying") sceneHashes[ids[2]] = hash(original);
+    if (fault === "pre-label-laying") sceneHashes[ids[2]] = hash(corrected);
+    if (fault === "wrong-clip-revision") sceneHashes[ids[0]] = hash(corrected);
+    if (fault === "unknown-scene") sceneHashes[ids[1]] = "a".repeat(64);
+    const f = await fixture({ scene: final + (fault === "future-current-scene" ? "\n// another later change\n" : ""), sceneHashes });
+    await expect(registerPraxisVideosV2({ root: f.root, write: true })).rejects.toThrow(/Produktionsquelle/);
+    expect(await fs.readFile(join(f.root, "content/praxisvideos-inhalte.json"))).toEqual(f.original[0]);
+    expect(await fs.readFile(join(f.root, "content/praxisvideos-medien.json"))).toEqual(f.original[1]);
+  });
   it("behält die echten alten Quellenbelege nur für die unveränderten Anzeichnen-/Verlegeszenen", async () => {
     const { corrected } = await sceneRevisions();
     const f = await fixture({ scene: corrected, legacySceneIds: [ids[0], ids[2]] });

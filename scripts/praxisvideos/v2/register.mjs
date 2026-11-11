@@ -14,11 +14,13 @@ const MODELS = ["bench", "tile", "tile-cut", "marking", "cutting"];
 const POINTS = ["schritt-2", "schritt-3", "schritt-1"];
 const TASKS = ["a", "b", "a"];
 const EXTENSIONS = [["mp4", "video"], ["vtt", "untertitel"], ["webp", "bild"]];
-// Only the cutting scene changed: its parked blade and cutting start moved
-// 20 mm clear of the head ridge. These two exact revisions leave the marking
-// and laying scenes unchanged; no other historic scene hash is accepted.
+// Two isolated corrections leave the other scenes unchanged: the cutting
+// blade's parked/start position, then the laying scene's final callout.
+// Historic receipts are accepted only for their unaffected clip and against
+// the exact approved current revision, never against later scene changes.
 const ORIGINAL_SCENE = "e9dc726a488cf3134768ee5a384fc8485620d88b8cd4ce745800636d98bc1979";
-const CORRECTED_SCENE = "b83817111b17371bd54a56ede9efbda458284128c3e125bdb3414304adb18485";
+const CUTTING_CORRECTED_SCENE = "b83817111b17371bd54a56ede9efbda458284128c3e125bdb3414304adb18485";
+const FINAL_SCENE = "31c9767aba64a25c2dde9a2ee53522b3b85a9a04689825f1ffbe24f0141fbede";
 const sha = value => createHash("sha256").update(value).digest("hex");
 const object = value => !!value && typeof value === "object" && !Array.isArray(value);
 const requireThat = (ok, message) => { if (!ok) throw new Error(message); };
@@ -121,8 +123,13 @@ export async function registerPraxisVideosV2({ root = DEFAULT_ROOT, write = fals
     requireThat(object(a) && object(a.sources) && Object.keys(a.sources).length === SOURCES.length && object(a.models) && Object.keys(a.models).length === MODELS.length, `Quellenbeleg fehlt: ${clip.id}`);
     for (const source of SOURCES) {
       const current = sha(await read(join(root, "scripts/praxisvideos/v2", source)));
-      const unchangedScene = source === "scene.mjs" && current === CORRECTED_SCENE && a.sources[source] === ORIGINAL_SCENE &&
-        ["werkstatt-falzziegel-schnitt", "werkstatt-falzziegel-verlegen"].includes(clip.id);
+      const unchangedScene = source === "scene.mjs" && (
+        current === CUTTING_CORRECTED_SCENE && a.sources[source] === ORIGINAL_SCENE && ["werkstatt-falzziegel-schnitt", "werkstatt-falzziegel-verlegen"].includes(clip.id) ||
+        current === FINAL_SCENE && (
+          clip.id === "werkstatt-falzziegel-schnitt" && a.sources[source] === ORIGINAL_SCENE ||
+          clip.id === "werkstatt-falzziegel-bearbeiten" && a.sources[source] === CUTTING_CORRECTED_SCENE
+        )
+      );
       const uncorrectedCutting = source === "scene.mjs" && clip.id === "werkstatt-falzziegel-bearbeiten" && a.sources[source] === ORIGINAL_SCENE;
       requireThat(!uncorrectedCutting && (a.sources[source] === current || unchangedScene), `Produktionsquelle wurde seit dem Rendern verändert: ${source}`);
     }
