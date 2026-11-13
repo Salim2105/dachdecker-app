@@ -44,11 +44,38 @@ function PraxisVideoEdition(props: PraxisVideoPlayerProps) {
   const gewaehlt = alteFassung && vorher ? vorher : props.video;
   return <div className={styles.edition}>
     {vorher && (altGespeichert || alteFassung) && <div className={styles.editionChoice}><p>{alteFassung ? "Du siehst die gespeicherte ältere Fassung mit ihren eigenen Kapiteln und Untertiteln." : "Eine ältere Fassung ist auf diesem Gerät vollständig gespeichert."}</p><button type="button" disabled={props.disabled} onClick={() => setAlteFassung(!alteFassung)}>{alteFassung ? "Aktuelle Fassung öffnen" : "Gespeicherte ältere Fassung ansehen"}</button></div>}
-    <PraxisVideoAufGeraet key={`${gewaehlt.id}:${gewaehlt.version}:${props.versuchId ?? ""}`} {...props} video={gewaehlt} aeltereWiedergabe={alteFassung && !!vorher} />
+    <PraxisVideoQuelle key={`${gewaehlt.id}:${gewaehlt.version}:${props.versuchId ?? ""}`} {...props} video={gewaehlt} aeltereWiedergabe={alteFassung && !!vorher} />
   </div>;
 }
 
-function PraxisVideoAufGeraet({ video, onPlay, disabled = false, studio = false, versuchId, renderLernpunkt, istLernpunktBearbeitet, onLernpunktAktiv, aeltereWiedergabe = false }: PraxisVideoPlayerProps & { aeltereWiedergabe?: boolean }) {
+type EditionProps = PraxisVideoPlayerProps & { aeltereWiedergabe?: boolean };
+
+/** Keep a verified offline file separate from the browser's earlier online
+ * sparse media resource. Freeze this choice until the edition is reopened:
+ * finishing a download must not replace a film that is already playing. */
+function PraxisVideoQuelle(props: EditionProps) {
+  const [start] = useState(() => ({ paket: praxisVideoClipPaket(props.video), asset: praxisVideoMedien(props.video).video }));
+  const [quelle, setQuelle] = useState<{ url?: string } | null>(null);
+  useEffect(() => {
+    let lebt = true;
+    const vorbereiten = async () => {
+      let url = start.asset?.url;
+      try {
+        const status = await praxisVideoPaketStatus(start.paket);
+        if (status.status === "gespeichert" && start.asset && /^[a-f0-9]{64}$/.test(start.asset.sha256)) {
+          url = `${start.asset.url}?praxispaket=${start.asset.sha256}`;
+        }
+      } catch { /* Unavailable package storage does not prevent online playback. */ }
+      if (lebt) setQuelle({ url });
+    };
+    void vorbereiten();
+    return () => { lebt = false; };
+  }, [start]);
+  if (!quelle) return <div className={styles.player} role="status" aria-busy="true">Lernvideo wird vorbereitet …</div>;
+  return <PraxisVideoAufGeraet {...props} wiedergabeUrl={quelle.url} />;
+}
+
+function PraxisVideoAufGeraet({ video, onPlay, disabled = false, studio = false, versuchId, renderLernpunkt, istLernpunktBearbeitet, onLernpunktAktiv, aeltereWiedergabe = false, wiedergabeUrl }: EditionProps & { wiedergabeUrl?: string }) {
   const [anfang] = useState(() => {
     try { const gespeichert = ladePraxisVideoPosition(video.id, video.version); return { einstellungen: ladePraxisVideoEinstellungen(), position: gespeichert?.videoVersion === video.version ? gespeichert.position : 0, fehler: "" }; }
     catch (error) { return { einstellungen: { sprecher: true, untertitel: true }, position: 0, fehler: fehlermeldung(error) }; }
@@ -214,7 +241,7 @@ function PraxisVideoAufGeraet({ video, onPlay, disabled = false, studio = false,
       onRateChange={event => setRate(event.currentTarget.playbackRate)}
       onLoadedMetadata={event => { setMedienFehler(false); anwenden(aktuell.current); if (!wiederhergestellt.current) { wiederhergestellt.current = true; const film = event.currentTarget; film.currentTime = letztePosition.current < film.duration ? letztePosition.current : 0; letzteZeit.current = film.currentTime; setPosition(film.currentTime); } }}
       onError={() => setMedienFehler(true)}>
-      <source src={medien.video.url} type="video/mp4" onError={() => setMedienFehler(true)} />
+      <source src={wiedergabeUrl ?? medien.video.url} type="video/mp4" onError={() => setMedienFehler(true)} />
       {medien.untertitel && <track kind="captions" label="Deutsch" srcLang="de" src={medien.untertitel.url} default={anfang.einstellungen.untertitel} onLoad={() => anwenden(aktuell.current)} />}
       Dein Browser kann diesen Film nicht abspielen. Die Kapitel und der vollständige Text stehen darunter.
     </video> : <p className={styles.unavailable}>Der Film ist auf diesem Gerät noch nicht verfügbar. Du kannst die Arbeitsschritte unten als Text lesen.</p>}
