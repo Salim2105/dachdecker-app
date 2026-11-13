@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.15.0**: [Klarere Lerneinstiege und 112 lokal produzierte Praxisvideos](docs/lernwerkstatt-0.15.md) mit genauer Fortsetzung auf der Startseite, vier Projekteinstiegen, drei Mathegruppen und getrennt schaltbarem deutschem Sprecher und Untertiteln. Alle 336 Videodateien sind vorhanden; Build-, Browser- und Offlineprüfungen bestehen. Die noch offenen Tests auf echten Geräten stehen im Release-Dokument.
+Neu in **0.16.0**: [Drei überarbeitete Falzziegel-Werkstattfilme mit Mitmachaufgaben](docs/werkstattfilme-0.16.md) zu Anzeichnen, Schneiden und Verlegen. Die neue Fassung verwendet Full HD mit 30 Bildern pro Sekunde und übernimmt im Mitmachmodus die vorhandenen Werkstattaufgaben. Die übrigen 109 Filme und gespeicherten Lernstände bleiben erhalten. Prüfstand und noch offene Erprobungen stehen im Release-Dokument.
+
+Seit **0.15.0**: [Klarere Lerneinstiege und 112 lokal produzierte Praxisvideos](docs/lernwerkstatt-0.15.md) mit genauer Fortsetzung auf der Startseite, vier Projekteinstiegen, drei Mathegruppen und getrennt schaltbarem deutschem Sprecher und Untertiteln.
 
 Seit **0.14.0**: [Überarbeitetes 3D-Lernstudio](docs/dach3d-studio-0.14.md) mit einer großen Modellansicht, begleitenden Lernschritten, weicheren Kamerabewegungen und neu erzeugten Dachmodellen und Renderansichten.
 
