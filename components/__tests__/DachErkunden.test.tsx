@@ -65,14 +65,14 @@ describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
     expect(screen.queryByText("Lernvideos offline speichern")).toBeNull();
     expect(screen.getByTestId("dachmodell")).toBeDefined();
   });
-  it("tauscht das Modell gegen den passenden Film und vermerkt erst dessen Wiedergabe als Lernhilfe", () => {
+  it("tauscht das Modell gegen den passenden Film und vermerkt erst dessen Wiedergabe als Lernhilfe", async () => {
     videoMedien.verfuegbar = true;
     const clip = getDachPraxisVideo("steildach", "falzziegel", "s03")!;
     render(<DachErkunden form="steildach" detailId="s03" />);
     const nachweise = ladeKompetenzNachweise();
     fireEvent.click(screen.getByRole("button", { name: "Lernvideo" }));
     expect(screen.queryByTestId("dachmodell")).toBeNull();
-    const film = screen.getByLabelText(clip.titel);
+    const film = await screen.findByLabelText(clip.titel);
     expect(film.querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
     expect(ladeDachStand()!.hilfeEreignisse.some(h => h.art.startsWith("video:"))).toBe(false);
     fireEvent.play(film);

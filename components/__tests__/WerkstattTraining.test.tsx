@@ -33,14 +33,14 @@ beforeEach(() => { videoMedien.verfuegbar = false; videoMedien.version2 = false;
 afterEach(async () => { cleanup(); vi.restoreAllMocks(); await retryStorageWrites(); });
 
 describe("Handwerkliches Werkstatttraining", () => {
-  it("bewertet den Video-Lernpunkt nach Aufgaben-ID, ohne die andere Übung oder den Ablauf auszutauschen", () => {
+  it("bewertet den Video-Lernpunkt nach Aufgaben-ID, ohne die andere Übung oder den Ablauf auszutauschen", async () => {
     videoMedien.verfuegbar = true; videoMedien.version2 = true;
     const e = falz.einheiten.find(e => e.slug === "bearbeiten")!;
     const clip = getWerkstattPraxisVideo("falzziegel", "bearbeiten")!;
     render(<WerkstattTraining einheitId={e.id} />);
     const vor = ladeWerkstattStand(e.id)!;
     expect(vor.aufgabeIndex).toBe(0);
-    fireEvent.click(screen.getByRole("button", { name: "Mitmachen" }));
+    fireEvent.click(await screen.findByRole("button", { name: "Mitmachen" }));
     const video = screen.getByLabelText(clip.titel) as HTMLVideoElement;
     video.currentTime = clip.kapitel.find(k => k.id === "schritt-3")!.start + .2;
     fireEvent.seeked(video);
@@ -60,12 +60,12 @@ describe("Handwerkliches Werkstatttraining", () => {
     expect(ladeWerkstattStand(e.id)!.abgaben[`${e.id}-b`]).toHaveLength(1);
   });
 
-  it.each(WERKSTATT_PFADE.flatMap(p => ["schnitt", "bearbeiten", "verlegen", "kontrolle"].map(slug => p.einheiten.find(e => e.slug === slug)!)))("zeigt den passenden 3D-Handgriff für $id ohne vorzeitigen Lernnachweis", e => {
+  it.each(WERKSTATT_PFADE.flatMap(p => ["schnitt", "bearbeiten", "verlegen", "kontrolle"].map(slug => p.einheiten.find(e => e.slug === slug)!)))("zeigt den passenden 3D-Handgriff für $id ohne vorzeitigen Lernnachweis", async e => {
     videoMedien.verfuegbar = true;
     const clip = getWerkstattPraxisVideo(e.pfadId, e.slug)!;
     render(<WerkstattTraining einheitId={e.id} />);
     expect(screen.getByRole("region", { name: "3D-Handgriff zur Werkstatteinheit" })).toBeDefined();
-    const film = screen.getByLabelText(clip.titel);
+    const film = await screen.findByLabelText(clip.titel);
     expect(film.querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
     expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([]);
     expect(ladeKompetenzNachweise()).toEqual([]);
@@ -74,13 +74,13 @@ describe("Handwerkliches Werkstatttraining", () => {
     expect(ladeWerkstattStand(e.id)!.geprueft).toEqual([]);
     expect(ladeKompetenzNachweise()).toEqual([]);
   });
-  it("bietet für andere Einheiten den passenden Dachzusammenhang an", () => {
+  it("bietet für andere Einheiten den passenden Dachzusammenhang an", async () => {
     videoMedien.verfuegbar = true;
     const e = falz.einheiten[0], medium = werkstattDachMedium(e, e.bildschritte[0].ansicht)!;
     const clip = getDachPraxisVideo(medium.form, medium.deckung, medium.detailId)!;
     render(<WerkstattTraining einheitId={e.id} />);
     expect(screen.getByRole("region", { name: "Lernvideo zum Dachaufbau" })).toBeDefined();
-    expect(screen.getByLabelText(clip.titel).querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
+    expect((await screen.findByLabelText(clip.titel)).querySelector("source")?.getAttribute("src")).toContain(`${clip.id}.mp4`);
     expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([]);
   });
   it("lässt ohne veröffentlichte Videodateien die Werkstatteinheit vollständig benutzbar", () => {

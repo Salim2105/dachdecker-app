@@ -94,12 +94,12 @@ describe("Neue Praxisvideofassungen ohne verlorene alte Lernstände", () => {
     const alt = stand.speicherePraxisVideoPosition(id, 70), neu = stand.speicherePraxisVideoPosition(id, 12, 2);
     const mitmachen = lern.neuerPraxisVideoLernStand("werkstatt-versuch-123", clip);
     mitmachen.modus = "mitmachen"; mitmachen.aktivLernpunktId = clip.lernpunkte![0].id;
-    lern.speicherePraxisVideoLernStand(mitmachen);
+    const gespeichert = lern.speicherePraxisVideoLernStand(mitmachen);
     const archive = backup.pruefeArchiv(await backup.exportiereArchiv())!;
     expect(archive).not.toBeNull(); expect(archive.dateien.size).toBe(0);
     storage.appStorage.clear(); await backup.importiereArchiv(archive);
     expect(stand.ladePraxisVideoPosition(id, 1)).toEqual(alt); expect(stand.ladePraxisVideoPosition(id, 2)).toEqual(neu);
-    expect(lern.ladePraxisVideoLernStand("werkstatt-versuch-123", clip)).toEqual(mitmachen);
+    expect(lern.ladePraxisVideoLernStand("werkstatt-versuch-123", clip)).toEqual(gespeichert);
     const legacy = backup.pruefeArchiv(new TextEncoder().encode(JSON.stringify({ app: "dachdecker-lernstand", version: 1, daten: { [stand.praxisVideoPositionenKey]: JSON.stringify({ [id]: alt }) } })))!;
     expect(legacy.version).toBe(1); await backup.importiereArchiv(legacy);
     expect(stand.ladePraxisVideoPosition(id, 1)).toEqual(alt); expect(stand.ladePraxisVideoPosition(id, 2)).toEqual(neu);
