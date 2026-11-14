@@ -17,6 +17,7 @@ import type { DachAnsicht, DachDeckung, DachErkundungStand, DachForm, DachGruppe
 import { DachBetrachter } from "./DachBetrachter";
 import { DachBild } from "./DachBild";
 import styles from "./DachErkunden.module.css";
+import { filmGewuenscht } from "@/lib/themenVerknuepfungen";
 
 const subscribe = () => () => {};
 const ready = () => true;
@@ -55,7 +56,8 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
         const p = stand.jeDach[routeForm];
         const target = routeDetail && detail?.formen.includes(routeForm) ? routeDetail : null;
         const deckung = routeDeckung && getDachModell(routeForm)!.deckungen.includes(routeDeckung) ? routeDeckung : p.deckung;
-        const ziel = { ...p, deckung, detailId: target, ...(p.detailId !== target ? { phase: p.modus === "probelauf" ? "aufgaben" as const : "erkennen" as const, schritt: 0, kamera: target ? "nah" as const : "gesamt" as const, orbit: undefined } : {}) };
+        const film = target && filmGewuenscht(window.location.search) ? getDachPraxisVideo(routeForm, deckung, target) : undefined;
+        const ziel = { ...p, deckung, detailId: target, ...(p.detailId !== target ? { phase: p.modus === "probelauf" ? "aufgaben" as const : "erkennen" as const, schritt: 0, kamera: target ? "nah" as const : "gesamt" as const, orbit: undefined } : {}), ...(film && praxisVideoMedien(film).video ? { phase: "erkennen" as const } : {}) };
         stand = { ...stand, revision: stand.revision + 1, aktualisiertAm: Math.max(stand.aktualisiertAm, Date.now()), form: routeForm,
           jeDach: { ...stand.jeDach, [routeForm]: ziel } };
       }
@@ -65,7 +67,7 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
   const [stand, setStand] = useState(anfang.stand), aktuell = useRef(stand);
   const [fehler, setFehler] = useState(anfang.fehler), [gruppe, setGruppe] = useState<DachGruppe>(() => getDachDetail(anfang.stand?.jeDach[anfang.stand.form].detailId ?? "")?.gruppe ?? "dachraender"), [suche, setSuche] = useState("");
   const [spielen, setSpielen] = useState(false), [reduziert, setReduziert] = useState(false), [fehlerBild, setFehlerBild] = useState(false), [kameraReset, setKameraReset] = useState(0), [hinweisOffen, setHinweisOffen] = useState(false);
-  const [darstellung, setDarstellung] = useState<"modell" | "video">("modell");
+  const [darstellung, setDarstellung] = useState<"modell" | "video">(() => filmGewuenscht(window.location.search) ? "video" : "modell");
   const navigationLaeuft = useRef(false);
   const [navigationBusy, setNavigationBusy] = useState(false);
   const [auswahlOffen, setAuswahlOffen] = useState(() => !anfang.stand?.jeDach[anfang.stand.form].detailId);
@@ -271,7 +273,7 @@ function DachAufGeraet({ form: routeForm, detailId: routeDetail, deckung: routeD
 
   return <div className={styles.page}>
     <header className={styles.hero}>
-      <div><LernLink className={styles.back} href="/projekte?ansicht=uebersicht">Baustellenprojekte <span aria-hidden="true">/</span></LernLink><span className={styles.breadcrumb}>Dachstudio</span><h1>3D-Dach entdecken</h1><p>Räumlich verstehen. Sicher entscheiden. Im Handwerk anwenden.</p></div>
+      <div><LernLink className={styles.back} href="/projekte?ansicht=uebersicht">Handwerk &amp; Projekte <span aria-hidden="true">/</span></LernLink><span className={styles.breadcrumb}>Dachstudio</span><h1>3D-Dach entdecken</h1><p>Räumlich verstehen. Sicher entscheiden. Im Handwerk anwenden.</p></div>
       <div className={styles.heroMeta}><span>INTERAKTIVES LEHRMODELL</span><strong>34 Details <i aria-hidden="true">·</i> 68 Kontrollfragen</strong></div>
     </header>
     {fehler && <div role="alert" className={styles.error}><p>{fehler}</p><button className={styles.secondary} type="button" onClick={() => speichern(aktuell.current!)}>Speichern erneut versuchen</button></div>}

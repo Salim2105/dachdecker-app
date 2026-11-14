@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.16.0**: [Drei überarbeitete Falzziegel-Werkstattfilme mit Mitmachaufgaben](docs/werkstattfilme-0.16.md) zu Anzeichnen, Schneiden und Verlegen. Die neue Fassung verwendet Full HD mit 30 Bildern pro Sekunde und übernimmt im Mitmachmodus die vorhandenen Werkstattaufgaben. Die übrigen 109 Filme und gespeicherten Lernstände bleiben erhalten. Prüfstand und noch offene Erprobungen stehen im Release-Dokument.
+Neu in **0.17.0**: [Themen gemeinsam finden und übersichtlicher weiterlernen](docs/uebersicht-0.17.md) mit einer gemeinsamen Suche, einklappbaren Menügruppen, „Handwerk & Projekte“, passenden Lernverbindungen und dem gemeinsamen Menü „Mehr“ für Darstellung und Service. Die 16 Bereiche und bisherigen Lernstände bleiben erhalten.
+
+Seit **0.16.0**: [Drei überarbeitete Falzziegel-Werkstattfilme mit Mitmachaufgaben](docs/werkstattfilme-0.16.md) zu Anzeichnen, Schneiden und Verlegen. Die neue Fassung verwendet Full HD mit 30 Bildern pro Sekunde und übernimmt im Mitmachmodus die vorhandenen Werkstattaufgaben. Die übrigen 109 Filme und gespeicherten Lernstände bleiben erhalten. Prüfstand und noch offene Erprobungen stehen im Release-Dokument.
 
 Seit **0.15.0**: [Klarere Lerneinstiege und 112 lokal produzierte Praxisvideos](docs/lernwerkstatt-0.15.md) mit genauer Fortsetzung auf der Startseite, vier Projekteinstiegen, drei Mathegruppen und getrennt schaltbarem deutschem Sprecher und Untertiteln.
 
@@ -26,10 +28,10 @@ Für Kollegen mit iPhone: [Test-Link ohne Anmeldung erstellen](docs/kollegen-pro
 |---|---|
 | Mein Lernen | Übersicht · Tagesrunde · Gezielt weiterüben · Lernstand & Sicherungen |
 | Wissen & Fächer | Lernfelder · Fachmathe · Deutsch fürs Handwerk · Baustellenenglisch · Fachbegriffe |
-| Üben & Praxis | Quiz & Aufgaben · Bildtraining · Zeichnen · Baustellenprojekte · Praxisfälle |
+| Üben & Praxis | Quiz & Aufgaben · Bildtraining · Zeichnen · Handwerk & Projekte · Praxisfälle |
 | Prüfung & Werkzeuge | Prüfungen · Rechner |
 
-Auf dem Mac scrollt die Seitenleiste unabhängig von der Aufgabe. Auf dem Handy öffnen „Start“, „Heute“ und „Lernstand“ die wichtigsten Seiten; „Bereiche“ öffnet die vollständige Liste über der aktuellen Aufgabe. Rückmeldungen und Erprobungsbogen stehen zusätzlich unter Service.
+Auf dem Mac scrollt die Seitenleiste unabhängig von der Aufgabe. Menügruppen lassen sich einzeln aufklappen; alle 16 Bereiche bleiben direkt erreichbar. Die gemeinsame Themensuche steht auf der Startseite und über „Suchen“ bereit. Auf dem Handy öffnen „Start“, „Heute“ und „Lernstand“ die wichtigsten Seiten; „Bereiche“ öffnet die geordnete Navigation über der aktuellen Aufgabe. Schriftgröße, Hell/Dunkel, Rückmeldungen und Erprobungsbogen stehen unter „Mehr“.
 
 Rechner und Begriffshilfe öffnen sich neben der Aufgabe. Indexierte Lernstände, Prüfungen, Vektorzeichnungen und Fotos liegen auf dem Gerät. Vollständige Sicherungen sind ZIP-Dateien; ältere JSON-Sicherungen bleiben importierbar. Es gibt keine Konten oder Cloud-Synchronisierung.
 

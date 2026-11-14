@@ -39,7 +39,7 @@ describe("Kompakte Kataloge", () => {
   it("zeigt genau vier Projekteinstiege und öffnet die sechs Aufträge ausdrücklich", () => {
     window.history.replaceState(null,"","/projekte?ansicht=uebersicht");
     const view = render(<ProjektWerkstatt/>);
-    const links = screen.getByRole("navigation", {name:"Einstiege in die Projekte"}).querySelectorAll("a");
+    const links = screen.getByRole("navigation", {name:"Einstiege in Handwerk und Projekte"}).querySelectorAll("a");
     expect(Array.from(links, a => a.getAttribute("href"))).toEqual(["/projekte#werkstatt", "/projekte#dach-entdecken", "/projekte?ansicht=auftraege", "/projekte?ansicht=praxis"]);
     expect(screen.queryByRole("button", {name:new RegExp(BAUPROJEKTE[0].titel)})).toBeNull();
     view.unmount();

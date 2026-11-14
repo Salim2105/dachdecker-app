@@ -47,6 +47,28 @@ export function ladeStand(key: string, aufgaben: Aufgabe[]): Uebungsstand | null
   return ladeStandFuerIds(key, aufgaben.map((a) => a.id));
 }
 
+/** Copy a matching older topic round before mounting its new scope. Never
+ * remove or overwrite the old round, an existing new round, or newer drafts. */
+export function uebernehmePassendeThemenrunde(vorherigerScope: string, neuerScope: string, aufgaben: Aufgabe[]): void {
+  if (typeof window === "undefined" || vorherigerScope === neuerScope) return;
+  const neuerKey = `dd-session-${neuerScope}`, alterKey = `dd-session-${vorherigerScope}`;
+  if (appStorage.getItem(neuerKey) !== null || !ladeStand(alterKey, aufgaben)) return;
+  const original = appStorage.getItem(alterKey);
+  if (original === null) return;
+  for (const aufgabe of aufgaben) {
+    const alt = `${vorherigerScope}:${aufgabe.id}`, neu = `${neuerScope}:${aufgabe.id}`;
+    const calc = appStorage.getItem(`dd-calc-${alt}`);
+    if (calc !== null && appStorage.getItem(`dd-calc-${neu}`) === null) appStorage.setItem(`dd-calc-${neu}`, calc);
+    const prefix = `dd-entwurf-${alt}-`;
+    for (const key of Object.keys(appStorage).filter(k => k.startsWith(prefix))) {
+      const ziel = `dd-entwurf-${neu}-${key.slice(prefix.length)}`, wert = appStorage.getItem(key);
+      if (wert !== null && appStorage.getItem(ziel) === null) appStorage.setItem(ziel, wert);
+    }
+  }
+  // The new round is discoverable only after all associated drafts were copied.
+  appStorage.setItem(neuerKey, original);
+}
+
 /** Liest nur den Sitzungsstand; die Startseite braucht keine Aufgabentexte. */
 export function ladeSitzungsInfo(id: string) {
   if (typeof window === "undefined") return null;

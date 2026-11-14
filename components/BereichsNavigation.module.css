@@ -1,0 +1,11 @@
+.navigation { gap: 10px; }
+.navigation .suche { border: 1px solid currentColor; margin-bottom: 6px; }
+.navigation .gruppe h2 { margin: 0; font-size: 13px; letter-spacing: 0; text-transform: none; }
+.gruppenKnopf { display: flex; width: 100%; min-height: 48px; align-items: center; justify-content: space-between; gap: 10px; border-radius: 10px; padding: 9px 10px; text-align: left; color: inherit; line-height: 1.4; }
+.gruppenKnopf:hover { background: #819aa71a; }
+.gruppenKnopf > span { min-width: 0; overflow-wrap: anywhere; }
+.gruppenKnopf > svg { flex-shrink: 0; }
+.pfeilOffen { transform: rotate(180deg); }
+.aktuell { display: block; margin-top: 3px; font-size: 10px; font-weight: 400; letter-spacing: 0; }
+.navigation ul:not([hidden]) { padding: 2px 0 4px; }
+.hinweis { margin: 0 0 12px; font-size: 14px; line-height: 1.6; color: var(--text-muted); }

@@ -9,6 +9,8 @@ export interface KursStand {
   aktivitaet: AktivitaetAntwort; aktivitaetGeprueft: boolean; abgeschlossen: boolean; hilfen: string[];
   /** Only a previous note is carried over; the revised tasks start ungraded. */
   uebernommenAusVersion?: number;
+  /** Direct questions are a view of the same answers, not skipped course work. */
+  kontrollfragenDirekt?: boolean;
 }
 export interface KursArchivEintrag {
   key: string; einheitId: string; version: number; notiz: string; abgeschlossen: boolean;
@@ -71,6 +73,7 @@ export function ladeKursStand(e: LernEinheit): KursStand {
     if (!istObjekt(s) || s.version !== e.version || !Number.isInteger(s.phase) || Number(s.phase) < 0 || Number(s.phase) > 4 ||
       !Number.isInteger(s.textIndex) || Number(s.textIndex) < 0 || Number(s.textIndex) >= e.textschritte.length ||
       typeof s.notiz !== "string" || typeof s.verglichen !== "boolean" || typeof s.abgeschlossen !== "boolean" ||
+      (s.kontrollfragenDirekt !== undefined && typeof s.kontrollfragenDirekt !== "boolean") ||
       !Number.isInteger(s.kontrolleIndex) || Number(s.kontrolleIndex) < 0 || Number(s.kontrolleIndex) >= Math.max(1, e.aufgabenIds.length) ||
       !sindErgebnisse(s.ergebnisse) || !s.ergebnisse.every((r) => e.aufgabenIds.includes(r.id)) ||
       (s.selbstbewertung !== undefined && !istBewertung(s.selbstbewertung)) ||

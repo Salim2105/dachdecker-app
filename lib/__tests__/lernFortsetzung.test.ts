@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import { neuerPraxisVideoLernStand, speicherePraxisVideoLernStand } from "@/lib/praxisVideoLernStand";
 import { getPraxisVideo } from "@/lib/praxisVideoInhalte";
 import { lernFortsetzung, letzterLernschritt } from "@/lib/lernFortsetzung";
+import { uebungsSessionId } from "@/lib/fortsetzung";
 import { appStorage } from "@/lib/lernSpeicher";
 import { getAufgaben } from "@/lib/content";
 import { getCurriculum } from "@/lib/curriculum";
@@ -242,6 +243,17 @@ describe("Gemeinsame Lernfortsetzung", () => {
     expect(lernFortsetzung(4, now)).toMatchObject({ art: "fortsetzen", href: "/lernen/lf03/ueben", schritt: "Nacharbeit · Aufgabe 1 von 1" });
     appStorage.removeItem("dd-session-lf03");
     expect(lernFortsetzung(4, now).art).toBe("heute");
+  });
+
+  it("setzt neue Themenrunden mit eigenem Stand fort und verändert eine andere freie Runde nicht", () => {
+    const alle = getAufgaben("lf03"), thema = alle[0].thema, aufgaben = alle.filter(a => a.thema === thema);
+    const scope = uebungsSessionId("lf03", false, thema), href = `/lernen/lf03/ueben?thema=${encodeURIComponent(thema)}`;
+    speichern("dd-session-lf03", {aufgabenIds:alle.map(a => a.id), index:1, ergebnisse:["richtig"], beantwortet:false});
+    const vorher = appStorage.getItem("dd-session-lf03");
+    speichern(`dd-session-${scope}`, {aufgabenIds:aufgaben.map(a => a.id), index:0, ergebnisse:[], beantwortet:false});
+    letzte(href);appStorage.setItem("letzte-session", scope);
+    expect(lernFortsetzung(4, now)).toMatchObject({art:"fortsetzen", href, titel:thema, schritt:`Aufgabe 1 von ${aufgaben.length}`});
+    expect(appStorage.getItem("dd-session-lf03")).toBe(vorher);
   });
 
   it("setzt die tatsächlich aktive gemeinsame Tagesrunde mit ihrer eingefrorenen Dauer fort", () => {

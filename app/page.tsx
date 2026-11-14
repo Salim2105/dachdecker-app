@@ -13,6 +13,7 @@ import { Arrow } from "@/components/design/Arrow";
 import { getLernfelder } from "@/lib/content";
 import { ladeLernsignale, lernEmpfehlungen } from "@/lib/lerndiagnose";
 import { loadReviewRecords } from "@/lib/review";
+import { ThemenSucheStart } from "@/components/suche/ThemenSucheStart";
 
 const WOCHE = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 
@@ -43,6 +44,7 @@ export default function Home() {
 
   return <div className="home-dashboard home-klar">
     <header className="home-begruessung"><div><span className="home-kicker">DEIN LERNPLATZ</span><h1>Schön, dass du da bist.</h1></div></header>
+    <ThemenSucheStart />
     <section className="home-next" aria-labelledby="naechster-schritt">
       <span className="home-next-label">{ziel.art === "fortsetzen" ? "HIER WARST DU ZULETZT" : "DEIN NÄCHSTER SCHRITT"}</span>
       <p className="home-next-bereich">{ziel.bereich}</p>

@@ -65,6 +65,23 @@ describe("Dach erkunden und ohne verlorene Arbeit wechseln", () => {
     expect(screen.queryByText("Lernvideos offline speichern")).toBeNull();
     expect(screen.getByTestId("dachmodell")).toBeDefined();
   });
+  it("öffnet einen ausdrücklichen Filmverweis direkt, erhält Notizen und erzeugt keinen Erfolgsnachweis", async () => {
+    videoMedien.verfuegbar = true;
+    const stand = neuerDachStand();
+    stand.jeDach.steildach.detailId = "s03";
+    stand.jeDach.steildach.phase = "aufgaben";
+    stand.notizen.s03 = "Meine eigene Kontrolle";
+    speichereDachStand(stand);
+    window.history.replaceState(null, "", "/projekte?medium=film#dach-steildach-s03");
+    const clip = getDachPraxisVideo("steildach", "falzziegel", "s03")!;
+    render(<DachErkunden form="steildach" detailId="s03" />);
+    expect(await screen.findByLabelText(clip.titel)).toBeDefined();
+    expect(screen.queryByTestId("dachmodell")).toBeNull();
+    expect(ladeDachStand()!.notizen.s03).toBe("Meine eigene Kontrolle");
+    expect(ladeDachStand()!.antworten).toEqual(stand.antworten);
+    expect(ladeDachStand()!.hilfeEreignisse.some(h => h.art.startsWith("video:"))).toBe(false);
+    expect(ladeKompetenzNachweise()).toEqual([]);
+  });
   it("tauscht das Modell gegen den passenden Film und vermerkt erst dessen Wiedergabe als Lernhilfe", async () => {
     videoMedien.verfuegbar = true;
     const clip = getDachPraxisVideo("steildach", "falzziegel", "s03")!;

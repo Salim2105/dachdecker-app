@@ -19,7 +19,7 @@ import { getBildAufgabe, bildStandKey, leseBildStand } from "@/lib/bildtraining"
 import { FALL_VERSUCH_KEY, parseFallVersuch } from "@/lib/fallVersuch";
 import { EXAM_KEY, parseExamAttempt } from "@/lib/exam";
 import { PRUEFUNGS_MATHE_KEY, parsePruefungsMatheStand, pruefungsMatheSchritte } from "@/lib/pruefungsMathe";
-import { uebungsFortsetzung } from "@/lib/fortsetzung";
+import { uebungsFortsetzung, uebungsSessionId } from "@/lib/fortsetzung";
 import { parseReviewSession, reviewSessionKey, planReviewSessionKey, reviewSessionRoute, type ReviewFilter } from "@/lib/reviewTasks";
 
 export interface LernFortsetzung {
@@ -56,7 +56,11 @@ export function letzterLernschritt(href: string, now = Date.now()): Lernschritt 
     const quiz = teile.length === 3 && teile[2] === "ueben" && nurParameter(url, ["typ", "thema"]) && (!url.searchParams.has("typ") || url.searchParams.get("typ") === "rechnung");
     if (feld && (alt || quiz)) {
       const rechnen = url.searchParams.get("typ") === "rechnung", thema = url.searchParams.get("thema");
-      const id = `${feld.id}${alt ? "-einheit" : rechnen ? "-rechnung" : ""}`, key = `dd-session-${id}`;
+      const id = alt ? `${feld.id}-einheit` : uebungsSessionId(feld.id, rechnen, thema);
+      const neuerKey = `dd-session-${id}`, alterKey = `dd-session-${uebungsSessionId(feld.id, rechnen)}`;
+      // Read an older matching topic round until its first deliberate opening
+      // copies it. This resolver must not migrate or otherwise write storage.
+      const key = thema && lesen(neuerKey) === null ? alterKey : neuerKey;
       const pool = getAufgaben(feld.id);
       const aufgaben = alt ? ladeGespeicherteAufgaben(key, pool) : pool.filter(a => (!rechnen || a.typ === "calc") && (!thema || a.thema === thema));
       const stand = aufgaben?.length ? ladeStand(key, aufgaben) : null;

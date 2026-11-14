@@ -34,7 +34,7 @@ export function PraxisVorbereitung({ initialThema }: { initialThema?: string }) 
   const [thema, setThema] = useState(() => PRAXIS_VORBEREITUNG_THEMEN.some(t=>t.id===initialThema) ? initialThema! : PRAXIS_VORBEREITUNG_THEMEN[0].id);
   return <div>
     <style>{PRINT_CSS}</style>
-    <header className="bereichs-einstieg praxis-nicht-drucken"><span>VORBEREITEN · AUSFÜHREN · BESPRECHEN</span><h1>Dein Praxisblatt für Betrieb und Schule</h1><p>Plane Werkzeug, Material und Arbeitsfolge. Halte anschließend getrennt fest, was du tatsächlich geübt und welche Rückmeldung du erhalten hast.</p><LernLink href="/projekte?ansicht=uebersicht" className="mt-4 inline-block min-h-11 py-2 underline">← Zu den Baustellenprojekten</LernLink></header>
+    <header className="bereichs-einstieg praxis-nicht-drucken"><span>VORBEREITEN · AUSFÜHREN · BESPRECHEN</span><h1>Dein Praxisblatt für Betrieb und Schule</h1><p>Plane Werkzeug, Material und Arbeitsfolge. Halte anschließend getrennt fest, was du tatsächlich geübt und welche Rückmeldung du erhalten hast.</p><LernLink href="/projekte?ansicht=uebersicht" className="mt-4 inline-block min-h-11 py-2 underline">← Zu Handwerk & Projekte</LernLink></header>
     <label className="mt-6 block font-semibold praxis-nicht-drucken">Praxisthema auswählen<select value={thema} onChange={e=>setThema(e.target.value)} className="mt-2 min-h-12 w-full rounded-xl border p-3" style={flaeche}>{PRAXIS_VORBEREITUNG_THEMEN.map(t=><option value={t.id} key={t.id}>{t.titel}</option>)}</select></label>
     {thema.startsWith("werkstatt-")&&<LernLink className="mt-4 inline-block min-h-11 py-2 underline praxis-nicht-drucken" href="/projekte#werkstatt">← Zum Werkstatttraining</LernLink>}
     <PraxisBlatt key={thema} thema={thema}/>

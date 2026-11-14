@@ -33,6 +33,18 @@ beforeEach(() => { videoMedien.verfuegbar = false; videoMedien.version2 = false;
 afterEach(async () => { cleanup(); vi.restoreAllMocks(); await retryStorageWrites(); });
 
 describe("Handwerkliches Werkstatttraining", () => {
+  it("führt einen Filmverweis zum vorhandenen Player, ohne Wiedergabe oder neue Bewertung zu starten", async () => {
+    videoMedien.verfuegbar = true;
+    const e = falz.einheiten.find(e => e.slug === "schnitt")!;
+    window.history.replaceState(null, "", `/projekte?medium=film#${e.id}`);
+    render(<WerkstattTraining einheitId={e.id} />);
+    const titel = screen.getByRole("heading", { name: "3D-Handgriff: Schnitt anzeichnen" });
+    expect(document.activeElement).toBe(titel);
+    expect(await screen.findByLabelText(getWerkstattPraxisVideo(e.pfadId, e.slug)!.titel)).toBeDefined();
+    expect(ladeWerkstattStand(e.id)!.hilfen).toEqual([]);
+    expect(ladeWerkstattStand(e.id)!.geprueft).toEqual([]);
+    expect(ladeKompetenzNachweise()).toEqual([]);
+  });
   it("bewertet den Video-Lernpunkt nach Aufgaben-ID, ohne die andere Übung oder den Ablauf auszutauschen", async () => {
     videoMedien.verfuegbar = true; videoMedien.version2 = true;
     const e = falz.einheiten.find(e => e.slug === "bearbeiten")!;

@@ -21,6 +21,12 @@ describe("16 direkte Lernbereiche", () => {
     SERVICE_NAV.forEach(e => { expect(bereichsTitel(e.href)).toBe(e.label); expect(aktiverBereich(e.href)).toBe(e.href); });
     ["/nicht-vorhanden", "/lernen-alt", "/lernen/lf01/anderes"].forEach(p => expect(aktiverBereich(p)).toBeNull());
   });
+  it("benennt Handwerk verständlich und führt die Suche außerhalb der 16 Bereiche", () => {
+    expect(bereichsTitel("/projekte#werkstatt-falzziegel-schnitt")).toBe("Handwerk & Projekte");
+    expect(aktiverBereich("/suche?q=Fl%C3%BCssigkunststoff")).toBe("/suche");
+    expect(bereichsTitel("/suche")).toBe("Thema suchen");
+    expect(WERKSTATT_NAV.some(e => e.href === "/suche")).toBe(false);
+  });
 });
 describe("Katalog oder Bearbeitungspunkt", () => {
   const ids = ["einheit-a", "einheit-b"];

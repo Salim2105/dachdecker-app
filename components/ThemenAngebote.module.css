@@ -1,0 +1,11 @@
+.angebote { margin-top: 1.5rem; border: 1px solid var(--border); border-radius: 16px; background: var(--surface); padding: 1rem; }
+.angebote summary { min-height: 44px; cursor: pointer; font-weight: 650; align-content: center; }
+.angebote summary span { float: right; }
+.angebote[open] summary span { transform: rotate(45deg); }
+.angebote > p { margin: .5rem 0 1rem; color: var(--text-muted); }
+.angebote ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.angebote a, .angebote button { display: flex; width: 100%; flex-direction: column; gap: .3rem; text-align: left; border: 1px solid var(--border); border-radius: 12px; padding: .8rem 1rem; background: var(--surface-2); overflow-wrap: anywhere; }
+.angebote a:hover, .angebote button:hover { border-color: var(--accent); }
+.angebote small { color: var(--text-muted); font-weight: 600; }
+.angebote strong { font-size: 1rem; }
+.angebote li span { font-size: .875rem; color: var(--text-muted); }

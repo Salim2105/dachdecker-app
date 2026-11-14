@@ -1,10 +1,10 @@
 "use client";
 import { createContext, useCallback, useContext, useEffect, useRef, useState, useSyncExternalStore } from "react";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { BottomNav } from "@/components/BottomNav";
 import { BereichsNavigation,BereicheMenue } from "@/components/BereichsNavigation";
-import { ThemeToggle } from "@/components/ThemeToggle";
+import { DarstellungService } from "@/components/DarstellungService";
+import { LernLink } from "@/components/LernLink";
 import { Taschenrechner } from "@/components/rechner/Taschenrechner";
 import { meldePruefungsHilfe, pruefungsHilfenSnapshot, pruefungsHilfenServerSnapshot, subscribePruefungsHilfen } from "@/lib/pruefungsHilfen";
 import { Rechner } from "@/components/rechner/Rechner";
@@ -19,12 +19,14 @@ export const useWerkzeug = () => useContext(WerkzeugContext);
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const router = useRouter();
   const aktiv = aktiverBereich(pathname);
   const pruefungsKontext=useSyncExternalStore(subscribePruefungsHilfen,pruefungsHilfenSnapshot,pruefungsHilfenServerSnapshot);
   const [formelHilfe,setFormelHilfe]=useState(false);
   const [werkzeug, setWerkzeug] = useState<Werkzeug | null>(null);
   const [menueOffen,setMenueOffen]=useState(false);
+  const [serviceOffen, setServiceOffen] = useState(false);
+  const [feedbackZiel, setFeedbackZiel] = useState(() => feedbackHref(pathname));
+  const serviceRuecksprung = useRef<HTMLElement | null>(null);
   const menueRuecksprung=useRef<HTMLElement|null>(null);
   const [besucht, setBesucht] = useState<Set<Werkzeug>>(new Set());
   const [begriff, setBegriff] = useState<string>();
@@ -36,12 +38,24 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [overlay, setOverlay] = useState(false);
   const menueSchliessen=useCallback(()=>{setMenueOffen(false);requestAnimationFrame(()=>{if(menueRuecksprung.current?.isConnected)menueRuecksprung.current.focus();});},[]);
   const nachNavigation=useCallback(()=>setMenueOffen(false),[]);
+  const serviceSchliessen = useCallback(() => {
+    setServiceOffen(false);
+    requestAnimationFrame(() => { if (serviceRuecksprung.current?.isConnected) serviceRuecksprung.current.focus(); });
+  }, []);
+  const nachServiceNavigation = useCallback(() => setServiceOffen(false), []);
+  function serviceOeffnen() {
+    serviceRuecksprung.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const aufgabe = [...document.querySelectorAll<HTMLElement>("#arbeitsflaeche [data-aufgabe-id]")].find(element => !element.closest("[hidden], [inert]"));
+    setFeedbackZiel(feedbackHref(`${pathname}${window.location.hash}`, aufgabe?.dataset.aufgabeId, aufgabe?.dataset.aufgabeText));
+    window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));
+    setWerkzeug(null); setMenueOffen(false); setServiceOffen(true);
+  }
   function bereicheOeffnen(){
     menueRuecksprung.current=document.activeElement instanceof HTMLElement?document.activeElement:null;
-    window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));setWerkzeug(null);setMenueOffen(true);
+    window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));setWerkzeug(null);setServiceOffen(false);setMenueOffen(true);
   }
   useEffect(()=>{
-    const restored=(e:PageTransitionEvent)=>{if(e.persisted)setMenueOffen(false);};
+    const restored=(e:PageTransitionEvent)=>{if(e.persisted){setMenueOffen(false);setServiceOffen(false);}};
     const media=window.matchMedia?.("(min-width: 801px)");
     const groesser=()=>{if(media?.matches)setMenueOffen(false);};
     window.addEventListener("pageshow",restored);media?.addEventListener("change",groesser);
@@ -56,6 +70,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, []);
   const oeffnen = useCallback((tool: Werkzeug, id?: string) => {
     setMenueOffen(false);
+    setServiceOffen(false);
     if(tool==="rechner"){setFormelHilfe(false);meldePruefungsHilfe("taschenrechner");}else meldePruefungsHilfe("glossar");
     window.dispatchEvent(new Event("dachdecker:vorlesen-stoppen"));
     if (document.activeElement instanceof HTMLElement && !document.activeElement.closest("#werkzeug-panel")) ruecksprung.current = document.activeElement;
@@ -81,15 +96,15 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     document.documentElement.style.setProperty("--app-zoom", String(schrift / 100));
     appStorage.setItem("schriftgroesse", String(schrift));
   }, [schrift]);
-  const blockiert=menueOffen||(overlay&&!!werkzeug);
+  const blockiert=menueOffen||serviceOffen||(overlay&&!!werkzeug);
   return <WerkzeugContext.Provider value={{ oeffnen }}>
     <a className="skip-link" href="#arbeitsflaeche" inert={blockiert}>Zum Inhalt springen</a>
     <div className={`app-shell ${werkzeug ? "mit-werkzeug" : ""}`} style={{ "--hilfe-breite": `${breite}px` } as React.CSSProperties}>
       <aside className="werkstatt-nav" inert={blockiert}>
-        <Link href="/" className="werkstatt-marke" aria-label="Dachdecker Lernwerkstatt – Übersicht">
+        <LernLink href="/" className="werkstatt-marke" aria-label="Dachdecker Lernwerkstatt – Übersicht">
           <svg viewBox="0 0 48 40" width="46" height="40" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2"><path d="M2 23L24 5l22 18M9 21v15h30V21M24 6v29M14 14l22 18M33 14L13 31" /></svg>
           <span>Dachdecker<strong>Lernwerkstatt</strong></span>
-        </Link>
+        </LernLink>
         <div className="navigation-scroll"><BereichsNavigation aktiv={aktiv}/></div>
         <div className="navigation-fuss">Dein Wissen. Dein Handwerk.</div>
       </aside>
@@ -97,17 +112,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         <header className="werkstatt-kopf">
           <span className="bereich-name">{bereichsTitel(pathname)}</span>
           <div className="werkzeug-knopfleiste">
-            <Link href={feedbackHref(pathname)} className="inline-flex min-h-[42px] items-center rounded-xl border px-3 py-2 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }} onClick={(event) => {
-              if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-              const aufgabe = [...document.querySelectorAll<HTMLElement>("#arbeitsflaeche [data-aufgabe-id]")].find((el) => !el.closest("[hidden], [inert]"));
-              const ziel = feedbackHref(`${pathname}${window.location.hash}`, aufgabe?.dataset.aufgabeId, aufgabe?.dataset.aufgabeText);
-              event.preventDefault();
-              router.push(ziel);
-            }}>Rückmeldung geben</Link>
+            <LernLink href="/suche" className="themen-suche-knopf" aria-label="Thema suchen" aria-current={pathname === "/suche" ? "page" : undefined}><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span>Suchen</span></LernLink>
             <button aria-controls="werkzeug-panel" aria-expanded={werkzeug === "rechner"} onClick={() => werkzeug === "rechner" ? schliessen() : oeffnen("rechner")}>Rechner</button>
-            <button aria-controls="werkzeug-panel" aria-expanded={werkzeug === "glossar"} onClick={() => werkzeug === "glossar" ? schliessen() : oeffnen("glossar")}>Begriffshilfe</button>
-            <label className="schriftwahl"><span className="sr-only">Schriftgröße</span><select aria-label="Schriftgröße" value={schrift} onChange={(e) => setSchrift(Number(e.target.value))}>{[100, 115, 130].map((n) => <option key={n} value={n}>Aa {n} %</option>)}</select></label>
-            <ThemeToggle />
+            <button aria-label="Begriffshilfe" aria-controls="werkzeug-panel" aria-expanded={werkzeug === "glossar"} onClick={() => werkzeug === "glossar" ? schliessen() : oeffnen("glossar")}>Begriffe</button>
+            <button type="button" aria-label="Darstellung und Service öffnen" aria-controls="darstellung-service" aria-expanded={serviceOffen} onClick={serviceOeffnen}>Mehr <span aria-hidden="true">⋯</span></button>
           </div>
         </header>
         <main id="arbeitsflaeche" className="arbeitsflaeche" tabIndex={-1}>{children}</main>
@@ -129,5 +137,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     </div>
     <div inert={blockiert}><BottomNav onBereiche={bereicheOeffnen} menueOffen={menueOffen}/></div>
     {menueOffen&&<BereicheMenue aktiv={aktiv} onSchliessen={menueSchliessen} onNavigationReady={nachNavigation}/>}
+    {serviceOffen && <DarstellungService schrift={schrift} onSchrift={setSchrift} feedbackZiel={feedbackZiel} onSchliessen={serviceSchliessen} onNavigationReady={nachServiceNavigation} />}
   </WerkzeugContext.Provider>;
 }

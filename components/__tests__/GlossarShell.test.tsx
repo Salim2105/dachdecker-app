@@ -1,20 +1,23 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { act, cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { AppShell } from "@/components/AppShell";
 import { GlossarText } from "@/components/GlossarText";
 
-const push=vi.hoisted(()=>vi.fn());
-vi.mock("next/navigation", () => ({ usePathname: () => "/lernwerkstatt/lf07", useRouter:()=>({push}) }));
+const navigation=vi.hoisted(()=>vi.fn());
+vi.mock("next/navigation", () => ({ usePathname: () => "/lernwerkstatt/lf07" }));
+vi.mock("@/lib/lernNavigation", () => ({ wechsleLernziel: navigation }));
 vi.mock("@/components/rechner/Rechner", () => ({ Rechner: () => <input aria-label="Rechner-Eingabe" /> }));
 
 afterEach(() => { cleanup(); vi.unstubAllGlobals(); });
 
 describe("Begriffshilfe in der Lernwerkstatt", () => {
-  it("öffnet eine Rückmeldung mit der aktuellen Einheit und einer ausdrücklich benannten Aufgabe",()=>{
+  it("öffnet eine Rückmeldung mit der aktuellen Einheit und einer ausdrücklich benannten Aufgabe",async()=>{
     window.history.replaceState(null,"","/lernwerkstatt/lf07#lf07-k01-e02");
     render(<AppShell><section data-aufgabe-id="lf07-test" data-aufgabe-text="Wo fließt das Wasser hin?">Die aktuelle Lernaufgabe</section></AppShell>);
-    fireEvent.click(screen.getByRole("link",{name:"Rückmeldung geben"}));
-    const ziel=String(push.mock.calls.at(-1)?.[0]);
+    fireEvent.click(screen.getByRole("button",{name:"Darstellung und Service öffnen"}));
+    fireEvent.click(screen.getByRole("link",{name:/Rückmeldung geben/}));
+    await waitFor(()=>expect(navigation).toHaveBeenCalled());
+    const ziel=String(navigation.mock.calls.at(-1)?.[0]);
     const parameter=new URLSearchParams(ziel.split("?")[1]);
     expect(ziel.startsWith("/rueckmeldung?")).toBe(true);
     expect(parameter.get("bereich")).toBe("/lernwerkstatt/lf07#lf07-k01-e02");

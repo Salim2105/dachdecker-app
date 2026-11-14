@@ -18,6 +18,7 @@ import { praxisVideoMedien } from "@/lib/praxisVideoMedien";
 import type { PraxisVideoLernpunkt } from "@/lib/praxisVideoTypen";
 import { PraxisVideoPlayer } from "@/components/video/PraxisVideoPlayer";
 import styles from "./WerkstattTraining.module.css";
+import { filmGewuenscht } from "@/lib/themenVerknuepfungen";
 
 const subscribe = () => () => {};
 const client = () => true;
@@ -75,9 +76,18 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
   const [stand, setStand] = useState(anfang.stand), aktuell = useRef(stand);
   const [fehler, setFehler] = useState(anfang.fehler);
   const [videoPunkt, setVideoPunkt] = useState<PraxisVideoLernpunkt | null>(null);
+  const videoBereich = useRef<HTMLElement>(null);
   const [neustartBusy, setNeustartBusy] = useState(false), neustartLaeuft = useRef(false);
   const sperre = useBearbeitungsSperre(`dachdecker-werkstatt-${vorlage.id}`);
   const editierbar = sperre.status === "frei" || sperre.status === "nicht-verfuegbar";
+
+  useEffect(() => {
+    if (!filmGewuenscht(window.location.search) || !videoBereich.current) return;
+    // Opening a film is explicit, playback is still a separate user action.
+    videoBereich.current.scrollIntoView?.({ block: "start" });
+    const titel = videoBereich.current.querySelector("h2");
+    if (titel) { titel.tabIndex = -1; titel.focus({ preventScroll: true }); }
+  }, [vorlage.id]);
 
   const speichern = useCallback((neu: WerkstattStand) => {
     if (!editierbar) return false;
@@ -186,7 +196,7 @@ function WerkstattEinheit({ vorlage }: { vorlage: Einheit }) {
     <fieldset className={styles.mode} disabled={!editierbar}><legend>Wie möchtest du arbeiten?</legend><button type="button" aria-pressed={s.modus === "begleitet"} onClick={() => modusWaehlen("begleitet")}>Mit Begleitung</button><button type="button" aria-pressed={s.modus === "probelauf"} onClick={() => modusWaehlen("probelauf")}>Selbst probieren</button><p>Du kannst jederzeit wechseln. Deine Antworten und bereits genutzten Hilfen bleiben erhalten.</p></fieldset>
     <nav className={styles.phaseNav} aria-label="Ablauf deiner Werkstatteinheit">{phasen.map(p => <button key={p.id} type="button" disabled={!editierbar} aria-current={s.phase === p.id ? "step" : undefined} onClick={() => phaseWaehlen(p.id)}>{p.label}</button>)}</nav>
     <details className={styles.system}><summary>Übungsmodell und vorgegebene Angaben ansehen</summary><h2>{e.systemkarte.titel}</h2><p>{e.systemkarte.hinweis}</p><ul>{e.systemkarte.angaben.map(a => <li key={a}>{a}</li>)}</ul><h3>Befestigung in diesem Modell</h3><ul>{e.systemkarte.befestigung.map(a => <li key={a}>{a}</li>)}</ul><p className={styles.muted}>{e.systemkarte.quellen.join(" · ")}</p></details>
-    {lernvideo && <section className={styles.videoGuide} aria-label={handgriffVideo ? "3D-Handgriff zur Werkstatteinheit" : "Lernvideo zum Dachaufbau"}><header><span className={styles.eyebrow}>{handgriffVideo ? "DEN HANDGRIFF RÄUMLICH VERSTEHEN" : "DEN ZUSAMMENHANG AM DACH VERSTEHEN"}</span><h2>{handgriffVideo ? `3D-Handgriff: ${handgriffTitel[e.slug]}` : "Passendes Lernvideo zum Dachaufbau"}</h2><p>{handgriffVideo ? "Sieh dir den Handgriff am 3D-Schulmodell an. Kapitel und Sprechertext helfen dir, jeden Schritt nachzuvollziehen." : "Dieses 3D-Lernvideo zeigt den passenden Dachaufbau. Die genauen Maße deiner Übung findest du in der Werkstattzeichnung."}</p></header><PraxisVideoPlayer video={lernvideo} versuchId={s.id} onLernpunktAktiv={videoPunktMerken} istLernpunktBearbeitet={punkt => s.geprueft.includes(punkt.aufgabeId)} renderLernpunkt={punkt => {
+    {lernvideo && <section ref={videoBereich} className={styles.videoGuide} aria-label={handgriffVideo ? "3D-Handgriff zur Werkstatteinheit" : "Lernvideo zum Dachaufbau"}><header><span className={styles.eyebrow}>{handgriffVideo ? "DEN HANDGRIFF RÄUMLICH VERSTEHEN" : "DEN ZUSAMMENHANG AM DACH VERSTEHEN"}</span><h2>{handgriffVideo ? `3D-Handgriff: ${handgriffTitel[e.slug]}` : "Passendes Lernvideo zum Dachaufbau"}</h2><p>{handgriffVideo ? "Sieh dir den Handgriff am 3D-Schulmodell an. Kapitel und Sprechertext helfen dir, jeden Schritt nachzuvollziehen." : "Dieses 3D-Lernvideo zeigt den passenden Dachaufbau. Die genauen Maße deiner Übung findest du in der Werkstattzeichnung."}</p></header><PraxisVideoPlayer video={lernvideo} versuchId={s.id} onLernpunktAktiv={videoPunktMerken} istLernpunktBearbeitet={punkt => s.geprueft.includes(punkt.aufgabeId)} renderLernpunkt={punkt => {
       const a = e.aufgaben.find(a => a.id === punkt.aufgabeId);
       if (!a || punkt.einheitId !== e.id) return <p>Die Aufgabe passt nicht zu diesem gespeicherten Werkstattversuch. Deine bisherigen Antworten bleiben erhalten.</p>;
       return <WerkstattAufgabe key={a.id} aufgabe={a} systemkarte={e.systemkarte} antwort={s.antworten[a.id]} geprueft={s.geprueft.includes(a.id)} bewertung={s.abgaben[a.id]?.at(-1)?.bewertung} disabled={!editierbar || neustartBusy} onChange={antwort => antwortAendern(antwort, a.id)} onPruefen={() => pruefen(a.id)} onHilfe={() => speichern(hilfeWerkstatt(aktuell.current!, `${a.id}:hinweis`))}/>;

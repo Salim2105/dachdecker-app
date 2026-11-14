@@ -18,7 +18,7 @@ export const NAV_GRUPPEN:readonly NavigationGruppe[]=[
   {href:"/ueben",label:"Quiz & Aufgaben",icon:"M9 4H4v5h5zM9 15H4v5h5zM13 6h7M13 17h7"},
   {href:"/bildtraining",label:"Bildtraining",katalog:true,icon:"M3 4h18v16H3zM3 16l6-6 4 4 3-3 5 5M15 8h1"},
   {href:"/zeichnen",label:"Zeichnen",icon:"M14 5l5 5M3 21l5-1L21 7a3 3 0 00-4-4L4 16z"},
-  {href:"/projekte",label:"Baustellenprojekte",katalog:true,icon:"M3 12l9-9 9 9M6 10v11h12V10M10 21v-7h4v7"},
+  {href:"/projekte",label:"Handwerk & Projekte",katalog:true,icon:"M3 12l9-9 9 9M6 10v11h12V10M10 21v-7h4v7"},
   {href:"/praxis",label:"Praxisfälle",icon:"M4 7h16v14H4zM8 7V3h8v4M4 12h16M10 12v3h4v-3"},
  ]},
  {id:"pruefen",label:"Prüfung & Werkzeuge",eintraege:[
@@ -27,6 +27,7 @@ export const NAV_GRUPPEN:readonly NavigationGruppe[]=[
  ]},
 ];
 export const WERKSTATT_NAV=NAV_GRUPPEN.flatMap(g=>g.eintraege);
+export const SUCH_NAV={href:"/suche",label:"Thema suchen",icon:"M21 21l-5-5M18 10a8 8 0 11-16 0 8 8 0 0116 0"} as const;
 export const SERVICE_NAV=[{href:"/rueckmeldung",label:"Rückmeldungen"},{href:"/erprobung",label:"Erprobungsbogen"}] as const;
 export const MOBILE_NAV=[{href:"/",label:"Start"},{href:"/heute",label:"Heute"},{href:null,label:"Bereiche"},{href:"/fortschritt",label:"Lernstand"}] as const;
 export const navigationsZiel=(e:NavigationEintrag)=>e.katalog?`${e.href}?ansicht=uebersicht`:e.href;
@@ -35,6 +36,6 @@ export function aktiverBereich(url:string):string|null{
  if(/^\/lernen\/[^/]+\/ueben$/.test(path))return "/ueben";
  if(/^\/lernen\/[^/]+$/.test(path))return "/lernen";
  if(path==="/lernweg")return "/praxis";
- return [...WERKSTATT_NAV,...SERVICE_NAV].find(e=>e.href===path)?.href??null;
+ return [SUCH_NAV,...WERKSTATT_NAV,...SERVICE_NAV].find(e=>e.href===path)?.href??null;
 }
-export function bereichsTitel(path:string):string{return [...WERKSTATT_NAV,...SERVICE_NAV].find(e=>e.href===aktiverBereich(path))?.label??"Lernwerkstatt";}
+export function bereichsTitel(path:string):string{return [SUCH_NAV,...WERKSTATT_NAV,...SERVICE_NAV].find(e=>e.href===aktiverBereich(path))?.label??"Lernwerkstatt";}

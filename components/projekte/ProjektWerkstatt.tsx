@@ -84,10 +84,10 @@ export function ProjektWerkstatt() {
   if (auswahl === "werkstatt" || getWerkstattEinheit(auswahl)) return <WerkstattTraining einheitId={auswahl === "werkstatt" ? undefined : auswahl}/>;
   const auftraegeOffen = new URLSearchParams(routeSearch).get("ansicht") === "auftraege";
   if (!auftraegeOffen) return <div>
-    <KatalogKopf bereich="PROJEKTE" titel="Was möchtest du üben?">Wähle einen Einstieg für Handgriffe, Dachaufbau oder einen eigenen Auftrag.</KatalogKopf>
+    <KatalogKopf bereich="HANDWERK & PROJEKTE" titel="Was möchtest du praktisch lernen?">Wähle Handgriffe am Ziegel, entdecke das Dach in 3D oder bearbeite einen Baustellenauftrag.</KatalogKopf>
     {navigationFehler && <p role="alert">{navigationFehler}</p>}
-    <nav className={styles.einstiege} aria-label="Einstiege in die Projekte">
-      <LernLink href="/projekte#werkstatt"><strong>Handgriffe lernen</strong><span>Messen, einteilen und verlegen: Schritt für Schritt üben.</span><span aria-hidden="true">→</span></LernLink>
+    <nav className={styles.einstiege} aria-label="Einstiege in Handwerk und Projekte">
+      <LernLink href="/projekte#werkstatt"><strong>Handgriffe lernen</strong><span>Anzeichnen, schneiden und verlegen: mit Bildanleitungen, Übungen und Werkstattfilmen.</span><span aria-hidden="true">→</span></LernLink>
       <LernLink href="/projekte#dach-entdecken"><strong>Dach in 3D verstehen</strong><span>Bauteile, Schichten und Montage am Modell erkunden.</span><span aria-hidden="true">→</span></LernLink>
       <LernLink href="/projekte?ansicht=auftraege"><strong>Baustellenauftrag bearbeiten</strong><span>Sechs Projekte vom Auftrag bis zur eigenen Erklärung.</span><span aria-hidden="true">→</span></LernLink>
       <LernLink href="/projekte?ansicht=praxis"><strong>Im Betrieb ausprobieren</strong><span>Praxisblätter für Werkzeug, Material und Arbeitsfolge.</span><span aria-hidden="true">→</span></LernLink>
@@ -95,8 +95,8 @@ export function ProjektWerkstatt() {
   </div>;
   const projekte = BAUPROJEKTE.filter(p => katalogPasst(suche, p.titel, p.kurz));
   return <div>
-    <button className={styles.back} onClick={() => waehlen("", "uebersicht")}>← Alle Projekteinstiege</button>
-    <KatalogKopf bereich="PROJEKTE" titel="Baustellenauftrag bearbeiten">Wähle einen Auftrag. Antworten, Zeichnungen und Notizen bleiben pro Projekt gespeichert.</KatalogKopf>
+    <button className={styles.back} onClick={() => waehlen("", "uebersicht")}>← Handwerk & Projekte</button>
+    <KatalogKopf bereich="HANDWERK & PROJEKTE" titel="Baustellenauftrag bearbeiten">Wähle einen Auftrag. Antworten, Zeichnungen und Notizen bleiben pro Projekt gespeichert.</KatalogKopf>
     {navigationFehler && <p role="alert">{navigationFehler}</p>}
     <KatalogSuche label="Baustellenaufträge suchen" wert={suche} onChange={setSuche}/>
     <div className={styles.grid}>{projekte.map(p => {

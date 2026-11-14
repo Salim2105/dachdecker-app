@@ -12,8 +12,6 @@ import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
 import { SafeSvg } from "@/components/SafeSvg";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
 import { bewerteAktivitaet, istAktivitaetVollstaendig, type AktivitaetAntwort } from "@/lib/aktivitaeten";
-import { LernLink } from "@/components/LernLink";
-import { lernDachVerweise } from "@/lib/dach3dVerknuepfungen";
 import { LernSkizze } from "@/components/LernSkizze";
 import { AktivitaetsKarte } from "@/components/AktivitaetsKarte";
 import { AufgabenKontext } from "@/components/useAufgabenEntwurf";
@@ -28,6 +26,8 @@ import { LernIllustration } from "@/components/design/LernIllustration";
 import styles from "@/components/learning/Learning.module.css";
 import { useKatalogFokus } from "@/components/katalog/KatalogKopf";
 import katalogStyles from "@/components/katalog/Katalog.module.css";
+import { ThemenAngebote } from "@/components/ThemenAngebote";
+import { kontrollfragenEinstieg, kursFortsetzungsRoute } from "@/lib/themenVerknuepfungen";
 
 const PHASEN = ["Verstehen", "Selbst erklären", "Kontrollfragen", "Anwenden", "Abschluss"];
 export function LernwerkstattKurs({ lfId }: { lfId: string }) {
@@ -104,25 +104,35 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
 }
 
 function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum; einheit: LernEinheit; zurueck: () => void; naechste: () => void }) {
-  const [stand, setStand] = useState(() => ladeKursStand(e));
+  const [stand, setStand] = useState(() => kontrollfragenEinstieg(e, ladeKursStand(e), typeof window === "undefined" ? "" : window.location.search));
   const [fehler, setFehler] = useState("");
   const standRef = useRef(stand);
   const { bewerte } = useProgress();
   const aufgaben = e.aufgabenIds.flatMap((id) => { const a = getAufgabe(id); return a ? [a] : []; });
-  const dachVerweise = lernDachVerweise(e.lektionIds);
   const quellen = getLektionen(kurs.lfId).filter((l) => e.lektionIds.includes(l.id));
   function speichern(aenderung: Partial<KursStand>) {
     const neu = { ...standRef.current, ...aenderung };
     standRef.current = neu;
     setStand(neu);
-    try { appStorage.setItem(kursStandKey(e), JSON.stringify(neu)); }
+    try {
+      appStorage.setItem(kursStandKey(e), JSON.stringify(neu));
+      appStorage.setItem("lernwerkstatt-zuletzt-route", kursFortsetzungsRoute(kurs.lfId, e.id, neu.kontrollfragenDirekt));
+    }
     catch { setFehler("Dein Entwurf konnte nicht gespeichert werden. Bitte den Lernspeicher prüfen."); }
   }
   useEffect(() => {
     try {
       appStorage.setItem(`lernwerkstatt-auswahl-${kurs.lfId}`,e.id);
       appStorage.setItem("lernwerkstatt-zuletzt",JSON.stringify({lfId:kurs.lfId,unitId:e.id}));
-      appStorage.setItem("lernwerkstatt-zuletzt-route",`/lernen/${kurs.lfId}#${e.id}`);
+      appStorage.setItem("lernwerkstatt-zuletzt-route",kursFortsetzungsRoute(kurs.lfId,e.id,standRef.current.kontrollfragenDirekt));
+      if (standRef.current.kontrollfragenDirekt) appStorage.setItem(kursStandKey(e),JSON.stringify(standRef.current));
+      // An explicit question is an entry target. Remove it after applying it so
+      // a reload resumes the subsequently saved question instead of rewinding.
+      const url = new URL(window.location.href);
+      if (url.searchParams.has("aufgabe")) {
+        url.searchParams.delete("aufgabe");
+        window.history.replaceState(null,"",`${url.pathname}${url.search}${url.hash}`);
+      }
     } catch { /* Speicherfehler erscheinen in der gemeinsamen Statusanzeige. */ }
     const hilfe = () => {
       const neu = { ...standRef.current, hilfen: [...new Set([...standRef.current.hilfen, "begriffshilfe"])] };
@@ -136,7 +146,17 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
   const ergebnis = aktuell && stand.ergebnisse.find((r) => r.id === aktuell.id);
   const anwendungUnsicher = !!e.aktivitaet && (!stand.aktivitaetGeprueft || !bewerteAktivitaet(e.aktivitaet, stand.aktivitaet).richtig);
   const begriffe = e.begriffe.flatMap((id) => { const b = getBegriff(id) ?? sucheBegriffe(id)[0]; return b ? [b] : []; });
-  const phase = (n: number) => { speichern({ phase: n }); window.scrollTo({ top: 0 }); };
+  const anzeigePhase = stand.kontrollfragenDirekt ? 2 : stand.phase;
+  function direkteFragen(oeffnen: boolean) {
+    speichern({ kontrollfragenDirekt: oeffnen });
+    const url = new URL(window.location.href);
+    url.searchParams.delete("aufgabe");
+    if (oeffnen) url.searchParams.set("schritt", "kontrollfragen");
+    else url.searchParams.delete("schritt");
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+    window.scrollTo({ top: 0 });
+  }
+  const phase = (n: number) => { direkteFragen(false); speichern({ phase: n, kontrollfragenDirekt: false }); };
   function aendereAktivitaet(antwort: AktivitaetAntwort) {
     const vorher = standRef.current;
     speichern({ aktivitaet: antwort, aktivitaetGeprueft: false, abgeschlossen: false,
@@ -159,18 +179,18 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
     </header>
     {stand.uebernommenAusVersion !== undefined && <p className="mb-5 rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>Deine frühere Notiz aus Version {stand.uebernommenAusVersion} bleibt erhalten. Die überarbeiteten Aufgaben haben einen eigenen Lernstand; frühere Bewertungen findest du im Archiv unten.</p>}
     <div className={styles.goal}><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="15" cy="17" r="11"/><circle cx="15" cy="17" r="6"/><path d="M15 17 28 4m-7 0h7v7" strokeLinecap="round"/></svg><p><strong>Dein Lernziel:</strong>{e.lernziel}</p></div>
-    <ol className={styles.phases} aria-label="Schritte der Lerneinheit">{PHASEN.map((p, index) => <li key={p}><button aria-current={stand.phase === index ? "step" : undefined} disabled={index > stand.phase} onClick={() => phase(index)}>{index + 1}. {p}</button></li>)}</ol>
+    <ol className={styles.phases} aria-label="Schritte der Lerneinheit">{PHASEN.map((p, index) => <li key={p}><button aria-current={anzeigePhase === index ? "step" : undefined} disabled={index > stand.phase && !(stand.kontrollfragenDirekt && index === 2)} onClick={() => stand.kontrollfragenDirekt && index === 2 ? direkteFragen(true) : phase(index)}>{index + 1}. {p}</button></li>)}</ol>
     {fehler && <p role="alert" style={{ color: "var(--bad)" }}>{fehler}</p>}
-    {stand.phase === 0 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Kurz verstehen</h3>{dachVerweise.length > 0 && <aside className="my-4 rounded-xl border p-4" aria-label="Diesen Zusammenhang am Dach entdecken" style={{borderColor:"var(--border)", background:"var(--surface-2)"}}><strong>Vom Lerntext zum räumlichen Dach</strong><div className="mt-2 flex flex-wrap gap-3">{dachVerweise.map(d => <LernLink key={d.href} href={d.href} className="inline-flex min-h-11 items-center underline">{d.titel} in 3D entdecken →</LernLink>)}</div></aside>}<p className="mt-4 max-w-prose whitespace-pre-line text-lg leading-relaxed"><GlossarText text={e.textschritte[stand.textIndex]} /></p>{e.illustration && <LernSkizze illustration={e.illustration} />}{quellen[0]?.svg && !e.illustration && <figure className="my-5 rounded-xl border p-3" style={{borderColor:"var(--border)"}}><SafeSvg markup={quellen[0].svg} className="mx-auto max-w-xl [&_svg]:h-auto [&_svg]:max-w-full" /><figcaption className="mt-2 text-sm" style={{color:"var(--text-muted)"}}>Darstellung zum Quellenabschnitt „{quellen[0].titel}“</figcaption></figure>}<div className="mt-5 flex items-center justify-between gap-3"><span className="text-sm">Textschritt {stand.textIndex + 1} von {e.textschritte.length}</span><button className="hauptaktion" onClick={() => stand.textIndex < e.textschritte.length - 1 ? speichern({ textIndex: stand.textIndex + 1 }) : phase(1)}>{stand.textIndex < e.textschritte.length - 1 ? "Nächster Textschritt" : "Jetzt selbst erklären"}</button></div></section>}
-    {stand.phase === 1 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Aus dem Kopf erklären</h3><p>{e.abrufFrage}</p><label className="mt-4 block">Deine Erklärung (du kannst auch laut antworten)<textarea value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} className="mt-2 min-h-32 w-full rounded-xl border p-3" style={{ borderColor: "var(--border)", background: "var(--surface-2)" }} /></label>{!stand.verglichen ? <button className="hauptaktion mt-4" onClick={() => speichern({ verglichen: true })}>Mit der Musterantwort vergleichen</button> : <><div className="mt-5 rounded-xl p-4" style={{ background: "var(--accent-soft)" }}><h4 className="font-semibold">Musterantwort</h4><p><GlossarText text={e.abrufMuster} /></p></div><p>Wie gut passt deine erste Erklärung? Das ist deine Selbsteinschätzung.</p><div className="mt-3 flex flex-wrap gap-3">{([["richtig", "Sicher erklärt"], ["teilweise", "Teilweise erklärt"], ["falsch", "Noch unsicher"]] as const).map(([b, text]) => <button key={b} className="min-h-12 rounded-xl border p-3" aria-pressed={stand.selbstbewertung === b} onClick={() => speichern({ selbstbewertung: b })}>{text}</button>)}</div><button className="hauptaktion mt-5" disabled={!stand.selbstbewertung} onClick={() => phase(2)}>Zu den Kontrollfragen</button></>}</section>}
-    {stand.phase === 2 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Selbst beantworten</h3><p className="mb-5">Kontrollfrage {stand.kontrolleIndex + 1} von {aufgaben.length}. Nimm dir Zeit für eine eigene Antwort.</p>{aktuell ? <>{ergebnis ? <div role="status"><strong>Gespeicherte Rückmeldung: {ergebnis.bewertung === "richtig" ? "richtig" : ergebnis.bewertung === "teilweise" ? "teilweise richtig" : "noch üben"}</strong><Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} /></div> : <AufgabenKontext.Provider value={e.id}><AufgabeSwitch key={aktuell.id} aufgabe={aktuell} onErgebnis={(b: Bewertung, kontext?: BewertungsKontext) => {
+    {anzeigePhase === 0 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Kurz verstehen</h3><p className="mt-4 max-w-prose whitespace-pre-line text-lg leading-relaxed"><GlossarText text={e.textschritte[stand.textIndex]} /></p>{e.illustration && <LernSkizze illustration={e.illustration} />}{quellen[0]?.svg && !e.illustration && <figure className="my-5 rounded-xl border p-3" style={{borderColor:"var(--border)"}}><SafeSvg markup={quellen[0].svg} className="mx-auto max-w-xl [&_svg]:h-auto [&_svg]:max-w-full" /><figcaption className="mt-2 text-sm" style={{color:"var(--text-muted)"}}>Darstellung zum Quellenabschnitt „{quellen[0].titel}“</figcaption></figure>}<div className="mt-5 flex items-center justify-between gap-3"><span className="text-sm">Textschritt {stand.textIndex + 1} von {e.textschritte.length}</span><button className="hauptaktion" onClick={() => stand.textIndex < e.textschritte.length - 1 ? speichern({ textIndex: stand.textIndex + 1 }) : phase(1)}>{stand.textIndex < e.textschritte.length - 1 ? "Nächster Textschritt" : "Jetzt selbst erklären"}</button></div></section>}
+    {anzeigePhase === 1 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Aus dem Kopf erklären</h3><p>{e.abrufFrage}</p><label className="mt-4 block">Deine Erklärung (du kannst auch laut antworten)<textarea value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} className="mt-2 min-h-32 w-full rounded-xl border p-3" style={{ borderColor: "var(--border)", background: "var(--surface-2)" }} /></label>{!stand.verglichen ? <button className="hauptaktion mt-4" onClick={() => speichern({ verglichen: true })}>Mit der Musterantwort vergleichen</button> : <><div className="mt-5 rounded-xl p-4" style={{ background: "var(--accent-soft)" }}><h4 className="font-semibold">Musterantwort</h4><p><GlossarText text={e.abrufMuster} /></p></div><p>Wie gut passt deine erste Erklärung? Das ist deine Selbsteinschätzung.</p><div className="mt-3 flex flex-wrap gap-3">{([["richtig", "Sicher erklärt"], ["teilweise", "Teilweise erklärt"], ["falsch", "Noch unsicher"]] as const).map(([b, text]) => <button key={b} className="min-h-12 rounded-xl border p-3" aria-pressed={stand.selbstbewertung === b} onClick={() => speichern({ selbstbewertung: b })}>{text}</button>)}</div><button className="hauptaktion mt-5" disabled={!stand.selbstbewertung} onClick={() => phase(2)}>Zu den Kontrollfragen</button></>}</section>}
+    {anzeigePhase === 2 && <section className={`werkstatt-karte ${styles.reader}`}><h3>Selbst beantworten</h3><p className="mb-5">Kontrollfrage {stand.kontrolleIndex + 1} von {aufgaben.length}. Nimm dir Zeit für eine eigene Antwort.</p>{aktuell ? <>{ergebnis ? <div role="status"><strong>Gespeicherte Rückmeldung: {ergebnis.bewertung === "richtig" ? "richtig" : ergebnis.bewertung === "teilweise" ? "teilweise richtig" : "noch üben"}</strong><Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} /></div> : <AufgabenKontext.Provider value={e.id}><AufgabeSwitch key={aktuell.id} aufgabe={aktuell} onErgebnis={(b: Bewertung, kontext?: BewertungsKontext) => {
       if (stand.ergebnisse.some((r) => r.id === aktuell.id)) return;
       bewerte(aktuell.id, b, { ...kontext, nachErklaerung: true });
       speichereLernsignal({ quelle: "fachwissen", aufgabeId: aktuell.id, lernzielId: e.id, richtig: b === "richtig", selbstBewertet: kontext?.selbstBewertet === true, kategorie: "fachwissen", hilfen: [...stand.hilfen, ...(kontext?.mitHilfe ? ["auswahlhilfe"] : [])], route: `/lernen/${kurs.lfId}#${e.id}`, thema: e.titel });
       speichern({ ergebnisse: [...stand.ergebnisse, { id: aktuell.id, bewertung: b }] });
-    }} /></AufgabenKontext.Provider>}{ergebnis && <button className="hauptaktion mt-5" onClick={() => stand.kontrolleIndex < aufgaben.length - 1 ? speichern({ kontrolleIndex: stand.kontrolleIndex + 1 }) : phase(3)}>{stand.kontrolleIndex < aufgaben.length - 1 ? "Nächste Kontrollfrage" : "Jetzt anwenden"}</button>}</> : <button className="hauptaktion mt-5" onClick={() => phase(3)}>Zur Anwendung</button>}</section>}
-    {stand.phase === 3 && <>{e.aktivitaet ? <AktivitaetsKarte aktivitaet={e.aktivitaet} antwort={stand.aktivitaet} geprueft={stand.aktivitaetGeprueft} onChange={aendereAktivitaet} onPruefen={pruefeAktivitaet} /> : <section className="werkstatt-karte"><h3>Auf die Baustelle übertragen</h3><p>Lies deine Erklärung noch einmal. Wo würde dir dieser Zusammenhang bei einer echten Aufgabe helfen? Ergänze ein konkretes Beispiel in deiner Notiz.</p><label className="mt-4 block">Mein Beispiel<textarea className="mt-2 min-h-28 w-full rounded-xl border p-3" value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} /></label></section>}{(!e.aktivitaet || stand.aktivitaetGeprueft) && <button className="hauptaktion mt-5" onClick={() => { speichern({ phase: 4, abgeschlossen: true }); }}>Einheit abschließen</button>}</>}
-    {stand.phase === 4 && <section className={styles.success}>
+    }} /></AufgabenKontext.Provider>}{ergebnis && <button className="hauptaktion mt-5" onClick={() => stand.kontrolleIndex < aufgaben.length - 1 ? speichern({ kontrolleIndex: stand.kontrolleIndex + 1 }) : stand.kontrollfragenDirekt ? direkteFragen(false) : phase(3)}>{stand.kontrolleIndex < aufgaben.length - 1 ? "Nächste Kontrollfrage" : stand.kontrollfragenDirekt ? "Zur Lerneinheit" : "Jetzt anwenden"}</button>}</> : <button className="hauptaktion mt-5" onClick={() => phase(3)}>Zur Anwendung</button>}</section>}
+    {anzeigePhase === 3 && <>{e.aktivitaet ? <AktivitaetsKarte aktivitaet={e.aktivitaet} antwort={stand.aktivitaet} geprueft={stand.aktivitaetGeprueft} onChange={aendereAktivitaet} onPruefen={pruefeAktivitaet} /> : <section className="werkstatt-karte"><h3>Auf die Baustelle übertragen</h3><p>Lies deine Erklärung noch einmal. Wo würde dir dieser Zusammenhang bei einer echten Aufgabe helfen? Ergänze ein konkretes Beispiel in deiner Notiz.</p><label className="mt-4 block">Mein Beispiel<textarea className="mt-2 min-h-28 w-full rounded-xl border p-3" value={stand.notiz} onChange={(event) => speichern({ notiz: event.target.value })} /></label></section>}{(!e.aktivitaet || stand.aktivitaetGeprueft) && <button className="hauptaktion mt-5" onClick={() => { speichern({ phase: 4, abgeschlossen: true }); }}>Einheit abschließen</button>}</>}
+    {anzeigePhase === 4 && <section className={styles.success}>
       <LernIllustration motiv="erfolg" className={styles.successArt} />
       <span className={styles.chip}>✓ Einen Schritt weiter</span>
       <h3>Ein Lernschritt geschafft.</h3><p>{e.lernziel}</p>
@@ -179,6 +199,8 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
       <button className="hauptaktion mt-5" onClick={naechste}>Nächste Einheit →</button><Link className="ml-4 inline-block underline" href="/heute">Später wiederholen</Link>
       <p className="text-sm">Ein abgeschlossener Lernschritt ist noch kein Nachweis langfristiger Beherrschung.</p>
     </section>}
+    {stand.kontrollfragenDirekt && <button className="mt-4 min-h-11 underline" onClick={() => direkteFragen(false)}>← Zurück zu meinem Lernschritt</button>}
+    <ThemenAngebote einheit={e} onUeben={() => direkteFragen(true)} />
     {begriffe.length > 0 && <section className="mt-5 rounded-xl border p-4" style={{ borderColor: "var(--border)" }} aria-label="Fachbegriffe der Einheit"><h3 className="font-semibold">Begriffe dieser Einheit</h3><div className="mt-3 flex flex-wrap gap-2">{begriffe.map((b) => <button key={b.id} className="min-h-11 rounded-lg border px-3" onClick={() => oeffneGlossarBegriff(b.id)}>{b.begriff}</button>)}</div></section>}
     <details className="mt-5 rounded-xl border p-4" style={{ borderColor: "var(--border)" }}><summary className="min-h-11 cursor-pointer font-semibold">Quellen, Tabellen und ausführliche Lektionen</summary><p className="text-sm">Eigene Lernaufbereitung auf Grundlage der folgenden vorhandenen Schulbuchabschnitte. Aufgaben-IDs bleiben erhalten; diese Einheit hat Version {e.version}.</p>{quellen.map((l) => <LektionCard key={l.id} lektion={l} />)}</details>
   </div>;
