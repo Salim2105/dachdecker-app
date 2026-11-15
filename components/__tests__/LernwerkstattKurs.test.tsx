@@ -1,10 +1,13 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { LernwerkstattKurs } from "@/components/LernwerkstattKurs";
+import Home from "@/app/page";
 import { getCurriculum } from "@/lib/curriculum";
 import { appStorage } from "@/lib/lernSpeicher";
 import { kursStandKey, neuerKursStand } from "@/lib/kursStand";
 import { ladeLernsignale } from "@/lib/lerndiagnose";
+import { ladeFortschritt, speichereBewertung } from "@/lib/progress";
+import * as lernSpeicher from "@/lib/lernSpeicher";
 
 beforeEach(() => { appStorage.clear(); window.history.replaceState(null, "", "/lernen/lf07"); vi.spyOn(window, "scrollTo").mockImplementation(() => {}); });
 afterEach(() => { cleanup(); vi.restoreAllMocks(); });
@@ -37,7 +40,7 @@ describe("LF7-Lerneinheit", () => {
     expect(appStorage.getItem(kursStandKey(e))).toBe(vorher);
     expect(appStorage.getItem("lernwerkstatt-auswahl-lf07")).toBe(e.id);
   });
-  it("führt durch Verstehen, Abruf, drei Kontrollen, Anwendung und Abschluss", () => {
+  it("führt durch die Einheit und wiederholt sie mit frischen Antworten und erhaltenem Lernverlauf", async () => {
     render(<LernwerkstattKurs lfId="lf07" />);
     fireEvent.click(screen.getByRole("button", { name: /Vier Bauteile, ein Wasserweg/ }));
     fireEvent.click(screen.getByRole("button", { name: "Jetzt selbst erklären" }));
@@ -58,6 +61,59 @@ describe("LF7-Lerneinheit", () => {
     fireEvent.click(screen.getByRole("button", { name: "Einheit abschließen" }));
     expect(screen.getByRole("heading", { name: "Ein Lernschritt geschafft." })).toBeDefined();
     expect(JSON.parse(appStorage.getItem(kursStandKey(einheit))!).abgeschlossen).toBe(true);
+    const vorher = appStorage.getItem(kursStandKey(einheit));
+    const lernstand = appStorage.getItem("fortschritt-v1");
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    await waitFor(() => expect(screen.getByRole("heading", { name: "Kurz verstehen" })).toBeDefined());
+    expect(document.activeElement).toBe(screen.getByRole("heading", { name: einheit.titel, level: 2 }));
+    expect(screen.getByText(/Du wiederholst diese Übung nach der Rückmeldung/)).toBeDefined();
+    const archivKey = Object.keys(appStorage).find((key) => key.startsWith(`${kursStandKey(einheit)}-archiv-`))!;
+    expect(appStorage.getItem(archivKey)).toBe(vorher);
+    expect(appStorage.getItem("fortschritt-v1")).toBe(lernstand);
+    fireEvent.click(screen.getByRole("button", { name: "Jetzt selbst erklären" }));
+    expect((screen.getByRole("textbox") as HTMLTextAreaElement).value).toBe("");
+    fireEvent.click(screen.getByRole("button", { name: "Mit der Musterantwort vergleichen" }));
+    fireEvent.click(screen.getByRole("button", { name: "Sicher erklärt" }));
+    fireEvent.click(screen.getByRole("button", { name: "Zu den Kontrollfragen" }));
+    for (let i = 0; i < 3; i++) {
+      expect(screen.queryByText(/Gespeicherte Rückmeldung/)).toBeNull();
+      expect((screen.getByRole("textbox", { name: "Deine Antwort" }) as HTMLTextAreaElement).value).toBe("");
+      fireEvent.click(screen.getByRole("button", { name: "Antwort vergleichen" }));
+      fireEvent.click(screen.getByRole("button", { name: "Stimmt vollständig" }));
+      fireEvent.click(screen.getByRole("button", { name: i < 2 ? "Nächste Kontrollfrage" : "Jetzt anwenden" }));
+    }
+    for (const p of einheit.aktivitaet.paare) {
+      expect((screen.getByRole("combobox", { name: p.links }) as HTMLSelectElement).value).toBe("");
+    }
+    expect(ladeFortschritt()[einheit.aufgabenIds[0]].verlauf).toHaveLength(2);
+    expect(ladeFortschritt()[einheit.aufgabenIds[0]].verlauf?.at(-1)?.nachErklaerung).toBe(true);
+    expect(ladeLernsignale().at(-1)?.hilfen).toContain("wiederholung");
+    expect(screen.getByText("Frühere Notizen und Lernstände (1)")).toBeDefined();
+    expect(screen.getByText("Rinne, Stutzen, Bogen, Fallrohr")).toBeDefined();
+    fireEvent.click(screen.getByRole("button", { name: "← Alle Kapitel" }));
+    const einheitenKnopf = screen.getByRole("button", { name: /Vier Bauteile, ein Wasserweg/ });
+    expect(within(einheitenKnopf).getByText("Abgeschlossen")).toBeDefined();
+    cleanup();
+    render(<Home />);
+    expect(screen.getByText("Fachwissen-Einheiten geschafft").nextElementSibling?.textContent).toMatch(/^1\s*\//);
+  });
+  it("behält bei einem nicht gesicherten Archiv die Abschlussansicht und ihren Stand", async () => {
+    const e = getCurriculum("lf07")!.kapitel[0].einheiten[0];
+    if (e.aktivitaet?.typ !== "zuordnen") throw new Error("Test erwartet Zuordnung");
+    const stand = { ...neuerKursStand(e), phase: 4, verglichen: true, selbstbewertung: "richtig", notiz: "Meine fertige Erklärung",
+      ergebnisse: e.aufgabenIds.map((id) => ({ id, bewertung: "richtig" })), aktivitaetGeprueft: true, abgeschlossen: true,
+      aktivitaet: { zuordnung: Object.fromEntries(e.aktivitaet.paare.map((p) => [p.id, p.id])), auswahl: [], reihenfolge: [] } };
+    const vorher = JSON.stringify(stand);
+    appStorage.setItem(kursStandKey(e), vorher);
+    speichereBewertung(e.aufgabenIds[0], "richtig");
+    window.history.replaceState(null, "", `/lernen/lf07#${e.id}`);
+    render(<LernwerkstattKurs lfId="lf07" />);
+    vi.spyOn(lernSpeicher, "flushStorage").mockResolvedValueOnce().mockRejectedValueOnce(new Error("Speicher voll"));
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    await waitFor(() => expect(screen.getByRole("alert").textContent).toContain("Die Wiederholung konnte noch nicht sicher gespeichert werden"));
+    expect(screen.getByRole("heading", { name: "Ein Lernschritt geschafft." })).toBeDefined();
+    expect(appStorage.getItem(kursStandKey(e))).toBe(vorher);
+    expect(ladeFortschritt()[e.aufgabenIds[0]].verlauf).toHaveLength(1);
   });
   it("stellt Phase und noch nicht abgegebene Erklärung nach Neustart wieder her", () => {
     const first = render(<LernwerkstattKurs lfId="lf07" />);

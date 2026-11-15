@@ -2,7 +2,9 @@
 
 Lokale Lernapp für die Dachdecker-Ausbildung mit Mac-Oberfläche und offline nutzbarem Web-Export. Bestehende Lernfelder, Schulbuchbezüge und Aufgaben-IDs bleiben erhalten.
 
-Neu in **0.17.0**: [Themen gemeinsam finden und übersichtlicher weiterlernen](docs/uebersicht-0.17.md) mit einer gemeinsamen Suche, einklappbaren Menügruppen, „Handwerk & Projekte“, passenden Lernverbindungen und dem gemeinsamen Menü „Mehr“ für Darstellung und Service. Die 16 Bereiche und bisherigen Lernstände bleiben erhalten.
+Neu in **0.17.1**: [Übungen direkt wiederholen](docs/uebungen-wiederholen-0.17.1.md). Nach einer Quizantwort und am Ende einer Fachwissen-Einheit öffnet „Diese Übung wiederholen“ einen neuen Bearbeitungsversuch. Erste Bewertungen, Wiederholungstermine und frühere Notizen bleiben erhalten.
+
+Seit **0.17.0**: [Themen gemeinsam finden und übersichtlicher weiterlernen](docs/uebersicht-0.17.md) mit einer gemeinsamen Suche, einklappbaren Menügruppen, „Handwerk & Projekte“, passenden Lernverbindungen und dem gemeinsamen Menü „Mehr“ für Darstellung und Service. Die 16 Bereiche und bisherigen Lernstände bleiben erhalten.
 
 Seit **0.16.0**: [Drei überarbeitete Falzziegel-Werkstattfilme mit Mitmachaufgaben](docs/werkstattfilme-0.16.md) zu Anzeichnen, Schneiden und Verlegen. Die neue Fassung verwendet Full HD mit 30 Bildern pro Sekunde und übernimmt im Mitmachmodus die vorhandenen Werkstattaufgaben. Die übrigen 109 Filme und gespeicherten Lernstände bleiben erhalten. Prüfstand und noch offene Erprobungen stehen im Release-Dokument.
 

@@ -1,7 +1,8 @@
 import type { Bewertung } from "@/content/schema";
 import type { LernEinheit } from "@/lib/curriculum";
 import { istAktivitaetVollstaendig, starteAktivitaet, type AktivitaetAntwort } from "@/lib/aktivitaeten";
-import { appStorage } from "@/lib/lernSpeicher";
+import { appStorage, flushStorage } from "@/lib/lernSpeicher";
+import { leereCalcCache } from "@/lib/calc";
 
 export interface KursStand {
   version: number; phase: number; textIndex: number; notiz: string; verglichen: boolean;
@@ -15,6 +16,7 @@ export interface KursStand {
 export interface KursArchivEintrag {
   key: string; einheitId: string; version: number; notiz: string; abgeschlossen: boolean;
   ergebnisse: { id: string; bewertung: Bewertung }[]; selbstbewertung?: Bewertung;
+  hilfen: string[]; archiviertAm?: number;
 }
 const istObjekt = (s: unknown): s is Record<string, unknown> => !!s && typeof s === "object" && !Array.isArray(s);
 const istBewertung = (b: unknown): b is Bewertung => b === "richtig" || b === "teilweise" || b === "falsch";
@@ -28,12 +30,36 @@ export function neuerKursStand(e: LernEinheit): KursStand {
     ergebnisse: [], aktivitaet: e.aktivitaet ? starteAktivitaet(e.aktivitaet) : { zuordnung: {}, reihenfolge: [], auswahl: [] },
     aktivitaetGeprueft: false, abgeschlossen: false, hilfen: [] };
 }
+/** Archive the full completed attempt durably before replacing editable work. */
+export async function wiederholeKursEinheit(e: LernEinheit, stand: KursStand): Promise<void> {
+  if (!stand.abgeschlossen) throw new Error("Schließe zuerst diesen Lernschritt ab.");
+  const key = kursStandKey(e);
+  const vorher = appStorage.getItem(key);
+  if (vorher !== JSON.stringify(stand)) throw new Error("Dein Lernstand hat sich geändert. Öffne die Einheit erneut.");
+  await flushStorage();
+  let zeitpunkt = Date.now();
+  while (appStorage.getItem(`${key}-archiv-${zeitpunkt}`) !== null) zeitpunkt++;
+  appStorage.setItem(`${key}-archiv-${zeitpunkt}`, vorher);
+  await flushStorage();
+  if (appStorage.getItem(key) !== vorher) throw new Error("Deine letzten Eingaben bleiben erhalten. Wiederhole die Übung nach dem Speichern.");
+  try {
+    appStorage.setItem(key, JSON.stringify({ ...neuerKursStand(e), hilfen: ["wiederholung"] }));
+    leereCalcCache(e.aufgabenIds.map((id) => `${e.id}:${id}`));
+    await flushStorage();
+  } catch (error) {
+    // Keep the previous screen and recoverable stand if the new draft fails.
+    appStorage.setItem(key, vorher);
+    throw error;
+  }
+}
 function leseArchivStand(text: string | null, key: string, einheitId: string, version: number): KursArchivEintrag | null {
   try {
     const s: unknown = JSON.parse(text || "null");
     if (!istObjekt(s) || s.version !== version || typeof s.notiz !== "string" || typeof s.abgeschlossen !== "boolean" || !sindErgebnisse(s.ergebnisse) ||
-      (s.selbstbewertung !== undefined && !istBewertung(s.selbstbewertung))) return null;
+      (s.selbstbewertung !== undefined && !istBewertung(s.selbstbewertung)) ||
+      (s.hilfen !== undefined && !istTextliste(s.hilfen))) return null;
     return { key, einheitId, version, notiz: s.notiz, abgeschlossen: s.abgeschlossen, ergebnisse: s.ergebnisse,
+      hilfen: (s.hilfen as string[] | undefined) ?? [],
       ...(s.selbstbewertung !== undefined ? { selbstbewertung: s.selbstbewertung } : {}) };
   } catch { return null; }
 }
@@ -45,14 +71,14 @@ export function ladeKursArchiv(lfId: string, aktuelleEinheiten: Pick<LernEinheit
   for (let index = 0; index < appStorage.length; index++) {
     const key = appStorage.key(index);
     if (!key || aktuell.has(key)) continue;
-    const teile = /^lernwerkstatt-einheit-(.+)-v([1-9]\d*)$/.exec(key);
+    const teile = /^lernwerkstatt-einheit-(.+)-v([1-9]\d*)(?:-archiv-([1-9]\d*))?$/.exec(key);
     if (!teile || !teile[1].startsWith(`${lfId}-`)) continue;
     const version = Number(teile[2]);
     if (!Number.isSafeInteger(version)) continue;
     const stand = leseArchivStand(appStorage.getItem(key), key, teile[1], version);
-    if (stand && (stand.notiz.trim() || stand.ergebnisse.length || stand.selbstbewertung || stand.abgeschlossen)) archiv.push(stand);
+    if (stand && (stand.notiz.trim() || stand.ergebnisse.length || stand.selbstbewertung || stand.abgeschlossen)) archiv.push({ ...stand, ...(teile[3] ? { archiviertAm: Number(teile[3]) } : {}) });
   }
-  return archiv.sort((a, b) => a.einheitId.localeCompare(b.einheitId, "de") || b.version - a.version);
+  return archiv.sort((a, b) => a.einheitId.localeCompare(b.einheitId, "de") || b.version - a.version || (b.archiviertAm ?? 0) - (a.archiviertAm ?? 0));
 }
 function migriereVorherigeNotiz(e: LernEinheit): KursStand {
   const leer = neuerKursStand(e);

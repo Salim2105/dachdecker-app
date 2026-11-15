@@ -7,7 +7,7 @@ import { getCurriculum, type LernCurriculum, type LernEinheit } from "@/lib/curr
 import { appStorage } from "@/lib/lernSpeicher";
 import { bereichsAuswahl } from "@/lib/bereichsAuswahl";
 import { getBegriff, sucheBegriffe } from "@/lib/glossar";
-import { kursStandKey, ladeKursArchiv, ladeKursStand, type KursStand } from "@/lib/kursStand";
+import { kursStandKey, ladeKursArchiv, ladeKursStand, wiederholeKursEinheit, type KursStand } from "@/lib/kursStand";
 import { GlossarText, oeffneGlossarBegriff } from "@/components/GlossarText";
 import { SafeSvg } from "@/components/SafeSvg";
 import { speichereLernsignal } from "@/lib/lerndiagnose";
@@ -32,6 +32,7 @@ import { kontrollfragenEinstieg, kursFortsetzungsRoute } from "@/lib/themenVerkn
 const PHASEN = ["Verstehen", "Selbst erklären", "Kontrollfragen", "Anwenden", "Abschluss"];
 export function LernwerkstattKurs({ lfId }: { lfId: string }) {
   const kurs = getCurriculum(lfId);
+  const [wiederholung, setWiederholung] = useState(0);
   const [alteRunde] = useState(() => ladeGespeicherteAufgaben(`dd-session-${lfId}-einheit`, getAufgaben(lfId)));
   const [alteRundeOffen, setAlteRundeOffen] = useState(() => !!alteRunde && appStorage.getItem("letzte-session") === `${lfId}-einheit` && (typeof window === "undefined" || !window.location.hash && new URLSearchParams(window.location.search).get("ansicht") !== "uebersicht"));
   const [auswahl, setAuswahl] = useState<string | null>(() => {
@@ -47,7 +48,7 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
     window.addEventListener("hashchange",wechseln);window.addEventListener("popstate",wechseln);
     return()=>{window.removeEventListener("hashchange",wechseln);window.removeEventListener("popstate",wechseln);};
   },[kurs]);
-  useKatalogFokus(`${auswahl}:${alteRundeOffen}`, "[data-kurs-einstieg] h2");
+  useKatalogFokus(`${auswahl}:${alteRundeOffen}:${wiederholung}`, "[data-kurs-einstieg] h2");
   if (!kurs) return null;
   if (alteRunde && alteRundeOffen) return <section className="mt-6"><button className="mb-4 min-h-11 underline" onClick={() => setAlteRundeOffen(false)}>← Zu den neuen Kapiteln</button><p className="mb-5">Deine bisherige Übungsrunde ist erhalten geblieben. Du kannst sie hier beenden.</p><SessionRunner aufgaben={alteRunde} lfId={`${lfId}-einheit`} zurueck={`/lernen/${lfId}`} /></section>;
   const einheiten = kurs.kapitel.flatMap((k) => k.einheiten);
@@ -59,12 +60,12 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
     window.history.pushState(null, "", `${window.location.pathname}${id ? `#${id}` : "?ansicht=uebersicht"}`);
     window.scrollTo({ top: 0 });
   }
-  const fertig = new Map(einheiten.map((e) => [e.id, ladeKursStand(e).abgeschlossen]));
+  const fertig = new Map(einheiten.map((e) => [e.id, ladeKursStand(e).abgeschlossen || archiv.some((a) => a.einheitId === e.id && a.version === e.version && a.abgeschlossen)]));
   const abgeschlossen = [...fertig.values()].filter(Boolean).length;
   const naechsteEinheit = einheiten.find((e) => !fertig.get(e.id));
   return <section className="mt-7" aria-label="Kapitel und Lerneinheiten" data-kurs-einstieg>
     {alteRunde && <button className="mb-5 min-h-12 rounded-xl border p-3 text-left" onClick={() => setAlteRundeOffen(true)}>Bisherige Übungsrunde fortsetzen →</button>}
-    {einheit ? <Einheit key={`${einheit.id}:${einheit.version}`} kurs={kurs} einheit={einheit} zurueck={() => waehle(null)} naechste={() => waehle(einheiten[einheiten.indexOf(einheit) + 1]?.id ?? null)} />
+    {einheit ? <Einheit key={`${einheit.id}:${einheit.version}:${wiederholung}`} kurs={kurs} einheit={einheit} zurueck={() => waehle(null)} naechste={() => waehle(einheiten[einheiten.indexOf(einheit) + 1]?.id ?? null)} onWiederholung={() => setWiederholung((n) => n + 1)} />
     : <>
       <div className={katalogStyles.kapitelIntro}>
         <h2>Deine Kapitel</h2><p>Öffne ein Kapitel und wähle eine kurze Einheit. {abgeschlossen} von {einheiten.length} Einheiten abgeschlossen.</p>
@@ -92,21 +93,26 @@ export function LernwerkstattKurs({ lfId }: { lfId: string }) {
     </>}
     {archiv.length > 0 && <details className="mt-7 rounded-2xl border p-4" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>
       <summary className="min-h-11 cursor-pointer font-semibold">Frühere Notizen und Lernstände ({archiv.length})</summary>
-      <p className="mt-3 max-w-prose text-sm" style={{ color: "var(--text-muted)" }}>Deine bisherigen Einträge bleiben erhalten. Sie gehören zu früheren Einheiten oder Fassungen. Überarbeitete Aufgaben haben einen eigenen Lernstand.</p>
+      <p className="mt-3 max-w-prose text-sm" style={{ color: "var(--text-muted)" }}>Deine bisherigen Einträge bleiben erhalten. Hier findest du frühere Versuche, Einheiten und Fassungen. Überarbeitete Aufgaben haben einen eigenen Lernstand.</p>
       <ul className="mt-4 space-y-4">{archiv.map((a) => <li key={a.key} className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
         <h3 className="font-semibold">{einheiten.find((e) => e.id === a.einheitId)?.titel ?? getLektionen(lfId).find((l) => a.einheitId.startsWith(`${l.id}-e`))?.titel ?? "Frühere Lerneinheit"}</h3>
         <p className="break-words text-sm" style={{ color: "var(--text-muted)" }}>{a.einheitId} · Version {a.version}</p>
         <p className="mt-2 text-sm">Früherer Stand: {a.abgeschlossen ? "als bearbeitet abgeschlossen" : "angefangen"} · {a.ergebnisse.length} gespeicherte Kontrollantworten{a.selbstbewertung ? " · mit eigener Selbsteinschätzung" : ""}.</p>
+        {a.archiviertAm && <p className="text-sm">Gesichert am {new Date(a.archiviertAm).toLocaleString("de-DE")}</p>}
+        {a.hilfen.length > 0 && <p className="text-sm">{a.hilfen.includes("wiederholung") ? "Wiederholung nach Rückmeldung." : "Mit Lernhilfe oder Rückmeldung bearbeitet."}</p>}
+        {a.ergebnisse.length > 0 && <ul className="mt-2 text-sm">{a.ergebnisse.map((r, index) => <li key={r.id}>Kontrollfrage {index + 1}: {({ richtig: "richtig", teilweise: "teilweise richtig", falsch: "noch üben" })[r.bewertung]}</li>)}</ul>}
         {a.notiz.trim() && <div className="mt-3"><h4 className="text-sm font-semibold">Deine frühere Notiz</h4><p className="mt-1 whitespace-pre-wrap break-words">{a.notiz}</p></div>}
       </li>)}</ul>
     </details>}
   </section>;
 }
 
-function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum; einheit: LernEinheit; zurueck: () => void; naechste: () => void }) {
+function Einheit({ kurs, einheit: e, zurueck, naechste, onWiederholung }: { kurs: LernCurriculum; einheit: LernEinheit; zurueck: () => void; naechste: () => void; onWiederholung: () => void }) {
   const [stand, setStand] = useState(() => kontrollfragenEinstieg(e, ladeKursStand(e), typeof window === "undefined" ? "" : window.location.search));
   const [fehler, setFehler] = useState("");
   const standRef = useRef(stand);
+  const neustartLaeuft = useRef(false);
+  const [wiederholungBusy, setWiederholungBusy] = useState(false);
   const { bewerte } = useProgress();
   const aufgaben = e.aufgabenIds.flatMap((id) => { const a = getAufgabe(id); return a ? [a] : []; });
   const quellen = getLektionen(kurs.lfId).filter((l) => e.lektionIds.includes(l.id));
@@ -135,6 +141,7 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
       }
     } catch { /* Speicherfehler erscheinen in der gemeinsamen Statusanzeige. */ }
     const hilfe = () => {
+      if (neustartLaeuft.current) return;
       const neu = { ...standRef.current, hilfen: [...new Set([...standRef.current.hilfen, "begriffshilfe"])] };
       standRef.current = neu; setStand(neu);
       try { appStorage.setItem(kursStandKey(e), JSON.stringify(neu)); } catch { /* Speicherfehler erscheinen in der gemeinsamen Statusanzeige. */ }
@@ -171,13 +178,34 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
       richtig: ergebnis.richtig, kategorie: "fachwissen", hilfen: vorher.hilfen,
       route: `/lernen/${kurs.lfId}#${e.id}`, thema: e.titel });
   }
-  return <div>
+  async function wiederholen() {
+    if (neustartLaeuft.current) return;
+    neustartLaeuft.current = true;
+    setWiederholungBusy(true);
+    setFehler("");
+    try {
+      await wiederholeKursEinheit(e, standRef.current);
+      const url = new URL(window.location.href);
+      url.searchParams.delete("aufgabe");
+      url.searchParams.delete("schritt");
+      window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+      onWiederholung();
+      window.scrollTo({ top: 0 });
+    } catch {
+      setFehler("Dein bisheriger Versuch bleibt erhalten. Die Wiederholung konnte noch nicht sicher gespeichert werden. Bitte den Lernspeicher prüfen und erneut versuchen.");
+    } finally {
+      neustartLaeuft.current = false;
+      setWiederholungBusy(false);
+    }
+  }
+  return <fieldset className="min-w-0" disabled={wiederholungBusy}>
     <button className="mb-5 min-h-11 underline" onClick={zurueck}>← Alle Kapitel</button>
     <header className={styles.unitHeader}>
       <div><span className={styles.unitEyebrow}><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg> Etwa {e.minuten} Minuten · Dein nächster Lernschritt</span><h2>{e.titel}</h2></div>
       <LearningArtwork variant={Math.max(0, kurs.kapitel.findIndex((k) => k.einheiten.some((u) => u.id === e.id)))} className={styles.unitHeaderArt} />
     </header>
     {stand.uebernommenAusVersion !== undefined && <p className="mb-5 rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>Deine frühere Notiz aus Version {stand.uebernommenAusVersion} bleibt erhalten. Die überarbeiteten Aufgaben haben einen eigenen Lernstand; frühere Bewertungen findest du im Archiv unten.</p>}
+    {stand.hilfen.includes("wiederholung") && <p className="mb-5 rounded-xl border p-4 text-sm" style={{ borderColor: "var(--border)", background: "var(--surface)" }}>Du wiederholst diese Übung nach der Rückmeldung. Deine bisherigen Notizen und Ergebnisse findest du im Archiv unten. Diese Wiederholung zählt nicht als langfristiger Abruf.</p>}
     <div className={styles.goal}><svg width="28" height="28" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><circle cx="15" cy="17" r="11"/><circle cx="15" cy="17" r="6"/><path d="M15 17 28 4m-7 0h7v7" strokeLinecap="round"/></svg><p><strong>Dein Lernziel:</strong>{e.lernziel}</p></div>
     <ol className={styles.phases} aria-label="Schritte der Lerneinheit">{PHASEN.map((p, index) => <li key={p}><button aria-current={anzeigePhase === index ? "step" : undefined} disabled={index > stand.phase && !(stand.kontrollfragenDirekt && index === 2)} onClick={() => stand.kontrollfragenDirekt && index === 2 ? direkteFragen(true) : phase(index)}>{index + 1}. {p}</button></li>)}</ol>
     {fehler && <p role="alert" style={{ color: "var(--bad)" }}>{fehler}</p>}
@@ -196,12 +224,12 @@ function Einheit({ kurs, einheit: e, zurueck, naechste }: { kurs: LernCurriculum
       <h3>Ein Lernschritt geschafft.</h3><p>{e.lernziel}</p>
       <div className={styles.successStats}><span><strong>{stand.ergebnisse.length}</strong> Kontrollfragen bearbeitet</span><span><strong>{anwendungUnsicher ? "↻" : "✓"}</strong> {e.aktivitaet ? anwendungUnsicher ? "Anwendung noch üben" : "Anwendung bearbeitet" : "Beispiel entwickelt"}</span></div>
       <p>{stand.ergebnisse.some((r) => r.bewertung !== "richtig") || stand.selbstbewertung !== "richtig" || anwendungUnsicher ? "Einige Antworten oder Schritte waren noch unsicher. Wiederhole den Zusammenhang und nutze die Tagesrunde für die nächsten fälligen Aufgaben." : "Du hast die Kontrollfragen bearbeitet. Ob der Zusammenhang auch später sitzt, zeigen deine nächsten Wiederholungen."}</p>
-      <button className="hauptaktion mt-5" onClick={naechste}>Nächste Einheit →</button><Link className="ml-4 inline-block underline" href="/heute">Später wiederholen</Link>
+      <div className="mt-5 flex flex-wrap gap-3"><button type="button" className="hauptaktion" onClick={() => void wiederholen()}>{wiederholungBusy ? "Bisherigen Versuch sichern …" : "Diese Übung wiederholen"}</button><button className="min-h-11 rounded-xl border px-4 py-3" onClick={naechste}>Nächste Einheit →</button><Link className="inline-flex min-h-11 items-center underline" href="/heute">Später wiederholen</Link></div>
       <p className="text-sm">Ein abgeschlossener Lernschritt ist noch kein Nachweis langfristiger Beherrschung.</p>
     </section>}
     {stand.kontrollfragenDirekt && <button className="mt-4 min-h-11 underline" onClick={() => direkteFragen(false)}>← Zurück zu meinem Lernschritt</button>}
     <ThemenAngebote einheit={e} onUeben={() => direkteFragen(true)} />
     {begriffe.length > 0 && <section className="mt-5 rounded-xl border p-4" style={{ borderColor: "var(--border)" }} aria-label="Fachbegriffe der Einheit"><h3 className="font-semibold">Begriffe dieser Einheit</h3><div className="mt-3 flex flex-wrap gap-2">{begriffe.map((b) => <button key={b.id} className="min-h-11 rounded-lg border px-3" onClick={() => oeffneGlossarBegriff(b.id)}>{b.begriff}</button>)}</div></section>}
     <details className="mt-5 rounded-xl border p-4" style={{ borderColor: "var(--border)" }}><summary className="min-h-11 cursor-pointer font-semibold">Quellen, Tabellen und ausführliche Lektionen</summary><p className="text-sm">Eigene Lernaufbereitung auf Grundlage der folgenden vorhandenen Schulbuchabschnitte. Aufgaben-IDs bleiben erhalten; diese Einheit hat Version {e.version}.</p>{quellen.map((l) => <LektionCard key={l.id} lektion={l} />)}</details>
-  </div>;
+  </fieldset>;
 }

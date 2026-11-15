@@ -1,7 +1,7 @@
 "use client";
 import { AufgabenKontext, loescheAufgabenEntwurf } from "@/components/useAufgabenEntwurf";
 import { appStorage } from "@/lib/lernSpeicher";
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import type { Aufgabe, Bewertung, BewertungsKontext } from "@/content/schema";
 import { AufgabeSwitch } from "@/components/session/AufgabeSwitch";
@@ -42,10 +42,14 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   const [stand] = useState(() => ladeStand(KEY, aufgaben) ?? leererStand());
   const [index, setIndex] = useState(stand.index);
   const [beantwortet, setBeantwortet] = useState(stand.beantwortet);
-  const [antwortWiederhergestellt, setAntwortWiederhergestellt] = useState(stand.beantwortet);
+  const [antwortWiederhergestellt, setAntwortWiederhergestellt] = useState(stand.wiederholung?.beantwortet ?? stand.beantwortet);
   const [ergebnisse, setErgebnisse] = useState<Bewertung[]>(stand.ergebnisse);
   const [nacharbeit, setNacharbeit] = useState(stand.nacharbeit);
   const [nacharbeitErgebnisse, setNacharbeitErgebnisse] = useState<Bewertung[]>(stand.nacharbeitErgebnisse);
+  const [wiederholung, setWiederholung] = useState(stand.wiederholung ?? null);
+  const [wiederholungsNummer, setWiederholungsNummer] = useState(0);
+  const [wiederholungsFehler, setWiederholungsFehler] = useState("");
+  const frageRef = useRef<HTMLDivElement>(null);
   const [fertig, setFertig] = useState(false);
   const offeneAufgaben = aufgaben.filter((_, i) => ergebnisse[i] !== undefined && ergebnisse[i] !== "richtig");
   const liste = nacharbeit ? offeneAufgaben : aufgaben;
@@ -57,7 +61,11 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   // Neue Frage → oben anfangen, sonst landet man mitten in der nächsten Aufgabe.
   useEffect(() => {
     window.scrollTo({ top: 0 });
-  }, [index, nacharbeit]);
+  }, [index, nacharbeit, wiederholungsNummer]);
+
+  useEffect(() => {
+    if (wiederholungsNummer > 0) frageRef.current?.focus({ preventScroll: true });
+  }, [wiederholungsNummer]);
 
   // Stand sichern; bei Abschluss aufräumen (inkl. gemerkter Rechen-Zufallszahlen).
   useEffect(() => {
@@ -69,6 +77,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
       } else {
         appStorage.setItem(KEY, JSON.stringify({
           index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse,
+          ...(wiederholung ? { wiederholung } : {}),
           aufgabenIds: aufgaben.map((a) => a.id),
         }));
         if (aufgaben.length) {
@@ -83,12 +92,14 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         }
       }
     } catch {}
-  }, [KEY, lfId, index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse, fertig, aufgaben]);
+  }, [KEY, lfId, index, ergebnisse, beantwortet, nacharbeit, nacharbeitErgebnisse, wiederholung, fertig, aufgaben]);
 
   const aktuell = liste[index];
 
   const zumNaechsten = () => {
     setAntwortWiederhergestellt(false);
+    setWiederholung(null);
+    setWiederholungsFehler("");
     if (index < liste.length - 1) {
       setIndex((i) => i + 1);
       setBeantwortet(false);
@@ -109,6 +120,12 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   // danach erscheint die Musterlösung bzw. die Definition, und die will gelesen
   // werden, bevor es weitergeht.
   const handleErgebnis = (b: Bewertung, kontext?: BewertungsKontext) => {
+    if (wiederholung) {
+      if (wiederholung.beantwortet) return;
+      loescheAufgabenEntwurf(`${lfId}:${aktuell.id}`);
+      setWiederholung({ beantwortet: true, bewertung: b });
+      return;
+    }
     if (beantwortet) return;
     loescheAufgabenEntwurf(`${lfId}:${aktuell.id}`);
     if (nacharbeit) {
@@ -137,6 +154,7 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
           setErgebnisse([]);
           setNacharbeit(false);
           setNacharbeitErgebnisse([]);
+          setWiederholung(null);
           setFertig(false);
         }}
       />
@@ -144,7 +162,20 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
   }
 
   if (!aktuell) return <p>Für diese Sitzung sind keine Aufgaben vorhanden.</p>;
-  const rueckmeldung = (nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index];
+  const antwortGeprueft = wiederholung ? wiederholung.beantwortet : beantwortet;
+  const rueckmeldung = wiederholung ? wiederholung.bewertung : (nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index];
+
+  function dieseUebungWiederholen() {
+    try {
+      loescheAufgabenEntwurf(`${lfId}:${aktuell.id}`);
+      setWiederholung({ beantwortet: false });
+      setAntwortWiederhergestellt(false);
+      setWiederholungsFehler("");
+      setWiederholungsNummer((n) => n + 1);
+    } catch {
+      setWiederholungsFehler("Die Wiederholung konnte nicht gestartet werden. Deine erste Bewertung bleibt erhalten. Bitte prüfe den Lernspeicher und versuche es erneut.");
+    }
+  }
 
   return (
     <div className="session-werkstatt">
@@ -174,16 +205,25 @@ function AktiveSitzung({ aufgaben, lfId, zurueck, nachErklaerung }: SessionProps
         <TonSchalter />
       </div>
 
-      <div className="session-frage">{antwortWiederhergestellt ? <div className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
+      {wiederholung && <p className="mb-4 rounded-xl border p-3 text-sm" style={{ borderColor: "var(--border)" }}>Du übst diese Aufgabe noch einmal. Deine erste Bewertung und der geplante Wiederholungstermin bleiben erhalten.</p>}
+      <div className="session-frage" ref={frageRef} tabIndex={-1}>{antwortWiederhergestellt && antwortGeprueft ? <div className="rounded-xl border p-4" style={{ borderColor: "var(--border)" }}>
         <h2 className="font-semibold">Diese Aufgabe ist bereits bewertet</h2>
-        <p className="mt-2 text-sm">Thema: {aktuell.thema}. Gespeicherte Bewertung: {({ richtig: "Richtig", teilweise: "Teilweise richtig", falsch: "Noch üben" })[(nacharbeit ? nacharbeitErgebnisse : ergebnisse)[index]]}.</p>
+        <p className="mt-2 text-sm">Thema: {aktuell.thema}. Gespeicherte Bewertung: {rueckmeldung && ({ richtig: "Richtig", teilweise: "Teilweise richtig", falsch: "Noch üben" })[rueckmeldung]}.</p>
         <p className="mt-2 text-sm">Du kannst die Erklärung noch einmal lesen und danach weitermachen. Deine Bewertung bleibt erhalten.</p>
         <Erklaerung text={aktuell.erklaerung} quelle={aktuell.quelle} />
-      </div> : <AufgabenKontext.Provider value={lfId}><AufgabeSwitch key={`${nacharbeit}:${aktuell.id}`} aufgabe={aktuell} onErgebnis={handleErgebnis} /></AufgabenKontext.Provider>}</div>
+      </div> : <AufgabenKontext.Provider value={lfId}><AufgabeSwitch key={`${nacharbeit}:${aktuell.id}:${wiederholungsNummer}`} aufgabe={aktuell} onErgebnis={handleErgebnis} /></AufgabenKontext.Provider>}</div>
 
-      {beantwortet && <div className={`session-feedback ${rueckmeldung === "richtig" ? "session-feedback-ok" : ""}`} role="status"><span aria-hidden="true">{rueckmeldung === "richtig" ? "✓" : "↻"}</span><div><strong>{rueckmeldung === "richtig" ? "Ein Schritt weiter!" : "Genau dafür übst du."}</strong><p>Vergleiche deine Antwort mit der Erklärung und nimm den nächsten Schritt mit.</p></div></div>}
+      {antwortGeprueft && <div className={`session-feedback ${rueckmeldung === "richtig" ? "session-feedback-ok" : ""}`} role="status"><span aria-hidden="true">{rueckmeldung === "richtig" ? "✓" : "↻"}</span><div><strong>{rueckmeldung === "richtig" ? "Ein Schritt weiter!" : "Genau dafür übst du."}</strong><p>Vergleiche deine Antwort mit der Erklärung und nimm den nächsten Schritt mit.</p></div></div>}
 
-      {beantwortet && (
+      {antwortGeprueft && <button
+        type="button"
+        onClick={dieseUebungWiederholen}
+        className="mt-4 min-h-11 w-full rounded-xl border px-4 py-3 font-semibold"
+        style={{ borderColor: "var(--border)" }}
+      >Diese Übung wiederholen</button>}
+      {wiederholungsFehler && <p role="alert" className="mt-3 text-sm">{wiederholungsFehler}</p>}
+
+      {antwortGeprueft && (
         <button
           onClick={zumNaechsten}
           className="hauptaktion mt-5 w-full"

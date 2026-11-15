@@ -29,6 +29,89 @@ afterEach(() => {
 });
 
 describe("Fehlernacharbeit", () => {
+  it("wiederholt eine einzelne Aufgabe direkt, ohne erste Bewertung oder Rundenergebnis zu ersetzen", () => {
+    render(<SessionRunner aufgaben={[frage("direkt"), frage("danach")]} lfId="lf01" />);
+    expect(screen.queryByRole("button", { name: "Diese Übung wiederholen" })).toBeNull();
+    antwort(false);
+    const vorher = ladeFortschritt().direkt;
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    expect(screen.getByText("Frage direkt?")).toBeTruthy();
+    expect(screen.queryByText(basis.erklaerung)).toBeNull();
+    expect(screen.queryByRole("button", { name: "Weiter" })).toBeNull();
+    antwort(true);
+    expect(ladeFortschritt().direkt).toEqual(vorher);
+    expect(JSON.parse(localStorage.getItem("dd-session-lf01")!).ergebnisse).toEqual(["falsch"]);
+    fireEvent.click(screen.getByRole("button", { name: "Weiter" }));
+    expect(screen.getByText("Frage danach?")).toBeTruthy();
+    expect(screen.queryByText(/Du übst diese Aufgabe noch einmal/)).toBeNull();
+    expect(screen.getByText("2 / 2")).toBeTruthy();
+  });
+
+  it("erhält den neuen Entwurf und die erste Bewertung beim Neuladen einer direkten Wiederholung", () => {
+    const aufgabe: ClozeAufgabe = { ...basis, id: "direkt-luecke", typ: "cloze", text: "{{Dach}} und {{Wand}}" };
+    const aufgaben = [aufgabe];
+    const ersteAnsicht = render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    fireEvent.change(screen.getByLabelText("Lücke 1"), { target: { value: "Dach" } });
+    fireEvent.change(screen.getByLabelText("Lücke 2"), { target: { value: "Boden" } });
+    fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
+    const vorher = ladeFortschritt()[aufgabe.id];
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    expect((screen.getByLabelText("Lücke 1") as HTMLInputElement).value).toBe("");
+    fireEvent.change(screen.getByLabelText("Lücke 1"), { target: { value: "Da" } });
+    ersteAnsicht.unmount();
+    const zweiteAnsicht = render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    expect((screen.getByLabelText("Lücke 1") as HTMLInputElement).value).toBe("Da");
+    expect(ladeFortschritt()[aufgabe.id]).toEqual(vorher);
+    fireEvent.change(screen.getByLabelText("Lücke 1"), { target: { value: "Dach" } });
+    fireEvent.change(screen.getByLabelText("Lücke 2"), { target: { value: "Wand" } });
+    fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
+    expect(screen.queryByText("Diese Aufgabe ist bereits bewertet")).toBeNull();
+    expect(screen.getByLabelText("Lücke 1")).toBeTruthy();
+    zweiteAnsicht.unmount();
+    render(<SessionRunner aufgaben={aufgaben} lfId="lf01" />);
+    expect(screen.getByText(/Gespeicherte Bewertung: Richtig/)).toBeTruthy();
+    expect(ladeFortschritt()[aufgabe.id]).toEqual(vorher);
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    expect((screen.getByLabelText("Lücke 1") as HTMLInputElement).value).toBe("");
+    expect(JSON.parse(localStorage.getItem("dd-session-lf01")!).ergebnisse).toEqual(["teilweise"]);
+  });
+
+  it("erhält auch bei direkter Wiederholung innerhalb der Fehlernacharbeit deren erstes Ergebnis", () => {
+    render(<SessionRunner aufgaben={[frage("nacharbeit-direkt")]} lfId="lf01" />);
+    antwort(false);
+    const vorher = ladeFortschritt()["nacharbeit-direkt"];
+    fireEvent.click(screen.getByRole("button", { name: "Fehler nacharbeiten" }));
+    antwort(false);
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    antwort(true);
+    expect(ladeFortschritt()["nacharbeit-direkt"]).toEqual(vorher);
+    fireEvent.click(screen.getByRole("button", { name: "Ergebnis anzeigen" }));
+    expect(screen.getByText(/0 von 1 Aufgabe im zweiten Versuch richtig/)).toBeTruthy();
+    expect(screen.getByRole("img").getAttribute("aria-label")).toBe("0 Richtig, 0 Fast, 1 Nochmal");
+  });
+
+  it("behält die konkreten Rechenzahlen beim direkten Wiederholen und öffnet ein leeres Eingabefeld", () => {
+    const aufgabe: CalcAufgabe = {
+      ...basis, id: "rechnung-direkt", typ: "calc", aufgabentext: "Verdopple {x}.", toleranzProzent: 1,
+      parameter: [{ name: "x", label: "x", min: 3, max: 9, schritt: 1, einheit: "m" }],
+      schritte: [{ beschreibung: "Mal zwei", formel: "x*2", ergebnisName: "y", einheit: "m" }],
+    };
+    render(<SessionRunner aufgaben={[aufgabe]} lfId="lf01" />);
+    const key = "dd-calc-lf01:rechnung-direkt";
+    const zahlen = localStorage.getItem(key)!;
+    fireEvent.change(screen.getByLabelText("Ergebnis"), { target: { value: "0" } });
+    fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
+    const vorher = ladeFortschritt()[aufgabe.id];
+    fireEvent.click(screen.getByRole("button", { name: "Diese Übung wiederholen" }));
+    expect((screen.getByLabelText("Ergebnis") as HTMLInputElement).value).toBe("");
+    expect(localStorage.getItem(key)).toBe(zahlen);
+    expect(document.activeElement?.className).toBe("session-frage");
+    fireEvent.change(screen.getByLabelText("Ergebnis"), { target: { value: String(JSON.parse(zahlen).x * 2) } });
+    fireEvent.click(screen.getByRole("button", { name: "Prüfen" }));
+    expect(screen.getByText("Richtig!")).toBeTruthy();
+    expect(ladeFortschritt()[aufgabe.id]).toEqual(vorher);
+  });
+
   it("wiederholt nur Fehler nach dem regulären Durchgang und behält das erste Ergebnis", () => {
     render(<SessionRunner aufgaben={[frage("a"), frage("b"), frage("c")]} lfId="lf01" />);
     antwort(false);

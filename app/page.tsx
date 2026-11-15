@@ -8,7 +8,7 @@ import { lernFortsetzung } from "@/lib/lernFortsetzung";
 import { serie } from "@/lib/serie";
 import { pruefungsreife } from "@/lib/reifegrad";
 import { getCurriculum } from "@/lib/curriculum";
-import { ladeKursStand } from "@/lib/kursStand";
+import { ladeKursArchiv, ladeKursStand } from "@/lib/kursStand";
 import { Arrow } from "@/components/design/Arrow";
 import { getLernfelder } from "@/lib/content";
 import { ladeLernsignale, lernEmpfehlungen } from "@/lib/lerndiagnose";
@@ -24,8 +24,12 @@ export default function Home() {
   const [werkstattAntworten] = useState(ladeLernsignale);
   const [wiederholungen] = useState(loadReviewRecords);
   const [alleEinheiten] = useState(() => {
-    const einheiten = getLernfelder().flatMap(lf => getCurriculum(lf.id)?.kapitel.flatMap(k => k.einheiten) ?? []);
-    return { gesamt: einheiten.length, fertig: einheiten.filter(e => ladeKursStand(e).abgeschlossen).length };
+    return getLernfelder().reduce((summe, lf) => {
+      const einheiten = getCurriculum(lf.id)?.kapitel.flatMap(k => k.einheiten) ?? [];
+      const archiv = ladeKursArchiv(lf.id, einheiten);
+      const fertig = einheiten.filter(e => ladeKursStand(e).abgeschlossen || archiv.some(a => a.einheitId === e.id && a.version === e.version && a.abgeschlossen)).length;
+      return { gesamt: summe.gesamt + einheiten.length, fertig: summe.fertig + fertig };
+    }, { gesamt: 0, fertig: 0 });
   });
   const stand = pruefungsreife(fortschritt, now);
   const faellig = stand.faellig + Object.values(wiederholungen).filter(s => s.ref.quelle !== "fachwissen" && s.faelligAm <= now).length;

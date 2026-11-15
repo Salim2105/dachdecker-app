@@ -1,7 +1,10 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import type { LernEinheit } from "@/lib/curriculum";
-import { kursStandKey, ladeKursArchiv, ladeKursStand, neuerKursStand } from "@/lib/kursStand";
+import { kursStandKey, ladeKursArchiv, ladeKursStand, neuerKursStand, wiederholeKursEinheit } from "@/lib/kursStand";
 import { appStorage } from "@/lib/lernSpeicher";
+import * as lernSpeicher from "@/lib/lernSpeicher";
+import { exportiereArchiv, pruefeArchiv } from "@/lib/backup";
+import { speichereBewertung } from "@/lib/progress";
 
 const einheit: LernEinheit = {
   id: "lf01-l01-e01", version: 2, titel: "Sicher starten", lernziel: "Du erklärst die Vorbereitung einer Aufgabe.", minuten: 7,
@@ -10,6 +13,7 @@ const einheit: LernEinheit = {
   aktivitaet: { id: "lf01-l01-e01-a", version: 2, typ: "zuordnen", titel: "Zwei Begriffe", auftrag: "Ordne zu.", erklaerung: "Beide gehören zusammen.", paare: [{ id: "a", links: "Auftrag", rechts: "Was soll entstehen?" }, { id: "b", links: "Plan", rechts: "Wie gehen wir vor?" }] },
 };
 beforeEach(() => appStorage.clear());
+afterEach(() => vi.restoreAllMocks());
 
 function abgeschlossenerStand(e = einheit) {
   return { ...neuerKursStand(e), phase: 4, notiz: "Auftrag zuerst verstehen.", verglichen: true, selbstbewertung: "teilweise" as const,
@@ -86,5 +90,49 @@ describe("Kursstand bei überarbeiteten Einheiten", () => {
     const s = { ...neuerKursStand(einheit), notiz: "Angefangen", aktivitaet: { zuordnung: { a: "a", b: "" }, auswahl: [], reihenfolge: [] } };
     appStorage.setItem(kursStandKey(einheit), JSON.stringify(s));
     expect(ladeKursStand(einheit)).toEqual(s);
+  });
+});
+
+describe("Einheit sofort wiederholen", () => {
+  it("wartet auf das Archiv, erhält den ganzen Versuch und sichert ihn im vollständigen Backup", async () => {
+    const stand = { ...abgeschlossenerStand(), hilfen: ["begriffshilfe"] };
+    const vorher = JSON.stringify(stand);
+    appStorage.setItem(kursStandKey(einheit), vorher);
+    speichereBewertung(einheit.aufgabenIds[0], "richtig");
+    const verlauf = appStorage.getItem("fortschritt-v1");
+    let archivFertig!: () => void;
+    const flush = vi.spyOn(lernSpeicher, "flushStorage").mockResolvedValueOnce().mockImplementationOnce(() => new Promise<void>((resolve) => { archivFertig = resolve; }));
+    const wiederholung = wiederholeKursEinheit(einheit, stand);
+    await vi.waitFor(() => expect(flush).toHaveBeenCalledTimes(2));
+    expect(appStorage.getItem(kursStandKey(einheit))).toBe(vorher);
+    archivFertig();
+    await wiederholung;
+    expect(ladeKursStand(einheit)).toEqual({ ...neuerKursStand(einheit), hilfen: ["wiederholung"] });
+    expect(appStorage.getItem("fortschritt-v1")).toBe(verlauf);
+    const [archiv] = ladeKursArchiv("lf01", [einheit]);
+    expect(archiv).toMatchObject({ notiz: stand.notiz, ergebnisse: stand.ergebnisse, abgeschlossen: true, hilfen: ["begriffshilfe"] });
+    expect(appStorage.getItem(archiv.key)).toBe(vorher);
+    expect(pruefeArchiv(await exportiereArchiv())?.daten[archiv.key]).toBe(vorher);
+  });
+  it.each([2, 3])("behält den bisherigen Stand bei einem Speicherfehler im Schritt %s", async (schritt) => {
+    const stand = abgeschlossenerStand();
+    const vorher = JSON.stringify(stand);
+    appStorage.setItem(kursStandKey(einheit), vorher);
+    const flush = vi.spyOn(lernSpeicher, "flushStorage");
+    for (let i = 1; i < schritt; i++) flush.mockResolvedValueOnce();
+    flush.mockRejectedValueOnce(new Error("Speicher voll"));
+    await expect(wiederholeKursEinheit(einheit, stand)).rejects.toThrow("Speicher voll");
+    expect(appStorage.getItem(kursStandKey(einheit))).toBe(vorher);
+    expect(ladeKursStand(einheit)).toEqual(stand);
+  });
+  it("überschreibt bei mehreren Wiederholungen im selben Moment keinen früheren Versuch", async () => {
+    vi.spyOn(Date, "now").mockReturnValue(123456789);
+    const erster = abgeschlossenerStand();
+    appStorage.setItem(kursStandKey(einheit), JSON.stringify(erster));
+    await wiederholeKursEinheit(einheit, erster);
+    const zweiter = { ...erster, notiz: "Meine zweite Erklärung", hilfen: ["wiederholung"] };
+    appStorage.setItem(kursStandKey(einheit), JSON.stringify(zweiter));
+    await wiederholeKursEinheit(einheit, zweiter);
+    expect(ladeKursArchiv("lf01", [einheit]).map((a) => a.notiz)).toEqual([zweiter.notiz, erster.notiz]);
   });
 });

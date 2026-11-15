@@ -7,6 +7,8 @@ interface Uebungsstand {
   beantwortet: boolean;
   nacharbeit: boolean;
   nacharbeitErgebnisse: Bewertung[];
+  /** An immediate retry never replaces the first graded answer. */
+  wiederholung?: { beantwortet: boolean; bewertung?: Bewertung };
 }
 
 function sindBewertungen(value: unknown): value is Bewertung[] {
@@ -29,13 +31,22 @@ function ladeStandFuerIds(key: string, ids: readonly string[]): Uebungsstand | n
         const nacharbeitErgebnisse = s.nacharbeitErgebnisse ?? [];
         const offen = s.ergebnisse.filter((b: Bewertung) => b !== "richtig").length;
         const beantwortete = s.index + (s.beantwortet ? 1 : 0);
+        const wiederholung = s.wiederholung;
+        const gueltigeWiederholung = wiederholung === undefined || (
+          s.beantwortet && wiederholung && typeof wiederholung === "object" && !Array.isArray(wiederholung) &&
+          typeof wiederholung.beantwortet === "boolean" &&
+          (wiederholung.beantwortet
+            ? sindBewertungen([wiederholung.bewertung])
+            : wiederholung.bewertung === undefined)
+        );
         if (
-          typeof nacharbeit === "boolean" && sindBewertungen(nacharbeitErgebnisse) &&
+          typeof nacharbeit === "boolean" && sindBewertungen(nacharbeitErgebnisse) && gueltigeWiederholung &&
           (nacharbeit
             ? s.ergebnisse.length === ids.length && s.index < offen && nacharbeitErgebnisse.length === beantwortete
             : s.index < ids.length && s.ergebnisse.length === beantwortete && nacharbeitErgebnisse.length === 0)
         ) {
-          return { index: s.index, ergebnisse: s.ergebnisse, beantwortet: s.beantwortet, nacharbeit, nacharbeitErgebnisse };
+          return { index: s.index, ergebnisse: s.ergebnisse, beantwortet: s.beantwortet, nacharbeit, nacharbeitErgebnisse,
+            ...(wiederholung !== undefined ? { wiederholung } : {}) };
         }
       }
     } catch {}
